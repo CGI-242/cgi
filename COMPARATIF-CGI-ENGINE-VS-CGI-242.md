@@ -50,18 +50,27 @@ Ce rapport identifie tout ce qui manque a cgi-242 avant de pouvoir remplacer cgi
 
 | Fonctionnalite | cgi-engine | cgi-242 |
 |---|---|---|
-| Organisations multi-tenant | CRUD complet, roles (OWNER, ADMIN, MEMBER, VIEWER) | Creation basique a l'inscription |
-| Abonnements / Plans | FREE, STARTER, PROFESSIONAL, TEAM, ENTERPRISE | Absent |
-| Paiements Stripe | Webhooks, checkout, historique | Absent |
-| Factures PDF | Generation automatique | Absent |
-| Gestion membres / invitations | Invitation par email, gestion roles | Absent |
-| Permissions granulaires | Par membre, par plan | Absent |
-| Analytics / Dashboard | Time-series, stats membres, export | Absent |
-| Audit logs (RGPD) | 30+ actions tracees, cleanup | Absent |
-| Alertes fiscales | Par type, categorie, echeances | Absent |
+| Organisations multi-tenant | CRUD complet, routes + services | Schema BDD complet (Organization, OrganizationMember, roles OWNER/ADMIN/MEMBER/VIEWER), creation auto a l'inscription. Aucune route API de gestion |
+| Abonnements / Plans | FREE → ENTERPRISE, routes + services | Schema BDD (Subscription, 5 plans), abo FREE cree auto a l'inscription. Aucune route API |
+| Paiements Stripe | Webhooks, checkout, historique | Schema BDD (Payment avec champs Stripe + CinetPay). Aucune route API |
+| Factures PDF | Generation automatique | Schema BDD (Invoice). Aucune route API |
+| Gestion membres / invitations | Invitation par email, gestion roles | Schema BDD (Invitation avec statuts PENDING/ACCEPTED/EXPIRED/CANCELLED). Aucune route API |
+| Permissions granulaires | Par membre, par plan | Schema BDD (permissions JSON sur OrganizationMember, ConversationAccess). Aucune route API |
+| Analytics / Dashboard | Time-series, stats membres, export | Schema BDD (SearchHistory, UsageStats). Dashboard mobile basique (stats hardcodees, echeances hardcodees). Aucune route API |
+| Audit logs (RGPD) | 30+ actions tracees, cleanup | Schema BDD (AuditLog, 30+ AuditAction). Aucune route API |
+| Alertes fiscales | Par type, categorie, echeances | Schema BDD (AlerteFiscale, 5 types, 10+ categories). Bouton "BIENTOT" dans la sidebar mobile. Aucune route API |
 | Quotas par plan | Nombre de questions/mois | Absent |
 
-### Fichiers cgi-engine concernes
+### Etat cgi-242
+Toute l'architecture BDD est en place (modeles Prisma complets, enums, relations). Ce qui manque : les routes API et services pour exposer ces fonctionnalites. La couche donnees est prete, la couche metier/API reste a implementer.
+
+### Fichiers cgi-242 existants
+- `server/prisma/schema.prisma` — Tous les modeles SaaS definis (Organization, Subscription, Payment, Invoice, Invitation, AuditLog, AlerteFiscale, etc.)
+- `server/src/routes/auth.ts` — Creation org + abo FREE a l'inscription (lignes 29-64)
+- `mobile/components/Sidebar.tsx` — Navigation avec alertes "BIENTOT", profil "Coming soon"
+- `mobile/app/(app)/index.tsx` — Dashboard basique (stats hardcodees, echeances, actions rapides)
+
+### Fichiers cgi-engine concernes (a migrer)
 - `server/src/routes/organization.routes.ts`
 - `server/src/services/organization.service.ts`
 - `server/src/services/organization.admin.service.ts`
