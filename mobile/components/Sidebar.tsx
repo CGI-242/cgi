@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Alert } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -48,7 +48,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     {
       label: "Mon profil",
       icon: "person-outline",
-      action: () => Alert.alert("Mon profil", "Bientot disponible"),
+      action: () => router.push("/(app)/profil"),
     },
     {
       label: "Mot de passe",
@@ -58,7 +58,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     {
       label: "Parametres",
       icon: "settings-outline",
-      action: () => Alert.alert("Parametres", "Bientot disponible"),
+      action: () => router.push("/(app)/parametres"),
     },
     {
       label: "Se deconnecter",

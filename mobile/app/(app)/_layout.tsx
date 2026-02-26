@@ -8,11 +8,15 @@ import Sidebar from "@/components/Sidebar";
 
 export default function AppLayout() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
+  const loggedOut = useAuthStore((s) => s.loggedOut);
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   if (!isAuthenticated) {
+    if (loggedOut) {
+      return <Redirect href="/(auth)/logout" />;
+    }
     return <Redirect href="/(auth)" />;
   }
 
@@ -48,6 +52,8 @@ export default function AppLayout() {
           <Stack.Screen name="simulateur/patente" options={{ headerShown: false }} />
           <Stack.Screen name="simulateur/solde-liquidation" options={{ headerShown: false }} />
           <Stack.Screen name="chat/index" options={{ headerShown: false }} />
+          <Stack.Screen name="profil/index" options={{ headerShown: false }} />
+          <Stack.Screen name="parametres/index" options={{ headerShown: false }} />
         </Stack>
       </View>
     </View>
