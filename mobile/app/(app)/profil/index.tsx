@@ -114,7 +114,7 @@ export default function ProfilScreen() {
       {/* Header */}
       <View
         style={{
-          backgroundColor: "#00815d",
+          backgroundColor: "#1a1a1a",
           paddingTop: Platform.OS === "ios" ? 56 : 16,
           paddingBottom: 16,
           paddingHorizontal: 16,
@@ -125,7 +125,28 @@ export default function ProfilScreen() {
         <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
           <Ionicons name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
-        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold" }}>Mon profil</Text>
+        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold", flex: 1 }}>Mon profil</Text>
+        <TouchableOpacity
+          onPress={handleSave}
+          disabled={saving}
+          style={{
+            backgroundColor: saving ? "#86efac" : "#00815d",
+            borderRadius: 8,
+            paddingVertical: 8,
+            paddingHorizontal: 16,
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          {saving ? (
+            <ActivityIndicator size="small" color="#fff" style={{ marginRight: 6 }} />
+          ) : (
+            <Ionicons name="checkmark" size={18} color="#fff" style={{ marginRight: 6 }} />
+          )}
+          <Text style={{ color: "#fff", fontSize: 14, fontWeight: "700" }}>
+            {saving ? "..." : "Enregistrer"}
+          </Text>
+        </TouchableOpacity>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
@@ -204,28 +225,6 @@ export default function ProfilScreen() {
           </Text>
         ) : null}
 
-        {/* Bouton Enregistrer */}
-        <TouchableOpacity
-          onPress={handleSave}
-          disabled={saving}
-          style={{
-            backgroundColor: saving ? "#86efac" : "#00815d",
-            borderRadius: 10,
-            paddingVertical: 14,
-            alignItems: "center",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}
-        >
-          {saving ? (
-            <ActivityIndicator size="small" color="#fff" style={{ marginRight: 8 }} />
-          ) : (
-            <Ionicons name="checkmark-circle-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
-          )}
-          <Text style={{ color: "#fff", fontSize: 16, fontWeight: "700" }}>
-            {saving ? "Enregistrement..." : "Enregistrer"}
-          </Text>
-        </TouchableOpacity>
       </ScrollView>
     </KeyboardAvoidingView>
   );
