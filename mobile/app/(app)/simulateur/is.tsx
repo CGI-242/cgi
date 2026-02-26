@@ -62,8 +62,8 @@ export default function IsScreen() {
           {/* Info */}
           <View className="p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: "#374151" }}>
-              Le minimum de perception est calcule sur les produits de l'entreprise
-              au taux de 1% (ou 2% si deficit 2 exercices consecutifs). Il est verse
+              Le minimum de perception est calculé sur les produits de l'entreprise
+              au taux de 1% (ou 2% si déficit 2 exercices consécutifs). Il est versé
               en 4 acomptes trimestriels (Art. 86C).
             </Text>
           </View>
@@ -75,13 +75,13 @@ export default function IsScreen() {
           <NumberField label="Produits d'exploitation" value={produitsExploitation} onChange={setProduitsExploitation} />
           <NumberField label="Produits financiers" value={produitsFinanciers} onChange={setProduitsFinanciers} />
           <NumberField label="Produits HAO" value={produitsHAO} onChange={setProduitsHAO} />
-          <NumberField label="Produits ayant fait l'objet de retenues liberatoires" value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
+          <NumberField label="Produits ayant fait l'objet de retenues libératoires" value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
 
-          {/* Deficit */}
+          {/* Déficit */}
           <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
             <View className="flex-1">
-              <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>Deficit fiscal 2 exercices</Text>
-              <Text style={{ fontSize: 10, color: "#6b7280" }}>Taux passe de 1% a 2% (Art. 86B)</Text>
+              <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>Déficit fiscal 2 exercices</Text>
+              <Text style={{ fontSize: 10, color: "#6b7280" }}>Taux passe de 1% à 2% (Art. 86B)</Text>
             </View>
             <Switch
               value={deficitConsecutif}
@@ -92,11 +92,11 @@ export default function IsScreen() {
           </View>
 
           <Text style={{ fontSize: 10, color: "#9ca3af" }}>
-            Art. 86B (base et taux), Art. 86C (echeances trimestrielles)
+            Art. 86B (base et taux), Art. 86C (échéances trimestrielles)
           </Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
+        {/* Colonne droite - Résultats */}
         <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: "#e5e7eb" }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
@@ -105,7 +105,7 @@ export default function IsScreen() {
                 <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>MINIMUM DE PERCEPTION (Art. 86B)</Text>
               </View>
               <TableRow label="Base (produits - retenues)" value={formatNumber(result.baseMinimumPerception)} />
-              <TableRow label={`Taux applique`} value={`${result.tauxMinimum}%`} bg="#f9fafb" />
+              <TableRow label={`Taux appliqué`} value={`${result.tauxMinimum}%`} bg="#f9fafb" />
               <View style={{ backgroundColor: "#00815d10", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
                 <View className="flex-row items-center justify-between">
                   <Text style={{ fontSize: 12, fontWeight: "600", color: "#00815d" }}>MINIMUM ANNUEL</Text>
@@ -124,7 +124,7 @@ export default function IsScreen() {
               {/* Total */}
               <View style={{ backgroundColor: "#eff6ff", paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
                 <View className="flex-row items-center justify-between">
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#1e40af" }}>TOTAL A VERSER</Text>
+                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#1e40af" }}>TOTAL À VERSER</Text>
                   <Text style={{ fontSize: 16, fontWeight: "800", color: "#1e40af" }}>{formatNumber(result.minimumPerceptionAnnuel)}</Text>
                 </View>
                 <Text style={{ fontSize: 10, color: "#6b7280", marginTop: 4 }}>

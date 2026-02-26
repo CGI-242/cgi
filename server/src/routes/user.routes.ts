@@ -6,7 +6,7 @@ import { createLogger } from "../utils/logger";
 const logger = createLogger("UserRoutes");
 const router = Router();
 
-// GET /api/user/profile — Retourne le profil de l'utilisateur connecte
+// GET /api/user/profile — Retourne le profil de l'utilisateur connecté
 router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const user = await prisma.user.findUnique({
@@ -28,7 +28,7 @@ router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
       return;
     }
 
-    // Recuperer l'abonnement via l'organisation
+    // Récupérer l'abonnement via l'organisation
     const membership = await prisma.organizationMember.findFirst({
       where: { userId: req.userId },
       include: {
@@ -69,14 +69,14 @@ router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
-// PUT /api/user/profile — Met a jour les champs editables
+// PUT /api/user/profile — Met à jour les champs éditables
 router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const { firstName, lastName, phone, profession } = req.body;
 
     // Validation basique
     if (firstName !== undefined && (typeof firstName !== "string" || firstName.trim().length === 0)) {
-      res.status(400).json({ error: "Le prenom est invalide" });
+      res.status(400).json({ error: "Le prénom est invalide" });
       return;
     }
     if (lastName !== undefined && (typeof lastName !== "string" || lastName.trim().length === 0)) {
@@ -84,7 +84,7 @@ router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
       return;
     }
     if (phone !== undefined && phone !== null && typeof phone !== "string") {
-      res.status(400).json({ error: "Le telephone est invalide" });
+      res.status(400).json({ error: "Le téléphone est invalide" });
       return;
     }
     if (profession !== undefined && profession !== null && typeof profession !== "string") {
@@ -92,7 +92,7 @@ router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
       return;
     }
 
-    // Construire l'objet de mise a jour avec uniquement les champs fournis
+    // Construire l'objet de mise à jour avec uniquement les champs fournis
     const data: Record<string, string | null> = {};
     if (firstName !== undefined) data.firstName = firstName.trim();
     if (lastName !== undefined) data.lastName = lastName.trim();
@@ -100,7 +100,7 @@ router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
     if (profession !== undefined) data.profession = profession ? profession.trim() : null;
 
     if (Object.keys(data).length === 0) {
-      res.status(400).json({ error: "Aucun champ a mettre a jour" });
+      res.status(400).json({ error: "Aucun champ à mettre à jour" });
       return;
     }
 

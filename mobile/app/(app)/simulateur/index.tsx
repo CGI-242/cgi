@@ -6,8 +6,8 @@ const simulateurs = [
   {
     id: "its",
     title: "ITS",
-    subtitle: "Impot sur les Traitements et Salaires",
-    description: "Bareme progressif Art. 116 CGI 2026",
+    subtitle: "Impôt sur les Traitements et Salaires",
+    description: "Barème progressif Art. 116 CGI 2026",
     icon: "people-outline" as const,
     route: "/(app)/simulateur/its",
   },
@@ -23,7 +23,7 @@ const simulateurs = [
     id: "patente",
     title: "Patente",
     subtitle: "Contribution des Patentes",
-    description: "Bareme Art. 306 CGI 2026",
+    description: "Barème Art. 306 CGI 2026",
     icon: "storefront-outline" as const,
     route: "/(app)/simulateur/patente",
   },
@@ -51,7 +51,7 @@ export default function SimulateurHub() {
         </TouchableOpacity>
         <Text style={{ fontSize: 30, fontWeight: "900", color: "#00c17c" }}>Simulateurs</Text>
         <Text className="text-white mt-1" style={{ opacity: 0.85 }}>
-          Simulez vos impots selon le CGI Congo-Brazzaville
+          Simulez vos impôts selon le CGI Congo-Brazzaville
         </Text>
       </View>
 
@@ -121,7 +121,7 @@ export default function SimulateurHub() {
                 <Ionicons name="time-outline" size={24} color="#9ca3af" />
               </View>
               <Text style={{ fontSize: 16, fontWeight: "700", color: "#9ca3af", marginBottom: 4 }}>{title}</Text>
-              <Text style={{ fontSize: 10, color: "#9ca3af" }}>Bientot disponible</Text>
+              <Text style={{ fontSize: 10, color: "#9ca3af" }}>Bientôt disponible</Text>
             </View>
           ))}
         </View>

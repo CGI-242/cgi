@@ -19,9 +19,9 @@ import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 
 const SITUATIONS: { value: SituationFamiliale; label: string }[] = [
-  { value: "celibataire", label: "Celibataire" },
-  { value: "marie", label: "Marie(e)" },
-  { value: "divorce", label: "Divorce(e)" },
+  { value: "celibataire", label: "Célibataire" },
+  { value: "marie", label: "Marié(e)" },
+  { value: "divorce", label: "Divorcé(e)" },
   { value: "veuf", label: "Veuf/Veuve" },
 ];
 
@@ -62,7 +62,7 @@ export default function ItsScreen() {
         </TouchableOpacity>
         <Text style={{ fontSize: 24, fontWeight: "900", color: "#00c17c" }}>Simulateur ITS</Text>
         <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>
-          Impot sur les Traitements et Salaires - Art. 116 CGI 2026
+          Impôt sur les Traitements et Salaires - Art. 116 CGI 2026
         </Text>
       </View>
 
@@ -73,8 +73,8 @@ export default function ItsScreen() {
           {/* Info banner */}
           <View className="p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: "#374151" }}>
-              L'ITS est calcule selon le bareme progressif Art. 116 CGI 2026,
-              apres deduction CNSS (4%) et frais professionnels (20%).
+              L'ITS est calculé selon le barème progressif Art. 116 CGI 2026,
+              après déduction CNSS (4%) et frais professionnels (20%).
             </Text>
           </View>
 
@@ -96,7 +96,7 @@ export default function ItsScreen() {
             </View>
             {/* Droite : enfants + QF + parts */}
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 11, fontWeight: "600", color: "#6b7280", marginBottom: 2 }}>Enfants a charge</Text>
+              <Text style={{ fontSize: 11, fontWeight: "600", color: "#6b7280", marginBottom: 2 }}>Enfants à charge</Text>
               <View className="flex-row items-center" style={{ marginBottom: 10 }}>
                 <TouchableOpacity className="w-8 h-8 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
                   <Text style={{ fontSize: 16, fontWeight: "700" }}>-</Text>
@@ -116,7 +116,7 @@ export default function ItsScreen() {
             </View>
           </View>
 
-          {/* Periode */}
+          {/* Période */}
           <View className="flex-row" style={{ gap: 8, marginBottom: 12 }}>
             {(["mensuel", "annuel"] as PeriodeRevenu[]).map((p) => (
               <TouchableOpacity
@@ -148,13 +148,13 @@ export default function ItsScreen() {
             <Text style={{ fontSize: 12, color: "#6b7280", fontWeight: "600" }}>FCFA</Text>
           </View>
 
-          {/* References */}
+          {/* Références */}
           <Text style={{ fontSize: 10, color: "#9ca3af", marginTop: 12 }}>
-            Art. 40 (CNSS 4%), Art. 41 (Frais 20%), Art. 116 (Bareme ITS 2026)
+            Art. 40 (CNSS 4%), Art. 41 (Frais 20%), Art. 116 (Barème ITS 2026)
           </Text>
         </ScrollView>
 
-        {/* Colonne droite 50% - Resultats */}
+        {/* Colonne droite 50% - Résultats */}
         <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: "#e5e7eb" }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
@@ -186,9 +186,9 @@ export default function ItsScreen() {
                 </View>
               </View>
 
-              {/* Section IMPOT A PAYER */}
+              {/* Section IMPÔT À PAYER */}
               <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>IMPOT A PAYER</Text>
+                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>IMPÔT À PAYER</Text>
               </View>
               <TableRow label="ITS (Annuel)" value={formatNumber(result.itsAnnuel)} />
               <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
@@ -198,8 +198,8 @@ export default function ItsScreen() {
                 </View>
               </View>
 
-              {/* Repartition 35/65 */}
-              <TableRow label="Employe (35%)" value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg="#f9fafb" />
+              {/* Répartition 35/65 */}
+              <TableRow label="Employé (35%)" value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg="#f9fafb" />
               <TableRow label="Employeur (65%)" value={formatNumber(Math.round(result.itsMensuel * 0.65))} />
 
               {/* Salaire net */}
@@ -214,7 +214,7 @@ export default function ItsScreen() {
             <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
               <Ionicons name="calculator-outline" size={40} color="#d1d5db" />
               <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 12, textAlign: "center" }}>
-                Saisissez un salaire brut pour voir les resultats
+                Saisissez un salaire brut pour voir les résultats
               </Text>
             </View>
           )}

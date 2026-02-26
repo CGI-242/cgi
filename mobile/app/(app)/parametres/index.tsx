@@ -18,7 +18,7 @@ const PLAN_LABELS: Record<string, string> = {
   FREE: "Gratuit",
   STARTER: "Starter",
   PROFESSIONAL: "Professionnel",
-  TEAM: "Equipe",
+  TEAM: "Équipe",
   ENTERPRISE: "Entreprise",
 };
 
@@ -33,7 +33,7 @@ export default function ParametresScreen() {
       const data = await userApi.getProfile();
       setSubscription(data.subscription);
     } catch {
-      // Silencieux — les donnees s'afficheront depuis le store
+      // Silencieux — les données s'afficheront depuis le store
     } finally {
       setLoading(false);
     }
@@ -71,7 +71,7 @@ export default function ParametresScreen() {
         <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
           <Ionicons name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
-        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold" }}>Parametres</Text>
+        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold" }}>Paramètres</Text>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
@@ -119,11 +119,11 @@ export default function ParametresScreen() {
         </View>
 
         {/* Section A propos */}
-        <SectionHeader title="A PROPOS" />
+        <SectionHeader title="À PROPOS" />
         <View style={styles.card}>
           <SettingsRow icon="information-circle-outline" label="Version" value="1.0.0" />
           <Divider />
-          <SettingsRow icon="book-outline" label="Edition" value="CGI Edition 2026" />
+          <SettingsRow icon="book-outline" label="Édition" value="CGI Édition 2026" />
         </View>
       </ScrollView>
     </View>

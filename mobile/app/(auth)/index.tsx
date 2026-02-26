@@ -104,7 +104,7 @@ export default function LoginEmail() {
             <Text className="text-xs text-muted underline">Aide</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.confidentialite)}>
-            <Text className="text-xs text-muted underline">Confidentialite</Text>
+            <Text className="text-xs text-muted underline">Confidentialité</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.conditions)}>
             <Text className="text-xs text-muted underline">Conditions</Text>

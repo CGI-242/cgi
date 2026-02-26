@@ -14,7 +14,7 @@ import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 
 const REGIMES: { value: PatenteInput["regime"]; label: string }[] = [
-  { value: "reel", label: "Reel" },
+  { value: "reel", label: "Réel" },
   { value: "forfait", label: "Forfaitaire" },
   { value: "tpe", label: "TPE" },
   { value: "pe", label: "PE" },
@@ -63,13 +63,13 @@ export default function PatenteScreen() {
           {/* Info */}
           <View className="p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: "#374151" }}>
-              Patente calculee sur le CA HT (N-1). Bareme progressif Art. 306,
-              reduit de 50%. Echeance : 10-20 avril.
+              Patente calculée sur le CA HT (N-1). Barème progressif Art. 306,
+              réduit de 50%. Échéance : 10-20 avril.
             </Text>
           </View>
 
           {/* Regime fiscal */}
-          <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginBottom: 6 }}>Regime fiscal</Text>
+          <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginBottom: 6 }}>Régime fiscal</Text>
           <View className="flex-row" style={{ gap: 6, marginBottom: 12 }}>
             {REGIMES.map((r) => (
               <TouchableOpacity
@@ -87,7 +87,7 @@ export default function PatenteScreen() {
           <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 8 }}>
             <View className="flex-1">
               <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>Entreprise en stand-by</Text>
-              <Text style={{ fontSize: 10, color: "#6b7280" }}>25% de la derniere patente (Art. 278)</Text>
+              <Text style={{ fontSize: 10, color: "#6b7280" }}>25% de la dernière patente (Art. 278)</Text>
             </View>
             <Switch
               value={isStandBy}
@@ -98,7 +98,7 @@ export default function PatenteScreen() {
           </View>
           {isStandBy && (
             <View style={{ marginBottom: 8 }}>
-              <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 3 }}>Derniere patente payee</Text>
+              <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 3 }}>Dernière patente payée</Text>
               <View className="flex-row items-center bg-white px-3" style={{ borderRadius: 6, height: 40, borderWidth: 1, borderColor: "#e5e7eb" }}>
                 <TextInput
                   className="flex-1 text-sm font-semibold text-text"
@@ -142,7 +142,7 @@ export default function PatenteScreen() {
             />
           </View>
           <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
-            <Text style={{ fontSize: 12, color: "#374151", flex: 1 }}>Entites fiscales (Art. 281)</Text>
+            <Text style={{ fontSize: 12, color: "#374151", flex: 1 }}>Entités fiscales (Art. 281)</Text>
             <View className="flex-row items-center">
               <TouchableOpacity className="w-7 h-7 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
                 <Text style={{ fontSize: 15, fontWeight: "700" }}>-</Text>
@@ -155,11 +155,11 @@ export default function PatenteScreen() {
           </View>
 
           <Text style={{ fontSize: 10, color: "#9ca3af" }}>
-            Art. 278 (Patente), Art. 306 (Bareme), Art. 281 (Entites)
+            Art. 278 (Patente), Art. 306 (Barème), Art. 281 (Entités)
           </Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
+        {/* Colonne droite - Résultats */}
         <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: "#e5e7eb" }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result && result.patenteNette > 0 ? (
             <View>
@@ -167,7 +167,7 @@ export default function PatenteScreen() {
               {result.tranches.length > 0 && (
                 <>
                   <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>DETAIL PAR TRANCHES</Text>
+                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>DÉTAIL PAR TRANCHES</Text>
                   </View>
                   {result.tranches.map((t, i) => (
                     <View
@@ -189,14 +189,14 @@ export default function PatenteScreen() {
                 </>
               )}
 
-              {/* Reductions */}
+              {/* Réductions */}
               <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>REDUCTIONS</Text>
+                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>RÉDUCTIONS</Text>
               </View>
               {result.reductionStandBy > 0 && (
-                <TableRow label="Reduction stand-by (75%)" value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color="#b91c1c" />
+                <TableRow label="Réduction stand-by (75%)" value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color="#b91c1c" />
               )}
-              <TableRow label="Reduction 50% (Art. 306)" value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg="#f9fafb" color="#b91c1c" />
+              <TableRow label="Réduction 50% (Art. 306)" value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg="#f9fafb" color="#b91c1c" />
 
               {/* Patente nette */}
               <View style={{ backgroundColor: "#00815d10", paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
@@ -206,20 +206,20 @@ export default function PatenteScreen() {
                 </View>
               </View>
 
-              {/* Par entite */}
+              {/* Par entité */}
               {result.nombreEntites > 1 && (
-                <TableRow label={`Par entite (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg="#f9fafb" bold />
+                <TableRow label={`Par entité (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg="#f9fafb" bold />
               )}
 
-              {/* Echeance */}
+              {/* Échéance */}
               <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
                 <View className="flex-row items-center">
                   <Ionicons name="calendar-outline" size={14} color="#374151" />
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginLeft: 6 }}>Echeance : {result.dateEcheance}</Text>
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginLeft: 6 }}>Échéance : {result.dateEcheance}</Text>
                 </View>
               </View>
 
-              {/* References */}
+              {/* Références */}
               <View style={{ backgroundColor: "#f9fafb", paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
                 {result.references.map((ref) => (
                   <Text key={ref} style={{ fontSize: 10, color: "#9ca3af" }}>{ref}</Text>
@@ -230,7 +230,7 @@ export default function PatenteScreen() {
             <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
               <Ionicons name="calculator-outline" size={40} color="#d1d5db" />
               <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 12, textAlign: "center" }}>
-                Saisissez les donnees pour voir les resultats
+                Saisissez les données pour voir les résultats
               </Text>
             </View>
           )}

@@ -50,7 +50,7 @@ export default function ProfilScreen() {
       setEmail(profile.email);
       setCreatedAt(profile.createdAt);
     } catch {
-      // Fallback sur les donnees du store
+      // Fallback sur les données du store
       if (user) {
         setFirstName(user.prenom || "");
         setLastName(user.nom || "");
@@ -77,7 +77,7 @@ export default function ProfilScreen() {
         profession: profession.trim() || null,
       });
 
-      // Mettre a jour le store Zustand pour refleter les changements partout
+      // Mettre à jour le store Zustand pour refléter les changements partout
       if (user) {
         setUser({
           ...user,
@@ -87,9 +87,9 @@ export default function ProfilScreen() {
         });
       }
 
-      setMessage({ type: "success", text: "Profil mis a jour avec succes" });
+      setMessage({ type: "success", text: "Profil mis à jour avec succès" });
     } catch (err: any) {
-      const errorMsg = err?.response?.data?.error || "Erreur lors de la mise a jour";
+      const errorMsg = err?.response?.data?.error || "Erreur lors de la mise à jour";
       setMessage({ type: "error", text: errorMsg });
     } finally {
       setSaving(false);
@@ -179,10 +179,10 @@ export default function ProfilScreen() {
 
         {/* Formulaire */}
         <View style={{ backgroundColor: "#fff", borderRadius: 12, padding: 16, marginBottom: 16 }}>
-          <FieldInput label="Prenom" value={firstName} onChangeText={setFirstName} placeholder="Votre prenom" />
+          <FieldInput label="Prénom" value={firstName} onChangeText={setFirstName} placeholder="Votre prénom" />
           <FieldInput label="Nom" value={lastName} onChangeText={setLastName} placeholder="Votre nom" />
           <FieldInput
-            label="Telephone"
+            label="Téléphone"
             value={phone}
             onChangeText={setPhone}
             placeholder="+242 06 XXX XX XX"

@@ -11,7 +11,7 @@ function getInitials(prenom?: string, nom?: string) {
 function getGreeting() {
   const h = new Date().getHours();
   if (h < 12) return "Bonjour";
-  if (h < 18) return "Bon apres-midi";
+  if (h < 18) return "Bon après-midi";
   return "Bonsoir";
 }
 
@@ -19,34 +19,34 @@ const ECHEANCES = [
   { date: "15 mars", label: "Minimum perception IS (T1)", icon: "business-outline" as const },
   { date: "15 juin", label: "Minimum perception IS (T2)", icon: "business-outline" as const },
   { date: "15 sept.", label: "Minimum perception IS (T3)", icon: "business-outline" as const },
-  { date: "15 dec.", label: "Minimum perception IS (T4)", icon: "business-outline" as const },
+  { date: "15 déc.", label: "Minimum perception IS (T4)", icon: "business-outline" as const },
   { date: "15/mois", label: "TVA (mensuel)", icon: "receipt-outline" as const },
   { date: "15/mois", label: "ITS (mensuel)", icon: "people-outline" as const },
   { date: "15 avr.", label: "Patente annuelle", icon: "storefront-outline" as const },
   { date: "15 mars", label: "IRPP annuel", icon: "person-outline" as const },
-  { date: "15 mai", label: "IRF (1ere echeance)", icon: "home-outline" as const },
-  { date: "20 aout", label: "IRF (2eme echeance)", icon: "home-outline" as const },
-  { date: "15 nov.", label: "IRF (3eme echeance)", icon: "home-outline" as const },
+  { date: "15 mai", label: "IRF (1ère échéance)", icon: "home-outline" as const },
+  { date: "20 août", label: "IRF (2ème échéance)", icon: "home-outline" as const },
+  { date: "15 nov.", label: "IRF (3ème échéance)", icon: "home-outline" as const },
 ];
 
 const STATS = [
   { label: "Articles CGI", value: "7 000+", icon: "document-text-outline" as const, bg: "#e6f7f0", color: "#00815d" },
   { label: "Simulateurs", value: "4", icon: "calculator-outline" as const, bg: "#eef2ff", color: "#4f46e5" },
   { label: "Textes TFNC", value: "60+", icon: "library-outline" as const, bg: "#fef3c7", color: "#d97706" },
-  { label: "Edition", value: "2026", icon: "calendar-outline" as const, bg: "#f3e8ff", color: "#9333ea" },
+  { label: "Édition", value: "2026", icon: "calendar-outline" as const, bg: "#f3e8ff", color: "#9333ea" },
 ];
 
 const QUICK_ACTIONS = [
   {
     label: "Consulter le CGI 2026",
-    desc: "Code General des Impots en vigueur",
+    desc: "Code Général des Impôts en vigueur",
     icon: "book-outline" as const,
     bg: "#e6f7f0",
     color: "#00815d",
     route: "/(app)/code",
   },
   {
-    label: "Simuler un impot",
+    label: "Simuler un impôt",
     desc: "ITS, Minimum IS, Patente, Solde IS",
     icon: "calculator-outline" as const,
     bg: "#eef2ff",
@@ -64,8 +64,8 @@ const QUICK_ACTIONS = [
 ];
 
 const MOIS: Record<string, number> = {
-  jan: 0, fev: 1, mars: 2, avr: 3, mai: 4, juin: 5,
-  juil: 6, aout: 7, sept: 8, oct: 9, nov: 10, dec: 11,
+  jan: 0, "fev": 1, "fév": 1, mars: 2, avr: 3, mai: 4, juin: 5,
+  juil: 6, "aout": 7, "août": 7, sept: 8, oct: 9, nov: 10, "dec": 11, "déc": 11,
 };
 
 function trierEcheances(echeances: typeof ECHEANCES) {
@@ -104,7 +104,7 @@ export default function Dashboard() {
         <View className="flex-row items-center justify-between">
           <View>
             <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 36, letterSpacing: 1 }}>CGI 242</Text>
-            <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>Code General des Impots</Text>
+            <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>Code Général des Impôts</Text>
           </View>
 
           <View className="flex-row items-center">
@@ -181,7 +181,7 @@ export default function Dashboard() {
 
           <View style={{ paddingVertical: 32, alignItems: "center" }}>
             <Ionicons name="checkmark-circle" size={40} color="#00c17c" style={{ marginBottom: 8 }} />
-            <Text style={{ fontSize: 15, fontWeight: "600", color: "#374151" }}>Vous etes a jour</Text>
+            <Text style={{ fontSize: 15, fontWeight: "600", color: "#374151" }}>Vous êtes à jour</Text>
             <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 4 }}>Aucune nouvelle notification</Text>
           </View>
 
@@ -210,7 +210,7 @@ export default function Dashboard() {
             {getGreeting()}, {user?.prenom || "Utilisateur"} !
           </Text>
           <Text style={{ fontSize: 14, color: "#6b7280", marginTop: 2 }}>
-            Voici un apercu de votre espace CGI 242
+            Voici un aperçu de votre espace CGI 242
           </Text>
         </View>
 
@@ -306,7 +306,7 @@ export default function Dashboard() {
                   </View>
                   {disabled ? (
                     <View style={{ backgroundColor: "#f3f4f6", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2 }}>
-                      <Text style={{ fontSize: 10, fontWeight: "700", color: "#9ca3af" }}>BIENTOT</Text>
+                      <Text style={{ fontSize: 10, fontWeight: "700", color: "#9ca3af" }}>BIENTÔT</Text>
                     </View>
                   ) : (
                     <Ionicons name="chevron-forward" size={18} color="#d1d5db" />
@@ -321,7 +321,7 @@ export default function Dashboard() {
         <View className="px-4 pt-4">
           <View className="flex-row items-center mb-2">
             <Ionicons name="calendar-outline" size={15} color="#00815d" style={{ marginRight: 6 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Prochaines echeances fiscales</Text>
+            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Prochaines échéances fiscales</Text>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 10 }}>
             {echeancesTriees.map((e) => (
@@ -349,7 +349,7 @@ export default function Dashboard() {
 
         {/* Footer */}
         <View className="px-4 pt-5 items-center">
-          <Text style={{ fontSize: 12, color: "#9ca3af" }}>CGI242 v1.0.0 — Edition 2026</Text>
+          <Text style={{ fontSize: 12, color: "#9ca3af" }}>CGI242 v1.0.0 — Édition 2026</Text>
           <Text style={{ fontSize: 11, color: "#d1d5db", marginTop: 1 }}>NormX AI</Text>
         </View>
       </ScrollView>

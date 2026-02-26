@@ -52,7 +52,7 @@ export default function SoldeLiquidationScreen() {
           Solde de liquidation
         </Text>
         <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>
-          IS calcule sur resultat fiscal - acomptes verses (Art. 86A & 86G)
+          IS calculé sur résultat fiscal - acomptes versés (Art. 86A & 86G)
         </Text>
       </View>
 
@@ -69,12 +69,12 @@ export default function SoldeLiquidationScreen() {
             style={{ borderRadius: 8, marginBottom: 12 }}
           >
             <Text style={{ fontSize: 11, color: "#374151" }}>
-              L'IS est calcule en appliquant le taux (25% ou 33%) au resultat
-              fiscal. Le solde = IS calcule - acomptes trimestriels deja verses.
+              L'IS est calculé en appliquant le taux (25% ou 33%) au résultat
+              fiscal. Le solde = IS calculé - acomptes trimestriels déjà versés.
             </Text>
           </View>
 
-          {/* Resultat fiscal */}
+          {/* Résultat fiscal */}
           <Text
             style={{
               fontSize: 12,
@@ -83,7 +83,7 @@ export default function SoldeLiquidationScreen() {
               marginBottom: 6,
             }}
           >
-            Resultat fiscal (benefice imposable)
+            Résultat fiscal (bénéfice imposable)
           </Text>
           <View
             className="flex-row items-center bg-white px-3"
@@ -123,10 +123,10 @@ export default function SoldeLiquidationScreen() {
           </Text>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
             {([
-              { value: "general" as TypeContribuable, label: "General", taux: "28%" },
+              { value: "general" as TypeContribuable, label: "Général", taux: "28%" },
               { value: "microfinance" as TypeContribuable, label: "Microfinance / Enseignement", taux: "25%" },
               { value: "mines" as TypeContribuable, label: "Mines / Immobilier", taux: "28%" },
-              { value: "etranger" as TypeContribuable, label: "Etrangere", taux: "35%" },
+              { value: "etranger" as TypeContribuable, label: "Étrangère", taux: "35%" },
             ]).map((t) => (
               <TouchableOpacity
                 key={t.value}
@@ -161,7 +161,7 @@ export default function SoldeLiquidationScreen() {
               marginBottom: 6,
             }}
           >
-            Acomptes verses (minimum de perception Art. 86C)
+            Acomptes versés (minimum de perception Art. 86C)
           </Text>
           <NumberField
             label="1er trimestre (15 mars)"
@@ -179,7 +179,7 @@ export default function SoldeLiquidationScreen() {
             onChange={setAcompte3}
           />
           <NumberField
-            label="4e trimestre (15 dec.)"
+            label="4e trimestre (15 déc.)"
             value={acompte4}
             onChange={setAcompte4}
           />
@@ -189,7 +189,7 @@ export default function SoldeLiquidationScreen() {
           </Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
+        {/* Colonne droite - Résultats */}
         <ScrollView
           style={{
             width: "50%",
@@ -200,7 +200,7 @@ export default function SoldeLiquidationScreen() {
         >
           {result ? (
             <View>
-              {/* IS calcule */}
+              {/* IS calculé */}
               <View
                 style={{
                   backgroundColor: "#f3f4f6",
@@ -211,15 +211,15 @@ export default function SoldeLiquidationScreen() {
                 <Text
                   style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}
                 >
-                  IS CALCULE (Art. 86A)
+                  IS CALCULÉ (Art. 86A)
                 </Text>
               </View>
               <TableRow
-                label="Resultat fiscal"
+                label="Résultat fiscal"
                 value={formatNumber(result.resultatFiscal)}
               />
               <TableRow
-                label="Benefice arrondi (< 1 000 neglige)"
+                label="Bénéfice arrondi (< 1 000 négligé)"
                 value={formatNumber(result.beneficeArrondi)}
                 bg="#f9fafb"
               />
@@ -245,7 +245,7 @@ export default function SoldeLiquidationScreen() {
                       color: "#991b1b",
                     }}
                   >
-                    IS A PAYER
+                    IS À PAYER
                   </Text>
                   <Text
                     style={{
@@ -259,7 +259,7 @@ export default function SoldeLiquidationScreen() {
                 </View>
               </View>
 
-              {/* Detail acomptes */}
+              {/* Détail acomptes */}
               <View
                 style={{
                   backgroundColor: "#f3f4f6",
@@ -270,7 +270,7 @@ export default function SoldeLiquidationScreen() {
                 <Text
                   style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}
                 >
-                  ACOMPTES VERSES (Art. 86C)
+                  ACOMPTES VERSÉS (Art. 86C)
                 </Text>
               </View>
               {result.detailAcomptes.map((a) => (
@@ -326,7 +326,7 @@ export default function SoldeLiquidationScreen() {
                 </Text>
               </View>
               <TableRow
-                label="IS calcule - Acomptes"
+                label="IS calculé - Acomptes"
                 value={`${formatNumber(result.isCalcule)} - ${formatNumber(result.totalAcomptes)}`}
                 bg="#f9fafb"
               />
@@ -349,7 +349,7 @@ export default function SoldeLiquidationScreen() {
                         color: "#059669",
                       }}
                     >
-                      CREDIT D'IMPOT
+                      CRÉDIT D'IMPÔT
                     </Text>
                     <Text
                       style={{
@@ -368,7 +368,7 @@ export default function SoldeLiquidationScreen() {
                       marginTop: 4,
                     }}
                   >
-                    Trop-percu imputable sur les exercices suivants
+                    Trop-perçu imputable sur les exercices suivants
                   </Text>
                 </View>
               ) : (
@@ -389,7 +389,7 @@ export default function SoldeLiquidationScreen() {
                         color: "#991b1b",
                       }}
                     >
-                      SOLDE A PAYER
+                      SOLDE À PAYER
                     </Text>
                     <Text
                       style={{
@@ -408,7 +408,7 @@ export default function SoldeLiquidationScreen() {
                       marginTop: 4,
                     }}
                   >
-                    A verser spontanement apres declaration (Art. 86G)
+                    À verser spontanément après déclaration (Art. 86G)
                   </Text>
                 </View>
               )}
@@ -431,7 +431,7 @@ export default function SoldeLiquidationScreen() {
                   textAlign: "center",
                 }}
               >
-                Saisissez le resultat fiscal pour voir le calcul
+                Saisissez le résultat fiscal pour voir le calcul
               </Text>
             </View>
           )}

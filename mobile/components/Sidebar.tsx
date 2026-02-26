@@ -56,12 +56,12 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
       action: () => router.push("/(auth)/forgot-password"),
     },
     {
-      label: "Parametres",
+      label: "Paramètres",
       icon: "settings-outline",
       action: () => router.push("/(app)/parametres"),
     },
     {
-      label: "Se deconnecter",
+      label: "Se déconnecter",
       icon: "log-out-outline",
       action: () => logout(),
       color: "#e74c3c",
@@ -100,7 +100,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           ) : (
             <View>
               <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
-              <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>Code General des Impots</Text>
+              <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>Code Général des Impôts</Text>
             </View>
           )}
           {!collapsed && (
@@ -114,7 +114,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           <TouchableOpacity
             onPress={onToggle}
             style={{ alignItems: "center", paddingVertical: 8, marginBottom: 4 }}
-            accessibilityLabel="Deployer la sidebar"
+            accessibilityLabel="Déployer la sidebar"
             accessibilityRole="button"
           >
             <Ionicons name="chevron-forward-outline" size={20} color="#fff" />
@@ -175,7 +175,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                         marginLeft: 8,
                       }}
                     >
-                      <Text style={{ fontSize: 9, fontWeight: "700", color: "#9ca3af" }}>BIENTOT</Text>
+                      <Text style={{ fontSize: 9, fontWeight: "700", color: "#9ca3af" }}>BIENTÔT</Text>
                     </View>
                   )}
                 </View>
