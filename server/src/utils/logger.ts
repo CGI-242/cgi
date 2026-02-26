@@ -1,40 +1,84 @@
 // server/src/utils/logger.ts
-// Logger léger compatible avec createLogger de cgi-engine (remplace Winston)
+// Logger Winston avec format console coloré (dev) et JSON (prod)
 
+import winston from 'winston';
+
+const { combine, timestamp, printf, colorize, errors, json } = winston.format;
+
+// Format console coloré pour le développement
+const devFormat = combine(
+  colorize({ all: true }),
+  timestamp({ format: 'HH:mm:ss.SSS' }),
+  errors({ stack: true }),
+  printf(({ level, message, timestamp, context, ...meta }) => {
+    const ctx = context ? `[${context}]` : '';
+    const extra = Object.keys(meta).length > 0 ? ` ${JSON.stringify(meta)}` : '';
+    return `${timestamp} ${level} ${ctx} ${message}${extra}`;
+  })
+);
+
+// Format JSON structuré pour la production
+const prodFormat = combine(
+  timestamp(),
+  errors({ stack: true }),
+  json()
+);
+
+const winstonLogger = winston.createLogger({
+  level: process.env.LOG_LEVEL || (process.env.NODE_ENV === 'production' ? 'info' : 'debug'),
+  defaultMeta: { service: 'cgi-242' },
+  format: process.env.NODE_ENV === 'production' ? prodFormat : devFormat,
+  transports: [
+    new winston.transports.Console(),
+  ],
+});
+
+/**
+ * Logger avec contexte, compatible avec l'API utilisée dans tout le projet
+ */
 class Logger {
-  private context?: string;
+  private winstonChild: winston.Logger;
 
   constructor(context?: string) {
-    this.context = context;
-  }
-
-  private format(level: string, message: string): string {
-    const timestamp = new Date().toISOString();
-    const ctx = this.context ? `[${this.context}]` : '';
-    return `${timestamp} ${level} ${ctx} ${message}`;
+    this.winstonChild = context ? winstonLogger.child({ context }) : winstonLogger;
   }
 
   debug(message: string, data?: unknown): void {
-    if (process.env.LOG_LEVEL === 'debug') {
-      console.debug(this.format('DEBUG', message), data !== undefined ? data : '');
+    if (data !== undefined) {
+      this.winstonChild.debug(message, { data });
+    } else {
+      this.winstonChild.debug(message);
     }
   }
 
   info(message: string, data?: unknown): void {
-    console.log(this.format('INFO', message), data !== undefined ? data : '');
+    if (data !== undefined) {
+      this.winstonChild.info(message, { data });
+    } else {
+      this.winstonChild.info(message);
+    }
   }
 
   warn(message: string, data?: unknown): void {
-    console.warn(this.format('WARN', message), data !== undefined ? data : '');
+    if (data !== undefined) {
+      this.winstonChild.warn(message, { data });
+    } else {
+      this.winstonChild.warn(message);
+    }
   }
 
   error(message: string, data?: unknown): void {
-    console.error(this.format('ERROR', message), data !== undefined ? data : '');
+    if (data instanceof Error) {
+      this.winstonChild.error(message, { error: data.message, stack: data.stack });
+    } else if (data !== undefined) {
+      this.winstonChild.error(message, { data });
+    } else {
+      this.winstonChild.error(message);
+    }
   }
 
   child(context: string): Logger {
-    const childContext = this.context ? `${this.context}:${context}` : context;
-    return new Logger(childContext);
+    return new Logger(context);
   }
 }
 
