@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "document": "Taxe d'abonnement et de réabonnement télévisuelle",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC4-TV",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.9. Taxe d'abonnement et de réabonnement télévisuelle",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Art.1.- Il est institué en République du Congo une taxe sur les abonnements et réabonnements aux chaînes télévisuelles dénommée « taxe d'abonnement et réabonnement télévisuelle »."
+      ],
+      "mots_cles": [
+        "taxe abonnement",
+        "réabonnement",
+        "chaînes télévisuelles",
+        "TART"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "Art.2.- Le taux de la taxe est de 10 % sur chaque abonnement et réabonnement."
+      ],
+      "mots_cles": [
+        "taux taxe",
+        "10%",
+        "abonnement",
+        "réabonnement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Collecte et reversement",
+      "texte": [
+        "Art.3.- La taxe est collectée sur chaque abonnement et réabonnement par les sociétés de distributions des chaînes télévisuelle et, fait l'objet d'un reversement mensuel à la recette des impôts dont relève la société de distribution des chaînes télévisuelles concernée, sur la base d'un état déclaratif entre le 10 et le 20 du mois suivant celui de l'encaissement par la société de distribution des chaînes télévisuelles."
+      ],
+      "mots_cles": [
+        "collecte",
+        "reversement mensuel",
+        "recette impôts",
+        "état déclaratif",
+        "10 au 20 du mois",
+        "sociétés distribution"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Sanction du reversement tardif",
+      "texte": [
+        "Art.4.- Le reversement tardif est sanctionné par une pénalité de retard de 100 % du montant de la taxe due pour chaque mois de retard."
+      ],
+      "mots_cles": [
+        "sanction",
+        "reversement tardif",
+        "pénalité 100%",
+        "par mois retard"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Contrôle fiscal",
+      "texte": [
+        "Art.5.- La déclaration et le paiement de la taxe sont soumis à un contrôle périodique de l'administration fiscale."
+      ],
+      "mots_cles": [
+        "contrôle fiscal",
+        "contrôle périodique",
+        "administration fiscale"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

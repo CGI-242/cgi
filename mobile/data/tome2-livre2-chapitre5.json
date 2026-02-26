@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 2,
+    "chapitre": 5,
+    "chapitre_titre": "Droits de timbre des effets de commerce",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 139",
+      "titre": "Effets de commerce assujettis au droit de timbre",
+      "texte": [
+        "Sont assujettis au droit de timbre en raison des sommes et valeurs, les billets à ordre ou au porteur, tous les effets négociables ou de commerce, les lettres de changes, faits au Congo, même s'ils sont payables hors du Congo, les billets et obligations non négociables, les mandats à terme ou de place, les billets, les lettres de crédit quelle que soit leur forme ou leur dénomination."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "sommes",
+        "valeurs",
+        "billets à ordre",
+        "billets au porteur",
+        "effets négociables",
+        "effets de commerce",
+        "lettres de change",
+        "Congo",
+        "billets",
+        "obligations non négociables",
+        "mandats à terme",
+        "mandats de place",
+        "lettres de crédit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
+    },
+    {
+      "article": "Art. 140",
+      "titre": "Effets venant de l'étranger et payables au Congo",
+      "texte": [
+        "Les effets venant de l'étranger et payables au Congo sont soumis au timbre avant d'être négociés, acceptés ou acquittés."
+      ],
+      "mots_cles": [
+        "effets",
+        "étranger",
+        "payables au Congo",
+        "timbre",
+        "négociés",
+        "acceptés",
+        "acquittés"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
+    },
+    {
+      "article": "Art. 141",
+      "titre": "Effets tirés de l'étranger sur l'étranger",
+      "texte": [
+        "Sont également soumis au timbre les effets tirés de l'étranger sur l'étranger et négociés, acceptés ou acquittés au Congo."
+      ],
+      "mots_cles": [
+        "effets",
+        "tirés de l'étranger",
+        "sur l'étranger",
+        "timbre",
+        "négociés",
+        "acceptés",
+        "acquittés",
+        "Congo"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
+    },
+    {
+      "article": "Art. 142",
+      "titre": "Tarif du droit de timbre des effets de commerce",
+      "texte": [
+        "Le tarif du droit de timbre est de 500 FCFA par fraction de 100.000 FCFA avec un maximum de 5.000 FCFA par effet."
+      ],
+      "mots_cles": [
+        "tarif",
+        "droit de timbre",
+        "500 FCFA",
+        "fraction",
+        "100.000 FCFA",
+        "maximum",
+        "5.000 FCFA",
+        "effet"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
+    },
+    {
+      "article": "Art. 143",
+      "titre": "Paiement du droit de timbre des effets de commerce",
+      "texte": [
+        "Le paiement du droit de timbre sur les effets de commerce est effectué par apposition de timbres mobiles qui seront oblitérés au moment de l'emploi."
+      ],
+      "mots_cles": [
+        "paiement",
+        "droit de timbre",
+        "effets de commerce",
+        "timbres mobiles",
+        "oblitération"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Paiement et contraventions"
+    },
+    {
+      "article": "Art. 144",
+      "titre": "Contravention au timbre des effets de commerce",
+      "texte": [
+        "Toute contravention aux dispositions ci-dessus est passible d'une amende de 5 % du montant de l'effet non timbré.",
+        "Les contrevenants sont soumis solidairement au paiement du droit de timbre et des amendes."
+      ],
+      "mots_cles": [
+        "contravention",
+        "amende",
+        "5 %",
+        "effet non timbré",
+        "contrevenants",
+        "solidairement",
+        "paiement",
+        "droit de timbre"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Paiement et contraventions"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 2,
+    "chapitre": null,
+    "chapitre_titre": "Impôt sur le chiffre d'affaires intérieur",
+    "section": null,
+    "section_titre": null
+  },
+  "articles": [
+    {
+      "article": "Livre 2",
+      "titre": "Impôt sur le chiffre d'affaires intérieur - Abrogé",
+      "texte": [
+        "Abrogé.",
+        "[*NB* - Voir sous TFNC 6 les dispositions relatives à la TVA]."
+      ],
+      "mots_cles": [
+        "chiffre d'affaires",
+        "TVA",
+        "abrogé",
+        "TFNC 6"
+      ],
+      "statut": "abrogé",
+      "section": "Livre 2 : Impôt sur le chiffre d'affaires intérieur"
+    }
+  ]
+}

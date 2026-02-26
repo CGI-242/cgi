@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "document": "Application des dispositions fiscales au secteur pétrolier amont",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC3-PETROLE",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "3. Fiscalité des mines et des hydrocarbures",
+    "chapitre_titre": "Chapitre 4 : Les conditions de récupération des coûts pétroliers",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 69",
+      "titre": "Conditions générales de récupération des coûts pétroliers",
+      "section": null,
+      "texte": [
+        "Chapitre 4 - Les conditions de récupération des coûts pétroliers",
+        "Art.69.- Conditions générales de récupération des coûts pétroliers",
+        "I. L'article 3 du Code des hydrocarbures définit les coûts pétroliers comme « toute dépense fiscalement déductible engagée et payée ainsi que les provisions constituées par le contracteur pour la réalisation des opérations pétrolières ». Toutefois, en application de l'article 75 du Code des hydrocarbures, la provision de remise en état des sites constitue un coût pétrolier récupérable.",
+        "II. Il en ressort qu'une lecture combinée de l'article 3 et de l'article 153 du Code des hydrocarbures conduit à ce que les dépenses fiscalement non déductibles, telles que les amendes et pénalités fiscales ainsi que les intérêts de retard de toute nature que le contracteur ou ses membres serait redevables, ne constituent ni des coûts pétroliers ni des charges déductibles de l'assiette fiscale imposable à l'impôt sur les sociétés.",
+        "III. Ainsi, constitue un coût pétrolier récupérable toute dépense remplissant simultanément les principales conditions suivantes :",
+        "a) être fiscalement déductible d'après le CGI ;",
+        "b) être engagée, c'est-à-dire facturée et comptabilisée ;",
+        "c) être payée, c'est-à-dire non due au bénéficiaire, à l'émetteur de la facture ou du titre de perception, au moment de la déduction ou de la récupération ;",
+        "d) satisfaire les conditions de prestation et d'utilisation des biens et services localement prévues par les articles 140 à 142 du Code des hydrocarbures ;",
+        "e) ne pas avoir été qualifiée de non constitutive d'un coût pétrolier par une disposition spécifique."
+      ],
+      "mots_cles": ["coûts pétroliers", "dépense déductible", "article 3", "article 75", "article 153", "provision remise en état", "amendes pénalités", "conditions récupération", "articles 140 à 142"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Sous-conditions de déductibilité fiscale",
+      "section": null,
+      "texte": [
+        "Art.70.- Sous-conditions de déductibilité fiscale",
+        "Pour être fiscalement déductible, toute dépense doit remplir les sous-conditions de fond, de forme et de temps suivantes :",
+        "1° les sous-conditions de fond de déductibilité fiscale des charges. Les charges doivent :",
+        "- être exposées dans l'intérêt de l'exploitation, c'est-à-dire se rattacher à la gestion normale de l'entreprise. Cela exclut notamment les dépenses à caractère personnel des dirigeants et de leurs proches n'ayant aucun lien direct ou indirect avec le contracteur principalement ;",
+        "- se traduire par une diminution de l'actif net de l'entreprise. Ne font pas partie des charges déductibles les dépenses qui se traduisent par une augmentation de l'actif, notamment ;",
+        "- les dépenses d'acquisition ou de renouvellement des éléments d'actif ;",
+        "- les dépenses augmentant la durée d'utilisation ou la valeur d'une immobilisation ;",
+        "- les remboursements d'emprunts ;",
+        "- être sous-conditions de forme à respecter pour les charges déductibles : les charges doivent être régulièrement comptabilisées et appuyées de pièces justificatives. En outre, conformément à l'article 380 du tome 1 du CGI, certaines charges déductibles ne sont pas admises en déduction en cas de défaut de déclaration.",
+        "Ce sont, notamment :",
+        "1° les rémunérations de toute nature versées au personnel ;",
+        "2° les rémunérations de toute nature versées à toute personne morale ou physique fournissant des prestations ou remplissant des fonctions susceptibles d'être exercées auprès de plusieurs entreprises : conformément à l'article 179 du CGI ;",
+        "3° les loyers d'immeubles ou de rapport et de locaux professionnels ;",
+        "4° les honoraires et vacations versées aux professionnels libéraux ;",
+        "5° les commissions et courtage ;",
+        "6° les droits d'auteurs et d'inventeurs ;",
+        "- être sous-conditions de temps : pour les charges déductibles, les charges doivent être déduites des résultats de l'exercice au cours duquel elles ont été engagées."
+      ],
+      "mots_cles": ["déductibilité fiscale", "sous-conditions de fond", "sous-conditions de forme", "sous-conditions de temps", "charges déductibles", "article 380", "rémunérations", "honoraires", "commissions", "article 179"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Sous-conditions de déductibilité selon la notion d'engagement",
+      "section": null,
+      "texte": [
+        "Art.71.- Sous-conditions de déductibilité selon la notion d'engagement (facturation et comptabilisation)",
+        "Les charges doivent être déduites de l'exercice au cours duquel elles ont été engagées, c'est-à-dire dès lors qu'elles présentent une dette certaine dans leur principe et dans leur montant, même si elles restent payeur car la date de paiement ou d'exigibilité de celles-ci intervient lors de l'exercice suivant."
+      ],
+      "mots_cles": ["engagement", "facturation", "comptabilisation", "dette certaine", "exercice"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Sous-conditions de déductibilité selon la notion de paiement",
+      "section": null,
+      "texte": [
+        "Art.72.- Sous-conditions de déductibilité selon la notion de paiement",
+        "Les dépenses non encore payées ou non décaissées ne constituent pas des coûts pétroliers.",
+        "I. Les dépenses payées en espèces au motif de l'article 113 du tome 1 du CGI ne sont pas des coûts pétroliers. En effet, cet article dispose que les versements effectués en espèces pour un montant supérieur ou égal à 500.000 FCFA par bénéficiaire ne sont pas déductibles du bénéfice fiscal."
+      ],
+      "mots_cles": ["paiement", "dépenses non payées", "espèces", "article 113", "500.000 FCFA", "bénéfice fiscal"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 73",
+      "titre": "Sous-conditions de conformité au contenu local",
+      "section": null,
+      "texte": [
+        "Art.73.- Sous-conditions de conformité au contenu local",
+        "I. Les dépenses doivent satisfaire les conditions de promotion et d'utilisation des biens et services locaux prévues par les articles 140 à 142 du Code des hydrocarbures.",
+        "II. Ainsi, pour que les dépenses soient considérées comme des coûts pétroliers récupérables :",
+        "1° les contracteurs ou leurs sous-traitants doivent donner la priorité à l'achat de biens et services auprès de sociétés nationales ou de sociétés privées nationales (telles que définies à l'article 3 du Code des hydrocarbures), dans la mesure où les offres techniques et commerciales de ces dernières sont équivalentes à celles d'autres sociétés, ou, au maximum, supérieures de 10 % à celles des autres sociétés ;",
+        "2° les coûts d'origine congolaise de développement et d'exploitation du projet pétrolier ne doivent pas être inférieurs à un certain pourcentage. Ce dernier est déterminé dans le programme minimum des travaux en phase d'exploration et dans le plan de développement et d'exploitation pour les phases suivantes. Il ne peut être inférieur à 25 %."
+      ],
+      "mots_cles": ["contenu local", "articles 140 à 142", "sociétés nationales", "priorité achat", "10 %", "coûts congolais", "25 %", "programme minimum"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 74",
+      "titre": "Sous-conditions tenant à la non-qualification de ces dépenses",
+      "section": null,
+      "texte": [
+        "Art.74.- Sous-conditions tenant à la non-qualification de ces dépenses comme non constitutives d'un coût pétrolier",
+        "I. La plupart et constituent des coûts pétroliers récupérables, sous réserve des conditions prévues au présent chapitre, que les coûts considérés comme tels par le Code des hydrocarbures. Le reste ne constitue pas des coûts pétroliers récupérables.",
+        "II. Les dispositions du présent décret ne peuvent être considérées comme constitutives d'un coût pétrolier récupérable au sens du Code des hydrocarbures.",
+        "Il s'agit notamment :",
+        "1° des primes d'assurances qui ne satisfont pas les conditions prévues par l'article 146 du Code des hydrocarbures ;",
+        "2° des amendes, pénalités fiscales et intérêts de retard visés à l'article 153 du Code des hydrocarbures ;",
+        "3° des frais bancaires visés à l'article 155 du Code des hydrocarbures ;",
+        "4° des bonus et contributions visés au présent décret ;",
+        "5° de la redevance minière proportionnelle conformément à l'article 1 du présent décret ;",
+        "6° des dépenses d'emploi du personnel étranger ou extérieur qui ne respectent pas la condition de préférence nationale conformément à l'article 21 du présent décret ;",
+        "7° les dépôts de garantie versés dans un compte séquestre auprès de la BEAC conformément à l'article 25 du présent décret ;",
+        "8° de la provision pour abandon et réhabilitation des sites lorsqu'elle n'a pas été versée dans un compte séquestre conformément à l'article 26 du présent décret ;",
+        "9° de la contribution foncière des propriétés bâties conformément à l'article 33 du présent décret ;",
+        "10° de la contribution foncière des propriétés non bâties conformément à l'article 42 du présent décret ;",
+        "11° des droits fonciers exceptionnels conformément à l'article 43 du présent décret ;",
+        "12° de la taxe d'occupation des locaux (TOL) conformément à l'article 49 du présent décret ;",
+        "13° de la taxe unique sur les salaires (TUS) conformément à l'article 53 du présent décret ;",
+        "14° des cotisations sociales conformément à l'article 58 du présent décret ;",
+        "15° des droits d'enregistrement et de timbre conformément à l'article 60 du présent décret."
+      ],
+      "mots_cles": ["non-qualification", "coûts pétroliers", "primes assurance", "article 146", "amendes pénalités", "article 153", "frais bancaires", "article 155", "bonus", "redevance minière", "emploi personnel étranger", "dépôts garantie BEAC", "provision abandon", "contribution foncière", "droits fonciers", "TOL", "TUS", "cotisations sociales", "droits enregistrement"],
+      "statut": "en vigueur"
+    }
+  ]
+}

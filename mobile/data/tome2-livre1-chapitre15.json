@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 15,
+    "chapitre_titre": "Sommes et valeurs atteintes par la prescription",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 352",
+      "titre": "Sommes acquises à la République",
+      "texte": [
+        "Sont définitivement acquis à la République :",
+        "1° le montant des coupons, intérêts ou dividendes, atteints par la prescription quinquennale ou conventionnelle et afférents à des actions, parts de fondateurs ou obligations négociables, émises par toute société commerciale ou civile ou par toute Collectivité soit privée, soit publique ;",
+        "2° les actions, parts de fondateurs, obligations et autres valeurs mobilières des mêmes Collectivités, lorsqu'elles sont atteintes par la prescription trentenaire ou conventionnelle ;",
+        "3° les dépôts de sommes d'argent d'une manière générale ou d'avoirs en espèces, dans les banques, les établissements de crédit et tous autres établissements qui reçoivent des fonds en dépôt ou en compte courant, lorsque ces dépôts ou avoirs n'ont fait l'objet de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;",
+        "4° les dépôts de titres et, d'une manière générale, tout avoir en titres dans les banques et autres établissements qui reçoivent des titres en dépôts ou pour compte d'autrui, lorsque ces dépôts ou avoirs n'ont fait l'objet, de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;",
+        "Les transferts de titres nominatifs acquis à la République dans les conditions prévues par le présent article sont effectués sur la production de ces titres et d'une attestation du Directeur de l'enregistrement, des domaines et du timbre certifiant le droit de la République."
+      ],
+      "mots_cles": [
+        "acquis",
+        "République",
+        "coupons",
+        "intérêts",
+        "dividendes",
+        "prescription quinquennale",
+        "prescription conventionnelle",
+        "actions",
+        "parts de fondateurs",
+        "obligations négociables",
+        "société commerciale",
+        "société civile",
+        "Collectivité",
+        "prescription trentenaire",
+        "valeurs mobilières",
+        "dépôts",
+        "sommes d'argent",
+        "avoirs en espèces",
+        "banques",
+        "établissements de crédit",
+        "fonds en dépôt",
+        "compte courant",
+        "trente années",
+        "ayants droit",
+        "opération",
+        "réclamation",
+        "titres",
+        "titres nominatifs",
+        "Directeur de l'enregistrement",
+        "domaines",
+        "timbre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

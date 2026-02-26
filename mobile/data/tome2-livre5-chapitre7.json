@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 7,
+    "chapitre_titre": "Gestion avec les tiers",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 29",
+      "titre": "Responsabilité des associés du défunt",
+      "texte": [
+        "L'associé ou les associés du défunt sont responsables au même titre que le Curateur qui a appréhendé la succession des parts et créances du défunt sur la société. L'inventaire des parts et créances doit être dressé conjointement et contradictoirement entre le Curateur et le ou les associés et annexé à l'inventaire principal de la succession."
+      ],
+      "mots_cles": [
+        "associé",
+        "défunt",
+        "responsabilité",
+        "Curateur",
+        "succession",
+        "parts",
+        "créances",
+        "société",
+        "inventaire",
+        "conjointement",
+        "contradictoirement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Vente ou partage des parts mobilières",
+      "texte": [
+        "Dans la mesure où les clauses de l'acte d'association n'y sont pas formellement contraires, et où il s'agit des parts mobilières, le Curateur en provoque la vente ou le partage."
+      ],
+      "mots_cles": [
+        "clauses",
+        "acte d'association",
+        "parts mobilières",
+        "Curateur",
+        "vente",
+        "partage"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Représentation des héritiers face au conjoint survivant",
+      "texte": [
+        "Lorsqu'un conjoint viendra à décéder sans enfant issu de son mariage, le Curateur représente les héritiers collatéraux ou les ascendants, absents et non représentés en face du survivant.",
+        "Lorsqu'il y a des enfants, le conjoint survivant étant le tuteur légal, le Curateur n'a pas à intervenir."
+      ],
+      "mots_cles": [
+        "conjoint",
+        "décéder",
+        "enfant",
+        "mariage",
+        "Curateur",
+        "héritiers collatéraux",
+        "ascendants",
+        "absents",
+        "non représentés",
+        "survivant",
+        "tuteur légal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Représentation du légataire absent",
+      "texte": [
+        "De même le Curateur représente d'office tout légataire absent et non représenté vis-à-vis des héritiers naturels ou du conjoint survivant."
+      ],
+      "mots_cles": [
+        "Curateur",
+        "représentation d'office",
+        "légataire absent",
+        "non représenté",
+        "héritiers naturels",
+        "conjoint survivant"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

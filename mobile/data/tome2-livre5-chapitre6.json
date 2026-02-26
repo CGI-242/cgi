@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 6,
+    "chapitre_titre": "Successions et biens vacants des étrangers",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 27",
+      "titre": "Succession vacante d'un étranger",
+      "texte": [
+        "Lorsque la succession d'un étranger décédé en République du Congo est vacante, c'est-à-dire lorsqu'il n'y a ni héritier, ni légataire universel, ni titre universel, elle est appréhendée par le Curateur à titre ou d'office et remise au Domaine après un délai d'au moins six mois, permettant aux héritiers éventuels de se révéler."
+      ],
+      "mots_cles": [
+        "succession",
+        "étranger",
+        "décédé",
+        "République du Congo",
+        "vacante",
+        "héritier",
+        "légataire universel",
+        "titre universel",
+        "Curateur",
+        "Domaine",
+        "six mois",
+        "héritiers éventuels"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Remise au consulat étranger",
+      "texte": [
+        "Lorsqu'il y a des héritiers connus mais non présents, ni représentés, la succession peut être appréhendée par le Curateur et remise dès que possible au Consulat de la nation à laquelle appartient la personne décédée, ou même remise directement à ce consulat, à charge pour ce dernier d'en faire la déclaration au plus proche bureau de l'enregistrement et d'acquitter, sur le montant de la succession, les droits éventuels dus à la République du Congo."
+      ],
+      "mots_cles": [
+        "héritiers connus",
+        "non présents",
+        "non représentés",
+        "succession",
+        "Curateur",
+        "Consulat",
+        "nation",
+        "personne décédée",
+        "déclaration",
+        "bureau de l'enregistrement",
+        "droits",
+        "République du Congo"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

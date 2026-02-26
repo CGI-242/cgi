@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 3,
+    "chapitre_titre": "Changement du lieu d'imposition",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 384",
+      "titre": "Prescription et établissement des impositions en cas de changement d'exercice",
+      "texte": [
+        "Lorsqu'un contribuable a déplacé, soit le siège de la direction de son entreprise, soit le lieu de son principal établissement ou de l'exercice de sa profession, soit son domicile ou sa résidence principale, les cotisations dont il est redevable au titre des impôts et taxes organisés par le présent Code, tant pour l'exercice au cours duquel s'est produit le changement que les exercices antérieurs non atteints par la prescription, sont valablement établies au profit du ou des budgets qui auraient dû bénéficier des impositions à la diligence du contrôleur qui constate les omissions ou les insuffisances d'imposition."
+      ],
+      "mots_cles": [
+        "changement de lieu",
+        "imposition",
+        "cotisations",
+        "prescription"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

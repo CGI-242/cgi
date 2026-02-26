@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "document": "Application des dispositions fiscales au secteur pétrolier amont",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC3-PETROLE",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "3. Fiscalité des mines et des hydrocarbures",
+    "chapitre_titre": "Dispositions générales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Cadre législatif et réglementaire du secteur pétrolier amont",
+      "texte": [
+        "[NB - Décret n°2022-1858 du 12 octobre 2022 fixant les modalités d'application des dispositions fiscales intérieures au secteur pétrolier amont]",
+        "Art.1.- Cadre législatif et réglementaire du secteur pétrolier amont",
+        "I. Les dispositions fiscales intérieures applicables au « secteur pétrolier amont » sont régies par le Code des hydrocarbures, le Code général des impôts, le Code des douanes et leurs textes d'application et, plus généralement, toute législation et réglementation nationales applicables au secteur pétrolier amont.",
+        "II. Par « secteur pétrolier amont », on entend conformément à l'article 3 du Code des hydrocarbures : « les activités de prospection, d'exploration, de développement et d'exploitation des hydrocarbures ».",
+        "III. Le Code des hydrocarbures prévaut sur les lois et textes réglementaires existants à la date de son entrée en vigueur conformément à son article 211.",
+        "IV. L'article 11 du Code des hydrocarbures dispose que toute disposition d'un contrat pétrolier qui serait contraire aux dispositions du Code des hydrocarbures est nulle et de nul effet. Toutefois, l'article 212 du Code des hydrocarbures dispose que les contrats pétroliers et les titres pétroliers y afférents conclus avant l'entrée en vigueur du Code des hydrocarbures demeurent en vigueur jusqu'à leur expiration mais que les avenants à ces contrats conclus après l'entrée en vigueur du Code des hydrocarbures doivent être conformes à celui-ci."
+      ],
+      "mots_cles": [
+        "cadre législatif",
+        "secteur pétrolier amont",
+        "Code hydrocarbures",
+        "CGI",
+        "Code douanes",
+        "article 211",
+        "article 212"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Cadre fiscal du secteur pétrolier amont",
+      "texte": [
+        "Art.2.- Cadre fiscal du secteur pétrolier amont",
+        "Le cadre fiscal applicable au secteur pétrolier amont est constitué par :",
+        "1° les dispositions fiscales spécifiques au secteur pétrolier amont définies par le Code des hydrocarbures ;",
+        "2° les impôts et taxes relevant du droit commun (c'est-à-dire du Code général des impôts) listés par l'article 149 du Code des hydrocarbures."
+      ],
+      "mots_cles": [
+        "cadre fiscal",
+        "dispositions spécifiques",
+        "droit commun",
+        "article 149"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

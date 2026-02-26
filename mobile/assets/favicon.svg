@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1a1a1a"/>
+  <!-- Stylized "C" for CGI -->
+  <path d="M 340 140 Q 256 80 170 140 Q 90 200 90 256 Q 90 312 170 372 Q 256 432 340 372"
+        fill="none" stroke="#00815d" stroke-width="60" stroke-linecap="round"/>
+  <!-- Top horizontal bar -->
+  <rect x="300" y="112" width="100" height="12" rx="6" fill="#00815d"/>
+  <!-- Bottom horizontal bar -->
+  <rect x="300" y="388" width="100" height="12" rx="6" fill="#00815d"/>
+  <!-- Small "242" text -->
+  <text x="380" y="270" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#00815d" text-anchor="middle">242</text>
+</svg>

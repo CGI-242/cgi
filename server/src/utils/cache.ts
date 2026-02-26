@@ -1,0 +1,104 @@
+// server/src/utils/cache.ts
+// Cache in-memory Map avec TTL (remplace Redis de cgi-engine)
+
+import { createLogger } from './logger';
+
+const logger = createLogger('CacheService');
+
+interface CacheEntry<T> {
+  value: T;
+  expiresAt: number;
+}
+
+export const CACHE_TTL = {
+  EMBEDDING: 60 * 60 * 24 * 7,    // 7 jours
+  SEARCH_RESULT: 60 * 60,         // 1 heure
+  ARTICLE: 60 * 60 * 24,          // 24 heures
+};
+
+export const CACHE_PREFIX = {
+  EMBEDDING: 'emb:',
+  SEARCH: 'search:',
+  ARTICLE: 'article:',
+};
+
+class CacheService {
+  private store = new Map<string, CacheEntry<unknown>>();
+  private cleanupInterval: ReturnType<typeof setInterval> | null = null;
+
+  constructor() {
+    // Nettoyage toutes les 5 minutes
+    this.cleanupInterval = setInterval(() => this.cleanup(), 5 * 60 * 1000);
+  }
+
+  get<T>(key: string): T | null {
+    const entry = this.store.get(key);
+    if (!entry) return null;
+
+    if (Date.now() > entry.expiresAt) {
+      this.store.delete(key);
+      return null;
+    }
+
+    return entry.value as T;
+  }
+
+  set(key: string, value: unknown, ttlSeconds: number = CACHE_TTL.SEARCH_RESULT): void {
+    this.store.set(key, {
+      value,
+      expiresAt: Date.now() + ttlSeconds * 1000,
+    });
+  }
+
+  del(key: string): void {
+    this.store.delete(key);
+  }
+
+  clear(): void {
+    this.store.clear();
+    logger.info('Cache vidé');
+  }
+
+  size(): number {
+    return this.store.size;
+  }
+
+  private cleanup(): void {
+    const now = Date.now();
+    let cleaned = 0;
+    for (const [key, entry] of this.store) {
+      if (now > entry.expiresAt) {
+        this.store.delete(key);
+        cleaned++;
+      }
+    }
+    if (cleaned > 0) {
+      logger.debug(`Cache cleanup: ${cleaned} entrées supprimées`);
+    }
+  }
+
+  destroy(): void {
+    if (this.cleanupInterval) {
+      clearInterval(this.cleanupInterval);
+      this.cleanupInterval = null;
+    }
+    this.store.clear();
+  }
+}
+
+export const cacheService = new CacheService();
+
+/**
+ * Hash simple d'un texte pour clé de cache
+ */
+export function hashText(text: string): string {
+  let hash = 0;
+  for (let i = 0; i < text.length; i++) {
+    const char = text.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash;
+  }
+  return Math.abs(hash).toString(36);
+}
+
+export default cacheService;

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 12,
+    "chapitre_titre": "Fonds de prévoyance",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 56",
+      "titre": "Utilisation du fonds de prévoyance",
+      "texte": [
+        "Lorsqu'une succession n'a pas de fonds réalisés pour faire face aux dépenses indispensables de son administration ou aux frais de justice, il est pourvu par le Curateur à l'aide d'un fonds de prévoyance dans les limites ci-après indiquées."
+      ],
+      "mots_cles": [
+        "succession",
+        "fonds réalisés",
+        "dépenses indispensables",
+        "administration",
+        "frais de justice",
+        "Curateur",
+        "fonds de prévoyance"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 57",
+      "titre": "Mise à disposition du fonds par arrêté",
+      "texte": [
+        "Sur avis du Conseil de Curatelle, chaque année fiscale et chaque fois que le soin s'en fait sentir, le Ministre des finances met par arrêté à la disposition des Curateurs un fonds qui constitue une avance remboursable par la succession au fur et à mesure des rentrées."
+      ],
+      "mots_cles": [
+        "avis",
+        "Conseil de Curatelle",
+        "année fiscale",
+        "Ministre des finances",
+        "arrêté",
+        "Curateurs",
+        "fonds",
+        "avance remboursable",
+        "succession",
+        "rentrées"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Délivrance des fonds",
+      "texte": [
+        "Sur le vu de l'arrêté du Ministre des finances, les fonds sont délivrés par le Préposé du Trésor de la localité au fur et à mesure des demandes et contre des mandats du Curateur visés par le Président du Conseil de Curatelle d'après la justification de l'utilité de la dépense."
+      ],
+      "mots_cles": [
+        "arrêté",
+        "Ministre des finances",
+        "fonds",
+        "délivrance",
+        "Préposé du Trésor",
+        "localité",
+        "demandes",
+        "mandats",
+        "Curateur",
+        "Président du Conseil de Curatelle",
+        "justification",
+        "utilité",
+        "dépense"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Excédent des dépenses à la charge de l'État",
+      "texte": [
+        "L'excédent des dépenses sur les recettes, s'il y en a, est passé au débit des comptes particuliers que ces dépenses concernent et reste provisoirement, sous réserve de recouvrement ultérieur, à la charge de l'État qui profite de la déshérence."
+      ],
+      "mots_cles": [
+        "excédent",
+        "dépenses",
+        "recettes",
+        "débit",
+        "comptes particuliers",
+        "recouvrement ultérieur",
+        "charge de l'État",
+        "déshérence"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

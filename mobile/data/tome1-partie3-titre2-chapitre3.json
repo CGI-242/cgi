@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 3,
+    "chapitre_titre": "Mise en recouvrement",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 415",
+      "titre": "Date de mise en recouvrement du rôle",
+      "texte": [
+        "Le Directeur Général des Impôts fixe la date de mise en recouvrement du rôle ou de l'avis de mise en recouvrement après entente avec le trésorier Payeur Général ou le receveur principal des impôts, et porte cette date sur le rôle et chacun des avertissements destinés au contribuable.",
+        "Cette date constitue le point de départ des délais de recouvrement et de prescription ; elle marque le début de la période de dix ans sur laquelle porte le privilège du Trésor."
+      ],
+      "mots_cles": [
+        "Directeur Général des Impôts",
+        "mise en recouvrement",
+        "rôles",
+        "titres de perception"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 416",
+      "titre": "Transmission immédiate des rôles par le Directeur Général des Impôts",
+      "texte": [
+        "Le Directeur Général des Impôts transmet immédiatement :",
+        "1° au Payeur, ou Préposé du Trésor ou au receveur principal des impôts intéressés, une expédition authentique des rôles ou titres de paiement dont le recouvrement lui incombe et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;",
+        "2° au chef de district.",
+        "- a) une expédition authentique des rôles dont le recouvrement incombe aux Préposés du Trésor du district et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;",
+        "- b) une expédition authentique des rôles rédigés par l'Inspecteur divisionnaire des contributions directes et Indirectes, dans les conditions prévues au 1° du paragraphe a) de l'article 407 ci-dessus, pour classement aux archives du district ou de la Mairie intéressés."
+      ],
+      "mots_cles": [
+        "Directeur Général des Impôts",
+        "transmission",
+        "Payeur",
+        "Préposé du Trésor",
+        "receveur principal des impôts",
+        "expédition authentique",
+        "rôles",
+        "titres de paiement",
+        "avertissements",
+        "certificat de mise en recouvrement",
+        "chef de district"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 417",
+      "titre": "Expédition des avertissements",
+      "texte": [
+        "L'agent chargé du recouvrement prend immédiatement en charge le rôle et assure l'expédition des avertissements. Il adresse les avis de mise en recouvrement qui ont été transmis à l'appui du rôle, au Président du Conseil Exécutif de région, ou de district ou au Président du Comité Exécutif Communal pour l'affichage."
+      ],
+      "mots_cles": [
+        "agent de recouvrement",
+        "prise en charge",
+        "rôle",
+        "avertissements",
+        "avis de mise en recouvrement",
+        "Président du Conseil Exécutif",
+        "affichage"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 418",
+      "titre": "Contenu de l'avertissement",
+      "texte": [
+        "Un avertissement est transmis à tout contribuable inscrit au rôle. Il mentionne le total par cote des sommes à acquitter, les conditions d'exigibilité et la date de mise en recouvrement du rôle."
+      ],
+      "mots_cles": [
+        "avertissement",
+        "contribuable",
+        "rôle",
+        "cote",
+        "sommes à acquitter",
+        "exigibilité",
+        "date de mise en recouvrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 419",
+      "titre": "Dispositions pour l'envoi des avertissements",
+      "texte": [
+        "L'agent chargé de la perception prend les dispositions nécessaires pour que les avertissements soient remis aux contribuables dans les moindres délais.",
+        "Les avertissements concernant les impôts et taxes visés au présent Code doivent, conformément aux prescriptions de l'article 406, être transmis sous enveloppes fermées."
+      ],
+      "mots_cles": [
+        "agent de perception",
+        "avertissements",
+        "contribuables",
+        "délais",
+        "article 406",
+        "enveloppes fermées"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 420",
+      "titre": "Réception de l'avertissement en temps opportun",
+      "texte": [
+        "Nul ne peut exciper de ce qu'il n'a pas reçu l'avertissement en temps opportun."
+      ],
+      "mots_cles": [
+        "avertissement",
+        "réception",
+        "temps opportun",
+        "inopposabilité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 421",
+      "titre": "Rôle de régularisation",
+      "texte": [
+        "Lorsque la perception de certains impôts directs est effectuée avant l'émission du rôle, il est établi toute réserve de dispositions contraires, chaque mois ou chaque trimestre, un rôle de régularisation qui est approuvé et pris en charge comme il est dit ci-dessus ; toutefois il n'y a pas lieu de rédiger des avertissements."
+      ],
+      "mots_cles": [
+        "perception",
+        "impôts directs",
+        "émission du rôle",
+        "rôle de régularisation",
+        "mensuel",
+        "trimestriel",
+        "avertissements"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

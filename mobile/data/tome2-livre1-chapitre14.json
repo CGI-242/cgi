@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 14,
+    "chapitre_titre": "Actes passés hors du Congo",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 350",
+      "titre": "Enregistrement des actes sous seing privé passés hors du Territoire",
+      "texte": [
+        "Les actes portant transmission de propriété, d'usufruit ou de jouissance de biens immeubles, de fonds de commerce ou de clientèle, ainsi que les actes de cessions de droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble, sont obligatoirement enregistrés au bureau du Territoire de la situation des biens s'ils sont passés dans la forme sous seing privé.",
+        "Lorsque ces mêmes actes sont constatés par acte public hors du Territoire, la mutation dont ils font l'objet doit être déclarée et les droits exigibles acquittés, au bureau de la situation des biens, dans le délai de trois mois de la date des actes."
+      ],
+      "mots_cles": [
+        "actes",
+        "transmission de propriété",
+        "usufruit",
+        "jouissance",
+        "biens immeubles",
+        "fonds de commerce",
+        "clientèle",
+        "cessions",
+        "droit au bail",
+        "promesse de bail",
+        "immeuble",
+        "enregistrement",
+        "bureau du Territoire",
+        "situation des biens",
+        "sous seing privé",
+        "acte public",
+        "hors du Territoire",
+        "mutation",
+        "déclaration",
+        "droits exigibles",
+        "trois mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 351",
+      "titre": "Actes relatifs aux sociétés passés hors du Territoire",
+      "texte": [
+        "Les actes sous seing privé portant formation, prorogation, augmentation de capital, fusion, transformation ou dissolution de sociétés ayant leur siège dans le Territoire, doivent être enregistrés au bureau du siège social.",
+        "Lorsque ces actes sont passés devant un notaire résidant hors du Territoire, il est procédé comme prévu au 2e alinéa de l'article précédent, une expédition de l'acte notarié devant être jointe à la déclaration.",
+        "Ces prescriptions s'appliquent notamment aux déclarations notariées de souscription et de versement, en cas d'augmentations de capital en numéraire des sociétés."
+      ],
+      "mots_cles": [
+        "actes sous seing privé",
+        "formation",
+        "prorogation",
+        "augmentation de capital",
+        "fusion",
+        "transformation",
+        "dissolution",
+        "sociétés",
+        "siège social",
+        "Territoire",
+        "enregistrement",
+        "bureau du siège social",
+        "notaire",
+        "hors du Territoire",
+        "expédition",
+        "acte notarié",
+        "déclaration",
+        "déclarations notariées",
+        "souscription",
+        "versement",
+        "capital en numéraire"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

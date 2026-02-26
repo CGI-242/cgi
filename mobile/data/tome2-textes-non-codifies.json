@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "",
+    "section": "Textes fiscaux non codifiés",
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. NC-1",
+      "titre": "Conventions fiscales internationales",
+      "texte": [
+        "Le Congo a signé des conventions fiscales avec plusieurs pays en vue d'éviter la double imposition et de prévenir l'évasion fiscale.",
+        "Pays concernés par des conventions bilatérales:",
+        "• Chine",
+        "• France",
+        "• Italie",
+        "• République de Maurice",
+        "• Rwanda",
+        "Le Congo est également partie à une convention multilatérale avec les pays de la CEMAC (Communauté Économique et Monétaire de l'Afrique Centrale)."
+      ],
+      "mots_cles": [
+        "conventions fiscales",
+        "double imposition",
+        "évasion fiscale",
+        "Chine",
+        "France",
+        "Italie",
+        "Maurice",
+        "Rwanda",
+        "CEMAC",
+        "accords internationaux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. NC-2",
+      "titre": "Convention fiscale CEMAC - Non double imposition",
+      "texte": [
+        "Règlement n°07/19-UEAC-010A-CM-33 du 7 avril 2019 portant révision de l'Acte n°5/66-UDEAC-49 du 13 décembre 1966 relatif à la Convention sur la non double imposition.",
+        "Cette convention régit les relations fiscales entre les États membres de la CEMAC (Cameroun, République centrafricaine, Congo, Gabon, Guinée équatoriale et Tchad) pour éviter que les revenus et les bénéfices ne soient imposés deux fois.",
+        "Elle définit les règles d'attribution du droit d'imposer entre l'État de résidence et l'État de la source des revenus."
+      ],
+      "mots_cles": [
+        "CEMAC",
+        "UDEAC",
+        "convention fiscale",
+        "non double imposition",
+        "règlement 07/19",
+        "Cameroun",
+        "Centrafrique",
+        "Congo",
+        "Gabon",
+        "Guinée équatoriale",
+        "Tchad",
+        "État de résidence",
+        "État de la source"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

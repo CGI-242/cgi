@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "document": "Taxe sur le trafic des communications électroniques",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC4-TELECOM",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.11. Taxe sur le trafic des communications électroniques",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 10",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Art.10.-",
+        "1) Il est institué en république du Congo un impôt dénommé taxe sur le trafic des communications électroniques.",
+        "2) La taxe sur le trafic des communications électroniques est due par les consommateurs et collectée au profit du budget de l'État par les opérateurs des télécommunications (opérateurs de téléphonie et fournisseurs d'accès internet).",
+        "Cet impôt est déclaré mensuellement et reversé spontanément par les opérateurs de télécommunication conformément au Code général des impôts."
+      ],
+      "mots_cles": [
+        "taxe trafic communications",
+        "TTCE",
+        "consommateurs",
+        "opérateurs télécommunications",
+        "téléphonie",
+        "fournisseurs internet",
+        "déclaration mensuelle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Champ d'application de la taxe",
+      "texte": [
+        "3) La taxe s'applique au :",
+        "- trafic voix et SMS sortant, on-net et off-net ;",
+        "- trafic international sortant ;",
+        "- trafic data, émission et réception des données."
+      ],
+      "mots_cles": [
+        "champ application",
+        "trafic voix",
+        "SMS sortant",
+        "on-net",
+        "off-net",
+        "trafic international",
+        "trafic data"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "4) Le taux de la taxe est fixé comme suit :",
+        "- 0,05 FCFA par seconde pour la voix ;",
+        "- 0,20 FCFA par message envoyé ;",
+        "- 0,10 FCFA par mégabit (Mb) pour le trafic data."
+      ],
+      "mots_cles": [
+        "taux taxe",
+        "voix 0,05 F/seconde",
+        "SMS 0,20 F/message",
+        "data 0,10 F/Mb"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Compétence de l'administration fiscale",
+      "texte": [
+        "5) La constatation de l'assiette, la liquidation, l'émission, le contrôle, la mise en recouvrement et le contentieux de cet impôt est de la compétence de l'administration fiscale conformément au CGI."
+      ],
+      "mots_cles": [
+        "compétence",
+        "administration fiscale",
+        "assiette",
+        "liquidation",
+        "contrôle",
+        "recouvrement",
+        "contentieux"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

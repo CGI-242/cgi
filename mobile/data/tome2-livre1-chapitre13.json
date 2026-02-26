@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 13,
+    "chapitre_titre": "Taxe spéciale sur les assurances",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 332",
+      "titre": "Principe de la taxe spéciale sur les assurances",
+      "texte": [
+        "Toute convention d'assurance est soumise à une taxe spéciale annuelle.",
+        "La taxe spéciale sur les contrats d'assurances est perçue sur le total de la convention.",
+        "Toute police d'assurance est soumise obligatoirement à la formalité d'enregistrement gratis et dispensée du droit de timbre."
+      ],
+      "mots_cles": [
+        "convention d'assurance",
+        "taxe spéciale annuelle",
+        "contrats d'assurances",
+        "montant total",
+        "police d'assurance",
+        "enregistrement gratuit",
+        "droit de timbre",
+        "dispense"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Assiette de la taxe"
+    },
+    {
+      "article": "Art. 333",
+      "titre": "Taux de la taxe sur les assurances",
+      "texte": [
+        "Le tarif de la taxe est fixé à 15 %."
+      ],
+      "mots_cles": [
+        "tarif",
+        "taxe",
+        "taux 15 %"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Taux"
+    },
+    {
+      "article": "Art. 334",
+      "titre": "Exonérations de la taxe sur les assurances",
+      "texte": [
+        "Sont exonérées de la taxe :",
+        "1° les réassurances, sous réserve de ce qui est dit à l'article 335 ;",
+        "2° les assurances bénéficiant, en vertu de dispositions exceptionnelles, de l'exonération des droits de timbre et d'enregistrement ;",
+        "3° les assurances couvrant les crédits à réexportation."
+      ],
+      "mots_cles": [
+        "exonération",
+        "taxe",
+        "réassurances",
+        "article 335",
+        "dispositions exceptionnelles",
+        "droits de timbre",
+        "enregistrement",
+        "crédits à l'exportation"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Taux"
+    },
+    {
+      "article": "Art. 335",
+      "titre": "Dispense de la taxe sur les assurances",
+      "texte": [
+        "Sont dispensés de la taxe :",
+        "1° les contrats d'assurances sur la vie et de rentes viagères y compris les contrats de rente différée souscrits auprès des compagnies d'assurances installées au Congo ;",
+        "2° tous autres contrats, si et dans la mesure où le risque se trouve situé hors du Territoire ou ne se rapporte pas à un établissement industriel, commercial ou agricole sis dans le Territoire, à défaut de situation matérielle certaine ou de rapport certain avec un établissement industriel, commercial ou agricole, les risques sont réputés situés au lieu du domicile ou du principal établissement du souscripteur.",
+        "Mais il ne peut être fait usage dans le Territoire de ces contrats, soit par acte public, soit en justice ou devant toute autre autorité constituée, s'ils n'ont pas été préalablement soumis à la formalité du visa pour timbre et de l'enregistrement.",
+        "Cette formalité est donnée moyennant le paiement de la taxe sur l'ensemble des sommes stipulées au profit de l'assureur afférentes aux années restant à courir.",
+        "Les réassurances de risques visés aux numéros 1 et 2 sont soumises aux dispositions du présent article.",
+        "Toutefois, l'enregistrement des contrats préalablement à leur usage dans le Territoire, ne motive la perception que si et dans la mesure où il n'est pas justifié du paiement de la taxe sur les contrats d'assurances correspondants."
+      ],
+      "mots_cles": [
+        "dispense",
+        "taxe",
+        "contrats d'assurances",
+        "vie",
+        "rentes viagères",
+        "rente différée",
+        "compagnies d'assurances",
+        "Congo",
+        "risque",
+        "hors du Territoire",
+        "établissement industriel",
+        "établissement commercial",
+        "établissement agricole",
+        "domicile",
+        "souscripteur",
+        "acte public",
+        "justice",
+        "autorité constituée",
+        "visa pour timbre",
+        "enregistrement",
+        "réassurances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Dispense de la taxe"
+    },
+    {
+      "article": "Art. 336",
+      "titre": "Liquidation et paiement de la taxe sur les assurances",
+      "texte": [
+        "La taxe est liquidée sur le résultat obtenu en déduisant du total des sommes stipulées au profit de l'assureur et de leurs accessoires encaissés par le redevable au cours du mois précédent le total des sommes au profit de l'assureur et de leurs accessoires remboursés au cours du même mois.",
+        "La liquidation mensuelle est effectuée au vu d'un état dont le modèle est déterminé par l'administration."
+      ],
+      "mots_cles": [
+        "taxe",
+        "liquidation",
+        "sommes stipulées",
+        "assureur",
+        "accessoires",
+        "encaissés",
+        "redevable",
+        "mois précédent",
+        "remboursés",
+        "liquidation mensuelle",
+        "état",
+        "administration",
+        "sociétés d'assurances",
+        "15 du mois",
+        "police"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
+    },
+    {
+      "article": "Art. 337",
+      "titre": "Lieu de paiement de la taxe",
+      "texte": [
+        "La taxe perçue par les sociétés d'assurances est versée au plus tard le 15 du mois suivant la souscription de la police.",
+        "Pour les sociétés ou compagnies d'assurances, ayant plusieurs agences, la taxe est exigible au bureau de l'enregistrement du lieu de son principal établissement."
+      ],
+      "mots_cles": [
+        "sociétés d'assurances",
+        "compagnies d'assurances",
+        "agences",
+        "taxe",
+        "exigible",
+        "bureau de l'enregistrement",
+        "principal établissement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
+    },
+    {
+      "article": "Art. 338",
+      "titre": "Fractionnement de la taxe",
+      "texte": [
+        "Pour les conventions venant à échéance à plus d'un an, la taxe peut être fractionnée par année, si les parties l'ont requis par une déclaration spéciale."
+      ],
+      "mots_cles": [
+        "conventions",
+        "échéance",
+        "plus d'un an",
+        "taxe",
+        "fractionnement",
+        "année",
+        "déclaration spéciale"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
+    },
+    {
+      "article": "Art. 339",
+      "titre": "Article abrogé",
+      "texte": [
+        "Abrogé"
+      ],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 4 : Liquidation et paiement"
+    },
+    {
+      "article": "Art. 340",
+      "titre": "Redevable légal de la taxe",
+      "texte": [
+        "Le redevable légal de la taxe est la société d'assurances."
+      ],
+      "mots_cles": [
+        "redevable légal",
+        "taxe",
+        "société d'assurances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 5 : Solidarité des redevables"
+    },
+    {
+      "article": "Art. 341",
+      "titre": "Liste des agences et intermédiaires",
+      "texte": [
+        "Les sociétés d'assurances sont tenues de fournir la liste de leurs agences et intermédiaires."
+      ],
+      "mots_cles": [
+        "sociétés d'assurances",
+        "liste",
+        "agences",
+        "intermédiaires"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Obligations des assureurs"
+    },
+    {
+      "article": "Art. 342 et 342 bis",
+      "titre": "Abrogés",
+      "texte": [
+        "Abrogés."
+      ],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 6 : Obligations des assureurs"
+    },
+    {
+      "article": "Art. 343",
+      "titre": "Obligation de communication des assureurs",
+      "texte": [
+        "Les sociétés, compagnies, assureurs, agents, représentants responsables, courtiers et intermédiaires sont tenus de présenter, à toute réquisition des préposés de l'enregistrement, les livres dont la tenue est prescrite, tant par le titre 2 du Code de commerce que par la législation relative au contrôle et à la surveillance des assurances, les polices, y compris celles renouvelées par tacite reconduction, ou venues à expiration depuis moins de cinq ans, les copies de polices concernant les conventions en cours ou expirées depuis moins de cinq ans, ainsi que tous autres livres ou documents pouvant servir au contrôle de la taxe.",
+        "Les assurés auprès d'assureurs n'ayant dans le Territoire ni établissement, ni agence, ni succursale, ni représentant responsable, sont tenus de communiquer, à toute réquisition des mêmes fonctionnaires, leurs polices concernant des conventions en cours, y compris celles renouvelées par tacite reconduction ou venues à expiration depuis moins de cinq ans.",
+        "Le refus de représentation ou de communication, ainsi que la déclaration que les livres, contrats ou documents ne sont pas tenus ou ont été détruits sont constatés par un procès-verbal et soumis aux sanctions édictées par l'article 157."
+      ],
+      "mots_cles": [
+        "sociétés",
+        "compagnies",
+        "assureurs",
+        "agents",
+        "représentants responsables",
+        "courtiers",
+        "intermédiaires",
+        "présenter",
+        "réquisition",
+        "préposés de l'enregistrement",
+        "livres",
+        "Code de commerce",
+        "contrôle des assurances",
+        "polices",
+        "tacite reconduction",
+        "expiration",
+        "cinq ans",
+        "copies de polices",
+        "conventions en cours",
+        "contrôle de la taxe",
+        "assurés",
+        "établissement",
+        "agence",
+        "succursale",
+        "refus de représentation",
+        "procès-verbal",
+        "article 157"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Droit de communication"
+    },
+    {
+      "article": "Art. 344",
+      "titre": "Pénalités pour retard ou insuffisance de paiement",
+      "texte": [
+        "Tout retard dans le paiement de la taxe établie par le présent chapitre, toute inexactitude, omission ou insuffisance et toute autre infraction entraînant un préjudice pour le Trésor donne lieu au paiement d'un droit en sus, égal à la taxe exigible sans pouvoir être inférieur à 10.000 FCFA.",
+        "Les infractions à l'article 341 sont punies d'une amende de 1.000.000 FCFA.",
+        "Toute autre contravention aux dispositions du présent chapitre et des décisions de l'administration prises pour leur exécution est punie d'une amende de 100.000 FCFA, sous réserve des dispositions du dernier alinéa de l'article 343."
+      ],
+      "mots_cles": [
+        "retard",
+        "paiement",
+        "taxe",
+        "inexactitude",
+        "omission",
+        "insuffisance",
+        "infraction",
+        "préjudice",
+        "Trésor",
+        "droit en sus",
+        "10.000 FCFA",
+        "article 341",
+        "amende",
+        "1.000.000 FCFA",
+        "contravention",
+        "100.000 FCFA",
+        "article 343"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 8 : Pénalités"
+    },
+    {
+      "article": "Art. 345",
+      "titre": "Prescription de la taxe sur les assurances",
+      "texte": [
+        "L'action de l'administration pour le recouvrement de la taxe et des pénalités est prescrite par un délai de cinq ans, à compter de leur exigibilité.",
+        "Ce délai est porté à trente ans en ce qui concerne la taxe et les pénalités à la charge des assureurs, courtiers ou intermédiaires qui n'ont pas souscrit la déclaration prévue à l'article 341."
+      ],
+      "mots_cles": [
+        "action",
+        "administration",
+        "recouvrement",
+        "taxe",
+        "pénalités",
+        "prescription",
+        "cinq ans",
+        "exigibilité",
+        "trente ans",
+        "assureurs",
+        "courtiers",
+        "intermédiaires",
+        "déclaration",
+        "article 341"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 9 : Prescription"
+    },
+    {
+      "article": "Art. 346",
+      "titre": "Article abrogé",
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 9 : Prescription"
+    },
+    {
+      "article": "Art. 347",
+      "titre": "Restitution de la taxe et pénalités payées à tort",
+      "texte": [
+        "La taxe et les pénalités payées à tort peuvent être restituées qu'en cas de résiliation, d'annulation ou de résolution judiciaire de la convention, à concurrence de la fraction afférente :",
+        "a) aux sommes stipulées au profit de l'assureur et à leurs accessoires dont le remboursement à l'assuré est ordonné par le jugement ou l'arrêt ;",
+        "b) aux sommes stipulées au profit de l'assureur et à leurs accessoires qui, ayant donné lieu à paiement effectif de la taxe, bien que n'ayant pas encore été payées à l'assureur, ne peuvent plus, d'après les dispositions de la décision judiciaire, être exigées par lui de l'assuré.",
+        "L'action en restitution prévue par le présent article se prescrit après une année à compter du jour où la décision judiciaire est devenue définitive et, en tout état de cause, cinq ans au plus tard après le paiement.",
+        "Les dispositions du présent article ne font pas échec aux dispositions de l'article 336 relatives à la déduction des sommes stipulées au profit de l'assureur et de leurs accessoires ayant fait l'objet d'une annulation ou d'un remboursement."
+      ],
+      "mots_cles": [
+        "taxe",
+        "pénalités",
+        "restitution",
+        "résiliation",
+        "annulation",
+        "résolution judiciaire",
+        "convention",
+        "sommes stipulées",
+        "assureur",
+        "accessoires",
+        "remboursement",
+        "assuré",
+        "jugement",
+        "arrêt",
+        "décision judiciaire",
+        "action en restitution",
+        "prescription",
+        "une année",
+        "cinq ans",
+        "article 336"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 9 : Prescription"
+    },
+    {
+      "article": "Art. 348",
+      "titre": "Recouvrement de la taxe et poursuites",
+      "texte": [
+        "Le recouvrement de la taxe et des pénalités est assuré par l'administration de l'enregistrement et les instances sont introduites et jugées comme en matière d'enregistrement."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "taxe",
+        "pénalités",
+        "administration de l'enregistrement",
+        "instances",
+        "matière d'enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 10 : Poursuites et instances"
+    },
+    {
+      "article": "Art. 349",
+      "titre": "Dispositions relatives au contrôle des assurances",
+      "texte": [
+        "Les dispositions du présent chapitre ne portent pas atteinte aux dispositions en vigueur relatives au contrôle et à la surveillance des assurances."
+      ],
+      "mots_cles": [
+        "dispositions",
+        "chapitre",
+        "contrôle",
+        "surveillance",
+        "assurances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 10 : Poursuites et instances"
+    }
+  ]
+}

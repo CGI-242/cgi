@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 11,
+    "chapitre_titre": "Conseil de curatelle",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 53",
+      "titre": "Composition du Conseil de Curatelle",
+      "texte": [
+        "Il est formé dans chaque circonscription judiciaire où se trouve un bureau d'enregistrement un Conseil de Curatelle composé ainsi qu'il suit :",
+        "Président : le Procureur de la République",
+        "Membres : un juge du Tribunal Populaire de District ou d'Arrondissement ; un représentant de l'administration Générale ayant rang d'Administrateur ; le Curateur.",
+        "Le juge est désigné par ordonnance du Président du Tribunal Populaire de District ou d'Arrondissement ; le représentant de l'administration générale est nommé par le Commissaire Politique."
+      ],
+      "mots_cles": [
+        "circonscription judiciaire",
+        "bureau d'enregistrement",
+        "Conseil de Curatelle",
+        "composition",
+        "Président",
+        "Procureur de la République",
+        "membres",
+        "juge",
+        "Tribunal Populaire de District",
+        "Tribunal Populaire d'Arrondissement",
+        "représentant",
+        "administration Générale",
+        "Administrateur",
+        "Curateur",
+        "ordonnance",
+        "Commissaire Politique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 54",
+      "titre": "Attributions du Conseil de Curatelle",
+      "texte": [
+        "Le Conseil de Curatelle est chargé d'examiner les questions relatives aux actions à introduire en justice dans les cas prévus à l'article 4 ci-dessus, ou toute question à lui soumise par le Curateur.",
+        "Les décisions sont motivées et rendues sous forme d'avis ; leur notification est faite au Curateur par le Président."
+      ],
+      "mots_cles": [
+        "Conseil de Curatelle",
+        "attributions",
+        "questions",
+        "actions en justice",
+        "article 4",
+        "Curateur",
+        "décisions",
+        "motivées",
+        "avis",
+        "notification",
+        "Président"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Réunions du Conseil de Curatelle",
+      "texte": [
+        "Le Conseil de curatelle se réunit toutes les fois que les besoins l'exigent sur convocation du Président, à l'initiative de ce dernier ou sur la demande du Curateur.",
+        "Les procès-verbaux de ces séances sont consignés sur un registre spécial signé du Président. Les fonctions de secrétaire sont remplies par le Greffier ou un commis du Tribunal."
+      ],
+      "mots_cles": [
+        "Conseil de curatelle",
+        "réunions",
+        "convocation",
+        "Président",
+        "demande",
+        "Curateur",
+        "procès-verbaux",
+        "séances",
+        "registre spécial",
+        "secrétaire",
+        "Greffier",
+        "commis du Tribunal"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

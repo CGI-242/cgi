@@ -1,0 +1,1272 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 2,
+    "chapitre_titre": "Impôts sur les revenus",
+    "page_source": 107,
+    "base_juridique": "Directive n°0119/25-UEAC-177-CM-42 du 09 janvier 2025"
+  },
+  "articles": [
+    {
+      "article": "Art. 93",
+      "titre": "Principe de l'impôt sur les bénéfices d'affaires",
+      "texte": [
+        "Les bénéfices réalisés par les personnes physiques qui accomplissent habituellement, pour leur propre compte, une activité à caractère lucratif, sont soumis à un impôt annuel désigné sous le nom d'impôt sur les bénéfices d'affaires (IBA)."
+      ],
+      "mots_cles": [
+        "IBA",
+        "impôt sur les bénéfices d'affaires",
+        "personnes physiques",
+        "activité lucrative"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 93 A",
+      "titre": "Revenus imposables à l'IBA",
+      "texte": [
+        "Sont imposables au titre de l'impôt sur les bénéfices d'affaires :",
+        "- les bénéfices industriels, commerciaux, artisanaux et agricoles, y compris les plus-values de cession de fonds de commerce ou de clientèle ;",
+        "- les bénéfices des professions libérales et des charges et offices dont les titulaires n'ont pas la qualité de commerçant ;",
+        "- les produits des droits de propriété intellectuelle ou industrielle ;",
+        "- et, d'une manière générale, les bénéfices et revenus de toutes opérations ou exploitations lucratives, perçus de manière habituelle ou exceptionnelle, ne se rattachant pas à des revenus soumis à l'impôt sur les traitements et salaires (ITS), à l'impôt sur le revenu des capitaux mobiliers (IRCM) ou à l'impôt sur les revenus fonciers (IRF).",
+        "Sous réserve des dispositions de l'article 115 du présent code, les personnes physiques associées de sociétés non assujetties à l'impôt sur les sociétés sont personnellement soumises à l'impôt sur les bénéfices d'affaires pour la part de bénéfices sociaux correspondant à leurs droits dans la société."
+      ],
+      "mots_cles": [
+        "revenus imposables",
+        "BIC",
+        "BNC",
+        "agricole",
+        "plus-values",
+        "propriété intellectuelle"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 93 B",
+      "titre": "Personnes imposables",
+      "texte": [
+        "Sous réserve des dispositions des conventions internationales, sont imposables :",
+        "1) a) Les personnes physiques de nationalité congolaise ou étrangère ayant leur domicile fiscal au Congo ou y résidant habituellement ;",
+        "Sont considérées comme ayant au Congo une résidence habituelle :",
+        "1) Les personnes qui y possèdent une habitation à leur disposition à titre de propriétaire, d'usufruitier ou de locataire lorsque, dans ce dernier cas, la location est conclue, soit par convention unique, soit par conventions successives pour une période continue d'au moins une année ;",
+        "2) Les personnes qui, sans disposer d'une habitation dans les conditions définies à l'alinéa précédent, y ont néanmoins le lieu de leur séjour principal ;",
+        "3) Les personnes se trouvant hors du Congo au 1er janvier de l'année d'imposition qui, à cette date, continuent à être rétribuées par les administrations ou les entreprises auxquelles elles appartenaient avant leur départ du Congo ;",
+        "4) Les fonctionnaires congolais ou étrangers payés par un budget autre que l'un des budgets du Congo pendant toute la durée de la période au cours de laquelle ils restent affectés au Congo. Cette période qui n'est pas interrompue par les congés des fonctionnaires en cause, commence le jour de l'affectation au Congo et se termine le veille du jour où les intéressés reçoivent une affectation hors du Congo ;",
+        "5) Les personnes ayant quitté le Congo avant le 31 décembre de l'année d'imposition, qui y conservent des intérêts et n'ont pas fait connaître que leur départ était définitif.",
+        "Dans tous les cas, une absence continue d'une durée supérieure à vingt-quatre mois entraîne la perte de la résidence du contribuable au Congo.",
+        "b) Les personnes physiques de nationalité congolaise ou étrangère n'ayant ni domicile, ni résidence au Congo, pour autant qu'elles ont des revenus réalisés dans l'État du Congo ou en provenant, et à raison desdits revenus.",
+        "2) Les fonctionnaires ou agents de l'État exerçant leurs fonctions ou chargés de mission dans un pays étranger sont passibles de l'impôt sur le revenu des personnes physiques au Congo à raison de leurs revenus de source congolaise.",
+        "S'ils sont exonérés, dans le pays considéré, de l'impôt personnel sur l'ensemble des revenus, ils sont redevables au Congo de l'impôt sur le revenu des personnes physiques, sur l'ensemble de leurs revenus même en l'absence de résidence habituelle sur le territoire congolais.",
+        "3) Les personnes visées au paragraphe 1-b) du présent article, percevant, des entreprises installées au Congo, des droits d'auteur ou des produits de titres, soit de la concession de licences d'exploitation de brevets, soit de la cession ou de la concession des marques de fabrique, procédés ou formules de fabrication, que le bénéficiaire de ces droits ou produits soit l'écrivain, le compositeur ou l'inventeur lui-même ou qu'il les ait acquis à titre gratuit ou onéreux ainsi que les revenus des professions non commerciales.",
+        "La présente disposition s'applique également lorsque le bénéficiaire des droits ou produits est une société quelle qu'en soit la forme.",
+        "4) Les personnes physiques de nationalité congolaise ou étrangère disposant ou non d'une résidence habituelle au Congo, qui recueillent des bénéfices ou revenus dont l'imposition est attribuée au Congo par une convention internationale relative aux doubles impositions.",
+        "5) Les personnes physiques qui sont désignées comme occupant les fonctions de directeurs, représentants, fondés de pouvoir, gérants de succursales de sociétés étrangères, immatriculées en République du Congo, sont présumées avoir leur résidence fiscale au Congo quand bien même elles habiteraient hors du Congo."
+      ],
+      "mots_cles": [
+        "résidence fiscale",
+        "domicile fiscal",
+        "revenus de source congolaise",
+        "conventions fiscales",
+        "personnes imposables"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 93 C",
+      "titre": "Territorialité des bénéfices",
+      "texte": [
+        "Les bénéfices imposables sont ceux réalisés par les entreprises exploitées au Congo dans les conditions prévues par les articles 5 et 6 du présent code."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "bénéfices imposables",
+        "exploitation au Congo"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 94",
+      "titre": "Détermination du bénéfice imposable",
+      "texte": [
+        "Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées par les articles 8 et suivants en matière d'impôt sur les sociétés.",
+        "Toutefois :",
+        "- les amortissements ne peuvent être pratiqués que selon le mode linéaire ;",
+        "- les provisions pour créances douteuses ne sont pas déductibles ;",
+        "- le report déficitaire ne peut s'entendre que jusqu'au troisième exercice qui suit l'exercice déficitaire ;",
+        "- les contribuables ne peuvent pas bénéficier du crédit d'impôt prévu à l'article 3A.",
+        "L'impôt sur le bénéfice des affaires est établi dans les mêmes conditions et sous les mêmes sanctions que l'impôt sur les sociétés."
+      ],
+      "mots_cles": [
+        "bénéfice imposable",
+        "IBA",
+        "règles IS",
+        "amortissement linéaire",
+        "report déficitaire"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 2 : Bénéfice imposable",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 94 A",
+      "titre": "Charges non déductibles",
+      "texte": [
+        "Ne sont pas déductibles :",
+        "- les prélèvements que l'exploitant individuel effectue sur ses recettes professionnelles à titre de rémunération de leur travail personnel ;",
+        "- les dépenses exposées dans l'intérêt personnel de l'exploitant ;",
+        "- les intérêts des capitaux engagés par l'exploitant et les sommes de toute nature versées à titre de rémunération des fonds propres de l'entreprise, qu'ils soient capitalisés ou mis en réserve ;",
+        "- les loyers versés par l'exploitant à lui-même pour l'occupation à titre professionnel de locaux dont il est propriétaire.",
+        "Les dépenses mixtes sont ventilées afin de déterminer la part déductible de ces dépenses se rapportant à l'exercice de la profession.",
+        "Les frais de représentation ne sont déductibles qu'à hauteur de 50% de leur montant."
+      ],
+      "mots_cles": [
+        "charges non déductibles",
+        "exploitant individuel",
+        "dépenses personnelles",
+        "frais de représentation"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 2 : Bénéfice imposable",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 94 B",
+      "titre": "Règles comptables applicables",
+      "texte": [
+        "Les bénéfices perçus de manière régulière sont constatés par une comptabilité d'engagement conforme au SYSCOHADA.",
+        "Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle peuvent tenir une comptabilité de caisse."
+      ],
+      "mots_cles": [
+        "SYSCOHADA",
+        "comptabilité d'engagement",
+        "comptabilité de caisse",
+        "professions libérales"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 2 : Bénéfice imposable",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 95",
+      "titre": "Calcul et taux de l'impôt",
+      "texte": [
+        "Pour le calcul de l'impôt, toute fraction du bénéfice imposable inférieure à mille francs, est négligée.",
+        "Le taux de l'impôt sur les bénéfices d'affaires est fixé à 30%.",
+        "Le montant de l'impôt sur les bénéfices d'affaires ne peut être inférieur à un minimum de perception.",
+        "Pour assurer l'équité de la charge fiscale finale sur les bénéfices et favoriser la formalisation de l'économie par les entreprises individuelles soumises à l'impôt sur les bénéfices d'affaires, le minimum de perception est fixé à 1,5% sur le montant total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire du contribuable.",
+        "En aucun cas les taux ci-dessus ne peuvent être inférieurs à ceux applicables en matière d'impôt sur les sociétés.",
+        "L'impôt minimum forfaitaire dû pour l'impôt sur le bénéfice d'affaires est régi par les mêmes dispositions que celles de l'impôt sur les sociétés."
+      ],
+      "mots_cles": [
+        "taux IBA",
+        "30%",
+        "minimum de perception",
+        "1,5%",
+        "impôt minimum forfaitaire"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 95 A",
+      "titre": "Report de taxation en cas de décès de l'exploitant",
+      "texte": [
+        "Dans le cas de décès de l'exploitant, la taxation de la plus-value de fonds de commerce (éléments corporels et incorporels) est, lorsque l'exploitation est continuée par les héritiers en ligne directe ou par le conjoint, reportée au moment de la cession ou de la cessation de l'exploitation par ces derniers, à condition qu'aucune augmentation ne soit apportée aux évaluations des éléments de l'actif figurant au dernier bilan dressé par le défunt.",
+        "Cette disposition reste applicable lorsque, à la suite du partage de la succession, l'exploitation est poursuivie par le ou les héritiers en ligne directe ou par le conjoint attributaire du fonds, de même que dans le cas où les héritiers en ligne directe et le conjoint constituent exclusivement entre eux une société en nom collectif ou en commandite simple ou à responsabilité limitée, à condition que les évaluations des éléments d'actif existant au décès ne soient pas augmentées à l'occasion du partage ou de la transformation de l'entreprise en société."
+      ],
+      "mots_cles": [
+        "décès exploitant",
+        "plus-value fonds de commerce",
+        "report d'imposition",
+        "héritiers",
+        "société en nom collectif",
+        "SARL"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 95 B",
+      "titre": "Retenue à la source sur les bénéfices des sociétés transparentes",
+      "texte": [
+        "L'impôt sur les bénéfices d'affaires dû par les personnes physiques au titre de leur part de bénéfice dans une société transparente est prélevé à la source en application de l'article 183 du Code général des impôts."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "société transparente",
+        "article 183 CGI"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 96",
+      "titre": "Champ d'application du régime du forfait",
+      "texte": [
+        "1. Les contribuables dont le chiffre d'affaires n'excède pas le seuil d'assujettissement à la taxe sur la valeur ajoutée, sont imposés selon le régime du forfait.",
+        "2. Toutefois :",
+        "a) les contribuables dont le chiffre d'affaires n'excède pas le seuil fixé à l'alinéa précédent, mais qui optent pour l'assujettissement à la TVA, cessent immédiatement d'être soumis au régime forfaitaire et sont soumis à l'impôt sur les bénéfices d'affaires selon le régime général prévu ci-dessus ;",
+        "b) sont exclus du régime du forfait :",
+        "(i) les personnes exerçant des professions réglementées ;",
+        "(ii) les boulangers ;",
+        "(iii) les entrepreneurs de travaux ;",
+        "(iv) les exploitants de quincaillerie ;",
+        "(v) les grossistes ;",
+        "(vi) les importateurs.",
+        "3. Les contribuables imposés selon le régime du réel, dont le chiffre d'affaires baisse pour se situer au-dessous du seuil d'assujettissement à la TVA ne sont soumis au régime du forfait que lorsque leur chiffre d'affaires est resté inférieur à cette limite pendant deux exercices successifs.",
+        "4. L'impôt global forfaitaire cesse d'être appliqué dès le premier exercice qui suit celui au cours duquel les limites du chiffre d'affaires fixé au paragraphe 1 sont dépassées.",
+        "5. Par dérogation aux dispositions du paragraphe 1 ci-dessus, les contribuables qui sont en mesure de satisfaire aux prescriptions de l'article 104 ci-après, ont la faculté d'être soumis au régime réel. A cet effet, ils doivent notifier leur option à l'administration fiscale avant le 1er février de l'année suivant celle au titre de laquelle l'imposition est établie. L'option est valable pour ladite année et les deux années suivantes. Pendant cette période, elle est irrévocable.",
+        "6. Les contribuables relevant du régime du forfait doivent :",
+        "a) tenir une comptabilité selon le système minimal de trésorerie défini par le droit comptable OHADA ;",
+        "b) tenir un registre chronologique de toutes les factures d'achats et de dépenses ;",
+        "c) tenir un registre chronologique de toutes les factures de ventes ou de prestations ;",
+        "d) souscrire chaque mois la déclaration visée à l'article 176 du CGI, tome 1 ;",
+        "e) effectuer, le cas échéant, pour le compte du Trésor, les retenues à la source prévues par la loi ;",
+        "f) produire :",
+        "(i) le bilan ;",
+        "(ii) le compte de résultat ;",
+        "(iii) les notes annexes.",
+        "",
+        "Les notes annexes sont composées de :",
+        "(i) tableau du système minimal de trésorerie (SMT) de suivi du matériel, du mobilier et des cautions ;",
+        "(ii) état des stocks ;",
+        "(iii) état des créances et des dettes non échues ;",
+        "(iv) le journal de trésorerie SMT.",
+        "7. Les deux registres comptables visés aux alinéas b) et c) ci-dessus doivent être conservés dans les conditions prévues à l'article 104 du CGI, tome 1 et présentés à toute réquisition de l'administration fiscale, en particulier à des fins de contrôle pour la détermination du chiffre d'affaires annuel. Lesdits registres doivent être présentés chaque trimestre auprès de l'administration fiscale pour paraphe."
+      ],
+      "mots_cles": [
+        "régime du forfait",
+        "petites entreprises",
+        "TVA",
+        "option régime réel",
+        "SMT",
+        "obligations comptables"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 96 A",
+      "titre": "Obligations comptables des contribuables au forfait",
+      "texte": [
+        "Les contribuables relevant du régime du forfait doivent :",
+        "a) tenir une comptabilité selon le système minimal de trésorerie défini par le droit comptable OHADA ;",
+        "b) tenir un registre chronologique des factures d'achats et des dépenses ;",
+        "c) tenir un registre chronologique des factures de ventes ou de prestations ;",
+        "d) souscrire chaque mois la déclaration visée à l'article 176 du CGI, tome 1 ;",
+        "e) effectuer, le cas échéant, les retenues à la source pour le compte du Trésor ;",
+        "f) produire le bilan, le compte de résultat et les notes annexes.",
+        "Les notes annexes comprennent le tableau SMT de suivi du matériel, l'état des stocks, l'état des créances et dettes non échues et le journal de trésorerie SMT.",
+        "Les registres doivent être conservés et présentés chaque trimestre à l'administration fiscale pour paraphe."
+      ],
+      "mots_cles": [
+        "SMT",
+        "obligations comptables",
+        "régime forfaitaire"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 97",
+      "titre": "Évaluation du chiffre d'affaires et du bénéfice",
+      "texte": [
+        "Les montants du chiffre d'affaires et du bénéfice sont évalués par l'administration d'après les résultats obtenus par le contribuable au cours de l'année d'imposition. Ils doivent correspondre au bénéfice que l'entreprise peut produire normalement.",
+        "L'évaluation est notifiée au contribuable qui dispose d'un délai de 30 jours à partir de la réception de cette notification pour faire parvenir son acceptation ou formuler ses observations en indiquant le chiffre qu'il serait disposé à accepter ; le défaut de réponse dans le délai prévu est considéré comme une acceptation.",
+        "Si le contribuable n'accepte pas le chiffre qui lui a été notifié et si, de son côté, le chef de l'unité dont dépend la résidence fiscale du contribuable n'admet pas celui qu'il est proposé par l'intéressé, l'évaluation du bénéfice forfaitaire est faite par la commission des impôts prévue à l'article 400 du présent code. Le chiffre arrêté par cette commission sert de base à l'imposition. Toutefois, le contribuable peut demander par voie contentieuse après mise en recouvrement du rôle et dans les délais, formes et conditions prévus par les articles 423 et suivants du présent code, une réduction de la base qui lui a été assignée, à condition de prouver que celle-ci est supérieure au bénéfice réalisé dans son entreprise au cours de l'année d'imposition."
+      ],
+      "mots_cles": [
+        "évaluation forfaitaire",
+        "commission des impôts",
+        "procédure contradictoire",
+        "délai 30 jours",
+        "recours contentieux"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 98",
+      "titre": "Base de calcul de l'impôt global forfaitaire",
+      "texte": [
+        "1. La base de calcul de l'impôt global forfaitaire est fixée pour une année civile.",
+        "2. Cette base de calcul est connue chaque année au plus tard le 15 février après le dépôt de la déclaration n° 294 accompagnée obligatoirement des états financiers visés aux articles 96 et 97 du présent code.",
+        "3. Le montant qui sert de base de calcul de l'impôt global forfaitaire est redressé unilatéralement, sans préavis, par l'administration, en cas de manœuvre frauduleuse ou de dissimulation.",
+        "4. Au cours de la première année d'exploitation, l'impôt global forfaitaire est fixé à partir d'un chiffre d'affaires estimé selon la procédure contradictoire, déterminé sur la base du chiffre d'affaires prévisionnel fixé au moment de la déclaration fiscale d'existence, à condition de justifier d'une déclaration d'existence et de faire parapher par le service compétent de l'administration fiscale les registres comptables visés ci-dessus, dans les 15 jours du début d'activités et à la fin de chaque trimestre de l'année.",
+        "5. Le défaut de la déclaration du paraphe et de la tenue des registres, des factures et des documents comptables ou leur non production, est sanctionné par une taxation d'office et une amende de 100 000 FCFA."
+      ],
+      "mots_cles": [
+        "impôt global forfaitaire",
+        "déclaration 294",
+        "taxation d'office",
+        "amende 100 000 FCFA",
+        "première année"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 99",
+      "titre": "Déclaration trimestrielle des fournisseurs",
+      "texte": [
+        "Le contribuable soumis au régime du forfait est tenu de déclarer au plus tard le 15 du mois suivant la fin de chaque trimestre, la liste de ses fournisseurs ou de ses sources d'approvisionnement des marchandises auprès de sa résidence fiscale selon le modèle prescrit par l'administration fiscale.",
+        "L'inobservation de cette obligation est sanctionnée par une amende de 500 000 FCFA."
+      ],
+      "mots_cles": [
+        "déclaration fournisseurs",
+        "amende 500 000 FCFA",
+        "déclaration trimestrielle"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 100",
+      "titre": "Fixation d'office des bases d'imposition",
+      "texte": [
+        "Le défaut de production de la déclaration spéciale visée à l'article 98 ainsi que la non-présentation des documents dont la production est exigée par ledit article et l'article 96 du CGI entraînent la fixation d'office, par l'administration fiscale des bases d'imposition."
+      ],
+      "mots_cles": [
+        "fixation d'office",
+        "article 96",
+        "article 98",
+        "défaut de déclaration"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 101",
+      "titre": "Fixation d'office en cas de non-présentation des documents",
+      "texte": [
+        "Le défaut de production de la déclaration spéciale visée à l'article 100 ainsi que la non-présentation des documents dont la production est exigée par ledit article et l'article 99 du présent code entraînent la fixation d'office, par l'administration fiscale des bases d'imposition."
+      ],
+      "mots_cles": [
+        "documents comptables",
+        "taxation d'office",
+        "article 99",
+        "article 100"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 102",
+      "titre": "Assujettissement au régime réel",
+      "texte": [
+        "Les contribuables dont le chiffre d'affaires est supérieur ou égal au seuil d'assujettissement à la TVA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
+        "Ces contribuables sont tenus de remettre une déclaration du montant de leur résultat à l'unité des moyennes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement, dans les conditions et détails prévus par les articles 78 à 80 du CGI, si leur chiffre d'affaires dépasse 2.000.000.000 de francs CFA.",
+        "En l'absence d'une unité des moyennes entreprises dans le département, l'unité territorialement compétente est l'unité chargée de la gestion des petites entreprises.",
+        "Pour les contribuables dont le chiffre d'affaires est supérieur ou égal à 2.000.000.000 de francs, la déclaration susvisée est déposée à l'unité des grandes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement.",
+        "Les dispositions des alinéas 2, 3 et 4 du présent article ne s'appliquent pas aux sous-traitants pétroliers.",
+        "À l'appui de la déclaration du bénéfice ou déficit, les contribuables sont tenus de faire connaître leur chiffre d'affaires, c'est-à-dire le montant brut total des ventes, des travaux effectivement et définitivement réalisés, des avantages, commissions, remises, prix de location, intérêts, escomptes, agios encaissés et, d'une façon générale, tous les produits définitivement acquis dans l'exercice de la profession. Lorsque la profession comporte plusieurs activités distinctes, la déclaration doit faire état du chiffre d'affaires par nature d'activité."
+      ],
+      "mots_cles": [
+        "régime réel",
+        "chiffre d'affaires",
+        "déclaration fiscale",
+        "2 milliards FCFA",
+        "grandes entreprises",
+        "moyennes entreprises",
+        "sous-traitants pétroliers"
+      ],
+      "statut": "en vigueur",
+      "section": "2.1 Impôt sur les bénéfices d'affaires (IBA) -Section 4 : Régime des petites et très petites entreprises",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 103",
+      "titre": "Champ d'application de l'IRCM",
+      "texte": [
+        "Sont soumis à l'impôt sur le revenu des capitaux mobiliers, lorsqu'ils ne sont pas inclus dans les bénéfices d'une entreprise soumise à l'impôt sur les sociétés :",
+        "a) les revenus des valeurs mobilières ;",
+        "b) les revenus des obligations ;",
+        "c) les revenus des créances, dépôts, cautionnements et comptes courants ;",
+        "d) les plus-values de cessions de valeurs mobilières ;",
+        "e) les sommes correspondant au montant des redressements apportés au résultat déclaré à l'issue d'un contrôle fiscal lorsqu'elles ne sont pas investies dans l'entreprise.",
+        "Seuls sont soumis à l'impôt, les revenus des capitaux mobiliers, les revenus :",
+        "a) perçus par des personnes physiques résidant au Congo, quelle que soit leur provenance ;",
+        "b) provenant d'un État membre de la CEMAC et perçus par des personnes morales non exploitées dans cet État membre au sens de l'article 4 du présent code ou par des personnes physiques qui n'y sont pas résidentes."
+      ],
+      "mots_cles": [
+        "IRCM",
+        "capitaux mobiliers",
+        "valeurs mobilières",
+        "obligations",
+        "créances",
+        "plus-values",
+        "CEMAC"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 104",
+      "titre": "Revenus de valeurs mobilières",
+      "texte": [
+        "Sont notamment considérés comme revenus de valeurs mobilières :",
+        "a) les revenus distribués par les personnes morales soumises à l'impôt sur les sociétés, qu'elles soient soumises à un taux normal ou réduit ou qu'elles en soient exonérées ;",
+        "b) sauf preuve contraire, les sommes mises à la disposition des associés ou actionnaires directement ou par personne ou société interposée, à titre d'avance, de prêt ou d'acomptes ;",
+        "c) les bénéfices et réserves, capitalisés ou non, des personnes morales qui cessent d'être soumises à l'impôt sur les sociétés ;",
+        "d) les rémunérations allouées aux membres des conseils d'administration des sociétés anonymes à quelque titre que ce soit, à l'exclusion des salaires et des redevances de propriété industrielle déductibles de l'impôt sur les sociétés selon les conditions définies par le chapitre 1 ;",
+        "e) les rémunérations versées par une entreprise qui ne révèle pas l'identité de leurs bénéficiaires ;",
+        "f) les recettes non déclarées, les frais généraux non justifiés à l'exception des amortissements et des provisions, ainsi que les autres charges non déductibles au titre de l'impôt sur les sociétés et qui ont été versées à un associé ou à une société membre du même groupe au sens de l'article 77, que ces charges aient été réintégrées par le contribuable ou redressées par l'administration fiscale ;",
+        "g) les bénéfices après impôt des établissements stables tels que définis par les dispositions de l'article 4 du présent code, réputés distribués au titre de chaque exercice à la société non-résidente ;",
+        "h) les sommes versées aux associés à titre d'amortissement du capital."
+      ],
+      "mots_cles": [
+        "valeurs mobilières",
+        "revenus distribués",
+        "dividendes",
+        "conseil d'administration",
+        "établissements stables",
+        "IRCM"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application - Sous-section 1 : Revenus des valeurs mobilières",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 105",
+      "titre": "Exclusions des revenus de valeurs mobilières",
+      "texte": [
+        "Ne sont pas considérées, comme revenus de valeurs mobilières, les répartitions présentant pour les associés ou actionnaires, le caractère de remboursement d'apports ou de primes d'émission.",
+        "Toutefois, une répartition n'est réputée présenter ce caractère que si tous les bénéfices et réserves autres que la réserve légale a été auparavant répartis.",
+        "Ne sont pas considérées comme apports pour application de la présente disposition :",
+        "a) les réserves incorporées au capital ;",
+        "b) les sommes incorporées au capital ou aux réserves à l'occasion d'une fusion de société ;",
+        "c) les remboursements consécutifs à la liquidation de la société portant sur le capital amorti, à concurrence de la fraction ayant, lors de l'amortissement, supporté l'impôt sur le revenu des capitaux mobiliers ;",
+        "d) les sommes mises à la disposition des associés dès lors qu'elles constituent la rémunération d'un prêt, d'un service ou d'une fonction, et sont valablement comprises dans les charges déductibles pour l'assiette de l'impôt sur les sociétés."
+      ],
+      "mots_cles": [
+        "remboursement d'apports",
+        "primes d'émission",
+        "réserve légale",
+        "fusion de société",
+        "liquidation",
+        "capital amorti"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application - Sous-section 1 : Revenus des valeurs mobilières",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 105 A",
+      "titre": "Revenus des obligations",
+      "texte": [
+        "Sont considérés comme revenus des obligations :",
+        "a) les intérêts, arrérages et tous autres produits des obligations, titres participatifs, effets publics et tous autres titres d'emprunt négociables émis par l'État, les collectivités locales ou les établissements publics ;",
+        "b) les produits des obligations ou des valeurs mobilières composées émises par les sociétés commerciales autorisées à émettre ces titres par l'acte uniforme OHADA relatif au droit des sociétés commerciales et du GIE ;",
+        "c) les lots et primes de remboursement payés aux porteurs des mêmes titres."
+      ],
+      "mots_cles": [
+        "obligations",
+        "intérêts",
+        "titres participatifs",
+        "effets publics",
+        "OHADA",
+        "primes de remboursement"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application - Sous-section 2 : Revenus des obligations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 105 B",
+      "titre": "Revenus des créances, dépôts et cautionnements",
+      "texte": [
+        "Sont considérés comme revenus des créances, dépôts et cautionnements, les intérêts, arrérages et tous autres produits :",
+        "a) les créances hypothécaires, privilégiées ou chirographaires, à l'exclusion de celles représentées par des obligations, effets publics et autres titres d'emprunt négociables ;",
+        "b) les dépôts de sommes d'argent à vue ou à échéance fixe, quel que soit le dépositaire et quelle que soit l'affectation du dépôt ;",
+        "c) les cautionnements numéraires ;",
+        "d) les comptes courants d'associés ;",
+        "e) les bons de caisse.",
+        "L'impôt est dû par le seul fait, soit du paiement des intérêts de quelque manière qu'il soit effectué, soit de leur inscription au débit ou au crédit d'un compte.",
+        "En cas de capitalisation des intérêts d'un prix de vente, d'un fonds de commerce ou des indemnités dues en contrepartie de la cessation de l'exercice de la profession ou du transfert d'une clientèle, le fait générateur de l'impôt est reporté à la date du paiement effectif des intérêts."
+      ],
+      "mots_cles": [
+        "créances",
+        "dépôts",
+        "cautionnements",
+        "comptes courants",
+        "bons de caisse",
+        "intérêts"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application - Sous-section 3 : Revenus des créances, dépôts et cautionnements",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 105 C",
+      "titre": "Plus-values de cessions de valeurs mobilières",
+      "texte": [
+        "Sont soumises à l'impôt sur le revenu des capitaux mobiliers, les plus-values des cessions de valeurs mobilières, notamment les actions, parts sociales et obligations et leurs démembrements.",
+        "Est considérée comme une cession, la mutation à titre onéreux ou gratuit, entraînant le changement de propriété des valeurs mobilières quel qu'en soit le mode opératoire, notamment la vente, l'échange, la dation en paiement, l'apport en société, la distribution de dividendes en nature, ainsi que la transmission par donation, legs ou successions."
+      ],
+      "mots_cles": [
+        "plus-values",
+        "cession",
+        "valeurs mobilières",
+        "actions",
+        "parts sociales",
+        "donation",
+        "succession"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 1 : Champ d'application - Sous-section 4 : Plus-values mobilières",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 106",
+      "titre": "Exonérations IRCM",
+      "texte": [
+        "En cas de fusion de sociétés ou d'apport partiel d'actif, les attributions gratuites d'actions ou de parts sociales (parts de capital) de la société absorbante ou nouvelle aux membres de la société absorbée, ne sont pas considérées comme des distributions imposables au regard de l'article 104 ci-dessus, si la société absorbante ou nouvelle a son siège dans le même État membre que la société absorbée.",
+        "En dehors des cas visés au présent article, il ne peut être accordé aucune autre exonération d'impôt sur le revenu des capitaux mobiliers."
+      ],
+      "mots_cles": [
+        "exonération",
+        "fusion",
+        "apport partiel d'actif",
+        "actions gratuites",
+        "parts sociales"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 107",
+      "titre": "Territorialité de l'IRCM",
+      "texte": [
+        "L'impôt sur le revenu des capitaux mobiliers est dû :",
+        "a) soit si les revenus imposables sont versés par une entreprise exploitée au Congo ;",
+        "b) soit si le bénéficiaire des revenus imposables est une personne domiciliée ou résidente au Congo, quelle que soit la source des revenus.",
+        "Par dérogation aux dispositions de l'alinéa b ci-dessus, l'impôt est dû au Congo par une personne physique ou morale non résidente sur la plus-value de cession des titres d'une société immatriculée au Congo, si cette personne, seule ou conjointement avec des sociétés liées, a disposé au cours des 365 jours qui précèdent, directement ou indirectement, d'au moins 10% du capital de la société dont les titres sont cédés."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "résidence fiscale",
+        "cession de titres",
+        "10% du capital",
+        "non-résident"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 3 : Territorialité",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 108",
+      "titre": "Fait générateur et exigibilité",
+      "texte": [
+        "Le fait générateur de l'impôt est constitué :",
+        "a) pour les dividendes, par la décision de l'assemblée autorisant leur distribution ;",
+        "b) pour les charges non déductibles au titre de l'impôt sur les sociétés, visées par l'article 104 paragraphe 6 du présent code par le dépôt de la déclaration annuelle de bénéfices de la société ou par la notification de redressement ;",
+        "c) pour les bénéfices des établissements stables visés à l'article 104 paragraphe 7 du présent code, par le dépôt de la déclaration annuelle des bénéfices de l'établissement ;",
+        "d) pour les intérêts, soit par la mise en paiement, soit par leur inscription au compte individuel des bénéficiaires ;",
+        "e) pour les plus-values de cession de valeurs mobilières, par la cession au sens de l'article 105 C du présent code ;",
+        "f) pour toutes les autres sommes, par la mise en paiement.",
+        "L'exigibilité de l'impôt intervient au moment de la réalisation du fait générateur.",
+        "Pour les dividendes, l'exigibilité intervient au moment de leur versement et au plus tard trois (3) mois après la décision de leur distribution par l'assemblée générale."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exigibilité",
+        "dividendes",
+        "intérêts",
+        "plus-values",
+        "établissements stables"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 4 : Fait générateur et exigibilité",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 109",
+      "titre": "Base d'imposition",
+      "texte": [
+        "Le revenu imposable est déterminé :",
+        "a) pour les produits des valeurs mobilières : par le montant brut des dividendes versés ;",
+        "b) pour les obligations, effets publics et emprunts : par l'intérêt ou revenu distribué durant l'année ;",
+        "c) pour les primes de remboursement : par la différence entre la somme remboursée et le taux d'émission des emprunts ;",
+        "d) pour les lots, par le montant même du lot ;",
+        "e) pour les revenus des créances, dépôts et cautionnements : par le montant brut des intérêts, arrérages et tous autres produits des valeurs énumérées ;",
+        "f) pour les bénéfices réputés distribués des établissements stables : par le montant des bénéfices imposables établis conformément aux dispositions des articles 6 et suivants, sous déduction de l'impôt sur les sociétés ;",
+        "g) pour les plus-values de cession des valeurs mobilières, par la différence entre le prix de cession et le prix d'acquisition :\n(i) le prix de cession et d'acquisition à retenir sont les prix réels qui sont stipulés dans l'acte correspondant ;\n(ii) lorsque le bien a été acquis ou cédé à titre gratuit, le prix à retenir est la valeur vénale du bien au jour de la mutation à titre gratuit ;\n(iii) les moins-values peuvent être déduites des plus-values mobilières ultérieurement réalisées, jusqu'au 31 décembre de la troisième année qui suit celle au cours de laquelle a eu lieu la cession.",
+        "h) pour les revenus perçus de l'étranger, par le montant déterminé selon les paragraphes a) à g) sous déduction de l'impôt mobilier perçu dans le pays d'origine."
+      ],
+      "mots_cles": [
+        "base imposable",
+        "dividendes",
+        "intérêts",
+        "plus-values",
+        "primes de remboursement",
+        "établissements stables",
+        "moins-values"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 5 : Base d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 110",
+      "titre": "Taux de l'IRCM",
+      "texte": [
+        "Le taux de l'impôt sur le revenu des capitaux mobiliers est fixé à 15%.",
+        "Ce taux est fixé à 35% pour les revenus occultes."
+      ],
+      "mots_cles": [
+        "taux IRCM",
+        "15%",
+        "35%",
+        "revenus occultes"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 6 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 110 A",
+      "titre": "Modalités de retenue et de paiement",
+      "texte": [
+        "Lorsque les revenus imposables sont versés par une personne exploitée en République du Congo au sens des dispositions de l'article 4 du présent code à :",
+        "a) des personnes physiques, des personnes morales non soumises à l'impôt sur les sociétés ou des non-résidents, ces revenus sont soumis à une retenue libératoire ;",
+        "b) des personnes morales soumises à l'impôt sur les sociétés, l'État également appliquer une retenue libératoire.",
+        "Les revenus de capitaux mobiliers de source étrangère sont déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les modalités fixées par le présent code.",
+        "Pour les plus-values de cession de valeurs mobilières, l'impôt est à la charge du cédant. Le cessionnaire et la société dont les titres sont cédés sont solidairement responsables du paiement de l'impôt.",
+        "La déclaration et le paiement de l'impôt se font au plus tard dans les soixante (60) jours du mois suivant la réalisation de la plus-value."
+      ],
+      "mots_cles": [
+        "retenue libératoire",
+        "paiement",
+        "plus-values",
+        "60 jours",
+        "non-résidents"
+      ],
+      "statut": "en vigueur",
+      "section": "2.2 Impôt sur le revenu des capitaux mobiliers (IRCM) -Section 6 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111",
+      "titre": "Revenus imposables à l'impôt sur les revenus fonciers",
+      "texte": [
+        "Sont soumis à l'impôt sur les revenus fonciers, lorsqu'ils ne sont pas inclus dans les bénéfices d'une entreprise soumise à l'impôt sur les sociétés :",
+        "a) les revenus des propriétés bâties telles que les maisons et usines ainsi que ceux provenant :",
+        "(i) de l'outillage des établissements industriels attachés au fonds à perpétuelle demeure, ou reposant sur des fondations spéciales faisant corps avec l'ensemble ;",
+        "(ii) de toutes installations assimilables à des constructions, qu'elles soient à usage d'habitation, commercial ou industriel.",
+        "b) les revenus des propriétés non bâties de toute nature ;",
+        "c) les revenus fonciers accessoires à la location des propriétés bâties ou non bâties, notamment la location du droit d'affichage ou la concession du droit d'exploitation d'un terrain non bâti, carrières, redevances tréfoncières, des plus-values immobilières."
+      ],
+      "mots_cles": [
+        "IRF",
+        "revenus fonciers",
+        "propriétés bâties",
+        "propriétés non bâties",
+        "plus-values immobilières"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111 A",
+      "titre": "Imposition des associés de personnes morales à prépondérance de revenus fonciers",
+      "texte": [
+        "Les personnes physiques associées de personnes morales dont le chiffre d'affaires est composé à plus de 80% de revenus fonciers tels que définis à l'article précédent, sont, lorsque ces sociétés ne sont pas soumises à l'impôt sur les sociétés ni à la taxe sur la valeur ajoutée, personnellement soumises à l'impôt sur les revenus fonciers pour la part des revenus imposables correspondant à leurs droits dans la société."
+      ],
+      "mots_cles": [
+        "IRF",
+        "associés",
+        "prépondérance",
+        "revenus fonciers",
+        "sociétés non soumises à l'IS"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application - Sous-section 1 : Revenus imposables",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111 B",
+      "titre": "Plus-values immobilières imposables et définition des immeubles",
+      "texte": [
+        "Les plus-values imposables sont celles réalisées à l'occasion de la cession directe ou indirecte d'immeubles.",
+        "Est considérée comme une cession, la mutation à titre onéreux ou gratuit, entraînant le changement de propriété des immeubles, quel qu'en soit le mode opératoire, notamment la vente, l'échange, la dation en paiement, l'apport en société, la distribution de dividendes en nature, ainsi que la transmission par donation, legs ou successions.",
+        "Sont considérés comme des immeubles :",
+        "a) les immeubles bâtis ou non bâtis ;",
+        "b) les droits réels immobiliers ;",
+        "c) les droits afférents à un contrat de crédit-bail immobilier ;",
+        "d) les titres de société à prépondérance immobilière ;",
+        "e) les plateformes en mer, notamment les plateformes pétrolières ;",
+        "f) ainsi que les droits portant sur des ressources naturelles renouvelables ou non renouvelables, notamment les licences de télécommunications, titres d'exploration ou d'exploitation minière ou pétrolières, titres forestiers, droits halieutiques, etc.",
+        "Sont considérées comme sociétés à prépondérance immobilière, celles dont l'actif est, à la date de cession des titres, ou a été, dans les 365 jours qui précèdent cette cession, constitué pour plus de 50 % de sa valeur réelle par des immeubles affectés par l'entreprise à sa propre exploitation."
+      ],
+      "mots_cles": [
+        "plus-values immobilières",
+        "cession",
+        "immeubles",
+        "crédit-bail immobilier",
+        "société à prépondérance immobilière"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application - Sous-section 1 : Revenus imposables",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111 C",
+      "titre": "Exonérations en matière d'impôt sur les revenus fonciers",
+      "texte": [
+        "Sont exonérés :",
+        "a) les revenus des immeubles ou parties d'immeubles qui sont occupés à titre gratuit par les descendants ou ascendants en ligne directe du propriétaire ;",
+        "b) les plus-values de cession de la résidence principale détenue par le cédant depuis au moins 5 ans ;",
+        "c) les revenus fonciers perçus par l'État ou les collectivités locales.",
+        "En dehors des cas visés au présent article, il ne peut être accordé aucune autre exonération d'impôt sur les revenus fonciers."
+      ],
+      "mots_cles": [
+        "exonération",
+        "résidence principale",
+        "occupation gratuite",
+        "Etat",
+        "collectivités"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application - Sous-section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111 D",
+      "titre": "Territorialité de l'impôt sur les revenus fonciers",
+      "texte": [
+        "L'impôt sur les revenus fonciers est dû au Congo si :",
+        "a) l'immeuble qui produit les revenus fonciers ou qui fait l'objet de la cession directe ou indirecte est situé au Congo, quelle que soit la résidence du bénéficiaire des revenus ou du cédant ;",
+        "b) le bénéficiaire des revenus fonciers est résident, que l'immeuble y soit situé ou non."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "immeuble",
+        "résident",
+        "cession"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application - Sous-section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 111 E",
+      "titre": "Fait générateur et exigibilité de l'impôt sur les revenus fonciers",
+      "texte": [
+        "Le fait générateur et l'exigibilité de l'impôt sont constitués par :",
+        "a) le paiement des revenus imposés, de quelque manière qu'il soit effectué ;",
+        "b) la cession de l'immeuble pour les plus-values."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exigibilité",
+        "loyers",
+        "cession"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 1 : Champ d'application - Sous-section 3 : Fait générateur et exigibilité",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 112",
+      "titre": "Base d'imposition des revenus fonciers",
+      "texte": [
+        "La base d'imposition des revenus fonciers est égale au montant des loyers bruts perçus par le propriétaire."
+      ],
+      "mots_cles": [
+        "base d'imposition",
+        "loyers bruts",
+        "propriétaire"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 2 : Base d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 112 A",
+      "titre": "Base d'imposition des plus-values de cession d'immeubles",
+      "texte": [
+        "Pour les plus-values de cession d'immeubles, la base d'imposition est égale à la différence entre le prix de cession et le prix d'acquisition.",
+        "Les prix de cession et d'acquisition à retenir sont les prix réels tels qu'ils sont stipulés dans l'acte correspondant sous le contrôle de l'administration fiscale, en application des dispositions du code général des impôts.",
+        "Le prix d'acquisition est majoré des frais afférents à l'acquisition à titre gratuit ou à titre onéreux ainsi que des dépenses, dûment justifiées, de construction, de reconstruction, d'agrandissement, de rénovation ou d'amélioration, réalisées depuis l'acquisition."
+      ],
+      "mots_cles": [
+        "plus-value",
+        "prix de cession",
+        "prix d'acquisition",
+        "frais",
+        "travaux"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 2 : Base d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 112 B",
+      "titre": "Revenus fonciers perçus de l'étranger",
+      "texte": [
+        "Pour les revenus perçus de l'étranger, la base d'imposition peut être diminuée du montant de l'impôt sur le revenu foncier acquitté dans le pays où est situé l'immeuble, en application des conventions et accords bilatéraux.",
+        "Lorsqu'en application des conventions existantes, il est octroyé un crédit d'impôt pour l'impôt foncier perçu dans le pays où l'immeuble est situé, la déduction prévue ci-dessus ne s'applique pas."
+      ],
+      "mots_cles": [
+        "revenus de l'étranger",
+        "crédit d'impôt",
+        "double imposition"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 2 : Base d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 113",
+      "titre": "Modalités d'imposition de l'impôt sur les revenus fonciers",
+      "texte": [
+        "Le taux de l'impôt sur les revenus fonciers est de :",
+        "- 9% pour les revenus locatifs ;",
+        "- 10% pour les plus-values.",
+        "Pour les revenus locatifs, l'impôt est à la charge du propriétaire.",
+        "Les personnes percevant des loyers imposables qui n'ont pas été soumis à la retenue à la source, sont tenues de déclarer chaque année les loyers perçus ainsi que le montant des retenues effectuées par leurs locataires, le cas échéant, et d'acquitter le solde d'impôt dû, dans les conditions fixées dans le présent code.",
+        "Pour les plus-values de cession d'immeubles, l'impôt est à la charge du cédant.",
+        "Le cessionnaire et la société à prépondérance immobilière dont les titres sont directement ou indirectement cédés sont solidairement responsables du paiement de l'impôt.",
+        "Les moins-values immobilières réalisées au titre d'une année sont imputées selon les mêmes modalités que celles prévues par les dispositions de l'article 111 du présent code."
+      ],
+      "mots_cles": [
+        "taux",
+        "9%",
+        "15%",
+        "retenue à la source",
+        "responsabilité solidaire",
+        "moins-values"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 113 A",
+      "titre": "Retenue à la source sur les loyers",
+      "texte": [
+        "Par dérogation aux dispositions de la sous-section 2 de l'article précédent, l'impôt sur les revenus fonciers applicable aux loyers est perçu par voie de retenue à la source si le locataire est :",
+        "a) une personne morale soumise à l'impôt sur les sociétés ;",
+        "b) une personne physique relevant de l'impôt sur les bénéfices d'affaires ;",
+        "c) l'État, une collectivité locale ou un établissement public.",
+        "L'impôt est déclaré et payé par le locataire ou par les sous-locataires, pour le compte du propriétaire ou de l'usufruitier, au plus tard le 15 mars de l'année en cours.",
+        "Pour les loyers conclus en cours d'année, la retenue à la source de l'impôt sur le revenu foncier est exigible dans les trois mois de l'entrée en jouissance du bail.",
+        "Pour les revenus perçus par les personnes morales non soumises à l'impôt sur les sociétés, les non-résidents et les exploitants individuels soumis à l'impôt sur le bénéfice d'affaires, selon le régime du forfait, la retenue est libératoire.",
+        "Pour les revenus perçus par les personnes morales soumises à l'impôt sur les sociétés et les personnes physiques soumises à l'impôt sur le bénéfice d'affaires, cette retenue est une charge déductible pour la détermination du résultat imposable.",
+        "À défaut d'effectuer la retenue à la source des sommes correspondant à l'impôt sur le revenu foncier, les locataires visés ci-dessus sont solidairement responsables du paiement de l'impôt éludé, sans préjudice du paiement d'une amende égale au montant des droits en principal.",
+        "Le montant de la retenue à la source effectuée par le locataire doit tenir compte du montant de la taxe immobilière acquittée pour le compte du propriétaire qui est un acompte d'impôt sur le revenu foncier.",
+        "Pour les plus-values de cession d'immeubles, la déclaration et le paiement de l'impôt sont à la charge du cédant au plus tard dans les trois (3) mois qui suivent la réalisation de ladite plus-value immobilière.",
+        "Le cessionnaire et la société à prépondérance immobilière dont les titres sont directement ou indirectement cédés sont solidairement responsables du paiement de l'impôt.",
+        "Le défaut de déclaration et de paiement est sanctionné dans les mêmes conditions que celles évoquées au paragraphe ci-dessus pour les locataires défaillants.",
+        "Les personnes physiques percevant des revenus fonciers, des locataires autres que ceux visés au paragraphe ci-dessus, sont tenues de faire parvenir, chaque année auprès de leur résidence fiscale et au plus tard le 15 mai de l'année d'imposition, une déclaration d'impôt sur le revenu foncier faisant apparaître :",
+        "- le montant annuel des revenus locatifs perçus ;",
+        "- le montant d'impôt sur le revenu foncier et de la taxe immobilière retenus, le cas échéant, par le ou les locataires ;",
+        "- le montant du solde de l'impôt sur le revenu foncier dû après déduction des acomptes éventuels résultant des sommes indiquées au 2ème tiret ci-dessus.",
+        "Le solde de l'impôt sur le revenu foncier tel que défini dans ce paragraphe est payé spontanément par le titulaire de revenus fonciers en trois (3) échéances, au plus tard, le 15 mai, le 20 août et le 15 novembre de l'année d'imposition.",
+        "Les obligations déclaratives et de paiement de l'impôt sur le revenu foncier sont effectuées :",
+        "- au bureau de l'enregistrement du contrat pour les revenus locatifs ;",
+        "- au bureau de la conservation foncière pour les plus-values de cession immobilières."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "locataire",
+        "15 mars",
+        "libératoire",
+        "charge déductible"
+      ],
+      "statut": "en vigueur",
+      "section": "2.3 Impôt sur les revenus fonciers (IRF) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114",
+      "titre": "Champ d'application de l'impôt sur les traitements et salaires",
+      "texte": [
+        "Les traitements, salaires, émoluments et rémunérations assimilées ou rattachées, ainsi que les pensions et rentes viagères sont soumis à un impôt sur les traitements et salaires (ITS).",
+        "Sont également soumis à l'impôt sur les traitements et salaires, les rémunérations, indemnités et toutes autres rémunérations allouées aux dirigeants de sociétés à l'exception de celles expressément soumises à l'impôt sur le revenu des capitaux mobiliers."
+      ],
+      "mots_cles": [
+        "ITS",
+        "traitements",
+        "salaires",
+        "pensions",
+        "rentes viagères",
+        "dirigeants"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 1 : Champ d'application",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114 A",
+      "titre": "Exonérations ITS",
+      "texte": [
+        "Sont affranchis de l'impôt :",
+        "a) les remboursements de frais et allocations de frais de représentation, s'ils remplissent les conditions de déductibilité en matière d'impôt sur les sociétés prévues à l'article 34 du présent code ;",
+        "b) les indemnités de transport lorsqu'elles profitent à tout le personnel de l'entreprise, dans la limite des montants prévus par le statut du personnel ou la convention collective du secteur employeur concerné ;",
+        "c) les indemnités de licenciement ou de départ volontaire versées dans le cadre d'un plan social, y compris les indemnités de préavis ou de congés payés ;",
+        "d) les pensions de retraite ;",
+        "e) les allocations ou avantages à caractère familial versés par l'État, les collectivités locales ou les établissements publics ;",
+        "f) les indemnités temporaires, prestations et rentes viagères servies aux victimes d'accidents du travail ou à leurs ayants droit ;",
+        "g) les bourses d'étudiants d'État ou des collectivités ;",
+        "h) les pensions pour blessure ou invalidité accordées aux personnes ayant servi dans les forces armées, aux veuves de guerre, aux victimes civiles de la guerre ou à leurs ayants droit ;",
+        "i) les rentes viagères servies en représentation de dommages-intérêts en vertu d'une condamnation prononcée judiciairement pour la réparation d'un préjudice corporel ayant entraîné pour la victime, une incapacité permanente totale l'obligeant à avoir recours à l'assistance d'une tierce personne pour effectuer les actes ordinaires de la vie ;",
+        "j) le capital décès ;",
+        "k) les majorations de salaires résultant de l'application de l'index de correction servies aux fonctionnaires et agents de l'État des missions diplomatiques et postes consulaires à l'étranger ;",
+        "l) les sommes placées par l'entreprise au titre de la prime d'intéressement, dans une institution financière nationale, à l'exclusion des placements hors du territoire national, en application d'un plan d'épargne au profit des travailleurs ;",
+        "m) l'indemnité de fin de carrière ou prime de départ à la retraite dans la limite du montant prévu par le statut du personnel ou la convention collective d'entreprise ;",
+        "n) les allocations de chômage."
+      ],
+      "mots_cles": [
+        "exonérations",
+        "frais",
+        "transport",
+        "licenciement",
+        "retraite",
+        "accident du travail",
+        "prime d'intéressement"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114 B",
+      "titre": "Exonération des agents diplomatiques et consulaires étrangers",
+      "texte": [
+        "Les agents diplomatiques, les consuls et agents consulaires de nationalité étrangère peuvent être exonérés d'impôt sur les traitements et salaires dans la mesure où les pays qu'ils représentent concèdent des avantages analogues aux agents diplomatiques et consulaires des États de la Communauté, et dans le respect des principes posés par la convention de Vienne sur les relations diplomatiques du 18 avril 1961.",
+        "En aucun cas, cette exonération ne peut s'étendre :",
+        "a) au personnel local des missions diplomatiques ou consulaires et des représentations des organisations internationales ;",
+        "b) aux rémunérations versées en dehors du cadre de la fonction diplomatique ou consulaire ;",
+        "c) aux rémunérations imposables au titre de l'impôt sur les bénéfices d'affaires, de l'impôt sur le revenu des capitaux mobiliers ou de l'impôt sur les revenus fonciers."
+      ],
+      "mots_cles": [
+        "diplomates",
+        "consuls",
+        "convention de Vienne",
+        "réciprocité"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114 C",
+      "titre": "Principe d'absence d'exonérations supplémentaires ITS",
+      "texte": [
+        "En dehors des cas visés aux articles ci-dessus aucune autre exonération d'impôt sur les traitements et salaires ne peut être accordée.",
+        "Il ne peut notamment pas être accordé de réduction d'impôt sur les traitements et salaires comme politique d'incitation à l'embauche."
+      ],
+      "mots_cles": [
+        "absence d'exonération",
+        "incitation à l'embauche"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 2 : Exonérations",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114 D",
+      "titre": "Territorialité ITS et domicile fiscal",
+      "texte": [
+        "1. Les traitements et salaires sont imposables au Congo, quel que soit le lieu de mise à disposition des revenus :",
+        "a) lorsque le bénéficiaire est domicilié au Congo, alors même que l'activité rémunérée s'exerce hors du Congo ou que l'employeur est domicilié ou établi hors du Congo ;",
+        "b) lorsque le bénéficiaire n'est pas domicilié au Congo, mais que l'activité rétribuée s'y exerce et que l'employeur est domicilié ou établi.",
+        "2. Les pensions publiques ou privées ainsi que les rentes viagères sont imposables au Congo :",
+        "a) lorsque le bénéficiaire est domicilié au Congo alors même que le débiteur serait domicilié à l'étranger ;",
+        "b) lorsque le bénéficiaire n'est pas domicilié au Congo mais que le débiteur y est domicilié ou établi.",
+        "3. Sont considérés comme ayant leur domicile fiscal au Congo :",
+        "a) les personnes qui y possèdent un foyer d'habitation permanent à leur disposition à titre de propriétaire, d'usufruitier ou de locataire ;",
+        "b) les personnes qui, sans disposer au Congo d'un foyer d'habitation permanent, y ont néanmoins le centre de leurs intérêts vitaux ;",
+        "c) les employés de l'État en poste à l'étranger."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "domicile fiscal",
+        "183 jours",
+        "pensions",
+        "rentes viagères"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 3 : Territorialité",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 114 E",
+      "titre": "Fait générateur et exigibilité ITS",
+      "texte": [
+        "Le fait générateur et l'exigibilité de l'impôt interviennent au moment de la mise à disposition des revenus.",
+        "Les avances et acomptes sur salaire sont imposables au titre du mois au cours duquel ils ont été versés au salarié."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exigibilité",
+        "avances",
+        "acomptes"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 1 : Champ d'application - Sous-section 4 : Fait générateur et exigibilité",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 115",
+      "titre": "Détermination des bases d'imposition – traitements et salaires",
+      "texte": [
+        "Pour la détermination des bases d'imposition, il est tenu compte du montant brut des traitements, émoluments, indemnités, salaires, pensions et rentes viagères ainsi que de tous les avantages en argent et en nature accordés aux intéressés.",
+        "Les avantages en nature sont évalués selon leur valeur réelle. À défaut, ceux-ci sont évalués comme suit :",
+        "- logement : 20% du salaire plafonné pour la sécurité sociale ;",
+        "- domesticité, gardiennage : 7% du salaire brut ;",
+        "- eau, éclairage, gaz : 5% du salaire brut ;",
+        "- téléphone : 2% du salaire brut ;",
+        "- voiture : 3% du salaire brut ;",
+        "- nourriture : 20% du salaire brut.",
+        "Pour le calcul des avantages en nature, la base de référence est constituée par le montant brut du salaire de présence et celui de congé, après déduction des retenues faites par l'employeur au titre de pensions ou de retraites ainsi que les cotisations aux assurances sociales obligatoires.",
+        "L'avantage en nature correspondant aux primes de mutuelles sociales payées par l'employeur pour le compte du salarié n'est pas imposable si ces mutuelles profitent à l'ensemble des salariés.",
+        "Sous réserve des conventions internationales, pour les revenus de source étrangère, la base d'imposition est constituée par le montant perçu par le bénéficiaire, net de tout impôt et la charge acquittée ou retenue à l'étranger."
+      ],
+      "mots_cles": [
+        "base imposable",
+        "avantages en nature",
+        "logement",
+        "voiture",
+        "nourriture",
+        "revenus de source étrangère"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 2 : Base d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116",
+      "titre": "Détermination de l'assiette de l'impôt",
+      "texte": [
+        "Pour déterminer l'assiette de l'impôt, une déduction de 20% est appliquée au montant net calculé après déduction de la part salariale des cotisations sociales de retraite."
+      ],
+      "mots_cles": [
+        "barème progressif",
+        "retenue à la source",
+        "SMIG",
+        "déclaration annuelle"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 A",
+      "titre": "Calcul de l'impôt – quotient familial",
+      "texte": [
+        "Pour le calcul de l'impôt, le salaire net imposable, arrondi au millier de francs inférieur, est divisé en un certain nombre de parts d'après la situation matrimoniale et les charges de famille du contribuable.",
+        "Le quotient familial déterminé par ce rapport est taxé par application du barème prévu à l'article 116 C.",
+        "L'impôt brut est égal au produit de la cotisation ainsi obtenue par le nombre de parts."
+      ],
+      "mots_cles": [
+        "quotient familial",
+        "parts",
+        "situation matrimoniale"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 B",
+      "titre": "Nombre de parts pour la détermination du salaire net imposable",
+      "texte": [
+        "- Célibataire, divorcé ou veuf sans enfant à charge : 1 part",
+        "- Marié sans enfant à charge : 2 parts",
+        "- Célibataire ou divorcé ayant un enfant à charge : 2 parts",
+        "- Marié ou veuf ayant un enfant à charge : 2,5 parts",
+        "- Célibataire ou divorcé ayant deux enfants à charge : 2,5 parts",
+        "- Marié ou veuf ayant deux enfants à charge : 3 parts",
+        "- Célibataire ou divorcé ayant trois enfants à charge : 3 parts",
+        "- Marié ou veuf ayant trois enfants à charge : 3,5 parts",
+        "- Célibataire ou divorcé ayant quatre enfants à charge : 3,5 parts",
+        "Et ainsi de suite en augmentant d'une demi-part par enfant à charge du contribuable, jusqu'à un maximum de 6,5 parts.",
+        "En cas d'imposition séparée des époux salariés, chaque époux est considéré comme un marié, les enfants à la charge du mari, sauf dérogation expresse.",
+        "Le contribuable veuf sans enfant à charge est considéré, pour le calcul de l'impôt, comme marié sans enfant à charge pendant les deux années qui suivent le décès du conjoint.",
+        "Il peut ultérieurement bénéficier des dispositions de l'article 116 C ci-après.",
+        "Le veuf qui a, à sa charge, un ou plusieurs enfants non issus de son mariage avec le conjoint décédé est traité comme célibataire ayant à sa charge le même nombre d'enfants."
+      ],
+      "mots_cles": [
+        "parts",
+        "quotient familial",
+        "célibataire",
+        "marié",
+        "veuf",
+        "enfants à charge"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 C",
+      "titre": "Dérogations au quotient familial",
+      "texte": [
+        "Par dérogation aux dispositions qui précèdent, le salaire net imposable des contribuables célibataires, divorcés ou veufs n'ayant pas d'enfants à leur charge est divisé par 1,5 lorsque ces contribuables :",
+        "a) ont un ou plusieurs enfants majeurs ou faisant l'objet d'une imposition distincte ;",
+        "b) ont un ou plusieurs enfants qui sont morts à la condition que l'un d'eux au moins ait atteint l'âge de 16 ans ou que l'un d'eux au moins soit décédé par suite de fait de guerre ;",
+        "c) sont titulaires d'une pension prévue par la loi du 31 mars 1919 pour une invalidité de 40 % et au-dessus ou d'une pension de veuve prévue par les lois des 31 mars et 24 juin 1919, ou d'une pension d'invalidité pour accident du travail de 40 % et au-dessus ;",
+        "d) ont adopté un enfant à la condition que, si l'adoption a eu lieu alors que l'enfant était âgé de plus de 10 ans, cet enfant ait été à la charge de l'adoptant depuis l'âge de 10 ans. Cette disposition n'est pas applicable si l'enfant adopté est décédé avant d'avoir atteint l'âge de 16 ans.",
+        "Le quotient familial prévu à l'article 116 A ci-dessus est augmenté d'une part pour l'enfant infirme majeur au lieu d'une demi-part.",
+        "Les agents de l'État et du secteur parapublique dont le poste d'affectation est situé en dehors des communes de plein exercice bénéficient d'une demi-part en plus dans la détermination de leur quotient familial, dès lors qu'ils résident dans leurs lieux d'affectation."
+      ],
+      "mots_cles": [
+        "dérogation",
+        "quotient familial",
+        "célibataire",
+        "divorcé",
+        "veuf",
+        "enfant infirme",
+        "affectation"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 D",
+      "titre": "Enfants considérés à charge",
+      "texte": [
+        "Sont considérés comme étant à la charge du contribuable à condition de n'avoir pas de revenus distincts de ceux qui servent de base à l'imposition de ce dernier :",
+        "1) ses enfants légitimes, légalement reconnus ou légalement adoptés, s'ils sont âgés de moins de 21 ans ou s'ils sont infirmes.",
+        "La limite d'âge est, sous réserve de justification, reportée à 25 ans pour les enfants poursuivant leurs études ;",
+        "2) sous la même condition et sous réserve de justification, les enfants recueillis par lui à son propre foyer et, dans la limite de deux, les enfants placés sous sa protection dans le cadre familial."
+      ],
+      "mots_cles": [
+        "enfants à charge",
+        "21 ans",
+        "25 ans",
+        "études",
+        "infirme",
+        "adoption"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 E",
+      "titre": "Garde fiscale des enfants",
+      "texte": [
+        "Pour la garde ou la prise en charge fiscale des enfants, les femmes mariées et les femmes célibataires, divorcées ou veuves, doivent justifier d'une décision du Tribunal par laquelle le père confie à la mère la charge fiscale des enfants."
+      ],
+      "mots_cles": [
+        "garde fiscale",
+        "enfants",
+        "décision tribunal",
+        "charge fiscale"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 F",
+      "titre": "Situation de famille à retenir",
+      "texte": [
+        "La situation et les charges de famille dont il doit être tenu compte sont celles existant au 1er janvier de l'année d'imposition.",
+        "Toutefois, en cas de mariage du contribuable en cours d'année ou d'augmentation de ses charges de famille en cours d'année, il est fait état de la situation au 31 décembre de ladite année ou à la date du décès."
+      ],
+      "mots_cles": [
+        "situation de famille",
+        "1er janvier",
+        "31 décembre",
+        "mariage",
+        "charges de famille"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 G",
+      "titre": "Barème de l'impôt sur les traitements et salaires",
+      "texte": [
+        "1) Le quotient familial ou le salaire net imposable correspondant à une part est imposé en appliquant les taux de :",
+        "- 1 200 FCFA pour la fraction comprise entre 0 et 615 000 ;",
+        "- 10 % pour la fraction comprise entre 615 001 et 1 500 000 ;",
+        "- 15 % pour la fraction comprise entre 1 500 001 et 3 500 000 ;",
+        "- 20 % pour la fraction comprise entre 3 500 001 et 5 000 000 ;",
+        "- 30 % pour la fraction comprise entre 5 000 001 et suivant.",
+        "2) Lorsque le salaire brut est inférieur au salaire minimum interprofessionnel garanti (SMIG) fixé par les textes en vigueur, l'impôt annuel minimum est fixé à 1 200 FCFA.",
+        "3) L'impôt sur les traitements et salaires est payé par acompte mensuel retenu à la source par l'employeur."
+      ],
+      "mots_cles": [
+        "barème",
+        "quotient familial",
+        "taux",
+        "SMIG",
+        "retenue à la source"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 H",
+      "titre": "Obligation de retenue à la source",
+      "texte": [
+        "1) Toute personne physique ou morale qui paie des sommes imposables à l'impôt sur les traitements et salaires au Congo est tenue d'opérer la retenue de l'impôt selon l'article 183.",
+        "2) Les retenues sont libératoires au titre de l'impôt sur les traitements et salaires si le bénéficiaire dispose d'une seule source de traitements et salaires.",
+        "Dans le cas contraire, le contribuable bénéficiaire desdits traitements et salaires est tenu de souscrire une déclaration annuelle des salaires en vue d'une imposition unique.",
+        "3) Les revenus de source étrangère doivent être déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les mêmes modalités fixées par le code général des impôts pour les revenus de source étrangère."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "libératoire",
+        "déclaration annuelle",
+        "revenus source étrangère"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    },
+    {
+      "article": "Art. 116 I",
+      "titre": "Déclaration annuelle des salaires",
+      "texte": [
+        "1) À titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du ministre des finances. Cette annexe est un état récapitulatif de la DAS 1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
+        "2) Au cours de l'année 2026, l'impôt sur les traitements et salaires se calcule comme en matière d'IRPP en prenant en considération les dispositions des articles 114 à 116 H ci-dessus."
+      ],
+      "mots_cles": [
+        "DAS",
+        "déclaration annuelle",
+        "DAS 3",
+        "DAS 1",
+        "IRPP"
+      ],
+      "statut": "en vigueur",
+      "section": "2.4 Impôt sur les traitements et salaires (ITS) -Section 3 : Modalités d'imposition",
+      "annee_application": 2026
+    }
+  ]
+}

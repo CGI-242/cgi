@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "titre": 3,
+    "livre": null,
+    "chapitre": 3,
+    "chapitre_titre": "Juridiction gracieuse",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 446",
+      "titre": "Demande de remise ou modération d'impôt",
+      "texte": [
+        "Sont admis à solliciter une remise ou une modération d'impôt :",
+        "1) En matière de contribution foncière, les propriétaires :",
+        "a) en cas de destruction totale ou partielle, ou de démolition volontaire en cours d'année, d'immeubles faisant l'objet d'une taxation ;",
+        "b) en cas d'interruption de location de maisons d'habitation louées, lorsque la durée totale de la vacance a été de six mois consécutifs. Le point de départ de cette période est le premier jour du mois suivant la vacance.",
+        "2) D'une façon générale, tous les contribuables qui, par suite de gêne ou d'indigence, ne peuvent acquitter tout ou partie de leur cotisation ; les remises ou modérations s'appliquent plus particulièrement aux redevables qui se trouvent réellement hors d'état de se libérer envers le Trésor ; elles ne peuvent être accordées en raison du défaut de prospérité plus ou moins passager d'entreprises commerciales, industrielles, forestières, minières ou agricoles."
+      ],
+      "mots_cles": [
+        "remise",
+        "modération",
+        "contribution foncière",
+        "destruction",
+        "démolition",
+        "vacance locative",
+        "six mois",
+        "gêne",
+        "indigence",
+        "Trésor"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Demande en remise ou modération"
+    },
+    {
+      "article": "Art. 447",
+      "titre": "Adresse de la demande",
+      "texte": [
+        "La demande doit être adressée à la DGID. Seule la date de réception par cette direction est opposable tant au contribuable qu'à l'administration."
+      ],
+      "mots_cles": [
+        "demande",
+        "DGID",
+        "date de réception",
+        "opposable"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Demande en remise ou modération"
+    },
+    {
+      "article": "Art. 448",
+      "titre": "Délai de présentation de la requête",
+      "texte": [
+        "La requête doit parvenir à la DGID dans le mois de l'événement qui la justifie.",
+        "Lorsque la demande est motivée par la gêne ou l'indigence elle peut être présentée à toute époque."
+      ],
+      "mots_cles": [
+        "requête",
+        "DGID",
+        "délai un mois",
+        "événement",
+        "gêne",
+        "indigence"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Demande en remise ou modération"
+    },
+    {
+      "article": "Art. 449",
+      "titre": "Dispositions applicables à la présentation et l'instruction des demandes",
+      "texte": [
+        "Les dispositions des articles 427, 429, 430, 430 bis, 432, 433 ci-dessus s'appliquent à la présentation, l'instruction et la solution des demandes de remise ou modération."
+      ],
+      "mots_cles": [
+        "articles 427",
+        "article 429",
+        "article 430",
+        "article 430 bis",
+        "article 432",
+        "article 433",
+        "présentation",
+        "instruction",
+        "remise",
+        "modération"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Demande en remise ou modération"
+    },
+    {
+      "article": "Art. 450",
+      "titre": "Saisine du Directeur Général des Impôts",
+      "texte": [
+        "Le contribuable a la faculté de saisir le Directeur Général des Impôts dans le cas où la décision du Directeur des Contributions Directes et Indirectes ou du Directeur des Vérifications Générales, des Enquêtes fiscales et des Recouvrements ne lui donne pas entière satisfaction.",
+        "Il en est de même de la décision du Directeur Général des Impôts qui peut être portée devant le Ministre des finances."
+      ],
+      "mots_cles": [
+        "contribuable",
+        "Directeur Général des Impôts",
+        "saisine",
+        "Directeur des Contributions",
+        "Directeur des Vérifications Générales",
+        "Ministre des finances",
+        "recours"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Demande en remise ou modération"
+    },
+    {
+      "article": "Art. 451",
+      "titre": "Demandes en remise de pénalités",
+      "texte": [
+        "Les demandes en remise de pénalités appliquées par le service d'assiette ou de la majoration de 10 % appliquée par le service de recouvrement sont présentées, instruites et jugées dans les mêmes formes et conditions que les demandes de remise ou modération d'impôt ; toutefois, elles devront parvenir à la DGID dans un délai de deux mois à partir du jour où le contribuable a connaissance de sa dette par les premières poursuites avec frais.",
+        "Dans le cas des demandes en remise de la majoration de 10 %, l'agent d'assiette chargé de l'instruction de la demande devra nécessairement s'entourer de l'avis de l'agent chargé du recouvrement."
+      ],
+      "mots_cles": [
+        "remise de pénalités",
+        "majoration 10 %",
+        "service d'assiette",
+        "service de recouvrement",
+        "DGID",
+        "délai deux mois",
+        "poursuites avec frais"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Demandes en remise de pénalités"
+    },
+    {
+      "article": "Art. 452",
+      "titre": "Présentation des états de cotes irrécouvrables",
+      "texte": [
+        "Les comptables chargés de la perception des impôts directs présentent des états de cotes irrécouvrables comprenant, d'une part, les impositions dont le recouvrement s'avère impossible et, d'autre part, les cotes indûment imposées qui n'auraient pu être inscrites sur les états visés à l'article 435 ci-dessus."
+      ],
+      "mots_cles": [
+        "comptables",
+        "perception",
+        "impôts directs",
+        "cotes irrécouvrables",
+        "recouvrement impossible",
+        "cotes indûment imposées",
+        "article 435"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : États de cotes irrécouvrables"
+    },
+    {
+      "article": "Art. 453",
+      "titre": "Délai de transmission des états de cotes irrécouvrables",
+      "texte": [
+        "Les états de cotes irrécouvrables établis en double exemplaire doivent parvenir à la DGID dans les deux premiers mois de la deuxième année suivant celle de l'exercice auquel les rôles sont rattachés.",
+        "Dans les deux premiers mois de la troisième année suivant celle de l'exercice, les comptables peuvent présenter des états supplémentaires de cotes irrécouvrables, lesquels peuvent comprendre des cotes présentées pour la première fois comme irrécouvrables ou des cotes qui, ayant été portées sur les états primitifs, n'ont pas été admises en non-valeur."
+      ],
+      "mots_cles": [
+        "états de cotes irrécouvrables",
+        "double exemplaire",
+        "DGID",
+        "deux premiers mois",
+        "deuxième année",
+        "états supplémentaires",
+        "troisième année",
+        "non-valeur"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : États de cotes irrécouvrables"
+    },
+    {
+      "article": "Art. 454",
+      "titre": "Transmission des états de cotes irrécouvrables pour avis",
+      "texte": [
+        "Les états de cotes irrécouvrables sont transmis, pour avis, par le Directeur Général des Impôts à l'agent qui a établi les taxations. Ce dernier doit renvoyer ces états au service dans un délai de deux mois."
+      ],
+      "mots_cles": [
+        "états de cotes irrécouvrables",
+        "Directeur Général des Impôts",
+        "avis",
+        "agent",
+        "cotisations",
+        "délai deux mois"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : États de cotes irrécouvrables"
+    },
+    {
+      "article": "Art. 455",
+      "titre": "Décision du Directeur Général des Impôts sur les cotes irrécouvrables",
+      "texte": [
+        "La décision du Directeur Général des Impôts, qui doit intervenir avant le 1er octobre de l'année au cours de laquelle l'état des cotes irrécouvrables a été présenté, est notifiée au comptable qui conserve la faculté de porter l'affaire devant le Ministre des finances lorsque cette décision ne lui donne pas satisfaction."
+      ],
+      "mots_cles": [
+        "décision",
+        "Directeur Général des Impôts",
+        "1er octobre",
+        "cotes irrécouvrables",
+        "notification",
+        "comptable",
+        "Ministre des finances",
+        "recours"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : États de cotes irrécouvrables"
+    },
+    {
+      "article": "Art. 456",
+      "titre": "Cotisations admises en non-valeur",
+      "texte": [
+        "Les contribuables ne sont pas libérés de leur dette du fait que les cotisations assises à leur nom ont été admises en non-valeur. Les comptables sont tenus de poursuivre le recouvrement de ces cotisations lorsque les débiteurs ont pu être retrouvés ou sont redevenus solvables et ils doivent prendre en temps opportun toutes les mesures conservatoires utiles."
+      ],
+      "mots_cles": [
+        "contribuables",
+        "dette",
+        "non-valeur",
+        "comptables",
+        "recouvrement",
+        "débiteurs",
+        "solvables",
+        "mesures conservatoires"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : États de cotes irrécouvrables"
+    },
+    {
+      "article": "Art. 457",
+      "titre": "Demandes relevant de la juridiction gracieuse",
+      "texte": [
+        "Les dispositions des articles 441 à 445 ci-dessus sont valables en ce qui concerne les demandes relevant de la juridiction gracieuse.",
+        "Toutefois, en cas de requête motivée par la gêne ou l'indigence, les obligations prévues à l'article 441 ne sont pas imposées au contribuable."
+      ],
+      "mots_cles": [
+        "articles 441 à 445",
+        "juridiction gracieuse",
+        "gêne",
+        "indigence",
+        "article 441",
+        "dispense"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Dispositions diverses"
+    }
+  ]
+}

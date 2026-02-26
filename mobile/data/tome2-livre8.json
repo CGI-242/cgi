@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 8,
+    "chapitre": null,
+    "chapitre_titre": "Droits relatifs aux domaines de l'État",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "1)",
+      "titre": "Droits, taxes, redevances et frais du secteur des postes et des communications électroniques",
+      "texte": [
+        "Droits, taxes, redevances et frais du secteur des postes et des communications électroniques : voir la loi de finances pour 2011, modifiée par la loi de finances rectificative pour 2012 et les lois de finances pour 2013, 2014 et 2015, et voir la loi de finances pour 2019."
+      ],
+      "mots_cles": [
+        "postes",
+        "communications électroniques",
+        "loi de finances 2011"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "2)",
+      "titre": "Redevance de l'aviation civile",
+      "texte": [
+        "Redevance de l'aviation civile : voir la loi de finances pour 2012."
+      ],
+      "mots_cles": [
+        "redevance",
+        "aviation civile",
+        "loi de finances 2012"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "3)",
+      "titre": "Fiscalité domaniale",
+      "texte": [
+        "Fiscalité domaniale : voir la loi n°9-2004 du 26 novembre 2004 portant Code du domaine de l'État."
+      ],
+      "mots_cles": [
+        "fiscalité domaniale",
+        "loi n°9-2004",
+        "Code du domaine de l'État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "4)",
+      "titre": "Fiscalité foncière",
+      "texte": [
+        "Fiscalité foncière : voir la loi n°17-2000 du 30 décembre 2000 portant régime de la propriété foncière, modifiée par les lois de finances pour 2012 et 2015."
+      ],
+      "mots_cles": [
+        "fiscalité foncière",
+        "loi n°17-2000",
+        "propriété foncière"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "5)",
+      "titre": "Fiscalité minière",
+      "texte": [
+        "Fiscalité minière : voir la loi n°4-2005 du 11 avril 2005 portant Code minier."
+      ],
+      "mots_cles": [
+        "fiscalité minière",
+        "loi n°4-2005",
+        "Code minier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "6)",
+      "titre": "Fiscalité des hydrocarbures",
+      "texte": [
+        "Fiscalité des hydrocarbures : voir la loi n°24-94 du 23 août 1994 portant Code des hydrocarbures et la loi de finances pour 2019."
+      ],
+      "mots_cles": [
+        "fiscalité des hydrocarbures",
+        "loi n°24-94",
+        "Code des hydrocarbures"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "7)",
+      "titre": "Fiscalité forestière",
+      "texte": [
+        "Fiscalité forestière : voir la loi n°16-2000 du 20 novembre 2000 portant Code forestier."
+      ],
+      "mots_cles": [
+        "fiscalité forestière",
+        "loi n°16-2000",
+        "Code forestier"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

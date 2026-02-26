@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 2,
+    "chapitre": 6,
+    "chapitre_titre": "Droit de timbre sur les véhicules automobiles",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 145",
+      "titre": "Institution du droit de timbre sur les véhicules automobiles",
+      "texte": [
+        "Il est institué un droit de timbre sur les véhicules automobiles en circulation sur le territoire congolais."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "circulation",
+        "territoire congolais"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 146",
+      "titre": "Exonérations du droit de timbre sur les véhicules automobiles",
+      "texte": [
+        "Sont exonérés du droit de timbre sur les véhicules automobiles :",
+        "• les véhicules ayant l'immatriculation de l'État ;",
+        "• les véhicules appartenant aux gouvernements étrangers avec lesquels l'État a passé des accords de coopération pour le personnel d'assistance technique civil ou militaire, sous réserve de réciprocité ;",
+        "• les véhicules dont les propriétaires bénéficient du privilège diplomatique et consulaire."
+      ],
+      "mots_cles": [
+        "exonérés",
+        "droit de timbre",
+        "véhicules automobiles",
+        "immatriculation de l'État",
+        "gouvernements étrangers",
+        "accords de coopération",
+        "assistance technique",
+        "civil",
+        "militaire",
+        "réciprocité",
+        "privilège diplomatique",
+        "privilège consulaire"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 147",
+      "titre": "Annualité du droit de timbre des véhicules automobiles",
+      "texte": [
+        "Le droit de timbre des véhicules automobiles est annuel."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "annuel",
+        "périodicité"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 148",
+      "titre": "Tarif du droit de timbre des véhicules automobiles",
+      "texte": [
+        "Le tarif du droit de timbre des véhicules automobiles est de 5.000 FCFA."
+      ],
+      "mots_cles": [
+        "tarif",
+        "droit de timbre",
+        "véhicules automobiles",
+        "5.000 FCFA"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Tarif et collecte"
+    },
+    {
+      "article": "Art. 149",
+      "titre": "Collecte du droit de timbre par les compagnies d'assurance",
+      "texte": [
+        "Le droit de timbre des véhicules automobiles est collecté par les compagnies d'assurance au moment de la souscription de la police d'assurance responsabilité civile.",
+        "Les compagnies d'assurance prélèvent le droit de timbre des véhicules automobiles au tarif visé à l'article 148 ci-dessus dès le premier paiement de la prime d'assurance au cours de l'année, que ce paiement soit partiel ou total.",
+        "Le droit de timbre collecté est reversé aux mains du bureau de l'enregistrement des domaines et du timbre du siège de la compagnie d'assurances entre le 10 et le 20 du mois suivant celui du paiement par l'assuré."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "collecte",
+        "compagnies d'assurance",
+        "souscription",
+        "police d'assurance",
+        "responsabilité civile",
+        "prélèvement",
+        "article 148",
+        "prime d'assurance",
+        "paiement partiel",
+        "paiement total",
+        "reversement",
+        "bureau de l'enregistrement",
+        "domaines",
+        "timbre"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Tarif et collecte"
+    },
+    {
+      "article": "Art. 150",
+      "titre": "Véhicules immatriculés dans le domaine portuaire",
+      "texte": [
+        "Les véhicules immatriculés au domaine portuaire sont soumis au droit de timbre des véhicules automobiles au tarif prévu à l'article 148 ci-dessus.",
+        "Ce droit est valable jusqu'à l'expiration de ladite immatriculation."
+      ],
+      "mots_cles": [
+        "véhicules",
+        "domaine portuaire",
+        "immatriculation",
+        "droit de timbre",
+        "véhicules automobiles",
+        "article 148",
+        "expiration"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Tarif et collecte"
+    },
+    {
+      "article": "Art. 151",
+      "titre": "Règles de contrôle et sanctions applicables",
+      "texte": [
+        "Les règles d'assiette, de contrôle, de recouvrement, de contentieux ainsi que les obligations et sanctions fiscales applicables au droit de timbre des véhicules automobiles sont celles prévues en matière de droits d'enregistrement."
+      ],
+      "mots_cles": [
+        "règles",
+        "assiette",
+        "contrôle",
+        "recouvrement",
+        "contentieux",
+        "obligations",
+        "sanctions fiscales",
+        "droit de timbre",
+        "véhicules automobiles",
+        "droits d'enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Contrôle et sanctions"
+    }
+  ]
+}

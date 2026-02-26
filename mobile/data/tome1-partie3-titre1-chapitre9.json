@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 9,
+    "chapitre_titre": "Marchés publics",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 406 bis",
+      "titre": "Impôts et taxes applicables aux marchés publics",
+      "texte": [
+        "Les marchés et bons de commande publics tels que définis par la réglementation en vigueur sont conclus toutes taxes comprises.",
+        "Ils sont soumis à tous les impôts, droits et taxes prévus par la législation en vigueur à la date de leur conclusion, notamment les impôts directs, la taxe sur la valeur ajoutée et les taxes annexes, les droits de douanes, la redevance informatique et les droits d'enregistrement et de timbre.",
+        "Le redevable légal des impôts, droits et taxes applicables aux marchés et bons de commande publics est l'adjudicataire du marché.",
+        "Les exonérations ne relevant ni du Code général des impôts, ni du Code des douanes, ni de la charte nationale des investissements, ne sauraient être accordées dans le cadre des conventions d'établissement.",
+        "Les impôts, taxes et certains droits dus à l'État, pour lesquels certains contribuables sont exonérés, du fait des accords signés entre les agents économiques et le Congo constituent des dépenses fiscales à comptabiliser."
+      ],
+      "mots_cles": [
+        "marchés publics",
+        "bons de commande",
+        "TTC",
+        "adjudicataire",
+        "exonérations",
+        "conventions d'établissement",
+        "dépenses fiscales"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Sanctions pour défaut de déclaration, déclarations tardives ou inexactes",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 372",
+      "titre": "Sanctions pour défaut de déclaration, déclarations tardives ou inexactes",
+      "texte": [
+        "Le montant des cotisations dues au titre de tous les impôts, taxes, droits et centimes additionnels visés au présent Code, à l'exception de la taxe sur le chiffre d'affaires, des centimes additionnels et du droit d'accises, est majoré de 100 % pour les contribuables taxés d'office."
+      ],
+      "mots_cles": [
+        "majoration",
+        "100 %",
+        "taxation d'office",
+        "sanctions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 373",
+      "titre": "Sanctions pour non-production ou production tardive des déclarations",
+      "texte": [
+        "(L.F.2024) 1) La non-production des déclarations, relevés ou documents prescrits par le présent Code est sanctionnée par une majoration de 50 % des cotisations.",
+        "2) La production après les délais des déclarations et documents visés à l'alinéa 1 est sanctionnée d'une amende de 15.000 F par jour de retard. En aucun cas, l'amende ne peut être supérieure à 500.000 F.",
+        "3) Les infractions ci-dessus sont sanctionnées d'une amende de 500.000 F lorsque la déclaration, le relevé ou le document ne donne pas lieu au paiement d'un droit.",
+        "4) a) Toutefois, le report du dépôt de la déclaration prévue par les articles 30, 31, 46, 76, 79 et 126 du présent Code est accordé moyennant une amende fiscale de 500.000 FCFA lorsque le report n'excède pas trente jours.",
+        "b) Cette amende est portée à 1.000.000 FCFA pour un délai supérieur à trente jours sans dépasser 60 jours. Au-delà de 60 jours, l'absence de déclaration est considérée comme un défaut de déclaration.",
+        "5) a) En matière de taxe sur le chiffre d'affaires, de centimes additionnels et de droit d'accises ou de toutes autres taxes qui en tiendraient lieu, le dépôt tardif de la déclaration mensuelle est sanctionné par un intérêt de retard égal à 5 % par mois de la taxe due. Lorsque la déclaration tardive ne comporte aucun droit dû, la pénalité est de 50.000 F sans préjudice des autres sanctions.",
+        "b) Tout dépôt de déclaration mensuelle intervenant après les huit jours d'une mise en demeure est sanctionné par une pénalité de 15 % par mois, tout mois entamé étant dû sans dépasser 50 % des droits éludés. Lorsque la déclaration tardive ne comporte aucun droit dû, la pénalité est de 200.000 F sans préjudice des autres sanctions.",
+        "6) La production, après la réception de la lettre de confirmation des redressements, des documents, justificatifs et autres pièces comptables, régulièrement demandés au cours de la phase contradictoire du contrôle fiscal, est nulle et de nul effet."
+      ],
+      "mots_cles": [
+        "défaut de déclaration",
+        "déclaration tardive",
+        "amende",
+        "majoration",
+        "sanctions fiscales",
+        "déclaration mensuelle",
+        "intérêt de retard",
+        "mise en demeure",
+        "contrôle fiscal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 373 bis",
+      "titre": "Obligations déclaratives des bénéficiaires de conventions et contrats",
+      "texte": [
+        "(L.F.2025) Les contribuables bénéficiaires de conventions d'établissement, de marchés publics, de contrats d'État et autres accords réguliers comportant des exonérations ou réductions d'impôts, droits et taxes, sont tenus, pendant la période dont ils bénéficient de ce régime, de souscrire les déclarations afférentes à l'établissement des impôts, droits et taxes relatifs, et de déposer les états financiers de synthèse exigés par les articles 30 et 31 ci-dessus dans les délais prévus par le présent Code.",
+        "Le défaut de déclaration est sanctionné : pour les impôts, droits et taxes à déclaration périodique, par la perte des avantages fiscaux au titre de l'échéance de déclaration non respectée, assorti d'une amende de 500.000 FCFA ; pour les états financiers exigés, par le paiement d'une amende de 10.000.000 FCFA sans préjudice des autres sanctions applicables en cas de défaut de déclaration."
+      ],
+      "mots_cles": [
+        "conventions d'établissement",
+        "marchés publics",
+        "avantages fiscaux",
+        "états financiers",
+        "sanctions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 373 ter",
+      "titre": "Amende pour documents comptables en langue étrangère",
+      "texte": [
+        "Toute infraction aux dispositions de l'article 31, tome 1 du présent Code relatif à la traduction des documents comptables et autres rédigés en langue étrangère est sanctionnée d'une amende de 2.000.000 FCFA par document."
+      ],
+      "mots_cles": [
+        "traduction",
+        "documents comptables",
+        "langue étrangère",
+        "amende",
+        "2.000.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 374",
+      "titre": "Pénalités pour inexactitude, insuffisance ou omission déclarative",
+      "texte": [
+        "En cas d'inexactitude, d'insuffisance ou omission dans les déclarations, relevés ou documents dont la production est obligatoire en application des dispositions du présent Code, les cotisations afférentes aux droits éludés, à l'exception de la taxe sur le chiffre d'affaires, des centimes additionnels à cette taxe et du droit d'accises ou de toute autre taxe qui en tiendrait lieu, sont majorées de 50 % lorsque la bonne foi du contribuable est admise et 100 % lorsque le contribuable n'établit pas sa bonne foi.",
+        "En matière de TVA, des centimes additionnels à cette taxe et du droit d'accises, toute inexactitude, insuffisance ou omission constatée dans la déclaration mensuelle est sanctionnée par une pénalité de 50 % des droits éludés ou des redressements effectués lorsque la bonne foi du contribuable est établie. En cas de mauvaise foi, cette pénalité est portée à 100 % et à 200 % en cas de manœuvre frauduleuse ou d'opposition à contrôle.",
+        "Les ventes sans factures par un redevable de la TVA sont passibles d'une amende fiscale égale au double des droits compromis. En cas de récidive, l'amende encore sera égale au quadruple des droits.",
+        "Toute demande de déduction de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, est sanctionnée par une pénalité de 200 % des droits éludés.",
+        "Sans préjudice des poursuites pénales pouvant être engagées à son encontre, tout contribuable qui émet une facture telle que visée ci-dessus est responsable du paiement d'une amende égale à la taxe ainsi facturée et, solidairement, du paiement de la pénalité de 200 %.",
+        "Lorsque le dirigeant d'une société, d'une personne morale ou de tout autre groupement, est responsable de manœuvres frauduleuses ou de l'inobservation des obligations déclaratives pendant plus de deux mois, qui ont rendu impossible le recouvrement de la taxe due par la société, la personne morale ou le groupement, il peut être déclaré solidairement responsable du paiement de ses impositions. Cette disposition est applicable à toute personne exerçant en droit ou en fait la direction effective de la société."
+      ],
+      "mots_cles": [
+        "inexactitude",
+        "insuffisance",
+        "omission",
+        "bonne foi",
+        "mauvaise foi",
+        "manœuvre frauduleuse",
+        "TVA",
+        "facturation",
+        "responsabilité solidaire",
+        "dirigeant"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 374 bis",
+      "titre": "Définition de la mauvaise foi et des manœuvres frauduleuses",
+      "texte": [
+        "Est considéré comme étant de mauvaise foi, le contribuable qui, sciemment, a omis de passer des écritures comptables ou qui a passé ou fait passer des écritures inexactes ou fictives dans les livres, registres et documents professionnels se rapportant à des opérations assujetties à la TVA. Il en est de même de celui qui produit des pièces fausses ou reconnues inexactes mais ayant donné lieu à facturation ou à déduction de la TVA.",
+        "La mauvaise foi peut être établie chaque fois que le service est en mesure de prouver que l'intéressé a nécessairement eu connaissance des faits ou des situations qui motivent les redressements. Il en est de même en cas de répétition du défaut de déclaration ou de paiement malgré les mises en demeure.",
+        "Sans préjudice des poursuites pénales pouvant être engagées à l'encontre de leurs auteurs, les ventes sans factures par un assujetti à la TVA, les déductions de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, l'émission des factures telles que visées ci-dessus, sont considérées comme des manœuvres frauduleuses pour l'application de l'article 374 alinéa 2."
+      ],
+      "mots_cles": [
+        "mauvaise foi",
+        "TVA",
+        "écritures fictives",
+        "factures",
+        "manœuvres frauduleuses"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 374 ter",
+      "titre": "Intérêt de retard en cas de déclaration spontanée d'insuffisance de paiement",
+      "texte": [
+        "En cas de déclaration du contribuable suite à une insuffisance de paiement, avant toute action en réclamation ou demande d'information de l'administration fiscale, le contribuable concerné est redevable d'un intérêt de 0,5% par jour de retard sans excéder 20% de la somme due en principal. Aucune pénalité ne peut être appliquée dans le cas d'espèce."
+      ],
+      "mots_cles": [
+        "intérêt de retard",
+        "déclaration spontanée",
+        "insuffisance de paiement",
+        "0,5 %",
+        "20 %"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 375",
+      "titre": "Sans objet",
+      "texte": [
+        "Sans objet"
+      ],
+      "mots_cles": [
+        "sans objet"
+      ],
+      "statut": "sans objet"
+    },
+    {
+      "article": "Art. 376",
+      "titre": "Revenus encaissés en dehors du Congo",
+      "texte": [
+        "Le contribuable qui, encaissant directement ou indirectement des revenus en dehors du Congo, ne les a pas mentionnés séparément dans la déclaration, conformément aux prescriptions de l'article 76-1 (avant-dernier alinéa) est réputé les avoir omis et il est tenu de verser le supplément d'impôt correspondant ainsi que la majoration de 100 %. Si la dissimulation est établie, le contribuable est, en outre, puni des peines prévues à l'article 521 du présent Code."
+      ],
+      "mots_cles": [
+        "revenus étrangers",
+        "déclaration",
+        "omission",
+        "majoration 100 %",
+        "dissimulation",
+        "sanctions pénales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 377",
+      "titre": "Amende pour défaut de renseignements ou inscription au registre",
+      "texte": [
+        "Les personnes et sociétés soumises aux prescriptions de l'article 397 ci-après et qui ne s'y conforment pas ou fournissent des renseignements inexacts à l'administration sont passibles d'une amende fiscale de 100.000 FCFA pour chaque omission ou inexactitude ou pour chaque chèque ou voyage ou lettre de crédit non inscrit sur le registre prévu à l'avant-dernier alinéa dudit article."
+      ],
+      "mots_cles": [
+        "renseignements inexacts",
+        "registre",
+        "amende",
+        "100.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 377 bis",
+      "titre": "Amende pour omissions ou inexactitudes dans la déclaration de train de vie",
+      "texte": [
+        "Les omissions ou inexactitudes concernant les éléments du train de vie dont la déclaration est prévue par l'article 76 sont punies d'une amende de 10.000 FCFA par élément omis, renseignement incomplet ou inexact."
+      ],
+      "mots_cles": [
+        "train de vie",
+        "déclaration",
+        "amende",
+        "10.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 378",
+      "titre": "Amende pour défaut de déclaration d'existence",
+      "texte": [
+        "Le défaut de déclaration d'existence prévu par les articles 15 bis, 46, 125 et 197 du présent Code est sanctionné d'une amende fiscale de 200.000 FCFA déductible au nom de l'exploitant ou du représentant légal de la société, établissement ou association.",
+        "En matière de TCA, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, les redevables doivent effectuer auprès de la DGID une déclaration d'existence ou de modification dans l'exercice de leur profession.",
+        "En contrepartie de la déclaration d'existence, la DGID délivre un certificat d'enregistrement ouvrant droit à l'assujettissement à la taxe sur le chiffre d'affaires, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, et, mutatis mutandis au redevable un NIU.",
+        "Un redevable ne peut se prévaloir de la qualité d'assujetti à la TCA, centimes additionnels et droits d'accises ou de toute taxe qui en tiendrait lieu qu'après enregistrement et attribution d'un NIU."
+      ],
+      "mots_cles": [
+        "déclaration d'existence",
+        "DGID",
+        "TCA",
+        "droits d'accises",
+        "NIU",
+        "200.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 379",
+      "titre": "Pénalités pour infractions aux obligations documentaires",
+      "texte": [
+        "Le dépôt tardif ou le défaut de déclaration d'existence est sanctionné par la perte du droit à déduction pendant la période de non-déclaration et par une amende de 200.000 FCFA.",
+        "La non-déclaration ou la déclaration tardive des modifications dans les conditions d'exercice de la profession est passible d'une pénalité de 100.000 FCFA par mois de retard.",
+        "Toute infraction aux dispositions des articles 96, 183, 183 bis et 185 du présent Code donne lieu à une majoration de droits de 100 %."
+      ],
+      "mots_cles": [
+        "déclaration d'existence",
+        "retenues à la source",
+        "majoration",
+        "100 %",
+        "200.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 380",
+      "titre": "Amende pour inexactitude dans les renseignements obligatoires",
+      "texte": [
+        "(L.F.2025) Toute infraction aux dispositions des articles 176, 177, 178, 179, 180 et 181 est sanctionnée d'une amende fiscale de 10.000 FCFA encourue autant de fois qu'il est relevé d'omission ou d'inexactitude dans les renseignements qui doivent être fournis en vertu de ces articles.",
+        "En outre, le contribuable qui ne produit pas les déclarations prévues aux dits articles perd le droit de déduire les sommes correspondantes pour l'établissement de ses impositions.",
+        "À défaut de déclarer dans la DAS 2 les sommes visées à l'alinéa 1 du présent article, le contribuable est sanctionné par la perte du droit de déduire lesdites sommes, sans préjudice des autres sanctions prévues par le présent Code.",
+        "Les sociétés visées par les articles 126 ter et suivants du présent Code, qui ne produisent pas les déclarations prévues aux articles 176 à 181 du présent Code ou qui produisent les déclarations annuelles des salaires modèle 2 nulles ou incomplètes, sont sanctionnées par une amende égale à une fois et demie le montant de l'IR forfaitaire mensuel moyen de l'exercice écoulé."
+      ],
+      "mots_cles": [
+        "infractions déclaratives",
+        "amende",
+        "10.000 FCFA",
+        "DAS 2",
+        "IR forfaitaire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 381",
+      "titre": "Pénalité pour défaut ou production tardive de la déclaration prévue à l'article 276",
+      "texte": [
+        "Le défaut ou la production tardive de la déclaration prévue à l'article 276 du présent Code, ou toute omission, réponse inexacte à l'une des rubriques figurant sur les imprimés fournis par l'administration, est sanctionné par une amende fiscale de 25.000 FCFA pour chaque déclaration omise ou comportant des inexactitudes ou omissions."
+      ],
+      "mots_cles": [
+        "déclaration",
+        "production tardive",
+        "omission",
+        "amende",
+        "25.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 381 bis",
+      "titre": "Majoration pour défaut de justification du règlement de la taxe sur les véhicules à moteur",
+      "texte": [
+        "En application des dispositions de l'article 359 ci-dessus, la taxe sera majorée de 100 % pour les possesseurs de véhicules qui ne seront pas en mesure de justifier du règlement de la taxe sur les véhicules à moteur."
+      ],
+      "mots_cles": [
+        "taxe véhicules",
+        "majoration 100 %",
+        "article 359"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 381 ter",
+      "titre": "Pénalités pour infractions aux articles 31 bis et 31 ter du CGI",
+      "texte": [
+        "Toute infraction aux dispositions des articles 31 bis et 31 ter du CGI est sanctionnée respectivement par une pénalité de 100.000 FCFA par mois de retard et par une amende annuelle de 500.000 FCFA."
+      ],
+      "mots_cles": [
+        "pénalité",
+        "31 bis",
+        "31 ter",
+        "100.000 FCFA",
+        "500.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 381 quater",
+      "titre": "Infractions en matière de TCA concernant les biens importés",
+      "texte": [
+        "Les infractions en matière de TCA ou de toute autre taxe qui en tiendrait lieu et concernant les biens importés sont constatées, poursuivies et réprimées selon la réglementation des douanes."
+      ],
+      "mots_cles": [
+        "TCA",
+        "douanes",
+        "biens importés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 381 quinquies",
+      "titre": "Taxation d'office",
+      "texte": [
+        "Dans les conditions des articles 86, 87 et 88, et pour tous les impôts, droits et taxes régis par le présent Code, tout contribuable peut être taxé d'office."
+      ],
+      "mots_cles": [
+        "taxation d'office",
+        "articles 86 à 88"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

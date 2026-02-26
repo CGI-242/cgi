@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 14,
+    "chapitre_titre": "Biens sous séquestre",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 61",
+      "titre": "Application aux biens sous séquestre",
+      "texte": [
+        "Les dispositions des articles 1 à 60 ci-dessus relatives à la curatelle des biens vacants sont applicables mutatis mutandis aux biens placés sous séquestre."
+      ],
+      "mots_cles": [
+        "dispositions",
+        "articles 1 à 60",
+        "curatelle",
+        "biens vacants",
+        "applicables",
+        "mutatis mutandis",
+        "biens sous séquestre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

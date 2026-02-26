@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 4,
+    "chapitre_titre": "Dispositions communes à l'IS et aux IR",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 127",
+      "titre": "Révision des bilans",
+      "texte": [
+        "Les entreprises visées aux articles 14, 15 et 107 du présent code ont la faculté de procéder dans leur bilan à la réévaluation de leurs actifs de certaines dépréciations conformément aux délibérations n° 44/47-14/58 du Grand Conseil de l'AFR et portant sur le n° 50-61 du 30 décembre 1961 et selon les modalités que ces délibérations précisent.",
+        "Les conséquences fiscales de cette réévaluation, soumises aux prescriptions fiscales desdites délibérations précitées."
+      ],
+      "mots_cles": [
+        "révision des bilans",
+        "réévaluation",
+        "actifs",
+        "dépréciations",
+        "délibérations"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Révision des bilans"
+    },
+    {
+      "article": "Art. 127 bis",
+      "titre": "Abrogé",
+      "texte": [],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 1 : Révision des bilans"
+    },
+    {
+      "article": "Art. 127 ter",
+      "titre": "Abrogé",
+      "texte": [],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 1 : Révision des bilans"
+    },
+    {
+      "article": "Art. 127 quater",
+      "titre": "Révision des bilans (abrogé)",
+      "texte": [],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 1 : Révision des bilans"
+    },
+    {
+      "article": "Art. 127 quinquies",
+      "titre": "Exclusion des régimes dérogatoires multiples",
+      "texte": [
+        "À compter du 1er janvier 2021, toute société ou entreprise admise à l'un des régimes dérogatoires autorisés, à savoir, le régime de contrat de partage de production ou le régime des conventions d'établissement, ne peut plus bénéficier d'un autre régime privilégié."
+      ],
+      "mots_cles": [
+        "régimes dérogatoires",
+        "contrat de partage de production",
+        "conventions d'établissement",
+        "régime privilégié"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Révision des bilans"
+    },
+    {
+      "article": "Art. 128",
+      "titre": "Déclaration d'existence",
+      "texte": [
+        "Les contribuables soumis à l'impôt sur les sociétés et à l'impôt sur les bénéfices d'affaires doivent, dans les quinze jours du début de leurs opérations, souscrire une déclaration d'existence auprès de leur résidence fiscale au sein de l'administration fiscale."
+      ],
+      "mots_cles": [
+        "déclaration d'existence",
+        "impôt sur les sociétés",
+        "impôt sur les bénéfices d'affaires",
+        "quinze jours",
+        "résidence fiscale"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Déclaration des contribuables"
+    },
+    {
+      "article": "Art. 129",
+      "titre": "Régime d'imposition et obligations déclaratives",
+      "texte": [
+        "Les contribuables dont le chiffre d'affaires est supérieur à 100 000 000 de francs CFA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
+        "Ces contribuables sont tenus de souscrire une déclaration du montant de leur résultat à l'unité des moyennes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement, dans les conditions et délais prévus par le CGI, si leur chiffre d'affaires ne dépasse pas 2 000 000 000 de francs CFA.",
+        "En l'absence d'une unité des moyennes entreprises dans le département, l'unité territorialement compétente est celle chargée de la gestion des petites entreprises.",
+        "Pour les contribuables dont le chiffre d'affaires est supérieur ou égal à 2 000 000 000 de francs, la déclaration susvisée est déposée à l'unité des grandes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement.",
+        "Les dispositions des alinéas 2, 3 et 4 du présent article ne s'appliquent pas aux sous-traitants pétroliers.",
+        "À l'appui de la déclaration du bénéfice ou déficit, les contribuables sont tenus de faire connaître leur chiffre d'affaires, c'est-à-dire : le montant brut des ventes, des travaux effectivement et définitivement réalisés, des avantages, commissions, remises, prix de location, intérêts, escomptes, agios encaissés et, d'une façon générale, tous les produits définitivement acquis dans l'exercice de la profession. Lorsque la profession comporte plusieurs activités distinctes, la déclaration doit faire état du chiffre d'affaires par nature d'activité."
+      ],
+      "mots_cles": [
+        "chiffre d'affaires",
+        "bénéfice réel",
+        "moyennes entreprises",
+        "grandes entreprises",
+        "100 000 000 FCFA",
+        "2 000 000 000 FCFA",
+        "sous-traitants pétroliers",
+        "déclaration"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Déclaration des contribuables"
+    },
+    {
+      "article": "Art. 130",
+      "titre": "Télé déclaration et télépaiement",
+      "texte": [
+        "Les entreprises soumises au régime du réel doivent, dans le cadre de leurs obligations fiscales, procéder à la télé déclaration et au télépaiement de leurs impôts, droits et taxes dont ils sont redevables, en application des dispositions légales en vigueur.",
+        "Le non-respect de cette disposition est sanctionné par une pénalité de 10% du montant à déclarer.",
+        "Sous peine d'irrecevabilité, les états financiers doivent être attestés et certifiés par un expert-comptable, en l'absence d'un commissaire aux comptes en leur entité.",
+        "Ces derniers doivent justifier d'un certificat de moralité fiscale de l'année en cours ou d'une attestation de non redevance fiscale.",
+        "En cas de conflit sur ces états financiers, l'administration fiscale se réfère à ceux déposés auprès d'elle ou à ceux de la centrale des bilans auprès de la BEAC."
+      ],
+      "mots_cles": [
+        "télé déclaration",
+        "télépaiement",
+        "régime du réel",
+        "pénalité 10%",
+        "états financiers",
+        "expert-comptable",
+        "commissaire aux comptes",
+        "certificat de moralité fiscale",
+        "BEAC"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Déclaration des contribuables"
+    },
+    {
+      "article": "Art. 131",
+      "titre": "Déclaration du résultat fiscal et obligations comptables",
+      "texte": [
+        "1) Les contribuables soumis à l'impôt sur les sociétés et à l'impôt sur les bénéfices d'affaires doivent déclarer leur résultat fiscal annuel à l'appui de trois jeux complets d'états financiers annuels tels que prévus par l'Acte Uniforme OHADA relatif au droit comptable et à l'information financière des entités.",
+        "Les états financiers annuels doivent également être produits sur support électronique.",
+        "2) Le jeu complet d'états financiers annuels comprend :",
+        "– bilan ;",
+        "– compte de résultat ;",
+        "– tableau de flux de trésorerie ;",
+        "– les notes annexes.",
+        "3) La déclaration du résultat fiscal se fait au moyen du modèle prescrit par l'administration fiscale dit « déclaration statistique et fiscale ».",
+        "Tous les déclarants sont tenus de respecter ce modèle.",
+        "4) Ils doivent également indiquer sur leur déclaration le nom et l'adresse du ou des comptables chargés de tenir leur comptabilité ou d'en déterminer ou d'en contrôler les résultats généraux, en précisant si ces techniciens font ou non partie du personnel salarié de leur entreprise.",
+        "5) La déclaration statistique et fiscale comprend :",
+        "– une page de garde normalisée indiquant la désignation de l'entité et tous renseignements d'identification de celle-ci, le système comptable appliqué et les mentions de dépôt des états financiers auprès de l'administration fiscale ;",
+        "– les tableaux d'enrichissement des informations diverses ;",
+        "– le bilan ;",
+        "– le compte de résultat ;",
+        "– le tableau de détermination du résultat fiscal ;",
+        "– le tableau de flux de trésorerie ;",
+        "– les notes annexes.",
+        "6) Le déclarant est tenu de présenter à l'administration fiscale, les documents comptables (livre-journal, grand livre, tous autres livres et documents annexes conformes au plan comptable OHADA), les inventaires précis et détaillés, les copies des lettres, pièces de recettes, dépenses et autres, de nature à justifier l'exactitude des résultats indiqués dans sa déclaration.",
+        "7) Les entités établies en dehors des centres territoriaux doivent, sur demande de l'administration fiscale, transporter leur comptabilité accompagnée de tous les documents annexes, au chef-lieu du District dont elles relèvent aux fins de vérification ou d'examen dans les conditions prévues par le présent article.",
+        "8) Les sociétés doivent remettre à l'administration fiscale, en même temps que la déclaration, une copie de tous les actes constitutifs ou modificatifs intervenus au cours de l'année d'imposition.",
+        "9) Si les documents comptables ou autres, notamment ceux visés au présent article à l'article 92-I, dont la tenue et la production sont exigées, sont rédigés en langue étrangère, une traduction doit être présentée à l'administration fiscale.",
+        "10) Il est fait obligation à toute entité installée au Congo d'y faire tenir sa comptabilité.",
+        "Toute comptabilité tenue à l'étranger ou dans une autre langue n'est pas prise en considération par l'administration fiscale et l'entité concernée se fait sanctionner par la taxation d'office.",
+        "Toute entreprise soumise de préférence sa comptabilité aux agents de l'administration fiscale et qui ne l'aura pas exhibée dans le délai de huit jours sera également taxée d'office.",
+        "11) Lorsque l'organisation comptable repose sur une gestion informatisée, le déclarant est tenu de présenter à toute réquisition de l'administration fiscale tous les supports de sauvegarde (disque dur, disquette, ...) y compris la remise de ces supports aux fins de vérification, conformément à l'article 22 de l'Acte Uniforme OHADA relatif au droit comptable.",
+        "12) L'administration fiscale est en outre fondée à procéder ou à faire procéder à des tests de contrôle sur le matériel utilisé afin de s'assurer de la fiabilité des procédures de traitement de la comptabilité.",
+        "13) Les livres, registres documents ou pièces quelconques sur lesquels peut s'exercer le droit de contrôle de l'administration fiscale doivent être conservés dans leur forme originale pendant dix ans à compter de la date de la dernière opération mentionnée sur lesdits livres ou registres ou de laquelle les documents ou pièces ont été établis, quel que soit le support utilisé."
+      ],
+      "mots_cles": [
+        "résultat fiscal",
+        "états financiers",
+        "OHADA",
+        "bilan",
+        "compte de résultat",
+        "tableau de flux de trésorerie",
+        "déclaration statistique et fiscale",
+        "comptabilité",
+        "taxation d'office",
+        "gestion informatisée"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Déclaration des contribuables"
+    },
+    {
+      "article": "Art. 132",
+      "titre": "Déclaration des revenus des personnes physiques",
+      "texte": [
+        "1) La déclaration des revenus des personnes physiques bénéficiaires uniquement des revenus fonciers, des traitements, salaires, indemnités, émoluments, pensions et rentes viagères, des revenus des capitaux mobiliers ainsi que des plus-values de cession et le paiement éventuel du solde de liquidation des impôts sur les revenus, est effectué au plus tard le 20 mars de l'année qui celle de la disposition desdits revenus auprès de l'unité de la fiscalité des particuliers ou lieu de résidence du contribuable.",
+        "2) Les déclarations spéciales des revenus d'exploitation des personnes physiques relevant des déductions des bénéfices d'affaires présentent les états financiers conformément à l'Acte Uniforme de l'OHADA relatif au droit comptable et à l'information financière, ainsi que le paiement éventuel du solde de liquidation s'opèrent, sont effectuées au plus tard le 20 mars de l'année qui celle de l'acquisition desdits revenus auprès de l'unité des entreprises grandes, moyennes ainsi que petites très petites entreprises compétente.",
+        "3) Les déclarations de revenus des personnes physiques relevant à la fois de l'une et l'autre catégorie visées aux alinéas 1 et 2 ci-dessus, sont effectuées auprès de l'unité de la fiscalité des particuliers au lieu de la résidence du contribuable, au plus tard le 20 mars de l'année qui celle de l'acquisition desdits revenus, après déduction des acomptes de l'impôt sur le bénéfice d'affaires acquittés auprès de l'unité des entreprises compétente.",
+        "Le solde du règlement de l'IRPP résultant des déclarations souscrites dans les conditions du présent alinéa est payé à l'unité de la fiscalité des particuliers.",
+        "Au cas où ce solde se traduit par un crédit d'impôt, le contribuable est autorisé à le faire valoir auprès de l'unité de la fiscalité des particuliers."
+      ],
+      "mots_cles": [
+        "déclaration revenus",
+        "personnes physiques",
+        "revenus fonciers",
+        "traitements",
+        "salaires",
+        "pensions",
+        "rentes viagères",
+        "capitaux mobiliers",
+        "plus-values",
+        "20 mars",
+        "OHADA",
+        "fiscalité des particuliers",
+        "crédit d'impôt",
+        "bénéfice d'affaires"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Déclaration des contribuables"
+    },
+    {
+      "article": "Art. 133",
+      "titre": "Provisions pour reconstitution des gisements",
+      "texte": [
+        "Les entreprises, sociétés et organismes de toute nature qui effectuent la recherche et l'exploitation des substances minérales concessibles au Congo sont autorisés à constituer des provisions pour reconstitution des gisements, dans les conditions fixées aux articles suivants. Ces provisions spéciales sont admises en franchise d'impôt."
+      ],
+      "mots_cles": [
+        "exploitations minières",
+        "provisions",
+        "reconstitution des gisements",
+        "substances minérales",
+        "franchise d'impôt"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 134",
+      "titre": "Provision pour reconstitution des gisements d'hydrocarbures",
+      "sous_section": "§1) Hydrocarbures liquides ou gazeux",
+      "texte": [
+        "1) Le montant de la provision pour reconstitution des gisements d'hydrocarbures liquides ou gazeux ne peut excéder pour chaque exercice :",
+        "– ni 27,50 % du montant des ventes des produits marchands extraits des gisements d'hydrocarbures liquides ou gazeux exploités par l'entreprise et dont les résultats entrent dans le champ d'application de la réglementation de l'IRPP ou de l'impôt sur les sociétés ;",
+        "– ni 50 % du bénéfice net imposable réalisé au cours de l'exercice considéré et provenant de la vente, en l'état ou après transformation, des produits extraits des gisements d'hydrocarbures liquides ou gazeux que l'entreprise possède au Congo.",
+        "2) Pour le calcul prévu au paragraphe 1) a) ci-dessus, le montant des ventes des produits marchands extraits des gisements d'hydrocarbures s'entend du montant net des ventes de pétrole brut, de gaz naturel des produits éventuellement exportés du gaz naturel, déduction faite des droits facturés aux clients et des taxes incorporées dans le prix de vente, notamment les taxes sur le chiffre d'affaires, le droit de sortie et autres droits et taxes grevant les produits vendus, à l'exception des redevances minières.",
+        "Au montant des ventes ainsi déterminé s'ajoutent toutes sommes allouées à l'entreprise à titre de subvention ou de protection, sous quelque forme que ce soit, et calculées en fonction des quantités de produits extraits de ces gisements ainsi que toutes fournitures gratuites de produits marchands lorsque cette fourniture est exigée par l'autorité concédante.",
+        "Le bénéfice net d'exploitation dont il est fait état pour le calcul de la deuxième limite de la provision ne comprend pas la fraction des provisions antérieurement constituées qui, en application des dispositions de l'article 137 ci-après, serait rapportée aux bases de l'impôt.",
+        "Pour la détermination de ce bénéfice net, les déficits d'exploitation sont admis en déduction dans les conditions suivantes :",
+        "en cas de déficit subi au cours d'un exercice au Congo et provenant de la vente, en l'état ou après transformation de produits extraits des gisements d'hydrocarbures que l'entreprise possède au Congo, ce déficit est déduit du bénéfice réalisé au cours de l'exercice suivant et provenant des mêmes opérations. Si ce bénéfice n'est pas suffisant pour que la déduction puisse être intégralement opérée, l'excédent du déficit est reporté successivement sur les exercices suivants jusqu'au cinquième exercice qui suit l'exercice déficitaire."
+      ],
+      "mots_cles": [
+        "hydrocarbures",
+        "provision",
+        "gisements",
+        "27,50 %",
+        "50 %",
+        "pétrole brut",
+        "gaz naturel",
+        "bénéfice net imposable",
+        "déficit",
+        "report"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 135",
+      "titre": "Provision pour reconstitution des gisements et insuffisance du bénéfice",
+      "texte": [
+        "La provision pour reconstitution des gisements est inscrite au passif du bilan de l'entreprise sous le rubrique spéciale dont le montant des dotations de chaque exercice."
+      ],
+      "mots_cles": [
+        "provision",
+        "bilan",
+        "passif",
+        "dotations"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 136",
+      "titre": "Provision constituée à la clôture d'exercice avant expiration du délai de cinq ans",
+      "texte": [
+        "La provision constituée à la clôture d'un exercice doit, avant l'expiration d'un délai de 5 ans à partir de la clôture de cet exercice, être utilisée :",
+        "a) soit à tous travaux ou immobilisations nécessaires aux recherches d'hydrocarbures entreprises au Congo à l'exclusion des travaux ou immobilisations portant sur un gisement reconnu, ayant donné lieu à attribution d'un titre d'exploitation ;",
+        "b) soit à l'acquisition de participations dans les sociétés et organismes désignés par arrêté et ayant pour objet d'effectuer la recherche et l'exploitation de gisements d'hydrocarbures au Congo.",
+        "Le terme « participation » s'entend, au sens de l'alinéa qui précède, des actions ou des parts d'intérêts ainsi que des sommes avancées aux sociétés et organismes ci-dessus visés et effectivement destinées à être investies, par ces sociétés et organismes, dans des travaux de recherches d'hydrocarbures."
+      ],
+      "mots_cles": [
+        "provision",
+        "utilisation",
+        "délai 5 ans",
+        "travaux de recherche",
+        "immobilisations",
+        "participation"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 137",
+      "titre": "Exonération définitive et imposition complémentaire",
+      "texte": [
+        "Si la provision est utilisée dans les délais et conditions prévus à l'article 136 précédent, l'exonération accordée est définitivement acquise à l'entreprise et la provision peut être virée à un compte de réserve quelconque au passif du bilan. Les sommes ainsi utilisées aux travaux de recherches ou en participations peuvent, dans les conditions fixées par le présent Code, être comptabilisées en dépenses annuelles dans le cas où elles ont pour objet d'amortissement ou d'exploitation.",
+        "À défaut de réemploi dans les délais ci-dessus, une imposition complémentaire, égale au montant de l'exonération accordée, est établie au titre de l'année suivant celle de l'expiration de ce délai."
+      ],
+      "mots_cles": [
+        "exonération définitive",
+        "provision",
+        "réserve",
+        "remploi",
+        "imposition complémentaire"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 138",
+      "titre": "Cession, cessation ou décès",
+      "texte": [
+        "En cas de cession ou de cessation d'entreprise ou de décès de l'exploitant, la provision pour reconstitution de gisement figurant au dernier bilan est considérée comme immédiatement imposable dans les conditions fixées par les articles 98 et 101 du présent Code.",
+        "Toutefois, l'exonération ne fait l'objet d'aucune reprise lorsque l'exploitation du fonds d'industrie est continuée dans les conditions prévues par les articles 22 et 111 du présent Code.",
+        "L'application des dispositions de l'alinéa précédent est subordonnée à la condition que le délai d'utilisation de la provision ne soit pas expiré à la date de la cession et à l'obligation pour les nouveaux exploitants, société absorbante ou nouvelle, ou pour la société bénéficiaire de l'apport, d'inscrire immédiatement au passif la provision figurant dans les écritures du précédent exploitant, sociétés fusionnées ou de la société apporteuse et qui était affectée aux éléments transférés et d'utiliser avant l'expiration du délai imparti à l'ancien exploitant dans les conditions prévues à l'article 136 ci-dessus et sous les sanctions fixées à l'article 137."
+      ],
+      "mots_cles": [
+        "cession",
+        "cessation",
+        "décès",
+        "provision",
+        "imposition immédiate",
+        "continuation d'exploitation",
+        "fusion",
+        "apport"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 139",
+      "titre": "Obligations déclaratives",
+      "texte": [
+        "Les entreprises doivent fournir au service d'assiette, à l'appui de la déclaration des résultats de chaque exercice, des renseignements utiles sur les éléments de calcul de la provision pour reconstitution des gisements ainsi que sur les conditions de son utilisation.",
+        "Elles doivent indiquer notamment, pour l'exercice considéré :",
+        "- le montant net, déterminé comme il est dit à l'article 134, des ventes des produits marchands extraits des gisements exploités par l'entreprise ;",
+        "- le montant du bénéfice net d'exploitation visé aux articles 133 et 134 ci-dessus ;",
+        "- et, le cas échéant, le montant des sommes utilisées dans les conditions prévues à l'article 136."
+      ],
+      "mots_cles": [
+        "obligations déclaratives",
+        "service d'assiette",
+        "provision",
+        "renseignements",
+        "ventes",
+        "bénéfice net"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 1 : Hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 140",
+      "titre": "Substances minérales autres que les hydrocarbures",
+      "texte": [
+        "Les dispositions des articles 133 et suivants sont également applicables, sous les réserves ci-après, aux substances minérales concessibles autres que les hydrocarbures liquides ou gazeux :",
+        "1) le montant de la provision pour reconstitution de gisements de substances minérales concessibles autres que les hydrocarbures liquides ou gazeux ne peut excéder 15 % au lieu de 27,50 % (limite fixée par l'article 134, paragraphe 1-a) ;",
+        "2) les produits extraits entrant en compte pour le calcul du montant des ventes explicité à l'article 134, paragraphe 2, s'entendent de tous minerais marchands ou autres produits vendus à l'état de mattes, speiss, métaux ou alliages élaborés à partir des minerais extraits ;",
+        "3) la provision pour reconstitution de gisements pour substances minérales concessibles autres que les hydrocarbures liquides ou gazeux pourra également être utilisée en travaux ou immobilisations nécessaires aux recherches sur des parties non encore reconnues sur gisements existants à l'intérieur des titres d'exploitation, à la mise en exploitation des gisements de ces substances et à l'amélioration de la récupération, à partir des minerais bruts, des minerais marchands."
+      ],
+      "mots_cles": [
+        "substances minérales",
+        "provision",
+        "15 %",
+        "minerais",
+        "mattes",
+        "speiss",
+        "métaux",
+        "alliages"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 2 : Substances minérales concessibles autres que les hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 140 bis",
+      "titre": "Non-cumul des avantages fiscaux entre sections",
+      "texte": [
+        "Le bénéfice des dispositions de la présente section ne peut en aucun cas se cumuler, pour un même objet, avec les avantages prévus à la section 2 du présent chapitre."
+      ],
+      "mots_cles": [
+        "non-cumul",
+        "avantages fiscaux",
+        "sections"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Régime spécial des exploitations minières - Sous-section 2 : Substances minérales concessibles autres que les hydrocarbures liquides ou gazeux"
+    },
+    {
+      "article": "Art. 140 A",
+      "titre": "Déclaration des biens mobiliers hors du Congo",
+      "texte": [
+        "Toutes personnes domiciliées ou résidant habituellement au Congo, conservant hors du Congo des biens mobiliers, doivent fournir obligatoirement dans le délai prévu à l'Article 80, à l'Inspection Divisionnaire des Contributions Directes et Indirectes, une déclaration détaillée indiquant la nature, la valeur de ces biens et le revenu y attaché.",
+        "La déclaration, tant des différents éléments d'actif que du revenu, est faite sous la foi du serment."
+      ],
+      "mots_cles": [
+        "biens mobiliers",
+        "hors du Congo",
+        "déclaration obligatoire",
+        "Inspection Divisionnaire",
+        "serment"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Vérification des déclarations"
+    },
+    {
+      "article": "Art. 140 B",
+      "titre": "Vérification des déclarations et demandes de justifications",
+      "texte": [
+        "L'administration fiscale vérifie les déclarations. Elle peut demander au contribuable :",
+        "1) des éclaircissements ;",
+        "2) des justifications au sujet de sa situation et de ses charges de famille ainsi qu'au sujet des charges retranchées du revenu ;",
+        "3) des justifications lorsqu'à réunir des éléments permettant d'établir que le contribuable peut avoir des revenus plus importants que ceux qui font l'objet de sa déclaration, en particulier, si le contribuable allègue la possession de bons ou de titres dont les intérêts ou arrérages sont exclus du décompte des revenus imposables.",
+        "Elle peut exiger la preuve de la possession des ces bons ou titres et celle de la date à laquelle ils sont entrés dans le patrimoine de l'intéressé."
+      ],
+      "mots_cles": [
+        "vérification",
+        "éclaircissements",
+        "justifications",
+        "charges de famille",
+        "revenus",
+        "bons",
+        "titres",
+        "patrimoine"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Vérification des déclarations"
+    },
+    {
+      "article": "Art. 140 C",
+      "titre": "Modalités des éclaircissements et justifications",
+      "texte": [
+        "Les éclaircissements et justifications visés à l'Article précédent peuvent être demandés verbalement ou par écrit.",
+        "Lorsque le contribuable refuse de répondre à une demande verbale ou lorsque la réponse faite à cette demande est considérée par l'agent taxateur comme équivalente à un refus de réponse sur tout ou partie des points à éclaircir, elle doit être renouvelée par écrit.",
+        "Toutes les demandes écrites doivent indiquer explicitement les points sur lesquels l'agent taxateur juge nécessaire d'obtenir des éclaircissements ou des justifications ainsi que le délai assigné au contribuable pour fournir sa réponse."
+      ],
+      "mots_cles": [
+        "demande verbale",
+        "demande écrite",
+        "refus de réponse",
+        "délai",
+        "agent taxateur"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Vérification des déclarations"
+    },
+    {
+      "article": "Art. 140 D",
+      "titre": "Droit de rectification des déclarations",
+      "texte": [
+        "L'administration a le droit de rectifier les déclarations, mais doit au préalable adresser au contribuable l'indication des éléments qu'elle se propose de retenir comme base d'imposition et fixer le délai maximum qui lui est accordé pour se faire entendre ou faire parvenir son acceptation ou ses observations."
+      ],
+      "mots_cles": [
+        "droit de rectification",
+        "base d'imposition",
+        "délai",
+        "observations",
+        "acceptation"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Vérification des déclarations"
+    },
+    {
+      "article": "Art. 140 E",
+      "titre": "Vérification des bénéfices d'affaires",
+      "texte": [
+        "Les déclarations spéciales aux bénéfices d'affaires sont vérifiées dans les conditions prévues pour l'impôt sur les sociétés."
+      ],
+      "mots_cles": [
+        "bénéfices d'affaires",
+        "vérification",
+        "impôt sur les sociétés"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Vérification des déclarations"
+    },
+    {
+      "article": "Art. 140 F",
+      "titre": "Taxation d'office",
+      "texte": [
+        "Est taxé d'office, tout contribuable :",
+        "1) qui n'a pas souscrit sa déclaration après mise en demeure, d'un délai de huit jours ou qui s'est opposé au contrôle fiscal ;",
+        "2) qui s'est abstenu de répondre aux demandes d'éclaircissements ou de justifications de l'administration fiscale ;",
+        "3) dont le revenu déclaré, défalcation faite des charges déductibles, est inférieur au total des dépenses personnelles, ostensibles et notoires, augmentées de ses revenus en nature.",
+        "En ce qui concerne ces contribuables, la base d'imposition est, à défaut d'éléments certains permettant de leur attribuer un revenu supérieur, fixée à une somme égale au montant des dépenses et des revenus en nature, diminués du montant des revenus affranchis de l'impôt que le contribuable puisse faire échec à cette évaluation en faisant valoir qu'il aurait utilisé des capitaux ou réalisé des gains en capital ou qu'il recevait périodiquement ou non des libéralités d'un tiers ou que certains de ses revenus devaient normalement faire l'objet d'une évaluation forfaitaire.",
+        "Le contribuable qui ne fournit pas, à l'appui de ses déclarations, les documents exigés, peut faire l'objet de rectification d'office. Il en est de même lorsque l'intéressé ne peut produire, sur réquisition de l'Administration, les livres, pièces, et documents complets permettant de déterminer avec précision les résultats de l'entreprise ou de la profession.",
+        "Lorsque la déclaration a été rectifiée dans les conditions prévues à l'alinéa précédent, le contribuable ne peut obtenir une réduction par voie contentieuse qu'en apportant la preuve du chiffre exact de ses bénéfices.",
+        "L'agent taxateur notifie, préalablement à l'établissement du titre de perception, la base de taxation au contribuable dans les conditions fixées par le présent code."
+      ],
+      "mots_cles": [
+        "taxation d'office",
+        "mise en demeure",
+        "huit jours",
+        "contrôle fiscal",
+        "éclaircissements",
+        "justifications",
+        "dépenses personnelles",
+        "base d'imposition",
+        "rectification d'office",
+        "agent taxateur",
+        "titre de perception"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 5 : Taxation d'office"
+    },
+    {
+      "article": "Art. 140 G",
+      "titre": "Recours du contribuable taxé d'office",
+      "texte": [
+        "Le contribuable taxé d'office ne peut obtenir, par la voie contentieuse, la décharge ou la réduction de la cotisation qui lui a été assignée qu'en apportant toutes justifications de nature à faire la preuve du chiffre exact de son revenu. Il supporte les frais de l'expertise, s'il y a lieu.",
+        "De même, le montant d'un impôt payé à la suite d'une taxation d'office ne peut être considéré comme charge déductible du bénéfice imposable de l'exercice en cause."
+      ],
+      "mots_cles": [
+        "recours contentieux",
+        "décharge",
+        "réduction",
+        "cotisation",
+        "charge de la preuve",
+        "frais d'expertise",
+        "impôt non déductible"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 5 : Taxation d'office"
+    },
+    {
+      "article": "Art. 140 H",
+      "titre": "Cession, cessation ou décès – Imposition immédiate des bénéfices",
+      "texte": [
+        "1) Dans le cas de cession, de cessation ou décès, en totalité ou en partie, dû à raison des bénéfices réalisés dans cette entreprise et qui n'ont pas encore été imposés est immédiatement établi.",
+        "Les contribuables doivent, dans un délai de quinze jours déterminés comme il est indiqué ci-après, aviser l'Inspecteur Divisionnaire de la cession ou de la cessation et lui faire connaître la date à laquelle elle a été ou sera effective ainsi que, s'il y a lieu, les noms, prénoms et adresse du cessionnaire.",
+        "Le délai de quinze jours commence à courir :",
+        "- lorsqu'il s'agit de la vente ou de la cession d'un fonds de commerce, du jour où la vente a été publiée dans un journal d'annonces légales ;",
+        "- lorsqu'il s'agit de la vente ou de la cession d'autres entreprises, du jour où l'acquéreur ou le cessionnaire a pris effectivement la direction des exploitations ;",
+        "- lorsqu'il s'agit de la cessation d'entreprise, du jour de la fermeture définitive des établissements.",
+        "2) Pour les contribuables soumis au régime du forfait, le bénéfice imposable de l'année en cours est fixé au montant du bénéfice forfaitaire retenu pour l'année précédente et ajusté au prorata du temps écoulé du 1er janvier jusqu'au jour où la cession ou la cessation est devenue effective, tout mois commencé étant compté pour un mois entier. Toutefois, s'il n'a pas encore été fixé de forfait, le bénéfice imposable est évalué suivant la procédure instituée par l'article 97 du présent code d'après les résultats obtenus depuis le 1er janvier.",
+        "En cas de cession ou de cessation d'entreprise dans un délai de cinq ans après la création ou l'achat de celle-ci, le bénéfice imposable est augmenté du montant des plus-values provenant de la cession des stocks et des éléments de l'actif immobilisé, dans les conditions prévues de l'article 16 du présent code.",
+        "Pour l'application de cette disposition, les redevables de cette catégorie sont tenus de faire parvenir à l'Inspecteur Divisionnaire des Contributions Directes et Indirectes, dans le délai de quinze jours prévus au paragraphe 1, outre les renseignements visés audit paragraphe, une déclaration indiquant le montant net des plus-values visées à l'alinéa précédent et de produire à l'appui de cette déclaration, toutes justifications utiles. Ils peuvent, dans le même délai, opter pour l'imposition d'après le bénéfice réel en ce qui concerne la période écoulée entre le 1er janvier et la date de la cession ou de la cessation de l'entreprise.",
+        "Dans tous les cas, les contribuables assujettis au forfait peuvent, dans le délai prévu au paragraphe 1 ci-dessus, dénoncer en ce qui concerne l'imposition des bénéfices réalisés au cours de l'année de la cession ou de la cessation, le bénéfice forfaitaire retenu pour l'année précédente, et recourir au conformément du deuxième alinéa du présent paragraphe. Le même droit de dénonciation peut être exercé par l'Inspecteur divisionnaire des contributions directes et indirectes jusqu'à la fin du mois suivant l'expiration dudit délai.",
+        "3) Les contribuables non assujettis au forfait sont tenus de faire parvenir à l'Inspecteur divisionnaire des contributions directes et indirectes, dans le délai de quinze jours prévu au paragraphe 1, outre les renseignements visés audit paragraphe, la déclaration de leur bénéfice réel accompagnée de leur compte de résultat.",
+        "Pour la détermination du bénéfice, il est fait application des dispositions des articles 8 et suivants comme en matière d'IS.",
+        "Si les contribuables imposés d'après leur bénéfice réel ne produisent pas les déclarations ou renseignements visés au paragraphe 1 du présent Article et au premier alinéa du présent paragraphe ou si, invités à fournir à l'appui de la déclaration de leur bénéfice réel les justifications nécessaires, ils s'abstiennent de les donner dans les quinze jours suivant la réception de l'avis qui leur est adressé à cet effet, les bases d'imposition sont arrêtées d'office et il est fait application de la majoration des droits prévue à l'Article 372.",
+        "4) À l'exception des deuxièmes et troisièmes alinéas du paragraphe 2, les dispositions du présent Article sont applicables dans le cas de décès de l'exploitant. Dans ce cas les ayants droit du défunt doivent fournir les renseignements nécessaires pour l'établissement de l'impôt dans les six mois de la date du décès."
+      ],
+      "mots_cles": [
+        "cession",
+        "cessation",
+        "décès",
+        "imposition immédiate",
+        "bénéfices",
+        "délai quinze jours",
+        "fonds de commerce",
+        "journal d'annonces légales",
+        "forfait",
+        "bénéfice forfaitaire",
+        "prorata temporis",
+        "plus-values",
+        "actif immobilisé",
+        "bénéfice réel",
+        "compte de résultat",
+        "taxation d'office",
+        "ayants droit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Cession, cessation ou décès"
+    },
+    {
+      "article": "Art. 140 I",
+      "titre": "Cessation d'exercice d'une profession non commerciale",
+      "texte": [
+        "Dans le cas de cessation de l'exercice d'une profession non commerciale, l'impôt sur les bénéfices d'affaires dû en raison des bénéfices provenant de l'exercice de cette profession, y compris ceux qui proviennent de créances acquises et non encore recouvrées, et qui n'ont pas encore été imposés, est immédiatement établi.",
+        "Les contribuables doivent, dans un délai de 15 jours de la cessation effective, aviser l'inspecteur divisionnaire territorialement compétent, de la cessation et de leur faire connaître la date à laquelle elle a été effective ainsi que, s'il y a lieu, les nom, prénoms ou adresse de leur successeur.",
+        "En cas de décès du contribuable, les renseignements nécessaires pour l'établissement de l'impôt sont produits par les ayants droit du défunt dans les six mois de la date du décès."
+      ],
+      "mots_cles": [
+        "cessation",
+        "profession non commerciale",
+        "bénéfices d'affaires",
+        "créances acquises",
+        "créances non recouvrées",
+        "délai 15 jours",
+        "inspecteur divisionnaire",
+        "successeur",
+        "décès",
+        "ayants droit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Cession, cessation ou décès"
+    },
+    {
+      "article": "Art. 140 J",
+      "titre": "Impositions mises à charge en cas de cession, cessation ou décès",
+      "texte": [
+        "Les impositions mises à la charge d'un contribuable en cas de cession, de cessation ou décès, viennent, le cas échéant, en déduction du montant des acomptes de l'impôt sur les bénéfices d'affaires ultérieurement établi. Au cours de l'année de la cession, de la cessation ou du décès."
+      ],
+      "mots_cles": [
+        "déduction",
+        "impositions",
+        "cession",
+        "cessation",
+        "décès",
+        "IRPP",
+        "bénéfices",
+        "revenus"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Cession, cessation ou décès"
+    },
+    {
+      "article": "Art. 140 K",
+      "titre": "Imposition en cas de décès du contribuable",
+      "texte": [
+        "1) Dans le cas du décès du contribuable, l'impôt sur les bénéfices d'affaires est établi à raison des revenus dont ce dernier a disposé pendant l'année de son décès et des bénéfices qu'il a réalisés depuis la fin du dernier exercice taxé.",
+        "Dans le cas des revenus des capitaux mobiliers, l'imposition porte sur les revenus dont la distribution ou le versement résulte du décès du contribuable s'ils n'ont pas été précédemment imposés et sur ceux qu'il a acquis sans en avoir la disposition antérieurement à son décès.",
+        "Toutefois, les revenus dont la disposition résulte du décès du contribuable ou que ce dernier a acquis sans en avoir la disposition avant son décès, font l'objet d'une imposition distincte lorsqu'ils ne devaient échoir normalement qu'au cours d'une année postérieure à celle du décès.",
+        "Pour l'établissement de l'impôt sur le revenu dû en vertu des dispositions qui précèdent, sont admis en déduction, les impôts visés au présent code qui ont été acquittés au cours de l'année de l'imposition ou qui se rapportent à des déclarations souscrites, par le défunt dans les délais légaux, soit par les héritiers du chef du défunt à l'occasion du décès.",
+        "2) La déclaration des revenus imposables en vertu du présent article est produite par les ayants droit du défunt dans les six mois de la date du décès. Elle est soumise aux règles et sanctions prévues à l'égard des déclarations annuelles. Les demandes d'éclaircissements ou de justifications ainsi que les notifications peuvent être valablement adressées à l'un quelconque des ayants droit ou des signataires de la déclaration de succession."
+      ],
+      "mots_cles": [
+        "décès",
+        "contribuable",
+        "bénéfices d'affaires",
+        "revenus",
+        "capitaux mobiliers",
+        "imposition distincte",
+        "déduction impôts",
+        "ayants droit",
+        "six mois",
+        "déclaration de succession",
+        "héritiers"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Cession, cessation ou décès"
+    }
+  ]
+}

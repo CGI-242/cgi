@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "document": "Taxe sur les billets d'avion en vols internationaux",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC4-AVION",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.12. Taxe sur les billets d'avion en vols internationaux",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Art.1.- Il est institué en République du Congo une taxe sur les billets d'avion en vols internationaux destinée à la contribution de solidarité pour le financement du développement notamment en matière de santé."
+      ],
+      "mots_cles": [
+        "taxe billets avion",
+        "vols internationaux",
+        "contribution solidarité",
+        "financement développement",
+        "santé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Champ d'application",
+      "texte": [
+        "Art.2.- La taxe sur les billets d'avion, encore appelée contribution de solidarité sur les billets d'avion en vols internationaux, frappe les billets d'avions en vols internationaux des passagers."
+      ],
+      "mots_cles": [
+        "champ application",
+        "contribution solidarité",
+        "billets avion",
+        "passagers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Personnes redevables",
+      "texte": [
+        "Art.3.- Est redevable de la taxe sur les billets d'avion en vols internationaux, le transporteur qui embarque le passager sur le territoire Congolais, pour autant que le passager ne soit pas en correspondance.",
+        "En cas de vol loué ou affrété, le redevable de la taxe est le transporteur aérien dont le numéro est utilisé aux fins du contrôle de la circulation aérienne par personne embarquée.",
+        "En cas de vol assuré par un aéronef personnel, le redevable de la taxe est le propriétaire de l'aéronef par personne embarquée."
+      ],
+      "mots_cles": [
+        "redevables",
+        "transporteur aérien",
+        "embarquement Congo",
+        "vol affrété",
+        "aéronef personnel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "Art.4.- Les taux de la taxe sur les billets d'avion en vols internationaux sont fixés comme suit :",
+        "- 6.000 FCFA en classe première et affaires ;",
+        "- 3.000 FCFA en classe économique."
+      ],
+      "mots_cles": [
+        "taux taxe",
+        "classe première affaires 6 000 F",
+        "classe économique 3 000 F"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Modalités de recouvrement",
+      "texte": [
+        "Art.5.- La taxe collectée sous forme de droit de timbre fiscal, est recouvrée par le receveur de l'enregistrement, des domaines et du timbre et reversée dans le compte « contribution de solidarité » du trésor ouvert à la Banque centrale."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "droit timbre fiscal",
+        "receveur enregistrement domaines",
+        "compte contribution solidarité",
+        "Banque centrale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Modalités d'application",
+      "texte": [
+        "Art.6.- Les modalités d'application des présentes dispositions sont déterminées par voie réglementaire."
+      ],
+      "mots_cles": [
+        "modalités application",
+        "voie réglementaire"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

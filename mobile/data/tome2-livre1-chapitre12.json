@@ -1,0 +1,1554 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 12,
+    "chapitre_titre": "Enregistrement en débit, enregistrement gratis et exemptions",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 268",
+      "titre": "Énumération des actes bénéficiant de régimes spéciaux",
+      "texte": [
+        "En dehors de ceux qui pourraient l'être par des règlements spéciaux, sont visés pour enregistrement en débit, enregistrés gratis ou exempts d'enregistrement, les actes ci-après énumérés :"
+      ],
+      "mots_cles": [
+        "règlements spéciaux",
+        "enregistrement en débit",
+        "enregistrés gratis",
+        "exempts d'enregistrement",
+        "actes"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 269",
+      "titre": "Rectification du casier judiciaire",
+      "texte": [
+        "Les actes, jugements et arrêts relatifs à la procédure organisée par la loi pour la rectification des mentions portées au casier judiciaire, sont visés pour enregistrement en débit."
+      ],
+      "mots_cles": [
+        "actes",
+        "jugements",
+        "arrêts",
+        "procédure",
+        "rectification",
+        "casier judiciaire",
+        "enregistrement en débit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 270",
+      "titre": "Actes relatifs à la Cour Suprême",
+      "texte": [
+        "Les actes ci-après concernant la Cour Suprême sont visés pour enregistrement en débit :",
+        "1° les recours pour excès de pouvoir contre les actes des diverses autorités administratives ;",
+        "2° les requêtes contre la concession et le refus de pension ;",
+        "3° les requêtes dirigées en matière contentieuse administrative statuant sur les litiges relatifs à la nomination, à l'avancement, à la discipline, aux émoluments, aux pensions des fonctionnaires, et généralement de tous les litiges d'ordre individuel concernant les fonctionnaires ;",
+        "4° les recours pour excès de pouvoirs ou violation de la loi formés en matière de pensions."
+      ],
+      "mots_cles": [
+        "actes",
+        "Cour Suprême",
+        "enregistrement en débit",
+        "recours",
+        "excès de pouvoir",
+        "autorités administratives",
+        "requêtes",
+        "pension",
+        "contentieuse administrative",
+        "nomination",
+        "avancement",
+        "discipline",
+        "émoluments",
+        "fonctionnaires",
+        "litiges",
+        "violation de la loi"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 271",
+      "titre": "Avance des frais en matière de faillite",
+      "texte": [
+        "Lorsque les deniers appartenant à la faillite ne peuvent suivre immédiatement aux frais du jugement de déclaration de faillite, d'affichage et d'insertion de ce jugement dans les journaux, d'apposition des scellés, d'arrestation et d'incarcération du failli, l'avance de ces frais est faite sur l'ordonnance du juge commissaire, par le Trésor Public qui en est remboursé par privilège sur les premiers recouvrements, sans préjudice du privilège du propriétaire.",
+        "Cette disposition est applicable à la procédure d'appel du jugement de faillite. Dans ce cas, les actes sont à enregistrer en débit."
+      ],
+      "mots_cles": [
+        "faillite",
+        "deniers",
+        "frais",
+        "jugement",
+        "déclaration de faillite",
+        "affichage",
+        "insertion",
+        "journaux",
+        "scellés",
+        "arrestation",
+        "incarcération",
+        "failli",
+        "juge commissaire",
+        "Trésor Public",
+        "privilège",
+        "recouvrements",
+        "propriétaire",
+        "appel",
+        "enregistrement en débit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 272",
+      "titre": "Jugements et arrêts en matière pénale",
+      "texte": [
+        "Les jugements et arrêts en matière de simple police, de police correctionnelle ou criminelle sont visés pour enregistrement en débit."
+      ],
+      "mots_cles": [
+        "jugements",
+        "arrêts",
+        "simple police",
+        "police correctionnelle",
+        "criminelle",
+        "enregistrement en débit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 273",
+      "titre": "Révision des procès criminels et correctionnels",
+      "texte": [
+        "Les frais des instances en révision des procès criminels et correctionnels faits postérieurement à l'arrêt de recevabilité sont avancés par le Trésor.",
+        "Dans ce cas, les actes sont à enregistrer en débit."
+      ],
+      "mots_cles": [
+        "frais",
+        "instances",
+        "révision",
+        "procès criminels",
+        "procès correctionnels",
+        "arrêt de recevabilité",
+        "Trésor",
+        "enregistrement en débit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 274",
+      "titre": "Actes à la requête du Ministère public",
+      "texte": [
+        "Les actes faits à la requête du Ministère public, en matière de simple police correctionnelle ou criminelle ainsi que les déclarations d'appel des jugements et arrêts rendus en ces mêmes matières sont visés pour enregistrement en débit."
+      ],
+      "mots_cles": [
+        "actes",
+        "requête",
+        "Ministère public",
+        "simple police",
+        "correctionnelle",
+        "criminelle",
+        "déclarations d'appel",
+        "jugements",
+        "arrêts",
+        "enregistrement en débit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 275",
+      "titre": "Régime de l'assistance judiciaire",
+      "texte": [
+        "1) Ainsi qu'il est dit à l'arrêté du 14 mars 1949 organisant l'assistance judiciaire, l'assisté est dispensé provisoirement du paiement des sommes dues au Trésor pour droit d'enregistrement et de greffe, ainsi que de toute consignation d'amende.",
+        "2) Il est aussi dispensé provisoirement du paiement des sommes dues aux Greffiers et aux Officiers ministériels pour droits, émoluments et honoraires.",
+        "3) Les actes de la procédure faite à la requête de l'assisté sont visés pour enregistrement en débit.",
+        "Toutefois, les jugements et arrêts sont enregistrés en débit.",
+        "4) Sont pareillement enregistrés en débit, les actes et titres produits par l'assisté pour justifier de ses droits et qualités.",
+        "5) Si les actes et titres produits par l'assisté pour justifier de ses droits et qualités sont du nombre de ceux dont la réglementation fiscale ordonne l'enregistrement dans un délai déterminé, les droits d'enregistrement deviennent exigibles immédiatement après le jugement définitif.",
+        "6) Si ces actes et titres ne sont pas du nombre de ceux dont la réglementation fiscale ordonne l'enregistrement dans un délai déterminé, les droits d'enregistrement de ces actes et titres sont assimilés à ceux des actes de la procédure.",
+        "7) L'enregistrement en débit ou le visa spécial en tenant lieu doit mentionner la date de la décision qui admet au bénéfice de l'assistance judiciaire ; il n'a d'effet quant aux actes et titres produits par l'assisté que pour le procès dans lequel la production a eu lieu.",
+        "8) Les frais de transport de juges, des Officiers ministériels et des Experts, les honoraires de ces derniers, les taxes des témoins dont l'audition a été autorisée par le Tribunal ou le juge, et en général tous les frais dus à des tiers non officiers ministériels sont avancés par le Trésor sur exécutoire délivré par le président de chaque juridiction.",
+        "Le paragraphe 5 du présent article s'applique au recouvrement de ces avances."
+      ],
+      "mots_cles": [
+        "assistance judiciaire",
+        "arrêté 14 mars 1949",
+        "assisté",
+        "dispense",
+        "paiement",
+        "Trésor",
+        "droit d'enregistrement",
+        "droit de greffe",
+        "consignation d'amende",
+        "Greffiers",
+        "Officiers ministériels",
+        "émoluments",
+        "honoraires",
+        "actes de procédure",
+        "enregistrement en débit",
+        "jugements",
+        "arrêts",
+        "actes et titres",
+        "droits et qualités",
+        "réglementation fiscale",
+        "délai déterminé",
+        "jugement définitif",
+        "visa spécial",
+        "frais de transport",
+        "juges",
+        "Experts",
+        "taxes des témoins",
+        "exécutoire",
+        "recouvrement des avances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 276",
+      "titre": "Condamnation aux dépens de l'adversaire de l'assisté",
+      "texte": [
+        "En cas de condamnation aux dépens prononcée contre l'adversaire de l'assisté, la taxe comprend tous les droits, frais de toute nature, honoraires et émoluments auxquels l'assisté aurait été tenu s'il n'avait pas eu l'assistance judiciaire."
+      ],
+      "mots_cles": [
+        "condamnation",
+        "dépens",
+        "adversaire",
+        "assisté",
+        "taxe",
+        "droits",
+        "frais",
+        "honoraires",
+        "émoluments",
+        "assistance judiciaire"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 277",
+      "titre": "Recouvrement des frais d'assistance judiciaire",
+      "texte": [
+        "1) Dans les cas prévus par l'article précédent, la condamnation est prononcée et l'exécutoire délivré au nom du Premier Ministre.",
+        "Le recouvrement en sera poursuivi comme en matière d'enregistrement par le service de l'enregistrement, pour le compte du Budget, sauf le droit pour l'assisté de concourir aux actes de poursuite conjointement avec ledit service, lorsque cela est utile pour exécuter les décisions rendues et en conserver les effets.",
+        "2) Les frais faits sous le bénéfice de l'assistance judiciaire, des procédures d'exécution et des instances relatives à cette exécution entre l'assisté et la partie poursuivie qui auraient été discontinues ou suspendues pendant plus d'une année, sont répétés par la partie poursuivie sauf justifications ou décisions contraires.",
+        "L'exécutoire est délivré conformément au paragraphe 1 ci-précédent.",
+        "3) Il est délivré un exécutoire séparé au nom du Premier Ministre pour les droits qui, ne devant pas être compris dans l'exécutoire délivré contre la partie adverse, restent dus par l'assisté au Trésor, conformément au cinquième paragraphe de l'article 275.",
+        "4) Le service de l'enregistrement fait immédiatement aux divers ayants droit sur les crédits du Budget.",
+        "Les sommes à répartir entre les Officiers ministériels d'une part, pour les honoraires, et le Budget de l'autre pour les droits d'enregistrement et de timbre dont la perception a été différée, seront mandatées au profit des ayants droit sur les crédits du Budget.",
+        "5) La créance du Trésor, en premier lieu pour les avances qu'il a faites, en second lieu pour tous les droits de greffe, d'enregistrement et de timbre, a la préférence sur celle des autres ayants droit."
+      ],
+      "mots_cles": [
+        "condamnation",
+        "exécutoire",
+        "Premier Ministre",
+        "recouvrement",
+        "service de l'enregistrement",
+        "Budget",
+        "assisté",
+        "actes de poursuite",
+        "frais",
+        "assistance judiciaire",
+        "procédures d'exécution",
+        "instances",
+        "partie poursuivie",
+        "Trésor",
+        "article 275",
+        "ayants droit",
+        "Officiers ministériels",
+        "honoraires",
+        "droits d'enregistrement",
+        "droits de timbre",
+        "créance du Trésor",
+        "avances",
+        "droits de greffe",
+        "préférence"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 278",
+      "titre": "Condamnation aux dépens contre l'assisté",
+      "texte": [
+        "En cas de condamnation aux dépens prononcée contre l'assisté, il est procédé conformément aux règles tracées par l'article précédent, au recouvrement des sommes dues au Trésor en vertu des paragraphes 5 et 8 de l'article 275."
+      ],
+      "mots_cles": [
+        "condamnation",
+        "dépens",
+        "assisté",
+        "recouvrement",
+        "sommes dues",
+        "Trésor",
+        "article 275"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 279",
+      "titre": "Retrait de l'assistance judiciaire",
+      "texte": [
+        "Le retrait de l'assistance judiciaire a pour effet de rendre immédiatement exigibles les droits, honoraires, émoluments et avances de toute nature, dont l'assisté avait été dispensé.",
+        "Dans tous les cas où l'assistance judiciaire est retirée, le secrétaire du bureau est tenu d'en informer immédiatement le Receveur qui procédera au recouvrement et à la répartition suivant les règles tracées en l'article 277 ci-dessus."
+      ],
+      "mots_cles": [
+        "retrait",
+        "assistance judiciaire",
+        "exigibles",
+        "droits",
+        "honoraires",
+        "émoluments",
+        "avances",
+        "assisté",
+        "dispensé",
+        "secrétaire du bureau",
+        "Receveur",
+        "recouvrement",
+        "répartition",
+        "article 277"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 280",
+      "titre": "Prescription de l'action en recouvrement",
+      "texte": [
+        "L'action tendant au recouvrement de l'exécutoire délivré au service de l'enregistrement soit contre l'assisté, soit contre la partie adverse, se prescrit par dix ans."
+      ],
+      "mots_cles": [
+        "action",
+        "recouvrement",
+        "exécutoire",
+        "service de l'enregistrement",
+        "assisté",
+        "partie adverse",
+        "prescription",
+        "dix ans"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
+    },
+    {
+      "article": "Art. 281",
+      "titre": "Mutations au profit des collectivités publiques",
+      "texte": [
+        "Les actes de mutations de jouissance ou de propriété consenties au profit de l'État, du Groupe de Territoires de l'AEF, du Territoire, des communes ou des établissements publics, les partages de biens entre ces collectivités et les particuliers ou sociétés et en général, tous autres actes dont les droits seraient supportés par le Budget des collectivités susvisées."
+      ],
+      "mots_cles": [
+        "mutations",
+        "jouissance",
+        "propriété",
+        "État",
+        "AEF",
+        "Territoire",
+        "communes",
+        "établissements publics",
+        "partages",
+        "particuliers",
+        "sociétés",
+        "Budget",
+        "collectivités",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 282",
+      "titre": "Prêts pour exploitations agricoles",
+      "texte": [
+        "Les contrats de prêts, ouvertures de crédits, quittances et mainlevées de toute nature consentis par les sociétés de crédit public en vue de la constitution ou de l'amélioration d'exploitations agricoles et à condition que le prêt soit inférieur à 100.000 FCFA."
+      ],
+      "mots_cles": [
+        "contrats de prêts",
+        "ouvertures de crédits",
+        "quittances",
+        "mainlevées",
+        "sociétés de crédit public",
+        "exploitations agricoles",
+        "constitution",
+        "amélioration",
+        "100.000 FCFA",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 283",
+      "titre": "Habitations à bon marché ou loyer modéré",
+      "texte": [
+        "Les actes de mutations de jouissance ou de propriété et en général, tous les actes passés entre des particuliers ou sociétés et les organismes publics ou privés dont le but est d'édifier et de mettre à la disposition soit de leurs adhérents soit de personnes étrangères à ceux-ci, de condition modeste, des habitations à bon marché ou à loyer modéré.",
+        "Le bénéfice de la gratuité ne peut être accordé que dans le cas où les organismes visés à l'alinéa précédent auront reçu l'agrément des autorités du territoire."
+      ],
+      "mots_cles": [
+        "mutations",
+        "jouissance",
+        "propriété",
+        "actes",
+        "particuliers",
+        "sociétés",
+        "organismes publics",
+        "organismes privés",
+        "adhérents",
+        "condition modeste",
+        "habitations à bon marché",
+        "loyer modéré",
+        "gratuité",
+        "agrément",
+        "autorités du territoire",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 284",
+      "titre": "Avances sur titres de fonds d'État français",
+      "texte": [
+        "Les actes d'avances sur titre de fonds d'État français ou valeurs émises par le Trésor français."
+      ],
+      "mots_cles": [
+        "avances",
+        "titres",
+        "fonds d'État français",
+        "valeurs",
+        "Trésor français",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 285",
+      "titre": "Ordonnances et jugements d'immatriculation",
+      "texte": [
+        "Les ordonnances et jugements d'immatriculation en matière de propriété foncière."
+      ],
+      "mots_cles": [
+        "ordonnances",
+        "jugements",
+        "immatriculation",
+        "propriété foncière",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 285 bis",
+      "titre": "Actes constitutifs des sociétés",
+      "texte": [
+        "Les actes énumérés ci-après sont à enregistrer gratis :",
+        "les actes constitutifs des sociétés (statuts)."
+      ],
+      "mots_cles": [
+        "actes constitutifs",
+        "sociétés",
+        "statuts",
+        "enregistrement gratis"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
+    },
+    {
+      "article": "Art. 286",
+      "titre": "Accidents du travail et allocations familiales",
+      "texte": [
+        "Les actes et décisions judiciaires rendus en matière d'accident du travail ou d'allocations familiales."
+      ],
+      "mots_cles": [
+        "actes",
+        "décisions judiciaires",
+        "accident du travail",
+        "allocations familiales",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 287",
+      "titre": "Réglementation du travail",
+      "texte": [
+        "Les actes et décisions judiciaires rendus en vertu ou pour l'application de la réglementation du travail."
+      ],
+      "mots_cles": [
+        "actes",
+        "décisions judiciaires",
+        "réglementation du travail",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 288",
+      "titre": "Procédures d'état civil",
+      "texte": [
+        "Les jugements rendus sur les procédures engagées à la requête du Ministère public en matière d'état civil."
+      ],
+      "mots_cles": [
+        "jugements",
+        "procédures",
+        "Ministère public",
+        "état civil",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 289",
+      "titre": "Admission au statut civil de droit commun",
+      "texte": [
+        "Les actes judiciaires dressés pour constater l'admission au statut civil de droit commun, des personnes de statut personnel coutumier."
+      ],
+      "mots_cles": [
+        "actes judiciaires",
+        "admission",
+        "statut civil",
+        "droit commun",
+        "statut personnel coutumier",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 290",
+      "titre": "Prestations de serments",
+      "texte": [
+        "Les prestations de serments des magistrats, fonctionnaires et agents salariés du Territoire ou des communes."
+      ],
+      "mots_cles": [
+        "prestations de serments",
+        "magistrats",
+        "fonctionnaires",
+        "agents salariés",
+        "Territoire",
+        "communes",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 291",
+      "titre": "Actes des autorités administratives",
+      "texte": [
+        "Tous les actes, arrêtés et décisions des autorités administratives autres que ceux nominativement assujettis à l'enregistrement par l'article 10 ci-dessus."
+      ],
+      "mots_cles": [
+        "actes",
+        "arrêtés",
+        "décisions",
+        "autorités administratives",
+        "article 10",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 292",
+      "titre": "Actes d'état civil",
+      "texte": [
+        "Les actes de naissance, décès et mariage reçus par des officiers de l'état civil et les extraits qui en sont délivrés.",
+        "Les reconnaissances d'enfants naturels quelle qu'en soit la forme.",
+        "Les actes de procédure et les jugements à la requête du Ministère public ayant pour objet :",
+        "a) de réparer les omissions et faire les rectifications sur les registres de l'état civil, d'actes qui intéressent les individus notoirement indigents ;",
+        "b) de remplacer les registres de l'état civil perdus ou incendiés par les événements de guerre, et de suppléer aux registres qui n'auraient pas été tenus."
+      ],
+      "mots_cles": [
+        "actes de naissance",
+        "décès",
+        "mariage",
+        "officiers de l'état civil",
+        "extraits",
+        "reconnaissances",
+        "enfants naturels",
+        "actes de procédure",
+        "jugements",
+        "Ministère public",
+        "omissions",
+        "rectifications",
+        "registres",
+        "indigents",
+        "événements de guerre",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 293",
+      "titre": "Procès-verbaux des agents publics",
+      "texte": [
+        "Les procès-verbaux et les affirmations de ceux-ci, dressés par les agents de la force publique, magistrats, fonctionnaires et agents salariés de l'État, du Groupe de Territoires, de l'AEF, du Territoire ou des communes, dressés dans l'exercice de leurs fonctions ou destinés à constater les infractions à la loi."
+      ],
+      "mots_cles": [
+        "procès-verbaux",
+        "affirmations",
+        "agents de la force publique",
+        "magistrats",
+        "fonctionnaires",
+        "agents salariés",
+        "État",
+        "AEF",
+        "Territoire",
+        "communes",
+        "infractions",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 294",
+      "titre": "Conditions d'affrètement au voyage",
+      "texte": [
+        "Les conditions d'affrètement au voyage."
+      ],
+      "mots_cles": [
+        "affrètement",
+        "voyage",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 295",
+      "titre": "Actes de poursuites pour recouvrement d'impôts",
+      "texte": [
+        "Tous actes de poursuites (contraintes, sommations, commandements, saisies, etc.) ayant pour objet le recouvrement des impôts et taxes perçus au profit de l'État, du Groupe des Territoires, de l'AEF, du Territoire ou des Communes.",
+        "Si ces actes sont dressés et signifiés par voie d'huissier, ils sont enregistrés gratis dans le même délai et sous les mêmes sanctions que les autres actes extrajudiciaires.",
+        "Les articles 68, 86 et tous autres concernant les ventes publiques mobilières sont applicables aux ventes consécutives aux poursuites en recouvrement des impôts et taxes visés à l'alinéa 1.",
+        "En cas d'infraction à cette réglementation, les amendes et pénalités sont à la charge du fonctionnaire ou agent qui aura procédé à la vente."
+      ],
+      "mots_cles": [
+        "actes de poursuites",
+        "contraintes",
+        "sommations",
+        "commandements",
+        "saisies",
+        "recouvrement",
+        "impôts",
+        "taxes",
+        "État",
+        "AEF",
+        "Territoire",
+        "Communes",
+        "huissier",
+        "enregistrement gratis",
+        "actes extrajudiciaires",
+        "articles 68 et 86",
+        "ventes publiques mobilières",
+        "amendes",
+        "pénalités",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 295 bis",
+      "titre": "Attestations relatives aux comptes chèques",
+      "texte": [
+        "Les attestations prévues à l'article 3 du décret n°55-584 du 20 mai 1955 relatif aux conditions de fonctionnement des comptes sur lesquels il peut être disposé par chèques."
+      ],
+      "mots_cles": [
+        "attestations",
+        "décret n°55-584",
+        "20 mai 1955",
+        "comptes",
+        "chèques",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 296",
+      "titre": "Actes militaires et maritimes",
+      "texte": [
+        "Les engagements, enrôlements, congés, certificats, cartouches, passeports, quittances de prêt et fourniture, billet d'étape, de subsistance et de logement, tant pour le service de terre que pour le service de mer, et tous autres actes de l'une et l'autre administration, non compris dans les articles précédents et suivants.",
+        "Les rôles d'équipage et les engagements de matelots et gens de mer de la marine marchande.",
+        "Les actes faits en exécution de la loi sur le recrutement de l'armée."
+      ],
+      "mots_cles": [
+        "engagements",
+        "enrôlements",
+        "congés",
+        "certificats",
+        "cartouches",
+        "passeports",
+        "quittances de prêt",
+        "fourniture",
+        "billet d'étape",
+        "subsistance",
+        "logement",
+        "service de terre",
+        "service de mer",
+        "rôles d'équipage",
+        "matelots",
+        "gens de mer",
+        "marine marchande",
+        "recrutement de l'armée",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 297",
+      "titre": "Assistance médicale gratuite",
+      "texte": [
+        "Les certificats, significations, jugements, contrats, quittances et autres actes faits en vertu de la réglementation sur l'assistance médicale gratuite et exclusivement relatifs au service de cette assistance, sont dispensés de la formalité de l'enregistrement, sans préjudice des dispositions des textes sur l'assistance judiciaire."
+      ],
+      "mots_cles": [
+        "certificats",
+        "significations",
+        "jugements",
+        "contrats",
+        "quittances",
+        "assistance médicale gratuite",
+        "assistance judiciaire",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 298",
+      "titre": "Cédules et notes de procédure",
+      "texte": [
+        "Les cédules ou avertissements pour citer, soit devant le Tribunal de Village Centre ou de Quartier, soit devant le bureau de conciliation, sauf le droit sur la signification.",
+        "Les notes de procédure d'avocat défenseur à avocat-défenseur devant les Tribunaux Populaires de Village Centre ou de Quartier ainsi que les exploits de signification de ces mêmes actes."
+      ],
+      "mots_cles": [
+        "cédules",
+        "avertissements",
+        "citation",
+        "Tribunal de Village Centre",
+        "Tribunal de Quartier",
+        "bureau de conciliation",
+        "signification",
+        "notes de procédure",
+        "avocat défenseur",
+        "Tribunaux Populaires",
+        "exploits",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 299",
+      "titre": "Caisses d'épargne et chèques postaux",
+      "texte": [
+        "Les imprimés, écrits et actes de toute espèce nécessaires pour le service des caisses d'épargne et des chèques postaux.",
+        "Les certificats de propriété et actes de notoriété exigés par les caisses d'épargne ou les centres de chèques postaux pour effectuer le remboursement, le transfert ou le renouvellement des livrets appartenant aux titulaires décédés ou déclarés absents."
+      ],
+      "mots_cles": [
+        "imprimés",
+        "écrits",
+        "actes",
+        "caisses d'épargne",
+        "chèques postaux",
+        "certificats de propriété",
+        "actes de notoriété",
+        "remboursement",
+        "transfert",
+        "renouvellement",
+        "livrets",
+        "titulaires décédés",
+        "absents",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 300",
+      "titre": "Caisses de retraites et pensions",
+      "texte": [
+        "Les certificats, actes de notoriété et autres pièces exclusivement relatifs à l'exécution des lois et règlements sur les diverses caisses publiques de retraites pour la vieillesse.",
+        "Les certificats, actes de notoriété et toutes autres pièces exclusivement relatifs à la liquidation et au paiement des pensions."
+      ],
+      "mots_cles": [
+        "certificats",
+        "actes de notoriété",
+        "caisses publiques",
+        "retraites",
+        "vieillesse",
+        "liquidation",
+        "paiement",
+        "pensions",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 301",
+      "titre": "Bulletin n°3 du casier judiciaire",
+      "texte": [
+        "Le bulletin n°3 du casier judiciaire délivré à la personne qu'il concerne."
+      ],
+      "mots_cles": [
+        "bulletin n°3",
+        "casier judiciaire",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 302",
+      "titre": "Procurations conseil de famille",
+      "texte": [
+        "Les procurations visées par l'article 412 du Code civil (conseil de famille)."
+      ],
+      "mots_cles": [
+        "procurations",
+        "article 412",
+        "Code civil",
+        "conseil de famille",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 303",
+      "titre": "Recours devant la Cour Suprême",
+      "texte": [
+        "Le recours devant la Cour Suprême contre les arrêts de la juridiction administrative peut avoir lieu sans frais et sans l'intervention d'un Avocat lorsqu'il se rapporte :",
+        "1° aux contributions directes ou taxes à ces contributions pour le recouvrement ;",
+        "2° aux élections ;",
+        "3° aux contraventions aux lois et règlements sur la grande voirie et autres contraventions dont la répression relève de la juridiction administrative.",
+        "En cas d'expertise ordonnée par la juridiction administrative, la prestation de serment du ou des experts et l'expédition du procès-verbal ne donnent lieu à aucun droit d'enregistrement."
+      ],
+      "mots_cles": [
+        "recours",
+        "Cour Suprême",
+        "arrêts",
+        "juridiction administrative",
+        "sans frais",
+        "Avocat",
+        "contributions directes",
+        "taxes",
+        "recouvrement",
+        "élections",
+        "contraventions",
+        "grande voirie",
+        "prestation de serment",
+        "experts",
+        "procès-verbal",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 304",
+      "titre": "Quittances des contributions et revenus publics",
+      "texte": [
+        "Les quittances des contributions, droits, taxes et revenus payés aux administrations nationales du groupe, locales et municipales.",
+        "Les ordonnances de décharge ou de réduction, remise ou modération d'imposition, les quittances y relatives et extraits d'iceux.",
+        "Les récépissés délivrés aux collecteurs, aux Receveurs, de deniers publics et des contributions locales et les comptes des recettes ou gestions publiques."
+      ],
+      "mots_cles": [
+        "quittances",
+        "contributions",
+        "droits",
+        "taxes",
+        "revenus",
+        "administrations nationales",
+        "locales",
+        "municipales",
+        "ordonnances de décharge",
+        "réduction",
+        "remise",
+        "modération",
+        "imposition",
+        "récépissés",
+        "collecteurs",
+        "Receveurs",
+        "deniers publics",
+        "contributions locales",
+        "recettes",
+        "gestions publiques",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 305",
+      "titre": "Mandats et ordonnances de paiement",
+      "texte": [
+        "Les inscriptions, mandats et ordonnances de paiement sur les caisses publiques, leurs endossements et acquits.",
+        "Les quittances des fonctionnaires et employés salariés par l'administration, pour leurs traitements et émoluments."
+      ],
+      "mots_cles": [
+        "inscriptions",
+        "mandats",
+        "ordonnances de paiement",
+        "caisses publiques",
+        "endossements",
+        "acquits",
+        "quittances",
+        "fonctionnaires",
+        "employés",
+        "traitements",
+        "émoluments",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 306",
+      "titre": "Expropriation pour cause d'utilité publique",
+      "texte": [
+        "Les plans, procès-verbaux, certificats, significations, contrats et autres actes faits en vertu des textes sur l'expropriation pour cause d'utilité publique et l'occupation temporaire des propriétés privées pour travaux publics, à l'exception des jugements, des contrats de vente, des actes fixant l'indemnité et des quittances qui sont enregistrés gratis lorsqu'il y a lieu à la formalité de l'enregistrement."
+      ],
+      "mots_cles": [
+        "plans",
+        "procès-verbaux",
+        "certificats",
+        "significations",
+        "contrats",
+        "expropriation",
+        "utilité publique",
+        "occupation temporaire",
+        "propriétés privées",
+        "travaux publics",
+        "jugements",
+        "contrats de vente",
+        "indemnité",
+        "quittances",
+        "enregistrement gratis",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 307",
+      "titre": "Dispense de droits de mutation pour collectivités publiques",
+      "texte": [
+        "L'État, les États de l'ex-AEF, les communes, les établissements publics hospitaliers et les bureaux de bienfaisance sont dispensés des droits de mutation à titre gratuit sur les biens qui leur adviennent par donation ou succession.",
+        "Cette exonération s'applique aux successions ouvertes avant la publication du présent Code qui n'auraient pas encore été acceptées ni approuvées par l'autorité administrative."
+      ],
+      "mots_cles": [
+        "État",
+        "ex-AEF",
+        "communes",
+        "établissements publics hospitaliers",
+        "bureaux de bienfaisance",
+        "dispense",
+        "droits de mutation",
+        "titre gratuit",
+        "donation",
+        "succession",
+        "exonération",
+        "autorité administrative",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 308",
+      "titre": "Endossements et acquits des effets négociables",
+      "texte": [
+        "Les endossements et acquits des lettres de change, billets à ordre et autres effets négociables."
+      ],
+      "mots_cles": [
+        "endossements",
+        "acquits",
+        "lettres de change",
+        "billets à ordre",
+        "effets négociables",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 309",
+      "titre": "Procédure électorale",
+      "texte": [
+        "Les actes de la procédure relative aux inscriptions sur les listes électorales ainsi qu'aux réclamations et aux recours, tant contre ces inscriptions que contre les opérations électorales."
+      ],
+      "mots_cles": [
+        "actes",
+        "procédure",
+        "inscriptions",
+        "listes électorales",
+        "réclamations",
+        "recours",
+        "opérations électorales",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 310",
+      "titre": "Faillites et liquidations judiciaires",
+      "texte": [
+        "Les actes rédigés en exécution des lois relatives aux faillites et liquidations judiciaires et dont l'énumération suit :",
+        "• les déclarations de cessation de paiements, les bilans, les dépôts des bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, les procès-verbaux d'assemblées, dires, d'observations et délibérations de créanciers ;",
+        "• les états des créances présumées ;",
+        "• les actes de produits, les requêtes adressées au juge-commissaire, les ordonnances et décisions de ce magistrat ;",
+        "• les rapports et comptes des syndics ;",
+        "• les états de répartition ;",
+        "• les procès-verbaux de vérification et d'affirmation de créances ;",
+        "• les concordats ou atermoiements.",
+        "Toutefois, ces différents actes continueront à rester soumis à la formalité du répertoire."
+      ],
+      "mots_cles": [
+        "actes",
+        "faillites",
+        "liquidations judiciaires",
+        "cessation de paiements",
+        "bilans",
+        "dépôts",
+        "affiches",
+        "certificats d'insertion",
+        "déclaration de faillite",
+        "convocations",
+        "créanciers",
+        "inventaires",
+        "transactions",
+        "procès-verbaux",
+        "assemblées",
+        "délibérations",
+        "créances présumées",
+        "juge-commissaire",
+        "ordonnances",
+        "syndics",
+        "répartition",
+        "vérification",
+        "affirmation de créances",
+        "concordats",
+        "atermoiements",
+        "répertoire",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 311",
+      "titre": "Mariage des indigents et légitimation d'enfants",
+      "texte": [
+        "Les extraits des registres de l'état civil, les actes de notoriété, de consentement, de publication, les délibérations de conseil de famille, la notification, s'il y a lieu, les certificats de libération du service militaire, les dispenses pour cause de parenté, d'alliance ou d'âge, les actes de reconnaissance d'enfants naturels, les certificats constatant la célébration civile du mariage, les actes de procédure, les ordonnances, jugements et arrêts dont la production sera nécessaire dans les cas prévus par la loi, ayant pour objet de faciliter le mariage des indigents, la légitimation de leurs enfants naturels et le retrait de ces enfants déposés dans les hospices ou autres établissements similaires.",
+        "Les actes, extraits, copies ou expéditions délivrés mentionnant expressément qu'ils sont destinés à servir à la célébration d'un mariage entre indigents, à la légitimation ou au retrait de leurs enfants naturels déposés dans les hospices.",
+        "Ils ne peuvent servir à d'autre fin sous peine de 500 FCFA d'amende, outre le paiement des droits, contre ceux qui en font usage, ou qui les ont indûment délivrés ou reçus.",
+        "Les avis de parents de mineurs dont l'indigence est constatée.",
+        "Même dispense est concédée aux actes nécessaires pour la convocation et la constitution des conseils de famille et l'homologation des délibérations prises dans ces conseils dans le cas d'indigence des mineurs.",
+        "Ces actes sont exemptés de la formalité de l'enregistrement, à l'exclusion des procès-verbaux de délibération et des décisions accordant ou refusant l'homologation.",
+        "Les personnes dont l'interdiction est demandée et les interdits sont, dans les mêmes cas, assimilés aux mineurs.",
+        "Sont applicables aux actes et jugements nécessaires pour l'organisation et la surveillance de la tutelle des enfants naturels, les dispositions et dispenses de droits déterminées en ce qui concerne la tutelle des enfants légitimes et interdits par les alinéas qui précèdent."
+      ],
+      "mots_cles": [
+        "extraits",
+        "registres de l'état civil",
+        "actes de notoriété",
+        "consentement",
+        "publication",
+        "conseil de famille",
+        "service militaire",
+        "dispenses",
+        "parenté",
+        "alliance",
+        "âge",
+        "reconnaissance d'enfants naturels",
+        "célébration civile",
+        "mariage",
+        "indigents",
+        "légitimation",
+        "enfants naturels",
+        "hospices",
+        "500 FCFA",
+        "amende",
+        "mineurs",
+        "interdiction",
+        "interdits",
+        "tutelle",
+        "enfants légitimes",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 312",
+      "titre": "Actes de justice militaire",
+      "texte": [
+        "Toutes assignations, citations et notifications aux témoins, inculpés, visées par le Code de justice militaire, faites par la police militaire ou par tous autres agents de la force publique."
+      ],
+      "mots_cles": [
+        "assignations",
+        "citations",
+        "notifications",
+        "témoins",
+        "inculpés",
+        "Code de justice militaire",
+        "police militaire",
+        "agents de la force publique",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 313",
+      "titre": "Légalisations de signatures",
+      "texte": [
+        "Les légalisations de signatures d'officiers publics."
+      ],
+      "mots_cles": [
+        "légalisations",
+        "signatures",
+        "officiers publics",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 314",
+      "titre": "Cote et paraphe des livres de commerce",
+      "texte": [
+        "Les procès-verbaux de cote et paraphe des livres de commerce, qu'elle qu'en soit la forme."
+      ],
+      "mots_cles": [
+        "procès-verbaux",
+        "cote",
+        "paraphe",
+        "livres de commerce",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 315",
+      "titre": "Certificats de contrats de mariage",
+      "texte": [
+        "Les certificats de contrats de mariage remis aux parties par les notaires en exécution de l'article 1394 alinéa 3 du Code civil."
+      ],
+      "mots_cles": [
+        "certificats",
+        "contrats de mariage",
+        "notaires",
+        "article 1394",
+        "Code civil",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 316",
+      "titre": "Bordereaux et états relatifs aux fonds de commerce",
+      "texte": [
+        "Les bordereaux d'inscriptions, ainsi que les états ou certificats et copies d'actes de vente sous seing privé délivrés par les greffiers, en exécution des textes relatifs à la vente et au nantissement des fonds de commerce."
+      ],
+      "mots_cles": [
+        "bordereaux d'inscriptions",
+        "états",
+        "certificats",
+        "copies",
+        "actes de vente",
+        "sous seing privé",
+        "greffiers",
+        "vente",
+        "nantissement",
+        "fonds de commerce",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 317",
+      "titre": "Objets abandonnés par les voyageurs",
+      "texte": [
+        "Tous les actes, spécialement les exploits, ordonnances, jugements et procès-verbaux faits en exécution du décret du 15 mars 1939 relatif à la vente des objets abandonnés ou laissés en gage par les voyageurs aux aubergistes et hôteliers, à l'exception des procès-verbaux de vente qui sont soumis aux droits prévus par l'article 265."
+      ],
+      "mots_cles": [
+        "actes",
+        "exploits",
+        "ordonnances",
+        "jugements",
+        "procès-verbaux",
+        "décret 15 mars 1939",
+        "vente",
+        "objets abandonnés",
+        "gage",
+        "voyageurs",
+        "aubergistes",
+        "hôteliers",
+        "article 265",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 318",
+      "titre": "Saisie-arrêt sur petits salaires",
+      "texte": [
+        "1) Tous les actes, décisions et formalités en matière de saisie-arrêt sur les petits salaires et petits traitements.",
+        "Les lettres recommandées, les procurations du saisi et du tiers saisi et les quittances données au cours de la procédure.",
+        "Les parties peuvent se faire représenter par un avocat régulièrement inscrit ou par tout autre officier ministériel du ressort, dispensé de procuration ou encore par tout mandataire de leur choix, auquel cas les procurations données par le créancier saisissant doivent être spéciales pour chaque affaire.",
+        "Elles sont soumises au droit d'enregistrement.",
+        "2) Les dispositions du paragraphe précédent sont applicables en matière de saisie-arrêt et de cession :",
+        "a) des salaires, appointements et traitements des fonctionnaires civils ;",
+        "b) des soldes nettes des officiers et assimilés et des militaires à solde mensuelle, en activité, en disponibilité, en non-activité, en réforme et des officiers généraux du cadre de réserve ;",
+        "c) des soldes nettes des officiers mariniers et assimilés en fonction au-delà de la durée légale de service, lorsque ces salaires, appointements, traitements et soldes rentrent dans les prévisions de la loi du 27 juillet 1921."
+      ],
+      "mots_cles": [
+        "actes",
+        "décisions",
+        "formalités",
+        "saisie-arrêt",
+        "petits salaires",
+        "petits traitements",
+        "lettres recommandées",
+        "procurations",
+        "saisi",
+        "tiers saisi",
+        "quittances",
+        "avocat",
+        "officier ministériel",
+        "mandataire",
+        "créancier saisissant",
+        "cession",
+        "fonctionnaires civils",
+        "soldes nettes",
+        "officiers",
+        "militaires",
+        "officiers mariniers",
+        "loi 27 juillet 1921",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 319",
+      "titre": "Délégation au greffier pour les scellés",
+      "texte": [
+        "La délégation du juge au greffier pour les opérations de scellés prévue à l'article 907 du Code de procédure civile, complétée par la loi du 2 juillet 1909."
+      ],
+      "mots_cles": [
+        "délégation",
+        "juge",
+        "greffier",
+        "scellés",
+        "article 907",
+        "Code de procédure civile",
+        "loi 2 juillet 1909",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 320",
+      "titre": "Sociétés de secours mutuels et organismes de coopération",
+      "texte": [
+        "Tous les actes intéressant les sociétés de secours mutuels approuvées, ainsi que les unions approuvées de sociétés de secours mutuels et les sociétés africaines de prévoyance.",
+        "Les actes, pièces et écrits et imprimés de toute nature concernant le service de la Caisse Centrale de Coopération Économique et de la Banque Centrale des États de l'ex-AEF et du Cameroun.",
+        "Cette disposition n'est pas applicable aux transmissions de propriété, d'usufruit ou de jouissance de biens meubles et immeubles, soit entre vifs, soit par décès."
+      ],
+      "mots_cles": [
+        "sociétés de secours mutuels",
+        "unions",
+        "sociétés africaines de prévoyance",
+        "Caisse Centrale de Coopération Économique",
+        "Banque Centrale",
+        "ex-AEF",
+        "Cameroun",
+        "transmissions",
+        "propriété",
+        "usufruit",
+        "jouissance",
+        "biens meubles",
+        "biens immeubles",
+        "entre vifs",
+        "décès",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 321",
+      "titre": "Organisations professionnelles avec secours mutuels",
+      "texte": [
+        "Les organisations professionnelles constituées légalement qui ont prévu dans leurs statuts les secours mutuels entre leurs membres adhérents, bénéficient des immunités fiscales accordées aux sociétés de secours mutuels."
+      ],
+      "mots_cles": [
+        "organisations professionnelles",
+        "statuts",
+        "secours mutuels",
+        "membres adhérents",
+        "immunités fiscales",
+        "sociétés de secours mutuels",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 322",
+      "titre": "Contrats de travail et certificats",
+      "texte": [
+        "Le contrat de travail entre les chefs ou directeurs des établissements industriels ou commerciaux, des exploitations agricoles ou forestières et leurs ouvriers.",
+        "Les certificats de travail délivrés aux ouvriers, employés ou serviteurs, encore qu'ils contiennent d'autres mentions que celles prévues par la loi, toutes les fois que ces mentions ne contiennent ni obligation, ni quittance, ni aucune autre convention donnant lieu au droit proportionnel.",
+        "La formule « libre de tout engagement » et toute autre constatant l'expiration régulière du contrat de travail, les qualités professionnelles et les services rendus, sont comprises dans l'exemption."
+      ],
+      "mots_cles": [
+        "contrat de travail",
+        "chefs",
+        "directeurs",
+        "établissements industriels",
+        "établissements commerciaux",
+        "exploitations agricoles",
+        "exploitations forestières",
+        "ouvriers",
+        "certificats de travail",
+        "employés",
+        "serviteurs",
+        "obligation",
+        "quittance",
+        "droit proportionnel",
+        "libre de tout engagement",
+        "qualités professionnelles",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 323",
+      "titre": "Certificats de vie",
+      "texte": [
+        "Les certificats de vie délivrés aux rentiers et pensionnaires de l'État, du Groupe des États de l'ex-AEF, des communes et des établissements publics ou reconnus d'utilité publique.",
+        "Les certificats de vie délivrés par l'administration et devant servir au paiement d'indemnités de charges de famille ou d'allocations familiales."
+      ],
+      "mots_cles": [
+        "certificats de vie",
+        "rentiers",
+        "pensionnaires",
+        "État",
+        "ex-AEF",
+        "communes",
+        "établissements publics",
+        "utilité publique",
+        "indemnités",
+        "charges de famille",
+        "allocations familiales",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 324",
+      "titre": "Jugements des tribunaux de droit local",
+      "texte": [
+        "Les jugements des tribunaux de droit local ainsi que les actes et pièces de procédure devant ces mêmes tribunaux, à l'exception des conventions et jugements emportant transmissions de propriété, d'usufruit ou de jouissance de biens immeubles ou constitution de droits réels immobiliers, qui restent soumis aux droits prévus."
+      ],
+      "mots_cles": [
+        "jugements",
+        "tribunaux de droit local",
+        "actes",
+        "pièces de procédure",
+        "conventions",
+        "transmission de propriété",
+        "usufruit",
+        "jouissance",
+        "biens immeubles",
+        "droits réels immobiliers",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 325",
+      "titre": "Quittances aux illettrés",
+      "texte": [
+        "Les quittances notariées ou administratives pour paiement par le Trésor aux illettrés."
+      ],
+      "mots_cles": [
+        "quittances notariées",
+        "quittances administratives",
+        "paiement",
+        "Trésor",
+        "illettrés",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 326",
+      "titre": "Contrats de recrutement du personnel administratif",
+      "texte": [
+        "Les contrats passés par l'État, les États de l'ex-AEF, les communes, les établissements publics ou reconnus d'utilité publique en vue du recrutement du personnel des services administratifs."
+      ],
+      "mots_cles": [
+        "contrats",
+        "État",
+        "ex-AEF",
+        "communes",
+        "établissements publics",
+        "utilité publique",
+        "recrutement",
+        "personnel",
+        "services administratifs",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 327",
+      "titre": "Successions de fonctionnaires et militaires",
+      "texte": [
+        "Les actes, procès-verbaux, jugements et pièces en originaux ou copies concernant la liquidation des successions des fonctionnaires et militaires, ainsi que ceux concernant la liquidation des successions vacantes d'une valeur inférieure à 200.000 FCFA."
+      ],
+      "mots_cles": [
+        "actes",
+        "procès-verbaux",
+        "jugements",
+        "pièces",
+        "originaux",
+        "copies",
+        "liquidation",
+        "successions",
+        "fonctionnaires",
+        "militaires",
+        "successions vacantes",
+        "200.000 FCFA",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 328",
+      "titre": "Successions de faible valeur ou coutumières",
+      "texte": [
+        "Les successions comportant un actif brut inférieur à 200.000 FCFA ou celles dont l'actif brut se compose seulement de biens recueillis selon la coutume et sur lesquels les ayants droit n'acquièrent pas la propriété privative, telle que celle-ci est définie par la loi française."
+      ],
+      "mots_cles": [
+        "successions",
+        "actif brut",
+        "200.000 FCFA",
+        "biens",
+        "coutume",
+        "ayants droit",
+        "propriété privative",
+        "loi française",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 329",
+      "titre": "Dépôt des répertoires des notaires",
+      "texte": [
+        "Les actes de dépôt au Greffe des répertoires des notaires."
+      ],
+      "mots_cles": [
+        "actes de dépôt",
+        "Greffe",
+        "répertoires",
+        "notaires",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 330",
+      "titre": "Permis d'occuper et titres définitifs",
+      "texte": [
+        "Les permis d'occuper délivrés en exécution de la réglementation domaniale et les titres définitifs correspondants."
+      ],
+      "mots_cles": [
+        "permis d'occuper",
+        "réglementation domaniale",
+        "titres définitifs",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 331",
+      "titre": "Procès-verbaux de douane",
+      "texte": [
+        "Les procès-verbaux de douane ainsi que les soumissions et transactions en tenant lieu."
+      ],
+      "mots_cles": [
+        "procès-verbaux",
+        "douane",
+        "soumissions",
+        "transactions",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    },
+    {
+      "article": "Art. 331 bis",
+      "titre": "Organismes humanitaires internationaux",
+      "texte": [
+        "Tous actes et pièces intéressant le fonctionnement de l'association de la Croix-Rouge française, l'Organisation Mondiale de la Santé, le Fonds International de Secours à l'Enfance, et dont les droits seraient supportés légalement par ces organismes."
+      ],
+      "mots_cles": [
+        "actes",
+        "pièces",
+        "fonctionnement",
+        "Croix-Rouge française",
+        "Organisation Mondiale de la Santé",
+        "OMS",
+        "Fonds International de Secours à l'Enfance",
+        "UNICEF",
+        "organismes humanitaires",
+        "exemption"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
+    }
+  ]
+}
