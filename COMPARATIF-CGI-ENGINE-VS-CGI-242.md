@@ -13,21 +13,35 @@ Ce rapport identifie tout ce qui manque a cgi-242 avant de pouvoir remplacer cgi
 
 | Fonctionnalite | cgi-engine | cgi-242 |
 |---|---|---|
-| Chat IA | OpenAI + Claude + Qdrant (RAG) | Claude Haiku 4.5 direct (@anthropic-ai/sdk) |
-| Embeddings vectoriels | OpenAI embeddings API | Absent |
-| Recherche hybride (keyword + semantique) | Qdrant + PostgreSQL | Recherche locale basique |
+| Chat IA | OpenAI + Claude + Qdrant (RAG) | Claude Haiku 4.5 + Qdrant (RAG) |
+| Embeddings vectoriels | OpenAI text-embedding-3-small (1536 dims) | Voyage AI voyage-multilingual-2 (1024 dims) |
+| Recherche hybride (keyword + semantique) | Qdrant + PostgreSQL + Redis | Qdrant + PostgreSQL + cache in-memory |
+| Pipeline hybride 5 etapes | checkDirectMappings → routingRules → keywordMatches → vectorSearch → merge+priority | Identique (copie complete) |
+| Mappings keyword directs | 80+ mappings | 80+ mappings (copie) |
+| Regles de routage contextuel | 12 regles | 12 regles (copie) |
+| Recherche par chapitre (factory) | 8 factories (IRPP, IS, IBA, DC, TD, DD, PV, IL) | 8 factories (copie) |
 | Streaming SSE des reponses | `chat.streaming.controller.ts` | `routes/chat.ts` + `chat.service.ts` (SSE) |
+| Event citations SSE | Oui | Oui |
 | Historique conversations | BDD (Conversation, Message) | BDD (Conversation, Message) via Prisma |
+| Citations dans les messages | `citations Json?` dans Message | `citations Json?` dans Message |
 | Multi-agent orchestration | `orchestrator/`, `agents/` | Absent |
-| Prompts fiscaux specialises | `chat.prompts.ts` | `chat.prompts.ts` (taux IS Art. 86A mis a jour 2026) |
+| Prompts fiscaux specialises | `chat.prompts.ts` | `chat.prompts.ts` (statique + RAG avec contexte) |
 | Detection salutations | Non | `isSimpleGreeting()` → prompt simplifie |
-| Routage intelligent par chapitre | `hybrid-search.routing.ts` | Absent |
+| Routage intelligent par chapitre | `hybrid-search.routing.ts` | `hybrid-search.routing.ts` (copie) |
+| Fallback si Qdrant down | Non | Oui (connaissances statiques dans le prompt) |
+| Ingestion articles | `ingest-articles.ts` + Redis | `ingest-articles.ts` + cache in-memory |
+| Logger | Winston + rotation fichiers | Winston (console coloree dev, JSON prod) |
 
 ### Fichiers cgi-242
-- `server/src/services/chat.service.ts` — Appel Claude + gestion conversations
-- `server/src/services/chat.prompts.ts` — Prompts fiscaux (ITS, IS 28%, IBA, IRCM, IRF)
+- `server/src/services/chat.service.ts` — RAG hybride + Claude + gestion conversations
+- `server/src/services/chat.prompts.ts` — Prompts fiscaux (statique + `buildContextPrompt()` RAG)
+- `server/src/services/rag/` — Pipeline RAG complet (9 fichiers)
+- `server/src/config/` — 18 fichiers keyword-mappings + article-metadata
+- `server/src/scripts/ingest-articles.ts` — Ingestion 132+ JSON → PostgreSQL + Qdrant
+- `server/src/utils/logger.ts` — Winston logger
+- `server/src/utils/cache.ts` — Cache in-memory avec TTL
 - `server/src/routes/chat.ts` — Routes SSE streaming + CRUD conversations
-- `mobile/lib/api/chat.ts` — Client API SSE + axios
+- `mobile/lib/api/chat.ts` — Client API SSE + axios + type Citation
 - `mobile/app/(app)/chat/index.tsx` — Ecran chat
 
 ---
@@ -97,11 +111,11 @@ Ce rapport identifie tout ce qui manque a cgi-242 avant de pouvoir remplacer cgi
 
 | Fonctionnalite | cgi-engine | cgi-242 |
 |---|---|---|
-| Articles dynamiques (BDD) | CRUD, ingestion, indexation | Donnees JSON statiques embarquees |
-| Ingestion batch | `ingest-articles.ts` | Absent |
-| References entre articles | `ArticleReference` model | Absent |
-| Multi-versions CGI (2025, 2026) | Oui | 2026 uniquement |
-| Historique de recherche | `SearchHistory` model | Absent |
+| Articles dynamiques (BDD) | CRUD, ingestion, indexation | Ingestion batch → PostgreSQL + Qdrant |
+| Ingestion batch | `ingest-articles.ts` | `ingest-articles.ts` (adapte, Voyage AI) |
+| References entre articles | `ArticleReference` model | Schema present, pas encore exploite |
+| Multi-versions CGI (2025, 2026) | Oui | 2026 par defaut (support 2025 dans le code) |
+| Historique de recherche | `SearchHistory` model | Schema present, pas encore exploite |
 | Statistiques d'usage | `UsageStats` model | Absent |
 
 ---
@@ -239,10 +253,15 @@ Ce rapport identifie tout ce qui manque a cgi-242 avant de pouvoir remplacer cgi
 
 ### Etape 1 : Chat IA fiscal ✅ (fait le 26/02/2026)
 - Service chat avec Claude Haiku 4.5 (Anthropic SDK)
-- Prompts fiscaux CGI 2026 avec taux IS Art. 86A mis a jour (28% general, 35% etrangeres)
-- Streaming SSE (reponse mot par mot)
+- RAG complet : Voyage AI embeddings + Qdrant + recherche hybride 5 etapes
+- 80+ mappings keywords, 12 regles de routage, 8 factories par chapitre
+- Prompts fiscaux CGI 2026 avec contexte dynamique (articles reels)
+- Streaming SSE (reponse mot par mot + event citations)
 - Ecran chat mobile (bulles, auto-scroll, indicateur streaming)
 - CRUD conversations (Prisma)
+- Ingestion 132+ fichiers JSON → PostgreSQL + Qdrant
+- Winston logger (console coloree dev, JSON prod)
+- Fallback si Qdrant down (connaissances statiques)
 - Sidebar activee
 
 ### Etape 2 : Ajouter les fonctionnalites manquantes
@@ -267,7 +286,8 @@ Ce rapport identifie tout ce qui manque a cgi-242 avant de pouvoir remplacer cgi
 
 ## Conclusion
 
-cgi-242 couvre le coeur du produit : auth, chat IA fiscal, code CGI, simulateurs, dashboard.
+cgi-242 couvre le coeur du produit : auth, chat IA fiscal avec RAG complet, code CGI, simulateurs, dashboard.
+Le pipeline RAG (recherche hybride, embeddings Voyage AI, Qdrant) est au meme niveau que cgi-engine, avec en plus un fallback gracieux et des embeddings multilingues optimises francais.
 Il reste les fonctionnalites SaaS/entreprise (organisations, abonnements, paiements, audit) et la securite avancee (MFA, rate limiting, CSRF).
 cgi-engine peut etre supprime une fois ces elements migres.
 Les donnees utilisateurs existantes (BDD PostgreSQL) doivent etre preservees.
