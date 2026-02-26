@@ -60,7 +60,7 @@ export default function ParametresScreen() {
       {/* Header */}
       <View
         style={{
-          backgroundColor: "#00815d",
+          backgroundColor: "#1a1a1a",
           paddingTop: Platform.OS === "ios" ? 56 : 16,
           paddingBottom: 16,
           paddingHorizontal: 16,
