@@ -88,6 +88,55 @@ export class EmailService {
     await sendMail(email, subject, html);
   }
 
+  static async sendSubscriptionReminder(
+    email: string,
+    organizationName: string,
+    plan: string,
+    expiryDate: string,
+    daysLeft: number,
+  ): Promise<void> {
+    const urgency = daysLeft <= 1 ? '#dc2626' : daysLeft <= 7 ? '#d97706' : '#3b82f6';
+    const urgencyLabel = daysLeft === 0 ? "aujourd'hui" : `dans ${daysLeft} jour${daysLeft > 1 ? 's' : ''}`;
+    const subject = `CGI-242 — Votre abonnement ${plan} expire ${urgencyLabel}`;
+    const html = `
+      <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
+        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
+        <div style="background: ${urgency}10; border-left: 4px solid ${urgency}; padding: 16px; border-radius: 8px; margin: 20px 0;">
+          <p style="margin: 0; color: ${urgency}; font-weight: bold;">
+            Votre abonnement ${plan} pour ${organizationName} expire ${urgencyLabel}.
+          </p>
+        </div>
+        <p>Date d'expiration : <strong>${expiryDate}</strong></p>
+        <p>Sans renouvellement, votre organisation sera basculée sur le plan Gratuit avec un accès limité.</p>
+        <p>Contactez votre administrateur pour procéder au renouvellement.</p>
+        <p style="color: #6b7280; font-size: 14px;">CGI-242 — Code Général des Impôts du Congo</p>
+      </div>
+    `;
+    await sendMail(email, subject, html);
+  }
+
+  static async sendFiscalDeadlineReminder(
+    email: string,
+    deadlines: string[],
+  ): Promise<void> {
+    const subject = `CGI-242 — Échéances fiscales à venir (${deadlines.length})`;
+    const deadlineList = deadlines.map(d => `<li style="padding: 4px 0;">${d}</li>`).join('');
+    const html = `
+      <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
+        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
+        <p>Les échéances fiscales suivantes arrivent dans les <strong>7 prochains jours</strong> :</p>
+        <div style="background: #fffbeb; border-left: 4px solid #d97706; padding: 16px; border-radius: 8px; margin: 20px 0;">
+          <ul style="margin: 0; padding-left: 20px; color: #374151;">
+            ${deadlineList}
+          </ul>
+        </div>
+        <p>Assurez-vous que vos déclarations et paiements sont prêts.</p>
+        <p style="color: #6b7280; font-size: 14px;">Consultez l'application CGI-242 pour plus de détails sur les articles correspondants.</p>
+      </div>
+    `;
+    await sendMail(email, subject, html);
+  }
+
   static async sendMfaEnabled(email: string): Promise<void> {
     const subject = 'CGI-242 — Authentification à deux facteurs activée';
     const html = `

@@ -14,6 +14,8 @@ import auditRoutes from "./routes/audit.routes";
 import alertesFiscalesRoutes from "./routes/alertes-fiscales.routes";
 import userRoutes from "./routes/user.routes";
 import adminRoutes from "./routes/admin.routes";
+import ingestionRoutes from "./routes/ingestion.routes";
+import { startReminderCron } from "./services/reminder.service";
 
 const app = express();
 
@@ -63,6 +65,10 @@ app.use("/api/audit", auditRoutes);
 app.use("/api/alertes-fiscales", alertesFiscalesRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/ingestion", ingestionRoutes);
+
+// Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
+startReminderCron();
 
 // Health check
 app.get("/health", (_req, res) => {

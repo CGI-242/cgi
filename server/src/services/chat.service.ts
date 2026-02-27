@@ -9,6 +9,7 @@ import { createLogger } from "../utils/logger";
 import prisma from "../utils/prisma";
 import { trackUsage } from "./usage-stats.service";
 import { incrementQuota } from "./subscription.service";
+import { orchestrate } from "./orchestrator";
 
 const logger = createLogger('ChatService');
 const anthropic = new Anthropic(); // utilise ANTHROPIC_API_KEY env var
@@ -126,15 +127,20 @@ export async function sendMessage(
   // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
 
-  // 5. Choisir le prompt systeme
+  // 5. Choisir le prompt systeme + orchestration multi-agent
   let systemPrompt: string;
   if (isSimpleGreeting(content)) {
     systemPrompt = buildSimplePrompt();
   } else if (searchResults && searchResults.length > 0) {
     const context = buildContext(searchResults);
-    systemPrompt = buildContextPrompt(context);
+    const basePrompt = buildContextPrompt(context);
+    const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
+    systemPrompt = enhancedSystemPrompt;
+    logger.info(`Agent sélectionné: ${agent.name}`);
   } else {
-    systemPrompt = buildFiscalPrompt();
+    const basePrompt = buildFiscalPrompt();
+    const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
+    systemPrompt = enhancedSystemPrompt;
   }
 
   // 6. Appeler Claude
@@ -237,15 +243,20 @@ export async function* sendMessageStream(
   // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
 
-  // 5. Choisir le prompt systeme
+  // 5. Choisir le prompt systeme + orchestration multi-agent
   let systemPrompt: string;
   if (isSimpleGreeting(content)) {
     systemPrompt = buildSimplePrompt();
   } else if (searchResults && searchResults.length > 0) {
     const context = buildContext(searchResults);
-    systemPrompt = buildContextPrompt(context);
+    const basePrompt = buildContextPrompt(context);
+    const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
+    systemPrompt = enhancedSystemPrompt;
+    logger.info(`Agent sélectionné (stream): ${agent.name}`);
   } else {
-    systemPrompt = buildFiscalPrompt();
+    const basePrompt = buildFiscalPrompt();
+    const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
+    systemPrompt = enhancedSystemPrompt;
   }
 
   // 6. Appeler Claude en streaming
