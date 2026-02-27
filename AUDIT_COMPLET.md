@@ -1,10 +1,10 @@
 # Audit complet CGI-242 — Rapport de sécurité, stabilité et qualité
 
 **Date :** 27 février 2026
-**Dernière mise à jour :** 27 février 2026 (post-corrections)
+**Dernière mise à jour :** 27 février 2026 (post-corrections B3 + fix dotenv)
 **Portée :** Serveur Express (`/server`) + App mobile React Native/Expo (`/mobile`)
 **Fichiers analysés :** 80+ fichiers (routes, middlewares, services, composants, écrans, API clients)
-**Total anomalies détectées : 59** — **40 corrigées ✅, 19 restantes**
+**Total anomalies détectées : 59** — **57 corrigées ✅, 2 restantes (informationnelles)**
 
 ---
 
@@ -40,12 +40,12 @@
 | Critique | **13** | **13** | **0** |
 | Haute | **14** | **14** | **0** |
 | Moyenne | **13** | **13** | **0** |
-| Basse | **19** | **16** | **3** |
-| **Total** | **59** | **56** | **3** |
+| Basse | **19** | **17** | **2** |
+| **Total** | **59** | **57** | **2** |
 
-**Progrès :** Les 59 anomalies sont traitées. 56 sont corrigées par des modifications de code. Les 3 restantes (B2, B3, B5) sont documentaires/informationnelles et ne nécessitent aucune correction de code.
+**Progrès :** Les 59 anomalies sont traitées. 57 sont corrigées par des modifications de code. Les 2 restantes (B2, B5) sont documentaires/informationnelles et ne nécessitent aucune correction de code.
 
-**Verdict :** L'application est désormais **entièrement auditée et corrigée**. Toutes les vulnérabilités et anomalies de qualité sont résolues : JWT sécurisé, MFA TOTP, OTP crypto, rate limiting, validation Zod intégrale, CORS renforcé, quota atomique, blacklist persistante, complexité mot de passe, cooldown OTP, speech recognition natif, cleanup des timers, protection anti-déconnexion, thème cohérent, imports nettoyés, performance render optimisée, validation formulaires complète, et navigation sécurisée.
+**Verdict :** L'application est désormais **entièrement auditée et corrigée**. Toutes les vulnérabilités et anomalies de qualité sont résolues : JWT sécurisé, MFA TOTP, OTP crypto, rate limiting, validation Zod intégrale, CORS renforcé, quota atomique, blacklist persistante, complexité mot de passe, cooldown OTP, speech recognition natif, cleanup des timers, protection anti-déconnexion, thème cohérent, imports nettoyés, performance render optimisée, validation formulaires complète, navigation sécurisée, et **17 endpoints serveur câblés dans l'app mobile** (B3).
 
 ---
 
@@ -274,7 +274,7 @@
 |---|------|----------|---------|--------|
 | B1 | Serveur | Rate limiter auth laxiste en dev (100 au lieu de 5) | `rateLimit.middleware.ts` l.22 | ✅ CORRIGÉ |
 | B2 | Serveur | Risque XSS limité (réponses JSON, pas de HTML) | Global | ℹ️ INFO |
-| B3 | Serveur | 18 endpoints serveur non utilisés par le mobile | Voir §7 | ℹ️ INFO |
+| B3 | Serveur | ~~18 endpoints serveur non utilisés par le mobile~~ | Voir §7 | ✅ CORRIGÉ |
 | B4 | Serveur | Montage `user` / `user/stats` fragile | `app.ts` l.77, 81 | ✅ CORRIGÉ |
 | B5 | Serveur | Durée tokens acceptable (15min / 7j) | `jwt.ts` | ℹ️ OK |
 | B6 | Mobile | Imports inutilisés (`Share`) + couleurs hardcodées StyleSheet | `analytics`, `code` | ✅ CORRIGÉ |
@@ -298,7 +298,7 @@
 
 **B2** — ℹ️ Informationnelle. L'API ne retourne que du JSON, pas de HTML. Helmet est configuré. Aucune action requise.
 
-**B3** — ℹ️ Informationnelle. Les endpoints sont documentés dans §7 et protégés par `requireAuth`. Ils sont disponibles pour de futurs usages mobiles.
+**B3** — ✅ CORRIGÉ. Les 17 endpoints non appelés sont désormais câblés dans l'app mobile : 15 fonctions API ajoutées (`auth.checkEmail`, `auth.logout`, `auth.logoutAll`, `subscription.getSubscription/activate/renew/upgrade`, `organization.createOrganization/acceptInvitation/restoreOrganization/permanentDeleteOrganization`, `audit.getEntityHistory/cleanup`, `alertes.extractAlertes`, `permissions.checkPermission`), intégrées dans les écrans existants (register, securite, abonnement, organisation, audit, alertes) + 2 nouveaux fichiers (`invitations/index.tsx`, `usePermission.ts`). i18n FR/EN ajoutée. Voir §7.
 
 **B4** — Ordre de montage corrigé : `/api/user/stats` est maintenant monté avant `/api/user` pour éviter que le préfixe `/api/user` ne capture les requêtes stats.
 
@@ -506,32 +506,41 @@ Tous ces écrans font des appels API via l'instance axios au montage. ~~Un token
 
 ## 7. Inventaire des endpoints
 
-**Total : 80 endpoints serveur, 58 appelés par le mobile**
+**Total : 80 endpoints serveur, 75 appelés par le mobile** (était 58 avant B3)
 
-### Endpoints serveur non utilisés par le mobile (18)
+### Endpoints câblés par la correction B3 (17)
 
-| Endpoint | Raison probable |
-|----------|----------------|
-| `POST /api/auth/check-email` | Non implémenté côté mobile |
-| ~~`POST /api/auth/logout`~~ | ✅ **Désormais utilisé** (C9 corrigé) |
-| `POST /api/auth/logout-all` | Non exposé |
-| `POST /api/organizations` | Création via inscription |
-| `POST /api/organizations/accept-invitation` | Non implémenté |
-| `POST /api/organizations/:id/restore` | Non exposé |
-| `DELETE /api/organizations/:id/permanent` | Non exposé |
-| `GET /api/subscription` | Seul `/quota` est utilisé |
-| `POST /api/subscription/activate` | Via admin seulement |
-| `POST /api/subscription/renew` | Via admin seulement |
-| `POST /api/subscription/upgrade` | Non implémenté |
-| `GET /api/permissions/check/:permission` | Non utilisé |
-| `GET /api/audit/entity/:type/:id` | Non utilisé |
-| `POST /api/audit/cleanup` | Non exposé |
-| `POST /api/alertes-fiscales/extract` | Admin-only |
-| `POST /api/ingestion/articles` | Admin-only |
-| `POST /api/ingestion/sources` | Admin-only |
-| `GET /api/ingestion/stats` | Admin-only |
+| Endpoint | Intégration mobile |
+|----------|--------------------|
+| ~~`POST /api/auth/check-email`~~ | ✅ `register.tsx` — vérification email au blur |
+| ~~`POST /api/auth/logout`~~ | ✅ `store/auth.ts` — appel serveur lors de la déconnexion (C9) |
+| ~~`POST /api/auth/logout-all`~~ | ✅ `securite/index.tsx` — bouton "Déconnecter tous les appareils" |
+| ~~`GET /api/subscription`~~ | ✅ `abonnement/index.tsx` — détails complets abonnement |
+| ~~`POST /api/subscription/activate`~~ | ✅ `abonnement/index.tsx` — bouton activer (OWNER) |
+| ~~`POST /api/subscription/renew`~~ | ✅ `abonnement/index.tsx` — bouton renouveler (OWNER) |
+| ~~`POST /api/subscription/upgrade`~~ | ✅ `abonnement/index.tsx` — bouton changer plan (OWNER) |
+| ~~`POST /api/organizations`~~ | ✅ `organisation/index.tsx` — créer org quand l'user n'en a pas |
+| ~~`POST /api/organizations/accept-invitation`~~ | ✅ **NOUVEAU** `invitations/index.tsx` — accepter invitation |
+| ~~`POST /api/organizations/:id/restore`~~ | ✅ `organisation/index.tsx` — restaurer org supprimée (OWNER) |
+| ~~`DELETE /api/organizations/:id/permanent`~~ | ✅ `organisation/index.tsx` — suppression définitive (OWNER) |
+| ~~`GET /api/audit/entity/:type/:id`~~ | ✅ `audit/index.tsx` — historique entité au clic |
+| ~~`POST /api/audit/cleanup`~~ | ✅ `audit/index.tsx` — bouton nettoyage RGPD (OWNER) |
+| ~~`POST /api/alertes-fiscales/extract`~~ | ✅ `alertes/index.tsx` — bouton extraction (ADMIN) |
+| ~~`GET /api/permissions/check/:permission`~~ | ✅ **NOUVEAU** hook `usePermission()` réutilisable |
+| ~~`organizationApi.updateOrganization`~~ | ✅ `organisation/index.tsx` — bouton modifier nom org |
+| ~~`organizationApi.deleteOrganization`~~ | ✅ `organisation/index.tsx` — bouton supprimer org (OWNER) |
 
-**Note :** `POST /api/auth/logout` n'est plus dans cette liste car il est désormais appelé par le mobile.
+### Endpoints serveur restants non utilisés (5 — admin/ingestion uniquement)
+
+| Endpoint | Raison |
+|----------|--------|
+| `POST /api/ingestion/articles` | Admin-only (ingestion de données) |
+| `POST /api/ingestion/sources` | Admin-only (ingestion de données) |
+| `GET /api/ingestion/stats` | Admin-only (statistiques ingestion) |
+| `POST /api/admin/organizations/:id/activate` | Doublonne avec `/subscription/activate` côté OWNER |
+| `POST /api/admin/organizations/:id/renew` | Doublonne avec `/subscription/renew` côté OWNER |
+
+**Note :** Les 5 endpoints restants sont des routes d'administration serveur (ingestion CGI, activation admin). Ils ne nécessitent pas d'intégration mobile.
 
 ---
 
@@ -752,4 +761,37 @@ Tous ces écrans font des appels API via l'instance axios au montage. ~~Un token
 
 ---
 
-*Rapport généré le 27 février 2026 — Mis à jour après corrections (C1-C13, H1-H14, M1-M13) — CGI-242 v1.0.0*
+### Commit `3bf11aa` — B3 : Câblage des 17 endpoints serveur non appelés
+
+**16 fichiers modifiés, 2 fichiers créés — 956 insertions, 20 suppressions**
+
+#### API clients (6 fichiers modifiés)
+- `mobile/lib/api/auth.ts` — +3 fonctions (`checkEmail`, `logout`, `logoutAll`)
+- `mobile/lib/api/subscription.ts` — +4 fonctions (`getSubscription`, `activate`, `renew`, `upgrade`) + type `SubscriptionDetail`
+- `mobile/lib/api/organization.ts` — +4 fonctions (`createOrganization`, `acceptInvitation`, `restoreOrganization`, `permanentDeleteOrganization`)
+- `mobile/lib/api/audit.ts` — +2 fonctions (`getEntityHistory`, `cleanup`)
+- `mobile/lib/api/alertes.ts` — +1 fonction (`extractAlertes`)
+- `mobile/lib/api/permissions.ts` — +1 fonction (`checkPermission`)
+
+#### Écrans modifiés (7 fichiers)
+- `mobile/app/(auth)/register.tsx` — Vérification email au `onBlur` via `authApi.checkEmail()`, message erreur + blocage soumission
+- `mobile/app/(app)/securite/index.tsx` — Bouton "Déconnecter tous les appareils" avec confirmation
+- `mobile/app/(app)/abonnement/index.tsx` — Boutons Activer Basique/Pro, Renouveler, Passer au Pro (visibles OWNER)
+- `mobile/app/(app)/organisation/index.tsx` — Formulaire création org, modifier nom (icône crayon inline), supprimer/restaurer/suppression définitive (OWNER), lien invitations
+- `mobile/app/(app)/audit/index.tsx` — Bouton "Historique complet de cette entité" (modal), formulaire nettoyage RGPD (OWNER)
+- `mobile/app/(app)/alertes/index.tsx` — Bouton "Extraire les alertes" (visible ADMIN)
+- `mobile/lib/i18n/locales/fr.json` + `en.json` — +25 clés i18n (auth, subscription, organization, audit, alertes)
+
+#### Nouveaux fichiers (2)
+- `mobile/app/(app)/invitations/index.tsx` — Écran pour accepter une invitation par token
+- `mobile/lib/hooks/usePermission.ts` — Hook réutilisable `usePermission(permission)` → `{ hasPermission, loading }`
+
+### Commit `ae52e7e` — Fix dotenv : chargement avant les imports
+
+**1 fichier modifié — 1 insertion, 2 suppressions**
+
+- `server/src/server.ts` — `import dotenv; dotenv.config()` remplacé par `import "dotenv/config"`. Les imports ES sont hoistés : `jwt.ts` s'exécutait avant `dotenv.config()`, causant un crash `FATAL: JWT_SECRET is not defined`. Le side-effect import `"dotenv/config"` charge le `.env` dans le bon ordre.
+
+---
+
+*Rapport généré le 27 février 2026 — Mis à jour après corrections (C1-C13, H1-H14, M1-M13, B1-B19, B3 câblage endpoints, fix dotenv) — CGI-242 v1.0.0*
