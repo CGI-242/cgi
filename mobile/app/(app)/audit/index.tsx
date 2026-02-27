@@ -6,13 +6,18 @@ import {
   ScrollView,
   ActivityIndicator,
   Platform,
+  Alert,
+  TextInput,
+  Modal,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import {
   auditApi,
   type AuditLog,
+  type AuditPaginatedResult,
   type AuditStats,
 } from "@/lib/api/audit";
+import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
@@ -54,11 +59,24 @@ function formatTimestamp(iso: string): string {
 
 export default function AuditScreen() {
   const { colors } = useTheme();
+  const user = useAuthStore((s) => s.user);
+  const isOwner = user?.role === "OWNER";
+
   const [logs, setLogs] = useState<AuditLog[]>([]);
   const [stats, setStats] = useState<AuditStats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [actionLoading, setActionLoading] = useState(false);
+
+  // Historique entité
+  const [entityHistory, setEntityHistory] = useState<AuditLog[] | null>(null);
+  const [entityHistoryLoading, setEntityHistoryLoading] = useState(false);
+  const [showEntityHistory, setShowEntityHistory] = useState(false);
+
+  // Nettoyage RGPD
+  const [showCleanup, setShowCleanup] = useState(false);
+  const [retentionDays, setRetentionDays] = useState("365");
 
   // Pagination
   const [page, setPage] = useState(1);
@@ -95,6 +113,55 @@ export default function AuditScreen() {
     loadData();
   }, [loadData]);
 
+  const handleEntityHistory = async (log: AuditLog) => {
+    if (!log.entityType || !log.entityId) return;
+    setEntityHistoryLoading(true);
+    setShowEntityHistory(true);
+    try {
+      const result = await auditApi.getEntityHistory(log.entityType, log.entityId);
+      setEntityHistory(result.logs);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : "Erreur";
+      Alert.alert("Erreur", msg);
+      setShowEntityHistory(false);
+    } finally {
+      setEntityHistoryLoading(false);
+    }
+  };
+
+  const handleCleanup = () => {
+    const days = parseInt(retentionDays, 10);
+    if (isNaN(days) || days < 1) {
+      Alert.alert("Erreur", "Nombre de jours invalide");
+      return;
+    }
+    const msg = `Supprimer les logs d'audit de plus de ${days} jours ? Cette action est irréversible.`;
+    const doCleanup = async () => {
+      setActionLoading(true);
+      try {
+        const result = await auditApi.cleanup(days);
+        Alert.alert("Nettoyage terminé", `${result.deletedCount} log(s) supprimé(s).`);
+        setShowCleanup(false);
+        await loadData();
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : "Erreur";
+        Alert.alert("Erreur", msg);
+      } finally {
+        setActionLoading(false);
+      }
+    };
+
+    if (Platform.OS === "web") {
+      if (!window.confirm(msg)) return;
+      doCleanup();
+    } else {
+      Alert.alert("Nettoyage RGPD", msg, [
+        { text: "Annuler", style: "cancel" },
+        { text: "Supprimer", style: "destructive", onPress: doCleanup },
+      ]);
+    }
+  };
+
   const actions = stats ? Object.keys(stats.actionCounts) : [];
 
   if (loading) {
@@ -109,12 +176,66 @@ export default function AuditScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
-        {/* Toolbar: refresh */}
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "flex-end", marginBottom: 12 }}>
+        {/* Toolbar: refresh + cleanup */}
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "flex-end", marginBottom: 12, gap: 8 }}>
+          {isOwner && (
+            <TouchableOpacity
+              onPress={() => setShowCleanup(!showCleanup)}
+              style={{ flexDirection: "row", alignItems: "center", backgroundColor: "#fef2f2", paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8 }}
+            >
+              <Ionicons name="trash-outline" size={16} color="#dc2626" style={{ marginRight: 4 }} />
+              <Text style={{ color: "#dc2626", fontSize: 13, fontWeight: "600" }}>Nettoyage RGPD</Text>
+            </TouchableOpacity>
+          )}
           <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
             <Ionicons name="refresh-outline" size={20} color={colors.accent} />
           </TouchableOpacity>
         </View>
+
+        {/* Formulaire nettoyage RGPD */}
+        {showCleanup && isOwner && (
+          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: "#fca5a5", padding: 16, marginBottom: 12 }}>
+            <Text style={{ fontSize: 14, fontWeight: "600", color: "#dc2626", marginBottom: 8 }}>Nettoyage RGPD</Text>
+            <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
+              Supprimer les logs plus anciens que le nombre de jours spécifié.
+            </Text>
+            <TextInput
+              value={retentionDays}
+              onChangeText={(v) => setRetentionDays(v.replace(/[^0-9]/g, ""))}
+              placeholder="365"
+              placeholderTextColor={colors.textMuted}
+              keyboardType="number-pad"
+              style={{
+                backgroundColor: colors.background,
+                borderRadius: 8,
+                paddingHorizontal: 14,
+                paddingVertical: 10,
+                fontSize: 15,
+                color: colors.text,
+                marginBottom: 12,
+              }}
+            />
+            <View style={{ flexDirection: "row", gap: 8 }}>
+              <TouchableOpacity
+                onPress={() => setShowCleanup(false)}
+                style={{ flex: 1, backgroundColor: colors.background, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+              >
+                <Text style={{ color: colors.text, fontWeight: "600", fontSize: 14 }}>Annuler</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={handleCleanup}
+                disabled={actionLoading}
+                style={{ flex: 1, backgroundColor: "#dc2626", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator size="small" color="#fff" />
+                ) : (
+                  <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>Nettoyer</Text>
+                )}
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
 
         {error && (
           <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
@@ -213,12 +334,25 @@ export default function AuditScreen() {
                 <Ionicons name={isExpanded ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
               </View>
 
-              {isExpanded && log.changes && (
-                <View style={{ marginTop: 10, backgroundColor: colors.background, borderRadius: 8, padding: 12, borderWidth: 1, borderColor: colors.border }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary, marginBottom: 4 }}>Changements :</Text>
-                  <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 11, color: colors.text }}>
-                    {JSON.stringify(log.changes, null, 2)}
-                  </Text>
+              {isExpanded && (
+                <View style={{ marginTop: 10 }}>
+                  {log.changes && (
+                    <View style={{ backgroundColor: colors.background, borderRadius: 8, padding: 12, borderWidth: 1, borderColor: colors.border, marginBottom: 8 }}>
+                      <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary, marginBottom: 4 }}>Changements :</Text>
+                      <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 11, color: colors.text }}>
+                        {JSON.stringify(log.changes, null, 2)}
+                      </Text>
+                    </View>
+                  )}
+                  {log.entityType && log.entityId && (
+                    <TouchableOpacity
+                      onPress={() => handleEntityHistory(log)}
+                      style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6 }}
+                    >
+                      <Ionicons name="time-outline" size={16} color={colors.primary} style={{ marginRight: 6 }} />
+                      <Text style={{ fontSize: 13, color: colors.primary, fontWeight: "600" }}>Historique complet de cette entité</Text>
+                    </TouchableOpacity>
+                  )}
                 </View>
               )}
             </TouchableOpacity>
@@ -265,6 +399,52 @@ export default function AuditScreen() {
           </View>
         )}
       </ScrollView>
+
+      {/* Modal historique entité */}
+      {showEntityHistory && (
+        <Modal
+          visible={showEntityHistory}
+          animationType="slide"
+          transparent
+          onRequestClose={() => { setShowEntityHistory(false); setEntityHistory(null); }}
+        >
+          <View style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: "flex-end" }}>
+            <View style={{ backgroundColor: colors.card, borderTopLeftRadius: 20, borderTopRightRadius: 20, maxHeight: "80%", padding: 20 }}>
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>Historique de l'entité</Text>
+                <TouchableOpacity onPress={() => { setShowEntityHistory(false); setEntityHistory(null); }}>
+                  <Ionicons name="close" size={24} color={colors.textSecondary} />
+                </TouchableOpacity>
+              </View>
+
+              {entityHistoryLoading ? (
+                <ActivityIndicator size="large" color={colors.primary} style={{ marginVertical: 40 }} />
+              ) : (
+                <ScrollView style={{ maxHeight: 500 }}>
+                  {entityHistory && entityHistory.length > 0 ? (
+                    entityHistory.map((log) => {
+                      const actionInfo = ACTION_ICONS[log.action] || { icon: "ellipse-outline" as IoniconsName, color: "#6b7280" };
+                      return (
+                        <View key={log.id} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+                          <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: `${actionInfo.color}15`, justifyContent: "center", alignItems: "center", marginRight: 10 }}>
+                            <Ionicons name={actionInfo.icon} size={16} color={actionInfo.color} />
+                          </View>
+                          <View style={{ flex: 1 }}>
+                            <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{ACTION_LABELS[log.action] || log.action}</Text>
+                            <Text style={{ fontSize: 11, color: colors.textMuted }}>{log.actorEmail} — {formatTimestamp(log.createdAt)}</Text>
+                          </View>
+                        </View>
+                      );
+                    })
+                  ) : (
+                    <Text style={{ color: colors.textMuted, textAlign: "center", paddingVertical: 20 }}>Aucun historique</Text>
+                  )}
+                </ScrollView>
+              )}
+            </View>
+          </View>
+        </Modal>
+      )}
     </View>
   );
 }

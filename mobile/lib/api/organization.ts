@@ -79,4 +79,23 @@ export const organizationApi = {
   cancelInvitation: async (orgId: string, invId: string): Promise<void> => {
     await api.delete(`/organizations/${orgId}/invitations/${invId}`);
   },
+
+  createOrganization: async (name: string): Promise<Organization> => {
+    const { data } = await api.post<Organization>("/organizations", { name });
+    return data;
+  },
+
+  acceptInvitation: async (token: string): Promise<{ message: string }> => {
+    const { data } = await api.post<{ message: string }>("/organizations/accept-invitation", { token });
+    return data;
+  },
+
+  restoreOrganization: async (id: string): Promise<{ message: string }> => {
+    const { data } = await api.post<{ message: string }>(`/organizations/${id}/restore`);
+    return data;
+  },
+
+  permanentDeleteOrganization: async (id: string): Promise<void> => {
+    await api.delete(`/organizations/${id}/permanent`);
+  },
 };

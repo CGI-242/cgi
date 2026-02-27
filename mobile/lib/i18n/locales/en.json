@@ -102,7 +102,11 @@
     "sessionExpired": "Session expired",
     "sessionExpiredMessage": "Your session has expired. Please log in again to continue.",
     "passwordComplexity": "Password must contain at least one uppercase letter, one lowercase letter and one digit",
-    "resendCooldown": "Resend in {{seconds}}s"
+    "resendCooldown": "Resend in {{seconds}}s",
+    "emailAlreadyExists": "This email address is already in use",
+    "logoutAll": "Log out all devices",
+    "logoutAllConfirm": "Log out all devices? You will also be logged out.",
+    "logoutAllSuccess": "All devices have been logged out"
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -365,6 +369,36 @@
       "enterResult": "Enter taxable income to see calculation"
     }
   },
+  "subscription": {
+    "activate": "Activate subscription",
+    "activateConfirm": "Activate the {{plan}} plan?",
+    "renew": "Renew subscription",
+    "renewConfirm": "Renew your subscription?",
+    "upgrade": "Change plan",
+    "upgradeConfirm": "Upgrade to the {{plan}} plan?",
+    "manageTitle": "Subscription management"
+  },
+  "organization": {
+    "create": "Create an organization",
+    "createPlaceholder": "Organization name",
+    "editName": "Edit name",
+    "delete": "Delete organization",
+    "deleteConfirm": "Delete the organization? This action is reversible for 30 days.",
+    "restore": "Restore organization",
+    "permanentDelete": "Permanently delete",
+    "permanentDeleteConfirm": "Permanently delete the organization? This action is IRREVERSIBLE.",
+    "acceptInvitation": "Accept invitation",
+    "invitationToken": "Invitation token",
+    "invitationAccepted": "Invitation accepted successfully",
+    "dangerZone": "DANGER ZONE"
+  },
+  "audit": {
+    "entityHistory": "Entity history",
+    "entityHistoryFull": "Full history of this entity",
+    "cleanup": "GDPR cleanup",
+    "cleanupConfirm": "Delete logs older than {{days}} days?",
+    "cleanupSuccess": "{{count}} log(s) deleted"
+  },
   "alertes": {
     "title": "Tax Alerts",
     "subtitle": "Regulatory watch",
@@ -374,6 +408,8 @@
     "penalties": "Penalties",
     "obligations": "Obligations",
     "noAlerts": "No tax alerts",
+    "extract": "Extract alerts",
+    "extractSuccess": "{{count}} alert(s) extracted",
     "urgency": {
       "high": "High",
       "medium": "Medium",

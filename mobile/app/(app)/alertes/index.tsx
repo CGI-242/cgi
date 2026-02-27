@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
+  Alert,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -13,6 +14,7 @@ import {
   type AlerteFiscale,
   type AlerteStats,
 } from "@/lib/api/alertes";
+import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
 const URGENCE_COLORS: Record<string, string> = {
@@ -30,9 +32,13 @@ const URGENCE_TRANSLATION_KEYS: Record<string, string> = {
 export default function AlertesScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const user = useAuthStore((s) => s.user);
+  const isAdmin = user?.role === "ADMIN" || user?.role === "OWNER";
+
   const [alertes, setAlertes] = useState<AlerteFiscale[]>([]);
   const [stats, setStats] = useState<AlerteStats | null>(null);
   const [loading, setLoading] = useState(true);
+  const [extractLoading, setExtractLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
@@ -65,6 +71,20 @@ export default function AlertesScreen() {
     loadData();
   }, [loadData]);
 
+  const handleExtract = async () => {
+    setExtractLoading(true);
+    try {
+      const result = await alertesApi.extractAlertes();
+      Alert.alert(t("alertes.extract"), `${result.count} alerte(s) extraite(s).`);
+      await loadData();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : "Erreur";
+      Alert.alert(t("common.error"), msg);
+    } finally {
+      setExtractLoading(false);
+    }
+  };
+
   const types = stats?.parType ? Object.keys(stats.parType) : [];
   const categories = stats?.parCategorie ? Object.keys(stats.parCategorie) : [];
 
@@ -79,8 +99,24 @@ export default function AlertesScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Refresh */}
-      <View style={{ flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingTop: 8 }}>
+      {/* Toolbar: extract + refresh */}
+      <View style={{ flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingTop: 8, gap: 8 }}>
+        {isAdmin && (
+          <TouchableOpacity
+            onPress={handleExtract}
+            disabled={extractLoading}
+            style={{ flexDirection: "row", alignItems: "center", backgroundColor: `${colors.primary}15`, paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8 }}
+          >
+            {extractLoading ? (
+              <ActivityIndicator size="small" color={colors.primary} />
+            ) : (
+              <>
+                <Ionicons name="download-outline" size={16} color={colors.primary} style={{ marginRight: 4 }} />
+                <Text style={{ color: colors.primary, fontSize: 13, fontWeight: "600" }}>{t("alertes.extract")}</Text>
+              </>
+            )}
+          </TouchableOpacity>
+        )}
         <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
           <Ionicons name="refresh-outline" size={20} color={colors.accent} />
         </TouchableOpacity>

@@ -48,4 +48,14 @@ export const auditApi = {
     const { data } = await api.get<AuditStats>("/audit/stats", { params });
     return data;
   },
+
+  getEntityHistory: async (entityType: string, entityId: string): Promise<AuditPaginatedResult> => {
+    const { data } = await api.get<AuditPaginatedResult>(`/audit/entity/${entityType}/${entityId}`);
+    return data;
+  },
+
+  cleanup: async (retentionDays: number): Promise<{ message: string; deletedCount: number }> => {
+    const { data } = await api.post<{ message: string; deletedCount: number }>("/audit/cleanup", { retentionDays });
+    return data;
+  },
 };

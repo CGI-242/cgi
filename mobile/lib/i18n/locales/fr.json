@@ -102,7 +102,11 @@
     "sessionExpired": "Session expirée",
     "sessionExpiredMessage": "Votre session a expiré. Veuillez vous reconnecter pour continuer.",
     "passwordComplexity": "Le mot de passe doit contenir au moins une majuscule, une minuscule et un chiffre",
-    "resendCooldown": "Renvoyer dans {{seconds}}s"
+    "resendCooldown": "Renvoyer dans {{seconds}}s",
+    "emailAlreadyExists": "Cette adresse est déjà utilisée",
+    "logoutAll": "Déconnecter tous les appareils",
+    "logoutAllConfirm": "Déconnecter tous les appareils ? Vous serez également déconnecté.",
+    "logoutAllSuccess": "Tous les appareils ont été déconnectés"
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -365,6 +369,36 @@
       "enterResult": "Saisissez le résultat fiscal pour voir le calcul"
     }
   },
+  "subscription": {
+    "activate": "Activer l'abonnement",
+    "activateConfirm": "Activer le plan {{plan}} ?",
+    "renew": "Renouveler l'abonnement",
+    "renewConfirm": "Renouveler votre abonnement ?",
+    "upgrade": "Changer de plan",
+    "upgradeConfirm": "Passer au plan {{plan}} ?",
+    "manageTitle": "Gestion de l'abonnement"
+  },
+  "organization": {
+    "create": "Créer une organisation",
+    "createPlaceholder": "Nom de l'organisation",
+    "editName": "Modifier le nom",
+    "delete": "Supprimer l'organisation",
+    "deleteConfirm": "Supprimer l'organisation ? Cette action est réversible pendant 30 jours.",
+    "restore": "Restaurer l'organisation",
+    "permanentDelete": "Supprimer définitivement",
+    "permanentDeleteConfirm": "Supprimer définitivement l'organisation ? Cette action est IRRÉVERSIBLE.",
+    "acceptInvitation": "Accepter l'invitation",
+    "invitationToken": "Token d'invitation",
+    "invitationAccepted": "Invitation acceptée avec succès",
+    "dangerZone": "ZONE DANGER"
+  },
+  "audit": {
+    "entityHistory": "Historique de l'entité",
+    "entityHistoryFull": "Historique complet de cette entité",
+    "cleanup": "Nettoyage RGPD",
+    "cleanupConfirm": "Supprimer les logs de plus de {{days}} jours ?",
+    "cleanupSuccess": "{{count}} log(s) supprimé(s)"
+  },
   "alertes": {
     "title": "Alertes Fiscales",
     "subtitle": "Veille réglementaire",
@@ -374,6 +408,8 @@
     "penalties": "Sanctions",
     "obligations": "Obligations",
     "noAlerts": "Aucune alerte fiscale",
+    "extract": "Extraire les alertes",
+    "extractSuccess": "{{count}} alerte(s) extraite(s)",
     "urgency": {
       "high": "Haute",
       "medium": "Moyenne",

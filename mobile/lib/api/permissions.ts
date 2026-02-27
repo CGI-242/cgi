@@ -60,4 +60,9 @@ export const permissionsApi = {
     const { data } = await api.post<{ message: string }>(`/permissions/members/${userId}/reset`);
     return data;
   },
+
+  checkPermission: async (permission: string): Promise<{ hasPermission: boolean }> => {
+    const { data } = await api.get<{ hasPermission: boolean }>(`/permissions/check/${permission}`);
+    return data;
+  },
 };

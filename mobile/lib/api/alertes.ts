@@ -40,4 +40,9 @@ export const alertesApi = {
     const { data } = await api.get<AlerteFiscale[]>(`/alertes-fiscales/article/${articleNumber}`);
     return data;
   },
+
+  extractAlertes: async (): Promise<{ message: string; count: number }> => {
+    const { data } = await api.post<{ message: string; count: number }>("/alertes-fiscales/extract");
+    return data;
+  },
 };

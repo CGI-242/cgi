@@ -40,4 +40,18 @@ export const authApi = {
     const { data } = await api.post<MessageResponse>("/auth/reset-password", payload);
     return data;
   },
+
+  checkEmail: async (email: string): Promise<{ exists: boolean }> => {
+    const { data } = await api.post<{ exists: boolean }>("/auth/check-email", { email });
+    return data;
+  },
+
+  logout: async (): Promise<void> => {
+    await api.post("/auth/logout");
+  },
+
+  logoutAll: async (): Promise<{ message: string }> => {
+    const { data } = await api.post<{ message: string }>("/auth/logout-all");
+    return data;
+  },
 };

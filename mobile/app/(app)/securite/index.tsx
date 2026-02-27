@@ -13,12 +13,15 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import * as Clipboard from "expo-clipboard";
 import { mfaApi, type MfaStatus, type MfaSetupResult } from "@/lib/api/mfa";
+import { authApi } from "@/lib/api/auth";
+import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
 type SetupStep = "idle" | "qr" | "verify" | "backup";
 
 export default function SecuriteScreen() {
   const { colors } = useTheme();
+  const logout = useAuthStore((s) => s.logout);
   const [status, setStatus] = useState<MfaStatus | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -135,6 +138,32 @@ export default function SecuriteScreen() {
       Alert.alert("Confirmer", msg, [
         { text: "Annuler", style: "cancel" },
         { text: "Régénérer", onPress: doRegenerate },
+      ]);
+    }
+  };
+
+  const handleLogoutAll = () => {
+    const msg = "Déconnecter tous les appareils ? Vous serez également déconnecté de cet appareil.";
+    const doLogoutAll = async () => {
+      setActionLoading(true);
+      try {
+        await authApi.logoutAll();
+        await logout();
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : "Erreur";
+        Alert.alert("Erreur", errMsg);
+      } finally {
+        setActionLoading(false);
+      }
+    };
+
+    if (Platform.OS === "web") {
+      if (!window.confirm(msg)) return;
+      doLogoutAll();
+    } else {
+      Alert.alert("Confirmer", msg, [
+        { text: "Annuler", style: "cancel" },
+        { text: "Déconnecter tout", style: "destructive", onPress: doLogoutAll },
       ]);
     }
   };
@@ -386,6 +415,20 @@ export default function SecuriteScreen() {
             )}
           </>
         )}
+
+        {/* Déconnecter tous les appareils */}
+        <View style={{ marginTop: 24, borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 20 }}>
+          <TouchableOpacity
+            onPress={handleLogoutAll}
+            disabled={actionLoading}
+            style={{ backgroundColor: "#fef2f2", borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <Ionicons name="log-out-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
+              <Text style={{ color: "#dc2626", fontWeight: "600", fontSize: 14 }}>Déconnecter tous les appareils</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </View>
   );
