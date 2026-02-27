@@ -6,10 +6,8 @@ import {
   ScrollView,
   ActivityIndicator,
   Alert,
-  Platform,
   Share,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import {
   analyticsApi,
@@ -17,10 +15,12 @@ import {
   type TimeSeriesPoint,
   type MemberStat,
 } from "@/lib/api/analytics";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
 export default function AnalyticsScreen() {
+  const { colors } = useTheme();
   const [dashboard, setDashboard] = useState<DashboardData | null>(null);
   const [timeSeries, setTimeSeries] = useState<TimeSeriesPoint[]>([]);
   const [memberStats, setMemberStats] = useState<MemberStat[]>([]);
@@ -74,9 +74,9 @@ export default function AnalyticsScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f3f4f6" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
       </View>
     );
   }
@@ -91,43 +91,29 @@ export default function AnalyticsScreen() {
     : [];
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingTop: Platform.OS === "ios" ? 56 : 16, paddingBottom: 16, paddingHorizontal: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-              <Ionicons name="arrow-back" size={22} color="#fff" />
-            </TouchableOpacity>
-            <View>
-              <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Analytiques</Text>
-              <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Statistiques d'utilisation</Text>
-            </View>
-          </View>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-            {/* Sélecteur période */}
-            {[30, 60].map((d) => (
-              <TouchableOpacity
-                key={d}
-                onPress={() => setDays(d)}
-                style={{
-                  paddingHorizontal: 10,
-                  paddingVertical: 4,
-                  borderRadius: 6,
-                  backgroundColor: days === d ? "#00815d" : "rgba(255,255,255,0.1)",
-                }}
-              >
-                <Text style={{ fontSize: 12, fontWeight: "600", color: "#fff" }}>{d}j</Text>
-              </TouchableOpacity>
-            ))}
-            <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
-              <Ionicons name="refresh-outline" size={20} color="#00c17c" />
-            </TouchableOpacity>
-          </View>
-        </View>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
+        {/* Toolbar: period selector + refresh */}
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "flex-end", marginBottom: 12, gap: 8 }}>
+          {[30, 60].map((d) => (
+            <TouchableOpacity
+              key={d}
+              onPress={() => setDays(d)}
+              style={{
+                paddingHorizontal: 10,
+                paddingVertical: 4,
+                borderRadius: 6,
+                backgroundColor: days === d ? colors.primary : colors.border,
+              }}
+            >
+              <Text style={{ fontSize: 12, fontWeight: "600", color: days === d ? "#fff" : colors.text }}>{d}j</Text>
+            </TouchableOpacity>
+          ))}
+          <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
+            <Ionicons name="refresh-outline" size={20} color={colors.accent} />
+          </TouchableOpacity>
+        </View>
+
         {error && (
           <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
@@ -141,18 +127,18 @@ export default function AnalyticsScreen() {
               key={card.label}
               style={{
                 width: "48%",
-                backgroundColor: "#fff",
+                backgroundColor: colors.card,
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: "#e5e7eb",
+                borderColor: colors.border,
                 padding: 16,
               }}
             >
               <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: card.bg, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
                 <Ionicons name={card.icon} size={18} color={card.color} />
               </View>
-              <Text style={{ fontSize: 22, fontWeight: "800", color: "#1f2937" }}>{card.value}</Text>
-              <Text style={{ fontSize: 12, color: "#6b7280", marginTop: 2 }}>{card.label}</Text>
+              <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{card.value}</Text>
+              <Text style={{ fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{card.label}</Text>
             </View>
           ))}
         </View>
@@ -160,26 +146,26 @@ export default function AnalyticsScreen() {
         {/* Time series */}
         {timeSeries.length > 0 && (
           <>
-            <Text style={{ color: "#6b7280", fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               ACTIVITÉ ({days} DERNIERS JOURS)
             </Text>
-            <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 20 }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
               {timeSeries.slice(-14).map((point) => {
                 const widthPercent = Math.max((point.count / maxCount) * 100, 2);
                 return (
                   <View key={point.date} style={{ flexDirection: "row", alignItems: "center", marginBottom: 6 }}>
-                    <Text style={{ fontSize: 11, color: "#6b7280", width: 50 }}>{formatDate(point.date)}</Text>
+                    <Text style={{ fontSize: 11, color: colors.textSecondary, width: 50 }}>{formatDate(point.date)}</Text>
                     <View style={{ flex: 1, marginHorizontal: 8 }}>
                       <View
                         style={{
                           height: 16,
                           width: `${widthPercent}%` as `${number}%`,
-                          backgroundColor: "#00815d",
+                          backgroundColor: colors.primary,
                           borderRadius: 4,
                         }}
                       />
                     </View>
-                    <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", width: 30, textAlign: "right" }}>{point.count}</Text>
+                    <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, width: 30, textAlign: "right" }}>{point.count}</Text>
                   </View>
                 );
               })}
@@ -190,10 +176,10 @@ export default function AnalyticsScreen() {
         {/* Stats membres */}
         {memberStats.length > 0 && (
           <>
-            <Text style={{ color: "#6b7280", fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               STATISTIQUES MEMBRES
             </Text>
-            <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", overflow: "hidden", marginBottom: 20 }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, overflow: "hidden", marginBottom: 20 }}>
               {memberStats.map((member, index) => {
                 const initials = (member.name || member.email).substring(0, 2).toUpperCase();
                 return (
@@ -204,21 +190,21 @@ export default function AnalyticsScreen() {
                       alignItems: "center",
                       padding: 14,
                       borderTopWidth: index > 0 ? 1 : 0,
-                      borderTopColor: "#f3f4f6",
+                      borderTopColor: colors.background,
                     }}
                   >
                     <View style={{ width: 34, height: 34, borderRadius: 17, backgroundColor: "#eff6ff", justifyContent: "center", alignItems: "center", marginRight: 10 }}>
                       <Text style={{ fontSize: 12, fontWeight: "700", color: "#3b82f6" }}>{initials}</Text>
                     </View>
                     <View style={{ flex: 1 }}>
-                      <Text style={{ fontSize: 14, fontWeight: "600", color: "#1f2937" }}>{member.name || member.email}</Text>
-                      <Text style={{ fontSize: 11, color: "#9ca3af" }}>
+                      <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
+                      <Text style={{ fontSize: 11, color: colors.textMuted }}>
                         Dernière activité : {member.lastActive ? formatDate(member.lastActive) : "-"}
                       </Text>
                     </View>
                     <View style={{ alignItems: "flex-end" }}>
-                      <Text style={{ fontSize: 16, fontWeight: "700", color: "#374151" }}>{member.questionsCount}</Text>
-                      <Text style={{ fontSize: 10, color: "#9ca3af" }}>questions</Text>
+                      <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{member.questionsCount}</Text>
+                      <Text style={{ fontSize: 10, color: colors.textMuted }}>questions</Text>
                     </View>
                   </View>
                 );
@@ -231,7 +217,7 @@ export default function AnalyticsScreen() {
         <TouchableOpacity
           onPress={handleExport}
           disabled={exporting}
-          style={{ backgroundColor: "#00815d", borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+          style={{ backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
         >
           {exporting ? (
             <ActivityIndicator size="small" color="#fff" />

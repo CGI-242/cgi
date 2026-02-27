@@ -10,14 +10,15 @@ import {
   Platform,
   Image,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import * as Clipboard from "expo-clipboard";
 import { mfaApi, type MfaStatus, type MfaSetupResult } from "@/lib/api/mfa";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 type SetupStep = "idle" | "qr" | "verify" | "backup";
 
 export default function SecuriteScreen() {
+  const { colors } = useTheme();
   const [status, setStatus] = useState<MfaStatus | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -149,28 +150,15 @@ export default function SecuriteScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f3f4f6" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
       </View>
     );
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingTop: Platform.OS === "ios" ? 56 : 16, paddingBottom: 16, paddingHorizontal: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-            <Ionicons name="arrow-back" size={22} color="#fff" />
-          </TouchableOpacity>
-          <View>
-            <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Sécurité</Text>
-            <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Double authentification</Text>
-          </View>
-        </View>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
@@ -179,13 +167,13 @@ export default function SecuriteScreen() {
         )}
 
         {/* Statut MFA */}
-        <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 16 }}>
+        <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Ionicons name="shield-checkmark" size={24} color={status?.enabled ? "#16a34a" : "#dc2626"} style={{ marginRight: 12 }} />
               <View>
-                <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Authentification 2FA</Text>
-                <Text style={{ fontSize: 13, color: "#6b7280" }}>
+                <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Authentification 2FA</Text>
+                <Text style={{ fontSize: 13, color: colors.textSecondary }}>
                   {status?.enabled ? "Protège votre compte avec un code TOTP" : "Non configurée"}
                 </Text>
               </View>
@@ -198,8 +186,8 @@ export default function SecuriteScreen() {
           </View>
           {status?.enabled && (
             <View style={{ marginTop: 12, flexDirection: "row", alignItems: "center" }}>
-              <Ionicons name="key-outline" size={16} color="#6b7280" style={{ marginRight: 6 }} />
-              <Text style={{ fontSize: 13, color: "#6b7280" }}>
+              <Ionicons name="key-outline" size={16} color={colors.textSecondary} style={{ marginRight: 6 }} />
+              <Text style={{ fontSize: 13, color: colors.textSecondary }}>
                 {status.backupCodesRemaining} code{status.backupCodesRemaining > 1 ? "s" : ""} de secours restant{status.backupCodesRemaining > 1 ? "s" : ""}
               </Text>
             </View>
@@ -211,7 +199,7 @@ export default function SecuriteScreen() {
           <TouchableOpacity
             onPress={handleStartSetup}
             disabled={actionLoading}
-            style={{ backgroundColor: "#00815d", borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 16 }}
+            style={{ backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 16 }}
           >
             {actionLoading ? (
               <ActivityIndicator size="small" color="#fff" />
@@ -226,8 +214,8 @@ export default function SecuriteScreen() {
 
         {/* Étape QR Code */}
         {setupStep === "qr" && setupData && (
-          <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 16 }}>
-            <Text style={{ fontSize: 15, fontWeight: "600", color: "#1f2937", marginBottom: 12 }}>
+          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+            <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, marginBottom: 12 }}>
               1. Scannez le QR code avec votre application d'authentification
             </Text>
             <View style={{ alignItems: "center", marginBottom: 16 }}>
@@ -237,32 +225,32 @@ export default function SecuriteScreen() {
                 resizeMode="contain"
               />
             </View>
-            <Text style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>
+            <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>
               Ou entrez le code manuellement :
             </Text>
-            <View style={{ backgroundColor: "#f3f4f6", borderRadius: 8, padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 14, color: "#374151", textAlign: "center" }}>
+            <View style={{ backgroundColor: colors.background, borderRadius: 8, padding: 12, marginBottom: 16 }}>
+              <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 14, color: colors.text, textAlign: "center" }}>
                 {setupData.secret}
               </Text>
             </View>
 
-            <Text style={{ fontSize: 15, fontWeight: "600", color: "#1f2937", marginBottom: 8 }}>
+            <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
               2. Entrez le code à 6 chiffres
             </Text>
             <TextInput
               value={totpCode}
               onChangeText={setTotpCode}
               placeholder="000000"
-              placeholderTextColor="#9ca3af"
+              placeholderTextColor={colors.textMuted}
               keyboardType="number-pad"
               maxLength={6}
               style={{
-                backgroundColor: "#f3f4f6",
+                backgroundColor: colors.background,
                 borderRadius: 8,
                 paddingHorizontal: 14,
                 paddingVertical: 12,
                 fontSize: 20,
-                color: "#1f2937",
+                color: colors.text,
                 textAlign: "center",
                 letterSpacing: 8,
                 marginBottom: 12,
@@ -272,7 +260,7 @@ export default function SecuriteScreen() {
               onPress={handleEnableMfa}
               disabled={actionLoading || totpCode.length < 6}
               style={{
-                backgroundColor: totpCode.length < 6 ? "#9ca3af" : "#00815d",
+                backgroundColor: totpCode.length < 6 ? colors.textMuted : colors.primary,
                 borderRadius: 8,
                 paddingVertical: 12,
                 alignItems: "center",
@@ -289,21 +277,21 @@ export default function SecuriteScreen() {
 
         {/* Codes de secours */}
         {setupStep === "backup" && backupCodes.length > 0 && (
-          <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 16 }}>
+          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
               <Ionicons name="warning-outline" size={20} color="#d97706" style={{ marginRight: 8 }} />
-              <Text style={{ fontSize: 15, fontWeight: "600", color: "#1f2937" }}>
+              <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>
                 Codes de secours
               </Text>
             </View>
-            <Text style={{ fontSize: 13, color: "#6b7280", marginBottom: 12 }}>
+            <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
               Sauvegardez ces codes dans un endroit sûr. Ils vous permettront de vous connecter si vous perdez l'accès à votre application d'authentification.
             </Text>
-            <View style={{ backgroundColor: "#f3f4f6", borderRadius: 8, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 12 }}>
+            <View style={{ backgroundColor: colors.background, borderRadius: 8, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
               {backupCodes.map((code, i) => (
                 <Text
                   key={i}
-                  style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 14, color: "#374151", lineHeight: 24, textAlign: "center" }}
+                  style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 14, color: colors.text, lineHeight: 24, textAlign: "center" }}
                 >
                   {code}
                 </Text>
@@ -311,7 +299,7 @@ export default function SecuriteScreen() {
             </View>
             <TouchableOpacity
               onPress={copyBackupCodes}
-              style={{ backgroundColor: "#374151", borderRadius: 8, paddingVertical: 10, alignItems: "center", marginBottom: 8 }}
+              style={{ backgroundColor: colors.text, borderRadius: 8, paddingVertical: 10, alignItems: "center", marginBottom: 8 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="copy-outline" size={16} color="#fff" style={{ marginRight: 6 }} />
@@ -320,7 +308,7 @@ export default function SecuriteScreen() {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => { setSetupStep("idle"); setBackupCodes([]); }}
-              style={{ backgroundColor: "#00815d", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+              style={{ backgroundColor: colors.primary, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
             >
               <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>J'ai sauvegardé mes codes</Text>
             </TouchableOpacity>
@@ -333,7 +321,7 @@ export default function SecuriteScreen() {
             <TouchableOpacity
               onPress={handleRegenerateBackupCodes}
               disabled={actionLoading}
-              style={{ backgroundColor: "#374151", borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 12 }}
+              style={{ backgroundColor: colors.text, borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 12 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="refresh-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
@@ -352,35 +340,35 @@ export default function SecuriteScreen() {
                 </View>
               </TouchableOpacity>
             ) : (
-              <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#fca5a5", padding: 16 }}>
+              <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: "#fca5a5", padding: 16 }}>
                 <Text style={{ fontSize: 14, fontWeight: "600", color: "#dc2626", marginBottom: 8 }}>
                   Confirmer la désactivation
                 </Text>
-                <Text style={{ fontSize: 13, color: "#6b7280", marginBottom: 12 }}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
                   Entrez votre mot de passe pour désactiver la double authentification.
                 </Text>
                 <TextInput
                   value={disablePassword}
                   onChangeText={setDisablePassword}
                   placeholder="Mot de passe"
-                  placeholderTextColor="#9ca3af"
+                  placeholderTextColor={colors.textMuted}
                   secureTextEntry
                   style={{
-                    backgroundColor: "#f3f4f6",
+                    backgroundColor: colors.background,
                     borderRadius: 8,
                     paddingHorizontal: 14,
                     paddingVertical: 12,
                     fontSize: 15,
-                    color: "#1f2937",
+                    color: colors.text,
                     marginBottom: 12,
                   }}
                 />
                 <View style={{ flexDirection: "row", gap: 8 }}>
                   <TouchableOpacity
                     onPress={() => { setShowDisable(false); setDisablePassword(""); }}
-                    style={{ flex: 1, backgroundColor: "#f3f4f6", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                    style={{ flex: 1, backgroundColor: colors.background, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
                   >
-                    <Text style={{ color: "#374151", fontWeight: "600", fontSize: 14 }}>Annuler</Text>
+                    <Text style={{ color: colors.text, fontWeight: "600", fontSize: 14 }}>Annuler</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={handleDisableMfa}

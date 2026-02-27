@@ -153,7 +153,7 @@ export default function HistoryPanel({
         style={{
           marginHorizontal: 12,
           marginBottom: 8,
-          backgroundColor: "#2a2a2a",
+          backgroundColor: colors.input,
           borderRadius: 8,
           flexDirection: "row",
           alignItems: "center",
@@ -226,7 +226,7 @@ export default function HistoryPanel({
                     paddingHorizontal: 16,
                     paddingVertical: 10,
                     backgroundColor:
-                      conv.id === activeConversationId ? "#2a2a2a" : "transparent",
+                      conv.id === activeConversationId ? colors.input : "transparent",
                   }}
                 >
                   <View style={{ flex: 1, marginRight: 8 }}>

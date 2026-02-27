@@ -379,7 +379,9 @@
     "title": "My profile",
     "memberSince": "Member since:",
     "updateSuccess": "Profile updated successfully",
-    "updateError": "Error updating profile"
+    "updateError": "Error updating profile",
+    "nameRequired": "First name and last name are required",
+    "phoneInvalid": "Invalid phone number"
   },
   "offline": {
     "banner": "Offline mode — Tax Code and simulators remain accessible",

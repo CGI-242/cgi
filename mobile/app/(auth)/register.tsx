@@ -38,6 +38,10 @@ export default function Register() {
       setError(t("auth.requiredFields"));
       return;
     }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email)) {
+      setError(t("auth.emailInvalid"));
+      return;
+    }
     if (form.password.length < 12) {
       setError(t("auth.passwordMinLength"));
       return;

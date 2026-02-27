@@ -91,6 +91,13 @@ export const useAuthStore = create<AuthState>()(
       },
 
       logout: async () => {
+        // Invalider le token côté serveur avant de nettoyer localement
+        try {
+          await api.post("/auth/logout");
+        } catch {
+          // Ignorer les erreurs (token déjà expiré, réseau coupé, etc.)
+        }
+
         if (isMobile) {
           await storage.remove("accessToken");
           await storage.remove("refreshToken");

@@ -8,24 +8,46 @@ import { MFABackupService } from './mfa.backup.service';
 const logger = createLogger('MFAService');
 
 const MFA_ISSUER = 'CGI-242';
-const ENCRYPTION_KEY = process.env.JWT_SECRET || 'dev-secret';
+
+if (!process.env.MFA_ENCRYPTION_KEY && !process.env.JWT_SECRET) {
+  throw new Error("FATAL: MFA_ENCRYPTION_KEY or JWT_SECRET must be defined.");
+}
+const ENCRYPTION_KEY = process.env.MFA_ENCRYPTION_KEY || process.env.JWT_SECRET!;
 
 /**
  * Chiffrement AES-256-GCM du secret TOTP
+ * Format: salt_hex:iv_hex:authTag_hex:encrypted_hex
  */
 function encrypt(text: string): string {
-  const key = crypto.scryptSync(ENCRYPTION_KEY, 'salt', 32);
+  const salt = crypto.randomBytes(16);
+  const key = crypto.scryptSync(ENCRYPTION_KEY, salt, 32);
   const iv = crypto.randomBytes(16);
   const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);
   let encrypted = cipher.update(text, 'utf8', 'hex');
   encrypted += cipher.final('hex');
   const authTag = cipher.getAuthTag().toString('hex');
-  return `${iv.toString('hex')}:${authTag}:${encrypted}`;
+  return `${salt.toString('hex')}:${iv.toString('hex')}:${authTag}:${encrypted}`;
 }
 
 function decrypt(data: string): string {
-  const key = crypto.scryptSync(ENCRYPTION_KEY, 'salt', 32);
-  const [ivHex, authTagHex, encrypted] = data.split(':');
+  const parts = data.split(':');
+  let salt: Buffer, ivHex: string, authTagHex: string, encrypted: string;
+
+  if (parts.length === 4) {
+    // New format: salt:iv:authTag:encrypted
+    salt = Buffer.from(parts[0], 'hex');
+    ivHex = parts[1];
+    authTagHex = parts[2];
+    encrypted = parts[3];
+  } else {
+    // Legacy format: iv:authTag:encrypted (static salt)
+    salt = Buffer.from('salt');
+    ivHex = parts[0];
+    authTagHex = parts[1];
+    encrypted = parts[2];
+  }
+
+  const key = crypto.scryptSync(ENCRYPTION_KEY, salt, 32);
   const iv = Buffer.from(ivHex, 'hex');
   const authTag = Buffer.from(authTagHex, 'hex');
   const decipher = crypto.createDecipheriv('aes-256-gcm', key, iv);

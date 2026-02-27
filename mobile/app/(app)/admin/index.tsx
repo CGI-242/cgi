@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { adminApi, AdminOrganization } from "@/lib/api/admin";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 type PlanKey = "FREE" | "BASIQUE" | "PRO";
 
@@ -38,6 +39,7 @@ function statusLabel(status: string): string {
 }
 
 export default function AdminScreen() {
+  const { colors } = useTheme();
   const [orgs, setOrgs] = useState<AdminOrganization[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -128,19 +130,19 @@ export default function AdminScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f9fafb" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
       </View>
     );
   }
 
   if (error) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f9fafb", padding: 24 }}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 24 }}>
         <Ionicons name="shield-outline" size={48} color="#dc2626" />
         <Text style={{ marginTop: 12, color: "#dc2626", fontSize: 16, fontWeight: "600", textAlign: "center" }}>{error}</Text>
-        <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: "#00815d", borderRadius: 8 }}>
+        <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: colors.primary, borderRadius: 8 }}>
           <Text style={{ color: "#fff", fontWeight: "600" }}>Retour</Text>
         </TouchableOpacity>
       </View>
@@ -148,30 +150,12 @@ export default function AdminScreen() {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f9fafb" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingHorizontal: 20, paddingTop: 16, paddingBottom: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-              <Ionicons name="arrow-back" size={22} color="#fff" />
-            </TouchableOpacity>
-            <View>
-              <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Administration</Text>
-              <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Gestion des abonnements</Text>
-            </View>
-          </View>
-          <TouchableOpacity onPress={loadOrgs} style={{ padding: 8 }}>
-            <Ionicons name="refresh-outline" size={20} color="#00c17c" />
-          </TouchableOpacity>
-        </View>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {/* Stats */}
         <View style={{ flexDirection: "row", gap: 10, marginBottom: 16 }}>
           {[
-            { label: "Total", value: totalOrgs, color: "#374151", bg: "#f3f4f6" },
+            { label: "Total", value: totalOrgs, color: colors.text, bg: colors.background },
             { label: "Actifs", value: activeCount, color: "#16a34a", bg: "#f0fdf4" },
             { label: "Essai", value: trialCount, color: "#2563eb", bg: "#eff6ff" },
             { label: "Expires", value: expiredCount, color: "#dc2626", bg: "#fef2f2" },
@@ -198,10 +182,10 @@ export default function AdminScreen() {
             <View
               key={org.id}
               style={{
-                backgroundColor: "#fff",
+                backgroundColor: colors.card,
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: "#e5e7eb",
+                borderColor: colors.border,
                 borderLeftWidth: 4,
                 borderLeftColor: planColor,
                 marginBottom: 12,
@@ -211,8 +195,8 @@ export default function AdminScreen() {
               {/* Entete org */}
               <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
                 <View style={{ flex: 1 }}>
-                  <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>{org.name}</Text>
-                  <Text style={{ fontSize: 12, color: "#9ca3af" }}>{org.slug}</Text>
+                  <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{org.name}</Text>
+                  <Text style={{ fontSize: 12, color: colors.textMuted }}>{org.slug}</Text>
                 </View>
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
                   <View style={{ backgroundColor: `${planColor}20`, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
@@ -227,10 +211,10 @@ export default function AdminScreen() {
               {/* Quota */}
               <View style={{ marginBottom: 10 }}>
                 <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 4 }}>
-                  <Text style={{ fontSize: 12, color: "#6b7280" }}>Questions (total org)</Text>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>{quota}</Text>
+                  <Text style={{ fontSize: 12, color: colors.textSecondary }}>Questions (total org)</Text>
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{quota}</Text>
                 </View>
-                <View style={{ height: 6, backgroundColor: "#e5e7eb", borderRadius: 3 }}>
+                <View style={{ height: 6, backgroundColor: colors.border, borderRadius: 3 }}>
                   <View
                     style={{
                       height: 6,
@@ -245,22 +229,22 @@ export default function AdminScreen() {
               {/* Infos */}
               <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 12 }}>
                 <View>
-                  <Text style={{ fontSize: 11, color: "#9ca3af" }}>Expire le</Text>
-                  <Text style={{ fontSize: 13, fontWeight: "600", color: "#374151" }}>{formatDate(sub?.currentPeriodEnd || null)}</Text>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>Expire le</Text>
+                  <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{formatDate(sub?.currentPeriodEnd || null)}</Text>
                 </View>
                 <View>
-                  <Text style={{ fontSize: 11, color: "#9ca3af" }}>Membres</Text>
-                  <Text style={{ fontSize: 13, fontWeight: "600", color: "#374151" }}>{org.memberCount}</Text>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>Membres</Text>
+                  <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{org.memberCount}</Text>
                 </View>
                 <View>
-                  <Text style={{ fontSize: 11, color: "#9ca3af" }}>Prix total/an</Text>
-                  <Text style={{ fontSize: 13, fontWeight: "600", color: "#374151" }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>Prix total/an</Text>
+                  <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
                 </View>
               </View>
 
               {/* Actions */}
               {isLoadingThis ? (
-                <ActivityIndicator size="small" color="#00815d" />
+                <ActivityIndicator size="small" color={colors.primary} />
               ) : (
                 <View style={{ flexDirection: "row", gap: 8 }}>
                   <TouchableOpacity
@@ -280,7 +264,7 @@ export default function AdminScreen() {
                   {(status === "ACTIVE" || status === "EXPIRED" || status === "TRIALING") && (
                     <TouchableOpacity
                       onPress={() => handleRenew(org)}
-                      style={{ flex: 1, backgroundColor: "#00815d", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                      style={{ flex: 1, backgroundColor: colors.primary, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
                     >
                       <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Renouveler</Text>
                       <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>+1 an</Text>
@@ -294,8 +278,8 @@ export default function AdminScreen() {
 
         {orgs.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
-            <Ionicons name="business-outline" size={40} color="#d1d5db" />
-            <Text style={{ marginTop: 8, color: "#9ca3af", fontSize: 14 }}>Aucune organisation</Text>
+            <Ionicons name="business-outline" size={40} color={colors.disabled} />
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>Aucune organisation</Text>
           </View>
         )}
       </ScrollView>

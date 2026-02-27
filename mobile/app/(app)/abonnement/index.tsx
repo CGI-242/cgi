@@ -5,12 +5,11 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  Platform,
   Linking,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { subscriptionApi, type QuotaResponse } from "@/lib/api/subscription";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 // -- Couleurs par plan --
 const PLAN_COLORS: Record<string, string> = {
@@ -96,6 +95,7 @@ function daysRemaining(dateStr?: string | null): number | null {
 }
 
 export default function AbonnementScreen() {
+  const { colors } = useTheme();
   const [quota, setQuota] = useState<QuotaResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -122,9 +122,9 @@ export default function AbonnementScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, backgroundColor: "#f3f4f6", justifyContent: "center", alignItems: "center" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ color: "#6b7280", fontSize: 14, marginTop: 12 }}>
+      <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center" }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ color: colors.textSecondary, fontSize: 14, marginTop: 12 }}>
           Chargement de l'abonnement...
         </Text>
       </View>
@@ -155,29 +155,7 @@ export default function AbonnementScreen() {
         : "Renouvellement le";
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View
-        style={{
-          backgroundColor: "#1a1a1a",
-          paddingTop: Platform.OS === "ios" ? 56 : 16,
-          paddingBottom: 16,
-          paddingHorizontal: 16,
-          flexDirection: "row",
-          alignItems: "center",
-        }}
-      >
-        <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-          <Ionicons name="arrow-back" size={24} color="#fff" />
-        </TouchableOpacity>
-        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold", flex: 1 }}>
-          Mon abonnement
-        </Text>
-        <TouchableOpacity onPress={loadQuota} accessibilityLabel="Actualiser" accessibilityRole="button">
-          <Ionicons name="refresh-outline" size={22} color="#fff" />
-        </TouchableOpacity>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
         {/* Erreur */}
         {error && (
@@ -202,7 +180,7 @@ export default function AbonnementScreen() {
         {/* Plan Card */}
         <View
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: colors.card,
             borderRadius: 16,
             borderWidth: 2,
             borderColor: planColor,
@@ -238,7 +216,7 @@ export default function AbonnementScreen() {
               style={{
                 flexDirection: "row",
                 alignItems: "center",
-                backgroundColor: "#fff",
+                backgroundColor: colors.card,
                 paddingHorizontal: 12,
                 paddingVertical: 4,
                 borderRadius: 12,
@@ -263,7 +241,7 @@ export default function AbonnementScreen() {
 
           {/* Plan price */}
           <View style={{ paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12, alignItems: "center" }}>
-            <Text style={{ fontSize: 22, fontWeight: "800", color: "#1f2937" }}>
+            <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>
               {PLANS_INFO.find((p) => p.name === plan)?.price || "Gratuit"}
             </Text>
           </View>
@@ -272,17 +250,17 @@ export default function AbonnementScreen() {
         {/* Quota Section */}
         <View
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: colors.card,
             borderRadius: 12,
             padding: 20,
             marginBottom: 16,
             borderWidth: 1,
-            borderColor: "#e5e7eb",
+            borderColor: colors.border,
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-            <Ionicons name="chatbubble-ellipses-outline" size={20} color="#00815d" style={{ marginRight: 8 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Quota de questions</Text>
+            <Ionicons name="chatbubble-ellipses-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
+            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Quota de questions</Text>
           </View>
 
           {isUnlimited ? (
@@ -291,14 +269,14 @@ export default function AbonnementScreen() {
               <Text style={{ fontSize: 16, fontWeight: "700", color: "#8b5cf6", marginTop: 4 }}>
                 Illimite
               </Text>
-              <Text style={{ fontSize: 13, color: "#6b7280", marginTop: 2 }}>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginTop: 2 }}>
                 {questionsUsed} questions posees ce mois
               </Text>
             </View>
           ) : (
             <>
               <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
-                <Text style={{ fontSize: 14, color: "#374151" }}>
+                <Text style={{ fontSize: 14, color: colors.text }}>
                   {questionsUsed} / {questionsLimit} questions utilisees ce mois
                 </Text>
                 <Text style={{ fontSize: 14, fontWeight: "700", color: planColor }}>
@@ -310,7 +288,7 @@ export default function AbonnementScreen() {
               <View
                 style={{
                   height: 10,
-                  backgroundColor: "#e5e7eb",
+                  backgroundColor: colors.border,
                   borderRadius: 5,
                   overflow: "hidden",
                 }}
@@ -324,7 +302,7 @@ export default function AbonnementScreen() {
                         ? "#dc2626"
                         : progressRatio >= 0.7
                           ? "#d97706"
-                          : "#00c17c",
+                          : colors.accent,
                     borderRadius: 5,
                   }}
                 />
@@ -342,22 +320,22 @@ export default function AbonnementScreen() {
         {/* Expiration Section */}
         <View
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: colors.card,
             borderRadius: 12,
             padding: 20,
             marginBottom: 16,
             borderWidth: 1,
-            borderColor: "#e5e7eb",
+            borderColor: colors.border,
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-            <Ionicons name="calendar-outline" size={20} color="#00815d" style={{ marginRight: 8 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Periode</Text>
+            <Ionicons name="calendar-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
+            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Periode</Text>
           </View>
 
           <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
-            <Text style={{ fontSize: 13, color: "#6b7280" }}>Debut de periode</Text>
-            <Text style={{ fontSize: 14, fontWeight: "600", color: "#374151" }}>
+            <Text style={{ fontSize: 13, color: colors.textSecondary }}>Debut de periode</Text>
+            <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>
               {formatDate(quota?.currentPeriodStart)}
             </Text>
           </View>
@@ -365,13 +343,13 @@ export default function AbonnementScreen() {
           <View
             style={{
               height: 1,
-              backgroundColor: "#f3f4f6",
+              backgroundColor: colors.background,
               marginVertical: 8,
             }}
           />
 
           <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
-            <Text style={{ fontSize: 13, color: "#6b7280" }}>{expirationLabel}</Text>
+            <Text style={{ fontSize: 13, color: colors.textSecondary }}>{expirationLabel}</Text>
             <Text style={{ fontSize: 14, fontWeight: "600", color: statusColor }}>
               {formatDate(quota?.currentPeriodEnd)}
             </Text>
@@ -382,12 +360,12 @@ export default function AbonnementScreen() {
               <View
                 style={{
                   height: 1,
-                  backgroundColor: "#f3f4f6",
+                  backgroundColor: colors.background,
                   marginVertical: 8,
                 }}
               />
               <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                <Text style={{ fontSize: 13, color: "#6b7280" }}>Jours restants</Text>
+                <Text style={{ fontSize: 13, color: colors.textSecondary }}>Jours restants</Text>
                 <View
                   style={{
                     backgroundColor: days <= 5 ? "#fee2e2" : days <= 10 ? "#fef3c7" : "#d1fae5",
@@ -432,8 +410,8 @@ export default function AbonnementScreen() {
         {/* Plans Comparison */}
         <View style={{ marginBottom: 16 }}>
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-            <Ionicons name="layers-outline" size={20} color="#00815d" style={{ marginRight: 8 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Nos offres</Text>
+            <Ionicons name="layers-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
+            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Nos offres</Text>
           </View>
 
           {PLANS_INFO.map((planInfo) => {
@@ -445,12 +423,12 @@ export default function AbonnementScreen() {
               <View
                 key={planInfo.name}
                 style={{
-                  backgroundColor: "#fff",
+                  backgroundColor: colors.card,
                   borderRadius: 12,
                   padding: 16,
                   marginBottom: 10,
                   borderWidth: isCurrentPlan ? 2 : 1,
-                  borderColor: isCurrentPlan ? color : "#e5e7eb",
+                  borderColor: isCurrentPlan ? color : colors.border,
                 }}
               >
                 <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
@@ -481,13 +459,13 @@ export default function AbonnementScreen() {
                       </View>
                     )}
                   </View>
-                  <Text style={{ fontSize: 15, fontWeight: "800", color: "#1f2937" }}>
+                  <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text }}>
                     {planInfo.price}
                   </Text>
                 </View>
 
                 {planInfo.priceDetail && (
-                  <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 8, fontStyle: "italic" }}>
+                  <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 8, fontStyle: "italic" }}>
                     {planInfo.priceDetail}
                   </Text>
                 )}
@@ -498,7 +476,7 @@ export default function AbonnementScreen() {
                     style={{ flexDirection: "row", alignItems: "center", marginBottom: idx < planInfo.features.length - 1 ? 6 : 0 }}
                   >
                     <Ionicons name="checkmark-circle" size={16} color={color} style={{ marginRight: 8 }} />
-                    <Text style={{ fontSize: 13, color: "#374151" }}>{feature}</Text>
+                    <Text style={{ fontSize: 13, color: colors.text }}>{feature}</Text>
                   </View>
                 ))}
               </View>
@@ -509,19 +487,19 @@ export default function AbonnementScreen() {
         {/* Footer CTA */}
         <View
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: colors.card,
             borderRadius: 12,
             padding: 20,
             borderWidth: 1,
-            borderColor: "#e5e7eb",
+            borderColor: colors.border,
             alignItems: "center",
           }}
         >
-          <Ionicons name="call-outline" size={28} color="#00815d" style={{ marginBottom: 8 }} />
-          <Text style={{ fontSize: 15, fontWeight: "700", color: "#1f2937", textAlign: "center", marginBottom: 4 }}>
+          <Ionicons name="call-outline" size={28} color={colors.primary} style={{ marginBottom: 8 }} />
+          <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, textAlign: "center", marginBottom: 4 }}>
             Pour souscrire ou renouveler
           </Text>
-          <Text style={{ fontSize: 13, color: "#6b7280", textAlign: "center", marginBottom: 12 }}>
+          <Text style={{ fontSize: 13, color: colors.textSecondary, textAlign: "center", marginBottom: 12 }}>
             L'activation des abonnements se fait manuellement. Contactez notre equipe pour toute demande.
           </Text>
           <TouchableOpacity
@@ -529,7 +507,7 @@ export default function AbonnementScreen() {
             accessibilityLabel="Contacter pour souscrire"
             accessibilityRole="button"
             style={{
-              backgroundColor: "#00815d",
+              backgroundColor: colors.primary,
               borderRadius: 10,
               paddingVertical: 12,
               paddingHorizontal: 24,
@@ -544,8 +522,8 @@ export default function AbonnementScreen() {
 
         {/* Bottom spacing text */}
         <View style={{ alignItems: "center", marginTop: 20 }}>
-          <Text style={{ fontSize: 12, color: "#9ca3af" }}>CGI242 v1.0.0 -- Edition 2026</Text>
-          <Text style={{ fontSize: 11, color: "#d1d5db", marginTop: 1 }}>NormX AI</Text>
+          <Text style={{ fontSize: 12, color: colors.textMuted }}>CGI242 v1.0.0 -- Edition 2026</Text>
+          <Text style={{ fontSize: 11, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
         </View>
       </ScrollView>
     </View>

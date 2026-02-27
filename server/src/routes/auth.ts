@@ -77,6 +77,11 @@ router.post("/register", async (req: Request, res: Response) => {
       return;
     }
 
+    if (typeof password !== "string" || password.length < 8) {
+      res.status(400).json({ error: "Le mot de passe doit contenir au moins 8 caractères" });
+      return;
+    }
+
     const existingUser = await prisma.user.findUnique({ where: { email } });
     if (existingUser) {
       res.status(409).json({ error: "Cet email est déjà utilisé" });
@@ -101,6 +106,7 @@ router.post("/register", async (req: Request, res: Response) => {
         lastName: nom,
         phone: telephone || null,
         emailVerifyToken: otp,
+        emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes
       },
     });
 
@@ -225,7 +231,10 @@ router.post("/login", async (req: Request, res: Response) => {
     const otp = generateOtp();
     await prisma.user.update({
       where: { id: user.id },
-      data: { emailVerifyToken: otp },
+      data: {
+        emailVerifyToken: otp,
+        emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes
+      },
     });
 
     // Envoyer OTP par email
@@ -295,17 +304,24 @@ router.post("/verify-otp", async (req: Request, res: Response) => {
       return;
     }
 
+    // Vérifier l'expiration de l'OTP
+    if (user.emailVerifyExpires && user.emailVerifyExpires < new Date()) {
+      res.status(400).json({ error: "Code expiré, veuillez en demander un nouveau" });
+      return;
+    }
+
     await prisma.user.update({
       where: { id: user.id },
       data: {
         isEmailVerified: true,
         emailVerifyToken: null,
+        emailVerifyExpires: null,
       },
     });
 
     // Si MFA activé, retourner un token temporaire MFA au lieu des vrais tokens
     if (user.mfaEnabled) {
-      const secret = process.env.JWT_SECRET || "dev-secret";
+      const secret = process.env.JWT_SECRET!;
       const mfaToken = jwt.sign(
         { userId: user.id, email: user.email, mfa: true },
         secret,
@@ -384,7 +400,7 @@ router.post("/verify-otp", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/send-otp-email
-router.post("/send-otp-email", async (req: Request, res: Response) => {
+router.post("/send-otp-email", sensitiveLimiter, async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -398,7 +414,10 @@ router.post("/send-otp-email", async (req: Request, res: Response) => {
     if (!user.emailVerifyToken) {
       await prisma.user.update({
         where: { id: user.id },
-        data: { emailVerifyToken: otp },
+        data: {
+          emailVerifyToken: otp,
+          emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000),
+        },
       });
     }
 
@@ -439,7 +458,7 @@ router.post("/send-otp-email", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/forgot-password
-router.post("/forgot-password", async (req: Request, res: Response) => {
+router.post("/forgot-password", sensitiveLimiter, async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -665,7 +684,7 @@ router.post("/refresh-token", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/check-email
-router.post("/check-email", async (req: Request, res: Response) => {
+router.post("/check-email", sensitiveLimiter, async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });

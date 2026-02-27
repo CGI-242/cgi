@@ -45,9 +45,12 @@ export default function VerifyOtp() {
       }
 
       // Pas de MFA : login normal
-      if (data.user || user) {
-        await login(data.user || user!, data.token, data.refreshToken);
+      const loginUser = data.user || user;
+      if (!loginUser) {
+        setError(t("auth.invalidCode"));
+        return;
       }
+      await login(loginUser, data.token, data.refreshToken);
       router.replace("/(app)");
     } catch (err) {
       setError((axios.isAxiosError(err) && err.response?.data?.error) || t("auth.invalidCode"));
@@ -89,8 +92,8 @@ export default function VerifyOtp() {
             {t("auth.enterCodeSentTo", { email })}
           </Text>
 
-          {/* Dev code - visible si NODE_ENV != production */}
-          {devCode ? (
+          {/* Dev code - visible uniquement en mode développement */}
+          {__DEV__ && devCode ? (
             <View className="border border-dashed border-success bg-green-50 p-4 mb-4 items-center">
               <Text className="text-xs text-muted mb-1">{t("auth.codeDev")}</Text>
               <Text className="text-3xl font-bold text-success tracking-widest">

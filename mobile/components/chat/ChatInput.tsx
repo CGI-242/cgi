@@ -61,6 +61,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           value={value}
           onChangeText={onChangeText}
           multiline
+          maxLength={4000}
           editable={!disabled}
           onSubmitEditing={onSend}
           blurOnSubmit={false}

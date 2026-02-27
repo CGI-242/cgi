@@ -9,7 +9,6 @@ import {
   Alert,
   Platform,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import {
@@ -19,6 +18,7 @@ import {
   type EffectivePermissions,
 } from "@/lib/api/permissions";
 import { organizationApi, type OrgMember } from "@/lib/api/organization";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 const PERMISSION_LABELS: Record<string, string> = {
   "org.view": "Voir l'organisation",
@@ -54,6 +54,7 @@ const ROLE_LABELS: Record<string, string> = {
 };
 
 export default function PermissionsScreen() {
+  const { colors } = useTheme();
   const user = useAuthStore((s) => s.user);
   const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
@@ -160,28 +161,15 @@ export default function PermissionsScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f3f4f6" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
       </View>
     );
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingTop: Platform.OS === "ios" ? 56 : 16, paddingBottom: 16, paddingHorizontal: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-            <Ionicons name="arrow-back" size={22} color="#fff" />
-          </TouchableOpacity>
-          <View>
-            <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Permissions</Text>
-            <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Gestion des droits d'accès</Text>
-          </View>
-        </View>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
@@ -192,13 +180,13 @@ export default function PermissionsScreen() {
         {/* Mes permissions */}
         {myPerms && (
           <>
-            <Text style={{ color: "#6b7280", fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               MES PERMISSIONS
             </Text>
-            <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 20 }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
               <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 14 }}>
-                <Ionicons name="person-circle-outline" size={24} color="#374151" style={{ marginRight: 10 }} />
-                <Text style={{ fontSize: 15, fontWeight: "600", color: "#1f2937", flex: 1 }}>Mon rôle</Text>
+                <Ionicons name="person-circle-outline" size={24} color={colors.text} style={{ marginRight: 10 }} />
+                <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, flex: 1 }}>Mon rôle</Text>
                 <View style={{ backgroundColor: `${ROLE_COLORS[myPerms.role] || "#6b7280"}20`, paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 }}>
                   <Text style={{ fontSize: 12, fontWeight: "700", color: ROLE_COLORS[myPerms.role] || "#6b7280" }}>
                     {ROLE_LABELS[myPerms.role] || myPerms.role}
@@ -210,7 +198,7 @@ export default function PermissionsScreen() {
                 return (
                   <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6 }}>
                     <Ionicons name={hasIt ? "checkmark-circle" : "close-circle"} size={18} color={hasIt ? "#16a34a" : "#dc2626"} style={{ marginRight: 10 }} />
-                    <Text style={{ fontSize: 13, color: "#374151", flex: 1 }}>{PERMISSION_LABELS[perm.key] || perm.key}</Text>
+                    <Text style={{ fontSize: 13, color: colors.text, flex: 1 }}>{PERMISSION_LABELS[perm.key] || perm.key}</Text>
                   </View>
                 );
               })}
@@ -221,12 +209,12 @@ export default function PermissionsScreen() {
         {/* Gestion membres (admin/owner only) */}
         {members.length > 0 && (myPerms?.role === "OWNER" || myPerms?.role === "ADMIN") && (
           <>
-            <Text style={{ color: "#6b7280", fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               PERMISSIONS DES MEMBRES
             </Text>
 
             {/* Sélecteur membre */}
-            <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", marginBottom: 12, overflow: "hidden" }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, marginBottom: 12, overflow: "hidden" }}>
               {members.map((member, index) => {
                 const isSelected = selectedMemberId === member.userId;
                 const roleColor = ROLE_COLORS[member.role] || "#6b7280";
@@ -238,9 +226,9 @@ export default function PermissionsScreen() {
                       flexDirection: "row",
                       alignItems: "center",
                       padding: 12,
-                      backgroundColor: isSelected ? "#f0fdf4" : "#fff",
+                      backgroundColor: isSelected ? "#f0fdf4" : colors.card,
                       borderTopWidth: index > 0 ? 1 : 0,
-                      borderTopColor: "#f3f4f6",
+                      borderTopColor: colors.background,
                     }}
                   >
                     <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 10 }}>
@@ -249,10 +237,10 @@ export default function PermissionsScreen() {
                       </Text>
                     </View>
                     <View style={{ flex: 1 }}>
-                      <Text style={{ fontSize: 14, fontWeight: "600", color: "#1f2937" }}>{member.name || member.email}</Text>
-                      <Text style={{ fontSize: 11, color: "#9ca3af" }}>{ROLE_LABELS[member.role] || member.role}</Text>
+                      <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
+                      <Text style={{ fontSize: 11, color: colors.textMuted }}>{ROLE_LABELS[member.role] || member.role}</Text>
                     </View>
-                    <Ionicons name={isSelected ? "chevron-up" : "chevron-down"} size={16} color="#9ca3af" />
+                    <Ionicons name={isSelected ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
                   </TouchableOpacity>
                 );
               })}
@@ -260,13 +248,13 @@ export default function PermissionsScreen() {
 
             {/* Permissions du membre sélectionné */}
             {selectedMemberId && memberEffective && (
-              <View style={{ backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#e5e7eb", padding: 16, marginBottom: 12 }}>
+              <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
                 {available.map((perm) => {
                   const hasIt = memberEffective.effective.includes(perm.key);
                   return (
                     <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8 }}>
                       <View style={{ flex: 1 }}>
-                        <Text style={{ fontSize: 13, fontWeight: "500", color: "#374151" }}>
+                        <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
                           {PERMISSION_LABELS[perm.key] || perm.key}
                         </Text>
                       </View>
@@ -274,8 +262,8 @@ export default function PermissionsScreen() {
                         value={hasIt}
                         onValueChange={() => handleTogglePermission(selectedMemberId, perm.key, hasIt)}
                         disabled={!isOwner || actionLoading}
-                        trackColor={{ false: "#e5e7eb", true: "#00c17c" }}
-                        thumbColor={hasIt ? "#00815d" : "#f4f3f4"}
+                        trackColor={{ false: colors.border, true: colors.accent }}
+                        thumbColor={hasIt ? colors.primary : "#f4f3f4"}
                       />
                     </View>
                   );
@@ -285,11 +273,11 @@ export default function PermissionsScreen() {
                   <TouchableOpacity
                     onPress={() => handleReset(selectedMemberId)}
                     disabled={actionLoading}
-                    style={{ backgroundColor: "#f3f4f6", borderRadius: 8, paddingVertical: 10, alignItems: "center", marginTop: 12 }}
+                    style={{ backgroundColor: colors.background, borderRadius: 8, paddingVertical: 10, alignItems: "center", marginTop: 12 }}
                   >
                     <View style={{ flexDirection: "row", alignItems: "center" }}>
-                      <Ionicons name="refresh-outline" size={16} color="#374151" style={{ marginRight: 6 }} />
-                      <Text style={{ color: "#374151", fontWeight: "600", fontSize: 13 }}>Réinitialiser aux valeurs par défaut</Text>
+                      <Ionicons name="refresh-outline" size={16} color={colors.text} style={{ marginRight: 6 }} />
+                      <Text style={{ color: colors.text, fontWeight: "600", fontSize: 13 }}>Réinitialiser aux valeurs par défaut</Text>
                     </View>
                   </TouchableOpacity>
                 )}

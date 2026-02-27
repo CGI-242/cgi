@@ -5,7 +5,7 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger";
-import { globalLimiter, authLimiter } from "./middleware/rateLimit.middleware";
+import { globalLimiter, authLimiter, sensitiveLimiter, chatLimiter } from "./middleware/rateLimit.middleware";
 import authRoutes from "./routes/auth";
 import mfaRoutes from "./routes/mfa.routes";
 import chatRoutes from "./routes/chat";
@@ -54,20 +54,22 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Organization-ID", "X-Platform"],
 }));
-app.use(express.json());
+app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
 // Rate limiting global
 app.use(globalLimiter);
 
-// Swagger UI
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
+// Swagger UI — protégé en production
+if (process.env.NODE_ENV !== "production") {
+  app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
+}
 
 // Routes
 app.use("/api/auth", authLimiter, authRoutes);
-app.use("/api/mfa", mfaRoutes);
-app.use("/api/chat", chatRoutes);
+app.use("/api/mfa", sensitiveLimiter, mfaRoutes);
+app.use("/api/chat", chatLimiter, chatRoutes);
 app.use("/api/organizations", organizationRoutes);
 app.use("/api/subscription", subscriptionRoutes);
 app.use("/api/permissions", permissionRoutes);

@@ -379,7 +379,9 @@
     "title": "Mon profil",
     "memberSince": "Membre depuis :",
     "updateSuccess": "Profil mis à jour avec succès",
-    "updateError": "Erreur lors de la mise à jour"
+    "updateError": "Erreur lors de la mise à jour",
+    "nameRequired": "Le nom et le prénom sont obligatoires",
+    "phoneInvalid": "Numéro de téléphone invalide"
   },
   "offline": {
     "banner": "Mode hors-ligne — Le Code CGI et les simulateurs restent accessibles",

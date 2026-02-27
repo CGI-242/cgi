@@ -1,21 +1,20 @@
-import { View, Text, TextInput, TouchableOpacity, ScrollView, ActivityIndicator, useWindowDimensions, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, ScrollView, useWindowDimensions, StyleSheet } from "react-native";
 import { useState, useMemo } from "react";
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import { getSommaire, searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import TreeNode from "@/components/code/TreeNode";
 import ContentPanel from "@/components/code/ContentPanel";
 
 const styles = StyleSheet.create({
-  searchInput: { borderWidth: 0 },
-  searchBar: { borderWidth: 0 },
   sommaire: { borderRightWidth: 1, borderRightColor: "#e0e0e0" },
   separator: { height: 1, backgroundColor: "#e0e0e0", marginHorizontal: 12, marginBottom: 4 },
 });
 
 export default function CodeCGI() {
+  const { colors } = useTheme();
   const { t } = useTranslation();
   const sommaire = useMemo(() => getSommaire(), []);
   const [search, setSearch] = useState("");
@@ -56,45 +55,40 @@ export default function CodeCGI() {
   };
 
   return (
-    <View className="flex-1 bg-background">
-      {/* Header recherche */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingHorizontal: 16, paddingVertical: 12, flexDirection: "row", alignItems: "center" }}>
-        <TouchableOpacity onPress={() => router.push("/(app)")} className="mr-3" style={{ padding: 4 }}>
-          <Ionicons name="arrow-back" size={24} color="#fff" />
-        </TouchableOpacity>
-        <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
-        <View className="flex-1 bg-white/20 flex-row items-center px-3 py-2" style={styles.searchBar}>
-          <Ionicons name="search" size={18} color="#fff" />
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      {/* Barre de recherche */}
+      <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
+        <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
+        <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 6 }}>
+          <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
-            className="flex-1 ml-2 text-white text-sm border-0"
-            style={styles.searchInput}
+            style={{ flex: 1, marginLeft: 8, fontSize: 14, color: colors.text }}
             placeholder={t("code.searchPlaceholder")}
-            placeholderTextColor="rgba(255,255,255,0.6)"
+            placeholderTextColor={colors.textMuted}
             value={search}
             onChangeText={setSearch}
           />
           {search.length > 0 && (
             <TouchableOpacity onPress={handleClearSearch}>
-              <Ionicons name="close-circle" size={18} color="rgba(255,255,255,0.7)" />
+              <Ionicons name="close-circle" size={18} color={colors.textMuted} />
             </TouchableOpacity>
           )}
         </View>
       </View>
 
       {/* Split layout */}
-      <View className="flex-1 flex-row">
+      <View style={{ flex: 1, flexDirection: "row" }}>
         {/* Sommaire */}
         <ScrollView
-          className="bg-card"
-          style={[styles.sommaire, { width: sommaireWidth }]}
+          style={[styles.sommaire, { width: sommaireWidth, backgroundColor: colors.card, borderRightColor: colors.border }]}
           removeClippedSubviews
         >
-          <View className="py-2">
-            <View className="px-3 py-2 mb-1">
-              <Text className="text-xs font-bold text-primary uppercase tracking-wide">
+          <View style={{ paddingVertical: 8 }}>
+            <View style={{ paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4 }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
                 {t("code.edition")}
               </Text>
-              <Text className="text-xs text-muted">{t("code.fullTitle")}</Text>
+              <Text style={{ fontSize: 11, color: colors.textMuted }}>{t("code.fullTitle")}</Text>
             </View>
             <View style={styles.separator} />
             {sommaire.map((tome) => (

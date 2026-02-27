@@ -1,7 +1,14 @@
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";
-const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || "dev-refresh";
+if (!process.env.JWT_SECRET) {
+  throw new Error("FATAL: JWT_SECRET is not defined. Server cannot start without it.");
+}
+if (!process.env.JWT_REFRESH_SECRET) {
+  throw new Error("FATAL: JWT_REFRESH_SECRET is not defined. Server cannot start without it.");
+}
+
+const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_EXPIRES_IN = (process.env.JWT_EXPIRES_IN || "15m") as jwt.SignOptions["expiresIn"];
 const JWT_REFRESH_EXPIRES_IN = (process.env.JWT_REFRESH_EXPIRES_IN || "7d") as jwt.SignOptions["expiresIn"];
 

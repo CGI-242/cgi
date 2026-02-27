@@ -70,6 +70,14 @@ export default function ProfilScreen() {
   }, [loadProfile]);
 
   const handleSave = async () => {
+    if (!firstName.trim() || !lastName.trim()) {
+      setMessage({ type: "error", text: t("profil.nameRequired") });
+      return;
+    }
+    if (phone.trim() && !/^[+]?[\d\s()-]{6,20}$/.test(phone.trim())) {
+      setMessage({ type: "error", text: t("profil.phoneInvalid") });
+      return;
+    }
     setSaving(true);
     setMessage(null);
     try {

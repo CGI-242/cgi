@@ -21,7 +21,7 @@ export default function LoginEmail() {
       setError(t("auth.emailRequired"));
       return;
     }
-    if (!/\S+@\S+\.\S+/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
       setError(t("auth.emailInvalid"));
       return;
     }

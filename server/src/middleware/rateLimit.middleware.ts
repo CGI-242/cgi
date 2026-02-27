@@ -27,7 +27,7 @@ export const authLimiter = rateLimit({
 
 /**
  * Sensitive : 10 requêtes par heure par IP
- * Pour changement de mot de passe, MFA enable/disable
+ * Pour changement de mot de passe, MFA enable/disable, envoi OTP
  */
 export const sensitiveLimiter = rateLimit({
   windowMs: 60 * 60 * 1000,
@@ -35,4 +35,16 @@ export const sensitiveLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: 'Trop de tentatives sur cette action sensible, réessayez dans 1 heure' },
+});
+
+/**
+ * Chat : 30 requêtes par heure par IP
+ * Les appels LLM sont coûteux — limiter l'abus
+ */
+export const chatLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000,
+  max: isDev ? 200 : 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Trop de messages envoyés, réessayez dans quelques minutes' },
 });

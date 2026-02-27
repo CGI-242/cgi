@@ -7,13 +7,13 @@ import {
   ActivityIndicator,
   Platform,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import {
   auditApi,
   type AuditLog,
   type AuditStats,
 } from "@/lib/api/audit";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -53,6 +53,7 @@ function formatTimestamp(iso: string): string {
 }
 
 export default function AuditScreen() {
+  const { colors } = useTheme();
   const [logs, setLogs] = useState<AuditLog[]>([]);
   const [stats, setStats] = useState<AuditStats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -98,34 +99,23 @@ export default function AuditScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f3f4f6" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
       </View>
     );
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingTop: Platform.OS === "ios" ? 56 : 16, paddingBottom: 16, paddingHorizontal: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-              <Ionicons name="arrow-back" size={22} color="#fff" />
-            </TouchableOpacity>
-            <View>
-              <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Journal d'audit</Text>
-              <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Historique des actions</Text>
-            </View>
-          </View>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
+        {/* Toolbar: refresh */}
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "flex-end", marginBottom: 12 }}>
           <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
-            <Ionicons name="refresh-outline" size={20} color="#00c17c" />
+            <Ionicons name="refresh-outline" size={20} color={colors.accent} />
           </TouchableOpacity>
         </View>
-      </View>
 
-      <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
@@ -159,11 +149,11 @@ export default function AuditScreen() {
                 paddingHorizontal: 14,
                 paddingVertical: 6,
                 borderRadius: 16,
-                backgroundColor: !filterAction ? "#00815d" : "#e5e7eb",
+                backgroundColor: !filterAction ? colors.primary : colors.border,
                 marginRight: 8,
               }}
             >
-              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterAction ? "#fff" : "#374151" }}>Toutes</Text>
+              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterAction ? "#fff" : colors.text }}>Toutes</Text>
             </TouchableOpacity>
             {actions.map((action) => (
               <TouchableOpacity
@@ -173,11 +163,11 @@ export default function AuditScreen() {
                   paddingHorizontal: 14,
                   paddingVertical: 6,
                   borderRadius: 16,
-                  backgroundColor: filterAction === action ? "#00815d" : "#e5e7eb",
+                  backgroundColor: filterAction === action ? colors.primary : colors.border,
                   marginRight: 8,
                 }}
               >
-                <Text style={{ fontSize: 13, fontWeight: "600", color: filterAction === action ? "#fff" : "#374151" }}>
+                <Text style={{ fontSize: 13, fontWeight: "600", color: filterAction === action ? "#fff" : colors.text }}>
                   {ACTION_LABELS[action] || action}
                 </Text>
               </TouchableOpacity>
@@ -196,10 +186,10 @@ export default function AuditScreen() {
               onPress={() => setExpandedId(isExpanded ? null : log.id)}
               activeOpacity={0.7}
               style={{
-                backgroundColor: "#fff",
+                backgroundColor: colors.card,
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: "#e5e7eb",
+                borderColor: colors.border,
                 marginBottom: 8,
                 padding: 14,
               }}
@@ -210,23 +200,23 @@ export default function AuditScreen() {
                 </View>
                 <View style={{ flex: 1 }}>
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                    <Text style={{ fontSize: 14, fontWeight: "600", color: "#1f2937" }}>
+                    <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>
                       {ACTION_LABELS[log.action] || log.action}
                     </Text>
-                    <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 6, paddingVertical: 1, borderRadius: 4 }}>
-                      <Text style={{ fontSize: 10, fontWeight: "600", color: "#6b7280" }}>{log.entityType}</Text>
+                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 6, paddingVertical: 1, borderRadius: 4 }}>
+                      <Text style={{ fontSize: 10, fontWeight: "600", color: colors.textSecondary }}>{log.entityType}</Text>
                     </View>
                   </View>
-                  <Text style={{ fontSize: 12, color: "#9ca3af" }}>{log.actorEmail}</Text>
-                  <Text style={{ fontSize: 11, color: "#d1d5db" }}>{formatTimestamp(log.createdAt)}</Text>
+                  <Text style={{ fontSize: 12, color: colors.textMuted }}>{log.actorEmail}</Text>
+                  <Text style={{ fontSize: 11, color: colors.disabled }}>{formatTimestamp(log.createdAt)}</Text>
                 </View>
-                <Ionicons name={isExpanded ? "chevron-up" : "chevron-down"} size={16} color="#9ca3af" />
+                <Ionicons name={isExpanded ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
               </View>
 
               {isExpanded && log.changes && (
-                <View style={{ marginTop: 10, backgroundColor: "#f9fafb", borderRadius: 8, padding: 12, borderWidth: 1, borderColor: "#e5e7eb" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#6b7280", marginBottom: 4 }}>Changements :</Text>
-                  <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 11, color: "#374151" }}>
+                <View style={{ marginTop: 10, backgroundColor: colors.background, borderRadius: 8, padding: 12, borderWidth: 1, borderColor: colors.border }}>
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary, marginBottom: 4 }}>Changements :</Text>
+                  <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 11, color: colors.text }}>
                     {JSON.stringify(log.changes, null, 2)}
                   </Text>
                 </View>
@@ -237,8 +227,8 @@ export default function AuditScreen() {
 
         {logs.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
-            <Ionicons name="document-text-outline" size={40} color="#d1d5db" />
-            <Text style={{ marginTop: 8, color: "#9ca3af", fontSize: 14 }}>Aucun log d'audit</Text>
+            <Ionicons name="document-text-outline" size={40} color={colors.disabled} />
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>Aucun log d'audit</Text>
           </View>
         )}
 
@@ -252,12 +242,12 @@ export default function AuditScreen() {
                 paddingHorizontal: 16,
                 paddingVertical: 8,
                 borderRadius: 8,
-                backgroundColor: page === 1 ? "#e5e7eb" : "#00815d",
+                backgroundColor: page === 1 ? colors.border : colors.primary,
               }}
             >
-              <Text style={{ color: page === 1 ? "#9ca3af" : "#fff", fontWeight: "600", fontSize: 13 }}>Précédent</Text>
+              <Text style={{ color: page === 1 ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>Précédent</Text>
             </TouchableOpacity>
-            <Text style={{ fontSize: 13, color: "#6b7280" }}>
+            <Text style={{ fontSize: 13, color: colors.textSecondary }}>
               Page {page} / {totalPages}
             </Text>
             <TouchableOpacity
@@ -267,10 +257,10 @@ export default function AuditScreen() {
                 paddingHorizontal: 16,
                 paddingVertical: 8,
                 borderRadius: 8,
-                backgroundColor: page === totalPages ? "#e5e7eb" : "#00815d",
+                backgroundColor: page === totalPages ? colors.border : colors.primary,
               }}
             >
-              <Text style={{ color: page === totalPages ? "#9ca3af" : "#fff", fontWeight: "600", fontSize: 13 }}>Suivant</Text>
+              <Text style={{ color: page === totalPages ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>Suivant</Text>
             </TouchableOpacity>
           </View>
         )}
