@@ -121,6 +121,104 @@ Couvre : Convention CEMAC (6 chapitres), conventions bilatérales (France, Chine
 Focus : double imposition, retenues à la source, établissement stable, échange de renseignements.`,
   },
   {
+    id: 'agent-enregistrement',
+    name: 'Agent Enregistrement/Timbre',
+    description: 'Spécialisé droits d\'enregistrement, timbre et taxes indirectes',
+    keywords: ['enregistrement', 'timbre', 'droit d\'enregistrement', 'droits d\'enregistrement', 'mutation', 'cession', 'acte notarié', 'acte notarie', 'donation', 'succession', 'taxe foncière', 'taxe fonciere', 'contribution foncière', 'contribution fonciere', 'droit de mutation', 'taxe indirecte'],
+    patterns: [
+      /\bdroit[s]?\s+(d.)?enregistrement\b/i,
+      /\btimbre\s*(fiscal)?\b/i,
+      /\b(mutation|cession)\s+(immobili[eè]re|fonds?\s+de\s+commerce)\b/i,
+      /\bdonation\b/i,
+      /\bsuccession\b/i,
+      /\b(taxe|contribution)\s+fonci[eè]re\b/i,
+      /\bacte[s]?\s+notari[eé][s]?\b/i,
+    ],
+    ragPriority: { tomes: ['2'], chapitres: ['enregistrement', 'timbre'], keywords: ['enregistrement', 'timbre', 'mutation', 'donation', 'succession'] },
+    systemInstruction: `Tu es spécialisé dans les droits d'enregistrement et le timbre du CGI 2026 (Tome 2).
+Couvre : droits d'enregistrement (mutations, cessions, donations, successions), droits de timbre, contribution foncière des propriétés bâties et non bâties.
+Focus : taux des mutations immobilières, exonérations, délais de paiement, pénalités de retard, obligations des notaires.`,
+  },
+  {
+    id: 'agent-petrole-mines',
+    name: 'Agent Pétrole/Mines',
+    description: 'Spécialisé fiscalité pétrolière et minière',
+    keywords: ['pétrole', 'petrole', 'minier', 'minière', 'miniere', 'hydrocarbure', 'hydrocarbures', 'gaz', 'exploitation pétrolière', 'exploitation petroliere', 'redevance minière', 'redevance miniere', 'permis minier', 'cpsc', 'partage de production', 'tfnc3'],
+    patterns: [
+      /\bp[eé]trol(e|ier|i[eè]re)\b/i,
+      /\bhydrocarbure[s]?\b/i,
+      /\b(exploitation|fiscalit[eé])\s+(mini[eè]re|p[eé]troli[eè]re)\b/i,
+      /\bredevance\s+(mini[eè]re|p[eé]troli[eè]re)\b/i,
+      /\bpartage\s+de\s+production\b/i,
+      /\bpermis\s+minier\b/i,
+      /\btfnc3\b/i,
+      /\b(gaz\s+naturel|forage|exploration)\b/i,
+    ],
+    ragPriority: { tomes: ['3'], chapitres: ['tfnc3', 'pétrole', 'mines'], keywords: ['pétrole', 'minier', 'hydrocarbure', 'redevance', 'production'] },
+    systemInstruction: `Tu es spécialisé dans la fiscalité pétrolière et minière du CGI 2026.
+Couvre : contrats de partage de production (CPSC), redevance minière proportionnelle, IS pétrolier, taxe superficiaire, fiscalité du gaz naturel, régimes dérogatoires secteur extractif.
+Focus : taux redevance, assiette IS pétrolier, obligations déclaratives des sociétés pétrolières et minières, stabilisation fiscale.`,
+  },
+  {
+    id: 'agent-procedures',
+    name: 'Agent Procédures',
+    description: 'Spécialisé procédures fiscales, recouvrement et contentieux',
+    keywords: ['procédure', 'procedure', 'recouvrement', 'contentieux', 'réclamation', 'reclamation', 'contrôle fiscal', 'controle fiscal', 'vérification', 'verification', 'redressement', 'pénalité', 'penalite', 'sanction', 'amende', 'majoration', 'prescription', 'sursis', 'avis de mise en recouvrement'],
+    patterns: [
+      /\b(proc[eé]dure|contentieux)\s+fiscal[e]?\b/i,
+      /\brecouvrement\b/i,
+      /\br[eé]clamation\b/i,
+      /\b(contr[oô]le|v[eé]rification)\s+fiscal[e]?\b/i,
+      /\bredressement\b/i,
+      /\b(p[eé]nalit[eé]|sanction|amende|majoration)\b/i,
+      /\bprescription\s+(fiscal[e]?)?\b/i,
+      /\bavis\s+de\s+mise\s+en\s+recouvrement\b/i,
+      /\bsursis\s+de\s+paiement\b/i,
+    ],
+    ragPriority: { tomes: ['3', '4'], chapitres: ['procédures', 'recouvrement', 'contentieux'], keywords: ['procédure', 'recouvrement', 'sanction', 'pénalité', 'contentieux'] },
+    systemInstruction: `Tu es spécialisé dans les procédures fiscales du CGI 2026.
+Couvre : contrôle fiscal (droit de communication, vérification de comptabilité), redressement, avis de mise en recouvrement, pénalités et majorations, contentieux (réclamation préalable, commission de recours, tribunal administratif).
+Focus : délais de prescription (4 ans), taux de pénalités (10% retard, 40% mauvaise foi, 80% manœuvres frauduleuses), sursis de paiement, garanties du contribuable.`,
+  },
+  {
+    id: 'agent-douanes',
+    name: 'Agent Douanes/Commerce',
+    description: 'Spécialisé droits de douane et fiscalité du commerce extérieur',
+    keywords: ['douane', 'douanes', 'droit de douane', 'importation', 'exportation', 'tarif douanier', 'tarif extérieur commun', 'tec', 'valeur en douane', 'transit', 'entrepôt', 'entrepot', 'zone franche', 'franchise douanière', 'franchise douaniere'],
+    patterns: [
+      /\bdouane[s]?\b/i,
+      /\b(droit[s]?\s+de\s+)?douane\b/i,
+      /\b(import|export)(ation)?\b/i,
+      /\btarif\s+(douanier|ext[eé]rieur\s+commun)\b/i,
+      /\bTEC\b/,
+      /\bvaleur\s+en\s+douane\b/i,
+      /\bzone[s]?\s+franche[s]?\b/i,
+      /\bfranchise\s+douani[eè]re\b/i,
+    ],
+    ragPriority: { tomes: ['2'], chapitres: ['douane', 'commerce'], keywords: ['douane', 'importation', 'exportation', 'tarif', 'TEC'] },
+    systemInstruction: `Tu es spécialisé dans les droits de douane et la fiscalité du commerce extérieur du CGI 2026.
+Couvre : Tarif Extérieur Commun CEMAC (TEC), droits d'importation, droits d'accises, régimes économiques (transit, entrepôt, admission temporaire), zones franches, exonérations.
+Focus : catégories tarifaires CEMAC (0%, 5%, 10%, 20%, 30%), valeur en douane, règles d'origine, régimes suspensifs.`,
+  },
+  {
+    id: 'agent-taxes-speciales',
+    name: 'Agent Taxes Spéciales',
+    description: 'Spécialisé taxes spéciales, communales et contributions diverses',
+    keywords: ['taxe spéciale', 'taxe speciale', 'taxe communale', 'contribution', 'redevance audiovisuelle', 'redevance informatique', 'taxe sur les jeux', 'taxe de séjour', 'taxe de sejour', 'taxe d\'habitation', 'centimes additionnels', 'taxe sur les spectacles', 'taxe sur la publicité', 'taxe sur la publicite'],
+    patterns: [
+      /\btaxe[s]?\s+(sp[eé]ciale|communale|locale)\b/i,
+      /\btaxe\s+(de\s+s[eé]jour|d.habitation|sur\s+les\s+jeux)\b/i,
+      /\bredevance\s+(audiovisuelle|informatique)\b/i,
+      /\bcentimes\s+additionnels\b/i,
+      /\btaxe\s+sur\s+(les\s+spectacles|la\s+publicit[eé])\b/i,
+      /\bcontribution[s]?\s+(sp[eé]ciale|diverse)\b/i,
+    ],
+    ragPriority: { tomes: ['2', '3'], chapitres: ['taxes spéciales', 'communal'], keywords: ['taxe spéciale', 'communale', 'redevance', 'contribution'] },
+    systemInstruction: `Tu es spécialisé dans les taxes spéciales et contributions diverses du CGI 2026.
+Couvre : taxes communales (taxe de séjour, taxe d'habitation, centimes additionnels), redevance audiovisuelle, redevance informatique, taxe sur les jeux, taxes sur les spectacles et la publicité.
+Focus : assiettes, taux, collectivités bénéficiaires, obligations déclaratives, exonérations.`,
+  },
+  {
     id: 'agent-general',
     name: 'Agent Général',
     description: 'Agent par défaut pour les questions fiscales générales',
