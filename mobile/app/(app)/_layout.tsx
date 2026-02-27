@@ -96,7 +96,7 @@ export default function AppLayout() {
                 onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
                 accessibilityLabel={t("settings.languageSelect")}
                 accessibilityRole="button"
-                style={{ padding: 6, borderRadius: 6, marginRight: 4 }}
+                style={{ padding: 6, marginRight: 4 }}
               >
                 <Text style={{ color: colors.sidebarText, fontSize: 13, fontWeight: "700" }}>
                   {i18n.language === "fr" ? "FR" : "EN"}
@@ -108,7 +108,7 @@ export default function AppLayout() {
                 onPress={toggleTheme}
                 accessibilityLabel={t("settings.darkMode")}
                 accessibilityRole="button"
-                style={{ padding: 6, borderRadius: 6, marginRight: 4 }}
+                style={{ padding: 6, marginRight: 4 }}
               >
                 <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.sidebarText} />
               </TouchableOpacity>
@@ -118,7 +118,7 @@ export default function AppLayout() {
                 onPress={() => router.push("/(app)/alertes")}
                 accessibilityLabel={t("dashboard.notifications")}
                 accessibilityRole="button"
-                style={{ padding: 6, borderRadius: 6, marginRight: 6 }}
+                style={{ padding: 6, marginRight: 6 }}
               >
                 <Ionicons name="notifications-outline" size={20} color={colors.sidebarText} />
               </TouchableOpacity>
@@ -129,7 +129,7 @@ export default function AppLayout() {
                 style={{
                   width: 30,
                   height: 30,
-                  borderRadius: 15,
+                  
                   backgroundColor: colors.primary,
                   alignItems: "center",
                   justifyContent: "center",

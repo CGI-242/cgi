@@ -39,7 +39,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
                 flexDirection: "row",
                 alignItems: "center",
                 backgroundColor: colors.card,
-                borderRadius: 8,
+                
                 paddingHorizontal: 12,
                 paddingVertical: 10,
                 marginBottom: 6,

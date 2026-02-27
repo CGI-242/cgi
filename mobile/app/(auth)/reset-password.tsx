@@ -105,7 +105,7 @@ export default function ResetPassword() {
       style={{ flex: 1, backgroundColor: colors.background }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, borderRadius: 12 }}>
+        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
@@ -123,7 +123,7 @@ export default function ResetPassword() {
 
           {/* Dev code - visible uniquement en développement */}
           {__DEV__ && devCode ? (
-            <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center", borderRadius: 8 }}>
+            <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center" }}>
               <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
               <Text style={{ fontSize: 30, fontWeight: "700", color: colors.success, letterSpacing: 4 }}>
                 {devCode}
@@ -133,12 +133,12 @@ export default function ResetPassword() {
 
           {/* Messages */}
           {error ? (
-            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
               <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
           {success ? (
-            <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+            <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16 }}>
               <Text style={{ color: colors.success, fontSize: 14 }}>{success}</Text>
             </View>
           ) : null}
@@ -148,7 +148,7 @@ export default function ResetPassword() {
             {t("auth.codePlaceholder")}
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16, borderRadius: 8 }}
+            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
             placeholder="000000"
             placeholderTextColor={colors.textMuted}
             value={code}
@@ -166,7 +166,7 @@ export default function ResetPassword() {
           </Text>
           <View style={{ marginBottom: 16 }}>
             <TextInput
-              style={{ width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text, borderRadius: 8 }}
+              style={{ width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text }}
               placeholder={t("auth.passwordPlaceholder")}
               placeholderTextColor={colors.textMuted}
               value={password}
@@ -190,7 +190,7 @@ export default function ResetPassword() {
             {t("auth.confirmPassword")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16, borderRadius: 8 }}
+            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
             placeholder={t("auth.confirmPassword")}
             placeholderTextColor={colors.textMuted}
             value={confirmPassword}
@@ -200,7 +200,7 @@ export default function ResetPassword() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", borderRadius: 8, opacity: loading ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", opacity: loading ? 0.7 : 1 }}
             onPress={handleReset}
             activeOpacity={0.8}
             disabled={loading}

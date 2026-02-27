@@ -67,7 +67,7 @@ export default function ActivityStats({ stats }: Props) {
                       width: "70%",
                       height,
                       backgroundColor: day.questions > 0 ? "#00815d" : "#e5e7eb",
-                      borderRadius: 3,
+                      
                     }}
                   />
                   <Text style={{ fontSize: 10, color: "#9ca3af", marginTop: 4 }}>
@@ -85,7 +85,7 @@ export default function ActivityStats({ stats }: Props) {
 
 const cardStyle = {
   backgroundColor: "#fff",
-  borderRadius: 12,
+  
   overflow: "hidden" as const,
   marginBottom: 4,
 };

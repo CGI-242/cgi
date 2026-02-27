@@ -137,7 +137,7 @@ export default function HistoryPanel({
           marginTop: 12,
           marginBottom: 8,
           backgroundColor: colors.primary,
-          borderRadius: 8,
+          
           paddingVertical: 10,
           paddingHorizontal: 14,
         }}
@@ -154,7 +154,7 @@ export default function HistoryPanel({
           marginHorizontal: 12,
           marginBottom: 8,
           backgroundColor: colors.input,
-          borderRadius: 8,
+          
           flexDirection: "row",
           alignItems: "center",
           paddingHorizontal: 10,

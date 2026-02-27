@@ -49,7 +49,7 @@ export default function PatenteScreen() {
         {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info */}
-          <View style={{ padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+          <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: colors.text }}>
               {t("simulateur.patente.description")}
             </Text>
@@ -61,7 +61,7 @@ export default function PatenteScreen() {
             {REGIMES.map((r) => (
               <TouchableOpacity
                 key={r.value}
-                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: regime === r.value ? colors.primary : colors.border, borderRadius: 6 }}
+                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: regime === r.value ? colors.primary : colors.border }}
                 onPress={() => setRegime(r.value)}
               >
                 <Text style={{ color: regime === r.value ? "#fff" : colors.text, fontSize: 11, fontWeight: "600" }}>{r.label}</Text>
@@ -70,7 +70,7 @@ export default function PatenteScreen() {
           </View>
 
           {/* Stand-by */}
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 8 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 8 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.patente.standby")}</Text>
               <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.patente.standbyDesc")}</Text>
@@ -85,7 +85,7 @@ export default function PatenteScreen() {
           {isStandBy && (
             <View style={{ marginBottom: 8 }}>
               <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{t("simulateur.patente.lastPatente")}</Text>
-              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 6, height: 40, borderWidth: 1, borderColor: colors.border }}>
+              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
                 <TextInput
                   style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}
                   value={dernierePatente}
@@ -103,7 +103,7 @@ export default function PatenteScreen() {
           {!isStandBy && (
             <View style={{ marginBottom: 12 }}>
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>{t("simulateur.patente.turnover")}</Text>
-              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 8, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
+              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
                 <TextInput
                   style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }}
                   value={chiffreAffaires}
@@ -118,7 +118,7 @@ export default function PatenteScreen() {
           )}
 
           {/* Options */}
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 8 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 8 }}>
             <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.newCompany")}</Text>
             <Switch
               value={isNouvelle}
@@ -127,14 +127,14 @@ export default function PatenteScreen() {
               thumbColor={isNouvelle ? colors.primary : colors.textMuted}
             />
           </View>
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.fiscalEntities")}</Text>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
+              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
                 <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>-</Text>
               </TouchableOpacity>
               <Text style={{ minWidth: 24, textAlign: "center", fontSize: 14, fontWeight: "700", color: colors.text }}>{nombreEntites}</Text>
-              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setNombreEntites(nombreEntites + 1)}>
+              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setNombreEntites(nombreEntites + 1)}>
                 <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>+</Text>
               </TouchableOpacity>
             </View>

@@ -119,7 +119,7 @@ export default function Dashboard() {
                   flex: 1,
                   minWidth: "45%",
                   backgroundColor: colors.card,
-                  borderRadius: 12,
+                  
                   borderWidth: 1,
                   borderColor: colors.border,
                   padding: 14,
@@ -131,7 +131,7 @@ export default function Dashboard() {
                   style={{
                     width: 44,
                     height: 44,
-                    borderRadius: 12,
+                    
                     backgroundColor: s.bg,
                     alignItems: "center",
                     justifyContent: "center",
@@ -155,7 +155,7 @@ export default function Dashboard() {
           <View
             style={{
               backgroundColor: colors.card,
-              borderRadius: 12,
+              
               borderWidth: 1,
               borderColor: colors.border,
               overflow: "hidden",
@@ -184,7 +184,7 @@ export default function Dashboard() {
                     style={{
                       width: 40,
                       height: 40,
-                      borderRadius: 10,
+                      
                       backgroundColor: a.bg,
                       alignItems: "center",
                       justifyContent: "center",
@@ -200,7 +200,7 @@ export default function Dashboard() {
                     <Text style={{ fontSize: 12, color: colors.textMuted }}>{a.desc}</Text>
                   </View>
                   {disabled ? (
-                    <View style={{ backgroundColor: colors.background, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2 }}>
+                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 6, paddingVertical: 2 }}>
                       <Text style={{ fontSize: 10, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   ) : (
@@ -224,7 +224,7 @@ export default function Dashboard() {
                 key={`${e.date}-${e.label}`}
                 style={{
                   backgroundColor: colors.card,
-                  borderRadius: 10,
+                  
                   borderWidth: 1,
                   borderColor: colors.border,
                   paddingHorizontal: 14,

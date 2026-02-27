@@ -30,7 +30,7 @@ export default function SessionExpiredModal() {
         <View
           style={{
             backgroundColor: colors.card,
-            borderRadius: 16,
+            
             padding: 32,
             alignItems: "center",
             maxWidth: 400,
@@ -69,7 +69,7 @@ export default function SessionExpiredModal() {
             onPress={handleReconnect}
             style={{
               backgroundColor: colors.primary,
-              borderRadius: 10,
+              
               paddingVertical: 14,
               paddingHorizontal: 32,
               width: "100%",

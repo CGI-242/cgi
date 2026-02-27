@@ -130,7 +130,7 @@ export default function ProfilScreen() {
             style={{
               width: 80,
               height: 80,
-              borderRadius: 40,
+              
               backgroundColor: colors.primary,
               justifyContent: "center",
               alignItems: "center",
@@ -147,7 +147,7 @@ export default function ProfilScreen() {
           <View
             style={{
               backgroundColor: message.type === "success" ? "#d1fae5" : "#fee2e2",
-              borderRadius: 8,
+              
               padding: 12,
               marginBottom: 16,
               flexDirection: "row",
@@ -173,7 +173,7 @@ export default function ProfilScreen() {
         )}
 
         {/* Formulaire */}
-        <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16 }}>
+        <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16 }}>
           <FieldInput label={t("auth.firstName")} value={firstName} onChangeText={setFirstName} placeholder={t("auth.firstNamePlaceholder")} colors={colors} />
           <FieldInput label={t("auth.lastName")} value={lastName} onChangeText={setLastName} placeholder={t("auth.lastNamePlaceholder")} colors={colors} />
           <FieldInput
@@ -208,7 +208,7 @@ export default function ProfilScreen() {
             disabled={saving}
             style={{
               backgroundColor: saving ? colors.accent : colors.primary,
-              borderRadius: 10,
+              
               paddingVertical: 12,
               paddingHorizontal: 24,
               flexDirection: "row",
@@ -259,7 +259,7 @@ function FieldInput({
         style={{
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 8,
+          
           paddingHorizontal: 12,
           paddingVertical: 10,
           fontSize: 15,

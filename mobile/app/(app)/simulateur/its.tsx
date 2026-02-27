@@ -58,7 +58,7 @@ export default function ItsScreen() {
         {/* Colonne gauche 50% - Formulaire */}
         <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info banner */}
-          <View style={{ borderRadius: 8, marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
+          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
             <Text style={{ fontSize: 11, color: colors.text }}>
               {t("simulateur.its.description")}
             </Text>
@@ -72,7 +72,7 @@ export default function ItsScreen() {
               {SITUATIONS.map((s) => (
                 <TouchableOpacity
                   key={s.value}
-                  style={{ paddingVertical: 8, alignItems: "center", backgroundColor: situation === s.value ? colors.primary : colors.border, borderRadius: 6 }}
+                  style={{ paddingVertical: 8, alignItems: "center", backgroundColor: situation === s.value ? colors.primary : colors.border }}
                   onPress={() => setSituation(s.value)}
                 >
                   <Text style={{ color: situation === s.value ? "#fff" : colors.text, fontSize: 12, fontWeight: "600" }}>{s.label}</Text>
@@ -83,19 +83,19 @@ export default function ItsScreen() {
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.its.dependents")}</Text>
               <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
-                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
+                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
                   <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>-</Text>
                 </TouchableOpacity>
                 <Text style={{ minWidth: 28, textAlign: "center", fontSize: 16, fontWeight: "700", color: colors.text }}>{enfants}</Text>
-                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
+                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
                   <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>+</Text>
                 </TouchableOpacity>
               </View>
-              <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 8, backgroundColor: appliquerCharge ? `${colors.primary}20` : colors.border, borderRadius: 6, marginBottom: 10 }} onPress={() => setAppliquerCharge(!appliquerCharge)}>
+              <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 8, backgroundColor: appliquerCharge ? `${colors.primary}20` : colors.border, marginBottom: 10 }} onPress={() => setAppliquerCharge(!appliquerCharge)}>
                 <Ionicons name={appliquerCharge ? "checkbox" : "square-outline"} size={16} color={appliquerCharge ? colors.primary : colors.textMuted} />
                 <Text style={{ fontSize: 12, fontWeight: "600", color: appliquerCharge ? colors.primary : colors.textSecondary, marginLeft: 6 }}>{t("simulateur.its.familyQuotient")}</Text>
               </TouchableOpacity>
-              <View style={{ paddingHorizontal: 12, paddingVertical: 8, alignItems: "center", backgroundColor: `${colors.primary}15`, borderRadius: 6 }}>
+              <View style={{ paddingHorizontal: 12, paddingVertical: 8, alignItems: "center", backgroundColor: `${colors.primary}15` }}>
                 <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>{nombreParts} {t("common.parts")}</Text>
               </View>
             </View>
@@ -106,7 +106,7 @@ export default function ItsScreen() {
             {(["mensuel", "annuel"] as PeriodeRevenu[]).map((p) => (
               <TouchableOpacity
                 key={p}
-                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: periode === p ? colors.primary : colors.border, borderRadius: 8 }}
+                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: periode === p ? colors.primary : colors.border }}
                 onPress={() => setPeriode(p)}
               >
                 <Text style={{ color: periode === p ? "#fff" : colors.text, fontWeight: "700", fontSize: 13 }}>
@@ -120,7 +120,7 @@ export default function ItsScreen() {
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {periode === "mensuel" ? t("simulateur.its.grossSalaryMonthly") : t("simulateur.its.grossSalaryAnnual")}
           </Text>
-          <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 8, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
             <TextInput
               style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }}
               value={salaireBrut}

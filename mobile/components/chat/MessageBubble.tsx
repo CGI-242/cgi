@@ -34,7 +34,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
           style={{
             width: 30,
             height: 30,
-            borderRadius: 15,
+            
             backgroundColor: colors.accent,
             alignItems: "center",
             justifyContent: "center",
@@ -48,7 +48,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
         <View
           style={{
             backgroundColor: role === "USER" ? colors.userBubble : colors.assistantBubble,
-            borderRadius: 12,
+            
             paddingHorizontal: 14,
             paddingVertical: 10,
             ...(role === "USER"
@@ -80,7 +80,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
           style={{
             width: 30,
             height: 30,
-            borderRadius: 15,
+            
             backgroundColor: colors.headerBg,
             alignItems: "center",
             justifyContent: "center",

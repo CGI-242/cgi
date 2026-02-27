@@ -7,7 +7,7 @@ export default function ConfidentialiteScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
-        <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 20 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 20 }}>
           <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 20, fontStyle: "italic" }}>
             Dernière mise à jour : 1er janvier 2026
           </Text>

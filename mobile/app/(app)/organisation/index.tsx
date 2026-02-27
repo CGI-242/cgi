@@ -324,7 +324,7 @@ export default function OrganisationScreen() {
           </View>
 
           {/* Formulaire de création */}
-          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
             <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 12 }}>Créer une organisation</Text>
             <TextInput
               value={createName}
@@ -333,7 +333,7 @@ export default function OrganisationScreen() {
               placeholderTextColor={colors.textMuted}
               style={{
                 backgroundColor: colors.background,
-                borderRadius: 8,
+                
                 paddingHorizontal: 14,
                 paddingVertical: 12,
                 fontSize: 15,
@@ -346,7 +346,7 @@ export default function OrganisationScreen() {
               disabled={createLoading || !createName.trim()}
               style={{
                 backgroundColor: !createName.trim() ? colors.textMuted : colors.primary,
-                borderRadius: 8,
+                
                 paddingVertical: 12,
                 alignItems: "center",
               }}
@@ -362,7 +362,7 @@ export default function OrganisationScreen() {
           {/* Lien vers invitations */}
           <TouchableOpacity
             onPress={() => router.push("/(app)/invitations")}
-            style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, flexDirection: "row", alignItems: "center" }}
+            style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, flexDirection: "row", alignItems: "center" }}
           >
             <Ionicons name="mail-outline" size={22} color={colors.primary} style={{ marginRight: 12 }} />
             <View style={{ flex: 1 }}>
@@ -380,16 +380,16 @@ export default function OrganisationScreen() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
           </View>
         )}
 
         {/* Détails organisation */}
         {org && (
-          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-              <View style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
+              <View style={{ width: 44, height: 44, backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
                 <Ionicons name="business" size={22} color="#fff" />
               </View>
               <View style={{ flex: 1 }}>
@@ -403,7 +403,7 @@ export default function OrganisationScreen() {
                       style={{
                         flex: 1,
                         backgroundColor: colors.background,
-                        borderRadius: 6,
+                        
                         paddingHorizontal: 10,
                         paddingVertical: 6,
                         fontSize: 16,
@@ -446,11 +446,11 @@ export default function OrganisationScreen() {
           return (
             <View
               key={member.userId}
-              style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8 }}
+              style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 {/* Avatar */}
-                <View style={{ width: 38, height: 38, borderRadius: 19, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
+                <View style={{ width: 38, height: 38, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
                   <Text style={{ fontSize: 14, fontWeight: "700", color: roleColor }}>{initials}</Text>
                 </View>
                 {/* Infos */}
@@ -459,7 +459,7 @@ export default function OrganisationScreen() {
                   <Text style={{ fontSize: 12, color: colors.textMuted }}>{member.email}</Text>
                 </View>
                 {/* Badge rôle */}
-                <View style={{ backgroundColor: `${roleColor}20`, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6, marginRight: 8 }}>
+                <View style={{ backgroundColor: `${roleColor}20`, paddingHorizontal: 8, paddingVertical: 3, marginRight: 8 }}>
                   <Text style={{ fontSize: 11, fontWeight: "700", color: roleColor }}>{ROLE_LABELS[member.role] || member.role}</Text>
                 </View>
                 {/* Menu actions */}
@@ -472,7 +472,7 @@ export default function OrganisationScreen() {
 
               {/* Menu dropdown */}
               {isMenuOpen && isAdmin && member.role !== "OWNER" && (
-                <View style={{ marginTop: 10, backgroundColor: colors.background, borderRadius: 8, padding: 8 }}>
+                <View style={{ marginTop: 10, backgroundColor: colors.background, padding: 8 }}>
                   {/* Changer rôle */}
                   {(["MEMBER", "ADMIN", "VIEWER"] as const).filter((r) => r !== member.role).map((role) => (
                     <TouchableOpacity
@@ -514,7 +514,7 @@ export default function OrganisationScreen() {
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4, marginTop: 16 }}>
               INVITER UN MEMBRE
             </Text>
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
               <TextInput
                 value={inviteEmail}
                 onChangeText={setInviteEmail}
@@ -524,7 +524,7 @@ export default function OrganisationScreen() {
                 autoCapitalize="none"
                 style={{
                   backgroundColor: colors.background,
-                  borderRadius: 8,
+                  
                   paddingHorizontal: 14,
                   paddingVertical: 12,
                   fontSize: 15,
@@ -541,7 +541,7 @@ export default function OrganisationScreen() {
                     style={{
                       flex: 1,
                       paddingVertical: 10,
-                      borderRadius: 8,
+                      
                       alignItems: "center",
                       backgroundColor: inviteRole === role ? colors.primary : colors.background,
                     }}
@@ -557,7 +557,7 @@ export default function OrganisationScreen() {
                 disabled={actionLoading || !inviteEmail.trim()}
                 style={{
                   backgroundColor: !inviteEmail.trim() ? colors.textMuted : colors.primary,
-                  borderRadius: 8,
+                  
                   paddingVertical: 12,
                   alignItems: "center",
                 }}
@@ -581,7 +581,7 @@ export default function OrganisationScreen() {
             {invitations.map((inv) => (
               <View
                 key={inv.id}
-                style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8, flexDirection: "row", alignItems: "center" }}
+                style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8, flexDirection: "row", alignItems: "center" }}
               >
                 <Ionicons name="mail-outline" size={20} color="#d97706" style={{ marginRight: 12 }} />
                 <View style={{ flex: 1 }}>
@@ -607,7 +607,7 @@ export default function OrganisationScreen() {
             <TouchableOpacity
               onPress={handleDeleteOrg}
               disabled={actionLoading}
-              style={{ backgroundColor: "#fef2f2", borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
+              style={{ backgroundColor: "#fef2f2", paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="trash-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
@@ -617,7 +617,7 @@ export default function OrganisationScreen() {
             <TouchableOpacity
               onPress={handleRestoreOrg}
               disabled={actionLoading}
-              style={{ backgroundColor: "#f0fdf4", borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
+              style={{ backgroundColor: "#f0fdf4", paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="refresh-outline" size={18} color="#16a34a" style={{ marginRight: 8 }} />
@@ -627,7 +627,7 @@ export default function OrganisationScreen() {
             <TouchableOpacity
               onPress={handlePermanentDelete}
               disabled={actionLoading}
-              style={{ backgroundColor: "#dc2626", borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+              style={{ backgroundColor: "#dc2626", paddingVertical: 14, alignItems: "center" }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="nuclear-outline" size={18} color="#fff" style={{ marginRight: 8 }} />

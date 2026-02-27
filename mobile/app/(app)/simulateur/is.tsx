@@ -48,7 +48,7 @@ export default function IsScreen() {
         {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info */}
-          <View style={{ padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+          <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: colors.text }}>
               {t("simulateur.is.description")}
             </Text>
@@ -64,7 +64,7 @@ export default function IsScreen() {
           <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} colors={colors} />
 
           {/* Deficit */}
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.is.deficit")}</Text>
               <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.is.deficitDesc")}</Text>
@@ -150,7 +150,7 @@ function NumberField({
   return (
     <View style={{ marginBottom: 8 }}>
       <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{label}</Text>
-      <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 6, height: 40, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
         <TextInput
           style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}
           value={value}

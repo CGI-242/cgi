@@ -168,7 +168,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                     <View
                       style={{
                         backgroundColor: "#333",
-                        borderRadius: 3,
+                        
                         paddingHorizontal: 5,
                         paddingVertical: 1,
                         marginLeft: 8,

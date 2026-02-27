@@ -190,13 +190,13 @@ export default function SecuriteScreen() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
           </View>
         )}
 
         {/* Statut MFA */}
-        <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Ionicons name="shield-checkmark" size={24} color={status?.enabled ? "#16a34a" : "#dc2626"} style={{ marginRight: 12 }} />
@@ -207,7 +207,7 @@ export default function SecuriteScreen() {
                 </Text>
               </View>
             </View>
-            <View style={{ backgroundColor: status?.enabled ? "#f0fdf4" : "#fef2f2", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 }}>
+            <View style={{ backgroundColor: status?.enabled ? "#f0fdf4" : "#fef2f2", paddingHorizontal: 10, paddingVertical: 4 }}>
               <Text style={{ fontSize: 12, fontWeight: "700", color: status?.enabled ? "#16a34a" : "#dc2626" }}>
                 {status?.enabled ? "Activé" : "Désactivé"}
               </Text>
@@ -228,7 +228,7 @@ export default function SecuriteScreen() {
           <TouchableOpacity
             onPress={handleStartSetup}
             disabled={actionLoading}
-            style={{ backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 16 }}
+            style={{ backgroundColor: colors.primary, paddingVertical: 14, alignItems: "center", marginBottom: 16 }}
           >
             {actionLoading ? (
               <ActivityIndicator size="small" color="#fff" />
@@ -243,21 +243,21 @@ export default function SecuriteScreen() {
 
         {/* Étape QR Code */}
         {setupStep === "qr" && setupData && (
-          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
             <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, marginBottom: 12 }}>
               1. Scannez le QR code avec votre application d'authentification
             </Text>
             <View style={{ alignItems: "center", marginBottom: 16 }}>
               <Image
                 source={{ uri: setupData.qrCodeUrl }}
-                style={{ width: 200, height: 200, borderRadius: 8 }}
+                style={{ width: 200, height: 200 }}
                 resizeMode="contain"
               />
             </View>
             <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>
               Ou entrez le code manuellement :
             </Text>
-            <View style={{ backgroundColor: colors.background, borderRadius: 8, padding: 12, marginBottom: 16 }}>
+            <View style={{ backgroundColor: colors.background, padding: 12, marginBottom: 16 }}>
               <Text style={{ fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontSize: 14, color: colors.text, textAlign: "center" }}>
                 {setupData.secret}
               </Text>
@@ -275,7 +275,7 @@ export default function SecuriteScreen() {
               maxLength={6}
               style={{
                 backgroundColor: colors.background,
-                borderRadius: 8,
+                
                 paddingHorizontal: 14,
                 paddingVertical: 12,
                 fontSize: 20,
@@ -290,7 +290,7 @@ export default function SecuriteScreen() {
               disabled={actionLoading || totpCode.length < 6}
               style={{
                 backgroundColor: totpCode.length < 6 ? colors.textMuted : colors.primary,
-                borderRadius: 8,
+                
                 paddingVertical: 12,
                 alignItems: "center",
               }}
@@ -306,7 +306,7 @@ export default function SecuriteScreen() {
 
         {/* Codes de secours */}
         {setupStep === "backup" && backupCodes.length > 0 && (
-          <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
+          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
               <Ionicons name="warning-outline" size={20} color="#d97706" style={{ marginRight: 8 }} />
               <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>
@@ -316,7 +316,7 @@ export default function SecuriteScreen() {
             <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
               Sauvegardez ces codes dans un endroit sûr. Ils vous permettront de vous connecter si vous perdez l'accès à votre application d'authentification.
             </Text>
-            <View style={{ backgroundColor: colors.background, borderRadius: 8, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
+            <View style={{ backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
               {backupCodes.map((code, i) => (
                 <Text
                   key={i}
@@ -328,7 +328,7 @@ export default function SecuriteScreen() {
             </View>
             <TouchableOpacity
               onPress={copyBackupCodes}
-              style={{ backgroundColor: colors.text, borderRadius: 8, paddingVertical: 10, alignItems: "center", marginBottom: 8 }}
+              style={{ backgroundColor: colors.text, paddingVertical: 10, alignItems: "center", marginBottom: 8 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="copy-outline" size={16} color="#fff" style={{ marginRight: 6 }} />
@@ -337,7 +337,7 @@ export default function SecuriteScreen() {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => { setSetupStep("idle"); setBackupCodes([]); }}
-              style={{ backgroundColor: colors.primary, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+              style={{ backgroundColor: colors.primary, paddingVertical: 10, alignItems: "center" }}
             >
               <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>J'ai sauvegardé mes codes</Text>
             </TouchableOpacity>
@@ -350,7 +350,7 @@ export default function SecuriteScreen() {
             <TouchableOpacity
               onPress={handleRegenerateBackupCodes}
               disabled={actionLoading}
-              style={{ backgroundColor: colors.text, borderRadius: 12, paddingVertical: 14, alignItems: "center", marginBottom: 12 }}
+              style={{ backgroundColor: colors.text, paddingVertical: 14, alignItems: "center", marginBottom: 12 }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="refresh-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
@@ -361,7 +361,7 @@ export default function SecuriteScreen() {
             {!showDisable ? (
               <TouchableOpacity
                 onPress={() => setShowDisable(true)}
-                style={{ backgroundColor: "#fef2f2", borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+                style={{ backgroundColor: "#fef2f2", paddingVertical: 14, alignItems: "center" }}
               >
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                   <Ionicons name="shield-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
@@ -369,7 +369,7 @@ export default function SecuriteScreen() {
                 </View>
               </TouchableOpacity>
             ) : (
-              <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: "#fca5a5", padding: 16 }}>
+              <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: "#fca5a5", padding: 16 }}>
                 <Text style={{ fontSize: 14, fontWeight: "600", color: "#dc2626", marginBottom: 8 }}>
                   Confirmer la désactivation
                 </Text>
@@ -384,7 +384,7 @@ export default function SecuriteScreen() {
                   secureTextEntry
                   style={{
                     backgroundColor: colors.background,
-                    borderRadius: 8,
+                    
                     paddingHorizontal: 14,
                     paddingVertical: 12,
                     fontSize: 15,
@@ -395,14 +395,14 @@ export default function SecuriteScreen() {
                 <View style={{ flexDirection: "row", gap: 8 }}>
                   <TouchableOpacity
                     onPress={() => { setShowDisable(false); setDisablePassword(""); }}
-                    style={{ flex: 1, backgroundColor: colors.background, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                    style={{ flex: 1, backgroundColor: colors.background, paddingVertical: 10, alignItems: "center" }}
                   >
                     <Text style={{ color: colors.text, fontWeight: "600", fontSize: 14 }}>Annuler</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={handleDisableMfa}
                     disabled={actionLoading || !disablePassword.trim()}
-                    style={{ flex: 1, backgroundColor: "#dc2626", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                    style={{ flex: 1, backgroundColor: "#dc2626", paddingVertical: 10, alignItems: "center" }}
                   >
                     {actionLoading ? (
                       <ActivityIndicator size="small" color="#fff" />
@@ -421,7 +421,7 @@ export default function SecuriteScreen() {
           <TouchableOpacity
             onPress={handleLogoutAll}
             disabled={actionLoading}
-            style={{ backgroundColor: "#fef2f2", borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+            style={{ backgroundColor: "#fef2f2", paddingVertical: 14, alignItems: "center" }}
           >
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Ionicons name="log-out-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />

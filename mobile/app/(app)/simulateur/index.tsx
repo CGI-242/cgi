@@ -54,7 +54,7 @@ export default function SimulateurHub() {
               style={{
                 width: "48%",
                 backgroundColor: colors.card,
-                borderRadius: 12,
+                
                 borderWidth: 1,
                 borderColor: colors.border,
                 padding: 16,
@@ -66,7 +66,7 @@ export default function SimulateurHub() {
                   backgroundColor: `${colors.primary}15`,
                   width: 44,
                   height: 44,
-                  borderRadius: 12,
+                  
                   alignItems: "center",
                   justifyContent: "center",
                   marginBottom: 12,
@@ -75,7 +75,7 @@ export default function SimulateurHub() {
                 <Ionicons name={sim.icon} size={24} color={colors.primary} />
               </View>
               <Text style={{ fontSize: 18, fontWeight: "800", color: colors.primary, marginBottom: 2 }}>{sim.title}</Text>
-              <View style={{ backgroundColor: `${colors.primary}20`, borderRadius: 4, marginBottom: 6, paddingHorizontal: 8, paddingVertical: 2, alignSelf: "flex-start" }}>
+              <View style={{ backgroundColor: `${colors.primary}20`, marginBottom: 6, paddingHorizontal: 8, paddingVertical: 2, alignSelf: "flex-start" }}>
                 <Text style={{ fontSize: 9, fontWeight: "700", color: colors.primary }}>CGI 2026</Text>
               </View>
               <Text style={{ fontSize: 12, color: colors.text, fontWeight: "500", marginBottom: 2 }}>{sim.subtitle}</Text>

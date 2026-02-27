@@ -46,7 +46,7 @@ export default function MfaVerify() {
       style={{ flex: 1, backgroundColor: colors.background }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, borderRadius: 12 }}>
+        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
@@ -64,7 +64,7 @@ export default function MfaVerify() {
 
           {/* Messages */}
           {error ? (
-            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
               <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
@@ -74,7 +74,7 @@ export default function MfaVerify() {
             {t("auth.mfaPlaceholder")}
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16, borderRadius: 8 }}
+            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
             placeholder="000000"
             placeholderTextColor={colors.textMuted}
             value={code}
@@ -91,7 +91,7 @@ export default function MfaVerify() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", borderRadius: 8, opacity: loading || code.length < 6 ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", opacity: loading || code.length < 6 ? 0.7 : 1 }}
             onPress={handleVerify}
             activeOpacity={0.8}
             disabled={loading || code.length < 6}

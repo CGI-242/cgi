@@ -22,7 +22,7 @@ export default function CitationsBlock({ citations }: Props) {
     <View
       style={{
         backgroundColor: colors.citationsBg,
-        borderRadius: 8,
+        
         borderWidth: 1,
         borderColor: colors.primary,
         padding: 10,
@@ -37,7 +37,7 @@ export default function CitationsBlock({ citations }: Props) {
           key={`${cit.articleNumber}-${i}`}
           style={{
             backgroundColor: colors.card,
-            borderRadius: 6,
+            
             padding: 8,
             marginBottom: i < visibleCitations.length - 1 ? 4 : 0,
             borderWidth: 1,

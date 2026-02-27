@@ -17,12 +17,12 @@ export default function LogoutScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-      <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, alignItems: "center", borderRadius: 12 }}>
+      <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, alignItems: "center" }}>
         <View
           style={{
             width: 64,
             height: 64,
-            borderRadius: 32,
+            
             backgroundColor: colors.success,
             alignItems: "center",
             justifyContent: "center",
@@ -40,7 +40,7 @@ export default function LogoutScreen() {
         </Text>
 
         <TouchableOpacity
-          style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", borderRadius: 8 }}
+          style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center" }}
           onPress={handleReconnect}
           activeOpacity={0.8}
         >

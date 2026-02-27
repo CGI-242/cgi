@@ -26,7 +26,7 @@ export default function StreamingBubble({ content }: Props) {
         style={{
           width: 30,
           height: 30,
-          borderRadius: 15,
+          
           backgroundColor: colors.accent,
           alignItems: "center",
           justifyContent: "center",
@@ -39,7 +39,7 @@ export default function StreamingBubble({ content }: Props) {
         <View
           style={{
             backgroundColor: colors.assistantBubble,
-            borderRadius: 12,
+            
             borderBottomLeftRadius: 4,
             paddingHorizontal: 14,
             paddingVertical: 10,

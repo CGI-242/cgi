@@ -227,7 +227,7 @@ export default function AbonnementScreen() {
           <View
             style={{
               backgroundColor: "#fee2e2",
-              borderRadius: 8,
+              
               padding: 12,
               marginBottom: 16,
               flexDirection: "row",
@@ -246,7 +246,7 @@ export default function AbonnementScreen() {
         <View
           style={{
             backgroundColor: colors.card,
-            borderRadius: 16,
+            
             borderWidth: 2,
             borderColor: planColor,
             overflow: "hidden",
@@ -267,7 +267,7 @@ export default function AbonnementScreen() {
                 backgroundColor: planColor,
                 paddingHorizontal: 20,
                 paddingVertical: 6,
-                borderRadius: 20,
+                
                 marginBottom: 8,
               }}
             >
@@ -284,7 +284,7 @@ export default function AbonnementScreen() {
                 backgroundColor: colors.card,
                 paddingHorizontal: 12,
                 paddingVertical: 4,
-                borderRadius: 12,
+                
                 borderWidth: 1,
                 borderColor: statusColor,
               }}
@@ -293,7 +293,7 @@ export default function AbonnementScreen() {
                 style={{
                   width: 8,
                   height: 8,
-                  borderRadius: 4,
+                  
                   backgroundColor: statusColor,
                   marginRight: 6,
                 }}
@@ -316,7 +316,7 @@ export default function AbonnementScreen() {
         <View
           style={{
             backgroundColor: colors.card,
-            borderRadius: 12,
+            
             padding: 20,
             marginBottom: 16,
             borderWidth: 1,
@@ -354,7 +354,7 @@ export default function AbonnementScreen() {
                 style={{
                   height: 10,
                   backgroundColor: colors.border,
-                  borderRadius: 5,
+                  
                   overflow: "hidden",
                 }}
               >
@@ -368,7 +368,7 @@ export default function AbonnementScreen() {
                         : progressRatio >= 0.7
                           ? "#d97706"
                           : colors.accent,
-                    borderRadius: 5,
+                    
                   }}
                 />
               </View>
@@ -386,7 +386,7 @@ export default function AbonnementScreen() {
         <View
           style={{
             backgroundColor: colors.card,
-            borderRadius: 12,
+            
             padding: 20,
             marginBottom: 16,
             borderWidth: 1,
@@ -436,7 +436,7 @@ export default function AbonnementScreen() {
                     backgroundColor: days <= 5 ? "#fee2e2" : days <= 10 ? "#fef3c7" : "#d1fae5",
                     paddingHorizontal: 10,
                     paddingVertical: 2,
-                    borderRadius: 10,
+                    
                   }}
                 >
                   <Text
@@ -457,7 +457,7 @@ export default function AbonnementScreen() {
             <View
               style={{
                 backgroundColor: "#fee2e2",
-                borderRadius: 8,
+                
                 padding: 10,
                 marginTop: 8,
                 flexDirection: "row",
@@ -489,7 +489,7 @@ export default function AbonnementScreen() {
                 key={planInfo.name}
                 style={{
                   backgroundColor: colors.card,
-                  borderRadius: 12,
+                  
                   padding: 16,
                   marginBottom: 10,
                   borderWidth: isCurrentPlan ? 2 : 1,
@@ -503,7 +503,7 @@ export default function AbonnementScreen() {
                         backgroundColor: color,
                         paddingHorizontal: 10,
                         paddingVertical: 3,
-                        borderRadius: 6,
+                        
                         marginRight: 8,
                       }}
                     >
@@ -517,7 +517,7 @@ export default function AbonnementScreen() {
                           backgroundColor: bg,
                           paddingHorizontal: 8,
                           paddingVertical: 2,
-                          borderRadius: 4,
+                          
                         }}
                       >
                         <Text style={{ color, fontSize: 11, fontWeight: "700" }}>Plan actuel</Text>
@@ -551,7 +551,7 @@ export default function AbonnementScreen() {
 
         {/* Actions OWNER */}
         {isOwner && (
-          <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+          <View style={{ backgroundColor: colors.card, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
               <Ionicons name="settings-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
               <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Gestion de l'abonnement</Text>
@@ -566,14 +566,14 @@ export default function AbonnementScreen() {
                 <TouchableOpacity
                   onPress={() => handleActivate("BASIQUE")}
                   disabled={actionLoading}
-                  style={{ flex: 1, backgroundColor: "#3b82f6", borderRadius: 10, paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
+                  style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
                 >
                   <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Activer Basique</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={() => handleActivate("PRO")}
                   disabled={actionLoading}
-                  style={{ flex: 1, backgroundColor: "#8b5cf6", borderRadius: 10, paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
+                  style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
                 >
                   <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Activer Pro</Text>
                 </TouchableOpacity>
@@ -584,7 +584,7 @@ export default function AbonnementScreen() {
               <TouchableOpacity
                 onPress={handleRenew}
                 disabled={actionLoading}
-                style={{ backgroundColor: "#059669", borderRadius: 10, paddingVertical: 12, alignItems: "center", marginBottom: 10, opacity: actionLoading ? 0.6 : 1 }}
+                style={{ backgroundColor: "#059669", paddingVertical: 12, alignItems: "center", marginBottom: 10, opacity: actionLoading ? 0.6 : 1 }}
               >
                 <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Renouveler l'abonnement</Text>
               </TouchableOpacity>
@@ -594,7 +594,7 @@ export default function AbonnementScreen() {
               <TouchableOpacity
                 onPress={handleUpgrade}
                 disabled={actionLoading}
-                style={{ backgroundColor: "#8b5cf6", borderRadius: 10, paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
+                style={{ backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
               >
                 <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Passer au Pro</Text>
               </TouchableOpacity>
@@ -606,7 +606,7 @@ export default function AbonnementScreen() {
         <View
           style={{
             backgroundColor: colors.card,
-            borderRadius: 12,
+            
             padding: 20,
             borderWidth: 1,
             borderColor: colors.border,
@@ -626,7 +626,7 @@ export default function AbonnementScreen() {
             accessibilityRole="button"
             style={{
               backgroundColor: colors.primary,
-              borderRadius: 10,
+              
               paddingVertical: 12,
               paddingHorizontal: 24,
               flexDirection: "row",

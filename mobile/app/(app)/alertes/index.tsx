@@ -105,7 +105,7 @@ export default function AlertesScreen() {
           <TouchableOpacity
             onPress={handleExtract}
             disabled={extractLoading}
-            style={{ flexDirection: "row", alignItems: "center", backgroundColor: `${colors.primary}15`, paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8 }}
+            style={{ flexDirection: "row", alignItems: "center", backgroundColor: `${colors.primary}15`, paddingHorizontal: 12, paddingVertical: 6 }}
           >
             {extractLoading ? (
               <ActivityIndicator size="small" color={colors.primary} />
@@ -124,7 +124,7 @@ export default function AlertesScreen() {
 
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
           </View>
         )}
@@ -132,14 +132,14 @@ export default function AlertesScreen() {
         {/* Stats badges */}
         {stats && (
           <View style={{ flexDirection: "row", gap: 10, marginBottom: 16 }}>
-            <View style={{ flex: 1, backgroundColor: colors.citationsBg, borderRadius: 10, padding: 12, alignItems: "center" }}>
+            <View style={{ flex: 1, backgroundColor: colors.citationsBg, padding: 12, alignItems: "center" }}>
               <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{stats.total}</Text>
               <Text style={{ fontSize: 11, color: colors.text, fontWeight: "500" }}>{t("common.total")}</Text>
             </View>
             {Object.entries(stats.parUrgence || {}).map(([urgence, count]) => {
               const color = URGENCE_COLORS[urgence] || colors.textSecondary;
               return (
-                <View key={urgence} style={{ flex: 1, backgroundColor: `${color}10`, borderRadius: 10, padding: 12, alignItems: "center" }}>
+                <View key={urgence} style={{ flex: 1, backgroundColor: `${color}10`, padding: 12, alignItems: "center" }}>
                   <Text style={{ fontSize: 22, fontWeight: "800", color }}>{count}</Text>
                   <Text style={{ fontSize: 11, color, fontWeight: "500" }}>{URGENCE_TRANSLATION_KEYS[urgence] ? t(URGENCE_TRANSLATION_KEYS[urgence]) : urgence}</Text>
                 </View>
@@ -156,7 +156,7 @@ export default function AlertesScreen() {
               style={{
                 paddingHorizontal: 14,
                 paddingVertical: 6,
-                borderRadius: 16,
+                
                 backgroundColor: !filterType ? colors.primary : colors.border,
                 marginRight: 8,
               }}
@@ -170,7 +170,7 @@ export default function AlertesScreen() {
                 style={{
                   paddingHorizontal: 14,
                   paddingVertical: 6,
-                  borderRadius: 16,
+                  
                   backgroundColor: filterType === type ? colors.primary : colors.border,
                   marginRight: 8,
                 }}
@@ -189,7 +189,7 @@ export default function AlertesScreen() {
               style={{
                 paddingHorizontal: 14,
                 paddingVertical: 6,
-                borderRadius: 16,
+                
                 backgroundColor: !filterCategorie ? colors.text : colors.border,
                 marginRight: 8,
               }}
@@ -203,7 +203,7 @@ export default function AlertesScreen() {
                 style={{
                   paddingHorizontal: 14,
                   paddingVertical: 6,
-                  borderRadius: 16,
+                  
                   backgroundColor: filterCategorie === cat ? colors.text : colors.border,
                   marginRight: 8,
                 }}
@@ -226,7 +226,7 @@ export default function AlertesScreen() {
               activeOpacity={0.7}
               style={{
                 backgroundColor: colors.card,
-                borderRadius: 12,
+                
                 borderWidth: 1,
                 borderColor: colors.border,
                 borderLeftWidth: 4,
@@ -241,15 +241,15 @@ export default function AlertesScreen() {
                     {alerte.title}
                   </Text>
                   <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 6 }}>
-                    <View style={{ backgroundColor: `${urgenceColor}15`, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+                    <View style={{ backgroundColor: `${urgenceColor}15`, paddingHorizontal: 8, paddingVertical: 2 }}>
                       <Text style={{ fontSize: 11, fontWeight: "700", color: urgenceColor }}>
                         {URGENCE_TRANSLATION_KEYS[alerte.urgence] ? t(URGENCE_TRANSLATION_KEYS[alerte.urgence]) : alerte.urgence}
                       </Text>
                     </View>
-                    <View style={{ backgroundColor: "#eff6ff", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+                    <View style={{ backgroundColor: "#eff6ff", paddingHorizontal: 8, paddingVertical: 2 }}>
                       <Text style={{ fontSize: 11, fontWeight: "600", color: "#3b82f6" }}>{alerte.type}</Text>
                     </View>
-                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 8, paddingVertical: 2 }}>
                       <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary }}>{alerte.categorie}</Text>
                     </View>
                   </View>

@@ -46,7 +46,7 @@ export default function ReferencesBlock({
     <View
       style={{
         backgroundColor: "#f0f9ff",
-        borderRadius: 8,
+        
         borderWidth: 1,
         borderColor: "#00815d",
         padding: 12,

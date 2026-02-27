@@ -142,7 +142,7 @@ export default function AdminScreen() {
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 24 }}>
         <Ionicons name="shield-outline" size={48} color="#dc2626" />
         <Text style={{ marginTop: 12, color: "#dc2626", fontSize: 16, fontWeight: "600", textAlign: "center" }}>{error}</Text>
-        <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: colors.primary, borderRadius: 8 }}>
+        <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: colors.primary }}>
           <Text style={{ color: "#fff", fontWeight: "600" }}>Retour</Text>
         </TouchableOpacity>
       </View>
@@ -160,7 +160,7 @@ export default function AdminScreen() {
             { label: "Essai", value: trialCount, color: "#2563eb", bg: "#eff6ff" },
             { label: "Expires", value: expiredCount, color: "#dc2626", bg: "#fef2f2" },
           ].map(s => (
-            <View key={s.label} style={{ flex: 1, backgroundColor: s.bg, borderRadius: 10, padding: 12, alignItems: "center" }}>
+            <View key={s.label} style={{ flex: 1, backgroundColor: s.bg, padding: 12, alignItems: "center" }}>
               <Text style={{ fontSize: 22, fontWeight: "800", color: s.color }}>{s.value}</Text>
               <Text style={{ fontSize: 11, color: s.color, fontWeight: "500" }}>{s.label}</Text>
             </View>
@@ -183,7 +183,7 @@ export default function AdminScreen() {
               key={org.id}
               style={{
                 backgroundColor: colors.card,
-                borderRadius: 12,
+                
                 borderWidth: 1,
                 borderColor: colors.border,
                 borderLeftWidth: 4,
@@ -199,10 +199,10 @@ export default function AdminScreen() {
                   <Text style={{ fontSize: 12, color: colors.textMuted }}>{org.slug}</Text>
                 </View>
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-                  <View style={{ backgroundColor: `${planColor}20`, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
+                  <View style={{ backgroundColor: `${planColor}20`, paddingHorizontal: 8, paddingVertical: 3 }}>
                     <Text style={{ fontSize: 12, fontWeight: "700", color: planColor }}>{plan}</Text>
                   </View>
-                  <View style={{ backgroundColor: `${statusColor}20`, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
+                  <View style={{ backgroundColor: `${statusColor}20`, paddingHorizontal: 8, paddingVertical: 3 }}>
                     <Text style={{ fontSize: 12, fontWeight: "700", color: statusColor }}>{statusLabel(status)}</Text>
                   </View>
                 </View>
@@ -214,13 +214,13 @@ export default function AdminScreen() {
                   <Text style={{ fontSize: 12, color: colors.textSecondary }}>Questions (total org)</Text>
                   <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{quota}</Text>
                 </View>
-                <View style={{ height: 6, backgroundColor: colors.border, borderRadius: 3 }}>
+                <View style={{ height: 6, backgroundColor: colors.border }}>
                   <View
                     style={{
                       height: 6,
                       width: `${quotaPercent}%` as `${number}%`,
                       backgroundColor: quotaPercent > 90 ? "#dc2626" : quotaPercent > 70 ? "#d97706" : "#16a34a",
-                      borderRadius: 3,
+                      
                     }}
                   />
                 </View>
@@ -249,14 +249,14 @@ export default function AdminScreen() {
                 <View style={{ flexDirection: "row", gap: 8 }}>
                   <TouchableOpacity
                     onPress={() => handleActivate(org, "BASIQUE")}
-                    style={{ flex: 1, backgroundColor: "#3b82f6", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                    style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 10, alignItems: "center" }}
                   >
                     <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Basique</Text>
                     <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>{org.memberCount >= 2 ? "45 000" : "50 000"} /user</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={() => handleActivate(org, "PRO")}
-                    style={{ flex: 1, backgroundColor: "#8b5cf6", borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                    style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 10, alignItems: "center" }}
                   >
                     <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Pro</Text>
                     <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>{org.memberCount >= 2 ? "65 000" : "70 000"} /user</Text>
@@ -264,7 +264,7 @@ export default function AdminScreen() {
                   {(status === "ACTIVE" || status === "EXPIRED" || status === "TRIALING") && (
                     <TouchableOpacity
                       onPress={() => handleRenew(org)}
-                      style={{ flex: 1, backgroundColor: colors.primary, borderRadius: 8, paddingVertical: 10, alignItems: "center" }}
+                      style={{ flex: 1, backgroundColor: colors.primary, paddingVertical: 10, alignItems: "center" }}
                     >
                       <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Renouveler</Text>
                       <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>+1 an</Text>

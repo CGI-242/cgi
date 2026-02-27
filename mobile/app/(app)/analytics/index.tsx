@@ -101,7 +101,7 @@ export default function AnalyticsScreen() {
               style={{
                 paddingHorizontal: 10,
                 paddingVertical: 4,
-                borderRadius: 6,
+                
                 backgroundColor: days === d ? colors.primary : colors.border,
               }}
             >
@@ -114,7 +114,7 @@ export default function AnalyticsScreen() {
         </View>
 
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
           </View>
         )}
@@ -127,13 +127,13 @@ export default function AnalyticsScreen() {
               style={{
                 width: "48%",
                 backgroundColor: colors.card,
-                borderRadius: 12,
+                
                 borderWidth: 1,
                 borderColor: colors.border,
                 padding: 16,
               }}
             >
-              <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: card.bg, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
+              <View style={{ width: 36, height: 36, backgroundColor: card.bg, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
                 <Ionicons name={card.icon} size={18} color={card.color} />
               </View>
               <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{card.value}</Text>
@@ -148,7 +148,7 @@ export default function AnalyticsScreen() {
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               ACTIVITÉ ({days} DERNIERS JOURS)
             </Text>
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
               {timeSeries.slice(-14).map((point) => {
                 const widthPercent = Math.max((point.count / maxCount) * 100, 2);
                 return (
@@ -160,7 +160,7 @@ export default function AnalyticsScreen() {
                           height: 16,
                           width: `${widthPercent}%` as `${number}%`,
                           backgroundColor: colors.primary,
-                          borderRadius: 4,
+                          
                         }}
                       />
                     </View>
@@ -178,7 +178,7 @@ export default function AnalyticsScreen() {
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               STATISTIQUES MEMBRES
             </Text>
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, overflow: "hidden", marginBottom: 20 }}>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden", marginBottom: 20 }}>
               {memberStats.map((member, index) => {
                 const initials = (member.name || member.email).substring(0, 2).toUpperCase();
                 return (
@@ -192,7 +192,7 @@ export default function AnalyticsScreen() {
                       borderTopColor: colors.background,
                     }}
                   >
-                    <View style={{ width: 34, height: 34, borderRadius: 17, backgroundColor: "#eff6ff", justifyContent: "center", alignItems: "center", marginRight: 10 }}>
+                    <View style={{ width: 34, height: 34, backgroundColor: "#eff6ff", justifyContent: "center", alignItems: "center", marginRight: 10 }}>
                       <Text style={{ fontSize: 12, fontWeight: "700", color: "#3b82f6" }}>{initials}</Text>
                     </View>
                     <View style={{ flex: 1 }}>
@@ -216,7 +216,7 @@ export default function AnalyticsScreen() {
         <TouchableOpacity
           onPress={handleExport}
           disabled={exporting}
-          style={{ backgroundColor: colors.primary, borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+          style={{ backgroundColor: colors.primary, paddingVertical: 14, alignItems: "center" }}
         >
           {exporting ? (
             <ActivityIndicator size="small" color="#fff" />

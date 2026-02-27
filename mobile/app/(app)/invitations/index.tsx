@@ -44,7 +44,7 @@ export default function InvitationsScreen() {
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {/* En-tête */}
         <View style={{ alignItems: "center", marginBottom: 24 }}>
-          <View style={{ width: 64, height: 64, borderRadius: 32, backgroundColor: `${colors.primary}20`, justifyContent: "center", alignItems: "center", marginBottom: 12 }}>
+          <View style={{ width: 64, height: 64, backgroundColor: `${colors.primary}20`, justifyContent: "center", alignItems: "center", marginBottom: 12 }}>
             <Ionicons name="mail-open-outline" size={32} color={colors.primary} />
           </View>
           <Text style={{ fontSize: 20, fontWeight: "700", color: colors.text, textAlign: "center" }}>
@@ -57,19 +57,19 @@ export default function InvitationsScreen() {
 
         {/* Messages */}
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
           </View>
         )}
 
         {success && (
-          <View style={{ backgroundColor: "#f0fdf4", borderRadius: 12, padding: 16, marginBottom: 12 }}>
+          <View style={{ backgroundColor: "#f0fdf4", padding: 16, marginBottom: 12 }}>
             <Text style={{ color: "#16a34a", fontSize: 14 }}>{success}</Text>
           </View>
         )}
 
         {/* Formulaire */}
-        <View style={{ backgroundColor: colors.card, borderRadius: 12, borderWidth: 1, borderColor: colors.border, padding: 16 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16 }}>
           <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
             Token d'invitation
           </Text>
@@ -80,7 +80,7 @@ export default function InvitationsScreen() {
             placeholderTextColor={colors.textMuted}
             style={{
               backgroundColor: colors.background,
-              borderRadius: 8,
+              
               paddingHorizontal: 14,
               paddingVertical: 12,
               fontSize: 15,
@@ -94,7 +94,7 @@ export default function InvitationsScreen() {
             disabled={loading || !token.trim()}
             style={{
               backgroundColor: !token.trim() ? colors.textMuted : colors.primary,
-              borderRadius: 8,
+              
               paddingVertical: 14,
               alignItems: "center",
             }}
