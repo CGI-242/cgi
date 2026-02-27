@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
@@ -24,13 +25,14 @@ import { startReminderCron } from "./services/reminder.service";
 
 const app = express();
 
-// Origins autorisées
+// Origins autorisées (supporte plusieurs domaines séparés par des virgules)
 const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:3004")
   .split(",")
   .map(o => o.trim());
-// Ajouter Expo web dev server automatiquement en dev
+// En dev, ajouter automatiquement les ports locaux courants
 if (process.env.NODE_ENV !== "production") {
-  allowedOrigins.push("http://localhost:8081");
+  const devOrigins = ["http://localhost:8081", "http://localhost:3000", "http://localhost:3004"];
+  devOrigins.forEach(o => { if (!allowedOrigins.includes(o)) allowedOrigins.push(o); });
 }
 
 // Middleware sécurité
@@ -82,9 +84,47 @@ app.use("/api/notifications", notificationRoutes);
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
 startReminderCron();
 
-// Health check
-app.get("/health", (_req, res) => {
-  res.json({ status: "ok", service: "cgi-242" });
+// Health check complet — vérifie PostgreSQL et Qdrant
+app.get("/health", async (_req, res) => {
+  const checks: Record<string, string> = {};
+  let overall = "ok";
+
+  // Vérifier PostgreSQL
+  try {
+    const prisma = (await import("./utils/prisma")).default;
+    await prisma.$queryRawUnsafe("SELECT 1");
+    checks.postgresql = "ok";
+  } catch {
+    checks.postgresql = "down";
+    overall = "degraded";
+  }
+
+  // Vérifier Qdrant
+  try {
+    const qdrantUrl = process.env.QDRANT_URL || "http://localhost:6333";
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 3000);
+    const resp = await fetch(`${qdrantUrl}/healthz`, { signal: controller.signal });
+    clearTimeout(timeout);
+    checks.qdrant = resp.ok ? "ok" : "down";
+  } catch {
+    checks.qdrant = "down";
+    overall = "degraded";
+  }
+
+  // Vérifier SMTP (config présente)
+  checks.smtp = process.env.SMTP_HOST ? "configured" : "not_configured";
+
+  const statusCode = overall === "ok" ? 200 : 503;
+  res.status(statusCode).json({ status: overall, service: "cgi-242", checks });
+});
+
+// Servir le frontend web (Expo build) — après les routes API
+const webDistPath = path.resolve(__dirname, "../../mobile/dist");
+app.use(express.static(webDistPath));
+// SPA fallback : toute route non-API renvoie index.html
+app.get("/{*splat}", (_req, res) => {
+  res.sendFile(path.join(webDistPath, "index.html"));
 });
 
 export default app;

@@ -35,7 +35,7 @@ const ROLE_LABELS: Record<string, string> = {
 
 export default function OrganisationScreen() {
   const user = useAuthStore((s) => s.user);
-  const orgId = user?.entreprise_id;
+  const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
   const [org, setOrg] = useState<Organization | null>(null);
   const [members, setMembers] = useState<OrgMember[]>([]);
@@ -51,7 +51,7 @@ export default function OrganisationScreen() {
   // Menu ouvert pour un membre
   const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
 
-  const currentUserRole = members.find((m) => m.userId === user?.id)?.role;
+  const currentUserRole = members.find((m) => m.userId === String(user?.id))?.role;
   const isOwner = currentUserRole === "OWNER";
   const isAdmin = currentUserRole === "ADMIN" || isOwner;
 

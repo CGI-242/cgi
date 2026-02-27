@@ -1,0 +1,89 @@
+// mobile/components/settings/ActivityStats.tsx
+// Section "Mon activité" avec stats personnelles et bar chart 7 jours
+
+import { View, Text } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import type { UserStats } from "@/lib/api/user";
+
+type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
+
+type Props = {
+  stats: UserStats;
+};
+
+function StatRow({ icon, label, value }: { icon: IoniconsName; label: string; value: string }) {
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        paddingVertical: 14,
+        paddingHorizontal: 16,
+      }}
+    >
+      <Ionicons name={icon} size={20} color="#6b7280" style={{ marginRight: 12 }} />
+      <Text style={{ fontSize: 15, color: "#1f2937", flex: 1 }}>{label}</Text>
+      <Text style={{ fontSize: 14, color: "#9ca3af" }}>{value}</Text>
+    </View>
+  );
+}
+
+function Divider() {
+  return <View style={{ height: 1, backgroundColor: "#f3f4f6", marginHorizontal: 16 }} />;
+}
+
+export default function ActivityStats({ stats }: Props) {
+  return (
+    <>
+      <View style={cardStyle}>
+        <StatRow icon="chatbubble-ellipses-outline" label="Questions ce mois" value={String(stats.monthQuestions)} />
+        <Divider />
+        <StatRow icon="analytics-outline" label="Questions total" value={String(stats.totalQuestions)} />
+        <Divider />
+        <StatRow icon="book-outline" label="Articles consultés" value={String(stats.totalArticles)} />
+        <Divider />
+        <StatRow icon="calendar-outline" label="Jours actifs" value={String(stats.activeDays)} />
+      </View>
+
+      {stats.last7Days.some((d) => d.questions > 0) && (
+        <View style={{ ...cardStyle, padding: 16, marginTop: 4 }}>
+          <Text style={{ fontSize: 12, fontWeight: "600", color: "#6b7280", marginBottom: 12 }}>
+            7 DERNIERS JOURS
+          </Text>
+          <View style={{ flexDirection: "row", alignItems: "flex-end", height: 60, gap: 6 }}>
+            {stats.last7Days.map((day) => {
+              const maxQ = Math.max(...stats.last7Days.map((d) => d.questions), 1);
+              const height = Math.max((day.questions / maxQ) * 48, 2);
+              const dayLabel = new Date(day.date).toLocaleDateString("fr-FR", { weekday: "narrow" });
+              return (
+                <View key={day.date} style={{ flex: 1, alignItems: "center" }}>
+                  <Text style={{ fontSize: 9, color: "#9ca3af", marginBottom: 2 }}>
+                    {day.questions > 0 ? day.questions : ""}
+                  </Text>
+                  <View
+                    style={{
+                      width: "70%",
+                      height,
+                      backgroundColor: day.questions > 0 ? "#00815d" : "#e5e7eb",
+                      borderRadius: 3,
+                    }}
+                  />
+                  <Text style={{ fontSize: 10, color: "#9ca3af", marginTop: 4 }}>
+                    {dayLabel}
+                  </Text>
+                </View>
+              );
+            })}
+          </View>
+        </View>
+      )}
+    </>
+  );
+}
+
+const cardStyle = {
+  backgroundColor: "#fff",
+  borderRadius: 12,
+  overflow: "hidden" as const,
+  marginBottom: 4,
+};

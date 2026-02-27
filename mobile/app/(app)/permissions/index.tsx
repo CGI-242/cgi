@@ -55,7 +55,7 @@ const ROLE_LABELS: Record<string, string> = {
 
 export default function PermissionsScreen() {
   const user = useAuthStore((s) => s.user);
-  const orgId = user?.entreprise_id;
+  const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
   const [myPerms, setMyPerms] = useState<MyPermissions | null>(null);
   const [available, setAvailable] = useState<PermissionItem[]>([]);
@@ -83,7 +83,7 @@ export default function PermissionsScreen() {
 
       if (orgId && (myData.role === "OWNER" || myData.role === "ADMIN")) {
         const membersData = await organizationApi.getMembers(orgId);
-        setMembers(membersData.filter((m) => m.userId !== user?.id));
+        setMembers(membersData.filter((m) => m.userId !== String(user?.id)));
       }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Erreur inconnue";

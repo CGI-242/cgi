@@ -11,6 +11,7 @@ export interface ChatMessage {
   id: string;
   role: "USER" | "ASSISTANT" | "SYSTEM";
   content: string;
+  citations?: Citation[];
   tokensUsed?: number;
   responseTime?: number;
   createdAt: string;
@@ -191,4 +192,24 @@ export async function getConversation(id: string): Promise<Conversation & { mess
  */
 export async function deleteConversation(id: string): Promise<void> {
   await api.delete(`/chat/conversations/${id}`);
+}
+
+/**
+ * Récupérer les références croisées d'un article
+ */
+export interface ArticleReference {
+  id: string;
+  numero: string;
+  titre: string;
+}
+
+export interface ArticleReferencesResponse {
+  article: ArticleReference;
+  references: ArticleReference[];
+  referencedBy: ArticleReference[];
+}
+
+export async function getArticleReferences(numero: string): Promise<ArticleReferencesResponse> {
+  const { data } = await api.get<ArticleReferencesResponse>(`/chat/article/${encodeURIComponent(numero)}/references`);
+  return data;
 }

@@ -31,6 +31,14 @@ export interface UpdateProfileData {
   profession?: string | null;
 }
 
+export interface UserStats {
+  totalQuestions: number;
+  monthQuestions: number;
+  totalArticles: number;
+  activeDays: number;
+  last7Days: { date: string; questions: number }[];
+}
+
 export const userApi = {
   getProfile: async (): Promise<ProfileResponse> => {
     const { data } = await api.get<ProfileResponse>("/user/profile");
@@ -39,6 +47,11 @@ export const userApi = {
 
   updateProfile: async (payload: UpdateProfileData): Promise<{ user: UserProfile }> => {
     const { data } = await api.put<{ user: UserProfile }>("/user/profile", payload);
+    return data;
+  },
+
+  getStats: async (): Promise<UserStats> => {
+    const { data } = await api.get<UserStats>("/user/stats");
     return data;
   },
 };

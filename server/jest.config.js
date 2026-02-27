@@ -5,5 +5,6 @@ module.exports = {
   testMatch: ["<rootDir>/src/__tests__/**/*.test.ts"],
   moduleFileExtensions: ["ts", "js", "json"],
   clearMocks: true,
+  forceExit: true,
   setupFiles: ["<rootDir>/src/__tests__/setup.ts"],
 };

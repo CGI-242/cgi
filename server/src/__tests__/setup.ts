@@ -20,6 +20,23 @@ jest.mock("../services/email.service", () => ({
   },
 }));
 
+// Mock services RAG/Qdrant (connexions persistantes)
+jest.mock("../services/chat.service", () => ({
+  sendMessageStream: jest.fn(),
+  getConversations: jest.fn().mockResolvedValue([]),
+  getConversation: jest.fn(),
+  deleteConversation: jest.fn(),
+}));
+
+jest.mock("../services/push.service", () => ({
+  PushService: {
+    sendToUser: jest.fn(),
+    sendFiscalDeadlinesPush: jest.fn(),
+    registerToken: jest.fn(),
+    unregisterToken: jest.fn(),
+  },
+}));
+
 jest.mock("../services/audit.service", () => ({
   AuditService: {
     log: jest.fn(),

@@ -362,6 +362,7 @@ export async function getConversation(userId: string, conversationId: string) {
           id: true,
           role: true,
           content: true,
+          citations: true,
           tokensUsed: true,
           responseTime: true,
           createdAt: true,
