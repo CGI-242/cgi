@@ -1,5 +1,4 @@
-import dotenv from "dotenv";
-dotenv.config();
+import "dotenv/config";
 
 import app from "./app";
 import { initializeCollection } from "./services/rag/qdrant.service";
