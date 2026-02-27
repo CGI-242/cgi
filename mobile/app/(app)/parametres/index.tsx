@@ -69,37 +69,20 @@ export default function ParametresScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Header */}
-      <View
-        style={{
-          backgroundColor: colors.headerBg,
-          paddingTop: Platform.OS === "ios" ? 56 : 16,
-          paddingBottom: 16,
-          paddingHorizontal: 16,
-          flexDirection: "row",
-          alignItems: "center",
-        }}
-      >
-        <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-          <Ionicons name="arrow-back" size={24} color={colors.primary} />
-        </TouchableOpacity>
-        <Text style={{ color: colors.primary, fontSize: 20, fontWeight: "bold" }}>Paramètres</Text>
-      </View>
-
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
         {/* Section Compte */}
-        <SectionHeader title="COMPTE" colors={colors} />
+        <SectionHeader title={t("settings.account")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow
             icon="mail-outline"
-            label="Email"
+            label={t("settings.email")}
             value={user?.email || ""}
             colors={colors}
           />
           <Divider colors={colors} />
           <SettingsRow
             icon="lock-closed-outline"
-            label="Changer le mot de passe"
+            label={t("settings.changePassword")}
             onPress={() => router.push("/(auth)/forgot-password")}
             showChevron
             colors={colors}
@@ -107,11 +90,11 @@ export default function ParametresScreen() {
         </View>
 
         {/* Section Sécurité */}
-        <SectionHeader title="SÉCURITÉ" colors={colors} />
+        <SectionHeader title={t("settings.security")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow
             icon="shield-checkmark-outline"
-            label="Authentification à deux facteurs"
+            label={t("settings.twoFactor")}
             onPress={() => router.push("/(app)/securite" as any)}
             showChevron
             colors={colors}
@@ -119,7 +102,7 @@ export default function ParametresScreen() {
         </View>
 
         {/* Section Apparence */}
-        <SectionHeader title="APPARENCE" colors={colors} />
+        <SectionHeader title={t("settings.appearance")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
           <View
             style={{
@@ -130,7 +113,7 @@ export default function ParametresScreen() {
             }}
           >
             <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-            <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>Mode sombre</Text>
+            <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{t("settings.darkMode")}</Text>
             <Switch
               value={mode === "dark"}
               onValueChange={toggleTheme}
@@ -162,14 +145,14 @@ export default function ParametresScreen() {
         </View>
 
         {/* Section Abonnement */}
-        <SectionHeader title="ABONNEMENT" colors={colors} />
+        <SectionHeader title={t("settings.subscription")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
-          <SettingsRow icon="ribbon-outline" label="Plan" value={planLabel} colors={colors} />
+          <SettingsRow icon="ribbon-outline" label={t("settings.plan")} value={planLabel} colors={colors} />
           <Divider colors={colors} />
           <SettingsRow
             icon="chatbubble-ellipses-outline"
-            label="Questions IA"
-            value={`${questionsUsed} / ${questionsMax} ce mois`}
+            label={t("settings.aiQuestions")}
+            value={`${questionsUsed} / ${questionsMax} ${t("settings.thisMonth")}`}
             colors={colors}
           />
           {subscription?.currentPeriodEnd && (
@@ -177,7 +160,7 @@ export default function ParametresScreen() {
               <Divider colors={colors} />
               <SettingsRow
                 icon="calendar-outline"
-                label="Renouvellement"
+                label={t("settings.renewal")}
                 value={new Date(subscription.currentPeriodEnd).toLocaleDateString("fr-FR", {
                   day: "numeric",
                   month: "long",
@@ -192,17 +175,17 @@ export default function ParametresScreen() {
         {/* Section Mon activité */}
         {stats && (
           <>
-            <SectionHeader title="MON ACTIVITÉ" colors={colors} />
+            <SectionHeader title={t("settings.activity")} colors={colors} />
             <ActivityStats stats={stats} />
           </>
         )}
 
         {/* Section Gestion */}
-        <SectionHeader title="GESTION" colors={colors} />
+        <SectionHeader title={t("settings.management")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow
             icon="card-outline"
-            label="Abonnement"
+            label={t("settings.managementSubscription")}
             onPress={() => router.push("/(app)/abonnement")}
             showChevron
             colors={colors}
@@ -210,7 +193,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="people-outline"
-            label="Organisation"
+            label={t("settings.managementOrganization")}
             onPress={() => router.push("/(app)/organisation")}
             showChevron
             colors={colors}
@@ -218,7 +201,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="bar-chart-outline"
-            label="Analytiques"
+            label={t("settings.managementAnalytics")}
             onPress={() => router.push("/(app)/analytics")}
             showChevron
             colors={colors}
@@ -226,7 +209,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="document-text-outline"
-            label="Audit"
+            label={t("settings.managementAudit")}
             onPress={() => router.push("/(app)/audit")}
             showChevron
             colors={colors}
@@ -234,7 +217,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="key-outline"
-            label="Permissions"
+            label={t("settings.managementPermissions")}
             onPress={() => router.push("/(app)/permissions")}
             showChevron
             colors={colors}
@@ -242,7 +225,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="shield-checkmark-outline"
-            label="Administration"
+            label={t("settings.managementAdmin")}
             onPress={() => router.push("/(app)/admin")}
             showChevron
             colors={colors}
@@ -250,15 +233,15 @@ export default function ParametresScreen() {
         </View>
 
         {/* Section A propos */}
-        <SectionHeader title="À PROPOS" colors={colors} />
+        <SectionHeader title={t("settings.about")} colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
-          <SettingsRow icon="information-circle-outline" label="Version" value="1.0.0" colors={colors} />
+          <SettingsRow icon="information-circle-outline" label={t("common.version")} value="1.0.0" colors={colors} />
           <Divider colors={colors} />
-          <SettingsRow icon="book-outline" label="Édition" value="CGI Édition 2026" colors={colors} />
+          <SettingsRow icon="book-outline" label={t("settings.edition")} value="CGI Édition 2026" colors={colors} />
           <Divider colors={colors} />
           <SettingsRow
             icon="document-text-outline"
-            label="Conditions d'utilisation"
+            label={t("settings.terms")}
             onPress={() => router.push("/(app)/legal/cgu" as any)}
             showChevron
             colors={colors}
@@ -266,7 +249,7 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="lock-closed-outline"
-            label="Politique de confidentialité"
+            label={t("settings.privacy")}
             onPress={() => router.push("/(app)/legal/confidentialite" as any)}
             showChevron
             colors={colors}

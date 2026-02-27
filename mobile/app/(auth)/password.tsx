@@ -2,11 +2,13 @@ import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform
 import { useState } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function LoginPassword() {
+  const { t } = useTranslation();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -19,7 +21,7 @@ export default function LoginPassword() {
 
   const handleLogin = async () => {
     if (!password) {
-      setError("Veuillez saisir votre mot de passe");
+      setError(t("auth.passwordRequired"));
       return;
     }
     setError("");
@@ -35,7 +37,7 @@ export default function LoginPassword() {
       router.push("/(auth)/verify-otp");
     } catch (err) {
       setError(
-        (axios.isAxiosError(err) && err.response?.data?.error) || "Identifiants incorrects"
+        (axios.isAxiosError(err) && err.response?.data?.error) || t("auth.invalidCredentials")
       );
     } finally {
       setLoading(false);
@@ -58,7 +60,7 @@ export default function LoginPassword() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Mot de passe
+            {t("auth.password")}
           </Text>
 
           {/* Email affiché */}
@@ -66,7 +68,7 @@ export default function LoginPassword() {
             <Text className="text-sm text-muted flex-1">{email}</Text>
             <TouchableOpacity onPress={() => router.back()}>
               <Text className="text-sm text-primary font-semibold">
-                Modifier
+                {t("common.modify")}
               </Text>
             </TouchableOpacity>
           </View>
@@ -80,12 +82,12 @@ export default function LoginPassword() {
 
           {/* Password */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Mot de passe <Text className="text-danger">*</Text>
+            {t("auth.password")} <Text className="text-danger">*</Text>
           </Text>
           <View className="relative mb-2">
             <TextInput
               className="w-full bg-input  p-3 pr-12 text-base text-text border-0"
-              placeholder="Votre mot de passe"
+              placeholder={t("auth.yourPassword")}
               placeholderTextColor="#888"
               value={password}
               onChangeText={(text) => {
@@ -115,7 +117,7 @@ export default function LoginPassword() {
             onPress={() => router.push("/(auth)/forgot-password")}
           >
             <Text className="text-sm text-primary">
-              Mot de passe oublié ?
+              {t("auth.forgotPassword")}
             </Text>
           </TouchableOpacity>
 
@@ -131,7 +133,7 @@ export default function LoginPassword() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Se connecter
+                {t("auth.signIn")}
               </Text>
             )}
           </TouchableOpacity>

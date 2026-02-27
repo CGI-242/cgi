@@ -5,15 +5,15 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  Platform,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import {
   alertesApi,
   type AlerteFiscale,
   type AlerteStats,
 } from "@/lib/api/alertes";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 const URGENCE_COLORS: Record<string, string> = {
   haute: "#dc2626",
@@ -21,13 +21,15 @@ const URGENCE_COLORS: Record<string, string> = {
   basse: "#16a34a",
 };
 
-const URGENCE_LABELS: Record<string, string> = {
-  haute: "Haute",
-  moyenne: "Moyenne",
-  basse: "Basse",
+const URGENCE_TRANSLATION_KEYS: Record<string, string> = {
+  haute: "alertes.urgency.high",
+  moyenne: "alertes.urgency.medium",
+  basse: "alertes.urgency.low",
 };
 
 export default function AlertesScreen() {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
   const [alertes, setAlertes] = useState<AlerteFiscale[]>([]);
   const [stats, setStats] = useState<AlerteStats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -68,31 +70,20 @@ export default function AlertesScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f3f4f6" }}>
-        <ActivityIndicator size="large" color="#00815d" />
-        <Text style={{ marginTop: 12, color: "#6b7280", fontSize: 14 }}>Chargement...</Text>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f3f4f6" }}>
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingTop: Platform.OS === "ios" ? 56 : 16, paddingBottom: 16, paddingHorizontal: 16 }}>
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-              <Ionicons name="arrow-back" size={22} color="#fff" />
-            </TouchableOpacity>
-            <View>
-              <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>Alertes Fiscales</Text>
-              <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>Veille réglementaire</Text>
-            </View>
-          </View>
-          <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
-            <Ionicons name="refresh-outline" size={20} color="#00c17c" />
-          </TouchableOpacity>
-        </View>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      {/* Refresh */}
+      <View style={{ flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingTop: 8 }}>
+        <TouchableOpacity onPress={loadData} style={{ padding: 8 }}>
+          <Ionicons name="refresh-outline" size={20} color={colors.accent} />
+        </TouchableOpacity>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
@@ -105,16 +96,16 @@ export default function AlertesScreen() {
         {/* Stats badges */}
         {stats && (
           <View style={{ flexDirection: "row", gap: 10, marginBottom: 16 }}>
-            <View style={{ flex: 1, backgroundColor: "#f0fdf4", borderRadius: 10, padding: 12, alignItems: "center" }}>
-              <Text style={{ fontSize: 22, fontWeight: "800", color: "#374151" }}>{stats.total}</Text>
-              <Text style={{ fontSize: 11, color: "#374151", fontWeight: "500" }}>Total</Text>
+            <View style={{ flex: 1, backgroundColor: colors.citationsBg, borderRadius: 10, padding: 12, alignItems: "center" }}>
+              <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{stats.total}</Text>
+              <Text style={{ fontSize: 11, color: colors.text, fontWeight: "500" }}>{t("common.total")}</Text>
             </View>
             {Object.entries(stats.parUrgence || {}).map(([urgence, count]) => {
-              const color = URGENCE_COLORS[urgence] || "#6b7280";
+              const color = URGENCE_COLORS[urgence] || colors.textSecondary;
               return (
                 <View key={urgence} style={{ flex: 1, backgroundColor: `${color}10`, borderRadius: 10, padding: 12, alignItems: "center" }}>
                   <Text style={{ fontSize: 22, fontWeight: "800", color }}>{count}</Text>
-                  <Text style={{ fontSize: 11, color, fontWeight: "500" }}>{URGENCE_LABELS[urgence] || urgence}</Text>
+                  <Text style={{ fontSize: 11, color, fontWeight: "500" }}>{URGENCE_TRANSLATION_KEYS[urgence] ? t(URGENCE_TRANSLATION_KEYS[urgence]) : urgence}</Text>
                 </View>
               );
             })}
@@ -130,11 +121,11 @@ export default function AlertesScreen() {
                 paddingHorizontal: 14,
                 paddingVertical: 6,
                 borderRadius: 16,
-                backgroundColor: !filterType ? "#00815d" : "#e5e7eb",
+                backgroundColor: !filterType ? colors.primary : colors.border,
                 marginRight: 8,
               }}
             >
-              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterType ? "#fff" : "#374151" }}>Tous</Text>
+              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterType ? "#fff" : colors.text }}>{t("common.all")}</Text>
             </TouchableOpacity>
             {types.map((type) => (
               <TouchableOpacity
@@ -144,17 +135,17 @@ export default function AlertesScreen() {
                   paddingHorizontal: 14,
                   paddingVertical: 6,
                   borderRadius: 16,
-                  backgroundColor: filterType === type ? "#00815d" : "#e5e7eb",
+                  backgroundColor: filterType === type ? colors.primary : colors.border,
                   marginRight: 8,
                 }}
               >
-                <Text style={{ fontSize: 13, fontWeight: "600", color: filterType === type ? "#fff" : "#374151" }}>{type}</Text>
+                <Text style={{ fontSize: 13, fontWeight: "600", color: filterType === type ? "#fff" : colors.text }}>{type}</Text>
               </TouchableOpacity>
             ))}
           </ScrollView>
         )}
 
-        {/* Filtres catégorie */}
+        {/* Filtres categorie */}
         {categories.length > 0 && (
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 16 }}>
             <TouchableOpacity
@@ -163,11 +154,11 @@ export default function AlertesScreen() {
                 paddingHorizontal: 14,
                 paddingVertical: 6,
                 borderRadius: 16,
-                backgroundColor: !filterCategorie ? "#374151" : "#e5e7eb",
+                backgroundColor: !filterCategorie ? colors.text : colors.border,
                 marginRight: 8,
               }}
             >
-              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterCategorie ? "#fff" : "#374151" }}>Toutes</Text>
+              <Text style={{ fontSize: 13, fontWeight: "600", color: !filterCategorie ? colors.card : colors.text }}>{t("common.allFeminine")}</Text>
             </TouchableOpacity>
             {categories.map((cat) => (
               <TouchableOpacity
@@ -177,11 +168,11 @@ export default function AlertesScreen() {
                   paddingHorizontal: 14,
                   paddingVertical: 6,
                   borderRadius: 16,
-                  backgroundColor: filterCategorie === cat ? "#374151" : "#e5e7eb",
+                  backgroundColor: filterCategorie === cat ? colors.text : colors.border,
                   marginRight: 8,
                 }}
               >
-                <Text style={{ fontSize: 13, fontWeight: "600", color: filterCategorie === cat ? "#fff" : "#374151" }}>{cat}</Text>
+                <Text style={{ fontSize: 13, fontWeight: "600", color: filterCategorie === cat ? colors.card : colors.text }}>{cat}</Text>
               </TouchableOpacity>
             ))}
           </ScrollView>
@@ -189,7 +180,7 @@ export default function AlertesScreen() {
 
         {/* Liste alertes */}
         {alertes.map((alerte) => {
-          const urgenceColor = URGENCE_COLORS[alerte.urgence] || "#6b7280";
+          const urgenceColor = URGENCE_COLORS[alerte.urgence] || colors.textSecondary;
           const isExpanded = expandedId === alerte.id;
 
           return (
@@ -198,10 +189,10 @@ export default function AlertesScreen() {
               onPress={() => setExpandedId(isExpanded ? null : alerte.id)}
               activeOpacity={0.7}
               style={{
-                backgroundColor: "#fff",
+                backgroundColor: colors.card,
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: "#e5e7eb",
+                borderColor: colors.border,
                 borderLeftWidth: 4,
                 borderLeftColor: urgenceColor,
                 marginBottom: 10,
@@ -210,31 +201,31 @@ export default function AlertesScreen() {
             >
               <View style={{ flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }}>
                 <View style={{ flex: 1, marginRight: 8 }}>
-                  <Text style={{ fontSize: 15, fontWeight: "600", color: "#1f2937", marginBottom: 6 }}>
+                  <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
                     {alerte.title}
                   </Text>
                   <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 6 }}>
                     <View style={{ backgroundColor: `${urgenceColor}15`, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
                       <Text style={{ fontSize: 11, fontWeight: "700", color: urgenceColor }}>
-                        {URGENCE_LABELS[alerte.urgence] || alerte.urgence}
+                        {URGENCE_TRANSLATION_KEYS[alerte.urgence] ? t(URGENCE_TRANSLATION_KEYS[alerte.urgence]) : alerte.urgence}
                       </Text>
                     </View>
                     <View style={{ backgroundColor: "#eff6ff", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
                       <Text style={{ fontSize: 11, fontWeight: "600", color: "#3b82f6" }}>{alerte.type}</Text>
                     </View>
-                    <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
-                      <Text style={{ fontSize: 11, fontWeight: "600", color: "#6b7280" }}>{alerte.categorie}</Text>
+                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+                      <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary }}>{alerte.categorie}</Text>
                     </View>
                   </View>
                   {alerte.articleRef && (
-                    <Text style={{ fontSize: 12, color: "#9ca3af" }}>Art. {alerte.articleRef}</Text>
+                    <Text style={{ fontSize: 12, color: colors.textMuted }}>Art. {alerte.articleRef}</Text>
                   )}
                 </View>
-                <Ionicons name={isExpanded ? "chevron-up" : "chevron-down"} size={18} color="#9ca3af" />
+                <Ionicons name={isExpanded ? "chevron-up" : "chevron-down"} size={18} color={colors.textMuted} />
               </View>
               {isExpanded && (
-                <View style={{ marginTop: 10, paddingTop: 10, borderTopWidth: 1, borderTopColor: "#f3f4f6" }}>
-                  <Text style={{ fontSize: 14, color: "#374151", lineHeight: 20 }}>
+                <View style={{ marginTop: 10, paddingTop: 10, borderTopWidth: 1, borderTopColor: colors.background }}>
+                  <Text style={{ fontSize: 14, color: colors.text, lineHeight: 20 }}>
                     {alerte.description}
                   </Text>
                 </View>
@@ -245,8 +236,8 @@ export default function AlertesScreen() {
 
         {alertes.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
-            <Ionicons name="notifications-off-outline" size={40} color="#d1d5db" />
-            <Text style={{ marginTop: 8, color: "#9ca3af", fontSize: 14 }}>Aucune alerte fiscale</Text>
+            <Ionicons name="notifications-off-outline" size={40} color={colors.disabled} />
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>{t("alertes.noAlerts")}</Text>
           </View>
         )}
       </ScrollView>

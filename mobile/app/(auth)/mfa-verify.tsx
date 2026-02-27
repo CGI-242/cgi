@@ -1,11 +1,13 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
 import { useState } from "react";
 import { router, useLocalSearchParams } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { api } from "@/lib/api/client";
 import axios from "axios";
 
 export default function MfaVerify() {
+  const { t } = useTranslation();
   const { mfaToken } = useLocalSearchParams<{ mfaToken: string }>();
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
@@ -15,7 +17,7 @@ export default function MfaVerify() {
 
   const handleVerify = async () => {
     if (code.length < 6) {
-      setError("Entrez votre code à 6 chiffres");
+      setError(t("auth.mfaEnterCode"));
       return;
     }
     setError("");
@@ -29,7 +31,7 @@ export default function MfaVerify() {
       router.replace("/(app)");
     } catch (err) {
       setError(
-        (axios.isAxiosError(err) && err.response?.data?.error) || "Code MFA invalide"
+        (axios.isAxiosError(err) && err.response?.data?.error) || t("auth.mfaInvalid")
       );
     } finally {
       setLoading(false);
@@ -52,10 +54,10 @@ export default function MfaVerify() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Authentification 2FA
+            {t("auth.mfaTitle")}
           </Text>
           <Text className="text-sm text-muted mb-6">
-            Entrez le code depuis votre application d'authentification (Google Authenticator, Authy, etc.) ou un code de secours.
+            {t("auth.mfaDesc")}
           </Text>
 
           {/* Messages */}
@@ -67,7 +69,7 @@ export default function MfaVerify() {
 
           {/* Code input */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Code TOTP ou code de secours
+            {t("auth.mfaPlaceholder")}
           </Text>
           <TextInput
             className="w-full bg-input p-3 text-center text-2xl tracking-widest text-text mb-4 border-0"
@@ -97,7 +99,7 @@ export default function MfaVerify() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Vérifier
+                {t("auth.verify")}
               </Text>
             )}
           </TouchableOpacity>
@@ -108,7 +110,7 @@ export default function MfaVerify() {
             onPress={() => router.replace("/(auth)/password")}
           >
             <Text className="text-sm text-primary underline">
-              Retour à la connexion
+              {t("auth.backToLogin")}
             </Text>
           </TouchableOpacity>
         </View>

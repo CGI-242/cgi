@@ -1,6 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
 import { useState, useEffect } from "react";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
@@ -8,6 +9,7 @@ import axios from "axios";
 const FEEDBACK_DISPLAY_MS = 3_000;
 
 export default function VerifyOtp() {
+  const { t } = useTranslation();
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -27,7 +29,7 @@ export default function VerifyOtp() {
 
   const handleVerify = async () => {
     if (code.length !== 6) {
-      setError("Le code doit contenir 6 chiffres");
+      setError(t("auth.codeDigits"));
       return;
     }
     setError("");
@@ -48,7 +50,7 @@ export default function VerifyOtp() {
       }
       router.replace("/(app)");
     } catch (err) {
-      setError((axios.isAxiosError(err) && err.response?.data?.error) || "Code invalide");
+      setError((axios.isAxiosError(err) && err.response?.data?.error) || t("auth.invalidCode"));
     } finally {
       setLoading(false);
     }
@@ -58,10 +60,10 @@ export default function VerifyOtp() {
     try {
       const data = await authApi.sendOtpEmail(email);
       if (data.devCode) setDevCode(data.devCode);
-      setSuccess("Code renvoyé avec succès");
+      setSuccess(t("auth.resendSuccess"));
       setTimeout(() => setSuccess(""), FEEDBACK_DISPLAY_MS);
     } catch {
-      setError("Erreur lors du renvoi");
+      setError(t("auth.resendError"));
     }
   };
 
@@ -81,16 +83,16 @@ export default function VerifyOtp() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Vérification
+            {t("auth.verification")}
           </Text>
           <Text className="text-sm text-muted mb-6">
-            Entrez le code envoyé à {email}
+            {t("auth.enterCodeSentTo", { email })}
           </Text>
 
           {/* Dev code - visible si NODE_ENV != production */}
           {devCode ? (
             <View className="border border-dashed border-success bg-green-50 p-4 mb-4 items-center">
-              <Text className="text-xs text-muted mb-1">Code (dev)</Text>
+              <Text className="text-xs text-muted mb-1">{t("auth.codeDev")}</Text>
               <Text className="text-3xl font-bold text-success tracking-widest">
                 {devCode}
               </Text>
@@ -111,7 +113,7 @@ export default function VerifyOtp() {
 
           {/* Code input */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Code à 6 chiffres
+            {t("auth.codePlaceholder")}
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-center text-2xl tracking-widest text-text mb-4 border-0"
@@ -141,7 +143,7 @@ export default function VerifyOtp() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Vérifier
+                {t("auth.verify")}
               </Text>
             )}
           </TouchableOpacity>
@@ -149,7 +151,7 @@ export default function VerifyOtp() {
           {/* Renvoyer */}
           <TouchableOpacity className="items-center mt-4" onPress={handleResend}>
             <Text className="text-sm text-primary underline">
-              Renvoyer le code
+              {t("auth.resendCode")}
             </Text>
           </TouchableOpacity>
         </View>

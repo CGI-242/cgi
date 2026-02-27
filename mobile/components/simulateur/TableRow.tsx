@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 export default function TableRow({
   label,
@@ -13,13 +14,22 @@ export default function TableRow({
   bold?: boolean;
   color?: string;
 }) {
+  const { colors } = useTheme();
   return (
     <View
-      className="flex-row items-center justify-between"
-      style={{ backgroundColor: bg || "#fff", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        backgroundColor: bg || colors.card,
+        paddingHorizontal: 14,
+        paddingVertical: 10,
+        borderTopWidth: 1,
+        borderTopColor: colors.border,
+      }}
     >
-      <Text style={{ fontSize: 12, color: color || "#374151", fontWeight: bold ? "600" : "400" }}>{label}</Text>
-      <Text style={{ fontSize: 12, color: color || "#374151", fontWeight: "600" }}>{value}</Text>
+      <Text style={{ fontSize: 12, color: color || colors.text, fontWeight: bold ? "600" : "400" }}>{label}</Text>
+      <Text style={{ fontSize: 12, color: color || colors.text, fontWeight: "600" }}>{value}</Text>
     </View>
   );
 }

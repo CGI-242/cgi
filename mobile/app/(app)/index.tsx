@@ -1,66 +1,23 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { router } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
-function getInitials(prenom?: string, nom?: string) {
-  return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
-}
-
-function getGreeting() {
+function getGreeting(t: (key: string) => string) {
   const h = new Date().getHours();
-  if (h < 12) return "Bonjour";
-  if (h < 18) return "Bon après-midi";
-  return "Bonsoir";
+  if (h < 12) return `☀️ ${t("dashboard.greeting.morning")}`;
+  if (h < 18) return `🌅 ${t("dashboard.greeting.afternoon")}`;
+  return `🌙 ${t("dashboard.greeting.evening")}`;
 }
-
-const ECHEANCES = [
-  { date: "15 mars", label: "Minimum perception IS (T1)", icon: "business-outline" as const },
-  { date: "15 juin", label: "Minimum perception IS (T2)", icon: "business-outline" as const },
-  { date: "15 sept.", label: "Minimum perception IS (T3)", icon: "business-outline" as const },
-  { date: "15 déc.", label: "Minimum perception IS (T4)", icon: "business-outline" as const },
-  { date: "15/mois", label: "TVA (mensuel)", icon: "receipt-outline" as const },
-  { date: "15/mois", label: "ITS (mensuel)", icon: "people-outline" as const },
-  { date: "15 avr.", label: "Patente annuelle", icon: "storefront-outline" as const },
-  { date: "15 mars", label: "IRPP annuel", icon: "person-outline" as const },
-  { date: "15 mai", label: "IRF (1ère échéance)", icon: "home-outline" as const },
-  { date: "20 août", label: "IRF (2ème échéance)", icon: "home-outline" as const },
-  { date: "15 nov.", label: "IRF (3ème échéance)", icon: "home-outline" as const },
-];
 
 const STATS = [
-  { label: "Articles CGI", value: "7 000+", icon: "document-text-outline" as const, bg: "#e6f7f0", color: "#00815d" },
-  { label: "Simulateurs", value: "4", icon: "calculator-outline" as const, bg: "#eef2ff", color: "#4f46e5" },
-  { label: "Textes TFNC", value: "60+", icon: "library-outline" as const, bg: "#fef3c7", color: "#d97706" },
-  { label: "Édition", value: "2026", icon: "calendar-outline" as const, bg: "#f3e8ff", color: "#9333ea" },
-];
-
-const QUICK_ACTIONS = [
-  {
-    label: "Consulter le CGI 2026",
-    desc: "Code Général des Impôts en vigueur",
-    icon: "book-outline" as const,
-    bg: "#e6f7f0",
-    color: "#00815d",
-    route: "/(app)/code",
-  },
-  {
-    label: "Simuler un impôt",
-    desc: "ITS, Minimum IS, Patente, Solde IS",
-    icon: "calculator-outline" as const,
-    bg: "#eef2ff",
-    color: "#4f46e5",
-    route: "/(app)/simulateur",
-  },
-  {
-    label: "Chat IA fiscal",
-    desc: "Assistant fiscal intelligent",
-    icon: "chatbubbles-outline" as const,
-    bg: "#e0f2fe",
-    color: "#0284c7",
-    route: "/(app)/chat",
-  },
+  { labelKey: "dashboard.stats.articles", value: "7 000+", icon: "document-text-outline" as const, bg: "#e6f7f0", color: "#00815d" },
+  { labelKey: "dashboard.stats.simulators", value: "4", icon: "calculator-outline" as const, bg: "#eef2ff", color: "#4f46e5" },
+  { labelKey: "dashboard.stats.tfnc", value: "60+", icon: "library-outline" as const, bg: "#fef3c7", color: "#d97706" },
+  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, bg: "#f3e8ff", color: "#9333ea" },
 ];
 
 const MOIS: Record<string, number> = {
@@ -68,7 +25,7 @@ const MOIS: Record<string, number> = {
   juil: 6, "aout": 7, "août": 7, sept: 8, oct: 9, nov: 10, "dec": 11, "déc": 11,
 };
 
-function trierEcheances(echeances: typeof ECHEANCES) {
+function trierEcheances(echeances: { date: string; label: string; icon: any }[]) {
   const now = new Date();
   const mois = now.getMonth();
   const jour = now.getDate();
@@ -92,141 +49,79 @@ function trierEcheances(echeances: typeof ECHEANCES) {
 }
 
 export default function Dashboard() {
+  const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
-  const [showNotif, setShowNotif] = useState(false);
-  const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), []);
-  const notifCount = 0;
+  const { colors } = useTheme();
+
+  const ECHEANCES = [
+    { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },
+    { date: "15 juin", label: t("dashboard.deadlines.minPerceptionT2"), icon: "business-outline" as const },
+    { date: "15 sept.", label: t("dashboard.deadlines.minPerceptionT3"), icon: "business-outline" as const },
+    { date: "15 déc.", label: t("dashboard.deadlines.minPerceptionT4"), icon: "business-outline" as const },
+    { date: "15/mois", label: t("dashboard.deadlines.tva"), icon: "receipt-outline" as const },
+    { date: "15/mois", label: t("dashboard.deadlines.its"), icon: "people-outline" as const },
+    { date: "15 avr.", label: t("dashboard.deadlines.patente"), icon: "storefront-outline" as const },
+    { date: "15 mars", label: t("dashboard.deadlines.irpp"), icon: "person-outline" as const },
+    { date: "15 mai", label: t("dashboard.deadlines.irf1"), icon: "home-outline" as const },
+    { date: "20 août", label: t("dashboard.deadlines.irf2"), icon: "home-outline" as const },
+    { date: "15 nov.", label: t("dashboard.deadlines.irf3"), icon: "home-outline" as const },
+  ];
+
+  const QUICK_ACTIONS = [
+    {
+      label: t("dashboard.actions.consultCgi"),
+      desc: t("dashboard.actions.consultCgiDesc"),
+      icon: "book-outline" as const,
+      bg: "#e6f7f0",
+      color: "#00815d",
+      route: "/(app)/code",
+    },
+    {
+      label: t("dashboard.actions.simulate"),
+      desc: t("dashboard.actions.simulateDesc"),
+      icon: "calculator-outline" as const,
+      bg: "#eef2ff",
+      color: "#4f46e5",
+      route: "/(app)/simulateur",
+    },
+    {
+      label: t("dashboard.actions.chatAi"),
+      desc: t("dashboard.actions.chatAiDesc"),
+      icon: "chatbubbles-outline" as const,
+      bg: "#e0f2fe",
+      color: "#0284c7",
+      route: "/(app)/chat",
+    },
+  ];
+
+  const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), [t]);
 
   return (
-    <View className="flex-1 bg-background">
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingHorizontal: 20, paddingTop: 32, paddingBottom: 12 }}>
-        <View className="flex-row items-center justify-between">
-          <View>
-            <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 36, letterSpacing: 1 }}>CGI 242</Text>
-            <Text style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>Code Général des Impôts</Text>
-          </View>
-
-          <View className="flex-row items-center">
-            <TouchableOpacity
-              onPress={() => setShowNotif(!showNotif)}
-              accessibilityLabel="Notifications"
-              accessibilityRole="button"
-              style={{ padding: 6, paddingHorizontal: 10, borderRadius: 6, marginRight: 8 }}
-            >
-              <Ionicons name="notifications-outline" size={22} color="#fff" />
-              {notifCount > 0 && (
-                <View
-                  style={{
-                    position: "absolute",
-                    top: 4,
-                    right: 6,
-                    width: 16,
-                    height: 16,
-                    borderRadius: 8,
-                    backgroundColor: "#e74c3c",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Text style={{ color: "#fff", fontSize: 10, fontWeight: "700" }}>{notifCount}</Text>
-                </View>
-              )}
-            </TouchableOpacity>
-
-            <View
-              style={{
-                width: 32,
-                height: 32,
-                borderRadius: 16,
-                backgroundColor: "#00815d",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Text style={{ color: "#fff", fontWeight: "800", fontSize: 13 }}>
-                {getInitials(user?.prenom, user?.nom)}
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-
-      {/* Panneau notifications */}
-      {showNotif && (
-        <View
-          style={{
-            position: "absolute",
-            top: 80,
-            right: 16,
-            left: 16,
-            backgroundColor: "#fff",
-            borderRadius: 12,
-            zIndex: 100,
-            shadowColor: "#000",
-            shadowOpacity: 0.2,
-            shadowRadius: 16,
-            elevation: 10,
-          }}
-        >
-          <View
-            className="flex-row items-center justify-between"
-            style={{ paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#e5e7eb" }}
-          >
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#374151" }}>Notifications</Text>
-            <TouchableOpacity onPress={() => setShowNotif(false)} accessibilityLabel="Fermer" accessibilityRole="button">
-              <Ionicons name="close" size={22} color="#6b7280" />
-            </TouchableOpacity>
-          </View>
-
-          <View style={{ paddingVertical: 32, alignItems: "center" }}>
-            <Ionicons name="checkmark-circle" size={40} color="#00c17c" style={{ marginBottom: 8 }} />
-            <Text style={{ fontSize: 15, fontWeight: "600", color: "#374151" }}>Vous êtes à jour</Text>
-            <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 4 }}>Aucune nouvelle notification</Text>
-          </View>
-
-          <TouchableOpacity
-            style={{
-              marginHorizontal: 16,
-              marginBottom: 12,
-              backgroundColor: "#00815d",
-              borderRadius: 8,
-              paddingVertical: 10,
-              alignItems: "center",
-            }}
-            onPress={() => setShowNotif(false)}
-            accessibilityLabel="Voir toutes les notifications"
-            accessibilityRole="button"
-          >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>Voir toutes les notifications</Text>
-          </TouchableOpacity>
-        </View>
-      )}
-
-      <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 24 }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 24 }}>
         {/* Bienvenue */}
-        <View className="px-4 pt-4 pb-2">
-          <Text style={{ fontSize: 22, fontWeight: "800", color: "#1f2937" }}>
-            {getGreeting()}, {user?.prenom || "Utilisateur"} !
+        <View style={{ paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8 }}>
+          <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>
+            {getGreeting(t)}, {user?.prenom || t("dashboard.user")} !
           </Text>
-          <Text style={{ fontSize: 14, color: "#6b7280", marginTop: 2 }}>
-            Voici un aperçu de votre espace CGI 242
+          <Text style={{ fontSize: 14, color: colors.textSecondary, marginTop: 2 }}>
+            {t("dashboard.subtitle")}
           </Text>
         </View>
 
         {/* Stats cards — grille 2x2 */}
-        <View className="px-4 pt-2">
+        <View style={{ paddingHorizontal: 16, paddingTop: 8 }}>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
             {STATS.map((s) => (
               <View
-                key={s.label}
+                key={s.labelKey}
                 style={{
                   flex: 1,
                   minWidth: "45%",
-                  backgroundColor: "#fff",
+                  backgroundColor: colors.card,
                   borderRadius: 12,
                   borderWidth: 1,
-                  borderColor: "#e5e7eb",
+                  borderColor: colors.border,
                   padding: 14,
                   flexDirection: "row",
                   alignItems: "center",
@@ -246,8 +141,8 @@ export default function Dashboard() {
                   <Ionicons name={s.icon} size={22} color={s.color} />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 20, fontWeight: "800", color: "#1f2937" }}>{s.value}</Text>
-                  <Text style={{ fontSize: 12, color: "#6b7280" }}>{s.label}</Text>
+                  <Text style={{ fontSize: 20, fontWeight: "800", color: colors.text }}>{s.value}</Text>
+                  <Text style={{ fontSize: 12, color: colors.textSecondary }}>{t(s.labelKey)}</Text>
                 </View>
               </View>
             ))}
@@ -255,14 +150,14 @@ export default function Dashboard() {
         </View>
 
         {/* Actions rapides */}
-        <View className="px-4 pt-4">
-          <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937", marginBottom: 10 }}>Actions rapides</Text>
+        <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
+          <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 10 }}>{t("dashboard.quickActions")}</Text>
           <View
             style={{
-              backgroundColor: "#fff",
+              backgroundColor: colors.card,
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: "#e5e7eb",
+              borderColor: colors.border,
               overflow: "hidden",
             }}
           >
@@ -281,7 +176,7 @@ export default function Dashboard() {
                     paddingHorizontal: 14,
                     paddingVertical: 14,
                     borderBottomWidth: i < QUICK_ACTIONS.length - 1 ? 1 : 0,
-                    borderBottomColor: "#f3f4f6",
+                    borderBottomColor: colors.background,
                     opacity: disabled ? 0.5 : 1,
                   }}
                 >
@@ -299,17 +194,17 @@ export default function Dashboard() {
                     <Ionicons name={a.icon} size={20} color={a.color} />
                   </View>
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 14, fontWeight: "700", color: disabled ? "#9ca3af" : "#1f2937" }}>
+                    <Text style={{ fontSize: 14, fontWeight: "700", color: disabled ? colors.textMuted : colors.text }}>
                       {a.label}
                     </Text>
-                    <Text style={{ fontSize: 12, color: "#9ca3af" }}>{a.desc}</Text>
+                    <Text style={{ fontSize: 12, color: colors.textMuted }}>{a.desc}</Text>
                   </View>
                   {disabled ? (
-                    <View style={{ backgroundColor: "#f3f4f6", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2 }}>
-                      <Text style={{ fontSize: 10, fontWeight: "700", color: "#9ca3af" }}>BIENTÔT</Text>
+                    <View style={{ backgroundColor: colors.background, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2 }}>
+                      <Text style={{ fontSize: 10, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   ) : (
-                    <Ionicons name="chevron-forward" size={18} color="#d1d5db" />
+                    <Ionicons name="chevron-forward" size={18} color={colors.disabled} />
                   )}
                 </TouchableOpacity>
               );
@@ -318,39 +213,39 @@ export default function Dashboard() {
         </View>
 
         {/* Echeances fiscales */}
-        <View className="px-4 pt-4">
-          <View className="flex-row items-center mb-2">
-            <Ionicons name="calendar-outline" size={15} color="#00815d" style={{ marginRight: 6 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#1f2937" }}>Prochaines échéances fiscales</Text>
+        <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
+            <Ionicons name="calendar-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
+            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 10 }}>
             {echeancesTriees.map((e) => (
               <View
                 key={`${e.date}-${e.label}`}
                 style={{
-                  backgroundColor: "#fff",
+                  backgroundColor: colors.card,
                   borderRadius: 10,
                   borderWidth: 1,
-                  borderColor: "#e5e7eb",
+                  borderColor: colors.border,
                   paddingHorizontal: 14,
                   paddingVertical: 10,
                   minWidth: 140,
                 }}
               >
-                <View className="flex-row items-center mb-1">
-                  <Ionicons name={e.icon} size={13} color="#00815d" style={{ marginRight: 5 }} />
-                  <Text style={{ fontSize: 14, fontWeight: "700", color: "#00815d" }}>{e.date}</Text>
+                <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
+                  <Ionicons name={e.icon} size={13} color={colors.primary} style={{ marginRight: 5 }} />
+                  <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>{e.date}</Text>
                 </View>
-                <Text style={{ fontSize: 13, color: "#374151" }}>{e.label}</Text>
+                <Text style={{ fontSize: 13, color: colors.text }}>{e.label}</Text>
               </View>
             ))}
           </ScrollView>
         </View>
 
         {/* Footer */}
-        <View className="px-4 pt-5 items-center">
-          <Text style={{ fontSize: 12, color: "#9ca3af" }}>CGI242 v1.0.0 — Édition 2026</Text>
-          <Text style={{ fontSize: 11, color: "#d1d5db", marginTop: 1 }}>NormX AI</Text>
+        <View style={{ paddingHorizontal: 16, paddingTop: 20, alignItems: "center" }}>
+          <Text style={{ fontSize: 12, color: colors.textMuted }}>{t("dashboard.footer")}</Text>
+          <Text style={{ fontSize: 11, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
         </View>
       </ScrollView>
     </View>

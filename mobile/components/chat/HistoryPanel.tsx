@@ -13,33 +13,41 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import type { Conversation } from "@/lib/api/chat";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 
 interface DateGroup {
   label: string;
   items: Conversation[];
 }
 
-function formatRelativeDate(dateStr: string): string {
+function formatRelativeDate(dateStr: string, t: TFunction): string {
   const date = new Date(dateStr);
   const now = new Date();
   const diffMs = now.getTime() - date.getTime();
   const diffMins = Math.floor(diffMs / 60000);
-  if (diffMins < 1) return "À l'instant";
-  if (diffMins < 60) return `Il y a ${diffMins} min`;
+  if (diffMins < 1) return t("chat.timeJustNow");
+  if (diffMins < 60) return `${t("chat.timeAgo")} ${diffMins} ${t("chat.timeMinutes")}`;
   const diffHours = Math.floor(diffMins / 60);
-  if (diffHours < 24) return `Il y a ${diffHours}h`;
+  if (diffHours < 24) return `${t("chat.timeAgo")} ${diffHours}h`;
   const diffDays = Math.floor(diffHours / 24);
-  if (diffDays === 1) return "Hier";
-  if (diffDays < 7) return `Il y a ${diffDays}j`;
+  if (diffDays === 1) return t("chat.timeYesterday");
+  if (diffDays < 7) return `${t("chat.timeAgo")} ${diffDays}j`;
   return date.toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
 }
 
-function groupByDate(conversations: Conversation[]): DateGroup[] {
+function groupByDate(conversations: Conversation[], t: TFunction): DateGroup[] {
   const groups: Map<string, Conversation[]> = new Map();
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const yesterday = new Date(today.getTime() - 86400000);
   const weekAgo = new Date(today.getTime() - 7 * 86400000);
+
+  const monthKeys = [
+    "months.january", "months.february", "months.march", "months.april",
+    "months.may", "months.june", "months.july", "months.august",
+    "months.september", "months.october", "months.november", "months.december",
+  ];
 
   for (const conv of conversations) {
     const date = new Date(conv.updatedAt);
@@ -47,18 +55,14 @@ function groupByDate(conversations: Conversation[]): DateGroup[] {
 
     let label: string;
     if (convDay.getTime() === today.getTime()) {
-      label = "Aujourd'hui";
+      label = t("chat.timeToday");
     } else if (convDay.getTime() === yesterday.getTime()) {
-      label = "Hier";
+      label = t("chat.timeYesterday");
     } else if (convDay.getTime() > weekAgo.getTime()) {
       const days = Math.round((today.getTime() - convDay.getTime()) / 86400000);
-      label = `Il y a ${days} jours`;
+      label = `${t("chat.timeAgo")} ${days} jours`;
     } else {
-      const monthNames = [
-        "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre",
-      ];
-      label = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
+      label = `${t(monthKeys[date.getMonth()])} ${date.getFullYear()}`;
     }
 
     if (!groups.has(label)) {
@@ -90,6 +94,7 @@ export default function HistoryPanel({
   onClose,
 }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [search, setSearch] = useState("");
 
   const filtered = search.trim()
@@ -97,7 +102,7 @@ export default function HistoryPanel({
         (c.title || "").toLowerCase().includes(search.toLowerCase())
       )
     : conversations;
-  const dateGroups = groupByDate(filtered);
+  const dateGroups = groupByDate(filtered, t);
 
   return (
     <>
@@ -114,9 +119,9 @@ export default function HistoryPanel({
         }}
       >
         <Text style={{ color: colors.sidebarText, fontSize: 16, fontWeight: "700" }}>
-          Historique
+          {t("chat.history")}
         </Text>
-        <TouchableOpacity onPress={onClose} accessibilityLabel="Fermer l'historique">
+        <TouchableOpacity onPress={onClose} accessibilityLabel={t("chat.closeHistory")}>
           <Ionicons name="close" size={22} color="#aaa" />
         </TouchableOpacity>
       </View>
@@ -139,7 +144,7 @@ export default function HistoryPanel({
       >
         <Ionicons name="add" size={18} color={colors.sidebarText} />
         <Text style={{ color: colors.sidebarText, fontSize: 14, fontWeight: "600" }}>
-          Nouvelle conversation
+          {t("chat.newConversation")}
         </Text>
       </TouchableOpacity>
 
@@ -164,7 +169,7 @@ export default function HistoryPanel({
             paddingVertical: 8,
             marginLeft: 8,
           }}
-          placeholder="Rechercher..."
+          placeholder={t("chat.searchPlaceholder")}
           placeholderTextColor="#666"
           value={search}
           onChangeText={setSearch}
@@ -181,14 +186,14 @@ export default function HistoryPanel({
         <View style={{ paddingTop: 40, alignItems: "center" }}>
           <ActivityIndicator size="small" color={colors.accent} />
           <Text style={{ color: "#888", fontSize: 13, marginTop: 8 }}>
-            Chargement...
+            {t("common.loading")}
           </Text>
         </View>
       ) : conversations.length === 0 ? (
         <View style={{ paddingTop: 40, alignItems: "center", paddingHorizontal: 20 }}>
           <Ionicons name="chatbubbles-outline" size={32} color="#555" />
           <Text style={{ color: "#888", fontSize: 13, marginTop: 8, textAlign: "center" }}>
-            Aucune conversation
+            {t("chat.noConversations")}
           </Text>
         </View>
       ) : (
@@ -232,16 +237,16 @@ export default function HistoryPanel({
                         fontSize: 13,
                       }}
                     >
-                      {conv.title || "Sans titre"}
+                      {conv.title || t("chat.untitled")}
                     </Text>
                     <Text style={{ color: "#666", fontSize: 11, marginTop: 2 }}>
-                      {conv._count?.messages ?? 0} message{(conv._count?.messages ?? 0) > 1 ? "s" : ""} · {formatRelativeDate(conv.updatedAt)}
+                      {conv._count?.messages ?? 0} {(conv._count?.messages ?? 0) > 1 ? t("chat.messages") : t("chat.message")} · {formatRelativeDate(conv.updatedAt, t)}
                     </Text>
                   </View>
                   <TouchableOpacity
                     onPress={() => onDeleteConversation(conv.id, conv.title)}
                     hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                    accessibilityLabel="Supprimer"
+                    accessibilityLabel={t("chat.deleteConversation")}
                   >
                     <Ionicons name="trash-outline" size={16} color="#666" />
                   </TouchableOpacity>

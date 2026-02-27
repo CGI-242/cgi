@@ -1,11 +1,13 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
 import { useState } from "react";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function ForgotPassword() {
+  const { t } = useTranslation();
   const [emailLocal, setEmailLocal] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -15,7 +17,7 @@ export default function ForgotPassword() {
 
   const handleSendCode = async () => {
     if (!emailLocal.trim()) {
-      setError("Veuillez saisir votre email");
+      setError(t("auth.emailRequired"));
       return;
     }
     setError("");
@@ -27,7 +29,7 @@ export default function ForgotPassword() {
       if (__DEV__ && data.devCode) setDevCode(data.devCode);
       router.push("/(auth)/reset-password");
     } catch (err) {
-      setError((axios.isAxiosError(err) && err.response?.data?.error) || "Erreur lors de l'envoi");
+      setError((axios.isAxiosError(err) && err.response?.data?.error) || t("auth.sendError"));
     } finally {
       setLoading(false);
     }
@@ -49,10 +51,10 @@ export default function ForgotPassword() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Mot de passe oublié
+            {t("auth.forgotPassword")}
           </Text>
           <Text className="text-sm text-muted mb-6">
-            Entrez votre email pour recevoir un code de réinitialisation
+            {t("auth.enterEmailReset")}
           </Text>
 
           {/* Erreur */}
@@ -68,7 +70,7 @@ export default function ForgotPassword() {
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="votre@email.com"
+            placeholder={t("auth.emailPlaceholder")}
             placeholderTextColor="#888"
             value={emailLocal}
             onChangeText={(text) => {
@@ -93,7 +95,7 @@ export default function ForgotPassword() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Envoyer le code
+                {t("auth.sendCode")}
               </Text>
             )}
           </TouchableOpacity>
@@ -101,7 +103,7 @@ export default function ForgotPassword() {
           {/* Retour */}
           <TouchableOpacity className="items-center mt-4" onPress={() => router.replace("/(auth)")}>
             <Text className="text-sm text-primary underline">
-              Retour à la connexion
+              {t("auth.backToLogin")}
             </Text>
           </TouchableOpacity>
         </View>

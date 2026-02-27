@@ -1,9 +1,11 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 
 export default function LogoutScreen() {
+  const { t } = useTranslation();
   const clearLoggedOut = useAuthStore((s) => s.clearLoggedOut);
 
   const handleReconnect = () => {
@@ -29,11 +31,10 @@ export default function LogoutScreen() {
         </View>
 
         <Text className="text-2xl font-bold text-text mb-2">
-          Déconnexion réussie
+          {t("auth.logoutSuccess")}
         </Text>
         <Text className="text-sm text-muted text-center mb-8">
-          Vous avez été déconnecté avec succès.{"\n"}
-          À bientôt sur CGI 242 !
+          {t("auth.logoutMessage")}
         </Text>
 
         <TouchableOpacity
@@ -42,7 +43,7 @@ export default function LogoutScreen() {
           activeOpacity={0.8}
         >
           <Text className="text-white font-semibold text-base">
-            Se reconnecter
+            {t("auth.reconnect")}
           </Text>
         </TouchableOpacity>
       </View>

@@ -9,10 +9,11 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { userApi, type UserProfile } from "@/lib/api/user";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 function getInitials(firstName?: string | null, lastName?: string | null) {
   return ((firstName?.[0] || "") + (lastName?.[0] || "")).toUpperCase() || "U";
@@ -25,6 +26,8 @@ function formatDate(dateStr?: string | null) {
 }
 
 export default function ProfilScreen() {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
   const user = useAuthStore((s) => s.user);
   const setUser = useAuthStore((s) => s.setUser);
 
@@ -87,9 +90,9 @@ export default function ProfilScreen() {
         });
       }
 
-      setMessage({ type: "success", text: "Profil mis à jour avec succès" });
+      setMessage({ type: "success", text: t("profil.updateSuccess") });
     } catch (err: any) {
-      const errorMsg = err?.response?.data?.error || "Erreur lors de la mise à jour";
+      const errorMsg = err?.response?.data?.error || t("profil.updateError");
       setMessage({ type: "error", text: errorMsg });
     } finally {
       setSaving(false);
@@ -98,8 +101,8 @@ export default function ProfilScreen() {
 
   if (loading) {
     return (
-      <View style={{ flex: 1, backgroundColor: "#f3f4f6", justifyContent: "center", alignItems: "center" }}>
-        <ActivityIndicator size="large" color="#00815d" />
+      <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center" }}>
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
     );
   }
@@ -108,25 +111,9 @@ export default function ProfilScreen() {
 
   return (
     <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: "#f3f4f6" }}
+      style={{ flex: 1, backgroundColor: colors.background }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
-      {/* Header */}
-      <View
-        style={{
-          backgroundColor: "#1a1a1a",
-          paddingTop: Platform.OS === "ios" ? 56 : 16,
-          paddingBottom: 16,
-          paddingHorizontal: 16,
-          flexDirection: "row",
-          alignItems: "center",
-        }}
-      >
-        <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-          <Ionicons name="arrow-back" size={24} color="#00815d" />
-        </TouchableOpacity>
-        <Text style={{ color: "#00815d", fontSize: 20, fontWeight: "bold", flex: 1 }}>Mon profil</Text>
-      </View>
 
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
         {/* Avatar + Email */}
@@ -136,7 +123,7 @@ export default function ProfilScreen() {
               width: 80,
               height: 80,
               borderRadius: 40,
-              backgroundColor: "#00815d",
+              backgroundColor: colors.primary,
               justifyContent: "center",
               alignItems: "center",
               marginBottom: 12,
@@ -144,7 +131,7 @@ export default function ProfilScreen() {
           >
             <Text style={{ color: "#fff", fontSize: 28, fontWeight: "bold" }}>{initials}</Text>
           </View>
-          <Text style={{ color: "#6b7280", fontSize: 14 }}>{email}</Text>
+          <Text style={{ color: colors.textSecondary, fontSize: 14 }}>{email}</Text>
         </View>
 
         {/* Message feedback */}
@@ -178,29 +165,31 @@ export default function ProfilScreen() {
         )}
 
         {/* Formulaire */}
-        <View style={{ backgroundColor: "#fff", borderRadius: 12, padding: 16, marginBottom: 16 }}>
-          <FieldInput label="Prénom" value={firstName} onChangeText={setFirstName} placeholder="Votre prénom" />
-          <FieldInput label="Nom" value={lastName} onChangeText={setLastName} placeholder="Votre nom" />
+        <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16 }}>
+          <FieldInput label={t("auth.firstName")} value={firstName} onChangeText={setFirstName} placeholder={t("auth.firstNamePlaceholder")} colors={colors} />
+          <FieldInput label={t("auth.lastName")} value={lastName} onChangeText={setLastName} placeholder={t("auth.lastNamePlaceholder")} colors={colors} />
           <FieldInput
-            label="Téléphone"
+            label={t("auth.phone")}
             value={phone}
             onChangeText={setPhone}
-            placeholder="+242 06 XXX XX XX"
+            placeholder={t("auth.phonePlaceholder")}
             keyboardType="phone-pad"
+            colors={colors}
           />
           <FieldInput
             label="Profession"
             value={profession}
             onChangeText={setProfession}
-            placeholder="Ex: Fiscaliste, Comptable..."
+            placeholder={t("auth.professionPlaceholder")}
             isLast
+            colors={colors}
           />
         </View>
 
         {/* Date inscription */}
         {createdAt ? (
-          <Text style={{ textAlign: "center", color: "#9ca3af", fontSize: 13, marginBottom: 24 }}>
-            Membre depuis : {formatDate(createdAt)}
+          <Text style={{ textAlign: "center", color: colors.textMuted, fontSize: 13, marginBottom: 24 }}>
+            {t("profil.memberSince")} {formatDate(createdAt)}
           </Text>
         ) : null}
 
@@ -210,7 +199,7 @@ export default function ProfilScreen() {
             onPress={handleSave}
             disabled={saving}
             style={{
-              backgroundColor: saving ? "#86efac" : "#00815d",
+              backgroundColor: saving ? colors.accent : colors.primary,
               borderRadius: 10,
               paddingVertical: 12,
               paddingHorizontal: 24,
@@ -224,7 +213,7 @@ export default function ProfilScreen() {
               <Ionicons name="checkmark-circle-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
             )}
             <Text style={{ color: "#fff", fontSize: 15, fontWeight: "700" }}>
-              {saving ? "Enregistrement..." : "Enregistrer"}
+              {saving ? t("common.saving") : t("common.save")}
             </Text>
           </TouchableOpacity>
         </View>
@@ -240,6 +229,7 @@ function FieldInput({
   placeholder,
   keyboardType,
   isLast,
+  colors,
 }: {
   label: string;
   value: string;
@@ -247,25 +237,26 @@ function FieldInput({
   placeholder?: string;
   keyboardType?: "default" | "phone-pad" | "email-address";
   isLast?: boolean;
+  colors: any;
 }) {
   return (
     <View style={{ marginBottom: isLast ? 0 : 16 }}>
-      <Text style={{ color: "#6b7280", fontSize: 13, marginBottom: 6, fontWeight: "600" }}>{label}</Text>
+      <Text style={{ color: colors.textSecondary, fontSize: 13, marginBottom: 6, fontWeight: "600" }}>{label}</Text>
       <TextInput
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
-        placeholderTextColor="#d1d5db"
+        placeholderTextColor={colors.disabled}
         keyboardType={keyboardType || "default"}
         style={{
           borderWidth: 1,
-          borderColor: "#e5e7eb",
+          borderColor: colors.border,
           borderRadius: 8,
           paddingHorizontal: 12,
           paddingVertical: 10,
           fontSize: 15,
-          color: "#1f2937",
-          backgroundColor: "#f9fafb",
+          color: colors.text,
+          backgroundColor: colors.input,
         }}
       />
     </View>

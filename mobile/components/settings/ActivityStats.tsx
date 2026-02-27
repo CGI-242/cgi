@@ -3,6 +3,7 @@
 
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import type { UserStats } from "@/lib/api/user";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
@@ -33,22 +34,23 @@ function Divider() {
 }
 
 export default function ActivityStats({ stats }: Props) {
+  const { t } = useTranslation();
   return (
     <>
       <View style={cardStyle}>
-        <StatRow icon="chatbubble-ellipses-outline" label="Questions ce mois" value={String(stats.monthQuestions)} />
+        <StatRow icon="chatbubble-ellipses-outline" label={t("activity.questionsThisMonth")} value={String(stats.monthQuestions)} />
         <Divider />
-        <StatRow icon="analytics-outline" label="Questions total" value={String(stats.totalQuestions)} />
+        <StatRow icon="analytics-outline" label={t("activity.questionsTotal")} value={String(stats.totalQuestions)} />
         <Divider />
-        <StatRow icon="book-outline" label="Articles consultés" value={String(stats.totalArticles)} />
+        <StatRow icon="book-outline" label={t("activity.articlesViewed")} value={String(stats.totalArticles)} />
         <Divider />
-        <StatRow icon="calendar-outline" label="Jours actifs" value={String(stats.activeDays)} />
+        <StatRow icon="calendar-outline" label={t("activity.activeDays")} value={String(stats.activeDays)} />
       </View>
 
       {stats.last7Days.some((d) => d.questions > 0) && (
         <View style={{ ...cardStyle, padding: 16, marginTop: 4 }}>
           <Text style={{ fontSize: 12, fontWeight: "600", color: "#6b7280", marginBottom: 12 }}>
-            7 DERNIERS JOURS
+            {t("activity.last7Days")}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "flex-end", height: 60, gap: 6 }}>
             {stats.last7Days.map((day) => {

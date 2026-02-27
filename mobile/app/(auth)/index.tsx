@@ -1,6 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, Linking } from "react-native";
 import { useState } from "react";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 
 const LEGAL_URLS = {
@@ -10,17 +11,18 @@ const LEGAL_URLS = {
 };
 
 export default function LoginEmail() {
+  const { t } = useTranslation();
   const [email, setEmailLocal] = useState("");
   const [error, setError] = useState("");
   const setEmail = useAuthStore((s) => s.setEmail);
 
   const handleContinue = () => {
     if (!email.trim()) {
-      setError("Veuillez saisir votre email");
+      setError(t("auth.emailRequired"));
       return;
     }
     if (!/\S+@\S+\.\S+/.test(email)) {
-      setError("Email invalide");
+      setError(t("auth.emailInvalid"));
       return;
     }
     setError("");
@@ -44,9 +46,9 @@ export default function LoginEmail() {
           </View>
 
           {/* Titre */}
-          <Text className="text-2xl font-bold text-text mb-1">Connexion</Text>
+          <Text className="text-2xl font-bold text-text mb-1">{t("auth.login")}</Text>
           <Text className="text-sm text-muted mb-6">
-            Entrez votre email pour continuer
+            {t("auth.enterEmail")}
           </Text>
 
           {/* Erreur */}
@@ -62,7 +64,7 @@ export default function LoginEmail() {
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="votre@email.com"
+            placeholder={t("auth.emailPlaceholder")}
             placeholderTextColor="#888"
             value={email}
             onChangeText={(text) => {
@@ -83,16 +85,16 @@ export default function LoginEmail() {
             activeOpacity={0.8}
           >
             <Text className="text-white font-semibold text-base">
-              Continuer
+              {t("auth.continue")}
             </Text>
           </TouchableOpacity>
 
           {/* Lien inscription */}
           <View className="flex-row justify-center mt-6">
-            <Text className="text-sm text-muted">Pas encore de compte ? </Text>
+            <Text className="text-sm text-muted">{t("auth.noAccount")} </Text>
             <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
               <Text className="text-sm text-primary font-semibold underline">
-                Créer une entreprise
+                {t("auth.createCompany")}
               </Text>
             </TouchableOpacity>
           </View>
@@ -101,13 +103,13 @@ export default function LoginEmail() {
         {/* Footer */}
         <View className="flex-row gap-8 mt-6">
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.aide)}>
-            <Text className="text-xs text-muted underline">Aide</Text>
+            <Text className="text-xs text-muted underline">{t("auth.help")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.confidentialite)}>
-            <Text className="text-xs text-muted underline">Confidentialité</Text>
+            <Text className="text-xs text-muted underline">{t("auth.privacy")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.conditions)}>
-            <Text className="text-xs text-muted underline">Conditions</Text>
+            <Text className="text-xs text-muted underline">{t("auth.terms")}</Text>
           </TouchableOpacity>
         </View>
       </View>

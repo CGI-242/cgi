@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -28,11 +29,11 @@ interface SidebarProps {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Dashboard", icon: "home-outline", route: "/(app)" },
-  { label: "Code CGI", icon: "book-outline", route: "/(app)/code" },
-  { label: "Simulateurs", icon: "calculator-outline", route: "/(app)/simulateur" },
-  { label: "Chat IA", icon: "chatbubbles-outline", route: "/(app)/chat" },
-  { label: "Alertes", icon: "notifications-outline", route: "/(app)/alertes" },
+  { label: "sidebar.dashboard", icon: "home-outline", route: "/(app)" },
+  { label: "sidebar.code", icon: "book-outline", route: "/(app)/code" },
+  { label: "sidebar.simulators", icon: "calculator-outline", route: "/(app)/simulateur" },
+  { label: "sidebar.chat", icon: "chatbubbles-outline", route: "/(app)/chat" },
+  { label: "sidebar.alerts", icon: "notifications-outline", route: "/(app)/alertes" },
 ];
 
 function isRouteActive(currentRoute: string, itemRoute: string): boolean {
@@ -45,20 +46,21 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
 export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
   const { colors } = useTheme();
   const logout = useAuthStore((s) => s.logout);
+  const { t } = useTranslation();
 
   const profileItems: ProfileItem[] = [
     {
-      label: "Mon profil",
+      label: t("sidebar.profile"),
       icon: "person-outline",
       action: () => router.push("/(app)/profil"),
     },
     {
-      label: "Paramètres",
+      label: t("sidebar.settings"),
       icon: "settings-outline",
       action: () => router.push("/(app)/parametres"),
     },
     {
-      label: "Se déconnecter",
+      label: t("sidebar.logout"),
       icon: "log-out-outline",
       action: () => logout(),
       color: "#e74c3c",
@@ -97,11 +99,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           ) : (
             <View>
               <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
-              <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>Code Général des Impôts</Text>
+              <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!collapsed && (
-            <TouchableOpacity onPress={onToggle} accessibilityLabel="Replier la sidebar" accessibilityRole="button">
+            <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
               <Ionicons name="chevron-back-outline" size={20} color={colors.sidebarText} />
             </TouchableOpacity>
           )}
@@ -111,7 +113,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           <TouchableOpacity
             onPress={onToggle}
             style={{ alignItems: "center", paddingVertical: 8, marginBottom: 4 }}
-            accessibilityLabel="Déployer la sidebar"
+            accessibilityLabel={t("sidebar.expand")}
             accessibilityRole="button"
           >
             <Ionicons name="chevron-forward-outline" size={20} color={colors.sidebarText} />
@@ -132,7 +134,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 }
               }}
               disabled={disabled}
-              accessibilityLabel={item.label}
+              accessibilityLabel={t(item.label)}
               accessibilityRole="button"
               style={{
                 flexDirection: "row",
@@ -160,7 +162,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                       fontWeight: active ? "700" : "400",
                     }}
                   >
-                    {item.label}
+                    {t(item.label)}
                   </Text>
                   {disabled && (
                     <View
@@ -172,7 +174,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                         marginLeft: 8,
                       }}
                     >
-                      <Text style={{ fontSize: 9, fontWeight: "700", color: colors.textMuted }}>BIENTÔT</Text>
+                      <Text style={{ fontSize: 9, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   )}
                 </View>

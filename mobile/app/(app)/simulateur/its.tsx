@@ -5,9 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-  Switch,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import {
   calculerIts,
@@ -17,20 +15,24 @@ import {
 } from "@/lib/services/its.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
-
-const SITUATIONS: { value: SituationFamiliale; label: string }[] = [
-  { value: "celibataire", label: "Célibataire" },
-  { value: "marie", label: "Marié(e)" },
-  { value: "divorce", label: "Divorcé(e)" },
-  { value: "veuf", label: "Veuf/Veuve" },
-];
+import { useTranslation } from "react-i18next";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 export default function ItsScreen() {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
   const [salaireBrut, setSalaireBrut] = useState("");
   const [periode, setPeriode] = useState<PeriodeRevenu>("mensuel");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
   const [enfants, setEnfants] = useState(0);
   const [appliquerCharge, setAppliquerCharge] = useState(true);
+
+  const SITUATIONS: { value: SituationFamiliale; label: string }[] = [
+    { value: "celibataire", label: t("simulateur.its.single") },
+    { value: "marie", label: t("simulateur.its.married") },
+    { value: "divorce", label: t("simulateur.its.divorced") },
+    { value: "veuf", label: t("simulateur.its.widowed") },
+  ];
 
   const nombreParts = useMemo(
     () => calculerNombreParts(situation, enfants, appliquerCharge),
@@ -50,176 +52,160 @@ export default function ItsScreen() {
   }, [salaireBrut, periode, situation, enfants, appliquerCharge]);
 
   return (
-    <View className="flex-1 bg-background">
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingHorizontal: 24, paddingTop: 48, paddingBottom: 24 }}>
-        <TouchableOpacity
-          onPress={() => router.push("/(app)/simulateur")}
-          className="flex-row items-center mb-3"
-        >
-          <Ionicons name="arrow-back" size={24} color="#fff" />
-          <Text className="text-white ml-2 text-base">Simulateurs</Text>
-        </TouchableOpacity>
-        <Text style={{ fontSize: 24, fontWeight: "900", color: "#00c17c" }}>Simulateur ITS</Text>
-        <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>
-          Impôt sur les Traitements et Salaires - Art. 116 CGI 2026
-        </Text>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Layout 50/50 */}
-      <View className="flex-1 flex-row">
+      <View style={{ flex: 1, flexDirection: "row" }}>
         {/* Colonne gauche 50% - Formulaire */}
         <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info banner */}
-          <View className="p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: "#374151" }}>
-              L'ITS est calculé selon le barème progressif Art. 116 CGI 2026,
-              après déduction CNSS (4%) et frais professionnels (20%).
+          <View style={{ borderRadius: 8, marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
+            <Text style={{ fontSize: 11, color: colors.text }}>
+              {t("simulateur.its.description")}
             </Text>
           </View>
 
           {/* Situation familiale + Enfants/QF cote a cote */}
-          <View className="flex-row" style={{ gap: 10, marginBottom: 12 }}>
-            {/* Gauche : boutons situation empilés */}
+          <View style={{ flexDirection: "row", gap: 10, marginBottom: 12 }}>
+            {/* Gauche : boutons situation empiles */}
             <View style={{ flex: 1, gap: 4 }}>
-              <Text style={{ fontSize: 11, fontWeight: "600", color: "#6b7280", marginBottom: 2 }}>Statut</Text>
+              <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.its.status")}</Text>
               {SITUATIONS.map((s) => (
                 <TouchableOpacity
                   key={s.value}
-                  className="py-2 items-center"
-                  style={{ backgroundColor: situation === s.value ? "#00815d" : "#e5e7eb", borderRadius: 6 }}
+                  style={{ paddingVertical: 8, alignItems: "center", backgroundColor: situation === s.value ? colors.primary : colors.border, borderRadius: 6 }}
                   onPress={() => setSituation(s.value)}
                 >
-                  <Text style={{ color: situation === s.value ? "#fff" : "#374151", fontSize: 12, fontWeight: "600" }}>{s.label}</Text>
+                  <Text style={{ color: situation === s.value ? "#fff" : colors.text, fontSize: 12, fontWeight: "600" }}>{s.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>
             {/* Droite : enfants + QF + parts */}
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 11, fontWeight: "600", color: "#6b7280", marginBottom: 2 }}>Enfants à charge</Text>
-              <View className="flex-row items-center" style={{ marginBottom: 10 }}>
-                <TouchableOpacity className="w-8 h-8 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
-                  <Text style={{ fontSize: 16, fontWeight: "700" }}>-</Text>
+              <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.its.dependents")}</Text>
+              <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
+                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
+                  <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>-</Text>
                 </TouchableOpacity>
-                <Text style={{ minWidth: 28, textAlign: "center", fontSize: 16, fontWeight: "700", color: "#374151" }}>{enfants}</Text>
-                <TouchableOpacity className="w-8 h-8 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
-                  <Text style={{ fontSize: 16, fontWeight: "700" }}>+</Text>
+                <Text style={{ minWidth: 28, textAlign: "center", fontSize: 16, fontWeight: "700", color: colors.text }}>{enfants}</Text>
+                <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
+                  <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>+</Text>
                 </TouchableOpacity>
               </View>
-              <TouchableOpacity className="flex-row items-center px-3 py-2" style={{ backgroundColor: appliquerCharge ? "#00815d20" : "#e5e7eb", borderRadius: 6, marginBottom: 10 }} onPress={() => setAppliquerCharge(!appliquerCharge)}>
-                <Ionicons name={appliquerCharge ? "checkbox" : "square-outline"} size={16} color={appliquerCharge ? "#00815d" : "#9ca3af"} />
-                <Text style={{ fontSize: 12, fontWeight: "600", color: appliquerCharge ? "#00815d" : "#6b7280", marginLeft: 6 }}>Quotient familial</Text>
+              <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 8, backgroundColor: appliquerCharge ? `${colors.primary}20` : colors.border, borderRadius: 6, marginBottom: 10 }} onPress={() => setAppliquerCharge(!appliquerCharge)}>
+                <Ionicons name={appliquerCharge ? "checkbox" : "square-outline"} size={16} color={appliquerCharge ? colors.primary : colors.textMuted} />
+                <Text style={{ fontSize: 12, fontWeight: "600", color: appliquerCharge ? colors.primary : colors.textSecondary, marginLeft: 6 }}>{t("simulateur.its.familyQuotient")}</Text>
               </TouchableOpacity>
-              <View className="px-3 py-2 items-center" style={{ backgroundColor: "#00815d15", borderRadius: 6 }}>
-                <Text style={{ fontSize: 14, fontWeight: "700", color: "#00815d" }}>{nombreParts} parts</Text>
+              <View style={{ paddingHorizontal: 12, paddingVertical: 8, alignItems: "center", backgroundColor: `${colors.primary}15`, borderRadius: 6 }}>
+                <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>{nombreParts} {t("common.parts")}</Text>
               </View>
             </View>
           </View>
 
-          {/* Période */}
-          <View className="flex-row" style={{ gap: 8, marginBottom: 12 }}>
+          {/* Periode */}
+          <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
             {(["mensuel", "annuel"] as PeriodeRevenu[]).map((p) => (
               <TouchableOpacity
                 key={p}
-                className="flex-1 py-2 items-center"
-                style={{ backgroundColor: periode === p ? "#00815d" : "#e5e7eb", borderRadius: 8 }}
+                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: periode === p ? colors.primary : colors.border, borderRadius: 8 }}
                 onPress={() => setPeriode(p)}
               >
-                <Text style={{ color: periode === p ? "#fff" : "#374151", fontWeight: "700", fontSize: 13 }}>
-                  {p === "mensuel" ? "Mensuel" : "Annuel"}
+                <Text style={{ color: periode === p ? "#fff" : colors.text, fontWeight: "700", fontSize: 13 }}>
+                  {p === "mensuel" ? t("simulateur.its.monthly") : t("simulateur.its.annual")}
                 </Text>
               </TouchableOpacity>
             ))}
           </View>
 
           {/* Salaire brut */}
-          <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginBottom: 6 }}>
-            Salaire brut {periode === "mensuel" ? "mensuel" : "annuel"}
+          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+            {periode === "mensuel" ? t("simulateur.its.grossSalaryMonthly") : t("simulateur.its.grossSalaryAnnual")}
           </Text>
-          <View className="flex-row items-center bg-white px-3" style={{ borderRadius: 8, borderWidth: 2, borderColor: "#00815d", height: 48 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 8, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
             <TextInput
-              className="flex-1 text-base font-bold text-text"
+              style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }}
               value={salaireBrut}
-              onChangeText={(t) => setSalaireBrut(formatInputNumber(t))}
+              onChangeText={(v) => setSalaireBrut(formatInputNumber(v))}
               keyboardType="numeric"
               placeholder="0"
-              placeholderTextColor="#9ca3af"
+              placeholderTextColor={colors.textMuted}
             />
-            <Text style={{ fontSize: 12, color: "#6b7280", fontWeight: "600" }}>FCFA</Text>
+            <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
           </View>
 
-          {/* Références */}
-          <Text style={{ fontSize: 10, color: "#9ca3af", marginTop: 12 }}>
-            Art. 40 (CNSS 4%), Art. 41 (Frais 20%), Art. 116 (Barème ITS 2026)
+          {/* References */}
+          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>
+            {t("simulateur.its.legalRef")}
           </Text>
         </ScrollView>
 
-        {/* Colonne droite 50% - Résultats */}
-        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: "#e5e7eb" }} contentContainerStyle={{ paddingBottom: 40 }}>
+        {/* Colonne droite 50% - Resultats */}
+        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
               {/* Section CALCUL MENSUEL */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>CALCUL MENSUEL</Text>
-              </View>
-              <TableRow label="SALAIRE BRUT (Mensuel)" value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
-              <TableRow label="C.N.S.S. (Mensuel) - 4%" value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg="#f9fafb" color="#b91c1c" />
-              <TableRow label="NET IMPOSABLE [Mensuel] (80%)" value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
+              <SectionHeader label={t("simulateur.its.monthlyCalc")} colors={colors} />
+              <TableRow label={t("simulateur.its.grossMonthly")} value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
+              <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color="#b91c1c" />
+              <TableRow label={t("simulateur.its.netTaxableMonthly")} value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
 
               {/* Section CALCUL ANNUEL */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>CALCUL ANNUEL</Text>
-              </View>
-              <TableRow label="SALAIRE BRUT (Annuel)" value={formatNumber(result.revenuBrutAnnuel)} />
-              <TableRow label="C.N.S.S. (Annuel)" value={`- ${formatNumber(result.retenueCnss)}`} bg="#f9fafb" color="#b91c1c" />
-              <TableRow label="SALAIRE NET (Annuel)" value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
-              <TableRow label="NET IMPOSABLE [Annuel] (80%)" value={formatNumber(result.revenuNetImposable)} bg="#f9fafb" bold />
+              <SectionHeader label={t("simulateur.its.annualCalc")} colors={colors} />
+              <TableRow label={t("simulateur.its.grossAnnual")} value={formatNumber(result.revenuBrutAnnuel)} />
+              <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color="#b91c1c" />
+              <TableRow label={t("simulateur.its.netAnnual")} value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
+              <TableRow label={t("simulateur.its.netTaxableAnnual")} value={formatNumber(result.revenuNetImposable)} bg={colors.background} bold />
 
               {/* Quotient familial */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                <View className="flex-row items-center justify-between">
+              <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
                   <View>
-                    <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>QUOTIENT FAMILIAL</Text>
-                    <Text style={{ fontSize: 10, color: "#6b7280" }}>Net imposable / {nombreParts} parts</Text>
+                    <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.its.familyQuotientCalc")}</Text>
+                    <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.its.netTaxableDivided")} {nombreParts} {t("common.parts")}</Text>
                   </View>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#374151" }}>{formatNumber(result.revenuParPart)}</Text>
+                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text }}>{formatNumber(result.revenuParPart)}</Text>
                 </View>
               </View>
 
-              {/* Section IMPÔT À PAYER */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>IMPÔT À PAYER</Text>
-              </View>
-              <TableRow label="ITS (Annuel)" value={formatNumber(result.itsAnnuel)} />
-              <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                <View className="flex-row items-center justify-between">
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>ITS (Mensuel)</Text>
+              {/* Section IMPOT A PAYER */}
+              <SectionHeader label={t("simulateur.its.taxToPay")} colors={colors} />
+              <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
+              <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>{t("simulateur.its.itsMonthly")}</Text>
                   <Text style={{ fontSize: 16, fontWeight: "800", color: "#b91c1c" }}>{formatNumber(result.itsMensuel)}</Text>
                 </View>
               </View>
 
-              {/* Répartition 35/65 */}
-              <TableRow label="Employé (35%)" value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg="#f9fafb" />
-              <TableRow label="Employeur (65%)" value={formatNumber(Math.round(result.itsMensuel * 0.65))} />
+              {/* Repartition 35/65 */}
+              <TableRow label={t("simulateur.its.employeeShare")} value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg={colors.background} />
+              <TableRow label={t("simulateur.its.employerShare")} value={formatNumber(Math.round(result.itsMensuel * 0.65))} />
 
               {/* Salaire net */}
-              <View style={{ backgroundColor: "#f0fdf4", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                <View className="flex-row items-center justify-between">
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#166534" }}>SALAIRE NET (Mensuel)</Text>
+              <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#166534" }}>{t("simulateur.its.netSalaryMonthly")}</Text>
                   <Text style={{ fontSize: 16, fontWeight: "800", color: "#166534" }}>{formatNumber(Math.round(result.salaireNetMensuel))}</Text>
                 </View>
               </View>
             </View>
           ) : (
             <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color="#d1d5db" />
-              <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 12, textAlign: "center" }}>
-                Saisissez un salaire brut pour voir les résultats
+              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
+              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
+                {t("simulateur.its.enterSalary")}
               </Text>
             </View>
           )}
         </ScrollView>
       </View>
+    </View>
+  );
+}
+
+function SectionHeader({ label, colors }: { label: string; colors: any }) {
+  return (
+    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
+      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
     </View>
   );
 }

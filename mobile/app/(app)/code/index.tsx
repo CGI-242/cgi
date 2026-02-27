@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView, ActivityIndicator,
 import { useState, useMemo } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { getSommaire, searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import TreeNode from "@/components/code/TreeNode";
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
 });
 
 export default function CodeCGI() {
+  const { t } = useTranslation();
   const sommaire = useMemo(() => getSommaire(), []);
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("");
@@ -60,13 +62,13 @@ export default function CodeCGI() {
         <TouchableOpacity onPress={() => router.push("/(app)")} className="mr-3" style={{ padding: 4 }}>
           <Ionicons name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
-        <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 18, marginRight: 16 }}>Code CGI</Text>
+        <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
         <View className="flex-1 bg-white/20 flex-row items-center px-3 py-2" style={styles.searchBar}>
           <Ionicons name="search" size={18} color="#fff" />
           <TextInput
             className="flex-1 ml-2 text-white text-sm border-0"
             style={styles.searchInput}
-            placeholder="Rechercher un article, mot-cle..."
+            placeholder={t("code.searchPlaceholder")}
             placeholderTextColor="rgba(255,255,255,0.6)"
             value={search}
             onChangeText={setSearch}
@@ -90,9 +92,9 @@ export default function CodeCGI() {
           <View className="py-2">
             <View className="px-3 py-2 mb-1">
               <Text className="text-xs font-bold text-primary uppercase tracking-wide">
-                Edition 2026
+                {t("code.edition")}
               </Text>
-              <Text className="text-xs text-muted">Code General des Impots</Text>
+              <Text className="text-xs text-muted">{t("code.fullTitle")}</Text>
             </View>
             <View style={styles.separator} />
             {sommaire.map((tome) => (

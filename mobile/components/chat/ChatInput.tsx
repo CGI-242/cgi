@@ -6,6 +6,7 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useSpeechRecognition } from "@/lib/hooks/useSpeechRecognition";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   value: string;
@@ -16,6 +17,7 @@ type Props = {
 
 export default function ChatInput({ value, onChangeText, onSend, disabled }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const { isListening, transcript, startListening, stopListening, isAvailable } =
     useSpeechRecognition();
 
@@ -54,7 +56,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
             maxHeight: 100,
             paddingVertical: 6,
           }}
-          placeholder="Posez votre question fiscale..."
+          placeholder={t("chat.placeholder")}
           placeholderTextColor={colors.textMuted}
           value={value}
           onChangeText={onChangeText}
@@ -73,7 +75,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
               alignItems: "center",
               justifyContent: "center",
             }}
-            accessibilityLabel={isListening ? "Arrêter l'écoute" : "Recherche vocale"}
+            accessibilityLabel={isListening ? t("chat.stopListening") : t("chat.voiceSearch")}
           >
             <Ionicons
               name={isListening ? "mic" : "mic-outline"}
@@ -93,7 +95,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
             alignItems: "center",
             justifyContent: "center",
           }}
-          accessibilityLabel="Envoyer"
+          accessibilityLabel={t("chat.send")}
         >
           <Ionicons name="send" size={16} color={colors.sidebarText} />
         </TouchableOpacity>
@@ -106,7 +108,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           marginTop: 4,
         }}
       >
-        CGI 242 peut faire des erreurs. Vérifiez les informations importantes.
+        {t("chat.disclaimer")}
       </Text>
     </View>
   );

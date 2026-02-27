@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform
 import { useState } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
@@ -10,6 +11,7 @@ const REDIRECT_DELAY_MS = 2_000;
 const FEEDBACK_DISPLAY_MS = 3_000;
 
 export default function ResetPassword() {
+  const { t } = useTranslation();
   const [code, setCode] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -24,15 +26,15 @@ export default function ResetPassword() {
 
   const handleReset = async () => {
     if (code.length !== 6) {
-      setError("Le code doit contenir 6 chiffres");
+      setError(t("auth.codeDigits"));
       return;
     }
     if (password.length < 12) {
-      setError("Le mot de passe doit contenir au moins 12 caractères");
+      setError(t("auth.passwordMinLength"));
       return;
     }
     if (password !== confirmPassword) {
-      setError("Les mots de passe ne correspondent pas");
+      setError(t("auth.passwordMismatch"));
       return;
     }
     setError("");
@@ -40,12 +42,12 @@ export default function ResetPassword() {
 
     try {
       await authApi.resetPassword({ email, code, newPassword: password });
-      setSuccess("Mot de passe modifié avec succès");
+      setSuccess(t("auth.passwordChanged"));
       setTimeout(() => {
         router.replace("/(auth)");
       }, REDIRECT_DELAY_MS);
     } catch (err) {
-      setError((axios.isAxiosError(err) && err.response?.data?.error) || "Erreur lors de la réinitialisation");
+      setError((axios.isAxiosError(err) && err.response?.data?.error) || t("auth.resetError"));
     } finally {
       setLoading(false);
     }
@@ -55,10 +57,10 @@ export default function ResetPassword() {
     try {
       const data = await authApi.forgotPassword({ email });
       if (__DEV__ && data.devCode) setDevCode(data.devCode);
-      setSuccess("Code renvoyé avec succès");
+      setSuccess(t("auth.resendSuccess"));
       setTimeout(() => setSuccess(""), FEEDBACK_DISPLAY_MS);
     } catch {
-      setError("Erreur lors du renvoi");
+      setError(t("auth.resendError"));
     }
   };
 
@@ -78,16 +80,16 @@ export default function ResetPassword() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Réinitialiser
+            {t("auth.resetPassword")}
           </Text>
           <Text className="text-sm text-muted mb-6">
-            Entrez le code reçu et votre nouveau mot de passe
+            {t("auth.enterCodeAndPassword")}
           </Text>
 
           {/* Dev code - visible uniquement en développement */}
           {__DEV__ && devCode ? (
             <View className="border border-dashed border-success bg-green-50 p-4 mb-4 items-center">
-              <Text className="text-xs text-muted mb-1">Code (dev)</Text>
+              <Text className="text-xs text-muted mb-1">{t("auth.codeDev")}</Text>
               <Text className="text-3xl font-bold text-success tracking-widest">
                 {devCode}
               </Text>
@@ -108,7 +110,7 @@ export default function ResetPassword() {
 
           {/* Code */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Code à 6 chiffres
+            {t("auth.codePlaceholder")}
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-center text-2xl tracking-widest text-text mb-4 border-0"
@@ -125,12 +127,12 @@ export default function ResetPassword() {
 
           {/* Nouveau mot de passe */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Nouveau mot de passe <Text className="text-danger">*</Text>
+            {t("auth.newPassword")} <Text className="text-danger">*</Text>
           </Text>
           <View className="relative mb-4">
             <TextInput
               className="w-full bg-input  p-3 pr-12 text-base text-text border-0"
-              placeholder="Min. 12 caractères"
+              placeholder={t("auth.passwordPlaceholder")}
               placeholderTextColor="#888"
               value={password}
               onChangeText={(v) => { setPassword(v); setError(""); }}
@@ -150,11 +152,11 @@ export default function ResetPassword() {
 
           {/* Confirmer */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Confirmer <Text className="text-danger">*</Text>
+            {t("auth.confirmPassword")} <Text className="text-danger">*</Text>
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="Confirmer le mot de passe"
+            placeholder={t("auth.confirmPassword")}
             placeholderTextColor="#888"
             value={confirmPassword}
             onChangeText={(v) => { setConfirmPassword(v); setError(""); }}
@@ -173,7 +175,7 @@ export default function ResetPassword() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Réinitialiser
+                {t("auth.resetPassword")}
               </Text>
             )}
           </TouchableOpacity>
@@ -182,13 +184,13 @@ export default function ResetPassword() {
           <View className="flex-row justify-center gap-4 mt-4">
             <TouchableOpacity onPress={handleResend}>
               <Text className="text-sm text-primary underline">
-                Renvoyer le code
+                {t("auth.resendCode")}
               </Text>
             </TouchableOpacity>
             <Text className="text-muted">·</Text>
             <TouchableOpacity onPress={() => router.replace("/(auth)")}>
               <Text className="text-sm text-primary underline">
-                Retour à la connexion
+                {t("auth.backToLogin")}
               </Text>
             </TouchableOpacity>
           </View>

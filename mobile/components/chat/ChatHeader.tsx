@@ -5,6 +5,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   conversationId: string | null;
@@ -18,6 +19,7 @@ export default function ChatHeader({
   onNewConversation,
 }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <View
@@ -36,14 +38,14 @@ export default function ChatHeader({
       <TouchableOpacity
         onPress={() => router.back()}
         style={{ marginRight: 8 }}
-        accessibilityLabel="Retour"
+        accessibilityLabel={t("common.back")}
       >
         <Ionicons name="arrow-back" size={22} color={colors.sidebarText} />
       </TouchableOpacity>
       <TouchableOpacity
         onPress={onToggleHistory}
         style={{ marginRight: 12 }}
-        accessibilityLabel="Historique"
+        accessibilityLabel={t("chat.history")}
       >
         <Ionicons name="time-outline" size={22} color={colors.sidebarText} />
       </TouchableOpacity>
@@ -54,12 +56,12 @@ export default function ChatHeader({
         style={{ marginRight: 8 }}
       />
       <Text style={{ color: colors.accent, fontSize: 17, fontWeight: "700", flex: 1 }}>
-        Chat IA fiscal
+        {t("chat.title")}
       </Text>
       {conversationId && (
         <TouchableOpacity
           onPress={onNewConversation}
-          accessibilityLabel="Nouvelle conversation"
+          accessibilityLabel={t("chat.newConversation")}
         >
           <Ionicons name="add-circle-outline" size={22} color={colors.sidebarText} />
         </TouchableOpacity>

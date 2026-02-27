@@ -5,6 +5,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { SearchHistoryItem } from "@/lib/api/search-history";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   recentSearches: SearchHistoryItem[];
@@ -13,21 +14,22 @@ type Props = {
 
 export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <View style={{ alignItems: "center", paddingTop: 60 }}>
       <Ionicons name="chatbubbles-outline" size={48} color={colors.disabled} />
       <Text style={{ color: colors.textMuted, fontSize: 16, marginTop: 12, textAlign: "center" }}>
-        Posez votre question fiscale
+        {t("chat.emptyState")}
       </Text>
       <Text style={{ color: colors.disabled, fontSize: 13, marginTop: 4, textAlign: "center" }}>
-        ITS, IS, TVA, patente, articles du CGI 2026...
+        {t("chat.emptyStateDesc")}
       </Text>
 
       {recentSearches.length > 0 && (
         <View style={{ width: "100%", marginTop: 24, paddingHorizontal: 8 }}>
           <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "600", marginBottom: 8 }}>
-            Vos recherches récentes
+            {t("chat.recentSearches")}
           </Text>
           {recentSearches.map((item) => (
             <TouchableOpacity

@@ -7,26 +7,29 @@ import {
   ScrollView,
   Switch,
 } from "react-native";
-import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { calculerPatente, type PatenteInput } from "@/lib/services/patente.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
-
-const REGIMES: { value: PatenteInput["regime"]; label: string }[] = [
-  { value: "reel", label: "Réel" },
-  { value: "forfait", label: "Forfaitaire" },
-  { value: "tpe", label: "TPE" },
-  { value: "pe", label: "PE" },
-];
+import { useTranslation } from "react-i18next";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 export default function PatenteScreen() {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
   const [chiffreAffaires, setChiffreAffaires] = useState("");
   const [regime, setRegime] = useState<PatenteInput["regime"]>("reel");
   const [isStandBy, setIsStandBy] = useState(false);
   const [dernierePatente, setDernierePatente] = useState("");
   const [isNouvelle, setIsNouvelle] = useState(false);
   const [nombreEntites, setNombreEntites] = useState(1);
+
+  const REGIMES: { value: PatenteInput["regime"]; label: string }[] = [
+    { value: "reel", label: t("simulateur.patente.real") },
+    { value: "forfait", label: t("simulateur.patente.flat") },
+    { value: "tpe", label: t("simulateur.patente.tpe") },
+    { value: "pe", label: t("simulateur.patente.pe") },
+  ];
 
   const result = useMemo(() => {
     return calculerPatente({
@@ -40,75 +43,58 @@ export default function PatenteScreen() {
   }, [chiffreAffaires, regime, isStandBy, dernierePatente, isNouvelle, nombreEntites]);
 
   return (
-    <View className="flex-1 bg-background">
-      {/* Header */}
-      <View style={{ backgroundColor: "#1a1a1a", paddingHorizontal: 24, paddingTop: 48, paddingBottom: 24 }}>
-        <TouchableOpacity
-          onPress={() => router.push("/(app)/simulateur")}
-          className="flex-row items-center mb-3"
-        >
-          <Ionicons name="arrow-back" size={24} color="#fff" />
-          <Text className="text-white ml-2 text-base">Simulateurs</Text>
-        </TouchableOpacity>
-        <Text style={{ fontSize: 24, fontWeight: "900", color: "#00c17c" }}>Simulateur Patente</Text>
-        <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>
-          Contribution des Patentes - Art. 306 CGI 2026
-        </Text>
-      </View>
-
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Layout 50/50 */}
-      <View className="flex-1 flex-row">
+      <View style={{ flex: 1, flexDirection: "row" }}>
         {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info */}
-          <View className="p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: "#374151" }}>
-              Patente calculée sur le CA HT (N-1). Barème progressif Art. 306,
-              réduit de 50%. Échéance : 10-20 avril.
+          <View style={{ padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+            <Text style={{ fontSize: 11, color: colors.text }}>
+              {t("simulateur.patente.description")}
             </Text>
           </View>
 
           {/* Regime fiscal */}
-          <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginBottom: 6 }}>Régime fiscal</Text>
-          <View className="flex-row" style={{ gap: 6, marginBottom: 12 }}>
+          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>{t("simulateur.patente.taxRegime")}</Text>
+          <View style={{ flexDirection: "row", gap: 6, marginBottom: 12 }}>
             {REGIMES.map((r) => (
               <TouchableOpacity
                 key={r.value}
-                className="flex-1 py-2 items-center"
-                style={{ backgroundColor: regime === r.value ? "#00815d" : "#e5e7eb", borderRadius: 6 }}
+                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: regime === r.value ? colors.primary : colors.border, borderRadius: 6 }}
                 onPress={() => setRegime(r.value)}
               >
-                <Text style={{ color: regime === r.value ? "#fff" : "#374151", fontSize: 11, fontWeight: "600" }}>{r.label}</Text>
+                <Text style={{ color: regime === r.value ? "#fff" : colors.text, fontSize: 11, fontWeight: "600" }}>{r.label}</Text>
               </TouchableOpacity>
             ))}
           </View>
 
           {/* Stand-by */}
-          <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 8 }}>
-            <View className="flex-1">
-              <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>Entreprise en stand-by</Text>
-              <Text style={{ fontSize: 10, color: "#6b7280" }}>25% de la dernière patente (Art. 278)</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 8 }}>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.patente.standby")}</Text>
+              <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.patente.standbyDesc")}</Text>
             </View>
             <Switch
               value={isStandBy}
               onValueChange={setIsStandBy}
-              trackColor={{ false: "#d1d5db", true: "#00815d80" }}
-              thumbColor={isStandBy ? "#00815d" : "#9ca3af"}
+              trackColor={{ false: colors.disabled, true: `${colors.primary}80` }}
+              thumbColor={isStandBy ? colors.primary : colors.textMuted}
             />
           </View>
           {isStandBy && (
             <View style={{ marginBottom: 8 }}>
-              <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 3 }}>Dernière patente payée</Text>
-              <View className="flex-row items-center bg-white px-3" style={{ borderRadius: 6, height: 40, borderWidth: 1, borderColor: "#e5e7eb" }}>
+              <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{t("simulateur.patente.lastPatente")}</Text>
+              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 6, height: 40, borderWidth: 1, borderColor: colors.border }}>
                 <TextInput
-                  className="flex-1 text-sm font-semibold text-text"
+                  style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}
                   value={dernierePatente}
-                  onChangeText={(t) => setDernierePatente(formatInputNumber(t))}
+                  onChangeText={(v) => setDernierePatente(formatInputNumber(v))}
                   keyboardType="numeric"
                   placeholder="0"
-                  placeholderTextColor="#9ca3af"
+                  placeholderTextColor={colors.textMuted}
                 />
-                <Text style={{ fontSize: 10, color: "#9ca3af" }}>FCFA</Text>
+                <Text style={{ fontSize: 10, color: colors.textMuted }}>FCFA</Text>
               </View>
             </View>
           )}
@@ -116,121 +102,125 @@ export default function PatenteScreen() {
           {/* Chiffre d'affaires */}
           {!isStandBy && (
             <View style={{ marginBottom: 12 }}>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginBottom: 6 }}>Chiffre d'affaires HT (N-1)</Text>
-              <View className="flex-row items-center bg-white px-3" style={{ borderRadius: 8, borderWidth: 2, borderColor: "#00815d", height: 48 }}>
+              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>{t("simulateur.patente.turnover")}</Text>
+              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderRadius: 8, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
                 <TextInput
-                  className="flex-1 text-base font-bold text-text"
+                  style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }}
                   value={chiffreAffaires}
-                  onChangeText={(t) => setChiffreAffaires(formatInputNumber(t))}
+                  onChangeText={(v) => setChiffreAffaires(formatInputNumber(v))}
                   keyboardType="numeric"
                   placeholder="0"
-                  placeholderTextColor="#9ca3af"
+                  placeholderTextColor={colors.textMuted}
                 />
-                <Text style={{ fontSize: 12, color: "#6b7280", fontWeight: "600" }}>FCFA</Text>
+                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
               </View>
             </View>
           )}
 
           {/* Options */}
-          <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 8 }}>
-            <Text style={{ fontSize: 12, color: "#374151", flex: 1 }}>Entreprise nouvelle</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 8 }}>
+            <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.newCompany")}</Text>
             <Switch
               value={isNouvelle}
               onValueChange={setIsNouvelle}
-              trackColor={{ false: "#d1d5db", true: "#00815d80" }}
-              thumbColor={isNouvelle ? "#00815d" : "#9ca3af"}
+              trackColor={{ false: colors.disabled, true: `${colors.primary}80` }}
+              thumbColor={isNouvelle ? colors.primary : colors.textMuted}
             />
           </View>
-          <View className="flex-row items-center p-3 bg-gray-50" style={{ borderRadius: 8, marginBottom: 12 }}>
-            <Text style={{ fontSize: 12, color: "#374151", flex: 1 }}>Entités fiscales (Art. 281)</Text>
-            <View className="flex-row items-center">
-              <TouchableOpacity className="w-7 h-7 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
-                <Text style={{ fontSize: 15, fontWeight: "700" }}>-</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, borderRadius: 8, marginBottom: 12 }}>
+            <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.fiscalEntities")}</Text>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
+                <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>-</Text>
               </TouchableOpacity>
-              <Text style={{ minWidth: 24, textAlign: "center", fontSize: 14, fontWeight: "700", color: "#374151" }}>{nombreEntites}</Text>
-              <TouchableOpacity className="w-7 h-7 items-center justify-center bg-gray-200" style={{ borderRadius: 4 }} onPress={() => setNombreEntites(nombreEntites + 1)}>
-                <Text style={{ fontSize: 15, fontWeight: "700" }}>+</Text>
+              <Text style={{ minWidth: 24, textAlign: "center", fontSize: 14, fontWeight: "700", color: colors.text }}>{nombreEntites}</Text>
+              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border, borderRadius: 4 }} onPress={() => setNombreEntites(nombreEntites + 1)}>
+                <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>+</Text>
               </TouchableOpacity>
             </View>
           </View>
 
-          <Text style={{ fontSize: 10, color: "#9ca3af" }}>
-            Art. 278 (Patente), Art. 306 (Barème), Art. 281 (Entités)
+          <Text style={{ fontSize: 10, color: colors.textMuted }}>
+            {t("simulateur.patente.legalRef")}
           </Text>
         </ScrollView>
 
-        {/* Colonne droite - Résultats */}
-        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: "#e5e7eb" }} contentContainerStyle={{ paddingBottom: 40 }}>
+        {/* Colonne droite - Resultats */}
+        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result && result.patenteNette > 0 ? (
             <View>
               {/* Tranches */}
               {result.tranches.length > 0 && (
                 <>
-                  <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>DÉTAIL PAR TRANCHES</Text>
-                  </View>
-                  {result.tranches.map((t, i) => (
+                  <SectionHeader label={t("simulateur.patente.trancheDetail")} colors={colors} />
+                  {result.tranches.map((tr, i) => (
                     <View
-                      key={t.tranche}
-                      className="flex-row items-center justify-between"
-                      style={{ backgroundColor: i % 2 === 0 ? "#fff" : "#f9fafb", paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}
+                      key={tr.tranche}
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        backgroundColor: i % 2 === 0 ? colors.card : colors.background,
+                        paddingHorizontal: 14,
+                        paddingVertical: 8,
+                        borderTopWidth: 1,
+                        borderTopColor: colors.border,
+                      }}
                     >
-                      <Text style={{ fontSize: 11, color: "#6b7280", flex: 1 }}>{t.tranche}</Text>
-                      <Text style={{ fontSize: 10, fontWeight: "600", color: "#00815d", marginHorizontal: 6 }}>{t.taux.toFixed(3)}%</Text>
-                      <Text style={{ fontSize: 11, fontWeight: "600", color: "#374151", width: 80, textAlign: "right" }}>{formatNumber(Math.round(t.montant))}</Text>
+                      <Text style={{ fontSize: 11, color: colors.textSecondary, flex: 1 }}>{tr.tranche}</Text>
+                      <Text style={{ fontSize: 10, fontWeight: "600", color: colors.primary, marginHorizontal: 6 }}>{tr.taux.toFixed(3)}%</Text>
+                      <Text style={{ fontSize: 11, fontWeight: "600", color: colors.text, width: 80, textAlign: "right" }}>{formatNumber(Math.round(tr.montant))}</Text>
                     </View>
                   ))}
-                  <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                    <View className="flex-row items-center justify-between">
-                      <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151" }}>PATENTE BRUTE</Text>
-                      <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>{formatNumber(Math.round(result.patenteBrute))}</Text>
+                  <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+                    <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                      <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.patente.grossPatente")}</Text>
+                      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{formatNumber(Math.round(result.patenteBrute))}</Text>
                     </View>
                   </View>
                 </>
               )}
 
-              {/* Réductions */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 8 }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#374151" }}>RÉDUCTIONS</Text>
-              </View>
+              {/* Reductions */}
+              <SectionHeader label={t("simulateur.patente.reductions")} colors={colors} />
               {result.reductionStandBy > 0 && (
-                <TableRow label="Réduction stand-by (75%)" value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color="#b91c1c" />
+                <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color="#b91c1c" />
               )}
-              <TableRow label="Réduction 50% (Art. 306)" value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg="#f9fafb" color="#b91c1c" />
+              <TableRow label={t("simulateur.patente.halfReduction")} value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg={colors.background} color="#b91c1c" />
 
               {/* Patente nette */}
-              <View style={{ backgroundColor: "#00815d10", paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                <View className="flex-row items-center justify-between">
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#00815d" }}>PATENTE NETTE</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#00815d" }}>{formatNumber(result.patenteNette)}</Text>
+              <View style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                  <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary }}>{t("simulateur.patente.netPatente")}</Text>
+                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.primary }}>{formatNumber(result.patenteNette)}</Text>
                 </View>
               </View>
 
-              {/* Par entité */}
+              {/* Par entite */}
               {result.nombreEntites > 1 && (
-                <TableRow label={`Par entité (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg="#f9fafb" bold />
+                <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg={colors.background} bold />
               )}
 
-              {/* Échéance */}
-              <View style={{ backgroundColor: "#f3f4f6", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
-                <View className="flex-row items-center">
-                  <Ionicons name="calendar-outline" size={14} color="#374151" />
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#374151", marginLeft: 6 }}>Échéance : {result.dateEcheance}</Text>
+              {/* Echeance */}
+              <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ flexDirection: "row", alignItems: "center" }}>
+                  <Ionicons name="calendar-outline" size={14} color={colors.text} />
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginLeft: 6 }}>{t("common.deadline")} : {result.dateEcheance}</Text>
                 </View>
               </View>
 
-              {/* Références */}
-              <View style={{ backgroundColor: "#f9fafb", paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: "#e5e7eb" }}>
+              {/* References */}
+              <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: colors.border }}>
                 {result.references.map((ref) => (
-                  <Text key={ref} style={{ fontSize: 10, color: "#9ca3af" }}>{ref}</Text>
+                  <Text key={ref} style={{ fontSize: 10, color: colors.textMuted }}>{ref}</Text>
                 ))}
               </View>
             </View>
           ) : (
             <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color="#d1d5db" />
-              <Text style={{ fontSize: 13, color: "#9ca3af", marginTop: 12, textAlign: "center" }}>
-                Saisissez les données pour voir les résultats
+              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
+              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
+                {t("simulateur.enterDataToSee")}
               </Text>
             </View>
           )}
@@ -240,3 +230,10 @@ export default function PatenteScreen() {
   );
 }
 
+function SectionHeader({ label, colors }: { label: string; colors: any }) {
+  return (
+    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
+      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
+    </View>
+  );
+}

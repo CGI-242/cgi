@@ -2,11 +2,13 @@ import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform
 import { useState } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function Register() {
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     entrepriseNom: "",
     nom: "",
@@ -33,15 +35,15 @@ export default function Register() {
 
   const handleRegister = async () => {
     if (!form.entrepriseNom.trim() || !form.nom.trim() || !form.prenom.trim() || !form.email.trim() || !form.password) {
-      setError("Veuillez remplir tous les champs obligatoires");
+      setError(t("auth.requiredFields"));
       return;
     }
     if (form.password.length < 12) {
-      setError("Le mot de passe doit contenir au moins 12 caractères");
+      setError(t("auth.passwordMinLength"));
       return;
     }
     if (form.password !== form.confirmPassword) {
-      setError("Les mots de passe ne correspondent pas");
+      setError(t("auth.passwordMismatch"));
       return;
     }
     setError("");
@@ -65,7 +67,7 @@ export default function Register() {
       setOtpSource("register");
       router.push("/(auth)/verify-otp");
     } catch (err) {
-      setError((axios.isAxiosError(err) && err.response?.data?.error) || "Erreur lors de l'inscription");
+      setError((axios.isAxiosError(err) && err.response?.data?.error) || t("auth.registerError"));
     } finally {
       setLoading(false);
     }
@@ -87,10 +89,10 @@ export default function Register() {
           </View>
 
           <Text className="text-2xl font-bold text-text mb-1">
-            Créer une entreprise
+            {t("auth.createCompany")}
           </Text>
           <Text className="text-sm text-muted mb-6">
-            Vous serez l'administrateur de cette entreprise
+            {t("auth.companyAdmin")}
           </Text>
 
           {/* Erreur */}
@@ -102,11 +104,11 @@ export default function Register() {
 
           {/* Nom du cabinet */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Nom de l'entreprise <Text className="text-danger">*</Text>
+            {t("auth.company")} <Text className="text-danger">*</Text>
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="Ex: Entreprise Fiscale Brazzaville"
+            placeholder={t("auth.companyPlaceholder")}
             placeholderTextColor="#888"
             value={form.entrepriseNom}
             onChangeText={(v) => updateField("entrepriseNom", v)}
@@ -116,11 +118,11 @@ export default function Register() {
           <View className="flex-row gap-4 mb-4">
             <View className="flex-1">
               <Text className="text-sm font-semibold text-text mb-2">
-                Nom <Text className="text-danger">*</Text>
+                {t("auth.lastName")} <Text className="text-danger">*</Text>
               </Text>
               <TextInput
                 className="w-full bg-input  p-3 text-base text-text border-0"
-                placeholder="Nom"
+                placeholder={t("auth.lastName")}
                 placeholderTextColor="#888"
                 value={form.nom}
                 onChangeText={(v) => updateField("nom", v)}
@@ -128,11 +130,11 @@ export default function Register() {
             </View>
             <View className="flex-1">
               <Text className="text-sm font-semibold text-text mb-2">
-                Prénom <Text className="text-danger">*</Text>
+                {t("auth.firstName")} <Text className="text-danger">*</Text>
               </Text>
               <TextInput
                 className="w-full bg-input  p-3 text-base text-text border-0"
-                placeholder="Prénom"
+                placeholder={t("auth.firstName")}
                 placeholderTextColor="#888"
                 value={form.prenom}
                 onChangeText={(v) => updateField("prenom", v)}
@@ -146,7 +148,7 @@ export default function Register() {
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="votre@email.com"
+            placeholder={t("auth.emailPlaceholder")}
             placeholderTextColor="#888"
             value={form.email}
             onChangeText={(v) => updateField("email", v)}
@@ -156,11 +158,11 @@ export default function Register() {
 
           {/* Téléphone */}
           <Text className="text-sm font-semibold text-text mb-2">
-            Téléphone
+            {t("auth.phone")}
           </Text>
           <TextInput
             className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
-            placeholder="+242 06 XXX XX XX"
+            placeholder={t("auth.phonePlaceholder")}
             placeholderTextColor="#888"
             value={form.telephone}
             onChangeText={(v) => updateField("telephone", v)}
@@ -171,12 +173,12 @@ export default function Register() {
           <View className="flex-row gap-4 mb-4">
             <View className="flex-1">
               <Text className="text-sm font-semibold text-text mb-2">
-                Mot de passe <Text className="text-danger">*</Text>
+                {t("auth.password")} <Text className="text-danger">*</Text>
               </Text>
               <View className="relative">
                 <TextInput
                   className="w-full bg-input  p-3 pr-12 text-base text-text border-0"
-                  placeholder="Min. 12 caractères"
+                  placeholder={t("auth.passwordPlaceholder")}
                   placeholderTextColor="#888"
                   value={form.password}
                   onChangeText={(v) => updateField("password", v)}
@@ -196,11 +198,11 @@ export default function Register() {
             </View>
             <View className="flex-1">
               <Text className="text-sm font-semibold text-text mb-2">
-                Confirmer <Text className="text-danger">*</Text>
+                {t("common.confirm")} <Text className="text-danger">*</Text>
               </Text>
               <TextInput
                 className="w-full bg-input  p-3 text-base text-text border-0"
-                placeholder="Confirmer"
+                placeholder={t("common.confirm")}
                 placeholderTextColor="#888"
                 value={form.confirmPassword}
                 onChangeText={(v) => updateField("confirmPassword", v)}
@@ -221,17 +223,17 @@ export default function Register() {
               <ActivityIndicator color="#fff" />
             ) : (
               <Text className="text-white font-semibold text-base">
-                Créer mon entreprise
+                {t("auth.createAccount")}
               </Text>
             )}
           </TouchableOpacity>
 
           {/* Lien connexion */}
           <View className="flex-row justify-center mt-6">
-            <Text className="text-sm text-muted">Déjà un compte ? </Text>
+            <Text className="text-sm text-muted">{t("auth.alreadyHaveAccount")} </Text>
             <TouchableOpacity onPress={() => router.back()}>
               <Text className="text-sm text-primary font-semibold underline">
-                Se connecter
+                {t("auth.signIn")}
               </Text>
             </TouchableOpacity>
           </View>
