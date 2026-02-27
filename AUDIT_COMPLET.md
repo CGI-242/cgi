@@ -470,16 +470,16 @@ Tous ces écrans font des appels API via l'instance axios au montage. ~~Un token
 
 | Formulaire | Email validé | Password validé | Champs requis | Loading state | Anti double-clic |
 |-----------|-------------|----------------|---------------|--------------|-----------------|
-| Login email | ✅ CORRIGÉ (H11) | — | ✅ | ❌ Absent | ❌ Absent |
-| Password | — | ❌ Aucune validation | ✅ | ✅ | ✅ |
-| Register | ✅ CORRIGÉ (H10) | ⚠️ Longueur seule | ✅ | ✅ | ✅ |
-| Forgot password | ❌ Absent | — | ✅ | ✅ | ✅ |
-| Reset password | — | ⚠️ Longueur seule | ✅ | ✅ | ✅ |
+| Login email | ✅ CORRIGÉ (H11) | — | ✅ | ✅ CORRIGÉ (B13) | ✅ CORRIGÉ (B13) |
+| Password | — | N/A (envoyé au serveur) | ✅ | ✅ | ✅ |
+| Register | ✅ CORRIGÉ (H10) + check API (B3) | ✅ CORRIGÉ (M8) — 12 chars, maj, min, chiffre | ✅ | ✅ | ✅ |
+| Forgot password | ✅ CORRIGÉ (M10) | — | ✅ | ✅ | ✅ |
+| Reset password | — | ✅ CORRIGÉ (M8) — 12 chars, maj, min, chiffre | ✅ | ✅ | ✅ |
 | Verify OTP | — | — | ✅ | ✅ | ✅ |
 | MFA verify | — | — | ✅ | ✅ | ✅ |
 | Profil | — | — | ✅ CORRIGÉ (H12) | ✅ | ✅ |
 | Chat input | — | — | ✅ + maxLength (H13) | ✅ | ✅ |
-| Organisation invite | ❌ Absent | — | ✅ | ✅ | ✅ |
+| Organisation invite | ✅ CORRIGÉ (M10) | — | ✅ | ✅ | ✅ |
 
 ### 6.11 Navigation & Routes
 
