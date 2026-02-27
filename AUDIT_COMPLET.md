@@ -387,7 +387,7 @@
 | Pas de `origin: "*"` | ✅ OK |
 | Whitelist dynamique via `CORS_ORIGIN` | ✅ OK |
 | `credentials: true` avec origins spécifiques | ✅ OK |
-| Requêtes sans Origin autorisées (mobile) | ⚠️ Nécessaire mais contourne CORS |
+| Requêtes sans Origin autorisées (mobile) | ✅ OK — Comportement normal : les clients natifs n'envoient pas `Origin`, aucun en-tête CORS n'est renvoyé (M12) |
 
 ### 6.5 Permissions & Autorisation
 
