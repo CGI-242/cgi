@@ -3,9 +3,11 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 export default function LogoutScreen() {
   const { t } = useTranslation();
+  const { colors } = useTheme();
   const clearLoggedOut = useAuthStore((s) => s.clearLoggedOut);
 
   const handleReconnect = () => {
@@ -14,35 +16,35 @@ export default function LogoutScreen() {
   };
 
   return (
-    <View className="flex-1 bg-background justify-center items-center px-6">
-      <View className="w-full max-w-[420px] bg-card p-8 items-center">
+    <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
+      <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, alignItems: "center", borderRadius: 12 }}>
         <View
           style={{
             width: 64,
             height: 64,
             borderRadius: 32,
-            backgroundColor: "#00c17c",
+            backgroundColor: colors.success,
             alignItems: "center",
             justifyContent: "center",
             marginBottom: 20,
           }}
         >
-          <Ionicons name="checkmark" size={32} color="#fff" />
+          <Ionicons name="checkmark" size={32} color={colors.sidebarText} />
         </View>
 
-        <Text className="text-2xl font-bold text-text mb-2">
+        <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 8 }}>
           {t("auth.logoutSuccess")}
         </Text>
-        <Text className="text-sm text-muted text-center mb-8">
+        <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", marginBottom: 32 }}>
           {t("auth.logoutMessage")}
         </Text>
 
         <TouchableOpacity
-          className="w-full bg-primary p-4 items-center"
+          style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", borderRadius: 8 }}
           onPress={handleReconnect}
           activeOpacity={0.8}
         >
-          <Text className="text-white font-semibold text-base">
+          <Text style={{ color: colors.sidebarText, fontWeight: "600", fontSize: 16 }}>
             {t("auth.reconnect")}
           </Text>
         </TouchableOpacity>

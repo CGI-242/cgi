@@ -99,8 +99,8 @@ export default function ProfilScreen() {
       }
 
       setMessage({ type: "success", text: t("profil.updateSuccess") });
-    } catch (err: any) {
-      const errorMsg = err?.response?.data?.error || t("profil.updateError");
+    } catch (err: unknown) {
+      const errorMsg = (err instanceof Error && "response" in err ? (err as any).response?.data?.error : null) || t("profil.updateError");
       setMessage({ type: "error", text: errorMsg });
     } finally {
       setSaving(false);

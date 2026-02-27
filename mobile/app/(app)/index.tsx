@@ -53,7 +53,7 @@ export default function Dashboard() {
   const user = useAuthStore((s) => s.user);
   const { colors } = useTheme();
 
-  const ECHEANCES = [
+  const ECHEANCES = useMemo(() => [
     { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },
     { date: "15 juin", label: t("dashboard.deadlines.minPerceptionT2"), icon: "business-outline" as const },
     { date: "15 sept.", label: t("dashboard.deadlines.minPerceptionT3"), icon: "business-outline" as const },
@@ -65,9 +65,9 @@ export default function Dashboard() {
     { date: "15 mai", label: t("dashboard.deadlines.irf1"), icon: "home-outline" as const },
     { date: "20 août", label: t("dashboard.deadlines.irf2"), icon: "home-outline" as const },
     { date: "15 nov.", label: t("dashboard.deadlines.irf3"), icon: "home-outline" as const },
-  ];
+  ], [t]);
 
-  const QUICK_ACTIONS = [
+  const QUICK_ACTIONS = useMemo(() => [
     {
       label: t("dashboard.actions.consultCgi"),
       desc: t("dashboard.actions.consultCgiDesc"),
@@ -92,9 +92,9 @@ export default function Dashboard() {
       color: "#0284c7",
       route: "/(app)/chat",
     },
-  ];
+  ], [t]);
 
-  const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), [t]);
+  const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), [ECHEANCES]);
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>

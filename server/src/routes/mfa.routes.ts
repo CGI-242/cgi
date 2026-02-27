@@ -3,6 +3,8 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { requireAuth, AuthRequest, isWebClient, setAuthCookies } from '../middleware/auth';
 import { sensitiveLimiter, authLimiter } from '../middleware/rateLimit.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { enableMfaBody, disableMfaBody, verifyMfaBody } from '../schemas/mfa.schema';
 import { MFAService } from '../services/mfa.service';
 import { MFABackupService } from '../services/mfa.backup.service';
 import { AuditService } from '../services/audit.service';
@@ -96,13 +98,9 @@ router.post('/setup', requireAuth, async (req: AuthRequest, res: Response) => {
  *         description: Non authentifié
  */
 // POST /api/mfa/enable
-router.post('/enable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
+router.post('/enable', requireAuth, sensitiveLimiter, validate({ body: enableMfaBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { code } = req.body;
-    if (!code) {
-      res.status(400).json({ error: 'Code TOTP requis' });
-      return;
-    }
 
     const result = await MFAService.enable(req.userId!, code);
 
@@ -155,13 +153,9 @@ router.post('/enable', requireAuth, sensitiveLimiter, async (req: AuthRequest, r
  *         description: Non authentifié ou mot de passe incorrect
  */
 // POST /api/mfa/disable
-router.post('/disable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
+router.post('/disable', requireAuth, sensitiveLimiter, validate({ body: disableMfaBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { password } = req.body;
-    if (!password) {
-      res.status(400).json({ error: 'Mot de passe requis' });
-      return;
-    }
 
     const user = await prisma.user.findUnique({
       where: { id: req.userId! },
@@ -228,13 +222,9 @@ router.post('/disable', requireAuth, sensitiveLimiter, async (req: AuthRequest, 
  *         description: Erreur serveur
  */
 // POST /api/mfa/verify (pendant le login, public avec authLimiter)
-router.post('/verify', authLimiter, async (req: AuthRequest, res: Response) => {
+router.post('/verify', authLimiter, validate({ body: verifyMfaBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { mfaToken, code } = req.body;
-    if (!mfaToken || !code) {
-      res.status(400).json({ error: 'mfaToken et code requis' });
-      return;
-    }
 
     // Décoder le mfaToken temporaire
     let payload: { userId: string; email: string; mfa: boolean };

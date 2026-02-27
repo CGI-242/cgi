@@ -9,8 +9,8 @@ import TreeNode from "@/components/code/TreeNode";
 import ContentPanel from "@/components/code/ContentPanel";
 
 const styles = StyleSheet.create({
-  sommaire: { borderRightWidth: 1, borderRightColor: "#e0e0e0" },
-  separator: { height: 1, backgroundColor: "#e0e0e0", marginHorizontal: 12, marginBottom: 4 },
+  sommaire: { borderRightWidth: 1 },
+  separator: { height: 1, marginHorizontal: 12, marginBottom: 4 },
 });
 
 export default function CodeCGI() {
@@ -90,7 +90,7 @@ export default function CodeCGI() {
               </Text>
               <Text style={{ fontSize: 11, color: colors.textMuted }}>{t("code.fullTitle")}</Text>
             </View>
-            <View style={styles.separator} />
+            <View style={[styles.separator, { backgroundColor: colors.border }]} />
             {sommaire.map((tome) => (
               <TreeNode
                 key={tome.id}

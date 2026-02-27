@@ -13,6 +13,7 @@ interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   loggedOut: boolean;
+  sessionExpired: boolean;
 
   setUser: (user: User | null) => void;
   setEmail: (email: string) => void;
@@ -21,6 +22,8 @@ interface AuthState {
   setOtpSource: (source: "login" | "register") => void;
   setStep: (step: AuthStep) => void;
   setLoading: (loading: boolean) => void;
+  setSessionExpired: (expired: boolean) => void;
+  clearSessionExpired: () => void;
   login: (user: User, token?: string, refreshToken?: string) => Promise<void>;
   logout: () => Promise<void>;
   clearLoggedOut: () => void;
@@ -67,6 +70,7 @@ export const useAuthStore = create<AuthState>()(
       isAuthenticated: false,
       isLoading: false,
       loggedOut: false,
+      sessionExpired: false,
 
       setUser: (user) => set({ user }),
       setEmail: (email) => set({ email }),
@@ -75,6 +79,8 @@ export const useAuthStore = create<AuthState>()(
       setOtpSource: (otpSource) => set({ otpSource }),
       setStep: (step) => set({ step }),
       setLoading: (isLoading) => set({ isLoading }),
+      setSessionExpired: (sessionExpired) => set({ sessionExpired }),
+      clearSessionExpired: () => set({ sessionExpired: false }),
 
       login: async (user, token, refreshToken) => {
         if (isMobile) {
@@ -107,6 +113,7 @@ export const useAuthStore = create<AuthState>()(
           user: null,
           isAuthenticated: false,
           loggedOut: true,
+          sessionExpired: false,
           email: "",
           otpCode: "",
           devCode: "",

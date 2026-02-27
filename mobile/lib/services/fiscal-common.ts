@@ -230,8 +230,12 @@ export function formatNumber(montant: number): string {
  * Formate une saisie numerique avec separateurs de milliers (espaces).
  * Utilise dans les TextInput pour afficher ex: "1 050 000" pendant la saisie.
  */
+const MAX_INPUT_AMOUNT = 100_000_000_000; // 100 milliards FCFA
+
 export function formatInputNumber(text: string): string {
   const digits = text.replace(/[^\d]/g, "");
   if (!digits) return "";
-  return digits.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  const num = parseInt(digits, 10);
+  const capped = num > MAX_INPUT_AMOUNT ? String(MAX_INPUT_AMOUNT) : digits;
+  return capped.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }

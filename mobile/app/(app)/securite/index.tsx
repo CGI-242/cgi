@@ -239,7 +239,7 @@ export default function SecuriteScreen() {
             </Text>
             <TextInput
               value={totpCode}
-              onChangeText={setTotpCode}
+              onChangeText={(text) => setTotpCode(text.replace(/[^0-9]/g, ""))}
               placeholder="000000"
               placeholderTextColor={colors.textMuted}
               keyboardType="number-pad"

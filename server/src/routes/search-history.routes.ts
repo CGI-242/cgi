@@ -3,6 +3,8 @@
 
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
+import { validate } from "../middleware/validate.middleware";
+import { searchHistoryQuery } from "../schemas/search-history.schema";
 import prisma from "../utils/prisma";
 
 const router = Router();
@@ -28,11 +30,11 @@ const router = Router();
  *       200:
  *         description: Historique de recherche paginé
  */
-router.get("/", requireAuth, async (req: AuthRequest, res: Response) => {
+router.get("/", requireAuth, validate({ query: searchHistoryQuery }), async (req: AuthRequest, res: Response) => {
   try {
     const userId = req.userId!;
-    const page = Math.max(1, parseInt(req.query.page as string) || 1);
-    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit as string) || 20));
+    const page = Number(req.query.page);
+    const limit = Number(req.query.limit);
     const skip = (page - 1) * limit;
 
     const [searches, total] = await Promise.all([

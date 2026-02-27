@@ -1,5 +1,8 @@
 import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
+import { requireAdmin } from '../middleware/requireAdmin';
+import { validate } from '../middleware/validate.middleware';
+import { activateOrgBody, orgIdParam } from '../schemas/admin.schema';
 import prisma from '../utils/prisma';
 import * as subscriptionService from '../services/subscription.service';
 import { PlanName, calculateTotalPrice, getUnitPrice } from '../types/plans';
@@ -7,30 +10,6 @@ import { createLogger } from '../utils/logger';
 
 const logger = createLogger('AdminRoutes');
 const router = Router();
-
-const VALID_PAID_PLANS: PlanName[] = ['BASIQUE', 'PRO'];
-
-/**
- * Middleware admin : verifie que l'utilisateur authentifie est l'admin
- * declare dans la variable d'environnement ADMIN_EMAIL.
- */
-function requireAdmin(req: AuthRequest, res: Response, next: () => void) {
-  const adminEmail = process.env.ADMIN_EMAIL;
-
-  if (!adminEmail) {
-    logger.warn('ADMIN_EMAIL non configure dans les variables d\'environnement');
-    res.status(503).json({ error: 'Administration non configuree' });
-    return;
-  }
-
-  if (req.userEmail !== adminEmail) {
-    logger.warn(`Tentative d'acces admin refusee pour ${req.userEmail}`);
-    res.status(403).json({ error: 'Acces refuse — droits administrateur requis' });
-    return;
-  }
-
-  next();
-}
 
 /**
  * @swagger
@@ -120,15 +99,10 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
  *       200:
  *         description: Abonnement activé
  */
-router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, validate({ params: orgIdParam, body: activateOrgBody }), async (req: AuthRequest, res: Response) => {
   try {
-    const orgId = Array.isArray(req.params.orgId) ? req.params.orgId[0] : req.params.orgId;
+    const orgId = String(req.params.orgId);
     const { plan } = req.body;
-
-    if (!plan || !VALID_PAID_PLANS.includes(plan)) {
-      res.status(400).json({ error: `Plan invalide. Plans disponibles : ${VALID_PAID_PLANS.join(', ')}` });
-      return;
-    }
 
     const updated = await subscriptionService.activateSubscription(orgId, plan);
     logger.info(`Admin ${req.userEmail} a active le plan ${plan} pour l'org ${orgId}`);
@@ -166,9 +140,9 @@ router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, async (
  *       200:
  *         description: Abonnement renouvelé
  */
-router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, validate({ params: orgIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const orgId = Array.isArray(req.params.orgId) ? req.params.orgId[0] : req.params.orgId;
+    const orgId = String(req.params.orgId);
 
     const updated = await subscriptionService.renewSubscription(orgId);
     logger.info(`Admin ${req.userEmail} a renouvele l'abonnement pour l'org ${orgId}`);

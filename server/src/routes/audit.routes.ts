@@ -2,6 +2,8 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { orgAuditQuery, userAuditQuery, userAuditParams, entityAuditParams, searchAuditQuery, statsAuditQuery, cleanupAuditBody } from '../schemas/audit.schema';
 import { AuditService } from '../services/audit.service';
 
 const router = Router();
@@ -31,11 +33,11 @@ const router = Router();
  *       200:
  *         description: Logs d'audit paginés
  */
-router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: orgAuditQuery }), async (req: AuthRequest, res: Response) => {
   try {
-    const page = parseInt(req.query.page as string) || 1;
-    const limit = parseInt(req.query.limit as string) || 50;
-    const action = req.query.action as string | undefined;
+    const page = Number(req.query.page);
+    const limit = Number(req.query.limit);
+    const action = req.query.action ? String(req.query.action) : undefined;
     const result = await AuditService.getOrganizationAudit(req.orgId!, { page, limit, action });
     res.json(result);
   } catch (err) {
@@ -61,11 +63,11 @@ router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin
  *       200:
  *         description: Actions de l'utilisateur
  */
-router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userAuditParams, query: userAuditQuery }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
-    const page = parseInt(req.query.page as string) || 1;
-    const limit = parseInt(req.query.limit as string) || 50;
+    const userId = String(req.params.userId);
+    const page = Number(req.query.page);
+    const limit = Number(req.query.limit);
     const result = await AuditService.getUserActions(userId, { page, limit });
     res.json(result);
   } catch (err) {
@@ -96,10 +98,10 @@ router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin
  *       200:
  *         description: Historique de l'entité
  */
-router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: entityAuditParams }), async (req: AuthRequest, res: Response) => {
   try {
-    const type = Array.isArray(req.params.type) ? req.params.type[0] : req.params.type;
-    const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+    const type = String(req.params.type);
+    const id = String(req.params.id);
     const logs = await AuditService.getEntityHistory(type, id);
     res.json(logs);
   } catch (err) {
@@ -150,16 +152,16 @@ router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireA
  *       200:
  *         description: Résultats de recherche paginés
  */
-router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: searchAuditQuery }), async (req: AuthRequest, res: Response) => {
   try {
     const result = await AuditService.search(req.orgId!, {
-      action: req.query.action as string,
-      actorId: req.query.actorId as string,
-      entityType: req.query.entityType as string,
-      from: req.query.from as string,
-      to: req.query.to as string,
-      page: parseInt(req.query.page as string) || 1,
-      limit: parseInt(req.query.limit as string) || 50,
+      action: req.query.action ? String(req.query.action) : undefined,
+      actorId: req.query.actorId ? String(req.query.actorId) : undefined,
+      entityType: req.query.entityType ? String(req.query.entityType) : undefined,
+      from: req.query.from ? String(req.query.from) : undefined,
+      to: req.query.to ? String(req.query.to) : undefined,
+      page: Number(req.query.page),
+      limit: Number(req.query.limit),
     });
     res.json(result);
   } catch (err) {
@@ -184,9 +186,9 @@ router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, asyn
  *       200:
  *         description: Statistiques d'audit
  */
-router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: statsAuditQuery }), async (req: AuthRequest, res: Response) => {
   try {
-    const days = parseInt(req.query.days as string) || 30;
+    const days = Number(req.query.days);
     const stats = await AuditService.getStats(req.orgId!, days);
     res.json(stats);
   } catch (err) {
@@ -215,9 +217,9 @@ router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, async
  *       200:
  *         description: Résultat du nettoyage
  */
-router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: cleanupAuditBody }), async (req: AuthRequest, res: Response) => {
   try {
-    const olderThanDays = parseInt(req.body.olderThanDays as string) || 365;
+    const { olderThanDays } = req.body;
     const result = await AuditService.gdprCleanup(req.orgId!, olderThanDays);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
     res.json(result);

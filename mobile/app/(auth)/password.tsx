@@ -4,11 +4,13 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function LoginPassword() {
   const { t } = useTranslation();
+  const { colors } = useTheme();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -47,27 +49,27 @@ export default function LoginPassword() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-background"
+      style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <View className="flex-1 justify-center items-center px-6">
-        <View className="w-full max-w-[420px] bg-card p-8">
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
+        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, borderRadius: 12 }}>
           {/* Logo */}
-          <View className="items-center mb-6">
-            <Text className="text-4xl font-bold text-primary">CGI242</Text>
-            <Text className="text-sm text-muted mt-1">
+          <View style={{ alignItems: "center", marginBottom: 24 }}>
+            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
+            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
               Intelligence Fiscale IA
             </Text>
           </View>
 
-          <Text className="text-2xl font-bold text-text mb-1">
+          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
             {t("auth.password")}
           </Text>
 
           {/* Email affiché */}
-          <View className="flex-row items-center mb-6">
-            <Text className="text-sm text-muted flex-1">{email}</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 24 }}>
+            <Text style={{ fontSize: 14, color: colors.textMuted, flex: 1 }}>{email}</Text>
             <TouchableOpacity onPress={() => router.back()}>
-              <Text className="text-sm text-primary font-semibold">
+              <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600" }}>
                 {t("common.modify")}
               </Text>
             </TouchableOpacity>
@@ -75,20 +77,20 @@ export default function LoginPassword() {
 
           {/* Erreur */}
           {error ? (
-            <View className="bg-red-50 p-3 mb-4">
-              <Text className="text-danger text-sm">{error}</Text>
+            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Password */}
-          <Text className="text-sm font-semibold text-text mb-2">
-            {t("auth.password")} <Text className="text-danger">*</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+            {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
-          <View className="relative mb-2">
+          <View style={{ marginBottom: 8 }}>
             <TextInput
-              className="w-full bg-input  p-3 pr-12 text-base text-text border-0"
+              style={{ width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text, borderRadius: 8 }}
               placeholder={t("auth.yourPassword")}
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.textMuted}
               value={password}
               onChangeText={(text) => {
                 setPassword(text);
@@ -100,39 +102,38 @@ export default function LoginPassword() {
               onSubmitEditing={handleLogin}
             />
             <TouchableOpacity
-              className="absolute right-3 top-3"
+              style={{ position: "absolute", right: 12, top: 12 }}
               onPress={() => setShowPassword(!showPassword)}
             >
               <Ionicons
                 name={showPassword ? "eye-off" : "eye"}
                 size={22}
-                color="#888"
+                color={colors.textMuted}
               />
             </TouchableOpacity>
           </View>
 
           {/* Mot de passe oublié */}
           <TouchableOpacity
-            className="self-end mb-4"
+            style={{ alignSelf: "flex-end", marginBottom: 16 }}
             onPress={() => router.push("/(auth)/forgot-password")}
           >
-            <Text className="text-sm text-primary">
+            <Text style={{ fontSize: 14, color: colors.primary }}>
               {t("auth.forgotPassword")}
             </Text>
           </TouchableOpacity>
 
           {/* Bouton */}
           <TouchableOpacity
-            className="w-full bg-primary p-4 items-center"
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", borderRadius: 8, opacity: loading ? 0.7 : 1 }}
             onPress={handleLogin}
             activeOpacity={0.8}
             disabled={loading}
-            style={loading ? { opacity: 0.7 } : undefined}
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text className="text-white font-semibold text-base">
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                 {t("auth.signIn")}
               </Text>
             )}

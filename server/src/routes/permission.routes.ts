@@ -2,6 +2,9 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { grantPermissionBody, revokePermissionBody } from '../schemas/permission.schema';
+import { userIdParam } from '../schemas/common.schema';
 import * as permissionService from '../services/permission.service';
 import { AuditService } from '../services/audit.service';
 import { Permission } from '../types/permissions';
@@ -102,9 +105,9 @@ router.get('/check/:permission', requireAuth, resolveTenant, requireOrg, async (
  *         description: Membre introuvable
  */
 // GET /api/permissions/members/:userId
-router.get('/members/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/members/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
+    const userId = String(req.params.userId);
     const perms = await permissionService.getMemberPermissions(req.orgId!, userId);
     res.json(perms);
   } catch (err) { handleError(res, err); }
@@ -132,9 +135,9 @@ router.get('/members/:userId', requireAuth, resolveTenant, requireOrg, requireAd
  *         description: Membre introuvable
  */
 // GET /api/permissions/members/:userId/effective
-router.get('/members/:userId/effective', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/members/:userId/effective', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
+    const userId = String(req.params.userId);
     const perms = await permissionService.getEffectivePermissions(req.orgId!, userId);
     res.json(perms);
   } catch (err) { handleError(res, err); }
@@ -171,9 +174,9 @@ router.get('/members/:userId/effective', requireAuth, resolveTenant, requireOrg,
  *         description: Membre introuvable
  */
 // POST /api/permissions/members/:userId/grant
-router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ params: userIdParam, body: grantPermissionBody }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
+    const userId = String(req.params.userId);
     await permissionService.grantPermission(req.orgId!, userId, req.body.permission);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_GRANTED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: { permission: req.body.permission } });
     res.json({ message: 'Permission accordée' });
@@ -211,9 +214,9 @@ router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, re
  *         description: Membre introuvable
  */
 // POST /api/permissions/members/:userId/revoke
-router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ params: userIdParam, body: revokePermissionBody }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
+    const userId = String(req.params.userId);
     await permissionService.revokePermission(req.orgId!, userId, req.body.permission);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_REVOKED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: { permission: req.body.permission } });
     res.json({ message: 'Permission révoquée' });
@@ -242,9 +245,9 @@ router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, r
  *         description: Membre introuvable
  */
 // POST /api/permissions/members/:userId/reset
-router.post('/members/:userId/reset', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/members/:userId/reset', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ params: userIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const userId = Array.isArray(req.params.userId) ? req.params.userId[0] : req.params.userId;
+    const userId = String(req.params.userId);
     await permissionService.resetToDefaults(req.orgId!, userId);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSIONS_RESET', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: {} });
     res.json({ message: 'Permissions réinitialisées' });

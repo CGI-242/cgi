@@ -4,11 +4,13 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function Register() {
   const { t } = useTranslation();
+  const { colors } = useTheme();
   const [form, setForm] = useState({
     entrepriseNom: "",
     nom: "",
@@ -46,6 +48,10 @@ export default function Register() {
       setError(t("auth.passwordMinLength"));
       return;
     }
+    if (!/[A-Z]/.test(form.password) || !/[a-z]/.test(form.password) || !/[0-9]/.test(form.password)) {
+      setError(t("auth.passwordComplexity"));
+      return;
+    }
     if (form.password !== form.confirmPassword) {
       setError(t("auth.passwordMismatch"));
       return;
@@ -77,69 +83,78 @@ export default function Register() {
     }
   };
 
+  const inputStyle = {
+    width: "100%" as const,
+    backgroundColor: colors.input,
+    padding: 12,
+    fontSize: 16,
+    color: colors.text,
+    borderRadius: 8,
+  };
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-background"
+      style={{ flex: 1, backgroundColor: colors.background }}
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", padding: 24 }}>
-        <View className="w-full max-w-[520px] bg-card p-8">
+        <View style={{ width: "100%", maxWidth: 520, backgroundColor: colors.card, padding: 32, borderRadius: 12 }}>
           {/* Logo */}
-          <View className="items-center mb-6">
-            <Text className="text-4xl font-bold text-primary">CGI242</Text>
-            <Text className="text-sm text-muted mt-1">
+          <View style={{ alignItems: "center", marginBottom: 24 }}>
+            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
+            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
               Intelligence Fiscale IA
             </Text>
           </View>
 
-          <Text className="text-2xl font-bold text-text mb-1">
+          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
             {t("auth.createCompany")}
           </Text>
-          <Text className="text-sm text-muted mb-6">
+          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.companyAdmin")}
           </Text>
 
           {/* Erreur */}
           {error ? (
-            <View className="bg-red-50 p-3 mb-4">
-              <Text className="text-danger text-sm">{error}</Text>
+            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Nom du cabinet */}
-          <Text className="text-sm font-semibold text-text mb-2">
-            {t("auth.company")} <Text className="text-danger">*</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+            {t("auth.company")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
+            style={{ ...inputStyle, marginBottom: 16 }}
             placeholder={t("auth.companyPlaceholder")}
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.textMuted}
             value={form.entrepriseNom}
             onChangeText={(v) => updateField("entrepriseNom", v)}
           />
 
           {/* Nom + Prénom */}
-          <View className="flex-row gap-4 mb-4">
-            <View className="flex-1">
-              <Text className="text-sm font-semibold text-text mb-2">
-                {t("auth.lastName")} <Text className="text-danger">*</Text>
+          <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                {t("auth.lastName")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
-                className="w-full bg-input  p-3 text-base text-text border-0"
+                style={inputStyle}
                 placeholder={t("auth.lastName")}
-                placeholderTextColor="#888"
+                placeholderTextColor={colors.textMuted}
                 value={form.nom}
                 onChangeText={(v) => updateField("nom", v)}
               />
             </View>
-            <View className="flex-1">
-              <Text className="text-sm font-semibold text-text mb-2">
-                {t("auth.firstName")} <Text className="text-danger">*</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                {t("auth.firstName")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
-                className="w-full bg-input  p-3 text-base text-text border-0"
+                style={inputStyle}
                 placeholder={t("auth.firstName")}
-                placeholderTextColor="#888"
+                placeholderTextColor={colors.textMuted}
                 value={form.prenom}
                 onChangeText={(v) => updateField("prenom", v)}
               />
@@ -147,13 +162,13 @@ export default function Register() {
           </View>
 
           {/* Email */}
-          <Text className="text-sm font-semibold text-text mb-2">
-            Email <Text className="text-danger">*</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+            Email <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
+            style={{ ...inputStyle, marginBottom: 16 }}
             placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.textMuted}
             value={form.email}
             onChangeText={(v) => updateField("email", v)}
             keyboardType="email-address"
@@ -161,53 +176,53 @@ export default function Register() {
           />
 
           {/* Téléphone */}
-          <Text className="text-sm font-semibold text-text mb-2">
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
             {t("auth.phone")}
           </Text>
           <TextInput
-            className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
+            style={{ ...inputStyle, marginBottom: 16 }}
             placeholder={t("auth.phonePlaceholder")}
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.textMuted}
             value={form.telephone}
-            onChangeText={(v) => updateField("telephone", v)}
+            onChangeText={(v) => updateField("telephone", v.replace(/[^\d\s+()-]/g, ""))}
             keyboardType="phone-pad"
           />
 
           {/* Mots de passe */}
-          <View className="flex-row gap-4 mb-4">
-            <View className="flex-1">
-              <Text className="text-sm font-semibold text-text mb-2">
-                {t("auth.password")} <Text className="text-danger">*</Text>
+          <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
-              <View className="relative">
+              <View>
                 <TextInput
-                  className="w-full bg-input  p-3 pr-12 text-base text-text border-0"
+                  style={{ ...inputStyle, paddingRight: 48 }}
                   placeholder={t("auth.passwordPlaceholder")}
-                  placeholderTextColor="#888"
+                  placeholderTextColor={colors.textMuted}
                   value={form.password}
                   onChangeText={(v) => updateField("password", v)}
                   secureTextEntry={!showPassword}
                 />
                 <TouchableOpacity
-                  className="absolute right-3 top-3"
+                  style={{ position: "absolute", right: 12, top: 12 }}
                   onPress={() => setShowPassword(!showPassword)}
                 >
                   <Ionicons
                     name={showPassword ? "eye-off" : "eye"}
                     size={22}
-                    color="#888"
+                    color={colors.textMuted}
                   />
                 </TouchableOpacity>
               </View>
             </View>
-            <View className="flex-1">
-              <Text className="text-sm font-semibold text-text mb-2">
-                {t("common.confirm")} <Text className="text-danger">*</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                {t("common.confirm")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
-                className="w-full bg-input  p-3 text-base text-text border-0"
+                style={inputStyle}
                 placeholder={t("common.confirm")}
-                placeholderTextColor="#888"
+                placeholderTextColor={colors.textMuted}
                 value={form.confirmPassword}
                 onChangeText={(v) => updateField("confirmPassword", v)}
                 secureTextEntry={!showPassword}
@@ -217,26 +232,25 @@ export default function Register() {
 
           {/* Bouton */}
           <TouchableOpacity
-            className="w-full bg-primary p-4 items-center mt-2"
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 8, borderRadius: 8, opacity: loading ? 0.7 : 1 }}
             onPress={handleRegister}
             activeOpacity={0.8}
             disabled={loading}
-            style={loading ? { opacity: 0.7 } : undefined}
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text className="text-white font-semibold text-base">
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                 {t("auth.createAccount")}
               </Text>
             )}
           </TouchableOpacity>
 
           {/* Lien connexion */}
-          <View className="flex-row justify-center mt-6">
-            <Text className="text-sm text-muted">{t("auth.alreadyHaveAccount")} </Text>
+          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 24 }}>
+            <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("auth.alreadyHaveAccount")} </Text>
             <TouchableOpacity onPress={() => router.back()}>
-              <Text className="text-sm text-primary font-semibold underline">
+              <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
                 {t("auth.signIn")}
               </Text>
             </TouchableOpacity>

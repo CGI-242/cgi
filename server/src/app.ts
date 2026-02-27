@@ -43,8 +43,11 @@ app.use(helmet({
 }));
 app.use(cors({
   origin: (origin, callback) => {
-    // Autoriser les requêtes sans origin (mobile, curl, etc.)
-    if (!origin || allowedOrigins.includes(origin)) {
+    if (!origin) {
+      // Clients sans Origin (mobile natif, curl, monitoring) :
+      // autoriser la requête mais sans en-têtes CORS (inutiles pour ces clients)
+      callback(null, false);
+    } else if (allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error(`Origin ${origin} non autorisée par CORS`));
@@ -76,11 +79,11 @@ app.use("/api/permissions", permissionRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/alertes-fiscales", alertesFiscalesRoutes);
+app.use("/api/user/stats", userStatsRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/ingestion", ingestionRoutes);
 app.use("/api/search-history", searchHistoryRoutes);
-app.use("/api/user/stats", userStatsRoutes);
 app.use("/api/notifications", notificationRoutes);
 
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
@@ -94,7 +97,7 @@ app.get("/health", async (_req, res) => {
   // Vérifier PostgreSQL
   try {
     const prisma = (await import("./utils/prisma")).default;
-    await prisma.$queryRawUnsafe("SELECT 1");
+    await prisma.$queryRaw`SELECT 1`;
     checks.postgresql = "ok";
   } catch {
     checks.postgresql = "down";

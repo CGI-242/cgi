@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   Platform,
   Switch,
+  Alert,
 } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -83,7 +84,16 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="lock-closed-outline"
             label={t("settings.changePassword")}
-            onPress={() => router.push("/(auth)/forgot-password")}
+            onPress={() => {
+              Alert.alert(
+                t("settings.changePassword"),
+                t("settings.changePasswordConfirm"),
+                [
+                  { text: t("common.cancel"), style: "cancel" },
+                  { text: t("auth.continue"), onPress: () => router.push("/(auth)/forgot-password") },
+                ]
+              );
+            }}
             showChevron
             colors={colors}
           />

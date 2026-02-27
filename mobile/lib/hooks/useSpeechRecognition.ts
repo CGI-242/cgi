@@ -14,6 +14,7 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
   const [transcript, setTranscript] = useState("");
   const [isAvailable, setIsAvailable] = useState(false);
   const recognitionRef = useRef<any>(null);
+  const nativeSubscriptionsRef = useRef<Array<{ remove: () => void }>>([]);
 
   useEffect(() => {
     if (Platform.OS === "web") {
@@ -21,7 +22,6 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
         (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       setIsAvailable(!!SpeechRecognition);
     } else {
-      // Check native availability
       import("expo-speech-recognition")
         .then((mod) => {
           mod.ExpoSpeechRecognitionModule.getStateAsync().then(() => {
@@ -30,6 +30,12 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
         })
         .catch(() => setIsAvailable(false));
     }
+
+    // Nettoyage au démontage
+    return () => {
+      nativeSubscriptionsRef.current.forEach((sub) => sub.remove());
+      nativeSubscriptionsRef.current = [];
+    };
   }, []);
 
   const startListening = useCallback(async () => {
@@ -61,12 +67,36 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
       setIsListening(true);
     } else {
       try {
-        const { ExpoSpeechRecognitionModule, useSpeechRecognitionEvent } = await import(
+        const { ExpoSpeechRecognitionModule } = await import(
           "expo-speech-recognition"
         );
 
         const { granted } = await ExpoSpeechRecognitionModule.requestPermissionsAsync();
         if (!granted) return;
+
+        // Nettoyer les anciens listeners
+        nativeSubscriptionsRef.current.forEach((sub) => sub.remove());
+        nativeSubscriptionsRef.current = [];
+
+        // Écouter les résultats de transcription (M7)
+        const resultSub = ExpoSpeechRecognitionModule.addListener("result", (event: any) => {
+          if (event.results && event.results.length > 0) {
+            setTranscript(event.results[0]?.transcript || "");
+          }
+        });
+        nativeSubscriptionsRef.current.push(resultSub);
+
+        // Écouter la fin de la reconnaissance
+        const endSub = ExpoSpeechRecognitionModule.addListener("end", () => {
+          setIsListening(false);
+        });
+        nativeSubscriptionsRef.current.push(endSub);
+
+        // Écouter les erreurs
+        const errorSub = ExpoSpeechRecognitionModule.addListener("error", () => {
+          setIsListening(false);
+        });
+        nativeSubscriptionsRef.current.push(errorSub);
 
         ExpoSpeechRecognitionModule.start({
           lang: "fr-FR",

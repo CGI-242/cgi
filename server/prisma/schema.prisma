@@ -46,10 +46,16 @@ model Organization {
 
 // ==================== USERS ====================
 
+enum UserRole {
+  USER
+  ADMIN
+}
+
 model User {
   id                   String    @id @default(uuid())
   email                String    @unique
   password             String
+  role                 UserRole  @default(USER)
   firstName            String?
   lastName             String?
   phone                String?
@@ -67,6 +73,9 @@ model User {
   mfaSecret            String?   // Encrypted TOTP secret
   mfaBackupCodes       String[]  @default([]) // Hashed backup codes
   mfaVerifiedAt        DateTime?
+
+  // Révocation globale des sessions (M2 — persistance blacklist)
+  tokenRevokedAt       DateTime?
 
   // Abonnement personnel (si pas dans une orga)
   personalSubscription Subscription? @relation("PersonalSubscription")
@@ -606,6 +615,7 @@ enum AuditAction {
   DATA_EXPORTED
 
   // User
+  REGISTER
   USER_UPDATED
   SETTINGS_CHANGED
 
@@ -615,6 +625,7 @@ enum AuditAction {
   LOGOUT
   LOGOUT_ALL
   PASSWORD_CHANGED
+  PASSWORD_RESET_REQUESTED
   EMAIL_VERIFIED
   MFA_ENABLED
   MFA_DISABLED

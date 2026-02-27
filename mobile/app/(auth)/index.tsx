@@ -1,8 +1,9 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, Linking } from "react-native";
-import { useState } from "react";
-import { router } from "expo-router";
+import { useState, useCallback } from "react";
+import { router, useFocusEffect } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 const LEGAL_URLS = {
   aide: "https://cgi242.normx.ai/aide",
@@ -12,11 +13,16 @@ const LEGAL_URLS = {
 
 export default function LoginEmail() {
   const { t } = useTranslation();
+  const { colors } = useTheme();
   const [email, setEmailLocal] = useState("");
   const [error, setError] = useState("");
+  const [navigating, setNavigating] = useState(false);
   const setEmail = useAuthStore((s) => s.setEmail);
 
+  useFocusEffect(useCallback(() => { setNavigating(false); }, []));
+
   const handleContinue = () => {
+    if (navigating) return;
     if (!email.trim()) {
       setError(t("auth.emailRequired"));
       return;
@@ -26,6 +32,7 @@ export default function LoginEmail() {
       return;
     }
     setError("");
+    setNavigating(true);
     setEmail(email.trim());
     router.push("/(auth)/password");
   };
@@ -33,39 +40,39 @@ export default function LoginEmail() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-background"
+      style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <View className="flex-1 justify-center items-center px-6">
-        <View className="w-full max-w-[420px] bg-card p-8">
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
+        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, borderRadius: 12 }}>
           {/* Logo */}
-          <View className="items-center mb-6">
-            <Text className="text-4xl font-bold text-primary">CGI242</Text>
-            <Text className="text-sm text-muted mt-1">
+          <View style={{ alignItems: "center", marginBottom: 24 }}>
+            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
+            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
               Intelligence Fiscale IA
             </Text>
           </View>
 
           {/* Titre */}
-          <Text className="text-2xl font-bold text-text mb-1">{t("auth.login")}</Text>
-          <Text className="text-sm text-muted mb-6">
+          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>{t("auth.login")}</Text>
+          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterEmail")}
           </Text>
 
           {/* Erreur */}
           {error ? (
-            <View className="bg-red-50 p-3 mb-4">
-              <Text className="text-danger text-sm">{error}</Text>
+            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Email */}
-          <Text className="text-sm font-semibold text-text mb-2">
-            Email <Text className="text-danger">*</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+            Email <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            className="w-full bg-input  p-3 text-base text-text mb-4 border-0"
+            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16, borderRadius: 8 }}
             placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.textMuted}
             value={email}
             onChangeText={(text) => {
               setEmailLocal(text);
@@ -80,20 +87,21 @@ export default function LoginEmail() {
 
           {/* Bouton */}
           <TouchableOpacity
-            className="w-full bg-primary p-4 items-center mt-2"
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 8, borderRadius: 8, opacity: navigating ? 0.7 : 1 }}
             onPress={handleContinue}
             activeOpacity={0.8}
+            disabled={navigating}
           >
-            <Text className="text-white font-semibold text-base">
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
               {t("auth.continue")}
             </Text>
           </TouchableOpacity>
 
           {/* Lien inscription */}
-          <View className="flex-row justify-center mt-6">
-            <Text className="text-sm text-muted">{t("auth.noAccount")} </Text>
+          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 24 }}>
+            <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("auth.noAccount")} </Text>
             <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
-              <Text className="text-sm text-primary font-semibold underline">
+              <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
                 {t("auth.createCompany")}
               </Text>
             </TouchableOpacity>
@@ -101,15 +109,15 @@ export default function LoginEmail() {
         </View>
 
         {/* Footer */}
-        <View className="flex-row gap-8 mt-6">
+        <View style={{ flexDirection: "row", gap: 32, marginTop: 24 }}>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.aide)}>
-            <Text className="text-xs text-muted underline">{t("auth.help")}</Text>
+            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.confidentialite)}>
-            <Text className="text-xs text-muted underline">{t("auth.privacy")}</Text>
+            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.conditions)}>
-            <Text className="text-xs text-muted underline">{t("auth.terms")}</Text>
+            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
           </TouchableOpacity>
         </View>
       </View>

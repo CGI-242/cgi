@@ -7,11 +7,16 @@ import { StatusBar } from "expo-status-bar";
 import * as SplashScreen from "expo-splash-screen";
 import * as ScreenCapture from "expo-screen-capture";
 import ErrorBoundary from "@/components/ErrorBoundary";
-import { ThemeProvider } from "@/lib/theme/ThemeContext";
+import { ThemeProvider, useTheme } from "@/lib/theme/ThemeContext";
 import { initSentry, Sentry } from "@/lib/sentry";
 
 initSentry();
 SplashScreen.preventAutoHideAsync();
+
+function ThemedStatusBar() {
+  const { colors } = useTheme();
+  return <StatusBar style="light" backgroundColor={colors.primary} />;
+}
 
 function RootLayout() {
   useEffect(() => {
@@ -38,7 +43,7 @@ function RootLayout() {
   return (
     <ThemeProvider>
       <ErrorBoundary>
-        <StatusBar style="light" backgroundColor="#00815d" />
+        <ThemedStatusBar />
         <Stack screenOptions={{ headerShown: false, title: "CGI242" }}>
           <Stack.Screen name="(auth)" options={{ title: "CGI242" }} />
           <Stack.Screen name="(app)" options={{ title: "CGI242" }} />

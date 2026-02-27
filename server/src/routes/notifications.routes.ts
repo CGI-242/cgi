@@ -1,5 +1,7 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
+import { validate } from "../middleware/validate.middleware";
+import { registerPushBody, unregisterPushBody } from "../schemas/notifications.schema";
 import { PushService } from "../services/push.service";
 import { createLogger } from "../utils/logger";
 
@@ -32,13 +34,9 @@ const router = Router();
  *       400:
  *         description: Token manquant
  */
-router.post("/register", requireAuth, async (req: AuthRequest, res: Response) => {
+router.post("/register", requireAuth, validate({ body: registerPushBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { token, platform } = req.body;
-    if (!token) {
-      res.status(400).json({ error: "Token push requis" });
-      return;
-    }
     await PushService.registerToken(req.userId!, token, platform || "unknown");
     res.json({ message: "Token enregistré" });
   } catch (err) {
@@ -69,13 +67,9 @@ router.post("/register", requireAuth, async (req: AuthRequest, res: Response) =>
  *       200:
  *         description: Token supprimé
  */
-router.delete("/unregister", requireAuth, async (req: AuthRequest, res: Response) => {
+router.delete("/unregister", requireAuth, validate({ body: unregisterPushBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { token } = req.body;
-    if (!token) {
-      res.status(400).json({ error: "Token push requis" });
-      return;
-    }
     await PushService.unregisterToken(token);
     res.json({ message: "Token supprimé" });
   } catch (err) {

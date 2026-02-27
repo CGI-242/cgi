@@ -5,11 +5,11 @@ import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkQuestionQuota } from "../middleware/subscription.middleware";
+import { validate } from "../middleware/validate.middleware";
+import { messageStreamBody, conversationIdParam } from "../schemas/chat.schema";
 import * as chatService from "../services/chat.service";
 import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
-
-const MAX_MESSAGE_LENGTH = 4000;
 
 const logger = createLogger('ChatRoutes');
 
@@ -28,19 +28,9 @@ const router = Router();
  *         description: Flux SSE de la réponse du chat
  */
 // POST /api/chat/message/stream — Envoyer un message avec streaming SSE
-router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, async (req: AuthRequest, res: Response) => {
+router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, validate({ body: messageStreamBody }), async (req: AuthRequest, res: Response) => {
   const userId = req.userId!;
   const { content, conversationId } = req.body;
-
-  if (!content || typeof content !== "string" || !content.trim()) {
-    res.status(400).json({ error: "Le contenu du message est requis" });
-    return;
-  }
-
-  if (content.length > MAX_MESSAGE_LENGTH) {
-    res.status(400).json({ error: `Le message ne peut pas dépasser ${MAX_MESSAGE_LENGTH} caractères` });
-    return;
-  }
 
   // Configurer SSE
   res.setHeader("Content-Type", "text/event-stream");
@@ -111,9 +101,9 @@ router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response
  *         description: Conversation introuvable
  */
 // GET /api/chat/conversations/:id — Recuperer une conversation avec messages
-router.get("/conversations/:id", requireAuth, async (req: AuthRequest, res: Response) => {
+router.get("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+    const id = String(req.params.id);
     const conversation = await chatService.getConversation(req.userId!, id);
     res.json({ conversation });
   } catch (err) {
@@ -149,9 +139,9 @@ router.get("/conversations/:id", requireAuth, async (req: AuthRequest, res: Resp
  *         description: Conversation introuvable
  */
 // DELETE /api/chat/conversations/:id — Supprimer une conversation
-router.delete("/conversations/:id", requireAuth, async (req: AuthRequest, res: Response) => {
+router.delete("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
-    const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+    const id = String(req.params.id);
     await chatService.deleteConversation(req.userId!, id);
     res.json({ message: "Conversation supprimee" });
   } catch (err) {

@@ -2,6 +2,8 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin, requireMember } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { daysQuery } from '../schemas/analytics.schema';
 import * as analyticsService from '../services/analytics.service';
 
 const router = Router();
@@ -48,9 +50,9 @@ router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, 
  *         description: Données de série temporelle
  */
 // GET /api/analytics/timeseries
-router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), async (req: AuthRequest, res: Response) => {
   try {
-    const days = parseInt(req.query.days as string) || 30;
+    const days = Number(req.query.days);
     const data = await analyticsService.getTimeSeries(req.orgId!, days);
     res.json(data);
   } catch (err) {
@@ -104,9 +106,9 @@ router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, asy
  *               type: string
  */
 // GET /api/analytics/export
-router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
+router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), async (req: AuthRequest, res: Response) => {
   try {
-    const days = parseInt(req.query.days as string) || 30;
+    const days = Number(req.query.days);
     const csv = await analyticsService.exportCsv(req.orgId!, days);
     res.setHeader('Content-Type', 'text/csv');
     res.setHeader('Content-Disposition', `attachment; filename=analytics-${req.orgId}.csv`);

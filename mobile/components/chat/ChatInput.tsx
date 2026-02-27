@@ -25,7 +25,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
     if (transcript) {
       onChangeText(transcript);
     }
-  }, [transcript]);
+  }, [transcript, onChangeText]);
 
   return (
     <View
@@ -59,7 +59,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           placeholder={t("chat.placeholder")}
           placeholderTextColor={colors.textMuted}
           value={value}
-          onChangeText={onChangeText}
+          onChangeText={(text) => onChangeText(text.replace(/\s{10,}/g, "  "))}
           multiline
           maxLength={4000}
           editable={!disabled}

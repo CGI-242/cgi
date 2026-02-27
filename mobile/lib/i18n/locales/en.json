@@ -98,7 +98,11 @@
     "mfaDesc": "Enter the code from your authenticator app (Google Authenticator, Authy, etc.) or a backup code.",
     "mfaPlaceholder": "TOTP code or backup code",
     "mfaEnterCode": "Enter your 6-digit code",
-    "mfaInvalid": "Invalid MFA code"
+    "mfaInvalid": "Invalid MFA code",
+    "sessionExpired": "Session expired",
+    "sessionExpiredMessage": "Your session has expired. Please log in again to continue.",
+    "passwordComplexity": "Password must contain at least one uppercase letter, one lowercase letter and one digit",
+    "resendCooldown": "Resend in {{seconds}}s"
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -157,6 +161,7 @@
     "account": "ACCOUNT",
     "email": "Email",
     "changePassword": "Change password",
+    "changePasswordConfirm": "You will be redirected to the email reset process.",
     "security": "SECURITY",
     "twoFactor": "Two-factor authentication",
     "appearance": "APPEARANCE",

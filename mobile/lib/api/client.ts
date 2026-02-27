@@ -86,8 +86,9 @@ async function forceLogout() {
     try { await _removeToken("refreshToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression refreshToken:", e); }
   }
   // Import lazy pour eviter les dependances circulaires
+  // On marque la session comme expirée au lieu de déconnecter brutalement (fix C10)
   const { useAuthStore } = require("@/lib/store/auth");
-  useAuthStore.getState().logout();
+  useAuthStore.getState().setSessionExpired(true);
 }
 
 api.interceptors.response.use(

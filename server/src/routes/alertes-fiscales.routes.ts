@@ -2,6 +2,8 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { listAlertesQuery } from '../schemas/alertes-fiscales.schema';
 import * as alertesService from '../services/alertes-fiscales.service';
 
 const router = Router();
@@ -35,13 +37,13 @@ const router = Router();
  *       200:
  *         description: Alertes fiscales paginées
  */
-router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
+router.get('/', requireAuth, validate({ query: listAlertesQuery }), async (req: AuthRequest, res: Response) => {
   try {
     const result = await alertesService.getAllAlertes({
-      type: req.query.type as string,
-      categorie: req.query.categorie as string,
-      page: parseInt(req.query.page as string) || 1,
-      limit: parseInt(req.query.limit as string) || 100,
+      type: req.query.type ? String(req.query.type) : undefined,
+      categorie: req.query.categorie ? String(req.query.categorie) : undefined,
+      page: Number(req.query.page),
+      limit: Number(req.query.limit),
     });
     res.json(result);
   } catch (err) {

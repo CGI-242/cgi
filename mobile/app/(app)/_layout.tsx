@@ -7,6 +7,7 @@ import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineSync } from "@/lib/hooks/useOfflineSync";
 import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import Sidebar from "@/components/Sidebar";
+import SessionExpiredModal from "@/components/SessionExpiredModal";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 
@@ -134,7 +135,7 @@ export default function AppLayout() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: "#fff", fontWeight: "800", fontSize: 12 }}>
+                <Text style={{ color: colors.sidebarText, fontWeight: "800", fontSize: 12 }}>
                   {getInitials(user?.prenom, user?.nom)}
                 </Text>
               </TouchableOpacity>
@@ -181,6 +182,7 @@ export default function AppLayout() {
           <Stack.Screen name="legal/confidentialite" />
         </Stack>
       </View>
+      <SessionExpiredModal />
     </View>
   );
 }

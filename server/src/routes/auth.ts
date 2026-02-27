@@ -6,6 +6,8 @@ import { generateOtp } from "../utils/otp";
 import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest, isWebClient, setAuthCookies, clearAuthCookies } from "../middleware/auth";
 import { sensitiveLimiter } from "../middleware/rateLimit.middleware";
+import { validate } from "../middleware/validate.middleware";
+import { registerBody, loginBody, verifyOtpBody, sendOtpEmailBody, forgotPasswordBody, resetPasswordBody, refreshTokenBody, checkEmailBody } from "../schemas/auth.schema";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
 import { EmailService } from "../services/email.service";
 import { AuditService } from "../services/audit.service";
@@ -68,19 +70,9 @@ function sendTokens(req: Request, res: Response, token: string, refreshToken: st
  *         description: Erreur serveur
  */
 // POST /api/auth/register
-router.post("/register", async (req: Request, res: Response) => {
+router.post("/register", validate({ body: registerBody }), async (req: Request, res: Response) => {
   try {
     const { entrepriseNom, nom, prenom, email, telephone, password } = req.body;
-
-    if (!entrepriseNom || !nom || !prenom || !email || !password) {
-      res.status(400).json({ error: "Tous les champs obligatoires sont requis" });
-      return;
-    }
-
-    if (typeof password !== "string" || password.length < 8) {
-      res.status(400).json({ error: "Le mot de passe doit contenir au moins 8 caractères" });
-      return;
-    }
 
     const existingUser = await prisma.user.findUnique({ where: { email } });
     if (existingUser) {
@@ -160,7 +152,7 @@ router.post("/register", async (req: Request, res: Response) => {
         id: organization.id,
         nom: organization.name,
       },
-      otpCode: process.env.NODE_ENV !== "production" ? otp : undefined,
+      otpCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[register]", err);
@@ -198,14 +190,9 @@ router.post("/register", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/login
-router.post("/login", async (req: Request, res: Response) => {
+router.post("/login", validate({ body: loginBody }), async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
-
-    if (!email || !password) {
-      res.status(400).json({ error: "Email et mot de passe requis" });
-      return;
-    }
 
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
@@ -258,7 +245,7 @@ router.post("/login", async (req: Request, res: Response) => {
         entreprise_nom: membership?.organization.name,
         is_verified: user.isEmailVerified,
       },
-      otpCode: process.env.NODE_ENV !== "production" ? otp : undefined,
+      otpCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[login]", err);
@@ -294,7 +281,7 @@ router.post("/login", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/verify-otp
-router.post("/verify-otp", async (req: Request, res: Response) => {
+router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Request, res: Response) => {
   try {
     const { email, otp } = req.body;
 
@@ -400,7 +387,7 @@ router.post("/verify-otp", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/send-otp-email
-router.post("/send-otp-email", sensitiveLimiter, async (req: Request, res: Response) => {
+router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBody }), async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -426,7 +413,7 @@ router.post("/send-otp-email", sensitiveLimiter, async (req: Request, res: Respo
 
     res.json({
       message: "Code envoyé",
-      devCode: process.env.NODE_ENV !== "production" ? otp : undefined,
+      devCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[send-otp-email]", err);
@@ -458,7 +445,7 @@ router.post("/send-otp-email", sensitiveLimiter, async (req: Request, res: Respo
  *         description: Erreur serveur
  */
 // POST /api/auth/forgot-password
-router.post("/forgot-password", sensitiveLimiter, async (req: Request, res: Response) => {
+router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswordBody }), async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -487,7 +474,7 @@ router.post("/forgot-password", sensitiveLimiter, async (req: Request, res: Resp
 
       res.json({
         message: "Si le compte existe, un code a été envoyé",
-        devCode: process.env.NODE_ENV !== "production" ? otp : undefined,
+        devCode: process.env.NODE_ENV === "development" ? otp : undefined,
       });
       return;
     }
@@ -530,18 +517,9 @@ router.post("/forgot-password", sensitiveLimiter, async (req: Request, res: Resp
  *         description: Erreur serveur
  */
 // POST /api/auth/reset-password
-router.post("/reset-password", sensitiveLimiter, async (req: Request, res: Response) => {
+router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordBody }), async (req: Request, res: Response) => {
   try {
     const { email, code, newPassword } = req.body;
-
-    if (!email || !code || !newPassword) {
-      res.status(400).json({ error: "Tous les champs sont requis" });
-      return;
-    }
-    if (newPassword.length < 8) {
-      res.status(400).json({ error: "Le mot de passe doit contenir au moins 8 caractères" });
-      return;
-    }
 
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user || user.resetPasswordToken !== code) {
@@ -602,7 +580,7 @@ router.post("/reset-password", sensitiveLimiter, async (req: Request, res: Respo
  *         description: Refresh token manquant, invalide, expiré ou révoqué
  */
 // POST /api/auth/refresh-token
-router.post("/refresh-token", async (req: Request, res: Response) => {
+router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: Request, res: Response) => {
   try {
     // Lire le refresh token depuis le body (mobile) ou le cookie (web)
     const refreshTokenValue = req.body.refreshToken || req.cookies?.refreshToken;
@@ -684,7 +662,7 @@ router.post("/refresh-token", async (req: Request, res: Response) => {
  *         description: Erreur serveur
  */
 // POST /api/auth/check-email
-router.post("/check-email", sensitiveLimiter, async (req: Request, res: Response) => {
+router.post("/check-email", sensitiveLimiter, validate({ body: checkEmailBody }), async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });

@@ -86,6 +86,10 @@ export default function OrganisationScreen() {
 
   const handleInvite = async () => {
     if (!orgId || !inviteEmail.trim()) return;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(inviteEmail.trim())) {
+      Alert.alert("Erreur", "Adresse email invalide");
+      return;
+    }
     setActionLoading(true);
     try {
       await organizationApi.inviteMember(orgId, inviteEmail.trim(), inviteRole);

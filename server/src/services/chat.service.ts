@@ -319,7 +319,8 @@ export async function* sendMessageStream(
   });
 
   // 9. Fire-and-forget : enregistrer SearchHistory + UsageStats
-  recordSearchAndUsage(userId, content, searchResults, tokensUsed);
+  // skipQuotaIncrement=true car le middleware checkQuestionQuota a déjà incrémenté (M13)
+  recordSearchAndUsage(userId, content, searchResults, tokensUsed, true);
 
   // 11. Event done
   yield {
@@ -408,7 +409,8 @@ function recordSearchAndUsage(
   userId: string,
   query: string,
   searchResults: SearchResult[] | null,
-  tokensUsed: number
+  tokensUsed: number,
+  skipQuotaIncrement = false
 ): void {
   const firstNumero = searchResults?.[0]?.payload?.numero;
 
@@ -436,12 +438,15 @@ function recordSearchAndUsage(
   }).catch(err => logger.warn('UsageStats update failed:', err));
 
   // Quota abonnement : incrémenter questionsUsed du user
-  prisma.organizationMember.findFirst({
-    where: { userId },
-    select: { organizationId: true },
-  }).then(member => {
-    if (member) {
-      return incrementQuota(member.organizationId, userId);
-    }
-  }).catch(err => logger.warn('IncrementQuota failed:', err));
+  // Sauf si le middleware checkQuestionQuota a déjà fait l'incrément atomique (M13)
+  if (!skipQuotaIncrement) {
+    prisma.organizationMember.findFirst({
+      where: { userId },
+      select: { organizationId: true },
+    }).then(member => {
+      if (member) {
+        return incrementQuota(member.organizationId, userId);
+      }
+    }).catch(err => logger.warn('IncrementQuota failed:', err));
+  }
 }

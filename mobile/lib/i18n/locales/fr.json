@@ -98,7 +98,11 @@
     "mfaDesc": "Entrez le code depuis votre application d'authentification (Google Authenticator, Authy, etc.) ou un code de secours.",
     "mfaPlaceholder": "Code TOTP ou code de secours",
     "mfaEnterCode": "Entrez votre code à 6 chiffres",
-    "mfaInvalid": "Code MFA invalide"
+    "mfaInvalid": "Code MFA invalide",
+    "sessionExpired": "Session expirée",
+    "sessionExpiredMessage": "Votre session a expiré. Veuillez vous reconnecter pour continuer.",
+    "passwordComplexity": "Le mot de passe doit contenir au moins une majuscule, une minuscule et un chiffre",
+    "resendCooldown": "Renvoyer dans {{seconds}}s"
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -157,6 +161,7 @@
     "account": "COMPTE",
     "email": "Email",
     "changePassword": "Changer le mot de passe",
+    "changePasswordConfirm": "Vous allez être redirigé vers la procédure de réinitialisation par email.",
     "security": "SÉCURITÉ",
     "twoFactor": "Authentification à deux facteurs",
     "appearance": "APPARENCE",

@@ -1,6 +1,8 @@
 import { Router, Response } from "express";
 import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest } from "../middleware/auth";
+import { validate } from "../middleware/validate.middleware";
+import { updateProfileBody } from "../schemas/user.schema";
 import { createLogger } from "../utils/logger";
 
 const logger = createLogger("UserRoutes");
@@ -107,27 +109,9 @@ router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
  *       200:
  *         description: Profil mis à jour
  */
-router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
+router.put("/profile", requireAuth, validate({ body: updateProfileBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { firstName, lastName, phone, profession } = req.body;
-
-    // Validation basique
-    if (firstName !== undefined && (typeof firstName !== "string" || firstName.trim().length === 0)) {
-      res.status(400).json({ error: "Le prénom est invalide" });
-      return;
-    }
-    if (lastName !== undefined && (typeof lastName !== "string" || lastName.trim().length === 0)) {
-      res.status(400).json({ error: "Le nom est invalide" });
-      return;
-    }
-    if (phone !== undefined && phone !== null && typeof phone !== "string") {
-      res.status(400).json({ error: "Le téléphone est invalide" });
-      return;
-    }
-    if (profession !== undefined && profession !== null && typeof profession !== "string") {
-      res.status(400).json({ error: "La profession est invalide" });
-      return;
-    }
 
     // Construire l'objet de mise à jour avec uniquement les champs fournis
     const data: Record<string, string | null> = {};

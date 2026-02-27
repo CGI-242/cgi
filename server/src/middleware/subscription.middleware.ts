@@ -100,7 +100,8 @@ export function requirePlan(minPlan: PlanName) {
 }
 
 /**
- * Vérifie le quota de questions de l'utilisateur (par user, pas par org).
+ * Vérifie et incrémente atomiquement le quota de questions de l'utilisateur (M13).
+ * L'incrément conditionnel évite les dépassements en cas de requêtes simultanées.
  */
 export async function checkQuestionQuota(req: AuthRequest, res: Response, next: NextFunction) {
   if (!req.orgId || !req.userId) {
@@ -118,21 +119,45 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
       return;
     }
 
-    // Récupérer le quota individuel du user
-    const member = await prisma.organizationMember.findUnique({
-      where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-      select: { questionsUsed: true },
-    });
+    // Quota illimité → pas de vérification
+    if (isUnlimited(ctx.questionsPerMonth)) {
+      (req as any).quotaIncremented = false;
+      next();
+      return;
+    }
 
-    const userUsed = member?.questionsUsed || 0;
+    // Incrément atomique conditionnel : vérifie ET incrémente en une seule requête SQL (M13)
+    const affected: number = await prisma.$executeRaw`
+      UPDATE organization_members
+      SET "questionsUsed" = "questionsUsed" + 1
+      WHERE "userId" = ${req.userId}
+        AND "organizationId" = ${req.orgId}
+        AND "questionsUsed" < ${ctx.questionsPerMonth}
+    `;
 
-    if (!isUnlimited(ctx.questionsPerMonth) && userUsed >= ctx.questionsPerMonth) {
+    if (affected === 0) {
+      // Soit le membre n'existe pas, soit le quota est atteint
+      const member = await prisma.organizationMember.findUnique({
+        where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
+        select: { questionsUsed: true },
+      });
+      const userUsed = member?.questionsUsed || 0;
       res.status(429).json({
         error: 'Quota de questions atteint pour ce mois',
         quota: { used: userUsed, limit: ctx.questionsPerMonth, plan: ctx.plan },
       });
       return;
     }
+
+    // Incrémenter aussi le compteur global org (fire-and-forget)
+    prisma.subscription.update({
+      where: { organizationId: req.orgId },
+      data: { questionsUsed: { increment: 1 } },
+    }).catch(() => {});
+
+    // Marquer que le quota a déjà été incrémenté (évite double incrément dans chat)
+    (req as any).quotaIncremented = true;
+    cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
     next();
   } catch (err) {
     logger.error('Erreur vérification quota', err);

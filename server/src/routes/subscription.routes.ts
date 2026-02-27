@@ -2,15 +2,14 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { activateBody, upgradeBody } from '../schemas/subscription.schema';
 import * as subscriptionService from '../services/subscription.service';
 import { AuditService } from '../services/audit.service';
-import { PlanName } from '../types/plans';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('SubscriptionRoutes');
 const router = Router();
-
-const VALID_PAID_PLANS: PlanName[] = ['BASIQUE', 'PRO'];
 
 /**
  * @swagger
@@ -63,14 +62,9 @@ router.get('/', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest,
  *         description: Plan invalide
  */
 // POST /api/subscription/activate — Activation manuelle après paiement (OWNER only)
-router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: activateBody }), async (req: AuthRequest, res: Response) => {
   try {
     const { plan } = req.body;
-
-    if (!plan || !VALID_PAID_PLANS.includes(plan)) {
-      res.status(400).json({ error: `Plan invalide. Plans disponibles : ${VALID_PAID_PLANS.join(', ')}` });
-      return;
-    }
 
     const updated = await subscriptionService.activateSubscription(req.orgId!, plan);
 
@@ -164,7 +158,7 @@ router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
  *         description: Abonnement introuvable
  */
 // POST /api/subscription/upgrade — Changer de plan
-router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
+router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: upgradeBody }), async (req: AuthRequest, res: Response) => {
   try {
     const updated = await subscriptionService.upgradePlan(req.orgId!, req.body.plan);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: updated.id, organizationId: req.orgId!, changes: { newPlan: req.body.plan } });

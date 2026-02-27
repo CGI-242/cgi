@@ -1,7 +1,7 @@
 // mobile/app/(app)/chat/index.tsx
 // Écran Chat IA fiscal — sidebar historique + zone chat
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import {
   View,
   Text,
@@ -60,9 +60,17 @@ export default function ChatScreen() {
   const isOnline = useOnlineStatus();
   const addToQueue = useOfflineQueue((s) => s.addMessage);
 
+  const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => {
+    return () => {
+      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    };
+  }, []);
 
   const scrollToBottom = useCallback(() => {
-    setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 100);
+    if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    scrollTimerRef.current = setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 100);
   }, []);
 
   // Charger historique à l'ouverture du panneau

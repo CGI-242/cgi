@@ -30,7 +30,7 @@ function extractToken(req: AuthRequest): string | null {
   return null;
 }
 
-export function requireAuth(req: AuthRequest, res: Response, next: NextFunction) {
+export async function requireAuth(req: AuthRequest, res: Response, next: NextFunction) {
   const token = extractToken(req);
 
   if (!token) {
@@ -48,8 +48,9 @@ export function requireAuth(req: AuthRequest, res: Response, next: NextFunction)
     const payload = verifyAccessToken(token);
 
     // Vérifier si tous les tokens de l'utilisateur ont été révoqués (logout-all)
+    // Utilise la version async qui vérifie aussi la base de données (M2)
     const decoded = JSON.parse(Buffer.from(token.split('.')[1], 'base64').toString());
-    if (decoded.iat && TokenBlacklistService.isUserBlacklisted(payload.userId, decoded.iat)) {
+    if (decoded.iat && await TokenBlacklistService.isUserBlacklistedAsync(payload.userId, decoded.iat)) {
       res.status(401).json({ error: "Session révoquée, veuillez vous reconnecter" });
       return;
     }
