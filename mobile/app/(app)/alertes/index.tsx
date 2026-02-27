@@ -63,8 +63,8 @@ export default function AlertesScreen() {
     loadData();
   }, [loadData]);
 
-  const types = stats ? Object.keys(stats.parType) : [];
-  const categories = stats ? Object.keys(stats.parCategorie) : [];
+  const types = stats?.parType ? Object.keys(stats.parType) : [];
+  const categories = stats?.parCategorie ? Object.keys(stats.parCategorie) : [];
 
   if (loading) {
     return (
@@ -109,7 +109,7 @@ export default function AlertesScreen() {
               <Text style={{ fontSize: 22, fontWeight: "800", color: "#374151" }}>{stats.total}</Text>
               <Text style={{ fontSize: 11, color: "#374151", fontWeight: "500" }}>Total</Text>
             </View>
-            {Object.entries(stats.parUrgence).map(([urgence, count]) => {
+            {Object.entries(stats.parUrgence || {}).map(([urgence, count]) => {
               const color = URGENCE_COLORS[urgence] || "#6b7280";
               return (
                 <View key={urgence} style={{ flex: 1, backgroundColor: `${color}10`, borderRadius: 10, padding: 12, alignItems: "center" }}>

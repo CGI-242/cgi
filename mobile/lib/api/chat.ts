@@ -3,7 +3,7 @@
 
 import { api, isWeb, isMobile } from "./client";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3004/api";
 
 // --- Types ---
 

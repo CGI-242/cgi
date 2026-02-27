@@ -59,7 +59,7 @@ const QUICK_ACTIONS = [
     icon: "chatbubbles-outline" as const,
     bg: "#e0f2fe",
     color: "#0284c7",
-    route: null,
+    route: "/(app)/chat",
   },
 ];
 

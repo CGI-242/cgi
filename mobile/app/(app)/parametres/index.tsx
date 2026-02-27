@@ -6,6 +6,7 @@ import {
   ScrollView,
   ActivityIndicator,
   Platform,
+  Switch,
 } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -80,9 +81,9 @@ export default function ParametresScreen() {
         }}
       >
         <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-          <Ionicons name="arrow-back" size={24} color={colors.sidebarText} />
+          <Ionicons name="arrow-back" size={24} color={colors.primary} />
         </TouchableOpacity>
-        <Text style={{ color: colors.sidebarText, fontSize: 20, fontWeight: "bold" }}>Paramètres</Text>
+        <Text style={{ color: colors.primary, fontSize: 20, fontWeight: "bold" }}>Paramètres</Text>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
@@ -120,8 +121,7 @@ export default function ParametresScreen() {
         {/* Section Apparence */}
         <SectionHeader title="APPARENCE" colors={colors} />
         <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
-          <TouchableOpacity
-            onPress={toggleTheme}
+          <View
             style={{
               flexDirection: "row",
               alignItems: "center",
@@ -130,10 +130,14 @@ export default function ParametresScreen() {
             }}
           >
             <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-            <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>Thème</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted }}>{mode === "light" ? "Clair" : "Sombre"}</Text>
-            <Ionicons name="chevron-forward" size={18} color={colors.disabled} style={{ marginLeft: 4 }} />
-          </TouchableOpacity>
+            <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>Mode sombre</Text>
+            <Switch
+              value={mode === "dark"}
+              onValueChange={toggleTheme}
+              trackColor={{ false: colors.border, true: colors.primary }}
+              thumbColor="#fff"
+            />
+          </View>
         </View>
 
         {/* Section Langue */}
@@ -192,6 +196,58 @@ export default function ParametresScreen() {
             <ActivityStats stats={stats} />
           </>
         )}
+
+        {/* Section Gestion */}
+        <SectionHeader title="GESTION" colors={colors} />
+        <View style={{ backgroundColor: colors.card, borderRadius: 12, overflow: "hidden" as const, marginBottom: 4 }}>
+          <SettingsRow
+            icon="card-outline"
+            label="Abonnement"
+            onPress={() => router.push("/(app)/abonnement")}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="people-outline"
+            label="Organisation"
+            onPress={() => router.push("/(app)/organisation")}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="bar-chart-outline"
+            label="Analytiques"
+            onPress={() => router.push("/(app)/analytics")}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="document-text-outline"
+            label="Audit"
+            onPress={() => router.push("/(app)/audit")}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="key-outline"
+            label="Permissions"
+            onPress={() => router.push("/(app)/permissions")}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="shield-checkmark-outline"
+            label="Administration"
+            onPress={() => router.push("/(app)/admin")}
+            showChevron
+            colors={colors}
+          />
+        </View>
 
         {/* Section A propos */}
         <SectionHeader title="À PROPOS" colors={colors} />

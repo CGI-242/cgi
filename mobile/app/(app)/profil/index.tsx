@@ -123,9 +123,9 @@ export default function ProfilScreen() {
         }}
       >
         <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 12 }}>
-          <Ionicons name="arrow-back" size={24} color="#fff" />
+          <Ionicons name="arrow-back" size={24} color="#00815d" />
         </TouchableOpacity>
-        <Text style={{ color: "#fff", fontSize: 20, fontWeight: "bold", flex: 1 }}>Mon profil</Text>
+        <Text style={{ color: "#00815d", fontSize: 20, fontWeight: "bold", flex: 1 }}>Mon profil</Text>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>

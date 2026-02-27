@@ -32,13 +32,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Code CGI", icon: "book-outline", route: "/(app)/code" },
   { label: "Simulateurs", icon: "calculator-outline", route: "/(app)/simulateur" },
   { label: "Chat IA", icon: "chatbubbles-outline", route: "/(app)/chat" },
-  { label: "Abonnement", icon: "card-outline", route: "/(app)/abonnement" },
   { label: "Alertes", icon: "notifications-outline", route: "/(app)/alertes" },
-  { label: "Organisation", icon: "people-outline", route: "/(app)/organisation" },
-  { label: "Analytiques", icon: "bar-chart-outline", route: "/(app)/analytics" },
-  { label: "Audit", icon: "document-text-outline", route: "/(app)/audit" },
-  { label: "Permissions", icon: "key-outline", route: "/(app)/permissions" },
-  { label: "Admin", icon: "shield-checkmark-outline", route: "/(app)/admin" },
 ];
 
 function isRouteActive(currentRoute: string, itemRoute: string): boolean {
@@ -57,16 +51,6 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
       label: "Mon profil",
       icon: "person-outline",
       action: () => router.push("/(app)/profil"),
-    },
-    {
-      label: "Mot de passe",
-      icon: "lock-closed-outline",
-      action: () => router.push("/(auth)/forgot-password"),
-    },
-    {
-      label: "Sécurité",
-      icon: "shield-checkmark-outline",
-      action: () => router.push("/(app)/securite" as any),
     },
     {
       label: "Paramètres",

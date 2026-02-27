@@ -28,7 +28,7 @@ Sur 52 problemes identifies, **52 sont corriges (100%)**. Toutes les priorites s
 
 | Probleme                                                      | Ce qui a ete fait                                           |
 | ------------------------------------------------------------- | ----------------------------------------------------------- |
-| L'adresse du serveur etait ecrite en dur (`localhost:3003`) | Remplacee par une variable d'environnement dans `.env`    |
+| L'adresse du serveur etait ecrite en dur (`localhost:3004`) | Remplacee par une variable d'environnement dans `.env`    |
 | Le code OTP de test s'affichait pour tout le monde            | Maintenant il s'affiche uniquement en mode developpement    |
 | Le fichier `.env` (mots de passe, cles) n'etait pas protege | Ajoute au `.gitignore` pour ne jamais etre envoye sur git |
 
