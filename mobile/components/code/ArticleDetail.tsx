@@ -1,27 +1,50 @@
+// mobile/components/code/ArticleDetail.tsx
+// Vue détaillée d'un article CGI avec synthèse vocale et références croisées
+
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
+import ReferencesBlock from "./ReferencesBlock";
+import { getArticleReferences, type ArticleReference } from "@/lib/api/chat";
 
 type Props = {
   article: ArticleData;
   onBack: () => void;
+  onSelectArticle?: (article: ArticleData) => void;
 };
 
-/** Limite de caracteres par segment pour la synthese vocale */
 const SPEECH_MAX_CHUNK = 3_000;
 
-export default function ArticleDetail({ article, onBack }: Props) {
+export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const stoppedRef = useRef(false);
+  const [references, setReferences] = useState<ArticleReference[]>([]);
+  const [referencedBy, setReferencedBy] = useState<ArticleReference[]>([]);
+  const [loadingRefs, setLoadingRefs] = useState(false);
 
   useEffect(() => {
     return () => {
       stoppedRef.current = true;
       Speech.stop();
     };
+  }, [article]);
+
+  // Charger les références croisées
+  useEffect(() => {
+    const numero = article.article.replace(/^Art\.\s*/, "").trim();
+    setLoadingRefs(true);
+    setReferences([]);
+    setReferencedBy([]);
+    getArticleReferences(numero)
+      .then((data) => {
+        setReferences(data.references);
+        setReferencedBy(data.referencedBy);
+      })
+      .catch(() => {})
+      .finally(() => setLoadingRefs(false));
   }, [article]);
 
   const prepareForSpeech = (text: string): string => {
@@ -150,6 +173,13 @@ export default function ArticleDetail({ article, onBack }: Props) {
           </View>
         </View>
       )}
+
+      <ReferencesBlock
+        references={references}
+        referencedBy={referencedBy}
+        loading={loadingRefs}
+        onSelectArticle={onSelectArticle}
+      />
     </ScrollView>
   );
 }

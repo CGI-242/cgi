@@ -12,6 +12,20 @@ const router = Router();
 
 const VALID_PAID_PLANS: PlanName[] = ['BASIQUE', 'PRO'];
 
+/**
+ * @swagger
+ * /api/subscription:
+ *   get:
+ *     tags: [Subscriptions]
+ *     summary: Statut de l'abonnement
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Détails de l'abonnement
+ *       404:
+ *         description: Abonnement introuvable
+ */
 // GET /api/subscription — status de l'abonnement
 router.get('/', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest, res: Response) => {
   try {
@@ -24,6 +38,30 @@ router.get('/', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest,
   }
 });
 
+/**
+ * @swagger
+ * /api/subscription/activate:
+ *   post:
+ *     tags: [Subscriptions]
+ *     summary: Activer un plan payant
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               plan:
+ *                 type: string
+ *                 example: PRO
+ *     responses:
+ *       200:
+ *         description: Abonnement activé
+ *       400:
+ *         description: Plan invalide
+ */
 // POST /api/subscription/activate — Activation manuelle après paiement (OWNER only)
 router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -58,6 +96,20 @@ router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, a
   }
 });
 
+/**
+ * @swagger
+ * /api/subscription/renew:
+ *   post:
+ *     tags: [Subscriptions]
+ *     summary: Renouveler l'abonnement
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Abonnement renouvelé
+ *       400:
+ *         description: Renouvellement impossible
+ */
 // POST /api/subscription/renew — Renouvellement après paiement (OWNER only)
 router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -85,6 +137,32 @@ router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
   }
 });
 
+/**
+ * @swagger
+ * /api/subscription/upgrade:
+ *   post:
+ *     tags: [Subscriptions]
+ *     summary: Changer de plan (upgrade)
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               plan:
+ *                 type: string
+ *                 example: PRO
+ *     responses:
+ *       200:
+ *         description: Plan mis à jour
+ *       400:
+ *         description: Upgrade impossible
+ *       404:
+ *         description: Abonnement introuvable
+ */
 // POST /api/subscription/upgrade — Changer de plan
 router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -99,6 +177,20 @@ router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, as
   }
 });
 
+/**
+ * @swagger
+ * /api/subscription/quota:
+ *   get:
+ *     tags: [Subscriptions]
+ *     summary: Vérifier le statut du quota
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Statut du quota
+ *       404:
+ *         description: Abonnement introuvable
+ */
 // GET /api/subscription/quota — Statut du quota
 router.get('/quota', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest, res: Response) => {
   try {

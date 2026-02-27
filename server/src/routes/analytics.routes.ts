@@ -6,6 +6,18 @@ import * as analyticsService from '../services/analytics.service';
 
 const router = Router();
 
+/**
+ * @swagger
+ * /api/analytics/dashboard:
+ *   get:
+ *     tags: [Analytics]
+ *     summary: Obtenir les données du tableau de bord
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Données du tableau de bord
+ */
 // GET /api/analytics/dashboard
 router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, async (req: AuthRequest, res: Response) => {
   try {
@@ -16,6 +28,25 @@ router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, 
   }
 });
 
+/**
+ * @swagger
+ * /api/analytics/timeseries:
+ *   get:
+ *     tags: [Analytics]
+ *     summary: Obtenir les données de série temporelle
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: days
+ *         schema:
+ *           type: number
+ *           default: 30
+ *         description: Nombre de jours à inclure
+ *     responses:
+ *       200:
+ *         description: Données de série temporelle
+ */
 // GET /api/analytics/timeseries
 router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -27,6 +58,18 @@ router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, 
   }
 });
 
+/**
+ * @swagger
+ * /api/analytics/members:
+ *   get:
+ *     tags: [Analytics]
+ *     summary: Obtenir les statistiques des membres
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Statistiques des membres
+ */
 // GET /api/analytics/members
 router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -37,6 +80,29 @@ router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, asy
   }
 });
 
+/**
+ * @swagger
+ * /api/analytics/export:
+ *   get:
+ *     tags: [Analytics]
+ *     summary: Exporter les données en CSV
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: days
+ *         schema:
+ *           type: number
+ *           default: 30
+ *         description: Nombre de jours à inclure
+ *     responses:
+ *       200:
+ *         description: Fichier CSV exporté
+ *         content:
+ *           text/csv:
+ *             schema:
+ *               type: string
+ */
 // GET /api/analytics/export
 router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {

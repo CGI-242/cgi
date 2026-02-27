@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -48,6 +49,7 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
 }
 
 export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
+  const { colors } = useTheme();
   const logout = useAuthStore((s) => s.logout);
 
   const profileItems: ProfileItem[] = [
@@ -86,7 +88,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     <View
       style={{
         width: sidebarWidth,
-        backgroundColor: "#1a1a1a",
+        backgroundColor: colors.sidebar,
         paddingTop: 16,
         paddingBottom: 16,
         justifyContent: "space-between",
@@ -107,16 +109,16 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           }}
         >
           {collapsed ? (
-            <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 22 }}>C</Text>
+            <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 22 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: "#00c17c", fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
+              <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
               <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>Code Général des Impôts</Text>
             </View>
           )}
           {!collapsed && (
             <TouchableOpacity onPress={onToggle} accessibilityLabel="Replier la sidebar" accessibilityRole="button">
-              <Ionicons name="chevron-back-outline" size={20} color="#fff" />
+              <Ionicons name="chevron-back-outline" size={20} color={colors.sidebarText} />
             </TouchableOpacity>
           )}
         </View>
@@ -128,7 +130,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             accessibilityLabel="Déployer la sidebar"
             accessibilityRole="button"
           >
-            <Ionicons name="chevron-forward-outline" size={20} color="#fff" />
+            <Ionicons name="chevron-forward-outline" size={20} color={colors.sidebarText} />
           </TouchableOpacity>
         )}
 
@@ -156,20 +158,20 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 paddingHorizontal: collapsed ? 0 : 16,
                 backgroundColor: active ? "#333" : "transparent",
                 borderLeftWidth: active ? 3 : 0,
-                borderLeftColor: active ? "#00c17c" : "transparent",
+                borderLeftColor: active ? colors.accent : "transparent",
                 opacity: disabled ? 0.5 : 1,
               }}
             >
               <Ionicons
                 name={item.icon}
                 size={20}
-                color={active ? "#00c17c" : "#fff"}
+                color={active ? colors.accent : colors.sidebarText}
               />
               {!collapsed && (
                 <View style={{ flexDirection: "row", alignItems: "center", flex: 1, marginLeft: 12 }}>
                   <Text
                     style={{
-                      color: active ? "#00c17c" : "#fff",
+                      color: active ? colors.accent : colors.sidebarText,
                       fontSize: 14,
                       fontWeight: active ? "700" : "400",
                     }}
@@ -186,7 +188,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                         marginLeft: 8,
                       }}
                     >
-                      <Text style={{ fontSize: 9, fontWeight: "700", color: "#9ca3af" }}>BIENTÔT</Text>
+                      <Text style={{ fontSize: 9, fontWeight: "700", color: colors.textMuted }}>BIENTÔT</Text>
                     </View>
                   )}
                 </View>
@@ -218,11 +220,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 paddingHorizontal: collapsed ? 0 : 16,
               }}
             >
-              <Ionicons name={item.icon} size={20} color={item.color || "#fff"} />
+              <Ionicons name={item.icon} size={20} color={item.color || colors.sidebarText} />
               {!collapsed && (
                 <Text
                   style={{
-                    color: item.color || "#fff",
+                    color: item.color || colors.sidebarText,
                     fontSize: 14,
                     fontWeight: item.color ? "600" : "400",
                     marginLeft: 12,

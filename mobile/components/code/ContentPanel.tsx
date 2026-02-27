@@ -26,6 +26,7 @@ export default function ContentPanel({
       <ArticleDetail
         article={selectedArticle}
         onBack={() => onSelectArticle(null)}
+        onSelectArticle={onSelectArticle}
       />
     );
   }

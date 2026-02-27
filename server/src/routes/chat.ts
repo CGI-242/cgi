@@ -11,6 +11,18 @@ const logger = createLogger('ChatRoutes');
 
 const router = Router();
 
+/**
+ * @swagger
+ * /chat/message/stream:
+ *   post:
+ *     tags: [Chat]
+ *     summary: Envoyer un message avec streaming SSE
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Flux SSE de la réponse du chat
+ */
 // POST /api/chat/message/stream — Envoyer un message avec streaming SSE
 router.post("/message/stream", requireAuth, async (req: AuthRequest, res: Response) => {
   const userId = req.userId!;
@@ -45,6 +57,18 @@ router.post("/message/stream", requireAuth, async (req: AuthRequest, res: Respon
   }
 });
 
+/**
+ * @swagger
+ * /chat/conversations:
+ *   get:
+ *     tags: [Chat]
+ *     summary: Lister les conversations de l'utilisateur
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des conversations
+ */
 // GET /api/chat/conversations — Lister les conversations
 router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -56,6 +80,27 @@ router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response
   }
 });
 
+/**
+ * @swagger
+ * /chat/conversations/{id}:
+ *   get:
+ *     tags: [Chat]
+ *     summary: Récupérer une conversation avec ses messages
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de la conversation
+ *     responses:
+ *       200:
+ *         description: Détails de la conversation
+ *       404:
+ *         description: Conversation introuvable
+ */
 // GET /api/chat/conversations/:id — Recuperer une conversation avec messages
 router.get("/conversations/:id", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -73,6 +118,27 @@ router.get("/conversations/:id", requireAuth, async (req: AuthRequest, res: Resp
   }
 });
 
+/**
+ * @swagger
+ * /chat/conversations/{id}:
+ *   delete:
+ *     tags: [Chat]
+ *     summary: Supprimer une conversation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de la conversation
+ *     responses:
+ *       200:
+ *         description: Conversation supprimée
+ *       404:
+ *         description: Conversation introuvable
+ */
 // DELETE /api/chat/conversations/:id — Supprimer une conversation
 router.delete("/conversations/:id", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -90,6 +156,27 @@ router.delete("/conversations/:id", requireAuth, async (req: AuthRequest, res: R
   }
 });
 
+/**
+ * @swagger
+ * /chat/article/{numero}/references:
+ *   get:
+ *     tags: [Chat]
+ *     summary: Obtenir les références croisées d'un article
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: numero
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Numéro de l'article
+ *     responses:
+ *       200:
+ *         description: Références croisées de l'article
+ *       404:
+ *         description: Article introuvable
+ */
 // GET /api/chat/article/:numero/references — Articles liés par références croisées
 router.get("/article/:numero/references", requireAuth, async (req: AuthRequest, res: Response) => {
   try {

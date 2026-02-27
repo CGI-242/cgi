@@ -15,6 +15,18 @@ function handleError(res: Response, err: unknown) {
   res.status(500).json({ error: 'Erreur serveur' });
 }
 
+/**
+ * @swagger
+ * /organizations:
+ *   get:
+ *     tags: [Organizations]
+ *     summary: Liste des organisations de l'utilisateur
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des organisations
+ */
 // GET /api/organizations — liste des orgas du user
 router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -23,6 +35,18 @@ router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Créer une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       201:
+ *         description: Organisation créée
+ */
 // POST /api/organizations — créer une organisation
 router.post('/', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -32,6 +56,27 @@ router.post('/', requireAuth, async (req: AuthRequest, res: Response) => {
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}:
+ *   get:
+ *     tags: [Organizations]
+ *     summary: Récupérer une organisation par ID
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Détails de l'organisation
+ *       404:
+ *         description: Organisation introuvable
+ */
 // GET /api/organizations/:id
 router.get('/:id', requireAuth, resolveTenant, requireOrg, requireMember, async (req: AuthRequest, res: Response) => {
   try {
@@ -41,6 +86,27 @@ router.get('/:id', requireAuth, resolveTenant, requireOrg, requireMember, async 
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}:
+ *   put:
+ *     tags: [Organizations]
+ *     summary: Mettre à jour une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Organisation mise à jour
+ *       404:
+ *         description: Organisation introuvable
+ */
 // PUT /api/organizations/:id
 router.put('/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -51,6 +117,27 @@ router.put('/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, async (
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}:
+ *   delete:
+ *     tags: [Organizations]
+ *     summary: Supprimer une organisation (soft delete)
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Organisation supprimée
+ *       404:
+ *         description: Organisation introuvable
+ */
 // DELETE /api/organizations/:id — soft delete
 router.delete('/:id', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -61,6 +148,25 @@ router.delete('/:id', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/members:
+ *   get:
+ *     tags: [Organizations]
+ *     summary: Lister les membres d'une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Liste des membres
+ */
 // GET /api/organizations/:id/members
 router.get('/:id/members', requireAuth, resolveTenant, requireOrg, requireMember, async (req: AuthRequest, res: Response) => {
   try {
@@ -70,6 +176,25 @@ router.get('/:id/members', requireAuth, resolveTenant, requireOrg, requireMember
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/members/invite:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Inviter un membre dans l'organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       201:
+ *         description: Invitation envoyée
+ */
 // POST /api/organizations/:id/members/invite
 router.post('/:id/members/invite', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -80,6 +205,31 @@ router.post('/:id/members/invite', requireAuth, resolveTenant, requireOrg, requi
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/members/{userId}:
+ *   delete:
+ *     tags: [Organizations]
+ *     summary: Retirer un membre de l'organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur à retirer
+ *     responses:
+ *       200:
+ *         description: Membre retiré
+ */
 // DELETE /api/organizations/:id/members/:userId
 router.delete('/:id/members/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -91,6 +241,31 @@ router.delete('/:id/members/:userId', requireAuth, resolveTenant, requireOrg, re
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/members/{userId}/role:
+ *   put:
+ *     tags: [Organizations]
+ *     summary: Changer le rôle d'un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     responses:
+ *       200:
+ *         description: Rôle mis à jour
+ */
 // PUT /api/organizations/:id/members/:userId/role
 router.put('/:id/members/:userId/role', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -102,6 +277,25 @@ router.put('/:id/members/:userId/role', requireAuth, resolveTenant, requireOrg, 
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/transfer-ownership:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Transférer la propriété de l'organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Propriété transférée
+ */
 // POST /api/organizations/:id/transfer-ownership
 router.post('/:id/transfer-ownership', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -112,6 +306,25 @@ router.post('/:id/transfer-ownership', requireAuth, resolveTenant, requireOrg, r
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/invitations:
+ *   get:
+ *     tags: [Organizations]
+ *     summary: Lister les invitations d'une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Liste des invitations
+ */
 // GET /api/organizations/:id/invitations
 router.get('/:id/invitations', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -121,6 +334,31 @@ router.get('/:id/invitations', requireAuth, resolveTenant, requireOrg, requireAd
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/invitations/{invId}:
+ *   delete:
+ *     tags: [Organizations]
+ *     summary: Annuler une invitation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *       - in: path
+ *         name: invId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'invitation
+ *     responses:
+ *       200:
+ *         description: Invitation annulée
+ */
 // DELETE /api/organizations/:id/invitations/:invId
 router.delete('/:id/invitations/:invId', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -131,6 +369,18 @@ router.delete('/:id/invitations/:invId', requireAuth, resolveTenant, requireOrg,
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/accept-invitation:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Accepter une invitation
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Invitation acceptée
+ */
 // POST /api/organizations/accept-invitation — auth only, pas d'org
 router.post('/accept-invitation', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -140,6 +390,25 @@ router.post('/accept-invitation', requireAuth, async (req: AuthRequest, res: Res
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/restore:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Restaurer une organisation supprimée
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Organisation restaurée
+ */
 // POST /api/organizations/:id/restore
 router.post('/:id/restore', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -150,6 +419,25 @@ router.post('/:id/restore', requireAuth, resolveTenant, requireOrg, requireOwner
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /organizations/{id}/permanent:
+ *   delete:
+ *     tags: [Organizations]
+ *     summary: Supprimer définitivement une organisation (hard delete)
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     responses:
+ *       200:
+ *         description: Organisation supprimée définitivement
+ */
 // DELETE /api/organizations/:id/permanent — hard delete
 router.delete('/:id/permanent', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {

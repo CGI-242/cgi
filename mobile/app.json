@@ -20,7 +20,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.normxai.cgi242",
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "Non utilise",
+        "NSMicrophoneUsageDescription": "Utilisé pour la recherche vocale",
         "ITSAppUsesNonExemptEncryption": false
       }
     },
@@ -31,7 +31,9 @@
       },
       "edgeToEdgeEnabled": true,
       "package": "com.normxai.cgi242",
-      "permissions": []
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -42,12 +44,23 @@
       "expo-router",
       "expo-secure-store",
       "expo-font",
-      "@sentry/react-native"
+      "@sentry/react-native",
+      "expo-speech-recognition",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#00815d"
+        }
+      ],
+      "expo-localization"
     ],
     "extra": {
       "privacyUrl": "https://cgi242.normx.ai/confidentialite",
       "termsUrl": "https://cgi242.normx.ai/conditions"
     },
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }

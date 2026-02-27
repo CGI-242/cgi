@@ -14,6 +14,22 @@ import { createLogger } from '../utils/logger';
 const logger = createLogger('MFARoutes');
 const router = Router();
 
+/**
+ * @swagger
+ * /mfa/status:
+ *   get:
+ *     tags: [MFA]
+ *     summary: Obtenir le statut MFA de l'utilisateur
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Statut MFA retourné
+ *       400:
+ *         description: Erreur lors de la récupération du statut
+ *       401:
+ *         description: Non authentifié
+ */
 // GET /api/mfa/status
 router.get('/status', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -25,6 +41,22 @@ router.get('/status', requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /mfa/setup:
+ *   post:
+ *     tags: [MFA]
+ *     summary: Générer la configuration MFA (QR code et secret)
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Configuration MFA générée (QR code + secret)
+ *       400:
+ *         description: Erreur lors de la génération
+ *       401:
+ *         description: Non authentifié
+ */
 // POST /api/mfa/setup
 router.post('/setup', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -36,6 +68,33 @@ router.post('/setup', requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /mfa/enable:
+ *   post:
+ *     tags: [MFA]
+ *     summary: Activer le MFA avec un code TOTP
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [code]
+ *             properties:
+ *               code:
+ *                 type: string
+ *                 description: Code TOTP généré par l'application d'authentification
+ *     responses:
+ *       200:
+ *         description: MFA activé, codes de secours retournés
+ *       400:
+ *         description: Code TOTP manquant ou invalide
+ *       401:
+ *         description: Non authentifié
+ */
 // POST /api/mfa/enable
 router.post('/enable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
   try {
@@ -68,6 +127,33 @@ router.post('/enable', requireAuth, sensitiveLimiter, async (req: AuthRequest, r
   }
 });
 
+/**
+ * @swagger
+ * /mfa/disable:
+ *   post:
+ *     tags: [MFA]
+ *     summary: Désactiver le MFA avec confirmation par mot de passe
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [password]
+ *             properties:
+ *               password:
+ *                 type: string
+ *                 description: Mot de passe de l'utilisateur pour confirmation
+ *     responses:
+ *       200:
+ *         description: MFA désactivé
+ *       400:
+ *         description: Mot de passe manquant ou MFA non activé
+ *       401:
+ *         description: Non authentifié ou mot de passe incorrect
+ */
 // POST /api/mfa/disable
 router.post('/disable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
   try {
@@ -111,6 +197,36 @@ router.post('/disable', requireAuth, sensitiveLimiter, async (req: AuthRequest, 
   }
 });
 
+/**
+ * @swagger
+ * /mfa/verify:
+ *   post:
+ *     tags: [MFA]
+ *     summary: Vérification MFA pendant le login (public avec rate limit)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [mfaToken, code]
+ *             properties:
+ *               mfaToken:
+ *                 type: string
+ *                 description: Token MFA temporaire reçu après verify-otp
+ *               code:
+ *                 type: string
+ *                 description: Code TOTP ou code de secours
+ *     responses:
+ *       200:
+ *         description: MFA vérifié, tokens d'authentification retournés
+ *       400:
+ *         description: mfaToken et code requis
+ *       401:
+ *         description: Token MFA invalide, expiré ou code MFA invalide
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/mfa/verify (pendant le login, public avec authLimiter)
 router.post('/verify', authLimiter, async (req: AuthRequest, res: Response) => {
   try {
@@ -194,6 +310,22 @@ router.post('/verify', authLimiter, async (req: AuthRequest, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /mfa/backup-codes/regenerate:
+ *   post:
+ *     tags: [MFA]
+ *     summary: Régénérer les codes de secours MFA
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Nouveaux codes de secours générés
+ *       400:
+ *         description: MFA non activé
+ *       401:
+ *         description: Non authentifié
+ */
 // POST /api/mfa/backup-codes/regenerate
 router.post('/backup-codes/regenerate', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
   try {

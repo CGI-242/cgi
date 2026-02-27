@@ -33,8 +33,16 @@ function requireAdmin(req: AuthRequest, res: Response, next: () => void) {
 }
 
 /**
- * GET /api/admin/organizations
- * Liste toutes les organisations avec leurs informations d'abonnement et nombre de membres.
+ * @swagger
+ * /api/admin/organizations:
+ *   get:
+ *     tags: [Admin]
+ *     summary: Liste de toutes les organisations
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des organisations avec abonnements et membres
  */
 router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest, res: Response) => {
   try {
@@ -85,9 +93,32 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
 });
 
 /**
- * POST /api/admin/organizations/:orgId/activate
- * Active un abonnement BASIQUE ou PRO pour une organisation.
- * Body : { plan: "BASIQUE" | "PRO" }
+ * @swagger
+ * /api/admin/organizations/{orgId}/activate:
+ *   post:
+ *     tags: [Admin]
+ *     summary: Activer l'abonnement d'une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: orgId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               plan:
+ *                 type: string
+ *                 enum: [BASIQUE, PRO]
+ *     responses:
+ *       200:
+ *         description: Abonnement activé
  */
 router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -118,8 +149,22 @@ router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, async (
 });
 
 /**
- * POST /api/admin/organizations/:orgId/renew
- * Renouvelle l'abonnement d'une organisation pour 1 an supplementaire.
+ * @swagger
+ * /api/admin/organizations/{orgId}/renew:
+ *   post:
+ *     tags: [Admin]
+ *     summary: Renouveler l'abonnement d'une organisation
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: orgId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Abonnement renouvelé
  */
 router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {

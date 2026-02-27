@@ -6,7 +6,18 @@ import { createLogger } from "../utils/logger";
 const logger = createLogger("UserRoutes");
 const router = Router();
 
-// GET /api/user/profile — Retourne le profil de l'utilisateur connecté
+/**
+ * @swagger
+ * /api/user/profile:
+ *   get:
+ *     tags: [User]
+ *     summary: Profil de l'utilisateur connecté
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Profil utilisateur
+ */
 router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const user = await prisma.user.findUnique({
@@ -69,7 +80,33 @@ router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
-// PUT /api/user/profile — Met à jour les champs éditables
+/**
+ * @swagger
+ * /api/user/profile:
+ *   put:
+ *     tags: [User]
+ *     summary: Mise à jour du profil utilisateur
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               firstName:
+ *                 type: string
+ *               lastName:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               profession:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Profil mis à jour
+ */
 router.put("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const { firstName, lastName, phone, profession } = req.body;

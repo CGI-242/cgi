@@ -4,9 +4,15 @@ import { Redirect, Stack, usePathname } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
+import { useOfflineSync } from "@/lib/hooks/useOfflineSync";
+import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import Sidebar from "@/components/Sidebar";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 export default function AppLayout() {
+  const { colors } = useTheme();
+  useOfflineSync();
+  usePushNotifications();
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
   const loggedOut = useAuthStore((s) => s.loggedOut);
   const isOnline = useOnlineStatus();
@@ -29,17 +35,17 @@ export default function AppLayout() {
       />
       <View style={{ flex: 1 }}>
         {!isOnline && (
-          <View style={{ backgroundColor: "#f59e0b", paddingHorizontal: 16, paddingVertical: 8, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-            <Ionicons name="cloud-offline-outline" size={16} color="#fff" style={{ marginRight: 8 }} />
-            <Text style={{ color: "#fff", fontSize: 13, fontWeight: "600" }}>
+          <View style={{ backgroundColor: colors.warning, paddingHorizontal: 16, paddingVertical: 8, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+            <Ionicons name="cloud-offline-outline" size={16} color={colors.sidebarText} style={{ marginRight: 8 }} />
+            <Text style={{ color: colors.sidebarText, fontSize: 13, fontWeight: "600" }}>
               Mode hors-ligne — Le Code CGI et les simulateurs restent accessibles
             </Text>
           </View>
         )}
         <Stack
           screenOptions={{
-            headerStyle: { backgroundColor: "#00815d" },
-            headerTintColor: "#fff",
+            headerStyle: { backgroundColor: colors.primary },
+            headerTintColor: colors.sidebarText,
             headerTitleStyle: { fontWeight: "bold" },
             animation: "slide_from_right",
           }}

@@ -30,6 +30,43 @@ function sendTokens(req: Request, res: Response, token: string, refreshToken: st
   }
 }
 
+/**
+ * @swagger
+ * /auth/register:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Inscription d'un utilisateur avec création d'organisation
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [entrepriseNom, nom, prenom, email, password]
+ *             properties:
+ *               entrepriseNom:
+ *                 type: string
+ *               nom:
+ *                 type: string
+ *               prenom:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               password:
+ *                 type: string
+ *               telephone:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Utilisateur créé avec organisation
+ *       400:
+ *         description: Champs obligatoires manquants
+ *       409:
+ *         description: Email déjà utilisé
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/register
 router.post("/register", async (req: Request, res: Response) => {
   try {
@@ -125,6 +162,35 @@ router.post("/register", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/login:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Connexion avec email et mot de passe
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email, password]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Connexion réussie, OTP envoyé par email
+ *       400:
+ *         description: Email et mot de passe requis
+ *       401:
+ *         description: Identifiants incorrects
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/login
 router.post("/login", async (req: Request, res: Response) => {
   try {
@@ -191,6 +257,33 @@ router.post("/login", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/verify-otp:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Vérification du code OTP
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email, otp]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               otp:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: OTP vérifié, tokens retournés (ou requireMFA si MFA activé)
+ *       400:
+ *         description: Code invalide
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/verify-otp
 router.post("/verify-otp", async (req: Request, res: Response) => {
   try {
@@ -267,6 +360,29 @@ router.post("/verify-otp", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/send-otp-email:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Renvoi du code OTP par email
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Code OTP envoyé (si le compte existe)
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/send-otp-email
 router.post("/send-otp-email", async (req: Request, res: Response) => {
   try {
@@ -299,6 +415,29 @@ router.post("/send-otp-email", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/forgot-password:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Demande de réinitialisation de mot de passe
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Code de réinitialisation envoyé (si le compte existe)
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/forgot-password
 router.post("/forgot-password", async (req: Request, res: Response) => {
   try {
@@ -341,6 +480,36 @@ router.post("/forgot-password", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/reset-password:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Réinitialisation du mot de passe avec code
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email, code, newPassword]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               code:
+ *                 type: string
+ *               newPassword:
+ *                 type: string
+ *                 minLength: 8
+ *     responses:
+ *       200:
+ *         description: Mot de passe modifié avec succès
+ *       400:
+ *         description: Champs manquants, code invalide ou expiré
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/reset-password
 router.post("/reset-password", sensitiveLimiter, async (req: Request, res: Response) => {
   try {
@@ -391,6 +560,28 @@ router.post("/reset-password", sensitiveLimiter, async (req: Request, res: Respo
   }
 });
 
+/**
+ * @swagger
+ * /auth/refresh-token:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Renouvellement du JWT via refresh token
+ *     requestBody:
+ *       required: false
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               refreshToken:
+ *                 type: string
+ *                 description: Refresh token (mobile uniquement, lu depuis cookie pour le web)
+ *     responses:
+ *       200:
+ *         description: Nouveaux tokens générés
+ *       401:
+ *         description: Refresh token manquant, invalide, expiré ou révoqué
+ */
 // POST /api/auth/refresh-token
 router.post("/refresh-token", async (req: Request, res: Response) => {
   try {
@@ -443,6 +634,36 @@ router.post("/refresh-token", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/check-email:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Vérifier si un email existe déjà
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Résultat de la vérification
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 exists:
+ *                   type: boolean
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/check-email
 router.post("/check-email", async (req: Request, res: Response) => {
   try {
@@ -454,6 +675,22 @@ router.post("/check-email", async (req: Request, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/logout:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Déconnexion de la session courante
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Déconnexion réussie
+ *       401:
+ *         description: Non authentifié
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/logout
 router.post("/logout", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
@@ -485,6 +722,22 @@ router.post("/logout", requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
+/**
+ * @swagger
+ * /auth/logout-all:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Révocation de toutes les sessions de l'utilisateur
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Toutes les sessions ont été révoquées
+ *       401:
+ *         description: Non authentifié
+ *       500:
+ *         description: Erreur serveur
+ */
 // POST /api/auth/logout-all
 router.post("/logout-all", requireAuth, async (req: AuthRequest, res: Response) => {
   try {

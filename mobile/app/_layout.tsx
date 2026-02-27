@@ -1,3 +1,4 @@
+import "@/lib/i18n";
 import "../global.css";
 import { useEffect } from "react";
 import { Platform } from "react-native";
@@ -6,6 +7,7 @@ import { StatusBar } from "expo-status-bar";
 import * as SplashScreen from "expo-splash-screen";
 import * as ScreenCapture from "expo-screen-capture";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import { ThemeProvider } from "@/lib/theme/ThemeContext";
 import { initSentry, Sentry } from "@/lib/sentry";
 
 initSentry();
@@ -34,13 +36,15 @@ function RootLayout() {
   }, []);
 
   return (
-    <ErrorBoundary>
-      <StatusBar style="light" backgroundColor="#00815d" />
-      <Stack screenOptions={{ headerShown: false, title: "CGI242" }}>
-        <Stack.Screen name="(auth)" options={{ title: "CGI242" }} />
-        <Stack.Screen name="(app)" options={{ title: "CGI242" }} />
-      </Stack>
-    </ErrorBoundary>
+    <ThemeProvider>
+      <ErrorBoundary>
+        <StatusBar style="light" backgroundColor="#00815d" />
+        <Stack screenOptions={{ headerShown: false, title: "CGI242" }}>
+          <Stack.Screen name="(auth)" options={{ title: "CGI242" }} />
+          <Stack.Screen name="(app)" options={{ title: "CGI242" }} />
+        </Stack>
+      </ErrorBoundary>
+    </ThemeProvider>
   );
 }
 

@@ -27,22 +27,27 @@ function requireAdmin(req: AuthRequest, res: Response, next: () => void) {
 }
 
 /**
- * POST /api/ingestion/articles
- * Ingestion directe d'articles au format ArticleJSON[].
- *
- * Body : { articles: ArticleJSON[] }
- *
- * Chaque article :
- * {
- *   numero: string,      // ex: "86A"
- *   titre: string,       // ex: "Taux de l'impôt sur les sociétés"
- *   contenu: string,     // texte complet de l'article
- *   tome?: string,       // ex: "1"
- *   chapitre?: string,   // ex: "Chapitre 1 - IS"
- *   version?: string,    // ex: "2026" (défaut: "2026")
- *   keywords?: string[], // ex: ["IS", "taux", "28%"]
- *   livre?: string       // ex: "Livre 1"
- * }
+ * @swagger
+ * /api/ingestion/articles:
+ *   post:
+ *     tags: [Ingestion]
+ *     summary: Ingestion directe d'articles
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               articles:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *     responses:
+ *       200:
+ *         description: Résultat de l'ingestion
  */
 router.post('/articles', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -81,16 +86,27 @@ router.post('/articles', requireAuth, requireAdmin, async (req: AuthRequest, res
 });
 
 /**
- * POST /api/ingestion/sources
- * Ingestion depuis des fichiers source au format SourceFile[].
- *
- * Body : { sources: SourceFile[] }
- *
- * Chaque source :
- * {
- *   filename: string,
- *   articles: ArticleJSON[]
- * }
+ * @swagger
+ * /api/ingestion/sources:
+ *   post:
+ *     tags: [Ingestion]
+ *     summary: Ingestion depuis des fichiers source
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               sources:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *     responses:
+ *       200:
+ *         description: Résultat de l'ingestion
  */
 router.post('/sources', requireAuth, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -119,8 +135,16 @@ router.post('/sources', requireAuth, requireAdmin, async (req: AuthRequest, res:
 });
 
 /**
- * GET /api/ingestion/stats
- * Statistiques sur les articles ingérés.
+ * @swagger
+ * /api/ingestion/stats:
+ *   get:
+ *     tags: [Ingestion]
+ *     summary: Statistiques d'ingestion
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Statistiques des articles ingérés
  */
 router.get('/stats', requireAuth, requireAdmin, async (_req: AuthRequest, res: Response) => {
   try {

@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
+import swaggerUi from "swagger-ui-express";
+import { swaggerSpec } from "./config/swagger";
 import { globalLimiter, authLimiter } from "./middleware/rateLimit.middleware";
 import authRoutes from "./routes/auth";
 import mfaRoutes from "./routes/mfa.routes";
@@ -15,6 +17,9 @@ import alertesFiscalesRoutes from "./routes/alertes-fiscales.routes";
 import userRoutes from "./routes/user.routes";
 import adminRoutes from "./routes/admin.routes";
 import ingestionRoutes from "./routes/ingestion.routes";
+import searchHistoryRoutes from "./routes/search-history.routes";
+import userStatsRoutes from "./routes/user-stats.routes";
+import notificationRoutes from "./routes/notifications.routes";
 import { startReminderCron } from "./services/reminder.service";
 
 const app = express();
@@ -53,6 +58,10 @@ app.use(cookieParser());
 // Rate limiting global
 app.use(globalLimiter);
 
+// Swagger UI
+app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
+
 // Routes
 app.use("/api/auth", authLimiter, authRoutes);
 app.use("/api/mfa", mfaRoutes);
@@ -66,6 +75,9 @@ app.use("/api/alertes-fiscales", alertesFiscalesRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/ingestion", ingestionRoutes);
+app.use("/api/search-history", searchHistoryRoutes);
+app.use("/api/user/stats", userStatsRoutes);
+app.use("/api/notifications", notificationRoutes);
 
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
 startReminderCron();

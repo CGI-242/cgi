@@ -15,11 +15,35 @@ function handleError(res: Response, err: unknown) {
   res.status(500).json({ error: 'Erreur serveur' });
 }
 
+/**
+ * @swagger
+ * /api/permissions/available:
+ *   get:
+ *     tags: [Permissions]
+ *     summary: Lister les permissions disponibles
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des permissions disponibles
+ */
 // GET /api/permissions/available
 router.get('/available', requireAuth, async (_req: AuthRequest, res: Response) => {
   res.json(permissionService.listAvailable());
 });
 
+/**
+ * @swagger
+ * /api/permissions/my:
+ *   get:
+ *     tags: [Permissions]
+ *     summary: Obtenir mes permissions
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Permissions de l'utilisateur courant
+ */
 // GET /api/permissions/my — mes permissions
 router.get('/my', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest, res: Response) => {
   try {
@@ -28,6 +52,25 @@ router.get('/my', requireAuth, resolveTenant, requireOrg, async (req: AuthReques
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/check/{permission}:
+ *   get:
+ *     tags: [Permissions]
+ *     summary: Vérifier une permission spécifique
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: permission
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Nom de la permission à vérifier
+ *     responses:
+ *       200:
+ *         description: Résultat de la vérification
+ */
 // GET /api/permissions/check/:permission
 router.get('/check/:permission', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest, res: Response) => {
   try {
@@ -37,6 +80,27 @@ router.get('/check/:permission', requireAuth, resolveTenant, requireOrg, async (
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/members/{userId}:
+ *   get:
+ *     tags: [Permissions]
+ *     summary: Obtenir les permissions d'un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     responses:
+ *       200:
+ *         description: Permissions du membre
+ *       404:
+ *         description: Membre introuvable
+ */
 // GET /api/permissions/members/:userId
 router.get('/members/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -46,6 +110,27 @@ router.get('/members/:userId', requireAuth, resolveTenant, requireOrg, requireAd
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/members/{userId}/effective:
+ *   get:
+ *     tags: [Permissions]
+ *     summary: Obtenir les permissions effectives d'un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     responses:
+ *       200:
+ *         description: Permissions effectives du membre
+ *       404:
+ *         description: Membre introuvable
+ */
 // GET /api/permissions/members/:userId/effective
 router.get('/members/:userId/effective', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
@@ -55,6 +140,36 @@ router.get('/members/:userId/effective', requireAuth, resolveTenant, requireOrg,
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/members/{userId}/grant:
+ *   post:
+ *     tags: [Permissions]
+ *     summary: Accorder une permission à un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               permission:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Permission accordée
+ *       404:
+ *         description: Membre introuvable
+ */
 // POST /api/permissions/members/:userId/grant
 router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -65,6 +180,36 @@ router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, re
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/members/{userId}/revoke:
+ *   post:
+ *     tags: [Permissions]
+ *     summary: Révoquer une permission d'un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               permission:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Permission révoquée
+ *       404:
+ *         description: Membre introuvable
+ */
 // POST /api/permissions/members/:userId/revoke
 router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {
@@ -75,6 +220,27 @@ router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, r
   } catch (err) { handleError(res, err); }
 });
 
+/**
+ * @swagger
+ * /api/permissions/members/{userId}/reset:
+ *   post:
+ *     tags: [Permissions]
+ *     summary: Réinitialiser les permissions d'un membre
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: userId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'utilisateur
+ *     responses:
+ *       200:
+ *         description: Permissions réinitialisées
+ *       404:
+ *         description: Membre introuvable
+ */
 // POST /api/permissions/members/:userId/reset
 router.post('/members/:userId/reset', requireAuth, resolveTenant, requireOrg, requireOwner, async (req: AuthRequest, res: Response) => {
   try {

@@ -3,6 +3,7 @@
 
 import prisma from '../utils/prisma';
 import { EmailService } from './email.service';
+import { PushService } from './push.service';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('ReminderService');
@@ -140,7 +141,7 @@ export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: nu
       include: {
         members: {
           where: { role: { in: ['OWNER', 'ADMIN'] } },
-          include: { user: { select: { email: true } } },
+          include: { user: { select: { id: true, email: true } } },
         },
       },
     });
@@ -152,6 +153,13 @@ export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: nu
             member.user.email,
             upcomingDeadlines.map((d) => d.label),
           );
+
+          // Envoyer aussi une notification push
+          PushService.sendFiscalDeadlinesPush(
+            member.user.id,
+            upcomingDeadlines.map((d) => ({ titre: d.label, description: d.label })),
+          );
+
           result.sent++;
         } catch (err) {
           logger.error(`Erreur envoi échéance fiscale à ${member.user.email}:`, err);

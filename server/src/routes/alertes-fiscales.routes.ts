@@ -6,7 +6,35 @@ import * as alertesService from '../services/alertes-fiscales.service';
 
 const router = Router();
 
-// GET /api/alertes-fiscales
+/**
+ * @swagger
+ * /api/alertes-fiscales:
+ *   get:
+ *     tags: [Alertes]
+ *     summary: Liste des alertes fiscales
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: type
+ *         schema:
+ *           type: string
+ *       - in: query
+ *         name: categorie
+ *         schema:
+ *           type: string
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Alertes fiscales paginées
+ */
 router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const result = await alertesService.getAllAlertes({
@@ -21,7 +49,18 @@ router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
   }
 });
 
-// GET /api/alertes-fiscales/stats
+/**
+ * @swagger
+ * /api/alertes-fiscales/stats:
+ *   get:
+ *     tags: [Alertes]
+ *     summary: Statistiques des alertes fiscales
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Statistiques des alertes
+ */
 router.get('/stats', requireAuth, async (_req: AuthRequest, res: Response) => {
   try {
     const stats = await alertesService.getStats();
@@ -31,7 +70,24 @@ router.get('/stats', requireAuth, async (_req: AuthRequest, res: Response) => {
   }
 });
 
-// GET /api/alertes-fiscales/article/:n
+/**
+ * @swagger
+ * /api/alertes-fiscales/article/{n}:
+ *   get:
+ *     tags: [Alertes]
+ *     summary: Alertes fiscales par article
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: n
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Alertes liées à l'article
+ */
 router.get('/article/:n', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const n = Array.isArray(req.params.n) ? req.params.n[0] : req.params.n;
@@ -42,7 +98,18 @@ router.get('/article/:n', requireAuth, async (req: AuthRequest, res: Response) =
   }
 });
 
-// POST /api/alertes-fiscales/extract — seed + extract
+/**
+ * @swagger
+ * /api/alertes-fiscales/extract:
+ *   post:
+ *     tags: [Alertes]
+ *     summary: Extraction et alimentation des alertes fiscales
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Résultat de l'extraction
+ */
 router.post('/extract', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
   try {
     if (req.body.seed) {
