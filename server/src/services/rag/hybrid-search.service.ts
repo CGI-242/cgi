@@ -70,17 +70,43 @@ async function searchByArticleNumbers(
     seenNumeros.add(normalizedNum);
 
     try {
-      const scrollResult = await client.scroll(collectionName, {
+      // Chercher d'abord dans le Tome 1 (articles principaux IS/IRPP)
+      let scrollResult = await client.scroll(collectionName, {
         filter: {
-          should: [
-            { key: 'numero', match: { value: normalizedNum } },
-            { key: 'numero', match: { value: `Art. ${normalizedNum}` } },
+          must: [
+            {
+              should: [
+                { key: 'numero', match: { value: normalizedNum } },
+                { key: 'numero', match: { value: `Art. ${normalizedNum}` } },
+              ],
+            },
+            {
+              should: [
+                { key: 'tome', match: { value: '1' } },
+                { key: 'tome', match: { value: 'P1' } },
+              ],
+            },
           ],
         },
         limit: 1,
         with_payload: true,
         with_vector: false,
       });
+
+      // Si pas trouvé dans Tome 1, chercher dans tous les tomes
+      if (scrollResult.points.length === 0) {
+        scrollResult = await client.scroll(collectionName, {
+          filter: {
+            should: [
+              { key: 'numero', match: { value: normalizedNum } },
+              { key: 'numero', match: { value: `Art. ${normalizedNum}` } },
+            ],
+          },
+          limit: 1,
+          with_payload: true,
+          with_vector: false,
+        });
+      }
 
       if (scrollResult.points.length > 0) {
         const point = scrollResult.points[0];

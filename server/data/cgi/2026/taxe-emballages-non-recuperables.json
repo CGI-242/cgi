@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "document": "Taxe sur les emballages non récupérables",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-EMBALL",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.16. Taxe sur les emballages non récupérables",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Art.1.- Il est institué en République du Congo une taxe sur les emballages non récupérables."
+      ],
+      "mots_cles": [
+        "taxe emballages",
+        "emballages non récupérables",
+        "ENR"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définition des emballages non récupérables",
+      "texte": [
+        "Art.2.- Sont considérés comme emballages non récupérables : les bouteilles, canettes, sachets, sacs, pochettes, pots, cornets et les autres emballages, produits localement ou importés au Congo, avec ou sans contenu."
+      ],
+      "mots_cles": [
+        "définition",
+        "bouteilles",
+        "canettes",
+        "sachets",
+        "sacs",
+        "pochettes",
+        "pots",
+        "cornets"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Personnes assujetties",
+      "texte": [
+        "Art.3.- Sont soumis à la taxe sur les emballages non récupérables les importateurs et les producteurs locaux des biens visés à l'article 2 ci-dessus."
+      ],
+      "mots_cles": [
+        "personnes assujetties",
+        "importateurs",
+        "producteurs locaux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exemptions",
+      "texte": [
+        "Art.4.- Sont exemptés de la taxe sur les emballages non récupérables, les emballages en papier et tout autre emballage non récupérable biodégradable."
+      ],
+      "mots_cles": [
+        "exemptions",
+        "emballages papier",
+        "biodégradable"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Affectation du produit de la taxe",
+      "texte": [
+        "Art.5.- La taxe sur les emballages non récupérables est perçue au profit des collectivités locales pour financer l'enlèvement des ordures ménagères."
+      ],
+      "mots_cles": [
+        "affectation",
+        "collectivités locales",
+        "ordures ménagères"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Liquidation et paiement",
+      "texte": [
+        "Art.6.- La taxe sur les emballages non récupérables est liquidée au cordon douanier pour les importateurs, par les services de l'administration fiscale pour les producteurs locaux, et payée conformément à la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "liquidation",
+        "paiement",
+        "cordon douanier",
+        "administration fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Base imposable",
+      "texte": [
+        "Art.7.- La base imposable de la taxe sur les emballages non récupérables est constituée par la valeur imposable en douane ou le prix sortie usine."
+      ],
+      "mots_cles": [
+        "base imposable",
+        "valeur douane",
+        "prix sortie usine"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "Art.8.- Le taux de la taxe sur les emballages non récupérables est fixé à 1 %."
+      ],
+      "mots_cles": [
+        "taux taxe",
+        "1%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Contrôle et sanctions",
+      "texte": [
+        "Art.9.- Les modalités de contrôle et de sanctions applicables à la taxe sur les emballages non récupérables sont celles relatives à la TVA."
+      ],
+      "mots_cles": [
+        "contrôle",
+        "sanctions",
+        "modalités TVA"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

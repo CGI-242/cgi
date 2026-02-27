@@ -21,8 +21,8 @@ export default function VerifyOtp() {
 
   useEffect(() => {
     authApi.sendOtpEmail(email).then((data) => {
-      if (__DEV__ && data.devCode) setDevCode(data.devCode);
-    }).catch((err) => { if (__DEV__) console.warn("[otp] Envoi echoue:", err); });
+      if (data.devCode) setDevCode(data.devCode);
+    }).catch(() => {});
   }, [email]);
 
   const handleVerify = async () => {
@@ -35,8 +35,16 @@ export default function VerifyOtp() {
 
     try {
       const data = await authApi.verifyOtp({ email, otp: code });
-      if (user) {
-        await login(data.user || user, data.token, data.refreshToken);
+
+      // MFA activé : rediriger vers la vérification TOTP
+      if (data.requireMFA && data.mfaToken) {
+        router.replace({ pathname: "/(auth)/mfa-verify", params: { mfaToken: data.mfaToken } });
+        return;
+      }
+
+      // Pas de MFA : login normal
+      if (data.user || user) {
+        await login(data.user || user!, data.token, data.refreshToken);
       }
       router.replace("/(app)");
     } catch (err) {
@@ -49,7 +57,7 @@ export default function VerifyOtp() {
   const handleResend = async () => {
     try {
       const data = await authApi.sendOtpEmail(email);
-      if (__DEV__ && data.devCode) setDevCode(data.devCode);
+      if (data.devCode) setDevCode(data.devCode);
       setSuccess("Code renvoyé avec succès");
       setTimeout(() => setSuccess(""), FEEDBACK_DISPLAY_MS);
     } catch {
@@ -79,8 +87,8 @@ export default function VerifyOtp() {
             Entrez le code envoyé à {email}
           </Text>
 
-          {/* Dev code - visible uniquement en développement */}
-          {__DEV__ && devCode ? (
+          {/* Dev code - visible si NODE_ENV != production */}
+          {devCode ? (
             <View className="border border-dashed border-success bg-green-50 p-4 mb-4 items-center">
               <Text className="text-xs text-muted mb-1">Code (dev)</Text>
               <Text className="text-3xl font-bold text-success tracking-widest">

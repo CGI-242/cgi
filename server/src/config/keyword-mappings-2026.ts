@@ -31,8 +31,22 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
 
   // ========== ART. 3 - EXONERATIONS ==========
   'exonerations is': ['Art. 3'],
+  'exonération is': ['Art. 3'],
+  'exonérations is': ['Art. 3'],
+  'exoneration is': ['Art. 3'],
+  "exonération de l'is": ['Art. 3'],
+  "exoneration de l'is": ['Art. 3'],
+  "exonérations de l'is": ['Art. 3'],
+  "exonerations de l'is": ['Art. 3'],
+  'exonérées is': ['Art. 3'],
+  'exonerees is': ['Art. 3'],
+  "exonérées de l'is": ['Art. 3'],
+  "exonerees de l'is": ['Art. 3'],
+  "exonérées de l'impôt sur les sociétés": ['Art. 3'],
+  "exonerees de l'impot sur les societes": ['Art. 3'],
   'cooperatives agricoles': ['Art. 3'],
   'exonerations conventionnelles': ['Art. 3'],
+  'exonérations conventionnelles': ['Art. 3'],
   'suppression exonerations': ['Art. 3'],
 
   // ========== ART. 3A - CREDIT D'IMPOT ==========

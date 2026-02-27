@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "document": "Index du Code Général des Impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "note": [
+      "Sauf mention contraire, les références ci-dessous renvoient aux numéros des articles du Tome 1 du Code Général des Impôts.",
+      "TFNC renvoie aux principaux textes fiscaux non codifiés"
+    ],
+    "source": "Code général des impôts 2025"
+  },
+  "index": [
+    {
+      "entree": "Acompte sur divers impôts (ASDI)",
+      "reference": "TFNC 4.1"
+    },
+    {
+      "entree": "Actes de commerce",
+      "reference": "237"
+    },
+    {
+      "entree": "Activité économique",
+      "reference": "108"
+    },
+    {
+      "entree": "Affacturage",
+      "reference": "237 sexies"
+    },
+    {
+      "entree": "Aides aux entreprises",
+      "reference": "3 TFNC 6"
+    },
+    {
+      "entree": "Amendes et pénalités",
+      "reference": "113-C"
+    },
+    {
+      "entree": "Amortissements",
+      "references": [
+        {
+          "type": "principal",
+          "reference": "114"
+        },
+        {
+          "type": "accéléré",
+          "reference": "114-G"
+        },
+        {
+          "type": "réputés différés",
+          "reference": "114-B"
+        }
+      ]
+    },
+    {
+      "entree": "Assurances",
+      "references": [
+        {
+          "type": "primes",
+          "reference": "112-C"
+        },
+        {
+          "type": "retenue sur les réassurances",
+          "reference": "185 sexies"
+        },
+        {
+          "type": "taxes spéciales sur les assurances",
+          "reference": "332 Tome 2, Livre 1"
+        },
+        {
+          "type": "TVA",
+          "reference": "7 TFNC 6"
+        },
+        {
+          "type": "vie",
+          "reference": "66, 112-C"
+        }
+      ]
+    },
+    {
+      "entree": "Attestation de non-redevance fiscale",
+      "reference": "TFNC 5.1"
+    },
+    {
+      "entree": "Banques",
+      "references": [
+        {
+          "type": "blocage des comptes",
+          "reference": "486 bis"
+        },
+        {
+          "type": "provisions",
+          "reference": "115-D"
+        }
+      ]
+    },
+    {
+      "entree": "Bénéfices agricoles",
+      "reference": "14"
+    },
+    {
+      "entree": "Bénéfices industriels, commerciaux et artisanaux (BICA)",
+      "references": [
+        {
+          "type": "principal",
+          "reference": "14"
+        },
+        {
+          "type": "bénéfices imposables",
+          "reference": "17"
+        },
+        {
+          "type": "exonérations",
+          "reference": "16"
+        }
+      ]
+    },
+    {
+      "entree": "Bénéfices non commerciaux (BNC)",
+      "reference": "42"
+    },
+    {
+      "entree": "Bilans (révision)",
+      "reference": "127"
+    },
+    {
+      "entree": "Bons de caisse",
+      "reference": "171 sexies"
+    },
+    {
+      "entree": "Centimes additionnels à la TVA",
+      "reference": "38-A TFNC 6"
+    },
+    {
+      "entree": "Changement de contrôle",
+      "reference": "118-B"
+    },
+    {
+      "entree": "Charges de personnel",
+      "reference": "110"
+    },
+    {
+      "entree": "Charges mixtes",
+      "reference": "65 bis"
+    },
+    {
+      "entree": "Commission des impôts",
+      "reference": "400"
+    },
+    {
+      "entree": "Comptabilité informatisée",
+      "reference": "390 bis"
+    },
+    {
+      "entree": "Comptes courants d'associés",
+      "reference": "112-E"
+    },
+    {
+      "entree": "Contribuables quittant le Congo",
+      "reference": "75"
+    },
+    {
+      "entree": "Contribution",
+      "references": [
+        {
+          "type": "de solidarité pour la CAMU",
+          "reference": "TFNC 4.2"
+        },
+        {
+          "type": "des patentes",
+          "reference": "277"
+        },
+        {
+          "type": "foncière des propriétés bâties",
+          "reference": "251"
+        },
+        {
+          "type": "foncière des propriétés non bâties",
+          "reference": "263"
+        }
+      ]
+    },
+    {
+      "entree": "Contrôle fiscal",
+      "references": [
+        {
+          "type": "basé sur les risques",
+          "reference": "TFNC 5.4"
+        },
+        {
+          "type": "pouvoir de l'administration",
+          "reference": "387 s"
+        }
+      ]
+    },
+    {
+      "entree": "Conventions fiscales internationales",
+      "references": [
+        {
+          "type": "application",
+          "reference": "385 Tome 1"
+        },
+        {
+          "type": "CEMAC",
+          "reference": "TFNC 1.1"
+        },
+        {
+          "type": "Chine",
+          "reference": "TFNC 1.2"
+        },
+        {
+          "type": "France",
+          "reference": "TFNC 1.3"
+        },
+        {
+          "type": "Italie",
+          "reference": "TFNC 1.4"
+        },
+        {
+          "type": "Maurice",
+          "reference": "TFNC 1.5"
+        },
+        {
+          "type": "Rwanda",
+          "reference": "TFNC 1.6"
+        }
+      ]
+    },
+    {
+      "entree": "Créances et cautionnement",
+      "reference": "61"
+    },
+    {
+      "entree": "Crédit-bail",
+      "reference": "114-E"
+    },
+    {
+      "entree": "Crédit de TVA",
+      "reference": "39 TFNC 6"
+    },
+    {
+      "entree": "Curatelle",
+      "reference": "Tome 2, Livre 5"
+    },
+    {
+      "entree": "Déclaration",
+      "references": [
+        {
+          "type": "des commissions, courtages, ristournes, honoraires et droits d'auteurs",
+          "reference": "183"
+        },
+        {
+          "type": "d'existence",
+          "reference": "15 bis, 46, 124, 126 ter, 378"
+        },
+        {
+          "type": "d'ouverture de comptes",
+          "reference": "391 bis"
+        },
+        {
+          "type": "statistique et fiscale (DSF)",
+          "reference": "31"
+        }
+      ]
+    },
+    {
+      "entree": "Déductibilité des impôts",
+      "reference": "112-B"
+    },
+    {
+      "entree": "Dégrèvements d'office",
+      "reference": "438"
+    },
+    {
+      "entree": "Demande en remise ou modération",
+      "reference": "446"
+    },
+    {
+      "entree": "Demandes en décharge ou en réduction",
+      "reference": "423"
+    },
+    {
+      "entree": "Demandes en remise de pénalités",
+      "reference": "451"
+    },
+    {
+      "entree": "Dépenses somptuaires",
+      "reference": "113-B"
+    },
+    {
+      "entree": "Dons et libéralités",
+      "reference": "113"
+    },
+    {
+      "entree": "Droits d'accises",
+      "reference": "TFNC 4.3"
+    },
+    {
+      "entree": "Droits d'enregistrement",
+      "reference": "Tome 2, Livre 1",
+      "sous_entrees": [
+        {
+          "type": "base d'imposition",
+          "reference": "17"
+        },
+        {
+          "type": "délais",
+          "reference": "58"
+        },
+        {
+          "type": "droits fixes",
+          "reference": "209"
+        },
+        {
+          "type": "droits proportionnels et progressifs",
+          "reference": "212"
+        },
+        {
+          "type": "personnes devant acquitter les droits",
+          "reference": "93"
+        },
+        {
+          "type": "prescription",
+          "reference": "192"
+        },
+        {
+          "type": "sanctions",
+          "reference": "99"
+        }
+      ]
+    },
+    {
+      "entree": "Droits de timbre",
+      "reference": "Tome 2, Livre 2",
+      "sous_entrees": [
+        {
+          "type": "de dimension",
+          "reference": "26"
+        },
+        {
+          "type": "électronique",
+          "reference": "voir sous 151"
+        },
+        {
+          "type": "sur les véhicules",
+          "reference": "145"
+        },
+        {
+          "type": "sur les effets de commerce",
+          "reference": "139"
+        }
+      ]
+    },
+    {
+      "entree": "Écoles privées",
+      "reference": "34 ter, 122 A"
+    },
+    {
+      "entree": "Entreprenant",
+      "reference": "voir TFNC 4.6"
+    },
+    {
+      "entree": "Entrepreneuriat",
+      "reference": "TFNC 2.6"
+    },
+    {
+      "entree": "Impôt sur le revenu des personnes physiques (IRPP)",
+      "references": [
+        { "type": "principal", "reference": "1" },
+        { "type": "année d'arrivée au Congo", "reference": "73" },
+        { "type": "année de départ du Congo", "reference": "74" },
+        { "type": "barème", "reference": "95" },
+        { "type": "quotient familial", "reference": "91" },
+        { "type": "revenu global", "reference": "66" },
+        { "type": "taxation d'office", "reference": "86" },
+        { "type": "territorialité", "reference": "8" }
+      ]
+    },
+    {
+      "entree": "Impôt sur le revenu des valeurs mobilières (IRVM)",
+      "reference": "Tome 2, Livre 3"
+    },
+    {
+      "entree": "Impôt sur le bénéfice des sociétés",
+      "references": [
+        { "type": "principal", "reference": "106" },
+        { "type": "minimum forfaitaire", "reference": "168" },
+        { "type": "taux", "reference": "122" },
+        { "type": "territorialité", "reference": "108" }
+      ]
+    },
+    {
+      "entree": "Intégration fiscale",
+      "reference": "126-E s."
+    },
+    {
+      "entree": "Investissements",
+      "references": [
+        { "type": "Charte des investissements", "reference": "TFNC 2.1" },
+        { "type": "décret d'application de la charte des investissements", "reference": "TFNC 2.2" },
+        { "type": "encouragement à l'entrepreneuriat", "reference": "TFNC 2.6" },
+        { "type": "non-cumul des régimes privilégiés", "reference": "127 quinquies" },
+        { "type": "réinvestissement des plus-values", "reference": "118" }
+      ]
+    },
+    {
+      "entree": "Loyers",
+      "reference": "112"
+    },
+    {
+      "entree": "Marchés publics",
+      "references": [
+        { "type": "régime fiscal général", "reference": "406 bis" },
+        { "type": "TVA", "reference": "16 TFNC 5" }
+      ]
+    },
+    {
+      "entree": "Microfinance",
+      "references": [
+        { "type": "enregistrement", "reference": "17 Tome 2, Livre 1" },
+        { "type": "IRPP", "reference": "34 ter" },
+        { "type": "impôt sur les sociétés", "reference": "109 C, 122 A" },
+        { "type": "TVA", "reference": "7 TFNC 6" }
+      ]
+    },
+    {
+      "entree": "Mines",
+      "reference": "TFNC 3.5"
+    },
+    {
+      "entree": "Novation (enregistrement)",
+      "reference": "237 ter Tome 2, Livre 1"
+    },
+    {
+      "entree": "Numéro d'identification unique (NIU)",
+      "reference": "TFNC 5.2 ; 30 TFNC 6"
+    },
+    {
+      "entree": "Obligations (revenus des obligations)",
+      "reference": "58"
+    },
+    {
+      "entree": "Paiement de l'impôt",
+      "reference": "461"
+    },
+    {
+      "entree": "Pensions",
+      "references": [
+        { "type": "alimentaires", "reference": "66" },
+        { "type": "de retraite", "reference": "38" }
+      ]
+    },
+    {
+      "entree": "Personnes morales étrangères",
+      "reference": "126 ter"
+    },
+    {
+      "entree": "Plus-values",
+      "references": [
+        { "type": "cession, cessation ou décès", "reference": "98" },
+        { "type": "cession indirecte de titres", "reference": "118-B" },
+        { "type": "imposition à l'IS", "reference": "116" },
+        { "type": "imposition des personnes physiques", "reference": "63" },
+        { "type": "réinvestissement", "reference": "118" },
+        { "type": "sur titres réalisés par des personnes non-résidentes", "reference": "185 quater A" }
+      ]
+    },
+    {
+      "entree": "Prix de transfert",
+      "reference": "120 s."
+    },
+    {
+      "entree": "Propriété foncière",
+      "reference": "1"
+    },
+    {
+      "entree": "Provisions",
+      "reference": "115"
+    },
+    {
+      "entree": "Quitus fiscal",
+      "reference": "126 quater D et E"
+    },
+    {
+      "entree": "Réclamations",
+      "reference": "422"
+    },
+    {
+      "entree": "Recours hiérarchique",
+      "reference": "422 ter"
+    },
+    {
+      "entree": "Recouvrement",
+      "reference": "459",
+      "sous_entrees": [
+        { "type": "des recettes publiques", "reference": "TFNC 5.3" }
+      ]
+    },
+    {
+      "entree": "Redevance audiovisuelle",
+      "reference": "TFNC 4.7"
+    },
+    {
+      "entree": "Redevances",
+      "reference": "111-A"
+    },
+    {
+      "entree": "Régimes d'imposition",
+      "references": [
+        { "type": "impôt global forfaitaire", "reference": "26 ; TFNC 4.6" },
+        { "type": "réel", "reference": "30" }
+      ]
+    },
+    {
+      "entree": "Rémunération des administrateurs uniques",
+      "reference": "113-A"
+    },
+    {
+      "entree": "Rémunérations versées à l'étranger",
+      "reference": "111"
+    },
+    {
+      "entree": "Reports déficitaires",
+      "reference": "119"
+    },
+    {
+      "entree": "Représentant fiscal",
+      "reference": "12 TFNC 6"
+    },
+    {
+      "entree": "Résidence fiscale (imposition des non-résidents)",
+      "reference": "72, 185 ter"
+    },
+    {
+      "entree": "Retenues à la source",
+      "references": [
+        { "type": "ASDI", "reference": "TFNC 4.1" },
+        { "type": "BNC", "reference": "96" },
+        { "type": "commissions et honoraires", "reference": "183" },
+        { "type": "intérêts d'emprunt", "reference": "185 ter" },
+        { "type": "marchés de BTP", "reference": "185 quinquies" },
+        { "type": "plus-values sur titres (non-résidents)", "reference": "185 quater A" },
+        { "type": "salaires", "reference": "172, 185 bis" },
+        { "type": "sommes payées par le Trésor", "reference": "TFNC 4.8" },
+        { "type": "redevances", "reference": "185 ter" },
+        { "type": "sous-traitants", "reference": "126 quater B" },
+        { "type": "sur les loyers", "reference": "voir taxe immobilière, Tome 2 livre 4" }
+      ]
+    },
+    {
+      "entree": "Revenu des capitaux mobiliers",
+      "reference": "50",
+      "sous_entrees": [
+        {
+          "type": "titres cotés à la BVMAC",
+          "reference": "TFNC 2.7"
+        }
+      ]
+    },
+    {
+      "entree": "Revenus fonciers",
+      "reference": "12"
+    },
+    {
+      "entree": "Rôles",
+      "reference": "407"
+    },
+    {
+      "entree": "Salaire et rémunérations assimilées",
+      "references": [
+        { "type": "imposition", "reference": "37 s." },
+        { "type": "retenue", "reference": "172, 185 bis" },
+        { "type": "salaire du conjoint de l'exploitant", "reference": "64" },
+        { "type": "taxe unique", "reference": "TFNC 4.15" }
+      ]
+    },
+    {
+      "entree": "Sanctions pénales",
+      "reference": "521"
+    },
+    {
+      "entree": "Secret professionnel",
+      "reference": "404"
+    },
+    {
+      "entree": "Sociétés",
+      "references": [
+        { "type": "de personnes", "reference": "35" },
+        { "type": "mères et filiales", "reference": "126" },
+        { "type": "nouvelles", "reference": "125" }
+      ]
+    },
+    {
+      "entree": "Sous-traitants pétroliers",
+      "references": [
+        { "type": "enregistrement du contrat de sous-traitance", "reference": "126 quinquies" },
+        { "type": "imposition forfaitaire", "reference": "126 quater" },
+        { "type": "revenus accessoires", "reference": "126 septies" }
+      ]
+    },
+    {
+      "entree": "Succursales",
+      "references": [
+        { "type": "imposition des résultats", "reference": "126-B" },
+        { "type": "impôt forfaitaire", "reference": "126 quater A" },
+        { "type": "IRVM", "reference": "1, 9 ter Tome 2, Livre 3" }
+      ]
+    },
+    {
+      "entree": "Tarif des frais de poursuite",
+      "reference": "519"
+    },
+    {
+      "entree": "Taxe",
+      "references": [
+        { "type": "d'abonnement aux chaînes télévisuelles", "reference": "TFNC 4.9" },
+        { "type": "d'enlèvement des ordures ménagères", "reference": "347" },
+        { "type": "d'occupation des locaux", "reference": "TFNC 4.10" },
+        { "type": "immobilière", "reference": "Tome 2, Livre 4" },
+        { "type": "spéciale sur les assurances", "reference": "332 Tome 2, Livre 1" },
+        { "type": "spéciale sur les sociétés (TSS)", "reference": "168" },
+        { "type": "spécifique sur les boissons et le tabac", "reference": "TFNC 4.3" },
+        { "type": "sur le trafic des communications électroniques", "reference": "TFNC 4.11" },
+        { "type": "sur les appareils automatiques", "reference": "Tome 2, Livre 7" },
+        { "type": "sur les emballages non récupérables", "reference": "TFNC 4.16" },
+        { "type": "sur les jeux de hasard", "reference": "TFNC 4.13" },
+        { "type": "sur les spectacles, jeux et divertissements", "reference": "331" },
+        { "type": "sur les terrains d'agrément et terrains à bâtir", "reference": "157" },
+        { "type": "sur les transferts de fonds", "reference": "TFNC 4.14" },
+        { "type": "sur les véhicules à moteur", "reference": "355" },
+        { "type": "sur les véhicules de tourisme des sociétés", "reference": "171-A" },
+        { "type": "unique sur les salaires", "reference": "TFNC 4.15" }
+      ]
+    },
+    {
+      "entree": "Taxe sur la valeur ajoutée (TVA)",
+      "reference": "TFNC 6",
+      "sous_entrees": [
+        { "type": "affectation", "reference": "25" },
+        { "type": "assujettis", "reference": "4" },
+        { "type": "base d'imposition", "reference": "16" },
+        { "type": "crédits", "reference": "39" },
+        { "type": "déductions", "reference": "23" },
+        { "type": "exigibilité", "reference": "15" },
+        { "type": "exonérations", "reference": "6" },
+        { "type": "opérations imposables", "reference": "2" },
+        { "type": "paiement", "reference": "35" },
+        { "type": "prorata", "reference": "26" },
+        { "type": "régularisations des déductions", "reference": "28" },
+        { "type": "secteur pétrolier", "reference": "TFNC 3.4" },
+        { "type": "taux", "reference": "22" },
+        { "type": "territorialité", "reference": "9" }
+      ]
+    },
+    {
+      "entree": "Téléprocédures",
+      "reference": "30 bis"
+    },
+    {
+      "entree": "Timbre",
+      "reference": "Tome 2, Livre 2"
+    },
+    {
+      "entree": "Traitements et salaires",
+      "reference": "37"
+    },
+    {
+      "entree": "Transaction fiscale",
+      "reference": "422 bis"
+    },
+    {
+      "entree": "Très petites entreprises",
+      "reference": "26, 28, 278 Tome 1 ; TFNC 4.6"
+    },
+    {
+      "entree": "Valeurs mobilières émises hors du Congo",
+      "reference": "60"
+    },
+    {
+      "entree": "Vérification des contribuables",
+      "reference": "387"
+    },
+    {
+      "entree": "Zones",
+      "references": [
+        { "type": "de valorisation des infrastructures immobilières marchandes", "reference": "TFNC 2.5" },
+        { "type": "économiques spéciales (ZES)", "reference": "TFNC 2.3" },
+        { "type": "franches de santé", "reference": "TFNC 2.4" }
+      ]
+    }
+  ]
+}

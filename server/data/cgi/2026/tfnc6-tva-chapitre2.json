@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Territorialité",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 9",
+      "titre": "Champ territorial de la TVA",
+      "texte": [
+        "Art.9.- Sont soumises à la TVA, toutes les affaires réalisées en République du Congo et non comprises dans la liste des exonérations, quand bien même le domicile, la résidence de la personne physique ou le siège social de la personne morale serait situé en dehors des limites territoriales du Congo définies conformément au droit international."
+      ],
+      "mots_cles": [
+        "champ territorial",
+        "affaires réalisées Congo",
+        "exonérations",
+        "domicile étranger",
+        "résidence",
+        "siège social",
+        "limites territoriales",
+        "droit international"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Lieu de livraison des biens",
+      "texte": [
+        "Art.10.- 1) Le lieu d'une livraison de bien est réputé situé au Congo dès lors que le bien s'y trouve :",
+        "• au moment de la livraison ;",
+        "• ou, en cas d'expédition du bien, au moment du départ de l'expédition ou du transport à destination de l'acquéreur.",
+        "2) Lorsque le lieu de départ de l'expédition ou du transport du bien se trouve dans un État autre que le Congo, qui est le pays d'importation des biens, le lieu de la livraison est réputé se situer au Congo.",
+        "3) Si le bien fait l'objet d'une installation ou d'un montage par le fournisseur ou pour son compte, le lieu de la livraison est réputé se situer à l'endroit où est faite l'installation ou le montage."
+      ],
+      "mots_cles": [
+        "lieu livraison",
+        "bien au Congo",
+        "expédition transport",
+        "importation",
+        "installation",
+        "montage",
+        "fournisseur"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Territorialité des prestations de services",
+      "texte": [
+        "Art.11.- Une prestation de services est réputée faite au Congo lorsque le service rendu, le droit cédé ou l'objet loué sont utilisés ou exploités au Congo dans l'état.",
+        "En particulier :",
+        "1) Les prestations de services matériellement localisables sont imposables dans le pays où elles sont exécutées.",
+        "Sont notamment considérées comme prestations matériellement localisables :",
+        "• les locations des moyens de transport ;",
+        "• les prestations de service rattachant à un immeuble ;",
+        "• les prestations culturelles, artistiques, sportives, scientifiques, éducatives ;",
+        "• les travaux experts portant sur les biens meubles corporels ;",
+        "• les prestations des intermédiaires qui agissent au nom et pour le compte d'autrui.",
+        "2) Les prestations de services immatérielles sont imposables dans le pays d'établissement du preneur.",
+        "Sont notamment considérées comme prestations immatérielles :",
+        "• les cessions et concessions de droits d'auteurs, de brevets, de droits de licences, de marques de fabrique et de commerce et d'autres droits similaires ;",
+        "• les locations de biens meubles corporels autres que des moyens de transport ;",
+        "• les prestations de publicité ;",
+        "• les prestations des conseillers, ingénieurs, bureaux d'études dans tous les domaines y compris ceux de l'organisation de la recherche et développement ;",
+        "• les prestations des experts-comptables, des avocats et des conseils juridiques et fiscaux régulièrement inscrits ;",
+        "• les prestations des autres professions libérales ;",
+        "• le traitement de données et fournitures d'information ;",
+        "• les opérations bancaires, financières et d'assurance ou de réassurance, à l'exception de la location de coffres-forts ;",
+        "• la mise à disposition de personnel ;",
+        "• les prestations des intermédiaires qui interviennent au nom et pour le compte d'autrui dans la fourniture des prestations de services désignées ci-dessus ;",
+        "• les prestations de télécommunications ;",
+        "• les services de radiodiffusion et de télévision ;",
+        "• les services fournis par voie électronique, notamment par téléchargement ;",
+        "• l'accès aux réseaux de transport et de distribution d'électricité ou de gaz naturel, l'acheminement par ces réseaux et tous les autres services qui lui sont directement liés.",
+        "3) Les commissions des agences de voyage sur les ventes de titres de transport sont réputées être perçues dans l'État dans lequel est établie l'agence, quels que soient la destination, le mode de transport ou le siège de la société de transport.",
+        "4) En ce qui concerne les transports internationaux de marchandises, les opérations sont réputées faites dans l'État du siège du transporteur, alors même que le principal de l'opération s'effectue hors de cet État. En ce qui concerne les transports intracommunautaires de marchandises, les opérations sont réputées faites dans l'État de destination des marchandises. Les prestations de transport de personnes sont imposées dans l'État du transporteur.",
+        "5) Par dérogation aux dispositions des paragraphes 2, 3 et 4, si le preneur établi en République du Congo n'est pas assujetti à la TVA, le lieu d'imposition est réputé situé dans l'État du prestataire résident d'un autre État membre.",
+        "6) Sont imposables en République du Congo, les prestations de services effectuées sur le territoire de la République du Congo à travers des plateformes de commerce électronique étrangères ou locales, ainsi que les commissions perçues par les opérateurs de ces plateformes.",
+        "Pour l'application du point 6) ci-dessus, l'Agence de Régulation des Postes et des Communications Électroniques (ARPCE) apportera son assistance à l'administration fiscale en établissant, à son profit, un système d'inscription simplifié et centralisé, permettant aux entreprises non-résidentes fournissant des services numériques en République du Congo de s'acquitter de la TVA par le biais d'une plateforme en ligne unique.",
+        "Par services numériques, il faut entendre notamment :",
+        "• les services de publicité en ligne ;",
+        "• la fourniture des données d'utilisateurs ;",
+        "• les moteurs de recherche en ligne ;",
+        "• les plateformes d'intermédiation en ligne ;",
+        "• les plateformes des réseaux sociaux ;",
+        "• les services de contenu numériques ;",
+        "• les jeux en ligne ;",
+        "• les services d'enseignement en ligne standardisé ;",
+        "• les téléchargements de logiciels ;",
+        "• les services de streaming ;",
+        "• les livres numériques ;",
+        "• les applications mobiles ;",
+        "• les services de location et de prestation de services en ligne ;",
+        "• le commerce électronique ;",
+        "• les services de stockage des données en ligne ;",
+        "• les services informatiques dans le cloud et les plateformes de réseaux sociaux."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "prestations services",
+        "lieu utilisation",
+        "prestations matérielles",
+        "prestations immatérielles",
+        "location transport",
+        "immeuble",
+        "droits auteurs brevets",
+        "publicité",
+        "conseil expertise",
+        "professions libérales",
+        "traitement données",
+        "opérations bancaires financières",
+        "assurance réassurance",
+        "mise disposition personnel",
+        "télécommunications",
+        "radiodiffusion télévision",
+        "services électroniques",
+        "réseaux électricité gaz",
+        "agences voyage",
+        "transport international marchandises",
+        "transport intracommunautaire",
+        "transport personnes",
+        "preneur non assujetti",
+        "plateformes e-commerce",
+        "ARPCE",
+        "services numériques",
+        "publicité en ligne",
+        "réseaux sociaux",
+        "streaming",
+        "cloud",
+        "applications mobiles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Représentant fiscal des non-résidents",
+      "texte": [
+        "Art.12.- 1) Le redevable non-résident est tenu de désigner à l'administration fiscale un représentant solvable accrédité, résident sur le territoire congolais qui est solidairement responsable avec lui du paiement de l'impôt. Ce représentant doit être lui-même assujetti à la TVA.",
+        "2) En cas de non-désignation d'un représentant, la TVA et, le cas échéant, les pénalités y afférentes doivent être payées par la personne cliente pour le compte de la personne n'ayant pas dans l'État un établissement stable.",
+        "3) S'agissant des opérations visées au point 6) de l'article 11 ci-dessus, les entreprises non-résidentes fournissant des services numériques aux clients situés en République du Congo sont responsables de la TVA y relative et doivent la reverser au Congo conformément à la réglementation en vigueur sur la base des factures établies suivant les données captées sur la plateforme mise en place au sein de l'ARPCE.",
+        "Les entreprises non-résidentes doivent tenir des registres exacts de TVA collectée."
+      ],
+      "mots_cles": [
+        "redevable non-résident",
+        "représentant fiscal",
+        "solvable accrédité",
+        "résident Congo",
+        "responsabilité solidaire",
+        "assujetti TVA",
+        "pénalités",
+        "client paie pour compte",
+        "établissement stable",
+        "services numériques",
+        "ARPCE",
+        "registres TVA collectée"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Coordination CEMAC - Double imposition",
+      "texte": [
+        "Art.13.- L'administration fiscale prend contact avec la Commission de la CEMAC, pour toutes les dispositions pour éviter les cas de double imposition ou de non-imposition."
+      ],
+      "mots_cles": [
+        "Commission CEMAC",
+        "double imposition",
+        "non-imposition",
+        "coordination fiscale"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

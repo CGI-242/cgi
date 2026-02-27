@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 3,
+    "chapitre_titre": "Obligations des curateurs à l'ouverture d'une succession",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 16",
+      "titre": "Apposition des scellés",
+      "texte": [
+        "Aussitôt que le Curateur a connaissance d'un décès et qu'il ne se présente ni héritier, ni légataire universel, ni exécuteur testamentaire, il provoque immédiatement l'apposition des scellés si elle n'a déjà été opérée (ordonnance du Président du Tribunal), et appréhende la succession sans autre formalité."
+      ],
+      "mots_cles": [
+        "Curateur",
+        "décès",
+        "héritier",
+        "légataire universel",
+        "exécuteur testamentaire",
+        "apposition des scellés",
+        "ordonnance",
+        "Président du Tribunal",
+        "succession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Exclusion du curateur en présence d'héritier",
+      "texte": [
+        "La présence ou la représentation d'un héritier, même s'il n'est que successible, entraîne l'exclusion du Curateur en titre ou d'office de la gestion de la succession, sauf désignation expresse par ordonnance du Président du Tribunal à l'effet de représenter les absents. L'héritier présent est en principe désigné comme Curateur."
+      ],
+      "mots_cles": [
+        "présence",
+        "représentation",
+        "héritier",
+        "successible",
+        "exclusion",
+        "Curateur en titre",
+        "Curateur d'office",
+        "gestion",
+        "succession",
+        "désignation expresse",
+        "ordonnance",
+        "Président du Tribunal",
+        "absents"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Légataire universel absent",
+      "texte": [
+        "Si le légataire universel est absent sans être représenté, et que les héritiers du testateur sont présents sur le Territoire de la République du Congo, le Curateur aux biens vacants exerce les droits de ce légataire et remplit ses charges. De même le Curateur représente éventuellement le légataire particulier absent."
+      ],
+      "mots_cles": [
+        "légataire universel",
+        "absent",
+        "représentation",
+        "testateur",
+        "héritiers",
+        "Territoire",
+        "République du Congo",
+        "Curateur aux biens vacants",
+        "droits",
+        "charges",
+        "légataire particulier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Publication de l'ouverture de succession",
+      "texte": [
+        "L'ouverture d'une succession réputée vacante est publiée sans frais à la diligence du Curateur dans le Journal Officiel de la République du Congo ou par tout autre moyen approprié dans les meilleurs délais possibles. Cette publication doit inviter les créanciers de la succession à produire leur titre, soit au Curateur, soit à l'officier ministériel chargé éventuellement de dresser l'inventaire, les débiteurs à se faire connaître eux-mêmes."
+      ],
+      "mots_cles": [
+        "ouverture",
+        "succession vacante",
+        "publication",
+        "Curateur",
+        "Journal Officiel",
+        "République du Congo",
+        "créanciers",
+        "titre",
+        "officier ministériel",
+        "inventaire",
+        "débiteurs"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Levée des scellés et inventaire",
+      "texte": [
+        "Dans les meilleurs délais et 25 jours au plus depuis l'apposition des scellés lorsque ceux-ci ont pu être apposés, le Curateur fait procéder à leur levée et à la constatation par un inventaire de l'état de la succession.",
+        "Lorsque la succession ne présente apparemment un actif supérieur à 500.000 FCFA, ou lorsqu'il s'agit seulement de valeurs immobilières, pour éviter les frais, un simple état descriptif et estimatif dressé par un Juge assisté d'un Greffier, en présence du Curateur ou de son représentant, tient lieu d'inventaire."
+      ],
+      "mots_cles": [
+        "délais",
+        "25 jours",
+        "apposition des scellés",
+        "levée",
+        "inventaire",
+        "succession",
+        "actif",
+        "500.000 FCFA",
+        "valeurs immobilières",
+        "état descriptif",
+        "état estimatif",
+        "Juge",
+        "Greffier",
+        "Curateur"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Avis aux ayants droit",
+      "texte": [
+        "Lorsque les papiers du défunt ou de l'absent portés à l'inventaire contiennent des renseignements sur les ayants droit, le Curateur doit leur donner immédiatement avis par lettre dont mention est faite sur le grand-livre de comptes ouvert, de l'ouverture et autant que possible des dates et charges de la succession. Le double de cette lettre doit rester au dossier de la succession. Il doit de même entreprendre toute recherche utile des ayants droit."
+      ],
+      "mots_cles": [
+        "papiers",
+        "défunt",
+        "absent",
+        "inventaire",
+        "renseignements",
+        "ayants droit",
+        "Curateur",
+        "avis",
+        "lettre",
+        "grand-livre de comptes",
+        "ouverture",
+        "charges",
+        "succession",
+        "dossier",
+        "recherche"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "État à la DGID",
+      "texte": [
+        "Dans les 15 jours de la clôture de l'inventaire, le Curateur doit adresser à la DGID (Direction de l'enregistrement, des domaines et du timbre) un état contenant tous les renseignements sur les noms, prénoms, qualités du défunt, la date et le lieu de son décès, ceux de sa naissance, les noms et adresses des héritiers ou conjoints s'ils sont connus, ceux des associés éventuels avec les renseignements essentiels sur la société, les noms et adresses des légataires ou de l'exécuteur testamentaire, la date du testament, la date de l'inventaire ou de l'état descriptif, les forces et charges de la succession."
+      ],
+      "mots_cles": [
+        "15 jours",
+        "clôture",
+        "inventaire",
+        "Curateur",
+        "DGID",
+        "Direction de l'enregistrement, des domaines et du timbre",
+        "état",
+        "renseignements",
+        "défunt",
+        "décès",
+        "naissance",
+        "héritiers",
+        "conjoints",
+        "associés",
+        "société",
+        "légataires",
+        "exécuteur testamentaire",
+        "testament",
+        "forces",
+        "charges",
+        "succession"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

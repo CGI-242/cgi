@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 4,
+    "chapitre": 2,
+    "chapitre_titre": "Modalités d'imposition",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 5",
+      "titre": "Paiement de la taxe par les locataires",
+      "texte": [
+        "La taxe sur les loyers est payée par les locataires pour le compte des propriétaires ou usufruitiers et les sous-locataires pour le compte des locataires qu'il s'agisse des personnes physiques ou morales au plus tard le 20 février de chaque année pour les anciens contribuables.",
+        "Pour les baux ou renouvellement signés, la taxe est exigible dans les trois mois qui suivent la date d'entrée en jouissance, à raison des loyers à échoir le 31 décembre de ladite année."
+      ],
+      "mots_cles": [
+        "taxe sur les loyers",
+        "locataires",
+        "propriétaires",
+        "usufruitiers",
+        "sous-locataires",
+        "personnes physiques",
+        "personnes morales",
+        "20 février",
+        "anciens contribuables",
+        "baux",
+        "renouvellements",
+        "trois mois",
+        "entrée en jouissance",
+        "31 décembre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Déduction de la taxe par les locataires",
+      "texte": [
+        "Les locataires déduisent la taxe en une seule fois à l'occasion de leur règlement des loyers aux propriétaires, intervenant entre le 1er janvier et le 10 avril de la même année."
+      ],
+      "mots_cles": [
+        "locataires",
+        "déduction",
+        "taxe",
+        "règlement des loyers",
+        "propriétaires",
+        "1er janvier",
+        "10 avril"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Interdiction d'augmentation de loyer liée à la taxe",
+      "texte": [
+        "Le règlement de la taxe par les locataires ne peut entraîner d'augmentation de loyer."
+      ],
+      "mots_cles": [
+        "règlement",
+        "taxe",
+        "locataires",
+        "augmentation de loyer",
+        "interdiction"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Bordereau de versement de la taxe",
+      "texte": [
+        "Chaque versement de la taxe est accompagné d'un bordereau établi en trois exemplaires sur des imprimés fournis par l'administration.",
+        "Un exemplaire du bordereau est rendu, accompagné d'une quittance à la partie versante, par l'agent chargé du recouvrement.",
+        "Le deuxième exemplaire est conservé par le service.",
+        "Le troisième exemplaire sera adressé au Directeur des Contributions Directes et Indirectes."
+      ],
+      "mots_cles": [
+        "versement",
+        "taxe",
+        "bordereau",
+        "trois exemplaires",
+        "imprimés",
+        "administration",
+        "quittance",
+        "partie versante",
+        "agent",
+        "recouvrement",
+        "Directeur des Contributions Directes et Indirectes"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Pénalités pour retard de paiement de la taxe immobilière",
+      "texte": [
+        "Tout retard dans le paiement de la taxe immobilière sur les loyers donne lieu à l'application d'une majoration de 50 % du montant des cotisations ou fractions de cotisations qui n'auraient pas été acquittées dans les délais prévus à l'article 5 ci-dessus."
+      ],
+      "mots_cles": [
+        "retard",
+        "paiement",
+        "taxe immobilière",
+        "loyers",
+        "majoration",
+        "50 %",
+        "cotisations",
+        "délais",
+        "article 5"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Obligation déclarative des personnes physiques et morales",
+      "texte": [
+        "Toute personne physique ou morale redevable de la taxe est tenue de remettre chaque année avant le 31 janvier, au bureau de l'enregistrement compétent, un état où figurent les noms, prénoms, domiciles de ses locataires, la période de location et le détail de la taxe versée sur la base des loyers (charges comprises) de l'année précédente.",
+        "Cette obligation s'applique également aux sociétés pétrolières.",
+        "Le défaut de production des renseignements demandés conduit à une taxation d'office."
+      ],
+      "mots_cles": [
+        "personne physique",
+        "personne morale",
+        "redevable",
+        "taxe",
+        "31 janvier",
+        "bureau de l'enregistrement",
+        "état",
+        "noms",
+        "prénoms",
+        "domiciles",
+        "locataires",
+        "période de location",
+        "taxe versée",
+        "loyers",
+        "charges comprises",
+        "sociétés pétrolières",
+        "taxation d'office"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Duplicata des quittances délivrées",
+      "texte": [
+        "Un duplicata des quittances délivré par le receveur ou l'agent spécial ou le préposé du Trésor est obligatoirement annexé à la déclaration annuelle des revenus prévue aux articles 76 ou 126 du CGI Tome 1.",
+        "La taxe immobilière constitue un acompte de l'IRPP.",
+        "Dans le cas où les revenus fonciers sont inclus dans les bénéfices d'une entreprise industrielle, commerciale, artisanale ou agricole ou d'une profession non commerciale, la taxe est considérée comme charge déductible du bénéfice imposable.",
+        "Lorsque l'immeuble productif des revenus locatifs est un bien indivis ou appartenant à une société civile immobilière, la taxe immobilière payée constitue une charge déductible pour la détermination du revenu net."
+      ],
+      "mots_cles": [
+        "duplicata",
+        "quittances",
+        "receveur",
+        "agent spécial",
+        "préposé du Trésor",
+        "déclaration annuelle",
+        "revenus",
+        "articles 76 ou 126",
+        "CGI Tome 1",
+        "taxe immobilière",
+        "acompte",
+        "IRPP",
+        "revenus fonciers",
+        "bénéfices",
+        "entreprise industrielle",
+        "entreprise commerciale",
+        "entreprise artisanale",
+        "entreprise agricole",
+        "profession non commerciale",
+        "charge déductible",
+        "bénéfice imposable",
+        "revenus locatifs",
+        "bien indivis",
+        "société civile immobilière",
+        "revenu net"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

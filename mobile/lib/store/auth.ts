@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { storage } from "../api/client";
+import { storage, isWeb, isMobile, api } from "../api/client";
 import type { User, AuthStep } from "@/types/auth";
 
 interface AuthState {
@@ -12,6 +12,7 @@ interface AuthState {
   step: AuthStep;
   isAuthenticated: boolean;
   isLoading: boolean;
+  loggedOut: boolean;
 
   setUser: (user: User | null) => void;
   setEmail: (email: string) => void;
@@ -22,6 +23,7 @@ interface AuthState {
   setLoading: (loading: boolean) => void;
   login: (user: User, token?: string, refreshToken?: string) => Promise<void>;
   logout: () => Promise<void>;
+  clearLoggedOut: () => void;
   reset: () => void;
   verifyToken: () => Promise<void>;
 }
@@ -64,6 +66,7 @@ export const useAuthStore = create<AuthState>()(
       step: "email",
       isAuthenticated: false,
       isLoading: false,
+      loggedOut: false,
 
       setUser: (user) => set({ user }),
       setEmail: (email) => set({ email }),
@@ -74,27 +77,37 @@ export const useAuthStore = create<AuthState>()(
       setLoading: (isLoading) => set({ isLoading }),
 
       login: async (user, token, refreshToken) => {
-        if (token) {
-          await storage.set("accessToken", token);
+        if (isMobile) {
+          // Mobile : stocker les tokens dans SecureStore
+          if (token) {
+            await storage.set("accessToken", token);
+          }
+          if (refreshToken) {
+            await storage.set("refreshToken", refreshToken);
+          }
         }
-        if (refreshToken) {
-          await storage.set("refreshToken", refreshToken);
-        }
+        // Web : les tokens sont dans des cookies httpOnly (rien à stocker)
         set({ user, isAuthenticated: true });
       },
 
       logout: async () => {
-        await storage.remove("accessToken");
-        await storage.remove("refreshToken");
+        if (isMobile) {
+          await storage.remove("accessToken");
+          await storage.remove("refreshToken");
+        }
+
         set({
           user: null,
           isAuthenticated: false,
+          loggedOut: true,
           email: "",
           otpCode: "",
           devCode: "",
           step: "email",
         });
       },
+
+      clearLoggedOut: () => set({ loggedOut: false }),
 
       reset: () =>
         set({
@@ -105,18 +118,25 @@ export const useAuthStore = create<AuthState>()(
           otpSource: "login",
         }),
 
-      // Verifie que le token existe apres hydratation du store
+      // Vérifie que la session est valide après hydratation du store
       verifyToken: async () => {
         if (!get().isAuthenticated) return;
-        try {
-          const token = await storage.get();
-          if (!token) {
-            if (__DEV__) console.warn("[auth] isAuthenticated=true mais pas de token, deconnexion");
-            await get().logout();
+
+        if (isMobile) {
+          // Mobile : vérifier que le token existe dans SecureStore
+          try {
+            const token = await storage.get();
+            if (!token) {
+              if (__DEV__) console.warn("[auth] isAuthenticated=true mais pas de token, deconnexion");
+              set({ user: null, isAuthenticated: false, step: "email" });
+            }
+          } catch {
+            set({ user: null, isAuthenticated: false, step: "email" });
           }
-        } catch {
-          await get().logout();
         }
+        // Web : les cookies httpOnly sont gérés par le navigateur
+        // Si le cookie a expiré, la prochaine requête API retournera 401
+        // et l'interceptor déclenchera le logout automatiquement
       },
     }),
     {

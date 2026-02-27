@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 2,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Taxes facultatives",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 341",
+      "titre": "Taxes facultatives – Généralités",
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "généralités"
+      ],
+      "statut": "abrogé",
+      "section": "Généralités",
+      "section_numero": 1
+    },
+    {
+      "article": "Art. 342",
+      "titre": "Taxe sur la valeur locative des locaux professionnels",
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "valeur locative"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section_numero": 2
+    },
+    {
+      "article": "Art. 343",
+      "titre": null,
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section_numero": 2
+    },
+    {
+      "article": "Art. 344",
+      "titre": null,
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section_numero": 2
+    },
+    {
+      "article": "Art. 345",
+      "titre": null,
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section_numero": 2
+    },
+    {
+      "article": "Art. 346",
+      "titre": null,
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogation"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section_numero": 2
+    },
+    {
+      "article": "Art. 347",
+      "titre": "Redevables de la taxe d'enlèvement des ordures ménagères",
+      "texte": [
+        "Sont redevables de la taxe d'enlèvement des ordures ménagères, les personnes physiques ou morales bénéficiaires du service d'enlèvement des ordures ménagères."
+      ],
+      "mots_cles": [
+        "redevables",
+        "ordures ménagères",
+        "service public"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 348",
+      "titre": "Exemptions de la taxe d'enlèvement des ordures ménagères",
+      "texte": [
+        "Sont exemptés de la taxe :",
+        "- l'État et les communes pour les locaux affectés à des services publics ;",
+        "- les établissements scientifiques, d'enseignement ou d'assistance ;",
+        "- les habitants domiciliés à plus de cent mètres d'un endroit de la commune où fonctionne l'enlèvement des ordures."
+      ],
+      "mots_cles": [
+        "exemptions",
+        "services publics",
+        "enseignement",
+        "distance"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 349",
+      "titre": "Établissement de la taxe",
+      "texte": [
+        "Pour chacun des immeubles ou logements desservis par le service d'enlèvement, la taxe est établie au nom du chef de famille lorsqu'il s'agit d'une habitation, de l'exploitant ou de la société lorsqu'il s'agit d'un établissement commercial, industriel ou professionnel."
+      ],
+      "mots_cles": [
+        "assiette",
+        "chef de famille",
+        "habitation",
+        "redevable",
+        "exploitant",
+        "établissement commercial"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 350",
+      "titre": "Redevance due par les bénéficiaires logés gratuitement",
+      "texte": [
+        "Lorsque les bénéficiaires du service d'enlèvement sont logés, gratuitement ou moyennant une redevance quelconque, par leurs employeurs, ces derniers devront acquitter les droits qui n'auraient pas été payés par leur personnel dès la première demande de l'agent chargé du recouvrement."
+      ],
+      "mots_cles": [
+        "employeur",
+        "logement",
+        "recouvrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 351",
+      "titre": "Périodicité et redevable de la taxe",
+      "texte": [
+        "La taxe est due trimestriellement et est établie au nom de l'occupant des locaux desservis au premier jour de chaque trimestre civil.",
+        "Tout trimestre commencé est dû en entier."
+      ],
+      "mots_cles": [
+        "taxe trimestrielle",
+        "occupant",
+        "trimestre civil"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 352",
+      "titre": "Recouvrement de la taxe",
+      "texte": [
+        "La taxe est perçue par voie de rôle établi par le Président du Conseil Communal ou départemental et homologué par le Directeur des Contributions Directes et Indirectes. Le recouvrement est assuré par le comptable municipal concerné."
+      ],
+      "mots_cles": [
+        "rôle",
+        "homologation",
+        "recouvrement",
+        "comptable municipal"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 353",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "Les taux de la taxe qui ne peuvent excéder les maxima fixés par l'article 354 ci-après, sont fixés par délibération du Conseil Populaire de la Commune, approuvée par l'autorité de tutelle après avis du Ministère des finances.",
+        "La délibération ne peut entrer en vigueur qu'à compter du premier jour du trimestre civil suivant celui au cours duquel la délibération a été approuvée."
+      ],
+      "mots_cles": [
+        "taux",
+        "délibération",
+        "autorité de tutelle",
+        "ministre des finances"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 354",
+      "titre": "Maxima des taux de la taxe",
+      "texte": [
+        "Les maxima prévus par le précédent article sont fixés comme suit :",
+        "- par parcelle et par an : 6.000 FCFA soit 500 FCFA/mois ;",
+        "- par établissement commercial et par an : 39.000 FCFA soit 3.250 FCFA/mois ;",
+        "- par établissement professionnel et par an : 30.000 FCFA soit 2.500 FCFA/mois ;",
+        "- par établissement ou installation industrielle et par an : 60.000 FCFA soit 5.000 FCFA par mois.",
+        "Les établissements pouvant être rangés dans plusieurs catégories paient la taxe d'après la catégorie comportant le taux le plus élevé."
+      ],
+      "mots_cles": [
+        "maxima",
+        "parcelle",
+        "établissement commercial",
+        "établissement industriel"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section_numero": 3
+    },
+    {
+      "article": "Art. 355",
+      "titre": "Taxe sur les véhicules à moteur – Véhicules imposables",
+      "texte": [
+        "Sont imposables, tous véhicules à moteur destinés au transport des personnes ou marchandises ainsi que les tracteurs autres que ceux utilisés pour des travaux agricoles, appartenant aux personnes physiques ou morales ayant un établissement ou leur résidence dans la commune, région ou district et utilisant ces véhicules dans le périmètre commercial."
+      ],
+      "mots_cles": [
+        "véhicules à moteur",
+        "imposables",
+        "transport",
+        "tracteurs",
+        "périmètre commercial"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 356",
+      "titre": "Exonérations",
+      "texte": [
+        "Sont exonérés :",
+        "a) les véhicules appartenant à l'armée, aux ambassades, consulats, membres du corps diplomatique ainsi qu'aux membres des organismes internationaux à la condition que les véhicules ne soient pas immatriculés dans une série normale de l'un des États de l'UDEAC ;",
+        "b) les véhicules dont l'immobilisation durant une année est prévue et pour lesquels la carte grise aura été déposée à la mairie dans les quinze premiers jours du mois de janvier de l'année de l'imposition ;",
+        "c) Les taxis, les taxis bus, les bus et les taxis motos."
+      ],
+      "mots_cles": [
+        "exonération",
+        "armée",
+        "corps diplomatique",
+        "immobilisation",
+        "carte grise",
+        "taxis",
+        "bus"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 357",
+      "titre": "Annualité de la taxe",
+      "texte": [
+        "La taxe est due pour l'année entière par les propriétaires au 1er janvier de l'année d'imposition. En cas de mise en service d'un véhicule neuf en cours d'année, la taxe est due pour l'année entière si l'acquisition intervient avant le 1er octobre de l'année d'imposition."
+      ],
+      "mots_cles": [
+        "année entière",
+        "propriétaire",
+        "véhicule neuf",
+        "1er octobre"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 358",
+      "titre": "Taux annuels de la taxe de roulage et droit de stationnement",
+      "texte": [
+        "Les taux annuels de la taxe de roulage et droit de stationnement dans le périmètre urbain sont fixés comme suit :",
+        "- Cyclomoteurs :",
+        "  • Taxe de roulage : 1.500 FCFA",
+        "  • Droit de stationnement : /",
+        "  • Total à payer : 1.500 FCFA",
+        "- Scooters et motos toutes catégories :",
+        "  • Taxe de roulage : 3.000 FCFA",
+        "  • Droit de stationnement : /",
+        "  • Total à payer : 3.000 FCFA",
+        "- Véhicule d'une puissance allant de 0 à 5 CV :",
+        "  • Taxe de roulage : 7.000 FCFA",
+        "  • Droit de stationnement : 5.000 FCFA",
+        "  • Total à payer : 12.000 FCFA",
+        "- Véhicule d'une puissance allant de 6 à 11 CV :",
+        "  • Taxe de roulage : 10.000 FCFA",
+        "  • Droit de stationnement : 5.000 FCFA",
+        "  • Total à payer : 15.000 FCFA",
+        "- Véhicule d'une puissance allant de 12 à 15 CV :",
+        "  • Taxe de roulage : 13.000 FCFA",
+        "  • Droit de stationnement : 5.000 FCFA",
+        "  • Total à payer : 18.000 FCFA",
+        "- Véhicule d'une puissance allant de 16 à 20 CV :",
+        "  • Taxe de roulage : 25.000 FCFA",
+        "  • Droit de stationnement : 10.000 FCFA",
+        "  • Total à payer : 35.000 FCFA",
+        "- Véhicule d'une puissance allant de 21 à 25 CV :",
+        "  • Taxe de roulage : 30.000 FCFA",
+        "  • Droit de stationnement : 10.000 FCFA",
+        "  • Total à payer : 40.000 FCFA",
+        "- Véhicule d'une puissance allant de 26 à 30 CV :",
+        "  • Taxe de roulage : 60.000 FCFA",
+        "  • Droit de stationnement : 10.000 FCFA",
+        "  • Total à payer : 70.000 FCFA",
+        "- Véhicule d'une puissance allant de 31 CV à plus :",
+        "  • Taxe de roulage : 90.000 FCFA",
+        "  • Droit de stationnement : 10.000 FCFA",
+        "  • Total à payer : 100.000 FCFA"
+      ],
+      "mots_cles": [
+        "taxe de roulage",
+        "droit de stationnement",
+        "taux annuels",
+        "cyclomoteurs",
+        "motos",
+        "véhicules",
+        "puissance CV"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 359",
+      "titre": "Justification du paiement de la taxe",
+      "texte": [
+        "Tout possesseur de véhicules doit justifier après le 1er avril de chaque année, sur réquisition du Président du Comité Exécutif Communal, de la Région ou ses adjoints, des officiers de police judiciaire, agents de police, officiers et sous-officiers de police militaire et toutes autres personnes assermentées, du paiement de la présente taxe.",
+        "À défaut de présentation du récépissé délivré par le receveur municipal, le comptable du Trésor (trésorier-payeur, percepteur ou préposé), le véhicule sera saisi immédiatement et mis en fourrière aux frais du redevable jusqu'à règlement de la taxe majorée des pénalités prévues par l'article 381 bis du présent Code.",
+        "Si, au bout d'un mois de la saisie, le redevable ne s'est pas libéré, le véhicule sera vendu aux enchères à la diligence du Président du Comité Exécutif Communal, de Région ou de District.",
+        "Le paiement de la taxe après le 31 mars de l'année d'imposition entraîne une pénalité de 10% du montant dû en principal."
+      ],
+      "mots_cles": [
+        "justification de paiement",
+        "contrôle",
+        "véhicules",
+        "taxe",
+        "saisie",
+        "fourrière",
+        "vente aux enchères",
+        "pénalités",
+        "31 mars",
+        "10%"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 359 A",
+      "titre": "Mise en œuvre des dispositions relatives à la taxe sur les véhicules",
+      "texte": [
+        "La direction générale des collectivités locales et la direction générale des transports terrestres sont chargées de la mise en œuvre des dispositions relatives à cette taxe."
+      ],
+      "mots_cles": [
+        "mise en œuvre",
+        "collectivités locales",
+        "transports terrestres",
+        "taxe véhicules"
+      ],
+      "statut": "en vigueur",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    },
+    {
+      "article": "Art. 360 à 364",
+      "titre": "Abrogés",
+      "texte": [
+        "Abrogés."
+      ],
+      "mots_cles": [
+        "abrogation"
+      ],
+      "statut": "abrogé",
+      "section": "Taxe sur les véhicules à moteur",
+      "section_numero": 4
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "document": "Taxe sur les transferts de fonds",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-TRANSF",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.14. Taxe sur les transferts de fonds",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Chapitre 1 - Généralités",
+        "Art.1.- Il est institué une taxation sur les opérations d'envoi d'argent à l'étranger appelée taxe sur les transferts de fonds."
+      ],
+      "mots_cles": [
+        "taxe transferts fonds",
+        "envoi argent étranger",
+        "TTF"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Affectation du produit",
+      "texte": [
+        "Art.2.- (L.F.2025) La taxe sur les transferts de fonds est perçue au profit du budget de l'État, de l'Agence de régulation des transferts de fonds, de l'Agence congolaise des systèmes d'information, du fonds pour l'opérationnalisation de la fonction bancaire du Trésor Public et de la plateforme de certification des transferts de fonds."
+      ],
+      "mots_cles": [
+        "affectation",
+        "budget État",
+        "Agence régulation",
+        "ACSI",
+        "fonction bancaire Trésor",
+        "plateforme certification"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Champ d'application",
+      "texte": [
+        "Chapitre 2 - Champ d'application",
+        "Art.3.- La taxe sur les transferts des fonds frappe :",
+        "• les opérations de transferts de fonds à l'étranger et de vente de devises à l'intérieur du pays, quel que soit l'opérateur qui procède auxdites opérations ;",
+        "• les recettes d'exportation non rapatriées au Congo dans un délai de 30 jours, à compter de la date de paiement des factures, y compris les recettes d'exportations dont le non rapatriement serait justifié par une dispense conventionnelle, sans préjudice des sanctions prévues par la réglementation des changes harmonisées des États membres de la CEMAC ;",
+        "• les paiements électroniques effectués par cartes de crédit au profit d'une personne résidant dans un pays hors zone CEMAC, sur des comptes bancaires ouverts au Congo ;",
+        "• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger lorsque les prestations de services ou la livraison de biens y relatifs ont été rendues ou livrées au Congo ;",
+        "• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger sur toute sorte de transaction dont la valeur est supérieure à 5.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "champ application",
+        "transferts étranger",
+        "vente devises",
+        "recettes exportation",
+        "30 jours",
+        "paiements électroniques",
+        "cartes crédit",
+        "5 000 000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exonérations",
+      "texte": [
+        "Art.4.- Sont exonérés de la taxe sur le transfert de fonds :",
+        "• les transferts de fonds réalisés par les missions diplomatiques et les organisations internationales ;",
+        "• les transferts de fonds relatifs aux traitements des diplomates congolais en poste à l'étranger ;",
+        "• le transfert des bourses des étudiants et stagiaires congolais à l'étranger ;",
+        "• les remboursements d'emprunts contractés par des personnes morales en vue de la réalisation d'un programme d'investissement ayant fait l'objet d'une convention d'établissement avec l'État ;",
+        "• les transferts de fonds à destination des pays membres de la CEMAC ;",
+        "• les remboursements d'emprunts contractés par l'État ;",
+        "• les transferts de fonds ordonnés par le trésor public."
+      ],
+      "mots_cles": [
+        "exonérations",
+        "missions diplomatiques",
+        "organisations internationales",
+        "diplomates congolais",
+        "bourses étudiants",
+        "emprunts investissement",
+        "CEMAC",
+        "Trésor public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Base d'imposition",
+      "texte": [
+        "Chapitre 3 - Base d'imposition et taux",
+        "Art.5.- La taxe est calculée sur le montant brut du transfert."
+      ],
+      "mots_cles": [
+        "base imposition",
+        "montant brut transfert"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Taux de la taxe",
+      "texte": [
+        "Art.6.- Le taux de la taxe est de 1,5 %.",
+        "Ce taux s'applique également aux opérations de transfert de fonds réalisées par les sociétés pétrolières."
+      ],
+      "mots_cles": [
+        "taux taxe",
+        "1,5%",
+        "sociétés pétrolières"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Fait générateur",
+      "texte": [
+        "Chapitre 4 - Fait générateur et exigibilité",
+        "Art.7.- Le fait générateur de la taxe est constitué par :",
+        "1° l'ordre de transfert matérialisé par le dépôt des sommes à transférer et le paiement de la commission de transfert à l'établissement chargé d'effectuer l'opération ;",
+        "2° la vente de devises ou la mise à disposition de devises à soi-même ou aux tiers ;",
+        "3° le non rapatriement des recettes d'exportation après le délai de 30 jours à compter de la date du paiement de la facture ;",
+        "4° les sommes débitées en devises suite à des paiements effectués par carte bancaire ou tout autre moyen électronique à partir d'un compte bancaire ouvert au Congo."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "ordre transfert",
+        "vente devises",
+        "non rapatriement",
+        "carte bancaire",
+        "paiement électronique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Recouvrement de la taxe",
+      "texte": [
+        "Art.8.- Les entreprises qui effectuent les opérations visées à l'article 3 ci-dessus sont chargées de recouvrer la taxe sur les transferts de fonds."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "entreprises",
+        "opérations transfert"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Reversement",
+      "texte": [
+        "Art.9.- Les prélèvements de la taxe sur les transferts de fonds ou la livraison des devises à soi-même effectués par les banques, les bureaux de change et les autres établissements financiers sont reversés tous les mois, au bureau des impôts dont dépend le siège de la direction ou le principal établissement de l'entreprise, dans le délai fixé par l'article 461 bis du CGI, tome 1."
+      ],
+      "mots_cles": [
+        "reversement mensuel",
+        "banques",
+        "bureaux change",
+        "établissements financiers",
+        "article 461 bis CGI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Sanctions pour non-reversement",
+      "texte": [
+        "Art.10.- Le non-reversement des sommes encaissées au titre de la taxe sur les transferts de fonds dans les délais définis à l'article 9 ci-dessus est sanctionné par un intérêt de retard égal à 10 % par mois ou fraction de mois des sommes non payées, sans préjudice des dispositions prévues à l'article 13 ci-dessous."
+      ],
+      "mots_cles": [
+        "sanctions",
+        "non-reversement",
+        "intérêt retard 10%",
+        "par mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Responsabilité du redevable",
+      "texte": [
+        "Art.11.- Le non-prélèvement de la taxe sur les transferts de fonds sur une opération déterminée met à la charge du redevable légal qui n'y a pas procédé le paiement de la taxe non recouvrée.",
+        "Le paiement est alors assorti d'une pénalité égale à 50 % de la taxe non prélevée."
+      ],
+      "mots_cles": [
+        "responsabilité redevable",
+        "non-prélèvement",
+        "pénalité 50%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11bis",
+      "titre": "Déduction de la taxe",
+      "texte": [
+        "Chapitre 4 bis - Déduction",
+        "Art.11 bis.- La taxe sur les transferts de fonds ayant frappé en amont :",
+        "• le prix d'achat des devises effectué par les banques et les bureaux de change agréés ;",
+        "• le montant des ordres de virement de fonds à destination de l'étranger ou au profit des non-résidents, exécutés par les banques,",
+        "est déductible pour les assujettis agréés et soumis au régime du réel."
+      ],
+      "mots_cles": [
+        "déduction taxe",
+        "achat devises",
+        "banques",
+        "bureaux change agréés",
+        "régime réel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 1",
+      "titre": "Modalités de déduction",
+      "texte": [
+        "Art.11 bis-1.- La taxe ci-dessus citée, supportée au cours d'un mois, est déductible au titre du mois suivant.",
+        "Pour les importations de devises, le droit à déduction prend naissance lors de la mise à la consommation."
+      ],
+      "mots_cles": [
+        "modalités déduction",
+        "mois suivant",
+        "importation devises",
+        "mise à consommation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Délai d'exercice du droit à déduction",
+      "texte": [
+        "Art.11 bis-2.- Le droit à déduction est exercé jusqu'à la fin du premier exercice fiscal qui suit celui au cours duquel la taxe est devenue exigible. Après ce délai, la taxe non déduite est acquise au Trésor Public."
+      ],
+      "mots_cles": [
+        "délai déduction",
+        "premier exercice fiscal",
+        "taxe acquise Trésor"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Conditions de déductibilité",
+      "texte": [
+        "Art.11 bis-3.- Pour être déductible, la taxe doit :",
+        "1) Figurer expressément sur un document délivré par la banque centrale ou une banque primaire assujettie à la taxe sur les transferts de fonds.",
+        "2) Être appuyée par :",
+        "• a) les factures d'achat de devises délivrées par les fournisseurs agréés ;",
+        "• b) les ordres de virement de fonds au profit des fournisseurs de devises ;",
+        "• c) les documents douaniers relatifs à l'importation de devises."
+      ],
+      "mots_cles": [
+        "conditions déductibilité",
+        "document banque centrale",
+        "factures achat devises",
+        "documents douaniers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exclusions du droit à déduction",
+      "texte": [
+        "Art.11 bis-4.- N'ouvre pas droit à déduction, la taxe correspondant :",
+        "• à la contre-valeur des devises livrées à soi-même ou aux tiers ;",
+        "• au montant des transferts de fonds effectués pour ses propres besoins."
+      ],
+      "mots_cles": [
+        "exclusions déduction",
+        "livraison soi-même",
+        "propres besoins"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Limitation du droit à déduction",
+      "texte": [
+        "Art.11 bis-5.- Le droit à déduction est limité à la taxe correspondant à la contre-valeur des devises achetées."
+      ],
+      "mots_cles": [
+        "limitation déduction",
+        "contre-valeur devises achetées"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11ter",
+      "titre": "Obligations des redevables",
+      "texte": [
+        "Chapitre 4 ter - Obligations des redevables",
+        "Art.11 ter.- Tout redevable de la taxe est tenu de souscrire spontanément une déclaration selon le modèle prescrit par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "obligations redevables",
+        "déclaration spontanée",
+        "modèle administration fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 1",
+      "titre": "Obligations documentaires",
+      "texte": [
+        "Art.11 ter-1.- Tout redevable de la taxe est tenu :",
+        "• de délivrer une facture ou tout document en tenant lieu qui mentionne expressément le montant de la taxe sur les transferts de fonds ;",
+        "• d'exiger de ses fournisseurs une facture ou tout document en tenant lieu.",
+        "La facture ou le document visé à l'alinéa précédent doit comporter les mentions obligatoires prévues par l'article 29 de la loi relative à la TVA."
+      ],
+      "mots_cles": [
+        "obligations documentaires",
+        "facture",
+        "mentions obligatoires",
+        "article 29 TVA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Contrôle",
+      "texte": [
+        "Chapitre 5 - Dispositions diverses",
+        "Art.12.- La direction générale des impôts et des domaines et l'agence de régulation des transferts de fonds sont chargées chacune en ce qui la concerne du contrôle de la taxe sur les transferts de fonds.",
+        "Les banques et les établissements financiers chargés de collecter l'impôt sont tenus de mettre à la disposition de la direction générale des impôts et des domaines et de l'agence de régulation des transferts de fonds, tous les documents comptables et autres permettant de contrôler l'assiette, la liquidation et le versement de la taxe."
+      ],
+      "mots_cles": [
+        "contrôle",
+        "DGID",
+        "ARTF",
+        "documents comptables",
+        "assiette",
+        "liquidation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12bis",
+      "titre": "Clé de répartition de la taxe",
+      "texte": [
+        "Art.12 bis.- (L.F.2024, L.F.2025) La clé de répartition de la taxe sur les transferts de fonds est fixée ainsi qu'il suit :",
+        "• État : 40 %",
+        "• ARTF : 20 %",
+        "• ACSI : 10 %",
+        "• Fonction bancaire du Trésor : 15 %",
+        "• Plate-forme de certification : 15 %",
+        "Le pourcentage de 15 % affecté à la plate-forme de certification des transferts de fonds est destiné à couvrir les dépenses liées à l'implémentation de la plateforme et à la rémunération du prestataire.",
+        "Dans les 40 % de la part de l'État, 20 % sont affectés au ramassage et au traitement des ordures ménagères.",
+        "Les 10 % de l'ACSI sont destinés à la mise en œuvre de la digitalisation des projets ci-après :",
+        "• la plateforme des paiements dématérialisés des recettes de services et du portefeuille au profit du trésor public ;",
+        "• la plateforme des paiements dématérialisés des recettes affectées aux collectivités locales ;",
+        "• la plateforme des paiements dématérialisés des différentes taxes de la mairie ;",
+        "• la plateforme d'uniformisation de la plaque d'immatriculation ou de la vignette électronique dans le secteur des transports terrestres ;",
+        "• le système intégré des frais d'état civil."
+      ],
+      "mots_cles": [
+        "répartition taxe",
+        "État 40%",
+        "ARTF 20%",
+        "ACSI 10%",
+        "Trésor 15%",
+        "plateforme certification 15%",
+        "ordures ménagères",
+        "digitalisation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12ter",
+      "titre": "Plateforme de certification",
+      "texte": [
+        "Art.12 ter.- (L.F.2024, L.F.2025) Il est mis en place une plateforme de certification des transferts de fonds en République du Congo.",
+        "L'Agence de régulation des transferts de fonds, en sa qualité d'autorité de régulation de transferts de fonds est chargée de la mise en place de ce dispositif.",
+        "Tout agent exerçant dans le domaine de transfert de fonds est tenu de s'interconnecter à la plateforme opérée par l'Agence de régulation de transfert de fonds."
+      ],
+      "mots_cles": [
+        "plateforme certification",
+        "ARTF",
+        "interconnexion obligatoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Obligations des agents économiques",
+      "texte": [
+        "Art.13.- (L.F.2025) Tout agent économique exerçant l'activité de transferts de fonds est tenu de :",
+        "• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transferts de fonds ;",
+        "• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'Agence de régulation des transferts de fonds."
+      ],
+      "mots_cles": [
+        "obligations agents économiques",
+        "enregistrement ARTF",
+        "registre national",
+        "déclaration 10 du mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13bis",
+      "titre": "Sanctions",
+      "texte": [
+        "Art.13 bis.- (L.F.2025)",
+        "1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :",
+        "• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;",
+        "• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;",
+        "• une amende de 40.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;",
+        "• une amende de 50.000.000 FCFA pour tout agent qui aura contrevenu ou aura tenté de contrevenir soit en ne respectant pas les procédures prescrites, ou les formalités exigées lors de l'enregistrement ;",
+        "• tout dirigeant de nationalité congolaise ou étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;",
+        "• fermeture de la structure lieu du délit ainsi que poursuites pénales ;",
+        "• saisie du montant objet de l'infraction.",
+        "2) Les agents économiques enregistrés, opérateur formel contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :",
+        "• amende de 20.000.000 FCFA pour transmission d'informations inexactes lors de l'enregistrement ;",
+        "• amende de 50 % des montants en cause assortie d'un avertissement pour non-déclaration ou informations frauduleuses ;",
+        "• amende de 10.000.000 FCFA pour retard dans la transmission des déclarations ;",
+        "• interdiction définitive d'exercer pour les dirigeants contrevenants ;",
+        "• amende de 70.000.000 FCFA pour faux et usage de faux.",
+        "Un arrêté du Ministre en charge des finances fixe la répartition des amendes."
+      ],
+      "mots_cles": [
+        "sanctions",
+        "opérateurs clandestins",
+        "amende 20 000 000 F",
+        "amende 50 000 000 F",
+        "amende 40 000 000 F",
+        "interdiction exercer",
+        "fermeture",
+        "saisie"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

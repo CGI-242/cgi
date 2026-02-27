@@ -1,7 +1,7 @@
 // mobile/lib/api/chat.ts
 // Client API chat IA fiscal - SSE streaming + CRUD conversations
 
-import { api } from "./client";
+import { api, isWeb, isMobile } from "./client";
 
 const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
 
@@ -40,14 +40,14 @@ export interface StreamCallbacks {
   onError?: (error: string) => void;
 }
 
-// --- Helpers pour lire le token ---
+// --- Helpers pour lire le token (mobile uniquement) ---
 
 async function getAuthToken(): Promise<string | null> {
-  if (typeof window !== "undefined" && typeof sessionStorage !== "undefined") {
-    return sessionStorage.getItem("accessToken");
+  if (isMobile) {
+    const { getItemAsync } = require("expo-secure-store");
+    return getItemAsync("accessToken");
   }
-  const { getItemAsync } = require("expo-secure-store");
-  return getItemAsync("accessToken");
+  return null; // Web : cookies httpOnly gérés automatiquement
 }
 
 // --- SSE Streaming ---
@@ -55,22 +55,51 @@ async function getAuthToken(): Promise<string | null> {
 /**
  * Envoyer un message avec streaming SSE
  * Utilise fetch natif pour lire le stream de reponse
+ * Web : credentials include (cookies httpOnly)
+ * Mobile : Authorization Bearer token
  */
 export async function sendMessageStream(
   content: string,
   conversationId?: string,
   callbacks?: StreamCallbacks
 ): Promise<void> {
-  const token = await getAuthToken();
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
 
-  const response = await fetch(`${API_URL}/chat/message/stream`, {
+  if (isMobile) {
+    headers["X-Platform"] = "mobile";
+    const token = await getAuthToken();
+    if (token) headers.Authorization = `Bearer ${token}`;
+  }
+
+  let response = await fetch(`${API_URL}/chat/message/stream`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
+    headers,
     body: JSON.stringify({ content, conversationId }),
+    credentials: isWeb ? "include" : "omit",
   });
+
+  // Si 401 sur web : tenter un refresh cookie puis réessayer
+  if (response.status === 401 && isWeb) {
+    try {
+      const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({}),
+        credentials: "include",
+      });
+      if (refreshRes.ok) {
+        // Réessayer avec le nouveau cookie
+        response = await fetch(`${API_URL}/chat/message/stream`, {
+          method: "POST",
+          headers,
+          body: JSON.stringify({ content, conversationId }),
+          credentials: "include",
+        });
+      }
+    } catch {
+      // refresh échoué, on continue avec l'erreur originale
+    }
+  }
 
   if (!response.ok) {
     const errorText = await response.text();

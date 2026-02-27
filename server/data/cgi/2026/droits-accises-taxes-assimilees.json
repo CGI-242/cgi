@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "document": "Droits d'accises et taxes assimilées",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-ACCISES",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.3. Droits d'accises et taxes assimilées",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Champ d'application du droit d'accise",
+      "texte": [
+        "4.3.1. Droits d'accises",
+        "Chapitre 1 - Champ d'application",
+        "Art.1.- Le droit d'accise frappe la consommation au Congo des produits établis à l'article 2 ci-dessous, sans aucune distinction fondée sur les critères de qualité, de présentation ou d'origine des produits."
+      ],
+      "mots_cles": [
+        "droit d'accise",
+        "champ d'application",
+        "consommation",
+        "produits",
+        "sans distinction qualité origine"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Produits soumis aux droits d'accises",
+      "texte": [
+        "Art.2.- (L.F.2022, L.F.R.2022)",
+        "1) Sont obligatoirement soumis aux droits d'accises :",
+        "a) les boissons alcoolisées (chapitre 22 du tarif extérieur commun de la CEMAC), à l'exclusion des vinaigres (position 22.09) ;",
+        "b) les cigares, cigarettes et autres tabacs (chapitre 24) ;",
+        "c) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 ;",
+        "d) les motocycles d'une cylindrée supérieure à 250 cm3 (sous-positions 87.11.30, 87.11.40, 87.11.50).",
+        "2) Le droit d'accises appliqué sur les produits ci-dessus énumérés est exclusif d'autres taxes assimilées aux droits d'accises."
+      ],
+      "mots_cles": [
+        "boissons alcoolisées",
+        "chapitre 22 TEC CEMAC",
+        "tabacs",
+        "chapitre 24",
+        "véhicules tourisme 87.03",
+        "motocycles 250 cm3"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Exonérations et intrants",
+      "texte": [
+        "Art.3.-",
+        "1) A l'exception des cas prévus au présent article, aucune exonération ne peut être accordée sur les produits soumis aux droits d'accises.",
+        "2) Les intrants sont exonérés de droits d'accises, à condition :",
+        "a) qu'ils soient nécessaires à la production locale ;",
+        "b) que l'importateur ait préalablement obtenu une attestation spécifique d'exonération délivrée par l'administration fiscale.",
+        "3) Au sens de la présente loi, l'intrant est défini comme tout élément entrant dans le processus de production."
+      ],
+      "mots_cles": [
+        "exonération",
+        "intrants",
+        "production locale",
+        "attestation fiscale",
+        "attestation exonération"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Personnes redevables du droit d'accise",
+      "texte": [
+        "Art.4.- Est redevable du droit d'accises, l'importateur ou le producteur d'un bien ou d'un service soumis aux droits d'accises, quelle que soit sa qualité ou le lieu de consommation.",
+        "A ce titre, aucun régime dérogatoire ne peut être opposé pour la perception des droits, à l'exception du régime de transit."
+      ],
+      "mots_cles": [
+        "redevable",
+        "importateur",
+        "producteur",
+        "régime de transit",
+        "régime dérogatoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Fait générateur et exigibilité",
+      "texte": [
+        "Chapitre 2 - Fait générateur, exigibilité",
+        "Art.5.- Le fait générateur et l'exigibilité du droit d'accise sont constitués :",
+        "1° pour les biens produits localement : par la première cession à titre onéreux ou gratuit ou le prélèvement ;",
+        "2° pour les importations : par l'introduction sur le territoire douanier."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exigibilité",
+        "production locale",
+        "première cession",
+        "importations",
+        "territoire douanier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Interdiction des mesures préférentielles",
+      "texte": [
+        "Chapitre 3 - Base d'imposition et taux",
+        "Art.6.- Toute mesure préférentielle concernant les biens nationaux est interdite, notamment toute réduction partielle ou totale de base d'imposition ou de taux."
+      ],
+      "mots_cles": [
+        "base d'imposition",
+        "taux",
+        "mesure préférentielle",
+        "biens nationaux",
+        "réduction interdite"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Base d'imposition aux droits d'accises",
+      "texte": [
+        "Art.7.-",
+        "1) La base d'imposition aux droits d'accise est établie :",
+        "a) à l'importation : en ajoutant à la valeur en douane telle qu'elle est définie par le Code des douanes de la CEMAC, le montant du droit de douane ;",
+        "b) pour l'introduction sur le territoire de biens et marchandises en provenance d'un État membre de la CEMAC : par la valeur sortie-usine à l'exclusion des frais d'approche ;",
+        "c) pour les biens ou produits fabriqués au Congo : par toutes les sommes et valeurs et par tous avantages, biens et services reçus ou à recevoir en contrepartie de la livraison.",
+        "2) La base d'imposition est arrondie au millier de francs inférieur.",
+        "3) Sont exclues de la base d'imposition, les sommes perçues par l'assujetti à titre de consignation lors de la livraison d'emballages récupérables et réutilisables non identifiables."
+      ],
+      "mots_cles": [
+        "base d'imposition",
+        "valeur en douane",
+        "CEMAC",
+        "droit douane",
+        "valeur sortie-usine",
+        "arrondi millier",
+        "emballages récupérables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Taux des droits d'accises",
+      "texte": [
+        "Art.8.- (L.F.2021, L.F.2023, L.F.2025)",
+        "1) Les taux des droits d'accises sont fixés comme suit :",
+        "a) tabacs : 30 % ;",
+        "b) boissons alcoolisées : 25 % ;",
+        "c) boissons sucrées : 12,5 % ;",
+        "d) produits alimentaires de luxe, parfums et produits cosmétiques, armes et munitions, bijoux : 25 % ;",
+        "e) véhicules automobiles de tourisme (position tarifaire 87.03), à l'exclusion des véhicules neufs n'excédant pas 3.000 cm3 et motocycles : 15 % ;",
+        "f) appareils servant aux jeux de hasard et de divertissements : 25 % ;",
+        "g) autres produits soumis aux droits d'accises : 25 %.",
+        "2) Les droits d'accises appliqués sur les produits ci-dessus énumérés est exclusif d'autres taxes assimilées aux droits d'accises."
+      ],
+      "mots_cles": [
+        "taux droits d'accises",
+        "tabacs 30%",
+        "boissons alcoolisées 25%",
+        "boissons sucrées 12,5%",
+        "produits luxe 25%",
+        "véhicules 15%",
+        "jeux hasard 25%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe spécifique sur les boissons et le tabac",
+      "texte": [
+        "4.3.2. Taxe spécifique sur les boissons et le tabac",
+        "[NB - Loi de finances pour 2013, modifiée]",
+        "Art.6.- Il est créé en République du Congo, au profit du budget de l'État, une taxe spécifique sur les boissons et le tabac."
+      ],
+      "mots_cles": [
+        "taxe spécifique",
+        "boissons",
+        "tabac",
+        "budget État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Personnes redevables et fait générateur",
+      "texte": [
+        "Art.7.- Cette taxe est due par le consommateur final.",
+        "Le producteur local et l'importateur grossiste sont les redevables légaux de la taxe."
+      ],
+      "mots_cles": [
+        "redevable",
+        "consommateur final",
+        "producteur local",
+        "importateur grossiste"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Tarifs de la taxe spécifique",
+      "texte": [
+        "Art.8.- Le tarif de la taxe est fixé comme suit :",
+        "1) Pour les boissons alcoolisées, le montant de la taxe est de 25 FCFA par litre.",
+        "2) Pour les boissons non alcoolisées, le montant de la taxe est de 15 FCFA par litre.",
+        "3) Pour les contenances d'autres quantités de boissons, est appliquée la règle de trois, avec arrondi par unité monétaire de 5 FCFA supérieur. Ainsi, pour les boissons de quantités inférieures à un litre, la taxe est fixée comme suit :",
+        "Pour les boissons alcoolisées :",
+        "a) 10 F, pour les contenances de 33 cl ;",
+        "b) 15 F, pour les contenances de 50 cl ;",
+        "c) 20 F, pour les contenances de 65 cl.",
+        "Pour les boissons non alcoolisées :",
+        "a) 5 F, pour les contenances de 33 cl ;",
+        "b) 10 F, pour les contenances de 50 cl ;",
+        "c) 15 F, pour les contenances de 65 cl.",
+        "4) Pour le tabac, le montant de la taxe est de 40 FCFA par paquet ou cigare."
+      ],
+      "mots_cles": [
+        "tarifs taxe spécifique",
+        "boissons alcoolisées 25F/L",
+        "boissons non alcoolisées 15F/L",
+        "tabac 40F/paquet",
+        "33cl",
+        "50cl",
+        "65cl"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Modalités d'intégration de la taxe",
+      "texte": [
+        "Art.9.- Pour le producteur local, la taxe est ajoutée au prix sortie usine, toutes taxes comprises. Pour l'importateur grossiste, la taxe est ajoutée au prix de vente toutes taxes comprises."
+      ],
+      "mots_cles": [
+        "prix sortie usine",
+        "prix vente TTC",
+        "producteur local",
+        "importateur grossiste"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Constatation, liquidation et recouvrement",
+      "texte": [
+        "Art.10.- La taxe est constatée et liquidée :",
+        "- à l'importation, par l'administration douanière ;",
+        "- au niveau de la production locale, par l'administration fiscale.",
+        "Le recouvrement de la taxe est assuré par le trésor public."
+      ],
+      "mots_cles": [
+        "constatation",
+        "liquidation",
+        "recouvrement",
+        "administration douanière",
+        "administration fiscale",
+        "trésor public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Affectation du produit de la taxe",
+      "texte": [
+        "Art.11.- La taxe spécifique sur les boissons et le tabac est une recette affectée à la couverture des dépenses du régime de l'assurance maladie et aux activités sportives."
+      ],
+      "mots_cles": [
+        "recette affectée",
+        "assurance maladie",
+        "activités sportives"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Règles de déclaration, paiement et sanctions",
+      "texte": [
+        "Art.12.- Les modalités de déclaration, de paiement, de contrôle et de sanction sont celles applicables en matière de TVA."
+      ],
+      "mots_cles": [
+        "déclaration",
+        "paiement",
+        "contrôle",
+        "sanction",
+        "modalités TVA"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

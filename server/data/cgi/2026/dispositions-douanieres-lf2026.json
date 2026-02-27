@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "document": "Dispositions douanières - Modifications L.F. 2026",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC-DOUANES",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Modifications des dispositions douanières",
+    "section": null,
+    "section_titre": null,
+    "page_source": null,
+    "reference_loi": "Loi n° 37-2021 du 13 août 2021 modifiée par L.F. 2026"
+  },
+  "articles": [
+    {
+      "article": "Art. 44 (L.F. 2026)",
+      "titre": "Taux de la redevance informatique",
+      "texte": [
+        "(L.F. 2026 - modifié) Le taux de la redevance informatique est fixé comme suit :",
+        "• 2 % à l'importation des marchandises déclarées au régime de la mise à la consommation ;",
+        "• 2 % à l'exportation des marchandises ;",
+        "• 1 % à la souscription et à la régularisation des régimes suspensifs.",
+        "Le reste sans changement."
+      ],
+      "mots_cles": [
+        "redevance informatique",
+        "taux 2%",
+        "importation",
+        "mise à la consommation",
+        "exportation",
+        "régimes suspensifs",
+        "1%",
+        "souscription",
+        "régularisation"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

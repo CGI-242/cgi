@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Déductions et régularisations",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 23",
+      "titre": "Principes des déductions",
+      "texte": [
+        "Art.23.- 1) La TVA ayant frappé en amont les éléments du prix d'une opération imposable est déductible pour les assujettis immatriculés et soumis au régime du réel. Les biens et les services pour lesquels la TVA est admise en déduction doivent être nécessaires et affectés à l'exploitation.",
+        "2) La TVA qui a grevé les éléments du prix ayant grevé en amont les éléments du prix d'une opération imposable est déductible de la TVA applicable à cette opération. Les biens et services pour lesquels la TVA est admise en déduction doivent être nécessaires et affectés à l'exploitation.",
+        "3) Le droit à déduction prend naissance lorsque la taxe devient exigible chez le fournisseur. Pour les importations, le droit à déduction prend naissance lors de la mise à la consommation.",
+        "4) La TVA qui a grevé les éléments du prix d'une opération imposable au cours d'un mois donné est déductible au titre de ce mois.",
+        "5) Pour être déductible, la TVA doit figurer :",
+        "• sur une facture conforme aux dispositions de l'article 30, délivrée par le fournisseur immatriculé ;",
+        "• en cas d'importation, sur la déclaration de mise à la consommation assortie de la preuve de paiement ;",
+        "• en cas de livraisons à soi-même, sur les déclarations souscrites par le redevable ;",
+        "• en cas de retenue de la TVA à la source, sur une attestation de retenue délivrée par le client.",
+        "6) Toutefois, en ce qui concerne les fournisseurs étrangers, les conditions fixées au point 3 ci-dessus ne sont pas applicables.",
+        "7) Le droit à déduction est exercé au plus tard jusqu'à la fin de l'année qui suit celle au cours de laquelle la TVA est devenue exigible. Après ce délai, la TVA non déduite est acquise au trésor public."
+      ],
+      "mots_cles": [
+        "principes déductions",
+        "TVA amont",
+        "assujettis immatriculés",
+        "régime réel",
+        "nécessaire exploitation",
+        "droit déduction",
+        "exigibilité fournisseur",
+        "importations mise consommation",
+        "facture conforme",
+        "article 30",
+        "déclaration douane",
+        "livraisons à soi-même",
+        "retenue source",
+        "attestation retenue",
+        "fournisseurs étrangers",
+        "délai fin année suivante",
+        "TVA acquise trésor"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Exclusions du droit à déduction",
+      "texte": [
+        "Art.24.- 1) Nonobstant les dispositions de l'article 22, n'ouvre pas droit à déduction même lorsque les biens ou services concernés sont utilisés pour la réalisation d'opérations ouvrant droit à déduction, la taxe ayant grevé :",
+        "• les dépenses de logement, hébergement, restauration, réception et spectacle. Cette exclusion ne concerne pas les professionnels du tourisme, de la restauration et du spectacle ;",
+        "• les importations de biens liés à l'exploitation, non utilisés et réexpédiés en l'état ;",
+        "• les produits pétroliers ;",
+        "• les services afférents à des biens exclus du droit à déduction ;",
+        "• les distributions gratuites de bien dans le cadre de la publicité ou de la promotion commerciale ;",
+        "• les fausses factures et les fausses déclarations en douane ;",
+        "• les dépenses payées en espèces pour un montant excédant 500.000 FCFA.",
+        "2) N'ouvre également pas droit à déduction, la TVA ayant grevé l'acquisition des véhicules et engins, quelle que soit leur nature, conçus ou aménagés pour le transport des personnes ou pour des usages mixtes constituant des immobilisations, ainsi que la TVA sur leur location, leurs pièces détachées et accessoires ou les services afférents à ces mêmes biens.",
+        "Toutefois, l'exclusion ci-dessus mentionnée ne concerne pas :",
+        "• les véhicules routiers spécialement conçus pour le transport de personnes comportant, outre le siège du conducteur, plus de 8 places assises et utilisés par les entreprises pour le transport exclusif de leur personnel ;",
+        "• les immobilisations dans entreprises de location de véhicules ;",
+        "• le matériel de transport utilisé pour leur besoin propre et mis en exploitation par des entreprises de location de véhicules ou de transport public de personnes ainsi que les pièces détachées accessoires et les charges d'entretien et/ou de réparation desdits véhicules ;",
+        "• les immobilisations des entreprises de transport public de personnes ;",
+        "• les dépenses de transport des professionnels du tourisme pour leurs clients ;",
+        "• les stocks de véhicules des concessionnaires et les véhicules d'essai ou de démonstration ;",
+        "• les véhicules affectés à l'enseignement de la conduite."
+      ],
+      "mots_cles": [
+        "exclusions déduction",
+        "logement hébergement",
+        "restauration réception spectacle",
+        "produits pétroliers",
+        "distributions gratuites publicité",
+        "fausses factures",
+        "espèces 500000 FCFA",
+        "véhicules transport personnes",
+        "usages mixtes",
+        "location véhicules",
+        "pièces détachées",
+        "exceptions",
+        "plus 8 places",
+        "transport personnel",
+        "transport public",
+        "concessionnaires",
+        "auto-école"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Limitation du droit à déduction - Affectation",
+      "texte": [
+        "Art.25.- Les assujettis qui ne réalisent pas exclusivement des opérations ouvrant droit à déduction doivent, dès la réalisation de leurs dépenses, les affecter soit à leurs activités imposables, soit à leurs activités non imposables :",
+        "• lorsque les biens et services concourent exclusivement à la réalisation d'opérations ouvrant droit à déduction, la TVA qui les a grevées est déductible ;",
+        "• lorsque les biens et services concourent exclusivement à la réalisation d'opérations n'ouvrant pas droit à déduction, la TVA qui les a grevées n'est pas déductible ;",
+        "• lorsque les biens et services concourent à la fois à la réalisation d'opérations ouvrant droit à déduction et à la réalisation d'opérations n'ouvrant pas droit à déduction, seule la fraction de la taxe qui les a grevées est déductible par application du prorata."
+      ],
+      "mots_cles": [
+        "limitation déduction",
+        "affectation dépenses",
+        "activités imposables",
+        "activités non imposables",
+        "opérations ouvrant droit déduction",
+        "prorata",
+        "fraction déductible"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Calcul du prorata de déduction",
+      "texte": [
+        "Art.26.- 1) Le prorata prévu à l'article précédent est le rapport entre :",
+        "• au numérateur, le montant total hors taxes des recettes ou du chiffre d'affaires afférents à des opérations soumises à la TVA, augmenté du montant des exportations et du chiffre d'affaires taxable mais détaxé en application des franchises exceptionnelles ou des conventions d'établissement ;",
+        "• et au dénominateur, le montant total hors taxes du chiffre d'affaires ou des recettes de toutes natures réalisées par l'assujetti.",
+        "2) Le prorata est déterminé provisoirement en fonction des recettes et produits réalisés l'année précédente ou, pour les nouveaux assujettis, des recettes et produits prévisionnels de l'année en cours.",
+        "Le prorata définitif est communiqué à l'administration fiscale par les contribuables au moment du dépôt de leur déclaration statistique et fiscale. Les déductions opérées sont régularisées en conséquence dans le même délai. La déduction ne peut être acquise qu'après vérification du prorata de déduction.",
+        "Le prorata prévisionnel ne peut être accepté pour les entreprises existantes que sur justification du prorata définitif de l'exercice antérieur lui servant de base ou pour les entreprises nouvelles sur les éléments de comptabilité prévisionnelle.",
+        "3) Les variations à la baisse ou à la hausse entre le prorata provisoire et le prorata définitif font l'objet d'un complément de TVA à reverser ou d'une déduction complémentaire. Dans l'hypothèse où le prorata devient inférieur à 10 %, aucune déduction n'est admise."
+      ],
+      "mots_cles": [
+        "prorata déduction",
+        "numérateur",
+        "dénominateur",
+        "chiffre affaires HT",
+        "exportations",
+        "franchises exceptionnelles",
+        "conventions établissement",
+        "prorata provisoire",
+        "prorata définitif",
+        "déclaration statistique fiscale",
+        "régularisation",
+        "variations",
+        "seuil 10%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Secteurs distincts d'activités",
+      "texte": [
+        "Art.27.- 1) Il peut être tenu compte des secteurs distincts d'activités, lorsqu'un assujetti exerce des activités qui ne sont pas soumises à des dispositions identiques au regard de la TVA.",
+        "2) Cette option est subordonnée à la double condition de la tenue de comptabilités séparées par secteur d'activités et de la déductibilité intégrale ou non de la TVA selon les secteurs d'activités. Le non-respect de cette condition remet en cause l'option, et le prorata est applicable de plein droit."
+      ],
+      "mots_cles": [
+        "secteurs distincts",
+        "activités",
+        "dispositions identiques TVA",
+        "comptabilités séparées",
+        "déductibilité intégrale",
+        "non-respect option",
+        "prorata de plein droit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Régularisations de la TVA déduite",
+      "texte": [
+        "Art.28.- 1) Lorsqu'une immobilisation ayant fait l'objet d'une déduction de TVA ne fait plus partie des immobilisations de l'entreprise ou, en absence de sortie d'actif, en cas de modification de la situation de bien au regard du droit à déduction, soit en cas de changement de réglementation, soit en cas de perte de la qualité d'assujetti, soit en raison d'un changement d'utilisation avant la fin de la quatrième année qui suit celle de l'acquisition, l'assujetti est redevable d'une fraction de la taxe antérieurement déduite. Cette fraction est égale au montant de la déduction diminué d'un cinquième par année ou fraction d'année depuis l'acquisition. Aucune régularisation n'est toutefois due si la cession de l'immobilisation a été soumise à la TVA.",
+        "2) Le reversement de la TVA initialement déduite est intégralement exigé en ce qui concerne les services et biens ne constituant pas des immobilisations lorsque ceux-ci ont été utilisés à des opérations non soumises à la TVA.",
+        "3) En cas de vente à perte, la déduction de la TVA ayant grevé l'achat de biens est limitée au montant de la TVA due sur la vente. La déduction initiale doit donc être régularisée à due concurrence.",
+        "4) La TVA déduite doit être régularisée dans les cas de disparition ou de changement d'affectation des biens ou produits destinés à l'exploitation. Toutefois, aucune régularisation n'est exigée dans les cas d'augment justifiés suivants :",
+        "• destruction accidentelle des marchandises ;",
+        "• mise à la casse ou au rebut des marchandises devenues inutilisables ou invendables ;",
+        "• vol des marchandises."
+      ],
+      "mots_cles": [
+        "régularisation TVA",
+        "immobilisations",
+        "sortie actif",
+        "changement réglementation",
+        "perte qualité assujetti",
+        "changement utilisation",
+        "quatrième année",
+        "fraction 1/5 par an",
+        "cession soumise TVA",
+        "reversement intégral",
+        "services biens non immobilisations",
+        "vente à perte",
+        "disparition",
+        "changement affectation",
+        "dispenses",
+        "destruction accidentelle",
+        "casse rebut",
+        "vol"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29 (L.F. 2026)",
+      "titre": "Récupération TVA - Opérations résiliées, annulées ou impayées - Inventaire crédits structurels",
+      "texte": [
+        "Art.29.- 1) La TVA acquittée à l'occasion des ventes ou des services qui sont par la suite résiliés, annulés ou restent impayés peut être récupérée par voie d'imputation sur l'impôt dû pour les opérations faites ultérieurement.",
+        "2) Pour les opérations annulées ou résiliées, la récupération de la taxe acquittée est subordonnée à l'établissement et à l'envoi au client d'un duplicata de la facture initiale portant mention expresse de l'annulation de l'opération.",
+        "3) Pour les opérations impayées lorsque la créance est réellement et définitivement irrécouvrable, la rectification de la facture consiste dans l'envoi d'un duplicata de la facture initiale avec des indications réglementaires surchargées de la mention du montant de la facture demeurée impayée au prix hors TVA et pour le montant de la TVA correspondante, qui ne peut faire l'objet de déduction.",
+        "(L.F. 2026 - Point 4 nouveau) 4) Les assujettis à la TVA qui ont des crédits structurels de TVA constatés lors de la déclaration de TVA du mois d'octobre sont tenus d'effectuer l'inventaire annuel physique des stocks et des immobilisations en présence de l'administration fiscale.",
+        "Les opérations de cet inventaire, qui sont à la charge de l'assujetti, sont présentées à l'administration fiscale, au moins vingt (20) jours avant le début des travaux.",
+        "Le défaut de réalisation de cet inventaire conformément aux modalités définies aux alinéas 2 et 3 ci-dessus annule tout crédit de TVA constaté au 31 décembre de ladite année."
+      ],
+      "mots_cles": [
+        "récupération TVA",
+        "opérations résiliées",
+        "opérations annulées",
+        "impayés",
+        "imputation",
+        "duplicata facture",
+        "annulation opération",
+        "créance irrécouvrable",
+        "facture rectificative",
+        "crédits structurels TVA",
+        "inventaire annuel physique",
+        "stocks",
+        "immobilisations",
+        "administration fiscale",
+        "déclaration octobre",
+        "vingt jours",
+        "annulation crédit TVA"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

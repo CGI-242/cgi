@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Champ d'application et assujettis",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet",
+      "texte": [
+        "Art.1.- (L.F.2025) La présente loi s'inscrit dans le cadre de l'harmonisation des législations des États membres de la CEMAC en matière de taxe sur la valeur ajoutée (en abrégé TVA).",
+        "Elle modifie et complète la loi n°12-97 du 12 mai 1997 instituant la Taxe sur la Valeur Ajoutée en République du Congo."
+      ],
+      "mots_cles": [
+        "objet TVA",
+        "harmonisation CEMAC",
+        "loi 12-97",
+        "modification"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Opérations imposables",
+      "texte": [
+        "Art.2.- Sont soumises à la TVA, les opérations accomplies par des assujettis dans le cadre d'une activité économique effectuée à titre onéreux sur le territoire du Congo.",
+        "Au sens de la présente loi, les activités économiques s'entendent comme toutes activités de livraison de biens, d'importation ou de prestations de services y compris les activités commerciales, agricoles, extractives, industrielles, forestières, artisanales et celles des professions libérales ou assimilées."
+      ],
+      "mots_cles": [
+        "opérations imposables",
+        "assujettis",
+        "activité économique",
+        "titre onéreux",
+        "territoire Congo",
+        "livraison biens",
+        "importation",
+        "prestations services"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Nature des opérations imposables",
+      "texte": [
+        "Art.3.- Constituent notamment des opérations imposables :",
+        "1) Les livraisons de biens à des tiers et les livraisons à soi-même.",
+        "La livraison d'un bien consiste en un transfert du pouvoir de disposer de ce bien en qualité de propriétaire, même si ce transfert est opéré en vertu d'une réquisition de l'autorité publique. L'échange, l'apport en société, la vente à tempérament sont assimilés à des livraisons de biens.",
+        "Par livraison à soi-même de biens, il faut entendre les opérations que les assujettis réalisent, soit pour les besoins de leur entreprise, soit pour d'autres besoins dans le cadre de l'exploitation, à l'exclusion toutefois des prélèvements opérés pour les besoins normaux du chef d'une entreprise individuelle, et des livraisons à soi-même par tout particulier pour ses besoins propres, et par tout groupement pour les besoins personnels de ses membres, lorsque ces livraisons portent sur des locaux servant à l'habitation principale.",
+        "2) Les prestations de service à des tiers et les prestations de service à soi-même.",
+        "La prestation de service s'entend de toute opération qui ne constitue pas une livraison de biens, notamment les opérations effectuées par l'entremise de plateformes de commerce électronique étrangères ou locales, ainsi que les commissions perçues par les opérateurs de ces plateformes, les louages d'industrie ou de contrat d'entreprise par lequel une personne s'oblige à exécuter un travail quelconque moyennant rémunération. Il s'agit des locations de biens meubles et immeubles, les opérations portant sur des biens meubles incorporels, les opérations leasing et crédit-bail avec ou sans option d'achat, le transport de personnes et marchandises, le transit et la manutention, la fourniture d'eau, d'électricité, de gaz, de télécommunications et d'énergie thermique, les opérations réalisées dans le cadre d'une activité libérale, des travaux d'études, de conseil, de recherche et d'expertise.",
+        "Les ventes d'articles d'occasion faites par les professionnels, les cessions d'éléments d'actifs non compris dans la liste des biens exonérés visée à l'article 241 du Code des douanes modifié par les actes n°2192-UDEAC-556-CD-SE1 du 30 avril 1992 et n°2198-UDEAC-1508-CD-61 du 21 juillet 1998. Les locations de terrains non aménagés et de locaux nus effectuées par des professionnels de l'immobilier.",
+        "Les prestations de service à soi-même s'entendent des services que les assujettis réalisent, soit pour les besoins de leur entreprise, soit pour d'autres besoins dans le cadre normal de leur activité.",
+        "3) Les acquisitions intracommunautaires et les importations. Par importation, il faut entendre l'introduction de marchandises sur le territoire du Congo au sens de la réglementation douanière de la CEMAC, c'est le franchissement du cordon douanier du territoire de la République du Congo pour la mise à la consommation des marchandises provenant de l'extérieur et la mise à la consommation par suite d'un régime douanier suspensif.",
+        "4) Les commandes publiques, qu'elles soient réalisées sur financement national ou extérieur.",
+        "5) Les aides aux entreprises, qu'elles proviennent d'une personne de droit public ou de droit privé, versées sous la forme de subventions, des remises de prêts et les abandons de créance, de don ou de toute autre forme assimilée :",
+        "a) si les sommes versées constituent en fait la contrepartie directe d'une opération réalisée au profit de la partie versante ;",
+        "b) ou si les sommes versées complètent le prix d'une opération imposable.",
+        "6) Les ventes d'immeubles et les locations immobilières.",
+        "7) Le raffinage, la distribution et la mise à la consommation des produits pétroliers.",
+        "8) Les remboursements de frais engagés pour le compte d'autrui, autres que ceux refacturés à franc le franc.",
+        "9) D'une manière générale, toutes opérations qui ne sont pas expressément exclues du champ d'application par la présente loi."
+      ],
+      "mots_cles": [
+        "opérations imposables",
+        "livraisons biens",
+        "livraisons à soi-même",
+        "prestations service",
+        "plateformes e-commerce",
+        "leasing crédit-bail",
+        "transport",
+        "eau électricité gaz télécom",
+        "acquisitions intracommunautaires",
+        "importations",
+        "commandes publiques",
+        "subventions",
+        "ventes immeubles",
+        "produits pétroliers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Assujettis",
+      "texte": [
+        "Art.4.- 1) Sont assujettis à la TVA, les personnes physiques et morales qui réalisent à titre habituel ou occasionnel, et d'une manière indépendante, des opérations imposables entrant dans le champ d'application de la taxe et accomplies dans le cadre d'une activité économique réalisée à titre onéreux et quel que soit le secteur d'activité.",
+        "Les personnes ci-dessus définies sont assujetties à la TVA quels que soient leur statut juridique et leur situation au regard des autres impôts, la forme ou la nature de leurs interventions.",
+        "Ne sont pas considérés comme indépendants, les salariés qui agissent dans le cadre de leur contrat de travail.",
+        "2) L'État, les collectivités territoriales, les établissements publics et autres organismes de droit public ne sont pas considérés comme assujettis pour les activités qu'ils accomplissent en qualité d'autorité publique.",
+        "Toutefois, la qualité d'assujettis leur est reconnue pour leurs activités économiques réalisées à titre onéreux suivant des moyens et méthodes comparables à ceux utilisés par le secteur privé."
+      ],
+      "mots_cles": [
+        "assujettis TVA",
+        "personnes physiques morales",
+        "titre habituel occasionnel",
+        "indépendance",
+        "salariés exclus",
+        "État collectivités",
+        "établissements publics",
+        "autorité publique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Seuil d'assujettissement",
+      "texte": [
+        "Art.5.- 1) Les personnes morales de droit privé sont, de plein droit, assujetties à la TVA, quel que soit leur chiffre d'affaires annuel.",
+        "Les personnes physiques sont assujetties à la TVA lorsque leur chiffre d'affaires hors taxes est supérieur ou égal à 100.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "seuil assujettissement",
+        "personnes morales de plein droit",
+        "personnes physiques",
+        "100 000 000 FCFA",
+        "chiffre affaires HT"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Principe de non-exonération",
+      "texte": [
+        "Art.6.- En dehors des biens ou services visés à l'article 7 ci-dessous, aucune exonération ou exemption n'est accordée en matière de TVA.",
+        "En particulier, aucune exonération ou exemption n'est accordée dans le cadre de mesures d'incitation à la création d'entreprise et à l'investissement, dans le cadre de mesures ou dispositions visant des secteurs particuliers, ou dans le cadre de conventions particulières."
+      ],
+      "mots_cles": [
+        "non-exonération",
+        "aucune exemption",
+        "création entreprise",
+        "investissement",
+        "secteurs particuliers",
+        "conventions particulières"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Exonérations de TVA",
+      "texte": [
+        "Art.7.- (L.F.2025) Sont exonérés de la TVA :",
+        "1) Les opérations suivantes dès lors qu'elles sont soumises à des taxations spécifiques exclusives de toute taxation sur le chiffre d'affaires :",
+        "• les opérations bancaires et financières y compris les opérations d'intermédiation financière, et les prestations d'assurance et de réassurance ;",
+        "• les ventes de produits des activités extractives ;",
+        "• les opérations ayant pour objet la transmission d'immeubles par des personnes autres que les promoteurs immobiliers et passibles des droits d'enregistrement ;",
+        "• les intérêts rémunérant les emprunts extérieurs ;",
+        "• les intérêts rémunérant les dépôts auprès des établissements de crédits ou des établissements financiers par des professionnels ;",
+        "• les jeux de hasard et de divertissement ;",
+        "• les mutations d'immeubles, de droits réels immobiliers et les mutations de fonds de commerce soumises aux droits de mutation ou à une imposition équivalente.",
+        "2) Les ventes d'immeubles faites par des non assujettis.",
+        "Les locations immobilières faites par des non assujettis si le montant annuel des loyers perçu par un contribuable est inférieur au seuil d'imposition.",
+        "Les locations d'immeubles nus à usage d'habitation et de terrains nus.",
+        "Les cessions et les locations immobilières non exonérées ne peuvent être soumises à des droits d'enregistrement ou d'autres taxes indirectes, à l'exception des éventuels droits de conservation foncière et frais assimilés.",
+        "3) Les biens importés ou admis en franchise dans le cadre de l'acte n°2/92-UDEAC-556-SEI du 30 avril 1992 et ses modificatifs subséquents.",
+        "4) Les examens, consultations, soins, hospitalisation, travaux d'analyse et de biologies médicales et les fournitures de prothèses.",
+        "5) Les opérations de composition, impression, importation et ventes de journaux et périodiques, à l'exception des recettes de publicité.",
+        "6) Les frais de scolarité et d'écolage perçus dans le cadre normal de l'activité des établissements d'enseignement général ou de formation professionnelle, de niveau primaire, secondaire et universitaire, régulièrement autorisés et pratiquant un prix homologué par l'autorité de tutelle compétente.",
+        "7) Les livraisons à leur valeur faciale des timbres-poste pour affranchissement, des timbres fiscaux et d'autres valeurs similaires.",
+        "8) Les opérations liées au trafic international concernant :",
+        "• les navires ou bateaux utilisés pour l'exercice d'une activité industrielle ou commerciale en haute mer ;",
+        "• les bateaux de sauvetage et d'assistance ;",
+        "• les aéronefs et les navires pour leurs opérations d'entretien et d'avitaillement ;",
+        "• les opérations de transit inter-États et les services y afférents conformément aux dispositions des articles 158 et suivants du Code des Douanes CEMAC.",
+        "9) Les services ou opérations à caractère éducatif, social, culturel, sportif, philanthropique ou religieux rendus à leurs membres par les organismes sans but lucratif agréés par l'État dont la gestion est bénévole et désintéressée, lorsque ces opérations se rattachent directement à la défense collective des intérêts moraux ou matériels de leurs membres.",
+        "Toutefois, les opérations réalisées par ces organismes sont soumises à la TVA lorsqu'elles se situent dans un secteur concurrentiel.",
+        "10) Les produits pharmaceutiques à l'exclusion des compléments alimentaires et des produits cosmétiques vendus en pharmacie, ainsi que les produits médicaux suivants :",
+        "• 29.37.12.00 Insuline et ses sels",
+        "• 29.39.19.00 Autres alcaloïdes",
+        "• 29.39.20.00 Alcaloïdes du quinquina et leurs dérivés ; sels et ses produits",
+        "• 29.41 Antibiotiques",
+        "• 30 Produits pharmaceutiques",
+        "• 37.01.10.00 Plaques et films pour rayons X",
+        "• 37.02.20.00 Pellicules pour rayons X",
+        "• 40.14.10.00 Préservatifs",
+        "• 40.15.11.00 Gants pour la chirurgie",
+        "• 70.15.10.00 Verres de lunetteries médicales",
+        "• 84.19.20.00 Stérilisateurs médico-chirurgicaux de laboratoires",
+        "• 87.13 Fauteuils roulants et autres véhicules pour invalides",
+        "• 87.14.20.00 Partie de fauteuil roulants et autres véhicules pour invalides",
+        "• 90.04.90.10 Lunettes correctrices",
+        "• 90.18 à 90.22 Appareils médicaux",
+        "• 94.02.10.10 Fauteuils de dentistes et leurs parties",
+        "• 94.02.10.19 Autres mobiliers pour la médecine et la chirurgie",
+        "11) Les produits du cru obtenus dans le cadre d'activités accomplies au Congo par les agriculteurs, les éleveurs, les pêcheurs et les chasseurs.",
+        "12) L'eau minérale produite au Congo et le gaz butane conditionné au Congo ainsi que tous les intrants et services concourant à son conditionnement.",
+        "13) Les biens de première nécessité cités à l'annexe 3.",
+        "14) Les ventes d'articles d'occasion faites par les non professionnels.",
+        "15) Les locations de terrains non aménagés et de locaux nus à usage d'habitation effectuées par les non professionnels de l'immobilier.",
+        "16) Les petits matériels de pêche.",
+        "17) Les engins, les matériels agricoles ainsi que les intrants agropastoraux et piscicoles.",
+        "18) Les sommes versées par le Trésor à la Banque Centrale chargée du privilège de l'émission, ainsi que les produits des opérations de cette banque génératrice de l'émission des billets.",
+        "19) Les tranches de consommation d'eau et d'électricité dites sociales au profit des ménages et qui sont fixées par un texte réglementaire.",
+        "20) a) Les ventes de marchandises faites dans les boutiques sous douanes agréées. Ces ventes doivent être faites sur présentation d'une carte d'embarquement ou d'accès à bord d'un vol international ou d'un navire pour les passagers en partance pour l'étranger.",
+        "b) Toutefois, les factures de vente doivent comporter les mentions suivantes :",
+        "• la date de vente ;",
+        "• le numéro du vol ou du navire ;",
+        "• le nom du voyageur ;",
+        "• le numéro, la date et le lieu de délivrance du passeport ou de tout autre document en tenant lieu ;",
+        "• la destination ;",
+        "• la désignation commerciale des marchandises ;",
+        "• la quantité ;",
+        "• le prix hors taxes.",
+        "c) Toute vente non réalisée dans les conditions édictées ci-dessus sera considérée comme faite toutes taxes comprises, la TVA étant due.",
+        "21) Les activités réglementées des établissements de micro finance.",
+        "22) L'importation des panneaux photovoltaïques par les startups et les très petites entreprises pour les besoins de leur activité."
+      ],
+      "mots_cles": [
+        "exonérations TVA",
+        "opérations bancaires financières",
+        "assurance réassurance",
+        "activités extractives",
+        "immeubles",
+        "jeux hasard",
+        "soins santé prothèses",
+        "journaux périodiques",
+        "scolarité enseignement",
+        "timbres fiscaux",
+        "trafic international",
+        "organismes sans but lucratif",
+        "produits pharmaceutiques",
+        "insuline antibiotiques",
+        "appareils médicaux",
+        "produits du cru",
+        "eau minérale gaz butane",
+        "biens première nécessité",
+        "matériels agricoles pêche",
+        "Banque Centrale émission",
+        "tranches sociales eau électricité",
+        "boutiques sous douanes",
+        "micro finance",
+        "panneaux photovoltaïques startups"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Missions diplomatiques et organismes internationaux",
+      "texte": [
+        "Art.8.- En application des conventions internationales en vigueur, les missions diplomatiques et assimilés en poste en République du Congo sont assujetties à la TVA normalement incorporée dans le prix de marchandises ou des services et acquittée en rémunération des services particuliers rendus.",
+        "Toutefois sous réserve de réciprocité et de quotas fixés par arrêté conjoint du Ministre en charge des Finances et de celui des affaires étrangères, les biens et services destinés à l'usage officiel des missions diplomatiques étrangères ainsi que des organisations internationales conformément aux accords de siège sont achetés hors taxes.",
+        "Les organismes internationaux n'ayant pas le statut d'organisation internationale au sens de la Convention de Vienne sur les relations diplomatiques, sont redevables de la TVA normalement incorporée dans le prix des marchandises ou des services visés par leurs accords. Cette TVA peut ensuite être remboursée dans les conditions fixées par l'article 36.",
+        "Le requérant dispose d'un délai de trois mois pour faire valoir sa demande de remboursement. Cette demande est accompagnée de la facture et de l'imprimé dûment renseigné et signé par le vendeur indiquant le montant de la TVA payée et approuvé par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "missions diplomatiques",
+        "conventions internationales",
+        "TVA incorporée",
+        "services particuliers",
+        "réciprocité quotas",
+        "organisations internationales",
+        "accords siège",
+        "Convention Vienne",
+        "remboursement TVA",
+        "délai 3 mois"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -50,6 +50,25 @@ export const DIRECT_KEYWORD_MAPPINGS: Record<string, string> = {
   'numéraire': 'Art. 26',
   'numeraire': 'Art. 26',
 
+  // ========== IS - IMPOT SUR LES SOCIETES ==========
+  // Art. 3 - Exonérations IS
+  'exonération is': 'Art. 3',
+  'exoneration is': 'Art. 3',
+  'exonérations is': 'Art. 3',
+  'exonerations is': 'Art. 3',
+  "exonération de l'is": 'Art. 3',
+  "exoneration de l'is": 'Art. 3',
+  "exonérées de l'impôt sur les sociétés": 'Art. 3',
+  "exonerees de l'impot sur les societes": 'Art. 3',
+  // Art. 86A - Taux IS
+  'taux is': 'Art. 86A',
+  "taux de l'is": 'Art. 86A',
+  "taux impôt sur les sociétés": 'Art. 86A',
+  "taux impot sur les societes": 'Art. 86A',
+  // Art. 86B - Minimum de perception IS
+  'minimum perception is': 'Art. 86B',
+  'minimum de perception': 'Art. 86B',
+
   // ========== IRF - IMPOT SUR LE REVENU FONCIER ==========
   // Art. 113 - Taux IRF
   'taux irf': 'Art. 113',
@@ -167,6 +186,21 @@ export const ROUTING_RULES: RoutingRule[] = [
     keywordsRequired: ['libératoire', 'liberatoire'],
     keywordsContext: ['irf', 'retenue', 'foncier', 'loyer'],
     routeTo: 'Art. 113A',
+    boost: 3.0,
+  },
+  // ========== IS - IMPOT SUR LES SOCIETES ==========
+  {
+    id: 'R13_exoneration_is',
+    keywordsRequired: ['exonér', 'exoner', 'exemption', 'dispense'],
+    keywordsContext: ['is', 'sociét', 'societ', 'entreprise', 'nouvelle'],
+    routeTo: 'Art. 3',
+    boost: 3.0,
+  },
+  {
+    id: 'R14_taux_is',
+    keywordsRequired: ['taux', '28%', '25%', '35%'],
+    keywordsContext: ['is', 'sociét', 'societ', 'impôt sur les', 'impot sur les'],
+    routeTo: 'Art. 86A',
     boost: 3.0,
   },
   {

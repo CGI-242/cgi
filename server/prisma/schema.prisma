@@ -161,10 +161,8 @@ model Invitation {
 
 enum SubscriptionPlan {
   FREE
-  STARTER
-  PROFESSIONAL
-  TEAM
-  ENTERPRISE
+  BASIQUE
+  PRO
 }
 
 enum SubscriptionStatus {

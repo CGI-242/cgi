@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "document": "Application des dispositions fiscales au secteur pétrolier",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC3",
+    "partie": null,
+    "livre": null,
+    "chapitre": 7,
+    "chapitre_titre": "Dispositions finales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 75",
+      "titre": "Dispositions finales – Abrogation",
+      "texte": [
+        "Chapitre 5 - Dispositions finales",
+        "Art.75.- Le présent décret, abroge toutes dispositions antérieures contraires, notamment les articles 3 et 6 du décret n°2000-186 du 12 août 2000 fixant les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire."
+      ],
+      "mots_cles": [
+        "dispositions finales",
+        "abrogation",
+        "décret 2000-186",
+        "articles 3 et 6",
+        "redevance superficiaire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 76",
+      "titre": "Dispositions finales – Publication",
+      "texte": [
+        "Art.76.- Le présent décret sera enregistré et publié au Journal officiel de la République du Congo."
+      ],
+      "mots_cles": [
+        "publication",
+        "Journal officiel",
+        "entrée vigueur"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

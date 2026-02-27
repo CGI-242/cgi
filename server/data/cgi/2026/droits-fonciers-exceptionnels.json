@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "document": "Droits fonciers exceptionnels",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-FONCIER",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.4. Droits fonciers exceptionnels",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution des droits fonciers exceptionnels",
+      "texte": [
+        "4.4.1. Institution de droits fonciers exceptionnels",
+        "Art.1.- Il est institué en République du Congo des droits fonciers exceptionnels au droit commun établi par le Code général des impôts."
+      ],
+      "mots_cles": [
+        "droits fonciers exceptionnels",
+        "institution",
+        "Code général des impôts"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Personnes assujetties",
+      "texte": [
+        "Art.2.- Les droits fonciers exceptionnels sont dus par toute personne physique ou morale, en sa qualité de propriétaire ou de détenteur des terres ou des parcelles de terrains, selon le cas."
+      ],
+      "mots_cles": [
+        "assujettissement",
+        "propriétaire",
+        "détenteur",
+        "parcelles de terrains",
+        "personne physique",
+        "personne morale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Intitulé et catégories des droits fonciers exceptionnels",
+      "texte": [
+        "Art.3.- (L.F.2022, L.F.R.2022, L.F.2023, L.F.2024, L.F.2025) Les droits fonciers exceptionnels sont intitulés et établis comme suit :",
+        "A. Sur les parcelles de terrains des personnes privées"
+      ],
+      "mots_cles": [
+        "catégories droits fonciers",
+        "personnes privées",
+        "parcelles terrains"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Impôt foncier annuel sur les parcelles bâties ou non bâties",
+      "texte": [
+        "1) Impôt foncier annuel sur la détention ou la propriété d'une parcelle de terrain bâtie ou non bâtie :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 10.000 F",
+        "zone 2 : centres villes des autres communes de plein exercice : 5.000 F",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 5.000 F",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 2.500 F",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 1.500 F",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 750 F",
+        "zone 7 : chefs-lieux des districts : 500 F",
+        "zone 8 : villages : 100 F"
+      ],
+      "mots_cles": [
+        "impôt foncier annuel",
+        "zones foncières",
+        "terrain bâti",
+        "terrain non bâti",
+        "Brazzaville",
+        "Pointe-Noire",
+        "communes plein exercice"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Impôt foncier forfaitaire sur les terres coutumières",
+      "texte": [
+        "2) Impôt foncier forfaitaire annuel sur la détention ou la propriété des terres coutumières : 50.000 F"
+      ],
+      "mots_cles": [
+        "terres coutumières",
+        "impôt forfaitaire",
+        "50 000 F"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Droits forfaitaires d'immatriculation obligatoire",
+      "texte": [
+        "3) Droits forfaitaires d'immatriculation obligatoire d'une parcelle de terrain :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et Pointe-Noire : 500.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 500 F le m² supplémentaire",
+        "zone 2 : centres villes des autres communes de plein exercice : 250.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 250 F le m² supplémentaire",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 200.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 250 F le m² supplémentaire",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 150.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 200 F le m² supplémentaire",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 100.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 150 F le m² supplémentaire",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 50.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 100 F le m² supplémentaire",
+        "zone 7 : chefs-lieux des districts : 20.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 75 F le m² supplémentaire",
+        "zone 8 : villages (zone rurale pour l'habitation) : 10.000 F pour le terrain inférieur ou égal à 500 m², augmentés de 50 F le m² supplémentaire",
+        "zone 9 : villages (zone agricole pour l'exploitation agricole et autres) : 1.000 F par hectare ou fraction d'hectare",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 1.000 F/m² augmentés de 500 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 500 F/m² augmentés de 250 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 250 F/m² augmentés de 150 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 7 : chefs-lieux des districts : 150 F/m² augmentés de 100 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 8 : villages (zone agraire) : 1.000 F/ha"
+      ],
+      "mots_cles": [
+        "immatriculation foncière",
+        "droits forfaitaires",
+        "zones",
+        "parcelle terrain",
+        "500 m²",
+        "m² supplémentaire",
+        "zone agricole",
+        "hectare"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Immatriculation des terres coutumières reconnues",
+      "texte": [
+        "4) Droits forfaitaires d'immatriculation obligatoire des terres coutumières reconnues et inscrites en vertu de la loi n°21-2018 du 13 juin 2018 fixant les règles d'occupation et d'acquisition des terres et terrains et de la loi n°20-2022 du 18 mai 2022 modifiant et complétant certaines dispositions de la loi n°21-2018 du 13 juin 2018 fixant les règles d'occupation et d'acquisition des terres et terrains : 10 % de la valeur vénale des terres coutumières reconnues ou 10 % de la superficie des terres coutumières reconnues."
+      ],
+      "mots_cles": [
+        "terres coutumières",
+        "immatriculation",
+        "valeur vénale",
+        "10%",
+        "loi 21-2018",
+        "loi 20-2022"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Morcellement, remembrement et mise à jour des titres fonciers",
+      "texte": [
+        "5) Droits forfaitaires de morcellement, de remembrement et de mise à jour des titres fonciers : 100.000 F."
+      ],
+      "mots_cles": [
+        "morcellement",
+        "remembrement",
+        "mise à jour titres fonciers",
+        "100 000 F"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Frais forfaitaires des travaux d'aménagement",
+      "texte": [
+        "6) Frais forfaitaires des travaux d'aménagement des espaces de terres et terrains par l'agence foncière pour l'aménagement des terrains :",
+        "zone urbaine : 5.000 F/m²",
+        "zone périurbaine : 2.000 F/m²",
+        "zone rurale : 1.000 F/ha"
+      ],
+      "mots_cles": [
+        "travaux aménagement",
+        "agence foncière",
+        "zone urbaine",
+        "zone périurbaine",
+        "zone rurale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Baux emphytéotiques – propriétés non bâties du domaine privé de l'État",
+      "texte": [
+        "B. Sur les propriétés du domaine privé et du domaine public de l'État",
+        "7) Loyer annuel d'avance sur les baux emphytéotiques des propriétés non bâties du domaine privé de l'État, des collectivités locales et des établissements publics (application de l'article 30 du décret n°2005-552 du 7 novembre 2005 fixant les modalités d'attribution des biens immobiliers du domaine privé de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 4.000 F/m² augmentés de 2.000 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 2 : centres villes des autres communes de plein exercice : 2.000 F/m² augmentés de 1.000 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 2.000 F/m² augmentés de 1.000 F le m² supplémentaire, au-delà de 3.000 m²"
+      ],
+      "mots_cles": [
+        "baux emphytéotiques",
+        "propriétés non bâties",
+        "domaine privé État",
+        "loyer annuel",
+        "décret 2005-552"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Baux emphytéotiques – propriétés bâties du domaine privé de l'État",
+      "texte": [
+        "8) Loyer annuel sur les baux emphytéotiques des propriétés bâties du domaine privé de l'État, des collectivités locales et des établissements publics (application de l'article 30 du décret n°2005-552 du 7 novembre 2005 fixant les modalités d'attribution des biens immobiliers du domaine privé de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 20.000 F/m²",
+        "zone 2 : centres villes des autres communes de plein exercice : 15.000 F/m²",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 10.000 F/m²",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 5.000 F/m²",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 2.500 F/m²",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 500 F/m²",
+        "zone 7 : chefs-lieux des districts : 250 F/m²",
+        "zone 8 : villages (zone agraire) : 250 F/m²"
+      ],
+      "mots_cles": [
+        "baux emphytéotiques",
+        "propriétés bâties",
+        "domaine privé État",
+        "loyer annuel",
+        "collectivités locales",
+        "établissements publics"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Redevance annuelle forfaitaire sur les baux emphytéotiques des propriétés non bâties du domaine privé de l'État",
+      "texte": [
+        "9) Redevance annuelle forfaitaire sur les baux emphytéotiques des propriétés non bâties du domaine privé de l'État, des collectivités locales et des établissements publics (application de l'article 32 du décret n°2005-552 du 7 novembre 2005 fixant les modalités d'attribution des biens immobiliers du domaine privé de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 500.000 F",
+        "zone 2 : centres villes des autres communes de plein exercice : 300.000 F",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 300.000 F",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 200.000 F",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 200.000 F",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 100.000 F",
+        "zone 7 : chefs-lieux des districts : 50.000 F",
+        "zone 8 : villages (zone agraire) : 500.000 F"
+      ],
+      "mots_cles": [
+        "redevance annuelle forfaitaire",
+        "baux emphytéotiques",
+        "propriétés non bâties",
+        "domaine privé État",
+        "article 32 décret 2005-552"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Redevance annuelle forfaitaire sur les baux emphytéotiques des propriétés bâties du domaine privé de l'État",
+      "texte": [
+        "10) Redevance annuelle forfaitaire sur les baux emphytéotiques des propriétés bâties du domaine privé de l'État, des collectivités locales et des établissements publics (application de l'article 32 du décret n°2005-552 du 7 novembre 2005 fixant les modalités d'attribution des biens immobiliers du domaine privé de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 500.000 F",
+        "zone 2 : centres villes des autres communes de plein exercice : 120.000 F",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 100.000 F",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 90.000 F",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 75.000 F",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 50.000 F",
+        "zone 7 : chefs-lieux des districts : 30.000 F",
+        "zone 8 : villages : 25.000 F"
+      ],
+      "mots_cles": [
+        "redevance annuelle forfaitaire",
+        "baux emphytéotiques",
+        "propriétés bâties",
+        "domaine privé État",
+        "article 32 décret 2005-552"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Redevance annuelle sur les autorisations expresses d'occuper les propriétés non bâties du domaine public de l'État",
+      "texte": [
+        "11) Redevance annuelle sur les autorisations expresses d'occuper les propriétés non bâties du domaine public de l'État (application de l'article 19 du décret n°2021-671 du 31 décembre 2021 fixant les modalités d'occupation des biens immobiliers du domaine public de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 10.000 F/m² augmentés de 5.000 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 2 : centres villes des autres communes de plein exercice : 5.000 F/m² augmentés de 2.500 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 5.000 F/m² augmentés de 2.500 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 3.000 F/m² augmentés de 1.500 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 500 F/m² augmentés de 250 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 250 F/m² augmentés de 150 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 7 : chefs-lieux des districts : 150 F/m² augmentés de 100 F le m² supplémentaire, au-delà de 3.000 m²",
+        "zone 8 : villages : 1.000 F/ha"
+      ],
+      "mots_cles": [
+        "redevance annuelle",
+        "autorisations expresses",
+        "propriétés non bâties",
+        "domaine public État",
+        "décret 2021-671"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Redevance annuelle sur les autorisations expresses d'occuper les propriétés bâties du domaine public de l'État",
+      "texte": [
+        "12) Redevance annuelle sur les autorisations expresses d'occuper les propriétés bâties du domaine public de l'État (application de l'article 19 du décret n°2021-671 du 31 décembre 2021 fixant les modalités d'occupation des biens immobiliers du domaine public de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et Pointe-Noire : 20.000 F/m²",
+        "zone 2 : centres villes des autres communes de plein exercice : 15.000 F/m²",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 10.000 F/m²",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 5.000 F/m²",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 2.500 F/m²",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 1.000 F/m²",
+        "zone 7 : chefs-lieux des districts : 500 F/m²",
+        "zone 8 : villages : 250 F/m²"
+      ],
+      "mots_cles": [
+        "redevance annuelle",
+        "autorisations expresses",
+        "propriétés bâties",
+        "domaine public État",
+        "décret 2021-671"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Cautionnement domanial de garantie",
+      "texte": [
+        "13) Cautionnement domanial de garantie des autorisations expresses d'occuper sur les propriétés bâties et non bâties du domaine public de l'État, des collectivités locales et des établissements publics (application de l'article 19 du décret n°2021-671 du 31 décembre 2021 fixant les modalités d'occupation des biens immobiliers du domaine public de l'État) : montant équivalent à deux ans de la redevance annuelle d'occupation du domaine public",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et Pointe-Noire",
+        "zone 2 : centres villes des autres communes de plein exercice",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et Pointe-Noire",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et Pointe-Noire",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice",
+        "zone 7 : chefs-lieux des districts",
+        "zone 8 : villages (zone agraire)"
+      ],
+      "mots_cles": [
+        "cautionnement domanial",
+        "garantie",
+        "autorisations expresses",
+        "deux ans redevance",
+        "décret 2021-671"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Redevance mensuelle sur les autorisations provisoires d'occuper les propriétés non bâties du domaine public de l'État",
+      "texte": [
+        "14) Redevance mensuelle (tout mois commencé étant considéré entier) sur les autorisations provisoires d'occuper les propriétés non bâties du domaine public de l'État (application de l'article 34 du décret n°2021-671 du 31 décembre 2021 fixant les modalités d'occupation des biens immobiliers du domaine public de l'État) :",
+        "zone 1 : centres villes des communes de plein exercice de Brazzaville et Pointe-Noire : 400 F/m²/mois, augmentée de 350 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 2 : centres villes des autres communes de plein exercice : 350 F/m²/mois, augmentée de 300 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 3 : arrondissements non périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 300 F/m²/mois, augmentée de 250 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 4 : arrondissements non périphériques des autres communes de plein exercice : 250 F/m²/mois, augmentée de 200 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 5 : arrondissements périphériques des communes de plein exercice de Brazzaville et Pointe-Noire : 200 F/m²/mois, augmentée de 150 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 6 : arrondissements périphériques des autres communes de plein exercice : 150 F/m²/mois, augmentée de 100 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 7 : chefs-lieux des districts : 100 F/m²/mois, augmentée de 75 F le m² supplémentaire, au-delà de 100 m²",
+        "zone 8 : villages : un minimum de 20.000 F/ha/mois, augmentée de 80 F l'ha supplémentaire, au-delà de 10 ha"
+      ],
+      "mots_cles": [
+        "redevance mensuelle",
+        "autorisations provisoires",
+        "propriétés non bâties",
+        "domaine public État",
+        "article 34 décret 2021-671"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Redevance mensuelle sur les autorisations provisoires d'occuper les propriétés bâties du domaine public de l'État",
+      "texte": [
+        "15) Redevance mensuelle (tout mois commencé étant considéré entier) sur les autorisations provisoires d'occuper les propriétés bâties du domaine public de l'État :"
+      ],
+      "mots_cles": [
+        "redevance mensuelle",
+        "autorisations provisoires",
+        "propriétés bâties",
+        "domaine public État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Établissement et transmission des états des droits fonciers",
+      "texte": [
+        "Art.8.- Les états des droits émis ou les rôles trimestriels établis selon le domaine de l'État, de la collectivité locale, de l'établissement public ou de la circonscription territoriale, établis par l'administration fiscale et pris en charge par le trésor public, sont adressés au contrôleur général d'État, à l'administration des affaires foncières et du domaine public, aux présidents des conseils départementaux et communaux, aux directeurs généraux des établissements publics, chacun en ce qui le concerne."
+      ],
+      "mots_cles": [
+        "états droits émis",
+        "rôles trimestriels",
+        "administration fiscale",
+        "trésor public",
+        "contrôleur général État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "États de recouvrement et des restes à recouvrer",
+      "texte": [
+        "Art.9.- Les états de recouvrement et des restes à recouvrer annuels, par titre et par débiteurs, établis par le trésor public, sont adressés au contrôleur général d'État, à l'administration des affaires foncières et du domaine public, aux présidents des conseils départementaux et communaux, aux directeurs généraux des établissements publics, chacun en ce qui le concerne, au plus tard le 28 février de chaque année suivant l'année de mise en recouvrement."
+      ],
+      "mots_cles": [
+        "états recouvrement",
+        "restes à recouvrer",
+        "trésor public",
+        "28 février",
+        "mise en recouvrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Sanction du non-paiement des droits fonciers",
+      "texte": [
+        "Art.10.- Le non-paiement des droits fonciers, exceptionnels ou normaux relevant du droit commun, pendant ou depuis six mois, expose les redevables régulièrement notifiés des droits dus, au déguerpissement automatique lorsqu'il s'agit de l'occupation du domaine public et privé de l'État, des collectivités locales et des établissements publics, sans préjudice du recouvrement forcé des sommes dues."
+      ],
+      "mots_cles": [
+        "non-paiement",
+        "six mois",
+        "déguerpissement automatique",
+        "recouvrement forcé",
+        "domaine public privé État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Frais de travaux cadastraux",
+      "texte": [
+        "4.4.2. Frais de travaux cadastraux",
+        "Art.13.- Les frais des travaux cadastraux, destinés à servir de base à la contribution foncière des terres et des parcelles de terrains sont déterminés en fonction des paramètres ci-après :",
+        "- la localisation ;",
+        "- la superficie des terres ;",
+        "- la superficie des parcelles de terrains.",
+        "Les frais des travaux cadastraux équivalent au prix du mètre carré multiplié par la superficie des terres et des parcelles de terrains.",
+        "Le prix du mètre carré est fixé comme suit :",
+        "zone 1 : Centres villes des communes de plein exercice de Brazzaville et de Pointe-Noire : 500 FCFA",
+        "zone 2 : Centres villes des autres communes de plein exercice : 300 FCFA",
+        "zone 3 : Arrondissements non périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 250 FCFA",
+        "zone 4 : Arrondissements non périphériques des autres communes de plein exercice : 150 FCFA",
+        "zone 5 : Arrondissements périphériques des communes de plein exercice de Brazzaville et de Pointe-Noire : 200 FCFA",
+        "zone 6 : Arrondissements périphériques des autres communes de plein exercice : 100 FCFA",
+        "zone 7 : Chefs-lieux des districts : 50 FCFA",
+        "zone 8 : Villages : 25 FCFA"
+      ],
+      "mots_cles": [
+        "travaux cadastraux",
+        "contribution foncière",
+        "prix m²",
+        "localisation",
+        "superficie",
+        "zones"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

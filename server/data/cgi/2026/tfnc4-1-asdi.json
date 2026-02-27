@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "document": "Acompte sur divers impôts (ASDI)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-ASDI",
+    "partie": null,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Acompte sur divers impôts (ASDI)",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de l'ASDI",
+      "texte": [
+        "4.1. Acompte sur divers impôts (ASDI)",
+        "[NB - Loi de finances pour 1995 modifiée]",
+        "Art.1.- Il est institué en république du Congo, à titre d'acompte sur divers impôts, un prélèvement forfaitaire sur les achats locaux et les importations des marchandises effectués par les personnes physiques soumises à l'IRPP catégorie des BICA.",
+        "Ce prélèvement est également applicable aux personnes morales passibles de l'impôt sur le bénéfice des sociétés qui ne s'acquittent pas régulièrement de la Taxe Spéciale sur les Sociétés et des acomptes d'impôts sur les Sociétés."
+      ],
+      "mots_cles": [
+        "ASDI",
+        "acompte divers impôts",
+        "prélèvement forfaitaire",
+        "achats locaux",
+        "importations",
+        "IRPP BICA",
+        "IS",
+        "TSS"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Champ d'application de l'ASDI",
+      "texte": [
+        "Art.2.- Ce prélèvement s'applique au cordon douanier sur toute importation de marchandises à but commercial.",
+        "Il est dû par les industriels ou producteurs locaux, les importateurs, les grossistes, les détaillants, et les exploitants forestiers qui intègrent le champ d'application de l'ASDI."
+      ],
+      "mots_cles": [
+        "cordon douanier",
+        "importation commerciale",
+        "industriels",
+        "producteurs locaux",
+        "importateurs",
+        "grossistes",
+        "détaillants",
+        "exploitants forestiers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Exonérations de l'ASDI",
+      "texte": [
+        "Art.3.- Sont exonérés du prélèvement :",
+        "- les personnes morales assujetties à l'impôt sur les sociétés et à la taxe spéciale sur les sociétés non redevables dudit impôt et de ladite taxe ;",
+        "- les achats portant sur le gaz et les produits pétroliers."
+      ],
+      "mots_cles": [
+        "exonération ASDI",
+        "personnes morales IS TSS",
+        "gaz",
+        "produits pétroliers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Taux de l'ASDI",
+      "texte": [
+        "Art.4.- Le taux du prélèvement est fixé à 3 %."
+      ],
+      "mots_cles": [
+        "taux ASDI",
+        "3%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Base de calcul de l'ASDI",
+      "texte": [
+        "Art.5.- Le prélèvement est calculé :",
+        "- en cas d'importation, sur la valeur retenue par les services de douanes pour la perception des droits et taxes ;",
+        "- en cas d'achats locaux, sur le montant de la facture hors taxes ;",
+        "- pour les marchandises à prix et marge réglementés, sur le montant de la marge brute."
+      ],
+      "mots_cles": [
+        "base calcul ASDI",
+        "valeur douanière",
+        "facture HT",
+        "marge brute",
+        "prix réglementés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5bis",
+      "titre": "Modalités de prélèvement et reversement",
+      "texte": [
+        "Art.5 bis.- Le prélèvement est effectué par les industriels ou producteurs locaux, les importateurs, les grossistes, les exploitants forestiers et les transitaires agissant pour le compte de leurs clients importateurs.",
+        "Il est reversé ou payé au plus tard le 20 du mois suivant celui au cours duquel le prélèvement est opéré au vu d'une déclaration conforme au modèle prescrit par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "prélèvement ASDI",
+        "transitaires",
+        "reversement",
+        "20 du mois",
+        "déclaration"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5ter",
+      "titre": "Déclaration et paiement ASDI importations",
+      "texte": [
+        "Art.5 ter.- Pour les importations de marchandises à but commercial, l'ASDI est déclaré après le dédouanement par le contribuable auprès de sa résidence fiscale suivant un imprimé fourni par l'administration fiscale.",
+        "L'ASDI est payé dans les 15 jours suivant la date de dédouanement des marchandises."
+      ],
+      "mots_cles": [
+        "déclaration ASDI importations",
+        "dédouanement",
+        "résidence fiscale",
+        "15 jours"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Sanctions retard versement ASDI ventes",
+      "texte": [
+        "Art.6.- Le retard dans le versement du prélèvement sur les ventes par les industriels ou producteurs locaux, les importateurs, les grossistes et les exploitants forestiers est sanctionné comme en matière de taxes sur le chiffre d'affaires.",
+        "Le défaut de prélèvement de l'ASDI expose le contrevenant au paiement d'une amende de 100.000 FCFA encourue autant de fois que le prélèvement n'a pas été effectué, ainsi qu'à la fermeture d'entreprise, en cas de récidive."
+      ],
+      "mots_cles": [
+        "sanctions ASDI",
+        "retard versement",
+        "amende 100 000 FCFA",
+        "fermeture entreprise",
+        "récidive"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6bis",
+      "titre": "Sanctions retard déclaration ASDI importations",
+      "texte": [
+        "Art.6 bis.- Le retard dans la déclaration et/ou le paiement de l'ASDI sur les importations est sanctionné par une amende égale au montant de l'ASDI dû.",
+        "Le défaut de déclaration et de paiement de l'ASDI sur les importations expose le contrevenant au paiement d'une amende égale au double du montant de l'ASDI dû ainsi qu'à la fermeture d'entreprise en cas de récidive."
+      ],
+      "mots_cles": [
+        "sanctions ASDI importations",
+        "amende égale ASDI",
+        "double ASDI",
+        "fermeture entreprise"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Déductibilité et imputation de l'ASDI",
+      "texte": [
+        "Art.7.- L'ASDI est déductible de l'impôt sur le revenu dû par le contribuable à raison d'une activité non salariée.",
+        "En cas d'insuffisance dûment justifiée par le redevable, l'imputation peut être effectuée sur les autres impôts directs à l'exception de la patente et de l'IRPP retenu à la source.",
+        "Lorsque l'imputation n'a pu être effectuée, le reliquat est reporté sur les exercices suivants.",
+        "Le remboursement pourra intervenir à la fin du deuxième exercice selon les modalités à définir par arrêté du Ministre des Finances."
+      ],
+      "mots_cles": [
+        "déductibilité ASDI",
+        "imputation impôts directs",
+        "report reliquat",
+        "remboursement",
+        "2e exercice"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Mentions obligatoires sur facture",
+      "texte": [
+        "Art.8.- La facture obligatoirement délivrée à l'acheteur doit comporter le nom, prénom et adresse de celui-ci et mentionner également son NIU ainsi que le montant des ventes ayant servi de base au prélèvement.",
+        "Toute infraction aux dispositions susvisées entraîne l'application d'une amende fiscale de 10.000 FCFA encourue autant de fois qu'il est relevé d'omissions ou d'inexactitudes. En aucun cas, l'amende ne peut être supérieure à 100.000 FCFA."
+      ],
+      "mots_cles": [
+        "facture obligatoire",
+        "NIU",
+        "mentions ASDI",
+        "amende 10 000 FCFA",
+        "maximum 100 000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Abrogation dispositions antérieures",
+      "texte": [
+        "Art.9.- Les dispositions de la loi n°14/94 du 17 juin 1994 concernant le prélèvement sur achats locaux, et le prélèvement à l'importation des marchandises sont abrogées."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "loi 14/94",
+        "prélèvement achats locaux",
+        "prélèvement importation"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

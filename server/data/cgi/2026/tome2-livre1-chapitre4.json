@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 4,
+    "chapitre_titre": "Bureaux d'enregistrement",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 83",
+      "titre": "Bureaux compétents pour l'enregistrement",
+      "texte": [
+        "1) Les notaires ne pourront faire enregistrer leurs actes qu'aux bureaux dans le ressort desquels ils résident.",
+        "2) Les agents d'exécution et tous autres, ayant pouvoir de faire des exploits, procès-verbaux ou rapports, feront enregistrer leurs actes, soit au bureau de leur résidence, soit au bureau du lieu où ils auront été faits.",
+        "3) Les greffiers et les secrétaires des administrations publiques feront enregistrer les actes qu'ils sont tenus de soumettre à cette formalité au bureau de la circonscription dans laquelle ils exercent leurs fonctions."
+      ],
+      "mots_cles": [
+        "bureaux",
+        "notaires",
+        "ressort",
+        "résidence",
+        "agents d'exécution",
+        "exploits",
+        "procès-verbaux",
+        "rapports",
+        "greffiers",
+        "secrétaires",
+        "administrations publiques",
+        "circonscription"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 84",
+      "titre": "Enregistrement des procès-verbaux de ventes publiques",
+      "texte": [
+        "Les procès-verbaux de ventes publiques et par enchères de meubles, effets, marchandises, bois, fruits, récoltes et tous autres objets mobiliers, ne pourront être enregistrés qu'aux bureaux où les déclarations prescrites à l'article 168 auront été faites."
+      ],
+      "mots_cles": [
+        "procès-verbaux",
+        "ventes publiques",
+        "enchères",
+        "meubles",
+        "effets",
+        "marchandises",
+        "bois",
+        "fruits",
+        "récoltes",
+        "objets mobiliers",
+        "article 168"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 85",
+      "titre": "Bureaux compétents pour l'enregistrement des actes sous seing privé",
+      "texte": [
+        "L'enregistrement des actes sous seing privé, soumis obligatoirement à cette formalité par les articles 65, 69 et suivants, aura lieu, pour les actes portant transmission de propriété, d'usufruit ou de jouissance de biens immeubles, de fonds de commerce ou de clientèle, ainsi que pour les actes de cession d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble, au bureau de la situation des biens et, pour tous les autres actes, au bureau du domicile de l'une des parties contractantes."
+      ],
+      "mots_cles": [
+        "actes sous seing privé",
+        "articles 65 et 69",
+        "transmission de propriété",
+        "usufruit",
+        "jouissance",
+        "biens immeubles",
+        "fonds de commerce",
+        "clientèle",
+        "cession droit au bail",
+        "promesse de bail",
+        "bureau de la situation",
+        "domicile"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86",
+      "titre": "Déclarations de mutations verbales",
+      "texte": [
+        "Les déclarations de mutation verbales de fonds de commerce ou de clientèle, ainsi que les déclarations de cessions verbales d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble, doivent être faites au bureau de la situation des biens."
+      ],
+      "mots_cles": [
+        "déclarations",
+        "mutations verbales",
+        "fonds de commerce",
+        "clientèle",
+        "cessions verbales",
+        "droit au bail",
+        "promesse de bail",
+        "immeuble",
+        "bureau de la situation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 87",
+      "titre": "Enregistrement des actes sous signatures privées et actes passés en pays étrangers",
+      "texte": [
+        "Les actes sous signatures privées, autres que ceux visés à l'article 85 et les actes passés en pays étranger, pourront être enregistrés dans tous les bureaux indistinctement."
+      ],
+      "mots_cles": [
+        "actes sous signatures privées",
+        "article 85",
+        "pays étranger",
+        "bureaux indistinctement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C4-ST1",
+      "titre": "Mutations par décès",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 88",
+      "titre": "Enregistrement des mutations par décès",
+      "texte": [
+        "Les mutations par décès seront enregistrées au bureau du domicile du décédé, quelle que soit la situation des valeurs mobilières ou immobilières à déclarer.",
+        "À défaut de domicile dans le Territoire, la déclaration sera passée au bureau du lieu du décès."
+      ],
+      "mots_cles": [
+        "mutations par décès",
+        "bureau",
+        "domicile du décédé",
+        "valeurs mobilières",
+        "valeurs immobilières",
+        "lieu du décès"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 2,
+    "chapitre": 6,
+    "chapitre_titre": "Droit de timbre sur les véhicules automobiles",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 145",
+      "titre": "Institution du droit de timbre sur les véhicules automobiles",
+      "texte": [
+        "Il est institué un droit de timbre sur les véhicules automobiles en circulation sur le territoire congolais."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "circulation",
+        "territoire congolais"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 146",
+      "titre": "Exonérations du droit de timbre sur les véhicules automobiles",
+      "texte": [
+        "Sont exonérés du droit de timbre sur les véhicules automobiles :",
+        "• les véhicules ayant l'immatriculation de l'État ;",
+        "• les véhicules appartenant aux gouvernements étrangers avec lesquels l'État a passé des accords de coopération pour le personnel d'assistance technique civil ou militaire, sous réserve de réciprocité ;",
+        "• les véhicules dont les propriétaires bénéficient du privilège diplomatique et consulaire."
+      ],
+      "mots_cles": [
+        "exonérés",
+        "droit de timbre",
+        "véhicules automobiles",
+        "immatriculation de l'État",
+        "gouvernements étrangers",
+        "accords de coopération",
+        "assistance technique",
+        "civil",
+        "militaire",
+        "réciprocité",
+        "privilège diplomatique",
+        "privilège consulaire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 147",
+      "titre": "Annualité du droit de timbre des véhicules automobiles",
+      "texte": [
+        "Le droit de timbre des véhicules automobiles est annuel."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "annuel",
+        "périodicité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 148",
+      "titre": "Tarif du droit de timbre des véhicules automobiles",
+      "texte": [
+        "Le tarif du droit de timbre des véhicules automobiles est de 5.000 FCFA."
+      ],
+      "mots_cles": [
+        "tarif",
+        "droit de timbre",
+        "véhicules automobiles",
+        "5.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 149",
+      "titre": "Collecte du droit de timbre par les compagnies d'assurance",
+      "texte": [
+        "Le droit de timbre des véhicules automobiles est collecté par les compagnies d'assurance au moment de la souscription de la police d'assurance responsabilité civile.",
+        "Les compagnies d'assurance prélèvent le droit de timbre des véhicules automobiles au tarif visé à l'article 148 ci-dessus dès le premier paiement de la prime d'assurance au cours de l'année, que ce paiement soit partiel ou total.",
+        "Le droit de timbre collecté est reversé aux mains du bureau de l'enregistrement des domaines et du timbre du siège de la compagnie d'assurances entre le 10 et le 20 du mois suivant celui du paiement par l'assuré."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "véhicules automobiles",
+        "collecte",
+        "compagnies d'assurance",
+        "souscription",
+        "police d'assurance",
+        "responsabilité civile",
+        "prélèvement",
+        "article 148",
+        "prime d'assurance",
+        "paiement partiel",
+        "paiement total",
+        "reversement",
+        "bureau de l'enregistrement",
+        "domaines",
+        "timbre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 150",
+      "titre": "Véhicules immatriculés dans le domaine portuaire",
+      "texte": [
+        "Les véhicules immatriculés au domaine portuaire sont soumis au droit de timbre des véhicules automobiles au tarif prévu à l'article 148 ci-dessus.",
+        "Ce droit est valable jusqu'à l'expiration de ladite immatriculation."
+      ],
+      "mots_cles": [
+        "véhicules",
+        "domaine portuaire",
+        "immatriculation",
+        "droit de timbre",
+        "véhicules automobiles",
+        "article 148",
+        "expiration"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 151",
+      "titre": "Règles de contrôle et sanctions applicables",
+      "texte": [
+        "Les règles d'assiette, de contrôle, de recouvrement, de contentieux ainsi que les obligations et sanctions fiscales applicables au droit de timbre des véhicules automobiles sont celles prévues en matière de droits d'enregistrement."
+      ],
+      "mots_cles": [
+        "règles",
+        "assiette",
+        "contrôle",
+        "recouvrement",
+        "contentieux",
+        "obligations",
+        "sanctions fiscales",
+        "droit de timbre",
+        "véhicules automobiles",
+        "droits d'enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-ST1",
+      "titre": "Droits de timbre non codifiés",
+      "texte": [],
+      "mots_cles": ["droits de timbre", "non codifiés"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-ST2",
+      "titre": "1. Timbre électronique fiscal",
+      "texte": [],
+      "mots_cles": ["timbre électronique fiscal"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A1",
+      "titre": "Institution du timbre électronique fiscal",
+      "texte": [
+        "(L.F.2021, L.F.2023) Il est institué une redevance dans le secteur de l'économie numérique dénommée « Timbre électronique » imposable aux opérateurs économiques, aux établissements commerciaux, aux particuliers et aux organismes publics, en vue de faciliter la dématérialisation et la certification des documents."
+      ],
+      "mots_cles": [
+        "L.F.2021",
+        "L.F.2023",
+        "redevance",
+        "économie numérique",
+        "timbre électronique",
+        "opérateurs économiques",
+        "établissements commerciaux",
+        "particuliers",
+        "organismes publics",
+        "dématérialisation",
+        "certification"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A2",
+      "titre": "Émission du timbre électronique par l'ARPCE",
+      "texte": [
+        "(L.F.2021, L.F.2023) Le Timbre Électronique est émis par le système d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.",
+        "Il est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et dont la valeur minimale est de 1.950 FCFA. Ces transactions sont certifiées par plateforme d'horodatage, de certification et d'archivage en vigueur par le biais du timbre électronique.",
+        "Les personnes visées ci-dessus sont tenues de connecter leur système de facturation ou tout système en tenant lieu à celui d'horodatage, de certification électronique et d'archivage de l'Agence de Régularisation des Postes et des Communications Électroniques.",
+        "La Direction Générale des Impôts et des Domaines et l'Agence de Régularisation des postes et des communications électroniques sont chargées de la mise en œuvre de la présente disposition.",
+        "Toute action de nature à empêcher l'action de l'ARPCE de se connecter au système de facturation est sanctionnée par le blocage des comptes bancaires du contribuable, assorti d'une amende fiscale de 10.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "L.F.2021",
+        "L.F.2023",
+        "timbre électronique",
+        "horodatage",
+        "certification électronique",
+        "archivage",
+        "ARPCE",
+        "transactions",
+        "voie électronique",
+        "1.950 FCFA",
+        "système de facturation",
+        "Direction Générale des Impôts et des Domaines",
+        "blocage des comptes bancaires",
+        "amende fiscale",
+        "10.000.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A3",
+      "titre": "Montant du timbre électronique fiscal",
+      "texte": [
+        "Le montant du timbre électronique fiscal est de 50 FCFA."
+      ],
+      "mots_cles": [
+        "montant",
+        "timbre électronique fiscal",
+        "50 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A4",
+      "titre": "Certification des paiements électroniques",
+      "texte": [
+        "L'Agence de Régulation des Postes et des Communications Électroniques est chargée de la certification des paiements électroniques et de l'opérationnalisation du système."
+      ],
+      "mots_cles": [
+        "Agence de Régulation",
+        "Postes et Communications Électroniques",
+        "certification",
+        "paiements électroniques",
+        "opérationnalisation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A5",
+      "titre": "Clé de répartition de la redevance du timbre électronique",
+      "texte": [
+        "La clé de répartition de ladite redevance est établie ainsi qu'il suit :",
+        "État : 60 %",
+        "ARPCE : 40 %"
+      ],
+      "mots_cles": [
+        "clé de répartition",
+        "redevance",
+        "État",
+        "60 %",
+        "ARPCE",
+        "40 %"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C6-A6",
+      "titre": "Charges liées à une transaction non conforme",
+      "texte": [
+        "(L.F.2023) Les charges liées à une transaction non conforme à l'obligation prévue ci-dessus ne sont pas admises en déduction pour la détermination du bénéfice imposable.",
+        "Si les charges présentées par un contribuable pour la détermination de son revenu imposable sont remises en cause, l'Administration fiscale est en droit de réclamer un droit d'enregistrement au taux de 1 % sur les actes juridiques qui sous-tendent ces charges.",
+        "La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.",
+        "Le timbre électronique s'applique à tout acte émis à un tiers d'une valeur minimale fixée ci-dessus."
+      ],
+      "mots_cles": [
+        "L.F.2023",
+        "charges",
+        "transaction non conforme",
+        "déduction",
+        "bénéfice imposable",
+        "revenu imposable",
+        "Administration fiscale",
+        "droit d'enregistrement",
+        "1 %",
+        "actes juridiques",
+        "TVA",
+        "timbre électronique",
+        "valeur minimale"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

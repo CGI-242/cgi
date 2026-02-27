@@ -1,0 +1,1069 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 2,
+    "chapitre_titre": "Assiette des droits",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 17",
+      "titre": "Détermination de la valeur servant d'assiette",
+      "texte": [
+        "La valeur de la propriété et de la jouissance des biens de toute nature ou les sommes servant d'assiette à l'impôt sont déterminées par la liquidation et le paiement du droit proportionnel ou du droit progressif, ainsi qu'il est dit aux articles ci-après.",
+        "Les établissements de microfinance bénéficient d'une réduction de 50 % de la valeur des droits dus pour l'enregistrement des actes de création d'entreprise, d'augmentation de capital, de fusion des sociétés ou d'établissements sociétaires, de mutation d'actions et de parts sociales."
+      ],
+      "mots_cles": [
+        "assiette",
+        "valeur",
+        "propriété",
+        "jouissance",
+        "droit proportionnel",
+        "droit progressif",
+        "microfinance",
+        "réduction 50%",
+        "création d'entreprise",
+        "augmentation de capital",
+        "fusion",
+        "mutation d'actions",
+        "parts sociales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST1",
+      "titre": "Baux et locations",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Baux et locations - Assiette",
+      "texte": [
+        "1) Pour les baux, sous-baux et prorogation de baux de biens meubles, fonds de commerce et immeubles, la valeur servant d'assiette à l'impôt est déterminée par le prix annuel exprimé en y ajoutant les charges imposées au preneur qui incombent légalement au bailleur.",
+        "2) Si le prix du bail ou de la location est stipulé payable en nature ou sur la base du cours de certains produits, le droit proportionnel est liquidé d'après la valeur des produits au jour du contrat, déterminée par une déclaration estimative des parties.",
+        "3) Si le montant du droit est fractionné, comme il est prévu à l'article 97 ci-après, cette estimation n'aura lieu que pour la première période. Pour chacune des périodes ultérieures, les parties seront tenues de souscrire, dans le délai fixé par le paragraphe 4 de l'article 97, une nouvelle déclaration estimative de la valeur des produits au jour du commencement de la période qui servira de base à la liquidation des droits.",
+        "Les droits afférents aux périodes commencées après l'entrée en vigueur du présent arrêté seront liquidés d'après les règles qui précèdent, quelle que soit la date du bail auquel elles se rapportent.",
+        "4) Les dispositions des paragraphes 2 et 3 ci-dessus sont applicables aux baux à portion de fruits, pour la part revenant au bailleur, dont la quotité sera préalablement déclarée."
+      ],
+      "mots_cles": [
+        "baux",
+        "sous-baux",
+        "prorogation",
+        "biens meubles",
+        "fonds de commerce",
+        "immeubles",
+        "prix annuel",
+        "charges",
+        "preneur",
+        "bailleur",
+        "prix en nature",
+        "déclaration estimative",
+        "article 97",
+        "droit fractionné",
+        "baux à portion de fruits"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18 bis",
+      "titre": "Licences d'exploitation de brevets et marques",
+      "texte": [
+        "Pour les concessions de licences d'exploitation de brevets et de marques de fabriques, la valeur servant d'assiette à l'impôt est déterminée par le montant total de la rente relative à la durée du louage."
+      ],
+      "mots_cles": [
+        "licences d'exploitation",
+        "brevets",
+        "marques de fabriques",
+        "rente",
+        "durée du louage"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18 ter",
+      "titre": "Centimes additionnels sur les baux et mutations",
+      "texte": [
+        "Il est institué des centimes additionnels sur les droits d'enregistrement des baux et des mutations à titre onéreux. Ils sont perçus au profit des collectivités locales et calculés sur le montant des droits dus pour l'enregistrement du bail."
+      ],
+      "mots_cles": [
+        "centimes additionnels",
+        "droits d'enregistrement",
+        "baux",
+        "mutations à titre onéreux",
+        "collectivités locales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Baux à durée illimitée",
+      "texte": [
+        "Pour les baux dont la durée est illimitée, la valeur est déterminée par un capital formé de vingt fois la rente ou le prix annuel et aussi les charges annuelles, en y ajoutant également les autres charges en capital et les deniers d'entrée, s'il en est stipulé.",
+        "Les objets en nature s'évaluent comme il est prescrit à l'article 18 ci-dessus."
+      ],
+      "mots_cles": [
+        "baux",
+        "durée illimitée",
+        "capital",
+        "vingt fois",
+        "rente",
+        "prix annuel",
+        "charges annuelles",
+        "deniers d'entrée",
+        "objets en nature"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Baux à vie",
+      "texte": [
+        "Pour les baux à vie, sans distinction de ceux faits sur une ou plusieurs têtes, la valeur est déterminée par le capital formé de dix fois le prix et les charges annuelles en y ajoutant le même montant des deniers d'entrée et des autres charges, s'il s'en trouve d'exprimés.",
+        "Les objets en nature s'évaluent pareillement comme il est prescrit à l'article 18 ci-dessus."
+      ],
+      "mots_cles": [
+        "baux à vie",
+        "capital",
+        "dix fois",
+        "prix",
+        "charges annuelles",
+        "deniers d'entrée",
+        "objets en nature"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST2",
+      "titre": "Contrats de mariage",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Contrats de mariage - Assiette",
+      "texte": [
+        "Pour les contrats de mariage, le droit est liquidé sur le montant net des apports personnels des futurs époux."
+      ],
+      "mots_cles": [
+        "contrats de mariage",
+        "apports personnels",
+        "futurs époux",
+        "montant net",
+        "liquidation du droit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST3",
+      "titre": "Échanges d'immeubles",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Échanges d'immeubles - Assiette",
+      "texte": [
+        "Pour la liquidation et le paiement des droits sur les échanges, les immeubles, quelle que soit leur nature, sont estimés d'après leur valeur vénale réelle à la date de transmission, d'après la déclaration estimative des parties.",
+        "Néanmoins, si dans les deux années qui auront précédé ou suivi l'acte d'échange, les immeubles transmis font l'objet d'une adjudication, soit par autorité de justice, soit par voie volontaire, avec admission des étrangers, les droits exigibles ne pourront être calculés sur une somme inférieure au prix de l'adjudication, en y ajoutant toutes les charges en capital, à moins qu'il ne soit justifié que la construction de ces immeubles n'ait subi, dans l'intervalle, des transformations susceptibles d'en modifier la valeur."
+      ],
+      "mots_cles": [
+        "échanges d'immeubles",
+        "valeur vénale réelle",
+        "date de transmission",
+        "déclaration estimative",
+        "adjudication",
+        "autorité de justice",
+        "voie volontaire",
+        "charges en capital",
+        "deux années"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST4",
+      "titre": "Jugements",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Jugements - Assiette",
+      "texte": [
+        "Pour les actes et jugements définitifs portant condamnation, collocation, liquidation ou transmission, la valeur servant d'assiette à l'impôt est déterminée par le montant des condamnations en principal."
+      ],
+      "mots_cles": [
+        "jugements",
+        "actes définitifs",
+        "condamnation",
+        "collocation",
+        "liquidation",
+        "transmission",
+        "montant en principal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST5",
+      "titre": "Marchés",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Marchés - Assiette",
+      "texte": [
+        "Pour les marchés et traités, la valeur est déterminée par le prix exprimé ou l'évaluation qui sera faite des objets qui en seront susceptibles."
+      ],
+      "mots_cles": [
+        "marchés",
+        "traités",
+        "prix exprimé",
+        "évaluation",
+        "objets"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST6",
+      "titre": "Partages",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Partages - Assiette",
+      "texte": [
+        "Pour les partages des biens meubles et immeubles entre copropriétaires, cohéritiers et associés, à quelque titre que ce soit, le droit est liquidé sur le montant de l'actif net partagé."
+      ],
+      "mots_cles": [
+        "partages",
+        "biens meubles",
+        "biens immeubles",
+        "copropriétaires",
+        "cohéritiers",
+        "associés",
+        "actif net partagé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST7",
+      "titre": "Rentes",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Création de rentes - Assiette",
+      "texte": [
+        "Pour la création de rentes, soit perpétuelles, soit viagères, ou de pensions à titre onéreux, la valeur est déterminée par le capital constitué et aliéné."
+      ],
+      "mots_cles": [
+        "rentes perpétuelles",
+        "rentes viagères",
+        "pensions",
+        "titre onéreux",
+        "capital constitué",
+        "capital aliéné"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Cessions et transports de rentes - Assiette",
+      "texte": [
+        "Pour les cessions ou transports desdites rentes ou pensions et pour leur amortissement ou rachat, ladite valeur est déterminée par le capital constitué, quel que soit le prix stipulé pour le transport ou l'amortissement."
+      ],
+      "mots_cles": [
+        "cessions",
+        "transports",
+        "rentes",
+        "pensions",
+        "amortissement",
+        "rachat",
+        "capital constitué"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Rentes sans expression de capital - Assiette",
+      "texte": [
+        "1) Pour les rentes et pensions créées sans expression de capital, leurs transports, rachats et amortissements, ladite valeur est déterminée, sauf si le prix est supérieur, à raison d'un capital formé de vingt fois la rente perpétuelle et de dix fois la rente viagère ou la pension, et quel que soit le prix stipulé pour le transport, le rachat, l'amortissement.",
+        "2) Toutefois, lorsque l'amortissement, le rachat ou le transport d'une rente ou pension constituée à titre gratuit est effectué moyennant l'abandon d'un capital de dix fois la rente viagère ou la pension, un plein droit de donation est exigible sur la différence entre ce capital et la valeur imposée lors de la constitution.",
+        "3) Il ne sera fait aucune distinction entre les rentes viagères et pensions créées sur une tête et celles créées sur plusieurs têtes quant à l'évaluation.",
+        "4) Les rentes et pensions stipulées payables en nature ou sur la base du cours de certains produits seront évaluées aux mêmes capitaux d'après une déclaration estimative de la valeur des produits à la date de l'acte."
+      ],
+      "mots_cles": [
+        "rentes sans capital",
+        "pensions",
+        "vingt fois",
+        "dix fois",
+        "rente perpétuelle",
+        "rente viagère",
+        "transports",
+        "rachats",
+        "amortissements",
+        "titre gratuit",
+        "droit de donation",
+        "plusieurs têtes",
+        "paiement en nature",
+        "déclaration estimative"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST8",
+      "titre": "Sociétés",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Actes de société - Assiette",
+      "texte": [
+        "Pour les actes de formation, de prorogation et d'augmentation de capital de société qui ne contiennent ni transmission ni de biens meubles ou immeubles entre les associés ou autres personnes, le droit est liquidé sur le montant total des apports mobiliers et immobiliers, déduction faite du passif."
+      ],
+      "mots_cles": [
+        "sociétés",
+        "formation",
+        "prorogation",
+        "augmentation de capital",
+        "apports mobiliers",
+        "apports immobiliers",
+        "passif",
+        "associés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST9",
+      "titre": "Transmission à titre onéreux et à titre gratuit",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Ventes de biens meubles - Assiette",
+      "texte": [
+        "Pour les ventes et autres transmissions à titre onéreux de biens meubles, la valeur servant d'assiette à l'impôt est déterminée par le prix exprimé et le capital des charges qui peuvent s'ajouter au prix ou par une estimation des parties si la valeur réelle est supérieure au prix augmenté des charges."
+      ],
+      "mots_cles": [
+        "ventes",
+        "transmissions à titre onéreux",
+        "biens meubles",
+        "prix exprimé",
+        "charges",
+        "estimation des parties",
+        "valeur réelle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Transmissions à titre gratuit de biens meubles - Assiette",
+      "texte": [
+        "Pour les transmissions de biens meubles entre vifs, à titre gratuit, et celles de ces mêmes biens qui s'opèrent par décès, ladite valeur est déterminée par la déclaration détaillée estimative des parties, sans distraction des charges, sauf ce qui est dit aux articles 38, 41 à 50 ci-après."
+      ],
+      "mots_cles": [
+        "transmissions à titre gratuit",
+        "biens meubles",
+        "entre vifs",
+        "par décès",
+        "déclaration estimative",
+        "charges",
+        "article 38",
+        "articles 41 à 50"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31 bis",
+      "titre": "Transmissions de licences de brevets et marques - Assiette",
+      "texte": [
+        "Pour les transmissions à titre onéreux de licences d'exploitation de brevets et de marques de fabriques, la valeur est déterminée par le prix exprimé et les charges qui s'ajoutent éventuellement à celui-ci."
+      ],
+      "mots_cles": [
+        "transmissions à titre onéreux",
+        "licences d'exploitation",
+        "brevets",
+        "marques de fabriques",
+        "prix exprimé",
+        "charges"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31 ter",
+      "titre": "Inscription des sûretés OHADA - Assiette",
+      "texte": [
+        "Pour la liquidation et le paiement des droits d'inscription des sûretés personnelles et réelles mobilières qui entrent dans les prévisions des articles 3 à 38 et 69 à 116 de l'Acte Uniforme de l'OHADA portant organisation des sûretés, la valeur servant d'assiette à l'impôt est celle exprimée par les parties contractantes dans le contrat."
+      ],
+      "mots_cles": [
+        "sûretés personnelles",
+        "sûretés réelles mobilières",
+        "OHADA",
+        "Acte Uniforme",
+        "inscription",
+        "parties contractantes",
+        "articles 3 à 38",
+        "articles 69 à 116"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Ventes et translations d'immeubles - Assiette",
+      "texte": [
+        "Pour les ventes, adjudications, cessions, rétrocessions, licitations et tous autres actes civils ou judiciaires portant translation de propriété ou d'usufruit d'immeubles à titre onéreux, la valeur servant d'assiette à l'impôt est déterminée par le prix exprimé, en y ajoutant toutes les charges en capital, ainsi que toutes les indemnités stipulées au profit du cédant à quelque titre et pour quelque cause que ce soit ou par une estimation d'experts dans les cas autorisés par le présent règlement."
+      ],
+      "mots_cles": [
+        "ventes",
+        "adjudications",
+        "cessions",
+        "rétrocessions",
+        "licitations",
+        "translation de propriété",
+        "usufruit",
+        "immeubles",
+        "titre onéreux",
+        "prix exprimé",
+        "charges en capital",
+        "indemnités",
+        "estimation d'experts"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Mutations à titre gratuit d'immeubles - Assiette",
+      "texte": [
+        "Pour la liquidation et le paiement des droits sur les mutations à titre gratuit entre vifs ou par décès, les immeubles, quelle que soit leur nature, sont estimés d'après leur valeur vénale réelle à la date de la transmission, d'après la déclaration détaillée et estimative des parties sans distraction des charges sauf, en ce qui concerne celles-ci, ce qui est dit aux articles 41 et suivants.",
+        "Néanmoins, si dans les deux années qui auront précédé ou suivi soit l'acte de donation, soit le point de départ des délais pour souscrire la déclaration de succession, les immeubles transmis ont fait l'objet d'une adjudication, soit par autorité de justice, soit volontaire, avec admission des étrangers, les droits exigibles ne pourront être calculés sur une somme inférieure au prix de l'adjudication, en y ajoutant toutes les charges en capital, à moins qu'il ne soit justifié que la consistance des immeubles n'ait subi, dans l'intervalle, des transformations susceptibles d'en modifier la valeur."
+      ],
+      "mots_cles": [
+        "mutations à titre gratuit",
+        "entre vifs",
+        "par décès",
+        "immeubles",
+        "valeur vénale réelle",
+        "date de transmission",
+        "déclaration estimative",
+        "charges",
+        "articles 41 et suivants",
+        "adjudication",
+        "deux années",
+        "donation",
+        "déclaration de succession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Bail emphytéotique - Assiette",
+      "texte": [
+        "Pour les mutations de toute nature ayant pour objet, en matière de bail emphytéotique, soit le droit du bailleur soit le droit du preneur, le droit est liquidé sur la valeur vénale déterminée par une déclaration estimative des parties."
+      ],
+      "mots_cles": [
+        "bail emphytéotique",
+        "mutations",
+        "droit du bailleur",
+        "droit du preneur",
+        "valeur vénale",
+        "déclaration estimative"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Valeurs mobilières - Assiette",
+      "texte": [
+        "Pour les valeurs mobilières françaises et étrangères de toute nature, admises à une cote officielle ou à une cote de courtiers en valeurs mobilières, le capital servant de base à la liquidation et au paiement des droits de mutation à titre gratuit entre vifs ou par décès est déterminé par le cours moyen de la Bourse au jour de la transmission.",
+        "S'il s'agit de valeurs non cotées en Bourse, le capital est déterminé par la déclaration estimative des parties, conformément à l'article 31 sauf application de l'article 122."
+      ],
+      "mots_cles": [
+        "valeurs mobilières",
+        "cote officielle",
+        "courtiers en valeurs mobilières",
+        "droits de mutation",
+        "titre gratuit",
+        "cours moyen de la Bourse",
+        "valeurs non cotées",
+        "déclaration estimative",
+        "article 31",
+        "article 122"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Valeurs mobilières étrangères - Mutation par décès",
+      "texte": [
+        "Sont assujettis aux droits de mutation par décès, les fonds publics, actions, obligations, parts d'intérêts, créances et généralement, toutes les valeurs mobilières étrangères, de quelque nature qu'elles soient, dépendant de la succession d'un ressortissant français ou d'un étranger domicilié sur les Territoires."
+      ],
+      "mots_cles": [
+        "droits de mutation par décès",
+        "fonds publics",
+        "actions",
+        "obligations",
+        "parts d'intérêts",
+        "créances",
+        "valeurs mobilières étrangères",
+        "succession",
+        "ressortissant français",
+        "étranger domicilié"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Mutations par acte passé dans le Territoire",
+      "texte": [
+        "Lorsqu'elles s'opèrent par acte passé dans le Territoire ou par acte passé à l'étranger, dont il est fait usage dans le Territoire, les transmissions entre vifs à titre gratuit ou à titre onéreux de biens mobiliers étrangers, corporels ou incorporels, sont soumis aux droits de mutation dans les mêmes conditions que si elles avaient pour objet des biens de même nature sis dans le Territoire."
+      ],
+      "mots_cles": [
+        "mutations",
+        "acte passé",
+        "Territoire",
+        "étranger",
+        "transmissions entre vifs",
+        "titre gratuit",
+        "titre onéreux",
+        "biens mobiliers étrangers",
+        "corporels",
+        "incorporels",
+        "droits de mutation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST10",
+      "titre": "Mutations par décès",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST10a",
+      "titre": "I. Règles générales",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Valeur des biens meubles - Mutation par décès",
+      "texte": [
+        "La valeur de la propriété des biens meubles est déterminée pour la liquidation et le paiement des droits de mutation par décès :",
+        "1) Par le prix exprimé dans les actes de vente, lorsque cette vente a lieu publiquement et dans les deux années qui suivent le décès.",
+        "2) À défaut d'acte de vente, en prenant pour base 60 % de l'évaluation faite dans les contrats ou conventions d'assurances en cours au jour du décès et conclus par le défunt, son conjoint ou ses auteurs moins de dix ans avant l'ouverture de la succession, sauf preuve contraire. Cette disposition ne s'applique pas aux polices d'assurances concernant les récoltes, les bestiaux et les marchandises.",
+        "3) À défaut d'actes de vente ou d'assurance, par l'estimation contenue dans les inventaires, s'ils sont dressés dans les formes prescrites par l'article 943 du Code de procédure civile et dans les trois années du décès pour les meubles meublants, et dans le même délai, pour les autres biens meubles.",
+        "L'estimation faite en vertu de la présente disposition est préférée à la valeur déterminée en exécution de l'alinéa précédent lorsqu'elle lui est supérieure ; elle ne peut servir à administrer la preuve contraire que lorsque celle de l'alinéa précédent est inférieure.",
+        "4) À défaut des bases d'évaluation établies aux trois paragraphes précédents, par la déclaration faite conformément à l'article 31 ci-dessus.",
+        "Toutefois, pour les meubles meublants, et sans que l'administration ait à en justifier l'existence, la valeur imposable ne pourra être inférieure à 5 % de l'ensemble des autres valeurs mobilières et immobilières de la succession, sauf preuve contraire.",
+        "Les dispositions qui précèdent ne sont applicables ni aux créances, ni aux rentes, actions, obligations, effets publics, dont la valeur est déterminée par des dispositions spéciales."
+      ],
+      "mots_cles": [
+        "biens meubles",
+        "mutation par décès",
+        "liquidation",
+        "droits de mutation",
+        "acte de vente",
+        "deux années",
+        "assurances",
+        "60 %",
+        "dix ans",
+        "défunt",
+        "conjoint",
+        "inventaires",
+        "article 943 Code de procédure civile",
+        "trois années",
+        "meubles meublants",
+        "article 31",
+        "5 %",
+        "valeurs mobilières",
+        "valeurs immobilières",
+        "créances",
+        "rentes",
+        "actions",
+        "obligations",
+        "effets publics"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Mutation entre vifs à titre gratuit - Biens meubles",
+      "texte": [
+        "Les règles édictées par l'article 38 n°1 et 2 ci-dessus sont applicables à la liquidation et au paiement des droits de mutation entre vifs à titre gratuit, toutes les fois que les meubles transmis sont vendus publiquement dans les deux ans de l'acte de donation ou font l'objet d'une assurance en cours à la date de cet acte et conclue par le donateur, son conjoint ou ses auteurs depuis moins de dix ans."
+      ],
+      "mots_cles": [
+        "mutation entre vifs",
+        "titre gratuit",
+        "article 38",
+        "meubles",
+        "vente publique",
+        "deux ans",
+        "donation",
+        "assurance",
+        "donateur",
+        "conjoint",
+        "dix ans"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Créances à terme - Mutation à titre gratuit",
+      "texte": [
+        "Pour la perception des droits de mutation à titre gratuit, les créances à terme sont taxées sur le montant du capital exprimé dans l'acte qui les constate.",
+        "En ce qui concerne les créances dont le débiteur se trouvera en état de faillite, liquidation judiciaire ou déconfiture au moment de l'acte de donation ou de l'ouverture de la succession, la valeur taxable est déterminée par une déclaration estimative des parties.",
+        "Toute somme recouvrée sur le débiteur de la créance, postérieurement à l'évaluation et en sus de celle-ci, devra faire l'objet d'une déclaration.",
+        "Seront applicables à ces déclarations les principes qui régissent les déclarations de mutation par décès en général, notamment au point de vue des délais, des pénalités de retard et de la perception, l'exigibilité de l'impôt étant seulement reportée au jour du recouvrement de tout ou partie de la créance transmise."
+      ],
+      "mots_cles": [
+        "créances à terme",
+        "mutation à titre gratuit",
+        "capital",
+        "faillite",
+        "liquidation judiciaire",
+        "déconfiture",
+        "donation",
+        "succession",
+        "déclaration estimative",
+        "recouvrement",
+        "pénalités de retard",
+        "exigibilité de l'impôt"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Legs particuliers de sommes d'argent",
+      "texte": [
+        "Lorsque les héritiers ou légataires universels sont grevés de legs particuliers de sommes d'argent non existantes dans la succession et qu'ils ont acquitté le droit sur l'intégralité des biens de cette même succession, le même droit n'est pas dû pour ces legs ; conséquemment, les droits déjà payés par les légataires particuliers doivent s'imputer sur ceux dus par les héritiers ou légataires universels."
+      ],
+      "mots_cles": [
+        "héritiers",
+        "légataires universels",
+        "legs particuliers",
+        "sommes d'argent",
+        "succession",
+        "imputation des droits"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST10b",
+      "titre": "II. Déduction des dettes et charges",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Déduction des dettes du défunt",
+      "texte": [
+        "Pour la liquidation et le paiement des droits de mutation par décès, sont déduites les dettes à la charge du défunt dont l'existence au jour de l'ouverture de succession sera dûment justifiée par des titres susceptibles de faire preuve en justice contre le défunt.",
+        "S'il s'agit de dettes commerciales, l'administration pourra exiger, sous peine de rejet, la production des livres de commerce du défunt.",
+        "Ces livres seront déposés pendant cinq jours au bureau qui reçoit la déclaration et ils seront, s'il y a lieu, communiqués une fois, sans déplacement, aux agents du service pendant les deux années qui suivront la déclaration, sous peine d'une amende égale aux droits qui n'auraient pas été perçus par suite de la déduction du passif.",
+        "L'administration aura le droit de puiser, dans les titres ou livres produits, les renseignements permettant de contrôler la sincérité de la déclaration de l'actif dépendant de la succession et, en cas d'instance, la production de ces titres ou livres ne pourra être refusée.",
+        "S'il s'agit d'une perte grevant une succession dévolue à une personne pour la nue-propriété et à une autre pour l'usufruit, le droit de mutation sera perçu sur l'actif de la succession diminué du montant de la dette dans les conditions de l'article 54 ci-après."
+      ],
+      "mots_cles": [
+        "déduction des dettes",
+        "mutation par décès",
+        "défunt",
+        "ouverture de succession",
+        "titres",
+        "preuve en justice",
+        "dettes commerciales",
+        "livres de commerce",
+        "cinq jours",
+        "deux années",
+        "amende",
+        "passif",
+        "sincérité de la déclaration",
+        "nue-propriété",
+        "usufruit",
+        "article 54"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Frais de dernière maladie",
+      "texte": [
+        "Sur justifications fournies par les héritiers, les frais de dernière maladie du de cujus seront déduits de l'actif de la succession dans la limite d'un maximum de 100.000 FCFA."
+      ],
+      "mots_cles": [
+        "frais de dernière maladie",
+        "de cujus",
+        "héritiers",
+        "justifications",
+        "déduction",
+        "actif",
+        "100.000 FCFA",
+        "maximum"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Impositions établies après décès",
+      "texte": [
+        "Les impositions établies après le décès d'un contribuable, en vertu de la réglementation fiscale et dues par les héritiers du chef du défunt, constituent une dette déductible de l'actif successoral pour la perception des droits de mutation par décès."
+      ],
+      "mots_cles": [
+        "impositions",
+        "décès",
+        "contribuable",
+        "réglementation fiscale",
+        "héritiers",
+        "défunt",
+        "dette déductible",
+        "actif successoral",
+        "droits de mutation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 45",
+      "titre": "Détail des dettes à déduire",
+      "texte": [
+        "Les dettes dont la déduction est demandée sont détaillées, article par article, soit dans le corps de la déclaration, soit dans un inventaire sur papier non timbré, qui sera déposé au bureau lors de la déclaration de la succession et certifié par le déposant.",
+        "À l'appui de leur demande en déduction, les héritiers ou leurs représentants devront indiquer soit la date de l'acte, le nom et la résidence de l'officier public qui l'a reçu, soit la date du jugement déclaratif de la faillite ou de la liquidation judiciaire, ainsi que la date du procès-verbal des opérations de vérification et d'affirmation des créances ou du règlement définitif de la distribution par contribution.",
+        "Le créancier ne pourra, sous peine de dommages-intérêts, se refuser à communiquer le titre sous récépissé ou à en laisser prendre, sans déplacement, une copie collationnée par un notaire ou le greffier du Tribunal.",
+        "Cette copie portera la mention de sa destination, elle sera dispensée du timbre et de l'enregistrement tant qu'il n'en sera pas fait usage, soit par acte public, soit en justice ou devant toute autre autorité constituée.",
+        "Elle ne rendra pas par elle-même obligatoire l'enregistrement du titre."
+      ],
+      "mots_cles": [
+        "dettes",
+        "déduction",
+        "déclaration",
+        "inventaire",
+        "papier non timbré",
+        "déclaration de succession",
+        "héritiers",
+        "officier public",
+        "faillite",
+        "liquidation judiciaire",
+        "vérification des créances",
+        "distribution par contribution",
+        "créancier",
+        "copie collationnée",
+        "notaire",
+        "greffier",
+        "dispense de timbre",
+        "dispense d'enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Justifications insuffisantes",
+      "texte": [
+        "Toute dette, au sujet de laquelle l'agent de l'administration aura jugé les justifications insuffisantes, ne sera pas retranchée de l'actif de la succession pour la perception du droit, sauf aux parties à se pourvoir en restitution, s'il y a lieu, dans les deux années à compter du jour de la déclaration.",
+        "Néanmoins, toute dette constatée par acte authentique et non échue au jour de l'ouverture de la succession ne pourra être écartée par l'administration, tant que celle-ci n'aura pas fait juger qu'elle est simulée.",
+        "L'action pour prouver la simulation sera prescrite après cinq ans à compter du jour de la déclaration.",
+        "Les héritiers ou légataires seront admis dans le délai de deux ans à compter du jour de la déclaration, à réclamer, sous les justifications prescrites ci-dessus, la déduction des dettes établies par les opérations de la faillite ou de la liquidation judiciaire, ou par le règlement définitif de la distribution par contribution postérieure à la déclaration et à obtenir le remboursement des droits qu'ils auraient payés en trop."
+      ],
+      "mots_cles": [
+        "dette",
+        "justifications insuffisantes",
+        "administration",
+        "actif de la succession",
+        "perception du droit",
+        "restitution",
+        "deux années",
+        "déclaration",
+        "acte authentique",
+        "simulation",
+        "cinq ans",
+        "faillite",
+        "liquidation judiciaire",
+        "distribution par contribution",
+        "remboursement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Attestation du créancier",
+      "texte": [
+        "L'agent de l'administration aura, dans tous les cas, la faculté d'exiger de l'héritier la production d'une attestation du créancier certifiant l'existence de la dette à l'époque de l'ouverture de la succession.",
+        "Cette attestation, qui sera sur papier non timbré, ne pourra être refusée, sous peine de dommages-intérêts, toutes les fois qu'elle sera légitimement réclamée. Le créancier qui attestera l'existence d'une dette déclarera, par une mention expresse, connaître les dispositions de l'article 113 relatives aux peines en cas de fausse attestation."
+      ],
+      "mots_cles": [
+        "attestation",
+        "créancier",
+        "héritier",
+        "dette",
+        "ouverture de la succession",
+        "papier non timbré",
+        "dommages-intérêts",
+        "article 113",
+        "fausse attestation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 48",
+      "titre": "Dettes non déductibles",
+      "texte": [
+        "Toutefois, ne sont pas déduites :",
+        "1) Les dettes, y compris les dettes hypothécaires échues depuis plus de trois mois avant l'ouverture de la succession, à moins qu'il ne soit produit une attestation du créancier en certifiant l'existence à cette époque, dans la forme et suivant les règles déterminées à l'article 47.",
+        "2) Les dettes consenties par le défunt au profit des héritiers ou de personnes interposées.",
+        "Sont réputées personnes interposées les personnes désignées dans les articles 911 dernier alinéa et 1100 du Code civil.",
+        "Néanmoins, lorsque la dette aura été consentie par acte authentique ou par acte sous seing privé ayant date certaine avant l'ouverture de la succession autrement que par le décès d'une des parties contractantes, les héritiers, donataires et légataires, et les personnes réputées interposées auront le droit de prouver la sincérité de cette dette et son existence au jour de l'ouverture de la succession.",
+        "3) Les dettes reconnues par testament.",
+        "4) Les dettes résultant de titres passés ou de jugements rendus à l'étranger, à moins qu'ils n'aient été rendus exécutoires dans le territoire, celles qui sont hypothéquées exclusivement sur les immeubles situés à l'étranger, celles enfin qui grèvent des successions d'étrangers, à moins qu'elles n'aient été contractées au Territoire et envers des français ou envers des sociétés et des compagnies étrangères ayant une succursale en France ou dans le Territoire.",
+        "5) Les dettes en capital et intérêts pour lesquelles le délai de prescription est accompli, à moins qu'il ne soit justifié que la prescription a été interrompue."
+      ],
+      "mots_cles": [
+        "dettes non déductibles",
+        "dettes hypothécaires",
+        "trois mois",
+        "ouverture de la succession",
+        "attestation",
+        "article 47",
+        "héritiers",
+        "personnes interposées",
+        "article 911 Code civil",
+        "article 1100 Code civil",
+        "acte authentique",
+        "acte sous seing privé",
+        "date certaine",
+        "dettes par testament",
+        "jugements étrangers",
+        "prescription"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 49",
+      "titre": "Preuve de l'inexactitude des déclarations",
+      "texte": [
+        "L'inexactitude des déclarations ou attestations de dettes pourra être établie par tous les moyens de preuve admis par le droit commun, excepté le serment."
+      ],
+      "mots_cles": [
+        "inexactitude",
+        "déclarations",
+        "attestations",
+        "dettes",
+        "moyens de preuve",
+        "droit commun",
+        "serment"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Passif - Biens imposables dans plusieurs territoires",
+      "texte": [
+        "Lorsqu'une succession comprenant à la fois des biens imposables dans le Territoire et des biens imposables dans d'autres territoires de l'Union française où l'enregistrement est établi, est grevée d'un passif, ce passif est déduit des biens situés dans le territoire, dans la mesure déterminée par la proportion existant entre la valeur de ces biens et celle des biens imposables dans ces autres territoires français."
+      ],
+      "mots_cles": [
+        "succession",
+        "biens imposables",
+        "Territoire",
+        "Union française",
+        "passif",
+        "déduction",
+        "proportion",
+        "territoires français"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST10c",
+      "titre": "III. Dispositions spéciales",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 51",
+      "titre": "Assurances - Droits de mutation par décès",
+      "texte": [
+        "Toutes les sommes, rentes ou émoluments quelconques, dus par un assureur, à raison ou à l'occasion du décès de l'assuré, c'est-à-dire de la personne sur la tête de laquelle l'assurance a été contractée, donnent ouverture sous réserve, le cas échéant, des droits de communauté, aux droits de mutation par décès suivant le degré de parenté existant entre le bénéficiaire gratuit et l'assuré, alors même que ce dernier n'aurait pas, personnellement et directement, contracté l'assurance et n'aurait pas acquitté les primes.",
+        "Toutefois, l'impôt n'atteint pas la fraction des sommes versées par l'assureur correspondant aux primes que le bénéficiaire a personnellement acquittées et déduit du versement supportées ou la fraction des mêmes sommes que le bénéficiaire a acquise à titre onéreux de toute autre manière. Si la personne appelée à recueillir le bénéfice de l'assurance abandonne gratuitement, après le décès de l'assuré, tout ou partie de ses droits à un tiers, ce dernier est considéré, dans cette mesure, comme le bénéficiaire direct du contrat et est tenu au paiement des droits de mutation par décès dans les conditions sus indiquées.",
+        "Les dispositions qui précèdent ne sont pas applicables lorsque l'assurance a été contractée à l'étranger et que l'assuré n'avait dans le Territoire, à l'époque de son décès, ni domicile de fait, ni domicile de droit."
+      ],
+      "mots_cles": [
+        "assurances",
+        "assureur",
+        "décès",
+        "assuré",
+        "droits de mutation",
+        "rentes",
+        "émoluments",
+        "droits de communauté",
+        "bénéficiaire",
+        "degré de parenté",
+        "primes",
+        "titre onéreux",
+        "étranger",
+        "domicile de fait",
+        "domicile de droit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Usufruit et nue-propriété - Présomption fiscale",
+      "texte": [
+        "Sont réputés au point de vue fiscal faire partie, jusqu'à preuve du contraire, de la succession de l'usufruitier, toute valeur mobilière, tout bien meuble ou immeuble appartenant pour l'usufruit au défunt et pour la nue-propriété, à l'un de ses présomptifs héritiers ou descendants d'eux, même exclus par testament, ou à ses donataires ou légataires institués, même par testament postérieur, ou à des personnes interposées, à moins qu'il y ait eu donation régulière.",
+        "Sont réputées interposées, les personnes désignées dans les articles 911 alinéa 2, et 1100 du Code civil.",
+        "Toutefois, si la nue-propriété provient de l'héritier, au donataire, au légataire ou à la personne interposée d'une vente à lui consentie par le défunt, les droits de mutation à titre onéreux acquittés par le nu-propriétaire sont imputés sur l'impôt de transmission par décès exigible à raison de l'incorporation des biens dans la succession."
+      ],
+      "mots_cles": [
+        "usufruit",
+        "nue-propriété",
+        "présomption fiscale",
+        "succession",
+        "usufruitier",
+        "valeur mobilière",
+        "biens meubles",
+        "biens immeubles",
+        "présomptifs héritiers",
+        "donataires",
+        "légataires",
+        "personnes interposées",
+        "donation régulière",
+        "article 911 Code civil",
+        "article 1100 Code civil",
+        "mutation à titre onéreux",
+        "nu-propriétaire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Titres et valeurs - Présomption successorale",
+      "texte": [
+        "Sont présumés, jusqu'à preuve du contraire, faire partie de la succession pour la liquidation et le paiement des droits de mutation par décès, les titres et les valeurs dont le défunt a perçu les revenus ou à raison desquels il a effectué des opérations quelconques moins d'un an avant son décès."
+      ],
+      "mots_cles": [
+        "titres",
+        "valeurs",
+        "présomption",
+        "succession",
+        "mutation par décès",
+        "défunt",
+        "revenus",
+        "opérations",
+        "un an"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C2-ST10d",
+      "titre": "IV. Nue-propriété et l'usufruit",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 54",
+      "titre": "Valeur de la nue-propriété et de l'usufruit",
+      "texte": [
+        "La valeur de la nue-propriété et de l'usufruit des biens meubles et immeubles est déterminée, pour la liquidation et le paiement des droits, ainsi qu'il suit, savoir :",
+        "1) Pour les transmissions à titres onéreux de biens autres que créances, rentes ou pensions, par le prix exprimé, en y ajoutant toutes les charges en capital, sauf application des articles 117 et 127.",
+        "2) Pour les apports en mariage, les délivrances de legs ainsi que pour les transmissions entre vifs à titre gratuit ou celles qui s'opèrent par décès des mêmes biens, par une évaluation faite de la manière suivante :",
+        "Si l'usufruitier a moins de vingt ans révolus, l'usufruit est estimé aux sept dixièmes et la nue-propriété aux trois dixièmes de la propriété entière, telle qu'elle doit être évaluée d'après les règles sur l'enregistrement.",
+        "Au-dessus de cet âge, cette proportion est diminuée pour l'usufruit et augmentée pour la nue-propriété d'un dixième pour chaque période de dix ans, sans fraction.",
+        "À partir de soixante-dix ans révolus à l'âge de l'usufruitier, la proportion est fixée à un dixième pour l'usufruit et à neuf dixièmes pour la nue-propriété.",
+        "Pour déterminer la valeur de la nue-propriété, il n'est tenu compte que des usufruits ouverts au jour de la mutation de cette nue-propriété.",
+        "Toutefois, dans le cas d'usufruits successifs, l'usufruit éventuel venant à s'ouvrir, le nu-propriétaire aura droit à la restitution d'une somme égale à ce qu'il aurait payé en moins, si le droit acquitté par lui avait été calculé d'après l'âge de l'usufruitier éventuel.",
+        "L'action en restitution ouverte au profit du nu-propriétaire se prescrit par deux ans à compter du jour du décès du précédent usufruitier.",
+        "L'usufruit constitué pour une durée fixe est estimé aux deux dixièmes de la valeur de la propriété entière pour chaque période de dix ans de sa durée, sans fraction et sans égard à l'âge de l'usufruitier.",
+        "3) Pour les créances à terme, les rentes perpétuelles ou non perpétuelles et les pensions créées ou transmises à quelque titre que ce soit et pour l'amortissement de ces rentes ou pensions, par une quotité de la valeur de la propriété entière, établie suivant les règles indiquées au paragraphe précédent d'après le capital déterminé par l'article 28.",
+        "Il n'est rien dû pour la réunion de l'usufruit à la propriété lorsque cette réunion a lieu par le décès de l'usufruitier ou l'expiration du temps fixé pour la durée de l'usufruit."
+      ],
+      "mots_cles": [
+        "nue-propriété",
+        "usufruit",
+        "biens meubles",
+        "biens immeubles",
+        "transmissions à titre onéreux",
+        "charges en capital",
+        "article 117",
+        "article 127",
+        "apports en mariage",
+        "legs",
+        "transmissions à titre gratuit",
+        "vingt ans",
+        "sept dixièmes",
+        "trois dixièmes",
+        "soixante-dix ans",
+        "un dixième",
+        "neuf dixièmes",
+        "usufruits successifs",
+        "deux ans",
+        "durée fixe",
+        "deux dixièmes",
+        "créances à terme",
+        "rentes perpétuelles",
+        "article 28",
+        "réunion usufruit propriété"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Indication de la date de naissance de l'usufruitier",
+      "texte": [
+        "Les actes et déclarations, régis par les dispositions des deux derniers paragraphes de l'article précédent, feront connaître, sous les sanctions édictées par l'article 115, en cas d'indications inexactes, la date et le lieu de naissance de l'usufruitier, et si la naissance est arrivée hors du Territoire, il sera en outre justifié de cette date avant l'enregistrement, à défaut de quoi, il sera perçu les droits les plus élevés qui pourraient être dus au Trésor, sauf restitution du trop-perçu dans le délai de deux ans sur la représentation de l'acte de naissance, dans le cas où la naissance aurait eu lieu hors du Territoire."
+      ],
+      "mots_cles": [
+        "actes",
+        "déclarations",
+        "article 115",
+        "date de naissance",
+        "lieu de naissance",
+        "usufruitier",
+        "enregistrement",
+        "Trésor",
+        "restitution",
+        "deux ans",
+        "acte de naissance"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Déclaration estimative obligatoire",
+      "texte": [
+        "Si les sommes et valeurs ne sont pas déterminées dans un acte ou un jugement donnant lieu au droit proportionnel ou progressif, les parties seront tenues d'y suppléer, avant l'enregistrement, par une déclaration estimative, certifiée et signée au pied de l'acte."
+      ],
+      "mots_cles": [
+        "sommes",
+        "valeurs",
+        "acte",
+        "jugement",
+        "droit proportionnel",
+        "droit progressif",
+        "déclaration estimative",
+        "enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 57",
+      "titre": "Déclaration détaillée",
+      "texte": [
+        "Dans tous les cas où les droits sont perçus d'après une déclaration estimative des parties, la déclaration et l'estimation doivent être détaillées."
+      ],
+      "mots_cles": [
+        "droits",
+        "déclaration estimative",
+        "estimation détaillée"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "document": "Numéro d'identification unique (NIU) - Arrêté n°5327",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-NIU2",
+    "partie": null,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Modalités d'application du NIU",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet de l'arrêté n°5327 du 12 mars 2020",
+      "texte": [
+        "Art.1.- Le présent arrêté fixe, en application de l'article 5 du décret n°2004-469 du 3 novembre 2004 susvisé, les modalités d'attribution et d'utilisation du numéro d'identification unique."
+      ],
+      "mots_cles": [
+        "arrêté 5327",
+        "modalités attribution",
+        "utilisation NIU"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Attribution du numéro d'identification unique",
+      "texte": [
+        "Art.2.- Le numéro d'identification unique est attribué par la direction générale des impôts et des domaines, sur la base des renseignements fournis par le contribuable.",
+        "Ces renseignements sont inscrits sur un formulaire d'immatriculation. Ils portent sur :",
+        "• l'identité du contribuable ;",
+        "• la localisation du contribuable ;",
+        "• les activités ou secteurs de métiers du contribuable, pour les personnes morales ;",
+        "• la situation matrimoniale du contribuable."
+      ],
+      "mots_cles": [
+        "attribution NIU",
+        "DGID",
+        "formulaire immatriculation",
+        "identité",
+        "localisation",
+        "activités",
+        "situation matrimoniale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Structure du numéro d'identification unique",
+      "texte": [
+        "Art.3.- Le numéro d'identification unique est attribué chronologiquement aux requérants et comprend seize caractères dont :",
+        "• un caractère déterminant le type de personne bénéficiaire du numéro ;",
+        "• deux caractères prenant en compte les deux derniers de l'année de création ;",
+        "• douze caractères représentant la séquence des chiffres précédée à gauche par « 0 » ;",
+        "• un caractère de contrôle alpha numérique basé sur l'algorithme LUHN."
+      ],
+      "mots_cles": [
+        "structure NIU",
+        "16 caractères",
+        "type personne",
+        "année création",
+        "séquence",
+        "algorithme LUHN",
+        "contrôle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Immatriculation des personnes physiques",
+      "texte": [
+        "Art.4.- Tout requérant, personne physique, pour son immatriculation, s'adresse au service des impôts du lieu de sa résidence ou de son principal établissement ou dans les services compétents du ministère en charge des finances.",
+        "Les personnes physiques doivent se munir d'une pièce d'identité ou de tout autre document tenant lieu et de deux cartes photos format identité."
+      ],
+      "mots_cles": [
+        "immatriculation personnes physiques",
+        "service impôts",
+        "résidence",
+        "pièce identité",
+        "photos identité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Immatriculation des personnes morales",
+      "texte": [
+        "Art.5.- Tout requérant, personne morale, pour son immatriculation, s'adresse :",
+        "• au service de l'agence congolaise pour la création des entreprises (ACPCE), pour les entreprises commerciales ;",
+        "• au service de l'agence nationale de l'artisanat, pour les artisans et les entreprises artisanales ;",
+        "• à l'administration en charge du numéro d'identification unique, pour les administrations publiques, les institutions internationales, les associations nationales.",
+        "Les personnes morales doivent se munir d'une copie d'extrait du registre de commerce et de leurs statuts."
+      ],
+      "mots_cles": [
+        "immatriculation personnes morales",
+        "ACPCE",
+        "agence artisanat",
+        "registre commerce",
+        "statuts"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Transmission des données",
+      "texte": [
+        "Art.6.- Les données collectées auprès des services mentionnés aux articles 4 et 5 du présent arrêté sont transmises à l'administration compétente pour exploitation et attribution du numéro d'identification unique."
+      ],
+      "mots_cles": [
+        "transmission données",
+        "exploitation",
+        "attribution NIU"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Gratuité et carte du contribuable",
+      "texte": [
+        "Art.7.- L'immatriculation est gratuite.",
+        "Toutefois, elle donne lieu à la délivrance d'une carte d'immatriculation ou carte du contribuable, dont le coût est fixé à 1.500 FCFA, pour les personnes physiques, et 10.000 FCFA, pour les personnes morales.",
+        "La carte du contribuable matérialise l'opération d'immatriculation."
+      ],
+      "mots_cles": [
+        "gratuité immatriculation",
+        "carte contribuable",
+        "1 500 FCFA personnes physiques",
+        "10 000 FCFA personnes morales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Modalités d'utilisation du NIU",
+      "texte": [
+        "Art.8.- Tous les systèmes de traitements automatisés des administrations utilisatrices doivent avoir pour clé de connexion le numéro d'identification unique, afin d'assurer un meilleur échange des informations sur les contribuables.",
+        "Toutes les applications informatiques doivent être conçues ou modifiées de manière que le défaut du numéro d'identification unique ne permette pas la mise en œuvre du traitement sollicité."
+      ],
+      "mots_cles": [
+        "utilisation NIU",
+        "systèmes automatisés",
+        "clé connexion",
+        "applications informatiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Sanction pour absence de mention du NIU",
+      "texte": [
+        "Art.9.- Le défaut de la mention du numéro d'identification unique sur les factures est sanctionné par une amende de 10.000 FCFA par facture.",
+        "Le défaut de la mention du numéro d'identification unique sur les pièces ou les déclarations entraîne le rejet et la perte du droit à déduction en matière de taxe sur la valeur ajoutée."
+      ],
+      "mots_cles": [
+        "sanction absence NIU",
+        "amende 10 000 FCFA facture",
+        "rejet",
+        "perte déduction TVA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Utilisation frauduleuse du NIU",
+      "texte": [
+        "Art.10.- L'utilisation frauduleuse du numéro d'identification unique est sanctionnée par une amende de 200.000 FCFA, sans préjudice des sanctions prévues par les textes en vigueur, notamment en matière de faux et usage de faux."
+      ],
+      "mots_cles": [
+        "utilisation frauduleuse",
+        "amende 200 000 FCFA",
+        "faux usage faux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Protection des données",
+      "texte": [
+        "Art.11.- Les renseignements donnés par le contribuable sont protégés par le secret professionnel, conformément à l'article 404 du Code général des impôts."
+      ],
+      "mots_cles": [
+        "protection données",
+        "secret professionnel",
+        "article 404 CGI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Mise à disposition des données",
+      "texte": [
+        "Art.12.- Les données collectées et encodées par la direction générale des impôts et des domaines sont mises à la disposition des administrations utilisatrices par réseau informatique."
+      ],
+      "mots_cles": [
+        "mise disposition données",
+        "réseau informatique",
+        "administrations utilisatrices"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Information des changements d'immatriculation",
+      "texte": [
+        "Art.13.- Les administrations utilisatrices sont tenues d'informer par réseau, dans un délai de quinze jours, la direction générale des impôts et des domaines ou, à défaut, les autres services compétents du ministère en charge des finances, de tout changement intervenu dans les éléments d'immatriculation du contribuable."
+      ],
+      "mots_cles": [
+        "changements immatriculation",
+        "délai 15 jours",
+        "information DGID"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Frais et quittances",
+      "texte": [
+        "Chapitre 4 - Dispositions diverses et finales",
+        "Art.14.- Tous les frais prévus par le présent arrêté sont réglés exclusivement contre quittance auprès du receveur représentant le trésor public.",
+        "Ces versements font l'objet d'une déclaration de recettes."
+      ],
+      "mots_cles": [
+        "frais",
+        "quittance",
+        "receveur trésor public",
+        "déclaration recettes"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Ristourne sur les fonds recouvrés",
+      "texte": [
+        "Art.15.- Une ristourne d'un tiers sur les fonds recouvrés est concédée à l'administration fiscale, pour couvrir les frais de fonctionnement de la cellule d'identification unique.",
+        "Cette ristourne est soumise, d'une part, à l'émission des titres de règlement en régularisation et, d'autre part, selon les cas, au paiement des titres régulièrement émis."
+      ],
+      "mots_cles": [
+        "ristourne",
+        "un tiers fonds recouvrés",
+        "cellule identification unique",
+        "frais fonctionnement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Autorisation des dépenses",
+      "texte": [
+        "Art.16.- Toute dépense sur la ristourne ne peut être autorisée que par le directeur général des impôts et des domaines ou son délégué."
+      ],
+      "mots_cles": [
+        "autorisation dépenses",
+        "DGID",
+        "délégué"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Exécution de l'arrêté",
+      "texte": [
+        "Art.17.- Le directeur général des impôts et des domaines est chargé de l'exécution du présent arrêté."
+      ],
+      "mots_cles": [
+        "exécution arrêté",
+        "DGID"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Abrogation",
+      "texte": [
+        "Art.18.- Le présent arrêté, qui abroge toutes dispositions antérieures contraires, notamment l'arrêté n°11185 du 8 novembre 2004 fixant les modalités d'attribution et d'utilisation du numéro d'identification unique, sera enregistré et publié au Journal officiel de la République du Congo."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "arrêté 11185",
+        "publication JO"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

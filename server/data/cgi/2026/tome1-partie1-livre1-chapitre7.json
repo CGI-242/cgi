@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 7,
+    "chapitre_titre": "Plus-values sur titres réalisées par des personnes non-résidentes",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 185 quater-A",
+      "titre": "Impôt spécial sur les plus-values de cession de titres",
+      "texte": [
+        "Il est établi un impôt spécial sur les plus-values réalisées par les personnes physiques ou morales domiciliées à l'étranger par la cession de tout ou partie des participations qu'elles détiennent dans le capital des sociétés de droit congolais.",
+        "L'impôt spécial est applicable à la fraction de la plus-value réalisée."
+      ],
+      "mots_cles": [
+        "plus-values",
+        "cession de titres",
+        "non-résidents",
+        "participations",
+        "sociétés de droit congolais",
+        "impôt spécial"
+      ],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-B",
+      "titre": "Taux et modalités de paiement",
+      "texte": [
+        "Le taux de l'impôt spécial est fixé à 20 % du montant de la plus-value imposable.",
+        "Cet impôt est libératoire de l'impôt sur le revenu du bénéficiaire.",
+        "Il est payable au moment de l'enregistrement obligatoire de l'acte de cession en même temps que le paiement des droits d'enregistrement."
+      ],
+      "mots_cles": [
+        "taux 20 %",
+        "plus-value imposable",
+        "libératoire",
+        "enregistrement",
+        "acte de cession",
+        "droits d'enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-C",
+      "titre": "Solidarité de paiement",
+      "texte": [
+        "Le cédant, le cessionnaire ou la société de droit congolais, dont tout ou partie des titres auront été cédés, sont solidairement responsables du paiement de l'impôt spécial."
+      ],
+      "mots_cles": [
+        "solidarité",
+        "cédant",
+        "cessionnaire",
+        "responsabilité",
+        "paiement"
+      ],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quinquies",
+      "titre": "Retenue à la source BTP - Sous-traitants",
+      "texte": [
+        "1) Les entrepreneurs de bâtiments et de travaux publics adjudicataires des marchés publics ou privés de construction sont tenus de prélever, pour le compte de l'État, une retenue à la source sur les sommes payées aux sous-traitants ou aux bureaux d'études auxquels ils ont eu recours pour l'exécution desdits marchés, aux taux de :",
+        "• 3 %, pour les entrepreneurs sous-traitants et autres relevant du régime réel ;",
+        "• 10 %, pour les entrepreneurs sous-traitants et autres relevant du régime du forfait.",
+        "Les retenues opérées sont régies selon les dispositions des articles 172 et 173 du présent Code.",
+        "2) L'entrepreneur principal, adjudicataire du marché principal, est tenu, d'une part, de communiquer, par trimestre, à l'administration fiscale, la liste des sous-traitants bénéficiaires des contrats d'exécution des travaux, suivant un format défini par l'administration, et d'autre part de porter ledit marché à la formalité d'enregistrement.",
+        "3) Chaque sous-traitant, bénéficiaire d'un contrat d'exécution des travaux, est tenu de porter ledit contrat à la formalité d'enregistrement.",
+        "4) Le défaut, les omissions ou insuffisances des retenues sont sanctionnées, d'une part par une amende de 5.000.000 FCFA et d'autre part, par la perte de la déductibilité des sommes versées.",
+        "5) Le versement tardif des sommes retenues est sanctionné par une pénalité de retard de 2 % par mois ou fraction de mois sans dépasser 100 %.",
+        "6) Pour les sous-traitants, les sommes retenues constituent un acompte d'impôt.",
+        "7) Le paiement se fait au moyen d'un bordereau spécial fourni par l'administration fiscale, comportant les indications pouvant permettre le contrôle et la gestion fiscale de la retenue."
+      ],
+      "mots_cles": [
+        "BTP",
+        "bâtiments",
+        "travaux publics",
+        "marchés publics",
+        "sous-traitants",
+        "bureaux d'études",
+        "retenue à la source",
+        "3 %",
+        "10 %",
+        "régime réel",
+        "régime forfait",
+        "enregistrement",
+        "amende 5.000.000 FCFA",
+        "pénalité 2 %",
+        "acompte d'impôt",
+        "bordereau spécial"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 8 : Paiements effectués par les entreprises adjudicataires des marchés de BTP au profit des sous-traitants desdits marchés"
+    },
+    {
+      "article": "Art. 185 sexies",
+      "titre": "Retenue sur primes de réassurance",
+      "texte": [
+        "Les primes cédées en réassurance au-delà du plafond fixé par l'article 308 du Code de la Conférence interafricaine des Marchés d'Assurances (CIMA) et les primes d'assurance à l'étranger, perçues par les sociétés étrangères non domiciliées dans les États membres de la CIMA, sont soumises à la retenue à la source de 20 % prévue à l'article 185 ter ci-dessus, nonobstant l'autorisation du Ministre en charge des assurances."
+      ],
+      "mots_cles": [
+        "réassurance",
+        "primes",
+        "CIMA",
+        "article 308",
+        "sociétés étrangères",
+        "retenue à la source",
+        "20 %",
+        "assurances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 9 : Exonération des primes cédées en réassurances"
+    }
+  ]
+}

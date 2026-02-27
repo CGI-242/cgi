@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 7,
+    "chapitre_titre": "Obligations déclaratives",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 30",
+      "titre": "Enregistrement et NIU",
+      "texte": [
+        "Art.30.- 1) Un redevable ne peut se prévaloir de la qualité d'assujetti qu'après enregistrement et attribution d'un numéro d'identification unique (NIU).",
+        "2) L'administration fiscale publie en ligne les numéros d'identification unique des contribuables en précisant notamment leur assujettissement à la TVA, leur dénomination sociale, leur adresse et leur résidence fiscale. Cette liste contribue à la certification des factures ; elle est datée, archivée et régulièrement mise à jour."
+      ],
+      "mots_cles": [
+        "enregistrement",
+        "NIU",
+        "numéro identification unique",
+        "qualité assujetti",
+        "publication en ligne",
+        "assujettissement TVA",
+        "dénomination sociale",
+        "certification factures"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "État détaillé des déductions",
+      "texte": [
+        "Art.31.- (L.F.2025) L'exercice du droit à déduction est subordonné à la présentation d'un état détaillé qui doit être joint à la déclaration de TVA. Cet état, dont le modèle est prescrit par l'administration, doit comporter les indications suivantes :",
+        "A. En ce qui concerne les déductions se rapportant aux achats locaux et aux prestations de services :",
+        "• le nom ou la raison sociale du fournisseur ;",
+        "• le numéro d'identification unique (NIU) du fournisseur ;",
+        "• le numéro, la date et le montant de la facture hors taxes ;",
+        "• le montant de la taxe déductible facturée par le fournisseur ;",
+        "• la nature de biens et services ;",
+        "• l'adresse de facturation ;",
+        "• les éléments de sécurité liés au système de facturation électronique certifié (SFEC), précisé par voie réglementaire.",
+        "B. En ce qui concerne les importations :",
+        "• le numéro, la date et la valeur imposable en douanes de la déclaration de mise à la consommation ou de sortie d'entrepôt ;",
+        "• la nature des biens importés ;",
+        "• le numéro, la date et le montant de la quittance délivrée par les services de douanes.",
+        "Outre l'état détaillé prévu ci-dessus, les assujettis à la TVA fournissent au moment du dépôt de la déclaration mensuelle du chiffre d'affaires, l'extrait de la balance de chaque compte de comptabilisation de la TVA suivant le plan comptable OHADA, adaptée à chaque entreprise.",
+        "Le défaut de production de ces documents entraîne la réintégration d'office des déductions effectuées."
+      ],
+      "mots_cles": [
+        "état détaillé déductions",
+        "déclaration TVA",
+        "achats locaux",
+        "prestations services",
+        "NIU fournisseur",
+        "facture HT",
+        "taxe déductible",
+        "SFEC",
+        "facturation électronique certifié",
+        "importations",
+        "déclaration mise consommation",
+        "quittance douanes",
+        "balance comptable OHADA",
+        "réintégration déductions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Obligation de facturation et mentions obligatoires",
+      "texte": [
+        "Art.32.- 1) Quel que soit leur régime d'imposition, les assujettis doivent délivrer une facture pour les biens livrés ou les services rendus, ainsi que pour les acomptes perçus au titre de ces opérations et donnant lieu à exigibilité de la taxe.",
+        "2) La facture doit faire apparaître distinctement :",
+        "• la date et le numéro de la facture dans une série continue ;",
+        "• le nom, l'adresse précise, la raison sociale, la dénomination, le numéro d'identification unique, le numéro d'immatriculation au registre du commerce et de crédit mobilier ou au registre des métiers de l'assujetti qui délivre la facture, ainsi que son régime d'imposition ;",
+        "• le taux de la TVA appliquée, le prix hors taxe de l'opération, la taxe correspondante et le montant toutes taxes comprises ;",
+        "• le nom, l'adresse et le numéro d'identification unique du client ;",
+        "• la désignation et la quantité des biens ou prestations ;",
+        "• les références bancaires ;",
+        "• le régime d'imposition ;",
+        "• les services des impôts dont il dépend pour ses obligations fiscales.",
+        "3) Pour les assujettis partiels, les opérations soumises à la TVA doivent être distinguées de celles qui n'y sont pas soumises. Pour chaque opération ayant donné lieu à l'établissement d'une facture, doivent être indiqués :",
+        "• le montant non taxable de l'opération ;",
+        "• le montant taxable, le taux applicable et le montant de la TVA."
+      ],
+      "mots_cles": [
+        "obligation facturation",
+        "régime imposition",
+        "biens livrés",
+        "services rendus",
+        "acomptes",
+        "exigibilité taxe",
+        "mentions obligatoires",
+        "numéro facture série continue",
+        "NIU",
+        "RCCM",
+        "registre métiers",
+        "taux TVA",
+        "prix HT",
+        "TTC",
+        "références bancaires",
+        "service impôts",
+        "assujettis partiels",
+        "montant non taxable",
+        "montant taxable"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Obligations comptables",
+      "texte": [
+        "Art.33.- 1) Les assujettis à la TVA, quel que soit leur régime d'imposition, doivent tenir une comptabilité conforme au système normal du SYSCOHADA, comportant :",
+        "• un livre journal cotés et paraphés ;",
+        "• un journal des ventes ;",
+        "• un journal des achats ;",
+        "• un livre d'inventaire ;",
+        "• un grand livre des comptes ;",
+        "• une balance des comptes.",
+        "2) La comptabilité doit être disponible au Congo, au siège social ou au principal établissement de l'entreprise. Le lieu de tenue de la comptabilité détermine la résidence fiscale à laquelle l'entreprise est rattachée."
+      ],
+      "mots_cles": [
+        "obligations comptables",
+        "SYSCOHADA",
+        "système normal",
+        "livre journal coté paraphé",
+        "journal ventes",
+        "journal achats",
+        "livre inventaire",
+        "grand livre",
+        "balance comptes",
+        "comptabilité au Congo",
+        "siège social",
+        "principal établissement",
+        "résidence fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34 ter",
+      "titre": "Facturation électronique certifiée - Sanction",
+      "texte": [
+        "Art.34 ter.- (L.F.2025) La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.",
+        "L'administration fiscale est chargée de la mise en œuvre du système de facturation électronique certifiée."
+      ],
+      "mots_cles": [
+        "facturation électronique certifiée",
+        "SFEC",
+        "transaction non conforme",
+        "TVA non déductible",
+        "administration fiscale",
+        "mise en œuvre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "document": "Attestation de non-redevance fiscale",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-ATTEST",
+    "partie": null,
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "4.17. Attestation de non-redevance fiscale",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de l'attestation",
+      "texte": [
+        "Art.1.- Il est institué une attestation de non-redevance fiscale valable un trimestre, délivrée à toutes les personnes physiques et morales domiciliées ou résidant habituellement en République du Congo."
+      ],
+      "mots_cles": [
+        "attestation non-redevance fiscale",
+        "validité trimestrielle",
+        "personnes physiques morales",
+        "domicile Congo"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Conditions de délivrance",
+      "texte": [
+        "Art.2.- L'attestation de non-redevance fiscale est délivrée moyennant le paiement d'une somme de 3.000 FCFA, par le chef de résidence fiscale dans laquelle est situé le siège de l'entreprise, de son principal établissement ou du domicile du contribuable, pour les personnes physiques et morales exerçant une activité industrielle, commerciale, artisanale ou non commerciale, sur présentation :",
+        "• du numéro d'identification unique (NIU) ;",
+        "• des quittances justifiant le paiement des impôts, droits et taxes dus au titre du trimestre précédent ;",
+        "• du certificat de moralité fiscale de l'année précédente."
+      ],
+      "mots_cles": [
+        "délivrance",
+        "3 000 FCFA",
+        "chef résidence fiscale",
+        "NIU",
+        "quittances impôts",
+        "certificat moralité fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Effets de l'attestation",
+      "texte": [
+        "Art.3.- L'attestation de non-redevance fiscale confère, au cours de la période, à son titulaire le droit :",
+        "• d'exercer une activité commerciale, industrielle, artisanale ou non commerciale ;",
+        "• de soumissionner aux marchés et commandes de l'État ;",
+        "• de bénéficier des crédits bancaires ;",
+        "• d'obtenir la qualité d'importateur ou d'exportateur."
+      ],
+      "mots_cles": [
+        "effets attestation",
+        "droit exercer activité",
+        "marchés État",
+        "crédits bancaires",
+        "importateur exportateur"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exigibilité lors des contrôles",
+      "texte": [
+        "Art.4.- (Loi 2020-23) L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité."
+      ],
+      "mots_cles": [
+        "exigibilité",
+        "contrôle inopiné",
+        "vérification comptabilité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Sanctions",
+      "texte": [
+        "Art.5.- (Loi 2020-23) Toute infraction aux présentes dispositions entraîne pour les contribuables une amende de 100.000 FCFA par trimestre. L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité."
+      ],
+      "mots_cles": [
+        "sanctions",
+        "amende 100 000 FCFA",
+        "infraction",
+        "trimestre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

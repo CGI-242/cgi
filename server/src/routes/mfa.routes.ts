@@ -1,0 +1,231 @@
+import { Router, Response } from 'express';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import { requireAuth, AuthRequest, isWebClient, setAuthCookies } from '../middleware/auth';
+import { sensitiveLimiter, authLimiter } from '../middleware/rateLimit.middleware';
+import { MFAService } from '../services/mfa.service';
+import { MFABackupService } from '../services/mfa.backup.service';
+import { AuditService } from '../services/audit.service';
+import { EmailService } from '../services/email.service';
+import { generateAccessToken, generateRefreshToken } from '../utils/jwt';
+import prisma from '../utils/prisma';
+import { createLogger } from '../utils/logger';
+
+const logger = createLogger('MFARoutes');
+const router = Router();
+
+// GET /api/mfa/status
+router.get('/status', requireAuth, async (req: AuthRequest, res: Response) => {
+  try {
+    const status = await MFAService.getStatus(req.userId!);
+    res.json(status);
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur serveur';
+    res.status(400).json({ error: message });
+  }
+});
+
+// POST /api/mfa/setup
+router.post('/setup', requireAuth, async (req: AuthRequest, res: Response) => {
+  try {
+    const result = await MFAService.generateSetup(req.userId!);
+    res.json(result);
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur serveur';
+    res.status(400).json({ error: message });
+  }
+});
+
+// POST /api/mfa/enable
+router.post('/enable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
+  try {
+    const { code } = req.body;
+    if (!code) {
+      res.status(400).json({ error: 'Code TOTP requis' });
+      return;
+    }
+
+    const result = await MFAService.enable(req.userId!, code);
+
+    AuditService.log({
+      actorId: req.userId!,
+      actorEmail: req.userEmail!,
+      action: 'MFA_ENABLED',
+      entityType: 'USER',
+      entityId: req.userId!,
+      changes: { mfaEnabled: true },
+    });
+
+    EmailService.sendMfaEnabled(req.userEmail!).catch(() => {});
+
+    res.json({
+      message: 'MFA activé avec succès',
+      backupCodes: result.backupCodes,
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur serveur';
+    res.status(400).json({ error: message });
+  }
+});
+
+// POST /api/mfa/disable
+router.post('/disable', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
+  try {
+    const { password } = req.body;
+    if (!password) {
+      res.status(400).json({ error: 'Mot de passe requis' });
+      return;
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: req.userId! },
+      select: { password: true, mfaEnabled: true },
+    });
+
+    if (!user?.mfaEnabled) {
+      res.status(400).json({ error: 'MFA non activé' });
+      return;
+    }
+
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) {
+      res.status(401).json({ error: 'Mot de passe incorrect' });
+      return;
+    }
+
+    await MFAService.disable(req.userId!);
+
+    AuditService.log({
+      actorId: req.userId!,
+      actorEmail: req.userEmail!,
+      action: 'MFA_DISABLED',
+      entityType: 'USER',
+      entityId: req.userId!,
+      changes: { mfaEnabled: false },
+    });
+
+    res.json({ message: 'MFA désactivé' });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur serveur';
+    res.status(400).json({ error: message });
+  }
+});
+
+// POST /api/mfa/verify (pendant le login, public avec authLimiter)
+router.post('/verify', authLimiter, async (req: AuthRequest, res: Response) => {
+  try {
+    const { mfaToken, code } = req.body;
+    if (!mfaToken || !code) {
+      res.status(400).json({ error: 'mfaToken et code requis' });
+      return;
+    }
+
+    // Décoder le mfaToken temporaire
+    let payload: { userId: string; email: string; mfa: boolean };
+    try {
+      const secret = process.env.JWT_SECRET || 'dev-secret';
+      payload = jwt.verify(mfaToken, secret) as typeof payload;
+    } catch {
+      res.status(401).json({ error: 'Token MFA invalide ou expiré' });
+      return;
+    }
+
+    if (!payload.mfa) {
+      res.status(401).json({ error: 'Token MFA invalide' });
+      return;
+    }
+
+    const isValid = await MFAService.verifyLogin(payload.userId, code);
+    if (!isValid) {
+      res.status(401).json({ error: 'Code MFA invalide' });
+      return;
+    }
+
+    // Générer les vrais tokens
+    const token = generateAccessToken({ userId: payload.userId, email: payload.email });
+    const refreshToken = generateRefreshToken({ userId: payload.userId, email: payload.email });
+
+    await prisma.user.update({
+      where: { id: payload.userId },
+      data: { lastLoginAt: new Date() },
+    });
+
+    const membership = await prisma.organizationMember.findFirst({
+      where: { userId: payload.userId },
+      include: { organization: true },
+    });
+
+    const user = await prisma.user.findUnique({ where: { id: payload.userId } });
+
+    AuditService.log({
+      actorId: payload.userId,
+      actorEmail: payload.email,
+      action: 'LOGIN_SUCCESS',
+      entityType: 'USER',
+      entityId: payload.userId,
+      changes: null,
+      metadata: { mfa: true },
+    });
+
+    const responseBody = {
+      user: {
+        id: payload.userId,
+        nom: user?.lastName,
+        prenom: user?.firstName,
+        email: payload.email,
+        role: membership?.role,
+        entreprise_id: membership?.organizationId,
+        entreprise_nom: membership?.organization.name,
+        is_verified: true,
+      },
+    };
+
+    if (isWebClient(req)) {
+      // Web : cookies httpOnly — pas de tokens dans le body
+      setAuthCookies(res, token, refreshToken);
+      res.json(responseBody);
+    } else {
+      // Mobile : tokens dans le body
+      res.json({ ...responseBody, token, refreshToken });
+    }
+  } catch (err: unknown) {
+    logger.error('[mfa-verify]', err);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+// POST /api/mfa/backup-codes/regenerate
+router.post('/backup-codes/regenerate', requireAuth, sensitiveLimiter, async (req: AuthRequest, res: Response) => {
+  try {
+    const user = await prisma.user.findUnique({
+      where: { id: req.userId! },
+      select: { mfaEnabled: true },
+    });
+
+    if (!user?.mfaEnabled) {
+      res.status(400).json({ error: 'MFA non activé' });
+      return;
+    }
+
+    const backupCodes = await MFABackupService.generateBackupCodes(req.userId!);
+
+    AuditService.log({
+      actorId: req.userId!,
+      actorEmail: req.userEmail!,
+      action: 'MFA_BACKUP_REGENERATED',
+      entityType: 'USER',
+      entityId: req.userId!,
+      changes: { regenerated: true },
+    });
+
+    res.json({
+      message: 'Codes de secours régénérés',
+      backupCodes,
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur serveur';
+    res.status(400).json({ error: message });
+  }
+});
+
+export default router;

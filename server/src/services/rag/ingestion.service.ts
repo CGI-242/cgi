@@ -130,7 +130,91 @@ export async function ingestArticles(articles: ArticleJSON[]): Promise<Ingestion
   }
 
   logger.info(`Ingestion terminée: ${result.inserted} insérés, ${result.updated} mis à jour, ${result.errors} erreurs`);
+
+  // 2ème passe : extraction des références croisées entre articles
+  await extractArticleReferences();
+
   return result;
+}
+
+// ==================== EXTRACTION REFERENCES CROISEES ====================
+
+const ARTICLE_REF_PATTERNS = [
+  /Art\.\s*(\d+(?:\s*[A-Z](?:is)?)?)/gi,                       // Art. 86A, Art. 86Abis
+  /articles?\s+(\d+(?:\s*[a-z]+)?)/gi,                          // article 12, articles 1er
+  /(?:visé|prévu|mentionné).*?art(?:icle)?\.?\s*(\d+[A-Z]?)/gi, // visé à l'art. 86
+];
+
+/**
+ * Extrait les numéros d'articles référencés dans un texte
+ */
+function extractReferencedNumeros(text: string): string[] {
+  const numeros = new Set<string>();
+
+  for (const pattern of ARTICLE_REF_PATTERNS) {
+    // Reset lastIndex pour chaque usage (flag 'g')
+    pattern.lastIndex = 0;
+    let match;
+    while ((match = pattern.exec(text)) !== null) {
+      const numero = match[1].trim().replace(/\s+/g, '');
+      numeros.add(numero);
+    }
+  }
+
+  return Array.from(numeros);
+}
+
+/**
+ * Scanne tous les articles en BDD et crée les ArticleReference
+ * pour les références croisées détectées dans le contenu.
+ */
+async function extractArticleReferences(): Promise<void> {
+  logger.info('Extraction des références croisées entre articles...');
+
+  const articles = await prisma.article.findMany({
+    select: { id: true, numero: true, contenu: true, version: true },
+  });
+
+  // Index par numéro pour lookup rapide
+  const articlesByNumero = new Map<string, string>();
+  for (const article of articles) {
+    articlesByNumero.set(article.numero, article.id);
+  }
+
+  let refsCreated = 0;
+
+  for (const article of articles) {
+    const referencedNumeros = extractReferencedNumeros(article.contenu);
+
+    for (const numero of referencedNumeros) {
+      // Ne pas créer d'auto-référence
+      if (numero === article.numero) continue;
+
+      const targetId = articlesByNumero.get(numero);
+      if (!targetId) continue;
+
+      try {
+        await prisma.articleReference.upsert({
+          where: {
+            fromArticleId_toArticleId: {
+              fromArticleId: article.id,
+              toArticleId: targetId,
+            },
+          },
+          create: {
+            fromArticleId: article.id,
+            toArticleId: targetId,
+          },
+          update: {},
+        });
+        refsCreated++;
+      } catch (err) {
+        logger.warn(`Erreur création ref ${article.numero} -> ${numero}:`, err);
+      }
+    }
+  }
+
+  logger.info(`Références croisées: ${refsCreated} relations créées/vérifiées`);
 }
 
 export default { ingestArticles, ingestFromSource };

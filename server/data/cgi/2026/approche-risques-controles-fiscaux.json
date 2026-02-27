@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "document": "Approche fondée sur les risques pour l'exécution des contrôles fiscaux",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-RISQUE",
+    "partie": null,
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "5.4. Approche fondée sur les risques pour l'exécution des contrôles fiscaux",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Définition de l'approche fondée sur les risques",
+      "texte": [
+        "Art.1.- L'approche fondée sur les risques permet, par l'analyse d'une variété de critères de risques, d'identifier les contribuables présentant des situations de risques élevés de non-conformité ou de fraude pour les soumettre aux contrôles annuels ou périodiques."
+      ],
+      "mots_cles": [
+        "approche risques",
+        "critères risques",
+        "non-conformité",
+        "fraude",
+        "contrôles annuels périodiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Sélection des dossiers de contrôle",
+      "texte": [
+        "Art.2.- Les dossiers retenus pour les contrôles fiscaux et douaniers doivent être sélectionnés conformément aux normes et règles spécifiées selon l'approche fondée sur les risques."
+      ],
+      "mots_cles": [
+        "sélection dossiers",
+        "contrôles fiscaux douaniers",
+        "normes règles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Règles applicables",
+      "texte": [
+        "Art.3.- Les règles régissant l'assiette, la liquidation, le recouvrement, le contentieux fiscal ou douanier, les garanties de l'administration, les droits et obligations des contribuables soumis au contrôle fiscal ou douanier sont définies, respectivement, par le Code général des impôts, le Code des douanes de la CEMAC et les textes réglementaires en vigueur."
+      ],
+      "mots_cles": [
+        "règles assiette liquidation",
+        "recouvrement",
+        "contentieux",
+        "CGI",
+        "Code douanes CEMAC"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Définitions",
+      "texte": [
+        "Art.4.- Au sens du présent décret, on entend par :",
+        "• contribuable : toute personne physique ou morale assujettie à un impôt, droit ou taxe ;",
+        "• dossier : l'ensemble des informations à caractère fiscal ou douanier détenues par l'administration sur un ou plusieurs contribuables ;",
+        "• risque fiscal ou douanier : l'observation d'un comportement de non-respect volontaire ou non des obligations fiscales ou douanières entraînant une perte probable de recettes. Ce risque peut également provenir, sans s'y limiter, de l'existence des incitations fiscales et douanières, des opérations réalisées avec des pays à juridiction fiscale non contraignante ou des secteurs particuliers ;",
+        "• service : la structure responsable de l'application du présent décret."
+      ],
+      "mots_cles": [
+        "définitions",
+        "contribuable",
+        "dossier",
+        "risque fiscal douanier",
+        "service",
+        "juridiction fiscale non contraignante"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Objectifs de l'approche fondée sur les risques",
+      "texte": [
+        "Art.5.- L'approche de contrôle fondée sur les risques vise à promouvoir et à encourager l'engagement volontaire des contribuables dans l'atteinte des objectifs nationaux tels qu'indiqués ci-après :",
+        "• amélioration de l'efficacité et de la qualité des procédures de contrôle ;",
+        "• concentration des travaux de contrôle sur les contribuables présentant des risques élevés de non-conformité aux obligations fiscales et douanières fixées par les lois et textes en vigueur ;",
+        "• réduction des coûts de conformité ;",
+        "• garantie des recettes ;",
+        "• garantie de l'égalité de traitement des contribuables ;",
+        "• utilisation efficiente des ressources humaines, financières et techniques en matière de contrôle ;",
+        "• détection, réduction des cas de non-conformité et lutte contre la fraude et l'évasion fiscales ;",
+        "• sensibilisation des contribuables non conformes sur le risque de contrôle et de forte pénalisation ;",
+        "• accroissement du niveau de respect volontaire des lois par les contribuables ;",
+        "• maintien de la confiance avec les usagers ;",
+        "• renforcement du civisme fiscal."
+      ],
+      "mots_cles": [
+        "objectifs",
+        "efficacité contrôle",
+        "risques élevés",
+        "coûts conformité",
+        "recettes",
+        "égalité traitement",
+        "ressources",
+        "fraude évasion",
+        "civisme fiscal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Absence d'obligation de justification",
+      "texte": [
+        "Art.6.- Le choix de cette approche ne soumet pas les administrations fiscales et douanières à l'engagement ou l'obligation de justifier les motifs de sélection d'un contribuable soumis au contrôle."
+      ],
+      "mots_cles": [
+        "absence obligation justification",
+        "sélection contribuable",
+        "contrôle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6bis",
+      "titre": "Objectif général de l'approche",
+      "texte": [
+        "L'approche de contrôle fondée sur les risques vise, de manière générale, à améliorer le climat des affaires à travers un mécanisme de gestion proactive des risques qui accorde la priorité de l'exécution des contrôles fiscaux et douaniers aux situations de risques élevés de non-conformité."
+      ],
+      "mots_cles": [
+        "climat affaires",
+        "gestion proactive risques",
+        "priorité contrôles",
+        "risques élevés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Champ d'application",
+      "texte": [
+        "Art.7.- L'approche de contrôle fondée sur les risques, telle que définie dans le présent décret, est applicable à tout contribuable devant être soumis au contrôle fiscal ou douanier sur tous les impôts, droits et taxes dont il est redevable."
+      ],
+      "mots_cles": [
+        "champ application",
+        "tout contribuable",
+        "contrôle fiscal douanier",
+        "impôts droits taxes"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Mise en œuvre par les administrations",
+      "texte": [
+        "Art.8.- L'approche est mise en œuvre par les administrations fiscale et douanière dans la limite des contrôles relevant de leur compétence. Les modalités de mise en œuvre sont précisées par des textes spécifiques."
+      ],
+      "mots_cles": [
+        "mise en œuvre",
+        "administrations fiscale douanière",
+        "compétence",
+        "textes spécifiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Opérations de contrôle couvertes",
+      "texte": [
+        "Art.9.- L'approche de contrôle fondée sur les risques couvre les opérations de contrôles sur pièces et les opérations de vérifications fiscales en ce qui concerne les contrôles fiscaux, les opérations de contrôle a posteriori, en ce qui concerne les contrôles douaniers.",
+        "Les contrôles sont exécutés exclusivement par les services dédiés aux missions de contrôle au sein des administrations fiscale et douanière conformément aux textes réglementaires."
+      ],
+      "mots_cles": [
+        "contrôles sur pièces",
+        "vérifications fiscales",
+        "contrôle a posteriori",
+        "contrôles douaniers",
+        "services dédiés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Critères d'évaluation des risques",
+      "texte": [
+        "Art.10.- Les autorités fiscales et douanières doivent établir un recueil de critères d'évaluation des risques, prenant en compte les divers facteurs et indicateurs de l'existence de risques pour les recettes fiscales et douanières, sans limitation des antécédents de non-conformité, des spécificités liées à l'industrie, aux informations disponibles et aux analyses de données.",
+        "Les normes d'établissement et de choix des critères de risques développées par le service responsable de l'analyse de risques sont élaborées sous forme d'une décision rendue par chaque comité visé à l'article 21 du présent décret."
+      ],
+      "mots_cles": [
+        "recueil critères risques",
+        "facteurs indicateurs",
+        "antécédents non-conformité",
+        "industrie",
+        "analyses données",
+        "comité art.21"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Services compétents pour l'approche risques",
+      "texte": [
+        "Art.11.- L'approche de contrôle fondée sur les risques est mise en œuvre au sein des administrations fiscales et douanières par les services responsables de l'élaboration des critères de risque, de l'analyse des profils de risque des contribuables et de la sélection des cas de contrôle autres que les services impliqués dans les opérations de contrôle afin de garantir l'impartialité dans la sélection des dossiers."
+      ],
+      "mots_cles": [
+        "services compétents",
+        "élaboration critères risque",
+        "analyse profils risque",
+        "sélection cas contrôle",
+        "impartialité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Missions des services d'analyse de risques",
+      "texte": [
+        "Art.12.- Les services visés au précédent article procèdent, après établissement du contexte du contrôle, à l'identification, l'analyse, l'évaluation et la hiérarchisation des risques. Ces services ont, entre autres missions, de :",
+        "• déterminer et élaborer des critères et indicateurs de risque conformément aux objectifs de l'amélioration de l'engagement volontaire des contribuables ;",
+        "• déterminer la taille des échantillons et le poids relatif au niveau de segmentation des secteurs et des activités économiques ;",
+        "• élaborer les formulaires annuels et les fiches d'instructions relatives à la sélection des échantillons à la lumière des résultats d'analyse de base annuelle ;",
+        "• préparer le plan d'amélioration de conformité ;",
+        "• préparer un plan de contrôle national tenant compte des types d'audit, de leurs calendriers d'exécution et des capacités des unités de contrôle ;",
+        "• préparer un plan de contrôle conjoint entre l'administration fiscale et les douanes."
+      ],
+      "mots_cles": [
+        "missions services",
+        "identification analyse évaluation risques",
+        "critères indicateurs",
+        "échantillons",
+        "segmentation secteurs",
+        "plan conformité",
+        "plan contrôle national",
+        "contrôle conjoint"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Méthodes de notation et scoring",
+      "texte": [
+        "Art.13.- L'évaluation des risques requiert la définition préalablement des méthodes de notation, de calcul de scores et de classement des risques et de les faire valider par le comité mis en place à cet effet."
+      ],
+      "mots_cles": [
+        "évaluation risques",
+        "méthodes notation",
+        "calcul scores",
+        "classement risques",
+        "validation comité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Profil de risque",
+      "texte": [
+        "Art.14.- Sur la base des informations collectées, les services établissent un profil de risque pour une catégorie de contribuables ou d'opérations.",
+        "Le profil de risque est une valeur numérique qui indique le niveau de risque associé à chaque catégorie de contribuables ou d'opérations. Il permet de classer les contribuables en fonction de leur niveau de risque."
+      ],
+      "mots_cles": [
+        "profil risque",
+        "valeur numérique",
+        "niveau risque",
+        "catégorie contribuables",
+        "classement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Sélection des dossiers à contrôler",
+      "texte": [
+        "Art.15.- La sélection des dossiers à contrôler est basée sur les informations issues de l'identification, l'analyse et l'évaluation de risques.",
+        "Les dossiers à soumettre au contrôle fiscal ou douanier sont sélectionnés en fonction du profil ou score de risque associé à chaque catégorie de contribuables ou d'opérations."
+      ],
+      "mots_cles": [
+        "sélection dossiers",
+        "identification analyse évaluation",
+        "profil score risque",
+        "catégorie contribuables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Types de contrôles et seuils de risque",
+      "texte": [
+        "Art.16.- Les administrations déterminent les types de contrôles à exécuter et les structures de contrôle intervenant en fonction des seuils de risque qu'elles fixent."
+      ],
+      "mots_cles": [
+        "types contrôles",
+        "structures contrôle",
+        "seuils risque"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Programme d'observation des contribuables",
+      "texte": [
+        "Art.17.- La mise en œuvre de l'approche axée sur les risques requiert la mise en place d'un programme d'observation des contribuables qui présente une description des risques cernés dans l'environnement fiscal et douanier.",
+        "Ce programme d'observation doit être structuré autour des principaux segments des contribuables suivants : les grandes, les moyennes, les petites, les micros-entreprises et les particuliers."
+      ],
+      "mots_cles": [
+        "programme observation",
+        "segments contribuables",
+        "grandes entreprises",
+        "moyennes entreprises",
+        "petites entreprises",
+        "micros-entreprises",
+        "particuliers"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Outils nécessaires",
+      "texte": [
+        "Art.18.- Les administrations fiscale et douanière sont tenues de développer les outils nécessaires à la mise en place de l'approche de contrôle axée sur les risques, notamment :",
+        "• les plateformes de collaboration, de partage d'expériences et d'échanges d'informations au niveau national et international ;",
+        "• le processus de collecte et d'organisation d'informations nécessaires à l'analyse de risques se fait au moyen d'un logiciel automatisé servant d'outil de stockage et de traitement des informations valables ou collectées."
+      ],
+      "mots_cles": [
+        "outils",
+        "plateformes collaboration",
+        "échanges informations",
+        "logiciel automatisé",
+        "stockage traitement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Modalités de contrôle",
+      "texte": [
+        "Art.19.- Les modalités de contrôle selon l'approche fondée sur les risques en application du présent décret, sont fixées par des textes spécifiques."
+      ],
+      "mots_cles": [
+        "modalités contrôle",
+        "textes spécifiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Date d'application et mesures transitoires",
+      "texte": [
+        "Art.20.- Les dispositions du présent décret sont applicables au 1er janvier 2025.",
+        "Le Ministre chargé des finances prend des mesures transitoires devant assurer le basculement graduel des contrôles fiscaux et douaniers vers une approche fondée sur les risques, notamment, par :",
+        "• la mise en place d'un comité d'évaluation des risques pour chaque administration ;",
+        "• la fixation des méthodes d'identification, d'analyse, d'évaluation et de hiérarchisation des risques ;",
+        "• la constitution de la documentation et la mise en place des outils nécessaires."
+      ],
+      "mots_cles": [
+        "application 1er janvier 2025",
+        "mesures transitoires",
+        "basculement graduel",
+        "comité évaluation risques",
+        "documentation outils"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "Art.21.- Le présent décret, qui abroge toutes dispositions antérieures contraires, sera enregistré et publié au journal officiel de la République du Congo."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "publication JO"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "document": "Impôt forfaitaire sur les pylônes des sociétés de télécommunication",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-PYLONE",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.5. Impôt forfaitaire sur les pylônes des sociétés de télécommunication",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de l'impôt forfaitaire sur les pylônes",
+      "texte": [
+        "Art.11.- Il est institué, en République du Congo, un impôt forfaitaire annuel sur les pylônes des sociétés de télécommunication."
+      ],
+      "mots_cles": [
+        "impôt forfaitaire",
+        "pylônes",
+        "télécommunication",
+        "annuel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Champ d'application",
+      "texte": [
+        "A. Champ d'application",
+        "1) L'impôt sur les pylônes des sociétés de télécommunication est perçu au profit des collectivités locales.",
+        "2) Sont soumis à cet impôt, les pylônes de télécommunication supportant les installations ou extension des réseaux téléphoniques."
+      ],
+      "mots_cles": [
+        "champ application",
+        "collectivités locales",
+        "pylônes télécommunication",
+        "réseaux téléphoniques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Personnes imposables",
+      "texte": [
+        "B. Personnes imposables",
+        "3) L'impôt sur les pylônes des sociétés de télécommunication est à la charge des entreprises de télécommunication."
+      ],
+      "mots_cles": [
+        "personnes imposables",
+        "entreprises télécommunication"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exemptions",
+      "texte": [
+        "C. Exemptions",
+        "4) Sont exemptées de cet impôt, les petites antennes de télécommunication à usage domestique."
+      ],
+      "mots_cles": [
+        "exemptions",
+        "petites antennes",
+        "usage domestique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Lieu d'imposition",
+      "texte": [
+        "D. Lieu d'imposition",
+        "5) Tout pylône de télécommunication est imposé dans la commune ou le département où il est situé."
+      ],
+      "mots_cles": [
+        "lieu imposition",
+        "commune",
+        "département",
+        "localisation pylône"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6 (L.F. 2026)",
+      "titre": "Montant de l'imposition",
+      "texte": [
+        "E. Montant de l'imposition",
+        "(L.F. 2026 - modifié) 6) Le montant de l'impôt forfaitaire est fixé à :",
+        "• 1 000 000 FCFA par pylône implanté dans les grandes agglomérations de Pointe-Noire, Brazzaville, Dolisie, Madingou, Nkayi, Oyo, Owando, Ouesso ;",
+        "• 500 000 FCFA par pylône implanté dans les autres localités (zones rurales et secondaires).",
+        "Il est constaté, liquidé et émis par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "montant impôt",
+        "1 000 000 FCFA",
+        "500 000 FCFA",
+        "par pylône",
+        "grandes agglomérations",
+        "Pointe-Noire",
+        "Brazzaville",
+        "Dolisie",
+        "Madingou",
+        "Nkayi",
+        "Oyo",
+        "Owando",
+        "Ouesso",
+        "zones rurales",
+        "zones secondaires",
+        "administration fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Recouvrement de l'impôt",
+      "texte": [
+        "F. Recouvrement de l'impôt",
+        "7) (L.F.2024) L'impôt forfaitaire sur les pylônes des sociétés de télécommunications est recouvré par déclaration et paiement spontanés des contribuables auprès du Receveur de la collectivité locale où le pylône est situé au plus tard le 31 mars de chaque année."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "déclaration spontanée",
+        "paiement spontané",
+        "Receveur collectivité locale",
+        "31 mars"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Sanctions",
+      "texte": [
+        "G. Sanctions",
+        "8) Le défaut de déclaration ou le paiement tardif est sanctionné par une pénalité de 50 %."
+      ],
+      "mots_cles": [
+        "sanctions",
+        "défaut déclaration",
+        "paiement tardif",
+        "pénalité 50%"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Contentieux de l'imposition",
+      "texte": [
+        "H. Contentieux de l'imposition",
+        "9) Le contentieux relatif à l'assiette et au recouvrement de l'impôt est régi par le CGI."
+      ],
+      "mots_cles": [
+        "contentieux",
+        "assiette",
+        "recouvrement",
+        "CGI"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

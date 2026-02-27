@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 8,
+    "chapitre_titre": "Déclaration, paiement et recouvrement",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 35",
+      "titre": "Déclaration et paiement de la TVA",
+      "texte": [
+        "Art.35.- 1) Tout redevable de la TVA est tenu de souscrire, auprès de sa résidence fiscale, une déclaration conforme au modèle prescrit par l'administration faisant apparaître la taxe collectée et la taxe déductible sur les opérations du mois précédent.",
+        "2) La taxe exigible est payée directement et spontanément chaque mois.",
+        "3) L'administration fiscale est chargée du recouvrement et du contrôle de la TVA. La déclaration des opérations du mois donné doit être déposée au plus tard le 20 du mois suivant, en double exemplaire, accompagné du paiement de la TVA qui est ainsi reversée spontanément.",
+        "4) La déclaration qui concerne les opérations du mois précédent doit être souscrite, même si aucune affaire n'a été réalisée au cours du mois concerné et est, dans ce cas, revêtue de la mention « NEANT ».",
+        "5) Les exportateurs sont tenus d'annexer à leur déclaration mensuelle les références douanières des exportations effectuées ainsi que celles du rapatriement des fonds sur les ventes à l'exportation dont le remboursement est demandé.",
+        "6) Les exportateurs assujettis à la TVA qui réalisent plus de 80 % de leur vente à l'étranger sont autorisés à retenir la TVA qui leur est facturée sur l'acquisition des biens et services ouvrant droit à déduction."
+      ],
+      "mots_cles": [
+        "déclaration TVA",
+        "résidence fiscale",
+        "taxe collectée",
+        "taxe déductible",
+        "paiement spontané mensuel",
+        "recouvrement contrôle",
+        "délai 20 du mois suivant",
+        "double exemplaire",
+        "déclaration NEANT",
+        "exportateurs",
+        "références douanières",
+        "rapatriement fonds",
+        "exportateurs 80%",
+        "retenue TVA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35 bis (L.F. 2026)",
+      "titre": "Obligations des comptables publics en matière de TVA",
+      "texte": [
+        "(L.F. 2026 - nouveau) Les comptables publics sont tenus de prélever le montant de la TVA qui leur est facturé et de le reverser immédiatement dans les conditions fixées à l'article 35.",
+        "Ils sont également tenus de transmettre mensuellement à l'administration fiscale l'état détaillé des sommes versées à leurs fournisseurs et délivrer au fournisseur redevable de la TVA une attestation justifiant le montant de la retenue à la source, en vue de faire valoir son droit à déduction.",
+        "L'inobservation de ces obligations met à la charge des comptables publics concernés le paiement des impôts et pénalités dont leurs fournisseurs sont les débiteurs réels."
+      ],
+      "mots_cles": [
+        "comptables publics",
+        "prélèvement TVA",
+        "reversement immédiat",
+        "article 35",
+        "état détaillé mensuel",
+        "fournisseurs",
+        "attestation retenue source",
+        "droit à déduction",
+        "inobservation obligations",
+        "pénalités",
+        "débiteurs réels"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Déclaration régime réel",
+      "texte": [
+        "Art.36.- Les redevables soumis au régime réel d'imposition sont tenus de déposer mensuellement leur déclaration de recettes réalisée indiquant le montant total des opérations réalisées et le détail des opérations taxables."
+      ],
+      "mots_cles": [
+        "régime réel",
+        "déclaration mensuelle",
+        "recettes",
+        "opérations réalisées",
+        "opérations taxables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "TVA à l'importation",
+      "texte": [
+        "Art.37.- 1) La TVA perçue à l'importation est liquidée par l'Administration des douanes et des droits indirects et son recouvrement est assuré, soit par l'Administration Douanière, soit le cas échéant, par les comptables du Trésor.",
+        "2) La TVA à l'importation doit être obligatoirement déclarée et versée avant l'enlèvement de la marchandise.",
+        "Toutefois, la TVA à l'importation n'est pas exigible au vu des déclarations établies dans le cadre des régimes douaniers suspensifs ou sous le régime de l'enlèvement direct.",
+        "L'administration des douanes est tenue de transmettre systématiquement à l'administration fiscale, les listes des assujettis à la TVA bénéficiaires des crédits d'enlèvement.",
+        "Pour autoriser la déduction de la TVA, doivent être fournis pour chaque opération :",
+        "• une déclaration en douanes mentionnant le NIU de l'assujetti ;",
+        "• une quittance délivrée au nom de l'assujetti par les services de recouvrement donnant le montant de la TVA acquittée.",
+        "Par dérogation aux dispositions qui précèdent, les entreprises assujetties qui réalisent des investissements productifs pour des montants supérieurs à 100.000.000 FCFA peuvent différer le paiement de la TVA à l'importation à la date du dépôt de la déclaration mensuelle du mois suivant celui de l'importation.",
+        "La TVA dont le paiement est reporté ne peut concerner que les biens d'investissements prévus dans le cadre d'un plan établi par l'assujetti et visé par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "TVA importation",
+        "administration douanes",
+        "droits indirects",
+        "comptables Trésor",
+        "enlèvement marchandise",
+        "régimes douaniers suspensifs",
+        "enlèvement direct",
+        "crédits enlèvement",
+        "déclaration douanes NIU",
+        "quittance",
+        "investissements productifs",
+        "100 000 000 FCFA",
+        "report paiement TVA",
+        "plan investissement visé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Responsabilité des receveurs et AMR",
+      "texte": [
+        "Art.38.- Les receveurs sont responsables du recouvrement des impositions dont ils ont la charge.",
+        "Un avis de mise en recouvrement est établi par l'ordonnateur secondaire, responsable de la résidence fiscale du redevable, lorsque les sommes dues ne sont pas acquittées au terme du délai prescrit par la loi ou à l'issue d'un contrôle fiscal."
+      ],
+      "mots_cles": [
+        "receveurs",
+        "responsabilité recouvrement",
+        "impositions",
+        "avis mise en recouvrement",
+        "AMR",
+        "ordonnateur secondaire",
+        "résidence fiscale",
+        "délai prescrit",
+        "contrôle fiscal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38-A",
+      "titre": "Centimes additionnels à la TVA",
+      "texte": [
+        "Art.38-A.- 1) Les centimes additionnels sont applicables aux opérations soumises à la TVA.",
+        "2) Le fait générateur et l'exigibilité des centimes additionnels sont définis comme en matière de TVA.",
+        "3) La base d'imposition aux centimes additionnels est le montant de la TVA collectée.",
+        "4) Le taux applicable aux centimes additionnels est de 5 %.",
+        "5) Les centimes additionnels ci-dessus définis sont perçus et collectés par l'administration fiscale au profit des collectivités locales.",
+        "6) Les centimes additionnels à la TVA ne donnent pas droit à déduction."
+      ],
+      "mots_cles": [
+        "centimes additionnels",
+        "5% TVA collectée",
+        "fait générateur",
+        "exigibilité",
+        "collectivités locales",
+        "non déductibles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Crédit de TVA et remboursement",
+      "texte": [
+        "Art.39.- 1) Lorsque le montant de la taxe déductible au titre d'un mois est supérieur à celui de la taxe exigible, l'excédent constitue un crédit de TVA imputable sur la taxe exigible pour la période suivante.",
+        "Les crédits de TVA générés par le mécanisme des déductions sont imputables sur la TVA due pour les périodes ultérieures jusqu'à épuisement, sans limitation de délai.",
+        "2) Les crédits de TVA dûment justifiés font l'objet de remboursement, sous certaines conditions prévues ci-dessous, aux assujettis personnes morales dans un délai qui ne peut être supérieur à trois mois à compter du dépôt de la demande de remboursement.",
+        "3) Les demandes de remboursement effectuées par les assujettis ci-dessous sont traitées dans un délai qui ne peut dépasser deux mois :",
+        "• aux exportateurs qui réalisent plus de 80 % de leur chiffre d'affaires sur les ventes à l'étranger ;",
+        "• aux entreprises en situation de crédits structurels du fait de retenues à la source ;",
+        "• aux missions diplomatiques ou consulaires, sous réserve de réciprocité ;",
+        "• aux entreprises en cessation d'activités.",
+        "4) Les demandes de remboursement ne sont recevables que si le contribuable est à jour de toutes ses obligations fiscales.",
+        "5) Pour les exportateurs, les demandes de remboursement doivent en outre être accompagnées des attestations d'exportation et des références du rapatriement des fonds correspondants.",
+        "Pour les contribuables exportateurs ne remplissant pas les critères visés au tiret b) du paragraphe 2 de l'article 34, le montant du crédit de TVA à rembourser est limité au montant de TVA calculé effectivement par application du taux en vigueur au montant des exportations réalisées au cours du mois.",
+        "6) Le crédit de la TVA dont le remboursement a été demandé ne peut donner lieu à imputation dans la déclaration du mois suivant. Ce crédit est automatiquement annulé, notamment lorsque le remboursement a été rejeté par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "crédit TVA",
+        "taxe déductible supérieure",
+        "excédent",
+        "imputation",
+        "périodes ultérieures",
+        "sans limitation délai",
+        "remboursement",
+        "personnes morales",
+        "délai 3 mois",
+        "demande remboursement",
+        "délai 2 mois",
+        "exportateurs 80%",
+        "crédits structurels",
+        "retenues source",
+        "missions diplomatiques",
+        "cessation activités",
+        "obligations fiscales à jour",
+        "attestations exportation",
+        "rapatriement fonds",
+        "annulation crédit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Compte d'attente BEAC pour remboursement crédit TVA",
+      "texte": [
+        "Art.40.- Par dérogation au principe du compte unique du Trésor, il est créé, à la BEAC, un compte d'attente spécifique pour les recettes provisoires de TVA aux fins de remboursement de Crédit de TVA.",
+        "Il est affecté à ce compte d'attente spécifique 20 % des recettes de TVA perçues en douane sur les importations.",
+        "Si le solde annuel de ce compte est positif, les recettes de TVA sont considérées comme définitives et ce solde est reversé au Trésor Public. Les modalités de fonctionnement du compte d'attente font l'objet d'une convention entre le Ministre en charge des finances et la BEAC."
+      ],
+      "mots_cles": [
+        "compte attente BEAC",
+        "dérogation compte unique Trésor",
+        "recettes provisoires TVA",
+        "remboursement crédit TVA",
+        "20% recettes TVA douane",
+        "solde annuel positif",
+        "Trésor Public",
+        "convention Ministre finances BEAC"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

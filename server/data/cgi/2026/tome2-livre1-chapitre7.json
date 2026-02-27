@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 7,
+    "chapitre_titre": "Insuffisances et dissimulations",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "T2L1C7-ST1",
+      "titre": "Insuffisances et expertise",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 117",
+      "titre": "Expertise en cas d'insuffisance de prix ou d'évaluation",
+      "texte": [
+        "Si le prix ou l'évaluation ayant servi de base à la perception du droit proportionnel ou progressif paraît inférieur à la valeur vénale réelle des biens transmis ou énoncés, l'administration peut requérir une expertise à défaut d'accord amiable pour tous les actes ou déclarations constatant la transmission ou l'énonciation :",
+        "• 1° de la propriété, de l'usufruit ou de la jouissance de biens immeubles, de fonds de commerce, y compris les marchandises neuves qui en dépendent, de clientèle, de navires ou de bateaux ;",
+        "• 2° d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble."
+      ],
+      "mots_cles": [
+        "expertise",
+        "insuffisance",
+        "prix",
+        "évaluation",
+        "valeur vénale",
+        "biens immeubles",
+        "fonds de commerce",
+        "droit au bail"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 118",
+      "titre": "Demande en expertise en cas de désaccord sur l'estimation",
+      "texte": [
+        "Lorsque l'accord sur l'estimation ne s'est pas fait à l'amiable, la demande en expertise est faite par simple requête au Tribunal Populaire de Village, Centre ou de Quartier dans le ressort duquel les biens sont situés ou immatriculés s'il s'agit de navires ou de bateaux.",
+        "Cette requête est présentée dans les trois ans, à compter du jour de l'enregistrement de l'acte ou de la déclaration. Le délai est d'un an en matière de vente de fonds de commerce."
+      ],
+      "mots_cles": [
+        "expertise",
+        "désaccord",
+        "estimation",
+        "tribunal",
+        "trois ans",
+        "un an",
+        "fonds de commerce"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 119",
+      "titre": "Expertise portée au Tribunal en cas de pluralité de ressorts",
+      "texte": [
+        "Lorsqu'il y a lieu de requérir l'expertise d'un immeuble ou d'un corps de domaine ne formant qu'une seule exploitation situés dans le ressort de plusieurs tribunaux, la demande en est portée au Tribunal Populaire de District ou d'Arrondissement dans le ressort duquel se trouve le siège de l'exploitation ou, à défaut de siège, la partie des biens présentant le plus grand revenu d'après la matrice du rôle."
+      ],
+      "mots_cles": [
+        "expertise",
+        "pluralité de ressorts",
+        "tribunal",
+        "exploitation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 120",
+      "titre": "Ordonnance et déroulement de l'expertise",
+      "texte": [
+        "1) L'expertise est ordonnée dans le mois de la demande et il y est procédé par un seul expert, qui est nommé par le Tribunal statuant en Chambre du Conseil. Toutefois, si le contribuable ou l'administration le requiert, l'expertise pourra être confiée à trois experts.",
+        "2) Si l'administration ou les parties n'acceptent pas les conclusions de l'expert, il peut être procédé à une contre-expertise. La demande en est faite par la partie la plus diligente et par simple requête au Tribunal Civil notifiée à la partie adverse, sous peine de déchéance dans le mois qui suit la notification qui sera faite au greffe, par lettre recommandée, du dépôt du rapport d'expertise au Greffe du Tribunal.",
+        "3) La contre-expertise est ordonnée dans les mêmes conditions et suivant les mêmes formes que la première expertise ; toutefois, si l'une des parties le requiert expressément, cette contre-expertise sera confiée à trois experts.",
+        "4) Le procès-verbal d'expertise ou de contre-expertise est rapporté au plus tard dans les trois mois qui suivent la remise à l'expert de la décision de justice.",
+        "5) Il sera statué sur l'expertise ou la contre-expertise par le Tribunal jugeant en matière sommaire."
+      ],
+      "mots_cles": [
+        "expertise",
+        "expert",
+        "tribunal",
+        "contre-expertise",
+        "trois mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 121",
+      "titre": "Conséquences de l'insuffisance reconnue par l'expertise",
+      "texte": [
+        "Si l'insuffisance reconnue amiablement ou révélée par l'expertise est égale ou supérieure au huitième du prix exprimé ou la valeur déclarée, les parties acquitteront solidairement, savoir :",
+        "• 1° le droit simple sur le complément d'estimation ;",
+        "• 2° un demi-droit en sus, si l'insuffisance est reconnue amiablement avant la signification de la requête en expertise ; un droit en sus, si l'insuffisance est reconnue après la signification de la requête en expertise mais avant le dépôt, au Greffe du Tribunal Populaire de Village-Centre ou de Quartier, du rapport de l'expert ; et un double droit en sus dans le cas contraire ;",
+        "• 3° les frais de l'expertise.",
+        "Aucune pénalité n'est encourue et les frais de l'expertise restent à la charge de l'administration, lorsque l'insuffisance est inférieure au huitième du prix exprimé ou de la valeur déclarée."
+      ],
+      "mots_cles": [
+        "insuffisance",
+        "expertise",
+        "huitième",
+        "droit simple",
+        "demi-droit en sus",
+        "double droit en sus"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 122",
+      "titre": "Contrôle de l'administration dans le délai de trois ans",
+      "texte": [
+        "Concurremment, le cas échéant, avec l'expertise et dans un délai de trois ans à compter de l'enregistrement de l'acte ou de la déclaration, l'administration est autorisée à établir, par tous les moyens de preuves compatibles avec la procédure spéciale en matière d'enregistrement, l'insuffisance des prix exprimés et des évaluations fournies dans les actes ou déclarations passibles du droit proportionnel ou progressif.",
+        "Indépendamment du complément de droits simples exigibles, la peine est d'un droit en sus pour les insuffisances ainsi établies, mais elle ne s'applique que lorsque l'insuffisance est égale ou supérieure à un huitième du prix exprimé ou de la valeur déclarée.",
+        "Les tuteurs et curateurs supporteront personnellement la peine lorsqu'ils ont fait des estimations d'une insuffisance égale ou supérieure à la quotité fixée par le texte."
+      ],
+      "mots_cles": [
+        "expertise",
+        "trois ans",
+        "administration",
+        "insuffisance",
+        "droit en sus",
+        "huitième"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 123",
+      "titre": "Insuffisance constatée dans le prix des mutations à titre onéreux de biens meubles",
+      "texte": [
+        "Les peines prévues par l'article 122 sont applicables à l'insuffisance constatée dans le prix des mutations à titre onéreux de biens meubles autres que celles pour lesquelles l'expertise peut être requise."
+      ],
+      "mots_cles": [
+        "article 122",
+        "insuffisance",
+        "mutations à titre onéreux",
+        "biens meubles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 124",
+      "titre": "Biens dont la valeur est déterminée conformément à l'article 38",
+      "texte": [
+        "Pour les biens dont la valeur doit être déterminée conformément à l'article 38, la peine du droit en sus ne s'applique que si l'insuffisance dans l'estimation des biens déclarés résulte d'un acte antérieur à la déclaration. Si, au contraire, l'acte est postérieur à cette déclaration, il ne sera perçu qu'un droit simple sur la différence existant entre l'estimation des parties et l'évaluation contenue dans les actes."
+      ],
+      "mots_cles": [
+        "article 38",
+        "droit en sus",
+        "insuffisance",
+        "acte antérieur",
+        "droit simple"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C7-ST2",
+      "titre": "Dissimulations",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 125",
+      "titre": "Nullité des conventions ayant pour but de dissimuler le prix",
+      "texte": [
+        "1) Est nulle et de nul effet toute convention ayant pour but de dissimuler partie du prix de vente d'immeubles ou d'une cession de fonds de commerce ou de clientèle et de toute ou partie de la soulte d'un échange ou d'un partage comprenant des biens immeubles, un fonds de commerce ou une clientèle.",
+        "2) La dissimulation du prix peut être établie conformément à l'article 127 ci-après.",
+        "3) Toute dissimulation dans le prix de vente d'immeubles ou d'une cession de fonds de commerce ou de clientèle et dans la soulte d'un échange ou d'un partage est punie d'une amende égale à la moitié de la somme dissimulée. Cette amende est payée solidairement par les parties, sauf à la répartir entre elles par égale part.",
+        "4) Le notaire, qui reçoit un acte de vente, d'échange ou de partage, est tenu de donner lecture aux parties du présent article et de l'article 144 ci-après, à peine d'une amende de 100.000 FCFA.",
+        "Il mentionnera cette lecture dans l'acte et y affirmera, sous la même sanction, qu'à sa connaissance cet acte n'est modifié ou contredit par aucune contre-lettre contenant une augmentation du prix ou de la soulte."
+      ],
+      "mots_cles": [
+        "nullité",
+        "dissimulation",
+        "prix de vente",
+        "fonds de commerce",
+        "soulte",
+        "amende",
+        "100.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 126",
+      "titre": "Application du quatrième alinéa de l'article 125",
+      "texte": [
+        "La disposition du quatrième alinéa de l'article précédent est applicable aux adjudications publiques en tout ce qui est relative à la lecture aux parties des troisième et quatrième alinéas de cet article et de l'article 144 ci-après et à la mention de cette lecture dans les actes."
+      ],
+      "mots_cles": [
+        "article 125",
+        "adjudications publiques",
+        "lecture"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 127",
+      "titre": "Modes de preuve des dissimulations",
+      "texte": [
+        "Les dissimulations visées au paragraphe 1 de l'article 125 peuvent être établies par tous les modes de preuve admis en matière d'enregistrement."
+      ],
+      "mots_cles": [
+        "dissimulations",
+        "article 125",
+        "modes de preuve"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 128",
+      "titre": "Application des articles 125 et 127 aux contrats de cession de bail",
+      "texte": [
+        "Les dispositions des articles 125 et 127 sont applicables aux contrats de cession d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble."
+      ],
+      "mots_cles": [
+        "articles 125 et 127",
+        "cession",
+        "droit au bail"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 129",
+      "titre": "Constatation de l'existence d'une contre-lettre",
+      "texte": [
+        "Lorsque sera constatée l'existence d'une contre-lettre sous signature privée, autre que celles relatives aux dissimulations visées aux articles 125 et 128, qui aura pour objet une augmentation du prix stipulé dans un acte public ou dans un acte sous signature privée, précédemment enregistré, il y aura lieu d'exiger, à titre d'amende, une somme triple du droit qui aurait eu lieu sur les sommes et valeurs ainsi stipulées."
+      ],
+      "mots_cles": [
+        "contre-lettre",
+        "dissimulations",
+        "augmentation du prix",
+        "amende",
+        "triple du droit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 130",
+      "titre": "Reconnaissance amiable ou judiciaire du caractère de dissimulation",
+      "texte": [
+        "Lorsqu'il est amiablement reconnu ou judiciairement établi que le véritable caractère des stipulations d'un contrat ou d'une convention a été dissimulé sous l'apparence de stipulations donnant ouverture à des droits moins élevés, il est dû un double droit en sus. Cette pénalité est due solidairement par toutes les parties contractantes."
+      ],
+      "mots_cles": [
+        "dissimulation",
+        "stipulations",
+        "double droit en sus",
+        "solidairement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 131",
+      "titre": "Droit de préemption de l'administration de l'enregistrement",
+      "texte": [
+        "Indépendamment de l'action en expertise et pendant un délai de trois mois à compter du jour où il ouvre cette action, l'administration de l'enregistrement peut exercer, au profit du Trésor, un droit de préemption sur les immeubles, droits mobiliers, fonds de commerce ou clientèles, dont elle estime le prix de vente insuffisant, en offrant de verser aux ayants droit le montant de ce prix majoré d'un dixième.",
+        "Les parties peuvent toutefois s'opposer à l'exercice du droit de préemption en acquittant, dans le délai d'un mois, sur l'insuffisance relevée par l'administration, les droits prévus à l'article 121."
+      ],
+      "mots_cles": [
+        "expertise",
+        "trois mois",
+        "droit de préemption",
+        "Trésor",
+        "immeubles",
+        "fonds de commerce"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

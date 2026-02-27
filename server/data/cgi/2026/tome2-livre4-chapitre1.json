@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 4,
+    "chapitre": 1,
+    "chapitre_titre": "Dispositions générales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe immobilière sur les loyers",
+      "texte": [
+        "Il est institué une taxe sur les loyers des propriétés bâties, égale à un douzième de loyers à échoir pendant l'année. La taxe sur les loyers s'applique également sur les propriétés non bâties à usage professionnel."
+      ],
+      "mots_cles": [
+        "taxe",
+        "loyers",
+        "propriétés bâties",
+        "un douzième",
+        "propriétés non bâties",
+        "usage professionnel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Débiteurs de la taxe immobilière",
+      "texte": [
+        "La taxe est due par :",
+        "le propriétaire ou les usufruitiers ;",
+        "les locataires, en cas de sous-location, qu'il s'agisse des personnes physiques ou morales à l'exception des ambassades étrangères."
+      ],
+      "mots_cles": [
+        "taxe",
+        "propriétaire",
+        "usufruitiers",
+        "locataires",
+        "sous-location",
+        "personnes physiques",
+        "personnes morales",
+        "ambassades étrangères"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Liquidation et recouvrement de la taxe immobilière",
+      "texte": [
+        "La liquidation, le recouvrement de la taxe et le contentieux sont assurés comme en matière de droit d'enregistrement."
+      ],
+      "mots_cles": [
+        "liquidation",
+        "recouvrement",
+        "taxe",
+        "contentieux",
+        "droit d'enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Affectation du produit de la taxe immobilière",
+      "texte": [
+        "(L.F.2025) La taxe immobilière sur les loyers est affectée à 50 % au budget de l'État et à 50 % au budget des collectivités locales pour le financement de l'enlèvement des ordures ménagères. La part des collectivités locales est directement payée auprès du receveur départemental ou municipal."
+      ],
+      "mots_cles": [
+        "L.F.2025",
+        "taxe immobilière",
+        "loyers",
+        "50 %",
+        "budget de l'État",
+        "collectivités locales",
+        "ordures ménagères",
+        "receveur départemental",
+        "receveur municipal"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

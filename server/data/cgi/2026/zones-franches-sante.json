@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "document": "Zones franches de santé",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC2-SANTE",
+    "partie": null,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "2.4. Zones franches de santé",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 19",
+      "titre": "Régime fiscal des zones franches de santé",
+      "texte": [
+        "Art.19.- Il est institué, en République du Congo, un régime fiscal des zones franches de santé établi ainsi qu'il suit :",
+        "a) Impôts directs d'État",
+        "- Impôt sur les sociétés et TSS : exonération totale",
+        "- IRPP (pour les sociétés de personnes) : exonération totale",
+        "- Taxe unique sur les salaires : réduite à 2,5 %",
+        "- IRVM sur les dividendes : taux réduit à 5 %",
+        "- IRPP des médecins et du personnel : réduit à 10 % pour les médecins et le personnel qualifié étrangers ou de nationalité congolaise",
+        "b) Impôts directs locaux",
+        "- CFPB, CFPNB et taxe d'occupation des locaux : exonération totale",
+        "- Patente : exonération pendant les 10 premières années ; réduction de 50 % par rapport au droit commun à partir de la 11e année",
+        "c) Impôts indirects",
+        "- TVA : exonération de la TVA à l'importation ; application du taux 0 % sur les consommations intérieures",
+        "d) Droits d'enregistrement",
+        "- Droits d'enregistrement : exonérés pour la création d'entreprises ; droit fixe sur tous les actes soumis à l'enregistrement"
+      ],
+      "mots_cles": [
+        "zones franches santé",
+        "exonération IS",
+        "exonération TSS",
+        "TUS 2,5%",
+        "IRVM 5%",
+        "IRPP médecins 10%",
+        "exonération patente 10 ans",
+        "TVA 0%",
+        "exonération enregistrement"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

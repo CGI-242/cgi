@@ -1,0 +1,1504 @@
+{
+  "meta": {
+    "type": "rag_bundle",
+    "version": "2.0",
+    "document": "Code Général des Impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 2,
+    "chapitre_titre": "Impôt sur les bénéfices d'affaires (IBA)",
+    "impot": "IBA",
+    "base_juridique": "Directive n°0119/25-UEAC-177-CM-42 du 09 janvier 2025",
+    "last_updated": "2026-01-08"
+  },
+  "index": {
+    "sections": [
+      {
+        "section": 1,
+        "titre": "Champ d'application",
+        "articles": [
+          "Art. 93",
+          "Art. 93A",
+          "Art. 93B",
+          "Art. 93C"
+        ],
+        "themes": [
+          "principe IBA",
+          "revenus imposables",
+          "personnes imposables",
+          "territorialité",
+          "résidence fiscale"
+        ]
+      },
+      {
+        "section": 2,
+        "titre": "Bénéfice imposable",
+        "articles": [
+          "Art. 94",
+          "Art. 94A",
+          "Art. 94B"
+        ],
+        "themes": [
+          "détermination bénéfice",
+          "charges non déductibles",
+          "règles comptables",
+          "SYSCOHADA"
+        ]
+      },
+      {
+        "section": 3,
+        "titre": "Modalités d'imposition",
+        "articles": [
+          "Art. 95",
+          "Art. 95A",
+          "Art. 95B"
+        ],
+        "themes": [
+          "taux IBA",
+          "30%",
+          "minimum de perception",
+          "1,5%",
+          "décès exploitant",
+          "sociétés transparentes"
+        ]
+      },
+      {
+        "section": 4,
+        "titre": "Régime des petites et très petites entreprises",
+        "articles": [
+          "Art. 96",
+          "Art. 96A",
+          "Art. 97",
+          "Art. 98",
+          "Art. 99",
+          "Art. 100",
+          "Art. 101",
+          "Art. 102",
+          "Art. 103",
+          "Art. 104"
+        ],
+        "themes": [
+          "régime forfait",
+          "SMT",
+          "obligations comptables",
+          "régime réel",
+          "télédéclaration",
+          "OHADA"
+        ]
+      },
+      {
+        "section": 5,
+        "titre": "Impôt sur le revenu des capitaux mobiliers (IRCM)",
+        "articles": [
+          "Art. 105",
+          "Art. 105A",
+          "Art. 105B",
+          "Art. 105C",
+          "Art. 105D",
+          "Art. 105E",
+          "Art. 106",
+          "Art. 107",
+          "Art. 108",
+          "Art. 109",
+          "Art. 110",
+          "Art. 110A"
+        ],
+        "themes": [
+          "IRCM",
+          "dividendes",
+          "intérêts",
+          "obligations",
+          "plus-values mobilières",
+          "15%",
+          "35%"
+        ]
+      },
+      {
+        "section": 6,
+        "titre": "Impôt sur les revenus fonciers (IRF)",
+        "articles": [
+          "Art. 111",
+          "Art. 111A",
+          "Art. 111B",
+          "Art. 111C",
+          "Art. 111D",
+          "Art. 111E",
+          "Art. 112",
+          "Art. 112A",
+          "Art. 112B",
+          "Art. 113",
+          "Art. 113A"
+        ],
+        "themes": [
+          "IRF",
+          "revenus fonciers",
+          "loyers",
+          "plus-values immobilières",
+          "9%",
+          "15%",
+          "retenue source"
+        ]
+      },
+      {
+        "section": 7,
+        "titre": "Impôt sur les traitements et salaires (ITS)",
+        "articles": [
+          "Art. 114",
+          "Art. 114A",
+          "Art. 114B",
+          "Art. 114C",
+          "Art. 114D",
+          "Art. 114E",
+          "Art. 115",
+          "Art. 116",
+          "Art. 116A"
+        ],
+        "themes": [
+          "ITS",
+          "salaires",
+          "pensions",
+          "avantages en nature",
+          "barème progressif",
+          "retenue source",
+          "183 jours"
+        ]
+      }
+    ],
+    "synonymes_concepts": {
+      "IBA": [
+        "impôt sur les bénéfices d'affaires",
+        "BIC",
+        "BNC",
+        "bénéfices industriels et commerciaux"
+      ],
+      "IRCM": [
+        "impôt sur le revenu des capitaux mobiliers",
+        "dividendes",
+        "revenus mobiliers"
+      ],
+      "IRF": [
+        "impôt sur les revenus fonciers",
+        "revenus locatifs",
+        "loyers"
+      ],
+      "ITS": [
+        "impôt sur les traitements et salaires",
+        "salaires",
+        "IRPP salarial"
+      ],
+      "régime forfait": [
+        "forfait",
+        "petites entreprises",
+        "micro-entreprises",
+        "SMT"
+      ],
+      "régime réel": [
+        "bénéfice réel",
+        "comptabilité complète"
+      ],
+      "résidence fiscale": [
+        "domicile fiscal",
+        "183 jours",
+        "foyer d'habitation"
+      ],
+      "avantages en nature": [
+        "logement",
+        "voiture",
+        "nourriture",
+        "domesticité"
+      ],
+      "plus-values": [
+        "cession",
+        "mutation",
+        "gains en capital"
+      ],
+      "retenue à la source": [
+        "RAS",
+        "prélèvement",
+        "withholding tax"
+      ],
+      "société transparente": [
+        "société de personnes",
+        "SNC",
+        "SCS"
+      ]
+    },
+    "valeurs_cles": {
+      "taux": {
+        "taux_iba": "30%",
+        "minimum_perception_iba": "1,5%",
+        "taux_ircm": "15%",
+        "taux_ircm_occulte": "35%",
+        "taux_irf_loyers": "9%",
+        "taux_irf_plus_values": "15%",
+        "frais_representation": "50%"
+      },
+      "bareme_its": {
+        "tranche_1": "1 200 FCFA (0 - 615 000)",
+        "tranche_2": "10% (615 001 - 1 500 000)",
+        "tranche_3": "15% (1 500 001 - 3 500 000)",
+        "tranche_4": "20% (3 500 001 - 5 000 000)",
+        "tranche_5": "30% (> 5 000 000)"
+      },
+      "avantages_nature_its": {
+        "logement": "20% salaire plafonné SS",
+        "domesticité": "7% salaire brut",
+        "gardiennage": "7% salaire brut",
+        "eau": "5% salaire brut",
+        "éclairage": "5% salaire brut",
+        "gaz": "5% salaire brut",
+        "téléphone": "2% salaire brut",
+        "voiture": "3% salaire brut",
+        "nourriture": "20% salaire brut"
+      },
+      "seuils": {
+        "residence_fiscale": "183 jours",
+        "perte_residence": "24 mois absence",
+        "cession_titres_10pct": "10% / 365 jours",
+        "societe_preponderance_immobiliere": "50% actif / 365 jours",
+        "residence_principale": "5 ans",
+        "societe_preponderance_fonciere": "80% CA"
+      },
+      "delais": {
+        "report_deficitaire_iba": "3 exercices",
+        "moins_values_mobilières": "3 ans",
+        "dividendes_exigibilite": "3 mois après décision",
+        "plus_values_cession_declaration": "60 jours",
+        "option_regime_reel": "avant 1er février",
+        "option_duree": "3 ans irrévocable",
+        "retenue_irf": "15 mars",
+        "bail_retenue_irf": "3 mois après jouissance",
+        "forfait_declaration": "15 février"
+      },
+      "sanctions": {
+        "defaut_registres_forfait": "100 000 FCFA",
+        "defaut_declaration_fournisseurs": "500 000 FCFA",
+        "teledeclaration_penalite": "10%"
+      }
+    },
+    "relations_articles": {
+      "renvois_internes": {
+        "Art. 93A": [
+          "Art. 115"
+        ],
+        "Art. 93C": [
+          "Art. 5",
+          "Art. 6"
+        ],
+        "Art. 94": [
+          "Art. 8 et suivants",
+          "Art. 3A"
+        ],
+        "Art. 95B": [
+          "Art. 183"
+        ],
+        "Art. 96": [
+          "Art. 104"
+        ],
+        "Art. 96A": [
+          "Art. 176"
+        ],
+        "Art. 97": [
+          "Art. 400"
+        ],
+        "Art. 107": [
+          "Art. 111"
+        ],
+        "Art. 113": [
+          "Art. 111"
+        ],
+        "Art. 114A": [
+          "Art. 35"
+        ],
+        "Art. 116A": [
+          "Art. 183"
+        ]
+      },
+      "articles_complementaires": {
+        "iba_champ": [
+          "Art. 93",
+          "Art. 93A",
+          "Art. 93B",
+          "Art. 93C"
+        ],
+        "iba_benefice": [
+          "Art. 94",
+          "Art. 94A",
+          "Art. 94B"
+        ],
+        "iba_modalites": [
+          "Art. 95",
+          "Art. 95A",
+          "Art. 95B"
+        ],
+        "regime_forfait": [
+          "Art. 96",
+          "Art. 96A",
+          "Art. 97",
+          "Art. 98",
+          "Art. 99",
+          "Art. 100",
+          "Art. 101"
+        ],
+        "regime_reel": [
+          "Art. 102",
+          "Art. 103",
+          "Art. 104"
+        ],
+        "ircm": [
+          "Art. 105",
+          "Art. 105A",
+          "Art. 105B",
+          "Art. 105C",
+          "Art. 105D",
+          "Art. 105E",
+          "Art. 106",
+          "Art. 107",
+          "Art. 108",
+          "Art. 109",
+          "Art. 110",
+          "Art. 110A"
+        ],
+        "irf": [
+          "Art. 111",
+          "Art. 111A",
+          "Art. 111B",
+          "Art. 111C",
+          "Art. 111D",
+          "Art. 111E",
+          "Art. 112",
+          "Art. 112A",
+          "Art. 112B",
+          "Art. 113",
+          "Art. 113A"
+        ],
+        "its": [
+          "Art. 114",
+          "Art. 114A",
+          "Art. 114B",
+          "Art. 114C",
+          "Art. 114D",
+          "Art. 114E",
+          "Art. 115",
+          "Art. 116",
+          "Art. 116A"
+        ]
+      }
+    },
+    "exclusions_regime_forfait": [
+      "professions réglementées",
+      "boulangers",
+      "entrepreneurs de travaux",
+      "exploitants de quincaillerie",
+      "grossistes",
+      "importateurs"
+    ]
+  },
+  "rag_config": {
+    "chunking_strategy": {
+      "method": "semantic_hierarchical",
+      "description": "Découpage par impôt et sous-thème avec préservation hiérarchique",
+      "parameters": {
+        "primary_split": "article",
+        "secondary_split": "alinea_ou_tiret",
+        "max_chunk_tokens": 800,
+        "min_chunk_tokens": 100,
+        "overlap_tokens": 50,
+        "preserve_structure": true
+      },
+      "regroupements_recommandes": [
+        {
+          "groupe": "iba_champ_application",
+          "articles": [
+            "Art. 93",
+            "Art. 93A",
+            "Art. 93B",
+            "Art. 93C"
+          ],
+          "raison": "Champ d'application et territorialité de l'IBA"
+        },
+        {
+          "groupe": "iba_benefice_imposable",
+          "articles": [
+            "Art. 94",
+            "Art. 94A",
+            "Art. 94B"
+          ],
+          "raison": "Détermination du bénéfice imposable IBA"
+        },
+        {
+          "groupe": "iba_modalites",
+          "articles": [
+            "Art. 95",
+            "Art. 95A",
+            "Art. 95B"
+          ],
+          "raison": "Taux, minimum de perception et cas particuliers"
+        },
+        {
+          "groupe": "regime_forfait",
+          "articles": [
+            "Art. 96",
+            "Art. 96A",
+            "Art. 97",
+            "Art. 98",
+            "Art. 99",
+            "Art. 100",
+            "Art. 101"
+          ],
+          "raison": "Régime forfaitaire complet"
+        },
+        {
+          "groupe": "regime_reel",
+          "articles": [
+            "Art. 102",
+            "Art. 103",
+            "Art. 104"
+          ],
+          "raison": "Régime réel et obligations comptables"
+        },
+        {
+          "groupe": "ircm_champ_revenus",
+          "articles": [
+            "Art. 105",
+            "Art. 105A",
+            "Art. 105B",
+            "Art. 105C",
+            "Art. 105D",
+            "Art. 105E"
+          ],
+          "raison": "Champ et types de revenus IRCM"
+        },
+        {
+          "groupe": "ircm_modalites",
+          "articles": [
+            "Art. 106",
+            "Art. 107",
+            "Art. 108",
+            "Art. 109",
+            "Art. 110",
+            "Art. 110A"
+          ],
+          "raison": "Exonérations, territorialité et taux IRCM"
+        },
+        {
+          "groupe": "irf_champ_revenus",
+          "articles": [
+            "Art. 111",
+            "Art. 111A",
+            "Art. 111B",
+            "Art. 111C",
+            "Art. 111D",
+            "Art. 111E"
+          ],
+          "raison": "Champ et territorialité IRF"
+        },
+        {
+          "groupe": "irf_modalites",
+          "articles": [
+            "Art. 112",
+            "Art. 112A",
+            "Art. 112B",
+            "Art. 113",
+            "Art. 113A"
+          ],
+          "raison": "Base, taux et retenue IRF"
+        },
+        {
+          "groupe": "its_champ_exonerations",
+          "articles": [
+            "Art. 114",
+            "Art. 114A",
+            "Art. 114B",
+            "Art. 114C",
+            "Art. 114D",
+            "Art. 114E"
+          ],
+          "raison": "Champ, exonérations et territorialité ITS"
+        },
+        {
+          "groupe": "its_base_bareme",
+          "articles": [
+            "Art. 115",
+            "Art. 116",
+            "Art. 116A"
+          ],
+          "raison": "Base imposable, avantages en nature et barème ITS"
+        }
+      ]
+    },
+    "metadata_enrichment": {
+      "per_chunk_metadata": {
+        "article_id": "identifiant unique",
+        "titre_article": "titre officiel",
+        "section": "section du chapitre",
+        "impot_concerne": "IBA | IRCM | IRF | ITS",
+        "mots_cles": "liste mots-clés",
+        "valeurs_numeriques": "taux, seuils, délais",
+        "references_croisees": "articles liés",
+        "theme_principal": "thème",
+        "type_disposition": "champ | assiette | taux | exonération | obligation | sanction"
+      }
+    },
+    "embedding_optimization": {
+      "model_recommande": "text-embedding-3-large",
+      "dimensions": 1536,
+      "preprocessing": {
+        "normalisation_juridique": true,
+        "expansion_acronymes": {
+          "IBA": "Impôt sur les Bénéfices d'Affaires",
+          "IRCM": "Impôt sur le Revenu des Capitaux Mobiliers",
+          "IRF": "Impôt sur les Revenus Fonciers",
+          "ITS": "Impôt sur les Traitements et Salaires",
+          "BIC": "Bénéfices Industriels et Commerciaux",
+          "BNC": "Bénéfices Non Commerciaux",
+          "BA": "Bénéfices Agricoles",
+          "IS": "Impôt sur les Sociétés",
+          "TVA": "Taxe sur la Valeur Ajoutée",
+          "SMT": "Système Minimal de Trésorerie",
+          "SYSCOHADA": "Système Comptable OHADA",
+          "OHADA": "Organisation pour l'Harmonisation en Afrique du Droit des Affaires",
+          "CEMAC": "Communauté Économique et Monétaire de l'Afrique Centrale",
+          "BEAC": "Banque des États de l'Afrique Centrale",
+          "CA": "Chiffre d'Affaires",
+          "CAC": "Commissaire Aux Comptes",
+          "SMIG": "Salaire Minimum Interprofessionnel Garanti",
+          "SS": "Sécurité Sociale",
+          "RAS": "Retenue À la Source"
+        },
+        "normalisation_montants": {
+          "FCFA": "francs CFA",
+          "millions": "000.000"
+        }
+      }
+    },
+    "retrieval_config": {
+      "strategie": "hybrid",
+      "parametres": {
+        "semantic_weight": 0.6,
+        "keyword_weight": 0.4,
+        "top_k": 10,
+        "rerank": true,
+        "rerank_model": "cross-encoder"
+      },
+      "filtres_contextuels": {
+        "par_impot": [
+          "IBA",
+          "IRCM",
+          "IRF",
+          "ITS"
+        ],
+        "par_theme": true,
+        "par_type_question": {
+          "taux": [
+            "Art. 95",
+            "Art. 110",
+            "Art. 113",
+            "Art. 116"
+          ],
+          "exonerations": [
+            "Art. 106",
+            "Art. 111C",
+            "Art. 114A",
+            "Art. 114B"
+          ],
+          "territorialite": [
+            "Art. 93B",
+            "Art. 107",
+            "Art. 111D",
+            "Art. 114D"
+          ],
+          "obligations": [
+            "Art. 96A",
+            "Art. 104",
+            "Art. 116A"
+          ],
+          "sanctions": [
+            "Art. 98",
+            "Art. 99",
+            "Art. 103"
+          ]
+        }
+      }
+    },
+    "query_expansion": {
+      "synonymes_automatiques": true,
+      "mappings_impots": {
+        "dividendes": "IRCM",
+        "loyers": "IRF",
+        "salaires": "ITS",
+        "entrepreneur": "IBA",
+        "profession libérale": "IBA",
+        "actions": "IRCM",
+        "immeubles": "IRF",
+        "rémunérations": "ITS"
+      },
+      "questions_types": {
+        "taux_patterns": [
+          "quel est le taux",
+          "taux de",
+          "pourcentage",
+          "combien"
+        ],
+        "exoneration_patterns": [
+          "exonéré",
+          "exonération",
+          "affranchi",
+          "dispense"
+        ],
+        "obligation_patterns": [
+          "doit",
+          "obligé",
+          "obligation",
+          "tenir",
+          "déclarer"
+        ],
+        "delai_patterns": [
+          "délai",
+          "quand",
+          "date limite",
+          "combien de temps"
+        ]
+      }
+    },
+    "quality_metrics": {
+      "cibles": {
+        "precision_at_5": 0.9,
+        "recall_at_10": 0.95,
+        "mrr": 0.85,
+        "ndcg_at_10": 0.9
+      },
+      "tests_validation": {
+        "fichier": "cgi_2026_iba_tests.json",
+        "nombre_questions": 50,
+        "seuil_reussite": 0.9
+      }
+    },
+    "prompt_template": {
+      "system": "Tu es un expert en fiscalité congolaise, spécialiste du CGI 2026. Tu réponds aux questions sur l'imposition des personnes physiques (IBA, IRCM, IRF, ITS) en citant précisément les articles. Tu distingues clairement les différents impôts et leurs régimes.",
+      "context_prefix": "Voici les dispositions pertinentes du CGI Congo 2026 (Chapitre 2 - Imposition des personnes physiques) :",
+      "answer_format": {
+        "structure": [
+          "Identification de l'impôt concerné (IBA/IRCM/IRF/ITS)",
+          "Réponse directe à la question",
+          "Article(s) de référence avec citation",
+          "Valeurs chiffrées (taux, seuils, délais)"
+        ],
+        "style": "professionnel_pedagogique"
+      }
+    }
+  },
+  "tests": {
+    "test_suite": {
+      "version": "1.0",
+      "chapitre": "Chapitre 2 - IBA, IRCM, IRF, ITS",
+      "code": "CGI Congo 2026",
+      "date_creation": "2026-01-01",
+      "total_questions": 50
+    },
+    "questions": [
+      {
+        "id": 1,
+        "categorie": "IBA - Principe",
+        "question": "Qu'est-ce que l'IBA et qui y est soumis ?",
+        "reponse_attendue": "L'IBA (Impôt sur les Bénéfices d'Affaires) est un impôt annuel sur les bénéfices réalisés par les personnes physiques qui accomplissent habituellement, pour leur propre compte, une activité à caractère lucratif.",
+        "articles_source": [
+          "Art. 93"
+        ],
+        "mots_cles": [
+          "IBA",
+          "personnes physiques",
+          "activité lucrative"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 2,
+        "categorie": "IBA - Revenus imposables",
+        "question": "Quels types de revenus sont imposables à l'IBA ?",
+        "reponse_attendue": "Sont imposables : les BIC/BNC/BA (y compris plus-values de cession de fonds de commerce), les bénéfices des professions libérales, les produits de propriété intellectuelle/industrielle, et tous bénéfices lucratifs ne relevant pas de l'ITS, IRCM ou IRF.",
+        "articles_source": [
+          "Art. 93A"
+        ],
+        "mots_cles": [
+          "BIC",
+          "BNC",
+          "professions libérales",
+          "propriété intellectuelle"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 3,
+        "categorie": "IBA - Résidence fiscale",
+        "question": "Quels critères définissent la résidence habituelle au Congo ?",
+        "reponse_attendue": "Sont considérées résidentes les personnes : 1) possédant une habitation (propriété, usufruit, location ≥1 an), 2) ayant leur séjour principal au Congo, 3) rétribuées par des entreprises congolaises depuis l'étranger, 4) fonctionnaires étrangers affectés au Congo. Une absence continue de plus de 24 mois entraîne la perte de résidence fiscale.",
+        "articles_source": [
+          "Art. 93B"
+        ],
+        "mots_cles": [
+          "résidence fiscale",
+          "24 mois",
+          "habitation"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 4,
+        "categorie": "IBA - Bénéfice imposable",
+        "question": "Quelles sont les particularités de la détermination du bénéfice IBA par rapport à l'IS ?",
+        "reponse_attendue": "Les règles IS s'appliquent sauf : amortissements uniquement linéaires, provisions pour créances douteuses non déductibles, report déficitaire limité à 3 exercices, pas de crédit d'impôt Art. 3A.",
+        "articles_source": [
+          "Art. 94"
+        ],
+        "mots_cles": [
+          "amortissement linéaire",
+          "provisions",
+          "report déficitaire",
+          "3 exercices"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 5,
+        "categorie": "IBA - Charges non déductibles",
+        "question": "Les prélèvements de l'exploitant sont-ils déductibles ?",
+        "reponse_attendue": "Non, ne sont pas déductibles : les prélèvements de l'exploitant sur ses recettes à titre de rémunération personnelle, les dépenses personnelles, les intérêts des capitaux engagés, les loyers que l'exploitant se verse à lui-même. Les frais de représentation ne sont déductibles qu'à 50%.",
+        "articles_source": [
+          "Art. 94A"
+        ],
+        "mots_cles": [
+          "prélèvements",
+          "non déductible",
+          "frais représentation",
+          "50%"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 6,
+        "categorie": "IBA - Comptabilité",
+        "question": "Quelle comptabilité doivent tenir les contribuables IBA ?",
+        "reponse_attendue": "Comptabilité d'engagement conforme au SYSCOHADA pour les bénéfices réguliers. Toutefois, les professions libérales, activités non commerciales et revenus de propriété intellectuelle peuvent tenir une comptabilité de caisse.",
+        "articles_source": [
+          "Art. 94B"
+        ],
+        "mots_cles": [
+          "SYSCOHADA",
+          "comptabilité d'engagement",
+          "comptabilité de caisse"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 7,
+        "categorie": "IBA - Taux",
+        "question": "Quel est le taux de l'IBA et le minimum de perception ?",
+        "reponse_attendue": "Le taux de l'IBA est de 30%. Le minimum de perception est de 1,5% du montant total des produits (exploitation, financiers, hors activité ordinaire). Les taux IBA ne peuvent être inférieurs à ceux de l'IS.",
+        "articles_source": [
+          "Art. 95"
+        ],
+        "mots_cles": [
+          "taux IBA",
+          "30%",
+          "minimum de perception",
+          "1,5%"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 8,
+        "categorie": "IBA - Décès exploitant",
+        "question": "Que se passe-t-il pour la plus-value en cas de décès de l'exploitant ?",
+        "reponse_attendue": "La taxation de la plus-value de fonds de commerce est reportée au moment de la cession/cessation si l'exploitation est poursuivie par les héritiers en ligne directe ou le conjoint, sans augmentation des évaluations du dernier bilan du défunt.",
+        "articles_source": [
+          "Art. 95A"
+        ],
+        "mots_cles": [
+          "décès",
+          "plus-value",
+          "report",
+          "héritiers"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 9,
+        "categorie": "Forfait - Champ",
+        "question": "Qui est soumis au régime du forfait ?",
+        "reponse_attendue": "Les contribuables dont le CA n'excède pas le seuil d'assujettissement TVA. Sont exclus : professions réglementées, boulangers, entrepreneurs de travaux, quincailleries, grossistes, importateurs. Ceux qui optent pour la TVA passent au régime général.",
+        "articles_source": [
+          "Art. 96"
+        ],
+        "mots_cles": [
+          "forfait",
+          "seuil TVA",
+          "exclusions",
+          "boulangers",
+          "grossistes"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 10,
+        "categorie": "Forfait - Option régime réel",
+        "question": "Un contribuable au forfait peut-il opter pour le régime réel ?",
+        "reponse_attendue": "Oui, s'il peut satisfaire aux obligations de l'Art. 104, il peut opter pour le régime réel avec notification à l'administration avant le 1er février. L'option est valable 3 ans et irrévocable.",
+        "articles_source": [
+          "Art. 96"
+        ],
+        "mots_cles": [
+          "option régime réel",
+          "1er février",
+          "3 ans",
+          "irrévocable"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 11,
+        "categorie": "Forfait - Obligations",
+        "question": "Quelles obligations comptables pour les contribuables au forfait ?",
+        "reponse_attendue": "Comptabilité SMT (système minimal de trésorerie) OHADA, registre des achats/dépenses, registre des ventes, déclaration mensuelle Art. 176, bilan/compte de résultat/notes annexes. Les registres doivent être présentés chaque trimestre pour paraphe.",
+        "articles_source": [
+          "Art. 96A"
+        ],
+        "mots_cles": [
+          "SMT",
+          "registres",
+          "paraphe trimestriel"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 12,
+        "categorie": "Forfait - Évaluation",
+        "question": "Comment est évalué le bénéfice au forfait ?",
+        "reponse_attendue": "L'administration évalue le CA et bénéfice d'après les résultats de l'année. Le contribuable dispose de 30 jours pour ses observations. À défaut d'accord, la commission des impôts (Art. 400) statue. Le contribuable conserve un recours contentieux.",
+        "articles_source": [
+          "Art. 97"
+        ],
+        "mots_cles": [
+          "évaluation",
+          "30 jours",
+          "commission des impôts"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 13,
+        "categorie": "Forfait - Sanctions",
+        "question": "Quelles sanctions pour défaut de tenue des registres au forfait ?",
+        "reponse_attendue": "Le défaut de tenue ou présentation des registres entraîne une taxation d'office et une amende de 100 000 FCFA. Le défaut de déclaration trimestrielle des fournisseurs est sanctionné par 500 000 FCFA d'amende.",
+        "articles_source": [
+          "Art. 98",
+          "Art. 99"
+        ],
+        "mots_cles": [
+          "amende",
+          "100 000 FCFA",
+          "500 000 FCFA",
+          "taxation d'office"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 14,
+        "categorie": "Régime réel",
+        "question": "Qui est soumis au régime réel ?",
+        "reponse_attendue": "Les contribuables dont le CA est supérieur ou égal au seuil d'assujettissement TVA. Ils déposent leur déclaration selon leur catégorie avec détail du CA global et par nature d'activité.",
+        "articles_source": [
+          "Art. 102"
+        ],
+        "mots_cles": [
+          "régime réel",
+          "seuil TVA"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 15,
+        "categorie": "Régime réel - Télédéclaration",
+        "question": "La télédéclaration est-elle obligatoire au régime réel ?",
+        "reponse_attendue": "Oui, les entreprises au régime réel doivent procéder à la télédéclaration et au télépaiement. Le non-respect est sanctionné par une pénalité de 10% du montant à déclarer. Les états financiers doivent être certifiés par un expert-comptable ou CAC.",
+        "articles_source": [
+          "Art. 103"
+        ],
+        "mots_cles": [
+          "télédéclaration",
+          "télépaiement",
+          "10%",
+          "expert-comptable"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 16,
+        "categorie": "Régime réel - États financiers",
+        "question": "Quels documents doivent accompagner la déclaration au régime réel ?",
+        "reponse_attendue": "3 jeux d'états financiers OHADA (bilan, compte de résultat, tableau de flux de trésorerie, notes annexes) + support électronique. La déclaration statistique et fiscale comprend : page de garde, fiches d'identification, tableau de détermination du résultat fiscal. Les documents doivent être conservés 10 ans.",
+        "articles_source": [
+          "Art. 104"
+        ],
+        "mots_cles": [
+          "états financiers",
+          "OHADA",
+          "3 jeux",
+          "10 ans",
+          "déclaration statistique"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 17,
+        "categorie": "IRCM - Champ",
+        "question": "Quels revenus sont soumis à l'IRCM ?",
+        "reponse_attendue": "Lorsqu'ils ne sont pas dans les bénéfices IS : revenus de valeurs mobilières, revenus d'obligations, revenus de créances/dépôts/cautionnements/comptes courants, plus-values de cessions de valeurs mobilières, redressements non réinvestis.",
+        "articles_source": [
+          "Art. 105"
+        ],
+        "mots_cles": [
+          "IRCM",
+          "valeurs mobilières",
+          "obligations",
+          "créances",
+          "plus-values"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 18,
+        "categorie": "IRCM - Dividendes",
+        "question": "Quels sont les revenus de valeurs mobilières imposables à l'IRCM ?",
+        "reponse_attendue": "Revenus distribués par les sociétés IS, avances/prêts/acomptes aux associés, bénéfices/réserves de sociétés cessant l'IS, rémunérations des administrateurs, rémunérations à bénéficiaires non identifiés, charges non déductibles versées à un associé, bénéfices réputés distribués des établissements stables.",
+        "articles_source": [
+          "Art. 105A"
+        ],
+        "mots_cles": [
+          "dividendes",
+          "bénéfices distribués",
+          "administrateurs"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 19,
+        "categorie": "IRCM - Exclusions",
+        "question": "Les remboursements d'apports sont-ils soumis à l'IRCM ?",
+        "reponse_attendue": "Non, les remboursements d'apports ou primes d'émission ne sont pas des revenus mobiliers, à condition que tous les bénéfices et réserves aient été préalablement répartis. Ne sont pas des apports : réserves incorporées, sommes incorporées lors d'une fusion, remboursements de capital amorti ayant déjà supporté l'IRCM.",
+        "articles_source": [
+          "Art. 105B"
+        ],
+        "mots_cles": [
+          "remboursement apports",
+          "primes émission",
+          "exclusion"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 20,
+        "categorie": "IRCM - Obligations",
+        "question": "Quels sont les revenus des obligations soumis à l'IRCM ?",
+        "reponse_attendue": "Intérêts et produits des obligations, titres participatifs, effets publics et titres d'emprunt (État, collectivités, établissements publics), produits des obligations des sociétés commerciales autorisées, lots et primes de remboursement.",
+        "articles_source": [
+          "Art. 105C"
+        ],
+        "mots_cles": [
+          "obligations",
+          "titres participatifs",
+          "effets publics"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 21,
+        "categorie": "IRCM - Créances",
+        "question": "Quand l'IRCM sur les créances est-il dû ?",
+        "reponse_attendue": "L'impôt est dû dès le paiement des intérêts ou leur inscription en compte. En cas de capitalisation, le fait générateur est reporté au paiement effectif. Sont concernés : créances hypothécaires/chirographaires, dépôts à vue/échéance, cautionnements, comptes courants d'associés, bons de caisse.",
+        "articles_source": [
+          "Art. 105D"
+        ],
+        "mots_cles": [
+          "créances",
+          "inscription en compte",
+          "capitalisation",
+          "comptes courants"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 22,
+        "categorie": "IRCM - Plus-values",
+        "question": "Les plus-values de cession d'actions sont-elles soumises à l'IRCM ?",
+        "reponse_attendue": "Oui, les plus-values de cession de valeurs mobilières (actions, parts sociales, obligations) sont soumises à l'IRCM. Est considérée comme cession : vente, échange, apport en société, donation, succession, distribution en nature.",
+        "articles_source": [
+          "Art. 105E"
+        ],
+        "mots_cles": [
+          "plus-values",
+          "cession",
+          "actions",
+          "parts sociales"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 23,
+        "categorie": "IRCM - Exonérations",
+        "question": "Les attributions gratuites d'actions lors d'une fusion sont-elles imposables ?",
+        "reponse_attendue": "Non, en cas de fusion ou apport partiel d'actif, les attributions gratuites d'actions/parts ne sont pas des distributions imposables si la société absorbante a son siège dans le même État membre. En dehors de ce cas, aucune autre exonération IRCM ne peut être accordée.",
+        "articles_source": [
+          "Art. 106"
+        ],
+        "mots_cles": [
+          "fusion",
+          "exonération",
+          "attribution gratuite"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 24,
+        "categorie": "IRCM - Territorialité",
+        "question": "Quand l'IRCM est-il dû au Congo sur les plus-values de cession de titres ?",
+        "reponse_attendue": "L'IRCM est dû au Congo sur les plus-values de cession de titres de sociétés immatriculées au Congo détenus à hauteur d'au moins 10% au cours des 365 jours précédant la cession, quel que soit le domicile du cédant.",
+        "articles_source": [
+          "Art. 107"
+        ],
+        "mots_cles": [
+          "territorialité",
+          "10%",
+          "365 jours",
+          "titres congolais"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 25,
+        "categorie": "IRCM - Taux",
+        "question": "Quel est le taux de l'IRCM ?",
+        "reponse_attendue": "Le taux normal est de 15%. Le taux est porté à 35% pour les revenus occultes.",
+        "articles_source": [
+          "Art. 110"
+        ],
+        "mots_cles": [
+          "taux IRCM",
+          "15%",
+          "35%",
+          "revenus occultes"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 26,
+        "categorie": "IRCM - Moins-values",
+        "question": "Les moins-values mobilières peuvent-elles être imputées ?",
+        "reponse_attendue": "Oui, les moins-values mobilières peuvent être imputées sur les plus-values réalisées jusqu'à la troisième année suivant la cession.",
+        "articles_source": [
+          "Art. 109"
+        ],
+        "mots_cles": [
+          "moins-values",
+          "imputation",
+          "3 ans"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 27,
+        "categorie": "IRCM - Déclaration plus-values",
+        "question": "Dans quel délai doit-on déclarer une plus-value de cession de titres ?",
+        "reponse_attendue": "Pour les plus-values de cession, l'impôt est à la charge du cédant et doit être déclaré et payé dans les 60 jours suivant la cession.",
+        "articles_source": [
+          "Art. 110A"
+        ],
+        "mots_cles": [
+          "plus-values",
+          "60 jours",
+          "déclaration"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 28,
+        "categorie": "IRF - Champ",
+        "question": "Quels revenus sont soumis à l'IRF ?",
+        "reponse_attendue": "Lorsqu'ils ne sont pas dans les bénéfices IS : revenus des propriétés bâties (maisons, usines, outillage fixe), revenus des propriétés non bâties, revenus accessoires (affichage, carrières, redevances tréfoncières), plus-values immobilières.",
+        "articles_source": [
+          "Art. 111"
+        ],
+        "mots_cles": [
+          "IRF",
+          "revenus fonciers",
+          "propriétés bâties",
+          "plus-values immobilières"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 29,
+        "categorie": "IRF - Sociétés à prépondérance",
+        "question": "Comment sont imposés les associés de sociétés à prépondérance foncière ?",
+        "reponse_attendue": "Les personnes physiques associées de sociétés dont le CA est composé à plus de 80% de revenus fonciers, non soumises à l'IS ni à la TVA, sont personnellement soumises à l'IRF pour leur part des revenus imposables.",
+        "articles_source": [
+          "Art. 111A"
+        ],
+        "mots_cles": [
+          "prépondérance foncière",
+          "80%",
+          "associés",
+          "IRF"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 30,
+        "categorie": "IRF - Plus-values immobilières",
+        "question": "Qu'est-ce qu'une cession au sens des plus-values immobilières ?",
+        "reponse_attendue": "Toute mutation à titre onéreux ou gratuit entraînant un changement de propriété : vente, échange, dation en paiement, apport en société, distribution de dividendes en nature, donation, legs, succession.",
+        "articles_source": [
+          "Art. 111B"
+        ],
+        "mots_cles": [
+          "cession",
+          "mutation",
+          "plus-value immobilière"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 31,
+        "categorie": "IRF - Société prépondérance immo",
+        "question": "Qu'est-ce qu'une société à prépondérance immobilière ?",
+        "reponse_attendue": "Une société dont l'actif est, à la date de cession ou dans les 365 jours précédents, constitué pour plus de 50% de sa valeur réelle par des immeubles affectés à sa propre exploitation.",
+        "articles_source": [
+          "Art. 111B"
+        ],
+        "mots_cles": [
+          "prépondérance immobilière",
+          "50%",
+          "365 jours",
+          "actif"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 32,
+        "categorie": "IRF - Immeubles",
+        "question": "Les licences d'exploitation sont-elles considérées comme des immeubles ?",
+        "reponse_attendue": "Oui, sont considérés comme immeubles : immeubles bâtis/non bâtis, droits réels immobiliers, crédit-bail immobilier, titres de société à prépondérance immobilière, plateformes pétrolières, ainsi que les droits sur ressources naturelles (licences télécom, titres miniers/pétroliers/forestiers, droits halieutiques).",
+        "articles_source": [
+          "Art. 111B"
+        ],
+        "mots_cles": [
+          "immeubles",
+          "licences",
+          "ressources naturelles",
+          "titres miniers"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 33,
+        "categorie": "IRF - Exonérations",
+        "question": "La plus-value de cession de la résidence principale est-elle exonérée ?",
+        "reponse_attendue": "Oui, la plus-value de cession de la résidence principale est exonérée si elle est détenue par le cédant depuis au moins 5 ans. Sont aussi exonérés : revenus d'immeubles occupés gratuitement par ascendants/descendants en ligne directe, revenus fonciers perçus par l'État/collectivités.",
+        "articles_source": [
+          "Art. 111C"
+        ],
+        "mots_cles": [
+          "exonération",
+          "résidence principale",
+          "5 ans"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 34,
+        "categorie": "IRF - Taux",
+        "question": "Quels sont les taux de l'IRF ?",
+        "reponse_attendue": "9% pour les revenus locatifs (loyers), 15% pour les plus-values immobilières.",
+        "articles_source": [
+          "Art. 113"
+        ],
+        "mots_cles": [
+          "taux IRF",
+          "9%",
+          "15%",
+          "loyers",
+          "plus-values"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 35,
+        "categorie": "IRF - Base plus-value",
+        "question": "Comment est calculée la plus-value immobilière imposable ?",
+        "reponse_attendue": "La base est la différence entre le prix de cession et le prix d'acquisition (prix réels contrôlés par l'administration). Le prix d'acquisition est majoré des frais d'acquisition et des dépenses justifiées de construction, reconstruction, agrandissement, rénovation ou amélioration.",
+        "articles_source": [
+          "Art. 112A"
+        ],
+        "mots_cles": [
+          "plus-value",
+          "prix cession",
+          "prix acquisition",
+          "frais"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 36,
+        "categorie": "IRF - Retenue source loyers",
+        "question": "Quand la retenue à la source sur les loyers est-elle obligatoire ?",
+        "reponse_attendue": "La retenue s'applique si le locataire est : une société soumise à l'IS, une personne physique à l'IBA, l'État/collectivité/établissement public. Elle est due au plus tard le 15 mars ou dans les 3 mois de l'entrée en jouissance du bail pour les baux en cours d'année.",
+        "articles_source": [
+          "Art. 113A"
+        ],
+        "mots_cles": [
+          "retenue source",
+          "loyers",
+          "15 mars",
+          "3 mois"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 37,
+        "categorie": "IRF - Retenue libératoire",
+        "question": "Pour qui la retenue sur loyers est-elle libératoire ?",
+        "reponse_attendue": "La retenue est libératoire pour : personnes physiques, personnes morales non soumises à l'IS, non-résidents, exploitants individuels au forfait. Pour les sociétés IS et contribuables IBA au réel, elle est une charge déductible.",
+        "articles_source": [
+          "Art. 113A"
+        ],
+        "mots_cles": [
+          "retenue libératoire",
+          "charge déductible"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 38,
+        "categorie": "ITS - Champ",
+        "question": "Quels revenus sont soumis à l'ITS ?",
+        "reponse_attendue": "Les traitements, salaires, émoluments, pensions, rentes viagères et tous avantages en argent et en nature. Sont aussi imposés les rémunérations des dirigeants de sociétés, sauf celles soumises à l'IRCM.",
+        "articles_source": [
+          "Art. 114"
+        ],
+        "mots_cles": [
+          "ITS",
+          "salaires",
+          "pensions",
+          "dirigeants"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 39,
+        "categorie": "ITS - Exonérations",
+        "question": "Les indemnités de licenciement sont-elles imposables ?",
+        "reponse_attendue": "Non, les indemnités de licenciement ou de départ volontaire dans le cadre d'un plan social sont exonérées, y compris les indemnités de préavis ou congés payés. Sont aussi exonérées : pensions de retraite, allocations familiales, accidents du travail, bourses d'État, capital décès.",
+        "articles_source": [
+          "Art. 114A"
+        ],
+        "mots_cles": [
+          "exonération",
+          "licenciement",
+          "plan social",
+          "retraite"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 40,
+        "categorie": "ITS - Diplomates",
+        "question": "Les diplomates étrangers sont-ils exonérés d'ITS ?",
+        "reponse_attendue": "Oui, sous condition de réciprocité (Convention de Vienne 1961). L'exonération ne s'étend pas au personnel local, aux rémunérations hors fonction diplomatique, ni aux revenus IBA/IRCM/IRF.",
+        "articles_source": [
+          "Art. 114B"
+        ],
+        "mots_cles": [
+          "diplomates",
+          "exonération",
+          "réciprocité",
+          "Convention de Vienne"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 41,
+        "categorie": "ITS - Territorialité",
+        "question": "Combien de jours de présence confèrent la résidence fiscale pour l'ITS ?",
+        "reponse_attendue": "183 jours de séjour (continus ou non) sur une période de 12 mois quelconque confèrent la résidence fiscale pour l'année durant laquelle le seuil est atteint. Sont aussi résidents : ceux ayant un foyer permanent, le centre de leurs intérêts vitaux au Congo, ou les employés de l'État en poste à l'étranger.",
+        "articles_source": [
+          "Art. 114D"
+        ],
+        "mots_cles": [
+          "183 jours",
+          "résidence fiscale",
+          "12 mois"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 42,
+        "categorie": "ITS - Avantages en nature",
+        "question": "Comment est évalué l'avantage en nature logement ?",
+        "reponse_attendue": "À défaut de valeur réelle, le logement est évalué à 20% du salaire plafonné pour la sécurité sociale. Les autres avantages : domesticité 7%, gardiennage 7%, eau 5%, éclairage 5%, gaz 5%, téléphone 2%, voiture 3%, nourriture 20%.",
+        "articles_source": [
+          "Art. 115"
+        ],
+        "mots_cles": [
+          "avantages en nature",
+          "logement",
+          "20%",
+          "voiture",
+          "3%"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 43,
+        "categorie": "ITS - Mutuelles",
+        "question": "Les primes de mutuelles payées par l'employeur sont-elles imposables ?",
+        "reponse_attendue": "Non, l'avantage en nature correspondant aux primes de mutuelles sociales payées par l'employeur n'est pas imposable si ces mutuelles profitent à l'ensemble des salariés.",
+        "articles_source": [
+          "Art. 115"
+        ],
+        "mots_cles": [
+          "mutuelles",
+          "primes",
+          "non imposable"
+        ],
+        "difficulte": "facile"
+      },
+      {
+        "id": 44,
+        "categorie": "ITS - Barème",
+        "question": "Quel est le barème progressif de l'ITS ?",
+        "reponse_attendue": "1 200 FCFA pour 0-615 000, 10% pour 615 001-1 500 000, 15% pour 1 500 001-3 500 000, 20% pour 3 500 001-5 000 000, 30% au-delà de 5 000 000. Impôt minimum 1 200 FCFA si salaire < SMIG.",
+        "articles_source": [
+          "Art. 116"
+        ],
+        "mots_cles": [
+          "barème ITS",
+          "10%",
+          "15%",
+          "20%",
+          "30%",
+          "SMIG"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 45,
+        "categorie": "ITS - Retenue source",
+        "question": "La retenue ITS est-elle libératoire ?",
+        "reponse_attendue": "Non, la retenue mensuelle n'est pas libératoire lorsque le bénéficiaire dispose de plusieurs sources de revenus. Dans ce cas, il doit souscrire une déclaration annuelle des salaires. Il ne peut être pratiqué de réduction pour charge de famille.",
+        "articles_source": [
+          "Art. 116"
+        ],
+        "mots_cles": [
+          "retenue source",
+          "non libératoire",
+          "déclaration annuelle"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 46,
+        "categorie": "ITS - Revenus étrangers",
+        "question": "Comment sont imposés les revenus de source étrangère à l'ITS ?",
+        "reponse_attendue": "Pour les revenus de source étrangère, la base d'imposition est le montant perçu net de tout impôt et charge acquittée ou retenue à l'étranger, sous réserve des conventions internationales.",
+        "articles_source": [
+          "Art. 115"
+        ],
+        "mots_cles": [
+          "revenus étrangers",
+          "montant net",
+          "conventions"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 47,
+        "categorie": "IRCM - Fait générateur dividendes",
+        "question": "Quand intervient le fait générateur de l'IRCM sur dividendes ?",
+        "reponse_attendue": "Le fait générateur est la décision de distribution des dividendes. L'exigibilité intervient au plus tard 3 mois après la décision de distribution.",
+        "articles_source": [
+          "Art. 108"
+        ],
+        "mots_cles": [
+          "fait générateur",
+          "dividendes",
+          "3 mois"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 48,
+        "categorie": "IRF - Responsabilité solidaire",
+        "question": "Qui est responsable du paiement de l'IRF sur plus-values immobilières ?",
+        "reponse_attendue": "L'impôt est à la charge du cédant, mais le cessionnaire et la société à prépondérance immobilière dont les titres sont cédés sont solidairement responsables du paiement.",
+        "articles_source": [
+          "Art. 113"
+        ],
+        "mots_cles": [
+          "responsabilité solidaire",
+          "cédant",
+          "cessionnaire"
+        ],
+        "difficulte": "difficile"
+      },
+      {
+        "id": 49,
+        "categorie": "Forfait - Passage au réel",
+        "question": "Quand un contribuable au forfait passe-t-il automatiquement au régime réel ?",
+        "reponse_attendue": "L'impôt global forfaitaire cesse dès le premier exercice suivant celui où les limites CA sont dépassées. À l'inverse, le retour au forfait après une baisse du CA ne s'effectue que si le CA reste sous le seuil TVA pendant 2 exercices successifs.",
+        "articles_source": [
+          "Art. 96"
+        ],
+        "mots_cles": [
+          "passage réel",
+          "CA",
+          "2 exercices"
+        ],
+        "difficulte": "moyen"
+      },
+      {
+        "id": 50,
+        "categorie": "Général - Conservation documents",
+        "question": "Pendant combien de temps les documents comptables doivent-ils être conservés ?",
+        "reponse_attendue": "Les livres, registres, documents ou pièces doivent être conservés dans leur forme originale pendant 10 ans à compter de la dernière opération, quel que soit le support utilisé.",
+        "articles_source": [
+          "Art. 104"
+        ],
+        "mots_cles": [
+          "conservation",
+          "10 ans",
+          "documents comptables"
+        ],
+        "difficulte": "facile"
+      }
+    ],
+    "statistiques": {
+      "par_difficulte": {
+        "facile": 11,
+        "moyen": 27,
+        "difficile": 12
+      },
+      "par_section": {
+        "IBA": 8,
+        "Forfait": 6,
+        "Régime réel": 3,
+        "IRCM": 11,
+        "IRF": 11,
+        "ITS": 10,
+        "Général": 1
+      }
+    }
+  }
+}

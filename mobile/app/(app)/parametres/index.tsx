@@ -92,6 +92,17 @@ export default function ParametresScreen() {
           />
         </View>
 
+        {/* Section Sécurité */}
+        <SectionHeader title="SÉCURITÉ" />
+        <View style={styles.card}>
+          <SettingsRow
+            icon="shield-checkmark-outline"
+            label="Authentification à deux facteurs"
+            onPress={() => router.push("/(app)/securite" as any)}
+            showChevron
+          />
+        </View>
+
         {/* Section Abonnement */}
         <SectionHeader title="ABONNEMENT" />
         <View style={styles.card}>
@@ -124,6 +135,20 @@ export default function ParametresScreen() {
           <SettingsRow icon="information-circle-outline" label="Version" value="1.0.0" />
           <Divider />
           <SettingsRow icon="book-outline" label="Édition" value="CGI Édition 2026" />
+          <Divider />
+          <SettingsRow
+            icon="document-text-outline"
+            label="Conditions d'utilisation"
+            onPress={() => router.push("/(app)/legal/cgu" as any)}
+            showChevron
+          />
+          <Divider />
+          <SettingsRow
+            icon="lock-closed-outline"
+            label="Politique de confidentialité"
+            onPress={() => router.push("/(app)/legal/confidentialite" as any)}
+            showChevron
+          />
         </View>
       </ScrollView>
     </View>

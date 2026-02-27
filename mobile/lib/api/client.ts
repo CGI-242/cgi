@@ -3,17 +3,23 @@ import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios";
 const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
 const API_TIMEOUT_MS = 15_000;
 
-// Storage : sessionStorage sur web (non persistant = plus sur), SecureStore sur mobile
+// Détection plateforme
+const isWeb = typeof window !== "undefined" && typeof sessionStorage !== "undefined";
+const isMobile = !isWeb;
+
+// Storage : SecureStore sur mobile uniquement. Sur web, les cookies httpOnly gèrent l'auth.
 let _getToken: () => Promise<string | null>;
 let _getRefreshToken: () => Promise<string | null>;
 let _setToken: (key: string, value: string) => Promise<void>;
 let _removeToken: (key: string) => Promise<void>;
 
-if (typeof window !== "undefined" && typeof sessionStorage !== "undefined") {
-  _getToken = async () => sessionStorage.getItem("accessToken");
-  _getRefreshToken = async () => sessionStorage.getItem("refreshToken");
-  _setToken = async (key, value) => sessionStorage.setItem(key, value);
-  _removeToken = async (key) => sessionStorage.removeItem(key);
+if (isWeb) {
+  // Web : les tokens sont dans des cookies httpOnly (invisibles au JS)
+  // Le storage sert uniquement pour le fallback mobile-first du store
+  _getToken = async () => null;
+  _getRefreshToken = async () => null;
+  _setToken = async () => {};
+  _removeToken = async () => {};
 } else {
   _getToken = async () => {
     const { getItemAsync } = require("expo-secure-store");
@@ -33,23 +39,32 @@ if (typeof window !== "undefined" && typeof sessionStorage !== "undefined") {
   };
 }
 
+export { isWeb, isMobile };
 export const storage = { get: _getToken, set: _setToken, remove: _removeToken };
 
 export const api = axios.create({
   baseURL: API_URL,
   timeout: API_TIMEOUT_MS,
   headers: { "Content-Type": "application/json" },
+  withCredentials: true, // Envoie les cookies automatiquement (web)
 });
 
+// Request interceptor
 api.interceptors.request.use(async (config) => {
-  try {
-    const token = await _getToken();
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+  if (isMobile) {
+    // Mobile : Bearer token + X-Platform
+    config.headers["X-Platform"] = "mobile";
+    try {
+      const token = await _getToken();
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
+    } catch (err) {
+      if (__DEV__) console.warn("[auth] Erreur lecture token:", err);
     }
-  } catch (err) {
-    if (__DEV__) console.warn("[auth] Erreur lecture token:", err);
   }
+  // Web : cookies httpOnly envoyés automatiquement par le navigateur
+  // Pas de header Authorization nécessaire
   return config;
 });
 
@@ -66,8 +81,10 @@ function processQueue(error: unknown, token: string | null) {
 }
 
 async function forceLogout() {
-  try { await _removeToken("accessToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression accessToken:", e); }
-  try { await _removeToken("refreshToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression refreshToken:", e); }
+  if (isMobile) {
+    try { await _removeToken("accessToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression accessToken:", e); }
+    try { await _removeToken("refreshToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression refreshToken:", e); }
+  }
   // Import lazy pour eviter les dependances circulaires
   const { useAuthStore } = require("@/lib/store/auth");
   useAuthStore.getState().logout();
@@ -78,11 +95,12 @@ api.interceptors.response.use(
   async (error: AxiosError) => {
     const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
 
-    // Si ce n'est pas un 401, ou si c'est le refresh endpoint, ou si deja en retry
+    // Ne pas intercepter : non-401, retry, refresh, ou logout
     if (
       error.response?.status !== 401 ||
       originalRequest._retry ||
-      originalRequest.url?.includes("/auth/refresh-token")
+      originalRequest.url?.includes("/auth/refresh-token") ||
+      originalRequest.url?.includes("/auth/logout")
     ) {
       return Promise.reject(error);
     }
@@ -92,7 +110,9 @@ api.interceptors.response.use(
       return new Promise((resolve, reject) => {
         failedQueue.push({ resolve, reject });
       }).then((token) => {
-        originalRequest.headers.Authorization = `Bearer ${token}`;
+        if (isMobile && token) {
+          originalRequest.headers.Authorization = `Bearer ${token}`;
+        }
         return api(originalRequest);
       });
     }
@@ -101,23 +121,35 @@ api.interceptors.response.use(
     isRefreshing = true;
 
     try {
-      const refreshToken = await _getRefreshToken();
-      if (!refreshToken) {
-        await forceLogout();
-        return Promise.reject(error);
+      if (isMobile) {
+        const refreshToken = await _getRefreshToken();
+        if (!refreshToken) {
+          await forceLogout();
+          return Promise.reject(error);
+        }
+
+        const { data } = await axios.post(`${API_URL}/auth/refresh-token`, { refreshToken });
+        const newToken: string = data.token;
+
+        await _setToken("accessToken", newToken);
+        if (data.refreshToken) {
+          await _setToken("refreshToken", data.refreshToken);
+        }
+
+        processQueue(null, newToken);
+        originalRequest.headers.Authorization = `Bearer ${newToken}`;
+        return api(originalRequest);
+      } else {
+        // Web : le refresh token est dans un cookie httpOnly
+        // Le serveur le lit automatiquement
+        const { data } = await axios.post(
+          `${API_URL}/auth/refresh-token`,
+          {},
+          { withCredentials: true }
+        );
+        processQueue(null, data.token);
+        return api(originalRequest);
       }
-
-      const { data } = await axios.post(`${API_URL}/auth/refresh-token`, { refreshToken });
-      const newToken: string = data.token;
-
-      await _setToken("accessToken", newToken);
-      if (data.refreshToken) {
-        await _setToken("refreshToken", data.refreshToken);
-      }
-
-      processQueue(null, newToken);
-      originalRequest.headers.Authorization = `Bearer ${newToken}`;
-      return api(originalRequest);
     } catch (refreshError) {
       processQueue(refreshError, null);
       await forceLogout();

@@ -1,0 +1,713 @@
+{
+  "meta": {
+    "document": "Charte des Investissements",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC2-CHARTE",
+    "partie": null,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "2.1. Charte des Investissements",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Liberté d'entreprendre",
+      "texte": [
+        "Art.1.- (Loi n°42-2019) Toute personne physique ou morale, quelle que soit sa nationalité, est libre d'entreprendre, sur le territoire de la République du Congo, une activité agricole, minière, industrielle, forestière, artisanale, commerciale ou de service, dans le respect des lois et règlements de la République.",
+        "Tout acte juridique (réglementaire, conventionnel, etc.) ou, d'une manière générale, tout acte de quelque nature qu'il soit, contenant des dispositions dérogatoires à la réglementation fiscale, est revêtu du contreseing du Ministre en charge des finances.",
+        "Les avantages fiscaux qui n'ont pas obéi à cette procédure doivent être attestés par le Ministre en charge des finances pour leur application par les services de la Direction Générale des Impôts et des Domaines."
+      ],
+      "mots_cles": [
+        "liberté entreprendre",
+        "investissement",
+        "contreseing ministre finances"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Garanties économiques générales",
+      "texte": [
+        "Art.2.- La République du Congo garantit, sans préjudice des dispositions légales et réglementaires en vigueur, la liberté de :",
+        "- importer ou exporter les matières premières ou consommables, les produits semi-ouvrés et ouvrés, les biens d'équipement, les matériels et l'outillage nécessaires aux activités économiques ;",
+        "- déterminer la politique de production et conduire celle d'embauche et de commercialisation y relatives ;",
+        "- choisir ses clients et ses fournisseurs et fixer les prix."
+      ],
+      "mots_cles": [
+        "garanties économiques",
+        "import export",
+        "liberté commerciale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Garanties pour les investisseurs et salariés étrangers",
+      "texte": [
+        "Art.3.- Les investisseurs et les salariés, de nationalité étrangère exerçant leurs activités en République du Congo, sont garantis du libre rapatriement des bénéfices réalisés au titre de l'exploitation, des économies sur salaires et des produits de la liquidation partielle ou totale des investissements."
+      ],
+      "mots_cles": [
+        "rapatriement bénéfices",
+        "investisseurs étrangers",
+        "liquidation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Accès aux devises étrangères",
+      "texte": [
+        "Art.4.- Les investisseurs ont accès aux devises étrangères pour l'acquisition des équipements, des matières premières, des intrants, des emballages et des services nécessaires à leurs activités."
+      ],
+      "mots_cles": [
+        "devises étrangères",
+        "équipements",
+        "intrants"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Droits de propriété",
+      "texte": [
+        "Art.5.- La République du Congo garantit les droits de propriété liés aux terrains, aux immeubles, aux matériels d'exploitation, aux biens mobiliers, aux valeurs mobilières et à la propriété intellectuelle."
+      ],
+      "mots_cles": [
+        "propriété",
+        "terrains",
+        "immeubles",
+        "propriété intellectuelle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Égalité de traitement",
+      "texte": [
+        "Art.6.- Dans le respect des droits et des obligations relatifs à l'exercice de leurs activités, les personnes physiques et morales bénéficient de l'égalité de traitement suivant les principes et les prescriptions du droit sur la concurrence."
+      ],
+      "mots_cles": [
+        "égalité traitement",
+        "concurrence"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Libertés syndicales et représentation",
+      "texte": [
+        "Art.7.- Dans le cadre des lois existantes, les dirigeants et les travailleurs, exerçant au Congo, peuvent librement :",
+        "- être représentés dans les assemblées consulaires et les organismes assurant la représentation des intérêts professionnels et économiques ;",
+        "- participer aux activités syndicales."
+      ],
+      "mots_cles": [
+        "libertés syndicales",
+        "représentation professionnelle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Cadre macro-économique",
+      "texte": [
+        "Art.8.- Dans le cadre de la mise en œuvre de la politique économique, financière et monétaire visant à réaliser le redressement de son économie et son développement sur une base durable conformément à la stratégie globale de développement qui vise l'amélioration des conditions de vie, la pérennisation de la croissance, la création d'emplois et la lutte contre la pauvreté, l'État se conforme aux règles de discipline prévues dans le cadre de la surveillance multilatérale définie dans la convention de l'UEAC."
+      ],
+      "mots_cles": [
+        "politique économique",
+        "cadre macro-économique",
+        "UEAC",
+        "surveillance multilatérale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Assainissement des finances publiques",
+      "texte": [
+        "Art.9.- En vue de l'assainissement des finances publiques, l'État s'engage à appliquer la réforme fiscalo-douanière de la CEMAC, notamment en ce qui concerne la limitation des régimes dérogatoires et attacher du prix au recouvrement systématique des recettes fiscales et douanières.",
+        "L'État s'engage à accorder, dans l'allocation des ressources, une priorité aux dépenses de santé, de culture et d'éducation, à la formation professionnelle, à la promotion de l'entreprenariat, aux infrastructures des mines, d'énergie et d'hydraulique, de transport et de communication, de développement urbain et rural, ainsi qu'à la justice et à la protection de l'environnement."
+      ],
+      "mots_cles": [
+        "finances publiques",
+        "CEMAC",
+        "régimes dérogatoires",
+        "recettes fiscales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Information économique et statistique",
+      "texte": [
+        "Art.10.- L'État s'engage à améliorer la qualité des données et des informations mises à la disposition des investisseurs sur les performances économiques et le développement social. Il accorde une attention particulière au renforcement des services et des outils statistiques avec le concours des institutions spécialisées en la matière."
+      ],
+      "mots_cles": [
+        "statistiques",
+        "information économique",
+        "données investisseurs"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Sécurité juridique et judiciaire",
+      "texte": [
+        "Art.11.- L'État s'engage à promouvoir la sécurité juridique, judiciaire et à renforcer l'État de droit.",
+        "Il adhère aux accords internationaux garantissant l'investissement.",
+        "Il est partie au Traité de l'OHADA.",
+        "Il garantit l'application des procédures et des arrêts des organismes spécialisés, des accords internationaux, notamment la CCJA de l'OHADA.",
+        "Il s'engage également à adapter son droit et sa politique judiciaire aux règles et aux dispositions des accords internationaux, notamment le traité de l'OHADA.",
+        "Il s'engage à observer les normes de l'OIT dans le strict respect de la tripartite."
+      ],
+      "mots_cles": [
+        "sécurité juridique",
+        "OHADA",
+        "CCJA",
+        "OIT",
+        "État de droit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Justice commerciale et arbitrage",
+      "texte": [
+        "Art.12.- L'État s'engage à continuer de former les juges au règlement des affaires commerciales et, si possible, d'y spécialiser certaines juridictions et notamment le tribunal de commerce, les chambres arbitrales et la chambre économique et sociale.",
+        "Il veille à l'exécution diligente des décisions de justice.",
+        "L'État encourage le recours à la procédure d'arbitrage et garantit l'application des sentences arbitrales."
+      ],
+      "mots_cles": [
+        "tribunal de commerce",
+        "arbitrage",
+        "sentences arbitrales",
+        "justice commerciale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Rôle de l'État dans le développement économique",
+      "texte": [
+        "Art.13.- L'État garantit le bon fonctionnement du système économique afin de satisfaire les besoins fondamentaux des populations. Il encourage la promotion du secteur privé.",
+        "À ce titre, il s'engage à :",
+        "- suppléer le secteur privé dans la production des biens et des services jugés d'intérêt vital pour le fonctionnement efficace de l'économie nationale mais qui sont délaissés par le secteur privé ;",
+        "- créer un espace concurrentiel et incitatif à l'investissement où le secteur privé joue le rôle moteur pour le développement ;",
+        "- améliorer l'environnement institutionnel, fiscal, financier, réglementaire, juridique et judiciaire ;",
+        "- renforcer ses capacités institutionnelles de régulation ;",
+        "- développer et entretenir les infrastructures économiques et sociales de base dans les domaines de la santé, de la culture, de l'éducation, du sport, des mines, de l'énergie et de l'hydraulique, de l'industrie, de l'artisanat, de l'urbanisme et du rural, des transports, des télécommunications et de l'environnement ;"
+      ],
+      "mots_cles": [
+        "secteur privé",
+        "infrastructures",
+        "régulation",
+        "développement économique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Partenariat avec le secteur privé",
+      "texte": [
+        "Art.14.- L'État associe le secteur privé à la définition des stratégies et à la résolution des problèmes économiques et de développement.",
+        "Il apporte son soutien au renforcement des capacités des organisations professionnelles. Il crée un cadre juridique favorable au bon fonctionnement des chambres consulaires, des syndicats patronaux et ouvriers, des associations de consommateurs, des organisations non gouvernementales respectueuses des lois et règlements de la République. À cet effet, il crée un cadre de concertation, multisectoriel avec des réunions périodiques et systématiques associant le secteur privé et les autres acteurs de la société civile."
+      ],
+      "mots_cles": [
+        "partenariat",
+        "secteur privé",
+        "chambres consulaires",
+        "concertation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Simplification administrative et information des investisseurs",
+      "texte": [
+        "Art.15.- L'État s'engage à lever les lenteurs et les pesanteurs administratives et à fournir aux investisseurs toutes les informations utiles pour la conduite diligente des formalités requises pour leurs opérations.",
+        "Il met en place une commission nationale des investissements pour l'information, le conseil aux investisseurs et l'agrément des entreprises aux avantages de la présente charte.",
+        "L'agrément des entreprises aux avantages de la présente charte fait l'objet d'un texte réglementaire qui définit un ensemble de mesures, de procédures, d'obligations des parties, de sanctions et de pénalités."
+      ],
+      "mots_cles": [
+        "simplification administrative",
+        "commission nationale investissements",
+        "agrément"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Environnement de l'entreprise et concurrence",
+      "texte": [
+        "Art.16.- L'État s'attache à créer un environnement propice à la naissance et au développement des entreprises.",
+        "Il met en œuvre une réglementation de la concurrence, assure la protection des droits de propriété intellectuelle, la promotion des services d'appui au renforcement de la productivité et de la compétitivité.",
+        "La réglementation, sur la concurrence et sur la protection des consommateurs, assure la libre concurrence comme moyen d'accroître la productivité et garantir aux consommateurs un meilleur rapport qualité-prix, tenant compte de la santé et de l'environnement.",
+        "L'État renonce aux pratiques discriminatoires qui font obstacle à la libre concurrence, exception faite de celles qui sont expressément autorisées par la réglementation communautaire."
+      ],
+      "mots_cles": [
+        "concurrence",
+        "propriété intellectuelle",
+        "protection consommateurs"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Concurrence, transparence et information économique",
+      "texte": [
+        "Art.17.- L'État s'engage à appliquer les règles de la concurrence et de la transparence dans toutes les opérations économiques, notamment dans la privatisation des entreprises publiques, l'attribution des marchés publics et la publicité.",
+        "Il met en place un système d'informations fiable et efficace en direction des consommateurs et des usagers ainsi que des opérateurs économiques."
+      ],
+      "mots_cles": [
+        "transparence",
+        "privatisation",
+        "marchés publics"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Propriété intellectuelle et innovation",
+      "texte": [
+        "Art.18.- L'État, conformément à la réglementation de l'OAPI, garantit la protection des brevets, des marques, des signes distinctifs, des labels, des noms commerciaux, des indications géographiques, des appellations d'origine et de toutes autres formes des droits de propriété intellectuelle et s'engage à stimuler l'invention, l'innovation, la maîtrise des technologies et la diffusion de la connaissance.",
+        "Il encourage, à cet effet, les initiatives visant à nouer les relations de partenariat intérieur et extérieur."
+      ],
+      "mots_cles": [
+        "OAPI",
+        "brevets",
+        "marques",
+        "innovation",
+        "propriété intellectuelle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Normalisation, qualité et culture d'entreprise",
+      "texte": [
+        "Art.19.- L'État s'engage à mettre en place un système national de normalisation, de métrologie, de certification et de gestion de la qualité en phase avec le système international notamment l'Organisation internationale de la Normalisation.",
+        "Il appuie le développement de la culture de la qualité totale au sein des entreprises.",
+        "L'État encourage la formation des opérateurs économiques et le développement de la culture d'entreprise."
+      ],
+      "mots_cles": [
+        "normalisation",
+        "métrologie",
+        "certification",
+        "qualité",
+        "ISO"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Productivité, compétitivité et régulation",
+      "texte": [
+        "Art.20.- L'État favorise toute mesure visant à améliorer le niveau de productivité et de compétitivité des entreprises. Il soutient le développement des professions de conseil aux entreprises par la mise en place d'une réglementation appropriée. Il promeut une politique de réduction des coûts de transactions.",
+        "L'État s'engage à faciliter la réduction des coûts des facteurs de production afin de soutenir la compétitivité des entreprises.",
+        "Quand un service public fait naître un monopole naturel, l'État met en place les moyens de régulation de ce monopole. Le cas échéant, il crée un organe de régulation avec la participation du secteur privé et de la société civile.",
+        "Il offre aux investisseurs privés la possibilité de participer au financement des infrastructures économiques et sociales par le moyen de concessions de services publics et par toutes les autres formes d'implication du secteur privé."
+      ],
+      "mots_cles": [
+        "productivité",
+        "compétitivité",
+        "régulation",
+        "concessions",
+        "monopole"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Ressources humaines et marché du travail",
+      "texte": [
+        "Art.21.- L'État est conscient de la nécessité, pour l'investisseur, de disposer de ressources humaines en quantité et en qualification suffisantes. À cet effet, il renforce le secteur de l'éducation primaire de base afin d'améliorer le taux de scolarisation.",
+        "Il porte une attention particulière à la formation technique et professionnelle, publique et privée, et encourage les entreprises et les organisations professionnelles privées à contribuer davantage au développement des ressources humaines.",
+        "Il reconnaît la nécessité de rendre plus flexible la réglementation du travail, en conformité avec les normes internationales auxquelles l'État a souscrit."
+      ],
+      "mots_cles": [
+        "ressources humaines",
+        "formation professionnelle",
+        "marché du travail",
+        "éducation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Lutte contre les infractions économiques",
+      "texte": [
+        "Art.22.- L'État s'engage à lutter contre le blanchiment d'argent, le commerce de la drogue, la corruption et la fraude qui sont un frein sérieux au développement de son économie.",
+        "Cette mission de moralisation de la vie économique, le cas échéant, sera confiée à un organe autonome et à une institution communautaire dotée de moyens humains, financiers et juridiques suffisants."
+      ],
+      "mots_cles": [
+        "blanchiment",
+        "corruption",
+        "fraude",
+        "moralisation économique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Principes de la fiscalité nationale",
+      "texte": [
+        "Art.23.- La fiscalité nationale repose sur les principes de simplicité, d'équité et de modération dans la pression fiscale.",
+        "L'État s'applique à assurer une mise en œuvre homogène du tarif extérieur commun, à lutter contre la fraude et à limiter les régimes dérogatoires sources de distorsions et d'inefficacité. Le tarif préférentiel généralisé applicable aux produits d'origine communautaire est au taux zéro."
+      ],
+      "mots_cles": [
+        "fiscalité",
+        "tarif extérieur commun",
+        "pression fiscale",
+        "équité fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Modernisation fiscale et douanière",
+      "texte": [
+        "Art.24.- L'État s'engage à moderniser les administrations douanière et fiscale. À cet effet, il s'appuie sur la coopération douanière et fiscale régionale, la formation des cadres et des agents, l'informatisation des tâches et, au besoin, le recours aux sociétés de surveillance sur la base d'objectifs précis.",
+        "Il se fixe l'objectif de ramener au strict minimum nécessaire les délais de dédouanement des marchandises."
+      ],
+      "mots_cles": [
+        "modernisation fiscale",
+        "douanes",
+        "informatisation",
+        "dédouanement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Mesures fiscales et douanières incitatives",
+      "texte": [
+        "Art.25.- L'État, pour atteindre ces objectifs et respecter ces principes, adopte, outre les dispositions fiscales et douanières en vigueur dans le cadre du Code des Douanes et du Code Général des Impôts, des mesures particulières qui s'articulent autour de :",
+        "Douanes :",
+        "- la suspension des droits de douanes sous forme d'admission temporaire ou d'entrée en franchise pour les activités de recherche en matière de ressources naturelles ;",
+        "- la suspension des droits de douanes sous forme d'admission temporaire ou d'entrée en franchise et de mécanisme de perfectionnement actif pour les activités de transformation.",
+        "Fiscalité :",
+        "- l'application généralisée de la TVA, assurant ainsi une fiscalité indirecte simplifiée et neutre pour l'entreprise ;",
+        "- l'application du taux de la TVA égal à zéro sur les productions exportées permettant le remboursement de la TVA acquittée sur les investissements et les dépenses d'exploitation des entreprises exportatrices ;",
+        "- l'exemption de l'impôt sur les sociétés au profit des entreprises naissantes au cours des trois premiers exercices d'exploitation ;",
+        "- la réduction de 50 % de l'impôt sur les sociétés au profit des entreprises existantes au cours des trois premiers exercices qui suivent la réalisation des investissements. Ces investissements nouveaux doivent être égaux au moins au tiers des investissements productifs déjà réalisés ;",
+        "- la possibilité de procéder à des amortissements dégressifs et accélérés, et l'autorisation du report des résultats négatifs sur les exercices ultérieurs pour améliorer le cash-flow des entreprises dans leur phase de montée en régime ;",
+        "- l'application des dispositifs de réduction d'impôts visant à favoriser la protection de l'environnement suivant les Codes spécifiques, la recherche technologique, la formation professionnelle et le recrutement, par les PME-PMI des jeunes diplômés ;",
+        "- la garantie de la stabilité de la fiscalité locale et d'État pendant toute la durée des investissements réalisés dans le cadre de la présente Charte ;",
+        "- l'allègement de la fiscalité en faveur des entreprises qui réalisent des investissements à caractère social ;",
+        "- la modération des droits d'enregistrement pour la création d'entreprises, les augmentations de capital, les fusions de sociétés, les mutations des actions et des parts sociales."
+      ],
+      "mots_cles": [
+        "incitations fiscales",
+        "admission temporaire",
+        "franchise douanière",
+        "TVA",
+        "exonération IS",
+        "amortissement dégressif",
+        "stabilité fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Exclusions des avantages",
+      "texte": [
+        "Art.26.- Les avantages, prévus dans le cadre fiscal et douanier, ne sont pas applicables aux activités commerciales, de courtage et de négoce, d'importation ou de fabrication d'armes de guerre et d'importation des déchets toxiques ou assimilés.",
+        "Toutefois, ces avantages s'étendent, exceptionnellement, aux activités commerciales liées à la collecte, au stockage, à l'entreposage, à la distribution et à l'exportation des produits de fabrication locale, à l'exclusion des boissons."
+      ],
+      "mots_cles": [
+        "exclusions",
+        "armes",
+        "déchets toxiques",
+        "activités commerciales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26 bis (L.F. 2026)",
+      "titre": "Délimitation des biens éligibles aux avantages douaniers",
+      "texte": [
+        "(L.F. 2026 - nouveau) Pour l'agrément des entreprises aux régimes de la loi n° 06-2003 du 18 janvier 2003 portant charte des investissements, le champ des biens éligibles aux avantages douaniers concédés dans les conventions d'établissement, en application du décret n° 2004-30 du 18 février 2004, est délimité aux seuls biens qui ont un lien direct avec l'exercice de l'activité agréée.",
+        "On entend par lien direct avec l'exercice de l'activité agréée, les biens qui sont spécialisés dans le tarif des douanes de la CEMAC pour la branche d'activité objet de la convention d'établissement.",
+        "De même, sont considérés comme ayant un lien direct avec l'exercice de l'activité agréée, les biens figurant dans les annexes d'investissements et de l'actif roulant agréés par les services techniques du ministère concerné et du ministère en charge des finances.",
+        "À ce titre, tout bien ne répondant pas à la définition ci-dessus est soumis au régime de droit commun.",
+        "Toutefois, sont exclus des avantages douaniers susceptibles d'être concédés à toute entreprise éligible à la charte des investissements, les biens repris ci-dessous :",
+        "• le matériel et les fournitures de bureau ;",
+        "• les conteneurs « dernier voyage » de la sous-position tarifaire 8609.00.00.000, à l'exclusion de ceux destinés au transport des marchandises par les sociétés de transport ;",
+        "• les aliments ;",
+        "• les articles d'hygiène destinés à l'usage individuel des clients ou à l'entretien des équipements et locaux des entreprises agréées (papiers hygiéniques, savons, brosses à dents, dentifrices, produits chimiques, etc.) ;",
+        "• les tenues de travail et équipements de protection individuelle (vêtements, chaussures, casques, lunettes, etc.) ;",
+        "• les articles publicitaires de toute nature ;",
+        "• les meubles, ameublements, appareils électro-ménagers, appareils électriques et les appareils de conditionnement d'air de type monobloc et split système, destinés aux bureaux et logements du personnel ;",
+        "• les biens constitutifs de l'investissement et du stock, propriété des prestataires de service et des sous-traitants des entreprises agréées ;",
+        "• les matériaux et les biens destinés à la construction et à l'équipement des bâtiments administratifs ainsi que des bases vie ;",
+        "• les véhicules de tourisme de la position tarifaire 87.03 ;",
+        "• le matériel de transport de la section XVII du tarif des douanes de la CEMAC, destiné au transport du personnel ;",
+        "• les véhicules usagés du chapitre 87 ;",
+        "• les véhicules pour le transport des personnes relevant de position tarifaire 87.02 non équipés des sanitaires ;",
+        "• les parties, accessoires et pneumatiques du matériel de transport de la section XVII du tarif des douanes de la CEMAC ;",
+        "• outils et outillages à main, et de façon générale, les parties et fournitures d'emploi général.",
+        "Cette liste fait l'objet d'actualisation en tant que de besoin par arrêté conjoint du ministre chargé de l'économie et du ministre chargé des finances."
+      ],
+      "mots_cles": [
+        "biens éligibles",
+        "avantages douaniers",
+        "charte investissements",
+        "convention établissement",
+        "lien direct activité agréée",
+        "tarif douanes CEMAC",
+        "exclusions douanières",
+        "matériel bureau",
+        "conteneurs dernier voyage",
+        "articles hygiène",
+        "tenues de travail",
+        "EPI",
+        "articles publicitaires",
+        "meubles",
+        "climatisation",
+        "prestataires sous-traitants",
+        "bâtiments administratifs",
+        "bases vie",
+        "véhicules tourisme 87.03",
+        "véhicules usagés",
+        "véhicules 87.02",
+        "parties accessoires",
+        "outils outillages",
+        "arrêté conjoint"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Régimes fiscaux particuliers et fiscalité simplifiée",
+      "texte": [
+        "Art.27.- L'État adopte les dispositions fiscales et douanières particulières à certains secteurs et/ou zones d'activité jugés prioritaires.",
+        "Il met, progressivement, en place une fiscalité simplifiée pour les micros entreprises et le secteur informel."
+      ],
+      "mots_cles": [
+        "régimes particuliers",
+        "secteurs prioritaires",
+        "fiscalité simplifiée",
+        "micro-entreprises",
+        "secteur informel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Développement territorial",
+      "texte": [
+        "Art.28.- Pour favoriser un développement harmonieux du territoire, des avantages spéciaux sont accordés aux entreprises qui investissent dans les régions enclavées ou arriérées : réduction d'impôts, prime d'équipement et compensation pour les services sociaux fournis par l'entreprise et qui rentrent dans les missions normales de l'État.",
+        "Ces mesures, modulées en fonction du handicap à surmonter, sont définies par voie réglementaire, sans, pour autant, constituer une distorsion grave aux règles de la concurrence."
+      ],
+      "mots_cles": [
+        "développement territorial",
+        "régions enclavées",
+        "prime équipement",
+        "réduction impôts"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Zones de développement préférentielles",
+      "texte": [
+        "Art.29.- L'État adopte des dispositions fiscales et douanières particulières relatives aux zones de développement préférentielles intégrant les zones franches."
+      ],
+      "mots_cles": [
+        "zones franches",
+        "zones préférentielles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Système financier",
+      "texte": [
+        "Art.30.- Le Congo est membre de la CEMAC dont les États disposent d'une monnaie commune convertible. Le monopole de son émission et de sa gestion est confié à une banque centrale commune, la BEAC.",
+        "L'État garantit à cette banque une autonomie pour définir et conduire une politique monétaire saine, soucieuse de la stabilité de la monnaie et du respect des dispositions du mécanisme de surveillance multilatérale."
+      ],
+      "mots_cles": [
+        "CEMAC",
+        "BEAC",
+        "monnaie",
+        "politique monétaire",
+        "surveillance multilatérale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Liberté des mouvements de capitaux",
+      "texte": [
+        "Art.31.- Le Congo est membre du Fonds Monétaire International dont l'article 8 des statuts garantit la liberté des mouvements de capitaux pour les transactions courantes.",
+        "Les conditions et les délais d'exécution de transfert de fonds doivent être améliorés et mieux connus des acteurs économiques."
+      ],
+      "mots_cles": [
+        "FMI",
+        "mouvements capitaux",
+        "transfert fonds"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Système bancaire et supervision",
+      "texte": [
+        "Art.32.- L'État s'engage à tout mettre en œuvre pour la mise en place d'un système bancaire viable dont la mission de contrôle et de supervision est confiée à la COBAC qui garantit la viabilité, à long terme, de ce secteur.",
+        "Celle-ci est chargée de veiller au respect des normes prudentielles par les banques.",
+        "L'État soutient l'action de la COBAC et garantit la bonne exécution de ses décisions pertinentes."
+      ],
+      "mots_cles": [
+        "COBAC",
+        "système bancaire",
+        "normes prudentielles",
+        "supervision"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Mobilisation de l'épargne",
+      "texte": [
+        "Art.33.- L'État poursuit les efforts pour mobiliser l'épargne destinée au financement des investissements.",
+        "Il procède à l'assainissement de la gestion dans le secteur des assurances et de la sécurité sociale en les soumettant au contrôle des organismes régionaux, tels que la CIMA, pour les assurances, et la Conférence internationale de Prévoyance Sociale, pour les organismes de sécurité sociale.",
+        "À l'effet de renforcer la mobilisation de l'épargne en faveur de l'investissement, l'État a entrepris de mettre en place de nouveaux instruments, parmi lesquels un marché financier.",
+        "Il soutient les institutions de crédit et met en place un cadre juridique pour la sécurité de leurs opérations et celle des épargnants."
+      ],
+      "mots_cles": [
+        "épargne",
+        "CIMA",
+        "assurances",
+        "marché financier",
+        "sécurité sociale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Financement du développement",
+      "texte": [
+        "Art.34.- La mobilisation de l'épargne locale et les ressources extérieures en faveur des projets de développement sont assurées par une institution sous régionale de financement de développement prévue par le traité de la CEMAC et la Banque de Développement des États de l'Afrique Centrale."
+      ],
+      "mots_cles": [
+        "financement développement",
+        "BDEAC",
+        "CEMAC"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Accès au crédit des PME-PMI",
+      "texte": [
+        "Art.35.- L'État s'engage à faciliter l'accès des petites et moyennes entreprises/petites et moyennes industries au crédit et à promouvoir leur capacité de gestion et de développement."
+      ],
+      "mots_cles": [
+        "PME",
+        "PMI",
+        "crédit",
+        "accès financement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Financement des exportations",
+      "texte": [
+        "Art.36.- L'État adhère aux institutions spécialisées dans le financement des exportations et dans l'assurance du risque exportation.",
+        "Il encourage l'extension, dans son territoire, des activités de la banque africaine d'import-export et d'autres institutions de financement."
+      ],
+      "mots_cles": [
+        "exportations",
+        "assurance export",
+        "Afreximbank"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Règlement des différends",
+      "texte": [
+        "Art.37.- Les différends résultant de l'interprétation ou de l'application de la présente charte sont réglés par les juridictions congolaises.",
+        "Toutefois, des procédures particulières d'arbitrage ou de conciliation peuvent être convenues par les parties.",
+        "Ces procédures peuvent, en cas de nécessité, être fondées :",
+        "- sur la convention qui régit la Cour de justice communautaire ;",
+        "- sur le traité du 17 octobre 1993 qui crée l'OHADA ;",
+        "- sur le Centre International de Règlement des Différends relatifs aux Investissements internationaux."
+      ],
+      "mots_cles": [
+        "règlement différends",
+        "arbitrage",
+        "OHADA",
+        "CIRDI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Régimes antérieurs",
+      "texte": [
+        "Art.38.- Les régimes et les conventions, octroyés antérieurement et encore en vigueur, peuvent à l'initiative, soit du Gouvernement, soit des entreprises, faire l'objet de renégociation en vue de leur adaptation aux dispositions de la présente charte, notamment en ce qui concerne les clauses fiscales et douanières qu'ils comportent."
+      ],
+      "mots_cles": [
+        "régimes antérieurs",
+        "renégociation",
+        "adaptation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Modalités d'application",
+      "texte": [
+        "Art.39.- Les modalités d'application des dispositions de la présente charte ainsi que l'organisation et le fonctionnement de la commission nationale des investissements sont fixés par voie réglementaire."
+      ],
+      "mots_cles": [
+        "modalités application",
+        "commission nationale investissements",
+        "réglementation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Complémentarité par codes spécifiques",
+      "texte": [
+        "Art.40.- La Charte nationale d'investissements peut être complétée sans préjudice des présentes dispositions, par des Codes spécifiques, précisant les conditions techniques, financières et d'exploitation de certains secteurs d'activité."
+      ],
+      "mots_cles": [
+        "codes spécifiques",
+        "secteurs activité",
+        "complémentarité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Abrogations",
+      "texte": [
+        "Art.41.- Sont et demeurent abrogées toutes dispositions antérieures ou contraires à celles de la présente loi, notamment celles de la loi n°08-92 du 10 avril 1992 portant Code des investissements modifiée par la loi n°7-96 du 6 mars 1996."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "code investissements 1992"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Exécution de la loi",
+      "texte": [
+        "Art.42.- La présente loi sera exécutée comme loi de l'État."
+      ],
+      "mots_cles": [
+        "exécution",
+        "loi État"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

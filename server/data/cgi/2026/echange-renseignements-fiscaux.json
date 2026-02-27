@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "document": "Échange des renseignements avec les administrations fiscale et douanière",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-ECHANG",
+    "partie": null,
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "5.5. Échange des renseignements avec les administrations fiscale et douanière",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de l'échange obligatoire de renseignements",
+      "texte": [
+        "Art.1.- Il est institué entre les entités publiques et privées, installées sur le territoire de la République du Congo, et les administrations fiscale et douanière un échange obligatoire des renseignements sur l'exercice des activités professionnelles.",
+        "Les administrations fiscales et douanières, entre elles, sont également soumises à cet échange de renseignements."
+      ],
+      "mots_cles": [
+        "échange obligatoire renseignements",
+        "entités publiques privées",
+        "administrations fiscale douanière",
+        "activités professionnelles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Finalité de l'échange de renseignements",
+      "texte": [
+        "Art.2.- L'échange obligatoire des renseignements sur l'exercice des activités des entités publiques et privées est le moyen d'offrir, périodiquement, aux autorités fiscales et douanières, des renseignements sur la grille des risques de non-conformité au sein de leurs administrations respectives, en vue de la prise en charge et de l'amélioration de leurs performances."
+      ],
+      "mots_cles": [
+        "finalité échange",
+        "renseignements périodiques",
+        "grille risques non-conformité",
+        "amélioration performances"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Définitions",
+      "texte": [
+        "Art.3.- Au sens du présent décret, on entend par :",
+        "• entité publique : toute personne morale de droit public dotée d'un comptable public ou tout organisme public remplissant une mission d'intérêt public ;",
+        "• entité privée : toute entreprise ou organisme non public qui appartient en totalité ou majoritairement à des personnes physiques ou morales ;",
+        "• échange des renseignements : tout processus par lequel les entités publiques ou privées conviennent de partager les renseignements d'activités liées à leur objet social ;",
+        "• contribuable : toute personne physique ou morale assujettie à un impôt, droit ou taxe ;",
+        "• opérateur économique : toute personne physique ou morale, tout groupement de personnes doté ou non de la personnalité morale, qui offre ou fournit sur le marché des services, des travaux ou des produits."
+      ],
+      "mots_cles": [
+        "définitions",
+        "entité publique",
+        "entité privée",
+        "échange renseignements",
+        "contribuable",
+        "opérateur économique"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Objectifs de l'échange de renseignements",
+      "texte": [
+        "Art.4.- L'échange obligatoire des renseignements sur l'exercice des activités des entités publiques et privées vise, notamment, à :",
+        "• promouvoir et encourager l'engagement volontaire des contribuables ;",
+        "• éclairer les autorités fiscales et douanières dans l'évaluation et la gestion des risques de non-conformité ;",
+        "• prévenir les risques de fraudes fiscales et douanières ;",
+        "• lutter contre la fraude fiscale et la criminalité financière ;",
+        "• renforcer la conformité volontaire et le niveau de civisme fiscal ;",
+        "• élargir l'assiette fiscale et douanière ;",
+        "• garantir et sécuriser les recettes du budget de l'État ;",
+        "• détecter et réduire les risques de non-conformité en matière fiscale et douanière ;",
+        "• réduire les coûts de la conformité en matière fiscale et douanière ;",
+        "• lutter contre l'utilisation abusive des conventions fiscales de non double imposition et l'érosion des bases imposables ;",
+        "• renforcer les moyens de suivi des opérations fiscales et douanières ;",
+        "• renforcer la confiance entre les usagers et les administrations fiscale et douanière ;",
+        "• garantir au Congo le respect des exigences du cadre inclusif de l'OCDE/G20 sur l'application des standards internationaux en matière de transparence et d'échange des renseignements à des fins fiscales et douanières."
+      ],
+      "mots_cles": [
+        "objectifs",
+        "engagement volontaire",
+        "gestion risques",
+        "fraude fiscale",
+        "criminalité financière",
+        "civisme fiscal",
+        "assiette fiscale",
+        "recettes État",
+        "OCDE G20",
+        "transparence",
+        "standards internationaux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Champ d'application général",
+      "texte": [
+        "Art.5.- L'échange obligatoire des renseignements institué par le présent décret s'applique :",
+        "• à toutes les personnes physiques ou morales ;",
+        "• aux administrations ou organismes de droit public ou privé ;",
+        "• aux institutions financières ou assimilées."
+      ],
+      "mots_cles": [
+        "champ application",
+        "personnes physiques morales",
+        "administrations organismes",
+        "institutions financières"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Entités spécifiquement soumises à l'échange",
+      "texte": [
+        "Art.6.- Sont également soumis, de manière spécifique, à l'obligation d'échange des renseignements, les organismes ou entités ci-après :",
+        "• la caisse nationale de la sécurité sociale ;",
+        "• le registre du commerce et du crédit immobilier ;",
+        "• le registre foncier et de la propriété immobilière ;",
+        "• les banques, les sociétés de leasing et de crédit-bail ;",
+        "• les sociétés spécialisées en valeurs du trésor ;",
+        "• les sociétés gestionnaires d'actifs financiers ;",
+        "• les compagnies d'assurances ;",
+        "• les agences d'importations et d'exportations ;",
+        "• les groupements d'intérêts économiques ;",
+        "• les entités en situation de crédit structurel de TVA ;",
+        "• les sociétés pétrolières ;",
+        "• les sociétés forestières ;",
+        "• les sociétés de téléphonie mobile et de communication électronique ;",
+        "• les concessionnaires automobiles ;",
+        "• les sociétés de distribution d'eau et d'électricité ;",
+        "• la caisse congolaise d'amortissement ;",
+        "• l'agence congolaise pour la création des entreprises ;",
+        "• le greffe du tribunal de commerce ;",
+        "• le guichet unique des opérations transfrontalières ;",
+        "• l'agence nationale de l'artisanat ;",
+        "• la direction générale de l'économie, pour le registre des entités bénéficiaires des conventions d'établissement ;",
+        "• le trésor public pour la base de données des paiements relatifs aux marchés publics ;",
+        "• les entités publiques en charge de l'engagement, de l'ordonnancement et du paiement des marchés publics ;",
+        "• l'agence de régulation des transferts de fonds ;",
+        "• la direction générale de la monnaie et des relations financières avec l'extérieur ;",
+        "• l'agence nationale d'investigation financière ;",
+        "• toutes les entités possédant des bases de données pouvant contribuer à l'atteinte des objectifs nationaux d'échange d'informations à des fins fiscales et douanières."
+      ],
+      "mots_cles": [
+        "entités spécifiques",
+        "CNSS",
+        "registre commerce",
+        "registre foncier",
+        "banques",
+        "leasing",
+        "assurances",
+        "pétrolières",
+        "forestières",
+        "téléphonie",
+        "eau électricité",
+        "ACPCE",
+        "guichet unique",
+        "trésor public",
+        "marchés publics",
+        "ARTF",
+        "ANIF"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Fichiers douaniers à échanger avec l'administration fiscale",
+      "texte": [
+        "Art.7.- Pour l'administration douanière, les renseignements à échanger obligatoirement avec l'administration fiscale concernent, sans être exhaustifs, les fichiers ci-après :",
+        "• fichier des déclarations douanières à l'importation par régime ;",
+        "• fichier des déclarations douanières à l'exportation par régime ;",
+        "• fichier de l'ensemble des déclarants en douane ;",
+        "• fichier des statistiques fiscales et économiques par espèce tarifaire ;",
+        "• fichier des données détaillées sur les produits sensibles ;",
+        "• fichier des monographies de procédés de fraudes douanières ;",
+        "• fichier des relevés de TVA payées au cordon douanier par importateur ;",
+        "• fichier de relevés des déclarations dont les valeurs ont été révisées ;",
+        "• fichiers des importateurs n'ayant pas régularisé les acquits-à-caution ;",
+        "• fichier des monographies et listes détaillées des autres infractions douanières ;",
+        "• fichier des bénéficiaires d'exonérations douanières, des régimes suspensifs ou de transit ;",
+        "• fichier des droits de douane et de TVA liquidés et payés au cordon douanier par entreprise ;",
+        "• fichier de la dépense fiscale au cordon douanier par entreprise et par type de droit ;",
+        "• fichier des biens imposés au taux réduit ;",
+        "• fichier des données douanières d'import et export par opérateur ;",
+        "• fichier des déclarations des devises des voyageurs."
+      ],
+      "mots_cles": [
+        "fichiers douaniers",
+        "déclarations importation exportation",
+        "déclarants douane",
+        "statistiques tarifaires",
+        "produits sensibles",
+        "fraudes douanières",
+        "TVA cordon douanier",
+        "acquits-à-caution",
+        "exonérations douanières",
+        "régimes suspensifs transit",
+        "dépense fiscale",
+        "devises voyageurs"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Fichiers fiscaux à échanger avec l'administration douanière",
+      "texte": [
+        "Art.8.- Pour l'administration fiscale, les renseignements à échanger obligatoirement avec l'administration douanière concernent, sans être exhaustifs, les fichiers ci-après :",
+        "• fichier des contribuables immatriculés au NIU, par résidence fiscale ;",
+        "• fichier des déclarations annuelles par contribuable et par type d'impôts ;",
+        "• fichier des paiements annuels par contribuable et par type d'impôts ;",
+        "• fichier de la dépense fiscale intérieure par contribuable et par type d'impôts ;",
+        "• fichier des restes annuels à recouvrer par contribuable et par type d'impôts ;",
+        "• fichier des déclarations mensuelles et des paiements de TVA avec états de déductions ;",
+        "• fichier des remboursements de crédits de TVA par bénéficiaire ;",
+        "• fichier statistique des franchises annuelles de TVA accordées par type de bénéficiaire ;",
+        "• fichier de déclarations et paiements des droits d'accises (DA) ;",
+        "• fichier des déclarations annuelles des salaires (DAS1) et des autres rémunérations versées aux tiers non-salariés de l'entreprise (DAS2) ;",
+        "• fichier des déclarations statistiques et fiscales (DSF) des entreprises ;",
+        "• fichier des entreprises bénéficiaires des conventions d'établissements avec leurs dates d'effet, listes des impôts et taxes exonérés et période de validité ;",
+        "• fichier des entreprises soumises à des régimes spécifiques d'imposition incluant les informations sur leurs situations fiscales annuelles ;",
+        "• fichier des entreprises inciviques selon le niveau de risque de non-conformité."
+      ],
+      "mots_cles": [
+        "fichiers fiscaux",
+        "NIU",
+        "déclarations annuelles",
+        "paiements impôts",
+        "dépense fiscale intérieure",
+        "restes à recouvrer",
+        "TVA déductions",
+        "remboursements TVA",
+        "droits accises",
+        "DAS1 DAS2",
+        "DSF",
+        "conventions établissements",
+        "régimes spécifiques",
+        "entreprises inciviques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Échange de toutes bases de données",
+      "texte": [
+        "Art.9.- Les échanges des renseignements effectués doivent prendre en compte, sans être exhaustifs, tous les fichiers d'informations provenant des bases de données des deux administrations, y compris toutes celles provenant des autres entités publiques et privées pouvant être exploitées pour les besoins de service par l'une ou l'autre administration."
+      ],
+      "mots_cles": [
+        "échange bases données",
+        "fichiers informations",
+        "entités publiques privées",
+        "besoins service"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Informations des entités publiques et privées",
+      "texte": [
+        "Art.10.- Pour les autres entités publiques et privées, les informations à échanger obligatoirement avec les administrations fiscale et douanière concernent, sans être exhaustifs :",
+        "• le numéro d'identification unique (NIU) de l'entité, personne morale ou physique renseignée ;",
+        "• le nom ou la désignation, l'adresse complète et les coordonnées téléphoniques ;",
+        "• la nature d'activités ou opérations réalisées ;",
+        "• le volume et la valeur des transactions réalisées avec les tiers renseignés ;",
+        "• les références de la facture électronique certifiée émise ;",
+        "• les informations relatives au paiement de la facture et le mode de paiement ;",
+        "• les informations d'horodatage de la facture reçue du tiers ou toute autre pièce équivalente ;",
+        "• la licence unique d'exploitation des entreprises."
+      ],
+      "mots_cles": [
+        "informations entités",
+        "NIU",
+        "désignation adresse",
+        "nature activités",
+        "volume valeur transactions",
+        "facture électronique certifiée",
+        "paiement facture",
+        "horodatage",
+        "licence exploitation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Instruments de l'échange de renseignements",
+      "texte": [
+        "Art.11.- Les échanges des renseignements entre l'administration fiscale et l'administration des douanes s'effectuent à travers les instruments administratifs suivants :",
+        "• les directives, circulaires ou instructions sur les relations et l'échange d'informations ;",
+        "• les protocoles de collaboration ou protocoles d'accord (PDA) sur la coopération et l'échange de données via les autorités compétentes ;",
+        "• les bases de données interconnectées, interopérables ou intégrées ;",
+        "• tout autre instrument jugé utile pour renforcer l'échange."
+      ],
+      "mots_cles": [
+        "instruments échange",
+        "directives circulaires",
+        "protocoles accord PDA",
+        "bases données interconnectées",
+        "interopérabilité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Modalités d'échange des tiers vers les administrations",
+      "texte": [
+        "Art.12.- Les échanges des renseignements des tiers vers les administrations fiscale et douanière s'effectuent selon les modalités ci-après :",
+        "• échange sur demande : les informations sont fournies à la demande de l'administration ;",
+        "• échange systématique : les informations sont fournies régulièrement selon les termes de l'accord convenu, sans attendre qu'une demande en soit faite ;",
+        "• échange spontané : les informations jugées pertinentes sont transmises immédiatement, sans que les administrations soient tenues d'en formuler la demande ;",
+        "• échange automatique : les informations sont échangées au moyen de l'informatique par un accès informatisé à la base de données de l'entité tierce."
+      ],
+      "mots_cles": [
+        "modalités échange",
+        "échange sur demande",
+        "échange systématique",
+        "échange spontané",
+        "échange automatique",
+        "accès informatisé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Processus de partage sécurisé",
+      "texte": [
+        "Art.13.- L'échange des renseignements entre les entités publiques, privées et les administrations fiscale et douanière s'effectue selon un processus de partage structuré et sécurisé garantissant la confidentialité des données des contribuables et des opérateurs économiques."
+      ],
+      "mots_cles": [
+        "processus partage",
+        "structuré sécurisé",
+        "confidentialité données",
+        "contribuables",
+        "opérateurs économiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Absence d'obligation de justification des demandes",
+      "texte": [
+        "Art.14.- Les administrations fiscale et douanière ne sont pas tenues à l'obligation de justifier ou de motiver les demandes de renseignements à caractère fiscal ou douanier qu'elles adressent aux entités publiques ou privées."
+      ],
+      "mots_cles": [
+        "absence obligation justification",
+        "demandes renseignements",
+        "entités publiques privées"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Collecte et traitement électronique",
+      "texte": [
+        "Art.15.- Les informations reçues par les administrations fiscales et douanières sont collectées, traitées et sécurisées de manière électronique.",
+        "Les administrations fiscale et douanière sont tenues de créer toutes les conditions d'interconnexion, d'interopérabilité de leurs systèmes d'information avec les systèmes des autres entités publiques ou privées."
+      ],
+      "mots_cles": [
+        "collecte électronique",
+        "traitement sécurisé",
+        "interconnexion",
+        "interopérabilité systèmes information"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Système intégré de collecte et stockage",
+      "texte": [
+        "Art.16.- Les administrations fiscale et douanière, en partenariat avec les autres entités publiques et privées, peuvent mettre en place un système intégré de collecte et de stockage d'informations à caractère fiscal et douanier."
+      ],
+      "mots_cles": [
+        "système intégré",
+        "collecte stockage",
+        "partenariat entités",
+        "informations fiscales douanières"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Intégrité et confidentialité des informations",
+      "texte": [
+        "Art.17.- Les administrations fiscale et douanière sont tenues de respecter l'intégrité et la confidentialité des informations reçues, de prendre des mesures de sécurité propres à assurer la protection des informations collectées, utilisées, et de les conserver en tenant compte de leur sensibilité.",
+        "Le traitement des renseignements communiqués se fait via un accès sécurisé, limité, contrôlé et exclusivement réservé au personnel habilité."
+      ],
+      "mots_cles": [
+        "intégrité confidentialité",
+        "mesures sécurité",
+        "protection informations",
+        "sensibilité",
+        "accès sécurisé",
+        "personnel habilité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Usage exclusif et sanctions",
+      "texte": [
+        "Art.18.- Les renseignements communiqués ne peuvent être utilisés qu'à des fins prévues par le présent décret.",
+        "Toute utilisation non autorisée des informations ou leur divulgation à des parties non concernées est sanctionnée conformément à la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "usage exclusif",
+        "fins prévues décret",
+        "utilisation non autorisée",
+        "divulgation",
+        "sanctions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Création du comité national d'échange des renseignements",
+      "texte": [
+        "Art.19.- Il est créé un comité national d'échange des renseignements entre les entités publiques, les entités privées et les administrations fiscale et douanière."
+      ],
+      "mots_cles": [
+        "comité national",
+        "échange renseignements",
+        "entités publiques privées",
+        "administrations fiscale douanière"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Rôle du comité national",
+      "texte": [
+        "Art.20.- Le comité national d'échange des renseignements est l'organe de supervision et de coordination des activités d'implémentation du système d'échange obligatoire des renseignements entre les entités publiques, les entités privées et les administrations fiscale et douanière."
+      ],
+      "mots_cles": [
+        "supervision coordination",
+        "implémentation système",
+        "échange obligatoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Missions du comité national",
+      "texte": [
+        "Art.21.- Le comité national d'échange des renseignements offre un cadre permanent de travail et de coopération des administrations fiscale et douanière avec les autres entités publiques et privées.",
+        "A ce titre, il est chargé, notamment, de :",
+        "• assurer le suivi de la mise en œuvre du système d'échange des renseignements à des fins fiscales et douanières ;",
+        "• proposer des réformes d'optimisation dudit système ;",
+        "• veiller à la réalisation, dans des meilleures conditions technologiques, des opérations de collecte, de stockage, de sécurisation et de traitement d'informations."
+      ],
+      "mots_cles": [
+        "missions comité",
+        "cadre permanent",
+        "coopération",
+        "suivi mise en œuvre",
+        "réformes optimisation",
+        "conditions technologiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Composition du comité national",
+      "texte": [
+        "Art.22.- Le comité national d'échange des renseignements est composé ainsi qu'il suit :",
+        "• Supervision :",
+        "- le Ministre de l'économie et des finances ;",
+        "- le Ministre du budget, des comptes publics et du portefeuille public ;",
+        "• Coordination :",
+        "- président : le secrétaire permanent aux réformes des finances publiques ;",
+        "- vice-président : le représentant des organisations professionnelles et interprofessionnelles du secteur privé ;",
+        "- rapporteur : un expert du secrétariat permanent aux réformes des finances publiques ;",
+        "• Membres :",
+        "- le directeur général des impôts et des domaines et trois collaborateurs ;",
+        "- le directeur général des douanes et des droits indirects et trois collaborateurs ;",
+        "- le directeur général du portefeuille public et trois collaborateurs ;",
+        "- le directeur des systèmes d'information du ministère du budget, des comptes publics et du portefeuille public ;",
+        "- le conseiller administratif et juridique du Ministre du budget, des comptes publics et du portefeuille public ;",
+        "- le conseiller à la fiscalité du Ministre du budget, des comptes publics et du portefeuille public ;",
+        "- le conseiller aux douanes du Ministre du budget, des comptes publics et du portefeuille public ;",
+        "- un représentant du ministère chargé des petites et moyennes entreprises ;",
+        "- un représentant du ministère chargé de l'intérieur ;",
+        "- un représentant du ministère chargé de l'économie numérique ;",
+        "- un représentant du ministère chargé de l'économie informelle ;",
+        "- deux experts du secrétariat permanent des réformes des finances publiques ;",
+        "- deux représentants des organisations professionnelles et interprofessionnelles du secteur privé.",
+        "Le comité peut faire appel à tout sachant pour l'exécution de ses missions."
+      ],
+      "mots_cles": [
+        "composition comité",
+        "supervision ministres",
+        "coordination secrétaire permanent",
+        "DGID",
+        "DGDDI",
+        "portefeuille public",
+        "conseillers",
+        "PME",
+        "intérieur",
+        "économie numérique",
+        "économie informelle",
+        "secteur privé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Disposition finale",
+      "texte": [
+        "Art.23.- Le présent décret, qui abroge toutes dispositions antérieures contraires, sera enregistré et publié au Journal officiel de la République du Congo."
+      ],
+      "mots_cles": [
+        "disposition finale",
+        "abrogation",
+        "publication JO"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

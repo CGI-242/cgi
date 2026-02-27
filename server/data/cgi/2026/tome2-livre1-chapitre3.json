@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 3,
+    "chapitre_titre": "Délais pour l'enregistrement",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 58",
+      "titre": "Délais pour les actes publics",
+      "texte": [
+        "Les délais pour faire enregistrer les actes publics sont déterminés par les articles ci-après."
+      ],
+      "mots_cles": [
+        "délais",
+        "enregistrement",
+        "actes publics"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Délais pour les actes de notaires",
+      "texte": [
+        "Ces délais sont :",
+        "1° de quinze jours pour les actes de notaires qui résident dans la localité où le bureau de l'enregistrement est établi ;",
+        "2° de trente jours pour ceux des notaires qui n'y résident pas ;",
+        "3° toutefois, les notaires bénéficient des mêmes délais que les greffiers pour l'enregistrement des actes constatant des adjudications judiciaires d'immeubles dans lesquelles ils ont été commis par le Tribunal et qui sont susceptibles de surenchère dans les délais prévus par les articles 962 et 973 du Code de procédure civile et 573 du Code de commerce."
+      ],
+      "mots_cles": [
+        "délais",
+        "notaires",
+        "quinze jours",
+        "trente jours",
+        "bureau de l'enregistrement",
+        "adjudications judiciaires",
+        "immeubles",
+        "surenchère",
+        "article 962 Code de procédure civile",
+        "article 973 Code de procédure civile",
+        "article 573 Code de commerce"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 60",
+      "titre": "Délais pour les actes judiciaires",
+      "texte": [
+        "Le délai est de trente jours pour les actes judiciaires établis en minutes et pour ceux dont il ne reste pas de minutes au greffe ou qui se délivrent en brevet.",
+        "Le délai est porté à quarante-cinq jours pour les actes ci-dessus qui seront dressés dans une localité autre que celle où le bureau de l'enregistrement est établi, et pour les actes judiciaires constatant adjudications sur saisie immobilière, sur licitation, sur vente de biens de mineurs et pour ceux portant adjudication des immeubles du failli."
+      ],
+      "mots_cles": [
+        "délais",
+        "actes judiciaires",
+        "trente jours",
+        "quarante-cinq jours",
+        "minutes",
+        "greffe",
+        "brevet",
+        "saisie immobilière",
+        "licitation",
+        "biens de mineurs",
+        "immeubles du failli"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 61",
+      "titre": "Délais pour les actes des agents d'exécution",
+      "texte": [
+        "Le délai pour faire enregistrer les actes des agents d'exécution et autres ayant pouvoir de faire des exploits et procès-verbaux est de dix jours.",
+        "Ce délai est porté à trente jours pour ceux de ces actes qui auront été dressés par des officiers ministériels, fonctionnaires ou agents résidant dans une localité autre que celle où le bureau d'Enregistrement est établi.",
+        "Exceptionnellement, il pourra être fait usage avant enregistrement des exploits d'ajournement ou de citation dressés par des huissiers résidant dans une localité autre que celle où le bureau d'enregistrement est établi, c'est-à-dire que les originaux de ces exploits pourront servir à enrôler les affaires avant d'avoir été soumis à la formalité, mais ils devront recevoir la formalité dans le délai."
+      ],
+      "mots_cles": [
+        "délais",
+        "agents d'exécution",
+        "exploits",
+        "procès-verbaux",
+        "dix jours",
+        "trente jours",
+        "officiers ministériels",
+        "huissiers",
+        "ajournement",
+        "citation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 62",
+      "titre": "Délai pour enregistrer les actes des administrations publiques",
+      "texte": [
+        "Le délai pour faire enregistrer les actes des administrations publiques assujettis à la formalité est de 45 jours.",
+        "A l'égard de ceux de ces actes qui ne doivent avoir d'exécution qu'après avoir été approuvés par l'autorité supérieure, le délai ne courra que du jour où la notification de cette approbation sera arrivée à l'acte qui doit supporter les droits. Mention de la date de cette notification devra être faite sur l'acte par l'agent qualifié qui la fera. Cette mention sera signée."
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST1",
+      "titre": "Actes de ventes publiques mobilières",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 63",
+      "titre": "Délai pour enregistrer les actes de ventes publiques mobilières",
+      "texte": [
+        "Le délai pour faire enregistrer les actes de ventes publiques mobilières dressés par des commissaires-priseurs ou autres officiers ministériels ou publics est fixé à quinze jours. Le délai est le même pour les procès-verbaux de ventes publiques de marchandises faites par les courtiers. Ce délai est porté à trente jours pour ceux de ces actes qui auront été dressés dans une localité autre que celle où le bureau de l'enregistrement est établi."
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST2",
+      "titre": "Testaments",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 64",
+      "titre": "Enregistrement des testaments",
+      "texte": [
+        "Les testaments déposés chez les notaires ou par eux reçus seront enregistrés dans les trois mois du décès des testateurs, à la diligence des héritiers, donataires, légataires ou exécuteurs testamentaires."
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST3",
+      "titre": "Actes sous-seing privé et mutations verbales",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Délai d'enregistrement des actes sous signature privée",
+      "texte": [
+        "Les actes faits sous signature privée qui porteront transmission de propriété ou d'usufruit de biens immeubles, les baux à ferme ou à loyer, sous-baux, cessions et subrogations de baux, et les engagements, aussi sous signature privée, de biens de même nature seront enregistrés dans les trois mois de leur date.",
+        "Il en est de même des conventions de sûretés, des actes constatant des privilèges et des conventions de prêts liés à l'investissement visés à l'article 226 du présent Code au tome 2.",
+        "Pour ceux des actes de ces espèces qui seront passés hors du Territoire et qui seront relatifs à des biens immeubles situés dans le Territoire, dans l'un des Territoires du Groupe, le délai sera de six mois."
+      ],
+      "mots_cles": [
+        "actes sous signature privée",
+        "transmission de propriété",
+        "usufruit",
+        "biens immeubles",
+        "baux à ferme",
+        "baux à loyer",
+        "sous-baux",
+        "cessions",
+        "subrogations",
+        "trois mois",
+        "conventions de sûretés",
+        "privilèges",
+        "prêts",
+        "article 226",
+        "six mois",
+        "hors du Territoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 66",
+      "titre": "Mutations entre vifs de propriété ou d'usufruit de biens immeubles",
+      "texte": [
+        "Sont soumis aux dispositions de l'article qui précède les mutations entre vifs de propriété ou d'usufruit de biens immeubles, alors même que les nouveaux possesseurs prétendraient qu'il n'existe pas de conventions écrites entre eux et les précédents propriétaires ou usufruitiers.",
+        "À défaut d'actes, il y sera suppléé par des déclarations détaillées et estimatives, dans les trois mois de l'entrée en possession."
+      ],
+      "mots_cles": [
+        "mutations verbales",
+        "mutations entre vifs",
+        "propriété",
+        "usufruit",
+        "biens immeubles",
+        "déclarations détaillées",
+        "déclarations estimatives",
+        "trois mois",
+        "entrée en possession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 66 bis",
+      "titre": "Enregistrement des actes visés aux articles 18 bis et 31 bis",
+      "texte": [
+        "Les actes visés aux articles 18 bis et 31 bis du présent Code doivent être enregistrés dans les trois mois de leur date."
+      ],
+      "mots_cles": [
+        "licences",
+        "brevets",
+        "article 18 bis",
+        "article 31 bis",
+        "trois mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST4",
+      "titre": "Locations verbales",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 67",
+      "titre": "Déclarations des mutations et locations verbales",
+      "texte": [
+        "1) À défaut de conventions écrites, les mutations, ainsi que les prorogations conventionnelles ou légales de jouissance de biens immeubles font l'objet de déclarations détaillées et estimatives qui sont déposées dans les trois premiers mois de chaque année au bureau de la situation de l'immeuble loué.",
+        "2) Les déclarations s'appliquent à la période courue du 1er janvier au 31 décembre de l'année précédente.",
+        "3) Les déclarations sont souscrites par la personne qui est propriétaire ou usufruitier de l'immeuble loué au premier jour du délai fixé au paragraphe 1 ci-dessus, quelles que soient les mutations de propriété intervenues en cours d'année.",
+        "En cas de sous-location, une déclaration est, en outre, souscrite par chacun des sous-bailleurs, locataires principaux ou cessionnaires.",
+        "4) Chaque immeuble fait l'objet d'une déclaration particulière qui mentionne obligatoirement :",
+        "a) les noms, prénoms, professions et domiciles des propriétaires ou usufruitiers de l'immeuble pendant la période d'imposition ;",
+        "b) les noms, prénoms, professions des divers locataires ayant occupé l'immeuble pendant la période d'imposition, la consistance des locaux loués à chacun d'eux ;",
+        "c) le montant pour chaque locataire, des loyers, charges comprises, pendant la période envisagée ;",
+        "d) le point de départ de chaque location et sa durée ;",
+        "e) le montant total des loyers, charges comprises, pour l'ensemble des locataires pendant la période d'imposition.",
+        "5) Le déclarant est tenu au paiement des droits exigibles, sauf son recours contre le preneur. Néanmoins, les parties restent solidaires pour le recouvrement du droit simple et de la pénalité."
+      ],
+      "mots_cles": [
+        "locations verbales",
+        "conventions écrites",
+        "mutations",
+        "prorogations",
+        "jouissance",
+        "biens immeubles",
+        "déclarations détaillées",
+        "déclarations estimatives",
+        "trois premiers mois",
+        "bureau de la situation",
+        "1er janvier",
+        "31 décembre",
+        "propriétaire",
+        "usufruitier",
+        "sous-location",
+        "locataires",
+        "loyers",
+        "charges",
+        "solidarité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 67 bis",
+      "titre": "Centimes additionnels sur les droits d'enregistrement",
+      "texte": [
+        "Les centimes additionnels sur les droits d'enregistrement sont payés au moment de l'enregistrement du bail et des mutations à titre onéreux."
+      ],
+      "mots_cles": [
+        "centimes additionnels",
+        "droits d'enregistrement",
+        "bail",
+        "mutations à titre onéreux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 68",
+      "titre": "Prescriptions non applicables aux locations verbales inférieures à 120.000 FCFA",
+      "texte": [
+        "Les prescriptions de l'article qui précède ne sont pas applicables aux locations verbales d'un immeuble dont le loyer n'excède pas 120.000 FCFA l'an."
+      ],
+      "mots_cles": [
+        "exemption",
+        "locations verbales",
+        "loyer",
+        "120.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST5",
+      "titre": "Droit au bail",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 69",
+      "titre": "Cession d'un droit au bail ou bénéfice d'une promesse de bail",
+      "texte": [
+        "Les actes de cession d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble, établis en la forme sous seing privé, doivent être enregistrés au bureau de la situation des biens dans le délai de trois mois de leur date.",
+        "À défaut d'acte constatant la cession, le droit est perçu sur une déclaration faite au bureau de l'enregistrement de la situation des biens dans les trois mois de l'entrée en jouissance des biens loués."
+      ],
+      "mots_cles": [
+        "cession",
+        "droit au bail",
+        "promesse de bail",
+        "immeuble",
+        "sous seing privé",
+        "trois mois",
+        "bureau de la situation",
+        "déclaration",
+        "entrée en jouissance"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST6",
+      "titre": "Fonds de commerce et clientèle",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Enregistrement des actes de mutation de fonds de commerce ou de clientèle",
+      "texte": [
+        "Les actes sous signatures privées contenant mutation de fonds de commerce ou de clientèle sont enregistrés dans les trois mois de leur date au bureau de l'enregistrement de la situation du fonds de commerce ou de la clientèle.",
+        "À défaut d'acte constatant la mutation, il y est suppléé par des déclarations détaillées et estimatives faites au bureau de l'enregistrement de la situation du fonds de commerce ou de la clientèle dans les trois mois de l'entrée en possession."
+      ],
+      "mots_cles": [
+        "mutation",
+        "fonds de commerce",
+        "clientèle",
+        "actes sous signatures privées",
+        "trois mois",
+        "bureau de l'enregistrement",
+        "déclarations détaillées",
+        "déclarations estimatives",
+        "entrée en possession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST7",
+      "titre": "Conventions synallagmatiques",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Enregistrement des conventions synallagmatiques",
+      "texte": [
+        "Doivent être enregistrés dans le délai de trois mois à compter de leur date tous les actes sous seing privé constatant des conventions synallagmatiques, y compris ceux prévus aux articles 236 et 237.",
+        "Doivent être enregistrés dans le même délai tous les actes ou écrits constatant la nature, la consistance ou la valeur des biens appartenant à chacun des époux lors de la célébration du mariage."
+      ],
+      "mots_cles": [
+        "conventions synallagmatiques",
+        "actes sous seing privé",
+        "trois mois",
+        "articles 236 et 237",
+        "époux",
+        "mariage",
+        "biens"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Enregistrement des actes sous-seing privé passés en pays étranger",
+      "texte": [
+        "Les actes sous-seing privé et les actes passés en pays étranger ou dans les territoires où l'enregistrement n'est pas établi sont enregistrés à tout moment sans observer le délai fixé à l'article 71 ci-dessus.",
+        "Les titres portant créance sur l'État congolais, hormis les mandats de paiement et les actes constatant une cession de créance sur l'État congolais, doivent être enregistrés dans un délai de trois mois sous peine de nullité."
+      ],
+      "mots_cles": [
+        "actes sous-seing privé",
+        "pays étranger",
+        "territoires",
+        "enregistrement",
+        "délai",
+        "article 71",
+        "créance sur l'État",
+        "trois mois",
+        "nullité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 73",
+      "titre": "Enregistrement des actes sous seing privés mentionnés dans les articles précédents",
+      "texte": [
+        "Les actes sous seing privés autres que ceux mentionnés dans les articles précédents et, sous réserves des conventions internationales relatives aux doubles impositions, les actes passés à l'étranger portant sur les services, les biens meubles et immeubles sis au Congo ou utilisés au Congo, doivent, dans le délai d'un mois à compter de leur date, être soumis à la formalité d'enregistrement au bureau du siège de l'établissement de la société au Congo.",
+        "À défaut de cette formalité, ces actes ne peuvent faire l'objet d'aucun usage, soit par acte public, soit en justice ou devant toute autre autorité constituée.",
+        "Ces actes sont soumis aux mêmes droits que les actes de même nature passés au Congo."
+      ],
+      "mots_cles": [
+        "actes sous seing privé",
+        "étranger",
+        "conventions internationales",
+        "doubles impositions",
+        "biens meubles",
+        "biens immeubles",
+        "Congo",
+        "un mois",
+        "siège établissement",
+        "usage"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST8",
+      "titre": "Mutations par décès",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 74",
+      "titre": "Délais pour l'enregistrement des déclarations des héritiers, donataires ou légataires",
+      "texte": [
+        "Les délais pour l'enregistrement des déclarations que les héritiers, donataires ou légataires auront à passer des biens aux échus ou transmis par décès, courront à compter du jour du décès et seront, à savoir :",
+        "1° de six mois, lorsque le décès sera arrivé dans le Territoire ;",
+        "2° d'un an, lorsque le décès sera arrivé hors du Territoire."
+      ],
+      "mots_cles": [
+        "déclarations de succession",
+        "héritiers",
+        "donataires",
+        "légataires",
+        "décès",
+        "six mois",
+        "un an",
+        "Territoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 75",
+      "titre": "Délai de six mois pour la mise en possession",
+      "texte": [
+        "Le délai de six mois ne courra que du jour de la mise en possession pour la succession d'un condamné, si ses biens sont séquestrés, celle qui aurait été séquestrée pour toute autre cause, celle d'un militaire ou d'un marin, ou d'un employé civil, s'il est mort en activité de service hors du Territoire ou enfin celle qui serait recueillie par indivis avec le Territoire."
+      ],
+      "mots_cles": [
+        "six mois",
+        "mise en possession",
+        "condamné",
+        "biens séquestrés",
+        "militaire",
+        "marin",
+        "employé civil",
+        "activité de service",
+        "indivis"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 76",
+      "titre": "Délai pour les déclarations de successions de personnes décédées hors du Territoire",
+      "texte": [
+        "Si, avant les derniers six mois des délais fixés pour les déclarations de succession, des personnes décédées hors du Territoire, les héritiers prennent possession des biens, il ne restera d'autre délai à courir, pour passer la déclaration, que celui de six mois, à compter du jour de la prise de possession."
+      ],
+      "mots_cles": [
+        "délais",
+        "déclarations de succession",
+        "décédés hors du Territoire",
+        "héritiers",
+        "prise de possession",
+        "six mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 77",
+      "titre": "Délai pour les héritiers, légataires et autres appelés à exercer des droits subordonnés au décès",
+      "texte": [
+        "Les héritiers, légataires, et tous autres appelés à exercer les droits subordonnés au décès d'un individu dont l'absence est déclarée, sont tenus de faire dans les six mois du jour de l'envoi en possession provisoire, la déclaration à laquelle ils seraient tenus, s'ils étaient appelés par effet de la mort, et d'acquitter les droits sur la valeur entière des biens ou droits qu'ils recueillent."
+      ],
+      "mots_cles": [
+        "héritiers",
+        "légataires",
+        "absence déclarée",
+        "six mois",
+        "envoi en possession provisoire",
+        "déclaration",
+        "droits"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 78",
+      "titre": "Délai pour le paiement des droits de mutation par décès",
+      "texte": [
+        "À l'égard de toute succession comprenant des biens légués à l'État, au groupe de Territoires, au Territoire et à tous autres établissements publics ou d'utilité publique, le délai pour le paiement des droits de mutation par décès ne courra contre les héritiers ou légataires saisis de la succession qu'à compter du jour où l'autorité compétente aura statué, sur la demande en autorisation, d'accepter le legs, sans que le paiement des droits puisse être différé au-delà de deux années à compter du jour du décès."
+      ],
+      "mots_cles": [
+        "legs",
+        "État",
+        "Territoires",
+        "établissements publics",
+        "utilité publique",
+        "droits de mutation par décès",
+        "héritiers",
+        "légataires",
+        "autorisation",
+        "deux années"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L1C3-ST9",
+      "titre": "Dispositions communes",
+      "texte": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 79",
+      "titre": "Computation des délais",
+      "texte": [
+        "Dans les délais fixés par les articles précédents, pour l'enregistrement des actes et des déclarations, le jour de la date de l'acte ou celui de l'ouverture de la succession ne sera point compté."
+      ],
+      "mots_cles": [
+        "délais",
+        "enregistrement",
+        "actes",
+        "déclarations",
+        "date de l'acte",
+        "ouverture de la succession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 80",
+      "titre": "Horaires d'ouverture des bureaux de l'enregistrement",
+      "texte": [
+        "Les bureaux de l'enregistrement, des domaines et du timbre sont ouverts aux publics six heures par jour, à l'exception :",
+        "a) des dimanches ;",
+        "b) des jours fériés reconnus par la loi ;",
+        "c) des jours réputés fériés par l'article 81 ;",
+        "d) de l'après-midi du jour de l'arrêté mensuel des écritures comptables.",
+        "Les jours et heures d'ouverture et de fermeture sont affichés à la porte de chaque bureau."
+      ],
+      "mots_cles": [
+        "bureaux",
+        "enregistrement",
+        "domaines",
+        "timbre",
+        "six heures",
+        "dimanches",
+        "jours fériés",
+        "article 81",
+        "écritures comptables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 81",
+      "titre": "Jours réputés fériés",
+      "texte": [
+        "Les jours où il ne peut être exigé de paiement d'aucune sorte, par application des lois des 23 décembre 1904, 22 décembre 1906 et 29 décembre 1909 sont réputés fériés, en ce qui concerne le service des receveurs de l'enregistrement, des domaines et du timbre."
+      ],
+      "mots_cles": [
+        "jours fériés",
+        "paiement",
+        "loi 23 décembre 1904",
+        "loi 22 décembre 1906",
+        "loi 29 décembre 1909",
+        "receveurs",
+        "enregistrement",
+        "domaines",
+        "timbre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 82",
+      "titre": "Prorogation des délais",
+      "texte": [
+        "Les délais fixés par le présent règlement pour l'enregistrement des actes, ainsi que pour le paiement de tous les impôts dont le recouvrement incombe à l'administration de l'enregistrement, ou pour le dépôt des déclarations qui s'y réfèrent, sont prorogés jusqu'au premier jour ouvrable qui suit, lorsque le dernier jour du délai expire un des jours de fermeture prévus par l'article 80."
+      ],
+      "mots_cles": [
+        "prorogation",
+        "délais",
+        "enregistrement",
+        "paiement",
+        "impôts",
+        "recouvrement",
+        "déclarations",
+        "premier jour ouvrable",
+        "article 80"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 7,
+    "chapitre": null,
+    "chapitre_titre": "",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution et paiement de la taxe",
+      "texte": [
+        "Il est institué une taxe annuelle au profit du budget de l'État sur les appareils automatiques, électriques ou non, qui procurent du jeu ou de l'argent, perçue auprès des exploitants.",
+        "La taxe est due pour chaque appareil exploité au 1er janvier de l'année d'imposition et pour tout appareil neuf acquis en cours d'année.",
+        "La taxe est acquittée avant le 1er mars ou dans les trois mois de la réception, ou de la mise en service si elle est postérieure, d'un nouvel appareil. Il sera remis une vignette en échange du paiement, qui devra être apposée de manière visible en condition normale d'utilisation.",
+        "La taxe acquittée spontanément après le délai légal sera majorée d'une indemnité de 2 % par mois de retard, tout mois commencé comptant dû.",
+        "La constatation du défaut d'apposition de la vignette sera sanctionnée d'une amende de 25 % de la taxe elle-même, l'absence d'acquittement par une amende de 100 %, sans que ces deux pénalités puissent se cumuler.",
+        "Seul l'exploitant de l'appareil au moment de la constatation de l'infraction sera recherché en paiement.",
+        "Tout appareil non muni de la vignette après le délai visé à l'alinéa 3 pourra être saisi immédiatement aux frais du redevable, par les agents chargés du contrôle."
+      ],
+      "mots_cles": [
+        "taxe annuelle",
+        "budget de l'État",
+        "appareils automatiques",
+        "électriques",
+        "jeu",
+        "argent",
+        "exploitants",
+        "1er janvier",
+        "année d'imposition",
+        "appareil neuf",
+        "1er mars",
+        "trois mois",
+        "réception",
+        "mise en service",
+        "vignette",
+        "paiement",
+        "majoration",
+        "2 %",
+        "retard",
+        "défaut d'apposition",
+        "amende",
+        "25 %",
+        "100 %",
+        "pénalités",
+        "infraction",
+        "saisie",
+        "agents de contrôle"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Tarif de la taxe",
+      "texte": [
+        "Le tarif annuel de la taxe selon le type d'appareil est le suivant :",
+        "appareil non électrique : 40.000 FCFA pour Brazzaville et Pointe-Noire, 15.000 FCFA pour les autres localités ;",
+        "appareil électrique (sauf machine à sous) : 100.000 FCFA ;",
+        "machine à sous : 200.000 FCFA.",
+        "Est considérée comme machine à sous tout appareil électrique fonctionnant sur le principe des jeux de hasard, muni d'un dispositif de loterie électronique, qui procure du jeu ou de l'argent."
+      ],
+      "mots_cles": [
+        "tarif annuel",
+        "taxe",
+        "type d'appareil",
+        "appareil non électrique",
+        "40.000 FCFA",
+        "Brazzaville",
+        "Pointe-Noire",
+        "15.000 FCFA",
+        "autres localités",
+        "appareil électrique",
+        "100.000 FCFA",
+        "machine à sous",
+        "200.000 FCFA",
+        "jeux de hasard",
+        "loterie électronique"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

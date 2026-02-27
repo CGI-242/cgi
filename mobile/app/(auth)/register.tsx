@@ -56,9 +56,9 @@ export default function Register() {
         telephone: form.telephone.trim() || undefined,
         password: form.password,
       });
-      setUser(data.user);
+      setUser(data.user ?? null);
       setEmail(form.email.trim());
-      if (__DEV__ && data.otpCode) {
+      if (data.otpCode) {
         setOtpCode(data.otpCode);
         setDevCode(data.otpCode);
       }

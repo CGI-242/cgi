@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "document": "Taxe spécifique sur les boissons et le tabac",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-BOISS",
+    "partie": null,
+    "livre": null,
+    "chapitre": 3,
+    "chapitre_titre": "Taxe spécifique sur les boissons et le tabac",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 6",
+      "titre": "Institution taxe spécifique boissons et tabac",
+      "texte": [
+        "4.3.2. Taxe spécifique sur les boissons et le tabac",
+        "[NB - Loi de finances pour 2013, modifiée]",
+        "Art.6.- Il est créé en République du Congo, au profit du budget de l'État, une taxe spécifique sur les boissons et le tabac."
+      ],
+      "mots_cles": [
+        "taxe spécifique",
+        "boissons",
+        "tabac",
+        "budget État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Redevable de la taxe spécifique",
+      "texte": [
+        "Art.7.- Cette taxe est due par le consommateur final.",
+        "Le producteur local et l'importateur grossiste sont les redevables légaux de la taxe."
+      ],
+      "mots_cles": [
+        "redevable taxe spécifique",
+        "consommateur final",
+        "producteur local",
+        "importateur grossiste"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Tarif de la taxe spécifique",
+      "texte": [
+        "Art.8.- Le tarif de la taxe est fixé comme suit :",
+        "1) Pour les boissons alcoolisées, le montant de la taxe est de 25 FCFA par litre.",
+        "2) Pour les boissons non alcoolisées, le montant de la taxe est de 15 FCFA par litre.",
+        "3) Pour les contenances d'autres quantités de boissons, est appliquée la règle de trois, avec arrondi par unité monétaire de 5 FCFA supérieur. Ainsi, pour les boissons de quantités inférieures à un litre, la taxe est fixée comme suit :",
+        "Pour les boissons alcoolisées :",
+        "a) 10 F, pour les contenances de 33 cl ;",
+        "b) 15 F, pour les contenances de 50 cl ;",
+        "c) 20 F, pour les contenances de 65 cl.",
+        "Pour les boissons non alcoolisées :",
+        "a) 5 F, pour les contenances de 33 cl ;",
+        "b) 10 F, pour les contenances de 50 cl ;",
+        "c) 15 F, pour les contenances de 65 cl.",
+        "4) Pour le tabac, le montant de la taxe est de 40 FCFA par paquet ou cigare."
+      ],
+      "mots_cles": [
+        "tarif taxe spécifique",
+        "boissons alcoolisées 25F/L",
+        "boissons non alcoolisées 15F/L",
+        "tabac 40F/paquet",
+        "33cl",
+        "50cl",
+        "65cl"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Intégration au prix de vente",
+      "texte": [
+        "Art.9.- Pour le producteur local, la taxe est ajoutée au prix sortie usine, toutes taxes comprises. Pour l'importateur grossiste, la taxe est ajoutée au prix de vente toutes taxes comprises."
+      ],
+      "mots_cles": [
+        "prix sortie usine",
+        "prix vente TTC",
+        "producteur local",
+        "importateur grossiste"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Constatation, liquidation et recouvrement",
+      "texte": [
+        "Art.10.- La taxe est constatée et liquidée :",
+        "- à l'importation, par l'administration douanière ;",
+        "- au niveau de la production locale, par l'administration fiscale.",
+        "Le recouvrement de la taxe est assuré par le trésor public."
+      ],
+      "mots_cles": [
+        "constatation",
+        "liquidation",
+        "administration douanière",
+        "administration fiscale",
+        "trésor public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Affectation de la taxe",
+      "texte": [
+        "Art.11.- La taxe spécifique sur les boissons et le tabac est une recette affectée à la couverture des dépenses du régime de l'assurance maladie et aux activités sportives."
+      ],
+      "mots_cles": [
+        "affectation",
+        "assurance maladie",
+        "activités sportives"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Modalités déclaration, paiement, contrôle et sanctions",
+      "texte": [
+        "Art.12.- Les modalités de déclaration, de paiement, de contrôle et de sanction sont celles applicables en matière de TVA."
+      ],
+      "mots_cles": [
+        "déclaration",
+        "paiement",
+        "contrôle",
+        "sanction",
+        "modalités TVA"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

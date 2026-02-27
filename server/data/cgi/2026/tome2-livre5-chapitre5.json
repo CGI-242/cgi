@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 5,
+    "chapitre_titre": "Obligations",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 25",
+      "titre": "Obligations de l'officier d'État Civil et des hébergeurs",
+      "texte": [
+        "Dès réception de la déclaration de tout décès, l'officier d'État Civil est tenu de s'informer si les héritiers du défunt sont présents ou connus et, le cas échéant, prévenir le Curateur d'office, à peine de tous dépens et dommages intérêts envers qui de droit.",
+        "Les aubergistes, hôteliers, et toutes personnes chez lesquelles un individu est décédé, dont les héritiers sont absents ou inconnus, doivent prévenir le Curateur en fonction d'État Civil et du Curateur en même temps si le défunt a laissé ou non des sommes d'argent, des effets mobiliers ou des papiers dans sa chambre mortuaire, à peine de tous dépens et dommages intérêts envers qui de droit."
+      ],
+      "mots_cles": [
+        "déclaration",
+        "décès",
+        "officier d'État Civil",
+        "héritiers",
+        "défunt",
+        "Curateur d'office",
+        "dépens",
+        "dommages intérêts",
+        "aubergistes",
+        "hôteliers",
+        "héritiers absents",
+        "héritiers inconnus",
+        "sommes d'argent",
+        "effets mobiliers",
+        "papiers",
+        "chambre mortuaire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Obligations des établissements hospitaliers",
+      "texte": [
+        "Les Directeurs des hôpitaux, cliniques et des établissements hospitaliers doivent les mêmes renseignements sous la même responsabilité au Curateur et à l'officier d'État Civil."
+      ],
+      "mots_cles": [
+        "Directeurs",
+        "hôpitaux",
+        "cliniques",
+        "établissements hospitaliers",
+        "renseignements",
+        "responsabilité",
+        "Curateur",
+        "officier d'État Civil"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

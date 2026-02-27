@@ -32,7 +32,7 @@ Mobile (Expo/React Native)       Server (Express)            Claude API
 | **State** | Zustand + React Query |
 | **Langage** | TypeScript |
 | **Backend** | Express + Prisma + PostgreSQL |
-| **Auth** | JWT Access + Refresh tokens |
+| **Auth** | JWT Access + Refresh tokens + MFA/2FA TOTP |
 | **IA** | Claude Haiku 4.5 via @anthropic-ai/sdk (appel direct, pas de RAG) |
 | **Paiement** | Stripe (a venir) |
 | **Monitoring** | Sentry |
@@ -143,8 +143,16 @@ cgi-242/
 - `src/services/chat.service.ts` — Appel Claude Haiku + gestion conversations Prisma
 - `src/services/chat.prompts.ts` — Prompts fiscaux CGI 2026 (bareme ITS, taux IS Art. 86A, IBA, IRCM, IRF)
 
+### Securite
+- `src/middleware/auth.ts` — Middleware JWT (requireAuth) + verification blacklist token
+- `src/middleware/rateLimit.middleware.ts` — 3 limiters (global, auth, sensitive) via `express-rate-limit`
+- `src/services/tokenBlacklist.service.ts` — Blacklist token + revocation sessions via cache in-memory
+- `src/services/email.service.ts` — Nodemailer SMTP configurable, fallback console
+- `src/services/mfa.service.ts` — TOTP (otpauth), QR code, chiffrement AES-256-GCM
+- `src/services/mfa.backup.service.ts` — 10 codes backup hashes bcrypt
+- `src/routes/mfa.routes.ts` — 6 endpoints MFA
+
 ### Infrastructure
-- `src/middleware/auth.ts` — Middleware JWT (requireAuth)
 - `prisma/schema.prisma` — Schema DB (User, Organization, Conversation, Message, etc.)
 
 ### Approche IA simplifiee
@@ -166,4 +174,4 @@ cgi-242/
 
 ---
 
-*Document généré le 22 février 2026 — Mis à jour le 26 février 2026 (Chat IA implémenté)*
+*Document généré le 22 février 2026 — Mis à jour le 26 février 2026 (Chat IA + SaaS + Sécurité implémentés)*

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 4,
+    "chapitre_titre": "Vente du mobilier et des immeubles",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 23",
+      "titre": "Vente des effets mobiliers",
+      "texte": [
+        "Le Curateur peut faire procéder à la vente des effets susceptibles de dépérir ou dispendieux à conserver, même avant la clôture de l'inventaire, après y avoir été autorisé par ordonnance du Président du Tribunal.",
+        "La vente a lieu en principe aux enchères publiques ; toutefois, elle peut avoir lieu de gré à gré par ordonnance du Président du Tribunal comportant les noms et qualités des acheteurs et prix proposés."
+      ],
+      "mots_cles": [
+        "Curateur",
+        "vente",
+        "effets",
+        "dépérir",
+        "dispendieux",
+        "conserver",
+        "inventaire",
+        "autorisation",
+        "ordonnance",
+        "Président du Tribunal",
+        "enchères publiques",
+        "gré à gré",
+        "acheteurs",
+        "prix"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Vente des immeubles",
+      "texte": [
+        "En ce qui concerne les immeubles, ils pourront être exceptionnellement vendus, en particulier, lorsque les héritiers sont absents, ou en ont manifesté le désir, ou lorsque l'entretien et la garde de l'immeuble sont onéreux ou impossibles.",
+        "Quel que soit le motif de la vente, celle-ci doit être autorisée par jugement contradictoire avec le Ministère Public, précisant la désignation de l'immeuble et le prix de vente ou le prix minimum si la vente doit avoir lieu aux enchères publiques.",
+        "Il est interdit au Curateur de se rendre adjudicataire ou acquéreur, directement d'aucun immeuble ou meuble et d'aucune valeur dépendant des biens qu'il administre, à peine de restitution, sans compensation, des biens illégalement acquis et s'il y a lieu de tous dommages intérêts (délit d'ingérence prévu et puni par l'article 175 du Code pénal)."
+      ],
+      "mots_cles": [
+        "immeubles",
+        "vente",
+        "héritiers absents",
+        "entretien",
+        "garde",
+        "onéreux",
+        "jugement contradictoire",
+        "Ministère Public",
+        "désignation",
+        "prix de vente",
+        "prix minimum",
+        "enchères publiques",
+        "Curateur",
+        "adjudicataire",
+        "acquéreur",
+        "interdiction",
+        "restitution",
+        "dommages intérêts",
+        "délit d'ingérence",
+        "article 175",
+        "Code pénal"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

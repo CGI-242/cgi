@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 2,
+    "chapitre": 2,
+    "chapitre_titre": "Timbre de dimension",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 26",
+      "titre": "Dimensions des papiers timbrés",
+      "texte": [
+        "Les papiers destinés aux timbres délivrés par l'administration fiscale sont fabriqués dans les dimensions déterminées suivant le tableau ci-après :",
+        "Désignation | Dimensions de la feuille déployée (supposée rognée)",
+        "Papier registre | 0,42 m | 0,54 m",
+        "Papier normal | 0,27 m | 0,42 m",
+        "Demi-feuille papier normal | 0,27 m | 0,21 m",
+        "Ils portent un filigrane particulier, imprimé dans la pâte même de la fabrication.",
+        "L'empreinte sur les papiers que fournit l'administration fiscale est appliquée en haut de la partie gauche de la feuille (non déployée) de la demi-feuille."
+      ],
+      "mots_cles": [
+        "papiers",
+        "timbres",
+        "administration fiscale",
+        "dimensions",
+        "papier registre",
+        "papier normal",
+        "demi-feuille",
+        "filigrane",
+        "fabrication",
+        "empreinte"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Obligation de timbrage pour les papiers non fournis par l'administration",
+      "texte": [
+        "Les citoyens qui veulent se servir de papiers autres que ceux de l'administration fiscale ou de parchemins sont admis à les faire timbrer avant d'en faire usage."
+      ],
+      "mots_cles": [
+        "citoyens",
+        "papiers",
+        "administration fiscale",
+        "parchemins",
+        "timbrer",
+        "usage"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Timbrage par apposition de timbres mobiles",
+      "texte": [
+        "Les receveurs de l'enregistrement peuvent suppléer à la formalité du visa, pour toute espèce de timbre de dimension au moyen de l'apposition de timbres mobiles.",
+        "Peuvent également être timbrés au moyen de timbres mobiles, les papiers ou parchemins destinés à la rédaction des actes de toute nature et des expéditions délivrées par les Officiers ministériels pourvu que ces papiers et parchemins soient revêtus du timbre avant tout usage.",
+        "Le timbre mobile doit être apposé en haut de la partie gauche de la feuille (non déployée) ou de la demi-feuille."
+      ],
+      "mots_cles": [
+        "receveurs de l'enregistrement",
+        "formalité du visa",
+        "timbre de dimension",
+        "timbres mobiles",
+        "apposition",
+        "papiers",
+        "parchemins",
+        "actes",
+        "expéditions",
+        "Officiers ministériels",
+        "feuille",
+        "demi-feuille"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Oblitération du timbre mobile",
+      "texte": [
+        "Dans tous les cas où le présent règlement permet ou impose l'usage du timbre mobile, l'oblitération de ce timbre doit être faite par les Officiers ministériels ou fonctionnaires publics pour les actes publics et par les parties pour les actes privés."
+      ],
+      "mots_cles": [
+        "timbre mobile",
+        "oblitération",
+        "Officiers ministériels",
+        "fonctionnaires publics",
+        "actes publics",
+        "parties",
+        "actes privés"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Modalités d'oblitération du timbre",
+      "texte": [
+        "L'oblitération consiste dans l'inscription, à l'encre noire usuelle et en travers des vignettes, de la date et du lieu d'apposition du timbre et de la signature de la personne qualifiée qui a procédé.",
+        "L'oblitération peut également être donnée avec une griffe apposée à l'encre grasse et faisant connaître la résidence, le nom ou la raison sociale de la partie, ainsi que la date d'oblitération.",
+        "Celle-ci doit être faite de façon que le texte, la date et la signature ou le sceau débordent de chaque côté de ce timbre."
+      ],
+      "mots_cles": [
+        "oblitération",
+        "inscription",
+        "encre noire",
+        "vignettes",
+        "date",
+        "lieu d'apposition",
+        "signature",
+        "personne qualifiée",
+        "griffe",
+        "encre grasse",
+        "résidence",
+        "nom",
+        "raison sociale",
+        "sceau"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Prix des papiers timbrés et droits de timbre",
+      "texte": [
+        "Le prix des papiers timbrés fournis par les administrations fiscales et les droits de timbre des papiers que les redevables font timbrer sont fixés ainsi qu'il suit, en raison de la dimension du papier :",
+        "• demi-feuille de papier normal : 1.000 FCFA",
+        "• feuille de papier normal : 1.300 FCFA",
+        "• feuille de papier registre : 1.500 FCFA"
+      ],
+      "mots_cles": [
+        "prix",
+        "papiers timbrés",
+        "administrations fiscales",
+        "droits de timbre",
+        "redevables",
+        "dimension",
+        "demi-feuille",
+        "papier normal",
+        "1.000 FCFA",
+        "feuille",
+        "1.300 FCFA",
+        "papier registre",
+        "1.500 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Droit de timbre pour papier de dimension non standard",
+      "texte": [
+        "Il n'y a point de droit de timbre supérieur à 1.500 FCFA ni inférieur à 1.000 FCFA, quelle que soit la dimension du papier, soit au-dessus de sa grandeur registre, soit au-dessous de la demi-feuille de petit papier."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "limite supérieure",
+        "1.500 FCFA",
+        "limite inférieure",
+        "1.000 FCFA",
+        "dimension",
+        "papier registre",
+        "demi-feuille",
+        "petit papier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Papier de dimension différente des formats de l'administration",
+      "texte": [
+        "Si les papiers ou le parchemin soumis au timbrage par l'article 28 ci-dessus se trouvent être de dimensions différentes de celles des papiers de l'administration fiscale, le timbre qui aura été établi en raison de la dimension, est payé au prix du format supérieur."
+      ],
+      "mots_cles": [
+        "papiers",
+        "parchemin",
+        "timbrage",
+        "article 28",
+        "dimensions différentes",
+        "administration fiscale",
+        "format supérieur",
+        "prix"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C2-ST1",
+      "titre": "A. Actes soumis au timbre de dimension",
+      "texte": [],
+      "mots_cles": ["actes", "timbre de dimension"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C2-ST1a",
+      "titre": "I. Règles générales",
+      "texte": [],
+      "mots_cles": ["règles générales"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Actes assujettis au droit de timbre de dimension",
+      "texte": [
+        "Sont assujettis au droit de timbre établi en raison de la dimension, tous les papiers à employer pour les actes et écritures, soit publics, soit privés, à savoir :",
+        "1° les actes de notaires et les extraits, copies ou expéditions qui en sont délivrés ;",
+        "2° ceux des agents d'exécution et les copies et expéditions qu'ils en délivrent ;",
+        "3° les actes et jugements de la police ordinaire et des arbitres, les extraits, copies et expéditions qui en seront délivrés ;",
+        "4° les actes particuliers des juges et de leurs greffiers et ceux reçus aux greffes ou par les greffiers ainsi que les extraits, copies et expéditions qui s'en délivrent ;",
+        "5° les actes des Avocats et mandataires agréés près les Tribunaux et les copies ou expéditions qui en sont faites ou signifiées ;",
+        "6° les actes des autorités constituées administratives qui sont assujettis à l'enregistrement ou qui se délivrent aux citoyens, et toutes les expéditions et extraits des actes, notamment les extraits d'actes de l'état civil, arrêtés et délibérations desdites autorités, qui sont délivrés aux citoyens ;",
+        "7° les actes des autorités administratives et des établissements publics portant transmission de propriété, d'usufruit et de jouissance ;",
+        "8° les actes entre particuliers sous signature privée et les doubles des comptes de recettes ou gestion particulières ;",
+        "9° les registres de l'autorité judiciaire où s'écrivent des actes sujets à l'enregistrement sur les minutes et les répertoires des Greffiers en matière civile et commerciale ;",
+        "10° ceux des Notaires, Huissiers et autres Officiers publics et ministériels et leurs répertoires ;",
+        "11° ceux des compagnies et sociétés d'actionnaires ;",
+        "12° ceux des établissements particuliers et maisons particulières d'éducation ;",
+        "13° ceux des agents d'affaires, Directeurs, régisseurs, syndics de créanciers et entrepreneurs des travaux et fournitures ;",
+        "14° ceux des banquiers, négociants, armateurs, marchands, fabricants, commissionnaires, agents de change, courtiers ;",
+        "15° et généralement tous actes et écritures, extraits, copies et expéditions, soit publics, soit privés, devant ou pouvant faire titre ou être produits pour obligation, décharge, justification, demande ou défense ; tous livres, registres et minutes de lettres qui sont de nature à être produits en justice et dans le cas d'y faire foi, ainsi que les extraits, copies et expéditions qui sont délivrés desdits livres et registres."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "dimension",
+        "papiers",
+        "actes",
+        "écritures",
+        "publics",
+        "privés",
+        "notaires",
+        "extraits",
+        "copies",
+        "expéditions",
+        "agents d'exécution",
+        "jugements",
+        "police ordinaire",
+        "arbitres",
+        "juges",
+        "greffiers",
+        "greffes",
+        "Avocats",
+        "mandataires agréés",
+        "Tribunaux",
+        "autorités administratives",
+        "enregistrement",
+        "état civil",
+        "arrêtés",
+        "délibérations",
+        "établissements publics",
+        "transmission de propriété",
+        "usufruit",
+        "jouissance",
+        "signature privée",
+        "comptes de recettes",
+        "gestion",
+        "registres",
+        "autorité judiciaire",
+        "répertoires",
+        "Huissiers",
+        "Officiers publics",
+        "Officiers ministériels",
+        "compagnies",
+        "sociétés d'actionnaires",
+        "établissements d'éducation",
+        "agents d'affaires",
+        "Directeurs",
+        "régisseurs",
+        "syndics de créanciers",
+        "entrepreneurs",
+        "travaux",
+        "fournitures",
+        "banquiers",
+        "négociants",
+        "armateurs",
+        "marchands",
+        "fabricants",
+        "commissionnaires",
+        "agents de change",
+        "courtiers",
+        "obligation",
+        "décharge",
+        "justification",
+        "demande",
+        "défense",
+        "livres",
+        "minutes de lettres",
+        "justice",
+        "foi"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34 bis",
+      "titre": "Actes soumis au timbre pour prestations de services au profit de l'État",
+      "texte": [
+        "Sont également assujettis au timbre de dimension, les notes d'honoraires, factures, mémoires ou tout autre document en tenant lieu, établis pour les prestations de services au profit de l'État, à raison des prestations ou fournitures de services auxquelles leurs auteurs ont procédé."
+      ],
+      "mots_cles": [
+        "timbre de dimension",
+        "notes d'honoraires",
+        "factures",
+        "mémoires",
+        "prestations de services",
+        "État",
+        "fournitures de services"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Actes devant être répertoriés sur papier timbré",
+      "texte": [
+        "Les seuls actes dont il doit être tenu un répertoire sur papier timbré, dans les administrations locales et Mairies, sont ceux dénommés à l'article précédent n°8."
+      ],
+      "mots_cles": [
+        "répertoire",
+        "papier timbré",
+        "administrations locales",
+        "Mairies",
+        "article précédent",
+        "actes"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C2-ST1b",
+      "titre": "II. Applications particulières",
+      "texte": [],
+      "mots_cles": ["applications particulières"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Actes soumis au timbre de dimension - Applications particulières",
+      "texte": [
+        "Sont notamment soumis au timbre de dimension :",
+        "1° les expéditions destinées aux parties, des ordonnances de nomination des Notaires, Avocats Défenseurs, Greffiers, Huissiers, Courtiers et Commissaires-priseurs ;",
+        "2° l'un des deux exemplaires de la déclaration que tout officier public doit déposer au bureau de l'enregistrement avant de procéder à une vente publique et par enchères d'objets mobiliers ; l'exemplaire soumis au timbre est celui destiné à être annexé au procès-verbal de la vente ;",
+        "3° les demandes adressées par les contribuables aux Greffiers du Tribunal Populaire de Commune ou de Région en matière de contributions directes et de taxes assimilées ;",
+        "4° les mandats afférents aux réclamations introduites ou soutenues pour autrui en matière de contributions directes et de taxes assimilées ;",
+        "5° le recours contre les décisions du Tribunal Populaire de Commune ou de Région rendues sur les réclamations en matière de contributions ;",
+        "6° les récépissés prévus par la loi du 28 mai 1858 sur les négociations concernant les marchandises déposées dans les magasins généraux ;",
+        "7° les mandements ou bordereaux de colocation délivrés aux créanciers par les Greffiers, en matière d'ordre et de contribution. Ces documents sont rédigés sur une demi-feuille de papier normal. Ils contiennent trente-cinq lignes à la page et de vingt à vingt-cinq syllabes à la ligne, compensation faite d'une feuille à l'autre ;",
+        "8° les recours pour excès de pouvoirs ou violation de la loi, formés en matière de pension devant la Cour Suprême dans les conditions prévues par la loi du 29 décembre 1942 sur la révision des pensions abusives et par le décret du 8 août 1935 relatif à la Cour de cassation adjointe temporairement à la Chambre Administrative de la Cour Suprême ;",
+        "9° les actes établis pour constater des conventions d'assurances ou de rentes viagères et tous avenants aux dites conventions, ainsi que les expéditions, copies ou extraits qui en sont délivrés, sous réserve toutefois de ce qui est dit au Chapitre 14 du Livre 1 sur l'enseignement."
+      ],
+      "mots_cles": [
+        "timbre de dimension",
+        "expéditions",
+        "ordonnances de nomination",
+        "Notaires",
+        "Avocats Défenseurs",
+        "Greffiers",
+        "Huissiers",
+        "Courtiers",
+        "Commissaires-priseurs",
+        "déclaration",
+        "officier public",
+        "bureau de l'enregistrement",
+        "vente publique",
+        "enchères",
+        "objets mobiliers",
+        "procès-verbal",
+        "contribuables",
+        "Tribunal Populaire de Commune",
+        "Tribunal Populaire de Région",
+        "contributions directes",
+        "taxes assimilées",
+        "mandats",
+        "réclamations",
+        "recours",
+        "récépissés",
+        "loi du 28 mai 1858",
+        "magasins généraux",
+        "mandements",
+        "bordereaux de colocation",
+        "créanciers",
+        "ordre",
+        "contribution",
+        "demi-feuille",
+        "papier normal",
+        "excès de pouvoirs",
+        "violation de la loi",
+        "pensions",
+        "Cour Suprême",
+        "loi du 29 décembre 1942",
+        "décret du 8 août 1935",
+        "Chambre Administrative",
+        "conventions d'assurances",
+        "rentes viagères",
+        "avenants"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C2-ST2",
+      "titre": "B. Règles spéciales aux copies d'exploits",
+      "texte": [],
+      "mots_cles": ["copies d'exploits", "règles spéciales"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Droit de timbre des copies d'exploits et significations",
+      "texte": [
+        "Le droit de timbre des copies des exploits et des significations de tous jugements, actes ou pièces, est acquitté au moyen de timbres mobiles lors de sa présentation à la formalité de l'enregistrement."
+      ],
+      "mots_cles": [
+        "droit de timbre",
+        "copies",
+        "exploits",
+        "significations",
+        "jugements",
+        "actes",
+        "pièces",
+        "timbres mobiles",
+        "formalité",
+        "enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Format du papier pour les copies d'exploits",
+      "texte": [
+        "Le papier à employer pour la rédaction des copies d'exploits doit être des mêmes dimensions que la demi-feuille de papier normal."
+      ],
+      "mots_cles": [
+        "papier",
+        "copies d'exploits",
+        "dimensions",
+        "demi-feuille",
+        "papier normal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Mentions prescrites sur les copies d'exploits",
+      "texte": [
+        "Indépendamment des mentions prescrites par le Code de procédure civile, les agents d'exécution sont tenus d'indiquer distinctement au bas de l'original et des copies de chaque exploit :",
+        "1° le nombre de feuilles de papier employées tant pour les copies de l'original que pour les copies des pièces signifiées ;",
+        "2° le montant des droits de timbre dus en raison de la dimension de ces feuilles."
+      ],
+      "mots_cles": [
+        "mentions",
+        "Code de procédure civile",
+        "agents d'exécution",
+        "original",
+        "copies",
+        "exploit",
+        "feuilles de papier",
+        "pièces signifiées",
+        "droits de timbre",
+        "dimension"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Interdiction de remboursement des droits de timbre des copies",
+      "texte": [
+        "Il ne peut être alloué en taxe, et les Officiers ministériels ne peuvent demander et se faire payer à titre de remboursement de droits de timbre des copies, aucune somme excédant la valeur des timbres mobiles apposés en exécution des dispositions qui précèdent."
+      ],
+      "mots_cles": [
+        "taxe",
+        "Officiers ministériels",
+        "remboursement",
+        "droits de timbre",
+        "copies",
+        "timbres mobiles",
+        "valeur"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Obligation de lisibilité des copies d'exploits",
+      "texte": [
+        "Les copies des exploits, celles des significations de tous jugements, actes ou pièces doivent être correctes, lisibles et sans abréviations."
+      ],
+      "mots_cles": [
+        "copies",
+        "exploits",
+        "significations",
+        "jugements",
+        "actes",
+        "pièces",
+        "correctes",
+        "lisibles",
+        "abréviations"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Amende pour contravention aux règles sur les copies d'exploits",
+      "texte": [
+        "Chaque contravention aux dispositions des articles 37 et 39 est punie d'une amende de 1.000 FCFA."
+      ],
+      "mots_cles": [
+        "contravention",
+        "articles 37 à 39",
+        "amende",
+        "1.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "T2L2C2-ST3",
+      "titre": "C. Prescriptions et prohibitions diverses",
+      "texte": [],
+      "mots_cles": ["prescriptions", "prohibitions"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 43 et 44",
+      "titre": "Abrogés",
+      "texte": [
+        "Abrogés."
+      ],
+      "mots_cles": [],
+      "statut": "abrogé"
+    },
+    {
+      "article": "Art. 45",
+      "titre": "Double sur papier timbré des actes sous seing privé",
+      "texte": [
+        "Les parties qui rédigent un acte sous seing privé, visé à l'article 147 de la réglementation de l'enregistrement, doivent en établir un double sur papier timbré, revêtu des mêmes signatures que l'acte lui-même et qui restera déposé au bureau de l'enregistrement lorsque la formalité est requise."
+      ],
+      "mots_cles": [
+        "acte sous seing privé",
+        "article 147",
+        "réglementation de l'enregistrement",
+        "double",
+        "papier timbré",
+        "signatures",
+        "bureau de l'enregistrement",
+        "formalité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Amende pour acte sur papier non timbré",
+      "texte": [
+        "Il est prononcé une amende de 1.000 FCFA :",
+        "1° pour chaque acte public ou expédition écrit sur papier non timbré ;",
+        "2° pour chaque acte ou écrit sous signatures privées sujet au timbre de dimension et rédigé sur papier non timbré.",
+        "Les contrevenants, dans les cas ci-dessus payent en outre les droits de timbre."
+      ],
+      "mots_cles": [
+        "amende",
+        "1.000 FCFA",
+        "acte public",
+        "expédition",
+        "papier non timbré",
+        "acte sous signatures privées",
+        "timbre de dimension",
+        "contrevenants",
+        "droits de timbre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 6,
+    "chapitre_titre": "Dispositions diverses",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 172",
+      "titre": "Obligations de l'employeur ou débirentier – Mentions sur les documents de paie",
+      "texte": [
+        "Toute personne physique ou morale qui paie des sommes imposables, conformément aux dispositions des articles 36, 37 ou 185 ter nouveau du présent Code, est tenue d'en effectuer pour le compte du Trésor la retenue de l'IRPP ou la retenue à la source instituée par les articles 126 quater B-1, 183 et 185 ter nouveau du présent Code.",
+        "Elle doit, pour chaque bénéficiaire d'un payement imposable, mentionner sur son livre, fichier ou autre document destiné à l'établissement de la paye, ou à défaut sur un livre spécial :",
+        "- la date, la nature et le montant de ce paiement, y compris l'évaluation des avantages en nature fournis (évaluation conforme aux indications de l'article 39 ci-dessus), le montant des retenues opérées, le nombre d'enfants déclarés par le bénéficiaire du paiement comme étant à sa charge, la référence du bordereau de versement prévu à l'article 174 ci-après ;",
+        "- les documents sur lesquels sont enregistrés les paiements et retenues effectuées, ainsi que les bordereaux remis après versement à la partie versante et visés à l'article 174 ci-après, doivent être conservés jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle les retenues sont faites. Ils doivent, à toute époque, être communiqués, sur leur demande, aux agents de l'administration fiscale.",
+        "Les employeurs ou débirentiers sont tenus de délivrer à chaque bénéficiaire de paiement ayant supporté les retenues une pièce justificative mentionnant le montant desdites retenues."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "IRPP",
+        "employeurs",
+        "débirentiers",
+        "avantages en nature",
+        "bordereau de versement",
+        "conservation 4 ans",
+        "pièce justificative"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 173",
+      "titre": "Délais de versement des retenues",
+      "texte": [
+        "Les retenues afférentes aux paiements effectués pendant un mois doivent être versées dans les vingt jours du mois suivant à l'inspection divisionnaire des contributions directes et indirectes ou à l'UGE compétente.",
+        "Toutefois, les personnes physiques et morales qui ne payent pas des sommes soumises à l'impôt à plus de cinq personnes sont autorisées à n'effectuer les versements prévus au premier alinéa du présent article que dans les vingt premiers jours du premier mois qui suit la fin du trimestre.",
+        "En cas de décès de l'employeur ou du débirentier, les retenues opérées doivent être versées, dans les quinze premiers jours du mois suivant celui du décès, par les ayants droit du de cujus. Les mêmes règles sont applicables pour le versement de la taxe unique sur les salaires."
+      ],
+      "mots_cles": [
+        "versement",
+        "vingt jours",
+        "mensuel",
+        "trimestriel",
+        "décès",
+        "UGE",
+        "taxe unique sur les salaires"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 174",
+      "titre": "Modalités de versement des retenues",
+      "texte": [
+        "Chaque versement adressé à l'inspecteur divisionnaire des contributions directes et indirectes compétent, tant pour l'IRPP, la taxe forfaitaire visée à l'article 171 bis, que pour la retenue à la source visée à l'article 185 nouveau, doit comprendre :",
+        "1° un chèque barré correspondant aux retenues effectuées, libellé à l'ordre du Percepteur, Payeur ou Préposé du Trésor du lieu du domicile de la personne ou du siège de l'établissement ou du bureau qui les a opérées ;",
+        "2° un bordereau de versement établi en trois exemplaires sur les imprimés fournis par l'administration.",
+        "Un accusé de réception est adressé au contribuable lors du dépôt des documents.",
+        "L'inspecteur divisionnaire des contributions directes et indirectes compétent transmet les chèques accompagnés des trois exemplaires de la déclaration, sous bordereau, dans les trois jours de la réception, à l'agent chargé de la perception.",
+        "Un exemplaire de chaque bordereau de versement est rendu, accompagné d'un récépissé, à la partie versante, par l'agent chargé de la perception.",
+        "Le second exemplaire de chaque bordereau est conservé par le comptable comme titre provisoire de recouvrement.",
+        "Le troisième exemplaire est adressé, dûment annoté de la date et du numéro de récépissé, par le comptable, à l'inspection divisionnaire des contributions directes et indirectes au plus tard dans les dix premiers jours du mois pour les versements du mois précédent."
+      ],
+      "mots_cles": [
+        "versement",
+        "chèque barré",
+        "bordereau",
+        "Percepteur",
+        "accusé de réception",
+        "récépissé"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 175",
+      "titre": "Établissement des rôles de régularisation",
+      "texte": [
+        "Le montant des versements constatés au nom de chaque employeur fera l'objet, par l'inspection divisionnaire des contributions directes et indirectes, au fur et à mesure de la réception des bordereaux transmis par le service du recouvrement, d'un relevé nominatif tenant lieu de rôle provisoire et donnera lieu, à la fin de chaque mois, à l'établissement d'un rôle de régularisation dans les conditions prévues par la réglementation en vigueur.",
+        "Des instructions régleront les modalités d'application des dispositions précédentes."
+      ],
+      "mots_cles": [
+        "rôle provisoire",
+        "rôle de régularisation",
+        "relevé nominatif",
+        "service du recouvrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 176",
+      "titre": "État annuel des salaires, pensions et rentes viagères",
+      "texte": [
+        "En vue du contrôle des salaires, pensions et rentes viagères servant de base à l'IRPP, tous particuliers, toutes administrations et toutes sociétés et associations occupant des employés, commis, ouvriers ou auxiliaires moyennant traitement, salaire ou rétribution, sont tenus de remettre dans le courant du mois de janvier de chaque année à l'inspecteur divisionnaire des contributions directes et indirectes, un état présentant, pour chacune des personnes qu'ils ont occupées au cours de l'année précédente, les indications suivantes :",
+        "1° nom, prénom, emploi et adresse ;",
+        "2° montant des traitements, salaires et rétributions diverses payés au cours de la dite année après déduction des retenues pour la retraite, ainsi que l'évaluation des avantages en nature fournis en sus de la rémunération (évaluation conforme aux indications de l'article 39 ci-dessus) ;",
+        "3° montant des retenues effectuées au titre de l'IRPP ;",
+        "4° période à laquelle s'appliquent les paiements ;",
+        "5° nombre d'enfants indiqués par l'intéressé comme étant à sa charge et dont il a été tenu compte pour le calcul des retenues ;",
+        "6° montant des diverses indemnités non imposables allouées à l'employé ;",
+        "7° le numéro d'identification unique.",
+        "À cet état, l'employeur devra joindre une fiche individuelle au nom de chaque employé reprenant les mêmes indications que celles prévues ci-dessus."
+      ],
+      "mots_cles": [
+        "état annuel",
+        "salaires",
+        "pensions",
+        "rentes viagères",
+        "janvier",
+        "fiche individuelle",
+        "numéro d'identification unique"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 177",
+      "titre": "Seuil de déclaration obligatoire",
+      "texte": [
+        "La déclaration prévue à l'article précédent est obligatoire lorsque le montant de la rémunération, ramenée à l'année, excède 120.000 FCFA.",
+        "Toutefois, l'ensemble des rémunérations n'excédant pas le minimum ci-dessus devra figurer sur l'état récapitulatif pour son montant global."
+      ],
+      "mots_cles": [
+        "seuil",
+        "120.000 FCFA",
+        "état récapitulatif"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 177 bis",
+      "titre": "Déclaration mensuelle pour les employeurs de plus de trois personnes",
+      "texte": [
+        "La déclaration visée à l'article 176 ci-dessus doit être souscrite chaque mois par les employeurs occupant plus de trois personnes. Cette disposition ne fait pas obstacle à la déclaration annuelle des salaires."
+      ],
+      "mots_cles": [
+        "déclaration mensuelle",
+        "plus de 3 personnes",
+        "déclaration annuelle"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 178",
+      "titre": "Déclaration des pensions et rentes",
+      "texte": [
+        "Tous particuliers, toutes administrations et toutes sociétés ou associations payant des pensions ou rentes viagères sont tenus, dans les conditions prévues à l'article 176, de fournir les indications relatives aux bénéficiaires de ces pensions ou rentes viagères."
+      ],
+      "mots_cles": [
+        "pensions",
+        "rentes viagères",
+        "déclaration"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 179",
+      "titre": "Déclaration des rémunérations versées à des tiers",
+      "texte": [
+        "Les entreprises visées aux articles 14, 15 et 42 ainsi que les sociétés visées à l'article 107 et suivants du présent Code, doivent déclarer dans les mêmes conditions :",
+        "1° les rémunérations, quel que soit leur montant ramené à l'année qu'elles ont versées à des personnes morales ou physiques fournissant des prestations ou remplissant des fonctions susceptibles d'être exercées simultanément auprès de plusieurs entreprises, telles que les prestations faisant l'objet de la retenue à la source, les fonctions d'administrateurs, membre ou secrétaire de comité ou de conseil de direction, de gestion ou de surveillance, quelle qu'en soit la dénomination, commissaire aux comptes, trésorier, etc. ;",
+        "2° les sommes versées par elles à l'occasion de l'exercice de leur profession à titre de loyers, de commissions, courtages, ristournes commerciales ou autres, vacations, honoraires occasionnels ou non, gratifications et autres rémunérations lorsqu'elles dépassent 5.000 FCFA par an pour un même bénéficiaire.",
+        "Les sociétés pétrolières sont tenues de déclarer, dans les conditions prévues à l'article 176, les rémunérations versées aux sous-traitants pour toutes les prestations de service de toute nature.",
+        "Les dites sommes sont imposées au nom du bénéficiaire d'après la nature de l'activité au titre de laquelle ce dernier les a perçues."
+      ],
+      "mots_cles": [
+        "rémunérations",
+        "administrateurs",
+        "commissaire aux comptes",
+        "loyers",
+        "commissions",
+        "courtages",
+        "honoraires",
+        "sociétés pétrolières",
+        "sous-traitants",
+        "5.000 FCFA"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 180",
+      "titre": "Déclaration des droits d'auteur et sommes versées aux membres",
+      "texte": [
+        "Les entreprises, sociétés ou associations qui procèdent à l'encaissement et au versement des droits d'auteur ou d'inventeur sont tenues de déclarer dans les conditions prévues à l'article 176 le montant des sommes dépassant 5.000 FCFA par an qu'elles versent à leurs membres ou à leurs mandants."
+      ],
+      "mots_cles": [
+        "droits d'auteur",
+        "droits d'inventeur",
+        "5.000 FCFA",
+        "membres",
+        "mandants"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 181",
+      "titre": "Déclaration en cas de cession ou cessation d'activité",
+      "texte": [
+        "Dans le cas de cession ou de cessation, en totalité ou en partie, de l'entreprise ou de cessation de l'exercice de la profession, les déclarations visées aux articles 176 et suivants doivent être produites en ce qui concerne les rémunérations payées pendant l'année de cession ou de cessation, dans les dix jours de l'événement.",
+        "Il en est de même de la déclaration concernant les rémunérations versées au cours de l'année précédente si elle n'a pas encore été produite.",
+        "En cas de décès de l'employeur ou du débirentier, la déclaration des traitements, pensions ou rentes viagères payés par le défunt pendant l'année de son décès, doit être souscrite par les héritiers dans les six mois du décès. Ce délai ne peut toutefois s'étendre au-delà du 31 janvier de l'année suivante."
+      ],
+      "mots_cles": [
+        "cession",
+        "cessation",
+        "décès",
+        "dix jours",
+        "six mois",
+        "héritiers",
+        "31 janvier"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 182",
+      "titre": "Régularisation de l'IRPP et recours du contribuable",
+      "texte": [
+        "En vue de la régularisation de l'IRPP, il est fait état de tous les revenus imposables dont le contribuable a disposé au cours de l'année pour laquelle l'impôt est dû.",
+        "En ce qui concerne la régularisation de la taxe complémentaire, les traitements, salaires, pensions ou rentes viagères de même source ou de sources différentes dont le contribuable a disposé pendant une année déterminée, sont totalisés à l'expiration de ladite année.",
+        "Si le montant de la retenue à la source qu'il a supporté est supérieur à la somme effectivement due, le contribuable peut obtenir par voie de réclamation adressée au Directeur Général des Impôts, avant le 1er avril de l'année suivante, le dégrèvement des droits qu'il a supportés en trop, lequel pourra être utilisé, à due concurrence, en l'acquit des droits éventuellement exigibles ultérieurement. Dans le cas contraire, les droits ou compléments de droits exigibles, sont perçus au moyen de rôles qui peuvent être établis et mis en recouvrement dans les conditions et délais prévus par l'article 382 ci-après.",
+        "Peuvent être également réparées, dans les mêmes conditions et délais, toutes omissions totales ou partielles ainsi que toutes les erreurs commises dans l'application de l'impôt. Les droits mis en recouvrement, en exécution du présent article, sont établis dans le territoire du lieu du domicile des contribuables intéressés ou, en cas de changement de domicile en cours d'année, dans chacun des territoires où le contribuable a été domicilié."
+      ],
+      "mots_cles": [
+        "régularisation",
+        "IRPP",
+        "dégrèvement",
+        "réclamation",
+        "1er avril",
+        "Directeur Général des Impôts",
+        "rôles",
+        "taxe complémentaire"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligations des employeurs et débirentiers"
+    },
+    {
+      "article": "Art. 183",
+      "titre": "Retenue à la source sur les sommes versées à des personnes non soumises à l'IS",
+      "texte": [
+        "(L.F.2023, L.F.2024, L.F.2025) Les personnes physiques et morales qui, à l'occasion de l'exercice de leur profession, versent à des personnes physiques ou morales établies au Congo et non soumises à l'impôt sur les sociétés des sommes en rémunération de prestations de toute nature fournies ou utilisées au Congo, sont tenues d'opérer la retenue à la source au taux de 10 % pour le compte de l'État.",
+        "Cette retenue doit également être opérée par les institutions et les administrations publiques, les collectivités locales et les établissements publics qui versent aux personnes physiques des sommes à titre de primes, émoluments, indemnités, honoraires.",
+        "De même, les personnes physiques ou morales, grossistes, revendeurs et demi-grossistes revendeurs sont tenues d'opérer une retenue à la source de 10 % sur les sommes, commissions, ristournes, remises, rabais, escomptes et autres avantages consentis ou payés aux personnes physiques ou morales non soumises à l'impôt sur les sociétés. Cette disposition ne s'applique pas aux personnes physiques ou morales qui exercent une activité relevant des professions réglementées.",
+        "Toute personne physique ou morale qui opère les retenues prévues aux alinéas ci-dessus est tenue de délivrer aux bénéficiaires des sommes une attestation justifiant le montant des retenues.",
+        "Les personnes physiques titulaires des revenus ayant fait l'objet de la retenue ci-dessus, sont soumises aux obligations déclaratives définies aux articles 76 à 80 du présent Code.",
+        "Les versements sont effectués et régularisés dans les conditions prévues aux articles 173 à 176 du présent Code. Ils constituent des acomptes du montant de l'IRPP.",
+        "À défaut d'effectuer cette retenue, les personnes visées aux alinéas 1 et 2 du présent article sont redevables d'une amende égale au prélèvement non effectué, sans préjudice de la majoration des droits prévus à l'article 379 du présent Code.",
+        "À défaut de reverser la retenue à la source effectuée, les personnes visées aux alinéas 1 et 2 du présent article, sont redevables d'une amende égale au prélèvement effectué, d'un intérêt de retard de reversement de 5 % par mois ou fraction de mois, sans préjudice de la majoration des droits prévus à l'article 379 du présent Code.",
+        "Les revenus (émoluments, primes, gratifications, indemnités, etc.) des membres et du personnel contractuel des institutions de la République et des établissements publics administratifs (EPA) et assimilés, sont automatiquement liquidés et bancarisés."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "10 %",
+        "commissions",
+        "courtages",
+        "ristournes",
+        "honoraires",
+        "prestations",
+        "attestation",
+        "acomptes IRPP",
+        "amende",
+        "intérêt de retard 5 %",
+        "non soumis IS",
+        "professions réglementées",
+        "bancarisation",
+        "EPA"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+    },
+    {
+      "article": "Art. 183 bis",
+      "titre": "Retenue à la source par les maisons d'édition et organisateurs de spectacles",
+      "texte": [
+        "Les maisons d'édition, les sociétés de perception et de répartition des droits, les organisateurs de spectacles et, d'une manière générale, toutes personnes payant directement aux bénéficiaires les sommes visées à l'article 47 ter, doivent opérer la retenue à la source et la reverser au service des contributions directes et indirectes dans les 15 jours suivant la date de paiement.",
+        "Elles sont également astreintes à l'obligation de déclarer aux services des impôts l'identité et l'adresse des personnes pour lesquelles les retenues ont été opérées et le montant de ces retenues."
+      ],
+      "mots_cles": [
+        "droits d'auteur",
+        "maisons d'édition",
+        "spectacles",
+        "15 jours",
+        "article 47 ter",
+        "déclaration"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+    },
+    {
+      "article": "Art. 183 ter",
+      "titre": "Obligations déclaratives des commissionnaires agréés en douanes",
+      "texte": [
+        "Les commissionnaires agréés en douanes sont tenus de déclarer à l'administration fiscale toutes les opérations réalisées pour le compte des tiers en indiquant les noms et prénoms des tiers bénéficiaires de la prestation au cours du mois, le NIU, le volume des opérations, le montant des droits de douanes acquittés en précisant la TVA acquittée et les centimes additionnels. Cette déclaration mensuelle sera faite avant le 15 du mois suivant selon un modèle défini par l'administration.",
+        "Le défaut de production de cette déclaration est puni d'une amende de 500.000 F."
+      ],
+      "mots_cles": [
+        "commissionnaires en douanes",
+        "déclaration mensuelle",
+        "NIU",
+        "TVA",
+        "droits de douanes",
+        "15 du mois",
+        "amende 500.000 F"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+    },
+    {
+      "article": "Art. 184",
+      "titre": "Obligations déclaratives des sociétés de personnes",
+      "texte": [
+        "Les sociétés en nom collectif, en commandite simple, les associations en participation, sont tenues de fournir à l'inspecteur divisionnaire en même temps que la déclaration annuelle de leurs bénéfices, un état indiquant les conditions dans lesquelles leurs bénéfices sont répartis ou ont été distribués entre les associés et co-participants."
+      ],
+      "mots_cles": [
+        "SNC",
+        "commandite simple",
+        "associations en participation",
+        "sociétés de personnes",
+        "répartition des bénéfices",
+        "déclaration annuelle"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Déclaration des rémunérations d'associés et parts de bénéfices"
+    },
+    {
+      "article": "Art. 185",
+      "titre": "Renseignements à fournir par les bénéficiaires de revenus de source étrangère",
+      "texte": [
+        "Les contribuables domiciliés au Congo qui reçoivent de débiteurs domiciliés ou établis hors du Congo, des traitements, indemnités, émoluments, salaires, pensions ou rentes viagères, doivent produire en ce qui les concerne les renseignements exigés par les articles 176 et suivants de la section 1 du présent chapitre."
+      ],
+      "mots_cles": [
+        "source étrangère",
+        "traitements",
+        "salaires",
+        "pensions",
+        "rentes viagères",
+        "débiteurs étrangers",
+        "articles 176 et suivants"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Renseignements à fournir par les bénéficiaires de revenus de source étrangère"
+    },
+    {
+      "article": "Art. 185 bis",
+      "titre": "Dispositions particulières applicables aux sociétés visées aux articles 92 et suivants",
+      "texte": [
+        "Les sociétés étrangères visées aux articles 92 et suivants sont tenues d'opérer la retenue visée à l'article 172 pour tout leur personnel passible de l'impôt sur le revenu.",
+        "Le Directeur Général des Impôts est habilité à définir par avance les catégories des personnels non passibles dudit impôt. Les sociétés étrangères visées à ces mêmes articles sont passibles de la taxe unique sur les salaires pour tout leur personnel passible de l'impôt sur le revenu. Les impôts sont déclarés et payés dans les conditions de droit commun sous les réserves suivantes :",
+        "- avant toute cessation d'activité au sens des articles 92 et suivants, la société étrangère procédera à une déclaration définitive et, sans émission préalable de rôle, réglera sur la base de cette déclaration les retenues à la source et la taxe unique sur les salaires dont elle est redevable ;",
+        "- en même temps, la société étrangère garantira le paiement de l'IRPP de tout employé non citoyen de la République du Congo soumis à cet impôt et quittant définitivement le territoire de la République. L'imposition de ce dernier sera fixée conformément aux règles de l'article 75.",
+        "L'impôt sera recouvré simultanément avec le dépôt de la déclaration prévue à l'article 75 sans émission préalable de rôle.",
+        "[*NB* - Conditions d'application de l'article 185 bis (Instruction n°475/DGI/DFP du 2 décembre 1996)]",
+        "Conformément aux dispositions de l'article 185 bis nouveau du CGI habilitant le Directeur Général des Impôts à définir par avance les catégories des personnels des sociétés sous-traitantes pétrolières non passibles de l'impôt sur le revenu :",
+        "- demeurent non assujettis à l'impôt sur le revenu, les salariés de nationalité étrangère, introduits temporairement en République du Congo, quel que soit leur lieu de travail, pour une durée n'excédant pas deux semaines de présence effective au Congo, avec l'obligation pour les sociétés sous-traitantes de déclarer cette catégorie de personnel à l'arrivée auprès de la DGI ;",
+        "- de même, les sociétés sous-traitantes pétrolières sont exemptées pour cette catégorie de personnel de la taxe unique sur les salaires.]"
+      ],
+      "mots_cles": [
+        "sociétés étrangères",
+        "articles 92 et suivants",
+        "retenue à la source",
+        "taxe unique sur les salaires",
+        "cessation d'activité",
+        "Directeur Général des Impôts",
+        "sous-traitantes pétrolières",
+        "deux semaines",
+        "Instruction 475/DGI/DFP"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 5 : Dispositions particulières applicables aux sociétés visées aux articles 92 et suivants"
+    },
+    {
+      "article": "Art. 185 ter-A",
+      "titre": "Dispositions particulières applicables aux personnes physiques ou morales de nationalité congolaise ou étrangère n'ayant ni domicile, ni résidence fiscale au Congo – Champ d'application (Section 6)",
+      "texte": [
+        "(L.F.2023) Champ d'application",
+        "1) Sous réserve des conventions fiscales internationales, les personnes physiques ou morales de nationalité congolaise ou étrangère n'ayant ni domicile, ni résidence fiscale au Congo, sont soumises à une retenue à la source sur les revenus réalisés au Congo ou en provenant, en contrepartie des prestations rendues ou utilisées au Congo par l'État, les collectivités territoriales, les entreprises ou établissements situés au Congo.",
+        "2) Il s'agit notamment :",
+        "a) des sommes versées en rémunération d'une activité déployée au Congo dans l'exercice d'une profession indépendante ;",
+        "b) des rémunérations versées à toute personne pour l'usage ou la concession de l'usage d'un bien incorporel ; d'un droit d'auteur sur une œuvre littéraire, artistique ou scientifique, y compris les films cinématographiques, les éditions de chaînes de télévision, les offres de programme de télévision et de radio ou la fourniture de l'accès ou les prestations audiovisuelles à contenu numérique ; d'un brevet ; d'une marque de fabrique ou de commerce ; d'un dessin ou d'un modèle, d'un plan, d'une formule ou d'un procédé secret ; et pour des informations ayant trait à une expérience acquise dans le domaine industriel, commercial ou scientifique ;",
+        "c) des intérêts, arrérages et tous autres produits de placements à revenus fixes, à l'exclusion des revenus des obligations ;",
+        "d) de la vente ou de la location de licence d'exploitation de brevets, marques de fabrique, procédés et formules secrètes ;",
+        "e) des rémunérations pour fournitures d'informations concernant les expériences d'ordre industriel, commercial ou scientifique ainsi que pour la location d'équipements industriels, commerciaux ou scientifiques ;",
+        "f) des rémunérations pour études, consultations, assistance technique, financière ou comptable ;",
+        "g) des rémunérations des prestations d'assistance, de location d'équipement et de matériel et de toutes prestations de services rendues aux compagnies pétrolières, y compris pendant les phases de recherche et de développement ;",
+        "h) d'une manière générale, des sommes versées à l'étranger, en rémunération des prestations de toute nature fournies ou utilisées au Congo ;",
+        "i) les sommes versées aux sociétés de trading par les opérateurs pétroliers et les membres du contractant, au titre des frais de commercialisation d'hydrocarbures ;",
+        "j) les sommes ou redevances payées par un résident du Congo à un résident d'un autre État de la CEMAC en contrepartie des prestations dans la limite du taux prévu par le Code général des impôts sans dépasser 10 %.",
+        "3) La retenue à la source s'applique également aux prestataires de services au Congo qui ont leur siège dans les pays ayant appartenu à l'Organisation Commune Africaine et Malgache (OCAM).",
+        "4) La loi n°2-60 du 13 janvier 1960 autorisant l'extension à la République du Congo des conventions fiscales franco-congolaises des 25 juillet 1939 et 18 octobre 1946 tendant à éviter les doubles impositions et d'établir des règles d'assistance administrative réciproque est abrogée."
+      ],
+      "mots_cles": [
+        "non-résidents",
+        "conventions fiscales",
+        "domicile fiscal",
+        "résidence fiscale",
+        "retenue à la source",
+        "profession indépendante",
+        "droits d'auteur",
+        "brevets",
+        "marques",
+        "redevances",
+        "intérêts",
+        "assistance technique",
+        "compagnies pétrolières",
+        "sociétés de trading",
+        "CEMAC",
+        "OCAM"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 ter-B",
+      "titre": "Base imposable",
+      "texte": [
+        "La base imposable de la retenue à la source est constituée par le montant brut des redevances et autres rémunérations visées ci-dessus. Par montant brut, il faut entendre toutes les sommes facturées ou facturables, hors TVA."
+      ],
+      "mots_cles": [
+        "base imposable",
+        "montant brut",
+        "redevances",
+        "hors TVA",
+        "facturables"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 ter-C",
+      "titre": "Taux d'imposition",
+      "texte": [
+        "(L.F.2023) Taux d'imposition",
+        "1) Sous réserve des conventions fiscales internationales, les taux de la retenue à la source sont fixés comme suit :",
+        "- taux général : 20 % ;",
+        "- taux moyen : 10 % ;",
+        "- taux réduit : 5,75 % ;",
+        "- taux spécifique : 5 %.",
+        "2) Le taux général s'applique à toutes rémunérations soumises à cet impôt conformément à l'article 185 ter-A du présent Code.",
+        "3) Le taux moyen s'applique :",
+        "- aux rémunérations des prestations ponctuelles versées aux entreprises non domiciliées ou non résidentes au Congo ;",
+        "- aux redevances de l'usage, de la concession de l'usage, de l'édition des chaînes de télévision, des offres de programmes de télévision et de radio, ou de la fourniture de l'accès ou les prestations audiovisuelles à contenu numérique ;",
+        "- aux sommes ou redevances payées par un résident du Congo à un résident d'un autre État de la CEMAC en contrepartie des prestations.",
+        "4) Le taux réduit s'applique aux rémunérations ou aux revenus extérieurs provenant :",
+        "- des contrats liés à la zone de l'amont pétrolier ;",
+        "- des rémunérations versées par les sociétés de transport maritime et aérien de droit congolais pour la location, l'affrètement des navires et des aéronefs, la location d'espaces sur les navires et les aéronefs étrangers et sur les commissions servies aux agents portuaires à l'étranger.",
+        "5) Le taux spécifique de 5 % s'applique aux intérêts des emprunts versés, à des personnes physiques ou morales étrangères, par les sociétés pétrolières installées au Congo, lorsque ces emprunts concernent des acquisitions directement destinées aux études, à la recherche, à l'exploration, au développement et à l'exploitation pétrolière."
+      ],
+      "mots_cles": [
+        "taux",
+        "retenue à la source",
+        "20 %",
+        "10 %",
+        "5,75 %",
+        "5 %",
+        "prestations ponctuelles",
+        "audiovisuel",
+        "CEMAC",
+        "amont pétrolier",
+        "transport maritime",
+        "transport aérien",
+        "sociétés pétrolières",
+        "emprunts"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 ter-D",
+      "titre": "Fait générateur et exigibilité",
+      "texte": [
+        "Le fait générateur de la taxe est l'émission de la facture ou de tout document en tenant lieu et la comptabilisation ou la prise en charge des sommes visées ci-dessus.",
+        "Au cas où lesdites sommes ou rémunérations sont admises comme charges fiscalement déductibles, elles sont considérées comme des distributions de bénéfices.",
+        "La retenue à la source est exigible à l'occasion du paiement des sommes visées ci-dessus.",
+        "En cas de paiement partiel de la facture, la créance du Trésor Public constituée par la retenue à la source est privilégiée et prioritaire."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exigibilité",
+        "facture",
+        "comptabilisation",
+        "charges déductibles",
+        "distributions de bénéfices",
+        "paiement partiel",
+        "créance privilégiée",
+        "Trésor Public"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 ter-E",
+      "titre": "Modalités de déclaration et de paiement",
+      "texte": [
+        "L'impôt est retenu à la source et déclaré à l'administration fiscale au nom de la personne débitrice située au Congo et pour le compte de la personne créancière non domiciliée au Congo, telles que lesdites personnes sont visées à l'article 185 ter-A.",
+        "La personne débitrice, en tant que redevable légal de l'impôt, doit :",
+        "- comptabiliser ou prendre en charge l'impôt dès réception de la facture ou de tout document en tenant lieu ;",
+        "- reverser au Trésor Public l'impôt dû au cours du mois suivant celui de paiement, avec une annexe déclarative indiquant l'identité du bénéficiaire des sommes, le montant brut total, le montant hors TVA, le montant de l'impôt versé et le numéro net payé au bénéficiaire."
+      ],
+      "mots_cles": [
+        "déclaration",
+        "paiement",
+        "redevable légal",
+        "personne débitrice",
+        "annexe déclarative",
+        "mois suivant",
+        "Trésor Public"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 ter-F",
+      "titre": "Dispositions diverses",
+      "texte": [
+        "L'assujettissement des personnes visées à l'article 185 ter-A est libératoire de l'impôt sur les sociétés (IS) et de la taxe spéciale sur les sociétés."
+      ],
+      "mots_cles": [
+        "libératoire",
+        "impôt sur les sociétés",
+        "IS",
+        "taxe spéciale sur les sociétés"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 quater",
+      "titre": "Abrogé",
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [],
+      "statut": "abrogé",
+      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 quater-A",
+      "titre": "Impôt spécial sur les plus-values de cession de titres",
+      "texte": [
+        "Il est établi un impôt spécial sur les plus-values réalisées par les personnes physiques ou morales domiciliées à l'étranger sur la cession de tout ou partie des participations qu'elles détiennent dans le capital des sociétés de droit congolais. L'impôt spécial est applicable à la fraction de la plus-value réalisée."
+      ],
+      "mots_cles": [
+        "impôt spécial",
+        "plus-values",
+        "cession de titres",
+        "participations",
+        "non-résidents",
+        "sociétés de droit congolais"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-B",
+      "titre": "Taux de l'impôt spécial sur les plus-values",
+      "texte": [
+        "Le taux de l'impôt spécial est fixé à 20 % du montant de la plus-value imposable. Cet impôt est libératoire de l'impôt sur le revenu du bénéficiaire.",
+        "Il est payable au moment de l'enregistrement obligatoire de l'acte de cession en même temps que le paiement des droits d'enregistrement."
+      ],
+      "mots_cles": [
+        "taux",
+        "20 %",
+        "plus-value imposable",
+        "libératoire",
+        "enregistrement",
+        "droits d'enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-C",
+      "titre": "Solidarité de paiement entre cédant et cessionnaire",
+      "texte": [
+        "Le cédant, le cessionnaire et la société de droit congolais, dont tout ou partie des titres auront été cédés, sont solidairement responsables du paiement de l'impôt spécial."
+      ],
+      "mots_cles": [
+        "solidarité",
+        "cédant",
+        "cessionnaire",
+        "paiement",
+        "impôt spécial"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quinquies",
+      "titre": "Retenue à la source sur les marchés publics et privés de construction",
+      "texte": [
+        "1) Les entrepreneurs de bâtiments et de travaux publics adjudicataires des marchés publics ou privés de construction sont tenus de prélever, pour le compte de l'État, une retenue à la source, sur les sommes payées aux sous-traitants ou aux bureaux d'études auxquels ils ont eu recours pour l'exécution des marchés, aux taux de :",
+        "- 5 % pour les entrepreneurs sous-traitants et autres relevant du régime réel ;",
+        "- 10 % pour les entrepreneurs sous-traitants et autres relevant du régime du forfait.",
+        "Les retenues opérées sont régies selon les dispositions des articles 172 et 173 du présent Code.",
+        "2) L'entrepreneur principal, adjudicataire du marché principal, est tenu, d'une part de communiquer, par trimestre, à l'administration fiscale, la liste des sous-traitants bénéficiaires des contrats d'exécution des travaux, suivant un format défini par l'administration, et d'autre part de porter l'étendue à la formalité d'enregistrement.",
+        "3) Chaque sous-traitant, bénéficiaire d'un contrat d'exécution des travaux, est tenu de porter ledit contrat à la formalité d'enregistrement.",
+        "4) Le défaut, les omissions ou insuffisances des retenues sont sanctionnés, d'une part par une amende de 5.000.000 FCFA et, d'autre part, par la perte de la déductibilité des sommes versées.",
+        "5) Le versement tardif des sommes retenues est sanctionné par une pénalité de retard de 2 % par mois ou fraction de mois sans dépasser 100 %.",
+        "6) Pour les sous-traitants, les sommes retenues constituent un acompte d'impôt.",
+        "7) Le paiement est fait au moyen d'un bordereau spécial fourni par l'administration fiscale, comprenant les informations pouvant permettre le contrôle et la gestion fiscale de la retenue."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "marchés publics",
+        "BTP",
+        "sous-traitants",
+        "bureaux d'études",
+        "5 %",
+        "10 %",
+        "régime réel",
+        "régime forfait",
+        "enregistrement",
+        "amende",
+        "5.000.000 FCFA",
+        "pénalité de retard",
+        "acompte d'impôt"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 8 : Paiements effectués par les entrepreneurs adjudicataires des marchés de BTP au profit des sous-traitants desdits marchés"
+    },
+    {
+      "article": "Art. 185 sexies",
+      "titre": "Retenue à la source sur les primes d'assurance cédées à l'étranger",
+      "texte": [
+        "Les primes cédées en réassurance au-delà du plafond fixé par l'article 308 du Code de la Conférence Interafricaine des Marchés d'Assurance (CIMA) et les primes d'assurances à l'étranger, perçues par les sociétés étrangères non domiciliées dans les États membres de la CIMA, sont soumises à la retenue à la source au taux de 20 % prévu à l'article 185 ter ci-dessus, nonobstant l'autorisation du Ministre en charge des assurances."
+      ],
+      "mots_cles": [
+        "réassurance",
+        "primes d'assurance",
+        "CIMA",
+        "retenue à la source",
+        "20 %",
+        "sociétés étrangères"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 9 : Réassurance"
+    }
+  ]
+}

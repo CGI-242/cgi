@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "document": "Application des dispositions fiscales au secteur pétrolier",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC3",
+    "partie": null,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Dispositions générales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Cadre législatif et réglementaire du secteur pétrolier amont",
+      "texte": [
+        "Art.1.- Cadre législatif et réglementaire du secteur pétrolier amont",
+        "I. Les dispositions fiscales intérieures applicables au « secteur pétrolier amont » sont régies par le Code des hydrocarbures, le Code général des impôts, le Code des douanes et leurs textes d'application et, plus généralement, toute législation et réglementation nationales applicables au secteur pétrolier amont.",
+        "II. Par « secteur pétrolier amont », on entend conformément à l'article 3 du Code des hydrocarbures : « les activités de prospection, d'exploration, de développement et d'exploitation des hydrocarbures ».",
+        "III. Le Code des hydrocarbures prévaut sur les lois et textes réglementaires existants à la date de son entrée en vigueur conformément à son article 211.",
+        "IV. L'article 11 du Code des hydrocarbures dispose que toute disposition d'un contrat pétrolier qui serait contraire aux dispositions du Code des hydrocarbures est nulle et de nul effet.",
+        "Toutefois, l'article 212 du Code des hydrocarbures dispose que les contrats pétroliers et les titres pétroliers y afférents conclus avant l'entrée en vigueur du Code des hydrocarbures demeurent en vigueur jusqu'à leur expiration mais que les avenants à ces contrats conclus après l'entrée en vigueur du Code des hydrocarbures doivent être conformes à celui-ci."
+      ],
+      "mots_cles": [
+        "cadre législatif",
+        "secteur pétrolier amont",
+        "Code hydrocarbures",
+        "CGI",
+        "Code douanes",
+        "prospection",
+        "exploration",
+        "développement",
+        "exploitation",
+        "contrat pétrolier",
+        "article 211",
+        "article 212"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Cadre fiscal du secteur pétrolier amont",
+      "texte": [
+        "Art.2.- Cadre fiscal du secteur pétrolier amont",
+        "Le cadre fiscal applicable au secteur pétrolier amont est constitué par :",
+        "- 1° les dispositions fiscales spécifiques au secteur pétrolier amont définies par le Code des hydrocarbures ;",
+        "- 2° les impôts et taxes relevant du droit commun (c'est-à-dire du Code général des impôts) listés par l'article 149 du Code des hydrocarbures."
+      ],
+      "mots_cles": [
+        "cadre fiscal",
+        "dispositions spécifiques",
+        "Code hydrocarbures",
+        "droit commun",
+        "CGI",
+        "article 149"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Typologie des impôts et taxes spécifiques au secteur pétrolier amont",
+      "texte": [
+        "Art.3.- Typologie des impôts et taxes spécifiques au secteur pétrolier amont",
+        "Conformément aux articles 101 et 148 du Code des hydrocarbures, les dispositions fiscales spécifiques applicables au secteur pétrolier amont comprennent les prélèvements suivants :",
+        "1) Les bonus :",
+        "Au titre des opérations pétrolières, le contracteur à l'exception de la société nationale, est assujetti notamment au paiement des bonus ci-après (le contrat de partage de production pouvant prévoir d'autres types de bonus) :",
+        "a) le bonus d'attribution du permis d'exploration ;",
+        "b) le bonus de signature ou de conclusion du contrat de partage de production ;",
+        "c) le bonus d'attribution du permis d'exploitation ;",
+        "d) le bonus de production ;",
+        "e) le bonus de prorogation du permis d'exploration ;",
+        "f) le bonus de prorogation du permis d'exploitation ;",
+        "g) le bonus de modification du contrat de partage de production ;",
+        "h) le bonus de réattribution du permis d'exploitation.",
+        "2) Les redevances :",
+        "a) la redevance superficiaire ;",
+        "b) la redevance minière proportionnelle à la production.",
+        "3) Les contributions :",
+        "a) la provision pour investissement diversifié (PID) ;",
+        "b) les contributions aux programmes de formation du personnel congolais ;",
+        "c) la contribution à la vérification et au contrôle de comptabilité ;",
+        "d) la contribution au fonds national de prévention des risques environnementaux ;",
+        "e) la taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production.",
+        "4) La provision pour abandon et réhabilitation des sites."
+      ],
+      "mots_cles": [
+        "typologie impôts",
+        "taxes spécifiques",
+        "article 101",
+        "article 148",
+        "bonus",
+        "redevance superficiaire",
+        "redevance minière",
+        "PID",
+        "formation personnel",
+        "contrôle comptabilité",
+        "fonds environnemental",
+        "plus-values cession",
+        "provision abandon",
+        "réhabilitation sites"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Notion de contracteur",
+      "texte": [
+        "Art.4.- Notion de contracteur",
+        "Conformément à l'article 3 du Code des Hydrocarbures, le contracteur est :",
+        "- en régime de partage de production : la partie contractante avec l'État, composée d'une ou plusieurs personnes morales, y compris la société nationale, ainsi que toute personne morale bénéficiaire d'un transfert régulier d'un intérêt participatif dans un titre minier ;",
+        "- en régime de contrat de services : une ou plusieurs personnes morales avec laquelle ou lesquelles l'État a signé un contrat de services."
+      ],
+      "mots_cles": [
+        "contracteur",
+        "article 3",
+        "partage production",
+        "contrat services",
+        "société nationale",
+        "intérêt participatif",
+        "titre minier"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

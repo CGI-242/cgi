@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 8,
+    "chapitre_titre": "Remise des successions au domaine et vente des biens non réclamés",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 33",
+      "titre": "Fin de l'administration des curateurs",
+      "texte": [
+        "L'administration des Curateurs en titre ou d'office est terminée lors du jugement de remise aux héritiers ou à leur représentant, jugement qui apure les comptes de gestion.",
+        "À défaut de réclamation par les héritiers ou ayants droit, la gestion ne peut se prolonger au-delà de trois ans à compter de la date de publication au Journal Officiel.",
+        "Toutefois, ce délai peut être prolongé jusqu'au plus proche compte de gestion annuel sanctionné par un jugement qui prononce par la même occasion l'envoi en possession au domaine de l'État ou sur autorisation spéciale du Président du Tribunal Populaire de District ou d'Arrondissement pour mener à bien certaines opérations (vente d'immeuble par exemple)."
+      ],
+      "mots_cles": [
+        "administration",
+        "Curateurs en titre",
+        "Curateurs d'office",
+        "jugement",
+        "remise",
+        "héritiers",
+        "représentant",
+        "apurement",
+        "comptes de gestion",
+        "réclamation",
+        "ayants droit",
+        "trois ans",
+        "Journal Officiel",
+        "envoi en possession",
+        "domaine de l'État",
+        "Président du Tribunal Populaire",
+        "District",
+        "Arrondissement",
+        "vente d'immeuble"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Envoi en possession aux Domaines",
+      "texte": [
+        "À l'expiration de la troisième année de la gestion du Curateur, s'il n'est présenté aucun ayant droit, l'administration des Domaines entre en possession provisoire des successions gérées par la curatelle et qui ont laissé après liquidation un excédent d'actif.",
+        "Les formalités préalables ayant été accomplies lors de l'ouverture de la succession, il est inutile de les réitérer lors de l'envoi en possession.",
+        "La publicité faite est réputée suffisante (envoi en possession prononcé d'office après deux insertions à un mois d'intervalle au Journal Officiel de la République du Congo)."
+      ],
+      "mots_cles": [
+        "troisième année",
+        "gestion",
+        "Curateur",
+        "ayant droit",
+        "administration des Domaines",
+        "possession provisoire",
+        "successions",
+        "curatelle",
+        "liquidation",
+        "excédent d'actif",
+        "formalités",
+        "envoi en possession",
+        "publicité",
+        "deux insertions",
+        "un mois d'intervalle",
+        "Journal Officiel",
+        "République du Congo"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Successions de faible valeur",
+      "texte": [
+        "Les successions liquidées d'une valeur inférieure à 500.000 FCFA sont, à la suite des jugements d'apurement, portées purement et simplement en recettes au Budget de l'État (Domaines)."
+      ],
+      "mots_cles": [
+        "successions liquidées",
+        "valeur inférieure",
+        "500.000 FCFA",
+        "jugements d'apurement",
+        "recettes",
+        "Budget de l'État",
+        "Domaines"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Redevabilité de l'État envers les héritiers",
+      "texte": [
+        "L'État reste redevable envers les héritiers ou ayants droit éventuels des biens et valeurs qui ont été remis durant quatre ans à compter du jour de l'envoi en possession (un mois après la dernière publication au Journal Officiel de la République du Congo) au titre de la recette."
+      ],
+      "mots_cles": [
+        "État",
+        "redevable",
+        "héritiers",
+        "ayants droit",
+        "biens",
+        "valeurs",
+        "quatre ans",
+        "envoi en possession",
+        "publication",
+        "Journal Officiel",
+        "République du Congo",
+        "recette"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

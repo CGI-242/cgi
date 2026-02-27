@@ -4,6 +4,10 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import * as chatService from "../services/chat.service";
+import prisma from "../utils/prisma";
+import { createLogger } from "../utils/logger";
+
+const logger = createLogger('ChatRoutes');
 
 const router = Router();
 
@@ -82,6 +86,50 @@ router.delete("/conversations/:id", requireAuth, async (req: AuthRequest, res: R
       res.status(404).json({ error: message });
       return;
     }
+    res.status(500).json({ error: "Erreur serveur" });
+  }
+});
+
+// GET /api/chat/article/:numero/references — Articles liés par références croisées
+router.get("/article/:numero/references", requireAuth, async (req: AuthRequest, res: Response) => {
+  try {
+    const numero = Array.isArray(req.params.numero) ? req.params.numero[0] : req.params.numero;
+
+    const article = await prisma.article.findFirst({
+      where: { numero },
+      select: {
+        id: true,
+        numero: true,
+        titre: true,
+        references: {
+          select: {
+            toArticle: {
+              select: { id: true, numero: true, titre: true },
+            },
+          },
+        },
+        referencedBy: {
+          select: {
+            fromArticle: {
+              select: { id: true, numero: true, titre: true },
+            },
+          },
+        },
+      },
+    });
+
+    if (!article) {
+      res.status(404).json({ error: "Article introuvable" });
+      return;
+    }
+
+    res.json({
+      article: { id: article.id, numero: article.numero, titre: article.titre },
+      references: article.references.map(r => r.toArticle),
+      referencedBy: article.referencedBy.map(r => r.fromArticle),
+    });
+  } catch (err) {
+    logger.error("[chat/article/references]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });

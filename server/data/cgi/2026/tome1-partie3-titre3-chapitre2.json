@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "titre": 3,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Juridiction contentieuse",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 423",
+      "titre": "Forme de la réclamation",
+      "texte": [
+        "La réclamation doit être adressée au Directeur Général des Impôts et des Domaines. Elle peut être présentée par le contribuable lui-même, ou par son mandataire dûment habilité.",
+        "Elle doit être rédigée sur papier libre, datée et signée par son auteur."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "forme",
+        "Directeur Général",
+        "mandataire",
+        "papier libre",
+        "signature"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 424",
+      "titre": "Adresse et opposabilité de la réclamation",
+      "texte": [
+        "La réclamation doit être adressée au service des impôts dont relève le lieu d'imposition.",
+        "Elle est opposable à l'administration fiscale dès sa réception."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "adresse",
+        "opposabilité",
+        "service des impôts",
+        "lieu d'imposition"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 426",
+      "titre": "Réclamation à la suite d'erreurs d'expédition",
+      "texte": [
+        "Lorsque, par suite d'erreurs d'expédition, un contribuable a acquitté un impôt supérieur à celui qui résulte du rôle, il peut en demander le remboursement dans les formes prévues aux articles précédents."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "erreurs d'expédition",
+        "remboursement",
+        "rôle"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 427",
+      "titre": "Réclamation pour autrui",
+      "texte": [
+        "Nul n'est admis à introduire ou à soutenir une réclamation pour autrui s'il ne justifie d'un mandat régulier.",
+        "Le mandat timbré et enregistré doit être produit en même temps que la réclamation lorsque celle-ci est introduite par le mandataire."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "mandat",
+        "mandataire",
+        "timbre",
+        "enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 428",
+      "titre": "Présentation des requêtes relatives aux cotes figurant sur un rôle",
+      "texte": [
+        "Par dérogation aux dispositions de l'article précédent, les requêtes relatives à des cotes figurant sur un rôle numérique établi par village ou sur un rôle récapitulatif doivent être présentées par le Président du Comité Exécutif Communal ou le fonctionnaire, chef de la circonscription administrative."
+      ],
+      "mots_cles": [
+        "requêtes",
+        "rôle numérique",
+        "village",
+        "rôle récapitulatif",
+        "Comité Exécutif Communal",
+        "circonscription administrative"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 429",
+      "titre": "Mentions obligatoires de la demande",
+      "texte": [
+        "Toute demande mentionne, à peine de non-recevabilité, la contribution à laquelle elle s'applique, et, à défaut de production de l'avertissement ou de l'avis de mise en recouvrement, le numéro de l'article du rôle ou de l'avis sous lequel figure cette contribution ; elle contient, indépendamment de son objet, l'exposé des moyens par lesquels son auteur prétend la justifier.",
+        "Il en est formé une demande distincte par Commune ou District."
+      ],
+      "mots_cles": [
+        "demande",
+        "non-recevabilité",
+        "contribution",
+        "avertissement",
+        "avis de mise en recouvrement",
+        "article du rôle",
+        "Commune",
+        "District"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 429 bis",
+      "titre": "Éléments de la réclamation adressée à l'administration fiscale",
+      "texte": [
+        "(L.F. 2026 - nouveau) La réclamation adressée à l'administration fiscale comprend les éléments suivants :",
+        "a) la lettre de notification des redressements ;",
+        "b) la réponse à la notification des redressements ;",
+        "c) la lettre de confirmation des bases d'imposition ;",
+        "d) l'avis de mise en recouvrement ;",
+        "e) et les preuves de constitution des garanties.",
+        "En cas d'une réclamation introduite à la suite d'un recours hiérarchique, le contribuable est tenu de produire en dehors des pièces susmentionnées :",
+        "f) une copie de la demande valant recours hiérarchique ;",
+        "g) les conclusions (le procès-verbal) du recours hiérarchique ;",
+        "h) la lettre de confirmation rectificative."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "éléments",
+        "notification des redressements",
+        "confirmation des bases",
+        "avis de mise en recouvrement",
+        "frais de traitement",
+        "garanties",
+        "recours hiérarchique",
+        "L.F. 2026"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 430",
+      "titre": "Enregistrement et instruction des réclamations",
+      "texte": [
+        "La DGID enregistre les réclamations, prépare les feuilles d'instruction et les communique :",
+        "• soit pour avis, aux agents qui ont établi la taxation pour les affaires relevant de sa compétence et de celle du Ministère des finances ;",
+        "• soit pour décision, au Directeur intéressé, qui doit au préalable prendre l'avis des agents ayant établi les taxations.",
+        "Les réclamations sont instruites dans un délai de trois mois à compter de leur communication aux agents taxateurs."
+      ],
+      "mots_cles": [
+        "DGID",
+        "réclamations",
+        "feuilles d'instruction",
+        "taxation",
+        "Ministère des finances",
+        "délai trois mois",
+        "agents taxateurs"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 430 bis",
+      "titre": "Pouvoir de statuer du directeur départemental des impôts",
+      "texte": [
+        "(L.F.2024, L.F.2025) En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :",
+        "• par le directeur départemental des impôts et des domaines dans la limite de 50.000.000 FCFA ;",
+        "• par le directeur général des impôts et des domaines, lorsque les droits et pénalités contestés sont inférieurs ou égaux à 1.000.000.000 FCFA ;",
+        "• par le Ministre chargé des finances au-delà de 1.000.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "L.F.2024",
+        "L.F.2025",
+        "réclamation",
+        "pouvoir de statuer",
+        "directeur départemental",
+        "50.000.000 FCFA",
+        "directeur général",
+        "1.000.000.000 FCFA",
+        "Ministre des finances"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 431",
+      "titre": "Rejet total ou partiel d'une requête contentieuse",
+      "texte": [
+        "Lorsque l'agent qui a établi la taxation estime devoir proposer le rejet total ou partiel d'une requête contentieuse visant le forfait soumis à l'impôt sur les BICA ou les bases d'imposition à la contribution foncière des propriétés bâties ou à la contribution foncière des propriétés non bâties, il doit soumettre la réclamation à l'avis de la commission visée aux articles 400 et suivants du présent Code."
+      ],
+      "mots_cles": [
+        "taxation",
+        "rejet",
+        "requête contentieuse",
+        "forfait",
+        "BICA",
+        "contribution foncière",
+        "propriétés bâties",
+        "propriétés non bâties",
+        "commission",
+        "articles 400"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 432",
+      "titre": "Délai de décision de l'autorité compétente",
+      "texte": [
+        "L'autorité compétente statue dans un délai de six mois à compter de la date de réception de la demande par la DGID."
+      ],
+      "mots_cles": [
+        "autorité compétente",
+        "délai six mois",
+        "réception",
+        "DGID"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 433",
+      "titre": "Notification de la décision",
+      "texte": [
+        "Après les différents avis recueillis, la décision est notifiée par le Directeur Général des Impôts au requérant, à l'agent de recouvrement et à l'agent qui a établi la taxation."
+      ],
+      "mots_cles": [
+        "décision",
+        "notification",
+        "Directeur Général des Impôts",
+        "requérant",
+        "agent de recouvrement",
+        "taxation"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 434",
+      "titre": "Recours devant le Tribunal compétent",
+      "texte": [
+        "Lorsque la décision ne donne pas entière satisfaction au contribuable, le requérant a la faculté, dans le délai de trois mois à partir du jour où il a reçu notification de la décision, de porter le litige devant le Tribunal compétent, conformément à la loi n°22-92 du 20 août 1992 portant organisation du pouvoir judiciaire en République du Congo.",
+        "(L.F. 2026 - nouveau) En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet."
+      ],
+      "mots_cles": [
+        "décision",
+        "contribuable",
+        "délai trois mois",
+        "notification",
+        "Tribunal compétent",
+        "loi n°22-92",
+        "pouvoir judiciaire",
+        "délai six mois",
+        "L.F. 2026"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 - Demandes en décharge ou réduction"
+    },
+    {
+      "article": "Art. 435",
+      "titre": "Cotes indûment imposées",
+      "texte": [
+        "Les comptables chargés de la perception des impôts directs portés sur des rôles nominatifs peuvent présenter des états de cotes indûment imposées comprenant les cotes établies par faux ou double emploi manifeste, ainsi que les cotes qui leur paraissent avoir été établies à tort, mais pour ces dernières, seulement lorsqu'il s'agit de contribuables qui ne peuvent réclamer eux-mêmes ou quand le domicile est inconnu."
+      ],
+      "mots_cles": [
+        "comptables",
+        "perception",
+        "impôts directs",
+        "rôles nominatifs",
+        "cotes indûment imposées",
+        "faux",
+        "double emploi",
+        "domicile inconnu"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
+    },
+    {
+      "article": "Art. 436",
+      "titre": "Transmission des états de cotes indûment imposées",
+      "texte": [
+        "Les états de cotes indûment imposées établis en double exemplaire doivent parvenir à la DGID dans les trois mois qui suivent la mise en recouvrement du rôle."
+      ],
+      "mots_cles": [
+        "états de cotes",
+        "double exemplaire",
+        "DGID",
+        "délai trois mois",
+        "mise en recouvrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
+    },
+    {
+      "article": "Art. 437",
+      "titre": "Notification de la décision du Directeur Général des Impôts",
+      "texte": [
+        "La décision du Directeur Général des Impôts est notifiée au contribuable qui dispose d'un délai de trois mois pour compter de la réception de cette notification pour porter l'affaire devant la Cour d'Appel, lorsque la décision ne lui donne pas satisfaction."
+      ],
+      "mots_cles": [
+        "décision",
+        "Directeur Général des Impôts",
+        "notification",
+        "contribuable",
+        "délai trois mois",
+        "Cour d'Appel"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
+    },
+    {
+      "article": "Art. 438",
+      "titre": "Dégrèvement d'office",
+      "texte": [
+        "Les agents de l'assiette peuvent à toute époque rectifier les erreurs d'imposition par voie de dégrèvement d'office."
+      ],
+      "mots_cles": [
+        "agents de l'assiette",
+        "erreurs d'imposition",
+        "dégrèvement d'office"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 - Dégrèvements d'office"
+    },
+    {
+      "article": "Art. 439",
+      "titre": "Transmission des états spéciaux de dégrèvement d'office",
+      "texte": [
+        "Les cotes sont inscrites sur des états spéciaux qui sont transmis au Directeur Général des Impôts au cours du premier mois de chaque trimestre.",
+        "Les dégrèvements d'office doivent être portés sur des états distincts par exercice et par commune ou région."
+      ],
+      "mots_cles": [
+        "cotes",
+        "états spéciaux",
+        "Directeur Général des Impôts",
+        "trimestre",
+        "dégrèvements d'office",
+        "exercice",
+        "commune",
+        "région"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 - Dégrèvements d'office"
+    },
+    {
+      "article": "Art. 440",
+      "titre": "Décision sur les états de dégrèvement d'office",
+      "texte": [
+        "Le Directeur Général des Impôts statue sur les états de dégrèvement d'office ; il notifie sa décision à l'agent de l'assiette qui a proposé le dégrèvement et à l'agent chargé du recouvrement."
+      ],
+      "mots_cles": [
+        "Directeur Général des Impôts",
+        "dégrèvement d'office",
+        "notification",
+        "agent de l'assiette",
+        "agent du recouvrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 - Dégrèvements d'office"
+    },
+    {
+      "article": "Art. 441",
+      "titre": "Sursis au paiement des impositions contestées",
+      "texte": [
+        "Le contribuable qui, par une réclamation régulièrement introduite, conteste le bien-fondé ou la quotité des impositions mise à sa charge, peut surseoir au paiement de la partie contestée desdites impositions si il le demande dans sa réclamation et fixe le montant ou précise les bases du dégrèvement auquel il prétend et à la condition de constituer des garanties propres à assurer le recouvrement de l'impôt.",
+        "Ces garanties peuvent être constituées par une consignation dans un compte d'attente au Trésor, des créances sur le Trésor, des obligations dûment cautionnées, des valeurs mobilières, des marchandises déposées dans les magasins agréés par l'État et faisant l'objet d'un warrant endossé à l'ordre du Trésor, des affectations hypothécaires, une caution bancaire délivrée par une banque installée au Congo et présentée au comptable public.",
+        "A défaut de cette constitution de garanties, l'agent chargé du recouvrement peut prendre des mesures conservatoires ; en ce cas, la vente ne peut être effectuée pour la partie contestée de l'impôt jusqu'à ce qu'une décision soit prise, soit par le Directeur Général des Impôts, soit par la Cour d'Appel.",
+        "Le comptable chargé du recouvrement accepte les garanties offertes par le contribuable après s'être assuré de leur conformité.",
+        "Il délivre une quittance en cas de dépôt de fonds au Trésor public et notifie par lettre à l'ordonnateur, le dépôt de la caution de garantie et signifie la nature de ladite caution (chèque, lettre de garantie, etc.).",
+        "Lorsqu'un contribuable qui a demandé le bénéfice des dispositions des précédents alinéas est débouté en tout ou en partie, il est redevable d'un intérêt de retard calculé sur les sommes contestées à tort. Cet intérêt est de 1 % par mois entier écoulé entre la date de l'enregistrement de la réclamation à la DGID, ou la date d'exigibilité de l'impôt si elle est postérieure, et la date de la décision du Directeur Général des Impôts ou de la Cour d'Appel, ou celle du paiement si l'impôt est acquitté avant cette décision.",
+        "L'intérêt est exigible en totalité dès l'émission d'un titre de perception par le service d'assiette.",
+        "L'instruction par l'administration de toute réclamation fiscale est assujettie au dépôt préalable, auprès du comptable public, d'une garantie d'un montant en principal et en pénalités dont le taux est égal à :",
+        "• 10 % pour un montant contesté inférieur ou égal à 500.000.000 FCFA ;",
+        "• 5 % pour un montant contesté inférieur ou égal 1.500.000.000 FCFA ;",
+        "• 2,5 % pour un montant supérieur à 1.500.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "contribuable",
+        "réclamation",
+        "bien-fondé",
+        "quotité",
+        "sursis de paiement",
+        "dégrèvement",
+        "garanties",
+        "recouvrement",
+        "consignation",
+        "Trésor",
+        "caution bancaire",
+        "warrant",
+        "hypothèque",
+        "mesures conservatoires",
+        "intérêt de retard",
+        "1 % par mois",
+        "Cour d'Appel",
+        "10 %",
+        "5 %",
+        "2,5 %",
+        "500.000.000 FCFA",
+        "1.500.000.000 FCFA",
+        "L.F. 2026"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    },
+    {
+      "article": "Art. 442",
+      "titre": "Observation du secret professionnel",
+      "texte": [
+        "Les dispositions des articles 404 à 406 du présent Code relatives à l'observation du secret professionnel s'appliquent au contentieux des impôts visés aux dits articles."
+      ],
+      "mots_cles": [
+        "articles 404 à 406",
+        "secret professionnel",
+        "contentieux"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    },
+    {
+      "article": "Art. 443",
+      "titre": "Non-communication de la réclamation aux agents",
+      "texte": [
+        "En aucun cas, une réclamation ne doit être communiquée, au cours de son instruction, à d'autres personnes que les agents qui ont été appelés à intervenir dans l'établissement de l'imposition contestée sauf exceptions prévues à l'article 431 ci-dessus."
+      ],
+      "mots_cles": [
+        "réclamation",
+        "instruction",
+        "confidentialité",
+        "agents",
+        "article 431"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    },
+    {
+      "article": "Art. 444",
+      "titre": "Communication périodique des dégrèvements",
+      "texte": [
+        "Périodiquement, les agents du service de l'assiette communiquent aux comptables chargés du recouvrement, la liste des dégrèvements qu'ils proposent d'office et des contribuables qui ont adressé une requête concernant l'une ou l'autre de leurs impositions. Dans ce dernier cas, les agents de l'assiette se bornent à préciser la nature de la contribution contestée et à indiquer si la demande paraît fondée ou non préjuger de la décision."
+      ],
+      "mots_cles": [
+        "agents de l'assiette",
+        "comptables",
+        "recouvrement",
+        "dégrèvements",
+        "requête",
+        "contribution contestée"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    },
+    {
+      "article": "Art. 444 bis",
+      "titre": "États distincts des dégrèvements accordés suite à une action contentieuse",
+      "texte": [
+        "Les dégrèvements accordés suite à une action contentieuse doivent être portés sur des états distincts par exercice et par commune ou région par le service chargé du contentieux."
+      ],
+      "mots_cles": [
+        "dégrèvements",
+        "action contentieuse",
+        "états distincts",
+        "exercice",
+        "commune",
+        "région"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    },
+    {
+      "article": "Art. 445",
+      "titre": "Annotation des rôles suite à la notification des décisions",
+      "texte": [
+        "Dès réception de la notification des décisions, les agents annotent les rôles qu'ils détiennent des réductions ou des charges accordées, ainsi que des rejets prononcés ; ils annotent également les dossiers individuels des contribuables intéressés."
+      ],
+      "mots_cles": [
+        "notification",
+        "décisions",
+        "annotation",
+        "rôles",
+        "réductions",
+        "rejets",
+        "dossiers individuels"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 - Dispositions diverses"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import analyticsRoutes from "./routes/analytics.routes";
 import auditRoutes from "./routes/audit.routes";
 import alertesFiscalesRoutes from "./routes/alertes-fiscales.routes";
 import userRoutes from "./routes/user.routes";
+import adminRoutes from "./routes/admin.routes";
 
 const app = express();
 
@@ -61,6 +62,7 @@ app.use("/api/analytics", analyticsRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/alertes-fiscales", alertesFiscalesRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/admin", adminRoutes);
 
 // Health check
 app.get("/health", (_req, res) => {

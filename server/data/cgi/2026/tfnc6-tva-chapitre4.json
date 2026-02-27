@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 4,
+    "chapitre_titre": "Base d'imposition",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 16",
+      "titre": "Base d'imposition de la TVA",
+      "texte": [
+        "Art.16.- La base d'imposition de la TVA est constituée :",
+        "• pour les livraisons de biens, par toutes sommes ou valeurs et par tous avantages, biens ou services reçus ou à recevoir en contrepartie de la livraison ;",
+        "• pour les livraisons à soi-même, par le prix d'achat hors taxes des biens achetés ou utilisés en l'état ou par le coût de revient des biens extraits fabriqués ou transformés ;",
+        "• pour les prestations de services, par toutes les sommes et les avantages reçus et, le cas échéant, par la valeur des biens consommables pour l'exécution des services ;",
+        "• pour les prestations à soi-même, par les dépenses engagées pour l'exécution des services ;",
+        "• pour les opérations de leasing ou de crédit-bail avec ou sans option d'achat, par le montant des loyers facturés par les sociétés de crédit-bail et en fin de contrat, par le prix de cession convenu au contrat lorsque l'option d'achat est levée par le preneur ou par le prix de cession en cas de vente à un tiers ;",
+        "• pour les échanges, par la valeur des produits reçus en paiement du bien livré, augmentée éventuellement du montant de la soulte encaissée ;",
+        "• pour les travaux immobiliers et les travaux publics, par le montant des marchés, devis, mémoires ou factures ;",
+        "• pour les aides aux entreprises visées au point 5 de l'article 3, par le montant de la contrepartie entraînant l'imposition à la TVA. Si ce montant n'est pas clairement stipulé par l'organisme versant, l'ensemble de l'aide est soumis à la TVA."
+      ],
+      "mots_cles": [
+        "base imposition TVA",
+        "livraisons biens",
+        "sommes valeurs avantages",
+        "livraisons à soi-même",
+        "prix achat HT",
+        "coût revient",
+        "prestations services",
+        "biens consommables",
+        "leasing crédit-bail",
+        "loyers",
+        "option achat",
+        "échanges",
+        "soulte",
+        "travaux immobiliers",
+        "travaux publics",
+        "marchés devis",
+        "aides entreprises"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Imposition sur la marge",
+      "texte": [
+        "Art.17.- Par dérogation aux dispositions de l'article 15, la base d'imposition peut être constituée par la marge pour les opérations suivantes :",
+        "1) Les ventes de biens d'occasion réalisées par les professionnels : la base d'imposition est constituée par la différence entre le prix de vente hors TVA et le prix de revient toutes taxes comprises. Sont considérés comme biens d'occasion, les biens ayant fait l'objet d'une utilisation et qui sont susceptibles de réemploi en l'état ou après réparation.",
+        "2) Les opérations d'entremise effectuées par les agences de voyages et les organisateurs de circuits touristiques : la base d'imposition est constituée par la différence entre le prix de vente hors TVA payé par le client et le prix toutes taxes comprises, facturé à l'agence ou à l'organisateur par les entrepreneurs de transport, les hôteliers, les restaurateurs, les entrepreneurs de spectacles et les autres assujettis qui exécutent matériellement les services utilisés par le client.",
+        "3) Aucune autre activité ne peut donner lieu à imposition de la TVA sur la marge."
+      ],
+      "mots_cles": [
+        "imposition marge",
+        "biens d'occasion",
+        "professionnels",
+        "prix vente HT",
+        "prix revient TTC",
+        "réemploi réparation",
+        "agences voyages",
+        "circuits touristiques",
+        "entremise",
+        "transport hôtellerie restauration"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Éléments inclus dans la base imposable",
+      "texte": [
+        "Art.18.- 1) Sont inclus dans la base imposable :",
+        "• les frais accessoires aux livraisons de biens et services facturés aux clients ;",
+        "• les impôts, droits et taxes, y compris le droit d'accises, à l'exclusion de la TVA ;",
+        "• les compléments de prix acquittés à des titres divers par l'acquéreur des biens ou le client ;",
+        "• les sommes perçues par l'assujetti à titre de consignation lors de la livraison d'emballages récupérables et réutilisables non identifiables.",
+        "2) En ce qui concerne les importations, la base imposable est obtenue en ajoutant à la valeur imposable telle qu'elle est définie par la réglementation douanière de la CEMAC, le montant du droit de douane et du droit d'accises.",
+        "3) Pour l'introduction sur le territoire d'un État membre, elle est constituée par la valeur sortie usine, à l'exclusion des frais d'approche."
+      ],
+      "mots_cles": [
+        "éléments inclus base",
+        "frais accessoires",
+        "impôts droits taxes",
+        "droit accises",
+        "compléments prix",
+        "consignation emballages",
+        "importations",
+        "valeur douanière CEMAC",
+        "droit douane",
+        "introduction territoire",
+        "valeur sortie usine"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Éléments exclus de la base imposable",
+      "texte": [
+        "Art.19.- Sont exclus de la base imposable :",
+        "• les escomptes de caisse, remises, rabais et ristournes et autres réductions de prix consenties à condition qu'ils bénéficient effectivement et pour leur montant exact au client et qu'ils figurent sur facture initiale ou facture rectificative ;",
+        "• les débours qui ne sont que des remboursements de frais et refacturés pour leur montant exact au client ;",
+        "• les encaissements qui ne sont pas la contrepartie d'une affaire ;",
+        "• les sommes perçues à titre de consignation lors de la livraison d'emballages identifiables, récupérables et réutilisables à la condition que les sommes engagées à titre de la consignation soient individualisées sur la facture. Lorsque ces emballages n'ont pas été rendus au terme des délais en usage dans la profession, la TVA est due sur le prix de cession."
+      ],
+      "mots_cles": [
+        "éléments exclus base",
+        "escomptes caisse",
+        "remises rabais ristournes",
+        "réductions prix",
+        "facture rectificative",
+        "débours",
+        "remboursements frais",
+        "consignation emballages identifiables",
+        "délais profession"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Marchés de l'État",
+      "texte": [
+        "Art.20.- En ce qui concerne les marchés de l'État financés par les budgets publics, les prêts ou aides extérieurs, la base de la TVA est constituée par le montant des marchés toutes taxes comprises à l'exclusion de la TVA.",
+        "Les dispositions du paragraphe ci-dessus s'appliquent également aux marchés concernant les établissements publics à caractère industriel, commercial, scientifique, technique et administratif, les sociétés d'économie mixte, les collectivités et organismes de droit public jouissant ou non de la personnalité juridique et de l'autonomie financière."
+      ],
+      "mots_cles": [
+        "marchés État",
+        "budgets publics",
+        "prêts aides extérieurs",
+        "TTC hors TVA",
+        "établissements publics",
+        "EPIC",
+        "sociétés économie mixte",
+        "collectivités",
+        "organismes droit public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Arrondi de la base d'imposition",
+      "texte": [
+        "Art.21.- Pour le calcul de la TVA, la base d'imposition est arrondie au millier FCFA inférieur."
+      ],
+      "mots_cles": [
+        "arrondi",
+        "millier FCFA inférieur",
+        "calcul TVA"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

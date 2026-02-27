@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 2,
+    "chapitre": null,
+    "chapitre_titre": "",
+    "section": "Droits de timbre non codifiés",
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du timbre électronique",
+      "texte": [
+        "Il est institué une redevance dans le secteur de l'économie numérique dénommée « Timbre électronique » imposable aux opérateurs économiques, aux établissements commerciaux, aux particuliers et aux organismes publics, en vue de faciliter la dématérialisation et la certification des documents."
+      ],
+      "mots_cles": [
+        "redevance",
+        "économie numérique",
+        "timbre électronique",
+        "opérateurs économiques",
+        "établissements commerciaux",
+        "particuliers",
+        "organismes publics",
+        "dématérialisation",
+        "certification",
+        "documents"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Émission et obligations",
+      "texte": [
+        "Le Timbre électronique est émis par le système d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.",
+        "Il est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et du paiement minimal est de 1.950 FCFA.",
+        "Ces transactions sont certifiées par plateforme d'horodatage, de certification et d'archivage en vigueur par le biais du timbre électronique.",
+        "Les personnes visées ci-dessus sont tenues de connecter leur système de facturation ou tout système en tenant lieu à celui d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.",
+        "La Direction Générale des Impôts et des Domaines et l'Agence de Régulation des Postes et des Communications Électroniques sont chargées de la mise en œuvre de la présente disposition.",
+        "Toute action de nature à empêcher l'action de l'ARPCE de se connecter au système de facturation est sanctionnée par le blocage des comptes bancaires du contribuable, assorti d'une amende fiscale de 10.000.000 FCFA."
+      ],
+      "mots_cles": [
+        "timbre électronique",
+        "émission",
+        "système d'horodatage",
+        "certification électronique",
+        "archivage",
+        "ARPCE",
+        "Agence de Régulation des Postes et des Communications Électroniques",
+        "obligation",
+        "personne physique",
+        "personne morale",
+        "droit public",
+        "droit privé",
+        "commerçant",
+        "transactions",
+        "voie électronique",
+        "1.950 FCFA",
+        "paiement minimal",
+        "plateforme",
+        "système de facturation",
+        "Direction Générale des Impôts et des Domaines",
+        "blocage des comptes bancaires",
+        "amende fiscale",
+        "10.000.000 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Montant du timbre électronique",
+      "texte": [
+        "Le montant du timbre électronique fiscal est de 50 FCFA."
+      ],
+      "mots_cles": [
+        "montant",
+        "timbre électronique fiscal",
+        "50 FCFA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Certification et opérationnalisation",
+      "texte": [
+        "L'Agence de Régulation des Postes et des Communications Électroniques est chargée de la certification des paiements électroniques et de l'opérationnalisation du système."
+      ],
+      "mots_cles": [
+        "ARPCE",
+        "Agence de Régulation des Postes et des Communications Électroniques",
+        "certification",
+        "paiements électroniques",
+        "opérationnalisation",
+        "système"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Clé de répartition",
+      "texte": [
+        "La clé de répartition de ladite redevance est établie ainsi qu'il suit :",
+        "• État : 60 %",
+        "• ARPCE : 40 %"
+      ],
+      "mots_cles": [
+        "clé de répartition",
+        "redevance",
+        "État",
+        "60 %",
+        "ARPCE",
+        "40 %"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Sanctions fiscales",
+      "texte": [
+        "Les charges liées à une transaction non conforme à l'obligation prévue ci-dessus ne sont pas admises en déduction pour la détermination du bénéfice imposable.",
+        "Si les charges présentées par le contribuable pour la détermination de son revenu imposable sont remises en cause, l'Administration fiscale est en droit de réclamer un droit d'enregistrement au taux de 1 % sur les actes juridiques qui sous-tendent ces charges.",
+        "La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.",
+        "Le timbre électronique s'applique à tout acte émis d'une valeur minimale fixée ci-dessus."
+      ],
+      "mots_cles": [
+        "charges",
+        "transaction non conforme",
+        "obligation",
+        "déduction",
+        "bénéfice imposable",
+        "contribuable",
+        "revenu imposable",
+        "Administration fiscale",
+        "droit d'enregistrement",
+        "1 %",
+        "actes juridiques",
+        "TVA",
+        "droit à déduction",
+        "timbre électronique",
+        "valeur minimale"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

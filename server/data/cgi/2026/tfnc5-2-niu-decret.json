@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "document": "Numéro d'identification unique (NIU) - Décret d'institution",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-NIU1",
+    "partie": null,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Institution du NIU",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du numéro d'identification unique",
+      "texte": [
+        "Art.1.- Il est institué un numéro d'identification unique, en sigle NIU."
+      ],
+      "mots_cles": [
+        "NIU",
+        "numéro identification unique",
+        "institution"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définition et champ d'application",
+      "texte": [
+        "Art.2.- Le numéro d'identification unique est une immatriculation obligatoire du contribuable, attribuée par la direction générale des impôts, afin de constituer une banque de données utilisées par les administrations du ministère de l'économie, des finances et budget et, le cas échéant, par toute autre administration publique.",
+        "Il s'applique à toute personne physique ou morale sur le territoire national.",
+        "Il est requis pour toutes les formalités et transactions à caractère économique auprès de toutes les administrations, entreprises publiques et de tout organisme public ou privé."
+      ],
+      "mots_cles": [
+        "définition NIU",
+        "immatriculation obligatoire",
+        "DGI",
+        "banque données",
+        "personnes physiques morales",
+        "formalités économiques"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Systèmes d'information et interconnexion",
+      "texte": [
+        "Art.3.- Tous les systèmes de traitements automatisés du ministère de l'économie, des finances et du budget et, le cas échéant, des autres administrations, doivent avoir pour clé de connexion le numéro d'identification unique, afin d'assurer un meilleur échange des informations sur les contribuables.",
+        "Toutes les applications informatiques doivent être conçues ou modifiées de manière que le défaut du numéro d'identification unique ne permette pas la mise en œuvre du traitement sollicité."
+      ],
+      "mots_cles": [
+        "systèmes automatisés",
+        "clé connexion",
+        "échange informations",
+        "applications informatiques",
+        "interconnexion"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Fichiers manuels et archives",
+      "texte": [
+        "Art.4.- Les fichiers manuels et les archives doivent être actualisés et tenus avec inscription du numéro d'identification unique de chaque personne physique ou morale."
+      ],
+      "mots_cles": [
+        "fichiers manuels",
+        "archives",
+        "actualisation",
+        "inscription NIU"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Modalités de délivrance",
+      "texte": [
+        "Art.5.- Les modalités de délivrance du numéro d'identification unique sont fixées par arrêté du ministre en charge des finances."
+      ],
+      "mots_cles": [
+        "modalités délivrance",
+        "arrêté ministre finances"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Dispositions finales du décret",
+      "texte": [
+        "Art.6.- Le présent décret, qui abroge toutes dispositions antérieures contraires, sera enregistré, publié au journal Officiel et communiqué partout où besoin sera."
+      ],
+      "mots_cles": [
+        "dispositions finales",
+        "abrogation",
+        "publication JO"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

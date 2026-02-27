@@ -52,8 +52,18 @@ export default function AppLayout() {
           <Stack.Screen name="simulateur/patente" options={{ headerShown: false }} />
           <Stack.Screen name="simulateur/solde-liquidation" options={{ headerShown: false }} />
           <Stack.Screen name="chat/index" options={{ headerShown: false }} />
+          <Stack.Screen name="abonnement/index" options={{ headerShown: false }} />
+          <Stack.Screen name="admin/index" options={{ headerShown: false }} />
           <Stack.Screen name="profil/index" options={{ headerShown: false }} />
           <Stack.Screen name="parametres/index" options={{ headerShown: false }} />
+          <Stack.Screen name="organisation/index" options={{ headerShown: false }} />
+          <Stack.Screen name="securite/index" options={{ headerShown: false }} />
+          <Stack.Screen name="analytics/index" options={{ headerShown: false }} />
+          <Stack.Screen name="audit/index" options={{ headerShown: false }} />
+          <Stack.Screen name="permissions/index" options={{ headerShown: false }} />
+          <Stack.Screen name="alertes/index" options={{ headerShown: false }} />
+          <Stack.Screen name="legal/cgu" options={{ headerShown: false }} />
+          <Stack.Screen name="legal/confidentialite" options={{ headerShown: false }} />
         </Stack>
       </View>
     </View>

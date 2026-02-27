@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "document": "Retenue à la source sur les sommes payées par le Trésor Public",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC4-TRESOR",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.8. Retenue à la source sur les sommes payées par le Trésor Public",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la retenue à la source",
+      "texte": [
+        "Art.1.- Il est institué en république du Congo une retenue à la source sur tous les paiements effectués par le Trésor Public concernant les livraisons de biens et matériels, les prestations de services et travaux exécutés auprès de l'État, des collectivités locales et des Établissements publics."
+      ],
+      "mots_cles": [
+        "retenue source",
+        "Trésor Public",
+        "paiements",
+        "livraisons biens",
+        "prestations services",
+        "travaux",
+        "État",
+        "collectivités locales"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Paiements exclus de la retenue à la source",
+      "texte": [
+        "Art.2.- Sont exclus de la retenue à la source :",
+        "- les paiements au profit des personnes morales assujetties à l'impôt sur les sociétés ;",
+        "- les paiements au profit des compagnies pétrolières pour leurs livraisons de produits pétroliers ;",
+        "- les paiements effectués directement à l'étranger pour l'acquisition des biens et matériels ainsi que les prestations de service."
+      ],
+      "mots_cles": [
+        "exclusions",
+        "personnes morales IS",
+        "compagnies pétrolières",
+        "paiements étranger"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Taux de la retenue à la source",
+      "texte": [
+        "Art.3.- Le taux de la retenue à la source est fixé à 10 % du montant hors taxes des sommes à payer."
+      ],
+      "mots_cles": [
+        "taux retenue",
+        "10%",
+        "montant HT"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Modalités de perception",
+      "texte": [
+        "Art.4.- La retenue est effectuée contre quittance délivrée à chaque bénéficiaire du paiement par le Trésor Public."
+      ],
+      "mots_cles": [
+        "modalités perception",
+        "quittance",
+        "bénéficiaire paiement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Imputation de la retenue",
+      "texte": [
+        "Cette retenue à la source constitue un acompte d'IRPP que chaque bénéficiaire du paiement est autorisé à faire valoir auprès de l'administration fiscale à l'appui des quittances qui lui ont été délivrées.",
+        "Lorsque le montant annuel des retenues excède le montant annuel de l'IRPP du bénéficiaire, le bénéficiaire est autorisé à faire valoir cet excédent pendant une période de trois ans sur tous les autres impôts à l'exception des impôts des collectivités et de la TVA."
+      ],
+      "mots_cles": [
+        "imputation",
+        "acompte IRPP",
+        "quittances",
+        "excédent",
+        "trois ans",
+        "report"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Obligations du Trésor Public",
+      "texte": [
+        "Art.5.- Le Trésor Public a l'obligation de communiquer à l'administration fiscale, au plus tard le 20 de chaque mois, le montant des retenues effectuées au titre du mois précédent.",
+        "Cette information doit être accompagnée d'un listing indiquant :",
+        "- le nom du bénéficiaire de la retenue et son montant ;",
+        "- le NIU du bénéficiaire et sa résidence fiscale."
+      ],
+      "mots_cles": [
+        "obligations Trésor Public",
+        "communication administration fiscale",
+        "20 du mois",
+        "listing",
+        "NIU",
+        "résidence fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Disposition abrogatoire",
+      "texte": [
+        "Art.6.- Toute disposition antérieure contraire à la présente loi est abrogée."
+      ],
+      "mots_cles": [
+        "abrogation",
+        "dispositions antérieures"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

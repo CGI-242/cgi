@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "document": "Convention fiscale CEMAC",
+    "pays": "CEMAC",
+    "edition": "2026",
+    "tome": "CONV-CEMAC",
+    "partie": null,
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Chapitre 6 - Dispositions finales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 31",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "1) La présente Convention entre en vigueur à compter de la date de sa signature et devra être enregistrée et publiée au Bulletin officiel de la Communauté.",
+        "2) Les dispositions de la présente Convention prennent effet :",
+        "a) à l'égard des impôts retenus à la source pour les montants payés ou crédités à compter du 1er janvier de l'année qui suit la date de la publication de la présente Convention dans le Bulletin officiel de la Communauté ;",
+        "b) à l'égard des autres impôts, pour toute année d'imposition commençant le 1er janvier de l'année qui suit la date de la publication de la présente Convention dans le Bulletin officiel de la Communauté, ou par la suite."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Sort des conventions fiscales antérieurement signées par les États membres",
+      "texte": [
+        "Les dispositions des actes et conventions énumérés ci-dessous cessent d'avoir effet à compter de la date à laquelle les dispositions de la présente Convention prennent effet en vertu de l'article 31 (Entrée en vigueur) de la présente Convention :",
+        "a) l'Acte n°5/66-UDEAC-49 du 13 décembre 1966 portant convention fiscale visant à éviter la double imposition en matière d'impôts sur le revenu ;",
+        "b) l'Acte n°17/65-UDEAC-38 du 14 décembre 1966 portant convention multilatérale d'assistance administrative en matière fiscale ; ainsi que",
+        "c) les conventions bilatérales antérieures existant entre les pays membres de la CEMAC."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Dénonciation",
+      "texte": [
+        "1) La présente Convention demeure en vigueur tant qu'elle n'a pas été dénoncée par un État membre.",
+        "2) Chaque État membre peut dénoncer la Convention par voie diplomatique avec un préavis minimal de six mois avant la fin de chaque année civile postérieure à la cinquième année qui suit celle de l'entrée en vigueur de la présente Convention. Dans ce cas, la Convention cessera d'être applicable :",
+        "a) au regard des impôts retenus à la source, pour les montants payés ou crédités à compter du 1er janvier de l'année qui suit celle du préavis de dénonciation ; et",
+        "b) au regard des autres impôts, pour tout exercice fiscal ou période d'imposition commençant à compter du 1er janvier de l'année qui suit celle du préavis de dénonciation."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    }
+  ]
+}

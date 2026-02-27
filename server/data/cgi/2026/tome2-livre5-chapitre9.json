@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 9,
+    "chapitre_titre": "Comptabilité des successions et biens vacants",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 37",
+      "titre": "Registres du curateur",
+      "texte": [
+        "Le Curateur doit tenir les registres ci-après :",
+        "1° un registre journal des recettes et dépenses ;",
+        "2° un sommaire ou grand-livre de compte ouvert.",
+        "Ces registres sont cotés et paraphés par le procureur près le Tribunal Populaire de District ou d'Arrondissement dans le ressort duquel se trouve le bureau de l'enregistrement."
+      ],
+      "mots_cles": [
+        "Curateur",
+        "registres",
+        "registre journal",
+        "recettes",
+        "dépenses",
+        "sommaire",
+        "grand-livre de compte",
+        "cotés",
+        "paraphés",
+        "procureur",
+        "Tribunal Populaire de District",
+        "Tribunal Populaire d'Arrondissement",
+        "bureau de l'enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Dépôt mensuel des recettes",
+      "texte": [
+        "À la fin de chaque mois, le Curateur fait dépôt à la caisse du receveur de l'enregistrement ou du Comptable public de son ressort territorial de compétence du montant intégral des recettes qu'il a effectuées dans le mois."
+      ],
+      "mots_cles": [
+        "fin de mois",
+        "Curateur",
+        "dépôt",
+        "caisse",
+        "receveur de l'enregistrement",
+        "Comptable public",
+        "ressort territorial",
+        "recettes"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Paiements par le curateur",
+      "texte": [
+        "Les paiements à faire par le Curateur à la décharge des liquidations qu'il administre sont opérés savoir : s'il s'agit de dépenses courantes, sur états ou mémoires des parties prenantes certifiés par le Curateur.",
+        "Lorsqu'il y a lieu à distribution par ordre ou contribution, le Curateur ne paie que sur bordereau de colocation ou mandatement régulièrement délivrés."
+      ],
+      "mots_cles": [
+        "paiements",
+        "Curateur",
+        "liquidations",
+        "dépenses courantes",
+        "états",
+        "mémoires",
+        "parties prenantes",
+        "distribution par ordre",
+        "contribution",
+        "bordereau de colocation",
+        "mandatement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Tableau des créanciers",
+      "texte": [
+        "Le Curateur dresse de toute succession un tableau général de créanciers connus dans l'ordre de leurs privilèges et hypothèques. Ledit tableau sera communiqué au Procureur de la République pour que le paiement desdits créanciers soit ordonné par le juge après qu'il a été statué contre les oppositions qui peuvent être formées contre lesdits créanciers."
+      ],
+      "mots_cles": [
+        "Curateur",
+        "succession",
+        "tableau général",
+        "créanciers",
+        "privilèges",
+        "hypothèques",
+        "Procureur de la République",
+        "paiement",
+        "juge",
+        "oppositions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Paiements sans délai",
+      "texte": [
+        "Les paiements sont faits sans délai par ledit Curateur à mesure que les fonds lui rentrent. Il est tenu personnellement responsable des intérêts que des retards volontaires peuvent occasionner."
+      ],
+      "mots_cles": [
+        "paiements",
+        "sans délai",
+        "Curateur",
+        "fonds",
+        "responsabilité personnelle",
+        "intérêts",
+        "retards volontaires"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Conversion des saisies en oppositions",
+      "texte": [
+        "Les saisies faites sur le défunt ou entre les mains du Curateur en sa qualité demeurent converties en oppositions simples pour la conservation des droits des saisissants sans qu'il soit besoin de le faire prononcer."
+      ],
+      "mots_cles": [
+        "saisies",
+        "défunt",
+        "Curateur",
+        "conversion",
+        "oppositions simples",
+        "conservation",
+        "droits",
+        "saisissants"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Interdiction d'avances entre liquidations",
+      "texte": [
+        "Il est interdit au Curateur, sous peine de devenir personnellement responsable des sommes engagées, de faire aux liquidations qui n'ont pas de fonds réalisés, des avances sur les fonds des autres liquidations.",
+        "Il est pourvu à celles de ces dépenses qui sont reconnues indispensables conformément aux dispositions du chapitre 4 du présent titre."
+      ],
+      "mots_cles": [
+        "interdiction",
+        "Curateur",
+        "responsabilité personnelle",
+        "liquidations",
+        "fonds réalisés",
+        "avances",
+        "dépenses indispensables",
+        "chapitre 4"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Remise de fonds aux héritiers",
+      "texte": [
+        "Aucune partie des fonds d'une succession ne peut être remise aux héritiers présents ou représentés avant qu'il ait repris la succession des mains du Curateur, sauf autorisation sur ordonnance du Président du Tribunal."
+      ],
+      "mots_cles": [
+        "fonds",
+        "succession",
+        "remise",
+        "héritiers présents",
+        "héritiers représentés",
+        "Curateur",
+        "autorisation",
+        "ordonnance",
+        "Président du Tribunal"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

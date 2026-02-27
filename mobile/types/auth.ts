@@ -47,11 +47,13 @@ export interface ResetPasswordPayload {
 }
 
 export interface AuthResponse {
-  user: User;
+  user?: User;
   otpCode?: string;
   entreprise?: Entreprise;
   token?: string;
   refreshToken?: string;
+  requireMFA?: boolean;
+  mfaToken?: string;
 }
 
 export interface OtpResponse {

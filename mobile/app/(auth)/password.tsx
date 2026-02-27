@@ -27,8 +27,8 @@ export default function LoginPassword() {
 
     try {
       const data = await authApi.login({ email, password });
-      setUser(data.user);
-      if (__DEV__ && data.otpCode) {
+      setUser(data.user ?? null);
+      if (data.otpCode) {
         setDevCode(data.otpCode);
       }
       setOtpSource("login");

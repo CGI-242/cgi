@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "document": "Redevance superficiaire",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC3-REDEV",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "3. Fiscalité des mines et des hydrocarbures",
+    "chapitre_titre": "3.2. Redevance superficiaire",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet du décret",
+      "texte": [
+        "Art.1.- Le présent décret fixe les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire prévue à l'article 54 du Code des hydrocarbures."
+      ],
+      "mots_cles": [
+        "redevance superficiaire",
+        "taux",
+        "perception",
+        "recouvrement",
+        "gestion",
+        "article 54 Code hydrocarbures"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Taux de la redevance superficiaire",
+      "texte": [
+        "Art.2.- Tout titulaire d'un permis de recherche ou d'exploitation est assujetti au paiement de la redevance superficiaire conformément aux taux indiqués ci-dessous :",
+        "- permis de recherche : 3.000 F/km² ;",
+        "- permis d'exploitation : 800 USD/km²."
+      ],
+      "mots_cles": [
+        "taux redevance",
+        "permis recherche",
+        "3000 F/km²",
+        "permis exploitation",
+        "800 USD/km²"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Article abrogé",
+      "texte": [
+        "Art.3.- (Décret n°2022-1858) Abrogé"
+      ],
+      "mots_cles": [
+        "abrogé",
+        "Décret 2022-1858"
+      ],
+      "statut": "abrogé"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Répartition des sommes perçues",
+      "texte": [
+        "Art.4.- Les sommes perçues sont versées au Trésor Public qui en assure la gestion et la répartition ainsi qu'il suit :",
+        "- un tiers au Trésor Public ;",
+        "- deux tiers aux collectivités publiques.",
+        "Un arrêté du Ministre chargé des finances détermine les collectivités publiques bénéficiaires et fixe la clef de répartition entre ces différentes collectivités."
+      ],
+      "mots_cles": [
+        "répartition",
+        "Trésor Public",
+        "un tiers",
+        "collectivités publiques",
+        "deux tiers",
+        "arrêté Ministre finances",
+        "clef répartition"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Délai et pénalités de paiement",
+      "texte": [
+        "Art.5.- Le paiement de la redevance superficiaire est effectué au plus tard le 20 janvier de chaque année tel que spécifié à l'article 55 de la loi n°24-94 du 23 août 1994 susvisée, à peine d'amende égale au double du montant des droits à payer."
+      ],
+      "mots_cles": [
+        "paiement",
+        "20 janvier",
+        "échéance annuelle",
+        "amende",
+        "double montant droits",
+        "pénalité retard"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Article abrogé",
+      "texte": [
+        "Art.6.- (Décret n°2022-1858) Abrogé"
+      ],
+      "mots_cles": [
+        "abrogé",
+        "Décret 2022-1858"
+      ],
+      "statut": "abrogé"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "Art.7.- Le présent décret sera enregistré, inséré au journal officiel et communiqué partout où besoin sera."
+      ],
+      "mots_cles": [
+        "entrée vigueur",
+        "journal officiel",
+        "enregistrement"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 3,
+    "chapitre_titre": "Fait générateur et exigibilité",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 14",
+      "titre": "Fait générateur de la TVA",
+      "texte": [
+        "Art.14.- Le fait générateur de la TVA est défini comme le fait par lequel sont réalisées les conditions légales permettant l'exigibilité de la taxe. Il est constitué par :",
+        "1) La livraison des biens et marchandises s'agissant des ventes, des échanges et des travaux à façon.",
+        "2) L'introduction des biens et marchandises sur le territoire de la République du Congo, telle que définie par la réglementation douanière communautaire, en ce qui concerne les importations.",
+        "3) L'exécution des services et travaux ou de tranches de services et travaux, en ce qui concerne les prestations de services et les travaux immobiliers.",
+        "4) La première utilisation ou la première mise en service s'agissant des livraisons ou des prestations à soi-même.",
+        "5) L'acte de mutation ou de transfert de propriété, pour les opérations immobilières réalisées par les promoteurs immobiliers.",
+        "6) L'acte de mutation de jouissance ou à défaut d'acte de mutation, l'entrée en jouissance pour les locations de terrains non aménagés ou de locaux nus effectuées par des professionnels de l'immobilier."
+      ],
+      "mots_cles": [
+        "fait générateur TVA",
+        "exigibilité",
+        "livraison biens",
+        "ventes échanges",
+        "travaux façon",
+        "introduction territoire",
+        "importations",
+        "exécution services travaux",
+        "travaux immobiliers",
+        "première utilisation",
+        "livraisons à soi-même",
+        "mutation propriété",
+        "promoteurs immobiliers",
+        "mutation jouissance",
+        "terrains non aménagés",
+        "locaux nus"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Exigibilité de la TVA",
+      "texte": [
+        "Art.15.- L'exigibilité de la TVA est constituée par le droit dont disposent les services du recouvrement pour exiger du redevable, à une date donnée, le paiement de la taxe. Elle intervient :",
+        "• pour les ventes, les livraisons des biens, y compris les livraisons à soi-même : lors de la réalisation du fait générateur ;",
+        "• pour les importations et les produits pétroliers ou l'introduction des biens sur le territoire congolais : au moment de l'enregistrement de la déclaration de mise à la consommation des biens ;",
+        "• pour les prestations de services, les travaux immobiliers, les opérations concourant à l'habitat social et à l'aménagement des zones industrielles, ainsi que les tranches de services et travaux, y compris les commandes publiques de l'État, des établissements publics et des collectivités territoriales : à l'encaissement du prix, des acomptes ou avances ;",
+        "• pour les livraisons et les prestations à soi-même : à la première utilisation ou à la première mise en service ;",
+        "• pour les mutations de propriété d'immeubles, à la date de mutation ou du transfert des propriétés ; en ce qui concerne les locations ventes effectuées dans le cadre de l'habitat social par les promoteurs immobiliers ;",
+        "• des mutations de jouissance de terrains non aménagés et des locaux nus effectuées par les professionnels de l'immobilier, l'exigibilité intervient à la date de chaque échéance ;",
+        "• les opérations des crédits à la consommation ou de crédit-bail réalisées par les établissements financiers à l'échéance des intérêts ou de loyers.",
+        "2) Les redevables qui réalisent des opérations pour lesquelles l'exigibilité est constituée par l'encaissement peuvent être autorisés à acquitter la TVA d'après les débits à condition d'avoir une autorisation expresse du Directeur Général des Impôts et des Domaines. En cas d'option pour le régime de débit, les prestataires de service et des entrepreneurs de travaux publics et des travaux immobiliers peuvent être autorisés à acquitter la TVA selon le débit. Ils doivent apposer sur leur facture la mention « TVA acquittée selon le débit ».",
+        "En cas d'escompte d'un effet de commerce, la taxe reste exigible lors de l'encaissement.",
+        "En cas de perception d'acomptes, avant la note de débit, la taxe reste exigible lors de l'encaissement.",
+        "3) Toute TVA facturée et collectée doit être reversée.",
+        "4) Pour les fournisseurs étrangers autres que ceux visés au point 3 de l'article 12 y compris les centrales d'achat des groupes de sociétés, la taxe est exigible à la facturation."
+      ],
+      "mots_cles": [
+        "exigibilité TVA",
+        "recouvrement",
+        "fait générateur",
+        "importations",
+        "produits pétroliers",
+        "prestations services",
+        "travaux immobiliers",
+        "habitat social",
+        "commandes publiques",
+        "encaissement",
+        "acomptes avances",
+        "mutation propriété",
+        "crédit-bail",
+        "établissements financiers",
+        "régime débit",
+        "autorisation DGID",
+        "TVA acquittée selon débit",
+        "escompte",
+        "fournisseurs étrangers",
+        "centrales achat"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

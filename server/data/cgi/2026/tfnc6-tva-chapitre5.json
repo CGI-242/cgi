@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "document": "Taxe sur la valeur ajoutée (TVA)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC6",
+    "partie": null,
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "Taux",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 22",
+      "titre": "Taux de TVA",
+      "texte": [
+        "Art.22.- (L.F.2025) 1) Les taux de TVA sont applicables aux marchandises et services produits localement qu'aux biens importés.",
+        "2) Les taux de la TVA sont fixés de la manière suivante :",
+        "a) Taux général : 18 % applicable à toutes les opérations taxables à l'exclusion des opérations soumises aux taux réduit et zéro ;",
+        "b) Taux zéro (0 %), applicable aux exportations des produits taxables ayant fait l'objet de déclaration visée par les services des douanes et aux transports internationaux et à leurs accessoires et à la vente locale du bois débité ;",
+        "c) Taux réduit : 5 % applicable à certains biens de consommations courantes, ci-après cités en annexe 5 ainsi que le gas-oil et lubrifiants importés des pays limitrophes du Congo par les sociétés forestières résidentes ;",
+        "• à la vente et à l'importation des produits suivants :",
+        "- 04.01 Lait et crème de lait, non concentrés ni additionnés de sucre ou d'autres édulcorants",
+        "- 04.02 Lait et crème de lait, concentrés ou additionnés de sucre ou d'autres édulcorants",
+        "- 19.05.90.10 Produits de la boulangerie fine, de la pâtisserie ou de la biscuiterie, même additionnés de cacao en toutes proportions",
+        "- 19.05.90.90 Autres produits de la boulangerie",
+        "- 10.06 Riz",
+        "- 11.01.00.10 Farine de froment",
+        "• aux ventes et aux acquisitions des biens et services faites par les développeurs et les entreprises installées dans les zones économiques spéciales."
+      ],
+      "mots_cles": [
+        "taux TVA",
+        "taux général 18%",
+        "taux zéro 0%",
+        "exportations",
+        "transports internationaux",
+        "bois débité",
+        "taux réduit 5%",
+        "consommations courantes",
+        "gas-oil lubrifiants",
+        "sociétés forestières",
+        "lait crème",
+        "boulangerie pâtisserie",
+        "riz",
+        "farine froment",
+        "zones économiques spéciales"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

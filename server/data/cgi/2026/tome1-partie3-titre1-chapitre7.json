@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 7,
+    "chapitre_titre": "Commission des impôts",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 400",
+      "titre": "Institution de la commission spéciale dite « Commission des Impôts »",
+      "texte": [
+        "Dans chaque département, il est institué une commission spéciale dite « Commission des Impôts », appelée à émettre des avis sur le chiffre d'affaires imposable à l'impôt global forfaitaire et sur les valeurs des propriétés soumises aux contributions foncières."
+      ],
+      "mots_cles": [
+        "commission des impôts",
+        "département",
+        "chiffre d'affaires",
+        "impôt global forfaitaire",
+        "contributions foncières"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 401",
+      "titre": "Composition de la commission des impôts",
+      "texte": [
+        "1) En matière d'évaluation du chiffre d'affaires, la commission est composée comme suit :",
+        "• Président de la commission : le directeur départemental des impôts et des domaines.",
+        "• Vice-président : le Président de la chambre de commerce.",
+        "• Secrétaire : le chef de division de la centralisation auprès du directeur départemental des impôts et des domaines.",
+        "• Rapporteur : le Président du syndicat patronal ou de l'association interprofessionnelle concernée.",
+        "• Membres :",
+        "• l'Inspecteur divisionnaire des contributions directes et indirectes concerné ;",
+        "• le chef de la structure chargée de la recherche au sein de la direction départementale des impôts et des domaines ;",
+        "• le contribuable ;",
+        "• le conseil du contribuable choisi parmi les conseils fiscaux agréés CEMAC ou les membres de l'organisation professionnelle ou patronale à laquelle le contribuable concerné est adhérent.",
+        "2) En matière d'évaluation de la valeur des propriétés bâties ou non bâties, la commission est composée comme suit :",
+        "• Président de la commission : le directeur départemental des impôts et des domaines.",
+        "• Vice-président : représentant du Maire de la ville.",
+        "• Secrétaire : le chef de division de la centralisation auprès du directeur départemental des impôts et des domaines.",
+        "• Rapporteur : l'Inspecteur divisionnaire de la conservation foncière en charge du dossier.",
+        "• Membres :",
+        "• les inspecteurs divisionnaires de la conservation foncière ;",
+        "• l'Inspecteur divisionnaire des contributions directes et indirectes concerné ;",
+        "• le Président de la chambre départementale des notaires ;",
+        "• le responsable du service départemental en charge de l'urbanisme.",
+        "3) Selon les cas, le président de la commission des Impôts peut faire appel à tout sachant.",
+        "4) Les membres de la commission sont soumis aux obligations du secret professionnel prévues à l'article 404 ci-après."
+      ],
+      "mots_cles": [
+        "composition",
+        "commission",
+        "directeur départemental",
+        "chambre de commerce",
+        "syndicat patronal",
+        "conseils fiscaux CEMAC",
+        "propriétés bâties",
+        "propriétés non bâties",
+        "conservation foncière",
+        "notaires",
+        "urbanisme",
+        "secret professionnel"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 402",
+      "titre": "Fonctionnement de la commission des impôts",
+      "texte": [
+        "La commission est saisie soit par le contribuable, soit par le service de l'administration fiscale.",
+        "Les commissions délibèrent à la majorité simple. En cas d'égalité des voix, celle du Président est prépondérante.",
+        "Convoqués sept jours au moins avant la réunion, les contribuables intéressés sont invités à se faire entendre s'ils le désirent. Ils peuvent se faire assister par une personne de leur choix ou déléguer un mandataire dûment habilité.",
+        "La commission utilise tous les moyens de droit pour parvenir à l'établissement objectif des bases d'imposition."
+      ],
+      "mots_cles": [
+        "saisine",
+        "contribuable",
+        "administration fiscale",
+        "majorité simple",
+        "convocation",
+        "sept jours",
+        "mandataire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 403",
+      "titre": "Avis de la commission des impôts",
+      "texte": [
+        "La commission des impôts rend des avis.",
+        "Lorsque l'impôt liquidé sur la base de l'avis de la commission ne donne pas satisfaction au contribuable, ce dernier est en droit d'exercer son droit de réclamation prévu par les articles 423 et suivants."
+      ],
+      "mots_cles": [
+        "avis",
+        "commission des impôts",
+        "droit de réclamation",
+        "articles 423"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

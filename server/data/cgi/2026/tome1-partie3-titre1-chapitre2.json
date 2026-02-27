@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Prescriptions",
+    "section": 1,
+    "section_titre": "IRPP, IS, TSS, TA, TVA, CA",
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 382",
+      "titre": "Délai de réparation des omissions et erreurs",
+      "texte": [
+        "1) Les omissions totales ou partielles constatées dans l'assiette des impôts visés au Livre 1, au Chapitre 1 du Livre 2, de la première partie, à la Section 8 du Chapitre 1 du Titre 1 et aux Titres 2 et 3 de la deuxième partie du présent Code, ainsi que les erreurs commises dans l'application des tarifs, peuvent être réparées jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle l'imposition est due.",
+        "Toutefois, en ce qui concerne l'exercice clos au 31 décembre 2016, ce délai est prorogé au 31 mai 2021.",
+        "L'expiration du délai ci-dessus ne fait pas obstacle à l'exercice du droit de vérification par l'administration sur la période prescrite lorsque les résultats enregistrés ou les opérations comptabilisées au cours de cette période ont une incidence sur les exercices soumis à vérification. Les redressements effectués à l'issue de ces contrôles ne peuvent donner lieu à des recouvrements d'impôts.",
+        "Lorsque l'administration a déposé une plainte contre un contribuable qui s'est livré à des agissements frauduleux, elle peut procéder à des contrôles et à des rehaussements au titre des deux années excédant le délai ordinaire de prescription. Cette prorogation du délai est applicable aux auteurs des agissements, à leurs complices et le cas échéant aux personnes pour le compte desquelles la fraude a été commise.",
+        "Jusqu'à la décision de la juridiction pénale et à condition que le contribuable constitue des garanties dans les conditions prévues à l'article 441 ci-après, le recouvrement des impositions correspondant à la période qui excède le délai ordinaire est suspendu. Ces impositions sont caduques si la procédure judiciaire se termine par une ordonnance de non-lieu ou si les personnes poursuivies bénéficient d'une décision de relaxe.",
+        "2) Toute erreur commise, soit sur la nature de l'impôt applicable, soit sur le lieu de l'imposition concernant l'un quelconque des impôts et taxes ci-dessus visés peut, sans préjudice du délai fixé à l'alinéa précédent, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a prononcé la décharge de l'imposition initiale.",
+        "3) Toute omission ou insuffisance d'imposition révélée par une instance devant les tribunaux répressifs ou par une réclamation contentieuse peut, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a clos cette instance ou solutionné cette réclamation.",
+        "4) Lorsqu'à la suite de l'ouverture de la succession d'un contribuable ou de celle de son conjoint il est constaté que ce contribuable a été omis, insuffisamment imposé aux rôles de l'année du décès ou de l'une des trois années antérieures, l'IRPP et la taxe complémentaire non perçus au titre desdites années peuvent, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être mis en recouvrement jusqu'à la fin de la deuxième année suivant celle de la déclaration de succession, si aucune déclaration n'a été faite, celle du paiement par les héritiers des droits de mutation par décès.",
+        "Les impositions établies après le décès du contribuable en vertu du présent paragraphe, ainsi que toutes autres impositions dues par les héritiers du chef du défunt, constituent une dette déductible de l'actif successoral pour la perception des droits de mutation par décès.",
+        "Elles ne sont pas admises en déduction du revenu des héritiers pour l'établissement des impôts dont ces derniers sont personnellement redevables.",
+        "5) Les impositions établies en vertu du présent article portent, s'il y a lieu, les majorations de droits ou droits en sus prévus par les dispositions relatives à l'impôt qu'elles concernent."
+      ],
+      "mots_cles": [
+        "prescription",
+        "omissions",
+        "erreurs",
+        "délai",
+        "quatrième année",
+        "droit de vérification",
+        "agissements frauduleux",
+        "rehaussement",
+        "suspension du recouvrement",
+        "juridiction pénale",
+        "succession",
+        "héritiers",
+        "IRPP",
+        "droits de mutation par décès"
+      ],
+      "statut": "en vigueur",
+      "section": "IRPP, IS, TSS, TA, TVA, CA"
+    },
+    {
+      "article": "Art. 382 bis",
+      "titre": "Imprescriptibilité des obligations fiscales relatives aux impôts des tiers",
+      "texte": [
+        "(L.F.2023) Les obligations fiscales relatives aux impôts des tiers incombant au redevable légal sont imprescriptibles et ne peuvent faire l'objet de compensation avec les impôts du redevable légal."
+      ],
+      "mots_cles": [
+        "imprescriptibilité",
+        "impôts des tiers",
+        "redevable légal"
+      ],
+      "statut": "en vigueur",
+      "section": "IRPP, IS, TSS, TA, TVA, CA"
+    },
+    {
+      "article": "Art. 382 ter",
+      "titre": "Prescription des créances fiscales du Trésor Public",
+      "texte": [
+        "(L.F.2023) L'action en recouvrement des créances fiscales du Trésor Public se prescrit à l'expiration de la dixième année qui suit celle de la mise en recouvrement si aucun acte n'est venu interrompre la prescription."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "prescription",
+        "Trésor Public"
+      ],
+      "statut": "en vigueur",
+      "section": "IRPP, IS, TSS, TA, TVA, CA"
+    },
+    {
+      "section": 2,
+      "section_titre": "Autres impôts et taxes"
+    },
+    {
+      "article": "Art. 383",
+      "titre": "Délai de reprise pour les autres impôts et taxes",
+      "texte": [
+        "Les dispositions de l'article 382 ci-dessus s'appliquent aux impôts et taxes en vertu des dispositions du présent Code et non visés par l'article précédent.",
+        "Toutefois, le délai de reprise est ramené à la troisième année suivant celle au titre de laquelle l'imposition est établie."
+      ],
+      "mots_cles": [
+        "prescription",
+        "autres impôts",
+        "autres taxes",
+        "délai de reprise",
+        "troisième année"
+      ],
+      "statut": "en vigueur",
+      "section": "Autres impôts et taxes"
+    }
+  ]
+}

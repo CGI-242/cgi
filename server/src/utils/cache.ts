@@ -14,12 +14,18 @@ export const CACHE_TTL = {
   EMBEDDING: 60 * 60 * 24 * 7,    // 7 jours
   SEARCH_RESULT: 60 * 60,         // 1 heure
   ARTICLE: 60 * 60 * 24,          // 24 heures
+  TENANT: 5 * 60,                 // 5 minutes
+  SUBSCRIPTION: 5 * 60,           // 5 minutes
+  TOKEN_BLACKLIST: 24 * 60 * 60,  // 24 heures
 };
 
 export const CACHE_PREFIX = {
   EMBEDDING: 'emb:',
   SEARCH: 'search:',
   ARTICLE: 'article:',
+  TENANT: 'tenant:',
+  SUBSCRIPTION: 'sub:',
+  BLACKLIST: 'bl:',
 };
 
 class CacheService {
@@ -61,6 +67,12 @@ class CacheService {
 
   size(): number {
     return this.store.size;
+  }
+
+  keys(prefix?: string): string[] {
+    const allKeys = Array.from(this.store.keys());
+    if (!prefix) return allKeys;
+    return allKeys.filter(k => k.startsWith(prefix));
   }
 
   private cleanup(): void {

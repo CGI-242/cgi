@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 1,
+    "chapitre": 16,
+    "chapitre_titre": "Formalité unique",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 353",
+      "titre": "Fusion des formalités d'enregistrement et de publicité foncière",
+      "texte": [
+        "Les formalités d'enregistrement et de la publicité foncière sont fusionnées pour les actes publiés au fichier immobilier et pour l'enregistrement des actes résultant de leur publication.",
+        "La formalité unique ou formalité fusionnée s'applique à tous les actes qui sont soumis à la double obligation de l'enregistrement et de la publicité foncière."
+      ],
+      "mots_cles": [
+        "formalités",
+        "enregistrement",
+        "publicité foncière",
+        "fusionnées",
+        "fichier immobilier",
+        "publication",
+        "formalité unique",
+        "formalité fusionnée",
+        "double obligation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 354",
+      "titre": "Conditions de soumission à la formalité unique",
+      "texte": [
+        "Un acte est soumis à la formalité unique à trois conditions simultanées :",
+        "a) l'acte doit être soumis à l'enregistrement ;",
+        "b) l'acte doit être soumis à la publicité foncière ;",
+        "c) l'acte ne doit pas figurer parmi les actes exclus formellement de la formalité unique."
+      ],
+      "mots_cles": [
+        "acte",
+        "formalité unique",
+        "conditions",
+        "enregistrement",
+        "publicité foncière",
+        "actes exclus"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 355",
+      "titre": "Actes soumis à titre obligatoire à la formalité unique",
+      "texte": [
+        "Sont soumis à titre obligatoire à la formalité unique :",
+        "1° tous les actes portant ou constatant la transmission à titre onéreux des droits réels immobiliers ; Ces droits peuvent porter sur la propriété, la nue-propriété, l'usufruit, l'usage, l'emphytéose et l'antichrèse ou les servitudes (ventes, adjudications, échanges, apports en sociétés, retraits, cessions et rétrocessions) ;",
+        "2° les baux à durée illimitée et baux à vie ayant pour objet des immeubles ou droits immobiliers ;",
+        "3° actes entre vifs dressés pour constater des clauses d'inaliénabilité temporaire et toutes autres restrictions au droit de disposer ;",
+        "4° attestations notariales établies en vue de constater la transmission ou la constitution par décès de droits réels immobiliers ;",
+        "5° conventions d'indivision immobilière ;",
+        "6° actes interruptifs de la prescription acquisitive (citation en justice, commandement) et actes de renonciation à la prescription acquisitive ;",
+        "7° actes constitutifs de biens de famille insaisissables ;",
+        "8° cessions amiables en matière d'expropriation pour cause d'utilité publique quel que soit le montant de l'indemnité ;",
+        "9° procès-verbaux de réorganisation foncière et de remembrement, actes d'échange d'immeubles ruraux ;",
+        "10° règlements de copropriété des immeubles ou ensembles immobiliers."
+      ],
+      "mots_cles": [
+        "formalité unique",
+        "obligatoire",
+        "transmission",
+        "titre onéreux",
+        "droits réels immobiliers",
+        "propriété",
+        "nue-propriété",
+        "usufruit",
+        "usage",
+        "emphytéose",
+        "antichrèse",
+        "servitudes",
+        "ventes",
+        "adjudications",
+        "échanges",
+        "apports en sociétés",
+        "retraits",
+        "cessions",
+        "rétrocessions",
+        "baux à durée illimitée",
+        "baux à vie",
+        "immeubles",
+        "droits immobiliers",
+        "clauses d'inaliénabilité",
+        "restrictions",
+        "attestations notariales",
+        "décès",
+        "conventions d'indivision",
+        "prescription acquisitive",
+        "biens de famille insaisissables",
+        "expropriation",
+        "utilité publique",
+        "réorganisation foncière",
+        "remembrement",
+        "copropriété"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 356",
+      "titre": "Actes soumis facultativement à la formalité fusionnée",
+      "texte": [
+        "Les actes soumis facultativement à la formalité fusionnée sont :",
+        "les promesses unilatérales de vente et promesses unilatérales de bail de plus de douze ans ;",
+        "conventions relatives à l'exercice des servitudes légales ;",
+        "les documents auxquels sont annexés ou dans lesquels sont littéralement reproduits des actes soumis ou admis à la formalité de publicité foncière."
+      ],
+      "mots_cles": [
+        "actes",
+        "facultatif",
+        "formalité fusionnée",
+        "promesses unilatérales de vente",
+        "promesses unilatérales de bail",
+        "douze ans",
+        "servitudes légales",
+        "documents annexés",
+        "publicité foncière"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 357",
+      "titre": "Actes exclus de la formalité fusionnée",
+      "texte": [
+        "Les actes exclus de la formalité fusionnée sont :",
+        "• les décisions judiciaires ;",
+        "• les mutations à titre gratuit ;",
+        "• les baux urbains de plus de douze ans à durée limitée et les baux ruraux ;",
+        "• les actes mixtes c'est-à-dire contenant à la fois des dispositions soumises à publicité et d'autres qui ne le sont pas (meubles et immeubles) ;",
+        "• les actes pour lesquels la formalité unique est facultative mais n'est pas requise ;",
+        "• les mutations verbales ;",
+        "• les donations d'immeubles."
+      ],
+      "mots_cles": [
+        "actes exclus",
+        "formalité fusionnée",
+        "décisions judiciaires",
+        "mutations à titre gratuit",
+        "baux urbains",
+        "douze ans",
+        "baux ruraux",
+        "actes mixtes",
+        "meubles",
+        "immeubles",
+        "publicité",
+        "mutations verbales",
+        "donations d'immeubles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 358",
+      "titre": "Accomplissement de la formalité unique",
+      "texte": [
+        "Lorsqu'elle est applicable, la formalité unique est accomplie dans les Conservations des Hypothèques, l'enregistrement des actes concernés résultant alors de leur publication.",
+        "La formalité de l'enregistrement ne sera effectuée dans les services de l'enregistrement que pour les actes qui ne sont pas soumis à la formalité unique."
+      ],
+      "mots_cles": [
+        "formalité unique",
+        "Conservations des Hypothèques",
+        "enregistrement",
+        "publication",
+        "services de l'enregistrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 359",
+      "titre": "Délais de rigueur",
+      "texte": [
+        "Les délais fixés par la loi sont de rigueur et ne peuvent être prorogés par aucune autorité."
+      ],
+      "mots_cles": [
+        "délais",
+        "rigueur",
+        "loi",
+        "prorogation",
+        "autorité"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

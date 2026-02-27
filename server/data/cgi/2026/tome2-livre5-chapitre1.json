@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 1,
+    "chapitre_titre": "Dispositions générales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Ouverture des successions vacantes et en déshérence",
+      "texte": [
+        "En l'absence de tout testament (succession ab intestat) ou de renonciation, soit par les héritiers présomptifs au degré successible direct ou collatéral, soit par les légataires (succession testamentaire) la loi commet d'office un Curateur.",
+        "Les successions ouvertes et non réclamées sont réputées vacantes toutes les fois qu'il ne se présente personne ayant titre ou qualité pour en prendre possession.",
+        "Il y a succession en déshérence, lorsque les héritiers et les légataires ont disparu ou sont déclarés absents.",
+        "L'État en reçoit la dévolution au nom de la société à titre d'héritier."
+      ],
+      "mots_cles": [
+        "testament",
+        "succession ab intestat",
+        "renonciation",
+        "héritiers présomptifs",
+        "degré successible",
+        "direct",
+        "collatéral",
+        "légataires",
+        "succession testamentaire",
+        "Curateur",
+        "successions ouvertes",
+        "non réclamées",
+        "vacantes",
+        "titre",
+        "qualité",
+        "possession",
+        "succession en déshérence",
+        "absents",
+        "État",
+        "dévolution",
+        "héritier"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

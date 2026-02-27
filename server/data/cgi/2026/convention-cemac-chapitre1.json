@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "document": "Convention fiscale CEMAC",
+    "pays": "CEMAC",
+    "edition": "2026",
+    "tome": "CONV-CEMAC",
+    "partie": null,
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Chapitre 1 - Champ d'application de la convention",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Personnes visées",
+      "texte": [
+        "La présente convention s'applique aux personnes qui sont des résidents de l'un ou plusieurs États membres de la CEMAC."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Impôts visés",
+      "texte": [
+        "1) La présente Convention s'applique aux impôts sur le revenu perçus pour le compte de chacun des États membres, de ses subdivisions politiques ou de ses collectivités locales, quel que soit le système de perception.",
+        "2) Sont considérés comme impôts sur le revenu, les impôts perçus sur le revenu total, ou sur des éléments du revenu, y compris les impôts sur les gains provenant de l'aliénation de biens mobiliers ou immobiliers, les impôts sur le montant global des salaires payés par les entreprises, ainsi que les impôts sur les plus-values.",
+        "3) Les impôts visés dans la Convention, dans chacun des États membres, sont :",
+        "\nEn ce qui concerne la République du Cameroun:\n  (i) l'impôt sur le revenu des personnes physiques, y compris les centimes additionnels ;\n  (ii) l'impôt sur les sociétés ou l'impôt minimum forfaitaire sur les sociétés, y compris les centimes additionnels ;\n  (iii) la taxe spéciale sur les revenus versés aux personnes domiciliées hors du Cameroun ;\n  (iv) la part salariale de la contribution au crédit foncier et les autres taxes assises sur les salaires ;\n  (v) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n",
+        "\nEn ce qui concerne la République Centrafricaine:\n  (i) l'impôt sur le revenu des personnes physiques et son minimum ;\n  (ii) le précompte impôt sur le revenu ;\n  (iii) l'impôt sur les sociétés et son minimum ;\n  (iv) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n",
+        "\nEn ce qui concerne la République du Congo:\n  (i) l'impôt sur le revenu des personnes physiques ;\n  (ii) l'impôt sur les sociétés ;\n  (iii) l'impôt sur le revenu des valeurs mobilières ;\n  (iv) la taxe spéciale sur les sociétés ;\n  (v) l'impôt spécial sur les plus-values réalisées par les non-résidents ;\n  (vi) l'impôt spécial sur les bons de caisse ;\n  (vii) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n",
+        "\nEn ce qui concerne la République Gabonaise:\n  (i) l'impôt sur les sociétés ou l'impôt minimum forfaitaire ;\n  (ii) l'impôt sur le revenu des personnes physiques ;\n  (iii) la taxe complémentaire sur les traitements et salaires ;\n  (iv) la contribution de formation professionnelle ;\n  (v) le Fonds National de l'Habitat ;\n  (vi) le prélèvement sur les plus-values particulières ;\n  (vii) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n",
+        "\nEn ce qui concerne la République de Guinée Équatoriale:\n  (i) l'impôt global sur les revenus des personnes physiques ;\n  (ii) l'impôt sur les sociétés ou l'impôt minimum forfaitaire ;\n  (iii) la taxe spéciale sur les revenus versés aux personnes domiciliées hors de Guinée Équatoriale ;\n  (iv) la contribution au crédit foncier, les taxes municipales, et les autres taxes assises sur les salaires ;\n  (v) la retenue à la source des personnes physiques et morales sur la prestation de services aux assistants techniques ;\n  (vi) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n",
+        "\nEn ce qui concerne la République du Tchad:\n  (i) l'impôt sur les bénéfices des sociétés et autres personnes morales ;\n  (ii) l'impôt sur le revenu des personnes physiques ;\n  (iii) l'impôt spécial sur les bons de caisse ;\n  (iv) la taxe sur les plus-values réalisées à l'occasion de l'aliénation des terrains ;\n  (v) ainsi que toutes les retenues à la source, tous précomptes et avances d'acomptes sur les impôts visés ci-dessus.\n"
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    }
+  ]
+}

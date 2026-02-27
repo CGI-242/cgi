@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": 3,
+    "livre": null,
+    "chapitre": 2,
+    "chapitre_titre": "Approbation des rôles",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 410",
+      "titre": "Vérification des rôles",
+      "texte": [
+        "Le Directeur des Contributions Directes et Indirectes vérifie les rôles. Il renvoie à leur auteur ceux de ces documents qui ne sont pas régulièrement établis.",
+        "Il compare, en outre, les indications portées sur les avertissements avec celles figurant sur les rôles."
+      ],
+      "mots_cles": [
+        "vérification des rôles",
+        "Directeur des Contributions",
+        "avertissements"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 411",
+      "titre": "Homologation des rôles",
+      "texte": [
+        "Périodiquement, et en principe chaque mois, le Directeur des Contributions Directes et Indirectes soumet les rôles reçus et vérifiés, au Directeur Général des Impôts qui les soumet à l'approbation du Ministre des finances."
+      ],
+      "mots_cles": [
+        "périodique",
+        "mensuel",
+        "Directeur des Contributions",
+        "Payeur",
+        "Préposé du Trésor",
+        "expédition authentique",
+        "avertissements",
+        "mise en recouvrement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 412",
+      "titre": "Préparation des arrêtés rendant les rôles exécutoires",
+      "texte": [
+        "Le Directeur des Contributions Directes et Indirectes prépare, à cet effet, les arrêtés rendant les rôles exécutoires et les états de prise en charge destinés au service du recouvrement.",
+        "Les arrêtés et états présentent, en articles distincts, par nature d'impôt, le montant de chaque rôle.",
+        "Lorsque des erreurs d'expédition sont relevées dans les rôles rendus exécutoires, ou dans un arrêt ou un état, des documents rectificatifs sont établis et approuvés comme il est dit ci-dessus."
+      ],
+      "mots_cles": [
+        "Directeur des Contributions",
+        "arrêtés",
+        "rôles exécutoires",
+        "états de prise en charge",
+        "recouvrement",
+        "nature d'impôt",
+        "erreurs d'expédition",
+        "documents rectificatifs"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 413",
+      "titre": "Signature des arrêtés par le Ministre des finances",
+      "texte": [
+        "Dès signature des arrêtés par le Ministre des finances, ou, s'il en a reçu délégation, par le Directeur Général des Impôts, ce dernier certifie au dos du chacun des rôles que ce document « s'élevant à la somme de ... a été rendu exécutoire par arrêté du ... n° ... »."
+      ],
+      "mots_cles": [
+        "signature",
+        "arrêtés",
+        "Ministre des finances",
+        "Directeur Général des Impôts",
+        "délégation",
+        "certification",
+        "rôle exécutoire"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 414",
+      "titre": "Instructions spéciales sur les modalités d'établissement des arrêtés",
+      "texte": [
+        "Des instructions spéciales fixeront les modalités particulières d'établissement des arrêtés d'approbation et des états de prise en charge."
+      ],
+      "mots_cles": [
+        "instructions spéciales",
+        "arrêtés d'approbation",
+        "états de prise en charge"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "document": "Code général des impôts",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": null,
+    "livre": 5,
+    "chapitre": 13,
+    "chapitre_titre": "Enregistrement - Timbre - Frais de procédure",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 60",
+      "titre": "Dispense de frais pour petites successions",
+      "texte": [
+        "Pour toutes les liquidations de succession ou valeurs de biens gérées par le Curateur ne s'élève pas au-delà de 50.000 FCFA, la procédure a lieu sans frais ; les actes sont enregistrés à titre gratuit et dispensés du timbre."
+      ],
+      "mots_cles": [
+        "liquidations",
+        "succession",
+        "valeurs",
+        "biens",
+        "Curateur",
+        "50.000 FCFA",
+        "procédure",
+        "sans frais",
+        "actes",
+        "enregistrement gratuit",
+        "dispense de timbre"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -2,18 +2,21 @@
 // Service chat IA fiscal - RAG hybride + Claude API + gestion conversations Prisma
 
 import Anthropic from "@anthropic-ai/sdk";
-import { PrismaClient } from "@prisma/client";
 import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt } from "./chat.prompts";
 import { hybridSearch, SearchResult } from "./rag/hybrid-search.service";
 import { isFiscalQuery, buildContext, extractArticlesFromResponse, Citation } from "./rag/chat.utils";
 import { createLogger } from "../utils/logger";
+import prisma from "../utils/prisma";
+import { trackUsage } from "./usage-stats.service";
+import { incrementQuota } from "./subscription.service";
 
 const logger = createLogger('ChatService');
-const prisma = new PrismaClient();
 const anthropic = new Anthropic(); // utilise ANTHROPIC_API_KEY env var
 
-const CLAUDE_MODEL = "claude-haiku-4-5-20251001";
+const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 const MAX_TOKENS = 2000;
+const MAX_HISTORY_MESSAGES = 10;
+const MAX_HISTORY_CHARS = 12000; // ~3000 tokens — budget historique conversation
 
 const GREETING_PATTERNS = [
   /^(bonjour|bonsoir|salut|hello|hi|hey|coucou|yo)\b/i,
@@ -22,6 +25,28 @@ const GREETING_PATTERNS = [
   /^(comment vas-tu|ca va|comment tu vas)\b/i,
   /^(qui es-tu|tu es qui|c est quoi cgi)\b/i,
 ];
+
+/**
+ * Tronque l'historique pour respecter le budget de tokens.
+ * Garde les messages les plus récents en priorité.
+ */
+function trimHistory(messages: { role: string; content: string }[]): { role: string; content: string }[] {
+  const trimmed: { role: string; content: string }[] = [];
+  let totalChars = 0;
+
+  // Parcours du plus récent au plus ancien
+  for (let i = messages.length - 1; i >= 0; i--) {
+    const msg = messages[i];
+    const msgChars = msg.content.length;
+
+    if (totalChars + msgChars > MAX_HISTORY_CHARS) break;
+
+    trimmed.unshift(msg);
+    totalChars += msgChars;
+  }
+
+  return trimmed;
+}
 
 /**
  * Detecte si le message est une salutation simple
@@ -89,13 +114,14 @@ export async function sendMessage(
     },
   });
 
-  // 3. Recuperer les 10 derniers messages pour le contexte
-  const previousMessages = await prisma.message.findMany({
+  // 3. Recuperer les derniers messages et tronquer selon le budget
+  const rawMessages = await prisma.message.findMany({
     where: { conversationId: conversation.id },
     orderBy: { createdAt: "asc" },
-    take: 10,
+    take: MAX_HISTORY_MESSAGES,
     select: { role: true, content: true },
   });
+  const previousMessages = trimHistory(rawMessages);
 
   // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
@@ -147,6 +173,9 @@ export async function sendMessage(
     },
   });
 
+  // 9. Fire-and-forget : enregistrer SearchHistory + UsageStats
+  recordSearchAndUsage(userId, content, searchResults, tokensUsed);
+
   return {
     conversationId: conversation.id,
     message: assistantMessage,
@@ -196,13 +225,14 @@ export async function* sendMessageStream(
     },
   });
 
-  // 3. Recuperer les 10 derniers messages pour le contexte
-  const previousMessages = await prisma.message.findMany({
+  // 3. Recuperer les derniers messages et tronquer selon le budget
+  const rawMessages = await prisma.message.findMany({
     where: { conversationId: conversation.id },
     orderBy: { createdAt: "asc" },
-    take: 10,
+    take: MAX_HISTORY_MESSAGES,
     select: { role: true, content: true },
   });
+  const previousMessages = trimHistory(rawMessages);
 
   // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
@@ -277,7 +307,10 @@ export async function* sendMessageStream(
     },
   });
 
-  // 9. Event done
+  // 9. Fire-and-forget : enregistrer SearchHistory + UsageStats
+  recordSearchAndUsage(userId, content, searchResults, tokensUsed);
+
+  // 11. Event done
   yield {
     event: "done",
     data: JSON.stringify({
@@ -353,4 +386,50 @@ export async function deleteConversation(
   });
 
   return { success: true };
+}
+
+/**
+ * Enregistre SearchHistory, met à jour UsageStats et incrémente le quota (fire-and-forget).
+ * Résout l'articleId via le numéro d'article du premier résultat RAG.
+ */
+function recordSearchAndUsage(
+  userId: string,
+  query: string,
+  searchResults: SearchResult[] | null,
+  tokensUsed: number
+): void {
+  const firstNumero = searchResults?.[0]?.payload?.numero;
+
+  // SearchHistory
+  const insertSearch = firstNumero
+    ? prisma.article
+        .findFirst({ where: { numero: firstNumero }, select: { id: true } })
+        .then(article =>
+          prisma.searchHistory.create({
+            data: { userId, query, articleId: article?.id || null },
+          })
+        )
+    : prisma.searchHistory.create({
+        data: { userId, query, articleId: null },
+      });
+
+  insertSearch.catch(err => logger.warn('SearchHistory insert failed:', err));
+
+  // UsageStats
+  trackUsage({
+    userId,
+    questionsAsked: 1,
+    articlesViewed: searchResults?.length || 0,
+    tokensUsed,
+  }).catch(err => logger.warn('UsageStats update failed:', err));
+
+  // Quota abonnement : incrémenter questionsUsed du user
+  prisma.organizationMember.findFirst({
+    where: { userId },
+    select: { organizationId: true },
+  }).then(member => {
+    if (member) {
+      return incrementQuota(member.organizationId, userId);
+    }
+  }).catch(err => logger.warn('IncrementQuota failed:', err));
 }

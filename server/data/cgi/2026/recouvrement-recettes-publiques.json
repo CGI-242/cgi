@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "document": "Recouvrement des recettes publiques",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": "TFNC5-RECOUV",
+    "partie": null,
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "5.3. Recouvrement des recettes publiques",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 20",
+      "titre": "Exigibilité des créances publiques",
+      "texte": [
+        "Art.20.- Les règles d'exigibilité des créances publiques sont celles fixées par le CGI, par le Code des douanes et de manière générale, par la réglementation en vigueur.",
+        "Les titres de perception de recette émis par les ordonnateurs de recettes sont pris en charge par les comptables assignataires de ces recettes."
+      ],
+      "mots_cles": [
+        "exigibilité créances publiques",
+        "CGI",
+        "Code douanes",
+        "titres perception",
+        "ordonnateurs recettes",
+        "comptables assignataires"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Modes de paiement des créances publiques",
+      "texte": [
+        "Art.21.- Le redevable de l'État s'acquitte de sa dette, soit par un versement d'espèces à la caisse du comptable public, soit par une remise de chèque ou d'effet bancaire ou postal, soit par un virement dans l'un des comptes ouverts au nom du trésor public.",
+        "Aucun effet bancaire ou postal ne peut être établi à l'ordre d'une administration publique autre que le trésor public.",
+        "Le chèque émis à l'ordre du Trésor Public n'est pas endossable. Le comptable public qui reçoit le chèque et établit la quittance ou tout autre document en tenant lieu doit mentionner au verso du chèque l'objet du paiement, la date et le numéro de la quittance émise en contrepartie.",
+        "Le redevable de l'État peut, dans les conditions définies par la réglementation en vigueur, s'acquitter de sa dette par remise d'effets de commerce ou d'obligations cautionnées."
+      ],
+      "mots_cles": [
+        "modes paiement",
+        "espèces",
+        "chèque",
+        "virement",
+        "trésor public",
+        "effets commerce",
+        "obligations cautionnées"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Quittance et émargement",
+      "texte": [
+        "Art.22.- L'acquittement d'une recette donne lieu à la délivrance d'une quittance pour la somme versée et à l'émargement du titre de perception de recette.",
+        "La quittance signée par le comptable public est automatisée ou manuelle et extraite d'un registre à souche dont le numéro et la date sont mentionnés sur la pièce justificative de la recette."
+      ],
+      "mots_cles": [
+        "quittance",
+        "émargement",
+        "titre perception",
+        "registre souche",
+        "comptable public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Apurement de la prise en charge",
+      "texte": [
+        "Art.23.- La prise en charge ne peut être apurée que par le recouvrement effectif, par la réduction ou l'annulation des droits préalablement liquidés et pris en charge, par l'admission en non-valeur ou par la remise gracieuse obtenue.",
+        "L'apurement de la prise en charge entraîne la décharge de la responsabilité personnelle et pécuniaire du comptable assignataire de la recette.",
+        "La prise en charge déclenche le recouvrement amiable ou forcé."
+      ],
+      "mots_cles": [
+        "apurement prise en charge",
+        "recouvrement effectif",
+        "admission non-valeur",
+        "remise gracieuse",
+        "décharge responsabilité",
+        "recouvrement amiable forcé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Recouvrement amiable",
+      "texte": [
+        "Art.24.- Le recouvrement amiable comprend les opérations suivantes :",
+        "• la notification de l'avis d'imposition au contribuable ;",
+        "• l'application éventuelle de la majoration et des pénalités ;",
+        "• l'encaissement partiel ou total de la recette."
+      ],
+      "mots_cles": [
+        "recouvrement amiable",
+        "notification avis imposition",
+        "majoration",
+        "pénalités",
+        "encaissement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Contestation des créances",
+      "texte": [
+        "Art.25.- Sans préjudice des délais accordés par la réglementation en vigueur, le redevable dispose d'un délai de trois mois, à partir de la date de la mise en recouvrement, de contester le bien-fondé de la créance devant le service ordonnateur ou la régularité formelle de l'acte de poursuite devant les services compétents.",
+        "Toutefois, il est tenu de payer au moins 10 % des sommes mises en recouvrement.",
+        "Une pénalité d'un pour mille (1 ‰) par mois écoulé est applicable sur le montant contesté à tort et celle de l'avis des juridictions.",
+        "L'administration dispose d'un délai de six mois pour rendre la décision."
+      ],
+      "mots_cles": [
+        "contestation créances",
+        "délai 3 mois",
+        "bien-fondé",
+        "régularité formelle",
+        "paiement 10%",
+        "pénalité 1‰ mois",
+        "délai réponse 6 mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Titre exécutoire",
+      "texte": [
+        "Art.26.- Le titre de perception de recette régulièrement mis en recouvrement est exécutoire, non seulement pour le redevable qui y est désigné ou enrôlé mais aussi pour ses représentants ou ayants-droit légaux."
+      ],
+      "mots_cles": [
+        "titre exécutoire",
+        "redevable",
+        "représentants",
+        "ayants-droit légaux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Ayants-droit concernés",
+      "texte": [
+        "Art.27.- Les ayants-droit concernés sont, entre autres :",
+        "• les fermiers ou locataires ;",
+        "• les cessionnaires de fonds de commerce, d'immeubles ou de terrains, quelle que soit la forme de la cession, mais dans les limites du prix de cession ;",
+        "• les employeurs ;",
+        "• chacun des époux lorsqu'ils vivent sous le même toit ;",
+        "• le propriétaire qui loue un établissement commercial ou industriel muni de son matériel ou de ses moyens de production."
+      ],
+      "mots_cles": [
+        "ayants-droit",
+        "fermiers",
+        "locataires",
+        "cessionnaires",
+        "employeurs",
+        "époux",
+        "propriétaire établissement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 27bis",
+      "titre": "Privilège du trésor",
+      "texte": [
+        "Art.27 bis.- Le privilège du trésor s'exerce, suivant chaque type de recette, sur les meubles et autres effets mobiliers appartenant aux redevables, quel que soit le lieu où ils se trouvent.",
+        "Les exceptions à ce principe sont définies par la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "privilège trésor",
+        "meubles",
+        "effets mobiliers",
+        "redevables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Compensation légale",
+      "texte": [
+        "Art.28.- Le redevable de l'État ne peut opposer la compensation légale, même dans le cas où il est créancier de l'État.",
+        "Le comptable public opère la compensation légale au profit de l'État entre les dettes et les créances assignées à sa caisse."
+      ],
+      "mots_cles": [
+        "compensation légale",
+        "redevable État",
+        "créancier État",
+        "comptable public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Hypothèque légale du trésor",
+      "texte": [
+        "Art.29.- Le trésor public tient une hypothèque légale sur tous les biens immeubles du redevable ou du comptable public chargé du recouvrement.",
+        "Les hypothèques tenues par le trésor public sont inscrites au bureau des hypothèques, à partir de la date à laquelle le contribuable a encouru une majoration ou une pénalité pour défaut d'acquittement."
+      ],
+      "mots_cles": [
+        "hypothèque légale",
+        "trésor public",
+        "biens immeubles",
+        "bureau hypothèques",
+        "majoration",
+        "pénalité"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Recouvrement forcé",
+      "texte": [
+        "Art.30.- Le recouvrement forcé est engagé pour toutes les recettes non recouvrées à la phase amiable.",
+        "Le recouvrement forcé est mis en œuvre à l'encontre des redevables ou de leurs ayants-droit ou tiers responsables.",
+        "Il ne peut être exercé que par les porteurs de contraintes, les agents de poursuites assermentés ou par les services judiciaires commissionnés par le Ministre en charge des finances."
+      ],
+      "mots_cles": [
+        "recouvrement forcé",
+        "ayants-droit",
+        "tiers responsables",
+        "porteurs contraintes",
+        "agents poursuites assermentés",
+        "services judiciaires"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Étapes du recouvrement forcé",
+      "texte": [
+        "Art.31.- Le recouvrement forcé comprend :",
+        "• le commandement ;",
+        "• la saisie ;",
+        "• la vente."
+      ],
+      "mots_cles": [
+        "étapes recouvrement forcé",
+        "commandement",
+        "saisie",
+        "vente"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Commandement",
+      "texte": [
+        "Art.32.- Le commandement est notifié au redevable huit jours francs après le dernier avis avant poursuites.",
+        "Il comporte :",
+        "• la notification du titre de perception de recette ;",
+        "• l'énonciation de la somme à payer ;",
+        "• l'ordre de payer la somme réclamée.",
+        "Les frais assortis au commandement sont à la charge du redevable. Ils sont fixés par la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "commandement",
+        "8 jours francs",
+        "avis avant poursuites",
+        "titre perception",
+        "frais redevable"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Saisie",
+      "texte": [
+        "Art.33.- La saisie intervient trois jours après la signification du commandement par le porteur de la contrainte.",
+        "Elle est faite pour tous les termes échus des contributions, sans distinction d'exercice et peut être suspendue dans les conditions fixées par la réglementation en vigueur.",
+        "La saisie est assortie des frais à l'encontre du redevable au taux fixé par le CGI et d'une manière générale, par la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "saisie",
+        "3 jours après commandement",
+        "porteur contrainte",
+        "termes échus",
+        "frais saisie"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Types de saisie",
+      "texte": [
+        "Art.34.- La saisie se décompose en :",
+        "• saisie-attribution ;",
+        "• saisie-vente ;",
+        "• saisie-conservation.",
+        "La saisie rend indisponible les biens qui en sont l'objet."
+      ],
+      "mots_cles": [
+        "types saisie",
+        "saisie-attribution",
+        "saisie-vente",
+        "saisie-conservation",
+        "indisponibilité biens"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Vente des biens saisis",
+      "texte": [
+        "Art.35.- La vente des biens saisis a lieu huit jours après l'autorisation du Ministre en charge des finances, en sa qualité d'ordonnateur principal des recettes du budget de l'État.",
+        "Elle est organisée par les soins du commissaire-priseur ou du comptable public."
+      ],
+      "mots_cles": [
+        "vente biens saisis",
+        "8 jours après autorisation",
+        "ministre finances",
+        "commissaire-priseur",
+        "comptable public"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Recettes sans titre préalable",
+      "texte": [
+        "Art.36.- Le comptable public peut constater et encaisser les recettes sans émission préalable du titre de perception.",
+        "Les recettes encaissées, sans émission préalable de titre de perception, enregistrées dans un compte d'imputation provisoire de la comptabilité générale, font l'objet de bordereau de demande de régularisation adressée par le comptable assignataire aux ordonnateurs de recettes concernés.",
+        "Les ordonnateurs de recettes adressent les titres de perception de recette en régularisation aux comptables assignataires de recette."
+      ],
+      "mots_cles": [
+        "recettes sans titre préalable",
+        "compte imputation provisoire",
+        "bordereau régularisation",
+        "ordonnateurs recettes"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}
