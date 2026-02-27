@@ -53,6 +53,17 @@ export default function LoginPassword() {
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
         <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
+          {/* Bouton retour */}
+          <TouchableOpacity
+            onPress={() => router.back()}
+            style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}
+          >
+            <Ionicons name="arrow-back" size={22} color={colors.primary} />
+            <Text style={{ color: colors.primary, fontSize: 15, fontWeight: "600", marginLeft: 6 }}>
+              {t("common.back") || "Retour"}
+            </Text>
+          </TouchableOpacity>
+
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
