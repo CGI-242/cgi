@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import type { SommaireNode } from "@/lib/data/cgi";
 
 type Props = {
@@ -13,6 +14,7 @@ type Props = {
 };
 
 function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props) {
+  const { colors } = useTheme();
   const hasChildren = node.children && node.children.length > 0;
   const isExpanded = expanded[node.id];
   const isSelected = selected === node.id;
@@ -41,7 +43,12 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
           <View style={{ width: 20 }} />
         )}
         <Text
-          className={`text-xs flex-1 ${isSelected ? "text-primary font-bold" : "text-text"}`}
+          style={{
+            fontSize: 12,
+            flex: 1,
+            color: isSelected ? colors.primary : colors.text,
+            fontWeight: isSelected ? "bold" : "normal",
+          }}
           numberOfLines={2}
         >
           {node.label}
