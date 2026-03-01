@@ -7,6 +7,7 @@ import { getSommaire, searchArticles, type SommaireNode, type ArticleData } from
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import TreeNode from "@/components/code/TreeNode";
 import ContentPanel from "@/components/code/ContentPanel";
+import ChapterReader from "@/components/code/ChapterReader";
 
 const styles = StyleSheet.create({
   sommaire: { borderRightWidth: 1 },
@@ -107,14 +108,18 @@ export default function CodeCGI() {
 
         {/* Contenu */}
         <View style={{ width: contentWidth }}>
-          <ContentPanel
-            selectedNode={selectedNode}
-            selectedArticle={selectedArticle}
-            onSelectArticle={setSelectedArticle}
-            onSelectChild={handleSelectChild}
-            searchQuery={search}
-            searchResults={searchResults}
-          />
+          {selectedNode?.children && selectedNode.children.length > 0 && !selectedArticle && search.length < 2 ? (
+            <ChapterReader chapter={selectedNode} colors={colors} />
+          ) : (
+            <ContentPanel
+              selectedNode={selectedNode}
+              selectedArticle={selectedArticle}
+              onSelectArticle={setSelectedArticle}
+              onSelectChild={handleSelectChild}
+              searchQuery={search}
+              searchResults={searchResults}
+            />
+          )}
         </View>
       </View>
     </View>
