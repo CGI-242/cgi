@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import type { SommaireNode, ArticleData } from "@/lib/data/cgi";
 import ArticleDetail from "./ArticleDetail";
 import SearchResults from "./SearchResults";
@@ -21,6 +22,8 @@ export default function ContentPanel({
   searchQuery,
   searchResults,
 }: Props) {
+  const { colors } = useTheme();
+
   if (selectedArticle) {
     return (
       <ArticleDetail
@@ -43,12 +46,12 @@ export default function ContentPanel({
 
   if (!selectedNode) {
     return (
-      <View className="flex-1 justify-center items-center px-8">
-        <Ionicons name="book-outline" size={64} color="#ccc" />
-        <Text className="text-xl text-muted mt-4 text-center">
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 32 }}>
+        <Ionicons name="book-outline" size={64} color={colors.textMuted} />
+        <Text style={{ fontSize: 20, color: colors.textMuted, marginTop: 16, textAlign: "center" }}>
           Selectionnez un element dans le sommaire
         </Text>
-        <Text className="text-sm text-muted mt-2 text-center">
+        <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 8, textAlign: "center" }}>
           Naviguez dans l'arborescence du Code General des Impots
         </Text>
       </View>
@@ -59,49 +62,68 @@ export default function ContentPanel({
   const hasChildren = selectedNode.children && selectedNode.children.length > 0;
 
   return (
-    <ScrollView className="flex-1 p-6">
-      <Text className="text-xs text-primary font-semibold uppercase tracking-wide mb-2">
+    <ScrollView style={{ flex: 1, padding: 24 }}>
+      <Text style={{ fontSize: 12, color: colors.primary, fontWeight: "600", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
         {hasArticles
           ? `${selectedNode.articles!.length} article${selectedNode.articles!.length > 1 ? "s" : ""}`
           : "Section"}
       </Text>
-      <Text className="text-xl font-bold text-text mb-6">{selectedNode.label}</Text>
+      <Text style={{ fontSize: 20, fontWeight: "bold", color: colors.text, marginBottom: 24 }}>{selectedNode.label}</Text>
 
       {hasArticles &&
         selectedNode.articles!.map((art) => (
           <TouchableOpacity
             key={art.article}
-            className="bg-card p-4 mb-3 flex-row items-center justify-between"
-            style={{ shadowColor: "#000", shadowOpacity: 0.05, shadowRadius: 4, elevation: 2 }}
+            style={{
+              backgroundColor: colors.card,
+              padding: 16,
+              marginBottom: 12,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              shadowColor: "#000",
+              shadowOpacity: 0.05,
+              shadowRadius: 4,
+              elevation: 2,
+            }}
             onPress={() => onSelectArticle(art)}
           >
-            <View className="flex-1">
-              <Text className="text-base font-bold text-text">{art.article}</Text>
-              <Text className="text-sm text-muted mt-1" numberOfLines={2}>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 16, fontWeight: "bold", color: colors.text }}>{art.article}</Text>
+              <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }} numberOfLines={2}>
                 {art.titre}
               </Text>
             </View>
-            <Ionicons name="chevron-forward" size={20} color="#888" />
+            <Ionicons name="chevron-forward" size={20} color={colors.textMuted} />
           </TouchableOpacity>
         ))}
 
       {hasChildren && (
-        <View className={hasArticles ? "mt-4" : ""}>
+        <View style={hasArticles ? { marginTop: 16 } : {}}>
           {!hasArticles && (
-            <Text className="text-sm text-muted mb-4">
+            <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 16 }}>
               Selectionnez une sous-section pour voir les articles.
             </Text>
           )}
           {selectedNode.children!.map((child) => (
             <TouchableOpacity
               key={child.id}
-              className="bg-card p-4 mb-2 flex-row items-center"
-              style={{ shadowColor: "#000", shadowOpacity: 0.05, shadowRadius: 4, elevation: 2 }}
+              style={{
+                backgroundColor: colors.card,
+                padding: 16,
+                marginBottom: 8,
+                flexDirection: "row",
+                alignItems: "center",
+                shadowColor: "#000",
+                shadowOpacity: 0.05,
+                shadowRadius: 4,
+                elevation: 2,
+              }}
               onPress={() => onSelectChild(child, selectedNode.id)}
             >
-              <Ionicons name="folder-outline" size={20} color="#00815d" style={{ marginRight: 12 }} />
-              <Text className="text-sm text-text flex-1">{child.label}</Text>
-              <Ionicons name="chevron-forward" size={16} color="#888" />
+              <Ionicons name="folder-outline" size={20} color={colors.primary} style={{ marginRight: 12 }} />
+              <Text style={{ fontSize: 14, color: colors.text, flex: 1 }}>{child.label}</Text>
+              <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
             </TouchableOpacity>
           ))}
         </View>

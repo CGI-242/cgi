@@ -26,8 +26,14 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
           if (hasChildren) onToggle(node.id);
           onSelect(node);
         }}
-        className={`flex-row items-center py-2 px-2 ${isSelected ? "bg-primary-light" : ""}`}
-        style={{ paddingLeft: 8 + level * 16 }}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          paddingVertical: 8,
+          paddingHorizontal: 8,
+          paddingLeft: 8 + level * 16,
+          backgroundColor: isSelected ? colors.primary + "20" : "transparent",
+        }}
         accessibilityLabel={`${node.label}${hasChildren ? ", dossier" : ""}`}
         accessibilityRole="button"
         accessibilityState={{ expanded: hasChildren ? isExpanded : undefined, selected: isSelected }}

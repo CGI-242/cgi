@@ -5,6 +5,7 @@ import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
 import ReferencesBlock from "./ReferencesBlock";
@@ -19,6 +20,7 @@ type Props = {
 const SPEECH_MAX_CHUNK = 3_000;
 
 export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
+  const { colors } = useTheme();
   const [isSpeaking, setIsSpeaking] = useState(false);
   const stoppedRef = useRef(false);
   const [references, setReferences] = useState<ArticleReference[]>([]);
@@ -122,52 +124,64 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
   };
 
   return (
-    <ScrollView className="flex-1 p-6">
-      <View className="flex-row items-center justify-between mb-4">
-        <TouchableOpacity onPress={handleBack} className="flex-row items-center">
-          <Ionicons name="arrow-back" size={18} color="#00815d" />
-          <Text className="text-primary text-sm ml-2">Retour aux articles</Text>
+    <ScrollView style={{ flex: 1, padding: 24 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+        <TouchableOpacity onPress={handleBack} style={{ flexDirection: "row", alignItems: "center" }}>
+          <Ionicons name="arrow-back" size={18} color={colors.primary} />
+          <Text style={{ color: colors.primary, fontSize: 14, marginLeft: 8 }}>Retour aux articles</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           onPress={handlePlay}
-          className={`flex-row items-center px-3 py-2 ${isSpeaking ? "bg-danger" : "bg-primary"}`}
-          style={{ borderWidth: 0 }}
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            paddingHorizontal: 12,
+            paddingVertical: 8,
+            backgroundColor: isSpeaking ? colors.danger : colors.primary,
+          }}
         >
           <Ionicons
             name={isSpeaking ? "stop" : "volume-high"}
             size={16}
             color="#fff"
           />
-          <Text className="text-white text-xs font-semibold ml-2">
+          <Text style={{ color: "#fff", fontSize: 12, fontWeight: "600", marginLeft: 8 }}>
             {isSpeaking ? "Stop" : "Ecouter"}
           </Text>
         </TouchableOpacity>
       </View>
 
-      <View className="flex-row items-center mb-2">
-        <View className="bg-primary-light px-2 py-1">
-          <Text className="text-xs text-primary font-semibold">{article.statut}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
+        <View style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4 }}>
+          <Text style={{ fontSize: 12, color: colors.primary, fontWeight: "600" }}>{article.statut}</Text>
         </View>
       </View>
 
-      <Text className="text-2xl font-bold text-text mb-1">{article.article}</Text>
-      <Text className="text-base text-muted italic mb-6">{article.titre}</Text>
+      <Text style={{ fontSize: 24, fontWeight: "bold", color: colors.text, marginBottom: 4 }}>{article.article}</Text>
+      <Text style={{ fontSize: 16, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
 
       <View
-        className="bg-card p-5 mb-6"
-        style={{ shadowColor: "#000", shadowOpacity: 0.05, shadowRadius: 6, elevation: 2 }}
+        style={{
+          backgroundColor: colors.card,
+          padding: 20,
+          marginBottom: 24,
+          shadowColor: "#000",
+          shadowOpacity: 0.05,
+          shadowRadius: 6,
+          elevation: 2,
+        }}
       >
         <ArticleText texte={article.texte} />
       </View>
 
       {article.mots_cles.length > 0 && (
         <View>
-          <Text className="text-xs font-bold text-muted mb-2 uppercase">Mots-cles</Text>
-          <View className="flex-row flex-wrap">
+          <Text style={{ fontSize: 12, fontWeight: "bold", color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>Mots-cles</Text>
+          <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
             {article.mots_cles.map((mc) => (
-              <View key={mc} className="bg-primary-light px-2 py-1 mr-2 mb-2">
-                <Text className="text-xs text-primary">{mc}</Text>
+              <View key={mc} style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4, marginRight: 8, marginBottom: 8 }}>
+                <Text style={{ fontSize: 12, color: colors.primary }}>{mc}</Text>
               </View>
             ))}
           </View>
