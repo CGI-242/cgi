@@ -119,9 +119,17 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
     if (!scrollToId || !scrollTrigger) return;
 
     const timer = setTimeout(() => {
-      const targetView = nodeRefs.current[scrollToId];
       const sv = scrollRef.current;
-      if (!targetView || !sv) return;
+      if (!sv) return;
+
+      // Remonter en haut
+      if (scrollToId === "__top__") {
+        sv.scrollTo({ y: 0, animated: true });
+        return;
+      }
+
+      const targetView = nodeRefs.current[scrollToId];
+      if (!targetView) return;
 
       // measure donne (x, y, width, height, pageX, pageY)
       // pageY = position absolue sur l'écran

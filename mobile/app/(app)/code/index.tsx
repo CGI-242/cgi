@@ -59,6 +59,13 @@ export default function CodeCGI() {
 
     const hasChildren = node.children && node.children.length > 0;
 
+    // Si on reclique sur le noeud déjà affiché → remonter en haut
+    if (readerNodeRef.current && readerNodeRef.current.id === node.id) {
+      setScrollToId("__top__");
+      setScrollTrigger((n) => n + 1);
+      return;
+    }
+
     // Si mode livre actif et le noeud cliqué est un descendant → scroll vers lui
     if (readerNodeRef.current && isDescendant(readerNodeRef.current, node.id)) {
       setScrollToId(node.id);
