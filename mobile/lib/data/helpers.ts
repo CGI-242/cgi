@@ -2,10 +2,12 @@ import type { ArticleData, SommaireNode } from "./types";
 
 export function parseArticles(raw: any[]): ArticleData[] {
   return raw.filter((a) => typeof a.article === "string").map((a) => {
-    // Nettoyer le préfixe "Art.X.-" redondant en début de ligne
-    const rawTexte: string[] = (a.texte || []).map((line: string) =>
-      line.replace(/^Art\.\s*\d+[a-z]*\s*[\.\-–]+\s*/i, "")
-    );
+    // Nettoyer les lignes parasites dans le texte
+    const rawTexte: string[] = (a.texte || [])
+      // Supprimer le préfixe "Art.X.-" redondant en début de ligne
+      .map((line: string) => line.replace(/^Art\.\s*\d+[a-z]*\s*[\.\-–]+\s*/i, ""))
+      // Supprimer les lignes qui ne sont qu'un titre de section (ex: "4.1. Acompte...")
+      .filter((line: string) => !/^\d+\.\d+[\.\s]/.test(line) || line.length > 120);
     const article: ArticleData = {
       article: a.article,
       titre: a.titre || "",
