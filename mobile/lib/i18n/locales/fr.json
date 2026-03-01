@@ -113,7 +113,6 @@
     "code": "Code CGI",
     "chat": "Chat IA",
     "simulators": "Simulateurs",
-    "alerts": "Alertes",
     "analytics": "Analytiques",
     "audit": "Journal d'audit",
     "subscription": "Abonnement",
@@ -398,23 +397,6 @@
     "cleanup": "Nettoyage RGPD",
     "cleanupConfirm": "Supprimer les logs de plus de {{days}} jours ?",
     "cleanupSuccess": "{{count}} log(s) supprimé(s)"
-  },
-  "alertes": {
-    "title": "Alertes Fiscales",
-    "subtitle": "Veille réglementaire",
-    "deadlines": "Échéances",
-    "thresholds": "Seuils",
-    "rates": "Taux",
-    "penalties": "Sanctions",
-    "obligations": "Obligations",
-    "noAlerts": "Aucune alerte fiscale",
-    "extract": "Extraire les alertes",
-    "extractSuccess": "{{count}} alerte(s) extraite(s)",
-    "urgency": {
-      "high": "Haute",
-      "medium": "Moyenne",
-      "low": "Basse"
-    }
   },
   "profil": {
     "title": "Mon profil",

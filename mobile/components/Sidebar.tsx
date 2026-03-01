@@ -33,7 +33,6 @@ const NAV_ITEMS: NavItem[] = [
   { label: "sidebar.code", icon: "book-outline", route: "/(app)/code" },
   { label: "sidebar.simulators", icon: "calculator-outline", route: "/(app)/simulateur" },
   { label: "sidebar.chat", icon: "chatbubbles-outline", route: "/(app)/chat" },
-  { label: "sidebar.alerts", icon: "notifications-outline", route: "/(app)/alertes" },
 ];
 
 function isRouteActive(currentRoute: string, itemRoute: string): boolean {

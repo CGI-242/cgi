@@ -15,6 +15,7 @@ import {
 } from "@/lib/services/its.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
+import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -143,13 +144,13 @@ export default function ItsScreen() {
           {result ? (
             <View>
               {/* Section CALCUL MENSUEL */}
-              <SectionHeader label={t("simulateur.its.monthlyCalc")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.monthlyCalc")} colors={colors} />
               <TableRow label={t("simulateur.its.grossMonthly")} value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
               <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color="#b91c1c" />
               <TableRow label={t("simulateur.its.netTaxableMonthly")} value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
 
               {/* Section CALCUL ANNUEL */}
-              <SectionHeader label={t("simulateur.its.annualCalc")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.annualCalc")} colors={colors} />
               <TableRow label={t("simulateur.its.grossAnnual")} value={formatNumber(result.revenuBrutAnnuel)} />
               <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color="#b91c1c" />
               <TableRow label={t("simulateur.its.netAnnual")} value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
@@ -167,7 +168,7 @@ export default function ItsScreen() {
               </View>
 
               {/* Section IMPOT A PAYER */}
-              <SectionHeader label={t("simulateur.its.taxToPay")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.taxToPay")} colors={colors} />
               <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
               <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
                 <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
@@ -198,14 +199,6 @@ export default function ItsScreen() {
           )}
         </ScrollView>
       </View>
-    </View>
-  );
-}
-
-function SectionHeader({ label, colors }: { label: string; colors: any }) {
-  return (
-    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
     </View>
   );
 }

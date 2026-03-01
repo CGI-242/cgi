@@ -84,6 +84,9 @@ async function forceLogout() {
   if (isMobile) {
     try { await _removeToken("accessToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression accessToken:", e); }
     try { await _removeToken("refreshToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression refreshToken:", e); }
+  } else {
+    // Web : clear les cookies httpOnly via le serveur
+    try { await axios.post(`${API_URL}/auth/clear-session`, {}, { withCredentials: true }); } catch (_) {}
   }
   // Import lazy pour eviter les dependances circulaires
   // On marque la session comme expirée au lieu de déconnecter brutalement (fix C10)

@@ -16,9 +16,9 @@ import { useAuthStore } from "@/lib/store/auth";
 import { userApi, type SubscriptionInfo, type UserStats } from "@/lib/api/user";
 import ActivityStats from "@/components/settings/ActivityStats";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import type { ThemeColors } from "@/lib/theme/colors";
-
-type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
+import SectionHeader from "@/components/parametres/SectionHeader";
+import SettingsRow, { Divider } from "@/components/parametres/SettingsRow";
+import ManagementLinks from "@/components/parametres/ManagementLinks";
 
 const PLAN_LABELS: Record<string, string> = {
   FREE: "Gratuit",
@@ -192,55 +192,7 @@ export default function ParametresScreen() {
 
         {/* Section Gestion */}
         <SectionHeader title={t("settings.management")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, overflow: "hidden" as const, marginBottom: 4 }}>
-          <SettingsRow
-            icon="card-outline"
-            label={t("settings.managementSubscription")}
-            onPress={() => router.push("/(app)/abonnement")}
-            showChevron
-            colors={colors}
-          />
-          <Divider colors={colors} />
-          <SettingsRow
-            icon="people-outline"
-            label={t("settings.managementOrganization")}
-            onPress={() => router.push("/(app)/organisation")}
-            showChevron
-            colors={colors}
-          />
-          <Divider colors={colors} />
-          <SettingsRow
-            icon="bar-chart-outline"
-            label={t("settings.managementAnalytics")}
-            onPress={() => router.push("/(app)/analytics")}
-            showChevron
-            colors={colors}
-          />
-          <Divider colors={colors} />
-          <SettingsRow
-            icon="document-text-outline"
-            label={t("settings.managementAudit")}
-            onPress={() => router.push("/(app)/audit")}
-            showChevron
-            colors={colors}
-          />
-          <Divider colors={colors} />
-          <SettingsRow
-            icon="key-outline"
-            label={t("settings.managementPermissions")}
-            onPress={() => router.push("/(app)/permissions")}
-            showChevron
-            colors={colors}
-          />
-          <Divider colors={colors} />
-          <SettingsRow
-            icon="shield-checkmark-outline"
-            label={t("settings.managementAdmin")}
-            onPress={() => router.push("/(app)/admin")}
-            showChevron
-            colors={colors}
-          />
-        </View>
+        <ManagementLinks colors={colors} />
 
         {/* Section A propos */}
         <SectionHeader title={t("settings.about")} colors={colors} />
@@ -268,65 +220,4 @@ export default function ParametresScreen() {
       </ScrollView>
     </View>
   );
-}
-
-function SectionHeader({ title, colors }: { title: string; colors: ThemeColors }) {
-  return (
-    <Text
-      style={{
-        color: colors.textSecondary,
-        fontSize: 12,
-        fontWeight: "700",
-        letterSpacing: 0.5,
-        marginBottom: 8,
-        marginTop: 16,
-        marginLeft: 4,
-      }}
-    >
-      {title}
-    </Text>
-  );
-}
-
-function SettingsRow({
-  icon,
-  label,
-  value,
-  onPress,
-  showChevron,
-  colors,
-}: {
-  icon: IoniconsName;
-  label: string;
-  value?: string;
-  onPress?: () => void;
-  showChevron?: boolean;
-  colors: ThemeColors;
-}) {
-  const Container = onPress ? TouchableOpacity : View;
-
-  return (
-    <Container
-      onPress={onPress}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        paddingVertical: 14,
-        paddingHorizontal: 16,
-      }}
-    >
-      <Ionicons name={icon} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{label}</Text>
-      {value ? (
-        <Text style={{ fontSize: 14, color: colors.textMuted }}>{value}</Text>
-      ) : null}
-      {showChevron && (
-        <Ionicons name="chevron-forward" size={18} color={colors.disabled} style={{ marginLeft: 4 }} />
-      )}
-    </Container>
-  );
-}
-
-function Divider({ colors }: { colors: ThemeColors }) {
-  return <View style={{ height: 1, backgroundColor: colors.background, marginHorizontal: 16 }} />;
 }

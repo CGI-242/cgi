@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
+import { View, Text, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
@@ -6,6 +6,7 @@ import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
+import OtpInput from "@/components/auth/OtpInput";
 
 const FEEDBACK_DISPLAY_MS = 3_000;
 const RESEND_COOLDOWN_S = 60;
@@ -144,23 +145,13 @@ export default function VerifyOtp() {
           ) : null}
 
           {/* Code input */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-            {t("auth.codePlaceholder")}
-          </Text>
-          <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
-            placeholder="000000"
-            placeholderTextColor={colors.textMuted}
-            value={code}
-            onChangeText={(text) => {
-              const cleaned = text.replace(/[^0-9]/g, "").slice(0, 6);
-              setCode(cleaned);
-              setError("");
-            }}
-            keyboardType="number-pad"
-            maxLength={6}
-            returnKeyType="done"
-            onSubmitEditing={handleVerify}
+          <OtpInput
+            code={code}
+            cooldown={cooldown}
+            onChangeCode={(cleaned) => { setCode(cleaned); setError(""); }}
+            onResend={handleResend}
+            onSubmit={handleVerify}
+            colors={colors}
           />
 
           {/* Bouton */}
@@ -179,12 +170,7 @@ export default function VerifyOtp() {
             )}
           </TouchableOpacity>
 
-          {/* Renvoyer */}
-          <TouchableOpacity style={{ alignItems: "center", marginTop: 16 }} onPress={handleResend} disabled={cooldown > 0}>
-            <Text style={{ fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
-              {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
-            </Text>
-          </TouchableOpacity>
+          {/* Renvoyer - handled by OtpInput component above */}
         </View>
       </View>
     </KeyboardAvoidingView>

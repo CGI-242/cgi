@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "document": "Convention fiscale Congo-Maurice",
+    "pays": "République du Congo / République de Maurice",
+    "edition": "2025",
+    "tome": "CONV-MU",
+    "partie": null,
+    "livre": null,
+    "chapitre": 4,
+    "chapitre_titre": "Chapitre 4 - Élimination de la double imposition",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 22",
+      "titre": "Méthodes pour éliminer les doubles impositions",
+      "texte": [
+        "En ce qui concerne Maurice, la double imposition est évitée de la manière suivante :",
+        "a) lorsqu'un résident de Maurice reçoit des bénéfices, revenus ou gains provenant du Congo et en vertu de la Convention, sont imposables au Congo, Maurice accorde un crédit imputable sur l'impôt mauricien calculé sur la base des mêmes bénéfices, revenus ou gains que ceux sur lesquels l'impôt congolais est calculé.",
+        "b) lorsqu'une société qui est un résident de Maurice reçoit des dividendes d'une société qui est un résident du Congo et dans laquelle elle détient directement ou indirectement au moins 5 pour cent du capital, le crédit imputable sur l'impôt mauricien prend en considération l'impôt congolais dû par la société distributrice sur les bénéfices qui ont servi au paiement des dividendes.",
+        "c) le crédit imputable selon les dispositions des paragraphes (a) et (b), ne peut toutefois excéder l'impôt mauricien (calculé avant le crédit imputable) sur les bénéfices, revenus ou gains provenant du Congo.",
+        "2) En ce qui concerne le Congo, la double imposition est évitée de la manière suivante : lorsqu'un résident du Congo reçoit des revenus qui, conformément aux dispositions de la présente convention, sont imposables à Maurice, le Congo accorde, nonobstant les dispositions de sa législation fiscale interne, une déduction sur l'impôt congolais qu'il perçoit sur les revenus de ce résident d'un montant égal à l'impôt payé à Maurice. Toutefois, cette déduction ne peut excéder la fraction de l'impôt, calculé avant déduction, sur les revenus imposables à Maurice."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    }
+  ]
+}

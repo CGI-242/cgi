@@ -2,14 +2,11 @@ import { useState, useEffect, useCallback } from "react";
 import {
   View,
   Text,
-  TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  TextInput,
   Alert,
   Platform,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import {
@@ -20,19 +17,12 @@ import {
 } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
-const ROLE_COLORS: Record<string, string> = {
-  OWNER: "#8b5cf6",
-  ADMIN: "#3b82f6",
-  MEMBER: "#16a34a",
-  VIEWER: "#6b7280",
-};
-
-const ROLE_LABELS: Record<string, string> = {
-  OWNER: "Propriétaire",
-  ADMIN: "Administrateur",
-  MEMBER: "Membre",
-  VIEWER: "Lecteur",
-};
+import OrgHeader from "@/components/organisation/OrgHeader";
+import MemberList from "@/components/organisation/MemberList";
+import InviteForm from "@/components/organisation/InviteForm";
+import PendingInvitations from "@/components/organisation/PendingInvitations";
+import DangerZone from "@/components/organisation/DangerZone";
+import NoOrganisation from "@/components/organisation/NoOrganisation";
 
 export default function OrganisationScreen() {
   const { colors } = useTheme();
@@ -50,7 +40,7 @@ export default function OrganisationScreen() {
   const [inviteEmail, setInviteEmail] = useState("");
   const [inviteRole, setInviteRole] = useState<"MEMBER" | "ADMIN">("MEMBER");
 
-  // Créer organisation
+  // Cr\u00e9er organisation
   const [createName, setCreateName] = useState("");
   const [createLoading, setCreateLoading] = useState(false);
 
@@ -171,14 +161,14 @@ export default function OrganisationScreen() {
 
   const handleTransferOwnership = (member: OrgMember) => {
     if (!orgId) return;
-    const msg = `Transférer la propriété de l'organisation à ${member.name || member.email} ? Cette action est irréversible.`;
+    const msg = `Transf\u00e9rer la propri\u00e9t\u00e9 de l'organisation \u00e0 ${member.name || member.email} ? Cette action est irr\u00e9versible.`;
     if (Platform.OS === "web") {
       if (!window.confirm(msg)) return;
       doTransfer(member.userId);
     } else {
-      Alert.alert("Transférer la propriété", msg, [
+      Alert.alert("Transf\u00e9rer la propri\u00e9t\u00e9", msg, [
         { text: "Annuler", style: "cancel" },
-        { text: "Transférer", style: "destructive", onPress: () => doTransfer(member.userId) },
+        { text: "Transf\u00e9rer", style: "destructive", onPress: () => doTransfer(member.userId) },
       ]);
     }
   };
@@ -203,7 +193,7 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.createOrganization(createName.trim());
       setCreateName("");
-      // Recharger la page pour refléter la nouvelle org
+      // Recharger la page pour refl\u00e9ter la nouvelle org
       router.replace("/(app)/organisation");
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Erreur";
@@ -231,10 +221,10 @@ export default function OrganisationScreen() {
 
   const handleDeleteOrg = () => {
     if (!orgId) return;
-    const msg = "Supprimer l'organisation ? Cette action est réversible pendant 30 jours.";
+    const msg = "Supprimer l'organisation ? Cette action est r\u00e9versible pendant 30 jours.";
     const doDelete = async () => {
       // Double confirmation
-      const msg2 = "Êtes-vous vraiment sûr ? Tapez 'SUPPRIMER' pour confirmer.";
+      const msg2 = "\u00cates-vous vraiment s\u00fbr ? Tapez 'SUPPRIMER' pour confirmer.";
       if (Platform.OS === "web") {
         const input = window.prompt(msg2);
         if (input !== "SUPPRIMER") return;
@@ -278,7 +268,7 @@ export default function OrganisationScreen() {
 
   const handlePermanentDelete = () => {
     if (!orgId) return;
-    const msg = "Supprimer définitivement l'organisation ? Cette action est IRRÉVERSIBLE.";
+    const msg = "Supprimer d\u00e9finitivement l'organisation ? Cette action est IRR\u00c9VERSIBLE.";
     const doPermDelete = async () => {
       setActionLoading(true);
       try {
@@ -296,9 +286,9 @@ export default function OrganisationScreen() {
       if (!window.confirm(msg)) return;
       doPermDelete();
     } else {
-      Alert.alert("Suppression définitive", msg, [
+      Alert.alert("Suppression d\u00e9finitive", msg, [
         { text: "Annuler", style: "cancel" },
-        { text: "Supprimer définitivement", style: "destructive", onPress: doPermDelete },
+        { text: "Supprimer d\u00e9finitivement", style: "destructive", onPress: doPermDelete },
       ]);
     }
   };
@@ -314,65 +304,13 @@ export default function OrganisationScreen() {
 
   if (!orgId) {
     return (
-      <View style={{ flex: 1, backgroundColor: colors.background }}>
-        <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", padding: 24 }}>
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Ionicons name="business-outline" size={48} color={colors.disabled} />
-            <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16, textAlign: "center" }}>
-              Vous n'appartenez à aucune organisation
-            </Text>
-          </View>
-
-          {/* Formulaire de création */}
-          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
-            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 12 }}>Créer une organisation</Text>
-            <TextInput
-              value={createName}
-              onChangeText={setCreateName}
-              placeholder="Nom de l'organisation"
-              placeholderTextColor={colors.textMuted}
-              style={{
-                backgroundColor: colors.background,
-                
-                paddingHorizontal: 14,
-                paddingVertical: 12,
-                fontSize: 15,
-                color: colors.text,
-                marginBottom: 12,
-              }}
-            />
-            <TouchableOpacity
-              onPress={handleCreateOrg}
-              disabled={createLoading || !createName.trim()}
-              style={{
-                backgroundColor: !createName.trim() ? colors.textMuted : colors.primary,
-                
-                paddingVertical: 12,
-                alignItems: "center",
-              }}
-            >
-              {createLoading ? (
-                <ActivityIndicator size="small" color="#fff" />
-              ) : (
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Créer</Text>
-              )}
-            </TouchableOpacity>
-          </View>
-
-          {/* Lien vers invitations */}
-          <TouchableOpacity
-            onPress={() => router.push("/(app)/invitations")}
-            style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, flexDirection: "row", alignItems: "center" }}
-          >
-            <Ionicons name="mail-outline" size={22} color={colors.primary} style={{ marginRight: 12 }} />
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>Invitations reçues</Text>
-              <Text style={{ fontSize: 13, color: colors.textSecondary }}>Accepter une invitation pour rejoindre une organisation</Text>
-            </View>
-            <Ionicons name="chevron-forward" size={18} color={colors.textMuted} />
-          </TouchableOpacity>
-        </ScrollView>
-      </View>
+      <NoOrganisation
+        createName={createName}
+        createLoading={createLoading}
+        onChangeCreateName={setCreateName}
+        onCreateOrg={handleCreateOrg}
+        colors={colors}
+      />
     );
   }
 
@@ -385,256 +323,71 @@ export default function OrganisationScreen() {
           </View>
         )}
 
-        {/* Détails organisation */}
+        {/* D\u00e9tails organisation */}
         {org && (
-          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
-            <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-              <View style={{ width: 44, height: 44, backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
-                <Ionicons name="business" size={22} color="#fff" />
-              </View>
-              <View style={{ flex: 1 }}>
-                {editingName ? (
-                  <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-                    <TextInput
-                      value={newOrgName}
-                      onChangeText={setNewOrgName}
-                      placeholder={org.name}
-                      placeholderTextColor={colors.textMuted}
-                      style={{
-                        flex: 1,
-                        backgroundColor: colors.background,
-                        
-                        paddingHorizontal: 10,
-                        paddingVertical: 6,
-                        fontSize: 16,
-                        color: colors.text,
-                      }}
-                      autoFocus
-                    />
-                    <TouchableOpacity onPress={handleEditOrgName} disabled={actionLoading || !newOrgName.trim()}>
-                      <Ionicons name="checkmark-circle" size={24} color={colors.primary} />
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => { setEditingName(false); setNewOrgName(""); }}>
-                      <Ionicons name="close-circle" size={24} color={colors.textMuted} />
-                    </TouchableOpacity>
-                  </View>
-                ) : (
-                  <View style={{ flexDirection: "row", alignItems: "center" }}>
-                    <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{org.name}</Text>
-                    {isAdmin && (
-                      <TouchableOpacity onPress={() => { setEditingName(true); setNewOrgName(org.name); }} style={{ marginLeft: 8 }}>
-                        <Ionicons name="create-outline" size={18} color={colors.primary} />
-                      </TouchableOpacity>
-                    )}
-                  </View>
-                )}
-                <Text style={{ fontSize: 13, color: colors.textSecondary }}>{org.plan || "Gratuit"} — {org.memberCount} membre{org.memberCount > 1 ? "s" : ""}</Text>
-              </View>
-            </View>
-          </View>
+          <OrgHeader
+            org={org}
+            isAdmin={isAdmin}
+            editingName={editingName}
+            newOrgName={newOrgName}
+            actionLoading={actionLoading}
+            onStartEdit={() => {
+              setEditingName(true);
+              setNewOrgName(org.name);
+            }}
+            onCancelEdit={() => {
+              setEditingName(false);
+              setNewOrgName("");
+            }}
+            onSaveName={handleEditOrgName}
+            onChangeNewName={setNewOrgName}
+            colors={colors}
+          />
         )}
 
         {/* Liste membres */}
-        <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
-          MEMBRES ({members.length})
-        </Text>
-        {members.map((member) => {
-          const roleColor = ROLE_COLORS[member.role] || "#6b7280";
-          const initials = (member.name || member.email).substring(0, 2).toUpperCase();
-          const isMenuOpen = menuOpenId === member.userId;
-
-          return (
-            <View
-              key={member.userId}
-              style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8 }}
-            >
-              <View style={{ flexDirection: "row", alignItems: "center" }}>
-                {/* Avatar */}
-                <View style={{ width: 38, height: 38, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 12 }}>
-                  <Text style={{ fontSize: 14, fontWeight: "700", color: roleColor }}>{initials}</Text>
-                </View>
-                {/* Infos */}
-                <View style={{ flex: 1 }}>
-                  <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
-                  <Text style={{ fontSize: 12, color: colors.textMuted }}>{member.email}</Text>
-                </View>
-                {/* Badge rôle */}
-                <View style={{ backgroundColor: `${roleColor}20`, paddingHorizontal: 8, paddingVertical: 3, marginRight: 8 }}>
-                  <Text style={{ fontSize: 11, fontWeight: "700", color: roleColor }}>{ROLE_LABELS[member.role] || member.role}</Text>
-                </View>
-                {/* Menu actions */}
-                {isAdmin && member.role !== "OWNER" && (
-                  <TouchableOpacity onPress={() => setMenuOpenId(isMenuOpen ? null : member.userId)} style={{ padding: 4 }}>
-                    <Ionicons name="ellipsis-vertical" size={18} color={colors.textSecondary} />
-                  </TouchableOpacity>
-                )}
-              </View>
-
-              {/* Menu dropdown */}
-              {isMenuOpen && isAdmin && member.role !== "OWNER" && (
-                <View style={{ marginTop: 10, backgroundColor: colors.background, padding: 8 }}>
-                  {/* Changer rôle */}
-                  {(["MEMBER", "ADMIN", "VIEWER"] as const).filter((r) => r !== member.role).map((role) => (
-                    <TouchableOpacity
-                      key={role}
-                      onPress={() => handleChangeRole(member, role)}
-                      style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8, paddingHorizontal: 8 }}
-                    >
-                      <Ionicons name="swap-horizontal-outline" size={16} color={colors.text} style={{ marginRight: 8 }} />
-                      <Text style={{ fontSize: 13, color: colors.text }}>Rôle → {ROLE_LABELS[role]}</Text>
-                    </TouchableOpacity>
-                  ))}
-                  {/* Retirer */}
-                  <TouchableOpacity
-                    onPress={() => handleRemoveMember(member)}
-                    style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8, paddingHorizontal: 8, borderTopWidth: 1, borderTopColor: colors.border, marginTop: 4 }}
-                  >
-                    <Ionicons name="person-remove-outline" size={16} color="#dc2626" style={{ marginRight: 8 }} />
-                    <Text style={{ fontSize: 13, color: "#dc2626" }}>Retirer de l'organisation</Text>
-                  </TouchableOpacity>
-                  {/* Transférer propriété */}
-                  {isOwner && (
-                    <TouchableOpacity
-                      onPress={() => handleTransferOwnership(member)}
-                      style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8, paddingHorizontal: 8, borderTopWidth: 1, borderTopColor: colors.border, marginTop: 4 }}
-                    >
-                      <Ionicons name="arrow-forward-circle-outline" size={16} color="#8b5cf6" style={{ marginRight: 8 }} />
-                      <Text style={{ fontSize: 13, color: "#8b5cf6" }}>Transférer la propriété</Text>
-                    </TouchableOpacity>
-                  )}
-                </View>
-              )}
-            </View>
-          );
-        })}
+        <MemberList
+          members={members}
+          isAdmin={isAdmin}
+          isOwner={isOwner}
+          menuOpenId={menuOpenId}
+          onToggleMenu={setMenuOpenId}
+          onChangeRole={handleChangeRole}
+          onRemoveMember={handleRemoveMember}
+          onTransferOwnership={handleTransferOwnership}
+          colors={colors}
+        />
 
         {/* Section inviter */}
         {isAdmin && (
-          <>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4, marginTop: 16 }}>
-              INVITER UN MEMBRE
-            </Text>
-            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 16 }}>
-              <TextInput
-                value={inviteEmail}
-                onChangeText={setInviteEmail}
-                placeholder="Adresse email"
-                placeholderTextColor={colors.textMuted}
-                keyboardType="email-address"
-                autoCapitalize="none"
-                style={{
-                  backgroundColor: colors.background,
-                  
-                  paddingHorizontal: 14,
-                  paddingVertical: 12,
-                  fontSize: 15,
-                  color: colors.text,
-                  marginBottom: 12,
-                }}
-              />
-              {/* Sélecteur rôle */}
-              <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
-                {(["MEMBER", "ADMIN"] as const).map((role) => (
-                  <TouchableOpacity
-                    key={role}
-                    onPress={() => setInviteRole(role)}
-                    style={{
-                      flex: 1,
-                      paddingVertical: 10,
-                      
-                      alignItems: "center",
-                      backgroundColor: inviteRole === role ? colors.primary : colors.background,
-                    }}
-                  >
-                    <Text style={{ fontSize: 13, fontWeight: "600", color: inviteRole === role ? "#fff" : colors.text }}>
-                      {ROLE_LABELS[role]}
-                    </Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-              <TouchableOpacity
-                onPress={handleInvite}
-                disabled={actionLoading || !inviteEmail.trim()}
-                style={{
-                  backgroundColor: !inviteEmail.trim() ? colors.textMuted : colors.primary,
-                  
-                  paddingVertical: 12,
-                  alignItems: "center",
-                }}
-              >
-                {actionLoading ? (
-                  <ActivityIndicator size="small" color="#fff" />
-                ) : (
-                  <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Inviter</Text>
-                )}
-              </TouchableOpacity>
-            </View>
-          </>
+          <InviteForm
+            inviteEmail={inviteEmail}
+            inviteRole={inviteRole}
+            actionLoading={actionLoading}
+            onChangeEmail={setInviteEmail}
+            onChangeRole={setInviteRole}
+            onInvite={handleInvite}
+            colors={colors}
+          />
         )}
 
         {/* Invitations en attente */}
-        {invitations.length > 0 && (
-          <>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
-              INVITATIONS EN ATTENTE ({invitations.length})
-            </Text>
-            {invitations.map((inv) => (
-              <View
-                key={inv.id}
-                style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, marginBottom: 8, flexDirection: "row", alignItems: "center" }}
-              >
-                <Ionicons name="mail-outline" size={20} color="#d97706" style={{ marginRight: 12 }} />
-                <View style={{ flex: 1 }}>
-                  <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{inv.email}</Text>
-                  <Text style={{ fontSize: 12, color: colors.textMuted }}>Rôle : {ROLE_LABELS[inv.role] || inv.role}</Text>
-                </View>
-                {isAdmin && (
-                  <TouchableOpacity onPress={() => handleCancelInvitation(inv.id)} style={{ padding: 6 }}>
-                    <Ionicons name="close-circle-outline" size={22} color="#dc2626" />
-                  </TouchableOpacity>
-                )}
-              </View>
-            ))}
-          </>
-        )}
+        <PendingInvitations
+          invitations={invitations}
+          isAdmin={isAdmin}
+          onCancelInvitation={handleCancelInvitation}
+          colors={colors}
+        />
 
         {/* Actions OWNER : Supprimer / Restaurer org */}
         {isOwner && (
-          <View style={{ marginTop: 24, borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 20 }}>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 12, marginLeft: 4 }}>
-              ZONE DANGER
-            </Text>
-            <TouchableOpacity
-              onPress={handleDeleteOrg}
-              disabled={actionLoading}
-              style={{ backgroundColor: "#fef2f2", paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
-            >
-              <View style={{ flexDirection: "row", alignItems: "center" }}>
-                <Ionicons name="trash-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
-                <Text style={{ color: "#dc2626", fontWeight: "600", fontSize: 14 }}>Supprimer l'organisation</Text>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={handleRestoreOrg}
-              disabled={actionLoading}
-              style={{ backgroundColor: "#f0fdf4", paddingVertical: 14, alignItems: "center", marginBottom: 8 }}
-            >
-              <View style={{ flexDirection: "row", alignItems: "center" }}>
-                <Ionicons name="refresh-outline" size={18} color="#16a34a" style={{ marginRight: 8 }} />
-                <Text style={{ color: "#16a34a", fontWeight: "600", fontSize: 14 }}>Restaurer l'organisation</Text>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={handlePermanentDelete}
-              disabled={actionLoading}
-              style={{ backgroundColor: "#dc2626", paddingVertical: 14, alignItems: "center" }}
-            >
-              <View style={{ flexDirection: "row", alignItems: "center" }}>
-                <Ionicons name="nuclear-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>Supprimer définitivement</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
+          <DangerZone
+            actionLoading={actionLoading}
+            onDelete={handleDeleteOrg}
+            onRestore={handleRestoreOrg}
+            onPermanentDelete={handlePermanentDelete}
+            colors={colors}
+          />
         )}
       </ScrollView>
     </View>

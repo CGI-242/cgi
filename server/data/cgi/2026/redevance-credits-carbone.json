@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "document": "Redevance de crédits carbone (RCC)",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC4-RCC",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.18. Redevance de crédits carbone (RCC)",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la redevance",
+      "section": "Chapitre 1 : Dispositions générales",
+      "texte": [
+        "Chapitre 1 - Dispositions générales",
+        "Art.1.- Il est établi, en République du Congo, une redevance désignée sous le nom de redevance de crédits carbone (RCC). La redevance de crédits carbone est due par les promoteurs des projets de génération des crédits carbone développés au Congo."
+      ],
+      "mots_cles": [
+        "redevance crédits carbone",
+        "RCC",
+        "promoteurs",
+        "génération crédits carbone"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définition des promoteurs",
+      "section": "Chapitre 1 : Dispositions générales",
+      "texte": [
+        "Art.2.- Les promoteurs des projets de génération de crédits carbone s'entendent de toutes les personnes physiques ou personnes morales de droit congolais ou étranger, qui investissent dans la réalisation desdits projets dans un objectif de spéculation ou de compensation."
+      ],
+      "mots_cles": [
+        "promoteurs",
+        "personnes physiques",
+        "personnes morales",
+        "spéculation",
+        "compensation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Personnes imposables",
+      "section": "Section 1 : Personnes imposables",
+      "texte": [
+        "Chapitre 2 - Champ d'application de la Redevance",
+        "Section 1 - Personnes imposables",
+        "Art.3.- Sont soumis au paiement de la redevance de crédit carbone :",
+        "• les promoteurs des projets de crédits carbone spéculatifs autrement dit les crédits carbones destinés à la commercialisation ;",
+        "• les promoteurs des projets de crédits carbone qui transfèrent les crédits carbones aux autres entités du groupes auxquels elles appartiennent situées hors Congo."
+      ],
+      "mots_cles": [
+        "personnes imposables",
+        "crédits carbone spéculatifs",
+        "commercialisation",
+        "transfert hors Congo"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exonérations",
+      "section": "Section 2 : Exonérations",
+      "texte": [
+        "Section 2 - Exonérations",
+        "Art.4.- Ne sont pas soumis au paiement de la redevance de crédits carbone au Congo :",
+        "1° les promoteurs de projets de crédits carbone compensatoires ;",
+        "2° les promoteurs des projets de crédits carbone spéculatifs pour la part correspondant au buffer de crédits carbone utilisée conformément à son objet ;",
+        "3° L'État et ses démembrements, pour la part de crédits carbone dont ils peuvent être propriétaires en application des dispositions du code forestier."
+      ],
+      "mots_cles": [
+        "exonérations",
+        "crédits carbone compensatoires",
+        "buffer crédits carbone",
+        "État",
+        "code forestier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Définitions",
+      "section": "Section 2 : Exonérations",
+      "texte": [
+        "Art.5.- Les crédits carbone compensatoires sont des crédits carbones générés par les personnes morales, à travers les projets dont l'objectif est la compensation de leurs propres émissions.",
+        "Le buffer de crédits carbone correspond à la part de crédits carbone mise de côté ou en réserve pour permettre au promoteur de faire face aux incertitudes ou imprévus du projet et à garantir l'efficacité du projet en matière de réduction des émissions de gaz à effet de serre."
+      ],
+      "mots_cles": [
+        "crédits carbone compensatoires",
+        "buffer crédits carbone",
+        "émissions",
+        "gaz effet de serre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Territorialité",
+      "section": "Section 3 : Territorialité",
+      "texte": [
+        "Section 3 - Territorialité",
+        "Art.6.- Un projet de génération de crédits carbone est réputé réalisé en République du Congo lorsque les activités nécessaires à sa mise en œuvre sont exercées sur le territoire national."
+      ],
+      "mots_cles": [
+        "territorialité",
+        "territoire national"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Base de calcul des droits",
+      "section": "Section 4 : Base de calcul des droits",
+      "texte": [
+        "Chapitre 3 - Assiette et recouvrement de la redevance",
+        "Section 4 - Base de calcul des droits",
+        "Art.7.- Pour le calcul des droits dus au titre de la redevance de crédits carbone, il est tenu compte de la base constituée par le volume de crédits carbone effectivement délivrés au promoteur du projet par l'organisme de certification après déduction de la part correspondant au buffer de crédits carbone."
+      ],
+      "mots_cles": [
+        "base calcul",
+        "volume crédits carbone",
+        "organisme certification",
+        "buffer"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Valorisation de la base",
+      "section": "Section 4 : Base de calcul des droits",
+      "texte": [
+        "Art.8.- Le volume de crédits carbone effectivement délivrés au promoteur après déduction de la part correspondant au buffer de crédits carbone, est valorisé au prix de cession d'un crédit carbone sur le marché, le jour de la délivrance effective desdits crédits carbone.",
+        "En cas de variation positive du prix du marché carbone, entre la date de la délivrance effective des crédits carbones au promoteur et la date de la déclaration de la redevance de crédit carbone auprès de l'administration fiscale par le promoteur, il sera fait application du prix le plus élevé du jour de la déclaration fiscale."
+      ],
+      "mots_cles": [
+        "valorisation",
+        "prix cession",
+        "marché carbone",
+        "variation positive",
+        "prix plus élevé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Montant des droits",
+      "section": "Section 4 : Base de calcul des droits",
+      "texte": [
+        "Art.9.- Le montant des droits à payer est déterminé par application du taux correspondant de la redevance, à la base valorisée du volume de crédits carbone effectivement délivrés au promoteur telle qu'indiquée à l'article 8 des présentes dispositions."
+      ],
+      "mots_cles": [
+        "montant droits",
+        "taux",
+        "base valorisée",
+        "article 8"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Taux de la redevance",
+      "section": "Section 5 : Taux de la redevance",
+      "texte": [
+        "Section 5 - Taux de la redevance",
+        "Art.10.- Il est établi deux (2) taux de calcul de la redevance de crédits carbone (RCC) en fonction des classes de projets définies par le code forestier :",
+        "• 20 % pour la redevance des crédits carbone issus des projets de classes 1 et 2 ;",
+        "• 15 % pour la redevance des crédits carbone issus des projets de classes 3 et 4."
+      ],
+      "mots_cles": [
+        "taux redevance",
+        "20% classes 1 et 2",
+        "15% classes 3 et 4",
+        "code forestier"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Fait générateur et exigibilité",
+      "section": "Section 6 : Fait générateur de la redevance et exigibilité des droits",
+      "texte": [
+        "Section 6 - Fait générateur de la redevance et exigibilité des droits",
+        "Art.11.- Le fait générateur de la redevance des crédits carbone est la délivrance effective des crédits carbone au promoteur par l'organisme d'émission et certification des crédits carbone.",
+        "La redevance de crédit carbone est exigible, auprès du promoteur du projet, dans les trois (3) mois qui suivent la délivrance effective des crédits carbone au promoteur."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "délivrance effective",
+        "organisme certification",
+        "exigibilité",
+        "3 mois"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Non-exigibilité en cas de buffer",
+      "section": "Section 6 : Fait générateur de la redevance et exigibilité des droits",
+      "texte": [
+        "Art.12.- Le fait générateur de la redevance est considéré comme n'étant pas réalisé et la redevance n'est pas exigible lorsque les crédits émis et certifiés au nom du promoteur sont entièrement affectés à la constitution du buffer de crédits carbone."
+      ],
+      "mots_cles": [
+        "non-exigibilité",
+        "buffer",
+        "affectation totale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Obligations de droit commun",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Section 7 - Obligations des redevables",
+        "Art.13.- Les promoteurs de projets de génération de crédits carbone sont, sous réserve des dispositions contraires prévues par la loi, soumis aux obligations de droit commun en matière d'autres impôts et taxes prévus par le code général des impôts."
+      ],
+      "mots_cles": [
+        "obligations droit commun",
+        "impôts taxes",
+        "CGI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Obligations au démarrage du projet",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Art.14.- Les promoteurs de projets sont tenus de faire parvenir à l'administration fiscale, dans le délai des six (6) mois qui suivent le démarrage du projet, nonobstant les obligations liées à l'immatriculation et à la déclaration d'existence des projets :",
+        "• une copie du plan de projet certifié et validé par un organisme de vérification et de validation des projets (OVV) ;",
+        "• une copie du contrat de prestation signé avec une entité de droit congolais, dans le cas où la réalisation du projet serait confiée, par le promoteur, à une entité tierce."
+      ],
+      "mots_cles": [
+        "obligations démarrage",
+        "6 mois",
+        "plan projet",
+        "OVV",
+        "contrat prestation",
+        "entité tierce"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Obligations annuelles",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Art.15.- Les promoteurs de projets sont également tenus de faire parvenir à l'administration fiscale, dans le délai des six (6) mois qui suivent la fin de chaque exercice annuel :",
+        "• une copie du rapport d'activités annuel de l'exercice clos, comprenant les informations relatives à l'avancement du projet, à la génération, la certification, l'émission, l'enregistrement et leur délivrance effective des crédits carbone ;",
+        "• un état récapitulatif des sommes versées à l'entité tierce réalisant les projets pour leur compte ;",
+        "• un état des dépenses engagées dans le cadre de la participation aux projets communautaires, à caractère obligatoire et volontaire."
+      ],
+      "mots_cles": [
+        "obligations annuelles",
+        "rapport activités",
+        "6 mois",
+        "état récapitulatif",
+        "projets communautaires"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Sanctions pour inobservation",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Art.16.- L'inobservation des obligations fixées à l'article 14 ci-dessus expose le promoteur au paiement d'une amende de cinquante (50) millions de francs CFA par obligation."
+      ],
+      "mots_cles": [
+        "sanctions",
+        "amende 50 000 000 FCFA",
+        "par obligation"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Obligations déclaratives et paiement spontané",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Art.17.- Les promoteurs de projets sont soumis aux obligations déclaratives et de paiement spontané de la redevance de crédit carbone (RCC) dans le délai des trois (3), qui suivent leur délivrance effective des crédits carbone par l'organisme de certification."
+      ],
+      "mots_cles": [
+        "obligations déclaratives",
+        "paiement spontané",
+        "3 mois",
+        "organisme certification"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Défaut de déclaration et responsabilité solidaire",
+      "section": "Section 7 : Obligations des redevables",
+      "texte": [
+        "Art.18.- Le défaut de déclaration et de paiement, dans le délai susmentionné, expose le promoteur au paiement d'une amende égale au montant des droits dus, sans préjudice de la régularisation des droits en cause.",
+        "L'entité tierce qui réalise le projet pour le compte du promoteur est solidairement responsable du promoteur pour l'accomplissement des obligations déclaratives et de paiement visé aux articles 14, 15, 16 et 17 des présentes dispositions."
+      ],
+      "mots_cles": [
+        "défaut déclaration",
+        "amende",
+        "responsabilité solidaire",
+        "entité tierce"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Droit de communication",
+      "section": "Section 8 : Dispositions relatives au contrôle",
+      "texte": [
+        "Section 8 - Dispositions relatives au contrôle",
+        "Art.19.- Pour le contrôle de la redevance de crédits carbone, l'administration fiscale exerce le droit de communication auprès des agences et des entités publiques relevant des ministères en charge de l'économie forestière, de l'environnement, de l'administration du territoire et de toutes autres entités publiques tenant lieu."
+      ],
+      "mots_cles": [
+        "contrôle",
+        "droit de communication",
+        "économie forestière",
+        "environnement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Mécanismes de recoupement",
+      "section": "Section 8 : Dispositions relatives au contrôle",
+      "texte": [
+        "Art.20.- L'administration fiscale est tenue de mettre en place des mécanismes de recoupement d'informations auprès des organismes habilités chargés de :",
+        "• la vérification et la validation des projets ;",
+        "• la certification, l'émission, l'enregistrement et la délivrance effective des crédits carbone."
+      ],
+      "mots_cles": [
+        "recoupement informations",
+        "organismes habilités",
+        "vérification",
+        "certification"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Collecte de renseignements à but fiscal",
+      "section": "Section 8 : Dispositions relatives au contrôle",
+      "texte": [
+        "Art.21.- Elle peut faire usage de tous les moyens d'information disponibles pour la collecte des renseignements à but fiscal, en ce qui concerne notamment :",
+        "• les projets de génération de crédits carbone développés au Congo ;",
+        "• l'utilisation des crédits carbone affectés au buffer de crédits carbone par projet ;",
+        "• les prix de cession périodique des crédits carbone sur le marché."
+      ],
+      "mots_cles": [
+        "renseignements fiscaux",
+        "projets crédits carbone",
+        "buffer",
+        "prix cession marché"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Recouvrement de la redevance",
+      "section": "Section 9 : Recouvrement et répartition du produit de la redevance",
+      "texte": [
+        "Section 9 - Recouvrement et répartition du produit de la redevance",
+        "Art.22.- Le recouvrement de la redevance est assuré par le comptable public assignataire au sein de la résidence fiscale du promoteur du projet, conformément aux dispositions du code général des impôts."
+      ],
+      "mots_cles": [
+        "recouvrement",
+        "comptable public",
+        "résidence fiscale",
+        "CGI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Répartition du produit",
+      "section": "Section 9 : Recouvrement et répartition du produit de la redevance",
+      "texte": [
+        "Art.23.- Le produit de la redevance de crédits carbone est réparti comme suit :",
+        "• 70 % au Trésor public ;",
+        "• 30 % aux collectivités locales du lieu de l'implantation des projets.",
+        "La part destinée aux collectivités locales est exclusivement destinée à la réalisation des projets sociaux de la collectivité."
+      ],
+      "mots_cles": [
+        "répartition",
+        "Trésor public 70%",
+        "collectivités locales 30%",
+        "projets sociaux"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

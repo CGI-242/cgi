@@ -688,6 +688,12 @@ router.post("/check-email", sensitiveLimiter, validate({ body: checkEmailBody })
  *       500:
  *         description: Erreur serveur
  */
+// POST /api/auth/clear-session — Clear cookies sans auth (session révoquée)
+router.post("/clear-session", (_req: Request, res: Response) => {
+  clearAuthCookies(res);
+  res.json({ message: "Session nettoyée" });
+});
+
 // POST /api/auth/logout
 router.post("/logout", requireAuth, async (req: AuthRequest, res: Response) => {
   try {

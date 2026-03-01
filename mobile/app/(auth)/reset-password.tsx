@@ -7,6 +7,7 @@ import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
+import OtpInput from "@/components/auth/OtpInput";
 
 const REDIRECT_DELAY_MS = 2_000;
 const FEEDBACK_DISPLAY_MS = 3_000;
@@ -144,20 +145,12 @@ export default function ResetPassword() {
           ) : null}
 
           {/* Code */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-            {t("auth.codePlaceholder")}
-          </Text>
-          <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
-            placeholder="000000"
-            placeholderTextColor={colors.textMuted}
-            value={code}
-            onChangeText={(text) => {
-              setCode(text.replace(/[^0-9]/g, "").slice(0, 6));
-              setError("");
-            }}
-            keyboardType="number-pad"
-            maxLength={6}
+          <OtpInput
+            code={code}
+            cooldown={cooldown}
+            onChangeCode={(cleaned) => { setCode(cleaned); setError(""); }}
+            onResend={handleResend}
+            colors={colors}
           />
 
           {/* Nouveau mot de passe */}
@@ -214,14 +207,8 @@ export default function ResetPassword() {
             )}
           </TouchableOpacity>
 
-          {/* Liens */}
-          <View style={{ flexDirection: "row", justifyContent: "center", gap: 16, marginTop: 16 }}>
-            <TouchableOpacity onPress={handleResend} disabled={cooldown > 0}>
-              <Text style={{ fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
-                {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
-              </Text>
-            </TouchableOpacity>
-            <Text style={{ color: colors.textMuted }}>·</Text>
+          {/* Lien retour */}
+          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 16 }}>
             <TouchableOpacity onPress={() => router.replace("/(auth)")}>
               <Text style={{ fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
                 {t("auth.backToLogin")}

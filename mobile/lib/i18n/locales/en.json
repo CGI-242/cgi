@@ -113,7 +113,6 @@
     "code": "Tax Code",
     "chat": "AI Chat",
     "simulators": "Simulators",
-    "alerts": "Alerts",
     "analytics": "Analytics",
     "audit": "Audit Log",
     "subscription": "Subscription",
@@ -398,23 +397,6 @@
     "cleanup": "GDPR cleanup",
     "cleanupConfirm": "Delete logs older than {{days}} days?",
     "cleanupSuccess": "{{count}} log(s) deleted"
-  },
-  "alertes": {
-    "title": "Tax Alerts",
-    "subtitle": "Regulatory watch",
-    "deadlines": "Deadlines",
-    "thresholds": "Thresholds",
-    "rates": "Rates",
-    "penalties": "Penalties",
-    "obligations": "Obligations",
-    "noAlerts": "No tax alerts",
-    "extract": "Extract alerts",
-    "extractSuccess": "{{count}} alert(s) extracted",
-    "urgency": {
-      "high": "High",
-      "medium": "Medium",
-      "low": "Low"
-    }
   },
   "profil": {
     "title": "My profile",

@@ -18,7 +18,6 @@ function getInitials(prenom?: string, nom?: string) {
 const PAGE_TITLES: Record<string, string> = {
   "/profil": "profil.title",
   "/parametres": "settings.title",
-  "/alertes": "alertes.title",
   "/chat": "chat.title",
   "/code": "code.title",
   "/simulateur": "simulateur.title",
@@ -35,6 +34,22 @@ const PAGE_TITLES: Record<string, string> = {
   "/securite": "settings.twoFactor",
   "/legal/cgu": "settings.terms",
   "/legal/confidentialite": "settings.privacy",
+};
+
+const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
+  "/securite": { path: "/parametres", titleKey: "settings.title" },
+  "/abonnement": { path: "/parametres", titleKey: "settings.title" },
+  "/organisation": { path: "/parametres", titleKey: "settings.title" },
+  "/analytics": { path: "/parametres", titleKey: "settings.title" },
+  "/audit": { path: "/parametres", titleKey: "settings.title" },
+  "/permissions": { path: "/parametres", titleKey: "settings.title" },
+  "/admin": { path: "/parametres", titleKey: "settings.title" },
+  "/legal/cgu": { path: "/parametres", titleKey: "settings.title" },
+  "/legal/confidentialite": { path: "/parametres", titleKey: "settings.title" },
+  "/simulateur/its": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/is": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/patente": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/solde-liquidation": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -58,6 +73,7 @@ export default function AppLayout() {
 
   const isHome = pathname === "/" || pathname === "/(app)";
   const pageTitleKey = !isHome ? PAGE_TITLES[pathname] : null;
+  const parent = !isHome ? PAGE_PARENTS[pathname] : null;
 
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
@@ -79,6 +95,16 @@ export default function AppLayout() {
               </TouchableOpacity>
               {!isHome && pageTitleKey && (
                 <>
+                  {parent && (
+                    <>
+                      <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
+                      <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as any)}>
+                        <Text style={{ color: colors.textMuted, fontWeight: "600", fontSize: 16 }}>
+                          {t(parent.titleKey)}
+                        </Text>
+                      </TouchableOpacity>
+                    </>
+                  )}
                   <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
                   <Text style={{ color: colors.accent, fontWeight: "700", fontSize: 16 }}>
                     {t(pageTitleKey)}
@@ -111,16 +137,6 @@ export default function AppLayout() {
                 style={{ padding: 6, marginRight: 4 }}
               >
                 <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.sidebarText} />
-              </TouchableOpacity>
-
-              {/* Notifications */}
-              <TouchableOpacity
-                onPress={() => router.push("/(app)/alertes")}
-                accessibilityLabel={t("dashboard.notifications")}
-                accessibilityRole="button"
-                style={{ padding: 6, marginRight: 6 }}
-              >
-                <Ionicons name="notifications-outline" size={20} color={colors.sidebarText} />
               </TouchableOpacity>
 
               {/* Avatar */}
@@ -177,7 +193,6 @@ export default function AppLayout() {
           <Stack.Screen name="analytics/index" />
           <Stack.Screen name="audit/index" />
           <Stack.Screen name="permissions/index" />
-          <Stack.Screen name="alertes/index" />
           <Stack.Screen name="legal/cgu" />
           <Stack.Screen name="legal/confidentialite" />
         </Stack>

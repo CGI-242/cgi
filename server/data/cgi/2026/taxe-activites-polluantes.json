@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "document": "Taxe sur les activités polluantes",
+    "pays": "République du Congo",
+    "edition": "2025",
+    "tome": "TFNC4-POLL",
+    "partie": "Textes fiscaux non codifiés",
+    "livre": null,
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.19. Taxe sur les activités polluantes",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution de la taxe",
+      "texte": [
+        "Art.1.- Il est institué au profit du budget de l'État une taxe sur les activités polluantes."
+      ],
+      "mots_cles": [
+        "taxe activités polluantes",
+        "budget État"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Personnes assujetties",
+      "texte": [
+        "Art.2.- Sont assujetties à la taxe sur les activités polluantes, les personnes physiques ou morales, publiques ou privées, qui exercent des activités polluantes, notamment :",
+        "• le rejet de substances polluantes dans l'air, l'eau ou le sol ;",
+        "• la production, l'importation, le stockage, le traitement ou l'élimination de déchets polluants ;",
+        "• l'exploitation de ressources naturelles ou d'installation générant des nuisances ou des risques environnementaux."
+      ],
+      "mots_cles": [
+        "personnes assujetties",
+        "rejet substances polluantes",
+        "déchets polluants",
+        "ressources naturelles",
+        "risques environnementaux"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Fait générateur",
+      "texte": [
+        "Art.3.- Le fait générateur de la taxe sur les activités polluantes est l'exercice effectif d'une activité polluante."
+      ],
+      "mots_cles": [
+        "fait générateur",
+        "exercice effectif",
+        "activité polluante"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Assiette et taux",
+      "texte": [
+        "Art.4.- La taxe sur les activités polluantes est assise sur les quantités produites, importées, extraites ou éliminées.",
+        "Les taux sont fixés comme suit :",
+        "• emballages plastiques : 500 FCFA/kg ;",
+        "• extraction de minerais : 5.000 FCFA/m³ ;",
+        "• déchets industriels dangereux : 2.500 FCFA/tonne ;",
+        "• lubrifiants, peintures, solvants, pesticides : 500 FCFA/litre."
+      ],
+      "mots_cles": [
+        "assiette",
+        "taux",
+        "emballages plastiques 500 FCFA/kg",
+        "minerais 5000 FCFA/m³",
+        "déchets industriels 2500 FCFA/tonne",
+        "lubrifiants 500 FCFA/litre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Liquidation et recouvrement",
+      "texte": [
+        "Art.5.- Les taxes sont liquidées, déclarées, contrôlées et recouvrées comme en matière des impôts et taxes prévus par le code général des impôts."
+      ],
+      "mots_cles": [
+        "liquidation",
+        "déclaration",
+        "contrôle",
+        "recouvrement",
+        "CGI"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Affectation du produit",
+      "texte": [
+        "Art.6.- Le produit de la taxe est reversé au Trésor public conformément à la réglementation en vigueur."
+      ],
+      "mots_cles": [
+        "produit taxe",
+        "Trésor public"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -2,14 +2,11 @@ import { useState, useEffect, useCallback } from "react";
 import {
   View,
   Text,
-  TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  Switch,
   Alert,
   Platform,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import {
   permissionsApi,
@@ -19,39 +16,9 @@ import {
 } from "@/lib/api/permissions";
 import { organizationApi, type OrgMember } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
-
-const PERMISSION_LABELS: Record<string, string> = {
-  "org.view": "Voir l'organisation",
-  "org.edit": "Modifier l'organisation",
-  "org.delete": "Supprimer l'organisation",
-  "org.members.view": "Voir les membres",
-  "org.members.invite": "Inviter des membres",
-  "org.members.remove": "Retirer des membres",
-  "org.members.role": "Changer les rôles",
-  "org.billing.view": "Voir la facturation",
-  "org.billing.manage": "Gérer la facturation",
-  "analytics.view": "Voir les analytiques",
-  "analytics.export": "Exporter les données",
-  "audit.view": "Voir les audits",
-  "chat.use": "Utiliser le chat IA",
-  "code.view": "Consulter le code CGI",
-  "simulator.use": "Utiliser les simulateurs",
-  "alerts.view": "Voir les alertes fiscales",
-};
-
-const ROLE_COLORS: Record<string, string> = {
-  OWNER: "#8b5cf6",
-  ADMIN: "#3b82f6",
-  MEMBER: "#16a34a",
-  VIEWER: "#6b7280",
-};
-
-const ROLE_LABELS: Record<string, string> = {
-  OWNER: "Propriétaire",
-  ADMIN: "Administrateur",
-  MEMBER: "Membre",
-  VIEWER: "Lecteur",
-};
+import MyPermissionsCard from "@/components/permissions/MyPermissionsCard";
+import MemberSelector from "@/components/permissions/MemberSelector";
+import PermissionToggles from "@/components/permissions/PermissionToggles";
 
 export default function PermissionsScreen() {
   const { colors } = useTheme();
@@ -179,31 +146,7 @@ export default function PermissionsScreen() {
 
         {/* Mes permissions */}
         {myPerms && (
-          <>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
-              MES PERMISSIONS
-            </Text>
-            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
-              <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 14 }}>
-                <Ionicons name="person-circle-outline" size={24} color={colors.text} style={{ marginRight: 10 }} />
-                <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, flex: 1 }}>Mon rôle</Text>
-                <View style={{ backgroundColor: `${ROLE_COLORS[myPerms.role] || "#6b7280"}20`, paddingHorizontal: 10, paddingVertical: 4 }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: ROLE_COLORS[myPerms.role] || "#6b7280" }}>
-                    {ROLE_LABELS[myPerms.role] || myPerms.role}
-                  </Text>
-                </View>
-              </View>
-              {available.map((perm) => {
-                const hasIt = myPerms.permissions.includes(perm.key);
-                return (
-                  <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6 }}>
-                    <Ionicons name={hasIt ? "checkmark-circle" : "close-circle"} size={18} color={hasIt ? "#16a34a" : "#dc2626"} style={{ marginRight: 10 }} />
-                    <Text style={{ fontSize: 13, color: colors.text, flex: 1 }}>{PERMISSION_LABELS[perm.key] || perm.key}</Text>
-                  </View>
-                );
-              })}
-            </View>
-          </>
+          <MyPermissionsCard myPerms={myPerms} available={available} colors={colors} />
         )}
 
         {/* Gestion membres (admin/owner only) */}
@@ -213,75 +156,24 @@ export default function PermissionsScreen() {
               PERMISSIONS DES MEMBRES
             </Text>
 
-            {/* Sélecteur membre */}
-            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, marginBottom: 12, overflow: "hidden" }}>
-              {members.map((member, index) => {
-                const isSelected = selectedMemberId === member.userId;
-                const roleColor = ROLE_COLORS[member.role] || "#6b7280";
-                return (
-                  <TouchableOpacity
-                    key={member.userId}
-                    onPress={() => setSelectedMemberId(isSelected ? null : member.userId)}
-                    style={{
-                      flexDirection: "row",
-                      alignItems: "center",
-                      padding: 12,
-                      backgroundColor: isSelected ? "#f0fdf4" : colors.card,
-                      borderTopWidth: index > 0 ? 1 : 0,
-                      borderTopColor: colors.background,
-                    }}
-                  >
-                    <View style={{ width: 32, height: 32, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 10 }}>
-                      <Text style={{ fontSize: 12, fontWeight: "700", color: roleColor }}>
-                        {(member.name || member.email).substring(0, 2).toUpperCase()}
-                      </Text>
-                    </View>
-                    <View style={{ flex: 1 }}>
-                      <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
-                      <Text style={{ fontSize: 11, color: colors.textMuted }}>{ROLE_LABELS[member.role] || member.role}</Text>
-                    </View>
-                    <Ionicons name={isSelected ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
-                  </TouchableOpacity>
-                );
-              })}
-            </View>
+            <MemberSelector
+              members={members}
+              selectedMemberId={selectedMemberId}
+              onSelect={setSelectedMemberId}
+              colors={colors}
+            />
 
-            {/* Permissions du membre sélectionné */}
             {selectedMemberId && memberEffective && (
-              <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
-                {available.map((perm) => {
-                  const hasIt = memberEffective.effective.includes(perm.key);
-                  return (
-                    <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8 }}>
-                      <View style={{ flex: 1 }}>
-                        <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
-                          {PERMISSION_LABELS[perm.key] || perm.key}
-                        </Text>
-                      </View>
-                      <Switch
-                        value={hasIt}
-                        onValueChange={() => handleTogglePermission(selectedMemberId, perm.key, hasIt)}
-                        disabled={!isOwner || actionLoading}
-                        trackColor={{ false: colors.border, true: colors.accent }}
-                        thumbColor={hasIt ? colors.primary : "#f4f3f4"}
-                      />
-                    </View>
-                  );
-                })}
-
-                {isOwner && (
-                  <TouchableOpacity
-                    onPress={() => handleReset(selectedMemberId)}
-                    disabled={actionLoading}
-                    style={{ backgroundColor: colors.background, paddingVertical: 10, alignItems: "center", marginTop: 12 }}
-                  >
-                    <View style={{ flexDirection: "row", alignItems: "center" }}>
-                      <Ionicons name="refresh-outline" size={16} color={colors.text} style={{ marginRight: 6 }} />
-                      <Text style={{ color: colors.text, fontWeight: "600", fontSize: 13 }}>Réinitialiser aux valeurs par défaut</Text>
-                    </View>
-                  </TouchableOpacity>
-                )}
-              </View>
+              <PermissionToggles
+                available={available}
+                memberEffective={memberEffective}
+                selectedMemberId={selectedMemberId}
+                isOwner={isOwner}
+                actionLoading={actionLoading}
+                onToggle={handleTogglePermission}
+                onReset={handleReset}
+                colors={colors}
+              />
             )}
           </>
         )}

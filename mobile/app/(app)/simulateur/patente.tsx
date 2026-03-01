@@ -11,6 +11,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { calculerPatente, type PatenteInput } from "@/lib/services/patente.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
+import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -152,7 +153,7 @@ export default function PatenteScreen() {
               {/* Tranches */}
               {result.tranches.length > 0 && (
                 <>
-                  <SectionHeader label={t("simulateur.patente.trancheDetail")} colors={colors} />
+                  <SimulateurSection label={t("simulateur.patente.trancheDetail")} colors={colors} />
                   {result.tranches.map((tr, i) => (
                     <View
                       key={tr.tranche}
@@ -182,7 +183,7 @@ export default function PatenteScreen() {
               )}
 
               {/* Reductions */}
-              <SectionHeader label={t("simulateur.patente.reductions")} colors={colors} />
+              <SimulateurSection label={t("simulateur.patente.reductions")} colors={colors} />
               {result.reductionStandBy > 0 && (
                 <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color="#b91c1c" />
               )}
@@ -226,14 +227,6 @@ export default function PatenteScreen() {
           )}
         </ScrollView>
       </View>
-    </View>
-  );
-}
-
-function SectionHeader({ label, colors }: { label: string; colors: any }) {
-  return (
-    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
     </View>
   );
 }

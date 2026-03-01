@@ -11,6 +11,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { calculerIS, type IsInput } from "@/lib/services/is.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
+import SimulateurSection from "@/components/simulateur/SimulateurSection";
+import NumberField from "@/components/simulateur/NumberField";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -87,7 +89,7 @@ export default function IsScreen() {
           {result ? (
             <View>
               {/* Minimum de perception */}
-              <SectionHeader label={t("simulateur.is.minPerception")} colors={colors} />
+              <SimulateurSection label={t("simulateur.is.minPerception")} colors={colors} />
               <TableRow label={t("simulateur.is.base")} value={formatNumber(result.baseMinimumPerception)} />
               <TableRow label={t("simulateur.is.rateApplied")} value={`${result.tauxMinimum}%`} bg={colors.background} />
               <View style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
@@ -98,7 +100,7 @@ export default function IsScreen() {
               </View>
 
               {/* 4 acomptes */}
-              <SectionHeader label={t("simulateur.is.quarterlyInstalments")} colors={colors} />
+              <SimulateurSection label={t("simulateur.is.quarterlyInstalments")} colors={colors} />
               {result.acomptes.map((a) => (
                 <TableRow key={a.label} label={a.label} value={formatNumber(a.montant)} />
               ))}
@@ -123,43 +125,6 @@ export default function IsScreen() {
             </View>
           )}
         </ScrollView>
-      </View>
-    </View>
-  );
-}
-
-function SectionHeader({ label, colors }: { label: string; colors: any }) {
-  return (
-    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
-    </View>
-  );
-}
-
-function NumberField({
-  label,
-  value,
-  onChange,
-  colors,
-}: {
-  label: string;
-  value: string;
-  onChange: (v: string) => void;
-  colors: any;
-}) {
-  return (
-    <View style={{ marginBottom: 8 }}>
-      <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{label}</Text>
-      <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
-        <TextInput
-          style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}
-          value={value}
-          onChangeText={(v) => onChange(formatInputNumber(v))}
-          keyboardType="numeric"
-          placeholder="0"
-          placeholderTextColor={colors.textMuted}
-        />
-        <Text style={{ fontSize: 10, color: colors.textMuted }}>FCFA</Text>
       </View>
     </View>
   );

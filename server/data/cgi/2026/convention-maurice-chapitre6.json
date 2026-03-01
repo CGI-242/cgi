@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "document": "Convention fiscale Congo-Maurice",
+    "pays": "République du Congo / République de Maurice",
+    "edition": "2025",
+    "tome": "CONV-MU",
+    "partie": null,
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Chapitre 6 - Dispositions finales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 28",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "1) Chacun des États contractants notifiera à l'autre État contractant l'accomplissement des procédures requises en ce qui concerne la mise en vigueur de la présente Convention. La Convention entrera en vigueur à la date de la réception de la dernière de ces notifications.",
+        "2) Les dispositions de la Convention s'appliquent pour la première fois :",
+        "a) à Maurice, sur le revenu des années fiscales commençant à partir du 1er janvier qui suit immédiatement la date de l'entrée en vigueur de la Convention ;",
+        "b) au Congo, sur le revenu des années fiscales commençant à partir du 1er janvier et qui suit immédiatement la date de l'entrée en vigueur de la Convention."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Dénonciation",
+      "texte": [
+        "La présente Convention demeurera en vigueur tant qu'elle n'aura pas été dénoncée par un État contractant. Chaque État contractant peut dénoncer la Convention par écrit et par la voie diplomatique à l'autre État contractant, au plus tard le 30 juin de chaque année civile postérieure à la cinquième année suivant celle de l'entrée en vigueur de la Convention, dans ce cas, la Convention s'appliquera pour la dernière fois :",
+        "a) à Maurice, sur le revenu de l'année fiscale commençant à partir du 1er janvier qui suit immédiatement la notification de la dénonciation ;",
+        "b) au Congo, sur le revenu de l'année fiscale commençant à partir du 1er janvier qui suit immédiatement la notification de la dénonciation."
+      ],
+      "mots_cles": [],
+      "statut": "en vigueur"
+    }
+  ]
+}

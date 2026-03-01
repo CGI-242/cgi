@@ -7,7 +7,7 @@
     "partie": 1,
     "livre": 1,
     "chapitre": 2,
-    "chapitre_titre": "Impôt sur les bénéfices d'affaires (IBA)",
+    "chapitre_titre": "Impôts sur les revenus",
     "page_source": 107,
     "base_juridique": "Directive n°0119/25-UEAC-177-CM-42 du 09 janvier 2025"
   },
@@ -25,7 +25,7 @@
         "activité lucrative"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Champ d'application",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -48,7 +48,7 @@
         "propriété intellectuelle"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Champ d'application",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -70,7 +70,8 @@
         "3) Les personnes visées au paragraphe 1-b) du présent article, percevant, des entreprises installées au Congo, des droits d'auteur ou des produits de titres, soit de la concession de licences d'exploitation de brevets, soit de la cession ou de la concession des marques de fabrique, procédés ou formules de fabrication, que le bénéficiaire de ces droits ou produits soit l'écrivain, le compositeur ou l'inventeur lui-même ou qu'il les ait acquis à titre gratuit ou onéreux ainsi que les revenus des professions non commerciales.",
         "La présente disposition s'applique également lorsque le bénéficiaire des droits ou produits est une société quelle qu'en soit la forme.",
         "4) Les personnes physiques de nationalité congolaise ou étrangère disposant ou non d'une résidence habituelle au Congo, qui recueillent des bénéfices ou revenus dont l'imposition est attribuée au Congo par une convention internationale relative aux doubles impositions.",
-        "5) Les personnes physiques qui sont désignées comme occupant les fonctions de directeurs, représentants, fondés de pouvoir, gérants de succursales de sociétés étrangères, immatriculées en République du Congo, sont présumées avoir leur résidence fiscale au Congo quand bien même elles habiteraient hors du Congo."      ],
+        "5) Les personnes physiques qui sont désignées comme occupant les fonctions de directeurs, représentants, fondés de pouvoir, gérants de succursales de sociétés étrangères, immatriculées en République du Congo, sont présumées avoir leur résidence fiscale au Congo quand bien même elles habiteraient hors du Congo."
+      ],
       "mots_cles": [
         "résidence fiscale",
         "domicile fiscal",
@@ -79,7 +80,7 @@
         "personnes imposables"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Champ d'application",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -94,7 +95,7 @@
         "exploitation au Congo"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Champ d'application",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -117,7 +118,7 @@
         "report déficitaire"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Bénéfice imposable",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
       "annee_application": 2026
     },
     {
@@ -139,7 +140,7 @@
         "frais de représentation"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Bénéfice imposable",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
       "annee_application": 2026
     },
     {
@@ -156,7 +157,7 @@
         "professions libérales"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Bénéfice imposable",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
       "annee_application": 2026
     },
     {
@@ -178,7 +179,7 @@
         "impôt minimum forfaitaire"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Modalités d'imposition",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -197,7 +198,7 @@
         "SARL"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Modalités d'imposition",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -212,7 +213,7 @@
         "article 183 CGI"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Modalités d'imposition",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -251,7 +252,7 @@
         "obligations comptables"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -274,7 +275,7 @@
         "régime forfaitaire"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -293,7 +294,7 @@
         "recours contentieux"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -314,7 +315,7 @@
         "première année"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -330,7 +331,7 @@
         "déclaration trimestrielle"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -346,7 +347,7 @@
         "défaut de déclaration"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -362,7 +363,7 @@
         "article 100"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -386,7 +387,7 @@
         "sous-traitants pétroliers"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Régime des petites et très petites entreprises",
+      "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
@@ -413,7 +414,7 @@
         "CEMAC"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Champ d'application",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -439,7 +440,7 @@
         "IRCM"
       ],
       "statut": "en vigueur",
-      "section": "§1 : Revenus des valeurs mobilières",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §1 Revenus des valeurs mobilières",
       "annee_application": 2026
     },
     {
@@ -463,7 +464,7 @@
         "capital amorti"
       ],
       "statut": "en vigueur",
-      "section": "§1 : Revenus des valeurs mobilières",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §1 Revenus des valeurs mobilières",
       "annee_application": 2026
     },
     {
@@ -484,7 +485,7 @@
         "primes de remboursement"
       ],
       "statut": "en vigueur",
-      "section": "§2 : Revenus des obligations",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §2 Revenus des obligations",
       "annee_application": 2026
     },
     {
@@ -509,7 +510,7 @@
         "intérêts"
       ],
       "statut": "en vigueur",
-      "section": "§3 : Revenus des créances, dépôts et cautionnements",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §3 Revenus des créances, dépôts et cautionnements",
       "annee_application": 2026
     },
     {
@@ -529,7 +530,7 @@
         "succession"
       ],
       "statut": "en vigueur",
-      "section": "§4 : Plus-values mobilières",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §4 Plus-values mobilières",
       "annee_application": 2026
     },
     {
@@ -547,7 +548,7 @@
         "parts sociales"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 2 : Exonérations",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
@@ -567,7 +568,7 @@
         "non-résident"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 3 : Territorialité",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 3 : Territorialité",
       "annee_application": 2026
     },
     {
@@ -593,7 +594,7 @@
         "établissements stables"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 4 : Fait générateur et exigibilité",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 4 : Fait générateur et exigibilité",
       "annee_application": 2026
     },
     {
@@ -620,7 +621,7 @@
         "moins-values"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 5 : Base d'imposition",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 5 : Base d'imposition",
       "annee_application": 2026
     },
     {
@@ -637,7 +638,7 @@
         "revenus occultes"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 6 : Modalités d'imposition",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 6 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -659,7 +660,7 @@
         "non-résidents"
       ],
       "statut": "en vigueur",
-      "section": "Sec. 6 : Modalités d'imposition",
+      "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 6 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -681,7 +682,7 @@
         "plus-values immobilières"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -698,7 +699,7 @@
         "sociétés non soumises à l'IS"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -724,7 +725,7 @@
         "société à prépondérance immobilière"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -745,7 +746,7 @@
         "collectivités"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
@@ -763,7 +764,7 @@
         "cession"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 3 : Territorialité",
       "annee_application": 2026
     },
     {
@@ -781,7 +782,7 @@
         "cession"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 4 : Fait générateur et exigibilité",
       "annee_application": 2026
     },
     {
@@ -796,7 +797,7 @@
         "propriétaire"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
       "annee_application": 2026
     },
     {
@@ -815,7 +816,7 @@
         "travaux"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
       "annee_application": 2026
     },
     {
@@ -831,7 +832,7 @@
         "double imposition"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
       "annee_application": 2026
     },
     {
@@ -856,7 +857,7 @@
         "moins-values"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 6 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -893,7 +894,7 @@
         "charge déductible"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Impôt sur les revenus fonciers (IRF)",
+      "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 6 : Modalités d'imposition",
       "annee_application": 2026
     },
     {
@@ -912,7 +913,7 @@
         "dirigeants"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
@@ -945,7 +946,7 @@
         "prime d'intéressement"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
@@ -965,7 +966,7 @@
         "réciprocité"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
@@ -980,7 +981,7 @@
         "incitation à l'embauche"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
@@ -1006,7 +1007,7 @@
         "rentes viagères"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 3 : Territorialité",
       "annee_application": 2026
     },
     {
@@ -1023,7 +1024,7 @@
         "acomptes"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 4 : Fait générateur et exigibilité",
       "annee_application": 2026
     },
     {
@@ -1051,7 +1052,7 @@
         "revenus de source étrangère"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 5 : Base d'imposition",
       "annee_application": 2026
     },
     {
@@ -1067,7 +1068,7 @@
         "déclaration annuelle"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1084,7 +1085,7 @@
         "situation matrimoniale"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1115,7 +1116,7 @@
         "enfants à charge"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1140,7 +1141,7 @@
         "affectation"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1161,7 +1162,7 @@
         "adoption"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1177,7 +1178,7 @@
         "charge fiscale"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1195,7 +1196,7 @@
         "charges de famille"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1219,7 +1220,7 @@
         "retenue à la source"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
       "annee_application": 2026
     },
     {
@@ -1238,7 +1239,7 @@
         "revenus source étrangère"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 7 : Obligations déclaratives",
       "annee_application": 2026
     },
     {
@@ -1257,7 +1258,7 @@
         "IRPP"
       ],
       "statut": "en vigueur",
-      "section": "Section 7 : Impôt sur les traitements et salaires (ITS)",
+      "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 7 : Obligations déclaratives",
       "annee_application": 2026
     }
   ]

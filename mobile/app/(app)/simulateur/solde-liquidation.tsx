@@ -14,6 +14,8 @@ import {
 } from "@/lib/services/solde-liquidation.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
+import SimulateurSection from "@/components/simulateur/SimulateurSection";
+import NumberField from "@/components/simulateur/NumberField";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -119,7 +121,7 @@ export default function SoldeLiquidationScreen() {
           {result ? (
             <View>
               {/* IS calcule */}
-              <SectionHeader label={t("simulateur.solde.isCalculated")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.isCalculated")} colors={colors} />
               <TableRow label={t("simulateur.solde.fiscalResult")} value={formatNumber(result.resultatFiscal)} />
               <TableRow label={t("simulateur.solde.roundedProfit")} value={formatNumber(result.beneficeArrondi)} bg={colors.background} />
               <TableRow label={`${t("simulateur.solde.isRate")} (${result.tauxIS}%)`} value={`${result.tauxIS}%`} bg={colors.background} />
@@ -131,7 +133,7 @@ export default function SoldeLiquidationScreen() {
               </View>
 
               {/* Detail acomptes */}
-              <SectionHeader label={t("simulateur.solde.instalmentsPaidTitle")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.instalmentsPaidTitle")} colors={colors} />
               {result.detailAcomptes.map((a) => (
                 <TableRow key={a.label} label={a.label} value={a.montant > 0 ? formatNumber(a.montant) : "\u2014"} />
               ))}
@@ -143,7 +145,7 @@ export default function SoldeLiquidationScreen() {
               </View>
 
               {/* Solde */}
-              <SectionHeader label={t("simulateur.solde.settlementBalance")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.settlementBalance")} colors={colors} />
               <TableRow label={t("simulateur.solde.isMinusInstalments")} value={`${formatNumber(result.isCalcule)} - ${formatNumber(result.totalAcomptes)}`} bg={colors.background} />
 
               {result.creditImpot ? (
@@ -177,43 +179,6 @@ export default function SoldeLiquidationScreen() {
             </View>
           )}
         </ScrollView>
-      </View>
-    </View>
-  );
-}
-
-function SectionHeader({ label, colors }: { label: string; colors: any }) {
-  return (
-    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
-    </View>
-  );
-}
-
-function NumberField({
-  label,
-  value,
-  onChange,
-  colors,
-}: {
-  label: string;
-  value: string;
-  onChange: (v: string) => void;
-  colors: any;
-}) {
-  return (
-    <View style={{ marginBottom: 8 }}>
-      <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{label}</Text>
-      <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
-        <TextInput
-          style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}
-          value={value}
-          onChangeText={(v) => onChange(formatInputNumber(v))}
-          keyboardType="numeric"
-          placeholder="0"
-          placeholderTextColor={colors.textMuted}
-        />
-        <Text style={{ fontSize: 10, color: colors.textMuted }}>FCFA</Text>
       </View>
     </View>
   );

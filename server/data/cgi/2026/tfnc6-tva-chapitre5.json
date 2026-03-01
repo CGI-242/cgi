@@ -6,47 +6,356 @@
     "tome": "TFNC6",
     "partie": null,
     "livre": null,
-    "chapitre": 5,
-    "chapitre_titre": "Taux",
+    "chapitre": "5",
+    "chapitre_titre": "Modalités pratiques",
     "section": null,
     "section_titre": null,
     "page_source": null
   },
   "articles": [
     {
-      "article": "Art. 22",
-      "titre": "Taux de TVA",
+      "article": "Art. 30",
+      "titre": "Enregistrement et NIU",
       "texte": [
-        "Art.22.- (L.F.2025) 1) Les taux de TVA sont applicables aux marchandises et services produits localement qu'aux biens importés.",
-        "2) Les taux de la TVA sont fixés de la manière suivante :",
-        "a) Taux général : 18 % applicable à toutes les opérations taxables à l'exclusion des opérations soumises aux taux réduit et zéro ;",
-        "b) Taux zéro (0 %), applicable aux exportations des produits taxables ayant fait l'objet de déclaration visée par les services des douanes et aux transports internationaux et à leurs accessoires et à la vente locale du bois débité ;",
-        "c) Taux réduit : 5 % applicable à certains biens de consommations courantes, ci-après cités en annexe 5 ainsi que le gas-oil et lubrifiants importés des pays limitrophes du Congo par les sociétés forestières résidentes ;",
-        "• à la vente et à l'importation des produits suivants :",
-        "- 04.01 Lait et crème de lait, non concentrés ni additionnés de sucre ou d'autres édulcorants",
-        "- 04.02 Lait et crème de lait, concentrés ou additionnés de sucre ou d'autres édulcorants",
-        "- 19.05.90.10 Produits de la boulangerie fine, de la pâtisserie ou de la biscuiterie, même additionnés de cacao en toutes proportions",
-        "- 19.05.90.90 Autres produits de la boulangerie",
-        "- 10.06 Riz",
-        "- 11.01.00.10 Farine de froment",
-        "• aux ventes et aux acquisitions des biens et services faites par les développeurs et les entreprises installées dans les zones économiques spéciales."
+        "Art.30.- 1) Un redevable ne peut se prévaloir de la qualité d'assujetti qu'après enregistrement et attribution d'un numéro d'identification unique (NIU).",
+        "2) L'administration fiscale publie en ligne les numéros d'identification unique des contribuables en précisant notamment leur assujettissement à la TVA, leur dénomination sociale, leur adresse et leur résidence fiscale. Cette liste contribue à la certification des factures ; elle est datée, archivée et régulièrement mise à jour."
       ],
       "mots_cles": [
+        "enregistrement",
+        "NIU",
+        "numéro identification unique",
+        "qualité assujetti",
+        "publication en ligne",
+        "assujettissement TVA",
+        "dénomination sociale",
+        "certification factures"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "État détaillé des déductions",
+      "texte": [
+        "Art.31.- (L.F.2025) L'exercice du droit à déduction est subordonné à la présentation d'un état détaillé qui doit être joint à la déclaration de TVA. Cet état, dont le modèle est prescrit par l'administration, doit comporter les indications suivantes :",
+        "A. En ce qui concerne les déductions se rapportant aux achats locaux et aux prestations de services :",
+        "• le nom ou la raison sociale du fournisseur ;",
+        "• le numéro d'identification unique (NIU) du fournisseur ;",
+        "• le numéro, la date et le montant de la facture hors taxes ;",
+        "• le montant de la taxe déductible facturée par le fournisseur ;",
+        "• la nature de biens et services ;",
+        "• l'adresse de facturation ;",
+        "• les éléments de sécurité liés au système de facturation électronique certifié (SFEC), précisé par voie réglementaire.",
+        "B. En ce qui concerne les importations :",
+        "• le numéro, la date et la valeur imposable en douanes de la déclaration de mise à la consommation ou de sortie d'entrepôt ;",
+        "• la nature des biens importés ;",
+        "• le numéro, la date et le montant de la quittance délivrée par les services de douanes.",
+        "Outre l'état détaillé prévu ci-dessus, les assujettis à la TVA fournissent au moment du dépôt de la déclaration mensuelle du chiffre d'affaires, l'extrait de la balance de chaque compte de comptabilisation de la TVA suivant le plan comptable OHADA, adaptée à chaque entreprise.",
+        "Le défaut de production de ces documents entraîne la réintégration d'office des déductions effectuées."
+      ],
+      "mots_cles": [
+        "état détaillé déductions",
+        "déclaration TVA",
+        "achats locaux",
+        "prestations services",
+        "NIU fournisseur",
+        "facture HT",
+        "taxe déductible",
+        "SFEC",
+        "facturation électronique certifié",
+        "importations",
+        "déclaration mise consommation",
+        "quittance douanes",
+        "balance comptable OHADA",
+        "réintégration déductions"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Obligation de facturation et mentions obligatoires",
+      "texte": [
+        "Art.32.- 1) Quel que soit leur régime d'imposition, les assujettis doivent délivrer une facture pour les biens livrés ou les services rendus, ainsi que pour les acomptes perçus au titre de ces opérations et donnant lieu à exigibilité de la taxe.",
+        "2) La facture doit faire apparaître distinctement :",
+        "• la date et le numéro de la facture dans une série continue ;",
+        "• le nom, l'adresse précise, la raison sociale, la dénomination, le numéro d'identification unique, le numéro d'immatriculation au registre du commerce et de crédit mobilier ou au registre des métiers de l'assujetti qui délivre la facture, ainsi que son régime d'imposition ;",
+        "• le taux de la TVA appliquée, le prix hors taxe de l'opération, la taxe correspondante et le montant toutes taxes comprises ;",
+        "• le nom, l'adresse et le numéro d'identification unique du client ;",
+        "• la désignation et la quantité des biens ou prestations ;",
+        "• les références bancaires ;",
+        "• le régime d'imposition ;",
+        "• les services des impôts dont il dépend pour ses obligations fiscales.",
+        "3) Pour les assujettis partiels, les opérations soumises à la TVA doivent être distinguées de celles qui n'y sont pas soumises. Pour chaque opération ayant donné lieu à l'établissement d'une facture, doivent être indiqués :",
+        "• le montant non taxable de l'opération ;",
+        "• le montant taxable, le taux applicable et le montant de la TVA."
+      ],
+      "mots_cles": [
+        "obligation facturation",
+        "régime imposition",
+        "biens livrés",
+        "services rendus",
+        "acomptes",
+        "exigibilité taxe",
+        "mentions obligatoires",
+        "numéro facture série continue",
+        "NIU",
+        "RCCM",
+        "registre métiers",
         "taux TVA",
-        "taux général 18%",
-        "taux zéro 0%",
-        "exportations",
-        "transports internationaux",
-        "bois débité",
-        "taux réduit 5%",
-        "consommations courantes",
-        "gas-oil lubrifiants",
-        "sociétés forestières",
-        "lait crème",
-        "boulangerie pâtisserie",
-        "riz",
-        "farine froment",
-        "zones économiques spéciales"
+        "prix HT",
+        "TTC",
+        "références bancaires",
+        "service impôts",
+        "assujettis partiels",
+        "montant non taxable",
+        "montant taxable"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Obligations comptables",
+      "texte": [
+        "Art.33.- 1) Les assujettis à la TVA, quel que soit leur régime d'imposition, doivent tenir une comptabilité conforme au système normal du SYSCOHADA, comportant :",
+        "• un livre journal cotés et paraphés ;",
+        "• un journal des ventes ;",
+        "• un journal des achats ;",
+        "• un livre d'inventaire ;",
+        "• un grand livre des comptes ;",
+        "• une balance des comptes.",
+        "2) La comptabilité doit être disponible au Congo, au siège social ou au principal établissement de l'entreprise. Le lieu de tenue de la comptabilité détermine la résidence fiscale à laquelle l'entreprise est rattachée."
+      ],
+      "mots_cles": [
+        "obligations comptables",
+        "SYSCOHADA",
+        "système normal",
+        "livre journal coté paraphé",
+        "journal ventes",
+        "journal achats",
+        "livre inventaire",
+        "grand livre",
+        "balance comptes",
+        "comptabilité au Congo",
+        "siège social",
+        "principal établissement",
+        "résidence fiscale"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34 ter",
+      "titre": "Facturation électronique certifiée - Sanction",
+      "texte": [
+        "Art.34 ter.- (L.F.2025) La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.",
+        "L'administration fiscale est chargée de la mise en œuvre du système de facturation électronique certifiée."
+      ],
+      "mots_cles": [
+        "facturation électronique certifiée",
+        "SFEC",
+        "transaction non conforme",
+        "TVA non déductible",
+        "administration fiscale",
+        "mise en œuvre"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Déclaration et paiement de la TVA",
+      "texte": [
+        "Art.35.- 1) Tout redevable de la TVA est tenu de souscrire, auprès de sa résidence fiscale, une déclaration conforme au modèle prescrit par l'administration faisant apparaître la taxe collectée et la taxe déductible sur les opérations du mois précédent.",
+        "2) La taxe exigible est payée directement et spontanément chaque mois.",
+        "3) L'administration fiscale est chargée du recouvrement et du contrôle de la TVA. La déclaration des opérations du mois donné doit être déposée au plus tard le 20 du mois suivant, en double exemplaire, accompagné du paiement de la TVA qui est ainsi reversée spontanément.",
+        "4) La déclaration qui concerne les opérations du mois précédent doit être souscrite, même si aucune affaire n'a été réalisée au cours du mois concerné et est, dans ce cas, revêtue de la mention « NEANT ».",
+        "5) Les exportateurs sont tenus d'annexer à leur déclaration mensuelle les références douanières des exportations effectuées ainsi que celles du rapatriement des fonds sur les ventes à l'exportation dont le remboursement est demandé.",
+        "6) Les exportateurs assujettis à la TVA qui réalisent plus de 80 % de leur vente à l'étranger sont autorisés à retenir la TVA qui leur est facturée sur l'acquisition des biens et services ouvrant droit à déduction."
+      ],
+      "mots_cles": [
+        "déclaration TVA",
+        "résidence fiscale",
+        "taxe collectée",
+        "taxe déductible",
+        "paiement spontané mensuel",
+        "recouvrement contrôle",
+        "délai 20 du mois suivant",
+        "double exemplaire",
+        "déclaration NEANT",
+        "exportateurs",
+        "références douanières",
+        "rapatriement fonds",
+        "exportateurs 80%",
+        "retenue TVA"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 35 bis (L.F. 2026)",
+      "titre": "Obligations des comptables publics en matière de TVA",
+      "texte": [
+        "(L.F. 2026 - nouveau) Les comptables publics sont tenus de prélever le montant de la TVA qui leur est facturé et de le reverser immédiatement dans les conditions fixées à l'article 35.",
+        "Ils sont également tenus de transmettre mensuellement à l'administration fiscale l'état détaillé des sommes versées à leurs fournisseurs et délivrer au fournisseur redevable de la TVA une attestation justifiant le montant de la retenue à la source, en vue de faire valoir son droit à déduction.",
+        "L'inobservation de ces obligations met à la charge des comptables publics concernés le paiement des impôts et pénalités dont leurs fournisseurs sont les débiteurs réels."
+      ],
+      "mots_cles": [
+        "comptables publics",
+        "prélèvement TVA",
+        "reversement immédiat",
+        "article 35",
+        "état détaillé mensuel",
+        "fournisseurs",
+        "attestation retenue source",
+        "droit à déduction",
+        "inobservation obligations",
+        "pénalités",
+        "débiteurs réels"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Déclaration régime réel",
+      "texte": [
+        "Art.36.- Les redevables soumis au régime réel d'imposition sont tenus de déposer mensuellement leur déclaration de recettes réalisée indiquant le montant total des opérations réalisées et le détail des opérations taxables."
+      ],
+      "mots_cles": [
+        "régime réel",
+        "déclaration mensuelle",
+        "recettes",
+        "opérations réalisées",
+        "opérations taxables"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "TVA à l'importation",
+      "texte": [
+        "Art.37.- 1) La TVA perçue à l'importation est liquidée par l'Administration des douanes et des droits indirects et son recouvrement est assuré, soit par l'Administration Douanière, soit le cas échéant, par les comptables du Trésor.",
+        "2) La TVA à l'importation doit être obligatoirement déclarée et versée avant l'enlèvement de la marchandise.",
+        "Toutefois, la TVA à l'importation n'est pas exigible au vu des déclarations établies dans le cadre des régimes douaniers suspensifs ou sous le régime de l'enlèvement direct.",
+        "L'administration des douanes est tenue de transmettre systématiquement à l'administration fiscale, les listes des assujettis à la TVA bénéficiaires des crédits d'enlèvement.",
+        "Pour autoriser la déduction de la TVA, doivent être fournis pour chaque opération :",
+        "• une déclaration en douanes mentionnant le NIU de l'assujetti ;",
+        "• une quittance délivrée au nom de l'assujetti par les services de recouvrement donnant le montant de la TVA acquittée.",
+        "Par dérogation aux dispositions qui précèdent, les entreprises assujetties qui réalisent des investissements productifs pour des montants supérieurs à 100.000.000 FCFA peuvent différer le paiement de la TVA à l'importation à la date du dépôt de la déclaration mensuelle du mois suivant celui de l'importation.",
+        "La TVA dont le paiement est reporté ne peut concerner que les biens d'investissements prévus dans le cadre d'un plan établi par l'assujetti et visé par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "TVA importation",
+        "administration douanes",
+        "droits indirects",
+        "comptables Trésor",
+        "enlèvement marchandise",
+        "régimes douaniers suspensifs",
+        "enlèvement direct",
+        "crédits enlèvement",
+        "déclaration douanes NIU",
+        "quittance",
+        "investissements productifs",
+        "100 000 000 FCFA",
+        "report paiement TVA",
+        "plan investissement visé"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Responsabilité des receveurs et AMR",
+      "texte": [
+        "Art.38.- Les receveurs sont responsables du recouvrement des impositions dont ils ont la charge.",
+        "Un avis de mise en recouvrement est établi par l'ordonnateur secondaire, responsable de la résidence fiscale du redevable, lorsque les sommes dues ne sont pas acquittées au terme du délai prescrit par la loi ou à l'issue d'un contrôle fiscal."
+      ],
+      "mots_cles": [
+        "receveurs",
+        "responsabilité recouvrement",
+        "impositions",
+        "avis mise en recouvrement",
+        "AMR",
+        "ordonnateur secondaire",
+        "résidence fiscale",
+        "délai prescrit",
+        "contrôle fiscal"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 38-A",
+      "titre": "Centimes additionnels à la TVA",
+      "texte": [
+        "Art.38-A.- 1) Les centimes additionnels sont applicables aux opérations soumises à la TVA.",
+        "2) Le fait générateur et l'exigibilité des centimes additionnels sont définis comme en matière de TVA.",
+        "3) La base d'imposition aux centimes additionnels est le montant de la TVA collectée.",
+        "4) Le taux applicable aux centimes additionnels est de 5 %.",
+        "5) Les centimes additionnels ci-dessus définis sont perçus et collectés par l'administration fiscale au profit des collectivités locales.",
+        "6) Les centimes additionnels à la TVA ne donnent pas droit à déduction."
+      ],
+      "mots_cles": [
+        "centimes additionnels",
+        "5% TVA collectée",
+        "fait générateur",
+        "exigibilité",
+        "collectivités locales",
+        "non déductibles"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Crédit de TVA et remboursement",
+      "texte": [
+        "Art.39.- 1) Lorsque le montant de la taxe déductible au titre d'un mois est supérieur à celui de la taxe exigible, l'excédent constitue un crédit de TVA imputable sur la taxe exigible pour la période suivante.",
+        "Les crédits de TVA générés par le mécanisme des déductions sont imputables sur la TVA due pour les périodes ultérieures jusqu'à épuisement, sans limitation de délai.",
+        "2) Les crédits de TVA dûment justifiés font l'objet de remboursement, sous certaines conditions prévues ci-dessous, aux assujettis personnes morales dans un délai qui ne peut être supérieur à trois mois à compter du dépôt de la demande de remboursement.",
+        "3) Les demandes de remboursement effectuées par les assujettis ci-dessous sont traitées dans un délai qui ne peut dépasser deux mois :",
+        "• aux exportateurs qui réalisent plus de 80 % de leur chiffre d'affaires sur les ventes à l'étranger ;",
+        "• aux entreprises en situation de crédits structurels du fait de retenues à la source ;",
+        "• aux missions diplomatiques ou consulaires, sous réserve de réciprocité ;",
+        "• aux entreprises en cessation d'activités.",
+        "4) Les demandes de remboursement ne sont recevables que si le contribuable est à jour de toutes ses obligations fiscales.",
+        "5) Pour les exportateurs, les demandes de remboursement doivent en outre être accompagnées des attestations d'exportation et des références du rapatriement des fonds correspondants.",
+        "Pour les contribuables exportateurs ne remplissant pas les critères visés au tiret b) du paragraphe 2 de l'article 34, le montant du crédit de TVA à rembourser est limité au montant de TVA calculé effectivement par application du taux en vigueur au montant des exportations réalisées au cours du mois.",
+        "6) Le crédit de la TVA dont le remboursement a été demandé ne peut donner lieu à imputation dans la déclaration du mois suivant. Ce crédit est automatiquement annulé, notamment lorsque le remboursement a été rejeté par l'administration fiscale."
+      ],
+      "mots_cles": [
+        "crédit TVA",
+        "taxe déductible supérieure",
+        "excédent",
+        "imputation",
+        "périodes ultérieures",
+        "sans limitation délai",
+        "remboursement",
+        "personnes morales",
+        "délai 3 mois",
+        "demande remboursement",
+        "délai 2 mois",
+        "exportateurs 80%",
+        "crédits structurels",
+        "retenues source",
+        "missions diplomatiques",
+        "cessation activités",
+        "obligations fiscales à jour",
+        "attestations exportation",
+        "rapatriement fonds",
+        "annulation crédit"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Compte d'attente BEAC pour remboursement crédit TVA",
+      "texte": [
+        "Art.40.- Par dérogation au principe du compte unique du Trésor, il est créé, à la BEAC, un compte d'attente spécifique pour les recettes provisoires de TVA aux fins de remboursement de Crédit de TVA.",
+        "Il est affecté à ce compte d'attente spécifique 20 % des recettes de TVA perçues en douane sur les importations.",
+        "Si le solde annuel de ce compte est positif, les recettes de TVA sont considérées comme définitives et ce solde est reversé au Trésor Public. Les modalités de fonctionnement du compte d'attente font l'objet d'une convention entre le Ministre en charge des finances et la BEAC."
+      ],
+      "mots_cles": [
+        "compte attente BEAC",
+        "dérogation compte unique Trésor",
+        "recettes provisoires TVA",
+        "remboursement crédit TVA",
+        "20% recettes TVA douane",
+        "solde annuel positif",
+        "Trésor Public",
+        "convention Ministre finances BEAC"
       ],
       "statut": "en vigueur"
     }

@@ -29,10 +29,11 @@ export const FISCAL_AGENTS: FiscalAgent[] = [
       /\b(report|d[eé]ficit)\s*(fiscal|d[eé]ficitaire)?\b/i,
     ],
     ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['IS', 'sociétés', 'bénéfice'] },
-    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Sociétés (IS) du CGI 2026.
+    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Sociétés (IS) — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 1 à 92K).
 Focus sur : Art. 86A (taux), Art. 86B (minimum de perception), Art. 86C (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
 Taux principal : 28%. Taux microfinance/enseignement : 25%. Taux non-résidents CEMAC : 35%.
-Acomptes IS : 15 février, 15 mai, 15 août, 15 novembre.`,
+Acomptes IS : 15 février, 15 mai, 15 août, 15 novembre.
+TOUJOURS citer : "Chapitre 1 (Impôt sur les sociétés), Livre 1, Tome 1" dans la référence.`,
   },
   {
     id: 'agent-its',
@@ -47,10 +48,11 @@ Acomptes IS : 15 février, 15 mai, 15 août, 15 novembre.`,
       /\bart\.?\s*(115|116)\b/i,
     ],
     ragPriority: { tomes: ['1'], keywords: ['ITS', 'salaires', 'barème', 'retenue'] },
-    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Traitements et Salaires (ITS) du CGI 2026.
-Focus sur : Art. 116 (barème ITS), Art. 115 (avantages en nature).
+    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Traitements et Salaires (ITS) — Chapitre 2, Section 4, Livre 1, Tome 1 du CGI 2026 (Art. 114 à 116I).
+Focus sur : Art. 116G (barème ITS), Art. 116H (retenue), Art. 115 (avantages en nature).
 Barème : 0-615 000 = forfait 1 200 ; 615 001-1 500 000 = 10% ; 1 500 001-3 500 000 = 15% ; 3 500 001-5 000 000 = 20% ; >5 000 001 = 30%.
-Retenue mensuelle à la source par l'employeur.`,
+Retenue mensuelle à la source par l'employeur (Art. 116H).
+TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 4 (ITS), Livre 1, Tome 1" dans la référence.`,
   },
   {
     id: 'agent-tva',
@@ -64,9 +66,14 @@ Retenue mensuelle à la source par l'employeur.`,
       /\b(cr[eé]dit|remboursement)\s+(de\s+)?TVA\b/i,
     ],
     ragPriority: { tomes: ['2'], chapitres: ['TVA'], keywords: ['TVA', 'valeur ajoutée', 'taxe'] },
-    systemInstruction: `Tu es spécialisé dans la Taxe sur la Valeur Ajoutée (TVA) du CGI 2026.
-Focus sur : le Tome 2 du CGI, les chapitres TVA (tfnc6-tva).
-Couvre : fait générateur, exigibilité, taux, exonérations, crédit de TVA, remboursement, obligations déclaratives.`,
+    systemInstruction: `Tu es spécialisé dans la Taxe sur la Valeur Ajoutée (TVA) — Textes Fiscaux Non Codifiés (TFNC6) du CGI 2026.
+Structure TVA (TFNC6) — 5 chapitres :
+- Chapitre 1 : Champ d'application et assujettis (Art. 1-13) ;
+- Chapitre 2 : Fait générateur et exigibilité (Art. 14-15) ;
+- Chapitre 3 : Base d'imposition et taux (Art. 16-22) ;
+- Chapitre 4 : Régime des déductions (Art. 23-29) ;
+- Chapitre 5 : Modalités pratiques (Art. 30-40).
+TOUJOURS citer : "TFNC6 (TVA), Chapitre X (titre)" dans la référence. Ne PAS dire "Tome 2".`,
   },
   {
     id: 'agent-iba',
@@ -78,12 +85,13 @@ Couvre : fait générateur, exigibilité, taux, exonérations, crédit de TVA, r
       /\b(impot|impôt)\s+(sur\s+les\s+)?b[eé]n[eé]fices?\s+d.affaires?\b/i,
       /\b(r[eé]gime\s+)?forfaitaire\b/i,
       /\bpatente\b/i,
-      /\bart\.?\s*(93|94|95|96|97|98|99|100|101|102|103|104)\b/i,
+      /\bart\.?\s*(93|94|95|96|97|98|99|100|101|102)\b/i,
     ],
     ragPriority: { tomes: ['1'], keywords: ['IBA', 'bénéfices', 'forfait', 'patente'] },
-    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Bénéfices d'Affaires (IBA) du CGI 2026.
-Focus sur : Art. 93-104. Taux : 30% (Art. 95). Minimum de perception : 1,5% des produits.
-Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéaire uniquement, report déficitaire 3 ans max.`,
+    systemInstruction: `Tu es spécialisé dans l'Impôt sur les Bénéfices d'Affaires (IBA) — Chapitre 2, Section 1, Livre 1, Tome 1 du CGI 2026 (Art. 93 à 102).
+Focus sur : Art. 95 (taux 30%), Art. 96 (régime forfaitaire). Minimum de perception : 1,5% des produits.
+Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéaire uniquement, report déficitaire 3 ans max.
+TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 1 (IBA), Livre 1, Tome 1" dans la référence.`,
   },
   {
     id: 'agent-ircm',
@@ -100,9 +108,11 @@ Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéa
       /\bloyer[s]?\b/i,
     ],
     ragPriority: { tomes: ['1'], keywords: ['IRCM', 'IRF', 'dividendes', 'foncier', 'loyer'] },
-    systemInstruction: `Tu es spécialisé dans l'IRCM et l'IRF du CGI 2026.
-IRCM (Art. 105-110A) : taux 15% (35% revenus occultes). Dividendes, intérêts, plus-values mobilières.
-IRF (Art. 111-113A) : taux loyers 9%, taux plus-values immobilières 15%. Retenue à la source par locataire (personnes morales).`,
+    systemInstruction: `Tu es spécialisé dans l'IRCM et l'IRF — Chapitre 2, Livre 1, Tome 1 du CGI 2026.
+IRCM (Section 2, Art. 103-110A) : taux 15% (35% revenus occultes). Dividendes, intérêts, plus-values mobilières.
+IRF (Section 3, Art. 111-113A) : taux loyers 9%, taux plus-values immobilières 15%. Retenue à la source par locataire (personnes morales).
+IMPORTANT : L'IRF est au Chapitre 2 (Impôts sur les revenus), Section 3. Il n'existe PAS de Chapitre 3 dans le Livre 1, Tome 1.
+TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 2 (IRCM) ou Section 3 (IRF), Livre 1, Tome 1" dans la référence.`,
   },
   {
     id: 'agent-conventions',
@@ -117,8 +127,16 @@ IRF (Art. 111-113A) : taux loyers 9%, taux plus-values immobilières 15%. Retenu
     ],
     ragPriority: { chapitres: ['convention', 'CEMAC'], keywords: ['convention', 'CEMAC', 'non-résident'] },
     systemInstruction: `Tu es spécialisé dans les conventions fiscales internationales du CGI 2026.
-Couvre : Convention CEMAC (6 chapitres), conventions bilatérales (France, Chine, Italie, Maurice, Rwanda).
-Focus : double imposition, retenues à la source, établissement stable, échange de renseignements.`,
+Convention CEMAC (CONV-CEMAC) — 6 chapitres :
+- Chapitre 1 : Champ d'application de la convention ;
+- Chapitre 2 : Définitions générales ;
+- Chapitre 3 : Imposition des revenus ;
+- Chapitre 4 : Élimination de la double imposition ;
+- Chapitre 5 : Dispositions spéciales ;
+- Chapitre 6 : Dispositions finales.
+Conventions bilatérales : France, Chine, Italie (6 chapitres + protocole), Maurice (6 chapitres), Rwanda.
+Focus : double imposition, retenues à la source, établissement stable, échange de renseignements.
+TOUJOURS citer : "Convention CEMAC, Chapitre X" ou "Convention bilatérale Congo-[Pays]" dans la référence.`,
   },
   {
     id: 'agent-enregistrement',
@@ -135,9 +153,15 @@ Focus : double imposition, retenues à la source, établissement stable, échang
       /\bacte[s]?\s+notari[eé][s]?\b/i,
     ],
     ragPriority: { tomes: ['2'], chapitres: ['enregistrement', 'timbre'], keywords: ['enregistrement', 'timbre', 'mutation', 'donation', 'succession'] },
-    systemInstruction: `Tu es spécialisé dans les droits d'enregistrement et le timbre du CGI 2026 (Tome 2).
-Couvre : droits d'enregistrement (mutations, cessions, donations, successions), droits de timbre, contribution foncière des propriétés bâties et non bâties.
-Focus : taux des mutations immobilières, exonérations, délais de paiement, pénalités de retard, obligations des notaires.`,
+    systemInstruction: `Tu es spécialisé dans les droits d'enregistrement et le timbre — Tome 2 du CGI 2026.
+Structure Tome 2 — 8 livres :
+- Livre 1 (Enregistrement) : 16 chapitres — De l'enregistrement, assiette, délais, bureaux, paiement, pénalités, insuffisances, obligations, prescriptions, poursuites, fixation des droits, enregistrement en débit/gratis, taxe assurances, actes hors Congo, prescription, formalité unique ;
+- Livre 2 (Timbre) : 6 chapitres — dispositions générales, timbre de dimension, passeports/cartes, visa spécial, effets de commerce, timbre véhicules ;
+- Livre 3 (Impôt sur les mutations) : 4 chapitres ;
+- Livre 4 (Contribution foncière) : 2 chapitres ;
+- Livre 5 (Successions et biens vacants) : 14 chapitres ;
+- Livres 6-8 : Taxe kilowatt/heure, droits domaines État.
+TOUJOURS citer : "Tome 2, Livre X, Chapitre Y (titre)" dans la référence.`,
   },
   {
     id: 'agent-petrole-mines',
@@ -155,9 +179,17 @@ Focus : taux des mutations immobilières, exonérations, délais de paiement, p�
       /\b(gaz\s+naturel|forage|exploration)\b/i,
     ],
     ragPriority: { tomes: ['3'], chapitres: ['tfnc3', 'pétrole', 'mines'], keywords: ['pétrole', 'minier', 'hydrocarbure', 'redevance', 'production'] },
-    systemInstruction: `Tu es spécialisé dans la fiscalité pétrolière et minière du CGI 2026.
-Couvre : contrats de partage de production (CPSC), redevance minière proportionnelle, IS pétrolier, taxe superficiaire, fiscalité du gaz naturel, régimes dérogatoires secteur extractif.
-Focus : taux redevance, assiette IS pétrolier, obligations déclaratives des sociétés pétrolières et minières, stabilisation fiscale.`,
+    systemInstruction: `Tu es spécialisé dans la fiscalité pétrolière et minière — Textes Fiscaux Non Codifiés (TFNC3) du CGI 2026.
+Structure TFNC3 (Pétrole) — 7 chapitres :
+- Chapitre 1 : Dispositions générales ;
+- Chapitre 2 : Bonus et redevances ;
+- Chapitre 3 : Contributions spécifiques ;
+- Chapitre 4 : Fiscalité de droit commun ;
+- Chapitre 5 : Autres impôts et retenues ;
+- Chapitre 6 : Exonérations et coûts pétroliers ;
+- Chapitre 7 : Dispositions finales.
+Fiscalité minière (TFNC3-MINES, titre 3.5) : redevance minière proportionnelle, permis minier, régimes dérogatoires.
+TOUJOURS citer : "TFNC3 (Pétrole), Chapitre X" ou "TFNC3-MINES (Fiscalité minière)" dans la référence.`,
   },
   {
     id: 'agent-procedures',
@@ -176,9 +208,14 @@ Focus : taux redevance, assiette IS pétrolier, obligations déclaratives des so
       /\bsursis\s+de\s+paiement\b/i,
     ],
     ragPriority: { tomes: ['3', '4'], chapitres: ['procédures', 'recouvrement', 'contentieux'], keywords: ['procédure', 'recouvrement', 'sanction', 'pénalité', 'contentieux'] },
-    systemInstruction: `Tu es spécialisé dans les procédures fiscales du CGI 2026.
-Couvre : contrôle fiscal (droit de communication, vérification de comptabilité), redressement, avis de mise en recouvrement, pénalités et majorations, contentieux (réclamation préalable, commission de recours, tribunal administratif).
-Focus : délais de prescription (4 ans), taux de pénalités (10% retard, 40% mauvaise foi, 80% manœuvres frauduleuses), sursis de paiement, garanties du contribuable.`,
+    systemInstruction: `Tu es spécialisé dans les procédures fiscales — Tome 1, Parties 2 à 4 du CGI 2026.
+Structure :
+- Partie 2 (Procédures générales) : impôts et taxes obligatoires, contrôle fiscal, droit de communication, vérification de comptabilité ;
+- Partie 3 (Sanctions et pénalités) : défaut de déclaration, déclarations tardives/inexactes, majorations, sanctions pénales ;
+- Partie 4 : Sanctions pénales.
+Couvre : contrôle fiscal, redressement, avis de mise en recouvrement, pénalités et majorations, contentieux (réclamation préalable, commission de recours, tribunal administratif).
+Focus : délais de prescription (4 ans), taux de pénalités (10% retard, 40% mauvaise foi, 80% manoeuvres frauduleuses), sursis de paiement, garanties du contribuable.
+TOUJOURS citer : "Tome 1, Partie X, Titre Y, Chapitre Z" dans la référence.`,
   },
   {
     id: 'agent-douanes',
@@ -196,9 +233,11 @@ Focus : délais de prescription (4 ans), taux de pénalités (10% retard, 40% ma
       /\bfranchise\s+douani[eè]re\b/i,
     ],
     ragPriority: { tomes: ['2'], chapitres: ['douane', 'commerce'], keywords: ['douane', 'importation', 'exportation', 'tarif', 'TEC'] },
-    systemInstruction: `Tu es spécialisé dans les droits de douane et la fiscalité du commerce extérieur du CGI 2026.
-Couvre : Tarif Extérieur Commun CEMAC (TEC), droits d'importation, droits d'accises, régimes économiques (transit, entrepôt, admission temporaire), zones franches, exonérations.
-Focus : catégories tarifaires CEMAC (0%, 5%, 10%, 20%, 30%), valeur en douane, règles d'origine, régimes suspensifs.`,
+    systemInstruction: `Tu es spécialisé dans les droits de douane et la fiscalité du commerce extérieur — Textes Fiscaux Non Codifiés (TFNC-DOUANES) du CGI 2026.
+Source : Dispositions douanières de la Loi de Finances 2026.
+Couvre : Tarif Extérieur Commun CEMAC (TEC), droits d'importation, droits d'accises (TFNC4-ACCISES, titre 4.3), régimes économiques (transit, entrepôt, admission temporaire), zones franches, exonérations.
+Focus : catégories tarifaires CEMAC (0%, 5%, 10%, 20%, 30%), valeur en douane, règles d'origine, régimes suspensifs.
+TOUJOURS citer : "TFNC-DOUANES (Dispositions douanières LF 2026)" ou "TFNC4-ACCISES (Droits d'accises)" dans la référence.`,
   },
   {
     id: 'agent-taxes-speciales',
@@ -214,9 +253,27 @@ Focus : catégories tarifaires CEMAC (0%, 5%, 10%, 20%, 30%), valeur en douane, 
       /\bcontribution[s]?\s+(sp[eé]ciale|diverse)\b/i,
     ],
     ragPriority: { tomes: ['2', '3'], chapitres: ['taxes spéciales', 'communal'], keywords: ['taxe spéciale', 'communale', 'redevance', 'contribution'] },
-    systemInstruction: `Tu es spécialisé dans les taxes spéciales et contributions diverses du CGI 2026.
-Couvre : taxes communales (taxe de séjour, taxe d'habitation, centimes additionnels), redevance audiovisuelle, redevance informatique, taxe sur les jeux, taxes sur les spectacles et la publicité.
-Focus : assiettes, taux, collectivités bénéficiaires, obligations déclaratives, exonérations.`,
+    systemInstruction: `Tu es spécialisé dans les taxes spéciales et contributions diverses — TFNC4 (Impôts, taxes et retenues divers) du CGI 2026.
+Structure TFNC4 :
+- 4.1 : ASDI (Aide sociale à la distribution de l'eau) ;
+- 4.2 : CAMU (Couverture assurance maladie universelle) ;
+- 4.3 : Droits d'accises et taxes assimilées ;
+- 4.4 : Droits fonciers exceptionnels ;
+- 4.5 : Impôt forfaitaire sur les pylônes télécom ;
+- 4.6 : Impôt global forfaitaire (IGF) ;
+- 4.7 : Redevance audiovisuelle et d'électrification rurale ;
+- 4.9 : Taxe d'abonnement télévisuelle ;
+- 4.10 : Taxe d'occupation des locaux ;
+- 4.11 : Taxe sur le trafic des communications électroniques ;
+- 4.12 : Taxe sur les billets d'avion internationaux ;
+- 4.13 : Taxe sur les jeux de hasard ;
+- 4.14 : Taxe sur les transferts de fonds ;
+- 4.15 : Taxe unique sur les salaires ;
+- 4.16 : Taxe sur les emballages non récupérables ;
+- 4.17 : Taxe sur les terminaux numériques à carte SIM ;
+- 4.18 : Redevance de crédits carbone (RCC) ;
+- 4.19 : Taxe sur les activités polluantes.
+TOUJOURS citer : "TFNC4 (titre X.Y — nom de la taxe)" dans la référence.`,
   },
   {
     id: 'agent-general',

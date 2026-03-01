@@ -1,12 +1,13 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ScrollView, ActivityIndicator } from "react-native";
 import { useState } from "react";
 import { router } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
+import EmailField from "@/components/auth/EmailField";
+import PasswordFields from "@/components/auth/PasswordFields";
 
 export default function Register() {
   const { t } = useTranslation();
@@ -190,22 +191,14 @@ export default function Register() {
           </View>
 
           {/* Email */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-            Email <Text style={{ color: colors.danger }}>*</Text>
-          </Text>
-          <TextInput
-            style={{ ...inputStyle, marginBottom: emailError ? 4 : 16, borderWidth: emailError ? 1 : 0, borderColor: emailError ? colors.danger : "transparent" }}
-            placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor={colors.textMuted}
-            value={form.email}
-            onChangeText={(v) => updateField("email", v)}
+          <EmailField
+            email={form.email}
+            emailError={emailError}
+            emailChecking={emailChecking}
+            onChangeEmail={(v) => updateField("email", v)}
             onBlur={handleEmailBlur}
-            keyboardType="email-address"
-            autoCapitalize="none"
+            colors={colors}
           />
-          {emailError ? (
-            <Text style={{ color: colors.danger, fontSize: 12, marginBottom: 12 }}>{emailError}</Text>
-          ) : null}
 
           {/* Téléphone */}
           <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
@@ -221,46 +214,15 @@ export default function Register() {
           />
 
           {/* Mots de passe */}
-          <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-                {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>
-              </Text>
-              <View>
-                <TextInput
-                  style={{ ...inputStyle, paddingRight: 48 }}
-                  placeholder={t("auth.passwordPlaceholder")}
-                  placeholderTextColor={colors.textMuted}
-                  value={form.password}
-                  onChangeText={(v) => updateField("password", v)}
-                  secureTextEntry={!showPassword}
-                />
-                <TouchableOpacity
-                  style={{ position: "absolute", right: 12, top: 12 }}
-                  onPress={() => setShowPassword(!showPassword)}
-                >
-                  <Ionicons
-                    name={showPassword ? "eye-off" : "eye"}
-                    size={22}
-                    color={colors.textMuted}
-                  />
-                </TouchableOpacity>
-              </View>
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-                {t("common.confirm")} <Text style={{ color: colors.danger }}>*</Text>
-              </Text>
-              <TextInput
-                style={inputStyle}
-                placeholder={t("common.confirm")}
-                placeholderTextColor={colors.textMuted}
-                value={form.confirmPassword}
-                onChangeText={(v) => updateField("confirmPassword", v)}
-                secureTextEntry={!showPassword}
-              />
-            </View>
-          </View>
+          <PasswordFields
+            password={form.password}
+            confirmPassword={form.confirmPassword}
+            showPassword={showPassword}
+            onChangePassword={(v) => updateField("password", v)}
+            onChangeConfirmPassword={(v) => updateField("confirmPassword", v)}
+            onToggleShowPassword={() => setShowPassword(!showPassword)}
+            colors={colors}
+          />
 
           {/* Bouton */}
           <TouchableOpacity
