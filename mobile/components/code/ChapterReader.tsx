@@ -1,6 +1,9 @@
-import { View, Text, ScrollView } from "react-native";
-import { useRef, useEffect, useCallback } from "react";
+import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import { useRef, useEffect, useCallback, useState } from "react";
+import { Ionicons } from "@expo/vector-icons";
+import * as Speech from "expo-speech";
 import type { SommaireNode } from "@/lib/data/types";
+import type { ArticleData } from "@/lib/data/types";
 import ArticleText from "./ArticleText";
 
 type Props = {
@@ -10,12 +13,73 @@ type Props = {
   scrollTrigger?: number;
 };
 
-function ArticleBlock({ article, colors }: { article: any; colors: any }) {
+function useSpeech(article: ArticleData) {
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const stoppedRef = useRef(false);
+
+  const toggle = useCallback(() => {
+    if (isSpeaking) {
+      stoppedRef.current = true;
+      Speech.stop();
+      setIsSpeaking(false);
+      return;
+    }
+
+    stoppedRef.current = false;
+    setIsSpeaking(true);
+
+    const text = [article.article, article.titre, ...article.texte.filter((t) => t.length > 0)].join(" ... ");
+    const chunks: string[] = [];
+    for (let i = 0; i < text.length; i += 3000) {
+      chunks.push(text.slice(i, i + 3000));
+    }
+
+    const speakNext = (idx: number) => {
+      if (stoppedRef.current || idx >= chunks.length) {
+        setIsSpeaking(false);
+        return;
+      }
+      Speech.speak(chunks[idx], {
+        language: "fr-FR",
+        rate: 0.9,
+        onDone: () => speakNext(idx + 1),
+        onStopped: () => setIsSpeaking(false),
+        onError: () => setIsSpeaking(false),
+      });
+    };
+    speakNext(0);
+  }, [isSpeaking, article]);
+
+  useEffect(() => {
+    return () => { stoppedRef.current = true; Speech.stop(); };
+  }, [article]);
+
+  return { isSpeaking, toggle };
+}
+
+function ArticleBlock({ article, colors }: { article: ArticleData; colors: any }) {
+  const { isSpeaking, toggle } = useSpeech(article);
+
   return (
     <View style={{ marginBottom: 20 }}>
-      <Text style={{ fontSize: 13, fontWeight: "bold", color: colors.text, marginBottom: 6 }}>
-        {article.article} — {article.titre}
-      </Text>
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
+        <Text style={{ fontSize: 13, fontWeight: "bold", color: colors.text, flex: 1 }}>
+          {article.article} — {article.titre}
+        </Text>
+        <TouchableOpacity
+          onPress={toggle}
+          style={{
+            paddingHorizontal: 8,
+            paddingVertical: 4,
+            backgroundColor: isSpeaking ? "#e74c3c" : colors.accent,
+            flexDirection: "row",
+            alignItems: "center",
+            marginLeft: 8,
+          }}
+        >
+          <Ionicons name={isSpeaking ? "stop" : "volume-high"} size={12} color="#fff" />
+        </TouchableOpacity>
+      </View>
       <ArticleText texte={article.texte} />
       {article.mots_cles && article.mots_cles.length > 0 && (
         <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 8, gap: 6 }}>
