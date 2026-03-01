@@ -82,9 +82,11 @@ function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
           style={{ marginTop: 8, marginBottom: 16 }}
           ref={(r) => registerRef(sub.id, r)}
         >
-          <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary, marginBottom: 10 }}>
-            {sub.label}
-          </Text>
+          {sub.label !== node.label && (
+            <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary, marginBottom: 10 }}>
+              {sub.label}
+            </Text>
+          )}
           {renderArticles(sub, colors)}
 
           {/* Niveau supplémentaire (paragraphes) */}
@@ -94,9 +96,11 @@ function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
               style={{ marginTop: 4 }}
               ref={(r) => registerRef(para.id, r)}
             >
-              <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-                {para.label}
-              </Text>
+              {para.label !== sub.label && para.label !== node.label && (
+                <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                  {para.label}
+                </Text>
+              )}
               {renderArticles(para, colors)}
             </View>
           ))}

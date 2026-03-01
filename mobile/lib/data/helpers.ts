@@ -2,11 +2,10 @@ import type { ArticleData, SommaireNode } from "./types";
 
 export function parseArticles(raw: any[]): ArticleData[] {
   return raw.filter((a) => typeof a.article === "string").map((a) => {
-    // Nettoyer le préfixe "Art.X.-" redondant en début de texte
-    const rawTexte: string[] = a.texte || [];
-    if (rawTexte.length > 0) {
-      rawTexte[0] = rawTexte[0].replace(/^Art\.\s*\d+[a-z]*\s*[\.\-–]+\s*/i, "");
-    }
+    // Nettoyer le préfixe "Art.X.-" redondant en début de ligne
+    const rawTexte: string[] = (a.texte || []).map((line: string) =>
+      line.replace(/^Art\.\s*\d+[a-z]*\s*[\.\-–]+\s*/i, "")
+    );
     const article: ArticleData = {
       article: a.article,
       titre: a.titre || "",
