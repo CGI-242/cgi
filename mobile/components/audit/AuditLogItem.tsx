@@ -60,7 +60,7 @@ export default function AuditLogItem({
 }: AuditLogItemProps) {
   const actionInfo = ACTION_ICONS[log.action] || {
     icon: "ellipse-outline" as IoniconsName,
-    color: "#6b7280",
+    color: colors.textMuted,
   };
 
   return (

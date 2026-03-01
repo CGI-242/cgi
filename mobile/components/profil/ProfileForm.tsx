@@ -87,7 +87,7 @@ export default function ProfileForm({
       {message && (
         <View
           style={{
-            backgroundColor: message.type === "success" ? "#d1fae5" : "#fee2e2",
+            backgroundColor: message.type === "success" ? `${colors.success}15` : `${colors.danger}15`,
             padding: 12,
             marginBottom: 16,
             flexDirection: "row",
@@ -97,12 +97,12 @@ export default function ProfileForm({
           <Ionicons
             name={message.type === "success" ? "checkmark-circle" : "alert-circle"}
             size={20}
-            color={message.type === "success" ? "#059669" : "#dc2626"}
+            color={message.type === "success" ? colors.success : colors.danger}
             style={{ marginRight: 8 }}
           />
           <Text
             style={{
-              color: message.type === "success" ? "#059669" : "#dc2626",
+              color: message.type === "success" ? colors.success : colors.danger,
               fontSize: 14,
               flex: 1,
             }}

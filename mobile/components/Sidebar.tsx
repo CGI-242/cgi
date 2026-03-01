@@ -62,7 +62,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
       label: t("sidebar.logout"),
       icon: "log-out-outline",
       action: () => logout(),
-      color: "#e74c3c",
+      color: colors.danger,
       separator: true,
     },
   ];
@@ -89,7 +89,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             paddingHorizontal: collapsed ? 0 : 16,
             paddingBottom: 12,
             borderBottomWidth: 1,
-            borderBottomColor: "#333",
+            borderBottomColor: colors.border,
             marginBottom: 8,
           }}
         >
@@ -98,7 +98,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           ) : (
             <View>
               <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
-              <Text style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: colors.textMuted, fontSize: 11 }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!collapsed && (
@@ -141,7 +141,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 justifyContent: collapsed ? "center" : "flex-start",
                 paddingVertical: 10,
                 paddingHorizontal: collapsed ? 0 : 16,
-                backgroundColor: active ? "#333" : "transparent",
+                backgroundColor: active ? colors.input : "transparent",
                 borderLeftWidth: active ? 3 : 0,
                 borderLeftColor: active ? colors.accent : "transparent",
                 opacity: disabled ? 0.5 : 1,
@@ -166,7 +166,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                   {disabled && (
                     <View
                       style={{
-                        backgroundColor: "#333",
+                        backgroundColor: colors.input,
                         
                         paddingHorizontal: 5,
                         paddingVertical: 1,
@@ -187,11 +187,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
 
       {/* Section profil (bas) */}
       <View>
-        <View style={{ borderTopWidth: 1, borderTopColor: "#333", marginBottom: 8 }} />
+        <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginBottom: 8 }} />
         {profileItems.map((item) => (
           <View key={item.label}>
             {item.separator && (
-              <View style={{ borderTopWidth: 1, borderTopColor: "#444", marginHorizontal: collapsed ? 8 : 16, marginVertical: 4 }} />
+              <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginHorizontal: collapsed ? 8 : 16, marginVertical: 4 }} />
             )}
             <TouchableOpacity
               onPress={item.action}

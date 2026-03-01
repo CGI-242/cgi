@@ -198,7 +198,7 @@ export default function MfaSetupFlow({
             onPress={onRegenerateBackupCodes}
             disabled={actionLoading}
             style={{
-              backgroundColor: colors.text,
+              backgroundColor: colors.textSecondary,
               paddingVertical: 14,
               alignItems: "center",
               marginBottom: 12,
@@ -223,7 +223,7 @@ export default function MfaSetupFlow({
             <TouchableOpacity
               onPress={onShowDisable}
               style={{
-                backgroundColor: "#fef2f2",
+                backgroundColor: `${colors.danger}15`,
                 paddingVertical: 14,
                 alignItems: "center",
               }}
@@ -251,7 +251,7 @@ export default function MfaSetupFlow({
               style={{
                 backgroundColor: colors.card,
                 borderWidth: 1,
-                borderColor: "#fca5a5",
+                borderColor: `${colors.danger}50`,
                 padding: 16,
               }}
             >

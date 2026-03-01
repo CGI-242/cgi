@@ -109,8 +109,8 @@ export default function AdminScreen() {
   if (error) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 24 }}>
-        <Ionicons name="shield-outline" size={48} color="#dc2626" />
-        <Text style={{ marginTop: 12, color: "#dc2626", fontSize: 16, fontWeight: "600", textAlign: "center" }}>{error}</Text>
+        <Ionicons name="shield-outline" size={48} color={colors.danger} />
+        <Text style={{ marginTop: 12, color: colors.danger, fontSize: 16, fontWeight: "600", textAlign: "center" }}>{error}</Text>
         <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: colors.primary }}>
           <Text style={{ color: "#fff", fontWeight: "600" }}>Retour</Text>
         </TouchableOpacity>

@@ -12,9 +12,9 @@ interface AdminStatsGridProps {
 export default function AdminStatsGrid({ totalOrgs, activeCount, trialCount, expiredCount, colors }: AdminStatsGridProps) {
   const items = [
     { label: "Total", value: totalOrgs, color: colors.text, bg: colors.background },
-    { label: "Actifs", value: activeCount, color: "#16a34a", bg: "#f0fdf4" },
-    { label: "Essai", value: trialCount, color: "#2563eb", bg: "#eff6ff" },
-    { label: "Expires", value: expiredCount, color: "#dc2626", bg: "#fef2f2" },
+    { label: "Actifs", value: activeCount, color: "#16a34a", bg: `${colors.card}` },
+    { label: "Essai", value: trialCount, color: "#2563eb", bg: `${colors.card}` },
+    { label: "Expires", value: expiredCount, color: "#dc2626", bg: `${colors.card}` },
   ];
 
   return (

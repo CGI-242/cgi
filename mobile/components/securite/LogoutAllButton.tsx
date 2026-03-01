@@ -25,7 +25,7 @@ export default function LogoutAllButton({
         onPress={onLogoutAll}
         disabled={actionLoading}
         style={{
-          backgroundColor: "#fef2f2",
+          backgroundColor: `${colors.danger}15`,
           paddingVertical: 14,
           alignItems: "center",
         }}

@@ -116,8 +116,8 @@ export default function AuditScreen() {
           colors={colors}
         />
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
+            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
           </View>
         )}
         {stats && <AuditStatsCards stats={stats} colors={colors} />}

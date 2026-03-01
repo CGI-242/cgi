@@ -82,12 +82,12 @@ export default function AnalyticsScreen() {
     );
   }
 
-  const statCards: { label: string; value: string | number; icon: IoniconsName; color: string; bg: string }[] = dashboard
+  const statCards: { label: string; value: string | number; icon: IoniconsName; color: string }[] = dashboard
     ? [
-        { label: "Questions totales", value: dashboard.totalQuestions, icon: "chatbubble-ellipses-outline", color: "#3b82f6", bg: "#eff6ff" },
-        { label: "Tendance", value: `${dashboard.trend > 0 ? "+" : ""}${dashboard.trend}%`, icon: "trending-up-outline", color: dashboard.trend >= 0 ? "#16a34a" : "#dc2626", bg: dashboard.trend >= 0 ? "#f0fdf4" : "#fef2f2" },
-        { label: "Membres actifs", value: `${dashboard.activeMembers}/${dashboard.totalMembers}`, icon: "people-outline", color: "#8b5cf6", bg: "#faf5ff" },
-        { label: "Ce mois", value: dashboard.questionsThisMonth, icon: "calendar-outline", color: "#d97706", bg: "#fffbeb" },
+        { label: "Questions totales", value: dashboard.totalQuestions, icon: "chatbubble-ellipses-outline", color: "#3b82f6" },
+        { label: "Tendance", value: `${dashboard.trend > 0 ? "+" : ""}${dashboard.trend}%`, icon: "trending-up-outline", color: dashboard.trend >= 0 ? "#16a34a" : "#dc2626" },
+        { label: "Membres actifs", value: `${dashboard.activeMembers}/${dashboard.totalMembers}`, icon: "people-outline", color: "#8b5cf6" },
+        { label: "Ce mois", value: dashboard.questionsThisMonth, icon: "calendar-outline", color: "#d97706" },
       ]
     : [];
 
@@ -98,8 +98,8 @@ export default function AnalyticsScreen() {
         <PeriodSelector days={days} onChangeDays={setDays} onRefresh={loadData} colors={colors} />
 
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
+            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
           </View>
         )}
 
@@ -116,7 +116,7 @@ export default function AnalyticsScreen() {
                 padding: 16,
               }}
             >
-              <View style={{ width: 36, height: 36, backgroundColor: card.bg, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
+              <View style={{ width: 36, height: 36, backgroundColor: `${card.color}15`, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
                 <Ionicons name={card.icon} size={18} color={card.color} />
               </View>
               <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{card.value}</Text>

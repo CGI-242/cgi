@@ -125,10 +125,10 @@ export default function SoldeLiquidationScreen() {
               <TableRow label={t("simulateur.solde.fiscalResult")} value={formatNumber(result.resultatFiscal)} />
               <TableRow label={t("simulateur.solde.roundedProfit")} value={formatNumber(result.beneficeArrondi)} bg={colors.background} />
               <TableRow label={`${t("simulateur.solde.isRate")} (${result.tauxIS}%)`} value={`${result.tauxIS}%`} bg={colors.background} />
-              <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
+              <View style={{ backgroundColor: `${colors.danger}15`, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
                 <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>{t("simulateur.solde.isToPay")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#b91c1c" }}>{formatNumber(result.isCalcule)}</Text>
+                  <Text style={{ fontSize: 12, fontWeight: "700", color: colors.danger }}>{t("simulateur.solde.isToPay")}</Text>
+                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.danger }}>{formatNumber(result.isCalcule)}</Text>
                 </View>
               </View>
 
@@ -151,18 +151,18 @@ export default function SoldeLiquidationScreen() {
               {result.creditImpot ? (
                 <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
                   <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#059669" }}>{t("simulateur.solde.taxCredit")}</Text>
-                    <Text style={{ fontSize: 16, fontWeight: "800", color: "#059669" }}>{formatNumber(Math.abs(result.solde))}</Text>
+                    <Text style={{ fontSize: 12, fontWeight: "700", color: colors.success }}>{t("simulateur.solde.taxCredit")}</Text>
+                    <Text style={{ fontSize: 16, fontWeight: "800", color: colors.success }}>{formatNumber(Math.abs(result.solde))}</Text>
                   </View>
                   <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4 }}>
                     {t("simulateur.solde.taxCreditNote")}
                   </Text>
                 </View>
               ) : (
-                <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={{ backgroundColor: `${colors.danger}15`, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
                   <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>{t("simulateur.solde.balanceToPay")}</Text>
-                    <Text style={{ fontSize: 16, fontWeight: "800", color: "#b91c1c" }}>{formatNumber(result.solde)}</Text>
+                    <Text style={{ fontSize: 12, fontWeight: "700", color: colors.danger }}>{t("simulateur.solde.balanceToPay")}</Text>
+                    <Text style={{ fontSize: 16, fontWeight: "800", color: colors.danger }}>{formatNumber(result.solde)}</Text>
                   </View>
                   <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4 }}>
                     {t("simulateur.solde.balanceNote")}

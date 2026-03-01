@@ -115,14 +115,14 @@ export default function HistoryPanel({
           paddingHorizontal: 16,
           paddingVertical: 14,
           borderBottomWidth: 1,
-          borderBottomColor: "#333",
+          borderBottomColor: colors.border,
         }}
       >
         <Text style={{ color: colors.sidebarText, fontSize: 16, fontWeight: "700" }}>
           {t("chat.history")}
         </Text>
         <TouchableOpacity onPress={onClose} accessibilityLabel={t("chat.closeHistory")}>
-          <Ionicons name="close" size={22} color="#aaa" />
+          <Ionicons name="close" size={22} color={colors.textMuted} />
         </TouchableOpacity>
       </View>
 
@@ -160,23 +160,23 @@ export default function HistoryPanel({
           paddingHorizontal: 10,
         }}
       >
-        <Ionicons name="search" size={16} color="#888" />
+        <Ionicons name="search" size={16} color={colors.textMuted} />
         <TextInput
           style={{
             flex: 1,
-            color: "#ddd",
+            color: colors.sidebarText,
             fontSize: 13,
             paddingVertical: 8,
             marginLeft: 8,
           }}
           placeholder={t("chat.searchPlaceholder")}
-          placeholderTextColor="#666"
+          placeholderTextColor={colors.textMuted}
           value={search}
           onChangeText={setSearch}
         />
         {search.length > 0 && (
           <TouchableOpacity onPress={() => setSearch("")}>
-            <Ionicons name="close-circle" size={16} color="#666" />
+            <Ionicons name="close-circle" size={16} color={colors.textMuted} />
           </TouchableOpacity>
         )}
       </View>
@@ -185,14 +185,14 @@ export default function HistoryPanel({
       {loading ? (
         <View style={{ paddingTop: 40, alignItems: "center" }}>
           <ActivityIndicator size="small" color={colors.accent} />
-          <Text style={{ color: "#888", fontSize: 13, marginTop: 8 }}>
+          <Text style={{ color: colors.textMuted, fontSize: 13, marginTop: 8 }}>
             {t("common.loading")}
           </Text>
         </View>
       ) : conversations.length === 0 ? (
         <View style={{ paddingTop: 40, alignItems: "center", paddingHorizontal: 20 }}>
-          <Ionicons name="chatbubbles-outline" size={32} color="#555" />
-          <Text style={{ color: "#888", fontSize: 13, marginTop: 8, textAlign: "center" }}>
+          <Ionicons name="chatbubbles-outline" size={32} color={colors.disabled} />
+          <Text style={{ color: colors.textMuted, fontSize: 13, marginTop: 8, textAlign: "center" }}>
             {t("chat.noConversations")}
           </Text>
         </View>
@@ -205,7 +205,7 @@ export default function HistoryPanel({
             <View>
               <Text
                 style={{
-                  color: "#888",
+                  color: colors.textMuted,
                   fontSize: 11,
                   fontWeight: "600",
                   textTransform: "uppercase",
@@ -239,7 +239,7 @@ export default function HistoryPanel({
                     >
                       {conv.title || t("chat.untitled")}
                     </Text>
-                    <Text style={{ color: "#666", fontSize: 11, marginTop: 2 }}>
+                    <Text style={{ color: colors.textMuted, fontSize: 11, marginTop: 2 }}>
                       {conv._count?.messages ?? 0} {(conv._count?.messages ?? 0) > 1 ? t("chat.messages") : t("chat.message")} · {formatRelativeDate(conv.updatedAt, t)}
                     </Text>
                   </View>
@@ -248,7 +248,7 @@ export default function HistoryPanel({
                     hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                     accessibilityLabel={t("chat.deleteConversation")}
                   >
-                    <Ionicons name="trash-outline" size={16} color="#666" />
+                    <Ionicons name="trash-outline" size={16} color={colors.textMuted} />
                   </TouchableOpacity>
                 </TouchableOpacity>
               ))}

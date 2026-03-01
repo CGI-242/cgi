@@ -51,7 +51,7 @@ export default function AuditToolbar({
             style={{
               flexDirection: "row",
               alignItems: "center",
-              backgroundColor: "#fef2f2",
+              backgroundColor: `${colors.danger}15`,
               paddingHorizontal: 12,
               paddingVertical: 6,
             }}
@@ -78,7 +78,7 @@ export default function AuditToolbar({
           style={{
             backgroundColor: colors.card,
             borderWidth: 1,
-            borderColor: "#fca5a5",
+            borderColor: `${colors.danger}50`,
             padding: 16,
             marginBottom: 12,
           }}

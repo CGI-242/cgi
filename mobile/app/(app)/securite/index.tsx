@@ -190,8 +190,8 @@ export default function SecuriteScreen() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
+            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
           </View>
         )}
 

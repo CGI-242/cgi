@@ -57,14 +57,14 @@ export default function InvitationsScreen() {
 
         {/* Messages */}
         {error && (
-          <View style={{ backgroundColor: "#fef2f2", padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: "#dc2626", fontSize: 14 }}>{error}</Text>
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
+            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
           </View>
         )}
 
         {success && (
-          <View style={{ backgroundColor: "#f0fdf4", padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: "#16a34a", fontSize: 14 }}>{success}</Text>
+          <View style={{ backgroundColor: `${colors.success}15`, padding: 16, marginBottom: 12 }}>
+            <Text style={{ color: colors.success, fontSize: 14 }}>{success}</Text>
           </View>
         )}
 

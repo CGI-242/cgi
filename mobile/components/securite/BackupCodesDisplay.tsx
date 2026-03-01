@@ -84,7 +84,7 @@ export default function BackupCodesDisplay({
       <TouchableOpacity
         onPress={onCopy}
         style={{
-          backgroundColor: colors.text,
+          backgroundColor: colors.textSecondary,
           paddingVertical: 10,
           alignItems: "center",
           marginBottom: 8,

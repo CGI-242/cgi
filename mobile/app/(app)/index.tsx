@@ -14,10 +14,10 @@ function getGreeting(t: (key: string) => string) {
 }
 
 const STATS = [
-  { labelKey: "dashboard.stats.articles", value: "7 000+", icon: "document-text-outline" as const, bg: "#e6f7f0", color: "#00815d" },
-  { labelKey: "dashboard.stats.simulators", value: "4", icon: "calculator-outline" as const, bg: "#eef2ff", color: "#4f46e5" },
-  { labelKey: "dashboard.stats.tfnc", value: "60+", icon: "library-outline" as const, bg: "#fef3c7", color: "#d97706" },
-  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, bg: "#f3e8ff", color: "#9333ea" },
+  { labelKey: "dashboard.stats.articles", value: "7 000+", icon: "document-text-outline" as const, color: "#00815d" },
+  { labelKey: "dashboard.stats.simulators", value: "4", icon: "calculator-outline" as const, color: "#4f46e5" },
+  { labelKey: "dashboard.stats.tfnc", value: "60+", icon: "library-outline" as const, color: "#d97706" },
+  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#9333ea" },
 ];
 
 const MOIS: Record<string, number> = {
@@ -72,7 +72,6 @@ export default function Dashboard() {
       label: t("dashboard.actions.consultCgi"),
       desc: t("dashboard.actions.consultCgiDesc"),
       icon: "book-outline" as const,
-      bg: "#e6f7f0",
       color: "#00815d",
       route: "/(app)/code",
     },
@@ -80,7 +79,6 @@ export default function Dashboard() {
       label: t("dashboard.actions.simulate"),
       desc: t("dashboard.actions.simulateDesc"),
       icon: "calculator-outline" as const,
-      bg: "#eef2ff",
       color: "#4f46e5",
       route: "/(app)/simulateur",
     },
@@ -88,7 +86,6 @@ export default function Dashboard() {
       label: t("dashboard.actions.chatAi"),
       desc: t("dashboard.actions.chatAiDesc"),
       icon: "chatbubbles-outline" as const,
-      bg: "#e0f2fe",
       color: "#0284c7",
       route: "/(app)/chat",
     },
@@ -132,7 +129,7 @@ export default function Dashboard() {
                     width: 44,
                     height: 44,
                     
-                    backgroundColor: s.bg,
+                    backgroundColor: `${s.color}15`,
                     alignItems: "center",
                     justifyContent: "center",
                     marginRight: 12,
@@ -185,7 +182,7 @@ export default function Dashboard() {
                       width: 40,
                       height: 40,
                       
-                      backgroundColor: a.bg,
+                      backgroundColor: `${a.color}15`,
                       alignItems: "center",
                       justifyContent: "center",
                       marginRight: 12,

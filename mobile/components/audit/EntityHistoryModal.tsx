@@ -83,7 +83,7 @@ export default function EntityHistoryModal({
                 history.map((log) => {
                   const actionInfo = ACTION_ICONS[log.action] || {
                     icon: "ellipse-outline" as IoniconsName,
-                    color: "#6b7280",
+                    color: colors.textMuted,
                   };
                   return (
                     <View

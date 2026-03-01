@@ -28,7 +28,7 @@ export default function AuditStatsCards({
       <View
         style={{
           flex: 1,
-          backgroundColor: "#eff6ff",
+          backgroundColor: colors.card,
           padding: 12,
           alignItems: "center",
         }}
@@ -43,7 +43,7 @@ export default function AuditStatsCards({
       <View
         style={{
           flex: 1,
-          backgroundColor: "#faf5ff",
+          backgroundColor: colors.card,
           padding: 12,
           alignItems: "center",
         }}
@@ -58,7 +58,7 @@ export default function AuditStatsCards({
       <View
         style={{
           flex: 1,
-          backgroundColor: "#f0fdf4",
+          backgroundColor: colors.card,
           padding: 12,
           alignItems: "center",
         }}

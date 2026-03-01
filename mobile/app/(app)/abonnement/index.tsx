@@ -128,17 +128,17 @@ export default function AbonnementScreen() {
         {error && (
           <View
             style={{
-              backgroundColor: "#fee2e2",
+              backgroundColor: `${colors.danger}15`,
               padding: 12,
               marginBottom: 16,
               flexDirection: "row",
               alignItems: "center",
             }}
           >
-            <Ionicons name="alert-circle" size={20} color="#dc2626" style={{ marginRight: 8 }} />
-            <Text style={{ color: "#dc2626", fontSize: 14, flex: 1 }}>{error}</Text>
+            <Ionicons name="alert-circle" size={20} color={colors.danger} style={{ marginRight: 8 }} />
+            <Text style={{ color: colors.danger, fontSize: 14, flex: 1 }}>{error}</Text>
             <TouchableOpacity onPress={loadQuota}>
-              <Text style={{ color: "#dc2626", fontWeight: "700", fontSize: 13 }}>Reessayer</Text>
+              <Text style={{ color: colors.danger, fontWeight: "700", fontSize: 13 }}>Reessayer</Text>
             </TouchableOpacity>
           </View>
         )}
