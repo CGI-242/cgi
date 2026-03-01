@@ -1,5 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView, useWindowDimensions, StyleSheet } from "react-native";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -14,13 +14,21 @@ const styles = StyleSheet.create({
   separator: { height: 1, marginHorizontal: 12, marginBottom: 4 },
 });
 
+function isDescendant(parent: SommaireNode, childId: string): boolean {
+  if (!parent.children) return false;
+  for (const child of parent.children) {
+    if (child.id === childId) return true;
+    if (isDescendant(child, childId)) return true;
+  }
+  return false;
+}
+
 export default function CodeCGI() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const sommaire = useMemo(() => getSommaire(), []);
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("");
-  const [selectedNode, setSelectedNode] = useState<SommaireNode | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<ArticleData | null>(null);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
     tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true,
@@ -32,6 +40,12 @@ export default function CodeCGI() {
   const sommaireWidth = isMobile ? "35%" : "30%";
   const contentWidth = isMobile ? "65%" : "70%";
 
+  // Mode livre
+  const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
+  const readerNodeRef = useRef<SommaireNode | null>(null);
+  const [scrollToId, setScrollToId] = useState<string | undefined>();
+  const [scrollTrigger, setScrollTrigger] = useState(0);
+
   const debouncedSearch = useDebounce(search, 300);
   const searchResults = useMemo(() => searchArticles(debouncedSearch), [debouncedSearch]);
 
@@ -41,8 +55,27 @@ export default function CodeCGI() {
 
   const handleSelect = (node: SommaireNode) => {
     setSelected(node.id);
-    setSelectedNode(node);
     setSelectedArticle(null);
+
+    const hasChildren = node.children && node.children.length > 0;
+
+    // Si mode livre actif et le noeud cliqué est un descendant → scroll vers lui
+    if (readerNodeRef.current && isDescendant(readerNodeRef.current, node.id)) {
+      setScrollToId(node.id);
+      setScrollTrigger((n) => n + 1);
+      return;
+    }
+
+    // Noeud avec enfants → mode livre
+    if (hasChildren) {
+      readerNodeRef.current = node;
+      setReaderNode(node);
+      setScrollToId(undefined);
+    } else {
+      readerNodeRef.current = null;
+      setReaderNode(null);
+      setScrollToId(undefined);
+    }
   };
 
   const handleSelectChild = (child: SommaireNode, parentId: string) => {
@@ -54,6 +87,8 @@ export default function CodeCGI() {
     setSearch("");
     setSelectedArticle(null);
   };
+
+  const showReader = readerNode && !selectedArticle && search.length < 2;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
@@ -108,11 +143,16 @@ export default function CodeCGI() {
 
         {/* Contenu */}
         <View style={{ width: contentWidth }}>
-          {selectedNode?.children && selectedNode.children.length > 0 && !selectedArticle && search.length < 2 ? (
-            <ChapterReader chapter={selectedNode} colors={colors} />
+          {showReader ? (
+            <ChapterReader
+              chapter={readerNode}
+              colors={colors}
+              scrollToId={scrollToId}
+              scrollTrigger={scrollTrigger}
+            />
           ) : (
             <ContentPanel
-              selectedNode={selectedNode}
+              selectedNode={readerNode}
               selectedArticle={selectedArticle}
               onSelectArticle={setSelectedArticle}
               onSelectChild={handleSelectChild}
