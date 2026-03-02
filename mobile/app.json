@@ -45,7 +45,10 @@
       "expo-router",
       "expo-secure-store",
       "expo-font",
-      "@sentry/react-native",
+      ["@sentry/react-native", {
+        "organization": "normx-ai-9m",
+        "project": "react-native"
+      }],
       "expo-speech-recognition",
       [
         "expo-notifications",
