@@ -39,7 +39,6 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
-      "jsEngine": "jsc",
       "lang": "fr"
     },
     "plugins": [

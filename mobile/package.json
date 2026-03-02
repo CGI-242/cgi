@@ -11,7 +11,9 @@
     "test:ci": "jest --ci --coverage",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
-    "format": "prettier --write \"**/*.{ts,tsx,js,json}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
+    "build:web": "EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api npx expo export --platform web && sed -i 's/ defer><\\/script>/ type=\"module\"><\\/script>/g' dist/index.html",
+    "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@51.83.75.203:/opt/cgi-242/mobile/dist/ && ssh ubuntu@51.83.75.203 'sudo rsync -avz --delete /opt/cgi-242/mobile/dist/ /var/www/cgi242/'"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",

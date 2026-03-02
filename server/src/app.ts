@@ -25,6 +25,9 @@ import { startReminderCron } from "./services/reminder.service";
 
 const app = express();
 
+// Faire confiance au reverse proxy Nginx (nécessaire pour express-rate-limit + X-Forwarded-For)
+app.set("trust proxy", 1);
+
 // Origins autorisées (supporte plusieurs domaines séparés par des virgules)
 const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:3004")
   .split(",")
