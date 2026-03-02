@@ -80,7 +80,7 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
   res.cookie("accessToken", token, {
     httpOnly: true,
     secure: isProduction,
-    sameSite: isProduction ? "strict" : "lax",
+    sameSite: "lax",
     maxAge: 15 * 60 * 1000, // 15 minutes
     path: "/",
   });
@@ -88,7 +88,7 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
   res.cookie("refreshToken", refreshToken, {
     httpOnly: true,
     secure: isProduction,
-    sameSite: isProduction ? "strict" : "lax",
+    sameSite: "lax",
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 jours
     path: "/",
   });
