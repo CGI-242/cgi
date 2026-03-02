@@ -352,6 +352,7 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
         prenom: user.firstName,
         email: user.email,
         role: membership?.role,
+        globalRole: user.role,
         entreprise_id: membership?.organizationId,
         entreprise_nom: membership?.organization.name,
         is_verified: true,

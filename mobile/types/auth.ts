@@ -5,6 +5,7 @@ export interface User {
   email: string;
   telephone?: string;
   role: string;
+  globalRole?: string;
   entreprise_id: number;
   entreprise_nom?: string;
   is_verified: boolean;

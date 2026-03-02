@@ -84,7 +84,7 @@ export default function AppLayout() {
     return <Redirect href="/(auth)" />;
   }
 
-  if (!subLoading && subStatus === "EXPIRED") {
+  if (!subLoading && subStatus === "EXPIRED" && user?.globalRole !== "ADMIN") {
     return <PaywallScreen />;
   }
 
