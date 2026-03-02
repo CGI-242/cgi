@@ -9,7 +9,7 @@ import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import Sidebar from "@/components/Sidebar";
 import SessionExpiredModal from "@/components/SessionExpiredModal";
 import PaywallScreen from "@/components/paywall/PaywallScreen";
-import { subscriptionApi } from "@/lib/api/subscription";
+import { api } from "@/lib/api/client";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 
@@ -70,8 +70,8 @@ export default function AppLayout() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      subscriptionApi.getQuota()
-        .then((q) => setSubStatus(q.status))
+      api.get("/subscription/quota", { _skipAuthRetry: true } as any)
+        .then((res) => setSubStatus(res.data.status))
         .catch(() => setSubStatus(null))
         .finally(() => setSubLoading(false));
     }

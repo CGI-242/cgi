@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   ghostBtn: {
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: 0,
     paddingVertical: 8,
     paddingHorizontal: 16,
   },
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   filledBtn: {
-    borderRadius: 8,
+    borderRadius: 0,
     paddingVertical: 8,
     paddingHorizontal: 16,
   },

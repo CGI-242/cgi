@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   },
   ctaPrimary: {
     backgroundColor: "#ffffff",
-    borderRadius: 10,
+    borderRadius: 0,
     paddingVertical: 14,
     paddingHorizontal: 28,
   },
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   ctaOutline: {
     borderWidth: 2,
     borderColor: "#ffffff",
-    borderRadius: 10,
+    borderRadius: 0,
     paddingVertical: 12,
     paddingHorizontal: 28,
   },

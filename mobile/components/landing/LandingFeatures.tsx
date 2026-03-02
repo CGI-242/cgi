@@ -100,14 +100,14 @@ const styles = StyleSheet.create({
   },
   card: {
     borderWidth: 1,
-    borderRadius: 12,
+    borderRadius: 0,
     padding: 24,
     minHeight: 160,
   },
   iconCircle: {
     width: 52,
     height: 52,
-    borderRadius: 26,
+    borderRadius: 0,
     alignItems: "center",
     justifyContent: "center",
     marginBottom: 14,

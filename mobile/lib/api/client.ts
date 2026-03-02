@@ -98,13 +98,14 @@ async function forceLogout() {
 api.interceptors.response.use(
   (response) => response,
   async (error: AxiosError) => {
-    const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
+    const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean; _skipAuthRetry?: boolean };
 
-    // Ne pas intercepter : pas de réponse (erreur réseau), non-401, retry, refresh, ou logout
+    // Ne pas intercepter : pas de réponse (erreur réseau), non-401, retry, refresh, logout, ou skip explicite
     if (
       !error.response ||
       error.response.status !== 401 ||
       originalRequest._retry ||
+      originalRequest._skipAuthRetry ||
       originalRequest.url?.includes("/auth/refresh-token") ||
       originalRequest.url?.includes("/auth/logout")
     ) {
