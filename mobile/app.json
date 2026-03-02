@@ -4,7 +4,6 @@
     "slug": "cgi-242",
     "version": "1.0.0",
     "description": "Application mobile du Code General des Impots du Congo (edition 2026). Consultation des 7 000+ articles, simulateurs fiscaux (ITS, IS, Patente) et echeances fiscales.",
-    "owner": "normxai",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,7 +20,8 @@
       "bundleIdentifier": "com.normxai.cgi242",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Utilisé pour la recherche vocale",
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSSpeechRecognitionUsageDescription": "Allow $(PRODUCT_NAME) to use speech recognition."
       }
     },
     "android": {
@@ -32,7 +32,8 @@
       "edgeToEdgeEnabled": true,
       "package": "com.normxai.cgi242",
       "permissions": [
-        "RECORD_AUDIO"
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -53,18 +54,19 @@
           "color": "#00815d"
         }
       ],
-      "expo-localization",
-      "expo-screen-capture"
+      "expo-localization"
     ],
     "extra": {
       "privacyUrl": "https://cgi242.normx.ai/confidentialite",
       "termsUrl": "https://cgi242.normx.ai/conditions",
       "eas": {
-        "projectId": "YOUR_EAS_PROJECT_ID"
-      }
+        "projectId": "10683ceb-5899-41bd-a451-b48c96f123f1"
+      },
+      "router": {}
     },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "owner": "cmabika"
   }
 }
