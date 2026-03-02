@@ -63,9 +63,11 @@ app.use(cookieParser());
 // Rate limiting global
 app.use(globalLimiter);
 
-// Swagger UI
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
+// Swagger UI — désactivé en production pour la sécurité
+if (process.env.NODE_ENV !== "production") {
+  app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
+}
 
 // Routes
 app.use("/api/auth", authLimiter, authRoutes);
