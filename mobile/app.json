@@ -39,7 +39,8 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
-      "jsEngine": "jsc"
+      "jsEngine": "jsc",
+      "lang": "fr"
     },
     "plugins": [
       "expo-router",
