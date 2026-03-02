@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Modal } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
@@ -17,71 +17,73 @@ export default function SessionExpiredModal() {
   };
 
   return (
-    <Modal visible transparent animationType="fade">
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: "rgba(0,0,0,0.6)",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: 24,
-        }}
-      >
-        <View
-          style={{
-            backgroundColor: colors.card,
-            
-            padding: 32,
-            alignItems: "center",
-            maxWidth: 400,
-            width: "100%",
-          }}
+    <View style={styles.overlay}>
+      <View style={[styles.card, { backgroundColor: colors.card }]}>
+        <Ionicons
+          name="time-outline"
+          size={48}
+          color={colors.warning}
+          style={{ marginBottom: 16 }}
+        />
+        <Text style={[styles.title, { color: colors.text }]}>
+          {t("auth.sessionExpired")}
+        </Text>
+        <Text style={[styles.message, { color: colors.textSecondary }]}>
+          {t("auth.sessionExpiredMessage")}
+        </Text>
+        <TouchableOpacity
+          onPress={handleReconnect}
+          style={[styles.button, { backgroundColor: colors.primary }]}
         >
-          <Ionicons
-            name="time-outline"
-            size={48}
-            color={colors.warning}
-            style={{ marginBottom: 16 }}
-          />
-          <Text
-            style={{
-              color: colors.text,
-              fontSize: 20,
-              fontWeight: "700",
-              marginBottom: 8,
-              textAlign: "center",
-            }}
-          >
-            {t("auth.sessionExpired")}
+          <Text style={styles.buttonText}>
+            {t("auth.reconnect")}
           </Text>
-          <Text
-            style={{
-              color: colors.textSecondary,
-              fontSize: 14,
-              textAlign: "center",
-              marginBottom: 24,
-              lineHeight: 20,
-            }}
-          >
-            {t("auth.sessionExpiredMessage")}
-          </Text>
-          <TouchableOpacity
-            onPress={handleReconnect}
-            style={{
-              backgroundColor: colors.primary,
-              
-              paddingVertical: 14,
-              paddingHorizontal: 32,
-              width: "100%",
-              alignItems: "center",
-            }}
-          >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>
-              {t("auth.reconnect")}
-            </Text>
-          </TouchableOpacity>
-        </View>
+        </TouchableOpacity>
       </View>
-    </Modal>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0,0,0,0.6)",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 24,
+    zIndex: 9999,
+  },
+  card: {
+    padding: 32,
+    alignItems: "center",
+    maxWidth: 400,
+    width: "100%",
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: "700",
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  message: {
+    fontSize: 14,
+    textAlign: "center",
+    marginBottom: 24,
+    lineHeight: 20,
+  },
+  button: {
+    paddingVertical: 14,
+    paddingHorizontal: 32,
+    width: "100%",
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "#fff",
+    fontWeight: "700",
+    fontSize: 16,
+  },
+});
