@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PLANS = [
-  { key: "free", questionsKey: "5", priceLabel: "0 XAF", expired: true },
-  { key: "basic", questionsKey: "50", priceLabel: "50 000 XAF" },
-  { key: "pro", questionsKey: "unlimited", priceLabel: "70 000 XAF" },
+  { key: "free", questions: "5", priceLabel: "0 XAF", expired: true },
+  { key: "basic", questions: "20", priceLabel: "50 000 XAF" },
+  { key: "pro", questions: "50", priceLabel: "70 000 XAF" },
 ];
 
 export default function PaywallScreen() {
@@ -16,7 +16,7 @@ export default function PaywallScreen() {
   const logout = useAuthStore((s) => s.logout);
 
   const handleContact = () => {
-    Linking.openURL("mailto:contact@cgi242.com?subject=Souscription%20CGI242");
+    Linking.openURL("mailto:contact@normx-ai.com?subject=Souscription%20CGI242");
   };
 
   return (
@@ -77,7 +77,7 @@ export default function PaywallScreen() {
                 {!plan.expired && plan.key !== "free" ? t("paywall.perYear") : ""}
               </Text>
               <Text style={[styles.cellText, styles.cellQuestions, { color: colors.text }]}>
-                {plan.questionsKey === "unlimited" ? t("paywall.unlimited") : plan.questionsKey}
+                {plan.questions}
               </Text>
             </View>
           ))}
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   table: {
     width: "100%",
     maxWidth: 420,
-    borderRadius: 12,
+    borderRadius: 0,
     borderWidth: 1,
     overflow: "hidden",
     marginBottom: 20,
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingVertical: 14,
     paddingHorizontal: 28,
-    borderRadius: 10,
+    borderRadius: 0,
     width: "100%",
     maxWidth: 340,
     marginBottom: 16,
