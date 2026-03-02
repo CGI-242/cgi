@@ -1,16 +1,18 @@
-import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Alert, Platform } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
 import { useState, useEffect, useCallback } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { adminApi, AdminOrganization } from "@/lib/api/admin";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useToast } from "@/components/ui/ToastProvider";
 import AdminStatsGrid from "@/components/admin/AdminStatsGrid";
 import OrganisationCard from "@/components/admin/OrganisationCard";
 
 export default function AdminScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast, confirm } = useToast();
   const [orgs, setOrgs] = useState<AdminOrganization[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -36,60 +38,58 @@ export default function AdminScreen() {
 
   useEffect(() => { loadOrgs(); }, [loadOrgs]);
 
-  const handleActivate = (org: AdminOrganization, plan: "BASIQUE" | "PRO") => {
+  const handleActivate = async (org: AdminOrganization, plan: "BASIQUE" | "PRO") => {
     const n = org.memberCount;
     const unitPrice = plan === "BASIQUE"
       ? (n >= 10 ? 58500 : n >= 5 ? 63750 : n >= 3 ? 67500 : 75000)
       : (n >= 10 ? 92000 : n >= 5 ? 97750 : n >= 3 ? 103500 : 115000);
     const totalPrice = unitPrice * n;
-    const confirmMsg = `Activer le plan ${plan} pour "${org.name}" ?\n${n} membre${n > 1 ? "s" : ""} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
+    const confirmMsg = `${n} membre${n > 1 ? "s" : ""} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(confirmMsg)) return;
-      doActivate(org.id, plan);
-    } else {
-      Alert.alert(t("admin.confirmActivation"), confirmMsg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("security.activate"), onPress: () => doActivate(org.id, plan) },
-      ]);
-    }
+    const ok = await confirm({
+      title: `Activer le plan ${plan} pour "${org.name}" ?`,
+      message: confirmMsg,
+      confirmLabel: t("security.activate"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
+    doActivate(org.id, plan);
   };
 
   const doActivate = async (orgId: string, plan: "BASIQUE" | "PRO") => {
     setActionLoading(orgId);
     try {
       await adminApi.activateSubscription(orgId, plan);
+      toast(t("security.activate") + " — OK", "success");
       await loadOrgs();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(null);
     }
   };
 
-  const handleRenew = (org: AdminOrganization) => {
-    const confirmMsg = `Renouveler l'abonnement de "${org.name}" pour 1 an ?`;
-
-    if (Platform.OS === "web") {
-      if (!window.confirm(confirmMsg)) return;
-      doRenew(org.id);
-    } else {
-      Alert.alert(t("admin.confirmRenewal"), confirmMsg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("admin.renew"), onPress: () => doRenew(org.id) },
-      ]);
-    }
+  const handleRenew = async (org: AdminOrganization) => {
+    const ok = await confirm({
+      title: t("admin.confirmRenewal"),
+      message: `Renouveler l'abonnement de "${org.name}" pour 1 an ?`,
+      confirmLabel: t("admin.renew"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
+    doRenew(org.id);
   };
 
   const doRenew = async (orgId: string) => {
     setActionLoading(orgId);
     try {
       await adminApi.renewSubscription(orgId);
+      toast("Abonnement renouvelé", "success");
       await loadOrgs();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(null);
     }
@@ -125,7 +125,6 @@ export default function AdminScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
-        {/* Stats */}
         <AdminStatsGrid
           totalOrgs={totalOrgs}
           activeCount={activeCount}
@@ -134,7 +133,6 @@ export default function AdminScreen() {
           colors={colors}
         />
 
-        {/* Organisations */}
         {orgs.map(org => (
           <OrganisationCard
             key={org.id}

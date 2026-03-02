@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  Alert,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import {
@@ -16,6 +15,7 @@ import {
 } from "@/lib/api/analytics";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useToast } from "@/components/ui/ToastProvider";
 import PeriodSelector from "@/components/analytics/PeriodSelector";
 import MemberStatsTable from "@/components/analytics/MemberStatsTable";
 
@@ -24,6 +24,7 @@ type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 export default function AnalyticsScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast } = useToast();
   const [dashboard, setDashboard] = useState<DashboardData | null>(null);
   const [timeSeries, setTimeSeries] = useState<TimeSeriesPoint[]>([]);
   const [memberStats, setMemberStats] = useState<MemberStat[]>([]);
@@ -60,10 +61,10 @@ export default function AnalyticsScreen() {
     setExporting(true);
     try {
       await analyticsApi.exportCsv(days);
-      Alert.alert("Export", t("security.exportSuccess"));
+      toast(t("security.exportSuccess"), "success");
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("security.exportError");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setExporting(false);
     }

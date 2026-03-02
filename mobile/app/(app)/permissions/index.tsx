@@ -4,8 +4,6 @@ import {
   Text,
   ScrollView,
   ActivityIndicator,
-  Alert,
-  Platform,
 } from "react-native";
 import { useAuthStore } from "@/lib/store/auth";
 import {
@@ -17,6 +15,7 @@ import {
 import { organizationApi, type OrgMember } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useToast } from "@/components/ui/ToastProvider";
 import MyPermissionsCard from "@/components/permissions/MyPermissionsCard";
 import MemberSelector from "@/components/permissions/MemberSelector";
 import PermissionToggles from "@/components/permissions/PermissionToggles";
@@ -24,6 +23,7 @@ import PermissionToggles from "@/components/permissions/PermissionToggles";
 export default function PermissionsScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast, confirm } = useToast();
   const user = useAuthStore((s) => s.user);
   const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
@@ -73,7 +73,7 @@ export default function PermissionsScreen() {
       setMemberEffective(data);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     }
   }, []);
 
@@ -96,35 +96,30 @@ export default function PermissionsScreen() {
       await loadMemberPerms(userId);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
   };
 
-  const handleReset = (userId: string) => {
-    const msg = t("permissions.resetConfirm");
-    const doReset = async () => {
-      setActionLoading(true);
-      try {
-        await permissionsApi.resetToDefaults(userId);
-        await loadMemberPerms(userId);
-      } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), errMsg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
+  const handleReset = async (userId: string) => {
+    const ok = await confirm({
+      title: t("permissions.reset"),
+      message: t("permissions.resetConfirm"),
+      confirmLabel: t("permissions.reset"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doReset();
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("permissions.reset"), onPress: doReset },
-      ]);
+    setActionLoading(true);
+    try {
+      await permissionsApi.resetToDefaults(userId);
+      await loadMemberPerms(userId);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : t("common.error");
+      toast(errMsg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
@@ -146,12 +141,10 @@ export default function PermissionsScreen() {
           </View>
         )}
 
-        {/* Mes permissions */}
         {myPerms && (
           <MyPermissionsCard myPerms={myPerms} available={available} colors={colors} />
         )}
 
-        {/* Gestion membres (admin/owner only) */}
         {members.length > 0 && (myPerms?.role === "OWNER" || myPerms?.role === "ADMIN") && (
           <>
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>

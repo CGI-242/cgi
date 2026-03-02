@@ -4,8 +4,6 @@ import {
   Text,
   ScrollView,
   ActivityIndicator,
-  Alert,
-  Platform,
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import { router } from "expo-router";
@@ -17,6 +15,7 @@ import {
   type Invitation,
 } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useToast } from "@/components/ui/ToastProvider";
 
 import OrgHeader from "@/components/organisation/OrgHeader";
 import MemberList from "@/components/organisation/MemberList";
@@ -28,6 +27,7 @@ import NoOrganisation from "@/components/organisation/NoOrganisation";
 export default function OrganisationScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast, confirm } = useToast();
   const user = useAuthStore((s) => s.user);
   const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
@@ -42,7 +42,7 @@ export default function OrganisationScreen() {
   const [inviteEmail, setInviteEmail] = useState("");
   const [inviteRole, setInviteRole] = useState<"MEMBER" | "ADMIN">("MEMBER");
 
-  // Cr\u00e9er organisation
+  // Créer organisation
   const [createName, setCreateName] = useState("");
   const [createLoading, setCreateLoading] = useState(false);
 
@@ -88,45 +88,42 @@ export default function OrganisationScreen() {
   const handleInvite = async () => {
     if (!orgId || !inviteEmail.trim()) return;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(inviteEmail.trim())) {
-      Alert.alert(t("common.error"), t("auth.emailInvalid"));
+      toast(t("auth.emailInvalid"), "error");
       return;
     }
     setActionLoading(true);
     try {
       await organizationApi.inviteMember(orgId, inviteEmail.trim(), inviteRole);
       setInviteEmail("");
+      toast("Invitation envoyée", "success");
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
   };
 
-  const handleRemoveMember = (member: OrgMember) => {
+  const handleRemoveMember = async (member: OrgMember) => {
     if (!orgId) return;
-    const msg = `Retirer ${member.name || member.email} de l'organisation ?`;
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doRemoveMember(member.userId);
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("common.delete"), style: "destructive", onPress: () => doRemoveMember(member.userId) },
-      ]);
-    }
-  };
+    const ok = await confirm({
+      title: t("common.confirm"),
+      message: `Retirer ${member.name || member.email} de l'organisation ?`,
+      confirmLabel: t("common.delete"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
 
-  const doRemoveMember = async (userId: string) => {
-    if (!orgId) return;
     setActionLoading(true);
     try {
-      await organizationApi.removeMember(orgId, userId);
+      await organizationApi.removeMember(orgId, member.userId);
+      toast("Membre retiré", "success");
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
@@ -141,7 +138,7 @@ export default function OrganisationScreen() {
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
@@ -155,35 +152,30 @@ export default function OrganisationScreen() {
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
   };
 
-  const handleTransferOwnership = (member: OrgMember) => {
+  const handleTransferOwnership = async (member: OrgMember) => {
     if (!orgId) return;
-    const msg = `Transf\u00e9rer la propri\u00e9t\u00e9 de l'organisation \u00e0 ${member.name || member.email} ? Cette action est irr\u00e9versible.`;
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doTransfer(member.userId);
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("common.confirm"), style: "destructive", onPress: () => doTransfer(member.userId) },
-      ]);
-    }
-  };
+    const ok = await confirm({
+      title: t("common.confirm"),
+      message: `Transférer la propriété de l'organisation à ${member.name || member.email} ? Cette action est irréversible.`,
+      confirmLabel: t("common.confirm"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
 
-  const doTransfer = async (newOwnerId: string) => {
-    if (!orgId) return;
     setActionLoading(true);
     try {
-      await organizationApi.transferOwnership(orgId, newOwnerId);
+      await organizationApi.transferOwnership(orgId, member.userId);
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
@@ -195,11 +187,10 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.createOrganization(createName.trim());
       setCreateName("");
-      // Recharger la page pour refl\u00e9ter la nouvelle org
       router.replace("/(app)/organisation");
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setCreateLoading(false);
     }
@@ -215,42 +206,32 @@ export default function OrganisationScreen() {
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
   };
 
-  const handleDeleteOrg = () => {
+  const handleDeleteOrg = async () => {
     if (!orgId) return;
-    const msg = "Supprimer l'organisation ? Cette action est r\u00e9versible pendant 30 jours.";
-    const doDelete = async () => {
-      // Double confirmation
-      const msg2 = "\u00cates-vous vraiment s\u00fbr ? Tapez 'SUPPRIMER' pour confirmer.";
-      if (Platform.OS === "web") {
-        const input = window.prompt(msg2);
-        if (input !== "SUPPRIMER") return;
-      }
-      setActionLoading(true);
-      try {
-        await organizationApi.deleteOrganization(orgId);
-        router.replace("/(app)/organisation");
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), msg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
+    const ok = await confirm({
+      title: t("organization.delete"),
+      message: "Supprimer l'organisation ? Cette action est réversible pendant 30 jours.",
+      confirmLabel: t("common.delete"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doDelete();
-    } else {
-      Alert.alert(t("organization.delete"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("common.delete"), style: "destructive", onPress: doDelete },
-      ]);
+    setActionLoading(true);
+    try {
+      await organizationApi.deleteOrganization(orgId);
+      router.replace("/(app)/organisation");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
@@ -259,39 +240,36 @@ export default function OrganisationScreen() {
     setActionLoading(true);
     try {
       await organizationApi.restoreOrganization(orgId);
+      toast("Organisation restaurée", "success");
       await loadData();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
   };
 
-  const handlePermanentDelete = () => {
+  const handlePermanentDelete = async () => {
     if (!orgId) return;
-    const msg = "Supprimer d\u00e9finitivement l'organisation ? Cette action est IRR\u00c9VERSIBLE.";
-    const doPermDelete = async () => {
-      setActionLoading(true);
-      try {
-        await organizationApi.permanentDeleteOrganization(orgId);
-        router.replace("/(app)/organisation");
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), msg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
+    const ok = await confirm({
+      title: t("organization.permanentDelete"),
+      message: "Supprimer définitivement l'organisation ? Cette action est IRRÉVERSIBLE.",
+      confirmLabel: t("organization.permanentDelete"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doPermDelete();
-    } else {
-      Alert.alert(t("organization.permanentDelete"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("organization.permanentDelete"), style: "destructive", onPress: doPermDelete },
-      ]);
+    setActionLoading(true);
+    try {
+      await organizationApi.permanentDeleteOrganization(orgId);
+      router.replace("/(app)/organisation");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
@@ -325,7 +303,6 @@ export default function OrganisationScreen() {
           </View>
         )}
 
-        {/* D\u00e9tails organisation */}
         {org && (
           <OrgHeader
             org={org}
@@ -347,7 +324,6 @@ export default function OrganisationScreen() {
           />
         )}
 
-        {/* Liste membres */}
         <MemberList
           members={members}
           isAdmin={isAdmin}
@@ -360,7 +336,6 @@ export default function OrganisationScreen() {
           colors={colors}
         />
 
-        {/* Section inviter */}
         {isAdmin && (
           <InviteForm
             inviteEmail={inviteEmail}
@@ -373,7 +348,6 @@ export default function OrganisationScreen() {
           />
         )}
 
-        {/* Invitations en attente */}
         <PendingInvitations
           invitations={invitations}
           isAdmin={isAdmin}
@@ -381,7 +355,6 @@ export default function OrganisationScreen() {
           colors={colors}
         />
 
-        {/* Actions OWNER : Supprimer / Restaurer org */}
         {isOwner && (
           <DangerZone
             actionLoading={actionLoading}

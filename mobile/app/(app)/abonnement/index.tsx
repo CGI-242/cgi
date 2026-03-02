@@ -6,14 +6,13 @@ import {
   ScrollView,
   ActivityIndicator,
   Linking,
-  Alert,
-  Platform,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { subscriptionApi, type QuotaResponse } from "@/lib/api/subscription";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useToast } from "@/components/ui/ToastProvider";
 import PlanHeader, { PLAN_COLORS, STATUS_COLORS } from "@/components/abonnement/PlanHeader";
 import QuotaProgress from "@/components/abonnement/QuotaProgress";
 import PeriodInfo from "@/components/abonnement/PeriodInfo";
@@ -23,6 +22,7 @@ import SubscriptionActions from "@/components/abonnement/SubscriptionActions";
 export default function AbonnementScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast, confirm } = useToast();
   const user = useAuthStore((s) => s.user);
   const [quota, setQuota] = useState<QuotaResponse | null>(null);
   const [loading, setLoading] = useState(true);
@@ -51,61 +51,67 @@ export default function AbonnementScreen() {
     loadQuota();
   }, [loadQuota]);
 
-  const confirmAction = (message: string, action: () => Promise<void>) => {
-    if (Platform.OS === "web") {
-      if (!window.confirm(message)) return;
-      action();
-    } else {
-      Alert.alert(t("common.confirm"), message, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("common.confirm"), onPress: () => action() },
-      ]);
+  const handleActivate = async (planName: string) => {
+    const ok = await confirm({
+      title: t("common.confirm"),
+      message: `Activer le plan ${planName} ?`,
+      confirmLabel: t("common.confirm"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
+    setActionLoading(true);
+    try {
+      await subscriptionApi.activate(planName);
+      toast("Plan activé", "success");
+      await loadQuota();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
-  const handleActivate = (planName: string) => {
-    confirmAction(`Activer le plan ${planName} ?`, async () => {
-      setActionLoading(true);
-      try {
-        await subscriptionApi.activate(planName);
-        await loadQuota();
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), msg);
-      } finally {
-        setActionLoading(false);
-      }
+  const handleRenew = async () => {
+    const ok = await confirm({
+      title: t("common.confirm"),
+      message: t("abonnement.renewSubscription"),
+      confirmLabel: t("common.confirm"),
+      cancelLabel: t("common.cancel"),
     });
+    if (!ok) return;
+    setActionLoading(true);
+    try {
+      await subscriptionApi.renew();
+      toast("Abonnement renouvelé", "success");
+      await loadQuota();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
+    }
   };
 
-  const handleRenew = () => {
-    confirmAction(t("abonnement.renewSubscription"), async () => {
-      setActionLoading(true);
-      try {
-        await subscriptionApi.renew();
-        await loadQuota();
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), msg);
-      } finally {
-        setActionLoading(false);
-      }
+  const handleUpgrade = async () => {
+    const ok = await confirm({
+      title: t("common.confirm"),
+      message: t("abonnement.upgradeToPro"),
+      confirmLabel: t("common.confirm"),
+      cancelLabel: t("common.cancel"),
     });
-  };
-
-  const handleUpgrade = () => {
-    confirmAction(t("abonnement.upgradeToPro"), async () => {
-      setActionLoading(true);
-      try {
-        await subscriptionApi.upgrade("PRO");
-        await loadQuota();
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), msg);
-      } finally {
-        setActionLoading(false);
-      }
-    });
+    if (!ok) return;
+    setActionLoading(true);
+    try {
+      await subscriptionApi.upgrade("PRO");
+      toast("Plan mis à jour", "success");
+      await loadQuota();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
+    }
   };
 
   if (loading) {

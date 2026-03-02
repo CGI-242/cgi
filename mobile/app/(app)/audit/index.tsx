@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
-import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Platform, Alert } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { auditApi, type AuditLog, type AuditStats } from "@/lib/api/audit";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useToast } from "@/components/ui/ToastProvider";
 
 import AuditToolbar from "@/components/audit/AuditToolbar";
 import AuditStatsCards from "@/components/audit/AuditStatsCards";
@@ -13,6 +14,7 @@ import EntityHistoryModal from "@/components/audit/EntityHistoryModal";
 
 export default function AuditScreen() {
   const { colors } = useTheme();
+  const { toast, confirm } = useToast();
   const user = useAuthStore((s) => s.user);
   const isOwner = user?.role === "OWNER";
 
@@ -60,32 +62,40 @@ export default function AuditScreen() {
       const result = await auditApi.getEntityHistory(log.entityType, log.entityId);
       setEntityHistory(result.logs);
     } catch (err: unknown) {
-      Alert.alert("Erreur", err instanceof Error ? err.message : "Erreur");
+      toast(err instanceof Error ? err.message : "Erreur", "error");
       setShowEntityHistory(false);
     } finally {
       setEntityHistoryLoading(false);
     }
   };
 
-  const handleCleanup = () => {
+  const handleCleanup = async () => {
     const days = parseInt(retentionDays, 10);
-    if (isNaN(days) || days < 1) { Alert.alert("Erreur", "Nombre de jours invalide"); return; }
-    const msg = `Supprimer les logs d'audit de plus de ${days} jours ? Cette action est irréversible.`;
-    const doCleanup = async () => {
-      setActionLoading(true);
-      try {
-        const result = await auditApi.cleanup(days);
-        Alert.alert("Nettoyage terminé", `${result.deletedCount} log(s) supprimé(s).`);
-        setShowCleanup(false);
-        await loadData();
-      } catch (err: unknown) {
-        Alert.alert("Erreur", err instanceof Error ? err.message : "Erreur");
-      } finally {
-        setActionLoading(false);
-      }
-    };
-    if (Platform.OS === "web") { if (!window.confirm(msg)) return; doCleanup(); }
-    else { Alert.alert("Nettoyage RGPD", msg, [{ text: "Annuler", style: "cancel" }, { text: "Supprimer", style: "destructive", onPress: doCleanup }]); }
+    if (isNaN(days) || days < 1) {
+      toast("Nombre de jours invalide", "error");
+      return;
+    }
+
+    const ok = await confirm({
+      title: "Nettoyage RGPD",
+      message: `Supprimer les logs d'audit de plus de ${days} jours ? Cette action est irréversible.`,
+      confirmLabel: "Supprimer",
+      cancelLabel: "Annuler",
+      destructive: true,
+    });
+    if (!ok) return;
+
+    setActionLoading(true);
+    try {
+      const result = await auditApi.cleanup(days);
+      toast(`${result.deletedCount} log(s) supprimé(s)`, "success");
+      setShowCleanup(false);
+      await loadData();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : "Erreur", "error");
+    } finally {
+      setActionLoading(false);
+    }
   };
 
   const handleFilterChange = (action: string | null) => { setFilterAction(action); setPage(1); };

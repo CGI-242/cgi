@@ -7,12 +7,12 @@ import {
   ActivityIndicator,
   Platform,
   Switch,
-  Alert,
 } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useToast } from "@/components/ui/ToastProvider";
 import { userApi, type SubscriptionInfo, type UserStats } from "@/lib/api/user";
 import ActivityStats from "@/components/settings/ActivityStats";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -33,6 +33,7 @@ export default function ParametresScreen() {
   const { t, i18n } = useTranslation();
   const user = useAuthStore((s) => s.user);
   const { mode, toggleTheme, colors } = useTheme();
+  const { confirm } = useToast();
   const [subscription, setSubscription] = useState<SubscriptionInfo | null>(null);
   const [stats, setStats] = useState<UserStats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -85,15 +86,14 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="lock-closed-outline"
             label={t("settings.changePassword")}
-            onPress={() => {
-              Alert.alert(
-                t("settings.changePassword"),
-                t("settings.changePasswordConfirm"),
-                [
-                  { text: t("common.cancel"), style: "cancel" },
-                  { text: t("auth.continue"), onPress: () => router.push("/(auth)/forgot-password") },
-                ]
-              );
+            onPress={async () => {
+              const ok = await confirm({
+                title: t("settings.changePassword"),
+                message: t("settings.changePasswordConfirm"),
+                confirmLabel: t("auth.continue"),
+                cancelLabel: t("common.cancel"),
+              });
+              if (ok) router.push("/(auth)/forgot-password");
             }}
             showChevron
             colors={colors}

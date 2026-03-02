@@ -4,8 +4,6 @@ import {
   Text,
   ScrollView,
   ActivityIndicator,
-  Alert,
-  Platform,
 } from "react-native";
 import * as Clipboard from "expo-clipboard";
 import { useTranslation } from "react-i18next";
@@ -13,6 +11,7 @@ import { mfaApi, type MfaStatus, type MfaSetupResult } from "@/lib/api/mfa";
 import { authApi } from "@/lib/api/auth";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useToast } from "@/components/ui/ToastProvider";
 import MfaStatusCard from "@/components/securite/MfaStatusCard";
 import MfaSetupFlow from "@/components/securite/MfaSetupFlow";
 import BackupCodesDisplay from "@/components/securite/BackupCodesDisplay";
@@ -23,6 +22,7 @@ type SetupStep = "idle" | "qr" | "verify" | "backup";
 export default function SecuriteScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { toast, confirm } = useToast();
   const logout = useAuthStore((s) => s.logout);
   const [status, setStatus] = useState<MfaStatus | null>(null);
   const [loading, setLoading] = useState(true);
@@ -65,7 +65,7 @@ export default function SecuriteScreen() {
       setSetupStep("qr");
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
@@ -82,7 +82,7 @@ export default function SecuriteScreen() {
       await loadStatus();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("security.invalidCode");
-      Alert.alert(t("common.error"), msg);
+      toast(msg, "error");
     } finally {
       setActionLoading(false);
     }
@@ -90,92 +90,81 @@ export default function SecuriteScreen() {
 
   const handleDisableMfa = async () => {
     if (!disablePassword.trim()) return;
-    const msg = t("security.disableConfirmMsg");
-    const doDisable = async () => {
-      setActionLoading(true);
-      try {
-        await mfaApi.disable(disablePassword.trim());
-        setDisablePassword("");
-        setShowDisable(false);
-        await loadStatus();
-      } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), errMsg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doDisable();
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("security.disable"), style: "destructive", onPress: doDisable },
-      ]);
+    const ok = await confirm({
+      title: t("security.disable2fa"),
+      message: t("security.disableConfirmMsg"),
+      confirmLabel: t("security.disable"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
+
+    setActionLoading(true);
+    try {
+      await mfaApi.disable(disablePassword.trim());
+      setDisablePassword("");
+      setShowDisable(false);
+      toast("2FA désactivée", "success");
+      await loadStatus();
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : t("common.error");
+      toast(errMsg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
   const handleRegenerateBackupCodes = async () => {
-    const msg = t("security.regenerateConfirm");
-    const doRegenerate = async () => {
-      setActionLoading(true);
-      try {
-        const result = await mfaApi.regenerateBackupCodes();
-        setBackupCodes(result.backupCodes);
-        setSetupStep("backup");
-      } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), errMsg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
+    const ok = await confirm({
+      title: t("security.regenerateBackup"),
+      message: t("security.regenerateConfirm"),
+      confirmLabel: t("security.regenerate"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doRegenerate();
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("security.regenerate"), onPress: doRegenerate },
-      ]);
+    setActionLoading(true);
+    try {
+      const result = await mfaApi.regenerateBackupCodes();
+      setBackupCodes(result.backupCodes);
+      setSetupStep("backup");
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : t("common.error");
+      toast(errMsg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
-  const handleLogoutAll = () => {
-    const msg = t("security.logoutAllConfirm");
-    const doLogoutAll = async () => {
-      setActionLoading(true);
-      try {
-        await authApi.logoutAll();
-        await logout();
-      } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : t("common.error");
-        Alert.alert(t("common.error"), errMsg);
-      } finally {
-        setActionLoading(false);
-      }
-    };
+  const handleLogoutAll = async () => {
+    const ok = await confirm({
+      title: t("security.logoutAllDevices"),
+      message: t("security.logoutAllConfirm"),
+      confirmLabel: t("security.logoutAll"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
 
-    if (Platform.OS === "web") {
-      if (!window.confirm(msg)) return;
-      doLogoutAll();
-    } else {
-      Alert.alert(t("common.confirm"), msg, [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("security.logoutAll"), style: "destructive", onPress: doLogoutAll },
-      ]);
+    setActionLoading(true);
+    try {
+      await authApi.logoutAll();
+      await logout();
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : t("common.error");
+      toast(errMsg, "error");
+    } finally {
+      setActionLoading(false);
     }
   };
 
   const copyBackupCodes = async () => {
     try {
       await Clipboard.setStringAsync(backupCodes.join("\n"));
-      Alert.alert(t("common.confirm"), t("security.codesCopied"));
+      toast(t("security.codesCopied"), "success");
     } catch {
-      Alert.alert(t("common.error"), t("security.codesCopyError"));
+      toast(t("security.codesCopyError"), "error");
     }
   };
 

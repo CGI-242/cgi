@@ -8,6 +8,7 @@ import * as SplashScreen from "expo-splash-screen";
 import * as ScreenCapture from "expo-screen-capture";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider, useTheme } from "@/lib/theme/ThemeContext";
+import ToastProvider from "@/components/ui/ToastProvider";
 import { initSentry, Sentry } from "@/lib/sentry";
 
 initSentry();
@@ -42,13 +43,15 @@ function RootLayout() {
 
   return (
     <ThemeProvider>
-      <ErrorBoundary>
-        <ThemedStatusBar />
-        <Stack screenOptions={{ headerShown: false, title: "CGI242" }}>
-          <Stack.Screen name="(auth)" options={{ title: "CGI242" }} />
-          <Stack.Screen name="(app)" options={{ title: "CGI242" }} />
-        </Stack>
-      </ErrorBoundary>
+      <ToastProvider>
+        <ErrorBoundary>
+          <ThemedStatusBar />
+          <Stack screenOptions={{ headerShown: false, title: "CGI242" }}>
+            <Stack.Screen name="(auth)" options={{ title: "CGI242" }} />
+            <Stack.Screen name="(app)" options={{ title: "CGI242" }} />
+          </Stack>
+        </ErrorBoundary>
+      </ToastProvider>
     </ThemeProvider>
   );
 }

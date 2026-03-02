@@ -9,7 +9,6 @@ import {
   ScrollView,
   KeyboardAvoidingView,
   Platform,
-  Alert,
 } from "react-native";
 import {
   sendMessageStream,
@@ -29,6 +28,7 @@ import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineQueue } from "@/lib/store/offlineQueue";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useToast } from "@/components/ui/ToastProvider";
 import { createLogger } from "@/lib/utils/logger";
 
 const log = createLogger("chat");
@@ -46,6 +46,7 @@ const HISTORY_WIDTH = 260;
 export default function ChatScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { toast, confirm } = useToast();
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
   const [input, setInput] = useState("");
   const [isStreaming, setIsStreaming] = useState(false);
@@ -181,27 +182,27 @@ export default function ChatScreen() {
   }, []);
 
   const handleDeleteConversation = useCallback(
-    (id: string, title: string | null) => {
-      Alert.alert(t("chat.deleteConversation"), `${t("chat.deleteConversation")} "${title || t("chat.untitled")}" ?`, [
-        { text: t("common.cancel"), style: "cancel" },
-        {
-          text: t("chat.deleteConversation"),
-          style: "destructive",
-          onPress: async () => {
-            try {
-              await deleteConversation(id);
-              setConversations((prev) => prev.filter((c) => c.id !== id));
-              if (id === conversationId) {
-                setMessages([]);
-                setConversationId(null);
-                setStreamingContent("");
-              }
-            } catch {
-              Alert.alert(t("chat.errorPrefix"), t("chat.connectionError"));
-            }
-          },
-        },
-      ]);
+    async (id: string, title: string | null) => {
+      const ok = await confirm({
+        title: t("chat.deleteConversation"),
+        message: `${t("chat.deleteConversation")} "${title || t("chat.untitled")}" ?`,
+        confirmLabel: t("common.delete"),
+        cancelLabel: t("common.cancel"),
+        destructive: true,
+      });
+      if (!ok) return;
+
+      try {
+        await deleteConversation(id);
+        setConversations((prev) => prev.filter((c) => c.id !== id));
+        if (id === conversationId) {
+          setMessages([]);
+          setConversationId(null);
+          setStreamingContent("");
+        }
+      } catch {
+        toast(t("chat.connectionError"), "error");
+      }
     },
     [conversationId]
   );
