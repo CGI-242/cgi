@@ -39,34 +39,122 @@ async function sendMail(to: string, subject: string, html: string): Promise<void
 }
 
 export class EmailService {
+  /**
+   * Template email générique avec le style CGI-242
+   */
+  private static emailLayout(content: string): string {
+    return `
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8" /></head>
+<body style="margin: 0; padding: 0; background-color: #f4f5f7; font-family: Arial, Helvetica, sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f5f7; padding: 32px 0;">
+    <tr><td align="center">
+      <table width="560" cellpadding="0" cellspacing="0" style="max-width: 560px; width: 100%;">
+
+        <!-- Header -->
+        <tr>
+          <td style="background-color: #00815d; padding: 24px 32px; text-align: center;">
+            <span style="color: #ffffff; font-size: 22px; font-weight: bold; letter-spacing: 1px;">CGI 242</span>
+            <br/>
+            <span style="color: #ffffffcc; font-size: 12px;">Code Général des Impôts du Congo — Intelligence Fiscale</span>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="background-color: #ffffff; padding: 32px;">
+            ${content}
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color: #f9fafb; padding: 20px 32px; border-top: 1px solid #e5e7eb;">
+            <p style="margin: 0 0 8px 0; font-size: 11px; color: #9ca3af; font-weight: bold;">POUR VOTRE SÉCURITÉ :</p>
+            <p style="margin: 0; font-size: 11px; color: #9ca3af; line-height: 18px;">
+              Vérifiez toujours le nom et l'adresse de l'expéditeur des messages avant de les ouvrir.<br/>
+              Ne communiquez jamais votre code de vérification à un tiers.<br/>
+              CGI 242 ne vous demandera jamais votre mot de passe par email.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Copyright -->
+        <tr>
+          <td style="padding: 16px 32px; text-align: center;">
+            <p style="margin: 0; font-size: 11px; color: #9ca3af;">
+              © ${new Date().getFullYear()} CGI 242 — NormX AI · contact@normx-ai.com
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+  }
+
   static async sendOtp(email: string, otp: string): Promise<void> {
-    const subject = 'CGI-242 — Votre code de vérification';
-    const html = `
-      <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
-        <p>Votre code de vérification :</p>
-        <div style="background: #f3f4f6; padding: 20px; text-align: center; border-radius: 8px; margin: 20px 0;">
-          <span style="font-size: 32px; font-weight: bold; letter-spacing: 8px; color: #1a56db;">${otp}</span>
-        </div>
-        <p style="color: #6b7280; font-size: 14px;">Ce code expire dans 15 minutes. Ne le partagez avec personne.</p>
+    const subject = 'CGI 242 — Votre code de vérification';
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Pour sécuriser votre connexion à votre espace CGI 242, voici votre code de vérification :
+      </p>
+
+      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #00815d;">${otp}</span>
       </div>
-    `;
+
+      <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
+        ⏱ Attention : ce code est valable pendant 10 minutes.
+      </p>
+
+      <p style="margin: 0 0 12px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Si vous n'êtes pas à l'origine de cette connexion, nous vous invitons à :
+      </p>
+      <ul style="margin: 0 0 24px 0; padding-left: 20px; font-size: 14px; color: #6b7280; line-height: 22px;">
+        <li>Changer votre mot de passe immédiatement</li>
+        <li>Vérifier l'activité récente de votre compte</li>
+      </ul>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
     await sendMail(email, subject, html);
   }
 
   static async sendPasswordReset(email: string, code: string): Promise<void> {
-    const subject = 'CGI-242 — Réinitialisation de mot de passe';
-    const html = `
-      <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
-        <p>Vous avez demandé une réinitialisation de mot de passe.</p>
-        <p>Votre code de réinitialisation :</p>
-        <div style="background: #f3f4f6; padding: 20px; text-align: center; border-radius: 8px; margin: 20px 0;">
-          <span style="font-size: 32px; font-weight: bold; letter-spacing: 8px; color: #1a56db;">${code}</span>
-        </div>
-        <p style="color: #6b7280; font-size: 14px;">Ce code expire dans 15 minutes. Si vous n'avez pas fait cette demande, ignorez cet email.</p>
+    const subject = 'CGI 242 — Réinitialisation de mot de passe';
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Vous avez demandé une réinitialisation de mot de passe pour votre compte CGI 242. Voici votre code :
+      </p>
+
+      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #00815d;">${code}</span>
       </div>
-    `;
+
+      <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
+        ⏱ Attention : ce code est valable pendant 15 minutes.
+      </p>
+
+      <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Si vous n'avez pas fait cette demande, ignorez simplement cet email. Votre mot de passe restera inchangé.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
     await sendMail(email, subject, html);
   }
 
