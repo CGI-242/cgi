@@ -5,9 +5,15 @@ import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PLANS = [
-  { key: "free", questions: "5", priceLabel: "0 XAF", expired: true },
-  { key: "basic", questions: "20", priceLabel: "50 000 XAF" },
-  { key: "pro", questions: "50", priceLabel: "70 000 XAF" },
+  { key: "free", questions: "5 total", price: "0 XAF", launchPrice: null, expired: true },
+  { key: "basic", questions: "15/mois", price: "75 000 XAF", launchPrice: "65 000 XAF", expired: false },
+  { key: "pro", questions: "30/mois", price: "115 000 XAF", launchPrice: "100 000 XAF", expired: false },
+];
+
+const PACKS = [
+  { name: "Pack 10", questions: 10, price: "6 000 XAF" },
+  { name: "Pack 30", questions: 30, price: "15 000 XAF" },
+  { name: "Pack 60", questions: 60, price: "30 000 XAF" },
 ];
 
 export default function PaywallScreen() {
@@ -37,7 +43,10 @@ export default function PaywallScreen() {
           {t("paywall.subtitle")}
         </Text>
 
-        {/* Tableau comparatif */}
+        {/* Tableau abonnements */}
+        <Text style={[styles.sectionTitle, { color: colors.text }]}>
+          {t("paywall.subscriptions")}
+        </Text>
         <View style={[styles.table, { backgroundColor: colors.card, borderColor: colors.border }]}>
           {/* En-tête */}
           <View style={[styles.tableRow, styles.tableHeader, { borderBottomColor: colors.border }]}>
@@ -45,7 +54,10 @@ export default function PaywallScreen() {
               {t("paywall.plan")}
             </Text>
             <Text style={[styles.cellHeader, styles.cellPrice, { color: colors.textSecondary }]}>
-              {t("paywall.price")}
+              {t("paywall.launchPrice")}
+            </Text>
+            <Text style={[styles.cellHeader, styles.cellPrice, { color: colors.textSecondary }]}>
+              {t("paywall.normalPrice")}
             </Text>
             <Text style={[styles.cellHeader, styles.cellQuestions, { color: colors.textSecondary }]}>
               {t("paywall.questions")}
@@ -72,13 +84,59 @@ export default function PaywallScreen() {
                   </Text>
                 )}
               </View>
+              <Text style={[styles.cellText, styles.cellPrice, { color: plan.launchPrice ? colors.primary : colors.text, fontWeight: plan.launchPrice ? "700" : "400" }]}>
+                {plan.launchPrice || "—"}
+              </Text>
               <Text style={[styles.cellText, styles.cellPrice, { color: colors.text }]}>
-                {plan.priceLabel}
-                {!plan.expired && plan.key !== "free" ? t("paywall.perYear") : ""}
+                {plan.price}
               </Text>
               <Text style={[styles.cellText, styles.cellQuestions, { color: colors.text }]}>
                 {plan.questions}
               </Text>
+            </View>
+          ))}
+        </View>
+
+        {/* Badge lancement */}
+        <View style={[styles.launchBadge, { backgroundColor: colors.primary + "15" }]}>
+          <Ionicons name="gift-outline" size={16} color={colors.primary} style={{ marginRight: 6 }} />
+          <Text style={[styles.launchText, { color: colors.primary }]}>
+            {t("paywall.launchOffer")}
+          </Text>
+        </View>
+
+        {/* Remises volume */}
+        <Text style={[styles.sectionTitle, { color: colors.text, marginTop: 24 }]}>
+          {t("paywall.volumeDiscounts")}
+        </Text>
+        <View style={[styles.table, { backgroundColor: colors.card, borderColor: colors.border }]}>
+          <View style={[styles.tableRow, styles.tableHeader, { borderBottomColor: colors.border }]}>
+            <Text style={[styles.cellHeader, { flex: 1, color: colors.textSecondary }]}>{t("paywall.users")}</Text>
+            <Text style={[styles.cellHeader, { flex: 1, textAlign: "center", color: colors.textSecondary }]}>{t("paywall.discount")}</Text>
+          </View>
+          {[{ users: "3-4", discount: "-10%" }, { users: "5-9", discount: "-15%" }, { users: "10+", discount: "-20%" }].map((row, i, arr) => (
+            <View key={row.users} style={[styles.tableRow, i < arr.length - 1 && { borderBottomWidth: 1, borderBottomColor: colors.border }]}>
+              <Text style={[styles.cellText, { flex: 1, color: colors.text }]}>{row.users} users</Text>
+              <Text style={[styles.cellText, { flex: 1, textAlign: "center", color: colors.primary, fontWeight: "700" }]}>{row.discount}</Text>
+            </View>
+          ))}
+        </View>
+
+        {/* Packs questions */}
+        <Text style={[styles.sectionTitle, { color: colors.text, marginTop: 24 }]}>
+          {t("paywall.questionPacks")}
+        </Text>
+        <View style={[styles.table, { backgroundColor: colors.card, borderColor: colors.border }]}>
+          <View style={[styles.tableRow, styles.tableHeader, { borderBottomColor: colors.border }]}>
+            <Text style={[styles.cellHeader, { flex: 1, color: colors.textSecondary }]}>Pack</Text>
+            <Text style={[styles.cellHeader, { flex: 1, textAlign: "center", color: colors.textSecondary }]}>{t("paywall.questions")}</Text>
+            <Text style={[styles.cellHeader, { flex: 1, textAlign: "center", color: colors.textSecondary }]}>{t("paywall.price")}</Text>
+          </View>
+          {PACKS.map((pack, i) => (
+            <View key={pack.name} style={[styles.tableRow, i < PACKS.length - 1 && { borderBottomWidth: 1, borderBottomColor: colors.border }]}>
+              <Text style={[styles.cellText, { flex: 1, color: colors.text, fontWeight: "700" }]}>{pack.name}</Text>
+              <Text style={[styles.cellText, { flex: 1, textAlign: "center", color: colors.text }]}>{pack.questions}</Text>
+              <Text style={[styles.cellText, { flex: 1, textAlign: "center", color: colors.text }]}>{pack.price}</Text>
             </View>
           ))}
         </View>
@@ -121,7 +179,6 @@ const styles = StyleSheet.create({
   scroll: {
     flexGrow: 1,
     alignItems: "center",
-    justifyContent: "center",
     paddingHorizontal: 24,
     paddingVertical: 40,
   },
@@ -144,56 +201,78 @@ const styles = StyleSheet.create({
     textAlign: "center",
     lineHeight: 22,
     marginBottom: 28,
-    maxWidth: 340,
+    maxWidth: 400,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    marginBottom: 10,
+    alignSelf: "flex-start",
+    maxWidth: 520,
+    width: "100%",
   },
   table: {
     width: "100%",
-    maxWidth: 420,
+    maxWidth: 520,
     borderRadius: 0,
     borderWidth: 1,
     overflow: "hidden",
-    marginBottom: 20,
+    marginBottom: 12,
   },
   tableRow: {
     flexDirection: "row",
-    paddingVertical: 12,
-    paddingHorizontal: 14,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
     alignItems: "center",
   },
   tableHeader: {
     borderBottomWidth: 1,
   },
   cellHeader: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: "700",
     textTransform: "uppercase",
     letterSpacing: 0.5,
   },
   cellPlan: {
-    flex: 1.2,
+    flex: 1,
   },
   cellPrice: {
-    flex: 1.3,
+    flex: 1.2,
     textAlign: "center",
   },
   cellQuestions: {
-    flex: 1,
+    flex: 0.9,
     textAlign: "center",
   },
   cellText: {
-    fontSize: 14,
+    fontSize: 13,
   },
   expiredBadge: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: "600",
     marginTop: 2,
+  },
+  launchBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    width: "100%",
+    maxWidth: 520,
+    marginBottom: 4,
+  },
+  launchText: {
+    fontSize: 12,
+    fontWeight: "600",
   },
   contactDesc: {
     fontSize: 13,
     textAlign: "center",
     lineHeight: 20,
+    marginTop: 20,
     marginBottom: 20,
-    maxWidth: 360,
+    maxWidth: 400,
   },
   ctaButton: {
     flexDirection: "row",
