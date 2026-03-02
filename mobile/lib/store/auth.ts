@@ -148,9 +148,14 @@ export const useAuthStore = create<AuthState>()(
             set({ user: null, isAuthenticated: false, step: "email" });
           }
         }
-        // Web : les cookies httpOnly sont gérés par le navigateur
-        // Si le cookie a expiré, la prochaine requête API retournera 401
-        // et l'interceptor déclenchera le logout automatiquement
+        // Web : vérifier que les cookies httpOnly sont encore valides
+        if (isWeb) {
+          try {
+            await api.get("/user/profile", { _skipAuthRetry: true } as any);
+          } catch {
+            set({ user: null, isAuthenticated: false, step: "email" });
+          }
+        }
       },
     }),
     {
