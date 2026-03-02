@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Redirect, Stack, usePathname, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -8,6 +8,8 @@ import { useOfflineSync } from "@/lib/hooks/useOfflineSync";
 import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import Sidebar from "@/components/Sidebar";
 import SessionExpiredModal from "@/components/SessionExpiredModal";
+import PaywallScreen from "@/components/paywall/PaywallScreen";
+import { subscriptionApi } from "@/lib/api/subscription";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 
@@ -63,12 +65,27 @@ export default function AppLayout() {
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [subStatus, setSubStatus] = useState<string | null>(null);
+  const [subLoading, setSubLoading] = useState(true);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      subscriptionApi.getQuota()
+        .then((q) => setSubStatus(q.status))
+        .catch(() => setSubStatus(null))
+        .finally(() => setSubLoading(false));
+    }
+  }, [isAuthenticated]);
 
   if (!isAuthenticated) {
     if (loggedOut) {
       return <Redirect href="/(auth)/logout" />;
     }
     return <Redirect href="/(auth)" />;
+  }
+
+  if (!subLoading && subStatus === "EXPIRED") {
+    return <PaywallScreen />;
   }
 
   const isHome = pathname === "/" || pathname === "/(app)";
