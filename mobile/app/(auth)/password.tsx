@@ -55,7 +55,7 @@ export default function LoginPassword() {
         <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
           {/* Bouton retour */}
           <TouchableOpacity
-            onPress={() => router.back()}
+            onPress={() => router.replace("/(auth)/")}
             style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}
           >
             <Ionicons name="arrow-back" size={22} color={colors.primary} />
@@ -79,7 +79,7 @@ export default function LoginPassword() {
           {/* Email affiché */}
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 14, color: colors.textMuted, flex: 1 }}>{email}</Text>
-            <TouchableOpacity onPress={() => router.back()}>
+            <TouchableOpacity onPress={() => router.replace("/(auth)/")}>
               <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600" }}>
                 {t("common.modify")}
               </Text>

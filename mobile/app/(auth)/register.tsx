@@ -243,7 +243,7 @@ export default function Register() {
           {/* Lien connexion */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 24 }}>
             <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("auth.alreadyHaveAccount")} </Text>
-            <TouchableOpacity onPress={() => router.back()}>
+            <TouchableOpacity onPress={() => router.replace("/(auth)/")}>
               <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
                 {t("auth.signIn")}
               </Text>
