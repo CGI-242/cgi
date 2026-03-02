@@ -58,7 +58,8 @@ export default function MyPermissionsCard({ myPerms, available, colors }: MyPerm
           </View>
         </View>
         {available.map((perm) => {
-          const hasIt = myPerms.permissions.includes(perm.key);
+          const perms = Array.isArray(myPerms.permissions) ? myPerms.permissions : [];
+          const hasIt = perms.includes(perm.key);
           return (
             <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6 }}>
               <Ionicons name={hasIt ? "checkmark-circle" : "close-circle"} size={18} color={hasIt ? "#16a34a" : "#dc2626"} style={{ marginRight: 10 }} />

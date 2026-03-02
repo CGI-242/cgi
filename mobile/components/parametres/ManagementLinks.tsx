@@ -1,6 +1,7 @@
 import { View } from "react-native";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
+import { useAuthStore } from "@/lib/store/auth";
 import type { ThemeColors } from "@/lib/theme/colors";
 import SettingsRow, { Divider } from "./SettingsRow";
 
@@ -10,6 +11,8 @@ interface Props {
 
 export default function ManagementLinks({ colors }: Props) {
   const { t } = useTranslation();
+  const user = useAuthStore((s) => s.user);
+  const isAdmin = user?.role === "ADMIN";
 
   return (
     <View style={{ backgroundColor: colors.card, overflow: "hidden" as const, marginBottom: 4 }}>
@@ -52,14 +55,18 @@ export default function ManagementLinks({ colors }: Props) {
         showChevron
         colors={colors}
       />
-      <Divider colors={colors} />
-      <SettingsRow
-        icon="shield-checkmark-outline"
-        label={t("settings.managementAdmin")}
-        onPress={() => router.push("/(app)/admin")}
-        showChevron
-        colors={colors}
-      />
+      {isAdmin && (
+        <>
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="shield-checkmark-outline"
+            label={t("settings.managementAdmin")}
+            onPress={() => router.push("/(app)/admin")}
+            showChevron
+            colors={colors}
+          />
+        </>
+      )}
     </View>
   );
 }
