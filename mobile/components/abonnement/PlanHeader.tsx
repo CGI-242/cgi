@@ -37,10 +37,10 @@ const PLANS_INFO = [
   },
   {
     name: "BASIQUE",
-    price: "50 000 XAF / an",
-    priceDetail: "45 000 XAF/an/user a partir de 2 users",
+    price: "75 000 XAF / an",
+    priceDetail: "65 000 XAF/an/user (prix lancement)",
     features: [
-      "20 questions IA / mois / user",
+      "15 questions IA / mois / user",
       "Acces complet au CGI",
       "Tous les simulateurs",
       "Historique des conversations",
@@ -49,10 +49,10 @@ const PLANS_INFO = [
   },
   {
     name: "PRO",
-    price: "70 000 XAF / an",
-    priceDetail: "65 000 XAF/an/user a partir de 2 users",
+    price: "115 000 XAF / an",
+    priceDetail: "100 000 XAF/an/user (prix lancement)",
     features: [
-      "50 questions IA / mois / user",
+      "30 questions IA / mois / user",
       "Acces complet au CGI",
       "Tous les simulateurs",
       "Historique illimite",

@@ -38,7 +38,9 @@ export default function AdminScreen() {
 
   const handleActivate = (org: AdminOrganization, plan: "BASIQUE" | "PRO") => {
     const n = org.memberCount;
-    const unitPrice = plan === "BASIQUE" ? (n >= 2 ? 45000 : 50000) : (n >= 2 ? 65000 : 70000);
+    const unitPrice = plan === "BASIQUE"
+      ? (n >= 10 ? 58500 : n >= 5 ? 63750 : n >= 3 ? 67500 : 75000)
+      : (n >= 10 ? 92000 : n >= 5 ? 97750 : n >= 3 ? 103500 : 115000);
     const totalPrice = unitPrice * n;
     const confirmMsg = `Activer le plan ${plan} pour "${org.name}" ?\n${n} membre${n > 1 ? "s" : ""} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
 

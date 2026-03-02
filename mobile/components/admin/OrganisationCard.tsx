@@ -124,14 +124,14 @@ export default function OrganisationCard({ org, actionLoading, onActivate, onRen
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 10, alignItems: "center" }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Basique</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>{org.memberCount >= 2 ? "45 000" : "50 000"} /user</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>75 000 /user/an</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => onActivate(org, "PRO")}
             style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 10, alignItems: "center" }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Pro</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>{org.memberCount >= 2 ? "65 000" : "70 000"} /user</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>115 000 /user/an</Text>
           </TouchableOpacity>
           {(status === "ACTIVE" || status === "EXPIRED" || status === "TRIALING") && (
             <TouchableOpacity
