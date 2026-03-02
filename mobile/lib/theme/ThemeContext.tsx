@@ -40,7 +40,9 @@ async function saveTheme(mode: ThemeMode): Promise<void> {
     }
     const { setItemAsync } = await import("expo-secure-store");
     await setItemAsync(STORAGE_KEY, mode);
-  } catch {}
+  } catch {
+    // Échec sauvegarde thème — non bloquant
+  }
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {

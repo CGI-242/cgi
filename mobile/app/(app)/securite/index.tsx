@@ -8,6 +8,7 @@ import {
   Platform,
 } from "react-native";
 import * as Clipboard from "expo-clipboard";
+import { useTranslation } from "react-i18next";
 import { mfaApi, type MfaStatus, type MfaSetupResult } from "@/lib/api/mfa";
 import { authApi } from "@/lib/api/auth";
 import { useAuthStore } from "@/lib/store/auth";
@@ -20,6 +21,7 @@ import LogoutAllButton from "@/components/securite/LogoutAllButton";
 type SetupStep = "idle" | "qr" | "verify" | "backup";
 
 export default function SecuriteScreen() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
   const logout = useAuthStore((s) => s.logout);
   const [status, setStatus] = useState<MfaStatus | null>(null);
@@ -44,7 +46,7 @@ export default function SecuriteScreen() {
       const data = await mfaApi.getStatus();
       setStatus(data);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur inconnue";
+      const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
       setLoading(false);
@@ -62,8 +64,8 @@ export default function SecuriteScreen() {
       setSetupData(data);
       setSetupStep("qr");
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -79,8 +81,8 @@ export default function SecuriteScreen() {
       setTotpCode("");
       await loadStatus();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Code invalide";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("security.invalidCode");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -88,7 +90,7 @@ export default function SecuriteScreen() {
 
   const handleDisableMfa = async () => {
     if (!disablePassword.trim()) return;
-    const msg = "Désactiver l'authentification à deux facteurs ?";
+    const msg = t("security.disableConfirmMsg");
     const doDisable = async () => {
       setActionLoading(true);
       try {
@@ -97,8 +99,8 @@ export default function SecuriteScreen() {
         setShowDisable(false);
         await loadStatus();
       } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", errMsg);
+        const errMsg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), errMsg);
       } finally {
         setActionLoading(false);
       }
@@ -108,15 +110,15 @@ export default function SecuriteScreen() {
       if (!window.confirm(msg)) return;
       doDisable();
     } else {
-      Alert.alert("Confirmer", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Désactiver", style: "destructive", onPress: doDisable },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("security.disable"), style: "destructive", onPress: doDisable },
       ]);
     }
   };
 
   const handleRegenerateBackupCodes = async () => {
-    const msg = "Régénérer les codes de secours ? Les anciens codes seront invalidés.";
+    const msg = t("security.regenerateConfirm");
     const doRegenerate = async () => {
       setActionLoading(true);
       try {
@@ -124,8 +126,8 @@ export default function SecuriteScreen() {
         setBackupCodes(result.backupCodes);
         setSetupStep("backup");
       } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", errMsg);
+        const errMsg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), errMsg);
       } finally {
         setActionLoading(false);
       }
@@ -135,23 +137,23 @@ export default function SecuriteScreen() {
       if (!window.confirm(msg)) return;
       doRegenerate();
     } else {
-      Alert.alert("Confirmer", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Régénérer", onPress: doRegenerate },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("security.regenerate"), onPress: doRegenerate },
       ]);
     }
   };
 
   const handleLogoutAll = () => {
-    const msg = "Déconnecter tous les appareils ? Vous serez également déconnecté de cet appareil.";
+    const msg = t("security.logoutAllConfirm");
     const doLogoutAll = async () => {
       setActionLoading(true);
       try {
         await authApi.logoutAll();
         await logout();
       } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", errMsg);
+        const errMsg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), errMsg);
       } finally {
         setActionLoading(false);
       }
@@ -161,9 +163,9 @@ export default function SecuriteScreen() {
       if (!window.confirm(msg)) return;
       doLogoutAll();
     } else {
-      Alert.alert("Confirmer", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Déconnecter tout", style: "destructive", onPress: doLogoutAll },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("security.logoutAll"), style: "destructive", onPress: doLogoutAll },
       ]);
     }
   };
@@ -171,9 +173,9 @@ export default function SecuriteScreen() {
   const copyBackupCodes = async () => {
     try {
       await Clipboard.setStringAsync(backupCodes.join("\n"));
-      Alert.alert("Copié", "Codes de secours copiés dans le presse-papiers");
+      Alert.alert(t("common.confirm"), t("security.codesCopied"));
     } catch {
-      Alert.alert("Erreur", "Impossible de copier les codes");
+      Alert.alert(t("common.error"), t("security.codesCopyError"));
     }
   };
 
@@ -181,7 +183,7 @@ export default function SecuriteScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }

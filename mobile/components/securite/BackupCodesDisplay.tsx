@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 
 interface BackupCodesDisplayProps {
   backupCodes: string[];
@@ -14,6 +15,7 @@ export default function BackupCodesDisplay({
   onDone,
   colors,
 }: BackupCodesDisplayProps) {
+  const { t } = useTranslation();
   if (backupCodes.length === 0) return null;
 
   return (
@@ -42,7 +44,7 @@ export default function BackupCodesDisplay({
         <Text
           style={{ fontSize: 15, fontWeight: "600", color: colors.text }}
         >
-          Codes de secours
+          {t("security.backupCodesTitle")}
         </Text>
       </View>
       <Text
@@ -52,9 +54,7 @@ export default function BackupCodesDisplay({
           marginBottom: 12,
         }}
       >
-        Sauvegardez ces codes dans un endroit sûr. Ils vous permettront de
-        vous connecter si vous perdez l'accès à votre application
-        d'authentification.
+        {t("security.backupCodesDesc")}
       </Text>
       <View
         style={{
@@ -98,7 +98,7 @@ export default function BackupCodesDisplay({
             style={{ marginRight: 6 }}
           />
           <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
-            Copier les codes
+            {t("security.copyCodes")}
           </Text>
         </View>
       </TouchableOpacity>
@@ -111,7 +111,7 @@ export default function BackupCodesDisplay({
         }}
       >
         <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
-          J'ai sauvegardé mes codes
+          {t("security.codesSaved")}
         </Text>
       </TouchableOpacity>
     </View>

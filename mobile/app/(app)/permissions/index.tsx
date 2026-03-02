@@ -16,12 +16,14 @@ import {
 } from "@/lib/api/permissions";
 import { organizationApi, type OrgMember } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 import MyPermissionsCard from "@/components/permissions/MyPermissionsCard";
 import MemberSelector from "@/components/permissions/MemberSelector";
 import PermissionToggles from "@/components/permissions/PermissionToggles";
 
 export default function PermissionsScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
   const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
@@ -54,7 +56,7 @@ export default function PermissionsScreen() {
         setMembers(membersData.filter((m) => m.userId !== String(user?.id)));
       }
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur inconnue";
+      const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
       setLoading(false);
@@ -70,8 +72,8 @@ export default function PermissionsScreen() {
       const data = await permissionsApi.getMemberEffective(userId);
       setMemberEffective(data);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     }
   }, []);
 
@@ -93,23 +95,23 @@ export default function PermissionsScreen() {
       }
       await loadMemberPerms(userId);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
   };
 
   const handleReset = (userId: string) => {
-    const msg = "Réinitialiser les permissions aux valeurs par défaut du rôle ?";
+    const msg = t("permissions.resetConfirm");
     const doReset = async () => {
       setActionLoading(true);
       try {
         await permissionsApi.resetToDefaults(userId);
         await loadMemberPerms(userId);
       } catch (err: unknown) {
-        const errMsg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", errMsg);
+        const errMsg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), errMsg);
       } finally {
         setActionLoading(false);
       }
@@ -119,9 +121,9 @@ export default function PermissionsScreen() {
       if (!window.confirm(msg)) return;
       doReset();
     } else {
-      Alert.alert("Confirmer", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Réinitialiser", onPress: doReset },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("permissions.reset"), onPress: doReset },
       ]);
     }
   };
@@ -130,7 +132,7 @@ export default function PermissionsScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -153,7 +155,7 @@ export default function PermissionsScreen() {
         {members.length > 0 && (myPerms?.role === "OWNER" || myPerms?.role === "ADMIN") && (
           <>
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
-              PERMISSIONS DES MEMBRES
+              {t("permissions.memberPermissions")}
             </Text>
 
             <MemberSelector

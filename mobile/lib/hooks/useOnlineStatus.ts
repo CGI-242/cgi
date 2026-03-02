@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Platform } from "react-native";
+import { API_URL } from "../api/client";
 
 const ONLINE_CHECK_INTERVAL_MS = 15_000;
+const HEALTH_URL = API_URL.replace(/\/api$/, "/health");
 
 export function useOnlineStatus(): boolean {
   const [isOnline, setIsOnline] = useState(true);
@@ -22,7 +24,7 @@ export function useOnlineStatus(): boolean {
     let mounted = true;
     const check = async () => {
       try {
-        await fetch("https://clients3.google.com/generate_204", {
+        await fetch(HEALTH_URL, {
           method: "HEAD",
           cache: "no-store",
         });

@@ -53,11 +53,15 @@
           "color": "#00815d"
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      "expo-screen-capture"
     ],
     "extra": {
       "privacyUrl": "https://cgi242.normx.ai/confidentialite",
-      "termsUrl": "https://cgi242.normx.ai/conditions"
+      "termsUrl": "https://cgi242.normx.ai/conditions",
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
     },
     "assetBundlePatterns": [
       "**/*"

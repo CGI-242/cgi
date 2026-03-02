@@ -4,11 +4,13 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { adminApi, AdminOrganization } from "@/lib/api/admin";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 import AdminStatsGrid from "@/components/admin/AdminStatsGrid";
 import OrganisationCard from "@/components/admin/OrganisationCard";
 
 export default function AdminScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [orgs, setOrgs] = useState<AdminOrganization[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -21,9 +23,9 @@ export default function AdminScreen() {
       const data = await adminApi.getOrganizations();
       setOrgs(data);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur inconnue";
+      const msg = err instanceof Error ? err.message : t("security.unknownError");
       if (msg.includes("403") || msg.includes("refuse")) {
-        setError("Acces refuse — droits administrateur requis");
+        setError(t("admin.accessDenied"));
       } else {
         setError(msg);
       }
@@ -44,9 +46,9 @@ export default function AdminScreen() {
       if (!window.confirm(confirmMsg)) return;
       doActivate(org.id, plan);
     } else {
-      Alert.alert("Confirmer l'activation", confirmMsg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Activer", onPress: () => doActivate(org.id, plan) },
+      Alert.alert(t("admin.confirmActivation"), confirmMsg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("security.activate"), onPress: () => doActivate(org.id, plan) },
       ]);
     }
   };
@@ -57,8 +59,8 @@ export default function AdminScreen() {
       await adminApi.activateSubscription(orgId, plan);
       await loadOrgs();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(null);
     }
@@ -71,9 +73,9 @@ export default function AdminScreen() {
       if (!window.confirm(confirmMsg)) return;
       doRenew(org.id);
     } else {
-      Alert.alert("Confirmer le renouvellement", confirmMsg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Renouveler", onPress: () => doRenew(org.id) },
+      Alert.alert(t("admin.confirmRenewal"), confirmMsg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("admin.renew"), onPress: () => doRenew(org.id) },
       ]);
     }
   };
@@ -84,8 +86,8 @@ export default function AdminScreen() {
       await adminApi.renewSubscription(orgId);
       await loadOrgs();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(null);
     }
@@ -101,7 +103,7 @@ export default function AdminScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -112,7 +114,7 @@ export default function AdminScreen() {
         <Ionicons name="shield-outline" size={48} color={colors.danger} />
         <Text style={{ marginTop: 12, color: colors.danger, fontSize: 16, fontWeight: "600", textAlign: "center" }}>{error}</Text>
         <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20, paddingVertical: 10, paddingHorizontal: 24, backgroundColor: colors.primary }}>
-          <Text style={{ color: "#fff", fontWeight: "600" }}>Retour</Text>
+          <Text style={{ color: "#fff", fontWeight: "600" }}>{t("common.back")}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -145,7 +147,7 @@ export default function AdminScreen() {
         {orgs.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
             <Ionicons name="business-outline" size={40} color={colors.disabled} />
-            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>Aucune organisation</Text>
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>{t("admin.noOrganizations")}</Text>
           </View>
         )}
       </ScrollView>

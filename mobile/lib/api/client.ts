@@ -1,6 +1,7 @@
 import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3004/api";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
+export { API_URL };
 const API_TIMEOUT_MS = 15_000;
 
 // Détection plateforme

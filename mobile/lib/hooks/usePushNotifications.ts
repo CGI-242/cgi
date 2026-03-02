@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import { Platform } from "react-native";
 import { useAuthStore } from "../store/auth";
 import { notificationsApi } from "../api/notifications";
+import { createLogger } from "../utils/logger";
+
+const log = createLogger("push");
 
 export function usePushNotifications() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
@@ -44,7 +47,7 @@ export function usePushNotifications() {
           }),
         });
       } catch (err) {
-        console.warn("Push notification registration failed:", err);
+        log.warn("Échec enregistrement push notification", err);
       }
     })();
   }, [isAuthenticated]);

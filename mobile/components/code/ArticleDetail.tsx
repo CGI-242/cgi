@@ -3,6 +3,7 @@
 
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -10,6 +11,9 @@ import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
 import ReferencesBlock from "./ReferencesBlock";
 import { getArticleReferences, type ArticleReference } from "@/lib/api/chat";
+import { createLogger } from "@/lib/utils/logger";
+
+const log = createLogger("article");
 
 type Props = {
   article: ArticleData;
@@ -21,6 +25,7 @@ const SPEECH_MAX_CHUNK = 3_000;
 
 export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [isSpeaking, setIsSpeaking] = useState(false);
   const stoppedRef = useRef(false);
   const [references, setReferences] = useState<ArticleReference[]>([]);
@@ -45,7 +50,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
         setReferences(data.references);
         setReferencedBy(data.referencedBy);
       })
-      .catch(() => {})
+      .catch((err) => log.warn("Erreur chargement références", err))
       .finally(() => setLoadingRefs(false));
   }, [article]);
 
@@ -128,7 +133,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
         <TouchableOpacity onPress={handleBack} style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="arrow-back" size={18} color={colors.primary} />
-          <Text style={{ color: colors.primary, fontSize: 14, marginLeft: 8 }}>Retour aux articles</Text>
+          <Text style={{ color: colors.primary, fontSize: 14, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -147,7 +152,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
             color="#fff"
           />
           <Text style={{ color: "#fff", fontSize: 12, fontWeight: "600", marginLeft: 8 }}>
-            {isSpeaking ? "Stop" : "Ecouter"}
+            {isSpeaking ? t("articleDetail.stop") : t("articleDetail.listen")}
           </Text>
         </TouchableOpacity>
       </View>
@@ -177,7 +182,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
       {article.mots_cles.length > 0 && (
         <View>
-          <Text style={{ fontSize: 12, fontWeight: "bold", color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>Mots-cles</Text>
+          <Text style={{ fontSize: 12, fontWeight: "bold", color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>{t("articleDetail.keywords")}</Text>
           <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
             {article.mots_cles.map((mc) => (
               <View key={mc} style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4, marginRight: 8, marginBottom: 8 }}>

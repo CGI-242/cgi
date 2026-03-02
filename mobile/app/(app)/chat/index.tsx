@@ -29,6 +29,9 @@ import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineQueue } from "@/lib/store/offlineQueue";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { createLogger } from "@/lib/utils/logger";
+
+const log = createLogger("chat");
 
 interface DisplayMessage {
   id: string;
@@ -103,7 +106,7 @@ export default function ChatScreen() {
             );
           }
         })
-        .catch(() => {});
+        .catch((err) => log.warn("Erreur chargement messages", err));
     }
   }, [conversationId]);
 

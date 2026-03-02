@@ -13,6 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { subscriptionApi, type QuotaResponse } from "@/lib/api/subscription";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 import PlanHeader, { PLAN_COLORS, STATUS_COLORS } from "@/components/abonnement/PlanHeader";
 import QuotaProgress from "@/components/abonnement/QuotaProgress";
 import PeriodInfo from "@/components/abonnement/PeriodInfo";
@@ -21,6 +22,7 @@ import SubscriptionActions from "@/components/abonnement/SubscriptionActions";
 
 export default function AbonnementScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
   const [quota, setQuota] = useState<QuotaResponse | null>(null);
   const [loading, setLoading] = useState(true);
@@ -38,7 +40,7 @@ export default function AbonnementScreen() {
     } catch (err: unknown) {
       const axiosErr = err as { response?: { data?: { error?: string } } };
       const errorMsg =
-        axiosErr?.response?.data?.error || "Impossible de charger les informations d'abonnement";
+        axiosErr?.response?.data?.error || t("security.unknownError");
       setError(errorMsg);
     } finally {
       setLoading(false);
@@ -54,9 +56,9 @@ export default function AbonnementScreen() {
       if (!window.confirm(message)) return;
       action();
     } else {
-      Alert.alert("Confirmer", message, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Confirmer", onPress: () => action() },
+      Alert.alert(t("common.confirm"), message, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("common.confirm"), onPress: () => action() },
       ]);
     }
   };
@@ -68,8 +70,8 @@ export default function AbonnementScreen() {
         await subscriptionApi.activate(planName);
         await loadQuota();
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", msg);
+        const msg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), msg);
       } finally {
         setActionLoading(false);
       }
@@ -77,14 +79,14 @@ export default function AbonnementScreen() {
   };
 
   const handleRenew = () => {
-    confirmAction("Renouveler votre abonnement ?", async () => {
+    confirmAction(t("abonnement.renewSubscription"), async () => {
       setActionLoading(true);
       try {
         await subscriptionApi.renew();
         await loadQuota();
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", msg);
+        const msg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), msg);
       } finally {
         setActionLoading(false);
       }
@@ -92,14 +94,14 @@ export default function AbonnementScreen() {
   };
 
   const handleUpgrade = () => {
-    confirmAction("Passer au plan PRO ?", async () => {
+    confirmAction(t("abonnement.upgradeToPro"), async () => {
       setActionLoading(true);
       try {
         await subscriptionApi.upgrade("PRO");
         await loadQuota();
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", msg);
+        const msg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), msg);
       } finally {
         setActionLoading(false);
       }
@@ -111,7 +113,7 @@ export default function AbonnementScreen() {
       <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center" }}>
         <ActivityIndicator size="large" color={colors.primary} />
         <Text style={{ color: colors.textSecondary, fontSize: 14, marginTop: 12 }}>
-          Chargement de l'abonnement...
+          {t("abonnement.loadingSubscription")}
         </Text>
       </View>
     );
@@ -138,7 +140,7 @@ export default function AbonnementScreen() {
             <Ionicons name="alert-circle" size={20} color={colors.danger} style={{ marginRight: 8 }} />
             <Text style={{ color: colors.danger, fontSize: 14, flex: 1 }}>{error}</Text>
             <TouchableOpacity onPress={loadQuota}>
-              <Text style={{ color: colors.danger, fontWeight: "700", fontSize: 13 }}>Reessayer</Text>
+              <Text style={{ color: colors.danger, fontWeight: "700", fontSize: 13 }}>{t("common.retry")}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -188,14 +190,14 @@ export default function AbonnementScreen() {
         >
           <Ionicons name="call-outline" size={28} color={colors.primary} style={{ marginBottom: 8 }} />
           <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, textAlign: "center", marginBottom: 4 }}>
-            Pour souscrire ou renouveler
+            {t("abonnement.subscribeTitle")}
           </Text>
           <Text style={{ fontSize: 13, color: colors.textSecondary, textAlign: "center", marginBottom: 12 }}>
-            L'activation des abonnements se fait manuellement. Contactez notre equipe pour toute demande.
+            {t("abonnement.subscribeDesc")}
           </Text>
           <TouchableOpacity
             onPress={() => Linking.openURL("mailto:contact@cgi242.com")}
-            accessibilityLabel="Contacter pour souscrire"
+            accessibilityLabel={t("abonnement.contactSubscribe")}
             accessibilityRole="button"
             style={{
               backgroundColor: colors.primary,

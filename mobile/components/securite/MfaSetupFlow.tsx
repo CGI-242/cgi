@@ -8,6 +8,7 @@ import {
   Platform,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import type { MfaSetupResult } from "@/lib/api/mfa";
 
 interface MfaSetupFlowProps {
@@ -47,6 +48,7 @@ export default function MfaSetupFlow({
   onDisableMfa,
   colors,
 }: MfaSetupFlowProps) {
+  const { t } = useTranslation();
   return (
     <>
       {/* Activate button (MFA disabled, idle) */}
@@ -74,7 +76,7 @@ export default function MfaSetupFlow({
               <Text
                 style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}
               >
-                Activer la double authentification
+                {t("security.enableMfa")}
               </Text>
             </View>
           )}
@@ -100,7 +102,7 @@ export default function MfaSetupFlow({
               marginBottom: 12,
             }}
           >
-            1. Scannez le QR code avec votre application d'authentification
+            {t("security.scanQrCode")}
           </Text>
           <View style={{ alignItems: "center", marginBottom: 16 }}>
             <Image
@@ -116,7 +118,7 @@ export default function MfaSetupFlow({
               marginBottom: 8,
             }}
           >
-            Ou entrez le code manuellement :
+            {t("security.enterManually")}
           </Text>
           <View
             style={{
@@ -146,7 +148,7 @@ export default function MfaSetupFlow({
               marginBottom: 8,
             }}
           >
-            2. Entrez le code à 6 chiffres
+            {t("security.enterCode")}
           </Text>
           <TextInput
             value={totpCode}
@@ -184,7 +186,7 @@ export default function MfaSetupFlow({
               <Text
                 style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}
               >
-                Activer
+                {t("security.activate")}
               </Text>
             )}
           </TouchableOpacity>
@@ -214,7 +216,7 @@ export default function MfaSetupFlow({
               <Text
                 style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}
               >
-                Régénérer les codes de secours
+                {t("security.regenerateBackup")}
               </Text>
             </View>
           </TouchableOpacity>
@@ -242,7 +244,7 @@ export default function MfaSetupFlow({
                     fontSize: 14,
                   }}
                 >
-                  Désactiver la 2FA
+                  {t("security.disable2fa")}
                 </Text>
               </View>
             </TouchableOpacity>
@@ -263,7 +265,7 @@ export default function MfaSetupFlow({
                   marginBottom: 8,
                 }}
               >
-                Confirmer la désactivation
+                {t("security.confirmDisable")}
               </Text>
               <Text
                 style={{
@@ -272,13 +274,12 @@ export default function MfaSetupFlow({
                   marginBottom: 12,
                 }}
               >
-                Entrez votre mot de passe pour désactiver la double
-                authentification.
+                {t("security.enterPasswordToDisable")}
               </Text>
               <TextInput
                 value={disablePassword}
                 onChangeText={onChangeDisablePassword}
-                placeholder="Mot de passe"
+                placeholder={t("security.passwordPlaceholder")}
                 placeholderTextColor={colors.textMuted}
                 secureTextEntry
                 style={{
@@ -307,7 +308,7 @@ export default function MfaSetupFlow({
                       fontSize: 14,
                     }}
                   >
-                    Annuler
+                    {t("common.cancel")}
                   </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -330,7 +331,7 @@ export default function MfaSetupFlow({
                         fontSize: 14,
                       }}
                     >
-                      Désactiver
+                      {t("security.disable")}
                     </Text>
                   )}
                 </TouchableOpacity>

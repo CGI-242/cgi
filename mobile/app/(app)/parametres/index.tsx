@@ -19,6 +19,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import SectionHeader from "@/components/parametres/SectionHeader";
 import SettingsRow, { Divider } from "@/components/parametres/SettingsRow";
 import ManagementLinks from "@/components/parametres/ManagementLinks";
+import Constants from "expo-constants";
 
 const PLAN_LABELS: Record<string, string> = {
   FREE: "Gratuit",
@@ -197,7 +198,7 @@ export default function ParametresScreen() {
         {/* Section A propos */}
         <SectionHeader title={t("settings.about")} colors={colors} />
         <View style={{ backgroundColor: colors.card, overflow: "hidden" as const, marginBottom: 4 }}>
-          <SettingsRow icon="information-circle-outline" label={t("common.version")} value="1.0.0" colors={colors} />
+          <SettingsRow icon="information-circle-outline" label={t("common.version")} value={Constants.expoConfig?.version ?? "1.0.0"} colors={colors} />
           <Divider colors={colors} />
           <SettingsRow icon="book-outline" label={t("settings.edition")} value="CGI Édition 2026" colors={colors} />
           <Divider colors={colors} />

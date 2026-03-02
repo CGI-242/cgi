@@ -7,6 +7,9 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import OtpInput from "@/components/auth/OtpInput";
+import { createLogger } from "@/lib/utils/logger";
+
+const log = createLogger("otp");
 
 const FEEDBACK_DISPLAY_MS = 3_000;
 const RESEND_COOLDOWN_S = 60;
@@ -32,7 +35,7 @@ export default function VerifyOtp() {
   useEffect(() => {
     authApi.sendOtpEmail(email).then((data) => {
       if (data.devCode) setDevCode(data.devCode);
-    }).catch(() => {});
+    }).catch((err) => log.warn("Erreur envoi OTP initial", err));
   }, [email]);
 
   // Nettoyage des timers au démontage (M6)

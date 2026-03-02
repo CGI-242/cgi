@@ -7,6 +7,7 @@ import {
   Alert,
   Platform,
 } from "react-native";
+import { useTranslation } from "react-i18next";
 import { router } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import {
@@ -26,6 +27,7 @@ import NoOrganisation from "@/components/organisation/NoOrganisation";
 
 export default function OrganisationScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
   const orgId = user?.entreprise_id != null ? String(user.entreprise_id) : undefined;
 
@@ -72,7 +74,7 @@ export default function OrganisationScreen() {
       setMembers(membersData);
       setInvitations(invData);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur inconnue";
+      const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
       setLoading(false);
@@ -86,7 +88,7 @@ export default function OrganisationScreen() {
   const handleInvite = async () => {
     if (!orgId || !inviteEmail.trim()) return;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(inviteEmail.trim())) {
-      Alert.alert("Erreur", "Adresse email invalide");
+      Alert.alert(t("common.error"), t("auth.emailInvalid"));
       return;
     }
     setActionLoading(true);
@@ -95,8 +97,8 @@ export default function OrganisationScreen() {
       setInviteEmail("");
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -109,9 +111,9 @@ export default function OrganisationScreen() {
       if (!window.confirm(msg)) return;
       doRemoveMember(member.userId);
     } else {
-      Alert.alert("Confirmer", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Retirer", style: "destructive", onPress: () => doRemoveMember(member.userId) },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("common.delete"), style: "destructive", onPress: () => doRemoveMember(member.userId) },
       ]);
     }
   };
@@ -123,8 +125,8 @@ export default function OrganisationScreen() {
       await organizationApi.removeMember(orgId, userId);
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -138,8 +140,8 @@ export default function OrganisationScreen() {
       setMenuOpenId(null);
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -152,8 +154,8 @@ export default function OrganisationScreen() {
       await organizationApi.cancelInvitation(orgId, invId);
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -166,9 +168,9 @@ export default function OrganisationScreen() {
       if (!window.confirm(msg)) return;
       doTransfer(member.userId);
     } else {
-      Alert.alert("Transf\u00e9rer la propri\u00e9t\u00e9", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Transf\u00e9rer", style: "destructive", onPress: () => doTransfer(member.userId) },
+      Alert.alert(t("common.confirm"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("common.confirm"), style: "destructive", onPress: () => doTransfer(member.userId) },
       ]);
     }
   };
@@ -180,8 +182,8 @@ export default function OrganisationScreen() {
       await organizationApi.transferOwnership(orgId, newOwnerId);
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -196,8 +198,8 @@ export default function OrganisationScreen() {
       // Recharger la page pour refl\u00e9ter la nouvelle org
       router.replace("/(app)/organisation");
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setCreateLoading(false);
     }
@@ -212,8 +214,8 @@ export default function OrganisationScreen() {
       setNewOrgName("");
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -234,8 +236,8 @@ export default function OrganisationScreen() {
         await organizationApi.deleteOrganization(orgId);
         router.replace("/(app)/organisation");
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", msg);
+        const msg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), msg);
       } finally {
         setActionLoading(false);
       }
@@ -245,9 +247,9 @@ export default function OrganisationScreen() {
       if (!window.confirm(msg)) return;
       doDelete();
     } else {
-      Alert.alert("Supprimer l'organisation", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Supprimer", style: "destructive", onPress: doDelete },
+      Alert.alert(t("organization.delete"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("common.delete"), style: "destructive", onPress: doDelete },
       ]);
     }
   };
@@ -259,8 +261,8 @@ export default function OrganisationScreen() {
       await organizationApi.restoreOrganization(orgId);
       await loadData();
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("common.error");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setActionLoading(false);
     }
@@ -275,8 +277,8 @@ export default function OrganisationScreen() {
         await organizationApi.permanentDeleteOrganization(orgId);
         router.replace("/(app)/organisation");
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : "Erreur";
-        Alert.alert("Erreur", msg);
+        const msg = err instanceof Error ? err.message : t("common.error");
+        Alert.alert(t("common.error"), msg);
       } finally {
         setActionLoading(false);
       }
@@ -286,9 +288,9 @@ export default function OrganisationScreen() {
       if (!window.confirm(msg)) return;
       doPermDelete();
     } else {
-      Alert.alert("Suppression d\u00e9finitive", msg, [
-        { text: "Annuler", style: "cancel" },
-        { text: "Supprimer d\u00e9finitivement", style: "destructive", onPress: doPermDelete },
+      Alert.alert(t("organization.permanentDelete"), msg, [
+        { text: t("common.cancel"), style: "cancel" },
+        { text: t("organization.permanentDelete"), style: "destructive", onPress: doPermDelete },
       ]);
     }
   };
@@ -297,7 +299,7 @@ export default function OrganisationScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }

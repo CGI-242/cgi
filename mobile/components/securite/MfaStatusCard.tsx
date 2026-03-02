@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import type { MfaStatus } from "@/lib/api/mfa";
 
 interface MfaStatusCardProps {
@@ -8,6 +9,7 @@ interface MfaStatusCardProps {
 }
 
 export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
+  const { t } = useTranslation();
   return (
     <View
       style={{
@@ -29,25 +31,25 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
           <Ionicons
             name="shield-checkmark"
             size={24}
-            color={status?.enabled ? "#16a34a" : "#dc2626"}
+            color={status?.enabled ? colors.success : colors.danger}
             style={{ marginRight: 12 }}
           />
           <View>
             <Text
               style={{ fontSize: 16, fontWeight: "700", color: colors.text }}
             >
-              Authentification 2FA
+              {t("security.mfa2fa")}
             </Text>
             <Text style={{ fontSize: 13, color: colors.textSecondary }}>
               {status?.enabled
-                ? "Protège votre compte avec un code TOTP"
-                : "Non configurée"}
+                ? t("security.mfaProtects")
+                : t("security.mfaNotConfigured")}
             </Text>
           </View>
         </View>
         <View
           style={{
-            backgroundColor: status?.enabled ? "#f0fdf4" : "#fef2f2",
+            backgroundColor: status?.enabled ? `${colors.success}15` : `${colors.danger}15`,
             paddingHorizontal: 10,
             paddingVertical: 4,
           }}
@@ -56,10 +58,10 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
             style={{
               fontSize: 12,
               fontWeight: "700",
-              color: status?.enabled ? "#16a34a" : "#dc2626",
+              color: status?.enabled ? colors.success : colors.danger,
             }}
           >
-            {status?.enabled ? "Activé" : "Désactivé"}
+            {status?.enabled ? t("security.mfaEnabled") : t("security.mfaDisabled")}
           </Text>
         </View>
       </View>
@@ -74,9 +76,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
             style={{ marginRight: 6 }}
           />
           <Text style={{ fontSize: 13, color: colors.textSecondary }}>
-            {status.backupCodesRemaining} code
-            {status.backupCodesRemaining > 1 ? "s" : ""} de secours restant
-            {status.backupCodesRemaining > 1 ? "s" : ""}
+            {t("security.backupCodesRemaining", { count: status.backupCodesRemaining })}
           </Text>
         </View>
       )}

@@ -15,6 +15,7 @@ import {
   type MemberStat,
 } from "@/lib/api/analytics";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 import PeriodSelector from "@/components/analytics/PeriodSelector";
 import MemberStatsTable from "@/components/analytics/MemberStatsTable";
 
@@ -22,6 +23,7 @@ type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
 export default function AnalyticsScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [dashboard, setDashboard] = useState<DashboardData | null>(null);
   const [timeSeries, setTimeSeries] = useState<TimeSeriesPoint[]>([]);
   const [memberStats, setMemberStats] = useState<MemberStat[]>([]);
@@ -43,7 +45,7 @@ export default function AnalyticsScreen() {
       setTimeSeries(tsData);
       setMemberStats(msData);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur inconnue";
+      const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
       setLoading(false);
@@ -58,10 +60,10 @@ export default function AnalyticsScreen() {
     setExporting(true);
     try {
       await analyticsApi.exportCsv(days);
-      Alert.alert("Export", "Le fichier CSV a été téléchargé");
+      Alert.alert("Export", t("security.exportSuccess"));
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur d'export";
-      Alert.alert("Erreur", msg);
+      const msg = err instanceof Error ? err.message : t("security.exportError");
+      Alert.alert(t("common.error"), msg);
     } finally {
       setExporting(false);
     }
@@ -77,17 +79,17 @@ export default function AnalyticsScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }
 
   const statCards: { label: string; value: string | number; icon: IoniconsName; color: string }[] = dashboard
     ? [
-        { label: "Questions totales", value: dashboard.totalQuestions, icon: "chatbubble-ellipses-outline", color: "#3b82f6" },
-        { label: "Tendance", value: `${dashboard.trend > 0 ? "+" : ""}${dashboard.trend}%`, icon: "trending-up-outline", color: dashboard.trend >= 0 ? "#16a34a" : "#dc2626" },
-        { label: "Membres actifs", value: `${dashboard.activeMembers}/${dashboard.totalMembers}`, icon: "people-outline", color: "#8b5cf6" },
-        { label: "Ce mois", value: dashboard.questionsThisMonth, icon: "calendar-outline", color: "#d97706" },
+        { label: t("analytics.totalQuestions"), value: dashboard.totalQuestions, icon: "chatbubble-ellipses-outline", color: "#3b82f6" },
+        { label: t("analytics.trend"), value: `${dashboard.trend > 0 ? "+" : ""}${dashboard.trend}%`, icon: "trending-up-outline", color: dashboard.trend >= 0 ? "#16a34a" : "#dc2626" },
+        { label: t("analytics.activeMembers"), value: `${dashboard.activeMembers}/${dashboard.totalMembers}`, icon: "people-outline", color: "#8b5cf6" },
+        { label: t("analytics.thisMonth"), value: dashboard.questionsThisMonth, icon: "calendar-outline", color: "#d97706" },
       ]
     : [];
 
@@ -129,7 +131,7 @@ export default function AnalyticsScreen() {
         {timeSeries.length > 0 && (
           <>
             <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
-              ACTIVITÉ ({days} DERNIERS JOURS)
+              {t("analytics.activityDays", { days })}
             </Text>
             <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
               {timeSeries.slice(-14).map((point) => {
@@ -168,7 +170,7 @@ export default function AnalyticsScreen() {
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Ionicons name="download-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Exporter en CSV</Text>
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("analytics.exportCsv")}</Text>
             </View>
           )}
         </TouchableOpacity>

@@ -1,9 +1,7 @@
 // mobile/lib/api/chat.ts
 // Client API chat IA fiscal - SSE streaming + CRUD conversations
 
-import { api, isWeb, isMobile } from "./client";
-
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3004/api";
+import { api, isWeb, isMobile, API_URL } from "./client";
 
 // --- Types ---
 

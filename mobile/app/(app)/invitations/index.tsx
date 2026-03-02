@@ -12,9 +12,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { organizationApi } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 export default function InvitationsScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [token, setToken] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
@@ -32,7 +34,7 @@ export default function InvitationsScreen() {
       // Rediriger vers l'organisation après acceptation
       setTimeout(() => router.replace("/(app)/organisation"), 1500);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Erreur lors de l'acceptation";
+      const msg = err instanceof Error ? err.message : t("invitations.acceptError");
       setError(msg);
     } finally {
       setLoading(false);
@@ -48,10 +50,10 @@ export default function InvitationsScreen() {
             <Ionicons name="mail-open-outline" size={32} color={colors.primary} />
           </View>
           <Text style={{ fontSize: 20, fontWeight: "700", color: colors.text, textAlign: "center" }}>
-            Accepter une invitation
+            {t("invitations.accept")}
           </Text>
           <Text style={{ fontSize: 14, color: colors.textSecondary, textAlign: "center", marginTop: 4 }}>
-            Entrez le token d'invitation reçu par email pour rejoindre une organisation
+            {t("invitations.description")}
           </Text>
         </View>
 
@@ -71,12 +73,12 @@ export default function InvitationsScreen() {
         {/* Formulaire */}
         <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16 }}>
           <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-            Token d'invitation
+            {t("invitations.tokenLabel")}
           </Text>
           <TextInput
             value={token}
             onChangeText={(v) => { setToken(v); setError(null); setSuccess(null); }}
-            placeholder="Collez votre token d'invitation ici"
+            placeholder={t("invitations.tokenPlaceholder")}
             placeholderTextColor={colors.textMuted}
             style={{
               backgroundColor: colors.background,
@@ -104,7 +106,7 @@ export default function InvitationsScreen() {
             ) : (
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="checkmark-circle-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Accepter l'invitation</Text>
+                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("invitations.acceptButton")}</Text>
               </View>
             )}
           </TouchableOpacity>
