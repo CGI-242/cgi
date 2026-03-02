@@ -52,6 +52,15 @@ export const api = axios.create({
 
 // Request interceptor
 api.interceptors.request.use(async (config) => {
+  // Injecter X-Organization-ID depuis le store auth
+  try {
+    const { useAuthStore } = require("@/lib/store/auth");
+    const user = useAuthStore.getState().user;
+    if (user?.entreprise_id) {
+      config.headers["X-Organization-ID"] = user.entreprise_id;
+    }
+  } catch {}
+
   if (isMobile) {
     // Mobile : Bearer token + X-Platform
     config.headers["X-Platform"] = "mobile";
