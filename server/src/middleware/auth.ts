@@ -1,6 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyAccessToken } from "../utils/jwt";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
+import { createLogger } from "../utils/logger";
+
+const logger = createLogger("Auth");
 
 export interface AuthRequest extends Request {
   userId?: string;
@@ -34,6 +37,7 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
   const token = extractToken(req);
 
   if (!token) {
+    logger.warn(`[401] Token manquant — ${req.method} ${req.originalUrl} — cookies: ${JSON.stringify(Object.keys(req.cookies || {}))} — auth header: ${!!req.headers.authorization}`);
     res.status(401).json({ error: "Token manquant" });
     return;
   }
@@ -58,7 +62,8 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
     req.userId = payload.userId;
     req.userEmail = payload.email;
     next();
-  } catch {
+  } catch (err) {
+    logger.warn(`[401] Token invalide — ${req.method} ${req.originalUrl} — ${err instanceof Error ? err.message : "unknown"}`);
     res.status(401).json({ error: "Token invalide ou expiré" });
   }
 }
