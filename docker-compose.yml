@@ -16,7 +16,7 @@ services:
       - DATABASE_URL=postgresql://cgi242:${POSTGRES_PASSWORD}@postgres:5432/cgi242?schema=public
       - QDRANT_URL=http://qdrant:6333
     ports:
-      - "3003:3003"
+      - "127.0.0.1:3003:3003"
     depends_on:
       postgres:
         condition: service_healthy
@@ -54,40 +54,9 @@ services:
     networks:
       - cgi242-net
 
-  # --- Nginx reverse proxy + HTTPS ---
-  nginx:
-    image: nginx:alpine
-    container_name: cgi242-nginx
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/conf.d:/etc/nginx/conf.d:ro
-      - certbot_data:/etc/letsencrypt:ro
-      - certbot_www:/var/www/certbot:ro
-    depends_on:
-      - api
-    networks:
-      - cgi242-net
-
-  # --- Certbot (HTTPS Let's Encrypt) ---
-  certbot:
-    image: certbot/certbot
-    container_name: cgi242-certbot
-    volumes:
-      - certbot_data:/etc/letsencrypt
-      - certbot_www:/var/www/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do sleep 12h & wait $${!}; certbot renew; done'"
-    networks:
-      - cgi242-net
-
 volumes:
   pgdata:
   qdrant_data:
-  certbot_data:
-  certbot_www:
 
 networks:
   cgi242-net:
