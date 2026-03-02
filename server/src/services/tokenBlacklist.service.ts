@@ -40,18 +40,18 @@ export class TokenBlacklistService {
 
   /**
    * Blackliste tous les tokens d'un utilisateur.
-   * Stocke un timestamp en cache ET en base de données (M2 — survit au redémarrage).
+   * Stocke un timestamp en secondes (comme JWT iat) en cache ET en base de données.
    */
   static blacklistAllUserTokens(userId: string): void {
-    const now = Date.now();
+    const nowSec = Math.floor(Date.now() / 1000);
     const key = `${CACHE_PREFIX.BLACKLIST}user:${userId}`;
-    cacheService.set(key, now, CACHE_TTL.TOKEN_BLACKLIST);
+    cacheService.set(key, nowSec, CACHE_TTL.TOKEN_BLACKLIST);
 
     // Persister en base pour survivre aux redémarrages du serveur
     const prisma = require('../utils/prisma').default;
     prisma.user.update({
       where: { id: userId },
-      data: { tokenRevokedAt: new Date(now) },
+      data: { tokenRevokedAt: new Date(nowSec * 1000) },
     }).catch((err: unknown) => {
       logger.error('Erreur persistance tokenRevokedAt', err);
     });
@@ -61,30 +61,29 @@ export class TokenBlacklistService {
 
   /**
    * Vérifie si les tokens d'un utilisateur ont été révoqués globalement.
-   * Vérifie le cache en priorité, puis la base de données (M2 — fallback persistant).
+   * Compare iat (secondes) vs tokenRevokedAt (secondes). Tokens émis AVANT la révocation sont invalides.
    */
   static isUserBlacklisted(userId: string, tokenIssuedAt: number): boolean {
     const key = `${CACHE_PREFIX.BLACKLIST}user:${userId}`;
-    const blacklistedAt = cacheService.get<number>(key);
-    if (blacklistedAt) {
-      return tokenIssuedAt * 1000 <= blacklistedAt;
+    const blacklistedAtSec = cacheService.get<number>(key);
+    if (blacklistedAtSec) {
+      return tokenIssuedAt < blacklistedAtSec;
     }
-    // Pas en cache → sera vérifié de manière asynchrone si nécessaire
     return false;
   }
 
   /**
-   * Vérifie la révocation depuis la base de données (après redémarrage serveur).
+   * Vérifie la révocation (cache + base de données).
    * Version asynchrone pour le middleware auth.
    */
   static async isUserBlacklistedAsync(userId: string, tokenIssuedAt: number): Promise<boolean> {
     const key = `${CACHE_PREFIX.BLACKLIST}user:${userId}`;
-    const blacklistedAt = cacheService.get<number>(key);
-    if (blacklistedAt) {
-      return tokenIssuedAt * 1000 <= blacklistedAt;
+    const blacklistedAtSec = cacheService.get<number>(key);
+    if (blacklistedAtSec) {
+      return tokenIssuedAt < blacklistedAtSec;
     }
 
-    // Fallback : vérifier en base de données (M2)
+    // Fallback : vérifier en base de données
     try {
       const prisma = require('../utils/prisma').default;
       const user = await prisma.user.findUnique({
@@ -92,10 +91,10 @@ export class TokenBlacklistService {
         select: { tokenRevokedAt: true },
       });
       if (user?.tokenRevokedAt) {
-        const revokedAtMs = new Date(user.tokenRevokedAt).getTime();
-        // Re-hydrater le cache
-        cacheService.set(key, revokedAtMs, CACHE_TTL.TOKEN_BLACKLIST);
-        return tokenIssuedAt * 1000 <= revokedAtMs;
+        const revokedAtSec = Math.floor(new Date(user.tokenRevokedAt).getTime() / 1000);
+        // Re-hydrater le cache (en secondes)
+        cacheService.set(key, revokedAtSec, CACHE_TTL.TOKEN_BLACKLIST);
+        return tokenIssuedAt < revokedAtSec;
       }
     } catch (err) {
       logger.error('Erreur vérification tokenRevokedAt en base', err);
