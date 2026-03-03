@@ -158,21 +158,39 @@ export class EmailService {
     await sendMail(email, subject, html);
   }
 
-  static async sendInvitation(email: string, organizationName: string, inviterName: string): Promise<void> {
+  static async sendInvitation(email: string, organizationName: string, inviterName: string, token: string): Promise<void> {
     const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3004';
+    const inviteUrl = `${frontendUrl}/register?invitation=${token}`;
     const subject = `CGI-242 — Invitation à rejoindre ${organizationName}`;
-    const html = `
-      <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
-        <p><strong>${inviterName}</strong> vous invite à rejoindre <strong>${organizationName}</strong> sur CGI-242.</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="${frontendUrl}/register" style="background: #1a56db; color: white; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: bold;">
-            Rejoindre l'équipe
-          </a>
-        </div>
-        <p style="color: #6b7280; font-size: 14px;">Si vous n'attendiez pas cette invitation, ignorez cet email.</p>
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        <strong>${inviterName}</strong> vous invite à rejoindre l'organisation <strong>${organizationName}</strong> sur CGI-242.
+      </p>
+
+      <div style="text-align: center; margin: 0 0 24px 0;">
+        <a href="${inviteUrl}" style="display: inline-block; background-color: #00815d; color: #ffffff; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
+          Rejoindre l'équipe
+        </a>
       </div>
-    `;
+
+      <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
+        Si le bouton ne fonctionne pas, copiez-collez ce lien dans votre navigateur :
+      </p>
+      <p style="margin: 0 0 24px 0; font-size: 12px; color: #00815d; word-break: break-all;">
+        ${inviteUrl}
+      </p>
+
+      <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
+        Cette invitation expire dans 7 jours. Si vous n'attendiez pas cette invitation, ignorez cet email.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
     await sendMail(email, subject, html);
   }
 
@@ -223,6 +241,109 @@ export class EmailService {
       </div>
     `;
     await sendMail(email, subject, html);
+  }
+
+  static async sendSeatRequestNotification(
+    adminEmail: string,
+    orgName: string,
+    requesterName: string,
+    additionalSeats: number,
+    unitPrice: number,
+    totalPrice: number,
+    plan: string,
+  ): Promise<void> {
+    const subject = `CGI-242 — Demande de ${additionalSeats} siège(s) pour ${orgName}`;
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        <strong>${requesterName}</strong> a demandé <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour l'organisation <strong>${orgName}</strong>.
+      </p>
+
+      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 20px; margin: 0 0 24px 0;">
+        <table style="width: 100%; font-size: 14px; color: #374151;">
+          <tr><td style="padding: 4px 0;">Plan</td><td style="text-align: right; font-weight: bold;">${plan}</td></tr>
+          <tr><td style="padding: 4px 0;">Sièges demandés</td><td style="text-align: right; font-weight: bold;">${additionalSeats}</td></tr>
+          <tr><td style="padding: 4px 0;">Prix unitaire</td><td style="text-align: right; font-weight: bold;">${unitPrice.toLocaleString('fr-FR')} XAF</td></tr>
+          <tr><td style="padding: 4px 0; border-top: 1px solid #d1d5db;">Total à payer</td><td style="text-align: right; font-weight: bold; border-top: 1px solid #d1d5db; color: #00815d;">${totalPrice.toLocaleString('fr-FR')} XAF</td></tr>
+        </table>
+      </div>
+
+      <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Connectez-vous à l'espace administration pour approuver ou rejeter cette demande.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
+    await sendMail(adminEmail, subject, html);
+  }
+
+  static async sendSeatRequestApproved(
+    ownerEmail: string,
+    orgName: string,
+    additionalSeats: number,
+    newTotalSeats: number,
+  ): Promise<void> {
+    const subject = `CGI-242 — Vos ${additionalSeats} siège(s) ont été approuvés`;
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #00815d; font-weight: bold;">approuvée</span>.
+      </p>
+
+      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 24px; font-weight: bold; color: #00815d;">${newTotalSeats} sièges</span>
+        <br/>
+        <span style="font-size: 13px; color: #6b7280;">disponibles dans votre organisation</span>
+      </div>
+
+      <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Vous pouvez dès maintenant inviter de nouveaux membres depuis l'application.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
+    await sendMail(ownerEmail, subject, html);
+  }
+
+  static async sendSeatRequestRejected(
+    ownerEmail: string,
+    orgName: string,
+    additionalSeats: number,
+    note?: string,
+  ): Promise<void> {
+    const subject = `CGI-242 — Demande de sièges refusée pour ${orgName}`;
+    const noteSection = note
+      ? `<div style="background-color: #fef2f2; border-left: 4px solid #dc2626; padding: 16px; margin: 0 0 24px 0;">
+           <p style="margin: 0; font-size: 14px; color: #374151;"><strong>Motif :</strong> ${note}</p>
+         </div>`
+      : '';
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #dc2626; font-weight: bold;">refusée</span>.
+      </p>
+
+      ${noteSection}
+
+      <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Pour toute question, contactez notre équipe à contact@normx-ai.com.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
+    await sendMail(ownerEmail, subject, html);
   }
 
   static async sendMfaEnabled(email: string): Promise<void> {

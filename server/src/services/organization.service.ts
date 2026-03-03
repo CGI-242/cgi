@@ -1,6 +1,7 @@
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
 import { PLAN_QUOTAS, PlanName } from '../types/plans';
+import { EmailService } from './email.service';
 
 const logger = createLogger('OrganizationService');
 
@@ -112,16 +113,19 @@ export async function getMembers(orgId: string) {
 }
 
 export async function inviteMember(orgId: string, invitedById: string, email: string, role: string = 'MEMBER') {
-  // Vérifier quota membres
+  // Vérifier quota sièges payés
   const sub = await prisma.subscription.findUnique({ where: { organizationId: orgId } });
   if (sub) {
-    const plan = sub.plan as PlanName;
-    const quota = PLAN_QUOTAS[plan];
-    if (quota.maxMembers !== -1) {
-      const count = await prisma.organizationMember.count({ where: { organizationId: orgId } });
-      if (count >= quota.maxMembers) {
-        throw new Error(`Limite de ${quota.maxMembers} membres atteinte pour le plan ${plan}`);
-      }
+    const memberCount = await prisma.organizationMember.count({ where: { organizationId: orgId } });
+    const pendingCount = await prisma.invitation.count({
+      where: { organizationId: orgId, status: 'PENDING' },
+    });
+    const totalOccupied = memberCount + pendingCount;
+
+    if (totalOccupied >= sub.paidSeats) {
+      throw new Error(
+        `Limite de sièges atteinte : ${memberCount} membre(s) + ${pendingCount} invitation(s) en attente = ${totalOccupied} / ${sub.paidSeats} siège(s) payé(s). Augmentez le nombre de sièges auprès de l'administrateur.`
+      );
     }
   }
 
@@ -160,7 +164,17 @@ export async function inviteMember(orgId: string, invitedById: string, email: st
     },
   });
 
-  logger.info(`Invitation envoyée à ${email} pour org ${orgId}`);
+  // Envoyer l'email d'invitation
+  const org = await prisma.organization.findUnique({ where: { id: orgId } });
+  const inviter = await prisma.user.findUnique({ where: { id: invitedById } });
+  const inviterName = inviter ? `${inviter.firstName || ''} ${inviter.lastName || ''}`.trim() || inviter.email : 'Un membre';
+  const orgName = org?.name || 'une organisation';
+
+  EmailService.sendInvitation(email, orgName, inviterName, invitation.token).catch((err) => {
+    logger.error(`Erreur envoi email invitation à ${email}:`, err);
+  });
+
+  logger.info(`Invitation envoyée à ${email} pour org ${orgId} (token: ${invitation.token})`);
   return invitation;
 }
 

@@ -8,3 +8,11 @@ export const activateBody = z.object({
 export const upgradeBody = z.object({
   plan: paidPlanEnum,
 });
+
+export const requestSeatsBody = z.object({
+  additionalSeats: z.number().int().min(1, 'Au moins 1 siège requis'),
+});
+
+export const rejectSeatsBody = z.object({
+  note: z.string().optional(),
+});

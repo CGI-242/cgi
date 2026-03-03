@@ -13,6 +13,7 @@ import {
   type Organization,
   type OrgMember,
   type Invitation,
+  type SeatRequest,
 } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useToast } from "@/components/ui/ToastProvider";
@@ -22,6 +23,7 @@ import MemberList from "@/components/organisation/MemberList";
 import InviteForm from "@/components/organisation/InviteForm";
 import PendingInvitations from "@/components/organisation/PendingInvitations";
 import DangerZone from "@/components/organisation/DangerZone";
+import SeatRequestSection from "@/components/organisation/SeatRequestSection";
 import NoOrganisation from "@/components/organisation/NoOrganisation";
 
 export default function OrganisationScreen() {
@@ -52,6 +54,11 @@ export default function OrganisationScreen() {
 
   // Menu ouvert pour un membre
   const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
+
+  // Demande de sièges supplémentaires
+  const [seatsToAdd, setSeatsToAdd] = useState("");
+  const [seatsLoading, setSeatsLoading] = useState(false);
+  const [pendingSeatRequest, setPendingSeatRequest] = useState<SeatRequest | null>(null);
 
   const currentUserRole = members.find((m) => m.userId === String(user?.id))?.role;
   const isOwner = currentUserRole === "OWNER";
@@ -273,6 +280,43 @@ export default function OrganisationScreen() {
     }
   };
 
+  const currentSeats = org?.paidSeats || 0;
+
+  const handleRequestSeats = async () => {
+    const seatsNum = parseInt(seatsToAdd, 10) || 0;
+    if (!orgId || seatsNum < 1) return;
+
+    const basePrice = org?.plan === "PRO" ? 115000 : 75000;
+    const totalAfter = currentSeats + seatsNum;
+    let discount = 0;
+    if (totalAfter >= 10) discount = 0.20;
+    else if (totalAfter >= 5) discount = 0.15;
+    else if (totalAfter >= 3) discount = 0.10;
+    const unitPrice = Math.round(basePrice * (1 - discount));
+    const totalPrice = seatsNum * unitPrice;
+
+    const ok = await confirm({
+      title: t("seatRequest.confirmTitle"),
+      message: `${seatsNum} ${t("admin.seats")} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF`,
+      confirmLabel: t("seatRequest.submit"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
+
+    setSeatsLoading(true);
+    try {
+      const request = await organizationApi.requestAdditionalSeats(orgId, seatsNum);
+      setPendingSeatRequest(request);
+      setSeatsToAdd("");
+      toast(t("seatRequest.success"), "success");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setSeatsLoading(false);
+    }
+  };
+
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
@@ -336,17 +380,26 @@ export default function OrganisationScreen() {
           colors={colors}
         />
 
-        {isAdmin && (
-          <InviteForm
-            inviteEmail={inviteEmail}
-            inviteRole={inviteRole}
-            actionLoading={actionLoading}
-            onChangeEmail={setInviteEmail}
-            onChangeRole={setInviteRole}
-            onInvite={handleInvite}
-            colors={colors}
-          />
-        )}
+        {isAdmin && (() => {
+          const pendingCount = invitations.filter(i => i.status === "PENDING").length;
+          const paidSeats = org?.paidSeats;
+          const remainingSeats = paidSeats !== undefined
+            ? paidSeats - members.length - pendingCount
+            : undefined;
+          return (
+            <InviteForm
+              inviteEmail={inviteEmail}
+              inviteRole={inviteRole}
+              actionLoading={actionLoading}
+              remainingSeats={remainingSeats}
+              paidSeats={paidSeats}
+              onChangeEmail={setInviteEmail}
+              onChangeRole={setInviteRole}
+              onInvite={handleInvite}
+              colors={colors}
+            />
+          );
+        })()}
 
         <PendingInvitations
           invitations={invitations}
@@ -354,6 +407,21 @@ export default function OrganisationScreen() {
           onCancelInvitation={handleCancelInvitation}
           colors={colors}
         />
+
+        {/* Section demande de sièges supplémentaires — OWNER uniquement */}
+        {isOwner && org && org.plan !== "FREE" && (
+          <SeatRequestSection
+            currentSeats={currentSeats}
+            membersCount={members.length}
+            plan={org.plan}
+            seatsToAdd={seatsToAdd}
+            seatsLoading={seatsLoading}
+            pendingSeatRequest={pendingSeatRequest}
+            onChangeSeatsToAdd={setSeatsToAdd}
+            onRequestSeats={handleRequestSeats}
+            colors={colors}
+          />
+        )}
 
         {isOwner && (
           <DangerZone

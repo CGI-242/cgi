@@ -1,6 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ScrollView, ActivityIndicator } from "react-native";
 import { useState } from "react";
-import { router } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -12,6 +12,8 @@ import PasswordFields from "@/components/auth/PasswordFields";
 export default function Register() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { invitation } = useLocalSearchParams<{ invitation?: string }>();
+  const hasInvitation = !!invitation;
   const [form, setForm] = useState({
     entrepriseNom: "",
     nom: "",
@@ -65,7 +67,7 @@ export default function Register() {
       setError(t("auth.emailAlreadyExists"));
       return;
     }
-    if (!form.entrepriseNom.trim() || !form.nom.trim() || !form.prenom.trim() || !form.email.trim() || !form.password) {
+    if ((!hasInvitation && !form.entrepriseNom.trim()) || !form.nom.trim() || !form.prenom.trim() || !form.email.trim() || !form.password) {
       setError(t("auth.requiredFields"));
       return;
     }
@@ -90,12 +92,13 @@ export default function Register() {
 
     try {
       const data = await authApi.register({
-        entrepriseNom: form.entrepriseNom.trim(),
+        entrepriseNom: hasInvitation ? undefined : form.entrepriseNom.trim(),
         nom: form.nom.trim(),
         prenom: form.prenom.trim(),
         email: form.email.trim(),
         telephone: form.telephone.trim() || undefined,
         password: form.password,
+        invitationToken: invitation || undefined,
       });
       setUser(data.user ?? null);
       setEmail(form.email.trim());
@@ -137,11 +140,20 @@ export default function Register() {
           </View>
 
           <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
-            {t("auth.createCompany")}
+            {hasInvitation ? t("auth.joinTeam") : t("auth.createCompany")}
           </Text>
           <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
-            {t("auth.companyAdmin")}
+            {hasInvitation ? t("auth.invitedDescription") : t("auth.companyAdmin")}
           </Text>
+
+          {/* Bannière invitation */}
+          {hasInvitation && (
+            <View style={{ backgroundColor: "#00815d15", borderLeftWidth: 4, borderLeftColor: "#00815d", padding: 12, marginBottom: 16 }}>
+              <Text style={{ color: "#00815d", fontSize: 14, fontWeight: "600" }}>
+                {t("auth.invitedBanner")}
+              </Text>
+            </View>
+          )}
 
           {/* Erreur */}
           {error ? (
@@ -150,17 +162,21 @@ export default function Register() {
             </View>
           ) : null}
 
-          {/* Nom du cabinet */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
-            {t("auth.company")} <Text style={{ color: colors.danger }}>*</Text>
-          </Text>
-          <TextInput
-            style={{ ...inputStyle, marginBottom: 16 }}
-            placeholder={t("auth.companyPlaceholder")}
-            placeholderTextColor={colors.textMuted}
-            value={form.entrepriseNom}
-            onChangeText={(v) => updateField("entrepriseNom", v)}
-          />
+          {/* Nom du cabinet (masqué si invitation) */}
+          {!hasInvitation && (
+            <>
+              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+                {t("auth.company")} <Text style={{ color: colors.danger }}>*</Text>
+              </Text>
+              <TextInput
+                style={{ ...inputStyle, marginBottom: 16 }}
+                placeholder={t("auth.companyPlaceholder")}
+                placeholderTextColor={colors.textMuted}
+                value={form.entrepriseNom}
+                onChangeText={(v) => updateField("entrepriseNom", v)}
+              />
+            </>
+          )}
 
           {/* Nom + Prénom */}
           <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>

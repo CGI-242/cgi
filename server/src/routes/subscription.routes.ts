@@ -6,6 +6,7 @@ import { validate } from '../middleware/validate.middleware';
 import { activateBody, upgradeBody } from '../schemas/subscription.schema';
 import * as subscriptionService from '../services/subscription.service';
 import { AuditService } from '../services/audit.service';
+import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('SubscriptionRoutes');
@@ -66,7 +67,10 @@ router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, v
   try {
     const { plan } = req.body;
 
-    const updated = await subscriptionService.activateSubscription(req.orgId!, plan);
+    // Quand l'OWNER active lui-même, les sièges = nombre de membres actuels (minimum 1)
+    const memberCount = await prisma.organizationMember.count({ where: { organizationId: req.orgId! } });
+    const paidSeats = Math.max(memberCount, 1);
+    const updated = await subscriptionService.activateSubscription(req.orgId!, plan, paidSeats);
 
     AuditService.log({
       actorId: req.userId!,

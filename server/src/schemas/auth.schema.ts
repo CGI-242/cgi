@@ -2,13 +2,17 @@ import { z } from 'zod';
 import { emailField, passwordField, requiredString } from './common.schema';
 
 export const registerBody = z.object({
-  entrepriseNom: requiredString('entrepriseNom'),
+  entrepriseNom: z.string().optional(),
   nom: requiredString('nom'),
   prenom: requiredString('prenom'),
   email: emailField,
   password: passwordField,
   telephone: z.string().optional(),
-});
+  invitationToken: z.string().uuid().optional(),
+}).refine(
+  (data) => data.invitationToken || (data.entrepriseNom && data.entrepriseNom.trim().length > 0),
+  { message: 'entrepriseNom est requis sans invitation', path: ['entrepriseNom'] },
+);
 
 export const loginBody = z.object({
   email: emailField,

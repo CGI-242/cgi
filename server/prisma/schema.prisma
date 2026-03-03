@@ -32,6 +32,7 @@ model Organization {
   subscription  Subscription?
   conversations Conversation[]
   usageStats    UsageStats[]
+  seatRequests  SeatRequest[]
 
   // Soft delete
   deletedAt DateTime?
@@ -83,6 +84,7 @@ model User {
   // Organisations
   memberships     OrganizationMember[]
   invitationsSent Invitation[]         @relation("InvitationSender")
+  seatRequests    SeatRequest[]        @relation("SeatRequests")
 
   // Conversations personnelles (hors orga)
   personalConversations Conversation[] @relation("PersonalConversations")
@@ -207,6 +209,7 @@ model Subscription {
   questionsPerMonth Int @default(10)
   questionsUsed     Int @default(0)
   maxMembers        Int @default(1) // Pour les orgas
+  paidSeats         Int @default(1) // Sièges payés par l'admin
 
   // Paiement
   stripeCustomerId     String?
@@ -608,6 +611,9 @@ enum AuditAction {
   SUBSCRIPTION_CANCELLED
   PAYMENT_SUCCEEDED
   PAYMENT_FAILED
+  SEATS_REQUESTED
+  SEATS_APPROVED
+  SEATS_REJECTED
 
   // Data
   CONVERSATION_CREATED
@@ -668,6 +674,37 @@ model AuditLog {
   @@index([createdAt])
   @@index([action])
   @@map("audit_logs")
+}
+
+// ==================== SEAT REQUESTS ====================
+
+enum SeatRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model SeatRequest {
+  id               String            @id @default(uuid())
+  organizationId   String
+  organization     Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  requestedById    String
+  requestedBy      User              @relation("SeatRequests", fields: [requestedById], references: [id])
+  additionalSeats  Int
+  currentSeats     Int               // snapshot au moment de la demande
+  totalSeatsAfter  Int               // currentSeats + additionalSeats
+  unitPrice        Int               // prix unitaire avec remise calculée
+  totalPrice       Int               // additionalSeats × unitPrice
+  plan             String            // plan au moment de la demande
+  status           SeatRequestStatus @default(PENDING)
+  adminNote        String?
+  processedAt      DateTime?
+  processedById    String?
+  createdAt        DateTime          @default(now())
+
+  @@index([organizationId])
+  @@index([status])
+  @@map("seat_requests")
 }
 
 // ==================== PUSH NOTIFICATIONS ====================

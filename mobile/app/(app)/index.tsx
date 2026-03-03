@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { useMemo } from "react";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -25,7 +25,7 @@ const MOIS: Record<string, number> = {
   juil: 6, "aout": 7, "août": 7, sept: 8, oct: 9, nov: 10, "dec": 11, "déc": 11,
 };
 
-function trierEcheances(echeances: { date: string; label: string; icon: any }[]) {
+function trierEcheances(echeances: { date: string; label: string; icon: keyof typeof Ionicons.glyphMap }[]) {
   const now = new Date();
   const mois = now.getMonth();
   const jour = now.getDate();
@@ -163,7 +163,7 @@ export default function Dashboard() {
               return (
                 <TouchableOpacity
                   key={a.label}
-                  onPress={() => a.route && router.push(a.route as any)}
+                  onPress={() => a.route && router.push(a.route as Href)}
                   disabled={disabled}
                   accessibilityLabel={a.label}
                   accessibilityRole="button"

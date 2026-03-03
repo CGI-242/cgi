@@ -1,7 +1,17 @@
 import type { ArticleData, SommaireNode } from "./types";
 
-export function parseArticles(raw: any[]): ArticleData[] {
-  return raw.filter((a) => typeof a.article === "string").map((a) => {
+export interface RawArticle {
+  article?: string | number;
+  titre?: string;
+  texte?: string[];
+  mots_cles?: string[];
+  statut?: string;
+  section?: string | number | null;
+  annee_application?: number;
+}
+
+export function parseArticles(raw: RawArticle[]): ArticleData[] {
+  return raw.filter((a): a is RawArticle & { article: string } => typeof a.article === "string").map((a) => {
     // Nettoyer le préfixe "Art.X.-" redondant en début de ligne
     const rawTexte: string[] = (a.texte || [])
       .map((line: string) => line.replace(/^Art\.\s*\d+[a-z]*\s*[\.\-–]+\s*/i, ""));
@@ -12,7 +22,7 @@ export function parseArticles(raw: any[]): ArticleData[] {
       mots_cles: a.mots_cles || [],
       statut: a.statut || "",
       section: typeof a.section === "string" ? a.section : "Général",
-      annee_application: a.annee_application,
+      annee_application: a.annee_application ?? 0,
     };
     article._searchText = normalize(
       [article.article, article.titre, ...article.mots_cles, ...article.texte].join(" ")

@@ -121,7 +121,7 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
 
     // Quota illimité → pas de vérification
     if (isUnlimited(ctx.questionsPerMonth)) {
-      (req as any).quotaIncremented = false;
+      req.quotaIncremented = false;
       next();
       return;
     }
@@ -156,7 +156,7 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
     }).catch(() => {});
 
     // Marquer que le quota a déjà été incrémenté (évite double incrément dans chat)
-    (req as any).quotaIncremented = true;
+    req.quotaIncremented = true;
     cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
     next();
   } catch (err) {

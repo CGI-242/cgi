@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -59,7 +59,7 @@ export default function SimulateurHub() {
                 borderColor: colors.border,
                 padding: 16,
               }}
-              onPress={() => router.push(sim.route as any)}
+              onPress={() => router.push(sim.route as Href)}
             >
               <View
                 style={{

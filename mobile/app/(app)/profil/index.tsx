@@ -7,6 +7,7 @@ import {
   Platform,
 } from "react-native";
 import { useTranslation } from "react-i18next";
+import { isAxiosError } from "axios";
 import { useAuthStore } from "@/lib/store/auth";
 import { userApi, type UserProfile } from "@/lib/api/user";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -92,7 +93,7 @@ export default function ProfilScreen() {
 
       setMessage({ type: "success", text: t("profil.updateSuccess") });
     } catch (err: unknown) {
-      const errorMsg = (err instanceof Error && "response" in err ? (err as any).response?.data?.error : null) || t("profil.updateError");
+      const errorMsg = (isAxiosError(err) ? err.response?.data?.error : null) || t("profil.updateError");
       setMessage({ type: "error", text: errorMsg });
     } finally {
       setSaving(false);

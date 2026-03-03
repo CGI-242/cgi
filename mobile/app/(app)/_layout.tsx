@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { Redirect, Stack, usePathname, router } from "expo-router";
+import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
@@ -70,7 +70,7 @@ export default function AppLayout() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      api.get("/subscription/quota", { _skipAuthRetry: true } as any)
+      api.get("/subscription/quota", { _skipAuthRetry: true })
         .then((res) => setSubStatus(res.data.status))
         .catch(() => setSubStatus(null))
         .finally(() => setSubLoading(false));
@@ -115,7 +115,7 @@ export default function AppLayout() {
                   {parent && (
                     <>
                       <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
-                      <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as any)}>
+                      <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as Href)}>
                         <Text style={{ color: colors.textMuted, fontWeight: "600", fontSize: 16 }}>
                           {t(parent.titleKey)}
                         </Text>

@@ -1,11 +1,15 @@
+import { z } from 'zod';
 import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/auth';
 import { requireAdmin } from '../middleware/requireAdmin';
 import { validate } from '../middleware/validate.middleware';
 import { activateOrgBody, orgIdParam } from '../schemas/admin.schema';
+import { rejectSeatsBody } from '../schemas/subscription.schema';
+import { uuidParam } from '../schemas/common.schema';
 import prisma from '../utils/prisma';
 import * as subscriptionService from '../services/subscription.service';
 import { PlanName, calculateTotalPrice, getUnitPrice } from '../types/plans';
+import { AuditService } from '../services/audit.service';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('AdminRoutes');
@@ -39,14 +43,15 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
     const result = organizations.map((org) => {
       const memberCount = org._count.members;
       const plan = (org.subscription?.plan || 'FREE') as PlanName;
+      const paidSeats = org.subscription?.paidSeats || memberCount;
       return {
         id: org.id,
         name: org.name,
         slug: org.slug,
         createdAt: org.createdAt,
         memberCount,
-        totalPrice: calculateTotalPrice(plan, memberCount),
-        unitPrice: getUnitPrice(plan, memberCount),
+        totalPrice: calculateTotalPrice(plan, paidSeats),
+        unitPrice: getUnitPrice(plan, paidSeats),
         subscription: org.subscription
           ? {
               id: org.subscription.id,
@@ -55,6 +60,7 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
               questionsUsed: org.subscription.questionsUsed,
               questionsPerMonth: org.subscription.questionsPerMonth,
               maxMembers: org.subscription.maxMembers,
+              paidSeats: org.subscription.paidSeats,
               currentPeriodStart: org.subscription.currentPeriodStart,
               currentPeriodEnd: org.subscription.currentPeriodEnd,
               trialEndsAt: org.subscription.trialEndsAt,
@@ -102,9 +108,9 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
 router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, validate({ params: orgIdParam, body: activateOrgBody }), async (req: AuthRequest, res: Response) => {
   try {
     const orgId = String(req.params.orgId);
-    const { plan } = req.body;
+    const { plan, paidSeats } = req.body;
 
-    const updated = await subscriptionService.activateSubscription(orgId, plan);
+    const updated = await subscriptionService.activateSubscription(orgId, plan, paidSeats);
     logger.info(`Admin ${req.userEmail} a active le plan ${plan} pour l'org ${orgId}`);
 
     res.json({
@@ -155,6 +161,110 @@ router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, validate({
     logger.error('Erreur renouvellement abonnement (admin)', err);
     const msg = err instanceof Error ? err.message : 'Erreur serveur';
     if (msg.includes('introuvable') || msg.includes('gratuit')) {
+      res.status(400).json({ error: msg });
+      return;
+    }
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+// ==================== SEAT REQUESTS ====================
+
+const requestIdParam = z.object({ requestId: uuidParam });
+
+/**
+ * @swagger
+ * /api/admin/seat-requests:
+ *   get:
+ *     tags: [Admin]
+ *     summary: Lister les demandes de sièges en attente
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des demandes PENDING
+ */
+router.get('/seat-requests', requireAuth, requireAdmin, async (_req: AuthRequest, res: Response) => {
+  try {
+    const requests = await subscriptionService.getPendingSeatsRequests();
+    res.json(requests);
+  } catch (err) {
+    logger.error('Erreur lors de la récupération des demandes de sièges', err);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/admin/seat-requests/{requestId}/approve:
+ *   post:
+ *     tags: [Admin]
+ *     summary: Approuver une demande de sièges
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: requestId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Demande approuvée
+ */
+router.post('/seat-requests/:requestId/approve', requireAuth, requireAdmin, validate({ params: requestIdParam }), async (req: AuthRequest, res: Response) => {
+  try {
+    const requestId = String(req.params.requestId);
+    const result = await subscriptionService.approveSeatsRequest(requestId, req.userId!);
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_APPROVED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, changes: { additionalSeats: result.additionalSeats } });
+    res.json({ message: 'Demande approuvée', request: result });
+  } catch (err) {
+    logger.error('Erreur approbation demande de sièges', err);
+    const msg = err instanceof Error ? err.message : 'Erreur serveur';
+    if (msg.includes('introuvable') || msg.includes('déjà')) {
+      res.status(400).json({ error: msg });
+      return;
+    }
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/admin/seat-requests/{requestId}/reject:
+ *   post:
+ *     tags: [Admin]
+ *     summary: Rejeter une demande de sièges
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: requestId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               note:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Demande rejetée
+ */
+router.post('/seat-requests/:requestId/reject', requireAuth, requireAdmin, validate({ params: requestIdParam, body: rejectSeatsBody }), async (req: AuthRequest, res: Response) => {
+  try {
+    const requestId = String(req.params.requestId);
+    const result = await subscriptionService.rejectSeatsRequest(requestId, req.userId!, req.body.note);
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_REJECTED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, changes: { adminNote: req.body.note } });
+    res.json({ message: 'Demande rejetée', request: result });
+  } catch (err) {
+    logger.error('Erreur rejet demande de sièges', err);
+    const msg = err instanceof Error ? err.message : 'Erreur serveur';
+    if (msg.includes('introuvable') || msg.includes('déjà')) {
       res.status(400).json({ error: msg });
       return;
     }

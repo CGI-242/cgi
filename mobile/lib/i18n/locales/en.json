@@ -106,7 +106,10 @@
     "emailAlreadyExists": "This email address is already in use",
     "logoutAll": "Log out all devices",
     "logoutAllConfirm": "Log out all devices? You will also be logged out.",
-    "logoutAllSuccess": "All devices have been logged out"
+    "logoutAllSuccess": "All devices have been logged out",
+    "joinTeam": "Join a team",
+    "invitedDescription": "You have been invited to join an organization",
+    "invitedBanner": "You have been invited to join an organization. Create your account to accept the invitation."
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -389,7 +392,9 @@
     "acceptInvitation": "Accept invitation",
     "invitationToken": "Invitation token",
     "invitationAccepted": "Invitation accepted successfully",
-    "dangerZone": "DANGER ZONE"
+    "dangerZone": "DANGER ZONE",
+    "seatsAvailable": "Seats available",
+    "noSeatsAvailable": "No seats available. Contact your administrator to increase the number of seats."
   },
   "audit": {
     "entityHistory": "Entity history",
@@ -482,7 +487,10 @@
     "confirmRenewal": "Confirm renewal",
     "renewConfirm": "Renew subscription for \"{{name}}\" for 1 year?",
     "renew": "Renew",
-    "noOrganizations": "No organizations"
+    "noOrganizations": "No organizations",
+    "seats": "seat(s)",
+    "enterSeats": "Please enter the number of seats",
+    "seatsLessThanMembers": "Number of seats cannot be less than the current member count"
   },
   "invitations": {
     "accept": "Accept an invitation",
@@ -496,6 +504,29 @@
     "memberPermissions": "MEMBER PERMISSIONS",
     "resetConfirm": "Reset permissions to role defaults?",
     "reset": "Reset"
+  },
+  "seatRequest": {
+    "title": "Add seats",
+    "currentSeats": "{{used}} / {{total}} seats used",
+    "seatsToAdd": "Seats to add",
+    "submit": "Request",
+    "confirmTitle": "Confirm request",
+    "success": "Request sent successfully",
+    "pendingLabel": "Request in progress...",
+    "pendingDetail": "+{{seats}} seat(s) requested — {{price}} XAF",
+    "discountApplied": "Volume discount -{{percent}}% applied ({{total}}+ seats)",
+    "pendingRequests": "Seat requests ({{count}} pending)",
+    "pending": "Pending",
+    "requestedBy": "Requested by {{name}}",
+    "approve": "Approve",
+    "reject": "Reject",
+    "approveTitle": "Approve request",
+    "approveConfirm": "Approve +{{seats}} seat(s) for \"{{org}}\" ({{price}} XAF)?",
+    "approved": "Request approved",
+    "rejectTitle": "Reject request",
+    "rejectConfirm": "Reject request for +{{seats}} seat(s) for \"{{org}}\"?",
+    "rejected": "Request rejected",
+    "rejectNotePlaceholder": "Rejection reason (optional)"
   },
   "abonnement": {
     "loadingSubscription": "Loading subscription...",

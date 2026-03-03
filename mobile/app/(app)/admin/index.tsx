@@ -2,12 +2,13 @@ import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from "rea
 import { useState, useEffect, useCallback } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { adminApi, AdminOrganization } from "@/lib/api/admin";
+import { adminApi, AdminOrganization, AdminSeatRequest } from "@/lib/api/admin";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useToast } from "@/components/ui/ToastProvider";
 import AdminStatsGrid from "@/components/admin/AdminStatsGrid";
 import OrganisationCard from "@/components/admin/OrganisationCard";
+import SeatRequestsList from "@/components/admin/SeatRequestsList";
 
 export default function AdminScreen() {
   const { colors } = useTheme();
@@ -17,13 +18,20 @@ export default function AdminScreen() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [actionLoading, setActionLoading] = useState<string | null>(null);
+  const [seatsInput, setSeatsInput] = useState<Record<string, string>>({});
+  const [seatRequests, setSeatRequests] = useState<AdminSeatRequest[]>([]);
+  const [rejectNotes, setRejectNotes] = useState<Record<string, string>>({});
 
   const loadOrgs = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      const data = await adminApi.getOrganizations();
+      const [data, requests] = await Promise.all([
+        adminApi.getOrganizations(),
+        adminApi.getSeatRequests(),
+      ]);
       setOrgs(data);
+      setSeatRequests(requests);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       if (msg.includes("403") || msg.includes("refuse")) {
@@ -39,27 +47,36 @@ export default function AdminScreen() {
   useEffect(() => { loadOrgs(); }, [loadOrgs]);
 
   const handleActivate = async (org: AdminOrganization, plan: "BASIQUE" | "PRO") => {
-    const n = org.memberCount;
+    const seats = parseInt(seatsInput[org.id] || "", 10);
+    if (!seats || seats < 1) {
+      toast(t("admin.enterSeats"), "error");
+      return;
+    }
+    if (seats < org.memberCount) {
+      toast(t("admin.seatsLessThanMembers"), "error");
+      return;
+    }
+    const n = seats;
     const unitPrice = plan === "BASIQUE"
       ? (n >= 10 ? 58500 : n >= 5 ? 63750 : n >= 3 ? 67500 : 75000)
       : (n >= 10 ? 92000 : n >= 5 ? 97750 : n >= 3 ? 103500 : 115000);
     const totalPrice = unitPrice * n;
-    const confirmMsg = `${n} membre${n > 1 ? "s" : ""} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
+    const confirmMsg = `${n} ${t("admin.seats")} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
 
     const ok = await confirm({
-      title: `Activer le plan ${plan} pour "${org.name}" ?`,
+      title: `${t("admin.confirmActivation")} ${plan} — "${org.name}" ?`,
       message: confirmMsg,
       confirmLabel: t("security.activate"),
       cancelLabel: t("common.cancel"),
     });
     if (!ok) return;
-    doActivate(org.id, plan);
+    doActivate(org.id, plan, n);
   };
 
-  const doActivate = async (orgId: string, plan: "BASIQUE" | "PRO") => {
+  const doActivate = async (orgId: string, plan: "BASIQUE" | "PRO", paidSeats: number) => {
     setActionLoading(orgId);
     try {
-      await adminApi.activateSubscription(orgId, plan);
+      await adminApi.activateSubscription(orgId, plan, paidSeats);
       toast(t("security.activate") + " — OK", "success");
       await loadOrgs();
     } catch (err: unknown) {
@@ -86,6 +103,50 @@ export default function AdminScreen() {
     try {
       await adminApi.renewSubscription(orgId);
       toast("Abonnement renouvelé", "success");
+      await loadOrgs();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleApproveSeatRequest = async (req: AdminSeatRequest) => {
+    const ok = await confirm({
+      title: t("seatRequest.approveTitle"),
+      message: `${t("seatRequest.approveConfirm", { seats: req.additionalSeats, org: req.organization.name, price: req.totalPrice.toLocaleString("fr-FR") })}`,
+      confirmLabel: t("seatRequest.approve"),
+      cancelLabel: t("common.cancel"),
+    });
+    if (!ok) return;
+    setActionLoading(req.id);
+    try {
+      await adminApi.approveSeatRequest(req.id);
+      toast(t("seatRequest.approved"), "success");
+      await loadOrgs();
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleRejectSeatRequest = async (req: AdminSeatRequest) => {
+    const ok = await confirm({
+      title: t("seatRequest.rejectTitle"),
+      message: t("seatRequest.rejectConfirm", { seats: req.additionalSeats, org: req.organization.name }),
+      confirmLabel: t("seatRequest.reject"),
+      cancelLabel: t("common.cancel"),
+      destructive: true,
+    });
+    if (!ok) return;
+    setActionLoading(req.id);
+    try {
+      await adminApi.rejectSeatRequest(req.id, rejectNotes[req.id]);
+      toast(t("seatRequest.rejected"), "success");
+      setRejectNotes((prev) => { const next = { ...prev }; delete next[req.id]; return next; });
       await loadOrgs();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("common.error");
@@ -133,11 +194,24 @@ export default function AdminScreen() {
           colors={colors}
         />
 
+        {/* Demandes de sièges en attente */}
+        <SeatRequestsList
+          seatRequests={seatRequests}
+          actionLoading={actionLoading}
+          rejectNotes={rejectNotes}
+          onRejectNoteChange={(id, note) => setRejectNotes((prev) => ({ ...prev, [id]: note }))}
+          onApprove={handleApproveSeatRequest}
+          onReject={handleRejectSeatRequest}
+          colors={colors}
+        />
+
         {orgs.map(org => (
           <OrganisationCard
             key={org.id}
             org={org}
             actionLoading={actionLoading}
+            seatsValue={seatsInput[org.id] || ""}
+            onSeatsChange={(v) => setSeatsInput(prev => ({ ...prev, [org.id]: v }))}
             onActivate={handleActivate}
             onRenew={handleRenew}
             colors={colors}

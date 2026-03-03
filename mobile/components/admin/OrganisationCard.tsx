@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
+import { View, Text, TouchableOpacity, TextInput, ActivityIndicator } from "react-native";
 import type { AdminOrganization } from "@/lib/api/admin";
 
 type PlanKey = "FREE" | "BASIQUE" | "PRO";
@@ -38,12 +38,14 @@ export function statusLabel(status: string): string {
 interface OrganisationCardProps {
   org: AdminOrganization;
   actionLoading: string | null;
+  seatsValue: string;
+  onSeatsChange: (value: string) => void;
   onActivate: (org: AdminOrganization, plan: "BASIQUE" | "PRO") => void;
   onRenew: (org: AdminOrganization) => void;
   colors: any;
 }
 
-export default function OrganisationCard({ org, actionLoading, onActivate, onRenew, colors }: OrganisationCardProps) {
+export default function OrganisationCard({ org, actionLoading, seatsValue, onSeatsChange, onActivate, onRenew, colors }: OrganisationCardProps) {
   const sub = org.subscription;
   const plan = (sub?.plan || "FREE") as PlanKey;
   const status = sub?.status || "EXPIRED";
@@ -105,13 +107,38 @@ export default function OrganisationCard({ org, actionLoading, onActivate, onRen
           <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{formatDate(sub?.currentPeriodEnd || null)}</Text>
         </View>
         <View>
-          <Text style={{ fontSize: 11, color: colors.textMuted }}>Membres</Text>
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{org.memberCount}</Text>
+          <Text style={{ fontSize: 11, color: colors.textMuted }}>Membres / Sièges</Text>
+          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>
+            {org.memberCount} / {sub?.paidSeats ?? org.memberCount}
+          </Text>
         </View>
         <View>
           <Text style={{ fontSize: 11, color: colors.textMuted }}>Prix total/an</Text>
           <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
         </View>
+      </View>
+
+      {/* Input sièges */}
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10, gap: 8 }}>
+        <Text style={{ fontSize: 13, color: colors.textSecondary }}>Sièges à activer :</Text>
+        <TextInput
+          value={seatsValue}
+          onChangeText={(v) => onSeatsChange(v.replace(/[^0-9]/g, ""))}
+          placeholder={String(Math.max(org.memberCount, 1))}
+          placeholderTextColor={colors.textMuted}
+          keyboardType="numeric"
+          style={{
+            backgroundColor: colors.background,
+            paddingHorizontal: 12,
+            paddingVertical: 6,
+            fontSize: 14,
+            color: colors.text,
+            width: 80,
+            textAlign: "center",
+            borderWidth: 1,
+            borderColor: colors.border,
+          }}
+        />
       </View>
 
       {/* Actions */}

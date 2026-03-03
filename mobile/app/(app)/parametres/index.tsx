@@ -8,7 +8,7 @@ import {
   Platform,
   Switch,
 } from "react-native";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
@@ -106,7 +106,7 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="shield-checkmark-outline"
             label={t("settings.twoFactor")}
-            onPress={() => router.push("/(app)/securite" as any)}
+            onPress={() => router.push("/(app)/securite" as Href)}
             showChevron
             colors={colors}
           />
@@ -205,7 +205,7 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="document-text-outline"
             label={t("settings.terms")}
-            onPress={() => router.push("/(app)/legal/cgu" as any)}
+            onPress={() => router.push("/(app)/legal/cgu" as Href)}
             showChevron
             colors={colors}
           />
@@ -213,7 +213,7 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="lock-closed-outline"
             label={t("settings.privacy")}
-            onPress={() => router.push("/(app)/legal/confidentialite" as any)}
+            onPress={() => router.push("/(app)/legal/confidentialite" as Href)}
             showChevron
             colors={colors}
           />

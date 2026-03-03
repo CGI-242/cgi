@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "subscriptions" ADD COLUMN IF NOT EXISTS "paidSeats" INTEGER NOT NULL DEFAULT 1;

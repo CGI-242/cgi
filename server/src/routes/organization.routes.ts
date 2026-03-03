@@ -4,9 +4,11 @@ import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin, requireMember } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { createOrgBody, updateOrgBody, inviteMemberBody, changeMemberRoleBody, transferOwnershipBody, acceptInvitationBody } from '../schemas/organization.schema';
+import { requestSeatsBody } from '../schemas/subscription.schema';
 import { idParam, idAndUserIdParams, idAndInvIdParams } from '../schemas/common.schema';
 import * as orgService from '../services/organization.service';
 import * as orgAdminService from '../services/organization.admin.service';
+import * as subscriptionService from '../services/subscription.service';
 import { AuditService } from '../services/audit.service';
 
 const router = Router();
@@ -369,6 +371,45 @@ router.delete('/:id/invitations/:invId', requireAuth, resolveTenant, requireOrg,
     const invId = String(req.params.invId);
     await orgService.cancelInvitation(id, invId);
     res.json({ message: 'Invitation annulée' });
+  } catch (err) { handleError(res, err); }
+});
+
+/**
+ * @swagger
+ * /organizations/{id}/request-seats:
+ *   post:
+ *     tags: [Organizations]
+ *     summary: Demander des sièges supplémentaires (OWNER uniquement)
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID de l'organisation
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               additionalSeats:
+ *                 type: integer
+ *                 minimum: 1
+ *     responses:
+ *       201:
+ *         description: Demande de sièges créée
+ */
+// POST /api/organizations/:id/request-seats — OWNER demande des sièges
+router.post('/:id/request-seats', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ params: idParam, body: requestSeatsBody }), async (req: AuthRequest, res: Response) => {
+  try {
+    const id = String(req.params.id);
+    const request = await subscriptionService.requestAdditionalSeats(id, req.userId!, req.body.additionalSeats);
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_REQUESTED', entityType: 'SeatRequest', entityId: request.id, organizationId: id, changes: { additionalSeats: req.body.additionalSeats, unitPrice: request.unitPrice, totalPrice: request.totalPrice } });
+    res.status(201).json(request);
   } catch (err) { handleError(res, err); }
 });
 

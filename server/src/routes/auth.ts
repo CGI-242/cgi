@@ -72,7 +72,7 @@ function sendTokens(req: Request, res: Response, token: string, refreshToken: st
 // POST /api/auth/register
 router.post("/register", validate({ body: registerBody }), async (req: Request, res: Response) => {
   try {
-    const { entrepriseNom, nom, prenom, email, telephone, password } = req.body;
+    const { entrepriseNom, nom, prenom, email, telephone, password, invitationToken } = req.body;
 
     const existingUser = await prisma.user.findUnique({ where: { email } });
     if (existingUser) {
@@ -80,14 +80,28 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
       return;
     }
 
+    // Chercher une invitation : par token explicite OU par email PENDING
+    let invitation = null;
+    if (invitationToken) {
+      invitation = await prisma.invitation.findUnique({ where: { token: invitationToken } });
+      if (!invitation || invitation.status !== "PENDING") {
+        res.status(400).json({ error: "Invitation invalide ou expirée" });
+        return;
+      }
+      if (invitation.expiresAt < new Date()) {
+        await prisma.invitation.update({ where: { id: invitation.id }, data: { status: "EXPIRED" } });
+        res.status(400).json({ error: "Cette invitation a expiré" });
+        return;
+      }
+    } else {
+      // Chercher une invitation PENDING pour cet email
+      invitation = await prisma.invitation.findFirst({
+        where: { email, status: "PENDING", expiresAt: { gt: new Date() } },
+      });
+    }
+
     const hashedPassword = await bcrypt.hash(password, 10);
     const otp = generateOtp();
-
-    // Créer l'organisation (entreprise)
-    const slug = entrepriseNom.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-");
-    const organization = await prisma.organization.create({
-      data: { name: entrepriseNom, slug: `${slug}-${Date.now()}` },
-    });
 
     // Créer l'utilisateur
     const user = await prisma.user.create({
@@ -102,29 +116,61 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
       },
     });
 
-    // Ajouter comme OWNER de l'organisation
-    await prisma.organizationMember.create({
-      data: {
-        userId: user.id,
-        organizationId: organization.id,
-        role: "OWNER",
-      },
-    });
+    let organization;
 
-    // Créer un abonnement FREE (essai 7 jours, 5 questions)
-    const trialEnd = new Date();
-    trialEnd.setDate(trialEnd.getDate() + 7);
-    await prisma.subscription.create({
-      data: {
-        type: "ORGANIZATION",
-        organizationId: organization.id,
-        plan: "FREE",
-        status: "TRIALING",
-        questionsPerMonth: 5,
-        currentPeriodEnd: trialEnd,
-        trialEndsAt: trialEnd,
-      },
-    });
+    if (invitation) {
+      // Auto-join : rejoindre l'organisation existante, PAS de création org/abo
+      organization = await prisma.organization.findUnique({ where: { id: invitation.organizationId } });
+      if (!organization) {
+        res.status(400).json({ error: "Organisation de l'invitation introuvable" });
+        return;
+      }
+
+      await prisma.organizationMember.create({
+        data: {
+          userId: user.id,
+          organizationId: organization.id,
+          role: invitation.role,
+        },
+      });
+
+      // Marquer l'invitation comme acceptée
+      await prisma.invitation.update({
+        where: { id: invitation.id },
+        data: { status: "ACCEPTED", acceptedAt: new Date() },
+      });
+
+      logger.info(`Inscription avec invitation: ${email} a rejoint org ${organization.name} (rôle: ${invitation.role})`);
+    } else {
+      // Flux normal : créer org + abo FREE
+      const slug = entrepriseNom!.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-");
+      organization = await prisma.organization.create({
+        data: { name: entrepriseNom!, slug: `${slug}-${Date.now()}` },
+      });
+
+      await prisma.organizationMember.create({
+        data: {
+          userId: user.id,
+          organizationId: organization.id,
+          role: "OWNER",
+        },
+      });
+
+      // Créer un abonnement FREE (essai 7 jours, 5 questions)
+      const trialEnd = new Date();
+      trialEnd.setDate(trialEnd.getDate() + 7);
+      await prisma.subscription.create({
+        data: {
+          type: "ORGANIZATION",
+          organizationId: organization.id,
+          plan: "FREE",
+          status: "TRIALING",
+          questionsPerMonth: 5,
+          currentPeriodEnd: trialEnd,
+          trialEndsAt: trialEnd,
+        },
+      });
+    }
 
     // Envoyer OTP par email
     EmailService.sendOtp(email, otp).catch(() => {});
@@ -136,7 +182,7 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
       entityType: "USER",
       entityId: user.id,
       organizationId: organization.id,
-      changes: { email, organization: entrepriseNom },
+      changes: { email, organization: organization.name, viaInvitation: !!invitation },
     });
 
     res.status(201).json({

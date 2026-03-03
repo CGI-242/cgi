@@ -11,6 +11,7 @@ export interface AuthRequest extends Request {
   orgId?: string;
   orgRole?: string;
   orgPermissions?: Record<string, boolean>;
+  quotaIncremented?: boolean;
 }
 
 /**
@@ -81,7 +82,7 @@ export function isWebClient(req: Request): boolean {
  */
 export function setAuthCookies(res: Response, token: string, refreshToken: string): void {
   // Détecter HTTPS via le proxy (X-Forwarded-Proto) ou NODE_ENV
-  const req = (res as any).req as Request | undefined;
+  const req = (res as Response & { req?: Request }).req;
   const isSecure = req?.headers["x-forwarded-proto"] === "https" || req?.secure || process.env.NODE_ENV === "production";
 
   const cookieOpts = {

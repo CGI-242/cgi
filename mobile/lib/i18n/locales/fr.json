@@ -106,7 +106,10 @@
     "emailAlreadyExists": "Cette adresse est déjà utilisée",
     "logoutAll": "Déconnecter tous les appareils",
     "logoutAllConfirm": "Déconnecter tous les appareils ? Vous serez également déconnecté.",
-    "logoutAllSuccess": "Tous les appareils ont été déconnectés"
+    "logoutAllSuccess": "Tous les appareils ont été déconnectés",
+    "joinTeam": "Rejoindre une équipe",
+    "invitedDescription": "Vous avez été invité à rejoindre une organisation",
+    "invitedBanner": "Vous avez été invité à rejoindre une organisation. Créez votre compte pour accepter l'invitation."
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -389,7 +392,9 @@
     "acceptInvitation": "Accepter l'invitation",
     "invitationToken": "Token d'invitation",
     "invitationAccepted": "Invitation acceptée avec succès",
-    "dangerZone": "ZONE DANGER"
+    "dangerZone": "ZONE DANGER",
+    "seatsAvailable": "Sièges disponibles",
+    "noSeatsAvailable": "Aucun siège disponible. Contactez votre administrateur pour augmenter le nombre de sièges."
   },
   "audit": {
     "entityHistory": "Historique de l'entité",
@@ -482,7 +487,10 @@
     "confirmRenewal": "Confirmer le renouvellement",
     "renewConfirm": "Renouveler l'abonnement de \"{{name}}\" pour 1 an ?",
     "renew": "Renouveler",
-    "noOrganizations": "Aucune organisation"
+    "noOrganizations": "Aucune organisation",
+    "seats": "siège(s)",
+    "enterSeats": "Veuillez saisir le nombre de sièges",
+    "seatsLessThanMembers": "Le nombre de sièges ne peut pas être inférieur au nombre de membres actuels"
   },
   "invitations": {
     "accept": "Accepter une invitation",
@@ -496,6 +504,29 @@
     "memberPermissions": "PERMISSIONS DES MEMBRES",
     "resetConfirm": "Réinitialiser les permissions aux valeurs par défaut du rôle ?",
     "reset": "Réinitialiser"
+  },
+  "seatRequest": {
+    "title": "Ajouter des sièges",
+    "currentSeats": "{{used}} / {{total}} sièges utilisés",
+    "seatsToAdd": "Sièges à ajouter",
+    "submit": "Demander",
+    "confirmTitle": "Confirmer la demande",
+    "success": "Demande envoyée avec succès",
+    "pendingLabel": "Demande en cours...",
+    "pendingDetail": "+{{seats}} siège(s) demandé(s) — {{price}} XAF",
+    "discountApplied": "Remise volume -{{percent}}% appliquée ({{total}}+ sièges)",
+    "pendingRequests": "Demandes de sièges ({{count}} en attente)",
+    "pending": "En attente",
+    "requestedBy": "Demandé par {{name}}",
+    "approve": "Approuver",
+    "reject": "Rejeter",
+    "approveTitle": "Approuver la demande",
+    "approveConfirm": "Approuver +{{seats}} siège(s) pour \"{{org}}\" ({{price}} XAF) ?",
+    "approved": "Demande approuvée",
+    "rejectTitle": "Rejeter la demande",
+    "rejectConfirm": "Rejeter la demande de +{{seats}} siège(s) pour \"{{org}}\" ?",
+    "rejected": "Demande rejetée",
+    "rejectNotePlaceholder": "Motif du rejet (optionnel)"
   },
   "abonnement": {
     "loadingSubscription": "Chargement de l'abonnement...",

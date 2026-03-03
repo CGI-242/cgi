@@ -1,6 +1,27 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Platform } from "react-native";
 
+/* eslint-disable @typescript-eslint/no-explicit-any -- Web Speech API n'a pas de types standard dans RN */
+interface WebSpeechWindow {
+  SpeechRecognition?: new () => SpeechRecognitionInstance;
+  webkitSpeechRecognition?: new () => SpeechRecognitionInstance;
+}
+
+interface SpeechRecognitionResult {
+  [index: number]: { transcript: string };
+}
+
+interface SpeechRecognitionInstance {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  onresult: ((event: { results: { length: number } & Record<number, SpeechRecognitionResult> }) => void) | null;
+  onend: (() => void) | null;
+  onerror: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+}
+
 type UseSpeechRecognitionReturn = {
   isListening: boolean;
   transcript: string;
@@ -13,13 +34,13 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [isAvailable, setIsAvailable] = useState(false);
-  const recognitionRef = useRef<any>(null);
+  const recognitionRef = useRef<{ stop: () => void } | null>(null);
   const nativeSubscriptionsRef = useRef<Array<{ remove: () => void }>>([]);
 
   useEffect(() => {
     if (Platform.OS === "web") {
       const SpeechRecognition =
-        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+        (window as unknown as WebSpeechWindow).SpeechRecognition || (window as unknown as WebSpeechWindow).webkitSpeechRecognition;
       setIsAvailable(!!SpeechRecognition);
     } else {
       import("expo-speech-recognition")
@@ -43,7 +64,7 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
 
     if (Platform.OS === "web") {
       const SpeechRecognition =
-        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+        (window as unknown as WebSpeechWindow).SpeechRecognition || (window as unknown as WebSpeechWindow).webkitSpeechRecognition;
       if (!SpeechRecognition) return;
 
       const recognition = new SpeechRecognition();
@@ -51,7 +72,7 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
       recognition.continuous = false;
       recognition.interimResults = true;
 
-      recognition.onresult = (event: any) => {
+      recognition.onresult = (event) => {
         let finalTranscript = "";
         for (let i = 0; i < event.results.length; i++) {
           finalTranscript += event.results[i][0].transcript;
@@ -79,7 +100,7 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
         nativeSubscriptionsRef.current = [];
 
         // Écouter les résultats de transcription (M7)
-        const resultSub = ExpoSpeechRecognitionModule.addListener("result", (event: any) => {
+        const resultSub = ExpoSpeechRecognitionModule.addListener("result", (event: { results?: Array<{ transcript?: string }> }) => {
           if (event.results && event.results.length > 0) {
             setTranscript(event.results[0]?.transcript || "");
           }

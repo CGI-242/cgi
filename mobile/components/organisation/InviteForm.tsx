@@ -6,6 +6,8 @@ interface InviteFormProps {
   inviteEmail: string;
   inviteRole: "MEMBER" | "ADMIN";
   actionLoading: boolean;
+  remainingSeats?: number;
+  paidSeats?: number;
   onChangeEmail: (email: string) => void;
   onChangeRole: (role: "MEMBER" | "ADMIN") => void;
   onInvite: () => void;
@@ -16,11 +18,14 @@ export default function InviteForm({
   inviteEmail,
   inviteRole,
   actionLoading,
+  remainingSeats,
+  paidSeats,
   onChangeEmail,
   onChangeRole,
   onInvite,
   colors,
 }: InviteFormProps) {
+  const noSeatsLeft = remainingSeats !== undefined && remainingSeats <= 0;
   return (
     <>
       <Text
@@ -45,6 +50,20 @@ export default function InviteForm({
           marginBottom: 16,
         }}
       >
+        {paidSeats !== undefined && remainingSeats !== undefined && (
+          <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 12 }}>
+            <Text style={{ fontSize: 13, color: noSeatsLeft ? colors.danger : colors.textSecondary }}>
+              Sièges disponibles : {remainingSeats} / {paidSeats}
+            </Text>
+          </View>
+        )}
+        {noSeatsLeft && (
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 10, marginBottom: 12 }}>
+            <Text style={{ color: colors.danger, fontSize: 13 }}>
+              Aucun siège disponible. Contactez votre administrateur pour augmenter le nombre de sièges.
+            </Text>
+          </View>
+        )}
         <TextInput
           value={inviteEmail}
           onChangeText={onChangeEmail}
@@ -88,9 +107,9 @@ export default function InviteForm({
         </View>
         <TouchableOpacity
           onPress={onInvite}
-          disabled={actionLoading || !inviteEmail.trim()}
+          disabled={actionLoading || !inviteEmail.trim() || noSeatsLeft}
           style={{
-            backgroundColor: !inviteEmail.trim() ? colors.textMuted : colors.primary,
+            backgroundColor: (!inviteEmail.trim() || noSeatsLeft) ? colors.textMuted : colors.primary,
             paddingVertical: 12,
             alignItems: "center",
           }}

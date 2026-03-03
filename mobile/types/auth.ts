@@ -19,12 +19,13 @@ export interface Entreprise {
 }
 
 export interface RegisterPayload {
-  entrepriseNom: string;
+  entrepriseNom?: string;
   nom: string;
   prenom: string;
   email: string;
   telephone?: string;
   password: string;
+  invitationToken?: string;
 }
 
 export interface LoginPayload {

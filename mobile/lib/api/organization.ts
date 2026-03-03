@@ -6,6 +6,7 @@ export interface Organization {
   slug: string;
   plan: string;
   memberCount: number;
+  paidSeats?: number;
   createdAt: string;
 }
 
@@ -25,6 +26,22 @@ export interface Invitation {
   status: string;
   invitedAt: string;
   expiresAt: string;
+}
+
+export interface SeatRequest {
+  id: string;
+  organizationId: string;
+  requestedById: string;
+  additionalSeats: number;
+  currentSeats: number;
+  totalSeatsAfter: number;
+  unitPrice: number;
+  totalPrice: number;
+  plan: string;
+  status: "PENDING" | "APPROVED" | "REJECTED";
+  adminNote?: string;
+  processedAt?: string;
+  createdAt: string;
 }
 
 export const organizationApi = {
@@ -97,5 +114,10 @@ export const organizationApi = {
 
   permanentDeleteOrganization: async (id: string): Promise<void> => {
     await api.delete(`/organizations/${id}/permanent`);
+  },
+
+  requestAdditionalSeats: async (orgId: string, additionalSeats: number): Promise<SeatRequest> => {
+    const { data } = await api.post<SeatRequest>(`/organizations/${orgId}/request-seats`, { additionalSeats });
+    return data;
   },
 };
