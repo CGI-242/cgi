@@ -1,9 +1,10 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Pressable } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -26,6 +27,8 @@ interface SidebarProps {
   collapsed: boolean;
   onToggle: () => void;
   currentRoute: string;
+  mobileOpen?: boolean;
+  onMobileClose?: () => void;
 }
 
 const NAV_ITEMS: NavItem[] = [
@@ -42,8 +45,9 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
   return currentRoute.startsWith(itemRoute.replace("/(app)", ""));
 }
 
-export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
+export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen, onMobileClose }: SidebarProps) {
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const logout = useAuthStore((s) => s.logout);
   const { t } = useTranslation();
 
@@ -67,16 +71,32 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     },
   ];
 
-  const sidebarWidth = collapsed ? 60 : 220;
+  // On mobile, sidebar is always expanded when visible
+  const isCollapsed = isMobile ? false : collapsed;
+  const sidebarWidth = isCollapsed ? 60 : 220;
 
-  return (
+  // On mobile, don't render if not open
+  if (isMobile && !mobileOpen) return null;
+
+  const handleNavPress = (route: string) => {
+    router.push(route as any);
+    if (isMobile && onMobileClose) onMobileClose();
+  };
+
+  const handleProfileAction = (action: () => void) => {
+    action();
+    if (isMobile && onMobileClose) onMobileClose();
+  };
+
+  const sidebarContent = (
     <View
       style={{
-        width: sidebarWidth,
+        width: isMobile ? 260 : sidebarWidth,
         backgroundColor: colors.sidebar,
         paddingTop: 16,
         paddingBottom: 16,
         justifyContent: "space-between",
+        ...(isMobile ? { position: "absolute" as const, left: 0, top: 0, bottom: 0, zIndex: 20 } : {}),
       }}
     >
       {/* Header : logo + bouton toggle */}
@@ -85,15 +105,15 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           style={{
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: collapsed ? "center" : "space-between",
-            paddingHorizontal: collapsed ? 0 : 16,
+            justifyContent: isCollapsed ? "center" : "space-between",
+            paddingHorizontal: isCollapsed ? 0 : 16,
             paddingBottom: 12,
             borderBottomWidth: 1,
             borderBottomColor: colors.border,
             marginBottom: 8,
           }}
         >
-          {collapsed ? (
+          {isCollapsed ? (
             <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 22 }}>C</Text>
           ) : (
             <View>
@@ -101,14 +121,14 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
               <Text style={{ color: colors.textMuted, fontSize: 11 }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
-          {!collapsed && (
-            <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
-              <Ionicons name="chevron-back-outline" size={20} color={colors.sidebarText} />
+          {!isCollapsed && (
+            <TouchableOpacity onPress={isMobile ? onMobileClose : onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
+              <Ionicons name={isMobile ? "close" : "chevron-back-outline"} size={20} color={colors.sidebarText} />
             </TouchableOpacity>
           )}
         </View>
 
-        {collapsed && (
+        {isCollapsed && (
           <TouchableOpacity
             onPress={onToggle}
             style={{ alignItems: "center", paddingVertical: 8, marginBottom: 4 }}
@@ -129,7 +149,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
               key={item.label}
               onPress={() => {
                 if (!disabled && item.route) {
-                  router.push(item.route as any);
+                  handleNavPress(item.route);
                 }
               }}
               disabled={disabled}
@@ -138,9 +158,9 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
               style={{
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent: collapsed ? "center" : "flex-start",
+                justifyContent: isCollapsed ? "center" : "flex-start",
                 paddingVertical: 10,
-                paddingHorizontal: collapsed ? 0 : 16,
+                paddingHorizontal: isCollapsed ? 0 : 16,
                 backgroundColor: active ? colors.input : "transparent",
                 borderLeftWidth: active ? 3 : 0,
                 borderLeftColor: active ? colors.accent : "transparent",
@@ -152,7 +172,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 size={20}
                 color={active ? colors.accent : colors.sidebarText}
               />
-              {!collapsed && (
+              {!isCollapsed && (
                 <View style={{ flexDirection: "row", alignItems: "center", flex: 1, marginLeft: 12 }}>
                   <Text
                     style={{
@@ -191,22 +211,22 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
         {profileItems.map((item) => (
           <View key={item.label}>
             {item.separator && (
-              <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginHorizontal: collapsed ? 8 : 16, marginVertical: 4 }} />
+              <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginHorizontal: isCollapsed ? 8 : 16, marginVertical: 4 }} />
             )}
             <TouchableOpacity
-              onPress={item.action}
+              onPress={() => handleProfileAction(item.action)}
               accessibilityLabel={item.label}
               accessibilityRole="button"
               style={{
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent: collapsed ? "center" : "flex-start",
+                justifyContent: isCollapsed ? "center" : "flex-start",
                 paddingVertical: 10,
-                paddingHorizontal: collapsed ? 0 : 16,
+                paddingHorizontal: isCollapsed ? 0 : 16,
               }}
             >
               <Ionicons name={item.icon} size={20} color={item.color || colors.sidebarText} />
-              {!collapsed && (
+              {!isCollapsed && (
                 <Text
                   style={{
                     color: item.color || colors.sidebarText,
@@ -224,4 +244,18 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
       </View>
     </View>
   );
+
+  if (isMobile) {
+    return (
+      <View style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 10 }}>
+        <Pressable
+          style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, backgroundColor: "rgba(0,0,0,0.5)" }}
+          onPress={onMobileClose}
+        />
+        {sidebarContent}
+      </View>
+    );
+  }
+
+  return sidebarContent;
 }

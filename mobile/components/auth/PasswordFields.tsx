@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import PasswordStrengthIndicator from "./PasswordStrengthIndicator";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 interface Props {
   password: string;
@@ -23,6 +24,7 @@ export default function PasswordFields({
   colors,
 }: Props) {
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   const inputStyle = {
     width: "100%" as const,
     backgroundColor: colors.input,
@@ -32,7 +34,7 @@ export default function PasswordFields({
   };
 
   return (
-    <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>
+    <View style={{ flexDirection: isMobile ? "column" : "row", gap: 16, marginBottom: 16 }}>
       <View style={{ flex: 1 }}>
         <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
           {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>

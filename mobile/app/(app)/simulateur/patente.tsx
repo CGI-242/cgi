@@ -14,10 +14,12 @@ import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 export default function PatenteScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const [chiffreAffaires, setChiffreAffaires] = useState("");
   const [regime, setRegime] = useState<PatenteInput["regime"]>("reel");
   const [isStandBy, setIsStandBy] = useState(false);
@@ -45,10 +47,10 @@ export default function PatenteScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Layout 50/50 */}
-      <View style={{ flex: 1, flexDirection: "row" }}>
+      {/* Layout 50/50 ou vertical sur mobile */}
+      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
         {/* Colonne gauche - Formulaire */}
-        <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info */}
           <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <Text style={{ fontSize: 11, color: colors.text }}>
@@ -147,7 +149,7 @@ export default function PatenteScreen() {
         </ScrollView>
 
         {/* Colonne droite - Resultats */}
-        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result && result.patenteNette > 0 ? (
             <View>
               {/* Tranches */}

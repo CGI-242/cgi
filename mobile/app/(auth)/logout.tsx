@@ -4,10 +4,12 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 export default function LogoutScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const clearLoggedOut = useAuthStore((s) => s.clearLoggedOut);
 
   const handleReconnect = () => {
@@ -16,8 +18,8 @@ export default function LogoutScreen() {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-      <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32, alignItems: "center" }}>
+    <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
+      <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32, alignItems: "center" }}>
         <View
           style={{
             width: 64,

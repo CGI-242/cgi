@@ -4,6 +4,7 @@ import { router, useFocusEffect } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 const LEGAL_URLS = {
   aide: "https://cgi242.normx.ai/aide",
@@ -14,6 +15,7 @@ const LEGAL_URLS = {
 export default function LoginEmail() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const [email, setEmailLocal] = useState("");
   const [error, setError] = useState("");
   const [navigating, setNavigating] = useState(false);
@@ -42,8 +44,8 @@ export default function LoginEmail() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>

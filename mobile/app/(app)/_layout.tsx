@@ -12,6 +12,7 @@ import PaywallScreen from "@/components/paywall/PaywallScreen";
 import { api } from "@/lib/api/client";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -64,7 +65,9 @@ export default function AppLayout() {
   const user = useAuthStore((s) => s.user);
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
+  const { isMobile } = useResponsive();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [subStatus, setSubStatus] = useState<string | null>(null);
   const [subLoading, setSubLoading] = useState(true);
 
@@ -94,17 +97,29 @@ export default function AppLayout() {
 
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
-      <Sidebar
-        collapsed={sidebarCollapsed}
-        onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
-        currentRoute={pathname}
-      />
+      {!isMobile && (
+        <Sidebar
+          collapsed={sidebarCollapsed}
+          onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
+          currentRoute={pathname}
+        />
+      )}
       <View style={{ flex: 1 }}>
         {/* Header principal — toujours visible */}
         <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-            {/* Breadcrumb / fil d'Ariane */}
+            {/* Hamburger mobile + Breadcrumb */}
             <View style={{ flexDirection: "row", alignItems: "center" }}>
+              {isMobile && (
+                <TouchableOpacity
+                  onPress={() => setMobileSidebarOpen(true)}
+                  accessibilityLabel="Menu"
+                  accessibilityRole="button"
+                  style={{ padding: 6, marginRight: 8 }}
+                >
+                  <Ionicons name="menu" size={24} color={colors.accent} />
+                </TouchableOpacity>
+              )}
               <TouchableOpacity onPress={() => router.push("/(app)")}>
                 <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontWeight: "900", fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
                   CGI 242
@@ -214,6 +229,15 @@ export default function AppLayout() {
           <Stack.Screen name="legal/confidentialite" />
         </Stack>
       </View>
+      {isMobile && (
+        <Sidebar
+          collapsed={false}
+          onToggle={() => {}}
+          currentRoute={pathname}
+          mobileOpen={mobileSidebarOpen}
+          onMobileClose={() => setMobileSidebarOpen(false)}
+        />
+      )}
       <SessionExpiredModal />
     </View>
   );

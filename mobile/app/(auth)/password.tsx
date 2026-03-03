@@ -5,12 +5,14 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 
 export default function LoginPassword() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -55,8 +57,8 @@ export default function LoginPassword() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           {/* Bouton retour */}
           <TouchableOpacity
             onPress={() => router.replace("/(auth)/")}

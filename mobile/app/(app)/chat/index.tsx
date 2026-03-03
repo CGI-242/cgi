@@ -9,6 +9,7 @@ import {
   ScrollView,
   KeyboardAvoidingView,
   Platform,
+  Pressable,
 } from "react-native";
 import {
   sendMessageStream,
@@ -28,6 +29,7 @@ import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineQueue } from "@/lib/store/offlineQueue";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useToast } from "@/components/ui/ToastProvider";
 import { createLogger } from "@/lib/utils/logger";
 
@@ -46,6 +48,7 @@ const HISTORY_WIDTH = 260;
 export default function ChatScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   const { toast, confirm } = useToast();
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
   const [input, setInput] = useState("");
@@ -238,8 +241,8 @@ export default function ChatScreen() {
       </View>
 
       <View style={{ flex: 1, flexDirection: "row" }}>
-        {/* Sidebar 2 : Historique */}
-        {showHistory && (
+        {/* Sidebar historique — fixe sur desktop, overlay sur mobile */}
+        {showHistory && !isMobile && (
           <View
             style={{
               width: HISTORY_WIDTH,
@@ -257,6 +260,37 @@ export default function ChatScreen() {
               onDeleteConversation={handleDeleteConversation}
               onClose={() => setShowHistory(false)}
             />
+          </View>
+        )}
+        {showHistory && isMobile && (
+          <View style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 10 }}>
+            <Pressable
+              style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, backgroundColor: "rgba(0,0,0,0.5)" }}
+              onPress={() => setShowHistory(false)}
+            />
+            <View
+              style={{
+                position: "absolute",
+                left: 0,
+                top: 0,
+                bottom: 0,
+                width: HISTORY_WIDTH,
+                backgroundColor: colors.headerBg,
+                borderRightWidth: 1,
+                borderRightColor: colors.border,
+                zIndex: 20,
+              }}
+            >
+              <HistoryPanel
+                conversations={conversations}
+                loading={loadingHistory}
+                activeConversationId={conversationId}
+                onNewConversation={handleNewConversation}
+                onLoadConversation={handleLoadConversation}
+                onDeleteConversation={handleDeleteConversation}
+                onClose={() => setShowHistory(false)}
+              />
+            </View>
           </View>
         )}
 

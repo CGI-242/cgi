@@ -18,10 +18,12 @@ import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 export default function ItsScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const [salaireBrut, setSalaireBrut] = useState("");
   const [periode, setPeriode] = useState<PeriodeRevenu>("mensuel");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
@@ -54,10 +56,10 @@ export default function ItsScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Layout 50/50 */}
-      <View style={{ flex: 1, flexDirection: "row" }}>
-        {/* Colonne gauche 50% - Formulaire */}
-        <ScrollView style={{ width: "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
+      {/* Layout 50/50 ou vertical sur mobile */}
+      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
+        {/* Colonne gauche - Formulaire */}
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
           {/* Info banner */}
           <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
             <Text style={{ fontSize: 11, color: colors.text }}>
@@ -139,8 +141,8 @@ export default function ItsScreen() {
           </Text>
         </ScrollView>
 
-        {/* Colonne droite 50% - Resultats */}
-        <ScrollView style={{ width: "50%", borderLeftWidth: 1, borderLeftColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        {/* Colonne droite - Resultats */}
+        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
               {/* Section CALCUL MENSUEL */}

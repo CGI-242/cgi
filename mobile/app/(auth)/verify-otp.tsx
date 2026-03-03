@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import OtpInput from "@/components/auth/OtpInput";
@@ -17,6 +18,7 @@ const RESEND_COOLDOWN_S = 60;
 export default function VerifyOtp() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -109,8 +111,8 @@ export default function VerifyOtp() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 24 }}>
-        <View style={{ width: "100%", maxWidth: 420, backgroundColor: colors.card, padding: 32 }}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>

@@ -4,6 +4,7 @@ import { router, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import EmailField from "@/components/auth/EmailField";
@@ -12,6 +13,7 @@ import PasswordFields from "@/components/auth/PasswordFields";
 export default function Register() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
   const { invitation } = useLocalSearchParams<{ invitation?: string }>();
   const hasInvitation = !!invitation;
   const [form, setForm] = useState({
@@ -129,8 +131,8 @@ export default function Register() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", padding: 24 }}>
-        <View style={{ width: "100%", maxWidth: 520, backgroundColor: colors.card, padding: 32 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", padding: isMobile ? 16 : 24 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 520, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           {/* Logo */}
           <View style={{ alignItems: "center", marginBottom: 24 }}>
             <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
@@ -179,7 +181,7 @@ export default function Register() {
           )}
 
           {/* Nom + Prénom */}
-          <View style={{ flexDirection: "row", gap: 16, marginBottom: 16 }}>
+          <View style={{ flexDirection: isMobile ? "column" : "row", gap: 16, marginBottom: 16 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
                 {t("auth.lastName")} <Text style={{ color: colors.danger }}>*</Text>
