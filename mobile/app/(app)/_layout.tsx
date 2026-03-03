@@ -34,6 +34,8 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/tva": "simulateur.tva.title",
   "/simulateur/igf": "simulateur.igf.title",
   "/simulateur/enregistrement": "simulateur.enreg.title",
+  "/simulateur/cession-parts": "simulateur.cessionParts.title",
+  "/simulateur/contribution-fonciere": "simulateur.foncier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
   "/analytics": "settings.managementAnalytics",
@@ -65,6 +67,8 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/tva": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/igf": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/enregistrement": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/cession-parts": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/contribution-fonciere": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -233,6 +237,8 @@ export default function AppLayout() {
           <Stack.Screen name="simulateur/tva" />
           <Stack.Screen name="simulateur/igf" />
           <Stack.Screen name="simulateur/enregistrement" />
+          <Stack.Screen name="simulateur/cession-parts" />
+          <Stack.Screen name="simulateur/contribution-fonciere" />
           <Stack.Screen name="chat/index" />
           <Stack.Screen name="abonnement/index" />
           <Stack.Screen name="admin/index" />

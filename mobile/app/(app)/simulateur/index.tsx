@@ -89,6 +89,22 @@ export default function SimulateurHub() {
       icon: "document-text-outline" as const,
       route: "/(app)/simulateur/enregistrement",
     },
+    {
+      id: "cession-parts",
+      title: "Cessions Parts",
+      subtitle: t("simulateur.cessionParts.subtitle"),
+      description: t("simulateur.cessionParts.legalRef"),
+      icon: "swap-horizontal-outline" as const,
+      route: "/(app)/simulateur/cession-parts",
+    },
+    {
+      id: "contribution-fonciere",
+      title: "Foncier",
+      subtitle: t("simulateur.foncier.subtitle"),
+      description: t("simulateur.foncier.legalRef"),
+      icon: "map-outline" as const,
+      route: "/(app)/simulateur/contribution-fonciere",
+    },
   ];
 
   return (
