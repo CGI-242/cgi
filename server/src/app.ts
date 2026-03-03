@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
@@ -129,10 +130,14 @@ app.get("/health", async (_req, res) => {
 
 // Servir le frontend web (Expo build) — après les routes API
 const webDistPath = path.resolve(__dirname, "../../mobile/dist");
-app.use(express.static(webDistPath));
-// SPA fallback : toute route non-API renvoie index.html
-app.get("/{*splat}", (_req, res) => {
-  res.sendFile(path.join(webDistPath, "index.html"));
-});
+const webIndexPath = path.join(webDistPath, "index.html");
+
+if (fs.existsSync(webIndexPath)) {
+  app.use(express.static(webDistPath));
+  // SPA fallback : toute route non-API renvoie index.html
+  app.get("/{*splat}", (_req, res) => {
+    res.sendFile(webIndexPath);
+  });
+}
 
 export default app;
