@@ -81,6 +81,14 @@ export default function SimulateurHub() {
       icon: "grid-outline" as const,
       route: "/(app)/simulateur/igf",
     },
+    {
+      id: "enregistrement",
+      title: "Enregistrement",
+      subtitle: t("simulateur.enreg.subtitle"),
+      description: t("simulateur.enreg.legalRef"),
+      icon: "document-text-outline" as const,
+      route: "/(app)/simulateur/enregistrement",
+    },
   ];
 
   return (

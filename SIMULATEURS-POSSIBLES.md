@@ -280,25 +280,45 @@ Paiement trimestriel.
 
 ---
 
-### 12. Droits d'enregistrement — Mutations immobilières (Tome 2, Livre 3)
+### 12. Droits d'enregistrement (Tome 2, Livre 1)
 
-**Inputs** : Prix de vente, nature du bien (terrain nu, bâti, fonds de commerce), localisation
+**Inputs** : Type d'acte, montant/valeur, localisation (pour mutations immobilières)
 
 **Formule** :
 
 ```
-1. Base = prix_de_vente (ou valeur vénale si supérieure)
-2. Taux selon nature :
-   - Terrain nu : 6%
-   - Immeuble bâti : 6%
-   - Fonds de commerce : 10% (variable selon tranche)
+1. Base = montant de l'acte (ou valeur vénale si supérieure)
+2. Taux selon type d'acte (Tome 2, Livre 1, Chapitre 11) :
+   CONTRATS ET MARCHÉS :
+   - Contrats/marchés entre particuliers : 1% (Art. 236-237)
+   - Garanties, nantissements, hypothèques : 1% (Art. 237)
+   - Marchés publics (État, collectivités) : 2% (Art. 235)
+   BAUX :
+   - Baux immobiliers (habitation, commercial, mixte) : 3% (Art. 216)
+   - Baux agricoles, pacage, cheptel : 3% (Art. 217 bis)
+   - Baux durée illimitée (meubles) : 4% (Art. 217)
+   - Baux à vie (immeubles durée illimitée) : 10% (Art. 217)
+   - Cession de droit au bail / pas-de-porte : 10% (Art. 218)
+   MUTATIONS IMMOBILIÈRES :
+   - Mutations immobilières (adjudication, vente, cession) : 8% (Art. 263)
+   - Mutations immatriculation centre-ville : 3% (Art. 263 bis, min 10 000 FCFA)
+   - Mutations immatriculation zones urbaines/rurales : 2% (Art. 263 bis, min 10 000 FCFA)
+   FONDS DE COMMERCE ET PARTS :
+   - Fonds de commerce / clientèle : 10% (Art. 225)
+   - Marchandises neuves dans fonds : 5% (Art. 225)
+   - Cessions d'actions sociales : 5% (Art. 214)
+   - Cessions de participations : 5% (Art. 214 bis)
+   DIVERS :
+   - Ventes mobilières : 4% (Art. 265)
+   - Partages de biens : 1% (Art. 255)
+   - Constitutions de rentes : 1% (Art. 258)
 3. Droits = base × taux
-4. Frais additionnels : timbre fiscal + salaire conservateur (1%)
-5. Total = droits + frais
+4. Centimes additionnels : 5% des droits (Art. 216 bis)
+5. Total = droits + centimes additionnels
 6. Délai : 3 mois après signature acte
 ```
 
-**Pertinence** : Moyenne-élevée — toute transaction immobilière, notaires, promoteurs.
+**Pertinence** : Élevée — toute transaction immobilière, baux, contrats, notaires, promoteurs, entreprises.
 
 ---
 
