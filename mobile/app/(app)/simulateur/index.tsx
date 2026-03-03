@@ -41,6 +41,46 @@ export default function SimulateurHub() {
       icon: "cash-outline" as const,
       route: "/(app)/simulateur/solde-liquidation",
     },
+    {
+      id: "ircm",
+      title: "IRCM",
+      subtitle: t("simulateur.ircm.subtitle"),
+      description: t("simulateur.ircm.legalRef"),
+      icon: "trending-up-outline" as const,
+      route: "/(app)/simulateur/ircm",
+    },
+    {
+      id: "irf-loyers",
+      title: "IRF Loyers",
+      subtitle: t("simulateur.irfLoyers.subtitle"),
+      description: t("simulateur.irfLoyers.legalRef"),
+      icon: "home-outline" as const,
+      route: "/(app)/simulateur/irf-loyers",
+    },
+    {
+      id: "iba",
+      title: "IBA",
+      subtitle: t("simulateur.iba.subtitle"),
+      description: t("simulateur.iba.legalRef"),
+      icon: "briefcase-outline" as const,
+      route: "/(app)/simulateur/iba",
+    },
+    {
+      id: "tva",
+      title: "TVA",
+      subtitle: t("simulateur.tva.subtitle"),
+      description: t("simulateur.tva.legalRef"),
+      icon: "receipt-outline" as const,
+      route: "/(app)/simulateur/tva",
+    },
+    {
+      id: "igf",
+      title: "IGF",
+      subtitle: t("simulateur.igf.subtitle"),
+      description: t("simulateur.igf.legalRef"),
+      icon: "grid-outline" as const,
+      route: "/(app)/simulateur/igf",
+    },
   ];
 
   return (

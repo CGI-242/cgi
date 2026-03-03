@@ -28,6 +28,11 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/is": "simulateur.is.title",
   "/simulateur/patente": "simulateur.patente.title",
   "/simulateur/solde-liquidation": "simulateur.solde.title",
+  "/simulateur/ircm": "simulateur.ircm.title",
+  "/simulateur/irf-loyers": "simulateur.irfLoyers.title",
+  "/simulateur/iba": "simulateur.iba.title",
+  "/simulateur/tva": "simulateur.tva.title",
+  "/simulateur/igf": "simulateur.igf.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
   "/analytics": "settings.managementAnalytics",
@@ -53,6 +58,11 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/is": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/patente": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/solde-liquidation": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/ircm": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/irf-loyers": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/iba": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/tva": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/igf": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -215,6 +225,11 @@ export default function AppLayout() {
           <Stack.Screen name="simulateur/is" />
           <Stack.Screen name="simulateur/patente" />
           <Stack.Screen name="simulateur/solde-liquidation" />
+          <Stack.Screen name="simulateur/ircm" />
+          <Stack.Screen name="simulateur/irf-loyers" />
+          <Stack.Screen name="simulateur/iba" />
+          <Stack.Screen name="simulateur/tva" />
+          <Stack.Screen name="simulateur/igf" />
           <Stack.Screen name="chat/index" />
           <Stack.Screen name="abonnement/index" />
           <Stack.Screen name="admin/index" />
