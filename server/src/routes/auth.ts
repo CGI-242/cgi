@@ -21,10 +21,10 @@ const router = Router();
  * - Web : cookies httpOnly (token NON visible par JS)
  * - Mobile : tokens dans le body JSON
  */
-function sendTokens(req: Request, res: Response, token: string, refreshToken: string, body: Record<string, unknown>): void {
+function sendTokens(req: Request, res: Response, token: string, refreshToken: string, body: Record<string, unknown>, rememberMe?: boolean): void {
   if (isWebClient(req)) {
     // Web : cookies httpOnly — pas de tokens dans le body
-    setAuthCookies(res, token, refreshToken);
+    setAuthCookies(res, token, refreshToken, rememberMe);
     res.json(body);
   } else {
     // Mobile : tokens dans le body
@@ -238,7 +238,7 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
 // POST /api/auth/login
 router.post("/login", validate({ body: loginBody }), async (req: Request, res: Response) => {
   try {
-    const { email, password } = req.body;
+    const { email, password, rememberMe } = req.body;
 
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
@@ -291,6 +291,7 @@ router.post("/login", validate({ body: loginBody }), async (req: Request, res: R
         entreprise_nom: membership?.organization.name,
         is_verified: user.isEmailVerified,
       },
+      rememberMe: !!rememberMe,
       otpCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
@@ -329,7 +330,7 @@ router.post("/login", validate({ body: loginBody }), async (req: Request, res: R
 // POST /api/auth/verify-otp
 router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Request, res: Response) => {
   try {
-    const { email, otp } = req.body;
+    const { email, otp, rememberMe } = req.body;
 
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user || user.emailVerifyToken !== otp) {
@@ -374,8 +375,8 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
     // Invalider toutes les sessions précédentes (1 seul poste à la fois)
     TokenBlacklistService.blacklistAllUserTokens(user.id);
 
-    const token = generateAccessToken({ userId: user.id, email: user.email });
-    const refreshToken = generateRefreshToken({ userId: user.id, email: user.email });
+    const token = generateAccessToken({ userId: user.id, email: user.email }, rememberMe);
+    const refreshToken = generateRefreshToken({ userId: user.id, email: user.email }, rememberMe);
 
     const membership = await prisma.organizationMember.findFirst({
       where: { userId: user.id },
@@ -403,7 +404,7 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
         entreprise_nom: membership?.organization.name,
         is_verified: true,
       },
-    });
+    }, rememberMe);
   } catch (err) {
     logger.error("[verify-otp]", err);
     res.status(500).json({ error: "Erreur serveur" });

@@ -109,7 +109,14 @@
     "logoutAllSuccess": "Tous les appareils ont été déconnectés",
     "joinTeam": "Rejoindre une équipe",
     "invitedDescription": "Vous avez été invité à rejoindre une organisation",
-    "invitedBanner": "Vous avez été invité à rejoindre une organisation. Créez votre compte pour accepter l'invitation."
+    "invitedBanner": "Vous avez été invité à rejoindre une organisation. Créez votre compte pour accepter l'invitation.",
+    "rememberMe": "Se souvenir de moi"
+  },
+  "passwordStrength": {
+    "minLength": "12 caractères minimum",
+    "uppercase": "1 lettre majuscule (A-Z)",
+    "digit": "1 chiffre (0-9)",
+    "special": "1 caractère spécial (!@#$%...)"
   },
   "sidebar": {
     "dashboard": "Dashboard",

@@ -16,10 +16,13 @@ export default function LoginPassword() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const [rememberMe, setRememberMe] = useState(false);
+
   const email = useAuthStore((s) => s.email);
   const setDevCode = useAuthStore((s) => s.setDevCode);
   const setUser = useAuthStore((s) => s.setUser);
   const setOtpSource = useAuthStore((s) => s.setOtpSource);
+  const setStoreRememberMe = useAuthStore((s) => s.setRememberMe);
 
   const handleLogin = async () => {
     if (!password) {
@@ -30,11 +33,12 @@ export default function LoginPassword() {
     setLoading(true);
 
     try {
-      const data = await authApi.login({ email, password });
+      const data = await authApi.login({ email, password, rememberMe });
       setUser(data.user ?? null);
       if (data.otpCode) {
         setDevCode(data.otpCode);
       }
+      setStoreRememberMe(rememberMe);
       setOtpSource("login");
       router.push("/(auth)/verify-otp");
     } catch (err) {
@@ -126,11 +130,39 @@ export default function LoginPassword() {
 
           {/* Mot de passe oublié */}
           <TouchableOpacity
-            style={{ alignSelf: "flex-end", marginBottom: 16 }}
+            style={{ alignSelf: "flex-end", marginBottom: 12 }}
             onPress={() => router.push("/(auth)/forgot-password")}
           >
             <Text style={{ fontSize: 14, color: colors.primary }}>
               {t("auth.forgotPassword")}
+            </Text>
+          </TouchableOpacity>
+
+          {/* Se souvenir de moi */}
+          <TouchableOpacity
+            style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}
+            onPress={() => setRememberMe(!rememberMe)}
+            activeOpacity={0.7}
+          >
+            <View
+              style={{
+                width: 20,
+                height: 20,
+                borderWidth: 2,
+                borderColor: rememberMe ? colors.primary : colors.textMuted,
+                backgroundColor: rememberMe ? colors.primary : "transparent",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: 10,
+                borderRadius: 4,
+              }}
+            >
+              {rememberMe ? (
+                <Ionicons name="checkmark" size={14} color="#fff" />
+              ) : null}
+            </View>
+            <Text style={{ fontSize: 14, color: colors.text }}>
+              {t("auth.rememberMe")}
             </Text>
           </TouchableOpacity>
 

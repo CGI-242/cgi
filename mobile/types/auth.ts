@@ -31,11 +31,13 @@ export interface RegisterPayload {
 export interface LoginPayload {
   email: string;
   password: string;
+  rememberMe?: boolean;
 }
 
 export interface VerifyOtpPayload {
   email: string;
   otp: string;
+  rememberMe?: boolean;
 }
 
 export interface ForgotPasswordPayload {
@@ -54,6 +56,7 @@ export interface AuthResponse {
   entreprise?: Entreprise;
   token?: string;
   refreshToken?: string;
+  rememberMe?: boolean;
   requireMFA?: boolean;
   mfaToken?: string;
 }

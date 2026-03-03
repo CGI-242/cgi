@@ -8,6 +8,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import OtpInput from "@/components/auth/OtpInput";
+import PasswordStrengthIndicator from "@/components/auth/PasswordStrengthIndicator";
 
 const REDIRECT_DELAY_MS = 2_000;
 const FEEDBACK_DISPLAY_MS = 3_000;
@@ -177,6 +178,8 @@ export default function ResetPassword() {
               />
             </TouchableOpacity>
           </View>
+
+          <PasswordStrengthIndicator password={password} colors={colors} />
 
           {/* Confirmer */}
           <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>

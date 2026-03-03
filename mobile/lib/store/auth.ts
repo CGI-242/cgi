@@ -14,6 +14,7 @@ interface AuthState {
   isLoading: boolean;
   loggedOut: boolean;
   sessionExpired: boolean;
+  rememberMe: boolean;
 
   setUser: (user: User | null) => void;
   setEmail: (email: string) => void;
@@ -24,6 +25,7 @@ interface AuthState {
   setLoading: (loading: boolean) => void;
   setSessionExpired: (expired: boolean) => void;
   clearSessionExpired: () => void;
+  setRememberMe: (rememberMe: boolean) => void;
   login: (user: User, token?: string, refreshToken?: string) => Promise<void>;
   logout: () => Promise<void>;
   clearLoggedOut: () => void;
@@ -71,6 +73,7 @@ export const useAuthStore = create<AuthState>()(
       isLoading: false,
       loggedOut: false,
       sessionExpired: false,
+      rememberMe: false,
 
       setUser: (user) => set({ user }),
       setEmail: (email) => set({ email }),
@@ -81,6 +84,7 @@ export const useAuthStore = create<AuthState>()(
       setLoading: (isLoading) => set({ isLoading }),
       setSessionExpired: (sessionExpired) => set({ sessionExpired }),
       clearSessionExpired: () => set({ sessionExpired: false }),
+      setRememberMe: (rememberMe) => set({ rememberMe }),
 
       login: async (user, token, refreshToken) => {
         if (isMobile) {
@@ -114,6 +118,7 @@ export const useAuthStore = create<AuthState>()(
           isAuthenticated: false,
           loggedOut: true,
           sessionExpired: false,
+          rememberMe: false,
           email: "",
           otpCode: "",
           devCode: "",
@@ -164,6 +169,7 @@ export const useAuthStore = create<AuthState>()(
       partialize: (state) => ({
         user: state.user,
         isAuthenticated: state.isAuthenticated,
+        rememberMe: state.rememberMe,
       }),
       onRehydrateStorage: () => (state) => {
         // Apres hydratation, verifier que le token existe

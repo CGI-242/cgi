@@ -17,11 +17,13 @@ export const registerBody = z.object({
 export const loginBody = z.object({
   email: emailField,
   password: requiredString('password'),
+  rememberMe: z.boolean().optional().default(false),
 });
 
 export const verifyOtpBody = z.object({
   email: emailField,
   otp: requiredString('otp'),
+  rememberMe: z.boolean().optional().default(false),
 });
 
 export const sendOtpEmailBody = z.object({

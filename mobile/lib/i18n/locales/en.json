@@ -109,7 +109,14 @@
     "logoutAllSuccess": "All devices have been logged out",
     "joinTeam": "Join a team",
     "invitedDescription": "You have been invited to join an organization",
-    "invitedBanner": "You have been invited to join an organization. Create your account to accept the invitation."
+    "invitedBanner": "You have been invited to join an organization. Create your account to accept the invitation.",
+    "rememberMe": "Remember me"
+  },
+  "passwordStrength": {
+    "minLength": "12 characters minimum",
+    "uppercase": "1 uppercase letter (A-Z)",
+    "digit": "1 digit (0-9)",
+    "special": "1 special character (!@#$%...)"
   },
   "sidebar": {
     "dashboard": "Dashboard",

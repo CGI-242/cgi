@@ -31,6 +31,7 @@ export default function VerifyOtp() {
   const setDevCode = useAuthStore((s) => s.setDevCode);
   const login = useAuthStore((s) => s.login);
   const user = useAuthStore((s) => s.user);
+  const rememberMe = useAuthStore((s) => s.rememberMe);
 
   useEffect(() => {
     authApi.sendOtpEmail(email).then((data) => {
@@ -55,7 +56,7 @@ export default function VerifyOtp() {
     setLoading(true);
 
     try {
-      const data = await authApi.verifyOtp({ email, otp: code });
+      const data = await authApi.verifyOtp({ email, otp: code, rememberMe });
 
       // MFA activé : rediriger vers la vérification TOTP
       if (data.requireMFA && data.mfaToken) {

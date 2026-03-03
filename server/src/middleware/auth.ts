@@ -80,7 +80,7 @@ export function isWebClient(req: Request): boolean {
 /**
  * Set les cookies httpOnly pour le client web
  */
-export function setAuthCookies(res: Response, token: string, refreshToken: string): void {
+export function setAuthCookies(res: Response, token: string, refreshToken: string, rememberMe?: boolean): void {
   // Détecter HTTPS via le proxy (X-Forwarded-Proto) ou NODE_ENV
   const req = (res as Response & { req?: Request }).req;
   const isSecure = req?.headers["x-forwarded-proto"] === "https" || req?.secure || process.env.NODE_ENV === "production";
@@ -92,17 +92,20 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
     path: "/",
   };
 
+  const accessMaxAge = rememberMe ? 7 * 24 * 60 * 60 * 1000 : 15 * 60 * 1000; // 7j ou 15min
+  const refreshMaxAge = rememberMe ? 30 * 24 * 60 * 60 * 1000 : 7 * 24 * 60 * 60 * 1000; // 30j ou 7j
+
   res.cookie("accessToken", token, {
     ...cookieOpts,
-    maxAge: 15 * 60 * 1000, // 15 minutes
+    maxAge: accessMaxAge,
   });
 
   res.cookie("refreshToken", refreshToken, {
     ...cookieOpts,
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 jours
+    maxAge: refreshMaxAge,
   });
 
-  logger.info(`Cookies set — secure: ${isSecure}, sameSite: lax`);
+  logger.info(`Cookies set — secure: ${isSecure}, sameSite: lax, rememberMe: ${!!rememberMe}`);
 }
 
 /**
