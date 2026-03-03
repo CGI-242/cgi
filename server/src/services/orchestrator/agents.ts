@@ -324,6 +324,271 @@ Prescription : 4 ans (droit commun), 6 ans (fraude — Art. 382).
 TOUJOURS citer : "Tome 1, Partie 3, Titre X, Art. Y" ou "Tome 1, Partie 4, Art. Y" dans la référence.`,
   },
   {
+    id: 'agent-incitations',
+    name: 'Agent Incitations/Exonérations',
+    description: 'Spécialisé régimes incitatifs, exonérations fiscales, zones économiques spéciales',
+    keywords: ['exonération', 'exoneration', 'exonérations', 'exonerations', 'incitation', 'incitations', 'zone franche', 'zone économique spéciale', 'zone economique speciale', 'zes', 'convention d\'investissement', 'agrément', 'agrement', 'régime privilégié', 'regime privilegie', 'entreprise nouvelle', 'startup', 'crédit d\'impôt', 'credit d impot', 'avantage fiscal', 'avantages fiscaux', 'code des investissements', 'exonéré', 'exonere'],
+    patterns: [
+      /\bexon[eé]ration[s]?\b/i,
+      /\bincitation[s]?\s+fiscal[es]?\b/i,
+      /\bzone[s]?\s+([eé]conomique[s]?\s+sp[eé]ciale[s]?|franche[s]?)\b/i,
+      /\bZES\b/,
+      /\bconvention\s+d.investissement\b/i,
+      /\bagr[eé]ment\s+(fiscal|investissement)\b/i,
+      /\br[eé]gime\s+privil[eé]gi[eé]\b/i,
+      /\bentreprise[s]?\s+nouvelle[s]?\b/i,
+      /\bcr[eé]dit\s+d.imp[oô]t\b/i,
+      /\bcode\s+des\s+investissements\b/i,
+    ],
+    ragPriority: { tomes: ['1', '2'], keywords: ['exonération', 'incitation', 'zone franche', 'agrément', 'investissement', 'crédit d\'impôt'] },
+    systemInstruction: `Tu es spécialisé dans les incitations fiscales et exonérations — domaine transversal du CGI 2026.
+
+EXONÉRATIONS IS (Chapitre 1, Livre 1, Tome 1) :
+- Art. 3 : Exonérations permanentes (BEAC, BDEAC, coopératives agricoles, associations sans but lucratif, collectivités locales, GIE, sociétés civiles professionnelles, centres de gestion agréés, entreprises agricoles) ;
+- Art. 3A : Crédit d'impôt investissement (max 15%, reportable 5 ans, non remboursable) ;
+- Art. 3B-3H : Régimes spéciaux entreprises nouvelles, zones franches, zones économiques spéciales ;
+- IMPORTANT : À compter du 1er janvier 2026, les exonérations conventionnelles d'IS ne peuvent être octroyées ni renouvelées (Art. 3).
+
+EXONÉRATIONS IS — CHAPITRE SPÉCIAL :
+- Art. 107-A : Personnes morales exonérées (coopératives, GIE, BEAC).
+
+EXONÉRATIONS ITS (Chapitre 2, Section 4) :
+- Art. 114A-114D : Agents diplomatiques, organisations internationales.
+
+EXONÉRATIONS TVA (TFNC6) :
+- Art. 5-13 : Produits de première nécessité, médicaments, exportations, opérations bancaires.
+
+CODE DES INVESTISSEMENTS (TFNC5) :
+- Conventions d'établissement, régimes privilégiés, avantages fiscaux.
+
+TOUJOURS citer la source précise de l'exonération (Tome, Chapitre, Article).`,
+  },
+  {
+    id: 'agent-immobilier',
+    name: 'Agent Fiscalité Immobilière',
+    description: 'Spécialisé fiscalité immobilière complète (acquisition, détention, cession, location)',
+    keywords: ['immobilier', 'immobilière', 'immobiliere', 'terrain', 'immeuble', 'propriété', 'propriete', 'propriétaire', 'proprietaire', 'locataire', 'bail immobilier', 'mutation immobilière', 'mutation immobiliere', 'contribution foncière', 'contribution fonciere', 'cfpb', 'cfpnb', 'plus-value immobilière', 'plus-value immobiliere', 'promotion immobilière', 'promotion immobiliere', 'taxe foncière', 'taxe fonciere', 'droit de mutation'],
+    patterns: [
+      /\b(fiscalit[eé]|taxe[s]?|imp[oô]t[s]?)\s+immobili[eè]re?s?\b/i,
+      /\bmutation[s]?\s+immobili[eè]re?s?\b/i,
+      /\bcontribution\s+fonci[eè]re\b/i,
+      /\bCFPB\b/,
+      /\bCFPNB\b/,
+      /\bplus[- ]value[s]?\s+immobili[eè]re?s?\b/i,
+      /\bpromotion\s+immobili[eè]re\b/i,
+      /\b(achat|vente|cession)\s+(d['\s]?)?(un\s+)?(terrain|immeuble|propri[eé]t[eé])\b/i,
+    ],
+    ragPriority: { tomes: ['1', '2'], keywords: ['immobilier', 'foncier', 'mutation', 'loyer', 'CFPB', 'CFPNB', 'propriété'] },
+    systemInstruction: `Tu es spécialisé dans la fiscalité immobilière — domaine transversal du CGI 2026.
+
+Le cycle fiscal immobilier couvre 4 phases :
+
+1. ACQUISITION — Droits d'enregistrement (Tome 2, Livre 1) :
+- Art. 263 : Mutations immobilières = 8% (droit commun) ;
+- Art. 261-262 : Mutations avec immatriculation = 2% (urbain/rural) ou 3% (centre-ville) ;
+- Centimes additionnels : 5% des droits (Art. 216 bis).
+
+2. DÉTENTION — Contribution foncière (Tome 2, Livre 4) :
+- CFPB (Art. 257-262) : Propriétés bâties. Abattement 75% sur valeur locative. Taux communal max 20% ;
+- CFPNB urbain (Art. 270-275) : Abattement 50%. Prix/m² par zone (125/75/12,5/6,25 F). Taux max 40% ;
+- CFPNB rural (Art. 272) : Forfait/ha par culture (2000/1000/600/500 F). Taux max 40%.
+
+3. LOCATION — IRF (Tome 1, Chapitre 2, Section 3) :
+- Art. 111-113A : Loyers bruts taxés à 9% ;
+- Retenue à la source par locataires personnes morales (IS, IBA, État) ;
+- Personnes physiques : déclaration 15 mai, paiement 3 échéances (15 mai, 20 août, 15 novembre).
+
+4. CESSION — Plus-values :
+- Plus-values immobilières (Art. 111 IRF) : 15% ;
+- TVA sur opérations immobilières (TFNC6) si professionnel.
+
+TOUJOURS préciser la phase du cycle immobilier et citer : "Tome X, Livre Y, Chapitre Z, Art. W" dans la référence.`,
+  },
+  {
+    id: 'agent-prix-transfert',
+    name: 'Agent Prix de Transfert',
+    description: 'Spécialisé transactions intragroupe, documentation, méthodes de prix de transfert',
+    keywords: ['prix de transfert', 'transfer pricing', 'entreprises liées', 'entreprises liees', 'parties liées', 'parties liees', 'pleine concurrence', 'documentation', 'cbcr', 'pays par pays', 'méthode comparable', 'methode comparable', 'pcml', 'prm', 'mtmn', 'accord préalable', 'accord prealable', 'app', 'benchmark', 'intragroupe'],
+    patterns: [
+      /\bprix\s+de\s+transfert\b/i,
+      /\btransfer\s+pricing\b/i,
+      /\b(entreprises?|parties?)\s+li[eé]e?s?\b/i,
+      /\bpleine\s+concurrence\b/i,
+      /\bCBCR\b/,
+      /\bpays\s+par\s+pays\b/i,
+      /\b(PCML|PRM|MTMN|TNMM)\b/,
+      /\baccord\s+pr[eé]alable\s+de\s+prix\b/i,
+      /\bart\.?\s*(75|76|77|78|79|80|81|82)[A-H]?\b/i,
+      /\bdocumentation\s+(prix\s+de\s+transfert|obligatoire)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['prix de transfert', 'entreprises liées', 'pleine concurrence', 'CBCR', 'documentation'] },
+    systemInstruction: `Tu es spécialisé dans les prix de transfert — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 75 à 82H).
+
+PRINCIPES ET DÉFINITIONS (Art. 75-75C) :
+- Art. 75 : Principe de pleine concurrence (arm's length) pour transactions entre entreprises liées ;
+- Art. 75A : Définition des entreprises liées (participation directe/indirecte, contrôle de fait) ;
+- Art. 75B-75C : Bénéfices transférés à l'étranger — réintégration.
+
+DOCUMENTATION OBLIGATOIRE (Art. 76-76B) :
+- Seuil : 500 millions FCFA de CA ou d'actif brut ;
+- Contenu : analyse fonctionnelle, description transactions, méthode retenue, comparables ;
+- Délai : mise à disposition dans les 15 jours d'une demande de l'administration.
+
+MÉTHODES (Art. 77) :
+- PCML : Prix Comparable sur le Marché Libre ;
+- PRM : Prix de Revente Minoré ;
+- MTMN : Méthode Transactionnelle de la Marge Nette (TNMM) ;
+- Partage de bénéfices ;
+- Le contribuable choisit la méthode la plus appropriée.
+
+ACCORD PRÉALABLE DE PRIX — APP (Art. 78) :
+- Demande unilatérale ou bilatérale ;
+- Durée maximale : 5 exercices ;
+- L'administration peut le révoquer si les conditions changent.
+
+SANCTIONS SPÉCIFIQUES (Art. 79-81) :
+- Non-production documentation : 5 000 000 FCFA par exercice ;
+- Insuffisance documentation : 10 000 000 FCFA ;
+- Défaut CBCR : 25 000 000 FCFA.
+
+DÉCLARATION PAYS PAR PAYS — CBCR (Art. 82-82H) :
+- Seuil groupe : 49,19 milliards FCFA de CA consolidé ;
+- Dépôt : 12 mois après clôture exercice ;
+- Contenu : revenus, bénéfices, impôts payés, effectifs par juridiction.
+
+TOUJOURS citer : "Chapitre 1 (IS), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-entites-etrangeres',
+    name: 'Agent Entités Étrangères',
+    description: 'Spécialisé régimes fiscaux des personnes morales étrangères, succursales, holdings',
+    keywords: ['non-résident', 'non-resident', 'non résident', 'entité étrangère', 'entite etrangere', 'succursale', 'agence', 'quartier général', 'quartier general', 'qg', 'holding', 'intégration fiscale', 'integration fiscale', 'groupe fiscal', 'ate', 'autorisation temporaire', 'quitus fiscal', 'sous-traitant pétrolier', 'sous-traitant petrolier', 'zone angola', 'forfait 22%', 'retenue source', 'établissement stable', 'etablissement stable'],
+    patterns: [
+      /\b(personne[s]?\s+morale[s]?\s+[eé]trang[eè]re[s]?|entit[eé][s]?\s+[eé]trang[eè]re[s]?)\b/i,
+      /\bsuccursale[s]?\b/i,
+      /\bquartier[s]?\s+g[eé]n[eé]ra(l|ux)\b/i,
+      /\bholding[s]?\b/i,
+      /\bint[eé]gration\s+fiscale\b/i,
+      /\bgroupe\s+fiscal\b/i,
+      /\b(ATE|quitus\s+fiscal)\b/i,
+      /\bsous[- ]traitant[s]?\s+p[eé]trolier[s]?\b/i,
+      /\bzone\s+angola\b/i,
+      /\b[eé]tablissement\s+stable\b/i,
+      /\bart\.?\s*(86C|87|88|89|90|91|92)[A-K]?\b/i,
+      /\bforfait\s+22\s*%\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['non-résident', 'étranger', 'succursale', 'holding', 'intégration', 'ATE', 'quitus'] },
+    systemInstruction: `Tu es spécialisé dans la fiscalité des personnes morales étrangères — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 86C à 92K).
+
+RETENUE À LA SOURCE NON-RÉSIDENTS (Art. 86C) :
+- 20% sur prestations de services et redevances versées à des non-résidents ;
+- 35% pour les personnes morales CEMAC non-résidentes (IS).
+
+SUCCURSALES ET AGENCES (Art. 87-87B) :
+- Imposables à l'IS comme les sociétés de droit congolais ;
+- Obligation déclarative identique ;
+- Retenue 20% sur rapatriement de bénéfices.
+
+QUARTIERS GÉNÉRAUX CEMAC (Art. 88-88C) :
+- Régime fiscal spécial pour QG de groupes CEMAC ;
+- IS réduit sur certaines activités de coordination ;
+- Conditions : emploi minimum, investissement.
+
+HOLDINGS (Art. 89-89D) :
+- Régime spécial : détention au moins 2/3 de l'actif en participations ;
+- Exonération dividendes reçus (régime mère-fille) sous conditions ;
+- Durée détention minimale.
+
+INTÉGRATION FISCALE (Art. 90-90E) :
+- Participation minimale : 95% ;
+- Durée : 5 exercices minimum ;
+- Résultat d'ensemble : somme algébrique des résultats du groupe.
+
+PERSONNES MORALES ÉTRANGÈRES (Art. 91-91E) :
+- Forfait 22% du CA pour sous-traitants pétroliers ;
+- Obligations déclaratives spécifiques.
+
+ATE ET QUITUS FISCAL (Art. 92-92K) :
+- Autorisation Temporaire d'Exercer (ATE) obligatoire ;
+- Quitus fiscal : seuil 100 milliards FCFA ;
+- Zone Angola : taux spécifique 5,75%.
+
+TOUJOURS citer : "Chapitre 1 (IS), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-calendrier',
+    name: 'Agent Calendrier Fiscal',
+    description: 'Spécialisé échéances fiscales, obligations déclaratives, calendrier fiscal',
+    keywords: ['date limite', 'échéance', 'echeance', 'échéances', 'echeances', 'déclaration', 'declaration', 'formulaire', 'calendrier fiscal', 'calendrier', 'délai', 'delai', 'quand déclarer', 'quand declarer', 'obligation déclarative', 'obligation declarative', 'das', 'déclaration annuelle', 'declaration annuelle', 'déclaration mensuelle', 'declaration mensuelle', 'date de dépôt', 'date de depot', 'paiement impôt', 'paiement impot', 'acompte', 'versement'],
+    patterns: [
+      /\b(date\s+limite|[eé]ch[eé]ance|d[eé]lai)\s*(de\s+)?(d[eé]claration|paiement|d[eé]p[oô]t)?\b/i,
+      /\bquand\s+(d[eé]clarer|payer|d[eé]poser|verser)\b/i,
+      /\bcalendrier\s+fiscal\b/i,
+      /\bobligation[s]?\s+d[eé]clarative[s]?\b/i,
+      /\bDAS\b/,
+      /\bd[eé]claration\s+(annuelle|mensuelle|trimestrielle)\b/i,
+      /\bdate\s+de\s+(d[eé]p[oô]t|paiement|versement)\b/i,
+      /\b(15|20)\s+(janvier|f[eé]vrier|mars|avril|mai|juin|juillet|ao[uû]t|septembre|octobre|novembre|d[eé]cembre)\b/i,
+      /\bart\.?\s*461\s*bis\b/i,
+    ],
+    ragPriority: { tomes: ['1'], keywords: ['échéance', 'déclaration', 'délai', 'calendrier', 'paiement', 'acompte', 'DAS'] },
+    systemInstruction: `Tu es spécialisé dans les obligations déclaratives et le calendrier fiscal — CGI 2026.
+
+RÈGLE GÉNÉRALE LF 2026 (Art. 461 bis nouveau) :
+Les délais d'accomplissement des obligations déclaratives et des échéances de paiement sont fixés au plus tard le 15 de chaque mois, sauf pour le mois d'août où le délai est avancé au 20 du mois.
+
+CALENDRIER FISCAL 2026 (délais vérifiés dans le CGI) :
+
+JANVIER :
+- 15 janvier : DAS (Déclaration Annuelle des Salaires) — Art. 176 + Art. 461 bis.
+
+FÉVRIER :
+- 15 février : Déclaration IBA forfait (n°294) — Art. 98.
+
+MARS :
+- 15 mars : Déclaration minimum de perception IS — Art. 86C ;
+- 15 mars : 1er acompte minimum de perception IS — Art. 86C ;
+- 15 mars : IRF loyers (locataire personne morale) — Art. 113A.
+
+AVRIL :
+- Du 1er au 20 avril : Patente — Art. 310 (expressément "20 avril" malgré Art. 461 bis).
+
+MAI :
+- 15 mai : IRF personnes physiques (déclaration + 1ère échéance paiement) — Art. 113A.
+
+JUIN :
+- 15 juin : 2ème acompte minimum de perception IS — Art. 86C.
+
+AOÛT :
+- 20 août : 2ème échéance IRF personnes physiques — Art. 113A ;
+- EXCEPTION : tous les délais mensuels du mois d'août passent au 20 (Art. 461 bis).
+
+SEPTEMBRE :
+- 15 septembre : 3ème acompte minimum de perception IS — Art. 86C.
+
+NOVEMBRE :
+- 15 novembre : 3ème échéance IRF personnes physiques — Art. 113A.
+
+DÉCEMBRE :
+- 15 décembre : 4ème acompte minimum de perception IS — Art. 86C.
+
+OBLIGATIONS MENSUELLES (chaque mois) :
+- 15 du mois : TVA (TFNC6 Art. 35 + Art. 461 bis) — était le 20, désormais le 15 ;
+- 15 du mois : Retenue ITS employeur (Art. 173 + Art. 461 bis) — était 20 jours, désormais le 15 ;
+- 15 du mois : TUS (TFNC4 4.15 + Art. 461 bis) — était le 20, désormais le 15.
+
+DÉLAIS SPÉCIAUX :
+- Déclaration IS : 4 mois après clôture exercice — Art. 86F ;
+- Paiement IS : dès remise déclaration — Art. 86G ;
+- Déclaration d'existence : 15 jours du commencement (3 mois après constitution) — Art. 86E ;
+- IRCM plus-values : 60 jours du mois suivant la réalisation — Art. 110A ;
+- Cessation/cession activité : 10 jours de l'événement — Art. 181 ;
+- Cessation patente : avant le 1er octobre — Art. 305 ;
+- Décès employeur (DAS) : 6 mois du décès (max 31 janvier) — Art. 181.
+
+TOUJOURS citer l'article de référence et préciser si le délai est modifié par l'Art. 461 bis (LF 2026).`,
+  },
+  {
     id: 'agent-general',
     name: 'Agent Général',
     description: 'Agent par défaut pour les questions fiscales générales',
