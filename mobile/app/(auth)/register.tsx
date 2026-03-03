@@ -120,10 +120,10 @@ export default function Register() {
   const inputStyle = {
     width: "100%" as const,
     backgroundColor: colors.input,
-    padding: 12,
-    fontSize: 16,
+    padding: isMobile ? 10 : 12,
+    fontSize: isMobile ? 15 : 16,
     color: colors.text,
-    
+    borderRadius: 8,
   };
 
   return (
@@ -131,27 +131,27 @@ export default function Register() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{ flex: 1, backgroundColor: colors.background }}
     >
-      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", padding: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 520, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 12 : 24, paddingVertical: isMobile ? 16 : 24 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 520, backgroundColor: colors.card, padding: isMobile ? 16 : 32, borderRadius: isMobile ? 12 : 16 }}>
           {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
+          <View style={{ alignItems: "center", marginBottom: isMobile ? 16 : 24 }}>
+            <Text style={{ fontSize: isMobile ? 28 : 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
+            <Text style={{ fontSize: isMobile ? 12 : 14, color: colors.textMuted, marginTop: 4 }}>
               Intelligence Fiscale IA
             </Text>
           </View>
 
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontSize: isMobile ? 20 : 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
             {hasInvitation ? t("auth.joinTeam") : t("auth.createCompany")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontSize: isMobile ? 13 : 14, color: colors.textMuted, marginBottom: isMobile ? 16 : 24 }}>
             {hasInvitation ? t("auth.invitedDescription") : t("auth.companyAdmin")}
           </Text>
 
           {/* Bannière invitation */}
           {hasInvitation && (
-            <View style={{ backgroundColor: "#00815d15", borderLeftWidth: 4, borderLeftColor: "#00815d", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: "#00815d", fontSize: 14, fontWeight: "600" }}>
+            <View style={{ backgroundColor: "#00815d15", borderLeftWidth: 4, borderLeftColor: "#00815d", padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
+              <Text style={{ color: "#00815d", fontSize: isMobile ? 13 : 14, fontWeight: "600" }}>
                 {t("auth.invitedBanner")}
               </Text>
             </View>
@@ -159,19 +159,19 @@ export default function Register() {
 
           {/* Erreur */}
           {error ? (
-            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <View style={{ backgroundColor: colors.danger + "15", padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
+              <Text style={{ color: colors.danger, fontSize: isMobile ? 13 : 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Nom du cabinet (masqué si invitation) */}
           {!hasInvitation && (
             <>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+              <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
                 {t("auth.company")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
-                style={{ ...inputStyle, marginBottom: 16 }}
+                style={{ ...inputStyle, marginBottom: isMobile ? 12 : 16 }}
                 placeholder={t("auth.companyPlaceholder")}
                 placeholderTextColor={colors.textMuted}
                 value={form.entrepriseNom}
@@ -181,9 +181,9 @@ export default function Register() {
           )}
 
           {/* Nom + Prénom */}
-          <View style={{ flexDirection: isMobile ? "column" : "row", gap: 16, marginBottom: 16 }}>
+          <View style={{ flexDirection: isMobile ? "column" : "row", gap: isMobile ? 10 : 16, marginBottom: isMobile ? 12 : 16 }}>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+              <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
                 {t("auth.lastName")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
@@ -195,7 +195,7 @@ export default function Register() {
               />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+              <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
                 {t("auth.firstName")} <Text style={{ color: colors.danger }}>*</Text>
               </Text>
               <TextInput
@@ -219,11 +219,11 @@ export default function Register() {
           />
 
           {/* Téléphone */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
             {t("auth.phone")}
           </Text>
           <TextInput
-            style={{ ...inputStyle, marginBottom: 16 }}
+            style={{ ...inputStyle, marginBottom: isMobile ? 12 : 16 }}
             placeholder={t("auth.phonePlaceholder")}
             placeholderTextColor={colors.textMuted}
             value={form.telephone}
@@ -244,7 +244,7 @@ export default function Register() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 8, opacity: loading ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: colors.primary, padding: isMobile ? 14 : 16, alignItems: "center", marginTop: isMobile ? 4 : 8, borderRadius: 8, opacity: loading ? 0.7 : 1 }}
             onPress={handleRegister}
             activeOpacity={0.8}
             disabled={loading}
@@ -252,17 +252,17 @@ export default function Register() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: isMobile ? 15 : 16 }}>
                 {t("auth.createAccount")}
               </Text>
             )}
           </TouchableOpacity>
 
           {/* Lien connexion */}
-          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 24 }}>
-            <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("auth.alreadyHaveAccount")} </Text>
+          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: isMobile ? 16 : 24 }}>
+            <Text style={{ fontSize: isMobile ? 13 : 14, color: colors.textMuted }}>{t("auth.alreadyHaveAccount")} </Text>
             <TouchableOpacity onPress={() => router.replace("/(auth)/")}>
-              <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
+              <Text style={{ fontSize: isMobile ? 13 : 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
                 {t("auth.signIn")}
               </Text>
             </TouchableOpacity>

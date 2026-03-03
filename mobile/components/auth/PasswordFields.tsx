@@ -28,15 +28,16 @@ export default function PasswordFields({
   const inputStyle = {
     width: "100%" as const,
     backgroundColor: colors.input,
-    padding: 12,
-    fontSize: 16,
+    padding: isMobile ? 10 : 12,
+    fontSize: isMobile ? 15 : 16,
     color: colors.text,
+    borderRadius: 8,
   };
 
   return (
-    <View style={{ flexDirection: isMobile ? "column" : "row", gap: 16, marginBottom: 16 }}>
+    <View style={{ flexDirection: isMobile ? "column" : "row", gap: isMobile ? 10 : 16, marginBottom: isMobile ? 12 : 16 }}>
       <View style={{ flex: 1 }}>
-        <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
           {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>
         </Text>
         <View>
@@ -62,7 +63,7 @@ export default function PasswordFields({
         <PasswordStrengthIndicator password={password} colors={colors} />
       </View>
       <View style={{ flex: 1 }}>
-        <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontSize: isMobile ? 13 : 14, fontWeight: "600", color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
           {t("common.confirm")} <Text style={{ color: colors.danger }}>*</Text>
         </Text>
         <TextInput
