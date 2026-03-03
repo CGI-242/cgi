@@ -153,7 +153,7 @@ export const tome1Node: SommaireNode = {
     },
     {
       id: "t1-p3",
-      label: "Partie 3 — Dispositions communes aux parties 1 & 2",
+      label: "Partie 3 — Dispositions communes aux parties 1 et 2",
       children: [
         {
           id: "t1-p3-t1",

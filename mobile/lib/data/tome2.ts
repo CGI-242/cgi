@@ -159,8 +159,8 @@ const t2l5ch12 = buildChapitreTree(at2l5ch12, `Chapitre 12 — ${t2l5ch12Data.me
 const t2l5ch13 = buildChapitreTree(at2l5ch13, `Chapitre 13 — ${t2l5ch13Data.meta.chapitre_titre}`, "t2l5ch13");
 const t2l5ch14 = buildChapitreTree(at2l5ch14, `Chapitre 14 — ${t2l5ch14Data.meta.chapitre_titre}`, "t2l5ch14");
 // Livres 6, 7, 8
-const t2l6Node: SommaireNode = { id: "t2l6", label: `Livre 6 — ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"}`, articles: at2l6 };
-const t2l7Node: SommaireNode = { id: "t2l7", label: "Livre 7 — Taxe sur les appareils automatiques", articles: at2l7 };
+const t2l6Node: SommaireNode = { id: "t2l6", label: `Livre 6 — ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"} (Abrogé)`, articles: at2l6 };
+const t2l7Node: SommaireNode = { id: "t2l7", label: "Livre 7 — Taxe sur les appareils automatiques (Abrogé)", articles: at2l7 };
 const t2l8Node: SommaireNode = { id: "t2l8", label: `Livre 8 — ${t2l8Data.meta.chapitre_titre || "Droits relatifs aux domaines de l'État"}`, articles: at2l8 };
 
 export const tome2Node: SommaireNode = {
@@ -180,7 +180,7 @@ export const tome2Node: SommaireNode = {
     },
     {
       id: "t2-l3",
-      label: "Livre 3 — Impôt sur le revenu des valeurs mobilières",
+      label: "Livre 3 — Impôt sur le revenu des valeurs mobilières (Abrogé)",
       children: [t2l3ch1, t2l3ch2, t2l3ch3, t2l3ch4],
     },
     {

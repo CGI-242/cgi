@@ -117,7 +117,7 @@ const aTfnc6Annexes = parseArticles(tfnc6TvaAnnexesData.articles);
 
 // TFNC2 - Incitations fiscales
 export const tfnc2Node: SommaireNode = {
-  id: "tfnc2", label: "2. Incitations fiscales",
+  id: "tfnc2", label: "2. Textes relatifs aux investissements",
   children: [
     buildChapitreTree(aCharteInvest, charteInvestData.meta.chapitre_titre, "tfnc2-charte"),
     buildChapitreTree(aDecretAgrement, decretAgrementData.meta.chapitre_titre, "tfnc2-agrement"),
@@ -185,7 +185,7 @@ export const tfnc4Node: SommaireNode = {
 
 // TFNC5 - Administrations fiscales et procédures
 export const tfnc5Node: SommaireNode = {
-  id: "tfnc5", label: "5. Administrations fiscales et procédures",
+  id: "tfnc5", label: "5. Obligations et procédures fiscales non codifiées",
   children: [
     { id: "tfnc5-attest", label: attestNonRedevData.meta.chapitre_titre, articles: aAttestNonRedev },
     {
