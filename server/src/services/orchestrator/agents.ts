@@ -195,27 +195,23 @@ TOUJOURS citer : "TFNC3 (Pétrole), Chapitre X" ou "TFNC3-MINES (Fiscalité mini
     id: 'agent-procedures',
     name: 'Agent Procédures',
     description: 'Spécialisé procédures fiscales, recouvrement et contentieux',
-    keywords: ['procédure', 'procedure', 'recouvrement', 'contentieux', 'réclamation', 'reclamation', 'contrôle fiscal', 'controle fiscal', 'vérification', 'verification', 'redressement', 'pénalité', 'penalite', 'sanction', 'amende', 'majoration', 'prescription', 'sursis', 'avis de mise en recouvrement'],
+    keywords: ['procédure', 'procedure', 'recouvrement', 'contentieux', 'réclamation', 'reclamation', 'contrôle fiscal', 'controle fiscal', 'vérification', 'verification', 'redressement', 'sursis', 'avis de mise en recouvrement', 'droit de communication', 'notification', 'mise en demeure', 'saisie', 'opposition', 'garanties contribuable'],
     patterns: [
       /\b(proc[eé]dure|contentieux)\s+fiscal[e]?\b/i,
       /\brecouvrement\b/i,
       /\br[eé]clamation\b/i,
       /\b(contr[oô]le|v[eé]rification)\s+fiscal[e]?\b/i,
       /\bredressement\b/i,
-      /\b(p[eé]nalit[eé]|sanction|amende|majoration)\b/i,
-      /\bprescription\s+(fiscal[e]?)?\b/i,
       /\bavis\s+de\s+mise\s+en\s+recouvrement\b/i,
       /\bsursis\s+de\s+paiement\b/i,
+      /\bdroit\s+de\s+communication\b/i,
+      /\bmise\s+en\s+demeure\b/i,
     ],
-    ragPriority: { tomes: ['3', '4'], chapitres: ['procédures', 'recouvrement', 'contentieux'], keywords: ['procédure', 'recouvrement', 'sanction', 'pénalité', 'contentieux'] },
-    systemInstruction: `Tu es spécialisé dans les procédures fiscales — Tome 1, Parties 2 à 4 du CGI 2026.
-Structure :
-- Partie 2 (Procédures générales) : impôts et taxes obligatoires, contrôle fiscal, droit de communication, vérification de comptabilité ;
-- Partie 3 (Sanctions et pénalités) : défaut de déclaration, déclarations tardives/inexactes, majorations, sanctions pénales ;
-- Partie 4 : Sanctions pénales.
-Couvre : contrôle fiscal, redressement, avis de mise en recouvrement, pénalités et majorations, contentieux (réclamation préalable, commission de recours, tribunal administratif).
-Focus : délais de prescription (4 ans), taux de pénalités (10% retard, 40% mauvaise foi, 80% manoeuvres frauduleuses), sursis de paiement, garanties du contribuable.
-TOUJOURS citer : "Tome 1, Partie X, Titre Y, Chapitre Z" dans la référence.`,
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 2', 'procédures', 'recouvrement', 'contentieux'], keywords: ['procédure', 'recouvrement', 'contrôle', 'vérification', 'contentieux'] },
+    systemInstruction: `Tu es spécialisé dans les procédures fiscales — Tome 1, Partie 2 du CGI 2026.
+Couvre : contrôle fiscal, droit de communication, vérification de comptabilité, notification de redressement, avis de mise en recouvrement, recouvrement forcé (saisie, opposition), contentieux fiscal (réclamation préalable, commission de recours, tribunal administratif), sursis de paiement, garanties du contribuable.
+Note : les sanctions et pénalités (Parties 3 et 4) sont gérées par l'Agent Sanctions dédié.
+TOUJOURS citer : "Tome 1, Partie 2, Titre X, Chapitre Y" dans la référence.`,
   },
   {
     id: 'agent-douanes',
@@ -274,6 +270,58 @@ Structure TFNC4 :
 - 4.18 : Redevance de crédits carbone (RCC) ;
 - 4.19 : Taxe sur les activités polluantes.
 TOUJOURS citer : "TFNC4 (titre X.Y — nom de la taxe)" dans la référence.`,
+  },
+  {
+    id: 'agent-sanctions',
+    name: 'Agent Sanctions',
+    description: 'Spécialisé sanctions fiscales, pénalités, amendes et sanctions pénales',
+    keywords: ['sanction', 'sanctions', 'pénalité', 'penalite', 'pénalités', 'penalites', 'amende', 'amendes', 'majoration', 'majorations', 'intérêt de retard', 'interet de retard', 'retard déclaration', 'retard declaration', 'défaut déclaration', 'defaut declaration', 'fraude fiscale', 'mauvaise foi', 'bonne foi', 'manoeuvres frauduleuses', 'taxation d\'office', 'insuffisance', 'omission', 'infraction', 'sanctions pénales', 'sanctions penales', 'emprisonnement', 'prison', 'quitus fiscal'],
+    patterns: [
+      /\b(sanction|p[eé]nalit[eé]|amende|majoration)[s]?\s*(fiscal|fiscale|de\s+retard)?\b/i,
+      /\b(d[eé]faut|retard|absence)\s+(de\s+)?d[eé]claration\b/i,
+      /\bint[eé]r[eê]t[s]?\s+de\s+retard\b/i,
+      /\b(fraude|mauvaise\s+foi|man[oœ]uvres?\s+frauduleuse)\b/i,
+      /\btaxation\s+d.office\b/i,
+      /\b(insuffisance|omission|inexactitude)\s+(d[eé]clarative|fiscale)?\b/i,
+      /\bart\.?\s*(37[2-9]|38[0-9]|39[0-9]|4[0-6][0-9]|5[12][0-6])\b/i,
+      /\b(100|50|200)\s*%\s*(majoration|p[eé]nalit[eé])\b/i,
+      /\bvente[s]?\s+sans\s+facture\b/i,
+      /\b(prescription|r[eé]clamation)\s*(fiscal[e]?)?\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'Partie 4', 'sanctions', 'pénalités'], keywords: ['sanction', 'pénalité', 'amende', 'majoration', 'fraude', 'infraction'] },
+    systemInstruction: `Tu es spécialisé dans les sanctions et pénalités fiscales — Tome 1, Parties 3 et 4 du CGI 2026 (Art. 372 à 526).
+
+PARTIE 3 — SANCTIONS ADMINISTRATIVES (Art. 372-520E) :
+
+Titre 1 — Sanctions pour infractions déclaratives (Art. 372-381 quinquies) :
+- Art. 372 : Taxation d'office → majoration 100%
+- Art. 373 : Non-production déclaration → majoration 50% ; retard → 15 000 F/jour (max 500 000 F) ; aucun droit dû → amende 500 000 F
+- Art. 373 : TVA/accises retard → intérêt 5%/mois ou pénalité 15%/mois (max 50%)
+- Art. 373 bis : Non-respect conventions → perte avantages + amende 500 000 F ou 10 000 000 F
+- Art. 373 ter : Documents en langue étrangère → amende 2 000 000 F/document
+- Art. 374 : Inexactitude bonne foi → 50% ; mauvaise foi → 100% ; TVA fraude → 200%
+- Art. 374 : Ventes sans facture TVA → 2x droits (récidive 4x) ; factures incorrectes → 200%
+- Art. 374 ter : Déclaration spontanée → intérêt 0,5%/jour (max 20%)
+- Art. 376 : Revenus étrangers dissimulés → 100% + sanctions pénales Art. 521
+- Art. 377 : Défaut renseignements → 100 000 F/omission
+- Art. 378 : Défaut déclaration d'existence → 200 000 F
+- Art. 379 : Infractions documentaires → perte droit déduction + 200 000 F + 100%
+- Art. 381 bis : Défaut justification taxe véhicules → 100%
+
+Titre 2 — Émission des rôles et recouvrement (Art. 407-421)
+Titre 3 — Contentieux fiscal (Art. 422-458 bis) : réclamation, transaction (Art. 422 bis), recours hiérarchique 30j (Art. 422 ter)
+Titre 4 — Dispositions générales recouvrement (Art. 459-520E) : droit de communication, quitus fiscal
+
+PARTIE 4 — SANCTIONS PÉNALES (Art. 521-526) :
+- Art. 521 : Avoirs étrangers dissimulés → amende = moitié avoir + affichage nom
+- Art. 521 bis : Utilisation frauduleuse NIU → 500 000 à 10 000 000 F + 3 mois à 3 ans prison
+- Art. 522 : Fraude fiscale → 250 000 à 5 000 000 F + 2 à 5 ans prison + publication jugement
+- Art. 523-524 : Déclarations inexactes stocks, écritures fictives → peines Art. 522
+- Art. 525 : Dirigeants personnes morales → responsables (PDG, DG, gérant)
+- Art. 526 : Contravention droit de communication → peines Art. 522-525
+
+Prescription : 4 ans (droit commun), 6 ans (fraude — Art. 382).
+TOUJOURS citer : "Tome 1, Partie 3, Titre X, Art. Y" ou "Tome 1, Partie 4, Art. Y" dans la référence.`,
   },
   {
     id: 'agent-general',
