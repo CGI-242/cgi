@@ -39,10 +39,10 @@ const ALERTE_PATTERNS = {
 // Alertes prédéfinies par catégorie
 const PREDEFINED_ALERTES = [
   // IS - Impôt sur les sociétés
-  { type: 'TAUX', categorie: 'IS', titre: 'Taux IS droit commun', description: 'Taux de l\'impôt sur les sociétés applicable aux bénéfices des personnes morales.', valeur: '25', unite: '%', articleNumero: '82' },
-  { type: 'SEUIL', categorie: 'IS', titre: 'Minimum de perception IS', description: 'Minimum de perception annuel de l\'impôt sur les sociétés.', valeur: '1.000.000', unite: 'FCFA', articleNumero: '86A' },
+  { type: 'TAUX', categorie: 'IS', titre: 'Taux IS droit commun', description: 'Taux de l\'impôt sur les sociétés applicable aux bénéfices des personnes morales (Art. 86A).', valeur: '28', unite: '%', articleNumero: '86A' },
+  { type: 'TAUX', categorie: 'IS', titre: 'Minimum de perception IS', description: 'Minimum de perception : 1% des produits (exploitation + financiers + HAO), ou 2% en cas de déficit fiscal sur 2 exercices consécutifs (Art. 86B).', valeur: '1', unite: '%', articleNumero: '86B' },
   { type: 'ECHEANCE', categorie: 'IS', titre: 'Déclaration IS - délai', description: 'Déclaration des résultats dans les 4 mois suivant la clôture de l\'exercice.', valeur: '4', unite: 'mois', articleNumero: '35' },
-  { type: 'TAUX', categorie: 'IS', titre: 'Acompte IS trimestriel', description: 'Paiement trimestriel d\'acomptes sur l\'IS.', valeur: '25', unite: '%', periodicite: 'trimestriel', articleNumero: '86' },
+  { type: 'ECHEANCE', categorie: 'IS', titre: 'Acomptes minimum de perception IS', description: 'Le minimum de perception se substitue aux anciens acomptes IS. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre (Art. 86B).', valeur: '4', unite: 'trimestres', periodicite: 'trimestriel', articleNumero: '86B' },
 
   // IBA
   { type: 'TAUX', categorie: 'IBA', titre: 'Taux IBA régime réel', description: 'Taux de l\'impôt sur les bénéfices d\'affaires pour les contribuables du régime réel.', valeur: '25', unite: '%', articleNumero: '92' },

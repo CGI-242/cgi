@@ -14,8 +14,8 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
   // ========== GENERALITES - TAUX IS ==========
   'taux is': ['Art. 86A'],
   'taux impot societes': ['Art. 86A'],
-  '25%': ['Art. 86A'],
-  '33%': ['Art. 86A'],
+  '28%': ['Art. 86A'],
+  '35%': ['Art. 86A'],
   'taux normal is': ['Art. 86A'],
   'taux non residents': ['Art. 86A'],
 

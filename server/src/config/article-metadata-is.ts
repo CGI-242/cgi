@@ -478,12 +478,12 @@ export const ARTICLE_METADATA_IS: Record<string, ArticleMetadataIS> = {
 
   'Art. 124-B': {
     numero: 'Art. 124-B',
-    titre: 'Acomptes IS',
+    titre: 'Minimum de perception — Acomptes trimestriels',
     section: 'Obligations',
-    themes: ['acomptes IS', 'versement spontane'],
+    themes: ['minimum de perception', 'acomptes IS', 'versement spontane'],
     priority: 1,
-    defines: ['acomptes IS'],
-    valeurs: ['15 fevrier', '15 mai', '15 aout', '15 novembre'],
+    defines: ['minimum de perception', 'acomptes IS'],
+    valeurs: ['15 mars', '15 juin', '15 septembre', '15 decembre'],
   },
 
   'Art. 124-C': {

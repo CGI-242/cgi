@@ -66,8 +66,8 @@ export const FISCAL_PARAMS = {
     minimumAnnuel: 1_200,
   },
   is: {
-    tauxGeneral: 0.25,
-    tauxEtranger: 0.33,
+    tauxGeneral: 0.28,
+    tauxEtranger: 0.35,
     tauxMinimumNormal: 0.01,
     tauxMinimumDeficit: 0.02,
   },

@@ -109,15 +109,11 @@ export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: nu
   const result = { sent: 0, errors: 0 };
 
   const FISCAL_DEADLINES = [
-    { month: 2, day: 15, label: '1er acompte IS (15 février)' },
-    { month: 3, day: 15, label: '1er acompte minimum de perception (15 mars)' },
+    { month: 3, day: 15, label: '1er acompte minimum de perception IS (15 mars)' },
     { month: 3, day: 31, label: 'Déclaration annuelle IS/IBA (31 mars)' },
-    { month: 5, day: 15, label: '2e acompte IS (15 mai)' },
-    { month: 6, day: 15, label: '2e acompte minimum de perception (15 juin)' },
-    { month: 8, day: 15, label: '3e acompte IS (15 août)' },
-    { month: 9, day: 15, label: '3e acompte minimum de perception (15 septembre)' },
-    { month: 11, day: 15, label: '4e acompte IS (15 novembre)' },
-    { month: 12, day: 15, label: '4e acompte minimum de perception (15 décembre)' },
+    { month: 6, day: 15, label: '2e acompte minimum de perception IS (15 juin)' },
+    { month: 9, day: 15, label: '3e acompte minimum de perception IS (15 septembre)' },
+    { month: 12, day: 15, label: '4e acompte minimum de perception IS (15 décembre)' },
   ];
 
   // Vérifier les échéances dans les 7 prochains jours
