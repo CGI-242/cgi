@@ -21,7 +21,7 @@ const STATUS_COLORS: Record<string, string> = {
 const STATUS_LABELS: Record<string, string> = {
   ACTIVE: "Actif",
   TRIALING: "Essai",
-  EXPIRED: "Expire",
+  EXPIRED: "Expiré",
 };
 
 const PLANS_INFO = [
@@ -31,7 +31,7 @@ const PLANS_INFO = [
     priceDetail: "7 jours d'essai",
     features: [
       "5 questions IA / mois",
-      "Acces au CGI en lecture",
+      "Accès au CGI en lecture",
       "Simulateurs de base",
     ],
   },
@@ -41,10 +41,10 @@ const PLANS_INFO = [
     priceDetail: "65 000 XAF/an/user (prix lancement)",
     features: [
       "15 questions IA / mois / user",
-      "Acces complet au CGI",
+      "Accès complet au CGI",
       "Tous les simulateurs",
       "Historique des conversations",
-      "Jusqu'a 50 membres",
+      "Jusqu'à 50 membres",
     ],
   },
   {
@@ -53,11 +53,11 @@ const PLANS_INFO = [
     priceDetail: "100 000 XAF/an/user (prix lancement)",
     features: [
       "30 questions IA / mois / user",
-      "Acces complet au CGI",
+      "Accès complet au CGI",
       "Tous les simulateurs",
-      "Historique illimite",
+      "Historique illimité",
       "Support prioritaire",
-      "Jusqu'a 50 membres",
+      "Jusqu'à 50 membres",
     ],
   },
 ];

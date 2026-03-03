@@ -14,7 +14,7 @@ export default function AdminStatsGrid({ totalOrgs, activeCount, trialCount, exp
     { label: "Total", value: totalOrgs, color: colors.text, bg: colors.background },
     { label: "Actifs", value: activeCount, color: "#16a34a", bg: `${colors.card}` },
     { label: "Essai", value: trialCount, color: "#2563eb", bg: `${colors.card}` },
-    { label: "Expires", value: expiredCount, color: "#dc2626", bg: `${colors.card}` },
+    { label: "Expirés", value: expiredCount, color: "#dc2626", bg: `${colors.card}` },
   ];
 
   return (

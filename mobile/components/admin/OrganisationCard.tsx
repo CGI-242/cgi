@@ -28,9 +28,9 @@ export function statusLabel(status: string): string {
   const labels: Record<string, string> = {
     ACTIVE: "Actif",
     TRIALING: "Essai",
-    EXPIRED: "Expire",
-    CANCELLED: "Annule",
-    PAST_DUE: "Impaye",
+    EXPIRED: "Expiré",
+    CANCELLED: "Annulé",
+    PAST_DUE: "Impayé",
   };
   return labels[status] || status;
 }
@@ -86,7 +86,7 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
       {/* Quota */}
       <View style={{ marginBottom: 10 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 4 }}>
-          <Text style={{ fontSize: 12, color: colors.textSecondary }}>Questions (total org)</Text>
+          <Text style={{ fontSize: 12, color: colors.textSecondary }}>Questions (total org.)</Text>
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{quota}</Text>
         </View>
         <View style={{ height: 6, backgroundColor: colors.border }}>

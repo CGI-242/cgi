@@ -67,7 +67,7 @@ export default function AuditStatsCards({
           {ACTION_LABELS[stats.mostFrequentAction] || stats.mostFrequentAction}
         </Text>
         <Text style={{ fontSize: 11, color: "#16a34a", fontWeight: "500" }}>
-          Top action
+          Action principale
         </Text>
       </View>
     </View>
