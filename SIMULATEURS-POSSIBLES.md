@@ -7,6 +7,7 @@
 **Inputs** : Salaire brut mensuel, situation familiale, nombre d'enfants
 
 **Formule** :
+
 ```
 1. CNSS = min(salaire_brut, 1 200 000) × 4%
 2. Base après CNSS = salaire_brut − CNSS
@@ -34,6 +35,7 @@
 **Inputs** : Produits d'exploitation, produits financiers, produits HAO, retenues libératoires, déficit consécutif (oui/non)
 
 **Formule** :
+
 ```
 1. Base = produits_exploitation + produits_financiers + produits_HAO − retenues_libératoires
 2. Taux = 1% (normal) ou 2% (si déficit fiscal ≥ 2 exercices consécutifs)
@@ -51,6 +53,7 @@
 **Inputs** : Résultat fiscal, type contribuable, 4 acomptes trimestriels versés
 
 **Formule** :
+
 ```
 1. Résultat arrondi = arrondir_inf(résultat_fiscal, 1 000)
 2. Taux IS selon type :
@@ -74,6 +77,7 @@
 **Inputs** : Chiffre d'affaires, régime fiscal, mise en veille (oui/non), nombre d'entités fiscales
 
 **Formule** :
+
 ```
 1. Si mise en veille : patente = dernière_patente × 25%
 2. Sinon, barème dégressif sur CA :
@@ -108,6 +112,7 @@
 **Inputs** : Montant brut (dividendes, intérêts, plus-values mobilières), type de revenu
 
 **Formule** :
+
 ```
 1. Base imposable = montant_brut (pas d'abattement)
 2. Taux selon type :
@@ -128,6 +133,7 @@
 **Inputs** : Loyers bruts annuels, type de locataire (personne morale ou physique)
 
 **Formule** :
+
 ```
 1. Base imposable = loyers_bruts (pas d'abattement pour charges)
 2. Taux = 9%
@@ -148,6 +154,7 @@
 **Inputs** : Prix d'acquisition, frais d'acquisition, travaux, prix de cession, frais de cession
 
 **Formule** :
+
 ```
 1. Prix d'acquisition majoré = prix_achat + frais_acquisition + travaux
 2. Plus-value brute = prix_cession − frais_cession − prix_acquisition_majoré
@@ -169,6 +176,7 @@
 **Inputs** : CA annuel, charges déductibles, régime (réel ou forfait)
 
 **Formule** :
+
 ```
 RÉGIME RÉEL (Art. 95) :
 1. Bénéfice imposable = CA − charges_déductibles
@@ -191,6 +199,7 @@ RÉGIME FORFAITAIRE (Art. 96-101) :
 **Inputs** : CA HT, achats/investissements HT éligibles, type d'opération (taxable/exonérée/export)
 
 **Formule** :
+
 ```
 1. TVA collectée = CA_HT_taxable × 18%
 2. TVA déductible = achats_HT_éligibles × 18%
@@ -199,7 +208,7 @@ RÉGIME FORFAITAIRE (Art. 96-101) :
    → Si TVA due < 0 : crédit de TVA (reportable ou remboursable)
 4. Cas export : TVA collectée = 0% (exonéré), TVA déductible maintenue
    → Crédit structurel → demande de remboursement
-5. Déclaration mensuelle (avant le 20 du mois suivant)
+5. Déclaration mensuelle (avant le 15 du mois suivant — Art. 461 bis LF 2026)
 ```
 
 **Pertinence** : Très élevée — tout assujetti TVA (CA > seuil).
@@ -212,17 +221,39 @@ RÉGIME FORFAITAIRE (Art. 96-101) :
 
 ### 10. TUS — Taxe Unique sur les Salaires (TFNC4 titre 4.15)
 
-**Inputs** : Masse salariale brute mensuelle
+**Inputs** : Masse salariale brute mensuelle, type d'entreprise
 
 **Formule** :
+
 ```
-1. Base = masse_salariale_brute
-2. TUS = base × 5%
-3. Déclaration et paiement mensuel
-4. Charge patronale (non retenue sur le salaire)
+1. Base = salaire_brut (salaire + émoluments + primes + indemnités + avantages en nature)
+   (Art. 3 — même assiette que l'IRPP, Art. 37-39 Tome 1)
+2. Taux selon type :
+   - Droit commun : 7,5% (Art. 6, LF 2024)
+   - Sociétés pétrolières : 2,5% (LF 2021, Art. 5 modifié)
+   - Zones franches santé / ZVI : 2,5%
+3. TUS = base × taux
+4. Répartition du produit (Art. 8, LF 2024) :
+   - Budget de l'État : 27%
+   - FIGA : 10%
+   - FONEA : 23%
+   - ACPE : 10%
+   - FNH : 5%
+   - ADPME : 5%
+   - ACPCE : 5%
+   - Université Marien NGOUABI : 5%
+   - ANIRSJ : 10%
+   → Part État collectée par l'administration fiscale (DGI)
+   → Parts organismes collectées par la CNSS
+5. Paiement : avant le 15 du mois suivant (Art. 7 + Art. 461 bis LF 2026)
+   (NB : Art. 461 bis LF 2026 unifie tous les délais mensuels au 15, sauf août → 20)
+6. Déclaration spontanée mensuelle auprès DGI + CNSS (Art. 7)
+7. Charge patronale (non retenue sur le salaire du salarié)
+8. Exonérations (Art. 5) : représentations diplomatiques, organisations internationales
+9. Non récupérable comme coût pétrolier, mais déductible de l'IS
 ```
 
-**Pertinence** : Élevée — tout employeur, calcul simple mais obligatoire.
+**Pertinence** : Élevée — tout employeur (PM droit public/privé, exploitants individuels régime réel).
 
 ---
 
@@ -231,6 +262,7 @@ RÉGIME FORFAITAIRE (Art. 96-101) :
 **Inputs** : CA annuel estimé, type d'activité
 
 **Formule** :
+
 ```
 Barème forfaitaire par tranches de CA :
 - 0 → 1 000 000               : montant fixe selon activité
@@ -253,6 +285,7 @@ Paiement trimestriel.
 **Inputs** : Prix de vente, nature du bien (terrain nu, bâti, fonds de commerce), localisation
 
 **Formule** :
+
 ```
 1. Base = prix_de_vente (ou valeur vénale si supérieure)
 2. Taux selon nature :
@@ -274,6 +307,7 @@ Paiement trimestriel.
 **Inputs** : Prix de cession, type de société (SARL, SA), valeur nominale
 
 **Formule** :
+
 ```
 1. Base = prix_de_cession (ou valeur réelle si supérieure)
 2. Taux :
@@ -292,6 +326,7 @@ Paiement trimestriel.
 **Inputs** : Valeur locative estimée, nature (bâti/non bâti), localisation
 
 **Formule** :
+
 ```
 CFPB (propriétés bâties) :
 1. Base = valeur_locative × 50% (abattement pour charges)
@@ -314,6 +349,7 @@ CFPNB (propriétés non bâties) :
 **Inputs** : Montant versé, nature prestation (services, redevances, intérêts), pays bénéficiaire
 
 **Formule** :
+
 ```
 1. Base = montant_brut versé au non-résident
 2. Taux par défaut (Art. 86C) : 35%
@@ -339,6 +375,7 @@ CFPNB (propriétés non bâties) :
 **Inputs** : Type de produit, quantité/volume, valeur CIF (si importation)
 
 **Formule** :
+
 ```
 Taux spécifiques par catégorie :
 - Boissons alcoolisées : 25% à 32% ad valorem
@@ -361,6 +398,7 @@ Accise = quantité × droit_spécifique
 **Inputs** : Type d'infraction, montant de l'impôt en cause, nombre de jours/mois de retard
 
 **Formule** :
+
 ```
 DÉCLARATION TARDIVE (Art. 373) :
 - Amende = 15 000 FCFA/jour de retard (max 500 000 FCFA)
@@ -388,6 +426,7 @@ VENTES SANS FACTURE : 2× droits compromis (récidive 4×) — Art. 374
 **Inputs** : Montant transféré, destination (CEMAC/hors CEMAC)
 
 **Formule** :
+
 ```
 1. Base = montant_transféré
 2. Taux :
@@ -406,6 +445,7 @@ VENTES SANS FACTURE : 2× droits compromis (récidive 4×) — Art. 374
 **Inputs** : Volume d'émissions CO2 estimé (tonnes), type d'activité
 
 **Formule** :
+
 ```
 1. Base = volume_émissions en tonnes CO2 équivalent
 2. Taux = montant par tonne selon barème LF 2026
@@ -419,22 +459,22 @@ VENTES SANS FACTURE : 2× droits compromis (récidive 4×) — Art. 374
 
 ## C. Récapitulatif et priorisation
 
-| # | Simulateur | Pertinence | Complexité | Recommandation |
-|---|-----------|------------|------------|----------------|
-| 5 | **IRCM** | Élevée | Faible | Implémenter |
-| 6 | **IRF Loyers** | Élevée | Faible | Implémenter |
-| 9 | **TVA** | Très élevée | Moyenne | Implémenter |
-| 10 | **TUS** | Élevée | Très faible | Implémenter |
-| 15 | **Retenue non-résidents** | Élevée | Moyenne | Implémenter |
-| 8 | **IBA** | Élevée | Moyenne | Implémenter |
-| 17 | **Pénalités fiscales** | Moyenne-élevée | Moyenne | Implémenter |
-| 7 | **IRF Plus-values** | Moyenne-élevée | Faible | Implémenter |
-| 12 | **Enregistrement immo** | Moyenne-élevée | Moyenne | Optionnel |
-| 14 | **Contribution foncière** | Moyenne | Moyenne | Optionnel |
-| 13 | **Enregistrement parts** | Moyenne | Faible | Optionnel |
-| 11 | **IGF** | Moyenne | Moyenne | Optionnel |
-| 16 | **Accises** | Faible-moyenne | Élevée | Reporter |
-| 18 | **Transferts de fonds** | Faible | Très faible | Reporter |
-| 19 | **Crédits carbone** | Faible | Faible | Reporter |
+| #  | Simulateur                       | Pertinence       | Complexité  | Recommandation |
+| -- | -------------------------------- | ---------------- | ------------ | -------------- |
+| 5  | **IRCM**                   | Élevée         | Faible       | Implémenter   |
+| 6  | **IRF Loyers**             | Élevée         | Faible       | Implémenter   |
+| 9  | **TVA**                    | Très élevée   | Moyenne      | Implémenter   |
+| 10 | **TUS**                    | Élevée         | Très faible | Implémenter   |
+| 15 | **Retenue non-résidents** | Élevée         | Moyenne      | Implémenter   |
+| 8  | **IBA**                    | Élevée         | Moyenne      | Implémenter   |
+| 17 | **Pénalités fiscales**   | Moyenne-élevée | Moyenne      | Implémenter   |
+| 7  | **IRF Plus-values**        | Moyenne-élevée | Faible       | Implémenter   |
+| 12 | **Enregistrement immo**    | Moyenne-élevée | Moyenne      | Optionnel      |
+| 14 | **Contribution foncière** | Moyenne          | Moyenne      | Optionnel      |
+| 13 | **Enregistrement parts**   | Moyenne          | Faible       | Optionnel      |
+| 11 | **IGF**                    | Moyenne          | Moyenne      | Optionnel      |
+| 16 | **Accises**                | Faible-moyenne   | Élevée     | Reporter       |
+| 18 | **Transferts de fonds**    | Faible           | Très faible | Reporter       |
+| 19 | **Crédits carbone**       | Faible           | Faible       | Reporter       |
 
 **Recommandation** : implémenter les 8 premiers (IRCM, IRF loyers, TVA, TUS, retenue non-résidents, IBA, pénalités, IRF plus-values) pour couvrir 90% des besoins des utilisateurs.
