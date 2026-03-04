@@ -90,7 +90,7 @@
       "article": "Art. 3",
       "titre": "Exonérations de l'impôt sur les sociétés",
       "texte": [
-        "(L.F.2025) Sont exonérées de l'impôt sur les sociétés :",
+        "(L.F.2026) Sont exonérées de l'impôt sur les sociétés :",
         "",
         "1° la Banque des États de l'Afrique Centrale (BEAC) et la Banque de Développement des États de l'Afrique Centrale (BDEAC), dans le respect des accords communautaires relatifs à ces institutions ;",
         "2° les sociétés coopératives de production, de transformation, de conservation et de vente de produits agricoles, ainsi que leurs unions, à condition que ces sociétés fonctionnent conformément aux dispositions qui les régissent et qu'elles revêtent la forme civile ;",
@@ -2024,8 +2024,10 @@
         "Ils peuvent demander des renseignements sur la nature des prestations fournies par ces personnes."
       ],
       "mots_cles": [
-        "défaut de comptabilité",
-        "procès-verbal"
+        "secret professionnel",
+        "informations",
+        "versements",
+        "prestations"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -2202,7 +2204,7 @@
         "taux IS",
         "28%",
         "25%",
-        "36%",
+        "33%",
         "microfinance",
         "hydrocarbures"
       ],
