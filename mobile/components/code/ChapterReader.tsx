@@ -120,17 +120,31 @@ function renderArticles(node: SommaireNode, colors: ThemeColors) {
   return elements;
 }
 
+type PositionEntry = { y: number; parentId?: string };
+
+function getAbsoluteY(positions: Record<string, PositionEntry>, id: string): number | undefined {
+  let y = 0;
+  let current: string | undefined = id;
+  while (current) {
+    const entry: PositionEntry | undefined = positions[current];
+    if (!entry) return undefined;
+    y += entry.y;
+    current = entry.parentId;
+  }
+  return y;
+}
+
 type SectionBlockProps = {
   node: SommaireNode;
   colors: ThemeColors;
-  positions: React.MutableRefObject<Record<string, number>>;
+  positions: React.MutableRefObject<Record<string, PositionEntry>>;
 };
 
 function SectionBlock({ node, colors, positions }: SectionBlockProps) {
   return (
     <View
       style={{ marginBottom: 24 }}
-      onLayout={(e) => { positions.current[node.id] = e.nativeEvent.layout.y; }}
+      onLayout={(e) => { positions.current[node.id] = { y: e.nativeEvent.layout.y }; }}
     >
       {/* Titre section */}
       <View style={{ marginBottom: 12 }}>
@@ -149,8 +163,7 @@ function SectionBlock({ node, colors, positions }: SectionBlockProps) {
           key={sub.id}
           style={{ marginTop: 8, marginBottom: 16 }}
           onLayout={(e) => {
-            const parentY = positions.current[node.id] ?? 0;
-            positions.current[sub.id] = parentY + e.nativeEvent.layout.y;
+            positions.current[sub.id] = { y: e.nativeEvent.layout.y, parentId: node.id };
           }}
         >
           <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
@@ -164,8 +177,7 @@ function SectionBlock({ node, colors, positions }: SectionBlockProps) {
               key={para.id}
               style={{ marginTop: 4 }}
               onLayout={(e) => {
-                const subY = positions.current[sub.id] ?? 0;
-                positions.current[para.id] = subY + e.nativeEvent.layout.y;
+                positions.current[para.id] = { y: e.nativeEvent.layout.y, parentId: sub.id };
               }}
             >
               <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 8 }}>
@@ -182,7 +194,7 @@ function SectionBlock({ node, colors, positions }: SectionBlockProps) {
 
 export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigger }: Props) {
   const scrollRef = useRef<ScrollView>(null);
-  const nodePositions = useRef<Record<string, number>>({});
+  const nodePositions = useRef<Record<string, PositionEntry>>({});
 
   useEffect(() => {
     // Réinitialiser les positions quand le chapitre change
@@ -201,7 +213,7 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
         return;
       }
 
-      const y = nodePositions.current[scrollToId];
+      const y = getAbsoluteY(nodePositions.current, scrollToId);
       if (y !== undefined) {
         sv.scrollTo({ y, animated: true });
       }
