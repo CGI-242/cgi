@@ -110,16 +110,6 @@ function ArticleBlock({ article, colors }: { article: ArticleData; colors: Theme
   );
 }
 
-function renderArticles(node: SommaireNode, colors: ThemeColors) {
-  const elements: React.ReactNode[] = [];
-  if (node.articles) {
-    for (const art of node.articles) {
-      elements.push(<ArticleBlock key={art.article} article={art} colors={colors} />);
-    }
-  }
-  return elements;
-}
-
 type PositionEntry = { y: number; parentId?: string };
 
 function getAbsoluteY(positions: Record<string, PositionEntry>, id: string): number | undefined {
@@ -134,59 +124,58 @@ function getAbsoluteY(positions: Record<string, PositionEntry>, id: string): num
   return y;
 }
 
-type SectionBlockProps = {
+type NodeBlockProps = {
   node: SommaireNode;
   colors: ThemeColors;
   positions: React.MutableRefObject<Record<string, PositionEntry>>;
+  parentId?: string;
+  depth: number;
 };
 
-function SectionBlock({ node, colors, positions }: SectionBlockProps) {
+function NodeBlock({ node, colors, positions, parentId, depth }: NodeBlockProps) {
+  const isSection = depth === 0;
+  const isSub = depth === 1;
+
   return (
     <View
-      style={{ marginBottom: 24 }}
-      onLayout={(e) => { positions.current[node.id] = { y: e.nativeEvent.layout.y }; }}
+      style={isSection ? { marginBottom: 24 } : isSub ? { marginTop: 8, marginBottom: 16 } : { marginTop: 4 }}
+      onLayout={(e) => {
+        positions.current[node.id] = { y: e.nativeEvent.layout.y, ...(parentId ? { parentId } : {}) };
+      }}
     >
-      {/* Titre section */}
-      <View style={{ marginBottom: 12 }}>
-        <View style={{ height: 2, backgroundColor: colors.accent, marginBottom: 10, opacity: 0.4 }} />
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.accent }}>
+      {/* Titre */}
+      {isSection ? (
+        <View style={{ marginBottom: 12 }}>
+          <View style={{ height: 2, backgroundColor: colors.accent, marginBottom: 10, opacity: 0.4 }} />
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.accent }}>
+            {node.label}
+          </Text>
+        </View>
+      ) : isSub ? (
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
           {node.label}
         </Text>
-      </View>
+      ) : (
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 8 }}>
+          {node.label}
+        </Text>
+      )}
 
-      {/* Articles directement dans la section */}
-      {renderArticles(node, colors)}
+      {/* Articles de ce nœud */}
+      {node.articles && node.articles.length > 0 && node.articles.map((art) => (
+        <ArticleBlock key={art.article} article={art} colors={colors} />
+      ))}
 
-      {/* Sous-sections */}
-      {node.children?.map((sub) => (
-        <View
-          key={sub.id}
-          style={{ marginTop: 8, marginBottom: 16 }}
-          onLayout={(e) => {
-            positions.current[sub.id] = { y: e.nativeEvent.layout.y, parentId: node.id };
-          }}
-        >
-          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
-            {sub.label}
-          </Text>
-          {renderArticles(sub, colors)}
-
-          {/* Niveau supplémentaire (paragraphes) */}
-          {sub.children?.map((para) => (
-            <View
-              key={para.id}
-              style={{ marginTop: 4 }}
-              onLayout={(e) => {
-                positions.current[para.id] = { y: e.nativeEvent.layout.y, parentId: sub.id };
-              }}
-            >
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 8 }}>
-                {para.label}
-              </Text>
-              {renderArticles(para, colors)}
-            </View>
-          ))}
-        </View>
+      {/* Enfants (récursif) */}
+      {node.children && node.children.length > 0 && node.children.map((child) => (
+        <NodeBlock
+          key={child.id}
+          node={child}
+          colors={colors}
+          positions={positions}
+          parentId={node.id}
+          depth={depth + 1}
+        />
       ))}
     </View>
   );
@@ -235,15 +224,18 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
       </Text>
 
       {/* Articles directement dans le chapitre */}
-      {renderArticles(chapter, colors)}
+      {chapter.articles && chapter.articles.length > 0 && chapter.articles.map((art) => (
+        <ArticleBlock key={art.article} article={art} colors={colors} />
+      ))}
 
-      {/* Sections du chapitre */}
-      {chapter.children?.map((section) => (
-        <SectionBlock
+      {/* Sections du chapitre (rendu récursif) */}
+      {chapter.children && chapter.children.length > 0 && chapter.children.map((section) => (
+        <NodeBlock
           key={section.id}
           node={section}
           colors={colors}
           positions={nodePositions}
+          depth={0}
         />
       ))}
     </ScrollView>
