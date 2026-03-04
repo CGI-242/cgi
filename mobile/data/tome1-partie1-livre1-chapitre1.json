@@ -1040,8 +1040,12 @@
         "redevances",
         "propriété intellectuelle",
         "droit d'auteur",
+        "bien incorporel",
+        "concession",
         "brevet",
         "marque",
+        "procédé secret",
+        "films cinématographiques",
         "audiovisuel"
       ],
       "statut": "en vigueur",
@@ -1058,9 +1062,12 @@
       "mots_cles": [
         "commissions",
         "courtages",
+        "marchandises",
         "5%",
         "centrales d'achats",
-        "intermédiaires"
+        "intermédiaires",
+        "facture",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1076,9 +1083,12 @@
       "mots_cles": [
         "loyers",
         "crédit-bail",
-        "baux",
+        "crédit-preneur",
+        "baux mobiliers",
+        "baux immobiliers",
         "10%",
         "associé dirigeant",
+        "exploitant individuel",
         "amortissements",
         "charges financières"
       ],
