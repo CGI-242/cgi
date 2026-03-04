@@ -1665,8 +1665,11 @@
       ],
       "mots_cles": [
         "faible valeur",
+        "valeur unitaire",
         "500.000 FCFA",
-        "amortissement 100%"
+        "hors taxes",
+        "amortissement 100%",
+        "année d'acquisition"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1680,7 +1683,9 @@
       "mots_cles": [
         "SFEC",
         "facturation électronique",
-        "amortissement 100%"
+        "amortissement 100%",
+        "année d'acquisition",
+        "matériel"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1697,7 +1702,12 @@
         "moins-values",
         "pertes sur actif",
         "cession",
-        "détournement"
+        "actif immobilisé",
+        "actif réalisable",
+        "détournement",
+        "associé",
+        "dirigeant",
+        "négligence"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §12 Moins-values et pertes sur actif"
