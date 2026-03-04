@@ -30,8 +30,8 @@ export interface RubriquesInput {
   // Indemnités et primes
   primeTransport: number;      // exonérée ITS (Art. 114-A b)
   primeRepresentation: number; // exonérée ITS (Art. 114-A a)
-  primePanier: number;         // imposable ITS, hors CNSS
-  primeSalissure: number;      // imposable ITS, hors CNSS
+  primePanier: number;         // exonérée ITS (Art. 114-A)
+  primeSalissure: number;      // exonérée ITS (Art. 114-A)
   // Avantages en nature (Art. 115) — valeur réelle ou forfaitaire
   avLogement: number;
   avDomesticite: number;
@@ -47,6 +47,7 @@ export interface PaieInput {
   situationFamiliale: SituationFamiliale;
   nombreEnfants: number;
   zoneTOL: ZoneTOL;
+  moisJanvier: boolean;
 }
 
 export interface PaieResult {
@@ -126,38 +127,35 @@ export function calculerPaie(input: PaieInput): PaieResult {
     r.avLogement + r.avDomesticite + r.avElectricite +
     r.avVoiture + r.avTelephone + r.avNourriture;
 
-  // Base ITS : tout sauf exonérés Art. 114-A (transport, représentation)
-  const baseITS = salairePresence + r.primePanier + r.primeSalissure + totalAvantagesNature;
+  // Éléments exonérés (Art. 114-A)
+  const totalExonere = r.primeTransport + r.primeRepresentation + r.primePanier + r.primeSalissure;
 
-  // Base TUS = base ITS (Art. 3 TUS)
-  const baseTUS = baseITS;
+  // Salaire brut total = salaire de base + primes imposables + heures sup + congés + avantages en nature
+  const salaireBrutTotal = salairePresence + totalAvantagesNature;
 
-  // Éléments exonérés
-  const totalExonere = r.primeTransport + r.primeRepresentation;
-
-  // Salaire brut total (pour affichage)
-  const salaireBrutTotal = baseITS + totalExonere;
+  // Base TUS = brut total
+  const baseTUS = salaireBrutTotal;
 
   // --- Étape 2 : CNSS salarié (4%) ---
   const cnssResult = calculateCNSS(baseCNSS);
   const cnssSalarieMensuel = Math.round(cnssResult.retenueMensuelle);
 
-  // --- Étape 3 : ITS ---
+  // Base ITS = (brut total − CNSS) × 80%
+  const baseITS = Math.round((salaireBrutTotal - cnssSalarieMensuel) * 0.80);
+
+  // --- Étape 3 : ITS (même logique que simulateur ITS) ---
   const isResident = input.profilSalarie !== "non_resident";
   let modeCalculIts: "bareme" | "forfaitaire_20";
   let nombreParts: number;
   let revenuNetImposable: number;
   let itsAnnuel: number;
 
+  // Base ITS annuelle (baseITS = (brut − CNSS) × 80% mensuel)
+  revenuNetImposable = baseITS * 12;
+
   if (isResident) {
     // Résidents : barème progressif Art. 116
     modeCalculIts = "bareme";
-    const baseITSAnnuelle = baseITS * 12;
-    const cnssAnnuelle = cnssResult.retenueAnnuelle;
-
-    // Frais professionnels (20%)
-    const fraisProResult = calculateFraisPro(baseITSAnnuelle, cnssAnnuelle);
-    revenuNetImposable = fraisProResult.revenuNetImposable;
 
     // Quotient familial
     nombreParts = calculateQuotient(input.situationFamiliale, input.nombreEnfants, true);
@@ -173,7 +171,6 @@ export function calculerPaie(input: PaieInput): PaieResult {
     // Non-résidents : 20% forfaitaire
     modeCalculIts = "forfaitaire_20";
     nombreParts = 1;
-    revenuNetImposable = baseITS * 12;
     itsAnnuel = Math.round(revenuNetImposable * PAIE_PARAMS.nonResident.tauxForfaitaire);
   }
 
@@ -188,18 +185,21 @@ export function calculerPaie(input: PaieInput): PaieResult {
     ? PAIE_PARAMS.tol.centreVille
     : PAIE_PARAMS.tol.peripherie;
 
-  // --- Étape 6 : CAMU ---
-  const baseCAMU = Math.max(0, (baseITS - cnssSalarieMensuel) - PAIE_PARAMS.camu.seuilMensuel);
+  // --- Étape 6 : CAMU (Art. 3-4) — 0,5% de la fraction du revenu > 500 000 ---
+  const brutTaxable = salaireBrutTotal - cnssSalarieMensuel;
+  const baseCAMU = Math.max(0, brutTaxable - PAIE_PARAMS.camu.seuilMensuel);
   const camuMensuel = Math.round(baseCAMU * PAIE_PARAMS.camu.taux);
 
   // --- Étape 7 : Taxe régionale ---
-  const taxeRegionale = PAIE_PARAMS.taxeRegionale;
+  // Taxe régionale : 2 400 FCFA/an, prélevée une seule fois en janvier
+  const taxeRegionale = input.moisJanvier ? PAIE_PARAMS.taxeRegionale : 0;
 
-  // --- Étape 8-9 : Total retenues et salaire net ---
+  // --- Étape 8-9 : Total retenues et salaire net (TUS = charge employeur, pas retenue salarié) ---
   const totalRetenuesSalarie =
-    cnssSalarieMensuel + itsMensuel + tusMensuel + tolMensuel + camuMensuel + taxeRegionale;
+    cnssSalarieMensuel + itsMensuel + tolMensuel + camuMensuel + taxeRegionale;
 
-  const salaireNetMensuel = salaireBrutTotal - totalRetenuesSalarie;
+  // Net à payer = brut total + primes non imposables − avantages en nature − retenues
+  const salaireNetMensuel = salaireBrutTotal + totalExonere - totalAvantagesNature - totalRetenuesSalarie;
   const salaireNetAnnuel = salaireNetMensuel * 12;
 
   // --- Étape 10 : Charges patronales CNSS ---
@@ -213,7 +213,7 @@ export function calculerPaie(input: PaieInput): PaieResult {
   const cnssPFPatronale = Math.round(
     Math.min(baseCNSS, cnssPatronale.prestationsFamiliales.plafondMensuel) * cnssPatronale.prestationsFamiliales.taux
   );
-  const totalChargesPatronales = cnssVieillessePatronale + cnssAFPatronale + cnssPFPatronale;
+  const totalChargesPatronales = cnssVieillessePatronale + cnssAFPatronale + cnssPFPatronale + tusMensuel;
 
   // --- Étape 11 : Coût total employeur ---
   const coutTotalEmployeur = salaireBrutTotal + totalChargesPatronales;

@@ -118,56 +118,87 @@ function NodeListView({ nodes, onSelect, title }: {
   );
 }
 
-// ── Lecteur audio pour article ──
-function AudioPlayer({ text, colors }: { text: string; colors: any }) {
+// ── Lecteur audio pour article (ligne par ligne) ──
+type SpeechState = "idle" | "playing" | "paused";
+
+function AudioPlayer({ lines, colors, onLineChange }: {
+  lines: string[];
+  colors: any;
+  onLineChange: (index: number | undefined) => void;
+}) {
   const { t } = useTranslation();
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const progressInterval = useRef<ReturnType<typeof setInterval> | null>(null);
-  const startTime = useRef(0);
-  // Estimation : ~150 mots/min en français
-  const estimatedDuration = Math.max((text.split(/\s+/).length / 150) * 60, 5);
+  const [speechState, setSpeechState] = useState<SpeechState>("idle");
+  const currentIndexRef = useRef(0);
+  const stoppedRef = useRef(false);
+  const totalLines = lines.filter((l) => l.length > 0).length;
 
-  const startSpeech = async () => {
-    setIsSpeaking(true);
-    setProgress(0);
-    startTime.current = Date.now();
-    progressInterval.current = setInterval(() => {
-      const elapsed = (Date.now() - startTime.current) / 1000;
-      const pct = Math.min(elapsed / estimatedDuration, 0.98);
-      setProgress(pct);
-    }, 500);
+  const nonEmptyIndices = useMemo(() =>
+    lines.map((l, i) => (l.length > 0 ? i : -1)).filter((i) => i >= 0),
+    [lines]
+  );
 
-    Speech.speak(text, {
+  const speakLine = useCallback((idx: number) => {
+    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+      setSpeechState("idle");
+      onLineChange(undefined);
+      return;
+    }
+    const lineIndex = nonEmptyIndices[idx];
+    currentIndexRef.current = idx;
+    onLineChange(lineIndex);
+    Speech.speak(lines[lineIndex], {
       language: "fr-FR",
       rate: 0.9,
-      onDone: () => {
-        setIsSpeaking(false);
-        setProgress(1);
-        if (progressInterval.current) clearInterval(progressInterval.current);
-        setTimeout(() => setProgress(0), 1500);
-      },
+      onDone: () => speakLine(idx + 1),
       onStopped: () => {
-        setIsSpeaking(false);
-        setProgress(0);
-        if (progressInterval.current) clearInterval(progressInterval.current);
+        // ne rien faire ici, géré par pause/stop
+      },
+      onError: () => {
+        setSpeechState("idle");
+        onLineChange(undefined);
       },
     });
-  };
+  }, [lines, nonEmptyIndices, onLineChange]);
 
-  const stopSpeech = async () => {
-    await Speech.stop();
-    setIsSpeaking(false);
-    setProgress(0);
-    if (progressInterval.current) clearInterval(progressInterval.current);
-  };
+  const play = useCallback(() => {
+    stoppedRef.current = false;
+    setSpeechState("playing");
+    speakLine(0);
+  }, [speakLine]);
+
+  const pause = useCallback(() => {
+    stoppedRef.current = true;
+    Speech.stop();
+    setSpeechState("paused");
+    // currentIndexRef garde la position
+  }, []);
+
+  const resume = useCallback(() => {
+    stoppedRef.current = false;
+    setSpeechState("playing");
+    speakLine(currentIndexRef.current);
+  }, [speakLine]);
+
+  const stop = useCallback(() => {
+    stoppedRef.current = true;
+    Speech.stop();
+    setSpeechState("idle");
+    currentIndexRef.current = 0;
+    onLineChange(undefined);
+  }, [onLineChange]);
 
   useEffect(() => {
     return () => {
+      stoppedRef.current = true;
       Speech.stop();
-      if (progressInterval.current) clearInterval(progressInterval.current);
     };
   }, []);
+
+  const progress = speechState === "idle"
+    ? 0
+    : totalLines > 0
+      ? (currentIndexRef.current + 1) / totalLines
+      : 0;
 
   return (
     <View
@@ -181,8 +212,9 @@ function AudioPlayer({ text, colors }: { text: string; colors: any }) {
         gap: 10,
       }}
     >
+      {/* Play / Pause */}
       <TouchableOpacity
-        onPress={isSpeaking ? stopSpeech : startSpeech}
+        onPress={speechState === "playing" ? pause : speechState === "paused" ? resume : play}
         style={{
           width: 36,
           height: 36,
@@ -192,12 +224,37 @@ function AudioPlayer({ text, colors }: { text: string; colors: any }) {
           justifyContent: "center",
         }}
       >
-        <Ionicons name={isSpeaking ? "stop" : "play"} size={16} color="#fff" />
+        <Ionicons
+          name={speechState === "playing" ? "pause" : "play"}
+          size={16}
+          color="#fff"
+        />
       </TouchableOpacity>
+
+      {/* Stop (visible quand playing ou paused) */}
+      {speechState !== "idle" && (
+        <TouchableOpacity
+          onPress={stop}
+          style={{
+            width: 36,
+            height: 36,
+            borderRadius: 18,
+            backgroundColor: colors.danger || "#dc2626",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Ionicons name="stop" size={16} color="#fff" />
+        </TouchableOpacity>
+      )}
 
       <View style={{ flex: 1 }}>
         <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
-          {isSpeaking ? t("articleDetail.stop") : t("articleDetail.listen")}
+          {speechState === "playing"
+            ? t("articleDetail.stop")
+            : speechState === "paused"
+              ? "En pause"
+              : t("articleDetail.listen")}
         </Text>
         <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>
           <View
@@ -219,11 +276,23 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
   const { colors } = useTheme();
   const isFavorite = useFavoritesStore((s) => s.isFavorite(article.article));
   const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
+  const scrollRef = useRef<ScrollView>(null);
+  const linePositions = useRef<Record<number, number>>({});
+  const [highlightIndex, setHighlightIndex] = useState<number | undefined>(undefined);
 
-  const fullText = [article.article, article.titre, ...article.texte].filter(Boolean).join(". ");
+  const handleLineChange = useCallback((index: number | undefined) => {
+    setHighlightIndex(index);
+    if (index !== undefined && linePositions.current[index] !== undefined) {
+      scrollRef.current?.scrollTo({ y: linePositions.current[index], animated: true });
+    }
+  }, []);
+
+  const handleLineLayout = useCallback((index: number, y: number) => {
+    linePositions.current[index] = y;
+  }, []);
 
   return (
-    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
+    <ScrollView ref={scrollRef} style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
         <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, color: colors.primary, flex: 1 }}>
           {article.article}
@@ -242,9 +311,9 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
         </Text>
       ) : null}
 
-      <AudioPlayer text={fullText} colors={colors} />
+      <AudioPlayer lines={article.texte} colors={colors} onLineChange={handleLineChange} />
 
-      <ArticleText texte={article.texte} />
+      <ArticleText texte={article.texte} highlightIndex={highlightIndex} onLineLayout={handleLineLayout} />
 
       {article.mots_cles && article.mots_cles.length > 0 && (
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 16 }}>

@@ -41,7 +41,8 @@ export default function PaieScreen() {
   const [profil, setProfil] = useState<ProfilSalarie>("national");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
   const [enfants, setEnfants] = useState(0);
-  const [zoneTOL, setZoneTOL] = useState<ZoneTOL>("centre_ville");
+  const [zoneTOL, setZoneTOL] = useState<ZoneTOL>("peripherie");
+  const [moisJanvier, setMoisJanvier] = useState(false);
   const [forfaitaire, setForfaitaire] = useState(false);
 
   // Champs textuels (formatés avec espaces)
@@ -88,13 +89,17 @@ export default function PaieScreen() {
     return r;
   }, [fields]);
 
-  // Calcul brut total (pour affichage en surligné)
-  const brutTotal = useMemo(() => {
+  // Calcul brut imposable (hors primes exonérées Art. 114-A)
+  const brutImposable = useMemo(() => {
     const sp = rubriques.salaireBase + rubriques.primesImposables + rubriques.heuresSup + rubriques.congesAnnuels;
     const av = rubriques.avLogement + rubriques.avDomesticite + rubriques.avElectricite
       + rubriques.avVoiture + rubriques.avTelephone + rubriques.avNourriture;
-    return sp + rubriques.primePanier + rubriques.primeSalissure + av
-      + rubriques.primeTransport + rubriques.primeRepresentation;
+    return sp + av;
+  }, [rubriques]);
+
+  // Total des primes exonérées (Art. 114-A)
+  const totalExonere = useMemo(() => {
+    return rubriques.primeTransport + rubriques.primeRepresentation + rubriques.primePanier + rubriques.primeSalissure;
   }, [rubriques]);
 
   // Résultat
@@ -106,8 +111,9 @@ export default function PaieScreen() {
       situationFamiliale: situation,
       nombreEnfants: enfants,
       zoneTOL,
+      moisJanvier,
     });
-  }, [rubriques, profil, situation, enfants, zoneTOL]);
+  }, [rubriques, profil, situation, enfants, zoneTOL, moisJanvier]);
 
   const isResident = profil !== "non_resident";
 
@@ -200,15 +206,26 @@ export default function PaieScreen() {
           <NumberField label={t("simulateur.paie.avTelephone")} value={fields.avTelephone} onChange={(v) => setField("avTelephone", v)} />
           <NumberField label={t("simulateur.paie.avNourriture")} value={fields.avNourriture} onChange={(v) => setField("avNourriture", v)} />
 
-          {/* Affichage surligné du brut total */}
+          {/* Affichage surligné du brut imposable */}
           <View style={{ marginTop: 12, padding: 14, backgroundColor: `${colors.primary}15` }}>
-            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary }}>{t("simulateur.paie.salaireBrutTotal")}</Text>
-            <Text style={{ fontSize: 20, fontWeight: "800", color: colors.primary }}>{formatNumber(brutTotal)} FCFA</Text>
+            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary }}>{t("simulateur.paie.salaireBrutImposable")}</Text>
+            <Text style={{ fontSize: 20, fontWeight: "800", color: colors.primary }}>{formatNumber(brutImposable)} FCFA</Text>
+            {totalExonere > 0 && (
+              <Text style={{ fontSize: 11, color: colors.textMuted, marginTop: 4 }}>
+                {t("simulateur.paie.elementsExoneres")} : {formatNumber(totalExonere)} FCFA
+              </Text>
+            )}
           </View>
 
           {/* Zone TOL */}
           <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginTop: 12, marginBottom: 2 }}>{t("simulateur.paie.zoneTOL")}</Text>
           <OptionButtonGroup options={ZONES} selected={zoneTOL} onChange={setZoneTOL} fontSize={12} />
+
+          {/* Taxe régionale (janvier uniquement) */}
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8, marginTop: 8, backgroundColor: `${colors.primary}10` }}>
+            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.moisJanvier")}</Text>
+            <Switch value={moisJanvier} onValueChange={setMoisJanvier} trackColor={{ false: colors.border, true: colors.primary }} />
+          </View>
 
           <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.paie.legalRef")}</Text>
         </ScrollView>
@@ -229,9 +246,8 @@ export default function PaieScreen() {
               {/* Bases de calcul */}
               <SimulateurSection label={t("simulateur.paie.sectionBases")} />
               <TableRow label={t("simulateur.paie.baseBrut")} value={formatNumber(result.salaireBrutTotal)} bold />
-              <TableRow label={t("simulateur.paie.baseCNSS")} value={formatNumber(result.baseCNSS)} bg={colors.background} />
+              <TableRow label={t("simulateur.paie.brutTaxable")} value={formatNumber(result.salaireBrutTotal - result.cnssSalarieMensuel)} bg={colors.background} />
               <TableRow label={t("simulateur.paie.baseITS")} value={formatNumber(result.baseITS)} />
-              <TableRow label={t("simulateur.paie.elementsExoneres")} value={formatNumber(result.totalExonere)} bg={colors.background} />
 
               {/* Retenues salarié */}
               <SimulateurSection label={t("simulateur.paie.sectionRetenues")} />
@@ -242,8 +258,7 @@ export default function PaieScreen() {
                 bg={colors.background}
                 color={colors.danger}
               />
-              <TableRow label={`${t("simulateur.paie.tusLabel")} (${result.tauxTUS * 100}%)`} value={`- ${formatNumber(result.tusMensuel)}`} color={colors.danger} />
-              <TableRow label={t("simulateur.paie.tolLabel")} value={`- ${formatNumber(result.tolMensuel)}`} bg={colors.background} color={colors.danger} />
+              <TableRow label={t("simulateur.paie.tolLabel")} value={`- ${formatNumber(result.tolMensuel)}`} color={colors.danger} />
               <TableRow label={t("simulateur.paie.camuLabel")} value={`- ${formatNumber(result.camuMensuel)}`} color={colors.danger} />
               <TableRow label={t("simulateur.paie.taxeRegionale")} value={`- ${formatNumber(result.taxeRegionale)}`} bg={colors.background} color={colors.danger} />
 
@@ -255,6 +270,7 @@ export default function PaieScreen() {
               <TableRow label={t("simulateur.paie.cnssVieillesse")} value={formatNumber(result.cnssVieillessePatronale)} />
               <TableRow label={t("simulateur.paie.cnssAF")} value={formatNumber(result.cnssAFPatronale)} bg={colors.background} />
               <TableRow label={t("simulateur.paie.cnssPF")} value={formatNumber(result.cnssPFPatronale)} />
+              <TableRow label={`${t("simulateur.paie.tusLabel")} (${result.tauxTUS * 100}%)`} value={formatNumber(result.tusMensuel)} bg={colors.background} />
               <ResultHighlight label={t("simulateur.paie.totalPatronales")} value={formatNumber(result.totalChargesPatronales)} variant="primary" />
               <ResultHighlight label={t("simulateur.paie.coutEmployeur")} value={formatNumber(result.coutTotalEmployeur)} variant="danger" />
 

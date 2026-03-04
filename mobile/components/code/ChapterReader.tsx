@@ -1,5 +1,6 @@
+import React from "react";
 import { View, Text, ScrollView, TouchableOpacity } from "react-native";
-import { useRef, useEffect, useCallback, useState } from "react";
+import { useRef, useEffect, useCallback, useState, useMemo } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import type { SommaireNode } from "@/lib/data/types";
@@ -15,74 +16,137 @@ type Props = {
   scrollTrigger?: number;
 };
 
-function useSpeech(article: ArticleData) {
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const stoppedRef = useRef(false);
+type SpeechState = "idle" | "playing" | "paused";
 
-  const toggle = useCallback(() => {
-    if (isSpeaking) {
-      stoppedRef.current = true;
-      Speech.stop();
-      setIsSpeaking(false);
+function useSpeech(article: ArticleData) {
+  const [speechState, setSpeechState] = useState<SpeechState>("idle");
+  const [currentLineIndex, setCurrentLineIndex] = useState<number | undefined>(undefined);
+  const stoppedRef = useRef(false);
+  const currentNonEmptyIdx = useRef(0);
+
+  const nonEmptyIndices = useMemo(() =>
+    article.texte.map((l, i) => (l.length > 0 ? i : -1)).filter((i) => i >= 0),
+    [article.texte]
+  );
+
+  const speakLine = useCallback((idx: number) => {
+    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+      setSpeechState("idle");
+      setCurrentLineIndex(undefined);
       return;
     }
+    const lineIndex = nonEmptyIndices[idx];
+    currentNonEmptyIdx.current = idx;
+    setCurrentLineIndex(lineIndex);
+    Speech.speak(article.texte[lineIndex], {
+      language: "fr-FR",
+      rate: 0.9,
+      onDone: () => speakLine(idx + 1),
+      onStopped: () => {/* géré par pause/stop */},
+      onError: () => {
+        setSpeechState("idle");
+        setCurrentLineIndex(undefined);
+      },
+    });
+  }, [article.texte, nonEmptyIndices]);
 
+  const play = useCallback(() => {
     stoppedRef.current = false;
-    setIsSpeaking(true);
+    setSpeechState("playing");
+    speakLine(0);
+  }, [speakLine]);
 
-    const text = [article.article, article.titre, ...article.texte.filter((t) => t.length > 0)].join(" ... ");
-    const chunks: string[] = [];
-    for (let i = 0; i < text.length; i += 3000) {
-      chunks.push(text.slice(i, i + 3000));
-    }
+  const pause = useCallback(() => {
+    stoppedRef.current = true;
+    Speech.stop();
+    setSpeechState("paused");
+  }, []);
 
-    const speakNext = (idx: number) => {
-      if (stoppedRef.current || idx >= chunks.length) {
-        setIsSpeaking(false);
-        return;
-      }
-      Speech.speak(chunks[idx], {
-        language: "fr-FR",
-        rate: 0.9,
-        onDone: () => speakNext(idx + 1),
-        onStopped: () => setIsSpeaking(false),
-        onError: () => setIsSpeaking(false),
-      });
-    };
-    speakNext(0);
-  }, [isSpeaking, article]);
+  const resume = useCallback(() => {
+    stoppedRef.current = false;
+    setSpeechState("playing");
+    speakLine(currentNonEmptyIdx.current);
+  }, [speakLine]);
+
+  const stop = useCallback(() => {
+    stoppedRef.current = true;
+    Speech.stop();
+    setSpeechState("idle");
+    currentNonEmptyIdx.current = 0;
+    setCurrentLineIndex(undefined);
+  }, []);
 
   useEffect(() => {
     return () => { stoppedRef.current = true; Speech.stop(); };
   }, [article]);
 
-  return { isSpeaking, toggle };
+  return { speechState, currentLineIndex, play, pause, resume, stop };
 }
 
-function ArticleBlock({ article, colors }: { article: ArticleData; colors: ThemeColors }) {
-  const { isSpeaking, toggle } = useSpeech(article);
+function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; colors: ThemeColors; scrollRef?: React.RefObject<ScrollView | null> }) {
+  const { speechState, currentLineIndex, play, pause, resume, stop } = useSpeech(article);
+  const linePositions = useRef<Record<number, number>>({});
+  const blockY = useRef(0);
+
+  const handleLineLayout = useCallback((index: number, y: number) => {
+    linePositions.current[index] = y;
+  }, []);
+
+  // Défilement auto vers la ligne courante
+  useEffect(() => {
+    if (currentLineIndex !== undefined && linePositions.current[currentLineIndex] !== undefined && scrollRef?.current) {
+      scrollRef.current.scrollTo({
+        y: blockY.current + linePositions.current[currentLineIndex],
+        animated: true,
+      });
+    }
+  }, [currentLineIndex, scrollRef]);
 
   return (
-    <View style={{ marginBottom: 20 }}>
+    <View
+      style={{ marginBottom: 20 }}
+      onLayout={(e) => { blockY.current = e.nativeEvent.layout.y; }}
+    >
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, flex: 1 }}>
           {article.article} — {article.titre}
         </Text>
-        <TouchableOpacity
-          onPress={toggle}
-          style={{
-            paddingHorizontal: 8,
-            paddingVertical: 4,
-            backgroundColor: isSpeaking ? colors.danger : colors.accent,
-            flexDirection: "row",
-            alignItems: "center",
-            marginLeft: 8,
-          }}
-        >
-          <Ionicons name={isSpeaking ? "stop" : "volume-high"} size={12} color={colors.sidebarText} />
-        </TouchableOpacity>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginLeft: 8 }}>
+          {/* Play / Pause */}
+          <TouchableOpacity
+            onPress={speechState === "playing" ? pause : speechState === "paused" ? resume : play}
+            style={{
+              paddingHorizontal: 8,
+              paddingVertical: 4,
+              backgroundColor: colors.accent,
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <Ionicons
+              name={speechState === "playing" ? "pause" : "volume-high"}
+              size={12}
+              color={colors.sidebarText}
+            />
+          </TouchableOpacity>
+          {/* Stop */}
+          {speechState !== "idle" && (
+            <TouchableOpacity
+              onPress={stop}
+              style={{
+                paddingHorizontal: 8,
+                paddingVertical: 4,
+                backgroundColor: colors.danger,
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <Ionicons name="stop" size={12} color={colors.sidebarText} />
+            </TouchableOpacity>
+          )}
+        </View>
       </View>
-      <ArticleText texte={article.texte} />
+      <ArticleText texte={article.texte} highlightIndex={currentLineIndex} onLineLayout={handleLineLayout} />
       {article.mots_cles && article.mots_cles.length > 0 && (
         <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 8, gap: 6 }}>
           {article.mots_cles.map((mc: string, i: number) => (
@@ -130,9 +194,10 @@ type NodeBlockProps = {
   positions: React.MutableRefObject<Record<string, PositionEntry>>;
   parentId?: string;
   depth: number;
+  scrollRef?: React.RefObject<ScrollView | null>;
 };
 
-function NodeBlock({ node, colors, positions, parentId, depth }: NodeBlockProps) {
+function NodeBlock({ node, colors, positions, parentId, depth, scrollRef }: NodeBlockProps) {
   const isSection = depth === 0;
   const isSub = depth === 1;
 
@@ -163,7 +228,7 @@ function NodeBlock({ node, colors, positions, parentId, depth }: NodeBlockProps)
 
       {/* Articles de ce nœud */}
       {node.articles && node.articles.length > 0 && node.articles.map((art) => (
-        <ArticleBlock key={art.article} article={art} colors={colors} />
+        <ArticleBlock key={art.article} article={art} colors={colors} scrollRef={scrollRef} />
       ))}
 
       {/* Enfants (récursif) */}
@@ -175,6 +240,7 @@ function NodeBlock({ node, colors, positions, parentId, depth }: NodeBlockProps)
           positions={positions}
           parentId={node.id}
           depth={depth + 1}
+          scrollRef={scrollRef}
         />
       ))}
     </View>
@@ -225,7 +291,7 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
 
       {/* Articles directement dans le chapitre */}
       {chapter.articles && chapter.articles.length > 0 && chapter.articles.map((art) => (
-        <ArticleBlock key={art.article} article={art} colors={colors} />
+        <ArticleBlock key={art.article} article={art} colors={colors} scrollRef={scrollRef} />
       ))}
 
       {/* Sections du chapitre (rendu récursif) */}
@@ -236,6 +302,7 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
           colors={colors}
           positions={nodePositions}
           depth={0}
+          scrollRef={scrollRef}
         />
       ))}
     </ScrollView>
