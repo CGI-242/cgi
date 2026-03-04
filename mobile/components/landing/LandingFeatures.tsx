@@ -10,9 +10,9 @@ interface Props {
 const GOLD = "#c8a03c";
 
 const FEATURES = [
-  { icon: "book-outline" as const, title: "Code des Impôts", desc: "7 000+ articles du CGI 2026 avec navigation hiérarchique par tomes, titres et chapitres", color: "#00815d" },
+  { icon: "book-outline" as const, title: "Code des Impôts", desc: "2 248 articles du CGI 2026 avec navigation hiérarchique par tomes, titres et chapitres", color: "#00815d" },
   { icon: "chatbubbles-outline" as const, title: "Assistant IA", desc: "Posez vos questions fiscales en langage naturel, obtenez les références exactes du CGI", color: "#0284c7" },
-  { icon: "calculator-outline" as const, title: "12 Simulateurs", desc: "ITS, IS, Patente, TVA, IRCM, IRF, IBA, IGF, Enregistrement, Foncier et plus", color: "#4f46e5" },
+  { icon: "calculator-outline" as const, title: "14 Simulateurs", desc: "ITS, IS, Patente, TVA, IRCM, IRF, IBA, IGF, Enregistrement, Foncier et plus", color: "#4f46e5" },
   { icon: "mic-outline" as const, title: "Recherche vocale", desc: "Dictez votre recherche en français, trouvez l'article pertinent instantanément", color: "#9333ea" },
   { icon: "calendar-outline" as const, title: "Échéances fiscales", desc: "Calendrier des échéances TVA, ITS, Patente, IRPP et IRF triées par urgence", color: "#ef4444" },
   { icon: "cloud-offline-outline" as const, title: "Mode hors-ligne", desc: "Tout le CGI et les simulateurs accessibles même sans connexion internet", color: "#d97706" },
