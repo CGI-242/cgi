@@ -25,7 +25,8 @@
     "modify": "Edit",
     "perEntity": "Per entity",
     "deadline": "Deadline",
-    "parts": "parts"
+    "parts": "parts",
+    "urgent": "Urgent"
   },
   "auth": {
     "login": "Login",
@@ -140,7 +141,8 @@
     "logout": "Log out",
     "collapse": "Collapse sidebar",
     "expand": "Expand sidebar",
-    "subtitle": "General Tax Code"
+    "subtitle": "General Tax Code",
+    "calendrier": "Calendar"
   },
   "chat": {
     "placeholder": "Ask your tax question...",
@@ -235,7 +237,9 @@
       "simulate": "Simulate a tax",
       "simulateDesc": "ITS, Minimum IS, Business license, IS balance",
       "chatAi": "AI Tax Chat",
-      "chatAiDesc": "Intelligent tax assistant"
+      "chatAiDesc": "Intelligent tax assistant",
+      "settings": "Settings",
+      "settingsDesc": "Theme, profile, security"
     },
     "deadlines": {
       "minPerceptionT1": "Minimum IS perception (Q1)",
@@ -250,6 +254,11 @@
       "irf2": "IRF (2nd instalment)",
       "irf3": "IRF (3rd instalment)"
     },
+    "tip": {
+      "title": "Tip of the day",
+      "text": "Use the Payroll simulator to generate a full payslip with automatic CNSS + ITS calculation."
+    },
+    "seeAll": "See all",
     "footer": "CGI242 v1.0.0 — 2026 Edition"
   },
   "code": {
@@ -285,6 +294,75 @@
     "calculate": "Calculate",
     "result": "Result",
     "enterDataToSee": "Enter data to see results",
+    "paie": {
+      "title": "Payroll Simulator",
+      "subtitle": "Full payslip — CGI Congo 2026",
+      "description": "Payslip simulator compliant with CGI 2026. ITS calculation (Art. 116 scale), CNSS, TUS, TOL, CAMU, employer charges. Benefits in kind per Art. 115.",
+      "legalRef": "Art. 114-A (exemptions), Art. 115 (benefits in kind), Art. 116 (ITS scale)",
+      "profil": "Employee profile",
+      "profilNational": "National",
+      "profilEtranger": "Foreign resident",
+      "profilNonResident": "Non-resident",
+      "status": "Status",
+      "single": "Single",
+      "married": "Married",
+      "divorced": "Divorced",
+      "widowed": "Widowed",
+      "dependents": "Dependent children",
+      "familyQuotient": "Family quotient",
+      "sectionBase": "BASE COMPENSATION",
+      "salaireBase": "Base salary",
+      "primesImposables": "Taxable bonuses",
+      "heuresSup": "Overtime",
+      "congesAnnuels": "Annual leave",
+      "sectionIndemnites": "ALLOWANCES & BONUSES",
+      "primeTransport": "Transport allowance",
+      "primeTransportNote": "exempt Art. 114-A b)",
+      "primeRepresentation": "Representation allowance",
+      "primeRepresentationNote": "exempt Art. 114-A a)",
+      "primePanier": "Meal allowance",
+      "primeSalissure": "Soiling allowance",
+      "sectionAvantages": "BENEFITS IN KIND (Art. 115)",
+      "toggleForfaitaire": "CGI flat-rate valuation (Art. 115)",
+      "avLogement": "Housing (20% CNSS cap)",
+      "avDomesticite": "Domestic help (7%)",
+      "avElectricite": "Electricity (5%)",
+      "avVoiture": "Vehicle (3%)",
+      "avTelephone": "Phone (2%)",
+      "avNourriture": "Food (20%)",
+      "salaireBrutTotal": "TOTAL GROSS SALARY",
+      "zoneTOL": "TOL Zone",
+      "centreVille": "City center",
+      "peripherie": "Outskirts",
+      "sectionBases": "CALCULATION BASES",
+      "baseBrut": "Total gross salary",
+      "baseCNSS": "CNSS base (excl. benefits)",
+      "baseITS": "ITS taxable base (excl. exempt)",
+      "elementsExoneres": "Exempt elements (transport, repres.)",
+      "sectionRetenues": "EMPLOYEE DEDUCTIONS",
+      "cnssSalarie": "CNSS employee (4%)",
+      "itsLabel": "ITS (Art. 116 scale)",
+      "itsForfaitaire": "ITS (20% flat rate)",
+      "tusLabel": "TUS",
+      "tolLabel": "TOL",
+      "camuLabel": "CAMU (0.5%)",
+      "taxeRegionale": "Regional tax",
+      "totalRetenues": "TOTAL DEDUCTIONS",
+      "salaireNet": "NET SALARY",
+      "sectionPatronales": "EMPLOYER CNSS CHARGES",
+      "cnssVieillesse": "Old age (8%)",
+      "cnssAF": "Family allowances (10.03%)",
+      "cnssPF": "Family benefits (2.25%)",
+      "totalPatronales": "TOTAL EMPLOYER",
+      "coutEmployeur": "TOTAL EMPLOYER COST",
+      "sectionRecap": "ANNUAL SUMMARY",
+      "brutAnnuel": "Annual gross",
+      "netAnnuel": "Annual net",
+      "chargesAnnuelles": "Annual employer charges",
+      "coutAnnuel": "Annual employer cost",
+      "tauxEffectif": "Effective deduction rate",
+      "enterSalary": "Enter a base salary to see results"
+    },
     "its": {
       "title": "ITS Simulator",
       "subtitle": "Employment Income Tax - Art. 116 CGI 2026",
@@ -580,6 +658,23 @@
       "resultSection": "RESULT",
       "underMinimum": "Tax below minimum of 1,000 FCFA — Not due",
       "enterData": "Enter data to see the calculation"
+    },
+    "rts": {
+      "title": "Withholding Tax",
+      "subtitle": "Withholding Tax — Art. 86-D, Art. 183, TFNC4",
+      "description": "Withholding tax applies: 20% on fees and royalties paid to non-residents (Art. 86-D), 10% on fees paid to residents not subject to corporate tax (Art. 183), and 10% on Treasury payments for public contracts (TFNC4).",
+      "typeLabel": "Withholding type",
+      "nonResident": "Non-resident (20%)",
+      "nonSoumisIS": "Not subject to CT (10%)",
+      "tresorPublic": "Public Treasury (10%)",
+      "amountHT": "Amount excl. tax",
+      "legalRef": "Art. 86-D (non-residents 20%), Art. 183 (not subject to CT 10%), TFNC4 (Treasury 10%)",
+      "calcSection": "WITHHOLDING TAX CALCULATION",
+      "rateApplied": "Applied rate",
+      "articleLabel": "Legal reference",
+      "withholdingAmount": "WITHHOLDING TAX",
+      "netAmount": "NET PAYABLE",
+      "enterAmount": "Enter an amount excl. tax to see calculation"
     }
   },
   "subscription": {
@@ -640,6 +735,43 @@
     "october": "October",
     "november": "November",
     "december": "December"
+  },
+  "calendrier": {
+    "title": "Tax Calendar 2026",
+    "subtitle": "Tax deadlines — CGI Congo-Brazzaville",
+    "description": "Find all 2026 tax deadlines according to the General Tax Code of Congo-Brazzaville.",
+    "legalRef": "Art. 86C (IS), Art. 461 bis (VAT), Art. 306 (Business License)",
+    "echeancesDuMois": "DEADLINES — {{mois}}",
+    "aucuneEcheance": "No tax deadline this month",
+    "prochaineEcheance": "NEXT DEADLINE",
+    "dansXJours": "in {{jours}} day(s)",
+    "aujourdhui": "Today",
+    "joursRestants": "{{jours}} d remaining",
+    "legende": "Legend",
+    "legendeAujourdhui": "Today",
+    "legendeEcheance": "Deadline",
+    "legendeRecurrent": "Monthly (recurring)",
+    "jours": {
+      "lun": "Mon",
+      "mar": "Tue",
+      "mer": "Wed",
+      "jeu": "Thu",
+      "ven": "Fri",
+      "sam": "Sat",
+      "dim": "Sun"
+    },
+    "desc": {
+      "isT1": "Quarterly IS instalment (Q1). Art. 86C CGI — 10% penalty for late payment (Art. 86E).",
+      "isT2": "Quarterly IS instalment (Q2). Art. 86C CGI — 10% penalty for late payment.",
+      "isT3": "Quarterly IS instalment (Q3). Art. 86C CGI — 10% penalty for late payment.",
+      "isT4": "Quarterly IS instalment (Q4). Art. 86C CGI — 10% penalty for late payment.",
+      "tva": "Monthly VAT return and payment. Art. 461 bis LF 2026 — Due by the 15th of the following month.",
+      "its": "Monthly ITS return and payment. Art. 116 CGI scale — Withheld at source by the employer.",
+      "patente": "Annual business license payment. Art. 306 CGI — Due from April 10 to 20.",
+      "irf1": "Rental Income Tax — 1st instalment. Art. 111-113A CGI — 9% withholding.",
+      "irf2": "Rental Income Tax — 2nd instalment. Art. 111-113A CGI — Due by August 20.",
+      "irf3": "Rental Income Tax — 3rd instalment. Art. 111-113A CGI — Last instalment of the year."
+    }
   },
   "activity": {
     "questionsThisMonth": "Questions this month",

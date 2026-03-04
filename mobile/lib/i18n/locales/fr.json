@@ -25,7 +25,8 @@
     "modify": "Modifier",
     "perEntity": "Par entité",
     "deadline": "Échéance",
-    "parts": "parts"
+    "parts": "parts",
+    "urgent": "Urgent"
   },
   "auth": {
     "login": "Connexion",
@@ -140,7 +141,8 @@
     "logout": "Se déconnecter",
     "collapse": "Replier la sidebar",
     "expand": "Déployer la sidebar",
-    "subtitle": "Code Général des Impôts"
+    "subtitle": "Code Général des Impôts",
+    "calendrier": "Calendrier"
   },
   "chat": {
     "placeholder": "Posez votre question fiscale...",
@@ -235,7 +237,9 @@
       "simulate": "Simuler un impôt",
       "simulateDesc": "ITS, Minimum IS, Patente, Solde IS",
       "chatAi": "Chat IA fiscal",
-      "chatAiDesc": "Assistant fiscal intelligent"
+      "chatAiDesc": "Assistant fiscal intelligent",
+      "settings": "Paramètres",
+      "settingsDesc": "Thème, profil, sécurité"
     },
     "deadlines": {
       "minPerceptionT1": "Minimum perception IS (T1)",
@@ -250,6 +254,11 @@
       "irf2": "IRF (2ème échéance)",
       "irf3": "IRF (3ème échéance)"
     },
+    "tip": {
+      "title": "Astuce du jour",
+      "text": "Utilisez le simulateur Paie pour générer un bulletin complet avec le calcul automatique des charges CNSS + ITS."
+    },
+    "seeAll": "Voir tout",
     "footer": "CGI242 v1.0.0 — Édition 2026"
   },
   "code": {
@@ -285,6 +294,75 @@
     "calculate": "Calculer",
     "result": "Résultat",
     "enterDataToSee": "Saisissez les données pour voir les résultats",
+    "paie": {
+      "title": "Simulateur de Paie",
+      "subtitle": "Bulletin de paie complet — CGI Congo 2026",
+      "description": "Simulateur de bulletin de paie conforme au CGI 2026. Calcul ITS (barème Art. 116), CNSS, TUS, TOL, CAMU, charges patronales. Avantages en nature selon Art. 115.",
+      "legalRef": "Art. 114-A (exonérations), Art. 115 (avantages nature), Art. 116 (barème ITS)",
+      "profil": "Profil salarié",
+      "profilNational": "National",
+      "profilEtranger": "Étranger résident",
+      "profilNonResident": "Non-résident",
+      "status": "Statut",
+      "single": "Célibataire",
+      "married": "Marié(e)",
+      "divorced": "Divorcé(e)",
+      "widowed": "Veuf/Veuve",
+      "dependents": "Enfants à charge",
+      "familyQuotient": "Quotient familial",
+      "sectionBase": "RÉMUNÉRATION DE BASE",
+      "salaireBase": "Salaire de base",
+      "primesImposables": "Primes imposables",
+      "heuresSup": "Heures supplémentaires",
+      "congesAnnuels": "Congés annuels",
+      "sectionIndemnites": "INDEMNITÉS & PRIMES",
+      "primeTransport": "Prime de transport",
+      "primeTransportNote": "exonérée Art. 114-A b)",
+      "primeRepresentation": "Prime de représentation",
+      "primeRepresentationNote": "exonérée Art. 114-A a)",
+      "primePanier": "Prime de panier",
+      "primeSalissure": "Prime de salissure",
+      "sectionAvantages": "AVANTAGES EN NATURE (Art. 115)",
+      "toggleForfaitaire": "Évaluation forfaitaire CGI (Art. 115)",
+      "avLogement": "Logement (20% plaf. CNSS)",
+      "avDomesticite": "Domesticité (7%)",
+      "avElectricite": "Électricité (5%)",
+      "avVoiture": "Voiture (3%)",
+      "avTelephone": "Téléphone (2%)",
+      "avNourriture": "Nourriture (20%)",
+      "salaireBrutTotal": "SALAIRE BRUT TOTAL",
+      "zoneTOL": "Zone TOL",
+      "centreVille": "Centre-ville",
+      "peripherie": "Périphérie",
+      "sectionBases": "BASES DE CALCUL",
+      "baseBrut": "Salaire brut total",
+      "baseCNSS": "Base CNSS (hors avantages)",
+      "baseITS": "Base imposable ITS (hors exonérés)",
+      "elementsExoneres": "Éléments exonérés (transport, représ.)",
+      "sectionRetenues": "RETENUES SALARIÉ",
+      "cnssSalarie": "CNSS salarié (4%)",
+      "itsLabel": "ITS (barème Art. 116)",
+      "itsForfaitaire": "ITS (20% forfaitaire)",
+      "tusLabel": "TUS",
+      "tolLabel": "TOL",
+      "camuLabel": "CAMU (0,5%)",
+      "taxeRegionale": "Taxe régionale",
+      "totalRetenues": "TOTAL RETENUES",
+      "salaireNet": "SALAIRE NET",
+      "sectionPatronales": "CHARGES PATRONALES CNSS",
+      "cnssVieillesse": "Vieillesse (8%)",
+      "cnssAF": "Alloc. familiales (10,03%)",
+      "cnssPF": "Prest. familiales (2,25%)",
+      "totalPatronales": "TOTAL PATRONALES",
+      "coutEmployeur": "COÛT TOTAL EMPLOYEUR",
+      "sectionRecap": "RÉCAPITULATIF ANNUEL",
+      "brutAnnuel": "Brut annuel",
+      "netAnnuel": "Net annuel",
+      "chargesAnnuelles": "Charges patronales annuelles",
+      "coutAnnuel": "Coût annuel employeur",
+      "tauxEffectif": "Taux effectif de retenue",
+      "enterSalary": "Saisissez un salaire de base pour voir les résultats"
+    },
     "its": {
       "title": "Simulateur ITS",
       "subtitle": "Impôt sur les Traitements et Salaires - Art. 116 CGI 2026",
@@ -580,6 +658,23 @@
       "resultSection": "RÉSULTAT",
       "underMinimum": "Impôt inférieur au minimum de 1 000 FCFA — Non dû",
       "enterData": "Renseignez les données pour voir le calcul"
+    },
+    "rts": {
+      "title": "Retenue à la source",
+      "subtitle": "Retenues à la source — Art. 86-D, Art. 183, TFNC4",
+      "description": "La retenue à la source s'applique : 20% sur les prestations et redevances versées à des non-résidents (Art. 86-D), 10% sur les prestations versées à des résidents non soumis à l'IS (Art. 183), et 10% sur les paiements du Trésor Public pour marchés publics (TFNC4).",
+      "typeLabel": "Type de retenue",
+      "nonResident": "Non-résident (20%)",
+      "nonSoumisIS": "Non soumis IS (10%)",
+      "tresorPublic": "Trésor Public (10%)",
+      "amountHT": "Montant HT",
+      "legalRef": "Art. 86-D (non-résidents 20%), Art. 183 (non soumis IS 10%), TFNC4 (Trésor 10%)",
+      "calcSection": "CALCUL RETENUE À LA SOURCE",
+      "rateApplied": "Taux appliqué",
+      "articleLabel": "Référence légale",
+      "withholdingAmount": "RETENUE À LA SOURCE",
+      "netAmount": "NET À PAYER",
+      "enterAmount": "Saisissez un montant HT pour voir le calcul"
     }
   },
   "subscription": {
@@ -640,6 +735,43 @@
     "october": "Octobre",
     "november": "Novembre",
     "december": "Décembre"
+  },
+  "calendrier": {
+    "title": "Calendrier Fiscal 2026",
+    "subtitle": "Échéances fiscales — CGI Congo-Brazzaville",
+    "description": "Retrouvez toutes les échéances fiscales de l'année 2026 selon le Code Général des Impôts du Congo-Brazzaville.",
+    "legalRef": "Art. 86C (IS), Art. 461 bis (TVA), Art. 306 (Patente)",
+    "echeancesDuMois": "ÉCHÉANCES — {{mois}}",
+    "aucuneEcheance": "Aucune échéance fiscale ce mois",
+    "prochaineEcheance": "PROCHAINE ÉCHÉANCE",
+    "dansXJours": "dans {{jours}} jour(s)",
+    "aujourdhui": "Aujourd'hui",
+    "joursRestants": "{{jours}} j restants",
+    "legende": "Légende",
+    "legendeAujourdhui": "Aujourd'hui",
+    "legendeEcheance": "Échéance",
+    "legendeRecurrent": "Mensuel (récurrent)",
+    "jours": {
+      "lun": "Lun",
+      "mar": "Mar",
+      "mer": "Mer",
+      "jeu": "Jeu",
+      "ven": "Ven",
+      "sam": "Sam",
+      "dim": "Dim"
+    },
+    "desc": {
+      "isT1": "Acompte trimestriel IS (1er trimestre). Art. 86C CGI — Pénalité de 10% en cas de retard (Art. 86E).",
+      "isT2": "Acompte trimestriel IS (2e trimestre). Art. 86C CGI — Pénalité de 10% en cas de retard.",
+      "isT3": "Acompte trimestriel IS (3e trimestre). Art. 86C CGI — Pénalité de 10% en cas de retard.",
+      "isT4": "Acompte trimestriel IS (4e trimestre). Art. 86C CGI — Pénalité de 10% en cas de retard.",
+      "tva": "Déclaration et paiement TVA mensuelle. Art. 461 bis LF 2026 — Au plus tard le 15 du mois suivant.",
+      "its": "Déclaration et reversement ITS mensuel. Barème Art. 116 CGI — Retenue à la source par l'employeur.",
+      "patente": "Paiement annuel de la contribution des patentes. Art. 306 CGI — Échéance du 10 au 20 avril.",
+      "irf1": "IRF Loyers — 1re échéance. Art. 111-113A CGI — Retenue à la source 9%.",
+      "irf2": "IRF Loyers — 2e échéance. Art. 111-113A CGI — Déclaration au plus tard le 20 août.",
+      "irf3": "IRF Loyers — 3e échéance. Art. 111-113A CGI — Dernière échéance de l'année."
+    }
   },
   "activity": {
     "questionsThisMonth": "Questions ce mois",
