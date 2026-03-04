@@ -1127,7 +1127,8 @@
         "risques",
         "actif net",
         "charge d'exploitation",
-        "assurance-maladie"
+        "assurance-maladie",
+        "compagnies d'assurance locales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §5 Primes d'assurances"
@@ -1146,8 +1147,12 @@
       "mots_cles": [
         "primes non déductibles",
         "auto-assurance",
+        "propre assurance",
         "captives d'assurance",
+        "établissement stable",
+        "sociétés de groupe",
         "assurance-vie",
+        "quotes-parts d'employeurs",
         "retraite complémentaire"
       ],
       "statut": "en vigueur",
