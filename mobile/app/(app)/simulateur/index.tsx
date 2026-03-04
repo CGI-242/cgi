@@ -3,11 +3,19 @@ import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
+import MobileSimPicker from "@/components/mobile/MobileSimPicker";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function SimulateurHub() {
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
+
+  // Sur mobile : affichage en liste avec design proposé
+  if (isMobile) {
+    return <MobileSimPicker />;
+  }
 
   const simulateurs = [
     {

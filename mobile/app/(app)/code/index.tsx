@@ -5,9 +5,11 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { getSommaire, searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import TreeNode from "@/components/code/TreeNode";
 import ContentPanel from "@/components/code/ContentPanel";
 import ChapterReader from "@/components/code/ChapterReader";
+import MobileCGIBrowser from "@/components/code/MobileCGIBrowser";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const styles = StyleSheet.create({
@@ -27,7 +29,10 @@ function isDescendant(parent: SommaireNode, childId: string): boolean {
 export default function CodeCGI() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   const sommaire = useMemo(() => getSommaire(), []);
+
+  // Tous les hooks doivent être avant le return conditionnel
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("");
   const [selectedNode, setSelectedNode] = useState<SommaireNode | null>(null);
@@ -37,19 +42,21 @@ export default function CodeCGI() {
     tome2: true,
     tfnc: true,
   });
-  const { width } = useWindowDimensions();
-  const isMobile = width < 768;
-  const sommaireWidth = isMobile ? "35%" : "30%";
-  const contentWidth = isMobile ? "65%" : "70%";
-
-  // Mode livre
   const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
   const readerNodeRef = useRef<SommaireNode | null>(null);
   const [scrollToId, setScrollToId] = useState<string | undefined>();
   const [scrollTrigger, setScrollTrigger] = useState(0);
-
   const debouncedSearch = useDebounce(search, 300);
   const searchResults = useMemo(() => searchArticles(debouncedSearch), [debouncedSearch]);
+
+  // Sur mobile : affichage plein écran avec navigation par cards
+  if (isMobile) {
+    return <MobileCGIBrowser sommaire={sommaire} />;
+  }
+
+  // Desktop : split sommaire/contenu
+  const sommaireWidth = "30%";
+  const contentWidth = "70%";
 
   const toggleExpand = (id: string) => {
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));

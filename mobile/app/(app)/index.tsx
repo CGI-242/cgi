@@ -5,6 +5,8 @@ import { useAuthStore } from "@/lib/store/auth";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useResponsive } from "@/lib/hooks/useResponsive";
+import HomeCards from "@/components/mobile/HomeCards";
 
 function getGreeting(t: (key: string) => string) {
   const h = new Date().getHours();
@@ -52,6 +54,12 @@ export default function Dashboard() {
   const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
   const { colors } = useTheme();
+  const { isMobile } = useResponsive();
+
+  // Sur mobile : affichage HomeCards (disposition proposée)
+  if (isMobile) {
+    return <HomeCards favoritesCount={0} />;
+  }
 
   const ECHEANCES = useMemo(() => [
     { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },

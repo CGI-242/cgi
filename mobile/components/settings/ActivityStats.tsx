@@ -4,6 +4,7 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@/lib/theme/ThemeContext";
 import type { UserStats } from "@/lib/api/user";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
@@ -12,7 +13,7 @@ type Props = {
   stats: UserStats;
 };
 
-function StatRow({ icon, label, value }: { icon: IoniconsName; label: string; value: string }) {
+function StatRow({ icon, label, value, colors }: { icon: IoniconsName; label: string; value: string; colors: ReturnType<typeof useTheme>["colors"] }) {
   return (
     <View
       style={{
@@ -22,34 +23,38 @@ function StatRow({ icon, label, value }: { icon: IoniconsName; label: string; va
         paddingHorizontal: 16,
       }}
     >
-      <Ionicons name={icon} size={20} color="#6b7280" style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, color: "#1f2937", flex: 1 }}>{label}</Text>
-      <Text style={{ fontSize: 14, color: "#9ca3af" }}>{value}</Text>
+      <Ionicons name={icon} size={20} color={colors.icon} style={{ marginRight: 12 }} />
+      <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{label}</Text>
+      <Text style={{ fontSize: 14, color: colors.textMuted }}>{value}</Text>
     </View>
   );
 }
 
-function Divider() {
-  return <View style={{ height: 1, backgroundColor: "#f3f4f6", marginHorizontal: 16 }} />;
-}
-
 export default function ActivityStats({ stats }: Props) {
   const { t } = useTranslation();
+  const { colors } = useTheme();
+
+  const cardStyle = {
+    backgroundColor: colors.card,
+    overflow: "hidden" as const,
+    marginBottom: 4,
+  };
+
   return (
     <>
       <View style={cardStyle}>
-        <StatRow icon="chatbubble-ellipses-outline" label={t("activity.questionsThisMonth")} value={String(stats.monthQuestions)} />
-        <Divider />
-        <StatRow icon="analytics-outline" label={t("activity.questionsTotal")} value={String(stats.totalQuestions)} />
-        <Divider />
-        <StatRow icon="book-outline" label={t("activity.articlesViewed")} value={String(stats.totalArticles)} />
-        <Divider />
-        <StatRow icon="calendar-outline" label={t("activity.activeDays")} value={String(stats.activeDays)} />
+        <StatRow colors={colors} icon="chatbubble-ellipses-outline" label={t("activity.questionsThisMonth")} value={String(stats.monthQuestions)} />
+        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <StatRow colors={colors} icon="analytics-outline" label={t("activity.questionsTotal")} value={String(stats.totalQuestions)} />
+        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <StatRow colors={colors} icon="book-outline" label={t("activity.articlesViewed")} value={String(stats.totalArticles)} />
+        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <StatRow colors={colors} icon="calendar-outline" label={t("activity.activeDays")} value={String(stats.activeDays)} />
       </View>
 
       {stats.last7Days.some((d) => d.questions > 0) && (
         <View style={{ ...cardStyle, padding: 16, marginTop: 4 }}>
-          <Text style={{ fontSize: 12, fontWeight: "600", color: "#6b7280", marginBottom: 12 }}>
+          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary, marginBottom: 12 }}>
             {t("activity.last7Days")}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "flex-end", height: 60, gap: 6 }}>
@@ -59,18 +64,17 @@ export default function ActivityStats({ stats }: Props) {
               const dayLabel = new Date(day.date).toLocaleDateString("fr-FR", { weekday: "narrow" });
               return (
                 <View key={day.date} style={{ flex: 1, alignItems: "center" }}>
-                  <Text style={{ fontSize: 9, color: "#9ca3af", marginBottom: 2 }}>
+                  <Text style={{ fontSize: 9, color: colors.textMuted, marginBottom: 2 }}>
                     {day.questions > 0 ? day.questions : ""}
                   </Text>
                   <View
                     style={{
                       width: "70%",
                       height,
-                      backgroundColor: day.questions > 0 ? "#00815d" : "#e5e7eb",
-                      
+                      backgroundColor: day.questions > 0 ? colors.success : colors.border,
                     }}
                   />
-                  <Text style={{ fontSize: 10, color: "#9ca3af", marginTop: 4 }}>
+                  <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 4 }}>
                     {dayLabel}
                   </Text>
                 </View>
@@ -82,10 +86,3 @@ export default function ActivityStats({ stats }: Props) {
     </>
   );
 }
-
-const cardStyle = {
-  backgroundColor: "#fff",
-  
-  overflow: "hidden" as const,
-  marginBottom: 4,
-};

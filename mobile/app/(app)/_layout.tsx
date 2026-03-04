@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -9,6 +9,8 @@ import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import Sidebar from "@/components/Sidebar";
 import SessionExpiredModal from "@/components/SessionExpiredModal";
 import PaywallScreen from "@/components/paywall/PaywallScreen";
+import MobileHeader from "@/components/mobile/MobileHeader";
+import MobileTabBar, { type TabKey } from "@/components/mobile/MobileTabBar";
 import { api } from "@/lib/api/client";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
@@ -84,7 +86,6 @@ export default function AppLayout() {
   const pathname = usePathname();
   const { isMobile } = useResponsive();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [subStatus, setSubStatus] = useState<string | null>(null);
   const [subLoading, setSubLoading] = useState(true);
 
@@ -112,31 +113,143 @@ export default function AppLayout() {
   const pageTitleKey = !isHome ? PAGE_TITLES[pathname] : null;
   const parent = !isHome ? PAGE_PARENTS[pathname] : null;
 
+  // ── Mapping route → onglet actif pour MobileTabBar ──
+  const getActiveTab = (): TabKey => {
+    if (pathname.startsWith("/code")) return "cgi";
+    if (pathname.startsWith("/simulateur")) return "sim";
+    if (pathname.startsWith("/chat")) return "chat";
+    if (pathname.startsWith("/profil") || pathname.startsWith("/parametres") || pathname.startsWith("/securite") || pathname.startsWith("/abonnement")) return "profile";
+    return "home";
+  };
+
+  const handleMobileTabPress = useCallback((tab: TabKey) => {
+    const routes: Record<TabKey, string> = {
+      home: "/(app)",
+      cgi: "/(app)/code",
+      sim: "/(app)/simulateur",
+      chat: "/(app)/chat",
+      profile: "/(app)/profil",
+    };
+    router.push(routes[tab] as Href);
+  }, []);
+
+  // Titre dynamique pour le header mobile
+  const getMobileTitle = (): string => {
+    if (isHome) return "NORMX Tax";
+    if (pageTitleKey) return t(pageTitleKey);
+    return "CGI 242";
+  };
+
+  // Bouton retour : visible si on n'est pas sur un écran principal
+  const mobileShowBack = !isHome && !(["/code", "/simulateur", "/chat", "/profil"].includes(pathname));
+
+  const handleMobileBack = useCallback(() => {
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.push("/(app)" as Href);
+    }
+  }, []);
+
+  // ── Stack commun (partagé mobile + desktop) ──
+  const stackScreens = (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        animation: "slide_from_right",
+        contentStyle: { backgroundColor: colors.background },
+      }}
+    >
+      <Stack.Screen name="index" />
+      <Stack.Screen name="code/index" />
+      <Stack.Screen name="simulateur/index" />
+      <Stack.Screen name="simulateur/its" />
+      <Stack.Screen name="simulateur/is" />
+      <Stack.Screen name="simulateur/patente" />
+      <Stack.Screen name="simulateur/solde-liquidation" />
+      <Stack.Screen name="simulateur/ircm" />
+      <Stack.Screen name="simulateur/irf-loyers" />
+      <Stack.Screen name="simulateur/iba" />
+      <Stack.Screen name="simulateur/tva" />
+      <Stack.Screen name="simulateur/igf" />
+      <Stack.Screen name="simulateur/enregistrement" />
+      <Stack.Screen name="simulateur/cession-parts" />
+      <Stack.Screen name="simulateur/contribution-fonciere" />
+      <Stack.Screen name="chat/index" />
+      <Stack.Screen name="abonnement/index" />
+      <Stack.Screen name="admin/index" />
+      <Stack.Screen name="profil/index" />
+      <Stack.Screen name="parametres/index" />
+      <Stack.Screen name="organisation/index" />
+      <Stack.Screen name="securite/index" />
+      <Stack.Screen name="analytics/index" />
+      <Stack.Screen name="audit/index" />
+      <Stack.Screen name="permissions/index" />
+      <Stack.Screen name="legal/cgu" />
+      <Stack.Screen name="legal/confidentialite" />
+    </Stack>
+  );
+
+  // ══════════════════════════════════════════════
+  // Sur mobile : MobileHeader + Stack + MobileTabBar
+  // ══════════════════════════════════════════════
+  if (isMobile) {
+    return (
+      <View style={{ flex: 1, backgroundColor: colors.background }}>
+        <MobileHeader
+          title={getMobileTitle()}
+          showBack={mobileShowBack}
+          onBack={handleMobileBack}
+          rightElement={
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <TouchableOpacity onPress={toggleTheme} hitSlop={8}>
+                <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color={colors.textSecondary} />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => router.push("/(app)/profil" as Href)} hitSlop={8}>
+                <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
+                  <Text style={{ color: colors.userBubbleText, fontWeight: "800", fontSize: 10 }}>
+                    {getInitials(user?.prenom, user?.nom)}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          }
+        />
+
+        {/* Bannière offline */}
+        {!isOnline && (
+          <View style={{ backgroundColor: colors.warning, paddingHorizontal: 16, paddingVertical: 6, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+            <Ionicons name="cloud-offline-outline" size={14} color={colors.userBubbleText} style={{ marginRight: 6 }} />
+            <Text style={{ color: colors.userBubbleText, fontSize: 12, fontWeight: "600" }}>{t("offline.banner")}</Text>
+          </View>
+        )}
+
+        {/* Contenu — vrais écrans via Stack */}
+        <View style={{ flex: 1 }}>
+          {stackScreens}
+        </View>
+
+        <MobileTabBar active={getActiveTab()} onTabPress={handleMobileTabPress} />
+        <SessionExpiredModal />
+      </View>
+    );
+  }
+
+  // ══════════════════════════════════════════════
+  // Sur desktop/tablet : Sidebar + Header + Stack
+  // ══════════════════════════════════════════════
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
-      {!isMobile && (
-        <Sidebar
-          collapsed={sidebarCollapsed}
-          onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
-          currentRoute={pathname}
-        />
-      )}
+      <Sidebar
+        collapsed={sidebarCollapsed}
+        onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
+        currentRoute={pathname}
+      />
       <View style={{ flex: 1 }}>
-        {/* Header principal — toujours visible */}
+        {/* Header principal */}
         <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-            {/* Hamburger mobile + Breadcrumb */}
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              {isMobile && (
-                <TouchableOpacity
-                  onPress={() => setMobileSidebarOpen(true)}
-                  accessibilityLabel="Menu"
-                  accessibilityRole="button"
-                  style={{ padding: 6, marginRight: 8 }}
-                >
-                  <Ionicons name="menu" size={24} color={colors.accent} />
-                </TouchableOpacity>
-              )}
               <TouchableOpacity onPress={() => router.push("/(app)")} accessibilityLabel={t("common.home")} accessibilityRole="link">
                 <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
                   CGI 242
@@ -166,7 +279,6 @@ export default function AppLayout() {
             </View>
 
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              {/* Toggle langue */}
               <TouchableOpacity
                 onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
                 accessibilityLabel={t("settings.languageSelect")}
@@ -178,7 +290,6 @@ export default function AppLayout() {
                 </Text>
               </TouchableOpacity>
 
-              {/* Toggle thème */}
               <TouchableOpacity
                 onPress={toggleTheme}
                 accessibilityLabel={t("settings.darkMode")}
@@ -188,7 +299,6 @@ export default function AppLayout() {
                 <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.sidebarText} />
               </TouchableOpacity>
 
-              {/* Avatar */}
               <TouchableOpacity
                 onPress={() => router.push("/(app)/profil")}
                 accessibilityLabel={t("profil.title")}
@@ -196,7 +306,6 @@ export default function AppLayout() {
                 style={{
                   width: 30,
                   height: 30,
-
                   backgroundColor: colors.primary,
                   alignItems: "center",
                   justifyContent: "center",
@@ -221,50 +330,8 @@ export default function AppLayout() {
         )}
 
         {/* Contenu */}
-        <Stack
-          screenOptions={{
-            headerShown: false,
-            animation: "slide_from_right",
-          }}
-        >
-          <Stack.Screen name="index" />
-          <Stack.Screen name="code/index" />
-          <Stack.Screen name="simulateur/index" />
-          <Stack.Screen name="simulateur/its" />
-          <Stack.Screen name="simulateur/is" />
-          <Stack.Screen name="simulateur/patente" />
-          <Stack.Screen name="simulateur/solde-liquidation" />
-          <Stack.Screen name="simulateur/ircm" />
-          <Stack.Screen name="simulateur/irf-loyers" />
-          <Stack.Screen name="simulateur/iba" />
-          <Stack.Screen name="simulateur/tva" />
-          <Stack.Screen name="simulateur/igf" />
-          <Stack.Screen name="simulateur/enregistrement" />
-          <Stack.Screen name="simulateur/cession-parts" />
-          <Stack.Screen name="simulateur/contribution-fonciere" />
-          <Stack.Screen name="chat/index" />
-          <Stack.Screen name="abonnement/index" />
-          <Stack.Screen name="admin/index" />
-          <Stack.Screen name="profil/index" />
-          <Stack.Screen name="parametres/index" />
-          <Stack.Screen name="organisation/index" />
-          <Stack.Screen name="securite/index" />
-          <Stack.Screen name="analytics/index" />
-          <Stack.Screen name="audit/index" />
-          <Stack.Screen name="permissions/index" />
-          <Stack.Screen name="legal/cgu" />
-          <Stack.Screen name="legal/confidentialite" />
-        </Stack>
+        {stackScreens}
       </View>
-      {isMobile && (
-        <Sidebar
-          collapsed={false}
-          onToggle={() => {}}
-          currentRoute={pathname}
-          mobileOpen={mobileSidebarOpen}
-          onMobileClose={() => setMobileSidebarOpen(false)}
-        />
-      )}
       <SessionExpiredModal />
     </View>
   );

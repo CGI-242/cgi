@@ -30,8 +30,24 @@ initSentry();
 SplashScreen.preventAutoHideAsync();
 
 function ThemedStatusBar() {
+  const { mode } = useTheme();
+  return <StatusBar style={mode === "dark" ? "light" : "dark"} />;
+}
+
+function ThemedStack() {
   const { colors } = useTheme();
-  return <StatusBar style="light" backgroundColor={colors.primary} />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        title: "NORMX Tax",
+        contentStyle: { backgroundColor: colors.background },
+      }}
+    >
+      <Stack.Screen name="(auth)" options={{ title: "NORMX Tax" }} />
+      <Stack.Screen name="(app)" options={{ title: "NORMX Tax" }} />
+    </Stack>
+  );
 }
 
 function RootLayout() {
@@ -96,10 +112,7 @@ function RootLayout() {
       <ToastProvider>
         <ErrorBoundary>
           <ThemedStatusBar />
-          <Stack screenOptions={{ headerShown: false, title: "NORMX Tax" }}>
-            <Stack.Screen name="(auth)" options={{ title: "NORMX Tax" }} />
-            <Stack.Screen name="(app)" options={{ title: "NORMX Tax" }} />
-          </Stack>
+          <ThemedStack />
         </ErrorBoundary>
       </ToastProvider>
     </ThemeProvider>

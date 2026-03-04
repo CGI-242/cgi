@@ -1,11 +1,10 @@
-import { View, Text, TouchableOpacity, Pressable } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useTranslation } from "react-i18next";
-import { useResponsive } from "@/lib/hooks/useResponsive";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -28,8 +27,6 @@ interface SidebarProps {
   collapsed: boolean;
   onToggle: () => void;
   currentRoute: string;
-  mobileOpen?: boolean;
-  onMobileClose?: () => void;
 }
 
 const NAV_ITEMS: NavItem[] = [
@@ -46,9 +43,8 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
   return currentRoute.startsWith(itemRoute.replace("/(app)", ""));
 }
 
-export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen, onMobileClose }: SidebarProps) {
+export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const logout = useAuthStore((s) => s.logout);
   const { t } = useTranslation();
 
@@ -72,32 +68,25 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
     },
   ];
 
-  // On mobile, sidebar is always expanded when visible
-  const isCollapsed = isMobile ? false : collapsed;
+  const isCollapsed = collapsed;
   const sidebarWidth = isCollapsed ? 60 : 220;
-
-  // On mobile, don't render if not open
-  if (isMobile && !mobileOpen) return null;
 
   const handleNavPress = (route: string) => {
     router.push(route as any);
-    if (isMobile && onMobileClose) onMobileClose();
   };
 
   const handleProfileAction = (action: () => void) => {
     action();
-    if (isMobile && onMobileClose) onMobileClose();
   };
 
-  const sidebarContent = (
+  return (
     <View
       style={{
-        width: isMobile ? 260 : sidebarWidth,
+        width: sidebarWidth,
         backgroundColor: colors.sidebar,
         paddingTop: 16,
         paddingBottom: 16,
         justifyContent: "space-between",
-        ...(isMobile ? { position: "absolute" as const, left: 0, top: 0, bottom: 0, zIndex: 20 } : {}),
       }}
     >
       {/* Header : logo + bouton toggle */}
@@ -123,8 +112,8 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
             </View>
           )}
           {!isCollapsed && (
-            <TouchableOpacity onPress={isMobile ? onMobileClose : onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
-              <Ionicons name={isMobile ? "close" : "chevron-back-outline"} size={20} color={colors.sidebarText} />
+            <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
+              <Ionicons name="chevron-back-outline" size={20} color={colors.sidebarText} />
             </TouchableOpacity>
           )}
         </View>
@@ -247,18 +236,4 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
       </View>
     </View>
   );
-
-  if (isMobile) {
-    return (
-      <View style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 10 }}>
-        <Pressable
-          style={{ position: "absolute", left: 0, top: 0, right: 0, bottom: 0, backgroundColor: "rgba(0,0,0,0.5)" }}
-          onPress={onMobileClose}
-        />
-        {sidebarContent}
-      </View>
-    );
-  }
-
-  return sidebarContent;
 }
