@@ -1520,9 +1520,12 @@
       ],
       "mots_cles": [
         "amortissement linéaire",
+        "montant cumulé",
+        "durée normale d'utilisation",
         "amortissements différés",
         "période déficitaire",
-        "tableau des amortissements"
+        "tableau des amortissements",
+        "non-déductibilité"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1540,7 +1543,12 @@
       "mots_cles": [
         "biens en location",
         "amortissement",
-        "avantage en nature"
+        "annuité d'amortissement",
+        "loyer",
+        "avantage en nature",
+        "dirigeant",
+        "salarié",
+        "excédent d'amortissement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1554,9 +1562,13 @@
       ],
       "mots_cles": [
         "constructions",
+        "aménagements",
         "sol d'autrui",
-        "bail",
-        "valeur résiduelle"
+        "immeubles pris à bail",
+        "suppléments d'actif",
+        "durée d'utilisation",
+        "valeur résiduelle",
+        "locataire"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1573,7 +1585,10 @@
         "leasing",
         "option d'achat",
         "biens meubles",
-        "biens immeubles"
+        "biens immeubles",
+        "loyers réintégrés",
+        "bénéfice fiscal",
+        "durée du contrat"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
