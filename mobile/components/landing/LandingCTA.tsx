@@ -17,7 +17,7 @@ export default function LandingCTA() {
           marginBottom: 12,
         }}
       >
-        {`Pr\u00eat \u00e0 essayer ?`}
+        {`Prêt à essayer ?`}
       </Text>
       <Text
         style={{
@@ -47,7 +47,7 @@ export default function LandingCTA() {
             fontWeight: fontWeights.extraBold,
           }}
         >
-          {`D\u00e9marrer l'essai gratuit`}
+          {`Démarrer l'essai gratuit`}
         </Text>
       </TouchableOpacity>
       <Text

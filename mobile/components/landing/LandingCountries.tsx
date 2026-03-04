@@ -20,15 +20,15 @@ const countries: Country[] = [
   { name: "Gabon", code: "241", cc: "GA", available: false, region: "CEMAC" },
   { name: "Tchad", code: "235", cc: "TD", available: false, region: "CEMAC" },
   { name: "Centrafrique", code: "236", cc: "CF", available: false, region: "CEMAC" },
-  { name: "Guin\u00e9e \u00c9q.", code: "240", cc: "GQ", available: false, region: "CEMAC" },
-  { name: "S\u00e9n\u00e9gal", code: "221", cc: "SN", available: false, region: "UEMOA" },
-  { name: "C\u00f4te d'Ivoire", code: "225", cc: "CI", available: false, region: "UEMOA" },
+  { name: "Guinée Éq.", code: "240", cc: "GQ", available: false, region: "CEMAC" },
+  { name: "Sénégal", code: "221", cc: "SN", available: false, region: "UEMOA" },
+  { name: "Côte d'Ivoire", code: "225", cc: "CI", available: false, region: "UEMOA" },
   { name: "Mali", code: "223", cc: "ML", available: false, region: "UEMOA" },
   { name: "Burkina Faso", code: "226", cc: "BF", available: false, region: "UEMOA" },
-  { name: "B\u00e9nin", code: "229", cc: "BJ", available: false, region: "UEMOA" },
+  { name: "Bénin", code: "229", cc: "BJ", available: false, region: "UEMOA" },
   { name: "Togo", code: "228", cc: "TG", available: false, region: "UEMOA" },
   { name: "Niger", code: "227", cc: "NE", available: false, region: "UEMOA" },
-  { name: "Guin\u00e9e", code: "224", cc: "GN", available: false, region: "Autre" },
+  { name: "Guinée", code: "224", cc: "GN", available: false, region: "Autre" },
   { name: "Madagascar", code: "261", cc: "MG", available: false, region: "Autre" },
   { name: "Mauritanie", code: "222", cc: "MR", available: false, region: "Autre" },
   { name: "Burundi", code: "257", cc: "BI", available: false, region: "Autre" },
@@ -282,7 +282,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                       color: "#3a3a45",
                     }}
                   >
-                    Bient\u00f4t
+                    Bientôt
                   </Text>
                 </View>
               )}
