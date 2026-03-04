@@ -1,6 +1,6 @@
 /**
  * Mapping des mots-cles vers les articles du CGI 2026
- * Chapitre 2 - IBA, IRCM, IRF, ITS (Art. 93 a 116A)
+ * Chapitre 2 - IBA, IRVM, IRF, ITS (Art. 93 a 116A)
  *
  * REGLE : Le premier article de chaque liste est la SOURCE PRIMAIRE
  *
@@ -90,8 +90,10 @@ export const KEYWORD_ARTICLE_MAP_IBA_2026: Record<string, string[]> = {
   'ohada comptabilite': ['Art. 104'],
   '10 ans conservation': ['Art. 104'],
 
-  // ========== IRCM - IMPOT REVENUS CAPITAUX MOBILIERS ==========
+  // ========== IRVM - IMPOT SUR LE REVENU DES VALEURS MOBILIERES ==========
+  'irvm': ['Art. 105'],
   'ircm': ['Art. 105'],
+  'impot revenu valeurs mobilieres': ['Art. 105'],
   'impot revenus capitaux mobiliers': ['Art. 105'],
   'revenus mobiliers': ['Art. 105'],
   'valeurs mobilieres': ['Art. 105'],
@@ -107,23 +109,23 @@ export const KEYWORD_ARTICLE_MAP_IBA_2026: Record<string, string[]> = {
   'titres participatifs': ['Art. 105C'],
   'effets publics': ['Art. 105C'],
   'interets creances': ['Art. 105D'],
-  'comptes courants ircm': ['Art. 105D'],
+  'comptes courants irvm': ['Art. 105D'],
   'bons caisse': ['Art. 105D'],
   'cession actions': ['Art. 105E'],
   'cession parts sociales': ['Art. 105E'],
-  'exoneration ircm': ['Art. 106'],
-  'fusion ircm': ['Art. 106'],
-  'apport partiel actif ircm': ['Art. 106'],
-  'territorialite ircm': ['Art. 107'],
+  'exoneration irvm': ['Art. 106'],
+  'fusion irvm': ['Art. 106'],
+  'apport partiel actif irvm': ['Art. 106'],
+  'territorialite irvm': ['Art. 107'],
   '10% cession titres': ['Art. 107'],
-  'fait generateur ircm': ['Art. 108'],
+  'fait generateur irvm': ['Art. 108'],
   '3 mois dividendes': ['Art. 108'],
-  'base imposable ircm': ['Art. 109'],
+  'base imposable irvm': ['Art. 109'],
   'moins-values mobilieres': ['Art. 109'],
-  'taux ircm': ['Art. 110'],
-  '15% ircm': ['Art. 110'],
+  'taux irvm': ['Art. 110'],
+  '15% irvm': ['Art. 110'],
   '35% revenus occultes': ['Art. 110'],
-  'retenue ircm': ['Art. 110A'],
+  'retenue irvm': ['Art. 110A'],
 
   // ========== IRF - IMPOT REVENUS FONCIERS ==========
   'irf': ['Art. 111'],
@@ -196,7 +198,7 @@ export const KEYWORD_ARTICLE_MAP_IBA_2026: Record<string, string[]> = {
  */
 export const SYNONYMS_IBA_2026: Record<string, string[]> = {
   'iba': ['impot sur les benefices d\'affaires', 'bic', 'bnc', 'benefices industriels'],
-  'ircm': ['impot revenus capitaux mobiliers', 'dividendes', 'revenus mobiliers'],
+  'irvm': ['impot revenu valeurs mobilieres', 'ircm', 'capitaux mobiliers', 'dividendes', 'revenus mobiliers'],
   'irf': ['impot revenus fonciers', 'revenus locatifs', 'loyers'],
   'its': ['impot traitements salaires', 'salaires', 'irpp salarie'],
   'regime forfait': ['forfait', 'petites entreprises', 'micro-entreprises', 'smt'],

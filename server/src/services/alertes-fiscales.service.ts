@@ -60,10 +60,10 @@ const PREDEFINED_ALERTES = [
   { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 7', description: 'Revenus supérieurs à 5.000.000 FCFA.', valeur: '45', unite: '%', articleNumero: '116' },
   { type: 'ECHEANCE', categorie: 'ITS', titre: 'Déclaration ITS employeur', description: 'Déclaration mensuelle des retenues ITS par l\'employeur.', valeur: '15', unite: 'jour', periodicite: 'mensuel', articleNumero: '120' },
 
-  // IRCM
-  { type: 'TAUX', categorie: 'IRCM', titre: 'Taux IRCM dividendes', description: 'Retenue à la source sur les dividendes distribués.', valeur: '15', unite: '%', articleNumero: '104' },
-  { type: 'TAUX', categorie: 'IRCM', titre: 'Taux IRCM intérêts', description: 'Retenue à la source sur les intérêts des comptes courants et dépôts.', valeur: '15', unite: '%', articleNumero: '104' },
-  { type: 'ECHEANCE', categorie: 'IRCM', titre: 'Reversement IRCM', description: 'Reversement de la retenue IRCM dans les 15 jours suivant le mois de distribution.', valeur: '15', unite: 'jour', periodicite: 'mensuel', articleNumero: '106' },
+  // IRVM
+  { type: 'TAUX', categorie: 'IRVM', titre: 'Taux IRVM dividendes', description: 'Retenue à la source sur les dividendes distribués.', valeur: '15', unite: '%', articleNumero: '104' },
+  { type: 'TAUX', categorie: 'IRVM', titre: 'Taux IRVM intérêts', description: 'Retenue à la source sur les intérêts des comptes courants et dépôts.', valeur: '15', unite: '%', articleNumero: '104' },
+  { type: 'ECHEANCE', categorie: 'IRVM', titre: 'Reversement IRVM', description: 'Reversement de la retenue IRVM dans les 15 jours suivant le mois de distribution.', valeur: '15', unite: 'jour', periodicite: 'mensuel', articleNumero: '106' },
 
   // IRF
   { type: 'TAUX', categorie: 'IRF', titre: 'Taux IRF loyers', description: 'Taux de l\'impôt sur les revenus fonciers appliqué aux loyers.', valeur: '9', unite: '%', articleNumero: '113' },

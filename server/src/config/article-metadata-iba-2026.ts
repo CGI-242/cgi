@@ -1,6 +1,6 @@
 /**
  * Metadata des articles du CGI 2026 - Chapitre 2
- * IBA, IRCM, IRF, ITS (Art. 93 a 116A)
+ * IBA, IRVM, IRF, ITS (Art. 93 a 116A)
  *
  * @author NORMX AI - CGI 242
  * @version 2026
@@ -202,12 +202,12 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
     valeurs: ['10 ans conservation'],
   },
 
-  // ========== IRCM ==========
+  // ========== IRVM ==========
   'Art. 105': {
     numero: 'Art. 105',
-    titre: 'Champ d\'application IRCM',
-    section: 'IRCM',
-    themes: ['IRCM', 'revenus mobiliers', 'valeurs mobilieres'],
+    titre: 'Champ d\'application IRVM',
+    section: 'IRVM',
+    themes: ['IRVM', 'revenus mobiliers', 'valeurs mobilieres'],
     priority: 1,
     defines: ['impot revenus capitaux mobiliers'],
   },
@@ -215,7 +215,7 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
   'Art. 105A': {
     numero: 'Art. 105A',
     titre: 'Revenus valeurs mobilieres',
-    section: 'IRCM',
+    section: 'IRVM',
     themes: ['dividendes', 'revenus distribues'],
     priority: 1,
     defines: ['revenus valeurs mobilieres'],
@@ -223,8 +223,8 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
 
   'Art. 105B': {
     numero: 'Art. 105B',
-    titre: 'Exclusions IRCM',
-    section: 'IRCM',
+    titre: 'Exclusions IRVM',
+    section: 'IRVM',
     themes: ['remboursement apports', 'primes emission'],
     priority: 2,
   },
@@ -232,7 +232,7 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
   'Art. 105C': {
     numero: 'Art. 105C',
     titre: 'Revenus obligations',
-    section: 'IRCM',
+    section: 'IRVM',
     themes: ['obligations', 'titres participatifs'],
     priority: 2,
   },
@@ -240,7 +240,7 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
   'Art. 105D': {
     numero: 'Art. 105D',
     titre: 'Revenus creances',
-    section: 'IRCM',
+    section: 'IRVM',
     themes: ['interets', 'creances', 'comptes courants'],
     priority: 2,
   },
@@ -248,7 +248,7 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
   'Art. 105E': {
     numero: 'Art. 105E',
     titre: 'Plus-values mobilieres',
-    section: 'IRCM',
+    section: 'IRVM',
     themes: ['plus-values', 'cession actions'],
     priority: 1,
     defines: ['plus-values mobilieres'],
@@ -256,16 +256,16 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
 
   'Art. 106': {
     numero: 'Art. 106',
-    titre: 'Exonerations IRCM',
-    section: 'IRCM',
+    titre: 'Exonerations IRVM',
+    section: 'IRVM',
     themes: ['exonerations', 'fusion'],
     priority: 2,
   },
 
   'Art. 107': {
     numero: 'Art. 107',
-    titre: 'Territorialite IRCM',
-    section: 'IRCM',
+    titre: 'Territorialite IRVM',
+    section: 'IRVM',
     themes: ['territorialite', 'cession titres'],
     priority: 2,
     valeurs: ['10%', '365 jours'],
@@ -273,8 +273,8 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
 
   'Art. 108': {
     numero: 'Art. 108',
-    titre: 'Fait generateur IRCM',
-    section: 'IRCM',
+    titre: 'Fait generateur IRVM',
+    section: 'IRVM',
     themes: ['fait generateur', 'exigibilite'],
     priority: 2,
     valeurs: ['3 mois'],
@@ -282,8 +282,8 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
 
   'Art. 109': {
     numero: 'Art. 109',
-    titre: 'Base d\'imposition IRCM',
-    section: 'IRCM',
+    titre: 'Base d\'imposition IRVM',
+    section: 'IRVM',
     themes: ['base imposable', 'moins-values'],
     priority: 2,
     valeurs: ['3 ans'],
@@ -291,18 +291,18 @@ export const ARTICLE_METADATA_IBA_2026: Record<string, ArticleMetadataIBA2026> =
 
   'Art. 110': {
     numero: 'Art. 110',
-    titre: 'Taux IRCM',
-    section: 'IRCM',
-    themes: ['taux IRCM', 'revenus occultes'],
+    titre: 'Taux IRVM',
+    section: 'IRVM',
+    themes: ['taux IRVM', 'revenus occultes'],
     priority: 1,
-    defines: ['taux IRCM'],
+    defines: ['taux IRVM'],
     valeurs: ['15%', '35%'],
   },
 
   'Art. 110A': {
     numero: 'Art. 110A',
-    titre: 'Retenue IRCM',
-    section: 'IRCM',
+    titre: 'Retenue IRVM',
+    section: 'IRVM',
     themes: ['retenue source', 'paiement'],
     priority: 2,
   },
