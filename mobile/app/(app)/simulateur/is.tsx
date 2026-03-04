@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, ScrollView, Switch } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import { calculerIS, type IsInput } from "@/lib/services/is.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -20,7 +20,6 @@ export default function IsScreen() {
   const [produitsFinanciers, setProduitsFinanciers] = useState("");
   const [produitsHAO, setProduitsHAO] = useState("");
   const [retenuesLiberatoires, setRetenuesLiberatoires] = useState("");
-  const [deficitConsecutif, setDeficitConsecutif] = useState(false);
 
   const result = useMemo(() => {
     const input: IsInput = {
@@ -28,11 +27,10 @@ export default function IsScreen() {
       produitsFinanciers: parseFloat(produitsFinanciers.replace(/\s/g, "")) || 0,
       produitsHAO: parseFloat(produitsHAO.replace(/\s/g, "")) || 0,
       retenuesLiberatoires: parseFloat(retenuesLiberatoires.replace(/\s/g, "")) || 0,
-      deficitConsecutif,
     };
     if (input.produitsExploitation === 0) return null;
     return calculerIS(input);
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires, deficitConsecutif]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires]);
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
@@ -53,19 +51,6 @@ export default function IsScreen() {
           <NumberField label={t("simulateur.is.financial")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
           <NumberField label={t("simulateur.is.hao")} value={produitsHAO} onChange={setProduitsHAO} />
           <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
-
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.is.deficit")}</Text>
-              <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.is.deficitDesc")}</Text>
-            </View>
-            <Switch
-              value={deficitConsecutif}
-              onValueChange={setDeficitConsecutif}
-              trackColor={{ false: colors.disabled, true: `${colors.primary}80` }}
-              thumbColor={deficitConsecutif ? colors.primary : colors.textMuted}
-            />
-          </View>
 
           <Text style={{ fontSize: 10, color: colors.textMuted }}>{t("simulateur.is.legalRef")}</Text>
         </ScrollView>

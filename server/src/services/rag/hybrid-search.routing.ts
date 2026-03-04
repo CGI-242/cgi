@@ -65,9 +65,9 @@ export const DIRECT_KEYWORD_MAPPINGS: Record<string, string> = {
   "taux de l'is": 'Art. 86A',
   "taux impôt sur les sociétés": 'Art. 86A',
   "taux impot sur les societes": 'Art. 86A',
-  // Art. 86B - Minimum de perception IS
-  'minimum perception is': 'Art. 86B',
-  'minimum de perception': 'Art. 86B',
+  // Art. 86C - Minimum de perception IS
+  'minimum perception is': 'Art. 86C',
+  'minimum de perception': 'Art. 86C',
 
   // ========== IRF - IMPOT SUR LE REVENU FONCIER ==========
   // Art. 113 - Taux IRF

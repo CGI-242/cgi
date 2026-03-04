@@ -40,9 +40,9 @@ const ALERTE_PATTERNS = {
 const PREDEFINED_ALERTES = [
   // IS - Impôt sur les sociétés
   { type: 'TAUX', categorie: 'IS', titre: 'Taux IS droit commun', description: 'Taux de l\'impôt sur les sociétés applicable aux bénéfices des personnes morales (Art. 86A).', valeur: '28', unite: '%', articleNumero: '86A' },
-  { type: 'TAUX', categorie: 'IS', titre: 'Minimum de perception IS', description: 'Minimum de perception : 1% des produits (exploitation + financiers + HAO), ou 2% en cas de déficit fiscal sur 2 exercices consécutifs (Art. 86B).', valeur: '1', unite: '%', articleNumero: '86B' },
+  { type: 'TAUX', categorie: 'IS', titre: 'Minimum de perception IS', description: 'Minimum de perception : 1% des produits (exploitation + financiers + HAO) - Art. 86C.', valeur: '1', unite: '%', articleNumero: '86C' },
   { type: 'ECHEANCE', categorie: 'IS', titre: 'Déclaration IS - délai', description: 'Déclaration des résultats dans les 4 mois suivant la clôture de l\'exercice.', valeur: '4', unite: 'mois', articleNumero: '35' },
-  { type: 'ECHEANCE', categorie: 'IS', titre: 'Acomptes minimum de perception IS', description: 'Le minimum de perception se substitue aux anciens acomptes IS. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre (Art. 86B).', valeur: '4', unite: 'trimestres', periodicite: 'trimestriel', articleNumero: '86B' },
+  { type: 'ECHEANCE', categorie: 'IS', titre: 'Acomptes minimum de perception IS', description: 'Le minimum de perception est versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre (Art. 86C).', valeur: '4', unite: 'trimestres', periodicite: 'trimestriel', articleNumero: '86C' },
 
   // IBA
   { type: 'TAUX', categorie: 'IBA', titre: 'Taux IBA régime réel', description: 'Taux de l\'impôt sur les bénéfices d\'affaires pour les contribuables du régime réel.', valeur: '25', unite: '%', articleNumero: '92' },
@@ -103,7 +103,7 @@ const PREDEFINED_ALERTES = [
 
   // Minimum de perception
   { type: 'SEUIL', categorie: 'MINIMUM_PERCEPTION', titre: 'Minimum perception IS', description: 'Minimum de perception annuel pour l\'IS.', valeur: '1.000.000', unite: 'FCFA', articleNumero: '86A' },
-  { type: 'TAUX', categorie: 'MINIMUM_PERCEPTION', titre: 'Minimum perception taux CA', description: 'Taux du minimum de perception calculé sur le chiffre d\'affaires.', valeur: '1', unite: '%', articleNumero: '86B' },
+  { type: 'TAUX', categorie: 'MINIMUM_PERCEPTION', titre: 'Minimum perception taux CA', description: 'Taux du minimum de perception calculé sur les produits (Art. 86C).', valeur: '1', unite: '%', articleNumero: '86C' },
 
   // Personnes morales étrangères
   { type: 'TAUX', categorie: 'PM_ETRANGERES', titre: 'Retenue source PM étrangères', description: 'Retenue à la source sur les sommes versées aux personnes morales étrangères.', valeur: '20', unite: '%', articleNumero: '92A' },

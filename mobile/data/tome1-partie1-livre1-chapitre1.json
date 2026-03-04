@@ -2259,10 +2259,17 @@
       ],
       "mots_cles": [
         "IRVM",
-        "imputation",
+        "imputation IRVM sur IS",
         "valeurs mobilières",
-        "15%",
-        "30% capital"
+        "revenus articles 105 à 110A",
+        "15% taux réputé acquitté",
+        "30% capital",
+        "conventions internationales",
+        "double imposition",
+        "banques crédit exclus",
+        "assurances réassurances exclus",
+        "actions nominatives",
+        "activités industrielles agricoles minières"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
@@ -2271,27 +2278,35 @@
       "article": "Art. 86-C",
       "titre": "Minimum de perception",
       "texte": [
-        "(L.F.2026) 1. Le montant de l'impôt sur les sociétés ne peut être inférieur à un minimum de perception. Ce minimum résulte de l'application d'un taux et d'une base imposable.",
-        "2. La base imposable du minimum de perception est constituée par le montant total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire, à l'exception des produits ayant fait l'objet d'une retenue à la source libératoire.",
-        "3. Le taux du minimum de perception est fixé à 1%.",
-        "4. Les redevables de l'IS sont tenus de déclarer le minimum de perception de l'impôt sur les sociétés de l'année en cours, sans avertissement préalable au plus tard le 15 mars de la même année. La liquidation provisoire est faite avec la base imposable de l'année précédente ou du dernier exercice clos en attendant la déclaration des états financiers de l'exercice concerné.",
-        "5. Le minimum de perception de l'IS est payé en quatre acomptes de l'impôt sur les sociétés, au plus tard le 15 mars, le 15 juin, le 15 septembre et le 15 décembre.",
-        "6. Le montant du minimum de perception vient en déduction, le cas échéant, du montant de la cotisation due au titre de l'impôt sur les sociétés de la même année.",
-        "7. Si ladite cotisation est nulle ou inférieure au montant du minimum de perception, ce dernier demeure acquis au Trésor.",
-        "8. Le défaut de paiement du minimum de perception est sanctionné par une pénalité de 50% du montant dû.",
-        "9. Du montant de l'impôt sur les sociétés, calculé conformément aux dispositions du présent code, sont également imputés les montants :",
+        "(L.F.2026) 1) Le montant de l'impôt sur les sociétés ne peut être inférieur à un minimum de perception. Ce minimum résulte de l'application d'un taux et d'une base imposable.",
+        "2) La base imposable du minimum de perception est constituée par le montant total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire, à l'exception des produits ayant fait l'objet d'une retenue à la source libératoire.",
+        "3) Le taux du minimum de perception est fixé à 1%.",
+        "4) Les redevables de l'IS sont tenus de déclarer le minimum de perception de l'impôt sur les sociétés de l'année en cours, sans avertissement préalable au plus tard le 15 mars de la même année. La liquidation provisoire est faite avec la base imposable de l'année précédente ou du dernier exercice clos en attendant la déclaration des états financiers de l'exercice concerné.",
+        "5) Le minimum de perception de l'IS est payé en quatre acomptes de l'impôt sur les sociétés, au plus tard le 15 mars, le 15 juin, le 15 septembre et le 15 décembre.",
+        "6) Le montant du minimum de perception vient en déduction, le cas échéant, du montant de la cotisation due au titre de l'impôt sur les sociétés de la même année.",
+        "7) Si ladite cotisation est nulle ou inférieure au montant du minimum de perception, ce dernier demeure acquis au Trésor.",
+        "8) Le défaut de paiement du minimum de perception est sanctionné par une pénalité de 50% du montant dû.",
+        "9) Du montant de l'impôt sur les sociétés, calculé conformément aux dispositions du présent code, sont également imputés les montants :",
         "- du crédit d'impôt investissement prévu à l'article 4 du présent code ;",
         "- des crédits d'impôt prévus à l'article 13 du présent code pour atténuer l'imposition des revenus de source étrangère ;",
         "- des retenues à la source non libératoires prélevées sur les revenus de capitaux mobiliers ou les revenus fonciers versés par une personne résidente ;",
-        "10. En cas de redressement, suite à un contrôle fiscal, qui conduit à un résultat positif, le minimum de perception de l'impôt sur les sociétés payées vient en déduction de l'impôt sur les sociétés."
+        "10) En cas de redressement, suite à un contrôle fiscal, qui conduit à un résultat positif, le minimum de perception de l'impôt sur les sociétés payées vient en déduction de l'impôt sur les sociétés."
       ],
       "mots_cles": [
         "minimum de perception",
-        "1%",
+        "taux 1%",
         "produits d'exploitation",
-        "4 acomptes",
-        "15 mars",
-        "50% pénalité"
+        "produits financiers",
+        "produits hors activité ordinaire",
+        "4 acomptes trimestriels",
+        "15 mars 15 juin 15 septembre 15 décembre",
+        "liquidation provisoire",
+        "déduction cotisation IS",
+        "acquis au Trésor",
+        "50% pénalité défaut paiement",
+        "crédit d'impôt investissement",
+        "retenues à la source non libératoires",
+        "redressement contrôle fiscal"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
@@ -2314,7 +2329,12 @@
         "non-résidents",
         "prestations de services",
         "redevances",
-        "conventions fiscales"
+        "conventions fiscales internationales",
+        "droit d'auteur",
+        "brevet marque",
+        "équipement industriel",
+        "logiciels",
+        "établissement stable"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
@@ -2329,9 +2349,10 @@
       "mots_cles": [
         "déclaration d'existence",
         "modification pacte social",
-        "3 mois",
-        "15 jours",
-        "résidence fiscale"
+        "3 mois constitution",
+        "15 jours commencement activité",
+        "résidence fiscale compétente",
+        "article 378 sanction"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
@@ -2351,10 +2372,15 @@
       ],
       "mots_cles": [
         "déclaration de résultats",
-        "4 mois",
+        "4 mois clôture exercice",
         "pièces annexes",
         "revenus distribués",
-        "IBA"
+        "IBA",
+        "conseils d'administration",
+        "assemblées générales",
+        "assurances réassurances",
+        "liquidation d'office",
+        "article 372 majoration"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
@@ -2371,8 +2397,11 @@
       "mots_cles": [
         "versement spontané",
         "sans rôle",
-        "acomptes",
-        "solde IS"
+        "sans émission préalable",
+        "acomptes impôt minimum",
+        "solde IS",
+        "déclaration bénéfices article 86F",
+        "paiement propre initiative"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"

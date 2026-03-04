@@ -1,8 +1,10 @@
 /**
  * Service Minimum de Perception IS
- * Articles 86B et 86C CGI Congo 2026
+ * Art. 86-C CGI Congo 2026
  *
- * Le minimum de perception est verse en 4 acomptes trimestriels
+ * Taux : 1% (Art. 86-C §3)
+ * Base : produits exploitation + financiers + HAO - retenues liberatoires (Art. 86-C §2)
+ * Le minimum de perception est verse en 4 acomptes trimestriels (Art. 86-C §5)
  * avant meme la liquidation de l'IS sur le resultat fiscal.
  */
 
@@ -11,20 +13,17 @@ export interface IsInput {
   produitsFinanciers: number | null;
   produitsHAO: number | null;
   retenuesLiberatoires: number | null;
-  deficitConsecutif: boolean;
 }
 
 export interface IsResult {
   baseMinimumPerception: number;
   tauxMinimum: number;
-  deficitConsecutif: boolean;
   minimumPerceptionAnnuel: number;
   acompteTrimestriel: number;
   acomptes: { label: string; montant: number }[];
 }
 
-const TAUX_MINIMUM_NORMAL = 0.01;
-const TAUX_MINIMUM_DEFICIT = 0.02;
+const TAUX_MINIMUM = 0.01;
 
 export function calculerIS(input: IsInput): IsResult {
   const produitsExploitation = input.produitsExploitation || 0;
@@ -35,9 +34,7 @@ export function calculerIS(input: IsInput): IsResult {
   const baseMinimumPerception =
     produitsExploitation + produitsFinanciers + produitsHAO - retenuesLiberatoires;
 
-  const tauxMinimum = input.deficitConsecutif ? TAUX_MINIMUM_DEFICIT : TAUX_MINIMUM_NORMAL;
-
-  const minimumPerceptionAnnuel = Math.max(0, baseMinimumPerception * tauxMinimum);
+  const minimumPerceptionAnnuel = Math.max(0, baseMinimumPerception * TAUX_MINIMUM);
   const acompteTrimestriel = minimumPerceptionAnnuel / 4;
 
   const acomptes = [
@@ -49,8 +46,7 @@ export function calculerIS(input: IsInput): IsResult {
 
   return {
     baseMinimumPerception: Math.round(baseMinimumPerception),
-    tauxMinimum: tauxMinimum * 100,
-    deficitConsecutif: input.deficitConsecutif,
+    tauxMinimum: TAUX_MINIMUM * 100,
     minimumPerceptionAnnuel: Math.round(minimumPerceptionAnnuel),
     acompteTrimestriel: Math.round(acompteTrimestriel),
     acomptes,

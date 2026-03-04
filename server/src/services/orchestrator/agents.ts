@@ -30,9 +30,9 @@ export const FISCAL_AGENTS: FiscalAgent[] = [
     ],
     ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['IS', 'sociétés', 'bénéfice'] },
     systemInstruction: `Tu es spécialisé dans l'Impôt sur les Sociétés (IS) — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 1 à 92K).
-Focus sur : Art. 86A (taux), Art. 86B (minimum de perception), Art. 86C (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
+Focus sur : Art. 86A (taux), Art. 86B (imputation IRVM), Art. 86C (minimum de perception), Art. 86D (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
 Taux principal : 28%. Taux microfinance/enseignement : 25%. Taux non-résidents CEMAC : 33%.
-Minimum de perception (Art. 86B) : se substitue aux anciens acomptes IS. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre. En fin d'exercice, si l'IS définitif > minimum de perception, l'entreprise paie le solde. Si IS < minimum, le minimum reste acquis au Trésor. Il n'existe pas de système d'acomptes IS séparé.
+Minimum de perception (Art. 86C) : taux 1% sur produits exploitation + financiers + HAO. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre. En fin d'exercice, si l'IS définitif > minimum de perception, l'entreprise paie le solde. Si IS < minimum, le minimum reste acquis au Trésor.
 TOUJOURS citer : "Chapitre 1 (Impôt sur les sociétés), Livre 1, Tome 1" dans la référence.`,
   },
   {
@@ -474,13 +474,13 @@ TOUJOURS citer : "Chapitre 1 (IS), Livre 1, Tome 1, Art. X" dans la référence.
       /\bsous[- ]traitant[s]?\s+p[eé]trolier[s]?\b/i,
       /\bzone\s+angola\b/i,
       /\b[eé]tablissement\s+stable\b/i,
-      /\bart\.?\s*(86C|87|88|89|90|91|92)[A-K]?\b/i,
+      /\bart\.?\s*(86D|87|88|89|90|91|92)[A-K]?\b/i,
       /\bforfait\s+22\s*%\b/i,
     ],
     ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['non-résident', 'étranger', 'succursale', 'holding', 'intégration', 'ATE', 'quitus'] },
-    systemInstruction: `Tu es spécialisé dans la fiscalité des personnes morales étrangères — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 86C à 92K).
+    systemInstruction: `Tu es spécialisé dans la fiscalité des personnes morales étrangères — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 86D à 92K).
 
-RETENUE À LA SOURCE NON-RÉSIDENTS (Art. 86C) :
+RETENUE À LA SOURCE NON-RÉSIDENTS (Art. 86D) :
 - 20% sur prestations de services et redevances versées à des non-résidents ;
 - 33% pour les personnes morales CEMAC non-résidentes (IS).
 

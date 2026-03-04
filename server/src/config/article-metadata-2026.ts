@@ -236,18 +236,29 @@ export const ARTICLE_METADATA_2026: Record<string, ArticleMetadata2026> = {
 
   'Art. 86B': {
     numero: 'Art. 86B',
-    titre: 'Minimum de perception',
+    titre: 'Imputation IRVM sur IS',
     section: 'Modalités d\'imposition',
-    themes: ['minimum perception', 'impôt minimum'],
+    themes: ['IRVM', 'imputation', 'valeurs mobilières'],
     priority: 1,
-    defines: ['minimum de perception IS'],
-    valeurs: ['1%', '2%', '15 mars', '15 juin', '15 septembre', '15 décembre'],
-    keywords: ['déficit consécutif', 'acomptes'],
+    defines: ['imputation IRVM sur IS'],
+    valeurs: ['15%', '30%'],
+    keywords: ['IRVM', 'valeurs mobilières', 'actions'],
   },
 
   'Art. 86C': {
     numero: 'Art. 86C',
-    titre: 'Retenue à la source',
+    titre: 'Minimum de perception',
+    section: 'Modalités d\'imposition',
+    themes: ['minimum perception', 'impôt minimum', 'acomptes IS'],
+    priority: 1,
+    defines: ['minimum de perception IS'],
+    valeurs: ['1%', '15 mars', '15 juin', '15 septembre', '15 décembre'],
+    keywords: ['acomptes', 'produits exploitation'],
+  },
+
+  'Art. 86D': {
+    numero: 'Art. 86D',
+    titre: 'Retenue à la source non-résidents',
     section: 'Modalités d\'imposition',
     themes: ['retenue à la source', 'prestations non-résidents'],
     priority: 1,
@@ -357,14 +368,14 @@ export const ARTICLE_METADATA_2026: Record<string, ArticleMetadata2026> = {
  * Articles prioritaires par thème pour le reranking
  */
 export const PRIORITY_ARTICLES_2026: Record<string, string[]> = {
-  'taux': ['Art. 86A', 'Art. 86B', 'Art. 86C', 'Art. 52'],
+  'taux': ['Art. 86A', 'Art. 86C', 'Art. 86D', 'Art. 52'],
   'exonérations': ['Art. 3', 'Art. 3A'],
   'établissement stable': ['Art. 4A', 'Art. 4'],
   'prix de transfert': ['Art. 77', 'Art. 78', 'Art. 79', 'Art. 80', 'Art. 81'],
   'amortissements': ['Art. 51', 'Art. 52', 'Art. 57', 'Art. 58'],
   'déficits': ['Art. 75'],
-  'minimum perception': ['Art. 86B'],
-  'retenue source': ['Art. 86C'],
+  'minimum perception': ['Art. 86C'],
+  'retenue source': ['Art. 86D'],
   'mère-fille': ['Art. 87', 'Art. 87A'],
   'holding': ['Art. 90', 'Art. 90A'],
   'intégration fiscale': ['Art. 91', 'Art. 91A', 'Art. 91B'],

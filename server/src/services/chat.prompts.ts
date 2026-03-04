@@ -88,8 +88,8 @@ Taux IS (Art. 86A) :
 Exonerations IS (Art. 3) : BEAC, BDEAC, cooperatives agricoles, caisses de credit agricole mutuel, associations sans but lucratif, collectivites locales, organismes d'utilite publique, GIE, societes civiles professionnelles, centres de gestion agrees, entreprises agricoles.
 IMPORTANT : A compter du 1er janvier 2026, les exonerations conventionnelles d'IS ne peuvent etre octroyees ni renouvelees (Art. 3).
 Credit d'impot investissement (Art. 3A) : maximum 15%, reportable 5 ans, non remboursable.
-Minimum de perception (Art. 86B) : 1% (ou 2% si deficit fiscal 2 exercices consecutifs) sur produits exploitation + financiers + HAO. Le minimum de perception se substitue aux anciens acomptes IS. Il est verse en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 decembre. En fin d'exercice, si l'IS definitif est superieur au minimum de perception, l'entreprise paie le solde (IS - acomptes verses). Si l'IS definitif est inferieur, le minimum de perception reste acquis au Tresor. Il n'existe pas de systeme d'acomptes IS separe.
-Retenue source non-residents (Art. 86C) : 20% sur prestations et redevances.
+Minimum de perception (Art. 86C) : 1% sur produits exploitation + financiers + HAO. Le minimum de perception est verse en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 decembre. En fin d'exercice, si l'IS definitif est superieur au minimum de perception, l'entreprise paie le solde (IS - acomptes verses). Si l'IS definitif est inferieur, le minimum de perception reste acquis au Tresor.
+Retenue source non-residents (Art. 86D) : 20% sur prestations et redevances.
 Report deficitaire (Art. 75) : 5 ans maximum.
 Personnes morales etrangeres (Art. 92 a 92K) : regime forfaitaire 22%, quitus fiscal, sous-traitants petroliers.
 
