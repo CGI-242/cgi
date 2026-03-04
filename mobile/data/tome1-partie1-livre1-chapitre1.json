@@ -2204,8 +2204,15 @@
       "mots_cles": [
         "période d'imposition",
         "exercice comptable",
+        "douze mois",
         "12 mois",
-        "premier bilan"
+        "premier bilan",
+        "date clôture obligatoire",
+        "six mois",
+        "31 décembre",
+        "début d'activités",
+        "notification option",
+        "administration fiscale"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 1 : Période d'imposition"
@@ -2214,9 +2221,9 @@
       "article": "Art. 86-A",
       "titre": "Taux de l'impôt sur les sociétés",
       "texte": [
-        "(L.F.2026) 1. Pour le calcul de l'impôt sur les sociétés, toute fraction du bénéfice imposable inférieure à 1.000 FCFA est négligée.",
-        "2. Le taux général de l'impôt sur les sociétés est fixé à 28%.",
-        "3. Les taux particuliers sont fixés à :",
+        "(L.F.2026) 1) Pour le calcul de l'impôt sur les sociétés, toute fraction du bénéfice imposable inférieure à 1.000 FCFA est négligée.",
+        "2) Le taux général de l'impôt sur les sociétés est fixé à 28%.",
+        "3) Les taux particuliers sont fixés à :",
         "a) 25% pour les sociétés se livrant à une activité de microfinance ou une activité d'enseignement privé organisée en société ;",
         "b) 28% pour les sociétés se livrant à une activité d'exploitation des mines et des carrières ou à une activité d'exploitation immobilière ;",
         "c) 33% pour les personnes morales étrangères.",
@@ -2224,11 +2231,16 @@
       ],
       "mots_cles": [
         "taux IS",
-        "28%",
-        "25%",
-        "33%",
-        "microfinance",
-        "hydrocarbures"
+        "taux général 28%",
+        "25% microfinance",
+        "enseignement privé",
+        "28% mines carrières",
+        "exploitation immobilière",
+        "33% personnes morales étrangères",
+        "hydrocarbures",
+        "contrat pétrolier",
+        "1 000 FCFA fraction négligée",
+        "calcul impôt sociétés"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"

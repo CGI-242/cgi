@@ -84,7 +84,7 @@ Taux IS (Art. 86A) :
 - 28% taux general ;
 - 25% pour les etablissements de microfinance et d'enseignement ;
 - 28% pour les societes minieres et immobilieres ;
-- 35% pour les personnes morales etrangeres non-residentes CEMAC.
+- 33% pour les personnes morales etrangeres non-residentes CEMAC.
 Exonerations IS (Art. 3) : BEAC, BDEAC, cooperatives agricoles, caisses de credit agricole mutuel, associations sans but lucratif, collectivites locales, organismes d'utilite publique, GIE, societes civiles professionnelles, centres de gestion agrees, entreprises agricoles.
 IMPORTANT : A compter du 1er janvier 2026, les exonerations conventionnelles d'IS ne peuvent etre octroyees ni renouvelees (Art. 3).
 Credit d'impot investissement (Art. 3A) : maximum 15%, reportable 5 ans, non remboursable.

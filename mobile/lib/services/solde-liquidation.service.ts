@@ -6,7 +6,7 @@
  *  - 28% taux general
  *  - 25% microfinance, enseignement prive
  *  - 28% mines, carrieres, exploitation immobiliere
- *  - 35% personnes morales etrangeres
+ *  - 33% personnes morales etrangeres
  *
  * Fraction du benefice < 1 000 FCFA negligee.
  * Le solde = IS calcule - acomptes deja verses (minimum de perception).
@@ -42,7 +42,7 @@ const TAUX_IS: Record<TypeContribuable, number> = {
   general: 0.28,
   microfinance: 0.25,
   mines: 0.28,
-  etranger: 0.35,
+  etranger: 0.33,
 };
 
 export function calculerSoldeLiquidation(

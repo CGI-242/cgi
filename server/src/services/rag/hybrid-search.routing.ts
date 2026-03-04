@@ -198,7 +198,7 @@ export const ROUTING_RULES: RoutingRule[] = [
   },
   {
     id: 'R14_taux_is',
-    keywordsRequired: ['taux', '28%', '25%', '35%'],
+    keywordsRequired: ['taux', '28%', '25%', '33%'],
     keywordsContext: ['is', 'sociét', 'societ', 'impôt sur les', 'impot sur les'],
     routeTo: 'Art. 86A',
     boost: 3.0,
