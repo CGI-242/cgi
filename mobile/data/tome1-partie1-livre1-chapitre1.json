@@ -1863,7 +1863,13 @@
       "mots_cles": [
         "titres",
         "portefeuille",
-        "évaluation"
+        "bilan",
+        "valeur d'origine",
+        "évaluation",
+        "titres de participation",
+        "titres de placement",
+        "bourse",
+        "valeur probable de négociation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1877,7 +1883,13 @@
       ],
       "mots_cles": [
         "créances douteuses",
-        "débiteurs"
+        "débiteurs",
+        "perte probable",
+        "compromission",
+        "COBAC",
+        "COBAC R-2018/01",
+        "établissements de crédit",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1886,11 +1898,14 @@
       "article": "Art. 73",
       "titre": "Crédit-bail – établissements de crédit",
       "texte": [
-        "(L.F.2026) Nonobstant les dispositions de l'Article 42 ci-dessus, les établissements de crédit sont admis à constituer les provisions sur les créances douteuses relatives aux opérations de crédit-bail et de location avec option d'achat, à concurrence de leur montant."
+        "(L.F.2026) Nonobstant les dispositions de l'Article 72 ci-dessus, les établissements de crédit sont admis à constituer les provisions sur les créances douteuses relatives aux opérations de crédit-bail et de location avec option d'achat, à concurrence de leur montant."
       ],
       "mots_cles": [
         "crédit-bail",
-        "établissements de crédit"
+        "location avec option d'achat",
+        "créances douteuses",
+        "établissements de crédit",
+        "provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1906,9 +1921,12 @@
       ],
       "mots_cles": [
         "provisions non déductibles",
+        "charges et pertes",
+        "créances douteuses",
         "congés payés",
         "État",
-        "collectivités locales"
+        "collectivités locales",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1924,8 +1942,12 @@
       ],
       "mots_cles": [
         "déficits reportables",
+        "charge déductible",
         "5 ans",
-        "amortissements différés"
+        "cinquième exercice",
+        "amortissements différés",
+        "période déficitaire",
+        "exonération"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §14 Reports déficitaires"
@@ -1938,8 +1960,12 @@
       ],
       "mots_cles": [
         "investissements lourds",
+        "industries extractives",
+        "forêts",
+        "télécommunications",
         "charte des investissements",
-        "avantages fiscaux"
+        "avantages fiscaux",
+        "avantages spécifiques"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §15 Dérogations sectorielles"
@@ -1962,24 +1988,14 @@
         "entreprises liées",
         "dépendance",
         "contrôle",
+        "majoration",
+        "minoration",
+        "régime fiscal privilégié",
+        "administration fiscale",
         "pleine concurrence",
+        "analyse fonctionnelle",
+        "analyse de comparabilité",
         "OCDE"
-      ],
-      "statut": "en vigueur",
-      "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
-    },
-    {
-      "article": "Art. 77",
-      "titre": "Vérification des comptabilités et systèmes informatisés",
-      "texte": [
-        "(L.F.2026) Les agents de l'administration des impôts vérifient sur place, en suivant les règles prévues par le présent Code, la comptabilité des contribuables astreints à tenir et à présenter des documents comptables.",
-        "Lorsque la comptabilité est tenue au moyen de systèmes informatisés, le contrôle porte sur l'ensemble des informations, données et traitements informatiques qui concourent directement ou indirectement à la formation des résultats comptables ou fiscaux et à l'élaboration des déclarations rendues obligatoires par le Code général des impôts.",
-        "Ce contrôle porte également sur la documentation relative aux analyses, à la programmation et à l'exécution des traitements."
-      ],
-      "mots_cles": [
-        "vérification comptable",
-        "systèmes informatisés",
-        "contrôle fiscal"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
