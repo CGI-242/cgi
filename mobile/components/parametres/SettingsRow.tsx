@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { ThemeColors } from "@/lib/theme/colors";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -26,9 +27,13 @@ export default function SettingsRow({ icon, label, value, onPress, showChevron, 
       }}
     >
       <Ionicons name={icon} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{label}</Text>
+      <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>
+        {label}
+      </Text>
       {value ? (
-        <Text style={{ fontSize: 14, color: colors.textMuted }}>{value}</Text>
+        <Text style={{ fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
+          {value}
+        </Text>
       ) : null}
       {showChevron && (
         <Ionicons name="chevron-forward" size={18} color={colors.disabled} style={{ marginLeft: 4 }} />

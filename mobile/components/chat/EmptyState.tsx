@@ -29,7 +29,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
 
       {recentSearches.length > 0 && (
         <View style={{ width: "100%", marginTop: 24, paddingHorizontal: 8 }}>
-          <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "600", marginBottom: 8 }}>
+          <Text style={{ color: colors.textSecondary, fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, marginBottom: 8 }}>
             {t("chat.recentSearches")}
           </Text>
           {recentSearches.map((item) => (
@@ -41,6 +41,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
                 alignItems: "center",
                 backgroundColor: colors.card,
                 
+                borderRadius: 10,
                 paddingHorizontal: 12,
                 paddingVertical: 10,
                 marginBottom: 6,
@@ -49,7 +50,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
               }}
             >
               <Ionicons name="time-outline" size={16} color={colors.textMuted} style={{ marginRight: 10 }} />
-              <Text style={{ flex: 1, fontSize: 13, color: colors.text }} numberOfLines={1}>
+              <Text style={{ flex: 1, fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.text }} numberOfLines={1}>
                 {item.query}
               </Text>
               <Ionicons name="arrow-forward" size={14} color={colors.disabled} />

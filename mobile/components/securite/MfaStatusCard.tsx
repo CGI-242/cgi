@@ -17,6 +17,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
         backgroundColor: colors.card,
         borderWidth: 1,
         borderColor: colors.border,
+        borderRadius: 14,
         padding: 16,
         marginBottom: 16,
       }}
@@ -28,20 +29,20 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
           justifyContent: "space-between",
         }}
       >
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", alignItems: "center", flex: 1 }}>
           <Ionicons
             name="shield-checkmark"
             size={24}
             color={status?.enabled ? colors.success : colors.danger}
             style={{ marginRight: 12 }}
           />
-          <View>
+          <View style={{ flex: 1 }}>
             <Text
               style={{ fontSize: 16, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}
             >
               {t("security.mfa2fa")}
             </Text>
-            <Text style={{ fontSize: 13, color: colors.textSecondary }}>
+            <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
               {status?.enabled
                 ? t("security.mfaProtects")
                 : t("security.mfaNotConfigured")}
@@ -53,12 +54,14 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
             backgroundColor: status?.enabled ? `${colors.success}15` : `${colors.danger}15`,
             paddingHorizontal: 10,
             paddingVertical: 4,
+            borderRadius: 8,
           }}
         >
           <Text
             style={{
               fontSize: 12,
-              fontWeight: "700",
+              fontFamily: fonts.bold,
+              fontWeight: fontWeights.bold,
               color: status?.enabled ? colors.success : colors.danger,
             }}
           >
@@ -76,7 +79,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
             color={colors.textSecondary}
             style={{ marginRight: 6 }}
           />
-          <Text style={{ fontSize: 13, color: colors.textSecondary }}>
+          <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
             {t("security.backupCodesRemaining", { count: status.backupCodesRemaining })}
           </Text>
         </View>

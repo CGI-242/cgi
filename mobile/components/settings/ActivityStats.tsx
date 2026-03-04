@@ -6,6 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import type { UserStats } from "@/lib/api/user";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -24,8 +25,8 @@ function StatRow({ icon, label, value, colors }: { icon: IoniconsName; label: st
       }}
     >
       <Ionicons name={icon} size={20} color={colors.icon} style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{label}</Text>
-      <Text style={{ fontSize: 14, color: colors.textMuted }}>{value}</Text>
+      <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{label}</Text>
+      <Text style={{ fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{value}</Text>
     </View>
   );
 }
@@ -36,6 +37,9 @@ export default function ActivityStats({ stats }: Props) {
 
   const cardStyle = {
     backgroundColor: colors.card,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 14,
     overflow: "hidden" as const,
     marginBottom: 4,
   };
@@ -44,17 +48,17 @@ export default function ActivityStats({ stats }: Props) {
     <>
       <View style={cardStyle}>
         <StatRow colors={colors} icon="chatbubble-ellipses-outline" label={t("activity.questionsThisMonth")} value={String(stats.monthQuestions)} />
-        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <View style={{ height: 1, backgroundColor: colors.background, marginHorizontal: 16 }} />
         <StatRow colors={colors} icon="analytics-outline" label={t("activity.questionsTotal")} value={String(stats.totalQuestions)} />
-        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <View style={{ height: 1, backgroundColor: colors.background, marginHorizontal: 16 }} />
         <StatRow colors={colors} icon="book-outline" label={t("activity.articlesViewed")} value={String(stats.totalArticles)} />
-        <View style={{ height: 1, backgroundColor: colors.border, marginHorizontal: 16 }} />
+        <View style={{ height: 1, backgroundColor: colors.background, marginHorizontal: 16 }} />
         <StatRow colors={colors} icon="calendar-outline" label={t("activity.activeDays")} value={String(stats.activeDays)} />
       </View>
 
       {stats.last7Days.some((d) => d.questions > 0) && (
         <View style={{ ...cardStyle, padding: 16, marginTop: 4 }}>
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary, marginBottom: 12 }}>
+          <Text style={{ fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textSecondary, marginBottom: 12 }}>
             {t("activity.last7Days")}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "flex-end", height: 60, gap: 6 }}>
@@ -64,17 +68,18 @@ export default function ActivityStats({ stats }: Props) {
               const dayLabel = new Date(day.date).toLocaleDateString("fr-FR", { weekday: "narrow" });
               return (
                 <View key={day.date} style={{ flex: 1, alignItems: "center" }}>
-                  <Text style={{ fontSize: 9, color: colors.textMuted, marginBottom: 2 }}>
+                  <Text style={{ fontSize: 9, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textMuted, marginBottom: 2 }}>
                     {day.questions > 0 ? day.questions : ""}
                   </Text>
                   <View
                     style={{
                       width: "70%",
                       height,
+                      borderRadius: 4,
                       backgroundColor: day.questions > 0 ? colors.success : colors.border,
                     }}
                   />
-                  <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 4 }}>
+                  <Text style={{ fontSize: 10, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted, marginTop: 4 }}>
                     {dayLabel}
                   </Text>
                 </View>

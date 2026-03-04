@@ -10,6 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import type { MfaSetupResult } from "@/lib/api/mfa";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface MfaSetupFlowProps {
   setupStep: "idle" | "qr" | "verify" | "backup";
@@ -58,6 +59,7 @@ export default function MfaSetupFlow({
           disabled={actionLoading}
           style={{
             backgroundColor: colors.primary,
+            borderRadius: 12,
             paddingVertical: 14,
             alignItems: "center",
             marginBottom: 16,
@@ -74,7 +76,7 @@ export default function MfaSetupFlow({
                 style={{ marginRight: 8 }}
               />
               <Text
-                style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}
+                style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15 }}
               >
                 {t("security.enableMfa")}
               </Text>
@@ -90,6 +92,7 @@ export default function MfaSetupFlow({
             backgroundColor: colors.card,
             borderWidth: 1,
             borderColor: colors.border,
+            borderRadius: 14,
             padding: 16,
             marginBottom: 16,
           }}
@@ -97,7 +100,8 @@ export default function MfaSetupFlow({
           <Text
             style={{
               fontSize: 15,
-              fontWeight: "600",
+              fontFamily: fonts.semiBold,
+              fontWeight: fontWeights.semiBold,
               color: colors.text,
               marginBottom: 12,
             }}
@@ -107,13 +111,15 @@ export default function MfaSetupFlow({
           <View style={{ alignItems: "center", marginBottom: 16 }}>
             <Image
               source={{ uri: setupData.qrCodeUrl }}
-              style={{ width: 200, height: 200 }}
+              style={{ width: 200, height: 200, borderRadius: 8 }}
               resizeMode="contain"
             />
           </View>
           <Text
             style={{
               fontSize: 13,
+              fontFamily: fonts.regular,
+              fontWeight: fontWeights.regular,
               color: colors.textSecondary,
               marginBottom: 8,
             }}
@@ -123,6 +129,7 @@ export default function MfaSetupFlow({
           <View
             style={{
               backgroundColor: colors.background,
+              borderRadius: 10,
               padding: 12,
               marginBottom: 16,
             }}
@@ -143,7 +150,8 @@ export default function MfaSetupFlow({
           <Text
             style={{
               fontSize: 15,
-              fontWeight: "600",
+              fontFamily: fonts.semiBold,
+              fontWeight: fontWeights.semiBold,
               color: colors.text,
               marginBottom: 8,
             }}
@@ -161,9 +169,11 @@ export default function MfaSetupFlow({
             maxLength={6}
             style={{
               backgroundColor: colors.background,
+              borderRadius: 10,
               paddingHorizontal: 14,
               paddingVertical: 12,
               fontSize: 20,
+              fontFamily: fonts.bold,
               color: colors.text,
               textAlign: "center",
               letterSpacing: 8,
@@ -176,6 +186,7 @@ export default function MfaSetupFlow({
             style={{
               backgroundColor:
                 totpCode.length < 6 ? colors.textMuted : colors.primary,
+              borderRadius: 12,
               paddingVertical: 12,
               alignItems: "center",
             }}
@@ -184,7 +195,7 @@ export default function MfaSetupFlow({
               <ActivityIndicator size="small" color="#fff" />
             ) : (
               <Text
-                style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}
+                style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15 }}
               >
                 {t("security.activate")}
               </Text>
@@ -201,6 +212,7 @@ export default function MfaSetupFlow({
             disabled={actionLoading}
             style={{
               backgroundColor: colors.textSecondary,
+              borderRadius: 12,
               paddingVertical: 14,
               alignItems: "center",
               marginBottom: 12,
@@ -214,7 +226,7 @@ export default function MfaSetupFlow({
                 style={{ marginRight: 8 }}
               />
               <Text
-                style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}
+                style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14 }}
               >
                 {t("security.regenerateBackup")}
               </Text>
@@ -226,6 +238,7 @@ export default function MfaSetupFlow({
               onPress={onShowDisable}
               style={{
                 backgroundColor: `${colors.danger}15`,
+                borderRadius: 12,
                 paddingVertical: 14,
                 alignItems: "center",
               }}
@@ -240,7 +253,8 @@ export default function MfaSetupFlow({
                 <Text
                   style={{
                     color: "#dc2626",
-                    fontWeight: "600",
+                    fontFamily: fonts.semiBold,
+                    fontWeight: fontWeights.semiBold,
                     fontSize: 14,
                   }}
                 >
@@ -254,13 +268,15 @@ export default function MfaSetupFlow({
                 backgroundColor: colors.card,
                 borderWidth: 1,
                 borderColor: `${colors.danger}50`,
+                borderRadius: 14,
                 padding: 16,
               }}
             >
               <Text
                 style={{
                   fontSize: 14,
-                  fontWeight: "600",
+                  fontFamily: fonts.semiBold,
+                  fontWeight: fontWeights.semiBold,
                   color: "#dc2626",
                   marginBottom: 8,
                 }}
@@ -270,6 +286,8 @@ export default function MfaSetupFlow({
               <Text
                 style={{
                   fontSize: 13,
+                  fontFamily: fonts.regular,
+                  fontWeight: fontWeights.regular,
                   color: colors.textSecondary,
                   marginBottom: 12,
                 }}
@@ -284,9 +302,11 @@ export default function MfaSetupFlow({
                 secureTextEntry
                 style={{
                   backgroundColor: colors.background,
+                  borderRadius: 10,
                   paddingHorizontal: 14,
                   paddingVertical: 12,
                   fontSize: 15,
+                  fontFamily: fonts.regular,
                   color: colors.text,
                   marginBottom: 12,
                 }}
@@ -297,6 +317,7 @@ export default function MfaSetupFlow({
                   style={{
                     flex: 1,
                     backgroundColor: colors.background,
+                    borderRadius: 10,
                     paddingVertical: 10,
                     alignItems: "center",
                   }}
@@ -304,7 +325,8 @@ export default function MfaSetupFlow({
                   <Text
                     style={{
                       color: colors.text,
-                      fontWeight: "600",
+                      fontFamily: fonts.semiBold,
+                      fontWeight: fontWeights.semiBold,
                       fontSize: 14,
                     }}
                   >
@@ -317,6 +339,7 @@ export default function MfaSetupFlow({
                   style={{
                     flex: 1,
                     backgroundColor: "#dc2626",
+                    borderRadius: 10,
                     paddingVertical: 10,
                     alignItems: "center",
                   }}
@@ -327,7 +350,8 @@ export default function MfaSetupFlow({
                     <Text
                       style={{
                         color: "#fff",
-                        fontWeight: "600",
+                        fontFamily: fonts.semiBold,
+                        fontWeight: fontWeights.semiBold,
                         fontSize: 14,
                       }}
                     >

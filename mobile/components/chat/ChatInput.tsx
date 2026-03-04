@@ -7,6 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useSpeechRecognition } from "@/lib/hooks/useSpeechRecognition";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type Props = {
   value: string;
@@ -42,7 +43,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           flexDirection: "row",
           alignItems: "flex-end",
           backgroundColor: colors.input,
-          
+          borderRadius: 22,
           paddingHorizontal: 14,
           paddingVertical: 6,
           gap: 8,
@@ -52,6 +53,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           style={{
             flex: 1,
             fontSize: 14,
+            fontFamily: fonts.regular,
             color: colors.text,
             maxHeight: 100,
             paddingVertical: 6,
@@ -73,6 +75,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
             style={{
               width: 36,
               height: 36,
+              borderRadius: 18,
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -90,7 +93,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           disabled={disabled || !value.trim()}
           style={{
             backgroundColor: disabled || !value.trim() ? colors.disabled : colors.primary,
-            
+            borderRadius: 18,
             width: 36,
             height: 36,
             alignItems: "center",
@@ -105,6 +108,8 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
         style={{
           color: colors.textMuted,
           fontSize: 10,
+          fontFamily: fonts.regular,
+          fontWeight: fontWeights.regular,
           textAlign: "center",
           marginTop: 4,
         }}

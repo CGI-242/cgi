@@ -9,6 +9,17 @@ import ChapterReader from "./ChapterReader";
 import ArticleText from "./ArticleText";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
+const NODE_ICONS: { icon: keyof typeof Ionicons.glyphMap; color: string }[] = [
+  { icon: "book-outline", color: "#00815d" },
+  { icon: "document-text-outline", color: "#4f46e5" },
+  { icon: "receipt-outline", color: "#d97706" },
+  { icon: "briefcase-outline", color: "#9333ea" },
+  { icon: "shield-checkmark-outline", color: "#0891b2" },
+  { icon: "business-outline", color: "#dc2626" },
+  { icon: "library-outline", color: "#ca8a04" },
+  { icon: "folder-open-outline", color: "#059669" },
+];
+
 type Props = {
   sommaire: SommaireNode[];
 };
@@ -56,13 +67,26 @@ function NodeListView({ nodes, onSelect, title }: {
           {title}
         </Text>
       )}
-      {nodes.map((node) => {
+      {nodes.map((node, idx) => {
         const artCount = countArticles(node);
         const hasChildren = (node.children && node.children.length > 0) || (node.articles && node.articles.length > 0);
+        const ic = NODE_ICONS[idx % NODE_ICONS.length];
         return (
           <Card key={node.id} onPress={() => onSelect(node)}>
-            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-              <View style={{ flex: 1, marginRight: 10 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+              <View
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: 10,
+                  backgroundColor: `${ic.color}18`,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name={ic.icon} size={20} color={ic.color} />
+              </View>
+              <View style={{ flex: 1 }}>
                 <Text
                   style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}
                   numberOfLines={2}
@@ -146,20 +170,37 @@ function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSe
       </Text>
       {results.slice(0, 50).map((art, i) => (
         <Card key={`${art.article}-${i}`} onPress={() => onSelect(art)}>
-          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary, marginBottom: 2 }}>
-            {art.article}
-          </Text>
-          {art.titre ? (
-            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
-              {art.titre}
-            </Text>
-          ) : null}
-          <Text
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textSecondary, lineHeight: 18 }}
-            numberOfLines={2}
-          >
-            {art.texte.join(" ")}
-          </Text>
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <View
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: 8,
+                backgroundColor: `${colors.primary}15`,
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: 2,
+              }}
+            >
+              <Ionicons name="document-text-outline" size={18} color={colors.primary} />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary, marginBottom: 2 }}>
+                {art.article}
+              </Text>
+              {art.titre ? (
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
+                  {art.titre}
+                </Text>
+              ) : null}
+              <Text
+                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textSecondary, lineHeight: 18 }}
+                numberOfLines={2}
+              >
+                {art.texte.join(" ")}
+              </Text>
+            </View>
+          </View>
         </Card>
       ))}
     </ScrollView>

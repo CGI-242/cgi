@@ -6,6 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 import type { Citation } from "@/lib/api/chat";
 import CitationsBlock from "./CitationsBlock";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type Props = {
   role: "USER" | "ASSISTANT";
@@ -34,7 +35,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
           style={{
             width: 30,
             height: 30,
-            
+            borderRadius: 15,
             backgroundColor: colors.accent,
             alignItems: "center",
             justifyContent: "center",
@@ -48,7 +49,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
         <View
           style={{
             backgroundColor: role === "USER" ? colors.userBubble : colors.assistantBubble,
-            
+            borderRadius: 16,
             paddingHorizontal: 14,
             paddingVertical: 10,
             ...(role === "USER"
@@ -60,6 +61,8 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
             style={{
               color: role === "USER" ? colors.userBubbleText : colors.assistantBubbleText,
               fontSize: 14,
+              fontFamily: fonts.regular,
+              fontWeight: fontWeights.regular,
               lineHeight: 20,
             }}
             selectable
@@ -80,7 +83,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
           style={{
             width: 30,
             height: 30,
-            
+            borderRadius: 15,
             backgroundColor: colors.headerBg,
             alignItems: "center",
             justifyContent: "center",

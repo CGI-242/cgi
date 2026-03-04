@@ -1,5 +1,6 @@
 import { Text } from "react-native";
 import type { ThemeColors } from "@/lib/theme/colors";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
   title: string;
@@ -12,7 +13,8 @@ export default function SectionHeader({ title, colors }: Props) {
       style={{
         color: colors.textSecondary,
         fontSize: 12,
-        fontWeight: "700",
+        fontFamily: fonts.bold,
+        fontWeight: fontWeights.bold,
         letterSpacing: 0.5,
         marginBottom: 8,
         marginTop: 16,

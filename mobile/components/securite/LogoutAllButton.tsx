@@ -1,5 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface LogoutAllButtonProps {
   actionLoading: boolean;
@@ -12,6 +14,8 @@ export default function LogoutAllButton({
   onLogoutAll,
   colors,
 }: LogoutAllButtonProps) {
+  const { t } = useTranslation();
+
   return (
     <View
       style={{
@@ -26,6 +30,7 @@ export default function LogoutAllButton({
         disabled={actionLoading}
         style={{
           backgroundColor: `${colors.danger}15`,
+          borderRadius: 12,
           paddingVertical: 14,
           alignItems: "center",
         }}
@@ -38,9 +43,9 @@ export default function LogoutAllButton({
             style={{ marginRight: 8 }}
           />
           <Text
-            style={{ color: "#dc2626", fontWeight: "600", fontSize: 14 }}
+            style={{ color: "#dc2626", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14 }}
           >
-            Déconnecter tous les appareils
+            {t("security.logoutAllDevices")}
           </Text>
         </View>
       </TouchableOpacity>

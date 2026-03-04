@@ -1,4 +1,6 @@
 import { View, Text } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
   initials: string;
@@ -8,20 +10,28 @@ interface Props {
 
 export default function AvatarSection({ initials, email, colors }: Props) {
   return (
-    <View style={{ alignItems: "center", marginBottom: 24 }}>
+    <View style={{ alignItems: "center", marginBottom: 28 }}>
       <View
         style={{
-          width: 80,
-          height: 80,
+          width: 88,
+          height: 88,
+          borderRadius: 44,
           backgroundColor: colors.primary,
           justifyContent: "center",
           alignItems: "center",
-          marginBottom: 12,
+          marginBottom: 14,
         }}
       >
-        <Text style={{ color: "#fff", fontSize: 28, fontWeight: "bold" }}>{initials}</Text>
+        <Text style={{ color: "#fff", fontSize: 30, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          {initials}
+        </Text>
       </View>
-      <Text style={{ color: colors.textSecondary, fontSize: 14 }}>{email}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+        <Ionicons name="mail-outline" size={14} color={colors.textMuted} />
+        <Text style={{ color: colors.textSecondary, fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+          {email}
+        </Text>
+      </View>
     </View>
   );
 }

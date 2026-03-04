@@ -1,6 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
   firstName: string;
@@ -20,6 +21,7 @@ interface Props {
 
 function FieldInput({
   label,
+  icon,
   value,
   onChangeText,
   placeholder,
@@ -28,6 +30,7 @@ function FieldInput({
   colors,
 }: {
   label: string;
+  icon: keyof typeof Ionicons.glyphMap;
   value: string;
   onChangeText: (text: string) => void;
   placeholder?: string;
@@ -37,7 +40,12 @@ function FieldInput({
 }) {
   return (
     <View style={{ marginBottom: isLast ? 0 : 16 }}>
-      <Text style={{ color: colors.textSecondary, fontSize: 13, marginBottom: 6, fontWeight: "600" }}>{label}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 6 }}>
+        <Ionicons name={icon} size={14} color={colors.primary} />
+        <Text style={{ color: colors.textSecondary, fontSize: 13, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+          {label}
+        </Text>
+      </View>
       <TextInput
         value={value}
         onChangeText={onChangeText}
@@ -47,9 +55,11 @@ function FieldInput({
         style={{
           borderWidth: 1,
           borderColor: colors.border,
-          paddingHorizontal: 12,
-          paddingVertical: 10,
+          borderRadius: 10,
+          paddingHorizontal: 14,
+          paddingVertical: 11,
           fontSize: 15,
+          fontFamily: fonts.regular,
           color: colors.text,
           backgroundColor: colors.input,
         }}
@@ -88,7 +98,8 @@ export default function ProfileForm({
         <View
           style={{
             backgroundColor: message.type === "success" ? `${colors.success}15` : `${colors.danger}15`,
-            padding: 12,
+            borderRadius: 12,
+            padding: 14,
             marginBottom: 16,
             flexDirection: "row",
             alignItems: "center",
@@ -98,12 +109,14 @@ export default function ProfileForm({
             name={message.type === "success" ? "checkmark-circle" : "alert-circle"}
             size={20}
             color={message.type === "success" ? colors.success : colors.danger}
-            style={{ marginRight: 8 }}
+            style={{ marginRight: 10 }}
           />
           <Text
             style={{
               color: message.type === "success" ? colors.success : colors.danger,
               fontSize: 14,
+              fontFamily: fonts.medium,
+              fontWeight: fontWeights.medium,
               flex: 1,
             }}
           >
@@ -113,11 +126,35 @@ export default function ProfileForm({
       )}
 
       {/* Formulaire */}
-      <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16 }}>
-        <FieldInput label={t("auth.firstName")} value={firstName} onChangeText={onChangeFirstName} placeholder={t("auth.firstNamePlaceholder")} colors={colors} />
-        <FieldInput label={t("auth.lastName")} value={lastName} onChangeText={onChangeLastName} placeholder={t("auth.lastNamePlaceholder")} colors={colors} />
+      <View
+        style={{
+          backgroundColor: colors.card,
+          borderWidth: 1,
+          borderColor: colors.border,
+          borderRadius: 14,
+          padding: 18,
+          marginBottom: 16,
+        }}
+      >
+        <FieldInput
+          label={t("auth.firstName")}
+          icon="person-outline"
+          value={firstName}
+          onChangeText={onChangeFirstName}
+          placeholder={t("auth.firstNamePlaceholder")}
+          colors={colors}
+        />
+        <FieldInput
+          label={t("auth.lastName")}
+          icon="person-outline"
+          value={lastName}
+          onChangeText={onChangeLastName}
+          placeholder={t("auth.lastNamePlaceholder")}
+          colors={colors}
+        />
         <FieldInput
           label={t("auth.phone")}
+          icon="call-outline"
           value={phone}
           onChangeText={onChangePhone}
           placeholder={t("auth.phonePlaceholder")}
@@ -126,6 +163,7 @@ export default function ProfileForm({
         />
         <FieldInput
           label="Profession"
+          icon="briefcase-outline"
           value={profession}
           onChangeText={onChangeProfession}
           placeholder={t("auth.professionPlaceholder")}
@@ -136,12 +174,15 @@ export default function ProfileForm({
 
       {/* Date inscription */}
       {createdAt ? (
-        <Text style={{ textAlign: "center", color: colors.textMuted, fontSize: 13, marginBottom: 24 }}>
-          {t("profil.memberSince")} {formatDate(createdAt)}
-        </Text>
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginBottom: 24 }}>
+          <Ionicons name="calendar-outline" size={14} color={colors.textMuted} />
+          <Text style={{ color: colors.textMuted, fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            {t("profil.memberSince")} {formatDate(createdAt)}
+          </Text>
+        </View>
       ) : null}
 
-      {/* Bouton Enregistrer en bas à droite */}
+      {/* Bouton Enregistrer */}
       <View style={{ alignItems: "flex-end" }}>
         <TouchableOpacity
           onPress={onSave}
@@ -150,6 +191,7 @@ export default function ProfileForm({
             backgroundColor: saving ? colors.accent : colors.primary,
             paddingVertical: 12,
             paddingHorizontal: 24,
+            borderRadius: 12,
             flexDirection: "row",
             alignItems: "center",
           }}
@@ -159,7 +201,7 @@ export default function ProfileForm({
           ) : (
             <Ionicons name="checkmark-circle-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
           )}
-          <Text style={{ color: "#fff", fontSize: 15, fontWeight: "700" }}>
+          <Text style={{ color: "#fff", fontSize: 15, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
             {saving ? t("common.saving") : t("common.save")}
           </Text>
         </TouchableOpacity>
