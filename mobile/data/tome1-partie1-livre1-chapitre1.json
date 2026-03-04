@@ -1721,7 +1721,9 @@
       "mots_cles": [
         "provisions",
         "pertes probables",
-        "charges probables"
+        "charges probables",
+        "écritures",
+        "relevé des provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1736,7 +1738,10 @@
       ],
       "mots_cles": [
         "reprise provisions",
-        "redressements"
+        "emploi non conforme",
+        "sans objet",
+        "redressements",
+        "exercice soumis à vérification"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1750,8 +1755,14 @@
       ],
       "mots_cles": [
         "titres",
+        "portefeuille",
+        "bilan",
+        "valeur d'origine",
         "dépréciation",
-        "valeur d'origine"
+        "titres de participation",
+        "titres de placement",
+        "bourse",
+        "valeur probable de négociation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1764,7 +1775,10 @@
       ],
       "mots_cles": [
         "créances douteuses",
-        "provisions"
+        "provisions",
+        "perte probable",
+        "compromission",
+        "débiteurs"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1777,8 +1791,12 @@
       ],
       "mots_cles": [
         "COBAC",
+        "COBAC R-2018/01",
         "établissements de crédit",
-        "provisions"
+        "provisions",
+        "classification",
+        "provisionnement des créances",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1792,7 +1810,9 @@
       "mots_cles": [
         "crédit-bail",
         "LOA",
-        "créances douteuses"
+        "location avec option d'achat",
+        "créances douteuses",
+        "établissements de crédit"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1808,8 +1828,11 @@
       ],
       "mots_cles": [
         "provisions non déductibles",
+        "charges et pertes",
+        "créances douteuses",
         "congés payés",
-        "État"
+        "État",
+        "collectivités locales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1824,7 +1847,10 @@
       ],
       "mots_cles": [
         "reprise provisions",
-        "redressements"
+        "emploi non conforme",
+        "sans objet",
+        "redressements",
+        "exercice soumis à vérification"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
