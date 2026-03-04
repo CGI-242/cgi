@@ -137,55 +137,59 @@ function AudioPlayer({ lines, colors, onLineChange }: {
     [lines]
   );
 
-  const speakLine = useCallback((idx: number) => {
-    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
-      setSpeechState("idle");
-      onLineChange(undefined);
-      return;
-    }
-    const lineIndex = nonEmptyIndices[idx];
-    currentIndexRef.current = idx;
-    onLineChange(lineIndex);
-    Speech.speak(lines[lineIndex], {
-      language: "fr-FR",
-      rate: 0.9,
-      onDone: () => speakLine(idx + 1),
-      onStopped: () => {
-        // ne rien faire ici, géré par pause/stop
-      },
-      onError: () => {
+  // Utiliser useRef pour éviter les closures périmées dans onDone
+  const speakLineRef = useRef<(idx: number) => void>(() => {});
+  const onLineChangeRef = useRef(onLineChange);
+  onLineChangeRef.current = onLineChange;
+
+  useEffect(() => {
+    speakLineRef.current = (idx: number) => {
+      if (stoppedRef.current || idx >= nonEmptyIndices.length) {
         setSpeechState("idle");
-        onLineChange(undefined);
-      },
-    });
-  }, [lines, nonEmptyIndices, onLineChange]);
+        onLineChangeRef.current(undefined);
+        return;
+      }
+      const lineIndex = nonEmptyIndices[idx];
+      currentIndexRef.current = idx;
+      onLineChangeRef.current(lineIndex);
+      Speech.speak(lines[lineIndex], {
+        language: "fr-FR",
+        rate: 0.9,
+        onDone: () => speakLineRef.current(idx + 1),
+        onStopped: () => {},
+        onError: () => {
+          setSpeechState("idle");
+          onLineChangeRef.current(undefined);
+        },
+      });
+    };
+  }, [lines, nonEmptyIndices]);
 
   const play = useCallback(() => {
     stoppedRef.current = false;
     setSpeechState("playing");
-    speakLine(0);
-  }, [speakLine]);
+    speakLineRef.current(0);
+  }, []);
 
   const pause = useCallback(() => {
     stoppedRef.current = true;
     Speech.stop();
     setSpeechState("paused");
-    // currentIndexRef garde la position
   }, []);
 
   const resume = useCallback(() => {
     stoppedRef.current = false;
     setSpeechState("playing");
-    speakLine(currentIndexRef.current);
-  }, [speakLine]);
+    speakLineRef.current(currentIndexRef.current);
+  }, []);
 
   const stop = useCallback(() => {
     stoppedRef.current = true;
     Speech.stop();
     setSpeechState("idle");
     currentIndexRef.current = 0;
-    onLineChange(undefined);
-  }, [onLineChange]);
+    onLineChangeRef.current(undefined);
+  }, []);
 
   useEffect(() => {
     return () => {

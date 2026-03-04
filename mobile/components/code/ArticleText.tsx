@@ -43,11 +43,12 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
   const isHighlighted = (i: number) => highlightIndex !== undefined && i === highlightIndex;
 
   const highlightStyle = {
-    backgroundColor: "rgba(200,160,60,0.15)",
-    borderLeftWidth: 3,
+    backgroundColor: "rgba(212,160,23,0.25)",
+    borderLeftWidth: 4,
     borderLeftColor: "#D4A017",
-    paddingLeft: 4,
-    borderRadius: 4,
+    paddingLeft: 6,
+    paddingVertical: 2,
+    borderRadius: 6,
   };
 
   const wrapLine = (i: number, content: React.ReactNode) => (

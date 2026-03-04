@@ -29,32 +29,37 @@ function useSpeech(article: ArticleData) {
     [article.texte]
   );
 
-  const speakLine = useCallback((idx: number) => {
-    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
-      setSpeechState("idle");
-      setCurrentLineIndex(undefined);
-      return;
-    }
-    const lineIndex = nonEmptyIndices[idx];
-    currentNonEmptyIdx.current = idx;
-    setCurrentLineIndex(lineIndex);
-    Speech.speak(article.texte[lineIndex], {
-      language: "fr-FR",
-      rate: 0.9,
-      onDone: () => speakLine(idx + 1),
-      onStopped: () => {/* géré par pause/stop */},
-      onError: () => {
+  // Utiliser useRef pour éviter les closures périmées dans onDone
+  const speakLineRef = useRef<(idx: number) => void>(() => {});
+
+  useEffect(() => {
+    speakLineRef.current = (idx: number) => {
+      if (stoppedRef.current || idx >= nonEmptyIndices.length) {
         setSpeechState("idle");
         setCurrentLineIndex(undefined);
-      },
-    });
+        return;
+      }
+      const lineIndex = nonEmptyIndices[idx];
+      currentNonEmptyIdx.current = idx;
+      setCurrentLineIndex(lineIndex);
+      Speech.speak(article.texte[lineIndex], {
+        language: "fr-FR",
+        rate: 0.9,
+        onDone: () => speakLineRef.current(idx + 1),
+        onStopped: () => {},
+        onError: () => {
+          setSpeechState("idle");
+          setCurrentLineIndex(undefined);
+        },
+      });
+    };
   }, [article.texte, nonEmptyIndices]);
 
   const play = useCallback(() => {
     stoppedRef.current = false;
     setSpeechState("playing");
-    speakLine(0);
-  }, [speakLine]);
+    speakLineRef.current(0);
+  }, []);
 
   const pause = useCallback(() => {
     stoppedRef.current = true;
@@ -65,8 +70,8 @@ function useSpeech(article: ArticleData) {
   const resume = useCallback(() => {
     stoppedRef.current = false;
     setSpeechState("playing");
-    speakLine(currentNonEmptyIdx.current);
-  }, [speakLine]);
+    speakLineRef.current(currentNonEmptyIdx.current);
+  }, []);
 
   const stop = useCallback(() => {
     stoppedRef.current = true;
