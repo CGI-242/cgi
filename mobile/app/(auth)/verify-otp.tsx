@@ -37,11 +37,9 @@ export default function VerifyOtp() {
   const user = useAuthStore((s) => s.user);
   const rememberMe = useAuthStore((s) => s.rememberMe);
 
-  useEffect(() => {
-    authApi.sendOtpEmail(email).then((data) => {
-      if (data.devCode) setDevCode(data.devCode);
-    }).catch((err) => log.warn("Erreur envoi OTP initial", err));
-  }, [email]);
+  // L'OTP est déjà envoyé par /auth/login ou /auth/register.
+  // Ne pas rappeler sendOtpEmail ici pour éviter un double envoi
+  // qui écraserait le code en base et invaliderait le premier.
 
   // Nettoyage des timers au démontage (M6)
   useEffect(() => {
