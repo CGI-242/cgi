@@ -33,6 +33,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "sidebar.dashboard", icon: "home-outline", route: "/(app)" },
   { label: "sidebar.code", icon: "book-outline", route: "/(app)/code" },
   { label: "sidebar.simulators", icon: "calculator-outline", route: "/(app)/simulateur" },
+  { label: "sidebar.calendrier", icon: "calendar-outline", route: "/(app)/calendrier" },
   { label: "sidebar.chat", icon: "chatbubbles-outline", route: "/(app)/chat" },
 ];
 

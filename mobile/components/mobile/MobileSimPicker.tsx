@@ -12,6 +12,7 @@ const SIMULATEURS: {
   icon: keyof typeof Ionicons.glyphMap;
   route: string;
 }[] = [
+  { id: "paie", titleKey: "simulateur.paie.title", subtitleKey: "simulateur.paie.subtitle", icon: "wallet-outline", route: "/(app)/simulateur/paie" },
   { id: "its", titleKey: "simulateur.its.title", subtitleKey: "simulateur.its.subtitle", icon: "people-outline", route: "/(app)/simulateur/its" },
   { id: "is", titleKey: "simulateur.is.title", subtitleKey: "simulateur.is.subtitle", icon: "business-outline", route: "/(app)/simulateur/is" },
   { id: "patente", titleKey: "simulateur.patente.title", subtitleKey: "simulateur.patente.subtitle", icon: "storefront-outline", route: "/(app)/simulateur/patente" },
@@ -24,6 +25,7 @@ const SIMULATEURS: {
   { id: "enreg", titleKey: "simulateur.enreg.title", subtitleKey: "simulateur.enreg.subtitle", icon: "document-text-outline", route: "/(app)/simulateur/enregistrement" },
   { id: "cession", titleKey: "simulateur.cessionParts.title", subtitleKey: "simulateur.cessionParts.subtitle", icon: "swap-horizontal-outline", route: "/(app)/simulateur/cession-parts" },
   { id: "foncier", titleKey: "simulateur.foncier.title", subtitleKey: "simulateur.foncier.subtitle", icon: "map-outline", route: "/(app)/simulateur/contribution-fonciere" },
+  { id: "rts", titleKey: "simulateur.rts.title", subtitleKey: "simulateur.rts.subtitle", icon: "cut-outline", route: "/(app)/simulateur/retenue-source" },
 ];
 
 export default function MobileSimPicker() {

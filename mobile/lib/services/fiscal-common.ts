@@ -73,6 +73,28 @@ export const FISCAL_PARAMS = {
   },
 };
 
+// Paramètres spécifiques au simulateur de Paie — CGI Congo 2026
+export const PAIE_PARAMS = {
+  tus: { tauxResident: 0.075, tauxNonResident: 0.06 },
+  tol: { centreVille: 5_000, peripherie: 1_000 },
+  camu: { taux: 0.005, seuilMensuel: 500_000 },
+  taxeRegionale: 2_400,
+  nonResident: { tauxForfaitaire: 0.20 },
+  cnssPatronale: {
+    vieillesse: { taux: 0.08, plafondMensuel: 1_200_000 },
+    allocationsFamiliales: { taux: 0.1003, plafondMensuel: 600_000 },
+    prestationsFamiliales: { taux: 0.0225, plafondMensuel: 600_000 },
+  },
+  avantagesNatureForfait: {
+    logement: 0.20,      // base = plafond CNSS (1 200 000)
+    domesticite: 0.07,   // base = salaire brut de présence
+    electricite: 0.05,   // base = salaire brut de présence
+    telephone: 0.02,     // base = salaire brut de présence
+    voiture: 0.03,       // base = salaire brut de présence
+    nourriture: 0.20,    // base = salaire brut de présence
+  },
+};
+
 export function calculateCNSS(revenuBrutMensuel: number): CnssResult {
   const { taux, plafondMensuel } = FISCAL_PARAMS.cnss;
   const baseMensuelle = Math.min(revenuBrutMensuel, plafondMensuel);

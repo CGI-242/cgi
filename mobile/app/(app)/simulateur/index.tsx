@@ -19,6 +19,14 @@ export default function SimulateurHub() {
 
   const simulateurs = [
     {
+      id: "paie",
+      title: "Paie",
+      subtitle: t("simulateur.paie.subtitle"),
+      description: t("simulateur.paie.legalRef"),
+      icon: "wallet-outline" as const,
+      route: "/(app)/simulateur/paie",
+    },
+    {
       id: "its",
       title: "ITS",
       subtitle: t("simulateur.its.subtitle"),
@@ -113,6 +121,14 @@ export default function SimulateurHub() {
       description: t("simulateur.foncier.legalRef"),
       icon: "map-outline" as const,
       route: "/(app)/simulateur/contribution-fonciere",
+    },
+    {
+      id: "retenue-source",
+      title: "Retenue Source",
+      subtitle: t("simulateur.rts.subtitle"),
+      description: t("simulateur.rts.legalRef"),
+      icon: "cut-outline" as const,
+      route: "/(app)/simulateur/retenue-source",
     },
   ];
 

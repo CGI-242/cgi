@@ -39,6 +39,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/enregistrement": "simulateur.enreg.title",
   "/simulateur/cession-parts": "simulateur.cessionParts.title",
   "/simulateur/contribution-fonciere": "simulateur.foncier.title",
+  "/calendrier": "calendrier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
   "/analytics": "settings.managementAnalytics",
@@ -115,6 +116,7 @@ export default function AppLayout() {
 
   // ── Mapping route → onglet actif pour MobileTabBar ──
   const getActiveTab = (): TabKey => {
+    if (pathname.startsWith("/calendrier")) return "cal";
     if (pathname.startsWith("/code")) return "cgi";
     if (pathname.startsWith("/simulateur")) return "sim";
     if (pathname.startsWith("/chat")) return "chat";
@@ -127,6 +129,7 @@ export default function AppLayout() {
       home: "/(app)",
       cgi: "/(app)/code",
       sim: "/(app)/simulateur",
+      cal: "/(app)/calendrier",
       chat: "/(app)/chat",
       profile: "/(app)/profil",
     };
@@ -175,6 +178,7 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/enregistrement" />
       <Stack.Screen name="simulateur/cession-parts" />
       <Stack.Screen name="simulateur/contribution-fonciere" />
+      <Stack.Screen name="calendrier/index" />
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />
       <Stack.Screen name="admin/index" />
