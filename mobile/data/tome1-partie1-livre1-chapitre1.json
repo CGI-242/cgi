@@ -2149,7 +2149,7 @@
         "(L.F.2026) Les contribuables peuvent demander à l'administration la conclusion des accords préalables sur les méthodes de détermination des prix de transfert. Ces accords peuvent être bilatéraux ou unilatéraux.",
         "Les accords bilatéraux sont conclus entre autorités compétentes des États respectifs en application des conventions fiscales destinées à éliminer la double imposition.",
         "L'accord unilatéral revêt la forme d'un accord conclu entre la seule administration congolaise et l'entreprise. Cet accord ne porte que sur un type de transaction, une branche d'activités, une fonction voire un seul produit. Les accords préalables de prix sont conclus pour une durée maximale de trois ans (3) renouvelable sous certaines conditions.",
-        "La conclusion des accords préalables de prix est subordonnée au paiement d'une somme fixée par l'administration fiscale, dont le montant est égal à 10 millions de francs CFA."
+        "La conclusion des accords préalables de prix est subordonnée au paiement d'une somme fixée par l'administration fiscale, dont le montant est égal à 10.000.000 de francs CFA."
       ],
       "mots_cles": [
         "accords préalables",
@@ -2174,17 +2174,22 @@
         "2. la méthode du prix de revient majoré (PRM) ;",
         "3. la méthode du prix de revente (PRM) ;",
         "4. la méthode transactionnelle de la marge nette (MTMN) ;",
-        "5. la méthode du partage des bénéfices.",
-        "Dans tous les cas, toute méthode retenue par l'entreprise peut être considérée comme recevable à condition qu'elle soit justifiée, cohérente avec les fonctions exercées et les risques assumés, et que la rémunération soit conforme au principe de pleine concurrence."
+        "5. la méthode du partage des bénéfices. Dans tous les cas, toute méthode retenue par l'entreprise peut être considérée comme recevable à condition qu'elle soit justifiée, cohérente avec les fonctions exercées et les risques assumés, et que la rémunération soit conforme au principe de pleine concurrence."
       ],
       "mots_cles": [
         "prix de pleine concurrence",
-        "méthode CUP",
+        "transactions contrôlées",
+        "PCML",
+        "prix comparable marché libre",
+        "PRM",
+        "prix de revient majoré",
         "prix de revente",
-        "coût majoré",
         "MTMN",
+        "marge nette transactionnelle",
         "partage des bénéfices",
-        "5 méthodes"
+        "5 méthodes",
+        "analyse fonctionnelle",
+        "risques assumés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
