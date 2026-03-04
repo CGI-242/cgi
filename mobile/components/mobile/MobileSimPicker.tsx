@@ -33,61 +33,62 @@ export default function MobileSimPicker() {
   const { t } = useTranslation();
 
   return (
-    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 18, paddingBottom: 30 }}>
-      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 20 }}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 14, paddingBottom: 30 }}>
+      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 16, paddingHorizontal: 4 }}>
         {t("simulateur.subtitle")}
       </Text>
 
-      {SIMULATEURS.map((sim) => (
-        <TouchableOpacity
-          key={sim.id}
-          onPress={() => router.push(sim.route as Href)}
-          style={{
-            backgroundColor: colors.card,
-            borderWidth: 1,
-            borderColor: colors.border,
-            borderRadius: 14,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 14,
-            padding: 18,
-            marginBottom: 10,
-          }}
-        >
-          <View
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+        {SIMULATEURS.map((sim) => (
+          <TouchableOpacity
+            key={sim.id}
+            onPress={() => router.push(sim.route as Href)}
             style={{
-              width: 44,
-              height: 44,
-              borderRadius: 12,
-              backgroundColor: `${colors.primary}15`,
-              alignItems: "center",
-              justifyContent: "center",
+              backgroundColor: colors.card,
+              borderWidth: 1,
+              borderColor: colors.border,
+              borderRadius: 14,
+              padding: 14,
+              width: "48.5%" as unknown as number,
+              minWidth: 150,
+              flexGrow: 1,
             }}
           >
-            <Ionicons name={sim.icon} size={22} color={colors.primary} />
-          </View>
-          <View style={{ flex: 1 }}>
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, marginBottom: 2 }}>
+            <View
+              style={{
+                width: 42,
+                height: 42,
+                borderRadius: 12,
+                backgroundColor: `${colors.primary}15`,
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: 10,
+              }}
+            >
+              <Ionicons name={sim.icon} size={20} color={colors.primary} />
+            </View>
+            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text, marginBottom: 3 }} numberOfLines={2}>
               {t(sim.titleKey)}
             </Text>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted }} numberOfLines={1}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, marginBottom: 10 }} numberOfLines={2}>
               {t(sim.subtitleKey)}
             </Text>
-          </View>
-          <View
-            style={{
-              backgroundColor: `${colors.primary}15`,
-              paddingHorizontal: 14,
-              paddingVertical: 6,
-              borderRadius: 8,
-            }}
-          >
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: colors.primary }}>
-              {t("simulateur.calculate")}
-            </Text>
-          </View>
-        </TouchableOpacity>
-      ))}
+            <View
+              style={{
+                backgroundColor: `${colors.primary}15`,
+                paddingHorizontal: 12,
+                paddingVertical: 6,
+                borderRadius: 8,
+                alignSelf: "flex-start",
+              }}
+            >
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 11, color: colors.primary }}>
+                {t("simulateur.calculate")}
+              </Text>
+            </View>
+          </TouchableOpacity>
+        ))}
+      </View>
     </ScrollView>
   );
 }

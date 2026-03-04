@@ -11,6 +11,7 @@ import SessionExpiredModal from "@/components/SessionExpiredModal";
 import PaywallScreen from "@/components/paywall/PaywallScreen";
 import MobileHeader from "@/components/mobile/MobileHeader";
 import MobileTabBar, { type TabKey } from "@/components/mobile/MobileTabBar";
+import SearchOverlay from "@/components/mobile/SearchOverlay";
 import { api } from "@/lib/api/client";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
@@ -22,6 +23,7 @@ function getInitials(prenom?: string, nom?: string) {
 }
 
 const PAGE_TITLES: Record<string, string> = {
+  "/plus": "plus.title",
   "/profil": "profil.title",
   "/parametres": "settings.title",
   "/chat": "chat.title",
@@ -52,15 +54,17 @@ const PAGE_TITLES: Record<string, string> = {
 };
 
 const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
-  "/securite": { path: "/parametres", titleKey: "settings.title" },
-  "/abonnement": { path: "/parametres", titleKey: "settings.title" },
-  "/organisation": { path: "/parametres", titleKey: "settings.title" },
-  "/analytics": { path: "/parametres", titleKey: "settings.title" },
-  "/audit": { path: "/parametres", titleKey: "settings.title" },
-  "/permissions": { path: "/parametres", titleKey: "settings.title" },
-  "/admin": { path: "/parametres", titleKey: "settings.title" },
-  "/legal/cgu": { path: "/parametres", titleKey: "settings.title" },
-  "/legal/confidentialite": { path: "/parametres", titleKey: "settings.title" },
+  "/profil": { path: "/plus", titleKey: "plus.title" },
+  "/parametres": { path: "/plus", titleKey: "plus.title" },
+  "/securite": { path: "/plus", titleKey: "plus.title" },
+  "/abonnement": { path: "/plus", titleKey: "plus.title" },
+  "/organisation": { path: "/plus", titleKey: "plus.title" },
+  "/analytics": { path: "/plus", titleKey: "plus.title" },
+  "/audit": { path: "/plus", titleKey: "plus.title" },
+  "/permissions": { path: "/plus", titleKey: "plus.title" },
+  "/admin": { path: "/plus", titleKey: "plus.title" },
+  "/legal/cgu": { path: "/plus", titleKey: "plus.title" },
+  "/legal/confidentialite": { path: "/plus", titleKey: "plus.title" },
   "/simulateur/its": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/is": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/patente": { path: "/simulateur", titleKey: "simulateur.title" },
@@ -87,6 +91,7 @@ export default function AppLayout() {
   const pathname = usePathname();
   const { isMobile } = useResponsive();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [searchVisible, setSearchVisible] = useState(false);
   const [subStatus, setSubStatus] = useState<string | null>(null);
   const [subLoading, setSubLoading] = useState(true);
 
@@ -116,11 +121,11 @@ export default function AppLayout() {
 
   // ── Mapping route → onglet actif pour MobileTabBar ──
   const getActiveTab = (): TabKey => {
-    if (pathname.startsWith("/calendrier")) return "cal";
     if (pathname.startsWith("/code")) return "cgi";
     if (pathname.startsWith("/simulateur")) return "sim";
+    if (pathname.startsWith("/calendrier")) return "cal";
     if (pathname.startsWith("/chat")) return "chat";
-    if (pathname.startsWith("/profil") || pathname.startsWith("/parametres") || pathname.startsWith("/securite") || pathname.startsWith("/abonnement")) return "profile";
+    if (pathname.startsWith("/plus") || pathname.startsWith("/profil") || pathname.startsWith("/parametres") || pathname.startsWith("/securite") || pathname.startsWith("/abonnement")) return "plus";
     return "home";
   };
 
@@ -131,7 +136,7 @@ export default function AppLayout() {
       sim: "/(app)/simulateur",
       cal: "/(app)/calendrier",
       chat: "/(app)/chat",
-      profile: "/(app)/profil",
+      plus: "/(app)/plus",
     };
     router.push(routes[tab] as Href);
   }, []);
@@ -144,7 +149,7 @@ export default function AppLayout() {
   };
 
   // Bouton retour : visible si on n'est pas sur un écran principal
-  const mobileShowBack = !isHome && !(["/code", "/simulateur", "/chat", "/profil"].includes(pathname));
+  const mobileShowBack = !isHome && !(["/code", "/simulateur", "/calendrier", "/chat", "/plus"].includes(pathname));
 
   const handleMobileBack = useCallback(() => {
     if (router.canGoBack()) {
@@ -182,6 +187,7 @@ export default function AppLayout() {
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />
       <Stack.Screen name="admin/index" />
+      <Stack.Screen name="plus/index" />
       <Stack.Screen name="profil/index" />
       <Stack.Screen name="parametres/index" />
       <Stack.Screen name="organisation/index" />
@@ -204,21 +210,16 @@ export default function AppLayout() {
           title={getMobileTitle()}
           showBack={mobileShowBack}
           onBack={handleMobileBack}
+          onSearch={() => setSearchVisible(true)}
           rightElement={
             <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
               <TouchableOpacity onPress={toggleTheme} hitSlop={8}>
                 <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color={colors.textSecondary} />
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => router.push("/(app)/profil" as Href)} hitSlop={8}>
-                <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
-                  <Text style={{ color: colors.userBubbleText, fontWeight: "800", fontSize: 10 }}>
-                    {getInitials(user?.prenom, user?.nom)}
-                  </Text>
-                </View>
-              </TouchableOpacity>
             </View>
           }
         />
+        <SearchOverlay visible={searchVisible} onClose={() => setSearchVisible(false)} />
 
         {/* Bannière offline */}
         {!isOnline && (

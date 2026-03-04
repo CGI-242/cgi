@@ -29,7 +29,7 @@ function isDescendant(parent: SommaireNode, childId: string): boolean {
 export default function CodeCGI() {
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const { isMobile } = useResponsive();
+  const { isMobile, isTablet } = useResponsive();
   const sommaire = useMemo(() => getSommaire(), []);
 
   // Tous les hooks doivent être avant le return conditionnel
@@ -54,9 +54,9 @@ export default function CodeCGI() {
     return <MobileCGIBrowser sommaire={sommaire} />;
   }
 
-  // Desktop : split sommaire/contenu
-  const sommaireWidth = "30%";
-  const contentWidth = "70%";
+  // Desktop/Tablet : split sommaire/contenu (plus large sur desktop)
+  const sommaireWidth = isTablet ? "35%" : "28%";
+  const contentWidth = isTablet ? "65%" : "72%";
 
   const toggleExpand = (id: string) => {
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -112,10 +112,10 @@ export default function CodeCGI() {
       {/* Barre de recherche */}
       <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
         <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
-        <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, paddingHorizontal: 12, paddingVertical: 6 }}>
+        <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 6 }}>
           <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
-            style={{ flex: 1, marginLeft: 8, fontSize: 14, color: colors.text }}
+            style={{ flex: 1, marginLeft: 8, fontSize: 14, color: colors.text, fontFamily: fonts.regular }}
             placeholder={t("code.searchPlaceholder")}
             placeholderTextColor={colors.textMuted}
             value={search}
@@ -138,10 +138,10 @@ export default function CodeCGI() {
         >
           <View style={{ paddingVertical: 8 }}>
             <View style={{ paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4 }}>
-              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
+              <Text style={{ fontSize: 11, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
                 {t("code.edition")}
               </Text>
-              <Text style={{ fontSize: 11, color: colors.textMuted }}>{t("code.fullTitle")}</Text>
+              <Text style={{ fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("code.fullTitle")}</Text>
             </View>
             <View style={[styles.separator, { backgroundColor: colors.border }]} />
             {sommaire.map((tome) => (

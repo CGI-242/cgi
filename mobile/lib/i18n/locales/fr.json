@@ -879,6 +879,13 @@
     "upgradeToPro": "Passer au plan PRO ?",
     "renewSubscription": "Renouveler votre abonnement ?"
   },
+  "plus": {
+    "title": "Plus",
+    "profileDesc": "Modifier vos informations",
+    "settingsDesc": "Thème, langue, apparence",
+    "securityDesc": "2FA et codes de secours",
+    "subscriptionDesc": "Gérer votre abonnement"
+  },
   "articleDetail": {
     "backToArticles": "Retour aux articles",
     "listen": "Écouter",

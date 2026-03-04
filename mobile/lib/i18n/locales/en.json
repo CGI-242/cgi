@@ -879,6 +879,13 @@
     "upgradeToPro": "Upgrade to PRO plan?",
     "renewSubscription": "Renew your subscription?"
   },
+  "plus": {
+    "title": "More",
+    "profileDesc": "Edit your information",
+    "settingsDesc": "Theme, language, appearance",
+    "securityDesc": "2FA and backup codes",
+    "subscriptionDesc": "Manage your subscription"
+  },
   "articleDetail": {
     "backToArticles": "Back to articles",
     "listen": "Listen",

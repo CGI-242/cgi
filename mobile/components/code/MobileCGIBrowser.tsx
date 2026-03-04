@@ -1,6 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
+import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
@@ -8,6 +9,7 @@ import { useDebounce } from "@/lib/hooks/useDebounce";
 import ChapterReader from "./ChapterReader";
 import ArticleText from "./ArticleText";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { useFavoritesStore } from "@/lib/store/favorites";
 
 const NODE_ICONS: { icon: keyof typeof Ionicons.glyphMap; color: string }[] = [
   { icon: "book-outline", color: "#00815d" },
@@ -116,20 +118,131 @@ function NodeListView({ nodes, onSelect, title }: {
   );
 }
 
+// ── Lecteur audio pour article ──
+function AudioPlayer({ text, colors }: { text: string; colors: any }) {
+  const { t } = useTranslation();
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const progressInterval = useRef<ReturnType<typeof setInterval> | null>(null);
+  const startTime = useRef(0);
+  // Estimation : ~150 mots/min en français
+  const estimatedDuration = Math.max((text.split(/\s+/).length / 150) * 60, 5);
+
+  const startSpeech = async () => {
+    setIsSpeaking(true);
+    setProgress(0);
+    startTime.current = Date.now();
+    progressInterval.current = setInterval(() => {
+      const elapsed = (Date.now() - startTime.current) / 1000;
+      const pct = Math.min(elapsed / estimatedDuration, 0.98);
+      setProgress(pct);
+    }, 500);
+
+    Speech.speak(text, {
+      language: "fr-FR",
+      rate: 0.9,
+      onDone: () => {
+        setIsSpeaking(false);
+        setProgress(1);
+        if (progressInterval.current) clearInterval(progressInterval.current);
+        setTimeout(() => setProgress(0), 1500);
+      },
+      onStopped: () => {
+        setIsSpeaking(false);
+        setProgress(0);
+        if (progressInterval.current) clearInterval(progressInterval.current);
+      },
+    });
+  };
+
+  const stopSpeech = async () => {
+    await Speech.stop();
+    setIsSpeaking(false);
+    setProgress(0);
+    if (progressInterval.current) clearInterval(progressInterval.current);
+  };
+
+  useEffect(() => {
+    return () => {
+      Speech.stop();
+      if (progressInterval.current) clearInterval(progressInterval.current);
+    };
+  }, []);
+
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        backgroundColor: `${colors.primary}12`,
+        borderRadius: 12,
+        padding: 10,
+        marginBottom: 14,
+        gap: 10,
+      }}
+    >
+      <TouchableOpacity
+        onPress={isSpeaking ? stopSpeech : startSpeech}
+        style={{
+          width: 36,
+          height: 36,
+          borderRadius: 18,
+          backgroundColor: colors.primary,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Ionicons name={isSpeaking ? "stop" : "play"} size={16} color="#fff" />
+      </TouchableOpacity>
+
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
+          {isSpeaking ? t("articleDetail.stop") : t("articleDetail.listen")}
+        </Text>
+        <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>
+          <View
+            style={{
+              height: 4,
+              backgroundColor: colors.primary,
+              borderRadius: 2,
+              width: `${Math.round(progress * 100)}%` as unknown as number,
+            }}
+          />
+        </View>
+      </View>
+    </View>
+  );
+}
+
 // ── Vue article détaillé ──
 function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: () => void }) {
   const { colors } = useTheme();
+  const isFavorite = useFavoritesStore((s) => s.isFavorite(article.article));
+  const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
+
+  const fullText = [article.article, article.titre, ...article.texte].filter(Boolean).join(". ");
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
-      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, color: colors.primary, marginBottom: 4 }}>
-        {article.article}
-      </Text>
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+        <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, color: colors.primary, flex: 1 }}>
+          {article.article}
+        </Text>
+        <TouchableOpacity onPress={() => toggleFavorite(article.article)} hitSlop={8} style={{ padding: 4 }}>
+          <Ionicons
+            name={isFavorite ? "heart" : "heart-outline"}
+            size={22}
+            color={isFavorite ? "#ef4444" : colors.textMuted}
+          />
+        </TouchableOpacity>
+      </View>
       {article.titre ? (
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, marginBottom: 14 }}>
           {article.titre}
         </Text>
       ) : null}
+
+      <AudioPlayer text={fullText} colors={colors} />
 
       <ArticleText texte={article.texte} />
 

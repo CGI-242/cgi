@@ -14,6 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 import type { Conversation } from "@/lib/api/chat";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { TFunction } from "i18next";
 
 interface DateGroup {
@@ -118,7 +119,7 @@ export default function HistoryPanel({
           borderBottomColor: colors.border,
         }}
       >
-        <Text style={{ color: colors.sidebarText, fontSize: 16, fontWeight: "700" }}>
+        <Text style={{ color: colors.sidebarText, fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
           {t("chat.history")}
         </Text>
         <TouchableOpacity onPress={onClose} accessibilityLabel={t("chat.closeHistory")}>
@@ -137,13 +138,13 @@ export default function HistoryPanel({
           marginTop: 12,
           marginBottom: 8,
           backgroundColor: colors.primary,
-          
+          borderRadius: 12,
           paddingVertical: 10,
           paddingHorizontal: 14,
         }}
       >
-        <Ionicons name="add" size={18} color={colors.sidebarText} />
-        <Text style={{ color: colors.sidebarText, fontSize: 14, fontWeight: "600" }}>
+        <Ionicons name="add" size={18} color="#fff" />
+        <Text style={{ color: "#fff", fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
           {t("chat.newConversation")}
         </Text>
       </TouchableOpacity>
@@ -154,7 +155,7 @@ export default function HistoryPanel({
           marginHorizontal: 12,
           marginBottom: 8,
           backgroundColor: colors.input,
-          
+          borderRadius: 10,
           flexDirection: "row",
           alignItems: "center",
           paddingHorizontal: 10,
@@ -166,6 +167,7 @@ export default function HistoryPanel({
             flex: 1,
             color: colors.sidebarText,
             fontSize: 13,
+            fontFamily: fonts.regular,
             paddingVertical: 8,
             marginLeft: 8,
           }}
@@ -207,7 +209,8 @@ export default function HistoryPanel({
                 style={{
                   color: colors.textMuted,
                   fontSize: 11,
-                  fontWeight: "600",
+                  fontFamily: fonts.bold,
+                  fontWeight: fontWeights.bold,
                   textTransform: "uppercase",
                   paddingHorizontal: 16,
                   paddingTop: 16,
@@ -216,42 +219,62 @@ export default function HistoryPanel({
               >
                 {group.label}
               </Text>
-              {group.items.map((conv) => (
-                <TouchableOpacity
-                  key={conv.id}
-                  onPress={() => onLoadConversation(conv.id)}
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    paddingHorizontal: 16,
-                    paddingVertical: 10,
-                    backgroundColor:
-                      conv.id === activeConversationId ? colors.input : "transparent",
-                  }}
-                >
-                  <View style={{ flex: 1, marginRight: 8 }}>
-                    <Text
-                      numberOfLines={1}
+              {group.items.map((conv) => {
+                const isActive = conv.id === activeConversationId;
+                return (
+                  <TouchableOpacity
+                    key={conv.id}
+                    onPress={() => onLoadConversation(conv.id)}
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingHorizontal: 12,
+                      paddingVertical: 10,
+                      marginHorizontal: 8,
+                      marginBottom: 2,
+                      borderRadius: 10,
+                      backgroundColor: isActive ? `${colors.primary}18` : "transparent",
+                    }}
+                  >
+                    <View
                       style={{
-                        color: conv.id === activeConversationId ? colors.accent : colors.sidebarText,
-                        fontSize: 13,
+                        width: 32,
+                        height: 32,
+                        borderRadius: 8,
+                        backgroundColor: isActive ? `${colors.primary}25` : `${colors.textMuted}15`,
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: 10,
                       }}
                     >
-                      {conv.title || t("chat.untitled")}
-                    </Text>
-                    <Text style={{ color: colors.textMuted, fontSize: 11, marginTop: 2 }}>
-                      {conv._count?.messages ?? 0} {(conv._count?.messages ?? 0) > 1 ? t("chat.messages") : t("chat.message")} · {formatRelativeDate(conv.updatedAt, t)}
-                    </Text>
-                  </View>
-                  <TouchableOpacity
-                    onPress={() => onDeleteConversation(conv.id, conv.title)}
-                    hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                    accessibilityLabel={t("chat.deleteConversation")}
-                  >
-                    <Ionicons name="trash-outline" size={16} color={colors.textMuted} />
+                      <Ionicons name="chatbubble-outline" size={14} color={isActive ? colors.primary : colors.textMuted} />
+                    </View>
+                    <View style={{ flex: 1, marginRight: 8 }}>
+                      <Text
+                        numberOfLines={1}
+                        style={{
+                          color: isActive ? colors.accent : colors.sidebarText,
+                          fontSize: 13,
+                          fontFamily: isActive ? fonts.semiBold : fonts.regular,
+                          fontWeight: isActive ? fontWeights.semiBold : fontWeights.regular,
+                        }}
+                      >
+                        {conv.title || t("chat.untitled")}
+                      </Text>
+                      <Text style={{ color: colors.textMuted, fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 2 }}>
+                        {conv._count?.messages ?? 0} {(conv._count?.messages ?? 0) > 1 ? t("chat.messages") : t("chat.message")} · {formatRelativeDate(conv.updatedAt, t)}
+                      </Text>
+                    </View>
+                    <TouchableOpacity
+                      onPress={() => onDeleteConversation(conv.id, conv.title)}
+                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                      accessibilityLabel={t("chat.deleteConversation")}
+                    >
+                      <Ionicons name="trash-outline" size={14} color={colors.textMuted} />
+                    </TouchableOpacity>
                   </TouchableOpacity>
-                </TouchableOpacity>
-              ))}
+                );
+              })}
             </View>
           )}
         />
