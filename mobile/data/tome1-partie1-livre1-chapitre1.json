@@ -804,16 +804,19 @@
       "article": "Art. 27",
       "titre": "Rétributions aux associés dirigeants",
       "texte": [
-        "(L.F.2026) Les rétributions de toute natures versés aux associés dirigeants des sociétés de capitaux ou à leurs conjoints sont admises en déduction à condition qu'elles correspondent à un emploi effectif exercé dans l'entreprise et qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
+        "(L.F.2026) Les rétributions de toute nature versées aux associés dirigeants des sociétés de capitaux ou à leurs conjoints sont admises en déduction à condition qu'elles correspondent à un emploi effectif exercé dans l'entreprise et qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
         "En cas d'exagération ou de rémunérations fictives, la fraction excédentaire ou l'ensemble des rémunérations fictives, selon le cas, est rapportée au résultat et considérée comme bénéfice distribué.",
         "Ces dispositions s'appliquent également aux rétributions versées aux associés des sociétés constituées en vue de l'exercice d'une activité libérale et dont plus de la moitié du capital est détenue par les professionnels."
       ],
       "mots_cles": [
         "associés dirigeants",
         "rétributions",
+        "sociétés de capitaux",
+        "conjoints",
         "emploi effectif",
         "rémunérations fictives",
-        "bénéfice distribué"
+        "bénéfice distribué",
+        "activité libérale"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -873,8 +876,8 @@
       "titre": "Indemnités et rémunérations des administrateurs",
       "texte": [
         "(L.F.2026) Sont également déductibles :",
-        "1) les sommes fixes versées sur décision de l'assemblée générale à titre d'indemnité de fonction en rémunération des activités des administrateurs ;",
-        "2) les rémunérations exceptionnelles allouées aux membres des conseils d'administration, conformément aux dispositions de l'article 432 de l'acte uniforme de I'OHADA sur le droit des sociétés commerciales et du groupement d'intérêt économique."
+        "1° les sommes fixes versées sur décision de l'assemblée générale à titre d'indemnité de fonction en rémunération des activités des administrateurs ;",
+        "2° les rémunérations exceptionnelles allouées aux membres des conseils d'administration, conformément aux dispositions de l'article 432 de l'acte uniforme de I'OHADA sur le droit des sociétés commerciales et du groupement d'intérêt économique."
       ],
       "mots_cles": [
         "administrateurs",
@@ -890,12 +893,14 @@
       "article": "Art. 32",
       "titre": "Avantages non déductibles des administrateurs",
       "texte": [
-        "(L.F.2026) Hormis les sommes perçues dans le cadre d'un travail effectif et les versements visés à l'article 32 ci-dessus, les autres rémunérations et tous avantages qui profitent aux administrateurs au titre de leurs fonctions, ne sont pas admis en déduction des résultats imposables."
+        "(L.F.2026) Hormis les sommes perçues dans le cadre d'un travail effectif et les versements visés à l'article 31 ci-dessus, les autres rémunérations et tous avantages qui profitent aux administrateurs au titre de leurs fonctions, ne sont pas admis en déduction des résultats imposables."
       ],
       "mots_cles": [
         "administrateurs",
         "avantages",
-        "non déductibles"
+        "non déductibles",
+        "travail effectif",
+        "résultats imposables"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -935,15 +940,18 @@
       "article": "Art. 35",
       "titre": "Rétributions aux associés dirigeants",
       "texte": [
-        "(L.F.2026) Les rétributions de toute nature versée aux associés dirigeants des sociétés soumises à l'impôt sur les sociétés ou à leurs conjoints et enfants pour un emploi effectif exercé dans l'entreprise, sont déductibles à condition qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
+        "(L.F.2026) Les rétributions de toute nature versées aux associés dirigeants des sociétés soumises à l'impôt sur les sociétés ou à leurs conjoints et enfants pour un emploi effectif exercé dans l'entreprise, sont déductibles à condition qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
         "En cas d'exagération ou de rémunérations fictives, la fraction excédentaire ou l'ensemble des rémunérations fictives, selon le cas, est rapportée au résultat et considérée comme bénéfice distribué.",
         "Ces dispositions s'appliquent également aux rétributions versées aux associés des sociétés constituées en vue de l'exercice d'une activité libérale et dont plus de la moitié du capital est détenue par les professionnels."
       ],
       "mots_cles": [
         "associés dirigeants",
         "rétributions",
+        "impôt sur les sociétés",
+        "conjoints et enfants",
         "emploi effectif",
-        "bénéfice distribué"
+        "bénéfice distribué",
+        "activité libérale"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -991,6 +999,10 @@
         "frais de siège",
         "services à l'étranger",
         "assistance technique",
+        "brevets",
+        "licences",
+        "commissions",
+        "honoraires",
         "20%",
         "2%",
         "prêt de main d'œuvre",
@@ -1021,8 +1033,8 @@
       "titre": "Définition des redevances",
       "texte": [
         "(L.F.2026) Sont réputées redevances :",
-        "(a) Toute somme due au débiteur d'une création ou d'un titre de propriété intellectuelle afin de pouvoir bénéficier d'un droit d'exploitation sur cette création ;",
-        "(b) Les rémunérations de toute nature versées à toute personne pour l'usage ou la concession de l'usage d'un bien incorporel, d'un droit d'auteur sur une œuvre littéraire, artistique ou scientifique, y compris les films cinématographiques, les éditions de chaines de télévision, les offres de programme de télévision et de radio ou la fourniture de l'accès aux prestations audiovisuelles à contenu numérique, d'un brevet, d'une marque de fabrique ou de commerce, d'un dessin ou d'un modèle, d'un plan, d'une formule ou d'un procédé secret et pour des informations ayant trait à une expérience acquise dans le domaine industriel, commercial ou scientifique."
+        "a) Toute somme due au débiteur d'une création ou d'un titre de propriété intellectuelle afin de pouvoir bénéficier d'un droit d'exploitation sur cette création ;",
+        "b) Les rémunérations de toute nature versées à toute personne pour l'usage ou la concession de l'usage d'un bien incorporel, d'un droit d'auteur sur une œuvre littéraire, artistique ou scientifique, y compris les films cinématographiques, les éditions de chaines de télévision, les offres de programme de télévision et de radio ou la fourniture de l'accès aux prestations audiovisuelles à contenu numérique, d'un brevet, d'une marque de fabrique ou de commerce, d'un dessin ou d'un modèle, d'un plan, d'une formule ou d'un procédé secret et pour des informations ayant trait à une expérience acquise dans le domaine industriel, commercial ou scientifique."
       ],
       "mots_cles": [
         "redevances",
@@ -1066,7 +1078,9 @@
         "crédit-bail",
         "baux",
         "10%",
-        "associé dirigeant"
+        "associé dirigeant",
+        "amortissements",
+        "charges financières"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §3 Dépenses locatives"
@@ -1101,6 +1115,8 @@
       "mots_cles": [
         "primes d'assurances",
         "risques",
+        "actif net",
+        "charge d'exploitation",
         "assurance-maladie"
       ],
       "statut": "en vigueur",
@@ -1178,9 +1194,11 @@
         "aides non déductibles",
         "subventions",
         "abandon de créances",
+        "facturation électronique",
         "SFEC",
         "BEAC",
-        "CEMAC"
+        "CEMAC",
+        "dirigeants"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §6 Libéralités, dons, subventions et aides accordés"
@@ -1196,7 +1214,8 @@
         "chasse",
         "pêche sportive",
         "bateaux de plaisance",
-        "avions de tourisme"
+        "avions de tourisme",
+        "résidences d'agrément"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §7 Dépenses somptuaires"
@@ -1239,9 +1258,11 @@
         "intérêts",
         "charges financières",
         "BEAC",
+        "capital social",
         "20%",
         "excédent brut d'exploitation",
-        "sous-capitalisation"
+        "sous-capitalisation",
+        "crédit-bail"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §9 Charges financières"
@@ -1258,6 +1279,7 @@
         "établissement stable",
         "siège",
         "charges non déductibles",
+        "propriété intellectuelle",
         "succursale"
       ],
       "statut": "en vigueur",
@@ -1279,7 +1301,9 @@
         "amortissements",
         "durée d'usage",
         "crédit-bail",
-        "amortissements différés"
+        "amortissements différés",
+        "emballages",
+        "constructions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
