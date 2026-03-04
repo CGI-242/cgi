@@ -156,7 +156,7 @@ function NodeBlock({ node, colors, positions, parentId, depth }: NodeBlockProps)
           {node.label}
         </Text>
       ) : (
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: "#D4A017", marginBottom: 8 }}>
           {node.label}
         </Text>
       )}
