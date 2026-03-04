@@ -90,7 +90,7 @@ function processQueue(error: unknown, token: string | null) {
   failedQueue = [];
 }
 
-async function forceLogout() {
+async function forceLogout(reason?: "revoked" | "expired") {
   if (isMobile) {
     try { await _removeToken("accessToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression accessToken:", e); }
     try { await _removeToken("refreshToken"); } catch (e) { if (__DEV__) console.warn("[auth] Erreur suppression refreshToken:", e); }
@@ -99,9 +99,8 @@ async function forceLogout() {
     try { await axios.post(`${API_URL}/auth/clear-session`, {}, { withCredentials: true }); } catch (_) {}
   }
   // Import lazy pour eviter les dependances circulaires
-  // On marque la session comme expirée au lieu de déconnecter brutalement (fix C10)
   const { useAuthStore } = require("@/lib/store/auth");
-  useAuthStore.getState().setSessionExpired(true);
+  useAuthStore.getState().setSessionExpired(true, reason || "expired");
 }
 
 api.interceptors.response.use(
@@ -168,7 +167,10 @@ api.interceptors.response.use(
       }
     } catch (refreshError) {
       processQueue(refreshError, null);
-      await forceLogout();
+      // Détecter si c'est une révocation (connexion depuis un autre appareil)
+      const errData = (refreshError as AxiosError)?.response?.data as { error?: string } | undefined;
+      const isRevoked = errData?.error?.toLowerCase().includes("révoqu") || errData?.error?.toLowerCase().includes("revok");
+      await forceLogout(isRevoked ? "revoked" : "expired");
       return Promise.reject(refreshError);
     } finally {
       isRefreshing = false;

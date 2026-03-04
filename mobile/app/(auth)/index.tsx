@@ -87,16 +87,19 @@ export default function LoginEmail() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 4, opacity: navigating ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 8, marginTop: 4, opacity: navigating ? 0.7 : 1 }}
             onPress={handleContinue}
             activeOpacity={0.8}
             disabled={navigating}
             accessibilityLabel={t("auth.continue")}
             accessibilityRole="button"
           >
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebar, fontSize: 16 }}>
-              {t("auth.continue")}
-            </Text>
+            <Ionicons name="person" size={18} color={colors.sidebar} />
+            {!isMobile && (
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebar, fontSize: 16 }}>
+                {t("auth.continue")}
+              </Text>
+            )}
           </TouchableOpacity>
 
           {/* Lien inscription */}

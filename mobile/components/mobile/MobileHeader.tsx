@@ -33,6 +33,11 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
             <Ionicons name="arrow-back" size={20} color={colors.primary} />
           </TouchableOpacity>
         )}
+        {!showBack && (
+          <View style={{ width: 28, height: 28, borderRadius: 7, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
+            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 13, color: "#fff" }}>N</Text>
+          </View>
+        )}
         <Text
           style={{
             fontFamily: fonts.extraBold,

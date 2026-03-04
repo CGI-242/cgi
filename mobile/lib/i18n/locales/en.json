@@ -102,6 +102,8 @@
     "mfaInvalid": "Invalid MFA code",
     "sessionExpired": "Session expired",
     "sessionExpiredMessage": "Your session has expired. Please log in again to continue.",
+    "sessionRevoked": "Signed in on another device",
+    "sessionRevokedMessage": "Your account is now connected from another device. For security reasons, only one active session is allowed at a time.",
     "passwordComplexity": "Password must contain at least one uppercase letter, one lowercase letter and one digit",
     "resendCooldown": "Resend in {{seconds}}s",
     "emailAlreadyExists": "This email address is already in use",

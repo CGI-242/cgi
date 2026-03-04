@@ -3,14 +3,18 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function SessionExpiredModal() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const sessionExpired = useAuthStore((s) => s.sessionExpired);
+  const reason = useAuthStore((s) => s.sessionExpiredReason);
   const logout = useAuthStore((s) => s.logout);
 
   if (!sessionExpired) return null;
+
+  const isRevoked = reason === "revoked";
 
   const handleReconnect = async () => {
     await logout();
@@ -20,22 +24,22 @@ export default function SessionExpiredModal() {
     <View style={styles.overlay}>
       <View style={[styles.card, { backgroundColor: colors.card }]}>
         <Ionicons
-          name="time-outline"
+          name={isRevoked ? "phone-portrait-outline" : "time-outline"}
           size={48}
-          color={colors.warning}
+          color={isRevoked ? colors.primary : colors.warning}
           style={{ marginBottom: 16 }}
         />
-        <Text style={[styles.title, { color: colors.text }]}>
-          {t("auth.sessionExpired")}
+        <Text style={[styles.title, { color: colors.text, fontFamily: fonts.heading, fontWeight: fontWeights.heading }]}>
+          {isRevoked ? t("auth.sessionRevoked") : t("auth.sessionExpired")}
         </Text>
-        <Text style={[styles.message, { color: colors.textSecondary }]}>
-          {t("auth.sessionExpiredMessage")}
+        <Text style={[styles.message, { color: colors.textSecondary, fontFamily: fonts.regular, fontWeight: fontWeights.regular }]}>
+          {isRevoked ? t("auth.sessionRevokedMessage") : t("auth.sessionExpiredMessage")}
         </Text>
         <TouchableOpacity
           onPress={handleReconnect}
           style={[styles.button, { backgroundColor: colors.primary }]}
         >
-          <Text style={styles.buttonText}>
+          <Text style={[styles.buttonText, { fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
             {t("auth.reconnect")}
           </Text>
         </TouchableOpacity>

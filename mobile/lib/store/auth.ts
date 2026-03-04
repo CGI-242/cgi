@@ -14,6 +14,7 @@ interface AuthState {
   isLoading: boolean;
   loggedOut: boolean;
   sessionExpired: boolean;
+  sessionExpiredReason: "expired" | "revoked";
   rememberMe: boolean;
 
   setUser: (user: User | null) => void;
@@ -23,7 +24,7 @@ interface AuthState {
   setOtpSource: (source: "login" | "register") => void;
   setStep: (step: AuthStep) => void;
   setLoading: (loading: boolean) => void;
-  setSessionExpired: (expired: boolean) => void;
+  setSessionExpired: (expired: boolean, reason?: "expired" | "revoked") => void;
   clearSessionExpired: () => void;
   setRememberMe: (rememberMe: boolean) => void;
   login: (user: User, token?: string, refreshToken?: string) => Promise<void>;
@@ -73,6 +74,7 @@ export const useAuthStore = create<AuthState>()(
       isLoading: false,
       loggedOut: false,
       sessionExpired: false,
+      sessionExpiredReason: "expired",
       rememberMe: false,
 
       setUser: (user) => set({ user }),
@@ -82,7 +84,7 @@ export const useAuthStore = create<AuthState>()(
       setOtpSource: (otpSource) => set({ otpSource }),
       setStep: (step) => set({ step }),
       setLoading: (isLoading) => set({ isLoading }),
-      setSessionExpired: (sessionExpired) => set({ sessionExpired }),
+      setSessionExpired: (sessionExpired, reason) => set({ sessionExpired, sessionExpiredReason: reason || "expired" }),
       clearSessionExpired: () => set({ sessionExpired: false }),
       setRememberMe: (rememberMe) => set({ rememberMe }),
 
