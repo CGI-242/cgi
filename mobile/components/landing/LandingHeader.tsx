@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, Linking } from "react-native";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
+import { Ionicons } from "@expo/vector-icons";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
@@ -76,23 +77,34 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           onPress={() => router.push("/(auth)")}
           style={{ padding: 8 }}
         >
-          <Text style={{ fontSize: 13, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
-            {t("landing.login")}
-          </Text>
+          {isMobile ? (
+            <Ionicons name="person-circle-outline" size={28} color="#6a6a75" />
+          ) : (
+            <Text style={{ fontSize: 13, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+              {t("landing.login")}
+            </Text>
+          )}
         </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => router.push("/(auth)/register")}
           style={{
             paddingVertical: 9,
-            paddingHorizontal: 22,
+            paddingHorizontal: isMobile ? 12 : 22,
             borderRadius: 8,
             backgroundColor: GOLD,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 6,
           }}
         >
-          <Text style={{ color: "#08080d", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13 }}>
-            Essai gratuit
-          </Text>
+          {isMobile ? (
+            <Ionicons name="rocket-outline" size={20} color="#08080d" />
+          ) : (
+            <Text style={{ color: "#08080d", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13 }}>
+              Essai gratuit
+            </Text>
+          )}
         </TouchableOpacity>
       </View>
     </View>
