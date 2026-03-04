@@ -1,8 +1,8 @@
 // mobile/components/chat/ChatInput.tsx
 // Barre de saisie du chat avec bouton d'envoi
 
-import { useEffect } from "react";
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { useEffect, useCallback } from "react";
+import { View, Text, TextInput, TouchableOpacity, Platform, NativeSyntheticEvent, TextInputKeyPressEventData } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useSpeechRecognition } from "@/lib/hooks/useSpeechRecognition";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -27,6 +27,19 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
       onChangeText(transcript);
     }
   }, [transcript, onChangeText]);
+
+  // Sur web : Entrée envoie, Shift+Entrée fait un retour à la ligne
+  const handleKeyPress = useCallback((e: NativeSyntheticEvent<TextInputKeyPressEventData>) => {
+    if (Platform.OS === "web") {
+      const nativeEvent = e.nativeEvent as any;
+      if (nativeEvent.key === "Enter" && !nativeEvent.shiftKey) {
+        e.preventDefault();
+        if (!disabled && value.trim()) {
+          onSend();
+        }
+      }
+    }
+  }, [disabled, value, onSend]);
 
   return (
     <View
@@ -67,6 +80,8 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           editable={!disabled}
           onSubmitEditing={onSend}
           blurOnSubmit={false}
+          submitBehavior="submit"
+          onKeyPress={handleKeyPress}
         />
         {isAvailable && (
           <TouchableOpacity
