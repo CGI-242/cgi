@@ -4,6 +4,8 @@ import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 import LandingFeatures from "./LandingFeatures";
 import LandingCountries from "./LandingCountries";
+import LandingPricing from "./LandingPricing";
+import LandingContact from "./LandingContact";
 import LandingCTA from "./LandingCTA";
 import LandingFooter from "./LandingFooter";
 import { useResponsive } from "@/lib/hooks/useResponsive";
@@ -32,8 +34,12 @@ export default function LandingPage() {
       <LandingFeatures isMobile={isMobile} loaded={loaded} />
       <LandingCountries isMobile={isMobile} loaded={loaded} />
       <View onLayout={(e) => { sectionOffsets.current.tarifs = e.nativeEvent.layout.y; }}>
-        <LandingCTA />
+        <LandingPricing isMobile={isMobile} />
       </View>
+      <View onLayout={(e) => { sectionOffsets.current.contact = e.nativeEvent.layout.y; }}>
+        <LandingContact isMobile={isMobile} />
+      </View>
+      <LandingCTA />
       <LandingFooter isMobile={isMobile} />
     </ScrollView>
   );

@@ -63,7 +63,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
             </Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => Linking.openURL("mailto:contact@normx.ai")}>
+          <TouchableOpacity onPress={() => onScrollTo?.("contact")}>
             <Text style={{ fontSize: 14, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Contact
             </Text>
