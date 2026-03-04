@@ -1,33 +1,40 @@
-import { ScrollView, StyleSheet, useWindowDimensions } from "react-native";
-import { useTheme } from "@/lib/theme/ThemeContext";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { ScrollView, View } from "react-native";
 import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 import LandingFeatures from "./LandingFeatures";
-import LandingStats from "./LandingStats";
+import LandingCountries from "./LandingCountries";
 import LandingCTA from "./LandingCTA";
 import LandingFooter from "./LandingFooter";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 
 export default function LandingPage() {
-  const { colors } = useTheme();
-  const { width } = useWindowDimensions();
+  const { isMobile } = useResponsive();
+  const [loaded, setLoaded] = useState(false);
+  const scrollRef = useRef<ScrollView>(null);
+  const sectionOffsets = useRef<Record<string, number>>({});
 
-  const isMobile = width < 768;
-  const isTablet = width >= 768 && width < 1024;
+  useEffect(() => {
+    requestAnimationFrame(() => setLoaded(true));
+  }, []);
+
+  const handleScrollTo = useCallback((section: string) => {
+    const y = sectionOffsets.current[section];
+    if (y !== undefined) {
+      scrollRef.current?.scrollTo({ y, animated: true });
+    }
+  }, []);
 
   return (
-    <ScrollView style={[styles.container, { backgroundColor: colors.background }]}>
-      <LandingHeader />
-      <LandingHero isMobile={isMobile} />
-      <LandingFeatures isMobile={isMobile} isTablet={isTablet} />
-      <LandingStats isMobile={isMobile} />
-      <LandingCTA />
+    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#08080d" }}>
+      <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
+      <LandingHero isMobile={isMobile} loaded={loaded} />
+      <LandingFeatures isMobile={isMobile} loaded={loaded} />
+      <LandingCountries isMobile={isMobile} loaded={loaded} />
+      <View onLayout={(e) => { sectionOffsets.current.tarifs = e.nativeEvent.layout.y; }}>
+        <LandingCTA />
+      </View>
       <LandingFooter isMobile={isMobile} />
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

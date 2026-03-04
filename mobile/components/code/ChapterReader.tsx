@@ -5,10 +5,12 @@ import * as Speech from "expo-speech";
 import type { SommaireNode } from "@/lib/data/types";
 import type { ArticleData } from "@/lib/data/types";
 import ArticleText from "./ArticleText";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from "@/lib/theme/colors";
 
 type Props = {
   chapter: SommaireNode;
-  colors: any;
+  colors: ThemeColors;
   scrollToId?: string;
   scrollTrigger?: number;
 };
@@ -57,13 +59,13 @@ function useSpeech(article: ArticleData) {
   return { isSpeaking, toggle };
 }
 
-function ArticleBlock({ article, colors }: { article: ArticleData; colors: any }) {
+function ArticleBlock({ article, colors }: { article: ArticleData; colors: ThemeColors }) {
   const { isSpeaking, toggle } = useSpeech(article);
 
   return (
     <View style={{ marginBottom: 20 }}>
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-        <Text style={{ fontSize: 13, fontWeight: "bold", color: colors.text, flex: 1 }}>
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, flex: 1 }}>
           {article.article} — {article.titre}
         </Text>
         <TouchableOpacity
@@ -71,13 +73,13 @@ function ArticleBlock({ article, colors }: { article: ArticleData; colors: any }
           style={{
             paddingHorizontal: 8,
             paddingVertical: 4,
-            backgroundColor: isSpeaking ? "#e74c3c" : colors.accent,
+            backgroundColor: isSpeaking ? colors.danger : colors.accent,
             flexDirection: "row",
             alignItems: "center",
             marginLeft: 8,
           }}
         >
-          <Ionicons name={isSpeaking ? "stop" : "volume-high"} size={12} color="#fff" />
+          <Ionicons name={isSpeaking ? "stop" : "volume-high"} size={12} color={colors.sidebarText} />
         </TouchableOpacity>
       </View>
       <ArticleText texte={article.texte} />
@@ -87,6 +89,8 @@ function ArticleBlock({ article, colors }: { article: ArticleData; colors: any }
             <Text
               key={i}
               style={{
+                fontFamily: fonts.regular,
+                fontWeight: fontWeights.regular,
                 fontSize: 10,
                 color: colors.textMuted,
                 backgroundColor: colors.border,
@@ -106,7 +110,7 @@ function ArticleBlock({ article, colors }: { article: ArticleData; colors: any }
   );
 }
 
-function renderArticles(node: SommaireNode, colors: any) {
+function renderArticles(node: SommaireNode, colors: ThemeColors) {
   const elements: React.ReactNode[] = [];
   if (node.articles) {
     for (const art of node.articles) {
@@ -118,20 +122,20 @@ function renderArticles(node: SommaireNode, colors: any) {
 
 type SectionBlockProps = {
   node: SommaireNode;
-  colors: any;
-  registerRef: (id: string, ref: View | null) => void;
+  colors: ThemeColors;
+  positions: React.MutableRefObject<Record<string, number>>;
 };
 
-function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
+function SectionBlock({ node, colors, positions }: SectionBlockProps) {
   return (
     <View
       style={{ marginBottom: 24 }}
-      ref={(r) => registerRef(node.id, r)}
+      onLayout={(e) => { positions.current[node.id] = e.nativeEvent.layout.y; }}
     >
       {/* Titre section */}
       <View style={{ marginBottom: 12 }}>
         <View style={{ height: 2, backgroundColor: colors.accent, marginBottom: 10, opacity: 0.4 }} />
-        <Text style={{ fontSize: 15, fontWeight: "600", color: colors.accent }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.accent }}>
           {node.label}
         </Text>
       </View>
@@ -144,9 +148,12 @@ function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
         <View
           key={sub.id}
           style={{ marginTop: 8, marginBottom: 16 }}
-          ref={(r) => registerRef(sub.id, r)}
+          onLayout={(e) => {
+            const parentY = positions.current[node.id] ?? 0;
+            positions.current[sub.id] = parentY + e.nativeEvent.layout.y;
+          }}
         >
-          <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary, marginBottom: 10 }}>
+          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
             {sub.label}
           </Text>
           {renderArticles(sub, colors)}
@@ -156,9 +163,12 @@ function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
             <View
               key={para.id}
               style={{ marginTop: 4 }}
-              ref={(r) => registerRef(para.id, r)}
+              onLayout={(e) => {
+                const subY = positions.current[sub.id] ?? 0;
+                positions.current[para.id] = subY + e.nativeEvent.layout.y;
+              }}
             >
-              <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 8 }}>
                 {para.label}
               </Text>
               {renderArticles(para, colors)}
@@ -172,12 +182,12 @@ function SectionBlock({ node, colors, registerRef }: SectionBlockProps) {
 
 export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigger }: Props) {
   const scrollRef = useRef<ScrollView>(null);
-  const nodeRefs = useRef<Record<string, View | null>>({});
-  const scrollOffset = useRef(0);
+  const nodePositions = useRef<Record<string, number>>({});
 
-  const registerRef = useCallback((id: string, ref: View | null) => {
-    nodeRefs.current[id] = ref;
-  }, []);
+  useEffect(() => {
+    // Réinitialiser les positions quand le chapitre change
+    nodePositions.current = {};
+  }, [chapter]);
 
   useEffect(() => {
     if (!scrollToId || !scrollTrigger) return;
@@ -186,24 +196,16 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
       const sv = scrollRef.current;
       if (!sv) return;
 
-      // Remonter en haut
       if (scrollToId === "__top__") {
         sv.scrollTo({ y: 0, animated: true });
         return;
       }
 
-      const targetView = nodeRefs.current[scrollToId];
-      if (!targetView) return;
-
-      // measure donne (x, y, width, height, pageX, pageY)
-      // pageY = position absolue sur l'écran
-      targetView.measure((_x, _y, _w, _h, _pageX, pageY) => {
-        (sv as any).measure((_sx: number, _sy: number, _sw: number, _sh: number, _spx: number, spy: number) => {
-          const relativeY = pageY - spy + scrollOffset.current;
-          sv.scrollTo({ y: relativeY, animated: true });
-        });
-      });
-    }, 200);
+      const y = nodePositions.current[scrollToId];
+      if (y !== undefined) {
+        sv.scrollTo({ y, animated: true });
+      }
+    }, 250);
 
     return () => clearTimeout(timer);
   }, [scrollToId, scrollTrigger]);
@@ -213,11 +215,10 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
       ref={scrollRef}
       style={{ flex: 1 }}
       contentContainerStyle={{ padding: 20, paddingBottom: 60 }}
-      onScroll={(e) => { scrollOffset.current = e.nativeEvent.contentOffset.y; }}
       scrollEventThrottle={16}
     >
       {/* Titre du chapitre */}
-      <Text style={{ fontSize: 18, fontWeight: "bold", color: colors.text, marginBottom: 20 }}>
+      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 22, color: colors.text, marginBottom: 20 }}>
         {chapter.label}
       </Text>
 
@@ -230,7 +231,7 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
           key={section.id}
           node={section}
           colors={colors}
-          registerRef={registerRef}
+          positions={nodePositions}
         />
       ))}
     </ScrollView>

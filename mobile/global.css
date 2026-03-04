@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Police par défaut Outfit sur tout le site */
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
 input, textarea {
+  font-family: 'Outfit', sans-serif;
   outline: none !important;
   -webkit-appearance: none;
 }

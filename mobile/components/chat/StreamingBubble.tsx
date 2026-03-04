@@ -3,6 +3,7 @@
 
 import { View, Text, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
 
 export default function StreamingBubble({ content }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <View
@@ -55,7 +57,7 @@ export default function StreamingBubble({ content }: Props) {
             <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
               <ActivityIndicator size="small" color={colors.primary} />
               <Text style={{ color: colors.textMuted, fontSize: 13 }}>
-                Réflexion en cours...
+                {t("code.thinking")}
               </Text>
             </View>
           )}

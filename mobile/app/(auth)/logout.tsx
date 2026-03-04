@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function LogoutScreen() {
   const { t } = useTranslation();
@@ -24,7 +25,6 @@ export default function LogoutScreen() {
           style={{
             width: 64,
             height: 64,
-            
             backgroundColor: colors.success,
             alignItems: "center",
             justifyContent: "center",
@@ -34,10 +34,10 @@ export default function LogoutScreen() {
           <Ionicons name="checkmark" size={32} color={colors.sidebarText} />
         </View>
 
-        <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 8 }}>
           {t("auth.logoutSuccess")}
         </Text>
-        <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", marginBottom: 32 }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textAlign: "center", marginBottom: 32 }}>
           {t("auth.logoutMessage")}
         </Text>
 
@@ -46,7 +46,7 @@ export default function LogoutScreen() {
           onPress={handleReconnect}
           activeOpacity={0.8}
         >
-          <Text style={{ color: colors.sidebarText, fontWeight: "600", fontSize: 16 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
             {t("auth.reconnect")}
           </Text>
         </TouchableOpacity>

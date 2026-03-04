@@ -3,6 +3,7 @@ import { emailField, passwordField, requiredString } from './common.schema';
 
 export const registerBody = z.object({
   entrepriseNom: z.string().optional(),
+  pays: z.string().min(1).max(5).default('242'),
   nom: requiredString('nom'),
   prenom: requiredString('prenom'),
   email: emailField,

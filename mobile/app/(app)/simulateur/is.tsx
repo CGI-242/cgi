@@ -1,21 +1,16 @@
 import { useState, useMemo } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-  Switch,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { View, Text, ScrollView, Switch } from "react-native";
 import { calculerIS, type IsInput } from "@/lib/services/is.service";
-import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
+import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
+import ResultHighlight from "@/components/simulateur/ResultHighlight";
+import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function IsScreen() {
   const { t } = useTranslation();
@@ -37,37 +32,28 @@ export default function IsScreen() {
     };
     if (input.produitsExploitation === 0) return null;
     return calculerIS(input);
-  }, [
-    produitsExploitation,
-    produitsFinanciers,
-    produitsHAO,
-    retenuesLiberatoires,
-    deficitConsecutif,
-  ]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires, deficitConsecutif]);
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Layout 50/50 ou vertical sur mobile */}
       <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          {/* Info */}
+          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+            {t("simulateur.is.title")}
+          </Text>
+
           <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>
-              {t("simulateur.is.description")}
-            </Text>
+            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.is.description")}</Text>
           </View>
 
-          {/* Base minimum de perception */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {t("simulateur.is.baseCalc")}
           </Text>
-          <NumberField label={t("simulateur.is.exploitation")} value={produitsExploitation} onChange={setProduitsExploitation} colors={colors} />
-          <NumberField label={t("simulateur.is.financial")} value={produitsFinanciers} onChange={setProduitsFinanciers} colors={colors} />
-          <NumberField label={t("simulateur.is.hao")} value={produitsHAO} onChange={setProduitsHAO} colors={colors} />
-          <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} colors={colors} />
+          <NumberField label={t("simulateur.is.exploitation")} value={produitsExploitation} onChange={setProduitsExploitation} />
+          <NumberField label={t("simulateur.is.financial")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
+          <NumberField label={t("simulateur.is.hao")} value={produitsHAO} onChange={setProduitsHAO} />
+          <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
 
-          {/* Deficit */}
           <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.is.deficit")}</Text>
@@ -81,50 +67,26 @@ export default function IsScreen() {
             />
           </View>
 
-          <Text style={{ fontSize: 10, color: colors.textMuted }}>
-            {t("simulateur.is.legalRef")}
-          </Text>
+          <Text style={{ fontSize: 10, color: colors.textMuted }}>{t("simulateur.is.legalRef")}</Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
-              {/* Minimum de perception */}
-              <SimulateurSection label={t("simulateur.is.minPerception")} colors={colors} />
+              <SimulateurSection label={t("simulateur.is.minPerception")} />
               <TableRow label={t("simulateur.is.base")} value={formatNumber(result.baseMinimumPerception)} />
               <TableRow label={t("simulateur.is.rateApplied")} value={`${result.tauxMinimum}%`} bg={colors.background} />
-              <View style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.primary }}>{t("simulateur.is.annualMin")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.primary }}>{formatNumber(result.minimumPerceptionAnnuel)}</Text>
-                </View>
-              </View>
+              <ResultHighlight label={t("simulateur.is.annualMin")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" />
 
-              {/* 4 acomptes */}
-              <SimulateurSection label={t("simulateur.is.quarterlyInstalments")} colors={colors} />
+              <SimulateurSection label={t("simulateur.is.quarterlyInstalments")} />
               {result.acomptes.map((a) => (
                 <TableRow key={a.label} label={a.label} value={formatNumber(a.montant)} />
               ))}
 
-              {/* Total */}
-              <View style={{ backgroundColor: "#eff6ff", paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#1e40af" }}>{t("simulateur.is.totalToPay")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#1e40af" }}>{formatNumber(result.minimumPerceptionAnnuel)}</Text>
-                </View>
-                <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4 }}>
-                  {t("simulateur.is.imputNote")}
-                </Text>
-              </View>
+              <ResultHighlight label={t("simulateur.is.totalToPay")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" note={t("simulateur.is.imputNote")} />
             </View>
           ) : (
-            <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
-              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
-                {t("simulateur.is.enterProducts")}
-              </Text>
-            </View>
+            <SimulateurEmptyState message={t("simulateur.is.enterProducts")} />
           )}
         </ScrollView>
       </View>

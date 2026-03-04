@@ -1,24 +1,16 @@
 import { useState, useMemo } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import {
-  calculerSoldeLiquidation,
-  type SoldeLiquidationInput,
-  type TypeContribuable,
-} from "@/lib/services/solde-liquidation.service";
+import { View, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
+import { calculerSoldeLiquidation, type SoldeLiquidationInput, type TypeContribuable } from "@/lib/services/solde-liquidation.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
+import ResultHighlight from "@/components/simulateur/ResultHighlight";
+import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function SoldeLiquidationScreen() {
   const { t } = useTranslation();
@@ -53,18 +45,16 @@ export default function SoldeLiquidationScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Layout 50/50 ou vertical sur mobile */}
       <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          {/* Info */}
+          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+            {t("simulateur.solde.title")}
+          </Text>
+
           <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>
-              {t("simulateur.solde.description")}
-            </Text>
+            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.solde.description")}</Text>
           </View>
 
-          {/* Resultat fiscal */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {t("simulateur.solde.taxableResult")}
           </Text>
@@ -80,7 +70,6 @@ export default function SoldeLiquidationScreen() {
             <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
           </View>
 
-          {/* Type contribuable */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {t("simulateur.solde.taxpayerType")}
           </Text>
@@ -88,97 +77,53 @@ export default function SoldeLiquidationScreen() {
             {TAXPAYER_TYPES.map((tp) => (
               <TouchableOpacity
                 key={tp.value}
-                style={{
-                  width: "48%",
-                  paddingVertical: 8,
-                  alignItems: "center",
-                  backgroundColor: typeContribuable === tp.value ? colors.primary : colors.border,
-                  
-                }}
+                style={{ width: "48%", paddingVertical: 8, alignItems: "center", backgroundColor: typeContribuable === tp.value ? colors.primary : colors.border }}
                 onPress={() => setTypeContribuable(tp.value)}
               >
-                <Text style={{ color: typeContribuable === tp.value ? "#fff" : colors.text, fontSize: 12, fontWeight: "600" }}>
+                <Text style={{ color: typeContribuable === tp.value ? colors.sidebarText : colors.text, fontSize: 12, fontWeight: "600" }}>
                   {tp.label} ({tp.taux})
                 </Text>
               </TouchableOpacity>
             ))}
           </View>
 
-          {/* Acomptes */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {t("simulateur.solde.instalmentsPaid")}
           </Text>
-          <NumberField label={t("simulateur.solde.q1")} value={acompte1} onChange={setAcompte1} colors={colors} />
-          <NumberField label={t("simulateur.solde.q2")} value={acompte2} onChange={setAcompte2} colors={colors} />
-          <NumberField label={t("simulateur.solde.q3")} value={acompte3} onChange={setAcompte3} colors={colors} />
-          <NumberField label={t("simulateur.solde.q4")} value={acompte4} onChange={setAcompte4} colors={colors} />
+          <NumberField label={t("simulateur.solde.q1")} value={acompte1} onChange={setAcompte1} />
+          <NumberField label={t("simulateur.solde.q2")} value={acompte2} onChange={setAcompte2} />
+          <NumberField label={t("simulateur.solde.q3")} value={acompte3} onChange={setAcompte3} />
+          <NumberField label={t("simulateur.solde.q4")} value={acompte4} onChange={setAcompte4} />
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 4 }}>
-            {t("simulateur.solde.legalRef")}
-          </Text>
+          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 4 }}>{t("simulateur.solde.legalRef")}</Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
-              {/* IS calcule */}
-              <SimulateurSection label={t("simulateur.solde.isCalculated")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.isCalculated")} />
               <TableRow label={t("simulateur.solde.fiscalResult")} value={formatNumber(result.resultatFiscal)} />
               <TableRow label={t("simulateur.solde.roundedProfit")} value={formatNumber(result.beneficeArrondi)} bg={colors.background} />
               <TableRow label={`${t("simulateur.solde.isRate")} (${result.tauxIS}%)`} value={`${result.tauxIS}%`} bg={colors.background} />
-              <View style={{ backgroundColor: `${colors.danger}15`, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: colors.danger }}>{t("simulateur.solde.isToPay")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.danger }}>{formatNumber(result.isCalcule)}</Text>
-                </View>
-              </View>
+              <ResultHighlight label={t("simulateur.solde.isToPay")} value={formatNumber(result.isCalcule)} variant="danger" />
 
-              {/* Detail acomptes */}
-              <SimulateurSection label={t("simulateur.solde.instalmentsPaidTitle")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.instalmentsPaidTitle")} />
               {result.detailAcomptes.map((a) => (
                 <TableRow key={a.label} label={a.label} value={a.montant > 0 ? formatNumber(a.montant) : "\u2014"} />
               ))}
-              <View style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.primary }}>{t("simulateur.solde.totalInstalments")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.primary }}>{formatNumber(result.totalAcomptes)}</Text>
-                </View>
-              </View>
+              <ResultHighlight label={t("simulateur.solde.totalInstalments")} value={formatNumber(result.totalAcomptes)} variant="primary" />
 
-              {/* Solde */}
-              <SimulateurSection label={t("simulateur.solde.settlementBalance")} colors={colors} />
+              <SimulateurSection label={t("simulateur.solde.settlementBalance")} />
               <TableRow label={t("simulateur.solde.isMinusInstalments")} value={`${formatNumber(result.isCalcule)} - ${formatNumber(result.totalAcomptes)}`} bg={colors.background} />
 
               {result.creditImpot ? (
-                <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
-                  <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: colors.success }}>{t("simulateur.solde.taxCredit")}</Text>
-                    <Text style={{ fontSize: 16, fontWeight: "800", color: colors.success }}>{formatNumber(Math.abs(result.solde))}</Text>
-                  </View>
-                  <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4 }}>
-                    {t("simulateur.solde.taxCreditNote")}
-                  </Text>
-                </View>
+                <ResultHighlight label={t("simulateur.solde.taxCredit")} value={formatNumber(Math.abs(result.solde))} variant="success" note={t("simulateur.solde.taxCreditNote")} />
               ) : (
-                <View style={{ backgroundColor: `${colors.danger}15`, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
-                  <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: colors.danger }}>{t("simulateur.solde.balanceToPay")}</Text>
-                    <Text style={{ fontSize: 16, fontWeight: "800", color: colors.danger }}>{formatNumber(result.solde)}</Text>
-                  </View>
-                  <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4 }}>
-                    {t("simulateur.solde.balanceNote")}
-                  </Text>
-                </View>
+                <ResultHighlight label={t("simulateur.solde.balanceToPay")} value={formatNumber(result.solde)} variant="danger" note={t("simulateur.solde.balanceNote")} />
               )}
             </View>
           ) : (
-            <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
-              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
-                {t("simulateur.solde.enterResult")}
-              </Text>
-            </View>
+            <SimulateurEmptyState message={t("simulateur.solde.enterResult")} />
           )}
         </ScrollView>
       </View>

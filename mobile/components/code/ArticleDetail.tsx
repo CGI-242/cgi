@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
 import ReferencesBlock from "./ReferencesBlock";
@@ -133,7 +134,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
         <TouchableOpacity onPress={handleBack} style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="arrow-back" size={18} color={colors.primary} />
-          <Text style={{ color: colors.primary, fontSize: 14, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
+          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.primary, fontSize: 15, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -149,9 +150,9 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
           <Ionicons
             name={isSpeaking ? "stop" : "volume-high"}
             size={16}
-            color="#fff"
+            color={colors.sidebarText}
           />
-          <Text style={{ color: "#fff", fontSize: 12, fontWeight: "600", marginLeft: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 14, marginLeft: 8 }}>
             {isSpeaking ? t("articleDetail.stop") : t("articleDetail.listen")}
           </Text>
         </TouchableOpacity>
@@ -159,12 +160,12 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
         <View style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4 }}>
-          <Text style={{ fontSize: 12, color: colors.primary, fontWeight: "600" }}>{article.statut}</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary }}>{article.statut}</Text>
         </View>
       </View>
 
-      <Text style={{ fontSize: 24, fontWeight: "bold", color: colors.text, marginBottom: 4 }}>{article.article}</Text>
-      <Text style={{ fontSize: 16, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
+      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 28, color: colors.text, marginBottom: 4 }}>{article.article}</Text>
+      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
 
       <View
         style={{
@@ -182,11 +183,11 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
       {article.mots_cles.length > 0 && (
         <View>
-          <Text style={{ fontSize: 12, fontWeight: "bold", color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>{t("articleDetail.keywords")}</Text>
+          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>{t("articleDetail.keywords")}</Text>
           <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
             {article.mots_cles.map((mc) => (
               <View key={mc} style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4, marginRight: 8, marginBottom: 8 }}>
-                <Text style={{ fontSize: 12, color: colors.primary }}>{mc}</Text>
+                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.primary }}>{mc}</Text>
               </View>
             ))}
           </View>

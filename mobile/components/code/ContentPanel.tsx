@@ -1,6 +1,8 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { SommaireNode, ArticleData } from "@/lib/data/cgi";
 import ArticleDetail from "./ArticleDetail";
 import SearchResults from "./SearchResults";
@@ -23,6 +25,7 @@ export default function ContentPanel({
   searchResults,
 }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   if (selectedArticle) {
     return (
@@ -48,11 +51,11 @@ export default function ContentPanel({
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 32 }}>
         <Ionicons name="book-outline" size={64} color={colors.textMuted} />
-        <Text style={{ fontSize: 20, color: colors.textMuted, marginTop: 16, textAlign: "center" }}>
-          Selectionnez un element dans le sommaire
+        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 20, color: colors.textMuted, marginTop: 16, textAlign: "center" }}>
+          {t("code.selectInSommaire")}
         </Text>
-        <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 8, textAlign: "center" }}>
-          Naviguez dans l'arborescence du Code General des Impots
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginTop: 8, textAlign: "center" }}>
+          {t("code.navigateTree")}
         </Text>
       </View>
     );
@@ -63,12 +66,12 @@ export default function ContentPanel({
 
   return (
     <ScrollView style={{ flex: 1, padding: 24 }}>
-      <Text style={{ fontSize: 12, color: colors.primary, fontWeight: "600", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
+      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary, textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
         {hasArticles
           ? `${selectedNode.articles!.length} article${selectedNode.articles!.length > 1 ? "s" : ""}`
           : "Section"}
       </Text>
-      <Text style={{ fontSize: 20, fontWeight: "bold", color: colors.text, marginBottom: 24 }}>{selectedNode.label}</Text>
+      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 24 }}>{selectedNode.label}</Text>
 
       {hasArticles &&
         selectedNode.articles!.map((art) => (
@@ -89,8 +92,8 @@ export default function ContentPanel({
             onPress={() => onSelectArticle(art)}
           >
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 16, fontWeight: "bold", color: colors.text }}>{art.article}</Text>
-              <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }} numberOfLines={2}>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.text }}>{art.article}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted, marginTop: 4 }} numberOfLines={2}>
                 {art.titre}
               </Text>
             </View>
@@ -101,8 +104,8 @@ export default function ContentPanel({
       {hasChildren && (
         <View style={hasArticles ? { marginTop: 16 } : {}}>
           {!hasArticles && (
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 16 }}>
-              Selectionnez une sous-section pour voir les articles.
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 16 }}>
+              {t("code.selectSubSection")}
             </Text>
           )}
           {selectedNode.children!.map((child) => (
@@ -122,7 +125,7 @@ export default function ContentPanel({
               onPress={() => onSelectChild(child, selectedNode.id)}
             >
               <Ionicons name="folder-outline" size={20} color={colors.primary} style={{ marginRight: 12 }} />
-              <Text style={{ fontSize: 14, color: colors.text, flex: 1 }}>{child.label}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, flex: 1 }}>{child.label}</Text>
               <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
             </TouchableOpacity>
           ))}

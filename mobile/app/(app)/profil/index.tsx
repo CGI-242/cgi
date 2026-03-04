@@ -13,6 +13,7 @@ import { userApi, type UserProfile } from "@/lib/api/user";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import AvatarSection from "@/components/profil/AvatarSection";
 import ProfileForm from "@/components/profil/ProfileForm";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 function getInitials(firstName?: string | null, lastName?: string | null) {
   return ((firstName?.[0] || "") + (lastName?.[0] || "")).toUpperCase() || "U";

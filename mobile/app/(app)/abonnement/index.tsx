@@ -18,6 +18,7 @@ import QuotaProgress from "@/components/abonnement/QuotaProgress";
 import PeriodInfo from "@/components/abonnement/PeriodInfo";
 import PlansComparison from "@/components/abonnement/PlansComparison";
 import SubscriptionActions from "@/components/abonnement/SubscriptionActions";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function AbonnementScreen() {
   const { colors } = useTheme();

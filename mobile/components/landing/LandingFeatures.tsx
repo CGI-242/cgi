@@ -1,72 +1,116 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme } from "@/lib/theme/ThemeContext";
-import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
   isMobile: boolean;
-  isTablet: boolean;
+  loaded: boolean;
 }
 
-const FEATURES: { icon: keyof typeof Ionicons.glyphMap; titleKey: string; descKey: string; color: string }[] = [
-  { icon: "document-text-outline", titleKey: "landing.feat1Title", descKey: "landing.feat1Desc", color: "#00815d" },
-  { icon: "book-outline", titleKey: "landing.feat2Title", descKey: "landing.feat2Desc", color: "#2563eb" },
-  { icon: "mic-outline", titleKey: "landing.feat3Title", descKey: "landing.feat3Desc", color: "#9333ea" },
-  { icon: "calculator-outline", titleKey: "landing.feat4Title", descKey: "landing.feat4Desc", color: "#ea580c" },
-  { icon: "chatbubbles-outline", titleKey: "landing.feat5Title", descKey: "landing.feat5Desc", color: "#0891b2" },
-  { icon: "calendar-outline", titleKey: "landing.feat6Title", descKey: "landing.feat6Desc", color: "#dc2626" },
-  { icon: "people-outline", titleKey: "landing.feat7Title", descKey: "landing.feat7Desc", color: "#4f46e5" },
-  { icon: "moon-outline", titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#7c3aed" },
-  { icon: "cloud-offline-outline", titleKey: "landing.feat9Title", descKey: "landing.feat9Desc", color: "#059669" },
-  { icon: "phone-portrait-outline", titleKey: "landing.feat10Title", descKey: "landing.feat10Desc", color: "#d97706" },
+const GOLD = "#c8a03c";
+
+const FEATURES = [
+  { icon: "book-outline" as const, title: "Code des Impôts", desc: "7 000+ articles du CGI 2026 avec navigation hiérarchique par tomes, titres et chapitres", color: "#00815d" },
+  { icon: "chatbubbles-outline" as const, title: "Assistant IA", desc: "Posez vos questions fiscales en langage naturel, obtenez les références exactes du CGI", color: "#0284c7" },
+  { icon: "calculator-outline" as const, title: "12 Simulateurs", desc: "ITS, IS, Patente, TVA, IRCM, IRF, IBA, IGF, Enregistrement, Foncier et plus", color: "#4f46e5" },
+  { icon: "mic-outline" as const, title: "Recherche vocale", desc: "Dictez votre recherche en français, trouvez l'article pertinent instantanément", color: "#9333ea" },
+  { icon: "calendar-outline" as const, title: "Échéances fiscales", desc: "Calendrier des échéances TVA, ITS, Patente, IRPP et IRF triées par urgence", color: "#ef4444" },
+  { icon: "cloud-offline-outline" as const, title: "Mode hors-ligne", desc: "Tout le CGI et les simulateurs accessibles même sans connexion internet", color: "#d97706" },
+  { icon: "people-outline" as const, title: "Gestion d'équipe", desc: "Invitez collaborateurs et associés, gérez les rôles et permissions de votre cabinet", color: "#0891b2" },
+  { icon: "language-outline" as const, title: "Multilingue", desc: "Interface disponible en français et anglais, avec thème clair et sombre", color: "#c8a03c" },
 ];
 
-export default function LandingFeatures({ isMobile, isTablet }: Props) {
-  const { colors } = useTheme();
-  const { t } = useTranslation();
-
-  const cols = isMobile ? 1 : isTablet ? 2 : 3;
-
+export default function LandingFeatures({ isMobile, loaded }: Props) {
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={[styles.sectionTitle, { color: colors.text }]}>
-        {t("landing.featuresTitle")}
+    <View
+      style={{
+        maxWidth: 1060,
+        alignSelf: "center",
+        width: "100%",
+        paddingHorizontal: 24,
+        paddingBottom: 60,
+      }}
+    >
+      <Text
+        style={{
+          fontFamily: fonts.headingBlack,
+          fontWeight: fontWeights.headingBlack,
+          fontSize: isMobile ? 28 : 36,
+          color: "#e8e6e1",
+          textAlign: "center",
+          marginBottom: 8,
+        }}
+      >
+        Tout ce dont vous avez besoin
       </Text>
-      <Text style={[styles.sectionSubtitle, { color: colors.textSecondary }]}>
-        {t("landing.featuresSubtitle")}
+      <Text
+        style={{
+          fontSize: isMobile ? 14 : 16,
+          color: "#5a5a65",
+          textAlign: "center",
+          fontFamily: fonts.light,
+          fontWeight: fontWeights.light,
+          marginBottom: 36,
+        }}
+      >
+        Une plateforme complète pour maîtriser la fiscalité africaine
       </Text>
-
       <View
-        style={[
-          styles.grid,
-          {
-            flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: cols === 1 ? "center" : "center",
-            maxWidth: 1200,
-          },
-        ]}
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 16,
+        }}
       >
         {FEATURES.map((feat, i) => (
           <View
             key={i}
-            style={[
-              styles.card,
-              {
-                backgroundColor: colors.card,
-                borderColor: colors.border,
-                width: cols === 1 ? "100%" : cols === 2 ? "47%" : "30%",
-              },
-            ]}
+            style={{
+              width: isMobile ? "100%" : "48%",
+              flexGrow: 1,
+              flexBasis: isMobile ? "100%" : 220,
+              backgroundColor: "rgba(255,255,255,0.015)",
+              borderWidth: 1,
+              borderColor: "rgba(255,255,255,0.05)",
+              borderRadius: 16,
+              padding: isMobile ? 22 : 28,
+              opacity: loaded ? 1 : 0,
+            }}
           >
-            <View style={[styles.iconCircle, { backgroundColor: feat.color + "15" }]}>
-              <Ionicons name={feat.icon} size={28} color={feat.color} />
+            <View
+              style={{
+                width: 44,
+                height: 44,
+                borderRadius: 12,
+                backgroundColor: `${feat.color}15`,
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: 12,
+              }}
+            >
+              <Ionicons name={feat.icon} size={22} color={feat.color} />
             </View>
-            <Text style={[styles.cardTitle, { color: colors.text }]}>
-              {t(feat.titleKey)}
+            <Text
+              style={{
+                fontSize: 15,
+                fontFamily: fonts.bold,
+                fontWeight: fontWeights.bold,
+                color: "#e8e6e1",
+                marginBottom: 6,
+              }}
+            >
+              {feat.title}
             </Text>
-            <Text style={[styles.cardDesc, { color: colors.textSecondary }]}>
-              {t(feat.descKey)}
+            <Text
+              style={{
+                fontSize: 13,
+                color: "#5a5a65",
+                lineHeight: 20,
+                fontFamily: fonts.light,
+                fontWeight: fontWeights.light,
+              }}
+            >
+              {feat.desc}
             </Text>
           </View>
         ))}
@@ -74,51 +118,3 @@ export default function LandingFeatures({ isMobile, isTablet }: Props) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    paddingVertical: 60,
-    paddingHorizontal: 20,
-    alignItems: "center",
-  },
-  sectionTitle: {
-    fontSize: 32,
-    fontWeight: "800",
-    textAlign: "center",
-    marginBottom: 10,
-  },
-  sectionSubtitle: {
-    fontSize: 16,
-    textAlign: "center",
-    marginBottom: 40,
-    maxWidth: 500,
-  },
-  grid: {
-    width: "100%",
-    gap: 16,
-    alignSelf: "center",
-  },
-  card: {
-    borderWidth: 1,
-    borderRadius: 0,
-    padding: 24,
-    minHeight: 160,
-  },
-  iconCircle: {
-    width: 52,
-    height: 52,
-    borderRadius: 0,
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 14,
-  },
-  cardTitle: {
-    fontSize: 17,
-    fontWeight: "700",
-    marginBottom: 6,
-  },
-  cardDesc: {
-    fontSize: 14,
-    lineHeight: 20,
-  },
-});

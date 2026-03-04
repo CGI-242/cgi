@@ -19,6 +19,7 @@ import { useToast } from "@/components/ui/ToastProvider";
 import MyPermissionsCard from "@/components/permissions/MyPermissionsCard";
 import MemberSelector from "@/components/permissions/MemberSelector";
 import PermissionToggles from "@/components/permissions/PermissionToggles";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function PermissionsScreen() {
   const { colors } = useTheme();

@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import type { MfaStatus } from "@/lib/api/mfa";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface MfaStatusCardProps {
   status: MfaStatus | null;
@@ -36,7 +37,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
           />
           <View>
             <Text
-              style={{ fontSize: 16, fontWeight: "700", color: colors.text }}
+              style={{ fontSize: 16, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}
             >
               {t("security.mfa2fa")}
             </Text>

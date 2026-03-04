@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 
@@ -114,11 +115,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
           }}
         >
           {isCollapsed ? (
-            <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 22 }}>C</Text>
+            <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 20 }}>CGI 242</Text>
-              <Text style={{ color: colors.textMuted, fontSize: 11 }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20 }}>CGI 242</Text>
+              <Text style={{ color: colors.textMuted, fontSize: 11, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!isCollapsed && (
@@ -178,6 +179,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
                     style={{
                       color: active ? colors.accent : colors.sidebarText,
                       fontSize: 14,
+                      fontFamily: fonts.regular,
                       fontWeight: active ? "700" : "400",
                     }}
                   >
@@ -193,7 +195,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
                         marginLeft: 8,
                       }}
                     >
-                      <Text style={{ fontSize: 9, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
+                      <Text style={{ fontSize: 9, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   )}
                 </View>
@@ -231,6 +233,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute, mobileOpen,
                   style={{
                     color: item.color || colors.sidebarText,
                     fontSize: 14,
+                    fontFamily: fonts.regular,
                     fontWeight: item.color ? "600" : "400",
                     marginLeft: 12,
                   }}

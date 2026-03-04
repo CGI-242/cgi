@@ -2,9 +2,12 @@ import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform
 import { useState, useCallback } from "react";
 import { router, useFocusEffect } from "expo-router";
 import { useTranslation } from "react-i18next";
+import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AuthLogo from "@/components/auth/AuthLogo";
 
 const LEGAL_URLS = {
   aide: "https://cgi242.normx.ai/aide",
@@ -14,7 +17,7 @@ const LEGAL_URLS = {
 
 export default function LoginEmail() {
   const { t } = useTranslation();
-  const { colors } = useTheme();
+  const { colors, mode, toggleTheme } = useTheme();
   const { isMobile } = useResponsive();
   const [email, setEmailLocal] = useState("");
   const [error, setError] = useState("");
@@ -45,34 +48,28 @@ export default function LoginEmail() {
       style={{ flex: 1, backgroundColor: colors.background }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
-          {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-              Intelligence Fiscale IA
-            </Text>
-          </View>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: colors.card, padding: isMobile ? 24 : 40, borderWidth: 1, borderColor: colors.border }}>
+          <AuthLogo size="lg" />
 
           {/* Titre */}
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>{t("auth.login")}</Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 6 }}>{t("auth.login")}</Text>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 28 }}>
             {t("auth.enterEmail")}
           </Text>
 
           {/* Erreur */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Email */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
             Email <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 14, fontSize: 16, color: colors.text, marginBottom: 24, borderWidth: 1, borderColor: colors.border }}
             placeholder={t("auth.emailPlaceholder")}
             placeholderTextColor={colors.textMuted}
             value={email}
@@ -85,25 +82,28 @@ export default function LoginEmail() {
             autoComplete="email"
             returnKeyType="next"
             onSubmitEditing={handleContinue}
+            accessibilityLabel={t("auth.emailPlaceholder")}
           />
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 8, opacity: navigating ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", marginTop: 4, opacity: navigating ? 0.7 : 1 }}
             onPress={handleContinue}
             activeOpacity={0.8}
             disabled={navigating}
+            accessibilityLabel={t("auth.continue")}
+            accessibilityRole="button"
           >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebar, fontSize: 16 }}>
               {t("auth.continue")}
             </Text>
           </TouchableOpacity>
 
           {/* Lien inscription */}
-          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 24 }}>
-            <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("auth.noAccount")} </Text>
-            <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
-              <Text style={{ fontSize: 14, color: colors.primary, fontWeight: "600", textDecorationLine: "underline" }}>
+          <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 28 }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted }}>{t("auth.noAccount")} </Text>
+            <TouchableOpacity onPress={() => router.push("/(auth)/register")} accessibilityLabel={t("auth.createCompany")} accessibilityRole="link">
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
                 {t("auth.createCompany")}
               </Text>
             </TouchableOpacity>
@@ -111,15 +111,18 @@ export default function LoginEmail() {
         </View>
 
         {/* Footer */}
-        <View style={{ flexDirection: "row", gap: 32, marginTop: 24 }}>
+        <View style={{ flexDirection: "row", gap: 24, marginTop: 24, alignItems: "center" }}>
+          <TouchableOpacity onPress={toggleTheme} style={{ padding: 6 }} accessibilityLabel={t("auth.toggleTheme")} accessibilityRole="button">
+            <Ionicons name={mode === "dark" ? "sunny-outline" : "moon-outline"} size={18} color={colors.textMuted} />
+          </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.aide)}>
-            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.confidentialite)}>
-            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.conditions)}>
-            <Text style={{ fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
           </TouchableOpacity>
         </View>
       </View>

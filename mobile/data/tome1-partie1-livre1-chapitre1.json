@@ -13,10 +13,10 @@
   },
   "articles": [
     {
-      "article": "Art. 1er",
+      "article": "Art. 1",
       "titre": "Principe de l'impôt sur les sociétés",
       "texte": [
-        "Il est établi un impôt sur l'ensemble des bénéfices ou revenus réalisés par les sociétés et autres personnes morales.",
+        "(L.F.2026) Il est établi un impôt sur l'ensemble des bénéfices ou revenus réalisés par les sociétés et autres personnes morales.",
         "Cet impôt annuel est désigné sous le nom d'impôt sur les sociétés en abrégé IS."
       ],
       "mots_cles": [
@@ -34,7 +34,7 @@
       "article": "Art. 2",
       "titre": "Personnes imposables à l'impôt sur les sociétés",
       "texte": [
-        "Sont imposables à l'impôt sur les sociétés :",
+        "(L.F.2026) Sont imposables à l'impôt sur les sociétés :",
         "",
         "1) En raison de leur forme :",
         "a) les sociétés de capitaux, quel que soit leurs objets, notamment les sociétés anonymes, les sociétés par actions simplifiées et les sociétés à responsabilité limitée, y compris lorsqu'elles sont unipersonnelles ;",
@@ -53,8 +53,7 @@
         "c) les syndicats financiers ;",
         "d) les sociétés civiles de personnes.",
         "",
-        "L'option est irrévocable et ne peut pas être exercée par les sociétés de personnes issues de la transformation antérieure de sociétés de capitaux.",
-        "Cette option doit être notifiée à l'administration fiscale au plus tard le 30 octobre de l'année en cours.",
+        "L'option est irrévocable et ne peut pas être exercée par les sociétés de personnes issues de la transformation antérieure de sociétés de capitaux. Cette option doit être notifiée à l'administration fiscale au plus tard le 30 octobre de l'année en cours.",
         "",
         "À défaut d'option, l'impôt sur les sociétés s'applique sur la part des bénéfices correspondant aux droits :",
         "a) des commanditaires dans les sociétés en commandite simple ;",
@@ -87,7 +86,7 @@
       "article": "Art. 3",
       "titre": "Exonérations de l'impôt sur les sociétés",
       "texte": [
-        "Sont exonérées de l'impôt sur les sociétés :",
+        "(L.F.2025) Sont exonérées de l'impôt sur les sociétés :",
         "",
         "1. la Banque des États de l'Afrique Centrale (BEAC) et la Banque de Développement des États de l'Afrique Centrale (BDEAC), dans le respect des accords communautaires relatifs à ces institutions ;",
         "2. les sociétés coopératives de production, de transformation, de conservation et de vente de produits agricoles, ainsi que leurs unions, à condition que ces sociétés fonctionnent conformément aux dispositions qui les régissent et qu'elles revêtent la forme civile ;",
@@ -128,10 +127,10 @@
       "section": "Section 2 : Champ d'application - Sous-section 2 : Exonérations et crédits d'impôts"
     },
     {
-      "article": "Art. 3 A",
+      "article": "Art. 3-A",
       "titre": "Crédit d'impôt sur les sociétés pour investissement",
       "texte": [
-        "Le crédit d'impôt sur les sociétés pour investissement est établi comme mesure incitative visant à soutenir le développement d'un secteur ou d'une région économique jugés stratégiques.",
+        "(L.F.2026) Le crédit d'impôt sur les sociétés pour investissement est établi comme mesure incitative visant à soutenir le développement d'un secteur ou d'une région économique jugés stratégiques.",
         "",
         "Le crédit d'impôt pour investissement repose sur les dépenses réellement encourues pour l'acquisition auprès d'une société sans lien de dépendance de matériels, outillages et/ou bâtiments commerciaux ou industriels et ne peut excéder 15 % de ce montant.",
         "La liste des biens dont l'acquisition donne droit à un crédit d'impôt est déterminée par la loi de finances.",
@@ -162,13 +161,15 @@
       "article": "Art. 4",
       "titre": "Territorialité de l'impôt sur les sociétés",
       "texte": [
-        "Toute entreprise industrielle, commerciale ou agricole installée au Congo doit y posséder son siège social.",
+        "(L.F.2026) Toute entreprise industrielle, commerciale ou agricole installée au Congo doit y posséder son siège social.",
         "",
         "Les bénéfices imposables sont les bénéfices réalisés par les entreprises exploitées au Congo ou en provenant pour les entreprises visées au dernier alinéa du présent article.",
         "",
         "Sont réputées exploitées au Congo :",
         "- les sociétés et autres entreprises résidentes au Congo, c'est-à-dire celles qui y sont immatriculées ou qui y ont leur lieu de direction effective ;",
-        "- les sociétés et autres entreprises non-résidentes disposant d'un établissement stable au Congo."
+        "- les sociétés et autres entreprises non-résidentes disposant d'un établissement stable au Congo.",
+        "",
+        "Les sociétés étrangères visées à l'article 92 du présent Code qui ne disposent pas d'un établissement au Congo, relèvent, pour leur imposition, de la compétence territoriale des services dans la circonscription desquels elles exercent leurs activités."
       ],
       "mots_cles": [
         "territorialité IS",
@@ -182,12 +183,12 @@
       "section": "Section 2 : Champ d'application - Sous-section 3 : Territorialité"
     },
     {
-      "article": "Art. 4 A",
+      "article": "Art. 4-A",
       "titre": "Définition de l'établissement stable",
       "texte": [
-        "L'expression « établissement stable » désigne une installation fixe d'affaires par l'intermédiaire de laquelle l'entreprise exerce tout ou partie de son activité.",
+        "(L.F.2026) L'expression « établissement stable » désigne une installation fixe d'affaires par l'intermédiaire de laquelle l'entreprise exerce tout ou partie de son activité.",
         "",
-        "4A.1. Constituent notamment des établissements stables :",
+        "1) Constituent notamment des établissements stables :",
         "- un siège de direction ou d'exploitation ;",
         "- une succursale ;",
         "- un entrepôt ;",
@@ -197,11 +198,11 @@
         "- une mine, un puit de pétrole ou de gaz, carrière ou autre lieu d'extraction de ressources naturelles ;",
         "- une installation ou structure servant à la prospection ou l'exploitation de ressources naturelles.",
         "",
-        "4A.2. Sont réputés posséder la qualité d'établissement stable :",
+        "2) Sont réputés posséder la qualité d'établissement stable :",
         "- un chantier de construction, un projet de montage ou d'installation ou des activités de surveillance s'y exerçant lorsque ce chantier, ce projet ou ces activités ont une durée supérieure à trois (3) mois ;",
         "- la fourniture de services, y compris les services de consultants, par une entreprise agissant par l'intermédiaire de salariés ou d'autre personnel engagé par l'entreprise à cette fin, à condition que les activités de cette nature se poursuivent pour le même projet ou un projet connexe sur le territoire du Congo pendant une ou des périodes représentant un total de plus de cent quatre-vingt-trois (183) jours dans les limites d'une période quelconque de douze mois.",
         "",
-        "4A.3. Il n'y a pas établissement stable lorsque :",
+        "3) Il n'y a pas établissement stable lorsque :",
         "a) il est fait usage d'installations aux seules fins de stockage ou d'exposition de marchandises appartenant à l'entreprise ;",
         "b) des marchandises appartenant à l'entreprise sont entreposées aux seules fins de stockage ou d'exposition ;",
         "c) des marchandises appartenant à l'entreprise sont entreposées aux seules fins de transformation par une autre entreprise ;",
@@ -211,31 +212,31 @@
         "",
         "à condition que cette activité, ou que, dans le cas visé au tiret e) du présent article, l'activité d'ensemble de l'installation fixe d'affaires revête un caractère préparatoire ou auxiliaire.",
         "",
-        "4A.4. Le paragraphe 4A.3. ci-dessus ne s'applique pas à une installation fixe d'affaires utilisée ou détenue par une entreprise si la même entreprise, ou une entreprise qui lui est étroitement liée, exerce des activités dans la même installation ou dans une autre installation sise au Congo et :",
+        "4) Le paragraphe 3) ci-dessus ne s'applique pas à une installation fixe d'affaires utilisée ou détenue par une entreprise si la même entreprise, ou une entreprise qui lui est étroitement liée, exerce des activités dans la même installation ou dans une autre installation sise au Congo et :",
         "a) si cette installation ou cette autre installation constitue un établissement stable pour l'entreprise ou pour l'entreprise étroitement liée en vertu des dispositions du présent article ;",
         "b) ou si l'activité d'ensemble résultant du cumul des activités exercées par les deux entreprises dans la même installation, ou par la même entreprise ou des entreprises étroitement liées dans les deux installations, ne revêt pas un caractère préparatoire ou auxiliaire ;",
         "c) ou encore si les activités d'entreprise exercées par les deux entreprises dans la même installation, ou par la même entreprise ou des entreprises étroitement liées dans les deux installations, constituent des fonctions complémentaires qui s'inscrivent dans un ensemble cohérent d'activités d'entreprise.",
         "",
-        "4A.5. Nonobstant les dispositions des paragraphes 4A.1. et 4A.2., mais sous réserve des dispositions du paragraphe 4A.8., lorsqu'une personne agit dans un État membre pour le compte d'une entreprise, cette entreprise est réputée avoir un établissement stable dans cet État pour toutes les activités que cette personne exerce pour l'entreprise, si cette personne :",
+        "5) Nonobstant les dispositions des paragraphes 1) et 2), mais sous réserve des dispositions du paragraphe 8), lorsqu'une personne agit dans un État membre pour le compte d'une entreprise, cette entreprise est réputée avoir un établissement stable dans cet État pour toutes les activités que cette personne exerce pour l'entreprise, si cette personne :",
         "a) conclut habituellement des contrats ou joue habituellement le rôle principal menant à la conclusion de contrats qui, de façon routinière, sont conclus sans modification importante par l'entreprise, et que ces contrats sont :",
         "- au nom de l'entreprise ;",
         "- ou pour le transfert de la propriété de biens, ou pour la concession du droit d'utiliser des biens, appartenant à cette entreprise ou que l'entreprise a le droit d'utiliser ;",
         "- ou pour la prestation de services par cette entreprise.",
         "",
-        "à moins que les activités de cette personne ne soient limitées à celles qui sont mentionnées au paragraphe 4A.3. et qui, si elles étaient exercées par l'intermédiaire d'une installation fixe d'affaires, ne permettraient pas de considérer cette installation comme un établissement stable selon les dispositions de ce paragraphe ;",
+        "à moins que les activités de cette personne ne soient limitées à celles qui sont mentionnées au paragraphe 3) et qui, si elles étaient exercées par l'intermédiaire d'une installation fixe d'affaires, ne permettraient pas de considérer cette installation comme un établissement stable selon les dispositions de ce paragraphe ;",
         "",
         "b) ne conclut pas habituellement des contrats ni ne joue habituellement le rôle principal menant à la conclusion de contrats, mais maintient de manière habituelle dans cet État membre des stocks de marchandises à partir desquels cette personne livre de manière régulière des marchandises pour le compte de l'entreprise.",
         "",
-        "4A.6. Nonobstant les dispositions des paragraphes 4A.1. à 4A.5., une entreprise d'assurances non-résidente dans un État membre est, sauf en matière de réassurance, considérée comme ayant un établissement stable dans cet État si elle y perçoit des primes ou assure des risques qui y sont courus par l'intermédiaire d'un employé ou d'un représentant qui n'entre pas dans la catégorie de personnes visées au paragraphe 4A.8. ci-après.",
+        "6) Nonobstant les dispositions des paragraphes 1) à 5), une entreprise d'assurances non-résidente dans un État membre est, sauf en matière de réassurance, considérée comme ayant un établissement stable dans cet État si elle y perçoit des primes ou assure des risques qui y sont courus par l'intermédiaire d'un employé ou d'un représentant qui n'entre pas dans la catégorie de personnes visées au paragraphe 8) ci-après.",
         "",
-        "Les paragraphes 4A.5. et 4A.6. ne s'appliquent pas lorsque la personne qui agit au Congo pour le compte d'une entreprise non-résidente exerce au Congo une activité d'entreprise comme agent indépendant et agit pour l'entreprise dans le cadre ordinaire de cette activité.",
+        "Les paragraphes 5) et 6) ne s'appliquent pas lorsque la personne qui agit au Congo pour le compte d'une entreprise non-résidente exerce au Congo une activité d'entreprise comme agent indépendant et agit pour l'entreprise dans le cadre ordinaire de cette activité.",
         "Toutefois, lorsqu'une personne agit exclusivement ou presque exclusivement pour le compte d'une ou de plusieurs entreprises auxquelles elle est étroitement liée, cette personne n'est pas considérée comme un agent indépendant au sens du présent paragraphe en ce qui concerne chacune de ces entreprises.",
         "",
-        "4A.7. Le fait qu'une société qui est un résident du Congo contrôle ou soit contrôlée par une société non-résidente ne suffit pas, en lui-même, à faire de l'une quelconque de ces sociétés un établissement stable de l'autre.",
+        "7) Le fait qu'une société qui est un résident du Congo contrôle ou soit contrôlée par une société non-résidente ne suffit pas, en lui-même, à faire de l'une quelconque de ces sociétés un établissement stable de l'autre.",
         "",
-        "4A.8. Aux fins du présent article, une personne ou une entreprise est étroitement liée à une entreprise si, compte tenu de l'ensemble des faits et circonstances pertinents, l'une contrôle l'autre ou toutes deux sont sous le contrôle des mêmes personnes ou entreprises.",
+        "8) Aux fins du présent article, une personne ou une entreprise est étroitement liée à une entreprise si, compte tenu de l'ensemble des faits et circonstances pertinents, l'une contrôle l'autre ou toutes deux sont sous le contrôle des mêmes personnes ou entreprises.",
         "",
-        "4A.9. Dans tous les cas, une personne ou une entreprise sera considérée comme étroitement liée à une entreprise si l'une détient directement ou indirectement plus de 50 % du total des droits de vote et de la valeur des actions de la société ou des droits ou participations effectives dans les capitaux propres de la société, ou si une autre personne ou entreprise détient directement ou indirectement plus de 50 % du total des droits de vote et de la valeur des actions de la société ou des droits ou participations effectives dans les capitaux propres de la société dans la personne et l'entreprise ou dans les deux entreprises."
+        "9) Dans tous les cas, une personne ou une entreprise sera considérée comme étroitement liée à une entreprise si l'une détient directement ou indirectement plus de 50 % du total des droits de vote et de la valeur des actions de la société ou des droits ou participations effectives dans les capitaux propres de la société, ou si une autre personne ou entreprise détient directement ou indirectement plus de 50 % du total des droits de vote et de la valeur des actions de la société ou des droits ou participations effectives dans les capitaux propres de la société dans la personne et l'entreprise ou dans les deux entreprises."
       ],
       "mots_cles": [
         "établissement stable",
@@ -1923,7 +1924,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 1 : Période d'imposition"
     },
     {
-      "article": "Art. 86 A",
+      "article": "Art. 86-A",
       "titre": "Taux de l'impôt sur les sociétés",
       "texte": [
         "1. Pour le calcul de l'impôt sur les sociétés, toute fraction du bénéfice imposable inférieure à 1.000 FCFA est négligée.",
@@ -1946,7 +1947,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86 B",
+      "article": "Art. 86-B",
       "titre": "Imputation de l'IRVM sur l'IS",
       "texte": [
         "1) Sur justification, l'impôt sur le revenu des valeurs mobilières (IRVM) déjà acquitté sur les revenus visés aux articles 105 à 110A du présent Code, et inclus dans les produits déclarés par la société ou la personne morale, est imputé sur le montant de l'impôt à sa charge en vertu du présent chapitre.",
@@ -1968,7 +1969,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86 C",
+      "article": "Art. 86-C",
       "titre": "Minimum de perception",
       "texte": [
         "1. Le montant de l'impôt sur les sociétés ne peut être inférieur à un minimum de perception. Ce minimum résulte de l'application d'un taux et d'une base imposable.",
@@ -1997,7 +1998,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86 D",
+      "article": "Art. 86-D",
       "titre": "Retenue d'IS sur prestations et redevances versées à des non-résidents",
       "texte": [
         "Sous réserve de l'application des conventions fiscales internationales, il est fait une retenue d'impôt sur les sociétés sur les paiements faits par une société résidente ou pour le compte d'un établissement stable d'une société non-résidente en contrepartie des prestations de services rendues par des non-résidents ou des redevances versées à eux, au taux de 20%.",
@@ -2020,7 +2021,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86 E",
+      "article": "Art. 86-E",
       "titre": "Déclarations d'existence et modifications",
       "texte": [
         "Les sociétés, entreprises et associations visées à l'article 2 du présent code sont tenues de faire à la résidence fiscale compétente, des déclarations d'existence, de modification du pacte social et des conditions d'exercice de la profession, dans les trois mois de leur constitution définitive et au plus tard dans les quinze jours du commencement d'activité, dans les conditions fixées au Tome 2, livre 3 article 19 du CGI.",
@@ -2037,7 +2038,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
     },
     {
-      "article": "Art. 86 F",
+      "article": "Art. 86-F",
       "titre": "Déclarations de résultats et pièces annexes",
       "texte": [
         "1) Les personnes morales et associations passibles de l'impôt sur les sociétés (IS) sont tenues de souscrire les déclarations prévues dans les dispositions communes pour la détermination de l'assiette de l'IS et de l'impôt sur le bénéfice des affaires.",
@@ -2060,7 +2061,7 @@
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
     },
     {
-      "article": "Art. 86 G",
+      "article": "Art. 86-G",
       "titre": "Versement spontané de l'IS",
       "texte": [
         "Toutes les sociétés ou personnes morales soumises à l'impôt sur les sociétés sont assujetties au versement de cet impôt sans émission préalable d'un rôle.",
@@ -2102,7 +2103,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 1 : Régimes des sociétés mère et filiales"
     },
     {
-      "article": "Art. 87 A",
+      "article": "Art. 87-A",
       "titre": "Subventions et abandons de créances intragroupe",
       "texte": [
         "Les subventions et remises de dettes entre sociétés mères et filiales sont soumises au régime particulier suivant :",
@@ -2161,7 +2162,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89 A",
+      "article": "Art. 89-A",
       "titre": "Base forfaitaire d'imposition",
       "texte": [
         "Par dérogation aux dispositions des Articles 8 à 11 ci-dessus, les quartiers généraux installés sous forme de sociétés par actions ou succursales, qui rendent des prestations correspondant à des fonctions de direction, de gestion, de coordination ou de contrôle exclusivement à des sociétés du groupe dont ils sont issus, sont soumis à l'impôt sur les sociétés sur la base d'un calcul forfaitaire en fonction de l'ensemble de leurs dépenses suivant le taux fixé à l'Article 86A ci-dessus."
@@ -2178,7 +2179,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89 B",
+      "article": "Art. 89-B",
       "titre": "Objet exclusif du quartier général",
       "texte": [
         "Le quartier général doit avoir pour objet exclusivement le développement et la centralisation, au profit des sociétés du groupe, la fourniture des informations, la publicité, la recherche technique, scientifique et technologique, la centralisation des opérations financières et de change, les relations avec les autorités nationales et internationales, ainsi que toutes autres activités ou prestations de services, à condition que celles-ci conservent un caractère préparatoire ou auxiliaire. Il ne peut ni rendre d'autres types de services, ni prendre des participations à l'échelle du groupe."
@@ -2194,7 +2195,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89 C",
+      "article": "Art. 89-C",
       "titre": "Autorisation administrative",
       "texte": [
         "Le bénéfice du régime fiscal des quartiers généraux est subordonné à une autorisation préalable de l'administration fiscale. Un arrêté du Ministre chargé des finances fixe les modalités d'application dudit régime."
@@ -2239,7 +2240,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90 A",
+      "article": "Art. 90-A",
       "titre": "Cession de titres et compensation des plus-values",
       "texte": [
         "Pour l'application du régime, la cession de titres compris dans le portefeuille est réputée porter par priorité sur les titres de même nature acquis ou souscrits à la date la plus ancienne.",
@@ -2259,7 +2260,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90 B",
+      "article": "Art. 90-B",
       "titre": "Exclusion du régime du réemploi",
       "texte": [
         "Les plus-values visées aux deux articles précédents ne peuvent pas bénéficier du régime du réemploi de plus-values prévu par le présent code."
@@ -2275,7 +2276,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90 C",
+      "article": "Art. 90-C",
       "titre": "Exonération de retenue à la source sur intérêts d'emprunts",
       "texte": [
         "3- Autres avantages fiscaux",
@@ -2292,7 +2293,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90 D",
+      "article": "Art. 90-D",
       "titre": "Imposition des dividendes distribués par les holdings",
       "texte": [
         "La distribution de dividendes par les sociétés holding à leurs associés ou actionnaires est soumise à l'impôt sur le revenu des valeurs mobilières au taux égal à la moitié du taux de droit commun."
@@ -2308,7 +2309,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90 E",
+      "article": "Art. 90-E",
       "titre": "Obligations de droit commun",
       "texte": [
         "Hormis les dispositions qui précèdent, les sociétés holding sont soumises aux obligations de droit commun prévues par le présent code."
@@ -2351,7 +2352,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 A",
+      "article": "Art. 91-A",
       "titre": "Qualité de redevable unique de la société intégrante",
       "texte": [
         "2- Le calcul du résultat intégré",
@@ -2368,7 +2369,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 B",
+      "article": "Art. 91-B",
       "titre": "Solidarité de paiement et obligations déclaratives",
       "texte": [
         "Chaque société intégrée du groupe est tenue solidairement au paiement de l'impôt sur les sociétés, le cas échéant, des pénalités de retard, majorations et amendes fiscales correspondantes, dont la société mère est redevable, à hauteur de l'impôt et des pénalités qui seraient dus par la société si celle-ci n'était pas membre du groupe.",
@@ -2385,7 +2386,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 C",
+      "article": "Art. 91-C",
       "titre": "Détermination du résultat d'ensemble et retraitements",
       "texte": [
         "b) Retraitements à opérer",
@@ -2404,7 +2405,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 D",
+      "article": "Art. 91-D",
       "titre": "Déficits et provisions intragroupe",
       "texte": [
         "Si une société du groupe est déficitaire, le déficit est reporté sur le résultat d'ensemble pour une période de trois ans à hauteur d'un tiers (1/3) par an.",
@@ -2424,7 +2425,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 E",
+      "article": "Art. 91-E",
       "titre": "Neutralisation des aides intragroupe",
       "texte": [
         "Les abandons de créances et les subventions entre sociétés du groupe ne sont pas pris en compte pour la détermination du résultat d'ensemble.",
@@ -2442,7 +2443,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 F",
+      "article": "Art. 91-F",
       "titre": "Plus-values et moins-values extra-groupe",
       "texte": [
         "Les plus-values à prendre en compte sont celles réalisées à l'occasion des cessions extra groupe.",
@@ -2461,7 +2462,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 G",
+      "article": "Art. 91-G",
       "titre": "Imputation des crédits d'impôt",
       "texte": [
         "Sur autorisation du directeur général des impôts et des domaines, la société mère peut imputer les crédits d'impôt dont bénéficient les membres du groupe sur l'impôt dont elle est redevable."
@@ -2475,7 +2476,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 H",
+      "article": "Art. 91-H",
       "titre": "Déficits antérieurs à l'entrée dans le groupe",
       "texte": [
         "La société mère ne peut pas imputer les déficits des membres du groupe sur les résultats dudit groupe pour les exercices antérieurs à leur entrée dans le groupe.",
@@ -2493,7 +2494,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91 I",
+      "article": "Art. 91-I",
       "titre": "Dissolution du groupe et sortie d'un membre",
       "texte": [
         "La dissolution du groupe ne peut intervenir qu'à l'issue d'un délai de 5 ans.",
@@ -2540,7 +2541,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 A",
+      "article": "Art. 92-A",
       "titre": "Assiette forfaitaire et exclusions de la base",
       "texte": [
         "1. L'impôt sur les sociétés des personnes morales étrangères définies à l'article 92 est assis sur la base d'un pourcentage forfaitaire du chiffre d'affaires hors taxes réalisé dans la République du Congo.",
@@ -2588,7 +2589,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 B",
+      "article": "Art. 92-B",
       "titre": "Paiement, retenue à la source et ATE",
       "texte": [
         "1) L'impôt sur les sociétés (IS) est payé spontanément et sans émission préalable de rôle sur les bénéfices ou la base imposable telle que définie ci-dessus par la société sous-traitante pétrolière.",
@@ -2617,7 +2618,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 C",
+      "article": "Art. 92-C",
       "titre": "Taux de l'IS personnes morales étrangères",
       "texte": [
         "Le taux de l'impôt sur les sociétés est fixé à l'article 86 A du présent code."
@@ -2630,7 +2631,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 D",
+      "article": "Art. 92-D",
       "titre": "Modalités déclaratives de paiement",
       "texte": [
         "1) Le paiement s'effectue par liasse unique reprenant par fournisseur les données ci-après :",
@@ -2649,7 +2650,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 E",
+      "article": "Art. 92-E",
       "titre": "Sanctions personnes morales étrangères",
       "texte": [
         "Le défaut de déclaration par un contribuable des factures émises, ainsi que l'inexactitude ou l'insuffisance de déclaration sont sanctionnés par une amende fiscale de 100.000 francs par élément omis ou incomplet.",
@@ -2670,7 +2671,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 F",
+      "article": "Art. 92-F",
       "titre": "Mentions obligatoires sur factures",
       "texte": [
         "Pour les prestations imposables, la personne morale étrangère passible de l'impôt, devra porter obligatoirement sur ses factures les mentions :",
@@ -2689,7 +2690,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 G",
+      "article": "Art. 92-G",
       "titre": "Quitus fiscal de sortie du territoire",
       "texte": [
         "L'autorisation de quitter le territoire congolais, pour les personnes morales étrangères, est subordonnée à la présentation d'un quitus fiscal délivré par :",
@@ -2707,7 +2708,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 H",
+      "article": "Art. 92-H",
       "titre": "Demande de quitus et certificat d'imposition",
       "texte": [
         "La demande d'obtention du quitus fiscal et du certificat d'imposition doit être respectivement adressée au directeur général des impôts et des domaines et à l'inspecteur divisionnaire de la résidence fiscale du requérant.",
@@ -2724,7 +2725,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 I",
+      "article": "Art. 92-I",
       "titre": "Enregistrement des contrats pétroliers et obligations déclaratives",
       "texte": [
         "1. Les contrats des sociétés pétrolières avec les personnes morales étrangères (contracteurs) et avec les sous-traitants pétroliers doivent être enregistrés moyennant un droit fixe de 1.000.000 FCFA avant leur exécution.",
@@ -2766,7 +2767,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 J",
+      "article": "Art. 92-J",
       "titre": "Régime dérogatoire lié à l'activité pétrolière",
       "texte": [
         "1) Toutes les personnes morales ayant leur siège social au Congo, ou celles qui exercent au Congo une activité industrielle, commerciale, artisanale, agricole ou prestations de service, par dérogation de l'article 4 du CGI tome 1 et qui sont liées aux sociétés de recherche, de production et d'exploitation pétrolières installées ou opérant au Congo, sont imposées au Congo selon les dispositions des articles 92A à 92I du présent code quel que soit le lieu d'exécution du contrat.",
@@ -2805,7 +2806,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92 K",
+      "article": "Art. 92-K",
       "titre": "Revenus accessoires des sous-traitants pétroliers",
       "texte": [
         "Les revenus accessoires à l'activité principale des sociétés sous-traitantes pétrolières, réalisés à l'occasion de la gestion commerciale desdits sociétés, par livraison de biens et/ou de prestation de services, relèvent de la taxation spécifique édictée par les articles 92 et suivants du Code Général des Impôts."

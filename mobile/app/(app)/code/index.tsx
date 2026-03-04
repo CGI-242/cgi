@@ -8,6 +8,7 @@ import { useDebounce } from "@/lib/hooks/useDebounce";
 import TreeNode from "@/components/code/TreeNode";
 import ContentPanel from "@/components/code/ContentPanel";
 import ChapterReader from "@/components/code/ChapterReader";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const styles = StyleSheet.create({
   sommaire: { borderRightWidth: 1 },
@@ -29,6 +30,7 @@ export default function CodeCGI() {
   const sommaire = useMemo(() => getSommaire(), []);
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("");
+  const [selectedNode, setSelectedNode] = useState<SommaireNode | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<ArticleData | null>(null);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
     tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true,
@@ -55,6 +57,7 @@ export default function CodeCGI() {
 
   const handleSelect = (node: SommaireNode) => {
     setSelected(node.id);
+    setSelectedNode(node);
     setSelectedArticle(null);
 
     const hasChildren = node.children && node.children.length > 0;
@@ -101,7 +104,7 @@ export default function CodeCGI() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Barre de recherche */}
       <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
-        <Text style={{ color: colors.accent, fontWeight: "900", fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
+        <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 18, marginRight: 16 }}>{t("code.title")}</Text>
         <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, paddingHorizontal: 12, paddingVertical: 6 }}>
           <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
@@ -159,7 +162,7 @@ export default function CodeCGI() {
             />
           ) : (
             <ContentPanel
-              selectedNode={readerNode}
+              selectedNode={selectedNode}
               selectedArticle={selectedArticle}
               onSelectArticle={setSelectedArticle}
               onSelectChild={handleSelectChild}

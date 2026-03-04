@@ -1,24 +1,17 @@
 import { useState, useMemo } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-} from "react-native";
+import { View, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import {
-  calculerIts,
-  calculerNombreParts,
-  type SituationFamiliale,
-  type PeriodeRevenu,
-} from "@/lib/services/its.service";
+import { calculerIts, calculerNombreParts, type SituationFamiliale, type PeriodeRevenu } from "@/lib/services/its.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
+import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
+import ResultHighlight from "@/components/simulateur/ResultHighlight";
+import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function ItsScreen() {
   const { t } = useTranslation();
@@ -56,33 +49,21 @@ export default function ItsScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      {/* Layout 50/50 ou vertical sur mobile */}
       <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        {/* Colonne gauche - Formulaire */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          {/* Info banner */}
+          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+            {t("simulateur.its.title")}
+          </Text>
+
           <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>
-              {t("simulateur.its.description")}
-            </Text>
+            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.its.description")}</Text>
           </View>
 
-          {/* Situation familiale + Enfants/QF cote a cote */}
           <View style={{ flexDirection: "row", gap: 10, marginBottom: 12 }}>
-            {/* Gauche : boutons situation empiles */}
-            <View style={{ flex: 1, gap: 4 }}>
+            <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.its.status")}</Text>
-              {SITUATIONS.map((s) => (
-                <TouchableOpacity
-                  key={s.value}
-                  style={{ paddingVertical: 8, alignItems: "center", backgroundColor: situation === s.value ? colors.primary : colors.border }}
-                  onPress={() => setSituation(s.value)}
-                >
-                  <Text style={{ color: situation === s.value ? "#fff" : colors.text, fontSize: 12, fontWeight: "600" }}>{s.label}</Text>
-                </TouchableOpacity>
-              ))}
+              <OptionButtonGroup options={SITUATIONS} selected={situation} onChange={setSituation} direction="column" fontSize={12} />
             </View>
-            {/* Droite : enfants + QF + parts */}
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.its.dependents")}</Text>
               <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
@@ -104,22 +85,16 @@ export default function ItsScreen() {
             </View>
           </View>
 
-          {/* Periode */}
-          <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
-            {(["mensuel", "annuel"] as PeriodeRevenu[]).map((p) => (
-              <TouchableOpacity
-                key={p}
-                style={{ flex: 1, paddingVertical: 8, alignItems: "center", backgroundColor: periode === p ? colors.primary : colors.border }}
-                onPress={() => setPeriode(p)}
-              >
-                <Text style={{ color: periode === p ? "#fff" : colors.text, fontWeight: "700", fontSize: 13 }}>
-                  {p === "mensuel" ? t("simulateur.its.monthly") : t("simulateur.its.annual")}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
+          <OptionButtonGroup
+            options={[
+              { value: "mensuel" as PeriodeRevenu, label: t("simulateur.its.monthly") },
+              { value: "annuel" as PeriodeRevenu, label: t("simulateur.its.annual") },
+            ]}
+            selected={periode}
+            onChange={setPeriode}
+            fontSize={13}
+          />
 
-          {/* Salaire brut */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {periode === "mensuel" ? t("simulateur.its.grossSalaryMonthly") : t("simulateur.its.grossSalaryAnnual")}
           </Text>
@@ -135,30 +110,23 @@ export default function ItsScreen() {
             <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
           </View>
 
-          {/* References */}
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>
-            {t("simulateur.its.legalRef")}
-          </Text>
+          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.its.legalRef")}</Text>
         </ScrollView>
 
-        {/* Colonne droite - Resultats */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
-              {/* Section CALCUL MENSUEL */}
-              <SimulateurSection label={t("simulateur.its.monthlyCalc")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.monthlyCalc")} />
               <TableRow label={t("simulateur.its.grossMonthly")} value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
-              <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color="#b91c1c" />
+              <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color={colors.danger} />
               <TableRow label={t("simulateur.its.netTaxableMonthly")} value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
 
-              {/* Section CALCUL ANNUEL */}
-              <SimulateurSection label={t("simulateur.its.annualCalc")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.annualCalc")} />
               <TableRow label={t("simulateur.its.grossAnnual")} value={formatNumber(result.revenuBrutAnnuel)} />
-              <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color="#b91c1c" />
+              <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color={colors.danger} />
               <TableRow label={t("simulateur.its.netAnnual")} value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
               <TableRow label={t("simulateur.its.netTaxableAnnual")} value={formatNumber(result.revenuNetImposable)} bg={colors.background} bold />
 
-              {/* Quotient familial */}
               <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
                 <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
                   <View>
@@ -169,35 +137,17 @@ export default function ItsScreen() {
                 </View>
               </View>
 
-              {/* Section IMPOT A PAYER */}
-              <SimulateurSection label={t("simulateur.its.taxToPay")} colors={colors} />
+              <SimulateurSection label={t("simulateur.its.taxToPay")} />
               <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
-              <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>{t("simulateur.its.itsMonthly")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#b91c1c" }}>{formatNumber(result.itsMensuel)}</Text>
-                </View>
-              </View>
+              <ResultHighlight label={t("simulateur.its.itsMonthly")} value={formatNumber(result.itsMensuel)} variant="danger" />
 
-              {/* Repartition 35/65 */}
               <TableRow label={t("simulateur.its.employeeShare")} value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg={colors.background} />
               <TableRow label={t("simulateur.its.employerShare")} value={formatNumber(Math.round(result.itsMensuel * 0.65))} />
 
-              {/* Salaire net */}
-              <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: "#166534" }}>{t("simulateur.its.netSalaryMonthly")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: "#166534" }}>{formatNumber(Math.round(result.salaireNetMensuel))}</Text>
-                </View>
-              </View>
+              <ResultHighlight label={t("simulateur.its.netSalaryMonthly")} value={formatNumber(Math.round(result.salaireNetMensuel))} variant="success" />
             </View>
           ) : (
-            <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
-              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
-                {t("simulateur.its.enterSalary")}
-              </Text>
-            </View>
+            <SimulateurEmptyState message={t("simulateur.its.enterSalary")} />
           )}
         </ScrollView>
       </View>

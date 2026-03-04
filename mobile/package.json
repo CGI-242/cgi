@@ -12,11 +12,12 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
-    "postexport": "node scripts/fix-web-module.js",
-    "build:web": "EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api npx expo export --platform web && node scripts/fix-web-module.js",
+    "build:web": "EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api npx expo export --platform web",
     "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@vps-18bd822a.vps.ovh.net:/var/www/cgi242/"
   },
   "dependencies": {
+    "@expo-google-fonts/outfit": "^0.4.3",
+    "@expo-google-fonts/playfair-display": "^0.4.2",
     "@expo/metro-runtime": "~6.1.2",
     "@expo/vector-icons": "^15.0.3",
     "@react-native-async-storage/async-storage": "2.2.0",

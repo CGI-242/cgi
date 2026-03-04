@@ -20,6 +20,7 @@ import SectionHeader from "@/components/parametres/SectionHeader";
 import SettingsRow, { Divider } from "@/components/parametres/SettingsRow";
 import ManagementLinks from "@/components/parametres/ManagementLinks";
 import Constants from "expo-constants";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLAN_LABELS: Record<string, string> = {
   FREE: "Gratuit",

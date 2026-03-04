@@ -32,6 +32,7 @@ import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useToast } from "@/components/ui/ToastProvider";
 import { createLogger } from "@/lib/utils/logger";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const log = createLogger("chat");
 

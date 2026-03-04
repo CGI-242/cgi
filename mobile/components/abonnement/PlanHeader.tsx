@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLAN_COLORS: Record<string, string> = {
   FREE: "#6b7280",
@@ -102,7 +103,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
             marginBottom: 8,
           }}
         >
-          <Text style={{ color: "#fff", fontSize: 18, fontWeight: "900", letterSpacing: 1 }}>
+          <Text style={{ color: "#fff", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 18, letterSpacing: 1 }}>
             {plan}
           </Text>
         </View>
@@ -133,7 +134,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
       </View>
 
       <View style={{ paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12, alignItems: "center" }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>
+        <Text style={{ fontSize: 22, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>
           {PLANS_INFO.find((p) => p.name === plan)?.price || "Gratuit"}
         </Text>
       </View>

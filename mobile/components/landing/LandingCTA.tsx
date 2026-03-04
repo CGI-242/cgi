@@ -1,47 +1,65 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
-import { useTheme } from "@/lib/theme/ThemeContext";
-import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+
+const GOLD = "#c8a03c";
 
 export default function LandingCTA() {
-  const { colors } = useTheme();
-  const { t } = useTranslation();
-
   return (
-    <View style={[styles.container, { backgroundColor: colors.card }]}>
-      <Text style={[styles.title, { color: colors.text }]}>
-        {t("landing.ctaTitle")}
+    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24 }}>
+      <Text
+        style={{
+          fontFamily: fonts.headingBlack,
+          fontWeight: fontWeights.headingBlack,
+          fontSize: 40,
+          color: "#e8e6e1",
+          textAlign: "center",
+          marginBottom: 12,
+        }}
+      >
+        {`Pr\u00eat \u00e0 essayer ?`}
+      </Text>
+      <Text
+        style={{
+          color: "#5a5a65",
+          fontSize: 15,
+          fontFamily: fonts.light,
+          fontWeight: fontWeights.light,
+          marginBottom: 28,
+        }}
+      >
+        {`7 jours gratuits \u2014 Commencez avec le CGI 242`}
       </Text>
       <TouchableOpacity
-        style={[styles.button, { backgroundColor: colors.primary }]}
         onPress={() => router.push("/(auth)/register")}
+        style={{
+          paddingVertical: 15,
+          paddingHorizontal: 38,
+          borderRadius: 12,
+          backgroundColor: GOLD,
+        }}
       >
-        <Text style={styles.buttonText}>{t("landing.ctaButton")}</Text>
+        <Text
+          style={{
+            color: "#08080d",
+            fontSize: 16,
+            fontFamily: fonts.extraBold,
+            fontWeight: fontWeights.extraBold,
+          }}
+        >
+          {`D\u00e9marrer l'essai gratuit`}
+        </Text>
       </TouchableOpacity>
+      <Text
+        style={{
+          marginTop: 14,
+          fontSize: 12,
+          color: "#3a3a45",
+          fontFamily: fonts.regular,
+        }}
+      >
+        Aucune carte bancaire requise
+      </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    paddingVertical: 60,
-    paddingHorizontal: 20,
-    alignItems: "center",
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: "800",
-    textAlign: "center",
-    marginBottom: 24,
-  },
-  button: {
-    borderRadius: 0,
-    paddingVertical: 16,
-    paddingHorizontal: 32,
-  },
-  buttonText: {
-    color: "#ffffff",
-    fontSize: 17,
-    fontWeight: "700",
-  },
-});

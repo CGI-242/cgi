@@ -13,7 +13,7 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#00815d"
+      "backgroundColor": "#08080d"
     },
     "ios": {
       "supportsTablet": true,
@@ -27,7 +27,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#00815d"
+        "backgroundColor": "#08080d"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.normxai.cgi242",
@@ -39,6 +39,7 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
+      "output": "single",
       "lang": "fr"
     },
     "plugins": [
@@ -54,7 +55,7 @@
         "expo-notifications",
         {
           "icon": "./assets/icon.png",
-          "color": "#00815d"
+          "color": "#08080d"
         }
       ],
       "expo-localization"

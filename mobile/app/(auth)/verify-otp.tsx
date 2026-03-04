@@ -9,6 +9,8 @@ import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import OtpInput from "@/components/auth/OtpInput";
 import { createLogger } from "@/lib/utils/logger";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AuthLogo from "@/components/auth/AuthLogo";
 
 const log = createLogger("otp");
 
@@ -113,26 +115,20 @@ export default function VerifyOtp() {
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
-          {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-              Intelligence Fiscale IA
-            </Text>
-          </View>
+          <AuthLogo />
 
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
             {t("auth.verification")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterCodeSentTo", { email })}
           </Text>
 
           {/* Dev code - visible uniquement en mode développement */}
           {__DEV__ && devCode ? (
             <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center" }}>
-              <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
-              <Text style={{ fontSize: 30, fontWeight: "700", color: colors.success, letterSpacing: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 30, color: colors.success, letterSpacing: 4 }}>
                 {devCode}
               </Text>
             </View>
@@ -141,12 +137,12 @@ export default function VerifyOtp() {
           {/* Messages */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
           {success ? (
             <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.success, fontSize: 14 }}>{success}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 14 }}>{success}</Text>
             </View>
           ) : null}
 
@@ -166,17 +162,24 @@ export default function VerifyOtp() {
             onPress={handleVerify}
             activeOpacity={0.8}
             disabled={loading || code.length !== 6}
+            accessibilityLabel={t("auth.verify")}
+            accessibilityRole="button"
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
                 {t("auth.verify")}
               </Text>
             )}
           </TouchableOpacity>
 
-          {/* Renvoyer - handled by OtpInput component above */}
+          {/* Renvoyer le code */}
+          <TouchableOpacity style={{ alignItems: "center", marginTop: 20 }} onPress={handleResend} disabled={cooldown > 0} accessibilityLabel={t("auth.resendCode")} accessibilityRole="button">
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
+              {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
+            </Text>
+          </TouchableOpacity>
         </View>
       </View>
     </KeyboardAvoidingView>

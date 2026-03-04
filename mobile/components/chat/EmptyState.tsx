@@ -6,6 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 import type { SearchHistoryItem } from "@/lib/api/search-history";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type Props = {
   recentSearches: SearchHistoryItem[];
@@ -19,7 +20,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
   return (
     <View style={{ alignItems: "center", paddingTop: 60 }}>
       <Ionicons name="chatbubbles-outline" size={48} color={colors.disabled} />
-      <Text style={{ color: colors.textMuted, fontSize: 16, marginTop: 12, textAlign: "center" }}>
+      <Text style={{ color: colors.textMuted, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 16, marginTop: 12, textAlign: "center" }}>
         {t("chat.emptyState")}
       </Text>
       <Text style={{ color: colors.disabled, fontSize: 13, marginTop: 4, textAlign: "center" }}>

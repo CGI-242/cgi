@@ -2,7 +2,9 @@
 // Bloc de références croisées (articles liés) dans ArticleDetail
 
 import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ArticleData } from "@/lib/data/cgi";
 import type { ArticleReference } from "@/lib/api/chat";
 
@@ -32,6 +34,7 @@ export default function ReferencesBlock({
   onSelectArticle,
 }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   if (loading) {
     return (
@@ -56,14 +59,14 @@ export default function ReferencesBlock({
         marginBottom: 16,
       }}
     >
-      <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary, marginBottom: 10 }}>
-        Articles liés
+      <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
+        {t("code.referencesTitle")}
       </Text>
 
       {references.length > 0 && (
         <View style={{ marginBottom: referencedBy.length > 0 ? 12 : 0 }}>
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
-            Cet article référence :
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 6 }}>
+            {t("code.referencesOut")}
           </Text>
           {references.map((ref) => (
             <TouchableOpacity
@@ -71,11 +74,11 @@ export default function ReferencesBlock({
               onPress={() => onSelectArticle?.(makeArticleData(ref))}
               style={{ flexDirection: "row", alignItems: "center", paddingVertical: 4 }}
             >
-              <Text style={{ fontSize: 13, color: colors.primary, marginRight: 4 }}>→</Text>
-              <Text style={{ fontSize: 13, color: colors.primary, fontWeight: "600" }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.primary, marginRight: 4 }}>→</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.primary }}>
                 Art. {ref.numero}
               </Text>
-              <Text style={{ fontSize: 12, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
                 — {ref.titre}
               </Text>
             </TouchableOpacity>
@@ -85,8 +88,8 @@ export default function ReferencesBlock({
 
       {referencedBy.length > 0 && (
         <View>
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
-            Référencé par :
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 6 }}>
+            {t("code.referencesIn")}
           </Text>
           {referencedBy.map((ref) => (
             <TouchableOpacity
@@ -94,11 +97,11 @@ export default function ReferencesBlock({
               onPress={() => onSelectArticle?.(makeArticleData(ref))}
               style={{ flexDirection: "row", alignItems: "center", paddingVertical: 4 }}
             >
-              <Text style={{ fontSize: 13, color: colors.accent, marginRight: 4 }}>←</Text>
-              <Text style={{ fontSize: 13, color: colors.accent, fontWeight: "600" }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.accent, marginRight: 4 }}>←</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.accent }}>
                 Art. {ref.numero}
               </Text>
-              <Text style={{ fontSize: 12, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
                 — {ref.titre}
               </Text>
             </TouchableOpacity>

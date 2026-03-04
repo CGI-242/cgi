@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
+import { useTranslation } from "react-i18next";
 import type { Citation } from "@/lib/api/chat";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -14,6 +15,7 @@ type Props = {
 
 export default function CitationsBlock({ citations }: Props) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const visibleCitations = expanded ? citations : citations.slice(0, MAX_VISIBLE);
   const hiddenCount = citations.length - MAX_VISIBLE;
@@ -30,7 +32,7 @@ export default function CitationsBlock({ citations }: Props) {
       }}
     >
       <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary, marginBottom: 6 }}>
-        Sources CGI
+        {t("code.cgiSources")}
       </Text>
       {visibleCitations.map((cit, i) => (
         <View
@@ -41,7 +43,7 @@ export default function CitationsBlock({ citations }: Props) {
             padding: 8,
             marginBottom: i < visibleCitations.length - 1 ? 4 : 0,
             borderWidth: 1,
-            borderColor: "#d1fae5",
+            borderColor: colors.primary + "30",
           }}
         >
           <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary }}>
@@ -58,14 +60,14 @@ export default function CitationsBlock({ citations }: Props) {
       {!expanded && hiddenCount > 0 && (
         <TouchableOpacity onPress={() => setExpanded(true)} style={{ marginTop: 6 }}>
           <Text style={{ fontSize: 11, color: colors.primary, fontWeight: "600" }}>
-            Voir {hiddenCount} autre{hiddenCount > 1 ? "s" : ""} source{hiddenCount > 1 ? "s" : ""}
+            {t("code.showMoreSources", { count: hiddenCount })}
           </Text>
         </TouchableOpacity>
       )}
       {expanded && hiddenCount > 0 && (
         <TouchableOpacity onPress={() => setExpanded(false)} style={{ marginTop: 6 }}>
           <Text style={{ fontSize: 11, color: colors.primary, fontWeight: "600" }}>
-            Réduire
+            {t("code.reduceSources")}
           </Text>
         </TouchableOpacity>
       )}

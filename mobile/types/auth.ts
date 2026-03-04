@@ -20,6 +20,7 @@ export interface Entreprise {
 
 export interface RegisterPayload {
   entrepriseNom?: string;
+  pays?: string;
   nom: string;
   prenom: string;
   email: string;

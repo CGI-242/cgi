@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { SommaireNode } from "@/lib/data/cgi";
 
 type Props = {
@@ -41,8 +42,8 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
         {hasChildren ? (
           <Ionicons
             name={isExpanded ? "chevron-down" : "chevron-forward"}
-            size={14}
-            color="#00815d"
+            size={16}
+            color={colors.primary}
             style={{ marginRight: 6 }}
           />
         ) : (
@@ -50,10 +51,11 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
         )}
         <Text
           style={{
-            fontSize: 12,
+            fontFamily: isSelected ? fonts.semiBold : fonts.regular,
+            fontWeight: isSelected ? fontWeights.semiBold : fontWeights.regular,
+            fontSize: 14,
             flex: 1,
             color: isSelected ? colors.primary : colors.text,
-            fontWeight: isSelected ? "bold" : "normal",
           }}
           numberOfLines={2}
         >

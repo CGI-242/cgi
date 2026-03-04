@@ -25,6 +25,7 @@ import PendingInvitations from "@/components/organisation/PendingInvitations";
 import DangerZone from "@/components/organisation/DangerZone";
 import SeatRequestSection from "@/components/organisation/SeatRequestSection";
 import NoOrganisation from "@/components/organisation/NoOrganisation";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function OrganisationScreen() {
   const { colors } = useTheme();

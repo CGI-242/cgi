@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { Organization } from "@/lib/api/organization";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface OrgHeaderProps {
   org: Organization;
@@ -78,7 +79,7 @@ export default function OrgHeader({
             </View>
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{org.name}</Text>
+              <Text style={{ fontSize: 18, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>{org.name}</Text>
               {isAdmin && (
                 <TouchableOpacity onPress={onStartEdit} style={{ marginLeft: 8 }}>
                   <Ionicons name="create-outline" size={18} color={colors.primary} />

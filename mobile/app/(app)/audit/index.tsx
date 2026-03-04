@@ -11,6 +11,7 @@ import AuditStatsCards from "@/components/audit/AuditStatsCards";
 import ActionFilters from "@/components/audit/ActionFilters";
 import AuditLogItem from "@/components/audit/AuditLogItem";
 import EntityHistoryModal from "@/components/audit/EntityHistoryModal";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function AuditScreen() {
   const { colors } = useTheme();

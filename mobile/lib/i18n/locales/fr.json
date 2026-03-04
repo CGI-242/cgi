@@ -110,7 +110,12 @@
     "joinTeam": "Rejoindre une équipe",
     "invitedDescription": "Vous avez été invité à rejoindre une organisation",
     "invitedBanner": "Vous avez été invité à rejoindre une organisation. Créez votre compte pour accepter l'invitation.",
-    "rememberMe": "Se souvenir de moi"
+    "rememberMe": "Se souvenir de moi",
+    "tagline": "L'intelligence fiscale africaine",
+    "country": "Pays",
+    "chooseCountry": "Choisir un pays",
+    "toggleTheme": "Changer le thème",
+    "togglePassword": "Afficher ou masquer le mot de passe"
   },
   "passwordStrength": {
     "minLength": "12 caractères minimum",
@@ -259,7 +264,20 @@
     "repealed": "Abrogé",
     "modified": "Modifié",
     "references": "Références croisées",
-    "relatedArticles": "Articles liés"
+    "relatedArticles": "Articles liés",
+    "selectInSommaire": "Sélectionnez un élément dans le sommaire",
+    "navigateTree": "Naviguez dans l'arborescence du Code Général des Impôts",
+    "selectSubSection": "Sélectionnez une sous-section pour voir les articles.",
+    "noResultsFor": "Aucun résultat pour \"{{query}}\"",
+    "tryOtherTerm": "Essayez avec un autre terme (article, mot-clé, texte)",
+    "resultsCount": "{{count}} résultat(s) pour \"{{query}}\"",
+    "referencesTitle": "Articles liés",
+    "referencesOut": "Cet article référence :",
+    "referencesIn": "Référencé par :",
+    "thinking": "Réflexion en cours...",
+    "cgiSources": "Sources CGI",
+    "showMoreSources": "Voir {{count}} autre(s) source(s)",
+    "reduceSources": "Réduire"
   },
   "simulateur": {
     "title": "Simulateurs",
@@ -773,8 +791,8 @@
     "feat2Desc": "Lisez les articles en continu, chapitre par chapitre, comme un livre.",
     "feat3Title": "Recherche vocale",
     "feat3Desc": "Trouvez un article en dictant votre recherche à voix haute.",
-    "feat4Title": "4 simulateurs fiscaux",
-    "feat4Desc": "Calculez ITS, IS, Patente et Solde de liquidation en quelques clics.",
+    "feat4Title": "12 simulateurs fiscaux",
+    "feat4Desc": "ITS, IS, Patente, TVA, IRCM, IRF, IBA, IGF, Enregistrement, Foncier et plus.",
     "feat5Title": "Assistant IA fiscal",
     "feat5Desc": "Posez vos questions fiscales et obtenez des réponses sourcées instantanément.",
     "feat6Title": "Calendrier fiscal",

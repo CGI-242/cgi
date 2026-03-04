@@ -25,7 +25,7 @@ export function parseArticles(raw: RawArticle[]): ArticleData[] {
       annee_application: a.annee_application ?? 0,
     };
     article._searchText = normalize(
-      [article.article, article.titre, ...article.mots_cles, ...article.texte].join(" ")
+      [article.article, article.titre, article.statut, article.section, ...article.mots_cles, ...article.texte].join(" ")
     );
     return article;
   });

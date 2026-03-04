@@ -110,7 +110,12 @@
     "joinTeam": "Join a team",
     "invitedDescription": "You have been invited to join an organization",
     "invitedBanner": "You have been invited to join an organization. Create your account to accept the invitation.",
-    "rememberMe": "Remember me"
+    "rememberMe": "Remember me",
+    "tagline": "African tax intelligence",
+    "country": "Country",
+    "chooseCountry": "Choose a country",
+    "toggleTheme": "Toggle theme",
+    "togglePassword": "Show or hide password"
   },
   "passwordStrength": {
     "minLength": "12 characters minimum",
@@ -259,7 +264,20 @@
     "repealed": "Repealed",
     "modified": "Modified",
     "references": "Cross-references",
-    "relatedArticles": "Related articles"
+    "relatedArticles": "Related articles",
+    "selectInSommaire": "Select an item in the table of contents",
+    "navigateTree": "Navigate the General Tax Code tree",
+    "selectSubSection": "Select a sub-section to see articles.",
+    "noResultsFor": "No results for \"{{query}}\"",
+    "tryOtherTerm": "Try another term (article, keyword, text)",
+    "resultsCount": "{{count}} result(s) for \"{{query}}\"",
+    "referencesTitle": "Related articles",
+    "referencesOut": "This article references:",
+    "referencesIn": "Referenced by:",
+    "thinking": "Thinking...",
+    "cgiSources": "CGI Sources",
+    "showMoreSources": "Show {{count}} more source(s)",
+    "reduceSources": "Reduce"
   },
   "simulateur": {
     "title": "Simulators",
@@ -773,8 +791,8 @@
     "feat2Desc": "Read articles continuously, chapter by chapter, like a book.",
     "feat3Title": "Voice search",
     "feat3Desc": "Find an article by dictating your search out loud.",
-    "feat4Title": "4 tax simulators",
-    "feat4Desc": "Calculate ITS, IS, Patente and Liquidation balance in a few clicks.",
+    "feat4Title": "12 tax simulators",
+    "feat4Desc": "ITS, IS, Patente, VAT, IRCM, IRF, IBA, IGF, Registration, Land tax and more.",
     "feat5Title": "AI tax assistant",
     "feat5Desc": "Ask your tax questions and get sourced answers instantly.",
     "feat6Title": "Tax calendar",

@@ -10,6 +10,8 @@ import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import OtpInput from "@/components/auth/OtpInput";
 import PasswordStrengthIndicator from "@/components/auth/PasswordStrengthIndicator";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AuthLogo from "@/components/auth/AuthLogo";
 
 const REDIRECT_DELAY_MS = 2_000;
 const FEEDBACK_DISPLAY_MS = 3_000;
@@ -110,26 +112,20 @@ export default function ResetPassword() {
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
-          {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-              Intelligence Fiscale IA
-            </Text>
-          </View>
+          <AuthLogo />
 
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
             {t("auth.resetPassword")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterCodeAndPassword")}
           </Text>
 
           {/* Dev code - visible uniquement en développement */}
           {__DEV__ && devCode ? (
             <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center" }}>
-              <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
-              <Text style={{ fontSize: 30, fontWeight: "700", color: colors.success, letterSpacing: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 30, color: colors.success, letterSpacing: 4 }}>
                 {devCode}
               </Text>
             </View>
@@ -138,12 +134,12 @@ export default function ResetPassword() {
           {/* Messages */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
           {success ? (
             <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.success, fontSize: 14 }}>{success}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 14 }}>{success}</Text>
             </View>
           ) : null}
 
@@ -157,21 +153,24 @@ export default function ResetPassword() {
           />
 
           {/* Nouveau mot de passe */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
             {t("auth.newPassword")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <View style={{ marginBottom: 16 }}>
             <TextInput
-              style={{ width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text }}
+              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text }}
               placeholder={t("auth.passwordPlaceholder")}
               placeholderTextColor={colors.textMuted}
               value={password}
               onChangeText={(v) => { setPassword(v); setError(""); }}
               secureTextEntry={!showPassword}
+              accessibilityLabel={t("auth.newPassword")}
             />
             <TouchableOpacity
               style={{ position: "absolute", right: 12, top: 12 }}
               onPress={() => setShowPassword(!showPassword)}
+              accessibilityLabel={t("auth.togglePassword")}
+              accessibilityRole="button"
             >
               <Ionicons
                 name={showPassword ? "eye-off" : "eye"}
@@ -184,16 +183,17 @@ export default function ResetPassword() {
           <PasswordStrengthIndicator password={password} colors={colors} />
 
           {/* Confirmer */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
             {t("auth.confirmPassword")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
             placeholder={t("auth.confirmPassword")}
             placeholderTextColor={colors.textMuted}
             value={confirmPassword}
             onChangeText={(v) => { setConfirmPassword(v); setError(""); }}
             secureTextEntry={!showPassword}
+            accessibilityLabel={t("auth.confirmPassword")}
           />
 
           {/* Bouton */}
@@ -202,20 +202,29 @@ export default function ResetPassword() {
             onPress={handleReset}
             activeOpacity={0.8}
             disabled={loading}
+            accessibilityLabel={t("auth.resetPassword")}
+            accessibilityRole="button"
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
                 {t("auth.resetPassword")}
               </Text>
             )}
           </TouchableOpacity>
 
+          {/* Renvoyer le code */}
+          <TouchableOpacity style={{ alignItems: "center", marginTop: 20 }} onPress={handleResend} disabled={cooldown > 0} accessibilityLabel={t("auth.resendCode")} accessibilityRole="button">
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
+              {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
+            </Text>
+          </TouchableOpacity>
+
           {/* Lien retour */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 16 }}>
-            <TouchableOpacity onPress={() => router.replace("/(auth)")}>
-              <Text style={{ fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
+            <TouchableOpacity onPress={() => router.replace("/(auth)")} accessibilityLabel={t("auth.backToLogin")} accessibilityRole="link">
+              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
                 {t("auth.backToLogin")}
               </Text>
             </TouchableOpacity>

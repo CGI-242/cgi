@@ -1,14 +1,17 @@
 import { useState, useMemo } from "react";
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { calculerContributionFonciere, type TypePropriete, type ZoneUrbaine, type CultureRurale } from "@/lib/services/contribution-fonciere.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
+import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
+import ResultHighlight from "@/components/simulateur/ResultHighlight";
+import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function ContributionFonciereScreen() {
   const { t } = useTranslation();
@@ -54,46 +57,28 @@ export default function ContributionFonciereScreen() {
     if (typePropriete === "nonBatiRural" && sh <= 0) return null;
     if (tc <= 0) return null;
 
-    return calculerContributionFonciere({
-      typePropriete,
-      valeurLocative: vl,
-      tauxCommunal: tc,
-      surfaceM2: sm,
-      zoneUrbaine,
-      surfaceHa: sh,
-      cultureRurale,
-    });
+    return calculerContributionFonciere({ typePropriete, valeurLocative: vl, tauxCommunal: tc, surfaceM2: sm, zoneUrbaine, surfaceHa: sh, cultureRurale });
   }, [typePropriete, valeurLocative, surfaceM2, surfaceHa, tauxCommunal, zoneUrbaine, cultureRurale]);
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
+          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+            {t("simulateur.foncier.title")}
+          </Text>
+
           <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>
-              {t("simulateur.foncier.description")}
-            </Text>
+            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.foncier.description")}</Text>
           </View>
 
-          {/* Type de propriété */}
           <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
             {t("simulateur.foncier.typeLabel")}
           </Text>
-          <View style={{ gap: 4, marginBottom: 12 }}>
-            {TYPES.map((tp) => (
-              <TouchableOpacity
-                key={tp.value}
-                style={{ paddingVertical: 8, paddingHorizontal: 12, backgroundColor: typePropriete === tp.value ? colors.primary : colors.border }}
-                onPress={() => setTypePropriete(tp.value)}
-              >
-                <Text style={{ color: typePropriete === tp.value ? "#fff" : colors.text, fontWeight: "600", fontSize: 12 }}>{tp.label}</Text>
-              </TouchableOpacity>
-            ))}
-          </View>
+          <OptionButtonGroup options={TYPES} selected={typePropriete} onChange={setTypePropriete} direction="column" fontSize={12} />
 
-          {/* Inputs selon type */}
           {typePropriete === "bati" && (
-            <NumberField label={t("simulateur.foncier.rentalValue")} value={valeurLocative} onChange={setValeurLocative} colors={colors} />
+            <NumberField label={t("simulateur.foncier.rentalValue")} value={valeurLocative} onChange={setValeurLocative} />
           )}
 
           {typePropriete === "nonBatiUrbain" && (
@@ -101,18 +86,8 @@ export default function ContributionFonciereScreen() {
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
                 {t("simulateur.foncier.zoneLabel")}
               </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 12 }}>
-                {ZONES.map((z) => (
-                  <TouchableOpacity
-                    key={z.value}
-                    style={{ paddingVertical: 6, paddingHorizontal: 10, backgroundColor: zoneUrbaine === z.value ? colors.primary : colors.border }}
-                    onPress={() => setZoneUrbaine(z.value)}
-                  >
-                    <Text style={{ color: zoneUrbaine === z.value ? "#fff" : colors.text, fontWeight: "600", fontSize: 11 }}>{z.label}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-              <NumberField label={t("simulateur.foncier.surfaceM2")} value={surfaceM2} onChange={setSurfaceM2} colors={colors} />
+              <OptionButtonGroup options={ZONES} selected={zoneUrbaine} onChange={setZoneUrbaine} fontSize={11} />
+              <NumberField label={t("simulateur.foncier.surfaceM2")} value={surfaceM2} onChange={setSurfaceM2} />
             </>
           )}
 
@@ -121,22 +96,11 @@ export default function ContributionFonciereScreen() {
               <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
                 {t("simulateur.foncier.cultureLabel")}
               </Text>
-              <View style={{ gap: 4, marginBottom: 12 }}>
-                {CULTURES.map((c) => (
-                  <TouchableOpacity
-                    key={c.value}
-                    style={{ paddingVertical: 6, paddingHorizontal: 10, backgroundColor: cultureRurale === c.value ? colors.primary : colors.border }}
-                    onPress={() => setCultureRurale(c.value)}
-                  >
-                    <Text style={{ color: cultureRurale === c.value ? "#fff" : colors.text, fontWeight: "600", fontSize: 11 }}>{c.label}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-              <NumberField label={t("simulateur.foncier.surfaceHa")} value={surfaceHa} onChange={setSurfaceHa} colors={colors} />
+              <OptionButtonGroup options={CULTURES} selected={cultureRurale} onChange={setCultureRurale} direction="column" fontSize={11} />
+              <NumberField label={t("simulateur.foncier.surfaceHa")} value={surfaceHa} onChange={setSurfaceHa} />
             </>
           )}
 
-          {/* Taux communal */}
           <View style={{ marginBottom: 8 }}>
             <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>
               {t("simulateur.foncier.communalRate")} (max {typePropriete === "bati" ? "20" : "40"}%)
@@ -149,60 +113,44 @@ export default function ContributionFonciereScreen() {
                     style={{ paddingVertical: 4, paddingHorizontal: 8, backgroundColor: tauxCommunal === String(v) ? colors.primary : "transparent" }}
                     onPress={() => setTauxCommunal(String(v))}
                   >
-                    <Text style={{ color: tauxCommunal === String(v) ? "#fff" : colors.text, fontWeight: "600", fontSize: 11 }}>{v}%</Text>
+                    <Text style={{ color: tauxCommunal === String(v) ? colors.sidebarText : colors.text, fontWeight: "600", fontSize: 11 }}>{v}%</Text>
                   </TouchableOpacity>
                 ))}
               </View>
             </View>
           </View>
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>
-            {t("simulateur.foncier.legalRef")}
-          </Text>
+          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.foncier.legalRef")}</Text>
         </ScrollView>
 
         <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
           {result ? (
             <View>
-              <SimulateurSection label={t("simulateur.foncier.calcSection")} colors={colors} />
+              <SimulateurSection label={t("simulateur.foncier.calcSection")} />
               <TableRow label={t("simulateur.foncier.grossBase")} value={formatNumber(result.basebrute)} bold />
               {result.tauxAbattement > 0 && (
-                <TableRow label={`${t("simulateur.foncier.deduction")} (${result.tauxAbattement}%)`} value={`- ${formatNumber(result.abattement)}`} bg={colors.background} color="#b91c1c" />
+                <TableRow label={`${t("simulateur.foncier.deduction")} (${result.tauxAbattement}%)`} value={`- ${formatNumber(result.abattement)}`} bg={colors.background} color={colors.danger} />
               )}
               <TableRow label={t("simulateur.foncier.netBase")} value={formatNumber(result.baseNette)} bold />
               <TableRow label={`${t("simulateur.foncier.communalRate")} (max ${result.tauxMax}%)`} value={`${result.tauxCommunal}%`} bg={colors.background} />
 
-              <SimulateurSection label={t("simulateur.foncier.resultSection")} colors={colors} />
+              <SimulateurSection label={t("simulateur.foncier.resultSection")} />
               {result.impot > 0 ? (
-                <View style={{ backgroundColor: "#fef2f2", paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                  <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 12, fontWeight: "700", color: "#991b1b" }}>
-                      {typePropriete === "bati" ? "CFPB" : "CFPNB"}
-                    </Text>
-                    <Text style={{ fontSize: 16, fontWeight: "800", color: "#b91c1c" }}>{formatNumber(result.impot)}</Text>
-                  </View>
-                </View>
+                <ResultHighlight label={typePropriete === "bati" ? "CFPB" : "CFPNB"} value={formatNumber(result.impot)} variant="danger" />
               ) : (
                 <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: "#166534" }}>
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.success }}>
                     {t("simulateur.foncier.underMinimum")}
                   </Text>
                 </View>
               )}
 
               <View style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: `${colors.primary}10` }}>
-                <Text style={{ fontSize: 10, color: colors.primary, fontWeight: "600" }}>
-                  {result.articleRef}
-                </Text>
+                <Text style={{ fontSize: 10, color: colors.primary, fontWeight: "600" }}>{result.articleRef}</Text>
               </View>
             </View>
           ) : (
-            <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
-              <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
-              <Text style={{ fontSize: 13, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
-                {t("simulateur.foncier.enterData")}
-              </Text>
-            </View>
+            <SimulateurEmptyState message={t("simulateur.foncier.enterData")} />
           )}
         </ScrollView>
       </View>

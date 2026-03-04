@@ -16,6 +16,7 @@ import MfaStatusCard from "@/components/securite/MfaStatusCard";
 import MfaSetupFlow from "@/components/securite/MfaSetupFlow";
 import BackupCodesDisplay from "@/components/securite/BackupCodesDisplay";
 import LogoutAllButton from "@/components/securite/LogoutAllButton";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type SetupStep = "idle" | "qr" | "verify" | "backup";
 

@@ -19,7 +19,7 @@ export default function OtpInput({ code, cooldown, onChangeCode, onResend, onSub
         {t("auth.codePlaceholder")}
       </Text>
       <TextInput
-        style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
+        style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 24 }}
         placeholder="000000"
         placeholderTextColor={colors.textMuted}
         value={code}
@@ -32,11 +32,6 @@ export default function OtpInput({ code, cooldown, onChangeCode, onResend, onSub
         returnKeyType="done"
         onSubmitEditing={onSubmit}
       />
-      <TouchableOpacity style={{ alignItems: "center", marginTop: 16 }} onPress={onResend} disabled={cooldown > 0}>
-        <Text style={{ fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
-          {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
-        </Text>
-      </TouchableOpacity>
     </>
   );
 }

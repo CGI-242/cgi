@@ -7,6 +7,8 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AuthLogo from "@/components/auth/AuthLogo";
 
 export default function ForgotPassword() {
   const { t } = useTranslation();
@@ -50,34 +52,28 @@ export default function ForgotPassword() {
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
-          {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-              Intelligence Fiscale IA
-            </Text>
-          </View>
+          <AuthLogo />
 
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
             {t("auth.forgotPassword")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterEmailReset")}
           </Text>
 
           {/* Erreur */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Email */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
             Email <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
             placeholder={t("auth.emailPlaceholder")}
             placeholderTextColor={colors.textMuted}
             value={emailLocal}
@@ -89,6 +85,7 @@ export default function ForgotPassword() {
             autoCapitalize="none"
             returnKeyType="done"
             onSubmitEditing={handleSendCode}
+            accessibilityLabel={t("auth.emailPlaceholder")}
           />
 
           {/* Bouton */}
@@ -97,19 +94,21 @@ export default function ForgotPassword() {
             onPress={handleSendCode}
             activeOpacity={0.8}
             disabled={loading}
+            accessibilityLabel={t("auth.sendCode")}
+            accessibilityRole="button"
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
                 {t("auth.sendCode")}
               </Text>
             )}
           </TouchableOpacity>
 
           {/* Retour */}
-          <TouchableOpacity style={{ alignItems: "center", marginTop: 16 }} onPress={() => router.replace("/(auth)")}>
-            <Text style={{ fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
+          <TouchableOpacity style={{ alignItems: "center", marginTop: 16 }} onPress={() => router.replace("/(auth)")} accessibilityLabel={t("auth.backToLogin")} accessibilityRole="link">
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
               {t("auth.backToLogin")}
             </Text>
           </TouchableOpacity>

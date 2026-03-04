@@ -13,6 +13,7 @@ import { router } from "expo-router";
 import { organizationApi } from "@/lib/api/organization";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function InvitationsScreen() {
   const { colors } = useTheme();
@@ -49,7 +50,7 @@ export default function InvitationsScreen() {
           <View style={{ width: 64, height: 64, backgroundColor: `${colors.primary}20`, justifyContent: "center", alignItems: "center", marginBottom: 12 }}>
             <Ionicons name="mail-open-outline" size={32} color={colors.primary} />
           </View>
-          <Text style={{ fontSize: 20, fontWeight: "700", color: colors.text, textAlign: "center" }}>
+          <Text style={{ fontSize: 20, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text, textAlign: "center" }}>
             {t("invitations.accept")}
           </Text>
           <Text style={{ fontSize: 14, color: colors.textSecondary, textAlign: "center", marginTop: 4 }}>

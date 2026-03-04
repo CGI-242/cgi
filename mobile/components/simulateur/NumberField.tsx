@@ -1,14 +1,16 @@
 import { View, Text, TextInput } from "react-native";
 import { formatInputNumber } from "@/lib/services/fiscal-common";
+import { useTheme } from "@/lib/theme/ThemeContext";
 
 interface Props {
   label: string;
   value: string;
   onChange: (v: string) => void;
-  colors: any;
+  colors?: unknown;
 }
 
-export default function NumberField({ label, value, onChange, colors }: Props) {
+export default function NumberField({ label, value, onChange }: Props) {
+  const { colors } = useTheme();
   return (
     <View style={{ marginBottom: 8 }}>
       <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{label}</Text>

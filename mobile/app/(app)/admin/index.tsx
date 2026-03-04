@@ -9,6 +9,7 @@ import { useToast } from "@/components/ui/ToastProvider";
 import AdminStatsGrid from "@/components/admin/AdminStatsGrid";
 import OrganisationCard from "@/components/admin/OrganisationCard";
 import SeatRequestsList from "@/components/admin/SeatRequestsList";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function AdminScreen() {
   const { colors } = useTheme();

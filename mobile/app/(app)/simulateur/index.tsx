@@ -3,6 +3,7 @@ import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function SimulateurHub() {
   const { t } = useTranslation();

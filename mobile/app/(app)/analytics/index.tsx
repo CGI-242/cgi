@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { useToast } from "@/components/ui/ToastProvider";
 import PeriodSelector from "@/components/analytics/PeriodSelector";
 import MemberStatsTable from "@/components/analytics/MemberStatsTable";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 

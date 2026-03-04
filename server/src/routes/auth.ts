@@ -72,7 +72,7 @@ function sendTokens(req: Request, res: Response, token: string, refreshToken: st
 // POST /api/auth/register
 router.post("/register", validate({ body: registerBody }), async (req: Request, res: Response) => {
   try {
-    const { entrepriseNom, nom, prenom, email, telephone, password, invitationToken } = req.body;
+    const { entrepriseNom, nom, prenom, email, telephone, password, invitationToken, pays } = req.body;
 
     const existingUser = await prisma.user.findUnique({ where: { email } });
     if (existingUser) {
@@ -145,7 +145,7 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
       // Flux normal : créer org + abo FREE
       const slug = entrepriseNom!.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-");
       organization = await prisma.organization.create({
-        data: { name: entrepriseNom!, slug: `${slug}-${Date.now()}` },
+        data: { name: entrepriseNom!, slug: `${slug}-${Date.now()}`, pays: pays || "242" },
       });
 
       await prisma.organizationMember.create({

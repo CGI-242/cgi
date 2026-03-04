@@ -324,43 +324,79 @@ Paiement trimestriel.
 
 ### 13. Droits d'enregistrement — Cessions parts sociales (Tome 2, Livre 1)
 
-**Inputs** : Prix de cession, type de société (SARL, SA), valeur nominale
+**Inputs** : Prix de cession (ou valeur réelle), type de cession
 
 **Formule** :
 
 ```
-1. Base = prix_de_cession (ou valeur réelle si supérieure)
-2. Taux :
-   - Parts sociales SARL : 5%
-   - Actions SA : 1,5%
-3. Droits = base × taux
-4. Minimum de perception applicable
+1. Base = prix_de_cession (ou valeur des actifs et droits cédés — Art. 214)
+2. Taux unique : 5% pour TOUTES les sociétés de droit congolais (Art. 214)
+   (NB : pas de différenciation SARL/SA dans le CGI)
+3. Cessions de participations d'intérêts : 5% également (Art. 214 bis)
+   - Minimum de perception : 1 000 000 FCFA pour contrats pétroliers
+4. Changement de contrôle (≥ 60% actionnariat) : 5% aussi (Art. 214 al. 2)
+5. Centimes additionnels : 5% des droits (Art. 216 bis)
+6. Total = droits + centimes additionnels
+7. Cessions d'actions d'apport en période de non-négociabilité :
+   chaque élément d'apport évalué distinctement (Art. 215)
+   À défaut → tarif immobilier (8%)
 ```
 
 **Pertinence** : Moyenne — cessions d'entreprises, restructurations, M&A.
 
 ---
 
-### 14. Contribution foncière CFPNB / CFPB (Tome 2, Livre 4)
+### 14. Contribution foncière CFPB / CFPNB (Tome 1, Partie 2, Titre 1, Chapitre 1)
 
-**Inputs** : Valeur locative estimée, nature (bâti/non bâti), localisation
+**Inputs** : Type (bâti/non bâti), valeur locative ou surface terrain, localisation (zone), taux communal
 
 **Formule** :
 
 ```
-CFPB (propriétés bâties) :
-1. Base = valeur_locative × 50% (abattement pour charges)
-2. Taux = variable selon commune (ex: 15% à Brazzaville)
-3. CFPB = base × taux
-4. Centimes additionnels communaux en sus
+CFPB — Propriétés bâties (Art. 251-262) :
+1. Base brute = valeur locative cadastrale (Art. 257)
+   (déterminée par bail, comparaison ou expertise — Art. 258 bis)
+2. Abattement = 75% pour frais de gestion, assurance, amortissement,
+   entretien et réparation (Art. 257 bis)
+3. Revenu net imposable = valeur_locative × 25%
+4. Taux = fixé par délibération du conseil communal
+   (maximum légal : 20% — Loi n°44-62 modifiée LFR 1994)
+5. CFPB = revenu_net_imposable × taux
+6. Minimum : toute cote < 1 000 FCFA est négligée (Art. 262)
 
-CFPNB (propriétés non bâties) :
-1. Base = valeur_locative (pas d'abattement)
-2. Taux = variable selon commune
-3. CFPNB = base × taux
+CFPNB — Propriétés non bâties URBAINES (Art. 263-275) :
+1. Valeur cadastrale = prix_m² × surface_terrain (Art. 270 bis)
+   Barème par zone :
+   - Zone 1 (centre-ville communes plein exercice) : 125 FCFA/m²
+   - Zone 2 (arrondissements, chefs-lieux départements) : 75 FCFA/m²
+   - Zone 3 (chefs-lieux de districts) : 12,5 FCFA/m²
+   - Zone 4 (autres localités) : 6,25 FCFA/m²
+2. Valeur imposable = valeur_cadastrale × 50% (Art. 270)
+3. Taux = fixé par délibération du conseil communal
+   (maximum légal : 40% — Loi n°44-62 modifiée LFR 1994)
+4. CFPNB = valeur_imposable × taux
+5. Minimum : toute cote < 1 000 FCFA est négligée (Art. 275)
+
+CFPNB — Propriétés non bâties RURALES (Art. 272) :
+1. Valeur imposable = forfait par hectare :
+   - Café, palmiers à huile, caoutchouc : 2 000 FCFA/ha
+   - Terrains à vocation forestière : 2 000 FCFA/ha
+   - Autres cultures : 1 000 FCFA/ha
+   - Élevage gros bétail : 600 FCFA/ha
+   - 2e catégorie avec usines de transformation : 600 FCFA/ha
+   - Terrains non mis en valeur : 500 FCFA/ha
+2. Taux = idem (max 40%)
+3. CFPNB = valeur_imposable × taux
+
+EXONÉRATIONS TEMPORAIRES CFPNB (Art. 266) :
+- Élevage gros bétail : 6 ans
+- Hévéas/palmiers : 10 ans
+- Arbres fruitiers : 8 ans
+- Caféiers/cacaoyers : 7 ans
+- Autres cultures : 3 ans
 ```
 
-**Pertinence** : Moyenne — propriétaires immobiliers, promoteurs.
+**Pertinence** : Moyenne — propriétaires immobiliers, promoteurs, agriculteurs.
 
 ---
 

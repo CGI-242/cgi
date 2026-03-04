@@ -7,6 +7,8 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { api } from "@/lib/api/client";
 import axios from "axios";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AuthLogo from "@/components/auth/AuthLogo";
 
 export default function MfaVerify() {
   const { t } = useTranslation();
@@ -49,46 +51,41 @@ export default function MfaVerify() {
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
-          {/* Logo */}
-          <View style={{ alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontSize: 36, fontWeight: "700", color: colors.primary }}>CGI242</Text>
-            <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-              Intelligence Fiscale IA
-            </Text>
-          </View>
+          <AuthLogo />
 
-          <Text style={{ fontSize: 24, fontWeight: "700", color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
             {t("auth.mfaTitle")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.mfaDesc")}
           </Text>
 
           {/* Messages */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Code input */}
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
             {t("auth.mfaPlaceholder")}
           </Text>
           <TextInput
-            style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 16 }}
             placeholder="000000"
             placeholderTextColor={colors.textMuted}
             value={code}
             onChangeText={(text) => {
-              setCode(text.replace(/[^0-9A-Za-z\-]/g, "").slice(0, 9));
+              setCode(text.replace(/[^0-9A-Za-z\-]/g, "").slice(0, 6));
               setError("");
             }}
             keyboardType="default"
-            maxLength={9}
+            maxLength={6}
             autoCapitalize="characters"
             returnKeyType="done"
             onSubmitEditing={handleVerify}
+            accessibilityLabel={t("auth.mfaPlaceholder")}
           />
 
           {/* Bouton */}
@@ -97,11 +94,13 @@ export default function MfaVerify() {
             onPress={handleVerify}
             activeOpacity={0.8}
             disabled={loading || code.length < 6}
+            accessibilityLabel={t("auth.verify")}
+            accessibilityRole="button"
           >
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
                 {t("auth.verify")}
               </Text>
             )}
@@ -111,8 +110,10 @@ export default function MfaVerify() {
           <TouchableOpacity
             style={{ alignItems: "center", marginTop: 16 }}
             onPress={() => router.replace("/(auth)/password")}
+            accessibilityLabel={t("auth.backToLogin")}
+            accessibilityRole="link"
           >
-            <Text style={{ fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
               {t("auth.backToLogin")}
             </Text>
           </TouchableOpacity>

@@ -13,6 +13,7 @@ import { api } from "@/lib/api/client";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -136,8 +137,8 @@ export default function AppLayout() {
                   <Ionicons name="menu" size={24} color={colors.accent} />
                 </TouchableOpacity>
               )}
-              <TouchableOpacity onPress={() => router.push("/(app)")}>
-                <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontWeight: "900", fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
+              <TouchableOpacity onPress={() => router.push("/(app)")} accessibilityLabel={t("common.home")} accessibilityRole="link">
+                <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
                   CGI 242
                 </Text>
               </TouchableOpacity>
@@ -154,7 +155,7 @@ export default function AppLayout() {
                     </>
                   )}
                   <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
-                  <Text style={{ color: colors.accent, fontWeight: "700", fontSize: 16 }}>
+                  <Text style={{ color: colors.accent, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 16 }}>
                     {t(pageTitleKey)}
                   </Text>
                 </>
@@ -190,10 +191,12 @@ export default function AppLayout() {
               {/* Avatar */}
               <TouchableOpacity
                 onPress={() => router.push("/(app)/profil")}
+                accessibilityLabel={t("profil.title")}
+                accessibilityRole="button"
                 style={{
                   width: 30,
                   height: 30,
-                  
+
                   backgroundColor: colors.primary,
                   alignItems: "center",
                   justifyContent: "center",

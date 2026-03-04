@@ -1,90 +1,100 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, Linking } from "react-native";
 import { router } from "expo-router";
-import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-export default function LandingHeader() {
-  const { colors } = useTheme();
+const GOLD = "#c8a03c";
+
+interface Props {
+  isMobile: boolean;
+  onScrollTo?: (section: string) => void;
+}
+
+export default function LandingHeader({ isMobile, onScrollTo }: Props) {
   const { t } = useTranslation();
 
   return (
     <View
-      style={[
-        styles.container,
-        { backgroundColor: colors.card, borderBottomColor: colors.border },
-      ]}
+      style={{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingVertical: 20,
+        paddingHorizontal: isMobile ? 16 : 32,
+        borderBottomWidth: 1,
+        borderBottomColor: "rgba(255,255,255,0.04)",
+      }}
     >
-      <View style={styles.inner}>
-        <Text style={[styles.logo, { color: colors.primary }]}>CGI242</Text>
-
-        <View style={styles.buttons}>
-          <TouchableOpacity
-            style={[styles.ghostBtn, { borderColor: colors.primary }]}
-            onPress={() => router.push("/(auth)")}
+      {/* Logo */}
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+        <View
+          style={{
+            width: 38,
+            height: 38,
+            borderRadius: 10,
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: GOLD,
+          }}
+        >
+          <Text
+            style={{
+              fontFamily: fonts.black,
+              fontWeight: fontWeights.black,
+              fontSize: 17,
+              color: "#08080d",
+            }}
           >
-            <Text style={[styles.ghostBtnText, { color: colors.primary }]}>
-              {t("landing.login")}
+            N
+          </Text>
+        </View>
+        <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
+          NORMX <Text style={{ color: GOLD }}>Tax</Text>
+        </Text>
+      </View>
+
+      {/* Navigation centrale */}
+      {!isMobile && (
+        <View style={{ flexDirection: "row", gap: 32, alignItems: "center" }}>
+          <TouchableOpacity onPress={() => onScrollTo?.("tarifs")}>
+            <Text style={{ fontSize: 14, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+              Tarifs
             </Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.filledBtn, { backgroundColor: colors.primary }]}
-            onPress={() => router.push("/(auth)/register")}
-          >
-            <Text style={styles.filledBtnText}>
-              {t("landing.getStarted")} →
+          <TouchableOpacity onPress={() => Linking.openURL("mailto:contact@normx.ai")}>
+            <Text style={{ fontSize: 14, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+              Contact
             </Text>
           </TouchableOpacity>
         </View>
+      )}
+
+      {/* Auth buttons */}
+      <View style={{ flexDirection: "row", gap: isMobile ? 8 : 16, alignItems: "center" }}>
+        <TouchableOpacity
+          onPress={() => router.push("/(auth)")}
+          style={{ padding: 8 }}
+        >
+          <Text style={{ fontSize: 13, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            {t("landing.login")}
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => router.push("/(auth)/register")}
+          style={{
+            paddingVertical: 9,
+            paddingHorizontal: 22,
+            borderRadius: 8,
+            backgroundColor: GOLD,
+          }}
+        >
+          <Text style={{ color: "#08080d", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13 }}>
+            Essai gratuit
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    position: "sticky" as any,
-    top: 0,
-    zIndex: 100,
-    borderBottomWidth: 1,
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-  },
-  inner: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    maxWidth: 1200,
-    width: "100%",
-    alignSelf: "center",
-  },
-  logo: {
-    fontSize: 24,
-    fontWeight: "900",
-  },
-  buttons: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-  },
-  ghostBtn: {
-    borderWidth: 1,
-    borderRadius: 0,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-  },
-  ghostBtnText: {
-    fontSize: 14,
-    fontWeight: "600",
-  },
-  filledBtn: {
-    borderRadius: 0,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-  },
-  filledBtnText: {
-    color: "#ffffff",
-    fontSize: 14,
-    fontWeight: "600",
-  },
-});
