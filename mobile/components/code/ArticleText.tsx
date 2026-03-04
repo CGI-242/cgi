@@ -8,6 +8,7 @@ type Props = {
 
 function getLineType(line: string) {
   if (/^\([ivx]+\)\s/.test(line)) return "roman";
+  if (/^\d+-\s/.test(line)) return "sectionHeader";
   if (/^\d+°\s/.test(line)) return "degree";
   if (/^\d+\)\s/.test(line) || /^\d+\.\s/.test(line)) return "numbered";
   if (/^[a-z]\)\s/.test(line)) return "lettered";
@@ -43,6 +44,14 @@ export default function ArticleText({ texte }: Props) {
 
         const type = getLineType(line);
 
+        if (type === "sectionHeader") {
+          return (
+            <View key={i} style={{ marginTop: 16, marginBottom: 8 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: "#D4A017" }}>{line}</Text>
+            </View>
+          );
+        }
+
         if (type === "subsection") {
           return (
             <View key={i} style={{ marginTop: 16, marginBottom: 8 }}>
@@ -54,7 +63,7 @@ export default function ArticleText({ texte }: Props) {
         if (type === "degree") {
           const marker = line.match(/^(\d+°)/)?.[1] || "";
           return (
-            <View key={i} style={{ flexDirection: "row", paddingLeft: 8, marginBottom: 8 }}>
+            <View key={i} style={{ flexDirection: "row", paddingLeft: 40, marginBottom: 8 }}>
               <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: "#D4A017", minWidth: 30 }}>
                 {marker}
               </Text>
@@ -108,8 +117,8 @@ export default function ArticleText({ texte }: Props) {
         if (type === "dash") {
           const isSubBullet = line.startsWith("○ ");
           return (
-            <View key={i} style={{ flexDirection: "row", marginBottom: 4, paddingLeft: isSubBullet ? 24 : 16 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.primary, marginRight: 8 }}>•</Text>
+            <View key={i} style={{ flexDirection: "row", marginBottom: 4, paddingLeft: isSubBullet ? 32 : 16 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: isSubBullet ? colors.textMuted : colors.primary, marginRight: 8 }}>{isSubBullet ? "○" : "•"}</Text>
               <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {renderInlineRoman(line.replace(/^[-•○]\s*/, ""))}
               </Text>

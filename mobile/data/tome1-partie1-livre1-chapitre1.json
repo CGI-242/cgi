@@ -2319,9 +2319,9 @@
         "Au sens du présent article :",
         "- les prestations de services s'entendent comme l'ensemble des opérations qui ne constituent pas des livraisons de biens ;",
         "- le terme « redevances » désigne les rémunérations de toute natures payées, notamment :",
-        "- pour l'usage ou la concession de l'usage d'un droit d'auteur sur une œuvre littéraire, artistique ou scientifique, y compris les films cinématographiques, ou les films ou bandes utilisés pour les émissions radiophoniques ou télévisées, d'un brevet, d'une marque de fabrique ou de commerce, d'un dessin ou d'un modèle, d'un plan, d'une formule ou d'un procédé secret ;",
-        "- pour l'usage ou la concession de l'usage d'un équipement industriel, commercial ou scientifique et pour des informations ayant trait à une expérience acquise dans le domaine industriel, commercial ou scientifique ;",
-        "- pour l'acquisition ou la location de logiciels."
+        "○ pour l'usage ou la concession de l'usage d'un droit d'auteur sur une œuvre littéraire, artistique ou scientifique, y compris les films cinématographiques, ou les films ou bandes utilisés pour les émissions radiophoniques ou télévisées, d'un brevet, d'une marque de fabrique ou de commerce, d'un dessin ou d'un modèle, d'un plan, d'une formule ou d'un procédé secret ;",
+        "○ pour l'usage ou la concession de l'usage d'un équipement industriel, commercial ou scientifique et pour des informations ayant trait à une expérience acquise dans le domaine industriel, commercial ou scientifique ;",
+        "○ pour l'acquisition ou la location de logiciels."
       ],
       "mots_cles": [
         "retenue à la source",
@@ -2365,8 +2365,8 @@
         "Toutefois, la déclaration du bénéfice ou du déficit est faite dans les quatre mois de la clôture de l'exercice sous réserve des dispositions de l'article 86. Elle précise les sommes dont les personnes morales demandent l'imputation sur le montant de leur cotisation en vertu de l'article 86 B.",
         "En cas d'absence de déclaration ou de déclaration tardive, la liquidation de l'impôt dû à raison des résultats de la période d'imposition est faite d'office et la cotisation majorée dans les conditions prévues à l'article 372 du présent code.",
         "2) Les personnes morales et associations visées au paragraphe 1 ci-dessus sont tenues de fournir en même temps que leur déclaration de résultat, outre les pièces suivantes :",
-        "1) les comptes rendus et les extraits des délibérations des conseils d'administration ou des assemblées générales des actionnaires. Les entreprises d'assurances ou de réassurances, de capitalisation ou d'épargne remettent, en outre, un double du compte rendu détaillé et des tableaux annexes qu'elles fournissent à la direction des assurances ;",
-        "2) un état indiquant les bénéfices répartis aux associés, actionnaires ou porteurs de parts, ainsi que les sommes ou valeurs mises à leur disposition, au cours de la période retenue pour l'assiette de l'impôt sur les sociétés et présentant le caractère de revenus distribués.",
+        "1° les comptes rendus et les extraits des délibérations des conseils d'administration ou des assemblées générales des actionnaires. Les entreprises d'assurances ou de réassurances, de capitalisation ou d'épargne remettent, en outre, un double du compte rendu détaillé et des tableaux annexes qu'elles fournissent à la direction des assurances ;",
+        "2° un état indiquant les bénéfices répartis aux associés, actionnaires ou porteurs de parts, ainsi que les sommes ou valeurs mises à leur disposition, au cours de la période retenue pour l'assiette de l'impôt sur les sociétés et présentant le caractère de revenus distribués.",
         "3) Les personnes imposables visées à l'article 2 du présent code, sont assujetties à l'impôt sur le bénéfice des affaires (IBA) à raison du montant global des sommes comptabilisées dans les frais des entreprises qu'elles versent directement ou indirectement, sous quelque forme ou dénomination que ce soit, à des personnes dont elles ne révèlent pas l'identité.",
         "4) L'obligation de déclaration des résultats édictée au paragraphe 1 ci-dessus concerne tous les contribuables, que les bénéfices réalisés soient soumis à l'impôt ou non."
       ],
@@ -2375,12 +2375,18 @@
         "4 mois clôture exercice",
         "pièces annexes",
         "revenus distribués",
+        "IS",
         "IBA",
+        "imputation cotisation",
+        "article 86 B",
+        "bénéfice déficit",
         "conseils d'administration",
         "assemblées générales",
         "assurances réassurances",
         "liquidation d'office",
-        "article 372 majoration"
+        "article 372 majoration",
+        "personnes non identifiées",
+        "obligation déclaration"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
@@ -2410,22 +2416,28 @@
       "article": "Art. 87",
       "titre": "Régime des sociétés mère et filiales",
       "texte": [
-        "(L.F.2026) Lorsqu'une société par actions ou à responsabilité limitée possède soit des actions nominatives d'une société par actions, soit des parts d'intérêts d'une société à responsabilité limitée, les produits nets des actions ou des parts d'intérêts de la seconde société, perçus par la première au cours de l'exercice, sont retranchés du bénéfice net total de celle-ci, défalcation faite d'une quote-part de frais et charges.",
-        "Cette quote-part est fixée à 10% du montant desdits produits.",
+        "(L.F.2026) Lorsqu'une société par actions ou à responsabilité limitée possède soit des actions nominatives d'une société par actions, soit des parts d'intérêts d'une société à responsabilité limitée, les produits nets des actions ou des parts d'intérêts de la seconde société, perçus par la première au cours de l'exercice, sont retranchés du bénéfice net total de celle-ci, défalcation faite d'une quote-part de frais et charges. Cette quote-part est fixée à 10% du montant desdits produits.",
         "Toutefois, cette disposition n'est applicable qu'à condition que :",
-        "1) les actions ou parts d'intérêts possédées par la société mère représentent au moins 25% du capital de la société filiale ;",
-        "2) les sociétés mère et filiales aient leur siège social dans la Communauté Économique et Monétaire de l'Afrique Centrale (CEMAC) ;",
-        "3) les actions ou parts d'intérêt attribuées à l'émission soient toujours restées inscrites au nom de la société participante ou, s'il ne s'agit pas de titres souscrits lors de l'émission, que celle-ci prenne l'engagement de les conserver pendant deux années consécutives au moins sous la forme nominative. La rupture de cet engagement est sanctionnée par l'imposition des revenus indûment exonérés sans préjudice des pénalités pour insuffisance de déclaration.",
+        "1° les actions ou parts d'intérêts possédées par la société mère représentent au moins 25% du capital de la société filiale ;",
+        "2° les sociétés mère et filiales aient leur siège social dans la Communauté Économique et Monétaire de l'Afrique Centrale (CEMAC) ;",
+        "3° les actions ou parts d'intérêt attribuées à l'émission soient toujours restées inscrites au nom de la société participante ou, s'il ne s'agit pas de titres souscrits lors de l'émission, que celle-ci prenne l'engagement de les conserver pendant deux années consécutives au moins sous la forme nominative. La rupture de cet engagement est sanctionnée par l'imposition des revenus indûment exonérés sans préjudice des pénalités pour insuffisance de déclaration.",
         "Sont exclus de la déduction prévue ci-dessus, en ce qui concerne les établissements de crédit ainsi que les entreprises de placement ou de gestion des valeurs mobilières, tous arrérages, intérêts ou autres produits exonérés de l'impôt sur le revenu des valeurs mobilières."
       ],
       "mots_cles": [
         "sociétés mère",
         "filiales",
         "produits de participation",
-        "quote-part 10%",
+        "quote-part frais charges 10%",
         "25% capital",
         "CEMAC",
-        "2 ans nominatif"
+        "actions nominatives",
+        "parts d'intérêts",
+        "SA SARL",
+        "engagement conservation 2 ans",
+        "établissements de crédit",
+        "valeurs mobilières",
+        "exonération IRVM",
+        "pénalités insuffisance déclaration"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 1 : Régimes des sociétés mère et filiales"
@@ -2443,18 +2455,26 @@
         "En revanche, le complément d'abandon de créance non déductible doit être regardé comme un supplément du prix de revient de la participation de la société mère.",
         "Lorsque les abandons de créance sont consécutifs à une décision de justice, les remises de dettes ou abandons de créances sont imposables.",
         "b) Le bénéfice du régime fiscal de remise de dette est subordonné cependant à certaines conditions à remplir par la société mère et la filiale :",
-        "1) les abandons de créance doivent avoir été consentis par une société mère à sa ou ses filiales installées au Congo et dans lesquelles elle détient au moins 10% du capital. La société mère doit apporter la preuve que les créances en cause n'ont pas été prises en compte pour la détermination de ses résultats imposables.",
-        "2) la filiale doit s'engager à une augmentation du capital au profit de la société mère d'une somme égale au moins au montant de l'abandon. Elle doit joindre l'engagement d'augmentation du capital à la déclaration des résultats de la période au cours de laquelle l'abandon a été consenti. L'augmentation doit être effective dans les deux ans suivant l'abandon et doit être réalisée soit en numéraire, soit par conversion de créance.",
+        "1° les abandons de créance doivent avoir été consentis par une société mère à sa ou ses filiales installées au Congo et dans lesquelles elle détient au moins 10% du capital. La société mère doit apporter la preuve que les créances en cause n'ont pas été prises en compte pour la détermination de ses résultats imposables.",
+        "2° la filiale doit s'engager à une augmentation du capital au profit de la société mère d'une somme égale au moins au montant de l'abandon. Elle doit joindre l'engagement d'augmentation du capital à la déclaration des résultats de la période au cours de laquelle l'abandon a été consenti. L'augmentation doit être effective dans les deux ans suivant l'abandon et doit être réalisée soit en numéraire, soit par conversion de créance.",
         "En cas de manquement à l'engagement pris, le montant de la créance doit être rapporté par la filiale aux résultats de l'exercice au cours duquel la créance a été abandonnée. Les mêmes obligations s'appliquent aux subventions accordées par la société mère à ses filiales."
       ],
       "mots_cles": [
         "subventions",
         "abandons de créances",
+        "remises de dettes",
         "intragroupe",
+        "charge déductible",
+        "caractère commercial",
+        "caractère financier",
         "situation nette",
+        "prix de revient participation",
         "10% capital",
+        "filiales Congo",
         "augmentation capital",
-        "2 ans"
+        "2 ans numéraire conversion créance",
+        "manquement engagement",
+        "décision de justice"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 1 : Régimes des sociétés mère et filiales"
@@ -2470,7 +2490,12 @@
         "succursales",
         "agences",
         "conventions internationales",
-        "double imposition"
+        "double imposition",
+        "résultats activité Congo",
+        "bénéfices rattachés",
+        "entreprises similaires",
+        "comparaison",
+        "établissement stable"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 2 : Régime des succursales"
@@ -2484,7 +2509,10 @@
       "mots_cles": [
         "quartiers généraux",
         "CEMAC",
-        "statut particulier"
+        "statut particulier",
+        "régime fiscal",
+        "sociétés",
+        "États CEMAC"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
@@ -2501,7 +2529,14 @@
         "direction",
         "gestion",
         "coordination",
-        "contrôle"
+        "contrôle",
+        "sociétés par actions",
+        "succursales",
+        "impôt sur les sociétés",
+        "calcul forfaitaire",
+        "taux article 86A",
+        "dérogation articles 8 à 11",
+        "sociétés du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
@@ -2517,7 +2552,16 @@
         "centralisation",
         "recherche",
         "opérations financières",
-        "caractère auxiliaire"
+        "caractère auxiliaire",
+        "développement",
+        "publicité",
+        "recherche technique scientifique technologique",
+        "opérations de change",
+        "autorités nationales internationales",
+        "caractère préparatoire",
+        "prestations de services",
+        "participations interdites",
+        "sociétés du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
@@ -2531,50 +2575,76 @@
       "mots_cles": [
         "autorisation préalable",
         "administration fiscale",
-        "arrêté ministériel"
+        "arrêté ministériel",
+        "Ministre chargé des finances",
+        "modalités d'application",
+        "régime fiscal quartiers généraux"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
       "article": "Art. 90",
-      "titre": "Régime fiscal des holdings",
+      "titre": "Conditions d'éligibilité au régime des holdings",
       "texte": [
-        "(L.F.2026) 1- Conditions d'éligibilité",
-        "Les sociétés anonymes ou à responsabilité limitée de droit congolais peuvent bénéficier du régime des sociétés holding dès lors qu'elles remplissent les conditions suivantes :",
-        "1) détenir un portefeuille d'actions ou de parts sociales dans d'autres sociétés, congolaises ou étrangères, constituées sous forme de sociétés de capitaux. La valeur de ce portefeuille doit être au moins égale aux deux tiers de l'actif immobilisé de la holding ;",
-        "2) la proportion ci-dessus est maintenue pendant une durée minimum de cinq années, faute de quoi les avantages définis aux Articles qui suivent sont remis en cause rétroactivement, sans préjudice des pénalités applicables pour paiement tardif. Le maintien de cette proportion n'exclut toutefois pas les mouvements de titres au sein du portefeuille ;",
-        "3) la société holding ne doit avoir pour activités que :",
-        "a) la gestion de ses participations ;",
-        "b) les prestations de service correspondant à des fonctions de direction, de gestion, de coordination et de contrôle de sociétés de groupe ;",
-        "c) les activités de recherche et de développement au seul profit du groupe ;",
-        "d) la gestion de la trésorerie du groupe.",
-        "Toute autre activité, quelle qu'en soit la nature, n'est pas éligible au régime fiscal des holdings. La société holding perd les avantages du régime des holdings à compter de l'exercice au cours duquel l'activité non éligible a été entreprise.",
-        "2- Imposition des plus-values des titres",
-        "1) Les plus-values provenant de cession par les sociétés holdings de leurs titres de participation sont imposables à l'impôt sur les sociétés, à un taux égal au quart du taux de droit commun de l'impôt sur les sociétés, si les titres cédés ont été acquis ou souscrits depuis plus de deux ans.",
-        "2) Les plus-values de cession des titres de participation détenus depuis moins de deux ans sont taxées dans les conditions de droit commun, sauf si les titres ont été acquis à la suite d'une fusion ou d'un apport, et qu'ils figuraient dans le portefeuille d'une société répondant aux conditions exigées par les présentes dispositions.",
-        "3) Les plus-values provenant de la cession des titres de participation détenus ou souscrits depuis plus de deux ans par les sociétés holding sont exonérées de l'impôt sur les sociétés, si le portefeuille desdites sociétés est composé d'au moins 60% de participations dans les sociétés dont le siège est situé dans l'un des pays membres de la CEMAC."
+        "(L.F.2026) Les sociétés anonymes ou à responsabilité limitée de droit congolais peuvent bénéficier du régime des sociétés holding dès lors qu'elles remplissent les conditions suivantes :",
+        "1° détenir un portefeuille d'actions ou de parts sociales dans d'autres sociétés, congolaises ou étrangères, constituées sous forme de sociétés de capitaux. La valeur de ce portefeuille doit être au moins égale aux deux tiers de l'actif immobilisé de la holding ;",
+        "2° la proportion ci-dessus est maintenue pendant une durée minimum de cinq années, faute de quoi les avantages définis aux Articles qui suivent sont remis en cause rétroactivement, sans préjudice des pénalités applicables pour paiement tardif. Le maintien de cette proportion n'exclut toutefois pas les mouvements de titres au sein du portefeuille ;",
+        "3° la société holding ne doit avoir pour activités que :",
+        "○ a) la gestion de ses participations ;",
+        "○ b) les prestations de service correspondant à des fonctions de direction, de gestion, de coordination et de contrôle de sociétés de groupe ;",
+        "○ c) les activités de recherche et de développement au seul profit du groupe ;",
+        "○ d) la gestion de la trésorerie du groupe.",
+        "Toute autre activité, quelle qu'en soit la nature, n'est pas éligible au régime fiscal des holdings. La société holding perd les avantages du régime des holdings à compter de l'exercice au cours duquel l'activité non éligible a été entreprise."
       ],
       "mots_cles": [
         "holdings",
-        "deux tiers actif",
-        "5 ans",
+        "SA SARL droit congolais",
+        "portefeuille actions parts sociales",
+        "sociétés de capitaux",
+        "deux tiers actif immobilisé",
+        "cinq années",
+        "remise en cause rétroactive",
+        "pénalités paiement tardif",
+        "mouvements de titres",
         "gestion participations",
+        "direction gestion coordination contrôle",
+        "recherche développement",
         "trésorerie groupe",
-        "plus-values titres",
-        "CEMAC"
+        "activité non éligible",
+        "sociétés congolaises étrangères"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90-A",
+      "article": "Art. 90-A-1",
+      "titre": "Imposition des plus-values des titres",
+      "texte": [
+        "1) Les plus-values provenant de cession par les sociétés holdings de leurs titres de participation sont imposables à l'impôt sur les sociétés, à un taux égal au quart du taux de droit commun de l'impôt sur les sociétés, si les titres cédés ont été acquis ou souscrits depuis plus de deux ans.",
+        "2) Les plus-values de cession des titres de participation détenus depuis moins de deux ans sont taxées dans les conditions de droit commun, sauf si les titres ont été acquis à la suite d'une fusion ou d'un apport, et qu'ils figuraient dans le portefeuille d'une société répondant aux conditions exigées par les présentes dispositions.",
+        "3) Les plus-values provenant de la cession des titres de participation détenus ou souscrits depuis plus de deux ans par les sociétés holding sont exonérées de l'impôt sur les sociétés, si le portefeuille desdites sociétés est composé d'au moins 60% de participations dans les sociétés dont le siège est situé dans l'un des pays membres de la CEMAC."
+      ],
+      "mots_cles": [
+        "plus-values titres de participation",
+        "impôt sur les sociétés",
+        "quart taux droit commun",
+        "titres acquis souscrits deux ans",
+        "moins de deux ans droit commun",
+        "fusion apport",
+        "exonération IS",
+        "60% participations CEMAC",
+        "cession titres holdings"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
+    },
+    {
+      "article": "Art. 90-A-2",
       "titre": "Cession de titres et compensation des plus-values",
       "texte": [
         "(L.F.2026) Pour l'application du régime, la cession de titres compris dans le portefeuille est réputée porter par priorité sur les titres de même nature acquis ou souscrits à la date la plus ancienne.",
-        "Les plus-values ou moins-values résultant d'une cession sont déterminées en fonction des prix d'acquisition et de vente des titres.",
-        "Il est fait compensation entre les plus-values et les moins-values de même nature. La plus-value nette peut être utilisée à compenser le déficit de l'exercice, les déficits reportables au titre des exercices antérieurs, les amortissements réputés différés.",
-        "La moins-value nette d'un exercice est déductible uniquement des plus-values de même nature réalisées au cours des trois exercices suivants.",
+        "Les plus-values ou moins-values résultant d'une cession sont déterminées en fonction des prix d'acquisition et de vente des titres. Il est fait compensation entre les plus-values et les moins-values de même nature. La plus-value nette peut être utilisée à compenser le déficit de l'exercice, les déficits reportables au titre des exercices antérieurs, les amortissements réputés différés. La moins-value nette d'un exercice est déductible uniquement des plus-values de même nature réalisées au cours des trois exercices suivants.",
         "La base imposable est constituée par les plus-values nettes dégagées au titre d'un exercice, déduction faite des moins-values reportables au titre des exercices précédents et des frais strictement nécessaires à la réalisation de la cession."
       ],
       "mots_cles": [
@@ -2582,7 +2652,14 @@
         "plus-values",
         "moins-values",
         "compensation",
-        "FIFO"
+        "FIFO priorité date ancienne",
+        "prix acquisition vente",
+        "déficit exercice",
+        "déficits reportables",
+        "amortissements réputés différés",
+        "trois exercices suivants",
+        "base imposable plus-values nettes",
+        "frais de cession"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2594,11 +2671,10 @@
         "(L.F.2026) Les plus-values visées aux deux articles précédents ne peuvent pas bénéficier du régime du réemploi de plus-values prévu par le présent code."
       ],
       "mots_cles": [
+        "exclusion réemploi",
         "plus-values cession",
-        "titres de participation",
-        "compensation",
-        "moins-values",
-        "3 exercices"
+        "régime réemploi interdit",
+        "holdings"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2611,11 +2687,13 @@
         "Les intérêts des emprunts contractés par les sociétés holding, auprès des établissements financiers installés à l'étranger, ou auprès des actionnaires et associés desdites sociétés et destinées au financement de l'acquisition ou de la souscription de titres de participation, sont exonérés de la retenue à la source visée à l'Article 185 du présent Code."
       ],
       "mots_cles": [
-        "exonération",
-        "retenue à la source",
+        "exonération retenue à la source",
         "intérêts emprunts",
         "holdings",
-        "art. 185"
+        "établissements financiers étranger",
+        "actionnaires associés",
+        "financement acquisition titres",
+        "article 185"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2630,8 +2708,9 @@
         "dividendes",
         "holdings",
         "IRVM",
-        "taux réduit",
-        "moitié"
+        "taux réduit moitié droit commun",
+        "distribution associés actionnaires",
+        "impôt revenu valeurs mobilières"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2644,8 +2723,8 @@
       ],
       "mots_cles": [
         "holdings",
-        "droit commun",
-        "obligations"
+        "obligations droit commun",
+        "dispositions générales"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
