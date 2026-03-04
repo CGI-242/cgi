@@ -256,54 +256,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
       ) : selectedArticle ? (
         <ArticleDetailView article={selectedArticle} onBack={goBack} />
       ) : currentNode ? (
-        // Noeud sélectionné : afficher ses articles + enfants
-        <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
-          <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 17, color: colors.text, marginBottom: 14 }}>
-            {currentNode.label}
-          </Text>
-
-          {/* Articles du noeud */}
-          {currentNode.articles && currentNode.articles.length > 0 && currentNode.articles.map((art) => (
-            <Card key={art.article} onPress={() => handleSelectArticle(art)}>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: colors.primary, marginBottom: 2 }}>
-                {art.article}
-              </Text>
-              {art.titre ? (
-                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text, marginBottom: 4 }}>
-                  {art.titre}
-                </Text>
-              ) : null}
-              <Text
-                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textSecondary, lineHeight: 18 }}
-                numberOfLines={3}
-              >
-                {art.texte.join(" ")}
-              </Text>
-            </Card>
-          ))}
-
-          {/* Sous-noeuds */}
-          {currentNode.children && currentNode.children.length > 0 && currentNode.children.map((child) => {
-            const artCount = countArticles(child);
-            return (
-              <Card key={child.id} onPress={() => handleSelectNode(child)}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <View style={{ flex: 1, marginRight: 10 }}>
-                    <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }} numberOfLines={2}>
-                      {child.label}
-                    </Text>
-                    {artCount > 0 && (
-                      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, marginTop: 3 }}>
-                        {artCount} article{artCount > 1 ? "s" : ""}
-                      </Text>
-                    )}
-                  </View>
-                  <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
-                </View>
-              </Card>
-            );
-          })}
-        </ScrollView>
+        <ChapterReader chapter={currentNode} colors={colors} />
       ) : (
         // Racine : liste des tomes
         <NodeListView nodes={sommaire} onSelect={handleSelectNode} title={t("code.fullTitle")} />
