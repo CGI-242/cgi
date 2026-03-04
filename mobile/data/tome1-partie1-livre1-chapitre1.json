@@ -1324,8 +1324,15 @@
         "établissement stable",
         "siège",
         "charges non déductibles",
+        "location mobilière",
+        "location immobilière",
         "propriété intellectuelle",
-        "succursale"
+        "commission",
+        "activité de direction",
+        "intérêts",
+        "fonds propres",
+        "succursale",
+        "banque"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §10 Rémunérations versées par un établissement stable"
@@ -1345,10 +1352,15 @@
       "mots_cles": [
         "amortissements",
         "durée d'usage",
-        "crédit-bail",
+        "période déficitaire",
         "amortissements différés",
-        "emballages",
-        "constructions"
+        "régimes particuliers",
+        "emballages récupérables",
+        "crédit-bail",
+        "biens en location",
+        "constructions",
+        "aménagements",
+        "sol d'autrui"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
