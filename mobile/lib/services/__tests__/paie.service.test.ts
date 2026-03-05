@@ -45,6 +45,7 @@ const baseInput: PaieInput = {
   situationFamiliale: "celibataire",
   nombreEnfants: 0,
   zoneTOL: "centre_ville",
+  moisJanvier: false,
 };
 
 describe("calculerPaie — Bases de calcul", () => {

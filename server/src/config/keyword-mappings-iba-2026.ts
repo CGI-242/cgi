@@ -1,6 +1,6 @@
 /**
  * Mapping des mots-cles vers les articles du CGI 2026
- * Chapitre 2 - IBA, IRVM, IRF, ITS (Art. 93 a 116A)
+ * Chapitre 2 - IBA, IRCM, IRF, ITS (Art. 93 a 116A)
  *
  * REGLE : Le premier article de chaque liste est la SOURCE PRIMAIRE
  *
@@ -90,7 +90,7 @@ export const KEYWORD_ARTICLE_MAP_IBA_2026: Record<string, string[]> = {
   'ohada comptabilite': ['Art. 104'],
   '10 ans conservation': ['Art. 104'],
 
-  // ========== IRVM - IMPOT SUR LE REVENU DES VALEURS MOBILIERES ==========
+  // ========== IRCM - IMPOT SUR LE REVENU DES VALEURS MOBILIERES ==========
   'irvm': ['Art. 105'],
   'ircm': ['Art. 105'],
   'impot revenu valeurs mobilieres': ['Art. 105'],

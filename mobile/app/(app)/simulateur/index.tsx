@@ -60,7 +60,7 @@ export default function SimulateurHub() {
     },
     {
       id: "ircm",
-      title: "IRVM",
+      title: "IRCM",
       subtitle: t("simulateur.ircm.subtitle"),
       description: t("simulateur.ircm.legalRef"),
       icon: "trending-up-outline" as const,

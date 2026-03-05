@@ -10,6 +10,7 @@ import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
+import TurnstileWidget from "@/components/auth/TurnstileWidget";
 
 export default function LoginPassword() {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ export default function LoginPassword() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -37,7 +39,7 @@ export default function LoginPassword() {
     setLoading(true);
 
     try {
-      const data = await authApi.login({ email, password, rememberMe });
+      const data = await authApi.login({ email, password, rememberMe, turnstileToken: turnstileToken ?? undefined });
       setUser(data.user ?? null);
       if (data.otpCode) {
         setDevCode(data.otpCode);
@@ -173,6 +175,8 @@ export default function LoginPassword() {
               {t("auth.rememberMe")}
             </Text>
           </TouchableOpacity>
+
+          <TurnstileWidget onToken={setTurnstileToken} />
 
           {/* Bouton */}
           <TouchableOpacity

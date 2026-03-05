@@ -376,7 +376,7 @@
       ]
     },
     {
-      "entree": "Impôt sur le revenu des valeurs mobilières (IRVM)",
+      "entree": "Impôt sur le revenu des valeurs mobilières (IRCM)",
       "reference": "Tome 2, Livre 3"
     },
     {
@@ -602,7 +602,7 @@
       "references": [
         { "type": "imposition des résultats", "reference": "126-B" },
         { "type": "impôt forfaitaire", "reference": "126 quater A" },
-        { "type": "IRVM", "reference": "1, 9 ter Tome 2, Livre 3" }
+        { "type": "IRCM", "reference": "1, 9 ter Tome 2, Livre 3" }
       ]
     },
     {

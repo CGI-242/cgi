@@ -41,6 +41,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/enregistrement": "simulateur.enreg.title",
   "/simulateur/cession-parts": "simulateur.cessionParts.title",
   "/simulateur/contribution-fonciere": "simulateur.foncier.title",
+  "/simulateur/paie": "simulateur.paie.title",
   "/calendrier": "calendrier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
@@ -49,8 +50,6 @@ const PAGE_TITLES: Record<string, string> = {
   "/permissions": "settings.managementPermissions",
   "/admin": "settings.managementAdmin",
   "/securite": "settings.twoFactor",
-  "/legal/cgu": "settings.terms",
-  "/legal/confidentialite": "settings.privacy",
 };
 
 const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
@@ -63,8 +62,6 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/audit": { path: "/plus", titleKey: "plus.title" },
   "/permissions": { path: "/plus", titleKey: "plus.title" },
   "/admin": { path: "/plus", titleKey: "plus.title" },
-  "/legal/cgu": { path: "/plus", titleKey: "plus.title" },
-  "/legal/confidentialite": { path: "/plus", titleKey: "plus.title" },
   "/simulateur/its": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/is": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/patente": { path: "/simulateur", titleKey: "simulateur.title" },
@@ -77,6 +74,7 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/enregistrement": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/cession-parts": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/contribution-fonciere": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/paie": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -104,11 +102,12 @@ export default function AppLayout() {
     }
   }, [isAuthenticated]);
 
-  if (!isAuthenticated) {
-    if (loggedOut) {
-      return <Redirect href="/(auth)/logout" />;
-    }
+  if (!isAuthenticated && !loggedOut) {
     return <Redirect href="/(auth)" />;
+  }
+
+  if (!isAuthenticated && loggedOut) {
+    return null;
   }
 
   if (!subLoading && subStatus === "EXPIRED" && user?.globalRole !== "ADMIN") {
@@ -183,6 +182,7 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/enregistrement" />
       <Stack.Screen name="simulateur/cession-parts" />
       <Stack.Screen name="simulateur/contribution-fonciere" />
+      <Stack.Screen name="simulateur/paie" />
       <Stack.Screen name="calendrier/index" />
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />
@@ -195,8 +195,6 @@ export default function AppLayout() {
       <Stack.Screen name="analytics/index" />
       <Stack.Screen name="audit/index" />
       <Stack.Screen name="permissions/index" />
-      <Stack.Screen name="legal/cgu" />
-      <Stack.Screen name="legal/confidentialite" />
     </Stack>
   );
 

@@ -33,6 +33,8 @@
       "package": "com.normxai.cgi242",
       "permissions": [
         "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "RECORD_AUDIO",
         "android.permission.RECORD_AUDIO"
       ]
     },
@@ -46,10 +48,13 @@
       "expo-router",
       "expo-secure-store",
       "expo-font",
-      ["@sentry/react-native", {
-        "organization": "normx-ai-9m",
-        "project": "react-native"
-      }],
+      [
+        "@sentry/react-native",
+        {
+          "organization": "normx-ai-9m",
+          "project": "react-native"
+        }
+      ],
       "expo-speech-recognition",
       [
         "expo-notifications",
@@ -71,6 +76,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "owner": "cmabika"
+    "owner": "cmabika",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/10683ceb-5899-41bd-a451-b48c96f123f1"
+    }
   }
 }

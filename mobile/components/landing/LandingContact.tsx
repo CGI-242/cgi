@@ -141,7 +141,7 @@ export default function LandingContact({ isMobile }: Props) {
               textAlign: "center",
             }}
           >
-            5 rue Benjamin Raspail, Creil
+            5 rue Benjamin Raspail, 60100 Creil
           </Text>
         </View>
 

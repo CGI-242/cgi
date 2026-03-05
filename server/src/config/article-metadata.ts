@@ -1097,7 +1097,7 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
       'revenus distribués',
       'dividendes',
       'réserves',
-      'IRVM',
+      'IRCM',
       'IRPP',
       'bénéfices non mis en réserve'
     ],
@@ -1146,7 +1146,7 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
       'actions gratuites',
       'augmentation capital',
       'exonération',
-      'IRVM',
+      'IRCM',
       'apports'
     ],
     statut: 'en vigueur'
@@ -1227,7 +1227,7 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
     keywords: [
       'revenus obligations',
       'primes remboursement',
-      'IRVM',
+      'IRCM',
       'taux émission'
     ],
     statut: 'en vigueur'
@@ -1499,7 +1499,7 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
       'liquidation',
       'bons',
       'droits sociaux',
-      'IRVM',
+      'IRCM',
       'IRPP',
       'rachat parts'
     ],
@@ -1894,7 +1894,7 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
       'quotient familial',
       'article 91',
       'article 95',
-      'IRVM',
+      'IRCM',
       'UDEAC',
       'taxe immobilière',
       'crédit impôt'
@@ -2135,13 +2135,13 @@ export const ARTICLE_METADATA: Record<string, ArticleMetadata> = {
 
   'Art. 97': {
     numero: 'Art. 97',
-    titre: 'Imputation de l\'IRVM sur l\'IRPP',
+    titre: 'Imputation de l\'IRCM sur l\'IRPP',
     type: 'calcul',
     priority: 2,
     section: 'Calcul de l\'impôt',
     references: ['Art. 61-1-5°'],
     keywords: [
-      'IRVM',
+      'IRCM',
       'imputation',
       'capitaux mobiliers',
       'UDEAC',

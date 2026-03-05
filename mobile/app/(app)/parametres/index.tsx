@@ -206,7 +206,7 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="document-text-outline"
             label={t("settings.terms")}
-            onPress={() => router.push("/(app)/legal/cgu" as Href)}
+            onPress={() => router.push("/legal/cgu" as Href)}
             showChevron
             colors={colors}
           />
@@ -214,7 +214,15 @@ export default function ParametresScreen() {
           <SettingsRow
             icon="lock-closed-outline"
             label={t("settings.privacy")}
-            onPress={() => router.push("/(app)/legal/confidentialite" as Href)}
+            onPress={() => router.push("/legal/confidentialite" as Href)}
+            showChevron
+            colors={colors}
+          />
+          <Divider colors={colors} />
+          <SettingsRow
+            icon="information-circle-outline"
+            label={t("settings.legalNotices")}
+            onPress={() => router.push("/legal/mentions" as Href)}
             showChevron
             colors={colors}
           />

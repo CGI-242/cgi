@@ -17,10 +17,16 @@
       "article": "Art. 1",
       "titre": "Objet du décret",
       "texte": [
-        "[NB - Décret n°2000-186 du 12 août 2000 fixant les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire]",
+        "",
         "Art.1.- Le présent décret fixe les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire prévue à l'article 54 du Code des hydrocarbures."
       ],
-      "mots_cles": ["redevance superficiaire", "taux", "perception", "recouvrement", "article 54 Code hydrocarbures"],
+      "mots_cles": [
+        "redevance superficiaire",
+        "taux",
+        "perception",
+        "recouvrement",
+        "article 54 Code hydrocarbures"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -31,7 +37,13 @@
         "- permis de recherche : 3.000 F/km² ;",
         "- permis d'exploitation : 800 USD/km²."
       ],
-      "mots_cles": ["taux redevance", "permis recherche", "3000 F/km²", "permis exploitation", "800 USD/km²"],
+      "mots_cles": [
+        "taux redevance",
+        "permis recherche",
+        "3000 F/km²",
+        "permis exploitation",
+        "800 USD/km²"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -40,7 +52,9 @@
       "texte": [
         "Art.3.- (Décret n°2022-1858) Abrogé"
       ],
-      "mots_cles": ["abrogé"],
+      "mots_cles": [
+        "abrogé"
+      ],
       "statut": "abrogé"
     },
     {
@@ -52,7 +66,14 @@
         "- deux tiers aux collectivités publiques.",
         "Un arrêté du Ministre chargé des finances détermine les collectivités publiques, bénéficiaires et fixe la clef de répartition entre ces différentes collectivités."
       ],
-      "mots_cles": ["Trésor Public", "répartition", "un tiers", "deux tiers", "collectivités publiques", "arrêté Ministre finances"],
+      "mots_cles": [
+        "Trésor Public",
+        "répartition",
+        "un tiers",
+        "deux tiers",
+        "collectivités publiques",
+        "arrêté Ministre finances"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -61,7 +82,12 @@
       "texte": [
         "Art.5.- Le paiement de la redevance superficiaire est effectué au plus tard le 20 janvier de chaque année tel que spécifié à l'article 55 de la loi n°24-94 du 23 août 1994 sous peine d'amende égale au double du montant des droits à payer."
       ],
-      "mots_cles": ["paiement", "20 janvier", "loi 24-94", "amende double"],
+      "mots_cles": [
+        "paiement",
+        "20 janvier",
+        "loi 24-94",
+        "amende double"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -70,7 +96,9 @@
       "texte": [
         "Art.6.- (Décret n°2022-1858) Abrogé"
       ],
-      "mots_cles": ["abrogé"],
+      "mots_cles": [
+        "abrogé"
+      ],
       "statut": "abrogé"
     },
     {
@@ -79,7 +107,11 @@
       "texte": [
         "Art.7.- Le présent décret sera enregistré, inséré au journal officiel et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["publication", "journal officiel", "entrée en vigueur"],
+      "mots_cles": [
+        "publication",
+        "journal officiel",
+        "entrée en vigueur"
+      ],
       "statut": "en vigueur"
     }
   ]

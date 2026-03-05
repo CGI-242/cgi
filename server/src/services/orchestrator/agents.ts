@@ -30,7 +30,7 @@ export const FISCAL_AGENTS: FiscalAgent[] = [
     ],
     ragPriority: { tomes: ['1'], chapitres: ['Chapitre 1'], keywords: ['IS', 'sociétés', 'bénéfice'] },
     systemInstruction: `Tu es spécialisé dans l'Impôt sur les Sociétés (IS) — Chapitre 1, Livre 1, Tome 1 du CGI 2026 (Art. 1 à 92K).
-Focus sur : Art. 86A (taux), Art. 86B (imputation IRVM), Art. 86C (minimum de perception), Art. 86D (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
+Focus sur : Art. 86A (taux), Art. 86B (imputation IRCM), Art. 86C (minimum de perception), Art. 86D (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
 Taux principal : 28%. Taux microfinance/enseignement : 25%. Taux non-résidents CEMAC : 33%.
 Minimum de perception (Art. 86C) : taux 1% sur produits exploitation + financiers + HAO. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre. En fin d'exercice, si l'IS définitif > minimum de perception, l'entreprise paie le solde. Si IS < minimum, le minimum reste acquis au Trésor.
 TOUJOURS citer : "Chapitre 1 (Impôt sur les sociétés), Livre 1, Tome 1" dans la référence.`,
@@ -95,11 +95,11 @@ TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 1 (IBA), Livre 1
   },
   {
     id: 'agent-irvm',
-    name: 'Agent IRVM/IRF',
+    name: 'Agent IRCM/IRF',
     description: 'Spécialisé revenus des valeurs mobilières et revenus fonciers',
     keywords: ['irvm', 'ircm', 'irf', 'valeurs mobilières', 'valeurs mobilieres', 'capitaux mobiliers', 'revenus fonciers', 'dividendes', 'intérêts', 'interets', 'loyer', 'loyers', 'foncier', 'plus-value'],
     patterns: [
-      /\bIRVM\b/,
+      /\bIRCM\b/,
       /\bIRCM\b/,
       /\bIRF\b/,
       /\bvaleurs\s+mobili[eè]res\b/i,
@@ -109,13 +109,13 @@ TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 1 (IBA), Livre 1
       /\bplus[- ]value[s]?\b/i,
       /\bloyer[s]?\b/i,
     ],
-    ragPriority: { tomes: ['1'], keywords: ['IRVM', 'IRF', 'dividendes', 'foncier', 'loyer'] },
-    systemInstruction: `Tu es spécialisé dans l'IRVM et l'IRF — Chapitre 2, Livre 1, Tome 1 du CGI 2026.
-IRVM (Section 2, Art. 103-110A) : Impôt sur le Revenu des Valeurs Mobilières. Taux 15% (35% revenus occultes). Dividendes, intérêts, plus-values mobilières.
+    ragPriority: { tomes: ['1'], keywords: ['IRCM', 'IRF', 'dividendes', 'foncier', 'loyer'] },
+    systemInstruction: `Tu es spécialisé dans l'IRCM et l'IRF — Chapitre 2, Livre 1, Tome 1 du CGI 2026.
+IRCM (Section 2, Art. 103-110A) : Impôt sur le Revenu des Valeurs Mobilières. Taux 15% (35% revenus occultes). Dividendes, intérêts, plus-values mobilières.
 IRF (Section 3, Art. 111-113A) : taux loyers 9%, taux plus-values immobilières 15%. Retenue à la source par locataire (personnes morales).
 IMPORTANT : L'IRF est au Chapitre 2 (Impôts sur les revenus), Section 3. Il n'existe PAS de Chapitre 3 dans le Livre 1, Tome 1.
-NOTE : L'ancien sigle "IRCM" est remplacé par "IRVM" dans le CGI 2026. Utilise TOUJOURS "IRVM".
-TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 2 (IRVM) ou Section 3 (IRF), Livre 1, Tome 1" dans la référence.`,
+NOTE : L'ancien sigle "IRCM" est remplacé par "IRCM" dans le CGI 2026. Utilise TOUJOURS "IRCM".
+TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 2 (IRCM) ou Section 3 (IRF), Livre 1, Tome 1" dans la référence.`,
   },
   {
     id: 'agent-conventions',
@@ -584,7 +584,7 @@ DÉLAIS SPÉCIAUX :
 - Déclaration IS : 4 mois après clôture exercice — Art. 86F ;
 - Paiement IS : dès remise déclaration — Art. 86G ;
 - Déclaration d'existence : 15 jours du commencement (3 mois après constitution) — Art. 86E ;
-- IRVM plus-values : 60 jours du mois suivant la réalisation — Art. 110A ;
+- IRCM plus-values : 60 jours du mois suivant la réalisation — Art. 110A ;
 - Cessation/cession activité : 10 jours de l'événement — Art. 181 ;
 - Cessation patente : avant le 1er octobre — Art. 305 ;
 - Décès employeur (DAS) : 6 mois du décès (max 31 janvier) — Art. 181.

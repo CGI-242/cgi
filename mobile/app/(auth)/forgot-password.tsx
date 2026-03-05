@@ -9,6 +9,7 @@ import { authApi } from "@/lib/api/auth";
 import axios from "axios";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
+import TurnstileWidget from "@/components/auth/TurnstileWidget";
 
 export default function ForgotPassword() {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ export default function ForgotPassword() {
   const [emailLocal, setEmailLocal] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const setEmail = useAuthStore((s) => s.setEmail);
   const setDevCode = useAuthStore((s) => s.setDevCode);
@@ -34,7 +36,7 @@ export default function ForgotPassword() {
     setLoading(true);
 
     try {
-      const data = await authApi.forgotPassword({ email: emailLocal.trim() });
+      const data = await authApi.forgotPassword({ email: emailLocal.trim(), turnstileToken: turnstileToken ?? undefined });
       setEmail(emailLocal.trim());
       if (__DEV__ && data.devCode) setDevCode(data.devCode);
       router.push("/(auth)/reset-password");
@@ -87,6 +89,8 @@ export default function ForgotPassword() {
             onSubmitEditing={handleSendCode}
             accessibilityLabel={t("auth.emailPlaceholder")}
           />
+
+          <TurnstileWidget onToken={setTurnstileToken} />
 
           {/* Bouton */}
           <TouchableOpacity

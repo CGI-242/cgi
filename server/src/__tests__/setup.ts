@@ -100,6 +100,11 @@ jest.mock("../utils/prisma", () => {
     articleReference: {
       count: jest.fn(),
     },
+    invitation: {
+      findUnique: jest.fn(),
+      findFirst: jest.fn(),
+      update: jest.fn(),
+    },
     auditLog: {
       create: jest.fn(),
       findMany: jest.fn(),

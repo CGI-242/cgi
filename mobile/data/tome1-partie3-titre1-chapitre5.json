@@ -121,8 +121,7 @@
         "contrôleur",
         "procès-verbal",
         "audition",
-        "vérification de comptabilité",
-        "L.F. 2026"
+        "vérification de comptabilité"
       ],
       "statut": "en vigueur"
     },
@@ -212,10 +211,10 @@
       "article": "Art. 390 bis A",
       "titre": "Délai de réponse du contribuable à la notification de redressement",
       "texte": [
-        "(L.F.2025, L.F.2026) L'Administration fiscale fait connaître au contribuable la nature et les motifs du redressement envisagé. Elle invite en même temps l'intéressé à faire parvenir son acceptation ou ses observations dans un délai de trente (30) jours ouvrables à compter de la réception de cette notification.",
+        "L'Administration fiscale fait connaître au contribuable la nature et les motifs du redressement envisagé. Elle invite en même temps l'intéressé à faire parvenir son acceptation ou ses observations dans un délai de trente (30) jours ouvrables à compter de la réception de cette notification.",
         "Si le redevable donne son accord dans le délai prescrit ou si les observations présentées dans ce délai sont reconnues fondées, l'administration fiscale procède à l'établissement d'un rôle ou à l'émission d'un avis de mise en recouvrement sur la base acceptée par l'intéressé.",
         "À défaut d'accord après la réponse du contribuable dans le délai prescrit, l'administration fiscale fixe la base de l'imposition et calcule le montant de l'impôt exigible, sous réserve du droit de réclamation du redevable après établissement du rôle ou l'émission d'un avertissement.",
-        "(L.F. 2026 - modifié) La fixation de la base de l'imposition et le calcul du montant de l'impôt exigible se font dans un délai maximum de soixante (60) jours ouvrables, à compter de la date de réception des observations du contribuable, sous peine de nullité de la partie contestée des impositions, tout en mettant en recouvrement la partie acceptée.",
+        "La fixation de la base de l'imposition et le calcul du montant de l'impôt exigible se font dans un délai maximum de soixante (60) jours ouvrables, à compter de la date de réception des observations du contribuable, sous peine de nullité de la partie contestée des impositions, tout en mettant en recouvrement la partie acceptée.",
         "En cas de production des documents complémentaires ou de demande de séance de travail par le contribuable avant la confirmation de redressements, celui-ci est tenu de solliciter par écrit la suspension de l'envoi de la lettre de confirmation des redressements.",
         "Dans ces cas, le délai cesse de courir et un nouveau délai de soixante jours ouvrables est décompté à compter de la date de réception des documents ou de la tenue de la dernière séance de travail.",
         "À défaut de réponse du contribuable dans le délai prescrit, lequel contribuable, soit a reçu la notification des redressements, soit s'est opposé à recevoir la notification des redressements par acte d'huissier de justice, l'administration fiscale fixe la base de l'imposition, calcule le montant de l'impôt exigible, et y ajoute le double des frais d'huissier de justice à titre d'amende. Dans ce cas, le contribuable qui perd le droit de réclamation devant l'administration fiscale est susceptible de poursuites judiciaires 15 jours après l'établissement du rôle ou l'émission d'un avertissement, sans préjudice de toute action de poursuite administrative prévue par les articles 485 et suivants du CGI, tome 1."
@@ -232,8 +231,7 @@
         "nullité partie contestée",
         "suspension",
         "huissier de justice",
-        "droit de réclamation",
-        "L.F. 2026"
+        "droit de réclamation"
       ],
       "statut": "en vigueur"
     },
@@ -323,7 +321,7 @@
       "article": "Art. 390 bis G",
       "titre": "Interdiction de la double vérification",
       "texte": [
-        "(L.F.2025) Lorsque la vérification de la comptabilité pour une période déterminée au regard d'un impôt ou d'une taxe, ou d'un groupe d'impôts ou de taxes est achevée, l'administration fiscale ne peut procéder à une nouvelle vérification de ces écritures au regard des mêmes impôts ou taxes pour la même période.",
+        "Lorsque la vérification de la comptabilité pour une période déterminée au regard d'un impôt ou d'une taxe, ou d'un groupe d'impôts ou de taxes est achevée, l'administration fiscale ne peut procéder à une nouvelle vérification de ces écritures au regard des mêmes impôts ou taxes pour la même période.",
         "Toutefois, il est fait exception à cette règle :",
         "• lorsque la vérification a été limitée à des opérations déterminées ;",
         "• en cas de constatation d'une double comptabilité ;",

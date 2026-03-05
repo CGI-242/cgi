@@ -46,7 +46,6 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
 
 export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
   const { colors } = useTheme();
-  const logout = useAuthStore((s) => s.logout);
   const { t } = useTranslation();
 
   const profileItems: ProfileItem[] = [
@@ -63,7 +62,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     {
       label: t("sidebar.logout"),
       icon: "log-out-outline",
-      action: () => logout(),
+      action: () => router.replace("/(auth)/logout"),
       color: colors.danger,
       separator: true,
     },

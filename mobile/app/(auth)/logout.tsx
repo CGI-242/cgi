@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -11,7 +12,18 @@ export default function LogoutScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const logout = useAuthStore((s) => s.logout);
   const clearLoggedOut = useAuthStore((s) => s.clearLoggedOut);
+  const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
+  const didLogout = useRef(false);
+
+  // Effectuer le logout une fois l'écran monté
+  useEffect(() => {
+    if (isAuthenticated && !didLogout.current) {
+      didLogout.current = true;
+      logout();
+    }
+  }, []);
 
   const handleReconnect = () => {
     clearLoggedOut();

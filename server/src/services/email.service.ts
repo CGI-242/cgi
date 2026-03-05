@@ -7,7 +7,9 @@ const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587', 10);
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
-const SMTP_FROM = process.env.SMTP_FROM || 'CGI-242 <noreply@cgi242.com>';
+const SMTP_FROM_ADDRESS = process.env.SMTP_FROM || 'no-reply@normx-ai.com';
+const SMTP_FROM = `CGI 242 - NormX AI <${SMTP_FROM_ADDRESS}>`;
+const SMTP_REPLY_TO = process.env.SMTP_REPLY_TO || 'contact@normx-ai.com';
 
 const isSmtpConfigured = !!(SMTP_HOST && SMTP_USER && SMTP_PASS);
 
@@ -28,13 +30,44 @@ if (isSmtpConfigured) {
   logger.warn('SMTP non configuré — les emails seront affichés en console');
 }
 
+function htmlToPlainText(html: string): string {
+  return html
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/p>/gi, '\n\n')
+    .replace(/<\/li>/gi, '\n')
+    .replace(/<li[^>]*>/gi, '  - ')
+    .replace(/<\/tr>/gi, '\n')
+    .replace(/<td[^>]*>/gi, ' ')
+    .replace(/<a[^>]*href="([^"]*)"[^>]*>[^<]*<\/a>/gi, '$1')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#?\w+;/g, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
 async function sendMail(to: string, subject: string, html: string): Promise<void> {
+  const text = htmlToPlainText(html);
+
   if (transporter) {
-    await transporter.sendMail({ from: SMTP_FROM, to, subject, html });
+    await transporter.sendMail({
+      from: SMTP_FROM,
+      replyTo: SMTP_REPLY_TO,
+      to,
+      subject,
+      html,
+      text,
+      headers: {
+        'X-Mailer': 'CGI242-NormX',
+      },
+    });
     logger.info(`Email envoyé à ${to} : ${subject}`);
   } else {
     logger.info(`[EMAIL FALLBACK] À: ${to} | Sujet: ${subject}`);
-    logger.info(`[EMAIL FALLBACK] Contenu:\n${html}`);
+    logger.info(`[EMAIL FALLBACK] Contenu:\n${text}`);
   }
 }
 
@@ -54,10 +87,10 @@ export class EmailService {
 
         <!-- Header -->
         <tr>
-          <td style="background-color: #00815d; padding: 24px 32px; text-align: center;">
-            <span style="color: #ffffff; font-size: 22px; font-weight: bold; letter-spacing: 1px;">CGI 242</span>
+          <td style="background-color: #08080d; padding: 24px 32px; text-align: center;">
+            <span style="color: #c8a03c; font-size: 22px; font-weight: bold; letter-spacing: 1px;">CGI 242</span>
             <br/>
-            <span style="color: #ffffffcc; font-size: 12px;">Code Général des Impôts du Congo — Intelligence Fiscale</span>
+            <span style="color: #e8e6e1cc; font-size: 12px;">Code Général des Impôts du Congo — Intelligence Fiscale</span>
           </td>
         </tr>
 
@@ -105,8 +138,8 @@ export class EmailService {
         Pour sécuriser votre connexion à votre espace CGI 242, voici votre code de vérification :
       </p>
 
-      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 24px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #00815d;">${otp}</span>
+      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #c8a03c;">${otp}</span>
       </div>
 
       <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
@@ -138,8 +171,8 @@ export class EmailService {
         Vous avez demandé une réinitialisation de mot de passe pour votre compte CGI 242. Voici votre code :
       </p>
 
-      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 24px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #00815d;">${code}</span>
+      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #c8a03c;">${code}</span>
       </div>
 
       <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
@@ -170,7 +203,7 @@ export class EmailService {
       </p>
 
       <div style="text-align: center; margin: 0 0 24px 0;">
-        <a href="${inviteUrl}" style="display: inline-block; background-color: #00815d; color: #ffffff; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
+        <a href="${inviteUrl}" style="display: inline-block; background-color: #c8a03c; color: #ffffff; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
           Rejoindre l'équipe
         </a>
       </div>
@@ -178,7 +211,7 @@ export class EmailService {
       <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
         Si le bouton ne fonctionne pas, copiez-collez ce lien dans votre navigateur :
       </p>
-      <p style="margin: 0 0 24px 0; font-size: 12px; color: #00815d; word-break: break-all;">
+      <p style="margin: 0 0 24px 0; font-size: 12px; color: #c8a03c; word-break: break-all;">
         ${inviteUrl}
       </p>
 
@@ -260,12 +293,12 @@ export class EmailService {
         <strong>${requesterName}</strong> a demandé <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour l'organisation <strong>${orgName}</strong>.
       </p>
 
-      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 20px; margin: 0 0 24px 0;">
+      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; margin: 0 0 24px 0;">
         <table style="width: 100%; font-size: 14px; color: #374151;">
           <tr><td style="padding: 4px 0;">Plan</td><td style="text-align: right; font-weight: bold;">${plan}</td></tr>
           <tr><td style="padding: 4px 0;">Sièges demandés</td><td style="text-align: right; font-weight: bold;">${additionalSeats}</td></tr>
           <tr><td style="padding: 4px 0;">Prix unitaire</td><td style="text-align: right; font-weight: bold;">${unitPrice.toLocaleString('fr-FR')} XAF</td></tr>
-          <tr><td style="padding: 4px 0; border-top: 1px solid #d1d5db;">Total à payer</td><td style="text-align: right; font-weight: bold; border-top: 1px solid #d1d5db; color: #00815d;">${totalPrice.toLocaleString('fr-FR')} XAF</td></tr>
+          <tr><td style="padding: 4px 0; border-top: 1px solid #d1d5db;">Total à payer</td><td style="text-align: right; font-weight: bold; border-top: 1px solid #d1d5db; color: #c8a03c;">${totalPrice.toLocaleString('fr-FR')} XAF</td></tr>
         </table>
       </div>
 
@@ -292,11 +325,11 @@ export class EmailService {
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #00815d; font-weight: bold;">approuvée</span>.
+        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #c8a03c; font-weight: bold;">approuvée</span>.
       </p>
 
-      <div style="background-color: #f0fdf4; border: 2px solid #00815d; padding: 20px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 24px; font-weight: bold; color: #00815d;">${newTotalSeats} sièges</span>
+      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 24px; font-weight: bold; color: #c8a03c;">${newTotalSeats} sièges</span>
         <br/>
         <span style="font-size: 13px; color: #6b7280;">disponibles dans votre organisation</span>
       </div>

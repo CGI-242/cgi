@@ -130,8 +130,8 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
       onLayout={(e) => { blockY.current = e.nativeEvent.layout.y; }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, flex: 1 }}>
-          {article.article} — {article.titre}
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: article.article ? colors.text : colors.primary, flex: 1 }}>
+          {article.article ? `${article.article} — ${article.titre}` : article.titre}
         </Text>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginLeft: 8 }}>
           {/* Play / Pause */}

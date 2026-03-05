@@ -20,7 +20,7 @@
         "Art.1.- Au sens de la présente loi, les expressions ci-après sont définies ainsi qu'il suit :",
         "Activités de développement : opérations de conception, de financement, de viabilisation, de construction, d'aménagement, de développement, de fourniture des terrains, d'infrastructures, des services et d'utilités nécessaires à la mise en service d'un parc d'activités, d'une zone spécialisée ou d'infrastructures supports.",
         "Activités d'opération : opérations d'exploitation, de gestion, d'entretien et de maintenance des terrains, des infrastructures, des services et des utilités nécessaires au bon fonctionnement d'un parc d'activités, d'une zone spécialisée ou des infrastructures supports.",
-        "Agence de planification, de promotion et de développement : établissement public à caractère industriel et commercial ayant pour missions d'organiser, de programmer le développement, de promouvoir et de superviser les ZES. [NB - Voir la loi n°25-2017 du 9 juin 2017 portant création de l'agence de planification, de promotion et de développement des zones économiques spéciales]",
+        "Agence de planification, de promotion et de développement : établissement public à caractère industriel et commercial ayant pour missions d'organiser, de programmer le développement, de promouvoir et de superviser les ZES.",
         "Autorité de régulation : établissement public à caractère administratif ayant pour missions d'assurer la régulation des ZES et d'arbitrer les conflits opposant l'agence de planification, les développeurs, les opérateurs et les investisseurs.",
         "Cession et location des droits fonciers : correspondent aux transactions des droits fonciers entre les entreprises après information de l'agence de planification, de promotion et de développement.",
         "Comité national d'orientation des ZES : organe d'orientation et de décision, placé sous l'autorité du Président de la République et composé des Ministres dont les départements participent au processus de création des ZES.",
@@ -397,7 +397,7 @@
         "- pensions de service sous forme de remboursement en cas d'accès et de départ de la fonction en République du Congo ;",
         "- indemnités de transport tant à l'intérieur qu'à l'extérieur du pays ;",
         "- frais de formation en langue, allocations à l'éducation des enfants.",
-        "[NB - Les ventes et les acquisitions des biens et services faites par les développeurs et les entreprises installées dans les zones économiques spéciales sont soumises au taux réduit de la TVA (L.F.2024)]"
+        ""
       ],
       "mots_cles": [
         "régime fiscal ZES",
@@ -486,7 +486,7 @@
       "titre": "Guichet unique – Organisation",
       "texte": [
         "Art.24.- Les attributions, l'organisation et le fonctionnement du guichet unique sont fixés par voie réglementaire.",
-        "[NB - Voir le décret n°2019-120 du 3 mai 2019 portant attributions, organisation et fonctionnement des guichets uniques des zones économiques spéciales]."
+        "."
       ],
       "mots_cles": [
         "guichet unique",

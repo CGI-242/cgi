@@ -153,7 +153,9 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
     prisma.subscription.update({
       where: { organizationId: req.orgId },
       data: { questionsUsed: { increment: 1 } },
-    }).catch(() => {});
+    }).catch((err) => {
+      logger.error('Echec increment compteur quota org', err);
+    });
 
     // Marquer que le quota a déjà été incrémenté (évite double incrément dans chat)
     req.quotaIncremented = true;

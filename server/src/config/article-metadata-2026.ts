@@ -236,13 +236,13 @@ export const ARTICLE_METADATA_2026: Record<string, ArticleMetadata2026> = {
 
   'Art. 86B': {
     numero: 'Art. 86B',
-    titre: 'Imputation IRVM sur IS',
+    titre: 'Imputation IRCM sur IS',
     section: 'Modalités d\'imposition',
-    themes: ['IRVM', 'imputation', 'valeurs mobilières'],
+    themes: ['IRCM', 'imputation', 'valeurs mobilières'],
     priority: 1,
-    defines: ['imputation IRVM sur IS'],
+    defines: ['imputation IRCM sur IS'],
     valeurs: ['15%', '30%'],
-    keywords: ['IRVM', 'valeurs mobilières', 'actions'],
+    keywords: ['IRCM', 'valeurs mobilières', 'actions'],
   },
 
   'Art. 86C': {

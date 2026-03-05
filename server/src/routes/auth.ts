@@ -7,6 +7,7 @@ import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest, isWebClient, setAuthCookies, clearAuthCookies } from "../middleware/auth";
 import { sensitiveLimiter } from "../middleware/rateLimit.middleware";
 import { validate } from "../middleware/validate.middleware";
+import { verifyTurnstile } from "../middleware/turnstile.middleware";
 import { registerBody, loginBody, verifyOtpBody, sendOtpEmailBody, forgotPasswordBody, resetPasswordBody, refreshTokenBody, checkEmailBody } from "../schemas/auth.schema";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
 import { EmailService } from "../services/email.service";
@@ -70,7 +71,7 @@ function sendTokens(req: Request, res: Response, token: string, refreshToken: st
  *         description: Erreur serveur
  */
 // POST /api/auth/register
-router.post("/register", validate({ body: registerBody }), async (req: Request, res: Response) => {
+router.post("/register", validate({ body: registerBody }), verifyTurnstile, async (req: Request, res: Response) => {
   try {
     const { entrepriseNom, nom, prenom, email, telephone, password, invitationToken, pays } = req.body;
 
@@ -173,7 +174,9 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
     }
 
     // Envoyer OTP par email
-    EmailService.sendOtp(email, otp).catch(() => {});
+    EmailService.sendOtp(email, otp).catch((err) => {
+      logger.error(`Echec envoi OTP (register) à ${email}`, err);
+    });
 
     AuditService.log({
       actorId: user.id,
@@ -236,7 +239,7 @@ router.post("/register", validate({ body: registerBody }), async (req: Request, 
  *         description: Erreur serveur
  */
 // POST /api/auth/login
-router.post("/login", validate({ body: loginBody }), async (req: Request, res: Response) => {
+router.post("/login", validate({ body: loginBody }), verifyTurnstile, async (req: Request, res: Response) => {
   try {
     const { email, password, rememberMe } = req.body;
 
@@ -271,7 +274,9 @@ router.post("/login", validate({ body: loginBody }), async (req: Request, res: R
     });
 
     // Envoyer OTP par email
-    EmailService.sendOtp(email, otp).catch(() => {});
+    EmailService.sendOtp(email, otp).catch((err) => {
+      logger.error(`Echec envoi OTP (login) à ${email}`, err);
+    });
 
     // Récupérer l'entreprise
     const membership = await prisma.organizationMember.findFirst({
@@ -493,7 +498,7 @@ router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBo
  *         description: Erreur serveur
  */
 // POST /api/auth/forgot-password
-router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswordBody }), async (req: Request, res: Response) => {
+router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswordBody }), verifyTurnstile, async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -509,7 +514,9 @@ router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswor
       });
 
       // Envoyer l'email de réinitialisation
-      EmailService.sendPasswordReset(email, otp).catch(() => {});
+      EmailService.sendPasswordReset(email, otp).catch((err) => {
+        logger.error(`Echec envoi reset password à ${email}`, err);
+      });
 
       AuditService.log({
         actorId: user.id,

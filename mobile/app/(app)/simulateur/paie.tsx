@@ -9,6 +9,7 @@ import {
   type SituationFamiliale,
   type RubriquesInput,
 } from "@/lib/services/paie.service";
+import { calculateQuotient } from "@/lib/services/fiscal-common";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
@@ -117,6 +118,12 @@ export default function PaieScreen() {
 
   const isResident = profil !== "non_resident";
 
+  // Nombre de parts calculé indépendamment du résultat
+  const nombreParts = useMemo(() => {
+    if (!isResident) return 1;
+    return calculateQuotient(situation, enfants, true);
+  }, [situation, enfants, isResident]);
+
   const PROFILS: { value: ProfilSalarie; label: string }[] = [
     { value: "national", label: t("simulateur.paie.profilNational") },
     { value: "etranger_resident", label: t("simulateur.paie.profilEtranger") },
@@ -172,7 +179,7 @@ export default function PaieScreen() {
                 </View>
                 <View style={{ paddingHorizontal: 12, paddingVertical: 8, alignItems: "center", backgroundColor: `${colors.primary}15` }}>
                   <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>
-                    {result ? result.nombreParts : 1} {t("common.parts")}
+                    {nombreParts} {t("common.parts")}
                   </Text>
                 </View>
               </View>

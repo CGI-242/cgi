@@ -17,7 +17,7 @@
       "article": "T2L3C1-ST1",
       "titre": "I. Valeurs soumises à la taxe",
       "texte": [],
-      "mots_cles": ["valeurs", "soumises à la taxe", "IRVM"],
+      "mots_cles": ["valeurs", "soumises à la taxe", "IRCM"],
       "statut": "en vigueur"
     },
     {
@@ -47,7 +47,7 @@
         "6) Si le redressement a pour seul effet de réduire ou d'annuler le montant du déficit, aucune imposition supplémentaire n'est établie. Les sommes ainsi réintégrées ne donnent lieu à aucune distribution."
       ],
       "mots_cles": [
-        "IRVM",
+        "IRCM",
         "impôt sur le revenu des capitaux mobiliers",
         "exemptions",
         "dividendes",
@@ -145,19 +145,19 @@
       "article": "T2L3C1-ST2",
       "titre": "II. Tarif de l'impôt",
       "texte": [],
-      "mots_cles": ["tarif", "impôt", "IRVM"],
+      "mots_cles": ["tarif", "impôt", "IRCM"],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 3",
-      "titre": "Tarif de l'IRVM",
+      "titre": "Tarif de l'IRCM",
       "texte": [
         "Le tarif de l'impôt est fixé à :",
         "1° 15 % pour les produits autres que ceux désignés aux numéros 2 et 3 ci-après ;",
         "2° 17 % pour les produits visés à l'article 1 numéro 4 ;",
         "3° 20 % pour les lots payés aux créanciers et aux porteurs d'obligations.",
-        "Les sociétés pétrolières sont soumises à l'IRVM au Congo, dans les limites des taux prévus par les conventions fiscales signées avec le Congo.",
-        "En l'absence de conventions fiscales signées avec le Congo, l'IRVM est liquidé au taux de droit commun applicable au Congo."
+        "Les sociétés pétrolières sont soumises à l'IRCM au Congo, dans les limites des taux prévus par les conventions fiscales signées avec le Congo.",
+        "En l'absence de conventions fiscales signées avec le Congo, l'IRCM est liquidé au taux de droit commun applicable au Congo."
       ],
       "mots_cles": [
         "tarif",
@@ -171,7 +171,7 @@
         "créanciers",
         "porteurs d'obligations",
         "sociétés pétrolières",
-        "IRVM",
+        "IRCM",
         "conventions pétrolières"
       ],
       "statut": "en vigueur"
@@ -180,7 +180,7 @@
       "article": "T2L3C1-ST3",
       "titre": "III. Assiette et mode de perception de l'impôt",
       "texte": [],
-      "mots_cles": ["assiette", "mode de perception", "impôt", "IRVM"],
+      "mots_cles": ["assiette", "mode de perception", "impôt", "IRCM"],
       "statut": "en vigueur"
     },
     {
@@ -321,17 +321,17 @@
       "article": "T2L3C1-ST3d",
       "titre": "4) Lieu de paiement de l'impôt",
       "texte": [],
-      "mots_cles": ["lieu de paiement", "impôt", "IRVM"],
+      "mots_cles": ["lieu de paiement", "impôt", "IRCM"],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 7",
-      "titre": "Lieu de paiement de l'IRVM",
+      "titre": "Lieu de paiement de l'IRCM",
       "texte": [
         "L'impôt est payé :",
         "à la résidence fiscale compétente pour les grandes entreprises, les moyennes entreprises et les entreprises de sous-traitance pétrolière ;",
         "au bureau de l'enregistrement pour les petites entreprises.",
-        "La formalité d'enregistrement des actes relatifs à l'IRVM s'effectue dans les bureaux de l'enregistrement du siège social de la société."
+        "La formalité d'enregistrement des actes relatifs à l'IRCM s'effectue dans les bureaux de l'enregistrement du siège social de la société."
       ],
       "mots_cles": [
         "impôt",
@@ -343,7 +343,7 @@
         "bureau de l'enregistrement",
         "petites entreprises",
         "formalité d'enregistrement",
-        "IRVM",
+        "IRCM",
         "siège social"
       ],
       "statut": "en vigueur"
@@ -352,12 +352,12 @@
       "article": "T2L3C1-ST3e",
       "titre": "5) Mode de paiement de l'impôt",
       "texte": [],
-      "mots_cles": ["mode de paiement", "impôt", "IRVM"],
+      "mots_cles": ["mode de paiement", "impôt", "IRCM"],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 8",
-      "titre": "Avance et recours en matière d'IRVM",
+      "titre": "Avance et recours en matière d'IRCM",
       "texte": [
         "Le montant de l'impôt est avancé, sauf leur recours contre les bénéficiaires des distributions ou des rémunérations taxables, par les sociétés, compagnies, entreprises, collectivités locales ou établissements publics."
       ],
@@ -379,7 +379,7 @@
     },
     {
       "article": "Art. 9",
-      "titre": "Délai de versement de l'IRVM",
+      "titre": "Délai de versement de l'IRCM",
       "texte": [
         "L'impôt est versé dans les trois mois de la décision de l'assemblée générale des associés ou actionnaires ayant décidé de la distribution des revenus désignés à l'article 1.",
         "Dans le cas où la date de distribution ne résulterait pas clairement des documents visés à l'article 4, les sociétés redevables sont tenues, sous peine de sanctions prévues ci-après, de préciser cette date en déposant, à cet effet, une déclaration datée, certifiée et signée par leurs représentants légaux.",
@@ -407,9 +407,9 @@
     },
     {
       "article": "Art. 9 bis",
-      "titre": "Bénéfices affectés à la réserve libre soumis à l'IRVM",
+      "titre": "Bénéfices affectés à la réserve libre soumis à l'IRCM",
       "texte": [
-        "Les bénéfices affectés à la réserve libre et pour lesquels la distribution n'est pas intervenue dans un délai de trois ans, sont considérés comme distribués et soumis à l'IRVM."
+        "Les bénéfices affectés à la réserve libre et pour lesquels la distribution n'est pas intervenue dans un délai de trois ans, sont considérés comme distribués et soumis à l'IRCM."
       ],
       "mots_cles": [
         "bénéfices",
@@ -417,20 +417,20 @@
         "distribution",
         "trois ans",
         "distribués",
-        "IRVM"
+        "IRCM"
       ],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 9 ter",
-      "titre": "IRVM des succursales de sociétés étrangères",
+      "titre": "IRCM des succursales de sociétés étrangères",
       "texte": [
-        "L'IRVM dû sur les bénéfices des succursales de sociétés étrangères est payable annuellement au plus tard le 30 avril.",
+        "L'IRCM dû sur les bénéfices des succursales de sociétés étrangères est payable annuellement au plus tard le 30 avril.",
         "En ce qui concerne les succursales de sociétés étrangères et les sociétés étrangères soumises à l'impôt sur le bénéfice forfaitaire des sociétés (IS forfaitaire), l'impôt est payable chaque mois en même temps que l'impôt forfaitaire visé à l'article 126 quater A du Tome 1 du présent Code.",
-        "L'IRVM forfaitaire acquitté par ces contribuables est libératoire de l'IRVM de droit commun."
+        "L'IRCM forfaitaire acquitté par ces contribuables est libératoire de l'IRCM de droit commun."
       ],
       "mots_cles": [
-        "IRVM",
+        "IRCM",
         "bénéfices",
         "succursales",
         "sociétés étrangères",
@@ -441,7 +441,7 @@
         "impôt forfaitaire",
         "article 126 quater A",
         "Tome 1",
-        "IRVM forfaitaire",
+        "IRCM forfaitaire",
         "libératoire",
         "droit commun"
       ],
@@ -502,12 +502,12 @@
       "article": "T2L3C1-ST3f",
       "titre": "6) Pénalités",
       "texte": [],
-      "mots_cles": ["pénalités", "IRVM"],
+      "mots_cles": ["pénalités", "IRCM"],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 12",
-      "titre": "Pénalités pour retard de paiement de l'IRVM",
+      "titre": "Pénalités pour retard de paiement de l'IRCM",
       "texte": [
         "Tout retard dans le paiement de l'impôt entraîne l'application aux sommes exigibles d'une majoration de 20 %. Toute inexactitude ou omission dans les actes ou déclarations à déposer, entraînant un préjudice pour le Trésor, donne lieu au paiement d'un droit en sus égal au complément de droit simple exigible, sans pouvoir être inférieur à 5.000 FCFA.",
         "Toute autre contravention aux dispositions du présent chapitre est punie d'une amende de 5.000 FCFA."

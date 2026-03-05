@@ -317,7 +317,7 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
   'eligible charte petrolier': ['Art. 92J'],
   'sous-traitants derogatoire': ['Art. 92J'],
 
-  // ========== ART. 185 ter - IRVM DIVIDENDES ==========
+  // ========== ART. 185 ter - IRCM DIVIDENDES ==========
   'irvm dividendes': ['Art. 185 ter'],
   'retenue dividendes': ['Art. 185 ter', 'Art. 86E'],
   'distributions benefices': ['Art. 185 ter'],

@@ -193,7 +193,9 @@ export async function incrementQuota(orgId: string, userId: string) {
   await prisma.subscription.update({
     where: { organizationId: orgId },
     data: { questionsUsed: { increment: 1 } },
-  }).catch(() => {});
+  }).catch((err) => {
+    logger.error('Echec increment compteur quota org', err);
+  });
 
   cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${orgId}`);
 }

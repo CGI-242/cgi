@@ -113,7 +113,9 @@ router.post('/enable', requireAuth, sensitiveLimiter, validate({ body: enableMfa
       changes: { mfaEnabled: true },
     });
 
-    EmailService.sendMfaEnabled(req.userEmail!).catch(() => {});
+    EmailService.sendMfaEnabled(req.userEmail!).catch((err) => {
+      logger.error(`Echec envoi email MFA à ${req.userEmail}`, err);
+    });
 
     res.json({
       message: 'MFA activé avec succès',

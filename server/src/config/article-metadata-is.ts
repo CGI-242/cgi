@@ -449,9 +449,9 @@ export const ARTICLE_METADATA_IS: Record<string, ArticleMetadataIS> = {
 
   'Art. 122-B': {
     numero: 'Art. 122-B',
-    titre: 'Imputation IRVM',
+    titre: 'Imputation IRCM',
     section: 'Calcul de l\'impot',
-    themes: ['IRVM', 'imputation'],
+    themes: ['IRCM', 'imputation'],
     priority: 2,
   },
 

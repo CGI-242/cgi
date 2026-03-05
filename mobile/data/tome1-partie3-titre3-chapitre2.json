@@ -122,7 +122,7 @@
       "article": "Art. 429 bis",
       "titre": "Éléments de la réclamation adressée à l'administration fiscale",
       "texte": [
-        "(L.F. 2026 - nouveau) La réclamation adressée à l'administration fiscale comprend les éléments suivants :",
+        "La réclamation adressée à l'administration fiscale comprend les éléments suivants :",
         "a) la lettre de notification des redressements ;",
         "b) la réponse à la notification des redressements ;",
         "c) la lettre de confirmation des bases d'imposition ;",
@@ -141,8 +141,7 @@
         "avis de mise en recouvrement",
         "frais de traitement",
         "garanties",
-        "recours hiérarchique",
-        "L.F. 2026"
+        "recours hiérarchique"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Demandes en décharge ou réduction"
@@ -172,14 +171,12 @@
       "article": "Art. 430 bis",
       "titre": "Pouvoir de statuer du directeur départemental des impôts",
       "texte": [
-        "(L.F.2024, L.F.2025) En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :",
+        "En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :",
         "• par le directeur départemental des impôts et des domaines dans la limite de 50.000.000 FCFA ;",
         "• par le directeur général des impôts et des domaines, lorsque les droits et pénalités contestés sont inférieurs ou égaux à 1.000.000.000 FCFA ;",
         "• par le Ministre chargé des finances au-delà de 1.000.000.000 FCFA."
       ],
       "mots_cles": [
-        "L.F.2024",
-        "L.F.2025",
         "réclamation",
         "pouvoir de statuer",
         "directeur départemental",
@@ -249,7 +246,7 @@
       "titre": "Recours devant le Tribunal compétent",
       "texte": [
         "Lorsque la décision ne donne pas entière satisfaction au contribuable, le requérant a la faculté, dans le délai de trois mois à partir du jour où il a reçu notification de la décision, de porter le litige devant le Tribunal compétent, conformément à la loi n°22-92 du 20 août 1992 portant organisation du pouvoir judiciaire en République du Congo.",
-        "(L.F. 2026 - nouveau) En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet."
+        "En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet."
       ],
       "mots_cles": [
         "décision",
@@ -259,8 +256,7 @@
         "Tribunal compétent",
         "loi n°22-92",
         "pouvoir judiciaire",
-        "délai six mois",
-        "L.F. 2026"
+        "délai six mois"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Demandes en décharge ou réduction"
@@ -405,8 +401,7 @@
         "5 %",
         "2,5 %",
         "500.000.000 FCFA",
-        "1.500.000.000 FCFA",
-        "L.F. 2026"
+        "1.500.000.000 FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Dispositions diverses"

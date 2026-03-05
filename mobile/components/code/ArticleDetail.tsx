@@ -1,7 +1,7 @@
 // mobile/components/code/ArticleDetail.tsx
 // Vue détaillée d'un article CGI avec synthèse vocale et références croisées
 
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, Platform } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
@@ -27,8 +27,10 @@ const SPEECH_MAX_CHUNK = 3_000;
 export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [speechState, setSpeechState] = useState<"idle" | "playing" | "paused">("idle");
   const stoppedRef = useRef(false);
+  const chunksRef = useRef<string[]>([]);
+  const chunkIndexRef = useRef(0);
   const [references, setReferences] = useState<ArticleReference[]>([]);
   const [referencedBy, setReferencedBy] = useState<ArticleReference[]>([]);
   const [loadingRefs, setLoadingRefs] = useState(false);
@@ -37,6 +39,8 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     return () => {
       stoppedRef.current = true;
       Speech.stop();
+      setSpeechState("idle");
+      chunkIndexRef.current = 0;
     };
   }, [article]);
 
@@ -57,8 +61,19 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
   const prepareForSpeech = (text: string): string => {
     let result = text;
+    // Supprimer les blocs [NB - Loi de finances pour XXXX ...]
+    result = result.replace(/\[NB[^\]]*\]/g, "");
+    // Supprimer (L.F.2026), (L.F.R.2022), (L.F.2024, L.F.2025), (L.F. 2026 - nouveau), etc.
+    result = result.replace(/\((?:L\.F\.(?:R\.?)?\s*\d{4}(?:\s*-\s*[^)]*)?(?:,\s*)?)+\)/g, "");
+    // Supprimer L.F.2026, L.F.R.2022 isolés (hors parenthèses)
+    result = result.replace(/L\.F\.(?:R\.?)?\s*\d{4}/g, "");
+    // Supprimer LF 2026 (format mots-clés)
+    result = result.replace(/\bLF\s+\d{4}\b/gi, "");
+    // Épeler les acronymes (CGI, TVA, etc.)
     result = result.replace(/\b([A-Z]{2,6})\b/g, (match) => match.split("").join(". ") + ".");
+    // Supprimer les renvois numérotés (1), (2)...
     result = result.replace(/\((\d+)\)/g, "");
+    // Supprimer le symbole degré
     result = result.replace(/(\d+)°/g, "$1");
     return result;
   };
@@ -96,65 +111,80 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
   const speakChunk = (chunks: string[], index: number) => {
     if (stoppedRef.current || index >= chunks.length) {
-      setIsSpeaking(false);
+      setSpeechState("idle");
+      chunkIndexRef.current = 0;
       return;
     }
 
+    chunkIndexRef.current = index;
     Speech.speak(chunks[index], {
       language: "fr-FR",
       rate: 0.9,
       onDone: () => speakChunk(chunks, index + 1),
-      onStopped: () => setIsSpeaking(false),
-      onError: () => setIsSpeaking(false),
+      onStopped: () => {},
+      onError: () => { setSpeechState("idle"); chunkIndexRef.current = 0; },
     });
   };
 
   const handlePlay = async () => {
-    if (isSpeaking) {
-      stoppedRef.current = true;
-      await Speech.stop();
-      setIsSpeaking(false);
+    if (speechState === "playing") {
+      // Pause
+      if (Platform.OS === "web") {
+        window.speechSynthesis?.pause();
+      } else {
+        await Speech.stop();
+      }
+      setSpeechState("paused");
       return;
     }
 
+    if (speechState === "paused") {
+      // Reprendre
+      stoppedRef.current = false;
+      if (Platform.OS === "web") {
+        window.speechSynthesis?.resume();
+        setSpeechState("playing");
+      } else {
+        setSpeechState("playing");
+        speakChunk(chunksRef.current, chunkIndexRef.current);
+      }
+      return;
+    }
+
+    // Démarrer depuis le début
     stoppedRef.current = false;
-    setIsSpeaking(true);
-    const chunks = getChunks();
-    speakChunk(chunks, 0);
+    chunkIndexRef.current = 0;
+    chunksRef.current = getChunks();
+    setSpeechState("playing");
+    speakChunk(chunksRef.current, 0);
+  };
+
+  const handleStop = async () => {
+    stoppedRef.current = true;
+    await Speech.stop();
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.cancel();
+    }
+    setSpeechState("idle");
+    chunkIndexRef.current = 0;
   };
 
   const handleBack = () => {
     stoppedRef.current = true;
     Speech.stop();
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.cancel();
+    }
     onBack();
   };
 
   return (
-    <ScrollView style={{ flex: 1, padding: 24 }}>
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+    <View style={{ flex: 1 }}>
+    <ScrollView style={{ flex: 1, padding: 24, paddingBottom: 80 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}>
         <TouchableOpacity onPress={handleBack} style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="arrow-back" size={18} color={colors.primary} />
           <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.primary, fontSize: 15, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          onPress={handlePlay}
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            paddingHorizontal: 12,
-            paddingVertical: 8,
-            backgroundColor: isSpeaking ? colors.danger : colors.primary,
-          }}
-        >
-          <Ionicons
-            name={isSpeaking ? "stop" : "volume-high"}
-            size={16}
-            color={colors.sidebarText}
-          />
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 14, marginLeft: 8 }}>
-            {isSpeaking ? t("articleDetail.stop") : t("articleDetail.listen")}
-          </Text>
         </TouchableOpacity>
       </View>
 
@@ -200,6 +230,57 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
         loading={loadingRefs}
         onSelectArticle={onSelectArticle}
       />
+      <View style={{ height: 70 }} />
     </ScrollView>
+
+    {/* Boutons écoute flottants */}
+    <View style={{ position: "absolute", bottom: 16, right: 16, flexDirection: "row", gap: 8 }}>
+      {speechState !== "idle" && (
+        <TouchableOpacity
+          onPress={handleStop}
+          style={{
+            alignItems: "center",
+            justifyContent: "center",
+            width: 44,
+            height: 44,
+            backgroundColor: colors.danger,
+            borderRadius: 22,
+            shadowColor: "#000",
+            shadowOpacity: 0.2,
+            shadowRadius: 8,
+            shadowOffset: { width: 0, height: 2 },
+            elevation: 5,
+          }}
+        >
+          <Ionicons name="stop" size={18} color="#fff" />
+        </TouchableOpacity>
+      )}
+      <TouchableOpacity
+        onPress={handlePlay}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          paddingHorizontal: 16,
+          paddingVertical: 12,
+          backgroundColor: colors.primary,
+          borderRadius: 28,
+          shadowColor: "#000",
+          shadowOpacity: 0.2,
+          shadowRadius: 8,
+          shadowOffset: { width: 0, height: 2 },
+          elevation: 5,
+        }}
+      >
+        <Ionicons
+          name={speechState === "playing" ? "pause" : "volume-high"}
+          size={18}
+          color={colors.sidebarText}
+        />
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 14, marginLeft: 8 }}>
+          {speechState === "idle" ? t("articleDetail.listen") : speechState === "playing" ? "Pause" : "Reprendre"}
+        </Text>
+      </TouchableOpacity>
+    </View>
+    </View>
   );
 }

@@ -124,9 +124,9 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
         <View style={{ flex: isMobile ? undefined : 1 }}>
           <SectionTitle>Produit</SectionTitle>
           <FooterLink label="Fonctionnalités" onPress={() => onScrollTo?.("features")} />
-          <FooterLink label="Simulateurs" onPress={() => onScrollTo?.("simulateurs")} />
-          <FooterLink label="Assistant IA" onPress={() => onScrollTo?.("assistant")} />
+          <FooterLink label="Pays disponibles" onPress={() => onScrollTo?.("simulateurs")} />
           <FooterLink label="Tarifs" onPress={() => onScrollTo?.("tarifs")} />
+          <FooterLink label="Contact" onPress={() => onScrollTo?.("contact")} />
         </View>
 
         {/* Colonne 3 — Légal */}
@@ -139,6 +139,10 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
           <FooterLink
             label="Politique de confidentialité"
             onPress={() => router.push("/legal/confidentialite")}
+          />
+          <FooterLink
+            label="Mentions légales"
+            onPress={() => router.push("/legal/mentions")}
           />
         </View>
 
@@ -166,7 +170,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               lineHeight: 20,
             }}
           >
-            5 rue Benjamin Raspail, Creil
+            5 rue Benjamin Raspail, 60100 Creil
           </Text>
         </View>
       </View>

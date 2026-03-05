@@ -69,6 +69,8 @@ export default function ChatScreen() {
   const addToQueue = useOfflineQueue((s) => s.addMessage);
 
   const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const isNearBottomRef = useRef(true);
+  const scrollLayoutRef = useRef({ contentHeight: 0, layoutHeight: 0 });
 
   useEffect(() => {
     return () => {
@@ -76,9 +78,16 @@ export default function ChatScreen() {
     };
   }, []);
 
-  const scrollToBottom = useCallback(() => {
+  const scrollToBottom = useCallback((force = false) => {
+    if (!force && !isNearBottomRef.current) return;
     if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
-    scrollTimerRef.current = setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 100);
+    scrollTimerRef.current = setTimeout(() => scrollRef.current?.scrollToEnd({ animated: false }), 50);
+  }, []);
+
+  const handleScroll = useCallback((e: any) => {
+    const { contentOffset, contentSize, layoutMeasurement } = e.nativeEvent;
+    const distanceFromBottom = contentSize.height - contentOffset.y - layoutMeasurement.height;
+    isNearBottomRef.current = distanceFromBottom < 80;
   }, []);
 
   // Charger historique à l'ouverture du panneau
@@ -132,7 +141,8 @@ export default function ChatScreen() {
     setIsStreaming(true);
     setStreamingContent("");
     pendingCitationsRef.current = [];
-    scrollToBottom();
+    isNearBottomRef.current = true;
+    scrollToBottom(true);
 
     try {
       await sendMessageStream(text, conversationId || undefined, {
@@ -301,7 +311,9 @@ export default function ChatScreen() {
             ref={scrollRef}
             style={{ flex: 1, paddingHorizontal: 16 }}
             contentContainerStyle={{ paddingVertical: 16, gap: 12 }}
-            onContentSizeChange={() => scrollRef.current?.scrollToEnd({ animated: true })}
+            onScroll={handleScroll}
+            scrollEventThrottle={100}
+            onContentSizeChange={() => scrollToBottom()}
           >
             {messages.length === 0 && !isStreaming && (
               <EmptyState recentSearches={[]} onSelectQuery={setInput} />

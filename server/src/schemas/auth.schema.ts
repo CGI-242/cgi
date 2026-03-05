@@ -10,6 +10,7 @@ export const registerBody = z.object({
   password: passwordField,
   telephone: z.string().optional(),
   invitationToken: z.string().uuid().optional(),
+  turnstileToken: z.string().optional(),
 }).refine(
   (data) => data.invitationToken || (data.entrepriseNom && data.entrepriseNom.trim().length > 0),
   { message: 'entrepriseNom est requis sans invitation', path: ['entrepriseNom'] },
@@ -19,6 +20,7 @@ export const loginBody = z.object({
   email: emailField,
   password: requiredString('password'),
   rememberMe: z.boolean().optional().default(false),
+  turnstileToken: z.string().optional(),
 });
 
 export const verifyOtpBody = z.object({
@@ -33,6 +35,7 @@ export const sendOtpEmailBody = z.object({
 
 export const forgotPasswordBody = z.object({
   email: emailField,
+  turnstileToken: z.string().optional(),
 });
 
 export const resetPasswordBody = z.object({
@@ -47,4 +50,5 @@ export const refreshTokenBody = z.object({
 
 export const checkEmailBody = z.object({
   email: emailField,
+  turnstileToken: z.string().optional(),
 });

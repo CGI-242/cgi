@@ -27,12 +27,14 @@ export interface RegisterPayload {
   telephone?: string;
   password: string;
   invitationToken?: string;
+  turnstileToken?: string;
 }
 
 export interface LoginPayload {
   email: string;
   password: string;
   rememberMe?: boolean;
+  turnstileToken?: string;
 }
 
 export interface VerifyOtpPayload {
@@ -43,6 +45,7 @@ export interface VerifyOtpPayload {
 
 export interface ForgotPasswordPayload {
   email: string;
+  turnstileToken?: string;
 }
 
 export interface ResetPasswordPayload {

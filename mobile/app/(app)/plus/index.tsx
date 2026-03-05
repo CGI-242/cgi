@@ -24,15 +24,16 @@ const MENU_ITEMS: MenuItem[] = [
   { icon: "settings-outline", labelKey: "sidebar.settings", descKey: "plus.settingsDesc", route: "/(app)/parametres" },
   { icon: "shield-checkmark-outline", labelKey: "sidebar.security", descKey: "plus.securityDesc", route: "/(app)/securite" },
   { icon: "card-outline", labelKey: "sidebar.subscription", descKey: "plus.subscriptionDesc", route: "/(app)/abonnement" },
-  { icon: "document-text-outline", labelKey: "settings.terms", route: "/(app)/legal/cgu" },
-  { icon: "lock-closed-outline", labelKey: "settings.privacy", route: "/(app)/legal/confidentialite" },
+  { icon: "document-text-outline", labelKey: "settings.terms", route: "/legal/cgu" },
+  { icon: "lock-closed-outline", labelKey: "settings.privacy", route: "/legal/confidentialite" },
+  { icon: "information-circle-outline", labelKey: "settings.legalNotices", route: "/legal/mentions" },
 ];
 
 export default function PlusScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const user = useAuthStore((s) => s.user);
-  const logout = useAuthStore((s) => s.logout);
+
 
   const initials = getInitials(user?.prenom, user?.nom);
   const displayName = [user?.prenom, user?.nom].filter(Boolean).join(" ") || t("dashboard.user");
@@ -137,7 +138,7 @@ export default function PlusScreen() {
 
       {/* Logout */}
       <TouchableOpacity
-        onPress={logout}
+        onPress={() => router.replace("/(auth)/logout")}
         style={{
           backgroundColor: `${colors.danger}12`,
           borderRadius: 14,

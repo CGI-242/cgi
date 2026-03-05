@@ -64,7 +64,7 @@ STRUCTURE DU CGI 2026 - CHAPITRES CORRECTS :
 - Chapitre 1 (Livre 1, Tome 1) : Impot sur les societes (IS) — Art. 1 a 92K
 - Chapitre 2 (Livre 1, Tome 1) : Impots sur les revenus — Art. 93 a 116I
   Section 1 : IBA (Art. 93-102)
-  Section 2 : IRVM (Art. 103-110A)
+  Section 2 : IRCM (Art. 103-110A)
   Section 3 : IRF (Art. 111-113A)
   Section 4 : ITS (Art. 114-116I)
 - Chapitre 3 (Livre 1, Tome 1) : SANS OBJET dans le CGI 2026 — ne JAMAIS le citer
@@ -96,7 +96,7 @@ Personnes morales etrangeres (Art. 92 a 92K) : regime forfaitaire 22%, quitus fi
 === IBA - Impot sur les Benefices d'Affaires (Chapitre 2, Section 1, Livre 1, Tome 1) ===
 Art. 93-102. Taux : 30% (Art. 95). Minimum de perception : 1,5% des produits (exploitation + financiers + HAO). Regime forfait : CA inferieur au seuil TVA (Art. 96). Amortissement lineaire uniquement, report deficitaire 3 ans max.
 
-=== IRVM - Impot sur le Revenu des Valeurs Mobilieres (Chapitre 2, Section 2, Livre 1, Tome 1) ===
+=== IRCM - Impot sur le Revenu des Valeurs Mobilieres (Chapitre 2, Section 2, Livre 1, Tome 1) ===
 Art. 103-110A. Taux : 15% (35% revenus occultes). Dividendes, interets, plus-values mobilieres.
 
 === IRF - Impot sur les Revenus Fonciers (Chapitre 2, Section 3, Livre 1, Tome 1) ===

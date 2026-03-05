@@ -46,11 +46,26 @@ services:
 
   # --- Qdrant (base vectorielle) ---
   qdrant:
-    image: qdrant/qdrant:v1.13.2
+    image: qdrant/qdrant:v1.14.0
     container_name: cgi242-qdrant
     restart: unless-stopped
     volumes:
       - qdrant_data:/qdrant/storage
+    networks:
+      - cgi242-net
+
+  # --- Nginx (reverse proxy + frontend statique) ---
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: cgi242-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      api:
+        condition: service_healthy
     networks:
       - cgi242-net
 

@@ -37,7 +37,19 @@
         "V. L'article 149 du Code des hydrocarbures dispose explicitement que, à l'exception des bonus, redevances, taxes, contributions et impôts spécifiques au secteur pétrolier amont visés à l'article 148 et des droits et taxes perçus par l'administration des douanes, le contracteur et les membres du contracteur sont, en ce qui concerne les opérations pétrolières, exonérés de tous les impôts et taxes de droit commun qui ne figurent pas dans la liste limitative visée au IV.",
         "VI. Il en ressort que, nonobstant la liste limitative prévue à l'article 149 du Code des hydrocarbures, le contracteur et les membres du contracteur sont assujettis à l'ensemble des impôts et taxes de droit commun en ce qui concerne leurs opérations autres que pétrolières. Ainsi, comme le prévoit l'article 165 du Code des hydrocarbures, le contracteur est exonéré de la TVA et de toute taxe similaire assise sur le chiffre d'affaires à raison des opérations liées aux activités pétrolières, pour autant, les opérations qui ne constituent pas des activités pétrolières restent soumises à la TVA."
       ],
-      "mots_cles": ["droit commun", "article 149", "CGI", "obligations déclaratives", "obligations paiement", "retenues source", "redevable légal", "calendrier fiscal", "patentes", "exonération TVA", "liste limitative"],
+      "mots_cles": [
+        "droit commun",
+        "article 149",
+        "CGI",
+        "obligations déclaratives",
+        "obligations paiement",
+        "retenues source",
+        "redevable légal",
+        "calendrier fiscal",
+        "patentes",
+        "exonération TVA",
+        "liste limitative"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -60,7 +72,17 @@
         "11° les droits d'enregistrement et de timbre ;",
         "12° la taxe sur les transferts effectifs de fonds entre la République du Congo et l'étranger, et vice-versa."
       ],
-      "mots_cles": ["typologie impôts propre compte", "patentes", "impôts fonciers", "taxe salaires", "CNSS", "CAMU", "IS", "enregistrement timbre", "transferts fonds"],
+      "mots_cles": [
+        "typologie impôts propre compte",
+        "patentes",
+        "impôts fonciers",
+        "taxe salaires",
+        "CNSS",
+        "CAMU",
+        "IS",
+        "enregistrement timbre",
+        "transferts fonds"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -72,7 +94,17 @@
         "I. La contribution des patentes est un impôt d'identification de tout contribuable professionnel. Elle est prévue par les articles 277 à 314 du tome 1 du CGI. Cette contribution est affectée au budget des collectivités locales dans lesquelles la société pétrolière réalise ses activités de prospection, d'exploration, de développement et d'exploitation des hydrocarbures.",
         "II. Le fait générateur de la patente est la création de la société pétrolière de droit congolais à travers le registre de commerce et de crédit mobilier (RCCM) et la déclaration d'existence auprès de l'administration fiscale. Conformément à l'article 312 du tome 1 du Code général des impôts, cette entité patrimoniale doit déclarer son existence fiscale dans les quinze premiers jours de son début d'activité, au lieu de sa résidence fiscale."
       ],
-      "mots_cles": ["patentes", "impôt identification", "articles 277-314 CGI", "collectivités locales", "fait générateur", "RCCM", "article 312", "déclaration existence", "quinze jours"],
+      "mots_cles": [
+        "patentes",
+        "impôt identification",
+        "articles 277-314 CGI",
+        "collectivités locales",
+        "fait générateur",
+        "RCCM",
+        "article 312",
+        "déclaration existence",
+        "quinze jours"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -87,7 +119,19 @@
         "IV. Conformément au paragraphe 6 de l'article 278 du tome 1 du CGI, l'assiette de la patente des contribuables qui ne réalisent pas de chiffre d'affaires est constituée de l'ensemble des dépenses de fonctionnement. Il en est ainsi des sociétés pétrolières qui ne sont pas encore en phase de production et qui détiennent un permis d'exploration.",
         "V. En application des dispositions du paragraphe 6 de l'article 278 du tome 1 du CGI, la contribution des patentes des contribuables qui n'engagent que des dépenses de fonctionnement au Congo est fixée à 25 % du montant de la dernière patente normalement payé. Il en est ainsi des sociétés pétrolières qui détiennent un permis d'exploration mais n'ont pas encore engagé de dépenses d'exploration."
       ],
-      "mots_cles": ["base imposable", "chiffre affaires", "article 278 CGI", "quote-part production", "répartition permis", "article 282", "conversion dollars FCFA", "Banque de France", "dépenses fonctionnement", "25 %", "permis exploration"],
+      "mots_cles": [
+        "base imposable",
+        "chiffre affaires",
+        "article 278 CGI",
+        "quote-part production",
+        "répartition permis",
+        "article 282",
+        "conversion dollars FCFA",
+        "Banque de France",
+        "dépenses fonctionnement",
+        "25 %",
+        "permis exploration"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -108,10 +152,19 @@
         "500.000.001 | 1.000.000.000 | 0,140 % | 700.000 | 1.942.500",
         "1.000.000.001 | 3.000.000.000 | 0,125 % | 2.500.000 | 4.442.500",
         "3.000.000.001 | 20.000.000.000 | 0,125 % | 21.250.000 | 25.692.500",
-        "20.000.000.001 | - | 0,045 % | | ",
+        "20.000.000.001 | - | 0,045 % | |",
         "II. Conformément à l'article 314 du tome 1 du CGI, tel que modifié par les lois n°65-2020 du 30 décembre 2020 et n°37-2021 du 13 août 2021 portant respectivement les lois de finances rectificatives des années 2020 et 2021, le montant de la patente dû par le contracteur et les membres du contracteur est égal à 50 % du montant liquidé."
       ],
-      "mots_cles": ["taux patentes", "barème dégressif", "article 314 CGI", "cumulatif", "tranches CA", "FCFA", "50 %", "lois 65-2020 37-2021"],
+      "mots_cles": [
+        "taux patentes",
+        "barème dégressif",
+        "article 314 CGI",
+        "cumulatif",
+        "tranches CA",
+        "FCFA",
+        "50 %",
+        "lois 65-2020 37-2021"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -132,7 +185,20 @@
         "Cette disposition vise les objets ou biens meubles attachés à leur fonds à perpétuelle demeure, quand ils sont scellés en plâtre, ou à chaux ou à ciment, ou lorsqu'ils ne peuvent être détachés sans être fracturés ou détériorés, ou sans briser ou détériorer la partie du fonds à laquelle ils sont attachés.",
         "II. Le fait générateur de la contribution foncière des propriétés bâties est constitué par la présomption de propriété et notamment par l'inscription à l'inventaire à l'actif du bilan."
       ],
-      "mots_cles": ["contribution foncière", "propriétés bâties", "article 251 CGI", "maçonnerie", "immeubles par destination", "barges", "stockage", "outillage", "article 525 Code civil", "perpétuelle demeure", "fait générateur", "présomption propriété"],
+      "mots_cles": [
+        "contribution foncière",
+        "propriétés bâties",
+        "article 251 CGI",
+        "maçonnerie",
+        "immeubles par destination",
+        "barges",
+        "stockage",
+        "outillage",
+        "article 525 Code civil",
+        "perpétuelle demeure",
+        "fait générateur",
+        "présomption propriété"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -150,7 +216,21 @@
         "Le prix du mètre carré est diminué de moitié pour chaque étage concernant les bâtiments à niveau.",
         "2) Pour les propriétés bâties données en location ou affectées à l'usage professionnel, par la valeur locative réelle de la propriété, avec un abattement de 75 % de cette valeur en considération des dépenses d'entretien et de réparation. Elle est déterminée soit au moyen du bail authentique ou des locations voisines, soit par comparaison avec d'autres locaux ou immeubles dont le loyer aura été régulièrement constaté ou notairement connu, à défaut de ces bases, par l'appréciation directe."
       ],
-      "mots_cles": ["base imposable", "contribution foncière", "articles 257-258 ter CGI", "valeur cadastrale", "abattement 75 %", "prix mètre carré", "zones", "250 FCFA", "150 FCFA", "25 FCFA", "12,5 FCFA", "valeur locative", "bail authentique"],
+      "mots_cles": [
+        "base imposable",
+        "contribution foncière",
+        "articles 257-258 ter CGI",
+        "valeur cadastrale",
+        "abattement 75 %",
+        "prix mètre carré",
+        "zones",
+        "250 FCFA",
+        "150 FCFA",
+        "25 FCFA",
+        "12,5 FCFA",
+        "valeur locative",
+        "bail authentique"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -162,7 +242,14 @@
         "I. Pour le calcul d'impôt, les taux applicables sont fixés par les délibérations des conseils des collectivités locales approuvées par l'autorité de tutelle après avis du Ministre chargé du budget.",
         "II. Ces taux sont compris entre 10 % et 20 %. Ils s'élèvent à 15 % pour la commune de Pointe-Noire et à 20 % pour la commune de Brazzaville."
       ],
-      "mots_cles": ["taux", "10 % 20 %", "Pointe-Noire 15 %", "Brazzaville 20 %", "collectivités locales", "autorité tutelle"],
+      "mots_cles": [
+        "taux",
+        "10 % 20 %",
+        "Pointe-Noire 15 %",
+        "Brazzaville 20 %",
+        "collectivités locales",
+        "autorité tutelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -175,7 +262,15 @@
         "II. En application de l'article 149 du Code des hydrocarbures, lorsque les biens imposables sont détenus en propre par le contracteur ou des membres du contracteur, ces derniers sont les redevables.",
         "III. Lorsque les biens de l'activité pétrolière imposables à la contribution foncière des propriétés bâties appartiennent en communauté aux membres du contracteur, le redevable est l'opérateur qui agit au nom et pour le compte des membres du contracteur."
       ],
-      "mots_cles": ["redevable", "propriétaire", "1er janvier", "article 149", "biens en propre", "communauté", "opérateur"],
+      "mots_cles": [
+        "redevable",
+        "propriétaire",
+        "1er janvier",
+        "article 149",
+        "biens en propre",
+        "communauté",
+        "opérateur"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -186,7 +281,13 @@
         "Art.37.- Non-inclusion de la contribution foncière des propriétés bâties dans les coûts pétroliers",
         "La contribution foncière des propriétés bâties n'est pas un coût pétrolier récupérable. Elle est déductible de l'assiette pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["non-inclusion", "coût pétrolier", "non récupérable", "déductible", "assiette IS"],
+      "mots_cles": [
+        "non-inclusion",
+        "coût pétrolier",
+        "non récupérable",
+        "déductible",
+        "assiette IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -200,7 +301,15 @@
         "III. On entend par « propriétés rurales » les terrains situés en dehors des limites des centres urbains.",
         "IV. Le fait générateur de la contribution foncière des propriétés non bâties est constitué par la présomption de propriété. S'agissant des activités pétrolières, cette présomption est constituée lorsque la propriété est inscrite à l'actif du bilan du contracteur ou des membres du contracteur."
       ],
-      "mots_cles": ["propriétés non bâties", "articles 263 264 CGI", "propriétés urbaines", "propriétés rurales", "centres urbains", "présomption propriété", "actif bilan"],
+      "mots_cles": [
+        "propriétés non bâties",
+        "articles 263 264 CGI",
+        "propriétés urbaines",
+        "propriétés rurales",
+        "centres urbains",
+        "présomption propriété",
+        "actif bilan"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -223,7 +332,18 @@
         "- terrains utilisés pour l'élevage du gros bétail : 600 FCFA/ha ;",
         "- terrains à vocation forestière : 2.000 FCFA/ha"
       ],
-      "mots_cles": ["base imposable", "propriétés non bâties", "articles 270 270 bis 272 CGI", "propriétés urbaines", "50 %", "valeur cadastrale", "125 FCFA", "75 FCFA", "propriétés rurales", "forfaitaire hectare"],
+      "mots_cles": [
+        "base imposable",
+        "propriétés non bâties",
+        "articles 270 270 bis 272 CGI",
+        "propriétés urbaines",
+        "50 %",
+        "valeur cadastrale",
+        "125 FCFA",
+        "75 FCFA",
+        "propriétés rurales",
+        "forfaitaire hectare"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -235,7 +355,12 @@
         "I. Le taux de la contribution foncière des propriétés non bâties est fixé par les délibérations des conseils des collectivités locales approuvées par l'autorité de tutelle après avis du Ministre chargé des finances.",
         "II. Le taux maximum est fixé à 40 %."
       ],
-      "mots_cles": ["taux", "40 %", "collectivités locales", "autorité tutelle"],
+      "mots_cles": [
+        "taux",
+        "40 %",
+        "collectivités locales",
+        "autorité tutelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -246,7 +371,11 @@
         "Art.41.- Redevable de la contribution foncière des propriétés non bâties",
         "L'article 36 du présent décret est applicable mutatis mutandis en ce qui concerne la détermination du redevable de la contribution foncière des propriétés non bâties."
       ],
-      "mots_cles": ["redevable", "article 36", "mutatis mutandis"],
+      "mots_cles": [
+        "redevable",
+        "article 36",
+        "mutatis mutandis"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -257,7 +386,13 @@
         "Art.42.- Non-inclusion de la contribution foncière des propriétés non bâties dans les coûts pétroliers",
         "La contribution foncière des propriétés non bâties n'est pas un coût pétrolier récupérable. Elle est déductible de l'assiette pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["non-inclusion", "coût pétrolier", "non récupérable", "déductible", "assiette IS"],
+      "mots_cles": [
+        "non-inclusion",
+        "coût pétrolier",
+        "non récupérable",
+        "déductible",
+        "assiette IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -269,7 +404,13 @@
         "I. L'article 36 de la loi n°40-2018 du 28 décembre 2018 de loi de finances pour l'année 2019 a institué des droits fonciers exceptionnels dus pour toute personne physique ou morale propriétaire ou occupante.",
         "II. Les droits fonciers exceptionnels ne sont pas un coût pétrolier récupérable. Ils ne sont pas déductibles de l'assiette pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["droits fonciers exceptionnels", "loi 40-2018", "2019", "non récupérable", "non déductible"],
+      "mots_cles": [
+        "droits fonciers exceptionnels",
+        "loi 40-2018",
+        "2019",
+        "non récupérable",
+        "non déductible"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -282,7 +423,16 @@
         "II. Par « local », on entend toute construction en matériaux durables, toute installation couverte à titre de domicile, de bureau, de commerce, d'industrie et tout autre local habité et ses dépendances.",
         "III. Le fait générateur de la taxe est l'occupation du local qui peut être établi par tous les moyens de droit."
       ],
-      "mots_cles": ["TOL", "taxe occupation locaux", "loi 31-2013", "2014", "local occupé", "matériaux durables", "fait générateur", "occupation"],
+      "mots_cles": [
+        "TOL",
+        "taxe occupation locaux",
+        "loi 31-2013",
+        "2014",
+        "local occupé",
+        "matériaux durables",
+        "fait générateur",
+        "occupation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -293,7 +443,11 @@
         "Art.45.- Lieu d'imposition à la TOL",
         "Le local est imposé dans le département ou la commune où il est situé."
       ],
-      "mots_cles": ["lieu imposition", "département", "commune"],
+      "mots_cles": [
+        "lieu imposition",
+        "département",
+        "commune"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -305,7 +459,15 @@
         "I. Conformément à l'article 10 de la loi n°34-2013 du 30 décembre 2013 portant loi de finances pour l'année 2014, est imposable à la taxe d'occupation des locaux tout occupant des locaux, c'est-à-dire toute personne physique ou morale qui occupe les locaux en étant propriétaire ou locataire.",
         "II. Dans le cadre d'un contrat pétrolier, le contracteur et les membres du contracteur sont redevables de la taxe d'occupation des locaux sur chaque local occupé."
       ],
-      "mots_cles": ["personne imposable", "TOL", "loi 34-2013", "occupant", "propriétaire", "locataire", "contracteur redevable"],
+      "mots_cles": [
+        "personne imposable",
+        "TOL",
+        "loi 34-2013",
+        "occupant",
+        "propriétaire",
+        "locataire",
+        "contracteur redevable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -325,7 +487,13 @@
         "- i dans la même localité mais dans des parcelles ou immeubles distincts ;",
         "- ii dans d'autres localités."
       ],
-      "mots_cles": ["montant TOL", "article 13", "habitation 60.000 12.000", "professionnel 500.000 120.000", "entités secondaires"],
+      "mots_cles": [
+        "montant TOL",
+        "article 13",
+        "habitation 60.000 12.000",
+        "professionnel 500.000 120.000",
+        "entités secondaires"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -341,7 +509,16 @@
         "1° le changement de local ou d'adresse en cours d'année dans la même collectivité locale n'entraîne pas le paiement d'une autre taxe ;",
         "2° le changement de local ou d'adresse en cours d'année dans une autre collectivité locale entraîne le paiement d'une autre taxe."
       ],
-      "mots_cles": ["recouvrement TOL", "article 14", "déclaration spontanée", "20 avril", "retenue source 1.000 FCFA", "20 février", "changement local", "collectivité"],
+      "mots_cles": [
+        "recouvrement TOL",
+        "article 14",
+        "déclaration spontanée",
+        "20 avril",
+        "retenue source 1.000 FCFA",
+        "20 février",
+        "changement local",
+        "collectivité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -352,7 +529,13 @@
         "Art.49.- Non-inclusion de la TOL dans les coûts pétroliers",
         "La taxe d'occupation des locaux n'est pas un coût pétrolier récupérable. Elle est déductible de l'assiette pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["non-inclusion", "TOL", "non récupérable", "déductible", "assiette IS"],
+      "mots_cles": [
+        "non-inclusion",
+        "TOL",
+        "non récupérable",
+        "déductible",
+        "assiette IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -364,7 +547,15 @@
         "I. En application de la loi n°36-2011 du 29 décembre 2011 portant loi de finances pour l'année 2012, les personnes morales employant des travailleurs sont redevables de la taxe unique sur les salaires.",
         "II. Le fait générateur de la taxe est la consommation du salaire dû aux employés, qu'il s'agisse du personnel interne ou du personnel extérieur."
       ],
-      "mots_cles": ["TUS", "taxe unique salaires", "loi 36-2011", "2012", "personnes morales", "fait générateur", "consommation salaire"],
+      "mots_cles": [
+        "TUS",
+        "taxe unique salaires",
+        "loi 36-2011",
+        "2012",
+        "personnes morales",
+        "fait générateur",
+        "consommation salaire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -376,7 +567,15 @@
         "I. La base imposable de la taxe unique sur les salaires est constituée du salaire brut comprenant le salaire de base, les émoluments, primes et indemnités, allocations, gratifications et avantages en nature. Il s'agit de toutes sommes soumises à l'impôt sur le revenu des personnes physiques au nom des bénéficiaires en application des articles 37 à 39 du tome 1 du Code général des impôts.",
         "II. En application de la loi n°66-2020 du 31 décembre 2020 portant loi de finances pour l'année 2021 ayant modifié l'article 5 des dispositions relatives à la taxe unique sur les salaires, le taux de la taxe due par les sociétés pétrolières est de 2,5 %."
       ],
-      "mots_cles": ["base imposable TUS", "salaire brut", "primes indemnités", "avantages nature", "articles 37-39 CGI", "taux 2,5 %", "loi 66-2020"],
+      "mots_cles": [
+        "base imposable TUS",
+        "salaire brut",
+        "primes indemnités",
+        "avantages nature",
+        "articles 37-39 CGI",
+        "taux 2,5 %",
+        "loi 66-2020"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -393,7 +592,14 @@
         "2° auprès de la CNSS : à raison de 40 % de la base imposable.",
         "III. La taxe est payée avant le vingt du mois suivant celui au cours duquel les appointements, salaires et autres rémunérations ont été constatés."
       ],
-      "mots_cles": ["déclaration TUS", "paiement", "loi 65-2020", "DGID 60 %", "CNSS 40 %", "vingt du mois"],
+      "mots_cles": [
+        "déclaration TUS",
+        "paiement",
+        "loi 65-2020",
+        "DGID 60 %",
+        "CNSS 40 %",
+        "vingt du mois"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -404,7 +610,13 @@
         "Art.53.- Non-inclusion de la TUS dans les coûts pétroliers",
         "La taxe unique sur les salaires n'est pas un coût pétrolier récupérable. Elle est déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["non-inclusion", "TUS", "non récupérable", "déductible", "assiette IS"],
+      "mots_cles": [
+        "non-inclusion",
+        "TUS",
+        "non récupérable",
+        "déductible",
+        "assiette IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -420,7 +632,15 @@
         "1° une part patronale supportée par l'employeur, c'est-à-dire la société pétrolière ;",
         "2° une part salariale supportée par l'employé."
       ],
-      "mots_cles": ["cotisations sociales", "CNSS", "CAMU", "part patronale", "part salariale", "employeur", "employé"],
+      "mots_cles": [
+        "cotisations sociales",
+        "CNSS",
+        "CAMU",
+        "part patronale",
+        "part salariale",
+        "employeur",
+        "employé"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -435,7 +655,16 @@
         "2° pour l'employeur : le montant de la contribution des patentes due au titre de l'exercice en cours.",
         "La CAMU est due même si le redevable est exonéré de la contribution des patentes."
       ],
-      "mots_cles": ["base imposable CNSS", "décret 99-284", "plafonds", "CAMU", "loi 66-2020", "500.000 FCFA", "patentes", "exonéré"],
+      "mots_cles": [
+        "base imposable CNSS",
+        "décret 99-284",
+        "plafonds",
+        "CAMU",
+        "loi 66-2020",
+        "500.000 FCFA",
+        "patentes",
+        "exonéré"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -452,7 +681,16 @@
         "2° pour la part salariale : 4 % pour la branche des pensions de vieillesse, de décès et d'invalidité.",
         "II. En application de la loi n°37-2021 du 13 août 2021 portant loi de finances rectificative de l'année 2021, le taux de la contribution de solidarité pour la CAMU est de 0,5 %."
       ],
-      "mots_cles": ["taux CNSS", "part patronale 20,28 %", "pensions 12 %", "prestations familiales 10,03 %", "accidents 2,25 %", "part salariale 4 %", "CAMU 0,5 %", "loi 37-2021"],
+      "mots_cles": [
+        "taux CNSS",
+        "part patronale 20,28 %",
+        "pensions 12 %",
+        "prestations familiales 10,03 %",
+        "accidents 2,25 %",
+        "part salariale 4 %",
+        "CAMU 0,5 %",
+        "loi 37-2021"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -466,7 +704,15 @@
         "2° pour la part salariale : à l'échéance du paiement des retenues à la source sur les traitements et salaires.",
         "II. Les modalités apportées à la législation et à la réglementation de la sécurité sociale et de l'assurance maladie, qui ne modifient pas l'équilibre économique du contrat pétrolier prévu à l'article 152 du Code des hydrocarbures, sont applicables de plein droit au contracteur et aux membres du contracteur."
       ],
-      "mots_cles": ["paiement cotisations", "article 461 bis CGI", "instruction 010/2022", "part patronale patente", "part salariale retenue source", "article 152", "équilibre économique"],
+      "mots_cles": [
+        "paiement cotisations",
+        "article 461 bis CGI",
+        "instruction 010/2022",
+        "part patronale patente",
+        "part salariale retenue source",
+        "article 152",
+        "équilibre économique"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -478,7 +724,13 @@
         "I. Les cotisations sociales (part patronale et part salariale) ne sont pas un coût pétrolier récupérable.",
         "II. La part patronale des cotisations sociales est déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["non-inclusion", "cotisations sociales", "non récupérable", "part patronale déductible", "assiette IS"],
+      "mots_cles": [
+        "non-inclusion",
+        "cotisations sociales",
+        "non récupérable",
+        "part patronale déductible",
+        "assiette IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -492,7 +744,17 @@
         "III. Conformément à l'article 172 du Code des hydrocarbures, l'impôt sur les sociétés est acquitté de manière individuelle par la remise à l'État de sa part de profit-oil.",
         "IV. Conformément à l'article 173 du Code des hydrocarbures, chaque membre du contracteur est tenu de souscrire une déclaration fiscale pour chaque contrat pétrolier."
       ],
-      "mots_cles": ["IS", "article 166", "article 170", "établissement fiscal distinct", "comptabilité séparée", "article 172", "profit-oil", "article 173", "déclaration fiscale"],
+      "mots_cles": [
+        "IS",
+        "article 166",
+        "article 170",
+        "établissement fiscal distinct",
+        "comptabilité séparée",
+        "article 172",
+        "profit-oil",
+        "article 173",
+        "déclaration fiscale"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -519,7 +781,21 @@
         "VI. Les cessions d'actions de sociétés pétrolières n'ayant acquis comme actifs que des intérêts participatifs dans les permis d'exploration ou d'exploitation sont enregistrées moyennant le paiement d'un droit fixe de 1.000.000 FCFA.",
         "VII. Les droits d'enregistrement et de timbre ne sont pas un coût pétrolier récupérable. Ils sont déductibles de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["droits enregistrement", "timbre", "article 149", "cession intérêts participatifs", "contrats baux", "bons commande", "1.000.000 FCFA", "100.000 FCFA", "25.000.000 FCFA", "reconstitution capitaux", "prorogation", "non récupérable", "déductible IS"],
+      "mots_cles": [
+        "droits enregistrement",
+        "timbre",
+        "article 149",
+        "cession intérêts participatifs",
+        "contrats baux",
+        "bons commande",
+        "1.000.000 FCFA",
+        "100.000 FCFA",
+        "25.000.000 FCFA",
+        "reconstitution capitaux",
+        "prorogation",
+        "non récupérable",
+        "déductible IS"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -533,7 +809,15 @@
         "1° les versements effectués à partir de la République du Congo au profit de personnes n'ayant pas leur résidence fiscale en République du Congo ;",
         "2° les versements effectués à partir de l'étranger au profit de personnes ayant leur résidence fiscale en République du Congo."
       ],
-      "mots_cles": ["taxe transferts fonds", "article 149", "1 %", "montant brut", "versements", "résidence fiscale", "étranger"],
+      "mots_cles": [
+        "taxe transferts fonds",
+        "article 149",
+        "1 %",
+        "montant brut",
+        "versements",
+        "résidence fiscale",
+        "étranger"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -549,7 +833,18 @@
         "2° les achats de biens ou services par le contracteur ou les membres du contracteur qui sont exclus du droit à déduction de la TVA.",
         "IV. Le décret n°2001-522 du 19 octobre 2001 fixant les modalités d'application de la TVA au secteur pétrolier reste en vigueur jusqu'à l'édiction de dispositions nouvelles par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["TVA", "loi 12-97", "article 151", "article 165", "exonération", "prospection développement exploitation", "décret 2003-32", "opérations amont", "droit déduction", "décret 2001-522"],
+      "mots_cles": [
+        "TVA",
+        "loi 12-97",
+        "article 151",
+        "article 165",
+        "exonération",
+        "prospection développement exploitation",
+        "décret 2003-32",
+        "opérations amont",
+        "droit déduction",
+        "décret 2001-522"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -560,11 +855,20 @@
         "Section 2 - Les impôts, droits et taxes de droit commun dus par les sociétés pétrolières pour le compte de tiers (retenues à la source)",
         "Art.63.- Généralités",
         "I. En application de l'article 149 du Code des hydrocarbures, les textes consolidés du Code des hydrocarbures et des articles 172 et suivants du tome 1 du CGI, le contracteur et les membres du contracteur sont tenus :",
-        "1° de procéder aux retenues à la source en matière d'impôt sur le revenu des personnes physiques, d'impôt sur les sociétés et d'IRVM et de taxe immobilière ;",
+        "1° de procéder aux retenues à la source en matière d'impôt sur le revenu des personnes physiques, d'impôt sur les sociétés et d'IRCM et de taxe immobilière ;",
         "2° de verser les contributions et redevances liées à la rémunération des salariés.",
         "II. Ce faisant, le contracteur et les membres du contracteur sont, en qualité d'employeurs ou de débirentiers, les redevables légaux des versements, les redevables réels étant les tierces personnes bénéficiaires des rémunérations ou revenus."
       ],
-      "mots_cles": ["retenues à la source", "article 149", "redevable légal", "redevable réel", "IRVM", "taxe immobilière", "contributions", "rémunération"],
+      "mots_cles": [
+        "retenues à la source",
+        "article 149",
+        "redevable légal",
+        "redevable réel",
+        "IRCM",
+        "taxe immobilière",
+        "contributions",
+        "rémunération"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -572,7 +876,7 @@
       "titre": "Retenues à la source",
       "section": "Section 2 : Retenues à la source pour le compte de tiers",
       "texte": [
-        "Art.64.- Les retenues à la source en matière d'impôt sur le revenu des personnes physiques, d'impôt sur les sociétés et d'IRVM sur le revenu des valeurs mobilières et de taxe immobilière :",
+        "Art.64.- Les retenues à la source en matière d'impôt sur le revenu des personnes physiques, d'impôt sur les sociétés et d'IRCM sur le revenu des valeurs mobilières et de taxe immobilière :",
         "Conformément à l'article 149 du Code des hydrocarbures, les retenues à la source à effectuer par les sociétés pétrolières sur les redevables réels sont :",
         "N° | Nature des impôts, droits et taxes | Redevable réel | Texte de référence",
         "1 | IRPP sur les traitements et salaires | Employés | Art.172, tome 1",
@@ -580,11 +884,11 @@
         "3 | Retenue à la source sur les entrepreneurs de BTP | Entreprises de BTP (sous-traitants au bureau d'étude) | Art.185 quinquies, tome 1",
         "4 | IRPP des prestataires de services non-résidents | Prestataires de services non-résidents, y compris les prestataires de services qui interviennent dans le cadre d'opérations non commerciales (par exemple : les avocats, notaires, architectes, cabinets médicaux) | Art.185 ter, tome 1",
         "5 | IRPP bénéfice non commercial (professions libérales individuelles) | | Art.183 CGI, tome 1",
-        "6 | IRVM forfaitaire | Sous-traitant pétrolier étranger | Art.126 quater B, tome 1 et accords particuliers du 27 avril 2022",
+        "6 | IRCM forfaitaire | Sous-traitant pétrolier étranger | Art.126 quater B, tome 1 et accords particuliers du 27 avril 2022",
         "7 | Retenue à la source sur les intérêts financiers | Prêteur financier (local ou étranger du contracteur) | Art.185 sexies, tome 1",
         "8 | Retenue à la source sur les primes cédées en réassurance | Assureur | |",
         "9 | Retenue à la source sur les revenus réalisés au Congo | Non-résidents | Art.185 ter, tome 1",
-        "10 | IRVM distributions (de dividendes et d'intérêts par ex.) | Bénéficiaire des distributions | Art.8, livre 3 éventuellement",
+        "10 | IRCM distributions (de dividendes et d'intérêts par ex.) | Bénéficiaire des distributions | Art.8, livre 3 éventuellement",
         "11 | Taxe immobilière | Bailleur immobilier | Art.5, CGI, tome 2 et livre 1",
         "II. D'autres impôts et taxes ne sont pas classés à l'article 149 du Code des hydrocarbures dans la catégorie des retenues à la source mais dans les catégories d'impôts directs bien qu'ils soient prélevés par voie de retenues à la source.",
         "Il s'agit de :",
@@ -600,7 +904,29 @@
         "10° taxe de roulage liée à l'immatriculation de la charge véhicule ;",
         "11° les taxes communales (droits de cantonnement, taxe de salubrité ou taxe de ramassage des ordures ménagères, taxe d'affichage, taxe de roulage des véhicules automobiles)."
       ],
-      "mots_cles": ["retenues à la source", "IRPP", "taxe résidentielle", "BTP", "prestataires non-résidents", "IRVM forfaitaire", "intérêts financiers", "réassurance", "non-résidents", "IRVM distributions", "taxe immobilière", "article 149", "TOL", "CAMU", "CNSS", "taxe abonnement TV", "taxe billets avion", "taxe assurance", "taxe touristique", "taxe roulage", "taxes communales"],
+      "mots_cles": [
+        "retenues à la source",
+        "IRPP",
+        "taxe résidentielle",
+        "BTP",
+        "prestataires non-résidents",
+        "IRCM forfaitaire",
+        "intérêts financiers",
+        "réassurance",
+        "non-résidents",
+        "IRCM distributions",
+        "taxe immobilière",
+        "article 149",
+        "TOL",
+        "CAMU",
+        "CNSS",
+        "taxe abonnement TV",
+        "taxe billets avion",
+        "taxe assurance",
+        "taxe touristique",
+        "taxe roulage",
+        "taxes communales"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -612,7 +938,13 @@
         "Art.65.- Conférence des contributions et redevances",
         "Conformément à l'article 149 du Code des hydrocarbures, le contracteur et les membres du contracteur sont assujettis aux contributions et redevances liées à la rémunération des services. Ces contributions ou redevances sont versées au titre de services rendus au contracteur ou aux membres du contracteur bien qu'il ne s'agisse pas nécessairement de services en relation directe avec les opérations pétrolières."
       ],
-      "mots_cles": ["contributions", "redevances", "rémunération services", "article 149", "services rendus"],
+      "mots_cles": [
+        "contributions",
+        "redevances",
+        "rémunération services",
+        "article 149",
+        "services rendus"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -628,7 +960,15 @@
         "4° redevance portuaire au passage des biens ou des personnes ;",
         "5° redevance audiovisuelle (pour l'usage des postes téléviseurs et de radiorécepteurs dans les habitations et dans les bureaux)."
       ],
-      "mots_cles": ["contributions", "redevances", "immatriculation foncière", "péages routiers", "redevance aéroportuaire", "redevance portuaire", "redevance audiovisuelle"],
+      "mots_cles": [
+        "contributions",
+        "redevances",
+        "immatriculation foncière",
+        "péages routiers",
+        "redevance aéroportuaire",
+        "redevance portuaire",
+        "redevance audiovisuelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -640,7 +980,12 @@
         "Art.67.- Régime général d'exonération de la fiscalité de droit commun",
         "Conformément à l'article 149 du Code des hydrocarbures, le contracteur et les membres du contracteur sont exonérés de tous les impôts et taxes de droit commun, à l'exception des impôts, taxes, contributions, redevances, droits et taxes de droit commun visés dans les sections 1, 2 et 3 qui précèdent."
       ],
-      "mots_cles": ["exonération", "article 149", "fiscalité droit commun", "sections 1 2 3"],
+      "mots_cles": [
+        "exonération",
+        "article 149",
+        "fiscalité droit commun",
+        "sections 1 2 3"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -652,10 +997,19 @@
         "I. En application de l'article 149 du Code des hydrocarbures, le contracteur et les membres du contracteur sont notamment exonérés :",
         "a) la taxe spéciale sur les sociétés (TSS) ;",
         "b) la taxe sur les véhicules de tourisme des sociétés ;",
-        "c) l'IRVM lorsque le contracteur ou les membres du contracteur perçoivent des revenus de capitaux mobiliers et que la taxe immobilière, lorsque le contracteur est loueur d'immeubles.",
+        "c) l'IRCM lorsque le contracteur ou les membres du contracteur perçoivent des revenus de capitaux mobiliers et que la taxe immobilière, lorsque le contracteur est loueur d'immeubles.",
         "II. En outre, comme rappelé à l'article 62 du présent décret, les opérations liées au secteur pétrolier amont sont exonérées de TVA conformément à l'article 165 du Code des hydrocarbures."
       ],
-      "mots_cles": ["exonération", "TSS", "taxe véhicules tourisme", "IRVM", "taxe immobilière", "TVA", "article 149", "article 165"],
+      "mots_cles": [
+        "exonération",
+        "TSS",
+        "taxe véhicules tourisme",
+        "IRCM",
+        "taxe immobilière",
+        "TVA",
+        "article 149",
+        "article 165"
+      ],
       "statut": "en vigueur"
     }
   ]

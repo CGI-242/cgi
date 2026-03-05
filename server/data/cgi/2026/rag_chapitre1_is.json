@@ -585,7 +585,7 @@
               "deux tiers actif",
               "5 ans",
               "plus-values cession titres",
-              "IRVM réduit moitié",
+              "IRCM réduit moitié",
               "exonération retenue emprunts"
             ]
           },
@@ -1597,7 +1597,7 @@
           "EBE": "Excédent Brut d'Exploitation",
           "APP": "Accord Préalable de Prix",
           "PT": "Prix de Transfert",
-          "IRVM": "Impôt sur le Revenu des Valeurs Mobilières",
+          "IRCM": "Impôt sur le Revenu des Valeurs Mobilières",
           "IRPP": "Impôt sur le Revenu des Personnes Physiques",
           "HAO": "Hors Activité Ordinaire",
           "CA": "Chiffre d'affaires",
@@ -2636,14 +2636,14 @@
       {
         "id": 37,
         "categorie": "groupe",
-        "question": "Les holdings bénéficient-ils d'un taux IRVM réduit ?",
+        "question": "Les holdings bénéficient-ils d'un taux IRCM réduit ?",
         "reponse_attendue": "Oui, moitié du taux de droit commun",
         "articles_attendus": [
           "Art. 90E"
         ],
         "mots_cles": [
           "holding",
-          "IRVM",
+          "IRCM",
           "moitié",
           "réduit"
         ]

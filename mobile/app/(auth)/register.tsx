@@ -12,6 +12,7 @@ import EmailField from "@/components/auth/EmailField";
 import PasswordFields from "@/components/auth/PasswordFields";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
+import TurnstileWidget from "@/components/auth/TurnstileWidget";
 
 const COUNTRIES = [
   { code: "242", name: "Congo-Brazzaville", flag: "\u{1F1E8}\u{1F1EC}", available: true },
@@ -60,6 +61,7 @@ export default function Register() {
   const [emailChecking, setEmailChecking] = useState(false);
   const [emailExists, setEmailExists] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const selectedCountry = COUNTRIES.find((c) => c.code === form.pays) || COUNTRIES[0];
 
@@ -133,6 +135,7 @@ export default function Register() {
         telephone: form.telephone.trim() || undefined,
         password: form.password,
         invitationToken: invitation || undefined,
+        turnstileToken: turnstileToken ?? undefined,
       });
       setUser(data.user ?? null);
       setEmail(form.email.trim());
@@ -351,6 +354,8 @@ export default function Register() {
             onToggleShowPassword={() => setShowPassword(!showPassword)}
             colors={colors}
           />
+
+          <TurnstileWidget onToken={setTurnstileToken} />
 
           {/* Bouton */}
           <TouchableOpacity

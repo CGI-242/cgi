@@ -6,103 +6,198 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
 
+function BulletItem({ children, colors }: { children: string; colors: any }) {
+  return (
+    <View style={{ flexDirection: "row", marginTop: 6, paddingLeft: 8 }}>
+      <Text style={{ fontSize: 14, color: GOLD, marginRight: 10, lineHeight: 22 }}>&#x2022;</Text>
+      <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular, flex: 1 }}>
+        {children}
+      </Text>
+    </View>
+  );
+}
+
 export default function CGUPublicScreen() {
   const { colors } = useTheme();
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
+      <ScrollView contentContainerStyle={{ alignItems: "center", padding: 20, paddingBottom: 60 }}>
         {/* Bouton retour */}
-        <TouchableOpacity
-          onPress={() => router.back()}
-          style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}
-        >
-          <Ionicons name="arrow-back" size={20} color={colors.textMuted} />
-          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.textMuted, marginLeft: 6 }}>Retour</Text>
-        </TouchableOpacity>
-
-        {/* En-tête avec logo */}
-        <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 24, gap: 12 }}>
-          <View style={{ width: 36, height: 36, borderRadius: 8, backgroundColor: "rgba(200,160,60,0.13)", alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, color: GOLD }}>N</Text>
-          </View>
-          <View>
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.text }}>
-              NORMX <Text style={{ color: GOLD }}>Tax</Text>
-            </Text>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>
-              Conditions Générales d'Utilisation
-            </Text>
-          </View>
+        <View style={{ width: "100%", maxWidth: 794 }}>
+          <TouchableOpacity
+            onPress={() => router.back()}
+            style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}
+          >
+            <Ionicons name="arrow-back" size={20} color={colors.textMuted} />
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.textMuted, marginLeft: 6 }}>Retour</Text>
+          </TouchableOpacity>
         </View>
 
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 16, padding: 20 }}>
-          <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 20, fontStyle: "italic", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Dernière mise à jour : 1er janvier 2026
+        {/* Page A4 */}
+        <View style={{
+          width: "100%",
+          maxWidth: 794,
+          backgroundColor: colors.card,
+          borderWidth: 1,
+          borderColor: colors.border,
+          borderRadius: 12,
+          paddingHorizontal: 48,
+          paddingVertical: 56,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 4 },
+          shadowOpacity: 0.08,
+          shadowRadius: 16,
+          elevation: 4,
+        }}>
+          {/* En-tête */}
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 32, gap: 12 }}>
+            <View style={{ width: 40, height: 40, borderRadius: 8, backgroundColor: "rgba(200,160,60,0.13)", alignItems: "center", justifyContent: "center" }}>
+              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22, color: GOLD }}>N</Text>
+            </View>
+            <View>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 20, color: colors.text }}>
+                NORMX <Text style={{ color: GOLD }}>Tax</Text>
+              </Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>
+                Conditions Générales d'Utilisation
+              </Text>
+            </View>
+          </View>
+
+          {/* Séparateur doré */}
+          <View style={{ height: 2, backgroundColor: GOLD, opacity: 0.3, marginBottom: 24 }} />
+
+          <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 32, fontStyle: "italic", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Dernière mise à jour : 1er mars 2026
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
+          {/* Article 1 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
             Article 1 — Objet
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application CGI 242, éditée par NORMX AI, siège social au 5 rue Benjamin Raspail, Creil. CGI 242 est une plateforme numérique dédiée à la consultation du Code Général des Impôts de la République du Congo, aux simulations fiscales et à l'assistance par intelligence artificielle.
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application CGI 242 (ci-après « NORMX Tax »), éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, en cours d'immatriculation au RCS de Compiègne, dont le siège social est situé au 5 rue Benjamin Raspail, 60100 Creil.{"\n\n"}
+            CGI 242 est une plateforme numérique dédiée à la consultation des Codes Généraux des Impôts des pays d'Afrique, aux simulations fiscales et à l'assistance par intelligence artificielle en matière fiscale.{"\n\n"}
+            L'utilisation de l'application implique l'acceptation pleine et entière des présentes CGU ainsi que de la Politique de confidentialité accessible depuis l'application.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
+          {/* Article 2 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
             Article 2 — Accès au service
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            L'accès à l'application nécessite la création d'un compte utilisateur. L'utilisateur s'engage à fournir des informations exactes et à maintenir la confidentialité de ses identifiants de connexion. Tout accès non autorisé doit être signalé immédiatement.
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            L'accès à l'application nécessite la création d'un compte utilisateur. L'utilisateur s'engage à fournir des informations exactes, complètes et à jour, et à maintenir la confidentialité de ses identifiants de connexion. Tout accès non autorisé doit être signalé immédiatement à contact@normx-ai.com.{"\n\n"}
+            L'application est accessible 24h/24, 7j/7, sous réserve des interruptions pour maintenance ou cas de force majeure.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
+          {/* Article 3 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
             Article 3 — Description des services
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            CGI 242 propose les services suivants :{"\n"}
-            — Consultation intégrale du Code Général des Impôts à jour{"\n"}
-            — 14 simulateurs fiscaux : ITS, IS, TVA, Patente, Taxe foncière, Taxe immobilière, Droits d'enregistrement, Solde de liquidation, IRF, IRPP, Retenue à la source, Contribution spéciale de solidarité, Taxe sur les transferts de fonds, Centimes additionnels{"\n"}
-            — Assistant IA pour les questions fiscales{"\n"}
-            — Recherche vocale intégrée{"\n"}
-            — Mode hors-ligne pour la consultation sans connexion{"\n"}
-            — Alertes sur les modifications législatives{"\n"}
-            — Gestion d'organisation et de membres
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            CGI 242 propose les services suivants :
+          </Text>
+          <BulletItem colors={colors}>Consultation intégrale des Codes Généraux des Impôts des pays d'Afrique</BulletItem>
+          <BulletItem colors={colors}>14 simulateurs fiscaux : ITS, IS, TVA, Patente, Taxe foncière, Taxe immobilière, Droits d'enregistrement, Solde de liquidation, IRF, IRPP, Retenue à la source, Contribution spéciale de solidarité, Taxe sur les transferts de fonds, Centimes additionnels</BulletItem>
+          <BulletItem colors={colors}>Assistant IA pour les questions fiscales</BulletItem>
+          <BulletItem colors={colors}>Recherche vocale intégrée</BulletItem>
+          <BulletItem colors={colors}>Mode hors-ligne pour la consultation sans connexion</BulletItem>
+          <BulletItem colors={colors}>Alertes sur les modifications législatives</BulletItem>
+          <BulletItem colors={colors}>Gestion d'organisation et de membres</BulletItem>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
+            Les réponses de l'assistant IA et les résultats des simulateurs ont un caractère purement informatif et ne constituent en aucun cas un conseil fiscal, juridique ou comptable professionnel.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
+          {/* Article 4 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
             Article 4 — Abonnements et tarification
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            L'application propose différents plans d'abonnement. Les tarifs sont exprimés en Francs CFA (XAF) et sont soumis aux taxes applicables. Le renouvellement est annuel sauf résiliation expresse de l'utilisateur avant l'échéance.
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            L'application propose différents plans d'abonnement dont les tarifs sont affichés dans l'application avant toute souscription. Les prix sont exprimés en Francs CFA (XAF) et sont soumis aux taxes applicables.{"\n\n"}
+            Le renouvellement est annuel sauf résiliation expresse de l'utilisateur avant l'échéance, via les paramètres de l'application.{"\n\n"}
+            Les moyens de paiement acceptés sont indiqués lors du processus de souscription.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
-            Article 5 — Propriété intellectuelle
+          {/* Article 5 — Droit de rétractation */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 5 — Droit de rétractation
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            L'ensemble du contenu de l'application (textes, graphismes, logiciels, bases de données) est protégé par le droit de la propriété intellectuelle. Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable écrite.
-          </Text>
-
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
-            Article 6 — Responsabilités
-          </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les informations fournies par l'application, y compris les réponses de l'assistant IA et les résultats des simulateurs, ont un caractère informatif et ne sauraient se substituer à un conseil fiscal professionnel. NORMX AI ne saurait être tenu responsable des décisions prises sur la base de ces informations.{"\n\n"}
-            Pour toute question relative à l'utilisation du service, vous pouvez contacter NORMX AI à l'adresse : contact@normx-ai.com
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Conformément à l'article L.221-18 du Code de la consommation, vous disposez d'un délai de 14 jours à compter de la souscription pour exercer votre droit de rétractation, sans avoir à justifier de motif ni à payer de pénalité.{"\n\n"}
+            Pour exercer ce droit, adressez votre demande par email à contact@normx-ai.com en indiquant vos nom, prénom et les détails de votre abonnement. Le remboursement sera effectué dans un délai de 14 jours suivant la réception de votre demande, via le même moyen de paiement utilisé lors de la souscription.{"\n\n"}
+            Toutefois, conformément à l'article L.221-28 du Code de la consommation, si vous avez expressément demandé le début de l'exécution du service avant la fin du délai de rétractation et reconnu perdre ainsi votre droit de rétractation, celui-ci ne pourra plus être exercé.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
-            Article 7 — Résiliation
+          {/* Article 6 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 6 — Propriété intellectuelle
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            L'utilisateur peut résilier son compte à tout moment depuis les paramètres de l'application. NORMX AI se réserve le droit de suspendre ou résilier un compte en cas de violation des présentes CGU, sans préavis ni indemnité.
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            La marque « NORMX AI » est enregistrée auprès de l'Institut National de la Propriété Industrielle (INPI).{"\n\n"}
+            L'ensemble du contenu de l'application (textes, graphismes, logiciels, bases de données, marques, logos) est protégé par le droit de la propriété intellectuelle et est la propriété exclusive de NORMX AI SAS. Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable écrite, conformément aux articles L.335-2 et suivants du Code de la propriété intellectuelle.
           </Text>
 
-          <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginTop: 20, marginBottom: 8 }}>
-            Article 8 — Droit applicable
+          {/* Article 7 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 7 — Responsabilités
           </Text>
-          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les présentes CGU sont soumises au droit de la République du Congo. En cas de litige, les tribunaux de Brazzaville seront seuls compétents, à défaut de résolution amiable.
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Les informations fournies par l'application, y compris les réponses de l'assistant IA et les résultats des simulateurs, ont un caractère informatif et ne sauraient se substituer à un conseil fiscal professionnel. L'utilisateur est seul responsable de l'usage qu'il fait des informations fournies.{"\n\n"}
+            NORMX AI s'engage à fournir un service conforme aux descriptions de l'application. Conformément aux articles L.224-25-12 et suivants du Code de la consommation, l'utilisateur bénéficie de la garantie légale de conformité pour les contenus et services numériques.{"\n\n"}
+            En cas de défaut de conformité, l'utilisateur peut demander la mise en conformité du service. Si la mise en conformité est impossible ou entraîne des coûts disproportionnés, l'utilisateur peut obtenir une réduction de prix ou la résolution du contrat.
+          </Text>
+
+          {/* Article 8 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 8 — Résiliation
+          </Text>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            L'utilisateur peut résilier son compte à tout moment depuis les paramètres de l'application.{"\n\n"}
+            NORMX AI se réserve le droit de suspendre ou résilier un compte en cas de violation avérée des présentes CGU, après mise en demeure restée sans effet pendant 15 jours. En cas de manquement grave (utilisation frauduleuse, atteinte à la sécurité), la suspension peut être immédiate. L'utilisateur sera informé par email des motifs de la suspension ou résiliation.
+          </Text>
+
+          {/* Article 9 — Données personnelles */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 9 — Données personnelles
+          </Text>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Le traitement des données personnelles des utilisateurs est régi par notre Politique de confidentialité, qui fait partie intégrante des présentes CGU et est accessible depuis l'application. La Politique de confidentialité détaille les données collectées, les finalités du traitement, les droits des utilisateurs et les modalités d'exercice de ces droits.
+          </Text>
+
+          {/* Article 10 — Médiation */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 10 — Médiation de la consommation
+          </Text>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Conformément aux articles L.612-1 et suivants du Code de la consommation, en cas de litige non résolu par notre service client (contact@normx-ai.com), l'utilisateur consommateur peut recourir gratuitement à un médiateur de la consommation.{"\n\n"}
+            Médiateur désigné : en cours de désignation.{"\n\n"}
+            L'utilisateur peut également utiliser la plateforme européenne de règlement en ligne des litiges (RLL) :{"\n"}
+            https://ec.europa.eu/consumers/odr
+          </Text>
+
+          {/* Article 11 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 11 — Modification des CGU
+          </Text>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            NORMX AI se réserve le droit de modifier les présentes CGU. En cas de modification substantielle, l'utilisateur sera informé par notification dans l'application ou par email au moins 30 jours avant l'entrée en vigueur des nouvelles conditions. L'utilisation continue du service après cette date vaudra acceptation des nouvelles CGU.
+          </Text>
+
+          {/* Article 12 */}
+          <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            Article 12 — Droit applicable et juridiction
+          </Text>
+          <Text style={{ fontSize: 14, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Les présentes CGU sont soumises au droit français.{"\n\n"}
+            En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut de résolution amiable, le consommateur pourra saisir le tribunal compétent de son lieu de domicile conformément aux dispositions du Code de la consommation, ou tout autre tribunal compétent.{"\n\n"}
+            Pour les utilisateurs professionnels, les tribunaux de Compiègne seront seuls compétents.
+          </Text>
+
+          {/* Séparateur bas */}
+          <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
+          <Text style={{ fontSize: 12, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>
