@@ -355,19 +355,19 @@
       "titre": "Définition des produits imposables",
       "texte": [
         "A moins qu'ils n'aient fait l'objet d'une retenue à la source libératoire, les produits imposables comprennent, qu'ils soient comptabilisés en activité ordinaire ou hors activité ordinaire, notamment :",
-        "a. les ventes et les recettes ;",
-        "b. les produits divers ;",
-        "c. les revenus ou prestations accessoires ;",
-        "d. les produits financiers ;",
-        "e. les produits de valeurs mobilières ;",
-        "f. les produits de consignations d'emballages ;",
-        "g. les produits de la location des immeubles bâtis et non bâtis, y compris les revenus accessoires ;",
-        "h. les aides à caractère commercial, notamment les abandons de créances et subventions ;",
-        "i. les dons et libéralités ;",
-        "j. les travaux en cours ;",
-        "k. les reprises et les transferts de charges ;",
-        "l. les dégrèvements obtenus de l'administration au titre des impôts déductibles les produits des cessions d'éléments de l'actif immobilisé ;",
-        "m. les gains de change.",
+        "a) les ventes et les recettes ;",
+        "b) les produits divers ;",
+        "c) les revenus ou prestations accessoires ;",
+        "d) les produits financiers ;",
+        "e) les produits de valeurs mobilières ;",
+        "f) les produits de consignations d'emballages ;",
+        "g) les produits de la location des immeubles bâtis et non bâtis, y compris les revenus accessoires ;",
+        "h) les aides à caractère commercial, notamment les abandons de créances et subventions ;",
+        "i) les dons et libéralités ;",
+        "j) les travaux en cours ;",
+        "k) les reprises et les transferts de charges ;",
+        "l) les dégrèvements obtenus de l'administration au titre des impôts déductibles les produits des cessions d'éléments de l'actif immobilisé ;",
+        "m) les gains de change.",
         "",
         "Ne constituent pas des produits imposables, les cotisations de retraites perçues par les fonds de pension réglementés, tels que les caisses nationales de prévoyance ou de sécurité sociale et autres institutions réglementées offrant un mécanisme d'épargne-retraite.",
         "",
@@ -391,15 +391,15 @@
       "article": "Art. 11",
       "titre": "Produits de source étrangère et établissements stables",
       "texte": [
-        "Les résultats de l'activité d'un établissement stable situé hors du Congo et appartenant à une société de la Communauté sont rattachés à ceux de la société et imposés au siège.",
+        "Les résultats de l'activité d'un établissement stable situé hors du Congo et appartenant à une société de la CEMAC, sont rattachés à ceux de la société et imposés au siège.",
         "",
-        "Les revenus perçus de l'étranger par une entreprise exploitée au Congo au sens de l'article 5, notamment les dividendes, intérêts, redevances et rémunérations des prestations de services, sont des produits taxables.",
+        "Les revenus perçus de l'étranger par une entreprise exploitée au Congo au sens de l'article 4 du présent Code, notamment les dividendes, intérêts, redevances et rémunérations des prestations de services, sont des produits taxables.",
         "",
         "Les doubles impositions peuvent être éliminées :",
         "- soit par la déduction de l'impôt effectivement acquitté à l'étranger ;",
         "- soit par un crédit d'impôt égal au montant de l'impôt effectivement acquitté à l'étranger, dans la limite de l'impôt qui aurait été dû dans l'État membre sur les mêmes revenus.",
         "",
-        "Les pertes de l'établissement stable ne sont imputables que sur les bénéfices ultérieurs de cet établissement stable, pendant cinq 5 ans."
+        "Les pertes de l'établissement stable ne sont imputables que sur les bénéfices ultérieurs de cet établissement stable, pendant 5 ans."
       ],
       "mots_cles": [
         "revenus étrangers",
@@ -524,7 +524,7 @@
       "titre": "Cession entraînant un changement de contrôle",
       "texte": [
         "Dans le cas de cession directe ou indirecte d'actifs sociaux et/ou des droits sociaux entraînant le changement de contrôle de la société de droit congolais, les plus-values nettes sont imposées :",
-        "a) pour la moitié de leur montant lorsque la cession intervient moins de cinq (5) ans après la création de la filiale de droit congolais ;",
+        "a) pour la moitié de leur montant lorsque la cession intervient moins de cinq ans après la création de la filiale de droit congolais ;",
         "b) pour le tiers de leur montant, dans les autres cas."
       ],
       "mots_cles": [
@@ -541,12 +541,12 @@
       "article": "Art. 19",
       "titre": "Régime mère-fille",
       "texte": [
-        "Lorsqu'une société de capitaux possède soit des actions nominatives, soit des parts sociales d'une société de capitaux, les produits nets des actions ou des parts sociales de la seconde société, perçus par la première au cours de l'exercice, sont retranchés du bénéfice net total de celle-ci, défalcation faite d'une quote-part de frais et charges fixée à 5 % du montant desdits produits.",
+        "Lorsqu'une société de capitaux possède soit des actions nominatives, soit des parts sociales d'une société de capitaux, les produits nets des actions ou des parts sociales de la seconde société, perçus par la première au cours de l'exercice, sont retranchés du bénéfice net total de celle-ci, défalcation faite d'une quote-part de frais et charges. Cette quote-part est fixée au taux de 5 % du montant desdits produits.",
         "",
         "Toutefois, cette disposition n'est applicable qu'à condition que :",
         "- les actions ou parts sociales possédées par la société mère au cours des trois cent soixante-cinq (365) jours précédents représentent au moins 25 % du capital de la société filiale ;",
-        "- les sociétés mères et leurs filiales soient immatriculées dans le même État membre ou y aient leur lieu de direction effective ;",
-        "- les actions ou parts sociales attribuées à l'émission soient toujours restées inscrites au nom de la société participante et que celle-ci prenne l'engagement de les conserver pendant deux (2) années consécutives au moins sous la forme nominative.",
+        "- les sociétés mères et leurs filiales soient immatriculées au Congo ou qu'elles aient leur lieu de direction effective au Congo ;",
+        "- les actions ou parts sociales attribuées à l'émission soient toujours restées inscrites au nom de la société participante et que celle-ci prenne l'engagement de les conserver pendant deux années consécutives au moins sous la forme nominative.",
         "",
         "Seuls les produits correspondant à des bénéfices non exonérés d'impôt sur les sociétés peuvent bénéficier du régime prévu par le présent article. En cas de versement de produits portant à la fois sur des bénéfices exonérés et non exonérés, ils sont présumés porter en priorité sur les bénéfices exonérés."
       ],
@@ -567,12 +567,12 @@
       "texte": [
         "Les plus-values, autres que celles réalisées sur les marchandises, résultant de l'attribution gratuite d'actions, de parts bénéficiaires, de parts sociales ou d'obligations à la suite de fusions, scissions ou d'apports partiels d'actifs, sont exonérées de l'impôt sur les sociétés au moment de leur réalisation, à condition que les opérations profitent à des personnes morales passibles de l'impôt sur les sociétés et ayant leur siège social au Congo.",
         "Il s'agit notamment :",
-        "1°) des plus-values ou moins-values sur éléments non amortissables : les plus-values et moins-values constatées sur des éléments immobilisés amortissables, sont progressivement, pendant une durée de cinq ans, réintégrées dans les bénéfices de la société absorbante. Le montant annuel à réintégrer est égal au cinquième de la plus-value constatée ;",
-        "2°) des plus-values ou moins-values sur éléments non amortissables : la prise en compte des plus ou moins-values constatées sur les biens non amortissables est différée à condition que la société absorbante s'engage à calculer la plus ou moins-value qui serait réalisée en cas de cession ultérieure de ces biens à partir des valeurs constatées dans les écritures de la société absorbée. Les entreprises sont astreintes à la tenue de registres spéciaux pour le suivi des immobilisations qui bénéficient de ce report d'imposition ;",
-        "3°) des plus ou moins-values sur biens non immobilisés : les plus ou moins-values constatées lors de l'apport de biens non immobilisés, sont imposables au titre de l'exercice de fusion au nom de la société absorbante ;",
-        "4°) des plus ou moins-values en sursis d'imposition : les plus-values réalisées avant la fusion et dont l'imposition a été différée continuent à bénéficier du différé ou de l'étalement dès lors que la société absorbante s'engage à reprendre les obligations fiscales de la société absorbée ;",
-        "5°) des plus ou moins-values résultant de l'apport intégral des actifs d'une société à deux ou plusieurs sociétés de capitaux ;",
-        "6°) des plus ou moins-values résultant de l'apport partiel des éléments d'actifs constituant une branche complète d'activités d'une société à une autre société dans les conditions prévues à l'article 261 du code général des impôts, tome 2, livre 1er.",
+        "1° des plus-values ou moins-values sur éléments non amortissables : les plus-values et moins-values constatées sur des éléments immobilisés amortissables, sont progressivement, pendant une durée de cinq ans, réintégrées dans les bénéfices de la société absorbante. Le montant annuel à réintégrer est égal au cinquième de la plus-value constatée ;",
+        "2° des plus-values ou moins-values sur éléments non amortissables : la prise en compte des plus ou moins-values constatées sur les biens non amortissables est différée à condition que la société absorbante s'engage à calculer la plus ou moins-value qui serait réalisée en cas de cession ultérieure de ces biens à partir des valeurs constatées dans les écritures de la société absorbée. Les entreprises sont astreintes à la tenue de registres spéciaux pour le suivi des immobilisations qui bénéficient de ce report d'imposition ;",
+        "3° des plus ou moins-values sur biens non immobilisés : les plus ou moins-values constatées lors de l'apport de biens non immobilisés, sont imposables au titre de l'exercice de fusion au nom de la société absorbante ;",
+        "4° des plus ou moins-values en sursis d'imposition : les plus-values réalisées avant la fusion et dont l'imposition a été différée, continuent à bénéficier du différé ou de l'étalement dès lors que la société absorbante s'engage à reprendre les obligations fiscales de la société absorbée ;",
+        "5° des plus et moins-values résultant de l'apport intégral des actifs d'une société à deux ou plusieurs sociétés de capitaux ;",
+        "6° des plus ou moins-values résultant de l'apport partiel des éléments d'actifs constituant une branche complète d'activités d'une société à une autre société dans les conditions prévues à l'article 261 du Code général des impôts, tome 2, Livre 1.",
         "L'application des dispositions des alinéas 5° et 6° du présent Article est subordonnée à l'obligation constatée, dans l'acte de fusion, de scission ou d'apports partiels d'actifs, de calculer, en ce qui concerne les éléments autres que les marchandises comprises dans l'apport, les amortissements annuels à prélever sur les bénéfices ainsi que les plus-values ultérieures résultant de la réalisation de ces éléments d'après le prix de revient qu'ils comportaient pour les sociétés fusionnées ou pour la société apporteuse, déduction faite des amortissements déjà réalisés par elles.",
         "Cette obligation incombe dans le cas visé au 5° ci-dessus, à la société absorbante ou nouvelle et, dans les autres cas, soit respectivement aux sociétés bénéficiaires des apports proportionnellement à la valeur des éléments d'actif qui leur sont attribués, soit à la société bénéficiaire de l'apport partiel."
       ],
@@ -591,7 +591,7 @@
       "article": "Art. 21",
       "titre": "Cessation ou cession d'activité",
       "texte": [
-        "En cas de cession ou de cessation d'activité, les bénéfices du dernier exercice ainsi que les provisions devenant sans objet et les plus-values réalisées deviennent immédiatement imposables."
+        "En cas de cession ou de cessation d'activité, les bénéfices du dernier exercice ainsi que les provisions devenant sans objet et les plus-values réalisées, deviennent immédiatement imposables."
       ],
       "mots_cles": [
         "cessation d'activité",
@@ -607,7 +607,7 @@
       "article": "Art. 22",
       "titre": "Sociétés coopératives de consommation",
       "texte": [
-        "En ce qui concerne les sociétés coopératives de consommation, les bonis provenant des opérations faites avec les associés et distribués à ces derniers au prorata de la commande de chacun d'eux sont admis en déduction du bénéfice."
+        "En ce qui concerne les sociétés coopératives de consommation, les bonis provenant des opérations faites avec les associés et distribués à ces derniers au prorata de la commande de chacun d'eux, sont admis en déduction du bénéfice."
       ],
       "mots_cles": [
         "coopératives",
@@ -622,7 +622,7 @@
       "article": "Art. 23",
       "titre": "Sociétés pétrolières",
       "texte": [
-        "En ce qui concerne les sociétés pétrolières, tout membre du contracteur qui cède tout ou partie de ses droits et obligations découlant d'un contrat de partage de production est assujetti au paiement d'une taxe forfaitaire égale à 10% en cas de plus-value réalisée sur la cession. La plus-value est la différence entre le prix de cession obtenu par le cédant et le montant total des coûts restant à récupérer par le membre du contracteur cessionnaire."
+        "En ce qui concerne les sociétés pétrolières, tout membre du contracteur qui cède tout ou partie de ses droits et obligations découlant d'un contrat de partage de production est assujetti au paiement d'une taxe forfaitaire égale à 10 % en cas de plus-value réalisée sur la cession. La plus-value est la différence entre le prix de cession obtenu par le cédant et le montant total des coûts restant à récupérer par le membre du contracteur cessionnaire."
       ],
       "mots_cles": [
         "sociétés pétrolières",
@@ -639,11 +639,11 @@
       "titre": "Restructurations intracommunautaires",
       "texte": [
         "Les plus-values, autres que celles réalisées sur les marchandises, résultant de l'attribution gratuite d'actions ou de parts sociales à la suite de fusions, scissions ou d'apports partiels d'actifs, sont exonérées de l'impôt sur les sociétés au moment de leur réalisation à condition que les opérations profitent à des personnes morales passibles de l'impôt sur les sociétés et qui sont immatriculées dans un État membre de la CEMAC ou qui y ont leur lieu de direction effective.",
-        "Les plus-values et moins-values constatées sur des éléments immobilisés amortissables sont réintégrées pendant cinq (5) ans dans les bénéfices de la société absorbante. Le montant annuel à réintégrer est égal à 20% de la plus ou moins-value constatée.",
+        "Les plus-values et moins-values constatées sur des éléments immobilisés amortissables, sont réintégrées pendant cinq ans dans les bénéfices de la société absorbante. Le montant annuel à réintégrer est égal à 20 % de la plus ou moins-value constatée.",
         "La prise en compte des plus ou moins-values constatées sur les biens non amortissables est différée à condition que la société absorbante s'engage à calculer la plus ou moins-value qui serait réalisée en cas de cession ultérieure de ces biens à partir des valeurs constatées dans les écritures de la société absorbée.",
         "Les entreprises sont astreintes à la tenue des registres spéciaux pour le suivi des immobilisations qui bénéficient de ce report d'imposition.",
-        "Les plus ou moins-values constatées lors de l'apport de biens non immobilisés sont imposables au titre de l'exercice de fusion au nom de la société absorbante.",
-        "Les plus-values réalisées avant la fusion et dont l'imposition a été différée continuent à bénéficier du différé ou de l'étalement dès lors que la société absorbante s'engage à reprendre les obligations fiscales de la société absorbée."
+        "Les plus ou moins-values constatées lors de l'apport de biens non immobilisés, sont imposables au titre de l'exercice de fusion au nom de la société absorbante.",
+        "Les plus-values réalisées avant la fusion et dont l'imposition a été différée, continuent à bénéficier du différé ou de l'étalement dès lors que la société absorbante s'engage à reprendre les obligations fiscales de la société absorbée."
       ],
       "mots_cles": [
         "restructurations",
@@ -665,7 +665,7 @@
         "a) être rattachées à l'exercice d'imposition et comptabilisées en tant que telles ;",
         "b) être exposées dans l'intérêt direct de l'exploitation ou se rattacher à la gestion normale de l'entreprise ;",
         "c) correspondre à une charge effective ;",
-        "d) être appuyées des justifications suffisantes, notamment pour les fournisseurs nationaux, d'une facture faisant figurer le numéro d'immatriculation fiscale ;",
+        "d) être appuyées des justifications suffisantes, notamment pour les fournisseurs nationaux, d'une facture faisant figurer le numéro d'identification unique et être issue du système de facturation électronique certifiée (SFEC) ;",
         "e) ne pas concourir à la formation d'un produit exonéré d'impôt sur les sociétés ;",
         "f) ne pas être payées en espèces pour un montant supérieur ou égal à 200.000 FCFA ;",
         "g) se traduire par une diminution de l'actif net de l'entreprise ;",
@@ -722,7 +722,7 @@
       "article": "Art. 27",
       "titre": "Rétributions aux associés dirigeants",
       "texte": [
-        "Les rétributions de toute natures versés aux associés dirigeants des sociétés de capitaux ou à leurs conjoints sont admises en déduction à condition qu'elles correspondent à un emploi effectif exercé dans l'entreprise et qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
+        "Les rétributions de toute nature versés aux associés dirigeants des sociétés de capitaux ou à leurs conjoints sont admises en déduction à condition qu'elles correspondent à un emploi effectif exercé dans l'entreprise et qu'elles ne soient pas exagérées par rapport aux rémunérations des emplois de même nature exercés dans l'entreprise ou dans les sociétés similaires.",
         "En cas d'exagération ou de rémunérations fictives, la fraction excédentaire ou l'ensemble des rémunérations fictives, selon le cas, est rapportée au résultat et considérée comme bénéfice distribué.",
         "Ces dispositions s'appliquent également aux rétributions versées aux associés des sociétés constituées en vue de l'exercice d'une activité libérale et dont plus de la moitié du capital est détenue par les professionnels."
       ],
@@ -741,7 +741,7 @@
       "titre": "Gérants majoritaires de SARL et assimilés",
       "texte": [
         "Dans les sociétés à responsabilité limitée dont les gérants sont majoritaires, les traitements, remboursements forfaitaires de frais et toutes autres rémunérations sont, sous réserve des dispositions de l'article 34 ci-dessous, admis en déduction du bénéfice de la société pour l'établissement de l'impôt, à la condition que ces rémunérations correspondent, à un travail effectif et n'excèdent pas la rémunération normale d'un contribuable exerçant sur place des fonctions similaires.",
-        "Les sommes retranchées du bénéfice de la société en vertu de l'alinéa précédent sont soumises à l'impôt sur les traitements et salaires au nom des bénéficiaires dans les conditions prévues par le présent code.",
+        "Les sommes retranchées du bénéfice de la société en vertu de l'alinéa précédent sont soumises à l'impôt sur les traitements et salaires au nom des bénéficiaires dans les conditions prévues par le présent Code.",
         "Pour l'application du présent article, les gérants qui n'ont pas personnellement la propriété de parts sociales sont considérés comme associés si leur conjoint ou leurs enfants non émancipés ont la qualité d'associé.",
         "Dans ce cas, comme dans celui où le gérant est associé, les parts appartenant en toute propriété ou en usufruit au conjoint et aux enfants non émancipés du gérant sont considérées comme possédées par ce dernier.",
         "Les rémunérations versées aux gérants associés de sociétés en nom collectif, aux gérants de sociétés en commandite simple, aux membres des sociétés en participation ou de sociétés civiles, subissent le même traitement fiscal que les rémunérations des gérants majoritaires de sociétés à responsabilité limitée. Ces rémunérations sont déductibles à condition qu'elles ne soient pas excessives."
@@ -775,7 +775,7 @@
       "article": "Art. 30",
       "titre": "Cotisations sociales obligatoires versées à l'étranger",
       "texte": [
-        "Les cotisations sociales obligatoires versées à l'étranger en vue de la constitution de la retraite sont déductibles dans la limite de 15% du salaire brut et à l'exclusion des autres cotisations sociales."
+        "Les cotisations sociales obligatoires versées à l'étranger en vue de la constitution de la retraite sont déductibles dans la limite de 15 % du salaire brut et à l'exclusion des autres cotisations sociales."
       ],
       "mots_cles": [
         "cotisations sociales",
@@ -791,8 +791,8 @@
       "titre": "Indemnités et rémunérations des administrateurs",
       "texte": [
         "Sont également déductibles :",
-        "1°) les sommes fixes versées sur décision de l'assemblée générale à titre d'indemnité de fonction en rémunération des activités des administrateurs ;",
-        "2°) les rémunérations exceptionnelles allouées aux membres des conseils d'administration, conformément aux dispositions de l'article 432 de l'acte uniforme de I'OHADA sur le droit des sociétés commerciales et du groupement d'intérêt économique."
+        "1° les sommes fixes versées sur décision de l'assemblée générale à titre d'indemnité de fonction en rémunération des activités des administrateurs ;",
+        "2° les rémunérations exceptionnelles allouées aux membres des conseils d'administration, conformément aux dispositions de l'article 432 de l'acte uniforme de l'OHADA sur le droit des sociétés commerciales et du groupement d'intérêt économique."
       ],
       "mots_cles": [
         "administrateurs",
@@ -808,7 +808,7 @@
       "article": "Art. 32",
       "titre": "Avantages non déductibles des administrateurs",
       "texte": [
-        "Hormis les sommes perçues dans le cadre d'un travail effectif et les versements visés à l'article 32 ci-dessus, les autres rémunérations et tous avantages qui profitent aux administrateurs au titre de leurs fonctions, ne sont pas admis en déduction des résultats imposables."
+        "Hormis les sommes perçues dans le cadre d'un travail effectif et les versements visés à l'article 31 ci-dessus, les autres rémunérations et tous avantages qui profitent aux administrateurs au titre de leurs fonctions, ne sont pas admis en déduction des résultats imposables."
       ],
       "mots_cles": [
         "administrateurs",
