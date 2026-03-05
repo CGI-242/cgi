@@ -414,7 +414,18 @@
         "valeurs mobilières",
         "gains de change",
         "entreprises liées",
-        "prix du marché"
+        "prix du marché",
+        "article 77",
+        "abandons de créances",
+        "subventions",
+        "dons et libéralités",
+        "consignations d'emballages",
+        "location d'immeubles",
+        "dégrèvements",
+        "fonds de pension",
+        "cotisations de retraites",
+        "matières premières",
+        "marché boursier"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 2 : Les produits imposables"
@@ -440,7 +451,12 @@
         "crédit d'impôt",
         "déduction",
         "dividendes",
-        "redevances"
+        "redevances",
+        "intérêts",
+        "prestations de services",
+        "5 ans",
+        "report des pertes",
+        "CEMAC"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 2 : Les produits imposables"
@@ -457,7 +473,9 @@
         "retrait d'actif",
         "valeur réelle",
         "apport",
-        "plus-value"
+        "plus-value",
+        "3 ans",
+        "prix de cession"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 2 : Les produits imposables"
@@ -487,7 +505,9 @@
         "produits non encaissés",
         "vérification de comptabilité",
         "prescription",
-        "bénéfice imposable"
+        "bénéfice imposable",
+        "2 ans",
+        "plus-values"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 2 : Les produits imposables"
@@ -505,7 +525,9 @@
         "cession",
         "actif immobilisé",
         "réévaluation",
-        "bilan"
+        "bilan",
+        "taux normal",
+        "imposition immédiate"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -528,7 +550,12 @@
         "réinvestissement",
         "immobilisations",
         "3 ans",
-        "amortissement"
+        "amortissement",
+        "compte spécial",
+        "plus-values à réemployer",
+        "engagement de réinvestir",
+        "titres de participation",
+        "prix de revient"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -564,7 +591,12 @@
         "changement de contrôle",
         "droits sociaux",
         "plus-values nettes",
-        "filiale"
+        "filiale",
+        "5 ans",
+        "50 %",
+        "tiers",
+        "droit congolais",
+        "cession directe ou indirecte"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -588,7 +620,13 @@
         "dividendes",
         "25 %",
         "quote-part frais et charges",
-        "5 %"
+        "5 %",
+        "365 jours",
+        "2 ans",
+        "engagement de conservation",
+        "actions nominatives",
+        "parts sociales",
+        "bénéfices exonérés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -614,7 +652,15 @@
         "scission",
         "apport partiel d'actifs",
         "plus-values",
-        "exonération"
+        "exonération",
+        "5 ans",
+        "20 %",
+        "société absorbante",
+        "société absorbée",
+        "registres spéciaux",
+        "report d'imposition",
+        "branche complète d'activité",
+        "article 261"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -684,7 +730,15 @@
         "scission",
         "apport partiel",
         "exonération",
-        "réintégration"
+        "réintégration",
+        "plus-values",
+        "moins-values",
+        "5 ans",
+        "20 %",
+        "société absorbante",
+        "registres spéciaux",
+        "report d'imposition",
+        "État membre"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 3 : Régime des plus-values ou moins-values de cession"
@@ -730,7 +784,12 @@
         "200000",
         "deux cent mille",
         "règlement cash",
-        "montant maximum espèces"
+        "montant maximum espèces",
+        "numéro d'immatriculation fiscale",
+        "facture",
+        "abandons de créances",
+        "redevances excessives",
+        "remises de dettes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles"
@@ -745,7 +804,11 @@
         "rémunérations",
         "salariés",
         "travail effectif",
-        "avantages en nature"
+        "avantages en nature",
+        "indemnités",
+        "allocations",
+        "remboursements de frais",
+        "charges déductibles"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -763,7 +826,10 @@
         "rétributions",
         "emploi effectif",
         "rémunérations fictives",
-        "bénéfice distribué"
+        "bénéfice distribué",
+        "sociétés de capitaux",
+        "conjoints",
+        "activité libérale"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
