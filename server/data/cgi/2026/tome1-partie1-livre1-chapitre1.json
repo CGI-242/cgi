@@ -13,7 +13,7 @@
   },
   "articles": [
     {
-      "article": "Art. 1er",
+      "article": "Art. 1",
       "titre": "Principe de l'impôt sur les sociétés",
       "texte": [
         "Il est établi un impôt sur l'ensemble des bénéfices ou revenus réalisés par les sociétés et autres personnes morales.",
@@ -137,7 +137,7 @@
       "section": "Section 2 : Champ d'application - Sous-section 2 : Exonérations et crédits d'impôts"
     },
     {
-      "article": "Art. 3A",
+      "article": "Art. 3-A",
       "titre": "Crédit d'impôt sur les sociétés pour investissement",
       "texte": [
         "Le crédit d'impôt sur les sociétés pour investissement est établi comme mesure incitative visant à soutenir le développement d'un secteur ou d'une région économique jugés stratégiques.",
@@ -197,7 +197,7 @@
       "section": "Section 2 : Champ d'application - Sous-section 3 : Territorialité"
     },
     {
-      "article": "Art. 4A",
+      "article": "Art. 4-A",
       "titre": "Définition de l'établissement stable",
       "texte": [
         "L'expression « établissement stable » désigne une installation fixe d'affaires par l'intermédiaire de laquelle l'entreprise exerce tout ou partie de son activité.",
@@ -269,7 +269,6 @@
         "succursale",
         "stockage",
         "caractère préparatoire ou auxiliaire",
-        "anti-fragmentation",
         "territorialité IS"
       ],
       "statut": "en vigueur",
@@ -776,15 +775,7 @@
         "200.000 FCFA",
         "justifications",
         "espèces",
-        "cash",
-        "numéraire",
-        "liquide",
         "paiement espèces",
-        "plafond espèces",
-        "200000",
-        "deux cent mille",
-        "règlement cash",
-        "montant maximum espèces",
         "numéro d'immatriculation fiscale",
         "facture",
         "abandons de créances",
@@ -824,11 +815,11 @@
       "mots_cles": [
         "associés dirigeants",
         "rétributions",
+        "sociétés de capitaux",
+        "conjoints",
         "emploi effectif",
         "rémunérations fictives",
         "bénéfice distribué",
-        "sociétés de capitaux",
-        "conjoints",
         "activité libérale"
       ],
       "statut": "en vigueur",
@@ -960,10 +951,10 @@
       "mots_cles": [
         "associés dirigeants",
         "rétributions",
-        "emploi effectif",
-        "bénéfice distribué",
         "impôt sur les sociétés",
         "conjoints et enfants",
+        "emploi effectif",
+        "bénéfice distribué",
         "activité libérale"
       ],
       "statut": "en vigueur",
@@ -1012,14 +1003,14 @@
         "frais de siège",
         "services à l'étranger",
         "assistance technique",
-        "20%",
-        "2%",
-        "prêt de main d'œuvre",
-        "bénéfices distribués",
         "brevets",
         "licences",
         "commissions",
-        "honoraires"
+        "honoraires",
+        "20%",
+        "2%",
+        "prêt de main d'œuvre",
+        "bénéfices distribués"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1053,13 +1044,13 @@
         "redevances",
         "propriété intellectuelle",
         "droit d'auteur",
-        "brevet",
-        "marque",
-        "audiovisuel",
         "bien incorporel",
         "concession",
+        "brevet",
+        "marque",
         "procédé secret",
-        "films cinématographiques"
+        "films cinématographiques",
+        "audiovisuel"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1075,10 +1066,10 @@
       "mots_cles": [
         "commissions",
         "courtages",
+        "marchandises",
         "5%",
         "centrales d'achats",
         "intermédiaires",
-        "marchandises",
         "facture",
         "bénéfice imposable"
       ],
@@ -1138,9 +1129,9 @@
       "mots_cles": [
         "primes d'assurances",
         "risques",
-        "assurance-maladie",
         "actif net",
         "charge d'exploitation",
+        "assurance-maladie",
         "compagnies d'assurance locales"
       ],
       "statut": "en vigueur",
@@ -1160,13 +1151,13 @@
       "mots_cles": [
         "primes non déductibles",
         "auto-assurance",
-        "captives d'assurance",
-        "assurance-vie",
-        "retraite complémentaire",
         "propre assurance",
+        "captives d'assurance",
         "établissement stable",
         "sociétés de groupe",
-        "quotes-parts d'employeurs"
+        "assurance-vie",
+        "quotes-parts d'employeurs",
+        "retraite complémentaire"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §5 Primes d'assurances"
@@ -1191,15 +1182,15 @@
         "dons",
         "libéralités",
         "subventions",
-        "0,5‰",
-        "0,3%",
-        "sport",
-        "calamités naturelles",
         "organismes de recherche",
         "intérêt général",
         "syndicats professionnels",
+        "0,5‰",
+        "0,3%",
         "50%",
         "chiffre d'affaires hors taxes",
+        "sport",
+        "calamités naturelles",
         "catastrophes accidentelles"
       ],
       "statut": "en vigueur",
@@ -1227,11 +1218,8 @@
       "mots_cles": [
         "aides non déductibles",
         "subventions",
-        "abandon de créances",
-        "SFEC",
-        "BEAC",
-        "CEMAC",
         "remise de dettes",
+        "abandon de créances",
         "aides commerciales",
         "aides financières",
         "société unipersonnelle",
@@ -1240,6 +1228,9 @@
         "IRPP",
         "non-résidents",
         "facturation électronique",
+        "SFEC",
+        "BEAC",
+        "CEMAC",
         "dirigeants",
         "gérants",
         "sociétés anonymes"
@@ -1300,18 +1291,17 @@
       ],
       "mots_cles": [
         "intérêts",
-        "charges financières",
-        "BEAC",
-        "20%",
-        "excédent brut d'exploitation",
-        "sous-capitalisation",
         "prêts",
         "avances",
+        "charges financières",
         "taux du marché",
         "associés",
         "établissements financiers",
+        "BEAC",
         "appels d'offres",
         "capital social",
+        "20%",
+        "excédent brut d'exploitation",
         "OHADA",
         "report",
         "cinq ans",
@@ -1320,7 +1310,8 @@
         "valeurs mobilières",
         "obligations",
         "crédit-bail",
-        "pénalités"
+        "pénalités",
+        "sous-capitalisation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §9 Charges financières"
@@ -1337,7 +1328,6 @@
         "établissement stable",
         "siège",
         "charges non déductibles",
-        "succursale",
         "location mobilière",
         "location immobilière",
         "propriété intellectuelle",
@@ -1345,6 +1335,7 @@
         "activité de direction",
         "intérêts",
         "fonds propres",
+        "succursale",
         "banque"
       ],
       "statut": "en vigueur",
@@ -1365,8 +1356,15 @@
       "mots_cles": [
         "amortissements",
         "durée d'usage",
+        "période déficitaire",
+        "amortissements différés",
+        "régimes particuliers",
+        "emballages récupérables",
         "crédit-bail",
-        "amortissements différés"
+        "biens en location",
+        "constructions",
+        "aménagements",
+        "sol d'autrui"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1496,10 +1494,23 @@
       "mots_cles": [
         "taux d'amortissement",
         "constructions",
-        "matériel",
+        "bâtiments",
+        "matériel fixe",
+        "matériel mobile",
         "outillage",
+        "machines-outils",
+        "raffinage de pétrole",
         "transport",
+        "véhicules",
+        "tracteurs",
         "mobilier",
+        "matériel informatique",
+        "logiciel",
+        "armement de pêche",
+        "hôtels",
+        "restaurants",
+        "matières plastiques",
+        "produits chimiques",
         "amortissements spéciaux"
       ],
       "statut": "en vigueur",
@@ -1515,9 +1526,12 @@
       ],
       "mots_cles": [
         "amortissement linéaire",
+        "montant cumulé",
+        "durée normale d'utilisation",
         "amortissements différés",
         "période déficitaire",
-        "tableau des amortissements"
+        "tableau des amortissements",
+        "non déductibilité"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1535,7 +1549,12 @@
       "mots_cles": [
         "biens en location",
         "amortissement",
-        "avantage en nature"
+        "annuité d'amortissement",
+        "loyer",
+        "avantage en nature",
+        "dirigeant",
+        "salarié",
+        "excédent d'amortissement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1549,9 +1568,13 @@
       ],
       "mots_cles": [
         "constructions",
+        "aménagements",
         "sol d'autrui",
-        "bail",
-        "valeur résiduelle"
+        "immeubles pris à bail",
+        "suppléments d'actif",
+        "durée d'utilisation",
+        "valeur résiduelle",
+        "locataire"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1568,7 +1591,10 @@
         "leasing",
         "option d'achat",
         "biens meubles",
-        "biens immeubles"
+        "biens immeubles",
+        "loyers réintégrés",
+        "bénéfice fiscal",
+        "durée du contrat"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1605,7 +1631,16 @@
         "40 millions FCFA",
         "40%",
         "matériel lourd",
-        "outillage"
+        "outillage",
+        "état neuf",
+        "trois ans",
+        "fabrication",
+        "transformation",
+        "Directeur Général des Impôts",
+        "valeur résiduelle",
+        "code minier",
+        "hydrocarbures",
+        "code forestier"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1619,7 +1654,11 @@
       "mots_cles": [
         "véhicules de tourisme",
         "40 millions FCFA",
-        "plafond amortissement"
+        "40.000.000 FCFA",
+        "plafond amortissement",
+        "prix d'acquisition",
+        "plus-value",
+        "vente ultérieure"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1632,8 +1671,11 @@
       ],
       "mots_cles": [
         "faible valeur",
+        "valeur unitaire",
         "500.000 FCFA",
-        "amortissement 100%"
+        "hors taxes",
+        "amortissement 100%",
+        "année d'acquisition"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1647,7 +1689,9 @@
       "mots_cles": [
         "SFEC",
         "facturation électronique",
-        "amortissement 100%"
+        "amortissement 100%",
+        "année d'acquisition",
+        "matériel"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1664,7 +1708,12 @@
         "moins-values",
         "pertes sur actif",
         "cession",
-        "détournement"
+        "actif immobilisé",
+        "actif réalisable",
+        "détournement",
+        "associé",
+        "dirigeant",
+        "négligence"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §12 Moins-values et pertes sur actif"
@@ -1678,7 +1727,9 @@
       "mots_cles": [
         "provisions",
         "pertes probables",
-        "charges probables"
+        "charges probables",
+        "écritures",
+        "relevé des provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1693,7 +1744,10 @@
       ],
       "mots_cles": [
         "reprise provisions",
-        "redressements"
+        "emploi non conforme",
+        "sans objet",
+        "redressements",
+        "exercice soumis à vérification"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1707,8 +1761,14 @@
       ],
       "mots_cles": [
         "titres",
+        "portefeuille",
+        "bilan",
+        "valeur d'origine",
         "dépréciation",
-        "valeur d'origine"
+        "titres de participation",
+        "titres de placement",
+        "bourse",
+        "valeur probable de négociation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1721,7 +1781,10 @@
       ],
       "mots_cles": [
         "créances douteuses",
-        "provisions"
+        "provisions",
+        "perte probable",
+        "compromission",
+        "débiteurs"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1734,8 +1797,12 @@
       ],
       "mots_cles": [
         "COBAC",
+        "COBAC R-2018/01",
         "établissements de crédit",
-        "provisions"
+        "provisions",
+        "classification",
+        "provisionnement des créances",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1749,7 +1816,9 @@
       "mots_cles": [
         "crédit-bail",
         "LOA",
-        "créances douteuses"
+        "location avec option d'achat",
+        "créances douteuses",
+        "établissements de crédit"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1765,8 +1834,11 @@
       ],
       "mots_cles": [
         "provisions non déductibles",
+        "charges et pertes",
+        "créances douteuses",
         "congés payés",
-        "État"
+        "État",
+        "collectivités locales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1781,7 +1853,10 @@
       ],
       "mots_cles": [
         "reprise provisions",
-        "redressements"
+        "emploi non conforme",
+        "sans objet",
+        "redressements",
+        "exercice soumis à vérification"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1796,7 +1871,12 @@
       "mots_cles": [
         "titres",
         "portefeuille",
-        "évaluation"
+        "bilan",
+        "valeur d'origine",
+        "titres de participation",
+        "titres de placement",
+        "bourse",
+        "valeur probable de négociation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1810,7 +1890,13 @@
       ],
       "mots_cles": [
         "créances douteuses",
-        "débiteurs"
+        "débiteurs",
+        "perte probable",
+        "compromission",
+        "COBAC",
+        "COBAC R-2018/01",
+        "établissements de crédit",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1823,7 +1909,10 @@
       ],
       "mots_cles": [
         "crédit-bail",
-        "établissements de crédit"
+        "location avec option d'achat",
+        "créances douteuses",
+        "établissements de crédit",
+        "provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1839,9 +1928,12 @@
       ],
       "mots_cles": [
         "provisions non déductibles",
+        "charges et pertes",
+        "créances douteuses",
         "congés payés",
         "État",
-        "collectivités locales"
+        "collectivités locales",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §13 Provisions"
@@ -1857,8 +1949,12 @@
       ],
       "mots_cles": [
         "déficits reportables",
+        "charge déductible",
         "5 ans",
-        "amortissements différés"
+        "cinquième exercice",
+        "amortissements différés",
+        "période déficitaire",
+        "exonération"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §14 Reports déficitaires"
@@ -1871,8 +1967,12 @@
       ],
       "mots_cles": [
         "investissements lourds",
+        "industries extractives",
+        "forêts",
+        "télécommunications",
         "charte des investissements",
-        "avantages fiscaux"
+        "avantages fiscaux",
+        "avantages spécifiques"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §15 Dérogations sectorielles"
@@ -1895,24 +1995,14 @@
         "entreprises liées",
         "dépendance",
         "contrôle",
+        "majoration",
+        "minoration",
+        "régime fiscal privilégié",
+        "administration fiscale",
         "pleine concurrence",
+        "analyse fonctionnelle",
+        "analyse de comparabilité",
         "OCDE"
-      ],
-      "statut": "en vigueur",
-      "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
-    },
-    {
-      "article": "Art. 77",
-      "titre": "Vérification des comptabilités et systèmes informatisés",
-      "texte": [
-        "Les agents de l'administration des impôts vérifient sur place, en suivant les règles prévues par le présent Code, la comptabilité des contribuables astreints à tenir et à présenter des documents comptables.",
-        "Lorsque la comptabilité est tenue au moyen de systèmes informatisés, le contrôle porte sur l'ensemble des informations, données et traitements informatiques qui concourent directement ou indirectement à la formation des résultats comptables ou fiscaux et à l'élaboration des déclarations rendues obligatoires par le Code général des impôts.",
-        "Ce contrôle porte également sur la documentation relative aux analyses, à la programmation et à l'exécution des traitements."
-      ],
-      "mots_cles": [
-        "vérification comptable",
-        "systèmes informatisés",
-        "contrôle fiscal"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -1926,9 +2016,11 @@
         "Ce contrôle porte également sur la documentation relative aux analyses, à la programmation et à l'exécution des traitements."
       ],
       "mots_cles": [
-        "secret professionnel",
-        "informations",
-        "administration fiscale"
+        "vérification comptabilité",
+        "contrôle sur place",
+        "systèmes informatisés",
+        "traitements informatiques",
+        "documents comptables"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -1941,8 +2033,10 @@
         "Ils peuvent demander des renseignements sur la nature des prestations fournies par ces personnes."
       ],
       "mots_cles": [
-        "défaut de comptabilité",
-        "procès-verbal"
+        "secret professionnel",
+        "informations",
+        "versements",
+        "prestations"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -1995,10 +2089,17 @@
       "mots_cles": [
         "documentation prix de transfert",
         "500 millions FCFA",
+        "entités juridiques liées",
+        "licence unique exploitation",
+        "informations générales groupe",
+        "actifs incorporels",
+        "politique prix de transfert",
+        "pleine concurrence",
         "déclaration pays par pays",
         "sanctions",
-        "5 000 000 FCFA",
-        "25 000 000 FCFA"
+        "amende 5 000 000 FCFA",
+        "amende 25 000 000 FCFA",
+        "mise en demeure 8 jours"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -2017,10 +2118,17 @@
         "Lorsque l'entreprise a répondu de façon insuffisante, l'administration lui adresse une mise en demeure d'avoir à compléter sa réponse dans un délai de trente jours en précisant les compléments de réponse qu'elle souhaite. Cette mise en demeure rappelle les sanctions applicables en cas de défaut de réponse."
       ],
       "mots_cles": [
-        "transfert indirect",
-        "vérification",
+        "transfert indirect de bénéfices",
+        "vérification de comptabilité",
         "demande d'informations",
-        "mise en demeure"
+        "relations entreprises hors Congo",
+        "méthode détermination prix",
+        "contreparties consenties",
+        "traitement fiscal",
+        "majorité capital droits de vote",
+        "délai réponse 1 mois",
+        "prorogation 3 mois",
+        "mise en demeure 30 jours"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -2033,9 +2141,13 @@
       ],
       "mots_cles": [
         "délai de reprise",
+        "allongement délai",
         "demande internationale",
+        "autorité compétente",
         "échange de renseignements",
-        "6 ans"
+        "omissions insuffisances",
+        "sixième année",
+        "biens avoirs revenus hors Congo"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -2077,12 +2189,18 @@
       ],
       "mots_cles": [
         "prix de pleine concurrence",
-        "méthode CUP",
+        "transactions contrôlées",
+        "PCML",
+        "prix comparable marché libre",
+        "PRM",
+        "prix de revient majoré",
         "prix de revente",
-        "coût majoré",
         "MTMN",
+        "marge nette transactionnelle",
         "partage des bénéfices",
-        "5 méthodes"
+        "5 méthodes",
+        "analyse fonctionnelle",
+        "risques assumés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 5 : Prix de transferts"
@@ -2097,14 +2215,21 @@
       "mots_cles": [
         "période d'imposition",
         "exercice comptable",
+        "douze mois",
         "12 mois",
-        "premier bilan"
+        "premier bilan",
+        "date clôture obligatoire",
+        "six mois",
+        "31 décembre",
+        "début d'activités",
+        "notification option",
+        "administration fiscale"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 1 : Période d'imposition"
     },
     {
-      "article": "Art. 86A",
+      "article": "Art. 86-A",
       "titre": "Taux de l'impôt sur les sociétés",
       "texte": [
         "1. Pour le calcul de l'impôt sur les sociétés, toute fraction du bénéfice imposable inférieure à 1.000 FCFA est négligée.",
@@ -2117,17 +2242,22 @@
       ],
       "mots_cles": [
         "taux IS",
-        "28%",
-        "25%",
-        "36%",
-        "microfinance",
-        "hydrocarbures"
+        "taux général 28%",
+        "25% microfinance",
+        "enseignement privé",
+        "28% mines carrières",
+        "exploitation immobilière",
+        "33% personnes morales étrangères",
+        "hydrocarbures",
+        "contrat pétrolier",
+        "1 000 FCFA fraction négligée",
+        "calcul impôt sociétés"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86B",
+      "article": "Art. 86-B",
       "titre": "Imputation de l'IRCM sur l'IS",
       "texte": [
         "1) Sur justification, l'impôt sur le revenu des valeurs mobilières (IRCM) déjà acquitté sur les revenus visés aux articles 105 à 110 A du présent Code, et inclus dans les produits déclarés par la société ou la personne morale, est imputé sur le montant de l'impôt à sa charge en vertu du présent chapitre.",
@@ -2140,16 +2270,23 @@
       ],
       "mots_cles": [
         "IRCM",
-        "imputation",
+        "imputation IRCM sur IS",
         "valeurs mobilières",
-        "15%",
-        "30% capital"
+        "revenus articles 105 à 110A",
+        "15% taux réputé acquitté",
+        "30% capital",
+        "conventions internationales",
+        "double imposition",
+        "banques crédit exclus",
+        "assurances réassurances exclus",
+        "actions nominatives",
+        "activités industrielles agricoles minières"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86C",
+      "article": "Art. 86-C",
       "titre": "Minimum de perception",
       "texte": [
         "1. Le montant de l'impôt sur les sociétés ne peut être inférieur à un minimum de perception. Ce minimum résulte de l'application d'un taux et d'une base imposable.",
@@ -2168,17 +2305,25 @@
       ],
       "mots_cles": [
         "minimum de perception",
-        "1%",
+        "taux 1%",
         "produits d'exploitation",
-        "4 acomptes",
-        "15 mars",
-        "50% pénalité"
+        "produits financiers",
+        "produits hors activité ordinaire",
+        "4 acomptes trimestriels",
+        "15 mars 15 juin 15 septembre 15 décembre",
+        "liquidation provisoire",
+        "déduction cotisation IS",
+        "acquis au Trésor",
+        "50% pénalité défaut paiement",
+        "crédit d'impôt investissement",
+        "retenues à la source non libératoires",
+        "redressement contrôle fiscal"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86D",
+      "article": "Art. 86-D",
       "titre": "Retenue d'IS sur prestations et redevances versées à des non-résidents",
       "texte": [
         "Sous réserve de l'application des conventions fiscales internationales, il est fait une retenue d'impôt sur les sociétés sur les paiements faits par une société résidente ou pour le compte d'un établissement stable d'une société non-résidente en contrepartie des prestations de services rendues par des non-résidents ou des redevances versées à eux, au taux de 20 %.",
@@ -2195,13 +2340,18 @@
         "non-résidents",
         "prestations de services",
         "redevances",
-        "conventions fiscales"
+        "conventions fiscales internationales",
+        "droit d'auteur",
+        "brevet marque",
+        "équipement industriel",
+        "logiciels",
+        "établissement stable"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 2 : Calcul de l'impôt"
     },
     {
-      "article": "Art. 86E",
+      "article": "Art. 86-E",
       "titre": "Déclarations d'existence et modifications",
       "texte": [
         "Les sociétés, entreprises et associations visées à l'article 2 du présent Code sont tenues de faire à la résidence fiscale compétente, des déclarations d'existence, de modification du pacte social et des conditions d'exercice de la profession, dans les trois mois de leur constitution définitive et au plus tard dans les 15 jours du commencement d'activité, dans les conditions fixées au Tome 2, livre 3 article 19 du CGI.",
@@ -2210,15 +2360,16 @@
       "mots_cles": [
         "déclaration d'existence",
         "modification pacte social",
-        "3 mois",
-        "15 jours",
-        "résidence fiscale"
+        "3 mois constitution",
+        "15 jours commencement activité",
+        "résidence fiscale compétente",
+        "article 378 sanction"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
     },
     {
-      "article": "Art. 86F",
+      "article": "Art. 86-F",
       "titre": "Déclarations de résultats et pièces annexes",
       "texte": [
         "1) Les personnes morales et associations passibles de l'impôt sur les sociétés (IS) sont tenues de souscrire les déclarations prévues dans les dispositions communes pour la détermination de l'assiette de l'IS et de l'impôt sur le bénéfice des affaires.",
@@ -2232,16 +2383,27 @@
       ],
       "mots_cles": [
         "déclaration de résultats",
-        "4 mois",
+        "4 mois clôture exercice",
         "pièces annexes",
         "revenus distribués",
-        "IBA"
+        "IS",
+        "IBA",
+        "imputation cotisation",
+        "article 86 B",
+        "bénéfice déficit",
+        "conseils d'administration",
+        "assemblées générales",
+        "assurances réassurances",
+        "liquidation d'office",
+        "article 372 majoration",
+        "personnes non identifiées",
+        "obligation déclaration"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
     },
     {
-      "article": "Art. 86G",
+      "article": "Art. 86-G",
       "titre": "Versement spontané de l'IS",
       "texte": [
         "Toutes les sociétés ou personnes morales soumises à l'impôt sur les sociétés sont assujetties au versement de cet impôt sans émission préalable d'un rôle.",
@@ -2252,8 +2414,11 @@
       "mots_cles": [
         "versement spontané",
         "sans rôle",
-        "acomptes",
-        "solde IS"
+        "sans émission préalable",
+        "acomptes impôt minimum",
+        "solde IS",
+        "déclaration bénéfices article 86F",
+        "paiement propre initiative"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Modalités d'imposition - Sous-section 3 : Obligations des personnes morales"
@@ -2274,16 +2439,23 @@
         "sociétés mère",
         "filiales",
         "produits de participation",
-        "quote-part 10%",
+        "quote-part frais charges 10%",
         "25% capital",
         "CEMAC",
-        "2 ans nominatif"
+        "actions nominatives",
+        "parts d'intérêts",
+        "SA SARL",
+        "engagement conservation 2 ans",
+        "établissements de crédit",
+        "valeurs mobilières",
+        "exonération IRCM",
+        "pénalités insuffisance déclaration"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 1 : Régimes des sociétés mère et filiales"
     },
     {
-      "article": "Art. 87A",
+      "article": "Art. 87-A",
       "titre": "Subventions et abandons de créances intragroupe",
       "texte": [
         "Les subventions et remises de dettes entre sociétés mères et filiales sont soumises au régime particulier suivant :",
@@ -2302,11 +2474,19 @@
       "mots_cles": [
         "subventions",
         "abandons de créances",
+        "remises de dettes",
         "intragroupe",
+        "charge déductible",
+        "caractère commercial",
+        "caractère financier",
         "situation nette",
+        "prix de revient participation",
         "10% capital",
+        "filiales Congo",
         "augmentation capital",
-        "2 ans"
+        "2 ans numéraire conversion créance",
+        "manquement engagement",
+        "décision de justice"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 1 : Régimes des sociétés mère et filiales"
@@ -2322,7 +2502,12 @@
         "succursales",
         "agences",
         "conventions internationales",
-        "double imposition"
+        "double imposition",
+        "résultats activité Congo",
+        "bénéfices rattachés",
+        "entreprises similaires",
+        "comparaison",
+        "établissement stable"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 2 : Régime des succursales"
@@ -2336,13 +2521,16 @@
       "mots_cles": [
         "quartiers généraux",
         "CEMAC",
-        "statut particulier"
+        "statut particulier",
+        "régime fiscal",
+        "sociétés",
+        "États CEMAC"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89A",
+      "article": "Art. 89-A",
       "titre": "Base forfaitaire d'imposition",
       "texte": [
         "Par dérogation aux dispositions des Articles 8 à 11 ci-dessus, les quartiers généraux installés sous forme de sociétés par actions ou succursales, qui rendent des prestations correspondant à des fonctions de direction, de gestion, de coordination ou de contrôle exclusivement à des sociétés du groupe dont ils sont issus, sont soumis à l'impôt sur les sociétés sur la base d'un calcul forfaitaire en fonction de l'ensemble de leurs dépenses suivant le taux fixé à l'article 86 A ci-dessus."
@@ -2353,13 +2541,20 @@
         "direction",
         "gestion",
         "coordination",
-        "contrôle"
+        "contrôle",
+        "sociétés par actions",
+        "succursales",
+        "impôt sur les sociétés",
+        "calcul forfaitaire",
+        "taux article 86A",
+        "dérogation articles 8 à 11",
+        "sociétés du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89B",
+      "article": "Art. 89-B",
       "titre": "Objet exclusif du quartier général",
       "texte": [
         "Le quartier général doit avoir pour objet exclusivement le développement et la centralisation, au profit des sociétés du groupe, la fourniture des informations, la publicité, la recherche technique, scientifique et technologique, la centralisation des opérations financières et de change, les relations avec les autorités nationales et internationales, ainsi que toutes autres activités ou prestations de services, à condition que celles-ci conservent un caractère préparatoire ou auxiliaire. Il ne peut ni rendre d'autres types de services, ni prendre des décisions à l'échelle du groupe."
@@ -2369,13 +2564,22 @@
         "centralisation",
         "recherche",
         "opérations financières",
-        "caractère auxiliaire"
+        "caractère auxiliaire",
+        "développement",
+        "publicité",
+        "recherche technique scientifique technologique",
+        "opérations de change",
+        "autorités nationales internationales",
+        "caractère préparatoire",
+        "prestations de services",
+        "participations interdites",
+        "sociétés du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
     },
     {
-      "article": "Art. 89C",
+      "article": "Art. 89-C",
       "titre": "Autorisation administrative",
       "texte": [
         "Le bénéfice du régime fiscal des quartiers généraux est subordonné à une autorisation préalable de l'administration fiscale. Un arrêté du Ministre chargé des finances fixe les modalités d'application dudit régime."
@@ -2383,7 +2587,10 @@
       "mots_cles": [
         "autorisation préalable",
         "administration fiscale",
-        "arrêté ministériel"
+        "arrêté ministériel",
+        "Ministre chargé des finances",
+        "modalités d'application",
+        "régime fiscal quartiers généraux"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 3 : Régime fiscal des quartiers généraux des sociétés"
@@ -2418,27 +2625,49 @@
       ],
       "mots_cles": [
         "holdings",
-        "deux tiers actif",
-        "5 ans",
+        "SA SARL droit congolais",
+        "portefeuille actions parts sociales",
+        "sociétés de capitaux",
+        "deux tiers actif immobilisé",
+        "cinq années",
+        "remise en cause rétroactive",
+        "pénalités paiement tardif",
+        "mouvements de titres",
         "gestion participations",
+        "direction gestion coordination contrôle",
+        "recherche développement",
         "trésorerie groupe",
-        "plus-values titres",
-        "CEMAC"
+        "activité non éligible",
+        "sociétés congolaises étrangères"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "",
-      "titre": "2) Imposition des plus-values des titres",
-      "texte": [],
-      "mots_cles": [],
+      "article": "Art. 90-A-1",
+      "titre": "Imposition des plus-values des titres",
+      "texte": [
+        "1) Les plus-values provenant de cession par les sociétés holdings de leurs titres de participation sont imposables à l'impôt sur les sociétés, à un taux égal au quart du taux de droit commun de l'impôt sur les sociétés, si les titres cédés ont été acquis ou souscrits depuis plus de deux ans.",
+        "2) Les plus-values de cession des titres de participation détenus depuis moins de deux ans sont taxées dans les conditions de droit commun, sauf si les titres ont été acquis à la suite d'une fusion ou d'un apport, et qu'ils figuraient dans le portefeuille d'une société répondant aux conditions exigées par les présentes dispositions.",
+        "3) Les plus-values provenant de la cession des titres de participation détenus ou souscrits depuis plus de deux ans par les sociétés holding sont exonérées de l'impôt sur les sociétés, si le portefeuille desdites sociétés est composé d'au moins 60 % de participations dans les sociétés dont le siège est situé dans l'un des pays membres de la CEMAC."
+      ],
+      "mots_cles": [
+        "plus-values titres de participation",
+        "impôt sur les sociétés",
+        "quart taux droit commun",
+        "titres acquis souscrits deux ans",
+        "moins de deux ans droit commun",
+        "fusion apport",
+        "exonération IS",
+        "60% participations CEMAC",
+        "cession titres holdings"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings",
       "annee_application": 2026
     },
     {
-      "article": "Art. 90A",
+      "article": "Art. 90-A-2",
       "titre": "Cession de titres et compensation des plus-values",
       "texte": [
         "Pour l'application du régime, la cession de titres compris dans le portefeuille est réputée porter par priorité sur les titres de même nature acquis ou souscrits à la date la plus ancienne.",
@@ -2452,23 +2681,29 @@
         "plus-values",
         "moins-values",
         "compensation",
-        "FIFO"
+        "FIFO priorité date ancienne",
+        "prix acquisition vente",
+        "déficit exercice",
+        "déficits reportables",
+        "amortissements réputés différés",
+        "trois exercices suivants",
+        "base imposable plus-values nettes",
+        "frais de cession"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90B",
+      "article": "Art. 90-B",
       "titre": "Exclusion du régime du réemploi",
       "texte": [
         "Les plus-values visées aux deux articles précédents ne peuvent pas bénéficier du régime du réemploi de plus-values prévu par le présent Code."
       ],
       "mots_cles": [
+        "exclusion réemploi",
         "plus-values cession",
-        "titres de participation",
-        "compensation",
-        "moins-values",
-        "3 exercices"
+        "régime réemploi interdit",
+        "holdings"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2483,23 +2718,25 @@
       "annee_application": 2026
     },
     {
-      "article": "Art. 90C",
+      "article": "Art. 90-C",
       "titre": "Exonération de retenue à la source sur intérêts d'emprunts",
       "texte": [
         "Les intérêts des emprunts contractés par les sociétés holding, auprès des établissements financiers installés à l'étranger, ou auprès des actionnaires et associés desdites sociétés et destinées au financement de l'acquisition ou de la souscription de titres de participation, sont exonérés de la retenue à la source visée à l'article 185 ter du présent Code."
       ],
       "mots_cles": [
-        "exonération",
-        "retenue à la source",
+        "exonération retenue à la source",
         "intérêts emprunts",
         "holdings",
-        "art. 185"
+        "établissements financiers étranger",
+        "actionnaires associés",
+        "financement acquisition titres",
+        "article 185"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90D",
+      "article": "Art. 90-D",
       "titre": "Imposition des dividendes distribués par les holdings",
       "texte": [
         "La distribution de dividendes par les sociétés holding à leurs associés ou actionnaires est soumise à l'impôt sur le revenu des valeurs mobilières au taux égal à la moitié du taux de droit commun."
@@ -2508,22 +2745,23 @@
         "dividendes",
         "holdings",
         "IRCM",
-        "taux réduit",
-        "moitié"
+        "taux réduit moitié droit commun",
+        "distribution associés actionnaires",
+        "impôt revenu valeurs mobilières"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
     },
     {
-      "article": "Art. 90E",
+      "article": "Art. 90-E",
       "titre": "Obligations de droit commun",
       "texte": [
         "Hormis les dispositions qui précèdent, les sociétés holding sont soumises aux obligations de droit commun prévues par le présent code."
       ],
       "mots_cles": [
         "holdings",
-        "droit commun",
-        "obligations"
+        "obligations droit commun",
+        "dispositions générales"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 4 : Régime fiscal des holdings"
@@ -2560,7 +2798,12 @@
         "95%",
         "société mère",
         "5 exercices",
-        "résultat d'ensemble"
+        "résultat d'ensemble",
+        "option d'intégration",
+        "tacite reconduction",
+        "dénonciation 3 mois",
+        "liste sociétés membres",
+        "accord express"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2584,7 +2827,7 @@
       "titre": "a) La qualité de redevable unique de la société intégrante"
     },
     {
-      "article": "Art. 91A",
+      "article": "Art. 91-A",
       "titre": "Qualité de redevable unique de la société intégrante",
       "texte": [
         "Seule la société mère d'un groupe est redevable de l'impôt sur le revenu pour le compte du groupe.",
@@ -2593,13 +2836,15 @@
       "mots_cles": [
         "redevable unique",
         "société mère",
-        "résultat d'ensemble"
+        "résultat d'ensemble",
+        "déclaration résultats",
+        "impôts correspondants"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91B",
+      "article": "Art. 91-B",
       "titre": "Solidarité de paiement et obligations déclaratives",
       "texte": [
         "Chaque société intégrée du groupe est tenue solidairement au paiement de l'impôt sur les sociétés, le cas échéant, des pénalités de retard, majorations et amendes fiscales correspondantes, dont la société mère est redevable, à hauteur de l'impôt et des pénalités qui seraient dus par la société si celle-ci n'était pas membre du groupe.",
@@ -2610,7 +2855,10 @@
         "solidarité",
         "paiement",
         "pénalités",
-        "conventions d'intégration"
+        "conventions d'intégration",
+        "personnalité juridique",
+        "personnalité fiscale",
+        "déclarations de résultats"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2625,7 +2873,7 @@
       "annee_application": 2026
     },
     {
-      "article": "Art. 91C",
+      "article": "Art. 91-C",
       "titre": "Détermination du résultat d'ensemble et retraitements",
       "texte": [
         "Pour déterminer le résultat, chaque société du groupe y compris la société mère établit la déclaration de ses propres résultats dans les conditions de droit commun.",
@@ -2637,13 +2885,15 @@
         "résultat d'ensemble",
         "retraitements",
         "doubles impositions",
+        "doubles déductions",
+        "déficit reportable",
         "clôture exercice"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91D",
+      "article": "Art. 91-D",
       "titre": "Déficits et provisions intragroupe",
       "texte": [
         "Si une société de groupe est déficitaire, le déficit est reporté sur le résultat d'ensemble pour une période de trois ans à hauteur d'un tiers (1/3) par an.",
@@ -2657,13 +2907,15 @@
         "3 ans",
         "1/3 par an",
         "provisions",
-        "dépréciation titres"
+        "dépréciation titres",
+        "créances douteuses",
+        "provisions pour risques"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91E",
+      "article": "Art. 91-E",
       "titre": "Neutralisation des aides intragroupe",
       "texte": [
         "Les abandons de créances et les subventions entre sociétés du groupe ne sont pas pris en compte pour la détermination du résultat d'ensemble.",
@@ -2675,13 +2927,16 @@
         "neutralisation",
         "abandons de créances",
         "subventions intragroupe",
-        "état de suivi"
+        "état de suivi",
+        "amendes pénalités",
+        "cession hors groupe",
+        "sortie du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91F",
+      "article": "Art. 91-F",
       "titre": "Plus-values et moins-values extra-groupe",
       "texte": [
         "Les plus-values à prendre en compte sont celles réalisées à l'occasion des cessions extra groupe.",
@@ -2691,13 +2946,15 @@
         "plus-values",
         "moins-values",
         "extra-groupe",
-        "réserve spéciale"
+        "réserve spéciale",
+        "société cédante",
+        "plus-value nette"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91G",
+      "article": "Art. 91-G",
       "titre": "Imputation des crédits d'impôt",
       "texte": [
         "Sur autorisation du directeur général des impôts et des domaines, la société mère peut imputer les crédits d'impôt dont bénéficient les membres du groupe sur l'impôt dont elle est redevable."
@@ -2711,7 +2968,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91H",
+      "article": "Art. 91-H",
       "titre": "Déficits antérieurs à l'entrée dans le groupe",
       "texte": [
         "La société mère ne peut pas imputer les déficits des membres du groupe sur les résultats dudit groupe pour les exercices antérieurs à leur entrée dans le groupe.",
@@ -2729,7 +2986,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
     },
     {
-      "article": "Art. 91I",
+      "article": "Art. 91-I",
       "titre": "Dissolution du groupe et sortie d'un membre",
       "texte": [
         "La dissolution du groupe ne peut intervenir qu'à l'issue du délai de 5 ans.",
@@ -2740,7 +2997,9 @@
         "dissolution groupe",
         "sortie membre",
         "5 ans",
-        "remise en cause rétroactive"
+        "remise en cause rétroactive",
+        "déclaration préalable",
+        "cession abaissement taux"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2770,13 +3029,17 @@
         "intermittence",
         "précarité",
         "cautionnement bancaire",
-        "déclaration d'existence"
+        "déclaration d'existence",
+        "autorisation temporaire exercer",
+        "ATE",
+        "cessation activités",
+        "déclaration liquidation"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92A",
+      "article": "Art. 92-A",
       "titre": "Assiette forfaitaire et exclusions de la base",
       "texte": [
         "1. L'impôt sur les sociétés des personnes morales étrangères définies à l'article 92 est assis sur la base d'un pourcentage forfaitaire du chiffre d'affaires hors taxes réalisé dans la République du Congo.",
@@ -2824,7 +3087,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92B",
+      "article": "Art. 92-B",
       "titre": "Paiement, retenue à la source et ATE",
       "texte": [
         "1) L'impôt sur les sociétés (IS) est payé spontanément et sans émission préalable de rôle sur les bénéfices ou la base imposable telle que définie ci-dessus par la société sous-traitante pétrolière.",
@@ -2847,13 +3110,15 @@
         "6 mois",
         "5,75%",
         "zone d'unification Angola",
-        "représentation légale"
+        "représentation légale",
+        "paiement spontané",
+        "facturation 30 jours"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92C",
+      "article": "Art. 92-C",
       "titre": "Taux de l'IS personnes morales étrangères",
       "texte": [
         "Le taux de l'impôt sur les sociétés est fixé à l'article 86 A du présent code."
@@ -2866,7 +3131,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92D",
+      "article": "Art. 92-D",
       "titre": "Modalités déclaratives de paiement",
       "texte": [
         "1) Le paiement s'effectue par liasse unique reprenant par fournisseur les données ci-après :",
@@ -2885,7 +3150,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92E",
+      "article": "Art. 92-E",
       "titre": "Sanctions personnes morales étrangères",
       "texte": [
         "Le défaut de déclaration par un contribuable des factures émises, ainsi que l'inexactitude ou l'insuffisance de déclaration sont sanctionnés par une amende fiscale de 100.000 francs par élément omis ou incomplet.",
@@ -2900,13 +3165,15 @@
         "100.000 FCFA",
         "100%",
         "1% par jour",
-        "500.000 FCFA"
+        "500.000 FCFA",
+        "mise en demeure 8 jours",
+        "intérêt de retard"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92F",
+      "article": "Art. 92-F",
       "titre": "Mentions obligatoires sur factures",
       "texte": [
         "Pour les prestations imposables, la personne morale étrangère passible de l'impôt, devra porter obligatoirement sur ses factures les mentions :",
@@ -2919,13 +3186,14 @@
         "mentions obligatoires",
         "factures",
         "prestation imposable",
-        "retenue à la source"
+        "retenue à la source",
+        "prestation non imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92G",
+      "article": "Art. 92-G",
       "titre": "Quitus fiscal de sortie du territoire",
       "texte": [
         "L'autorisation de quitter le territoire congolais, pour les personnes morales étrangères, est subordonnée à la présentation d'un quitus fiscal délivré par :",
@@ -2943,7 +3211,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92H",
+      "article": "Art. 92-H",
       "titre": "Demande de quitus et certificat d'imposition",
       "texte": [
         "La demande d'obtention du quitus fiscal et du certificat d'imposition doit être respectivement adressée au directeur général des impôts et des domaines et à l'inspecteur divisionnaire de la résidence fiscale du requérant.",
@@ -2960,7 +3228,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92I",
+      "article": "Art. 92-I",
       "titre": "Enregistrement des contrats pétroliers et obligations déclaratives",
       "texte": [
         "1. Les contrats des sociétés pétrolières avec les personnes morales étrangères (contracteurs) et avec les sous-traitants pétroliers doivent être enregistrés moyennant un droit fixe de 1.000.000 FCFA avant leur exécution.",
@@ -2996,13 +3264,17 @@
         "1.000.000 FCFA",
         "1%",
         "sous-traitants",
-        "déclaration trimestrielle"
+        "déclaration trimestrielle",
+        "bons de commande",
+        "opérateurs pétroliers",
+        "déclaration mensuelle",
+        "3 000 000 FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92J",
+      "article": "Art. 92-J",
       "titre": "Régime dérogatoire lié à l'activité pétrolière",
       "texte": [
         "1) Toutes les personnes morales ayant leur siège social au Congo, ou celles qui exercent au Congo une activité industrielle, commerciale, artisanale, agricole ou prestations de service, par dérogation de l'article 4 du CGI tome 1 et qui sont liées aux sociétés de recherche, de production et d'exploitation pétrolières installées ou opérant au Congo, sont imposées au Congo selon les dispositions des articles 92A à 92I du présent code quel que soit le lieu d'exécution du contrat.",
@@ -3041,7 +3313,7 @@
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
     },
     {
-      "article": "Art. 92K",
+      "article": "Art. 92-K",
       "titre": "Revenus accessoires des sous-traitants pétroliers",
       "texte": [
         "Les revenus accessoires à l'activité principale des sociétés sous-traitantes pétrolières, réalisés à l'occasion de la gestion commerciale desdits sociétés, par livraison de biens et/ou de prestation de services, relèvent de la taxation spécifique édictée par les articles 92 et suivants du Code Général des Impôts."

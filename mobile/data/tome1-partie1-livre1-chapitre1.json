@@ -1526,7 +1526,7 @@
         "amortissements différés",
         "période déficitaire",
         "tableau des amortissements",
-        "non-déductibilité"
+        "non déductibilité"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §11 Amortissements"
@@ -1866,7 +1866,6 @@
         "portefeuille",
         "bilan",
         "valeur d'origine",
-        "évaluation",
         "titres de participation",
         "titres de placement",
         "bourse",
@@ -2788,7 +2787,12 @@
         "95%",
         "société mère",
         "5 exercices",
-        "résultat d'ensemble"
+        "résultat d'ensemble",
+        "option d'intégration",
+        "tacite reconduction",
+        "dénonciation 3 mois",
+        "liste sociétés membres",
+        "accord express"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2821,7 +2825,9 @@
       "mots_cles": [
         "redevable unique",
         "société mère",
-        "résultat d'ensemble"
+        "résultat d'ensemble",
+        "déclaration résultats",
+        "impôts correspondants"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2838,7 +2844,10 @@
         "solidarité",
         "paiement",
         "pénalités",
-        "conventions d'intégration"
+        "conventions d'intégration",
+        "personnalité juridique",
+        "personnalité fiscale",
+        "déclarations de résultats"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2865,6 +2874,8 @@
         "résultat d'ensemble",
         "retraitements",
         "doubles impositions",
+        "doubles déductions",
+        "déficit reportable",
         "clôture exercice"
       ],
       "statut": "en vigueur",
@@ -2885,7 +2896,9 @@
         "3 ans",
         "1/3 par an",
         "provisions",
-        "dépréciation titres"
+        "dépréciation titres",
+        "créances douteuses",
+        "provisions pour risques"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2903,7 +2916,10 @@
         "neutralisation",
         "abandons de créances",
         "subventions intragroupe",
-        "état de suivi"
+        "état de suivi",
+        "amendes pénalités",
+        "cession hors groupe",
+        "sortie du groupe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2919,7 +2935,9 @@
         "plus-values",
         "moins-values",
         "extra-groupe",
-        "réserve spéciale"
+        "réserve spéciale",
+        "société cédante",
+        "plus-value nette"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2968,7 +2986,9 @@
         "dissolution groupe",
         "sortie membre",
         "5 ans",
-        "remise en cause rétroactive"
+        "remise en cause rétroactive",
+        "déclaration préalable",
+        "cession abaissement taux"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 5 : Régime d'intégration fiscale des groupes de sociétés"
@@ -2998,7 +3018,11 @@
         "intermittence",
         "précarité",
         "cautionnement bancaire",
-        "déclaration d'existence"
+        "déclaration d'existence",
+        "autorisation temporaire exercer",
+        "ATE",
+        "cessation activités",
+        "déclaration liquidation"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
@@ -3075,7 +3099,9 @@
         "6 mois",
         "5,75%",
         "zone d'unification Angola",
-        "représentation légale"
+        "représentation légale",
+        "paiement spontané",
+        "facturation 30 jours"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
@@ -3128,7 +3154,9 @@
         "100.000 FCFA",
         "100%",
         "1% par jour",
-        "500.000 FCFA"
+        "500.000 FCFA",
+        "mise en demeure 8 jours",
+        "intérêt de retard"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
@@ -3147,7 +3175,8 @@
         "mentions obligatoires",
         "factures",
         "prestation imposable",
-        "retenue à la source"
+        "retenue à la source",
+        "prestation non imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
@@ -3224,7 +3253,11 @@
         "1.000.000 FCFA",
         "1%",
         "sous-traitants",
-        "déclaration trimestrielle"
+        "déclaration trimestrielle",
+        "bons de commande",
+        "opérateurs pétroliers",
+        "déclaration mensuelle",
+        "3 000 000 FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Régimes particuliers - Sous-section 6 : Régime des personnes morales étrangères"
