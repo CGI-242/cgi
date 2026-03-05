@@ -10,7 +10,7 @@ export default function SimulateurSection({ label }: Props) {
   const { colors } = useTheme();
   return (
     <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{label}</Text>
+      <Text style={{ fontSize: 14, fontWeight: "700", color: colors.text }}>{label}</Text>
     </View>
   );
 }

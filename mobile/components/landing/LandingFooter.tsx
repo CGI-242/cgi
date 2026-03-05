@@ -140,11 +140,11 @@ export default function LandingFooter({ isMobile }: Props) {
           <SectionTitle>Légal</SectionTitle>
           <FooterLink
             label="CGU"
-            onPress={() => Linking.openURL("/legal/cgu")}
+            onPress={() => Linking.openURL("https://cgi242.normx.ai/conditions")}
           />
           <FooterLink
             label="Politique de confidentialité"
-            onPress={() => Linking.openURL("/legal/confidentialite")}
+            onPress={() => Linking.openURL("https://cgi242.normx.ai/confidentialite")}
           />
         </View>
 

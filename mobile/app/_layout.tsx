@@ -58,12 +58,6 @@ function RootLayout() {
       // Web : titre, favicon, polices Google Fonts CDN
       document.title = "NORMX Tax";
 
-      const favicon = document.createElement("link");
-      favicon.rel = "icon";
-      favicon.type = "image/svg+xml";
-      favicon.href = "data:image/svg+xml," + encodeURIComponent('<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="16" fill="#08080d"/><path d="M62 30 A22 22 0 1 0 62 70" fill="none" stroke="#C8A03C" stroke-width="8" stroke-linecap="round"/></svg>');
-      document.head.appendChild(favicon);
-
       const fontsLink = document.createElement("link");
       fontsLink.href = GOOGLE_FONTS_URL;
       fontsLink.rel = "stylesheet";

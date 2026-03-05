@@ -19,7 +19,7 @@ export default function OptionButtonGroup<T extends string>({
   selected,
   onChange,
   direction = "row",
-  fontSize = 11,
+  fontSize = 13,
 }: Props<T>) {
   const { colors } = useTheme();
 

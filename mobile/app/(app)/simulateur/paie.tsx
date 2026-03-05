@@ -145,22 +145,22 @@ export default function PaieScreen() {
           </Text>
 
           <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.paie.description")}</Text>
+            <Text style={{ fontSize: 13, color: colors.text }}>{t("simulateur.paie.description")}</Text>
           </View>
 
           {/* Profil salarié */}
-          <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.profil")}</Text>
-          <OptionButtonGroup options={PROFILS} selected={profil} onChange={setProfil} fontSize={11} />
+          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.profil")}</Text>
+          <OptionButtonGroup options={PROFILS} selected={profil} onChange={setProfil} fontSize={13} />
 
           {/* Situation familiale (résidents uniquement) */}
           {isResident && (
             <View style={{ flexDirection: "row", gap: 10, marginBottom: 12, marginTop: 8 }}>
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.status")}</Text>
-                <OptionButtonGroup options={SITUATIONS} selected={situation} onChange={setSituation} direction="column" fontSize={12} />
+                <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.status")}</Text>
+                <OptionButtonGroup options={SITUATIONS} selected={situation} onChange={setSituation} direction="column" fontSize={13} />
               </View>
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.dependents")}</Text>
+                <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.dependents")}</Text>
                 <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
                   <TouchableOpacity style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
                     <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>-</Text>
@@ -196,7 +196,7 @@ export default function PaieScreen() {
           {/* Section Avantages en nature */}
           <SimulateurSection label={t("simulateur.paie.sectionAvantages")} />
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8, marginBottom: 8, backgroundColor: `${colors.primary}10` }}>
-            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.toggleForfaitaire")}</Text>
+            <Text style={{ fontSize: 13, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.toggleForfaitaire")}</Text>
             <Switch value={forfaitaire} onValueChange={handleToggleForfaitaire} trackColor={{ false: colors.border, true: colors.primary }} />
           </View>
           <NumberField label={t("simulateur.paie.avLogement")} value={fields.avLogement} onChange={(v) => setField("avLogement", v)} />
@@ -208,26 +208,26 @@ export default function PaieScreen() {
 
           {/* Affichage surligné du brut imposable */}
           <View style={{ marginTop: 12, padding: 14, backgroundColor: `${colors.primary}15` }}>
-            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.textSecondary }}>{t("simulateur.paie.salaireBrutImposable")}</Text>
-            <Text style={{ fontSize: 20, fontWeight: "800", color: colors.primary }}>{formatNumber(brutImposable)} FCFA</Text>
+            <Text style={{ fontSize: 14, fontWeight: "600", color: colors.textSecondary }}>{t("simulateur.paie.salaireBrutImposable")}</Text>
+            <Text style={{ fontSize: 22, fontWeight: "800", color: colors.primary }}>{formatNumber(brutImposable)} FCFA</Text>
             {totalExonere > 0 && (
-              <Text style={{ fontSize: 11, color: colors.textMuted, marginTop: 4 }}>
+              <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 4 }}>
                 {t("simulateur.paie.elementsExoneres")} : {formatNumber(totalExonere)} FCFA
               </Text>
             )}
           </View>
 
           {/* Zone TOL */}
-          <Text style={{ fontSize: 11, fontWeight: "600", color: colors.textSecondary, marginTop: 12, marginBottom: 2 }}>{t("simulateur.paie.zoneTOL")}</Text>
-          <OptionButtonGroup options={ZONES} selected={zoneTOL} onChange={setZoneTOL} fontSize={12} />
+          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginTop: 12, marginBottom: 2 }}>{t("simulateur.paie.zoneTOL")}</Text>
+          <OptionButtonGroup options={ZONES} selected={zoneTOL} onChange={setZoneTOL} fontSize={13} />
 
           {/* Taxe régionale (janvier uniquement) */}
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8, marginTop: 8, backgroundColor: `${colors.primary}10` }}>
-            <Text style={{ fontSize: 12, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.moisJanvier")}</Text>
+            <Text style={{ fontSize: 13, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.moisJanvier")}</Text>
             <Switch value={moisJanvier} onValueChange={setMoisJanvier} trackColor={{ false: colors.border, true: colors.primary }} />
           </View>
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.paie.legalRef")}</Text>
+          <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.paie.legalRef")}</Text>
         </ScrollView>
 
         {/* --- COLONNE DROITE : Résultats --- */}

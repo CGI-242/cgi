@@ -12,13 +12,13 @@ type ThemeContextType = {
 };
 
 const ThemeContext = createContext<ThemeContextType>({
-  mode: "light",
-  colors: lightColors,
+  mode: "dark",
+  colors: darkColors,
   toggleTheme: () => {},
   setTheme: () => {},
 });
 
-const STORAGE_KEY = "cgi242_theme";
+const STORAGE_KEY = "cgi242_theme_v2";
 
 async function loadTheme(): Promise<ThemeMode | null> {
   try {
@@ -46,7 +46,7 @@ async function saveTheme(mode: ThemeMode): Promise<void> {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setModeState] = useState<ThemeMode>("light");
+  const [mode, setModeState] = useState<ThemeMode>("dark");
 
   useEffect(() => {
     loadTheme().then((saved) => {
