@@ -18,6 +18,21 @@ type Props = {
 
 type SpeechState = "idle" | "playing" | "paused";
 
+// Nettoyer le texte pour la lecture vocale
+function cleanForSpeech(text: string): string {
+  return text
+    .replace(/\bLF\s*\d{4}\b/gi, "")
+    .replace(/\bCGI\s*\d{4}\b/gi, "")
+    .replace(/^\(\s*[ivxlcdm]+\s*\)\s*/i, "")
+    .replace(/^\d+°\s*/, "")
+    .replace(/^\d+[\.\)]\s*/, "")
+    .replace(/^[a-z]\)\s*/i, "")
+    .replace(/^\d+[A-Z]?\.\d+\.\s*/, "")
+    .replace(/^\d+-\s*/, "")
+    .replace(/^[-•○]\s*/, "")
+    .trim();
+}
+
 function useSpeech(article: ArticleData) {
   const [speechState, setSpeechState] = useState<SpeechState>("idle");
   const [currentLineIndex, setCurrentLineIndex] = useState<number | undefined>(undefined);
@@ -29,31 +44,33 @@ function useSpeech(article: ArticleData) {
     [article.texte]
   );
 
-  // Utiliser useRef pour éviter les closures périmées dans onDone
+  // Assignation synchrone — toujours à jour, pas de useEffect
   const speakLineRef = useRef<(idx: number) => void>(() => {});
-
-  useEffect(() => {
-    speakLineRef.current = (idx: number) => {
-      if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+  speakLineRef.current = (idx: number) => {
+    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+      setSpeechState("idle");
+      setCurrentLineIndex(undefined);
+      return;
+    }
+    const lineIndex = nonEmptyIndices[idx];
+    currentNonEmptyIdx.current = idx;
+    setCurrentLineIndex(lineIndex);
+    const cleaned = cleanForSpeech(article.texte[lineIndex]);
+    if (!cleaned) {
+      speakLineRef.current(idx + 1);
+      return;
+    }
+    Speech.speak(cleaned, {
+      language: "fr-FR",
+      rate: 0.9,
+      onDone: () => speakLineRef.current(idx + 1),
+      onStopped: () => {},
+      onError: () => {
         setSpeechState("idle");
         setCurrentLineIndex(undefined);
-        return;
-      }
-      const lineIndex = nonEmptyIndices[idx];
-      currentNonEmptyIdx.current = idx;
-      setCurrentLineIndex(lineIndex);
-      Speech.speak(article.texte[lineIndex], {
-        language: "fr-FR",
-        rate: 0.9,
-        onDone: () => speakLineRef.current(idx + 1),
-        onStopped: () => {},
-        onError: () => {
-          setSpeechState("idle");
-          setCurrentLineIndex(undefined);
-        },
-      });
-    };
-  }, [article.texte, nonEmptyIndices]);
+      },
+    });
+  };
 
   const play = useCallback(() => {
     stoppedRef.current = false;

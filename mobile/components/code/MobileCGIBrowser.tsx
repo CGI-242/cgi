@@ -121,6 +121,22 @@ function NodeListView({ nodes, onSelect, title }: {
 // ── Lecteur audio pour article (ligne par ligne) ──
 type SpeechState = "idle" | "playing" | "paused";
 
+// Nettoyer le texte pour la lecture vocale : supprimer marqueurs structurels
+function cleanForSpeech(text: string): string {
+  return text
+    .replace(/\bLF\s*\d{4}\b/gi, "")              // LF 2026
+    .replace(/\bCGI\s*\d{4}\b/gi, "")              // CGI 2026
+    .replace(/^\(\s*[ivxlcdm]+\s*\)\s*/i, "")      // (i), (ii), (iv)
+    .replace(/^\d+°\s*/, "")                        // 1°, 2°
+    .replace(/^\d+[\.\)]\s*/, "")                   // 1), 2., 3)
+    .replace(/^[a-z]\)\s*/i, "")                    // a), b)
+    .replace(/^\d+[A-Z]?\.\d+\.\s*/, "")           // 1.2., 1A.3.
+    .replace(/^\d+-\s*/, "")                        // 1-, 2-
+    .replace(/^[-•○]\s*/, "")                       // -, •, ○
+    .replace(/\bArt\.\s*\d+[A-Z]?\b/g, "article $&".replace("Art.", "")) // Art. 105 → article 105
+    .trim();
+}
+
 function AudioPlayer({ lines, colors, onLineChange }: {
   lines: string[];
   colors: any;
@@ -128,6 +144,7 @@ function AudioPlayer({ lines, colors, onLineChange }: {
 }) {
   const { t } = useTranslation();
   const [speechState, setSpeechState] = useState<SpeechState>("idle");
+  const [highlightIdx, setHighlightIdx] = useState<number | undefined>(undefined);
   const currentIndexRef = useRef(0);
   const stoppedRef = useRef(false);
   const totalLines = lines.filter((l) => l.length > 0).length;
@@ -137,33 +154,37 @@ function AudioPlayer({ lines, colors, onLineChange }: {
     [lines]
   );
 
-  // Utiliser useRef pour éviter les closures périmées dans onDone
+  // Assignation directe (synchrone) — pas de useEffect
   const speakLineRef = useRef<(idx: number) => void>(() => {});
-  const onLineChangeRef = useRef(onLineChange);
-  onLineChangeRef.current = onLineChange;
-
-  useEffect(() => {
-    speakLineRef.current = (idx: number) => {
-      if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+  speakLineRef.current = (idx: number) => {
+    if (stoppedRef.current || idx >= nonEmptyIndices.length) {
+      setSpeechState("idle");
+      setHighlightIdx(undefined);
+      onLineChange(undefined);
+      return;
+    }
+    const lineIndex = nonEmptyIndices[idx];
+    currentIndexRef.current = idx;
+    setHighlightIdx(lineIndex);
+    onLineChange(lineIndex);
+    const cleaned = cleanForSpeech(lines[lineIndex]);
+    if (!cleaned) {
+      // Ligne vide après nettoyage, passer à la suivante
+      speakLineRef.current(idx + 1);
+      return;
+    }
+    Speech.speak(cleaned, {
+      language: "fr-FR",
+      rate: 0.9,
+      onDone: () => speakLineRef.current(idx + 1),
+      onStopped: () => {},
+      onError: () => {
         setSpeechState("idle");
-        onLineChangeRef.current(undefined);
-        return;
-      }
-      const lineIndex = nonEmptyIndices[idx];
-      currentIndexRef.current = idx;
-      onLineChangeRef.current(lineIndex);
-      Speech.speak(lines[lineIndex], {
-        language: "fr-FR",
-        rate: 0.9,
-        onDone: () => speakLineRef.current(idx + 1),
-        onStopped: () => {},
-        onError: () => {
-          setSpeechState("idle");
-          onLineChangeRef.current(undefined);
-        },
-      });
-    };
-  }, [lines, nonEmptyIndices]);
+        setHighlightIdx(undefined);
+        onLineChange(undefined);
+      },
+    });
+  };
 
   const play = useCallback(() => {
     stoppedRef.current = false;
@@ -188,8 +209,9 @@ function AudioPlayer({ lines, colors, onLineChange }: {
     Speech.stop();
     setSpeechState("idle");
     currentIndexRef.current = 0;
-    onLineChangeRef.current(undefined);
-  }, []);
+    setHighlightIdx(undefined);
+    onLineChange(undefined);
+  }, [onLineChange]);
 
   useEffect(() => {
     return () => {
