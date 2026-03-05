@@ -46,6 +46,7 @@ function ThemedStack() {
     >
       <Stack.Screen name="(auth)" options={{ title: "NORMX Tax" }} />
       <Stack.Screen name="(app)" options={{ title: "NORMX Tax" }} />
+      <Stack.Screen name="legal" options={{ title: "NORMX Tax" }} />
     </Stack>
   );
 }
