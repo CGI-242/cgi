@@ -9,9 +9,7 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
 
-const LEGAL_URLS = {
-  aide: "mailto:contact@normx.ai?subject=Aide%20CGI242",
-};
+const CONTACT_EMAIL = "mailto:contact@normx-ai.com?subject=Aide%20CGI242";
 
 export default function LoginEmail() {
   const { t } = useTranslation();
@@ -116,7 +114,7 @@ export default function LoginEmail() {
           <TouchableOpacity onPress={toggleTheme} style={{ padding: 6 }} accessibilityLabel={t("auth.toggleTheme")} accessibilityRole="button">
             <Ionicons name={mode === "dark" ? "sunny-outline" : "moon-outline"} size={18} color={colors.textMuted} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.aide)}>
+          <TouchableOpacity onPress={() => Linking.openURL(CONTACT_EMAIL)}>
             <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => router.push("/legal/confidentialite" as Href)}>

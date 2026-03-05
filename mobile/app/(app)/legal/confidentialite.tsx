@@ -108,7 +108,7 @@ export default function ConfidentialiteScreen() {
             }}
           >
             Le responsable du traitement des données personnelles collectées via l'application CGI 242 est NORMX AI, éditeur de CGI 242, dont le siège social est situé au 5 rue Benjamin Raspail, Creil.{"\n\n"}
-            Pour toute question relative à la protection de vos données, vous pouvez contacter notre responsable des données à l'adresse : contact@normx.ai
+            Pour toute question relative à la protection de vos données, vous pouvez contacter notre responsable des données à l'adresse : contact@normx-ai.com
           </Text>
 
           <Text
@@ -323,7 +323,7 @@ export default function ConfidentialiteScreen() {
             — Droit à la limitation du traitement{"\n"}
             — Droit à la portabilité de vos données{"\n"}
             — Droit d'opposition au traitement{"\n\n"}
-            Pour exercer ces droits, contactez-nous par email à contact@normx.ai. Nous nous engageons à répondre dans un délai de 30 jours.
+            Pour exercer ces droits, contactez-nous par email à contact@normx-ai.com. Nous nous engageons à répondre dans un délai de 30 jours.
           </Text>
 
           <Text
@@ -396,7 +396,7 @@ export default function ConfidentialiteScreen() {
             }}
           >
             Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez NORMX AI :{"\n\n"}
-            Email : contact@normx.ai{"\n"}
+            Email : contact@normx-ai.com{"\n"}
             Siège : 5 rue Benjamin Raspail, Creil
           </Text>
         </View>

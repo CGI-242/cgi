@@ -48,7 +48,7 @@ export default function LandingContact({ isMobile }: Props) {
       >
         {/* Email */}
         <TouchableOpacity
-          onPress={() => Linking.openURL("mailto:contact@normx.ai")}
+          onPress={() => Linking.openURL("mailto:contact@normx-ai.com")}
           activeOpacity={0.7}
           style={{
             flex: isMobile ? undefined : 1,
@@ -92,7 +92,7 @@ export default function LandingContact({ isMobile }: Props) {
               color: GOLD,
             }}
           >
-            contact@normx.ai
+            contact@normx-ai.com
           </Text>
         </TouchableOpacity>
 

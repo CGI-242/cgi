@@ -235,7 +235,7 @@ export default function CGUScreen() {
             }}
           >
             Les informations fournies par l'application, y compris les réponses de l'assistant IA et les résultats des simulateurs, ont un caractère informatif et ne sauraient se substituer à un conseil fiscal professionnel. NORMX AI ne saurait être tenu responsable des décisions prises sur la base de ces informations.{"\n\n"}
-            Pour toute question relative à l'utilisation du service, vous pouvez contacter NORMX AI à l'adresse : contact@normx.ai
+            Pour toute question relative à l'utilisation du service, vous pouvez contacter NORMX AI à l'adresse : contact@normx-ai.com
           </Text>
 
           <Text

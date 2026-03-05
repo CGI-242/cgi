@@ -155,7 +155,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               marginBottom: 10,
             }}
           >
-            contact@normx.ai
+            contact@normx-ai.com
           </Text>
           <Text
             style={{
