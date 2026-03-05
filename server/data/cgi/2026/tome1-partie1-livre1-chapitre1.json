@@ -911,7 +911,9 @@
       "mots_cles": [
         "administrateurs",
         "avantages",
-        "non déductibles"
+        "non déductibles",
+        "travail effectif",
+        "résultats imposables"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -959,7 +961,10 @@
         "associés dirigeants",
         "rétributions",
         "emploi effectif",
-        "bénéfice distribué"
+        "bénéfice distribué",
+        "impôt sur les sociétés",
+        "conjoints et enfants",
+        "activité libérale"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §1 Charges de personnel et des dirigeants"
@@ -1010,7 +1015,11 @@
         "20%",
         "2%",
         "prêt de main d'œuvre",
-        "bénéfices distribués"
+        "bénéfices distribués",
+        "brevets",
+        "licences",
+        "commissions",
+        "honoraires"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1046,7 +1055,11 @@
         "droit d'auteur",
         "brevet",
         "marque",
-        "audiovisuel"
+        "audiovisuel",
+        "bien incorporel",
+        "concession",
+        "procédé secret",
+        "films cinématographiques"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1064,7 +1077,10 @@
         "courtages",
         "5%",
         "centrales d'achats",
-        "intermédiaires"
+        "intermédiaires",
+        "marchandises",
+        "facture",
+        "bénéfice imposable"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §2 Frais de siège, services, redevances et commissions"
@@ -1080,9 +1096,14 @@
       "mots_cles": [
         "loyers",
         "crédit-bail",
-        "baux",
+        "crédit-preneur",
+        "baux mobiliers",
+        "baux immobiliers",
         "10%",
-        "associé dirigeant"
+        "associé dirigeant",
+        "exploitant individuel",
+        "amortissements",
+        "charges financières"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §3 Dépenses locatives"
@@ -1117,7 +1138,10 @@
       "mots_cles": [
         "primes d'assurances",
         "risques",
-        "assurance-maladie"
+        "assurance-maladie",
+        "actif net",
+        "charge d'exploitation",
+        "compagnies d'assurance locales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §5 Primes d'assurances"
@@ -1138,7 +1162,11 @@
         "auto-assurance",
         "captives d'assurance",
         "assurance-vie",
-        "retraite complémentaire"
+        "retraite complémentaire",
+        "propre assurance",
+        "établissement stable",
+        "sociétés de groupe",
+        "quotes-parts d'employeurs"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §5 Primes d'assurances"
@@ -1166,7 +1194,13 @@
         "0,5‰",
         "0,3%",
         "sport",
-        "calamités naturelles"
+        "calamités naturelles",
+        "organismes de recherche",
+        "intérêt général",
+        "syndicats professionnels",
+        "50%",
+        "chiffre d'affaires hors taxes",
+        "catastrophes accidentelles"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §6 Libéralités, dons, subventions et aides accordés"
@@ -1196,7 +1230,19 @@
         "abandon de créances",
         "SFEC",
         "BEAC",
-        "CEMAC"
+        "CEMAC",
+        "remise de dettes",
+        "aides commerciales",
+        "aides financières",
+        "société unipersonnelle",
+        "allocations forfaitaires",
+        "loyer d'habitation",
+        "IRPP",
+        "non-résidents",
+        "facturation électronique",
+        "dirigeants",
+        "gérants",
+        "sociétés anonymes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §6 Libéralités, dons, subventions et aides accordés"
@@ -1212,7 +1258,8 @@
         "chasse",
         "pêche sportive",
         "bateaux de plaisance",
-        "avions de tourisme"
+        "avions de tourisme",
+        "résidences d'agrément"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §7 Dépenses somptuaires"
@@ -1257,7 +1304,23 @@
         "BEAC",
         "20%",
         "excédent brut d'exploitation",
-        "sous-capitalisation"
+        "sous-capitalisation",
+        "prêts",
+        "avances",
+        "taux du marché",
+        "associés",
+        "établissements financiers",
+        "appels d'offres",
+        "capital social",
+        "OHADA",
+        "report",
+        "cinq ans",
+        "compagnies d'assurance",
+        "garanties hypothécaires",
+        "valeurs mobilières",
+        "obligations",
+        "crédit-bail",
+        "pénalités"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §9 Charges financières"
@@ -1274,7 +1337,15 @@
         "établissement stable",
         "siège",
         "charges non déductibles",
-        "succursale"
+        "succursale",
+        "location mobilière",
+        "location immobilière",
+        "propriété intellectuelle",
+        "commission",
+        "activité de direction",
+        "intérêts",
+        "fonds propres",
+        "banque"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 4 : Les charges déductibles - §10 Rémunérations versées par un établissement stable"
