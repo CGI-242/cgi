@@ -1,6 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, Linking } from "react-native";
 import { useState, useCallback } from "react";
-import { router, useFocusEffect } from "expo-router";
+import { router, useFocusEffect, type Href } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -10,9 +10,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
 
 const LEGAL_URLS = {
-  aide: "https://cgi242.normx.ai/aide",
-  confidentialite: "https://cgi242.normx.ai/confidentialite",
-  conditions: "https://cgi242.normx.ai/conditions",
+  aide: "mailto:contact@normx.ai?subject=Aide%20CGI242",
 };
 
 export default function LoginEmail() {
@@ -121,10 +119,10 @@ export default function LoginEmail() {
           <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.aide)}>
             <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.confidentialite)}>
+          <TouchableOpacity onPress={() => router.push("/legal/confidentialite" as Href)}>
             <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => Linking.openURL(LEGAL_URLS.conditions)}>
+          <TouchableOpacity onPress={() => router.push("/legal/cgu" as Href)}>
             <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
           </TouchableOpacity>
         </View>

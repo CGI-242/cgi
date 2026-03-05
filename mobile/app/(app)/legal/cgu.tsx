@@ -107,7 +107,7 @@ export default function CGUScreen() {
               fontWeight: fontWeights.regular,
             }}
           >
-            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application CGI 242, éditée par NORMX AI, siège social à Brazzaville, République du Congo. CGI 242 est une plateforme numérique dédiée à la consultation du Code Général des Impôts de la République du Congo, aux simulations fiscales et à l'assistance par intelligence artificielle.
+            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application CGI 242, éditée par NORMX AI, siège social au 5 rue Benjamin Raspail, Creil. CGI 242 est une plateforme numérique dédiée à la consultation du Code Général des Impôts de la République du Congo, aux simulations fiscales et à l'assistance par intelligence artificielle.
           </Text>
 
           <Text

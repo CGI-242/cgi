@@ -107,7 +107,7 @@ export default function ConfidentialiteScreen() {
               fontWeight: fontWeights.regular,
             }}
           >
-            Le responsable du traitement des données personnelles collectées via l'application CGI 242 est NORMX AI, éditeur de CGI 242, dont le siège social est situé à Brazzaville, République du Congo.{"\n\n"}
+            Le responsable du traitement des données personnelles collectées via l'application CGI 242 est NORMX AI, éditeur de CGI 242, dont le siège social est situé au 5 rue Benjamin Raspail, Creil.{"\n\n"}
             Pour toute question relative à la protection de vos données, vous pouvez contacter notre responsable des données à l'adresse : contact@normx.ai
           </Text>
 
@@ -397,7 +397,7 @@ export default function ConfidentialiteScreen() {
           >
             Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez NORMX AI :{"\n\n"}
             Email : contact@normx.ai{"\n"}
-            Siège : Brazzaville, République du Congo
+            Siège : 5 rue Benjamin Raspail, Creil
           </Text>
         </View>
       </ScrollView>

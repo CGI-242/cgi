@@ -31,16 +31,22 @@ export default function LandingPage() {
     <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#08080d" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
       <LandingHero isMobile={isMobile} loaded={loaded} />
-      <LandingFeatures isMobile={isMobile} loaded={loaded} />
-      <LandingCountries isMobile={isMobile} loaded={loaded} />
+      <View onLayout={(e) => { sectionOffsets.current.features = e.nativeEvent.layout.y; }}>
+        <LandingFeatures isMobile={isMobile} loaded={loaded} />
+      </View>
+      <View onLayout={(e) => { sectionOffsets.current.simulateurs = e.nativeEvent.layout.y; }}>
+        <LandingCountries isMobile={isMobile} loaded={loaded} />
+      </View>
       <View onLayout={(e) => { sectionOffsets.current.tarifs = e.nativeEvent.layout.y; }}>
         <LandingPricing isMobile={isMobile} />
       </View>
       <View onLayout={(e) => { sectionOffsets.current.contact = e.nativeEvent.layout.y; }}>
         <LandingContact isMobile={isMobile} />
       </View>
-      <LandingCTA />
-      <LandingFooter isMobile={isMobile} />
+      <View onLayout={(e) => { sectionOffsets.current.assistant = e.nativeEvent.layout.y; }}>
+        <LandingCTA />
+      </View>
+      <LandingFooter isMobile={isMobile} onScrollTo={handleScrollTo} />
     </ScrollView>
   );
 }

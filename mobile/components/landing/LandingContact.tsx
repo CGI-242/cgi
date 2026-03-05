@@ -141,7 +141,7 @@ export default function LandingContact({ isMobile }: Props) {
               textAlign: "center",
             }}
           >
-            Brazzaville, République du Congo
+            5 rue Benjamin Raspail, Creil
           </Text>
         </View>
 

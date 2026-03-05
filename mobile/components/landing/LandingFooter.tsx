@@ -1,14 +1,15 @@
-import { View, Text, Linking, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+import { router } from "expo-router";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
 const BG = "#0a0a12";
 const TITLE_COLOR = "#e8e6e1";
 const LINK_COLOR = "#5a5a65";
-const LINK_HOVER = "#8a8a95";
 
 interface Props {
   isMobile: boolean;
+  onScrollTo?: (section: string) => void;
 }
 
 function FooterLink({ label, onPress }: { label: string; onPress: () => void }) {
@@ -47,14 +48,7 @@ function SectionTitle({ children }: { children: string }) {
   );
 }
 
-export default function LandingFooter({ isMobile }: Props) {
-  const scrollToSection = (id: string) => {
-    if (typeof document !== "undefined") {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export default function LandingFooter({ isMobile, onScrollTo }: Props) {
   return (
     <View
       style={{
@@ -77,7 +71,7 @@ export default function LandingFooter({ isMobile }: Props) {
         }}
       >
         {/* Colonne 1 — Marque */}
-        <View style={{ flex: isMobile ? undefined : 1.3, marginBottom: isMobile ? 0 : 0 }}>
+        <View style={{ flex: isMobile ? undefined : 1.3 }}>
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
             <View
               style={{
@@ -129,10 +123,10 @@ export default function LandingFooter({ isMobile }: Props) {
         {/* Colonne 2 — Produit */}
         <View style={{ flex: isMobile ? undefined : 1 }}>
           <SectionTitle>Produit</SectionTitle>
-          <FooterLink label="Fonctionnalités" onPress={() => scrollToSection("features")} />
-          <FooterLink label="Simulateurs" onPress={() => scrollToSection("simulateurs")} />
-          <FooterLink label="Assistant IA" onPress={() => scrollToSection("assistant")} />
-          <FooterLink label="Tarifs" onPress={() => scrollToSection("tarifs")} />
+          <FooterLink label="Fonctionnalités" onPress={() => onScrollTo?.("features")} />
+          <FooterLink label="Simulateurs" onPress={() => onScrollTo?.("simulateurs")} />
+          <FooterLink label="Assistant IA" onPress={() => onScrollTo?.("assistant")} />
+          <FooterLink label="Tarifs" onPress={() => onScrollTo?.("tarifs")} />
         </View>
 
         {/* Colonne 3 — Légal */}
@@ -140,33 +134,29 @@ export default function LandingFooter({ isMobile }: Props) {
           <SectionTitle>Légal</SectionTitle>
           <FooterLink
             label="CGU"
-            onPress={() => Linking.openURL("https://cgi242.normx.ai/conditions")}
+            onPress={() => router.push("/legal/cgu")}
           />
           <FooterLink
             label="Politique de confidentialité"
-            onPress={() => Linking.openURL("https://cgi242.normx.ai/confidentialite")}
+            onPress={() => router.push("/legal/confidentialite")}
           />
         </View>
 
         {/* Colonne 4 — Contact */}
         <View style={{ flex: isMobile ? undefined : 1 }}>
           <SectionTitle>Contact</SectionTitle>
-          <TouchableOpacity
-            onPress={() => Linking.openURL("mailto:contact@normx.ai")}
-            style={{ marginBottom: 10 }}
+          <Text
+            style={{
+              fontFamily: fonts.regular,
+              fontWeight: fontWeights.regular,
+              fontSize: 13,
+              color: GOLD,
+              lineHeight: 20,
+              marginBottom: 10,
+            }}
           >
-            <Text
-              style={{
-                fontFamily: fonts.regular,
-                fontWeight: fontWeights.regular,
-                fontSize: 13,
-                color: GOLD,
-                lineHeight: 20,
-              }}
-            >
-              contact@normx.ai
-            </Text>
-          </TouchableOpacity>
+            contact@normx.ai
+          </Text>
           <Text
             style={{
               fontFamily: fonts.regular,
@@ -176,7 +166,7 @@ export default function LandingFooter({ isMobile }: Props) {
               lineHeight: 20,
             }}
           >
-            Brazzaville, Congo
+            5 rue Benjamin Raspail, Creil
           </Text>
         </View>
       </View>
@@ -194,7 +184,7 @@ export default function LandingFooter({ isMobile }: Props) {
           paddingVertical: 20,
           flexDirection: isMobile ? "column" : "row",
           justifyContent: "space-between",
-          alignItems: isMobile ? "center" : "center",
+          alignItems: "center",
           gap: isMobile ? 8 : 0,
         }}
       >
