@@ -78,7 +78,11 @@
         "SNC",
         "SCS",
         "sociétés en participation",
-        "syndicats financiers"
+        "syndicats financiers",
+        "option irrévocable",
+        "30 octobre",
+        "commanditaires",
+        "sociétés unipersonnelles"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Champ d'application - Sous-section 1 : Personnes imposables"
@@ -89,7 +93,7 @@
       "texte": [
         "Sont exonérées de l'impôt sur les sociétés :",
         "",
-        "1. la Banque des États de l'Afrique Centrale (BEAC) et la Banque de Développement des États de l'Afrique Centrale (BDEAC), dans le respect des accords communautaires relatifs à ces institutions ;",
+        "1. la BEAC et la BDEAC, dans le respect des accords communautaires relatifs à ces institutions ;",
         "2. les sociétés coopératives de production, de transformation, de conservation et de vente de produits agricoles, ainsi que leurs unions, à condition que ces sociétés fonctionnent conformément aux dispositions qui les régissent et qu'elles revêtent la forme civile ;",
         "3. les caisses de crédit agricole mutuel ;",
         "4. les bénéfices réalisés par les associations sans but lucratif organisant, avec le concours des communes ou des organismes publics locaux, des foires, des expositions, réunions sportives et autres manifestations publiques correspondant à l'objet défini par leurs statuts et présentant un intérêt économique ou social certain ;",
@@ -100,13 +104,13 @@
         "9. les centres de gestion agréés ;",
         "10. les bénéfices réalisés par les entreprises d'exploitation agricole au sens large (agriculture, pêche continentale, élevage).",
         "",
-        "Les membres des groupements visés aux alinéas 7 à 10 ci-dessus sont personnellement imposables en proportion de leurs droits soit à l'impôt sur le bénéfice des affaires, s'il s'agit de personnes physiques, soit à l'impôt sur les sociétés, s'il s'agit de personnes morales relevant de cet impôt.",
+        "Les membres des groupements visés aux alinéas 7 à 10 ci-dessus sont personnellement imposables en proportion de leurs droits soit à l'impôt sur le bénéfice d'affaires, s'il s'agit de personnes physiques, soit à l'impôt sur les sociétés, s'il s'agit de personnes morales relevant de cet impôt.",
         "",
         "En dehors des avantages fiscaux contenus dans la charte des investissements, il ne peut être accordé une autre exonération d'impôt sur les sociétés par l'État.",
         "",
-        "Toute exonération non conforme aux dispositions du présent code est assimilée à une aide publique interdite.",
+        "Toute exonération non conforme aux dispositions du présent Code est assimilée à une aide publique interdite.",
         "",
-        "A compter du 1er janvier 2026, les exonérations conventionnelles d'impôt sur les sociétés autres que celles prévues par la charte des investissements ne peuvent être octroyées ni renouvelées. Il sera procédé à la renégociation de toutes les conventions prévoyant des exonérations d'impôt sur les sociétés."
+        "À compter du 1er janvier 2026, les exonérations conventionnelles d'impôt sur les sociétés autres que celles prévues par la charte des investissements ne peuvent être octroyées ni renouvelées. Il sera procédé à la renégociation de toutes les conventions prévoyant des exonérations d'impôt sur les sociétés."
       ],
       "mots_cles": [
         "exonérations IS",
@@ -122,7 +126,12 @@
         "centres de gestion agréés",
         "exploitation agricole",
         "aide publique interdite",
-        "suppression exonérations conventionnelles"
+        "suppression exonérations conventionnelles",
+        "charte des investissements",
+        "1er janvier 2026",
+        "développement rural",
+        "pêche continentale",
+        "élevage"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Champ d'application - Sous-section 2 : Exonérations et crédits d'impôts"
@@ -134,13 +143,13 @@
         "Le crédit d'impôt sur les sociétés pour investissement est établi comme mesure incitative visant à soutenir le développement d'un secteur ou d'une région économique jugés stratégiques.",
         "",
         "Le crédit d'impôt pour investissement repose sur les dépenses réellement encourues pour l'acquisition auprès d'une société sans lien de dépendance de matériels, outillages et/ou bâtiments commerciaux ou industriels et ne peut excéder 15 % de ce montant.",
-        "La liste des biens dont l'acquisition donne droit à un crédit d'impôt est déterminée par la loi de finances.",
+        "La liste des biens dont l'acquisition donne droit à un crédit d'impôt est déterminée par arrêté du Ministre des finances.",
         "",
         "Ce crédit d'impôt est imputable sur l'impôt sur les sociétés dû par le contribuable au titre de l'année au cours de laquelle les dépenses d'investissement ont été réalisées.",
         "",
-        "Lorsqu'il est supérieur au montant de l'impôt sur les sociétés sur lequel il est imputable, l'excédent du crédit d'impôt pour investissement est reportable sur les cinq (5) années suivantes. L'excédent de crédit d'impôt qui n'a pas pu être imputé pendant cinq (5) ans n'est pas remboursable.",
+        "Lorsqu'il est supérieur au montant de l'impôt sur les sociétés sur lequel il est imputable, l'excédent du crédit d'impôt pour investissement est reportable sur les cinq années suivantes. L'excédent de crédit d'impôt qui n'a pas pu être imputé pendant cinq ans n'est pas remboursable.",
         "",
-        "L'introduction d'un crédit d'impôt s'accompagne d'une clause crépuscule qui prévoit le retour au droit commun au plus tard cinq (5) ans après son introduction. Tout crédit d'impôt pour investissement constitue une dépense fiscale dont l'impact budgétaire et l'efficacité économique sont évalués de façon périodique en annexe de la loi de finances.",
+        "L'introduction d'un crédit d'impôt s'accompagne d'une clause crépuscule qui prévoit le retour au droit commun au plus tard cinq ans après son introduction. Tout crédit d'impôt pour investissement constitue une dépense fiscale dont l'impact budgétaire et l'efficacité économique sont évalués de façon périodique en annexe de la loi de finances.",
         "",
         "Les modalités d'application du crédit d'impôt, notamment les investissements, secteurs d'activités et/ou départements éligibles, sont déterminées par la loi de finances."
       ],
@@ -153,6 +162,7 @@
         "non remboursable",
         "clause crépuscule",
         "dépense fiscale",
+        "arrêté du Ministre des finances",
         "loi de finances"
       ],
       "statut": "en vigueur",
@@ -168,7 +178,9 @@
         "",
         "Sont réputées exploitées au Congo :",
         "- les sociétés et autres entreprises résidentes au Congo, c'est-à-dire celles qui y sont immatriculées ou qui y ont leur lieu de direction effective ;",
-        "- les sociétés et autres entreprises non-résidentes disposant d'un établissement stable au Congo."
+        "- les sociétés et autres entreprises non-résidentes disposant d'un établissement stable au Congo.",
+        "",
+        "Les sociétés étrangères visées à l'article 92 du présent Code qui ne disposent pas d'un établissement au Congo, relèvent, pour leur imposition, de la compétence territoriale des services dans la circonscription desquels elles exercent leurs activités."
       ],
       "mots_cles": [
         "territorialité IS",
@@ -176,7 +188,10 @@
         "siège social",
         "résidence fiscale",
         "direction effective",
-        "établissement stable"
+        "établissement stable",
+        "article 92",
+        "sociétés étrangères",
+        "non-résidents"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Champ d'application - Sous-section 3 : Territorialité"
@@ -198,8 +213,8 @@
         "- une installation ou structure servant à la prospection ou l'exploitation de ressources naturelles.",
         "",
         "4A.2. Sont réputés posséder la qualité d'établissement stable :",
-        "- un chantier de construction, un projet de montage ou d'installation ou des activités de surveillance s'y exerçant lorsque ce chantier, ce projet ou ces activités ont une durée supérieure à trois (3) mois ;",
-        "- la fourniture de services, y compris les services de consultants, par une entreprise agissant par l'intermédiaire de salariés ou d'autre personnel engagé par l'entreprise à cette fin, à condition que les activités de cette nature se poursuivent pour le même projet ou un projet connexe sur le territoire du Congo pendant une ou des périodes représentant un total de plus de cent quatre-vingt-trois (183) jours dans les limites d'une période quelconque de douze mois.",
+        "- un chantier de construction, un projet de montage ou d'installation ou des activités de surveillance s'y exerçant lorsque ce chantier, ce projet ou ces activités ont une durée supérieure à trois mois ;",
+        "- la fourniture de services, y compris les services de consultants, par une entreprise agissant par l'intermédiaire de salariés ou d'autre personnel engagé par l'entreprise à cette fin, à condition que les activités de cette nature se poursuivent pour le même projet ou un projet connexe sur le territoire du Congo pendant une ou des périodes représentant un total de plus de cent quatre-vingt-trois jours dans les limites d'une période quelconque de douze mois.",
         "",
         "4A.3. Il n'y a pas établissement stable lorsque :",
         "a) il est fait usage d'installations aux seules fins de stockage ou d'exposition de marchandises appartenant à l'entreprise ;",
@@ -220,15 +235,13 @@
         "a) conclut habituellement des contrats ou joue habituellement le rôle principal menant à la conclusion de contrats qui, de façon routinière, sont conclus sans modification importante par l'entreprise, et que ces contrats sont :",
         "- au nom de l'entreprise ;",
         "- ou pour le transfert de la propriété de biens, ou pour la concession du droit d'utiliser des biens, appartenant à cette entreprise ou que l'entreprise a le droit d'utiliser ;",
-        "- ou pour la prestation de services par cette entreprise.",
-        "",
-        "à moins que les activités de cette personne ne soient limitées à celles qui sont mentionnées au paragraphe 4A.3. et qui, si elles étaient exercées par l'intermédiaire d'une installation fixe d'affaires, ne permettraient pas de considérer cette installation comme un établissement stable selon les dispositions de ce paragraphe ;",
+        "- ou pour la prestation de services par cette entreprise à moins que les activités de cette personne ne soient limitées à celles qui sont mentionnées au paragraphe 4A.3. et qui, si elles étaient exercées par l'intermédiaire d'une installation fixe d'affaires (autre qu'une installation fixe d'affaires à laquelle le paragraphe 4A.4. s'appliquerait), ne permettraient pas de considérer cette installation comme un établissement stable selon les dispositions de ce paragraphe ;",
         "",
         "b) ne conclut pas habituellement des contrats ni ne joue habituellement le rôle principal menant à la conclusion de contrats, mais maintient de manière habituelle dans cet État membre des stocks de marchandises à partir desquels cette personne livre de manière régulière des marchandises pour le compte de l'entreprise.",
         "",
         "4A.6. Nonobstant les dispositions des paragraphes 4A.1. à 4A.5., une entreprise d'assurances non-résidente dans un État membre est, sauf en matière de réassurance, considérée comme ayant un établissement stable dans cet État si elle y perçoit des primes ou assure des risques qui y sont courus par l'intermédiaire d'un employé ou d'un représentant qui n'entre pas dans la catégorie de personnes visées au paragraphe 4A.8. ci-après.",
         "",
-        "Les paragraphes 4A.5. et 4A.6. ne s'appliquent pas lorsque la personne qui agit au Congo pour le compte d'une entreprise non-résidente exerce au Congo une activité d'entreprise comme agent indépendant et agit pour l'entreprise dans le cadre ordinaire de cette activité.",
+        "Les paragraphes 4A.5. et 4A.6. précédents ne s'appliquent pas lorsque la personne qui agit au Congo pour le compte d'une entreprise non-résidente exerce au Congo une activité d'entreprise comme agent indépendant et agit pour l'entreprise dans le cadre ordinaire de cette activité.",
         "Toutefois, lorsqu'une personne agit exclusivement ou presque exclusivement pour le compte d'une ou de plusieurs entreprises auxquelles elle est étroitement liée, cette personne n'est pas considérée comme un agent indépendant au sens du présent paragraphe en ce qui concerne chacune de ces entreprises.",
         "",
         "4A.7. Le fait qu'une société qui est un résident du Congo contrôle ou soit contrôlée par une société non-résidente ne suffit pas, en lui-même, à faire de l'une quelconque de ces sociétés un établissement stable de l'autre.",
@@ -243,12 +256,20 @@
         "direction effective",
         "chantier",
         "183 jours",
+        "3 mois",
         "services",
+        "services de consultants",
         "agent dépendant",
         "agent indépendant",
         "entreprises liées",
         "contrôle",
+        "50 %",
         "assurances",
+        "réassurance",
+        "succursale",
+        "stockage",
+        "caractère préparatoire ou auxiliaire",
+        "anti-fragmentation",
         "territorialité IS"
       ],
       "statut": "en vigueur",
@@ -268,7 +289,8 @@
         "lieu d'imposition",
         "siège social",
         "direction effective",
-        "établissement stable"
+        "établissement stable",
+        "principal établissement"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Généralités - Sous-section 3 : Territorialité"
@@ -289,7 +311,11 @@
         "produits imposables",
         "charges déductibles",
         "actif net",
-        "OHADA"
+        "OHADA",
+        "suppléments d'apport",
+        "prélèvements des associés",
+        "amortissements",
+        "provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 1 : Définition"
@@ -298,17 +324,19 @@
       "article": "Art. 7",
       "titre": "Imposition des entités non-résidentes",
       "texte": [
-        "Les bénéfices des sociétés et autres entités non-résidentes disposant d'un établissement stable dans un État membre sont imposables dans cet État membre mais uniquement dans la mesure où ils sont imputables :",
+        "Les bénéfices des sociétés et autres entités non-résidentes disposant d'un établissement stable au Congo sont imposables au Congo, mais uniquement dans la mesure où ils sont imputables :",
         "- à cet établissement stable ;",
-        "- ou aux ventes, dans l'État membre, de marchandises de même nature ou de nature analogue que celles qui sont vendues par cet établissement stable ;",
-        "- ou à d'autres activités industrielles ou commerciales exercées dans l'État membre et de même nature ou de nature analogue que celles qui sont exercées par cet établissement stable."
+        "- ou aux ventes, au Congo, de marchandises de même nature ou de nature analogue que celles qui sont vendues par cet établissement stable ;",
+        "- ou à d'autres activités industrielles ou commerciales exercées au Congo et de même nature ou de nature analogue que celles qui sont exercées par cet établissement stable."
       ],
       "mots_cles": [
         "non-résidents",
         "établissement stable",
         "imposition territoriale",
+        "imposition au Congo",
         "ventes locales",
-        "activités analogues"
+        "activités analogues",
+        "marchandises"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 1 : Définition"
@@ -327,7 +355,11 @@
         "écarts de conversion",
         "devises",
         "résultat imposable",
-        "OHADA"
+        "OHADA",
+        "cours de change",
+        "créances et dettes",
+        "monnaies étrangères",
+        "clôture d'exercice"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Bénéfice imposable - Sous-section 1 : Définition"
