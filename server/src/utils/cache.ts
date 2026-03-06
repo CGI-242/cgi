@@ -1,6 +1,7 @@
 // server/src/utils/cache.ts
 // Cache in-memory Map avec TTL (remplace Redis de cgi-engine)
 
+import { createHash } from 'crypto';
 import { createLogger } from './logger';
 
 const logger = createLogger('CacheService');
@@ -116,16 +117,10 @@ class CacheService {
 export const cacheService = new CacheService();
 
 /**
- * Hash simple d'un texte pour clé de cache
+ * Hash SHA-256 d'un texte pour clé de cache (LOW-06)
  */
 export function hashText(text: string): string {
-  let hash = 0;
-  for (let i = 0; i < text.length; i++) {
-    const char = text.charCodeAt(i);
-    hash = ((hash << 5) - hash) + char;
-    hash = hash & hash;
-  }
-  return Math.abs(hash).toString(36);
+  return createHash('sha256').update(text).digest('hex');
 }
 
 export default cacheService;

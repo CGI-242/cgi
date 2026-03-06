@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
     "build:web": "EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api npx expo export --platform web",
-    "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@vps-18bd822a.vps.ovh.net:/var/www/cgi242/"
+    "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@${DEPLOY_VPS_HOST}:/var/www/cgi242/"
   },
   "dependencies": {
     "@expo-google-fonts/outfit": "^0.4.3",

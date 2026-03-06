@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+import prisma from '../utils/prisma';
 import cacheService, { CACHE_TTL, CACHE_PREFIX } from '../utils/cache';
 import { createLogger } from '../utils/logger';
 
@@ -48,7 +49,6 @@ export class TokenBlacklistService {
     cacheService.set(key, nowSec, CACHE_TTL.TOKEN_BLACKLIST);
 
     // Persister en base pour survivre aux redémarrages du serveur
-    const prisma = require('../utils/prisma').default;
     prisma.user.update({
       where: { id: userId },
       data: { tokenRevokedAt: new Date(nowSec * 1000) },
@@ -85,7 +85,6 @@ export class TokenBlacklistService {
 
     // Fallback : vérifier en base de données
     try {
-      const prisma = require('../utils/prisma').default;
       const user = await prisma.user.findUnique({
         where: { id: userId },
         select: { tokenRevokedAt: true },

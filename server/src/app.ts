@@ -24,6 +24,7 @@ import searchHistoryRoutes from "./routes/search-history.routes";
 import userStatsRoutes from "./routes/user-stats.routes";
 import notificationRoutes from "./routes/notifications.routes";
 import { startReminderCron } from "./services/reminder.service";
+import prisma from "./utils/prisma";
 import { createLogger } from "./utils/logger";
 
 const logger = createLogger("App");
@@ -42,10 +43,18 @@ if (process.env.NODE_ENV !== "production") {
   devOrigins.forEach(o => { if (!allowedOrigins.includes(o)) allowedOrigins.push(o); });
 }
 
-// Middleware sécurité
+// Middleware sécurité — CSP activé car le serveur sert aussi le SPA (LOW-09)
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" },
-  contentSecurityPolicy: false, // API REST JSON — CSP géré par le frontend
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https:"],
+      connectSrc: ["'self'", "https:"],
+    },
+  },
   referrerPolicy: { policy: "strict-origin-when-cross-origin" },
 }));
 app.use(cors({
@@ -67,13 +76,24 @@ app.use(cors({
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
+// Middleware de logging des requêtes HTTP via Winston (LOW-08)
+app.use((req, res, next) => {
+  const start = Date.now();
+  res.on("finish", () => {
+    const duration = Date.now() - start;
+    logger.info(`${req.method} ${req.originalUrl} ${res.statusCode} ${duration}ms`);
+  });
+  next();
+});
+
 // Protection CSRF (double-submit cookie) — apres cookieParser
 app.use(csrfProtection);
 
 // Rate limiting global
 app.use(globalLimiter);
 
-// Swagger UI — désactivé en production pour la sécurité
+// Swagger UI — intentionnellement désactivé en production uniquement pour la sécurité.
+// En dev/staging, Swagger reste accessible pour faciliter le développement et les tests. (LOW-03)
 if (process.env.NODE_ENV !== "production") {
   app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
   app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
@@ -106,7 +126,6 @@ app.get("/health", async (_req, res) => {
 
   // Vérifier PostgreSQL
   try {
-    const prisma = (await import("./utils/prisma")).default;
     await prisma.$queryRaw`SELECT 1`;
     checks.postgresql = "ok";
   } catch {

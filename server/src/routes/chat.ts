@@ -181,6 +181,12 @@ router.get("/article/:numero/references", requireAuth, async (req: AuthRequest, 
   try {
     const numero = Array.isArray(req.params.numero) ? req.params.numero[0] : req.params.numero;
 
+    // Validation : :numero ne doit pas être vide et doit contenir uniquement des caractères alphanumériques, tirets ou points (LOW-11)
+    if (!numero || !/^[\w.\-]+$/.test(numero)) {
+      res.status(400).json({ error: 'Le paramètre "numero" est invalide' });
+      return;
+    }
+
     const article = await prisma.article.findFirst({
       where: { numero },
       select: {

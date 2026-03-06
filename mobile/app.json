@@ -6,7 +6,7 @@
     "description": "Application mobile du Code General des Impots du Congo (edition 2026). Consultation des 2 248 articles, 14 simulateurs fiscaux (ITS, IS, Patente) et echeances fiscales.",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "scheme": "cgi242",
     "newArchEnabled": true,
     "githubUrl": "https://github.com/normxai/cgi-242",
@@ -21,7 +21,7 @@
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Utilisé pour la recherche vocale",
         "ITSAppUsesNonExemptEncryption": false,
-        "NSSpeechRecognitionUsageDescription": "Allow $(PRODUCT_NAME) to use speech recognition."
+        "NSSpeechRecognitionUsageDescription": "Utilisé pour la reconnaissance vocale"
       }
     },
     "android": {

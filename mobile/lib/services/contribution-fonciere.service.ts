@@ -41,12 +41,13 @@ const PRIX_M2_ZONE: Record<ZoneUrbaine, number> = {
 };
 
 // Forfait par hectare (Art. 272)
+// Les clés sont des identifiants internes de calcul, non affichés à l'utilisateur.
 const FORFAIT_HA: Record<CultureRurale, number> = {
   cafe_palmier: 2_000,
   forestier: 2_000,
   autres_cultures: 1_000,
   elevage: 600,
-  usines_transfo: 600,
+  usines_transfo: 600,  // Usines et établissements de transformation
   non_mis_valeur: 500,
 };
 
@@ -89,7 +90,7 @@ export function calculerContributionFonciere(input: ContributionFonciereInput): 
   const baseNette = basebrute - abattement;
   let impot = Math.round(baseNette * (tauxCommunal / 100));
 
-  // Minimum 1 000 FCFA (Art. 262/275)
+  // En dessous de 1 000 FCFA, l'impôt n'est pas dû (Art. 262/275)
   if (impot > 0 && impot < 1_000) {
     impot = 0;
   }

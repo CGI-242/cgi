@@ -59,7 +59,9 @@ api.interceptors.request.use(async (config) => {
     if (user?.entreprise_id) {
       config.headers["X-Organization-ID"] = user.entreprise_id;
     }
-  } catch {}
+  } catch (err) {
+    if (__DEV__) console.warn("[api] Erreur injection header X-Organization-ID:", err);
+  }
 
   if (isMobile) {
     // Mobile : Bearer token + X-Platform

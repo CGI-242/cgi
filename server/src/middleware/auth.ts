@@ -97,7 +97,7 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
   const cookieOpts = {
     httpOnly: true,
     secure: isSecure,
-    sameSite: "lax" as const,
+    sameSite: "strict" as const,
     path: "/",
   };
 
@@ -118,7 +118,7 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
   const csrfToken = generateCsrfToken();
   setCsrfCookie(res, csrfToken);
 
-  logger.info(`Cookies set — secure: ${isSecure}, sameSite: lax, rememberMe: ${!!rememberMe}`);
+  logger.info(`Cookies set — secure: ${isSecure}, sameSite: strict, rememberMe: ${!!rememberMe}`);
 }
 
 /**

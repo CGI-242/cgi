@@ -33,7 +33,9 @@ export async function getUserOrganizations(userId: string) {
 }
 
 export async function createOrganization(userId: string, userEmail: string, data: { name?: string; entrepriseNom?: string; website?: string; address?: string; phone?: string }) {
-  // Accepter 'name' (schéma REST) ou 'entrepriseNom' (register) — HIGH-06
+  // Accepter 'name' (schéma REST standard) ou 'entrepriseNom' (formulaire register legacy) — HIGH-06 / LOW-04
+  // En interne, on utilise systématiquement 'name' (champ Prisma). 'entrepriseNom' est conservé
+  // uniquement pour la rétrocompatibilité avec le formulaire d'inscription mobile.
   const orgName = data.name || data.entrepriseNom;
   if (!orgName) throw new Error('Nom de l\'organisation requis');
   const slug = orgName.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');

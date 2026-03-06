@@ -47,6 +47,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
           )}
           <TouchableOpacity
             onPress={this.handleRetry}
+            accessibilityRole="button"
             style={{ backgroundColor: "#00815d", paddingHorizontal: 32, paddingVertical: 12 }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>

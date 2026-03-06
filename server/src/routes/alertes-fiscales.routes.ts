@@ -93,6 +93,14 @@ router.get('/stats', requireAuth, async (_req: AuthRequest, res: Response) => {
 router.get('/article/:n', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const n = Array.isArray(req.params.n) ? req.params.n[0] : req.params.n;
+
+    // Validation : :n doit être un entier positif (LOW-10)
+    const parsed = parseInt(n, 10);
+    if (isNaN(parsed) || parsed <= 0 || String(parsed) !== n) {
+      res.status(400).json({ error: 'Le paramètre "n" doit être un entier positif' });
+      return;
+    }
+
     const alertes = await alertesService.getByArticle(n);
     res.json(alertes);
   } catch (err) {

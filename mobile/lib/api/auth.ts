@@ -32,7 +32,7 @@ export const authApi = {
   },
 
   forgotPassword: async (payload: ForgotPasswordPayload): Promise<OtpResponse> => {
-    const { data } = await api.post<MessageResponse>("/auth/forgot-password", payload);
+    const { data } = await api.post<OtpResponse>("/auth/forgot-password", payload);
     return data;
   },
 

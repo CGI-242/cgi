@@ -27,6 +27,9 @@ export interface IgfResult {
 }
 
 // Barème IGF par tranches de CA (Art. 98-101)
+// TODO: Vérifier la conformité de ce barème progressif avec le CGI 2026.
+// L'Art. 5 du texte IGF (TFNC4) fixe un taux unique de 5% du CA HT (ou 8% de la marge).
+// Le barème ci-dessous est un barème progressif couramment appliqué en pratique.
 const BAREME_IGF = [
   { min: 0, max: 1_000_000, taux: 0.05 },
   { min: 1_000_000, max: 3_000_000, taux: 0.04 },
