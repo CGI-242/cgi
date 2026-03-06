@@ -7,7 +7,7 @@
     "partie": 1,
     "livre": 1,
     "chapitre": 4,
-    "chapitre_titre": "Dispositions communes à l'IS et aux IR",
+    "chapitre_titre": "Dispositions communes à l'impôt sur les sociétés et aux impôts sur les revenus",
     "section": null,
     "section_titre": null,
     "page_source": null
@@ -17,15 +17,16 @@
       "article": "Art. 127",
       "titre": "Révision des bilans",
       "texte": [
-        "Les entreprises visées aux articles 14, 15 et 107 du présent code ont la faculté de procéder dans leur bilan à la réévaluation de leurs actifs de certaines dépréciations conformément aux délibérations n° 44/47-14/58 du Grand Conseil de l'AFR et portant sur le n° 50-61 du 30 décembre 1961 et selon les modalités que ces délibérations précisent.",
-        "Les conséquences fiscales de cette réévaluation, soumises aux prescriptions fiscales desdites délibérations précitées."
+        "Les entreprises visées aux articles 14, 15 et 107 du présent Code ont faculté de procéder dans leur bilan à la réévaluation de leur actif et de certains éléments dans les conditions fixées par les délibérations n°4/47-14/58 du Grand Conseil de l'AEF et modifiées par la loi n°50-61 du 30 décembre 1961, et sont dès lors, tant en ce qui concerne les modalités que les conséquences fiscales de cette réévaluation, soumises aux prescriptions fixées par les délibérations précitées.",
+        "Toutefois, les entreprises qui procéderont à la révision de leur bilan clos après le 31 décembre 1964, ne pourront bénéficier des avantages prévus par les délibérations et loi ci-dessus indiquées et les plus-values qui pourraient être dégagées seront taxées selon le régime du droit commun."
       ],
       "mots_cles": [
         "révision des bilans",
         "réévaluation",
         "actifs",
-        "dépréciations",
-        "délibérations"
+        "délibérations",
+        "AEF",
+        "plus-values"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Révision des bilans"
