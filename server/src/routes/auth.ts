@@ -589,6 +589,7 @@ router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordB
         password: hashedPassword,
         resetPasswordToken: null,
         resetPasswordExpires: null,
+        tokenRevokedAt: new Date(), // Invalider tous les tokens existants
       },
     });
 
