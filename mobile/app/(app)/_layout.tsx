@@ -104,6 +104,26 @@ export default function AppLayout() {
     }
   }, [isAuthenticated]);
 
+  const handleMobileTabPress = useCallback((tab: TabKey) => {
+    const routes: Record<TabKey, string> = {
+      home: "/(app)",
+      cgi: "/(app)/code",
+      sim: "/(app)/simulateur",
+      cal: "/(app)/calendrier",
+      chat: "/(app)/chat",
+      plus: "/(app)/plus",
+    };
+    router.push(routes[tab] as Href);
+  }, []);
+
+  const handleMobileBack = useCallback(() => {
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.push("/(app)" as Href);
+    }
+  }, []);
+
   if (!isAuthenticated && !loggedOut) {
     return <Redirect href="/(auth)" />;
   }
@@ -139,18 +159,6 @@ export default function AppLayout() {
     return "home";
   };
 
-  const handleMobileTabPress = useCallback((tab: TabKey) => {
-    const routes: Record<TabKey, string> = {
-      home: "/(app)",
-      cgi: "/(app)/code",
-      sim: "/(app)/simulateur",
-      cal: "/(app)/calendrier",
-      chat: "/(app)/chat",
-      plus: "/(app)/plus",
-    };
-    router.push(routes[tab] as Href);
-  }, []);
-
   // Titre dynamique pour le header mobile
   const getMobileTitle = (): string => {
     if (isHome) return "NORMX Tax";
@@ -160,14 +168,6 @@ export default function AppLayout() {
 
   // Bouton retour : visible si on n'est pas sur un écran principal
   const mobileShowBack = !isHome && !(["/code", "/simulateur", "/calendrier", "/chat", "/plus"].includes(pathname));
-
-  const handleMobileBack = useCallback(() => {
-    if (router.canGoBack()) {
-      router.back();
-    } else {
-      router.push("/(app)" as Href);
-    }
-  }, []);
 
   // ── Stack commun (partagé mobile + desktop) ──
   const stackScreens = (
