@@ -20,7 +20,7 @@
         "Toute personne physique ou morale qui paie des sommes imposables, conformément aux dispositions des articles 36, 37 ou 185 ter nouveau du présent Code, est tenue d'en effectuer pour le compte du Trésor la retenue de l'IRPP ou la retenue à la source instituée par les articles 126 quater B-1, 183 et 185 ter nouveau du présent Code.",
         "Elle doit, pour chaque bénéficiaire d'un payement imposable, mentionner sur son livre, fichier ou autre document destiné à l'établissement de la paye, ou à défaut sur un livre spécial :",
         "- la date, la nature et le montant de ce paiement, y compris l'évaluation des avantages en nature fournis (évaluation conforme aux indications de l'article 39 ci-dessus), le montant des retenues opérées, le nombre d'enfants déclarés par le bénéficiaire du paiement comme étant à sa charge, la référence du bordereau de versement prévu à l'article 174 ci-après ;",
-        "- les documents sur lesquels sont enregistrés les paiements et retenues effectuées, ainsi que les bordereaux remis après versement à la partie versante et visés à l'article 174 ci-après, doivent être conservés jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle les retenues sont faites. Ils doivent, à toute époque, être communiqués, sur leur demande, aux agents de l'administration fiscale.",
+        "- les documents sur lesquels sont enregistrés les paiements et retenues effectués, ainsi que les bordereaux remis après versement à la partie versante et visés à l'article 174 ci-après, doivent être conservés jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle les retenues sont faites. Ils doivent, à toute époque, être communiqués, sur leur demande, aux agents de l'administration fiscale.",
         "Les employeurs ou débirentiers sont tenus de délivrer à chaque bénéficiaire de paiement ayant supporté les retenues une pièce justificative mentionnant le montant desdites retenues."
       ],
       "mots_cles": [
@@ -28,8 +28,11 @@
         "IRPP",
         "employeurs",
         "débirentiers",
+        "sommes imposables",
+        "Trésor",
         "avantages en nature",
         "bordereau de versement",
+        "administration fiscale",
         "conservation 4 ans",
         "pièce justificative"
       ],
@@ -46,11 +49,15 @@
       ],
       "mots_cles": [
         "versement",
+        "retenues",
         "vingt jours",
         "mensuel",
         "trimestriel",
+        "cinq personnes",
         "décès",
+        "ayants droit",
         "UGE",
+        "inspection divisionnaire",
         "taxe unique sur les salaires"
       ],
       "statut": "en vigueur",
@@ -61,8 +68,8 @@
       "titre": "Modalités de versement des retenues",
       "texte": [
         "Chaque versement adressé à l'inspecteur divisionnaire des contributions directes et indirectes compétent, tant pour l'IRPP, la taxe forfaitaire visée à l'article 171 bis, que pour la retenue à la source visée à l'article 185 nouveau, doit comprendre :",
-        "1) un chèque barré correspondant aux retenues effectuées, libellé à l'ordre du Percepteur, Payeur ou Préposé du Trésor du lieu du domicile de la personne ou du siège de l'établissement ou du bureau qui les a opérées ;",
-        "2) un bordereau de versement établi en trois exemplaires sur les imprimés fournis par l'administration.",
+        "1° un chèque barré correspondant aux retenues effectuées, libellé à l'ordre du Percepteur, Payeur ou Préposé du Trésor du lieu du domicile de la personne ou du siège de l'établissement ou du bureau qui les a opérées ;",
+        "2° un bordereau de versement établi en trois exemplaires sur les imprimés fournis par l'administration.",
         "Un accusé de réception est adressé au contribuable lors du dépôt des documents.",
         "L'inspecteur divisionnaire des contributions directes et indirectes compétent transmet les chèques accompagnés des trois exemplaires de la déclaration, sous bordereau, dans les trois jours de la réception, à l'agent chargé de la perception.",
         "Un exemplaire de chaque bordereau de versement est rendu, accompagné d'un récépissé, à la partie versante, par l'agent chargé de la perception.",
@@ -101,13 +108,13 @@
       "titre": "État annuel des salaires, pensions et rentes viagères",
       "texte": [
         "En vue du contrôle des salaires, pensions et rentes viagères servant de base à l'IRPP, tous particuliers, toutes administrations et toutes sociétés et associations occupant des employés, commis, ouvriers ou auxiliaires moyennant traitement, salaire ou rétribution, sont tenus de remettre dans le courant du mois de janvier de chaque année à l'inspecteur divisionnaire des contributions directes et indirectes, un état présentant, pour chacune des personnes qu'ils ont occupées au cours de l'année précédente, les indications suivantes :",
-        "1) nom, prénom, emploi et adresse ;",
-        "2) montant des traitements, salaires et rétributions diverses payés au cours de la dite année après déduction des retenues pour la retraite, ainsi que l'évaluation des avantages en nature fournis en sus de la rémunération (évaluation conforme aux indications de l'article 39 ci-dessus) ;",
-        "3) montant des retenues effectuées au titre de l'IRPP ;",
-        "4) période à laquelle s'appliquent les paiements ;",
-        "5) nombre d'enfants indiqués par l'intéressé comme étant à sa charge et dont il a été tenu compte pour le calcul des retenues ;",
-        "6) montant des diverses indemnités non imposables allouées à l'employé ;",
-        "7) le numéro d'identification unique.",
+        "1° nom, prénom, emploi et adresse ;",
+        "2° montant des traitements, salaires et rétributions diverses payés au cours de la dite année après déduction des retenues pour la retraite, ainsi que l'évaluation des avantages en nature fournis en sus de la rémunération (évaluation conforme aux indications de l'article 39 ci-dessus) ;",
+        "3° montant des retenues effectuées au titre de l'IRPP ;",
+        "4° période à laquelle s'appliquent les paiements ;",
+        "5° nombre d'enfants indiqués par l'intéressé comme étant à sa charge et dont il a été tenu compte pour le calcul des retenues ;",
+        "6° montant des diverses indemnités non imposables allouées à l'employé ;",
+        "7° le numéro d'identification unique.",
         "À cet état, l'employeur devra joindre une fiche individuelle au nom de chaque employé reprenant les mêmes indications que celles prévues ci-dessus."
       ],
       "mots_cles": [
@@ -170,8 +177,8 @@
       "titre": "Déclaration des rémunérations versées à des tiers",
       "texte": [
         "Les entreprises visées aux articles 14, 15 et 42 ainsi que les sociétés visées à l'article 107 et suivants du présent Code, doivent déclarer dans les mêmes conditions :",
-        "1) les rémunérations, quel que soit leur montant ramené à l'année qu'elles ont versées à des personnes morales ou physiques fournissant des prestations ou remplissant des fonctions susceptibles d'être exercées simultanément auprès de plusieurs entreprises, telles que les prestations faisant l'objet de la retenue à la source, les fonctions d'administrateurs, membre ou secrétaire de comité ou de conseil de direction, de gestion ou de surveillance, quelle qu'en soit la dénomination, commissaire aux comptes, trésorier, etc. ;",
-        "2) les sommes versées par elles à l'occasion de l'exercice de leur profession à titre de loyers, de commissions, courtages, ristournes commerciales ou autres, vacations, honoraires occasionnels ou non, gratifications et autres rémunérations lorsqu'elles dépassent 5.000 FCFA par an pour un même bénéficiaire.",
+        "1° les rémunérations, quel que soit leur montant ramené à l'année qu'elles ont versées à des personnes morales ou physiques fournissant des prestations ou remplissant des fonctions susceptibles d'être exercées simultanément auprès de plusieurs entreprises, telles que les prestations faisant l'objet de la retenue à la source, les fonctions d'administrateurs, membre ou secrétaire de comité ou de conseil de direction, de gestion ou de surveillance, quelle qu'en soit la dénomination, commissaire aux comptes, trésorier, etc. ;",
+        "2° les sommes versées par elles à l'occasion de l'exercice de leur profession à titre de loyers, de commissions, courtages, ristournes commerciales ou autres, vacations, honoraires occasionnels ou non, gratifications et autres rémunérations lorsqu'elles dépassent 5.000 FCFA par an pour un même bénéficiaire.",
         "Les sociétés pétrolières sont tenues de déclarer, dans les conditions prévues à l'article 176, les rémunérations versées aux sous-traitants pour toutes les prestations de service de toute nature.",
         "Les dites sommes sont imposées au nom du bénéficiaire d'après la nature de l'activité au titre de laquelle ce dernier les a perçues."
       ],
@@ -252,7 +259,7 @@
       "article": "Art. 183",
       "titre": "Retenue à la source sur les sommes versées à des personnes non soumises à l'IS",
       "texte": [
-        "Les personnes physiques et morales qui, à l'occasion de l'exercice de leur profession, versent à des personnes physiques ou morales établies au Congo et non soumises à l'impôt sur les sociétés des sommes en rémunération de prestations de toute nature fournies ou utilisées au Congo, sont tenues d'opérer la retenue à la source au taux de 10 % pour le compte de l'État.",
+        "(L.F.2023, L.F.2024, L.F.2025) Les personnes physiques et morales qui, à l'occasion de l'exercice de leur profession, versent à des personnes physiques ou morales établies au Congo et non soumises à l'impôt sur les sociétés des sommes en rémunération de prestations de toute nature fournies ou utilisées au Congo, sont tenues d'opérer la retenue à la source au taux de 10 % pour le compte de l'État.",
         "Cette retenue doit également être opérée par les institutions et les administrations publiques, les collectivités locales et les établissements publics qui versent aux personnes physiques des sommes à titre de primes, émoluments, indemnités, honoraires.",
         "De même, les personnes physiques ou morales, grossistes, revendeurs et demi-grossistes revendeurs sont tenues d'opérer une retenue à la source de 10 % sur les sommes, commissions, ristournes, remises, rabais, escomptes et autres avantages consentis ou payés aux personnes physiques ou morales non soumises à l'impôt sur les sociétés. Cette disposition ne s'applique pas aux personnes physiques ou morales qui exercent une activité relevant des professions réglementées.",
         "Toute personne physique ou morale qui opère les retenues prévues aux alinéas ci-dessus est tenue de délivrer aux bénéficiaires des sommes une attestation justifiant le montant des retenues.",
@@ -386,7 +393,7 @@
       "article": "Art. 185 ter-A",
       "titre": "Dispositions particulières applicables aux personnes physiques ou morales de nationalité congolaise ou étrangère n'ayant ni domicile, ni résidence fiscale au Congo – Champ d'application (Section 6)",
       "texte": [
-        "Champ d'application",
+        "(L.F.2023) Champ d'application",
         "1) Sous réserve des conventions fiscales internationales, les personnes physiques ou morales de nationalité congolaise ou étrangère n'ayant ni domicile, ni résidence fiscale au Congo, sont soumises à une retenue à la source sur les revenus réalisés au Congo ou en provenant, en contrepartie des prestations rendues ou utilisées au Congo par l'État, les collectivités territoriales, les entreprises ou établissements situés au Congo.",
         "2) Il s'agit notamment :",
         "a) des sommes versées en rémunération d'une activité déployée au Congo dans l'exercice d'une profession indépendante ;",
@@ -443,7 +450,7 @@
       "article": "Art. 185 ter-C",
       "titre": "Taux d'imposition",
       "texte": [
-        "Taux d'imposition",
+        "(L.F.2023) Taux d'imposition",
         "1) Sous réserve des conventions fiscales internationales, les taux de la retenue à la source sont fixés comme suit :",
         "- taux général : 20 % ;",
         "- taux moyen : 10 % ;",
@@ -546,6 +553,108 @@
       "mots_cles": [],
       "statut": "abrogé",
       "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+    },
+    {
+      "article": "Art. 185 quater-A",
+      "titre": "Impôt spécial sur les plus-values de cession de titres",
+      "texte": [
+        "Il est établi un impôt spécial sur les plus-values réalisées par les personnes physiques ou morales domiciliées à l'étranger sur la cession de tout ou partie des participations qu'elles détiennent dans le capital des sociétés de droit congolais. L'impôt spécial est applicable à la fraction de la plus-value réalisée."
+      ],
+      "mots_cles": [
+        "impôt spécial",
+        "plus-values",
+        "cession de titres",
+        "participations",
+        "non-résidents",
+        "sociétés de droit congolais"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-B",
+      "titre": "Taux de l'impôt spécial sur les plus-values",
+      "texte": [
+        "Le taux de l'impôt spécial est fixé à 20 % du montant de la plus-value imposable. Cet impôt est libératoire de l'impôt sur le revenu du bénéficiaire.",
+        "Il est payable au moment de l'enregistrement obligatoire de l'acte de cession en même temps que le paiement des droits d'enregistrement."
+      ],
+      "mots_cles": [
+        "taux",
+        "20 %",
+        "plus-value imposable",
+        "libératoire",
+        "enregistrement",
+        "droits d'enregistrement"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quater-C",
+      "titre": "Solidarité de paiement entre cédant et cessionnaire",
+      "texte": [
+        "Le cédant, le cessionnaire et la société de droit congolais, dont tout ou partie des titres auront été cédés, sont solidairement responsables du paiement de l'impôt spécial."
+      ],
+      "mots_cles": [
+        "solidarité",
+        "cédant",
+        "cessionnaire",
+        "paiement",
+        "impôt spécial"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
+    },
+    {
+      "article": "Art. 185 quinquies",
+      "titre": "Retenue à la source sur les marchés publics et privés de construction",
+      "texte": [
+        "1) Les entrepreneurs de bâtiments et de travaux publics adjudicataires des marchés publics ou privés de construction sont tenus de prélever, pour le compte de l'État, une retenue à la source, sur les sommes payées aux sous-traitants ou aux bureaux d'études auxquels ils ont eu recours pour l'exécution des marchés, aux taux de :",
+        "- 5 % pour les entrepreneurs sous-traitants et autres relevant du régime réel ;",
+        "- 10 % pour les entrepreneurs sous-traitants et autres relevant du régime du forfait.",
+        "Les retenues opérées sont régies selon les dispositions des articles 172 et 173 du présent Code.",
+        "2) L'entrepreneur principal, adjudicataire du marché principal, est tenu, d'une part de communiquer, par trimestre, à l'administration fiscale, la liste des sous-traitants bénéficiaires des contrats d'exécution des travaux, suivant un format défini par l'administration, et d'autre part de porter l'étendue à la formalité d'enregistrement.",
+        "3) Chaque sous-traitant, bénéficiaire d'un contrat d'exécution des travaux, est tenu de porter ledit contrat à la formalité d'enregistrement.",
+        "4) Le défaut, les omissions ou insuffisances des retenues sont sanctionnés, d'une part par une amende de 5.000.000 FCFA et, d'autre part, par la perte de la déductibilité des sommes versées.",
+        "5) Le versement tardif des sommes retenues est sanctionné par une pénalité de retard de 2 % par mois ou fraction de mois sans dépasser 100 %.",
+        "6) Pour les sous-traitants, les sommes retenues constituent un acompte d'impôt.",
+        "7) Le paiement est fait au moyen d'un bordereau spécial fourni par l'administration fiscale, comprenant les informations pouvant permettre le contrôle et la gestion fiscale de la retenue."
+      ],
+      "mots_cles": [
+        "retenue à la source",
+        "marchés publics",
+        "BTP",
+        "sous-traitants",
+        "bureaux d'études",
+        "5 %",
+        "10 %",
+        "régime réel",
+        "régime forfait",
+        "enregistrement",
+        "amende",
+        "5.000.000 FCFA",
+        "pénalité de retard",
+        "acompte d'impôt"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 8 : Paiements effectués par les entrepreneurs adjudicataires des marchés de BTP au profit des sous-traitants desdits marchés"
+    },
+    {
+      "article": "Art. 185 sexies",
+      "titre": "Retenue à la source sur les primes d'assurance cédées à l'étranger",
+      "texte": [
+        "Les primes cédées en réassurance au-delà du plafond fixé par l'article 308 du Code de la Conférence Interafricaine des Marchés d'Assurance (CIMA) et les primes d'assurances à l'étranger, perçues par les sociétés étrangères non domiciliées dans les États membres de la CIMA, sont soumises à la retenue à la source au taux de 20 % prévu à l'article 185 ter ci-dessus, nonobstant l'autorisation du Ministre en charge des assurances."
+      ],
+      "mots_cles": [
+        "réassurance",
+        "primes d'assurance",
+        "CIMA",
+        "retenue à la source",
+        "20 %",
+        "sociétés étrangères"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 9 : Réassurance"
     }
   ]
 }

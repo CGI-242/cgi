@@ -15,11 +15,18 @@
   "articles": [
     {
       "article": "Art. 141 à 156",
-      "titre": "Taxe d'apprentissage (sans objet)",
-      "texte": [],
-      "mots_cles": [],
-      "statut": "sans objet",
-      "section": "Section 1 : Sans objet"
+      "titre": "Taxe d'apprentissage (Abrogé)",
+      "texte": [
+        "Abrogés [NB - Voir la taxe unique sur les salaires sous TFNC 4.6]."
+      ],
+      "mots_cles": [
+        "taxe d'apprentissage",
+        "abrogé",
+        "taxe unique sur les salaires",
+        "TFNC"
+      ],
+      "statut": "abrogé",
+      "section": "Section 1 : Taxe d'apprentissage (Abrogé)"
     },
     {
       "article": "Art. 157",
@@ -31,8 +38,11 @@
         "taxes annuelles",
         "terrains d'agrément",
         "terrains non mis en valeur",
+        "insuffisamment mis en valeur",
         "terrains à bâtir",
-        "terrains inexploités"
+        "terrains inexploités",
+        "insuffisamment exploités",
+        "République du Congo"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -52,7 +62,11 @@
         "terrains urbains",
         "terrains concédés",
         "titre définitif",
-        "cahier des charges"
+        "titre provisoire",
+        "cahier des charges",
+        "régime domanial",
+        "terrains inexploités",
+        "attributaire"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -72,9 +86,13 @@
         "terrain à bâtir",
         "superficie bâtie",
         "contribution foncière",
+        "exonération temporaire",
         "servitudes non aedificandi",
+        "rez-de-chaussée",
+        "régime domanial",
         "cahier des charges",
-        "commission d'adjudication"
+        "commission d'adjudication",
+        "titre de propriété"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -97,10 +115,14 @@
         "terrains inexploités",
         "culture",
         "reboisement",
+        "protection des sols",
         "élevage",
+        "cheptel",
         "jachère",
         "chantiers",
         "servitude non aedificandi",
+        "régime forestier",
+        "AEF",
         "plantation non entretenue",
         "insuffisamment exploitée"
       ],
@@ -122,10 +144,14 @@
       "mots_cles": [
         "exemption permanente",
         "impôt foncier",
+        "Gouverneur Général",
+        "terrains à bâtir",
         "lotissement",
+        "cession gratuite",
         "plan d'urbanisme",
         "voies carrossables",
         "viabilité",
+        "lotisseur",
         "100 mètres"
       ],
       "statut": "en vigueur",
@@ -146,7 +172,11 @@
         "programme d'investissement",
         "DGID",
         "mise en valeur",
-        "majoration 25 %"
+        "exploitation insuffisante",
+        "force majeure",
+        "exonération",
+        "majoration 25 %",
+        "délai trois ans"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -155,11 +185,15 @@
       "article": "Art. 163",
       "titre": "Lieu d'imposition et redevable de la taxe",
       "texte": [
-        "Tout terrain visé à l'article 157 ci-dessus est imposable dans la commune ou dans le district où il est situé, au nom du propriétaire au 1er janvier de l'année de l'imposition. Toutefois, lorsqu'un immeuble est grevé d'usufruit ou loué par un bail emphytéotique, la taxe est établie au nom de l'usufruitier ou de l'emphytéote par application de l'article 608 du Code civil."
+        "Tout terrain visé à l'article 157 ci-dessus est imposable dans la commune ou dans le district où il est situé, sous le nom du propriétaire au 1er janvier de l'année de l'imposition. Toutefois, lorsqu'un immeuble est grevé d'usufruit ou loué par un bail emphytéotique, la taxe est établie au nom de l'usufruitier ou de l'emphytéote par application de l'article 608 du Code civil."
       ],
       "mots_cles": [
+        "lieu d'imposition",
+        "commune",
+        "district",
         "redevable",
         "propriétaire",
+        "1er janvier",
         "usufruit",
         "bail emphytéotique",
         "Code civil"
@@ -174,9 +208,11 @@
         "L'impôt est dû pour l'année entière à raison des faits existants au 1er janvier de l'année de l'imposition."
       ],
       "mots_cles": [
+        "annualité",
         "fait générateur",
         "1er janvier",
-        "année d'imposition"
+        "année d'imposition",
+        "année entière"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -208,13 +244,13 @@
         "En cas de déclaration tardive, l'affectation des terrains ou parties de terrains en 2e ou 3e classe ne pourra avoir d'effet rétroactif.",
         "Si, à la suite de l'accomplissement de travaux pris en charge par le propriétaire, un terrain ressortit à une classe supérieure, le maintien dans l'ancienne classe sera appliqué pour l'établissement des impositions de chacune des cinq années suivant celle de l'achèvement des travaux. Toutefois, ne pourront provoquer l'application de ces dispositions que les travaux exécutés en vertu de programmes ayant reçu l'agrément préalable de l'administration.",
         "Enfin, sans préjudice de l'application des dispositions ci-dessus, la superficie taxable sera, en outre, réduite de moitié, sauf réserves ci-après lorsque le terrain remplira l'une et l'autre ou l'une ou l'autre des conditions suivantes :",
-        "1) terrains ayant fait l'objet du rattachement à un centre urbain. En ce cas, la réduction en cause ne sera appliquée qu'en vue du calcul des impositions dues pour chacune des dix années suivant la date de publication au Journal Officiel de l'arrêté portant extension du périmètre de ce centre urbain ;",
-        "2) terrains exclusivement desservis par une voie carrossable au sens des dispositions du paragraphe 4 de l'article 160 précédent lorsque cette voie ne comporte aucun revêtement dur, tel que gravillon, pierres, bitume, ciment, ou autres matériaux durs habituellement utilisés pour la construction de routes.",
+        "1° terrains ayant fait l'objet du rattachement à un centre urbain. En ce cas, la réduction en cause ne sera appliquée qu'en vue du calcul des impositions dues pour chacune des dix années suivant la date de publication au Journal Officiel de l'arrêté portant extension du périmètre de ce centre urbain ;",
+        "2° terrains exclusivement desservis par une voie carrossable au sens des dispositions du paragraphe 4 de l'article 160 précédent lorsque cette voie ne comporte aucun revêtement dur, tel que gravillon, pierres, bitume, ciment, ou autres matériaux durs habituellement utilisés pour la construction de routes.",
         "Le montant des impositions sera arrondi à la dizaine de francs la plus voisine. Toute cote n'excédant pas 500 FCFA sera négligée."
       ],
       "mots_cles": [
         "calcul",
-        "superficie",
+        "superficie imposable",
         "tarifs",
         "Brazzaville",
         "Pointe-Noire",
@@ -225,8 +261,12 @@
         "eau courante",
         "électricité",
         "terrains marécageux",
+        "classes de terrains",
+        "déblais remblais",
         "commission d'urbanisme",
-        "déclaration",
+        "déclaration tardive",
+        "centre urbain",
+        "Journal Officiel",
         "arrondi",
         "500 FCFA"
       ],
@@ -237,34 +277,38 @@
       "article": "Art. 166",
       "titre": "Obligations déclaratives des propriétaires",
       "texte": [
-        "Tout propriétaire passible de l'une des taxes visées à l'article 157 ci-dessus devra adresser avant le 1er avril de chaque année à l'inspection divisionnaire des contributions directes et indirectes du lieu où est situé chacune de ses propriétés, une déclaration mentionnant pour chacune d'elles :",
+        "Tout propriétaire passible de l'une des taxes visées à l'article 157 ci-dessus devra adresser avant le 1er avril de chaque année à l'inspection divisionnaire des contributions directes et indirectes du lieu où est située chacune de ses propriétés, une déclaration mentionnant pour chacune d'elles :",
         "a) Pour les terrains situés dans les Communes de Brazzaville, Pointe-Noire, Loubomo et les terrains urbains tels qu'ils sont définis par le régime domanial actuellement en vigueur :",
-        "1) sa désignation, sa situation, sa contenance ;",
-        "2) la superficie développée des constructions ;",
-        "3) la superficie des terrains d'agrément ;",
-        "4) la superficie des parcelles grevées de servitudes non aedificandi.",
+        "1° sa désignation, sa situation, sa contenance ;",
+        "2° la superficie développée des constructions ;",
+        "3° la superficie des terrains d'agrément ;",
+        "4° la superficie des parcelles grevées de servitudes non aedificandi.",
         "b) Pour les autres terrains :",
-        "1) sa désignation, sa situation, sa contenance ;",
-        "2) la superficie totale de la propriété ;",
-        "3) la superficie exploitée avec indication de la nature de l'exploitation ou de la plantation ;",
-        "4) la superficie des terrains inexploités ;",
-        "5) la superficie des terrains visés au paragraphe b de l'article 160 ci-dessus.",
+        "1° sa désignation, sa situation, sa contenance ;",
+        "2° la superficie totale de la propriété ;",
+        "3° la superficie exploitée avec indication de la nature de l'exploitation ou de la plantation ;",
+        "4° la superficie des terrains inexploités ;",
+        "5° la superficie des terrains visés au paragraphe b de l'article 160 ci-dessus.",
         "Ces dernières déclarations seront communiquées aux chefs des services de l'agriculture, de l'élevage et des eaux et forêts selon la nature de l'exploitation.",
         "Le chef de service compétent émettra un avis sur la sincérité des déclarations et déterminera la fraction de superficie imposable en cas d'exploitation partielle.",
         "Les nouveaux propriétaires sont tenus aux obligations ci-dessus précisées avant le 1er avril de l'année qui suivra celle de leur acquisition de propriété, de la remise du titre définitif de propriété."
       ],
       "mots_cles": [
+        "obligations déclaratives",
         "déclaration",
         "1er avril",
         "propriétaire",
+        "inspection divisionnaire",
         "superficie",
         "constructions",
         "terrains d'agrément",
-        "servitudes",
+        "servitudes non aedificandi",
         "exploitation",
+        "plantation",
         "agriculture",
         "élevage",
-        "eaux et forêts"
+        "eaux et forêts",
+        "titre définitif"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -280,7 +324,11 @@
         "exonération",
         "aliénation",
         "État",
+        "droits de propriété",
         "rachat",
+        "1er avril",
+        "inspecteur divisionnaire",
+        "contributions directes et indirectes",
         "déclaration"
       ],
       "statut": "en vigueur",
@@ -297,9 +345,13 @@
       "mots_cles": [
         "mesure transitoire",
         "mise en valeur",
+        "titre définitif",
         "exonération",
-        "majoration 25 %",
-        "cahier des charges"
+        "concessions",
+        "cahier des charges",
+        "délai prescrit",
+        "inspecteur divisionnaire",
+        "majoration 25 %"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taxes sur les terrains"
@@ -319,7 +371,7 @@
       "article": "Art. 171 bis à 171 quinquies",
       "titre": "Taxe forfaitaire due par les employeurs et les débirentiers (Section 4)",
       "texte": [
-        "Abrogé ."
+        "Abrogé [NB - Voir la taxe unique sur les salaires sous TFNC 4.6]."
       ],
       "mots_cles": [
         "taxe forfaitaire",
@@ -335,7 +387,7 @@
       "article": "Art. 171 sexies à 171 undecies",
       "titre": "Impôt spécial sur les bons de caisse",
       "texte": [
-        "Abrogé."
+        "Abrogés."
       ],
       "mots_cles": [
         "bons de caisse",
@@ -346,67 +398,82 @@
       "section": "Section 5 : Impôt spécial sur les bons de caisse"
     },
     {
-      "article": "Art. 171-A",
+      "article": "Art. 171 A",
       "titre": "Création de la taxe spécifique sur les véhicules de tourisme des sociétés",
       "texte": [
         "Il est créé au Congo, au profit de l'État, une taxe spécifique sur les véhicules de tourisme des sociétés, quelle qu'en soit la forme et l'objet, et servant au transport de personnes appartenant à ces mêmes sociétés."
       ],
       "mots_cles": [
-        "taxe véhicules tourisme",
+        "taxe spécifique",
+        "véhicules de tourisme",
         "sociétés",
+        "Congo",
+        "État",
         "transport de personnes"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-B",
+      "article": "Art. 171 B",
       "titre": "Champ d'application de la taxe véhicules",
       "texte": [
-        "Entrent dans le champ d'application de cette taxe, d'une part, les sociétés proprement dites, et d'autre part les établissements publics, organismes d'État et collectivités locales à caractère industriel ou commercial bénéficiant de l'autonomie financière ayant un ou plusieurs voitures de tourisme immatriculées à leur nom, sur le territoire congolais.",
+        "Entrent dans le champ d'application de cette taxe, d'une part les sociétés proprement dites et, d'autre part les établissements publics, organismes d'État et collectivités locales à caractère industriel ou commercial bénéficiant de l'autonomie financière et ayant une ou plusieurs voitures de tourisme immatriculées à leur nom, sur le territoire congolais.",
         "Cette taxe est due sans préjudice de la perception de la taxe sur les véhicules à moteur prévue par délibération des Conseils Municipaux.",
         "Lorsque les véhicules sont acquis en crédit-bail, la taxe est due par le crédit-preneur, utilisateur des véhicules, jusqu'à la fin du contrat de crédit-bail."
       ],
       "mots_cles": [
+        "champ d'application",
         "sociétés",
         "établissements publics",
+        "organismes d'État",
         "collectivités locales",
+        "autonomie financière",
+        "immatriculation",
+        "territoire congolais",
         "crédit-bail",
-        "immatriculation"
+        "Conseils Municipaux"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-C",
+      "article": "Art. 171 C",
       "titre": "Véhicules soumis à la taxe",
       "texte": [
-        "Sont soumis à la taxe : les véhicules de tourisme autres que les voitures commerciales, classées dans la catégorie des voitures particulières pour l'établissement des récépissés de déclaration de mise en circulation des cartes grises et possédés par la société au premier jour de la période d'imposition définie à l'article 171-E ci-dessous."
+        "Sont soumis à la taxe : les véhicules de tourisme autres que les voitures commerciales, classés dans la catégorie des voitures particulières pour l'établissement des récépissés de déclaration de mise en circulation dits « cartes grises » et possédés par la société au premier jour de la période d'imposition définie à l'article 171-E ci-dessous."
       ],
       "mots_cles": [
         "véhicules de tourisme",
+        "voitures commerciales",
         "voitures particulières",
-        "carte grise"
+        "récépissés",
+        "carte grise",
+        "période d'imposition",
+        "société"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-D",
+      "article": "Art. 171 D",
       "titre": "Exonération véhicules anciens",
       "texte": [
         "Sont exonérés de la taxe, les véhicules de tourisme dont la date de la première mise en circulation remonte à plus de 10 ans au premier jour de la période d'imposition."
       ],
       "mots_cles": [
         "exonération",
+        "véhicules de tourisme",
         "véhicules anciens",
-        "10 ans"
+        "première mise en circulation",
+        "10 ans",
+        "période d'imposition"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-E",
+      "article": "Art. 171 E",
       "titre": "Période d'imposition",
       "texte": [
         "La taxe est annuelle. La période d'imposition s'étend du 1er janvier au 31 décembre de chaque année.",
@@ -416,55 +483,69 @@
         "taxe annuelle",
         "période d'imposition",
         "1er janvier",
-        "31 décembre"
+        "31 décembre",
+        "année en cours",
+        "annualité"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-F",
+      "article": "Art. 171 F",
       "titre": "Montant de la taxe véhicules",
       "texte": [
-        "Le montant de la taxe est fixé à 200.000 FCFA par voiture imposable."
+        "Le montant de la taxe est fixé à 200.000 FCFA par voiture imposable dont la puissance est inférieure ou égale à 9 CV, et à 500.000 FCFA par voiture imposable dont la puissance est supérieure à 9 CV."
       ],
       "mots_cles": [
         "montant",
         "200.000 FCFA",
+        "500.000 FCFA",
+        "9 CV",
+        "puissance",
+        "voiture imposable",
         "tarif"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-G",
+      "article": "Art. 171 G",
       "titre": "Obligations déclaratives véhicules",
       "texte": [
-        "Les personnes visées à l'article 171-B ci-dessus sont tenues de fournir, pour chacune des voitures de tourisme définies à l'article 171-C ci-dessus et utilisées par elles au 1er janvier de chaque année, les indications suivantes :",
-        "1) date de mise en circulation dans l'entreprise et éventuellement la date de la première mise en circulation lorsqu'elle a plus de 10 ans d'âge ;",
-        "2) numéro d'immatriculation figurant sur la carte grise ou l'attestation en tenant lieu, le cas échéant ;",
-        "3) nature de son affectation ;",
-        "4) état nominatif d'affectation et, en cas d'utilisation privative des véhicules, l'évaluation de l'avantage en nature correspondante pour les bénéficiaires telle que prévue à l'article 39 du CGI Tome 1."
+        "Les personnes visées à l'article 171-B ci-dessus sont tenues de fournir pour chacune des voitures de tourisme définies à l'article 171-C ci-dessus et utilisées par elles au 1er janvier de chaque année, les indications suivantes :",
+        "1° date de mise en circulation dans l'entreprise et éventuellement la date de la première mise en circulation lorsqu'elle a plus de 10 ans d'âge ;",
+        "2° numéro d'immatriculation figurant sur la carte grise ou l'attestation en tenant lieu, le cas échéant ;",
+        "3° nature de son affectation ;",
+        "4° un état nominatif d'affectation et, en cas d'utilisation privative des véhicules, l'évaluation de l'avantage en nature correspondante pour les bénéficiaires telle que prévue à l'article 39 du CGI Tome 1."
       ],
       "mots_cles": [
         "obligations déclaratives",
         "date mise en circulation",
         "immatriculation",
+        "carte grise",
         "affectation",
-        "avantage en nature"
+        "utilisation privative",
+        "avantage en nature",
+        "CGI Tome 1"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-H",
-      "titre": "Taxe véhicules (abrogé)",
-      "texte": [],
-      "mots_cles": [],
+      "article": "Art. 171 H",
+      "titre": "Taxe véhicules (Abrogé)",
+      "texte": [
+        "Abrogé."
+      ],
+      "mots_cles": [
+        "abrogé",
+        "taxe véhicules"
+      ],
       "statut": "abrogé",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-I",
+      "article": "Art. 171 I",
       "titre": "Paiement et déclaration de la taxe",
       "texte": [
         "La taxe est acquittée spontanément au vu d'une déclaration souscrite par l'entreprise au plus tard le 1er mars de l'année suivant celle de la période d'imposition définie à l'article 171-E.",
@@ -474,13 +555,16 @@
         "paiement spontané",
         "déclaration",
         "1er mars",
-        "siège social"
+        "période d'imposition",
+        "personne morale",
+        "siège social",
+        "principal établissement"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-J",
+      "article": "Art. 171 J",
       "titre": "Sanctions omissions et inexactitudes",
       "texte": [
         "Les omissions, insuffisances ou inexactitudes dans les déclarations sont sanctionnées comme en matière de taxe sur le chiffre d'affaires."
@@ -489,26 +573,31 @@
         "sanctions",
         "omissions",
         "insuffisances",
+        "inexactitudes",
+        "taxe sur le chiffre d'affaires",
         "TCA"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-K",
+      "article": "Art. 171 K",
       "titre": "Non-déductibilité de la taxe",
       "texte": [
-        "Lorsque la taxe est due par des personnes visées à l'article 171-B, elle n'est pas admise en déduction pour l'assiette de l'impôt sur les sociétés."
+        "Lorsque la taxe est due par des personnes visées à l'article 171-B elle n'est pas admise en déduction pour l'assiette de l'impôt sur les sociétés."
       ],
       "mots_cles": [
         "non-déductibilité",
-        "impôt sur les sociétés"
+        "assiette",
+        "impôt sur les sociétés",
+        "déduction",
+        "personnes morales"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171-L",
+      "article": "Art. 171 L",
       "titre": "Réclamations et recouvrement",
       "texte": [
         "Les réclamations sont présentées, instruites et jugées, les cotisations recouvrées, comme en matière de contributions directes et indirectes."
@@ -516,18 +605,40 @@
       "mots_cles": [
         "réclamations",
         "recouvrement",
-        "contributions directes"
+        "cotisations",
+        "contributions directes",
+        "contributions indirectes"
       ],
       "statut": "en vigueur",
       "section": "Section 6 : Taxe sur les véhicules de tourisme des sociétés"
     },
     {
-      "article": "Art. 171 M à 171 N",
-      "titre": "Fonds national d'investissement (sans objet)",
-      "texte": [],
-      "mots_cles": [],
-      "statut": "sans objet",
-      "section": "Section 7 : Sans objet"
+      "article": "Art. 171 M à 171 O",
+      "titre": "Fonds national d'investissement (Abrogé)",
+      "texte": [
+        "Abrogés."
+      ],
+      "mots_cles": [
+        "fonds national d'investissement",
+        "abrogé"
+      ],
+      "statut": "abrogé",
+      "section": "Section 7 : Fonds national d'investissement (Abrogé)"
+    },
+    {
+      "article": "Art. 171 P-1 à 171 P-3",
+      "titre": "Taxe sur les externalités négatives de l'activité minière et pétrolière (Abrogée)",
+      "texte": [
+        "Abrogés."
+      ],
+      "mots_cles": [
+        "externalités négatives",
+        "activité minière",
+        "activité pétrolière",
+        "abrogé"
+      ],
+      "statut": "abrogé",
+      "section": "Section 8 : Taxe sur les externalités négatives de l'activité minière et pétrolière (Abrogée)"
     }
   ]
 }

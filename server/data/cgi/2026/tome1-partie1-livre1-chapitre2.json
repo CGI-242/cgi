@@ -22,7 +22,11 @@
         "IBA",
         "impôt sur les bénéfices d'affaires",
         "personnes physiques",
-        "activité lucrative"
+        "activité lucrative",
+        "bénéfices réalisés",
+        "impôt annuel",
+        "propre compte",
+        "habituellement"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -96,7 +100,10 @@
       "mots_cles": [
         "territorialité",
         "bénéfices imposables",
-        "exploitation au Congo"
+        "exploitation au Congo",
+        "entreprises",
+        "articles 5 et 6",
+        "IBA"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -163,7 +170,11 @@
         "SYSCOHADA",
         "comptabilité d'engagement",
         "comptabilité de caisse",
-        "professions libérales"
+        "professions libérales",
+        "activité non commerciale",
+        "propriété intellectuelle",
+        "règles comptables",
+        "bénéfices"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
@@ -223,7 +234,11 @@
       "mots_cles": [
         "retenue à la source",
         "société transparente",
-        "article 183"
+        "article 183",
+        "IBA",
+        "personnes physiques",
+        "part de bénéfice",
+        "prélèvement à la source"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
@@ -698,7 +713,9 @@
         "taux IRCM",
         "15 %",
         "35 %",
-        "revenus occultes"
+        "revenus occultes",
+        "impôt sur le revenu des capitaux mobiliers",
+        "taux d'imposition"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 6 : Modalités d'imposition",
@@ -881,7 +898,10 @@
       "mots_cles": [
         "base d'imposition",
         "loyers bruts",
-        "propriétaire"
+        "propriétaire",
+        "revenus fonciers",
+        "IRF",
+        "montant"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
@@ -1092,7 +1112,11 @@
       ],
       "mots_cles": [
         "absence d'exonération",
-        "incitation à l'embauche"
+        "incitation à l'embauche",
+        "ITS",
+        "impôt sur les traitements et salaires",
+        "réduction d'impôt",
+        "politique d'embauche"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
@@ -1136,7 +1160,11 @@
         "fait générateur",
         "exigibilité",
         "avances",
-        "acomptes"
+        "acomptes",
+        "ITS",
+        "mise à disposition",
+        "salaire",
+        "mois de versement"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 4 : Fait générateur et exigibilité",
@@ -1184,7 +1212,11 @@
         "assiette",
         "déduction",
         "20 %",
-        "cotisations sociales de retraite"
+        "cotisations sociales de retraite",
+        "ITS",
+        "montant net",
+        "part salariale",
+        "détermination"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",

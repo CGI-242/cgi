@@ -22,7 +22,11 @@
         "IBA",
         "impôt sur les bénéfices d'affaires",
         "personnes physiques",
-        "activité lucrative"
+        "activité lucrative",
+        "bénéfices réalisés",
+        "impôt annuel",
+        "propre compte",
+        "habituellement"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -96,7 +100,10 @@
       "mots_cles": [
         "territorialité",
         "bénéfices imposables",
-        "exploitation au Congo"
+        "exploitation au Congo",
+        "entreprises",
+        "articles 5 et 6",
+        "IBA"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -163,7 +170,11 @@
         "SYSCOHADA",
         "comptabilité d'engagement",
         "comptabilité de caisse",
-        "professions libérales"
+        "professions libérales",
+        "activité non commerciale",
+        "propriété intellectuelle",
+        "règles comptables",
+        "bénéfices"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
@@ -223,7 +234,11 @@
       "mots_cles": [
         "retenue à la source",
         "société transparente",
-        "article 183"
+        "article 183",
+        "IBA",
+        "personnes physiques",
+        "part de bénéfice",
+        "prélèvement à la source"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
@@ -252,16 +267,8 @@
         "c) tenir un registre chronologique de toutes les factures de ventes ou de prestations ;",
         "d) souscrire chaque mois la déclaration visée à l'article 176 du CGI, tome 1 ;",
         "e) effectuer, le cas échéant, pour le compte du Trésor, les retenues à la source prévues par la loi ;",
-        "f) produire :",
-        "(i) le bilan ;",
-        "(ii) le compte de résultat ;",
-        "(iii) les notes annexes.",
-        "",
-        "Les notes annexes sont composées de :",
-        "(i) tableau du système minimal de trésorerie (SMT) de suivi du matériel, du mobilier et des cautions ;",
-        "(ii) état des stocks ;",
-        "(iii) état des créances et des dettes non échues ;",
-        "(iv) le journal de trésorerie SMT.",
+        "f) produire (i) le bilan, (ii) le compte de résultat et (iii) les notes annexes.",
+        "Les notes annexes sont composées de : (i) tableau du système minimal de trésorerie (SMT) de suivi du matériel, du mobilier et des cautions, (ii) état des stocks, (iii) état des créances et des dettes non échues et (iv) le journal de trésorerie SMT.",
         "7) Les deux registres comptables visés aux alinéas b) et c) ci-dessus doivent être conservés dans les conditions prévues à l'article 104 du CGI, tome 1 et présentés à toute réquisition de l'administration fiscale, en particulier à des fins de contrôle pour la détermination du chiffre d'affaires annuel. Lesdits registres doivent être présentés chaque trimestre auprès de l'administration fiscale pour paraphe."
       ],
       "mots_cles": [
@@ -706,7 +713,9 @@
         "taux IRCM",
         "15 %",
         "35 %",
-        "revenus occultes"
+        "revenus occultes",
+        "impôt sur le revenu des capitaux mobiliers",
+        "taux d'imposition"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 6 : Modalités d'imposition",
@@ -889,7 +898,10 @@
       "mots_cles": [
         "base d'imposition",
         "loyers bruts",
-        "propriétaire"
+        "propriétaire",
+        "revenus fonciers",
+        "IRF",
+        "montant"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
@@ -1100,7 +1112,11 @@
       ],
       "mots_cles": [
         "absence d'exonération",
-        "incitation à l'embauche"
+        "incitation à l'embauche",
+        "ITS",
+        "impôt sur les traitements et salaires",
+        "réduction d'impôt",
+        "politique d'embauche"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
@@ -1144,7 +1160,11 @@
         "fait générateur",
         "exigibilité",
         "avances",
-        "acomptes"
+        "acomptes",
+        "ITS",
+        "mise à disposition",
+        "salaire",
+        "mois de versement"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 4 : Fait générateur et exigibilité",
@@ -1192,7 +1212,11 @@
         "assiette",
         "déduction",
         "20 %",
-        "cotisations sociales de retraite"
+        "cotisations sociales de retraite",
+        "ITS",
+        "montant net",
+        "part salariale",
+        "détermination"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1353,10 +1377,10 @@
       "texte": [
         "1) Le quotient familial ou le salaire net imposable correspondant à une part est imposé en appliquant les taux de :",
         "- 1.200 FCFA pour la fraction comprise entre 0 et 615.000 ;",
-        "- 10 % pour la fraction comprise entre 615.001 et 1.500.000 ;",
-        "- 15 % pour la fraction comprise entre 1.500.001 et 3.500.000 ;",
-        "- 20 % pour la fraction comprise entre 3.500.001 et 5.000.000 ;",
-        "- 30 % pour la fraction comprise entre 5.000.001 et suivant.",
+        "- 10 % pour la fraction comprise entre 615 001 et 1 500 000 ;",
+        "- 15 % pour la fraction comprise entre 1 500 001 et 3 500 000 ;",
+        "- 20 % pour la fraction comprise entre 3 500 001 et 5 000 000 ;",
+        "- 30 % pour la fraction comprise entre 5 000 001 et suivant.",
         "2) Lorsque le salaire brut est inférieur au SMIG fixé par les textes en vigueur, l'impôt annuel minimum est fixé à 1.200 FCFA.",
         "3) L'impôt sur les traitements et salaires est payé par acompte mensuel retenu à la source par l'employeur."
       ],
@@ -1402,7 +1426,8 @@
       "article": "Art. 116-I",
       "titre": "Déclaration annuelle des salaires",
       "texte": [
-        "1) Au titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du Ministre des finances. Cette annexe est un état récapitulatif de la DAS 1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
+        "1) Au titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du Ministre des finances.",
+        "Cette annexe est un état récapitulatif de la DAS 1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
         "2) Au cours de l'année 2026, l'impôt sur les traitements et salaires se calcule comme en matière d'IRPP en prenant en considération les dispositions des articles 114 à 116 H ci-dessus."
       ],
       "mots_cles": [

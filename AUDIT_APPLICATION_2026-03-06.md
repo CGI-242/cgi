@@ -185,33 +185,33 @@
 
 ## 5. BAS
 
-| #      | Fichier                                                  | Problème                                                | Statut                                                     |
-| ------ | -------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| LOW-01 | `server/src/app.ts`                                    | Health check import dynamique inutile                    | **CORRIGÉ**                                         |
-| LOW-02 | `server/src/services/tokenBlacklist.service.ts`        | `require()` au lieu de import                          | **CORRIGÉ**                                         |
-| LOW-03 | `server/src/app.ts`                                    | Swagger exposé si NODE_ENV != "production"              | **CORRIGÉ**                                         |
-| LOW-04 | `server/src/services/organization.service.ts`          | Naming incohérent entrepriseNom/name                    | **CORRIGÉ**                                         |
-| LOW-05 | Routes diverses                                          | Formats de réponse d'erreur incohérents                | **CORRIGÉ**                                         |
-| LOW-06 | `server/src/utils/cache.ts`                            | Hash DJB2 faible pour clés de cache                     | **CORRIGÉ**                                         |
-| LOW-07 | `server/src/middleware/auth.ts`                        | Cookie `SameSite: lax` au lieu de `strict`           | **CORRIGÉ**                                         |
-| LOW-08 | `server/src/app.ts`                                    | Pas de middleware de logging des requêtes               | **CORRIGÉ**                                         |
-| LOW-09 | `server/src/app.ts`                                    | CSP désactivé mais serveur sert le SPA                 | **CORRIGÉ**                                         |
-| LOW-10 | `server/src/routes/alertes-fiscales.routes.ts`         | Paramètre `:n` non validé                            | **CORRIGÉ**                                         |
-| LOW-11 | `server/src/routes/chat.ts`                            | Paramètre `:numero` non validé                       | **CORRIGÉ**                                         |
-| LOW-12 | `server/src/utils/prisma.ts`                           | Pas de config logging Prisma en prod                     | **CORRIGÉ**                                         |
-| LOW-13 | `server/src/server.ts`                                 | Pas de graceful shutdown (SIGTERM)                       | **CORRIGÉ**                                         |
-| LOW-14 | `mobile/lib/services/contribution-fonciere.service.ts` | Commentaire "Minimum 1,000" trompeur                     | **CORRIGÉ**                                         |
-| LOW-15 | `mobile/lib/api/client.ts`                             | Erreur header org silencieusement ignorée               | **CORRIGÉ**                                         |
-| LOW-16 | `mobile/lib/api/auth.ts`                               | Type mismatch forgotPassword                             | **CORRIGÉ**                                         |
-| LOW-17 | `mobile/app.json`                                      | `userInterfaceStyle: "light"` mais dark mode supporté | **CORRIGÉ**                                         |
-| LOW-18 | `mobile/app.json`                                      | Descriptions permissions iOS en langues mixtes           | **CORRIGÉ**                                         |
-| LOW-19 | `mobile/package.json`                                  | IP du VPS exposée dans script deploy                    | **CORRIGÉ**                                         |
-| LOW-20 | `mobile/components/ErrorBoundary.tsx`                  | Bouton retry sans accessibilityRole                      | **CORRIGÉ**                                         |
-| LOW-21 | `mobile/app/(app)/simulateur/*.tsx`                    | Styles inline (pas de StyleSheet.create)                 | **CORRIGÉ** — StyleSheet.create dans les 15 simulateurs |
-| LOW-22 | `mobile/lib/services/contribution-fonciere.service.ts` | `usines_transfo` sans traduction i18n                  | **CORRIGÉ**                                         |
-| LOW-23 | `mobile/app/(app)/simulateur/index.tsx`                | Route retenue-source sans titre breadcrumb               | **CORRIGÉ** (MED-29)                                |
-| LOW-24 | `mobile/lib/services/igf.service.ts`                   | Barème progressif erroné → taux unique Art. 5 §5 TFNC4 | **CORRIGÉ** — 5% CA HT ou 8% marge (Art. 5 §5)    |
-| LOW-25 | `ETAT_FONCTIONNALITES_CGI242.md`                       | Référence erronée au split 35%/65%                    | **CORRIGÉ**                                         |
+| #      | Fichier                                                  | Problème                                                  | Statut                                                          |
+| ------ | -------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
+| LOW-01 | `server/src/app.ts`                                    | Health check import dynamique inutile                      | **CORRIGÉ**                                              |
+| LOW-02 | `server/src/services/tokenBlacklist.service.ts`        | `require()` au lieu de import                            | **CORRIGÉ**                                              |
+| LOW-03 | `server/src/app.ts`                                    | Swagger exposé si NODE_ENV != "production"                | **CORRIGÉ**                                              |
+| LOW-04 | `server/src/services/organization.service.ts`          | Naming incohérent entrepriseNom/name                      | **CORRIGÉ**                                              |
+| LOW-05 | Routes diverses                                          | Formats de réponse d'erreur incohérents                  | **CORRIGÉ**                                              |
+| LOW-06 | `server/src/utils/cache.ts`                            | Hash DJB2 faible pour clés de cache                       | **CORRIGÉ**                                              |
+| LOW-07 | `server/src/middleware/auth.ts`                        | Cookie `SameSite: lax` au lieu de `strict`             | **CORRIGÉ**                                              |
+| LOW-08 | `server/src/app.ts`                                    | Pas de middleware de logging des requêtes                 | **CORRIGÉ**                                              |
+| LOW-09 | `server/src/app.ts`                                    | CSP désactivé mais serveur sert le SPA                   | **CORRIGÉ**                                              |
+| LOW-10 | `server/src/routes/alertes-fiscales.routes.ts`         | Paramètre `:n` non validé                              | **CORRIGÉ**                                              |
+| LOW-11 | `server/src/routes/chat.ts`                            | Paramètre `:numero` non validé                         | **CORRIGÉ**                                              |
+| LOW-12 | `server/src/utils/prisma.ts`                           | Pas de config logging Prisma en prod                       | **CORRIGÉ**                                              |
+| LOW-13 | `server/src/server.ts`                                 | Pas de graceful shutdown (SIGTERM)                         | **CORRIGÉ**                                              |
+| LOW-14 | `mobile/lib/services/contribution-fonciere.service.ts` | Commentaire "Minimum 1,000" trompeur                       | **CORRIGÉ**                                              |
+| LOW-15 | `mobile/lib/api/client.ts`                             | Erreur header org silencieusement ignorée                 | **CORRIGÉ**                                              |
+| LOW-16 | `mobile/lib/api/auth.ts`                               | Type mismatch forgotPassword                               | **CORRIGÉ**                                              |
+| LOW-17 | `mobile/app.json`                                      | `userInterfaceStyle: "light"` mais dark mode supporté   | **CORRIGÉ**                                              |
+| LOW-18 | `mobile/app.json`                                      | Descriptions permissions iOS en langues mixtes             | **CORRIGÉ**                                              |
+| LOW-19 | `mobile/package.json`                                  | IP du VPS exposée dans script deploy                      | **CORRIGÉ**                                              |
+| LOW-20 | `mobile/components/ErrorBoundary.tsx`                  | Bouton retry sans accessibilityRole                        | **CORRIGÉ**                                              |
+| LOW-21 | `mobile/app/(app)/simulateur/*.tsx`                    | Styles inline (pas de StyleSheet.create)                   | **CORRIGÉ** — StyleSheet.create dans les 15 simulateurs |
+| LOW-22 | `mobile/lib/services/contribution-fonciere.service.ts` | `usines_transfo` sans traduction i18n                    | **CORRIGÉ**                                              |
+| LOW-23 | `mobile/app/(app)/simulateur/index.tsx`                | Route retenue-source sans titre breadcrumb                 | **CORRIGÉ** (MED-29)                                     |
+| LOW-24 | `mobile/lib/services/igf.service.ts`                   | Barème progressif erroné → taux unique Art. 5 §5 TFNC4 | **CORRIGÉ** — 5% CA HT ou 8% marge (Art. 5 §5)         |
+| LOW-25 | `ETAT_FONCTIONNALITES_CGI242.md`                       | Référence erronée au split 35%/65%                      | **CORRIGÉ**                                              |
 
 ---
 
@@ -274,13 +274,9 @@
 | --------------- | ------------ | ------------ | ----------- |
 | CRITIQUE        | 5            | 5            | 0           |
 | HAUT            | 14           | 14           | 0           |
-| MOYEN           | 29           | 29           | 0           |
+| MOYEN           | 29           | 29           | <br />0     |
 | BAS             | 25           | 25           | 0           |
 | FEATURE         | 5            | 5            | 0           |
 | **Total** | **78** | **78** | **0** |
 
 **Toutes les 78 issues identifiées ont été corrigées.**
-
----
-
-*Rapport généré par audit automatisé — CGI-242 v2026*
