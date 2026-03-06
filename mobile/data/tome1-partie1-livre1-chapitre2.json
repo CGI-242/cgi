@@ -1209,7 +1209,11 @@
       "mots_cles": [
         "quotient familial",
         "parts",
-        "situation matrimoniale"
+        "situation matrimoniale",
+        "charges de famille",
+        "barème",
+        "article 116 G",
+        "impôt brut"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1241,7 +1245,12 @@
         "célibataire",
         "marié",
         "veuf",
-        "enfants à charge"
+        "enfants à charge",
+        "demi-part",
+        "6,5 parts",
+        "imposition séparée",
+        "époux",
+        "décès du conjoint"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1262,11 +1271,16 @@
       "mots_cles": [
         "dérogation",
         "quotient familial",
+        "1,5",
         "célibataire",
         "divorcé",
         "veuf",
+        "pension d'invalidité",
+        "40 %",
+        "adoption",
         "enfant infirme",
-        "affectation"
+        "paraétatique",
+        "communes de plein exercice"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
