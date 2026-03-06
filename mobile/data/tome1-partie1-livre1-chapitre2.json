@@ -1186,13 +1186,13 @@
       "article": "Art. 116",
       "titre": "Détermination de l'assiette de l'impôt",
       "texte": [
-        "Pour déterminer l'assiette de l'impôt, une déduction de 20% est appliquée au montant net calculé après déduction de la part salariale des cotisations sociales de retraite."
+        "Pour déterminer l'assiette de l'impôt, une déduction de 20 % est appliquée au montant net calculé après déduction de la part salariale des cotisations sociales de retraite."
       ],
       "mots_cles": [
-        "barème progressif",
-        "retenue à la source",
-        "SMIG",
-        "déclaration annuelle"
+        "assiette",
+        "déduction",
+        "20 %",
+        "cotisations sociales de retraite"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1202,8 +1202,8 @@
       "article": "Art. 116-A",
       "titre": "Calcul de l'impôt – quotient familial",
       "texte": [
-        "Pour le calcul de l'impôt, le salaire net imposable, arrondi au millier de francs inférieur, est divisé en un certain nombre de parts d'après la situation matrimoniale et les charges de famille du contribuable.",
-        "Le quotient familial déterminé par ce rapport est taxé par application du barème prévu à l'article 116 C.",
+        "Pour le calcul de l'impôt, le salaire net imposable, arrondi au millier de franc inférieur, est divisé en un certain nombre de parts d'après la situation matrimoniale et les charges de famille du contribuable.",
+        "Le quotient familial déterminé par ce rapport est taxé par application du barème prévu à l'article 116 G.",
         "L'impôt brut est égal au produit de la cotisation ainsi obtenue par le nombre de parts."
       ],
       "mots_cles": [
@@ -1219,16 +1219,17 @@
       "article": "Art. 116-B",
       "titre": "Nombre de parts pour la détermination du salaire net imposable",
       "texte": [
-        "- Célibataire, divorcé ou veuf sans enfant à charge : 1 part",
-        "- Marié sans enfant à charge : 2 parts",
-        "- Célibataire ou divorcé ayant un enfant à charge : 2 parts",
-        "- Marié ou veuf ayant un enfant à charge : 2,5 parts",
-        "- Célibataire ou divorcé ayant deux enfants à charge : 2,5 parts",
-        "- Marié ou veuf ayant deux enfants à charge : 3 parts",
-        "- Célibataire ou divorcé ayant trois enfants à charge : 3 parts",
-        "- Marié ou veuf ayant trois enfants à charge : 3,5 parts",
-        "- Célibataire ou divorcé ayant quatre enfants à charge : 3,5 parts",
-        "Et ainsi de suite en augmentant d'une demi-part par enfant à charge du contribuable, jusqu'à un maximum de 6,5 parts.",
+        "Le nombre de parts à prendre en considération pour la détermination du salaire net imposable est fixé comme suit :",
+        "- célibataire, divorcé ou veuf (sans enfant à charge) : 1 part",
+        "- marié sans enfant à charge : 2 parts",
+        "- célibataire ou divorcé ayant un enfant à charge : 2 parts",
+        "- marié ou veuf ayant un enfant à charge : 2,5 parts",
+        "- célibataire ou divorcé ayant deux enfants à charge : 2,5 parts",
+        "- marié ou veuf ayant deux enfants à charge : 3 parts",
+        "- célibataire ou divorcé ayant trois enfants à charge : 3 parts",
+        "- marié ou veuf ayant trois enfants à charge : 3,5 parts",
+        "- célibataire ou divorcé ayant quatre enfants à charge : 3,5 parts",
+        "et ainsi de suite en augmentant d'une demi-part par enfant à charge du contribuable, jusqu'à un maximum de 6,5 parts.",
         "En cas d'imposition séparée des époux salariés, chaque époux est considéré comme un marié, les enfants à la charge du mari, sauf dérogation expresse.",
         "Le contribuable veuf sans enfant à charge est considéré, pour le calcul de l'impôt, comme marié sans enfant à charge pendant les deux années qui suivent le décès du conjoint.",
         "Il peut ultérieurement bénéficier des dispositions de l'article 116 C ci-après.",
@@ -1250,13 +1251,13 @@
       "article": "Art. 116-C",
       "titre": "Dérogations au quotient familial",
       "texte": [
-        "Par dérogation aux dispositions qui précèdent, le salaire net imposable des contribuables célibataires, divorcés ou veufs n'ayant pas d'enfants à leur charge est divisé par 1,5 lorsque ces contribuables :",
+        "1) Par dérogation aux dispositions qui précèdent, le salaire net imposable des contribuables célibataires, divorcés ou veufs, n'ayant pas d'enfants à leur charge est divisé par 1,5 lorsque ces contribuables :",
         "a) ont un ou plusieurs enfants majeurs ou faisant l'objet d'une imposition distincte ;",
         "b) ont un ou plusieurs enfants qui sont morts à la condition que l'un d'eux au moins ait atteint l'âge de 16 ans ou que l'un d'eux au moins soit décédé par suite de fait de guerre ;",
         "c) sont titulaires d'une pension prévue par la loi du 31 mars 1919 pour une invalidité de 40 % et au-dessus ou d'une pension de veuve prévue par les lois des 31 mars et 24 juin 1919, ou d'une pension d'invalidité pour accident du travail de 40 % et au-dessus ;",
         "d) ont adopté un enfant à la condition que, si l'adoption a eu lieu alors que l'enfant était âgé de plus de 10 ans, cet enfant ait été à la charge de l'adoptant depuis l'âge de 10 ans. Cette disposition n'est pas applicable si l'enfant adopté est décédé avant d'avoir atteint l'âge de 16 ans.",
-        "Le quotient familial prévu à l'article 116 A ci-dessus est augmenté d'une part pour l'enfant infirme majeur au lieu d'une demi-part.",
-        "Les agents de l'État et du secteur parapublique dont le poste d'affectation est situé en dehors des communes de plein exercice bénéficient d'une demi-part en plus dans la détermination de leur quotient familial, dès lors qu'ils résident dans leurs lieux d'affectation."
+        "2) Le quotient familial prévu à l'article 116 A ci-dessus est augmenté d'une part pour l'enfant infirme majeur au lieu d'une demi part.",
+        "3) Les agents de l'État et du secteur paraétatique dont le poste d'affectation est situé en dehors des communes de plein exercice bénéficient d'une demi-part en plus dans la détermination de leur quotient familial, dès lors qu'ils résident dans leurs lieux d'affectation."
       ],
       "mots_cles": [
         "dérogation",
