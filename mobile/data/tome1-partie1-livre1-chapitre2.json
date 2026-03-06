@@ -640,21 +640,25 @@
       "texte": [
         "Le fait générateur de l'impôt est constitué :",
         "a) pour les dividendes, par la décision de l'assemblée autorisant leur distribution ;",
-        "b) pour les charges non déductibles au titre de l'impôt sur les sociétés, visées par l'article 104 paragraphe 6 du présent Code par le dépôt de la déclaration annuelle de bénéfices de la société ou par la notification de redressement ;",
+        "b) pour les charges non déductibles au titre de l'impôt sur les sociétés, visées par l'article 104 paragraphe 6 du présent Code et par le dépôt de la déclaration annuelle des bénéfices de la société ou par la notification de redressement ;",
         "c) pour les bénéfices des établissements stables visés à l'article 104 paragraphe 7 du présent Code, par le dépôt de la déclaration annuelle des bénéfices de l'établissement ;",
         "d) pour les intérêts, soit par la mise en paiement, soit par leur inscription au compte individuel des bénéficiaires ;",
         "e) pour les plus-values de cession de valeurs mobilières, par la cession au sens de l'article 105 C du présent Code ;",
         "f) pour toutes les autres sommes, par la mise en paiement.",
         "L'exigibilité de l'impôt intervient au moment de la réalisation du fait générateur.",
-        "Pour les dividendes, l'exigibilité intervient au moment de leur versement et au plus tard trois (3) mois après la décision de leur distribution par l'assemblée générale."
+        "Pour les dividendes, l'exigibilité intervient au moment de leur versement et au plus tard trois mois après la décision de leur distribution par l'assemblée générale."
       ],
       "mots_cles": [
         "fait générateur",
         "exigibilité",
         "dividendes",
+        "charges non déductibles",
         "intérêts",
         "plus-values",
-        "établissements stables"
+        "établissements stables",
+        "assemblée générale",
+        "notification de redressement",
+        "cession de valeurs mobilières"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 4 : Fait générateur et exigibilité",
@@ -671,17 +675,21 @@
         "d) pour les lots, par le montant même du lot ;",
         "e) pour les revenus des créances, dépôts et cautionnements : par le montant brut des intérêts, arrérages et tous autres produits des valeurs énumérées ;",
         "f) pour les bénéfices réputés distribués des établissements stables : par le montant des bénéfices imposables établis conformément aux dispositions des articles 6 et suivants, sous déduction de l'impôt sur les sociétés ;",
-        "g) pour les plus-values de cession des valeurs mobilières, par la différence entre le prix de cession et le prix d'acquisition :\n(i) le prix de cession et d'acquisition à retenir sont les prix réels qui sont stipulés dans l'acte correspondant ;\n(ii) lorsque le bien a été acquis ou cédé à titre gratuit, le prix à retenir est la valeur vénale du bien au jour de la mutation à titre gratuit ;\n(iii) les moins-values peuvent être déduites des plus-values mobilières ultérieurement réalisées, jusqu'au 31 décembre de la troisième année qui suit celle au cours de laquelle a eu lieu la cession.",
+        "g) pour les plus-values de cession des valeurs mobilières, par la différence entre le prix de cession et le prix d'acquisition :\ni) les prix de cession et d'acquisition à retenir sont les prix réels qui sont stipulés dans l'acte correspondant ;\nii) lorsque le bien a été acquis ou est cédé à titre gratuit, le prix à retenir est la valeur vénale du bien au jour de la mutation à titre gratuit ;\niii) les moins-values peuvent être déduites des plus-values mobilières ultérieurement réalisées, jusqu'au 31 décembre de la troisième année qui suit celle au cours de laquelle a eu lieu la cession.",
         "h) pour les revenus perçus de l'étranger, par le montant déterminé selon les paragraphes a) à g) sous déduction de l'impôt mobilier perçu dans le pays d'origine."
       ],
       "mots_cles": [
         "base imposable",
         "dividendes",
+        "valeurs mobilières",
         "intérêts",
         "plus-values",
         "primes de remboursement",
+        "créances",
         "établissements stables",
-        "moins-values"
+        "moins-values",
+        "valeur vénale",
+        "revenus de l'étranger"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 5 : Base d'imposition",
@@ -691,13 +699,13 @@
       "article": "Art. 110",
       "titre": "Taux de l'IRCM",
       "texte": [
-        "Le taux de l'impôt sur le revenu des capitaux mobiliers est fixé à 15%.",
-        "Ce taux est fixé à 35% pour les revenus occultes."
+        "Le taux de l'impôt sur le revenu des capitaux mobiliers est fixé à 15 %.",
+        "Ce taux est fixé à 35 % pour les revenus occultes."
       ],
       "mots_cles": [
         "taux IRCM",
-        "15%",
-        "35%",
+        "15 %",
+        "35 %",
         "revenus occultes"
       ],
       "statut": "en vigueur",
@@ -708,7 +716,7 @@
       "article": "Art. 110-A",
       "titre": "Modalités de retenue et de paiement",
       "texte": [
-        "Lorsque les revenus imposables sont versés par une personne exploitée en République du Congo au sens des dispositions de l'article 4 du présent Code à :",
+        "Lorsque les revenus imposables sont versés par une personne exploitée en République du Congo au sens des dispositions de l'article 4 de la présente loi à :",
         "a) des personnes physiques, des personnes morales non soumises à l'impôt sur les sociétés ou des non-résidents, ces revenus sont soumis à une retenue libératoire ;",
         "b) des personnes morales soumises à l'impôt sur les sociétés, l'État également appliquer une retenue libératoire.",
         "Les revenus de capitaux mobiliers de source étrangère sont déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les modalités fixées par le présent Code.",
@@ -720,7 +728,11 @@
         "paiement",
         "plus-values",
         "60 jours",
-        "non-résidents"
+        "non-résidents",
+        "source étrangère",
+        "cédant",
+        "cessionnaire",
+        "solidairement responsables"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 6 : Modalités d'imposition",
