@@ -130,14 +130,6 @@ export default function SimulateurHub() {
       icon: "cut-outline" as const,
       route: "/(app)/simulateur/retenue-source",
     },
-    {
-      id: "calculatrice",
-      title: t("simulateur.hubCalculatrice"),
-      subtitle: t("simulateur.calculatrice.subtitle"),
-      description: "",
-      icon: "calculator-outline" as const,
-      route: "/(app)/simulateur/calculatrice",
-    },
   ];
 
   return (

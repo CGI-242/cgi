@@ -17,6 +17,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -43,7 +44,6 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/contribution-fonciere": "simulateur.foncier.title",
   "/simulateur/paie": "simulateur.paie.title",
   "/simulateur/retenue-source": "simulateur.rts.title",
-  "/simulateur/calculatrice": "simulateur.calculatrice.title",
   "/calendrier": "calendrier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
@@ -78,7 +78,6 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/contribution-fonciere": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/paie": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/retenue-source": { path: "/simulateur", titleKey: "simulateur.title" },
-  "/simulateur/calculatrice": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -197,7 +196,6 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/contribution-fonciere" />
       <Stack.Screen name="simulateur/paie" />
       <Stack.Screen name="simulateur/retenue-source" />
-      <Stack.Screen name="simulateur/calculatrice" />
       <Stack.Screen name="calendrier/index" />
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />
@@ -247,6 +245,7 @@ export default function AppLayout() {
           {stackScreens}
         </View>
 
+        <FloatingCalculator />
         <MobileTabBar active={getActiveTab()} onTabPress={handleMobileTabPress} />
         <SessionExpiredModal />
       </View>
@@ -350,6 +349,7 @@ export default function AppLayout() {
         {/* Contenu */}
         {stackScreens}
       </View>
+      <FloatingCalculator />
       <SessionExpiredModal />
     </View>
   );
