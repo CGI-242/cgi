@@ -1,3 +1,4 @@
+import { Platform } from "react-native";
 import { Stack } from "expo-router";
 import { useTheme } from "@/lib/theme/ThemeContext";
 
@@ -8,7 +9,7 @@ export default function AuthLayout() {
     <Stack
       screenOptions={{
         headerShown: false,
-        animation: "slide_from_right",
+        animation: Platform.OS === "web" ? "none" : "slide_from_right",
         contentStyle: { backgroundColor: colors.background },
       }}
     />

@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Modal } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
@@ -12,8 +12,6 @@ export default function SessionExpiredModal() {
   const reason = useAuthStore((s) => s.sessionExpiredReason);
   const logout = useAuthStore((s) => s.logout);
 
-  if (!sessionExpired) return null;
-
   const isRevoked = reason === "revoked";
 
   const handleReconnect = async () => {
@@ -21,30 +19,32 @@ export default function SessionExpiredModal() {
   };
 
   return (
-    <View style={styles.overlay}>
-      <View style={[styles.card, { backgroundColor: colors.card }]}>
-        <Ionicons
-          name={isRevoked ? "phone-portrait-outline" : "time-outline"}
-          size={48}
-          color={isRevoked ? colors.primary : colors.warning}
-          style={{ marginBottom: 16 }}
-        />
-        <Text style={[styles.title, { color: colors.text, fontFamily: fonts.heading, fontWeight: fontWeights.heading }]}>
-          {isRevoked ? t("auth.sessionRevoked") : t("auth.sessionExpired")}
-        </Text>
-        <Text style={[styles.message, { color: colors.textSecondary, fontFamily: fonts.regular, fontWeight: fontWeights.regular }]}>
-          {isRevoked ? t("auth.sessionRevokedMessage") : t("auth.sessionExpiredMessage")}
-        </Text>
-        <TouchableOpacity
-          onPress={handleReconnect}
-          style={[styles.button, { backgroundColor: colors.primary }]}
-        >
-          <Text style={[styles.buttonText, { fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
-            {t("auth.reconnect")}
+    <Modal visible={sessionExpired} transparent animationType="fade">
+      <View style={styles.overlay}>
+        <View style={[styles.card, { backgroundColor: colors.card }]}>
+          <Ionicons
+            name={isRevoked ? "phone-portrait-outline" : "time-outline"}
+            size={48}
+            color={isRevoked ? colors.primary : colors.warning}
+            style={{ marginBottom: 16 }}
+          />
+          <Text style={[styles.title, { color: colors.text, fontFamily: fonts.heading, fontWeight: fontWeights.heading }]}>
+            {isRevoked ? t("auth.sessionRevoked") : t("auth.sessionExpired")}
           </Text>
-        </TouchableOpacity>
+          <Text style={[styles.message, { color: colors.textSecondary, fontFamily: fonts.regular, fontWeight: fontWeights.regular }]}>
+            {isRevoked ? t("auth.sessionRevokedMessage") : t("auth.sessionExpiredMessage")}
+          </Text>
+          <TouchableOpacity
+            onPress={handleReconnect}
+            style={[styles.button, { backgroundColor: colors.primary }]}
+          >
+            <Text style={[styles.buttonText, { fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
+              {t("auth.reconnect")}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </Modal>
   );
 }
 

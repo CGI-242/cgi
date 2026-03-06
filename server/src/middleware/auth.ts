@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { verifyAccessToken } from "../utils/jwt";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
 import { createLogger } from "../utils/logger";
+import prisma from "../utils/prisma";
 
 const logger = createLogger("Auth");
 
@@ -57,6 +58,13 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
     const decoded = JSON.parse(Buffer.from(token.split('.')[1], 'base64').toString());
     if (decoded.iat && await TokenBlacklistService.isUserBlacklistedAsync(payload.userId, decoded.iat)) {
       res.status(401).json({ error: "Session révoquée, veuillez vous reconnecter" });
+      return;
+    }
+
+    // Vérifier que l'utilisateur existe toujours en base
+    const userExists = await prisma.user.findUnique({ where: { id: payload.userId }, select: { id: true } });
+    if (!userExists) {
+      res.status(401).json({ error: "Compte supprimé ou inexistant" });
       return;
     }
 

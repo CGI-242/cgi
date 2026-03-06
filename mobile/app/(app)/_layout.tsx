@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Platform } from "react-native";
 import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -163,7 +163,7 @@ export default function AppLayout() {
     <Stack
       screenOptions={{
         headerShown: false,
-        animation: "slide_from_right",
+        animation: Platform.OS === "web" ? "none" : "slide_from_right",
         contentStyle: { backgroundColor: colors.background },
       }}
     >
