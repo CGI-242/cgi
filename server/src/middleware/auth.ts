@@ -114,6 +114,9 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
     maxAge: refreshMaxAge,
   });
 
+  // Poser le cookie CSRF (lisible par le JS client)
+  setCsrfCookie(res, generateCsrfToken());
+
   // CSRF double-submit cookie (non-httpOnly, lisible par le JS client)
   const csrfToken = generateCsrfToken();
   setCsrfCookie(res, csrfToken);
