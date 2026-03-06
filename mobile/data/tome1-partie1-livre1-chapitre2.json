@@ -818,7 +818,7 @@
       "article": "Art. 111-C",
       "titre": "Exonérations en matière d'impôt sur les revenus fonciers",
       "texte": [
-        "Sont exonérés :",
+        "Peuvent être exonérés :",
         "a) les revenus des immeubles ou parties d'immeubles qui sont occupés à titre gratuit par les descendants ou ascendants en ligne directe du propriétaire ;",
         "b) les plus-values de cession de la résidence principale détenue par le cédant depuis au moins 5 ans ;",
         "c) les revenus fonciers perçus par l'État ou les collectivités locales.",
@@ -828,8 +828,12 @@
         "exonération",
         "résidence principale",
         "occupation gratuite",
-        "Etat",
-        "collectivités"
+        "descendants",
+        "ascendants",
+        "5 ans",
+        "cédant",
+        "État",
+        "collectivités locales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 2 : Exonérations",
@@ -846,8 +850,11 @@
       "mots_cles": [
         "territorialité",
         "immeuble",
+        "Congo",
         "résident",
-        "cession"
+        "bénéficiaire",
+        "cession",
+        "revenus fonciers"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 3 : Territorialité",
@@ -864,8 +871,10 @@
       "mots_cles": [
         "fait générateur",
         "exigibilité",
+        "paiement",
         "loyers",
-        "cession"
+        "cession",
+        "plus-values"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 4 : Fait générateur et exigibilité",
@@ -891,15 +900,18 @@
       "titre": "Base d'imposition des plus-values de cession d'immeubles",
       "texte": [
         "Pour les plus-values de cession d'immeubles, la base d'imposition est égale à la différence entre le prix de cession et le prix d'acquisition.",
-        "Les prix de cession et d'acquisition à retenir sont les prix réels tels qu'ils sont stipulés dans l'acte correspondant sous le contrôle de l'administration fiscale, en application des dispositions du code général des impôts.",
+        "Les prix de cession et d'acquisition à retenir sont les prix réels tels qu'ils sont stipulés dans l'acte correspondant sous le contrôle de l'administration fiscale, en application des dispositions du Code général des impôts.",
         "Le prix d'acquisition est majoré des frais afférents à l'acquisition à titre gratuit ou à titre onéreux ainsi que des dépenses, dûment justifiées, de construction, de reconstruction, d'agrandissement, de rénovation ou d'amélioration, réalisées depuis l'acquisition."
       ],
       "mots_cles": [
         "plus-value",
         "prix de cession",
         "prix d'acquisition",
+        "administration fiscale",
         "frais",
-        "travaux"
+        "construction",
+        "rénovation",
+        "amélioration"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 5 : Base d'imposition",
@@ -915,6 +927,8 @@
       "mots_cles": [
         "revenus de l'étranger",
         "crédit d'impôt",
+        "conventions bilatérales",
+        "déduction",
         "double imposition"
       ],
       "statut": "en vigueur",
@@ -926,19 +940,23 @@
       "titre": "Modalités d'imposition de l'impôt sur les revenus fonciers",
       "texte": [
         "Le taux de l'impôt sur les revenus fonciers est de :",
-        "- 9% pour les revenus locatifs ;",
-        "- 10% pour les plus-values.",
+        "- 9 % pour les revenus locatifs ;",
+        "- 10 % pour les plus-values.",
         "Pour les revenus locatifs, l'impôt est à la charge du propriétaire.",
-        "Les personnes percevant des loyers imposables qui n'ont pas été soumis à la retenue à la source, sont tenues de déclarer chaque année les loyers perçus ainsi que le montant des retenues effectuées par leurs locataires, le cas échéant, et d'acquitter le solde d'impôt dû, dans les conditions fixées dans le présent Code.",
+        "Les personnes percevant des loyers imposables qui n'ont pas été soumis à la retenue à la source, sont tenues de déclarer chaque année les loyers perçus ainsi que le montant des retenues effectuées par leurs locataires, et, le cas échéant, d'acquitter le solde d'impôt dû, dans des conditions fixées dans le présent Code.",
         "Pour les plus-values de cession d'immeubles, l'impôt est à la charge du cédant.",
         "Le cessionnaire et la société à prépondérance immobilière dont les titres sont directement ou indirectement cédés sont solidairement responsables du paiement de l'impôt.",
         "Les moins-values immobilières réalisées au titre d'une année sont imputées selon les mêmes modalités que celles prévues par les dispositions de l'article 111 du présent Code."
       ],
       "mots_cles": [
         "taux",
-        "9%",
-        "15%",
+        "9 %",
+        "10 %",
+        "revenus locatifs",
+        "propriétaire",
         "retenue à la source",
+        "cédant",
+        "prépondérance immobilière",
         "responsabilité solidaire",
         "moins-values"
       ],
