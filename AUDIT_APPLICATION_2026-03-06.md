@@ -255,6 +255,8 @@
 | `59778ff` | Invalider tous les tokens après changement de mot de passe | CRITIQUE |
 | `5f890a8` | Corriger 14 issues HIGH (HIGH-01 à HIGH-14) + fix "Refresh token manquant" | HAUT |
 | `4871dbf` | Corriger 29 issues MEDIUM (MED-01 à MED-29) | MOYEN |
+| `9bef4c7` | Implémenter 5 fonctionnalités manquantes (MISS-01 à MISS-05) | FEATURE |
+| `b4c865b` | Corriger 25 issues LOW (LOW-01 à LOW-25) | BAS |
 
 ### Résumé de l'état des corrections
 
@@ -263,8 +265,15 @@
 | CRITIQUE | 5 | 5 | 0 |
 | HAUT | 14 | 14 | 0 |
 | MOYEN | 29 | 29 | 0 |
-| BAS | 25 | 0 | 25 |
-| **Total** | **73** | **48** | **25** |
+| BAS | 25 | 23 | 2 |
+| FEATURE | 5 | 5 | 0 |
+| **Total** | **78** | **76** | **2** |
+
+### Issues non corrigées (intentionnel)
+| # | Raison |
+|---|--------|
+| LOW-21 | Styles inline dans simulateurs — trop invasif, aucun impact fonctionnel |
+| LOW-24 | Taux IGF 3.5% — divergence avec Art. 5 (5%), TODO ajouté, nécessite validation juridique |
 
 ---
 
