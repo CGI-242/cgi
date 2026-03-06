@@ -1004,49 +1004,57 @@
         "ITS",
         "traitements",
         "salaires",
+        "émoluments",
+        "rémunérations",
         "pensions",
         "rentes viagères",
-        "dirigeants"
+        "dirigeants",
+        "IRCM"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 1 : Champ d'application",
       "annee_application": 2026
     },
     {
-      "article": "Art. 114 A",
+      "article": "Art. 114-A",
       "titre": "Exonérations ITS",
       "texte": [
         "Sont affranchis de l'impôt :",
-        "a) les remboursements de frais et allocations de frais de représentation, s'ils remplissent les conditions de déductibilité en matière d'impôt sur les sociétés prévues à l'article 34 du présent Code ;",
+        "a) les remboursements de frais et allocations de frais de représentation, s'ils remplissent les conditions de déductibilité en matière d'impôt sur les sociétés prévues par l'article 34 du présent Code ;",
         "b) les indemnités de transport lorsqu'elles profitent à tout le personnel de l'entreprise, dans la limite des montants prévus par le statut du personnel ou la convention collective du secteur employeur concerné ;",
         "c) les indemnités de licenciement ou de départ volontaire versées dans le cadre d'un plan social, y compris les indemnités de préavis ou de congés payés ;",
         "d) les pensions de retraite ;",
         "e) les allocations ou avantages à caractère familial versés par l'État, les collectivités locales ou les établissements publics ;",
         "f) les indemnités temporaires, prestations et rentes viagères servies aux victimes d'accidents du travail ou à leurs ayants droit ;",
         "g) les bourses d'étudiants d'État ou des collectivités ;",
-        "h) les pensions pour blessure ou invalidité accordées aux personnes ayant servi dans les forces armées, aux veuves de guerre, aux victimes civiles de la guerre ou à leurs ayants droit ;",
+        "h) les pensions pour blessure et invalidité accordées aux personnes ayant servi dans les forces armées, aux veuves de guerre, aux victimes civiles de la guerre ou à leurs ayants droit ;",
         "i) les rentes viagères servies en représentation de dommages-intérêts en vertu d'une condamnation prononcée judiciairement pour la réparation d'un préjudice corporel ayant entraîné pour la victime, une incapacité permanente totale l'obligeant à avoir recours à l'assistance d'une tierce personne pour effectuer les actes ordinaires de la vie ;",
         "j) le capital décès ;",
         "k) les majorations de salaires résultant de l'application de l'index de correction servies aux fonctionnaires et agents de l'État des missions diplomatiques et postes consulaires à l'étranger ;",
         "l) les sommes placées par l'entreprise au titre de la prime d'intéressement, dans une institution financière nationale, à l'exclusion des placements hors du territoire national, en application d'un plan d'épargne au profit des travailleurs ;",
-        "m) l'indemnité de fin de carrière ou prime de départ à la retraite dans la limite du montant prévu par le statut du personnel ou la convention collective d'entreprise ;",
+        "m) l'indemnité de fin de carrière ou prime de départ à la retraite dans la limite du montant prévu par le statut du personnel ou la convention collective d'entreprises ;",
         "n) les allocations de chômage."
       ],
       "mots_cles": [
         "exonérations",
-        "frais",
+        "frais de représentation",
         "transport",
         "licenciement",
         "retraite",
+        "allocations familiales",
         "accident du travail",
-        "prime d'intéressement"
+        "bourses d'étudiants",
+        "capital décès",
+        "prime d'intéressement",
+        "indemnité de fin de carrière",
+        "chômage"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
       "annee_application": 2026
     },
     {
-      "article": "Art. 114 B",
+      "article": "Art. 114-B",
       "titre": "Exonération des agents diplomatiques et consulaires étrangers",
       "texte": [
         "Les agents diplomatiques, les consuls et agents consulaires de nationalité étrangère peuvent être exonérés d'impôt sur les traitements et salaires dans la mesure où les pays qu'ils représentent concèdent des avantages analogues aux agents diplomatiques et consulaires des États de la Communauté, et dans le respect des principes posés par la convention de Vienne sur les relations diplomatiques du 18 avril 1961.",
@@ -1058,8 +1066,11 @@
       "mots_cles": [
         "diplomates",
         "consuls",
+        "nationalité étrangère",
         "convention de Vienne",
-        "réciprocité"
+        "18 avril 1961",
+        "réciprocité",
+        "organisations internationales"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 2 : Exonérations",
