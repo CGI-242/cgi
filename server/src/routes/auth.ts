@@ -745,7 +745,10 @@ router.post("/check-email", sensitiveLimiter, validate({ body: checkEmailBody })
  *       500:
  *         description: Erreur serveur
  */
-// POST /api/auth/clear-session — Clear cookies sans auth (session révoquée)
+// POST /api/auth/clear-session — Nettoyage des cookies sans auth (HIGH-03)
+// Intentionnellement sans authentification : appelé quand la session est expirée/révoquée
+// et l'utilisateur ne peut plus s'authentifier. Seuls les cookies httpOnly sont supprimés.
+// Aucune donnée utilisateur n'est exposée ni modifiée.
 router.post("/clear-session", (_req: Request, res: Response) => {
   clearAuthCookies(res);
   res.json({ message: "Session nettoyée" });

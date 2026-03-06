@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
@@ -7,20 +8,20 @@ interface Props {
   loaded: boolean;
 }
 
-const GOLD = "#c8a03c";
-
-const FEATURES = [
-  { icon: "book-outline" as const, title: "Code des Impôts", desc: "2 248 articles du CGI 2026 avec navigation hiérarchique par tomes, titres et chapitres", color: "#00815d" },
-  { icon: "chatbubbles-outline" as const, title: "Assistant IA", desc: "Posez vos questions fiscales en langage naturel, obtenez les références exactes du CGI", color: "#0284c7" },
-  { icon: "calculator-outline" as const, title: "14 Simulateurs", desc: "ITS, IS, Patente, TVA, IRCM, IRF, IBA, IGF, Enregistrement, Foncier et plus", color: "#4f46e5" },
-  { icon: "mic-outline" as const, title: "Recherche vocale", desc: "Dictez votre recherche en français, trouvez l'article pertinent instantanément", color: "#9333ea" },
-  { icon: "calendar-outline" as const, title: "Échéances fiscales", desc: "Calendrier des échéances TVA, ITS, Patente, IRPP et IRF triées par urgence", color: "#ef4444" },
-  { icon: "cloud-offline-outline" as const, title: "Mode hors-ligne", desc: "Tout le CGI et les simulateurs accessibles même sans connexion internet", color: "#d97706" },
-  { icon: "people-outline" as const, title: "Gestion d'équipe", desc: "Invitez collaborateurs et associés, gérez les rôles et permissions de votre cabinet", color: "#0891b2" },
-  { icon: "language-outline" as const, title: "Multilingue", desc: "Interface disponible en français et anglais, avec thème clair et sombre", color: "#c8a03c" },
+const FEATURE_ICONS = [
+  { icon: "book-outline" as const, titleKey: "landing.feat1Title", descKey: "landing.feat1Desc", color: "#00815d" },
+  { icon: "chatbubbles-outline" as const, titleKey: "landing.feat2Title", descKey: "landing.feat2Desc", color: "#0284c7" },
+  { icon: "calculator-outline" as const, titleKey: "landing.feat4Title", descKey: "landing.feat4Desc", color: "#4f46e5" },
+  { icon: "mic-outline" as const, titleKey: "landing.feat3Title", descKey: "landing.feat3Desc", color: "#9333ea" },
+  { icon: "calendar-outline" as const, titleKey: "landing.feat6Title", descKey: "landing.feat6Desc", color: "#ef4444" },
+  { icon: "cloud-offline-outline" as const, titleKey: "landing.feat9Title", descKey: "landing.feat9Desc", color: "#d97706" },
+  { icon: "people-outline" as const, titleKey: "landing.feat7Title", descKey: "landing.feat7Desc", color: "#0891b2" },
+  { icon: "language-outline" as const, titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#c8a03c" },
 ];
 
 export default function LandingFeatures({ isMobile, loaded }: Props) {
+  const { t } = useTranslation();
+
   return (
     <View
       style={{
@@ -41,7 +42,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
           marginBottom: 8,
         }}
       >
-        Tout ce dont vous avez besoin
+        {t("landing.featuresTitle")}
       </Text>
       <Text
         style={{
@@ -53,7 +54,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
           marginBottom: 36,
         }}
       >
-        Une plateforme complète pour maîtriser la fiscalité africaine
+        {t("landing.featuresSubtitle")}
       </Text>
       <View
         style={{
@@ -62,7 +63,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
           gap: 16,
         }}
       >
-        {FEATURES.map((feat, i) => (
+        {FEATURE_ICONS.map((feat, i) => (
           <View
             key={i}
             style={{
@@ -99,7 +100,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
                 marginBottom: 6,
               }}
             >
-              {feat.title}
+              {t(feat.titleKey)}
             </Text>
             <Text
               style={{
@@ -110,7 +111,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
                 fontWeight: fontWeights.light,
               }}
             >
-              {feat.desc}
+              {t(feat.descKey)}
             </Text>
           </View>
         ))}

@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Sentry } from "@/lib/sentry";
+import i18n from "@/lib/i18n";
 
 interface Props {
   children: React.ReactNode;
@@ -32,10 +33,10 @@ export default class ErrorBoundary extends React.Component<Props, State> {
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 24, backgroundColor: "#111827" }}>
           <Text style={{ fontSize: 48, marginBottom: 16 }}>!</Text>
           <Text style={{ fontSize: 20, fontWeight: "bold", color: "#f9fafb", marginBottom: 8, textAlign: "center" }}>
-            Une erreur est survenue
+            {i18n.t("error.boundaryTitle")}
           </Text>
           <Text style={{ fontSize: 14, color: "#9ca3af", textAlign: "center", marginBottom: 24 }}>
-            L'application a rencontré un problème inattendu.
+            {i18n.t("error.boundaryMessage")}
           </Text>
           {__DEV__ && this.state.error && (
             <View style={{ backgroundColor: "#dc262615", padding: 12, marginBottom: 24, width: "100%", maxWidth: 400 }}>
@@ -49,7 +50,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
             style={{ backgroundColor: "#00815d", paddingHorizontal: 32, paddingVertical: 12 }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
-              Réessayer
+              {i18n.t("common.retry")}
             </Text>
           </TouchableOpacity>
         </View>

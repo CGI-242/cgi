@@ -1,8 +1,26 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Switch } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import type { PermissionItem, EffectivePermissions } from "@/lib/api/permissions";
-import { PERMISSION_LABELS } from "./MyPermissionsCard";
+
+const PERMISSION_KEYS: Record<string, string> = {
+  "org.view": "permLabels.orgView",
+  "org.edit": "permLabels.orgEdit",
+  "org.delete": "permLabels.orgDelete",
+  "org.members.view": "permLabels.membersView",
+  "org.members.invite": "permLabels.membersInvite",
+  "org.members.remove": "permLabels.membersRemove",
+  "org.members.role": "permLabels.membersRole",
+  "org.billing.view": "permLabels.billingView",
+  "org.billing.manage": "permLabels.billingManage",
+  "analytics.view": "permLabels.analyticsView",
+  "analytics.export": "permLabels.analyticsExport",
+  "audit.view": "permLabels.auditView",
+  "chat.use": "permLabels.chatUse",
+  "code.view": "permLabels.codeView",
+  "simulator.use": "permLabels.simulatorUse",
+};
 
 interface PermissionTogglesProps {
   available: PermissionItem[];
@@ -25,6 +43,8 @@ export default function PermissionToggles({
   onReset,
   colors,
 }: PermissionTogglesProps) {
+  const { t } = useTranslation();
+
   return (
     <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 12 }}>
       {available.map((perm) => {
@@ -33,7 +53,7 @@ export default function PermissionToggles({
           <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8 }}>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
-                {PERMISSION_LABELS[perm.key] || perm.key}
+                {t(PERMISSION_KEYS[perm.key] || perm.key)}
               </Text>
             </View>
             <Switch
@@ -55,7 +75,7 @@ export default function PermissionToggles({
         >
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="refresh-outline" size={16} color={colors.text} style={{ marginRight: 6 }} />
-            <Text style={{ color: colors.text, fontWeight: "600", fontSize: 13 }}>Réinitialiser aux valeurs par défaut</Text>
+            <Text style={{ color: colors.text, fontWeight: "600", fontSize: 13 }}>{t("permissions.reset")}</Text>
           </View>
         </TouchableOpacity>
       )}

@@ -7,7 +7,7 @@ interface Props {
   emailError: string;
   emailChecking: boolean;
   onChangeEmail: (email: string) => void;
-  onBlur: () => void;
+  onBlur?: () => void;
   colors: any;
 }
 

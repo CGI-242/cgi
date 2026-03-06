@@ -56,11 +56,7 @@ export default function Dashboard() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
 
-  // Sur mobile : affichage HomeCards (disposition proposée)
-  if (isMobile) {
-    return <HomeCards favoritesCount={0} />;
-  }
-
+  // HIGH-14 : tous les hooks AVANT le return conditionnel
   const ECHEANCES = useMemo(() => [
     { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },
     { date: "15 juin", label: t("dashboard.deadlines.minPerceptionT2"), icon: "business-outline" as const },
@@ -100,6 +96,11 @@ export default function Dashboard() {
   ], [t]);
 
   const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), [ECHEANCES]);
+
+  // Sur mobile : affichage HomeCards (disposition proposée)
+  if (isMobile) {
+    return <HomeCards favoritesCount={0} />;
+  }
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>

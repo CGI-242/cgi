@@ -23,7 +23,9 @@ import searchHistoryRoutes from "./routes/search-history.routes";
 import userStatsRoutes from "./routes/user-stats.routes";
 import notificationRoutes from "./routes/notifications.routes";
 import { startReminderCron } from "./services/reminder.service";
+import { createLogger } from "./utils/logger";
 
+const logger = createLogger("App");
 const app = express();
 
 // Faire confiance au reverse proxy Nginx (nécessaire pour express-rate-limit + X-Forwarded-For)
@@ -78,15 +80,15 @@ app.use("/api/auth", authLimiter, authRoutes);
 app.use("/api/mfa", sensitiveLimiter, mfaRoutes);
 app.use("/api/chat", chatLimiter, chatRoutes);
 app.use("/api/organizations", organizationRoutes);
-app.use("/api/subscription", subscriptionRoutes);
+app.use("/api/subscription", sensitiveLimiter, subscriptionRoutes);
 app.use("/api/permissions", permissionRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/alertes-fiscales", alertesFiscalesRoutes);
 app.use("/api/user/stats", userStatsRoutes);
 app.use("/api/user", userRoutes);
-app.use("/api/admin", adminRoutes);
-app.use("/api/ingestion", ingestionRoutes);
+app.use("/api/admin", sensitiveLimiter, adminRoutes);
+app.use("/api/ingestion", sensitiveLimiter, ingestionRoutes);
 app.use("/api/search-history", searchHistoryRoutes);
 app.use("/api/notifications", notificationRoutes);
 
@@ -126,6 +128,16 @@ app.get("/health", async (_req, res) => {
 
   const statusCode = overall === "ok" ? 200 : 503;
   res.status(statusCode).json({ status: overall, service: "cgi-242", checks });
+});
+
+// Gestionnaire d'erreurs global — empêche l'exposition de stack traces (HIGH-01)
+app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+  logger.error("Erreur non gérée:", err);
+  if (err.message?.includes("non autorisée par CORS")) {
+    res.status(403).json({ error: "Origin non autorisée" });
+    return;
+  }
+  res.status(500).json({ error: "Erreur interne du serveur" });
 });
 
 // Servir le frontend web (Expo build) — après les routes API

@@ -74,10 +74,13 @@ router.get("/", requireAuth, validate({ query: searchHistoryQuery }), async (req
  *       200:
  *         description: Top 10 des termes les plus recherchés
  */
-router.get("/popular", requireAuth, async (_req: AuthRequest, res: Response) => {
+router.get("/popular", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
+    const userId = req.userId!;
+    // Scopé par utilisateur pour éviter la fuite de données inter-organisations (HIGH-04)
     const popular = await prisma.searchHistory.groupBy({
       by: ["query"],
+      where: { userId },
       _count: { query: true },
       orderBy: { _count: { query: "desc" } },
       take: 10,

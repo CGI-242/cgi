@@ -68,8 +68,7 @@ export const FISCAL_PARAMS = {
   is: {
     tauxGeneral: 0.28,
     tauxEtranger: 0.35,
-    tauxMinimumNormal: 0.01,
-    tauxMinimumDeficit: 0.02,
+    tauxMinimum: 0.01, // Art. 86-C §3 : fixé à 1%
   },
 };
 

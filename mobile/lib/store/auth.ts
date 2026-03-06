@@ -99,7 +99,8 @@ export const useAuthStore = create<AuthState>()(
           }
         }
         // Web : les tokens sont dans des cookies httpOnly (rien à stocker)
-        set({ user, isAuthenticated: true });
+        // Toujours remettre sessionExpired à false pour éviter que le modal réapparaisse après re-login
+        set({ user, isAuthenticated: true, sessionExpired: false, loggedOut: false });
       },
 
       logout: async () => {
@@ -156,9 +157,10 @@ export const useAuthStore = create<AuthState>()(
           }
         }
         // Web : vérifier que les cookies httpOnly sont encore valides
+        // _skipAuthRetry évite que l'intercepteur tente un refresh → "Refresh token manquant"
         if (isWeb) {
           try {
-            await api.get("/user/profile");
+            await api.get("/user/profile", { _skipAuthRetry: true } as any);
           } catch {
             set({ user: null, isAuthenticated: false, step: "email" });
           }

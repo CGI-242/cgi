@@ -32,12 +32,15 @@ export async function getUserOrganizations(userId: string) {
     }));
 }
 
-export async function createOrganization(userId: string, userEmail: string, data: { entrepriseNom: string; website?: string; address?: string; phone?: string }) {
-  const slug = data.entrepriseNom.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+export async function createOrganization(userId: string, userEmail: string, data: { name?: string; entrepriseNom?: string; website?: string; address?: string; phone?: string }) {
+  // Accepter 'name' (schéma REST) ou 'entrepriseNom' (register) — HIGH-06
+  const orgName = data.name || data.entrepriseNom;
+  if (!orgName) throw new Error('Nom de l\'organisation requis');
+  const slug = orgName.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
 
   const org = await prisma.organization.create({
     data: {
-      name: data.entrepriseNom,
+      name: orgName,
       slug: `${slug}-${Date.now()}`,
       website: data.website,
       address: data.address,

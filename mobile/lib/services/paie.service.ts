@@ -140,8 +140,8 @@ export function calculerPaie(input: PaieInput): PaieResult {
   const cnssResult = calculateCNSS(baseCNSS);
   const cnssSalarieMensuel = Math.round(cnssResult.retenueMensuelle);
 
-  // Base ITS = (brut total − CNSS) × 80%
-  const baseITS = Math.round((salaireBrutTotal - cnssSalarieMensuel) * 0.80);
+  // Base ITS = (brut total − CNSS) × (1 − fraisPro) — HIGH-08
+  const baseITS = Math.round((salaireBrutTotal - cnssSalarieMensuel) * (1 - FISCAL_PARAMS.fraisPro.taux));
 
   // --- Étape 3 : ITS (même logique que simulateur ITS) ---
   const isResident = input.profilSalarie !== "non_resident";

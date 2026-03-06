@@ -124,7 +124,7 @@ export default function LoginEmail() {
             <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => router.push("/legal/mentions" as Href)}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>Mentions légales</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, textDecorationLine: "underline" }}>{t("settings.legalNotices")}</Text>
           </TouchableOpacity>
         </View>
       </View>

@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV !== 'production';
  */
 export const globalLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
+  max: isDev ? 1000 : 300,
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: 'Trop de requêtes, réessayez dans quelques minutes' },

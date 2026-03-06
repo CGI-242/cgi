@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
@@ -11,53 +12,55 @@ interface Props {
 
 const PLANS = [
   {
-    name: "Gratuit",
+    nameKey: "landing.pricingFree",
     tag: "FREE",
     price: "0",
-    period: "7 jours d'essai",
+    periodKey: "landing.pricingTrialPeriod",
     color: "#6b7280",
-    features: [
-      "5 questions IA / mois",
-      "Accès au CGI en lecture",
-      "Simulateurs de base",
+    featureKeys: [
+      "landing.pricingFeat5q",
+      "landing.pricingFeatCgiRead",
+      "landing.pricingFeatBasicSim",
     ],
   },
   {
-    name: "Basique",
+    nameKey: "landing.pricingBasique",
     tag: "BASIQUE",
     price: "75 000",
-    period: "XAF / an / organisation",
-    priceDetail: "65 000 XAF/an/user — prix lancement",
+    periodKey: "landing.pricingPerYear",
+    priceDetailKey: "landing.pricingBasiqueLaunch",
     color: "#3b82f6",
     popular: false,
-    features: [
-      "15 questions IA / mois / user",
-      "Accès complet au CGI",
-      "14 simulateurs fiscaux",
-      "Historique des conversations",
-      "Jusqu'à 50 membres",
+    featureKeys: [
+      "landing.pricingFeat15q",
+      "landing.pricingFeatCgiFull",
+      "landing.pricingFeat14sim",
+      "landing.pricingFeatHistory",
+      "landing.pricingFeat50members",
     ],
   },
   {
-    name: "Pro",
+    nameKey: "landing.pricingPro",
     tag: "PRO",
     price: "115 000",
-    period: "XAF / an / organisation",
-    priceDetail: "100 000 XAF/an/user — prix lancement",
+    periodKey: "landing.pricingPerYear",
+    priceDetailKey: "landing.pricingProLaunch",
     color: "#8b5cf6",
     popular: true,
-    features: [
-      "30 questions IA / mois / user",
-      "Accès complet au CGI",
-      "14 simulateurs fiscaux",
-      "Historique illimité",
-      "Support prioritaire",
-      "Jusqu'à 50 membres",
+    featureKeys: [
+      "landing.pricingFeat30q",
+      "landing.pricingFeatCgiFull",
+      "landing.pricingFeat14sim",
+      "landing.pricingFeatUnlimitedHistory",
+      "landing.pricingFeatPriority",
+      "landing.pricingFeat50members",
     ],
   },
 ];
 
 export default function LandingPricing({ isMobile }: Props) {
+  const { t } = useTranslation();
+
   return (
     <View style={{ paddingVertical: 60, paddingHorizontal: 24 }}>
       <Text
@@ -70,7 +73,7 @@ export default function LandingPricing({ isMobile }: Props) {
           marginBottom: 8,
         }}
       >
-        Tarifs simples, transparents
+        {t("landing.pricingTitle")}
       </Text>
       <Text
         style={{
@@ -82,7 +85,7 @@ export default function LandingPricing({ isMobile }: Props) {
           marginBottom: 40,
         }}
       >
-        Commencez gratuitement, évoluez selon vos besoins
+        {t("landing.pricingSubtitle")}
       </Text>
 
       <View
@@ -136,12 +139,11 @@ export default function LandingPricing({ isMobile }: Props) {
                     letterSpacing: 1,
                   }}
                 >
-                  Populaire
+                  {t("landing.pricingPopular")}
                 </Text>
               </View>
             )}
 
-            {/* Plan name */}
             <Text
               style={{
                 fontFamily: fonts.semiBold,
@@ -153,10 +155,9 @@ export default function LandingPricing({ isMobile }: Props) {
                 marginBottom: 12,
               }}
             >
-              {plan.name}
+              {t(plan.nameKey)}
             </Text>
 
-            {/* Price */}
             <View style={{ flexDirection: "row", alignItems: "baseline", marginBottom: 4 }}>
               <Text
                 style={{
@@ -175,12 +176,12 @@ export default function LandingPricing({ isMobile }: Props) {
                 fontWeight: fontWeights.regular,
                 fontSize: 13,
                 color: "#5a5a65",
-                marginBottom: plan.priceDetail ? 4 : 20,
+                marginBottom: plan.priceDetailKey ? 4 : 20,
               }}
             >
-              {plan.period}
+              {t(plan.periodKey)}
             </Text>
-            {plan.priceDetail && (
+            {plan.priceDetailKey && (
               <Text
                 style={{
                   fontFamily: fonts.medium,
@@ -191,12 +192,11 @@ export default function LandingPricing({ isMobile }: Props) {
                   fontStyle: "italic",
                 }}
               >
-                {plan.priceDetail}
+                {t(plan.priceDetailKey)}
               </Text>
             )}
 
-            {/* Features */}
-            {plan.features.map((feat, idx) => (
+            {plan.featureKeys.map((featKey, idx) => (
               <View
                 key={idx}
                 style={{
@@ -220,12 +220,11 @@ export default function LandingPricing({ isMobile }: Props) {
                     flex: 1,
                   }}
                 >
-                  {feat}
+                  {t(featKey)}
                 </Text>
               </View>
             ))}
 
-            {/* CTA */}
             <TouchableOpacity
               onPress={() => router.push("/(auth)/register")}
               style={{
@@ -246,7 +245,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   color: plan.popular ? "#fff" : "#e8e6e1",
                 }}
               >
-                {plan.tag === "FREE" ? "Essayer gratuitement" : "Commencer"}
+                {plan.tag === "FREE" ? t("landing.pricingTryFree") : t("landing.pricingStart")}
               </Text>
             </TouchableOpacity>
           </View>

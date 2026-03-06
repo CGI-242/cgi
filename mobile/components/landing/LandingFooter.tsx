@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
@@ -49,6 +50,8 @@ function SectionTitle({ children }: { children: string }) {
 }
 
 export default function LandingFooter({ isMobile, onScrollTo }: Props) {
+  const { t } = useTranslation();
+
   return (
     <View
       style={{
@@ -59,7 +62,6 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
         paddingBottom: 0,
       }}
     >
-      {/* Colonnes principales */}
       <View
         style={{
           maxWidth: 1060,
@@ -116,39 +118,39 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               lineHeight: 20,
             }}
           >
-            L'intelligence fiscale africaine.
+            {t("landing.footerDesc")}
           </Text>
         </View>
 
         {/* Colonne 2 — Produit */}
         <View style={{ flex: isMobile ? undefined : 1 }}>
-          <SectionTitle>Produit</SectionTitle>
-          <FooterLink label="Fonctionnalités" onPress={() => onScrollTo?.("features")} />
-          <FooterLink label="Pays disponibles" onPress={() => onScrollTo?.("simulateurs")} />
-          <FooterLink label="Tarifs" onPress={() => onScrollTo?.("tarifs")} />
-          <FooterLink label="Contact" onPress={() => onScrollTo?.("contact")} />
+          <SectionTitle>{t("landing.footerProduct")}</SectionTitle>
+          <FooterLink label={t("landing.footerFeatures")} onPress={() => onScrollTo?.("features")} />
+          <FooterLink label={t("landing.footerCountries")} onPress={() => onScrollTo?.("simulateurs")} />
+          <FooterLink label={t("landing.footerPricing")} onPress={() => onScrollTo?.("tarifs")} />
+          <FooterLink label={t("landing.footerContact")} onPress={() => onScrollTo?.("contact")} />
         </View>
 
         {/* Colonne 3 — Légal */}
         <View style={{ flex: isMobile ? undefined : 1 }}>
-          <SectionTitle>Légal</SectionTitle>
+          <SectionTitle>{t("landing.footerLegal")}</SectionTitle>
           <FooterLink
-            label="CGU"
+            label={t("auth.terms")}
             onPress={() => router.push("/legal/cgu")}
           />
           <FooterLink
-            label="Politique de confidentialité"
+            label={t("auth.privacy")}
             onPress={() => router.push("/legal/confidentialite")}
           />
           <FooterLink
-            label="Mentions légales"
+            label={t("settings.legalNotices")}
             onPress={() => router.push("/legal/mentions")}
           />
         </View>
 
         {/* Colonne 4 — Contact */}
         <View style={{ flex: isMobile ? undefined : 1 }}>
-          <SectionTitle>Contact</SectionTitle>
+          <SectionTitle>{t("landing.footerContact")}</SectionTitle>
           <Text
             style={{
               fontFamily: fonts.regular,
@@ -200,7 +202,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             color: "#2a2a35",
           }}
         >
-          © 2026 NORMX AI — Tous droits réservés
+          {t("landing.copyright")}
         </Text>
         <Text
           style={{
@@ -210,7 +212,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             color: "#3a3a45",
           }}
         >
-          Marque déposée INPI n°5146181
+          {t("landing.trademark")}
         </Text>
       </View>
     </View>

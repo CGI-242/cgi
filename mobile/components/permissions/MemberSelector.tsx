@@ -1,8 +1,16 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import type { OrgMember } from "@/lib/api/organization";
-import { ROLE_COLORS, ROLE_LABELS } from "./MyPermissionsCard";
+import { ROLE_COLORS } from "./MyPermissionsCard";
+
+const ROLE_KEYS: Record<string, string> = {
+  OWNER: "permLabels.roleOwner",
+  ADMIN: "permLabels.roleAdmin",
+  MEMBER: "permLabels.roleMember",
+  VIEWER: "permLabels.roleViewer",
+};
 
 interface MemberSelectorProps {
   members: OrgMember[];
@@ -12,6 +20,8 @@ interface MemberSelectorProps {
 }
 
 export default function MemberSelector({ members, selectedMemberId, onSelect, colors }: MemberSelectorProps) {
+  const { t } = useTranslation();
+
   return (
     <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, marginBottom: 12, overflow: "hidden" }}>
       {members.map((member, index) => {
@@ -37,7 +47,7 @@ export default function MemberSelector({ members, selectedMemberId, onSelect, co
             </View>
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
-              <Text style={{ fontSize: 11, color: colors.textMuted }}>{ROLE_LABELS[member.role] || member.role}</Text>
+              <Text style={{ fontSize: 11, color: colors.textMuted }}>{t(ROLE_KEYS[member.role] || member.role)}</Text>
             </View>
             <Ionicons name={isSelected ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
           </TouchableOpacity>

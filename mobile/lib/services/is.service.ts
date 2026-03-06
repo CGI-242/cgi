@@ -23,6 +23,7 @@ export interface IsResult {
   acomptes: { label: string; montant: number }[];
 }
 
+// Art. 86-C §3 : Le taux du minimum de perception est fixé à 1%
 const TAUX_MINIMUM = 0.01;
 
 export function calculerIS(input: IsInput): IsResult {
