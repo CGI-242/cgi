@@ -281,10 +281,10 @@
 
 ### Issues non corrigées (intentionnel)
 
-| #                                                                                                        | Raison                                                                                      |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| LOW-21                                                                                                   | Styles inline dans simulateurs — trop invasif, aucun impact fonctionnel                    |
-| LOLOW-24	Taux IGF 3.5% — divergence avec Art. 5 (5%), TODO ajouté, nécessite validation juridiqueW-24 | Taux IGF 3.5% — divergence avec Art. 5 (5%), TODO ajouté, nécessite validation juridique |
+| #          | Raison                                                                                      |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| LOW-21     | Styles inline dans simulateurs — trop invasif, aucun impact fonctionnel                    |
+| LOW-24  | Taux IGF 3.5% — divergence avec Art. 5 (5%), TODO ajouté, nécessite validation juridique |
 
 ---
 
