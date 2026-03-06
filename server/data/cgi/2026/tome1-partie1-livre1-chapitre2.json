@@ -473,7 +473,11 @@
         "dividendes",
         "conseil d'administration",
         "établissements stables",
-        "IRCM"
+        "IRCM",
+        "avances",
+        "acomptes",
+        "recettes non déclarées",
+        "amortissement du capital"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §1 Revenus des valeurs mobilières",
@@ -497,14 +501,16 @@
         "réserve légale",
         "fusion de société",
         "liquidation",
-        "capital amorti"
+        "capital amorti",
+        "réserves incorporées",
+        "charges déductibles"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §1 Revenus des valeurs mobilières",
       "annee_application": 2026
     },
     {
-      "article": "Art. 105 A",
+      "article": "Art. 105-A",
       "titre": "Revenus des obligations",
       "texte": [
         "Sont considérés comme revenus des obligations :",
@@ -525,7 +531,7 @@
       "annee_application": 2026
     },
     {
-      "article": "Art. 105 B",
+      "article": "Art. 105-B",
       "titre": "Revenus des créances, dépôts et cautionnements",
       "texte": [
         "Sont considérés comme revenus des créances, dépôts et cautionnements, les intérêts, arrérages et tous autres produits :",
@@ -543,14 +549,17 @@
         "cautionnements",
         "comptes courants",
         "bons de caisse",
-        "intérêts"
+        "intérêts",
+        "créances hypothécaires",
+        "capitalisation des intérêts",
+        "fonds de commerce"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 1 : Champ d'application - §3 Revenus des créances, dépôts et cautionnements",
       "annee_application": 2026
     },
     {
-      "article": "Art. 105 C",
+      "article": "Art. 105-C",
       "titre": "Plus-values de cessions de valeurs mobilières",
       "texte": [
         "Sont soumises à l'impôt sur le revenu des capitaux mobiliers, les plus-values des cessions de valeurs mobilières, notamment les actions, parts sociales et obligations et leurs démembrements.",
@@ -562,6 +571,11 @@
         "valeurs mobilières",
         "actions",
         "parts sociales",
+        "obligations",
+        "démembrements",
+        "vente",
+        "échange",
+        "apport en société",
         "donation",
         "succession"
       ],
@@ -581,7 +595,10 @@
         "fusion",
         "apport partiel d'actif",
         "actions gratuites",
-        "parts sociales"
+        "parts sociales",
+        "article 104",
+        "société absorbée",
+        "CEMAC"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Impôt sur le revenu des capitaux mobiliers (IRCM) - Sous-section 2 : Exonérations",
@@ -599,8 +616,10 @@
       "mots_cles": [
         "territorialité",
         "résidence fiscale",
+        "entreprise exploitée au Congo",
         "cession de titres",
         "10% du capital",
+        "365 jours",
         "non-résident"
       ],
       "statut": "en vigueur",
