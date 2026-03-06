@@ -326,7 +326,7 @@
         "2) Cette base de calcul est connue chaque année au plus tard le 15 février après le dépôt de la déclaration n° 294 accompagnée obligatoirement des états financiers visés aux articles 96 et 97 du présent Code.",
         "3) Le montant qui sert de base de calcul de l'impôt global forfaitaire est redressé unilatéralement, sans préavis, par l'administration, en cas de manœuvre frauduleuse ou de dissimulation.",
         "4) Au cours de la première année d'exploitation, l'impôt global forfaitaire est fixé à partir d'un chiffre d'affaires estimé selon la procédure contradictoire, déterminé sur la base du chiffre d'affaires prévisionnel fixé au moment de la déclaration fiscale d'existence, à condition de justifier d'une déclaration d'existence et de faire parapher par le service compétent de l'administration fiscale les registres comptables visés ci-dessus, dans les 15 jours du début d'activités et à la fin de chaque trimestre de l'année.",
-        "5. Le défaut de la déclaration du paraphe et de la tenue des registres, des factures et des documents comptables ou leur non production, est sanctionné par une taxation d'office et une amende de 100 000 FCFA."
+        "5) Le défaut de la déclaration du paraphe et de la tenue des registres, des factures et des documents comptables ou leur non production, est sanctionné par une taxation d'office et une amende de 100 000 FCFA."
       ],
       "mots_cles": [
         "impôt global forfaitaire",
@@ -351,7 +351,9 @@
       "mots_cles": [
         "déclaration fournisseurs",
         "amende 500 000 FCFA",
-        "déclaration trimestrielle"
+        "déclaration trimestrielle",
+        "régime du forfait",
+        "approvisionnement"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -367,7 +369,9 @@
         "fixation d'office",
         "article 96",
         "article 98",
-        "défaut de déclaration"
+        "défaut de déclaration",
+        "non-présentation",
+        "bases d'imposition"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -377,13 +381,14 @@
       "article": "Art. 101",
       "titre": "Fixation d'office en cas de non-présentation des documents",
       "texte": [
-        "Le défaut de production de la déclaration spéciale visée à l'article 100 ainsi que la non-présentation des documents dont la production est exigée par ledit article et l'article 99 du présent code entraînent la fixation d'office, par l'administration fiscale des bases d'imposition."
+        "Le défaut de production de la déclaration spéciale visée à l'article 100 ainsi que la non-présentation des documents dont la production est exigée par ledit article et l'article 99 du présent Code entraînent la fixation d'office, par l'administration fiscale des bases d'imposition."
       ],
       "mots_cles": [
         "documents comptables",
-        "taxation d'office",
+        "fixation d'office",
         "article 99",
-        "article 100"
+        "article 100",
+        "non-présentation"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -394,20 +399,23 @@
       "titre": "Assujettissement au régime réel",
       "texte": [
         "Les contribuables dont le chiffre d'affaires est supérieur ou égal au seuil d'assujettissement à la TVA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
-        "Ces contribuables sont tenus de remettre une déclaration du montant de leur résultat à l'unité des moyennes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement, dans les conditions et détails prévus par les articles 78 à 80 du CGI, si leur chiffre d'affaires dépasse 2.000.000.000 de francs CFA.",
+        "Ces contribuables sont tenus de remettre une déclaration du montant de leur résultat à l'unité des moyennes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement, dans les conditions et détails prévus par les articles 78 à 80 du CGI, si leur chiffre d'affaires ne dépasse pas 2.000.000.000 FCFA.",
         "En l'absence d'une unité des moyennes entreprises dans le département, l'unité territorialement compétente est l'unité chargée de la gestion des petites entreprises.",
-        "Pour les contribuables dont le chiffre d'affaires est supérieur ou égal à 2.000.000.000 de francs, la déclaration susvisée est déposée à l'unité des grandes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement.",
+        "Pour les contribuables dont le chiffre d'affaires est supérieur ou égal à 2.000.000.000 FCFA, la déclaration susvisée est déposée à l'unité des grandes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement.",
         "Les dispositions des alinéas 2, 3 et 4 du présent article ne s'appliquent pas aux sous-traitants pétroliers.",
         "À l'appui de la déclaration du bénéfice ou déficit, les contribuables sont tenus de faire connaître leur chiffre d'affaires, c'est-à-dire le montant brut total des ventes, des travaux effectivement et définitivement réalisés, des avantages, commissions, remises, prix de location, intérêts, escomptes, agios encaissés et, d'une façon générale, tous les produits définitivement acquis dans l'exercice de la profession. Lorsque la profession comporte plusieurs activités distinctes, la déclaration doit faire état du chiffre d'affaires par nature d'activité."
       ],
       "mots_cles": [
         "régime réel",
+        "bénéfice réel",
         "chiffre d'affaires",
+        "seuil TVA",
         "déclaration fiscale",
         "2 milliards FCFA",
         "grandes entreprises",
         "moyennes entreprises",
-        "sous-traitants pétroliers"
+        "sous-traitants pétroliers",
+        "articles 78 à 80"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -433,7 +441,12 @@
         "valeurs mobilières",
         "obligations",
         "créances",
+        "dépôts",
+        "cautionnements",
+        "comptes courants",
         "plus-values",
+        "redressements",
+        "contrôle fiscal",
         "CEMAC"
       ],
       "statut": "en vigueur",
