@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { calculerContributionFonciere, type TypePropriete, type ZoneUrbaine, type CultureRurale } from "@/lib/services/contribution-fonciere.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -61,18 +61,18 @@ export default function ContributionFonciereScreen() {
   }, [typePropriete, valeurLocative, surfaceM2, surfaceHa, tauxCommunal, zoneUrbaine, cultureRurale]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.foncier.title")}
           </Text>
 
-          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.foncier.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.foncier.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.foncier.typeLabel")}
           </Text>
           <OptionButtonGroup options={TYPES} selected={typePropriete} onChange={setTypePropriete} direction="column" fontSize={12} />
@@ -83,7 +83,7 @@ export default function ContributionFonciereScreen() {
 
           {typePropriete === "nonBatiUrbain" && (
             <>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+              <Text style={[styles.fieldLabel, { color: colors.text }]}>
                 {t("simulateur.foncier.zoneLabel")}
               </Text>
               <OptionButtonGroup options={ZONES} selected={zoneUrbaine} onChange={setZoneUrbaine} fontSize={11} />
@@ -93,7 +93,7 @@ export default function ContributionFonciereScreen() {
 
           {typePropriete === "nonBatiRural" && (
             <>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+              <Text style={[styles.fieldLabel, { color: colors.text }]}>
                 {t("simulateur.foncier.cultureLabel")}
               </Text>
               <OptionButtonGroup options={CULTURES} selected={cultureRurale} onChange={setCultureRurale} direction="column" fontSize={11} />
@@ -101,29 +101,29 @@ export default function ContributionFonciereScreen() {
             </>
           )}
 
-          <View style={{ marginBottom: 8 }}>
-            <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>
+          <View style={styles.mb8}>
+            <Text style={[styles.subLabel, { color: colors.textSecondary }]}>
               {t("simulateur.foncier.communalRate")} (max {typePropriete === "bati" ? "20" : "40"}%)
             </Text>
-            <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
-              <View style={{ flex: 1, flexDirection: "row", alignItems: "center" }}>
+            <View style={[styles.rateRow, { backgroundColor: colors.card, borderColor: colors.border }]}>
+              <View style={styles.rateButtonsRow}>
                 {[5, 10, 15, 20, ...(typePropriete !== "bati" ? [30, 40] : [])].map((v) => (
                   <TouchableOpacity
                     key={v}
-                    style={{ paddingVertical: 4, paddingHorizontal: 8, backgroundColor: tauxCommunal === String(v) ? colors.primary : "transparent" }}
+                    style={[styles.rateButton, { backgroundColor: tauxCommunal === String(v) ? colors.primary : "transparent" }]}
                     onPress={() => setTauxCommunal(String(v))}
                   >
-                    <Text style={{ color: tauxCommunal === String(v) ? colors.sidebarText : colors.text, fontWeight: "600", fontSize: 11 }}>{v}%</Text>
+                    <Text style={[styles.rateButtonText, { color: tauxCommunal === String(v) ? colors.sidebarText : colors.text }]}>{v}%</Text>
                   </TouchableOpacity>
                 ))}
               </View>
             </View>
           </View>
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.foncier.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.foncier.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
               <SimulateurSection label={t("simulateur.foncier.calcSection")} />
@@ -138,15 +138,15 @@ export default function ContributionFonciereScreen() {
               {result.impot > 0 ? (
                 <ResultHighlight label={typePropriete === "bati" ? "CFPB" : "CFPNB"} value={formatNumber(result.impot)} variant="danger" />
               ) : (
-                <View style={{ backgroundColor: colors.citationsBg, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.success }}>
+                <View style={[styles.underMinBox, { backgroundColor: colors.citationsBg, borderTopColor: colors.border }]}>
+                  <Text style={[styles.underMinText, { color: colors.success }]}>
                     {t("simulateur.foncier.underMinimum")}
                   </Text>
                 </View>
               )}
 
-              <View style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: `${colors.primary}10` }}>
-                <Text style={{ fontSize: 10, color: colors.primary, fontWeight: "600" }}>{result.articleRef}</Text>
+              <View style={[styles.articleRefBox, { backgroundColor: `${colors.primary}10` }]}>
+                <Text style={[styles.articleRefText, { color: colors.primary }]}>{result.articleRef}</Text>
               </View>
             </View>
           ) : (
@@ -157,3 +157,85 @@ export default function ContributionFonciereScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    marginBottom: 12,
+    padding: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  mb8: {
+    marginBottom: 8,
+  },
+  subLabel: {
+    fontSize: 11,
+    marginBottom: 3,
+  },
+  rateRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    height: 40,
+    borderWidth: 1,
+  },
+  rateButtonsRow: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  rateButton: {
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+  },
+  rateButtonText: {
+    fontWeight: "600",
+    fontSize: 11,
+  },
+  legalRef: {
+    fontSize: 10,
+    marginTop: 12,
+  },
+  underMinBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderTopWidth: 1,
+  },
+  underMinText: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  articleRefBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  articleRefText: {
+    fontSize: 10,
+    fontWeight: "600",
+  },
+});

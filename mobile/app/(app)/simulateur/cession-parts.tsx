@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, ScrollView, Switch } from "react-native";
+import { View, Text, ScrollView, Switch, StyleSheet } from "react-native";
 import { calculerCessionParts, type TypeCession } from "@/lib/services/cession-parts.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -34,18 +34,18 @@ export default function CessionPartsScreen() {
   }, [prixCession, typeCession, contratPetrolier]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.cessionParts.title")}
           </Text>
 
-          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.cessionParts.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.cessionParts.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.cessionParts.typeLabel")}
           </Text>
           <OptionButtonGroup options={TYPES} selected={typeCession} onChange={setTypeCession} direction="column" fontSize={12} />
@@ -53,10 +53,10 @@ export default function CessionPartsScreen() {
           <NumberField label={t("simulateur.cessionParts.amount")} value={prixCession} onChange={setPrixCession} />
 
           {typeCession === "participations" && (
-            <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-              <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.cessionParts.petroleum")}</Text>
-                <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.cessionParts.petroleumDesc")}</Text>
+            <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
+              <View style={styles.flex1}>
+                <Text style={[styles.switchLabel, { color: colors.text }]}>{t("simulateur.cessionParts.petroleum")}</Text>
+                <Text style={[styles.switchDesc, { color: colors.textSecondary }]}>{t("simulateur.cessionParts.petroleumDesc")}</Text>
               </View>
               <Switch
                 value={contratPetrolier}
@@ -67,10 +67,10 @@ export default function CessionPartsScreen() {
             </View>
           )}
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.cessionParts.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.cessionParts.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
               <SimulateurSection label={t("simulateur.cessionParts.calcSection")} />
@@ -93,3 +93,57 @@ export default function CessionPartsScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    marginBottom: 12,
+    padding: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  switchRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 12,
+    marginBottom: 12,
+  },
+  flex1: {
+    flex: 1,
+  },
+  switchLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  switchDesc: {
+    fontSize: 10,
+  },
+  legalRef: {
+    fontSize: 10,
+    marginTop: 12,
+  },
+});

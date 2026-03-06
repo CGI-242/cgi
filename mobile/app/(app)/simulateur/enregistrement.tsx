@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { calculerEnregistrement, type TypeActe, type ZoneImmat } from "@/lib/services/enregistrement.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -68,52 +68,52 @@ export default function EnregistrementScreen() {
   }, [montant, typeActe, zoneImmat]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.enreg.title")}
           </Text>
 
-          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.enreg.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.enreg.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.enreg.categoryLabel")}
           </Text>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 12 }}>
-            <View style={{ flexDirection: "row", gap: 6 }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
+            <View style={styles.categoryRow}>
               {CATEGORIES.map((cat) => (
                 <TouchableOpacity
                   key={cat.value}
-                  style={{ paddingVertical: 6, paddingHorizontal: 12, backgroundColor: category === cat.value ? colors.primary : colors.border }}
+                  style={[styles.categoryButton, { backgroundColor: category === cat.value ? colors.primary : colors.border }]}
                   onPress={() => handleCategoryChange(cat.value)}
                 >
-                  <Text style={{ color: category === cat.value ? colors.sidebarText : colors.text, fontWeight: "700", fontSize: 11 }}>{cat.label}</Text>
+                  <Text style={[styles.categoryButtonText, { color: category === cat.value ? colors.sidebarText : colors.text }]}>{cat.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>
           </ScrollView>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.enreg.acteLabel")}
           </Text>
-          <View style={{ gap: 4, marginBottom: 12 }}>
+          <View style={styles.acteList}>
             {ACTES_PAR_CATEGORIE[category].map((acte) => (
               <TouchableOpacity
                 key={acte.value}
-                style={{ paddingVertical: 8, paddingHorizontal: 12, backgroundColor: typeActe === acte.value ? colors.primary : colors.border }}
+                style={[styles.acteButton, { backgroundColor: typeActe === acte.value ? colors.primary : colors.border }]}
                 onPress={() => setTypeActe(acte.value)}
               >
-                <Text style={{ color: typeActe === acte.value ? colors.sidebarText : colors.text, fontWeight: "600", fontSize: 12 }}>{t(acte.labelKey)}</Text>
+                <Text style={[styles.acteButtonText, { color: typeActe === acte.value ? colors.sidebarText : colors.text }]}>{t(acte.labelKey)}</Text>
               </TouchableOpacity>
             ))}
           </View>
 
           {typeActe === "mutationImmoImmat" && (
             <>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+              <Text style={[styles.fieldLabel, { color: colors.text }]}>
                 {t("simulateur.enreg.zoneLabel")}
               </Text>
               <OptionButtonGroup
@@ -130,10 +130,10 @@ export default function EnregistrementScreen() {
 
           <NumberField label={t("simulateur.enreg.amount")} value={montant} onChange={setMontant} />
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.enreg.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.enreg.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
               <SimulateurSection label={t("simulateur.enreg.calcSection")} />
@@ -146,8 +146,8 @@ export default function EnregistrementScreen() {
               <TableRow label={t("simulateur.enreg.additionalCents")} value={`+ ${formatNumber(result.centimesAdditionnels)}`} bg={colors.background} />
               <ResultHighlight label={t("simulateur.enreg.totalDue")} value={formatNumber(result.total)} variant="danger" />
 
-              <View style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: `${colors.primary}10` }}>
-                <Text style={{ fontSize: 10, color: colors.primary, fontWeight: "600" }}>{t("simulateur.enreg.deadlineNote")}</Text>
+              <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
+                <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.enreg.deadlineNote")}</Text>
               </View>
             </View>
           ) : (
@@ -158,3 +158,76 @@ export default function EnregistrementScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    marginBottom: 12,
+    padding: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  horizontalScroll: {
+    marginBottom: 12,
+  },
+  categoryRow: {
+    flexDirection: "row",
+    gap: 6,
+  },
+  categoryButton: {
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+  },
+  categoryButtonText: {
+    fontWeight: "700",
+    fontSize: 11,
+  },
+  acteList: {
+    gap: 4,
+    marginBottom: 12,
+  },
+  acteButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+  },
+  acteButtonText: {
+    fontWeight: "600",
+    fontSize: 12,
+  },
+  legalRef: {
+    fontSize: 10,
+    marginTop: 12,
+  },
+  noteBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  noteText: {
+    fontSize: 10,
+    fontWeight: "600",
+  },
+});

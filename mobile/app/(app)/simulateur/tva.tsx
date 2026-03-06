@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { calculerTVA, type TypeOperation } from "@/lib/services/tva.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -35,18 +35,18 @@ export default function TvaScreen() {
   }, [caHT, achatsHT, typeOperation]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.tva.title")}
           </Text>
 
-          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.tva.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.tva.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.tva.operationType")}
           </Text>
           <OptionButtonGroup options={TYPES} selected={typeOperation} onChange={setTypeOperation} />
@@ -54,10 +54,10 @@ export default function TvaScreen() {
           <NumberField label={t("simulateur.tva.revenueHT")} value={caHT} onChange={setCaHT} />
           <NumberField label={t("simulateur.tva.purchasesHT")} value={achatsHT} onChange={setAchatsHT} />
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.tva.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.tva.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
               <SimulateurSection label={t("simulateur.tva.collectedSection")} />
@@ -76,8 +76,8 @@ export default function TvaScreen() {
                 <ResultHighlight label={t("simulateur.tva.vatCredit")} value={formatNumber(result.creditTva)} variant="success" />
               )}
 
-              <View style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: `${colors.primary}10` }}>
-                <Text style={{ fontSize: 10, color: colors.primary, fontWeight: "600" }}>{t("simulateur.tva.deadlineNote")}</Text>
+              <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
+                <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.tva.deadlineNote")}</Text>
               </View>
             </View>
           ) : (
@@ -88,3 +88,49 @@ export default function TvaScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    marginBottom: 12,
+    padding: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  legalRef: {
+    fontSize: 10,
+    marginTop: 12,
+  },
+  noteBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  noteText: {
+    fontSize: 10,
+    fontWeight: "600",
+  },
+});

@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { calculerSoldeLiquidation, type SoldeLiquidationInput, type TypeContribuable } from "@/lib/services/solde-liquidation.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -44,50 +44,50 @@ export default function SoldeLiquidationScreen() {
   }, [resultatFiscal, typeContribuable, acompte1, acompte2, acompte3, acompte4]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.solde.title")}
           </Text>
 
-          <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.solde.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.solde.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.solde.taxableResult")}
           </Text>
-          <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderWidth: 2, borderColor: colors.primary, height: 48, marginBottom: 12 }}>
+          <View style={[styles.inputRow, { backgroundColor: colors.card, borderColor: colors.primary }]}>
             <TextInput
-              style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }}
+              style={[styles.inputText, { color: colors.text }]}
               value={resultatFiscal}
               onChangeText={(v) => setResultatFiscal(formatInputNumber(v))}
               keyboardType="numeric"
               placeholder="0"
               placeholderTextColor={colors.textMuted}
             />
-            <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
+            <Text style={[styles.currencyLabel, { color: colors.textSecondary }]}>FCFA</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.solde.taxpayerType")}
           </Text>
-          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
+          <View style={styles.taxpayerGrid}>
             {TAXPAYER_TYPES.map((tp) => (
               <TouchableOpacity
                 key={tp.value}
-                style={{ width: "48%", paddingVertical: 8, alignItems: "center", backgroundColor: typeContribuable === tp.value ? colors.primary : colors.border }}
+                style={[styles.taxpayerButton, { backgroundColor: typeContribuable === tp.value ? colors.primary : colors.border }]}
                 onPress={() => setTypeContribuable(tp.value)}
               >
-                <Text style={{ color: typeContribuable === tp.value ? colors.sidebarText : colors.text, fontSize: 12, fontWeight: "600" }}>
+                <Text style={[styles.taxpayerButtonText, { color: typeContribuable === tp.value ? colors.sidebarText : colors.text }]}>
                   {tp.label} ({tp.taux})
                 </Text>
               </TouchableOpacity>
             ))}
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.solde.instalmentsPaid")}
           </Text>
           <NumberField label={t("simulateur.solde.q1")} value={acompte1} onChange={setAcompte1} />
@@ -95,10 +95,10 @@ export default function SoldeLiquidationScreen() {
           <NumberField label={t("simulateur.solde.q3")} value={acompte3} onChange={setAcompte3} />
           <NumberField label={t("simulateur.solde.q4")} value={acompte4} onChange={setAcompte4} />
 
-          <Text style={{ fontSize: 10, color: colors.textMuted, marginTop: 4 }}>{t("simulateur.solde.legalRef")}</Text>
+          <Text style={[styles.legalRefSmall, { color: colors.textMuted }]}>{t("simulateur.solde.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
               <SimulateurSection label={t("simulateur.solde.isCalculated")} />
@@ -130,3 +130,73 @@ export default function SoldeLiquidationScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    padding: 12,
+    marginBottom: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  inputRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    borderWidth: 2,
+    height: 48,
+    marginBottom: 12,
+  },
+  inputText: {
+    flex: 1,
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  currencyLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  taxpayerGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+    marginBottom: 16,
+  },
+  taxpayerButton: {
+    width: "48%",
+    paddingVertical: 8,
+    alignItems: "center",
+  },
+  taxpayerButtonText: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  legalRefSmall: {
+    fontSize: 10,
+    marginTop: 4,
+  },
+});

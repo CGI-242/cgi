@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, TextInput, TouchableOpacity, ScrollView, Switch } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, ScrollView, Switch, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { calculerPatente, type PatenteInput } from "@/lib/services/patente.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
@@ -42,84 +42,84 @@ export default function PatenteScreen() {
   }, [chiffreAffaires, regime, isStandBy, dernierePatente, isNouvelle, nombreEntites]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.patente.title")}
           </Text>
 
-          <View style={{ padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <Text style={{ fontSize: 11, color: colors.text }}>{t("simulateur.patente.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.description")}</Text>
           </View>
 
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>{t("simulateur.patente.taxRegime")}</Text>
+          <Text style={[styles.fieldLabel, { color: colors.text }]}>{t("simulateur.patente.taxRegime")}</Text>
           <OptionButtonGroup options={REGIMES} selected={regime} onChange={setRegime} fontSize={11} />
 
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 8 }}>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.patente.standby")}</Text>
-              <Text style={{ fontSize: 10, color: colors.textSecondary }}>{t("simulateur.patente.standbyDesc")}</Text>
+          <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
+            <View style={styles.flex1}>
+              <Text style={[styles.switchLabel, { color: colors.text }]}>{t("simulateur.patente.standby")}</Text>
+              <Text style={[styles.switchDesc, { color: colors.textSecondary }]}>{t("simulateur.patente.standbyDesc")}</Text>
             </View>
             <Switch value={isStandBy} onValueChange={setIsStandBy} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isStandBy ? colors.primary : colors.textMuted} />
           </View>
           {isStandBy && (
-            <View style={{ marginBottom: 8 }}>
-              <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 3 }}>{t("simulateur.patente.lastPatente")}</Text>
-              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, height: 40, borderWidth: 1, borderColor: colors.border }}>
-                <TextInput style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }} value={dernierePatente} onChangeText={(v) => setDernierePatente(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
-                <Text style={{ fontSize: 10, color: colors.textMuted }}>FCFA</Text>
+            <View style={styles.mb8}>
+              <Text style={[styles.subLabel, { color: colors.textSecondary }]}>{t("simulateur.patente.lastPatente")}</Text>
+              <View style={[styles.inputRowSmall, { backgroundColor: colors.card, borderColor: colors.border }]}>
+                <TextInput style={[styles.inputTextSmall, { color: colors.text }]} value={dernierePatente} onChangeText={(v) => setDernierePatente(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
+                <Text style={[styles.currencySmall, { color: colors.textMuted }]}>FCFA</Text>
               </View>
             </View>
           )}
 
           {!isStandBy && (
-            <View style={{ marginBottom: 12 }}>
-              <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 6 }}>{t("simulateur.patente.turnover")}</Text>
-              <View style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.card, paddingHorizontal: 12, borderWidth: 2, borderColor: colors.primary, height: 48 }}>
-                <TextInput style={{ flex: 1, fontSize: 16, fontWeight: "700", color: colors.text }} value={chiffreAffaires} onChangeText={(v) => setChiffreAffaires(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
-                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: "600" }}>FCFA</Text>
+            <View style={styles.mb12}>
+              <Text style={[styles.fieldLabel, { color: colors.text }]}>{t("simulateur.patente.turnover")}</Text>
+              <View style={[styles.inputRow, { backgroundColor: colors.card, borderColor: colors.primary }]}>
+                <TextInput style={[styles.inputText, { color: colors.text }]} value={chiffreAffaires} onChangeText={(v) => setChiffreAffaires(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
+                <Text style={[styles.currencyLabel, { color: colors.textSecondary }]}>FCFA</Text>
               </View>
             </View>
           )}
 
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 8 }}>
-            <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.newCompany")}</Text>
+          <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
+            <Text style={[styles.switchText, { color: colors.text }]}>{t("simulateur.patente.newCompany")}</Text>
             <Switch value={isNouvelle} onValueChange={setIsNouvelle} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isNouvelle ? colors.primary : colors.textMuted} />
           </View>
-          <View style={{ flexDirection: "row", alignItems: "center", padding: 12, backgroundColor: colors.card, marginBottom: 12 }}>
-            <Text style={{ fontSize: 12, color: colors.text, flex: 1 }}>{t("simulateur.patente.fiscalEntities")}</Text>
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
-                <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>-</Text>
+          <View style={[styles.switchRowMb12, { backgroundColor: colors.card }]}>
+            <Text style={[styles.switchText, { color: colors.text }]}>{t("simulateur.patente.fiscalEntities")}</Text>
+            <View style={styles.counterRow}>
+              <TouchableOpacity style={[styles.counterButtonSmall, { backgroundColor: colors.border }]} onPress={() => setNombreEntites(Math.max(1, nombreEntites - 1))}>
+                <Text style={[styles.counterButtonTextSmall, { color: colors.text }]}>-</Text>
               </TouchableOpacity>
-              <Text style={{ minWidth: 24, textAlign: "center", fontSize: 14, fontWeight: "700", color: colors.text }}>{nombreEntites}</Text>
-              <TouchableOpacity style={{ width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setNombreEntites(nombreEntites + 1)}>
-                <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>+</Text>
+              <Text style={[styles.counterValueSmall, { color: colors.text }]}>{nombreEntites}</Text>
+              <TouchableOpacity style={[styles.counterButtonSmall, { backgroundColor: colors.border }]} onPress={() => setNombreEntites(nombreEntites + 1)}>
+                <Text style={[styles.counterButtonTextSmall, { color: colors.text }]}>+</Text>
               </TouchableOpacity>
             </View>
           </View>
 
-          <Text style={{ fontSize: 10, color: colors.textMuted }}>{t("simulateur.patente.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.patente.legalRef")}</Text>
         </ScrollView>
 
-        <ScrollView style={{ width: isMobile ? "100%" : "50%", borderLeftWidth: isMobile ? 0 : 1, borderLeftColor: colors.border, borderTopWidth: isMobile ? 1 : 0, borderTopColor: colors.border }} contentContainerStyle={{ paddingBottom: 40 }}>
+        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result && result.patenteNette > 0 ? (
             <View>
               {result.tranches.length > 0 && (
                 <>
                   <SimulateurSection label={t("simulateur.patente.trancheDetail")} />
                   {result.tranches.map((tr, i) => (
-                    <View key={tr.tranche} style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: i % 2 === 0 ? colors.card : colors.background, paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: colors.border }}>
-                      <Text style={{ fontSize: 11, color: colors.textSecondary, flex: 1 }}>{tr.tranche}</Text>
-                      <Text style={{ fontSize: 10, fontWeight: "600", color: colors.primary, marginHorizontal: 6 }}>{tr.taux.toFixed(3)}%</Text>
-                      <Text style={{ fontSize: 11, fontWeight: "600", color: colors.text, width: 80, textAlign: "right" }}>{formatNumber(Math.round(tr.montant))}</Text>
+                    <View key={tr.tranche} style={[styles.trancheRow, { backgroundColor: i % 2 === 0 ? colors.card : colors.background, borderTopColor: colors.border }]}>
+                      <Text style={[styles.trancheLabel, { color: colors.textSecondary }]}>{tr.tranche}</Text>
+                      <Text style={[styles.trancheRate, { color: colors.primary }]}>{tr.taux.toFixed(3)}%</Text>
+                      <Text style={[styles.trancheAmount, { color: colors.text }]}>{formatNumber(Math.round(tr.montant))}</Text>
                     </View>
                   ))}
-                  <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                    <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                      <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{t("simulateur.patente.grossPatente")}</Text>
-                      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.text }}>{formatNumber(Math.round(result.patenteBrute))}</Text>
+                  <View style={[styles.grossPatenteBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+                    <View style={styles.spaceBetweenRow}>
+                      <Text style={[styles.grossPatenteLabel, { color: colors.text }]}>{t("simulateur.patente.grossPatente")}</Text>
+                      <Text style={[styles.grossPatenteValue, { color: colors.text }]}>{formatNumber(Math.round(result.patenteBrute))}</Text>
                     </View>
                   </View>
                 </>
@@ -131,10 +131,10 @@ export default function PatenteScreen() {
               )}
               <TableRow label={t("simulateur.patente.halfReduction")} value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg={colors.background} color={colors.danger} />
 
-              <View style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                  <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary }}>{t("simulateur.patente.netPatente")}</Text>
-                  <Text style={{ fontSize: 16, fontWeight: "800", color: colors.primary }}>{formatNumber(result.patenteNette)}</Text>
+              <View style={[styles.netPatenteBox, { backgroundColor: `${colors.primary}10`, borderTopColor: colors.border }]}>
+                <View style={styles.spaceBetweenRow}>
+                  <Text style={[styles.netPatenteLabel, { color: colors.primary }]}>{t("simulateur.patente.netPatente")}</Text>
+                  <Text style={[styles.netPatenteValue, { color: colors.primary }]}>{formatNumber(result.patenteNette)}</Text>
                 </View>
               </View>
 
@@ -142,16 +142,16 @@ export default function PatenteScreen() {
                 <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg={colors.background} bold />
               )}
 
-              <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: 1, borderTopColor: colors.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View style={[styles.deadlineBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+                <View style={styles.deadlineRow}>
                   <Ionicons name="calendar-outline" size={14} color={colors.text} />
-                  <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, marginLeft: 6 }}>{t("common.deadline")} : {result.dateEcheance}</Text>
+                  <Text style={[styles.deadlineText, { color: colors.text }]}>{t("common.deadline")} : {result.dateEcheance}</Text>
                 </View>
               </View>
 
-              <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8, borderTopWidth: 1, borderTopColor: colors.border }}>
+              <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
                 {result.references.map((ref) => (
-                  <Text key={ref} style={{ fontSize: 10, color: colors.textMuted }}>{ref}</Text>
+                  <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
                 ))}
               </View>
             </View>
@@ -163,3 +163,203 @@ export default function PatenteScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    padding: 12,
+    marginBottom: 12,
+  },
+  descriptionText: {
+    fontSize: 11,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginBottom: 6,
+  },
+  switchRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 12,
+    marginBottom: 8,
+  },
+  switchRowMb12: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 12,
+    marginBottom: 12,
+  },
+  flex1: {
+    flex: 1,
+  },
+  switchLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  switchDesc: {
+    fontSize: 10,
+  },
+  switchText: {
+    fontSize: 12,
+    flex: 1,
+  },
+  mb8: {
+    marginBottom: 8,
+  },
+  mb12: {
+    marginBottom: 12,
+  },
+  subLabel: {
+    fontSize: 11,
+    marginBottom: 3,
+  },
+  inputRowSmall: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    height: 40,
+    borderWidth: 1,
+  },
+  inputTextSmall: {
+    flex: 1,
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  currencySmall: {
+    fontSize: 10,
+  },
+  inputRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    borderWidth: 2,
+    height: 48,
+  },
+  inputText: {
+    flex: 1,
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  currencyLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  counterRow: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  counterButtonSmall: {
+    width: 28,
+    height: 28,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  counterButtonTextSmall: {
+    fontSize: 15,
+    fontWeight: "700",
+  },
+  counterValueSmall: {
+    minWidth: 24,
+    textAlign: "center",
+    fontSize: 14,
+    fontWeight: "700",
+  },
+  legalRef: {
+    fontSize: 10,
+  },
+  trancheRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderTopWidth: 1,
+  },
+  trancheLabel: {
+    fontSize: 11,
+    flex: 1,
+  },
+  trancheRate: {
+    fontSize: 10,
+    fontWeight: "600",
+    marginHorizontal: 6,
+  },
+  trancheAmount: {
+    fontSize: 11,
+    fontWeight: "600",
+    width: 80,
+    textAlign: "right",
+  },
+  grossPatenteBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderTopWidth: 1,
+  },
+  spaceBetweenRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  grossPatenteLabel: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  grossPatenteValue: {
+    fontSize: 12,
+    fontWeight: "700",
+  },
+  netPatenteBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    borderTopWidth: 1,
+  },
+  netPatenteLabel: {
+    fontSize: 12,
+    fontWeight: "700",
+  },
+  netPatenteValue: {
+    fontSize: 16,
+    fontWeight: "800",
+  },
+  deadlineBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderTopWidth: 1,
+  },
+  deadlineRow: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  deadlineText: {
+    fontSize: 12,
+    fontWeight: "600",
+    marginLeft: 6,
+  },
+  refsBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderTopWidth: 1,
+  },
+  refText: {
+    fontSize: 10,
+  },
+});

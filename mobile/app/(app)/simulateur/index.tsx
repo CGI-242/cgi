@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -133,42 +133,27 @@ export default function SimulateurHub() {
   ];
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <ScrollView style={{ flex: 1, paddingHorizontal: 16, paddingTop: 16 }} contentContainerStyle={{ paddingBottom: 40 }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
         {/* Cards en grille */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12 }}>
+        <View style={styles.grid}>
           {simulateurs.map((sim) => (
             <TouchableOpacity
               key={sim.id}
-              style={{
-                width: "48%",
-                backgroundColor: colors.card,
-                
-                borderWidth: 1,
-                borderColor: colors.border,
-                padding: 16,
-              }}
+              style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}
               onPress={() => router.push(sim.route as Href)}
             >
               <View
-                style={{
-                  backgroundColor: `${colors.primary}15`,
-                  width: 44,
-                  height: 44,
-                  
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 12,
-                }}
+                style={[styles.iconBox, { backgroundColor: `${colors.primary}15` }]}
               >
                 <Ionicons name={sim.icon} size={24} color={colors.primary} />
               </View>
-              <Text style={{ fontSize: 18, fontWeight: "800", color: colors.primary, marginBottom: 2 }}>{sim.title}</Text>
-              <View style={{ backgroundColor: `${colors.primary}20`, marginBottom: 6, paddingHorizontal: 8, paddingVertical: 2, alignSelf: "flex-start" }}>
-                <Text style={{ fontSize: 9, fontWeight: "700", color: colors.primary }}>CGI 2026</Text>
+              <Text style={[styles.cardTitle, { color: colors.primary }]}>{sim.title}</Text>
+              <View style={[styles.badge, { backgroundColor: `${colors.primary}20` }]}>
+                <Text style={[styles.badgeText, { color: colors.primary }]}>CGI 2026</Text>
               </View>
-              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "500", marginBottom: 2 }}>{sim.subtitle}</Text>
-              <Text style={{ fontSize: 10, color: colors.textSecondary }}>{sim.description}</Text>
+              <Text style={[styles.cardSubtitle, { color: colors.text }]}>{sim.subtitle}</Text>
+              <Text style={[styles.cardDescription, { color: colors.textSecondary }]}>{sim.description}</Text>
             </TouchableOpacity>
           ))}
 
@@ -177,3 +162,57 @@ export default function SimulateurHub() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  scrollView: {
+    flex: 1,
+    paddingHorizontal: 16,
+    paddingTop: 16,
+  },
+  scrollContent: {
+    paddingBottom: 40,
+  },
+  grid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 12,
+  },
+  card: {
+    width: "48%",
+    borderWidth: 1,
+    padding: 16,
+  },
+  iconBox: {
+    width: 44,
+    height: 44,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 12,
+  },
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+    marginBottom: 2,
+  },
+  badge: {
+    marginBottom: 6,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    alignSelf: "flex-start",
+  },
+  badgeText: {
+    fontSize: 9,
+    fontWeight: "700",
+  },
+  cardSubtitle: {
+    fontSize: 12,
+    fontWeight: "500",
+    marginBottom: 2,
+  },
+  cardDescription: {
+    fontSize: 10,
+  },
+});

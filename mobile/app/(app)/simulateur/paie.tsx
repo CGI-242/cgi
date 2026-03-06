@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from "react";
-import { View, Text, TouchableOpacity, ScrollView, Switch } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, Switch, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import {
   calculerPaie,
@@ -143,42 +143,42 @@ export default function PaieScreen() {
   ];
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ flex: 1, flexDirection: isMobile ? "column" : "row" }}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
         {/* --- COLONNE GAUCHE : Saisie --- */}
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={{ padding: 12, paddingBottom: 40 }}>
-          <Text style={{ fontSize: 22, fontWeight: fontWeights.heading, fontFamily: fonts.heading, color: colors.text, marginBottom: 12 }}>
+        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+          <Text style={[styles.title, { color: colors.text }]}>
             {t("simulateur.paie.title")}
           </Text>
 
-          <View style={{ marginBottom: 12, padding: 12, backgroundColor: colors.card }}>
-            <Text style={{ fontSize: 13, color: colors.text }}>{t("simulateur.paie.description")}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
+            <Text style={[styles.descriptionText13, { color: colors.text }]}>{t("simulateur.paie.description")}</Text>
           </View>
 
           {/* Profil salarié */}
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.profil")}</Text>
+          <Text style={[styles.label13, { color: colors.textSecondary }]}>{t("simulateur.paie.profil")}</Text>
           <OptionButtonGroup options={PROFILS} selected={profil} onChange={setProfil} fontSize={13} />
 
           {/* Situation familiale (résidents uniquement) */}
           {isResident && (
-            <View style={{ flexDirection: "row", gap: 10, marginBottom: 12, marginTop: 8 }}>
-              <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.status")}</Text>
+            <View style={styles.familyRow}>
+              <View style={styles.flex1}>
+                <Text style={[styles.label13, { color: colors.textSecondary }]}>{t("simulateur.paie.status")}</Text>
                 <OptionButtonGroup options={SITUATIONS} selected={situation} onChange={setSituation} direction="column" fontSize={13} />
               </View>
-              <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginBottom: 2 }}>{t("simulateur.paie.dependents")}</Text>
-                <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
-                  <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
-                    <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>-</Text>
+              <View style={styles.flex1}>
+                <Text style={[styles.label13, { color: colors.textSecondary }]}>{t("simulateur.paie.dependents")}</Text>
+                <View style={styles.counterRow}>
+                  <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
+                    <Text style={[styles.counterButtonText, { color: colors.text }]}>-</Text>
                   </TouchableOpacity>
-                  <Text style={{ minWidth: 28, textAlign: "center", fontSize: 16, fontWeight: "700", color: colors.text }}>{enfants}</Text>
-                  <TouchableOpacity accessibilityLabel={t("simulateur.increaseDependents")} accessibilityRole="button" style={{ width: 32, height: 32, alignItems: "center", justifyContent: "center", backgroundColor: colors.border }} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
-                    <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>+</Text>
+                  <Text style={[styles.counterValue, { color: colors.text }]}>{enfants}</Text>
+                  <TouchableOpacity accessibilityLabel={t("simulateur.increaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfants(Math.min(20, enfants + 1))}>
+                    <Text style={[styles.counterButtonText, { color: colors.text }]}>+</Text>
                   </TouchableOpacity>
                 </View>
-                <View style={{ paddingHorizontal: 12, paddingVertical: 8, alignItems: "center", backgroundColor: `${colors.primary}15` }}>
-                  <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>
+                <View style={[styles.partsBox, { backgroundColor: `${colors.primary}15` }]}>
+                  <Text style={[styles.partsText, { color: colors.primary }]}>
                     {nombreParts} {t("common.parts")}
                   </Text>
                 </View>
@@ -202,8 +202,8 @@ export default function PaieScreen() {
 
           {/* Section Avantages en nature */}
           <SimulateurSection label={t("simulateur.paie.sectionAvantages")} />
-          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8, marginBottom: 8, backgroundColor: `${colors.primary}10` }}>
-            <Text style={{ fontSize: 13, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.toggleForfaitaire")}</Text>
+          <View style={[styles.toggleRow, { backgroundColor: `${colors.primary}10` }]}>
+            <Text style={[styles.toggleLabel, { color: colors.primary }]}>{t("simulateur.paie.toggleForfaitaire")}</Text>
             <Switch value={forfaitaire} onValueChange={handleToggleForfaitaire} trackColor={{ false: colors.border, true: colors.primary }} />
           </View>
           <NumberField label={t("simulateur.paie.avLogement")} value={fields.avLogement} onChange={(v) => setField("avLogement", v)} />
@@ -214,39 +214,38 @@ export default function PaieScreen() {
           <NumberField label={t("simulateur.paie.avNourriture")} value={fields.avNourriture} onChange={(v) => setField("avNourriture", v)} />
 
           {/* Affichage surligné du brut imposable */}
-          <View style={{ marginTop: 12, padding: 14, backgroundColor: `${colors.primary}15` }}>
-            <Text style={{ fontSize: 14, fontWeight: "600", color: colors.textSecondary }}>{t("simulateur.paie.salaireBrutImposable")}</Text>
-            <Text style={{ fontSize: 22, fontWeight: "800", color: colors.primary }}>{formatNumber(brutImposable)} FCFA</Text>
+          <View style={[styles.brutBox, { backgroundColor: `${colors.primary}15` }]}>
+            <Text style={[styles.brutLabel, { color: colors.textSecondary }]}>{t("simulateur.paie.salaireBrutImposable")}</Text>
+            <Text style={[styles.brutValue, { color: colors.primary }]}>{formatNumber(brutImposable)} FCFA</Text>
             {totalExonere > 0 && (
-              <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 4 }}>
+              <Text style={[styles.exonereText, { color: colors.textMuted }]}>
                 {t("simulateur.paie.elementsExoneres")} : {formatNumber(totalExonere)} FCFA
               </Text>
             )}
           </View>
 
           {/* Zone TOL */}
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.textSecondary, marginTop: 12, marginBottom: 2 }}>{t("simulateur.paie.zoneTOL")}</Text>
+          <Text style={[styles.label13mt12, { color: colors.textSecondary }]}>{t("simulateur.paie.zoneTOL")}</Text>
           <OptionButtonGroup options={ZONES} selected={zoneTOL} onChange={setZoneTOL} fontSize={13} />
 
           {/* Taxe régionale (janvier uniquement) */}
-          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8, marginTop: 8, backgroundColor: `${colors.primary}10` }}>
-            <Text style={{ fontSize: 13, fontWeight: "600", color: colors.primary }}>{t("simulateur.paie.moisJanvier")}</Text>
+          <View style={[styles.toggleRowMt8, { backgroundColor: `${colors.primary}10` }]}>
+            <Text style={[styles.toggleLabel, { color: colors.primary }]}>{t("simulateur.paie.moisJanvier")}</Text>
             <Switch value={moisJanvier} onValueChange={setMoisJanvier} trackColor={{ false: colors.border, true: colors.primary }} />
           </View>
 
-          <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 12 }}>{t("simulateur.paie.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.paie.legalRef")}</Text>
         </ScrollView>
 
         {/* --- COLONNE DROITE : Résultats --- */}
         <ScrollView
-          style={{
-            width: isMobile ? "100%" : "50%",
-            borderLeftWidth: isMobile ? 0 : 1,
-            borderLeftColor: colors.border,
-            borderTopWidth: isMobile ? 1 : 0,
-            borderTopColor: colors.border,
-          }}
-          contentContainerStyle={{ paddingBottom: 40 }}
+          style={[
+            { width: isMobile ? "100%" : "50%" },
+            isMobile
+              ? { borderTopWidth: 1, borderTopColor: colors.border }
+              : { borderLeftWidth: 1, borderLeftColor: colors.border },
+          ]}
+          contentContainerStyle={styles.resultScrollContent}
         >
           {result ? (
             <View>
@@ -297,3 +296,122 @@ export default function PaieScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  rowContainer: {
+    flex: 1,
+  },
+  scrollContent: {
+    padding: 12,
+    paddingBottom: 40,
+  },
+  resultScrollContent: {
+    paddingBottom: 40,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: fontWeights.heading,
+    fontFamily: fonts.heading,
+    marginBottom: 12,
+  },
+  descriptionBox: {
+    marginBottom: 12,
+    padding: 12,
+  },
+  descriptionText13: {
+    fontSize: 13,
+  },
+  label13: {
+    fontSize: 13,
+    fontWeight: "600",
+    marginBottom: 2,
+  },
+  label13mt12: {
+    fontSize: 13,
+    fontWeight: "600",
+    marginTop: 12,
+    marginBottom: 2,
+  },
+  familyRow: {
+    flexDirection: "row",
+    gap: 10,
+    marginBottom: 12,
+    marginTop: 8,
+  },
+  flex1: {
+    flex: 1,
+  },
+  counterRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  counterButton: {
+    width: 32,
+    height: 32,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  counterButtonText: {
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  counterValue: {
+    minWidth: 28,
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  partsBox: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    alignItems: "center",
+  },
+  partsText: {
+    fontSize: 14,
+    fontWeight: "700",
+  },
+  toggleRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    marginBottom: 8,
+  },
+  toggleRowMt8: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    marginTop: 8,
+  },
+  toggleLabel: {
+    fontSize: 13,
+    fontWeight: "600",
+  },
+  brutBox: {
+    marginTop: 12,
+    padding: 14,
+  },
+  brutLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  brutValue: {
+    fontSize: 22,
+    fontWeight: "800",
+  },
+  exonereText: {
+    fontSize: 12,
+    marginTop: 4,
+  },
+  legalRef: {
+    fontSize: 12,
+    marginTop: 12,
+  },
+});
