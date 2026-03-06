@@ -1110,13 +1110,13 @@
       "article": "Art. 114-D",
       "titre": "Territorialité ITS et domicile fiscal",
       "texte": [
-        "1. Les traitements et salaires sont imposables au Congo, quel que soit le lieu de mise à disposition des revenus :",
+        "1) Les traitements et salaires sont imposables au Congo, quel que soit le lieu de mise à disposition des revenus :",
         "a) lorsque le bénéficiaire est domicilié au Congo, alors même que l'activité rémunérée s'exerce hors du Congo ou que l'employeur est domicilié ou établi hors du Congo ;",
         "b) lorsque le bénéficiaire n'est pas domicilié au Congo, mais que l'activité rétribuée s'y exerce et que l'employeur est domicilié ou établi.",
-        "2. Les pensions publiques ou privées ainsi que les rentes viagères sont imposables au Congo :",
+        "2) Les pensions publiques ou privées ainsi que les rentes viagères sont imposables au Congo :",
         "a) lorsque le bénéficiaire est domicilié au Congo alors même que le débiteur serait domicilié à l'étranger ;",
         "b) lorsque le bénéficiaire n'est pas domicilié au Congo mais que le débiteur y est domicilié ou établi.",
-        "3. Sont considérés comme ayant leur domicile fiscal au Congo :",
+        "3) Sont considérés comme ayant leur domicile fiscal au Congo :",
         "a) les personnes qui y possèdent un foyer d'habitation permanent à leur disposition à titre de propriétaire, d'usufruitier ou de locataire ;",
         "b) les personnes qui, sans disposer au Congo d'un foyer d'habitation permanent, y ont néanmoins le centre de leurs intérêts vitaux ;",
         "c) les employés de l'État en poste à l'étranger."
@@ -1124,7 +1124,8 @@
       "mots_cles": [
         "territorialité",
         "domicile fiscal",
-        "183 jours",
+        "foyer d'habitation",
+        "intérêts vitaux",
         "pensions",
         "rentes viagères"
       ],
@@ -1155,12 +1156,12 @@
       "texte": [
         "Pour la détermination des bases d'imposition, il est tenu compte du montant brut des traitements, émoluments, indemnités, salaires, pensions et rentes viagères ainsi que de tous les avantages en argent et en nature accordés aux intéressés.",
         "Les avantages en nature sont évalués selon leur valeur réelle. À défaut, ceux-ci sont évalués comme suit :",
-        "- logement : 20% du salaire plafonné pour la sécurité sociale ;",
-        "- domesticité, gardiennage : 7% du salaire brut ;",
-        "- eau, éclairage, gaz : 5% du salaire brut ;",
-        "- téléphone : 2% du salaire brut ;",
-        "- voiture : 3% du salaire brut ;",
-        "- nourriture : 20% du salaire brut.",
+        "- logement : 20 % du salaire plafonné pour la sécurité sociale ;",
+        "- domesticité, gardiennage : 7 % du salaire brut ;",
+        "- eau, éclairage, gaz : 5 % du salaire brut ;",
+        "- téléphone : 2 % du salaire brut ;",
+        "- voiture : 3 % du salaire brut ;",
+        "- nourriture : 20 % du salaire brut.",
         "Pour le calcul des avantages en nature, la base de référence est constituée par le montant brut du salaire de présence et celui de congé, après déduction des retenues faites par l'employeur au titre de pensions ou de retraites ainsi que les cotisations aux assurances sociales obligatoires.",
         "L'avantage en nature correspondant aux primes de mutuelles sociales payées par l'employeur pour le compte du salarié n'est pas imposable si ces mutuelles profitent à l'ensemble des salariés.",
         "Sous réserve des conventions internationales, pour les revenus de source étrangère, la base d'imposition est constituée par le montant perçu par le bénéficiaire, net de tout impôt et la charge acquittée ou retenue à l'étranger."
@@ -1169,8 +1170,12 @@
         "base imposable",
         "avantages en nature",
         "logement",
+        "domesticité",
+        "téléphone",
         "voiture",
         "nourriture",
+        "sécurité sociale",
+        "mutuelles sociales",
         "revenus de source étrangère"
       ],
       "statut": "en vigueur",
