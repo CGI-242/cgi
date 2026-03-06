@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyAccessToken } from "../utils/jwt";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
+import { generateCsrfToken, setCsrfCookie, clearCsrfCookie } from "./csrf.middleware";
 import { createLogger } from "../utils/logger";
 import prisma from "../utils/prisma";
 
@@ -113,6 +114,10 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
     maxAge: refreshMaxAge,
   });
 
+  // CSRF double-submit cookie (non-httpOnly, lisible par le JS client)
+  const csrfToken = generateCsrfToken();
+  setCsrfCookie(res, csrfToken);
+
   logger.info(`Cookies set — secure: ${isSecure}, sameSite: lax, rememberMe: ${!!rememberMe}`);
 }
 
@@ -122,4 +127,5 @@ export function setAuthCookies(res: Response, token: string, refreshToken: strin
 export function clearAuthCookies(res: Response): void {
   res.clearCookie("accessToken", { path: "/" });
   res.clearCookie("refreshToken", { path: "/" });
+  clearCsrfCookie(res);
 }

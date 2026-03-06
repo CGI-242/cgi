@@ -7,6 +7,7 @@ import { grantPermissionBody, revokePermissionBody } from '../schemas/permission
 import { userIdParam } from '../schemas/common.schema';
 import * as permissionService from '../services/permission.service';
 import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 import { Permission } from '../types/permissions';
 
 const router = Router();
@@ -178,7 +179,7 @@ router.post('/members/:userId/grant', requireAuth, resolveTenant, requireOrg, re
   try {
     const userId = String(req.params.userId);
     await permissionService.grantPermission(req.orgId!, userId, req.body.permission);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_GRANTED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: { permission: req.body.permission } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_GRANTED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { permission: req.body.permission } });
     res.json({ message: 'Permission accordée' });
   } catch (err) { handleError(res, err); }
 });
@@ -218,7 +219,7 @@ router.post('/members/:userId/revoke', requireAuth, resolveTenant, requireOrg, r
   try {
     const userId = String(req.params.userId);
     await permissionService.revokePermission(req.orgId!, userId, req.body.permission);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_REVOKED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: { permission: req.body.permission } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSION_REVOKED', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { permission: req.body.permission } });
     res.json({ message: 'Permission révoquée' });
   } catch (err) { handleError(res, err); }
 });
@@ -249,7 +250,7 @@ router.post('/members/:userId/reset', requireAuth, resolveTenant, requireOrg, re
   try {
     const userId = String(req.params.userId);
     await permissionService.resetToDefaults(req.orgId!, userId);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSIONS_RESET', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, changes: {} });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'PERMISSIONS_RESET', entityType: 'OrganizationMember', entityId: userId, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: {} });
     res.json({ message: 'Permissions réinitialisées' });
   } catch (err) { handleError(res, err); }
 });

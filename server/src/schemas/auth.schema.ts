@@ -52,3 +52,17 @@ export const checkEmailBody = z.object({
   email: emailField,
   turnstileToken: z.string().optional(),
 });
+
+export const changeEmailBody = z.object({
+  newEmail: emailField,
+  password: requiredString('password'),
+});
+
+export const confirmEmailChangeBody = z.object({
+  otp: requiredString('otp'),
+});
+
+export const changePasswordBody = z.object({
+  currentPassword: requiredString('currentPassword'),
+  newPassword: passwordField,
+});

@@ -76,6 +76,13 @@ model User {
   mfaBackupCodes       String[]  @default([]) // Hashed backup codes
   mfaVerifiedAt        DateTime?
 
+  // Changement d'email en attente
+  pendingEmail         String?
+
+  // Verrouillage de compte (MISS-02)
+  failedLoginAttempts  Int       @default(0)
+  lockedUntil          DateTime?
+
   // Révocation globale des sessions (M2 — persistance blacklist)
   tokenRevokedAt       DateTime?
 
@@ -638,6 +645,7 @@ enum AuditAction {
   MFA_DISABLED
   MFA_VERIFIED
   MFA_FAILED
+  ACCOUNT_LOCKED
 
   // Permissions
   PERMISSION_GRANTED
@@ -661,6 +669,9 @@ model AuditLog {
 
   // Contexte organisation (optionnel)
   organizationId String?
+
+  // Adresse IP de l'acteur (MISS-03)
+  ipAddress String?
 
   // Détails des changements
   changes  Json // { before: {...}, after: {...} }

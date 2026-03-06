@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger";
 import { globalLimiter, authLimiter, sensitiveLimiter, chatLimiter } from "./middleware/rateLimit.middleware";
+import { csrfProtection } from "./middleware/csrf.middleware";
 import authRoutes from "./routes/auth";
 import mfaRoutes from "./routes/mfa.routes";
 import chatRoutes from "./routes/chat";
@@ -61,10 +62,13 @@ app.use(cors({
   },
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "X-Organization-ID", "X-Platform"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Organization-ID", "X-Platform", "X-CSRF-Token"],
 }));
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
+
+// Protection CSRF (double-submit cookie) — apres cookieParser
+app.use(csrfProtection);
 
 // Rate limiting global
 app.use(globalLimiter);

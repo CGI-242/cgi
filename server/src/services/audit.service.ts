@@ -11,6 +11,7 @@ interface AuditLogInput {
   entityType: string;
   entityId: string;
   organizationId?: string;
+  ipAddress?: string;
   changes: unknown;
   metadata?: unknown;
 }
@@ -29,6 +30,7 @@ export class AuditService {
         entityType: input.entityType,
         entityId: input.entityId,
         organizationId: input.organizationId,
+        ipAddress: input.ipAddress,
         changes: input.changes as never,
         metadata: input.metadata as never,
       },

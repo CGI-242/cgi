@@ -246,10 +246,25 @@
 
 ## Corrections déjà appliquées (6 mars 2026)
 
-| Commit | Description |
-|--------|-------------|
-| `a497004` | Suppression split 35%/65% ITS + correction barème serveur alertes-fiscales |
-| `70b7b34` | Fix 3 bugs auth critiques (verifyToken, quota, rememberMe) + doc |
+| Commit | Description | Sévérité |
+|--------|-------------|----------|
+| `a497004` | Suppression split 35%/65% ITS + correction barème serveur alertes-fiscales | — |
+| `70b7b34` | Fix 3 bugs auth critiques (verifyToken, quota, rememberMe) + doc | — |
+| `705b79a` | Corriger 5 vulnérabilités critiques (CRIT-01 à CRIT-05) | CRITIQUE |
+| `3b4a567` | Sécurité auth + accessibilité aria-hidden | CRITIQUE |
+| `59778ff` | Invalider tous les tokens après changement de mot de passe | CRITIQUE |
+| `5f890a8` | Corriger 14 issues HIGH (HIGH-01 à HIGH-14) + fix "Refresh token manquant" | HAUT |
+| `4871dbf` | Corriger 29 issues MEDIUM (MED-01 à MED-29) | MOYEN |
+
+### Résumé de l'état des corrections
+
+| Sévérité | Total | Corrigé | Restant |
+|----------|-------|---------|---------|
+| CRITIQUE | 5 | 5 | 0 |
+| HAUT | 14 | 14 | 0 |
+| MOYEN | 29 | 29 | 0 |
+| BAS | 25 | 0 | 25 |
+| **Total** | **73** | **48** | **25** |
 
 ---
 

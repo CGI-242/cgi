@@ -12,6 +12,7 @@ import { EmailService } from '../services/email.service';
 import { generateAccessToken, generateRefreshToken } from '../utils/jwt';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
+import { getClientIp } from '../utils/ip';
 
 const logger = createLogger('MFARoutes');
 const router = Router();
@@ -110,6 +111,7 @@ router.post('/enable', requireAuth, sensitiveLimiter, validate({ body: enableMfa
       action: 'MFA_ENABLED',
       entityType: 'USER',
       entityId: req.userId!,
+      ipAddress: getClientIp(req),
       changes: { mfaEnabled: true },
     });
 
@@ -183,6 +185,7 @@ router.post('/disable', requireAuth, sensitiveLimiter, validate({ body: disableM
       action: 'MFA_DISABLED',
       entityType: 'USER',
       entityId: req.userId!,
+      ipAddress: getClientIp(req),
       changes: { mfaEnabled: false },
     });
 
@@ -276,6 +279,7 @@ router.post('/verify', authLimiter, validate({ body: verifyMfaBody }), async (re
       action: 'LOGIN_SUCCESS',
       entityType: 'USER',
       entityId: payload.userId,
+      ipAddress: getClientIp(req),
       changes: null,
       metadata: { mfa: true },
     });
@@ -344,6 +348,7 @@ router.post('/backup-codes/regenerate', requireAuth, sensitiveLimiter, async (re
       action: 'MFA_BACKUP_REGENERATED',
       entityType: 'USER',
       entityId: req.userId!,
+      ipAddress: getClientIp(req),
       changes: { regenerated: true },
     });
 

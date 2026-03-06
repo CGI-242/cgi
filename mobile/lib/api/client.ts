@@ -72,9 +72,19 @@ api.interceptors.request.use(async (config) => {
     } catch (err) {
       if (__DEV__) console.warn("[auth] Erreur lecture token:", err);
     }
+  } else {
+    // Web : cookies httpOnly envoyes automatiquement par le navigateur
+    // Lire le cookie csrf-token et l'envoyer en header X-CSRF-Token
+    try {
+      const csrfToken = document.cookie
+        .split("; ")
+        .find((c) => c.startsWith("csrf-token="))
+        ?.split("=")[1];
+      if (csrfToken) {
+        config.headers["X-CSRF-Token"] = csrfToken;
+      }
+    } catch {}
   }
-  // Web : cookies httpOnly envoyés automatiquement par le navigateur
-  // Pas de header Authorization nécessaire
   return config;
 });
 

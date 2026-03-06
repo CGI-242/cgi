@@ -8,11 +8,12 @@ import { requireAuth, AuthRequest, isWebClient, setAuthCookies, clearAuthCookies
 import { sensitiveLimiter } from "../middleware/rateLimit.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { verifyTurnstile } from "../middleware/turnstile.middleware";
-import { registerBody, loginBody, verifyOtpBody, sendOtpEmailBody, forgotPasswordBody, resetPasswordBody, refreshTokenBody, checkEmailBody } from "../schemas/auth.schema";
+import { registerBody, loginBody, verifyOtpBody, sendOtpEmailBody, forgotPasswordBody, resetPasswordBody, refreshTokenBody, checkEmailBody, changeEmailBody, confirmEmailChangeBody, changePasswordBody } from "../schemas/auth.schema";
 import { TokenBlacklistService } from "../services/tokenBlacklist.service";
 import { EmailService } from "../services/email.service";
 import { AuditService } from "../services/audit.service";
 import { createLogger } from "../utils/logger";
+import { getClientIp } from "../utils/ip";
 
 const logger = createLogger("AuthRoutes");
 const router = Router();
@@ -185,6 +186,7 @@ router.post("/register", validate({ body: registerBody }), verifyTurnstile, asyn
       entityType: "USER",
       entityId: user.id,
       organizationId: organization.id,
+      ipAddress: getClientIp(req),
       changes: { email, organization: organization.name, viaInvitation: !!invitation },
     });
 
@@ -242,25 +244,68 @@ router.post("/login", validate({ body: loginBody }), verifyTurnstile, async (req
   try {
     const { email, password, rememberMe } = req.body;
 
+    const MAX_FAILED_ATTEMPTS = 5;
+    const LOCK_DURATION_MS = 15 * 60 * 1000; // 15 minutes
+
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
       res.status(401).json({ error: "Identifiants incorrects" });
       return;
     }
 
+    // Verifier si le compte est verrouille
+    if (user.lockedUntil && user.lockedUntil > new Date()) {
+      const minutesLeft = Math.ceil((user.lockedUntil.getTime() - Date.now()) / 60000);
+      res.status(423).json({
+        error: `Compte verrouillé suite à trop de tentatives. Réessayez dans ${minutesLeft} minute(s).`,
+      });
+      return;
+    }
+
     const validPassword = await bcrypt.compare(password, user.password);
     if (!validPassword) {
+      const newAttempts = user.failedLoginAttempts + 1;
+      const updateData: { failedLoginAttempts: number; lockedUntil?: Date } = {
+        failedLoginAttempts: newAttempts,
+      };
+
+      // Verrouiller apres N tentatives
+      if (newAttempts >= MAX_FAILED_ATTEMPTS) {
+        updateData.lockedUntil = new Date(Date.now() + LOCK_DURATION_MS);
+        AuditService.log({
+          actorId: user.id,
+          actorEmail: email,
+          action: "ACCOUNT_LOCKED",
+          entityType: "USER",
+          entityId: user.id,
+          ipAddress: getClientIp(req),
+          changes: null,
+          metadata: { reason: "too_many_failed_attempts", attempts: newAttempts },
+        });
+      }
+
+      await prisma.user.update({ where: { id: user.id }, data: updateData });
+
       AuditService.log({
         actorId: user.id,
         actorEmail: email,
         action: "LOGIN_FAILED",
         entityType: "USER",
         entityId: user.id,
+        ipAddress: getClientIp(req),
         changes: null,
-        metadata: { reason: "invalid_password" },
+        metadata: { reason: "invalid_password", failedAttempts: newAttempts },
       });
       res.status(401).json({ error: "Identifiants incorrects" });
       return;
+    }
+
+    // Reinitialiser le compteur en cas de succes
+    if (user.failedLoginAttempts > 0 || user.lockedUntil) {
+      await prisma.user.update({
+        where: { id: user.id },
+        data: { failedLoginAttempts: 0, lockedUntil: null },
+      });
     }
 
     const otp = generateOtp();
@@ -392,6 +437,7 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
       action: "LOGIN_SUCCESS",
       entityType: "USER",
       entityId: user.id,
+      ipAddress: getClientIp(req),
       changes: null,
     });
 
@@ -519,6 +565,7 @@ router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswor
         action: "PASSWORD_RESET_REQUESTED",
         entityType: "USER",
         entityId: user.id,
+        ipAddress: getClientIp(req),
         changes: null,
       });
 
@@ -597,6 +644,7 @@ router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordB
       action: "PASSWORD_CHANGED",
       entityType: "USER",
       entityId: user.id,
+      ipAddress: getClientIp(req),
       changes: null,
     });
 
@@ -778,6 +826,7 @@ router.post("/logout", requireAuth, async (req: AuthRequest, res: Response) => {
       action: "LOGOUT",
       entityType: "USER",
       entityId: req.userId!,
+      ipAddress: getClientIp(req),
       changes: null,
     });
 
@@ -828,12 +877,188 @@ router.post("/logout-all", requireAuth, async (req: AuthRequest, res: Response) 
       action: "LOGOUT_ALL",
       entityType: "USER",
       entityId: req.userId!,
+      ipAddress: getClientIp(req),
       changes: null,
     });
 
     res.json({ message: "Toutes les sessions ont été révoquées" });
   } catch (err) {
     logger.error("[logout-all]", err);
+    res.status(500).json({ error: "Erreur serveur" });
+  }
+});
+
+// POST /api/auth/change-email
+router.post("/change-email", requireAuth, sensitiveLimiter, validate({ body: changeEmailBody }), async (req: AuthRequest, res: Response) => {
+  try {
+    const { newEmail, password } = req.body;
+
+    const user = await prisma.user.findUnique({ where: { id: req.userId! } });
+    if (!user) {
+      res.status(401).json({ error: "Utilisateur introuvable" });
+      return;
+    }
+
+    // Vérifier le mot de passe actuel
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) {
+      res.status(401).json({ error: "Mot de passe actuel incorrect" });
+      return;
+    }
+
+    // Vérifier que le nouvel email n'est pas déjà utilisé
+    const existingUser = await prisma.user.findUnique({ where: { email: newEmail } });
+    if (existingUser) {
+      res.status(409).json({ error: "Cet email est déjà utilisé" });
+      return;
+    }
+
+    // Générer un OTP et l'envoyer au nouvel email
+    const otp = generateOtp();
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        pendingEmail: newEmail,
+        emailVerifyToken: otp,
+        emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes
+      },
+    });
+
+    // Envoyer OTP au nouvel email
+    EmailService.sendOtp(newEmail, otp).catch((err) => {
+      logger.error(`Echec envoi OTP (change-email) à ${newEmail}`, err);
+    });
+
+    AuditService.log({
+      actorId: user.id,
+      actorEmail: user.email,
+      action: "USER_UPDATED",
+      entityType: "USER",
+      entityId: user.id,
+      ipAddress: getClientIp(req),
+      changes: { pendingEmail: newEmail },
+    });
+
+    res.json({ message: "Un code de vérification a été envoyé au nouvel email" });
+  } catch (err) {
+    logger.error("[change-email]", err);
+    res.status(500).json({ error: "Erreur serveur" });
+  }
+});
+
+// POST /api/auth/confirm-email-change
+router.post("/confirm-email-change", requireAuth, validate({ body: confirmEmailChangeBody }), async (req: AuthRequest, res: Response) => {
+  try {
+    const { otp } = req.body;
+
+    const user = await prisma.user.findUnique({ where: { id: req.userId! } });
+    if (!user || !user.pendingEmail) {
+      res.status(400).json({ error: "Aucun changement d'email en cours" });
+      return;
+    }
+
+    // Vérifier l'OTP
+    if (user.emailVerifyToken !== otp) {
+      res.status(400).json({ error: "Code invalide" });
+      return;
+    }
+
+    // Vérifier l'expiration
+    if (user.emailVerifyExpires && user.emailVerifyExpires < new Date()) {
+      res.status(400).json({ error: "Code expiré, veuillez en demander un nouveau" });
+      return;
+    }
+
+    const oldEmail = user.email;
+    const newEmail = user.pendingEmail;
+
+    // Mettre à jour l'email
+    const updatedUser = await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        email: newEmail,
+        pendingEmail: null,
+        emailVerifyToken: null,
+        emailVerifyExpires: null,
+      },
+    });
+
+    // Invalider tous les tokens existants (sécurité)
+    TokenBlacklistService.blacklistAllUserTokens(user.id);
+
+    AuditService.log({
+      actorId: user.id,
+      actorEmail: newEmail,
+      action: "USER_UPDATED",
+      entityType: "USER",
+      entityId: user.id,
+      ipAddress: getClientIp(req),
+      changes: { emailFrom: oldEmail, emailTo: newEmail },
+    });
+
+    res.json({
+      message: "Email modifié avec succès",
+      user: {
+        id: updatedUser.id,
+        nom: updatedUser.lastName,
+        prenom: updatedUser.firstName,
+        email: updatedUser.email,
+        telephone: updatedUser.phone,
+        is_verified: updatedUser.isEmailVerified,
+      },
+    });
+  } catch (err) {
+    logger.error("[confirm-email-change]", err);
+    res.status(500).json({ error: "Erreur serveur" });
+  }
+});
+
+// POST /api/auth/change-password
+router.post("/change-password", requireAuth, sensitiveLimiter, validate({ body: changePasswordBody }), async (req: AuthRequest, res: Response) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    const user = await prisma.user.findUnique({ where: { id: req.userId! } });
+    if (!user) {
+      res.status(401).json({ error: "Utilisateur introuvable" });
+      return;
+    }
+
+    // Vérifier le mot de passe actuel
+    const validPassword = await bcrypt.compare(currentPassword, user.password);
+    if (!validPassword) {
+      res.status(401).json({ error: "Mot de passe actuel incorrect" });
+      return;
+    }
+
+    // Hacher le nouveau mot de passe (cost 12 — MED-08)
+    const hashedPassword = await bcrypt.hash(newPassword, 12);
+
+    // Mettre à jour le mot de passe et invalider les tokens
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        password: hashedPassword,
+        tokenRevokedAt: new Date(), // Incrémenter tokenVersion via tokenRevokedAt
+      },
+    });
+
+    // Invalider tous les tokens existants
+    TokenBlacklistService.blacklistAllUserTokens(user.id);
+
+    AuditService.log({
+      actorId: user.id,
+      actorEmail: user.email,
+      action: "PASSWORD_CHANGED",
+      entityType: "USER",
+      entityId: user.id,
+      ipAddress: getClientIp(req),
+      changes: null,
+    });
+
+    res.json({ message: "Mot de passe modifié avec succès" });
+  } catch (err) {
+    logger.error("[change-password]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });

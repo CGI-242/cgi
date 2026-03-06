@@ -122,7 +122,11 @@
     "country": "Pays",
     "chooseCountry": "Choisir un pays",
     "toggleTheme": "Changer le thème",
-    "togglePassword": "Afficher ou masquer le mot de passe"
+    "togglePassword": "Afficher ou masquer le mot de passe",
+    "wrongPassword": "Mot de passe actuel incorrect",
+    "emailAlreadyUsed": "Cet email est déjà utilisé",
+    "emailChanged": "Email modifié avec succès",
+    "accountLocked": "Compte verrouillé, réessayez dans {{minutes}} minutes"
   },
   "passwordStrength": {
     "minLength": "12 caractères minimum",

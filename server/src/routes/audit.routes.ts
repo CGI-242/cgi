@@ -5,6 +5,7 @@ import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { orgAuditQuery, userAuditQuery, userAuditParams, entityAuditParams, searchAuditQuery, statsAuditQuery, cleanupAuditBody } from '../schemas/audit.schema';
 import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 
 const router = Router();
 
@@ -221,7 +222,7 @@ router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, va
   try {
     const { olderThanDays } = req.body;
     const result = await AuditService.gdprCleanup(req.orgId!, olderThanDays);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
     res.json(result);
   } catch (err) {
     res.status(500).json({ error: 'Erreur serveur' });

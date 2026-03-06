@@ -6,6 +6,7 @@ import { validate } from '../middleware/validate.middleware';
 import { activateBody, upgradeBody } from '../schemas/subscription.schema';
 import * as subscriptionService from '../services/subscription.service';
 import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
 
@@ -79,6 +80,7 @@ router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, v
       entityType: 'Subscription',
       entityId: updated.id,
       organizationId: req.orgId!,
+      ipAddress: getClientIp(req),
       changes: { plan, activatedUntil: updated.currentPeriodEnd },
     });
 
@@ -120,6 +122,7 @@ router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
       entityType: 'Subscription',
       entityId: updated.id,
       organizationId: req.orgId!,
+      ipAddress: getClientIp(req),
       changes: { action: 'renew', renewedUntil: updated.currentPeriodEnd },
     });
 
@@ -165,7 +168,7 @@ router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
 router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: upgradeBody }), async (req: AuthRequest, res: Response) => {
   try {
     const updated = await subscriptionService.upgradePlan(req.orgId!, req.body.plan);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: updated.id, organizationId: req.orgId!, changes: { newPlan: req.body.plan } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: updated.id, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { newPlan: req.body.plan } });
     res.json(updated);
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Erreur serveur';

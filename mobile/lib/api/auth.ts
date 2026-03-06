@@ -49,4 +49,19 @@ export const authApi = {
     const { data } = await api.post<{ message: string }>("/auth/logout-all");
     return data;
   },
+
+  changeEmail: async (payload: { newEmail: string; password: string }): Promise<MessageResponse> => {
+    const { data } = await api.post<MessageResponse>("/auth/change-email", payload);
+    return data;
+  },
+
+  confirmEmailChange: async (payload: { otp: string }): Promise<AuthResponse> => {
+    const { data } = await api.post<AuthResponse>("/auth/confirm-email-change", payload);
+    return data;
+  },
+
+  changePassword: async (payload: { currentPassword: string; newPassword: string }): Promise<MessageResponse> => {
+    const { data } = await api.post<MessageResponse>("/auth/change-password", payload);
+    return data;
+  },
 };

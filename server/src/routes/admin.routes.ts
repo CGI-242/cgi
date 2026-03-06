@@ -10,6 +10,7 @@ import prisma from '../utils/prisma';
 import * as subscriptionService from '../services/subscription.service';
 import { PlanName, calculateTotalPrice, getUnitPrice } from '../types/plans';
 import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('AdminRoutes');
@@ -216,7 +217,7 @@ router.post('/seat-requests/:requestId/approve', requireAuth, requireAdmin, vali
   try {
     const requestId = String(req.params.requestId);
     const result = await subscriptionService.approveSeatsRequest(requestId, req.userId!);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_APPROVED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, changes: { additionalSeats: result.additionalSeats } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_APPROVED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, ipAddress: getClientIp(req), changes: { additionalSeats: result.additionalSeats } });
     res.json({ message: 'Demande approuvée', request: result });
   } catch (err) {
     logger.error('Erreur approbation demande de sièges', err);
@@ -259,7 +260,7 @@ router.post('/seat-requests/:requestId/reject', requireAuth, requireAdmin, valid
   try {
     const requestId = String(req.params.requestId);
     const result = await subscriptionService.rejectSeatsRequest(requestId, req.userId!, req.body.note);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_REJECTED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, changes: { adminNote: req.body.note } });
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SEATS_REJECTED', entityType: 'SeatRequest', entityId: requestId, organizationId: result.organizationId, ipAddress: getClientIp(req), changes: { adminNote: req.body.note } });
     res.json({ message: 'Demande rejetée', request: result });
   } catch (err) {
     logger.error('Erreur rejet demande de sièges', err);
