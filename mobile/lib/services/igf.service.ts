@@ -38,7 +38,7 @@ const BAREME_IGF = [
 ];
 
 export function calculerIGF(input: IgfInput): IgfResult {
-  const ca = input.chiffreAffaires || 0;
+  const ca = Math.max(0, input.chiffreAffaires || 0);
   let igfAnnuel = 0;
   let caRestant = ca;
   const tranches: IgfTrancheDetail[] = [];

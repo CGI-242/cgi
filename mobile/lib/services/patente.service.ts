@@ -75,7 +75,7 @@ function getRegimeLabel(regime: string): string {
 }
 
 export function calculerPatente(input: PatenteInput): PatenteResult | null {
-  const ca = input.chiffreAffaires || 0;
+  const ca = Math.max(0, input.chiffreAffaires || 0);
 
   if (ca <= 0 && !input.isStandBy) {
     return null;
@@ -109,26 +109,21 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
   for (const bareme of BAREME_PATENTE) {
     if (caRestant <= 0) break;
 
-    const borneInf = bareme.min;
-    const borneSup = bareme.max;
-    const taux = bareme.taux;
+    const largeurTranche = bareme.max === Infinity ? caRestant : (bareme.max - bareme.min);
+    const baseImposable = Math.min(caRestant, largeurTranche);
+    const montantTranche = baseImposable * bareme.taux;
 
-    if (ca > borneInf) {
-      const baseImposable = Math.min(caRestant, borneSup - borneInf);
-      const montantTranche = baseImposable * taux;
-
-      if (montantTranche > 0) {
-        tranches.push({
-          tranche: formatTranche(borneInf, borneSup),
-          base: baseImposable,
-          taux: taux * 100,
-          montant: montantTranche,
-        });
-      }
-
-      patenteBrute += montantTranche;
-      caRestant -= baseImposable;
+    if (montantTranche > 0) {
+      tranches.push({
+        tranche: formatTranche(bareme.min, bareme.max),
+        base: baseImposable,
+        taux: bareme.taux * 100,
+        montant: montantTranche,
+      });
     }
+
+    patenteBrute += montantTranche;
+    caRestant -= baseImposable;
   }
 
   const reduction50 = patenteBrute * 0.5;

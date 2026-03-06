@@ -52,7 +52,7 @@ const FORFAIT_HA: Record<CultureRurale, number> = {
 
 export function calculerContributionFonciere(input: ContributionFonciereInput): ContributionFonciereResult {
   const tauxCommunal = Math.min(
-    input.tauxCommunal || 0,
+    Math.max(0, input.tauxCommunal || 0),
     input.typePropriete === "bati" ? 20 : 40
   );
   const tauxMax = input.typePropriete === "bati" ? 20 : 40;

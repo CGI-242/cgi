@@ -3,7 +3,6 @@ import { requiredString, emailField, orgRoleEnum, uuidParam, idParam, idAndUserI
 
 export const createOrgBody = z.object({
   name: requiredString('name'),
-  slug: z.string().optional(),
   description: z.string().optional(),
   logo: z.string().optional(),
   website: z.string().optional(),
@@ -12,7 +11,6 @@ export const createOrgBody = z.object({
 
 export const updateOrgBody = z.object({
   name: z.string().optional(),
-  slug: z.string().optional(),
   description: z.string().optional(),
   logo: z.string().optional(),
   website: z.string().optional(),

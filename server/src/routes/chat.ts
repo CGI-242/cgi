@@ -40,7 +40,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
   res.flushHeaders();
 
   try {
-    const stream = chatService.sendMessageStream(userId, content.trim(), conversationId);
+    const stream = chatService.sendMessageStream(userId, content.trim(), conversationId, req.orgId);
 
     for await (const event of stream) {
       res.write(`event: ${event.event}\ndata: ${event.data}\n\n`);
@@ -49,7 +49,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
     res.write("event: close\ndata: {}\n\n");
     res.end();
   } catch (err) {
-    console.error("[chat/stream]", err);
+    logger.error("[chat/stream]", err);
     const message = err instanceof Error ? err.message : "Erreur serveur";
     res.write(`event: error\ndata: ${JSON.stringify({ error: message })}\n\n`);
     res.end();
@@ -71,10 +71,10 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
 // GET /api/chat/conversations — Lister les conversations
 router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
-    const conversations = await chatService.getConversations(req.userId!);
+    const conversations = await chatService.getConversations(req.userId!, req.orgId);
     res.json({ conversations });
   } catch (err) {
-    console.error("[chat/conversations]", err);
+    logger.error("[chat/conversations]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
@@ -104,10 +104,10 @@ router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response
 router.get("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
-    const conversation = await chatService.getConversation(req.userId!, id);
+    const conversation = await chatService.getConversation(req.userId!, id, req.orgId);
     res.json({ conversation });
   } catch (err) {
-    console.error("[chat/conversation]", err);
+    logger.error("[chat/conversation]", err);
     const message = err instanceof Error ? err.message : "Erreur serveur";
     if (message === "Conversation introuvable") {
       res.status(404).json({ error: message });
@@ -145,7 +145,7 @@ router.delete("/conversations/:id", requireAuth, validate({ params: conversation
     await chatService.deleteConversation(req.userId!, id);
     res.json({ message: "Conversation supprimee" });
   } catch (err) {
-    console.error("[chat/delete]", err);
+    logger.error("[chat/delete]", err);
     const message = err instanceof Error ? err.message : "Erreur serveur";
     if (message === "Conversation introuvable") {
       res.status(404).json({ error: message });

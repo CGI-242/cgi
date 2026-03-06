@@ -25,7 +25,7 @@ const TAUX_IRCM: Record<TypeRevenuIRCM, number> = {
 };
 
 export function calculerIRCM(input: IrcmInput): IrcmResult {
-  const montantBrut = input.montantBrut || 0;
+  const montantBrut = Math.max(0, input.montantBrut || 0);
   const taux = TAUX_IRCM[input.typeRevenu];
   const impot = Math.round(montantBrut * taux);
   const montantNet = montantBrut - impot;

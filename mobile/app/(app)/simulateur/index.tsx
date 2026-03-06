@@ -20,7 +20,7 @@ export default function SimulateurHub() {
   const simulateurs = [
     {
       id: "paie",
-      title: "Paie",
+      title: t("simulateur.hubPaie"),
       subtitle: t("simulateur.paie.subtitle"),
       description: t("simulateur.paie.legalRef"),
       icon: "wallet-outline" as const,
@@ -28,7 +28,7 @@ export default function SimulateurHub() {
     },
     {
       id: "its",
-      title: "ITS",
+      title: t("simulateur.hubIts"),
       subtitle: t("simulateur.its.subtitle"),
       description: t("simulateur.its.legalRef"),
       icon: "people-outline" as const,
@@ -36,7 +36,7 @@ export default function SimulateurHub() {
     },
     {
       id: "is",
-      title: "Minimum IS",
+      title: t("simulateur.hubMinIs"),
       subtitle: t("simulateur.is.subtitle"),
       description: t("simulateur.is.legalRef"),
       icon: "business-outline" as const,
@@ -44,7 +44,7 @@ export default function SimulateurHub() {
     },
     {
       id: "patente",
-      title: "Patente",
+      title: t("simulateur.hubPatente"),
       subtitle: t("simulateur.patente.subtitle"),
       description: t("simulateur.patente.legalRef"),
       icon: "storefront-outline" as const,
@@ -52,7 +52,7 @@ export default function SimulateurHub() {
     },
     {
       id: "solde-liquidation",
-      title: "Solde IS",
+      title: t("simulateur.hubSoldeIs"),
       subtitle: t("simulateur.solde.subtitle"),
       description: t("simulateur.solde.legalRef"),
       icon: "cash-outline" as const,
@@ -60,7 +60,7 @@ export default function SimulateurHub() {
     },
     {
       id: "ircm",
-      title: "IRCM",
+      title: t("simulateur.hubIrcm"),
       subtitle: t("simulateur.ircm.subtitle"),
       description: t("simulateur.ircm.legalRef"),
       icon: "trending-up-outline" as const,
@@ -68,7 +68,7 @@ export default function SimulateurHub() {
     },
     {
       id: "irf-loyers",
-      title: "IRF Loyers",
+      title: t("simulateur.hubIrfLoyers"),
       subtitle: t("simulateur.irfLoyers.subtitle"),
       description: t("simulateur.irfLoyers.legalRef"),
       icon: "home-outline" as const,
@@ -76,7 +76,7 @@ export default function SimulateurHub() {
     },
     {
       id: "iba",
-      title: "IBA",
+      title: t("simulateur.hubIba"),
       subtitle: t("simulateur.iba.subtitle"),
       description: t("simulateur.iba.legalRef"),
       icon: "briefcase-outline" as const,
@@ -84,7 +84,7 @@ export default function SimulateurHub() {
     },
     {
       id: "tva",
-      title: "TVA",
+      title: t("simulateur.hubTva"),
       subtitle: t("simulateur.tva.subtitle"),
       description: t("simulateur.tva.legalRef"),
       icon: "receipt-outline" as const,
@@ -92,7 +92,7 @@ export default function SimulateurHub() {
     },
     {
       id: "igf",
-      title: "IGF",
+      title: t("simulateur.hubIgf"),
       subtitle: t("simulateur.igf.subtitle"),
       description: t("simulateur.igf.legalRef"),
       icon: "grid-outline" as const,
@@ -100,7 +100,7 @@ export default function SimulateurHub() {
     },
     {
       id: "enregistrement",
-      title: "Enregistrement",
+      title: t("simulateur.hubEnregistrement"),
       subtitle: t("simulateur.enreg.subtitle"),
       description: t("simulateur.enreg.legalRef"),
       icon: "document-text-outline" as const,
@@ -108,7 +108,7 @@ export default function SimulateurHub() {
     },
     {
       id: "cession-parts",
-      title: "Cessions Parts",
+      title: t("simulateur.hubCessionParts"),
       subtitle: t("simulateur.cessionParts.subtitle"),
       description: t("simulateur.cessionParts.legalRef"),
       icon: "swap-horizontal-outline" as const,
@@ -116,7 +116,7 @@ export default function SimulateurHub() {
     },
     {
       id: "contribution-fonciere",
-      title: "Foncier",
+      title: t("simulateur.hubFoncier"),
       subtitle: t("simulateur.foncier.subtitle"),
       description: t("simulateur.foncier.legalRef"),
       icon: "map-outline" as const,
@@ -124,7 +124,7 @@ export default function SimulateurHub() {
     },
     {
       id: "retenue-source",
-      title: "Retenue Source",
+      title: t("simulateur.hubRetenueSource"),
       subtitle: t("simulateur.rts.subtitle"),
       description: t("simulateur.rts.legalRef"),
       icon: "cut-outline" as const,

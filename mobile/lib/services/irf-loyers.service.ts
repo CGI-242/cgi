@@ -25,7 +25,7 @@ export interface IrfLoyersResult {
 const TAUX_IRF_LOYERS = 0.09;
 
 export function calculerIRFLoyers(input: IrfLoyersInput): IrfLoyersResult {
-  const loyersBrutsAnnuels = input.loyersBrutsAnnuels || 0;
+  const loyersBrutsAnnuels = Math.max(0, input.loyersBrutsAnnuels || 0);
   const loyersBrutsMensuels = Math.round(loyersBrutsAnnuels / 12);
   const impotAnnuel = Math.round(loyersBrutsAnnuels * TAUX_IRF_LOYERS);
   const impotMensuel = Math.round(impotAnnuel / 12);

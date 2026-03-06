@@ -85,13 +85,14 @@ async function performRAGSearch(content: string): Promise<SearchResult[] | null>
 export async function sendMessage(
   userId: string,
   content: string,
-  conversationId?: string
+  conversationId?: string,
+  organizationId?: string
 ) {
   // 1. Creer ou recuperer la conversation
   let conversation;
   if (conversationId) {
     conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, creatorId: userId },
+      where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
     });
     if (!conversation) {
       throw new Error("Conversation introuvable");
@@ -101,6 +102,7 @@ export async function sendMessage(
       data: {
         creatorId: userId,
         title: content.slice(0, 80),
+        ...(organizationId ? { organizationId } : {}),
       },
     });
   }
@@ -195,13 +197,14 @@ export async function sendMessage(
 export async function* sendMessageStream(
   userId: string,
   content: string,
-  conversationId?: string
+  conversationId?: string,
+  organizationId?: string
 ): AsyncGenerator<{ event: string; data: string }> {
   // 1. Creer ou recuperer la conversation
   let conversation;
   if (conversationId) {
     conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, creatorId: userId },
+      where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
     });
     if (!conversation) {
       throw new Error("Conversation introuvable");
@@ -211,6 +214,7 @@ export async function* sendMessageStream(
       data: {
         creatorId: userId,
         title: content.slice(0, 80),
+        ...(organizationId ? { organizationId } : {}),
       },
     });
   }
@@ -336,9 +340,9 @@ export async function* sendMessageStream(
 /**
  * Lister les conversations d'un utilisateur
  */
-export async function getConversations(userId: string) {
+export async function getConversations(userId: string, organizationId?: string) {
   return prisma.conversation.findMany({
-    where: { creatorId: userId },
+    where: { creatorId: userId, ...(organizationId ? { organizationId } : {}) },
     orderBy: { updatedAt: "desc" },
     select: {
       id: true,
@@ -353,9 +357,9 @@ export async function getConversations(userId: string) {
 /**
  * Recuperer une conversation avec ses messages
  */
-export async function getConversation(userId: string, conversationId: string) {
+export async function getConversation(userId: string, conversationId: string, organizationId?: string) {
   const conversation = await prisma.conversation.findFirst({
-    where: { id: conversationId, creatorId: userId },
+    where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
     include: {
       messages: {
         orderBy: { createdAt: "asc" },

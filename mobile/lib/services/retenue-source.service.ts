@@ -33,7 +33,7 @@ const ARTICLE_REF: Record<TypeRetenue, string> = {
 };
 
 export function calculerRetenueSource(input: RetenueSourceInput): RetenueSourceResult {
-  const montantHT = input.montantHT || 0;
+  const montantHT = Math.max(0, input.montantHT || 0);
   const taux = TAUX_RETENUE[input.typeRetenue];
   const montantRetenue = Math.round(montantHT * taux);
   const montantNet = montantHT - montantRetenue;

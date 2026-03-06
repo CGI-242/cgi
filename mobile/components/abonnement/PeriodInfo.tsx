@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 
 function formatDate(dateStr?: string | null): string {
   if (!dateStr) return "--";
@@ -34,13 +35,14 @@ export default function PeriodInfo({
   currentPeriodEnd,
   colors,
 }: Props) {
+  const { t } = useTranslation();
   const days = daysRemaining(currentPeriodEnd);
   const expirationLabel =
     status === "TRIALING"
-      ? "Essai expire le"
+      ? t("abonnement.trialExpiresOn")
       : status === "EXPIRED"
-        ? "Expire depuis le"
-        : "Renouvellement le";
+        ? t("abonnement.expiredSince")
+        : t("abonnement.renewalOn");
 
   return (
     <View
@@ -54,11 +56,11 @@ export default function PeriodInfo({
     >
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="calendar-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Periode</Text>
+        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.period")}</Text>
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
-        <Text style={{ fontSize: 13, color: colors.textSecondary }}>Debut de periode</Text>
+        <Text style={{ fontSize: 13, color: colors.textSecondary }}>{t("abonnement.periodStart")}</Text>
         <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>
           {formatDate(currentPeriodStart)}
         </Text>
@@ -77,7 +79,7 @@ export default function PeriodInfo({
         <>
           <View style={{ height: 1, backgroundColor: colors.background, marginVertical: 8 }} />
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-            <Text style={{ fontSize: 13, color: colors.textSecondary }}>Jours restants</Text>
+            <Text style={{ fontSize: 13, color: colors.textSecondary }}>{t("abonnement.daysRemaining")}</Text>
             <View
               style={{
                 backgroundColor: days <= 5 ? "#fee2e2" : days <= 10 ? "#fef3c7" : "#d1fae5",
@@ -92,7 +94,7 @@ export default function PeriodInfo({
                   color: days <= 5 ? "#dc2626" : days <= 10 ? "#d97706" : "#059669",
                 }}
               >
-                {days} jour{days !== 1 ? "s" : ""}
+                {days} {days !== 1 ? t("abonnement.days") : t("abonnement.day")}
               </Text>
             </View>
           </View>
@@ -111,7 +113,7 @@ export default function PeriodInfo({
         >
           <Ionicons name="warning-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
           <Text style={{ color: "#dc2626", fontSize: 13, fontWeight: "600", flex: 1 }}>
-            Votre abonnement a expire. Contactez-nous pour le renouveler.
+            {t("abonnement.expiredMessage")}
           </Text>
         </View>
       )}

@@ -32,8 +32,8 @@ const FORFAIT_TRANCHES = [
 ];
 
 export function calculerIBA(input: IbaInput): IbaResult {
-  const ca = input.chiffreAffaires || 0;
-  const charges = input.chargesDeductibles || 0;
+  const ca = Math.max(0, input.chiffreAffaires || 0);
+  const charges = Math.max(0, input.chargesDeductibles || 0);
 
   let beneficeImposable: number;
   let taux: number;

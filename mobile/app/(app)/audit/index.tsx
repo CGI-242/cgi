@@ -12,9 +12,11 @@ import ActionFilters from "@/components/audit/ActionFilters";
 import AuditLogItem from "@/components/audit/AuditLogItem";
 import EntityHistoryModal from "@/components/audit/EntityHistoryModal";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { useTranslation } from "react-i18next";
 
 export default function AuditScreen() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const { toast, confirm } = useToast();
   const user = useAuthStore((s) => s.user);
   const isOwner = user?.role === "OWNER";
@@ -47,7 +49,7 @@ export default function AuditScreen() {
       setLogs(logsData.logs);
       setTotalPages(logsData.totalPages);
     } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "Erreur inconnue");
+      setError(err instanceof Error ? err.message : t("audit.unknownError"));
     } finally {
       setLoading(false);
     }
@@ -63,7 +65,7 @@ export default function AuditScreen() {
       const result = await auditApi.getEntityHistory(log.entityType, log.entityId);
       setEntityHistory(result.logs);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : "Erreur", "error");
+      toast(err instanceof Error ? err.message : t("common.error"), "error");
       setShowEntityHistory(false);
     } finally {
       setEntityHistoryLoading(false);
@@ -73,15 +75,15 @@ export default function AuditScreen() {
   const handleCleanup = async () => {
     const days = parseInt(retentionDays, 10);
     if (isNaN(days) || days < 1) {
-      toast("Nombre de jours invalide", "error");
+      toast(t("audit.invalidDays"), "error");
       return;
     }
 
     const ok = await confirm({
-      title: "Nettoyage RGPD",
-      message: `Supprimer les logs d'audit de plus de ${days} jours ? Cette action est irréversible.`,
-      confirmLabel: "Supprimer",
-      cancelLabel: "Annuler",
+      title: t("audit.cleanup"),
+      message: t("audit.cleanupConfirmMessage", { days }),
+      confirmLabel: t("audit.deleteBtn"),
+      cancelLabel: t("common.cancel"),
       destructive: true,
     });
     if (!ok) return;
@@ -89,11 +91,11 @@ export default function AuditScreen() {
     setActionLoading(true);
     try {
       const result = await auditApi.cleanup(days);
-      toast(`${result.deletedCount} log(s) supprimé(s)`, "success");
+      toast(t("audit.logsDeleted", { count: result.deletedCount }), "success");
       setShowCleanup(false);
       await loadData();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : "Erreur", "error");
+      toast(err instanceof Error ? err.message : t("common.error"), "error");
     } finally {
       setActionLoading(false);
     }
@@ -106,7 +108,7 @@ export default function AuditScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>Chargement...</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -146,17 +148,17 @@ export default function AuditScreen() {
         {logs.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
             <Ionicons name="document-text-outline" size={40} color={colors.disabled} />
-            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>Aucun log d'audit</Text>
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>{t("audit.noLogs")}</Text>
           </View>
         )}
         {totalPages > 1 && (
           <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: 16, gap: 12 }}>
             <TouchableOpacity onPress={() => setPage(Math.max(1, page - 1))} disabled={page === 1} style={{ paddingHorizontal: 16, paddingVertical: 8, backgroundColor: page === 1 ? colors.border : colors.primary }}>
-              <Text style={{ color: page === 1 ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>Précédent</Text>
+              <Text style={{ color: page === 1 ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>{t("audit.previous")}</Text>
             </TouchableOpacity>
-            <Text style={{ fontSize: 13, color: colors.textSecondary }}>Page {page} / {totalPages}</Text>
+            <Text style={{ fontSize: 13, color: colors.textSecondary }}>{t("audit.pageOf", { page, total: totalPages })}</Text>
             <TouchableOpacity onPress={() => setPage(Math.min(totalPages, page + 1))} disabled={page === totalPages} style={{ paddingHorizontal: 16, paddingVertical: 8, backgroundColor: page === totalPages ? colors.border : colors.primary }}>
-              <Text style={{ color: page === totalPages ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>Suivant</Text>
+              <Text style={{ color: page === totalPages ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>{t("audit.next")}</Text>
             </TouchableOpacity>
           </View>
         )}

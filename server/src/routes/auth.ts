@@ -101,7 +101,7 @@ router.post("/register", validate({ body: registerBody }), verifyTurnstile, asyn
       });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 12);
     const otp = generateOtp();
 
     // Créer l'utilisateur
@@ -438,7 +438,7 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
  *         description: Erreur serveur
  */
 // POST /api/auth/send-otp-email
-router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBody }), async (req: Request, res: Response) => {
+router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBody }), verifyTurnstile, async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
@@ -448,16 +448,14 @@ router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBo
       return;
     }
 
-    const otp = user.emailVerifyToken || generateOtp();
-    if (!user.emailVerifyToken) {
-      await prisma.user.update({
-        where: { id: user.id },
-        data: {
-          emailVerifyToken: otp,
-          emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000),
-        },
-      });
-    }
+    const otp = generateOtp();
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        emailVerifyToken: otp,
+        emailVerifyExpires: new Date(Date.now() + 10 * 60 * 1000),
+      },
+    });
 
     // Envoyer l'email
     await EmailService.sendOtp(email, otp);
@@ -582,7 +580,7 @@ router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordB
       return;
     }
 
-    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    const hashedPassword = await bcrypt.hash(newPassword, 12);
     await prisma.user.update({
       where: { id: user.id },
       data: {
@@ -642,8 +640,13 @@ router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: 
       return;
     }
 
-    // Vérifier si blacklisté
+    // Vérifier si blacklisté (détection de replay — MED-02)
     if (TokenBlacklistService.isBlacklisted(refreshTokenValue)) {
+      try {
+        const replayPayload = verifyRefreshToken(refreshTokenValue);
+        TokenBlacklistService.blacklistAllUserTokens(replayPayload.userId);
+        logger.warn(`Refresh token replay détecté pour user ${replayPayload.userId}, toutes les sessions révoquées`);
+      } catch { /* token invalide, ignorer */ }
       res.status(401).json({ error: "Refresh token révoqué" });
       return;
     }

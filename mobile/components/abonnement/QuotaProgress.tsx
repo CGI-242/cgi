@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   questionsUsed: number;
@@ -18,6 +19,7 @@ export default function QuotaProgress({
   planColor,
   colors,
 }: Props) {
+  const { t } = useTranslation();
   const progressRatio =
     isUnlimited || questionsLimit === 0
       ? 0
@@ -35,27 +37,27 @@ export default function QuotaProgress({
     >
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="chatbubble-ellipses-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Quota de questions</Text>
+        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.questionQuota")}</Text>
       </View>
 
       {isUnlimited ? (
         <View style={{ alignItems: "center", paddingVertical: 8 }}>
           <Ionicons name="infinite-outline" size={36} color="#8b5cf6" />
           <Text style={{ fontSize: 16, fontWeight: "700", color: "#8b5cf6", marginTop: 4 }}>
-            Illimite
+            {t("abonnement.unlimited")}
           </Text>
           <Text style={{ fontSize: 13, color: colors.textSecondary, marginTop: 2 }}>
-            {questionsUsed} questions posees ce mois
+            {questionsUsed} {t("abonnement.questionsAskedThisMonth")}
           </Text>
         </View>
       ) : (
         <>
           <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
             <Text style={{ fontSize: 14, color: colors.text }}>
-              {questionsUsed} / {questionsLimit} questions utilisees ce mois
+              {questionsUsed} / {questionsLimit} {t("abonnement.questionsUsedThisMonth")}
             </Text>
             <Text style={{ fontSize: 14, fontWeight: "700", color: planColor }}>
-              {remaining} restantes
+              {remaining} {t("abonnement.remaining")}
             </Text>
           </View>
 
@@ -82,7 +84,7 @@ export default function QuotaProgress({
 
           {progressRatio >= 0.9 && (
             <Text style={{ fontSize: 12, color: "#dc2626", marginTop: 6, fontWeight: "600" }}>
-              Attention : vous approchez de la limite mensuelle
+              {t("abonnement.nearLimitWarning")}
             </Text>
           )}
         </>

@@ -26,8 +26,8 @@ export interface TvaResult {
 const TAUX_TVA = 0.18;
 
 export function calculerTVA(input: TvaInput): TvaResult {
-  const caHT = input.caHT || 0;
-  const achatsHT = input.achatsHT || 0;
+  const caHT = Math.max(0, input.caHT || 0);
+  const achatsHT = Math.max(0, input.achatsHT || 0);
 
   let tvaCollectee: number;
   const tvaDeductible = Math.round(achatsHT * TAUX_TVA);

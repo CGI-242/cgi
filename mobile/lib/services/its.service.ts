@@ -73,7 +73,7 @@ export function calculerNombreParts(
 
 export function calculerIts(input: ItsInput): ItsResult {
   // Etape 1: Revenu brut annualise
-  const salaireBrut = (input.salaireBrut || 0) + (input.avantagesEnNature || 0) + (input.primes || 0);
+  const salaireBrut = Math.max(0, input.salaireBrut || 0) + Math.max(0, input.avantagesEnNature || 0) + Math.max(0, input.primes || 0);
   const { annuel: revenuBrutAnnuel, mensuel: revenuBrutMensuel } =
     annualizeRevenu(salaireBrut, input.periode);
 

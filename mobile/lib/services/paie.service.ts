@@ -114,7 +114,10 @@ export function calculerAvantagesForfaitaires(salairePresence: number): Partial<
  * Calcule l'intégralité du bulletin de paie
  */
 export function calculerPaie(input: PaieInput): PaieResult {
-  const r = input.rubriques;
+  const r: RubriquesInput = {} as RubriquesInput;
+  for (const key of Object.keys(input.rubriques) as (keyof RubriquesInput)[]) {
+    r[key] = Math.max(0, input.rubriques[key] || 0);
+  }
 
   // --- Étape 1 : Calcul des bases ---
   const salairePresence = r.salaireBase + r.primesImposables + r.heuresSup + r.congesAnnuels;

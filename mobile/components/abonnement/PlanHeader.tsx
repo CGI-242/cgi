@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLAN_COLORS: Record<string, string> = {
@@ -19,51 +20,51 @@ const STATUS_COLORS: Record<string, string> = {
   EXPIRED: "#dc2626",
 };
 
-const STATUS_LABELS: Record<string, string> = {
-  ACTIVE: "Actif",
-  TRIALING: "Essai",
-  EXPIRED: "Expiré",
+const STATUS_LABEL_KEYS: Record<string, string> = {
+  ACTIVE: "abonnement.statusActive",
+  TRIALING: "abonnement.statusTrialing",
+  EXPIRED: "abonnement.statusExpired",
 };
 
 const PLANS_INFO = [
   {
     name: "FREE",
-    price: "Gratuit",
-    priceDetail: "7 jours d'essai",
-    features: [
-      "5 questions IA / mois",
-      "Accès au CGI en lecture",
-      "Simulateurs de base",
+    priceKey: "abonnement.planFree",
+    priceDetailKey: "abonnement.planFreeDetail",
+    featureKeys: [
+      "abonnement.feat5q",
+      "abonnement.featCgiRead",
+      "abonnement.featBasicSim",
     ],
   },
   {
     name: "BASIQUE",
-    price: "75 000 XAF / an",
-    priceDetail: "65 000 XAF/an/user (prix lancement)",
-    features: [
-      "15 questions IA / mois / user",
-      "Accès complet au CGI",
-      "Tous les simulateurs",
-      "Historique des conversations",
-      "Jusqu'à 50 membres",
+    priceKey: "abonnement.planBasicPrice",
+    priceDetailKey: "abonnement.planBasicDetail",
+    featureKeys: [
+      "abonnement.feat15q",
+      "abonnement.featFullCgi",
+      "abonnement.featAllSim",
+      "abonnement.featHistory",
+      "abonnement.feat50members",
     ],
   },
   {
     name: "PRO",
-    price: "115 000 XAF / an",
-    priceDetail: "100 000 XAF/an/user (prix lancement)",
-    features: [
-      "30 questions IA / mois / user",
-      "Accès complet au CGI",
-      "Tous les simulateurs",
-      "Historique illimité",
-      "Support prioritaire",
-      "Jusqu'à 50 membres",
+    priceKey: "abonnement.planProPrice",
+    priceDetailKey: "abonnement.planProDetail",
+    featureKeys: [
+      "abonnement.feat30q",
+      "abonnement.featFullCgi",
+      "abonnement.featAllSim",
+      "abonnement.featUnlimitedHistory",
+      "abonnement.featPriority",
+      "abonnement.feat50members",
     ],
   },
 ];
 
-export { PLAN_COLORS, PLAN_BG, STATUS_COLORS, STATUS_LABELS, PLANS_INFO };
+export { PLAN_COLORS, PLAN_BG, STATUS_COLORS, STATUS_LABEL_KEYS, PLANS_INFO };
 
 interface Props {
   plan: string;
@@ -72,10 +73,12 @@ interface Props {
 }
 
 export default function PlanHeader({ plan, status, colors }: Props) {
+  const { t } = useTranslation();
   const planColor = PLAN_COLORS[plan] || PLAN_COLORS.FREE;
   const planBg = PLAN_BG[plan] || PLAN_BG.FREE;
   const statusColor = STATUS_COLORS[status] || STATUS_COLORS.EXPIRED;
-  const statusLabel = STATUS_LABELS[status] || status;
+  const statusLabelKey = STATUS_LABEL_KEYS[status];
+  const statusLabel = statusLabelKey ? t(statusLabelKey) : status;
 
   return (
     <View
@@ -135,7 +138,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
 
       <View style={{ paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12, alignItems: "center" }}>
         <Text style={{ fontSize: 22, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>
-          {PLANS_INFO.find((p) => p.name === plan)?.price || "Gratuit"}
+          {t(PLANS_INFO.find((p) => p.name === plan)?.priceKey || "abonnement.planFree")}
         </Text>
       </View>
     </View>

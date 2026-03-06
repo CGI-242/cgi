@@ -177,7 +177,7 @@ export async function inviteMember(orgId: string, invitedById: string, email: st
     logger.error(`Erreur envoi email invitation à ${email}:`, err);
   });
 
-  logger.info(`Invitation envoyée à ${email} pour org ${orgId} (token: ${invitation.token})`);
+  logger.info(`Invitation envoyée à ${email} pour org ${orgId}`);
   return invitation;
 }
 

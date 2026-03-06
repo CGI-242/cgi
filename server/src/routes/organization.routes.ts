@@ -486,6 +486,7 @@ router.post('/:id/restore', requireAuth, resolveTenant, requireOrg, requireOwner
 router.delete('/:id/permanent', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ params: idParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_HARD_DELETED', entityType: 'Organization', entityId: id, organizationId: id, changes: { deletedBy: req.userId } });
     await orgAdminService.hardDeleteOrganization(id);
     res.json({ message: 'Organisation supprimée définitivement' });
   } catch (err) { handleError(res, err); }

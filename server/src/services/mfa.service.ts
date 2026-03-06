@@ -12,6 +12,9 @@ const MFA_ISSUER = 'CGI-242';
 if (!process.env.MFA_ENCRYPTION_KEY && !process.env.JWT_SECRET) {
   throw new Error("FATAL: MFA_ENCRYPTION_KEY or JWT_SECRET must be defined.");
 }
+if (!process.env.MFA_ENCRYPTION_KEY) {
+  logger.warn("MFA_ENCRYPTION_KEY non définie, fallback sur JWT_SECRET. Définissez MFA_ENCRYPTION_KEY en production.");
+}
 const ENCRYPTION_KEY = process.env.MFA_ENCRYPTION_KEY || process.env.JWT_SECRET!;
 
 /**

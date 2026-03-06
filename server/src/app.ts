@@ -130,6 +130,11 @@ app.get("/health", async (_req, res) => {
   res.status(statusCode).json({ status: overall, service: "cgi-242", checks });
 });
 
+// Catch-all pour routes /api/* inexistantes — retourne 404 JSON (MED-03)
+app.all("/api/{*splat}", (_req, res) => {
+  res.status(404).json({ error: "Route API introuvable" });
+});
+
 // Gestionnaire d'erreurs global — empêche l'exposition de stack traces (HIGH-01)
 app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   logger.error("Erreur non gérée:", err);

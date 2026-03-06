@@ -48,7 +48,7 @@ const TAUX_IS: Record<TypeContribuable, number> = {
 export function calculerSoldeLiquidation(
   input: SoldeLiquidationInput
 ): SoldeLiquidationResult {
-  const resultatFiscal = input.resultatFiscal || 0;
+  const resultatFiscal = Math.max(0, input.resultatFiscal || 0);
 
   // Art. 86A-1 : fraction < 1 000 FCFA negligee
   const beneficeArrondi = Math.floor(resultatFiscal / 1000) * 1000;

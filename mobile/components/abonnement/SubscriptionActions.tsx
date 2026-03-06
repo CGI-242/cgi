@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   plan: string;
@@ -20,11 +21,12 @@ export default function SubscriptionActions({
   onUpgrade,
   colors,
 }: Props) {
+  const { t } = useTranslation();
   return (
     <View style={{ backgroundColor: colors.card, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="settings-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Gestion de l'abonnement</Text>
+        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.management")}</Text>
       </View>
 
       {actionLoading && (
@@ -38,14 +40,14 @@ export default function SubscriptionActions({
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Activer Basique</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.activateBasic")}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => onActivate("PRO")}
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Activer Pro</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.activatePro")}</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -56,7 +58,7 @@ export default function SubscriptionActions({
           disabled={actionLoading}
           style={{ backgroundColor: "#059669", paddingVertical: 12, alignItems: "center", marginBottom: 10, opacity: actionLoading ? 0.6 : 1 }}
         >
-          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Renouveler l'abonnement</Text>
+          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.renewSubscriptionBtn")}</Text>
         </TouchableOpacity>
       )}
 
@@ -66,7 +68,7 @@ export default function SubscriptionActions({
           disabled={actionLoading}
           style={{ backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
         >
-          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>Passer au Pro</Text>
+          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.upgradeToPlan")}</Text>
         </TouchableOpacity>
       )}
     </View>

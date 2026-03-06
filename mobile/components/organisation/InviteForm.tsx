@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, TextInput, ActivityIndicator } from "react-native";
 import { ROLE_LABELS } from "./MemberList";
+import { useTranslation } from "react-i18next";
 
 interface InviteFormProps {
   inviteEmail: string;
@@ -25,6 +26,7 @@ export default function InviteForm({
   onInvite,
   colors,
 }: InviteFormProps) {
+  const { t } = useTranslation();
   const noSeatsLeft = remainingSeats !== undefined && remainingSeats <= 0;
   return (
     <>
@@ -39,7 +41,7 @@ export default function InviteForm({
           marginTop: 16,
         }}
       >
-        INVITER UN MEMBRE
+        {t("organization.inviteMember")}
       </Text>
       <View
         style={{
@@ -53,21 +55,21 @@ export default function InviteForm({
         {paidSeats !== undefined && remainingSeats !== undefined && (
           <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 12 }}>
             <Text style={{ fontSize: 13, color: noSeatsLeft ? colors.danger : colors.textSecondary }}>
-              Sièges disponibles : {remainingSeats} / {paidSeats}
+              {t("organization.seatsAvailableCount", { remaining: remainingSeats, total: paidSeats })}
             </Text>
           </View>
         )}
         {noSeatsLeft && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 10, marginBottom: 12 }}>
             <Text style={{ color: colors.danger, fontSize: 13 }}>
-              Aucun siège disponible. Contactez votre administrateur pour augmenter le nombre de sièges.
+              {t("organization.noSeatsMessage")}
             </Text>
           </View>
         )}
         <TextInput
           value={inviteEmail}
           onChangeText={onChangeEmail}
-          placeholder="Adresse email"
+          placeholder={t("organization.emailPlaceholder")}
           placeholderTextColor={colors.textMuted}
           keyboardType="email-address"
           autoCapitalize="none"
@@ -117,7 +119,7 @@ export default function InviteForm({
           {actionLoading ? (
             <ActivityIndicator size="small" color="#fff" />
           ) : (
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Inviter</Text>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("organization.invite")}</Text>
           )}
         </TouchableOpacity>
       </View>

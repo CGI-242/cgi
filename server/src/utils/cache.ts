@@ -28,6 +28,8 @@ export const CACHE_PREFIX = {
   BLACKLIST: 'bl:',
 };
 
+const MAX_CACHE_SIZE = 1000;
+
 class CacheService {
   private store = new Map<string, CacheEntry<unknown>>();
   private cleanupInterval: ReturnType<typeof setInterval> | null = null;
@@ -46,10 +48,23 @@ class CacheService {
       return null;
     }
 
+    // LRU: repositionner l'entrée en fin de Map
+    this.store.delete(key);
+    this.store.set(key, entry);
+
     return entry.value as T;
   }
 
   set(key: string, value: unknown, ttlSeconds: number = CACHE_TTL.SEARCH_RESULT): void {
+    if (this.store.has(key)) {
+      this.store.delete(key);
+    } else if (this.store.size >= MAX_CACHE_SIZE) {
+      const oldestKey = this.store.keys().next().value;
+      if (oldestKey !== undefined) {
+        this.store.delete(oldestKey);
+      }
+    }
+
     this.store.set(key, {
       value,
       expiresAt: Date.now() + ttlSeconds * 1000,

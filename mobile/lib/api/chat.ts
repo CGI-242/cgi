@@ -62,106 +62,148 @@ export async function sendMessageStream(
   conversationId?: string,
   callbacks?: StreamCallbacks
 ): Promise<void> {
-  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  const SSE_TIMEOUT_MS = 2 * 60 * 1000;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), SSE_TIMEOUT_MS);
 
-  if (isMobile) {
-    headers["X-Platform"] = "mobile";
-    const token = await getAuthToken();
-    if (token) headers.Authorization = `Bearer ${token}`;
-  }
+  try {
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
 
-  let response = await fetch(`${API_URL}/chat/message/stream`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({ content, conversationId }),
-    credentials: isWeb ? "include" : "omit",
-  });
-
-  // Si 401 sur web : tenter un refresh cookie puis réessayer
-  if (response.status === 401 && isWeb) {
-    try {
-      const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
-        credentials: "include",
-      });
-      if (refreshRes.ok) {
-        // Réessayer avec le nouveau cookie
-        response = await fetch(`${API_URL}/chat/message/stream`, {
-          method: "POST",
-          headers,
-          body: JSON.stringify({ content, conversationId }),
-          credentials: "include",
-        });
-      }
-    } catch {
-      // refresh échoué, on continue avec l'erreur originale
+    if (isMobile) {
+      headers["X-Platform"] = "mobile";
+      const token = await getAuthToken();
+      if (token) headers.Authorization = `Bearer ${token}`;
     }
-  }
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    let errorMsg = "Erreur serveur";
-    try {
-      const parsed = JSON.parse(errorText);
-      errorMsg = parsed.error || errorMsg;
-    } catch {
-      // ignore parse error
-    }
-    callbacks?.onError?.(errorMsg);
-    return;
-  }
+    let response = await fetch(`${API_URL}/chat/message/stream`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ content, conversationId }),
+      credentials: isWeb ? "include" : "omit",
+      signal: controller.signal,
+    });
 
-  const reader = response.body?.getReader();
-  if (!reader) {
-    callbacks?.onError?.("Streaming non supporte");
-    return;
-  }
-
-  const decoder = new TextDecoder();
-  let buffer = "";
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-
-    buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() || "";
-
-    let currentEvent = "";
-    for (const line of lines) {
-      if (line.startsWith("event: ")) {
-        currentEvent = line.slice(7).trim();
-      } else if (line.startsWith("data: ")) {
-        const dataStr = line.slice(6);
-        try {
-          const data = JSON.parse(dataStr);
-
-          switch (currentEvent) {
-            case "conversation":
-              callbacks?.onConversation?.(data.conversationId);
-              break;
-            case "chunk":
-              callbacks?.onChunk?.(data.text);
-              break;
-            case "citations":
-              callbacks?.onCitations?.(data.citations);
-              break;
-            case "done":
-              callbacks?.onDone?.(data);
-              break;
-            case "error":
-              callbacks?.onError?.(data.error);
-              break;
+    // Si 401 : tenter un refresh puis réessayer
+    if (response.status === 401) {
+      try {
+        if (isWeb) {
+          const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({}),
+            credentials: "include",
+          });
+          if (refreshRes.ok) {
+            response = await fetch(`${API_URL}/chat/message/stream`, {
+              method: "POST",
+              headers,
+              body: JSON.stringify({ content, conversationId }),
+              credentials: "include",
+              signal: controller.signal,
+            });
           }
-        } catch {
-          // ignore parse errors on incomplete data
+        } else if (isMobile) {
+          const { getItemAsync, setItemAsync } = require("expo-secure-store");
+          const refreshToken = await getItemAsync("refreshToken");
+          if (refreshToken) {
+            const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ refreshToken }),
+            });
+            if (refreshRes.ok) {
+              const refreshData = await refreshRes.json();
+              if (refreshData.accessToken) {
+                await setItemAsync("accessToken", refreshData.accessToken);
+                headers.Authorization = `Bearer ${refreshData.accessToken}`;
+              }
+              if (refreshData.refreshToken) {
+                await setItemAsync("refreshToken", refreshData.refreshToken);
+              }
+              response = await fetch(`${API_URL}/chat/message/stream`, {
+                method: "POST",
+                headers,
+                body: JSON.stringify({ content, conversationId }),
+                credentials: "omit",
+                signal: controller.signal,
+              });
+            }
+          }
         }
-        currentEvent = "";
+      } catch {
+        // refresh échoué, on continue avec l'erreur originale
       }
     }
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      let errorMsg = "Erreur serveur";
+      try {
+        const parsed = JSON.parse(errorText);
+        errorMsg = parsed.error || errorMsg;
+      } catch {
+        // ignore parse error
+      }
+      callbacks?.onError?.(errorMsg);
+      return;
+    }
+
+    const reader = response.body?.getReader();
+    if (!reader) {
+      callbacks?.onError?.("Streaming non supporte");
+      return;
+    }
+
+    const decoder = new TextDecoder();
+    let buffer = "";
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split("\n");
+      buffer = lines.pop() || "";
+
+      let currentEvent = "";
+      let currentData = "";
+      for (const line of lines) {
+        if (line.startsWith("event: ")) {
+          currentEvent = line.slice(7).trim();
+          currentData = "";
+        } else if (line.startsWith("data: ")) {
+          currentData += (currentData ? "\n" : "") + line.slice(6);
+        } else if (line === "" && currentEvent && currentData) {
+          try {
+            const data = JSON.parse(currentData);
+
+            switch (currentEvent) {
+              case "conversation":
+                callbacks?.onConversation?.(data.conversationId);
+                break;
+              case "chunk":
+                callbacks?.onChunk?.(data.text);
+                break;
+              case "citations":
+                callbacks?.onCitations?.(data.citations);
+                break;
+              case "done":
+                callbacks?.onDone?.(data);
+                break;
+              case "error":
+                callbacks?.onError?.(data.error);
+                break;
+            }
+          } catch {
+            // ignore parse errors on incomplete data
+          }
+          currentEvent = "";
+          currentData = "";
+        }
+      }
+    }
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 

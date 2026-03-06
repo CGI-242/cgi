@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { PLAN_COLORS, PLAN_BG, PLANS_INFO } from "./PlanHeader";
 
 interface Props {
@@ -8,11 +9,12 @@ interface Props {
 }
 
 export default function PlansComparison({ currentPlan, colors }: Props) {
+  const { t } = useTranslation();
   return (
     <View style={{ marginBottom: 16 }}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="layers-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>Nos offres</Text>
+        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.ourPlans")}</Text>
       </View>
 
       {PLANS_INFO.map((planInfo) => {
@@ -53,28 +55,28 @@ export default function PlansComparison({ currentPlan, colors }: Props) {
                       paddingVertical: 2,
                     }}
                   >
-                    <Text style={{ color, fontSize: 11, fontWeight: "700" }}>Plan actuel</Text>
+                    <Text style={{ color, fontSize: 11, fontWeight: "700" }}>{t("abonnement.currentPlan")}</Text>
                   </View>
                 )}
               </View>
               <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text }}>
-                {planInfo.price}
+                {t(planInfo.priceKey)}
               </Text>
             </View>
 
-            {planInfo.priceDetail && (
+            {planInfo.priceDetailKey && (
               <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 8, fontStyle: "italic" }}>
-                {planInfo.priceDetail}
+                {t(planInfo.priceDetailKey)}
               </Text>
             )}
 
-            {planInfo.features.map((feature, idx) => (
+            {planInfo.featureKeys.map((featureKey, idx) => (
               <View
                 key={idx}
-                style={{ flexDirection: "row", alignItems: "center", marginBottom: idx < planInfo.features.length - 1 ? 6 : 0 }}
+                style={{ flexDirection: "row", alignItems: "center", marginBottom: idx < planInfo.featureKeys.length - 1 ? 6 : 0 }}
               >
                 <Ionicons name="checkmark-circle" size={16} color={color} style={{ marginRight: 8 }} />
-                <Text style={{ fontSize: 13, color: colors.text }}>{feature}</Text>
+                <Text style={{ fontSize: 13, color: colors.text }}>{t(featureKey)}</Text>
               </View>
             ))}
           </View>

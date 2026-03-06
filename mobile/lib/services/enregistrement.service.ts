@@ -58,7 +58,7 @@ const TAUX_ACTES: Record<TypeActe, TauxConfig> = {
 const TAUX_CENTIMES = 0.05; // 5% des droits (Art. 216 bis)
 
 export function calculerEnregistrement(input: EnregistrementInput): EnregistrementResult {
-  const montant = input.montant || 0;
+  const montant = Math.max(0, input.montant || 0);
   const config = { ...TAUX_ACTES[input.typeActe] };
 
   // Zone immatriculation pour mutations immobilières

@@ -279,7 +279,7 @@ function AudioPlayer({ lines, colors, onLineChange }: {
           {speechState === "playing"
             ? t("articleDetail.stop")
             : speechState === "paused"
-              ? "En pause"
+              ? t("articleDetail.paused")
               : t("articleDetail.listen")}
         </Text>
         <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>

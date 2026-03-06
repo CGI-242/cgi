@@ -27,10 +27,10 @@ export interface IsResult {
 const TAUX_MINIMUM = 0.01;
 
 export function calculerIS(input: IsInput): IsResult {
-  const produitsExploitation = input.produitsExploitation || 0;
-  const produitsFinanciers = input.produitsFinanciers || 0;
-  const produitsHAO = input.produitsHAO || 0;
-  const retenuesLiberatoires = input.retenuesLiberatoires || 0;
+  const produitsExploitation = Math.max(0, input.produitsExploitation || 0);
+  const produitsFinanciers = Math.max(0, input.produitsFinanciers || 0);
+  const produitsHAO = Math.max(0, input.produitsHAO || 0);
+  const retenuesLiberatoires = Math.max(0, input.retenuesLiberatoires || 0);
 
   const baseMinimumPerception =
     produitsExploitation + produitsFinanciers + produitsHAO - retenuesLiberatoires;

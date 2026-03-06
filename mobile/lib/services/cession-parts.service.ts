@@ -27,7 +27,7 @@ const TAUX_CENTIMES = 0.05; // 5% des droits (Art. 216 bis)
 const MINIMUM_PETROLIER = 1_000_000; // Art. 214 bis
 
 export function calculerCessionParts(input: CessionPartsInput): CessionPartsResult {
-  const prixCession = input.prixCession || 0;
+  const prixCession = Math.max(0, input.prixCession || 0);
   let droits = Math.round(prixCession * TAUX_CESSION);
   let minimumApplique = false;
 

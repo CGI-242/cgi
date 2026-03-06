@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { View, Text, TouchableOpacity, Platform } from "react-native";
+import { View, Text, TouchableOpacity, Platform, ActivityIndicator } from "react-native";
 import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -42,6 +42,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/cession-parts": "simulateur.cessionParts.title",
   "/simulateur/contribution-fonciere": "simulateur.foncier.title",
   "/simulateur/paie": "simulateur.paie.title",
+  "/simulateur/retenue-source": "simulateur.rts.title",
   "/calendrier": "calendrier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
@@ -75,6 +76,7 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/cession-parts": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/contribution-fonciere": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/paie": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/retenue-source": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -110,7 +112,16 @@ export default function AppLayout() {
     return null;
   }
 
-  if (!subLoading && subStatus === "EXPIRED" && user?.globalRole !== "ADMIN") {
+  if (subLoading) {
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("abonnement.loadingSubscription")}</Text>
+      </View>
+    );
+  }
+
+  if (subStatus === "EXPIRED" && user?.globalRole !== "ADMIN") {
     return <PaywallScreen />;
   }
 
@@ -183,6 +194,7 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/cession-parts" />
       <Stack.Screen name="simulateur/contribution-fonciere" />
       <Stack.Screen name="simulateur/paie" />
+      <Stack.Screen name="simulateur/retenue-source" />
       <Stack.Screen name="calendrier/index" />
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />
