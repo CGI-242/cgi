@@ -231,7 +231,12 @@ router.post('/verify', authLimiter, validate({ body: verifyMfaBody }), async (re
     // Décoder le mfaToken temporaire
     let payload: { userId: string; email: string; mfa: boolean };
     try {
-      const secret = process.env.JWT_SECRET || 'dev-secret';
+      const secret = process.env.JWT_SECRET;
+      if (!secret) {
+        logger.error("JWT_SECRET manquant — impossible de vérifier le token MFA");
+        res.status(500).json({ error: "Configuration serveur invalide" });
+        return;
+      }
       payload = jwt.verify(mfaToken, secret) as typeof payload;
     } catch {
       res.status(401).json({ error: 'Token MFA invalide ou expiré' });

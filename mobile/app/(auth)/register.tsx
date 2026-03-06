@@ -58,16 +58,12 @@ export default function Register() {
   const [showCountryPicker, setShowCountryPicker] = useState(false);
   const [error, setError] = useState("");
   const [emailError, setEmailError] = useState("");
-  const [emailChecking, setEmailChecking] = useState(false);
-  const [emailExists, setEmailExists] = useState(false);
   const [loading, setLoading] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const selectedCountry = COUNTRIES.find((c) => c.code === form.pays) || COUNTRIES[0];
 
   const setEmail = useAuthStore((s) => s.setEmail);
-  const setOtpCode = useAuthStore((s) => s.setOtpCode);
-  const setDevCode = useAuthStore((s) => s.setDevCode);
   const setUser = useAuthStore((s) => s.setUser);
   const setOtpSource = useAuthStore((s) => s.setOtpSource);
 
@@ -76,32 +72,13 @@ export default function Register() {
     setError("");
     if (key === "email") {
       setEmailError("");
-      setEmailExists(false);
     }
   };
 
-  const handleEmailBlur = async () => {
-    const email = form.email.trim();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return;
-    setEmailChecking(true);
-    try {
-      const result = await authApi.checkEmail(email);
-      if (result.exists) {
-        setEmailExists(true);
-        setEmailError(t("auth.emailAlreadyExists"));
-      }
-    } catch {
-      // Ignore network errors — server-side check is best-effort
-    } finally {
-      setEmailChecking(false);
-    }
-  };
+  // Vérification email supprimée — anti-énumération (CRIT-01)
+  // La validation se fait côté serveur lors du register
 
   const handleRegister = async () => {
-    if (emailExists) {
-      setError(t("auth.emailAlreadyExists"));
-      return;
-    }
     if ((!hasInvitation && !form.entrepriseNom.trim()) || !form.nom.trim() || !form.prenom.trim() || !form.email.trim() || !form.password) {
       setError(t("auth.requiredFields"));
       return;
@@ -139,10 +116,6 @@ export default function Register() {
       });
       setUser(data.user ?? null);
       setEmail(form.email.trim());
-      if (data.otpCode) {
-        setOtpCode(data.otpCode);
-        setDevCode(data.otpCode);
-      }
       setOtpSource("register");
       router.push("/(auth)/verify-otp");
     } catch (err) {
@@ -324,9 +297,8 @@ export default function Register() {
           <EmailField
             email={form.email}
             emailError={emailError}
-            emailChecking={emailChecking}
+            emailChecking={false}
             onChangeEmail={(v) => updateField("email", v)}
-            onBlur={handleEmailBlur}
             colors={colors}
           />
 

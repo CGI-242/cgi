@@ -45,8 +45,13 @@ export async function verifyTurnstile(req: Request, res: Response, next: NextFun
       return;
     }
   } catch (err) {
-    // Fail-open : si Cloudflare est injoignable, on laisse passer + log
-    logger.error("Erreur lors de la verification Turnstile (fail-open)", err);
+    // Fail-closed en production : si Cloudflare est injoignable, on bloque (CRIT-03)
+    logger.error("Erreur lors de la verification Turnstile", err);
+    if (process.env.NODE_ENV === "production") {
+      res.status(503).json({ error: "Service de vérification indisponible, réessayez" });
+      return;
+    }
+    // En dev/test, on laisse passer pour ne pas bloquer le développement
   }
 
   // Supprimer le token du body après vérification

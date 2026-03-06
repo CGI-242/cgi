@@ -112,13 +112,10 @@ export function calculerIts(input: ItsInput): ItsResult {
   // Etape 8: ITS total
   let itsAnnuel = itsParPart * nombreParts;
 
+  // Le forfait minimum (1 200 FCFA) est déjà appliqué par le barème (tranche 1)
+  // Pas de surcharge liée au SMIG — le barème fait foi (Art. 116-G)
   const smigApplique = isUnderSmig(revenuBrutAnnuel);
-  let minimumApplique = false;
-
-  if (smigApplique && itsAnnuel < FISCAL_PARAMS.its.minimumAnnuel) {
-    itsAnnuel = FISCAL_PARAMS.its.minimumAnnuel;
-    minimumApplique = true;
-  }
+  const minimumApplique = false;
 
   const itsMensuel = itsAnnuel / 12;
 

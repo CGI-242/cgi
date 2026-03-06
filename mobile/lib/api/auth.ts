@@ -41,11 +41,6 @@ export const authApi = {
     return data;
   },
 
-  checkEmail: async (email: string): Promise<{ exists: boolean }> => {
-    const { data } = await api.post<{ exists: boolean }>("/auth/check-email", { email });
-    return data;
-  },
-
   logout: async (): Promise<void> => {
     await api.post("/auth/logout");
   },

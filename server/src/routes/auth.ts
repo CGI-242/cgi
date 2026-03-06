@@ -201,7 +201,6 @@ router.post("/register", validate({ body: registerBody }), verifyTurnstile, asyn
         id: organization.id,
         nom: organization.name,
       },
-      otpCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[register]", err);
@@ -297,7 +296,6 @@ router.post("/login", validate({ body: loginBody }), verifyTurnstile, async (req
         is_verified: user.isEmailVerified,
       },
       rememberMe: !!rememberMe,
-      otpCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[login]", err);
@@ -466,7 +464,6 @@ router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBo
 
     res.json({
       message: "Code envoyé",
-      devCode: process.env.NODE_ENV === "development" ? otp : undefined,
     });
   } catch (err) {
     logger.error("[send-otp-email]", err);
@@ -529,7 +526,6 @@ router.post("/forgot-password", sensitiveLimiter, validate({ body: forgotPasswor
 
       res.json({
         message: "Si le compte existe, un code a été envoyé",
-        devCode: process.env.NODE_ENV === "development" ? otp : undefined,
       });
       return;
     }
@@ -720,11 +716,13 @@ router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: 
  *         description: Erreur serveur
  */
 // POST /api/auth/check-email
+// Réponse constante pour empêcher l'énumération d'utilisateurs (CRIT-01)
 router.post("/check-email", sensitiveLimiter, validate({ body: checkEmailBody }), async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
-    const user = await prisma.user.findUnique({ where: { email } });
-    res.json({ exists: !!user });
+    // On exécute la requête pour garder un temps de réponse constant, mais on ne révèle pas le résultat
+    await prisma.user.findUnique({ where: { email } });
+    res.json({ message: "Vérification effectuée" });
   } catch (err) {
     res.status(500).json({ error: "Erreur serveur" });
   }
