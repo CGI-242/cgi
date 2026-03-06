@@ -50,14 +50,12 @@ const PREDEFINED_ALERTES = [
   { type: 'SEUIL', categorie: 'IBA', titre: 'Seuil régime simplifié IBA', description: 'Chiffre d\'affaires jusqu\'auquel le régime simplifié est applicable.', valeur: '50.000.000', unite: 'FCFA', articleNumero: '92C' },
   { type: 'TAUX', categorie: 'IBA', titre: 'Base forfaitaire non-résidents', description: 'Application d\'un pourcentage forfaitaire du chiffre d\'affaires pour les personnes morales étrangères.', valeur: '22', unite: '%', articleNumero: '92A' },
 
-  // ITS
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 1', description: 'Revenus de 0 à 300.000 FCFA : exonérés.', valeur: '0', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 2', description: 'Revenus de 300.001 à 548.000 FCFA.', valeur: '10', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 3', description: 'Revenus de 548.001 à 979.000 FCFA.', valeur: '15', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 4', description: 'Revenus de 979.001 à 1.500.000 FCFA.', valeur: '20', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 5', description: 'Revenus de 1.500.001 à 2.500.000 FCFA.', valeur: '25', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 6', description: 'Revenus de 2.500.001 à 5.000.000 FCFA.', valeur: '35', unite: '%', articleNumero: '116' },
-  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 7', description: 'Revenus supérieurs à 5.000.000 FCFA.', valeur: '45', unite: '%', articleNumero: '116' },
+  // ITS — Barème Art. 116-G CGI 2026
+  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 1', description: 'Revenus de 0 à 615.000 FCFA : forfait 1.200 FCFA.', valeur: '1200', unite: 'FCFA', articleNumero: '116-G' },
+  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 2', description: 'Revenus de 615.001 à 1.500.000 FCFA.', valeur: '10', unite: '%', articleNumero: '116-G' },
+  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 3', description: 'Revenus de 1.500.001 à 3.500.000 FCFA.', valeur: '15', unite: '%', articleNumero: '116-G' },
+  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 4', description: 'Revenus de 3.500.001 à 5.000.000 FCFA.', valeur: '20', unite: '%', articleNumero: '116-G' },
+  { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 5', description: 'Revenus supérieurs à 5.000.001 FCFA.', valeur: '30', unite: '%', articleNumero: '116-G' },
   { type: 'ECHEANCE', categorie: 'ITS', titre: 'Déclaration ITS employeur', description: 'Déclaration mensuelle des retenues ITS par l\'employeur.', valeur: '15', unite: 'jour', periodicite: 'mensuel', articleNumero: '120' },
 
   // IRCM

@@ -400,8 +400,6 @@
       "taxToPay": "TAX TO PAY",
       "itsAnnual": "ITS (Annual)",
       "itsMonthly": "ITS (Monthly)",
-      "employeeShare": "Employee (35%)",
-      "employerShare": "Employer (65%)",
       "netSalaryMonthly": "NET SALARY (Monthly)",
       "enterSalary": "Enter a gross salary to see results"
     },

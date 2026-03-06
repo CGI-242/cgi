@@ -400,8 +400,6 @@
       "taxToPay": "IMPÔT À PAYER",
       "itsAnnual": "ITS (Annuel)",
       "itsMonthly": "ITS (Mensuel)",
-      "employeeShare": "Employé (35%)",
-      "employerShare": "Employeur (65%)",
       "netSalaryMonthly": "SALAIRE NET (Mensuel)",
       "enterSalary": "Saisissez un salaire brut pour voir les résultats"
     },

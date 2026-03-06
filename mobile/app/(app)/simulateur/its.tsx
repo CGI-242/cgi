@@ -141,9 +141,6 @@ export default function ItsScreen() {
               <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
               <ResultHighlight label={t("simulateur.its.itsMonthly")} value={formatNumber(result.itsMensuel)} variant="danger" />
 
-              <TableRow label={t("simulateur.its.employeeShare")} value={formatNumber(Math.round(result.itsMensuel * 0.35))} bg={colors.background} />
-              <TableRow label={t("simulateur.its.employerShare")} value={formatNumber(Math.round(result.itsMensuel * 0.65))} />
-
               <ResultHighlight label={t("simulateur.its.netSalaryMonthly")} value={formatNumber(Math.round(result.salaireNetMensuel))} variant="success" />
             </View>
           ) : (
