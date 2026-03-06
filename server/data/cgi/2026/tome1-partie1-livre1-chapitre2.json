@@ -45,7 +45,9 @@
         "BNC",
         "agricole",
         "plus-values",
-        "propriété intellectuelle"
+        "propriété intellectuelle",
+        "sociétés transparentes",
+        "professions libérales"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -77,7 +79,9 @@
         "domicile fiscal",
         "revenus de source congolaise",
         "conventions fiscales",
-        "personnes imposables"
+        "personnes imposables",
+        "fonctionnaires",
+        "doubles impositions"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 1 : Champ d'application",
@@ -115,7 +119,9 @@
         "IBA",
         "règles IS",
         "amortissement linéaire",
-        "report déficitaire"
+        "report déficitaire",
+        "crédit d'impôt",
+        "provisions"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
@@ -137,7 +143,10 @@
         "charges non déductibles",
         "exploitant individuel",
         "dépenses personnelles",
-        "frais de représentation"
+        "frais de représentation",
+        "dépenses mixtes",
+        "loyers",
+        "50 %"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 2 : Bénéfice imposable",
@@ -173,10 +182,11 @@
       ],
       "mots_cles": [
         "taux IBA",
-        "30%",
+        "30 %",
         "minimum de perception",
-        "1,5%",
-        "impôt minimum forfaitaire"
+        "1,5 %",
+        "impôt minimum forfaitaire",
+        "produits d'exploitation"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
@@ -195,7 +205,10 @@
         "report d'imposition",
         "héritiers",
         "société en nom collectif",
-        "SARL"
+        "SARL",
+        "cession",
+        "cessation",
+        "commandite simple"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
@@ -210,7 +223,7 @@
       "mots_cles": [
         "retenue à la source",
         "société transparente",
-        "article 183 CGI"
+        "article 183"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 3 : Modalités d'imposition",
@@ -232,8 +245,8 @@
         "(vi) les importateurs.",
         "3) Les contribuables imposés selon le régime du réel, dont le chiffre d'affaires baisse pour se situer au-dessous du seuil d'assujettissement à la TVA ne sont soumis au régime du forfait que lorsque leur chiffre d'affaires est resté inférieur à cette limite pendant deux exercices successifs.",
         "4) L'impôt global forfaitaire cesse d'être appliqué dès le premier exercice qui suit celui au cours duquel les limites du chiffre d'affaires fixé au paragraphe 1 sont dépassées.",
-        "5. Par dérogation aux dispositions du paragraphe 1 ci-dessus, les contribuables qui sont en mesure de satisfaire aux prescriptions de l'article 104 ci-après, ont la faculté d'être soumis au régime réel. A cet effet, ils doivent notifier leur option à l'administration fiscale avant le 1er février de l'année suivant celle au titre de laquelle l'imposition est établie. L'option est valable pour ladite année et les deux années suivantes. Pendant cette période, elle est irrévocable.",
-        "6. Les contribuables relevant du régime du forfait doivent :",
+        "5) Par dérogation aux dispositions du paragraphe 1 ci-dessus, les contribuables qui sont en mesure de satisfaire aux prescriptions de l'article 104 ci-après, ont la faculté d'être soumis au régime réel. A cet effet, ils doivent notifier leur option à l'administration fiscale avant le 1er février de l'année suivant celle au titre de laquelle l'imposition est établie. L'option est valable pour ladite année et les deux années suivantes. Pendant cette période, elle est irrévocable.",
+        "6) Les contribuables relevant du régime du forfait doivent :",
         "a) tenir une comptabilité selon le système minimal de trésorerie défini par le droit comptable OHADA ;",
         "b) tenir un registre chronologique de toutes les factures d'achats et de dépenses ;",
         "c) tenir un registre chronologique de toutes les factures de ventes ou de prestations ;",
@@ -241,22 +254,25 @@
         "e) effectuer, le cas échéant, pour le compte du Trésor, les retenues à la source prévues par la loi ;",
         "f) produire (i) le bilan, (ii) le compte de résultat et (iii) les notes annexes.",
         "Les notes annexes sont composées de : (i) tableau du système minimal de trésorerie (SMT) de suivi du matériel, du mobilier et des cautions, (ii) état des stocks, (iii) état des créances et des dettes non échues et (iv) le journal de trésorerie SMT.",
-        "7. Les deux registres comptables visés aux alinéas b) et c) ci-dessus doivent être conservés dans les conditions prévues à l'article 104 du CGI, tome 1 et présentés à toute réquisition de l'administration fiscale, en particulier à des fins de contrôle pour la détermination du chiffre d'affaires annuel. Lesdits registres doivent être présentés chaque trimestre auprès de l'administration fiscale pour paraphe."
+        "7) Les deux registres comptables visés aux alinéas b) et c) ci-dessus doivent être conservés dans les conditions prévues à l'article 104 du CGI, tome 1 et présentés à toute réquisition de l'administration fiscale, en particulier à des fins de contrôle pour la détermination du chiffre d'affaires annuel. Lesdits registres doivent être présentés chaque trimestre auprès de l'administration fiscale pour paraphe."
       ],
       "mots_cles": [
         "régime du forfait",
         "petites entreprises",
         "TVA",
+        "seuil TVA",
         "option régime réel",
         "SMT",
-        "obligations comptables"
+        "OHADA",
+        "obligations comptables",
+        "professions réglementées"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
       "annee_application": 2026
     },
     {
-      "article": "Art. 96A",
+      "article": "Art. 96-A",
       "titre": "Obligations comptables des contribuables au forfait",
       "texte": [
         "Les contribuables relevant du régime du forfait doivent :",
@@ -271,8 +287,11 @@
       ],
       "mots_cles": [
         "SMT",
+        "OHADA",
         "obligations comptables",
-        "régime forfaitaire"
+        "régime forfaitaire",
+        "bilan",
+        "notes annexes"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -284,14 +303,16 @@
       "texte": [
         "Les montants du chiffre d'affaires et du bénéfice sont évalués par l'administration d'après les résultats obtenus par le contribuable au cours de l'année d'imposition. Ils doivent correspondre au bénéfice que l'entreprise peut produire normalement.",
         "L'évaluation est notifiée au contribuable qui dispose d'un délai de 30 jours à partir de la réception de cette notification pour faire parvenir son acceptation ou formuler ses observations en indiquant le chiffre qu'il serait disposé à accepter ; le défaut de réponse dans le délai prévu est considéré comme une acceptation.",
-        "Si le contribuable n'accepte pas le chiffre qui lui a été notifié et si, de son côté, le chef de l'unité dont dépend la résidence fiscale du contribuable n'admet pas celui qu'il est proposé par l'intéressé, l'évaluation du bénéfice forfaitaire est faite par la commission des impôts prévue à l'article 400 du présent code. Le chiffre arrêté par cette commission sert de base à l'imposition. Toutefois, le contribuable peut demander par voie contentieuse après mise en recouvrement du rôle et dans les délais, formes et conditions prévus par les articles 423 et suivants du présent code, une réduction de la base qui lui a été assignée, à condition de prouver que celle-ci est supérieure au bénéfice réalisé dans son entreprise au cours de l'année d'imposition."
+        "Si le contribuable n'accepte pas le chiffre qui lui a été notifié et si, de son côté, le chef de l'unité dont dépend la résidence fiscale du contribuable n'admet pas celui qui est proposé par l'intéressé, l'évaluation du bénéfice forfaitaire est faite par la commission des impôts prévue à l'article 400 du présent Code. Le chiffre arrêté par cette commission sert de base à l'imposition. Toutefois, le contribuable peut demander par voie contentieuse après mise en recouvrement du rôle et dans les délais, formes et conditions prévus par les articles 423 et suivants du présent Code, une réduction de la base qui lui a été assignée, à condition de prouver que celle-ci est supérieure au bénéfice réalisé dans son entreprise au cours de l'année d'imposition."
       ],
       "mots_cles": [
         "évaluation forfaitaire",
         "commission des impôts",
         "procédure contradictoire",
         "délai 30 jours",
-        "recours contentieux"
+        "recours contentieux",
+        "article 400",
+        "article 423"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
@@ -301,10 +322,10 @@
       "article": "Art. 98",
       "titre": "Base de calcul de l'impôt global forfaitaire",
       "texte": [
-        "1. La base de calcul de l'impôt global forfaitaire est fixée pour une année civile.",
-        "2. Cette base de calcul est connue chaque année au plus tard le 15 février après le dépôt de la déclaration n° 294 accompagnée obligatoirement des états financiers visés aux articles 96 et 97 du présent code.",
-        "3. Le montant qui sert de base de calcul de l'impôt global forfaitaire est redressé unilatéralement, sans préavis, par l'administration, en cas de manœuvre frauduleuse ou de dissimulation.",
-        "4. Au cours de la première année d'exploitation, l'impôt global forfaitaire est fixé à partir d'un chiffre d'affaires estimé selon la procédure contradictoire, déterminé sur la base du chiffre d'affaires prévisionnel fixé au moment de la déclaration fiscale d'existence, à condition de justifier d'une déclaration d'existence et de faire parapher par le service compétent de l'administration fiscale les registres comptables visés ci-dessus, dans les 15 jours du début d'activités et à la fin de chaque trimestre de l'année.",
+        "1) La base de calcul de l'impôt global forfaitaire est fixée pour une année civile.",
+        "2) Cette base de calcul est connue chaque année au plus tard le 15 février après le dépôt de la déclaration n° 294 accompagnée obligatoirement des états financiers visés aux articles 96 et 97 du présent Code.",
+        "3) Le montant qui sert de base de calcul de l'impôt global forfaitaire est redressé unilatéralement, sans préavis, par l'administration, en cas de manœuvre frauduleuse ou de dissimulation.",
+        "4) Au cours de la première année d'exploitation, l'impôt global forfaitaire est fixé à partir d'un chiffre d'affaires estimé selon la procédure contradictoire, déterminé sur la base du chiffre d'affaires prévisionnel fixé au moment de la déclaration fiscale d'existence, à condition de justifier d'une déclaration d'existence et de faire parapher par le service compétent de l'administration fiscale les registres comptables visés ci-dessus, dans les 15 jours du début d'activités et à la fin de chaque trimestre de l'année.",
         "5. Le défaut de la déclaration du paraphe et de la tenue des registres, des factures et des documents comptables ou leur non production, est sanctionné par une taxation d'office et une amende de 100 000 FCFA."
       ],
       "mots_cles": [
@@ -312,7 +333,9 @@
         "déclaration 294",
         "taxation d'office",
         "amende 100 000 FCFA",
-        "première année"
+        "première année",
+        "manœuvre frauduleuse",
+        "chiffre d'affaires prévisionnel"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Impôt sur les bénéfices d'affaires (IBA) - Sous-section 4 : Régime des petites et très petites entreprises",
