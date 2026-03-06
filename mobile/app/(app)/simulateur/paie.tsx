@@ -17,6 +17,7 @@ import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import NumberField from "@/components/simulateur/NumberField";
+import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
@@ -144,6 +145,7 @@ export default function PaieScreen() {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <FloatingCalculator />
       <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
         {/* --- COLONNE GAUCHE : Saisie --- */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
@@ -193,13 +195,6 @@ export default function PaieScreen() {
           <NumberField label={t("simulateur.paie.heuresSup")} value={fields.heuresSup} onChange={(v) => setField("heuresSup", v)} />
           <NumberField label={t("simulateur.paie.congesAnnuels")} value={fields.congesAnnuels} onChange={(v) => setField("congesAnnuels", v)} />
 
-          {/* Section Indemnités & Primes */}
-          <SimulateurSection label={t("simulateur.paie.sectionIndemnites")} />
-          <NumberField label={`${t("simulateur.paie.primeTransport")} (${t("simulateur.paie.primeTransportNote")})`} value={fields.primeTransport} onChange={(v) => setField("primeTransport", v)} />
-          <NumberField label={`${t("simulateur.paie.primeRepresentation")} (${t("simulateur.paie.primeRepresentationNote")})`} value={fields.primeRepresentation} onChange={(v) => setField("primeRepresentation", v)} />
-          <NumberField label={t("simulateur.paie.primePanier")} value={fields.primePanier} onChange={(v) => setField("primePanier", v)} />
-          <NumberField label={t("simulateur.paie.primeSalissure")} value={fields.primeSalissure} onChange={(v) => setField("primeSalissure", v)} />
-
           {/* Section Avantages en nature */}
           <SimulateurSection label={t("simulateur.paie.sectionAvantages")} />
           <View style={[styles.toggleRow, { backgroundColor: `${colors.primary}10` }]}>
@@ -212,6 +207,13 @@ export default function PaieScreen() {
           <NumberField label={t("simulateur.paie.avVoiture")} value={fields.avVoiture} onChange={(v) => setField("avVoiture", v)} />
           <NumberField label={t("simulateur.paie.avTelephone")} value={fields.avTelephone} onChange={(v) => setField("avTelephone", v)} />
           <NumberField label={t("simulateur.paie.avNourriture")} value={fields.avNourriture} onChange={(v) => setField("avNourriture", v)} />
+
+          {/* Section Primes non imposables */}
+          <SimulateurSection label={t("simulateur.paie.sectionIndemnites")} />
+          <NumberField label={`${t("simulateur.paie.primeTransport")} (${t("simulateur.paie.primeTransportNote")})`} value={fields.primeTransport} onChange={(v) => setField("primeTransport", v)} />
+          <NumberField label={`${t("simulateur.paie.primeRepresentation")} (${t("simulateur.paie.primeRepresentationNote")})`} value={fields.primeRepresentation} onChange={(v) => setField("primeRepresentation", v)} />
+          <NumberField label={t("simulateur.paie.primePanier")} value={fields.primePanier} onChange={(v) => setField("primePanier", v)} />
+          <NumberField label={t("simulateur.paie.primeSalissure")} value={fields.primeSalissure} onChange={(v) => setField("primeSalissure", v)} />
 
           {/* Affichage surligné du brut imposable */}
           <View style={[styles.brutBox, { backgroundColor: `${colors.primary}15` }]}>
