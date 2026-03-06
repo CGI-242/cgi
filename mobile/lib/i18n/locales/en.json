@@ -321,6 +321,11 @@
     "hubCessionParts": "Share Transfers",
     "hubFoncier": "Property Tax",
     "hubRetenueSource": "Withholding Tax",
+    "hubCalculatrice": "Calculator",
+    "calculatrice": {
+      "title": "Calculator",
+      "subtitle": "Quick calculations"
+    },
     "paie": {
       "title": "Payroll Simulator",
       "subtitle": "Full payslip — CGI Congo 2026",

@@ -17,7 +17,6 @@ import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import NumberField from "@/components/simulateur/NumberField";
-import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
@@ -145,7 +144,6 @@ export default function PaieScreen() {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <FloatingCalculator />
       <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
         {/* --- COLONNE GAUCHE : Saisie --- */}
         <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>

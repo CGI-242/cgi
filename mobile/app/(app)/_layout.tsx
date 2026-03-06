@@ -43,6 +43,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/contribution-fonciere": "simulateur.foncier.title",
   "/simulateur/paie": "simulateur.paie.title",
   "/simulateur/retenue-source": "simulateur.rts.title",
+  "/simulateur/calculatrice": "simulateur.calculatrice.title",
   "/calendrier": "calendrier.title",
   "/abonnement": "settings.managementSubscription",
   "/organisation": "settings.managementOrganization",
@@ -77,6 +78,7 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/contribution-fonciere": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/paie": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/retenue-source": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/calculatrice": { path: "/simulateur", titleKey: "simulateur.title" },
 };
 
 export default function AppLayout() {
@@ -195,6 +197,7 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/contribution-fonciere" />
       <Stack.Screen name="simulateur/paie" />
       <Stack.Screen name="simulateur/retenue-source" />
+      <Stack.Screen name="simulateur/calculatrice" />
       <Stack.Screen name="calendrier/index" />
       <Stack.Screen name="chat/index" />
       <Stack.Screen name="abonnement/index" />

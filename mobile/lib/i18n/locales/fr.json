@@ -321,6 +321,11 @@
     "hubCessionParts": "Cessions Parts",
     "hubFoncier": "Foncier",
     "hubRetenueSource": "Retenue Source",
+    "hubCalculatrice": "Calculatrice",
+    "calculatrice": {
+      "title": "Calculatrice",
+      "subtitle": "Calculs rapides"
+    },
     "paie": {
       "title": "Simulateur de Paie",
       "subtitle": "Bulletin de paie complet — CGI Congo 2026",
