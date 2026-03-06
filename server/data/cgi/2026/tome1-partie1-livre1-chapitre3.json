@@ -7,10 +7,10 @@
     "partie": 1,
     "livre": 1,
     "chapitre": 3,
-    "chapitre_titre": "SANS OBJET",
-    "page_source": null,
+    "chapitre_titre": "Sans objet",
+    "page_source": 60,
     "base_juridique": null
   },
   "articles": [],
-  "note": "Ce chapitre est sans objet dans l'édition 2026 du CGI."
+  "note": "NB - Chapitre prévu sans objet par la loi de finances pour 2026"
 }

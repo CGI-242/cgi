@@ -667,15 +667,18 @@ router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: 
       return;
     }
 
-    // Générer de nouveaux tokens
-    const newToken = generateAccessToken({ userId: user.id, email: user.email });
-    const newRefreshToken = generateRefreshToken({ userId: user.id, email: user.email });
+    // Détecter si le token original était rememberMe (durée > 8 jours)
+    const wasRememberMe = decoded.exp && decoded.iat && (decoded.exp - decoded.iat) > 8 * 24 * 60 * 60;
+
+    // Générer de nouveaux tokens en préservant rememberMe
+    const newToken = generateAccessToken({ userId: user.id, email: user.email }, wasRememberMe);
+    const newRefreshToken = generateRefreshToken({ userId: user.id, email: user.email }, wasRememberMe);
 
     // Blacklister l'ancien refresh token (rotation)
     TokenBlacklistService.blacklistToken(refreshTokenValue);
 
     if (isWebClient(req)) {
-      setAuthCookies(res, newToken, newRefreshToken);
+      setAuthCookies(res, newToken, newRefreshToken, wasRememberMe);
       res.json({ message: "Token renouvelé" });
     } else {
       res.json({ token: newToken, refreshToken: newRefreshToken });

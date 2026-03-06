@@ -8,7 +8,7 @@
     "livre": 1,
     "chapitre": 3,
     "chapitre_titre": "Sans objet",
-    "page_source": null,
+    "page_source": 60,
     "base_juridique": null
   },
   "articles": [
@@ -23,5 +23,5 @@
     { "article": "Art. 125", "titre": "Sans objet", "texte": [], "mots_cles": [], "statut": "sans objet", "section": "Art. 117 à 126" },
     { "article": "Art. 126", "titre": "Sans objet", "texte": [], "mots_cles": [], "statut": "sans objet", "section": "Art. 117 à 126" }
   ],
-  "note": "Ce chapitre est sans objet dans l'édition 2026 du CGI."
+  "note": "NB - Chapitre prévu sans objet par la loi de finances pour 2026"
 }

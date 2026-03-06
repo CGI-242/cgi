@@ -158,7 +158,7 @@ export const useAuthStore = create<AuthState>()(
         // Web : vérifier que les cookies httpOnly sont encore valides
         if (isWeb) {
           try {
-            await api.get("/user/profile", { _skipAuthRetry: true });
+            await api.get("/user/profile");
           } catch {
             set({ user: null, isAuthenticated: false, step: "email" });
           }

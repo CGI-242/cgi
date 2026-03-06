@@ -122,7 +122,7 @@
 - **Ce qui marche** :
   - **Entrées** : Salaire brut, période (mensuel/annuel), statut familial (4 choix), enfants à charge (0-20), quotient familial (toggle)
   - **Calcul** : Annualisation → CNSS 4% (plafond 1 200 000) → Frais pro 20% → Quotient familial → Barème ITS 5 tranches (0%-30%) → Minimum 1 200 FCFA
-  - **Sorties** : Brut mensuel/annuel, CNSS, net imposable, nombre de parts, détail tranches, ITS annuel/mensuel, part employé (35%)/employeur (65%), salaire net, taux effectif
+  - **Sorties** : Brut mensuel/annuel, CNSS, net imposable, nombre de parts, détail tranches, ITS annuel/mensuel, salaire net, taux effectif
   - **UI** : Saisie à gauche, résultats à droite, formatage FCFA avec espaces
 - **Ce qui manque** : Rien — simulateur complet
 - **Réf. légale** : Art. 40 (CNSS 4%), Art. 41 (Frais 20%), Art. 116 (Barème ITS 2026)

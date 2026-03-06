@@ -95,7 +95,7 @@ export default function AppLayout() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      api.get("/subscription/quota", { _skipAuthRetry: true })
+      api.get("/subscription/quota")
         .then((res) => setSubStatus(res.data.status))
         .catch(() => setSubStatus(null))
         .finally(() => setSubLoading(false));
