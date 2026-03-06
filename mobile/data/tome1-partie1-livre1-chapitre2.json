@@ -718,16 +718,16 @@
       "texte": [
         "Lorsque les revenus imposables sont versés par une personne exploitée en République du Congo au sens des dispositions de l'article 4 de la présente loi à :",
         "a) des personnes physiques, des personnes morales non soumises à l'impôt sur les sociétés ou des non-résidents, ces revenus sont soumis à une retenue libératoire ;",
-        "b) des personnes morales soumises à l'impôt sur les sociétés, l'État également appliquer une retenue libératoire.",
+        "b) des personnes morales soumises à l'impôt sur les sociétés, l'État peut également appliquer une retenue libératoire.",
         "Les revenus de capitaux mobiliers de source étrangère sont déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les modalités fixées par le présent Code.",
         "Pour les plus-values de cession de valeurs mobilières, l'impôt est à la charge du cédant. Le cessionnaire et la société dont les titres sont cédés sont solidairement responsables du paiement de l'impôt.",
-        "La déclaration et le paiement de l'impôt se font au plus tard dans les soixante (60) jours du mois suivant la réalisation de la plus-value."
+        "La déclaration et le paiement de l'impôt se font au plus tard dans les soixante jours du mois suivant la réalisation de la plus-value."
       ],
       "mots_cles": [
         "retenue libératoire",
         "paiement",
         "plus-values",
-        "60 jours",
+        "soixante jours",
         "non-résidents",
         "source étrangère",
         "cédant",
@@ -744,16 +744,20 @@
       "texte": [
         "Sont soumis à l'impôt sur les revenus fonciers, lorsqu'ils ne sont pas inclus dans les bénéfices d'une entreprise soumise à l'impôt sur les sociétés :",
         "a) les revenus des propriétés bâties telles que les maisons et usines ainsi que ceux provenant :",
-        "(i) de l'outillage des établissements industriels attachés au fonds à perpétuelle demeure, ou reposant sur des fondations spéciales faisant corps avec l'ensemble ;",
-        "(ii) de toutes installations assimilables à des constructions, qu'elles soient à usage d'habitation, commercial ou industriel.",
+        "i. de l'outillage des établissements industriels attachés au fonds à perpétuelle demeure, ou reposant sur des fondations spéciales faisant corps avec l'ensemble ;",
+        "ii. de toutes installations assimilables à des constructions, qu'elles soient à usage d'habitation, commercial ou industriel ;",
         "b) les revenus des propriétés non bâties de toute nature ;",
-        "c) les revenus fonciers accessoires à la location des propriétés bâties ou non bâties, notamment la location du droit d'affichage ou la concession du droit d'exploitation d'un terrain non bâti, carrières, redevances tréfoncières, des plus-values immobilières."
+        "c) les revenus fonciers accessoires à la location des propriétés bâties ou non bâties, notamment la location du droit d'affichage ou la concession du droit d'exploitation d'un terrain non bâti, carrières, redevances tréfoncières ;",
+        "d) les plus-values immobilières."
       ],
       "mots_cles": [
         "IRF",
         "revenus fonciers",
         "propriétés bâties",
         "propriétés non bâties",
+        "outillage",
+        "droit d'affichage",
+        "redevances tréfoncières",
         "plus-values immobilières"
       ],
       "statut": "en vigueur",
@@ -764,13 +768,15 @@
       "article": "Art. 111-A",
       "titre": "Imposition des associés de personnes morales à prépondérance de revenus fonciers",
       "texte": [
-        "Les personnes physiques associées de personnes morales dont le chiffre d'affaires est composé à plus de 80% de revenus fonciers tels que définis à l'article précédent, sont, lorsque ces sociétés ne sont pas soumises à l'impôt sur les sociétés ni à la taxe sur la valeur ajoutée, personnellement soumises à l'impôt sur les revenus fonciers pour la part des revenus imposables correspondant à leurs droits dans la société."
+        "Les personnes physiques associées de personnes morales dont le chiffre d'affaires est composé à plus de 80 % de revenus fonciers tels que définis à l'article précédent, sont, lorsque ces sociétés ne sont pas soumises à l'impôt sur les sociétés ni à la taxe sur la valeur ajoutée, personnellement soumis à l'impôt sur les revenus fonciers pour la part des revenus imposables correspondant à leurs droits dans la société."
       ],
       "mots_cles": [
         "IRF",
         "associés",
         "prépondérance",
+        "80 %",
         "revenus fonciers",
+        "taxe sur la valeur ajoutée",
         "sociétés non soumises à l'IS"
       ],
       "statut": "en vigueur",
@@ -789,15 +795,20 @@
         "c) les droits afférents à un contrat de crédit-bail immobilier ;",
         "d) les titres de société à prépondérance immobilière ;",
         "e) les plateformes en mer, notamment les plateformes pétrolières ;",
-        "f) ainsi que les droits portant sur des ressources naturelles renouvelables ou non renouvelables, notamment les licences de télécommunications, titres d'exploration ou d'exploitation minière ou pétrolières, titres forestiers, droits halieutiques, etc.",
-        "Sont considérées comme sociétés à prépondérance immobilière, celles dont l'actif est, à la date de cession des titres, ou a été, dans les 365 jours qui précèdent cette cession, constitué pour plus de 50 % de sa valeur réelle par des immeubles affectés par l'entreprise à sa propre exploitation."
+        "f) ainsi que les droits portant sur des ressources naturelles renouvelables ou non renouvelables, notamment les licences de télécommunications, titres d'exploration ou d'exploitation miniers ou pétroliers, titres forestiers, droits halieutiques, etc.",
+        "Sont considérés comme sociétés à prépondérance immobilière, celles dont l'actif est, à la date de cession des titres, ou a été, dans les 365 jours qui précèdent cette cession, constitué pour plus de 50 % de sa valeur réelle par des immeubles affectés par l'entreprise à sa propre exploitation."
       ],
       "mots_cles": [
         "plus-values immobilières",
         "cession",
         "immeubles",
+        "droits réels immobiliers",
         "crédit-bail immobilier",
-        "société à prépondérance immobilière"
+        "plateformes pétrolières",
+        "ressources naturelles",
+        "société à prépondérance immobilière",
+        "365 jours",
+        "50 %"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Impôt sur les revenus fonciers (IRF) - Sous-section 1 : Champ d'application",
