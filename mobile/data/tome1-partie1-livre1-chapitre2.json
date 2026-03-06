@@ -1266,7 +1266,7 @@
         "c) sont titulaires d'une pension prévue par la loi du 31 mars 1919 pour une invalidité de 40 % et au-dessus ou d'une pension de veuve prévue par les lois des 31 mars et 24 juin 1919, ou d'une pension d'invalidité pour accident du travail de 40 % et au-dessus ;",
         "d) ont adopté un enfant à la condition que, si l'adoption a eu lieu alors que l'enfant était âgé de plus de 10 ans, cet enfant ait été à la charge de l'adoptant depuis l'âge de 10 ans. Cette disposition n'est pas applicable si l'enfant adopté est décédé avant d'avoir atteint l'âge de 16 ans.",
         "2) Le quotient familial prévu à l'article 116 A ci-dessus est augmenté d'une part pour l'enfant infirme majeur au lieu d'une demi part.",
-        "3) Les agents de l'État et du secteur paraétatique dont le poste d'affectation est situé en dehors des communes de plein exercice bénéficient d'une demi-part en plus dans la détermination de leur quotient familial, dès lors qu'ils résident dans leurs lieux d'affectation."
+        "3) Les agents de l'État et du secteur paraétatique dont le poste d'affectation est situé en dehors des communes de plein exercice bénéficient d'une demi-part en plus dans la détermination de leur quotient familial, dès lors qu'ils résident dans leurs lieux d'affectation depuis plus d'un an."
       ],
       "mots_cles": [
         "dérogation",
@@ -1291,9 +1291,9 @@
       "titre": "Enfants considérés à charge",
       "texte": [
         "Sont considérés comme étant à la charge du contribuable à condition de n'avoir pas de revenus distincts de ceux qui servent de base à l'imposition de ce dernier :",
-        "1) ses enfants légitimes, légalement reconnus ou légalement adoptés, s'ils sont âgés de moins de 21 ans ou s'ils sont infirmes.",
+        "1° ses enfants légitimes, légalement reconnus ou légalement adoptés, s'ils sont âgés de moins de 21 ans ou s'ils sont infirmes.",
         "La limite d'âge est, sous réserve de justification, reportée à 25 ans pour les enfants poursuivant leurs études ;",
-        "2) sous la même condition et sous réserve de justification, les enfants recueillis par lui à son propre foyer et, dans la limite de deux, les enfants placés sous sa protection dans le cadre familial."
+        "2° sous la même condition et sous réserve de justification, les enfants recueillis par lui à son propre foyer et, dans la limite de deux, les enfants placés sous sa protection dans le cadre familial."
       ],
       "mots_cles": [
         "enfants à charge",
@@ -1301,7 +1301,9 @@
         "25 ans",
         "études",
         "infirme",
-        "adoption"
+        "adoption",
+        "enfants recueillis",
+        "protection familiale"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1317,7 +1319,9 @@
         "garde fiscale",
         "enfants",
         "décision tribunal",
-        "charge fiscale"
+        "charge fiscale",
+        "femmes mariées",
+        "femmes célibataires"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1335,7 +1339,9 @@
         "1er janvier",
         "31 décembre",
         "mariage",
-        "charges de famille"
+        "charges de famille",
+        "décès",
+        "année d'imposition"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1346,12 +1352,12 @@
       "titre": "Barème de l'impôt sur les traitements et salaires",
       "texte": [
         "1) Le quotient familial ou le salaire net imposable correspondant à une part est imposé en appliquant les taux de :",
-        "- 1 200 FCFA pour la fraction comprise entre 0 et 615 000 ;",
-        "- 10 % pour la fraction comprise entre 615 001 et 1 500 000 ;",
-        "- 15 % pour la fraction comprise entre 1 500 001 et 3 500 000 ;",
-        "- 20 % pour la fraction comprise entre 3 500 001 et 5 000 000 ;",
-        "- 30 % pour la fraction comprise entre 5 000 001 et suivant.",
-        "2) Lorsque le salaire brut est inférieur au salaire minimum interprofessionnel garanti (SMIG) fixé par les textes en vigueur, l'impôt annuel minimum est fixé à 1 200 FCFA.",
+        "- 1.200 FCFA pour la fraction comprise entre 0 et 615.000 ;",
+        "- 10 % pour la fraction comprise entre 615.001 et 1.500.000 ;",
+        "- 15 % pour la fraction comprise entre 1.500.001 et 3.500.000 ;",
+        "- 20 % pour la fraction comprise entre 3.500.001 et 5.000.000 ;",
+        "- 30 % pour la fraction comprise entre 5.000.001 et suivant.",
+        "2) Lorsque le salaire brut est inférieur au SMIG fixé par les textes en vigueur, l'impôt annuel minimum est fixé à 1.200 FCFA.",
         "3) L'impôt sur les traitements et salaires est payé par acompte mensuel retenu à la source par l'employeur."
       ],
       "mots_cles": [
@@ -1359,7 +1365,13 @@
         "quotient familial",
         "taux",
         "SMIG",
-        "retenue à la source"
+        "retenue à la source",
+        "1.200 FCFA",
+        "10 %",
+        "15 %",
+        "20 %",
+        "30 %",
+        "acompte mensuel"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 6 : Calcul de l'impôt",
@@ -1372,13 +1384,15 @@
         "1) Toute personne physique ou morale qui paie des sommes imposables à l'impôt sur les traitements et salaires au Congo est tenue d'opérer la retenue de l'impôt selon l'article 183.",
         "2) Les retenues sont libératoires au titre de l'impôt sur les traitements et salaires si le bénéficiaire dispose d'une seule source de traitements et salaires.",
         "Dans le cas contraire, le contribuable bénéficiaire desdits traitements et salaires est tenu de souscrire une déclaration annuelle des salaires en vue d'une imposition unique.",
-        "3) Les revenus de source étrangère doivent être déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les mêmes modalités fixées par le code général des impôts pour les revenus de source étrangère."
+        "3) Les revenus de source étrangère doivent être déclarés et l'impôt payé à l'initiative de leur bénéficiaire, selon les mêmes modalités fixées par le Code général des impôts pour les revenus de source étrangère."
       ],
       "mots_cles": [
         "retenue à la source",
         "libératoire",
         "déclaration annuelle",
-        "revenus source étrangère"
+        "revenus source étrangère",
+        "article 183",
+        "imposition unique"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 7 : Obligations déclaratives",
@@ -1388,7 +1402,7 @@
       "article": "Art. 116-I",
       "titre": "Déclaration annuelle des salaires",
       "texte": [
-        "1) À titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du ministre des finances. Cette annexe est un état récapitulatif de la DAS 1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
+        "1) Au titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du Ministre des finances. Cette annexe est un état récapitulatif de la DAS 1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
         "2) Au cours de l'année 2026, l'impôt sur les traitements et salaires se calcule comme en matière d'IRPP en prenant en considération les dispositions des articles 114 à 116 H ci-dessus."
       ],
       "mots_cles": [
@@ -1396,7 +1410,10 @@
         "déclaration annuelle",
         "DAS 3",
         "DAS 1",
-        "IRPP"
+        "IRPP",
+        "Ministre des finances",
+        "année 2025",
+        "année 2026"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Impôt sur les traitements et salaires (ITS) - Sous-section 7 : Obligations déclaratives",
