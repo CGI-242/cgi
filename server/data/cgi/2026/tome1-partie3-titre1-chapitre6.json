@@ -25,12 +25,24 @@
       ],
       "mots_cles": [
         "droit de communication",
+        "déclarations d'impôts",
         "livres comptables",
         "documents annexes",
-        "délai de réponse 30 jours"
+        "pièces de recettes",
+        "support papier",
+        "support électronique",
+        "article 31",
+        "sociétés",
+        "registres de transfert",
+        "assemblées générales",
+        "industriels",
+        "commerçants",
+        "relevé par client",
+        "délai de réponse 30 jours",
+        "accusé de réception"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des entreprises privées"
+      "section": "Section 1 - Droit de communication auprès des entreprises privées"
     },
     {
       "article": "Art. 391 bis",
@@ -58,7 +70,7 @@
         "service d'assiette"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des entreprises privées"
+      "section": "Section 1 - Droit de communication auprès des entreprises privées"
     },
     {
       "article": "Art. 391 ter",
@@ -79,7 +91,7 @@
         "vérification de comptabilité"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des entreprises privées"
+      "section": "Section 1 - Droit de communication auprès des entreprises privées"
     },
     {
       "article": "Art. 392",
@@ -94,7 +106,7 @@
         "livres comptables"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des entreprises privées"
+      "section": "Section 1 - Droit de communication auprès des entreprises privées"
     },
     {
       "article": "Art. 393",
@@ -109,7 +121,7 @@
         "communication des documents"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des administrations publiques"
+      "section": "Section 2 - Droit de communication auprès des administrations publiques"
     },
     {
       "article": "Art. 394",
@@ -119,7 +131,7 @@
       ],
       "mots_cles": [],
       "statut": "abrogé",
-      "section": "Droit de communication auprès des administrations publiques"
+      "section": "Section 2 - Droit de communication auprès des administrations publiques"
     },
     {
       "article": "Art. 395",
@@ -144,7 +156,7 @@
         "matière correctionnelle"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des administrations publiques"
+      "section": "Section 2 - Droit de communication auprès des administrations publiques"
     },
     {
       "article": "Art. 396",
@@ -159,7 +171,7 @@
         "administration des Impôts"
       ],
       "statut": "en vigueur",
-      "section": "Droit de communication auprès des administrations publiques"
+      "section": "Section 2 - Droit de communication auprès des administrations publiques"
     },
     {
       "article": "Art. 397",
@@ -185,7 +197,7 @@
         "états financiers"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions particulières"
+      "section": "Section 3 - Dispositions particulières"
     },
     {
       "article": "Art. 398",
@@ -198,7 +210,7 @@
         "contrôle des changes"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions communes"
+      "section": "Section 4 - Dispositions communes"
     },
     {
       "article": "Art. 399",
@@ -219,7 +231,7 @@
         "mise en demeure"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions communes"
+      "section": "Section 4 - Dispositions communes"
     },
     {
       "article": "Art. 399 bis",
@@ -235,7 +247,7 @@
         "preuve"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions communes"
+      "section": "Section 4 - Dispositions communes"
     },
     {
       "article": "Art. 399 ter",
@@ -257,7 +269,7 @@
         "amende 1.000.000 FCFA"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions communes"
+      "section": "Section 4 - Dispositions communes"
     },
     {
       "article": "Art. 399 quater",
@@ -272,7 +284,7 @@
         "activité lucrative"
       ],
       "statut": "en vigueur",
-      "section": "Dispositions communes"
+      "section": "Section 4 - Dispositions communes"
     }
   ]
 }

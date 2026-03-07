@@ -281,16 +281,19 @@
       "article": "Art. 390 bis B",
       "titre": "Actes dissimulant la portée véritable d'un contrat",
       "texte": [
-        "Les actes dissimulant la portée véritable d'un contrat ou d'une convention sous l'apparence de stipulation donnant ouverture à des droits d'enregistrement à une taxe de publicité foncière moins élevée ou déguisant, soit une réalisation, soit un transfert de bénéfice ou de revenus, ou permettant d'éviter soit en totalité, soit en partie le paiement des taxes sur le chiffre d'affaires afférentes aux opérations effectuées en exécution de ce contrat ou de cette convention ne sont pas opposables à l'administration, laquelle supporte la charge de la preuve du caractère réel de ces actes devant le juge de l'impôt."
+        "Les actes dissimulant la portée véritable d'un contrat ou d'une convention sous l'apparence de stipulation donnant ouverture à des droits d'enregistrement ou à une taxe de publicité foncière moins élevée ou déguisant, soit une réalisation, soit un transfert de bénéfice ou de revenus, ou permettant d'éviter, soit en totalité, soit en partie, le paiement des taxes sur le chiffre d'affaires afférentes aux opérations effectuées en exécution de ce contrat ou de cette convention ne sont pas opposables à l'administration, laquelle supporte la charge de la preuve du caractère réel de ces actes devant le juge de l'Impôt."
       ],
       "mots_cles": [
         "dissimulation",
         "contrat",
         "convention",
         "droits d'enregistrement",
+        "taxe de publicité foncière",
+        "transfert de bénéfice",
+        "taxes sur le chiffre d'affaires",
         "actes non opposables",
-        "preuve",
-        "juge de l'impôt"
+        "charge de la preuve",
+        "juge de l'Impôt"
       ],
       "statut": "en vigueur"
     },
@@ -302,8 +305,10 @@
       ],
       "mots_cles": [
         "proposition de rehaussement",
+        "contrôle fiscal",
         "nullité",
-        "assistance par conseil"
+        "assistance par conseil",
+        "faculté"
       ],
       "statut": "en vigueur"
     },
@@ -317,8 +322,12 @@
       "mots_cles": [
         "bonne foi",
         "interprétation administrative",
-        "sécurité juridique",
-        "absence de rehaussement"
+        "rehaussement",
+        "différend",
+        "texte fiscal",
+        "instructions",
+        "circulaires",
+        "sécurité juridique"
       ],
       "statut": "en vigueur"
     },
@@ -329,17 +338,23 @@
         "1) Une vérification de comptabilité ou une vérification approfondie du revenu global ne peut être engagée sans que le contribuable ait été informé par l'envoi ou la remise d'un avis de vérification au moins cinq jours avant la date prévue pour la première intervention. Ce délai n'est pas applicable en cas de vérification inopinée.",
         "2) Cet avis doit préciser la période et les impôts, droits et taxes sur lesquels porte la vérification et mentionner sous peine de nullité de la procédure, que le contribuable a la faculté de se faire assister par un conseil de son choix.",
         "3) L'administration a la faculté de se faire assister par un ou des experts de son choix lors de la vérification de comptabilité. Dans ce cas, le contribuable doit en être averti.",
-        "4) Les comptables, les experts comptables, les conseils fiscaux, agréés par la CEMAC, ont des qualités pour assister les contribuables auprès de l'administration fiscale à condition toutefois de justifier d'un certificat de moralité fiscale de l'année en cours.",
+        "4) Les comptables, les experts comptables, les conseils fiscaux, agréés par la CEMAC, ont seuls qualité pour assister les contribuables auprès de l'administration fiscale à condition toutefois de justifier d'un certificat de moralité fiscale de l'année en cours.",
         "5) Le non-respect de la condition édictée à l'alinéa précédent entraîne d'une part la récusation par l'administration de la personne non habilitée, et d'autre part le rejet de la comptabilité de l'exercice en cause et sa taxation d'office."
       ],
       "mots_cles": [
         "avis de vérification",
         "délai de cinq jours",
+        "vérification de comptabilité",
+        "vérification approfondie",
+        "revenu global",
+        "vérification inopinée",
         "nullité de la procédure",
         "assistance par conseil",
-        "experts",
+        "experts comptables",
+        "conseils fiscaux",
         "CEMAC",
         "certificat de moralité fiscale",
+        "récusation",
         "taxation d'office"
       ],
       "statut": "en vigueur"
@@ -353,8 +368,12 @@
       ],
       "mots_cles": [
         "redressements",
+        "vérification de comptabilité",
         "notification",
         "acceptation",
+        "conséquences",
+        "droits et taxes",
+        "débiteurs",
         "délai de 30 jours"
       ],
       "statut": "en vigueur"
@@ -363,24 +382,30 @@
       "article": "Art. 390 bis G",
       "titre": "Interdiction de la double vérification",
       "texte": [
-        "(L.F.2025) Lorsque la vérification de la comptabilité pour une période déterminée au regard d'un impôt ou d'une taxe, ou d'un groupe d'impôts ou de taxes est achevée, l'administration fiscale ne peut procéder à une nouvelle vérification de ces écritures au regard des mêmes impôts ou taxes pour la même période.",
+        "(L.F.2025) Lorsque la vérification de la comptabilité pour une période déterminée au regard d'un impôt ou d'une taxe, ou d'un groupe d'impôts ou de taxes est achevée, l'Administration fiscale ne peut procéder à une nouvelle vérification de ces écritures au regard des mêmes impôts ou taxes pour la même période.",
         "Toutefois, il est fait exception à cette règle :",
         "• lorsque la vérification a été limitée à des opérations déterminées ;",
         "• en cas de constatation d'une double comptabilité ;",
         "• lorsqu'il y a des dissimulations entraînant pour le Trésor Public un manque à gagner au moins égal à 20 % des droits normalement dus ;",
-        "• lorsque le contrôle a été effectué en dehors du programme autorisé par le Directeur ;",
-        "• en cas de constatation du transfert indirect de bénéfice d'une société à une autre appartenant à un même groupe ;",
+        "• lorsque le contrôle a été effectué en dehors du programme autorisé par le Directeur Général des Impôts et de Domaines ;",
+        "• en cas de constatation de transfert indirect de bénéfice d'une société à une autre appartenant à un même groupe ;",
         "• lorsque des infractions à la législation fiscale sont relevées à l'administration fiscale par un autre organisme ;",
-        "• lorsque l'administration fiscale a obtenu de l'administration fiscale d'un autre État, d'un organisme national ou international, des données probantes dans le cadre d'un échange de renseignements à sa demande."
+        "• lorsque l'administration fiscale a obtenu de l'administration fiscale d'un autre État, d'un organisme national ou international, des données probantes dans le cadre d'un échange de renseignement à sa demande."
       ],
       "mots_cles": [
         "unicité de la vérification",
+        "double vérification",
         "exceptions",
+        "opérations déterminées",
         "double comptabilité",
         "dissimulation",
+        "Trésor Public",
         "20 %",
+        "Directeur Général des Impôts et de Domaines",
         "transfert indirect de bénéfice",
-        "échange de renseignements"
+        "groupe de sociétés",
+        "infractions fiscales",
+        "échange de renseignement"
       ],
       "statut": "en vigueur"
     },
@@ -391,8 +416,12 @@
         "Si le contrôle fiscal qui est destiné à déterminer équitablement la situation du contribuable ne peut avoir lieu du fait du contribuable ou de tiers, il est procédé à l'évaluation d'office des bases d'imposition."
       ],
       "mots_cles": [
+        "contrôle fiscal",
         "évaluation d'office",
-        "empêchement du contrôle"
+        "bases d'imposition",
+        "empêchement du contrôle",
+        "contribuable",
+        "tiers"
       ],
       "statut": "en vigueur"
     },
@@ -407,11 +436,18 @@
         "À défaut de versement dans le délai prévu, il sera procédé, selon les règles propres à chaque catégorie d'impôts, au recouvrement des droits simples ainsi que les pénalités."
       ],
       "mots_cles": [
-        "régularisation",
+        "régularisation spontanée",
+        "vérification de comptabilité",
+        "chiffre d'affaires",
+        "régime du forfait",
+        "notification de redressement",
         "intérêt de retard",
         "1 %",
         "bonne foi",
-        "régime du forfait"
+        "déclarations complémentaires",
+        "droits simples",
+        "pénalités",
+        "recouvrement"
       ],
       "statut": "en vigueur"
     },
@@ -424,7 +460,14 @@
       ],
       "mots_cles": [
         "comptabilité informatisée",
+        "systèmes informatisés",
         "contrôle informatique",
+        "traitements informatiques",
+        "résultats comptables",
+        "résultats fiscaux",
+        "déclarations obligatoires",
+        "CGI",
+        "programmation",
         "supports électroniques"
       ],
       "statut": "en vigueur"
