@@ -391,6 +391,7 @@
       ],
       "mots_cles": [
         "lieu d'imposition",
+        "propriété foncière bâtie",
         "commune",
         "région",
         "district"
@@ -408,8 +409,11 @@
       "mots_cles": [
         "débiteur de l'impôt",
         "propriétaire",
+        "1er janvier",
         "usufruit",
+        "usufruitier",
         "bail emphytéotique",
+        "emphytéote",
         "article 608 Code civil"
       ],
       "statut": "en vigueur",
@@ -425,9 +429,17 @@
       ],
       "mots_cles": [
         "calcul de l'impôt",
+        "contribution foncière",
         "taux",
         "revenu net imposable",
         "délibération",
+        "Conseils Populaires",
+        "Communes",
+        "Régions",
+        "Districts",
+        "Ministre des finances",
+        "Assemblée Nationale Populaire",
+        "session budgétaire",
         "taux maximum 20%",
         "seuil 1000 FCFA"
       ],
@@ -441,6 +453,7 @@
         "Il est établi une contribution annuelle sur les propriétés non bâties de toute nature."
       ],
       "mots_cles": [
+        "contribution annuelle",
         "contribution foncière",
         "propriétés non bâties"
       ],
@@ -456,7 +469,9 @@
       "mots_cles": [
         "propriétés urbaines",
         "propriétés rurales",
-        "périmètre urbain"
+        "terrains",
+        "périmètre urbain",
+        "centres urbains"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Contribution foncière des propriétés non bâties"
@@ -469,7 +484,7 @@
         "1) Les rues, les places publiques, les routes et les rivières.",
         "2) Les propriétés de l'État, des Collectivités décentralisées.",
         "3) Abrogé.",
-        "4) Les sols des bâtiments de toute nature et une fraction des terrains entourant les constructions. Cette fraction est déterminée comme suit :",
+        "4) Les sols des bâtiments de toute nature et une fraction des terrains entourant les constructions. Cette fraction exonérée est déterminée comme suit :",
         "a) dans les Communes :",
         "- à l'intérieur du périmètre du quartier commercial ou industriel tel qu'il est fixé par le plan d'urbanisme, la fraction exonérée est égale à trois fois la surface développée des constructions ;",
         "- à l'extérieur du périmètre visé à l'alinéa précédent, la fraction exonérée est égale à cinq fois la surface développée des constructions ;",
@@ -480,11 +495,25 @@
       ],
       "mots_cles": [
         "exemptions permanentes",
+        "contribution foncière",
         "propriétés non bâties",
+        "rues",
+        "places publiques",
+        "routes",
+        "rivières",
+        "État",
+        "Collectivités décentralisées",
         "terrains",
-        "urbanisme",
+        "fraction exonérée",
+        "quartier commercial",
+        "quartier industriel",
+        "plan d'urbanisme",
         "surface développée",
         "groupements autorisés",
+        "scolaires",
+        "sportifs",
+        "humanitaires",
+        "sociaux",
         "cultures maraîchères",
         "5 hectares",
         "25 km"
@@ -506,14 +535,23 @@
       ],
       "mots_cles": [
         "exemptions temporaires",
+        "exonération temporaire",
+        "impôt foncier",
         "terrains ruraux",
+        "centres urbains",
         "élevage gros bétail",
         "défrichement",
+        "ensemencement",
         "6 ans",
-        "10 ans hévéas palmiers",
-        "8 ans arbres fruitiers",
-        "7 ans caféiers cacaoyers",
-        "3 ans autres cultures"
+        "hévéas",
+        "palmiers à huile",
+        "10 ans",
+        "arbres fruitiers",
+        "8 ans",
+        "caféiers",
+        "cacaoyers",
+        "7 ans",
+        "3 ans"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Contribution foncière des propriétés non bâties : III. Exemptions temporaires"
@@ -546,13 +584,20 @@
       "titre": "Terrains non déclarés et retrait d'exonération",
       "texte": [
         "Les terrains ruraux nouvellement utilisés pour l'élevage de gros bétail, plantés ou ensemencés, non déclarés, ou déclarés après expiration du délai fixé par l'article précédent, sont soumis à l'impôt à compter du 1er janvier de l'année qui suit celle de leur utilisation pour l'élevage, de leur plantation ou de leur ensemencement.",
-        "L'exonération accordée peut être retirée sur proposition du chef du service de l'élevage ou du chef du service de l'agriculture chaque fois que l'élevage, la culture ou la plantation n'est pas conforme aux indications de la déclaration ou n'a pas été entrepris d'une façon rationnelle."
+        "L'exonération accordée peut être retirée sur proposition du chef du service de l'élevage ou du chef du service de l'agriculture, chacun pour ce qui le concerne lorsque l'élevage, la culture ou la plantation n'est pas conforme aux indications de la déclaration ou n'a pas été entrepris d'une façon rationnelle."
       ],
       "mots_cles": [
         "terrains ruraux",
+        "élevage gros bétail",
+        "plantés",
+        "ensemencés",
+        "non déclarés",
         "déclaration tardive",
         "impôt foncier",
+        "1er janvier",
         "retrait d'exonération",
+        "service de l'élevage",
+        "service de l'agriculture",
         "non-conformité"
       ],
       "statut": "en vigueur",
@@ -579,6 +624,7 @@
       ],
       "mots_cles": [
         "base d'imposition",
+        "contribution foncière",
         "propriétés non bâties",
         "valeur imposable",
         "valeur cadastrale",
@@ -591,7 +637,7 @@
       "article": "Art. 270 bis",
       "titre": "Valeur cadastrale servant de base",
       "texte": [
-        "La valeur cadastrale servant de base à la contribution foncière des propriétés non bâties, est déterminée en fonction des paramètres visés à l'article 258. La valeur cadastrale est égale au prix du mètre carré multiplié par la surface du terrain.",
+        "La valeur cadastrale, destinée à servir de base à la contribution foncière des propriétés non bâties, est déterminée en fonction des paramètres visés à l'article 258. La valeur cadastrale est égale au prix du mètre carré multiplié par la surface du terrain.",
         "Le prix du mètre carré est fixé comme suit :",
         "- zone n°1 (centre-ville des communes de plein exercice) : 125 FCFA ;",
         "- zone n°2 (les arrondissements des communes de plein exercice et les chefs-lieux de départements) : 75 FCFA ;",
@@ -600,15 +646,24 @@
       ],
       "mots_cles": [
         "valeur cadastrale",
+        "contribution foncière",
         "propriétés non bâties",
-        "prix m²",
-        "zone 1",
-        "zone 2",
-        "zone 3",
-        "zone 4",
+        "article 258",
+        "prix du mètre carré",
+        "surface du terrain",
+        "zone n°1",
+        "centre-ville",
+        "communes de pleine exercice",
         "125 FCFA",
+        "zone n°2",
+        "arrondissements",
+        "chefs-lieux de départements",
         "75 FCFA",
+        "zone n°3",
+        "chefs-lieux de districts",
         "12,5 FCFA",
+        "zone n°4",
+        "autres localités",
         "6,25 FCFA"
       ],
       "statut": "en vigueur",
@@ -645,14 +700,15 @@
         "Pour l'établissement de la contribution foncière des propriétés rurales non bâties, la valeur imposable est fixée forfaitairement par hectare, suivant la nature des cultures, conformément au tarif ci-après :",
         "- 1° terrains cultivés en café, palmiers à huile, caoutchouc : 2.000 FCFA/ha ;",
         "- 2° autres cultures : 1.000 FCFA/ha ;",
-        "- 3° terrains de la deuxième catégorie auxquels sont jointes des usines de transformation du produit de récolte : 600 FCFA/ha ;",
-        "- 4° terrains non mis en valeur : 500 FCFA/ha ;",
+        "- 3° terrains de la deuxième catégorie auxquels sont jointes des usines de transformation du produit cultivé : 600 FCFA/ha ;",
+        "- 4° terrains non mis en valeur : 600 FCFA/ha ;",
         "- 5° terrains utilisés pour l'élevage du gros bétail : 600 FCFA/ha ;",
         "- 6° terrains à vocation forestière : 2.000 FCFA/ha.",
-        "La valeur imposable à retenir est celle que comporte la propriété d'après les différentes natures d'occupation au 1er janvier de l'année d'imposition."
+        "La valeur imposable à retenir est celle que comporte la propriété d'après les différentes natures de cultures au 1er janvier de l'année d'imposition."
       ],
       "mots_cles": [
-        "propriétés rurales",
+        "contribution foncière",
+        "propriétés rurales non bâties",
         "valeur imposable",
         "tarif hectare",
         "café",
@@ -661,9 +717,10 @@
         "2000 FCFA/ha",
         "1000 FCFA/ha",
         "600 FCFA/ha",
-        "500 FCFA/ha",
-        "élevage",
-        "forêt"
+        "terrains non mis en valeur",
+        "élevage gros bétail",
+        "vocation forestière",
+        "natures de cultures"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Contribution foncière des propriétés non bâties : IV. Base d'imposition"
@@ -706,15 +763,20 @@
       "article": "Art. 275",
       "titre": "Calcul de l'impôt",
       "texte": [
-        "Pour le calcul de la contribution foncière des propriétés non bâties, il est fait application au revenu net imposable du taux fixé par délibération des Conseils Populaires des Communes, Régions ou Districts après avis du Ministère des finances, dans la limite du maximum déterminé annuellement par l'Assemblée Nationale Populaire lors de la session budgétaire.",
+        "Pour le calcul de la contribution foncière des propriétés non bâties, il est fait application au revenu net imposable du taux fixé par délibération des Conseils Populaires des Communes, Régions ou Districts après avis du Ministre des finances, dans la limite du maximum déterminé annuellement par l'Assemblée Nationale Populaire lors de la session budgétaire.",
         "Toute cote n'excédant pas 1.000 FCFA est négligée.",
         "[NB - Le taux maxima de la contribution foncière des propriétés non bâties a été fixé à 40 % par la loi n°44-62 du 29 décembre 1962 modifiée par la L.F.R.1994]."
       ],
       "mots_cles": [
         "calcul de l'impôt",
+        "contribution foncière",
         "propriétés non bâties",
+        "revenu net imposable",
         "taux",
         "délibération",
+        "Conseils Populaires",
+        "Ministre des finances",
+        "Assemblée Nationale Populaire",
         "taux maximum 40%",
         "seuil 1000 FCFA"
       ],
@@ -725,7 +787,7 @@
       "article": "Art. 276",
       "titre": "Dispositions communes aux sections 2 et 3 du présent chapitre",
       "texte": [
-        "Pour la détermination des valeurs locatives des propriétés bâties ou non bâties, les propriétaires et principaux locataires et en leurs lieu et place, les gérants d'immeubles, sont tenus de fournir chaque année, avant le 1er octobre, par déclaration à l'Inspection divisionnaire des contributions directes et indirectes, une déclaration indiquant au jour de sa production :",
+        "Pour la détermination des valeurs locatives des propriétés bâties ou non bâties, les propriétaires et principaux locataires et en leurs lieu et place, les gérants d'immeubles, sont tenus de fournir chaque année, avant le 1er octobre, par écrit, à l'inspection divisionnaire des contributions directes et indirectes, une déclaration indiquant au jour de sa production :",
         "1° les noms et prénoms usuels de chaque locataire, la consistance des locaux loués, le montant du loyer principal, et, s'il y a lieu, le montant des charges ;",
         "2° les noms et prénoms usuels de chaque occupant à titre gratuit et la consistance des locaux occupés ;",
         "3° la consistance des locaux vacants.",
@@ -733,10 +795,18 @@
       ],
       "mots_cles": [
         "valeur locative",
-        "déclaration annuelle",
+        "propriétés bâties",
+        "propriétés non bâties",
+        "propriétaires",
         "locataires",
         "gérants d'immeubles",
-        "délai 1er octobre",
+        "déclaration annuelle",
+        "1er octobre",
+        "inspection divisionnaire",
+        "contributions directes et indirectes",
+        "loyer principal",
+        "charges",
+        "locaux vacants",
         "sanctions article 381"
       ],
       "statut": "en vigueur",
