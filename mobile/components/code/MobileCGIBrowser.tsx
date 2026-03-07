@@ -4,7 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
-import { searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
+import { searchArticles, type SommaireNode, type ArticleData, type SearchResult } from "@/lib/data/cgi";
+import { normalize } from "@/lib/data/helpers";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import ChapterReader from "./ChapterReader";
 import ArticleText from "./ArticleText";
@@ -367,16 +368,77 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
   );
 }
 
+// ── Texte avec surbrillance ──
+function HighlightText({
+  text,
+  words,
+  style,
+  highlightColor,
+  numberOfLines,
+}: {
+  text: string;
+  words: string[];
+  style: any;
+  highlightColor: string;
+  numberOfLines?: number;
+}) {
+  if (!words.length || !text) {
+    return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+  }
+  const nw = words.map(normalize).filter((w) => w.length > 1);
+  if (!nw.length) return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+
+  const escaped = nw.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const regex = new RegExp(`(${escaped.join("|")})`, "gi");
+  const nt = normalize(text);
+  const parts: { t: string; h: boolean }[] = [];
+  let li = 0;
+  let m: RegExpExecArray | null;
+  while ((m = regex.exec(nt)) !== null) {
+    if (m.index > li) parts.push({ t: text.slice(li, m.index), h: false });
+    parts.push({ t: text.slice(m.index, m.index + m[0].length), h: true });
+    li = m.index + m[0].length;
+  }
+  if (li < text.length) parts.push({ t: text.slice(li), h: false });
+  if (!parts.length) return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+
+  return (
+    <Text style={style} numberOfLines={numberOfLines}>
+      {parts.map((p, i) =>
+        p.h ? <Text key={i} style={{ backgroundColor: highlightColor, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>{p.t}</Text> : <Text key={i}>{p.t}</Text>
+      )}
+    </Text>
+  );
+}
+
+// ── Badge de pertinence ──
+function ScoreBadge({ score, colors }: { score: number; colors: any }) {
+  const label = score >= 100 ? "Exact" : score >= 40 ? "Pertinent" : "Partiel";
+  const bg = score >= 100 ? `${colors.success}20` : score >= 40 ? `${colors.primary}15` : `${colors.textMuted}15`;
+  const fg = score >= 100 ? colors.success : score >= 40 ? colors.primary : colors.textMuted;
+  return (
+    <View style={{ backgroundColor: bg, borderRadius: 6, paddingHorizontal: 5, paddingVertical: 1 }}>
+      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: fg }}>{label}</Text>
+    </View>
+  );
+}
+
 // ── Résultats de recherche ──
-function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSelect: (art: ArticleData) => void }) {
+function SearchResultsView({ results, onSelect }: { results: SearchResult[]; onSelect: (art: ArticleData) => void }) {
   const { colors } = useTheme();
+  const highlightColor = `${colors.primary}25`;
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
-      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.textSecondary, marginBottom: 12 }}>
-        {results.length} résultat{results.length > 1 ? "s" : ""}
-      </Text>
-      {results.slice(0, 50).map((art, i) => (
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.textSecondary }}>
+          {results.length} résultat{results.length > 1 ? "s" : ""}
+        </Text>
+        {results.length > 0 && (
+          <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted }}>Triés par pertinence</Text>
+        )}
+      </View>
+      {results.slice(0, 50).map(({ art, score, matchedWords }, i) => (
         <Card key={`${art.article}-${i}`} onPress={() => onSelect(art)}>
           <View style={{ flexDirection: "row", gap: 12 }}>
             <View
@@ -384,7 +446,7 @@ function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSe
                 width: 36,
                 height: 36,
                 borderRadius: 8,
-                backgroundColor: `${colors.primary}15`,
+                backgroundColor: score >= 100 ? `${colors.primary}20` : `${colors.primary}10`,
                 alignItems: "center",
                 justifyContent: "center",
                 marginTop: 2,
@@ -393,20 +455,43 @@ function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSe
               <Ionicons name="document-text-outline" size={18} color={colors.primary} />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary, marginBottom: 2 }}>
-                {art.article}
-              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                <HighlightText
+                  text={art.article}
+                  words={matchedWords}
+                  highlightColor={highlightColor}
+                  style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary }}
+                />
+                <ScoreBadge score={score} colors={colors} />
+              </View>
               {art.titre ? (
-                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginBottom: 4 }}>
-                  {art.titre}
-                </Text>
+                <HighlightText
+                  text={art.titre}
+                  words={matchedWords}
+                  highlightColor={highlightColor}
+                  numberOfLines={2}
+                  style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginBottom: 4 }}
+                />
               ) : null}
-              <Text
-                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textSecondary, lineHeight: 18 }}
+              <HighlightText
+                text={art.texte.join(" ")}
+                words={matchedWords}
+                highlightColor={highlightColor}
                 numberOfLines={2}
-              >
-                {art.texte.join(" ")}
-              </Text>
+                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textSecondary, lineHeight: 18 }}
+              />
+              {art.mots_cles.length > 0 && (
+                <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
+                  {art.mots_cles
+                    .filter((mc) => matchedWords.some((w) => normalize(mc).includes(normalize(w))))
+                    .slice(0, 3)
+                    .map((mc, j) => (
+                      <View key={j} style={{ backgroundColor: `${colors.primary}10`, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1 }}>
+                        <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.primary }}>{mc}</Text>
+                      </View>
+                    ))}
+                </View>
+              )}
             </View>
           </View>
         </Card>

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import {
   View,
   Text,
@@ -11,9 +11,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { router, type Href } from "expo-router";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
-import { searchArticles, type ArticleData } from "@/lib/data/cgi";
+import { searchArticles, type SearchResult } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { normalize } from "@/lib/data/helpers";
 
 type Props = {
   visible: boolean;
@@ -27,6 +28,104 @@ const QUICK_LINKS: { icon: keyof typeof Ionicons.glyphMap; labelKey: string; rou
   { icon: "calendar-outline", labelKey: "sidebar.calendrier", route: "/(app)/calendrier" },
 ];
 
+function HighlightedText({
+  text,
+  words,
+  style,
+  highlightColor,
+  numberOfLines,
+}: {
+  text: string;
+  words: string[];
+  style: any;
+  highlightColor: string;
+  numberOfLines?: number;
+}) {
+  if (!words.length || !text) {
+    return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+  }
+
+  const normalizedWords = words.map(normalize).filter((w) => w.length > 1);
+  if (!normalizedWords.length) {
+    return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+  }
+
+  // Construire une regex avec tous les mots
+  const escaped = normalizedWords.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const regex = new RegExp(`(${escaped.join("|")})`, "gi");
+  const normalizedText = normalize(text);
+
+  // Trouver les positions des matchs dans le texte normalisé
+  const parts: { text: string; highlight: boolean }[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(normalizedText)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push({ text: text.slice(lastIndex, match.index), highlight: false });
+    }
+    parts.push({ text: text.slice(match.index, match.index + match[0].length), highlight: true });
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push({ text: text.slice(lastIndex), highlight: false });
+  }
+
+  if (parts.length === 0) {
+    return <Text style={style} numberOfLines={numberOfLines}>{text}</Text>;
+  }
+
+  return (
+    <Text style={style} numberOfLines={numberOfLines}>
+      {parts.map((part, i) =>
+        part.highlight ? (
+          <Text
+            key={i}
+            style={{
+              backgroundColor: highlightColor,
+              borderRadius: 2,
+              fontFamily: fonts.bold,
+              fontWeight: fontWeights.bold,
+            }}
+          >
+            {part.text}
+          </Text>
+        ) : (
+          <Text key={i}>{part.text}</Text>
+        )
+      )}
+    </Text>
+  );
+}
+
+function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
+  let label: string;
+  let bg: string;
+  let fg: string;
+
+  if (score >= 100) {
+    label = "Exact";
+    bg = `${colors.success}20`;
+    fg = colors.success;
+  } else if (score >= 40) {
+    label = "Pertinent";
+    bg = `${colors.primary}15`;
+    fg = colors.primary;
+  } else {
+    label = "Partiel";
+    bg = `${colors.textMuted}15`;
+    fg = colors.textMuted;
+  }
+
+  return (
+    <View style={{ backgroundColor: bg, borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
+      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: fg }}>
+        {label}
+      </Text>
+    </View>
+  );
+}
+
 export default function SearchOverlay({ visible, onClose }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
@@ -34,7 +133,12 @@ export default function SearchOverlay({ visible, onClose }: Props) {
   const debouncedQuery = useDebounce(query, 300);
   const inputRef = useRef<TextInput>(null);
 
-  const results = debouncedQuery.length >= 2 ? searchArticles(debouncedQuery).slice(0, 20) : [];
+  const results: SearchResult[] = useMemo(() => {
+    if (debouncedQuery.length < 2) return [];
+    return searchArticles(debouncedQuery).slice(0, 30);
+  }, [debouncedQuery]);
+
+  const highlightColor = `${colors.primary}25`;
 
   useEffect(() => {
     if (visible) {
@@ -44,7 +148,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
     }
   }, [visible]);
 
-  const handleSelectArticle = (art: ArticleData) => {
+  const handleSelectArticle = (art: SearchResult["art"]) => {
     onClose();
     router.push("/(app)/code" as Href);
   };
@@ -113,25 +217,31 @@ export default function SearchOverlay({ visible, onClose }: Props) {
           {/* Résultats de recherche */}
           {debouncedQuery.length >= 2 ? (
             <>
-              <Text
-                style={{
-                  fontFamily: fonts.semiBold,
-                  fontWeight: fontWeights.semiBold,
-                  fontSize: 15,
-                  color: colors.textSecondary,
-                  marginBottom: 12,
-                }}
-              >
-                {results.length} {t("code.article")}(s)
-              </Text>
-              {results.map((art, i) => (
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                <Text
+                  style={{
+                    fontFamily: fonts.semiBold,
+                    fontWeight: fontWeights.semiBold,
+                    fontSize: 15,
+                    color: colors.textSecondary,
+                  }}
+                >
+                  {results.length} {t("code.article")}(s)
+                </Text>
+                {results.length > 0 && (
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted }}>
+                    Triés par pertinence
+                  </Text>
+                )}
+              </View>
+              {results.map(({ art, score, matchedWords }, i) => (
                 <TouchableOpacity
                   key={`${art.article}-${i}`}
                   onPress={() => handleSelectArticle(art)}
                   style={{
                     backgroundColor: colors.card,
                     borderWidth: 1,
-                    borderColor: colors.border,
+                    borderColor: score >= 100 ? `${colors.primary}40` : colors.border,
                     borderRadius: 12,
                     padding: 14,
                     marginBottom: 8,
@@ -144,7 +254,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                       width: 36,
                       height: 36,
                       borderRadius: 8,
-                      backgroundColor: `${colors.primary}15`,
+                      backgroundColor: score >= 100 ? `${colors.primary}20` : `${colors.primary}10`,
                       alignItems: "center",
                       justifyContent: "center",
                     }}
@@ -152,20 +262,54 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                     <Ionicons name="document-text-outline" size={18} color={colors.primary} />
                   </View>
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary }}>
-                      {art.article}
-                    </Text>
+                    <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 2 }}>
+                      <HighlightedText
+                        text={art.article}
+                        words={matchedWords}
+                        highlightColor={highlightColor}
+                        style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary }}
+                      />
+                      <RelevanceBadge score={score} colors={colors} />
+                    </View>
                     {art.titre && (
-                      <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginTop: 2 }} numberOfLines={1}>
-                        {art.titre}
-                      </Text>
+                      <HighlightedText
+                        text={art.titre}
+                        words={matchedWords}
+                        highlightColor={highlightColor}
+                        numberOfLines={2}
+                        style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginTop: 2 }}
+                      />
                     )}
-                    <Text
-                      style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted, marginTop: 2 }}
+                    <HighlightedText
+                      text={art.texte.join(" ")}
+                      words={matchedWords}
+                      highlightColor={highlightColor}
                       numberOfLines={2}
-                    >
-                      {art.texte.join(" ")}
-                    </Text>
+                      style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted, marginTop: 4 }}
+                    />
+                    {/* Mots-clés matchés */}
+                    {art.mots_cles.length > 0 && (
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
+                        {art.mots_cles
+                          .filter((mc) => matchedWords.some((w) => normalize(mc).includes(normalize(w))))
+                          .slice(0, 4)
+                          .map((mc, j) => (
+                            <View
+                              key={j}
+                              style={{
+                                backgroundColor: `${colors.primary}10`,
+                                borderRadius: 4,
+                                paddingHorizontal: 6,
+                                paddingVertical: 1,
+                              }}
+                            >
+                              <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.primary }}>
+                                {mc}
+                              </Text>
+                            </View>
+                          ))}
+                      </View>
+                    )}
                   </View>
                 </TouchableOpacity>
               ))}
@@ -174,6 +318,9 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                   <Ionicons name="search-outline" size={40} color={colors.textMuted} />
                   <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginTop: 12 }}>
                     {t("common.noResults")}
+                  </Text>
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textMuted, marginTop: 6, textAlign: "center" }}>
+                    Essayez avec des termes différents ou un numéro d'article
                   </Text>
                 </View>
               )}

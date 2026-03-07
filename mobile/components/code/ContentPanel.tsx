@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import type { SommaireNode, ArticleData } from "@/lib/data/cgi";
+import type { SommaireNode, ArticleData, SearchResult } from "@/lib/data/cgi";
 import ArticleDetail from "./ArticleDetail";
 import SearchResults from "./SearchResults";
 
@@ -13,7 +13,7 @@ type Props = {
   onSelectArticle: (article: ArticleData | null) => void;
   onSelectChild: (child: SommaireNode, parentId: string) => void;
   searchQuery: string;
-  searchResults: ArticleData[];
+  searchResults: SearchResult[];
 };
 
 export default function ContentPanel({

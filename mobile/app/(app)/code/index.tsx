@@ -3,7 +3,7 @@ import { useState, useMemo, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { getSommaire, searchArticles, type SommaireNode, type ArticleData } from "@/lib/data/cgi";
+import { getSommaire, searchArticles, type SommaireNode, type ArticleData, type SearchResult } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import TreeNode from "@/components/code/TreeNode";
