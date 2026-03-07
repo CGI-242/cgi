@@ -16,23 +16,73 @@ export interface JourCalendrier {
   echeances: EcheanceFiscale[];
 }
 
-// Les 11 echeances fiscales 2026 du CGI Congo-Brazzaville
+// Calendrier fiscal complet CGI Congo 2026
 export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
-  // IS trimestriel (Art. 86C)
+  // ===== OBLIGATIONS MENSUELLES (récurrentes) =====
+  // TVA mensuelle (Art. 461 bis) — le 15 du mois suivant
+  { jour: 15, moisIndex: -1, label: "TVA mensuelle", icon: "receipt-outline", recurrent: true, descriptionKey: "calendrier.desc.tva" },
+  // Centimes additionnels TVA (Art. 38-A TFNC6) — avec la TVA
+  { jour: 15, moisIndex: -1, label: "Centimes additionnels TVA (5%)", icon: "receipt-outline", recurrent: true, descriptionKey: "calendrier.desc.centimesTva" },
+  // ITS mensuel (Art. 116) — le 15 du mois suivant
+  { jour: 15, moisIndex: -1, label: "ITS mensuel", icon: "people-outline", recurrent: true, descriptionKey: "calendrier.desc.its" },
+  // CNSS mensuel — le 15 du mois suivant
+  { jour: 15, moisIndex: -1, label: "CNSS mensuel", icon: "shield-outline", recurrent: true, descriptionKey: "calendrier.desc.cnss" },
+  // Retenue à la source (Art. 86-D, Art. 183) — le 15 du mois suivant
+  { jour: 15, moisIndex: -1, label: "Retenue à la source", icon: "arrow-down-outline", recurrent: true, descriptionKey: "calendrier.desc.retenue" },
+  // IRCM mensuel (Art. 103-110A) — le 15 du mois suivant
+  { jour: 15, moisIndex: -1, label: "IRCM mensuel", icon: "trending-up-outline", recurrent: true, descriptionKey: "calendrier.desc.ircm" },
+
+  // ===== JANVIER =====
+  // Taxe régionale sur les résidents (Art. 250 bis) — en janvier
+  { jour: 31, moisIndex: 0, label: "Taxe régionale (résidents)", icon: "flag-outline", recurrent: false, descriptionKey: "calendrier.desc.taxeRegionale" },
+
+  // ===== MARS =====
+  // IS — Minimum perception T1 (Art. 86-C)
   { jour: 15, moisIndex: 2, label: "Minimum perception IS (T1)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT1" },
-  { jour: 15, moisIndex: 5, label: "Minimum perception IS (T2)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT2" },
-  { jour: 15, moisIndex: 8, label: "Minimum perception IS (T3)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT3" },
-  { jour: 15, moisIndex: 11, label: "Minimum perception IS (T4)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT4" },
-  // TVA mensuelle (Art. 461 bis)
-  { jour: 15, moisIndex: -1, label: "TVA (mensuel)", icon: "receipt-outline", recurrent: true, descriptionKey: "calendrier.desc.tva" },
-  // ITS mensuel
-  { jour: 15, moisIndex: -1, label: "ITS (mensuel)", icon: "people-outline", recurrent: true, descriptionKey: "calendrier.desc.its" },
-  // Patente (Art. 306)
+  // Solde de liquidation IS (Art. 86-A) — 15 mars
+  { jour: 15, moisIndex: 2, label: "Solde de liquidation IS", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.soldeIS" },
+  // IBA annuel — déclaration (Art. 93-102)
+  { jour: 15, moisIndex: 2, label: "Déclaration IBA annuel", icon: "person-outline", recurrent: false, descriptionKey: "calendrier.desc.iba" },
+  // IGF — 1er versement trimestriel (Art. 3bis TFNC4)
+  { jour: 20, moisIndex: 2, label: "IGF (1er versement)", icon: "wallet-outline", recurrent: false, descriptionKey: "calendrier.desc.igf1" },
+
+  // ===== AVRIL =====
+  // Patente annuelle (Art. 314) — du 10 au 20 avril
   { jour: 15, moisIndex: 3, label: "Patente annuelle", icon: "storefront-outline", recurrent: false, descriptionKey: "calendrier.desc.patente" },
-  // IRF (3 echeances)
-  { jour: 15, moisIndex: 4, label: "IRF (1re echeance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf1" },
-  { jour: 20, moisIndex: 7, label: "IRF (2e echeance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf2" },
-  { jour: 15, moisIndex: 10, label: "IRF (3e echeance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf3" },
+  // Centimes additionnels patente (Art. 369 bis) — avec la patente
+  { jour: 15, moisIndex: 3, label: "Centimes additionnels patente (5%)", icon: "storefront-outline", recurrent: false, descriptionKey: "calendrier.desc.centimesPatente" },
+  // Contribution foncière (Art. 257 bis, 270) — avril
+  { jour: 30, moisIndex: 3, label: "Contribution foncière (CFPB/CFPNB)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.cfpb" },
+
+  // ===== MAI =====
+  // IRF Loyers — 1re échéance (Art. 113A)
+  { jour: 15, moisIndex: 4, label: "IRF Loyers (1re échéance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf1" },
+
+  // ===== JUIN =====
+  // IS — Minimum perception T2 (Art. 86-C)
+  { jour: 15, moisIndex: 5, label: "Minimum perception IS (T2)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT2" },
+  // IGF — 2e versement trimestriel (Art. 3bis TFNC4)
+  { jour: 20, moisIndex: 5, label: "IGF (2e versement)", icon: "wallet-outline", recurrent: false, descriptionKey: "calendrier.desc.igf2" },
+
+  // ===== AOÛT =====
+  // IRF Loyers — 2e échéance (Art. 113A)
+  { jour: 20, moisIndex: 7, label: "IRF Loyers (2e échéance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf2" },
+
+  // ===== SEPTEMBRE =====
+  // IS — Minimum perception T3 (Art. 86-C)
+  { jour: 15, moisIndex: 8, label: "Minimum perception IS (T3)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT3" },
+  // IGF — 3e versement trimestriel (Art. 3bis TFNC4)
+  { jour: 20, moisIndex: 8, label: "IGF (3e versement)", icon: "wallet-outline", recurrent: false, descriptionKey: "calendrier.desc.igf3" },
+
+  // ===== NOVEMBRE =====
+  // IRF Loyers — 3e échéance (Art. 113A)
+  { jour: 15, moisIndex: 10, label: "IRF Loyers (3e échéance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf3" },
+
+  // ===== DÉCEMBRE =====
+  // IS — Minimum perception T4 (Art. 86-C)
+  { jour: 15, moisIndex: 11, label: "Minimum perception IS (T4)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT4" },
+  // IGF — 4e versement trimestriel (Art. 3bis TFNC4)
+  { jour: 20, moisIndex: 11, label: "IGF (4e versement)", icon: "wallet-outline", recurrent: false, descriptionKey: "calendrier.desc.igf4" },
 ];
 
 /**
@@ -41,7 +91,7 @@ export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
 export function getEcheancesDuMois(mois: number): EcheanceFiscale[] {
   return ECHEANCES_FISCALES.filter(
     (e) => e.moisIndex === mois || (e.recurrent && e.moisIndex === -1)
-  );
+  ).sort((a, b) => a.jour - b.jour);
 }
 
 /**
@@ -126,4 +176,16 @@ export function getJoursRestants(jour: number, mois: number): number {
   }
   const diff = target.getTime() - now.getTime();
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
+}
+
+/**
+ * Nom du mois en français.
+ */
+const NOMS_MOIS = [
+  "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+  "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre",
+];
+
+export function getNomMois(mois: number): string {
+  return NOMS_MOIS[mois] || "";
 }

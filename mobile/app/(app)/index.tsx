@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import HomeCards from "@/components/mobile/HomeCards";
+import { getEcheancesDuMois, getNomMois, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
 
 function getGreeting(t: (key: string) => string) {
   const h = new Date().getHours();
@@ -22,33 +23,6 @@ const STATS = [
   { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#9333ea" },
 ];
 
-const MOIS: Record<string, number> = {
-  jan: 0, "fev": 1, "fév": 1, mars: 2, avr: 3, mai: 4, juin: 5,
-  juil: 6, "aout": 7, "août": 7, sept: 8, oct: 9, nov: 10, "dec": 11, "déc": 11,
-};
-
-function trierEcheances(echeances: { date: string; label: string; icon: keyof typeof Ionicons.glyphMap }[]) {
-  const now = new Date();
-  const mois = now.getMonth();
-  const jour = now.getDate();
-
-  function joursAvant(dateStr: string): number {
-    if (dateStr === "15/mois") {
-      return jour <= 15 ? 15 - jour : 30 - jour + 15;
-    }
-    const m = dateStr.match(/(\d+)\s+(\w+)/);
-    if (!m) return 999;
-    const d = parseInt(m[1]);
-    const mo = MOIS[m[2].replace(".", "")];
-    if (mo === undefined) return 999;
-    if (mo > mois || (mo === mois && d >= jour)) {
-      return (mo - mois) * 30 + (d - jour);
-    }
-    return (mo + 12 - mois) * 30 + (d - jour);
-  }
-
-  return [...echeances].sort((a, b) => joursAvant(a.date) - joursAvant(b.date));
-}
 
 export default function Dashboard() {
   const { t } = useTranslation();
@@ -56,20 +30,15 @@ export default function Dashboard() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
 
-  // HIGH-14 : tous les hooks AVANT le return conditionnel
-  const ECHEANCES = useMemo(() => [
-    { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },
-    { date: "15 juin", label: t("dashboard.deadlines.minPerceptionT2"), icon: "business-outline" as const },
-    { date: "15 sept.", label: t("dashboard.deadlines.minPerceptionT3"), icon: "business-outline" as const },
-    { date: "15 déc.", label: t("dashboard.deadlines.minPerceptionT4"), icon: "business-outline" as const },
-    { date: "15/mois", label: t("dashboard.deadlines.tva"), icon: "receipt-outline" as const },
-    { date: "15/mois", label: t("dashboard.deadlines.its"), icon: "people-outline" as const },
-    { date: "15 avr.", label: t("dashboard.deadlines.patente"), icon: "storefront-outline" as const },
-    { date: "15 mars", label: t("dashboard.deadlines.irpp"), icon: "person-outline" as const },
-    { date: "15 mai", label: t("dashboard.deadlines.irf1"), icon: "home-outline" as const },
-    { date: "20 août", label: t("dashboard.deadlines.irf2"), icon: "home-outline" as const },
-    { date: "15 nov.", label: t("dashboard.deadlines.irf3"), icon: "home-outline" as const },
-  ], [t]);
+  // Échéances du mois en cours — dynamique
+  const now = new Date();
+  const moisActuel = now.getMonth();
+  const jourActuel = now.getDate();
+  const nomMois = getNomMois(moisActuel);
+
+  const echeancesMoisCourant = useMemo(() => {
+    return getEcheancesDuMois(moisActuel);
+  }, [moisActuel]);
 
   const QUICK_ACTIONS = useMemo(() => [
     {
@@ -95,7 +64,6 @@ export default function Dashboard() {
     },
   ], [t]);
 
-  const echeancesTriees = useMemo(() => trierEcheances(ECHEANCES), [ECHEANCES]);
 
   // Sur mobile : affichage HomeCards (disposition proposée)
   if (isMobile) {
@@ -218,34 +186,53 @@ export default function Dashboard() {
           </View>
         </View>
 
-        {/* Echeances fiscales */}
+        {/* Échéances fiscales du mois */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
-          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
-            <Ionicons name="calendar-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
-            <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <Ionicons name="calendar-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
+              <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
+            </View>
+            <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3, borderRadius: 12 }}>
+              <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary }}>{nomMois} 2026</Text>
+            </View>
           </View>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 10 }}>
-            {echeancesTriees.map((e) => (
-              <View
-                key={`${e.date}-${e.label}`}
-                style={{
-                  backgroundColor: colors.card,
-                  
-                  borderWidth: 1,
-                  borderColor: colors.border,
-                  paddingHorizontal: 14,
-                  paddingVertical: 10,
-                  minWidth: 140,
-                }}
-              >
-                <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
-                  <Ionicons name={e.icon} size={13} color={colors.primary} style={{ marginRight: 5 }} />
-                  <Text style={{ fontSize: 16, fontWeight: "700", color: colors.primary }}>{e.date}</Text>
+          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" }}>
+            {echeancesMoisCourant.map((e: EcheanceFiscale, i: number) => {
+              const estPasse = e.jour < jourActuel;
+              const estAujourdhui = e.jour === jourActuel;
+              return (
+                <View
+                  key={`${e.jour}-${e.label}`}
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingHorizontal: 12,
+                    paddingVertical: 10,
+                    borderBottomWidth: i < echeancesMoisCourant.length - 1 ? 1 : 0,
+                    borderBottomColor: colors.border,
+                    backgroundColor: estAujourdhui ? `${colors.primary}10` : "transparent",
+                    opacity: estPasse ? 0.5 : 1,
+                  }}
+                >
+                  <View style={{
+                    width: 36, height: 36, borderRadius: 18,
+                    backgroundColor: estAujourdhui ? colors.primary : estPasse ? colors.disabled : `${colors.primary}15`,
+                    alignItems: "center", justifyContent: "center", marginRight: 10,
+                  }}>
+                    <Text style={{ fontSize: 14, fontWeight: "800", color: estAujourdhui ? "#fff" : estPasse ? colors.textMuted : colors.primary }}>{e.jour}</Text>
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 14, fontWeight: "600", color: estPasse ? colors.textMuted : colors.text }}>{e.label}</Text>
+                  </View>
+                  <Ionicons name={e.icon as keyof typeof Ionicons.glyphMap} size={16} color={estPasse ? colors.disabled : colors.primary} />
                 </View>
-                <Text style={{ fontSize: 15, color: colors.text }}>{e.label}</Text>
-              </View>
-            ))}
-          </ScrollView>
+              );
+            })}
+          </View>
+          <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 6 }}>
+            {echeancesMoisCourant.length} {t("dashboard.obligationsThisMonth")}
+          </Text>
         </View>
 
         {/* Footer */}
