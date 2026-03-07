@@ -99,7 +99,7 @@ export default function CGUPublicScreen() {
             CGI 242 propose les services suivants :
           </Text>
           <BulletItem colors={colors}>Consultation intégrale des Codes Généraux des Impôts des pays d'Afrique</BulletItem>
-          <BulletItem colors={colors}>14 simulateurs fiscaux : ITS, IS, TVA, Patente, Taxe foncière, Taxe immobilière, Droits d'enregistrement, Solde de liquidation, IRF, IRPP, Retenue à la source, Contribution spéciale de solidarité, Taxe sur les transferts de fonds, Centimes additionnels</BulletItem>
+          <BulletItem colors={colors}>14 simulateurs fiscaux : ITS, IS, TVA, Patente, Taxe foncière, Taxe immobilière, Droits d'enregistrement, Solde de liquidation, IRF, IBA, Retenue à la source, Contribution spéciale de solidarité, Taxe sur les transferts de fonds, Centimes additionnels</BulletItem>
           <BulletItem colors={colors}>Assistant IA pour les questions fiscales</BulletItem>
           <BulletItem colors={colors}>Recherche vocale intégrée</BulletItem>
           <BulletItem colors={colors}>Mode hors-ligne pour la consultation sans connexion</BulletItem>

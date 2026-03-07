@@ -1,6 +1,6 @@
 /**
  * Service commun pour les calculs fiscaux
- * Centralise les methodes et constantes partagees entre IRPP, ITS et IS
+ * Centralise les methodes et constantes partagees entre IBA, ITS et IS
  * CGI Congo-Brazzaville 2026
  */
 
