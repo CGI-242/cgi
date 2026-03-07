@@ -5239,10 +5239,19 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
+      "contribution foncière",
+      "propriétés bâties",
       "terrains non cultivés",
       "usage commercial",
       "usage industriel",
+      "chantier",
+      "dépôts de marchandises",
+      "titre gratuit",
+      "titre onéreux",
       "outillage industriel",
+      "perpétuelle demeure",
+      "fondations spéciales",
+      "installations commerciales",
       "sociétés pétrolières"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
