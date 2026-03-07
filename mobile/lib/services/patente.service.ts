@@ -31,6 +31,8 @@ export interface PatenteResult {
   // Réduction 50% uniquement pour les sociétés pétrolières (Art. 314)
   isPetroliere: boolean;
   reductionPetroliere: number;
+  // Exonération entreprise nouvelle (Art. 278 al. 4)
+  isEntrepriseNouvelle: boolean;
   patenteNette: number;
   // Centimes additionnels (Art. 369 bis)
   centimesAdditionnels: number;
@@ -95,8 +97,34 @@ function arrondir(montant: number): number {
 export function calculerPatente(input: PatenteInput): PatenteResult | null {
   const ca = Math.max(0, input.chiffreAffaires || 0);
 
-  if (ca <= 0 && !input.isStandBy) {
+  if (ca <= 0 && !input.isStandBy && !input.isEntrepriseNouvelle) {
     return null;
+  }
+
+  // Exonération entreprise nouvelle (Art. 278 al. 4) — 3 premières années
+  if (input.isEntrepriseNouvelle) {
+    return {
+      chiffreAffaires: ca,
+      regime: getRegimeLabel(input.regime),
+      tranches: [],
+      patenteBrute: 0,
+      reductionStandBy: 0,
+      patenteApresReduction: 0,
+      isPetroliere: input.isPetroliere,
+      reductionPetroliere: 0,
+      isEntrepriseNouvelle: true,
+      patenteNette: 0,
+      centimesAdditionnels: 0,
+      partChambresCommerce: 0,
+      partCollectivitesLocales: 0,
+      totalAPayer: 0,
+      totalParEntite: 0,
+      nombreEntites: 1,
+      dateEcheance: "-",
+      references: [
+        "Art. 278 al. 4 : Exonération entreprise nouvelle (3 ans)",
+      ],
+    };
   }
 
   // Cas stand-by (Art. 278 al. 6)
@@ -121,6 +149,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
       patenteApresReduction: patenteApresStandBy,
       isPetroliere: input.isPetroliere,
       reductionPetroliere,
+      isEntrepriseNouvelle: false,
       patenteNette,
       centimesAdditionnels: centimes,
       partChambresCommerce: arrondir(centimes * PART_CHAMBRES_COMMERCE),
@@ -195,6 +224,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     patenteApresReduction: patenteBrute,
     isPetroliere: input.isPetroliere,
     reductionPetroliere,
+    isEntrepriseNouvelle: false,
     patenteNette,
     centimesAdditionnels: centimes,
     partChambresCommerce: partCC,

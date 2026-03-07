@@ -94,7 +94,10 @@ export default function PatenteScreen() {
           </View>
 
           <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
-            <Text style={[styles.switchText, { color: colors.text }]}>{t("simulateur.patente.newCompany")}</Text>
+            <View style={styles.flex1}>
+              <Text style={[styles.switchLabel, { color: colors.text }]}>{t("simulateur.patente.newCompany")}</Text>
+              <Text style={[styles.switchDesc, { color: colors.textSecondary }]}>{t("simulateur.patente.newCompanyDesc")}</Text>
+            </View>
             <Switch value={isNouvelle} onValueChange={setIsNouvelle} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isNouvelle ? colors.primary : colors.textMuted} />
           </View>
           <View style={[styles.switchRowMb12, { backgroundColor: colors.card }]}>
@@ -114,7 +117,24 @@ export default function PatenteScreen() {
         </ScrollView>
 
         <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result && result.totalAPayer > 0 ? (
+          {result && result.isEntrepriseNouvelle ? (
+            <View>
+              <View style={[styles.totalBox, { backgroundColor: colors.success || "#2E7D32" }]}>
+                <View style={styles.spaceBetweenRow}>
+                  <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.exemptionTitle")}</Text>
+                  <Text style={[styles.totalValue, { color: "#fff" }]}>0 FCFA</Text>
+                </View>
+              </View>
+              <View style={{ paddingHorizontal: 14, paddingVertical: 12 }}>
+                <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.exemptionDesc")}</Text>
+              </View>
+              <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+                {result.references.map((ref) => (
+                  <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
+                ))}
+              </View>
+            </View>
+          ) : result && result.totalAPayer > 0 ? (
             <View>
               {result.tranches.length > 0 && (
                 <>
