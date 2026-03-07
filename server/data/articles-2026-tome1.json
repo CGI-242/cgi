@@ -5275,7 +5275,7 @@
   {
     "numero": "253",
     "titre": "Exemptions permanentes",
-    "contenu": "Sont exonérées des contributions foncières des propriétés bâties :\n1° les immeubles appartenant à l'État, aux collectivités décentralisées, aux organismes internationaux ;\n2° abrogé ;\n3° les installations qui, dans les ports aériens et maritimes et sur les voies de navigation intérieure, font l'objet de concessions d'outillage public accordées par l'administration aux Chambres de Commerce ou aux collectivités décentralisées et sont exploitées dans des conditions fixées par les cahiers des charges ;\n4° les ouvrages établis pour la distribution de l'eau potable ou de l'énergie électrique, appartenant aux sociétés nationales de distribution d'eau et d'énergie ;\n5° abrogé ;\n6° les édifices affectés à des buts scolaires, sportifs, humanitaires ou sociaux ;\n7° les bâtiments servant aux exploitations rurales, telles que granges, hangars, écuries, greniers, caves, celliers, pressoirs et autres, destinés soit à loger des bestiaux, soit à serrer des récoltes et, dans les mêmes conditions, les bâtiments affectés à un usage agricole par les unions ou coopératives agricoles et de coopératives de consommation constituées en conformité de l'article 1 de la loi du 26 août 1926 ;\n8° les abris contre les bombardements aériens établis en exécution des lois et règlements sur la défense passive, lorsque ces constructions n'ont pas reçu, par la suite, une destination autre que leur destination primitive ;\n9° les hôtels des ambassades étrangères sous réserve de réciprocité.",
+    "contenu": "Sont exonérées des contributions foncières des propriétés bâties :\n1° les immeubles appartenant à l'État, aux collectivités décentralisées, aux organismes internationaux ;\n2° abrogé ;\n3° les installations qui, dans les ports aériens et maritimes et sur les voies de navigation intérieure, font l'objet de concessions d'outillage public accordées par l'administration aux Chambres de Commerce ou aux collectivités décentralisées et sont exploitées dans des conditions fixées par les cahiers des charges ;\n4° les ouvrages établis pour la distribution de l'eau potable ou de l'énergie électrique, appartenant aux sociétés nationales de distribution d'eau et d'énergie ;\n5° abrogé ;\n6° les édifices affectés à des buts scolaires, sportifs, humanitaires ou sociaux ;\n7° les bâtiments servant aux exploitations rurales, telles que granges, hangars, écuries, greniers, caves, celliers, pressoirs et autres, destinés soit à loger des bestiaux, soit à serrer des récoltes et, dans les mêmes conditions, les bâtiments affectés à un usage agricole par les unions de coopératives agricoles et de coopératives de consommation constituées en conformité de l'article 1 de la loi du 26 août 1926 ;\n8° les abris contre les bombardements aériens établis en exécution des lois et règlements sur la défense passive, lorsque ces constructions n'ont pas reçu, par la suite, une destination autre que leur destination primitive ;\n9° les hôtels des ambassades étrangères sous réserve de réciprocité.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -5291,7 +5291,13 @@
       "édifices scolaires",
       "sportifs",
       "humanitaires",
+      "sociaux",
       "exploitations rurales",
+      "granges",
+      "hangars",
+      "écuries",
+      "caves",
+      "celliers",
       "coopératives agricoles",
       "abris bombardements",
       "défense passive",
