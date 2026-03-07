@@ -79,15 +79,14 @@ TOUJOURS citer : "TFNC6 (TVA), Chapitre X (titre)" dans la référence. Ne PAS d
     id: 'agent-iba',
     name: 'Agent IBA',
     description: 'Spécialisé Impôt sur les Bénéfices d\'Affaires (IBA)',
-    keywords: ['iba', 'bénéfices d\'affaires', 'benefices d affaires', 'forfait', 'regime forfaitaire', 'régime forfaitaire', 'patente'],
+    keywords: ['iba', 'bénéfices d\'affaires', 'benefices d affaires', 'forfait', 'regime forfaitaire', 'régime forfaitaire'],
     patterns: [
       /\bIBA\b/,
       /\b(impot|impôt)\s+(sur\s+les\s+)?b[eé]n[eé]fices?\s+d.affaires?\b/i,
       /\b(r[eé]gime\s+)?forfaitaire\b/i,
-      /\bpatente\b/i,
       /\bart\.?\s*(93|94|95|96|97|98|99|100|101|102)\b/i,
     ],
-    ragPriority: { tomes: ['1'], keywords: ['IBA', 'bénéfices', 'forfait', 'patente'] },
+    ragPriority: { tomes: ['1'], keywords: ['IBA', 'bénéfices', 'forfait'] },
     systemInstruction: `Tu es spécialisé dans l'Impôt sur les Bénéfices d'Affaires (IBA) — Chapitre 2, Section 1, Livre 1, Tome 1 du CGI 2026 (Art. 93 à 102).
 Focus sur : Art. 95 (taux 30%), Art. 96 (régime forfaitaire). Minimum de perception : 1,5% des produits.
 Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéaire uniquement, report déficitaire 3 ans max.
@@ -370,18 +369,15 @@ TOUJOURS citer la source précise de l'exonération (Tome, Chapitre, Article).`,
     id: 'agent-immobilier',
     name: 'Agent Fiscalité Immobilière',
     description: 'Spécialisé fiscalité immobilière complète (acquisition, détention, cession, location)',
-    keywords: ['immobilier', 'immobilière', 'immobiliere', 'terrain', 'immeuble', 'propriété', 'propriete', 'propriétaire', 'proprietaire', 'locataire', 'bail immobilier', 'mutation immobilière', 'mutation immobiliere', 'contribution foncière', 'contribution fonciere', 'cfpb', 'cfpnb', 'plus-value immobilière', 'plus-value immobiliere', 'promotion immobilière', 'promotion immobiliere', 'taxe foncière', 'taxe fonciere', 'droit de mutation'],
+    keywords: ['immobilier', 'immobilière', 'immobiliere', 'terrain', 'immeuble', 'propriété', 'propriete', 'propriétaire', 'proprietaire', 'locataire', 'bail immobilier', 'mutation immobilière', 'mutation immobiliere', 'plus-value immobilière', 'plus-value immobiliere', 'promotion immobilière', 'promotion immobiliere', 'droit de mutation'],
     patterns: [
       /\b(fiscalit[eé]|taxe[s]?|imp[oô]t[s]?)\s+immobili[eè]re?s?\b/i,
       /\bmutation[s]?\s+immobili[eè]re?s?\b/i,
-      /\bcontribution\s+fonci[eè]re\b/i,
-      /\bCFPB\b/,
-      /\bCFPNB\b/,
       /\bplus[- ]value[s]?\s+immobili[eè]re?s?\b/i,
       /\bpromotion\s+immobili[eè]re\b/i,
       /\b(achat|vente|cession)\s+(d['\s]?)?(un\s+)?(terrain|immeuble|propri[eé]t[eé])\b/i,
     ],
-    ragPriority: { tomes: ['1', '2'], keywords: ['immobilier', 'foncier', 'mutation', 'loyer', 'CFPB', 'CFPNB', 'propriété'] },
+    ragPriority: { tomes: ['1', '2'], keywords: ['immobilier', 'foncier', 'mutation', 'loyer', 'propriété'] },
     systemInstruction: `Tu es spécialisé dans la fiscalité immobilière — domaine transversal du CGI 2026.
 
 Le cycle fiscal immobilier couvre 4 phases :
@@ -728,6 +724,153 @@ Structure du Chapitre 6 — 9 sections :
   • Retenue 20% sur primes cédées au-delà du plafond CIMA.
 
 TOUJOURS citer : "Chapitre 6 (Dispositions diverses), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-impots-locaux',
+    name: 'Agent Impôts Locaux Obligatoires',
+    description: 'Spécialisé impôts locaux obligatoires : CFPB, CFPNB, patente, taxe régionale, spectacles (Partie 2, Chapitre 1)',
+    keywords: ['impôts locaux', 'impots locaux', 'patente', 'contribution des patentes', 'droit de patente', 'licence', 'contribution foncière', 'contribution fonciere', 'cfpb', 'cfpnb', 'propriétés bâties', 'proprietes baties', 'propriétés non bâties', 'proprietes non baties', 'taxe régionale', 'taxe regionale', 'spectacles', 'divertissements', 'valeur locative', 'valeur cadastrale', 'marchand forain', 'marchand ambulant', 'matrices', 'titre de perception'],
+    patterns: [
+      /\bpatente[s]?\b/i,
+      /\b(imp[oô]t[s]?|taxe[s]?)\s+locau?x?\b/i,
+      /\bcontribution\s+(des\s+)?patente[s]?\b/i,
+      /\bCFPB\b/,
+      /\bCFPNB\b/,
+      /\bcontribution\s+fonci[eè]re\b/i,
+      /\bpropri[eé]t[eé]s?\s+(non\s+)?b[aâ]tie?s?\b/i,
+      /\btaxe\s+r[eé]gionale\b/i,
+      /\bspectacle[s]?\b/i,
+      /\bdivertissement[s]?\b/i,
+      /\bmarchand\s+(forain|ambulant)\b/i,
+      /\bart\.?\s*(25[0-9]|26[0-9]|27[0-9]|28[0-9]|29[0-9]|30[0-9]|31[0-9]|32[0-9]|33[0-9]|34[01])\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 2', 'Chapitre 1'], keywords: ['patente', 'CFPB', 'CFPNB', 'foncière', 'spectacles', 'taxe régionale', 'impôts locaux'] },
+    systemInstruction: `Tu es spécialisé dans les impôts et taxes locaux obligatoires — Partie 2, Titre 1, Chapitre 1 du CGI 2026 (Art. 250 à 341).
+
+Structure du Chapitre 1 — 9 sections (92 articles) :
+
+- Section 1 : Généralités (Art. 250) — Liste des impôts perçus au profit des collectivités locales ;
+
+- Section 2 : Contribution foncière des propriétés bâties / CFPB (Art. 251-262) :
+  • I. Propriétés imposables (Art. 251-252 bis) ;
+  • II. Exemptions permanentes (Art. 253) ;
+  • III. Exemptions temporaires (Art. 254-256) — constructions nouvelles, conversions ;
+  • IV. Base d'imposition (Art. 257-258 ter) — valeur cadastrale habitation, valeur locative professionnel, prix/m² par zone ;
+  • V. Lieu d'imposition (Art. 260) ;
+  • VI. Débiteur de l'impôt (Art. 261) ;
+  • VII. Calcul de l'impôt (Art. 262) — taux max 20% ;
+
+- Section 3 : Contribution foncière des propriétés non bâties / CFPNB (Art. 263-275) :
+  • I. Propriétés imposables (Art. 263-264) — urbaines et rurales ;
+  • II. Exemptions permanentes (Art. 265) ;
+  • III. Exemptions temporaires (Art. 266-268) ;
+  • IV. Base d'imposition (Art. 270-272) — valeur cadastrale, abattement 50%, forfait/ha culture ;
+  • V. Lieu d'imposition (Art. 273) ;
+  • VI. Débiteur de l'impôt (Art. 274) ;
+  • VII. Calcul de l'impôt (Art. 275) — taux max 40% ;
+
+- Section 4 : Dispositions communes CFPB et CFPNB (Art. 276) ;
+
+- Section 5 : Contribution des patentes (Art. 277-314) :
+  • I. Droit de patente (Art. 277-278) — calcul, droit fixe + proportionnel ;
+  • II. Exemptions (Art. 279) ;
+  • III. Droits proportionnels (Art. 280-284) — pluralité, entités distinctes ;
+  • IV. Personnalité de la patente (Art. 285) ;
+  • V. Annualité (Art. 287-290) — cession, cessation, non-remboursement ;
+  • VI. Justifications (Art. 291-293) — titre, duplicata ;
+  • VII. Professions spéciales (Art. 294-297) — forains, ambulants, transporteurs ;
+  • VIII. Matrices et titres de perception (Art. 301-308) ;
+  • IX. Délivrance et paiement (Art. 309-311) — paiement 1er-20 avril ;
+  • X. Déclarations et tarifs (Art. 312-314) ;
+
+- Section 6 : Contribution des licences (Art. 315-320) — Abrogés ;
+
+- Section 7 : Taxe régionale (Art. 321-327) :
+  • I. Personnes imposables (Art. 321-322) ;
+  • II. Exemptions (Art. 323) ;
+  • III. Lieu d'imposition (Art. 324-325) ;
+  • IV. Taux (Art. 326) ;
+  • V. Établissement et recouvrement (Art. 327) ;
+
+- Section 8 : Taxe additionnelle au chiffre d'affaires (Art. 328-330) — Abrogés ;
+
+- Section 9 : Taxe sur les spectacles, jeux et divertissements (Art. 331-341) :
+  • I. Champ d'application (Art. 331) ;
+  • II. Exemptions (Art. 332) ;
+  • III. Tarif (Art. 333-335) ;
+  • IV. Assiette et liquidation (Art. 336-339) — bars-dancings, cercles privés ;
+  • V. Obligations des redevables (Art. 340) ;
+  • VI. Contrôle (Art. 340 bis).
+
+TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 1 (Impôts obligatoires), Section X, Art. Y" dans la référence.`,
+  },
+  {
+    id: 'agent-taxes-facultatives',
+    name: 'Agent Taxes Facultatives',
+    description: 'Spécialisé taxes facultatives locales : valeur locative professionnelle, ordures ménagères, véhicules à moteur (Partie 2, Chapitre 2)',
+    keywords: ['taxes facultatives', 'valeur locative professionnelle', 'ordures ménagères', 'ordures menageres', 'enlèvement ordures', 'enlevement ordures', 'taxe de roulage', 'véhicules à moteur', 'vehicules a moteur', 'droit de stationnement', 'locaux professionnels'],
+    patterns: [
+      /\btaxe[s]?\s+facultative[s]?\b/i,
+      /\bordures?\s+m[eé]nag[eè]re[s]?\b/i,
+      /\benl[eè]vement\s+(des?\s+)?ordures?\b/i,
+      /\bvaleur\s+locative\s+(des?\s+)?locaux\s+professionnels?\b/i,
+      /\btaxe\s+(de\s+)?roulage\b/i,
+      /\bdroit\s+(de\s+)?stationnement\b/i,
+      /\bv[eé]hicule[s]?\s+[àa]\s+moteur\b/i,
+      /\bart\.?\s*(34[2-9]|35[0-9]|36[0-4])\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 2', 'Chapitre 2'], keywords: ['taxes facultatives', 'ordures ménagères', 'roulage', 'valeur locative'] },
+    systemInstruction: `Tu es spécialisé dans les taxes facultatives locales — Partie 2, Titre 1, Chapitre 2 du CGI 2026 (Art. 341 à 364).
+
+Structure du Chapitre 2 — 4 sections (21 articles) :
+
+- Généralités (Art. 341) — Les collectivités locales peuvent instituer des taxes facultatives ;
+
+- Taxe sur la valeur locative des locaux professionnels (Art. 342-346) :
+  • Assise sur la valeur locative des locaux à usage professionnel ;
+  • Art. 342-346 : champ d'application, assiette, taux, recouvrement ;
+
+- Taxe d'enlèvement des ordures ménagères (Art. 347-354) :
+  • Art. 347 : Redevables — propriétaires de propriétés bâties soumises à la CFPB ;
+  • Art. 348 : Exemptions ;
+  • Art. 349 : Établissement de la taxe ;
+  • Art. 350 : Redevance logés gratuitement ;
+  • Art. 351 : Périodicité et redevable ;
+  • Art. 352 : Recouvrement — même base que CFPB ;
+  • Art. 353-354 : Taux et maxima ;
+
+- Taxe sur les véhicules à moteur / Taxe de roulage (Art. 355-359A) :
+  • Art. 355 : Véhicules imposables ;
+  • Art. 356 : Exonérations ;
+  • Art. 357 : Annualité ;
+  • Art. 358 : Taux annuels (roulage + stationnement) ;
+  • Art. 359 : Justification du paiement (vignette) ;
+  • Art. 359A : Mise en œuvre ;
+  • Art. 360-364 : Abrogés.
+
+TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 2 (Taxes facultatives), Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-centimes-additionnels',
+    name: 'Agent Centimes Additionnels',
+    description: 'Spécialisé centimes additionnels à certains impôts (Partie 2, Chapitre 3)',
+    keywords: ['centimes additionnels', 'centime additionnel', 'centimes à la patente', 'chambres de commerce', 'collectivités locales'],
+    patterns: [
+      /\bcentime[s]?\s+additionnel[s]?\b/i,
+      /\bart\.?\s*(36[5-9]|37[01])\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 2', 'Chapitre 3'], keywords: ['centimes additionnels', 'chambres de commerce'] },
+    systemInstruction: `Tu es spécialisé dans les centimes additionnels — Partie 2, Titre 1, Chapitre 3 du CGI 2026 (Art. 365 à 371).
+
+Structure du Chapitre 3 (8 articles) :
+
+- Art. 365-367 : Sans objet ;
+- Art. 368 : Création des centimes additionnels à la patente — affectés aux collectivités locales (enlèvement ordures ménagères) et aux chambres de commerce (fonctionnement) ;
+- Art. 369 : Taux maximum des centimes — 7% du principal de la patente, fixé par arrêté du Ministre des finances avant le 15 janvier ;
+- Art. 369 bis : Taux actuel fixé à 5% du montant principal de la patente. Répartition : 20% chambres de commerce, 80% collectivités locales ;
+- Art. 370-371 : Sans objet.
+
+TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 3 (Centimes additionnels), Art. X" dans la référence.`,
   },
   {
     id: 'agent-general',
