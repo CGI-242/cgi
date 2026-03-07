@@ -54,5 +54,47 @@ export function searchArticles(query: string): ArticleData[] {
   ensureLoaded();
   const q = normalize(query.trim());
   if (!q) return [];
-  return _allArticles!.filter((art) => art._searchText?.includes(q));
+
+  const words = q.split(/\s+/).filter((w) => w.length > 0);
+  if (words.length === 0) return [];
+
+  const scored: { art: ArticleData; score: number }[] = [];
+
+  for (const art of _allArticles!) {
+    // Tous les mots doivent être présents dans le texte de recherche
+    const st = art._searchText || "";
+    if (!words.every((w) => st.includes(w))) continue;
+
+    let score = 0;
+
+    // Numéro d'article exact (ex: "art. 61", "61") → score très élevé
+    const artNum = normalize(art.article);
+    if (artNum === q || artNum === "art. " + q) {
+      score += 100;
+    } else if (artNum.includes(q)) {
+      score += 50;
+    }
+
+    // Titre contient les mots
+    const titreN = normalize(art.titre);
+    const titreMatches = words.filter((w) => titreN.includes(w)).length;
+    score += titreMatches * 10;
+
+    // Mots-clés contiennent les mots
+    const mcN = art.mots_cles.map(normalize).join(" ");
+    const mcMatches = words.filter((w) => mcN.includes(w)).length;
+    score += mcMatches * 5;
+
+    // Bonus si le texte complet contient la requête exacte (pas juste les mots séparés)
+    if (words.length > 1 && st.includes(q)) {
+      score += 15;
+    }
+
+    scored.push({ art, score });
+  }
+
+  // Tri par score décroissant
+  scored.sort((a, b) => b.score - a.score);
+
+  return scored.map((s) => s.art);
 }
