@@ -24,7 +24,7 @@
         "Jusqu'à la décision de la juridiction pénale et à condition que le contribuable constitue des garanties dans les conditions prévues à l'article 441 ci-après, le recouvrement des impositions correspondant à la période qui excède le délai ordinaire est suspendu. Ces impositions sont caduques si la procédure judiciaire se termine par une ordonnance de non-lieu ou si les personnes poursuivies bénéficient d'une décision de relaxe.",
         "2) Toute erreur commise, soit sur la nature de l'impôt applicable, soit sur le lieu de l'imposition concernant l'un quelconque des impôts et taxes ci-dessus visés peut, sans préjudice du délai fixé à l'alinéa précédent, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a prononcé la décharge de l'imposition initiale.",
         "3) Toute omission ou insuffisance d'imposition révélée par une instance devant les tribunaux répressifs ou par une réclamation contentieuse peut, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a clos cette instance ou solutionné cette réclamation.",
-        "4) Lorsqu'à la suite de l'ouverture de la succession d'un contribuable ou de celle de son conjoint il est constaté que ce contribuable a été omis, insuffisamment imposé aux rôles de l'année du décès ou de l'une des trois années antérieures, l'IRPP et la taxe complémentaire non perçus au titre desdites années peuvent, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être mis en recouvrement jusqu'à la fin de la deuxième année suivant celle de la déclaration de succession, si aucune déclaration n'a été faite, celle du paiement par les héritiers des droits de mutation par décès.",
+        "4) Lorsqu'à la suite de l'ouverture de la succession d'un contribuable ou de celle de son conjoint il est constaté que ce contribuable a été omis, insuffisamment imposé aux rôles de l'année du décès ou de l'une des trois années antérieures, l'IRPP et la taxe complémentaire non perçus au titre desdites années peuvent, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être mis en recouvrement jusqu'à la fin de la deuxième année suivant celle de la déclaration de succession ou, si aucune déclaration n'a été faite, celle du paiement par les héritiers des droits de mutation par décès.",
         "Les impositions établies après le décès du contribuable en vertu du présent paragraphe, ainsi que toutes autres impositions dues par les héritiers du chef du défunt, constituent une dette déductible de l'actif successoral pour la perception des droits de mutation par décès.",
         "Elles ne sont pas admises en déduction du revenu des héritiers pour l'établissement des impôts dont ces derniers sont personnellement redevables.",
         "5) Les impositions établies en vertu du présent article portent, s'il y a lieu, les majorations de droits ou droits en sus prévus par les dispositions relatives à l'impôt qu'elles concernent."
@@ -46,7 +46,7 @@
         "droits de mutation par décès"
       ],
       "statut": "en vigueur",
-      "section": "IRPP, IS, TSS, TA, TVA, CA"
+      "section": "Section 1 - IRPP, IS, TSS, TA, TVA, CA"
     },
     {
       "article": "Art. 382 bis",
@@ -57,10 +57,12 @@
       "mots_cles": [
         "imprescriptibilité",
         "impôts des tiers",
-        "redevable légal"
+        "redevable légal",
+        "compensation",
+        "obligations fiscales"
       ],
       "statut": "en vigueur",
-      "section": "IRPP, IS, TSS, TA, TVA, CA"
+      "section": "Section 1 - IRPP, IS, TSS, TA, TVA, CA"
     },
     {
       "article": "Art. 382 ter",
@@ -71,14 +73,14 @@
       "mots_cles": [
         "recouvrement",
         "prescription",
-        "Trésor Public"
+        "Trésor Public",
+        "dixième année",
+        "créances fiscales",
+        "interruption de prescription",
+        "mise en recouvrement"
       ],
       "statut": "en vigueur",
-      "section": "IRPP, IS, TSS, TA, TVA, CA"
-    },
-    {
-      "section": 2,
-      "section_titre": "Autres impôts et taxes"
+      "section": "Section 1 - IRPP, IS, TSS, TA, TVA, CA"
     },
     {
       "article": "Art. 383",
@@ -92,10 +94,11 @@
         "autres impôts",
         "autres taxes",
         "délai de reprise",
-        "troisième année"
+        "troisième année",
+        "article 382"
       ],
       "statut": "en vigueur",
-      "section": "Autres impôts et taxes"
+      "section": "Section 2 - Autres impôts et taxes"
     }
   ]
 }

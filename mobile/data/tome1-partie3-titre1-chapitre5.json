@@ -18,9 +18,9 @@
       "titre": "Pouvoir de contrôle et vérification de comptabilité",
       "texte": [
         "Les agents des impôts ont le pouvoir d'assurer le contrôle et l'assiette de l'ensemble des impôts ou taxes qu'ils vérifient.",
-        "Toutefois, les vérifications sur place des comptabilités ne peuvent être effectuées que par un agent ayant au moins le grade d'inspecteur dont la compétence s'étend sur le territoire du Congo, à l'ensemble des impôts, droits et taxes dévolus à la seule administration fiscale.",
-        "Par application de l'alinéa précédent, quelles que soient les dispositions prises d'autre part, seuls les agents de la DGID ayant au moins le grade d'inspecteur peuvent effectuer lesdites vérifications et obtenir communication des justifications nécessaires à la fixation des opérations imposables.",
-        "La vérification générale des comptabilités des entités à des fins fiscales est de la compétence exclusive de l'administration fiscale.",
+        "Toutefois, les vérifications sur place des comptabilités ne peuvent être effectuées que par un agent ayant au moins le grade d'Inspecteur dont la compétence s'étend, sur le territoire du Congo, à l'ensemble des impôts, droits et taxes dévolus à la seule administration fiscale.",
+        "Par application de l'alinéa précédent, quelles que soient les dispositions prises d'autre part, seuls les agents de la DGID ayant au moins le grade d'Inspecteur peuvent effectuer lesdites vérifications et obtenir communication des justifications nécessaires à la fixation des opérations imposables.",
+        "La vérification générale de comptabilité des entités à des fins fiscales est de la compétence exclusive de l'administration fiscale.",
         "Elle est effectuée par un agent ayant au moins le grade d'inspecteur des impôts, au siège de l'entité ou au lieu de son principal établissement, qui sont les lieux de la tenue de la comptabilité et de conservation des pièces originales de la comptabilité.",
         "Dans l'hypothèse où le contrôle ne peut s'effectuer en ces deux lieux, le contribuable doit expressément demander qu'il se déroule dans les bureaux de son conseil ou tout autre lieu. L'inspecteur vérificateur se réserve le droit d'accepter ou de refuser, par écrit, ce changement de lieu.",
         "Les redressements fiscaux étant de la compétence de l'administration fiscale, tout autre organisme public de contrôle des comptes financiers et sociaux des entités, autre que l'administration fiscale, qui constaterait à l'occasion de ses missions de contrôle, des infractions à la législation fiscale, doit en informer d'office l'administration fiscale.",
@@ -31,11 +31,15 @@
       "mots_cles": [
         "vérification fiscale",
         "contrôle",
-        "inspecteur",
+        "Inspecteur",
         "DGID",
         "comptabilité",
         "redressements fiscaux",
-        "obligation d'information"
+        "obligation d'information",
+        "assiette",
+        "compétence exclusive",
+        "contrôle fiscal",
+        "infractions fiscales"
       ],
       "statut": "en vigueur"
     },

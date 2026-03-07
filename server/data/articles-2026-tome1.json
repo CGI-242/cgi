@@ -7410,8 +7410,11 @@
       "déclaration",
       "production tardive",
       "omission",
+      "inexactitude",
       "amende",
-      "25.000 FCFA"
+      "25.000 FCFA",
+      "article 276",
+      "sanctions fiscales"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7422,9 +7425,11 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "taxe véhicules",
+      "taxe véhicules à moteur",
       "majoration 100 %",
-      "article 359"
+      "article 359",
+      "justification de règlement",
+      "possesseurs de véhicules"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7436,10 +7441,13 @@
     "chapitre": "1",
     "keywords": [
       "pénalité",
-      "31 bis",
-      "31 ter",
+      "article 31 bis",
+      "article 31 ter",
       "100.000 FCFA",
-      "500.000 FCFA"
+      "500.000 FCFA",
+      "retard",
+      "amende annuelle",
+      "sanctions"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7452,7 +7460,10 @@
     "keywords": [
       "TCA",
       "douanes",
-      "biens importés"
+      "biens importés",
+      "réglementation douanière",
+      "infractions",
+      "importation"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7464,14 +7475,16 @@
     "chapitre": "1",
     "keywords": [
       "taxation d'office",
-      "articles 86 à 88"
+      "articles 86 à 88",
+      "impôts",
+      "droits et taxes"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "382",
     "titre": "Délai de réparation des omissions et erreurs",
-    "contenu": "1) Les omissions totales ou partielles constatées dans l'assiette des impôts visés au Livre 1, au Chapitre 1 du Livre 2, de la première partie, à la Section 8 du Chapitre 1 du Titre 1 et aux Titres 2 et 3 de la deuxième partie du présent Code, ainsi que les erreurs commises dans l'application des tarifs, peuvent être réparées jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle l'imposition est due.\nToutefois, en ce qui concerne l'exercice clos au 31 décembre 2016, ce délai est prorogé au 31 mai 2021.\nL'expiration du délai ci-dessus ne fait pas obstacle à l'exercice du droit de vérification par l'administration sur la période prescrite lorsque les résultats enregistrés ou les opérations comptabilisées au cours de cette période ont une incidence sur les exercices soumis à vérification. Les redressements effectués à l'issue de ces contrôles ne peuvent donner lieu à des recouvrements d'impôts.\nLorsque l'administration a déposé une plainte contre un contribuable qui s'est livré à des agissements frauduleux, elle peut procéder à des contrôles et à des rehaussements au titre des deux années excédant le délai ordinaire de prescription. Cette prorogation du délai est applicable aux auteurs des agissements, à leurs complices et le cas échéant aux personnes pour le compte desquelles la fraude a été commise.\nJusqu'à la décision de la juridiction pénale et à condition que le contribuable constitue des garanties dans les conditions prévues à l'article 441 ci-après, le recouvrement des impositions correspondant à la période qui excède le délai ordinaire est suspendu. Ces impositions sont caduques si la procédure judiciaire se termine par une ordonnance de non-lieu ou si les personnes poursuivies bénéficient d'une décision de relaxe.\n2) Toute erreur commise, soit sur la nature de l'impôt applicable, soit sur le lieu de l'imposition concernant l'un quelconque des impôts et taxes ci-dessus visés peut, sans préjudice du délai fixé à l'alinéa précédent, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a prononcé la décharge de l'imposition initiale.\n3) Toute omission ou insuffisance d'imposition révélée par une instance devant les tribunaux répressifs ou par une réclamation contentieuse peut, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a clos cette instance ou solutionné cette réclamation.\n4) Lorsqu'à la suite de l'ouverture de la succession d'un contribuable ou de celle de son conjoint il est constaté que ce contribuable a été omis, insuffisamment imposé aux rôles de l'année du décès ou de l'une des trois années antérieures, l'IRPP et la taxe complémentaire non perçus au titre desdites années peuvent, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être mis en recouvrement jusqu'à la fin de la deuxième année suivant celle de la déclaration de succession, si aucune déclaration n'a été faite, celle du paiement par les héritiers des droits de mutation par décès.\nLes impositions établies après le décès du contribuable en vertu du présent paragraphe, ainsi que toutes autres impositions dues par les héritiers du chef du défunt, constituent une dette déductible de l'actif successoral pour la perception des droits de mutation par décès.\nElles ne sont pas admises en déduction du revenu des héritiers pour l'établissement des impôts dont ces derniers sont personnellement redevables.\n5) Les impositions établies en vertu du présent article portent, s'il y a lieu, les majorations de droits ou droits en sus prévus par les dispositions relatives à l'impôt qu'elles concernent.",
+    "contenu": "1) Les omissions totales ou partielles constatées dans l'assiette des impôts visés au Livre 1, au Chapitre 1 du Livre 2, de la première partie, à la Section 8 du Chapitre 1 du Titre 1 et aux Titres 2 et 3 de la deuxième partie du présent Code, ainsi que les erreurs commises dans l'application des tarifs, peuvent être réparées jusqu'à l'expiration de la quatrième année suivant celle au titre de laquelle l'imposition est due.\nToutefois, en ce qui concerne l'exercice clos au 31 décembre 2016, ce délai est prorogé au 31 mai 2021.\nL'expiration du délai ci-dessus ne fait pas obstacle à l'exercice du droit de vérification par l'administration sur la période prescrite lorsque les résultats enregistrés ou les opérations comptabilisées au cours de cette période ont une incidence sur les exercices soumis à vérification. Les redressements effectués à l'issue de ces contrôles ne peuvent donner lieu à des recouvrements d'impôts.\nLorsque l'administration a déposé une plainte contre un contribuable qui s'est livré à des agissements frauduleux, elle peut procéder à des contrôles et à des rehaussements au titre des deux années excédant le délai ordinaire de prescription. Cette prorogation du délai est applicable aux auteurs des agissements, à leurs complices et le cas échéant aux personnes pour le compte desquelles la fraude a été commise.\nJusqu'à la décision de la juridiction pénale et à condition que le contribuable constitue des garanties dans les conditions prévues à l'article 441 ci-après, le recouvrement des impositions correspondant à la période qui excède le délai ordinaire est suspendu. Ces impositions sont caduques si la procédure judiciaire se termine par une ordonnance de non-lieu ou si les personnes poursuivies bénéficient d'une décision de relaxe.\n2) Toute erreur commise, soit sur la nature de l'impôt applicable, soit sur le lieu de l'imposition concernant l'un quelconque des impôts et taxes ci-dessus visés peut, sans préjudice du délai fixé à l'alinéa précédent, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a prononcé la décharge de l'imposition initiale.\n3) Toute omission ou insuffisance d'imposition révélée par une instance devant les tribunaux répressifs ou par une réclamation contentieuse peut, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être réparée jusqu'à l'expiration de l'année suivant celle de la décision qui a clos cette instance ou solutionné cette réclamation.\n4) Lorsqu'à la suite de l'ouverture de la succession d'un contribuable ou de celle de son conjoint il est constaté que ce contribuable a été omis, insuffisamment imposé aux rôles de l'année du décès ou de l'une des trois années antérieures, l'IRPP et la taxe complémentaire non perçus au titre desdites années peuvent, sans préjudice du délai général de répétition fixé au paragraphe 1 ci-dessus, être mis en recouvrement jusqu'à la fin de la deuxième année suivant celle de la déclaration de succession ou, si aucune déclaration n'a été faite, celle du paiement par les héritiers des droits de mutation par décès.\nLes impositions établies après le décès du contribuable en vertu du présent paragraphe, ainsi que toutes autres impositions dues par les héritiers du chef du défunt, constituent une dette déductible de l'actif successoral pour la perception des droits de mutation par décès.\nElles ne sont pas admises en déduction du revenu des héritiers pour l'établissement des impôts dont ces derniers sont personnellement redevables.\n5) Les impositions établies en vertu du présent article portent, s'il y a lieu, les majorations de droits ou droits en sus prévus par les dispositions relatives à l'impôt qu'elles concernent.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -7501,7 +7514,9 @@
     "keywords": [
       "imprescriptibilité",
       "impôts des tiers",
-      "redevable légal"
+      "redevable légal",
+      "compensation",
+      "obligations fiscales"
     ],
     "source": "tome1-partie3-titre1-chapitre2.json"
   },
@@ -7514,7 +7529,11 @@
     "keywords": [
       "recouvrement",
       "prescription",
-      "Trésor Public"
+      "Trésor Public",
+      "dixième année",
+      "créances fiscales",
+      "interruption de prescription",
+      "mise en recouvrement"
     ],
     "source": "tome1-partie3-titre1-chapitre2.json"
   },
@@ -7538,83 +7557,102 @@
       "autres impôts",
       "autres taxes",
       "délai de reprise",
-      "troisième année"
+      "troisième année",
+      "article 382"
     ],
     "source": "tome1-partie3-titre1-chapitre2.json"
   },
   {
     "numero": "384",
     "titre": "Prescription et établissement des impositions en cas de changement d'exercice",
-    "contenu": "Lorsqu'un contribuable a déplacé, soit le siège de la direction de son entreprise, soit le lieu de son principal établissement ou de l'exercice de sa profession, soit son domicile ou sa résidence principale, les cotisations dont il est redevable au titre des impôts et taxes organisés par le présent Code, tant pour l'exercice au cours duquel s'est produit le changement que les exercices antérieurs non atteints par la prescription, sont valablement établies au profit du ou des budgets qui auraient dû bénéficier des impositions à la diligence du contrôleur qui constate les omissions ou les insuffisances d'imposition.",
+    "contenu": "Lorsqu'un contribuable a déplacé, soit le siège de la direction de son entreprise, soit le lieu de son principal établissement ou de l'exercice de sa profession, soit son domicile ou sa résidence principale, les cotisations dont il est redevable au titre des impôts et taxes organisés par le présent Code, tant pour l'exercice au cours duquel s'est produit le changement que les exercices antérieurs non atteints par la prescription, sont valablement établies au profit du ou des budgets qui auraient dû bénéficier des impositions à la diligence du contrôleur qui constate les omissions ou les insuffisances d'impositions.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
       "changement de lieu",
       "imposition",
       "cotisations",
-      "prescription"
+      "prescription",
+      "siège social",
+      "établissement principal",
+      "domicile",
+      "résidence principale",
+      "contrôleur"
     ],
     "source": "tome1-partie3-titre1-chapitre3.json"
   },
   {
     "numero": "385",
     "titre": "Assiette des impôts et abus de conventions fiscales",
-    "contenu": "(L.F.2023) L'assiette des impôts, droits et taxes visés par le présent Code reste définie par les dispositions des conventions internationales signées et ratifiées par la République du Congo, ainsi qu'aux conventions, accords ou actes juridiques régulièrement signés par le gouvernement avec toute personne ou groupe de personnes tant physiques que morales.\nToutefois, les dispositions des conventions internationales, conventions d'établissement, accords ou actes juridiques octroyant des avantages fiscaux ne sont pas opposables à l'administration fiscale lorsqu'il en est fait un abus d'application par le bénéficiaire.\nEst considéré comme abus de convention, tout acte par lequel un bénéficiaire d'avantages fiscaux résultant des conventions, accords ou actes juridiques transfèrent le bénéfice des exonérations prévues par lesdites conventions ou accords à des tiers.",
+    "contenu": "(L.F.2023) L'assiette des impôts, droits et taxes visés par le présent Code reste définie par les dispositions des conventions internationales signées et ratifiées par la République du Congo, ainsi qu'aux conventions, accords ou actes juridiques régulièrement signés par le gouvernement avec toute personne ou groupe de personnes tant physiques que morales.\nToutefois, les dispositions des conventions internationales, conventions d'établissement, accords ou actes juridiques octroyant des avantages fiscaux ne sont pas opposables à l'administration fiscale lorsqu'il en est fait un abus d'application par le bénéficiaire.\nEst considéré comme abus de convention, tout acte par lequel un bénéficiaire d'avantages fiscaux résultant des conventions, accords ou actes juridiques transfère le bénéfice des exonérations prévues par lesdites conventions ou accords à des tiers.",
     "tome": "1",
     "chapitre": "4",
     "keywords": [
       "conventions fiscales",
+      "conventions internationales",
       "avantages fiscaux",
       "abus de convention",
       "exonérations",
-      "tiers"
+      "tiers",
+      "assiette des impôts",
+      "administration fiscale"
     ],
     "source": "tome1-partie3-titre1-chapitre4.json"
   },
   {
     "numero": "386",
     "titre": "Immunités fiscales des organismes internationaux",
-    "contenu": "Les organismes relevant de l'ONU et ayant conclu avec le gouvernement français des accords prévoyant des immunités fiscales tant pour les organismes eux-mêmes que pour les membres, bénéficient au Congo des mêmes avantages.\nCes avantages sont accordés également, dans les mêmes conditions, aux organismes dépendant de la Commission de Coopération Technique en Afrique au sud du Sahara et à leurs membres.",
+    "contenu": "Les organismes relevant de l'ONU et ayant conclu avec le gouvernement français des accords prévoyant des immunités fiscales tant pour les organismes eux-mêmes que pour les membres, bénéficient au Congo des mêmes avantages.\nCes avantages sont accordés également, dans les mêmes conditions, aux organismes dépendant de la Commission de Coopération Technique en Afrique au Sud du Sahara et à leurs membres.",
     "tome": "1",
     "chapitre": "4",
     "keywords": [
       "ONU",
       "immunités fiscales",
-      "organismes internationaux"
+      "organismes internationaux",
+      "gouvernement français",
+      "Commission de Coopération Technique",
+      "Afrique au Sud du Sahara"
     ],
     "source": "tome1-partie3-titre1-chapitre4.json"
   },
   {
     "numero": "386 bis",
     "titre": "Validité et renégociation des conventions fiscales",
-    "contenu": "À compter du 1er janvier 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant des avantages fiscaux qui dérogent à la charte des investissements, au Code Général des Impôts et aux textes fiscaux codifiés ou non codifiés en vigueur, signés entre le Gouvernement et toute personne ou groupe de personnes tant physiques que morales, doivent être présentés au ministère en charge des finances aux fins de renégociation.\nAu-delà du 30 avril 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant les avantages fiscaux qui n'auront pas été présentés au ministère en charge des finances sont annulés.\nLes avantages fiscaux compris dans les conventions d'établissement et leurs avenants subséquents et qui dérogent à la charte des investissements sont annulés à compter du 1er janvier 2019.\nSeuls restent applicables, les avantages fiscaux conformes à la charte des Investissements.\nLes avenants aux conventions relevant de la charte des Investissements sont interdits à compter du 1er janvier 2019.\nLes avantages fiscaux des avenants aux conventions relevant de la charte des investissements en cours de validité sont réduits ainsi qu'il suit :\n75 % lorsque la durée de validité restant à courir est supérieure ou égale à 7 ans ;\n50 % lorsque la durée de validité restant à courir est comprise entre 3 et 7 ans ;\n25 % lorsque la durée de validité restant à courir est inférieure à 3 ans.",
+    "contenu": "À compter du 1er janvier 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant des avantages fiscaux qui dérogent à la charte des Investissements, au Code Général des Impôts et aux textes fiscaux codifiés ou non codifiés en vigueur, signés entre le Gouvernement et toute personne ou groupe de personnes tant physiques que morales, doivent être présentés au ministère en charge des finances aux fins de renégociation.\nAu-delà du 30 avril 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant les avantages fiscaux qui n'auront pas été présentés au ministère en charge des finances sont annulés.\nLes avantages fiscaux compris dans les conventions d'établissement et leurs avenants subséquents et qui dérogent à la charte des Investissements sont annulés à compter du 1er janvier 2019.\nSeuls restent applicables, les avantages fiscaux conformes à la charte des Investissements.\nLes avenants aux conventions relevant de la charte des Investissements sont interdits à compter du 1er janvier 2019.\nLes avantages fiscaux des avenants aux conventions relevant de la charte des investissements en cours de validité sont réduits ainsi qu'il suit :\n75 % lorsque la durée de validité restant à courir est supérieure ou égale à 7 ans ;\n50 % lorsque la durée de validité restant à courir est comprise entre 3 et 7 ans ;\n25 % lorsque la durée de validité restant à courir est inférieure à 3 ans.",
     "tome": "1",
     "chapitre": "4",
     "keywords": [
       "avantages fiscaux",
-      "charte des investissements",
+      "charte des Investissements",
       "renégociation",
       "annulation",
       "conventions d'établissement",
       "réduction",
-      "durée de validité"
+      "durée de validité",
+      "avenants",
+      "ministère des finances",
+      "1er janvier 2019"
     ],
     "source": "tome1-partie3-titre1-chapitre4.json"
   },
   {
     "numero": "387",
     "titre": "Pouvoir de contrôle et vérification de comptabilité",
-    "contenu": "Les agents des impôts ont le pouvoir d'assurer le contrôle et l'assiette de l'ensemble des impôts ou taxes qu'ils vérifient.\nToutefois, les vérifications sur place des comptabilités ne peuvent être effectuées que par un agent ayant au moins le grade d'inspecteur dont la compétence s'étend sur le territoire du Congo, à l'ensemble des impôts, droits et taxes dévolus à la seule administration fiscale.\nPar application de l'alinéa précédent, quelles que soient les dispositions prises d'autre part, seuls les agents de la DGID ayant au moins le grade d'inspecteur peuvent effectuer lesdites vérifications et obtenir communication des justifications nécessaires à la fixation des opérations imposables.\nLa vérification générale des comptabilités des entités à des fins fiscales est de la compétence exclusive de l'administration fiscale.\nElle est effectuée par un agent ayant au moins le grade d'inspecteur des impôts, au siège de l'entité ou au lieu de son principal établissement, qui sont les lieux de la tenue de la comptabilité et de conservation des pièces originales de la comptabilité.\nDans l'hypothèse où le contrôle ne peut s'effectuer en ces deux lieux, le contribuable doit expressément demander qu'il se déroule dans les bureaux de son conseil ou tout autre lieu. L'inspecteur vérificateur se réserve le droit d'accepter ou de refuser, par écrit, ce changement de lieu.\nLes redressements fiscaux étant de la compétence de l'administration fiscale, tout autre organisme public de contrôle des comptes financiers et sociaux des entités, autre que l'administration fiscale, qui constaterait à l'occasion de ses missions de contrôle, des infractions à la législation fiscale, doit en informer d'office l'administration fiscale.\nCelle-ci engage immédiatement :\n• soit une opération de contrôle fiscal général dans les conditions fixées par le Code général des impôts ;\n• soit une opération de contrôle fiscal spécifique aux infractions constatées, nonobstant les dispositions relatives à la prescription prévues par les articles 382, 383 et 390 bis G du présent Code.",
+    "contenu": "Les agents des impôts ont le pouvoir d'assurer le contrôle et l'assiette de l'ensemble des impôts ou taxes qu'ils vérifient.\nToutefois, les vérifications sur place des comptabilités ne peuvent être effectuées que par un agent ayant au moins le grade d'Inspecteur dont la compétence s'étend, sur le territoire du Congo, à l'ensemble des impôts, droits et taxes dévolus à la seule administration fiscale.\nPar application de l'alinéa précédent, quelles que soient les dispositions prises d'autre part, seuls les agents de la DGID ayant au moins le grade d'Inspecteur peuvent effectuer lesdites vérifications et obtenir communication des justifications nécessaires à la fixation des opérations imposables.\nLa vérification générale de comptabilité des entités à des fins fiscales est de la compétence exclusive de l'administration fiscale.\nElle est effectuée par un agent ayant au moins le grade d'inspecteur des impôts, au siège de l'entité ou au lieu de son principal établissement, qui sont les lieux de la tenue de la comptabilité et de conservation des pièces originales de la comptabilité.\nDans l'hypothèse où le contrôle ne peut s'effectuer en ces deux lieux, le contribuable doit expressément demander qu'il se déroule dans les bureaux de son conseil ou tout autre lieu. L'inspecteur vérificateur se réserve le droit d'accepter ou de refuser, par écrit, ce changement de lieu.\nLes redressements fiscaux étant de la compétence de l'administration fiscale, tout autre organisme public de contrôle des comptes financiers et sociaux des entités, autre que l'administration fiscale, qui constaterait à l'occasion de ses missions de contrôle, des infractions à la législation fiscale, doit en informer d'office l'administration fiscale.\nCelle-ci engage immédiatement :\n• soit une opération de contrôle fiscal général dans les conditions fixées par le Code général des impôts ;\n• soit une opération de contrôle fiscal spécifique aux infractions constatées, nonobstant les dispositions relatives à la prescription prévues par les articles 382, 383 et 390 bis G du présent Code.",
     "tome": "1",
     "chapitre": "5",
     "keywords": [
       "vérification fiscale",
       "contrôle",
-      "inspecteur",
+      "Inspecteur",
       "DGID",
       "comptabilité",
       "redressements fiscaux",
-      "obligation d'information"
+      "obligation d'information",
+      "assiette",
+      "compétence exclusive",
+      "contrôle fiscal",
+      "infractions fiscales"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },

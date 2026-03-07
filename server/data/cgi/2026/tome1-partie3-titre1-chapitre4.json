@@ -19,14 +19,17 @@
       "texte": [
         "(L.F.2023) L'assiette des impôts, droits et taxes visés par le présent Code reste définie par les dispositions des conventions internationales signées et ratifiées par la République du Congo, ainsi qu'aux conventions, accords ou actes juridiques régulièrement signés par le gouvernement avec toute personne ou groupe de personnes tant physiques que morales.",
         "Toutefois, les dispositions des conventions internationales, conventions d'établissement, accords ou actes juridiques octroyant des avantages fiscaux ne sont pas opposables à l'administration fiscale lorsqu'il en est fait un abus d'application par le bénéficiaire.",
-        "Est considéré comme abus de convention, tout acte par lequel un bénéficiaire d'avantages fiscaux résultant des conventions, accords ou actes juridiques transfèrent le bénéfice des exonérations prévues par lesdites conventions ou accords à des tiers."
+        "Est considéré comme abus de convention, tout acte par lequel un bénéficiaire d'avantages fiscaux résultant des conventions, accords ou actes juridiques transfère le bénéfice des exonérations prévues par lesdites conventions ou accords à des tiers."
       ],
       "mots_cles": [
         "conventions fiscales",
+        "conventions internationales",
         "avantages fiscaux",
         "abus de convention",
         "exonérations",
-        "tiers"
+        "tiers",
+        "assiette des impôts",
+        "administration fiscale"
       ],
       "statut": "en vigueur"
     },
@@ -35,12 +38,15 @@
       "titre": "Immunités fiscales des organismes internationaux",
       "texte": [
         "Les organismes relevant de l'ONU et ayant conclu avec le gouvernement français des accords prévoyant des immunités fiscales tant pour les organismes eux-mêmes que pour les membres, bénéficient au Congo des mêmes avantages.",
-        "Ces avantages sont accordés également, dans les mêmes conditions, aux organismes dépendant de la Commission de Coopération Technique en Afrique au sud du Sahara et à leurs membres."
+        "Ces avantages sont accordés également, dans les mêmes conditions, aux organismes dépendant de la Commission de Coopération Technique en Afrique au Sud du Sahara et à leurs membres."
       ],
       "mots_cles": [
         "ONU",
         "immunités fiscales",
-        "organismes internationaux"
+        "organismes internationaux",
+        "gouvernement français",
+        "Commission de Coopération Technique",
+        "Afrique au Sud du Sahara"
       ],
       "statut": "en vigueur"
     },
@@ -48,9 +54,9 @@
       "article": "Art. 386 bis",
       "titre": "Validité et renégociation des conventions fiscales",
       "texte": [
-        "À compter du 1er janvier 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant des avantages fiscaux qui dérogent à la charte des investissements, au Code Général des Impôts et aux textes fiscaux codifiés ou non codifiés en vigueur, signés entre le Gouvernement et toute personne ou groupe de personnes tant physiques que morales, doivent être présentés au ministère en charge des finances aux fins de renégociation.",
+        "À compter du 1er janvier 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant des avantages fiscaux qui dérogent à la charte des Investissements, au Code Général des Impôts et aux textes fiscaux codifiés ou non codifiés en vigueur, signés entre le Gouvernement et toute personne ou groupe de personnes tant physiques que morales, doivent être présentés au ministère en charge des finances aux fins de renégociation.",
         "Au-delà du 30 avril 2019, les conventions, accords et tout autre acte juridique en cours de validité octroyant les avantages fiscaux qui n'auront pas été présentés au ministère en charge des finances sont annulés.",
-        "Les avantages fiscaux compris dans les conventions d'établissement et leurs avenants subséquents et qui dérogent à la charte des investissements sont annulés à compter du 1er janvier 2019.",
+        "Les avantages fiscaux compris dans les conventions d'établissement et leurs avenants subséquents et qui dérogent à la charte des Investissements sont annulés à compter du 1er janvier 2019.",
         "Seuls restent applicables, les avantages fiscaux conformes à la charte des Investissements.",
         "Les avenants aux conventions relevant de la charte des Investissements sont interdits à compter du 1er janvier 2019.",
         "Les avantages fiscaux des avenants aux conventions relevant de la charte des investissements en cours de validité sont réduits ainsi qu'il suit :",
@@ -60,12 +66,15 @@
       ],
       "mots_cles": [
         "avantages fiscaux",
-        "charte des investissements",
+        "charte des Investissements",
         "renégociation",
         "annulation",
         "conventions d'établissement",
         "réduction",
-        "durée de validité"
+        "durée de validité",
+        "avenants",
+        "ministère des finances",
+        "1er janvier 2019"
       ],
       "statut": "en vigueur"
     }

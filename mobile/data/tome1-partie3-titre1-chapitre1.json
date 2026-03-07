@@ -299,8 +299,11 @@
         "déclaration",
         "production tardive",
         "omission",
+        "inexactitude",
         "amende",
-        "25.000 FCFA"
+        "25.000 FCFA",
+        "article 276",
+        "sanctions fiscales"
       ],
       "statut": "en vigueur"
     },
@@ -311,9 +314,11 @@
         "En application des dispositions de l'article 359 ci-dessus, la taxe sera majorée de 100 % pour les possesseurs de véhicules qui ne seront pas en mesure de justifier du règlement de la taxe sur les véhicules à moteur."
       ],
       "mots_cles": [
-        "taxe véhicules",
+        "taxe véhicules à moteur",
         "majoration 100 %",
-        "article 359"
+        "article 359",
+        "justification de règlement",
+        "possesseurs de véhicules"
       ],
       "statut": "en vigueur"
     },
@@ -325,10 +330,13 @@
       ],
       "mots_cles": [
         "pénalité",
-        "31 bis",
-        "31 ter",
+        "article 31 bis",
+        "article 31 ter",
         "100.000 FCFA",
-        "500.000 FCFA"
+        "500.000 FCFA",
+        "retard",
+        "amende annuelle",
+        "sanctions"
       ],
       "statut": "en vigueur"
     },
@@ -341,7 +349,10 @@
       "mots_cles": [
         "TCA",
         "douanes",
-        "biens importés"
+        "biens importés",
+        "réglementation douanière",
+        "infractions",
+        "importation"
       ],
       "statut": "en vigueur"
     },
@@ -353,7 +364,9 @@
       ],
       "mots_cles": [
         "taxation d'office",
-        "articles 86 à 88"
+        "articles 86 à 88",
+        "impôts",
+        "droits et taxes"
       ],
       "statut": "en vigueur"
     }
