@@ -1438,8 +1438,8 @@
       "texte": [
         "Ceux qui entreprennent en cours d'année une activité sujette à la patente sont tenus d'en faire la déclaration au lieu de leur résidence fiscale dans les quinze jours suivant l'ouverture de leur activité.",
         "En vue de la liquidation de la patente, les sociétés soumises à l'IS forfaitaire sont tenues de faire une déclaration de chiffre d'affaires selon le modèle prescrit par l'administration au plus tard le 30 avril de l'année d'imposition.",
-        "Tout contribuable relevant du régime du forfait disposant d'un entrepôt de marchandises doit en faire la déclaration suivant le modèle prescrit par l'administration fiscale.",
-        "Le défaut de déclaration de l'entrepôt de marchandises est sanctionné par une amende de 500.000 FCFA par entrepôt découvert sans préjudice de toute procédure d'une revalorisation du chiffre d'affaires soumis à l'impôt global forfaitaire."
+        "Tout contribuable relevant du régime du forfait disposant d'un entrepôt de marchandises doit en faire la déclaration suivant un imprimé fourni par l'administration fiscale.",
+        "Le défaut de déclaration de l'entrepôt de marchandises est sanctionné par une amende de 500.000 FCFA par entrepôt découvert par l'administration sans préjudice d'une revalorisation du chiffre d'affaires soumis à l'impôt global forfaitaire."
       ],
       "mots_cles": [
         "déclaration",
@@ -1457,10 +1457,10 @@
       "article": "Art. 313",
       "titre": "Déclaration des salaires pour le calcul de la patente",
       "texte": [
-        "Le contribuable qui fait tenir des magasins satellites au nom d'un employé ou d'un tiers sans en faire la déclaration à son nom, est passible d'un supplément de droit égal au montant des droits éludés."
+        "Le contribuable qui fait tenir des magasins auxiliaires au nom d'un employé ou d'un tiers sans en faire la déclaration à son nom, est passible d'un supplément de droit égal au montant des droits éludés."
       ],
       "mots_cles": [
-        "magasins satellites",
+        "magasins auxiliaires",
         "droits éludés",
         "supplément de droit",
         "déclaration"
@@ -1472,28 +1472,29 @@
       "article": "Art. 314",
       "titre": "Tarifs",
       "texte": [
-        "(L.F.2023) Le taux de la contribution de la patente est fixé comme suit :",
-        "- 10.000 FCFA pour les contribuables dont le chiffre d'affaires forfaitaire n'atteint pas 1.000.000 FCFA et les contribuables d'exploitation agricole au sens large (agriculture, pêche continentale, élevage) ;",
-        "- 0,750 % à la fraction du chiffre d'affaires comprise entre 1.000.000 et 200.000.000 FCFA ;",
-        "- 0,650 % à la fraction du chiffre d'affaires comprise entre 200.000.001 et 400.000.000 FCFA ;",
-        "- 0,450 % à la fraction du chiffre d'affaires comprise entre 40.000.001 et 100.000.000.000 FCFA ;",
-        "- 0,200 % à la fraction du chiffre d'affaires comprise entre 100.000.000.001 et 300.000.000 FCFA ;",
+        "(L.F.2023) Le taux de la contribution des patentes est fixé comme suit :",
+        "- 10.000 FCFA pour les entités dont le chiffre d'affaires forfaitaire n'atteint pas 1.000.000 FCFA et les entités d'exploitation agricole au sens large (agriculture, pêche continentale, élevage) ;",
+        "- 0,750 % à la fraction du chiffre d'affaires comprise entre 1.000.000 et 20.000.000 FCFA ;",
+        "- 0,650 % à la fraction du chiffre d'affaires comprise entre 20.000.001 et 40.000.000 FCFA ;",
+        "- 0,450 % à la fraction du chiffre d'affaires comprise entre 40.000.001 et 100.000.000 FCFA ;",
+        "- 0,200 % à la fraction du chiffre d'affaires comprise entre 100.000.001 et 300.000.000 FCFA ;",
         "- 0,150 % à la fraction du chiffre d'affaires comprise entre 300.000.001 et 500.000.000 FCFA ;",
         "- 0,140 % à la fraction du chiffre d'affaires comprise entre 500.000.001 et 1.000.000.000 FCFA ;",
         "- 0,135 % à la fraction du chiffre d'affaires comprise entre 1.000.000.001 et 3.000.000.000 FCFA ;",
         "- 0,125 % à la fraction du chiffre d'affaires comprise entre 3.000.000.001 et 20.000.000.000 FCFA ;",
         "- 0,045 % pour la fraction du chiffre d'affaires supérieure à 20.000.000.000 FCFA.",
-        "Les sociétés pétrolières sont soumises à la contribution de la patente dans les conditions de droit commun.",
-        "Toutefois, cette contribution n'est exigible qu'à hauteur de 50 % du montant des droits."
+        "Les sociétés pétrolières sont soumises à la contribution des patentes dans les conditions de droit commun.",
+        "Toutefois, cette contribution n'est exigible qu'à hauteur de 50 % du montant des droits liquidés."
       ],
       "mots_cles": [
         "tarifs",
-        "contribution de la patente",
+        "contribution des patentes",
         "chiffre d'affaires",
         "taux proportionnels",
         "10.000 FCFA",
         "sociétés pétrolières",
         "50%",
+        "droits liquidés",
         "L.F.2023"
       ],
       "statut": "en vigueur",

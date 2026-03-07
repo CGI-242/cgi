@@ -1,6 +1,6 @@
 /**
  * Service Patente - Contribution des Patentes
- * Article 306 CGI Congo 2025
+ * Article 314 CGI Congo 2026
  */
 
 export interface PatenteInput {
@@ -97,7 +97,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
       dateEcheance: "10-20 avril",
       references: [
         "Art. 278 al. 6 : Stand-by = 25% derniere patente",
-        "Art. 306 : Reduction de 50% du montant liquide",
+        "Art. 314 : Reduction de 50% du montant liquide",
       ],
     };
   }
@@ -106,24 +106,35 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
   let patenteBrute = 0;
   let caRestant = ca;
 
-  for (const bareme of BAREME_PATENTE) {
-    if (caRestant <= 0) break;
+  // Forfait 10.000 FCFA pour CA < 1.000.000 (Art. 314)
+  if (ca < 1_000_000) {
+    patenteBrute = 10_000;
+    tranches.push({
+      tranche: `< 1 M`,
+      base: ca,
+      taux: 0,
+      montant: 10_000,
+    });
+  } else {
+    for (const bareme of BAREME_PATENTE) {
+      if (caRestant <= 0) break;
 
-    const largeurTranche = bareme.max === Infinity ? caRestant : (bareme.max - bareme.min);
-    const baseImposable = Math.min(caRestant, largeurTranche);
-    const montantTranche = baseImposable * bareme.taux;
+      const largeurTranche = bareme.max === Infinity ? caRestant : (bareme.max - bareme.min);
+      const baseImposable = Math.min(caRestant, largeurTranche);
+      const montantTranche = baseImposable * bareme.taux;
 
-    if (montantTranche > 0) {
-      tranches.push({
-        tranche: formatTranche(bareme.min, bareme.max),
-        base: baseImposable,
-        taux: bareme.taux * 100,
-        montant: montantTranche,
-      });
+      if (montantTranche > 0) {
+        tranches.push({
+          tranche: formatTranche(bareme.min, bareme.max),
+          base: baseImposable,
+          taux: bareme.taux * 100,
+          montant: montantTranche,
+        });
+      }
+
+      patenteBrute += montantTranche;
+      caRestant -= baseImposable;
     }
-
-    patenteBrute += montantTranche;
-    caRestant -= baseImposable;
   }
 
   const reduction50 = patenteBrute * 0.5;
@@ -148,7 +159,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     references: [
       "Art. 277 : Droit de patente",
       "Art. 278 : Assiette de la patente",
-      "Art. 306 : Tarifs (L.F.2023) - Reduction 50%",
+      "Art. 314 : Tarifs (L.F.2023) - Reduction 50%",
       "Art. 307 : Paiement",
     ],
   };
