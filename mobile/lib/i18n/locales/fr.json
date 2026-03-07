@@ -453,7 +453,7 @@
     },
     "patente": {
       "title": "Simulateur Patente",
-      "subtitle": "Contribution des Patentes - Art. 306 CGI 2026",
+      "subtitle": "Contribution des Patentes - Art. 314 CGI 2026",
       "description": "Patente calculée sur le CA HT (N-1). Barème progressif Art. 314. Centimes additionnels 5% (Art. 369 bis). Échéance : 10-20 avril.",
       "taxRegime": "Régime fiscal",
       "real": "Réel",
@@ -793,7 +793,7 @@
     "title": "Calendrier Fiscal 2026",
     "subtitle": "Échéances fiscales — CGI Congo-Brazzaville",
     "description": "Retrouvez toutes les échéances fiscales de l'année 2026 selon le Code Général des Impôts du Congo-Brazzaville.",
-    "legalRef": "Art. 86C (IS), Art. 461 bis (TVA), Art. 306 (Patente)",
+    "legalRef": "Art. 86C (IS), Art. 461 bis (TVA), Art. 314 (Patente)",
     "echeancesDuMois": "ÉCHÉANCES — {{mois}}",
     "aucuneEcheance": "Aucune échéance fiscale ce mois",
     "prochaineEcheance": "PROCHAINE ÉCHÉANCE",
@@ -820,7 +820,7 @@
       "isT4": "Acompte trimestriel IS (4e trimestre). Art. 86C CGI — Pénalité de 10% en cas de retard.",
       "tva": "Déclaration et paiement TVA mensuelle. Art. 461 bis LF 2026 — Au plus tard le 15 du mois suivant.",
       "its": "Déclaration et reversement ITS mensuel. Barème Art. 116 CGI — Retenue à la source par l'employeur.",
-      "patente": "Paiement annuel de la contribution des patentes. Art. 306 CGI — Échéance du 10 au 20 avril.",
+      "patente": "Paiement annuel de la contribution des patentes. Art. 314 CGI — Échéance du 10 au 20 avril.",
       "irf1": "IRF Loyers — 1re échéance. Art. 111-113A CGI — Retenue à la source 9%.",
       "irf2": "IRF Loyers — 2e échéance. Art. 111-113A CGI — Déclaration au plus tard le 20 août.",
       "irf3": "IRF Loyers — 3e échéance. Art. 111-113A CGI — Dernière échéance de l'année."

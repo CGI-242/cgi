@@ -453,7 +453,7 @@
     },
     "patente": {
       "title": "Business License Simulator",
-      "subtitle": "Business License Contribution - Art. 306 CGI 2026",
+      "subtitle": "Business License Contribution - Art. 314 CGI 2026",
       "description": "License calculated on turnover excl. tax (Y-1). Progressive scale Art. 314. Additional centimes 5% (Art. 369 bis). Deadline: April 10-20.",
       "taxRegime": "Tax regime",
       "real": "Standard",
@@ -793,7 +793,7 @@
     "title": "Tax Calendar 2026",
     "subtitle": "Tax deadlines — CGI Congo-Brazzaville",
     "description": "Find all 2026 tax deadlines according to the General Tax Code of Congo-Brazzaville.",
-    "legalRef": "Art. 86C (IS), Art. 461 bis (VAT), Art. 306 (Business License)",
+    "legalRef": "Art. 86C (IS), Art. 461 bis (VAT), Art. 314 (Business License)",
     "echeancesDuMois": "DEADLINES — {{mois}}",
     "aucuneEcheance": "No tax deadline this month",
     "prochaineEcheance": "NEXT DEADLINE",
@@ -820,7 +820,7 @@
       "isT4": "Quarterly IS instalment (Q4). Art. 86C CGI — 10% penalty for late payment.",
       "tva": "Monthly VAT return and payment. Art. 461 bis LF 2026 — Due by the 15th of the following month.",
       "its": "Monthly ITS return and payment. Art. 116 CGI scale — Withheld at source by the employer.",
-      "patente": "Annual business license payment. Art. 306 CGI — Due from April 10 to 20.",
+      "patente": "Annual business license payment. Art. 314 CGI — Due from April 10 to 20.",
       "irf1": "Rental Income Tax — 1st instalment. Art. 111-113A CGI — 9% withholding.",
       "irf2": "Rental Income Tax — 2nd instalment. Art. 111-113A CGI — Due by August 20.",
       "irf3": "Rental Income Tax — 3rd instalment. Art. 111-113A CGI — Last instalment of the year."
