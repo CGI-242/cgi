@@ -7157,7 +7157,10 @@
       "majoration",
       "100 %",
       "taxation d'office",
-      "sanctions"
+      "sanctions",
+      "cotisations",
+      "centimes additionnels",
+      "droit d'accises"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7176,21 +7179,32 @@
       "déclaration mensuelle",
       "intérêt de retard",
       "mise en demeure",
-      "contrôle fiscal"
+      "contrôle fiscal",
+      "15.000 F",
+      "500.000 FCFA",
+      "1.000.000 FCFA",
+      "report de déclaration",
+      "phase contradictoire",
+      "droits éludés"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "373 bis",
     "titre": "Obligations déclaratives des bénéficiaires de conventions et contrats",
-    "contenu": "(L.F.2025) Les contribuables bénéficiaires de conventions d'établissement, de marchés publics, de contrats d'État et autres accords réguliers comportant des exonérations ou réductions d'impôts, droits et taxes, sont tenus, pendant la période dont ils bénéficient de ce régime, de souscrire les déclarations afférentes à l'établissement des impôts, droits et taxes relatifs, et de déposer les états financiers de synthèse exigés par les articles 30 et 31 ci-dessus dans les délais prévus par le présent Code.\nLe défaut de déclaration est sanctionné : pour les impôts, droits et taxes à déclaration périodique, par la perte des avantages fiscaux au titre de l'échéance de déclaration non respectée, assorti d'une amende de 500.000 FCFA ; pour les états financiers exigés, par le paiement d'une amende de 10.000.000 FCFA sans préjudice des autres sanctions applicables en cas de défaut de déclaration.",
+    "contenu": "(L.F.2025) Les contribuables bénéficiaires de conventions d'établissement, de marchés publics, de contrats d'État et autres accords réguliers comportant des exonérations ou réductions d'impôts, droits et taxes, sont tenus, pendant la période dont ils bénéficient de ce régime, de souscrire les déclarations afférentes à l'établissement des impôts, droits et taxes y relatifs, et de déposer les états financiers de synthèse exigés par les articles 30 et 31 ci-dessus dans les délais prévus par le présent Code.\nLe défaut de déclaration est sanctionné : pour les impôts, droits et taxes à déclaration périodique, par la perte des avantages fiscaux au titre de l'échéance de déclaration non respectée, assorti d'une amende de 500.000 FCFA ; pour les états financiers exigés, par le paiement d'une amende de 10.000.000 FCFA sans préjudice des autres sanctions applicables en cas de défaut de déclaration.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "conventions d'établissement",
       "marchés publics",
+      "contrats d'État",
+      "exonérations",
       "avantages fiscaux",
       "états financiers",
+      "perte des avantages fiscaux",
+      "500.000 FCFA",
+      "10.000.000 FCFA",
       "sanctions"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
@@ -7206,14 +7220,15 @@
       "documents comptables",
       "langue étrangère",
       "amende",
-      "2.000.000 FCFA"
+      "2.000.000 FCFA",
+      "article 31"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "374",
     "titre": "Pénalités pour inexactitude, insuffisance ou omission déclarative",
-    "contenu": "En cas d'inexactitude, d'insuffisance ou omission dans les déclarations, relevés ou documents dont la production est obligatoire en application des dispositions du présent Code, les cotisations afférentes aux droits éludés, à l'exception de la taxe sur le chiffre d'affaires, des centimes additionnels à cette taxe et du droit d'accises ou de toute autre taxe qui en tiendrait lieu, sont majorées de 50 % lorsque la bonne foi du contribuable est admise et 100 % lorsque le contribuable n'établit pas sa bonne foi.\nEn matière de TVA, des centimes additionnels à cette taxe et du droit d'accises, toute inexactitude, insuffisance ou omission constatée dans la déclaration mensuelle est sanctionnée par une pénalité de 50 % des droits éludés ou des redressements effectués lorsque la bonne foi du contribuable est établie. En cas de mauvaise foi, cette pénalité est portée à 100 % et à 200 % en cas de manœuvre frauduleuse ou d'opposition à contrôle.\nLes ventes sans factures par un redevable de la TVA sont passibles d'une amende fiscale égale au double des droits compromis. En cas de récidive, l'amende encore sera égale au quadruple des droits.\nToute demande de déduction de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, est sanctionnée par une pénalité de 200 % des droits éludés.\nSans préjudice des poursuites pénales pouvant être engagées à son encontre, tout contribuable qui émet une facture telle que visée ci-dessus est responsable du paiement d'une amende égale à la taxe ainsi facturée et, solidairement, du paiement de la pénalité de 200 %.\nLorsque le dirigeant d'une société, d'une personne morale ou de tout autre groupement, est responsable de manœuvres frauduleuses ou de l'inobservation des obligations déclaratives pendant plus de deux mois, qui ont rendu impossible le recouvrement de la taxe due par la société, la personne morale ou le groupement, il peut être déclaré solidairement responsable du paiement de ses impositions. Cette disposition est applicable à toute personne exerçant en droit ou en fait la direction effective de la société.",
+    "contenu": "En cas d'inexactitude, d'insuffisance ou omission dans les déclarations, relevés ou documents dont la production est obligatoire en application des dispositions du présent Code, les cotisations afférentes aux droits éludés, à l'exception de la taxe sur le chiffre d'affaires, des centimes additionnels à cette taxe et du droit d'accises ou de toute autre taxe qui en tiendrait lieu, sont majorées de 50 % lorsque la bonne foi du contribuable est admise et de 100 % lorsque le contribuable n'établit pas sa bonne foi.\nEn matière de TVA, des centimes additionnels à cette taxe et du droit d'accises, toute inexactitude, insuffisance ou omission constatée dans la déclaration mensuelle est sanctionnée par une pénalité de 50 % des droits éludés ou des redressements effectués lorsque la bonne foi du contribuable est établie. En cas de mauvaise foi, cette pénalité est portée à 100 % et à 200 % en cas de manœuvre frauduleuse ou d'opposition à contrôle.\nLes ventes sans factures par un redevable de la TVA sont passibles d'une amende fiscale égale au double des droits compromis. En cas de récidive, l'amende encourue sera égale au quadruple des droits.\nToute demande de déduction de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, est sanctionnée par une pénalité de 200 % des droits éludés.\nSans préjudice des poursuites pénales pouvant être engagées à son encontre, tout contribuable qui émet une facture telle que visée ci-dessus est responsable du paiement d'une amende égale à la taxe ainsi facturée et, solidairement, du paiement de la pénalité de 200 %.\nLorsque le dirigeant d'une société, d'une personne morale ou de tout autre groupement, est responsable de manœuvres frauduleuses ou de l'inobservation des obligations déclaratives pendant plus de deux mois, qui ont rendu impossible le recouvrement de la taxe due par la société, la personne morale ou le groupement, il peut être déclaré solidairement responsable du paiement de ses impositions. Cette disposition est applicable à toute personne exerçant en droit ou en fait la direction effective de la société.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -7226,22 +7241,31 @@
       "TVA",
       "facturation",
       "responsabilité solidaire",
-      "dirigeant"
+      "dirigeant",
+      "droits éludés",
+      "ventes sans factures",
+      "200 %",
+      "opposition à contrôle",
+      "déduction"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "374 bis",
     "titre": "Définition de la mauvaise foi et des manœuvres frauduleuses",
-    "contenu": "Est considéré comme étant de mauvaise foi, le contribuable qui, sciemment, a omis de passer des écritures comptables ou qui a passé ou fait passer des écritures inexactes ou fictives dans les livres, registres et documents professionnels se rapportant à des opérations assujetties à la TVA. Il en est de même de celui qui produit des pièces fausses ou reconnues inexactes mais ayant donné lieu à facturation ou à déduction de la TVA.\nLa mauvaise foi peut être établie chaque fois que le service est en mesure de prouver que l'intéressé a nécessairement eu connaissance des faits ou des situations qui motivent les redressements. Il en est de même en cas de répétition du défaut de déclaration ou de paiement malgré les mises en demeure.\nSans préjudice des poursuites pénales pouvant être engagées à l'encontre de leurs auteurs, les ventes sans factures par un assujetti à la TVA, les déductions de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, l'émission des factures telles que visées ci-dessus, sont considérées comme des manœuvres frauduleuses pour l'application de l'article 374 alinéa 2.",
+    "contenu": "Est considéré comme étant de mauvaise foi, le contribuable qui, sciemment, a omis de passer des écritures comptables ou qui a passé ou fait passer des écritures inexactes ou fictives dans les livres, registres et documents professionnels se rapportant à des opérations soumises à la TVA. Il en est de même de celui qui produit des pièces fausses ou reconnues inexactes mais ayant donné lieu à facturation ou à déduction de la TVA.\nLa mauvaise foi peut être établie chaque fois que le service est en mesure de prouver que l'intéressé a nécessairement eu connaissance des faits ou des situations qui motivent les redressements. Il en est de même en cas de répétition du défaut de déclaration ou de paiement malgré les mises en demeure.\nSans préjudice des poursuites pénales pouvant être engagées à l'encontre de leurs auteurs, les ventes sans factures par un assujetti à la TVA, les déductions de la taxe portée sur une facture ne correspondant pas en partie ou en totalité, à une acquisition de biens ou à une prestation de services, l'émission des factures telles que visées ci-dessus, sont considérées comme des manœuvres frauduleuses pour l'application de l'article 374 alinéa 2.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "mauvaise foi",
       "TVA",
       "écritures fictives",
+      "écritures comptables",
       "factures",
-      "manœuvres frauduleuses"
+      "pièces fausses",
+      "manœuvres frauduleuses",
+      "déduction",
+      "mises en demeure"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7274,30 +7298,36 @@
   {
     "numero": "376",
     "titre": "Revenus encaissés en dehors du Congo",
-    "contenu": "Le contribuable qui, encaissant directement ou indirectement des revenus en dehors du Congo, ne les a pas mentionnés séparément dans la déclaration, conformément aux prescriptions de l'article 76-1 (avant-dernier alinéa) est réputé les avoir omis et il est tenu de verser le supplément d'impôt correspondant ainsi que la majoration de 100 %. Si la dissimulation est établie, le contribuable est, en outre, puni des peines prévues à l'article 521 du présent Code.",
+    "contenu": "Le contribuable qui, encaissant directement ou indirectement des revenus en dehors du Congo, ne les a pas mentionnés séparément dans la déclaration, conformément aux prescriptions de l'article 76-1 (avant-dernier alinéa) est réputé les avoir omis et il est tenu de verser le supplément d'impôt correspondant ainsi que la majoration de 100 %. Si la dissimulation est établie, le contribuable est, en outre, puni des peines prévues à l'article 521 ci-après.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "revenus étrangers",
+      "revenus hors Congo",
       "déclaration",
       "omission",
       "majoration 100 %",
       "dissimulation",
-      "sanctions pénales"
+      "sanctions pénales",
+      "article 76-1",
+      "article 521"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "377",
     "titre": "Amende pour défaut de renseignements ou inscription au registre",
-    "contenu": "Les personnes et sociétés soumises aux prescriptions de l'article 397 ci-après et qui ne s'y conforment pas ou fournissent des renseignements inexacts à l'administration sont passibles d'une amende fiscale de 100.000 FCFA pour chaque omission ou inexactitude ou pour chaque chèque ou voyage ou lettre de crédit non inscrit sur le registre prévu à l'avant-dernier alinéa dudit article.",
+    "contenu": "Les personnes et sociétés soumises aux prescriptions de l'article 397 ci-après et qui ne s'y conforment pas ou fournissent des renseignements inexacts à l'administration sont passibles d'une amende fiscale de 100.000 FCFA pour chaque omission ou inexactitude ou pour chaque chèque de voyage ou lettre de crédit non inscrit sur le registre prévu à l'avant-dernier alinéa dudit article.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "renseignements inexacts",
       "registre",
       "amende",
-      "100.000 FCFA"
+      "100.000 FCFA",
+      "article 397",
+      "chèque de voyage",
+      "lettre de crédit"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
@@ -7311,14 +7341,17 @@
       "train de vie",
       "déclaration",
       "amende",
-      "10.000 FCFA"
+      "10.000 FCFA",
+      "article 76",
+      "omission",
+      "inexactitude"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "378",
     "titre": "Amende pour défaut de déclaration d'existence",
-    "contenu": "Le défaut de déclaration d'existence prévu par les articles 15 bis, 46, 125 et 197 du présent Code est sanctionné d'une amende fiscale de 200.000 FCFA déductible au nom de l'exploitant ou du représentant légal de la société, établissement ou association.\nEn matière de TCA, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, les redevables doivent effectuer auprès de la DGID une déclaration d'existence ou de modification dans l'exercice de leur profession.\nEn contrepartie de la déclaration d'existence, la DGID délivre un certificat d'enregistrement ouvrant droit à l'assujettissement à la taxe sur le chiffre d'affaires, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, et, mutatis mutandis au redevable un NIU.\nUn redevable ne peut se prévaloir de la qualité d'assujetti à la TCA, centimes additionnels et droits d'accises ou de toute taxe qui en tiendrait lieu qu'après enregistrement et attribution d'un NIU.",
+    "contenu": "Le défaut de déclaration d'existence prévu par les articles 15 bis, 46, 125 et 197 du présent Code est sanctionné par une amende fiscale de 200.000 FCFA établie au nom de l'exploitant ou du représentant légal de la société, établissement ou association.\nEn matière de TCA, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, les redevables doivent effectuer auprès de la DGID une déclaration d'existence ou de modification dans l'exercice de leur profession.\nEn contrepartie de la déclaration d'existence, la DGID délivre un certificat d'enregistrement ouvrant droit à l'assujettissement à la taxe sur le chiffre d'affaires, centimes additionnels et droits d'accises ou de toute autre taxe qui en tiendrait lieu, et attribue au redevable un NIU.\nUn redevable ne peut se prévaloir de la qualité d'assujetti à la TCA, centimes additionnels et droits d'accises ou de toute taxe qui en tiendrait lieu qu'après enregistrement et attribution d'un NIU.\nLe dépôt tardif ou le défaut de déclaration d'existence est sanctionné par la perte du droit à déduction pendant la période de non-déclaration et par une amende de 200.000 FCFA.\nLa non-déclaration ou la déclaration tardive des modifications dans les conditions d'exercice de la profession est passible d'une pénalité de 100.000 FCFA par mois de retard.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -7327,29 +7360,31 @@
       "TCA",
       "droits d'accises",
       "NIU",
-      "200.000 FCFA"
+      "certificat d'enregistrement",
+      "200.000 FCFA",
+      "100.000 FCFA",
+      "perte du droit à déduction",
+      "amende fiscale"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "379",
     "titre": "Pénalités pour infractions aux obligations documentaires",
-    "contenu": "Le dépôt tardif ou le défaut de déclaration d'existence est sanctionné par la perte du droit à déduction pendant la période de non-déclaration et par une amende de 200.000 FCFA.\nLa non-déclaration ou la déclaration tardive des modifications dans les conditions d'exercice de la profession est passible d'une pénalité de 100.000 FCFA par mois de retard.\nToute infraction aux dispositions des articles 96, 183, 183 bis et 185 du présent Code donne lieu à une majoration de droits de 100 %.",
+    "contenu": "Toute infraction aux dispositions des articles 96, 183, 183 bis et 185 ter du présent Code donne lieu à une majoration de droits de 100 %.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "déclaration d'existence",
-      "retenues à la source",
       "majoration",
       "100 %",
-      "200.000 FCFA"
+      "infractions documentaires"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
   {
     "numero": "380",
     "titre": "Amende pour inexactitude dans les renseignements obligatoires",
-    "contenu": "(L.F.2025) Toute infraction aux dispositions des articles 176, 177, 178, 179, 180 et 181 est sanctionnée d'une amende fiscale de 10.000 FCFA encourue autant de fois qu'il est relevé d'omission ou d'inexactitude dans les renseignements qui doivent être fournis en vertu de ces articles.\nEn outre, le contribuable qui ne produit pas les déclarations prévues aux dits articles perd le droit de déduire les sommes correspondantes pour l'établissement de ses impositions.\nÀ défaut de déclarer dans la DAS 2 les sommes visées à l'alinéa 1 du présent article, le contribuable est sanctionné par la perte du droit de déduire lesdites sommes, sans préjudice des autres sanctions prévues par le présent Code.\nLes sociétés visées par les articles 126 ter et suivants du présent Code, qui ne produisent pas les déclarations prévues aux articles 176 à 181 du présent Code ou qui produisent les déclarations annuelles des salaires modèle 2 nulles ou incomplètes, sont sanctionnées par une amende égale à une fois et demie le montant de l'IR forfaitaire mensuel moyen de l'exercice écoulé.",
+    "contenu": "(L.F.2025) Toute infraction aux dispositions des articles 176, 177, 178, 179, 180 et 181 est sanctionnée d'une amende fiscale de 10.000 FCFA encourue autant de fois qu'il est relevé d'omission ou d'inexactitude dans les renseignements qui doivent être fournis en vertu de ces articles.\nEn outre, le contribuable qui ne produit pas les déclarations prévues aux dits articles perd le droit de déduire les sommes correspondantes pour l'établissement de ses impositions.\nÀ défaut de déclarer dans la DAS 2 les sommes visées à l'alinéa 1 du présent article, le contribuable est sanctionné par la perte du droit de déduire lesdites sommes, sans préjudice des autres sanctions prévues par le présent Code.\nLes sociétés visées par les articles 126 ter et suivants du présent Code, qui ne produisent pas les déclarations prévues aux articles 176 à 181 du présent Code ou qui produisent les déclarations annuelles des salaires modèle 2 nulles ou incomplètes, sont sanctionnées par une amende égale à une fois et demie le montant de l'IS forfaitaire mensuel moyen de l'exercice écoulé.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -7357,7 +7392,11 @@
       "amende",
       "10.000 FCFA",
       "DAS 2",
-      "IR forfaitaire"
+      "IS forfaitaire",
+      "articles 176 à 181",
+      "perte du droit de déduire",
+      "déclarations annuelles des salaires",
+      "126 ter"
     ],
     "source": "tome1-partie3-titre1-chapitre1.json"
   },
