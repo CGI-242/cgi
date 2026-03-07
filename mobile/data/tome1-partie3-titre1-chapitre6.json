@@ -248,9 +248,9 @@
       "article": "Art. 399",
       "titre": "Sanctions pour refus de communication",
       "texte": [
-        "Toute contravention aux dispositions relatives au droit de communication et notamment le refus de communication constaté par procès-verbal, la déclaration, que les livres ou documents ne sont pas tenus ou leur destruction avant les délais prescrits à l'article 31, est punie d'une amende de 100.000 FCFA, sans préjudice des sanctions prévues aux articles 522 et 525 du CGI Tome 1.",
+        "Toute contravention aux dispositions relatives au droit de communication et notamment le refus de communication constaté par procès-verbal, la déclaration que les livres ou documents ne sont pas tenus ou leur destruction avant les délais prescrits à l'article 31, est punie d'une amende de 100.000 FCFA, sans préjudice des sanctions prévues aux articles 522 et 525 du CGI Tome 1.",
         "En cas de refus de signature dudit procès-verbal par le contribuable défaillant, le procès-verbal est dressé par un huissier de justice sur réquisition de l'administration aux frais du contrevenant.",
-        "Le montant de l'amende est porté à 100.000 FCFA à défaut de régularisation dans 30 jours d'une mise en demeure.",
+        "Le montant de l'amende est porté à 100.000 FCFA à défaut de régularisation dans les 30 jours d'une mise en demeure.",
         "Les manquements visés au premier alinéa sont constatés par procès-verbal. Le contrevenant ou son représentant est invité à assister à sa rédaction. Il est signé par les agents de l'administration, le contrevenant ou son représentant. En cas de refus de signer, mention est faite au procès-verbal. L'intéressé dispose d'un délai de trente jours pour faire valoir ses observations, à compter de l'établissement du procès-verbal, ou de sa notification lorsqu'il n'a pas assisté à son établissement. Celles-ci sont portées ou annexées au procès-verbal. Une copie de celui-ci est remise à l'intéressé.",
         "Le recouvrement de l'amende est assuré et les réclamations sont instruites et jugées suivant les règles applicables aux taxes sur le chiffre d'affaires."
       ],
@@ -260,7 +260,13 @@
         "procès-verbal",
         "amende 100.000 FCFA",
         "huissier de justice",
-        "mise en demeure"
+        "mise en demeure",
+        "article 31",
+        "articles 522 et 525",
+        "destruction de documents",
+        "délai trente jours",
+        "observations",
+        "taxes sur le chiffre d'affaires"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Dispositions communes"
@@ -285,8 +291,8 @@
       "article": "Art. 399 ter",
       "titre": "Numéro d'identification unique (NIU)",
       "texte": [
-        "Il est institué un numéro d'identification unique attribué à tous les opérateurs économiques exerçant une activité économique au Congo. Tout contribuable soumis aux impôts et taxes prévus au présent Code ne pourra justifier d'un numéro d'identification fiscale, perd d'office le droit de déduction de la TVA, le droit de dédouanement des marchandises, le droit à mandatement ainsi que tout règlement par le trésor public, les collectivités locales et les établissements publics.",
-        "Il en est de même pour les banques et établissements financiers, les concessionnaires de services publics, de l'eau, de l'électricité et de télécommunication qui doivent exiger le numéro fiscal d'identification des contribuables dit « Numéro d'identification unique » en abrégé NIU du demandeur de services pour toute ouverture de compte commercial et d'abonnement.",
+        "Il est institué un numéro d'identification unique attribué à tous les opérateurs économiques exerçant une activité économique au Congo. Tout contribuable soumis aux impôts et taxes prévus au présent Code ne pouvant justifier d'un numéro d'identification fiscale, perd d'office le droit de déduction de la TVA, le droit de dédouanement des marchandises, le mandatement ainsi que tout règlement par le trésor public, les collectivités locales et les établissements publics.",
+        "Il en est de même pour les banques et établissements financiers, les concessionnaires des services publics de l'eau, de l'électricité et de télécommunication qui doivent exiger le numéro fiscal d'identification des contribuables dit « Numéro d'identification unique » en abrégé NIU du demandeur de services pour toute ouverture de compte commercial et d'abonnement d'entreprise.",
         "Sans préjudice des sanctions pénales, l'utilisation frauduleuse du NIU est punie par une amende de 3.000.000 FCFA. Le propriétaire est solidairement responsable du paiement de cette amende en cas de complicité avérée.",
         "Tout contribuable qui exerce une activité économique sans disposer préalablement du numéro d'identification unique (NIU) est automatiquement immatriculé et sanctionné par une amende fiscale de 1.000.000 FCFA."
       ],
@@ -298,7 +304,16 @@
         "dédouanement",
         "banques",
         "amende 3.000.000 FCFA",
-        "amende 1.000.000 FCFA"
+        "amende 1.000.000 FCFA",
+        "identification fiscale",
+        "mandatement",
+        "trésor public",
+        "établissements publics",
+        "établissements financiers",
+        "concessionnaires",
+        "abonnement d'entreprise",
+        "utilisation frauduleuse",
+        "immatriculation"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Dispositions communes"
