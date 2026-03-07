@@ -454,7 +454,7 @@
     "patente": {
       "title": "Simulateur Patente",
       "subtitle": "Contribution des Patentes - Art. 306 CGI 2026",
-      "description": "Patente calculée sur le CA HT (N-1). Barème progressif Art. 306, réduit de 50%. Échéance : 10-20 avril.",
+      "description": "Patente calculée sur le CA HT (N-1). Barème progressif Art. 314. Centimes additionnels 5% (Art. 369 bis). Échéance : 10-20 avril.",
       "taxRegime": "Régime fiscal",
       "real": "Réel",
       "flat": "Forfaitaire",
@@ -466,13 +466,20 @@
       "turnover": "Chiffre d'affaires HT (N-1)",
       "newCompany": "Entreprise nouvelle",
       "fiscalEntities": "Entités fiscales (Art. 281)",
-      "legalRef": "Art. 278 (Patente), Art. 306 (Barème), Art. 281 (Entités)",
+      "oilCompany": "Société pétrolière",
+      "oilCompanyDesc": "Réduction 50% des droits liquidés (Art. 314)",
+      "legalRef": "Art. 278 (Patente), Art. 314 (Barème), Art. 281 (Entités), Art. 369 bis (Centimes)",
       "trancheDetail": "DÉTAIL PAR TRANCHES",
       "grossPatente": "PATENTE BRUTE",
       "reductions": "RÉDUCTIONS",
       "standbyReduction": "Réduction stand-by (75%)",
-      "halfReduction": "Réduction 50% (Art. 306)",
-      "netPatente": "PATENTE NETTE"
+      "oilReduction": "Réduction 50% pétrolière (Art. 314)",
+      "netPatente": "PATENTE NETTE",
+      "centimesSection": "CENTIMES ADDITIONNELS (Art. 369 bis)",
+      "centimesRate": "Centimes additionnels (5%)",
+      "partCC": "Part chambres de commerce (20%)",
+      "partCL": "Part collectivités locales (80%)",
+      "totalToPay": "TOTAL À PAYER"
     },
     "solde": {
       "title": "Solde de liquidation",

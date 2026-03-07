@@ -454,7 +454,7 @@
     "patente": {
       "title": "Business License Simulator",
       "subtitle": "Business License Contribution - Art. 306 CGI 2026",
-      "description": "License calculated on turnover excl. tax (Y-1). Progressive scale Art. 306, reduced by 50%. Deadline: April 10-20.",
+      "description": "License calculated on turnover excl. tax (Y-1). Progressive scale Art. 314. Additional centimes 5% (Art. 369 bis). Deadline: April 10-20.",
       "taxRegime": "Tax regime",
       "real": "Standard",
       "flat": "Flat rate",
@@ -466,13 +466,20 @@
       "turnover": "Turnover excl. tax (Y-1)",
       "newCompany": "New company",
       "fiscalEntities": "Tax entities (Art. 281)",
-      "legalRef": "Art. 278 (License), Art. 306 (Scale), Art. 281 (Entities)",
+      "oilCompany": "Oil company",
+      "oilCompanyDesc": "50% reduction on assessed duties (Art. 314)",
+      "legalRef": "Art. 278 (License), Art. 314 (Scale), Art. 281 (Entities), Art. 369 bis (Centimes)",
       "trancheDetail": "BREAKDOWN BY BRACKET",
       "grossPatente": "GROSS LICENSE",
       "reductions": "REDUCTIONS",
       "standbyReduction": "Standby reduction (75%)",
-      "halfReduction": "50% reduction (Art. 306)",
-      "netPatente": "NET LICENSE"
+      "oilReduction": "50% oil company reduction (Art. 314)",
+      "netPatente": "NET LICENSE",
+      "centimesSection": "ADDITIONAL CENTIMES (Art. 369 bis)",
+      "centimesRate": "Additional centimes (5%)",
+      "partCC": "Chamber of commerce share (20%)",
+      "partCL": "Local authorities share (80%)",
+      "totalToPay": "TOTAL TO PAY"
     },
     "solde": {
       "title": "Settlement balance",

@@ -19,6 +19,7 @@ export default function PatenteScreen() {
   const [chiffreAffaires, setChiffreAffaires] = useState("");
   const [regime, setRegime] = useState<PatenteInput["regime"]>("reel");
   const [isStandBy, setIsStandBy] = useState(false);
+  const [isPetroliere, setIsPetroliere] = useState(false);
   const [dernierePatente, setDernierePatente] = useState("");
   const [isNouvelle, setIsNouvelle] = useState(false);
   const [nombreEntites, setNombreEntites] = useState(1);
@@ -36,10 +37,11 @@ export default function PatenteScreen() {
       regime,
       isEntrepriseNouvelle: isNouvelle,
       isStandBy,
+      isPetroliere,
       dernierePatente: parseFloat(dernierePatente.replace(/\s/g, "")) || 0,
       nombreEntitesFiscales: nombreEntites,
     });
-  }, [chiffreAffaires, regime, isStandBy, dernierePatente, isNouvelle, nombreEntites]);
+  }, [chiffreAffaires, regime, isStandBy, isPetroliere, dernierePatente, isNouvelle, nombreEntites]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -84,6 +86,14 @@ export default function PatenteScreen() {
           )}
 
           <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
+            <View style={styles.flex1}>
+              <Text style={[styles.switchLabel, { color: colors.text }]}>{t("simulateur.patente.oilCompany")}</Text>
+              <Text style={[styles.switchDesc, { color: colors.textSecondary }]}>{t("simulateur.patente.oilCompanyDesc")}</Text>
+            </View>
+            <Switch value={isPetroliere} onValueChange={setIsPetroliere} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isPetroliere ? colors.primary : colors.textMuted} />
+          </View>
+
+          <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
             <Text style={[styles.switchText, { color: colors.text }]}>{t("simulateur.patente.newCompany")}</Text>
             <Switch value={isNouvelle} onValueChange={setIsNouvelle} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isNouvelle ? colors.primary : colors.textMuted} />
           </View>
@@ -104,7 +114,7 @@ export default function PatenteScreen() {
         </ScrollView>
 
         <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result && result.patenteNette > 0 ? (
+          {result && result.totalAPayer > 0 ? (
             <View>
               {result.tranches.length > 0 && (
                 <>
@@ -125,11 +135,18 @@ export default function PatenteScreen() {
                 </>
               )}
 
-              <SimulateurSection label={t("simulateur.patente.reductions")} />
-              {result.reductionStandBy > 0 && (
-                <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color={colors.danger} />
+              {/* Réductions (stand-by ou pétrolière) */}
+              {(result.reductionStandBy > 0 || result.reductionPetroliere > 0) && (
+                <>
+                  <SimulateurSection label={t("simulateur.patente.reductions")} />
+                  {result.reductionStandBy > 0 && (
+                    <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color={colors.danger} />
+                  )}
+                  {result.reductionPetroliere > 0 && (
+                    <TableRow label={t("simulateur.patente.oilReduction")} value={`- ${formatNumber(Math.round(result.reductionPetroliere))}`} bg={colors.background} color={colors.danger} />
+                  )}
+                </>
               )}
-              <TableRow label={t("simulateur.patente.halfReduction")} value={`- ${formatNumber(Math.round(result.reduction50Pourcent))}`} bg={colors.background} color={colors.danger} />
 
               <View style={[styles.netPatenteBox, { backgroundColor: `${colors.primary}10`, borderTopColor: colors.border }]}>
                 <View style={styles.spaceBetweenRow}>
@@ -138,8 +155,22 @@ export default function PatenteScreen() {
                 </View>
               </View>
 
+              {/* Centimes additionnels */}
+              <SimulateurSection label={t("simulateur.patente.centimesSection")} />
+              <TableRow label={t("simulateur.patente.centimesRate")} value={formatNumber(result.centimesAdditionnels)} />
+              <TableRow label={t("simulateur.patente.partCC")} value={formatNumber(result.partChambresCommerce)} bg={colors.background} />
+              <TableRow label={t("simulateur.patente.partCL")} value={formatNumber(result.partCollectivitesLocales)} />
+
+              {/* Total à payer */}
+              <View style={[styles.totalBox, { backgroundColor: colors.primary, borderTopColor: colors.border }]}>
+                <View style={styles.spaceBetweenRow}>
+                  <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.totalToPay")}</Text>
+                  <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.totalAPayer)} FCFA</Text>
+                </View>
+              </View>
+
               {result.nombreEntites > 1 && (
-                <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.patenteParEntite)} bg={colors.background} bold />
+                <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.totalParEntite)} bg={colors.background} bold />
               )}
 
               <View style={[styles.deadlineBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
@@ -339,6 +370,21 @@ const styles = StyleSheet.create({
   netPatenteValue: {
     fontSize: 18,
     fontWeight: "800",
+  },
+  totalBox: {
+    paddingHorizontal: 14,
+    paddingVertical: 14,
+    borderTopWidth: 1,
+  },
+  totalLabel: {
+    fontSize: 15,
+    fontWeight: "800",
+    fontFamily: fonts.bold,
+  },
+  totalValue: {
+    fontSize: 20,
+    fontWeight: "800",
+    fontFamily: fonts.bold,
   },
   deadlineBox: {
     paddingHorizontal: 14,

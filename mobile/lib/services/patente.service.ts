@@ -1,6 +1,7 @@
 /**
  * Service Patente - Contribution des Patentes
- * Article 314 CGI Congo 2026
+ * Art. 314 CGI Congo 2026 (barème)
+ * Art. 369 bis (centimes additionnels 5%)
  */
 
 export interface PatenteInput {
@@ -8,6 +9,7 @@ export interface PatenteInput {
   regime: "reel" | "forfait" | "tpe" | "pe";
   isEntrepriseNouvelle: boolean;
   isStandBy: boolean;
+  isPetroliere: boolean;
   dernierePatente: number | null;
   nombreEntitesFiscales: number;
 }
@@ -26,9 +28,17 @@ export interface PatenteResult {
   patenteBrute: number;
   reductionStandBy: number;
   patenteApresReduction: number;
-  reduction50Pourcent: number;
+  // Réduction 50% uniquement pour les sociétés pétrolières (Art. 314)
+  isPetroliere: boolean;
+  reductionPetroliere: number;
   patenteNette: number;
-  patenteParEntite: number;
+  // Centimes additionnels (Art. 369 bis)
+  centimesAdditionnels: number;
+  partChambresCommerce: number;
+  partCollectivitesLocales: number;
+  // Total
+  totalAPayer: number;
+  totalParEntite: number;
   nombreEntites: number;
   dateEcheance: string;
   references: string[];
@@ -46,6 +56,10 @@ const BAREME_PATENTE = [
   { min: 3_000_000_001, max: 20_000_000_000, taux: 0.00125 },
   { min: 20_000_000_001, max: Infinity, taux: 0.00045 },
 ];
+
+const TAUX_CENTIMES = 0.05; // 5% (Art. 369 bis)
+const PART_CHAMBRES_COMMERCE = 0.20; // 20%
+const PART_COLLECTIVITES = 0.80; // 80%
 
 function formatTranche(min: number, max: number): string {
   if (max === Infinity) {
@@ -74,6 +88,10 @@ function getRegimeLabel(regime: string): string {
   return labels[regime] || regime;
 }
 
+function arrondir(montant: number): number {
+  return Math.round(montant / 10) * 10;
+}
+
 export function calculerPatente(input: PatenteInput): PatenteResult | null {
   const ca = Math.max(0, input.chiffreAffaires || 0);
 
@@ -81,23 +99,40 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     return null;
   }
 
+  // Cas stand-by (Art. 278 al. 6)
   if (input.isStandBy && input.dernierePatente) {
     const montantStandBy = input.dernierePatente * 0.25;
+    const patenteApresStandBy = montantStandBy;
+
+    // Réduction 50% uniquement si pétrolière
+    const reductionPetroliere = input.isPetroliere ? patenteApresStandBy * 0.5 : 0;
+    const patenteNette = arrondir(patenteApresStandBy - reductionPetroliere);
+
+    // Centimes additionnels
+    const centimes = arrondir(patenteNette * TAUX_CENTIMES);
+    const totalAPayer = patenteNette + centimes;
+
     return {
       chiffreAffaires: 0,
       regime: getRegimeLabel(input.regime),
       tranches: [],
       patenteBrute: input.dernierePatente,
       reductionStandBy: input.dernierePatente - montantStandBy,
-      patenteApresReduction: montantStandBy,
-      reduction50Pourcent: montantStandBy * 0.5,
-      patenteNette: Math.round((montantStandBy * 0.5) / 10) * 10,
-      patenteParEntite: Math.round((montantStandBy * 0.5) / 10) * 10,
+      patenteApresReduction: patenteApresStandBy,
+      isPetroliere: input.isPetroliere,
+      reductionPetroliere,
+      patenteNette,
+      centimesAdditionnels: centimes,
+      partChambresCommerce: arrondir(centimes * PART_CHAMBRES_COMMERCE),
+      partCollectivitesLocales: arrondir(centimes * PART_COLLECTIVITES),
+      totalAPayer,
+      totalParEntite: totalAPayer,
       nombreEntites: 1,
       dateEcheance: "10-20 avril",
       references: [
-        "Art. 278 al. 6 : Stand-by = 25% derniere patente",
-        "Art. 314 : Reduction de 50% du montant liquide",
+        "Art. 278 al. 6 : Stand-by = 25% dernière patente",
+        ...(input.isPetroliere ? ["Art. 314 : Réduction 50% sociétés pétrolières"] : []),
+        "Art. 369 bis : Centimes additionnels 5%",
       ],
     };
   }
@@ -137,12 +172,19 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     }
   }
 
-  const reduction50 = patenteBrute * 0.5;
-  const patenteNette = patenteBrute - reduction50;
-  const patenteArrondie = Math.round(patenteNette / 10) * 10;
+  // Réduction 50% uniquement pour les sociétés pétrolières (Art. 314)
+  const reductionPetroliere = input.isPetroliere ? patenteBrute * 0.5 : 0;
+  const patenteNette = arrondir(patenteBrute - reductionPetroliere);
+
+  // Centimes additionnels 5% (Art. 369 bis)
+  const centimes = arrondir(patenteNette * TAUX_CENTIMES);
+  const partCC = arrondir(centimes * PART_CHAMBRES_COMMERCE);
+  const partCL = arrondir(centimes * PART_COLLECTIVITES);
+
+  const totalAPayer = patenteNette + centimes;
 
   const nombreEntites = Math.max(1, input.nombreEntitesFiscales || 1);
-  const patenteParEntite = Math.round(patenteArrondie / nombreEntites / 10) * 10;
+  const totalParEntite = arrondir(totalAPayer / nombreEntites);
 
   return {
     chiffreAffaires: ca,
@@ -151,16 +193,22 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     patenteBrute,
     reductionStandBy: 0,
     patenteApresReduction: patenteBrute,
-    reduction50Pourcent: reduction50,
-    patenteNette: patenteArrondie,
-    patenteParEntite,
+    isPetroliere: input.isPetroliere,
+    reductionPetroliere,
+    patenteNette,
+    centimesAdditionnels: centimes,
+    partChambresCommerce: partCC,
+    partCollectivitesLocales: partCL,
+    totalAPayer,
+    totalParEntite,
     nombreEntites,
-    dateEcheance: patenteArrondie > 100_000 ? "2 fractions (Q2)" : "10-20 avril",
+    dateEcheance: totalAPayer > 100_000 ? "2 fractions (Q2)" : "10-20 avril",
     references: [
       "Art. 277 : Droit de patente",
       "Art. 278 : Assiette de la patente",
-      "Art. 314 : Tarifs (L.F.2023) - Reduction 50%",
-      "Art. 307 : Paiement",
+      "Art. 314 : Tarifs (L.F.2023)",
+      ...(input.isPetroliere ? ["Art. 314 : Réduction 50% sociétés pétrolières"] : []),
+      "Art. 369 bis : Centimes additionnels 5%",
     ],
   };
 }
