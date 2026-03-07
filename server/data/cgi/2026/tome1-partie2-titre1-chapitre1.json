@@ -999,12 +999,12 @@
       "titre": "Personnalité de la patente",
       "texte": [
         "Le titre de patente est personnel et ne peut servir qu'à celui à qui il a été délivré. Il doit :",
-        "- porter la photographie de celui au profit de qui il est établi lorsque le contribuable est un exploitant d'entreprise individuelle ;",
+        "- porter la photographie de celui au profit de qui il est établi lorsque le contribuable est un exploitant d'une entreprise individuelle ;",
         "- indiquer l'activité exercée dans l'entité ;",
         "- indiquer le nom et l'adresse de l'entité ;",
         "- indiquer le nom de l'exploitant ;",
         "- porter le NIU du contribuable ;",
-        "- porter le numéro de la patente.",
+        "- porter le montant de la patente.",
         "Le titre de patente n'est délivré que sur présentation d'une pièce d'identité en cours de validité (passeport, carte d'identité, permis de conduire ou carte de séjour pour les étrangers)."
       ],
       "mots_cles": [
@@ -1012,8 +1012,12 @@
         "titre de patente",
         "personnel",
         "photographie",
+        "entreprise individuelle",
         "NIU",
-        "pièce d'identité"
+        "montant patente",
+        "pièce d'identité",
+        "passeport",
+        "carte de séjour"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : IV. Personnalité de la patente"
@@ -1034,7 +1038,7 @@
       "article": "Art. 287",
       "titre": "Annualité de la patente",
       "texte": [
-        "La contribution de la patente est due pour l'année entière par toute personne exerçant une activité imposable prévue à l'article 277 du présent Code."
+        "La contribution de la patente est due pour l'année entière par toutes les personnes exerçant une activité imposable telle que prévue à l'article 277 du présent Code."
       ],
       "mots_cles": [
         "annualité",
@@ -1061,12 +1065,13 @@
       "article": "Art. 289",
       "titre": "Patente en cas de cession ou cessation",
       "texte": [
-        "La contribution de la patente d'une patente entièrement même si l'activité après une cession ou une fermeture d'entreprise pour une cause quelconque."
+        "La contribution de la patente doit être payée entièrement même s'il advient une cession ou une fermeture d'entreprise pour une cause quelconque."
       ],
       "mots_cles": [
+        "patente",
         "cession",
-        "cessation",
-        "fermeture d'entreprise"
+        "fermeture d'entreprise",
+        "payée entièrement"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : V. Annualité de la patente"
@@ -1089,13 +1094,13 @@
       "article": "Art. 291",
       "titre": "Justifications à produire",
       "texte": [
-        "Tout contribuable est tenu de présenter son titre de patente ou sa quittance de paiement lorsqu'il en sera requis par les agents de l'administration fiscale."
+        "Tout contribuable est tenu de présenter son titre de patente ainsi que la quittance de paiement lorsqu'ils sont requis par les agents de l'administration fiscale."
       ],
       "mots_cles": [
         "justifications",
         "titre de patente",
-        "quittance",
-        "contrôle fiscal"
+        "quittance de paiement",
+        "administration fiscale"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : VI. Justifications à produire"
@@ -1104,12 +1109,14 @@
       "article": "Art. 292",
       "titre": "Duplicata du titre de patente",
       "texte": [
-        "Le contribuable qui a perdu son titre de patente peut se faire délivrer un certificat tenant lieu de duplicata en s'adressant à l'inspecteur divisionnaire de la résidence fiscale."
+        "Le contribuable qui a perdu son titre de patente peut se faire délivrer un certificat tenant lieu de duplicata en s'adressant à l'inspecteur divisionnaire de sa résidence fiscale."
       ],
       "mots_cles": [
         "duplicata",
         "titre de patente",
+        "certificat",
         "inspecteur divisionnaire",
+        "résidence fiscale",
         "perte"
       ],
       "statut": "en vigueur",
@@ -1134,7 +1141,7 @@
       "article": "Art. 294",
       "titre": "Dispositions spéciales à certaines professions",
       "texte": [
-        "Par exception aux dispositions de l'article 279 bis ci-dessus, les sociétés étrangères intervenant au Congo en cours d'année pour une période inférieure à un an sont imposables pour l'année entière. Il en est ainsi des sociétés exerçant sous le régime de l'autorisation temporaire d'exercice (ATE).",
+        "Par exception aux dispositions de l'article 279 bis ci-dessus, les sociétés étrangères intervenant au Congo en cours d'année pour une période inférieure à un an sont imposables pour l'année entière. Il en est ainsi des sociétés exerçant sous le régime de l'autorisation temporaire d'exercer (ATE).",
         "Le montant servant de base de calcul de leur patente au titre de la première année est la valeur prévisionnelle annuelle convenue dans le contrat. Dans le cas d'un contrat dont l'exécution des travaux s'étend sur plusieurs années, cette valeur est déterminée par la règle du prorata temporis.",
         "En fin de période d'activité au Congo, si la valeur du ou des contrats dépasse celle déclarée précédemment, un complément de la contribution de la patente est dû."
       ],

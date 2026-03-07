@@ -6014,7 +6014,7 @@
   {
     "numero": "285",
     "titre": "Personnalité de la patente",
-    "contenu": "Le titre de patente est personnel et ne peut servir qu'à celui à qui il a été délivré. Il doit :\n- porter la photographie de celui au profit de qui il est établi lorsque le contribuable est un exploitant d'entreprise individuelle ;\n- indiquer l'activité exercée dans l'entité ;\n- indiquer le nom et l'adresse de l'entité ;\n- indiquer le nom de l'exploitant ;\n- porter le NIU du contribuable ;\n- porter le numéro de la patente.\nLe titre de patente n'est délivré que sur présentation d'une pièce d'identité en cours de validité (passeport, carte d'identité, permis de conduire ou carte de séjour pour les étrangers).",
+    "contenu": "Le titre de patente est personnel et ne peut servir qu'à celui à qui il a été délivré. Il doit :\n- porter la photographie de celui au profit de qui il est établi lorsque le contribuable est un exploitant d'une entreprise individuelle ;\n- indiquer l'activité exercée dans l'entité ;\n- indiquer le nom et l'adresse de l'entité ;\n- indiquer le nom de l'exploitant ;\n- porter le NIU du contribuable ;\n- porter le montant de la patente.\nLe titre de patente n'est délivré que sur présentation d'une pièce d'identité en cours de validité (passeport, carte d'identité, permis de conduire ou carte de séjour pour les étrangers).",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6022,8 +6022,12 @@
       "titre de patente",
       "personnel",
       "photographie",
+      "entreprise individuelle",
       "NIU",
-      "pièce d'identité"
+      "montant patente",
+      "pièce d'identité",
+      "passeport",
+      "carte de séjour"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
   },
@@ -6041,7 +6045,7 @@
   {
     "numero": "287",
     "titre": "Annualité de la patente",
-    "contenu": "La contribution de la patente est due pour l'année entière par toute personne exerçant une activité imposable prévue à l'article 277 du présent Code.",
+    "contenu": "La contribution de la patente est due pour l'année entière par toutes les personnes exerçant une activité imposable telle que prévue à l'article 277 du présent Code.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6066,13 +6070,14 @@
   {
     "numero": "289",
     "titre": "Patente en cas de cession ou cessation",
-    "contenu": "La contribution de la patente d'une patente entièrement même si l'activité après une cession ou une fermeture d'entreprise pour une cause quelconque.",
+    "contenu": "La contribution de la patente doit être payée entièrement même s'il advient une cession ou une fermeture d'entreprise pour une cause quelconque.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
+      "patente",
       "cession",
-      "cessation",
-      "fermeture d'entreprise"
+      "fermeture d'entreprise",
+      "payée entièrement"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
   },
@@ -6092,27 +6097,29 @@
   {
     "numero": "291",
     "titre": "Justifications à produire",
-    "contenu": "Tout contribuable est tenu de présenter son titre de patente ou sa quittance de paiement lorsqu'il en sera requis par les agents de l'administration fiscale.",
+    "contenu": "Tout contribuable est tenu de présenter son titre de patente ainsi que la quittance de paiement lorsqu'ils sont requis par les agents de l'administration fiscale.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "justifications",
       "titre de patente",
-      "quittance",
-      "contrôle fiscal"
+      "quittance de paiement",
+      "administration fiscale"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
   },
   {
     "numero": "292",
     "titre": "Duplicata du titre de patente",
-    "contenu": "Le contribuable qui a perdu son titre de patente peut se faire délivrer un certificat tenant lieu de duplicata en s'adressant à l'inspecteur divisionnaire de la résidence fiscale.",
+    "contenu": "Le contribuable qui a perdu son titre de patente peut se faire délivrer un certificat tenant lieu de duplicata en s'adressant à l'inspecteur divisionnaire de sa résidence fiscale.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "duplicata",
       "titre de patente",
+      "certificat",
       "inspecteur divisionnaire",
+      "résidence fiscale",
       "perte"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
@@ -6134,7 +6141,7 @@
   {
     "numero": "294",
     "titre": "Dispositions spéciales à certaines professions",
-    "contenu": "Par exception aux dispositions de l'article 279 bis ci-dessus, les sociétés étrangères intervenant au Congo en cours d'année pour une période inférieure à un an sont imposables pour l'année entière. Il en est ainsi des sociétés exerçant sous le régime de l'autorisation temporaire d'exercice (ATE).\nLe montant servant de base de calcul de leur patente au titre de la première année est la valeur prévisionnelle annuelle convenue dans le contrat. Dans le cas d'un contrat dont l'exécution des travaux s'étend sur plusieurs années, cette valeur est déterminée par la règle du prorata temporis.\nEn fin de période d'activité au Congo, si la valeur du ou des contrats dépasse celle déclarée précédemment, un complément de la contribution de la patente est dû.",
+    "contenu": "Par exception aux dispositions de l'article 279 bis ci-dessus, les sociétés étrangères intervenant au Congo en cours d'année pour une période inférieure à un an sont imposables pour l'année entière. Il en est ainsi des sociétés exerçant sous le régime de l'autorisation temporaire d'exercer (ATE).\nLe montant servant de base de calcul de leur patente au titre de la première année est la valeur prévisionnelle annuelle convenue dans le contrat. Dans le cas d'un contrat dont l'exécution des travaux s'étend sur plusieurs années, cette valeur est déterminée par la règle du prorata temporis.\nEn fin de période d'activité au Congo, si la valeur du ou des contrats dépasse celle déclarée précédemment, un complément de la contribution de la patente est dû.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
