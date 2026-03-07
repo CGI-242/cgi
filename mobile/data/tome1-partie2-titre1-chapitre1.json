@@ -188,124 +188,188 @@
       "section": "Section 2 : Contribution foncière des propriétés bâties : III. Exemptions temporaires"
     },
     {
-      "article": "Art. 255",
-      "titre": "Exemptions permanentes - Immeubles productifs de revenus",
+      "article": "Art. 254 bis",
+      "titre": "Exemptions temporaires - Location et villégiature",
       "texte": [
-        "Abrogé."
+        "Nonobstant les dispositions de l'article 254, les constructions nouvelles, les reconstructions et les additions de constructions susceptibles de bénéficier de l'exemption temporaire de 5 ans ou de 10 ans stipulée ci-dessus tombent dans le champ d'application de l'impôt foncier lorsqu'elles sont mises en location, meublée ou non, ou lorsqu'elles sont destinées à la villégiature ou à l'agrément."
       ],
       "mots_cles": [
-        "exemption",
-        "abrogé"
+        "exemption temporaire",
+        "article 254",
+        "constructions nouvelles",
+        "reconstructions",
+        "additions de constructions",
+        "5 ans",
+        "10 ans",
+        "impôt foncier",
+        "location",
+        "location meublée",
+        "villégiature",
+        "agrément"
       ],
-      "statut": "abrogé",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution foncière des propriétés bâties : III. Exemptions temporaires"
+    },
+    {
+      "article": "Art. 255",
+      "titre": "Conditions d'exonération",
+      "texte": [
+        "Pour bénéficier de l'exonération temporaire prévue à l'article précédent, les propriétaires devront obligatoirement remplir les deux conditions ci-après :",
+        "1° être titulaire d'un permis de construire délivré par l'administration ;",
+        "2° souscrire auprès de l'inspection divisionnaire des contributions directes et indirectes, dans le délai de quatre mois à partir de l'ouverture des travaux, une déclaration indiquant la nature du bâtiment, sa destination, la superficie qu'il couvrira, la désignation du terrain, le numéro du titre foncier, le numéro du lot et de la parcelle.",
+        "Cette déclaration devra être appuyée d'un plan et d'un croquis côté.",
+        "À défaut de déclaration dans le délai fixé à l'alinéa précédent, les immobilisations en cause seront soumises à la contribution foncière dès le 1er janvier de l'année qui suit celle de leur achèvement."
+      ],
+      "mots_cles": [
+        "conditions d'exonération",
+        "exonération temporaire",
+        "permis de construire",
+        "inspection divisionnaire",
+        "contributions directes et indirectes",
+        "déclaration",
+        "titre foncier",
+        "plan",
+        "croquis côté",
+        "contribution foncière"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution foncière des propriétés bâties : III. Exemptions temporaires"
     },
     {
       "article": "Art. 256",
-      "titre": "Exemptions temporaires - Constructions nouvelles à usage industriel",
+      "titre": "Construction nouvelle - Conversion",
       "texte": [
-        "Abrogé."
+        "Est considérée comme construction nouvelle, la conversion d'un bâtiment exonéré de la contribution foncière passible de cet impôt."
       ],
       "mots_cles": [
-        "exemption",
-        "abrogé"
+        "construction nouvelle",
+        "conversion",
+        "bâtiment exonéré",
+        "contribution foncière"
       ],
-      "statut": "abrogé",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution foncière des propriétés bâties : III. Exemptions temporaires"
     },
     {
       "article": "Art. 257",
-      "titre": "Base d'imposition",
+      "titre": "Base d'imposition - Propriétés à usage d'habitation",
       "texte": [
-        "La contribution foncière des propriétés bâties est calculée d'après la valeur locative cadastrale de ces propriétés."
+        "La contribution foncière des propriétés bâties à usage d'habitation est réglée à raison d'une valeur imposable égale à la valeur cadastrale de ces propriétés, sous déduction de 75 % en considération du dépérissement et des frais d'entretien et de réparation.",
+        "La valeur locative des sols, des bâtiments de toute nature et des terrains visés au sens de l'article 252-1° entre, le cas échéant, dans l'estimation de la valeur servant de base à la contribution foncière des propriétés bâties afférente à ces constructions."
       ],
       "mots_cles": [
         "base d'imposition",
         "contribution foncière",
-        "valeur locative cadastrale"
+        "usage d'habitation",
+        "valeur imposable",
+        "valeur cadastrale",
+        "déduction 75%",
+        "dépérissement",
+        "entretien",
+        "réparation",
+        "article 252"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Contribution foncière des propriétés bâties : IV. Base d'imposition"
     },
     {
       "article": "Art. 257 bis",
-      "titre": "Déduction pour frais de gestion",
+      "titre": "Base d'imposition - Propriétés en location ou usage professionnel",
       "texte": [
-        "Le revenu servant de base à la contribution foncière des propriétés bâties est la valeur locative cadastrale de ces propriétés déduction faite de 75 % de son montant en considération des frais de gestion, d'assurance, d'amortissement, d'entretien et de réparation."
+        "La contribution foncière des propriétés bâties mises en location ou affectés à un usage professionnel est réglée à raison d'une valeur imposable égale à la valeur locative de ces propriétés, sous déduction de 75 % en considération du dépérissement et des frais d'entretien et de réparation.",
+        "La valeur locative des sols, des bâtiments de toute nature et des terrains visés à l'article 252-1° entre, le cas échéant, dans l'estimation de la valeur servant de base à la contribution foncière des propriétés bâties afférente à ces constructions."
       ],
       "mots_cles": [
+        "contribution foncière",
+        "location",
+        "usage professionnel",
+        "valeur imposable",
         "valeur locative",
         "déduction 75%",
-        "frais de gestion",
-        "assurance",
-        "amortissement",
+        "dépérissement",
         "entretien",
-        "réparation"
+        "réparation",
+        "article 252"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "section": "Section 2 : Contribution foncière des propriétés bâties : IV. Base d'imposition"
     },
     {
       "article": "Art. 258",
-      "titre": "Valeur cadastrale - Éléments de calcul",
+      "titre": "Évaluation de la valeur cadastrale - Habitation",
       "texte": [
-        "La valeur locative cadastrale est déterminée en fonction de la localisation de l'immeuble et de sa surface développée hors œuvre."
+        "L'évaluation de la valeur cadastrale des locaux à usage d'habitation destinée à servir de base à la contribution foncière des propriétés bâties est déterminée en fonction des paramètres ci-après :",
+        "- la localisation ;",
+        "- la surface bâtie.",
+        "La valeur cadastrale est égale au prix du mètre carré multiplié par la surface bâtie.",
+        "Le prix du mètre carré est fixé selon les zones visées à l'article 258 ter ci-dessous."
       ],
       "mots_cles": [
         "valeur cadastrale",
+        "locaux à usage d'habitation",
+        "contribution foncière",
         "localisation",
-        "surface développée",
-        "hors œuvre"
+        "surface bâtie",
+        "prix du mètre carré",
+        "article 258 ter",
+        "zones"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "section": "Section 2 : Contribution foncière des propriétés bâties : IV. Base d'imposition"
     },
     {
       "article": "Art. 258 bis",
-      "titre": "Détermination de la valeur locative",
+      "titre": "Détermination de la valeur locative - Location et usage professionnel",
       "texte": [
-        "La valeur locative de chaque propriété imposable est déterminée soit :",
-        "1) au moyen du bail authentique ou sous signature privée passé dans les conditions normales ;",
-        "2) par comparaison avec d'autres locaux dont le loyer aura été régulièrement constaté, ou sera notoirement connu ;",
-        "3) par voie d'appréciation directe, si les deux premiers procédés de détermination sont inapplicables."
+        "La valeur locative destinée à servir de base à la contribution foncière des propriétés bâties données en location ou affectées à un usage professionnel est déterminée soit au moyen des baux authentiques ou des locations verbales, soit par comparaison avec d'autres locaux dont le loyer aura été régulièrement constaté ou notoirement connu, soit à défaut de ces bases, par l'appréciation directe."
       ],
       "mots_cles": [
         "valeur locative",
-        "bail authentique",
-        "signature privée",
+        "contribution foncière",
+        "location",
+        "usage professionnel",
+        "baux authentiques",
+        "locations verbales",
         "comparaison",
         "appréciation directe"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "section": "Section 2 : Contribution foncière des propriétés bâties : IV. Base d'imposition"
     },
     {
       "article": "Art. 258 ter",
       "titre": "Prix du mètre carré par zone",
       "texte": [
-        "Le prix du mètre carré est fixé ainsi qu'il suit :",
-        "- Zone 1 : 250 FCFA ;",
-        "- Zone 2 : 150 FCFA ;",
-        "- Zone 3 (chefs-lieux de districts) : 25 FCFA ;",
-        "- Zone 4 (autres localités) : 12,5 FCFA.",
+        "Le prix du mètre carré prévu à l'article 258 ci-dessus est fixé comme suit :",
+        "- zone n°1 (centre-ville des communes de pleine exercice) : 250 FCFA ;",
+        "- zone n°2 (les arrondissements des communes de pleine exercice et les chefs-lieux de départements) : 150 FCFA ;",
+        "- zone n°3 (chefs-lieux de districts) : 25 FCFA ;",
+        "- zone n°4 (autres localités) : 12,5 FCFA.",
         "Le prix du mètre carré est diminué de moitié pour chaque étage concernant les bâtiments à niveau.",
         "La composition des zones est fixée par voie réglementaire."
       ],
       "mots_cles": [
-        "prix m²",
-        "zone 1",
-        "zone 2",
-        "zone 3",
-        "zone 4",
+        "prix du mètre carré",
+        "article 258",
+        "zone n°1",
+        "centre-ville",
+        "communes de pleine exercice",
         "250 FCFA",
+        "zone n°2",
+        "arrondissements",
+        "chefs-lieux de départements",
         "150 FCFA",
+        "zone n°3",
+        "chefs-lieux de districts",
         "25 FCFA",
+        "zone n°4",
+        "autres localités",
         "12,5 FCFA",
         "réduction par étage",
         "réglementaire"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Contribution foncière des propriétés bâties"
+      "section": "Section 2 : Contribution foncière des propriétés bâties : IV. Base d'imposition"
     },
     {
       "article": "Art. 259",
