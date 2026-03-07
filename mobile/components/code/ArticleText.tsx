@@ -91,7 +91,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
               <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: "#D4A017", minWidth: 30 }}>
                 {marker}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1, textAlign: 'justify' }}>
                 {renderInlineRoman(line.replace(/^\d+°\s*/, ""))}
               </Text>
             </View>
@@ -104,7 +104,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
               <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.primary, width: 24 }}>
                 {line.match(/^(\d+[\.\)])/)?.[1]}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1, textAlign: 'justify' }}>
                 {renderInlineRoman(line.replace(/^\d+[\.\)]\s*/, ""))}
               </Text>
             </View>
@@ -117,7 +117,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
               <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.textMuted, width: 20 }}>
                 {line.match(/^([a-z]\))/)?.[1]}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1, textAlign: 'justify' }}>
                 {renderInlineRoman(line.replace(/^[a-z]\)\s*/, ""))}
               </Text>
             </View>
@@ -131,7 +131,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
               <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.primary, width: 28 }}>
                 {marker}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1, textAlign: 'justify' }}>
                 {line.replace(/^\([ivx]+\)\s*/, "")}
               </Text>
             </View>
@@ -143,7 +143,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
           return wrapLine(i,
             <View style={{ flexDirection: "row", marginBottom: 4, paddingLeft: isSubBullet ? 32 : 16 }}>
               <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: isSubBullet ? colors.textMuted : colors.primary, marginRight: 8 }}>{isSubBullet ? "○" : "•"}</Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1, textAlign: 'justify' }}>
                 {renderInlineRoman(line.replace(/^[-•○]\s*/, ""))}
               </Text>
             </View>
@@ -151,7 +151,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         }
 
         return wrapLine(i,
-          <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, marginBottom: 8 }}>
+          <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, marginBottom: 8, textAlign: 'justify' }}>
             {renderInlineRoman(line)}
           </Text>
         );
