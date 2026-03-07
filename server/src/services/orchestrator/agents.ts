@@ -274,10 +274,10 @@ Structure TFNC4 :
 TOUJOURS citer : "TFNC4 (titre X.Y — nom de la taxe)" dans la référence.`,
   },
   {
-    id: 'agent-sanctions',
-    name: 'Agent Sanctions',
-    description: 'Spécialisé sanctions fiscales, pénalités, amendes et sanctions pénales',
-    keywords: ['sanction', 'sanctions', 'pénalité', 'penalite', 'pénalités', 'penalites', 'amende', 'amendes', 'majoration', 'majorations', 'intérêt de retard', 'interet de retard', 'retard déclaration', 'retard declaration', 'défaut déclaration', 'defaut declaration', 'fraude fiscale', 'mauvaise foi', 'bonne foi', 'manoeuvres frauduleuses', 'taxation d\'office', 'insuffisance', 'omission', 'infraction', 'sanctions pénales', 'sanctions penales', 'emprisonnement', 'prison', 'quitus fiscal'],
+    id: 'agent-sanctions-declaratives',
+    name: 'Agent Sanctions & Contrôle fiscal',
+    description: 'Spécialisé sanctions déclaratives, prescriptions, vérifications, droit de communication, secret professionnel et sanctions pénales',
+    keywords: ['sanction', 'sanctions', 'pénalité', 'penalite', 'pénalités', 'penalites', 'amende', 'amendes', 'majoration', 'majorations', 'intérêt de retard', 'interet de retard', 'retard déclaration', 'retard declaration', 'défaut déclaration', 'defaut declaration', 'fraude fiscale', 'mauvaise foi', 'bonne foi', 'manoeuvres frauduleuses', 'taxation d\'office', 'insuffisance', 'omission', 'infraction', 'sanctions pénales', 'sanctions penales', 'emprisonnement', 'prison', 'prescription', 'vérification', 'verification', 'contrôle fiscal', 'controle fiscal', 'droit de communication', 'secret professionnel', 'commission des impôts', 'commission des impots', 'marchés publics', 'marches publics', 'convention fiscale'],
     patterns: [
       /\b(sanction|p[eé]nalit[eé]|amende|majoration)[s]?\s*(fiscal|fiscale|de\s+retard)?\b/i,
       /\b(d[eé]faut|retard|absence)\s+(de\s+)?d[eé]claration\b/i,
@@ -285,17 +285,23 @@ TOUJOURS citer : "TFNC4 (titre X.Y — nom de la taxe)" dans la référence.`,
       /\b(fraude|mauvaise\s+foi|man[oœ]uvres?\s+frauduleuse)\b/i,
       /\btaxation\s+d.office\b/i,
       /\b(insuffisance|omission|inexactitude)\s+(d[eé]clarative|fiscale)?\b/i,
-      /\bart\.?\s*(37[2-9]|38[0-9]|39[0-9]|4[0-6][0-9]|5[12][0-6])\b/i,
+      /\bart\.?\s*(37[2-9]|38[0-9]|39[0-9]|40[0-6])\b/i,
       /\b(100|50|200)\s*%\s*(majoration|p[eé]nalit[eé])\b/i,
       /\bvente[s]?\s+sans\s+facture\b/i,
-      /\b(prescription|r[eé]clamation)\s*(fiscal[e]?)?\b/i,
+      /\bprescription\s*(fiscal[e]?)?\b/i,
+      /\bv[eé]rification\s*(de\s+comptabilit[eé]|fiscal[e]?)?\b/i,
+      /\bcontr[oô]le\s+fiscal\b/i,
+      /\bdroit\s+de\s+communication\b/i,
+      /\bsecret\s+professionnel\b/i,
+      /\bcommission\s+des\s+imp[oô]ts\b/i,
+      /\bart\.?\s*(52[1-6])\b/i,
     ],
-    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'Partie 4', 'sanctions', 'pénalités'], keywords: ['sanction', 'pénalité', 'amende', 'majoration', 'fraude', 'infraction'] },
-    systemInstruction: `Tu es spécialisé dans les sanctions et pénalités fiscales — Tome 1, Parties 3 et 4 du CGI 2026 (Art. 372 à 526).
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'Partie 4', 'sanctions', 'pénalités'], keywords: ['sanction', 'pénalité', 'amende', 'majoration', 'fraude', 'infraction', 'vérification', 'prescription', 'droit de communication'] },
+    systemInstruction: `Tu es spécialisé dans les sanctions fiscales et le contrôle fiscal — Tome 1, Partie 3 Titre 1 (Art. 372-406 bis) + Partie 4 (Art. 521-526) du CGI 2026.
 
-PARTIE 3 — SANCTIONS ADMINISTRATIVES (Art. 372-520E) :
+TITRE 1 — SANCTIONS ET CONTRÔLE FISCAL (Art. 372-406 bis) :
 
-Titre 1 — Sanctions pour infractions déclaratives (Art. 372-381 quinquies) :
+Chapitre 1 — Sanctions pour infractions déclaratives (Art. 372-381 quinquies) :
 - Art. 372 : Taxation d'office → majoration 100%
 - Art. 373 : Non-production déclaration → majoration 50% ; retard → 15 000 F/jour (max 500 000 F) ; aucun droit dû → amende 500 000 F
 - Art. 373 : TVA/accises retard → intérêt 5%/mois ou pénalité 15%/mois (max 50%)
@@ -310,9 +316,25 @@ Titre 1 — Sanctions pour infractions déclaratives (Art. 372-381 quinquies) :
 - Art. 379 : Infractions documentaires → perte droit déduction + 200 000 F + 100%
 - Art. 381 bis : Défaut justification taxe véhicules → 100%
 
-Titre 2 — Émission des rôles et recouvrement (Art. 407-421)
-Titre 3 — Contentieux fiscal (Art. 422-458 bis) : réclamation, transaction (Art. 422 bis), recours hiérarchique 30j (Art. 422 ter)
-Titre 4 — Dispositions générales recouvrement (Art. 459-520E) : droit de communication, quitus fiscal
+Chapitre 2 — Prescriptions (Art. 382-383) :
+- Art. 382 : Prescription 4 ans (droit commun), 6 ans (fraude)
+- Art. 383 : Interruption de prescription
+
+Chapitre 3 — Changement du lieu d'imposition (Art. 384)
+
+Chapitre 4 — Conventions fiscales internationales (Art. 385-386 bis)
+
+Chapitre 5 — Vérification des contribuables (Art. 387-390 bis J) :
+- Vérification de comptabilité, ESFP, procédures contradictoires
+
+Chapitre 6 — Droit de communication (Art. 391-399 quater) :
+- Obligations des tiers, registres, banques, administrations
+
+Chapitre 7 — Commission des impôts (Art. 400-403)
+
+Chapitre 8 — Secret professionnel (Art. 404-406)
+
+Chapitre 9 — Marchés publics (Art. 406 bis)
 
 PARTIE 4 — SANCTIONS PÉNALES (Art. 521-526) :
 - Art. 521 : Avoirs étrangers dissimulés → amende = moitié avoir + affichage nom
@@ -322,8 +344,138 @@ PARTIE 4 — SANCTIONS PÉNALES (Art. 521-526) :
 - Art. 525 : Dirigeants personnes morales → responsables (PDG, DG, gérant)
 - Art. 526 : Contravention droit de communication → peines Art. 522-525
 
-Prescription : 4 ans (droit commun), 6 ans (fraude — Art. 382).
-TOUJOURS citer : "Tome 1, Partie 3, Titre X, Art. Y" ou "Tome 1, Partie 4, Art. Y" dans la référence.`,
+TOUJOURS citer : "Tome 1, Partie 3, Titre 1, Chapitre X, Art. Y" dans la référence.`,
+  },
+  {
+    id: 'agent-roles-recouvrement',
+    name: 'Agent Émission des rôles',
+    description: 'Spécialisé émission, approbation et mise en recouvrement des rôles fiscaux',
+    keywords: ['rôle', 'role', 'rôles', 'roles', 'émission des rôles', 'emission des roles', 'approbation des rôles', 'approbation des roles', 'mise en recouvrement', 'recouvrement', 'avertissement', 'exigibilité', 'exigibilite', 'titre de perception', 'homologation', 'contribuable omis', 'cote indûment imposée'],
+    patterns: [
+      /\b[eé]mission\s+des\s+r[oô]les?\b/i,
+      /\bapprobation\s+des\s+r[oô]les?\b/i,
+      /\bmise\s+en\s+recouvrement\b/i,
+      /\br[oô]le[s]?\s+(fiscal|fiscaux|d.imp[oô]t|nominatif)\b/i,
+      /\bhomologation\s+des\s+r[oô]les?\b/i,
+      /\btitre[s]?\s+de\s+perception\b/i,
+      /\bexigibilit[eé]\s+(de\s+l.imp[oô]t)?\b/i,
+      /\bart\.?\s*(40[7-9]|41[0-9]|42[01])\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'rôles', 'recouvrement'], keywords: ['rôle', 'émission', 'approbation', 'mise en recouvrement', 'homologation'] },
+    systemInstruction: `Tu es spécialisé dans l'émission et le recouvrement des rôles fiscaux — Tome 1, Partie 3, Titre 2 du CGI 2026 (Art. 407 à 421).
+
+TITRE 2 — ÉMISSION DES RÔLES ET RECOUVREMENT (Art. 407-421) :
+
+Chapitre 1 — Émission des rôles (Art. 407-409) :
+- Art. 407 : Établissement des rôles par l'administration
+- Art. 408 : Contenu des rôles (identité, base, montant)
+- Art. 409 : Rôles supplémentaires
+
+Chapitre 2 — Approbation des rôles (Art. 410-414) :
+- Art. 410 : Homologation par le directeur des impôts
+- Art. 411 : Délai d'homologation
+- Art. 412 : Avertissements aux contribuables
+- Art. 413-414 : Réclamations contre les rôles
+
+Chapitre 3 — Mise en recouvrement (Art. 415-421) :
+- Art. 415 : Date de mise en recouvrement
+- Art. 416 : Exigibilité de l'impôt
+- Art. 417 : Pénalités de retard de paiement
+- Art. 418-421 : Poursuites, commandement, saisie
+
+TOUJOURS citer : "Tome 1, Partie 3, Titre 2, Chapitre X, Art. Y" dans la référence.`,
+  },
+  {
+    id: 'agent-contentieux',
+    name: 'Agent Contentieux fiscal',
+    description: 'Spécialisé contentieux fiscal, réclamations, juridictions contentieuse et gracieuse, transactions',
+    keywords: ['contentieux', 'contentieux fiscal', 'réclamation', 'reclamation', 'réclamations', 'reclamations', 'recours', 'recours hiérarchique', 'recours hierarchique', 'recours contentieux', 'recours gracieux', 'transaction', 'transaction fiscale', 'juridiction contentieuse', 'juridiction gracieuse', 'sursis de paiement', 'dégrèvement', 'degrevement', 'décharge', 'decharge', 'remise', 'modération', 'moderation', 'tribunal', 'cour d\'appel', 'arbitrage'],
+    patterns: [
+      /\bcontentieux\s*(fiscal)?\b/i,
+      /\br[eé]clamation[s]?\s*(fiscal[e]?|contentieuse)?\b/i,
+      /\brecours\s+(hi[eé]rarchique|contentieux|gracieux)\b/i,
+      /\btransaction\s*(fiscal[e]?)?\b/i,
+      /\bjuridiction\s+(contentieuse|gracieuse)\b/i,
+      /\bsursis\s+de\s+paiement\b/i,
+      /\b(d[eé]gr[eè]vement|d[eé]charge|remise|mod[eé]ration)\s*(d.imp[oô]t|fiscal[e]?)?\b/i,
+      /\bart\.?\s*(42[2-9]|4[3-5][0-9]|458)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'contentieux', 'réclamation'], keywords: ['contentieux', 'réclamation', 'recours', 'transaction', 'dégrèvement', 'juridiction'] },
+    systemInstruction: `Tu es spécialisé dans le contentieux fiscal — Tome 1, Partie 3, Titre 3 du CGI 2026 (Art. 422 à 458 bis).
+
+TITRE 3 — CONTENTIEUX FISCAL (Art. 422-458 bis) :
+
+Chapitre 1 — Domaines respectifs des juridictions (Art. 422-425) :
+- Art. 422 : Compétence juridiction contentieuse vs gracieuse
+- Art. 422 bis : Transaction fiscale — conditions et effets
+- Art. 422 ter : Recours hiérarchique — délai 30 jours
+- Art. 423-425 : Répartition des compétences
+
+Chapitre 2 — Juridiction contentieuse (Art. 423-445) :
+- Réclamations préalables, délais, formes
+- Sursis de paiement
+- Instruction des réclamations
+- Décisions du directeur des impôts
+- Recours devant le tribunal, cour d'appel
+
+Chapitre 3 — Juridiction gracieuse (Art. 446-457) :
+- Demandes de remise ou modération
+- Dégrèvements d'office
+- Conditions de recevabilité
+
+Chapitre 4 — Dispositions communes (Art. 458-458 bis)
+
+TOUJOURS citer : "Tome 1, Partie 3, Titre 3, Chapitre X, Art. Y" dans la référence.`,
+  },
+  {
+    id: 'agent-recouvrement-general',
+    name: 'Agent Recouvrement & Poursuites',
+    description: 'Spécialisé dispositions générales de recouvrement, poursuites, paiement différé, quitus fiscal',
+    keywords: ['recouvrement', 'poursuite', 'poursuites', 'commandement', 'saisie', 'contrainte', 'avis à tiers détenteur', 'avis a tiers detenteur', 'ATD', 'quitus fiscal', 'quitus', 'paiement différé', 'paiement differe', 'paiement échelonné', 'paiement echelonne', 'frais de poursuite', 'privilège du trésor', 'privilege du tresor', 'solidarité fiscale', 'solidarite fiscale', 'responsabilité solidaire', 'responsabilite solidaire', 'hypothèque légale', 'hypotheque legale', 'fermeture établissement', 'fermeture etablissement'],
+    patterns: [
+      /\brecouvrement\s*(fiscal|forc[eé]|de\s+l.imp[oô]t)?\b/i,
+      /\bpoursuite[s]?\s*(fiscal[es]?)?\b/i,
+      /\bcommandement\s*(de\s+payer)?\b/i,
+      /\bsaisie[s]?\s*(conservatoire|attribution|vente)?\b/i,
+      /\bavis\s+[àa]\s+tiers\s+d[eé]tenteur\b/i,
+      /\bATD\b/,
+      /\bquitus\s+fiscal\b/i,
+      /\bpaiement\s+(diff[eé]r[eé]|[eé]chelonn[eé])\b/i,
+      /\bfrais\s+de\s+poursuite\b/i,
+      /\bprivil[eè]ge\s+du\s+tr[eé]sor\b/i,
+      /\bsolidarit[eé]\s+fiscal[e]?\b/i,
+      /\bhypoth[eè]que\s+l[eé]gale\b/i,
+      /\bfermeture\s+[eé]tablissement\b/i,
+      /\bart\.?\s*(45[9]|4[6-9][0-9]|5[01][0-9]|520)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Partie 3', 'recouvrement', 'poursuites'], keywords: ['recouvrement', 'poursuite', 'quitus', 'ATD', 'saisie', 'commandement', 'paiement différé'] },
+    systemInstruction: `Tu es spécialisé dans le recouvrement fiscal — Tome 1, Partie 3, Titre 4 du CGI 2026 (Art. 459 à 520E).
+
+TITRE 4 — DISPOSITIONS GÉNÉRALES DE RECOUVREMENT (Art. 459-520E) :
+
+Chapitre 1 — Dispositions générales (Art. 459-518 quater A) :
+- Privilège du Trésor et rang des créances fiscales
+- Solidarité fiscale (époux, associés, dirigeants)
+- Hypothèque légale du Trésor
+- Avis à tiers détenteur (ATD) — saisie sur comptes bancaires
+- Commandement de payer
+- Saisie conservatoire et saisie-vente
+- Contrainte extérieure
+- Fermeture temporaire d'établissement
+- Opposition au paiement des loyers
+- Responsabilité des comptables publics
+
+Chapitre 2 — Paiement différé ou échelonné (Art. 518 quater-520E) :
+- Conditions d'octroi du paiement différé
+- Échéanciers de paiement
+- Garanties exigées
+
+Chapitre 3 — Frais de poursuite et recouvrement (Art. 518 quater B-520E) :
+- Tarif des frais de poursuite
+- Répartition des frais entre Trésor et contribuable
+- Quitus fiscal — délivrance et conditions
+
+TOUJOURS citer : "Tome 1, Partie 3, Titre 4, Chapitre X, Art. Y" dans la référence.`,
   },
   {
     id: 'agent-incitations',
