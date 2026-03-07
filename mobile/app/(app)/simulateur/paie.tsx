@@ -312,7 +312,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: fontWeights.heading,
     fontFamily: fonts.heading,
     marginBottom: 12,
@@ -322,15 +322,15 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   descriptionText13: {
-    fontSize: 13,
+    fontSize: 15,
   },
   label13: {
-    fontSize: 13,
+    fontSize: 15,
     fontWeight: "600",
     marginBottom: 2,
   },
   label13mt12: {
-    fontSize: 13,
+    fontSize: 15,
     fontWeight: "600",
     marginTop: 12,
     marginBottom: 2,
@@ -356,13 +356,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   counterButtonText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   counterValue: {
     minWidth: 28,
     textAlign: "center",
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   partsBox: {
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   partsText: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "700",
   },
   toggleRow: {
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   toggleLabel: {
-    fontSize: 13,
+    fontSize: 15,
     fontWeight: "600",
   },
   brutBox: {
@@ -399,19 +399,19 @@ const styles = StyleSheet.create({
     padding: 14,
   },
   brutLabel: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "600",
   },
   brutValue: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: "800",
   },
   exonereText: {
-    fontSize: 12,
+    fontSize: 14,
     marginTop: 4,
   },
   legalRef: {
-    fontSize: 12,
+    fontSize: 14,
     marginTop: 12,
   },
 });

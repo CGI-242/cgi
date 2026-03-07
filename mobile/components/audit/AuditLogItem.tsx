@@ -98,7 +98,7 @@ export default function AuditLogItem({
             }}
           >
             <Text
-              style={{ fontSize: 14, fontWeight: "600", color: colors.text }}
+              style={{ fontSize: 16, fontWeight: "600", color: colors.text }}
             >
               {ACTION_LABELS[log.action] || log.action}
             </Text>
@@ -111,7 +111,7 @@ export default function AuditLogItem({
             >
               <Text
                 style={{
-                  fontSize: 10,
+                  fontSize: 12,
                   fontWeight: "600",
                   color: colors.textSecondary,
                 }}
@@ -120,10 +120,10 @@ export default function AuditLogItem({
               </Text>
             </View>
           </View>
-          <Text style={{ fontSize: 12, color: colors.textMuted }}>
+          <Text style={{ fontSize: 14, color: colors.textMuted }}>
             {log.actorEmail}
           </Text>
-          <Text style={{ fontSize: 11, color: colors.disabled }}>
+          <Text style={{ fontSize: 13, color: colors.disabled }}>
             {formatTimestamp(log.createdAt)}
           </Text>
         </View>
@@ -148,7 +148,7 @@ export default function AuditLogItem({
             >
               <Text
                 style={{
-                  fontSize: 12,
+                  fontSize: 14,
                   fontWeight: "600",
                   color: colors.textSecondary,
                   marginBottom: 4,
@@ -160,7 +160,7 @@ export default function AuditLogItem({
                 style={{
                   fontFamily:
                     Platform.OS === "ios" ? "Menlo" : "monospace",
-                  fontSize: 11,
+                  fontSize: 13,
                   color: colors.text,
                 }}
               >
@@ -185,7 +185,7 @@ export default function AuditLogItem({
               />
               <Text
                 style={{
-                  fontSize: 13,
+                  fontSize: 15,
                   color: colors.primary,
                   fontWeight: "600",
                 }}

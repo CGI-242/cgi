@@ -68,16 +68,16 @@ export default function PlusScreen() {
             justifyContent: "center",
           }}
         >
-          <Text style={{ color: "#fff", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18 }}>
+          <Text style={{ color: "#fff", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 20 }}>
             {initials}
           </Text>
         </View>
         <View style={{ flex: 1 }}>
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 17, color: colors.text }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 19, color: colors.text }}>
             {displayName}
           </Text>
           {user?.email && (
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textSecondary, marginTop: 2 }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textSecondary, marginTop: 2 }}>
               {user.email}
             </Text>
           )}
@@ -122,11 +122,11 @@ export default function PlusScreen() {
               <Ionicons name={item.icon} size={18} color={colors.primary} />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.text }}>
                 {t(item.labelKey)}
               </Text>
               {item.descKey && (
-                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, marginTop: 1 }}>
+                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginTop: 1 }}>
                   {t(item.descKey)}
                 </Text>
               )}
@@ -150,7 +150,7 @@ export default function PlusScreen() {
         }}
       >
         <Ionicons name="log-out-outline" size={18} color={colors.danger} />
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.danger }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.danger }}>
           {t("auth.logout")}
         </Text>
       </TouchableOpacity>
@@ -161,7 +161,7 @@ export default function PlusScreen() {
           textAlign: "center",
           fontFamily: fonts.regular,
           fontWeight: fontWeights.regular,
-          fontSize: 12,
+          fontSize: 14,
           color: colors.textMuted,
           marginTop: 24,
         }}

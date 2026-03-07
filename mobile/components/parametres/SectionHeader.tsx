@@ -12,7 +12,7 @@ export default function SectionHeader({ title, colors }: Props) {
     <Text
       style={{
         color: colors.textSecondary,
-        fontSize: 12,
+        fontSize: 14,
         fontFamily: fonts.bold,
         fontWeight: fontWeights.bold,
         letterSpacing: 0.5,

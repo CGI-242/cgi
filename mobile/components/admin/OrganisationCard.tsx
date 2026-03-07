@@ -70,15 +70,15 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
       {/* Entete org */}
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
         <View style={{ flex: 1 }}>
-          <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{org.name}</Text>
-          <Text style={{ fontSize: 12, color: colors.textMuted }}>{org.slug}</Text>
+          <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{org.name}</Text>
+          <Text style={{ fontSize: 14, color: colors.textMuted }}>{org.slug}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           <View style={{ backgroundColor: `${planColor}20`, paddingHorizontal: 8, paddingVertical: 3 }}>
-            <Text style={{ fontSize: 12, fontWeight: "700", color: planColor }}>{plan}</Text>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: planColor }}>{plan}</Text>
           </View>
           <View style={{ backgroundColor: `${statusColor}20`, paddingHorizontal: 8, paddingVertical: 3 }}>
-            <Text style={{ fontSize: 12, fontWeight: "700", color: statusColor }}>{statusLabel(status)}</Text>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: statusColor }}>{statusLabel(status)}</Text>
           </View>
         </View>
       </View>
@@ -86,8 +86,8 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
       {/* Quota */}
       <View style={{ marginBottom: 10 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 4 }}>
-          <Text style={{ fontSize: 12, color: colors.textSecondary }}>Questions (total org.)</Text>
-          <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text }}>{quota}</Text>
+          <Text style={{ fontSize: 14, color: colors.textSecondary }}>Questions (total org.)</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{quota}</Text>
         </View>
         <View style={{ height: 6, backgroundColor: colors.border }}>
           <View
@@ -103,24 +103,24 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
       {/* Infos */}
       <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 12 }}>
         <View>
-          <Text style={{ fontSize: 11, color: colors.textMuted }}>Expire le</Text>
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{formatDate(sub?.currentPeriodEnd || null)}</Text>
+          <Text style={{ fontSize: 13, color: colors.textMuted }}>Expire le</Text>
+          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>{formatDate(sub?.currentPeriodEnd || null)}</Text>
         </View>
         <View>
-          <Text style={{ fontSize: 11, color: colors.textMuted }}>Membres / Sièges</Text>
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>
+          <Text style={{ fontSize: 13, color: colors.textMuted }}>Membres / Sièges</Text>
+          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>
             {org.memberCount} / {sub?.paidSeats ?? org.memberCount}
           </Text>
         </View>
         <View>
-          <Text style={{ fontSize: 11, color: colors.textMuted }}>Prix total/an</Text>
-          <Text style={{ fontSize: 13, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
+          <Text style={{ fontSize: 13, color: colors.textMuted }}>Prix total/an</Text>
+          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
         </View>
       </View>
 
       {/* Input sièges */}
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10, gap: 8 }}>
-        <Text style={{ fontSize: 13, color: colors.textSecondary }}>Sièges à activer :</Text>
+        <Text style={{ fontSize: 15, color: colors.textSecondary }}>Sièges à activer :</Text>
         <TextInput
           value={seatsValue}
           onChangeText={(v) => onSeatsChange(v.replace(/[^0-9]/g, ""))}
@@ -131,7 +131,7 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
             backgroundColor: colors.background,
             paddingHorizontal: 12,
             paddingVertical: 6,
-            fontSize: 14,
+            fontSize: 16,
             color: colors.text,
             width: 80,
             textAlign: "center",
@@ -150,23 +150,23 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
             onPress={() => onActivate(org, "BASIQUE")}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 10, alignItems: "center" }}
           >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Basique</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>75 000 /user/an</Text>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Basique</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>75 000 /user/an</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => onActivate(org, "PRO")}
             style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 10, alignItems: "center" }}
           >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Pro</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>115 000 /user/an</Text>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Pro</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>115 000 /user/an</Text>
           </TouchableOpacity>
           {(status === "ACTIVE" || status === "EXPIRED" || status === "TRIALING") && (
             <TouchableOpacity
               onPress={() => onRenew(org)}
               style={{ flex: 1, backgroundColor: colors.primary, paddingVertical: 10, alignItems: "center" }}
             >
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 13 }}>Renouveler</Text>
-              <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 10 }}>+1 an</Text>
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Renouveler</Text>
+              <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>+1 an</Text>
             </TouchableOpacity>
           )}
         </View>

@@ -45,7 +45,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             backgroundColor: "#4ade80",
           }}
         />
-        <Text style={{ fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
+        <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
           CGI 242 Congo-Brazzaville disponible
         </Text>
       </View>
@@ -112,7 +112,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             </Text>
             <Text
               style={{
-                fontSize: 11,
+                fontSize: 13,
                 color: "#5a5a65",
                 textTransform: "uppercase",
                 letterSpacing: 1.5,
@@ -138,7 +138,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             backgroundColor: GOLD,
           }}
         >
-          <Text style={{ color: "#08080d", fontSize: 16, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          <Text style={{ color: "#08080d", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
             {t("landing.heroCtaPrimary")}
           </Text>
         </TouchableOpacity>
@@ -153,7 +153,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             borderColor: "rgba(255,255,255,0.12)",
           }}
         >
-          <Text style={{ color: "#e8e6e1", fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+          <Text style={{ color: "#e8e6e1", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
             {t("landing.login")}
           </Text>
         </TouchableOpacity>

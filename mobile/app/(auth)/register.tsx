@@ -202,12 +202,12 @@ export default function Register() {
             accessibilityRole="button"
           >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-              <Text style={{ fontSize: 20 }}>{selectedCountry.flag}</Text>
+              <Text style={{ fontSize: 22 }}>{selectedCountry.flag}</Text>
               <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 15 : 16, color: colors.text }}>
                 {selectedCountry.name}
               </Text>
               {!selectedCountry.available && (
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: colors.textMuted, textTransform: "uppercase" }}>{t("common.comingSoon")}</Text>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.textMuted, textTransform: "uppercase" }}>{t("common.comingSoon")}</Text>
               )}
             </View>
             <Ionicons name="chevron-down" size={18} color={colors.textMuted} />
@@ -221,7 +221,7 @@ export default function Register() {
             >
               <View style={{ width: "100%", maxWidth: 400, maxHeight: "70%", backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }}>
                 <View style={{ padding: 16, borderBottomWidth: 1, borderBottomColor: colors.border }}>
-                  <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text }}>{t("auth.chooseCountry")}</Text>
+                  <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 18, color: colors.text }}>{t("auth.chooseCountry")}</Text>
                 </View>
                 <FlatList
                   data={COUNTRIES}
@@ -245,13 +245,13 @@ export default function Register() {
                         opacity: item.available ? 1 : 0.4,
                       }}
                     >
-                      <Text style={{ fontSize: 22, marginRight: 12 }}>{item.flag}</Text>
-                      <Text style={{ fontFamily: item.code === form.pays ? fonts.bold : fonts.regular, fontWeight: item.code === form.pays ? fontWeights.bold : fontWeights.regular, flex: 1, fontSize: 15, color: colors.text }}>
+                      <Text style={{ fontSize: 24, marginRight: 12 }}>{item.flag}</Text>
+                      <Text style={{ fontFamily: item.code === form.pays ? fonts.bold : fonts.regular, fontWeight: item.code === form.pays ? fontWeights.bold : fontWeights.regular, flex: 1, fontSize: 17, color: colors.text }}>
                         {item.name}
                       </Text>
-                      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>+{item.code}</Text>
+                      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>+{item.code}</Text>
                       {!item.available && (
-                        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: colors.textMuted, marginLeft: 8 }}>{t("common.comingSoon")}</Text>
+                        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.textMuted, marginLeft: 8 }}>{t("common.comingSoon")}</Text>
                       )}
                       {item.code === form.pays && (
                         <Ionicons name="checkmark" size={18} color={colors.primary} style={{ marginLeft: 8 }} />

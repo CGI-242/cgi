@@ -35,14 +35,14 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
         )}
         {!showBack && (
           <View style={{ width: 28, height: 28, borderRadius: 7, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 13, color: "#fff" }}>N</Text>
+            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 15, color: "#fff" }}>N</Text>
           </View>
         )}
         <Text
           style={{
             fontFamily: fonts.extraBold,
             fontWeight: fontWeights.extraBold,
-            fontSize: 17,
+            fontSize: 19,
             color: colors.text,
             letterSpacing: -0.3,
           }}

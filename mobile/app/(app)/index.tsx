@@ -107,10 +107,10 @@ export default function Dashboard() {
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 24 }}>
         {/* Bienvenue */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8 }}>
-          <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>
+          <Text style={{ fontSize: 24, fontWeight: "800", color: colors.text }}>
             {getGreeting(t)}, {user?.prenom || t("dashboard.user")} !
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textSecondary, marginTop: 2 }}>
+          <Text style={{ fontSize: 16, color: colors.textSecondary, marginTop: 2 }}>
             {t("dashboard.subtitle")}
           </Text>
         </View>
@@ -147,8 +147,8 @@ export default function Dashboard() {
                   <Ionicons name={s.icon} size={22} color={s.color} />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 20, fontWeight: "800", color: colors.text }}>{s.value}</Text>
-                  <Text style={{ fontSize: 12, color: colors.textSecondary }}>{t(s.labelKey)}</Text>
+                  <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{s.value}</Text>
+                  <Text style={{ fontSize: 14, color: colors.textSecondary }}>{t(s.labelKey)}</Text>
                 </View>
               </View>
             ))}
@@ -157,7 +157,7 @@ export default function Dashboard() {
 
         {/* Actions rapides */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
-          <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 10 }}>{t("dashboard.quickActions")}</Text>
+          <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 10 }}>{t("dashboard.quickActions")}</Text>
           <View
             style={{
               backgroundColor: colors.card,
@@ -200,14 +200,14 @@ export default function Dashboard() {
                     <Ionicons name={a.icon} size={20} color={a.color} />
                   </View>
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 14, fontWeight: "700", color: disabled ? colors.textMuted : colors.text }}>
+                    <Text style={{ fontSize: 16, fontWeight: "700", color: disabled ? colors.textMuted : colors.text }}>
                       {a.label}
                     </Text>
-                    <Text style={{ fontSize: 12, color: colors.textMuted }}>{a.desc}</Text>
+                    <Text style={{ fontSize: 14, color: colors.textMuted }}>{a.desc}</Text>
                   </View>
                   {disabled ? (
                     <View style={{ backgroundColor: colors.background, paddingHorizontal: 6, paddingVertical: 2 }}>
-                      <Text style={{ fontSize: 10, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
+                      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   ) : (
                     <Ionicons name="chevron-forward" size={18} color={colors.disabled} />
@@ -222,7 +222,7 @@ export default function Dashboard() {
         <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
             <Ionicons name="calendar-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
-            <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
+            <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 10 }}>
             {echeancesTriees.map((e) => (
@@ -240,9 +240,9 @@ export default function Dashboard() {
               >
                 <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
                   <Ionicons name={e.icon} size={13} color={colors.primary} style={{ marginRight: 5 }} />
-                  <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>{e.date}</Text>
+                  <Text style={{ fontSize: 16, fontWeight: "700", color: colors.primary }}>{e.date}</Text>
                 </View>
-                <Text style={{ fontSize: 13, color: colors.text }}>{e.label}</Text>
+                <Text style={{ fontSize: 15, color: colors.text }}>{e.label}</Text>
               </View>
             ))}
           </ScrollView>
@@ -250,8 +250,8 @@ export default function Dashboard() {
 
         {/* Footer */}
         <View style={{ paddingHorizontal: 16, paddingTop: 20, alignItems: "center" }}>
-          <Text style={{ fontSize: 12, color: colors.textMuted }}>{t("dashboard.footer")}</Text>
-          <Text style={{ fontSize: 11, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
+          <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("dashboard.footer")}</Text>
+          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
         </View>
       </ScrollView>
     </View>

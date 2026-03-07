@@ -26,7 +26,7 @@ export default function SubscriptionActions({
     <View style={{ backgroundColor: colors.card, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="settings-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.management")}</Text>
+        <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("abonnement.management")}</Text>
       </View>
 
       {actionLoading && (
@@ -40,14 +40,14 @@ export default function SubscriptionActions({
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.activateBasic")}</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.activateBasic")}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => onActivate("PRO")}
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.activatePro")}</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.activatePro")}</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -58,7 +58,7 @@ export default function SubscriptionActions({
           disabled={actionLoading}
           style={{ backgroundColor: "#059669", paddingVertical: 12, alignItems: "center", marginBottom: 10, opacity: actionLoading ? 0.6 : 1 }}
         >
-          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.renewSubscriptionBtn")}</Text>
+          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.renewSubscriptionBtn")}</Text>
         </TouchableOpacity>
       )}
 
@@ -68,7 +68,7 @@ export default function SubscriptionActions({
           disabled={actionLoading}
           style={{ backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
         >
-          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 14 }}>{t("abonnement.upgradeToPlan")}</Text>
+          <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.upgradeToPlan")}</Text>
         </TouchableOpacity>
       )}
     </View>

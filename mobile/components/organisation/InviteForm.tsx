@@ -33,7 +33,7 @@ export default function InviteForm({
       <Text
         style={{
           color: colors.textSecondary,
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: "700",
           letterSpacing: 0.5,
           marginBottom: 8,
@@ -54,14 +54,14 @@ export default function InviteForm({
       >
         {paidSeats !== undefined && remainingSeats !== undefined && (
           <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 12 }}>
-            <Text style={{ fontSize: 13, color: noSeatsLeft ? colors.danger : colors.textSecondary }}>
+            <Text style={{ fontSize: 15, color: noSeatsLeft ? colors.danger : colors.textSecondary }}>
               {t("organization.seatsAvailableCount", { remaining: remainingSeats, total: paidSeats })}
             </Text>
           </View>
         )}
         {noSeatsLeft && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 10, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 13 }}>
+            <Text style={{ color: colors.danger, fontSize: 15 }}>
               {t("organization.noSeatsMessage")}
             </Text>
           </View>
@@ -77,7 +77,7 @@ export default function InviteForm({
             backgroundColor: colors.background,
             paddingHorizontal: 14,
             paddingVertical: 12,
-            fontSize: 15,
+            fontSize: 17,
             color: colors.text,
             marginBottom: 12,
           }}
@@ -97,7 +97,7 @@ export default function InviteForm({
             >
               <Text
                 style={{
-                  fontSize: 13,
+                  fontSize: 15,
                   fontWeight: "600",
                   color: inviteRole === role ? "#fff" : colors.text,
                 }}
@@ -119,7 +119,7 @@ export default function InviteForm({
           {actionLoading ? (
             <ActivityIndicator size="small" color="#fff" />
           ) : (
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("organization.invite")}</Text>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 17 }}>{t("organization.invite")}</Text>
           )}
         </TouchableOpacity>
       </View>

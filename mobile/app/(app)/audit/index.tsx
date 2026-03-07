@@ -108,7 +108,7 @@ export default function AuditScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -130,7 +130,7 @@ export default function AuditScreen() {
         />
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16 }}>{error}</Text>
           </View>
         )}
         {stats && <AuditStatsCards stats={stats} colors={colors} />}
@@ -148,17 +148,17 @@ export default function AuditScreen() {
         {logs.length === 0 && (
           <View style={{ alignItems: "center", paddingVertical: 40 }}>
             <Ionicons name="document-text-outline" size={40} color={colors.disabled} />
-            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 14 }}>{t("audit.noLogs")}</Text>
+            <Text style={{ marginTop: 8, color: colors.textMuted, fontSize: 16 }}>{t("audit.noLogs")}</Text>
           </View>
         )}
         {totalPages > 1 && (
           <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: 16, gap: 12 }}>
             <TouchableOpacity onPress={() => setPage(Math.max(1, page - 1))} disabled={page === 1} style={{ paddingHorizontal: 16, paddingVertical: 8, backgroundColor: page === 1 ? colors.border : colors.primary }}>
-              <Text style={{ color: page === 1 ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>{t("audit.previous")}</Text>
+              <Text style={{ color: page === 1 ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 15 }}>{t("audit.previous")}</Text>
             </TouchableOpacity>
-            <Text style={{ fontSize: 13, color: colors.textSecondary }}>{t("audit.pageOf", { page, total: totalPages })}</Text>
+            <Text style={{ fontSize: 15, color: colors.textSecondary }}>{t("audit.pageOf", { page, total: totalPages })}</Text>
             <TouchableOpacity onPress={() => setPage(Math.min(totalPages, page + 1))} disabled={page === totalPages} style={{ paddingHorizontal: 16, paddingVertical: 8, backgroundColor: page === totalPages ? colors.border : colors.primary }}>
-              <Text style={{ color: page === totalPages ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 13 }}>{t("audit.next")}</Text>
+              <Text style={{ color: page === totalPages ? colors.textMuted : "#fff", fontWeight: "600", fontSize: 15 }}>{t("audit.next")}</Text>
             </TouchableOpacity>
           </View>
         )}

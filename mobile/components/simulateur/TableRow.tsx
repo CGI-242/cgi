@@ -28,8 +28,8 @@ export default function TableRow({
         borderTopColor: colors.border,
       }}
     >
-      <Text style={{ fontSize: 14, color: color || colors.text, fontWeight: bold ? "600" : "400" }}>{label}</Text>
-      <Text style={{ fontSize: 14, color: color || colors.text, fontWeight: "600" }}>{value}</Text>
+      <Text style={{ fontSize: 16, color: color || colors.text, fontWeight: bold ? "600" : "400" }}>{label}</Text>
+      <Text style={{ fontSize: 16, color: color || colors.text, fontWeight: "600" }}>{value}</Text>
     </View>
   );
 }

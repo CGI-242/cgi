@@ -34,7 +34,7 @@ export default function MobileSimPicker() {
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 14, paddingBottom: 30 }}>
-      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 16, paddingHorizontal: 4 }}>
+      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textSecondary, marginBottom: 16, paddingHorizontal: 4 }}>
         {t("simulateur.subtitle")}
       </Text>
 
@@ -67,10 +67,10 @@ export default function MobileSimPicker() {
             >
               <Ionicons name={sim.icon} size={20} color={colors.primary} />
             </View>
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text, marginBottom: 3 }} numberOfLines={2}>
+            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text, marginBottom: 3 }} numberOfLines={2}>
               {t(sim.titleKey)}
             </Text>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, marginBottom: 10 }} numberOfLines={2}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted, marginBottom: 10 }} numberOfLines={2}>
               {t(sim.subtitleKey)}
             </Text>
             <View
@@ -82,7 +82,7 @@ export default function MobileSimPicker() {
                 alignSelf: "flex-start",
               }}
             >
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 11, color: colors.primary }}>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary }}>
                 {t("simulateur.calculate")}
               </Text>
             </View>

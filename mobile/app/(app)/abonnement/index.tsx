@@ -119,7 +119,7 @@ export default function AbonnementScreen() {
     return (
       <View style={{ flex: 1, backgroundColor: colors.background, justifyContent: "center", alignItems: "center" }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ color: colors.textSecondary, fontSize: 14, marginTop: 12 }}>
+        <Text style={{ color: colors.textSecondary, fontSize: 16, marginTop: 12 }}>
           {t("abonnement.loadingSubscription")}
         </Text>
       </View>
@@ -145,9 +145,9 @@ export default function AbonnementScreen() {
             }}
           >
             <Ionicons name="alert-circle" size={20} color={colors.danger} style={{ marginRight: 8 }} />
-            <Text style={{ color: colors.danger, fontSize: 14, flex: 1 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16, flex: 1 }}>{error}</Text>
             <TouchableOpacity onPress={loadQuota}>
-              <Text style={{ color: colors.danger, fontWeight: "700", fontSize: 13 }}>{t("common.retry")}</Text>
+              <Text style={{ color: colors.danger, fontWeight: "700", fontSize: 15 }}>{t("common.retry")}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -196,10 +196,10 @@ export default function AbonnementScreen() {
           }}
         >
           <Ionicons name="call-outline" size={28} color={colors.primary} style={{ marginBottom: 8 }} />
-          <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, textAlign: "center", marginBottom: 4 }}>
+          <Text style={{ fontSize: 17, fontWeight: "700", color: colors.text, textAlign: "center", marginBottom: 4 }}>
             {t("abonnement.subscribeTitle")}
           </Text>
-          <Text style={{ fontSize: 13, color: colors.textSecondary, textAlign: "center", marginBottom: 12 }}>
+          <Text style={{ fontSize: 15, color: colors.textSecondary, textAlign: "center", marginBottom: 12 }}>
             {t("abonnement.subscribeDesc")}
           </Text>
           <TouchableOpacity
@@ -215,13 +215,13 @@ export default function AbonnementScreen() {
             }}
           >
             <Ionicons name="mail" size={18} color="#fff" style={{ marginRight: 8 }} />
-            <Text style={{ color: "#fff", fontSize: 15, fontWeight: "700" }}>contact@cgi242.com</Text>
+            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "700" }}>contact@cgi242.com</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ alignItems: "center", marginTop: 20 }}>
-          <Text style={{ fontSize: 12, color: colors.textMuted }}>CGI242 v1.0.0 -- Edition 2026</Text>
-          <Text style={{ fontSize: 11, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
+          <Text style={{ fontSize: 14, color: colors.textMuted }}>CGI242 v1.0.0 -- Edition 2026</Text>
+          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
         </View>
       </ScrollView>
     </View>

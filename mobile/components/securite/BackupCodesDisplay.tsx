@@ -44,14 +44,14 @@ export default function BackupCodesDisplay({
           style={{ marginRight: 8 }}
         />
         <Text
-          style={{ fontSize: 15, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.text }}
+          style={{ fontSize: 17, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.text }}
         >
           {t("security.backupCodesTitle")}
         </Text>
       </View>
       <Text
         style={{
-          fontSize: 13,
+          fontSize: 15,
           fontFamily: fonts.regular,
           fontWeight: fontWeights.regular,
           color: colors.textSecondary,
@@ -76,7 +76,7 @@ export default function BackupCodesDisplay({
             style={{
               fontFamily:
                 Platform.OS === "ios" ? "Menlo" : "monospace",
-              fontSize: 14,
+              fontSize: 16,
               color: colors.text,
               lineHeight: 24,
               textAlign: "center",
@@ -103,7 +103,7 @@ export default function BackupCodesDisplay({
             color="#fff"
             style={{ marginRight: 6 }}
           />
-          <Text style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14 }}>
+          <Text style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16 }}>
             {t("security.copyCodes")}
           </Text>
         </View>
@@ -117,7 +117,7 @@ export default function BackupCodesDisplay({
           alignItems: "center",
         }}
       >
-        <Text style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14 }}>
+        <Text style={{ color: "#fff", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16 }}>
           {t("security.codesSaved")}
         </Text>
       </TouchableOpacity>

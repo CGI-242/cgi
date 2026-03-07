@@ -31,7 +31,7 @@ export default function CitationsBlock({ citations }: Props) {
         marginTop: 6,
       }}
     >
-      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary, marginBottom: 6 }}>
+      <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary, marginBottom: 6 }}>
         {t("code.cgiSources")}
       </Text>
       {visibleCitations.map((cit, i) => (
@@ -46,11 +46,11 @@ export default function CitationsBlock({ citations }: Props) {
             borderColor: colors.primary + "30",
           }}
         >
-          <Text style={{ fontSize: 12, fontWeight: "700", color: colors.primary }}>
+          <Text style={{ fontSize: 14, fontWeight: "700", color: colors.primary }}>
             Art. {cit.articleNumber}{cit.titre ? ` — ${cit.titre}` : ""}
           </Text>
           <Text
-            style={{ fontSize: 11, color: colors.textSecondary, fontStyle: "italic", marginTop: 2 }}
+            style={{ fontSize: 13, color: colors.textSecondary, fontStyle: "italic", marginTop: 2 }}
             numberOfLines={2}
           >
             "{cit.excerpt}"
@@ -59,14 +59,14 @@ export default function CitationsBlock({ citations }: Props) {
       ))}
       {!expanded && hiddenCount > 0 && (
         <TouchableOpacity onPress={() => setExpanded(true)} style={{ marginTop: 6 }}>
-          <Text style={{ fontSize: 11, color: colors.primary, fontWeight: "600" }}>
+          <Text style={{ fontSize: 13, color: colors.primary, fontWeight: "600" }}>
             {t("code.showMoreSources", { count: hiddenCount })}
           </Text>
         </TouchableOpacity>
       )}
       {expanded && hiddenCount > 0 && (
         <TouchableOpacity onPress={() => setExpanded(false)} style={{ marginTop: 6 }}>
-          <Text style={{ fontSize: 11, color: colors.primary, fontWeight: "600" }}>
+          <Text style={{ fontSize: 13, color: colors.primary, fontWeight: "600" }}>
             {t("code.reduceSources")}
           </Text>
         </TouchableOpacity>

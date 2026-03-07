@@ -137,7 +137,7 @@ export default function AppLayout() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("abonnement.loadingSubscription")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16 }}>{t("abonnement.loadingSubscription")}</Text>
       </View>
     );
   }
@@ -236,7 +236,7 @@ export default function AppLayout() {
         {!isOnline && (
           <View style={{ backgroundColor: colors.warning, paddingHorizontal: 16, paddingVertical: 6, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
             <Ionicons name="cloud-offline-outline" size={14} color={colors.userBubbleText} style={{ marginRight: 6 }} />
-            <Text style={{ color: colors.userBubbleText, fontSize: 12, fontWeight: "600" }}>{t("offline.banner")}</Text>
+            <Text style={{ color: colors.userBubbleText, fontSize: 14, fontWeight: "600" }}>{t("offline.banner")}</Text>
           </View>
         )}
 
@@ -278,20 +278,20 @@ export default function AppLayout() {
                     <>
                       <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
                       <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as Href)}>
-                        <Text style={{ color: colors.textMuted, fontWeight: "600", fontSize: 16 }}>
+                        <Text style={{ color: colors.textMuted, fontWeight: "600", fontSize: 18 }}>
                           {t(parent.titleKey)}
                         </Text>
                       </TouchableOpacity>
                     </>
                   )}
                   <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
-                  <Text style={{ color: colors.accent, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 16 }}>
+                  <Text style={{ color: colors.accent, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 18 }}>
                     {t(pageTitleKey)}
                   </Text>
                 </>
               )}
               {isHome && (
-                <Text style={{ color: colors.textMuted, fontSize: 12, marginLeft: 8 }}>{t("sidebar.subtitle")}</Text>
+                <Text style={{ color: colors.textMuted, fontSize: 14, marginLeft: 8 }}>{t("sidebar.subtitle")}</Text>
               )}
             </View>
 
@@ -302,7 +302,7 @@ export default function AppLayout() {
                 accessibilityRole="button"
                 style={{ padding: 6, marginRight: 4 }}
               >
-                <Text style={{ color: colors.sidebarText, fontSize: 13, fontWeight: "700" }}>
+                <Text style={{ color: colors.sidebarText, fontSize: 15, fontWeight: "700" }}>
                   {i18n.language === "fr" ? "FR" : "EN"}
                 </Text>
               </TouchableOpacity>
@@ -328,7 +328,7 @@ export default function AppLayout() {
                   justifyContent: "center",
                 }}
               >
-                <Text style={{ color: colors.sidebarText, fontWeight: "800", fontSize: 12 }}>
+                <Text style={{ color: colors.sidebarText, fontWeight: "800", fontSize: 14 }}>
                   {getInitials(user?.prenom, user?.nom)}
                 </Text>
               </TouchableOpacity>
@@ -340,7 +340,7 @@ export default function AppLayout() {
         {!isOnline && (
           <View style={{ backgroundColor: colors.warning, paddingHorizontal: 16, paddingVertical: 8, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
             <Ionicons name="cloud-offline-outline" size={16} color={colors.sidebarText} style={{ marginRight: 8 }} />
-            <Text style={{ color: colors.sidebarText, fontSize: 13, fontWeight: "600" }}>
+            <Text style={{ color: colors.sidebarText, fontSize: 15, fontWeight: "600" }}>
               {t("offline.banner")}
             </Text>
           </View>

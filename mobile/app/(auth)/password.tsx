@@ -71,22 +71,22 @@ export default function LoginPassword() {
             accessibilityRole="button"
           >
             <Ionicons name="arrow-back" size={22} color={colors.primary} />
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.primary, fontSize: 15, marginLeft: 6 }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.primary, fontSize: 17, marginLeft: 6 }}>
               {t("common.back") || "Retour"}
             </Text>
           </TouchableOpacity>
 
           <AuthLogo />
 
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 4 }}>
             {t("auth.password")}
           </Text>
 
           {/* Email affiché */}
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 24 }}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, flex: 1 }}>{email}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, flex: 1 }}>{email}</Text>
             <TouchableOpacity onPress={() => router.replace("/(auth)/")} accessibilityLabel={t("common.modify")} accessibilityRole="link">
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.primary }}>
                 {t("common.modify")}
               </Text>
             </TouchableOpacity>
@@ -95,17 +95,17 @@ export default function LoginPassword() {
           {/* Erreur */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 16 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Password */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 8 }}>
             {t("auth.password")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <View style={{ marginBottom: 8 }}>
             <TextInput
-              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text }}
+              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 18, color: colors.text }}
               placeholder={t("auth.yourPassword")}
               placeholderTextColor={colors.textMuted}
               value={password}
@@ -140,7 +140,7 @@ export default function LoginPassword() {
             accessibilityLabel={t("auth.forgotPassword")}
             accessibilityRole="link"
           >
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.primary }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.primary }}>
               {t("auth.forgotPassword")}
             </Text>
           </TouchableOpacity>
@@ -171,7 +171,7 @@ export default function LoginPassword() {
                 <Ionicons name="checkmark" size={14} color="#fff" />
               ) : null}
             </View>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.text }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.text }}>
               {t("auth.rememberMe")}
             </Text>
           </TouchableOpacity>
@@ -190,7 +190,7 @@ export default function LoginPassword() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 18 }}>
                 {t("auth.signIn")}
               </Text>
             )}

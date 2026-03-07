@@ -55,11 +55,11 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
   },
   operatorIndicator: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 4,
   },
   displayText: {
-    fontSize: 32,
+    fontSize: 34,
     textAlign: "right",
   },
 });

@@ -52,7 +52,7 @@ export default function PermissionToggles({
         return (
           <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8 }}>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
+              <Text style={{ fontSize: 15, fontWeight: "500", color: colors.text }}>
                 {t(PERMISSION_KEYS[perm.key] || perm.key)}
               </Text>
             </View>
@@ -75,7 +75,7 @@ export default function PermissionToggles({
         >
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="refresh-outline" size={16} color={colors.text} style={{ marginRight: 6 }} />
-            <Text style={{ color: colors.text, fontWeight: "600", fontSize: 13 }}>{t("permissions.reset")}</Text>
+            <Text style={{ color: colors.text, fontWeight: "600", fontSize: 15 }}>{t("permissions.reset")}</Text>
           </View>
         </TouchableOpacity>
       )}

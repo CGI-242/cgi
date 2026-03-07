@@ -65,7 +65,7 @@ function NodeListView({ nodes, onSelect, title }: {
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
       {title && (
-        <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 18, color: colors.text, marginBottom: 16 }}>
+        <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 20, color: colors.text, marginBottom: 16 }}>
           {title}
         </Text>
       )}
@@ -90,13 +90,13 @@ function NodeListView({ nodes, onSelect, title }: {
               </View>
               <View style={{ flex: 1 }}>
                 <Text
-                  style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}
+                  style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text }}
                   numberOfLines={2}
                 >
                   {node.label}
                 </Text>
                 {artCount > 0 && (
-                  <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, marginTop: 3 }}>
+                  <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted, marginTop: 3 }}>
                     {artCount} article{artCount > 1 ? "s" : ""}
                   </Text>
                 )}
@@ -109,7 +109,7 @@ function NodeListView({ nodes, onSelect, title }: {
       {nodes.length === 0 && (
         <View style={{ alignItems: "center", paddingTop: 40 }}>
           <Ionicons name="construct-outline" size={36} color={colors.textMuted} style={{ marginBottom: 12 }} />
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted }}>
             Contenu en cours d'intégration
           </Text>
         </View>
@@ -275,7 +275,7 @@ function AudioPlayer({ lines, colors, onLineChange }: {
       )}
 
       <View style={{ flex: 1 }}>
-        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
+        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginBottom: 4 }}>
           {speechState === "playing"
             ? t("articleDetail.stop")
             : speechState === "paused"
@@ -320,7 +320,7 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
   return (
     <ScrollView ref={scrollRef} style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
-        <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, color: colors.primary, flex: 1 }}>
+        <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22, color: colors.primary, flex: 1 }}>
           {article.article}
         </Text>
         <TouchableOpacity onPress={() => toggleFavorite(article.article)} hitSlop={8} style={{ padding: 4 }}>
@@ -332,7 +332,7 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
         </TouchableOpacity>
       </View>
       {article.titre ? (
-        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, marginBottom: 14 }}>
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: colors.text, marginBottom: 14 }}>
           {article.titre}
         </Text>
       ) : null}
@@ -349,7 +349,7 @@ function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: 
               style={{
                 fontFamily: fonts.regular,
                 fontWeight: fontWeights.regular,
-                fontSize: 10,
+                fontSize: 12,
                 color: colors.textMuted,
                 backgroundColor: colors.border,
                 paddingHorizontal: 8,
@@ -373,7 +373,7 @@ function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSe
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
-      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
+      <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.textSecondary, marginBottom: 12 }}>
         {results.length} résultat{results.length > 1 ? "s" : ""}
       </Text>
       {results.slice(0, 50).map((art, i) => (
@@ -393,16 +393,16 @@ function SearchResultsView({ results, onSelect }: { results: ArticleData[]; onSe
               <Ionicons name="document-text-outline" size={18} color={colors.primary} />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary, marginBottom: 2 }}>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary, marginBottom: 2 }}>
                 {art.article}
               </Text>
               {art.titre ? (
-                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginBottom: 4 }}>
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginBottom: 4 }}>
                   {art.titre}
                 </Text>
               ) : null}
               <Text
-                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textSecondary, lineHeight: 18 }}
+                style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textSecondary, lineHeight: 18 }}
                 numberOfLines={2}
               >
                 {art.texte.join(" ")}
@@ -463,7 +463,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
           <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 10, paddingHorizontal: 10, paddingVertical: 6 }}>
             <Ionicons name="search" size={16} color={colors.textMuted} />
             <TextInput
-              style={{ flex: 1, marginLeft: 8, fontSize: 14, color: colors.text, fontFamily: fonts.regular }}
+              style={{ flex: 1, marginLeft: 8, fontSize: 16, color: colors.text, fontFamily: fonts.regular }}
               placeholder={t("code.searchPlaceholder")}
               placeholderTextColor={colors.textMuted}
               value={search}
@@ -480,14 +480,14 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
         {navStack.length > 0 && !isSearching && (
           <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", marginTop: 8, gap: 4 }}>
             <TouchableOpacity onPress={() => { setNavStack([]); setSelectedArticle(null); }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.primary }}>CGI</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.primary }}>CGI</Text>
             </TouchableOpacity>
             {navStack.map((node, i) => (
               <View key={node.id} style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="chevron-forward" size={10} color={colors.textMuted} style={{ marginHorizontal: 2 }} />
                 <TouchableOpacity onPress={() => { setNavStack((prev) => prev.slice(0, i + 1)); setSelectedArticle(null); }}>
                   <Text
-                    style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: i === navStack.length - 1 ? colors.text : colors.primary }}
+                    style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: i === navStack.length - 1 ? colors.text : colors.primary }}
                     numberOfLines={1}
                   >
                     {node.label.length > 25 ? node.label.slice(0, 25) + "..." : node.label}

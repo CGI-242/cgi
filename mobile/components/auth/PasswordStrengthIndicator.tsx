@@ -64,7 +64,7 @@ export default function PasswordStrengthIndicator({ password, colors }: Props) {
           />
           <Text
             style={{
-              fontSize: 12,
+              fontSize: 14,
               color: r.passed ? "#22c55e" : colors.textMuted,
               marginLeft: 6,
             }}

@@ -34,7 +34,7 @@ export default function ActionFilters({
       >
         <Text
           style={{
-            fontSize: 13,
+            fontSize: 15,
             fontWeight: "600",
             color: !filterAction ? "#fff" : colors.text,
           }}
@@ -58,7 +58,7 @@ export default function ActionFilters({
         >
           <Text
             style={{
-              fontSize: 13,
+              fontSize: 15,
               fontWeight: "600",
               color: filterAction === action ? "#fff" : colors.text,
             }}

@@ -42,7 +42,7 @@ function FieldInput({
     <View style={{ marginBottom: isLast ? 0 : 16 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 6 }}>
         <Ionicons name={icon} size={14} color={colors.primary} />
-        <Text style={{ color: colors.textSecondary, fontSize: 13, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+        <Text style={{ color: colors.textSecondary, fontSize: 15, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
           {label}
         </Text>
       </View>
@@ -58,7 +58,7 @@ function FieldInput({
           borderRadius: 10,
           paddingHorizontal: 14,
           paddingVertical: 11,
-          fontSize: 15,
+          fontSize: 17,
           fontFamily: fonts.regular,
           color: colors.text,
           backgroundColor: colors.input,
@@ -114,7 +114,7 @@ export default function ProfileForm({
           <Text
             style={{
               color: message.type === "success" ? colors.success : colors.danger,
-              fontSize: 14,
+              fontSize: 16,
               fontFamily: fonts.medium,
               fontWeight: fontWeights.medium,
               flex: 1,
@@ -176,7 +176,7 @@ export default function ProfileForm({
       {createdAt ? (
         <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginBottom: 24 }}>
           <Ionicons name="calendar-outline" size={14} color={colors.textMuted} />
-          <Text style={{ color: colors.textMuted, fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+          <Text style={{ color: colors.textMuted, fontSize: 15, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             {t("profil.memberSince")} {formatDate(createdAt)}
           </Text>
         </View>
@@ -201,7 +201,7 @@ export default function ProfileForm({
           ) : (
             <Ionicons name="checkmark-circle-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
           )}
-          <Text style={{ color: "#fff", fontSize: 15, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
+          <Text style={{ color: "#fff", fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
             {saving ? t("common.saving") : t("common.save")}
           </Text>
         </TouchableOpacity>

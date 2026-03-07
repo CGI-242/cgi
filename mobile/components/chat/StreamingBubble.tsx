@@ -50,13 +50,13 @@ export default function StreamingBubble({ content }: Props) {
           }}
         >
           {content ? (
-            <Text style={{ color: colors.assistantBubbleText, fontSize: 14, lineHeight: 20 }} selectable>
+            <Text style={{ color: colors.assistantBubbleText, fontSize: 16, lineHeight: 20 }} selectable>
               {content}
             </Text>
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
               <ActivityIndicator size="small" color={colors.primary} />
-              <Text style={{ color: colors.textMuted, fontSize: 13 }}>
+              <Text style={{ color: colors.textMuted, fontSize: 15 }}>
                 {t("code.thinking")}
               </Text>
             </View>

@@ -191,20 +191,20 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: "800",
     textAlign: "center",
     marginBottom: 10,
   },
   subtitle: {
-    fontSize: 15,
+    fontSize: 17,
     textAlign: "center",
     lineHeight: 22,
     marginBottom: 28,
     maxWidth: 400,
   },
   sectionTitle: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
     marginBottom: 10,
     alignSelf: "flex-start",
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   cellHeader: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "700",
     textTransform: "uppercase",
     letterSpacing: 0.5,
@@ -246,10 +246,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   cellText: {
-    fontSize: 13,
+    fontSize: 15,
   },
   expiredBadge: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "600",
     marginTop: 2,
   },
@@ -263,11 +263,11 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   launchText: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   contactDesc: {
-    fontSize: 13,
+    fontSize: 15,
     textAlign: "center",
     lineHeight: 20,
     marginTop: 20,
@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
   },
   ctaText: {
     color: "#fff",
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   logoutButton: {
@@ -296,7 +296,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   logoutText: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "600",
   },
 });

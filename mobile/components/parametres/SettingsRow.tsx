@@ -27,11 +27,11 @@ export default function SettingsRow({ icon, label, value, onPress, showChevron, 
       }}
     >
       <Ionicons name={icon} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>
+      <Text style={{ fontSize: 17, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>
         {label}
       </Text>
       {value ? (
-        <Text style={{ fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
+        <Text style={{ fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
           {value}
         </Text>
       ) : null}

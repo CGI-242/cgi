@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: fontWeights.heading,
     fontFamily: fonts.heading,
     marginBottom: 12,
@@ -119,10 +119,10 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   descriptionText: {
-    fontSize: 11,
+    fontSize: 13,
   },
   fieldLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginBottom: 6,
   },
@@ -136,14 +136,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   switchLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   switchDesc: {
-    fontSize: 10,
+    fontSize: 12,
   },
   legalRef: {
-    fontSize: 10,
+    fontSize: 12,
     marginTop: 12,
   },
 });

@@ -25,8 +25,8 @@ function StatRow({ icon, label, value, colors }: { icon: IoniconsName; label: st
       }}
     >
       <Ionicons name={icon} size={20} color={colors.icon} style={{ marginRight: 12 }} />
-      <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{label}</Text>
-      <Text style={{ fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{value}</Text>
+      <Text style={{ fontSize: 17, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{label}</Text>
+      <Text style={{ fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{value}</Text>
     </View>
   );
 }
@@ -58,7 +58,7 @@ export default function ActivityStats({ stats }: Props) {
 
       {stats.last7Days.some((d) => d.questions > 0) && (
         <View style={{ ...cardStyle, padding: 16, marginTop: 4 }}>
-          <Text style={{ fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textSecondary, marginBottom: 12 }}>
+          <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textSecondary, marginBottom: 12 }}>
             {t("activity.last7Days")}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "flex-end", height: 60, gap: 6 }}>
@@ -68,7 +68,7 @@ export default function ActivityStats({ stats }: Props) {
               const dayLabel = new Date(day.date).toLocaleDateString("fr-FR", { weekday: "narrow" });
               return (
                 <View key={day.date} style={{ flex: 1, alignItems: "center" }}>
-                  <Text style={{ fontSize: 9, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textMuted, marginBottom: 2 }}>
+                  <Text style={{ fontSize: 11, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.textMuted, marginBottom: 2 }}>
                     {day.questions > 0 ? day.questions : ""}
                   </Text>
                   <View
@@ -79,7 +79,7 @@ export default function ActivityStats({ stats }: Props) {
                       backgroundColor: day.questions > 0 ? colors.success : colors.border,
                     }}
                   />
-                  <Text style={{ fontSize: 10, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted, marginTop: 4 }}>
+                  <Text style={{ fontSize: 12, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted, marginTop: 4 }}>
                     {dayLabel}
                   </Text>
                 </View>

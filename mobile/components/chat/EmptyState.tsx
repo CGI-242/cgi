@@ -20,16 +20,16 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
   return (
     <View style={{ alignItems: "center", paddingTop: 60 }}>
       <Ionicons name="chatbubbles-outline" size={48} color={colors.disabled} />
-      <Text style={{ color: colors.textMuted, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 16, marginTop: 12, textAlign: "center" }}>
+      <Text style={{ color: colors.textMuted, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 18, marginTop: 12, textAlign: "center" }}>
         {t("chat.emptyState")}
       </Text>
-      <Text style={{ color: colors.disabled, fontSize: 13, marginTop: 4, textAlign: "center" }}>
+      <Text style={{ color: colors.disabled, fontSize: 15, marginTop: 4, textAlign: "center" }}>
         {t("chat.emptyStateDesc")}
       </Text>
 
       {recentSearches.length > 0 && (
         <View style={{ width: "100%", marginTop: 24, paddingHorizontal: 8 }}>
-          <Text style={{ color: colors.textSecondary, fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, marginBottom: 8 }}>
+          <Text style={{ color: colors.textSecondary, fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, marginBottom: 8 }}>
             {t("chat.recentSearches")}
           </Text>
           {recentSearches.map((item) => (
@@ -50,7 +50,7 @@ export default function EmptyState({ recentSearches, onSelectQuery }: Props) {
               }}
             >
               <Ionicons name="time-outline" size={16} color={colors.textMuted} style={{ marginRight: 10 }} />
-              <Text style={{ flex: 1, fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.text }} numberOfLines={1}>
+              <Text style={{ flex: 1, fontSize: 15, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.text }} numberOfLines={1}>
                 {item.query}
               </Text>
               <Ionicons name="arrow-forward" size={14} color={colors.disabled} />

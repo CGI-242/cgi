@@ -12,7 +12,7 @@ export default function SimulateurEmptyState({ message }: Props) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
       <Ionicons name="calculator-outline" size={40} color={colors.disabled} />
-      <Text style={{ fontSize: 15, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
+      <Text style={{ fontSize: 17, color: colors.textMuted, marginTop: 12, textAlign: "center" }}>
         {message}
       </Text>
     </View>

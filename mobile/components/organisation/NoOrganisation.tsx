@@ -27,7 +27,7 @@ export default function NoOrganisation({
             style={{
               marginTop: 12,
               color: colors.textSecondary,
-              fontSize: 16,
+              fontSize: 18,
               textAlign: "center",
             }}
           >
@@ -45,7 +45,7 @@ export default function NoOrganisation({
             marginBottom: 16,
           }}
         >
-          <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
+          <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
             Cr\u00e9er une organisation
           </Text>
           <TextInput
@@ -57,7 +57,7 @@ export default function NoOrganisation({
               backgroundColor: colors.background,
               paddingHorizontal: 14,
               paddingVertical: 12,
-              fontSize: 15,
+              fontSize: 17,
               color: colors.text,
               marginBottom: 12,
             }}
@@ -74,7 +74,7 @@ export default function NoOrganisation({
             {createLoading ? (
               <ActivityIndicator size="small" color="#fff" />
             ) : (
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Cr\u00e9er</Text>
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 17 }}>Cr\u00e9er</Text>
             )}
           </TouchableOpacity>
         </View>
@@ -93,10 +93,10 @@ export default function NoOrganisation({
         >
           <Ionicons name="mail-outline" size={22} color={colors.primary} style={{ marginRight: 12 }} />
           <View style={{ flex: 1 }}>
-            <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>
+            <Text style={{ fontSize: 17, fontWeight: "600", color: colors.text }}>
               Invitations re\u00e7ues
             </Text>
-            <Text style={{ fontSize: 13, color: colors.textSecondary }}>
+            <Text style={{ fontSize: 15, color: colors.textSecondary }}>
               Accepter une invitation pour rejoindre une organisation
             </Text>
           </View>

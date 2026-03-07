@@ -79,7 +79,7 @@ export default function LandingPricing({ isMobile }: Props) {
         style={{
           textAlign: "center",
           color: "#5a5a65",
-          fontSize: 15,
+          fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
           marginBottom: 40,
@@ -133,7 +133,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   style={{
                     fontFamily: fonts.bold,
                     fontWeight: fontWeights.bold,
-                    fontSize: 9,
+                    fontSize: 11,
                     color: "#fff",
                     textTransform: "uppercase",
                     letterSpacing: 1,
@@ -148,7 +148,7 @@ export default function LandingPricing({ isMobile }: Props) {
               style={{
                 fontFamily: fonts.semiBold,
                 fontWeight: fontWeights.semiBold,
-                fontSize: 13,
+                fontSize: 15,
                 color: plan.color,
                 textTransform: "uppercase",
                 letterSpacing: 1.2,
@@ -163,7 +163,7 @@ export default function LandingPricing({ isMobile }: Props) {
                 style={{
                   fontFamily: fonts.headingBlack,
                   fontWeight: fontWeights.headingBlack,
-                  fontSize: 36,
+                  fontSize: 38,
                   color: "#e8e6e1",
                 }}
               >
@@ -174,7 +174,7 @@ export default function LandingPricing({ isMobile }: Props) {
               style={{
                 fontFamily: fonts.regular,
                 fontWeight: fontWeights.regular,
-                fontSize: 13,
+                fontSize: 15,
                 color: "#5a5a65",
                 marginBottom: plan.priceDetailKey ? 4 : 20,
               }}
@@ -186,7 +186,7 @@ export default function LandingPricing({ isMobile }: Props) {
                 style={{
                   fontFamily: fonts.medium,
                   fontWeight: fontWeights.medium,
-                  fontSize: 11,
+                  fontSize: 13,
                   color: GOLD,
                   marginBottom: 20,
                   fontStyle: "italic",
@@ -215,7 +215,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   style={{
                     fontFamily: fonts.regular,
                     fontWeight: fontWeights.regular,
-                    fontSize: 13,
+                    fontSize: 15,
                     color: "#b0b0b8",
                     flex: 1,
                   }}
@@ -241,7 +241,7 @@ export default function LandingPricing({ isMobile }: Props) {
                 style={{
                   fontFamily: fonts.bold,
                   fontWeight: fontWeights.bold,
-                  fontSize: 14,
+                  fontSize: 16,
                   color: plan.popular ? "#fff" : "#e8e6e1",
                 }}
               >

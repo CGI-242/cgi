@@ -20,7 +20,7 @@ function FooterLink({ label, onPress }: { label: string; onPress: () => void }) 
         style={{
           fontFamily: fonts.regular,
           fontWeight: fontWeights.regular,
-          fontSize: 13,
+          fontSize: 15,
           color: LINK_COLOR,
           lineHeight: 20,
         }}
@@ -37,7 +37,7 @@ function SectionTitle({ children }: { children: string }) {
       style={{
         fontFamily: fonts.semiBold,
         fontWeight: fontWeights.semiBold,
-        fontSize: 13,
+        fontSize: 15,
         color: TITLE_COLOR,
         marginBottom: 16,
         textTransform: "uppercase",
@@ -90,7 +90,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
                 style={{
                   fontFamily: fonts.headingBlack,
                   fontWeight: fontWeights.headingBlack,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: GOLD,
                 }}
               >
@@ -101,7 +101,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               style={{
                 fontFamily: fonts.bold,
                 fontWeight: fontWeights.bold,
-                fontSize: 17,
+                fontSize: 19,
                 color: TITLE_COLOR,
               }}
             >
@@ -113,7 +113,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             style={{
               fontFamily: fonts.light,
               fontWeight: fontWeights.light,
-              fontSize: 13,
+              fontSize: 15,
               color: LINK_COLOR,
               lineHeight: 20,
             }}
@@ -155,7 +155,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 13,
+              fontSize: 15,
               color: GOLD,
               lineHeight: 20,
               marginBottom: 10,
@@ -167,7 +167,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 13,
+              fontSize: 15,
               color: LINK_COLOR,
               lineHeight: 20,
             }}
@@ -198,7 +198,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
           style={{
             fontFamily: fonts.regular,
             fontWeight: fontWeights.regular,
-            fontSize: 12,
+            fontSize: 14,
             color: "#2a2a35",
           }}
         >
@@ -208,7 +208,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
           style={{
             fontFamily: fonts.regular,
             fontWeight: fontWeights.regular,
-            fontSize: 12,
+            fontSize: 14,
             color: "#3a3a45",
           }}
         >

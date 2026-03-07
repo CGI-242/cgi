@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: fontWeights.heading,
     fontFamily: fonts.heading,
     marginBottom: 12,
@@ -189,10 +189,10 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   descriptionText: {
-    fontSize: 11,
+    fontSize: 13,
   },
   fieldLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginBottom: 6,
   },
@@ -212,14 +212,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   switchLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   switchDesc: {
-    fontSize: 10,
+    fontSize: 12,
   },
   switchText: {
-    fontSize: 12,
+    fontSize: 14,
     flex: 1,
   },
   mb8: {
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   subLabel: {
-    fontSize: 11,
+    fontSize: 13,
     marginBottom: 3,
   },
   inputRowSmall: {
@@ -241,11 +241,11 @@ const styles = StyleSheet.create({
   },
   inputTextSmall: {
     flex: 1,
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "600",
   },
   currencySmall: {
-    fontSize: 10,
+    fontSize: 12,
   },
   inputRow: {
     flexDirection: "row",
@@ -256,11 +256,11 @@ const styles = StyleSheet.create({
   },
   inputText: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   currencyLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   counterRow: {
@@ -274,17 +274,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   counterButtonTextSmall: {
-    fontSize: 15,
+    fontSize: 17,
     fontWeight: "700",
   },
   counterValueSmall: {
     minWidth: 24,
     textAlign: "center",
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "700",
   },
   legalRef: {
-    fontSize: 10,
+    fontSize: 12,
   },
   trancheRow: {
     flexDirection: "row",
@@ -295,16 +295,16 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
   },
   trancheLabel: {
-    fontSize: 11,
+    fontSize: 13,
     flex: 1,
   },
   trancheRate: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "600",
     marginHorizontal: 6,
   },
   trancheAmount: {
-    fontSize: 11,
+    fontSize: 13,
     fontWeight: "600",
     width: 80,
     textAlign: "right",
@@ -320,11 +320,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   grossPatenteLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   grossPatenteValue: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "700",
   },
   netPatenteBox: {
@@ -333,11 +333,11 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
   },
   netPatenteLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "700",
   },
   netPatenteValue: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "800",
   },
   deadlineBox: {
@@ -350,7 +350,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   deadlineText: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginLeft: 6,
   },
@@ -360,6 +360,6 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
   },
   refText: {
-    fontSize: 10,
+    fontSize: 12,
   },
 });

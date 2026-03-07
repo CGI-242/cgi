@@ -72,7 +72,7 @@ export default function MobileTabBar({ active, onTabPress }: Props) {
               style={{
                 fontFamily: isActive ? fonts.bold : fonts.medium,
                 fontWeight: isActive ? fontWeights.bold : fontWeights.medium,
-                fontSize: 10,
+                fontSize: 12,
                 color: isActive ? colors.primary : colors.textMuted,
               }}
             >

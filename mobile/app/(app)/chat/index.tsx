@@ -236,7 +236,7 @@ export default function ChatScreen() {
         >
           <Ionicons name={showHistory ? "close" : "time-outline"} size={20} color={colors.textSecondary} />
         </TouchableOpacity>
-        <Text style={{ flex: 1, fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
+        <Text style={{ flex: 1, fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
           {showHistory ? t("chat.history") : t("chat.emptyStateDesc")}
         </Text>
         {conversationId && (

@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: fontWeights.heading,
     fontFamily: fonts.heading,
     marginBottom: 12,
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   descriptionText: {
-    fontSize: 11,
+    fontSize: 13,
   },
   rowGap10: {
     flexDirection: "row",
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   labelSmall: {
-    fontSize: 11,
+    fontSize: 13,
     fontWeight: "600",
     marginBottom: 2,
   },
@@ -204,13 +204,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   counterButtonText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   counterValue: {
     minWidth: 28,
     textAlign: "center",
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   checkboxRow: {
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   checkboxLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginLeft: 6,
   },
@@ -231,11 +231,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   partsText: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "700",
   },
   fieldLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginBottom: 6,
   },
@@ -248,15 +248,15 @@ const styles = StyleSheet.create({
   },
   inputText: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
   currencyLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   legalRef: {
-    fontSize: 10,
+    fontSize: 12,
     marginTop: 12,
   },
   quotientBox: {
@@ -270,14 +270,14 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   quotientLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   quotientSub: {
-    fontSize: 10,
+    fontSize: 12,
   },
   quotientValue: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "800",
   },
 });

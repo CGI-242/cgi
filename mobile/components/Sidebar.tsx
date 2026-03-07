@@ -104,11 +104,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           }}
         >
           {isCollapsed ? (
-            <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>C</Text>
+            <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20 }}>CGI 242</Text>
-              <Text style={{ color: colors.textMuted, fontSize: 11, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
+              <Text style={{ color: colors.textMuted, fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!isCollapsed && (
@@ -167,7 +167,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                   <Text
                     style={{
                       color: active ? colors.accent : colors.sidebarText,
-                      fontSize: 14,
+                      fontSize: 16,
                       fontFamily: fonts.regular,
                       fontWeight: active ? "700" : "400",
                     }}
@@ -184,7 +184,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                         marginLeft: 8,
                       }}
                     >
-                      <Text style={{ fontSize: 9, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.textMuted }}>{t("common.comingSoon")}</Text>
+                      <Text style={{ fontSize: 11, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.textMuted }}>{t("common.comingSoon")}</Text>
                     </View>
                   )}
                 </View>
@@ -221,7 +221,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 <Text
                   style={{
                     color: item.color || colors.sidebarText,
-                    fontSize: 14,
+                    fontSize: 16,
                     fontFamily: fonts.regular,
                     fontWeight: item.color ? "600" : "400",
                     marginLeft: 12,

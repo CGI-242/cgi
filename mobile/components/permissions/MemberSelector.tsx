@@ -41,13 +41,13 @@ export default function MemberSelector({ members, selectedMemberId, onSelect, co
             }}
           >
             <View style={{ width: 32, height: 32, backgroundColor: `${roleColor}20`, justifyContent: "center", alignItems: "center", marginRight: 10 }}>
-              <Text style={{ fontSize: 12, fontWeight: "700", color: roleColor }}>
+              <Text style={{ fontSize: 14, fontWeight: "700", color: roleColor }}>
                 {(member.name || member.email).substring(0, 2).toUpperCase()}
               </Text>
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
-              <Text style={{ fontSize: 11, color: colors.textMuted }}>{t(ROLE_KEYS[member.role] || member.role)}</Text>
+              <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text }}>{member.name || member.email}</Text>
+              <Text style={{ fontSize: 13, color: colors.textMuted }}>{t(ROLE_KEYS[member.role] || member.role)}</Text>
             </View>
             <Ionicons name={isSelected ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
           </TouchableOpacity>

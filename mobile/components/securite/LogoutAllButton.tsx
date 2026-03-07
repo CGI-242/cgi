@@ -43,7 +43,7 @@ export default function LogoutAllButton({
             style={{ marginRight: 8 }}
           />
           <Text
-            style={{ color: "#dc2626", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14 }}
+            style={{ color: "#dc2626", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16 }}
           >
             {t("security.logoutAllDevices")}
           </Text>

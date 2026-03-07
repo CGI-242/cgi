@@ -322,7 +322,7 @@ export default function OrganisationScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -344,7 +344,7 @@ export default function OrganisationScreen() {
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16 }}>{error}</Text>
           </View>
         )}
 

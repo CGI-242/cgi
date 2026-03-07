@@ -22,7 +22,7 @@ export default function PeriodSelector({ days, onChangeDays, onRefresh, colors }
             backgroundColor: days === d ? colors.primary : colors.border,
           }}
         >
-          <Text style={{ fontSize: 12, fontWeight: "600", color: days === d ? "#fff" : colors.text }}>{d}j</Text>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: days === d ? "#fff" : colors.text }}>{d}j</Text>
         </TouchableOpacity>
       ))}
       <TouchableOpacity onPress={onRefresh} style={{ padding: 8 }}>

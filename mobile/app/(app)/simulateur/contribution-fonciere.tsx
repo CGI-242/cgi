@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: fontWeights.heading,
     fontFamily: fonts.heading,
     marginBottom: 12,
@@ -183,10 +183,10 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   descriptionText: {
-    fontSize: 11,
+    fontSize: 13,
   },
   fieldLabel: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
     marginBottom: 6,
   },
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   subLabel: {
-    fontSize: 11,
+    fontSize: 13,
     marginBottom: 3,
   },
   rateRow: {
@@ -215,10 +215,10 @@ const styles = StyleSheet.create({
   },
   rateButtonText: {
     fontWeight: "600",
-    fontSize: 11,
+    fontSize: 13,
   },
   legalRef: {
-    fontSize: 10,
+    fontSize: 12,
     marginTop: 12,
   },
   underMinBox: {
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
   },
   underMinText: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "600",
   },
   articleRefBox: {
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   articleRefText: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "600",
   },
 });

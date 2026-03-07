@@ -65,7 +65,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
         <TextInput
           style={{
             flex: 1,
-            fontSize: 14,
+            fontSize: 16,
             fontFamily: fonts.regular,
             color: colors.text,
             maxHeight: 100,
@@ -122,7 +122,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
       <Text
         style={{
           color: colors.textMuted,
-          fontSize: 10,
+          fontSize: 12,
           fontFamily: fonts.regular,
           fontWeight: fontWeights.regular,
           textAlign: "center",

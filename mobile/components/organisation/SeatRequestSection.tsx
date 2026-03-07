@@ -51,20 +51,20 @@ export default function SeatRequestSection({
 
   return (
     <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
-      <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
+      <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
         {t("seatRequest.title")}
       </Text>
 
-      <Text style={{ fontSize: 14, color: colors.textSecondary, marginBottom: 12 }}>
+      <Text style={{ fontSize: 16, color: colors.textSecondary, marginBottom: 12 }}>
         {t("seatRequest.currentSeats", { used: membersCount, total: currentSeats })}
       </Text>
 
       {pendingSeatRequest && pendingSeatRequest.status === "PENDING" ? (
         <View style={{ backgroundColor: `${colors.warning}15`, padding: 12, borderRadius: 8 }}>
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.warning }}>
+          <Text style={{ fontSize: 16, fontWeight: "600", color: colors.warning }}>
             {t("seatRequest.pendingLabel")}
           </Text>
-          <Text style={{ fontSize: 13, color: colors.textSecondary, marginTop: 4 }}>
+          <Text style={{ fontSize: 15, color: colors.textSecondary, marginTop: 4 }}>
             {t("seatRequest.pendingDetail", {
               seats: pendingSeatRequest.additionalSeats,
               price: pendingSeatRequest.totalPrice.toLocaleString("fr-FR"),
@@ -74,7 +74,7 @@ export default function SeatRequestSection({
       ) : (
         <>
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
-            <Text style={{ fontSize: 14, color: colors.text, marginRight: 8 }}>
+            <Text style={{ fontSize: 16, color: colors.text, marginRight: 8 }}>
               {t("seatRequest.seatsToAdd")}
             </Text>
             <TextInput
@@ -90,7 +90,7 @@ export default function SeatRequestSection({
                 paddingHorizontal: 12,
                 paddingVertical: 8,
                 width: 80,
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: "600",
                 color: colors.text,
                 backgroundColor: colors.background,
@@ -101,11 +101,11 @@ export default function SeatRequestSection({
 
           {seatsNum > 0 && (
             <View style={{ backgroundColor: `${colors.primary}10`, padding: 12, borderRadius: 8, marginBottom: 12 }}>
-              <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>
+              <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text }}>
                 {seatsNum} x {computedUnitPrice.toLocaleString("fr-FR")} = {computedTotalPrice.toLocaleString("fr-FR")} XAF
               </Text>
               {discountPercent > 0 && (
-                <Text style={{ fontSize: 13, color: colors.primary, marginTop: 4 }}>
+                <Text style={{ fontSize: 15, color: colors.primary, marginTop: 4 }}>
                   {t("seatRequest.discountApplied", { percent: discountPercent, total: totalSeatsAfter })}
                 </Text>
               )}
@@ -122,7 +122,7 @@ export default function SeatRequestSection({
               alignItems: "center",
             }}
           >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 17 }}>
               {seatsLoading ? t("common.loading") : t("seatRequest.submit")}
             </Text>
           </TouchableOpacity>

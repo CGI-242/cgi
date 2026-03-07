@@ -106,7 +106,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
             marginBottom: 8,
           }}
         >
-          <Text style={{ color: "#fff", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 18, letterSpacing: 1 }}>
+          <Text style={{ color: "#fff", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, letterSpacing: 1 }}>
             {plan}
           </Text>
         </View>
@@ -130,14 +130,14 @@ export default function PlanHeader({ plan, status, colors }: Props) {
               marginRight: 6,
             }}
           />
-          <Text style={{ color: statusColor, fontSize: 13, fontWeight: "700" }}>
+          <Text style={{ color: statusColor, fontSize: 15, fontWeight: "700" }}>
             {statusLabel}
           </Text>
         </View>
       </View>
 
       <View style={{ paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12, alignItems: "center" }}>
-        <Text style={{ fontSize: 22, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>
+        <Text style={{ fontSize: 24, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>
           {t(PLANS_INFO.find((p) => p.name === plan)?.priceKey || "abonnement.planFree")}
         </Text>
       </View>

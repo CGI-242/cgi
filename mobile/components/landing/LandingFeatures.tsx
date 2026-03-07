@@ -93,7 +93,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             </View>
             <Text
               style={{
-                fontSize: 15,
+                fontSize: 17,
                 fontFamily: fonts.bold,
                 fontWeight: fontWeights.bold,
                 color: "#e8e6e1",
@@ -104,7 +104,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             </Text>
             <Text
               style={{
-                fontSize: 13,
+                fontSize: 15,
                 color: "#5a5a65",
                 lineHeight: 20,
                 fontFamily: fonts.light,

@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
   },
   toastText: {
     color: "#fff",
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "600",
     flex: 1,
   },
@@ -190,12 +190,12 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   confirmTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "700",
     marginBottom: 8,
   },
   confirmMessage: {
-    fontSize: 14,
+    fontSize: 16,
     lineHeight: 20,
     marginBottom: 20,
   },
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   confirmBtnText: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "700",
   },
 });

@@ -65,7 +65,7 @@ export default function OrgHeader({
                   backgroundColor: colors.background,
                   paddingHorizontal: 10,
                   paddingVertical: 6,
-                  fontSize: 16,
+                  fontSize: 18,
                   color: colors.text,
                 }}
                 autoFocus
@@ -79,7 +79,7 @@ export default function OrgHeader({
             </View>
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <Text style={{ fontSize: 18, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>{org.name}</Text>
+              <Text style={{ fontSize: 20, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>{org.name}</Text>
               {isAdmin && (
                 <TouchableOpacity onPress={onStartEdit} style={{ marginLeft: 8 }}>
                   <Ionicons name="create-outline" size={18} color={colors.primary} />
@@ -87,7 +87,7 @@ export default function OrgHeader({
               )}
             </View>
           )}
-          <Text style={{ fontSize: 13, color: colors.textSecondary }}>
+          <Text style={{ fontSize: 15, color: colors.textSecondary }}>
             {org.plan || "Gratuit"} — {org.memberCount} membre{org.memberCount > 1 ? "s" : ""}
           </Text>
         </View>

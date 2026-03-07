@@ -115,18 +115,18 @@ export default function VerifyOtp() {
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           <AuthLogo />
 
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 4 }}>
             {t("auth.verification")}
           </Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterCodeSentTo", { email })}
           </Text>
 
           {/* Dev code - visible uniquement en mode développement */}
           {__DEV__ && devCode ? (
             <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center" }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 30, color: colors.success, letterSpacing: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 32, color: colors.success, letterSpacing: 4 }}>
                 {devCode}
               </Text>
             </View>
@@ -135,12 +135,12 @@ export default function VerifyOtp() {
           {/* Messages */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 16 }}>{error}</Text>
             </View>
           ) : null}
           {success ? (
             <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 14 }}>{success}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 16 }}>{success}</Text>
             </View>
           ) : null}
 
@@ -166,7 +166,7 @@ export default function VerifyOtp() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 18 }}>
                 {t("auth.verify")}
               </Text>
             )}
@@ -174,7 +174,7 @@ export default function VerifyOtp() {
 
           {/* Renvoyer le code */}
           <TouchableOpacity style={{ alignItems: "center", marginTop: 20 }} onPress={handleResend} disabled={cooldown > 0} accessibilityLabel={t("auth.resendCode")} accessibilityRole="button">
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
               {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
             </Text>
           </TouchableOpacity>

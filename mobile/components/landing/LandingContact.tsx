@@ -27,7 +27,7 @@ export default function LandingContact({ isMobile }: Props) {
         style={{
           textAlign: "center",
           color: "#5a5a65",
-          fontSize: 15,
+          fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
           marginBottom: 40,
@@ -77,7 +77,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
-              fontSize: 15,
+              fontSize: 17,
               color: "#e8e6e1",
               marginBottom: 6,
             }}
@@ -88,7 +88,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 14,
+              fontSize: 16,
               color: GOLD,
             }}
           >
@@ -125,7 +125,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
-              fontSize: 15,
+              fontSize: 17,
               color: "#e8e6e1",
               marginBottom: 6,
             }}
@@ -136,7 +136,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 14,
+              fontSize: 16,
               color: "#5a5a65",
               textAlign: "center",
             }}
@@ -174,7 +174,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
-              fontSize: 15,
+              fontSize: 17,
               color: "#e8e6e1",
               marginBottom: 6,
             }}
@@ -185,7 +185,7 @@ export default function LandingContact({ isMobile }: Props) {
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 14,
+              fontSize: 16,
               color: "#5a5a65",
               textAlign: "center",
             }}

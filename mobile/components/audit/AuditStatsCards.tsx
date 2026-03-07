@@ -33,10 +33,10 @@ export default function AuditStatsCards({
           alignItems: "center",
         }}
       >
-        <Text style={{ fontSize: 22, fontWeight: "800", color: "#3b82f6" }}>
+        <Text style={{ fontSize: 24, fontWeight: "800", color: "#3b82f6" }}>
           {stats.totalLogs}
         </Text>
-        <Text style={{ fontSize: 11, color: "#3b82f6", fontWeight: "500" }}>
+        <Text style={{ fontSize: 13, color: "#3b82f6", fontWeight: "500" }}>
           Total
         </Text>
       </View>
@@ -48,10 +48,10 @@ export default function AuditStatsCards({
           alignItems: "center",
         }}
       >
-        <Text style={{ fontSize: 22, fontWeight: "800", color: "#8b5cf6" }}>
+        <Text style={{ fontSize: 24, fontWeight: "800", color: "#8b5cf6" }}>
           {stats.uniqueActors}
         </Text>
-        <Text style={{ fontSize: 11, color: "#8b5cf6", fontWeight: "500" }}>
+        <Text style={{ fontSize: 13, color: "#8b5cf6", fontWeight: "500" }}>
           Acteurs
         </Text>
       </View>
@@ -63,10 +63,10 @@ export default function AuditStatsCards({
           alignItems: "center",
         }}
       >
-        <Text style={{ fontSize: 14, fontWeight: "800", color: "#16a34a" }}>
+        <Text style={{ fontSize: 16, fontWeight: "800", color: "#16a34a" }}>
           {ACTION_LABELS[stats.mostFrequentAction] || stats.mostFrequentAction}
         </Text>
-        <Text style={{ fontSize: 11, color: "#16a34a", fontWeight: "500" }}>
+        <Text style={{ fontSize: 13, color: "#16a34a", fontWeight: "500" }}>
           Action principale
         </Text>
       </View>

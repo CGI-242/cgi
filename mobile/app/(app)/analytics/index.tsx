@@ -81,7 +81,7 @@ export default function AnalyticsScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -103,7 +103,7 @@ export default function AnalyticsScreen() {
 
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16 }}>{error}</Text>
           </View>
         )}
 
@@ -123,8 +123,8 @@ export default function AnalyticsScreen() {
               <View style={{ width: 36, height: 36, backgroundColor: `${card.color}15`, justifyContent: "center", alignItems: "center", marginBottom: 10 }}>
                 <Ionicons name={card.icon} size={18} color={card.color} />
               </View>
-              <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{card.value}</Text>
-              <Text style={{ fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{card.label}</Text>
+              <Text style={{ fontSize: 24, fontWeight: "800", color: colors.text }}>{card.value}</Text>
+              <Text style={{ fontSize: 14, color: colors.textSecondary, marginTop: 2 }}>{card.label}</Text>
             </View>
           ))}
         </View>
@@ -132,7 +132,7 @@ export default function AnalyticsScreen() {
         {/* Time series */}
         {timeSeries.length > 0 && (
           <>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 14, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               {t("analytics.activityDays", { days })}
             </Text>
             <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
@@ -140,7 +140,7 @@ export default function AnalyticsScreen() {
                 const widthPercent = Math.max((point.count / maxCount) * 100, 2);
                 return (
                   <View key={point.date} style={{ flexDirection: "row", alignItems: "center", marginBottom: 6 }}>
-                    <Text style={{ fontSize: 11, color: colors.textSecondary, width: 50 }}>{formatDate(point.date)}</Text>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, width: 50 }}>{formatDate(point.date)}</Text>
                     <View style={{ flex: 1, marginHorizontal: 8 }}>
                       <View
                         style={{
@@ -150,7 +150,7 @@ export default function AnalyticsScreen() {
                         }}
                       />
                     </View>
-                    <Text style={{ fontSize: 12, fontWeight: "600", color: colors.text, width: 30, textAlign: "right" }}>{point.count}</Text>
+                    <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, width: 30, textAlign: "right" }}>{point.count}</Text>
                   </View>
                 );
               })}
@@ -172,7 +172,7 @@ export default function AnalyticsScreen() {
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <Ionicons name="download-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("analytics.exportCsv")}</Text>
+              <Text style={{ color: "#fff", fontWeight: "600", fontSize: 17 }}>{t("analytics.exportCsv")}</Text>
             </View>
           )}
         </TouchableOpacity>

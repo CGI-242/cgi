@@ -39,7 +39,7 @@ export default function EmailField({ email, emailError, onChangeEmail, onBlur, c
         autoCapitalize="none"
       />
       {emailError ? (
-        <Text style={{ color: colors.danger, fontSize: 12, marginBottom: isMobile ? 8 : 12 }}>{emailError}</Text>
+        <Text style={{ color: colors.danger, fontSize: 14, marginBottom: isMobile ? 8 : 12 }}>{emailError}</Text>
       ) : null}
     </>
   );

@@ -45,7 +45,7 @@ export default function MemberList({
       <Text
         style={{
           color: colors.textSecondary,
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: "700",
           letterSpacing: 0.5,
           marginBottom: 8,
@@ -82,14 +82,14 @@ export default function MemberList({
                   marginRight: 12,
                 }}
               >
-                <Text style={{ fontSize: 14, fontWeight: "700", color: roleColor }}>{initials}</Text>
+                <Text style={{ fontSize: 16, fontWeight: "700", color: roleColor }}>{initials}</Text>
               </View>
               {/* Infos */}
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>
+                <Text style={{ fontSize: 17, fontWeight: "600", color: colors.text }}>
                   {member.name || member.email}
                 </Text>
-                <Text style={{ fontSize: 12, color: colors.textMuted }}>{member.email}</Text>
+                <Text style={{ fontSize: 14, color: colors.textMuted }}>{member.email}</Text>
               </View>
               {/* Badge r\u00f4le */}
               <View
@@ -100,7 +100,7 @@ export default function MemberList({
                   marginRight: 8,
                 }}
               >
-                <Text style={{ fontSize: 11, fontWeight: "700", color: roleColor }}>
+                <Text style={{ fontSize: 13, fontWeight: "700", color: roleColor }}>
                   {ROLE_LABELS[member.role] || member.role}
                 </Text>
               </View>
@@ -138,7 +138,7 @@ export default function MemberList({
                         color={colors.text}
                         style={{ marginRight: 8 }}
                       />
-                      <Text style={{ fontSize: 13, color: colors.text }}>
+                      <Text style={{ fontSize: 15, color: colors.text }}>
                         R\u00f4le \u2192 {ROLE_LABELS[role]}
                       </Text>
                     </TouchableOpacity>
@@ -162,7 +162,7 @@ export default function MemberList({
                     color="#dc2626"
                     style={{ marginRight: 8 }}
                   />
-                  <Text style={{ fontSize: 13, color: "#dc2626" }}>Retirer de l'organisation</Text>
+                  <Text style={{ fontSize: 15, color: "#dc2626" }}>Retirer de l'organisation</Text>
                 </TouchableOpacity>
                 {/* Transf\u00e9rer propri\u00e9t\u00e9 */}
                 {isOwner && (
@@ -184,7 +184,7 @@ export default function MemberList({
                       color="#8b5cf6"
                       style={{ marginRight: 8 }}
                     />
-                    <Text style={{ fontSize: 13, color: "#8b5cf6" }}>
+                    <Text style={{ fontSize: 15, color: "#8b5cf6" }}>
                       Transf\u00e9rer la propri\u00e9t\u00e9
                     </Text>
                   </TouchableOpacity>

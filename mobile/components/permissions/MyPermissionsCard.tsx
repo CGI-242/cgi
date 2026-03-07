@@ -47,15 +47,15 @@ export default function MyPermissionsCard({ myPerms, available, colors }: MyPerm
 
   return (
     <>
-      <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+      <Text style={{ color: colors.textSecondary, fontSize: 14, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
         {t("permissions.memberPermissions")}
       </Text>
       <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
         <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 14 }}>
           <Ionicons name="person-circle-outline" size={24} color={colors.text} style={{ marginRight: 10 }} />
-          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text, flex: 1 }}>{t("permLabels.myRole")}</Text>
+          <Text style={{ fontSize: 17, fontWeight: "600", color: colors.text, flex: 1 }}>{t("permLabels.myRole")}</Text>
           <View style={{ backgroundColor: `${ROLE_COLORS[myPerms.role] || "#6b7280"}20`, paddingHorizontal: 10, paddingVertical: 4 }}>
-            <Text style={{ fontSize: 12, fontWeight: "700", color: ROLE_COLORS[myPerms.role] || "#6b7280" }}>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: ROLE_COLORS[myPerms.role] || "#6b7280" }}>
               {t(ROLE_KEYS[myPerms.role] || myPerms.role)}
             </Text>
           </View>
@@ -66,7 +66,7 @@ export default function MyPermissionsCard({ myPerms, available, colors }: MyPerm
           return (
             <View key={perm.key} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6 }}>
               <Ionicons name={hasIt ? "checkmark-circle" : "close-circle"} size={18} color={hasIt ? "#16a34a" : "#dc2626"} style={{ marginRight: 10 }} />
-              <Text style={{ fontSize: 13, color: colors.text, flex: 1 }}>{t(PERMISSION_KEYS[perm.key] || perm.key)}</Text>
+              <Text style={{ fontSize: 15, color: colors.text, flex: 1 }}>{t(PERMISSION_KEYS[perm.key] || perm.key)}</Text>
             </View>
           );
         })}

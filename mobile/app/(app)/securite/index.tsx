@@ -173,7 +173,7 @@ export default function SecuriteScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>{t("common.loading")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -183,7 +183,7 @@ export default function SecuriteScreen() {
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, borderRadius: 12, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14, fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16, fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{error}</Text>
           </View>
         )}
 

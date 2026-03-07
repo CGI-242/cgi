@@ -14,7 +14,7 @@ export default function PlansComparison({ currentPlan, colors }: Props) {
     <View style={{ marginBottom: 16 }}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
         <Ionicons name="layers-outline" size={20} color={colors.primary} style={{ marginRight: 8 }} />
-        <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{t("abonnement.ourPlans")}</Text>
+        <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("abonnement.ourPlans")}</Text>
       </View>
 
       {PLANS_INFO.map((planInfo) => {
@@ -43,7 +43,7 @@ export default function PlansComparison({ currentPlan, colors }: Props) {
                     marginRight: 8,
                   }}
                 >
-                  <Text style={{ color: "#fff", fontSize: 12, fontWeight: "800" }}>
+                  <Text style={{ color: "#fff", fontSize: 14, fontWeight: "800" }}>
                     {planInfo.name}
                   </Text>
                 </View>
@@ -55,17 +55,17 @@ export default function PlansComparison({ currentPlan, colors }: Props) {
                       paddingVertical: 2,
                     }}
                   >
-                    <Text style={{ color, fontSize: 11, fontWeight: "700" }}>{t("abonnement.currentPlan")}</Text>
+                    <Text style={{ color, fontSize: 13, fontWeight: "700" }}>{t("abonnement.currentPlan")}</Text>
                   </View>
                 )}
               </View>
-              <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text }}>
+              <Text style={{ fontSize: 17, fontWeight: "800", color: colors.text }}>
                 {t(planInfo.priceKey)}
               </Text>
             </View>
 
             {planInfo.priceDetailKey && (
-              <Text style={{ fontSize: 11, color: colors.textSecondary, marginBottom: 8, fontStyle: "italic" }}>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8, fontStyle: "italic" }}>
                 {t(planInfo.priceDetailKey)}
               </Text>
             )}
@@ -76,7 +76,7 @@ export default function PlansComparison({ currentPlan, colors }: Props) {
                 style={{ flexDirection: "row", alignItems: "center", marginBottom: idx < planInfo.featureKeys.length - 1 ? 6 : 0 }}
               >
                 <Ionicons name="checkmark-circle" size={16} color={color} style={{ marginRight: 8 }} />
-                <Text style={{ fontSize: 13, color: colors.text }}>{t(featureKey)}</Text>
+                <Text style={{ fontSize: 15, color: colors.text }}>{t(featureKey)}</Text>
               </View>
             ))}
           </View>

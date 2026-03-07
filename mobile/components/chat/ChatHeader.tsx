@@ -55,7 +55,7 @@ export default function ChatHeader({
         color={colors.accent}
         style={{ marginRight: 8 }}
       />
-      <Text style={{ color: colors.accent, fontSize: 17, fontWeight: "700", flex: 1 }}>
+      <Text style={{ color: colors.accent, fontSize: 19, fontWeight: "700", flex: 1 }}>
         {t("chat.title")}
       </Text>
       {conversationId && (

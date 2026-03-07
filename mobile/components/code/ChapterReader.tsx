@@ -130,7 +130,7 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
       onLayout={(e) => { blockY.current = e.nativeEvent.layout.y; }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: article.article ? colors.text : colors.primary, flex: 1 }}>
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: article.article ? colors.text : colors.primary, flex: 1 }}>
           {article.article ? `${article.article} — ${article.titre}` : article.titre}
         </Text>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginLeft: 8 }}>
@@ -177,7 +177,7 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
               style={{
                 fontFamily: fonts.regular,
                 fontWeight: fontWeights.regular,
-                fontSize: 10,
+                fontSize: 12,
                 color: colors.textMuted,
                 backgroundColor: colors.border,
                 paddingHorizontal: 8,
@@ -234,16 +234,16 @@ function NodeBlock({ node, colors, positions, parentId, depth, scrollRef }: Node
       {isSection ? (
         <View style={{ marginBottom: 12 }}>
           <View style={{ height: 2, backgroundColor: colors.accent, marginBottom: 10, opacity: 0.4 }} />
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.accent }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 19, color: colors.accent }}>
             {node.label}
           </Text>
         </View>
       ) : isSub ? (
-        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.primary, marginBottom: 10 }}>
           {node.label}
         </Text>
       ) : (
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: "#D4A017", marginBottom: 8 }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: "#D4A017", marginBottom: 8 }}>
           {node.label}
         </Text>
       )}
@@ -307,7 +307,7 @@ export default function ChapterReader({ chapter, colors, scrollToId, scrollTrigg
       scrollEventThrottle={16}
     >
       {/* Titre du chapitre */}
-      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 22, color: colors.text, marginBottom: 20 }}>
+      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 20 }}>
         {chapter.label}
       </Text>
 

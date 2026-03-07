@@ -22,13 +22,13 @@ export default function AvatarSection({ initials, email, colors }: Props) {
           marginBottom: 14,
         }}
       >
-        <Text style={{ color: "#fff", fontSize: 30, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+        <Text style={{ color: "#fff", fontSize: 32, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
           {initials}
         </Text>
       </View>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         <Ionicons name="mail-outline" size={14} color={colors.textMuted} />
-        <Text style={{ color: colors.textSecondary, fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+        <Text style={{ color: colors.textSecondary, fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
           {email}
         </Text>
       </View>

@@ -90,7 +90,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
               style={{
                 flex: 1,
                 marginLeft: 8,
-                fontSize: 15,
+                fontSize: 17,
                 color: colors.text,
                 fontFamily: fonts.regular,
               }}
@@ -117,7 +117,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                 style={{
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
-                  fontSize: 13,
+                  fontSize: 15,
                   color: colors.textSecondary,
                   marginBottom: 12,
                 }}
@@ -152,16 +152,16 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                     <Ionicons name="document-text-outline" size={18} color={colors.primary} />
                   </View>
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary }}>
+                    <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary }}>
                       {art.article}
                     </Text>
                     {art.titre && (
-                      <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginTop: 2 }} numberOfLines={1}>
+                      <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginTop: 2 }} numberOfLines={1}>
                         {art.titre}
                       </Text>
                     )}
                     <Text
-                      style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, marginTop: 2 }}
+                      style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted, marginTop: 2 }}
                       numberOfLines={2}
                     >
                       {art.texte.join(" ")}
@@ -172,7 +172,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
               {results.length === 0 && (
                 <View style={{ alignItems: "center", paddingTop: 40 }}>
                   <Ionicons name="search-outline" size={40} color={colors.textMuted} />
-                  <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginTop: 12 }}>
+                  <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginTop: 12 }}>
                     {t("common.noResults")}
                   </Text>
                 </View>
@@ -185,7 +185,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                 style={{
                   fontFamily: fonts.bold,
                   fontWeight: fontWeights.bold,
-                  fontSize: 15,
+                  fontSize: 17,
                   color: colors.text,
                   marginBottom: 14,
                 }}
@@ -220,7 +220,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                     >
                       <Ionicons name={link.icon} size={20} color={colors.primary} />
                     </View>
-                    <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: colors.text }}>
+                    <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text }}>
                       {t(link.labelKey)}
                     </Text>
                   </TouchableOpacity>

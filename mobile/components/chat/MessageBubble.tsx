@@ -60,7 +60,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
           <Text
             style={{
               color: role === "USER" ? colors.userBubbleText : colors.assistantBubbleText,
-              fontSize: 14,
+              fontSize: 16,
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               lineHeight: 20,

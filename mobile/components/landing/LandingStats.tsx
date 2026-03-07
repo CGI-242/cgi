@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
   },
   statValue: {
     color: "#ffffff",
-    fontSize: 40,
+    fontSize: 42,
     fontWeight: "800",
   },
   statLabel: {
     color: "rgba(255,255,255,0.85)",
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 6,
   },
 });

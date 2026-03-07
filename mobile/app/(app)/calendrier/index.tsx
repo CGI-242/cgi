@@ -74,10 +74,10 @@ export default function CalendrierFiscal() {
   const renderGrille = () => (
     <View style={{ padding: 16 }}>
       {/* Titre */}
-      <Text style={{ fontSize: 20, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: colors.text, marginBottom: 4 }}>
+      <Text style={{ fontSize: 22, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: colors.text, marginBottom: 4 }}>
         {t("calendrier.title")}
       </Text>
-      <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary, marginBottom: 16 }}>
+      <Text style={{ fontSize: 15, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary, marginBottom: 16 }}>
         {t("calendrier.subtitle")}
       </Text>
 
@@ -90,7 +90,7 @@ export default function CalendrierFiscal() {
         <TouchableOpacity onPress={moisPrecedent} hitSlop={8} accessibilityLabel="Mois precedent" accessibilityRole="button">
           <Ionicons name="chevron-back" size={22} color={colors.primary} />
         </TouchableOpacity>
-        <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }}>
+        <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }}>
           {nomMois} {annee}
         </Text>
         <TouchableOpacity onPress={moisSuivant} hitSlop={8} accessibilityLabel="Mois suivant" accessibilityRole="button">
@@ -102,7 +102,7 @@ export default function CalendrierFiscal() {
       <View style={{ flexDirection: "row", marginBottom: 4 }}>
         {JOURS_KEYS.map((key) => (
           <View key={key} style={{ flex: 1, alignItems: "center", paddingVertical: 6 }}>
-            <Text style={{ fontSize: 11, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.textMuted }}>
+            <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.textMuted }}>
               {t(key)}
             </Text>
           </View>
@@ -128,7 +128,7 @@ export default function CalendrierFiscal() {
               {jour.jour !== null && (
                 <>
                   <Text style={{
-                    fontSize: 13,
+                    fontSize: 15,
                     fontFamily: jour.estAujourdhui ? fonts.extraBold : fonts.regular,
                     fontWeight: jour.estAujourdhui ? fontWeights.extraBold : fontWeights.regular,
                     color: jour.estPasse ? colors.textMuted : jour.estAujourdhui ? colors.primary : colors.text,
@@ -142,7 +142,7 @@ export default function CalendrierFiscal() {
                       width: 16, height: 16, borderRadius: 8,
                       alignItems: "center", justifyContent: "center",
                     }}>
-                      <Text style={{ fontSize: 9, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#fff" }}>
+                      <Text style={{ fontSize: 11, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#fff" }}>
                         {jour.echeances.length}
                       </Text>
                     </View>
@@ -158,15 +158,15 @@ export default function CalendrierFiscal() {
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginTop: 12, paddingTop: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           <View style={{ width: 12, height: 12, borderWidth: 2, borderColor: colors.primary }} />
-          <Text style={{ fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeAujourdhui")}</Text>
+          <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeAujourdhui")}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: colors.danger }} />
-          <Text style={{ fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeEcheance")}</Text>
+          <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeEcheance")}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: colors.accent }} />
-          <Text style={{ fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeRecurrent")}</Text>
+          <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeRecurrent")}</Text>
         </View>
       </View>
     </View>
@@ -217,7 +217,7 @@ export default function CalendrierFiscal() {
 
       {/* Reference legale */}
       <View style={{ padding: 14 }}>
-        <Text style={{ fontSize: 10, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
+        <Text style={{ fontSize: 12, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
           {t("calendrier.legalRef")}
         </Text>
       </View>

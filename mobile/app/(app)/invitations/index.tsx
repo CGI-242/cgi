@@ -50,10 +50,10 @@ export default function InvitationsScreen() {
           <View style={{ width: 64, height: 64, backgroundColor: `${colors.primary}20`, justifyContent: "center", alignItems: "center", marginBottom: 12 }}>
             <Ionicons name="mail-open-outline" size={32} color={colors.primary} />
           </View>
-          <Text style={{ fontSize: 20, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text, textAlign: "center" }}>
+          <Text style={{ fontSize: 22, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text, textAlign: "center" }}>
             {t("invitations.accept")}
           </Text>
-          <Text style={{ fontSize: 14, color: colors.textSecondary, textAlign: "center", marginTop: 4 }}>
+          <Text style={{ fontSize: 16, color: colors.textSecondary, textAlign: "center", marginTop: 4 }}>
             {t("invitations.description")}
           </Text>
         </View>
@@ -61,19 +61,19 @@ export default function InvitationsScreen() {
         {/* Messages */}
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16 }}>{error}</Text>
           </View>
         )}
 
         {success && (
           <View style={{ backgroundColor: `${colors.success}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.success, fontSize: 14 }}>{success}</Text>
+            <Text style={{ color: colors.success, fontSize: 16 }}>{success}</Text>
           </View>
         )}
 
         {/* Formulaire */}
         <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16 }}>
-          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
             {t("invitations.tokenLabel")}
           </Text>
           <TextInput
@@ -86,7 +86,7 @@ export default function InvitationsScreen() {
               
               paddingHorizontal: 14,
               paddingVertical: 12,
-              fontSize: 15,
+              fontSize: 17,
               color: colors.text,
               marginBottom: 16,
             }}
@@ -107,7 +107,7 @@ export default function InvitationsScreen() {
             ) : (
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Ionicons name="checkmark-circle-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>{t("invitations.acceptButton")}</Text>
+                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 17 }}>{t("invitations.acceptButton")}</Text>
               </View>
             )}
           </TouchableOpacity>

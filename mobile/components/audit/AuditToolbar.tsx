@@ -62,7 +62,7 @@ export default function AuditToolbar({
               color="#dc2626"
               style={{ marginRight: 4 }}
             />
-            <Text style={{ color: "#dc2626", fontSize: 13, fontWeight: "600" }}>
+            <Text style={{ color: "#dc2626", fontSize: 15, fontWeight: "600" }}>
               Nettoyage RGPD
             </Text>
           </TouchableOpacity>
@@ -85,7 +85,7 @@ export default function AuditToolbar({
         >
           <Text
             style={{
-              fontSize: 14,
+              fontSize: 16,
               fontWeight: "600",
               color: "#dc2626",
               marginBottom: 8,
@@ -95,7 +95,7 @@ export default function AuditToolbar({
           </Text>
           <Text
             style={{
-              fontSize: 13,
+              fontSize: 15,
               color: colors.textSecondary,
               marginBottom: 12,
             }}
@@ -113,7 +113,7 @@ export default function AuditToolbar({
               backgroundColor: colors.background,
               paddingHorizontal: 14,
               paddingVertical: 10,
-              fontSize: 15,
+              fontSize: 17,
               color: colors.text,
               marginBottom: 12,
             }}
@@ -132,7 +132,7 @@ export default function AuditToolbar({
                 style={{
                   color: colors.text,
                   fontWeight: "600",
-                  fontSize: 14,
+                  fontSize: 16,
                 }}
               >
                 Annuler
@@ -152,7 +152,7 @@ export default function AuditToolbar({
                 <ActivityIndicator size="small" color="#fff" />
               ) : (
                 <Text
-                  style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}
+                  style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}
                 >
                   Nettoyer
                 </Text>

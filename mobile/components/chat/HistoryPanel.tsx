@@ -119,7 +119,7 @@ export default function HistoryPanel({
           borderBottomColor: colors.border,
         }}
       >
-        <Text style={{ color: colors.sidebarText, fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
+        <Text style={{ color: colors.sidebarText, fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
           {t("chat.history")}
         </Text>
         <TouchableOpacity onPress={onClose} accessibilityLabel={t("chat.closeHistory")}>
@@ -144,7 +144,7 @@ export default function HistoryPanel({
         }}
       >
         <Ionicons name="add" size={18} color="#fff" />
-        <Text style={{ color: "#fff", fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+        <Text style={{ color: "#fff", fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
           {t("chat.newConversation")}
         </Text>
       </TouchableOpacity>
@@ -166,7 +166,7 @@ export default function HistoryPanel({
           style={{
             flex: 1,
             color: colors.sidebarText,
-            fontSize: 13,
+            fontSize: 15,
             fontFamily: fonts.regular,
             paddingVertical: 8,
             marginLeft: 8,
@@ -187,14 +187,14 @@ export default function HistoryPanel({
       {loading ? (
         <View style={{ paddingTop: 40, alignItems: "center" }}>
           <ActivityIndicator size="small" color={colors.accent} />
-          <Text style={{ color: colors.textMuted, fontSize: 13, marginTop: 8 }}>
+          <Text style={{ color: colors.textMuted, fontSize: 15, marginTop: 8 }}>
             {t("common.loading")}
           </Text>
         </View>
       ) : conversations.length === 0 ? (
         <View style={{ paddingTop: 40, alignItems: "center", paddingHorizontal: 20 }}>
           <Ionicons name="chatbubbles-outline" size={32} color={colors.disabled} />
-          <Text style={{ color: colors.textMuted, fontSize: 13, marginTop: 8, textAlign: "center" }}>
+          <Text style={{ color: colors.textMuted, fontSize: 15, marginTop: 8, textAlign: "center" }}>
             {t("chat.noConversations")}
           </Text>
         </View>
@@ -208,7 +208,7 @@ export default function HistoryPanel({
               <Text
                 style={{
                   color: colors.textMuted,
-                  fontSize: 11,
+                  fontSize: 13,
                   fontFamily: fonts.bold,
                   fontWeight: fontWeights.bold,
                   textTransform: "uppercase",
@@ -254,14 +254,14 @@ export default function HistoryPanel({
                         numberOfLines={1}
                         style={{
                           color: isActive ? colors.accent : colors.sidebarText,
-                          fontSize: 13,
+                          fontSize: 15,
                           fontFamily: isActive ? fonts.semiBold : fonts.regular,
                           fontWeight: isActive ? fontWeights.semiBold : fontWeights.regular,
                         }}
                       >
                         {conv.title || t("chat.untitled")}
                       </Text>
-                      <Text style={{ color: colors.textMuted, fontSize: 11, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 2 }}>
+                      <Text style={{ color: colors.textMuted, fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 2 }}>
                         {conv._count?.messages ?? 0} {(conv._count?.messages ?? 0) > 1 ? t("chat.messages") : t("chat.message")} · {formatRelativeDate(conv.updatedAt, t)}
                       </Text>
                     </View>

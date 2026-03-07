@@ -46,10 +46,10 @@ export default function LogoutScreen() {
           <Ionicons name="checkmark" size={32} color={colors.sidebarText} />
         </View>
 
-        <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 8 }}>
           {t("auth.logoutSuccess")}
         </Text>
-        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textAlign: "center", marginBottom: 32 }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, textAlign: "center", marginBottom: 32 }}>
           {t("auth.logoutMessage")}
         </Text>
 
@@ -58,7 +58,7 @@ export default function LogoutScreen() {
           onPress={handleReconnect}
           activeOpacity={0.8}
         >
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 18 }}>
             {t("auth.reconnect")}
           </Text>
         </TouchableOpacity>

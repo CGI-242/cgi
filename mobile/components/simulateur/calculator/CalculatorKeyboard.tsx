@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   buttonText: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "600",
   },
 });

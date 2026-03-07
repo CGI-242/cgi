@@ -128,7 +128,7 @@ export default function PermissionsScreen() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 14 }}>{t("common.loading")}</Text>
+        <Text style={{ marginTop: 12, color: colors.textSecondary, fontSize: 16 }}>{t("common.loading")}</Text>
       </View>
     );
   }
@@ -138,7 +138,7 @@ export default function PermissionsScreen() {
       <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 32 }}>
         {error && (
           <View style={{ backgroundColor: `${colors.danger}15`, padding: 16, marginBottom: 12 }}>
-            <Text style={{ color: colors.danger, fontSize: 14 }}>{error}</Text>
+            <Text style={{ color: colors.danger, fontSize: 16 }}>{error}</Text>
           </View>
         )}
 
@@ -148,7 +148,7 @@ export default function PermissionsScreen() {
 
         {members.length > 0 && (myPerms?.role === "OWNER" || myPerms?.role === "ADMIN") && (
           <>
-            <Text style={{ color: colors.textSecondary, fontSize: 12, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 14, fontWeight: "700", letterSpacing: 0.5, marginBottom: 8, marginLeft: 4 }}>
               {t("permissions.memberPermissions")}
             </Text>
 

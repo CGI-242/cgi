@@ -38,11 +38,11 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
           />
           <View style={{ flex: 1 }}>
             <Text
-              style={{ fontSize: 16, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}
+              style={{ fontSize: 18, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}
             >
               {t("security.mfa2fa")}
             </Text>
-            <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
+            <Text style={{ fontSize: 15, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
               {status?.enabled
                 ? t("security.mfaProtects")
                 : t("security.mfaNotConfigured")}
@@ -59,7 +59,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
         >
           <Text
             style={{
-              fontSize: 12,
+              fontSize: 14,
               fontFamily: fonts.bold,
               fontWeight: fontWeights.bold,
               color: status?.enabled ? colors.success : colors.danger,
@@ -79,7 +79,7 @@ export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {
             color={colors.textSecondary}
             style={{ marginRight: 6 }}
           />
-          <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
+          <Text style={{ fontSize: 15, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textSecondary }}>
             {t("security.backupCodesRemaining", { count: status.backupCodesRemaining })}
           </Text>
         </View>

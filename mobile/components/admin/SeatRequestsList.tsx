@@ -27,7 +27,7 @@ export default function SeatRequestsList({
 
   return (
     <View style={{ marginBottom: 16 }}>
-      <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
+      <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
         {t("seatRequest.pendingRequests", { count: seatRequests.length })}
       </Text>
       {seatRequests.map((req) => {
@@ -35,21 +35,21 @@ export default function SeatRequestsList({
         return (
           <View key={req.id} style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: colors.warning }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
-              <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text }}>{req.organization.name}</Text>
+              <Text style={{ fontSize: 17, fontWeight: "700", color: colors.text }}>{req.organization.name}</Text>
               <View style={{ backgroundColor: `${colors.warning}20`, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 4 }}>
-                <Text style={{ fontSize: 12, fontWeight: "600", color: colors.warning }}>{t("seatRequest.pending")}</Text>
+                <Text style={{ fontSize: 14, fontWeight: "600", color: colors.warning }}>{t("seatRequest.pending")}</Text>
               </View>
             </View>
-            <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 4 }}>
+            <Text style={{ fontSize: 15, color: colors.textSecondary, marginBottom: 4 }}>
               {t("seatRequest.requestedBy", { name: requesterName })}
             </Text>
-            <Text style={{ fontSize: 14, color: colors.text, marginBottom: 4 }}>
+            <Text style={{ fontSize: 16, color: colors.text, marginBottom: 4 }}>
               +{req.additionalSeats} {t("admin.seats")} ({req.currentSeats} → {req.totalSeatsAfter})
             </Text>
-            <Text style={{ fontSize: 14, fontWeight: "600", color: colors.primary, marginBottom: 8 }}>
+            <Text style={{ fontSize: 16, fontWeight: "600", color: colors.primary, marginBottom: 8 }}>
               {req.additionalSeats} x {req.unitPrice.toLocaleString("fr-FR")} = {req.totalPrice.toLocaleString("fr-FR")} XAF
             </Text>
-            <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 12 }}>
+            <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 12 }}>
               Plan {req.plan}
             </Text>
             <TextInput
@@ -62,7 +62,7 @@ export default function SeatRequestsList({
                 borderColor: colors.border,
                 borderRadius: 8,
                 padding: 10,
-                fontSize: 13,
+                fontSize: 15,
                 color: colors.text,
                 backgroundColor: colors.background,
                 marginBottom: 12,
@@ -74,7 +74,7 @@ export default function SeatRequestsList({
                 disabled={actionLoading === req.id}
                 style={{ flex: 1, backgroundColor: colors.primary, paddingVertical: 10, borderRadius: 8, alignItems: "center" }}
               >
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
+                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                   {actionLoading === req.id ? t("common.loading") : t("seatRequest.approve")}
                 </Text>
               </TouchableOpacity>
@@ -83,7 +83,7 @@ export default function SeatRequestsList({
                 disabled={actionLoading === req.id}
                 style={{ flex: 1, backgroundColor: colors.danger, paddingVertical: 10, borderRadius: 8, alignItems: "center" }}
               >
-                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
+                <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                   {actionLoading === req.id ? t("common.loading") : t("seatRequest.reject")}
                 </Text>
               </TouchableOpacity>

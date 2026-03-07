@@ -62,7 +62,7 @@ export default function EntityHistoryModal({
             }}
           >
             <Text
-              style={{ fontSize: 18, fontWeight: "700", color: colors.text }}
+              style={{ fontSize: 20, fontWeight: "700", color: colors.text }}
             >
               Historique de l'entité
             </Text>
@@ -115,7 +115,7 @@ export default function EntityHistoryModal({
                       <View style={{ flex: 1 }}>
                         <Text
                           style={{
-                            fontSize: 13,
+                            fontSize: 15,
                             fontWeight: "600",
                             color: colors.text,
                           }}
@@ -123,7 +123,7 @@ export default function EntityHistoryModal({
                           {ACTION_LABELS[log.action] || log.action}
                         </Text>
                         <Text
-                          style={{ fontSize: 11, color: colors.textMuted }}
+                          style={{ fontSize: 13, color: colors.textMuted }}
                         >
                           {log.actorEmail} — {formatTimestamp(log.createdAt)}
                         </Text>

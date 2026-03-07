@@ -21,8 +21,8 @@ export default function AdminStatsGrid({ totalOrgs, activeCount, trialCount, exp
     <View style={{ flexDirection: "row", gap: 10, marginBottom: 16 }}>
       {items.map((s) => (
         <View key={s.label} style={{ flex: 1, backgroundColor: s.bg, padding: 12, alignItems: "center" }}>
-          <Text style={{ fontSize: 22, fontWeight: "800", color: s.color }}>{s.value}</Text>
-          <Text style={{ fontSize: 11, color: s.color, fontWeight: "500" }}>{s.label}</Text>
+          <Text style={{ fontSize: 24, fontWeight: "800", color: s.color }}>{s.value}</Text>
+          <Text style={{ fontSize: 13, color: s.color, fontWeight: "500" }}>{s.label}</Text>
         </View>
       ))}
     </View>

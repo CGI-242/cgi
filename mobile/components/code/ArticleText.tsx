@@ -71,7 +71,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         if (type === "sectionHeader") {
           return wrapLine(i,
             <View style={{ marginTop: 16, marginBottom: 8 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: "#D4A017" }}>{line}</Text>
+              <Text selectable={false} style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: "#D4A017" }}>{line}</Text>
             </View>
           );
         }
@@ -79,7 +79,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         if (type === "subsection") {
           return wrapLine(i,
             <View style={{ marginTop: 16, marginBottom: 8 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.primary }}>{line}</Text>
+              <Text selectable={false} style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: colors.primary }}>{line}</Text>
             </View>
           );
         }
@@ -88,10 +88,10 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
           const marker = line.match(/^(\d+°)/)?.[1] || "";
           return wrapLine(i,
             <View style={{ flexDirection: "row", paddingLeft: 40, marginBottom: 8 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: "#D4A017", minWidth: 30 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: "#D4A017", minWidth: 30 }}>
                 {marker}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {renderInlineRoman(line.replace(/^\d+°\s*/, ""))}
               </Text>
             </View>
@@ -101,10 +101,10 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         if (type === "numbered") {
           return wrapLine(i,
             <View style={{ flexDirection: "row", paddingLeft: 8, marginBottom: 8 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.primary, width: 24 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.primary, width: 24 }}>
                 {line.match(/^(\d+[\.\)])/)?.[1]}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {renderInlineRoman(line.replace(/^\d+[\.\)]\s*/, ""))}
               </Text>
             </View>
@@ -114,10 +114,10 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         if (type === "lettered") {
           return wrapLine(i,
             <View style={{ flexDirection: "row", paddingLeft: 24, marginBottom: 4 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.textMuted, width: 20 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.textMuted, width: 20 }}>
                 {line.match(/^([a-z]\))/)?.[1]}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {renderInlineRoman(line.replace(/^[a-z]\)\s*/, ""))}
               </Text>
             </View>
@@ -128,10 +128,10 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
           const marker = line.match(/^(\([ivx]+\))/)?.[1] || "";
           return wrapLine(i,
             <View style={{ flexDirection: "row", paddingLeft: 40, marginBottom: 4 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary, width: 28 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.primary, width: 28 }}>
                 {marker}
               </Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {line.replace(/^\([ivx]+\)\s*/, "")}
               </Text>
             </View>
@@ -142,8 +142,8 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
           const isSubBullet = line.startsWith("○ ");
           return wrapLine(i,
             <View style={{ flexDirection: "row", marginBottom: 4, paddingLeft: isSubBullet ? 32 : 16 }}>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: isSubBullet ? colors.textMuted : colors.primary, marginRight: 8 }}>{isSubBullet ? "○" : "•"}</Text>
-              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, flex: 1 }}>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: isSubBullet ? colors.textMuted : colors.primary, marginRight: 8 }}>{isSubBullet ? "○" : "•"}</Text>
+              <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, flex: 1 }}>
                 {renderInlineRoman(line.replace(/^[-•○]\s*/, ""))}
               </Text>
             </View>
@@ -151,7 +151,7 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
         }
 
         return wrapLine(i,
-          <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.text, lineHeight: 22, marginBottom: 8 }}>
+          <Text selectable={false} style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.text, lineHeight: 22, marginBottom: 8 }}>
             {renderInlineRoman(line)}
           </Text>
         );

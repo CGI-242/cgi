@@ -59,13 +59,13 @@ export default function ReferencesBlock({
         marginBottom: 16,
       }}
     >
-      <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.primary, marginBottom: 10 }}>
+      <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.primary, marginBottom: 10 }}>
         {t("code.referencesTitle")}
       </Text>
 
       {references.length > 0 && (
         <View style={{ marginBottom: referencedBy.length > 0 ? 12 : 0 }}>
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 6 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 6 }}>
             {t("code.referencesOut")}
           </Text>
           {references.map((ref) => (
@@ -74,11 +74,11 @@ export default function ReferencesBlock({
               onPress={() => onSelectArticle?.(makeArticleData(ref))}
               style={{ flexDirection: "row", alignItems: "center", paddingVertical: 4 }}
             >
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.primary, marginRight: 4 }}>→</Text>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.primary }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.primary, marginRight: 4 }}>→</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.primary }}>
                 Art. {ref.numero}
               </Text>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
                 — {ref.titre}
               </Text>
             </TouchableOpacity>
@@ -88,7 +88,7 @@ export default function ReferencesBlock({
 
       {referencedBy.length > 0 && (
         <View>
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 6 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 6 }}>
             {t("code.referencesIn")}
           </Text>
           {referencedBy.map((ref) => (
@@ -97,11 +97,11 @@ export default function ReferencesBlock({
               onPress={() => onSelectArticle?.(makeArticleData(ref))}
               style={{ flexDirection: "row", alignItems: "center", paddingVertical: 4 }}
             >
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.accent, marginRight: 4 }}>←</Text>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.accent }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.accent, marginRight: 4 }}>←</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 17, color: colors.accent }}>
                 Art. {ref.numero}
               </Text>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginLeft: 4, flex: 1 }} numberOfLines={1}>
                 — {ref.titre}
               </Text>
             </TouchableOpacity>

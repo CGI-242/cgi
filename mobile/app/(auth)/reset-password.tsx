@@ -114,18 +114,18 @@ export default function ResetPassword() {
         <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
           <AuthLogo />
 
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 24, color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 4 }}>
             {t("auth.resetPassword")}
           </Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginBottom: 24 }}>
             {t("auth.enterCodeAndPassword")}
           </Text>
 
           {/* Dev code - visible uniquement en développement */}
           {__DEV__ && devCode ? (
             <View style={{ borderWidth: 1, borderStyle: "dashed", borderColor: colors.success, backgroundColor: colors.success + "15", padding: 16, marginBottom: 16, alignItems: "center" }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 30, color: colors.success, letterSpacing: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginBottom: 4 }}>{t("auth.codeDev")}</Text>
+              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 32, color: colors.success, letterSpacing: 4 }}>
                 {devCode}
               </Text>
             </View>
@@ -134,12 +134,12 @@ export default function ResetPassword() {
           {/* Messages */}
           {error ? (
             <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 14 }}>{error}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 16 }}>{error}</Text>
             </View>
           ) : null}
           {success ? (
             <View style={{ backgroundColor: colors.success + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 14 }}>{success}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.success, fontSize: 16 }}>{success}</Text>
             </View>
           ) : null}
 
@@ -153,12 +153,12 @@ export default function ResetPassword() {
           />
 
           {/* Nouveau mot de passe */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 8 }}>
             {t("auth.newPassword")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <View style={{ marginBottom: 16 }}>
             <TextInput
-              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 16, color: colors.text }}
+              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, paddingRight: 48, fontSize: 18, color: colors.text }}
               placeholder={t("auth.passwordPlaceholder")}
               placeholderTextColor={colors.textMuted}
               value={password}
@@ -183,11 +183,11 @@ export default function ResetPassword() {
           <PasswordStrengthIndicator password={password} colors={colors} />
 
           {/* Confirmer */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 8 }}>
             {t("auth.confirmPassword")} <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 16, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 18, color: colors.text, marginBottom: 16 }}
             placeholder={t("auth.confirmPassword")}
             placeholderTextColor={colors.textMuted}
             value={confirmPassword}
@@ -208,7 +208,7 @@ export default function ResetPassword() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 18 }}>
                 {t("auth.resetPassword")}
               </Text>
             )}
@@ -216,7 +216,7 @@ export default function ResetPassword() {
 
           {/* Renvoyer le code */}
           <TouchableOpacity style={{ alignItems: "center", marginTop: 20 }} onPress={handleResend} disabled={cooldown > 0} accessibilityLabel={t("auth.resendCode")} accessibilityRole="button">
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: cooldown > 0 ? colors.textMuted : colors.primary, textDecorationLine: cooldown > 0 ? "none" : "underline" }}>
               {cooldown > 0 ? t("auth.resendCooldown", { seconds: cooldown }) : t("auth.resendCode")}
             </Text>
           </TouchableOpacity>
@@ -224,7 +224,7 @@ export default function ResetPassword() {
           {/* Lien retour */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 16 }}>
             <TouchableOpacity onPress={() => router.replace("/(auth)")} accessibilityLabel={t("auth.backToLogin")} accessibilityRole="link">
-              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.primary, textDecorationLine: "underline" }}>
+              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 16, color: colors.primary, textDecorationLine: "underline" }}>
                 {t("auth.backToLogin")}
               </Text>
             </TouchableOpacity>

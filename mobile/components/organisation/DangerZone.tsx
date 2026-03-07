@@ -29,7 +29,7 @@ export default function DangerZone({
       <Text
         style={{
           color: colors.textSecondary,
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: "700",
           letterSpacing: 0.5,
           marginBottom: 12,
@@ -50,7 +50,7 @@ export default function DangerZone({
       >
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="trash-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />
-          <Text style={{ color: "#dc2626", fontWeight: "600", fontSize: 14 }}>
+          <Text style={{ color: "#dc2626", fontWeight: "600", fontSize: 16 }}>
             Supprimer l'organisation
           </Text>
         </View>
@@ -67,7 +67,7 @@ export default function DangerZone({
       >
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="refresh-outline" size={18} color="#16a34a" style={{ marginRight: 8 }} />
-          <Text style={{ color: "#16a34a", fontWeight: "600", fontSize: 14 }}>
+          <Text style={{ color: "#16a34a", fontWeight: "600", fontSize: 16 }}>
             Restaurer l'organisation
           </Text>
         </View>
@@ -83,7 +83,7 @@ export default function DangerZone({
       >
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="nuclear-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
-          <Text style={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
+          <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
             Supprimer d\u00e9finitivement
           </Text>
         </View>

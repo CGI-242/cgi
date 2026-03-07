@@ -125,7 +125,7 @@ export default function ParametresScreen() {
             }}
           >
             <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-            <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{t("settings.darkMode")}</Text>
+            <Text style={{ fontSize: 17, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{t("settings.darkMode")}</Text>
             <Switch
               value={mode === "dark"}
               onValueChange={toggleTheme}
@@ -148,8 +148,8 @@ export default function ParametresScreen() {
             }}
           >
             <Ionicons name="language-outline" size={20} color={colors.textSecondary} style={{ marginRight: 12 }} />
-            <Text style={{ fontSize: 15, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{t("settings.languageSelect")}</Text>
-            <Text style={{ fontSize: 14, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
+            <Text style={{ fontSize: 17, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.text, flex: 1 }}>{t("settings.languageSelect")}</Text>
+            <Text style={{ fontSize: 16, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
               {i18n.language === "fr" ? "Français" : "English"}
             </Text>
             <Ionicons name="chevron-forward" size={18} color={colors.disabled} style={{ marginLeft: 4 }} />

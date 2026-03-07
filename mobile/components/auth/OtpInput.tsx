@@ -15,11 +15,11 @@ export default function OtpInput({ code, cooldown, onChangeCode, onResend, onSub
 
   return (
     <>
-      <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
+      <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text, marginBottom: 8 }}>
         {t("auth.codePlaceholder")}
       </Text>
       <TextInput
-        style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 24, letterSpacing: 4, color: colors.text, marginBottom: 24 }}
+        style={{ width: "100%", backgroundColor: colors.input, padding: 12, textAlign: "center", fontSize: 26, letterSpacing: 4, color: colors.text, marginBottom: 24 }}
         placeholder="000000"
         placeholderTextColor={colors.textMuted}
         value={code}

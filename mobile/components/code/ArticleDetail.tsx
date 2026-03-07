@@ -184,18 +184,18 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 16 }}>
         <TouchableOpacity onPress={handleBack} style={{ flexDirection: "row", alignItems: "center" }}>
           <Ionicons name="arrow-back" size={18} color={colors.primary} />
-          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.primary, fontSize: 15, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
+          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: colors.primary, fontSize: 17, marginLeft: 8 }}>{t("articleDetail.backToArticles")}</Text>
         </TouchableOpacity>
       </View>
 
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
         <View style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4 }}>
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.primary }}>{article.statut}</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.primary }}>{article.statut}</Text>
         </View>
       </View>
 
-      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 28, color: colors.text, marginBottom: 4 }}>{article.article}</Text>
-      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
+      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 30, color: colors.text, marginBottom: 4 }}>{article.article}</Text>
+      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 19, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
 
       <View
         style={{
@@ -213,11 +213,11 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
       {article.mots_cles.length > 0 && (
         <View>
-          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>{t("articleDetail.keywords")}</Text>
+          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: colors.textMuted, marginBottom: 8, textTransform: "uppercase" }}>{t("articleDetail.keywords")}</Text>
           <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
             {article.mots_cles.map((mc) => (
               <View key={mc} style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4, marginRight: 8, marginBottom: 8 }}>
-                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.primary }}>{mc}</Text>
+                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.primary }}>{mc}</Text>
               </View>
             ))}
           </View>
@@ -276,7 +276,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
           size={18}
           color={colors.sidebarText}
         />
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 14, marginLeft: 8 }}>
+        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16, marginLeft: 8 }}>
           {speechState === "idle" ? t("articleDetail.listen") : speechState === "playing" ? "Pause" : "Reprendre"}
         </Text>
       </TouchableOpacity>

@@ -53,7 +53,7 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
           style={{
             fontFamily: isSelected ? fonts.semiBold : fonts.regular,
             fontWeight: isSelected ? fontWeights.semiBold : fontWeights.regular,
-            fontSize: 14,
+            fontSize: 16,
             flex: 1,
             color: isSelected ? colors.primary : colors.text,
           }}

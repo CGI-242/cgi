@@ -51,22 +51,22 @@ export default function Cgi242Page() {
         <TouchableOpacity onPress={() => router.replace("/")} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
           <Ionicons name="arrow-back" size={18} color="#6a6a75" />
           <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: GOLD, alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 14, color: BG }}>N</Text>
+            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 16, color: BG }}>N</Text>
           </View>
-          <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
+          <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
             CGI <Text style={{ color: GOLD }}>242</Text>
           </Text>
         </TouchableOpacity>
 
         <View style={{ flexDirection: "row", gap: isMobile ? 8 : 16, alignItems: "center" }}>
           <TouchableOpacity onPress={() => router.push("/(auth)")} style={{ padding: 8 }}>
-            <Text style={{ fontSize: 13, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{t("landing.login")}</Text>
+            <Text style={{ fontSize: 15, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{t("landing.login")}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => router.push("/(auth)/register")}
             style={{ paddingVertical: 9, paddingHorizontal: 22, borderRadius: 8, backgroundColor: GOLD }}
           >
-            <Text style={{ color: BG, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13 }}>Essai gratuit</Text>
+            <Text style={{ color: BG, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15 }}>Essai gratuit</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -87,8 +87,8 @@ export default function Cgi242Page() {
             marginBottom: 28,
           }}
         >
-          <Text style={{ fontSize: 24 }}>🇨🇬</Text>
-          <Text style={{ fontSize: 12, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
+          <Text style={{ fontSize: 26 }}>🇨🇬</Text>
+          <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
             Congo-Brazzaville — Édition 2026
           </Text>
         </View>
@@ -140,7 +140,7 @@ export default function Cgi242Page() {
               </Text>
               <Text
                 style={{
-                  fontSize: 11,
+                  fontSize: 13,
                   color: "#5a5a65",
                   textTransform: "uppercase",
                   letterSpacing: 1.5,
@@ -161,7 +161,7 @@ export default function Cgi242Page() {
             onPress={() => router.push("/(auth)/register")}
             style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: GOLD }}
           >
-            <Text style={{ color: BG, fontSize: 16, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+            <Text style={{ color: BG, fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
               {t("landing.heroCtaPrimary")}
             </Text>
           </TouchableOpacity>
@@ -169,7 +169,7 @@ export default function Cgi242Page() {
             onPress={() => router.push("/(auth)")}
             style={{ paddingVertical: 13, paddingHorizontal: 38, borderRadius: 12, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)" }}
           >
-            <Text style={{ color: "#e8e6e1", fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+            <Text style={{ color: "#e8e6e1", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
               {t("landing.login")}
             </Text>
           </TouchableOpacity>
@@ -230,10 +230,10 @@ export default function Cgi242Page() {
               >
                 <Ionicons name={feat.icon} size={24} color={feat.color} />
               </View>
-              <Text style={{ fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1", marginBottom: 6 }}>
+              <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1", marginBottom: 6 }}>
                 {t(feat.titleKey)}
               </Text>
-              <Text style={{ fontSize: 13, color: "#5a5a65", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
+              <Text style={{ fontSize: 15, color: "#5a5a65", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
                 {t(feat.descKey)}
               </Text>
             </View>
@@ -247,7 +247,7 @@ export default function Cgi242Page() {
           style={{
             fontFamily: fonts.headingBlack,
             fontWeight: fontWeights.headingBlack,
-            fontSize: 36,
+            fontSize: 38,
             color: "#e8e6e1",
             textAlign: "center",
             marginBottom: 12,
@@ -255,14 +255,14 @@ export default function Cgi242Page() {
         >
           {t("landing.ctaTitle")}
         </Text>
-        <Text style={{ color: "#5a5a65", fontSize: 15, fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 28 }}>
+        <Text style={{ color: "#5a5a65", fontSize: 17, fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 28 }}>
           7 jours gratuits — Aucune carte bancaire requise
         </Text>
         <TouchableOpacity
           onPress={() => router.push("/(auth)/register")}
           style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: GOLD }}
         >
-          <Text style={{ color: BG, fontSize: 16, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          <Text style={{ color: BG, fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
             {t("landing.ctaButton")}
           </Text>
         </TouchableOpacity>
@@ -270,10 +270,10 @@ export default function Cgi242Page() {
 
       {/* Footer */}
       <View style={{ borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.03)", paddingVertical: 28, paddingHorizontal: 24, alignItems: "center" }}>
-        <Text style={{ fontSize: 12, color: "#2a2a35", fontFamily: fonts.regular }}>
+        <Text style={{ fontSize: 14, color: "#2a2a35", fontFamily: fonts.regular }}>
           {t("landing.copyright")}
         </Text>
-        <Text style={{ fontSize: 11, color: "#3a3a45", marginTop: 6, fontFamily: fonts.regular }}>
+        <Text style={{ fontSize: 13, color: "#3a3a45", marginTop: 6, fontFamily: fonts.regular }}>
           {"Propulsé par "}
           <Text style={{ color: GOLD, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>NORMX AI</Text>
           {" — Marque déposée INPI n°5146181"}

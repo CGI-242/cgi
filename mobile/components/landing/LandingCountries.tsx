@@ -87,7 +87,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
         style={{
           textAlign: "center",
           color: "#5a5a65",
-          fontSize: 14,
+          fontSize: 16,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
           marginBottom: 32,
@@ -132,7 +132,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
             >
               <Text
                 style={{
-                  fontSize: 13,
+                  fontSize: 15,
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
                   color: active
@@ -166,7 +166,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
             borderColor: "rgba(255,255,255,0.06)",
             backgroundColor: "rgba(255,255,255,0.025)",
             color: "#e8e6e1",
-            fontSize: 14,
+            fontSize: 16,
             fontFamily: fonts.regular,
           }}
         />
@@ -207,7 +207,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
             >
               <Text
                 style={{
-                  fontSize: 36,
+                  fontSize: 38,
                   marginBottom: 8,
                   opacity: c.available ? 1 : 0.5,
                 }}
@@ -216,7 +216,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
               </Text>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: 22,
                   fontFamily: fonts.extraBold,
                   fontWeight: fontWeights.extraBold,
                   color: c.available ? GOLD : "#4a4a55",
@@ -227,7 +227,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
               </Text>
               <Text
                 style={{
-                  fontSize: 13,
+                  fontSize: 15,
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
                   marginBottom: 8,
@@ -250,7 +250,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 >
                   <Text
                     style={{
-                      fontSize: 10,
+                      fontSize: 12,
                       fontFamily: fonts.bold,
                       fontWeight: fontWeights.bold,
                       textTransform: "uppercase",
@@ -274,7 +274,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 >
                   <Text
                     style={{
-                      fontSize: 10,
+                      fontSize: 12,
                       fontFamily: fonts.semiBold,
                       fontWeight: fontWeights.semiBold,
                       textTransform: "uppercase",
@@ -288,7 +288,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
               )}
               <Text
                 style={{
-                  fontSize: 10,
+                  fontSize: 12,
                   color: rc.text,
                   marginTop: 6,
                   fontFamily: fonts.medium,

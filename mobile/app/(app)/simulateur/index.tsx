@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   cardTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "800",
     marginBottom: 2,
   },
@@ -204,15 +204,15 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   badgeText: {
-    fontSize: 9,
+    fontSize: 11,
     fontWeight: "700",
   },
   cardSubtitle: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "500",
     marginBottom: 2,
   },
   cardDescription: {
-    fontSize: 10,
+    fontSize: 12,
   },
 });

@@ -26,7 +26,7 @@ export default function PendingInvitations({
       <Text
         style={{
           color: colors.textSecondary,
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: "700",
           letterSpacing: 0.5,
           marginBottom: 8,
@@ -50,8 +50,8 @@ export default function PendingInvitations({
         >
           <Ionicons name="mail-outline" size={20} color="#d97706" style={{ marginRight: 12 }} />
           <View style={{ flex: 1 }}>
-            <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>{inv.email}</Text>
-            <Text style={{ fontSize: 12, color: colors.textMuted }}>
+            <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text }}>{inv.email}</Text>
+            <Text style={{ fontSize: 14, color: colors.textMuted }}>
               R\u00f4le : {ROLE_LABELS[inv.role] || inv.role}
             </Text>
           </View>
