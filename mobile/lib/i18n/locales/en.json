@@ -595,6 +595,11 @@
       "sectionDTitle": "D — NET VAT PAYABLE",
       "vatDue": "NET VAT TO PAY",
       "vatCredit": "VAT CREDIT TO CARRY FORWARD",
+      "sectionETitle": "E — ADDITIONAL CENTIMES (Art. 38-A)",
+      "centimesBase": "Base: Output VAT (gross)",
+      "centimesTaux": "Additional centimes (5%)",
+      "centimesNote": "Additional centimes (5% of output VAT) are paid to local authorities and are not deductible (Art. 38-A TFNC6).",
+      "totalGeneral": "TOTAL TO PAY",
       "deadlineNote": "Monthly filing by the 15th of following month (Art. 461 bis)",
       "enterRevenue": "Enter your transactions to generate the return"
     },

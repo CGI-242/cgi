@@ -45,10 +45,16 @@ export interface TvaResult {
   tvaAPayer: number;
   creditTva: number;
 
+  // Section E — Centimes additionnels (Art. 38-A TFNC6)
+  centimesAdditionnels: number;
+  // Total général
+  totalAPayer: number;
+
   taux: number;
 }
 
 const TAUX_TVA = 0.18;
+const TAUX_CENTIMES = 0.05; // 5% de la TVA collectée (Art. 38-A TFNC6)
 
 export function calculerTVA(input: TvaInput): TvaResult {
   const ventes = Math.max(0, input.ventesServicesHT || 0);
@@ -91,6 +97,13 @@ export function calculerTVA(input: TvaInput): TvaResult {
   const tvaAPayer = Math.max(0, tvaNette);
   const creditTva = Math.max(0, -tvaNette);
 
+  // --- Section E : Centimes additionnels (Art. 38-A TFNC6) ---
+  // Base = TVA collectée (brute), taux 5%, ne donnent pas droit à déduction
+  const centimesAdditionnels = Math.round(totalTvaBrute * TAUX_CENTIMES);
+
+  // Total général = TVA nette à payer + centimes additionnels
+  const totalAPayer = tvaAPayer + centimesAdditionnels;
+
   return {
     lignesCA,
     totalCAHT,
@@ -102,6 +115,8 @@ export function calculerTVA(input: TvaInput): TvaResult {
     tvaNette,
     tvaAPayer,
     creditTva,
+    centimesAdditionnels,
+    totalAPayer,
     taux: TAUX_TVA * 100,
   };
 }

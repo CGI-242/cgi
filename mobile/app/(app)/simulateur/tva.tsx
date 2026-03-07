@@ -154,7 +154,7 @@ export default function TvaScreen() {
                 />
               )}
 
-              {/* Section D — Solde */}
+              {/* Section D — Solde TVA */}
               <SimulateurSection label={t("simulateur.tva.sectionDTitle")} />
               {result.tvaAPayer > 0 ? (
                 <ResultHighlight
@@ -169,6 +169,28 @@ export default function TvaScreen() {
                   variant="success"
                 />
               )}
+
+              {/* Section E — Centimes additionnels */}
+              <SimulateurSection label={t("simulateur.tva.sectionETitle")} />
+              <TableRow
+                label={t("simulateur.tva.centimesBase")}
+                value={formatNumber(result.totalTvaBrute)}
+              />
+              <TableRow
+                label={t("simulateur.tva.centimesTaux")}
+                value={formatNumber(result.centimesAdditionnels)}
+                bg={colors.background}
+              />
+
+              {/* Total général */}
+              <View style={[styles.totalBar, { backgroundColor: colors.primary }]}>
+                <Text style={styles.totalLabel}>{t("simulateur.tva.totalGeneral")}</Text>
+                <Text style={styles.totalValue}>{formatNumber(result.totalAPayer)} FCFA</Text>
+              </View>
+
+              <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
+                <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.tva.centimesNote")}</Text>
+              </View>
 
               <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
                 <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.tva.deadlineNote")}</Text>
@@ -242,6 +264,25 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "rgba(255,255,255,0.8)",
     marginTop: 2,
+  },
+  totalBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+  },
+  totalLabel: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: "#fff",
+    fontFamily: fonts.heading,
+  },
+  totalValue: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#fff",
+    fontFamily: fonts.heading,
   },
   noteBox: {
     paddingHorizontal: 14,

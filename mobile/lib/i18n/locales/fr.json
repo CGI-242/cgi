@@ -595,6 +595,11 @@
       "sectionDTitle": "D — TVA NETTE À PAYER",
       "vatDue": "TVA NETTE À PAYER",
       "vatCredit": "CRÉDIT DE TVA À REPORTER",
+      "sectionETitle": "E — CENTIMES ADDITIONNELS (Art. 38-A)",
+      "centimesBase": "Base : TVA collectée (brute)",
+      "centimesTaux": "Centimes additionnels (5%)",
+      "centimesNote": "Les centimes additionnels (5% de la TVA collectée) sont versés aux collectivités locales et ne donnent pas droit à déduction (Art. 38-A TFNC6).",
+      "totalGeneral": "TOTAL À PAYER",
       "deadlineNote": "Déclaration mensuelle au plus tard le 15 du mois suivant (Art. 461 bis)",
       "enterRevenue": "Saisissez vos opérations pour générer la déclaration"
     },
