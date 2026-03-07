@@ -5,6 +5,7 @@
 import { QdrantClient } from '@qdrant/js-client-rest';
 import { VoyageAIClient } from 'voyageai';
 import * as fs from 'fs';
+import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { randomUUID } from 'crypto';
 
@@ -72,9 +73,18 @@ async function main() {
 
   // ── ÉTAPE 1 : Charger les articles ──
   console.log('📖 Étape 1: Chargement des articles...');
-  const articlesPath = '/home/christelle-mabika/cgi-242/server/data/articles-2026-unique.json';
-  const articles: Article[] = JSON.parse(fs.readFileSync(articlesPath, 'utf-8'));
-  console.log(`  ✅ ${articles.length} articles chargés\n`);
+  const dataDir = path.join(__dirname, '..', 'data');
+  const articleFiles = [
+    'articles-2026-tome1.json',
+    'articles-2026-tome2.json',
+    'articles-2026-tfnc.json',
+    'articles-2026-conventions.json',
+    'articles-2026-annexes.json',
+  ];
+  const articles: Article[] = articleFiles.flatMap(f =>
+    JSON.parse(fs.readFileSync(path.join(dataDir, f), 'utf-8'))
+  );
+  console.log(`  ✅ ${articles.length} articles chargés (${articleFiles.length} fichiers)\n`);
 
   // ── ÉTAPE 2 : Vérifier/créer la collection ──
   console.log('🗑️  Étape 2: Préparation Qdrant...');

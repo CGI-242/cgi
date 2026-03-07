@@ -584,7 +584,9 @@
         "plus-value imposable",
         "libératoire",
         "enregistrement",
-        "droits d'enregistrement"
+        "droits d'enregistrement",
+        "impôt spécial",
+        "acte de cession"
       ],
       "statut": "en vigueur",
       "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"
@@ -600,7 +602,9 @@
         "cédant",
         "cessionnaire",
         "paiement",
-        "impôt spécial"
+        "impôt spécial",
+        "société de droit congolais",
+        "cession titres"
       ],
       "statut": "en vigueur",
       "section": "Section 7 : Plus-values sur titres réalisées par des personnes non-résidentes"

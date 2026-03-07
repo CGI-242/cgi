@@ -1,0 +1,716 @@
+[
+  {
+    "numero": "Annexe 1",
+    "titre": "Centimes additionnels au profit des chambres de commerce",
+    "contenu": "[NB - Voir les articles 368 et 369]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "centimes additionnels",
+      "chambres de commerce",
+      "article 368",
+      "article 369"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 2",
+    "titre": "Révision des bilans",
+    "contenu": "[NB - Voir l'article 127]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "révision des bilans",
+      "article 127"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 3",
+    "titre": "Obligations des contribuables quittant le Congo",
+    "contenu": "[NB - Voir l'article 75]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "contribuables quittant le Congo",
+      "obligations",
+      "article 75"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 3 bis",
+    "titre": "Certificat de moralité fiscale",
+    "contenu": "[Articles A3bis-14 à A3bis-17]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "certificat de moralité fiscale",
+      "annexe 3 bis"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A3bis-14",
+    "titre": "Institution du certificat de moralité fiscale",
+    "contenu": "Il est institué un certificat de moralité fiscale valable un an, délivré à toutes les personnes physiques et morales domiciliées ou résidant habituellement en République du Congo.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "certificat de moralité fiscale",
+      "validité un an",
+      "personnes physiques",
+      "personnes morales",
+      "domicile",
+      "résidence"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A3bis-15",
+    "titre": "Délivrance du certificat de moralité fiscale",
+    "contenu": "Le certificat de moralité fiscale est délivré moyennant une somme de 10.000 FCFA, par l'autorité compétente de l'administration fiscale de la circonscription dans laquelle est situé le siège de l'entreprise, de son principal établissement ou du domicile du contribuable, sur présentation :\na) Pour toute personne physiques et morales exerçant une activité industrielle, commerciale, artisanale ou non commerciale :\n• du numéro d'identification unique (NIU) ;\n• du titre de patente de l'année en cours et des quittances justifiant le paiement des autres impôts directs et indirects dus au titre de l'année en cours et de l'exercice précédent ;\n• des quatre attestations de non-redevance fiscale de l'année écoulée.\nb) Pour les autres personnes :\n• du numéro d'identification unique (NIU) ;\n• de la déclaration des revenus de l'année écoulée ;\n• des quittances justifiant le paiement des impôts dus au titre de l'année en cours et de l'exercice précédent ;\n• des quatre attestations de non-redevance fiscale de l'année écoulée.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "certificat de moralité fiscale",
+      "10.000 FCFA",
+      "administration fiscale",
+      "siège entreprise",
+      "établissement principal",
+      "domicile contribuable",
+      "NIU",
+      "numéro d'identification unique",
+      "titre de patente",
+      "quittances",
+      "impôts directs",
+      "impôts indirects",
+      "attestations de non-redevance fiscale",
+      "déclaration des revenus"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A3bis-16",
+    "titre": "Droits conférés par le certificat de moralité fiscale",
+    "contenu": "Le certificat de moralité fiscale confère à son titulaire le droit :\na) pour les personnes physiques et morales exerçant une activité industrielle, commerciale, artisanale ou non commerciale :\n• d'exercer une activité commerciale, industrielle, artisanale ou non commerciale ;\n• de soumissionner aux marchés de l'État ;\n• de bénéficier des crédits bancaires ;\n• d'obtenir la qualité d'importateur ou d'exportateur.\nb) pour les autres personnes :\n• de se présenter à tout concours prévu par la loi ;\n• d'exciper de sa qualité de contribuable.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "certificat de moralité fiscale",
+      "droits",
+      "activité commerciale",
+      "activité industrielle",
+      "activité artisanale",
+      "marchés de l'État",
+      "crédits bancaires",
+      "importateur",
+      "exportateur",
+      "scrutin",
+      "qualité de contribuable"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A3bis-17",
+    "titre": "Interdiction d'exercer sans certificat",
+    "contenu": "À partir du 1er avril 1980, il est interdit à toute personne physique ou morale d'exercer sur le territoire congolais une profession commerciale, industrielle, artisanale ou non commerciale sans justifier de la possession du certificat de moralité fiscale.\nToute infraction aux présentes dispositions entraîne la perte de la qualité de commerçant, d'industriel, d'artisan ou de titulaire d'une profession non commerciale, nonobstant les poursuites prévues à cet effet par la réglementation en vigueur.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "certificat de moralité fiscale",
+      "interdiction",
+      "1er avril 1980",
+      "profession commerciale",
+      "profession industrielle",
+      "profession artisanale",
+      "infraction",
+      "perte de qualité",
+      "commerçant",
+      "industriel",
+      "artisan",
+      "poursuites"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 4",
+    "titre": "Conventions fiscales",
+    "contenu": "[NB - Voir en TNC 1, les conventions fiscales CEMAC, avec la France, l'Italie et l'Île Maurice]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "conventions fiscales",
+      "CEMAC",
+      "France",
+      "Italie",
+      "Île Maurice",
+      "TNC 1"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 5",
+    "titre": "Règles de procédure spéciale en matière d'impôts directs et taxes assimilées devant les tribunaux",
+    "contenu": "[Articles 8 à 22]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "procédure spéciale",
+      "impôts directs",
+      "taxes assimilées",
+      "tribunaux"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "8",
+    "titre": "Compétence de la Cour d'Appel",
+    "contenu": "Sous réserve des dispositions prévues au deuxièmement de l'article 1 de la présente loi, la Cour d'Appel est compétente pour connaître de tous les litiges relatifs à l'assiette, aux taux et au recouvrement des impositions de toute nature et particulièrement les demandes en décharge ou réduction formulées par les contribuables ainsi que les demandes en annulation des actes de saisies ou de poursuites administratives.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "Cour d'Appel",
+      "compétence",
+      "litiges fiscaux",
+      "assiette",
+      "taux",
+      "recouvrement",
+      "décharge",
+      "réduction",
+      "saisies",
+      "poursuites administratives"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "9",
+    "titre": "Litiges relatifs aux contributions directes",
+    "contenu": "Les litiges relatifs à l'assiette et aux taux des contributions directes et taxes assimilées ou autres impôts de toute nature perçus comme en matière de contributions directes sont soumis aux articles ci-après.\nToutefois, il n'est en rien dérogé par la présente loi à la procédure relative aux impôts et taxes recouvrables par la Direction des douanes et par la Direction de l'enregistrement, des domaines et du timbre.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "litiges",
+      "contributions directes",
+      "taxes assimilées",
+      "assiette",
+      "taux",
+      "enregistrement",
+      "domaines",
+      "timbre"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "12",
+    "titre": "Taxes acquittées par les missions diplomatiques",
+    "contenu": "Les missions diplomatiques, les membres du personnel des missions diplomatiques acquittent les taxes perçues en rémunération de services rendus : taxes municipales, taxes sur la consommation de l'essence.\nLes membres du personnel des missions diplomatiques acquittent les impôts dus au titre des bénéfices qu'ils peuvent retirer de l'exercice au Congo d'activités lucratives étrangères à leurs fonctions officielles ou pour leurs propriétés qu'ils possèdent au Congo. Ils sont soumis à l'acquittement des taxes indirectes et de consommation, aux droits et impôts frappant les valeurs mobilières. Toutefois, les chefs de mission diplomatique sont exonérés de la taxe sur la consommation des boissons alcoolisées. (...)",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "missions diplomatiques",
+      "taxes municipales",
+      "essence",
+      "activités lucratives",
+      "propriétés",
+      "taxes indirectes",
+      "valeurs mobilières",
+      "boissons alcoolisées",
+      "chefs de missions"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "13",
+    "titre": "Effet non suspensif de la requête",
+    "contenu": "Sous réserve des dispositions de l'article 447 du CGI, le dépôt de la requête n'est pas suspensif de l'exécution de la décision.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "requête",
+      "effet non suspensif",
+      "exécution",
+      "article 447"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "14",
+    "titre": "Instruction de l'affaire",
+    "contenu": "Dans les cinq jours du dépôt au greffe, le Président de la Cour délègue un conseiller pour suivre la procédure. Dans le même délai, copie de la requête ainsi que des pièces annexées est, par ordonnance du Président de la Cour, communiquée pour avis au Directeur Général des Impôts qui fait procéder à l'instruction de l'affaire et, dans un délai maximum de trois mois, dépose au greffe ses conclusions en deux exemplaires avec les dossiers des réclamations primitives.\nToutefois, s'il s'agit d'une demande entachée de déchéance ou de vice de forme, l'irrecevabilité pourra être portée devant la cour toute instruction.\nLe Conseiller délégué fait notifier les conclusions du Directeur Général des Impôts par lettre recommandée au demandeur et l'informe qu'il dispose d'un mois pour tout délai, pour prendre communication au greffe des dossiers déposés et pour produire de nouvelles observations, ou faire connaître s'il entend recourir à la vérification par voie d'expert.\nLe réclamant ne peut contester devant la cour d'appel des cotisations différentes de celles qu'il a visées dans sa réclamation au Directeur Général des Impôts, mais dans la limite du dégrèvement primitivement sollicité, il peut faire valoir toutes conclusions nouvelles à condition de les formuler explicitement dans une demande introductive d'instance.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "instruction",
+      "Président de la Cour",
+      "conseiller délégué",
+      "Directeur Général des Impôts",
+      "trois mois",
+      "greffe",
+      "conclusions",
+      "réclamations primitives",
+      "déchéance",
+      "vice de forme",
+      "irrecevabilité",
+      "lettre recommandée",
+      "expert",
+      "dégrèvement"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "15",
+    "titre": "Expertise",
+    "contenu": "Toute expertise demandée par les parties en réclamation ou ordonnée d'office par le Conseiller délégué ou ultérieurement par la Cour est faite par trois experts à moins que les parties ne consentent qu'il y soit procédé par un seul.\nIl appartient, en outre, au Conseiller délégué ou à la Cour de décider qu'il sera procédé par un seul expert en raison de la nature ou du peu d'importance du litige. Toutefois, si les parties s'accordent pour réclamer la nomination de trois experts il sera fait droit à la demande.\nLa procédure relative à l'expertise ordonnée par la Cour est suivie par le Conseiller délégué.\nDans le cas où il n'y a qu'un seul expert, celui-ci est nommé par la Cour à défaut par le Conseiller délégué à moins que les parties s'accordent pour le désigner.\nSi l'expertise est confiée à trois experts, l'un d'eux est nommé par le Conseiller chacune des parties nomme le sien.\nNe peuvent être désignée comme experts les fonctionnaires qui ont pris part à l'établissement de l'impôt contesté, et les personnes qui ont été constituées mandataires par l'une des parties au cours de l'instruction.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "expertise",
+      "experts",
+      "trois experts",
+      "Conseiller délégué",
+      "Cour",
+      "parties",
+      "nomination",
+      "incompatibilité",
+      "fonctionnaires",
+      "mandataires"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "16",
+    "titre": "Demande de vérification par le Conseiller délégué",
+    "contenu": "A la demande du Conseiller délégué, le Directeur Général des Impôts désigne un fonctionnaire chargé de diriger l'expertise. Cet agent de l'administration fixe le jour et l'heure du début des opérations et les experts ainsi que le réclamant en sont prévenus dix jours au moins à l'avance. Dans le même délai, sauf lorsque le litige porte sur les impôts sur les revenus et taxes accessoires à ces impôts l'agent de l'administration prévient le maire ou, à défaut, le chef de la circonscription administrative du jour et de l'heure de l'expertise.\nLes experts se rendent sur les lieux avec l'agent de l'administration et, en présence du réclamant ou de son fondé de pouvoir et, le cas échéant, du maire ou chef de la circonscription administrative vérifient les faits, évaluations ou revenus sur lesquels porte le litige.\nEn cas d'absence de l'un ou plusieurs des experts il ne sera pas sursis aux opérations à moins qu'il n'ait été justifié d'une excuse jugée valable par le fonctionnaire chargé de diriger l'expertise. L'agent de l'administration rédige en procès-verbal les dires des experts et y joint son avis.\nSi les experts demandent à fournir des rapports séparés, un délai de dix jours est accordé pour le dépôt de ces rapports. Le procès-verbal d'expertise et le cas échéant les rapports des experts sont déposés au greffe.\nLe Conseiller délégué les notifie au demandeur et lui impartit un délai pour conclure.\nA l'expiration, de ce délai les dossiers des réclamations primitives, auxquels ont été jointes, s'il y a lieu, copies des Dernières conclusions du réclamant, sont transmis au Directeur Général des Impôts qui fait rapport et formule ses conclusions sur le fond du litige que sur la liquidation et l'attribution des frais de l'expertise, la liquidation et la taxe des frais d'expertise sont faites par le jugement qui statue sur le fond, ou à défaut, par le Conseiller délégué.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "expertise",
+      "Directeur Général des Impôts",
+      "fonctionnaire",
+      "dix jours",
+      "préavis",
+      "maire",
+      "chef circonscription",
+      "réclamant",
+      "fondé de pouvoir",
+      "vérification",
+      "évaluations",
+      "revenus",
+      "procès-verbal",
+      "rapports experts",
+      "greffe",
+      "frais expertise",
+      "liquidation"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "17",
+    "titre": "Contre-vérification",
+    "contenu": "Dans le cas où une contre vérification est jugée nécessaire, celle-ci est faite par un fonctionnaire des Services Fiscaux autre que celui qui a procédé à la première instruction, en présence du réclamant ou de son fondé de pouvoir et, suivant le cas, à moins qu'il ne s'agisse des impôts sur les revenus ou taxes accessoires à ces impôts, en présence soit du maire, soit du chef de la circonscription administrative.\nLe fonctionnaire chargé de la contre vérification dresse un procès-verbal, mentionne les observations du réclamant ainsi que, le cas échéant, celles des personnes appelées à assister à l'opération et donne son avis. Le Directeur Général des Impôts fait son rapport et la Cour statue.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "contre-vérification",
+      "fonctionnaire",
+      "Services fiscaux",
+      "réclamant",
+      "fondé de pouvoir",
+      "maire",
+      "chef circonscription",
+      "procès-verbal",
+      "observations",
+      "Directeur Général des Impôts",
+      "Cour"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "18",
+    "titre": "Acquisition et location d'immeubles par les missions diplomatiques",
+    "contenu": "Les missions diplomatiques, légations ne peuvent acquérir, vendre ou mettre en location, ni plus généralement réaliser de transactions immobilières soit pour leurs besoins officiels, soit pour le logement de leurs personnels, qu'il en ait au préalable demandé et obtenu l'autorisation du Ministère des affaires étrangères.\nUne copie de titre de propriété, du contrat de vente ou de bail doit être adressée au Ministère des affaires étrangères.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "transactions immobilières",
+      "missions diplomatiques",
+      "légations",
+      "autorisation",
+      "Ministère des affaires étrangères",
+      "titre de propriété",
+      "contrat de vente",
+      "bail"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "19",
+    "titre": "Transaction immobilière à usage professionnel ou d'habitation",
+    "contenu": "Tout immeuble à usage professionnel ou d'habitation dont la transaction immobilière, quelle que soit sa destination et sa nature a été réalisée en l'absence de toute autorisation du Ministère des affaires étrangères ne saurait prétendre au bénéfice des exemptions et privilèges qui s'attachent aux locaux des membres des missions diplomatiques. (...)",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "immeuble",
+      "usage professionnel",
+      "habitation",
+      "transaction immobilière",
+      "autorisation",
+      "Ministère des affaires étrangères",
+      "exemptions",
+      "privilèges"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "20",
+    "titre": "Enrôlement de l'affaire",
+    "contenu": "L'instruction terminée l'affaire est enrôlée à la première audience utile.\nLe réclamant et le Directeur Général des Impôts doivent être avertis par lettre d'avis du greffier huit jours francs avant l'audience, du jour de celle-ci.\nLes parties peuvent présenter des observations orales limitées aux faits et moyens de la procédure écrite. Elles ne peuvent déposer de nouvelles conclusions.\nLa Cour statue, le Ministère Public entendu.\nLes réclamations relatives aux impôts et taxes accessoires ainsi qu'aux amendes sont instruites et jugées à huis clos.\nLa décision est contradictoire à l'égard des parties qui ont conclu par écrit, même si elles n'ont pas usé de la faculté de présenter des observations orales. Dans les quinze jours de son prononcé, elle sera notifiée aux parties par lettre recommandée au greffier avec accusé de réception.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "audience",
+      "enrôlement",
+      "huit jours francs",
+      "greffier",
+      "observations orales",
+      "Ministère Public",
+      "huis clos",
+      "décision contradictoire",
+      "quinze jours",
+      "lettre recommandée",
+      "accusé de réception"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "21",
+    "titre": "Registre des affaires portées devant la Cour",
+    "contenu": "Il sera tenu au greffe de chaque Cour, un registre sur lequel seront inscrites dans l'ordre de leur présentation toutes les affaires portées devant la Cour, chaque inscription contiendra les noms des parties, ceux des avocats défenseurs et le jour où l'affaire sera appelée.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "greffe",
+      "registre",
+      "affaires",
+      "parties",
+      "avocats défenseurs",
+      "inscription"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "22",
+    "titre": "Dossier par affaire au Greffe de la Cour",
+    "contenu": "Il sera établi au Greffe de la Cour un dossier par affaire qui portera les noms et domicile des parties, les noms de leurs avocats défenseurs, le numéro et la date de leur mise au rôle, le nom du conseiller délégué et où seront classés les originaux des actes de procédure, ainsi que les dossiers déposés par la DGID.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "greffe",
+      "dossier",
+      "parties",
+      "domicile",
+      "avocats défenseurs",
+      "mise au rôle",
+      "conseiller délégué",
+      "actes de procédure",
+      "DGID"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 6",
+    "titre": "Obligations fiscales des entreprises d'État",
+    "contenu": "[Articles A6-26, A6-18, A6-19]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "entreprises d'État",
+      "obligations fiscales"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A6-1a",
+    "titre": "a) Ordonnance n°25/73 du 10 juillet 1973",
+    "contenu": "Ordonnance n°25/73 du 10 juillet 1973 portant statut général des Entreprises d'État",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "ordonnance n°25/73",
+      "10 juillet 1973",
+      "statut général",
+      "entreprises d'État"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A6-2-26",
+    "titre": "Assujettissement de l'Entreprise d'État aux lois et règlements fiscaux",
+    "contenu": "L'Entreprise d'État est assujettie aux lois et règlements fiscaux sauf dispense expresse. Elle est tenue d'honorer correctement ses obligations fiscales et les redevances vis-à-vis de l'État et Collectivités Publiques auxquelles de telles redevances seraient légalement dues.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "entreprise d'État",
+      "assujettissement fiscal",
+      "obligations fiscales",
+      "redevances",
+      "Collectivités Publiques"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A6-3b",
+    "titre": "b) Loi n°04/76 fixant les obligations fiscales des entreprises d'État",
+    "contenu": "Loi n°04/76 fixant les obligations fiscales des entreprises d'État",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "loi n°04/76",
+      "obligations fiscales",
+      "entreprises d'État"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A6-4-18",
+    "titre": "Confirmation et extension des dispositions de l'ordonnance n°25/73",
+    "contenu": "Les dispositions de l'article 26 de l'ordonnance n°25/73 du 10 juillet 1973 portant statut général des Entreprises d'État sont confirmées et étendues à toute entreprise et organisme étatique ou paraétatique à caractère industriel et commercial qui doivent par conséquent se soumettre à la législation fiscale et douanière commune s'ils n'en sont pas expressément exemptés.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "entreprise d'État",
+      "organisme paraétatique",
+      "caractère industriel",
+      "caractère commercial",
+      "législation fiscale",
+      "législation douanière",
+      "ordonnance n°25/73"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "A6-5-19",
+    "titre": "Sanctions fiscales de droit commun",
+    "contenu": "Toute violation de l'article 18 ci-dessus fera l'objet des sanctions fiscales de droit commun sans préjudice des sanctions administratives qui pourront être infligées au directeur général de l'entreprise et à ses principaux collaborateurs, y compris la suspension de leur rémunération.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "sanctions fiscales",
+      "sanctions administratives",
+      "directeur général",
+      "suspension rémunération"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 7",
+    "titre": "Produits de large consommation exonérés de la TIT",
+    "contenu": "[NB - La taxe intérieure sur les transactions a été abrogée par la loi de finances pour 1994]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "TIT",
+      "taxe intérieure sur les transactions",
+      "produits de large consommation",
+      "exonération",
+      "abrogation 1994"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 8",
+    "titre": "Taux maxima de certains impôts perçus au profit des communes",
+    "contenu": "[NB - Voir sous les articles 262, 275, 278 et 316]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "taux maxima",
+      "impôts communaux",
+      "communes",
+      "article 262",
+      "article 275",
+      "article 278",
+      "article 316"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 9",
+    "titre": "Frais professionnels déductibles des recettes des contribuables exerçant une profession libérale et soumis au régime du forfait",
+    "contenu": "[Article 2]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "frais professionnels",
+      "profession libérale",
+      "forfait"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "2",
+    "titre": "Montant des frais professionnels admis en déduction",
+    "contenu": "Le montant des frais professionnels admis en déduction des recettes brutes et remboursements de frais perçus par les contribuables exerçant une profession libérale et soumis au régime du forfait, est fixé comme suit :\n• médecins : 40 % et 20 %\n• kinésithérapeutes : 20 %\n• dentistes : 45 %\n• vétérinaires : 20 %\n• comptables : 45 %\n• géomètres-métreurs : 55 %\n• architectes : 55 %\n• autres : 30 %",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "frais professionnels",
+      "déduction",
+      "profession libérale",
+      "forfait",
+      "médecins",
+      "dentistes",
+      "comptables",
+      "architectes"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 10",
+    "titre": "Fiscalité des bons de caisse",
+    "contenu": "[NB - Voir 171 sexies CGI Tome 1 et sous article 18 CGI Tome 2 livre 3 (IRVM)]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "bons de caisse",
+      "fiscalité",
+      "article 171 sexies",
+      "IRVM",
+      "CGI Tome 2"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 11",
+    "titre": "Taxe d'habitation",
+    "contenu": "[NB - La taxe d'habitation a été abrogée par la L.F.2014]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "taxe d'habitation",
+      "abrogation",
+      "LF 2014"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 12",
+    "titre": "Régime fiscal applicable en matière de réévaluation des éléments d'immobilisation",
+    "contenu": "[NB - La loi n°97-01 du 16 janvier 1997, visée par l'annexe 17, concernant les bilans clos au 31 décembre 1995, ses dispositions n'ont pas été reprises]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "réévaluation",
+      "immobilisations",
+      "bilans",
+      "loi n°97-01",
+      "16 janvier 1997"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "Annexe 13",
+    "titre": "Immunités et privilèges diplomatiques et consulaires",
+    "contenu": "[Articles 10 à 41]",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "immunités diplomatiques",
+      "privilèges consulaires",
+      "agents diplomatiques"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "10",
+    "titre": "Exemption des impôts à caractères personnel",
+    "contenu": "Les agents diplomatiques sont exemptés de tous les impôts à caractères personnel : IRPP et taxes annexes, impôts complémentaires, taxe régionale.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "agents diplomatiques",
+      "exemption",
+      "impôts",
+      "IRPP",
+      "taxes annexes",
+      "impôts complémentaires",
+      "taxe régionale"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "11",
+    "titre": "Exonérations d'impôts pour les acquisitions d'immeubles",
+    "contenu": "Des exonérations d'impôts peuvent être accordées pour les acquisitions d'immeubles à usage d'Ambassade, de légation ou de Consulat ainsi que pour les locations de bureaux ou d'appartements consenties aux bénéficiaires des privilèges et immunités diplomatiques.\nEn matière de succession, les droits de mutation par décès ne sont pas perçus sur les objets mobiliers se trouvant dans l'hôtel de la mission ou dans la demeure de l'agent diplomatique.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "exonérations",
+      "immeubles",
+      "Ambassade",
+      "légation",
+      "Consulat",
+      "locations",
+      "succession",
+      "droits de mutation",
+      "objets mobiliers"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "39",
+    "titre": "Exemption des fonctionnaires consulaires et employés consulaires",
+    "contenu": "Les Fonctionnaires consulaires, les Employés Consulaires, pourvu qu'ils ne soient pas ressortissants congolais ou n'aient pas au Congo leur résidence permanente, bénéficient de l'exemption de tous impôt et taxes sur les traitements, salaires, allocations ou émoluments perçus en rémunération de leurs fonctions.\nIls restent cependant soumis aux taxes indirectes et de consommation.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "fonctionnaires consulaires",
+      "employés consulaires",
+      "exemption",
+      "impôts",
+      "taxes",
+      "traitements",
+      "salaires",
+      "allocations",
+      "émoluments",
+      "taxes indirectes"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "40",
+    "titre": "Membres du personnel de service des postes consulaires",
+    "contenu": "Les membres du personnel de service des postes consulaires ainsi que les membres de leur famille ne jouissent d'aucune immunité personnelle.\nToutefois, ils bénéficient, pourvu qu'ils ne soient pas ressortissants congolais ou n'aient pas au Congo leur résidence permanente, des exemptions fiscales pour les salaires reçus à l'occasion de dispositions de sécurité sociale en vigueur en République du Congo.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "personnel de service",
+      "postes consulaires",
+      "immunité personnelle",
+      "exemptions fiscales",
+      "salaires",
+      "sécurité sociale",
+      "ressortissants congolais",
+      "résidence permanente"
+    ],
+    "source": "tome1-annexes.json"
+  },
+  {
+    "numero": "41",
+    "titre": "Exclusion du bénéfice des privilèges et exemptions",
+    "contenu": "Les membres de la famille des fonctionnaires consulaires, les employés consulaires et les membres du personnel de service des postes consulaires ainsi que les membres de leur famille qui exercent au Congo une activité professionnelle ou commerciale à titre privé ne peuvent prétendre à bénéficier des privilèges et exemptions prévus par la présente loi.",
+    "tome": "ANNEXES-1",
+    "chapitre": "None",
+    "keywords": [
+      "fonctionnaires consulaires",
+      "employés consulaires",
+      "personnel de service",
+      "activité professionnelle",
+      "activité commerciale",
+      "titre privé",
+      "exclusion privilèges"
+    ],
+    "source": "tome1-annexes.json"
+  }
+]
