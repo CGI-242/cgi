@@ -1161,7 +1161,7 @@
       "titre": "Marchand forain et marchand ambulant",
       "texte": [
         "Tout contribuable relevant du régime du forfait qui transporte les marchandises d'une ville à une autre, d'un village à un autre ou, en général, d'un lieu à un autre, est tenu d'avoir un titre de patente qui est celui de marchand ambulant.",
-        "Est marchand ambulant celui qui exerce son activité de façon mobile.",
+        "Est réputé marchand ambulant celui qui exerce son activité de façon mobile.",
         "Le titre de patente de marchand ambulant est valable sur tout le territoire national."
       ],
       "mots_cles": [
@@ -1179,7 +1179,7 @@
       "article": "Art. 296",
       "titre": "Patente des entrepreneurs de transport",
       "texte": [
-        "Les entrepreneurs de transport par terre sont tenus de se faire délivrer un titre de patente pour chacun des véhicules en service. Ces titres mentionnent expressément le véhicule auquel ils s'appliquent. Ils devront être produits à toute réquisition de l'autorité."
+        "Les entrepreneurs de transport par terre sont tenus de se faire délivrer autant de titres de patente qu'ils ont de véhicules en service. Ces titres mentionnent expressément le véhicule auquel ils s'appliquent. Ils devront être produits à toute réquisition de l'autorité."
       ],
       "mots_cles": [
         "transport terrestre",
@@ -1195,21 +1195,24 @@
       "titre": "Saisie des marchandises des non-patentés",
       "texte": [
         "Sous peine de saisie ou séquestre à leurs frais d'une part des marchandises par eux mises en vente leur appartenant ou non et d'autre part des véhicules et instruments de travail par eux utilisés leur appartenant ou non, les contribuables désignés ci-après, sont tenus de présenter, à toute réquisition des agents de l'administration fiscale, leur titre de patente.",
-        "Il s'agit de contribuables dont le chiffre d'affaires se situe dans les limites du régime du forfait fixé à l'article 26 du présent Code.",
-        "Si, dans le délai d'un mois, le contribuable n'a pas acquitté de sa contribution, il est procédé à la vente des produits, marchandises ou moyens de travail saisis, par le greffier, commissaire-priseur ou son représentant. Le produit de la vente ainsi encaissé consigné jusqu'à l'émission du titre de perception.",
-        "Le délai prévu à l'alinéa précédent est réduit à huit jours pour denrées périssables ou dont la conservation ne peut être assurée. Elles peuvent, en cas, être vendues par procès-verbal, dévolution des contribuables directes et indirectes, immédiatement après la saisie à un repreneur quelconque, ou aux centres socio-sanitaires ou aux cantines scolaires."
+        "Il s'agit des contribuables dont le chiffre d'affaires se situe dans les limites du régime du forfait fixé à l'article 26 du présent Code.",
+        "Si, dans le délai d'un mois, le contribuable ne s'est pas acquitté de sa contribution, il est procédé à la vente des produits, marchandises ou moyens de travail saisis, par le greffier, commissaire-priseur ou son représentant. Le produit de la vente étant alors consigné jusqu'à l'émission du titre de perception.",
+        "Le délai prévu au précédent alinéa ne s'applique pas aux denrées périssables ou dont la conservation ne peut être assurée. Elles peuvent, en ce cas, être vendues par l'inspecteur divisionnaire des contributions directes et indirectes, immédiatement après la saisie ou remises gratuitement aux centres socio-sanitaires ou aux cantines scolaires."
       ],
       "mots_cles": [
-        "sanctions",
         "saisie",
         "séquestre",
         "marchandises",
         "véhicules",
+        "instruments de travail",
         "régime forfait",
-        "vente forcée",
+        "commissaire-priseur",
+        "titre de perception",
         "denrées périssables",
-        "délai un mois",
-        "huit jours"
+        "inspecteur divisionnaire",
+        "contributions directes et indirectes",
+        "centres socio-sanitaires",
+        "cantines scolaires"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : VII. Dispositions spéciales à certaines professions"
@@ -1230,14 +1233,17 @@
       "article": "Art. 301",
       "titre": "Établissement des matrices et des titres de perception",
       "texte": [
-        "Les autorités administratives locales et l'administration fiscale procèdent au recensement des personnes imposables et dressent les matrices ou les visent si l'administration les a établis les titres de perception. Il est ouvert dans chaque localité qu'une seule matrice où doivent être inscrits, à la date de tiers contribution au 1er janvier de l'année de l'imposition et toutes les modifications susceptibles de survenir en cours d'année."
+        "Les autorités administratives locales et l'administration fiscale procèdent annuellement au recensement des personnes imposables et dressent les matrices au vu desquelles l'administration fiscale établit les titres de perception. Il n'est ouvert dans chaque localité qu'une seule matrice sur laquelle seront inscrites la situation des contribuables au 1er janvier de l'année de l'imposition et toutes les modifications susceptibles de survenir en cours d'année."
       ],
       "mots_cles": [
-        "matrices fiscales",
+        "matrices",
         "titres de perception",
         "recensement",
+        "personnes imposables",
         "administration fiscale",
-        "1er janvier"
+        "autorités administratives locales",
+        "1er janvier",
+        "matrice unique"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : VIII. Établissement des matrices et titres de perception"
