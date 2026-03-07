@@ -197,35 +197,33 @@ export default function Dashboard() {
               <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary }}>{nomMois} 2026</Text>
             </View>
           </View>
-          <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" }}>
-            {echeancesMoisCourant.map((e: EcheanceFiscale, i: number) => {
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+            {echeancesMoisCourant.map((e: EcheanceFiscale) => {
               const estPasse = e.jour < jourActuel;
               const estAujourdhui = e.jour === jourActuel;
               return (
                 <View
                   key={`${e.jour}-${e.label}`}
                   style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    paddingHorizontal: 12,
-                    paddingVertical: 10,
-                    borderBottomWidth: i < echeancesMoisCourant.length - 1 ? 1 : 0,
-                    borderBottomColor: colors.border,
-                    backgroundColor: estAujourdhui ? `${colors.primary}10` : "transparent",
+                    width: "48.5%",
+                    backgroundColor: estAujourdhui ? `${colors.primary}10` : colors.card,
+                    borderWidth: 1,
+                    borderColor: estAujourdhui ? colors.primary : colors.border,
+                    padding: 10,
                     opacity: estPasse ? 0.5 : 1,
                   }}
                 >
-                  <View style={{
-                    width: 36, height: 36, borderRadius: 18,
-                    backgroundColor: estAujourdhui ? colors.primary : estPasse ? colors.disabled : `${colors.primary}15`,
-                    alignItems: "center", justifyContent: "center", marginRight: 10,
-                  }}>
-                    <Text style={{ fontSize: 14, fontWeight: "800", color: estAujourdhui ? "#fff" : estPasse ? colors.textMuted : colors.primary }}>{e.jour}</Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
+                    <View style={{
+                      width: 28, height: 28, borderRadius: 14,
+                      backgroundColor: estAujourdhui ? colors.primary : estPasse ? colors.disabled : `${colors.primary}15`,
+                      alignItems: "center", justifyContent: "center", marginRight: 8,
+                    }}>
+                      <Text style={{ fontSize: 12, fontWeight: "800", color: estAujourdhui ? "#fff" : estPasse ? colors.textMuted : colors.primary }}>{e.jour}</Text>
+                    </View>
+                    <Ionicons name={e.icon as keyof typeof Ionicons.glyphMap} size={16} color={estPasse ? colors.disabled : colors.primary} />
                   </View>
-                  <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 14, fontWeight: "600", color: estPasse ? colors.textMuted : colors.text }}>{e.label}</Text>
-                  </View>
-                  <Ionicons name={e.icon as keyof typeof Ionicons.glyphMap} size={16} color={estPasse ? colors.disabled : colors.primary} />
+                  <Text style={{ fontSize: 12, fontWeight: "600", color: estPasse ? colors.textMuted : colors.text }} numberOfLines={2}>{e.label}</Text>
                 </View>
               );
             })}
