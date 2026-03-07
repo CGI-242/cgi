@@ -5223,6 +5223,11 @@
       "contribution foncière",
       "propriétés bâties",
       "fondations en maçonnerie",
+      "maisons",
+      "fabriques",
+      "boutiques",
+      "hangars",
+      "usines",
       "exonérations"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
@@ -5271,9 +5276,16 @@
       "collectivités",
       "organismes internationaux",
       "installations portuaires",
+      "Chambres de Commerce",
       "eau potable",
       "énergie électrique",
+      "édifices scolaires",
+      "sportifs",
+      "humanitaires",
       "exploitations rurales",
+      "coopératives agricoles",
+      "abris bombardements",
+      "défense passive",
       "ambassades",
       "réciprocité"
     ],

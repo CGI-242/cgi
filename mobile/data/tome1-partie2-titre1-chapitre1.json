@@ -53,10 +53,15 @@
         "contribution foncière",
         "propriétés bâties",
         "fondations en maçonnerie",
+        "maisons",
+        "fabriques",
+        "boutiques",
+        "hangars",
+        "usines",
         "exonérations"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Contribution foncière des propriétés bâties : I. Propriétés bâties"
+      "section": "Section 2 : Contribution foncière des propriétés bâties : I. Propriétés imposables"
     },
     {
       "article": "Art. 252",
@@ -117,9 +122,16 @@
         "collectivités",
         "organismes internationaux",
         "installations portuaires",
+        "Chambres de Commerce",
         "eau potable",
         "énergie électrique",
+        "édifices scolaires",
+        "sportifs",
+        "humanitaires",
         "exploitations rurales",
+        "coopératives agricoles",
+        "abris bombardements",
+        "défense passive",
         "ambassades",
         "réciprocité"
       ],

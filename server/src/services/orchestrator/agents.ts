@@ -592,6 +592,144 @@ DÉLAIS SPÉCIAUX :
 TOUJOURS citer l'article de référence et préciser si le délai est modifié par l'Art. 461 bis (LF 2026).`,
   },
   {
+    id: 'agent-dispositions-communes',
+    name: 'Agent Dispositions Communes IS/Revenus',
+    description: 'Spécialisé dispositions communes à l\'IS et aux impôts sur les revenus (Chapitre 4)',
+    keywords: ['révision des bilans', 'revision des bilans', 'réévaluation', 'reevaluation', 'déclaration contribuable', 'declaration contribuable', 'exploitations minières', 'exploitations minieres', 'vérification déclaration', 'verification declaration', 'taxation d\'office', 'cession activité', 'cession activite', 'cessation activité', 'cessation activite', 'décès contribuable', 'deces contribuable', 'amortissement', 'provision', 'bilan fiscal', 'plus-value réemploi', 'plus-value reemploi'],
+    patterns: [
+      /\br[eé][eé]valuation\s+(des\s+)?bilans?\b/i,
+      /\br[eé]vision\s+(des\s+)?bilans?\b/i,
+      /\btaxation\s+d.office\b/i,
+      /\b(cession|cessation)\s+(d.)?activit[eé]\b/i,
+      /\bexploitation[s]?\s+mini[eè]re[s]?\b/i,
+      /\bv[eé]rification\s+(des?\s+)?d[eé]claration[s]?\b/i,
+      /\bplus[- ]value[s]?\s+(de\s+)?r[eé]emploi\b/i,
+      /\bart\.?\s*(127|128|129|130|131|132|133|134|135|136|137|138|139|140)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Chapitre 4'], keywords: ['révision', 'bilan', 'taxation d\'office', 'cessation', 'vérification', 'exploitations minières'] },
+    systemInstruction: `Tu es spécialisé dans les dispositions communes à l'IS et aux impôts sur les revenus — Chapitre 4, Livre 1, Tome 1 du CGI 2026 (Art. 127 à 140K).
+
+Structure du Chapitre 4 — 6 sections :
+- Section 1 : Révision des bilans (Art. 127-128) — réévaluation libre des immobilisations, plus-values de réévaluation ;
+- Section 2 : Déclaration des contribuables (Art. 129-133) — obligations déclaratives, contenu des déclarations, délais ;
+- Section 3 : Régime spécial des exploitations minières (Art. 134-137) :
+  §1) Hydrocarbures liquides ou gazeux (Art. 134-135) ;
+  §2) Substances minérales concessibles autres que les hydrocarbures (Art. 136-137) ;
+- Section 4 : Vérification des déclarations (Art. 138) — pouvoirs de l'administration, procédure contradictoire ;
+- Section 5 : Taxation d'office (Art. 139) — conditions, procédure, renversement de la charge de la preuve ;
+- Section 6 : Cession, cessation ou décès (Art. 140-140K) — obligations en cas de cessation, délai 10 jours, imposition immédiate des bénéfices.
+
+TOUJOURS citer : "Chapitre 4 (Dispositions communes IS/Revenus), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-taxes-diverses',
+    name: 'Agent Taxes Diverses',
+    description: 'Spécialisé taxes diverses du Tome 1 (terrains, véhicules sociétés, apprentissage)',
+    keywords: ['taxe sur les terrains', 'terrain à bâtir', 'terrain a batir', 'terrain d\'agrément', 'terrain d agrement', 'impôt foncier terrain', 'impot foncier terrain', 'terrain inexploité', 'terrain inexploite', 'taxe véhicules tourisme', 'taxe vehicules tourisme', 'véhicule de tourisme', 'vehicule de tourisme', 'voiture de société', 'voiture de societe', 'taxe apprentissage', 'bons de caisse', 'fonds national investissement', 'externalités minières', 'externalites minieres'],
+    patterns: [
+      /\btaxe[s]?\s+sur\s+les\s+terrains?\b/i,
+      /\bterrain[s]?\s+[àa]\s+b[aâ]tir\b/i,
+      /\bterrain[s]?\s+d.agr[eé]ment\b/i,
+      /\bterrain[s]?\s+(inexploit[eé]|insuffisamment)\b/i,
+      /\btaxe[s]?\s+(sur\s+les\s+)?v[eé]hicule[s]?\s+(de\s+)?tourisme\b/i,
+      /\bvoiture[s]?\s+(de\s+)?soci[eé]t[eé]\b/i,
+      /\btaxe\s+d.apprentissage\b/i,
+      /\bbons?\s+de\s+caisse\b/i,
+      /\bart\.?\s*(141|142|143|144|145|146|147|148|149|150|151|152|153|154|155|156|157|158|159|160|161|162|163|164|165|166|167|168|169|170|171)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Chapitre 5'], keywords: ['terrain', 'taxe terrain', 'véhicule tourisme', 'apprentissage'] },
+    systemInstruction: `Tu es spécialisé dans les taxes diverses — Chapitre 5, Livre 1, Tome 1 du CGI 2026 (Art. 141 à 171-P3).
+
+Structure du Chapitre 5 — 8 sections :
+- Section 1 : Taxe d'apprentissage (Art. 141-156) — Abrogée (LF 2026) ;
+- Section 2 : Taxes sur les terrains (Art. 157-167 bis) :
+  • Art. 157 : Champ d'application — terrains d'agrément, insuffisamment mis en valeur, inexploités, à bâtir ;
+  • Art. 158-160 : Définitions des catégories de terrains ;
+  • Art. 161 : Exemption permanente d'impôt foncier ;
+  • Art. 162 : Exemption temporaire ;
+  • Art. 163 : Lieu d'imposition (commune/district, nom du propriétaire au 1er janvier) ;
+  • Art. 164 : Annualité de l'impôt ;
+  • Art. 165 : Calcul — taux par catégorie et classe (Brazzaville, Pointe-Noire, Loubomo, autres centres) ;
+  • Art. 166 : Obligations déclaratives (avant le 1er avril) ;
+  • Art. 167-167 bis : Exonération aliénation au profit de l'État ;
+- Section 3 : Taxe spéciale sur les sociétés (Art. 168-171) — Abrogée (LF 2026) ;
+- Section 4 : Taxe forfaitaire employeurs/débirentiers — Abrogée ;
+- Section 5 : Impôt spécial sur les bons de caisse — Abrogé ;
+- Section 6 : Taxe sur les véhicules de tourisme des sociétés (Art. 171-A à 171-L) :
+  • Art. 171-A : Création taxe spécifique ;
+  • Art. 171-B : Champ d'application (sociétés, établissements publics, collectivités) ;
+  • Art. 171-C : Véhicules soumis (voitures particulières, cartes grises) ;
+  • Art. 171-D : Exonération véhicules > 10 ans ;
+  • Art. 171-E : Période d'imposition (1er janvier au 31 décembre) ;
+  • Art. 171-F : Montant (200 000 FCFA ≤ 9 CV, 500 000 FCFA > 9 CV) ;
+  • Art. 171-G : Obligations déclaratives ;
+  • Art. 171-I : Paiement spontané avant le 1er mars ;
+  • Art. 171-J : Sanctions (comme taxe sur CA) ;
+  • Art. 171-K : Non-déductibilité de l'IS ;
+  • Art. 171-L : Réclamations ;
+- Section 7 : Fonds national d'investissement (Art. 171-M à 171-O) — Abrogé ;
+- Section 8 : Taxe externalités négatives minières/pétrolières (Art. 171-P1 à P3) — Abrogée.
+
+TOUJOURS citer : "Chapitre 5 (Taxes diverses), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
+    id: 'agent-obligations-diverses',
+    name: 'Agent Obligations Diverses',
+    description: 'Spécialisé obligations employeurs, retenues BTP, déclarations spéciales (Chapitre 6)',
+    keywords: ['obligation employeur', 'débirentier', 'debirentier', 'bordereau de versement', 'retenue à la source', 'retenue a la source', 'retenue btp', 'sous-traitant btp', 'sous traitant btp', 'commission', 'courtage', 'ristourne', 'honoraires', 'droits d\'auteur', 'droits d auteur', 'rémunération associés', 'remuneration associes', 'parts de bénéfice', 'parts de benefice', 'revenus source étrangère', 'revenus source etrangere', 'réassurance', 'reassurance', 'primes cédées', 'primes cedees', 'cima'],
+    patterns: [
+      /\bobligation[s]?\s+(des?\s+)?employeur[s]?\b/i,
+      /\bd[eé]birentier[s]?\b/i,
+      /\bbordereau\s+(de\s+)?versement\b/i,
+      /\bretenue[s]?\s+(à\s+la\s+source\s+)?(btp|sous[- ]traitant)\b/i,
+      /\b(commission|courtage|ristourne|honoraire)[s]?\b/i,
+      /\bdroits?\s+d.auteur\b/i,
+      /\br[eé]mun[eé]ration[s]?\s+(des?\s+)?associ[eé][s]?\b/i,
+      /\brevenu[s]?\s+(de\s+)?source\s+[eé]trang[eè]re\b/i,
+      /\br[eé]assurance\b/i,
+      /\bprimes?\s+c[eé]d[eé]e[s]?\b/i,
+      /\bCIMA\b/,
+      /\bart\.?\s*(172|173|174|175|176|177|178|179|180|181|182|183|184|185)\b/i,
+    ],
+    ragPriority: { tomes: ['1'], chapitres: ['Chapitre 6'], keywords: ['employeur', 'retenue', 'BTP', 'sous-traitant', 'commission', 'réassurance'] },
+    systemInstruction: `Tu es spécialisé dans les dispositions diverses — Chapitre 6, Livre 1, Tome 1 du CGI 2026 (Art. 172 à 185 sexies).
+
+Structure du Chapitre 6 — 9 sections :
+- Section 1 : Obligations des employeurs et débirentiers (Art. 172-176) :
+  • Art. 172 : Retenue IRPP/ITS à la source sur sommes imposables ;
+  • Art. 173 : Versement dans les 20 jours du mois suivant ;
+  • Art. 174 : Bordereau de versement ;
+  • Art. 175 : Sanctions (amende 5 000 000 FCFA + perte déductibilité) ;
+  • Art. 176 : DAS (Déclaration Annuelle des Salaires) avant le 15 janvier ;
+
+- Section 2 : Commissions, courtages, ristournes, honoraires, droits d'auteurs (Art. 177-178) :
+  • Déclaration des sommes versées > seuil ;
+
+- Section 3 : Rémunérations d'associés et parts de bénéfices (Art. 179-180) ;
+
+- Section 4 : Revenus de source étrangère (Art. 181) — renseignements à fournir ;
+
+- Section 5 : Dispositions applicables aux sociétés Art. 92+ (Art. 182-183) ;
+
+- Section 6 : Personnes sans domicile/résidence fiscale au Congo (Art. 184-185) ;
+
+- Section 7 : Plus-values sur titres par non-résidents (Art. 185 quater-A à 185 quater-C) :
+  • Art. 185 quater-A : Impôt spécial sur plus-values cession titres ;
+  • Art. 185 quater-B : Taux 20%, libératoire, payable à l'enregistrement ;
+  • Art. 185 quater-C : Solidarité cédant/cessionnaire ;
+
+- Section 8 : Retenues BTP sous-traitants (Art. 185 quinquies) :
+  • 3% sous-traitants régime réel, 10% régime forfait ;
+  • Obligation communication trimestrielle liste sous-traitants ;
+  • Enregistrement contrats d'exécution obligatoire ;
+  • Pénalité retard : 2%/mois (max 100%) ;
+
+- Section 9 : Réassurance (Art. 185 sexies) :
+  • Retenue 20% sur primes cédées au-delà du plafond CIMA.
+
+TOUJOURS citer : "Chapitre 6 (Dispositions diverses), Livre 1, Tome 1, Art. X" dans la référence.`,
+  },
+  {
     id: 'agent-general',
     name: 'Agent Général',
     description: 'Agent par défaut pour les questions fiscales générales',
