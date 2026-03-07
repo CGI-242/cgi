@@ -6253,7 +6253,7 @@
   {
     "numero": "303",
     "titre": "Paiement de la patente par anticipation",
-    "contenu": "La contribution de la patente est perçue exceptionnellement par anticipation.\nDoivent figurer sur le titre de perception pour chaque contribuable :\na) la raison sociale ou le nom commercial ;\nb) les nom et prénom du dirigeant de la société ou du propriétaire de l'établissement ;\nc) le NIU de l'entité ;\nd) l'activité principale exercée dans l'entité ;\ne) l'adresse géographique et postale du lieu d'activité ;\nf) le chiffre d'affaires ou la base imposable aux fins de la contribution de la patente ;\ng) le montant de la patente arrondi à la dizaine de francs la plus voisine.\nLe titre de perception est établi à partir, entre autres, des matrices primitives et supplémentaires.\nLes matrices primitives sont établies suivant les situations au 1er janvier de l'année de l'imposition.\nLes matrices supplémentaires sont ouvertes au début de chaque trimestre dans la même forme que les matrices primitives où elles sont destinées à compléter, sur la base des déclarations d'existence reçues au cours de l'année fiscale.\nLes matrices sont établies par résidence fiscale et comprennent des spécificités par localité, par activité et par régime d'imposition.",
+    "contenu": "La contribution de la patente est perçue exceptionnellement par anticipation.\nDoivent figurer sur le titre de perception pour chaque contribuable :\na) la raison sociale ou le nom commercial ;\nb) les nom et prénom du dirigeant de la société ou du propriétaire de l'établissement ;\nc) le NIU de l'entité ;\nd) l'activité principale exercée dans l'entité ;\ne) l'adresse géographique et postale du lieu d'activité ;\nf) le chiffre d'affaires ou la base imposable aux fins de la contribution de la patente ;\ng) le montant de la patente arrondi à la dizaine de francs la plus voisine.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6270,19 +6270,25 @@
   },
   {
     "numero": "304",
-    "titre": "Abrogé",
-    "contenu": "Abrogé.",
+    "titre": "Titre de perception et matrices",
+    "contenu": "Le titre de perception est établi à partir, entre autres, des matrices primitives et supplémentaires.\nLes matrices primitives sont établies suivant les situations au 1er janvier de l'année d'imposition.\nLes matrices supplémentaires sont ouvertes au début de chaque trimestre dans la même forme que les matrices primitives qu'elles sont destinées à compléter, sur la base des déclarations d'existence reçues au cours de l'année fiscale.\nLes matrices sont établies par résidence fiscale et comprennent des spécificités par localité, par activité et par régime d'imposition.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "abrogation"
+      "titre de perception",
+      "matrices primitives",
+      "matrices supplémentaires",
+      "1er janvier",
+      "déclarations d'existence",
+      "résidence fiscale",
+      "régime d'imposition"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
   },
   {
     "numero": "305",
     "titre": "Personnes portées sur les matrices primitives",
-    "contenu": "Sont portées sur les matrices primitives, toutes les personnes soumises à la contribution de la patente l'énumération suit :\na) celles qui exercent une activité imposable et qui n'ont pas déclaré cesser pour l'année à venir avant le 1er octobre de l'année en cours ;\nb) celles qui ont déclaré leur existence ou leur début d'activité au cours des trois derniers trimestres de l'année précédente ;\nc) celles qui exercent une activité imposable sans titre de patente.",
+    "contenu": "Sont portées sur les matrices primitives, toutes les personnes soumises à la contribution de la patente dont l'énumération suit :\na) celles qui exercent une activité imposable et qui n'ont pas déclaré cesser pour l'année à venir avant le 1er décembre de l'année en cours ;\nb) celles qui ont déclaré leur existence ou leur début d'activités au cours des trois premiers trimestres de l'année précédente ;\nc) celles qui exercent une activité imposable sans titre de patente.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6291,7 +6297,7 @@
       "activité imposable",
       "déclaration d'existence",
       "cessation",
-      "1er octobre",
+      "1er décembre",
       "sans titre de patente"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"
@@ -6299,7 +6305,7 @@
   {
     "numero": "306",
     "titre": "Personnes portées sur les matrices supplémentaires",
-    "contenu": "Sont portées sur les matrices supplémentaires :\na) les personnes physiques ou morales qui entreprennent au cours de l'année une activité à but lucratif ;\nb) les personnes physiques et morales non inscrites dans la matrice primitive qui, sur production de leur déclaration d'existence souscrite avant le 1er janvier de l'année de l'établissement de cette matrice, une activité imposable.",
+    "contenu": "Sont portées sur les matrices supplémentaires :\na) les personnes physiques et morales qui entreprennent au cours de l'année une activité à but lucratif ;\nb) les personnes physiques et morales non inscrites dans la matrice primitive qui, sur production de leur déclaration d'existence, exerçaient avant le 1er janvier de l'année de l'établissement de cette matrice, une activité imposable.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6341,7 +6347,7 @@
   {
     "numero": "309",
     "titre": "Délivrance des formules et paiement",
-    "contenu": "La formule de patente établie conformément à l'article 285 est remise au contribuable après le paiement total du montant de la patente.\nToutefois, pour les contribuables soumis au régime du forfait, la formule de patente est délivrée après le versement du deuxième acompte de l'IGF ou après avoir payé au moins le montant de l'acompte de l'IGF dû au vu de la patente.",
+    "contenu": "La formule de patente établie par l'administration fiscale est délivrée au contribuable après le paiement total du montant de la patente.\nToutefois, pour les contribuables soumis au régime du forfait, la formule de patente est délivrée après le versement du deuxième acompte de l'IGF ou après avoir payé au moins la moitié du montant de l'IGF dû en sus de la patente.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6357,7 +6363,7 @@
   {
     "numero": "310",
     "titre": "Paiement de la patente",
-    "contenu": "La contribution de la patente est exigible en un seul terme, conformément à l'article 461 bis du présent Code, entre le 1er et le 20 avril de chaque année.\nToutefois, par dérogation au premier alinéa du présent article, lorsque le montant de la contribution de la patente est supérieur à 100.000 FCFA, le contribuable soumis au régime du forfait est autorisé à payer en deux fractions, au plus tard au cours de deuxième trimestre de l'année : si le montant de la contribution est élevé, la première fraction étant au moins égale à la moitié du montant.",
+    "contenu": "La contribution de la patente est exigible en un seul terme, conformément à l'article 461 bis du présent Code, entre le 10 et le 20 avril de chaque année.\nToutefois, par dérogation au premier alinéa du présent article, lorsque le montant de la contribution de la patente est supérieur à 100.000 FCFA, le contribuable soumis au régime du forfait est autorisé à payer en deux fractions, au plus tard au cours du deuxième trimestre de l'année au titre de laquelle la contribution est due, la première fraction étant au moins égale à la moitié du montant dû.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -6366,7 +6372,7 @@
       "paiement fractionné",
       "régime du forfait",
       "100.000 FCFA",
-      "1er-20 avril",
+      "10-20 avril",
       "article 461 bis"
     ],
     "source": "tome1-partie2-titre1-chapitre1.json"

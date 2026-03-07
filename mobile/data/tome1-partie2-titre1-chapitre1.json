@@ -1275,11 +1275,7 @@
         "d) l'activité principale exercée dans l'entité ;",
         "e) l'adresse géographique et postale du lieu d'activité ;",
         "f) le chiffre d'affaires ou la base imposable aux fins de la contribution de la patente ;",
-        "g) le montant de la patente arrondi à la dizaine de francs la plus voisine.",
-        "Le titre de perception est établi à partir, entre autres, des matrices primitives et supplémentaires.",
-        "Les matrices primitives sont établies suivant les situations au 1er janvier de l'année de l'imposition.",
-        "Les matrices supplémentaires sont ouvertes au début de chaque trimestre dans la même forme que les matrices primitives où elles sont destinées à compléter, sur la base des déclarations d'existence reçues au cours de l'année fiscale.",
-        "Les matrices sont établies par résidence fiscale et comprennent des spécificités par localité, par activité et par régime d'imposition."
+        "g) le montant de la patente arrondi à la dizaine de francs la plus voisine."
       ],
       "mots_cles": [
         "patente",
@@ -1296,23 +1292,32 @@
     },
     {
       "article": "Art. 304",
-      "titre": "Abrogé",
+      "titre": "Titre de perception et matrices",
       "texte": [
-        "Abrogé."
+        "Le titre de perception est établi à partir, entre autres, des matrices primitives et supplémentaires.",
+        "Les matrices primitives sont établies suivant les situations au 1er janvier de l'année d'imposition.",
+        "Les matrices supplémentaires sont ouvertes au début de chaque trimestre dans la même forme que les matrices primitives qu'elles sont destinées à compléter, sur la base des déclarations d'existence reçues au cours de l'année fiscale.",
+        "Les matrices sont établies par résidence fiscale et comprennent des spécificités par localité, par activité et par régime d'imposition."
       ],
       "mots_cles": [
-        "abrogation"
+        "titre de perception",
+        "matrices primitives",
+        "matrices supplémentaires",
+        "1er janvier",
+        "déclarations d'existence",
+        "résidence fiscale",
+        "régime d'imposition"
       ],
-      "statut": "abrogé",
+      "statut": "en vigueur",
       "section": "Section 5 : Contribution des patentes : VIII. Établissement des matrices et titres de perception"
     },
     {
       "article": "Art. 305",
       "titre": "Personnes portées sur les matrices primitives",
       "texte": [
-        "Sont portées sur les matrices primitives, toutes les personnes soumises à la contribution de la patente l'énumération suit :",
-        "a) celles qui exercent une activité imposable et qui n'ont pas déclaré cesser pour l'année à venir avant le 1er octobre de l'année en cours ;",
-        "b) celles qui ont déclaré leur existence ou leur début d'activité au cours des trois derniers trimestres de l'année précédente ;",
+        "Sont portées sur les matrices primitives, toutes les personnes soumises à la contribution de la patente dont l'énumération suit :",
+        "a) celles qui exercent une activité imposable et qui n'ont pas déclaré cesser pour l'année à venir avant le 1er décembre de l'année en cours ;",
+        "b) celles qui ont déclaré leur existence ou leur début d'activités au cours des trois premiers trimestres de l'année précédente ;",
         "c) celles qui exercent une activité imposable sans titre de patente."
       ],
       "mots_cles": [
@@ -1321,7 +1326,7 @@
         "activité imposable",
         "déclaration d'existence",
         "cessation",
-        "1er octobre",
+        "1er décembre",
         "sans titre de patente"
       ],
       "statut": "en vigueur",
@@ -1332,8 +1337,8 @@
       "titre": "Personnes portées sur les matrices supplémentaires",
       "texte": [
         "Sont portées sur les matrices supplémentaires :",
-        "a) les personnes physiques ou morales qui entreprennent au cours de l'année une activité à but lucratif ;",
-        "b) les personnes physiques et morales non inscrites dans la matrice primitive qui, sur production de leur déclaration d'existence souscrite avant le 1er janvier de l'année de l'établissement de cette matrice, une activité imposable."
+        "a) les personnes physiques et morales qui entreprennent au cours de l'année une activité à but lucratif ;",
+        "b) les personnes physiques et morales non inscrites dans la matrice primitive qui, sur production de leur déclaration d'existence, exerçaient avant le 1er janvier de l'année de l'établissement de cette matrice, une activité imposable."
       ],
       "mots_cles": [
         "matrices supplémentaires",
@@ -1378,8 +1383,8 @@
       "article": "Art. 309",
       "titre": "Délivrance des formules et paiement",
       "texte": [
-        "La formule de patente établie conformément à l'article 285 est remise au contribuable après le paiement total du montant de la patente.",
-        "Toutefois, pour les contribuables soumis au régime du forfait, la formule de patente est délivrée après le versement du deuxième acompte de l'IGF ou après avoir payé au moins le montant de l'acompte de l'IGF dû au vu de la patente."
+        "La formule de patente établie par l'administration fiscale est délivrée au contribuable après le paiement total du montant de la patente.",
+        "Toutefois, pour les contribuables soumis au régime du forfait, la formule de patente est délivrée après le versement du deuxième acompte de l'IGF ou après avoir payé au moins la moitié du montant de l'IGF dû en sus de la patente."
       ],
       "mots_cles": [
         "formule de patente",
@@ -1396,8 +1401,8 @@
       "article": "Art. 310",
       "titre": "Paiement de la patente",
       "texte": [
-        "La contribution de la patente est exigible en un seul terme, conformément à l'article 461 bis du présent Code, entre le 1er et le 20 avril de chaque année.",
-        "Toutefois, par dérogation au premier alinéa du présent article, lorsque le montant de la contribution de la patente est supérieur à 100.000 FCFA, le contribuable soumis au régime du forfait est autorisé à payer en deux fractions, au plus tard au cours de deuxième trimestre de l'année : si le montant de la contribution est élevé, la première fraction étant au moins égale à la moitié du montant."
+        "La contribution de la patente est exigible en un seul terme, conformément à l'article 461 bis du présent Code, entre le 10 et le 20 avril de chaque année.",
+        "Toutefois, par dérogation au premier alinéa du présent article, lorsque le montant de la contribution de la patente est supérieur à 100.000 FCFA, le contribuable soumis au régime du forfait est autorisé à payer en deux fractions, au plus tard au cours du deuxième trimestre de l'année au titre de laquelle la contribution est due, la première fraction étant au moins égale à la moitié du montant dû."
       ],
       "mots_cles": [
         "paiement de la patente",
@@ -1405,7 +1410,7 @@
         "paiement fractionné",
         "régime du forfait",
         "100.000 FCFA",
-        "1er-20 avril",
+        "10-20 avril",
         "article 461 bis"
       ],
       "statut": "en vigueur",
