@@ -15872,7 +15872,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 A",
+    "numero": "171-A",
     "titre": "Création de la taxe spécifique sur les véhicules de tourisme des sociétés",
     "contenu": "Il est créé au Congo, au profit de l'État, une taxe spécifique sur les véhicules de tourisme des sociétés, quelle qu'en soit la forme et l'objet, et servant au transport de personnes appartenant à ces mêmes sociétés.",
     "tome": "1",
@@ -15888,7 +15888,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 B",
+    "numero": "171-B",
     "titre": "Champ d'application de la taxe véhicules",
     "contenu": "Entrent dans le champ d'application de cette taxe, d'une part les sociétés proprement dites et, d'autre part les établissements publics, organismes d'État et collectivités locales à caractère industriel ou commercial bénéficiant de l'autonomie financière et ayant une ou plusieurs voitures de tourisme immatriculées à leur nom, sur le territoire congolais. Cette taxe est due sans préjudice de la perception de la taxe sur les véhicules à moteur prévue par délibération des Conseils Municipaux. Lorsque les véhicules sont acquis en crédit-bail, la taxe est due par le crédit-preneur, utilisateur des véhicules, jusqu'à la fin du contrat de crédit-bail.",
     "tome": "1",
@@ -15908,7 +15908,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 C",
+    "numero": "171-C",
     "titre": "Véhicules soumis à la taxe",
     "contenu": "Sont soumis à la taxe : les véhicules de tourisme autres que les voitures commerciales, classés dans la catégorie des voitures particulières pour l'établissement des récépissés de déclaration de mise en circulation dits « cartes grises » et possédés par la société au premier jour de la période d'imposition définie à l'article 171-E ci-dessous.",
     "tome": "1",
@@ -15925,7 +15925,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 D",
+    "numero": "171-D",
     "titre": "Exonération véhicules anciens",
     "contenu": "Sont exonérés de la taxe, les véhicules de tourisme dont la date de la première mise en circulation remonte à plus de 10 ans au premier jour de la période d'imposition.",
     "tome": "1",
@@ -15941,7 +15941,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 E",
+    "numero": "171-E",
     "titre": "Période d'imposition",
     "contenu": "La taxe est annuelle. La période d'imposition s'étend du 1er janvier au 31 décembre de chaque année. Elle est établie au titre de l'année en cours.",
     "tome": "1",
@@ -15957,7 +15957,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 F",
+    "numero": "171-F",
     "titre": "Montant de la taxe véhicules",
     "contenu": "Le montant de la taxe est fixé à 200.000 FCFA par voiture imposable dont la puissance est inférieure ou égale à 9 CV, et à 500.000 FCFA par voiture imposable dont la puissance est supérieure à 9 CV.",
     "tome": "1",
@@ -15974,7 +15974,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 G",
+    "numero": "171-G",
     "titre": "Obligations déclaratives véhicules",
     "contenu": "Les personnes visées à l'article 171-B ci-dessus sont tenues de fournir pour chacune des voitures de tourisme définies à l'article 171-C ci-dessus et utilisées par elles au 1er janvier de chaque année, les indications suivantes : • 1° date de mise en circulation dans l'entreprise et éventuellement la date de la première mise en circulation lorsqu'elle a plus de 10 ans d'âge ; • 2° numéro d'immatriculation figurant sur la carte grise ou l'attestation en tenant lieu, le cas échéant ; • 3° nature de son affectation ; • 4° un état nominatif d'affectation et, en cas d'utilisation privative des véhicules, l'évaluation de l'avantage en nature correspondante pour les bénéficiaires telle que prévue à l'article 39 du CGI Tome 1.",
     "tome": "1",
@@ -15992,7 +15992,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 H",
+    "numero": "171-H",
     "titre": "Taxe véhicules (abrogé)",
     "contenu": "Abrogé.",
     "tome": "1",
@@ -16004,7 +16004,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 I",
+    "numero": "171-I",
     "titre": "Paiement et déclaration de la taxe",
     "contenu": "La taxe est acquittée spontanément au vu d'une déclaration souscrite par l'entreprise au plus tard le 1er mars de l'année suivant celle de la période d'imposition définie à l'article 171-E. La déclaration est unique pour l'ensemble des véhicules détenus par la personne morale imposable visée à l'article 171-B. Elle est souscrite au lieu du siège social ou, à défaut, au lieu du principal établissement de la personne morale dans le territoire.",
     "tome": "1",
@@ -16021,7 +16021,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 J",
+    "numero": "171-J",
     "titre": "Sanctions omissions et inexactitudes",
     "contenu": "Les omissions, insuffisances ou inexactitudes dans les déclarations sont sanctionnées comme en matière de taxe sur le chiffre d'affaires.",
     "tome": "1",
@@ -16037,7 +16037,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 K",
+    "numero": "171-K",
     "titre": "Non-déductibilité de la taxe",
     "contenu": "Lorsque la taxe est due par des personnes visées à l'article 171-B elle n'est pas admise en déduction pour l'assiette de l'impôt sur les sociétés.",
     "tome": "1",
@@ -16052,7 +16052,7 @@
     "source": "tome1-partie1-livre1-chapitre5.json"
   },
   {
-    "numero": "171 L",
+    "numero": "171-L",
     "titre": "Réclamations et recouvrement",
     "contenu": "Les réclamations sont présentées, instruites et jugées, les cotisations recouvrées, comme en matière de contributions directes et indirectes.",
     "tome": "1",
