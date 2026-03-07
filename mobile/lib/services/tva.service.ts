@@ -1,59 +1,107 @@
 /**
  * Service TVA — Taxe sur la Valeur Ajoutée
  * TFNC6 Art. 1-40 CGI Congo 2026
+ * Format déclaration type français (CA3)
  */
 
 export type TypeOperation = "taxable" | "exoneree" | "export";
 
 export interface TvaInput {
-  caHT: number;
-  achatsHT: number;
-  typeOperation: TypeOperation;
+  // Section A — Opérations réalisées
+  ventesServicesHT: number;     // Ligne 01 : Ventes et prestations de services
+  autresOpTaxables: number;     // Ligne 02 : Autres opérations taxables
+  exportationsHT: number;       // Ligne 03 : Exportations (taux 0%)
+  operationsExonerees: number;  // Ligne 04 : Opérations exonérées
+  // Section C — TVA déductible
+  achatsImmobilisations: number; // Ligne 09 : TVA sur immobilisations
+  achatsBiensServices: number;   // Ligne 10 : TVA sur autres biens et services
+  // Report
+  creditAnterior: number;        // Ligne 14 : Crédit de TVA reporté du mois précédent
+}
+
+export interface TvaLigneDeclaration {
+  numero: string;
+  libelle: string;
+  baseHT?: number;
+  tva?: number;
 }
 
 export interface TvaResult {
-  caHT: number;
-  achatsHT: number;
-  typeOperation: TypeOperation;
-  taux: number;
-  tvaCollectee: number;
-  tvaDeductible: number;
-  tvaDue: number;
+  // Section A — Chiffre d'affaires
+  lignesCA: TvaLigneDeclaration[];
+  totalCAHT: number;
+
+  // Section B — TVA brute
+  lignesTvaBrute: TvaLigneDeclaration[];
+  totalTvaBrute: number;
+
+  // Section C — TVA déductible
+  lignesTvaDeductible: TvaLigneDeclaration[];
+  totalTvaDeductible: number;
+
+  // Section D — TVA nette
+  creditAnterior: number;
+  tvaNette: number;
+  tvaAPayer: number;
   creditTva: number;
-  montantTTC: number;
+
+  taux: number;
 }
 
 const TAUX_TVA = 0.18;
 
 export function calculerTVA(input: TvaInput): TvaResult {
-  const caHT = Math.max(0, input.caHT || 0);
-  const achatsHT = Math.max(0, input.achatsHT || 0);
+  const ventes = Math.max(0, input.ventesServicesHT || 0);
+  const autresOp = Math.max(0, input.autresOpTaxables || 0);
+  const exports = Math.max(0, input.exportationsHT || 0);
+  const exonerees = Math.max(0, input.operationsExonerees || 0);
+  const achatsImmo = Math.max(0, input.achatsImmobilisations || 0);
+  const achatsBnS = Math.max(0, input.achatsBiensServices || 0);
+  const creditAnt = Math.max(0, input.creditAnterior || 0);
 
-  let tvaCollectee: number;
-  const tvaDeductible = Math.round(achatsHT * TAUX_TVA);
+  // --- Section A : Chiffre d'affaires ---
+  const lignesCA: TvaLigneDeclaration[] = [
+    { numero: "01", libelle: "Ventes et prestations de services", baseHT: ventes },
+    { numero: "02", libelle: "Autres opérations taxables", baseHT: autresOp },
+    { numero: "03", libelle: "Exportations (taux 0%)", baseHT: exports },
+    { numero: "04", libelle: "Opérations exonérées", baseHT: exonerees },
+  ];
+  const totalCAHT = ventes + autresOp + exports + exonerees;
 
-  if (input.typeOperation === "exoneree") {
-    tvaCollectee = 0;
-  } else if (input.typeOperation === "export") {
-    tvaCollectee = 0; // Export = taux 0%, mais TVA déductible maintenue
-  } else {
-    tvaCollectee = Math.round(caHT * TAUX_TVA);
-  }
+  // --- Section B : TVA brute (collectée) ---
+  const tvaVentes = Math.round(ventes * TAUX_TVA);
+  const tvaAutres = Math.round(autresOp * TAUX_TVA);
 
-  const solde = tvaCollectee - tvaDeductible;
-  const tvaDue = Math.max(0, solde);
-  const creditTva = Math.max(0, -solde);
-  const montantTTC = caHT + tvaCollectee;
+  const lignesTvaBrute: TvaLigneDeclaration[] = [
+    { numero: "05", libelle: "TVA sur ventes/prestations (18%)", baseHT: ventes, tva: tvaVentes },
+    { numero: "06", libelle: "TVA sur autres opérations (18%)", baseHT: autresOp, tva: tvaAutres },
+    { numero: "07", libelle: "TVA sur exportations (0%)", baseHT: exports, tva: 0 },
+  ];
+  const totalTvaBrute = tvaVentes + tvaAutres;
+
+  // --- Section C : TVA déductible ---
+  const lignesTvaDeductible: TvaLigneDeclaration[] = [
+    { numero: "09", libelle: "TVA sur immobilisations", tva: achatsImmo },
+    { numero: "10", libelle: "TVA sur autres biens et services", tva: achatsBnS },
+  ];
+  const totalTvaDeductible = achatsImmo + achatsBnS;
+
+  // --- Section D : TVA nette ---
+  const tvaNette = totalTvaBrute - totalTvaDeductible - creditAnt;
+  const tvaAPayer = Math.max(0, tvaNette);
+  const creditTva = Math.max(0, -tvaNette);
 
   return {
-    caHT,
-    achatsHT,
-    typeOperation: input.typeOperation,
-    taux: TAUX_TVA * 100,
-    tvaCollectee,
-    tvaDeductible,
-    tvaDue,
+    lignesCA,
+    totalCAHT,
+    lignesTvaBrute,
+    totalTvaBrute,
+    lignesTvaDeductible,
+    totalTvaDeductible,
+    creditAnterior: creditAnt,
+    tvaNette,
+    tvaAPayer,
     creditTva,
-    montantTTC,
+    taux: TAUX_TVA * 100,
   };
 }
