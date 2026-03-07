@@ -8142,7 +8142,7 @@
   {
     "numero": "395",
     "titre": "Communication d'informations par l'autorité judiciaire",
-    "contenu": "L'autorité judiciaire doit donner connaissance aux agents de l'administration fiscale de toute indication qu'elle peut recueillir de nature à faire présumer une fraude commise en matière fiscale ou une manœuvre quelconque ayant eu pour objet ou ayant eu pour résultat de frauder ou de compromettre un impôt, qu'il s'agisse d'une instance civile ou commerciale ou d'une information criminelle, même terminée par un non-lieu.\nDurant la quinzaine qui suit le procès de toute décision rendue par les juridictions civiles, administratives, consulaires, prud'homales et militaires, les pièces restent déposées au greffe à la disposition des Directions des contributions directes et indirectes, de l'enregistrement, des domaines et du timbre.\nLe délai est réduit à dix jours en matière correctionnelle.\nToute sentence arbitrale, soit que les arbitres aient été désignés par la justice, soit qu'ils l'aient été par les parties, tout accord intervenu en cours d'instance, en cours ou en suite d'expertise ou d'arbitrage, doivent faire l'objet d'un procès-verbal lequel est, dans le délai d'un mois, déposé avec les pièces au greffe du tribunal compétent. Ce procès-verbal est tenu à la disposition de la DGID pendant un délai de quinze jours à partir du dépôt.\nLa sentence arbitrale n'est soumise à l'enregistrement qu'en cas d'ordonnance d'exequatur ou d'usage en justice ou par acte.",
+    "contenu": "L'autorité judiciaire doit donner connaissance aux agents de l'administration fiscale de toute indication qu'elle peut recueillir de nature à faire présumer une fraude commise en matière fiscale ou une manœuvre quelconque ayant eu pour objet ou ayant eu pour résultat de frauder ou de compromettre un impôt, qu'il s'agisse d'une instance civile ou commerciale ou d'une information criminelle, même terminée par un non-lieu.\nDurant la quinzaine qui suit le procès de toute décision rendue par les juridictions civiles, administratives, consulaires, prud'homales et militaires, les pièces restent déposées au greffe à la disposition des Directions des contributions directes et indirectes, de l'enregistrement, des domaines et du timbre.\nLe délai est réduit à dix jours en matière correctionnelle.\nToute sentence arbitrale, soit que les arbitres aient été désignés par la justice, soit qu'ils l'aient été par les parties, tout accord intervenu en cours d'instance, en cours ou en suite d'expertise ou d'arbitrage, doivent faire l'objet d'un procès-verbal lequel est, dans le délai d'un mois, déposé avec les pièces au greffe du tribunal compétent. Ce procès-verbal est tenu à la disposition de la DGID pendant un délai de quinze jours à partir du dépôt.\nLa sentence arbitrale n'est soumise à l'enregistrement qu'en cas d'ordonnance d'exequatur ou d'usage en justice ou par acte public.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
@@ -8152,31 +8152,39 @@
       "greffe",
       "sentence arbitrale",
       "procès-verbal",
-      "délai",
+      "délai quinzaine",
       "DGID",
       "enregistrement",
-      "matière correctionnelle"
+      "matière correctionnelle",
+      "non-lieu",
+      "ordonnance d'exequatur",
+      "acte public",
+      "tribunal compétent",
+      "juridictions civiles",
+      "prud'homales"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
   {
     "numero": "396",
     "titre": "Communication des dossiers par le Ministère Public",
-    "contenu": "Dans toute instance devant les juridictions civiles et criminelles, le Ministère Public peut donner communication, des dossiers à l'administration des Impôts.",
+    "contenu": "Dans toute instance devant les juridictions civiles et criminelles, le Ministère Public peut donner communication des dossiers à l'administration des Impôts.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
       "Ministère Public",
       "juridictions civiles",
       "juridictions criminelles",
-      "administration des Impôts"
+      "administration des Impôts",
+      "communication des dossiers",
+      "instance judiciaire"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
   {
     "numero": "397",
     "titre": "Obligations déclaratives des sociétés, agents de change et établissements financiers",
-    "contenu": "Les sociétés ou compagnies, agents de change, changeurs, banquiers, escompteurs, officiers publics ou ministériels et toutes personnes, sociétés ou associations recevant habituellement en dépôt des valeurs mobilières, sont tenus d'adresser à l'Inspection divisionnaire des contributions directes et indirectes de leur résidence, avis de l'ouverture et de la clôture de tout compte de dépôt, de titres, valeurs ou espèces, compte d'avances, compte courant ou autre.\nLes avis sont établis sur des formules dont le modèle est arrêté par l'administration ; ils indiquent les noms, prénoms et adresses des titulaires des comptes. Ils sont envoyés dans les dix premiers jours du mois qui suit celui de l'ouverture ou de la clôture des comptes ; il en est donné récépissé.\nChaque année avant le 1er février, les établissements visés au premier alinéa du présent article sont tenus d'adresser à l'Inspection divisionnaire des contributions directes et indirectes de leur résidence, le relevé des coupons portés au cours de l'année précédente aux crédits de titulaires des comptes de dépôts, de titres, valeurs ou espèces, comptes d'avance, comptes courants ou autres, ainsi que le relevé des intérêts des bons nominatifs ou ordre visés à l'article 171 sexies.\nLes personnes physiques ou morales émettant des chèques de voyage sont tenues, lorsque le montant des chèques ne figure pas au débit du compte courant ou d'un compte de dépôt au nom de l'acheteur, de s'assurer de l'identité de celui-ci et d'inscrire sur un registre spécial coté et paraphé, les noms, prénoms, professions, adresses de l'intéressé, les numéros des chèques émis et le montant de ceux-ci. La même disposition est applicable aux lettres de crédit, ainsi qu'à toute opération entraînant des mouvements de fonds ; en ce cas, les noms du destinataire et le lieu de destination doivent être mentionnés.\nLes contraventions aux dispositions du présent article sont punies dans les conditions prévues à l'article 377 ci-dessus.\nLes établissements de crédit sont tenus de fournir systématiquement et spontanément à l'administration fiscale une copie des états financiers qui leurs sont produits par leurs clients.",
+    "contenu": "Les sociétés ou compagnies, agents de change, changeurs, banquiers, escompteurs, officiers publics ou ministériels et toutes personnes, sociétés ou associations recevant habituellement en dépôt des valeurs mobilières, sont tenus d'adresser à l'inspecteur divisionnaire des contributions directes et indirectes de leur résidence, avis de l'ouverture et de la clôture de tout compte de dépôt, de titres, valeurs ou espèces, compte d'avances, compte courant ou autre.\nLes avis sont établis sur des formules dont le modèle est arrêté par l'administration ; ils indiquent les noms, prénoms et adresses des titulaires des comptes. Ils sont envoyés dans les dix premiers jours du mois qui suit celui de l'ouverture ou de la clôture des comptes ; il en est donné récépissé.\nChaque année avant le 1er février, les établissements visés au premier alinéa du présent article sont tenus d'adresser à l'inspection divisionnaire des contributions directes et indirectes de leur résidence, le relevé des coupons portés au cours de l'année précédente aux crédits de titulaires des comptes de dépôts, de titres, valeurs ou espèces, comptes d'avance, comptes courants ou autres, ainsi que le relevé des intérêts des bons nominatifs ou à ordre visés à l'article 171 sexies.\nLes personnes physiques ou morales émettant des chèques de voyage sont tenues, lorsque le montant de ces chèques ne figure pas au débit du compte courant ou d'un compte de dépôt au nom de l'acquéreur, de s'assurer de l'identité de celui-ci et d'inscrire sur un registre spécial coté et paraphé, les noms, prénoms, professions, adresses de l'intéressé, les numéros des chèques émis et le montant de ceux-ci. La même disposition est applicable aux lettres de crédit, ainsi qu'à toute opération entraînant des mouvements de fonds ; en ce cas, les noms du destinataire et le lieu de destination doivent être mentionnés.\nLes contraventions aux dispositions du présent article sont punies dans les conditions prévues à l'article 377 ci-dessus.\nLes établissements de crédit sont tenus de fournir systématiquement et spontanément à l'administration fiscale une copie des états financiers qui leurs sont produits par leurs clients.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
@@ -8189,7 +8197,17 @@
       "coupons",
       "chèques de voyage",
       "lettres de crédit",
-      "états financiers"
+      "états financiers",
+      "inspecteur divisionnaire",
+      "inspection divisionnaire",
+      "compte de dépôt",
+      "bons nominatifs",
+      "article 171 sexies",
+      "article 377",
+      "registre spécial",
+      "acquéreur",
+      "établissements de crédit",
+      "récépissé"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
@@ -8201,7 +8219,8 @@
     "chapitre": "6",
     "keywords": [
       "droit de communication",
-      "contrôle des changes"
+      "contrôle des changes",
+      "administration fiscale"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
