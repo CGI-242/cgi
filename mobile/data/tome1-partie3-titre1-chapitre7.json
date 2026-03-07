@@ -42,22 +42,22 @@
         "• le chef de la structure chargée de la recherche au sein de la direction départementale des impôts et des domaines ;",
         "• le contribuable ;",
         "• le conseil du contribuable choisi parmi les conseils fiscaux agréés CEMAC ou les membres de l'organisation professionnelle ou patronale à laquelle le contribuable concerné est adhérent.",
-        "2) En matière d'évaluation de la valeur des propriétés bâties ou non bâties, la commission est composée comme suit :",
+        "2) En matière d'évaluation de la valeur des propriétés bâties et non bâties, la commission est composée comme suit :",
         "• Président de la commission : le directeur départemental des impôts et des domaines.",
         "• Vice-président : représentant du Maire de la ville.",
         "• Secrétaire : le chef de division de la centralisation auprès du directeur départemental des impôts et des domaines.",
-        "• Rapporteur : l'Inspecteur divisionnaire de la conservation foncière en charge du dossier.",
+        "• Rapporteur : l'inspecteur divisionnaire de la conservation foncière en charge du dossier.",
         "• Membres :",
         "• les inspecteurs divisionnaires de la conservation foncière ;",
-        "• l'Inspecteur divisionnaire des contributions directes et indirectes concerné ;",
+        "• l'inspecteur divisionnaire des contributions directes et indirectes concerné ;",
         "• le Président de la chambre départementale des notaires ;",
         "• le responsable du service départemental en charge de l'urbanisme.",
-        "3) Selon les cas, le président de la commission des Impôts peut faire appel à tout sachant.",
+        "3) Selon les cas, le président de la commission des impôts peut faire appel à tout sachant.",
         "4) Les membres de la commission sont soumis aux obligations du secret professionnel prévues à l'article 404 ci-après."
       ],
       "mots_cles": [
         "composition",
-        "commission",
+        "commission des impôts",
         "directeur départemental",
         "chambre de commerce",
         "syndicat patronal",
@@ -67,7 +67,13 @@
         "conservation foncière",
         "notaires",
         "urbanisme",
-        "secret professionnel"
+        "secret professionnel",
+        "inspecteur divisionnaire",
+        "contribuable",
+        "mandataire",
+        "article 404",
+        "impôt global forfaitaire",
+        "contributions foncières"
       ],
       "statut": "en vigueur"
     },
@@ -87,7 +93,10 @@
         "majorité simple",
         "convocation",
         "sept jours",
-        "mandataire"
+        "mandataire",
+        "délibération",
+        "bases d'imposition",
+        "voix prépondérante"
       ],
       "statut": "en vigueur"
     },
@@ -102,7 +111,9 @@
         "avis",
         "commission des impôts",
         "droit de réclamation",
-        "articles 423"
+        "articles 423",
+        "impôt liquidé",
+        "satisfaction du contribuable"
       ],
       "statut": "en vigueur"
     }
