@@ -7714,11 +7714,18 @@
       "droit d'enquête",
       "facturation",
       "TCA",
+      "centimes additionnels",
+      "droits d'accises",
       "contrôleur",
+      "comptabilité matière",
+      "locaux professionnels",
       "procès-verbal",
       "audition",
+      "avis d'enquête",
+      "intervention inopinée",
       "vérification de comptabilité",
-      "L.F. 2026"
+      "contrôle sur pièces",
+      "contrôle ponctuel"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
@@ -7731,7 +7738,12 @@
     "keywords": [
       "redressements",
       "notification",
-      "interruption de prescription"
+      "interruption de prescription",
+      "vérification de comptabilité",
+      "vérification approfondie",
+      "revenu global",
+      "délai de réponse",
+      "article 390 bis A"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
@@ -7745,8 +7757,17 @@
       "contrôle ponctuel",
       "notification",
       "délai de 30 jours",
-      "documents comptables",
-      "paiement mensuel"
+      "acceptation",
+      "observations",
+      "crédit de taxe",
+      "pénalités",
+      "paiement mensuel",
+      "factures de vente",
+      "bons de commande",
+      "livres de paie",
+      "livre journal",
+      "grand livre",
+      "documents comptables"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
@@ -7759,7 +7780,8 @@
     "keywords": [
       "contrôle ponctuel",
       "durée",
-      "quinze jours ouvrables"
+      "quinze jours ouvrables",
+      "délai maximum"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
@@ -7774,27 +7796,35 @@
       "durée",
       "trois mois",
       "100.000.000 FCFA",
-      "revenu global"
+      "chiffre d'affaires",
+      "procès-verbal",
+      "revenu global",
+      "nullité de l'imposition",
+      "un an",
+      "droit de communication",
+      "groupe de sociétés"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
   {
     "numero": "390",
     "titre": "Droit de vérification des documents comptables et extra-comptables",
-    "contenu": "Le droit de vérification s'étend à tous les documents comptables ou extra-comptables ou autres détenus par le contribuable ou qui ne peut exciper du fait que leur tenue ou leur production n'est pas exigée par le Code de commerce ou la législation fiscale.",
+    "contenu": "Le droit de vérification s'étend à tous les documents comptables ou extra-comptables ou autres détenus par le contribuable qui ne peut exciper du fait que leur tenue ou leur production n'est pas exigée par le Code de commerce ou la législation fiscale.",
     "tome": "1",
     "chapitre": "5",
     "keywords": [
       "droit de vérification",
       "documents comptables",
-      "documents extra-comptables"
+      "documents extra-comptables",
+      "Code de commerce",
+      "législation fiscale"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
   {
     "numero": "390 bis A",
     "titre": "Délai de réponse du contribuable à la notification de redressement",
-    "contenu": "(L.F.2025, L.F.2026) L'Administration fiscale fait connaître au contribuable la nature et les motifs du redressement envisagé. Elle invite en même temps l'intéressé à faire parvenir son acceptation ou ses observations dans un délai de trente (30) jours ouvrables à compter de la réception de cette notification.\nSi le redevable donne son accord dans le délai prescrit ou si les observations présentées dans ce délai sont reconnues fondées, l'administration fiscale procède à l'établissement d'un rôle ou à l'émission d'un avis de mise en recouvrement sur la base acceptée par l'intéressé.\nÀ défaut d'accord après la réponse du contribuable dans le délai prescrit, l'administration fiscale fixe la base de l'imposition et calcule le montant de l'impôt exigible, sous réserve du droit de réclamation du redevable après établissement du rôle ou l'émission d'un avertissement.\n(L.F. 2026 - modifié) La fixation de la base de l'imposition et le calcul du montant de l'impôt exigible se font dans un délai maximum de soixante (60) jours ouvrables, à compter de la date de réception des observations du contribuable, sous peine de nullité de la partie contestée des impositions, tout en mettant en recouvrement la partie acceptée.\nEn cas de production des documents complémentaires ou de demande de séance de travail par le contribuable avant la confirmation de redressements, celui-ci est tenu de solliciter par écrit la suspension de l'envoi de la lettre de confirmation des redressements.\nDans ces cas, le délai cesse de courir et un nouveau délai de soixante jours ouvrables est décompté à compter de la date de réception des documents ou de la tenue de la dernière séance de travail.\nÀ défaut de réponse du contribuable dans le délai prescrit, lequel contribuable, soit a reçu la notification des redressements, soit s'est opposé à recevoir la notification des redressements par acte d'huissier de justice, l'administration fiscale fixe la base de l'imposition, calcule le montant de l'impôt exigible, et y ajoute le double des frais d'huissier de justice à titre d'amende. Dans ce cas, le contribuable qui perd le droit de réclamation devant l'administration fiscale est susceptible de poursuites judiciaires 15 jours après l'établissement du rôle ou l'émission d'un avertissement, sans préjudice de toute action de poursuite administrative prévue par les articles 485 et suivants du CGI, tome 1.",
+    "contenu": "(L.F.2025) L'administration fait connaître au contribuable la nature et les motifs du redressement envisagé. Elle invite en même temps l'intéressé à faire parvenir son acceptation ou ses observations dans un délai de trente (30) jours ouvrables à compter de la réception de cette notification.\nSi le redevable donne son accord dans le délai prescrit ou si les observations présentées dans ce délai sont reconnues fondées, l'administration procède à l'établissement d'un rôle ou à l'émission d'un avis de mise en recouvrement sur la base acceptée par l'intéressé.\nÀ défaut d'accord après la réponse du contribuable dans le délai prescrit, l'administration fixe la base de l'imposition et calcule le montant de l'impôt exigible, sous réserve du droit de réclamation du redevable après l'établissement du rôle ou l'émission d'un avertissement.\nLa fixation de la base d'imposition et le calcul du montant de l'impôt exigible doivent, sous peine de nullité de la procédure, se faire dans un délai maximum de soixante jours ouvrables à compter de la date de réception des observations du contribuable.\nEn cas de production des documents complémentaires ou de demande de séance de travail par le contribuable avant la confirmation de redressements, celui-ci est tenu de solliciter par écrit la suspension de l'envoi de la lettre de confirmation des redressements.\nDans ce cas, le délai cesse de courir et un nouveau délai de soixante jours ouvrables est décompté à compter de la date de réception des documents ou de la tenue de la dernière séance de travail.\nÀ défaut de réponse du contribuable dans le délai prescrit, lequel contribuable, soit a reçu la notification des redressements, soit s'est opposé à recevoir la notification des redressements par acte d'huissier de justice, l'administration fiscale fixe la base de l'imposition, calcule le montant de l'impôt exigible, et y ajoute le double des frais d'huissier de justice à titre d'amende. Dans ce cas, le contribuable qui perd le droit de réclamation devant l'administration fiscale est susceptible de poursuites judiciaires 15 jours après l'établissement du rôle ou l'émission d'un avertissement, sans préjudice de toute action de poursuite administrative prévue par les articles 485 et suivants du CGI, tome 1.",
     "tome": "1",
     "chapitre": "5",
     "keywords": [
@@ -7804,13 +7834,19 @@
       "acceptation",
       "observations",
       "mise en recouvrement",
+      "rôle",
+      "avertissement",
       "base d'imposition",
       "délai de 60 jours",
-      "nullité partie contestée",
+      "nullité de la procédure",
       "suspension",
+      "documents complémentaires",
+      "séance de travail",
+      "confirmation de redressements",
       "huissier de justice",
+      "amende",
       "droit de réclamation",
-      "L.F. 2026"
+      "poursuites judiciaires"
     ],
     "source": "tome1-partie3-titre1-chapitre5.json"
   },
