@@ -73,6 +73,17 @@ export async function sendMessageStream(
       headers["X-Platform"] = "mobile";
       const token = await getAuthToken();
       if (token) headers.Authorization = `Bearer ${token}`;
+    } else {
+      // Web : ajouter le token CSRF (même logique que l'intercepteur axios)
+      try {
+        const csrfToken = document.cookie
+          .split("; ")
+          .find((c) => c.startsWith("csrf-token="))
+          ?.split("=")[1];
+        if (csrfToken) {
+          headers["X-CSRF-Token"] = csrfToken;
+        }
+      } catch {}
     }
 
     let response = await fetch(`${API_URL}/chat/message/stream`, {
@@ -94,6 +105,14 @@ export async function sendMessageStream(
             credentials: "include",
           });
           if (refreshRes.ok) {
+            // Relire le cookie CSRF (peut avoir changé après refresh)
+            try {
+              const newCsrf = document.cookie
+                .split("; ")
+                .find((c) => c.startsWith("csrf-token="))
+                ?.split("=")[1];
+              if (newCsrf) headers["X-CSRF-Token"] = newCsrf;
+            } catch {}
             response = await fetch(`${API_URL}/chat/message/stream`, {
               method: "POST",
               headers,

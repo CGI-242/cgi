@@ -54,7 +54,7 @@
         "La déclaration se fait au moyen d'un imprimé fourni par l'administration fiscale et qui comporte les éléments ci-après :",
         "• la date d'ouverture du compte ;",
         "• l'établissement où le compte est ouvert ;",
-        "• le relevé d'identité bancaire (RIB), l'identifiant international de compte bancaire (IBAN) ;",
+        "• le relevé d'identité bancaire (RIB), l'identifiant international du compte bancaire (IBAN) ;",
         "• le NIU.",
         "Les manquements aux dispositions du premier alinéa exposent le contribuable à la non-déduction des charges payées sur un compte non déclaré au fisc ou à une amende de 3.000.000 FCFA pour les entreprises exonérées de l'impôt sur le revenu."
       ],
@@ -62,12 +62,16 @@
         "déclaration",
         "compte bancaire",
         "compte commercial",
+        "banque",
+        "établissement de crédit",
+        "quinze jours",
+        "clôture",
+        "service d'assiette",
         "RIB",
         "IBAN",
         "NIU",
-        "amende 3.000.000 FCFA",
-        "clôture",
-        "service d'assiette"
+        "non-déduction des charges",
+        "amende 3.000.000 FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Droit de communication auprès des entreprises privées"
@@ -77,15 +81,18 @@
       "titre": "Communication des rapports de contrôle interne et externe",
       "texte": [
         "Sous peine de sanction prévue à l'article 399 du présent Code, toute personne physique ou morale régulièrement commise à l'audit des comptes ou à la revue fiscale d'une entité publique ou privée, est tenue, sur requête de l'administration fiscale, de communiquer le rapport de ses travaux à l'administration fiscale, dans le délai de huit jours suivant la réception de la requête.",
-        "Les contribuables dont le chiffre d'affaires dépasse le seuil de 100.000.000 FCFA, soumis à la vérification de comptabilité, sont tenus, dès le premier jour de la vérification de comptabilité, de remettre aux Inspecteurs vérificateurs les rapports des contrôles internes et externes effectués sur les exercices soumis à la vérification.",
-        "En cours de vérification de comptabilité, les Inspecteurs vérificateurs peuvent requérir tout rapport de contrôle interne et externe des périodes non couvertes par la vérification de comptabilité."
+        "Les contribuables dont le chiffre d'affaires dépasse le seuil de 100.000.000 FCFA, soumis à la vérification de comptabilité, sont tenus, dès le premier jour de la vérification de comptabilité, de remettre aux inspecteurs vérificateurs les rapports des contrôles internes et externes effectués sur les exercices soumis à la vérification.",
+        "En cours de vérification de comptabilité, les inspecteurs vérificateurs peuvent requérir tout rapport de contrôle interne et externe des périodes non couvertes par la vérification de comptabilité."
       ],
       "mots_cles": [
         "audit des comptes",
         "revue fiscale",
         "rapports de contrôle",
+        "article 399",
+        "sanction",
         "délai 8 jours",
         "100.000.000 FCFA",
+        "inspecteurs vérificateurs",
         "contrôle interne",
         "contrôle externe",
         "vérification de comptabilité"
@@ -97,13 +104,16 @@
       "article": "Art. 392",
       "titre": "Obligations des institutions et organismes exonérés d'impôt",
       "texte": [
-        "Les institutions et organismes exonérés d'impôt sont tenus de fournir, à toute réquisition des agents de l'administration fiscale, tous livres de comptabilité et pièces annexes, ainsi que toutes justifications utiles tendant à prouver qu'ils fonctionnent conformément aux dispositions légales qui les régissent."
+        "Les institutions et organismes exonérés d'impôts sont tenus de fournir, à toute réquisition des agents de l'administration fiscale, tous leurs livres de comptabilité et pièces annexes, ainsi que toutes justifications utiles tendant à prouver qu'ils fonctionnent conformément aux dispositions légales qui les régissent."
       ],
       "mots_cles": [
         "institutions exonérées",
         "organismes exonérés",
         "obligation de communication",
-        "livres comptables"
+        "livres de comptabilité",
+        "pièces annexes",
+        "justifications",
+        "dispositions légales"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Droit de communication auprès des entreprises privées"
@@ -118,7 +128,10 @@
         "secret professionnel",
         "administrations publiques",
         "entreprises concédées",
-        "communication des documents"
+        "autorité administrative",
+        "communication des documents",
+        "documents de service",
+        "règlements existants"
       ],
       "statut": "en vigueur",
       "section": "Section 2 - Droit de communication auprès des administrations publiques"

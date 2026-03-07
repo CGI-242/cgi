@@ -8055,34 +8055,41 @@
   {
     "numero": "391 bis",
     "titre": "Obligation de déclaration des comptes bancaires",
-    "contenu": "Toute entreprise ou personne assimilée est tenue de déclarer auprès du service d'assiette de son ressort, l'ouverture de tout compte commercial auprès d'une banque ou de tout autre établissement de crédit, dans les quinze jours qui suivent ladite ouverture.\nLa clôture des comptes est déclarée dans le même délai.\nLes personnes visées à l'alinéa 1 ci-dessus sont tenues, en outre, de déclarer dans les 20 premiers jours du mois de janvier, tous les comptes commerciaux détenus par elles.\nLa déclaration se fait au moyen d'un imprimé fourni par l'administration fiscale et qui comporte les éléments ci-après :\n• la date d'ouverture du compte ;\n• l'établissement où le compte est ouvert ;\n• le relevé d'identité bancaire (RIB), l'identifiant international de compte bancaire (IBAN) ;\n• le NIU.\nLes manquements aux dispositions du premier alinéa exposent le contribuable à la non-déduction des charges payées sur un compte non déclaré au fisc ou à une amende de 3.000.000 FCFA pour les entreprises exonérées de l'impôt sur le revenu.",
+    "contenu": "Toute entreprise ou personne assimilée est tenue de déclarer auprès du service d'assiette de son ressort, l'ouverture de tout compte commercial auprès d'une banque ou de tout autre établissement de crédit, dans les quinze jours qui suivent ladite ouverture.\nLa clôture des comptes est déclarée dans le même délai.\nLes personnes visées à l'alinéa 1 ci-dessus sont tenues, en outre, de déclarer dans les 20 premiers jours du mois de janvier, tous les comptes commerciaux détenus par elles.\nLa déclaration se fait au moyen d'un imprimé fourni par l'administration fiscale et qui comporte les éléments ci-après :\n• la date d'ouverture du compte ;\n• l'établissement où le compte est ouvert ;\n• le relevé d'identité bancaire (RIB), l'identifiant international du compte bancaire (IBAN) ;\n• le NIU.\nLes manquements aux dispositions du premier alinéa exposent le contribuable à la non-déduction des charges payées sur un compte non déclaré au fisc ou à une amende de 3.000.000 FCFA pour les entreprises exonérées de l'impôt sur le revenu.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
       "déclaration",
       "compte bancaire",
       "compte commercial",
+      "banque",
+      "établissement de crédit",
+      "quinze jours",
+      "clôture",
+      "service d'assiette",
       "RIB",
       "IBAN",
       "NIU",
-      "amende 3.000.000 FCFA",
-      "clôture",
-      "service d'assiette"
+      "non-déduction des charges",
+      "amende 3.000.000 FCFA"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
   {
     "numero": "391 ter",
     "titre": "Communication des rapports de contrôle interne et externe",
-    "contenu": "Sous peine de sanction prévue à l'article 399 du présent Code, toute personne physique ou morale régulièrement commise à l'audit des comptes ou à la revue fiscale d'une entité publique ou privée, est tenue, sur requête de l'administration fiscale, de communiquer le rapport de ses travaux à l'administration fiscale, dans le délai de huit jours suivant la réception de la requête.\nLes contribuables dont le chiffre d'affaires dépasse le seuil de 100.000.000 FCFA, soumis à la vérification de comptabilité, sont tenus, dès le premier jour de la vérification de comptabilité, de remettre aux Inspecteurs vérificateurs les rapports des contrôles internes et externes effectués sur les exercices soumis à la vérification.\nEn cours de vérification de comptabilité, les Inspecteurs vérificateurs peuvent requérir tout rapport de contrôle interne et externe des périodes non couvertes par la vérification de comptabilité.",
+    "contenu": "Sous peine de sanction prévue à l'article 399 du présent Code, toute personne physique ou morale régulièrement commise à l'audit des comptes ou à la revue fiscale d'une entité publique ou privée, est tenue, sur requête de l'administration fiscale, de communiquer le rapport de ses travaux à l'administration fiscale, dans le délai de huit jours suivant la réception de la requête.\nLes contribuables dont le chiffre d'affaires dépasse le seuil de 100.000.000 FCFA, soumis à la vérification de comptabilité, sont tenus, dès le premier jour de la vérification de comptabilité, de remettre aux inspecteurs vérificateurs les rapports des contrôles internes et externes effectués sur les exercices soumis à la vérification.\nEn cours de vérification de comptabilité, les inspecteurs vérificateurs peuvent requérir tout rapport de contrôle interne et externe des périodes non couvertes par la vérification de comptabilité.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
       "audit des comptes",
       "revue fiscale",
       "rapports de contrôle",
+      "article 399",
+      "sanction",
       "délai 8 jours",
       "100.000.000 FCFA",
+      "inspecteurs vérificateurs",
       "contrôle interne",
       "contrôle externe",
       "vérification de comptabilité"
@@ -8092,14 +8099,17 @@
   {
     "numero": "392",
     "titre": "Obligations des institutions et organismes exonérés d'impôt",
-    "contenu": "Les institutions et organismes exonérés d'impôt sont tenus de fournir, à toute réquisition des agents de l'administration fiscale, tous livres de comptabilité et pièces annexes, ainsi que toutes justifications utiles tendant à prouver qu'ils fonctionnent conformément aux dispositions légales qui les régissent.",
+    "contenu": "Les institutions et organismes exonérés d'impôts sont tenus de fournir, à toute réquisition des agents de l'administration fiscale, tous leurs livres de comptabilité et pièces annexes, ainsi que toutes justifications utiles tendant à prouver qu'ils fonctionnent conformément aux dispositions légales qui les régissent.",
     "tome": "1",
     "chapitre": "6",
     "keywords": [
       "institutions exonérées",
       "organismes exonérés",
       "obligation de communication",
-      "livres comptables"
+      "livres de comptabilité",
+      "pièces annexes",
+      "justifications",
+      "dispositions légales"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
@@ -8113,7 +8123,10 @@
       "secret professionnel",
       "administrations publiques",
       "entreprises concédées",
-      "communication des documents"
+      "autorité administrative",
+      "communication des documents",
+      "documents de service",
+      "règlements existants"
     ],
     "source": "tome1-partie3-titre1-chapitre6.json"
   },
