@@ -17,7 +17,7 @@
       "article": "Art. 404",
       "titre": "Obligation du secret professionnel",
       "texte": [
-        "Est tenu au secret professionnel dans les termes de l'article 378 du Code pénal, et passible des peines prévues audit article, toute personne appelée, à l'occasion de ses fonctions ou attributions, à intervenir dans l'établissement, la perception ou le contentieux des impôts et taxes visés aux articles 1 à 276, 321 à 340 et 360 à 367 du présent Code.",
+        "Est tenue au secret professionnel dans les termes de l'article 378 du Code pénal, et passible des peines prévues audit article, toute personne appelée, à l'occasion de ses fonctions ou attributions, à intervenir dans l'établissement, la perception ou le contentieux des impôts et taxes visés aux articles 1 à 276, 321 à 340 et 360 à 367 du présent Code.",
         "Toutefois, lorsqu'une plainte régulière a été portée par l'administration contre le redevable et qu'une information a été ouverte, l'inspecteur divisionnaire des contributions directes et indirectes ne peut opposer le secret professionnel au juge d'instruction qui l'interroge sur les faits faisant l'objet de la plainte.",
         "Les dispositions du présent article ne s'opposent pas à l'échange de renseignements avec les agents de la Direction de l'enregistrement, des domaines et du timbre, les agents de la Direction des mines en ce qui concerne la situation des exploitants miniers, et les administrations financières des États de la Communauté, ainsi que des États ayant avec le Congo une convention d'assistance réciproque en matière d'impôt."
       ],
@@ -32,7 +32,11 @@
         "plainte",
         "échange de renseignements",
         "Direction des mines",
-        "convention d'assistance"
+        "convention d'assistance",
+        "inspecteur divisionnaire",
+        "Direction de l'enregistrement",
+        "exploitants miniers",
+        "Communauté"
       ],
       "statut": "en vigueur"
     },
@@ -40,12 +44,14 @@
       "article": "Art. 405",
       "titre": "Délivrance des extraits des rôles des impôts et taxes",
       "texte": [
-        "Les contribuables ne sont autorisés à se faire délivrer des extraits des rôles des impôts et taxes visés par le présent Code suivant les dispositions législatives ou réglementaires applicables aux Contributions Directes et Indirectes, qu'en ce qui concerne leur propre cotisation."
+        "Les contribuables ne sont autorisés à se faire délivrer des extraits des rôles des impôts et taxes visés par le présent Code suivant des dispositions législatives ou réglementaires applicables aux Contributions Directes et Indirectes, qu'en ce qui concerne leur propre cotisation."
       ],
       "mots_cles": [
         "extraits des rôles",
         "cotisation",
-        "contribuable"
+        "contribuable",
+        "Contributions Directes et Indirectes",
+        "dispositions législatives"
       ],
       "statut": "en vigueur"
     },
@@ -54,13 +60,15 @@
       "titre": "Transmission des communications entre agents et contribuables",
       "texte": [
         "Tous avis et communications échangés entre les agents de l'administration ou adressés par eux aux contribuables et concernant les impôts et taxes visés au présent Code, doivent être transmis sous enveloppe fermée.",
-        "Les franchises postales et les taxes spéciales d'affranchissements reconnues nécessaires sont concédées et fixées par la loi."
+        "Les franchises postales et les taux spéciaux d'affranchissements reconnus nécessaires sont concédés et fixés par la loi."
       ],
       "mots_cles": [
         "avis",
         "communications",
         "enveloppe fermée",
-        "franchises postales"
+        "franchises postales",
+        "taux spéciaux d'affranchissements",
+        "confidentialité"
       ],
       "statut": "en vigueur"
     }
