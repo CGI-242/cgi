@@ -7,7 +7,6 @@
 
 export interface PatenteInput {
   chiffreAffaires: number | null;
-  regime: "reel" | "forfait" | "tpe" | "pe";
   isEntrepriseNouvelle: boolean;
   isStandBy: boolean;
   isPetroliere: boolean;
@@ -24,7 +23,6 @@ export interface PatenteTrancheDetail {
 
 export interface PatenteResult {
   chiffreAffaires: number;
-  regime: string;
   tranches: PatenteTrancheDetail[];
   patenteBrute: number;
   reductionStandBy: number;
@@ -87,16 +85,6 @@ function formatShort(montant: number): string {
   return montant.toLocaleString("fr-FR");
 }
 
-function getRegimeLabel(regime: string): string {
-  const labels: Record<string, string> = {
-    reel: "Regime du reel",
-    forfait: "Regime forfaitaire",
-    tpe: "Tres petites entreprises",
-    pe: "Petites entreprises",
-  };
-  return labels[regime] || regime;
-}
-
 function arrondir(montant: number): number {
   return Math.round(montant / 10) * 10;
 }
@@ -127,7 +115,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
 
     return {
       chiffreAffaires: ca,
-      regime: getRegimeLabel(input.regime),
+
       tranches: [],
       patenteBrute: 0,
       reductionStandBy: 0,
@@ -168,7 +156,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
 
     return {
       chiffreAffaires: 0,
-      regime: getRegimeLabel(input.regime),
+
       tranches: [],
       patenteBrute: input.dernierePatente,
       reductionStandBy: input.dernierePatente - montantStandBy,
@@ -251,7 +239,6 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
 
   return {
     chiffreAffaires: ca,
-    regime: getRegimeLabel(input.regime),
     tranches,
     patenteBrute,
     reductionStandBy: 0,

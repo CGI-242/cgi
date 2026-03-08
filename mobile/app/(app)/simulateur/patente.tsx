@@ -5,7 +5,6 @@ import { calculerPatente, type PatenteInput } from "@/lib/services/patente.servi
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
-import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -17,31 +16,22 @@ export default function PatenteScreen() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const [chiffreAffaires, setChiffreAffaires] = useState("");
-  const [regime, setRegime] = useState<PatenteInput["regime"]>("reel");
   const [isStandBy, setIsStandBy] = useState(false);
   const [isPetroliere, setIsPetroliere] = useState(false);
   const [dernierePatente, setDernierePatente] = useState("");
   const [isNouvelle, setIsNouvelle] = useState(false);
   const [nombreEntites, setNombreEntites] = useState(1);
 
-  const REGIMES: { value: PatenteInput["regime"]; label: string }[] = [
-    { value: "reel", label: t("simulateur.patente.real") },
-    { value: "forfait", label: t("simulateur.patente.flat") },
-    { value: "tpe", label: t("simulateur.patente.tpe") },
-    { value: "pe", label: t("simulateur.patente.pe") },
-  ];
-
   const result = useMemo(() => {
     return calculerPatente({
       chiffreAffaires: parseFloat(chiffreAffaires.replace(/\s/g, "")) || 0,
-      regime,
       isEntrepriseNouvelle: isNouvelle,
       isStandBy,
       isPetroliere,
       dernierePatente: parseFloat(dernierePatente.replace(/\s/g, "")) || 0,
       nombreEntitesFiscales: nombreEntites,
     });
-  }, [chiffreAffaires, regime, isStandBy, isPetroliere, dernierePatente, isNouvelle, nombreEntites]);
+  }, [chiffreAffaires, isStandBy, isPetroliere, dernierePatente, isNouvelle, nombreEntites]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -54,9 +44,6 @@ export default function PatenteScreen() {
           <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
             <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.description")}</Text>
           </View>
-
-          <Text style={[styles.fieldLabel, { color: colors.text }]}>{t("simulateur.patente.taxRegime")}</Text>
-          <OptionButtonGroup options={REGIMES} selected={regime} onChange={setRegime} fontSize={11} />
 
           <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
             <View style={styles.flex1}>
