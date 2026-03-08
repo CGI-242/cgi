@@ -160,7 +160,7 @@ export const tfnc4Node: SommaireNode = {
     {
       id: "tfnc4-accises-parent", label: "4.3. Droits d'accises et taxes assimilées",
       children: [
-        buildChapitreTree(aTfnc4Accises, tfnc4AccisesData.meta.chapitre_titre, "tfnc4-accises"),
+        { id: "tfnc4-accises", label: tfnc4AccisesData.meta.chapitre_titre, articles: aTfnc4Accises },
         { id: "tfnc4-boissons", label: tfnc4BoissonsData.meta.chapitre_titre, articles: aTfnc4Boissons },
       ],
     },
