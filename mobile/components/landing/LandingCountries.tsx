@@ -5,36 +5,38 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
 
-interface Country {
+type Status = "available" | "published";
+
+interface CodeEntry {
+  id: string;
   name: string;
-  code: string;
   cc: string;
-  available: boolean;
+  status: Status;
   region: string;
+  codeLabel: string;
+  badge: string;
 }
 
-const countries: Country[] = [
-  { name: "Congo-Brazzaville", code: "242", cc: "CG", available: true, region: "CEMAC" },
-  { name: "R.D. Congo", code: "243", cc: "CD", available: false, region: "OHADA" },
-  { name: "Cameroun", code: "237", cc: "CM", available: false, region: "CEMAC" },
-  { name: "Gabon", code: "241", cc: "GA", available: false, region: "CEMAC" },
-  { name: "Tchad", code: "235", cc: "TD", available: false, region: "CEMAC" },
-  { name: "Centrafrique", code: "236", cc: "CF", available: false, region: "CEMAC" },
-  { name: "Guinée Éq.", code: "240", cc: "GQ", available: false, region: "CEMAC" },
-  { name: "Sénégal", code: "221", cc: "SN", available: false, region: "UEMOA" },
-  { name: "Côte d'Ivoire", code: "225", cc: "CI", available: false, region: "UEMOA" },
-  { name: "Mali", code: "223", cc: "ML", available: false, region: "UEMOA" },
-  { name: "Burkina Faso", code: "226", cc: "BF", available: false, region: "UEMOA" },
-  { name: "Bénin", code: "229", cc: "BJ", available: false, region: "UEMOA" },
-  { name: "Togo", code: "228", cc: "TG", available: false, region: "UEMOA" },
-  { name: "Niger", code: "227", cc: "NE", available: false, region: "UEMOA" },
-  { name: "Guinée", code: "224", cc: "GN", available: false, region: "Autre" },
-  { name: "Madagascar", code: "261", cc: "MG", available: false, region: "Autre" },
-  { name: "Mauritanie", code: "222", cc: "MR", available: false, region: "Autre" },
-  { name: "Burundi", code: "257", cc: "BI", available: false, region: "Autre" },
-  { name: "Comores", code: "269", cc: "KM", available: false, region: "Autre" },
-  { name: "Djibouti", code: "253", cc: "DJ", available: false, region: "Autre" },
-  { name: "Rwanda", code: "250", cc: "RW", available: false, region: "Autre" },
+const entries: CodeEntry[] = [
+  // Congo-Brazzaville — codes disponibles et publiés
+  { id: "CG-cgi", name: "Congo-Brazzaville", cc: "CG", status: "available", region: "CEMAC", codeLabel: "CGI 242", badge: "Disponible" },
+  { id: "CG-social", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Code Social", badge: "2025" },
+  { id: "CG-hydro", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Hydrocarbures", badge: "2025" },
+  { id: "CG-douanes", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Code Douanes", badge: "2025" },
+  // CGI 2026 — autres pays
+  { id: "GA-cgi", name: "Gabon", cc: "GA", status: "published", region: "CEMAC", codeLabel: "CGI 241", badge: "CGI 2026" },
+  { id: "CM-cgi", name: "Cameroun", cc: "CM", status: "published", region: "CEMAC", codeLabel: "CGI 237", badge: "CGI 2026" },
+  { id: "TD-cgi", name: "Tchad", cc: "TD", status: "published", region: "CEMAC", codeLabel: "CGI 235", badge: "CGI 2026" },
+  { id: "CF-cgi", name: "Centrafrique", cc: "CF", status: "published", region: "CEMAC", codeLabel: "CGI 236", badge: "CGI 2026" },
+  { id: "CD-cgi", name: "R.D. Congo", cc: "CD", status: "published", region: "OHADA", codeLabel: "CGI 243", badge: "CGI 2026" },
+  { id: "SN-cgi", name: "Sénégal", cc: "SN", status: "published", region: "UEMOA", codeLabel: "CGI 221", badge: "CGI 2026" },
+  { id: "CI-cgi", name: "Côte d'Ivoire", cc: "CI", status: "published", region: "UEMOA", codeLabel: "CGI 225", badge: "CGI 2026" },
+  { id: "ML-cgi", name: "Mali", cc: "ML", status: "published", region: "UEMOA", codeLabel: "CGI 223", badge: "CGI 2026" },
+  { id: "BF-cgi", name: "Burkina Faso", cc: "BF", status: "published", region: "UEMOA", codeLabel: "CGI 226", badge: "CGI 2026" },
+  { id: "BJ-cgi", name: "Bénin", cc: "BJ", status: "published", region: "UEMOA", codeLabel: "CGI 229", badge: "CGI 2026" },
+  { id: "TG-cgi", name: "Togo", cc: "TG", status: "published", region: "UEMOA", codeLabel: "CGI 228", badge: "CGI 2026" },
+  { id: "MG-cgi", name: "Madagascar", cc: "MG", status: "published", region: "Autre", codeLabel: "CGI 261", badge: "CGI 2026" },
+  { id: "MR-cgi", name: "Mauritanie", cc: "MR", status: "published", region: "Autre", codeLabel: "CGI 222", badge: "CGI 2026" },
 ];
 
 const regionColors: Record<string, { bg: string; border: string; text: string }> = {
@@ -59,11 +61,12 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
   const [region, setRegion] = useState("Tous");
   const [query, setQuery] = useState("");
 
-  const filtered = countries.filter((c) => {
+  const filtered = entries.filter((c) => {
     if (region !== "Tous" && c.region !== region) return false;
     if (!query) return true;
+    const q = query.toLowerCase();
     return (
-      c.name.toLowerCase().includes(query.toLowerCase()) || c.code.includes(query)
+      c.name.toLowerCase().includes(q) || c.codeLabel.toLowerCase().includes(q)
     );
   });
 
@@ -183,25 +186,26 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
           justifyContent: "center",
         }}
       >
-        {filtered.map((c, i) => {
+        {filtered.map((c) => {
           const rc = regionColors[c.region] || regionColors.Autre;
-          const Wrapper = c.available ? TouchableOpacity : View;
+          const isAvailable = c.status === "available";
+          const Wrapper = isAvailable ? TouchableOpacity : View;
           return (
             <Wrapper
-              key={c.code}
-              {...(c.available ? { onPress: () => router.push("/cgi242"), activeOpacity: 0.7 } : {})}
+              key={c.id}
+              {...(isAvailable ? { onPress: () => router.push("/cgi242"), activeOpacity: 0.7 } : {})}
               style={{
                 width: isMobile ? "47%" : 185,
                 borderRadius: 16,
                 padding: isMobile ? 16 : 22,
                 alignItems: "center",
-                backgroundColor: c.available
+                backgroundColor: isAvailable
                   ? "rgba(200,160,60,0.03)"
-                  : "rgba(255,255,255,0.012)",
+                  : "rgba(255,255,255,0.015)",
                 borderWidth: 1,
-                borderColor: c.available
+                borderColor: isAvailable
                   ? "rgba(200,160,60,0.15)"
-                  : "rgba(255,255,255,0.04)",
+                  : "rgba(255,255,255,0.06)",
                 opacity: loaded ? 1 : 0,
               }}
             >
@@ -209,21 +213,24 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 style={{
                   fontSize: 38,
                   marginBottom: 8,
-                  opacity: c.available ? 1 : 0.5,
+                  opacity: isAvailable ? 1 : 0.8,
                 }}
               >
                 {toFlag(c.cc)}
               </Text>
               <Text
                 style={{
-                  fontSize: 22,
+                  fontSize: isMobile ? 18 : 22,
                   fontFamily: fonts.extraBold,
                   fontWeight: fontWeights.extraBold,
-                  color: c.available ? GOLD : "#4a4a55",
+                  color: isAvailable ? GOLD : "#8ab4f8",
                   marginBottom: 3,
+                  textAlign: "center",
                 }}
+                numberOfLines={1}
+                adjustsFontSizeToFit
               >
-                CGI {c.code}
+                {c.codeLabel}
               </Text>
               <Text
                 style={{
@@ -231,61 +238,39 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
                   marginBottom: 8,
-                  color: c.available ? "#e8e6e1" : "#6a6a75",
+                  color: isAvailable ? "#e8e6e1" : "#b0b0bb",
                   textAlign: "center",
                 }}
               >
                 {c.name}
               </Text>
-              {c.available ? (
-                <View
+              <View
+                style={{
+                  paddingVertical: 4,
+                  paddingHorizontal: 14,
+                  borderRadius: 100,
+                  backgroundColor: isAvailable
+                    ? "rgba(74,222,128,0.1)"
+                    : "rgba(200,160,60,0.08)",
+                  borderWidth: 1,
+                  borderColor: isAvailable
+                    ? "rgba(74,222,128,0.2)"
+                    : "rgba(200,160,60,0.2)",
+                }}
+              >
+                <Text
                   style={{
-                    paddingVertical: 4,
-                    paddingHorizontal: 14,
-                    borderRadius: 100,
-                    backgroundColor: "rgba(74,222,128,0.1)",
-                    borderWidth: 1,
-                    borderColor: "rgba(74,222,128,0.2)",
+                    fontSize: 12,
+                    fontFamily: fonts.bold,
+                    fontWeight: fontWeights.bold,
+                    textTransform: "uppercase",
+                    letterSpacing: 0.8,
+                    color: isAvailable ? "#4ade80" : GOLD,
                   }}
                 >
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontFamily: fonts.bold,
-                      fontWeight: fontWeights.bold,
-                      textTransform: "uppercase",
-                      letterSpacing: 0.8,
-                      color: "#4ade80",
-                    }}
-                  >
-                    Disponible
-                  </Text>
-                </View>
-              ) : (
-                <View
-                  style={{
-                    paddingVertical: 4,
-                    paddingHorizontal: 14,
-                    borderRadius: 100,
-                    backgroundColor: "rgba(255,255,255,0.03)",
-                    borderWidth: 1,
-                    borderColor: "rgba(255,255,255,0.04)",
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontFamily: fonts.semiBold,
-                      fontWeight: fontWeights.semiBold,
-                      textTransform: "uppercase",
-                      letterSpacing: 0.8,
-                      color: "#3a3a45",
-                    }}
-                  >
-                    Bientôt
-                  </Text>
-                </View>
-              )}
+                  {c.badge}
+                </Text>
+              </View>
               <Text
                 style={{
                   fontSize: 12,
