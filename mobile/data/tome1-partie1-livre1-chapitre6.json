@@ -287,7 +287,7 @@
         "EPA"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+      "section": "Section 2 : Commissions, courtages, ristournes, honoraires et droits d'auteurs, etc."
     },
     {
       "article": "Art. 183 bis",
@@ -305,7 +305,7 @@
         "déclaration"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+      "section": "Section 2 : Commissions, courtages, ristournes, honoraires et droits d'auteurs, etc."
     },
     {
       "article": "Art. 183 ter",
@@ -324,7 +324,7 @@
         "amende 500.000 F"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Obligations des personnes versant commissions, courtages, ristournes, honoraires et droits d'auteurs"
+      "section": "Section 2 : Commissions, courtages, ristournes, honoraires et droits d'auteurs, etc."
     },
     {
       "article": "Art. 184",
@@ -359,7 +359,7 @@
         "articles 176 et suivants"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Renseignements à fournir par les bénéficiaires de revenus de source étrangère"
+      "section": "Section 4 : Bénéficiaires de traitements et salaires de source étrangère"
     },
     {
       "article": "Art. 185 bis",
@@ -387,7 +387,7 @@
         "Instruction 475/DGI/DFP"
       ],
       "statut": "en vigueur",
-      "section": "Section 5 : Dispositions particulières applicables aux sociétés visées aux articles 92 et suivants"
+      "section": "Section 5 : Dispositions applicables aux sociétés visées à l'article 126 ter"
     },
     {
       "article": "Art. 185 ter-A",
@@ -428,7 +428,7 @@
         "OCAM"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 ter-B",
@@ -444,7 +444,7 @@
         "facturables"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 ter-C",
@@ -483,7 +483,7 @@
         "emprunts"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 ter-D",
@@ -506,7 +506,7 @@
         "Trésor Public"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 ter-E",
@@ -527,7 +527,7 @@
         "Trésor Public"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 ter-F",
@@ -542,7 +542,7 @@
         "taxe spéciale sur les sociétés"
       ],
       "statut": "en vigueur",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 quater",
@@ -552,7 +552,7 @@
       ],
       "mots_cles": [],
       "statut": "abrogé",
-      "section": "Section 6 : Dispositions particulières applicables aux personnes physiques ou morales n'ayant ni domicile, ni résidence fiscale au Congo"
+      "section": "Section 6 : Personnes n'ayant ni domicile, ni résidence fiscale au Congo"
     },
     {
       "article": "Art. 185 quater-A",
@@ -641,7 +641,7 @@
         "acompte d'impôt"
       ],
       "statut": "en vigueur",
-      "section": "Section 8 : Paiements effectués par les entrepreneurs adjudicataires des marchés de BTP au profit des sous-traitants desdits marchés"
+      "section": "Section 8 : Adjudicataires des marchés de BTP"
     },
     {
       "article": "Art. 185 sexies",
@@ -658,7 +658,7 @@
         "sociétés étrangères"
       ],
       "statut": "en vigueur",
-      "section": "Section 9 : Réassurance"
+      "section": "Section 9 : Exonération des primes cédées en réassurances"
     }
   ]
 }
