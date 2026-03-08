@@ -16,53 +16,57 @@
   "articles": [
     {
       "article": "Art. 423",
-      "titre": "Forme de la réclamation",
+      "titre": "Demande écrite formant requête introductive d'instance",
       "texte": [
-        "La réclamation doit être adressée au Directeur Général des Impôts et des Domaines. Elle peut être présentée par le contribuable lui-même, ou par son mandataire dûment habilité.",
-        "Elle doit être rédigée sur papier libre, datée et signée par son auteur."
+        "Tout contribuable qui se croit imposé à tort ou surtaxé peut présenter une demande écrite formant requête introductive d'instance."
       ],
       "mots_cles": [
-        "réclamation",
-        "forme",
-        "Directeur Général",
-        "mandataire",
-        "papier libre",
-        "signature"
+        "contribuable",
+        "imposé à tort",
+        "surtaxé",
+        "demande écrite",
+        "requête introductive d'instance"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 424",
       "titre": "Adresse et opposabilité de la réclamation",
       "texte": [
-        "La réclamation doit être adressée au service des impôts dont relève le lieu d'imposition.",
-        "Elle est opposable à l'administration fiscale dès sa réception."
+        "La réclamation doit être adressée à la Direction Générale des Impôts et des Domaines. Seule la date de réception par cette Direction est opposable tant au contribuable qu'à l'Administration.",
+        "Une copie de la réclamation doit être déposée par le contribuable auprès du ministère de tutelle, lorsque les montants des droits contestés sont supérieurs à 1.000.000.000 FCFA."
       ],
       "mots_cles": [
         "réclamation",
-        "adresse",
+        "Direction Générale des Impôts et des Domaines",
         "opposabilité",
-        "service des impôts",
-        "lieu d'imposition"
+        "date de réception",
+        "ministère de tutelle",
+        "1.000.000.000 FCFA",
+        "droits contestés",
+        "contribuable",
+        "copie de la réclamation"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 426",
       "titre": "Réclamation à la suite d'erreurs d'expédition",
       "texte": [
-        "Lorsque, par suite d'erreurs d'expédition, un contribuable a acquitté un impôt supérieur à celui qui résulte du rôle, il peut en demander le remboursement dans les formes prévues aux articles précédents."
+        "Lorsqu'à la suite d'erreurs d'expédition de nouveaux avertissements ont été adressés aux contribuables, ceux-ci sont admis, sans préjudice des délais ordinaires, à réclamer dans les trois mois de la remise des nouveaux avertissements contre les cotisations qui en font l'objet."
       ],
       "mots_cles": [
-        "réclamation",
         "erreurs d'expédition",
-        "remboursement",
-        "rôle"
+        "avertissements",
+        "contribuables",
+        "délais ordinaires",
+        "trois mois",
+        "cotisations"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 427",
@@ -73,13 +77,14 @@
       ],
       "mots_cles": [
         "réclamation",
-        "mandat",
+        "autrui",
+        "mandat régulier",
         "mandataire",
         "timbre",
         "enregistrement"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 428",
@@ -89,14 +94,17 @@
       ],
       "mots_cles": [
         "requêtes",
+        "cotes",
         "rôle numérique",
         "village",
         "rôle récapitulatif",
         "Comité Exécutif Communal",
-        "circonscription administrative"
+        "fonctionnaire",
+        "circonscription administrative",
+        "dérogation"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 429",
@@ -112,11 +120,12 @@
         "avertissement",
         "avis de mise en recouvrement",
         "article du rôle",
+        "exposé des moyens",
         "Commune",
         "District"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 429 bis",
@@ -139,12 +148,14 @@
         "notification des redressements",
         "confirmation des bases",
         "avis de mise en recouvrement",
-        "frais de traitement",
         "garanties",
-        "recours hiérarchique"
+        "bases d'imposition",
+        "recours hiérarchique",
+        "procès-verbal",
+        "lettre de confirmation rectificative"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 430",
@@ -165,7 +176,7 @@
         "agents taxateurs"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 430 bis",
@@ -183,10 +194,11 @@
         "50.000.000 FCFA",
         "directeur général",
         "1.000.000.000 FCFA",
-        "Ministre des finances"
+        "Ministre des finances",
+        "droits et pénalités"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 431",
@@ -200,14 +212,16 @@
         "requête contentieuse",
         "forfait",
         "BICA",
+        "bases d'imposition",
         "contribution foncière",
         "propriétés bâties",
         "propriétés non bâties",
         "commission",
+        "réclamation",
         "articles 400"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 432",
@@ -218,11 +232,12 @@
       "mots_cles": [
         "autorité compétente",
         "délai six mois",
-        "réception",
+        "date de réception",
+        "demande",
         "DGID"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 433",
@@ -239,7 +254,7 @@
         "taxation"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 434",
@@ -251,15 +266,19 @@
       "mots_cles": [
         "décision",
         "contribuable",
+        "requérant",
         "délai trois mois",
         "notification",
+        "litige",
         "Tribunal compétent",
         "loi n°22-92",
         "pouvoir judiciaire",
-        "délai six mois"
+        "délai six mois",
+        "nulle et de nul effet",
+        "article 423"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demandes en décharge ou réduction"
+      "section": "Section 1 - Demandes en décharge ou réduction"
     },
     {
       "article": "Art. 435",
@@ -278,7 +297,7 @@
         "domicile inconnu"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Demandes présentées par le service du recouvrement"
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
     },
     {
       "article": "Art. 436",
@@ -291,10 +310,11 @@
         "double exemplaire",
         "DGID",
         "délai trois mois",
-        "mise en recouvrement"
+        "mise en recouvrement",
+        "rôle"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Demandes présentées par le service du recouvrement"
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
     },
     {
       "article": "Art. 437",
@@ -311,7 +331,7 @@
         "Cour d'Appel"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Demandes présentées par le service du recouvrement"
+      "section": "Section 2 - Demandes présentées par le service du recouvrement"
     },
     {
       "article": "Art. 438",
@@ -325,7 +345,7 @@
         "dégrèvement d'office"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Dégrèvements d'office"
+      "section": "Section 3 - Dégrèvements d'office"
     },
     {
       "article": "Art. 439",
@@ -345,7 +365,7 @@
         "région"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Dégrèvements d'office"
+      "section": "Section 3 - Dégrèvements d'office"
     },
     {
       "article": "Art. 440",
@@ -361,7 +381,7 @@
         "agent du recouvrement"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : Dégrèvements d'office"
+      "section": "Section 3 - Dégrèvements d'office"
     },
     {
       "article": "Art. 441",
@@ -397,6 +417,13 @@
         "intérêt de retard",
         "1 % par mois",
         "Cour d'Appel",
+        "comptable public",
+        "quittance",
+        "ordonnateur",
+        "valeurs mobilières",
+        "titre de perception",
+        "DGID",
+        "Directeur Général des Impôts",
         "10 %",
         "5 %",
         "2,5 %",
@@ -404,7 +431,7 @@
         "1.500.000.000 FCFA"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     },
     {
       "article": "Art. 442",
@@ -418,7 +445,7 @@
         "contentieux"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     },
     {
       "article": "Art. 443",
@@ -431,10 +458,11 @@
         "instruction",
         "confidentialité",
         "agents",
+        "imposition contestée",
         "article 431"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     },
     {
       "article": "Art. 444",
@@ -448,10 +476,12 @@
         "recouvrement",
         "dégrèvements",
         "requête",
+        "impositions",
+        "contribuables",
         "contribution contestée"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     },
     {
       "article": "Art. 444 bis",
@@ -465,10 +495,11 @@
         "états distincts",
         "exercice",
         "commune",
-        "région"
+        "région",
+        "service du contentieux"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     },
     {
       "article": "Art. 445",
@@ -483,10 +514,11 @@
         "rôles",
         "réductions",
         "rejets",
-        "dossiers individuels"
+        "dossiers individuels",
+        "contribuables"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     }
   ]
 }

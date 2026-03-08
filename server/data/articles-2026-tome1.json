@@ -8783,7 +8783,7 @@
   {
     "numero": "425",
     "titre": "Délai de réclamation",
-    "contenu": "La réclamation doit parvenir, sous peine de forclusion, à la direction générale des impôts et des domaines dans un délai de trois (3) mois à compter de la réception de l'avis de mise en recouvrement ou du versement de l'impôt contesté, sans préjudice des délais accordés par la loi pour des cas spéciaux.",
+    "contenu": "La réclamation doit parvenir, sous peine de forclusion, à la direction générale des impôts et des domaines dans un délai de trois (3) mois à compter de la réception de l'avis de mise en recouvrement ou du versement de l'impôt contesté, sans préjudice des délais accordés par la loi pour des cas spéciaux.\nLa connaissance de l'existence de l'imposition résulte soit de l'aveu du contribuable, soit du premier versement effectué sur la cotisation contestée, soit de toute autre circonstance nettement caractérisée.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -8794,52 +8794,59 @@
       "impôt contesté",
       "DGID",
       "versement",
-      "cas spéciaux"
+      "cas spéciaux",
+      "aveu du contribuable",
+      "cotisation contestée"
     ],
     "source": "tome1-partie3-titre3-chapitre1.json"
   },
   {
     "numero": "423",
-    "titre": "Forme de la réclamation",
-    "contenu": "La réclamation doit être adressée au Directeur Général des Impôts et des Domaines. Elle peut être présentée par le contribuable lui-même, ou par son mandataire dûment habilité.\nElle doit être rédigée sur papier libre, datée et signée par son auteur.",
+    "titre": "Demande écrite formant requête introductive d'instance",
+    "contenu": "Tout contribuable qui se croit imposé à tort ou surtaxé peut présenter une demande écrite formant requête introductive d'instance.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
-      "réclamation",
-      "forme",
-      "Directeur Général",
-      "mandataire",
-      "papier libre",
-      "signature"
+      "contribuable",
+      "imposé à tort",
+      "surtaxé",
+      "demande écrite",
+      "requête introductive d'instance"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
   {
     "numero": "424",
     "titre": "Adresse et opposabilité de la réclamation",
-    "contenu": "La réclamation doit être adressée au service des impôts dont relève le lieu d'imposition.\nElle est opposable à l'administration fiscale dès sa réception.",
+    "contenu": "La réclamation doit être adressée à la Direction Générale des Impôts et des Domaines. Seule la date de réception par cette Direction est opposable tant au contribuable qu'à l'Administration.\nUne copie de la réclamation doit être déposée par le contribuable auprès du ministère de tutelle, lorsque les montants des droits contestés sont supérieurs à 1.000.000.000 FCFA.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "réclamation",
-      "adresse",
+      "Direction Générale des Impôts et des Domaines",
       "opposabilité",
-      "service des impôts",
-      "lieu d'imposition"
+      "date de réception",
+      "ministère de tutelle",
+      "1.000.000.000 FCFA",
+      "droits contestés",
+      "contribuable",
+      "copie de la réclamation"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
   {
     "numero": "426",
     "titre": "Réclamation à la suite d'erreurs d'expédition",
-    "contenu": "Lorsque, par suite d'erreurs d'expédition, un contribuable a acquitté un impôt supérieur à celui qui résulte du rôle, il peut en demander le remboursement dans les formes prévues aux articles précédents.",
+    "contenu": "Lorsqu'à la suite d'erreurs d'expédition de nouveaux avertissements ont été adressés aux contribuables, ceux-ci sont admis, sans préjudice des délais ordinaires, à réclamer dans les trois mois de la remise des nouveaux avertissements contre les cotisations qui en font l'objet.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
-      "réclamation",
       "erreurs d'expédition",
-      "remboursement",
-      "rôle"
+      "avertissements",
+      "contribuables",
+      "délais ordinaires",
+      "trois mois",
+      "cotisations"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -8851,7 +8858,8 @@
     "chapitre": "2",
     "keywords": [
       "réclamation",
-      "mandat",
+      "autrui",
+      "mandat régulier",
       "mandataire",
       "timbre",
       "enregistrement"
@@ -8870,7 +8878,10 @@
       "village",
       "rôle récapitulatif",
       "Comité Exécutif Communal",
-      "circonscription administrative"
+      "fonctionnaire",
+      "circonscription administrative",
+      "dérogation",
+      "cotes"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -8887,6 +8898,7 @@
       "avertissement",
       "avis de mise en recouvrement",
       "article du rôle",
+      "exposé des moyens",
       "Commune",
       "District"
     ],
@@ -8895,7 +8907,7 @@
   {
     "numero": "429 bis",
     "titre": "Éléments de la réclamation adressée à l'administration fiscale",
-    "contenu": "(L.F. 2026 - nouveau) La réclamation adressée à l'administration fiscale comprend les éléments suivants :\na) la lettre de notification des redressements ;\nb) la réponse à la notification des redressements ;\nc) la lettre de confirmation des bases d'imposition ;\nd) l'avis de mise en recouvrement ;\ne) et les preuves de constitution des garanties.\nEn cas d'une réclamation introduite à la suite d'un recours hiérarchique, le contribuable est tenu de produire en dehors des pièces susmentionnées :\nf) une copie de la demande valant recours hiérarchique ;\ng) les conclusions (le procès-verbal) du recours hiérarchique ;\nh) la lettre de confirmation rectificative.",
+    "contenu": "La réclamation adressée à l'administration fiscale comprend les éléments suivants :\na) la lettre de notification des redressements ;\nb) la réponse à la notification des redressements ;\nc) la lettre de confirmation des bases d'imposition ;\nd) l'avis de mise en recouvrement ;\ne) et les preuves de constitution des garanties.\nEn cas d'une réclamation introduite à la suite d'un recours hiérarchique, le contribuable est tenu de produire en dehors des pièces susmentionnées :\nf) une copie de la demande valant recours hiérarchique ;\ng) les conclusions (le procès-verbal) du recours hiérarchique ;\nh) la lettre de confirmation rectificative.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -8904,10 +8916,11 @@
       "notification des redressements",
       "confirmation des bases",
       "avis de mise en recouvrement",
-      "frais de traitement",
       "garanties",
+      "bases d'imposition",
       "recours hiérarchique",
-      "L.F. 2026"
+      "procès-verbal",
+      "lettre de confirmation rectificative"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -8931,19 +8944,18 @@
   {
     "numero": "430 bis",
     "titre": "Pouvoir de statuer du directeur départemental des impôts",
-    "contenu": "(L.F.2024, L.F.2025) En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :\n• par le directeur départemental des impôts et des domaines dans la limite de 50.000.000 FCFA ;\n• par le directeur général des impôts et des domaines, lorsque les droits et pénalités contestés sont inférieurs ou égaux à 1.000.000.000 FCFA ;\n• par le Ministre chargé des finances au-delà de 1.000.000.000 FCFA.",
+    "contenu": "En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :\n• par le directeur départemental des impôts et des domaines dans la limite de 50.000.000 FCFA ;\n• par le directeur général des impôts et des domaines, lorsque les droits et pénalités contestés sont inférieurs ou égaux à 1.000.000.000 FCFA ;\n• par le Ministre chargé des finances au-delà de 1.000.000.000 FCFA.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
-      "L.F.2024",
-      "L.F.2025",
       "réclamation",
       "pouvoir de statuer",
       "directeur départemental",
       "50.000.000 FCFA",
       "directeur général",
       "1.000.000.000 FCFA",
-      "Ministre des finances"
+      "Ministre des finances",
+      "droits et pénalités"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -8963,6 +8975,8 @@
       "propriétés bâties",
       "propriétés non bâties",
       "commission",
+      "réclamation",
+      "bases d'imposition",
       "articles 400"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
@@ -8976,7 +8990,8 @@
     "keywords": [
       "autorité compétente",
       "délai six mois",
-      "réception",
+      "date de réception",
+      "demande",
       "DGID"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
@@ -9000,7 +9015,7 @@
   {
     "numero": "434",
     "titre": "Recours devant le Tribunal compétent",
-    "contenu": "Lorsque la décision ne donne pas entière satisfaction au contribuable, le requérant a la faculté, dans le délai de trois mois à partir du jour où il a reçu notification de la décision, de porter le litige devant le Tribunal compétent, conformément à la loi n°22-92 du 20 août 1992 portant organisation du pouvoir judiciaire en République du Congo.\n(L.F. 2026 - nouveau) En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet.",
+    "contenu": "Lorsque la décision ne donne pas entière satisfaction au contribuable, le requérant a la faculté, dans le délai de trois mois à partir du jour où il a reçu notification de la décision, de porter le litige devant le Tribunal compétent, conformément à la loi n°22-92 du 20 août 1992 portant organisation du pouvoir judiciaire en République du Congo.\nEn l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -9012,7 +9027,10 @@
       "loi n°22-92",
       "pouvoir judiciaire",
       "délai six mois",
-      "L.F. 2026"
+      "nulle et de nul effet",
+      "requérant",
+      "litige",
+      "article 423"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -9045,7 +9063,8 @@
       "double exemplaire",
       "DGID",
       "délai trois mois",
-      "mise en recouvrement"
+      "mise en recouvrement",
+      "rôle"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },
@@ -9135,12 +9154,18 @@
       "intérêt de retard",
       "1 % par mois",
       "Cour d'Appel",
+      "comptable public",
+      "quittance",
+      "ordonnateur",
+      "valeurs mobilières",
+      "titre de perception",
+      "DGID",
+      "Directeur Général des Impôts",
       "10 %",
       "5 %",
       "2,5 %",
       "500.000.000 FCFA",
-      "1.500.000.000 FCFA",
-      "L.F. 2026"
+      "1.500.000.000 FCFA"
     ],
     "source": "tome1-partie3-titre3-chapitre2.json"
   },

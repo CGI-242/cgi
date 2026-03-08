@@ -108,7 +108,8 @@
       "article": "Art. 425",
       "titre": "Délai de réclamation",
       "texte": [
-        "La réclamation doit parvenir, sous peine de forclusion, à la direction générale des impôts et des domaines dans un délai de trois (3) mois à compter de la réception de l'avis de mise en recouvrement ou du versement de l'impôt contesté, sans préjudice des délais accordés par la loi pour des cas spéciaux."
+        "La réclamation doit parvenir, sous peine de forclusion, à la direction générale des impôts et des domaines dans un délai de trois (3) mois à compter de la réception de l'avis de mise en recouvrement ou du versement de l'impôt contesté, sans préjudice des délais accordés par la loi pour des cas spéciaux.",
+        "La connaissance de l'existence de l'imposition résulte soit de l'aveu du contribuable, soit du premier versement effectué sur la cotisation contestée, soit de toute autre circonstance nettement caractérisée."
       ],
       "mots_cles": [
         "réclamation",
@@ -118,7 +119,9 @@
         "impôt contesté",
         "DGID",
         "versement",
-        "cas spéciaux"
+        "cas spéciaux",
+        "aveu du contribuable",
+        "cotisation contestée"
       ],
       "statut": "en vigueur"
     }

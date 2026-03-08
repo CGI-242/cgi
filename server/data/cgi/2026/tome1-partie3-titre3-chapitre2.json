@@ -16,18 +16,16 @@
   "articles": [
     {
       "article": "Art. 423",
-      "titre": "Forme de la réclamation",
+      "titre": "Demande écrite formant requête introductive d'instance",
       "texte": [
-        "La réclamation doit être adressée au Directeur Général des Impôts et des Domaines. Elle peut être présentée par le contribuable lui-même, ou par son mandataire dûment habilité.",
-        "Elle doit être rédigée sur papier libre, datée et signée par son auteur."
+        "Tout contribuable qui se croit imposé à tort ou surtaxé peut présenter une demande écrite formant requête introductive d'instance."
       ],
       "mots_cles": [
-        "réclamation",
-        "forme",
-        "Directeur Général",
-        "mandataire",
-        "papier libre",
-        "signature"
+        "contribuable",
+        "imposé à tort",
+        "surtaxé",
+        "demande écrite",
+        "requête introductive d'instance"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -36,15 +34,19 @@
       "article": "Art. 424",
       "titre": "Adresse et opposabilité de la réclamation",
       "texte": [
-        "La réclamation doit être adressée au service des impôts dont relève le lieu d'imposition.",
-        "Elle est opposable à l'administration fiscale dès sa réception."
+        "La réclamation doit être adressée à la Direction Générale des Impôts et des Domaines. Seule la date de réception par cette Direction est opposable tant au contribuable qu'à l'Administration.",
+        "Une copie de la réclamation doit être déposée par le contribuable auprès du ministère de tutelle, lorsque les montants des droits contestés sont supérieurs à 1.000.000.000 FCFA."
       ],
       "mots_cles": [
         "réclamation",
-        "adresse",
+        "Direction Générale des Impôts et des Domaines",
         "opposabilité",
-        "service des impôts",
-        "lieu d'imposition"
+        "date de réception",
+        "ministère de tutelle",
+        "1.000.000.000 FCFA",
+        "droits contestés",
+        "contribuable",
+        "copie de la réclamation"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -53,13 +55,15 @@
       "article": "Art. 426",
       "titre": "Réclamation à la suite d'erreurs d'expédition",
       "texte": [
-        "Lorsque, par suite d'erreurs d'expédition, un contribuable a acquitté un impôt supérieur à celui qui résulte du rôle, il peut en demander le remboursement dans les formes prévues aux articles précédents."
+        "Lorsqu'à la suite d'erreurs d'expédition de nouveaux avertissements ont été adressés aux contribuables, ceux-ci sont admis, sans préjudice des délais ordinaires, à réclamer dans les trois mois de la remise des nouveaux avertissements contre les cotisations qui en font l'objet."
       ],
       "mots_cles": [
-        "réclamation",
         "erreurs d'expédition",
-        "remboursement",
-        "rôle"
+        "avertissements",
+        "contribuables",
+        "délais ordinaires",
+        "trois mois",
+        "cotisations"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -73,7 +77,8 @@
       ],
       "mots_cles": [
         "réclamation",
-        "mandat",
+        "autrui",
+        "mandat régulier",
         "mandataire",
         "timbre",
         "enregistrement"
@@ -89,11 +94,14 @@
       ],
       "mots_cles": [
         "requêtes",
+        "cotes",
         "rôle numérique",
         "village",
         "rôle récapitulatif",
         "Comité Exécutif Communal",
-        "circonscription administrative"
+        "fonctionnaire",
+        "circonscription administrative",
+        "dérogation"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -112,6 +120,7 @@
         "avertissement",
         "avis de mise en recouvrement",
         "article du rôle",
+        "exposé des moyens",
         "Commune",
         "District"
       ],
@@ -122,7 +131,7 @@
       "article": "Art. 429 bis",
       "titre": "Éléments de la réclamation adressée à l'administration fiscale",
       "texte": [
-        "(L.F. 2026 - nouveau) La réclamation adressée à l'administration fiscale comprend les éléments suivants :",
+        "La réclamation adressée à l'administration fiscale comprend les éléments suivants :",
         "a) la lettre de notification des redressements ;",
         "b) la réponse à la notification des redressements ;",
         "c) la lettre de confirmation des bases d'imposition ;",
@@ -139,10 +148,11 @@
         "notification des redressements",
         "confirmation des bases",
         "avis de mise en recouvrement",
-        "frais de traitement",
         "garanties",
+        "bases d'imposition",
         "recours hiérarchique",
-        "L.F. 2026"
+        "procès-verbal",
+        "lettre de confirmation rectificative"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -172,21 +182,20 @@
       "article": "Art. 430 bis",
       "titre": "Pouvoir de statuer du directeur départemental des impôts",
       "texte": [
-        "(L.F.2024, L.F.2025) En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :",
+        "En matière de réclamation introduite par le contribuable, le pouvoir de statuer est exercé :",
         "• par le directeur départemental des impôts et des domaines dans la limite de 50.000.000 FCFA ;",
         "• par le directeur général des impôts et des domaines, lorsque les droits et pénalités contestés sont inférieurs ou égaux à 1.000.000.000 FCFA ;",
         "• par le Ministre chargé des finances au-delà de 1.000.000.000 FCFA."
       ],
       "mots_cles": [
-        "L.F.2024",
-        "L.F.2025",
         "réclamation",
         "pouvoir de statuer",
         "directeur départemental",
         "50.000.000 FCFA",
         "directeur général",
         "1.000.000.000 FCFA",
-        "Ministre des finances"
+        "Ministre des finances",
+        "droits et pénalités"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -203,10 +212,12 @@
         "requête contentieuse",
         "forfait",
         "BICA",
+        "bases d'imposition",
         "contribution foncière",
         "propriétés bâties",
         "propriétés non bâties",
         "commission",
+        "réclamation",
         "articles 400"
       ],
       "statut": "en vigueur",
@@ -221,7 +232,8 @@
       "mots_cles": [
         "autorité compétente",
         "délai six mois",
-        "réception",
+        "date de réception",
+        "demande",
         "DGID"
       ],
       "statut": "en vigueur",
@@ -249,18 +261,21 @@
       "titre": "Recours devant le Tribunal compétent",
       "texte": [
         "Lorsque la décision ne donne pas entière satisfaction au contribuable, le requérant a la faculté, dans le délai de trois mois à partir du jour où il a reçu notification de la décision, de porter le litige devant le Tribunal compétent, conformément à la loi n°22-92 du 20 août 1992 portant organisation du pouvoir judiciaire en République du Congo.",
-        "(L.F. 2026 - nouveau) En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet."
+        "En l'absence d'un avis de décision de l'administration fiscale dans un délai de six (6) mois suivant la date de la présentation de la demande prévue à l'article 423 ci-dessus, la procédure est nulle et de nul effet."
       ],
       "mots_cles": [
         "décision",
         "contribuable",
+        "requérant",
         "délai trois mois",
         "notification",
+        "litige",
         "Tribunal compétent",
         "loi n°22-92",
         "pouvoir judiciaire",
         "délai six mois",
-        "L.F. 2026"
+        "nulle et de nul effet",
+        "article 423"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Demandes en décharge ou réduction"
@@ -295,7 +310,8 @@
         "double exemplaire",
         "DGID",
         "délai trois mois",
-        "mise en recouvrement"
+        "mise en recouvrement",
+        "rôle"
       ],
       "statut": "en vigueur",
       "section": "Section 2 - Demandes présentées par le service du recouvrement"
@@ -401,12 +417,18 @@
         "intérêt de retard",
         "1 % par mois",
         "Cour d'Appel",
+        "comptable public",
+        "quittance",
+        "ordonnateur",
+        "valeurs mobilières",
+        "titre de perception",
+        "DGID",
+        "Directeur Général des Impôts",
         "10 %",
         "5 %",
         "2,5 %",
         "500.000.000 FCFA",
-        "1.500.000.000 FCFA",
-        "L.F. 2026"
+        "1.500.000.000 FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Dispositions diverses"
@@ -436,6 +458,7 @@
         "instruction",
         "confidentialité",
         "agents",
+        "imposition contestée",
         "article 431"
       ],
       "statut": "en vigueur",
@@ -453,6 +476,8 @@
         "recouvrement",
         "dégrèvements",
         "requête",
+        "impositions",
+        "contribuables",
         "contribution contestée"
       ],
       "statut": "en vigueur",
@@ -470,7 +495,8 @@
         "états distincts",
         "exercice",
         "commune",
-        "région"
+        "région",
+        "service du contentieux"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Dispositions diverses"
@@ -488,7 +514,8 @@
         "rôles",
         "réductions",
         "rejets",
-        "dossiers individuels"
+        "dossiers individuels",
+        "contribuables"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Dispositions diverses"
