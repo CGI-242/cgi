@@ -76,8 +76,9 @@ export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
   { jour: 15, moisIndex: 2, label: "Minimum perception IS (T1)", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.isT1" },
   // Déclaration IBA annuel (Art. 93-102)
   { jour: 15, moisIndex: 2, label: "Déclaration IBA annuel", icon: "person-outline", recurrent: false, descriptionKey: "calendrier.desc.iba" },
+  // ===== FÉVRIER =====
   // DAS annuelle — Déclaration Annuelle des Salaires (Art. 176, 179, 180)
-  { jour: 15, moisIndex: 2, label: "DAS annuelle (décl. salaires)", icon: "document-text-outline", recurrent: false, descriptionKey: "calendrier.desc.das" },
+  { jour: 15, moisIndex: 1, label: "DAS annuelle (décl. salaires)", icon: "document-text-outline", recurrent: false, descriptionKey: "calendrier.desc.das" },
   // IGF — 1er versement trimestriel (Art. 3bis TFNC4 : 20 mars)
   { jour: 20, moisIndex: 2, label: "IGF (1er versement)", icon: "wallet-outline", recurrent: false, descriptionKey: "calendrier.desc.igf1" },
 

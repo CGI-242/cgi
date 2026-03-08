@@ -133,7 +133,7 @@ const FISCAL_DEADLINES: FiscalDeadline[] = [
   { day: 31, month: 1, label: 'Taxe régionale (résidents)', recurrent: false },
   { day: 15, month: 3, label: 'Minimum perception IS (T1)', recurrent: false },
   { day: 15, month: 3, label: 'Déclaration IBA annuel', recurrent: false },
-  { day: 15, month: 3, label: 'DAS annuelle (décl. salaires)', recurrent: false },
+  { day: 15, month: 2, label: 'DAS annuelle (décl. salaires)', recurrent: false },
   { day: 20, month: 3, label: 'IGF (1er versement)', recurrent: false },
   { day: 15, month: 4, label: 'Patente annuelle', recurrent: false },
   { day: 15, month: 4, label: 'Centimes additionnels patente (5%)', recurrent: false },
