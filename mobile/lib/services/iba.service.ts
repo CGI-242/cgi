@@ -17,7 +17,9 @@ export interface IbaInput {
   produitsExploitation: number;
   produitsFinanciers: number;
   produitsHAO: number;
-  charges: number;
+  chargesExploitation: number;
+  chargesFinancieres: number;
+  chargesHAO: number;
 
   // Passage au résultat fiscal
   reintegrations: number;
@@ -38,7 +40,7 @@ export interface IbaInput {
 export interface IbaResult {
   // Résultat comptable
   totalProduits: number;
-  charges: number;
+  totalCharges: number;
   resultatComptable: number;
 
   // Résultat fiscal
@@ -93,7 +95,10 @@ export function calculerIBA(input: IbaInput): IbaResult {
   const prodFin = Math.max(0, input.produitsFinanciers || 0);
   const prodHAO = Math.max(0, input.produitsHAO || 0);
   const totalProduits = prodExpl + prodFin + prodHAO;
-  const charges = Math.max(0, input.charges || 0);
+  const chExpl = Math.max(0, input.chargesExploitation || 0);
+  const chFin = Math.max(0, input.chargesFinancieres || 0);
+  const chHAO = Math.max(0, input.chargesHAO || 0);
+  const totalCharges = chExpl + chFin + chHAO;
   const reintegrations = Math.max(0, input.reintegrations || 0);
   const deductions = Math.max(0, input.deductions || 0);
   const ard = Math.max(0, input.ard || 0);
@@ -101,7 +106,7 @@ export function calculerIBA(input: IbaInput): IbaResult {
   const achats = Math.max(0, input.montantAchatsImportations || 0);
 
   // RC = Produits − Charges
-  const resultatComptable = totalProduits - charges;
+  const resultatComptable = totalProduits - totalCharges;
 
   // RF = RC + Réintégrations − Déductions − ARD − Report déficitaire (Art. 94 : max 3 ans)
   const resultatFiscal = Math.max(0, resultatComptable + reintegrations - deductions - ard - reportDeficitaire);
@@ -142,7 +147,7 @@ export function calculerIBA(input: IbaInput): IbaResult {
 
   return {
     totalProduits,
-    charges,
+    totalCharges,
     resultatComptable,
     reintegrations,
     deductions,

@@ -21,7 +21,9 @@ export default function IbaScreen() {
   const [produitsExploitation, setProduitsExploitation] = useState("");
   const [produitsFinanciers, setProduitsFinanciers] = useState("");
   const [produitsHAO, setProduitsHAO] = useState("");
-  const [charges, setCharges] = useState("");
+  const [chargesExploitation, setChargesExploitation] = useState("");
+  const [chargesFinancieres, setChargesFinancieres] = useState("");
+  const [chargesHAO, setChargesHAO] = useState("");
 
   // Résultat fiscal
   const [reintegrations, setReintegrations] = useState("");
@@ -47,7 +49,9 @@ export default function IbaScreen() {
       produitsExploitation: pe,
       produitsFinanciers: parse(produitsFinanciers),
       produitsHAO: parse(produitsHAO),
-      charges: parse(charges),
+      chargesExploitation: parse(chargesExploitation),
+      chargesFinancieres: parse(chargesFinancieres),
+      chargesHAO: parse(chargesHAO),
       reintegrations: parse(reintegrations),
       deductions: parse(deductions),
       ard: parse(ard),
@@ -58,7 +62,7 @@ export default function IbaScreen() {
       acompte3: parse(acompte3),
       acompte4: parse(acompte4),
     });
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, ard, reportDeficitaire, montantAchats, acompte1, acompte2, acompte3, acompte4]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, chargesExploitation, chargesFinancieres, chargesHAO, reintegrations, deductions, ard, reportDeficitaire, montantAchats, acompte1, acompte2, acompte3, acompte4]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -79,7 +83,9 @@ export default function IbaScreen() {
           <NumberField label={t("simulateur.iba.produitsExploitation")} value={produitsExploitation} onChange={setProduitsExploitation} />
           <NumberField label={t("simulateur.iba.produitsFinanciers")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
           <NumberField label={t("simulateur.iba.produitsHAO")} value={produitsHAO} onChange={setProduitsHAO} />
-          <NumberField label={t("simulateur.iba.charges")} value={charges} onChange={setCharges} />
+          <NumberField label={t("simulateur.iba.chargesExploitation")} value={chargesExploitation} onChange={setChargesExploitation} />
+          <NumberField label={t("simulateur.iba.chargesFinancieres")} value={chargesFinancieres} onChange={setChargesFinancieres} />
+          <NumberField label={t("simulateur.iba.chargesHAO")} value={chargesHAO} onChange={setChargesHAO} />
 
           {/* Résultat fiscal */}
           <Text style={[styles.sectionLabel, { color: colors.primary }]}>
@@ -113,8 +119,8 @@ export default function IbaScreen() {
             <View>
               {/* Résultat comptable */}
               <SimulateurSection label={t("simulateur.iba.rcSection")} />
-              <TableRow label={t("simulateur.iba.produitsExploitation")} value={formatNumber(result.totalProduits)} bold />
-              <TableRow label={t("simulateur.iba.charges")} value={`- ${formatNumber(result.charges)}`} bg={colors.background} color={colors.danger} />
+              <TableRow label={t("simulateur.iba.totalProduits")} value={formatNumber(result.totalProduits)} bold />
+              <TableRow label={t("simulateur.iba.totalCharges")} value={`- ${formatNumber(result.totalCharges)}`} bg={colors.background} color={colors.danger} />
               <ResultHighlight label={t("simulateur.iba.rc")} value={formatNumber(result.resultatComptable)} variant="primary" />
 
               {/* Résultat fiscal */}

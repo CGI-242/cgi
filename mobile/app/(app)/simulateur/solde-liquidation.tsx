@@ -17,11 +17,14 @@ export default function SoldeLiquidationScreen() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
 
-  // Résultat comptable
+  // Résultat comptable — Produits
   const [produitsExploitation, setProduitsExploitation] = useState("");
   const [produitsFinanciers, setProduitsFinanciers] = useState("");
   const [produitsHAO, setProduitsHAO] = useState("");
-  const [charges, setCharges] = useState("");
+  // Résultat comptable — Charges
+  const [chargesExploitation, setChargesExploitation] = useState("");
+  const [chargesFinancieres, setChargesFinancieres] = useState("");
+  const [chargesHAO, setChargesHAO] = useState("");
 
   // Résultat fiscal
   const [reintegrations, setReintegrations] = useState("");
@@ -50,7 +53,9 @@ export default function SoldeLiquidationScreen() {
       produitsExploitation: pe,
       produitsFinanciers: parse(produitsFinanciers),
       produitsHAO: parse(produitsHAO),
-      charges: parse(charges),
+      chargesExploitation: parse(chargesExploitation),
+      chargesFinancieres: parse(chargesFinancieres),
+      chargesHAO: parse(chargesHAO),
       reintegrations: parse(reintegrations),
       deductions: parse(deductions),
       ard: parse(ard),
@@ -61,7 +66,7 @@ export default function SoldeLiquidationScreen() {
       acompte3: parse(acompte3),
       acompte4: parse(acompte4),
     });
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, ard, reportDeficitaire, typeContribuable, acompte1, acompte2, acompte3, acompte4]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, chargesExploitation, chargesFinancieres, chargesHAO, reintegrations, deductions, ard, reportDeficitaire, typeContribuable, acompte1, acompte2, acompte3, acompte4]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -82,7 +87,9 @@ export default function SoldeLiquidationScreen() {
           <NumberField label={t("simulateur.solde.produitsExploitation")} value={produitsExploitation} onChange={setProduitsExploitation} />
           <NumberField label={t("simulateur.solde.produitsFinanciers")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
           <NumberField label={t("simulateur.solde.produitsHAO")} value={produitsHAO} onChange={setProduitsHAO} />
-          <NumberField label={t("simulateur.solde.charges")} value={charges} onChange={setCharges} />
+          <NumberField label={t("simulateur.solde.chargesExploitation")} value={chargesExploitation} onChange={setChargesExploitation} />
+          <NumberField label={t("simulateur.solde.chargesFinancieres")} value={chargesFinancieres} onChange={setChargesFinancieres} />
+          <NumberField label={t("simulateur.solde.chargesHAO")} value={chargesHAO} onChange={setChargesHAO} />
 
           {/* Résultat fiscal */}
           <Text style={[styles.sectionLabel, { color: colors.primary }]}>
@@ -128,8 +135,8 @@ export default function SoldeLiquidationScreen() {
             <View>
               {/* Résultat comptable */}
               <SimulateurSection label={t("simulateur.solde.rcSection")} />
-              <TableRow label={t("simulateur.solde.produitsExploitation")} value={formatNumber(result.totalProduits)} bold />
-              <TableRow label={t("simulateur.solde.charges")} value={`- ${formatNumber(result.charges)}`} bg={colors.background} color={colors.danger} />
+              <TableRow label={t("simulateur.solde.totalProduits")} value={formatNumber(result.totalProduits)} bold />
+              <TableRow label={t("simulateur.solde.totalCharges")} value={`- ${formatNumber(result.totalCharges)}`} bg={colors.background} color={colors.danger} />
               <ResultHighlight label={t("simulateur.solde.rc")} value={formatNumber(result.resultatComptable)} variant="primary" />
 
               {/* Résultat fiscal */}

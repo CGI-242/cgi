@@ -25,7 +25,9 @@ export interface SoldeLiquidationInput {
   produitsExploitation: number;
   produitsFinanciers: number;
   produitsHAO: number;
-  charges: number;
+  chargesExploitation: number;
+  chargesFinancieres: number;
+  chargesHAO: number;
   reintegrations: number;
   deductions: number;
   ard: number;
@@ -41,7 +43,7 @@ export interface SoldeLiquidationInput {
 export interface SoldeLiquidationResult {
   // Résultat comptable
   totalProduits: number;
-  charges: number;
+  totalCharges: number;
   resultatComptable: number;
 
   // Résultat fiscal
@@ -73,14 +75,17 @@ export function calculerSoldeLiquidation(
   const prodFin = Math.max(0, input.produitsFinanciers || 0);
   const prodHAO = Math.max(0, input.produitsHAO || 0);
   const totalProduits = prodExpl + prodFin + prodHAO;
-  const charges = Math.max(0, input.charges || 0);
+  const chExpl = Math.max(0, input.chargesExploitation || 0);
+  const chFin = Math.max(0, input.chargesFinancieres || 0);
+  const chHAO = Math.max(0, input.chargesHAO || 0);
+  const totalCharges = chExpl + chFin + chHAO;
   const reintegrations = Math.max(0, input.reintegrations || 0);
   const deductions = Math.max(0, input.deductions || 0);
   const ard = Math.max(0, input.ard || 0);
   const reportDeficitaire = Math.max(0, input.reportDeficitaire || 0);
 
   // RC = Produits − Charges
-  const resultatComptable = totalProduits - charges;
+  const resultatComptable = totalProduits - totalCharges;
 
   // RF = RC + Réintégrations − Déductions − ARD − Report déficitaire
   const resultatFiscal = Math.max(0, resultatComptable + reintegrations - deductions - ard - reportDeficitaire);
@@ -103,7 +108,7 @@ export function calculerSoldeLiquidation(
 
   return {
     totalProduits: Math.round(totalProduits),
-    charges: Math.round(charges),
+    totalCharges: Math.round(totalCharges),
     resultatComptable: Math.round(resultatComptable),
     reintegrations: Math.round(reintegrations),
     deductions: Math.round(deductions),
