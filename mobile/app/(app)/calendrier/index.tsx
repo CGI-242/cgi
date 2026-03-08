@@ -4,9 +4,6 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
-import SimulateurSection from "@/components/simulateur/SimulateurSection";
-import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import {
   genererGrilleCalendrier,
   getEcheancesDuMois,
@@ -194,60 +191,110 @@ export default function CalendrierFiscal() {
     </View>
   );
 
-  // ── Liste echeances (panneau droit) ──
+  // ── Liste echeances (en dessous du calendrier, grille 3 colonnes) ──
   const renderEcheances = () => (
-    <View style={{ flex: 1 }}>
+    <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
       {selectedJour === null ? (
         <>
-          {/* Aucun jour sélectionné — invitation + prochaine échéance */}
-          <View style={{ paddingTop: 40, alignItems: "center", paddingHorizontal: 20 }}>
-            <Ionicons name="calendar-outline" size={40} color={colors.disabled} />
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.textSecondary, textAlign: "center", marginTop: 12 }}>
+          <View style={{ paddingVertical: 24, alignItems: "center" }}>
+            <Ionicons name="calendar-outline" size={36} color={colors.disabled} />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.textSecondary, textAlign: "center", marginTop: 10 }}>
               {t("calendrier.selectDay")}
             </Text>
           </View>
 
           {prochaineEcheance && (
-            <View style={{ marginTop: 24 }}>
-              <SimulateurSection label={t("calendrier.prochaineEcheance")} />
-              <ResultHighlight
-                label={prochaineEcheance.echeance.label}
-                value={t("calendrier.dansXJours", { jours: prochaineEcheance.jours })}
-                variant="primary"
-                note={`${prochaineEcheance.echeance.jour} ${nomMois}`}
-              />
+            <View style={{
+              backgroundColor: `${colors.primary}10`, borderWidth: 1, borderColor: `${colors.primary}30`,
+              borderRadius: 12, padding: 14, flexDirection: "row", alignItems: "center", gap: 12,
+            }}>
+              <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${colors.primary}20`, alignItems: "center", justifyContent: "center" }}>
+                <Ionicons name={prochaineEcheance.echeance.icon as keyof typeof Ionicons.glyphMap} size={18} color={colors.primary} />
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>
+                  {prochaineEcheance.echeance.label}
+                </Text>
+                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>
+                  {prochaineEcheance.echeance.jour} {nomMois} — {t("calendrier.dansXJours", { jours: prochaineEcheance.jours })}
+                </Text>
+              </View>
             </View>
           )}
         </>
       ) : (
         <>
-          <SimulateurSection label={`${selectedJour} ${nomMois} ${annee}`} />
-
-          {echeancesJourSelectionne.length === 0 ? (
-            <SimulateurEmptyState message={t("calendrier.aucuneEcheance")} />
-          ) : (
-            <>
-              <View style={{ paddingHorizontal: 14, paddingBottom: 8 }}>
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.textSecondary }}>
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.text }}>
+              {selectedJour} {nomMois} {annee}
+            </Text>
+            {echeancesJourSelectionne.length > 0 && (
+              <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3, borderRadius: 10 }}>
+                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary }}>
                   {echeancesJourSelectionne.length} {echeancesJourSelectionne.length > 1 ? t("calendrier.obligations") : t("calendrier.obligation")}
                 </Text>
               </View>
+            )}
+          </View>
+
+          {echeancesJourSelectionne.length === 0 ? (
+            <View style={{ paddingVertical: 24, alignItems: "center" }}>
+              <Ionicons name="checkmark-circle-outline" size={36} color={colors.disabled} />
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted, marginTop: 8 }}>
+                {t("calendrier.aucuneEcheance")}
+              </Text>
+            </View>
+          ) : (
+            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
               {echeancesJourSelectionne.map((e, i) => (
-                <ResultHighlight
+                <View
                   key={`${e.descriptionKey}-${i}`}
-                  label={e.label}
-                  value={e.recurrent ? t("calendrier.legendeRecurrent") : t("calendrier.legendeEcheance")}
-                  variant={e.recurrent ? "primary" : "danger"}
-                  note={t(e.descriptionKey)}
-                />
+                  style={{
+                    width: isMobile ? "100%" as unknown as number : "31.5%" as unknown as number,
+                    backgroundColor: colors.card,
+                    borderWidth: 1,
+                    borderColor: e.recurrent ? `${colors.accent}40` : `${colors.danger}40`,
+                    borderRadius: 12,
+                    padding: 14,
+                    flexGrow: isMobile ? undefined : 1,
+                    minWidth: isMobile ? undefined : 250,
+                  }}
+                >
+                  <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8, gap: 10 }}>
+                    <View style={{
+                      width: 36, height: 36, borderRadius: 10,
+                      backgroundColor: e.recurrent ? `${colors.accent}15` : `${colors.danger}15`,
+                      alignItems: "center", justifyContent: "center",
+                    }}>
+                      <Ionicons name={e.icon as keyof typeof Ionicons.glyphMap} size={18} color={e.recurrent ? colors.accent : colors.danger} />
+                    </View>
+                    <View style={{ flex: 1 }}>
+                      <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text }} numberOfLines={2}>
+                        {e.label}
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 12, color: colors.textMuted, lineHeight: 16 }} numberOfLines={3}>
+                    {t(e.descriptionKey)}
+                  </Text>
+                  <View style={{
+                    marginTop: 8, alignSelf: "flex-start",
+                    backgroundColor: e.recurrent ? `${colors.accent}15` : `${colors.danger}15`,
+                    paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6,
+                  }}>
+                    <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 11, color: e.recurrent ? colors.accent : colors.danger }}>
+                      {e.recurrent ? t("calendrier.legendeRecurrent") : t("calendrier.legendeEcheance")}
+                    </Text>
+                  </View>
+                </View>
               ))}
-            </>
+            </View>
           )}
         </>
       )}
 
       {/* Reference legale */}
-      <View style={{ padding: 14, marginTop: 16 }}>
+      <View style={{ paddingTop: 16, paddingBottom: 8 }}>
         <Text style={{ fontSize: 12, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
           {t("calendrier.legalRef")}
         </Text>
@@ -255,29 +302,14 @@ export default function CalendrierFiscal() {
     </View>
   );
 
-  // ── Layout responsive ──
-  if (isMobile) {
-    return (
-      <View style={{ flex: 1, backgroundColor: colors.background }}>
-        <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 40 }}>
-          {renderGrille()}
-          <View style={{ borderTopWidth: 1, borderTopColor: colors.border }}>
-            {renderEcheances()}
-          </View>
-        </ScrollView>
-      </View>
-    );
-  }
-
-  // Desktop : 50/50
+  // ── Layout : calendrier + échéances en dessous ──
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background, flexDirection: "row" }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 40 }}>
         {renderGrille()}
-      </ScrollView>
-      <View style={{ width: 1, backgroundColor: colors.border }} />
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 40 }}>
-        {renderEcheances()}
+        <View style={{ borderTopWidth: 1, borderTopColor: colors.border }}>
+          {renderEcheances()}
+        </View>
       </ScrollView>
     </View>
   );
