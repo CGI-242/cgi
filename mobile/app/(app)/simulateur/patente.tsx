@@ -128,6 +128,18 @@ export default function PatenteScreen() {
               <View style={{ paddingHorizontal: 14, paddingVertical: 12 }}>
                 <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.exemptionDesc")}</Text>
               </View>
+              {result.camu > 0 && (
+                <>
+                  <SimulateurSection label="CAMU due malgré exonération" />
+                  <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
+                  <View style={[styles.totalBox, { backgroundColor: colors.primary }]}>
+                    <View style={styles.spaceBetweenRow}>
+                      <Text style={[styles.totalLabel, { color: "#fff" }]}>CAMU à payer</Text>
+                      <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.camu)} FCFA</Text>
+                    </View>
+                  </View>
+                </>
+              )}
               <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
                 {result.references.map((ref) => (
                   <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
@@ -180,6 +192,10 @@ export default function PatenteScreen() {
               <TableRow label={t("simulateur.patente.centimesRate")} value={formatNumber(result.centimesAdditionnels)} />
               <TableRow label={t("simulateur.patente.partCC")} value={formatNumber(result.partChambresCommerce)} bg={colors.background} />
               <TableRow label={t("simulateur.patente.partCL")} value={formatNumber(result.partCollectivitesLocales)} />
+
+              {/* CAMU */}
+              <SimulateurSection label="CAMU (Art. 3-4)" />
+              <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
 
               {/* Total à payer */}
               <View style={[styles.totalBox, { backgroundColor: colors.primary, borderTopColor: colors.border }]}>

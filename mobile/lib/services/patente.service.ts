@@ -2,6 +2,7 @@
  * Service Patente - Contribution des Patentes
  * Art. 314 CGI Congo 2026 (barème)
  * Art. 369 bis (centimes additionnels 5%)
+ * CAMU Art. 3-4 (contribution solidarité 0,5% de la patente liquidée)
  */
 
 export interface PatenteInput {
@@ -38,6 +39,8 @@ export interface PatenteResult {
   centimesAdditionnels: number;
   partChambresCommerce: number;
   partCollectivitesLocales: number;
+  // CAMU (Art. 3-4 CAMU : 0,5% de la patente liquidée)
+  camu: number;
   // Total
   totalAPayer: number;
   totalParEntite: number;
@@ -65,6 +68,7 @@ const BAREME_PATENTE = [
 const TAUX_CENTIMES = 0.05; // 5% (Art. 369 bis)
 const PART_CHAMBRES_COMMERCE = 0.20; // 20%
 const PART_COLLECTIVITES = 0.80; // 80%
+const TAUX_CAMU = 0.005; // 0,5% (Art. 4 CAMU)
 
 function formatTranche(min: number, max: number): string {
   if (max === Infinity) {
@@ -105,7 +109,22 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
   }
 
   // Exonération entreprise nouvelle (Art. 278 al. 4) — 3 premières années
+  // Mais CAMU due même si exonéré (Art. 3 CAMU)
   if (input.isEntrepriseNouvelle) {
+    // Calculer la patente "théorique" pour la CAMU
+    let patenteTheorique = FORFAIT_PREMIERE_TRANCHE;
+    if (ca >= 1_000_000) {
+      let restant = ca - 1_000_000;
+      for (const b of BAREME_PATENTE) {
+        if (restant <= 0) break;
+        const largeur = b.max === Infinity ? restant : (b.max - b.min);
+        const base = Math.min(restant, largeur);
+        patenteTheorique += base * b.taux;
+        restant -= base;
+      }
+    }
+    const camuExoneree = arrondir(patenteTheorique * TAUX_CAMU);
+
     return {
       chiffreAffaires: ca,
       regime: getRegimeLabel(input.regime),
@@ -120,12 +139,14 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
       centimesAdditionnels: 0,
       partChambresCommerce: 0,
       partCollectivitesLocales: 0,
-      totalAPayer: 0,
-      totalParEntite: 0,
+      camu: camuExoneree,
+      totalAPayer: camuExoneree,
+      totalParEntite: camuExoneree,
       nombreEntites: 1,
-      dateEcheance: "-",
+      dateEcheance: "10-20 avril",
       references: [
         "Art. 278 al. 4 : Exonération entreprise nouvelle (3 ans)",
+        "Art. 3-4 CAMU : Contribution 0,5% due même si exonéré de patente",
       ],
     };
   }
@@ -141,7 +162,9 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
 
     // Centimes additionnels
     const centimes = arrondir(patenteNette * TAUX_CENTIMES);
-    const totalAPayer = patenteNette + centimes;
+    // CAMU 0,5% de la patente liquidée
+    const camuStandBy = arrondir(patenteNette * TAUX_CAMU);
+    const totalAPayer = patenteNette + centimes + camuStandBy;
 
     return {
       chiffreAffaires: 0,
@@ -157,6 +180,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
       centimesAdditionnels: centimes,
       partChambresCommerce: arrondir(centimes * PART_CHAMBRES_COMMERCE),
       partCollectivitesLocales: arrondir(centimes * PART_COLLECTIVITES),
+      camu: camuStandBy,
       totalAPayer,
       totalParEntite: totalAPayer,
       nombreEntites: 1,
@@ -165,6 +189,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
         "Art. 278 al. 6 : Stand-by = 25% dernière patente",
         ...(input.isPetroliere ? ["Art. 314 : Réduction 50% sociétés pétrolières"] : []),
         "Art. 369 bis : Centimes additionnels 5%",
+        "Art. 3-4 CAMU : Contribution solidarité 0,5%",
       ],
     };
   }
@@ -216,7 +241,10 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
   const partCC = arrondir(centimes * PART_CHAMBRES_COMMERCE);
   const partCL = arrondir(centimes * PART_COLLECTIVITES);
 
-  const totalAPayer = patenteNette + centimes;
+  // CAMU 0,5% de la patente liquidée (Art. 3-4 CAMU)
+  const camu = arrondir(patenteNette * TAUX_CAMU);
+
+  const totalAPayer = patenteNette + centimes + camu;
 
   const nombreEntites = Math.max(1, input.nombreEntitesFiscales || 1);
   const totalParEntite = arrondir(totalAPayer / nombreEntites);
@@ -235,6 +263,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
     centimesAdditionnels: centimes,
     partChambresCommerce: partCC,
     partCollectivitesLocales: partCL,
+    camu,
     totalAPayer,
     totalParEntite,
     nombreEntites,
@@ -245,6 +274,7 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
       "Art. 314 : Tarifs (L.F.2023)",
       ...(input.isPetroliere ? ["Art. 314 : Réduction 50% sociétés pétrolières"] : []),
       "Art. 369 bis : Centimes additionnels 5%",
+      "Art. 3-4 CAMU : Contribution solidarité 0,5%",
     ],
   };
 }
