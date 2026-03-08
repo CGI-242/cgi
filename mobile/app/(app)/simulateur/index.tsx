@@ -130,6 +130,14 @@ export default function SimulateurHub() {
       icon: "cut-outline" as const,
       route: "/(app)/simulateur/retenue-source",
     },
+    {
+      id: "is-parapetrolier",
+      title: t("simulateur.hubISPara"),
+      subtitle: t("simulateur.isPara.subtitle"),
+      description: t("simulateur.isPara.legalRef"),
+      icon: "flame-outline" as const,
+      route: "/(app)/simulateur/is-parapetrolier",
+    },
   ];
 
   return (

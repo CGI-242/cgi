@@ -26,6 +26,7 @@ const SIMULATEURS: {
   { id: "cession", titleKey: "simulateur.cessionParts.title", subtitleKey: "simulateur.cessionParts.subtitle", icon: "swap-horizontal-outline", route: "/(app)/simulateur/cession-parts" },
   { id: "foncier", titleKey: "simulateur.foncier.title", subtitleKey: "simulateur.foncier.subtitle", icon: "map-outline", route: "/(app)/simulateur/contribution-fonciere" },
   { id: "rts", titleKey: "simulateur.rts.title", subtitleKey: "simulateur.rts.subtitle", icon: "cut-outline", route: "/(app)/simulateur/retenue-source" },
+  { id: "isPara", titleKey: "simulateur.isPara.title", subtitleKey: "simulateur.isPara.subtitle", icon: "flame-outline", route: "/(app)/simulateur/is-parapetrolier" },
 ];
 
 export default function MobileSimPicker() {

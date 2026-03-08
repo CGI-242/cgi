@@ -37,15 +37,6 @@ describe("calculerSoldeLiquidation", () => {
     expect(result.isCalcule).toBe(5_600_000);
   });
 
-  it("applique le taux etranger de 33%", () => {
-    const result = calculerSoldeLiquidation({
-      ...baseInput,
-      typeContribuable: "etranger",
-    });
-    expect(result.tauxIS).toBe(33);
-    expect(result.isCalcule).toBe(6_600_000);
-  });
-
   it("neglige la fraction < 1 000 FCFA (Art. 86A-1)", () => {
     const result = calculerSoldeLiquidation({
       ...baseInput,

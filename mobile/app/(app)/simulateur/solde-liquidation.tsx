@@ -27,7 +27,6 @@ export default function SoldeLiquidationScreen() {
     { value: "general", label: t("simulateur.solde.general"), taux: "28%" },
     { value: "microfinance", label: t("simulateur.solde.microfinance"), taux: "25%" },
     { value: "mines", label: t("simulateur.solde.mining"), taux: "28%" },
-    { value: "etranger", label: t("simulateur.solde.foreign"), taux: "33%" },
   ];
 
   const result = useMemo(() => {

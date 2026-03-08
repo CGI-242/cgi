@@ -6,7 +6,7 @@
  *  - 28% taux general
  *  - 25% microfinance, enseignement prive
  *  - 28% mines, carrieres, exploitation immobiliere
- *  - 33% personnes morales etrangeres
+ *  (Les PM étrangères non-résidentes relèvent du régime forfaitaire Art. 92+)
  *
  * Fraction du benefice < 1 000 FCFA negligee.
  * Le solde = IS calcule - acomptes deja verses (minimum de perception).
@@ -15,8 +15,7 @@
 export type TypeContribuable =
   | "general"
   | "microfinance"
-  | "mines"
-  | "etranger";
+  | "mines";
 
 export interface SoldeLiquidationInput {
   resultatFiscal: number;
@@ -42,7 +41,6 @@ const TAUX_IS: Record<TypeContribuable, number> = {
   general: 0.28,
   microfinance: 0.25,
   mines: 0.28,
-  etranger: 0.33,
 };
 
 export function calculerSoldeLiquidation(
