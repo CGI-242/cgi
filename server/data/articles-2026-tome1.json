@@ -8511,19 +8511,19 @@
     "keywords": [
       "périodique",
       "mensuel",
-      "Directeur des Contributions",
-      "Payeur",
-      "Préposé du Trésor",
-      "expédition authentique",
-      "avertissements",
-      "mise en recouvrement"
+      "Directeur des Contributions Directes et Indirectes",
+      "Directeur Général des Impôts",
+      "rôles reçus et vérifiés",
+      "approbation",
+      "Ministre des finances",
+      "homologation"
     ],
     "source": "tome1-partie3-titre2-chapitre2.json"
   },
   {
     "numero": "412",
     "titre": "Préparation des arrêtés rendant les rôles exécutoires",
-    "contenu": "Le Directeur des Contributions Directes et Indirectes prépare, à cet effet, les arrêtés rendant les rôles exécutoires et les états de prise en charge destinés au service du recouvrement.\nLes arrêtés et états présentent, en articles distincts, par nature d'impôt, le montant de chaque rôle.\nLorsque des erreurs d'expédition sont relevées dans les rôles rendus exécutoires, ou dans un arrêt ou un état, des documents rectificatifs sont établis et approuvés comme il est dit ci-dessus.",
+    "contenu": "Le Directeur des Contributions Directes et Indirectes prépare, à cet effet, les arrêtés rendant les rôles exécutoires et les états de prise en charge destinés au service du recouvrement.\nLes arrêtés et états présentent, en articles distincts, par nature d'impôt, le montant de chaque rôle.\nLorsque des erreurs d'expédition sont relevées dans des rôles rendus exécutoires, ou dans un arrêt ou un état, des documents rectificatifs sont établis et approuvés comme il est dit ci-dessus.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -8541,7 +8541,7 @@
   {
     "numero": "413",
     "titre": "Signature des arrêtés par le Ministre des finances",
-    "contenu": "Dès signature des arrêtés par le Ministre des finances, ou, s'il en a reçu délégation, par le Directeur Général des Impôts, ce dernier certifie au dos du chacun des rôles que ce document « s'élevant à la somme de ... a été rendu exécutoire par arrêté du ... n° ... ».",
+    "contenu": "Dès signature des arrêtés par le Ministre des finances, ou, s'il en a reçu délégation, par le Directeur Général des Impôts, ce dernier certifie au dos de chacun des rôles que ce document « s'élevant à la somme de ... a été rendu exécutoire par arrêté du ... n° ... ».",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -8563,6 +8563,7 @@
     "chapitre": "2",
     "keywords": [
       "instructions spéciales",
+      "modalités particulières",
       "arrêtés d'approbation",
       "états de prise en charge"
     ],
@@ -8571,21 +8572,27 @@
   {
     "numero": "415",
     "titre": "Date de mise en recouvrement du rôle",
-    "contenu": "Le Directeur Général des Impôts fixe la date de mise en recouvrement du rôle ou de l'avis de mise en recouvrement après entente avec le trésorier Payeur Général ou le receveur principal des impôts, et porte cette date sur le rôle et chacun des avertissements destinés au contribuable.\nCette date constitue le point de départ des délais de recouvrement et de prescription ; elle marque le début de la période de dix ans sur laquelle porte le privilège du Trésor.",
+    "contenu": "Le Directeur Général des Impôts fixe la date de mise en recouvrement du rôle ou de l'avis de mise en recouvrement après entente avec le trésorier Payeur Général ou le receveur principal des impôts, et porte cette date sur le rôle et chacun des avertissements destinés au contribuable.\nCette date constitue le point de départ des délais de recouvrement et de prescription ; elle marque le début de la période de deux ans sur laquelle porte le privilège du Trésor.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
       "Directeur Général des Impôts",
-      "mise en recouvrement",
-      "rôles",
-      "titres de perception"
+      "date de mise en recouvrement",
+      "avis de mise en recouvrement",
+      "trésorier Payeur Général",
+      "receveur principal des impôts",
+      "avertissements",
+      "délais de recouvrement",
+      "prescription",
+      "privilège du Trésor",
+      "deux ans"
     ],
     "source": "tome1-partie3-titre2-chapitre3.json"
   },
   {
     "numero": "416",
     "titre": "Transmission immédiate des rôles par le Directeur Général des Impôts",
-    "contenu": "Le Directeur Général des Impôts transmet immédiatement :\n1° au Payeur, ou Préposé du Trésor ou au receveur principal des impôts intéressés, une expédition authentique des rôles ou titres de paiement dont le recouvrement lui incombe et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;\n2° au chef de district.\n- a) une expédition authentique des rôles dont le recouvrement incombe aux Préposés du Trésor du district et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;\n- b) une expédition authentique des rôles rédigés par l'Inspecteur divisionnaire des contributions directes et Indirectes, dans les conditions prévues au 1° du paragraphe a) de l'article 407 ci-dessus, pour classement aux archives du district ou de la Mairie intéressés.",
+    "contenu": "Le Directeur Général des Impôts transmet immédiatement :\n1° au Payeur, ou Préposé du Trésor ou au receveur principal des impôts intéressés, une expédition authentique des rôles ou titres de paiement dont le recouvrement lui incombe et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;\n2° au chef de district.\n- a) une expédition authentique des rôles dont le recouvrement incombe aux Préposés du Trésor du district et la liasse des avertissements correspondants. Chaque rôle est accompagné d'avis et d'un certificat de mise en recouvrement ;\n- b) une expédition authentique des rôles rédigés par l'inspecteur divisionnaire des contributions directes et indirectes, dans les conditions prévues au 1° du paragraphe a) de l'article 407 ci-dessus, pour classement aux archives du district ou de la Mairie intéressés.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
@@ -8606,16 +8613,17 @@
   {
     "numero": "417",
     "titre": "Expédition des avertissements",
-    "contenu": "L'agent chargé du recouvrement prend immédiatement en charge le rôle et assure l'expédition des avertissements. Il adresse les avis de mise en recouvrement qui ont été transmis à l'appui du rôle, au Président du Conseil Exécutif de région, ou de district ou au Président du Comité Exécutif Communal pour l'affichage.",
+    "contenu": "L'agent chargé du recouvrement prend immédiatement en charge le rôle et assure l'expédition des avertissements. Il adresse les avis de mise en recouvrement qui lui ont été transmis à l'appui du rôle, au Président du Conseil Exécutif de région ou de district ou au Président du Comité Exécutif Communal pour l'affichage.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
       "agent de recouvrement",
       "prise en charge",
       "rôle",
-      "avertissements",
+      "expédition des avertissements",
       "avis de mise en recouvrement",
       "Président du Conseil Exécutif",
+      "Comité Exécutif Communal",
       "affichage"
     ],
     "source": "tome1-partie3-titre2-chapitre3.json"
@@ -8656,13 +8664,16 @@
   {
     "numero": "420",
     "titre": "Réception de l'avertissement en temps opportun",
-    "contenu": "Nul ne peut exciper de ce qu'il n'a pas reçu l'avertissement en temps opportun.",
+    "contenu": "Nul ne peut exciper de ce qu'il n'a pas reçu l'avertissement en temps opportun pour différer le paiement de ses impositions ou obtenir le dégrèvement des frais de poursuites.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
       "avertissement",
       "réception",
       "temps opportun",
+      "paiement des impositions",
+      "dégrèvement",
+      "frais de poursuites",
       "inopposabilité"
     ],
     "source": "tome1-partie3-titre2-chapitre3.json"
@@ -8670,16 +8681,19 @@
   {
     "numero": "421",
     "titre": "Rôle de régularisation",
-    "contenu": "Lorsque la perception de certains impôts directs est effectuée avant l'émission du rôle, il est établi toute réserve de dispositions contraires, chaque mois ou chaque trimestre, un rôle de régularisation qui est approuvé et pris en charge comme il est dit ci-dessus ; toutefois il n'y a pas lieu de rédiger des avertissements.",
+    "contenu": "Lorsque la perception de certains impôts directs est effectuée avant émission du rôle, il est établi sous réserve de dispositions contraires, chaque mois ou chaque trimestre, un rôle de régularisation qui est approuvé et pris en charge comme il est dit ci-dessus ; toutefois il n'y a pas lieu de rédiger des avertissements.",
     "tome": "1",
     "chapitre": "3",
     "keywords": [
       "perception",
       "impôts directs",
       "émission du rôle",
+      "sous réserve",
       "rôle de régularisation",
       "mensuel",
       "trimestriel",
+      "approbation",
+      "pris en charge",
       "avertissements"
     ],
     "source": "tome1-partie3-titre2-chapitre3.json"
@@ -8687,7 +8701,7 @@
   {
     "numero": "422",
     "titre": "Réclamations relatives aux impôts, droits ou amendes",
-    "contenu": "1) Les réclamations relatives aux impôts, droits ou amendes établis par les services dépendant de la DGID ressortissent à la juridiction contentieuse lorsqu'elles tendent à obtenir soit la réparation d'erreurs commises dans l'assiette ou le calcul des impositions, soit le bénéfice d'un droit résultant d'une disposition législative ou réglementaire.\n2) La juridiction gracieuse connaît des demandes tendant à obtenir de la bienveillance de l'autorité administrative, en cas d'indigence ou de gêne mettant les contribuables dans l'impossibilité de se libérer envers le Trésor, la remise ou la modération d'impositions régulièrement établies.\nElle statue également sur les demandes en remise de pénalités et les demandes d'admission en non-valeur de cotes dont le recouvrement n'a pu être effectué (état des cotes irrécouvrables présenté par les comptables chargés de la perception).\n3) Sauf cas prévus aux articles 435 à 437 et 452 à 456 du CGI, aucune autorité publique ne peut accorder des remises ou des modérations des impôts et taxes existant si elles ne sont pas prévues par la loi, ni suspendre ou faire suspendre le recouvrement.\nToutefois, en ce qui concerne les pénalités y afférentes, des remises ou modérations peuvent être accordées lorsqu'elles définies.\nconditions prévues aux dispositions légales",
+    "contenu": "1) Les réclamations relatives aux impôts, droits ou amendes établis par les services dépendant de la DGID ressortissent à la juridiction contentieuse lorsqu'elles tendent à obtenir soit la réparation d'erreurs commises dans l'assiette ou le calcul des impositions, soit le bénéfice d'un droit résultant d'une disposition législative ou réglementaire.\n2) La juridiction gracieuse connaît des demandes tendant à obtenir de la bienveillance de l'autorité administrative, en cas d'indigence ou de gêne mettant les contribuables dans l'impossibilité de se libérer envers le Trésor, la remise ou la modération d'impositions régulièrement établies.\nElle statue également sur les demandes en remise de pénalités et les demandes d'admission en non-valeur de cotes dont le recouvrement n'a pu être effectué (état des cotes irrécouvrables présenté par les comptables chargés de la perception).\n3) Sauf cas prévus aux articles 435 à 437 et 452 à 456 du CGI, aucune autorité publique ne peut accorder des remises ou des modérations des impôts et taxes existant si elles ne sont pas prévues par la loi, ni en suspendre ou faire suspendre le recouvrement.\nToutefois, en ce qui concerne les pénalités y afférentes, des remises ou modérations peuvent être accordées lorsqu'elles concernent des dispositions devenues définitives.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -8696,27 +8710,33 @@
       "juridiction gracieuse",
       "DGID",
       "assiette",
+      "calcul des impositions",
       "indigence",
       "remise",
       "modération",
       "pénalités",
-      "non-valeur"
+      "non-valeur",
+      "cotes irrécouvrables",
+      "recouvrement",
+      "dispositions définitives"
     ],
     "source": "tome1-partie3-titre3-chapitre1.json"
   },
   {
     "numero": "422 bis",
     "titre": "Modération totale ou partielle des pénalités dans le cadre d'une transaction fiscale",
-    "contenu": "Dans le cadre d'une transaction fiscale, le contribuable peut solliciter une modération totale ou partielle des pénalités dans les deux cas suivants :\n• a) avant la mise en recouvrement suivant une procédure de contrôle ;\n• b) durant toute la procédure contentieuse.\nDans les deux cas, le contribuable fait une proposition des sommes à payer et de leurs modalités de paiement. En cas d'acceptation de cette proposition de transaction, le contribuable s'engage expressément :\n• à ne pas introduire une réclamation contentieuse ou gracieuse ultérieure ;\n• à se désister des réclamations ou des requêtes qu'il introduites ;\n• à acquitter immédiatement les droits et pénalités restant à sa charge.",
+    "contenu": "Dans le cadre d'une transaction fiscale, le contribuable peut solliciter une modération totale ou partielle des pénalités dans les deux cas suivants :\n• a) avant la mise en recouvrement suivant une procédure de contrôle ;\n• b) durant toute la procédure contentieuse.\nDans les deux cas, le contribuable fait une proposition des sommes à payer et de leurs modalités de paiement. En cas d'acceptation de cette proposition de transaction, le contribuable s'engage expressément :\n• à ne pas introduire une réclamation contentieuse ou gracieuse ultérieure ;\n• à se désister des réclamations ou des requêtes par lui introduites ;\n• à acquitter immédiatement les droits et pénalités restant à sa charge.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "pénalités",
-      "remises",
-      "modérations",
+      "modération totale ou partielle",
       "transaction fiscale",
       "mise en recouvrement",
+      "procédure de contrôle",
       "procédure contentieuse",
+      "modalités de paiement",
+      "réclamation gracieuse",
       "désistement"
     ],
     "source": "tome1-partie3-titre3-chapitre1.json"
@@ -8724,16 +8744,25 @@
   {
     "numero": "422 ter",
     "titre": "Recours hiérarchique",
-    "contenu": "(L.F.2025) A la suite de toute procédure de contrôle fiscal, le contribuable peut saisir par voie de recours hiérarchique, le supérieur de l'inspecteur vérificateur ou du service ayant mis à sa charge ces redressements pour discuter ou réviser les chefs de redressements.\nLe recours hiérarchique doit être engagé avant la mise en recouvrement des droits. Toute saisine du supérieur hiérarchique après réception de l'avis de mise en avis de recouvrement est de jure nulle.\nQuand le recours hiérarchique est régulièrement engagé, l'administration ne peut pas mettre en recouvrement les impositions contestées jusqu'à l'examen, par le supérieur hiérarchique, de la situation du contribuable, sans entacher d'irrégularité la procédure.\nLa procédure de recours hiérarchique est subordonnée à une demande écrite du contribuable, adressée au Directeur Général des Impôts et des Domaines.\nLes conclusions du recours hiérarchique sont sanctionnées par un procès-verbal signé des deux parties qui servira à l'établissement de la lettre de confirmation rectificative des redressements. Les droits arrêtés sont immédiatement mis en recouvrement.\n(L.F.2026) Après le dépôt par le contribuable de la demande valant recours hiérarchique, l'administration fiscale dispose d'un délai de 30 jours ouvrables à compter de la date de réception du recours.",
+    "contenu": "(L.F.2025, L.F.2026) A la suite de toute procédure de contrôle fiscal, le contribuable peut saisir par voie de recours hiérarchique, le supérieur de l'inspecteur vérificateur ou du service ayant mis à sa charge ces redressements pour discuter ou réviser les chefs de redressements.\nLe recours hiérarchique doit être engagé avant la mise en recouvrement des droits. Toute saisine du supérieur hiérarchique après réception de l'avis de mise en avis de recouvrement est de jure nulle.\nQuand le recours hiérarchique est régulièrement engagé, l'administration ne peut pas mettre en recouvrement les impositions contestées jusqu'à l'examen, par le supérieur hiérarchique, de la situation du contribuable, sans entacher d'irrégularité sa procédure.\nLa procédure de recours hiérarchique est subordonnée à une demande écrite du contribuable, adressée au Directeur Général des Impôts et des Domaines.\nLes conclusions du recours hiérarchique sont sanctionnées par un procès-verbal signé des deux parties qui servira à l'établissement de la lettre de confirmation rectificative des redressements. Les droits arrêtés sont immédiatement mis en recouvrement.\n(L.F.2026) Après le dépôt par le contribuable de la demande valant recours hiérarchique, l'administration fiscale dispose d'un délai de 30 jours ouvrables à compter de la date de réception du recours.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "recours hiérarchique",
       "contrôle fiscal",
+      "inspecteur vérificateur",
+      "supérieur hiérarchique",
       "redressements",
+      "chefs de redressements",
       "mise en recouvrement",
-      "Directeur Général des Impôts",
-      "L.F.2025"
+      "de jure nulle",
+      "impositions contestées",
+      "demande écrite",
+      "Directeur Général des Impôts et des Domaines",
+      "procès-verbal",
+      "30 jours ouvrables",
+      "L.F.2025",
+      "L.F.2026"
     ],
     "source": "tome1-partie3-titre3-chapitre1.json"
   },

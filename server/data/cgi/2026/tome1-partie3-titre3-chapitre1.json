@@ -21,9 +21,8 @@
         "1) Les réclamations relatives aux impôts, droits ou amendes établis par les services dépendant de la DGID ressortissent à la juridiction contentieuse lorsqu'elles tendent à obtenir soit la réparation d'erreurs commises dans l'assiette ou le calcul des impositions, soit le bénéfice d'un droit résultant d'une disposition législative ou réglementaire.",
         "2) La juridiction gracieuse connaît des demandes tendant à obtenir de la bienveillance de l'autorité administrative, en cas d'indigence ou de gêne mettant les contribuables dans l'impossibilité de se libérer envers le Trésor, la remise ou la modération d'impositions régulièrement établies.",
         "Elle statue également sur les demandes en remise de pénalités et les demandes d'admission en non-valeur de cotes dont le recouvrement n'a pu être effectué (état des cotes irrécouvrables présenté par les comptables chargés de la perception).",
-        "3) Sauf cas prévus aux articles 435 à 437 et 452 à 456 du CGI, aucune autorité publique ne peut accorder des remises ou des modérations des impôts et taxes existant si elles ne sont pas prévues par la loi, ni suspendre ou faire suspendre le recouvrement.",
-        "Toutefois, en ce qui concerne les pénalités y afférentes, des remises ou modérations peuvent être accordées lorsqu'elles définies.",
-        "conditions prévues aux dispositions légales"
+        "3) Sauf cas prévus aux articles 435 à 437 et 452 à 456 du CGI, aucune autorité publique ne peut accorder des remises ou des modérations des impôts et taxes existant si elles ne sont pas prévues par la loi, ni en suspendre ou faire suspendre le recouvrement.",
+        "Toutefois, en ce qui concerne les pénalités y afférentes, des remises ou modérations peuvent être accordées lorsqu'elles concernent des dispositions devenues définitives."
       ],
       "mots_cles": [
         "réclamations",
@@ -31,11 +30,15 @@
         "juridiction gracieuse",
         "DGID",
         "assiette",
+        "calcul des impositions",
         "indigence",
         "remise",
         "modération",
         "pénalités",
-        "non-valeur"
+        "non-valeur",
+        "cotes irrécouvrables",
+        "recouvrement",
+        "dispositions définitives"
       ],
       "statut": "en vigueur"
     },
@@ -48,16 +51,18 @@
         "• b) durant toute la procédure contentieuse.",
         "Dans les deux cas, le contribuable fait une proposition des sommes à payer et de leurs modalités de paiement. En cas d'acceptation de cette proposition de transaction, le contribuable s'engage expressément :",
         "• à ne pas introduire une réclamation contentieuse ou gracieuse ultérieure ;",
-        "• à se désister des réclamations ou des requêtes qu'il introduites ;",
+        "• à se désister des réclamations ou des requêtes par lui introduites ;",
         "• à acquitter immédiatement les droits et pénalités restant à sa charge."
       ],
       "mots_cles": [
         "pénalités",
-        "remises",
-        "modérations",
+        "modération totale ou partielle",
         "transaction fiscale",
         "mise en recouvrement",
+        "procédure de contrôle",
         "procédure contentieuse",
+        "modalités de paiement",
+        "réclamation gracieuse",
         "désistement"
       ],
       "statut": "en vigueur"
@@ -66,9 +71,9 @@
       "article": "Art. 422 ter",
       "titre": "Recours hiérarchique",
       "texte": [
-        "(L.F.2025) A la suite de toute procédure de contrôle fiscal, le contribuable peut saisir par voie de recours hiérarchique, le supérieur de l'inspecteur vérificateur ou du service ayant mis à sa charge ces redressements pour discuter ou réviser les chefs de redressements.",
+        "(L.F.2025, L.F.2026) A la suite de toute procédure de contrôle fiscal, le contribuable peut saisir par voie de recours hiérarchique, le supérieur de l'inspecteur vérificateur ou du service ayant mis à sa charge ces redressements pour discuter ou réviser les chefs de redressements.",
         "Le recours hiérarchique doit être engagé avant la mise en recouvrement des droits. Toute saisine du supérieur hiérarchique après réception de l'avis de mise en avis de recouvrement est de jure nulle.",
-        "Quand le recours hiérarchique est régulièrement engagé, l'administration ne peut pas mettre en recouvrement les impositions contestées jusqu'à l'examen, par le supérieur hiérarchique, de la situation du contribuable, sans entacher d'irrégularité la procédure.",
+        "Quand le recours hiérarchique est régulièrement engagé, l'administration ne peut pas mettre en recouvrement les impositions contestées jusqu'à l'examen, par le supérieur hiérarchique, de la situation du contribuable, sans entacher d'irrégularité sa procédure.",
         "La procédure de recours hiérarchique est subordonnée à une demande écrite du contribuable, adressée au Directeur Général des Impôts et des Domaines.",
         "Les conclusions du recours hiérarchique sont sanctionnées par un procès-verbal signé des deux parties qui servira à l'établissement de la lettre de confirmation rectificative des redressements. Les droits arrêtés sont immédiatement mis en recouvrement.",
         "(L.F.2026) Après le dépôt par le contribuable de la demande valant recours hiérarchique, l'administration fiscale dispose d'un délai de 30 jours ouvrables à compter de la date de réception du recours."
@@ -76,10 +81,19 @@
       "mots_cles": [
         "recours hiérarchique",
         "contrôle fiscal",
+        "inspecteur vérificateur",
+        "supérieur hiérarchique",
         "redressements",
+        "chefs de redressements",
         "mise en recouvrement",
-        "Directeur Général des Impôts",
-        "L.F.2025"
+        "de jure nulle",
+        "impositions contestées",
+        "demande écrite",
+        "Directeur Général des Impôts et des Domaines",
+        "procès-verbal",
+        "30 jours ouvrables",
+        "L.F.2025",
+        "L.F.2026"
       ],
       "statut": "en vigueur"
     },

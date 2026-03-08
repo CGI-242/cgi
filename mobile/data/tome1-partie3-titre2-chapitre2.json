@@ -37,12 +37,12 @@
       "mots_cles": [
         "périodique",
         "mensuel",
-        "Directeur des Contributions",
-        "Payeur",
-        "Préposé du Trésor",
-        "expédition authentique",
-        "avertissements",
-        "mise en recouvrement"
+        "Directeur des Contributions Directes et Indirectes",
+        "Directeur Général des Impôts",
+        "rôles reçus et vérifiés",
+        "approbation",
+        "Ministre des finances",
+        "homologation"
       ],
       "statut": "en vigueur"
     },
@@ -52,7 +52,7 @@
       "texte": [
         "Le Directeur des Contributions Directes et Indirectes prépare, à cet effet, les arrêtés rendant les rôles exécutoires et les états de prise en charge destinés au service du recouvrement.",
         "Les arrêtés et états présentent, en articles distincts, par nature d'impôt, le montant de chaque rôle.",
-        "Lorsque des erreurs d'expédition sont relevées dans les rôles rendus exécutoires, ou dans un arrêt ou un état, des documents rectificatifs sont établis et approuvés comme il est dit ci-dessus."
+        "Lorsque des erreurs d'expédition sont relevées dans des rôles rendus exécutoires, ou dans un arrêt ou un état, des documents rectificatifs sont établis et approuvés comme il est dit ci-dessus."
       ],
       "mots_cles": [
         "Directeur des Contributions",
@@ -70,7 +70,7 @@
       "article": "Art. 413",
       "titre": "Signature des arrêtés par le Ministre des finances",
       "texte": [
-        "Dès signature des arrêtés par le Ministre des finances, ou, s'il en a reçu délégation, par le Directeur Général des Impôts, ce dernier certifie au dos du chacun des rôles que ce document « s'élevant à la somme de ... a été rendu exécutoire par arrêté du ... n° ... »."
+        "Dès signature des arrêtés par le Ministre des finances, ou, s'il en a reçu délégation, par le Directeur Général des Impôts, ce dernier certifie au dos de chacun des rôles que ce document « s'élevant à la somme de ... a été rendu exécutoire par arrêté du ... n° ... »."
       ],
       "mots_cles": [
         "signature",
@@ -91,6 +91,7 @@
       ],
       "mots_cles": [
         "instructions spéciales",
+        "modalités particulières",
         "arrêtés d'approbation",
         "états de prise en charge"
       ],
