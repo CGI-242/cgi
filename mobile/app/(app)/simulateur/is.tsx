@@ -1,10 +1,11 @@
 import { useState, useMemo } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
-import { calculerIS, type IsInput } from "@/lib/services/is.service";
+import { calculerMinPerception, type TypeImpot } from "@/lib/services/is.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
+import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
@@ -16,21 +17,28 @@ export default function IsScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const [typeImpot, setTypeImpot] = useState<TypeImpot>("is");
   const [produitsExploitation, setProduitsExploitation] = useState("");
   const [produitsFinanciers, setProduitsFinanciers] = useState("");
   const [produitsHAO, setProduitsHAO] = useState("");
   const [retenuesLiberatoires, setRetenuesLiberatoires] = useState("");
 
+  const TYPES: { value: TypeImpot; label: string }[] = [
+    { value: "is", label: t("simulateur.is.tabIS") },
+    { value: "iba", label: t("simulateur.is.tabIBA") },
+  ];
+
   const result = useMemo(() => {
-    const input: IsInput = {
-      produitsExploitation: parseFloat(produitsExploitation.replace(/\s/g, "")) || 0,
+    const pe = parseFloat(produitsExploitation.replace(/\s/g, "")) || 0;
+    if (pe === 0) return null;
+    return calculerMinPerception({
+      typeImpot,
+      produitsExploitation: pe,
       produitsFinanciers: parseFloat(produitsFinanciers.replace(/\s/g, "")) || 0,
       produitsHAO: parseFloat(produitsHAO.replace(/\s/g, "")) || 0,
       retenuesLiberatoires: parseFloat(retenuesLiberatoires.replace(/\s/g, "")) || 0,
-    };
-    if (input.produitsExploitation === 0) return null;
-    return calculerIS(input);
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires]);
+    });
+  }, [typeImpot, produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -41,24 +49,35 @@ export default function IsScreen() {
           </Text>
 
           <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.is.description")}</Text>
+            <Text style={[styles.descriptionText, { color: colors.text }]}>
+              {typeImpot === "is" ? t("simulateur.is.descriptionIS") : t("simulateur.is.descriptionIBA")}
+            </Text>
           </View>
 
           <Text style={[styles.fieldLabel, { color: colors.text }]}>
+            {t("simulateur.is.typeLabel")}
+          </Text>
+          <OptionButtonGroup options={TYPES} selected={typeImpot} onChange={setTypeImpot} fontSize={13} />
+
+          <Text style={[styles.fieldLabel, { color: colors.text, marginTop: 12 }]}>
             {t("simulateur.is.baseCalc")}
           </Text>
           <NumberField label={t("simulateur.is.exploitation")} value={produitsExploitation} onChange={setProduitsExploitation} />
           <NumberField label={t("simulateur.is.financial")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
           <NumberField label={t("simulateur.is.hao")} value={produitsHAO} onChange={setProduitsHAO} />
-          <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
+          {typeImpot === "is" && (
+            <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
+          )}
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.is.legalRef")}</Text>
+          <Text style={[styles.legalRef, { color: colors.textMuted }]}>
+            {typeImpot === "is" ? t("simulateur.is.legalRefIS") : t("simulateur.is.legalRefIBA")}
+          </Text>
         </ScrollView>
 
         <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
-              <SimulateurSection label={t("simulateur.is.minPerception")} />
+              <SimulateurSection label={typeImpot === "is" ? t("simulateur.is.minPerceptionIS") : t("simulateur.is.minPerceptionIBA")} />
               <TableRow label={t("simulateur.is.base")} value={formatNumber(result.baseMinimumPerception)} />
               <TableRow label={t("simulateur.is.rateApplied")} value={`${result.tauxMinimum}%`} bg={colors.background} />
               <ResultHighlight label={t("simulateur.is.annualMin")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" />
@@ -68,7 +87,12 @@ export default function IsScreen() {
                 <TableRow key={a.label} label={a.label} value={formatNumber(a.montant)} />
               ))}
 
-              <ResultHighlight label={t("simulateur.is.totalToPay")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" note={t("simulateur.is.imputNote")} />
+              <ResultHighlight
+                label={t("simulateur.is.totalToPay")}
+                value={formatNumber(result.minimumPerceptionAnnuel)}
+                variant="primary"
+                note={typeImpot === "is" ? t("simulateur.is.imputNoteIS") : t("simulateur.is.imputNoteIBA")}
+              />
             </View>
           ) : (
             <SimulateurEmptyState message={t("simulateur.is.enterProducts")} />
@@ -113,5 +137,6 @@ const styles = StyleSheet.create({
   },
   legalRef: {
     fontSize: 12,
+    marginTop: 12,
   },
 });

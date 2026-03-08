@@ -4,8 +4,16 @@ import {
 } from "../solde-liquidation.service";
 
 describe("calculerSoldeLiquidation", () => {
+  // RF = 30M + 0 − 10M + 0 − 0 − 0 − 0 = 20M
   const baseInput: SoldeLiquidationInput = {
-    resultatFiscal: 20_000_000,
+    produitsExploitation: 30_000_000,
+    produitsFinanciers: 0,
+    produitsHAO: 0,
+    charges: 10_000_000,
+    reintegrations: 0,
+    deductions: 0,
+    ard: 0,
+    reportDeficitaire: 0,
     typeContribuable: "general",
     acompte1: 262_500,
     acompte2: 262_500,
@@ -38,9 +46,10 @@ describe("calculerSoldeLiquidation", () => {
   });
 
   it("neglige la fraction < 1 000 FCFA (Art. 86A-1)", () => {
+    // RF = 30_000_500 − 10_000_000 = 20_000_500 → arrondi 20_000_000
     const result = calculerSoldeLiquidation({
       ...baseInput,
-      resultatFiscal: 20_000_500,
+      produitsExploitation: 30_000_500,
     });
     expect(result.beneficeArrondi).toBe(20_000_000);
     expect(result.isCalcule).toBe(5_600_000);
@@ -55,8 +64,16 @@ describe("calculerSoldeLiquidation", () => {
   });
 
   it("detecte un credit d'impot quand acomptes > IS", () => {
+    // RF = 11M − 10M = 1M
     const input: SoldeLiquidationInput = {
-      resultatFiscal: 1_000_000,
+      produitsExploitation: 11_000_000,
+      produitsFinanciers: 0,
+      produitsHAO: 0,
+      charges: 10_000_000,
+      reintegrations: 0,
+      deductions: 0,
+      ard: 0,
+      reportDeficitaire: 0,
       typeContribuable: "general",
       acompte1: 262_500,
       acompte2: 262_500,
@@ -73,5 +90,18 @@ describe("calculerSoldeLiquidation", () => {
   it("retourne le detail des 4 acomptes", () => {
     const result = calculerSoldeLiquidation(baseInput);
     expect(result.detailAcomptes).toHaveLength(4);
+  });
+
+  it("prend en compte les réintégrations et déductions dans le RF", () => {
+    // RF = (30M − 10M) + 5M − 2M − 1M − 0 = 22M
+    const result = calculerSoldeLiquidation({
+      ...baseInput,
+      reintegrations: 5_000_000,
+      deductions: 2_000_000,
+      ard: 1_000_000,
+    });
+    expect(result.resultatComptable).toBe(20_000_000);
+    expect(result.resultatFiscal).toBe(22_000_000);
+    expect(result.isCalcule).toBe(6_160_000);
   });
 });

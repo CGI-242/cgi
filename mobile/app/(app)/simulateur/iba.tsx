@@ -26,6 +26,7 @@ export default function IbaScreen() {
   // Résultat fiscal
   const [reintegrations, setReintegrations] = useState("");
   const [deductions, setDeductions] = useState("");
+  const [ard, setArd] = useState("");
   const [reportDeficitaire, setReportDeficitaire] = useState("");
 
   // ASDI
@@ -43,10 +44,11 @@ export default function IbaScreen() {
       charges: parse(charges),
       reintegrations: parse(reintegrations),
       deductions: parse(deductions),
+      ard: parse(ard),
       reportDeficitaire: parse(reportDeficitaire),
       montantAchatsImportations: parse(montantAchats),
     });
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, reportDeficitaire, montantAchats]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, ard, reportDeficitaire, montantAchats]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -75,6 +77,7 @@ export default function IbaScreen() {
           </Text>
           <NumberField label={t("simulateur.iba.reintegrations")} value={reintegrations} onChange={setReintegrations} />
           <NumberField label={t("simulateur.iba.deductionsFiscales")} value={deductions} onChange={setDeductions} />
+          <NumberField label={t("simulateur.iba.ard")} value={ard} onChange={setArd} />
           <NumberField label={t("simulateur.iba.reportDeficitaire")} value={reportDeficitaire} onChange={setReportDeficitaire} />
 
           {/* ASDI */}
@@ -103,6 +106,9 @@ export default function IbaScreen() {
               )}
               {result.deductions > 0 && (
                 <TableRow label={t("simulateur.iba.deductionsFiscales")} value={`- ${formatNumber(result.deductions)}`} bg={colors.background} color={colors.danger} />
+              )}
+              {result.ard > 0 && (
+                <TableRow label={t("simulateur.iba.ard")} value={`- ${formatNumber(result.ard)}`} bg={colors.background} color={colors.danger} />
               )}
               {result.reportDeficitaire > 0 && (
                 <TableRow label={t("simulateur.iba.reportDeficitaire")} value={`- ${formatNumber(result.reportDeficitaire)}`} bg={colors.background} color={colors.danger} />

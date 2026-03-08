@@ -4,7 +4,7 @@
  *
  * Régime réel (Art. 94-95) :
  *   RC = Produits − Charges
- *   RF = RC + Réintégrations − Déductions − Report déficitaire (max 3 ans, Art. 94)
+ *   RF = RC + Réintégrations − Déductions − ARD − Report déficitaire (max 3 ans, Art. 94)
  *   IBA brut = RF × 30% (Art. 95)
  *   Minimum de perception = 1,5% × (produits exploitation + financiers + HAO) (Art. 95)
  *   IBA retenu = max(IBA brut, minimum de perception)
@@ -22,6 +22,7 @@ export interface IbaInput {
   // Passage au résultat fiscal
   reintegrations: number;
   deductions: number;
+  ard: number;
   reportDeficitaire: number;
 
   // ASDI
@@ -37,6 +38,7 @@ export interface IbaResult {
   // Résultat fiscal
   reintegrations: number;
   deductions: number;
+  ard: number;
   reportDeficitaire: number;
   resultatFiscal: number;
 
@@ -82,14 +84,15 @@ export function calculerIBA(input: IbaInput): IbaResult {
   const charges = Math.max(0, input.charges || 0);
   const reintegrations = Math.max(0, input.reintegrations || 0);
   const deductions = Math.max(0, input.deductions || 0);
+  const ard = Math.max(0, input.ard || 0);
   const reportDeficitaire = Math.max(0, input.reportDeficitaire || 0);
   const achats = Math.max(0, input.montantAchatsImportations || 0);
 
   // RC = Produits − Charges
   const resultatComptable = totalProduits - charges;
 
-  // RF = RC + Réintégrations − Déductions − Report déficitaire (Art. 94 : max 3 ans)
-  const resultatFiscal = Math.max(0, resultatComptable + reintegrations - deductions - reportDeficitaire);
+  // RF = RC + Réintégrations − Déductions − ARD − Report déficitaire (Art. 94 : max 3 ans)
+  const resultatFiscal = Math.max(0, resultatComptable + reintegrations - deductions - ard - reportDeficitaire);
 
   // IBA brut = RF × 30% (Art. 95)
   const ibaBrut = Math.round(resultatFiscal * TAUX_IBA);
@@ -121,6 +124,7 @@ export function calculerIBA(input: IbaInput): IbaResult {
     resultatComptable,
     reintegrations,
     deductions,
+    ard,
     reportDeficitaire,
     resultatFiscal,
     tauxIBA: TAUX_IBA * 100,
