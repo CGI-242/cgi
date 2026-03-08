@@ -908,6 +908,13 @@
       "irf3": "IRF Loyers — 3e échéance. Art. 111-113A CGI — Dernière échéance de l'année."
     }
   },
+  "notifications": {
+    "title": "Échéances fiscales",
+    "noUpcoming": "Aucune échéance à venir ce mois",
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain",
+    "inXDays": "Dans {{jours}} jours"
+  },
   "activity": {
     "questionsThisMonth": "Questions ce mois",
     "questionsTotal": "Questions total",

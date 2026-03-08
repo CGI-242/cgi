@@ -872,6 +872,13 @@
       "irf3": "Rental Income Tax — 3rd instalment. Art. 111-113A CGI — Last instalment of the year."
     }
   },
+  "notifications": {
+    "title": "Tax deadlines",
+    "noUpcoming": "No upcoming deadlines this month",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "inXDays": "In {{jours}} days"
+  },
   "activity": {
     "questionsThisMonth": "Questions this month",
     "questionsTotal": "Total questions",

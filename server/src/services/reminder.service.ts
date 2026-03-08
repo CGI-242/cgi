@@ -100,32 +100,145 @@ export async function checkExpiringSubscriptions(): Promise<{ sent: number; erro
   return result;
 }
 
+// ─── Calendrier fiscal complet CGI Congo 2026 ───
+// Conforme Art. 461 bis (L.F. 2026) : délais fixés au 15 de chaque mois, sauf août = 20
+
+interface FiscalDeadline {
+  day: number;
+  month: number; // 1-12, 0 = tous les mois (récurrent)
+  label: string;
+  recurrent: boolean;
+}
+
+const FISCAL_DEADLINES: FiscalDeadline[] = [
+  // Obligations mensuelles récurrentes (Art. 461 bis : le 15)
+  { day: 15, month: 0, label: 'ITS mensuel', recurrent: true },
+  { day: 15, month: 0, label: 'TUS mensuel', recurrent: true },
+  { day: 15, month: 0, label: 'Retenue à la source', recurrent: true },
+  { day: 15, month: 0, label: 'IRCM mensuel', recurrent: true },
+  { day: 15, month: 0, label: 'IS forfaitaire (parapétrolier)', recurrent: true },
+  { day: 15, month: 0, label: 'IRCM forfaitaire (parapétrolier)', recurrent: true },
+  { day: 15, month: 0, label: 'TVA mensuelle', recurrent: true },
+  { day: 15, month: 0, label: 'Centimes additionnels TVA (5%)', recurrent: true },
+  { day: 15, month: 0, label: "Droits d'accises", recurrent: true },
+  { day: 15, month: 0, label: 'CNSS mensuel', recurrent: true },
+  { day: 15, month: 0, label: 'CAMU mensuel', recurrent: true },
+  { day: 15, month: 0, label: 'Taxe transferts de fonds', recurrent: true },
+  { day: 15, month: 0, label: "Taxe contrats d'assurance", recurrent: true },
+  { day: 15, month: 0, label: 'Taxe jeux de hasard', recurrent: true },
+  { day: 15, month: 0, label: 'Redevance audiovisuelle (RAV)', recurrent: true },
+  { day: 15, month: 0, label: 'Taxe communications électroniques', recurrent: true },
+
+  // Obligations spécifiques par mois
+  { day: 31, month: 1, label: 'Taxe régionale (résidents)', recurrent: false },
+  { day: 15, month: 3, label: 'Minimum perception IS (T1)', recurrent: false },
+  { day: 15, month: 3, label: 'Déclaration IBA annuel', recurrent: false },
+  { day: 15, month: 3, label: 'DAS annuelle (décl. salaires)', recurrent: false },
+  { day: 20, month: 3, label: 'IGF (1er versement)', recurrent: false },
+  { day: 15, month: 4, label: 'Patente annuelle', recurrent: false },
+  { day: 15, month: 4, label: 'Centimes additionnels patente (5%)', recurrent: false },
+  { day: 30, month: 4, label: 'Contribution foncière (CFPB/CFPNB)', recurrent: false },
+  { day: 30, month: 4, label: 'Déclaration IS annuelle', recurrent: false },
+  { day: 15, month: 5, label: 'IRF Loyers (1re échéance)', recurrent: false },
+  { day: 15, month: 5, label: 'Solde de liquidation IS', recurrent: false },
+  { day: 15, month: 5, label: 'Solde IBA annuel', recurrent: false },
+  { day: 15, month: 6, label: 'Minimum perception IS (T2)', recurrent: false },
+  { day: 20, month: 6, label: 'IGF (2e versement)', recurrent: false },
+  { day: 20, month: 8, label: 'IRF Loyers (2e échéance)', recurrent: false },
+  { day: 15, month: 9, label: 'Minimum perception IS (T3)', recurrent: false },
+  { day: 20, month: 9, label: 'IGF (3e versement)', recurrent: false },
+  { day: 15, month: 11, label: 'IRF Loyers (3e échéance)', recurrent: false },
+  { day: 15, month: 12, label: 'Minimum perception IS (T4)', recurrent: false },
+  { day: 20, month: 12, label: 'IGF (4e versement)', recurrent: false },
+];
+
+/**
+ * Calcule les jours de notification pour une échéance donnée.
+ * Logique : notifier tous les 2 jours en amont (en reculant depuis J-1), puis le jour J.
+ *
+ * Exemples :
+ *   jour 15 → notifications les 10, 12, 14, 15
+ *   jour 20 → notifications les 15, 17, 19, 20
+ *   jour 30 → notifications les 25, 27, 29, 30
+ *   jour 31 → notifications les 26, 28, 30, 31
+ */
+function getNotificationDays(deadlineDay: number): number[] {
+  const days: number[] = [deadlineDay]; // toujours notifier le jour J
+  // Reculer de 1, puis par pas de 2 (J-1, J-3, J-5)
+  let d = deadlineDay - 1;
+  let count = 0;
+  while (count < 3 && d >= 1) {
+    days.push(d);
+    count++;
+    d -= 2;
+  }
+  return days.sort((a, b) => a - b);
+}
+
+/**
+ * Retourne les échéances d'un mois donné (1-12), y compris les récurrentes.
+ * En août (mois 8), les obligations récurrentes passent au 20 (Art. 461 bis).
+ */
+function getDeadlinesForMonth(month: number): { day: number; label: string }[] {
+  return FISCAL_DEADLINES
+    .filter((d) => d.month === month || (d.recurrent && d.month === 0))
+    .map((d) => {
+      // Art. 461 bis : en août, le délai passe au 20
+      if (d.recurrent && month === 8 && d.day === 15) {
+        return { day: 20, label: d.label };
+      }
+      return { day: d.day, label: d.label };
+    });
+}
+
 /**
  * Vérifie les échéances fiscales à venir et envoie des rappels.
- * Dates clés du CGI : acomptes IS, déclarations, etc.
+ *
+ * Notifications tous les 2 jours avant chaque échéance :
+ *   - Jour 15 → notif les 10, 12, 14, 15
+ *   - Jour 20 → notif les 15, 17, 19, 20
+ *   - Jour 30 → notif les 25, 27, 29, 30
  */
 export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: number }> {
   const now = new Date();
+  const currentDay = now.getDate();
+  const currentMonth = now.getMonth() + 1; // 1-12
   const result = { sent: 0, errors: 0 };
 
-  const FISCAL_DEADLINES = [
-    { month: 3, day: 15, label: '1er acompte minimum de perception IS (15 mars)' },
-    { month: 3, day: 31, label: 'Déclaration annuelle IS/IBA (31 mars)' },
-    { month: 6, day: 15, label: '2e acompte minimum de perception IS (15 juin)' },
-    { month: 9, day: 15, label: '3e acompte minimum de perception IS (15 septembre)' },
-    { month: 12, day: 15, label: '4e acompte minimum de perception IS (15 décembre)' },
-  ];
+  // Récupérer les échéances du mois courant
+  const monthDeadlines = getDeadlinesForMonth(currentMonth);
 
-  // Vérifier les échéances dans les 7 prochains jours
-  const in7Days = new Date(now);
-  in7Days.setDate(in7Days.getDate() + 7);
+  // Regrouper par jour d'échéance
+  const deadlinesByDay = new Map<number, string[]>();
+  for (const d of monthDeadlines) {
+    const list = deadlinesByDay.get(d.day) || [];
+    list.push(d.label);
+    deadlinesByDay.set(d.day, list);
+  }
 
-  const upcomingDeadlines = FISCAL_DEADLINES.filter((d) => {
-    const deadline = new Date(now.getFullYear(), d.month - 1, d.day);
-    return deadline >= now && deadline <= in7Days;
-  });
+  // Vérifier si aujourd'hui est un jour de notification pour une échéance
+  const deadlinesToNotify: { day: number; labels: string[] }[] = [];
+  for (const [deadlineDay, labels] of deadlinesByDay) {
+    const notifDays = getNotificationDays(deadlineDay);
+    if (notifDays.includes(currentDay)) {
+      deadlinesToNotify.push({ day: deadlineDay, labels });
+    }
+  }
 
-  if (upcomingDeadlines.length === 0) return result;
+  if (deadlinesToNotify.length === 0) return result;
+
+  // Construire la liste complète des labels à notifier
+  const allLabels = deadlinesToNotify.flatMap((d) => d.labels);
+  const isDeadlineDay = deadlinesToNotify.some((d) => d.day === currentDay);
+  const daysUntil = deadlinesToNotify
+    .filter((d) => d.day > currentDay)
+    .map((d) => d.day - currentDay);
+  const minDaysUntil = daysUntil.length > 0 ? Math.min(...daysUntil) : 0;
+
+  logger.info(
+    `Jour ${currentDay}/${currentMonth} — ${allLabels.length} échéance(s) à notifier` +
+    (isDeadlineDay ? ' (JOUR J)' : ` (J-${minDaysUntil})`)
+  );
 
   try {
     // Envoyer aux OWNER/ADMIN de toutes les orgs avec abonnement actif
@@ -147,13 +260,13 @@ export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: nu
         try {
           await EmailService.sendFiscalDeadlineReminder(
             member.user.email,
-            upcomingDeadlines.map((d) => d.label),
+            allLabels,
           );
 
-          // Envoyer aussi une notification push
-          PushService.sendFiscalDeadlinesPush(
+          // Envoyer notification push
+          await PushService.sendFiscalDeadlinesPush(
             member.user.id,
-            upcomingDeadlines.map((d) => ({ titre: d.label, description: d.label })),
+            allLabels.map((label) => ({ titre: label, description: label })),
           );
 
           result.sent++;
@@ -169,7 +282,7 @@ export async function checkFiscalDeadlines(): Promise<{ sent: number; errors: nu
   }
 
   if (result.sent > 0) {
-    logger.info(`Rappels fiscaux envoyés: ${result.sent} emails`);
+    logger.info(`Rappels fiscaux envoyés: ${result.sent} (email + push)`);
   }
 
   return result;

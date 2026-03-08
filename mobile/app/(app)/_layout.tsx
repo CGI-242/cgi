@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
+import NotificationBell from "@/components/mobile/NotificationBell";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -223,7 +224,8 @@ export default function AppLayout() {
           onBack={handleMobileBack}
           onSearch={() => setSearchVisible(true)}
           rightElement={
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+              <NotificationBell />
               <TouchableOpacity onPress={toggleTheme} hitSlop={8}>
                 <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color={colors.textSecondary} />
               </TouchableOpacity>
@@ -296,6 +298,8 @@ export default function AppLayout() {
             </View>
 
             <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <NotificationBell />
+
               <TouchableOpacity
                 onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
                 accessibilityLabel={t("settings.languageSelect")}
