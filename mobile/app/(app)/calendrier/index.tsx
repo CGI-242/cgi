@@ -46,10 +46,12 @@ export default function CalendrierFiscal() {
     [moisActuel]
   );
 
-  // Échéances filtrées par jour sélectionné
+  // Échéances filtrées par jour sélectionné — échéances spécifiques (rouge) en premier
   const echeancesJourSelectionne = useMemo(() => {
     if (selectedJour === null) return [];
-    return echeancesDuMois.filter((e) => e.jour === selectedJour);
+    return echeancesDuMois
+      .filter((e) => e.jour === selectedJour)
+      .sort((a, b) => (a.recurrent === b.recurrent ? 0 : a.recurrent ? 1 : -1));
   }, [echeancesDuMois, selectedJour]);
 
   // Prochaine echeance
