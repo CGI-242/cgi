@@ -55,8 +55,8 @@ export default function CodeCGI() {
   }
 
   // Desktop/Tablet : split sommaire/contenu (plus large sur desktop)
-  const sommaireWidth = isTablet ? "35%" : "28%";
-  const contentWidth = isTablet ? "65%" : "72%";
+  const sommaireWidth = isTablet ? "38%" : "32%";
+  const contentWidth = isTablet ? "62%" : "68%";
 
   const toggleExpand = (id: string) => {
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
