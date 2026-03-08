@@ -69,6 +69,10 @@ export default function NotificationBell() {
         });
       }
     }
+    // Trier : spécifiques (rouge) en haut dans chaque groupe
+    for (const [, group] of map) {
+      group.echeances.sort((a, b) => (a.recurrent === b.recurrent ? 0 : a.recurrent ? 1 : -1));
+    }
     return Array.from(map.entries()).sort((a, b) => a[0] - b[0]);
   }, [echeancesAVenir]);
 
