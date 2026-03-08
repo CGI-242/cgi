@@ -119,9 +119,9 @@ const aTfnc6Annexes = parseArticles(tfnc6TvaAnnexesData.articles);
 export const tfnc2Node: SommaireNode = {
   id: "tfnc2", label: "2. Textes relatifs aux investissements",
   children: [
-    buildChapitreTree(aCharteInvest, charteInvestData.meta.chapitre_titre, "tfnc2-charte"),
-    buildChapitreTree(aDecretAgrement, decretAgrementData.meta.chapitre_titre, "tfnc2-agrement"),
-    buildChapitreTree(aZes, zesData.meta.chapitre_titre, "tfnc2-zes"),
+    { id: "tfnc2-charte", label: charteInvestData.meta.chapitre_titre, articles: aCharteInvest },
+    { id: "tfnc2-agrement", label: decretAgrementData.meta.chapitre_titre, articles: aDecretAgrement },
+    { id: "tfnc2-zes", label: zesData.meta.chapitre_titre, articles: aZes },
     { id: "tfnc2-sante", label: zonesFranchesSanteData.meta.chapitre_titre, articles: aZonesFranchesSante },
     { id: "tfnc2-infra", label: zoneValoInfraData.meta.chapitre_titre, articles: aZoneValoInfra },
     { id: "tfnc2-entrepreneuriat", label: entrepreneuriatData.meta.chapitre_titre, articles: aEntrepreneuriat },
