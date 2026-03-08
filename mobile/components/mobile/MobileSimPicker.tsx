@@ -5,6 +5,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
+// Classés par ordre d'article CGI 2026
 const SIMULATEURS: {
   id: string;
   titleKey: string;
@@ -12,21 +13,21 @@ const SIMULATEURS: {
   icon: keyof typeof Ionicons.glyphMap;
   route: string;
 }[] = [
-  { id: "paie", titleKey: "simulateur.paie.title", subtitleKey: "simulateur.paie.subtitle", icon: "wallet-outline", route: "/(app)/simulateur/paie" },
-  { id: "its", titleKey: "simulateur.its.title", subtitleKey: "simulateur.its.subtitle", icon: "people-outline", route: "/(app)/simulateur/its" },
-  { id: "is", titleKey: "simulateur.is.title", subtitleKey: "simulateur.is.subtitle", icon: "business-outline", route: "/(app)/simulateur/is" },
-  { id: "patente", titleKey: "simulateur.patente.title", subtitleKey: "simulateur.patente.subtitle", icon: "storefront-outline", route: "/(app)/simulateur/patente" },
   { id: "solde", titleKey: "simulateur.solde.title", subtitleKey: "simulateur.solde.subtitle", icon: "cash-outline", route: "/(app)/simulateur/solde-liquidation" },
+  { id: "is", titleKey: "simulateur.is.title", subtitleKey: "simulateur.is.subtitle", icon: "business-outline", route: "/(app)/simulateur/is" },
+  { id: "rts", titleKey: "simulateur.rts.title", subtitleKey: "simulateur.rts.subtitle", icon: "cut-outline", route: "/(app)/simulateur/retenue-source" },
+  { id: "isPara", titleKey: "simulateur.isPara.title", subtitleKey: "simulateur.isPara.subtitle", icon: "flame-outline", route: "/(app)/simulateur/is-parapetrolier" },
+  { id: "iba", titleKey: "simulateur.iba.title", subtitleKey: "simulateur.iba.subtitle", icon: "briefcase-outline", route: "/(app)/simulateur/iba" },
   { id: "ircm", titleKey: "simulateur.ircm.title", subtitleKey: "simulateur.ircm.subtitle", icon: "trending-up-outline", route: "/(app)/simulateur/ircm" },
   { id: "irf", titleKey: "simulateur.irfLoyers.title", subtitleKey: "simulateur.irfLoyers.subtitle", icon: "home-outline", route: "/(app)/simulateur/irf-loyers" },
-  { id: "iba", titleKey: "simulateur.iba.title", subtitleKey: "simulateur.iba.subtitle", icon: "briefcase-outline", route: "/(app)/simulateur/iba" },
-  { id: "tva", titleKey: "simulateur.tva.title", subtitleKey: "simulateur.tva.subtitle", icon: "receipt-outline", route: "/(app)/simulateur/tva" },
-  { id: "igf", titleKey: "simulateur.igf.title", subtitleKey: "simulateur.igf.subtitle", icon: "grid-outline", route: "/(app)/simulateur/igf" },
+  { id: "its", titleKey: "simulateur.its.title", subtitleKey: "simulateur.its.subtitle", icon: "people-outline", route: "/(app)/simulateur/its" },
+  { id: "paie", titleKey: "simulateur.paie.title", subtitleKey: "simulateur.paie.subtitle", icon: "wallet-outline", route: "/(app)/simulateur/paie" },
   { id: "enreg", titleKey: "simulateur.enreg.title", subtitleKey: "simulateur.enreg.subtitle", icon: "document-text-outline", route: "/(app)/simulateur/enregistrement" },
   { id: "cession", titleKey: "simulateur.cessionParts.title", subtitleKey: "simulateur.cessionParts.subtitle", icon: "swap-horizontal-outline", route: "/(app)/simulateur/cession-parts" },
   { id: "foncier", titleKey: "simulateur.foncier.title", subtitleKey: "simulateur.foncier.subtitle", icon: "map-outline", route: "/(app)/simulateur/contribution-fonciere" },
-  { id: "rts", titleKey: "simulateur.rts.title", subtitleKey: "simulateur.rts.subtitle", icon: "cut-outline", route: "/(app)/simulateur/retenue-source" },
-  { id: "isPara", titleKey: "simulateur.isPara.title", subtitleKey: "simulateur.isPara.subtitle", icon: "flame-outline", route: "/(app)/simulateur/is-parapetrolier" },
+  { id: "patente", titleKey: "simulateur.patente.title", subtitleKey: "simulateur.patente.subtitle", icon: "storefront-outline", route: "/(app)/simulateur/patente" },
+  { id: "igf", titleKey: "simulateur.igf.title", subtitleKey: "simulateur.igf.subtitle", icon: "grid-outline", route: "/(app)/simulateur/igf" },
+  { id: "tva", titleKey: "simulateur.tva.title", subtitleKey: "simulateur.tva.subtitle", icon: "receipt-outline", route: "/(app)/simulateur/tva" },
 ];
 
 export default function MobileSimPicker() {
