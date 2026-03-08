@@ -63,6 +63,7 @@ export default function ChatScreen() {
   const [showHistory, setShowHistory] = useState(false);
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [loadingHistory, setLoadingHistory] = useState(false);
+  const [historyRefreshKey, setHistoryRefreshKey] = useState(0);
 
   // Offline queue
   const isOnline = useOnlineStatus();
@@ -90,16 +91,19 @@ export default function ChatScreen() {
     isNearBottomRef.current = distanceFromBottom < 80;
   }, []);
 
-  // Charger historique à l'ouverture du panneau
+  // Charger historique à l'ouverture du panneau ou après rafraîchissement
   useEffect(() => {
     if (showHistory) {
       setLoadingHistory(true);
       getConversations()
         .then(setConversations)
-        .catch(() => setConversations([]))
+        .catch((err) => {
+          log.warn("Erreur chargement historique", err);
+          setConversations([]);
+        })
         .finally(() => setLoadingHistory(false));
     }
-  }, [showHistory]);
+  }, [showHistory, historyRefreshKey]);
 
 
   // Charger conversation existante
@@ -166,6 +170,8 @@ export default function ChatScreen() {
           pendingCitationsRef.current = [];
           setIsStreaming(false);
           scrollToBottom();
+          // Rafraîchir l'historique pour afficher la nouvelle conversation
+          if (showHistory) setHistoryRefreshKey((k) => k + 1);
         },
         onError: (error) => {
           setMessages((prev) => [...prev, {
@@ -214,8 +220,12 @@ export default function ChatScreen() {
           setConversationId(null);
           setStreamingContent("");
         }
+        // Forcer le rechargement depuis le serveur
+        setHistoryRefreshKey((k) => k + 1);
       } catch {
         toast(t("chat.connectionError"), "error");
+        // Recharger depuis le serveur pour resynchroniser
+        setHistoryRefreshKey((k) => k + 1);
       }
     },
     [conversationId]
