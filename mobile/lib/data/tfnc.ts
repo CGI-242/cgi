@@ -143,7 +143,7 @@ export const tfnc3Node: SommaireNode = {
     { id: "tfnc3-hydro", label: codeHydroData.meta.chapitre_titre, articles: aCodeHydro },
     { id: "tfnc3-redev", label: redevSuperfData.meta.chapitre_titre, articles: aRedevSuperf },
     {
-      id: "tfnc3-petrole", label: "3.3. Dispositions fiscales du secteur pétrolier",
+      id: "tfnc3-petrole", label: "3.3. Application des dispositions fiscales au secteur pétrolier amont",
       children: [tfnc3PetCh1, tfnc3PetCh2, tfnc3PetCh3, tfnc3PetCh4, tfnc3PetCh5, tfnc3PetCh6, tfnc3PetCh7],
     },
     buildChapitreTree(aTvaPetrolier, tvaPetrolierData.meta.chapitre_titre, "tfnc3-tva-pet"),
@@ -177,7 +177,6 @@ export const tfnc4Node: SommaireNode = {
     buildChapitreTree(aTaxeTransferts, taxeTransfertsData.meta.chapitre_titre, "tfnc4-transf"),
     { id: "tfnc4-tus", label: taxeUniqueSalData.meta.chapitre_titre, articles: aTaxeUniqueSal },
     { id: "tfnc4-emball", label: taxeEmballagesData.meta.chapitre_titre, articles: aTaxeEmballages },
-    { id: "tfnc4-rtn", label: taxeRtnData.meta.chapitre_titre, articles: aTaxeRtn },
     buildChapitreTree(aRedevCarbone, redevCarboneData.meta.chapitre_titre, "tfnc4-rcc"),
     { id: "tfnc4-polluantes", label: taxePolluantesData.meta.chapitre_titre, articles: aTaxePolluantes },
   ],
