@@ -27,6 +27,12 @@ export interface IbaInput {
 
   // ASDI
   montantAchatsImportations: number;
+
+  // Acomptes versés (minimum de perception)
+  acompte1: number;
+  acompte2: number;
+  acompte3: number;
+  acompte4: number;
 }
 
 export interface IbaResult {
@@ -63,6 +69,12 @@ export interface IbaResult {
   // IBA net final
   ibaNet: number;
   beneficeNet: number;
+
+  // Acomptes et solde
+  totalAcomptes: number;
+  solde: number;
+  creditImpot: boolean;
+  detailAcomptes: { label: string; montant: number }[];
 
   references: string[];
 }
@@ -111,6 +123,16 @@ export function calculerIBA(input: IbaInput): IbaResult {
 
   const beneficeNet = resultatFiscal - ibaNet;
 
+  // Acomptes versés (minimum de perception trimestriel)
+  const acomptes = [
+    { label: "1er trimestre (15 mars)", montant: Math.max(0, input.acompte1 || 0) },
+    { label: "2e trimestre (15 juin)", montant: Math.max(0, input.acompte2 || 0) },
+    { label: "3e trimestre (15 sept.)", montant: Math.max(0, input.acompte3 || 0) },
+    { label: "4e trimestre (15 déc.)", montant: Math.max(0, input.acompte4 || 0) },
+  ];
+  const totalAcomptes = acomptes.reduce((s, a) => s + a.montant, 0);
+  const solde = ibaNet - totalAcomptes;
+
   const references: string[] = [
     "Art. 93 — Principe IBA",
     "Art. 94 — Détermination du bénéfice (règles Art. 6+), report déficitaire max 3 ans",
@@ -139,6 +161,13 @@ export function calculerIBA(input: IbaInput): IbaResult {
     asdi,
     ibaNet,
     beneficeNet,
+    totalAcomptes: Math.round(totalAcomptes),
+    solde: Math.round(solde),
+    creditImpot: solde < 0,
+    detailAcomptes: acomptes.map((a) => ({
+      label: a.label,
+      montant: Math.round(a.montant),
+    })),
     references,
   };
 }

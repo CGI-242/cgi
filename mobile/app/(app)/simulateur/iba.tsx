@@ -32,6 +32,12 @@ export default function IbaScreen() {
   // ASDI
   const [montantAchats, setMontantAchats] = useState("");
 
+  // Acomptes versés
+  const [acompte1, setAcompte1] = useState("");
+  const [acompte2, setAcompte2] = useState("");
+  const [acompte3, setAcompte3] = useState("");
+  const [acompte4, setAcompte4] = useState("");
+
   const parse = (v: string) => parseFloat(v.replace(/\s/g, "")) || 0;
 
   const result = useMemo(() => {
@@ -47,8 +53,12 @@ export default function IbaScreen() {
       ard: parse(ard),
       reportDeficitaire: parse(reportDeficitaire),
       montantAchatsImportations: parse(montantAchats),
+      acompte1: parse(acompte1),
+      acompte2: parse(acompte2),
+      acompte3: parse(acompte3),
+      acompte4: parse(acompte4),
     });
-  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, ard, reportDeficitaire, montantAchats]);
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, ard, reportDeficitaire, montantAchats, acompte1, acompte2, acompte3, acompte4]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -86,6 +96,15 @@ export default function IbaScreen() {
           </Text>
           <NumberField label={t("simulateur.iba.achatsImportations")} value={montantAchats} onChange={setMontantAchats} />
 
+          {/* Acomptes versés */}
+          <Text style={[styles.sectionLabel, { color: colors.primary }]}>
+            {t("simulateur.iba.instalmentsPaid")}
+          </Text>
+          <NumberField label={t("simulateur.iba.q1")} value={acompte1} onChange={setAcompte1} />
+          <NumberField label={t("simulateur.iba.q2")} value={acompte2} onChange={setAcompte2} />
+          <NumberField label={t("simulateur.iba.q3")} value={acompte3} onChange={setAcompte3} />
+          <NumberField label={t("simulateur.iba.q4")} value={acompte4} onChange={setAcompte4} />
+
           <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.iba.legalRef")}</Text>
         </ScrollView>
 
@@ -115,16 +134,10 @@ export default function IbaScreen() {
               )}
               <ResultHighlight label={t("simulateur.iba.rf")} value={formatNumber(result.resultatFiscal)} variant="primary" />
 
-              {/* IBA brut vs Minimum */}
-              <SimulateurSection label={t("simulateur.iba.ibaBrutSection")} />
+              {/* IBA calculé */}
+              <SimulateurSection label={t("simulateur.iba.ibaCalculatedSection")} />
               <TableRow label={t("simulateur.iba.ibaBrutLabel")} value={formatNumber(result.ibaBrut)} />
               <TableRow label={t("simulateur.iba.rateApplied")} value={`${result.tauxIBA}%`} bg={colors.background} />
-              <TableRow label={t("simulateur.iba.minPerceptionBase")} value={formatNumber(result.baseMinimumPerception)} />
-              <TableRow label={t("simulateur.iba.minPerceptionRate")} value={`${result.tauxMinimum}%`} bg={colors.background} />
-              <TableRow label={t("simulateur.iba.minPerceptionAmount")} value={formatNumber(result.minimumPerception)} />
-              {result.minimumApplique && (
-                <TableRow label={t("simulateur.iba.minApplied")} value={t("simulateur.iba.minAppliedYes")} color={colors.warning} />
-              )}
               <ResultHighlight label={t("simulateur.iba.ibaRetenu")} value={formatNumber(result.ibaRetenu)} variant="primary" />
 
               {/* ASDI */}
@@ -136,9 +149,27 @@ export default function IbaScreen() {
                 </>
               )}
 
-              {/* Résultat final */}
+              {/* IBA net */}
               <SimulateurSection label={t("simulateur.iba.taxSection")} />
               <ResultHighlight label={t("simulateur.iba.taxDue")} value={formatNumber(result.ibaNet)} variant="danger" />
+
+              {/* Acomptes versés */}
+              <SimulateurSection label={t("simulateur.iba.instalmentsPaidTitle")} />
+              {result.detailAcomptes.map((a) => (
+                <TableRow key={a.label} label={a.label} value={a.montant > 0 ? formatNumber(a.montant) : "\u2014"} />
+              ))}
+              <ResultHighlight label={t("simulateur.iba.totalInstalments")} value={formatNumber(result.totalAcomptes)} variant="primary" />
+
+              {/* Solde */}
+              <SimulateurSection label={t("simulateur.iba.settlementBalance")} />
+              <TableRow label={t("simulateur.iba.ibaMinusInstalments")} value={`${formatNumber(result.ibaNet)} - ${formatNumber(result.totalAcomptes)}`} bg={colors.background} />
+
+              {result.creditImpot ? (
+                <ResultHighlight label={t("simulateur.iba.taxCredit")} value={formatNumber(Math.abs(result.solde))} variant="success" note={t("simulateur.iba.taxCreditNote")} />
+              ) : (
+                <ResultHighlight label={t("simulateur.iba.balanceToPay")} value={formatNumber(result.solde)} variant="danger" note={t("simulateur.iba.balanceNote")} />
+              )}
+
               <ResultHighlight label={t("simulateur.iba.netProfit")} value={formatNumber(result.beneficeNet)} variant="success" />
             </View>
           ) : (
