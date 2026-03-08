@@ -439,7 +439,7 @@
       "subtitle": "Acomptes trimestriels IS / IBA",
       "typeLabel": "Type d'impôt",
       "tabIS": "IS (Sociétés)",
-      "tabIBA": "IBA (Pers. physiques)",
+      "tabIBA": "IBA",
       "descriptionIS": "Minimum de perception IS : 1% des produits (Art. 86-C §3). Versé en 4 acomptes trimestriels (Art. 86-C §5). Imputable sur l'IS lors de la liquidation.",
       "descriptionIBA": "Minimum de perception IBA : 1,5% des produits (Art. 95 §4). Mêmes dispositions que l'IS (Art. 95 §6) — 4 acomptes trimestriels.",
       "baseCalc": "Base de calcul",

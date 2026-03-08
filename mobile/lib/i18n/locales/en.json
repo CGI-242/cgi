@@ -438,7 +438,7 @@
       "subtitle": "Quarterly IS / IBA instalments",
       "typeLabel": "Tax type",
       "tabIS": "IS (Companies)",
-      "tabIBA": "IBA (Individuals)",
+      "tabIBA": "IBA",
       "descriptionIS": "IS minimum perception: 1% of revenue (Art. 86-C §3). Paid in 4 quarterly instalments (Art. 86-C §5). Creditable against IS at settlement.",
       "descriptionIBA": "IBA minimum perception: 1.5% of revenue (Art. 95 §4). Same provisions as IS (Art. 95 §6) — 4 quarterly instalments.",
       "baseCalc": "Calculation base",
