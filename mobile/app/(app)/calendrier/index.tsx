@@ -6,7 +6,6 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import TableRow from "@/components/simulateur/TableRow";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import {
   genererGrilleCalendrier,
@@ -35,6 +34,7 @@ export default function CalendrierFiscal() {
 
   const now = new Date();
   const [moisActuel, setMoisActuel] = useState(now.getMonth());
+  const [selectedJour, setSelectedJour] = useState<number | null>(null);
   const annee = 2026;
 
   const nomMois = t(MOIS_KEYS[moisActuel]);
@@ -49,13 +49,13 @@ export default function CalendrierFiscal() {
     [moisActuel]
   );
 
-  // Trier les echeances par jour
-  const echeancesTriees = useMemo(
-    () => [...echeancesDuMois].sort((a, b) => a.jour - b.jour),
-    [echeancesDuMois]
-  );
+  // Échéances filtrées par jour sélectionné
+  const echeancesJourSelectionne = useMemo(() => {
+    if (selectedJour === null) return [];
+    return echeancesDuMois.filter((e) => e.jour === selectedJour);
+  }, [echeancesDuMois, selectedJour]);
 
-  // Prochaine echeance (tous mois confondus)
+  // Prochaine echeance
   const prochaineEcheance = useMemo(() => {
     let best: { echeance: EcheanceFiscale; jours: number } | null = null;
     for (const e of echeancesDuMois) {
@@ -67,8 +67,19 @@ export default function CalendrierFiscal() {
     return best;
   }, [echeancesDuMois, moisActuel]);
 
-  const moisPrecedent = () => setMoisActuel((m) => (m === 0 ? 11 : m - 1));
-  const moisSuivant = () => setMoisActuel((m) => (m === 11 ? 0 : m + 1));
+  const moisPrecedent = () => {
+    setMoisActuel((m) => (m === 0 ? 11 : m - 1));
+    setSelectedJour(null);
+  };
+  const moisSuivant = () => {
+    setMoisActuel((m) => (m === 11 ? 0 : m + 1));
+    setSelectedJour(null);
+  };
+
+  const handleJourPress = (jour: number | null) => {
+    if (jour === null) return;
+    setSelectedJour((prev) => (prev === jour ? null : jour));
+  };
 
   // ── Grille calendrier ──
   const renderGrille = () => (
@@ -112,52 +123,63 @@ export default function CalendrierFiscal() {
       {/* Grille jours */}
       {grille.map((semaine, si) => (
         <View key={si} style={{ flexDirection: "row" }}>
-          {semaine.map((jour, ji) => (
-            <View
-              key={`${si}-${ji}`}
-              style={{
-                flex: 1,
-                alignItems: "center",
-                justifyContent: "center",
-                height: 44,
-                borderWidth: jour.estAujourdhui ? 2 : 0,
-                borderColor: jour.estAujourdhui ? colors.primary : "transparent",
-                backgroundColor: jour.echeances.length > 0 && jour.jour ? `${colors.primary}15` : "transparent",
-              }}
-            >
-              {jour.jour !== null && (
-                <>
-                  <Text style={{
-                    fontSize: 15,
-                    fontFamily: jour.estAujourdhui ? fonts.extraBold : fonts.regular,
-                    fontWeight: jour.estAujourdhui ? fontWeights.extraBold : fontWeights.regular,
-                    color: jour.estPasse ? colors.textMuted : jour.estAujourdhui ? colors.primary : colors.text,
-                  }}>
-                    {jour.jour}
-                  </Text>
-                  {jour.echeances.length > 0 && (
-                    <View style={{
-                      position: "absolute", top: 2, right: 4,
-                      backgroundColor: jour.echeances.some((e) => e.recurrent) ? colors.accent : colors.danger,
-                      width: 16, height: 16, borderRadius: 8,
-                      alignItems: "center", justifyContent: "center",
+          {semaine.map((jour, ji) => {
+            const isSelected = jour.jour !== null && jour.jour === selectedJour;
+            const hasEcheances = jour.echeances.length > 0 && jour.jour !== null;
+            return (
+              <TouchableOpacity
+                key={`${si}-${ji}`}
+                onPress={() => handleJourPress(jour.jour)}
+                disabled={jour.jour === null}
+                activeOpacity={0.6}
+                style={{
+                  flex: 1,
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: 44,
+                  borderWidth: isSelected ? 2 : jour.estAujourdhui ? 2 : 0,
+                  borderColor: isSelected ? colors.primary : jour.estAujourdhui ? colors.accent : "transparent",
+                  backgroundColor: isSelected
+                    ? `${colors.primary}25`
+                    : hasEcheances
+                      ? `${colors.primary}15`
+                      : "transparent",
+                }}
+              >
+                {jour.jour !== null && (
+                  <>
+                    <Text style={{
+                      fontSize: 15,
+                      fontFamily: isSelected || jour.estAujourdhui ? fonts.extraBold : fonts.regular,
+                      fontWeight: isSelected || jour.estAujourdhui ? fontWeights.extraBold : fontWeights.regular,
+                      color: jour.estPasse && !isSelected ? colors.textMuted : isSelected ? colors.primary : jour.estAujourdhui ? colors.accent : colors.text,
                     }}>
-                      <Text style={{ fontSize: 11, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#fff" }}>
-                        {jour.echeances.length}
-                      </Text>
-                    </View>
-                  )}
-                </>
-              )}
-            </View>
-          ))}
+                      {jour.jour}
+                    </Text>
+                    {hasEcheances && (
+                      <View style={{
+                        position: "absolute", top: 2, right: 4,
+                        backgroundColor: jour.echeances.some((e) => e.recurrent) ? colors.accent : colors.danger,
+                        width: 16, height: 16, borderRadius: 8,
+                        alignItems: "center", justifyContent: "center",
+                      }}>
+                        <Text style={{ fontSize: 11, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#fff" }}>
+                          {jour.echeances.length}
+                        </Text>
+                      </View>
+                    )}
+                  </>
+                )}
+              </TouchableOpacity>
+            );
+          })}
         </View>
       ))}
 
       {/* Legende */}
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginTop: 12, paddingTop: 12, borderTopWidth: 1, borderTopColor: colors.border }}>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-          <View style={{ width: 12, height: 12, borderWidth: 2, borderColor: colors.primary }} />
+          <View style={{ width: 12, height: 12, borderWidth: 2, borderColor: colors.accent }} />
           <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeAujourdhui")}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
@@ -175,37 +197,57 @@ export default function CalendrierFiscal() {
   // ── Liste echeances (panneau droit) ──
   const renderEcheances = () => (
     <View style={{ flex: 1 }}>
-      <SimulateurSection label={t("calendrier.echeancesDuMois", { mois: nomMois })} />
+      {selectedJour === null ? (
+        <>
+          {/* Aucun jour sélectionné — invitation + prochaine échéance */}
+          <View style={{ paddingTop: 40, alignItems: "center", paddingHorizontal: 20 }}>
+            <Ionicons name="calendar-outline" size={40} color={colors.disabled} />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.textSecondary, textAlign: "center", marginTop: 12 }}>
+              {t("calendrier.selectDay")}
+            </Text>
+          </View>
 
-      {echeancesTriees.length === 0 ? (
-        <SimulateurEmptyState message={t("calendrier.aucuneEcheance")} />
+          {prochaineEcheance && (
+            <View style={{ marginTop: 24 }}>
+              <SimulateurSection label={t("calendrier.prochaineEcheance")} />
+              <ResultHighlight
+                label={prochaineEcheance.echeance.label}
+                value={t("calendrier.dansXJours", { jours: prochaineEcheance.jours })}
+                variant="primary"
+                note={`${prochaineEcheance.echeance.jour} ${nomMois}`}
+              />
+            </View>
+          )}
+        </>
       ) : (
         <>
-          {echeancesTriees.map((e, i) => (
-            <ResultHighlight
-              key={`${e.descriptionKey}-${i}`}
-              label={`${e.jour} ${nomMois}`}
-              value={e.label}
-              variant={e.recurrent ? "primary" : "danger"}
-              note={t(e.descriptionKey)}
-            />
-          ))}
-        </>
-      )}
+          <SimulateurSection label={`${selectedJour} ${nomMois} ${annee}`} />
 
-      {prochaineEcheance && (
-        <>
-          <SimulateurSection label={t("calendrier.prochaineEcheance")} />
-          <ResultHighlight
-            label={prochaineEcheance.echeance.label}
-            value={t("calendrier.dansXJours", { jours: prochaineEcheance.jours })}
-            variant="primary"
-          />
+          {echeancesJourSelectionne.length === 0 ? (
+            <SimulateurEmptyState message={t("calendrier.aucuneEcheance")} />
+          ) : (
+            <>
+              <View style={{ paddingHorizontal: 14, paddingBottom: 8 }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.textSecondary }}>
+                  {echeancesJourSelectionne.length} {echeancesJourSelectionne.length > 1 ? t("calendrier.obligations") : t("calendrier.obligation")}
+                </Text>
+              </View>
+              {echeancesJourSelectionne.map((e, i) => (
+                <ResultHighlight
+                  key={`${e.descriptionKey}-${i}`}
+                  label={e.label}
+                  value={e.recurrent ? t("calendrier.legendeRecurrent") : t("calendrier.legendeEcheance")}
+                  variant={e.recurrent ? "primary" : "danger"}
+                  note={t(e.descriptionKey)}
+                />
+              ))}
+            </>
+          )}
         </>
       )}
 
       {/* Reference legale */}
-      <View style={{ padding: 14 }}>
+      <View style={{ padding: 14, marginTop: 16 }}>
         <Text style={{ fontSize: 12, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
           {t("calendrier.legalRef")}
         </Text>
