@@ -181,26 +181,15 @@ export default function CalendrierFiscal() {
         <SimulateurEmptyState message={t("calendrier.aucuneEcheance")} />
       ) : (
         <>
-          {echeancesTriees.map((e, i) => {
-            if (e.recurrent) {
-              return (
-                <TableRow
-                  key={`${e.descriptionKey}-${i}`}
-                  label={`${e.jour} ${nomMois}`}
-                  value={t(`dashboard.deadlines.${e.label === "TVA (mensuel)" ? "tva" : "its"}`)}
-                />
-              );
-            }
-            return (
-              <ResultHighlight
-                key={`${e.descriptionKey}-${i}`}
-                label={`${e.jour} ${nomMois}`}
-                value={e.label}
-                variant="danger"
-                note={t(e.descriptionKey)}
-              />
-            );
-          })}
+          {echeancesTriees.map((e, i) => (
+            <ResultHighlight
+              key={`${e.descriptionKey}-${i}`}
+              label={`${e.jour} ${nomMois}`}
+              value={e.label}
+              variant={e.recurrent ? "primary" : "danger"}
+              note={t(e.descriptionKey)}
+            />
+          ))}
         </>
       )}
 
