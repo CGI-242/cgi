@@ -111,86 +111,86 @@ const at2l8 = parseArticles(t2l8Data.articles);
 const at2tnc = parseArticles(t2tncData.articles);
 
 // Livre 1
-const t2l1ch1 = buildChapitreTree(at2l1ch1, `Chapitre 1 — ${t2l1ch1Data.meta.chapitre_titre}`, "t2l1ch1");
-const t2l1ch2 = buildChapitreTree(at2l1ch2, `Chapitre 2 — ${t2l1ch2Data.meta.chapitre_titre}`, "t2l1ch2");
-const t2l1ch3 = buildChapitreTree(at2l1ch3, `Chapitre 3 — ${t2l1ch3Data.meta.chapitre_titre}`, "t2l1ch3");
-const t2l1ch4 = buildChapitreTree(at2l1ch4, `Chapitre 4 — ${t2l1ch4Data.meta.chapitre_titre}`, "t2l1ch4");
-const t2l1ch5 = buildChapitreTree(at2l1ch5, `Chapitre 5 — ${t2l1ch5Data.meta.chapitre_titre}`, "t2l1ch5");
-const t2l1ch6 = buildChapitreTree(at2l1ch6, `Chapitre 6 — ${t2l1ch6Data.meta.chapitre_titre}`, "t2l1ch6");
-const t2l1ch7 = buildChapitreTree(at2l1ch7, `Chapitre 7 — ${t2l1ch7Data.meta.chapitre_titre}`, "t2l1ch7");
-const t2l1ch8 = buildChapitreTree(at2l1ch8, `Chapitre 8 — ${t2l1ch8Data.meta.chapitre_titre}`, "t2l1ch8");
-const t2l1ch9 = buildChapitreTree(at2l1ch9, `Chapitre 9 — ${t2l1ch9Data.meta.chapitre_titre}`, "t2l1ch9");
-const t2l1ch10 = buildChapitreTree(at2l1ch10, `Chapitre 10 — ${t2l1ch10Data.meta.chapitre_titre}`, "t2l1ch10");
-const t2l1ch11 = buildChapitreTree(at2l1ch11, `Chapitre 11 — ${t2l1ch11Data.meta.chapitre_titre}`, "t2l1ch11");
-const t2l1ch12 = buildChapitreTree(at2l1ch12, `Chapitre 12 — ${t2l1ch12Data.meta.chapitre_titre}`, "t2l1ch12");
-const t2l1ch13 = buildChapitreTree(at2l1ch13, `Chapitre 13 — ${t2l1ch13Data.meta.chapitre_titre}`, "t2l1ch13");
-const t2l1ch14 = buildChapitreTree(at2l1ch14, `Chapitre 14 — ${t2l1ch14Data.meta.chapitre_titre}`, "t2l1ch14");
-const t2l1ch15 = buildChapitreTree(at2l1ch15, `Chapitre 15 — ${t2l1ch15Data.meta.chapitre_titre}`, "t2l1ch15");
-const t2l1ch16 = buildChapitreTree(at2l1ch16, `Chapitre 16 — ${t2l1ch16Data.meta.chapitre_titre}`, "t2l1ch16");
+const t2l1ch1 = buildChapitreTree(at2l1ch1, `Chapitre 1 - ${t2l1ch1Data.meta.chapitre_titre}`, "t2l1ch1");
+const t2l1ch2 = buildChapitreTree(at2l1ch2, `Chapitre 2 - ${t2l1ch2Data.meta.chapitre_titre}`, "t2l1ch2");
+const t2l1ch3 = buildChapitreTree(at2l1ch3, `Chapitre 3 - ${t2l1ch3Data.meta.chapitre_titre}`, "t2l1ch3");
+const t2l1ch4 = buildChapitreTree(at2l1ch4, `Chapitre 4 - ${t2l1ch4Data.meta.chapitre_titre}`, "t2l1ch4");
+const t2l1ch5 = buildChapitreTree(at2l1ch5, `Chapitre 5 - ${t2l1ch5Data.meta.chapitre_titre}`, "t2l1ch5");
+const t2l1ch6 = buildChapitreTree(at2l1ch6, `Chapitre 6 - ${t2l1ch6Data.meta.chapitre_titre}`, "t2l1ch6");
+const t2l1ch7 = buildChapitreTree(at2l1ch7, `Chapitre 7 - ${t2l1ch7Data.meta.chapitre_titre}`, "t2l1ch7");
+const t2l1ch8 = buildChapitreTree(at2l1ch8, `Chapitre 8 - ${t2l1ch8Data.meta.chapitre_titre}`, "t2l1ch8");
+const t2l1ch9 = buildChapitreTree(at2l1ch9, `Chapitre 9 - ${t2l1ch9Data.meta.chapitre_titre}`, "t2l1ch9");
+const t2l1ch10 = buildChapitreTree(at2l1ch10, `Chapitre 10 - ${t2l1ch10Data.meta.chapitre_titre}`, "t2l1ch10");
+const t2l1ch11 = buildChapitreTree(at2l1ch11, `Chapitre 11 - ${t2l1ch11Data.meta.chapitre_titre}`, "t2l1ch11");
+const t2l1ch12 = buildChapitreTree(at2l1ch12, `Chapitre 12 - ${t2l1ch12Data.meta.chapitre_titre}`, "t2l1ch12");
+const t2l1ch13 = buildChapitreTree(at2l1ch13, `Chapitre 13 - ${t2l1ch13Data.meta.chapitre_titre}`, "t2l1ch13");
+const t2l1ch14 = buildChapitreTree(at2l1ch14, `Chapitre 14 - ${t2l1ch14Data.meta.chapitre_titre}`, "t2l1ch14");
+const t2l1ch15 = buildChapitreTree(at2l1ch15, `Chapitre 15 - ${t2l1ch15Data.meta.chapitre_titre}`, "t2l1ch15");
+const t2l1ch16 = buildChapitreTree(at2l1ch16, `Chapitre 16 - ${t2l1ch16Data.meta.chapitre_titre}`, "t2l1ch16");
 // Livre 2
-const t2l2ch1 = buildChapitreTree(at2l2ch1, `Chapitre 1 — ${t2l2ch1Data.meta.chapitre_titre}`, "t2l2ch1");
-const t2l2ch2 = buildChapitreTree(at2l2ch2, `Chapitre 2 — ${t2l2ch2Data.meta.chapitre_titre}`, "t2l2ch2");
-const t2l2ch3 = buildChapitreTree(at2l2ch3, `Chapitre 3 — ${t2l2ch3Data.meta.chapitre_titre}`, "t2l2ch3");
-const t2l2ch4 = buildChapitreTree(at2l2ch4, `Chapitre 4 — ${t2l2ch4Data.meta.chapitre_titre}`, "t2l2ch4");
-const t2l2ch5 = buildChapitreTree(at2l2ch5, `Chapitre 5 — ${t2l2ch5Data.meta.chapitre_titre}`, "t2l2ch5");
-const t2l2ch6 = buildChapitreTree(at2l2ch6, `Chapitre 6 — ${t2l2ch6Data.meta.chapitre_titre}`, "t2l2ch6");
-const t2l2nc = buildChapitreTree(at2l2nc, "Droit de timbre non codifié", "t2l2nc");
+const t2l2ch1 = buildChapitreTree(at2l2ch1, `Chapitre 1 - ${t2l2ch1Data.meta.chapitre_titre}`, "t2l2ch1");
+const t2l2ch2 = buildChapitreTree(at2l2ch2, `Chapitre 2 - ${t2l2ch2Data.meta.chapitre_titre}`, "t2l2ch2");
+const t2l2ch3 = buildChapitreTree(at2l2ch3, `Chapitre 3 - ${t2l2ch3Data.meta.chapitre_titre}`, "t2l2ch3");
+const t2l2ch4 = buildChapitreTree(at2l2ch4, `Chapitre 4 - ${t2l2ch4Data.meta.chapitre_titre}`, "t2l2ch4");
+const t2l2ch5 = buildChapitreTree(at2l2ch5, `Chapitre 5 - ${t2l2ch5Data.meta.chapitre_titre}`, "t2l2ch5");
+const t2l2ch6 = buildChapitreTree(at2l2ch6, `Chapitre 6 - ${t2l2ch6Data.meta.chapitre_titre}`, "t2l2ch6");
+const t2l2nc = buildChapitreTree(at2l2nc, "Droits de timbre non codifiés", "t2l2nc");
 // Livre 3
-const t2l3ch1 = buildChapitreTree(at2l3ch1, `Chapitre 1 — ${t2l3ch1Data.meta.chapitre_titre}`, "t2l3ch1");
-const t2l3ch2 = buildChapitreTree(at2l3ch2, `Chapitre 2 — ${t2l3ch2Data.meta.chapitre_titre}`, "t2l3ch2");
-const t2l3ch3 = buildChapitreTree(at2l3ch3, `Chapitre 3 — ${t2l3ch3Data.meta.chapitre_titre}`, "t2l3ch3");
-const t2l3ch4 = buildChapitreTree(at2l3ch4, `Chapitre 4 — ${t2l3ch4Data.meta.chapitre_titre}`, "t2l3ch4");
+const t2l3ch1 = buildChapitreTree(at2l3ch1, `Chapitre 1 - ${t2l3ch1Data.meta.chapitre_titre}`, "t2l3ch1");
+const t2l3ch2 = buildChapitreTree(at2l3ch2, `Chapitre 2 - ${t2l3ch2Data.meta.chapitre_titre}`, "t2l3ch2");
+const t2l3ch3 = buildChapitreTree(at2l3ch3, `Chapitre 3 - ${t2l3ch3Data.meta.chapitre_titre}`, "t2l3ch3");
+const t2l3ch4 = buildChapitreTree(at2l3ch4, `Chapitre 4 - ${t2l3ch4Data.meta.chapitre_titre}`, "t2l3ch4");
 // Livre 4
-const t2l4ch1 = buildChapitreTree(at2l4ch1, `Chapitre 1 — ${t2l4ch1Data.meta.chapitre_titre}`, "t2l4ch1");
-const t2l4ch2 = buildChapitreTree(at2l4ch2, `Chapitre 2 — ${t2l4ch2Data.meta.chapitre_titre}`, "t2l4ch2");
+const t2l4ch1 = buildChapitreTree(at2l4ch1, `Chapitre 1 - ${t2l4ch1Data.meta.chapitre_titre}`, "t2l4ch1");
+const t2l4ch2 = buildChapitreTree(at2l4ch2, `Chapitre 2 - ${t2l4ch2Data.meta.chapitre_titre}`, "t2l4ch2");
 // Livre 5
-const t2l5ch1 = buildChapitreTree(at2l5ch1, `Chapitre 1 — ${t2l5ch1Data.meta.chapitre_titre}`, "t2l5ch1");
-const t2l5ch2 = buildChapitreTree(at2l5ch2, `Chapitre 2 — ${t2l5ch2Data.meta.chapitre_titre}`, "t2l5ch2");
-const t2l5ch3 = buildChapitreTree(at2l5ch3, `Chapitre 3 — ${t2l5ch3Data.meta.chapitre_titre}`, "t2l5ch3");
-const t2l5ch4 = buildChapitreTree(at2l5ch4, `Chapitre 4 — ${t2l5ch4Data.meta.chapitre_titre}`, "t2l5ch4");
-const t2l5ch5 = buildChapitreTree(at2l5ch5, `Chapitre 5 — ${t2l5ch5Data.meta.chapitre_titre}`, "t2l5ch5");
-const t2l5ch6 = buildChapitreTree(at2l5ch6, `Chapitre 6 — ${t2l5ch6Data.meta.chapitre_titre}`, "t2l5ch6");
-const t2l5ch7 = buildChapitreTree(at2l5ch7, `Chapitre 7 — ${t2l5ch7Data.meta.chapitre_titre}`, "t2l5ch7");
-const t2l5ch8 = buildChapitreTree(at2l5ch8, `Chapitre 8 — ${t2l5ch8Data.meta.chapitre_titre}`, "t2l5ch8");
-const t2l5ch9 = buildChapitreTree(at2l5ch9, `Chapitre 9 — ${t2l5ch9Data.meta.chapitre_titre}`, "t2l5ch9");
-const t2l5ch10 = buildChapitreTree(at2l5ch10, `Chapitre 10 — ${t2l5ch10Data.meta.chapitre_titre}`, "t2l5ch10");
-const t2l5ch11 = buildChapitreTree(at2l5ch11, `Chapitre 11 — ${t2l5ch11Data.meta.chapitre_titre}`, "t2l5ch11");
-const t2l5ch12 = buildChapitreTree(at2l5ch12, `Chapitre 12 — ${t2l5ch12Data.meta.chapitre_titre}`, "t2l5ch12");
-const t2l5ch13 = buildChapitreTree(at2l5ch13, `Chapitre 13 — ${t2l5ch13Data.meta.chapitre_titre}`, "t2l5ch13");
-const t2l5ch14 = buildChapitreTree(at2l5ch14, `Chapitre 14 — ${t2l5ch14Data.meta.chapitre_titre}`, "t2l5ch14");
+const t2l5ch1 = buildChapitreTree(at2l5ch1, `Chapitre 1 - ${t2l5ch1Data.meta.chapitre_titre}`, "t2l5ch1");
+const t2l5ch2 = buildChapitreTree(at2l5ch2, `Chapitre 2 - ${t2l5ch2Data.meta.chapitre_titre}`, "t2l5ch2");
+const t2l5ch3 = buildChapitreTree(at2l5ch3, `Chapitre 3 - ${t2l5ch3Data.meta.chapitre_titre}`, "t2l5ch3");
+const t2l5ch4 = buildChapitreTree(at2l5ch4, `Chapitre 4 - ${t2l5ch4Data.meta.chapitre_titre}`, "t2l5ch4");
+const t2l5ch5 = buildChapitreTree(at2l5ch5, `Chapitre 5 - ${t2l5ch5Data.meta.chapitre_titre}`, "t2l5ch5");
+const t2l5ch6 = buildChapitreTree(at2l5ch6, `Chapitre 6 - ${t2l5ch6Data.meta.chapitre_titre}`, "t2l5ch6");
+const t2l5ch7 = buildChapitreTree(at2l5ch7, `Chapitre 7 - ${t2l5ch7Data.meta.chapitre_titre}`, "t2l5ch7");
+const t2l5ch8 = buildChapitreTree(at2l5ch8, `Chapitre 8 - ${t2l5ch8Data.meta.chapitre_titre}`, "t2l5ch8");
+const t2l5ch9 = buildChapitreTree(at2l5ch9, `Chapitre 9 - ${t2l5ch9Data.meta.chapitre_titre}`, "t2l5ch9");
+const t2l5ch10 = buildChapitreTree(at2l5ch10, `Chapitre 10 - ${t2l5ch10Data.meta.chapitre_titre}`, "t2l5ch10");
+const t2l5ch11 = buildChapitreTree(at2l5ch11, `Chapitre 11 - ${t2l5ch11Data.meta.chapitre_titre}`, "t2l5ch11");
+const t2l5ch12 = buildChapitreTree(at2l5ch12, `Chapitre 12 - ${t2l5ch12Data.meta.chapitre_titre}`, "t2l5ch12");
+const t2l5ch13 = buildChapitreTree(at2l5ch13, `Chapitre 13 - ${t2l5ch13Data.meta.chapitre_titre}`, "t2l5ch13");
+const t2l5ch14 = buildChapitreTree(at2l5ch14, `Chapitre 14 - ${t2l5ch14Data.meta.chapitre_titre}`, "t2l5ch14");
 // Livres 6, 7, 8
-const t2l6Node: SommaireNode = { id: "t2l6", label: `Livre 6 — ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"} (Abrogé)`, articles: at2l6 };
-const t2l7Node: SommaireNode = { id: "t2l7", label: "Livre 7 — Taxe sur les appareils automatiques (Abrogé)", articles: at2l7 };
-const t2l8Node: SommaireNode = { id: "t2l8", label: `Livre 8 — ${t2l8Data.meta.chapitre_titre || "Droits relatifs aux domaines de l'État"}`, articles: at2l8 };
+const t2l6Node: SommaireNode = { id: "t2l6", label: `Livre 6 - ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"} (Abrogé)`, articles: at2l6 };
+const t2l7Node: SommaireNode = { id: "t2l7", label: "Livre 7 - Taxe sur les appareils automatiques", articles: at2l7 };
+const t2l8Node: SommaireNode = { id: "t2l8", label: `Livre 8 - ${t2l8Data.meta.chapitre_titre || "Droits relatifs aux domaines de l'État"}`, articles: at2l8 };
 
 export const tome2Node: SommaireNode = {
   id: "tome2",
-  label: "Tome 2 — Enregistrement, timbre et curatelle",
+  label: "Tome 2 - Enregistrement, timbre et curatelle",
   children: [
     {
       id: "t2-l1",
-      label: "Livre 1 — Enregistrement des actes et mutations",
+      label: "Livre 1 - Enregistrement des actes et mutations",
       children: [t2l1ch1, t2l1ch2, t2l1ch3, t2l1ch4, t2l1ch5, t2l1ch6, t2l1ch7, t2l1ch8,
         t2l1ch9, t2l1ch10, t2l1ch11, t2l1ch12, t2l1ch13, t2l1ch14, t2l1ch15, t2l1ch16],
     },
     {
       id: "t2-l2",
-      label: "Livre 2 — Contribution du timbre",
+      label: "Livre 2 - Contribution du timbre",
       children: [t2l2ch1, t2l2ch2, t2l2ch3, t2l2ch4, t2l2ch5, t2l2ch6, t2l2nc],
     },
     {
       id: "t2-l3",
-      label: "Livre 3 — Impôt sur le revenu des valeurs mobilières (Abrogé)",
+      label: "Livre 3 - Impôt sur le revenu des valeurs mobilières (Abrogé)",
       children: [t2l3ch1, t2l3ch2, t2l3ch3, t2l3ch4],
     },
     {
       id: "t2-l4",
-      label: "Livre 4 — Taxe immobilière",
+      label: "Livre 4 - Taxe immobilière",
       children: [t2l4ch1, t2l4ch2],
     },
     {
       id: "t2-l5",
-      label: "Livre 5 — Curatelle aux successions et biens vacants",
+      label: "Livre 5 - Curatelle",
       children: [t2l5ch1, t2l5ch2, t2l5ch3, t2l5ch4, t2l5ch5, t2l5ch6, t2l5ch7,
         t2l5ch8, t2l5ch9, t2l5ch10, t2l5ch11, t2l5ch12, t2l5ch13, t2l5ch14],
     },
