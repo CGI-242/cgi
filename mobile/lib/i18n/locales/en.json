@@ -247,7 +247,7 @@
       "consultCgi": "Browse CGI 2026",
       "consultCgiDesc": "General Tax Code in force",
       "simulate": "Simulate a tax",
-      "simulateDesc": "ITS, Minimum IS, Business license, IS balance",
+      "simulateDesc": "IS, ITS, VAT, Payroll, License, IRCM and 9 more",
       "chatAi": "AI Tax Chat",
       "chatAiDesc": "Intelligent tax assistant",
       "settings": "Settings",

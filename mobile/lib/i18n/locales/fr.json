@@ -247,7 +247,7 @@
       "consultCgi": "Consulter le CGI 2026",
       "consultCgiDesc": "Code Général des Impôts en vigueur",
       "simulate": "Simuler un impôt",
-      "simulateDesc": "ITS, Minimum IS, Patente, Solde IS",
+      "simulateDesc": "IS, ITS, TVA, Paie, Patente, IRCM et 9 autres",
       "chatAi": "Chat IA fiscal",
       "chatAiDesc": "Assistant fiscal intelligent",
       "settings": "Paramètres",

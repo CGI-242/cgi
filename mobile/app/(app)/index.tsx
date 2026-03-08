@@ -205,7 +205,7 @@ export default function Dashboard() {
                 <View
                   key={`${e.jour}-${e.label}`}
                   style={{
-                    width: "48.5%",
+                    width: "31.5%",
                     backgroundColor: estAujourdhui ? `${colors.primary}10` : colors.card,
                     borderWidth: 1,
                     borderColor: estAujourdhui ? colors.primary : colors.border,
