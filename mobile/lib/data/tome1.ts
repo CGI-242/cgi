@@ -76,69 +76,62 @@ const articlesP4 = parseArticles(p4Data.articles);
 // Annexes
 const articlesAnnexes = parseArticles(annexesData.articles);
 
-// Partie 1 - Livre 1
-const chapitre1 = buildChapitreTree(articles1, `Chapitre 1 — ${chapitre1Data.meta.chapitre_titre}`, "ch1");
-const chapitre2 = buildChapitreTree(articles2, `Chapitre 2 — ${chapitre2Data.meta.chapitre_titre}`, "ch2");
-const chapitre3 = buildChapitreTree(articles3, `Chapitre 3 — ${chapitre3Data.meta.chapitre_titre}`, "ch3");
-const chapitre4 = buildChapitreTree(articles4, `Chapitre 4 — ${chapitre4Data.meta.chapitre_titre}`, "ch4");
-const chapitre5 = buildChapitreTree(articles5, `Chapitre 5 — ${chapitre5Data.meta.chapitre_titre}`, "ch5");
-const chapitre6 = buildChapitreTree(articles6, `Chapitre 6 — ${chapitre6Data.meta.chapitre_titre}`, "ch6");
+// Partie 1
+const chapitre1 = buildChapitreTree(articles1, "Impôt sur les sociétés (IS)", "ch1");
+const chapitre2 = buildChapitreTree(articles2, "Impôts sur les revenus", "ch2");
+const chapitre3 = buildChapitreTree(articles3, "Sans objet", "ch3");
+const chapitre4 = buildChapitreTree(articles4, "Dispositions communes", "ch4");
+const chapitre5 = buildChapitreTree(articles5, "Taxes diverses", "ch5");
+const chapitre6 = buildChapitreTree(articles6, "Dispositions diverses", "ch6");
 const livre2: SommaireNode = {
   id: "t1-p1-l2",
-  label: `Livre 2 — ${livre2Data.meta.chapitre_titre}`,
+  label: "Impôt sur le chiffre d'affaires intérieur",
   articles: articlesL2,
 };
 
 // Partie 2 - Titre 1
-const p2t1ch1 = buildChapitreTree(articlesP2C1, `Chapitre 1 — ${p2t1ch1Data.meta.chapitre_titre}`, "p2t1ch1");
-const p2t1ch2 = buildChapitreTree(articlesP2C2, `Chapitre 2 — ${p2t1ch2Data.meta.chapitre_titre}`, "p2t1ch2");
-const p2t1ch3 = buildChapitreTree(articlesP2C3, `Chapitre 3 — ${p2t1ch3Data.meta.chapitre_titre}`, "p2t1ch3");
+const p2t1ch1 = buildChapitreTree(articlesP2C1, "Impôts et taxes obligatoires", "p2t1ch1");
+const p2t1ch2 = buildChapitreTree(articlesP2C2, "Taxes facultatives", "p2t1ch2");
+const p2t1ch3 = buildChapitreTree(articlesP2C3, "Centimes additionnels à certains impôts", "p2t1ch3");
 
 // Partie 3 - Titre 1
-const p3t1ch1 = buildChapitreTree(articlesP3T1C1, `Chapitre 1 — ${p3t1ch1Data.meta.chapitre_titre}`, "p3t1ch1");
-const p3t1ch2 = buildChapitreTree(articlesP3T1C2, `Chapitre 2 — ${p3t1ch2Data.meta.chapitre_titre}`, "p3t1ch2");
-const p3t1ch3 = buildChapitreTree(articlesP3T1C3, `Chapitre 3 — ${p3t1ch3Data.meta.chapitre_titre}`, "p3t1ch3");
-const p3t1ch4 = buildChapitreTree(articlesP3T1C4, `Chapitre 4 — ${p3t1ch4Data.meta.chapitre_titre}`, "p3t1ch4");
-const p3t1ch5 = buildChapitreTree(articlesP3T1C5, `Chapitre 5 — ${p3t1ch5Data.meta.chapitre_titre}`, "p3t1ch5");
-const p3t1ch6 = buildChapitreTree(articlesP3T1C6, `Chapitre 6 — ${p3t1ch6Data.meta.chapitre_titre}`, "p3t1ch6");
-const p3t1ch7 = buildChapitreTree(articlesP3T1C7, `Chapitre 7 — ${p3t1ch7Data.meta.chapitre_titre}`, "p3t1ch7");
-const p3t1ch8 = buildChapitreTree(articlesP3T1C8, `Chapitre 8 — ${p3t1ch8Data.meta.chapitre_titre}`, "p3t1ch8");
-const p3t1ch9 = buildChapitreTree(articlesP3T1C9, `Chapitre 9 — ${p3t1ch9Data.meta.chapitre_titre}`, "p3t1ch9");
+const p3t1ch1 = buildChapitreTree(articlesP3T1C1, "Sanctions pour défaut de déclaration", "p3t1ch1");
+const p3t1ch2 = buildChapitreTree(articlesP3T1C2, "Prescriptions", "p3t1ch2");
+const p3t1ch3 = buildChapitreTree(articlesP3T1C3, "Changement du lieu d'imposition", "p3t1ch3");
+const p3t1ch4 = buildChapitreTree(articlesP3T1C4, "Conventions fiscales", "p3t1ch4");
+const p3t1ch5 = buildChapitreTree(articlesP3T1C5, "Vérification des contribuables", "p3t1ch5");
+const p3t1ch6 = buildChapitreTree(articlesP3T1C6, "Droit de communication", "p3t1ch6");
+const p3t1ch7 = buildChapitreTree(articlesP3T1C7, "Commission des impôts", "p3t1ch7");
+const p3t1ch8 = buildChapitreTree(articlesP3T1C8, "Secret professionnel", "p3t1ch8");
+const p3t1ch9 = buildChapitreTree(articlesP3T1C9, "Marchés publics", "p3t1ch9");
 
 // Partie 3 - Titre 2
-const p3t2ch1 = buildChapitreTree(articlesP3T2C1, `Chapitre 1 — ${p3t2ch1Data.meta.chapitre_titre}`, "p3t2ch1");
-const p3t2ch2 = buildChapitreTree(articlesP3T2C2, `Chapitre 2 — ${p3t2ch2Data.meta.chapitre_titre}`, "p3t2ch2");
-const p3t2ch3 = buildChapitreTree(articlesP3T2C3, `Chapitre 3 — ${p3t2ch3Data.meta.chapitre_titre}`, "p3t2ch3");
+const p3t2ch1 = buildChapitreTree(articlesP3T2C1, "Émission des rôles", "p3t2ch1");
+const p3t2ch2 = buildChapitreTree(articlesP3T2C2, "Approbation des rôles", "p3t2ch2");
+const p3t2ch3 = buildChapitreTree(articlesP3T2C3, "Mise en recouvrement", "p3t2ch3");
 
 // Partie 3 - Titre 3
-const p3t3ch1 = buildChapitreTree(articlesP3T3C1, `Chapitre 1 — ${p3t3ch1Data.meta.chapitre_titre}`, "p3t3ch1");
-const p3t3ch2 = buildChapitreTree(articlesP3T3C2, `Chapitre 2 — ${p3t3ch2Data.meta.chapitre_titre}`, "p3t3ch2");
-const p3t3ch3 = buildChapitreTree(articlesP3T3C3, `Chapitre 3 — ${p3t3ch3Data.meta.chapitre_titre}`, "p3t3ch3");
-const p3t3ch4 = buildChapitreTree(articlesP3T3C4, `Chapitre 4 — ${p3t3ch4Data.meta.chapitre_titre}`, "p3t3ch4");
+const p3t3ch1 = buildChapitreTree(articlesP3T3C1, "Domaines respectifs des juridictions", "p3t3ch1");
+const p3t3ch2 = buildChapitreTree(articlesP3T3C2, "Juridiction contentieuse", "p3t3ch2");
+const p3t3ch3 = buildChapitreTree(articlesP3T3C3, "Juridiction gracieuse", "p3t3ch3");
+const p3t3ch4 = buildChapitreTree(articlesP3T3C4, "Dispositions communes", "p3t3ch4");
 
 // Partie 3 - Titre 4
-const p3t4ch1 = buildChapitreTree(articlesP3T4C1, `Chapitre 1 — ${p3t4ch1Data.meta.chapitre_titre}`, "p3t4ch1");
-const p3t4ch2 = buildChapitreTree(articlesP3T4C2, `Chapitre 2 — ${p3t4ch2Data.meta.chapitre_titre}`, "p3t4ch2");
-const p3t4ch3 = buildChapitreTree(articlesP3T4C3, `Chapitre 3 — ${p3t4ch3Data.meta.chapitre_titre}`, "p3t4ch3");
+const p3t4ch1 = buildChapitreTree(articlesP3T4C1, "Dispositions générales", "p3t4ch1");
+const p3t4ch2 = buildChapitreTree(articlesP3T4C2, "Paiement différé ou échelonné", "p3t4ch2");
+const p3t4ch3 = buildChapitreTree(articlesP3T4C3, "Frais de poursuite et recouvrement", "p3t4ch3");
 
 // Annexes
 const annexesNode = buildChapitreTree(articlesAnnexes, "Annexes", "t1-annexes");
 
 export const tome1Node: SommaireNode = {
   id: "tome1",
-  label: "Tome 1 — Impôts directs et indirects",
+  label: "Tome 1 — Code Général des Impôts",
   children: [
     {
       id: "t1-p1",
       label: "Partie 1 — Impôts d'État",
-      children: [
-        {
-          id: "t1-p1-l1",
-          label: "Livre 1 — Impôts directs et taxes assimilées",
-          children: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6],
-        },
-        livre2,
-      ],
+      children: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6, livre2],
     },
     {
       id: "t1-p2",
