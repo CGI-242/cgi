@@ -90,7 +90,7 @@ export default function NotificationBell() {
         accessibilityRole="button"
       >
         <View>
-          <Ionicons name="notifications-outline" size={20} color={colors.textSecondary} />
+          <Ionicons name="notifications" size={20} color="#fff" />
           {badgeCount > 0 && (
             <View
               style={{
