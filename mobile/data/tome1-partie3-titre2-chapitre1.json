@@ -21,7 +21,8 @@
       ],
       "mots_cles": [
         "titre de perception",
-        "résidence fiscale",
+        "impôts droits taxes",
+        "responsable résidence fiscale",
         "contribuable"
       ],
       "statut": "en vigueur"
@@ -34,8 +35,8 @@
       ],
       "mots_cles": [
         "instructions spéciales",
-        "rédaction des rôles",
-        "exemplaires"
+        "modalités rédaction des rôles",
+        "nombre d'exemplaires"
       ],
       "statut": "en vigueur"
     },
@@ -46,10 +47,10 @@
         "Tous les exemplaires des rôles rédigés par les inspecteurs divisionnaires des contributions directes et indirectes sont transmis au Directeur des Contributions Directes et Indirectes, accompagnés des avertissements destinés aux redevables d'impositions nominatives."
       ],
       "mots_cles": [
-        "rôles",
-        "inspecteurs divisionnaires",
-        "Directeur des Contributions",
-        "avertissements"
+        "exemplaires rôles",
+        "inspecteurs divisionnaires contributions directes indirectes",
+        "Directeur des Contributions Directes et Indirectes",
+        "avertissements redevables impositions nominatives"
       ],
       "statut": "en vigueur"
     }

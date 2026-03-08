@@ -24,12 +24,15 @@
         "Les impôts, taxes et autres droits dus à l'État, pour lesquels certains contribuables sont exonérés, du fait des accords signés entre les agents économiques et le Congo constituent des dépenses fiscales à comptabiliser."
       ],
       "mots_cles": [
-        "marchés publics",
-        "bons de commande",
-        "TTC",
-        "adjudicataire",
-        "exonérations",
-        "conventions d'établissement",
+        "marchés publics bons de commande",
+        "toutes taxes comprises TTC",
+        "impôts directs TVA taxes annexes",
+        "droits de douanes",
+        "redevance informatique",
+        "droits d'enregistrement et de timbre",
+        "adjudicataire redevable légal",
+        "exonérations conventions d'établissement",
+        "charte nationale des investissements",
         "dépenses fiscales"
       ],
       "statut": "en vigueur"

@@ -8384,16 +8384,16 @@
     "chapitre": "8",
     "keywords": [
       "secret professionnel",
-      "Code pénal",
-      "article 378",
-      "établissement",
-      "perception",
-      "contentieux",
-      "juge d'instruction",
-      "plainte",
+      "Code pénal article 378",
+      "fonctions attributions",
+      "établissement perception contentieux",
+      "inspecteur divisionnaire",
+      "juge d'instruction plainte",
       "échange de renseignements",
-      "Direction des mines",
-      "convention d'assistance"
+      "Direction de l'enregistrement domaines timbre",
+      "Direction des mines exploitants miniers",
+      "administrations financières États Communauté",
+      "convention d'assistance réciproque"
     ],
     "source": "tome1-partie3-titre1-chapitre8.json"
   },
@@ -8405,8 +8405,10 @@
     "chapitre": "8",
     "keywords": [
       "extraits des rôles",
-      "cotisation",
-      "contribuable"
+      "contribuables",
+      "cotisation propre",
+      "Contributions Directes et Indirectes",
+      "dispositions législatives réglementaires"
     ],
     "source": "tome1-partie3-titre1-chapitre8.json"
   },
@@ -8417,10 +8419,11 @@
     "tome": "1",
     "chapitre": "8",
     "keywords": [
-      "avis",
-      "communications",
+      "avis communications",
+      "agents administration contribuables",
       "enveloppe fermée",
-      "franchises postales"
+      "franchises postales",
+      "taux spéciaux affranchissements"
     ],
     "source": "tome1-partie3-titre1-chapitre8.json"
   },
@@ -8431,12 +8434,15 @@
     "tome": "1",
     "chapitre": "9",
     "keywords": [
-      "marchés publics",
-      "bons de commande",
-      "TTC",
-      "adjudicataire",
-      "exonérations",
-      "conventions d'établissement",
+      "marchés publics bons de commande",
+      "toutes taxes comprises TTC",
+      "impôts directs TVA taxes annexes",
+      "droits de douanes",
+      "redevance informatique",
+      "droits d'enregistrement et de timbre",
+      "adjudicataire redevable légal",
+      "exonérations conventions d'établissement",
+      "charte nationale des investissements",
       "dépenses fiscales"
     ],
     "source": "tome1-partie3-titre1-chapitre9.json"
@@ -8449,7 +8455,8 @@
     "chapitre": "1",
     "keywords": [
       "titre de perception",
-      "résidence fiscale",
+      "impôts droits taxes",
+      "responsable résidence fiscale",
       "contribuable"
     ],
     "source": "tome1-partie3-titre2-chapitre1.json"
@@ -8462,8 +8469,8 @@
     "chapitre": "1",
     "keywords": [
       "instructions spéciales",
-      "rédaction des rôles",
-      "exemplaires"
+      "modalités rédaction des rôles",
+      "nombre d'exemplaires"
     ],
     "source": "tome1-partie3-titre2-chapitre1.json"
   },
@@ -8474,10 +8481,10 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "rôles",
-      "inspecteurs divisionnaires",
-      "Directeur des Contributions",
-      "avertissements"
+      "exemplaires rôles",
+      "inspecteurs divisionnaires contributions directes indirectes",
+      "Directeur des Contributions Directes et Indirectes",
+      "avertissements redevables impositions nominatives"
     ],
     "source": "tome1-partie3-titre2-chapitre1.json"
   },
@@ -8489,8 +8496,9 @@
     "chapitre": "2",
     "keywords": [
       "vérification des rôles",
-      "Directeur des Contributions",
-      "avertissements"
+      "Directeur des Contributions Directes et Indirectes",
+      "documents régulièrement établis",
+      "indications avertissements"
     ],
     "source": "tome1-partie3-titre2-chapitre2.json"
   },

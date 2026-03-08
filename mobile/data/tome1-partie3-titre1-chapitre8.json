@@ -23,20 +23,16 @@
       ],
       "mots_cles": [
         "secret professionnel",
-        "Code pénal",
-        "article 378",
-        "établissement",
-        "perception",
-        "contentieux",
-        "juge d'instruction",
-        "plainte",
-        "échange de renseignements",
-        "Direction des mines",
-        "convention d'assistance",
+        "Code pénal article 378",
+        "fonctions attributions",
+        "établissement perception contentieux",
         "inspecteur divisionnaire",
-        "Direction de l'enregistrement",
-        "exploitants miniers",
-        "Communauté"
+        "juge d'instruction plainte",
+        "échange de renseignements",
+        "Direction de l'enregistrement domaines timbre",
+        "Direction des mines exploitants miniers",
+        "administrations financières États Communauté",
+        "convention d'assistance réciproque"
       ],
       "statut": "en vigueur"
     },
@@ -48,10 +44,10 @@
       ],
       "mots_cles": [
         "extraits des rôles",
-        "cotisation",
-        "contribuable",
+        "contribuables",
+        "cotisation propre",
         "Contributions Directes et Indirectes",
-        "dispositions législatives"
+        "dispositions législatives réglementaires"
       ],
       "statut": "en vigueur"
     },
@@ -63,12 +59,11 @@
         "Les franchises postales et les taux spéciaux d'affranchissements reconnus nécessaires sont concédés et fixés par la loi."
       ],
       "mots_cles": [
-        "avis",
-        "communications",
+        "avis communications",
+        "agents administration contribuables",
         "enveloppe fermée",
         "franchises postales",
-        "taux spéciaux d'affranchissements",
-        "confidentialité"
+        "taux spéciaux affranchissements"
       ],
       "statut": "en vigueur"
     }
