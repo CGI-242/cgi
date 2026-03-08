@@ -144,9 +144,9 @@ export const tfnc3Node: SommaireNode = {
     { id: "tfnc3-redev", label: redevSuperfData.meta.chapitre_titre, articles: aRedevSuperf },
     {
       id: "tfnc3-petrole", label: "3.3. Application des dispositions fiscales au secteur pétrolier amont",
-      children: [tfnc3PetCh1, tfnc3PetCh2, tfnc3PetCh3, tfnc3PetCh4, tfnc3PetCh5, tfnc3PetCh6, tfnc3PetCh7],
+      articles: [...aTfnc3PetCh1, ...aTfnc3PetCh2, ...aTfnc3PetCh3, ...aTfnc3PetCh4, ...aTfnc3PetCh5, ...aTfnc3PetCh6, ...aTfnc3PetCh7],
     },
-    buildChapitreTree(aTvaPetrolier, tvaPetrolierData.meta.chapitre_titre, "tfnc3-tva-pet"),
+    { id: "tfnc3-tva-pet", label: tvaPetrolierData.meta.chapitre_titre, articles: aTvaPetrolier },
     buildChapitreTree(aFiscMiniere, fiscMiniereData.meta.chapitre_titre, "tfnc3-mines"),
   ],
 };
