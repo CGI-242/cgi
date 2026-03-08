@@ -137,7 +137,7 @@ export const tome1Node: SommaireNode = {
     {
       id: "t1-p1",
       label: "Partie 1 - Impôts d'État",
-      children: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6, livre2],
+      children: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6],
     },
     {
       id: "t1-p2",
