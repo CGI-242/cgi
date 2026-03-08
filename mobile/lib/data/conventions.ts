@@ -61,13 +61,13 @@ const convCemacCh4 = buildChapitreTree(aConvCemacCh4, "Chapitre 4 - Élimination
 const convCemacCh5 = buildChapitreTree(aConvCemacCh5, "Chapitre 5 - Dispositions spéciales", "conv-cemac-ch5");
 const convCemacCh6 = buildChapitreTree(aConvCemacCh6, "Chapitre 6 - Dispositions finales", "conv-cemac-ch6");
 const convCemacNode: SommaireNode = {
-  id: "conv-cemac", label: "1.1. Convention CEMAC",
+  id: "conv-cemac", label: "1.1. Convention fiscale CEMAC",
   children: [convCemacCh1, convCemacCh2, convCemacCh3, convCemacCh4, convCemacCh5, convCemacCh6],
 };
 
 // Conventions bilatérales
-const convChineNode: SommaireNode = { id: "conv-chine", label: "1.2. Convention avec la République Populaire de Chine", articles: aConvChine };
-const convFranceNode: SommaireNode = { id: "conv-france", label: "1.3. Convention avec la France", articles: aConvFrance };
+const convChineNode: SommaireNode = { id: "conv-chine", label: "1.2. Convention fiscale avec la Chine", articles: aConvChine };
+const convFranceNode: SommaireNode = { id: "conv-france", label: "1.3. Convention fiscale avec la France", articles: aConvFrance };
 
 // Convention Italie
 const convItalieCh1 = buildChapitreTree(aConvItalieCh1, "Chapitre 1 - Champ d'application", "conv-italie-ch1");
@@ -78,7 +78,7 @@ const convItalieCh5 = buildChapitreTree(aConvItalieCh5, "Chapitre 5 - Dispositio
 const convItalieCh6 = buildChapitreTree(aConvItalieCh6, "Chapitre 6 - Dispositions finales", "conv-italie-ch6");
 const convItalieProtoNode: SommaireNode = { id: "conv-italie-proto", label: "Protocole", articles: aConvItalieProto };
 const convItalieNode: SommaireNode = {
-  id: "conv-italie", label: "1.4. Convention avec la République d'Italie",
+  id: "conv-italie", label: "1.4. Convention fiscale avec l'Italie",
   children: [convItalieCh1, convItalieCh2, convItalieCh3, convItalieCh4, convItalieCh5, convItalieCh6, convItalieProtoNode],
 };
 
@@ -90,11 +90,11 @@ const convMauriceCh4 = buildChapitreTree(aConvMauriceCh4, "Chapitre 4 - Élimina
 const convMauriceCh5 = buildChapitreTree(aConvMauriceCh5, "Chapitre 5 - Dispositions spéciales", "conv-maurice-ch5");
 const convMauriceCh6 = buildChapitreTree(aConvMauriceCh6, "Chapitre 6 - Dispositions finales", "conv-maurice-ch6");
 const convMauriceNode: SommaireNode = {
-  id: "conv-maurice", label: "1.5. Convention avec la République de Maurice",
+  id: "conv-maurice", label: "1.5. Convention fiscale avec la République de Maurice",
   children: [convMauriceCh1, convMauriceCh2, convMauriceCh3, convMauriceCh4, convMauriceCh5, convMauriceCh6],
 };
 
-const convRwandaNode: SommaireNode = { id: "conv-rwanda", label: "1.6. Convention avec le Rwanda", articles: aConvRwanda };
+const convRwandaNode: SommaireNode = { id: "conv-rwanda", label: "1.6. Convention fiscale avec le Rwanda", articles: aConvRwanda };
 
 export const conventionsNode: SommaireNode = {
   id: "conventions", label: "1. Conventions fiscales",
