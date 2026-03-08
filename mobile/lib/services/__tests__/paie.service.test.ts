@@ -48,44 +48,49 @@ const baseInput: PaieInput = {
   moisJanvier: false,
 };
 
+// Valeurs de référence calculées à partir du service :
+// salairePresence = 500k + 100k + 50k + 0 = 650 000
+// totalAvantagesNature = 100 000
+// salaireBrutTotal = salairePresence + avantages = 750 000
+// totalExonere = transport + représentation + panier + salissure = 75 000
+// baseCNSS = salairePresence = 650 000
+// cnssSalarieMensuel = 650 000 × 4% = 26 000
+// baseITS = (750 000 − 26 000) × 80% = 579 200
+// baseTUS = salaireBrutTotal = 750 000
+
 describe("calculerPaie — Bases de calcul", () => {
-  it("baseCNSS exclut avantages en nature et primes panier/salissure", () => {
+  it("baseCNSS = salairePresence (hors avantages et primes exonérées)", () => {
     const result = calculerPaie(baseInput);
-    // baseCNSS = salaireBase + primesImposables + heuresSup + congesAnnuels
-    const expectedBaseCNSS = 500_000 + 100_000 + 50_000 + 0;
-    expect(result.baseCNSS).toBe(expectedBaseCNSS);
+    expect(result.baseCNSS).toBe(650_000);
   });
 
-  it("baseITS inclut tout sauf exonérés Art. 114-A", () => {
+  it("baseITS = (brutTotal − CNSS) × (1 − fraisPro)", () => {
     const result = calculerPaie(baseInput);
-    // baseITS = salairePresence + panier + salissure + avantages
-    const expectedBaseITS = (500_000 + 100_000 + 50_000 + 0) + 15_000 + 10_000 + 100_000;
-    expect(result.baseITS).toBe(expectedBaseITS);
+    // baseITS = (750 000 − 26 000) × 0.80 = 579 200
+    const expected = Math.round((750_000 - 26_000) * (1 - FISCAL_PARAMS.fraisPro.taux));
+    expect(result.baseITS).toBe(expected);
   });
 
-  it("transport et représentation sont exonérés (non inclus dans baseITS)", () => {
+  it("totalExonere inclut transport, représentation, panier et salissure (Art. 114-A)", () => {
     const result = calculerPaie(baseInput);
-    expect(result.totalExonere).toBe(30_000 + 20_000);
-    // baseITS ne contient pas transport ni représentation
-    expect(result.baseITS).toBe(result.salaireBrutTotal - result.totalExonere);
+    expect(result.totalExonere).toBe(30_000 + 20_000 + 15_000 + 10_000);
   });
 
-  it("baseTUS = baseITS", () => {
+  it("baseTUS = salaireBrutTotal", () => {
     const result = calculerPaie(baseInput);
-    expect(result.baseTUS).toBe(result.baseITS);
+    expect(result.baseTUS).toBe(result.salaireBrutTotal);
   });
 
-  it("salaireBrutTotal = baseITS + totalExonere", () => {
+  it("salaireBrutTotal = salairePresence + avantages en nature", () => {
     const result = calculerPaie(baseInput);
-    expect(result.salaireBrutTotal).toBe(result.baseITS + result.totalExonere);
+    expect(result.salaireBrutTotal).toBe(650_000 + 100_000);
   });
 });
 
 describe("calculerPaie — CNSS salarié 4%", () => {
   it("calcule CNSS 4% sans plafond", () => {
     const result = calculerPaie(baseInput);
-    const baseCNSS = 650_000; // sous le plafond
-    expect(result.cnssSalarieMensuel).toBe(Math.round(baseCNSS * 0.04));
+    expect(result.cnssSalarieMensuel).toBe(Math.round(650_000 * 0.04));
     expect(result.cnssPlafondApplique).toBe(false);
   });
 
@@ -136,17 +141,17 @@ describe("calculerPaie — ITS", () => {
 });
 
 describe("calculerPaie — TUS", () => {
-  it("applique 7.5% pour résident", () => {
+  it("applique 7.5% sur baseTUS pour résident", () => {
     const result = calculerPaie(baseInput);
     expect(result.tauxTUS).toBe(0.075);
-    expect(result.tusMensuel).toBe(Math.round(result.baseITS * 0.075));
+    expect(result.tusMensuel).toBe(Math.round(result.baseTUS * 0.075));
   });
 
-  it("applique 6% pour non-résident", () => {
+  it("applique 6% sur baseTUS pour non-résident", () => {
     const nrInput: PaieInput = { ...baseInput, profilSalarie: "non_resident" };
     const result = calculerPaie(nrInput);
     expect(result.tauxTUS).toBe(0.06);
-    expect(result.tusMensuel).toBe(Math.round(result.baseITS * 0.06));
+    expect(result.tusMensuel).toBe(Math.round(result.baseTUS * 0.06));
   });
 });
 
@@ -164,11 +169,12 @@ describe("calculerPaie — TOL", () => {
 });
 
 describe("calculerPaie — CAMU", () => {
-  it("calcule 0.5% au-delà de 500 000", () => {
+  it("calcule 0.5% au-delà de 500 000 sur (brutTotal − CNSS)", () => {
     const result = calculerPaie(baseInput);
-    const baseCAMU = Math.max(0, (result.baseITS - result.cnssSalarieMensuel) - 500_000);
-    expect(result.baseCAMU).toBe(baseCAMU);
-    expect(result.camuMensuel).toBe(Math.round(baseCAMU * 0.005));
+    // baseCAMU = (750 000 − 26 000) − 500 000 = 224 000
+    const expectedBase = Math.max(0, (result.salaireBrutTotal - result.cnssSalarieMensuel) - PAIE_PARAMS.camu.seuilMensuel);
+    expect(result.baseCAMU).toBe(expectedBase);
+    expect(result.camuMensuel).toBe(Math.round(expectedBase * 0.005));
   });
 
   it("CAMU = 0 si base nette sous 500 000", () => {
@@ -182,9 +188,15 @@ describe("calculerPaie — CAMU", () => {
 });
 
 describe("calculerPaie — Taxe régionale", () => {
-  it("vaut toujours 2 400 fixe", () => {
+  it("vaut 0 si moisJanvier = false", () => {
     const result = calculerPaie(baseInput);
-    expect(result.taxeRegionale).toBe(2_400);
+    expect(result.taxeRegionale).toBe(0);
+  });
+
+  it("vaut 2 400 si moisJanvier = true", () => {
+    const janInput: PaieInput = { ...baseInput, moisJanvier: true };
+    const result = calculerPaie(janInput);
+    expect(result.taxeRegionale).toBe(PAIE_PARAMS.taxeRegionale);
   });
 });
 
@@ -207,10 +219,10 @@ describe("calculerPaie — Charges patronales", () => {
     expect(result.cnssPFPatronale).toBe(expected);
   });
 
-  it("total patronal = somme des 3 branches", () => {
+  it("total patronal = 3 branches CNSS + TUS", () => {
     const result = calculerPaie(baseInput);
     expect(result.totalChargesPatronales).toBe(
-      result.cnssVieillessePatronale + result.cnssAFPatronale + result.cnssPFPatronale
+      result.cnssVieillessePatronale + result.cnssAFPatronale + result.cnssPFPatronale + result.tusMensuel
     );
   });
 
@@ -223,15 +235,17 @@ describe("calculerPaie — Charges patronales", () => {
 });
 
 describe("calculerPaie — Salaire net et coût employeur", () => {
-  it("salaire net = brut total - retenues", () => {
+  it("salaire net = brutTotal + exonérés − avantages − retenues", () => {
     const result = calculerPaie(baseInput);
-    expect(result.salaireNetMensuel).toBe(result.salaireBrutTotal - result.totalRetenuesSalarie);
+    expect(result.salaireNetMensuel).toBe(
+      result.salaireBrutTotal + result.totalExonere - result.totalAvantagesNature - result.totalRetenuesSalarie
+    );
   });
 
-  it("total retenues = somme de toutes les retenues", () => {
+  it("total retenues = CNSS + ITS + TOL + CAMU + taxeRégionale (pas TUS)", () => {
     const result = calculerPaie(baseInput);
     expect(result.totalRetenuesSalarie).toBe(
-      result.cnssSalarieMensuel + result.itsMensuel + result.tusMensuel +
+      result.cnssSalarieMensuel + result.itsMensuel +
       result.tolMensuel + result.camuMensuel + result.taxeRegionale
     );
   });
