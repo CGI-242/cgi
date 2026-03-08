@@ -35,6 +35,7 @@ const entries: CodeEntry[] = [
   { id: "BF-cgi", name: "Burkina Faso", cc: "BF", status: "published", region: "UEMOA", codeLabel: "CGI 226", badge: "CGI 2026" },
   { id: "BJ-cgi", name: "Bénin", cc: "BJ", status: "published", region: "UEMOA", codeLabel: "CGI 229", badge: "CGI 2026" },
   { id: "TG-cgi", name: "Togo", cc: "TG", status: "published", region: "UEMOA", codeLabel: "CGI 228", badge: "CGI 2026" },
+  { id: "TG-social", name: "Togo", cc: "TG", status: "published", region: "UEMOA", codeLabel: "Code Social", badge: "2025" },
   { id: "MG-cgi", name: "Madagascar", cc: "MG", status: "published", region: "Autre", codeLabel: "CGI 261", badge: "CGI 2026" },
   { id: "MR-cgi", name: "Mauritanie", cc: "MR", status: "published", region: "Autre", codeLabel: "CGI 222", badge: "CGI 2026" },
 ];
