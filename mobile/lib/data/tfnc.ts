@@ -195,15 +195,16 @@ export const tfnc5Node: SommaireNode = {
 };
 
 // TFNC6 - TVA
-const tfnc6Ch1 = buildChapitreTree(aTfnc6Ch1, `Chapitre 1 - ${tfnc6TvaCh1Data.meta.chapitre_titre}`, "tfnc6-ch1");
-const tfnc6Ch2 = buildChapitreTree(aTfnc6Ch2, `Chapitre 2 - ${tfnc6TvaCh2Data.meta.chapitre_titre}`, "tfnc6-ch2");
-const tfnc6Ch3 = buildChapitreTree(aTfnc6Ch3, `Chapitre 3 - ${tfnc6TvaCh3Data.meta.chapitre_titre}`, "tfnc6-ch3");
-const tfnc6Ch4 = buildChapitreTree(aTfnc6Ch4, `Chapitre 4 - ${tfnc6TvaCh4Data.meta.chapitre_titre}`, "tfnc6-ch4");
-const tfnc6Ch5 = buildChapitreTree(aTfnc6Ch5, `Chapitre 5 - ${tfnc6TvaCh5Data.meta.chapitre_titre}`, "tfnc6-ch5");
-const tfnc6Annexes = buildChapitreTree(aTfnc6Annexes, tfnc6TvaAnnexesData.meta.chapitre_titre, "tfnc6-annexes");
 export const tfnc6Node: SommaireNode = {
   id: "tfnc6", label: "6. Taxe sur la valeur ajoutée (TVA)",
-  children: [tfnc6Ch1, tfnc6Ch2, tfnc6Ch3, tfnc6Ch4, tfnc6Ch5, tfnc6Annexes],
+  children: [
+    { id: "tfnc6-ch1", label: `Chapitre 1 - ${tfnc6TvaCh1Data.meta.chapitre_titre}`, articles: aTfnc6Ch1 },
+    { id: "tfnc6-ch2", label: `Chapitre 2 - ${tfnc6TvaCh2Data.meta.chapitre_titre}`, articles: aTfnc6Ch2 },
+    { id: "tfnc6-ch3", label: `Chapitre 3 - ${tfnc6TvaCh3Data.meta.chapitre_titre}`, articles: aTfnc6Ch3 },
+    { id: "tfnc6-ch4", label: `Chapitre 4 - ${tfnc6TvaCh4Data.meta.chapitre_titre}`, articles: aTfnc6Ch4 },
+    { id: "tfnc6-ch5", label: `Chapitre 5 - ${tfnc6TvaCh5Data.meta.chapitre_titre}`, articles: aTfnc6Ch5 },
+    { id: "tfnc6-annexes", label: tfnc6TvaAnnexesData.meta.chapitre_titre, articles: aTfnc6Annexes },
+  ],
 };
 
 export const tfncArticles: ArticleData[] = [
