@@ -187,14 +187,7 @@ export const tfnc5Node: SommaireNode = {
   id: "tfnc5", label: "5. Obligations et procédures fiscales non codifiées",
   children: [
     { id: "tfnc5-attest", label: attestNonRedevData.meta.chapitre_titre, articles: aAttestNonRedev },
-    {
-      id: "tfnc5-niu", label: "5.2. Numéro d'identification unique (NIU)",
-      children: [
-        { id: "tfnc5-niu-decret", label: "5.2.1. " + niuDecretData.meta.chapitre_titre, articles: aNiuDecret },
-        buildChapitreTree(aNiuArrete5327, "5.2.2. " + niuArrete5327Data.meta.chapitre_titre, "tfnc5-niu-arr5327"),
-        { id: "tfnc5-niu-arr25604", label: "5.2.3. " + niuArrete25604Data.meta.chapitre_titre, articles: aNiuArrete25604 },
-      ],
-    },
+    { id: "tfnc5-niu", label: "5.2. Numéro d'identification unique (NIU)", articles: [...aNiuDecret, ...aNiuArrete5327, ...aNiuArrete25604] },
     { id: "tfnc5-recouv", label: recouvRecettesData.meta.chapitre_titre, articles: aRecouvRecettes },
     { id: "tfnc5-risques", label: approcheRisquesData.meta.chapitre_titre, articles: aApprocheRisques },
     { id: "tfnc5-echange", label: echangeRenseignData.meta.chapitre_titre, articles: aEchangeRenseign },
