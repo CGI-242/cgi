@@ -46,17 +46,20 @@ export interface PatenteResult {
   references: string[];
 }
 
+// Tranches progressives Art. 314 (à partir de 1 M FCFA)
+// La 1ère tranche (< 1 M) = forfait 10.000 FCFA, traitée séparément
+const FORFAIT_PREMIERE_TRANCHE = 10_000;
+
 const BAREME_PATENTE = [
-  { min: 0, max: 1_000_000, taux: 0 },
-  { min: 1_000_001, max: 20_000_000, taux: 0.0075 },
-  { min: 20_000_001, max: 40_000_000, taux: 0.0065 },
-  { min: 40_000_001, max: 100_000_000, taux: 0.0045 },
-  { min: 100_000_001, max: 300_000_000, taux: 0.002 },
-  { min: 300_000_001, max: 500_000_000, taux: 0.0015 },
-  { min: 500_000_001, max: 1_000_000_000, taux: 0.0014 },
-  { min: 1_000_000_001, max: 3_000_000_000, taux: 0.00135 },
-  { min: 3_000_000_001, max: 20_000_000_000, taux: 0.00125 },
-  { min: 20_000_000_001, max: Infinity, taux: 0.00045 },
+  { min: 1_000_000, max: 20_000_000, taux: 0.0075 },
+  { min: 20_000_000, max: 40_000_000, taux: 0.0065 },
+  { min: 40_000_000, max: 100_000_000, taux: 0.0045 },
+  { min: 100_000_000, max: 300_000_000, taux: 0.002 },
+  { min: 300_000_000, max: 500_000_000, taux: 0.0015 },
+  { min: 500_000_000, max: 1_000_000_000, taux: 0.0014 },
+  { min: 1_000_000_000, max: 3_000_000_000, taux: 0.00135 },
+  { min: 3_000_000_000, max: 20_000_000_000, taux: 0.00125 },
+  { min: 20_000_000_000, max: Infinity, taux: 0.00045 },
 ];
 
 const TAUX_CENTIMES = 0.05; // 5% (Art. 369 bis)
@@ -67,7 +70,7 @@ function formatTranche(min: number, max: number): string {
   if (max === Infinity) {
     return `> ${formatShort(min)}`;
   }
-  return `${formatShort(min + 1)} - ${formatShort(max)}`;
+  return `${formatShort(min)} - ${formatShort(max)}`;
 }
 
 function formatShort(montant: number): string {
@@ -170,16 +173,19 @@ export function calculerPatente(input: PatenteInput): PatenteResult | null {
   let patenteBrute = 0;
   let caRestant = ca;
 
-  // Forfait 10.000 FCFA pour CA < 1.000.000 (Art. 314)
-  if (ca < 1_000_000) {
-    patenteBrute = 10_000;
-    tranches.push({
-      tranche: `< 1 M`,
-      base: ca,
-      taux: 0,
-      montant: 10_000,
-    });
-  } else {
+  // 1ère tranche : forfait 10.000 FCFA (Art. 314)
+  patenteBrute = FORFAIT_PREMIERE_TRANCHE;
+  tranches.push({
+    tranche: ca < 1_000_000 ? `< 1 M` : `0 - 1 M`,
+    base: Math.min(ca, 1_000_000),
+    taux: 0,
+    montant: FORFAIT_PREMIERE_TRANCHE,
+  });
+
+  // Tranches suivantes (à partir de 1 M)
+  if (ca >= 1_000_000) {
+    caRestant = ca - 1_000_000;
+
     for (const bareme of BAREME_PATENTE) {
       if (caRestant <= 0) break;
 
