@@ -7,7 +7,7 @@
     "partie": null,
     "livre": 2,
     "chapitre": 4,
-    "chapitre_titre": "Visa spécial, timbre en débit et actes exempts de timbre",
+    "chapitre_titre": "Visa spécial, timbre en débet et actes exempts de timbre",
     "section": null,
     "section_titre": null,
     "page_source": null
@@ -32,7 +32,10 @@
       "article": "T2L2C4-ST1",
       "titre": "1) Actes soumis à un visa spécial sur l'acte tenant lieu du timbre en débet",
       "texte": [],
-      "mots_cles": ["visa spécial", "timbre en débet"],
+      "mots_cles": [
+        "visa spécial",
+        "timbre en débet"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -53,7 +56,10 @@
       "article": "T2L2C4-ST2",
       "titre": "2) Actes visés pour timbre en débet",
       "texte": [],
-      "mots_cles": ["visa pour timbre", "débet"],
+      "mots_cles": [
+        "visa pour timbre",
+        "débet"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -73,7 +79,9 @@
       "article": "T2L2C4-ST3",
       "titre": "3) Actes exempts de timbre",
       "texte": [],
-      "mots_cles": ["exempts de timbre"],
+      "mots_cles": [
+        "exempts de timbre"
+      ],
       "statut": "en vigueur"
     },
     {
