@@ -130,13 +130,13 @@ export const tfnc2Node: SommaireNode = {
 };
 
 // TFNC3 - Fiscalité mines et hydrocarbures
-const tfnc3PetCh1 = buildChapitreTree(aTfnc3PetCh1, `Chapitre 1 — ${tfnc3PetCh1Data.meta.chapitre_titre}`, "tfnc3-pet-ch1");
-const tfnc3PetCh2 = buildChapitreTree(aTfnc3PetCh2, `Chapitre 2 — ${tfnc3PetCh2Data.meta.chapitre_titre}`, "tfnc3-pet-ch2");
-const tfnc3PetCh3 = buildChapitreTree(aTfnc3PetCh3, `Chapitre 3 — ${tfnc3PetCh3Data.meta.chapitre_titre}`, "tfnc3-pet-ch3");
-const tfnc3PetCh4 = buildChapitreTree(aTfnc3PetCh4, `Chapitre 4 — ${tfnc3PetCh4Data.meta.chapitre_titre}`, "tfnc3-pet-ch4");
-const tfnc3PetCh5 = buildChapitreTree(aTfnc3PetCh5, `Chapitre 5 — ${tfnc3PetCh5Data.meta.chapitre_titre}`, "tfnc3-pet-ch5");
-const tfnc3PetCh6 = buildChapitreTree(aTfnc3PetCh6, `Chapitre 6 — ${tfnc3PetCh6Data.meta.chapitre_titre}`, "tfnc3-pet-ch6");
-const tfnc3PetCh7 = buildChapitreTree(aTfnc3PetCh7, `Chapitre 7 — ${tfnc3PetCh7Data.meta.chapitre_titre}`, "tfnc3-pet-ch7");
+const tfnc3PetCh1 = buildChapitreTree(aTfnc3PetCh1, `Chapitre 1 - ${tfnc3PetCh1Data.meta.chapitre_titre}`, "tfnc3-pet-ch1");
+const tfnc3PetCh2 = buildChapitreTree(aTfnc3PetCh2, `Chapitre 2 - ${tfnc3PetCh2Data.meta.chapitre_titre}`, "tfnc3-pet-ch2");
+const tfnc3PetCh3 = buildChapitreTree(aTfnc3PetCh3, `Chapitre 3 - ${tfnc3PetCh3Data.meta.chapitre_titre}`, "tfnc3-pet-ch3");
+const tfnc3PetCh4 = buildChapitreTree(aTfnc3PetCh4, `Chapitre 4 - ${tfnc3PetCh4Data.meta.chapitre_titre}`, "tfnc3-pet-ch4");
+const tfnc3PetCh5 = buildChapitreTree(aTfnc3PetCh5, `Chapitre 5 - ${tfnc3PetCh5Data.meta.chapitre_titre}`, "tfnc3-pet-ch5");
+const tfnc3PetCh6 = buildChapitreTree(aTfnc3PetCh6, `Chapitre 6 - ${tfnc3PetCh6Data.meta.chapitre_titre}`, "tfnc3-pet-ch6");
+const tfnc3PetCh7 = buildChapitreTree(aTfnc3PetCh7, `Chapitre 7 - ${tfnc3PetCh7Data.meta.chapitre_titre}`, "tfnc3-pet-ch7");
 export const tfnc3Node: SommaireNode = {
   id: "tfnc3", label: "3. Fiscalité des mines et des hydrocarbures",
   children: [
@@ -203,11 +203,11 @@ export const tfnc5Node: SommaireNode = {
 };
 
 // TFNC6 - TVA
-const tfnc6Ch1 = buildChapitreTree(aTfnc6Ch1, `Chapitre 1 — ${tfnc6TvaCh1Data.meta.chapitre_titre}`, "tfnc6-ch1");
-const tfnc6Ch2 = buildChapitreTree(aTfnc6Ch2, `Chapitre 2 — ${tfnc6TvaCh2Data.meta.chapitre_titre}`, "tfnc6-ch2");
-const tfnc6Ch3 = buildChapitreTree(aTfnc6Ch3, `Chapitre 3 — ${tfnc6TvaCh3Data.meta.chapitre_titre}`, "tfnc6-ch3");
-const tfnc6Ch4 = buildChapitreTree(aTfnc6Ch4, `Chapitre 4 — ${tfnc6TvaCh4Data.meta.chapitre_titre}`, "tfnc6-ch4");
-const tfnc6Ch5 = buildChapitreTree(aTfnc6Ch5, `Chapitre 5 — ${tfnc6TvaCh5Data.meta.chapitre_titre}`, "tfnc6-ch5");
+const tfnc6Ch1 = buildChapitreTree(aTfnc6Ch1, `Chapitre 1 - ${tfnc6TvaCh1Data.meta.chapitre_titre}`, "tfnc6-ch1");
+const tfnc6Ch2 = buildChapitreTree(aTfnc6Ch2, `Chapitre 2 - ${tfnc6TvaCh2Data.meta.chapitre_titre}`, "tfnc6-ch2");
+const tfnc6Ch3 = buildChapitreTree(aTfnc6Ch3, `Chapitre 3 - ${tfnc6TvaCh3Data.meta.chapitre_titre}`, "tfnc6-ch3");
+const tfnc6Ch4 = buildChapitreTree(aTfnc6Ch4, `Chapitre 4 - ${tfnc6TvaCh4Data.meta.chapitre_titre}`, "tfnc6-ch4");
+const tfnc6Ch5 = buildChapitreTree(aTfnc6Ch5, `Chapitre 5 - ${tfnc6TvaCh5Data.meta.chapitre_titre}`, "tfnc6-ch5");
 const tfnc6Annexes = buildChapitreTree(aTfnc6Annexes, tfnc6TvaAnnexesData.meta.chapitre_titre, "tfnc6-annexes");
 export const tfnc6Node: SommaireNode = {
   id: "tfnc6", label: "6. Taxe sur la valeur ajoutée (TVA)",

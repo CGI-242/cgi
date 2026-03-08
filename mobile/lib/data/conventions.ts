@@ -54,12 +54,12 @@ const aConvMauriceCh6 = parseArticles(convMauriceCh6Data.articles);
 const aConvRwanda = parseArticles(convRwandaData.articles);
 
 // Convention CEMAC
-const convCemacCh1 = buildChapitreTree(aConvCemacCh1, "Chapitre 1 — Champ d'application", "conv-cemac-ch1");
-const convCemacCh2 = buildChapitreTree(aConvCemacCh2, "Chapitre 2 — Définitions générales", "conv-cemac-ch2");
-const convCemacCh3 = buildChapitreTree(aConvCemacCh3, "Chapitre 3 — Imposition des revenus", "conv-cemac-ch3");
-const convCemacCh4 = buildChapitreTree(aConvCemacCh4, "Chapitre 4 — Élimination de la double imposition", "conv-cemac-ch4");
-const convCemacCh5 = buildChapitreTree(aConvCemacCh5, "Chapitre 5 — Dispositions spéciales", "conv-cemac-ch5");
-const convCemacCh6 = buildChapitreTree(aConvCemacCh6, "Chapitre 6 — Dispositions finales", "conv-cemac-ch6");
+const convCemacCh1 = buildChapitreTree(aConvCemacCh1, "Chapitre 1 - Champ d'application", "conv-cemac-ch1");
+const convCemacCh2 = buildChapitreTree(aConvCemacCh2, "Chapitre 2 - Définitions générales", "conv-cemac-ch2");
+const convCemacCh3 = buildChapitreTree(aConvCemacCh3, "Chapitre 3 - Imposition des revenus", "conv-cemac-ch3");
+const convCemacCh4 = buildChapitreTree(aConvCemacCh4, "Chapitre 4 - Élimination de la double imposition", "conv-cemac-ch4");
+const convCemacCh5 = buildChapitreTree(aConvCemacCh5, "Chapitre 5 - Dispositions spéciales", "conv-cemac-ch5");
+const convCemacCh6 = buildChapitreTree(aConvCemacCh6, "Chapitre 6 - Dispositions finales", "conv-cemac-ch6");
 const convCemacNode: SommaireNode = {
   id: "conv-cemac", label: "1.1. Convention CEMAC",
   children: [convCemacCh1, convCemacCh2, convCemacCh3, convCemacCh4, convCemacCh5, convCemacCh6],
@@ -70,12 +70,12 @@ const convChineNode: SommaireNode = { id: "conv-chine", label: "1.2. Convention 
 const convFranceNode: SommaireNode = { id: "conv-france", label: "1.3. Convention avec la France", articles: aConvFrance };
 
 // Convention Italie
-const convItalieCh1 = buildChapitreTree(aConvItalieCh1, "Chapitre 1 — Champ d'application", "conv-italie-ch1");
-const convItalieCh2 = buildChapitreTree(aConvItalieCh2, "Chapitre 2 — Définitions", "conv-italie-ch2");
-const convItalieCh3 = buildChapitreTree(aConvItalieCh3, "Chapitre 3 — Imposition des revenus", "conv-italie-ch3");
-const convItalieCh4 = buildChapitreTree(aConvItalieCh4, "Chapitre 4 — Élimination de la double imposition", "conv-italie-ch4");
-const convItalieCh5 = buildChapitreTree(aConvItalieCh5, "Chapitre 5 — Dispositions spéciales", "conv-italie-ch5");
-const convItalieCh6 = buildChapitreTree(aConvItalieCh6, "Chapitre 6 — Dispositions finales", "conv-italie-ch6");
+const convItalieCh1 = buildChapitreTree(aConvItalieCh1, "Chapitre 1 - Champ d'application", "conv-italie-ch1");
+const convItalieCh2 = buildChapitreTree(aConvItalieCh2, "Chapitre 2 - Définitions", "conv-italie-ch2");
+const convItalieCh3 = buildChapitreTree(aConvItalieCh3, "Chapitre 3 - Imposition des revenus", "conv-italie-ch3");
+const convItalieCh4 = buildChapitreTree(aConvItalieCh4, "Chapitre 4 - Élimination de la double imposition", "conv-italie-ch4");
+const convItalieCh5 = buildChapitreTree(aConvItalieCh5, "Chapitre 5 - Dispositions spéciales", "conv-italie-ch5");
+const convItalieCh6 = buildChapitreTree(aConvItalieCh6, "Chapitre 6 - Dispositions finales", "conv-italie-ch6");
 const convItalieProtoNode: SommaireNode = { id: "conv-italie-proto", label: "Protocole", articles: aConvItalieProto };
 const convItalieNode: SommaireNode = {
   id: "conv-italie", label: "1.4. Convention avec la République d'Italie",
@@ -83,12 +83,12 @@ const convItalieNode: SommaireNode = {
 };
 
 // Convention Maurice
-const convMauriceCh1 = buildChapitreTree(aConvMauriceCh1, "Chapitre 1 — Champ d'application", "conv-maurice-ch1");
-const convMauriceCh2 = buildChapitreTree(aConvMauriceCh2, "Chapitre 2 — Définitions", "conv-maurice-ch2");
-const convMauriceCh3 = buildChapitreTree(aConvMauriceCh3, "Chapitre 3 — Imposition des revenus", "conv-maurice-ch3");
-const convMauriceCh4 = buildChapitreTree(aConvMauriceCh4, "Chapitre 4 — Élimination de la double imposition", "conv-maurice-ch4");
-const convMauriceCh5 = buildChapitreTree(aConvMauriceCh5, "Chapitre 5 — Dispositions spéciales", "conv-maurice-ch5");
-const convMauriceCh6 = buildChapitreTree(aConvMauriceCh6, "Chapitre 6 — Dispositions finales", "conv-maurice-ch6");
+const convMauriceCh1 = buildChapitreTree(aConvMauriceCh1, "Chapitre 1 - Champ d'application", "conv-maurice-ch1");
+const convMauriceCh2 = buildChapitreTree(aConvMauriceCh2, "Chapitre 2 - Définitions", "conv-maurice-ch2");
+const convMauriceCh3 = buildChapitreTree(aConvMauriceCh3, "Chapitre 3 - Imposition des revenus", "conv-maurice-ch3");
+const convMauriceCh4 = buildChapitreTree(aConvMauriceCh4, "Chapitre 4 - Élimination de la double imposition", "conv-maurice-ch4");
+const convMauriceCh5 = buildChapitreTree(aConvMauriceCh5, "Chapitre 5 - Dispositions spéciales", "conv-maurice-ch5");
+const convMauriceCh6 = buildChapitreTree(aConvMauriceCh6, "Chapitre 6 - Dispositions finales", "conv-maurice-ch6");
 const convMauriceNode: SommaireNode = {
   id: "conv-maurice", label: "1.5. Convention avec la République de Maurice",
   children: [convMauriceCh1, convMauriceCh2, convMauriceCh3, convMauriceCh4, convMauriceCh5, convMauriceCh6],
