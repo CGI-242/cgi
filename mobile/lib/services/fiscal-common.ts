@@ -47,14 +47,6 @@ export const FISCAL_PARAMS = {
     mensuel: 70_400,
     annuel: 70_400 * 12,
   },
-  irpp: {
-    baremes: [
-      { min: 0, max: 464_000, taux: 0.01 },
-      { min: 464_000, max: 1_000_000, taux: 0.10 },
-      { min: 1_000_000, max: 3_000_000, taux: 0.25 },
-      { min: 3_000_000, max: null, taux: 0.40 },
-    ] as BaremeTranche[],
-  },
   its: {
     baremes: [
       { min: 0, max: 615_000, taux: 0, forfait: 1_200 },

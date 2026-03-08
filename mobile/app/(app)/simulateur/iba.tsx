@@ -1,11 +1,10 @@
 import { useState, useMemo } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
-import { calculerIBA, type RegimeIBA } from "@/lib/services/iba.service";
+import { calculerIBA } from "@/lib/services/iba.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
-import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
 import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
 import { useTranslation } from "react-i18next";
@@ -17,21 +16,37 @@ export default function IbaScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
-  const [chiffreAffaires, setChiffreAffaires] = useState("");
-  const [charges, setCharges] = useState("");
-  const [regime, setRegime] = useState<RegimeIBA>("reel");
 
-  const REGIMES: { value: RegimeIBA; label: string }[] = [
-    { value: "reel", label: t("simulateur.iba.real") },
-    { value: "forfait", label: t("simulateur.iba.flat") },
-  ];
+  // Résultat comptable
+  const [produitsExploitation, setProduitsExploitation] = useState("");
+  const [produitsFinanciers, setProduitsFinanciers] = useState("");
+  const [produitsHAO, setProduitsHAO] = useState("");
+  const [charges, setCharges] = useState("");
+
+  // Résultat fiscal
+  const [reintegrations, setReintegrations] = useState("");
+  const [deductions, setDeductions] = useState("");
+  const [reportDeficitaire, setReportDeficitaire] = useState("");
+
+  // ASDI
+  const [montantAchats, setMontantAchats] = useState("");
+
+  const parse = (v: string) => parseFloat(v.replace(/\s/g, "")) || 0;
 
   const result = useMemo(() => {
-    const ca = parseFloat(chiffreAffaires.replace(/\s/g, "")) || 0;
-    const ch = parseFloat(charges.replace(/\s/g, "")) || 0;
-    if (ca <= 0) return null;
-    return calculerIBA({ chiffreAffaires: ca, chargesDeductibles: ch, regime });
-  }, [chiffreAffaires, charges, regime]);
+    const pe = parse(produitsExploitation);
+    if (pe <= 0) return null;
+    return calculerIBA({
+      produitsExploitation: pe,
+      produitsFinanciers: parse(produitsFinanciers),
+      produitsHAO: parse(produitsHAO),
+      charges: parse(charges),
+      reintegrations: parse(reintegrations),
+      deductions: parse(deductions),
+      reportDeficitaire: parse(reportDeficitaire),
+      montantAchatsImportations: parse(montantAchats),
+    });
+  }, [produitsExploitation, produitsFinanciers, produitsHAO, charges, reintegrations, deductions, reportDeficitaire, montantAchats]);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -45,15 +60,28 @@ export default function IbaScreen() {
             <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.iba.description")}</Text>
           </View>
 
-          <Text style={[styles.fieldLabel, { color: colors.text }]}>
-            {t("simulateur.iba.regimeLabel")}
+          {/* Résultat comptable */}
+          <Text style={[styles.sectionLabel, { color: colors.primary }]}>
+            {t("simulateur.iba.rcSection")}
           </Text>
-          <OptionButtonGroup options={REGIMES} selected={regime} onChange={setRegime} fontSize={13} />
+          <NumberField label={t("simulateur.iba.produitsExploitation")} value={produitsExploitation} onChange={setProduitsExploitation} />
+          <NumberField label={t("simulateur.iba.produitsFinanciers")} value={produitsFinanciers} onChange={setProduitsFinanciers} />
+          <NumberField label={t("simulateur.iba.produitsHAO")} value={produitsHAO} onChange={setProduitsHAO} />
+          <NumberField label={t("simulateur.iba.charges")} value={charges} onChange={setCharges} />
 
-          <NumberField label={t("simulateur.iba.turnover")} value={chiffreAffaires} onChange={setChiffreAffaires} />
-          {regime === "reel" && (
-            <NumberField label={t("simulateur.iba.expenses")} value={charges} onChange={setCharges} />
-          )}
+          {/* Résultat fiscal */}
+          <Text style={[styles.sectionLabel, { color: colors.primary }]}>
+            {t("simulateur.iba.rfSection")}
+          </Text>
+          <NumberField label={t("simulateur.iba.reintegrations")} value={reintegrations} onChange={setReintegrations} />
+          <NumberField label={t("simulateur.iba.deductionsFiscales")} value={deductions} onChange={setDeductions} />
+          <NumberField label={t("simulateur.iba.reportDeficitaire")} value={reportDeficitaire} onChange={setReportDeficitaire} />
+
+          {/* ASDI */}
+          <Text style={[styles.sectionLabel, { color: colors.primary }]}>
+            {t("simulateur.iba.asdiSection")}
+          </Text>
+          <NumberField label={t("simulateur.iba.achatsImportations")} value={montantAchats} onChange={setMontantAchats} />
 
           <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.iba.legalRef")}</Text>
         </ScrollView>
@@ -61,17 +89,50 @@ export default function IbaScreen() {
         <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
           {result ? (
             <View>
-              <SimulateurSection label={t("simulateur.iba.calcSection")} />
-              <TableRow label={t("simulateur.iba.turnover")} value={formatNumber(result.chiffreAffaires)} bold />
-              {result.regime === "reel" && (
-                <TableRow label={t("simulateur.iba.expenses")} value={`- ${formatNumber(result.chargesDeductibles)}`} bg={colors.background} color={colors.danger} />
-              )}
-              <TableRow label={t("simulateur.iba.taxableProfit")} value={formatNumber(result.beneficeImposable)} />
-              <TableRow label={t("simulateur.iba.regime")} value={result.regime === "reel" ? t("simulateur.iba.real") : t("simulateur.iba.flat")} bg={colors.background} />
-              <TableRow label={t("simulateur.iba.effectiveRate")} value={`${result.taux}%`} />
+              {/* Résultat comptable */}
+              <SimulateurSection label={t("simulateur.iba.rcSection")} />
+              <TableRow label={t("simulateur.iba.produitsExploitation")} value={formatNumber(result.totalProduits)} bold />
+              <TableRow label={t("simulateur.iba.charges")} value={`- ${formatNumber(result.charges)}`} bg={colors.background} color={colors.danger} />
+              <ResultHighlight label={t("simulateur.iba.rc")} value={formatNumber(result.resultatComptable)} variant="primary" />
 
+              {/* Résultat fiscal */}
+              <SimulateurSection label={t("simulateur.iba.rfSection")} />
+              <TableRow label={t("simulateur.iba.rc")} value={formatNumber(result.resultatComptable)} />
+              {result.reintegrations > 0 && (
+                <TableRow label={t("simulateur.iba.reintegrations")} value={`+ ${formatNumber(result.reintegrations)}`} bg={colors.background} color={colors.success} />
+              )}
+              {result.deductions > 0 && (
+                <TableRow label={t("simulateur.iba.deductionsFiscales")} value={`- ${formatNumber(result.deductions)}`} bg={colors.background} color={colors.danger} />
+              )}
+              {result.reportDeficitaire > 0 && (
+                <TableRow label={t("simulateur.iba.reportDeficitaire")} value={`- ${formatNumber(result.reportDeficitaire)}`} bg={colors.background} color={colors.danger} />
+              )}
+              <ResultHighlight label={t("simulateur.iba.rf")} value={formatNumber(result.resultatFiscal)} variant="primary" />
+
+              {/* IBA brut vs Minimum */}
+              <SimulateurSection label={t("simulateur.iba.ibaBrutSection")} />
+              <TableRow label={t("simulateur.iba.ibaBrutLabel")} value={formatNumber(result.ibaBrut)} />
+              <TableRow label={t("simulateur.iba.rateApplied")} value={`${result.tauxIBA}%`} bg={colors.background} />
+              <TableRow label={t("simulateur.iba.minPerceptionBase")} value={formatNumber(result.baseMinimumPerception)} />
+              <TableRow label={t("simulateur.iba.minPerceptionRate")} value={`${result.tauxMinimum}%`} bg={colors.background} />
+              <TableRow label={t("simulateur.iba.minPerceptionAmount")} value={formatNumber(result.minimumPerception)} />
+              {result.minimumApplique && (
+                <TableRow label={t("simulateur.iba.minApplied")} value={t("simulateur.iba.minAppliedYes")} color={colors.warning} />
+              )}
+              <ResultHighlight label={t("simulateur.iba.ibaRetenu")} value={formatNumber(result.ibaRetenu)} variant="primary" />
+
+              {/* ASDI */}
+              {result.asdi > 0 && (
+                <>
+                  <SimulateurSection label={t("simulateur.iba.asdiSection")} />
+                  <TableRow label={t("simulateur.iba.asdiLabel")} value={`- ${formatNumber(result.asdi)}`} color={colors.danger} />
+                  <TableRow label={t("simulateur.iba.asdiDetail")} value={`${result.tauxASDI}% × ${formatNumber(result.montantAchatsImportations)}`} bg={colors.background} />
+                </>
+              )}
+
+              {/* Résultat final */}
               <SimulateurSection label={t("simulateur.iba.taxSection")} />
-              <ResultHighlight label={t("simulateur.iba.taxDue")} value={formatNumber(result.impot)} variant="danger" />
+              <ResultHighlight label={t("simulateur.iba.taxDue")} value={formatNumber(result.ibaNet)} variant="danger" />
               <ResultHighlight label={t("simulateur.iba.netProfit")} value={formatNumber(result.beneficeNet)} variant="success" />
             </View>
           ) : (
@@ -110,9 +171,10 @@ const styles = StyleSheet.create({
   descriptionText: {
     fontSize: 13,
   },
-  fieldLabel: {
+  sectionLabel: {
     fontSize: 14,
     fontWeight: "600",
+    marginTop: 16,
     marginBottom: 6,
   },
   legalRef: {
