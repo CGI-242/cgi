@@ -5,38 +5,11 @@ import { router, type Href } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { getEcheancesDuMois, getNomMois, getJoursRestants, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
 
 type Props = {
   favoritesCount?: number;
 };
-
-const MOIS: Record<string, number> = {
-  jan: 0, "fev": 1, "fév": 1, mars: 2, avr: 3, mai: 4, juin: 5,
-  juil: 6, "aout": 7, "août": 7, sept: 8, oct: 9, nov: 10, "dec": 11, "déc": 11,
-};
-
-function trierEcheances(echeances: { date: string; label: string; icon: keyof typeof Ionicons.glyphMap }[]) {
-  const now = new Date();
-  const mois = now.getMonth();
-  const jour = now.getDate();
-
-  function joursAvant(dateStr: string): number {
-    if (dateStr === "15/mois") {
-      return jour <= 15 ? 15 - jour : 30 - jour + 15;
-    }
-    const m = dateStr.match(/(\d+)\s+(\w+)/);
-    if (!m) return 999;
-    const d = parseInt(m[1]);
-    const mo = MOIS[m[2].replace(".", "")];
-    if (mo === undefined) return 999;
-    if (mo > mois || (mo === mois && d >= jour)) {
-      return (mo - mois) * 30 + (d - jour);
-    }
-    return (mo + 12 - mois) * 30 + (d - jour);
-  }
-
-  return [...echeances].sort((a, b) => joursAvant(a.date) - joursAvant(b.date));
-}
 
 function getGreeting(t: (key: string) => string) {
   const h = new Date().getHours();
@@ -47,7 +20,7 @@ function getGreeting(t: (key: string) => string) {
 
 const STATS = [
   { labelKey: "dashboard.stats.articles", value: "2 248", icon: "document-text-outline" as const, color: "#00815d" },
-  { labelKey: "dashboard.stats.simulators", value: "14", icon: "calculator-outline" as const, color: "#4f46e5" },
+  { labelKey: "dashboard.stats.simulators", value: "15", icon: "calculator-outline" as const, color: "#4f46e5" },
   { labelKey: "dashboard.stats.tfnc", value: "64", icon: "library-outline" as const, color: "#d97706" },
   { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#9333ea" },
 ];
@@ -70,21 +43,18 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
     borderRadius: 14,
   };
 
-  const ECHEANCES = useMemo(() => [
-    { date: "15 mars", label: t("dashboard.deadlines.minPerceptionT1"), icon: "business-outline" as const },
-    { date: "15 juin", label: t("dashboard.deadlines.minPerceptionT2"), icon: "business-outline" as const },
-    { date: "15 sept.", label: t("dashboard.deadlines.minPerceptionT3"), icon: "business-outline" as const },
-    { date: "15 déc.", label: t("dashboard.deadlines.minPerceptionT4"), icon: "business-outline" as const },
-    { date: "15/mois", label: t("dashboard.deadlines.tva"), icon: "receipt-outline" as const },
-    { date: "15/mois", label: t("dashboard.deadlines.its"), icon: "people-outline" as const },
-    { date: "15 avr.", label: t("dashboard.deadlines.patente"), icon: "storefront-outline" as const },
-    { date: "15 mars", label: t("dashboard.deadlines.irpp"), icon: "person-outline" as const },
-    { date: "15 mai", label: t("dashboard.deadlines.irf1"), icon: "home-outline" as const },
-    { date: "20 août", label: t("dashboard.deadlines.irf2"), icon: "home-outline" as const },
-    { date: "15 nov.", label: t("dashboard.deadlines.irf3"), icon: "home-outline" as const },
-  ], [t]);
+  const now = new Date();
+  const moisActuel = now.getMonth();
+  const jourActuel = now.getDate();
+  const nomMois = getNomMois(moisActuel);
 
-  const prochaines3 = useMemo(() => trierEcheances(ECHEANCES).slice(0, 3), [ECHEANCES]);
+  // Prochaines 3 échéances non passées du mois en cours
+  const prochaines3 = useMemo(() => {
+    const echeances = getEcheancesDuMois(moisActuel);
+    return echeances
+      .filter((e) => e.jour >= jourActuel)
+      .slice(0, 3);
+  }, [moisActuel, jourActuel]);
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 18, paddingBottom: 30 }}>
@@ -166,48 +136,51 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
             </Text>
           </TouchableOpacity>
         </View>
-        {prochaines3.map((e, i) => (
-          <View
-            key={`${e.date}-${e.label}`}
-            style={{
-              ...cardBase,
-              flexDirection: "row",
-              alignItems: "center",
-              gap: 12,
-              padding: 14,
-              marginBottom: i < 2 ? 10 : 0,
-            }}
-          >
+        {prochaines3.map((e: EcheanceFiscale, i: number) => {
+          const joursRestants = getJoursRestants(e.jour, moisActuel);
+          return (
             <View
+              key={`${e.jour}-${e.label}`}
               style={{
-                width: 40,
-                height: 40,
-                borderRadius: 10,
-                backgroundColor: `${colors.primary}20`,
+                ...cardBase,
+                flexDirection: "row",
                 alignItems: "center",
-                justifyContent: "center",
+                gap: 12,
+                padding: 14,
+                marginBottom: i < 2 ? 10 : 0,
               }}
             >
-              <Ionicons name={e.icon} size={18} color={colors.primary} />
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text }} numberOfLines={1}>
-                {e.label}
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>
-                {e.date === "15/mois" ? "15 du mois" : e.date}
-              </Text>
-            </View>
-            {i === 0 && (
-              <View style={{ backgroundColor: "#ef4444", paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: "#fff" }}>
-                  {t("common.urgent")}
+              <View
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: 10,
+                  backgroundColor: `${colors.primary}20`,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name={e.icon as keyof typeof Ionicons.glyphMap} size={18} color={colors.primary} />
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text }} numberOfLines={1}>
+                  {e.label}
+                </Text>
+                <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.textMuted }}>
+                  {e.jour} {nomMois}
                 </Text>
               </View>
-            )}
-            <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
-          </View>
-        ))}
+              {joursRestants <= 3 && (
+                <View style={{ backgroundColor: "#ef4444", paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
+                  <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: "#fff" }}>
+                    {t("common.urgent")}
+                  </Text>
+                </View>
+              )}
+              <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
+            </View>
+          );
+        })}
       </View>
 
       {/* Astuce du jour */}
