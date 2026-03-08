@@ -95,28 +95,16 @@ export default function NotificationBell() {
             <View
               style={{
                 position: "absolute",
-                top: -4,
-                right: -6,
+                top: -2,
+                right: -2,
                 backgroundColor: colors.danger,
-                minWidth: 16,
-                height: 16,
-                borderRadius: 8,
-                alignItems: "center",
-                justifyContent: "center",
-                paddingHorizontal: 3,
+                width: 9,
+                height: 9,
+                borderRadius: 5,
+                borderWidth: 1.5,
+                borderColor: colors.background,
               }}
-            >
-              <Text
-                style={{
-                  fontSize: 10,
-                  fontFamily: fonts.extraBold,
-                  fontWeight: fontWeights.extraBold,
-                  color: "#fff",
-                }}
-              >
-                {badgeCount}
-              </Text>
-            </View>
+            />
           )}
         </View>
       </TouchableOpacity>
