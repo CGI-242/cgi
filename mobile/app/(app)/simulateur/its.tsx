@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { calculerIts, calculerNombreParts, type SituationFamiliale, type PeriodeRevenu } from "@/lib/services/its.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
@@ -7,16 +7,14 @@ import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function ItsScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const [salaireBrut, setSalaireBrut] = useState("");
   const [periode, setPeriode] = useState<PeriodeRevenu>("mensuel");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
@@ -48,17 +46,14 @@ export default function ItsScreen() {
   }, [salaireBrut, periode, situation, enfants, appliquerCharge]);
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.its.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.its.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.its.title")}
+      description={t("simulateur.its.description")}
+      legalRef={t("simulateur.its.legalRef")}
+      emptyMessage={t("simulateur.its.enterSalary")}
+      hasResult={!!result}
+      inputSection={
+        <>
           <View style={styles.rowGap10}>
             <View style={styles.flex1}>
               <Text style={[styles.labelSmall, { color: colors.textSecondary }]}>{t("simulateur.its.status")}</Text>
@@ -109,76 +104,45 @@ export default function ItsScreen() {
             />
             <Text style={[styles.currencyLabel, { color: colors.textSecondary }]}>FCFA</Text>
           </View>
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            <SimulateurSection label={t("simulateur.its.monthlyCalc")} />
+            <TableRow label={t("simulateur.its.grossMonthly")} value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
+            <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color={colors.danger} />
+            <TableRow label={t("simulateur.its.netTaxableMonthly")} value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.its.legalRef")}</Text>
-        </ScrollView>
+            <SimulateurSection label={t("simulateur.its.annualCalc")} />
+            <TableRow label={t("simulateur.its.grossAnnual")} value={formatNumber(result.revenuBrutAnnuel)} />
+            <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color={colors.danger} />
+            <TableRow label={t("simulateur.its.netAnnual")} value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
+            <TableRow label={t("simulateur.its.netTaxableAnnual")} value={formatNumber(result.revenuNetImposable)} bg={colors.background} bold />
 
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result ? (
-            <View>
-              <SimulateurSection label={t("simulateur.its.monthlyCalc")} />
-              <TableRow label={t("simulateur.its.grossMonthly")} value={formatNumber(result.revenuBrutAnnuel / 12)} bold />
-              <TableRow label={t("simulateur.its.cnssMonthly")} value={`- ${formatNumber(result.retenueCnssMensuelle)}`} bg={colors.background} color={colors.danger} />
-              <TableRow label={t("simulateur.its.netTaxableMonthly")} value={formatNumber(Math.round(result.revenuNetImposable / 12))} />
-
-              <SimulateurSection label={t("simulateur.its.annualCalc")} />
-              <TableRow label={t("simulateur.its.grossAnnual")} value={formatNumber(result.revenuBrutAnnuel)} />
-              <TableRow label={t("simulateur.its.cnssAnnual")} value={`- ${formatNumber(result.retenueCnss)}`} bg={colors.background} color={colors.danger} />
-              <TableRow label={t("simulateur.its.netAnnual")} value={formatNumber(result.revenuBrutAnnuel - result.retenueCnss)} />
-              <TableRow label={t("simulateur.its.netTaxableAnnual")} value={formatNumber(result.revenuNetImposable)} bg={colors.background} bold />
-
-              <View style={[styles.quotientBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
-                <View style={styles.quotientRow}>
-                  <View>
-                    <Text style={[styles.quotientLabel, { color: colors.text }]}>{t("simulateur.its.familyQuotientCalc")}</Text>
-                    <Text style={[styles.quotientSub, { color: colors.textSecondary }]}>{t("simulateur.its.netTaxableDivided")} {nombreParts} {t("common.parts")}</Text>
-                  </View>
-                  <Text style={[styles.quotientValue, { color: colors.text }]}>{formatNumber(result.revenuParPart)}</Text>
+            <View style={[styles.quotientBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+              <View style={styles.quotientRow}>
+                <View>
+                  <Text style={[styles.quotientLabel, { color: colors.text }]}>{t("simulateur.its.familyQuotientCalc")}</Text>
+                  <Text style={[styles.quotientSub, { color: colors.textSecondary }]}>{t("simulateur.its.netTaxableDivided")} {nombreParts} {t("common.parts")}</Text>
                 </View>
+                <Text style={[styles.quotientValue, { color: colors.text }]}>{formatNumber(result.revenuParPart)}</Text>
               </View>
-
-              <SimulateurSection label={t("simulateur.its.taxToPay")} />
-              <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
-              <ResultHighlight label={t("simulateur.its.itsMonthly")} value={formatNumber(result.itsMensuel)} variant="danger" />
-
-              <ResultHighlight label={t("simulateur.its.netSalaryMonthly")} value={formatNumber(Math.round(result.salaireNetMensuel))} variant="success" />
             </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.its.enterSalary")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+
+            <SimulateurSection label={t("simulateur.its.taxToPay")} />
+            <TableRow label={t("simulateur.its.itsAnnual")} value={formatNumber(result.itsAnnuel)} />
+            <ResultHighlight label={t("simulateur.its.itsMonthly")} value={formatNumber(result.itsMensuel)} variant="danger" />
+
+            <ResultHighlight label={t("simulateur.its.netSalaryMonthly")} value={formatNumber(Math.round(result.salaireNetMensuel))} variant="success" />
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    marginBottom: 12,
-    padding: 12,
-  },
-  descriptionText: {
-    fontSize: 13,
-  },
   rowGap10: {
     flexDirection: "row",
     gap: 10,
@@ -254,10 +218,6 @@ const styles = StyleSheet.create({
   currencyLabel: {
     fontSize: 14,
     fontWeight: "600",
-  },
-  legalRef: {
-    fontSize: 12,
-    marginTop: 12,
   },
   quotientBox: {
     paddingHorizontal: 14,

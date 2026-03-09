@@ -3,12 +3,10 @@
 
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
+import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { searchHistoryQuery } from "../schemas/search-history.schema";
 import prisma from "../utils/prisma";
-import { createLogger } from "../utils/logger";
-
-const logger = createLogger("SearchHistoryRoutes");
 
 const router = Router();
 
@@ -33,37 +31,32 @@ const router = Router();
  *       200:
  *         description: Historique de recherche paginé
  */
-router.get("/", requireAuth, validate({ query: searchHistoryQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const userId = req.userId!;
-    const page = Number(req.query.page);
-    const limit = Number(req.query.limit);
-    const skip = (page - 1) * limit;
+router.get("/", requireAuth, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const userId = req.userId!;
+  const page = Number(req.query.page);
+  const limit = Number(req.query.limit);
+  const skip = (page - 1) * limit;
 
-    const [searches, total] = await Promise.all([
-      prisma.searchHistory.findMany({
-        where: { userId },
-        orderBy: { createdAt: "desc" },
-        take: limit,
-        skip,
-        select: {
-          id: true,
-          query: true,
-          createdAt: true,
-          article: {
-            select: { id: true, numero: true, titre: true },
-          },
+  const [searches, total] = await Promise.all([
+    prisma.searchHistory.findMany({
+      where: { userId },
+      orderBy: { createdAt: "desc" },
+      take: limit,
+      skip,
+      select: {
+        id: true,
+        query: true,
+        createdAt: true,
+        article: {
+          select: { id: true, numero: true, titre: true },
         },
-      }),
-      prisma.searchHistory.count({ where: { userId } }),
-    ]);
+      },
+    }),
+    prisma.searchHistory.count({ where: { userId } }),
+  ]);
 
-    res.json({ searches, total, page, limit });
-  } catch (err) {
-    logger.error("[search-history]", err);
-    res.status(500).json({ error: "Erreur serveur" });
-  }
-});
+  res.json({ searches, total, page, limit });
+}));
 
 /**
  * @swagger
@@ -77,29 +70,24 @@ router.get("/", requireAuth, validate({ query: searchHistoryQuery }), async (req
  *       200:
  *         description: Top 10 des termes les plus recherchés
  */
-router.get("/popular", requireAuth, async (req: AuthRequest, res: Response) => {
-  try {
-    const userId = req.userId!;
-    // Scopé par utilisateur pour éviter la fuite de données inter-organisations (HIGH-04)
-    const popular = await prisma.searchHistory.groupBy({
-      by: ["query"],
-      where: { userId },
-      _count: { query: true },
-      orderBy: { _count: { query: "desc" } },
-      take: 10,
-    });
+router.get("/popular", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const userId = req.userId!;
+  // Scopé par utilisateur pour éviter la fuite de données inter-organisations (HIGH-04)
+  const popular = await prisma.searchHistory.groupBy({
+    by: ["query"],
+    where: { userId },
+    _count: { query: true },
+    orderBy: { _count: { query: "desc" } },
+    take: 10,
+  });
 
-    res.json({
-      popular: popular.map((p) => ({
-        query: p.query,
-        count: p._count.query,
-      })),
-    });
-  } catch (err) {
-    logger.error("[search-history/popular]", err);
-    res.status(500).json({ error: "Erreur serveur" });
-  }
-});
+  res.json({
+    popular: popular.map((p) => ({
+      query: p.query,
+      count: p._count.query,
+    })),
+  });
+}));
 
 /**
  * @swagger
@@ -113,18 +101,13 @@ router.get("/popular", requireAuth, async (req: AuthRequest, res: Response) => {
  *       200:
  *         description: Historique supprimé
  */
-router.delete("/", requireAuth, async (req: AuthRequest, res: Response) => {
-  try {
-    const userId = req.userId!;
-    const { count } = await prisma.searchHistory.deleteMany({
-      where: { userId },
-    });
+router.delete("/", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const userId = req.userId!;
+  const { count } = await prisma.searchHistory.deleteMany({
+    where: { userId },
+  });
 
-    res.json({ message: "Historique supprimé", count });
-  } catch (err) {
-    logger.error("[search-history/delete]", err);
-    res.status(500).json({ error: "Erreur serveur" });
-  }
-});
+  res.json({ message: "Historique supprimé", count });
+}));
 
 export default router;

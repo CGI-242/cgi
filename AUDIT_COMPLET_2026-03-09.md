@@ -117,6 +117,8 @@
 | P4 | **Re-evalue** — PAGE_TITLES et PAGE_PARENTS deja en dehors du composant | 2026-03-09 | - |
 | P5 | **AbortController ajoute** — organisation/index.tsx avec cleanup au demontage | 2026-03-09 | voir ci-dessous |
 | P6 | **Timeout DB** — Deja corrige en B11 (connect_timeout + pool_timeout) | 2026-03-09 | - |
+| D1 | **SimulateurLayout** — Composant template partage pour les 16 pages simulateur (layout responsive, titre, description, etat vide). Applique sur tva.tsx et its.tsx en demo | 2026-03-09 | voir ci-dessous |
+| D4 | **asyncHandler** — Middleware factory eliminant les try/catch dupliques dans les routes. Applique sur search-history, user-stats, notifications (6 try/catch supprimes) | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -139,10 +141,10 @@
 
 | Categorie | Fichiers | Lignes dupliquees | Priorite |
 |-----------|----------|-------------------|----------|
-| **Pages Simulateur** (layout, styles, state identiques) | 16 fichiers | ~2 400-3 200 lignes | **HAUTE** |
+| **Pages Simulateur** — **EN COURS** `SimulateurLayout.tsx` cree, applique sur tva.tsx et its.tsx | 16 fichiers | ~2 400-3 200 lignes | **HAUTE** |
 | **Article-Metadata** (structures similaires, interfaces inconsistantes) | 9 fichiers | ~5 641 lignes | **HAUTE** |
 | **Keyword-Mappings** (meme structure, donnees differentes) | 9 fichiers | ~3 699 lignes | **HAUTE** |
-| **Routes Backend** (try/catch, error handling identiques) | 15 fichiers | ~800-1 200 lignes | MOYENNE |
+| **Routes Backend** — **EN COURS** `asyncHandler()` cree, applique sur 3 fichiers (6 try/catch) | 15 fichiers | ~800-1 200 lignes | MOYENNE |
 | **Clients API** (boilerplate get/post identique) | 13 fichiers | ~455-585 lignes | MOYENNE |
 | **Pages Auth** (layout, styles, validation similaires) | 5 fichiers | ~300-400 lignes | MOYENNE |
 | **Total estime** | | **~13 000-15 000 lignes** | |
