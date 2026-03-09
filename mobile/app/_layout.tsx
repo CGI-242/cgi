@@ -44,6 +44,7 @@ function ThemedStack() {
         contentStyle: { backgroundColor: colors.background },
       }}
     >
+      <Stack.Screen name="index" options={{ title: "NORMX Tax", contentStyle: { backgroundColor: "#08080d" } }} />
       <Stack.Screen name="(auth)" options={{ title: "NORMX Tax" }} />
       <Stack.Screen name="(app)" options={{ title: "NORMX Tax" }} />
       <Stack.Screen name="legal" options={{ title: "NORMX Tax" }} />

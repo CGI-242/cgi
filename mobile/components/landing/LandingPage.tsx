@@ -41,7 +41,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#08080d" }}>
+    <ScrollView ref={scrollRef} style={{ flex: 1, width: "100%", backgroundColor: "#08080d" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
       <LandingHero isMobile={isMobile} loaded={loaded} />
       <View ref={(r) => { sectionRefs.current.features = r; }}>
