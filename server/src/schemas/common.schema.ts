@@ -18,7 +18,7 @@ export const orgIdParam = z.object({ orgId: uuidParam });
 
 // --- Pagination ---
 export const paginationQuery = z.object({
-  page: z.coerce.number().int().min(1).default(1),
+  page: z.coerce.number().int().min(1).max(1000).default(1),
   limit: z.coerce.number().int().min(1).max(100).default(50),
 });
 

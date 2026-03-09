@@ -102,7 +102,7 @@ router.post("/register", validate({ body: registerBody }), verifyTurnstile, asyn
       });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 12);
+    const hashedPassword = await bcrypt.hash(password, parseInt(process.env.BCRYPT_ROUNDS || '12', 10));
     const otp = generateOtp();
 
     // Créer l'utilisateur
@@ -627,7 +627,7 @@ router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordB
       return;
     }
 
-    const hashedPassword = await bcrypt.hash(newPassword, 12);
+    const hashedPassword = await bcrypt.hash(newPassword, parseInt(process.env.BCRYPT_ROUNDS || '12', 10));
     await prisma.user.update({
       where: { id: user.id },
       data: {
@@ -699,6 +699,9 @@ router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: 
       return;
     }
 
+    // Blacklister IMMEDIATEMENT l'ancien token AVANT de générer le nouveau (M1 — race condition)
+    TokenBlacklistService.blacklistToken(refreshTokenValue);
+
     const payload = verifyRefreshToken(refreshTokenValue);
 
     // Vérifier si l'utilisateur existe
@@ -721,9 +724,6 @@ router.post("/refresh-token", validate({ body: refreshTokenBody }), async (req: 
     // Générer de nouveaux tokens en préservant rememberMe
     const newToken = generateAccessToken({ userId: user.id, email: user.email }, wasRememberMe);
     const newRefreshToken = generateRefreshToken({ userId: user.id, email: user.email }, wasRememberMe);
-
-    // Blacklister l'ancien refresh token (rotation)
-    TokenBlacklistService.blacklistToken(refreshTokenValue);
 
     if (isWebClient(req)) {
       setAuthCookies(res, newToken, newRefreshToken, wasRememberMe);
@@ -1032,7 +1032,7 @@ router.post("/change-password", requireAuth, sensitiveLimiter, validate({ body: 
     }
 
     // Hacher le nouveau mot de passe (cost 12 — MED-08)
-    const hashedPassword = await bcrypt.hash(newPassword, 12);
+    const hashedPassword = await bcrypt.hash(newPassword, parseInt(process.env.BCRYPT_ROUNDS || '12', 10));
 
     // Mettre à jour le mot de passe et invalider les tokens
     await prisma.user.update({

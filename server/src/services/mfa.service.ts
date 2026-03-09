@@ -67,7 +67,7 @@ export class MFAService {
   /**
    * Génère un secret TOTP + QR code pour le setup
    */
-  static async generateSetup(userId: string): Promise<{ qrCode: string; secret: string; otpauthUrl: string }> {
+  static async generateSetup(userId: string): Promise<{ qrCode: string; otpauthUrl: string }> {
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: { email: true, mfaEnabled: true },
@@ -97,9 +97,9 @@ export class MFAService {
 
     logger.info(`MFA setup généré pour user ${userId}`);
 
+    // M2 : ne plus retourner le secret en clair — le QR code suffit pour le setup
     return {
       qrCode,
-      secret: secret.base32,
       otpauthUrl,
     };
   }

@@ -28,6 +28,13 @@
 | H3 | **Deja corrige** — Lockout fonctionnel : 5 tentatives → 15min blocage en DB + rate limiter Nginx | 2026-03-09 | - |
 | H5 | **Rate limiting /clear-session** — Zone Nginx dediee `session_cleanup` a 5r/min avec burst 3 | 2026-03-09 | voir ci-dessous |
 | H6 | **Suite SSL/TLS modernisee** — Ciphers AEAD uniquement (ECDHE+AES-GCM/CHACHA20), session tickets desactives, cache SSL 10m | 2026-03-09 | voir ci-dessous |
+| M1 | **Race condition refresh token** — Blacklist AVANT generation du nouveau token | 2026-03-09 | voir ci-dessous |
+| M2 | **Secret MFA masque** — Ne retourne plus le secret en clair, seul le QR code est fourni | 2026-03-09 | voir ci-dessous |
+| M5 | **Timeouts proxy Nginx** — connect 10s, send/read 30s (anti-slowloris) | 2026-03-09 | voir ci-dessous |
+| M6 | **Limites ressources Docker** — memory + cpus + log rotation (max-size 10m, 3 fichiers) sur tous les services | 2026-03-09 | voir ci-dessous |
+| M7 | **Rate limiting renforce** — 10r/s burst 20 (au lieu de 30r/s burst 50) | 2026-03-09 | voir ci-dessous |
+| M8 | **Pagination bornee** — page max 1000 via Zod | 2026-03-09 | voir ci-dessous |
+| M9 | **Bcrypt rounds configurable** — Via `BCRYPT_ROUNDS` env (defaut 12) | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -67,15 +74,15 @@
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **M1** | Race condition sur le refresh token replay | `server/src/routes/auth.ts:691-700` |
-| **M2** | Secret MFA retourne en clair avant verification | `server/src/services/mfa.service.ts:67-100` |
+| **M1** | ~~Race condition sur le refresh token replay~~ **CORRIGE** — Blacklist immédiat AVANT génération du nouveau token | `server/src/routes/auth.ts:691-700` |
+| **M2** | ~~Secret MFA retourne en clair avant verification~~ **CORRIGE** — Secret supprimé du retour API, seul le QR code est fourni | `server/src/services/mfa.service.ts:67-105` |
 | **M3** | ~~MFA chiffre avec le meme secret que JWT~~ **CORRIGE** — `MFA_ENCRYPTION_KEY` dediee, obligatoire en production | `server/src/services/mfa.service.ts:12-20` |
 | **M4** | ~~Header `X-Frame-Options` manquant (clickjacking)~~ **CORRIGE** — `X-Frame-Options: DENY` ajoute via `security-headers.conf` | `nginx/conf.d/security-headers.conf` |
-| **M5** | Pas de timeout proxy dans Nginx (slowloris) | `nginx/conf.d/api.conf:39-61` |
-| **M6** | Pas de limite de ressources Docker | `docker-compose.yml` |
-| **M7** | Rate limiting trop permissif (30r/s burst 50) | `nginx/nginx.conf:31` |
-| **M8** | Pagination sans max de page (DoS potentiel) | `server/src/schemas/common.schema.ts:20-23` |
-| **M9** | Bcrypt rounds hardcode (12) sans config | `server/src/routes/auth.ts:105` |
+| **M5** | ~~Pas de timeout proxy dans Nginx (slowloris)~~ **CORRIGE** — connect 10s, send/read 30s | `nginx/conf.d/api.conf` |
+| **M6** | ~~Pas de limite de ressources Docker~~ **CORRIGE** — Limites memory/cpus + log rotation (10m, 3 fichiers) sur tous les services | `docker-compose.yml` |
+| **M7** | ~~Rate limiting trop permissif~~ **CORRIGE** — 10r/s burst 20 (au lieu de 30r/s burst 50) | `nginx/nginx.conf`, `nginx/conf.d/api.conf` |
+| **M8** | ~~Pagination sans max de page~~ **CORRIGE** — Page max 1000 via Zod validation | `server/src/schemas/common.schema.ts:21` |
+| **M9** | ~~Bcrypt rounds hardcode~~ **CORRIGE** — Configurable via `BCRYPT_ROUNDS` env (defaut 12) | `server/src/routes/auth.ts` |
 
 ### 1.4 BASSE SEVERITE
 
