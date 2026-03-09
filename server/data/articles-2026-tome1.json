@@ -9954,7 +9954,9 @@
       "héritiers",
       "créanciers",
       "Contributions Directes",
-      "quittances"
+      "quittances",
+      "deniers",
+      "délivrance"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -9973,8 +9975,11 @@
       "débiteurs",
       "privilège du Trésor Public",
       "redevables",
+      "acquit",
+      "contributions",
       "quittances",
-      "Percepteurs"
+      "Percepteurs",
+      "deniers"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10005,7 +10010,8 @@
       "taxes communales",
       "contributions directes",
       "privilège",
-      "rang"
+      "rang",
+      "Trésor"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10019,18 +10025,20 @@
       "contribuable",
       "résidence",
       "émission du rôle",
+      "Agent chargé du recouvrement",
       "contrainte extérieure",
-      "comptable",
-      "trésorier général",
-      "trésorier payeur",
-      "receveur principal"
+      "Comptable",
+      "assujetti",
+      "trésorier Général",
+      "trésorier Payeur",
+      "receveur principal des impôts"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "477",
     "titre": "Hypothèque légale du Trésor",
-    "contenu": "Pour le recouvrement des impositions de toute nature et amendes fiscales visées au présent Code, le Trésor a une hypothèque légale sur tous les biens immeubles des redevables, ou des responsables du recouvrement. Cette hypothèque prend rang à la date de son inscription au bureau des hypothèques. Elle peut être inscrite qu'à partir de la date à laquelle le contribuable a encouru une majoration ou pénalité pour défaut de paiement.",
+    "contenu": "Pour le recouvrement des impositions de toute nature et amendes fiscales visées au présent Code, le Trésor a une hypothèque légale sur tous les biens immeubles des redevables, ou des responsables du recouvrement. Cette hypothèque prend rang à la date de son inscription au bureau des hypothèques. Elle ne peut être inscrite qu'à partir de la date à laquelle le contribuable a encouru une majoration ou pénalité pour défaut de paiement.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10041,16 +10049,20 @@
       "hypothèque légale",
       "biens immeubles",
       "redevables",
+      "responsables du recouvrement",
       "bureau des hypothèques",
+      "inscription",
+      "contribuable",
       "majoration",
-      "pénalité"
+      "pénalité",
+      "défaut de paiement"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "478",
     "titre": "Susceptibilité de poursuites",
-    "contenu": "Est susceptible de poursuite :\n• tout contribuable qui n'a pas acquitté, à la date réglementaire, la terme échu des contributions directes et indirectes ou taxes assimilées perçues au profit du budget de l'État, des communes au profit du Trésor Public et des autres Collectivités dont il est redevable ;\n• tout débiteur envers le service local ou les Communes qui ne s'est pas libéré de sa dette dans le délai imparti et auquel il est impossible d'opposer la compensation prévue par les articles 1289 et suivants du Code civil.",
+    "contenu": "Est susceptible de poursuite :\n• tout contribuable qui n'a pas acquitté, à la date réglementaire, le terme échu des contributions directes et indirectes ou taxes assimilées perçues au profit du budget de l'État, des communes ou autres Collectivités dont il est redevable ;\n• tout débiteur envers le service local ou les Communes qui ne s'est pas libéré de sa dette dans le délai imparti et auquel il est impossible d'opposer la compensation prévue par les articles 1289 et suivants du Code civil.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10079,8 +10091,10 @@
     "keywords": [
       "héritiers",
       "légataires",
-      "solidarité",
+      "solidairement",
+      "conjointement",
       "contributions directes",
+      "auteur",
       "mutation",
       "rôles",
       "renonciation"
@@ -10090,7 +10104,7 @@
   {
     "numero": "480",
     "titre": "Compétence pour décerner des contraintes",
-    "contenu": "Le trésorier payeur, le receveur principal des impôts, le receveur de l'unité des grandes entreprises et le receveur de l'enregistrement des domaines et timbres sont seuls qualifiés pour engager les poursuites et décerner contrainte contre un contribuable retardataire et/ou récalcitrant.\nIls sont assistés, dans le recouvrement des impôts, taxes, droits et contributions dont ils ont la charge, par des agents de poursuites qui sont qualifiés pour engager les poursuites avec frais.",
+    "contenu": "Le trésorier payeur, le receveur principal des impôts, le receveur de l'unité des grandes entreprises et le receveur de l'enregistrement des domaines et timbres ont seuls qualité pour engager les poursuites et décerner contrainte contre un contribuable retardataire et/ou récalcitrant.\nIls sont assistés, dans le recouvrement des impôts, taxes, droits et contributions dont ils ont la charge, par des agents de poursuites qui ont qualité pour engager les poursuites avec frais.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10104,7 +10118,11 @@
       "contrainte",
       "retardataire",
       "récalcitrant",
-      "agents de poursuites"
+      "contribuable",
+      "retardataire",
+      "récalcitrant",
+      "agents de poursuites",
+      "poursuites avec frais"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10139,13 +10157,15 @@
   {
     "numero": "483",
     "titre": "Mentions obligatoires dans les actes des porteurs de contraintes",
-    "contenu": "Les porteurs de contraintes, dans l'exercice de leurs fonctions doivent toujours être munis de leur commission ; ils mentionnent dans leurs actes de la présenter quand ils en sont requis.",
+    "contenu": "Les porteurs de contraintes, dans l'exercice de leurs fonctions doivent toujours être munis de leur commission ; ils la mentionnent dans leurs actes et la présentent quand ils en sont requis.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "porteurs de contraintes",
+      "fonctions",
       "commission",
-      "actes"
+      "actes",
+      "requis"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10181,7 +10201,7 @@
   {
     "numero": "485",
     "titre": "Contrainte contre le redevable",
-    "contenu": "Après le délai indiqué dans l'article 459 ci-dessus, le comptable public chargé du recouvrement peut décerner une contrainte contre le redevable à fin de commandement établi et délivré par ce porteur.",
+    "contenu": "Après le délai indiqué dans l'article 459 ci-dessus, le comptable public chargé du recouvrement peut décerner une contrainte contre le redevable à fin de commandement établi et délivré par le porteur.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10220,7 +10240,7 @@
   {
     "numero": "486 bis",
     "titre": "Non-respect des obligations fiscales",
-    "contenu": "Pour les impôts, taxes, droits et contributions de toute nature régis par le présent Code, le non-respect des obligations qui y sont édictées – outre les sanctions prévues aux articles 372 et suivants – est passible, après mise en demeure, de :\n• saisie ;\n• vente ;\n• publication dans un journal des noms des récalcitrants ;\n• exclusion temporaire des marchés publics ;\n• suspension de délivrance des licences d'importation ;\n• blocage des comptes bancaires ;\n• fermeture de l'entreprise.\nEn cas de récidive, outre l'exclusion définitive des marchés publics, la contrainte par corps à une peine de cinq à quinze jours d'emprisonnement peuvent être prononcées par l'autorité judiciaire à l'encontre du dirigeant principal de l'entreprise individuelle ou du gérant de la société.",
+    "contenu": "Pour les impôts, taxes, droits et contributions de toute nature régis par le présent Code, le non-respect des obligations qui y sont édictées – outre les sanctions prévues aux articles 372 et suivants – est passible, après mise en demeure, de :\n• saisie ;\n• vente ;\n• publication dans un journal des noms des récalcitrants ;\n• exclusion temporaire des marchés publics ;\n• suspension de délivrance des licences d'importation ;\n• blocage des comptes bancaires ;\n• fermeture de l'entreprise.\nEn cas de récidive, outre l'exclusion définitive des marchés publics, la contrainte par corps et une peine de cinq à quinze jours d'emprisonnement peuvent être prononcées par l'autorité judiciaire à l'encontre du dirigeant principal de l'entreprise individuelle ou du gérant de la société.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10321,7 +10341,7 @@
   {
     "numero": "490",
     "titre": "Exécution de la saisie",
-    "contenu": "La saisie est exécutée d'après les formes prescrites par le Code de procédure civile. Il est dressé un procès-verbal de saisie.",
+    "contenu": "La saisie s'exécute d'après les formes prescrites par le Code de procédure civile. Il est dressé un procès-verbal de saisie.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10338,7 +10358,6 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "L.F.2023",
       "abrogé"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
@@ -10361,14 +10380,16 @@
   {
     "numero": "493",
     "titre": "Délai et conditions de la vente",
-    "contenu": "La vente ne peut avoir lieu que huit jours après l'autorisation donnée par le Ministre des finances sauf autorisation d'un délai moindre s'il y a lieu de craindre le dépérissement des objets saisis.\nLa vente est faite par les soins du commissaire-priseur, dans les formes prescrites par le Code de procédure civile pour les ventes effectuées par autorité de justice ou, à défaut, par le porteur de contraintes.\nElle donne lieu à l'établissement d'un procès-verbal.",
+    "contenu": "La vente ne peut avoir lieu que huit jours après l'autorisation donnée par le Ministre des finances sauf autorisation spéciale lorsqu'il y a lieu de craindre le dépérissement des objets saisis.\nLa vente est faite par les soins du commissaire-priseur, dans les formes prescrites par le Code de procédure civile pour les ventes effectuées par autorité de justice ou, à défaut, par le porteur de contraintes.\nElle donne lieu à l'établissement d'un procès-verbal.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "vente",
       "huit jours",
       "Ministre des finances",
+      "autorisation spéciale",
       "dépérissement",
+      "objets saisis",
       "commissaire-priseur",
       "Code de procédure civile",
       "autorité de justice",
@@ -10394,7 +10415,7 @@
   {
     "numero": "495",
     "titre": "Ordre de paiement",
-    "contenu": "Tout ordre de paiement, quel qu'en soit le titre, ou l'objet, ordonnancé par l'État, les Communes ou les Collectivités Publiques, pourra donner lieu, sous réserve de l'exécution préalable des dispositions des articles 467 et 468 du présent Code, à prélèvement en règlement de tous impôts et taxes dont le bénéficiaire pourrait être redevable.",
+    "contenu": "Tout ordre de paiement, quel qu'en soit le titre, ou l'objet, ordonnancé par l'État, les Communes ou les Collectivités Publiques, pourra donner lieu, sous réserve de l'exécution préalable des dispositions des articles 487 et 488 du présent Code, à précompte en règlement de tous impôts et taxes dont le bénéficiaire pourrait être redevable.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10407,7 +10428,8 @@
       "précompte",
       "impôts",
       "taxes",
-      "bénéficiaire"
+      "bénéficiaire",
+      "redevable"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10420,17 +10442,18 @@
     "keywords": [
       "agent de poursuites",
       "saisie",
+      "suspension de saisie",
       "contribuable",
       "libération",
-      "suspension",
-      "quittance"
+      "quittance provisoire",
+      "quittance définitive"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "497",
     "titre": "Recouvrement des contributions pour les contribuables domiciliés en France ou à l'étranger",
-    "contenu": "Lorsque le contribuable est domicilié ou réside en France, dans les départements d'Outre-mer ou dans les autres États de la Communauté, le recouvrement des contributions peut être assuré, à la demande du comptable qui a pris le rôle en charge, par le comptable du domicile ou de la résidence du redevable ou de la situation de ses biens. Les poursuites étant exercées dans les formes prévues pour le recouvrement des contributions de même nature au lieu où elles sont effectuées.",
+    "contenu": "Lorsque le contribuable est domicilié ou réside en France, dans les départements d'Outre-mer ou dans les autres États de la Communauté, le recouvrement des contributions peut être assumé, à la demande du comptable qui a pris le rôle en charge, par le comptable du domicile ou de la résidence du redevable ou de la situation de ses biens, les poursuites étant exercées dans les formes prévues pour le recouvrement des contributions de même nature au lieu où elles sont effectuées.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10439,10 +10462,14 @@
       "départements d'Outre-mer",
       "États de la Communauté",
       "recouvrement",
+      "contributions",
       "comptable",
+      "rôle en charge",
       "domicile",
       "résidence",
-      "biens"
+      "redevable",
+      "situation des biens",
+      "poursuites"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10454,14 +10481,16 @@
     "chapitre": "1",
     "keywords": [
       "saisie",
-      "opposition"
+      "exécution",
+      "opposition",
+      "nonobstant"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "499",
     "titre": "Oppositions formées par le saisi et ses créanciers",
-    "contenu": "Les oppositions formées par le saisi et par ses créanciers sont valablement faites entre les mains du comptable saisi ou auprès du porteur de contraintes.\nLes demandes de revendication d'objets saisis sont signifiées au gardien et dénoncées au saisissant et au saisi.\nElles doivent être précédées du dépôt d'un mémoire entre les mains du trésorier-payeur Général.\nA défaut de décision à l'expiration du délai d'un mois, il est permis aux parties de se pourvoir devant les tribunaux.\nLe Tribunal statue exclusivement au vu des justifications soumises au trésorier-payeur et le revendiquant ne sont admis ni à lui soumettre des pièces justificatives autres que celles qu'ils ont déjà produites à l'appui de leurs mémoires, ni à invoquer dans leurs conclusions des circonstances de fait autres que celles exposées dans leurs mémoires.",
+    "contenu": "Les oppositions formées par le saisi et par ses créanciers sont valablement faites entre les mains du comptable saisissant ou auprès du porteur de contraintes.\nLes demandes de revendication d'objets saisis sont signifiées au gardien et dénoncées au saisissant et au saisi.\nElles doivent être précédées du dépôt d'un mémoire entre les mains du trésorier-payeur Général.\nA défaut de décision à l'expiration du délai d'un mois, il est permis aux parties de se pourvoir devant les tribunaux.\nLe Tribunal statue exclusivement au vu des justifications soumises au trésorier-payeur et le revendiquant ne sont admis ni à lui soumettre des pièces justificatives autres que celles qu'ils ont déjà produites à l'appui de leurs mémoires, ni à invoquer dans leurs conclusions des circonstances de fait autres que celles exposées dans leurs mémoires.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10471,10 +10500,17 @@
       "comptable saisissant",
       "porteur de contraintes",
       "revendication",
+      "objets saisis",
       "gardien",
+      "saisissant",
+      "dépôt de mémoire",
       "trésorier-payeur Général",
       "délai un mois",
-      "tribunaux"
+      "tribunaux",
+      "Tribunal",
+      "justifications",
+      "pièces justificatives",
+      "conclusions"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10485,6 +10521,7 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
+      "prononcé du jugement",
       "jugement",
       "mesures conservatoires",
       "agent de poursuites"
@@ -10494,16 +10531,17 @@
   {
     "numero": "500 bis",
     "titre": "Radiation d'une société du RCCM",
-    "contenu": "(L.F.2023) La radiation d'une société ou de toute autre entité juridique au RCCM est subordonnée à la présentation préalable, auprès du tribunal de commerce, d'un certificat de moralité fiscale et d'un quitus fiscal.",
+    "contenu": "La radiation d'une société ou de toute autre entité juridique au RCCM est subordonnée à la présentation préalable, auprès du tribunal de commerce, d'un certificat de moralité fiscale et d'un quitus fiscal.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
-      "L.F.2023",
       "radiation",
       "société",
       "entité juridique",
       "RCCM",
+      "registre du commerce",
       "tribunal de commerce",
+      "présentation préalable",
       "certificat de moralité fiscale",
       "quitus fiscal"
     ],
@@ -10517,19 +10555,23 @@
     "chapitre": "1",
     "keywords": [
       "agent de poursuite",
+      "commission",
       "portes fermées",
       "ouverture refusée",
       "gardien",
       "autorité administrative",
+      "ouverture des locaux",
       "représentant du Gouvernement",
-      "procès-verbal de saisie"
+      "saisie",
+      "procès-verbal de saisie",
+      "incident"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "502",
     "titre": "Mesures conservatoires en cas d'enlèvement furtif d'objets",
-    "contenu": "Des mesures conservatoires sont également prises lorsqu'un agent de poursuites ou de perception est informé d'un commencement d'enlèvement furtif d'objets constituant gage de la contribution, et qu'il y a lieu de craindre leur disparition.",
+    "contenu": "Des mesures conservatoires sont également prises lorsqu'un agent de poursuites ou de perception est informé d'un commencement d'enlèvement furtif d'objets constituant le gage de la contribution, et qu'il y a lieu de craindre leur disparition.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10537,8 +10579,10 @@
       "agent de poursuites",
       "agent de perception",
       "enlèvement furtif",
-      "gage",
+      "objets",
+      "gage de la contribution",
       "contribution",
+      "crainte de disparition",
       "disparition"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
@@ -10546,27 +10590,33 @@
   {
     "numero": "503",
     "titre": "Saisie-arrêt ou opposition",
-    "contenu": "1) Défaut de paiement des contributions, soit par les dépositaires ou débiteurs indiqués aux articles 472 et 473, soit par tous autres débiteurs de deniers provenant d'un redevable, le recouvrement du rôle poursuivi peut fait entre les mains desdits dépositaires et débiteurs une saisie-arrêt ou opposition, par le ministère du comptable.\n2) La saisie arrêt ne doit être employée que dans le cas où les deniers ne sont pas affectés au privilège du Trésor. Dans le cas contraire, il y a lieu de procéder par voie de sommation directe au tiers détenteurs.\n3) Les dépositaires détenteurs ou débiteurs de sommes appartenant ou devant revenir aux redevables de l'impôt sont tenus, sur l'injonction qui leur est faite sous forme d'avis à tiers détenteurs notifié par le comptable public, de verser en lieu et place des redevables, les fonds qu'ils détiennent ou qu'ils doivent, à concurrence des impositions dues par les redevables.\n4) Ont qualité de tiers détenteur au sens du présent article, outre les personnes visées à l'article 473 ci-dessus, les clients, les gérants, administrateurs, directeurs ou liquidateurs d'entreprises pour les sommes dues par celles-ci.",
+    "contenu": "1) A défaut de paiement des contributions, soit par les dépositaires ou débiteurs indiqués aux articles 472 et 473, soit par tous autres débiteurs de deniers provenant d'un redevable, le détenteur du rôle poursuivant fait entre les mains desdits dépositaires et débiteurs une saisie-arrêt ou opposition, par le ministère du porteur de contraintes.\n2) La saisie arrêt ne doit être employée que dans le cas où les deniers ne sont pas affectés au privilège du Trésor. Dans les cas contraires, il y a lieu de procéder par voie de sommation directe aux tiers détenteurs.\n3) Les dépositaires détenteurs ou débiteurs de sommes appartenant ou devant revenir aux redevables de l'impôt sont tenus, sur l'injonction qui leur est faite sous forme d'avis à tiers détenteurs notifié par le comptable public, de verser en lieu et place des redevables, les fonds qu'ils détiennent ou qu'ils doivent, à concurrence des impositions dues par les redevables.\n4) Ont qualité de tiers détenteur au sens du présent article, outre les personnes visées à l'article 473 ci-dessus, les clients, les gérants, administrateurs, directeurs ou liquidateurs d'entreprises pour les sommes dues par celles-ci.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
+      "défaut de paiement",
       "contributions",
       "dépositaires",
       "débiteurs",
       "articles 472 et 473",
+      "redevable",
+      "détenteur du rôle",
       "saisie-arrêt",
       "opposition",
       "porteur de contraintes",
+      "deniers",
       "privilège du Trésor",
       "sommation directe",
       "tiers détenteurs",
       "avis à tiers détenteurs",
       "comptable public",
+      "impositions",
       "clients",
       "gérants",
       "administrateurs",
       "directeurs",
-      "liquidateurs"
+      "liquidateurs",
+      "article 473"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10579,7 +10629,9 @@
     "keywords": [
       "signification",
       "saisie-arrêt",
+      "requête",
       "agent de recouvrement",
+      "autorisation préalable",
       "Code de procédure civile",
       "assignation en validité",
       "trésorier-payeur"
@@ -10594,8 +10646,10 @@
     "chapitre": "1",
     "keywords": [
       "frais de poursuite",
+      "mandatement",
       "porteurs de contraintes",
       "état de frais",
+      "visa",
       "trésorier-payeur",
       "receveur principal des impôts"
     ],
@@ -10613,7 +10667,9 @@
       "commandements",
       "saisies",
       "ventes",
-      "tarif annexé"
+      "actes",
+      "tarif annexé",
+      "Code"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10626,8 +10682,10 @@
     "keywords": [
       "actes de poursuites",
       "porteurs de contraintes",
+      "peine de nullité",
       "nullité",
-      "prix taxé"
+      "prix taxé",
+      "délivrance"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10641,11 +10699,17 @@
       "exemption",
       "formalité du timbre",
       "enregistrement",
+      "actes et pièces",
       "commandements",
       "saisies",
       "ventes",
+      "recouvrement",
       "contributions directes",
       "taxes assimilées",
+      "poursuites",
+      "originaux",
+      "copies",
+      "actes accessoires",
       "placards",
       "article 617",
       "Code de procédure civile"
@@ -10655,22 +10719,24 @@
   {
     "numero": "509",
     "titre": "Saisie ou vente faites contrairement aux formalités prescrites",
-    "contenu": "Toute saisie ou vente faites contrairement aux formalités prescrites par le présent Code peut donner lieu à des poursuites contre ceux qui y ont procédé et les frais restent à leur charge.",
+    "contenu": "Toute saisie ou vente faite contrairement aux formalités prescrites par le présent Code peut donner lieu à des poursuites contre ceux qui y ont procédé et les frais restent à leur charge.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "saisie",
       "vente",
       "formalités prescrites",
+      "Code",
       "poursuites",
-      "frais"
+      "frais",
+      "charge"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "510",
     "titre": "Rébellion contre les agents de poursuite",
-    "contenu": "En cas d'injure ou de rébellion contre les agents de poursuite, ceux-ci se retirent près du Président du Comité Exécutif Communal ou du Chef de District, et dressent un procès-verbal.\nL'autorité administrative peut dénoncer les faits aux tribunaux.",
+    "contenu": "En cas d'injure ou de rébellion contre les agents de poursuite, ceux-ci se retirent près du Président du Comité Exécutif Communal ou du Chef de District et dressent un procès-verbal.\nL'autorité administrative peut dénoncer les faits aux tribunaux.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
@@ -10681,7 +10747,8 @@
       "Chef de District",
       "procès-verbal",
       "autorité administrative",
-      "tribunaux"
+      "tribunaux",
+      "dénonciation"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10695,9 +10762,12 @@
       "employeur",
       "débirentier",
       "retenues",
+      "retenues insuffisantes",
       "article 172",
       "pénalité",
-      "50 %"
+      "50 %",
+      "montant des retenues",
+      "IRPP"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10712,14 +10782,19 @@
       "débirentier",
       "retenues IRPP",
       "impôt complémentaire",
+      "versement",
+      "caisse",
       "article 173",
+      "délais prescrits",
       "pénalité",
       "50 %",
       "100 %",
+      "retard",
       "deux mois",
       "taxe d'apprentissage",
       "taxe forfaitaire",
-      "articles 141 à 156"
+      "articles 141 à 156",
+      "article 171 bis"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10732,10 +10807,13 @@
     "keywords": [
       "pénalités",
       "articles 511 et 512",
+      "constatation",
       "administration des impôts",
       "mise en recouvrement",
+      "règles",
       "IRPP",
       "taxe complémentaire",
+      "obstacle",
       "article 524",
       "poursuites"
     ],
@@ -10754,13 +10832,20 @@
       "Directeur Général des Impôts",
       "contentieux",
       "preuve",
+      "irrégularité",
+      "exagération",
+      "charge du contribuable",
       "décès",
+      "contrevenant",
       "société",
+      "association",
       "liquidation",
       "succession",
       "présidents",
       "directeurs généraux",
-      "gérants"
+      "directeurs",
+      "gérants",
+      "représentant légal"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10772,8 +10857,10 @@
     "chapitre": "1",
     "keywords": [
       "pénalités",
+      "montant",
       "arrondissement",
-      "dizaine de francs"
+      "dizaine de francs",
+      "articles précédents"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10788,14 +10875,19 @@
       "centimes additionnels",
       "droits d'accises",
       "taxation d'office",
+      "assujettis",
       "déclarations",
       "délai légal",
       "8 jours",
       "éclaircissement",
       "justification",
+      "administration",
+      "redevables de plein droit",
       "déclaration d'existence",
+      "majoration",
       "pénalité",
-      "50 %"
+      "50 %",
+      "impositions dues"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10817,14 +10909,19 @@
     "tome": "1",
     "chapitre": "1",
     "keywords": [
+      "contribuable",
       "précompte",
       "article 171 octies",
+      "abstention de versement",
       "pénalité",
       "200 %",
       "50 %",
       "retard",
       "versement",
-      "trois mois"
+      "défaut de versement",
+      "trois mois",
+      "impôt spécial",
+      "bons de caisse"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
@@ -10838,45 +10935,40 @@
       "acompte",
       "impôt sur les sociétés",
       "IS",
+      "versement intégral",
+      "dernier jour du mois",
+      "sommes non réglées",
       "majoration",
       "50 %",
       "solde de liquidation",
-      "quinze jours"
+      "quinze jours",
+      "expiration du délai",
+      "droits"
     ],
     "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "518 quater A",
     "titre": "Autorisation de paiement différé ou échelonné pour la taxe spéciale sur les sociétés",
-    "contenu": "1) Pour la taxe spéciale sur les sociétés, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par :\n• le directeur départemental lorsque les droits réclamés sont inférieurs ou égaux à 200.000.000 FCFA ;\n• le directeur général lorsque les droits réclamés sont au-delà de la limite de 200.000.000 FCFA.",
+    "contenu": "1) Pour la taxe spéciale sur les sociétés, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par :\n• le directeur départemental lorsque les droits réclamés sont inférieurs ou égaux à 200.000.000 FCFA ;\n• le directeur général lorsque les droits réclamés sont au-delà de la limite de 200.000.000 FCFA.\nLa demande du paiement différé ou échelonné est reçue par l'autorité compétente avant le 1er mars de chaque année.\n2) Pour les impôts, droits et taxes recouvrés sur titre, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par le receveur quel que soit le montant, suivant un échéancier qui ne peut excéder douze mois.",
     "tome": "1",
     "chapitre": "1",
     "keywords": [
       "taxe spéciale sur les sociétés",
       "paiement différé",
       "paiement échelonné",
+      "contribuable requérant",
       "directeur départemental",
       "directeur général",
-      "200.000.000 FCFA"
-    ],
-    "source": "tome1-partie3-titre4-chapitre1.json"
-  },
-  {
-    "numero": "518 quater",
-    "titre": "Échéancier de paiement",
-    "contenu": "La demande du paiement différé ou échelonné est reçue par l'autorité compétente avant le 1er mars de chaque année.\n2) Pour les impôts, droits et taxes recouvrés sur titre, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par le receveur quel que soit le montant, suivant un échéancier qui ne peut excéder douze mois.",
-    "tome": "1",
-    "chapitre": "2",
-    "keywords": [
-      "paiement différé",
-      "paiement échelonné",
+      "200.000.000 FCFA",
+      "autorité compétente",
       "1er mars",
-      "impôts sur titre",
+      "impôts droits et taxes",
       "receveur",
       "échéancier",
       "douze mois"
     ],
-    "source": "tome1-partie3-titre4-chapitre2.json"
+    "source": "tome1-partie3-titre4-chapitre1.json"
   },
   {
     "numero": "518 quater B",
@@ -10888,6 +10980,7 @@
       "échéancier",
       "six mois",
       "année fiscale",
+      "émission",
       "dette fiscale",
       "échéanciers simultanés"
     ],
@@ -10902,15 +10995,16 @@
     "keywords": [
       "non-respect",
       "échéancier",
-      "sanctions",
-      "droit commun"
+      "sanction",
+      "droit commun",
+      "Code"
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
     "numero": "519",
     "titre": "Tarif des actes de poursuite",
-    "contenu": "Le tarif des frais de poursuite est fixé comme suit :\n| Nature des actes | Tarif | Salaire du porteur de contrainte |\n| Sommation avec frais | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Signification de saisie-arrêt, suivant les formes du Code de procédure civile | 4 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Commandement (pour l'original collectif ou individuel et la copie signifiée à chacun des débiteurs) | 6 % avec minimum de 1.500 FCFA | 1.500 FCFA |\n| Procès-verbal de saisie (pour l'original et les copies signifiées à la partie et au gardien s'il y a lieu) | 8 % avec minimum de 2.500 FCFA | 2.500 FCFA |\n| Procès-verbal d'interruption | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Procès-verbal de carence | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Procès-verbal de perquisition | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Témoin (par vacation) | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Gardien (par jour) | 2 % avec minimum de 1.000 FCFA | - |\n| Frais concernant la vente : | | |\n| - signification de vente | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| - rédaction des affiches, procès-verbal des affiches, y compris les salaires de l'afficheur | - | 1.000 FCFA |\n| - procès-verbal de récolement | - | 1.000 FCFA |\n| - procès-verbal de vente | - | 2.000 FCFA |\n| Produits dus au commissaire-priseur | 12 % | 2.500 FCFA |\n| Si le commissaire-priseur n'est pas porteur de contraintes, dans le cas où toutes les dispositions préparatoires ayant été faites, la vente n'a pas eu lieu par suite de la libération du contribuable ou toute autre cause, il est alloué pour droit, frais et débours de toute nature | 2.000 FCFA | 2.500 FCFA |",
+    "contenu": "Le tarif des frais de poursuite est fixé comme suit :\n| Nature des actes | Tarif | Salaire du porteur de contrainte |\n| Sommation avec frais | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Signification de saisie-arrêt, suivant les formes du Code de procédure civile | 4 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Commandement (pour l'original collectif ou individuel et la copie signifiée à chacun des débiteurs) | 6 % avec minimum de 1.500 FCFA | 1.500 FCFA |\n| Procès-verbal de saisie (pour l'original et les copies signifiées à la partie et au gardien s'il y a lieu) | 8 % avec minimum de 2.500 FCFA | 2.500 FCFA |\n| Procès-verbal d'interruption | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Procès-verbal de carence | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Procès-verbal de perquisition | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Témoin (par vacation) | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Gardien (par jour) | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| Frais concernant la vente : | | |\n| - signification de vente | 2 % avec minimum de 1.000 FCFA | 1.000 FCFA |\n| - rédaction des affiches, procès-verbal des affiches, y compris les salaires de l'afficheur | - | 1.000 FCFA |\n| - procès-verbal de récolement | - | 1.000 FCFA |\n| - procès-verbal de vente | - | 2.000 FCFA |\n| Produits dus au commissaire-priseur | 12 % | 2.500 FCFA |\n| Si le commissaire-priseur n'est pas porteur de contraintes, dans le cas où toutes les dispositions préparatoires ayant été faites, la vente n'a pas eu lieu par suite de la libération du contribuable ou toute autre cause, il est alloué pour droit, frais et débours de toute nature | 2.000 FCFA | 2.500 FCFA |",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -10919,16 +11013,22 @@
       "actes de poursuite",
       "sommation",
       "saisie-arrêt",
+      "Code de procédure civile",
       "commandement",
       "procès-verbal de saisie",
       "procès-verbal d'interruption",
       "procès-verbal de carence",
       "procès-verbal de perquisition",
       "témoin",
+      "vacation",
       "gardien",
+      "signification de vente",
+      "affiches",
+      "récolement",
       "vente",
       "commissaire-priseur",
       "porteur de contrainte",
+      "salaire",
       "FCFA"
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
@@ -10936,7 +11036,7 @@
   {
     "numero": "520",
     "titre": "Recouvrement de la taxe sur les spectacles, jeux et divertissements",
-    "contenu": "Les contribuables visés aux articles 336 et 338 du présent Code, doivent verser au Receveur Municipal, Comptable du Trésor (trésorier-payeur, percepteur ou préposé) le montant des droits dus dans le délai fixé par l'article 340-2 du CGI. Le versement sera effectif et régularisé selon les règles fixées par les articles 206 et 207 du présent Code. Les cotisations dues par les contribuables visés au paragraphe b de l'article 338 seront établies chaque trimestre par voie de rôles nominatifs à la diligence du Président du Comité Exécutif Communal ; ces rôles seront adressés à la Direction des contributions directes et indirectes pour approbation par le Directeur Général des Impôts et recouvrés selon les règles du Titre 4 de la Partie 3 du présent Code.\nLes sanctions prévues par l'article 516 ci-dessus sont applicables aux contribuables visés au premier alinéa du présent article. Les pénalités sont établies dans les conditions fixées par l'article 517 du présent Code. Les dirigeants ou gérants des cercles et maisons de jeu sont personnellement responsables du recouvrement de la taxe et, le cas échéant, des pénalités.",
+    "contenu": "Les contribuables visés aux articles 336 et 338 du présent Code, doivent verser au Receveur Municipal, Comptable du Trésor (trésorier-payeur, percepteur ou préposé) le montant des droits dus dans le délai fixé par l'article 340-2 du CGI. Le versement sera effectif et régularisé selon les règles fixées par les articles 206 et 207 du présent Code. Les cotisations dues par les contribuables visés au paragraphe b de l'article 333 seront établies chaque trimestre par voie de rôles nominatifs à la diligence du Président du Comité Exécutif Communal ; ces rôles seront adressés à la Direction des contributions directes et indirectes pour approbation par le Directeur Général des Impôts et recouvrés selon les règles du Titre 4 de la Partie 3 du présent Code.\nLes sanctions prévues par l'article 516 ci-dessus sont applicables aux contribuables visés au premier alinéa du présent article. Les pénalités sont établies dans les conditions fixées par l'article 517 du présent Code. Les dirigeants ou gérants des cercles et maisons de jeu sont personnellement responsables du recouvrement de la taxe et, le cas échéant, des pénalités.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -10944,15 +11044,25 @@
       "taxe spectacles",
       "taxe jeux",
       "taxe divertissements",
+      "articles 336 et 338",
       "Receveur Municipal",
       "Comptable du Trésor",
       "trésorier-payeur",
+      "percepteur",
+      "préposé",
+      "article 340-2",
+      "articles 206 et 207",
+      "cotisations",
+      "article 333",
+      "trimestre",
       "rôles nominatifs",
       "Président Comité Exécutif Communal",
-      "Direction contributions directes",
+      "Direction contributions directes et indirectes",
       "Directeur Général des Impôts",
+      "article 516",
       "sanctions",
       "pénalités",
+      "article 517",
       "dirigeants",
       "gérants",
       "cercles",
@@ -10962,31 +11072,43 @@
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 bis (L.F.2026)",
+    "numero": "520 bis",
     "titre": "Modalités de recouvrement des recettes issues des ressources naturelles",
     "contenu": "1. Les recettes des ressources naturelles proviennent des activités de recherche et d'exploitation des ressources naturelles. Les frais de délivrance des titres, la taxation d'occupation des surfaces constituent les revenus des phases de recherche ou d'exploration. Pour la phase d'exploitation la valorisation des hydrocarbures liquides et gazeux, des forêts et des mines génère des revenus alimentant le budget de l'État, les produits de cession des actifs de l'État etc. s'ajoutent aux revenus qui sont mobilisés lors de la phase de recherche ou d'exploration.\n2. La direction générale des recettes des ressources naturelles et la direction générale du Trésor sont chargées, entre autres, d'effectuer un suivi régulier des paiements par les sociétés exerçant dans les secteurs d'activités des ressources naturelles.\n3. Les créances découlant des activités des ressources naturelles sont constatées, liquidées et les recettes y relatives ordonnancées sur des documents établis par le directeur général des recettes des ressources naturelles sur la base des informations transmises, le cas échéant, par les directeurs généraux des administrations compétentes et/ou des contribuables concernés.\n4. Lorsque les systèmes d'information le permettent, d'une part, et que le processus d'ordonnancement et de liquidation est automatisé d'autre part les paiements relatifs aux recettes de l'État, provenant des secteurs des ressources naturelles, sont effectués à travers les systèmes de paiement officiels, dématérialisés, aux fins d'en assurer le suivi et la traçabilité de manière efficace.\n5. Les faits générateurs des droits ou de la redevabilité vis-à-vis de l'État sont les suivants :\n| Catégories de droits | Faits générateurs |\n| Droits basés sur la production y compris les essais | L'extraction de pétrole liquide, gazeux ou du minerai. |\n| Droits basés sur l'exploitation | La coupe, l'utilisation |\n| Droits basés sur la commercialisation des actifs, des propriétés ou bien de l'État, ou des droits pétroliers, miniers, gaziers ou forestiers | L'enlèvement, la cession ou la vente de l'actif, la livraison, l'exportation, le transfert de propriété. |\n| Droits basés sur la détention des titres | L'octroi ou la délivrance du titre, la détention d'un titre valide. |\n| Droits basés sur l'occupation des terrains ou surface et leur utilisation | La détention du titre. |\n| Autres droits non mentionnés ci-dessus | Seront précisés par les ministres compétents. |\nLes textes d'application précisent, le cas échéant, les différents faits générateurs.\n6. Les redevables de l'État s'acquittent de leurs dettes par un virement bancaire dans l'un des comptes ouverts au nom du trésor public pour les redevables exerçant des activités d'exploitation industrielle et semi-industrielles. Les autres modalités d'acquittement notamment versement d'espèce et remise de chèque restent applicables pour les exploitants et sociétés réalisant des activités artisanales. Le débiteur de l'État est libéré s'il présente un reçu régulier, s'il évoque la prescription effective ou s'il établit la réalité de l'encaissement par un comptable public des effets bancaires ou postaux émis au profit du trésor public.\n7. Le ministre chargé des finances précise, le cas échéant, les comptes et les modalités de paiement des droits des différents secteurs des ressources naturelles. Il communique les références des comptes de rétrocession pour faciliter les virements et transferts en faveur de l'État.\n8. Lorsque les sociétés et usagers des secteurs des ressources naturelles n'ont pas effectué des déclarations des droits dûs à l'État ou procédé au paiement des sommes correspondant, la direction générale des recettes des ressources naturelles peut procéder à la liquidation et l'ordonnancement des recettes dues à l'État pour une prise en charge et recouvrement par le Trésor.\n9.a : Les recettes provenant des hydrocarbures comprennent des recettes pétrolières et des recettes gazières. Ces recettes sont générées par les parts et droits de l'État dans les différents contrats pétroliers et gaziers. Ces droits de production sont regroupés en deux catégories :\n○ les recettes issues du partage de production formées, d'une part, des droits payés en numéraire à l'instar de la provision pour investissements diversifiés (PID), de la redevance minière sur autoconsommations, de la contribution au fonds de prévention des risques environnementaux, etc. fixés par les codes ou les contrats, et d'autre part des droits en nature alimentés par la redevance minière proportionnelle, le profit oil ou profit gaz, le super profit oil ou super profit gaz et l'excess oil ou l'excess gaz etc. envisagés dans les codes ou les contrats, que les mandataires dûment autorisés commercialisent pour le compte de l'État. (et)\n○ les recettes hors partage de production que sont les différents bonus, les redevances superficiaires, les revenus de partage de la zone d'intérêt commun avec la République d'Angola, les revenus de cession d'actifs physiques ou des droits, les pénalités et autres amendes etc.\n9.b : Les droits en nature de l'État sont commercialisés sous forme de cargaison ou de tout autre forme de droits à huile ou à gaz ; la contrevaleur est versée dans les comptes ouverts dans les livres de la Banque des États de l'Afrique Centrale (BEAC) au nom de l'État ou du trésor public. Le ministre chargé des finances précise, le cas échéant, le compte approprié pour la perception des droits susmentionnés.\n9.c : Les droits dûs à l'État au titre des activités pétrolières sont acquittés pour le montant exact de la créance libellée en dollar des États Unis. Ils sont constatés dans les relevés du Trésor en monnaie locale, après conversion effectuée par la Banque des États de l'Afrique Centrale (BEAC).\nLes montants des droits acquittés en numéraire doivent être reversés au Trésor pour le montant intégral indiqué dans la déclaration ou le titre de recette.\nLorsque le redevable effectue le paiement en monnaie locale, le taux de change de la BEAC en vigueur à la date de l'opération est appliqué.\nLes frais bancaires ainsi que toutes les charges liées aux opérations de change nécessaires au règlement des droits pétroliers de l'État sont entièrement à la charge des redevables et ne constituent pas des coûts pétroliers récupérables ni des charges fiscalement déductibles.\n10.a : Les recettes issues de l'exploitation forestière se rapportent à l'un des régimes applicables en la matière. Les droits attendus par l'État sont les suivants :\n- pour les revenus issus des régimes de concession : les redevances ;\n- pour les revenus issus des régimes d'imposition directe :\n○ les taxes d'abattage ;\n○ les taxes sur les produits forestiers accessoires ;\n○ les taxes de superficie ;\n○ les ventes de bois de plantation ;\n○ les taxes de déboisement ;\n○ les amendes de transaction.\n- pour les revenus du régime de partage de production :\n○ les redevances forestières proportionnelles ;\n○ les parts de l'État dans le volume de grume issue des coupes annuelles.\n10.b : Les paiements des recettes énumérées en 10.a ci-dessus, sont effectués en faveur du compte du Trésor ouvert à la Banque des États de l'Afrique Centrale (BEAC). Toutefois, le ministre chargé des finances précise, le cas échéant, le compte par lequel les paiements des droits des secteurs des ressources naturelles sont effectués.\n11.a : Les recettes provenant de l'exploitation minière sont alimentées par les taxes et redevances suivantes :\n- les redevances minières ;\n- les redevances superficiaires ;\n- les droits fixes ;\n- les taxes sur les géo matériaux de construction.\n11.b : La redevance superficiaire est exigible sur une base annuelle. Son assiette est déterminée en considération de la superficie du permis minier.\n11.c : Les paiements relatifs à la redevance superficiaire, à la redevance minière tels que prévus par dispositions des articles 2, 3 et 5 de la loi n°24-2010 du 30 décembre 2010, sont réalisés par virement bancaire dans le compte « fonds de stabilisation des recettes budgétaires » n°40 312 101 4001 0.0.0.0, ouvert à la banque des États de l'Afrique Centrale (BEAC). Le ministre chargé des finances précise les comptes et les modalités de paiement des autres droits miniers non indiqués dans la présente loi.\n12. Les sociétés des secteurs des ressources naturelles sont tenues de procéder le cas échéant aux déclarations et aux paiements dans le respect des dates et conditions prescrites dans la loi et les textes en vigueur.\n13.a : Pour le secteur pétrolier ci-après le calendrier de déclaration et de paiement des droits prévus dans le code des hydrocarbures et les contrats pétroliers :\n| Droits | Date de déclaration | Date de paiement |\n| Provision pour investissements diversifiés (PID) | au plus tard le 20 suivant le mois écoulé | au plus tard le 25 suivant le mois écoulé. |\n| Redevance minière sur autoconsommations | au plus tard le 20 suivant le mois écoulé | au plus tard le 25 suivant le mois écoulé. |\n| Contribution au fonds de prévention des risques environnementaux | au plus tard le 20 suivant le mois écoulé | au plus tard le 25 suivant le mois écoulé. |\n| Bonus de production | conformément au contrat | au plus tard le 25 suivant le mois écoulé, sous réserve d'une précision expresse du contrat |\n| Bonus de signature | conformément au contrat | date indiquée dans le contrat |\n| Redevance superficiaire | conformément au contrat | au plus tard le 20 janvier |\n| Autres revenus prévus dans les accords et contrats pétroliers | Date indiquée dans les décrets, accords ou contrats | Date indiquée dans les décrets, ou convenue dans l'accord ou le contrat |\n13.b : Pour le secteur minier ci-après le calendrier de déclaration et de paiement des droits prévus dans le code minier et les contrats et conventions minières :\n| Droits | Date de déclaration | Date de paiement |\n| Redevance minière | au plus tard le 20 du mois suivant celui où le fait générateur s'est produit. | au plus tard le 25 du mois suivant celui où le fait générateur s'est produit. |\n| Redevance superficiaire | conformément à la convention | trois mois après la délivrance du titre pour la première année et chaque 20 janvier à partir de l'année qui suit la délivrance du titre. |\n| Les droits fixes | conformément à la convention | trois mois après la délivrance du titre pour la première année et chaque 20 janvier à partir de l'année qui suit la délivrance du titre. |\n13.c : Pour le secteur forestier ci-après le calendrier de déclaration et de paiement des droits prévus dans le code, les contrats et conventions :\n| Droits | Date de déclaration | Date de paiement |\n| Droits des régimes de concession | conformément à la convention | au plus tard le 25 suivant le mois écoulé, sous réserve d'une précision expresse dans la convention |\n| Droits des régimes de partage de production | conformément à la convention | au plus tard le 25 suivant le mois écoulé, sous réserve d'une précision expresse dans la convention |\n| Droits des régimes d'imposition directe | conformément à la convention | au plus tard le 25 suivant le mois écoulé, sous réserve d'une précision expresse dans la convention |\n14. Les procédures de recouvrement des créances sur les secteurs des ressources naturelles sont celles prévues dans les lois et réglementations applicables aux différents secteurs.\nLorsque les codes et textes d'application ne précisent pas les modalités de recouvrement susmentionnés, les dispositions de recouvrement des recettes publiques prévues dans le présent Code sont applicables.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "ressources naturelles",
+      "recherche",
+      "exploration",
+      "exploitation",
       "hydrocarbures",
       "pétrole",
       "gaz",
       "mines",
       "forêts",
+      "délivrance des titres",
+      "occupation des surfaces",
+      "budget de l'État",
       "recouvrement",
       "direction générale des recettes des ressources naturelles",
       "direction générale du Trésor",
+      "suivi des paiements",
+      "créances",
+      "ordonnancement",
+      "liquidation",
       "faits générateurs",
       "titres",
-      "exploitation",
       "production",
       "commercialisation",
       "virement bancaire",
       "trésor public",
+      "comptable public",
       "BEAC",
+      "Banque des États de l'Afrique Centrale",
       "recettes pétrolières",
       "recettes gazières",
+      "contrats pétroliers",
       "partage de production",
       "profit oil",
       "profit gaz",
@@ -10994,25 +11116,31 @@
       "redevance superficiaire",
       "bonus",
       "PID",
+      "provision pour investissements diversifiés",
+      "dollar",
+      "taux de change",
+      "exploitation forestière",
       "taxes d'abattage",
       "taxes forestières",
+      "redevances forestières",
+      "exploitation minière",
       "droits fixes",
       "géo matériaux",
+      "permis minier",
       "calendrier déclaration",
-      "calendrier paiement",
-      "L.F.2026"
+      "calendrier paiement"
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 A (L.F.2026)",
+    "numero": "520 A",
     "titre": "Définition et champ d'application",
-    "contenu": "Les recettes issues des ressources naturelles sont instituées par les codes sectoriels qui les concernent. Elles constituent la fiscalité spécifique à chaque secteur d'activité, notamment les hydrocarbures, les forêts et les mines.\nLes règles d'assiette, de déclaration, de liquidation, de paiement, de recouvrement et de contentieux du code général des impôts, applicables aux impôts, droits et taxes de droit commun sont applicables aux recettes de la fiscalité spécifique aux ressources naturelles.",
+    "contenu": "Les recettes issues des ressources naturelles sont instituées par les Codes sectoriels qui les concernent. Elles constituent la fiscalité spécifique à chaque secteur d'activité, notamment les hydrocarbures, les forêts et les mines.\nLes règles d'assiette, de déclaration, de liquidation, de paiement, de recouvrement et de contentieux du Code général des impôts, applicables aux impôts, droits et taxes de droit commun sont applicables aux recettes de la fiscalité spécifique aux ressources naturelles.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "ressources naturelles",
-      "codes sectoriels",
+      "Codes sectoriels",
       "fiscalité spécifique",
       "hydrocarbures",
       "forêts",
@@ -11023,14 +11151,16 @@
       "paiement",
       "recouvrement",
       "contentieux",
-      "L.F.2026"
+      "Code général des impôts",
+      "droit commun",
+      "impôts droits et taxes",
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 B (L.F.2026)",
+    "numero": "520 B",
     "titre": "Constatation et déclaration des recettes des ressources naturelles",
-    "contenu": "1. Constatation des recettes des ressources naturelles\nLes recettes des ressources naturelles sont constatées par les administrations sectorielles à travers les actes d'autorisation d'activité ou d'attribution de permis qu'elles délivrent.\nLesdits actes sont notifiés au directeur général des recettes des ressources naturelles dans un délai n'excédant pas quinze (15) jours calendaires.\n2. Déclaration et paiement spontanés des droits\nLes redevables des droits, taxes et redevances spécifiques prévus par les codes sectoriels des ressources naturelles sont soumis aux obligations de déclaration et de paiement spontanés dans les conditions et délais prévus par le présent Code.\nLes frais bancaires ainsi que toutes les charges liées aux opérations de change nécessaires au règlement des droits de l'État, sont entièrement à la charge des redevables et ne constituent pas des coûts récupérables ni fiscalement déductibles.",
+    "contenu": "1) Constatation des recettes des ressources naturelles\nLes recettes des ressources naturelles sont constatées par les administrations sectorielles à travers les actes d'autorisation d'activité ou d'attribution de permis qu'elles délivrent.\nLesdits actes sont notifiés au directeur général des recettes des ressources naturelles dans un délai n'excédant pas quinze jours calendaires.\n2) Déclaration et paiement spontanés des droits\nLes redevables des droits, taxes et redevances spécifiques prévus par les codes sectoriels des ressources naturelles sont soumis aux obligations de déclaration et de paiement spontanés dans les conditions et délais prévus par le présent Code.\nLes frais bancaires ainsi que toutes les charges liées aux opérations de change nécessaires au règlement des droits de l'État, sont entièrement à la charge des redevables et ne constituent pas des coûts récupérables ni fiscalement déductibles.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
@@ -11038,90 +11168,114 @@
       "déclaration",
       "ressources naturelles",
       "administrations sectorielles",
+      "actes d'autorisation",
       "autorisation d'activité",
       "attribution de permis",
+      "notification",
       "directeur général des recettes des ressources naturelles",
-      "quinze jours",
+      "quinze jours calendaires",
       "paiement spontané",
+      "redevables",
+      "droits taxes et redevances",
+      "codes sectoriels",
       "frais bancaires",
+      "opérations de change",
       "coûts récupérables",
-      "L.F.2026"
+      "charges déductibles",
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 C (L.F.2026)",
+    "numero": "520 C",
     "titre": "Liquidation et émission des titres de perception",
-    "contenu": "A défaut de paiement spontané par le redevable ou en cas de contrôle effectué par l'administration en charge des recettes des ressources naturelles, une notification des droits dus est adressée au redevable qui dispose d'un délai de réponse de trente (30) jours conformément aux dispositions du présent Code.\nA l'issue de la procédure contradictoire, la créance de l'État est constatée par l'émission d'un titre de perception susceptible de poursuites conformément aux articles 459, 485 et suivants du présent Code.",
+    "contenu": "A défaut de paiement spontané par le redevable ou en cas de contrôle effectué par l'administration en charge des recettes des ressources naturelles, une notification des droits dus est adressée au redevable qui dispose d'un délai de réponse de trente jours conformément aux dispositions du présent Code.\nA l'issue de la procédure contradictoire, la créance de l'État est constatée par l'émission d'un titre de perception susceptible de poursuites conformément aux articles 459, 485 et suivants du présent Code.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "liquidation",
+      "émission",
       "titre de perception",
       "paiement spontané",
       "contrôle",
       "notification",
+      "droits dus",
+      "redevable",
+      "délai de réponse",
       "trente jours",
       "procédure contradictoire",
       "créance de l'État",
       "poursuites",
       "article 459",
       "article 485",
-      "L.F.2026"
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 D (L.F.2026)",
+    "numero": "520 D",
     "titre": "Infractions en matière des recettes des ressources naturelles",
-    "contenu": "Sont considérées comme infractions en matière des revenus des ressources naturelles :\n- la non déclaration d'un droit lorsque les textes le prescrivent ;\n- la déclaration incomplète ou inexacte d'un droit de l'État ;\n- le non-respect de la date de déclaration d'un droit lorsque les textes le prescrivent ;\n- le non-paiement des droits de l'État ;\n- le non-respect de la date de paiement d'un droit lorsque les textes le prescrivent ;\n- le non-respect, le cas échéant, du délai de paiement indiqué sur les titres de recettes émis par les administrations du ministère des finances.\nLes infractions notifiées donnent lieu à l'application des sanctions conformément à la réglementation en vigueur dans les différents secteurs des ressources naturelles.\nA défaut, les sanctions prévues par le présent Code sont applicables.",
+    "contenu": "Sont considérées comme infractions en matière des recettes des ressources naturelles :\n- la non-déclaration d'un droit lorsque les textes le prescrivent ;\n- la déclaration incomplète ou inexacte d'un droit de l'État ;\n- le non-respect de la date de déclaration d'un droit lorsque les textes le prescrivent ;\n- le non-paiement des droits de l'État ;\n- le non-respect de la date de paiement d'un droit lorsque les textes le prescrivent ;\n- le non-respect, le cas échéant, du délai de paiement indiqué sur les titres de recettes émis par les administrations du ministère des finances.\nLes infractions notifiées donnent lieu à l'application des sanctions conformément à la réglementation en vigueur dans les différents secteurs des ressources naturelles.\nA défaut, les sanctions prévues par le présent Code sont applicables.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "infractions",
       "ressources naturelles",
-      "non déclaration",
+      "non-déclaration",
       "déclaration incomplète",
       "déclaration inexacte",
-      "non-respect date",
+      "non-respect date de déclaration",
       "non-paiement",
+      "non-respect date de paiement",
+      "délai de paiement",
       "titres de recettes",
+      "ministère des finances",
       "sanctions",
-      "L.F.2026"
+      "réglementation",
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
-    "numero": "520 E (L.F.2026)",
+    "numero": "520 E",
     "titre": "Pénalités en matière des recettes des ressources naturelles",
     "contenu": "Les pénalités recouvrées sont réparties entre les administrations sectorielles et celles des finances en charge de l'assiette des droits attendus.\nLes modalités de répartition des pénalités recouvrées sont précisées par un arrêté ministériel.",
     "tome": "1",
     "chapitre": "2",
     "keywords": [
       "pénalités",
+      "pénalités recouvrées",
       "ressources naturelles",
       "répartition",
       "administrations sectorielles",
       "administration des finances",
+      "assiette des droits",
+      "droits attendus",
+      "modalités de répartition",
       "arrêté ministériel",
-      "L.F.2026"
     ],
     "source": "tome1-partie3-titre4-chapitre2.json"
   },
   {
     "numero": "521",
     "titre": "Déclaration sciemment inexacte des avoirs hors du Congo",
-    "contenu": "La déclaration sciemment inexacte des avoirs hors du Congo, comme l'absence de déclarations, est punie, outre des sanctions prévues par l'article 367 du Code pénal, d'une amende égale (décimes compris) à la moitié de l'avoir dissimulé, sans préjudice de l'affichage du nom du contrevenant et des motifs de la contravention à la porte de la résidence du Président du Comité Exécutif Communal ou de District du lieu de son imposition. Les poursuites sont engagées sur la plainte du Directeur Général des Impôts, sans qu'il y ait lieu, au préalable, de mettre l'intéressé en demeure de faire ou compléter sa déclaration.\nLes articles 60, 61 et 464 du Code pénal sont applicables au délit spécifié au présent du service intéressé, qu'il y ait lieu, au préalable, de mettre l'intéressé en demeure de faire ou de compléter sa déclaration. Elles sont portées devant le tribunal correctionnel dans le ressort duquel l'un quelconque des impôts en cause aurait dû être établi ou acquitté sans préjudice de l'application des articles 227 et 228 du Code d'instruction criminelle. Cette plainte peut être déposée jusqu'à la fin de la troisième année qui suit celle au cours de laquelle l'infraction a été commise.",
+    "contenu": "La déclaration sciemment inexacte des avoirs hors du Congo, comme l'absence de déclarations, est punie, outre des sanctions prévues par l'article 367 du Code pénal, d'une amende égale (décimes compris) à la moitié de l'avoir dissimulé, sans préjudice de l'affichage du nom du contrevenant et des motifs de la contravention à la porte de la résidence du Président du Comité Exécutif Communal ou de District du lieu de son imposition. Les poursuites sont engagées sur la plainte du Directeur Général des Impôts, sans qu'il y ait lieu, au préalable, de mettre l'intéressé en demeure de faire ou compléter sa déclaration.\nLes articles 60, 61 et 464 du Code pénal sont applicables au délit spécifié au présent article.",
     "tome": "1",
     "chapitre": "None",
     "keywords": [
       "sanctions pénales",
-      "déclaration inexacte",
+      "déclaration sciemment inexacte",
       "avoirs hors du Congo",
+      "absence de déclarations",
       "amende",
+      "décimes",
       "avoir dissimulé",
       "affichage",
+      "contrevenant",
+      "contravention",
+      "Président du Comité Exécutif Communal",
+      "District",
+      "poursuites",
+      "plainte",
       "Directeur Général des Impôts",
+      "mise en demeure",
       "Code pénal",
       "article 367",
       "article 60",
@@ -11139,28 +11293,36 @@
     "keywords": [
       "sanctions pénales",
       "NIU",
+      "numéro d'identification unique",
       "utilisation frauduleuse",
+      "fraude",
+      "pénalités",
+      "amendes fiscales",
       "amende",
       "500.000 FCFA",
       "10.000.000 FCFA",
       "emprisonnement",
       "trois mois",
       "trois ans",
-      "article 399 ter"
+      "article 399 ter",
+      "CGI tome 1"
     ],
     "source": "tome1-partie4-sanctions-penales.json"
   },
   {
     "numero": "522",
     "titre": "Soustraction frauduleuse à l'établissement ou au paiement de l'impôt",
-    "contenu": "Sans préjudice des dispositions particulières relatives au présent Code, quiconque s'est frauduleusement soustrait ou a tenté de se soustraire frauduleusement à l'établissement ou au paiement total ou partiel des impôts visés dans la présente codification, soit qu'il ait volontairement omis de faire sa déclaration dans les délais prescrits, soit qu'il ait volontairement dissimulé une part des sommes sujettes à l'impôt notamment en falsifiant sa comptabilité ou en l'appuyant par des justifications inexactes (entre autres, salaires ou achats inexistants ou majorés), soit qu'il ait organisé son insolvabilité ou mis obstacle par d'autres manœuvres au recouvrement de l'impôt, soit en agissant de toute autre manière frauduleuse, est passible, indépendamment des pénalités ou amendes fiscales, d'une amende de 250.000 FCFA à 5.000.000 FCFA et d'un emprisonnement de deux à cinq ans ou de l'une de ces deux peines seulement.\nLes dispositions de l'article 464 du Code pénal sont applicables. Le tribunal ordonnera dans tous les cas la publication intégrale ou par extraits des jugements dans le Journal Officiel de la République du Congo, ainsi que dans les journaux désignés par lui et leur affichage pendant trois mois sur les panneaux réservés à l'affichage des publications officielles de la commune, de la région ou du district où les contribuables ont leur domicile. Les frais de publication et d'affichage sont à la charge du condamné.\nLes poursuites sont engagées sur plainte du service intéressé, qu'il y ait lieu, au préalable, de mettre l'intéressé en demeure de faire ou de compléter sa déclaration. Elles sont portées devant le tribunal correctionnel dans le ressort duquel l'un quelconque des impôts en cause aurait dû être établi ou acquitté sans préjudice de l'application des articles 227 et 228 du Code d'instruction criminelle. Cette plainte peut être déposée jusqu'à la fin de la troisième année qui suit celle au cours de laquelle l'infraction a été commise.",
+    "contenu": "Sans préjudice des dispositions particulières relatées dans le présent Code, quiconque s'est frauduleusement soustrait ou a tenté de se soustraire frauduleusement à l'établissement ou au paiement total ou partiel des impôts visés dans la présente codification, soit qu'il ait volontairement omis de faire sa déclaration dans les délais prescrits, soit qu'il ait volontairement dissimulé une part des sommes sujettes à l'impôt notamment en falsifiant sa comptabilité ou en l'appuyant par des justifications inexactes (entre autres, salaires ou achats inexistants ou majorés), soit qu'il ait organisé son insolvabilité ou mis obstacle par d'autres manœuvres au recouvrement de l'impôt, soit en agissant de toute autre manière frauduleuse, est passible, indépendamment des pénalités ou amendes fiscales, d'une amende de 250.000 FCFA à 5.000.000 FCFA et d'un emprisonnement de deux à cinq ans ou de l'une de ces deux peines seulement.\nLes dispositions de l'article 464 du Code pénal sont applicables. Le tribunal ordonnera dans tous les cas la publication intégrale ou par extraits des jugements dans le Journal Officiel de la République du Congo, ainsi que dans les journaux désignés par lui et leur affichage pendant trois mois sur les panneaux réservés à l'affichage des publications officielles de la commune, de la région ou du district où les contribuables ont leur domicile. Les frais de publication et d'affichage sont à la charge du condamné.\nLes poursuites sont engagées sur plainte du service intéressé, qu'il y ait lieu, au préalable, de mettre l'intéressé en demeure de faire ou de compléter sa déclaration. Elles sont portées devant le tribunal correctionnel dans le ressort duquel l'un quelconque des impôts en cause aurait dû être établi ou acquitté sans préjudice de l'application des articles 227 et 228 du Code d'instruction criminelle. Cette plainte peut être déposée jusqu'à la fin de la troisième année qui suit celle au cours de laquelle l'infraction a été commise.",
     "tome": "1",
     "chapitre": "None",
     "keywords": [
       "sanctions pénales",
       "fraude fiscale",
       "soustraction frauduleuse",
+      "établissement de l'impôt",
+      "paiement de l'impôt",
       "déclaration",
+      "omission de déclaration",
       "dissimulation",
       "falsification comptabilité",
       "justifications inexactes",
@@ -11168,20 +11330,25 @@
       "achats majorés",
       "insolvabilité organisée",
       "obstacle au recouvrement",
+      "manœuvres frauduleuses",
+      "pénalités",
+      "amendes fiscales",
       "amende",
       "250.000 FCFA",
       "5.000.000 FCFA",
       "emprisonnement",
-      "un mois",
-      "deux ans",
-      "cinq ans",
+      "deux à cinq ans",
       "article 464 Code pénal",
       "Journal Officiel",
+      "République du Congo",
       "publication jugements",
       "affichage trois mois",
+      "condamné",
       "tribunal correctionnel",
       "Code d'instruction criminelle",
-      "prescription trois ans"
+      "articles 227 et 228",
+      "prescription trois ans",
+      "plainte"
     ],
     "source": "tome1-partie4-sanctions-penales.json"
   },
@@ -11198,16 +11365,19 @@
       "produits",
       "marchandises",
       "taxes de consommation",
+      "Chapitre 2 Livre 2 Partie 1",
       "amende",
       "emprisonnement",
-      "article 521"
+      "article précédent",
+      "article 521",
+      "alinéas 2 et 3"
     ],
     "source": "tome1-partie4-sanctions-penales.json"
   },
   {
     "numero": "524",
     "titre": "Poursuites et peines pour omissions ou écritures inexactes",
-    "contenu": "Pourront également être poursuivies et punies dans les conditions prévues par l'article 522 :\n• quiconque a sciemment omis de passer ou de faire passer dans des écritures ou n'a passé ou fait passer des écritures inexactes ou fictives dans les documents dont la tenue est prévue par les articles 28, 31, 47 et 172 du CGI ;\n• les fonctionnaires de l'État, des Communes, des Régions ou des Districts qui s'abstiennent, après mise en demeure, de souscrire les déclarations prévues par l'article 90 du CGI ou qui falsifient lesdites déclarations ou encore se font les complices des contribuables cherchant à se soustraire à l'impôt, notamment en mentionnant, sur les plis adressés par le service de l'assiette ou du recouvrement des motifs de non-distribution inexacts. La présente disposition ne met pas obstacle aux sanctions disciplinaires qui pourraient intervenir de ce chef ;\n• quiconque a procédé aux retenues prévues par l'article 172 ou a mis l'impôt sur le chiffre d'affaires à la charge de la clientèle et s'est abstenu de reverser au Trésor les sommes ainsi précomptées dans les trois mois du précompte, qu'il y ait à chercher si l'intéressé a voulu se soustraire frauduleusement ou non au reversement de l'impôt et qu'il puisse invoquer une dette de l'administration.\nLes plaintes sont déposées dans les conditions prévues par le précédent article.",
+    "contenu": "Pourront également être poursuivies et punies dans les conditions prévues par l'article 522 :\n• quiconque a sciemment omis de passer ou de faire passer dans des écritures ou a passé ou fait passer des écritures inexactes ou fictives dans les documents dont la tenue est prévue par les articles 28, 31, 47 et 172 du CGI ;\n• les fonctionnaires de l'État, des Communes, des Régions ou des Districts qui s'abstiennent, après mise en demeure, de souscrire les déclarations prévues par l'article 90 du CGI ou qui falsifient lesdites déclarations ou encore se font les complices des contribuables cherchant à se soustraire à l'impôt, notamment en mentionnant, sur les plis adressés par le service de l'assiette ou du recouvrement des motifs de non-distribution inexacts. La présente disposition ne met pas obstacle aux sanctions disciplinaires qui pourraient intervenir de ce chef ;\n• quiconque a procédé aux retenues prévues par l'article 172 ou a mis l'impôt sur le chiffre d'affaires à la charge de la clientèle et s'est abstenu de reverser au Trésor les sommes ainsi précomptées dans les trois mois du précompte, qu'il y ait à chercher si l'intéressé a voulu se soustraire frauduleusement ou non au reversement de l'impôt et qu'il puisse invoquer une dette de l'administration.\nLes plaintes sont déposées dans les conditions prévues par le précédent article.",
     "tome": "1",
     "chapitre": "None",
     "keywords": [
@@ -11227,13 +11397,19 @@
       "Régions",
       "Districts",
       "article 90",
+      "déclarations",
+      "falsification",
       "complicité",
+      "contribuables",
+      "soustraction à l'impôt",
+      "non-distribution",
       "sanctions disciplinaires",
       "retenues",
       "impôt sur le chiffre d'affaires",
       "reversement Trésor",
-      "trois mois",
       "précompte",
+      "trois mois",
+      "dette de l'administration",
       "plaintes"
     ],
     "source": "tome1-partie4-sanctions-penales.json"
@@ -11246,15 +11422,15 @@
     "chapitre": "None",
     "keywords": [
       "sanctions pénales",
+      "délinquant",
       "personne morale",
+      "poursuites",
       "responsabilité dirigeants",
-      "Président",
-      "Directeur Général",
+      "Président Directeur Général",
       "Directeur Gérant",
       "représentant légal",
-      "article 521",
-      "article 522",
-      "article 523"
+      "qualité pour représenter",
+      "articles 521 à 523"
     ],
     "source": "tome1-partie4-sanctions-penales.json"
   },
@@ -11268,6 +11444,8 @@
       "sanctions pénales",
       "droit de communication",
       "contravention",
+      "personnes ayant contrevenu",
+      "dispositions applicables",
       "article 522",
       "article 525"
     ],

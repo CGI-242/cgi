@@ -510,10 +510,12 @@
         "syndics de faillite",
         "séquestres",
         "dépositaires publics",
+        "deniers",
         "héritiers",
         "créanciers",
         "Contributions Directes",
-        "quittances"
+        "quittances",
+        "délivrance"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Obligations des tiers et privilège du Trésor"
@@ -531,8 +533,11 @@
         "économes",
         "dépositaires",
         "débiteurs",
+        "deniers",
         "privilège du Trésor Public",
         "redevables",
+        "acquit",
+        "contributions",
         "quittances",
         "Percepteurs"
       ],
@@ -567,7 +572,8 @@
         "taxes communales",
         "contributions directes",
         "privilège",
-        "rang"
+        "rang",
+        "Trésor"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Obligations des tiers et privilège du Trésor"
@@ -582,11 +588,13 @@
         "contribuable",
         "résidence",
         "émission du rôle",
+        "Agent chargé du recouvrement",
         "contrainte extérieure",
-        "comptable",
-        "trésorier général",
-        "trésorier payeur",
-        "receveur principal"
+        "Comptable",
+        "assujetti",
+        "trésorier Général",
+        "trésorier Payeur",
+        "receveur principal des impôts"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Obligations des tiers et privilège du Trésor"
@@ -595,7 +603,7 @@
       "article": "Art. 477",
       "titre": "Hypothèque légale du Trésor",
       "texte": [
-        "Pour le recouvrement des impositions de toute nature et amendes fiscales visées au présent Code, le Trésor a une hypothèque légale sur tous les biens immeubles des redevables, ou des responsables du recouvrement. Cette hypothèque prend rang à la date de son inscription au bureau des hypothèques. Elle peut être inscrite qu'à partir de la date à laquelle le contribuable a encouru une majoration ou pénalité pour défaut de paiement."
+        "Pour le recouvrement des impositions de toute nature et amendes fiscales visées au présent Code, le Trésor a une hypothèque légale sur tous les biens immeubles des redevables, ou des responsables du recouvrement. Cette hypothèque prend rang à la date de son inscription au bureau des hypothèques. Elle ne peut être inscrite qu'à partir de la date à laquelle le contribuable a encouru une majoration ou pénalité pour défaut de paiement."
       ],
       "mots_cles": [
         "recouvrement",
@@ -605,9 +613,13 @@
         "hypothèque légale",
         "biens immeubles",
         "redevables",
+        "responsables du recouvrement",
         "bureau des hypothèques",
+        "inscription",
+        "contribuable",
         "majoration",
-        "pénalité"
+        "pénalité",
+        "défaut de paiement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Obligations des tiers et privilège du Trésor"
@@ -617,7 +629,7 @@
       "titre": "Susceptibilité de poursuites",
       "texte": [
         "Est susceptible de poursuite :",
-        "• tout contribuable qui n'a pas acquitté, à la date réglementaire, la terme échu des contributions directes et indirectes ou taxes assimilées perçues au profit du budget de l'État, des communes au profit du Trésor Public et des autres Collectivités dont il est redevable ;",
+        "• tout contribuable qui n'a pas acquitté, à la date réglementaire, le terme échu des contributions directes et indirectes ou taxes assimilées perçues au profit du budget de l'État, des communes ou autres Collectivités dont il est redevable ;",
         "• tout débiteur envers le service local ou les Communes qui ne s'est pas libéré de sa dette dans le délai imparti et auquel il est impossible d'opposer la compensation prévue par les articles 1289 et suivants du Code civil."
       ],
       "mots_cles": [
@@ -647,8 +659,10 @@
       "mots_cles": [
         "héritiers",
         "légataires",
-        "solidarité",
+        "solidairement",
+        "conjointement",
         "contributions directes",
+        "auteur",
         "mutation",
         "rôles",
         "renonciation"
@@ -660,21 +674,24 @@
       "article": "Art. 480",
       "titre": "Compétence pour décerner des contraintes",
       "texte": [
-        "Le trésorier payeur, le receveur principal des impôts, le receveur de l'unité des grandes entreprises et le receveur de l'enregistrement des domaines et timbres sont seuls qualifiés pour engager les poursuites et décerner contrainte contre un contribuable retardataire et/ou récalcitrant.",
-        "Ils sont assistés, dans le recouvrement des impôts, taxes, droits et contributions dont ils ont la charge, par des agents de poursuites qui sont qualifiés pour engager les poursuites avec frais."
+        "Le trésorier payeur, le receveur principal des impôts, le receveur de l'unité des grandes entreprises et le receveur de l'enregistrement des domaines et timbres ont seuls qualité pour engager les poursuites et décerner contrainte contre un contribuable retardataire et/ou récalcitrant.",
+        "Ils sont assistés, dans le recouvrement des impôts, taxes, droits et contributions dont ils ont la charge, par des agents de poursuites qui ont qualité pour engager les poursuites avec frais."
       ],
       "mots_cles": [
         "trésorier payeur",
-        "receveur principal",
+        "receveur principal des impôts",
         "unité des grandes entreprises",
         "receveur enregistrement",
         "domaines",
         "timbres",
+        "qualité",
         "poursuites",
         "contrainte",
+        "contribuable",
         "retardataire",
         "récalcitrant",
-        "agents de poursuites"
+        "agents de poursuites",
+        "poursuites avec frais"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Poursuites, procédure"
@@ -713,12 +730,14 @@
       "article": "Art. 483",
       "titre": "Mentions obligatoires dans les actes des porteurs de contraintes",
       "texte": [
-        "Les porteurs de contraintes, dans l'exercice de leurs fonctions doivent toujours être munis de leur commission ; ils mentionnent dans leurs actes de la présenter quand ils en sont requis."
+        "Les porteurs de contraintes, dans l'exercice de leurs fonctions doivent toujours être munis de leur commission ; ils la mentionnent dans leurs actes et la présentent quand ils en sont requis."
       ],
       "mots_cles": [
         "porteurs de contraintes",
+        "fonctions",
         "commission",
-        "actes"
+        "actes",
+        "requis"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Poursuites, procédure"
@@ -760,7 +779,7 @@
       "article": "Art. 485",
       "titre": "Contrainte contre le redevable",
       "texte": [
-        "Après le délai indiqué dans l'article 459 ci-dessus, le comptable public chargé du recouvrement peut décerner une contrainte contre le redevable à fin de commandement établi et délivré par ce porteur."
+        "Après le délai indiqué dans l'article 459 ci-dessus, le comptable public chargé du recouvrement peut décerner une contrainte contre le redevable à fin de commandement établi et délivré par le porteur."
       ],
       "mots_cles": [
         "article 459",
@@ -813,7 +832,7 @@
         "• suspension de délivrance des licences d'importation ;",
         "• blocage des comptes bancaires ;",
         "• fermeture de l'entreprise.",
-        "En cas de récidive, outre l'exclusion définitive des marchés publics, la contrainte par corps à une peine de cinq à quinze jours d'emprisonnement peuvent être prononcées par l'autorité judiciaire à l'encontre du dirigeant principal de l'entreprise individuelle ou du gérant de la société."
+        "En cas de récidive, outre l'exclusion définitive des marchés publics, la contrainte par corps et une peine de cinq à quinze jours d'emprisonnement peuvent être prononcées par l'autorité judiciaire à l'encontre du dirigeant principal de l'entreprise individuelle ou du gérant de la société."
       ],
       "mots_cles": [
         "impôts",
@@ -918,7 +937,9 @@
         "saisie",
         "termes échus",
         "contributions",
-        "suspension"
+        "contribuable",
+        "suspension",
+        "exercice"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Poursuites, procédure"
@@ -927,7 +948,7 @@
       "article": "Art. 490",
       "titre": "Exécution de la saisie",
       "texte": [
-        "La saisie est exécutée d'après les formes prescrites par le Code de procédure civile. Il est dressé un procès-verbal de saisie."
+        "La saisie s'exécute d'après les formes prescrites par le Code de procédure civile. Il est dressé un procès-verbal de saisie."
       ],
       "mots_cles": [
         "saisie",
@@ -944,7 +965,6 @@
         "(L.F.2023) Abrogé"
       ],
       "mots_cles": [
-        "L.F.2023",
         "abrogé"
       ],
       "statut": "abrogé",
@@ -960,8 +980,9 @@
         "vente",
         "autorisation spéciale",
         "Ministre des finances",
+        "demande expresse",
         "trésorier-payeur",
-        "receveur principal"
+        "receveur principal des impôts"
       ],
       "statut": "en vigueur",
       "section": "Section 4 - Poursuites, procédure"
@@ -970,7 +991,7 @@
       "article": "Art. 493",
       "titre": "Délai et conditions de la vente",
       "texte": [
-        "La vente ne peut avoir lieu que huit jours après l'autorisation donnée par le Ministre des finances sauf autorisation d'un délai moindre s'il y a lieu de craindre le dépérissement des objets saisis.",
+        "La vente ne peut avoir lieu que huit jours après l'autorisation donnée par le Ministre des finances sauf autorisation spéciale lorsqu'il y a lieu de craindre le dépérissement des objets saisis.",
         "La vente est faite par les soins du commissaire-priseur, dans les formes prescrites par le Code de procédure civile pour les ventes effectuées par autorité de justice ou, à défaut, par le porteur de contraintes.",
         "Elle donne lieu à l'établissement d'un procès-verbal."
       ],
@@ -978,7 +999,9 @@
         "vente",
         "huit jours",
         "Ministre des finances",
+        "autorisation spéciale",
         "dépérissement",
+        "objets saisis",
         "commissaire-priseur",
         "Code de procédure civile",
         "autorité de justice",
@@ -1007,7 +1030,7 @@
       "article": "Art. 495",
       "titre": "Ordre de paiement",
       "texte": [
-        "Tout ordre de paiement, quel qu'en soit le titre, ou l'objet, ordonnancé par l'État, les Communes ou les Collectivités Publiques, pourra donner lieu, sous réserve de l'exécution préalable des dispositions des articles 467 et 468 du présent Code, à prélèvement en règlement de tous impôts et taxes dont le bénéficiaire pourrait être redevable."
+        "Tout ordre de paiement, quel qu'en soit le titre, ou l'objet, ordonnancé par l'État, les Communes ou les Collectivités Publiques, pourra donner lieu, sous réserve de l'exécution préalable des dispositions des articles 487 et 488 du présent Code, à précompte en règlement de tous impôts et taxes dont le bénéficiaire pourrait être redevable."
       ],
       "mots_cles": [
         "ordre de paiement",
@@ -1017,6 +1040,7 @@
         "Collectivités Publiques",
         "articles 487 et 488",
         "précompte",
+        "redevable",
         "impôts",
         "taxes",
         "bénéficiaire"
@@ -1033,10 +1057,11 @@
       "mots_cles": [
         "agent de poursuites",
         "saisie",
+        "suspension de saisie",
         "contribuable",
         "libération",
-        "suspension",
-        "quittance"
+        "quittance provisoire",
+        "quittance définitive"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1045,7 +1070,7 @@
       "article": "Art. 497",
       "titre": "Recouvrement des contributions pour les contribuables domiciliés en France ou à l'étranger",
       "texte": [
-        "Lorsque le contribuable est domicilié ou réside en France, dans les départements d'Outre-mer ou dans les autres États de la Communauté, le recouvrement des contributions peut être assuré, à la demande du comptable qui a pris le rôle en charge, par le comptable du domicile ou de la résidence du redevable ou de la situation de ses biens. Les poursuites étant exercées dans les formes prévues pour le recouvrement des contributions de même nature au lieu où elles sont effectuées."
+        "Lorsque le contribuable est domicilié ou réside en France, dans les départements d'Outre-mer ou dans les autres États de la Communauté, le recouvrement des contributions peut être assumé, à la demande du comptable qui a pris le rôle en charge, par le comptable du domicile ou de la résidence du redevable ou de la situation de ses biens, les poursuites étant exercées dans les formes prévues pour le recouvrement des contributions de même nature au lieu où elles sont effectuées."
       ],
       "mots_cles": [
         "contribuable",
@@ -1053,10 +1078,14 @@
         "départements d'Outre-mer",
         "États de la Communauté",
         "recouvrement",
+        "contributions",
         "comptable",
+        "rôle en charge",
         "domicile",
         "résidence",
-        "biens"
+        "redevable",
+        "situation des biens",
+        "poursuites"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1069,7 +1098,9 @@
       ],
       "mots_cles": [
         "saisie",
-        "opposition"
+        "exécution",
+        "opposition",
+        "nonobstant"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1078,7 +1109,7 @@
       "article": "Art. 499",
       "titre": "Oppositions formées par le saisi et ses créanciers",
       "texte": [
-        "Les oppositions formées par le saisi et par ses créanciers sont valablement faites entre les mains du comptable saisi ou auprès du porteur de contraintes.",
+        "Les oppositions formées par le saisi et par ses créanciers sont valablement faites entre les mains du comptable saisissant ou auprès du porteur de contraintes.",
         "Les demandes de revendication d'objets saisis sont signifiées au gardien et dénoncées au saisissant et au saisi.",
         "Elles doivent être précédées du dépôt d'un mémoire entre les mains du trésorier-payeur Général.",
         "A défaut de décision à l'expiration du délai d'un mois, il est permis aux parties de se pourvoir devant les tribunaux.",
@@ -1091,10 +1122,17 @@
         "comptable saisissant",
         "porteur de contraintes",
         "revendication",
+        "objets saisis",
         "gardien",
+        "saisissant",
+        "dépôt de mémoire",
         "trésorier-payeur Général",
         "délai un mois",
-        "tribunaux"
+        "tribunaux",
+        "Tribunal",
+        "justifications",
+        "pièces justificatives",
+        "conclusions"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1106,6 +1144,7 @@
         "En tout cas, en attendant le prononcé du jugement à intervenir, toutes mesures conservatoires sont prises par l'agent de poursuites."
       ],
       "mots_cles": [
+        "prononcé du jugement",
         "jugement",
         "mesures conservatoires",
         "agent de poursuites"
@@ -1117,15 +1156,16 @@
       "article": "Art. 500 bis",
       "titre": "Radiation d'une société du RCCM",
       "texte": [
-        "(L.F.2023) La radiation d'une société ou de toute autre entité juridique au RCCM est subordonnée à la présentation préalable, auprès du tribunal de commerce, d'un certificat de moralité fiscale et d'un quitus fiscal."
+        "La radiation d'une société ou de toute autre entité juridique au RCCM est subordonnée à la présentation préalable, auprès du tribunal de commerce, d'un certificat de moralité fiscale et d'un quitus fiscal."
       ],
       "mots_cles": [
-        "L.F.2023",
         "radiation",
         "société",
         "entité juridique",
         "RCCM",
+        "registre du commerce",
         "tribunal de commerce",
+        "présentation préalable",
         "certificat de moralité fiscale",
         "quitus fiscal"
       ],
@@ -1141,12 +1181,16 @@
       ],
       "mots_cles": [
         "agent de poursuite",
+        "commission",
         "portes fermées",
         "ouverture refusée",
         "gardien",
         "autorité administrative",
+        "ouverture des locaux",
         "représentant du Gouvernement",
-        "procès-verbal de saisie"
+        "saisie",
+        "procès-verbal de saisie",
+        "incident"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1155,15 +1199,17 @@
       "article": "Art. 502",
       "titre": "Mesures conservatoires en cas d'enlèvement furtif d'objets",
       "texte": [
-        "Des mesures conservatoires sont également prises lorsqu'un agent de poursuites ou de perception est informé d'un commencement d'enlèvement furtif d'objets constituant gage de la contribution, et qu'il y a lieu de craindre leur disparition."
+        "Des mesures conservatoires sont également prises lorsqu'un agent de poursuites ou de perception est informé d'un commencement d'enlèvement furtif d'objets constituant le gage de la contribution, et qu'il y a lieu de craindre leur disparition."
       ],
       "mots_cles": [
         "mesures conservatoires",
         "agent de poursuites",
         "agent de perception",
         "enlèvement furtif",
-        "gage",
+        "objets",
+        "gage de la contribution",
         "contribution",
+        "crainte de disparition",
         "disparition"
       ],
       "statut": "en vigueur",
@@ -1173,29 +1219,35 @@
       "article": "Art. 503",
       "titre": "Saisie-arrêt ou opposition",
       "texte": [
-        "1) Défaut de paiement des contributions, soit par les dépositaires ou débiteurs indiqués aux articles 472 et 473, soit par tous autres débiteurs de deniers provenant d'un redevable, le recouvrement du rôle poursuivi peut fait entre les mains desdits dépositaires et débiteurs une saisie-arrêt ou opposition, par le ministère du comptable.",
-        "2) La saisie arrêt ne doit être employée que dans le cas où les deniers ne sont pas affectés au privilège du Trésor. Dans le cas contraire, il y a lieu de procéder par voie de sommation directe au tiers détenteurs.",
+        "1) A défaut de paiement des contributions, soit par les dépositaires ou débiteurs indiqués aux articles 472 et 473, soit par tous autres débiteurs de deniers provenant d'un redevable, le détenteur du rôle poursuivant fait entre les mains desdits dépositaires et débiteurs une saisie-arrêt ou opposition, par le ministère du porteur de contraintes.",
+        "2) La saisie arrêt ne doit être employée que dans le cas où les deniers ne sont pas affectés au privilège du Trésor. Dans les cas contraires, il y a lieu de procéder par voie de sommation directe aux tiers détenteurs.",
         "3) Les dépositaires détenteurs ou débiteurs de sommes appartenant ou devant revenir aux redevables de l'impôt sont tenus, sur l'injonction qui leur est faite sous forme d'avis à tiers détenteurs notifié par le comptable public, de verser en lieu et place des redevables, les fonds qu'ils détiennent ou qu'ils doivent, à concurrence des impositions dues par les redevables.",
         "4) Ont qualité de tiers détenteur au sens du présent article, outre les personnes visées à l'article 473 ci-dessus, les clients, les gérants, administrateurs, directeurs ou liquidateurs d'entreprises pour les sommes dues par celles-ci."
       ],
       "mots_cles": [
+        "défaut de paiement",
         "contributions",
         "dépositaires",
         "débiteurs",
         "articles 472 et 473",
+        "redevable",
+        "détenteur du rôle",
         "saisie-arrêt",
         "opposition",
         "porteur de contraintes",
+        "deniers",
         "privilège du Trésor",
         "sommation directe",
         "tiers détenteurs",
         "avis à tiers détenteurs",
         "comptable public",
+        "impositions",
         "clients",
         "gérants",
         "administrateurs",
         "directeurs",
-        "liquidateurs"
+        "liquidateurs",
+        "article 473"
       ],
       "statut": "en vigueur",
       "section": "Section 5 - Oppositions, revendications, mesures conservatoires"
@@ -1209,7 +1261,9 @@
       "mots_cles": [
         "signification",
         "saisie-arrêt",
+        "requête",
         "agent de recouvrement",
+        "autorisation préalable",
         "Code de procédure civile",
         "assignation en validité",
         "trésorier-payeur"
@@ -1225,8 +1279,10 @@
       ],
       "mots_cles": [
         "frais de poursuite",
+        "mandatement",
         "porteurs de contraintes",
         "état de frais",
+        "visa",
         "trésorier-payeur",
         "receveur principal des impôts"
       ],
@@ -1245,7 +1301,9 @@
         "commandements",
         "saisies",
         "ventes",
-        "tarif annexé"
+        "actes",
+        "tarif annexé",
+        "Code"
       ],
       "statut": "en vigueur",
       "section": "Section 6 - Opérations comptables, responsabilités"
@@ -1259,8 +1317,10 @@
       "mots_cles": [
         "actes de poursuites",
         "porteurs de contraintes",
+        "peine de nullité",
         "nullité",
-        "prix taxé"
+        "prix taxé",
+        "délivrance"
       ],
       "statut": "en vigueur",
       "section": "Section 6 - Opérations comptables, responsabilités"
@@ -1275,11 +1335,17 @@
         "exemption",
         "formalité du timbre",
         "enregistrement",
+        "actes et pièces",
         "commandements",
         "saisies",
         "ventes",
+        "recouvrement",
         "contributions directes",
         "taxes assimilées",
+        "poursuites",
+        "originaux",
+        "copies",
+        "actes accessoires",
         "placards",
         "article 617",
         "Code de procédure civile"
@@ -1291,14 +1357,16 @@
       "article": "Art. 509",
       "titre": "Saisie ou vente faites contrairement aux formalités prescrites",
       "texte": [
-        "Toute saisie ou vente faites contrairement aux formalités prescrites par le présent Code peut donner lieu à des poursuites contre ceux qui y ont procédé et les frais restent à leur charge."
+        "Toute saisie ou vente faite contrairement aux formalités prescrites par le présent Code peut donner lieu à des poursuites contre ceux qui y ont procédé et les frais restent à leur charge."
       ],
       "mots_cles": [
         "saisie",
         "vente",
         "formalités prescrites",
+        "Code",
         "poursuites",
-        "frais"
+        "frais",
+        "charge"
       ],
       "statut": "en vigueur",
       "section": "Section 6 - Opérations comptables, responsabilités"
@@ -1307,7 +1375,7 @@
       "article": "Art. 510",
       "titre": "Rébellion contre les agents de poursuite",
       "texte": [
-        "En cas d'injure ou de rébellion contre les agents de poursuite, ceux-ci se retirent près du Président du Comité Exécutif Communal ou du Chef de District, et dressent un procès-verbal.",
+        "En cas d'injure ou de rébellion contre les agents de poursuite, ceux-ci se retirent près du Président du Comité Exécutif Communal ou du Chef de District et dressent un procès-verbal.",
         "L'autorité administrative peut dénoncer les faits aux tribunaux."
       ],
       "mots_cles": [
@@ -1318,7 +1386,8 @@
         "Chef de District",
         "procès-verbal",
         "autorité administrative",
-        "tribunaux"
+        "tribunaux",
+        "dénonciation"
       ],
       "statut": "en vigueur",
       "section": "Section 6 - Opérations comptables, responsabilités"
@@ -1333,9 +1402,12 @@
         "employeur",
         "débirentier",
         "retenues",
+        "retenues insuffisantes",
         "article 172",
         "pénalité",
-        "50 %"
+        "50 %",
+        "montant des retenues",
+        "IRPP"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 1 - Sanctions pour défaut ou retard dans le versement de l'IRPP ou de la taxe forfaitaire"
@@ -1352,14 +1424,19 @@
         "débirentier",
         "retenues IRPP",
         "impôt complémentaire",
+        "versement",
+        "caisse",
         "article 173",
+        "délais prescrits",
         "pénalité",
         "50 %",
         "100 %",
+        "retard",
         "deux mois",
         "taxe d'apprentissage",
         "taxe forfaitaire",
-        "articles 141 à 156"
+        "articles 141 à 156",
+        "article 171 bis"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 1 - Sanctions pour défaut ou retard dans le versement de l'IRPP ou de la taxe forfaitaire"
@@ -1374,10 +1451,13 @@
       "mots_cles": [
         "pénalités",
         "articles 511 et 512",
+        "constatation",
         "administration des impôts",
         "mise en recouvrement",
+        "règles",
         "IRPP",
         "taxe complémentaire",
+        "obstacle",
         "article 524",
         "poursuites"
       ],
@@ -1399,13 +1479,20 @@
         "Directeur Général des Impôts",
         "contentieux",
         "preuve",
+        "irrégularité",
+        "exagération",
+        "charge du contribuable",
         "décès",
+        "contrevenant",
         "société",
+        "association",
         "liquidation",
         "succession",
         "présidents",
         "directeurs généraux",
-        "gérants"
+        "directeurs",
+        "gérants",
+        "représentant légal"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 1 - Sanctions pour défaut ou retard dans le versement de l'IRPP ou de la taxe forfaitaire"
@@ -1418,8 +1505,10 @@
       ],
       "mots_cles": [
         "pénalités",
+        "montant",
         "arrondissement",
-        "dizaine de francs"
+        "dizaine de francs",
+        "articles précédents"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 1 - Sanctions pour défaut ou retard dans le versement de l'IRPP ou de la taxe forfaitaire"
@@ -1439,14 +1528,19 @@
         "centimes additionnels",
         "droits d'accises",
         "taxation d'office",
+        "assujettis",
         "déclarations",
         "délai légal",
         "8 jours",
         "éclaircissement",
         "justification",
+        "administration",
+        "redevables de plein droit",
         "déclaration d'existence",
+        "majoration",
         "pénalité",
-        "50 %"
+        "50 %",
+        "impositions dues"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 2 - Sanctions pour défaut ou retard dans le dépôt des relevés et déclarations relatifs à la TVA et taxes assimilées"
@@ -1472,14 +1566,19 @@
         "Est considéré comme défaut de versement tout retard supérieur à trois mois."
       ],
       "mots_cles": [
+        "contribuable",
         "précompte",
         "article 171 octies",
+        "abstention de versement",
         "pénalité",
         "200 %",
         "50 %",
         "retard",
         "versement",
-        "trois mois"
+        "défaut de versement",
+        "trois mois",
+        "impôt spécial",
+        "bons de caisse"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 2 bis - Sanctions pour défaut de précompte ou pour défaut ou retard dans le versement de l'impôt spécial sur les bons de caisse"
@@ -1495,10 +1594,15 @@
         "acompte",
         "impôt sur les sociétés",
         "IS",
+        "versement intégral",
+        "dernier jour du mois",
+        "sommes non réglées",
         "majoration",
         "50 %",
         "solde de liquidation",
-        "quinze jours"
+        "quinze jours",
+        "expiration du délai",
+        "droits"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 2 ter - Sanctions pour défaut ou retard dans le versement des acomptes de l'impôt sur les sociétés"
@@ -1509,15 +1613,58 @@
       "texte": [
         "1) Pour la taxe spéciale sur les sociétés, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par :",
         "• le directeur départemental lorsque les droits réclamés sont inférieurs ou égaux à 200.000.000 FCFA ;",
-        "• le directeur général lorsque les droits réclamés sont au-delà de la limite de 200.000.000 FCFA."
+        "• le directeur général lorsque les droits réclamés sont au-delà de la limite de 200.000.000 FCFA.",
+        "La demande du paiement différé ou échelonné est reçue par l'autorité compétente avant le 1er mars de chaque année.",
+        "2) Pour les impôts, droits et taxes recouvrés sur titre, l'autorisation de paiement différé ou échelonné est accordée au contribuable requérant par le receveur quel que soit le montant, suivant un échéancier qui ne peut excéder douze mois."
       ],
       "mots_cles": [
         "taxe spéciale sur les sociétés",
         "paiement différé",
         "paiement échelonné",
+        "contribuable requérant",
         "directeur départemental",
         "directeur général",
-        "200.000.000 FCFA"
+        "200.000.000 FCFA",
+        "autorité compétente",
+        "1er mars",
+        "impôts droits et taxes",
+        "receveur",
+        "échéancier",
+        "douze mois"
+      ],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 - Section 2 quater - Compétence pour statuer en matière de paiement différé ou échelonné"
+    },
+    {
+      "article": "Art. 518 quater B",
+      "titre": "Durée et limites de l'échéancier",
+      "texte": [
+        "L'échéancier ci-dessus ne peut excéder six mois et ne peut s'étaler au-delà de l'année fiscale de l'émission de la dette fiscale.",
+        "Il ne peut être accordé deux échéanciers simultanés."
+      ],
+      "mots_cles": [
+        "échéancier",
+        "six mois",
+        "année fiscale",
+        "émission",
+        "dette fiscale",
+        "échéanciers simultanés"
+      ],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 - Section 2 quater - Compétence pour statuer en matière de paiement différé ou échelonné"
+    },
+    {
+      "article": "Art. 518 quater C",
+      "titre": "Sanction du non-respect de l'échéancier",
+      "texte": [
+        "Le non-respect de l'échéancier est sanctionné par les dispositions de droit commun du présent Code."
+      ],
+      "mots_cles": [
+        "non-respect",
+        "échéancier",
+        "sanction",
+        "droit commun",
+        "Code"
       ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Section 2 quater - Compétence pour statuer en matière de paiement différé ou échelonné"
