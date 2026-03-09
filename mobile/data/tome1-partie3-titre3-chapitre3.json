@@ -34,10 +34,16 @@
         "six mois",
         "gêne",
         "indigence",
-        "Trésor"
+        "Trésor",
+        "propriétaires",
+        "immeubles",
+        "taxation",
+        "cotisation",
+        "redevables",
+        "entreprises commerciales"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demande en remise ou modération"
+      "section": "Section 1 - Demande en remise ou modération"
     },
     {
       "article": "Art. 447",
@@ -49,10 +55,12 @@
         "demande",
         "DGID",
         "date de réception",
-        "opposable"
+        "opposable",
+        "contribuable",
+        "administration"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demande en remise ou modération"
+      "section": "Section 1 - Demande en remise ou modération"
     },
     {
       "article": "Art. 448",
@@ -67,10 +75,11 @@
         "délai un mois",
         "événement",
         "gêne",
-        "indigence"
+        "indigence",
+        "toute époque"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demande en remise ou modération"
+      "section": "Section 1 - Demande en remise ou modération"
     },
     {
       "article": "Art. 449",
@@ -91,13 +100,13 @@
         "modération"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demande en remise ou modération"
+      "section": "Section 1 - Demande en remise ou modération"
     },
     {
       "article": "Art. 450",
       "titre": "Saisine du Directeur Général des Impôts",
       "texte": [
-        "Le contribuable a la faculté de saisir le Directeur Général des Impôts dans le cas où la décision du Directeur des Contributions Directes et Indirectes ou du Directeur des Vérifications Générales, des Enquêtes fiscales et des Recouvrements ne lui donne pas entière satisfaction.",
+        "Le contribuable a la faculté de saisir le Directeur Général des Impôts dans le cas où la décision du Directeur des Contributions Directes et Indirectes ou du Directeur des Vérifications Générales, des Enquêtes fiscales et des Recoupements ne lui donne pas entière satisfaction.",
         "Il en est de même de la décision du Directeur Général des Impôts qui peut être portée devant le Ministre des finances."
       ],
       "mots_cles": [
@@ -106,17 +115,20 @@
         "saisine",
         "Directeur des Contributions",
         "Directeur des Vérifications Générales",
+        "Enquêtes fiscales",
+        "Recoupements",
         "Ministre des finances",
+        "satisfaction",
         "recours"
       ],
       "statut": "en vigueur",
-      "section": "Section 1 : Demande en remise ou modération"
+      "section": "Section 1 - Demande en remise ou modération"
     },
     {
       "article": "Art. 451",
       "titre": "Demandes en remise de pénalités",
       "texte": [
-        "Les demandes en remise de pénalités appliquées par le service d'assiette ou de la majoration de 10 % appliquée par le service de recouvrement sont présentées, instruites et jugées dans les mêmes formes et conditions que les demandes de remise ou modération d'impôt ; toutefois, elles devront parvenir à la DGID dans un délai de deux mois à partir du jour où le contribuable a connaissance de sa dette par les premières poursuites avec frais.",
+        "Les demandes en remise de pénalités appliquées par le service d'assiette ou de la majoration de 10 % appliquée par le service de recouvrement sont présentées, instruites et jugées dans les mêmes formes et conditions que les demandes de remise ou modération d'impôt ; toutefois, elles devront parvenir à la DGID dans un délai de deux mois à partir du jour où le contribuable a eu connaissance de sa dette par les premières poursuites avec frais.",
         "Dans le cas des demandes en remise de la majoration de 10 %, l'agent d'assiette chargé de l'instruction de la demande devra nécessairement s'entourer de l'avis de l'agent chargé du recouvrement."
       ],
       "mots_cles": [
@@ -126,10 +138,11 @@
         "service de recouvrement",
         "DGID",
         "délai deux mois",
-        "poursuites avec frais"
+        "poursuites avec frais",
+        "contribuable"
       ],
       "statut": "en vigueur",
-      "section": "Section 2 : Demandes en remise de pénalités"
+      "section": "Section 2 - Demandes en remise de pénalités"
     },
     {
       "article": "Art. 452",
@@ -144,10 +157,11 @@
         "cotes irrécouvrables",
         "recouvrement impossible",
         "cotes indûment imposées",
-        "article 435"
+        "article 435",
+        "recouvrement impossible"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : États de cotes irrécouvrables"
+      "section": "Section 3 - États de cotes irrécouvrables"
     },
     {
       "article": "Art. 453",
@@ -167,7 +181,7 @@
         "non-valeur"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : États de cotes irrécouvrables"
+      "section": "Section 3 - États de cotes irrécouvrables"
     },
     {
       "article": "Art. 454",
@@ -184,7 +198,7 @@
         "délai deux mois"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : États de cotes irrécouvrables"
+      "section": "Section 3 - États de cotes irrécouvrables"
     },
     {
       "article": "Art. 455",
@@ -203,7 +217,7 @@
         "recours"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : États de cotes irrécouvrables"
+      "section": "Section 3 - États de cotes irrécouvrables"
     },
     {
       "article": "Art. 456",
@@ -222,7 +236,7 @@
         "mesures conservatoires"
       ],
       "statut": "en vigueur",
-      "section": "Section 3 : États de cotes irrécouvrables"
+      "section": "Section 3 - États de cotes irrécouvrables"
     },
     {
       "article": "Art. 457",
@@ -240,7 +254,7 @@
         "dispense"
       ],
       "statut": "en vigueur",
-      "section": "Section 4 : Dispositions diverses"
+      "section": "Section 4 - Dispositions diverses"
     }
   ]
 }
