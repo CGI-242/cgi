@@ -43,16 +43,18 @@ if (process.env.NODE_ENV !== "production") {
   devOrigins.forEach(o => { if (!allowedOrigins.includes(o)) allowedOrigins.push(o); });
 }
 
-// Middleware sécurité — CSP activé car le serveur sert aussi le SPA (LOW-09)
+// Middleware sécurité — CSP strict sans unsafe-inline/unsafe-eval (C2)
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" },
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'"],
-      styleSrc: ["'self'", "'unsafe-inline'"],
+      scriptSrc: ["'self'", "https://challenges.cloudflare.com", "https://*.cloudflare.com"],
+      styleSrc: ["'self'", "'sha256-+R/ZCHnQviXyQb4aRG+FfnYnvSs95Sh3781AvYd08wc='", "https://fonts.googleapis.com"],
       imgSrc: ["'self'", "data:", "https:"],
       connectSrc: ["'self'", "https:"],
+      frameSrc: ["https://challenges.cloudflare.com", "https://*.cloudflare.com"],
+      fontSrc: ["'self'", "data:", "https://fonts.gstatic.com"],
     },
   },
   referrerPolicy: { policy: "strict-origin-when-cross-origin" },
