@@ -41,6 +41,9 @@ COPY prisma/ prisma/
 # Données statiques (articles CGI)
 COPY data/ data/
 
+# Sécurité : ne pas exécuter en root (H1)
+USER node
+
 # Healthcheck
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD wget -qO- http://localhost:3003/health || exit 1

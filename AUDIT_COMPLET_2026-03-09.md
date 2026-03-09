@@ -23,6 +23,11 @@
 | C3 | **Turnstile CAPTCHA fail-closed** — Bypass `X-Platform: mobile` supprime, fail-closed sauf dev, timeout 5s, logging | 2026-03-09 | voir ci-dessous |
 | C3+ | **HMAC mobile auth** — App mobile authentifiee via HMAC-SHA256 + anti-replay 5min + `MOBILE_API_SECRET` | 2026-03-09 | `f5ad70e` |
 | H4 | **Suppression auto-promotion ADMIN** — Fallback `ADMIN_EMAIL` supprime, `contact@normx-ai.com` promu ADMIN en base (definitif), audit log sur refus | 2026-03-09 | voir ci-dessous |
+| H1 | **Containers Docker non-root** — `USER node` dans server/Dockerfile, `USER nginx` dans nginx/Dockerfile avec permissions ajustees | 2026-03-09 | voir ci-dessous |
+| H2 | **Re-evalue en Low** — sessionStorage ne stocke que l'etat UI (user, isAuthenticated), les tokens sont deja en httpOnly cookies | 2026-03-09 | - |
+| H3 | **Deja corrige** — Lockout fonctionnel : 5 tentatives → 15min blocage en DB + rate limiter Nginx | 2026-03-09 | - |
+| H5 | **Rate limiting /clear-session** — Zone Nginx dediee `session_cleanup` a 5r/min avec burst 3 | 2026-03-09 | voir ci-dessous |
+| H6 | **Suite SSL/TLS modernisee** — Ciphers AEAD uniquement (ECDHE+AES-GCM/CHACHA20), session tickets desactives, cache SSL 10m | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -51,12 +56,12 @@
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **H1** | **Containers Docker executes en root** — Pas de directive `USER` dans les Dockerfiles | `server/Dockerfile`, `nginx/Dockerfile` |
-| **H2** | **Tokens dans sessionStorage** (web) — Vulnerable aux attaques XSS | `mobile/lib/store/auth.ts:37-62` |
-| **H3** | **Lockout d'authentification faible** — Brute force possible via multiples IPs | `server/src/routes/auth.ts:256-285` |
+| **H1** | ~~**Containers Docker executes en root**~~ **CORRIGE** — `USER node` (server) et `USER nginx` (nginx) avec permissions ajustees | `server/Dockerfile`, `nginx/Dockerfile` |
+| **H2** | ~~**Tokens dans sessionStorage**~~ **RE-EVALUE LOW** — sessionStorage ne stocke que l'etat UI (user, isAuthenticated), tokens deja en httpOnly cookies | `mobile/lib/store/auth.ts:37-62` |
+| **H3** | ~~**Lockout d'authentification faible**~~ **DEJA CORRIGE** — 5 tentatives → 15min blocage en DB + rate limiter Nginx | `server/src/routes/auth.ts:256-285` |
 | **H4** | ~~**Elevation de privileges par email admin**~~ **CORRIGE** — Fallback `ADMIN_EMAIL` supprime, role ADMIN uniquement en base, audit log sur tentatives refusees | `server/src/middleware/requireAdmin.ts` |
-| **H5** | **Endpoint `/clear-session` non authentifie** sans protection CSRF | `server/src/routes/auth.ts:799-806` |
-| **H6** | **Configuration SSL/TLS faible** — Cipher suite `HIGH:!aNULL:!MD5` trop permissive | `nginx/conf.d/api.conf:26` |
+| **H5** | ~~**Endpoint `/clear-session` non authentifie**~~ **CORRIGE** — Rate limiting dedie (5r/min burst 3) via zone Nginx `session_cleanup` | `nginx/conf.d/api.conf`, `nginx/nginx.conf` |
+| **H6** | ~~**Configuration SSL/TLS faible**~~ **CORRIGE** — Suite ciphers AEAD moderne (ECDHE+AES-GCM/CHACHA20), session tickets off, cache SSL 10m | `nginx/conf.d/api.conf:25-30` |
 
 ### 1.3 MOYENNE SEVERITE
 
