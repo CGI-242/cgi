@@ -21,6 +21,8 @@
 | B7 | **Permissions-Policy ajoute** — `camera=(), microphone=(), geolocation=()` | 2026-03-09 | voir ci-dessous |
 | - | **Security headers Nginx corriges** — `include security-headers.conf` dans chaque bloc `location` pour eviter l'ecrasement des headers | 2026-03-09 | voir ci-dessous |
 | C3 | **Turnstile CAPTCHA fail-closed** — Bypass `X-Platform: mobile` supprime, fail-closed sauf dev, timeout 5s, logging | 2026-03-09 | voir ci-dessous |
+| C3+ | **HMAC mobile auth** — App mobile authentifiee via HMAC-SHA256 + anti-replay 5min + `MOBILE_API_SECRET` | 2026-03-09 | `f5ad70e` |
+| H4 | **Suppression auto-promotion ADMIN** — Fallback `ADMIN_EMAIL` supprime, `contact@normx-ai.com` promu ADMIN en base (definitif), audit log sur refus | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -52,7 +54,7 @@
 | **H1** | **Containers Docker executes en root** — Pas de directive `USER` dans les Dockerfiles | `server/Dockerfile`, `nginx/Dockerfile` |
 | **H2** | **Tokens dans sessionStorage** (web) — Vulnerable aux attaques XSS | `mobile/lib/store/auth.ts:37-62` |
 | **H3** | **Lockout d'authentification faible** — Brute force possible via multiples IPs | `server/src/routes/auth.ts:256-285` |
-| **H4** | **Elevation de privileges par email admin** — `ADMIN_EMAIL` en env auto-promeut en ADMIN | `server/src/middleware/requireAdmin.ts:36-47` |
+| **H4** | ~~**Elevation de privileges par email admin**~~ **CORRIGE** — Fallback `ADMIN_EMAIL` supprime, role ADMIN uniquement en base, audit log sur tentatives refusees | `server/src/middleware/requireAdmin.ts` |
 | **H5** | **Endpoint `/clear-session` non authentifie** sans protection CSRF | `server/src/routes/auth.ts:799-806` |
 | **H6** | **Configuration SSL/TLS faible** — Cipher suite `HIGH:!aNULL:!MD5` trop permissive | `nginx/conf.d/api.conf:26` |
 
@@ -380,12 +382,12 @@ methodName: async (params): Promise<ReturnType> => {
 | Severite | Total | Corrigees | Restantes | Exemples cles |
 |----------|-------|-----------|-----------|---------------|
 | **CRITIQUE** | 3 | 3 (C1, C2, C3) | 0 | ~~Secrets en clair~~, ~~CSP unsafe-inline~~, ~~Turnstile bypass~~ |
-| **HAUTE** | 6 | 0 | 6 | Docker root, sessionStorage tokens, brute force, admin email, SSL faible |
+| **HAUTE** | 6 | 1 (H4) | 5 | Docker root, sessionStorage tokens, brute force, ~~admin email~~, SSL faible |
 | **MOYENNE** | 9 | 2 (M3, M4) | 7 | Replay token, ~~MFA clair~~, ~~X-Frame-Options~~, rate limiting, pagination |
 | **BASSE** | 13 | 1 (B7) | 12 | Health check, audit async, logging, Docker limits, ~~Permissions-Policy~~ |
 | **TOTAL** | **31** | **5** | **26** | |
 
-**Progres global : 6/31 vulnerabilites corrigees (19%) — 0 critique restante + CI/CD + cle SSH dediee**
+**Progres global : 7/31 vulnerabilites corrigees (23%) — 0 critique restante + CI/CD + cle SSH dediee**
 
 | Categorie qualite | Nombre |
 |--------------------|--------|

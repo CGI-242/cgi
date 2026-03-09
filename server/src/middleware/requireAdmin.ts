@@ -2,13 +2,14 @@ import { Response, NextFunction } from 'express';
 import { AuthRequest } from './auth';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
+import { AuditService } from '../services/audit.service';
 
 const logger = createLogger('RequireAdmin');
 
 /**
- * Middleware admin global : vérifie que l'utilisateur a le rôle ADMIN
- * en base de données. Fallback sur ADMIN_EMAIL pour rétro-compatibilité
- * (promeut automatiquement l'utilisateur en ADMIN si match).
+ * Middleware admin global : verifie que l'utilisateur a le role ADMIN
+ * en base de donnees. Aucun fallback — le role ADMIN doit etre attribue
+ * explicitement en base via un script ou une commande SQL.
  */
 export async function requireAdmin(req: AuthRequest, res: Response, next: NextFunction) {
   if (!req.userId) {
@@ -27,29 +28,24 @@ export async function requireAdmin(req: AuthRequest, res: Response, next: NextFu
       return;
     }
 
-    // Vérification principale : rôle en base
     if (user.role === 'ADMIN') {
       next();
       return;
     }
 
-    // Fallback rétro-compatible : ADMIN_EMAIL env var
-    // Si match, promouvoir l'utilisateur en ADMIN en base pour les prochaines requêtes
-    const adminEmail = process.env.ADMIN_EMAIL;
-    if (adminEmail && user.email === adminEmail) {
-      await prisma.user.update({
-        where: { id: user.id },
-        data: { role: 'ADMIN' },
-      });
-      logger.info(`Utilisateur ${user.email} promu ADMIN (migration depuis ADMIN_EMAIL)`);
-      next();
-      return;
-    }
+    // Tentative refusee — logger + audit
+    logger.warn(`Tentative d'acces admin refusee pour ${user.email} (role: ${user.role})`);
+    AuditService.log({
+      action: 'admin_access_denied',
+      userId: user.id,
+      targetType: 'user',
+      targetId: user.id,
+      details: { email: user.email, role: user.role, path: req.originalUrl },
+    });
 
-    logger.warn(`Tentative d'accès admin refusée pour ${req.userEmail}`);
-    res.status(403).json({ error: 'Accès refusé — droits administrateur requis' });
+    res.status(403).json({ error: 'Acces refuse — droits administrateur requis' });
   } catch (err) {
-    logger.error('Erreur vérification admin:', err);
+    logger.error('Erreur verification admin:', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 }
