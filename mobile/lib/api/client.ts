@@ -78,10 +78,12 @@ api.interceptors.request.use(async (config) => {
     // Web : cookies httpOnly envoyes automatiquement par le navigateur
     // Lire le cookie csrf-token et l'envoyer en header X-CSRF-Token
     try {
-      const csrfToken = document.cookie
-        .split("; ")
-        .find((c) => c.startsWith("csrf-token="))
-        ?.split("=")[1];
+      const csrfToken = decodeURIComponent(
+        document.cookie
+          .split("; ")
+          .find((c) => c.startsWith("csrf-token="))
+          ?.split("=")[1] || ""
+      ) || undefined;
       if (csrfToken) {
         config.headers["X-CSRF-Token"] = csrfToken;
       }

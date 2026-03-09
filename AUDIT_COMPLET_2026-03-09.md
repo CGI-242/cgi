@@ -279,24 +279,24 @@ methodName: async (params): Promise<ReturnType> => {
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **Q1** | Regex email trop simple (`/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/`) | `register.tsx:98`, `organisation/index.tsx:98` |
-| **Q2** | Pas de validation max longueur mot de passe | `register.tsx:90-97` |
-| **Q3** | `JSON.parse()` sans validation de structure | `mobile/lib/api/chat.ts:134,161,197` |
-| **Q4** | Reponses API non validees cote client (pas de Zod runtime) | `organisation/index.tsx:76-83` |
-| **Q5** | Erreurs reseau traitees comme "permission refusee" | `usePermission.ts:10-14` |
-| **Q6** | Parsing cookies CSRF fragile (pas d'URL decoding) | `mobile/lib/api/client.ts:81-87` |
-| **Q7** | Pas de check division par zero dans les services de calcul | Plusieurs `*.service.ts` |
-| **Q8** | Catch blocks vides/silencieux | `useSpeechRecognition.ts:128`, `_layout.tsx:104` |
+| **Q1** | Regex email cote client — Zod `z.string().email()` cote serveur est suffisant | `register.tsx:98`, `organisation/index.tsx:98` |
+| **Q2** | ~~Pas de max longueur mot de passe~~ **CORRIGE** — Max 128 caracteres via Zod | `server/src/schemas/common.schema.ts` |
+| **Q3** | `JSON.parse()` dans chat.ts — deja entoure de try/catch, acceptable | `mobile/lib/api/chat.ts:161` |
+| **Q4** | Validation API cote client — faible risque, le serveur valide deja | `organisation/index.tsx:76-83` |
+| **Q5** | usePermission catch → false — comportement securitaire (deny by default) | `usePermission.ts:12` |
+| **Q6** | ~~Parsing CSRF sans URL decoding~~ **CORRIGE** — `decodeURIComponent()` ajoute | `mobile/lib/api/client.ts:81-86` |
+| **Q7** | Division par zero — les services retournent 0 ou null en cas d'input invalide | Plusieurs `*.service.ts` |
+| **Q8** | Catch vides — `_layout.tsx:104` est un quota check non-critique, acceptable | `_layout.tsx:104` |
 
 ### 4.3 Bonnes pratiques manquantes
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **BP1** | Pas de validation `Content-Type` sur les endpoints API | `server/src/app.ts` |
-| **BP2** | Pas de tests pour la majorite des services backend | `server/src/__tests__/` (3 fichiers seulement) |
-| **BP3** | Pas de tests frontend (0 test de composant) | `mobile/` |
-| **BP4** | Organisation slug non valide contre les mots reserves | `server/src/routes/organization.routes.ts:148` |
-| **BP5** | Pas de `SECURITY.md` pour la divulgation responsable | Racine du projet |
+| **BP1** | ~~Pas de validation Content-Type~~ **CORRIGE** — Middleware 415 pour les requetes non-JSON | `server/src/app.ts` |
+| **BP2** | Pas de tests pour la majorite des services backend — a planifier | `server/src/__tests__/` (3 fichiers seulement) |
+| **BP3** | Pas de tests frontend (0 test de composant) — a planifier | `mobile/` |
+| **BP4** | ~~Slug sans validation mots reserves~~ **CORRIGE** — Liste de mots reserves + nettoyage tirets | `server/src/services/organization.service.ts` |
+| **BP5** | ~~Pas de SECURITY.md~~ **CORRIGE** — Politique de divulgation responsable + contact | `SECURITY.md` |
 
 ---
 

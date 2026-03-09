@@ -78,6 +78,18 @@ app.use(cors({
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
+// Valider Content-Type sur les requêtes avec body (BP1)
+app.use((req, res, next) => {
+  if (["POST", "PUT", "PATCH"].includes(req.method) && req.headers["content-length"] !== "0") {
+    const ct = req.headers["content-type"];
+    if (ct && !ct.includes("application/json") && !ct.includes("multipart/form-data")) {
+      res.status(415).json({ error: "Content-Type non supporté, utilisez application/json" });
+      return;
+    }
+  }
+  next();
+});
+
 // Middleware de logging des requêtes HTTP — masque les query params sensibles (B6)
 app.use((req, res, next) => {
   const start = Date.now();

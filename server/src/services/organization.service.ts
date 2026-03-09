@@ -38,7 +38,13 @@ export async function createOrganization(userId: string, userEmail: string, data
   // uniquement pour la rétrocompatibilité avec le formulaire d'inscription mobile.
   const orgName = data.name || data.entrepriseNom;
   if (!orgName) throw new Error('Nom de l\'organisation requis');
-  const slug = orgName.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+
+  // BP4 : valider le slug contre les mots réservés
+  const RESERVED_SLUGS = ['admin', 'api', 'auth', 'system', 'root', 'null', 'undefined', 'test', 'www', 'app', 'help', 'support'];
+  const slug = orgName.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  if (RESERVED_SLUGS.includes(slug)) {
+    throw new Error('Ce nom d\'organisation est réservé');
+  }
 
   const org = await prisma.organization.create({
     data: {

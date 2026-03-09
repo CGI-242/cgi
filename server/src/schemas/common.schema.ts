@@ -3,10 +3,13 @@ import { z } from 'zod';
 // --- Primitives ---
 export const uuidParam = z.string().uuid();
 export const emailField = z.string().email();
-export const passwordField = z.string().min(8, 'Le mot de passe doit contenir au moins 8 caractères').regex(
-  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
-  'Le mot de passe doit contenir au moins 1 majuscule, 1 minuscule et 1 chiffre'
-);
+export const passwordField = z.string()
+  .min(8, 'Le mot de passe doit contenir au moins 8 caractères')
+  .max(128, 'Le mot de passe ne peut pas dépasser 128 caractères')
+  .regex(
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+    'Le mot de passe doit contenir au moins 1 majuscule, 1 minuscule et 1 chiffre'
+  );
 export const requiredString = (name: string) => z.string().min(1, `${name} est requis`);
 
 // --- Params communs ---
