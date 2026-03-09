@@ -30,8 +30,8 @@ import { createLogger } from "./utils/logger";
 const logger = createLogger("App");
 const app = express();
 
-// Faire confiance au reverse proxy Nginx (nécessaire pour express-rate-limit + X-Forwarded-For)
-app.set("trust proxy", 1);
+// Faire confiance au reverse proxy Nginx (B10 — configurable via env)
+app.set("trust proxy", parseInt(process.env.TRUST_PROXY || "1", 10));
 
 // Origins autorisées (supporte plusieurs domaines séparés par des virgules)
 const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:3004")
@@ -78,12 +78,14 @@ app.use(cors({
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
-// Middleware de logging des requêtes HTTP via Winston (LOW-08)
+// Middleware de logging des requêtes HTTP — masque les query params sensibles (B6)
 app.use((req, res, next) => {
   const start = Date.now();
   res.on("finish", () => {
     const duration = Date.now() - start;
-    logger.info(`${req.method} ${req.originalUrl} ${res.statusCode} ${duration}ms`);
+    // Ne logger que le path sans query parameters pour éviter l'exposition de données
+    const safePath = req.path;
+    logger.info(`${req.method} ${safePath} ${res.statusCode} ${duration}ms`);
   });
   next();
 });
@@ -94,9 +96,8 @@ app.use(csrfProtection);
 // Rate limiting global
 app.use(globalLimiter);
 
-// Swagger UI — intentionnellement désactivé en production uniquement pour la sécurité.
-// En dev/staging, Swagger reste accessible pour faciliter le développement et les tests. (LOW-03)
-if (process.env.NODE_ENV !== "production") {
+// Swagger UI — désactivé en production et staging (B12)
+if (process.env.NODE_ENV === "development") {
   app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
   app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
 }
@@ -121,38 +122,29 @@ app.use("/api/notifications", notificationRoutes);
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
 startReminderCron();
 
-// Health check complet — vérifie PostgreSQL et Qdrant
+// Health check — ne retourne que le statut global sans détails internes (B1)
 app.get("/health", async (_req, res) => {
-  const checks: Record<string, string> = {};
   let overall = "ok";
 
-  // Vérifier PostgreSQL
   try {
     await prisma.$queryRaw`SELECT 1`;
-    checks.postgresql = "ok";
   } catch {
-    checks.postgresql = "down";
     overall = "degraded";
   }
 
-  // Vérifier Qdrant
   try {
     const qdrantUrl = process.env.QDRANT_URL || "http://localhost:6333";
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 3000);
     const resp = await fetch(`${qdrantUrl}/healthz`, { signal: controller.signal });
     clearTimeout(timeout);
-    checks.qdrant = resp.ok ? "ok" : "down";
+    if (!resp.ok) overall = "degraded";
   } catch {
-    checks.qdrant = "down";
     overall = "degraded";
   }
 
-  // Vérifier SMTP (config présente)
-  checks.smtp = process.env.SMTP_HOST ? "configured" : "not_configured";
-
   const statusCode = overall === "ok" ? 200 : 503;
-  res.status(statusCode).json({ status: overall, service: "cgi-242", checks });
+  res.status(statusCode).json({ status: overall });
 });
 
 // Catch-all pour routes /api/* inexistantes — retourne 404 JSON (MED-03)

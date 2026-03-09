@@ -40,7 +40,7 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
   const token = extractToken(req);
 
   if (!token) {
-    logger.warn(`[401] Token manquant — ${req.method} ${req.originalUrl} — cookies: ${JSON.stringify(Object.keys(req.cookies || {}))} — auth header: ${!!req.headers.authorization}`);
+    logger.warn(`[401] Token manquant — ${req.method} ${req.originalUrl}`);
     res.status(401).json({ error: "Token manquant" });
     return;
   }

@@ -35,6 +35,17 @@
 | M7 | **Rate limiting renforce** — 10r/s burst 20 (au lieu de 30r/s burst 50) | 2026-03-09 | voir ci-dessous |
 | M8 | **Pagination bornee** — page max 1000 via Zod | 2026-03-09 | voir ci-dessous |
 | M9 | **Bcrypt rounds configurable** — Via `BCRYPT_ROUNDS` env (defaut 12) | 2026-03-09 | voir ci-dessous |
+| B1 | **Health check securise** — Ne retourne plus le detail des services, juste le statut global | 2026-03-09 | voir ci-dessous |
+| B3 | **Logging auth nettoyé** — Suppression des cookies/headers dans les logs d'erreur | 2026-03-09 | voir ci-dessous |
+| B4 | **Log rotation Docker** — max-size 10m, max-file 3 sur tous les services (fait en M6) | 2026-03-09 | voir ci-dessous |
+| B5 | **Filesystem read-only** — Container API en read_only + tmpfs /tmp | 2026-03-09 | voir ci-dessous |
+| B6 | **HTTP logging securise** — Ne log plus les query parameters, seulement le path | 2026-03-09 | voir ci-dessous |
+| B8 | **Healthcheck Nginx Docker** — wget sur port 80 toutes les 30s | 2026-03-09 | voir ci-dessous |
+| B9 | **Graceful shutdown ameliore** — closeAllConnections + timeout 30s pour streaming | 2026-03-09 | voir ci-dessous |
+| B10 | **Trust proxy configurable** — Via `TRUST_PROXY` env (defaut 1) | 2026-03-09 | voir ci-dessous |
+| B11 | **Timeout connexion DB** — connect_timeout=10 + pool_timeout=10 dans Prisma | 2026-03-09 | voir ci-dessous |
+| B12 | **Swagger dev-only** — Accessible uniquement en NODE_ENV=development (plus en staging) | 2026-03-09 | voir ci-dessous |
+| B13 | **Deploy script securise** — Installation Docker via depot APT officiel (plus de curl\|sh) | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -88,19 +99,19 @@
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **B1** | Health check expose le statut des services sans authentification | `server/src/app.ts:123-154` |
-| **B2** | Audit log fire-and-forget (erreurs silencieuses) | `server/src/services/audit.service.ts:23-40` |
-| **B3** | Logging verbose pouvant exposer des infos sensibles | `server/src/middleware/auth.ts:43` |
-| **B4** | Pas de logging Docker max-size (risque saturation disque) | `docker-compose.yml` |
-| **B5** | Filesystem read-write dans les containers | `docker-compose.yml` |
-| **B6** | HTTP logging peut exposer des query parameters | `server/src/app.ts:80-87` |
+| **B1** | ~~Health check expose le statut des services~~ **CORRIGE** — Ne retourne plus que le statut global (`ok`/`degraded`) | `server/src/app.ts:124-145` |
+| **B2** | Audit log fire-and-forget — le `.catch()` log les erreurs, comportement acceptable (pas de donnees perdues critiques) | `server/src/services/audit.service.ts:23-40` |
+| **B3** | ~~Logging verbose~~ **CORRIGE** — Suppression des cookies/headers dans les logs auth | `server/src/middleware/auth.ts:43` |
+| **B4** | ~~Pas de logging Docker max-size~~ **CORRIGE** — Log rotation (10m × 3) sur tous les services (fait en M6) | `docker-compose.yml` |
+| **B5** | ~~Filesystem read-write~~ **CORRIGE** — Container API en `read_only: true` + `tmpfs: /tmp` | `docker-compose.yml` |
+| **B6** | ~~HTTP logging expose query parameters~~ **CORRIGE** — Ne log que `req.path` sans query string | `server/src/app.ts:82-88` |
 | **B7** | ~~Pas de `Permissions-Policy` header~~ **CORRIGE** — `Permissions-Policy: camera=(), microphone=(), geolocation=()` ajoute | `nginx/conf.d/security-headers.conf` |
-| **B8** | Pas de healthcheck Nginx dans Docker | `docker-compose.yml:58-74` |
-| **B9** | Graceful shutdown ne gere pas les requetes longues (streaming) | `server/src/server.ts:29-47` |
-| **B10** | Trust proxy hardcode a 1 | `server/src/app.ts:34` |
-| **B11** | Pas de timeout connexion DB dans Prisma | `server/src/utils/prisma.ts` |
-| **B12** | Swagger desactive en production (OK) mais pas de protection staging | `server/src/app.ts:95-100` |
-| **B13** | Deploy script utilise `curl | sudo sh` pour Docker | `deploy.sh:25` |
+| **B8** | ~~Pas de healthcheck Nginx~~ **CORRIGE** — wget sur port 80 toutes les 30s | `docker-compose.yml` |
+| **B9** | ~~Graceful shutdown incomplet~~ **CORRIGE** — `closeAllConnections()` + timeout 30s pour streaming | `server/src/server.ts:29-50` |
+| **B10** | ~~Trust proxy hardcode~~ **CORRIGE** — Configurable via `TRUST_PROXY` env (defaut 1) | `server/src/app.ts:34` |
+| **B11** | ~~Pas de timeout DB~~ **CORRIGE** — `connect_timeout=10&pool_timeout=10` ajoute a l'URL Prisma | `server/src/utils/prisma.ts` |
+| **B12** | ~~Swagger accessible en staging~~ **CORRIGE** — Restreint a `NODE_ENV=development` uniquement | `server/src/app.ts:97-100` |
+| **B13** | ~~Deploy script curl\|sh~~ **CORRIGE** — Installation Docker via depot APT officiel signe | `deploy.sh:25-35` |
 
 ---
 

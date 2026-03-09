@@ -25,11 +25,13 @@ const server = app.listen(PORT, async () => {
   }
 });
 
-// Graceful shutdown — fermer proprement le serveur HTTP et la connexion Prisma (LOW-13)
+// Graceful shutdown — fermer proprement le serveur HTTP et la connexion Prisma (B9)
 function gracefulShutdown(signal: string) {
   logger.info(`${signal} reçu — arrêt gracieux en cours...`);
+
+  // Arrêter d'accepter de nouvelles connexions
   server.close(async () => {
-    logger.info("Serveur HTTP fermé");
+    logger.info("Serveur HTTP fermé — toutes les connexions terminées");
     try {
       await prisma.$disconnect();
       logger.info("Connexion Prisma fermée");
@@ -39,11 +41,14 @@ function gracefulShutdown(signal: string) {
     process.exit(0);
   });
 
-  // Forcer l'arrêt après 10 secondes si le serveur ne se ferme pas
+  // Couper les connexions keep-alive en cours pour accélérer le drain (B9)
+  server.closeAllConnections?.();
+
+  // Forcer l'arrêt après 30s pour les requêtes streaming longues
   setTimeout(() => {
-    logger.error("Arrêt forcé après timeout de 10s");
+    logger.error("Arrêt forcé après timeout de 30s");
     process.exit(1);
-  }, 10_000);
+  }, 30_000);
 }
 
 process.on("SIGTERM", () => gracefulShutdown("SIGTERM"));
