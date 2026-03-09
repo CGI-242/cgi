@@ -3,6 +3,7 @@ import { AuthRequest } from './auth';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
 import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 
 const logger = createLogger('RequireAdmin');
 
@@ -36,11 +37,14 @@ export async function requireAdmin(req: AuthRequest, res: Response, next: NextFu
     // Tentative refusee — logger + audit
     logger.warn(`Tentative d'acces admin refusee pour ${user.email} (role: ${user.role})`);
     AuditService.log({
+      actorId: user.id,
+      actorEmail: user.email,
+      actorRole: user.role,
       action: 'admin_access_denied',
-      userId: user.id,
-      targetType: 'user',
-      targetId: user.id,
-      details: { email: user.email, role: user.role, path: req.originalUrl },
+      entityType: 'user',
+      entityId: user.id,
+      ipAddress: getClientIp(req),
+      changes: { path: req.originalUrl },
     });
 
     res.status(403).json({ error: 'Acces refuse — droits administrateur requis' });
