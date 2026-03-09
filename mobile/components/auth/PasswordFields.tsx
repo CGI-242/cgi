@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -14,7 +15,7 @@ interface Props {
   colors: any;
 }
 
-export default function PasswordFields({
+export default memo(function PasswordFields({
   password,
   confirmPassword,
   showPassword,
@@ -77,4 +78,4 @@ export default function PasswordFields({
       </View>
     </View>
   );
-}
+});

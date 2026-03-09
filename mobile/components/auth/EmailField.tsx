@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { View, Text, TextInput } from "react-native";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
@@ -11,7 +12,7 @@ interface Props {
   colors: any;
 }
 
-export default function EmailField({ email, emailError, onChangeEmail, onBlur, colors }: Props) {
+export default memo(function EmailField({ email, emailError, onChangeEmail, onBlur, colors }: Props) {
   const { t } = useTranslation();
   const { isMobile } = useResponsive();
   const inputStyle = {
@@ -43,4 +44,4 @@ export default function EmailField({ email, emailError, onChangeEmail, onBlur, c
       ) : null}
     </>
   );
-}
+});

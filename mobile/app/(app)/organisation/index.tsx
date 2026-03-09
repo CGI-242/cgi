@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import {
   View,
   Text,
@@ -65,11 +65,19 @@ export default function OrganisationScreen() {
   const isOwner = currentUserRole === "OWNER";
   const isAdmin = currentUserRole === "ADMIN" || isOwner;
 
+  // AbortController pour annuler les requêtes en cours si le composant est démonté (P5)
+  const abortRef = useRef<AbortController | null>(null);
+
   const loadData = useCallback(async () => {
     if (!orgId) {
       setLoading(false);
       return;
     }
+    // Annuler la requête précédente si en cours
+    abortRef.current?.abort();
+    const controller = new AbortController();
+    abortRef.current = controller;
+
     setLoading(true);
     setError(null);
     try {
@@ -78,19 +86,22 @@ export default function OrganisationScreen() {
         organizationApi.getMembers(orgId),
         organizationApi.getInvitations(orgId),
       ]);
+      if (controller.signal.aborted) return;
       setOrg(orgData);
       setMembers(membersData);
       setInvitations(invData);
     } catch (err: unknown) {
+      if (controller.signal.aborted) return;
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
-      setLoading(false);
+      if (!controller.signal.aborted) setLoading(false);
     }
   }, [orgId]);
 
   useEffect(() => {
     loadData();
+    return () => { abortRef.current?.abort(); };
   }, [loadData]);
 
   const handleInvite = async () => {

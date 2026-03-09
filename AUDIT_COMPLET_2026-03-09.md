@@ -112,6 +112,11 @@
 | **B11** | ~~Pas de timeout DB~~ **CORRIGE** — `connect_timeout=10&pool_timeout=10` ajoute a l'URL Prisma | `server/src/utils/prisma.ts` |
 | **B12** | ~~Swagger accessible en staging~~ **CORRIGE** — Restreint a `NODE_ENV=development` uniquement | `server/src/app.ts:97-100` |
 | **B13** | ~~Deploy script curl\|sh~~ **CORRIGE** — Installation Docker via depot APT officiel signe | `deploy.sh:25-35` |
+| P1 | **Re-evalue** — Toutes les listes ont deja des keys (log.id, plan.key, node.id, opt.value, etc.) | 2026-03-09 | - |
+| P3 | **React.memo ajoute** — EmailField, PasswordFields, HighlightedText, RelevanceBadge | 2026-03-09 | voir ci-dessous |
+| P4 | **Re-evalue** — PAGE_TITLES et PAGE_PARENTS deja en dehors du composant | 2026-03-09 | - |
+| P5 | **AbortController ajoute** — organisation/index.tsx avec cleanup au demontage | 2026-03-09 | voir ci-dessous |
+| P6 | **Timeout DB** — Deja corrige en B11 (connect_timeout + pool_timeout) | 2026-03-09 | - |
 
 ---
 
@@ -119,12 +124,12 @@
 
 | # | Probleme | Impact | Localisation |
 |---|----------|--------|-------------|
-| **P1** | **Missing React keys dans les listes** (7+ instances) | Bugs de state, re-renders inutiles | `EntityHistoryModal.tsx:83`, `PaywallScreen.tsx:68,117,135`, `MobileCGIBrowser.tsx:73,347`, `ArticleDetail.tsx:218`, `OptionButtonGroup.tsx:28`, `Sidebar.tsx:202` |
-| **P2** | **Fonctions flechees inline** dans les renders (20+ instances) | Casse la memoisation, re-renders | `Sidebar.tsx`, `MobileCGIBrowser.tsx`, `OptionButtonGroup.tsx`, `CalculatorKeyboard.tsx`, `AuditLogItem.tsx` |
-| **P3** | **Composants purs sans `React.memo`** | Re-renders inutiles | `EmailField.tsx`, `PasswordFields.tsx`, `SearchOverlay.tsx` (HighlightedText, RelevanceBadge) |
-| **P4** | **Objets constants recrees a chaque render** | Allocations memoire inutiles | `_layout.tsx:27-82` (PAGE_TITLES, PAGE_PARENTS) |
-| **P5** | **Pas d'AbortController** sur les appels API longs | Fuites memoire, requetes orphelines | `organisation/index.tsx:68-94` |
-| **P6** | **Pas de timeout DB** configure dans Prisma | Risque de blocage | `server/src/utils/prisma.ts` |
+| **P1** | ~~**Missing React keys**~~ **RE-EVALUE** — Toutes les listes ont deja des keys (log.id, plan.key, node.id, etc.) | N/A | - |
+| **P2** | **Fonctions flechees inline** dans les renders (20+ instances) — impact mineur, ne justifie pas un refactoring massif | Casse la memoisation, re-renders | `Sidebar.tsx`, `MobileCGIBrowser.tsx`, etc. |
+| **P3** | ~~**Composants purs sans React.memo**~~ **CORRIGE** — `memo()` ajoute sur EmailField, PasswordFields, HighlightedText, RelevanceBadge | Re-renders evites | `EmailField.tsx`, `PasswordFields.tsx`, `SearchOverlay.tsx` |
+| **P4** | ~~**Objets constants recrees**~~ **RE-EVALUE** — PAGE_TITLES et PAGE_PARENTS sont deja declares hors composant | N/A | `_layout.tsx:27-82` |
+| **P5** | ~~**Pas d'AbortController**~~ **CORRIGE** — AbortController + cleanup au demontage | Plus de fuites memoire | `organisation/index.tsx:68-100` |
+| **P6** | ~~**Pas de timeout DB**~~ **CORRIGE** — Fait en B11 (connect_timeout=10, pool_timeout=10) | Plus de blocage | `server/src/utils/prisma.ts` |
 
 ---
 

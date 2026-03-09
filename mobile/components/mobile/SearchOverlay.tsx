@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo, memo } from "react";
 import {
   View,
   Text,
@@ -28,7 +28,7 @@ const QUICK_LINKS: { icon: keyof typeof Ionicons.glyphMap; labelKey: string; rou
   { icon: "calendar-outline", labelKey: "sidebar.calendrier", route: "/(app)/calendrier" },
 ];
 
-function HighlightedText({
+const HighlightedText = memo(function HighlightedText({
   text,
   words,
   style,
@@ -96,9 +96,9 @@ function HighlightedText({
       )}
     </Text>
   );
-}
+});
 
-function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
+const RelevanceBadge = memo(function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
   let label: string;
   let bg: string;
   let fg: string;
@@ -124,7 +124,7 @@ function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
       </Text>
     </View>
   );
-}
+});
 
 export default function SearchOverlay({ visible, onClose }: Props) {
   const { colors } = useTheme();
