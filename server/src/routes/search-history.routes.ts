@@ -6,6 +6,9 @@ import { requireAuth, AuthRequest } from "../middleware/auth";
 import { validate } from "../middleware/validate.middleware";
 import { searchHistoryQuery } from "../schemas/search-history.schema";
 import prisma from "../utils/prisma";
+import { createLogger } from "../utils/logger";
+
+const logger = createLogger("SearchHistoryRoutes");
 
 const router = Router();
 
@@ -57,7 +60,7 @@ router.get("/", requireAuth, validate({ query: searchHistoryQuery }), async (req
 
     res.json({ searches, total, page, limit });
   } catch (err) {
-    console.error("[search-history]", err);
+    logger.error("[search-history]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
@@ -93,7 +96,7 @@ router.get("/popular", requireAuth, async (req: AuthRequest, res: Response) => {
       })),
     });
   } catch (err) {
-    console.error("[search-history/popular]", err);
+    logger.error("[search-history/popular]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
@@ -119,7 +122,7 @@ router.delete("/", requireAuth, async (req: AuthRequest, res: Response) => {
 
     res.json({ message: "Historique supprimé", count });
   } catch (err) {
-    console.error("[search-history/delete]", err);
+    logger.error("[search-history/delete]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });

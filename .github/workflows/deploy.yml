@@ -58,6 +58,7 @@ jobs:
             SMTP_PASS=${{ secrets.SMTP_PASS }}
             SMTP_FROM=no-reply@normx-ai.com
             TURNSTILE_SECRET_KEY=${{ secrets.TURNSTILE_SECRET_KEY }}
+            MOBILE_API_SECRET=${{ secrets.MOBILE_API_SECRET }}
             ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}
             ENVEOF
 

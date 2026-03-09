@@ -4,6 +4,9 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import prisma from "../utils/prisma";
+import { createLogger } from "../utils/logger";
+
+const logger = createLogger("UserStatsRoutes");
 
 const router = Router();
 
@@ -86,7 +89,7 @@ router.get("/", requireAuth, async (req: AuthRequest, res: Response) => {
       last7Days,
     });
   } catch (err) {
-    console.error("[user/stats]", err);
+    logger.error("[user/stats]", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
