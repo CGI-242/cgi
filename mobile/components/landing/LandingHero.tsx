@@ -14,9 +14,9 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "22", label: "Pays" },
-    { value: "2 248", label: "Articles" },
-    { value: "14", label: "Simulateurs" },
+    { value: "14", label: "Pays" },
+    { value: "2 263", label: "Articles" },
+    { value: "15", label: "Simulateurs" },
     { value: "8", label: "Fonctionnalités" },
   ];
 
