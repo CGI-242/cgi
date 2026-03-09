@@ -14,7 +14,9 @@ export function validate(schemas: ValidationSchemas) {
         req.params = schemas.params.parse(req.params) as typeof req.params;
       }
       if (schemas.query) {
-        req.query = schemas.query.parse(req.query) as typeof req.query;
+        const parsed = schemas.query.parse(req.query) as typeof req.query;
+        Object.keys(req.query).forEach(k => delete req.query[k]);
+        Object.assign(req.query, parsed);
       }
       if (schemas.body) {
         req.body = schemas.body.parse(req.body);

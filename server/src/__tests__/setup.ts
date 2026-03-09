@@ -49,6 +49,33 @@ jest.mock("../services/audit.service", () => ({
   },
 }));
 
+// Mock subscription service
+jest.mock("../services/subscription.service", () => ({
+  getSubscription: jest.fn(),
+  activateSubscription: jest.fn(),
+  renewSubscription: jest.fn(),
+  upgradePlan: jest.fn(),
+  checkQuota: jest.fn(),
+}));
+
+// Mock MFA services (dépendent de modules crypto/QR)
+jest.mock("../services/mfa.service", () => ({
+  MFAService: {
+    generateSetup: jest.fn(),
+    enable: jest.fn(),
+    disable: jest.fn(),
+    verifyLogin: jest.fn(),
+    getStatus: jest.fn(),
+  },
+}));
+
+jest.mock("../services/mfa.backup.service", () => ({
+  MFABackupService: {
+    generateBackupCodes: jest.fn(),
+    verifyAndConsume: jest.fn(),
+  },
+}));
+
 // Mock Prisma Client global pour les tests
 jest.mock("../utils/prisma", () => {
   const mockPrisma: Record<string, unknown> = {
@@ -68,6 +95,8 @@ jest.mock("../utils/prisma", () => {
       create: jest.fn(),
       findFirst: jest.fn(),
       findMany: jest.fn(),
+      findUnique: jest.fn(),
+      count: jest.fn(),
     },
     subscription: {
       create: jest.fn(),

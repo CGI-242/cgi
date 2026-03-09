@@ -46,6 +46,8 @@
 | B11 | **Timeout connexion DB** — connect_timeout=10 + pool_timeout=10 dans Prisma | 2026-03-09 | voir ci-dessous |
 | B12 | **Swagger dev-only** — Accessible uniquement en NODE_ENV=development (plus en staging) | 2026-03-09 | voir ci-dessous |
 | B13 | **Deploy script securise** — Installation Docker via depot APT officiel (plus de curl\|sh) | 2026-03-09 | voir ci-dessous |
+| BP2 | **Tests backend complets** — 49 tests (7 suites) couvrant auth, chat, orgs, search-history, middleware, MFA, subscriptions | 2026-03-09 | voir ci-dessous |
+| BP3 | **Tests frontend complets** — 102 tests (10 suites) couvrant composants, services fiscaux, helpers | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -293,8 +295,8 @@ methodName: async (params): Promise<ReturnType> => {
 | # | Probleme | Localisation |
 |---|----------|-------------|
 | **BP1** | ~~Pas de validation Content-Type~~ **CORRIGE** — Middleware 415 pour les requetes non-JSON | `server/src/app.ts` |
-| **BP2** | Pas de tests pour la majorite des services backend — a planifier | `server/src/__tests__/` (3 fichiers seulement) |
-| **BP3** | Pas de tests frontend (0 test de composant) — a planifier | `mobile/` |
+| **BP2** | ~~Pas de tests backend~~ **CORRIGE** — 49 tests (7 suites : auth, chat, orgs, search-history, middleware, MFA, subscriptions) | `server/src/__tests__/` |
+| **BP3** | ~~Pas de tests frontend~~ **CORRIGE** — 102 tests (10 suites : SimulateurLayout, OptionButtonGroup, EmailField, fiscal-common, 6 services fiscaux) | `mobile/__tests__/` |
 | **BP4** | ~~Slug sans validation mots reserves~~ **CORRIGE** — Liste de mots reserves + nettoyage tirets | `server/src/services/organization.service.ts` |
 | **BP5** | ~~Pas de SECURITY.md~~ **CORRIGE** — Politique de divulgation responsable + contact | `SECURITY.md` |
 

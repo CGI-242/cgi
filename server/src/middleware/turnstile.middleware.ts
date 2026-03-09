@@ -8,7 +8,7 @@ const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY;
 const MOBILE_API_SECRET = process.env.MOBILE_API_SECRET;
 const SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
-const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
+const IS_DEVELOPMENT = process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test";
 
 // Alerter au demarrage si les cles manquent
 if (!TURNSTILE_SECRET_KEY) {

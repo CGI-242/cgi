@@ -27,6 +27,7 @@ describe("Chat Routes", () => {
 
     it("devrait retourner 400 sans contenu", async () => {
       const token = createAuthToken();
+      mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1" });
 
       const res = await request(app)
         .post("/api/chat/message/stream")

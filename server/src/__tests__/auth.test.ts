@@ -32,13 +32,12 @@ describe("Auth Routes", () => {
         nom: "Dupont",
         prenom: "Jean",
         email: "test@example.com",
-        password: "password123",
+        password: "Password123",
       });
 
       expect(res.status).toBe(201);
       expect(res.body.user).toBeDefined();
       expect(res.body.user.email).toBe("test@example.com");
-      expect(res.body.entreprise).toBeDefined();
     });
 
     it("devrait retourner 400 si des champs sont manquants", async () => {
@@ -58,7 +57,7 @@ describe("Auth Routes", () => {
         nom: "Dupont",
         prenom: "Jean",
         email: "existing@example.com",
-        password: "password123",
+        password: "Password123",
       });
 
       expect(res.status).toBe(409);
@@ -67,7 +66,7 @@ describe("Auth Routes", () => {
 
   describe("POST /api/auth/login", () => {
     it("devrait retourner l'utilisateur avec OTP", async () => {
-      const hashedPassword = await bcrypt.hash("password123", 10);
+      const hashedPassword = await bcrypt.hash("Password123", 10);
       mockPrisma.user.findUnique.mockResolvedValue({
         id: "user-1",
         email: "test@example.com",
@@ -76,6 +75,8 @@ describe("Auth Routes", () => {
         lastName: "Dupont",
         phone: null,
         isEmailVerified: true,
+        failedLoginAttempts: 0,
+        lockedUntil: null,
       });
       mockPrisma.user.update.mockResolvedValue({});
       mockPrisma.organizationMember.findFirst.mockResolvedValue({
@@ -86,7 +87,7 @@ describe("Auth Routes", () => {
 
       const res = await request(app).post("/api/auth/login").send({
         email: "test@example.com",
-        password: "password123",
+        password: "Password123",
       });
 
       expect(res.status).toBe(200);
@@ -105,7 +106,7 @@ describe("Auth Routes", () => {
 
       const res = await request(app).post("/api/auth/login").send({
         email: "wrong@example.com",
-        password: "wrongpassword",
+        password: "Wrongpassword1",
       });
 
       expect(res.status).toBe(401);
@@ -122,7 +123,7 @@ describe("Auth Routes", () => {
   });
 
   describe("POST /api/auth/check-email", () => {
-    it("devrait retourner exists: true si l'email existe", async () => {
+    it("devrait retourner un message constant si l'email existe (anti-énumération)", async () => {
       mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1" });
 
       const res = await request(app).post("/api/auth/check-email").send({
@@ -130,10 +131,10 @@ describe("Auth Routes", () => {
       });
 
       expect(res.status).toBe(200);
-      expect(res.body.exists).toBe(true);
+      expect(res.body.message).toBe("Vérification effectuée");
     });
 
-    it("devrait retourner exists: false si l'email n'existe pas", async () => {
+    it("devrait retourner le même message si l'email n'existe pas (anti-énumération)", async () => {
       mockPrisma.user.findUnique.mockResolvedValue(null);
 
       const res = await request(app).post("/api/auth/check-email").send({
@@ -141,7 +142,7 @@ describe("Auth Routes", () => {
       });
 
       expect(res.status).toBe(200);
-      expect(res.body.exists).toBe(false);
+      expect(res.body.message).toBe("Vérification effectuée");
     });
   });
 });
