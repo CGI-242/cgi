@@ -9,11 +9,14 @@ const logger = createLogger('MFAService');
 
 const MFA_ISSUER = 'CGI-242';
 
-if (!process.env.MFA_ENCRYPTION_KEY && !process.env.JWT_SECRET) {
-  throw new Error("FATAL: MFA_ENCRYPTION_KEY or JWT_SECRET must be defined.");
-}
 if (!process.env.MFA_ENCRYPTION_KEY) {
-  logger.warn("MFA_ENCRYPTION_KEY non définie, fallback sur JWT_SECRET. Définissez MFA_ENCRYPTION_KEY en production.");
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error("FATAL: MFA_ENCRYPTION_KEY est obligatoire en production. Générez-la avec : node -e \"console.log(require('crypto').randomBytes(48).toString('base64url'))\"");
+  }
+  if (!process.env.JWT_SECRET) {
+    throw new Error("FATAL: MFA_ENCRYPTION_KEY ou JWT_SECRET doit être définie.");
+  }
+  logger.warn("MFA_ENCRYPTION_KEY non définie, fallback sur JWT_SECRET (dev uniquement).");
 }
 const ENCRYPTION_KEY = process.env.MFA_ENCRYPTION_KEY || process.env.JWT_SECRET!;
 

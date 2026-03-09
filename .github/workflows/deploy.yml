@@ -1,0 +1,95 @@
+# ==========================================
+# CGI-242 — Deploiement automatique via GitHub Actions
+# ==========================================
+# Les secrets sont injectes depuis GitHub Secrets
+# -> Aucun fichier .env sur le VPS
+# ==========================================
+
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  VPS_HOST: 51.83.75.203
+  VPS_USER: ubuntu
+  APP_DIR: /opt/cgi242
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ env.VPS_HOST }}
+          username: ${{ env.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            set -e
+            cd ${{ env.APP_DIR }}
+
+            # Pull latest code
+            git pull origin main
+
+            # --- Generer server/.env.production depuis GitHub Secrets ---
+            cat > server/.env.production << 'ENVEOF'
+            NODE_ENV=production
+            PORT=3003
+            DATABASE_URL=${{ secrets.DATABASE_URL }}
+            JWT_SECRET=${{ secrets.JWT_SECRET }}
+            JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}
+            JWT_EXPIRES_IN=15m
+            JWT_REFRESH_EXPIRES_IN=7d
+            MFA_ENCRYPTION_KEY=${{ secrets.MFA_ENCRYPTION_KEY }}
+            ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+            VOYAGE_API_KEY=${{ secrets.VOYAGE_API_KEY }}
+            FRONTEND_URL=https://cgi242.normx-ai.com
+            CORS_ORIGIN=https://cgi242.normx-ai.com
+            QDRANT_URL=http://qdrant:6333
+            SMTP_HOST=${{ secrets.SMTP_HOST }}
+            SMTP_PORT=465
+            SMTP_USER=${{ secrets.SMTP_USER }}
+            SMTP_PASS=${{ secrets.SMTP_PASS }}
+            SMTP_FROM=no-reply@normx-ai.com
+            TURNSTILE_SECRET_KEY=${{ secrets.TURNSTILE_SECRET_KEY }}
+            ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}
+            ENVEOF
+
+            # Securiser les permissions du fichier
+            chmod 600 server/.env.production
+
+            # --- Generer .env (Docker Compose) ---
+            cat > .env << 'ENVEOF'
+            POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+            ENVEOF
+            chmod 600 .env
+
+            # --- Generer mobile/.env ---
+            cat > mobile/.env << 'ENVEOF'
+            EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api
+            EXPO_PUBLIC_SENTRY_DSN=${{ secrets.SENTRY_DSN }}
+            EXPO_PUBLIC_TURNSTILE_SITE_KEY=${{ secrets.TURNSTILE_SITE_KEY }}
+            ENVEOF
+
+            # --- Build frontend web ---
+            cd mobile && npm ci && npm run build:web && cd ..
+
+            # --- Copier le build dans nginx ---
+            rm -rf nginx/dist
+            cp -r mobile/dist nginx/dist
+
+            # --- Rebuild et restart ---
+            docker compose build --no-cache api nginx
+            docker compose up -d
+
+            # --- Verifier la sante ---
+            sleep 10
+            curl -sf http://localhost:3003/health || echo "WARN: Health check failed"
+
+            echo "Deploiement termine avec succes"
