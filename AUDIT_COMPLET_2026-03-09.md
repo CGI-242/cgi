@@ -1,7 +1,25 @@
 # Audit Complet du Projet CGI-242
 
 **Date** : 9 mars 2026
+**Mise a jour** : 9 mars 2026
 **Portee** : Securite, cybersecurite, performance, duplication, bonnes pratiques, qualite de code, taille de fichiers
+
+---
+
+## CORRECTIONS REALISEES
+
+| # | Correction | Date | Commit |
+|---|-----------|------|--------|
+| C1 | **Gestion des secrets migrée vers GitHub Secrets** — 15 secrets configures dans GitHub, workflow CI/CD genere les `.env` a la volee sur le VPS, plus aucun secret en clair dans le repo | 2026-03-09 | `a933edb` |
+| M3 | **MFA_ENCRYPTION_KEY separee du JWT_SECRET** — Cle dediee obligatoire en production, fallback JWT_SECRET en dev uniquement | 2026-03-09 | `a933edb` |
+| BP6 | **Pipeline CI/CD mis en place** — `.github/workflows/deploy.yml` deploie automatiquement sur push vers main via SSH + GitHub Secrets | 2026-03-09 | `a933edb` |
+| - | **`.gitignore` renforce** — Pattern `.env.*` avec exception `!.env.example` | 2026-03-09 | `a933edb` |
+| - | **Script `setup-github-secrets.sh`** — Configuration interactive des 15 secrets GitHub | 2026-03-09 | `a933edb` |
+| - | **Cle SSH dediee au deploiement** — `cgi242-deploy` (ed25519) installee sur le VPS | 2026-03-09 | - |
+| C2 | **CSP strict sans unsafe-inline/unsafe-eval** — Hash SHA-256 pour style Expo, Cloudflare autorise par domaine explicite | 2026-03-09 | `61762ae` |
+| M4 | **X-Frame-Options: DENY ajoute** — Protection clickjacking via `security-headers.conf` partage | 2026-03-09 | voir ci-dessous |
+| B7 | **Permissions-Policy ajoute** — `camera=(), microphone=(), geolocation=()` | 2026-03-09 | voir ci-dessous |
+| - | **Security headers Nginx corriges** — `include security-headers.conf` dans chaque bloc `location` pour eviter l'ecrasement des headers | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -22,8 +40,8 @@
 
 | # | Probleme | Localisation |
 |---|----------|-------------|
-| **C1** | **Secrets exposes dans les fichiers .env** — Cles API Anthropic, Voyage, SMTP, Turnstile, JWT hardcodes. Les `.env` ne sont PAS trackes dans git (seulement `.env.example`), mais les fichiers `.env` et `.env.production` sur le serveur contiennent des secrets en clair | `server/.env`, `server/.env.production` |
-| **C2** | **CSP trop permissive** — `'unsafe-inline'` et `'unsafe-eval'` autorises dans les scripts, annulant la protection XSS | `nginx/conf.d/api.conf:33`, `server/src/app.ts:49-56` |
+| **C1** | ~~**Secrets exposes dans les fichiers .env**~~ **CORRIGE** — Secrets migres vers GitHub Secrets + workflow CI/CD genere les `.env` a la volee sur le VPS (chmod 600). Plus aucun secret en clair dans le repo. | `server/.env`, `server/.env.production` |
+| **C2** | ~~**CSP trop permissive**~~ **CORRIGE** — `unsafe-inline` et `unsafe-eval` supprimes. Hash SHA-256 pour le style Expo. Headers de securite partages via `include` dans tous les blocs `location`. Ajout `X-Frame-Options: DENY` (M4) et `Permissions-Policy` (B7). | `nginx/conf.d/api.conf`, `nginx/conf.d/security-headers.conf`, `server/src/app.ts:47-59` |
 | **C3** | **Turnstile CAPTCHA fail-open** en dev/staging — Si `NODE_ENV !== "production"`, le CAPTCHA est contournable | `server/src/middleware/turnstile.middleware.ts:48-55` |
 
 ### 1.2 HAUTE SEVERITE
@@ -43,8 +61,8 @@
 |---|----------|-------------|
 | **M1** | Race condition sur le refresh token replay | `server/src/routes/auth.ts:691-700` |
 | **M2** | Secret MFA retourne en clair avant verification | `server/src/services/mfa.service.ts:67-100` |
-| **M3** | MFA chiffre avec le meme secret que JWT | `server/src/services/mfa.service.ts:12-18` |
-| **M4** | Header `X-Frame-Options` manquant (clickjacking) | `nginx/conf.d/api.conf` |
+| **M3** | ~~MFA chiffre avec le meme secret que JWT~~ **CORRIGE** — `MFA_ENCRYPTION_KEY` dediee, obligatoire en production | `server/src/services/mfa.service.ts:12-20` |
+| **M4** | ~~Header `X-Frame-Options` manquant (clickjacking)~~ **CORRIGE** — `X-Frame-Options: DENY` ajoute via `security-headers.conf` | `nginx/conf.d/security-headers.conf` |
 | **M5** | Pas de timeout proxy dans Nginx (slowloris) | `nginx/conf.d/api.conf:39-61` |
 | **M6** | Pas de limite de ressources Docker | `docker-compose.yml` |
 | **M7** | Rate limiting trop permissif (30r/s burst 50) | `nginx/nginx.conf:31` |
@@ -61,7 +79,7 @@
 | **B4** | Pas de logging Docker max-size (risque saturation disque) | `docker-compose.yml` |
 | **B5** | Filesystem read-write dans les containers | `docker-compose.yml` |
 | **B6** | HTTP logging peut exposer des query parameters | `server/src/app.ts:80-87` |
-| **B7** | Pas de `Permissions-Policy` header | `nginx/conf.d/api.conf` |
+| **B7** | ~~Pas de `Permissions-Policy` header~~ **CORRIGE** — `Permissions-Policy: camera=(), microphone=(), geolocation=()` ajoute | `nginx/conf.d/security-headers.conf` |
 | **B8** | Pas de healthcheck Nginx dans Docker | `docker-compose.yml:58-74` |
 | **B9** | Graceful shutdown ne gere pas les requetes longues (streaming) | `server/src/server.ts:29-47` |
 | **B10** | Trust proxy hardcode a 1 | `server/src/app.ts:34` |
@@ -323,10 +341,10 @@ methodName: async (params): Promise<ReturnType> => {
 
 ### 7.1 Immediat (cette semaine)
 
-1. **Rotater tous les secrets** exposes dans les .env (Anthropic, Voyage, SMTP, Turnstile, JWT)
-2. **Supprimer `unsafe-inline`/`unsafe-eval`** du CSP — utiliser des nonces
+1. ~~**Rotater tous les secrets** exposes dans les .env~~ **FAIT** — Secrets migres vers GitHub Secrets (15/15), CI/CD genere les `.env` a la volee
+2. ~~**Supprimer `unsafe-inline`/`unsafe-eval`** du CSP~~ **FAIT** — Hash SHA-256 pour style Expo, plus aucun unsafe-*
 3. **Ajouter `USER node`/`USER nginx`** dans les Dockerfiles
-4. **Ajouter `X-Frame-Options: DENY`** dans Nginx
+4. ~~**Ajouter `X-Frame-Options: DENY`** dans Nginx~~ **FAIT** — Via `security-headers.conf`
 5. **Deplacer les tokens vers httpOnly cookies** (supprimer sessionStorage)
 
 ### 7.2 Court terme (1-2 semaines)
@@ -335,8 +353,8 @@ methodName: async (params): Promise<ReturnType> => {
 7. Ajouter les `key` props manquants dans les listes React (7+ corrections)
 8. Creer `asyncHandler()` pour les routes backend
 9. Ajouter des timeouts proxy Nginx et des limites de ressources Docker
-10. Separer la cle de chiffrement MFA du JWT secret
-11. Ajouter `Permissions-Policy` et renforcer Helmet
+10. ~~Separer la cle de chiffrement MFA du JWT secret~~ **FAIT** — `MFA_ENCRYPTION_KEY` dediee, obligatoire en production
+11. ~~Ajouter `Permissions-Policy` et renforcer Helmet~~ **FAIT** — `Permissions-Policy` + Helmet CSP strict
 
 ### 7.3 Moyen terme (1 mois)
 
@@ -349,22 +367,24 @@ methodName: async (params): Promise<ReturnType> => {
 
 ### 7.4 Long terme (2-3 mois)
 
-18. Implementer un systeme de gestion de secrets (Vault, AWS Secrets Manager)
+18. ~~Implementer un systeme de gestion de secrets~~ **FAIT** — GitHub Secrets + workflow CI/CD
 19. Ajouter des tests d'integration et de penetration
-20. Mettre en place un pipeline CI/CD avec scan de securite automatique
+20. ~~Mettre en place un pipeline CI/CD avec scan de securite automatique~~ **FAIT** — `.github/workflows/deploy.yml` (ajouter scan securite en complement)
 21. Documenter l'architecture et creer `SECURITY.md`
 
 ---
 
 ## Resume des vulnerabilites
 
-| Severite | Nombre | Exemples cles |
-|----------|--------|---------------|
-| **CRITIQUE** | 3 | Secrets en clair, CSP unsafe-inline, Turnstile bypass |
-| **HAUTE** | 6 | Docker root, sessionStorage tokens, brute force, admin email, SSL faible |
-| **MOYENNE** | 9 | Replay token, MFA clair, X-Frame-Options, rate limiting, pagination |
-| **BASSE** | 13 | Health check, audit async, logging, Docker limits |
-| **TOTAL** | **31** | |
+| Severite | Total | Corrigees | Restantes | Exemples cles |
+|----------|-------|-----------|-----------|---------------|
+| **CRITIQUE** | 3 | 2 (C1, C2) | 1 | ~~Secrets en clair~~, ~~CSP unsafe-inline~~, Turnstile bypass |
+| **HAUTE** | 6 | 0 | 6 | Docker root, sessionStorage tokens, brute force, admin email, SSL faible |
+| **MOYENNE** | 9 | 2 (M3, M4) | 7 | Replay token, ~~MFA clair~~, ~~X-Frame-Options~~, rate limiting, pagination |
+| **BASSE** | 13 | 1 (B7) | 12 | Health check, audit async, logging, Docker limits, ~~Permissions-Policy~~ |
+| **TOTAL** | **31** | **5** | **26** | |
+
+**Progres global : 5/31 vulnerabilites corrigees (16%) + CI/CD + cle SSH dediee + security headers Nginx**
 
 | Categorie qualite | Nombre |
 |--------------------|--------|
