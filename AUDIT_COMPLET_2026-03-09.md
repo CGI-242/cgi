@@ -20,6 +20,7 @@
 | M4 | **X-Frame-Options: DENY ajoute** — Protection clickjacking via `security-headers.conf` partage | 2026-03-09 | voir ci-dessous |
 | B7 | **Permissions-Policy ajoute** — `camera=(), microphone=(), geolocation=()` | 2026-03-09 | voir ci-dessous |
 | - | **Security headers Nginx corriges** — `include security-headers.conf` dans chaque bloc `location` pour eviter l'ecrasement des headers | 2026-03-09 | voir ci-dessous |
+| C3 | **Turnstile CAPTCHA fail-closed** — Bypass `X-Platform: mobile` supprime, fail-closed sauf dev, timeout 5s, logging | 2026-03-09 | voir ci-dessous |
 
 ---
 
@@ -42,7 +43,7 @@
 |---|----------|-------------|
 | **C1** | ~~**Secrets exposes dans les fichiers .env**~~ **CORRIGE** — Secrets migres vers GitHub Secrets + workflow CI/CD genere les `.env` a la volee sur le VPS (chmod 600). Plus aucun secret en clair dans le repo. | `server/.env`, `server/.env.production` |
 | **C2** | ~~**CSP trop permissive**~~ **CORRIGE** — `unsafe-inline` et `unsafe-eval` supprimes. Hash SHA-256 pour le style Expo. Headers de securite partages via `include` dans tous les blocs `location`. Ajout `X-Frame-Options: DENY` (M4) et `Permissions-Policy` (B7). | `nginx/conf.d/api.conf`, `nginx/conf.d/security-headers.conf`, `server/src/app.ts:47-59` |
-| **C3** | **Turnstile CAPTCHA fail-open** en dev/staging — Si `NODE_ENV !== "production"`, le CAPTCHA est contournable | `server/src/middleware/turnstile.middleware.ts:48-55` |
+| **C3** | ~~**Turnstile CAPTCHA fail-open**~~ **CORRIGE** — Bypass `X-Platform: mobile` supprime, fail-closed partout sauf `NODE_ENV=development`, timeout 5s, logging des echecs | `server/src/middleware/turnstile.middleware.ts` |
 
 ### 1.2 HAUTE SEVERITE
 
@@ -378,13 +379,13 @@ methodName: async (params): Promise<ReturnType> => {
 
 | Severite | Total | Corrigees | Restantes | Exemples cles |
 |----------|-------|-----------|-----------|---------------|
-| **CRITIQUE** | 3 | 2 (C1, C2) | 1 | ~~Secrets en clair~~, ~~CSP unsafe-inline~~, Turnstile bypass |
+| **CRITIQUE** | 3 | 3 (C1, C2, C3) | 0 | ~~Secrets en clair~~, ~~CSP unsafe-inline~~, ~~Turnstile bypass~~ |
 | **HAUTE** | 6 | 0 | 6 | Docker root, sessionStorage tokens, brute force, admin email, SSL faible |
 | **MOYENNE** | 9 | 2 (M3, M4) | 7 | Replay token, ~~MFA clair~~, ~~X-Frame-Options~~, rate limiting, pagination |
 | **BASSE** | 13 | 1 (B7) | 12 | Health check, audit async, logging, Docker limits, ~~Permissions-Policy~~ |
 | **TOTAL** | **31** | **5** | **26** | |
 
-**Progres global : 5/31 vulnerabilites corrigees (16%) + CI/CD + cle SSH dediee + security headers Nginx**
+**Progres global : 6/31 vulnerabilites corrigees (19%) — 0 critique restante + CI/CD + cle SSH dediee**
 
 | Categorie qualite | Nombre |
 |--------------------|--------|

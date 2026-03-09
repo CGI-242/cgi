@@ -5,18 +5,28 @@ const logger = createLogger("TurnstileMiddleware");
 
 const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY;
 const SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+const IS_PRODUCTION = process.env.NODE_ENV === "production";
+const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
+
+// Alerter au demarrage si la cle Turnstile manque
+if (!TURNSTILE_SECRET_KEY) {
+  if (IS_PRODUCTION) {
+    logger.error("TURNSTILE_SECRET_KEY manquante en production — CAPTCHA desactive, risque de brute force !");
+  } else {
+    logger.warn("TURNSTILE_SECRET_KEY non configuree — CAPTCHA desactive (dev uniquement).");
+  }
+}
 
 export async function verifyTurnstile(req: Request, res: Response, next: NextFunction): Promise<void> {
-  // Pas de clé configurée → skip (environnement dev sans Turnstile)
+  // Pas de cle configuree
   if (!TURNSTILE_SECRET_KEY) {
-    next();
-    return;
-  }
-
-  // Turnstile est web-only — sur mobile natif, on skip
-  if (req.headers["x-platform"] === "mobile") {
-    delete req.body.turnstileToken;
-    next();
+    if (IS_DEVELOPMENT) {
+      // En dev strict uniquement, on laisse passer
+      next();
+      return;
+    }
+    // En production ou staging, bloquer si pas de cle
+    res.status(503).json({ error: "Service CAPTCHA non configure" });
     return;
   }
 
@@ -28,6 +38,9 @@ export async function verifyTurnstile(req: Request, res: Response, next: NextFun
   }
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
     const response = await fetch(SITEVERIFY_URL, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -36,25 +49,26 @@ export async function verifyTurnstile(req: Request, res: Response, next: NextFun
         response: token,
         remoteip: req.ip || "",
       }),
+      signal: controller.signal,
     });
 
-    const result = (await response.json()) as { success: boolean };
+    clearTimeout(timeout);
+
+    const result = (await response.json()) as { success: boolean; "error-codes"?: string[] };
 
     if (!result.success) {
+      logger.warn(`CAPTCHA echoue — IP: ${req.ip}, errors: ${result["error-codes"]?.join(", ") || "aucune"}`);
       res.status(403).json({ error: "Verification CAPTCHA echouee" });
       return;
     }
   } catch (err) {
-    // Fail-closed en production : si Cloudflare est injoignable, on bloque (CRIT-03)
-    logger.error("Erreur lors de la verification Turnstile", err);
-    if (process.env.NODE_ENV === "production") {
-      res.status(503).json({ error: "Service de vérification indisponible, réessayez" });
-      return;
-    }
-    // En dev/test, on laisse passer pour ne pas bloquer le développement
+    // Fail-closed : si Cloudflare est injoignable, on bloque toujours
+    logger.error("Verification Turnstile impossible — requete bloquee", err);
+    res.status(503).json({ error: "Service de verification indisponible, reessayez" });
+    return;
   }
 
-  // Supprimer le token du body après vérification
+  // Supprimer le token du body apres verification
   delete req.body.turnstileToken;
   next();
 }
