@@ -141,10 +141,10 @@
 
 | Categorie | Fichiers | Lignes dupliquees | Priorite |
 |-----------|----------|-------------------|----------|
-| **Pages Simulateur** — **EN COURS** `SimulateurLayout.tsx` cree, applique sur tva.tsx et its.tsx | 16 fichiers | ~2 400-3 200 lignes | **HAUTE** |
+| **Pages Simulateur** — ~~**HAUTE**~~ **CORRIGE** `SimulateurLayout.tsx` applique sur les 14 pages (tva, its, is, patente, ircm, cession-parts, enregistrement, iba, igf, irf-loyers, paie, contribution-fonciere, solde-liquidation, retenue-source) | 16 fichiers | ~2 400-3 200 lignes | **FAIT** |
 | **Article-Metadata** (structures similaires, interfaces inconsistantes) | 9 fichiers | ~5 641 lignes | **HAUTE** |
 | **Keyword-Mappings** (meme structure, donnees differentes) | 9 fichiers | ~3 699 lignes | **HAUTE** |
-| **Routes Backend** — **EN COURS** `asyncHandler()` cree, applique sur 3 fichiers (6 try/catch) | 15 fichiers | ~800-1 200 lignes | MOYENNE |
+| **Routes Backend** — ~~**MOYENNE**~~ **CORRIGE** `asyncHandler()` applique sur 7 fichiers (23 try/catch supprimes). subscription.routes conserve (error handling custom) | 15 fichiers | ~800-1 200 lignes | **FAIT** |
 | **Clients API** (boilerplate get/post identique) | 13 fichiers | ~455-585 lignes | MOYENNE |
 | **Pages Auth** (layout, styles, validation similaires) | 5 fichiers | ~300-400 lignes | MOYENNE |
 | **Total estime** | | **~13 000-15 000 lignes** | |

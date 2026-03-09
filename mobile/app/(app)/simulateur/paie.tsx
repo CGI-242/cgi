@@ -1,6 +1,5 @@
 import { useState, useMemo, useCallback } from "react";
-import { View, Text, TouchableOpacity, ScrollView, Switch, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { View, Text, TouchableOpacity, Switch, StyleSheet } from "react-native";
 import {
   calculerPaie,
   calculerAvantagesForfaitaires,
@@ -15,12 +14,10 @@ import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import NumberField from "@/components/simulateur/NumberField";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const RUBRIQUES_VIDES: RubriquesInput = {
   salaireBase: 0, primesImposables: 0, heuresSup: 0, congesAnnuels: 0,
@@ -36,7 +33,6 @@ function parseField(v: string): number {
 export default function PaieScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
 
   // --- État saisie ---
   const [profil, setProfil] = useState<ProfilSalarie>("national");
@@ -143,18 +139,14 @@ export default function PaieScreen() {
   ];
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        {/* --- COLONNE GAUCHE : Saisie --- */}
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.paie.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText13, { color: colors.text }]}>{t("simulateur.paie.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.paie.title")}
+      description={t("simulateur.paie.description")}
+      legalRef={t("simulateur.paie.legalRef")}
+      emptyMessage={t("simulateur.paie.enterSalary")}
+      hasResult={!!result}
+      inputSection={
+        <>
           {/* Profil salarié */}
           <Text style={[styles.label13, { color: colors.textSecondary }]}>{t("simulateur.paie.profil")}</Text>
           <OptionButtonGroup options={PROFILS} selected={profil} onChange={setProfil} fontSize={13} />
@@ -233,97 +225,57 @@ export default function PaieScreen() {
             <Text style={[styles.toggleLabel, { color: colors.primary }]}>{t("simulateur.paie.moisJanvier")}</Text>
             <Switch value={moisJanvier} onValueChange={setMoisJanvier} trackColor={{ false: colors.border, true: colors.primary }} />
           </View>
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            {/* Bases de calcul */}
+            <SimulateurSection label={t("simulateur.paie.sectionBases")} />
+            <TableRow label={t("simulateur.paie.baseBrut")} value={formatNumber(result.salaireBrutTotal)} bold />
+            <TableRow label={t("simulateur.paie.brutTaxable")} value={formatNumber(result.salaireBrutTotal - result.cnssSalarieMensuel)} bg={colors.background} />
+            <TableRow label={t("simulateur.paie.baseITS")} value={formatNumber(result.baseITS)} />
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.paie.legalRef")}</Text>
-        </ScrollView>
+            {/* Retenues salarié */}
+            <SimulateurSection label={t("simulateur.paie.sectionRetenues")} />
+            <TableRow label={t("simulateur.paie.cnssSalarie")} value={`- ${formatNumber(result.cnssSalarieMensuel)}`} color={colors.danger} />
+            <TableRow
+              label={result.modeCalculIts === "bareme" ? t("simulateur.paie.itsLabel") : t("simulateur.paie.itsForfaitaire")}
+              value={`- ${formatNumber(result.itsMensuel)}`}
+              bg={colors.background}
+              color={colors.danger}
+            />
+            <TableRow label={t("simulateur.paie.tolLabel")} value={`- ${formatNumber(result.tolMensuel)}`} color={colors.danger} />
+            <TableRow label={t("simulateur.paie.camuLabel")} value={`- ${formatNumber(result.camuMensuel)}`} color={colors.danger} />
+            <TableRow label={t("simulateur.paie.taxeRegionale")} value={`- ${formatNumber(result.taxeRegionale)}`} bg={colors.background} color={colors.danger} />
 
-        {/* --- COLONNE DROITE : Résultats --- */}
-        <ScrollView
-          style={[
-            { width: isMobile ? "100%" : "50%" },
-            isMobile
-              ? { borderTopWidth: 1, borderTopColor: colors.border }
-              : { borderLeftWidth: 1, borderLeftColor: colors.border },
-          ]}
-          contentContainerStyle={styles.resultScrollContent}
-        >
-          {result ? (
-            <View>
-              {/* Bases de calcul */}
-              <SimulateurSection label={t("simulateur.paie.sectionBases")} />
-              <TableRow label={t("simulateur.paie.baseBrut")} value={formatNumber(result.salaireBrutTotal)} bold />
-              <TableRow label={t("simulateur.paie.brutTaxable")} value={formatNumber(result.salaireBrutTotal - result.cnssSalarieMensuel)} bg={colors.background} />
-              <TableRow label={t("simulateur.paie.baseITS")} value={formatNumber(result.baseITS)} />
+            <ResultHighlight label={t("simulateur.paie.totalRetenues")} value={formatNumber(result.totalRetenuesSalarie)} variant="danger" />
+            <ResultHighlight label={t("simulateur.paie.salaireNet")} value={formatNumber(result.salaireNetMensuel)} variant="success" />
 
-              {/* Retenues salarié */}
-              <SimulateurSection label={t("simulateur.paie.sectionRetenues")} />
-              <TableRow label={t("simulateur.paie.cnssSalarie")} value={`- ${formatNumber(result.cnssSalarieMensuel)}`} color={colors.danger} />
-              <TableRow
-                label={result.modeCalculIts === "bareme" ? t("simulateur.paie.itsLabel") : t("simulateur.paie.itsForfaitaire")}
-                value={`- ${formatNumber(result.itsMensuel)}`}
-                bg={colors.background}
-                color={colors.danger}
-              />
-              <TableRow label={t("simulateur.paie.tolLabel")} value={`- ${formatNumber(result.tolMensuel)}`} color={colors.danger} />
-              <TableRow label={t("simulateur.paie.camuLabel")} value={`- ${formatNumber(result.camuMensuel)}`} color={colors.danger} />
-              <TableRow label={t("simulateur.paie.taxeRegionale")} value={`- ${formatNumber(result.taxeRegionale)}`} bg={colors.background} color={colors.danger} />
+            {/* Charges patronales */}
+            <SimulateurSection label={t("simulateur.paie.sectionPatronales")} />
+            <TableRow label={t("simulateur.paie.cnssVieillesse")} value={formatNumber(result.cnssVieillessePatronale)} />
+            <TableRow label={t("simulateur.paie.cnssAF")} value={formatNumber(result.cnssAFPatronale)} bg={colors.background} />
+            <TableRow label={t("simulateur.paie.cnssPF")} value={formatNumber(result.cnssPFPatronale)} />
+            <TableRow label={`${t("simulateur.paie.tusLabel")} (${result.tauxTUS * 100}%)`} value={formatNumber(result.tusMensuel)} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.paie.totalPatronales")} value={formatNumber(result.totalChargesPatronales)} variant="primary" />
+            <ResultHighlight label={t("simulateur.paie.coutEmployeur")} value={formatNumber(result.coutTotalEmployeur)} variant="danger" />
 
-              <ResultHighlight label={t("simulateur.paie.totalRetenues")} value={formatNumber(result.totalRetenuesSalarie)} variant="danger" />
-              <ResultHighlight label={t("simulateur.paie.salaireNet")} value={formatNumber(result.salaireNetMensuel)} variant="success" />
-
-              {/* Charges patronales */}
-              <SimulateurSection label={t("simulateur.paie.sectionPatronales")} />
-              <TableRow label={t("simulateur.paie.cnssVieillesse")} value={formatNumber(result.cnssVieillessePatronale)} />
-              <TableRow label={t("simulateur.paie.cnssAF")} value={formatNumber(result.cnssAFPatronale)} bg={colors.background} />
-              <TableRow label={t("simulateur.paie.cnssPF")} value={formatNumber(result.cnssPFPatronale)} />
-              <TableRow label={`${t("simulateur.paie.tusLabel")} (${result.tauxTUS * 100}%)`} value={formatNumber(result.tusMensuel)} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.paie.totalPatronales")} value={formatNumber(result.totalChargesPatronales)} variant="primary" />
-              <ResultHighlight label={t("simulateur.paie.coutEmployeur")} value={formatNumber(result.coutTotalEmployeur)} variant="danger" />
-
-              {/* Récapitulatif annuel */}
-              <SimulateurSection label={t("simulateur.paie.sectionRecap")} />
-              <TableRow label={t("simulateur.paie.brutAnnuel")} value={formatNumber(result.salaireBrutTotal * 12)} bold />
-              <TableRow label={t("simulateur.paie.netAnnuel")} value={formatNumber(result.salaireNetAnnuel)} bg={colors.background} bold />
-              <TableRow label={t("simulateur.paie.chargesAnnuelles")} value={formatNumber(result.totalChargesPatronales * 12)} />
-              <TableRow label={t("simulateur.paie.coutAnnuel")} value={formatNumber(result.coutTotalEmployeur * 12)} bg={colors.background} bold />
-              <TableRow label={t("simulateur.paie.tauxEffectif")} value={`${result.tauxEffectif.toFixed(1)}%`} />
-            </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.paie.enterSalary")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+            {/* Récapitulatif annuel */}
+            <SimulateurSection label={t("simulateur.paie.sectionRecap")} />
+            <TableRow label={t("simulateur.paie.brutAnnuel")} value={formatNumber(result.salaireBrutTotal * 12)} bold />
+            <TableRow label={t("simulateur.paie.netAnnuel")} value={formatNumber(result.salaireNetAnnuel)} bg={colors.background} bold />
+            <TableRow label={t("simulateur.paie.chargesAnnuelles")} value={formatNumber(result.totalChargesPatronales * 12)} />
+            <TableRow label={t("simulateur.paie.coutAnnuel")} value={formatNumber(result.coutTotalEmployeur * 12)} bg={colors.background} bold />
+            <TableRow label={t("simulateur.paie.tauxEffectif")} value={`${result.tauxEffectif.toFixed(1)}%`} />
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    marginBottom: 12,
-    padding: 12,
-  },
-  descriptionText13: {
-    fontSize: 15,
-  },
   label13: {
     fontSize: 15,
     fontWeight: "600",
@@ -409,9 +361,5 @@ const styles = StyleSheet.create({
   exonereText: {
     fontSize: 14,
     marginTop: 4,
-  },
-  legalRef: {
-    fontSize: 14,
-    marginTop: 12,
   },
 });

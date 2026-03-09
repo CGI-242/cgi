@@ -7,11 +7,9 @@ import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
 import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type Category = "contrats" | "baux" | "mutations" | "fonds" | "divers";
 
@@ -42,7 +40,6 @@ const ACTES_PAR_CATEGORIE: Record<Category, { value: TypeActe; labelKey: string 
 export default function EnregistrementScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const [montant, setMontant] = useState("");
   const [category, setCategory] = useState<Category>("contrats");
   const [typeActe, setTypeActe] = useState<TypeActe>("contrat");
@@ -68,17 +65,14 @@ export default function EnregistrementScreen() {
   }, [montant, typeActe, zoneImmat]);
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.enreg.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.enreg.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.enreg.title")}
+      description={t("simulateur.enreg.description")}
+      legalRef={t("simulateur.enreg.legalRef")}
+      emptyMessage={t("simulateur.enreg.enterAmount")}
+      hasResult={!!result}
+      inputSection={
+        <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.enreg.categoryLabel")}
           </Text>
@@ -129,63 +123,32 @@ export default function EnregistrementScreen() {
           )}
 
           <NumberField label={t("simulateur.enreg.amount")} value={montant} onChange={setMontant} />
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            <SimulateurSection label={t("simulateur.enreg.calcSection")} />
+            <TableRow label={t("simulateur.enreg.acteType")} value={result.libelle} />
+            <TableRow label={t("simulateur.enreg.baseAmount")} value={formatNumber(result.montant)} bg={colors.background} bold />
+            <TableRow label={`${t("simulateur.enreg.rateApplied")} (${result.articleRef})`} value={`${result.taux}%`} />
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.enreg.legalRef")}</Text>
-        </ScrollView>
+            <SimulateurSection label={t("simulateur.enreg.detailSection")} />
+            <TableRow label={t("simulateur.enreg.duties")} value={formatNumber(result.droits)} bold />
+            <TableRow label={t("simulateur.enreg.additionalCents")} value={`+ ${formatNumber(result.centimesAdditionnels)}`} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.enreg.totalDue")} value={formatNumber(result.total)} variant="danger" />
 
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result ? (
-            <View>
-              <SimulateurSection label={t("simulateur.enreg.calcSection")} />
-              <TableRow label={t("simulateur.enreg.acteType")} value={result.libelle} />
-              <TableRow label={t("simulateur.enreg.baseAmount")} value={formatNumber(result.montant)} bg={colors.background} bold />
-              <TableRow label={`${t("simulateur.enreg.rateApplied")} (${result.articleRef})`} value={`${result.taux}%`} />
-
-              <SimulateurSection label={t("simulateur.enreg.detailSection")} />
-              <TableRow label={t("simulateur.enreg.duties")} value={formatNumber(result.droits)} bold />
-              <TableRow label={t("simulateur.enreg.additionalCents")} value={`+ ${formatNumber(result.centimesAdditionnels)}`} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.enreg.totalDue")} value={formatNumber(result.total)} variant="danger" />
-
-              <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
-                <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.enreg.deadlineNote")}</Text>
-              </View>
+            <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
+              <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.enreg.deadlineNote")}</Text>
             </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.enreg.enterAmount")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    marginBottom: 12,
-    padding: 12,
-  },
-  descriptionText: {
-    fontSize: 13,
-  },
   fieldLabel: {
     fontSize: 14,
     fontWeight: "600",
@@ -217,10 +180,6 @@ const styles = StyleSheet.create({
   acteButtonText: {
     fontWeight: "600",
     fontSize: 14,
-  },
-  legalRef: {
-    fontSize: 12,
-    marginTop: 12,
   },
   noteBox: {
     paddingHorizontal: 14,

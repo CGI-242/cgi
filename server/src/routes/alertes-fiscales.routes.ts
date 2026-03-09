@@ -5,6 +5,7 @@ import { requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { listAlertesQuery } from '../schemas/alertes-fiscales.schema';
 import * as alertesService from '../services/alertes-fiscales.service';
+import { asyncHandler } from '../middleware/asyncHandler';
 
 const router = Router();
 
@@ -37,19 +38,15 @@ const router = Router();
  *       200:
  *         description: Alertes fiscales paginées
  */
-router.get('/', requireAuth, validate({ query: listAlertesQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const result = await alertesService.getAllAlertes({
-      type: req.query.type ? String(req.query.type) : undefined,
-      categorie: req.query.categorie ? String(req.query.categorie) : undefined,
-      page: Number(req.query.page),
-      limit: Number(req.query.limit),
-    });
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/', requireAuth, validate({ query: listAlertesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const result = await alertesService.getAllAlertes({
+    type: req.query.type ? String(req.query.type) : undefined,
+    categorie: req.query.categorie ? String(req.query.categorie) : undefined,
+    page: Number(req.query.page),
+    limit: Number(req.query.limit),
+  });
+  res.json(result);
+}));
 
 /**
  * @swagger
@@ -63,14 +60,10 @@ router.get('/', requireAuth, validate({ query: listAlertesQuery }), async (req: 
  *       200:
  *         description: Statistiques des alertes
  */
-router.get('/stats', requireAuth, async (_req: AuthRequest, res: Response) => {
-  try {
-    const stats = await alertesService.getStats();
-    res.json(stats);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/stats', requireAuth, asyncHandler(async (_req: AuthRequest, res: Response) => {
+  const stats = await alertesService.getStats();
+  res.json(stats);
+}));
 
 /**
  * @swagger
@@ -90,23 +83,19 @@ router.get('/stats', requireAuth, async (_req: AuthRequest, res: Response) => {
  *       200:
  *         description: Alertes liées à l'article
  */
-router.get('/article/:n', requireAuth, async (req: AuthRequest, res: Response) => {
-  try {
-    const n = Array.isArray(req.params.n) ? req.params.n[0] : req.params.n;
+router.get('/article/:n', requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const n = Array.isArray(req.params.n) ? req.params.n[0] : req.params.n;
 
-    // Validation : :n doit être un entier positif (LOW-10)
-    const parsed = parseInt(n, 10);
-    if (isNaN(parsed) || parsed <= 0 || String(parsed) !== n) {
-      res.status(400).json({ error: 'Le paramètre "n" doit être un entier positif' });
-      return;
-    }
-
-    const alertes = await alertesService.getByArticle(n);
-    res.json(alertes);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
+  // Validation : :n doit être un entier positif (LOW-10)
+  const parsed = parseInt(n, 10);
+  if (isNaN(parsed) || parsed <= 0 || String(parsed) !== n) {
+    res.status(400).json({ error: 'Le paramètre "n" doit être un entier positif' });
+    return;
   }
-});
+
+  const alertes = await alertesService.getByArticle(n);
+  res.json(alertes);
+}));
 
 /**
  * @swagger
@@ -120,22 +109,18 @@ router.get('/article/:n', requireAuth, async (req: AuthRequest, res: Response) =
  *       200:
  *         description: Résultat de l'extraction
  */
-router.post('/extract', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
-  try {
-    if (req.body.seed) {
-      const result = await alertesService.seedPredefinedAlertes();
-      res.json(result);
-      return;
-    }
-    if (req.body.text) {
-      const extractions = await alertesService.extractFromText(req.body.text);
-      res.json({ extractions });
-      return;
-    }
-    res.status(400).json({ error: 'Paramètre "seed" ou "text" requis' });
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
+router.post('/extract', requireAuth, resolveTenant, requireOrg, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  if (req.body.seed) {
+    const result = await alertesService.seedPredefinedAlertes();
+    res.json(result);
+    return;
   }
-});
+  if (req.body.text) {
+    const extractions = await alertesService.extractFromText(req.body.text);
+    res.json({ extractions });
+    return;
+  }
+  res.status(400).json({ error: 'Paramètre "seed" ou "text" requis' });
+}));
 
 export default router;

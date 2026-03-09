@@ -1,20 +1,18 @@
 import { useState, useMemo } from "react";
-import { View, Text, TextInput, TouchableOpacity, ScrollView, Switch, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Switch, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { calculerPatente, type PatenteInput } from "@/lib/services/patente.service";
 import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { fonts } from "@/lib/theme/fonts";
 
 export default function PatenteScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const [chiffreAffaires, setChiffreAffaires] = useState("");
   const [isStandBy, setIsStandBy] = useState(false);
   const [isPetroliere, setIsPetroliere] = useState(false);
@@ -33,18 +31,17 @@ export default function PatenteScreen() {
     });
   }, [chiffreAffaires, isStandBy, isPetroliere, dernierePatente, isNouvelle, nombreEntites]);
 
+  const hasResult = !!(result && (result.isEntrepriseNouvelle || result.totalAPayer > 0));
+
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.patente.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.patente.title")}
+      description={t("simulateur.patente.description")}
+      legalRef={t("simulateur.patente.legalRef")}
+      emptyMessage={t("simulateur.enterDataToSee")}
+      hasResult={hasResult}
+      inputSection={
+        <>
           <View style={[styles.switchRow, { backgroundColor: colors.card }]}>
             <View style={styles.flex1}>
               <Text style={[styles.switchLabel, { color: colors.text }]}>{t("simulateur.patente.standby")}</Text>
@@ -99,149 +96,121 @@ export default function PatenteScreen() {
               </TouchableOpacity>
             </View>
           </View>
-
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.patente.legalRef")}</Text>
-        </ScrollView>
-
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result && result.isEntrepriseNouvelle ? (
-            <View>
-              <View style={[styles.totalBox, { backgroundColor: colors.success || "#2E7D32" }]}>
-                <View style={styles.spaceBetweenRow}>
-                  <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.exemptionTitle")}</Text>
-                  <Text style={[styles.totalValue, { color: "#fff" }]}>0 FCFA</Text>
-                </View>
-              </View>
-              <View style={{ paddingHorizontal: 14, paddingVertical: 12 }}>
-                <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.exemptionDesc")}</Text>
-              </View>
-              {result.camu > 0 && (
-                <>
-                  <SimulateurSection label="CAMU due malgré exonération" />
-                  <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
-                  <View style={[styles.totalBox, { backgroundColor: colors.primary }]}>
-                    <View style={styles.spaceBetweenRow}>
-                      <Text style={[styles.totalLabel, { color: "#fff" }]}>CAMU à payer</Text>
-                      <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.camu)} FCFA</Text>
-                    </View>
-                  </View>
-                </>
-              )}
-              <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
-                {result.references.map((ref) => (
-                  <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
-                ))}
+        </>
+      }
+      resultSection={
+        result && result.isEntrepriseNouvelle ? (
+          <View>
+            <View style={[styles.totalBox, { backgroundColor: colors.success || "#2E7D32" }]}>
+              <View style={styles.spaceBetweenRow}>
+                <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.exemptionTitle")}</Text>
+                <Text style={[styles.totalValue, { color: "#fff" }]}>0 FCFA</Text>
               </View>
             </View>
-          ) : result && result.totalAPayer > 0 ? (
-            <View>
-              {result.tranches.length > 0 && (
-                <>
-                  <SimulateurSection label={t("simulateur.patente.trancheDetail")} />
-                  {result.tranches.map((tr, i) => (
-                    <View key={tr.tranche} style={[styles.trancheRow, { backgroundColor: i % 2 === 0 ? colors.card : colors.background, borderTopColor: colors.border }]}>
-                      <Text style={[styles.trancheLabel, { color: colors.textSecondary }]}>{tr.tranche}</Text>
-                      <Text style={[styles.trancheRate, { color: colors.primary }]}>{tr.taux.toFixed(3)}%</Text>
-                      <Text style={[styles.trancheAmount, { color: colors.text }]}>{formatNumber(Math.round(tr.montant))}</Text>
-                    </View>
-                  ))}
-                  <View style={[styles.grossPatenteBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
-                    <View style={styles.spaceBetweenRow}>
-                      <Text style={[styles.grossPatenteLabel, { color: colors.text }]}>{t("simulateur.patente.grossPatente")}</Text>
-                      <Text style={[styles.grossPatenteValue, { color: colors.text }]}>{formatNumber(Math.round(result.patenteBrute))}</Text>
-                    </View>
+            <View style={{ paddingHorizontal: 14, paddingVertical: 12 }}>
+              <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.patente.exemptionDesc")}</Text>
+            </View>
+            {result.camu > 0 && (
+              <>
+                <SimulateurSection label="CAMU due malgré exonération" />
+                <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
+                <View style={[styles.totalBox, { backgroundColor: colors.primary }]}>
+                  <View style={styles.spaceBetweenRow}>
+                    <Text style={[styles.totalLabel, { color: "#fff" }]}>CAMU à payer</Text>
+                    <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.camu)} FCFA</Text>
                   </View>
-                </>
-              )}
-
-              {/* Réductions (stand-by ou pétrolière) */}
-              {(result.reductionStandBy > 0 || result.reductionPetroliere > 0) && (
-                <>
-                  <SimulateurSection label={t("simulateur.patente.reductions")} />
-                  {result.reductionStandBy > 0 && (
-                    <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color={colors.danger} />
-                  )}
-                  {result.reductionPetroliere > 0 && (
-                    <TableRow label={t("simulateur.patente.oilReduction")} value={`- ${formatNumber(Math.round(result.reductionPetroliere))}`} bg={colors.background} color={colors.danger} />
-                  )}
-                </>
-              )}
-
-              <View style={[styles.netPatenteBox, { backgroundColor: `${colors.primary}10`, borderTopColor: colors.border }]}>
-                <View style={styles.spaceBetweenRow}>
-                  <Text style={[styles.netPatenteLabel, { color: colors.primary }]}>{t("simulateur.patente.netPatente")}</Text>
-                  <Text style={[styles.netPatenteValue, { color: colors.primary }]}>{formatNumber(result.patenteNette)}</Text>
                 </View>
-              </View>
-
-              {/* Centimes additionnels */}
-              <SimulateurSection label={t("simulateur.patente.centimesSection")} />
-              <TableRow label={t("simulateur.patente.centimesRate")} value={formatNumber(result.centimesAdditionnels)} />
-              <TableRow label={t("simulateur.patente.partCC")} value={formatNumber(result.partChambresCommerce)} bg={colors.background} />
-              <TableRow label={t("simulateur.patente.partCL")} value={formatNumber(result.partCollectivitesLocales)} />
-
-              {/* CAMU */}
-              <SimulateurSection label="CAMU (Art. 3-4)" />
-              <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
-
-              {/* Total à payer */}
-              <View style={[styles.totalBox, { backgroundColor: colors.primary, borderTopColor: colors.border }]}>
-                <View style={styles.spaceBetweenRow}>
-                  <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.totalToPay")}</Text>
-                  <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.totalAPayer)} FCFA</Text>
-                </View>
-              </View>
-
-              {result.nombreEntites > 1 && (
-                <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.totalParEntite)} bg={colors.background} bold />
-              )}
-
-              <View style={[styles.deadlineBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
-                <View style={styles.deadlineRow}>
-                  <Ionicons name="calendar-outline" size={14} color={colors.text} />
-                  <Text style={[styles.deadlineText, { color: colors.text }]}>{t("common.deadline")} : {result.dateEcheance}</Text>
-                </View>
-              </View>
-
-              <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
-                {result.references.map((ref) => (
-                  <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
+              </>
+            )}
+            <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+              {result.references.map((ref) => (
+                <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
+              ))}
+            </View>
+          </View>
+        ) : result && result.totalAPayer > 0 ? (
+          <View>
+            {result.tranches.length > 0 && (
+              <>
+                <SimulateurSection label={t("simulateur.patente.trancheDetail")} />
+                {result.tranches.map((tr, i) => (
+                  <View key={tr.tranche} style={[styles.trancheRow, { backgroundColor: i % 2 === 0 ? colors.card : colors.background, borderTopColor: colors.border }]}>
+                    <Text style={[styles.trancheLabel, { color: colors.textSecondary }]}>{tr.tranche}</Text>
+                    <Text style={[styles.trancheRate, { color: colors.primary }]}>{tr.taux.toFixed(3)}%</Text>
+                    <Text style={[styles.trancheAmount, { color: colors.text }]}>{formatNumber(Math.round(tr.montant))}</Text>
+                  </View>
                 ))}
+                <View style={[styles.grossPatenteBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+                  <View style={styles.spaceBetweenRow}>
+                    <Text style={[styles.grossPatenteLabel, { color: colors.text }]}>{t("simulateur.patente.grossPatente")}</Text>
+                    <Text style={[styles.grossPatenteValue, { color: colors.text }]}>{formatNumber(Math.round(result.patenteBrute))}</Text>
+                  </View>
+                </View>
+              </>
+            )}
+
+            {/* Réductions (stand-by ou pétrolière) */}
+            {(result.reductionStandBy > 0 || result.reductionPetroliere > 0) && (
+              <>
+                <SimulateurSection label={t("simulateur.patente.reductions")} />
+                {result.reductionStandBy > 0 && (
+                  <TableRow label={t("simulateur.patente.standbyReduction")} value={`- ${formatNumber(Math.round(result.reductionStandBy))}`} color={colors.danger} />
+                )}
+                {result.reductionPetroliere > 0 && (
+                  <TableRow label={t("simulateur.patente.oilReduction")} value={`- ${formatNumber(Math.round(result.reductionPetroliere))}`} bg={colors.background} color={colors.danger} />
+                )}
+              </>
+            )}
+
+            <View style={[styles.netPatenteBox, { backgroundColor: `${colors.primary}10`, borderTopColor: colors.border }]}>
+              <View style={styles.spaceBetweenRow}>
+                <Text style={[styles.netPatenteLabel, { color: colors.primary }]}>{t("simulateur.patente.netPatente")}</Text>
+                <Text style={[styles.netPatenteValue, { color: colors.primary }]}>{formatNumber(result.patenteNette)}</Text>
               </View>
             </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.enterDataToSee")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+
+            {/* Centimes additionnels */}
+            <SimulateurSection label={t("simulateur.patente.centimesSection")} />
+            <TableRow label={t("simulateur.patente.centimesRate")} value={formatNumber(result.centimesAdditionnels)} />
+            <TableRow label={t("simulateur.patente.partCC")} value={formatNumber(result.partChambresCommerce)} bg={colors.background} />
+            <TableRow label={t("simulateur.patente.partCL")} value={formatNumber(result.partCollectivitesLocales)} />
+
+            {/* CAMU */}
+            <SimulateurSection label="CAMU (Art. 3-4)" />
+            <TableRow label="Contribution solidarité 0,5%" value={formatNumber(result.camu)} />
+
+            {/* Total à payer */}
+            <View style={[styles.totalBox, { backgroundColor: colors.primary, borderTopColor: colors.border }]}>
+              <View style={styles.spaceBetweenRow}>
+                <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.totalToPay")}</Text>
+                <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.totalAPayer)} FCFA</Text>
+              </View>
+            </View>
+
+            {result.nombreEntites > 1 && (
+              <TableRow label={`${t("common.perEntity")} (${result.nombreEntites})`} value={formatNumber(result.totalParEntite)} bg={colors.background} bold />
+            )}
+
+            <View style={[styles.deadlineBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+              <View style={styles.deadlineRow}>
+                <Ionicons name="calendar-outline" size={14} color={colors.text} />
+                <Text style={[styles.deadlineText, { color: colors.text }]}>{t("common.deadline")} : {result.dateEcheance}</Text>
+              </View>
+            </View>
+
+            <View style={[styles.refsBox, { backgroundColor: colors.background, borderTopColor: colors.border }]}>
+              {result.references.map((ref) => (
+                <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
+              ))}
+            </View>
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    padding: 12,
-    marginBottom: 12,
-  },
   descriptionText: {
     fontSize: 13,
   },
@@ -336,9 +305,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     fontWeight: "700",
-  },
-  legalRef: {
-    fontSize: 12,
   },
   trancheRow: {
     flexDirection: "row",

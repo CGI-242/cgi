@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { calculerMinPerception, type TypeImpot } from "@/lib/services/is.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
@@ -7,16 +7,13 @@ import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
 import OptionButtonGroup from "@/components/simulateur/OptionButtonGroup";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function IsScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const [typeImpot, setTypeImpot] = useState<TypeImpot>("is");
   const [produitsExploitation, setProduitsExploitation] = useState("");
   const [produitsFinanciers, setProduitsFinanciers] = useState("");
@@ -41,19 +38,14 @@ export default function IsScreen() {
   }, [typeImpot, produitsExploitation, produitsFinanciers, produitsHAO, retenuesLiberatoires]);
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.is.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>
-              {typeImpot === "is" ? t("simulateur.is.descriptionIS") : t("simulateur.is.descriptionIBA")}
-            </Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.is.title")}
+      description={typeImpot === "is" ? t("simulateur.is.descriptionIS") : t("simulateur.is.descriptionIBA")}
+      legalRef={typeImpot === "is" ? t("simulateur.is.legalRefIS") : t("simulateur.is.legalRefIBA")}
+      emptyMessage={t("simulateur.is.enterProducts")}
+      hasResult={!!result}
+      inputSection={
+        <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.is.typeLabel")}
           </Text>
@@ -68,75 +60,38 @@ export default function IsScreen() {
           {typeImpot === "is" && (
             <NumberField label={t("simulateur.is.withholdings")} value={retenuesLiberatoires} onChange={setRetenuesLiberatoires} />
           )}
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            <SimulateurSection label={typeImpot === "is" ? t("simulateur.is.minPerceptionIS") : t("simulateur.is.minPerceptionIBA")} />
+            <TableRow label={t("simulateur.is.base")} value={formatNumber(result.baseMinimumPerception)} />
+            <TableRow label={t("simulateur.is.rateApplied")} value={`${result.tauxMinimum}%`} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.is.annualMin")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" />
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>
-            {typeImpot === "is" ? t("simulateur.is.legalRefIS") : t("simulateur.is.legalRefIBA")}
-          </Text>
-        </ScrollView>
+            <SimulateurSection label={t("simulateur.is.quarterlyInstalments")} />
+            {result.acomptes.map((a) => (
+              <TableRow key={a.label} label={a.label} value={formatNumber(a.montant)} />
+            ))}
 
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result ? (
-            <View>
-              <SimulateurSection label={typeImpot === "is" ? t("simulateur.is.minPerceptionIS") : t("simulateur.is.minPerceptionIBA")} />
-              <TableRow label={t("simulateur.is.base")} value={formatNumber(result.baseMinimumPerception)} />
-              <TableRow label={t("simulateur.is.rateApplied")} value={`${result.tauxMinimum}%`} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.is.annualMin")} value={formatNumber(result.minimumPerceptionAnnuel)} variant="primary" />
-
-              <SimulateurSection label={t("simulateur.is.quarterlyInstalments")} />
-              {result.acomptes.map((a) => (
-                <TableRow key={a.label} label={a.label} value={formatNumber(a.montant)} />
-              ))}
-
-              <ResultHighlight
-                label={t("simulateur.is.totalToPay")}
-                value={formatNumber(result.minimumPerceptionAnnuel)}
-                variant="primary"
-                note={typeImpot === "is" ? t("simulateur.is.imputNoteIS") : t("simulateur.is.imputNoteIBA")}
-              />
-            </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.is.enterProducts")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+            <ResultHighlight
+              label={t("simulateur.is.totalToPay")}
+              value={formatNumber(result.minimumPerceptionAnnuel)}
+              variant="primary"
+              note={typeImpot === "is" ? t("simulateur.is.imputNoteIS") : t("simulateur.is.imputNoteIBA")}
+            />
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    padding: 12,
-    marginBottom: 12,
-  },
-  descriptionText: {
-    fontSize: 13,
-  },
   fieldLabel: {
     fontSize: 14,
     fontWeight: "600",
     marginBottom: 6,
-  },
-  legalRef: {
-    fontSize: 12,
-    marginTop: 12,
   },
 });

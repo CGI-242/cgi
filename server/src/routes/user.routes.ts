@@ -3,9 +3,8 @@ import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import { validate } from "../middleware/validate.middleware";
 import { updateProfileBody } from "../schemas/user.schema";
-import { createLogger } from "../utils/logger";
+import { asyncHandler } from "../middleware/asyncHandler";
 
-const logger = createLogger("UserRoutes");
 const router = Router();
 
 /**
@@ -20,67 +19,62 @@ const router = Router();
  *       200:
  *         description: Profil utilisateur
  */
-router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
-  try {
-    const user = await prisma.user.findUnique({
-      where: { id: req.userId },
-      select: {
-        id: true,
-        email: true,
-        firstName: true,
-        lastName: true,
-        phone: true,
-        profession: true,
-        avatar: true,
-        createdAt: true,
-      },
-    });
+router.get("/profile", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const user = await prisma.user.findUnique({
+    where: { id: req.userId },
+    select: {
+      id: true,
+      email: true,
+      firstName: true,
+      lastName: true,
+      phone: true,
+      profession: true,
+      avatar: true,
+      createdAt: true,
+    },
+  });
 
-    if (!user) {
-      res.status(404).json({ error: "Utilisateur introuvable" });
-      return;
-    }
+  if (!user) {
+    res.status(404).json({ error: "Utilisateur introuvable" });
+    return;
+  }
 
-    // Récupérer l'abonnement via l'organisation
-    const membership = await prisma.organizationMember.findFirst({
-      where: { userId: req.userId },
-      include: {
-        organization: {
-          include: {
-            subscription: true,
-          },
+  // Récupérer l'abonnement via l'organisation
+  const membership = await prisma.organizationMember.findFirst({
+    where: { userId: req.userId },
+    include: {
+      organization: {
+        include: {
+          subscription: true,
         },
       },
-    });
+    },
+  });
 
-    const subscription = membership?.organization?.subscription;
+  const subscription = membership?.organization?.subscription;
 
-    res.json({
-      user: {
-        id: user.id,
-        email: user.email,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        phone: user.phone,
-        profession: user.profession,
-        avatar: user.avatar,
-        createdAt: user.createdAt,
-      },
-      subscription: subscription
-        ? {
-            plan: subscription.plan,
-            status: subscription.status,
-            questionsPerMonth: subscription.questionsPerMonth,
-            questionsUsed: membership?.questionsUsed ?? 0,
-            currentPeriodEnd: subscription.currentPeriodEnd,
-          }
-        : null,
-    });
-  } catch (err) {
-    logger.error("[get-profile]", err);
-    res.status(500).json({ error: "Erreur serveur" });
-  }
-});
+  res.json({
+    user: {
+      id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      phone: user.phone,
+      profession: user.profession,
+      avatar: user.avatar,
+      createdAt: user.createdAt,
+    },
+    subscription: subscription
+      ? {
+          plan: subscription.plan,
+          status: subscription.status,
+          questionsPerMonth: subscription.questionsPerMonth,
+          questionsUsed: membership?.questionsUsed ?? 0,
+          currentPeriodEnd: subscription.currentPeriodEnd,
+        }
+      : null,
+  });
+}));
 
 /**
  * @swagger
@@ -109,42 +103,37 @@ router.get("/profile", requireAuth, async (req: AuthRequest, res: Response) => {
  *       200:
  *         description: Profil mis à jour
  */
-router.put("/profile", requireAuth, validate({ body: updateProfileBody }), async (req: AuthRequest, res: Response) => {
-  try {
-    const { firstName, lastName, phone, profession } = req.body;
+router.put("/profile", requireAuth, validate({ body: updateProfileBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const { firstName, lastName, phone, profession } = req.body;
 
-    // Construire l'objet de mise à jour avec uniquement les champs fournis
-    const data: Record<string, string | null> = {};
-    if (firstName !== undefined) data.firstName = firstName.trim();
-    if (lastName !== undefined) data.lastName = lastName.trim();
-    if (phone !== undefined) data.phone = phone ? phone.trim() : null;
-    if (profession !== undefined) data.profession = profession ? profession.trim() : null;
+  // Construire l'objet de mise à jour avec uniquement les champs fournis
+  const data: Record<string, string | null> = {};
+  if (firstName !== undefined) data.firstName = firstName.trim();
+  if (lastName !== undefined) data.lastName = lastName.trim();
+  if (phone !== undefined) data.phone = phone ? phone.trim() : null;
+  if (profession !== undefined) data.profession = profession ? profession.trim() : null;
 
-    if (Object.keys(data).length === 0) {
-      res.status(400).json({ error: "Aucun champ à mettre à jour" });
-      return;
-    }
-
-    const updated = await prisma.user.update({
-      where: { id: req.userId },
-      select: {
-        id: true,
-        email: true,
-        firstName: true,
-        lastName: true,
-        phone: true,
-        profession: true,
-        avatar: true,
-        createdAt: true,
-      },
-      data,
-    });
-
-    res.json({ user: updated });
-  } catch (err) {
-    logger.error("[update-profile]", err);
-    res.status(500).json({ error: "Erreur serveur" });
+  if (Object.keys(data).length === 0) {
+    res.status(400).json({ error: "Aucun champ à mettre à jour" });
+    return;
   }
-});
+
+  const updated = await prisma.user.update({
+    where: { id: req.userId },
+    select: {
+      id: true,
+      email: true,
+      firstName: true,
+      lastName: true,
+      phone: true,
+      profession: true,
+      avatar: true,
+      createdAt: true,
+    },
+    data,
+  });
+
+  res.json({ user: updated });
+}));
 
 export default router;

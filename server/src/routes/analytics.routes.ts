@@ -5,6 +5,7 @@ import { requireAdmin, requireMember } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { daysQuery } from '../schemas/analytics.schema';
 import * as analyticsService from '../services/analytics.service';
+import { asyncHandler } from '../middleware/asyncHandler';
 
 const router = Router();
 
@@ -21,14 +22,10 @@ const router = Router();
  *         description: Données du tableau de bord
  */
 // GET /api/analytics/dashboard
-router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, async (req: AuthRequest, res: Response) => {
-  try {
-    const dashboard = await analyticsService.getDashboard(req.orgId!);
-    res.json(dashboard);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const dashboard = await analyticsService.getDashboard(req.orgId!);
+  res.json(dashboard);
+}));
 
 /**
  * @swagger
@@ -50,15 +47,11 @@ router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, 
  *         description: Données de série temporelle
  */
 // GET /api/analytics/timeseries
-router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const days = Number(req.query.days);
-    const data = await analyticsService.getTimeSeries(req.orgId!, days);
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const days = Number(req.query.days);
+  const data = await analyticsService.getTimeSeries(req.orgId!, days);
+  res.json(data);
+}));
 
 /**
  * @swagger
@@ -73,14 +66,10 @@ router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, 
  *         description: Statistiques des membres
  */
 // GET /api/analytics/members
-router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, async (req: AuthRequest, res: Response) => {
-  try {
-    const stats = await analyticsService.getMemberStats(req.orgId!);
-    res.json(stats);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const stats = await analyticsService.getMemberStats(req.orgId!);
+  res.json(stats);
+}));
 
 /**
  * @swagger
@@ -106,16 +95,12 @@ router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, asy
  *               type: string
  */
 // GET /api/analytics/export
-router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const days = Number(req.query.days);
-    const csv = await analyticsService.exportCsv(req.orgId!, days);
-    res.setHeader('Content-Type', 'text/csv');
-    res.setHeader('Content-Disposition', `attachment; filename=analytics-${req.orgId}.csv`);
-    res.send(csv);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const days = Number(req.query.days);
+  const csv = await analyticsService.exportCsv(req.orgId!, days);
+  res.setHeader('Content-Type', 'text/csv');
+  res.setHeader('Content-Disposition', `attachment; filename=analytics-${req.orgId}.csv`);
+  res.send(csv);
+}));
 
 export default router;

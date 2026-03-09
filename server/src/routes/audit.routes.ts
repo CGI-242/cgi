@@ -6,6 +6,7 @@ import { validate } from '../middleware/validate.middleware';
 import { orgAuditQuery, userAuditQuery, userAuditParams, entityAuditParams, searchAuditQuery, statsAuditQuery, cleanupAuditBody } from '../schemas/audit.schema';
 import { AuditService } from '../services/audit.service';
 import { getClientIp } from '../utils/ip';
+import { asyncHandler } from '../middleware/asyncHandler';
 
 const router = Router();
 
@@ -34,17 +35,13 @@ const router = Router();
  *       200:
  *         description: Logs d'audit paginés
  */
-router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: orgAuditQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const page = Number(req.query.page);
-    const limit = Number(req.query.limit);
-    const action = req.query.action ? String(req.query.action) : undefined;
-    const result = await AuditService.getOrganizationAudit(req.orgId!, { page, limit, action });
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: orgAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const page = Number(req.query.page);
+  const limit = Number(req.query.limit);
+  const action = req.query.action ? String(req.query.action) : undefined;
+  const result = await AuditService.getOrganizationAudit(req.orgId!, { page, limit, action });
+  res.json(result);
+}));
 
 /**
  * @swagger
@@ -64,17 +61,13 @@ router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin
  *       200:
  *         description: Actions de l'utilisateur
  */
-router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userAuditParams, query: userAuditQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const userId = String(req.params.userId);
-    const page = Number(req.query.page);
-    const limit = Number(req.query.limit);
-    const result = await AuditService.getUserActions(userId, { page, limit });
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userAuditParams, query: userAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const userId = String(req.params.userId);
+  const page = Number(req.query.page);
+  const limit = Number(req.query.limit);
+  const result = await AuditService.getUserActions(userId, { page, limit });
+  res.json(result);
+}));
 
 /**
  * @swagger
@@ -99,16 +92,12 @@ router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin
  *       200:
  *         description: Historique de l'entité
  */
-router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: entityAuditParams }), async (req: AuthRequest, res: Response) => {
-  try {
-    const type = String(req.params.type);
-    const id = String(req.params.id);
-    const logs = await AuditService.getEntityHistory(type, id);
-    res.json(logs);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: entityAuditParams }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const type = String(req.params.type);
+  const id = String(req.params.id);
+  const logs = await AuditService.getEntityHistory(type, id);
+  res.json(logs);
+}));
 
 /**
  * @swagger
@@ -153,22 +142,18 @@ router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireA
  *       200:
  *         description: Résultats de recherche paginés
  */
-router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: searchAuditQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const result = await AuditService.search(req.orgId!, {
-      action: req.query.action ? String(req.query.action) : undefined,
-      actorId: req.query.actorId ? String(req.query.actorId) : undefined,
-      entityType: req.query.entityType ? String(req.query.entityType) : undefined,
-      from: req.query.from ? String(req.query.from) : undefined,
-      to: req.query.to ? String(req.query.to) : undefined,
-      page: Number(req.query.page),
-      limit: Number(req.query.limit),
-    });
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: searchAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const result = await AuditService.search(req.orgId!, {
+    action: req.query.action ? String(req.query.action) : undefined,
+    actorId: req.query.actorId ? String(req.query.actorId) : undefined,
+    entityType: req.query.entityType ? String(req.query.entityType) : undefined,
+    from: req.query.from ? String(req.query.from) : undefined,
+    to: req.query.to ? String(req.query.to) : undefined,
+    page: Number(req.query.page),
+    limit: Number(req.query.limit),
+  });
+  res.json(result);
+}));
 
 /**
  * @swagger
@@ -187,15 +172,11 @@ router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, vali
  *       200:
  *         description: Statistiques d'audit
  */
-router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: statsAuditQuery }), async (req: AuthRequest, res: Response) => {
-  try {
-    const days = Number(req.query.days);
-    const stats = await AuditService.getStats(req.orgId!, days);
-    res.json(stats);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: statsAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const days = Number(req.query.days);
+  const stats = await AuditService.getStats(req.orgId!, days);
+  res.json(stats);
+}));
 
 /**
  * @swagger
@@ -218,15 +199,11 @@ router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, valid
  *       200:
  *         description: Résultat du nettoyage
  */
-router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: cleanupAuditBody }), async (req: AuthRequest, res: Response) => {
-  try {
-    const { olderThanDays } = req.body;
-    const result = await AuditService.gdprCleanup(req.orgId!, olderThanDays);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});
+router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: cleanupAuditBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const { olderThanDays } = req.body;
+  const result = await AuditService.gdprCleanup(req.orgId!, olderThanDays);
+  AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
+  res.json(result);
+}));
 
 export default router;

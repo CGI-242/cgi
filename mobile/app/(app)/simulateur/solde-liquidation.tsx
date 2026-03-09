@@ -1,21 +1,18 @@
 import { useState, useMemo } from "react";
-import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { calculerSoldeLiquidation, type TypeContribuable } from "@/lib/services/solde-liquidation.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function SoldeLiquidationScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
 
   // Résultat comptable — Produits
   const [produitsExploitation, setProduitsExploitation] = useState("");
@@ -69,17 +66,14 @@ export default function SoldeLiquidationScreen() {
   }, [produitsExploitation, produitsFinanciers, produitsHAO, chargesExploitation, chargesFinancieres, chargesHAO, reintegrations, deductions, ard, reportDeficitaire, typeContribuable, acompte1, acompte2, acompte3, acompte4]);
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.solde.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.solde.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.solde.title")}
+      description={t("simulateur.solde.description")}
+      legalRef={t("simulateur.solde.legalRef")}
+      emptyMessage={t("simulateur.solde.enterResult")}
+      hasResult={!!result}
+      inputSection={
+        <>
           {/* Résultat comptable */}
           <Text style={[styles.sectionLabel, { color: colors.primary }]}>
             {t("simulateur.solde.rcSection")}
@@ -126,95 +120,64 @@ export default function SoldeLiquidationScreen() {
           <NumberField label={t("simulateur.solde.q2")} value={acompte2} onChange={setAcompte2} />
           <NumberField label={t("simulateur.solde.q3")} value={acompte3} onChange={setAcompte3} />
           <NumberField label={t("simulateur.solde.q4")} value={acompte4} onChange={setAcompte4} />
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            {/* Résultat comptable */}
+            <SimulateurSection label={t("simulateur.solde.rcSection")} />
+            <TableRow label={t("simulateur.solde.totalProduits")} value={formatNumber(result.totalProduits)} bold />
+            <TableRow label={t("simulateur.solde.totalCharges")} value={`- ${formatNumber(result.totalCharges)}`} bg={colors.background} color={colors.danger} />
+            <ResultHighlight label={t("simulateur.solde.rc")} value={formatNumber(result.resultatComptable)} variant="primary" />
 
-          <Text style={[styles.legalRefSmall, { color: colors.textMuted }]}>{t("simulateur.solde.legalRef")}</Text>
-        </ScrollView>
+            {/* Résultat fiscal */}
+            <SimulateurSection label={t("simulateur.solde.rfSection")} />
+            <TableRow label={t("simulateur.solde.rc")} value={formatNumber(result.resultatComptable)} />
+            {result.reintegrations > 0 && (
+              <TableRow label={t("simulateur.solde.reintegrations")} value={`+ ${formatNumber(result.reintegrations)}`} bg={colors.background} color={colors.success} />
+            )}
+            {result.deductions > 0 && (
+              <TableRow label={t("simulateur.solde.deductionsFiscales")} value={`- ${formatNumber(result.deductions)}`} bg={colors.background} color={colors.danger} />
+            )}
+            {result.ard > 0 && (
+              <TableRow label={t("simulateur.solde.ard")} value={`- ${formatNumber(result.ard)}`} bg={colors.background} color={colors.danger} />
+            )}
+            {result.reportDeficitaire > 0 && (
+              <TableRow label={t("simulateur.solde.reportDeficitaire")} value={`- ${formatNumber(result.reportDeficitaire)}`} bg={colors.background} color={colors.danger} />
+            )}
+            <ResultHighlight label={t("simulateur.solde.rf")} value={formatNumber(result.resultatFiscal)} variant="primary" />
 
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result ? (
-            <View>
-              {/* Résultat comptable */}
-              <SimulateurSection label={t("simulateur.solde.rcSection")} />
-              <TableRow label={t("simulateur.solde.totalProduits")} value={formatNumber(result.totalProduits)} bold />
-              <TableRow label={t("simulateur.solde.totalCharges")} value={`- ${formatNumber(result.totalCharges)}`} bg={colors.background} color={colors.danger} />
-              <ResultHighlight label={t("simulateur.solde.rc")} value={formatNumber(result.resultatComptable)} variant="primary" />
+            {/* IS calculé */}
+            <SimulateurSection label={t("simulateur.solde.isCalculated")} />
+            <TableRow label={t("simulateur.solde.roundedProfit")} value={formatNumber(result.beneficeArrondi)} bg={colors.background} />
+            <TableRow label={`${t("simulateur.solde.isRate")} (${result.tauxIS}%)`} value={`${result.tauxIS}%`} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.solde.isToPay")} value={formatNumber(result.isCalcule)} variant="danger" />
 
-              {/* Résultat fiscal */}
-              <SimulateurSection label={t("simulateur.solde.rfSection")} />
-              <TableRow label={t("simulateur.solde.rc")} value={formatNumber(result.resultatComptable)} />
-              {result.reintegrations > 0 && (
-                <TableRow label={t("simulateur.solde.reintegrations")} value={`+ ${formatNumber(result.reintegrations)}`} bg={colors.background} color={colors.success} />
-              )}
-              {result.deductions > 0 && (
-                <TableRow label={t("simulateur.solde.deductionsFiscales")} value={`- ${formatNumber(result.deductions)}`} bg={colors.background} color={colors.danger} />
-              )}
-              {result.ard > 0 && (
-                <TableRow label={t("simulateur.solde.ard")} value={`- ${formatNumber(result.ard)}`} bg={colors.background} color={colors.danger} />
-              )}
-              {result.reportDeficitaire > 0 && (
-                <TableRow label={t("simulateur.solde.reportDeficitaire")} value={`- ${formatNumber(result.reportDeficitaire)}`} bg={colors.background} color={colors.danger} />
-              )}
-              <ResultHighlight label={t("simulateur.solde.rf")} value={formatNumber(result.resultatFiscal)} variant="primary" />
+            {/* Acomptes */}
+            <SimulateurSection label={t("simulateur.solde.instalmentsPaidTitle")} />
+            {result.detailAcomptes.map((a) => (
+              <TableRow key={a.label} label={a.label} value={a.montant > 0 ? formatNumber(a.montant) : "\u2014"} />
+            ))}
+            <ResultHighlight label={t("simulateur.solde.totalInstalments")} value={formatNumber(result.totalAcomptes)} variant="primary" />
 
-              {/* IS calculé */}
-              <SimulateurSection label={t("simulateur.solde.isCalculated")} />
-              <TableRow label={t("simulateur.solde.roundedProfit")} value={formatNumber(result.beneficeArrondi)} bg={colors.background} />
-              <TableRow label={`${t("simulateur.solde.isRate")} (${result.tauxIS}%)`} value={`${result.tauxIS}%`} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.solde.isToPay")} value={formatNumber(result.isCalcule)} variant="danger" />
+            {/* Solde */}
+            <SimulateurSection label={t("simulateur.solde.settlementBalance")} />
+            <TableRow label={t("simulateur.solde.isMinusInstalments")} value={`${formatNumber(result.isCalcule)} - ${formatNumber(result.totalAcomptes)}`} bg={colors.background} />
 
-              {/* Acomptes */}
-              <SimulateurSection label={t("simulateur.solde.instalmentsPaidTitle")} />
-              {result.detailAcomptes.map((a) => (
-                <TableRow key={a.label} label={a.label} value={a.montant > 0 ? formatNumber(a.montant) : "\u2014"} />
-              ))}
-              <ResultHighlight label={t("simulateur.solde.totalInstalments")} value={formatNumber(result.totalAcomptes)} variant="primary" />
-
-              {/* Solde */}
-              <SimulateurSection label={t("simulateur.solde.settlementBalance")} />
-              <TableRow label={t("simulateur.solde.isMinusInstalments")} value={`${formatNumber(result.isCalcule)} - ${formatNumber(result.totalAcomptes)}`} bg={colors.background} />
-
-              {result.creditImpot ? (
-                <ResultHighlight label={t("simulateur.solde.taxCredit")} value={formatNumber(Math.abs(result.solde))} variant="success" note={t("simulateur.solde.taxCreditNote")} />
-              ) : (
-                <ResultHighlight label={t("simulateur.solde.balanceToPay")} value={formatNumber(result.solde)} variant="danger" note={t("simulateur.solde.balanceNote")} />
-              )}
-            </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.solde.enterResult")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+            {result.creditImpot ? (
+              <ResultHighlight label={t("simulateur.solde.taxCredit")} value={formatNumber(Math.abs(result.solde))} variant="success" note={t("simulateur.solde.taxCreditNote")} />
+            ) : (
+              <ResultHighlight label={t("simulateur.solde.balanceToPay")} value={formatNumber(result.solde)} variant="danger" note={t("simulateur.solde.balanceNote")} />
+            )}
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    padding: 12,
-    marginBottom: 12,
-  },
-  descriptionText: {
-    fontSize: 13,
-  },
   sectionLabel: {
     fontSize: 14,
     fontWeight: "600",
@@ -235,9 +198,5 @@ const styles = StyleSheet.create({
   taxpayerButtonText: {
     fontSize: 14,
     fontWeight: "600",
-  },
-  legalRefSmall: {
-    fontSize: 12,
-    marginTop: 4,
   },
 });
