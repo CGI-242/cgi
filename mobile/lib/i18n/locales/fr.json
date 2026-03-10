@@ -1225,9 +1225,9 @@
     "pricingBasique": "Basique",
     "pricingPro": "Pro",
     "pricingTrialPeriod": "7 jours d'essai",
-    "pricingPerYear": "XAF / an / organisation",
-    "pricingBasiqueLaunch": "65 000 XAF/an/user — prix lancement",
-    "pricingProLaunch": "100 000 XAF/an/user — prix lancement",
+    "pricingPerYear": "€ / an",
+    "pricingBasiqueLaunch": "1 code juridique au choix",
+    "pricingProLaunch": "4 codes : CGI + Douanier + Hydrocarbures + Social",
     "pricingTryFree": "Essayer gratuitement",
     "pricingStart": "Commencer",
     "pricingFeat5q": "5 questions IA / mois",
@@ -1240,6 +1240,12 @@
     "pricingFeat50members": "Jusqu'à 50 membres",
     "pricingFeat30q": "30 questions IA / mois / user",
     "pricingFeatUnlimitedHistory": "Historique illimité",
-    "pricingFeatPriority": "Support prioritaire"
+    "pricingFeatPriority": "Support prioritaire",
+    "pricingFeat1code": "1 code juridique au choix",
+    "pricingFeat4codes": "4 codes juridiques inclus",
+    "pricingFeatCodeSocial": "Code Social",
+    "pricingFeatCodeHydro": "Code des Hydrocarbures",
+    "pricingFeatCodeDouanier": "Code Douanier",
+    "pricingFeatCodeCgi": "Code Général des Impôts"
   }
 }

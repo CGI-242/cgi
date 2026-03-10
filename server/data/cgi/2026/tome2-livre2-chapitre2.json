@@ -186,20 +186,6 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L2C2-ST1",
-      "titre": "A. Actes soumis au timbre de dimension",
-      "texte": [],
-      "mots_cles": ["actes", "timbre de dimension"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C2-ST1a",
-      "titre": "I. Règles générales",
-      "texte": [],
-      "mots_cles": ["règles générales"],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 34",
       "titre": "Actes assujettis au droit de timbre de dimension",
       "texte": [
@@ -288,7 +274,8 @@
         "justice",
         "foi"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Actes soumis au timbre de dimension - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 34 bis",
@@ -305,7 +292,8 @@
         "État",
         "fournitures de services"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Actes soumis au timbre de dimension - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 35",
@@ -321,14 +309,8 @@
         "article précédent",
         "actes"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C2-ST1b",
-      "titre": "II. Applications particulières",
-      "texte": [],
-      "mots_cles": ["applications particulières"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Actes soumis au timbre de dimension - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 36",
@@ -391,14 +373,8 @@
         "rentes viagères",
         "avenants"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C2-ST2",
-      "titre": "B. Règles spéciales aux copies d'exploits",
-      "texte": [],
-      "mots_cles": ["copies d'exploits", "règles spéciales"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Actes soumis au timbre de dimension - Sous-section 2 : Applications particulières"
     },
     {
       "article": "Art. 37",
@@ -418,7 +394,8 @@
         "formalité",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 38",
@@ -433,7 +410,8 @@
         "demi-feuille",
         "papier normal"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 39",
@@ -455,7 +433,8 @@
         "droits de timbre",
         "dimension"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 40",
@@ -472,7 +451,8 @@
         "timbres mobiles",
         "valeur"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 41",
@@ -491,7 +471,8 @@
         "lisibles",
         "abréviations"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 42",
@@ -505,14 +486,8 @@
         "amende",
         "1.000 FCFA"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C2-ST3",
-      "titre": "C. Prescriptions et prohibitions diverses",
-      "texte": [],
-      "mots_cles": ["prescriptions", "prohibitions"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Règles spéciales aux copies d'exploits"
     },
     {
       "article": "Art. 43 et 44",
@@ -521,7 +496,8 @@
         "Abrogés."
       ],
       "mots_cles": [],
-      "statut": "abrogé"
+      "statut": "abrogé",
+      "section": "Section 3 : Prescriptions et prohibitions"
     },
     {
       "article": "Art. 45",
@@ -539,7 +515,8 @@
         "bureau de l'enregistrement",
         "formalité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions et prohibitions"
     },
     {
       "article": "Art. 46",
@@ -561,7 +538,8 @@
         "contrevenants",
         "droits de timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions et prohibitions"
     }
   ]
 }

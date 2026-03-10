@@ -14,13 +14,6 @@
   },
   "articles": [
     {
-      "article": "T2L3C1-ST1",
-      "titre": "I. Valeurs soumises à la taxe",
-      "texte": [],
-      "mots_cles": ["valeurs", "soumises à la taxe", "IRCM"],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 1",
       "titre": "Revenus des capitaux mobiliers soumis à l'impôt",
       "texte": [
@@ -113,7 +106,8 @@
         "déficit",
         "bénéfice taxable"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Valeurs soumises à la taxe"
     },
     {
       "article": "Art. 2",
@@ -139,14 +133,8 @@
         "fonds social",
         "capital social"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST2",
-      "titre": "II. Tarif de l'impôt",
-      "texte": [],
-      "mots_cles": ["tarif", "impôt", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Valeurs soumises à la taxe"
     },
     {
       "article": "Art. 3",
@@ -174,21 +162,8 @@
         "IRCM",
         "conventions pétrolières"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3",
-      "titre": "III. Assiette et mode de perception de l'impôt",
-      "texte": [],
-      "mots_cles": ["assiette", "mode de perception", "impôt", "IRCM"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3a",
-      "titre": "1) Détermination du revenu ou de la rémunération",
-      "texte": [],
-      "mots_cles": ["détermination", "revenu", "rémunération"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Tarif de l'impôt"
     },
     {
       "article": "Art. 4",
@@ -219,14 +194,8 @@
         "primes de remboursement",
         "taux d'émission"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3b",
-      "titre": "2) Mode d'évaluation du taux d'émission des emprunts",
-      "texte": [],
-      "mots_cles": ["évaluation", "taux d'émission", "emprunts"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 1 : Détermination du revenu ou de la rémunération"
     },
     {
       "article": "Art. 5",
@@ -248,14 +217,8 @@
         "liquidation",
         "moyenne"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3c",
-      "titre": "3) Remboursements et amortissements dans les sociétés",
-      "texte": [],
-      "mots_cles": ["remboursements", "amortissements", "sociétés"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 2 : Évaluation du taux d'émission"
     },
     {
       "article": "Art. 6",
@@ -315,14 +278,8 @@
         "dépérissement",
         "franchise d'impôt"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3d",
-      "titre": "4) Lieu de paiement de l'impôt",
-      "texte": [],
-      "mots_cles": ["lieu de paiement", "impôt", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 3 : Remboursements et amortissements"
     },
     {
       "article": "Art. 7",
@@ -346,14 +303,8 @@
         "IRCM",
         "siège social"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3e",
-      "titre": "5) Mode de paiement de l'impôt",
-      "texte": [],
-      "mots_cles": ["mode de paiement", "impôt", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 4 : Lieu de paiement"
     },
     {
       "article": "Art. 8",
@@ -375,7 +326,8 @@
         "collectivités locales",
         "établissements publics"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 9",
@@ -403,7 +355,8 @@
         "représentants légaux",
         "six mois"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 9 bis",
@@ -419,7 +372,8 @@
         "distribués",
         "IRCM"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 9 ter",
@@ -445,7 +399,8 @@
         "libératoire",
         "droit commun"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 10",
@@ -472,7 +427,8 @@
         "bourse",
         "taxe exigible"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 11",
@@ -496,14 +452,8 @@
         "domicile",
         "résidence"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C1-ST3f",
-      "titre": "6) Pénalités",
-      "texte": [],
-      "mots_cles": ["pénalités", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 5 : Mode de paiement"
     },
     {
       "article": "Art. 12",
@@ -530,7 +480,8 @@
         "contravention",
         "amende"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Assiette et mode de perception de l'impôt - Sous-section 6 : Pénalités"
     }
   ]
 }

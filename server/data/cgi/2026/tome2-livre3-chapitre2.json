@@ -14,13 +14,6 @@
   },
   "articles": [
     {
-      "article": "T2L3C2-ST1",
-      "titre": "1) Procédure",
-      "texte": [],
-      "mots_cles": ["procédure", "IRCM"],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 13",
       "titre": "Résolution des difficultés relatives à la perception de l'IRCM",
       "texte": [
@@ -33,7 +26,8 @@
         "instances",
         "administration"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Procédure"
     },
     {
       "article": "Art. 14",
@@ -47,14 +41,8 @@
         "instances",
         "enregistrement"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C2-ST2",
-      "titre": "2) Prescriptions",
-      "texte": [],
-      "mots_cles": ["prescriptions", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Procédure"
     },
     {
       "article": "Art. 15",
@@ -89,7 +77,8 @@
         "restitution",
         "taxes indûment perçues"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Prescriptions"
     },
     {
       "article": "Art. 16",
@@ -109,14 +98,8 @@
         "taxes",
         "article 1"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L3C2-ST3",
-      "titre": "3) Droit de communication",
-      "texte": [],
-      "mots_cles": ["droit de communication", "IRCM"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Prescriptions"
     },
     {
       "article": "Art. 17",
@@ -147,7 +130,8 @@
         "chiffre d'affaires",
         "1.000.000 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Droit de communication"
     }
   ]
 }

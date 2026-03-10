@@ -21,12 +21,14 @@
       ],
       "mots_cles": [
         "règlements spéciaux",
+        "visés pour enregistrement",
         "enregistrement en débit",
         "enregistrés gratis",
         "exempts d'enregistrement",
-        "actes"
+        "actes ci-après énumérés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 269",
@@ -38,12 +40,14 @@
         "actes",
         "jugements",
         "arrêts",
-        "procédure",
-        "rectification",
+        "procédure organisée par la loi",
+        "rectification des mentions",
         "casier judiciaire",
+        "visés pour enregistrement",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 270",
@@ -73,13 +77,14 @@
         "litiges",
         "violation de la loi"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 271",
       "titre": "Avance des frais en matière de faillite",
       "texte": [
-        "Lorsque les deniers appartenant à la faillite ne peuvent suivre immédiatement aux frais du jugement de déclaration de faillite, d'affichage et d'insertion de ce jugement dans les journaux, d'apposition des scellés, d'arrestation et d'incarcération du failli, l'avance de ces frais est faite sur l'ordonnance du juge commissaire, par le Trésor Public qui en est remboursé par privilège sur les premiers recouvrements, sans préjudice du privilège du propriétaire.",
+        "Lorsque les deniers appartenant à la faillite ne peuvent suffire immédiatement aux frais du jugement de déclaration de faillite, d'affiche et d'insertion de ce jugement dans les journaux, d'apposition des scellés, d'arrestation et d'incarcération du failli, l'avance de ces frais est faite sur l'ordonnance du juge commissaire, par le Trésor Public qui en est remboursé par privilège sur les premiers recouvrements, sans préjudice du privilège du propriétaire.",
         "Cette disposition est applicable à la procédure d'appel du jugement de faillite. Dans ce cas, les actes sont à enregistrer en débit."
       ],
       "mots_cles": [
@@ -88,7 +93,7 @@
         "frais",
         "jugement",
         "déclaration de faillite",
-        "affichage",
+        "affiche",
         "insertion",
         "journaux",
         "scellés",
@@ -103,7 +108,8 @@
         "appel",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 272",
@@ -117,9 +123,11 @@
         "simple police",
         "police correctionnelle",
         "criminelle",
+        "visés pour enregistrement",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 273",
@@ -138,13 +146,14 @@
         "Trésor",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 274",
       "titre": "Actes à la requête du Ministère public",
       "texte": [
-        "Les actes faits à la requête du Ministère public, en matière de simple police correctionnelle ou criminelle ainsi que les déclarations d'appel des jugements et arrêts rendus en ces mêmes matières sont visés pour enregistrement en débit."
+        "Les actes faits à la requête du Ministère public, en matière de simple police, correctionnelle ou criminelle ainsi que les déclarations d'appel des jugements et arrêts rendus en ces mêmes matières sont visés pour enregistrement en débit."
       ],
       "mots_cles": [
         "actes",
@@ -158,7 +167,8 @@
         "arrêts",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 275",
@@ -206,7 +216,8 @@
         "exécutoire",
         "recouvrement des avances"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 276",
@@ -221,21 +232,22 @@
         "assisté",
         "taxe",
         "droits",
-        "frais",
+        "frais de toute nature",
         "honoraires",
         "émoluments",
         "assistance judiciaire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 277",
       "titre": "Recouvrement des frais d'assistance judiciaire",
       "texte": [
-        "1) Dans les cas prévus par l'article précédent, la condamnation est prononcée et l'exécutoire délivré au nom du Premier Ministre.",
+        "1) Dans le cas prévu par l'article précédent, la condamnation est prononcée et l'exécutoire délivré au nom du Premier Ministre.",
         "Le recouvrement en sera poursuivi comme en matière d'enregistrement par le service de l'enregistrement, pour le compte du Budget, sauf le droit pour l'assisté de concourir aux actes de poursuite conjointement avec ledit service, lorsque cela est utile pour exécuter les décisions rendues et en conserver les effets.",
-        "2) Les frais faits sous le bénéfice de l'assistance judiciaire, des procédures d'exécution et des instances relatives à cette exécution entre l'assisté et la partie poursuivie qui auraient été discontinues ou suspendues pendant plus d'une année, sont répétés par la partie poursuivie sauf justifications ou décisions contraires.",
-        "L'exécutoire est délivré conformément au paragraphe 1 ci-précédent.",
+        "2) Les frais faits sous le bénéfice de l'assistance judiciaire, des procédures d'exécution et des instances relatives à cette exécution entre l'assisté et la partie poursuivie qui auraient été discontinuées ou suspendues pendant plus d'une année, sont réputés dus par la partie poursuivie sauf justifications ou décisions contraires.",
+        "L'exécutoire est délivré conformément au paragraphe 1 qui précède.",
         "3) Il est délivré un exécutoire séparé au nom du Premier Ministre pour les droits qui, ne devant pas être compris dans l'exécutoire délivré contre la partie adverse, restent dus par l'assisté au Trésor, conformément au cinquième paragraphe de l'article 275.",
         "4) Le service de l'enregistrement fait immédiatement aux divers ayants droit sur les crédits du Budget.",
         "Les sommes à répartir entre les Officiers ministériels d'une part, pour les honoraires, et le Budget de l'autre pour les droits d'enregistrement et de timbre dont la perception a été différée, seront mandatées au profit des ayants droit sur les crédits du Budget.",
@@ -255,19 +267,25 @@
         "procédures d'exécution",
         "instances",
         "partie poursuivie",
+        "discontinuées",
+        "réputés dus",
         "Trésor",
         "article 275",
+        "partie adverse",
         "ayants droit",
         "Officiers ministériels",
         "honoraires",
         "droits d'enregistrement",
         "droits de timbre",
+        "perception différée",
+        "mandatées",
         "créance du Trésor",
         "avances",
         "droits de greffe",
         "préférence"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 278",
@@ -279,12 +297,15 @@
         "condamnation",
         "dépens",
         "assisté",
+        "règles tracées",
         "recouvrement",
         "sommes dues",
         "Trésor",
+        "paragraphes 5 et 8",
         "article 275"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 279",
@@ -309,7 +330,8 @@
         "répartition",
         "article 277"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 280",
@@ -327,13 +349,8 @@
         "prescription",
         "dix ans"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C12-ST1",
-      "titre": "Actes à enregistrer gratis",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Enregistrement en débit"
     },
     {
       "article": "Art. 281",
@@ -357,7 +374,8 @@
         "collectivités",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 282",
@@ -377,7 +395,8 @@
         "100.000 FCFA",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 283",
@@ -404,7 +423,8 @@
         "autorités du territoire",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 284",
@@ -414,13 +434,13 @@
       ],
       "mots_cles": [
         "avances",
-        "titres",
-        "fonds d'État français",
-        "valeurs",
+        "titre de fonds d'État français",
+        "valeurs émises",
         "Trésor français",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 285",
@@ -435,7 +455,8 @@
         "propriété foncière",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 285 bis",
@@ -450,13 +471,8 @@
         "statuts",
         "enregistrement gratis"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C12-ST2",
-      "titre": "Actes exempts de la formalité de l'enregistrement",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement gratis"
     },
     {
       "article": "Art. 286",
@@ -471,7 +487,8 @@
         "allocations familiales",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 287",
@@ -485,7 +502,8 @@
         "réglementation du travail",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 288",
@@ -495,12 +513,14 @@
       ],
       "mots_cles": [
         "jugements",
-        "procédures",
+        "procédures engagées",
+        "requête",
         "Ministère public",
         "état civil",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 289",
@@ -516,7 +536,8 @@
         "statut personnel coutumier",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 290",
@@ -533,7 +554,8 @@
         "communes",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 291",
@@ -546,10 +568,13 @@
         "arrêtés",
         "décisions",
         "autorités administratives",
+        "nominativement assujettis",
+        "enregistrement",
         "article 10",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 292",
@@ -579,7 +604,8 @@
         "événements de guerre",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 293",
@@ -601,7 +627,8 @@
         "infractions",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 294",
@@ -614,7 +641,8 @@
         "voyage",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 295",
@@ -647,7 +675,8 @@
         "pénalités",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 295 bis",
@@ -663,7 +692,8 @@
         "chèques",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 296",
@@ -694,7 +724,8 @@
         "recrutement de l'armée",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 297",
@@ -712,7 +743,8 @@
         "assistance judiciaire",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 298",
@@ -735,7 +767,8 @@
         "exploits",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 299",
@@ -760,7 +793,8 @@
         "absents",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 300",
@@ -780,7 +814,8 @@
         "pensions",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 301",
@@ -793,7 +828,8 @@
         "casier judiciaire",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 302",
@@ -808,7 +844,8 @@
         "conseil de famille",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 303",
@@ -838,7 +875,8 @@
         "procès-verbal",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 304",
@@ -871,7 +909,8 @@
         "gestions publiques",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 305",
@@ -894,7 +933,8 @@
         "émoluments",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 306",
@@ -920,7 +960,8 @@
         "enregistrement gratis",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 307",
@@ -944,7 +985,8 @@
         "autorité administrative",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 308",
@@ -960,7 +1002,8 @@
         "effets négociables",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 309",
@@ -978,7 +1021,8 @@
         "opérations électorales",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 310",
@@ -1023,7 +1067,8 @@
         "répertoire",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 311",
@@ -1066,7 +1111,8 @@
         "enfants légitimes",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 312",
@@ -1085,7 +1131,8 @@
         "agents de la force publique",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 313",
@@ -1099,7 +1146,8 @@
         "officiers publics",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 314",
@@ -1114,7 +1162,8 @@
         "livres de commerce",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 315",
@@ -1130,7 +1179,8 @@
         "Code civil",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 316",
@@ -1151,7 +1201,8 @@
         "fonds de commerce",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 317",
@@ -1175,7 +1226,8 @@
         "article 265",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 318",
@@ -1215,7 +1267,8 @@
         "loi 27 juillet 1921",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 319",
@@ -1233,7 +1286,8 @@
         "loi 2 juillet 1909",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 320",
@@ -1261,7 +1315,8 @@
         "décès",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 321",
@@ -1278,7 +1333,8 @@
         "sociétés de secours mutuels",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 322",
@@ -1307,7 +1363,8 @@
         "qualités professionnelles",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 323",
@@ -1330,7 +1387,8 @@
         "allocations familiales",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 324",
@@ -1351,7 +1409,8 @@
         "droits réels immobiliers",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 325",
@@ -1367,7 +1426,8 @@
         "illettrés",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 326",
@@ -1387,7 +1447,8 @@
         "services administratifs",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 327",
@@ -1410,7 +1471,8 @@
         "200.000 FCFA",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 328",
@@ -1429,7 +1491,8 @@
         "loi française",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 329",
@@ -1444,7 +1507,8 @@
         "notaires",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 330",
@@ -1458,7 +1522,8 @@
         "titres définitifs",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 331",
@@ -1473,7 +1538,8 @@
         "transactions",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     },
     {
       "article": "Art. 331 bis",
@@ -1493,7 +1559,8 @@
         "organismes humanitaires",
         "exemption"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Exemptions"
     }
   ]
 }

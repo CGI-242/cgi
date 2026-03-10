@@ -42,7 +42,8 @@
         "article 30",
         "oblitération"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Passeports"
     },
     {
       "article": "Art. 48",
@@ -93,7 +94,8 @@
         "Zaïre",
         "article 30"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Passeports"
     },
     {
       "article": "Art. 49",
@@ -108,7 +110,8 @@
         "droit de timbre",
         "1.000 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Cartes d'identité et de séjour"
     },
     {
       "article": "Art. 50",
@@ -144,7 +147,8 @@
         "Ministres de Culte",
         "timbres mobiles"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Cartes d'identité et de séjour"
     },
     {
       "article": "Art. 50 bis",
@@ -172,7 +176,8 @@
         "transport fluvial",
         "transport maritime international"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Titres de transport"
     },
     {
       "article": "Art. 50 ter",
@@ -209,7 +214,8 @@
         "pénalité",
         "100 %"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Titres de transport"
     },
     {
       "article": "Art. 50 quater",
@@ -232,7 +238,8 @@
         "pénalité de retard",
         "100 %"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Titres de transport"
     },
     {
       "article": "Art. 50 quinquies",
@@ -241,7 +248,8 @@
         "Abrogé."
       ],
       "mots_cles": [],
-      "statut": "abrogé"
+      "statut": "abrogé",
+      "section": "Section 3 : Titres de transport"
     }
   ]
 }

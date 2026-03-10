@@ -14,12 +14,6 @@
   },
   "articles": [
     {
-      "article": "T2L1C13-ST1",
-      "titre": "1) Assiette de la taxe",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 332",
       "titre": "Principe de la taxe spéciale sur les assurances",
       "texte": [
@@ -37,13 +31,8 @@
         "droit de timbre",
         "dispense"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST2",
-      "titre": "2) Taux",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Assiette de la taxe"
     },
     {
       "article": "Art. 333",
@@ -56,7 +45,8 @@
         "taxe",
         "taux 15 %"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Taux"
     },
     {
       "article": "Art. 334",
@@ -77,13 +67,8 @@
         "enregistrement",
         "crédits à l'exportation"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST3",
-      "titre": "3) Dispense de la taxe",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Taux"
     },
     {
       "article": "Art. 335",
@@ -120,13 +105,8 @@
         "enregistrement",
         "réassurances"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST4",
-      "titre": "4) Liquidation et paiement de la taxe",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Dispense de la taxe"
     },
     {
       "article": "Art. 336",
@@ -152,7 +132,8 @@
         "15 du mois",
         "police"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
     },
     {
       "article": "Art. 337",
@@ -170,7 +151,8 @@
         "bureau de l'enregistrement",
         "principal établissement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
     },
     {
       "article": "Art. 338",
@@ -187,7 +169,8 @@
         "année",
         "déclaration spéciale"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Liquidation et paiement"
     },
     {
       "article": "Art. 339",
@@ -196,13 +179,8 @@
         "Abrogé"
       ],
       "mots_cles": [],
-      "statut": "abrogé"
-    },
-    {
-      "article": "T2L1C13-ST5",
-      "titre": "5) Solidarité des redevables",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "abrogé",
+      "section": "Section 4 : Liquidation et paiement"
     },
     {
       "article": "Art. 340",
@@ -215,13 +193,8 @@
         "taxe",
         "société d'assurances"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST6",
-      "titre": "6) Obligations des assureurs",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 5 : Solidarité des redevables"
     },
     {
       "article": "Art. 341",
@@ -235,7 +208,8 @@
         "agences",
         "intermédiaires"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 6 : Obligations des assureurs"
     },
     {
       "article": "Art. 342 et 342 bis",
@@ -244,13 +218,8 @@
         "Abrogés."
       ],
       "mots_cles": [],
-      "statut": "abrogé"
-    },
-    {
-      "article": "T2L1C13-ST7",
-      "titre": "7) Droit de communication",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "abrogé",
+      "section": "Section 6 : Obligations des assureurs"
     },
     {
       "article": "Art. 343",
@@ -289,13 +258,8 @@
         "procès-verbal",
         "article 157"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST8",
-      "titre": "8) Pénalités",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Droit de communication"
     },
     {
       "article": "Art. 344",
@@ -324,13 +288,8 @@
         "100.000 FCFA",
         "article 343"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST9",
-      "titre": "9) Prescription",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Pénalités"
     },
     {
       "article": "Art. 345",
@@ -355,7 +314,8 @@
         "déclaration",
         "article 341"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Prescription"
     },
     {
       "article": "Art. 346",
@@ -364,7 +324,8 @@
         "Abrogé."
       ],
       "mots_cles": [],
-      "statut": "abrogé"
+      "statut": "abrogé",
+      "section": "Section 9 : Prescription"
     },
     {
       "article": "Art. 347",
@@ -398,13 +359,8 @@
         "cinq ans",
         "article 336"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C13-ST10",
-      "titre": "10) Poursuites et instances",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Prescription"
     },
     {
       "article": "Art. 348",
@@ -420,7 +376,8 @@
         "instances",
         "matière d'enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 10 : Poursuites et instances"
     },
     {
       "article": "Art. 349",
@@ -435,7 +392,8 @@
         "surveillance",
         "assurances"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 10 : Poursuites et instances"
     }
   ]
 }

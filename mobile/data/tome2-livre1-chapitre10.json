@@ -24,7 +24,9 @@
         "perception",
         "droits d'enregistrement",
         "instances",
-        "administration"
+        "administration",
+        "solution",
+        "introduction des instances"
       ],
       "statut": "en vigueur"
     },
@@ -63,7 +65,15 @@
         "Tribunal",
         "domicile",
         "amendes",
-        "pénalités"
+        "pénalités",
+        "recouvrement",
+        "comptable",
+        "bien-fondé",
+        "réclamation",
+        "quotité",
+        "exigibles",
+        "droit commun",
+        "assignation"
       ],
       "statut": "en vigueur"
     },
@@ -96,7 +106,10 @@
         "droit commun",
         "commandements",
         "lettre recommandée",
-        "Code de procédure civile"
+        "Code de procédure civile",
+        "agent habilité",
+        "exploits",
+        "avis de réception"
       ],
       "statut": "en vigueur"
     },
@@ -114,7 +127,9 @@
         "titre de perception",
         "intérêts moratoires",
         "6 %",
-        "mois"
+        "mois",
+        "réglementation en vigueur",
+        "somme exigible"
       ],
       "statut": "en vigueur"
     },
@@ -127,7 +142,7 @@
         "Les parties ne sont point obligées d'employer le ministère des avocats défenseurs.",
         "Il n'y a d'autres frais à supporter, pour la partie qui succombe, que ceux de papier timbré, des significations et du droit d'enregistrement des jugements.",
         "Les tribunaux accordent, soit aux parties, soit aux préposés de la régie qui suivent les instances, le délai qu'ils leur demandent pour produire leurs défenses ; il ne peut néanmoins être de plus de trois décades.",
-        "Les jugements sont rendus dans les trois mois au plus tard à compter de l'introduction des instances, sur le rapport d'un juge, après en audience publique et sur les conclusions du représentant du Ministère public.",
+        "Les jugements sont rendus dans les trois mois au plus tard à compter de l'introduction des instances, sur le rapport d'un juge, fait en audience publique et sur les conclusions du représentant du Ministère public.",
         "Toutes les voies de recours prévues par le Code de procédure sont ouvertes aux parties."
       ],
       "mots_cles": [
@@ -146,7 +161,12 @@
         "trois mois",
         "Ministère public",
         "Code de procédure",
-        "voies de recours"
+        "voies de recours",
+        "instruction",
+        "audience publique",
+        "défenses",
+        "régie",
+        "rapport du juge"
       ],
       "statut": "en vigueur"
     },
@@ -154,7 +174,7 @@
       "article": "Art. 206",
       "titre": "Frais de poursuite et insolvabilité",
       "texte": [
-        "Les frais de poursuites payés par les préposés de l'enregistrement pour des articles tombés en non-valeur pour cause d'insolvabilité reconnue des parties condamnées, sont remboursés sur l'État acquitté en rapportant à l'appui de leurs comptes. L'état est visé sans frais par le Tribunal Civil et appuyé des pièces justificatives."
+        "Les frais de poursuites payés par les préposés de l'enregistrement pour des articles tombés en non-valeur pour cause d'insolvabilité reconnue des parties condamnées, sont remboursés sur l'état qu'ils en rapportent à l'appui de leurs comptes. L'état est taxé sans frais par le Tribunal Civil et appuyé des pièces justificatives."
       ],
       "mots_cles": [
         "frais de poursuites",
@@ -164,7 +184,10 @@
         "remboursés",
         "État",
         "Tribunal Civil",
-        "pièces justificatives"
+        "pièces justificatives",
+        "parties condamnées",
+        "comptes",
+        "taxé sans frais"
       ],
       "statut": "en vigueur"
     },
@@ -190,7 +213,13 @@
         "domicile",
         "résidence",
         "siège",
-        "droit commun"
+        "droit commun",
+        "copie",
+        "extrait",
+        "administration des Postes",
+        "titre original",
+        "disparition",
+        "absence"
       ],
       "statut": "en vigueur"
     },

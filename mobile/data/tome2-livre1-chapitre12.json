@@ -21,10 +21,11 @@
       ],
       "mots_cles": [
         "règlements spéciaux",
+        "visés pour enregistrement",
         "enregistrement en débit",
         "enregistrés gratis",
         "exempts d'enregistrement",
-        "actes"
+        "actes ci-après énumérés"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Enregistrement en débit"
@@ -39,9 +40,10 @@
         "actes",
         "jugements",
         "arrêts",
-        "procédure",
-        "rectification",
+        "procédure organisée par la loi",
+        "rectification des mentions",
         "casier judiciaire",
+        "visés pour enregistrement",
         "enregistrement en débit"
       ],
       "statut": "en vigueur",
@@ -82,7 +84,7 @@
       "article": "Art. 271",
       "titre": "Avance des frais en matière de faillite",
       "texte": [
-        "Lorsque les deniers appartenant à la faillite ne peuvent suivre immédiatement aux frais du jugement de déclaration de faillite, d'affichage et d'insertion de ce jugement dans les journaux, d'apposition des scellés, d'arrestation et d'incarcération du failli, l'avance de ces frais est faite sur l'ordonnance du juge commissaire, par le Trésor Public qui en est remboursé par privilège sur les premiers recouvrements, sans préjudice du privilège du propriétaire.",
+        "Lorsque les deniers appartenant à la faillite ne peuvent suffire immédiatement aux frais du jugement de déclaration de faillite, d'affiche et d'insertion de ce jugement dans les journaux, d'apposition des scellés, d'arrestation et d'incarcération du failli, l'avance de ces frais est faite sur l'ordonnance du juge commissaire, par le Trésor Public qui en est remboursé par privilège sur les premiers recouvrements, sans préjudice du privilège du propriétaire.",
         "Cette disposition est applicable à la procédure d'appel du jugement de faillite. Dans ce cas, les actes sont à enregistrer en débit."
       ],
       "mots_cles": [
@@ -91,7 +93,7 @@
         "frais",
         "jugement",
         "déclaration de faillite",
-        "affichage",
+        "affiche",
         "insertion",
         "journaux",
         "scellés",
@@ -121,6 +123,7 @@
         "simple police",
         "police correctionnelle",
         "criminelle",
+        "visés pour enregistrement",
         "enregistrement en débit"
       ],
       "statut": "en vigueur",
@@ -150,7 +153,7 @@
       "article": "Art. 274",
       "titre": "Actes à la requête du Ministère public",
       "texte": [
-        "Les actes faits à la requête du Ministère public, en matière de simple police correctionnelle ou criminelle ainsi que les déclarations d'appel des jugements et arrêts rendus en ces mêmes matières sont visés pour enregistrement en débit."
+        "Les actes faits à la requête du Ministère public, en matière de simple police, correctionnelle ou criminelle ainsi que les déclarations d'appel des jugements et arrêts rendus en ces mêmes matières sont visés pour enregistrement en débit."
       ],
       "mots_cles": [
         "actes",
@@ -229,7 +232,7 @@
         "assisté",
         "taxe",
         "droits",
-        "frais",
+        "frais de toute nature",
         "honoraires",
         "émoluments",
         "assistance judiciaire"
@@ -241,10 +244,10 @@
       "article": "Art. 277",
       "titre": "Recouvrement des frais d'assistance judiciaire",
       "texte": [
-        "1) Dans les cas prévus par l'article précédent, la condamnation est prononcée et l'exécutoire délivré au nom du Premier Ministre.",
+        "1) Dans le cas prévu par l'article précédent, la condamnation est prononcée et l'exécutoire délivré au nom du Premier Ministre.",
         "Le recouvrement en sera poursuivi comme en matière d'enregistrement par le service de l'enregistrement, pour le compte du Budget, sauf le droit pour l'assisté de concourir aux actes de poursuite conjointement avec ledit service, lorsque cela est utile pour exécuter les décisions rendues et en conserver les effets.",
-        "2) Les frais faits sous le bénéfice de l'assistance judiciaire, des procédures d'exécution et des instances relatives à cette exécution entre l'assisté et la partie poursuivie qui auraient été discontinues ou suspendues pendant plus d'une année, sont répétés par la partie poursuivie sauf justifications ou décisions contraires.",
-        "L'exécutoire est délivré conformément au paragraphe 1 ci-précédent.",
+        "2) Les frais faits sous le bénéfice de l'assistance judiciaire, des procédures d'exécution et des instances relatives à cette exécution entre l'assisté et la partie poursuivie qui auraient été discontinuées ou suspendues pendant plus d'une année, sont réputés dus par la partie poursuivie sauf justifications ou décisions contraires.",
+        "L'exécutoire est délivré conformément au paragraphe 1 qui précède.",
         "3) Il est délivré un exécutoire séparé au nom du Premier Ministre pour les droits qui, ne devant pas être compris dans l'exécutoire délivré contre la partie adverse, restent dus par l'assisté au Trésor, conformément au cinquième paragraphe de l'article 275.",
         "4) Le service de l'enregistrement fait immédiatement aux divers ayants droit sur les crédits du Budget.",
         "Les sommes à répartir entre les Officiers ministériels d'une part, pour les honoraires, et le Budget de l'autre pour les droits d'enregistrement et de timbre dont la perception a été différée, seront mandatées au profit des ayants droit sur les crédits du Budget.",
@@ -264,13 +267,18 @@
         "procédures d'exécution",
         "instances",
         "partie poursuivie",
+        "discontinuées",
+        "réputés dus",
         "Trésor",
         "article 275",
+        "partie adverse",
         "ayants droit",
         "Officiers ministériels",
         "honoraires",
         "droits d'enregistrement",
         "droits de timbre",
+        "perception différée",
+        "mandatées",
         "créance du Trésor",
         "avances",
         "droits de greffe",
@@ -289,9 +297,11 @@
         "condamnation",
         "dépens",
         "assisté",
+        "règles tracées",
         "recouvrement",
         "sommes dues",
         "Trésor",
+        "paragraphes 5 et 8",
         "article 275"
       ],
       "statut": "en vigueur",
@@ -424,9 +434,8 @@
       ],
       "mots_cles": [
         "avances",
-        "titres",
-        "fonds d'État français",
-        "valeurs",
+        "titre de fonds d'État français",
+        "valeurs émises",
         "Trésor français",
         "enregistrement gratis"
       ],
@@ -504,7 +513,8 @@
       ],
       "mots_cles": [
         "jugements",
-        "procédures",
+        "procédures engagées",
+        "requête",
         "Ministère public",
         "état civil",
         "exemption"
@@ -558,6 +568,8 @@
         "arrêtés",
         "décisions",
         "autorités administratives",
+        "nominativement assujettis",
+        "enregistrement",
         "article 10",
         "exemption"
       ],

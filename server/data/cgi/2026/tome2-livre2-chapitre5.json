@@ -35,7 +35,8 @@
         "mandats de place",
         "lettres de crédit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
     },
     {
       "article": "Art. 140",
@@ -52,7 +53,8 @@
         "acceptés",
         "acquittés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
     },
     {
       "article": "Art. 141",
@@ -70,7 +72,8 @@
         "acquittés",
         "Congo"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
     },
     {
       "article": "Art. 142",
@@ -88,7 +91,8 @@
         "5.000 FCFA",
         "effet"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Champ d'application et tarif"
     },
     {
       "article": "Art. 143",
@@ -103,7 +107,8 @@
         "timbres mobiles",
         "oblitération"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Paiement et contraventions"
     },
     {
       "article": "Art. 144",
@@ -122,7 +127,8 @@
         "paiement",
         "droit de timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Paiement et contraventions"
     }
   ]
 }

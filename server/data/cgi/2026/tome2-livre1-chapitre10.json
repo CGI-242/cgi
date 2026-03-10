@@ -19,7 +19,15 @@
       "texte": [
         "La solution des difficultés qui peuvent s'élever relativement à la perception des droits d'enregistrement avant l'introduction des instances, appartient à l'administration."
       ],
-      "mots_cles": ["difficultés", "perception", "droits d'enregistrement", "instances", "administration"],
+      "mots_cles": [
+        "difficultés",
+        "perception",
+        "droits d'enregistrement",
+        "instances",
+        "administration",
+        "solution",
+        "introduction des instances"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -38,7 +46,35 @@
         "Dans ce cas, l'opposant est tenu d'élire le domicile dans la commune où siège la juridiction.",
         "Elle n'interrompt pas l'exécution du principal du titre de perception ; les amendes, pénalités, droits en sus et tous accessoires sont réservés jusqu'à décision de justice."
       ],
-      "mots_cles": ["droits", "taxes", "redevances", "impositions", "Direction de l'enregistrement", "domaines", "timbre", "titre de perception", "lettre recommandée", "accusé de réception", "notification", "sommation", "prescription", "opposition", "trois mois", "Tribunal", "domicile", "amendes", "pénalités"],
+      "mots_cles": [
+        "droits",
+        "taxes",
+        "redevances",
+        "impositions",
+        "Direction de l'enregistrement",
+        "domaines",
+        "timbre",
+        "titre de perception",
+        "lettre recommandée",
+        "accusé de réception",
+        "notification",
+        "sommation",
+        "prescription",
+        "opposition",
+        "trois mois",
+        "Tribunal",
+        "domicile",
+        "amendes",
+        "pénalités",
+        "recouvrement",
+        "comptable",
+        "bien-fondé",
+        "réclamation",
+        "quotité",
+        "exigibles",
+        "droit commun",
+        "assignation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -51,7 +87,30 @@
         "Toutefois, les commandements peuvent être notifiés par la poste, par lettre recommandée avec demande d'avis de réception.",
         "Ces actes de poursuite échappent alors aux conditions générales de validité des exploits telles qu'elles sont fixées par le Code de procédure civile."
       ],
-      "mots_cles": ["poursuites", "titre de perception", "douze jours", "notification", "paiement", "opposition", "receveur de l'enregistrement", "huissier", "Comptable", "recouvrement", "impôts", "droits", "taxes", "articles 481 à 510", "CGI Tome 1", "droit commun", "commandements", "lettre recommandée", "Code de procédure civile"],
+      "mots_cles": [
+        "poursuites",
+        "titre de perception",
+        "douze jours",
+        "notification",
+        "paiement",
+        "opposition",
+        "receveur de l'enregistrement",
+        "huissier",
+        "Comptable",
+        "recouvrement",
+        "impôts",
+        "droits",
+        "taxes",
+        "articles 481 à 510",
+        "CGI Tome 1",
+        "droit commun",
+        "commandements",
+        "lettre recommandée",
+        "Code de procédure civile",
+        "agent habilité",
+        "exploits",
+        "avis de réception"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -61,7 +120,17 @@
         "Pour les impôts perçus par l'administration de l'enregistrement qui ne sont pas majorés de pénalités de retard par la réglementation en vigueur, il est ajouté à compter de la date du titre de perception des intérêts moratoires calculés au taux de 6 % sur la somme reconnue exigible.",
         "Tout mois commencé est compté pour un mois entier."
       ],
-      "mots_cles": ["impôts", "administration de l'enregistrement", "pénalités de retard", "titre de perception", "intérêts moratoires", "6 %", "mois"],
+      "mots_cles": [
+        "impôts",
+        "administration de l'enregistrement",
+        "pénalités de retard",
+        "titre de perception",
+        "intérêts moratoires",
+        "6 %",
+        "mois",
+        "réglementation en vigueur",
+        "somme exigible"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -73,19 +142,53 @@
         "Les parties ne sont point obligées d'employer le ministère des avocats défenseurs.",
         "Il n'y a d'autres frais à supporter, pour la partie qui succombe, que ceux de papier timbré, des significations et du droit d'enregistrement des jugements.",
         "Les tribunaux accordent, soit aux parties, soit aux préposés de la régie qui suivent les instances, le délai qu'ils leur demandent pour produire leurs défenses ; il ne peut néanmoins être de plus de trois décades.",
-        "Les jugements sont rendus dans les trois mois au plus tard à compter de l'introduction des instances, sur le rapport d'un juge, après en audience publique et sur les conclusions du représentant du Ministère public.",
+        "Les jugements sont rendus dans les trois mois au plus tard à compter de l'introduction des instances, sur le rapport d'un juge, fait en audience publique et sur les conclusions du représentant du Ministère public.",
         "Toutes les voies de recours prévues par le Code de procédure sont ouvertes aux parties."
       ],
-      "mots_cles": ["instances", "tribunaux civils", "bureau de perception", "mémoires", "avocat", "explications orales", "avocats défenseurs", "papier timbré", "significations", "enregistrement", "jugements", "trois décades", "trois mois", "Ministère public", "Code de procédure", "voies de recours"],
+      "mots_cles": [
+        "instances",
+        "tribunaux civils",
+        "bureau de perception",
+        "mémoires",
+        "avocat",
+        "explications orales",
+        "avocats défenseurs",
+        "papier timbré",
+        "significations",
+        "enregistrement",
+        "jugements",
+        "trois décades",
+        "trois mois",
+        "Ministère public",
+        "Code de procédure",
+        "voies de recours",
+        "instruction",
+        "audience publique",
+        "défenses",
+        "régie",
+        "rapport du juge"
+      ],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 206",
       "titre": "Frais de poursuite et insolvabilité",
       "texte": [
-        "Les frais de poursuites payés par les préposés de l'enregistrement pour des articles tombés en non-valeur pour cause d'insolvabilité reconnue des parties condamnées, sont remboursés sur l'État acquitté en rapportant à l'appui de leurs comptes. L'état est visé sans frais par le Tribunal Civil et appuyé des pièces justificatives."
+        "Les frais de poursuites payés par les préposés de l'enregistrement pour des articles tombés en non-valeur pour cause d'insolvabilité reconnue des parties condamnées, sont remboursés sur l'état qu'ils en rapportent à l'appui de leurs comptes. L'état est taxé sans frais par le Tribunal Civil et appuyé des pièces justificatives."
       ],
-      "mots_cles": ["frais de poursuites", "préposés de l'enregistrement", "non-valeur", "insolvabilité", "remboursés", "État", "Tribunal Civil", "pièces justificatives"],
+      "mots_cles": [
+        "frais de poursuites",
+        "préposés de l'enregistrement",
+        "non-valeur",
+        "insolvabilité",
+        "remboursés",
+        "État",
+        "Tribunal Civil",
+        "pièces justificatives",
+        "parties condamnées",
+        "comptes",
+        "taxé sans frais"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -96,7 +199,28 @@
         "Lorsque la lettre recommandée n'a pu être remise au contribuable ou à son fondé de pouvoir par suite de la disparition ou de l'absence audit contribuable de son domicile, de sa résidence, ou de son siège, la notification est renouvelée dans les formes de droit commun.",
         "Il en est de même dans le cas où le redevable ou son fondé de pouvoir, à qui a été présentée la lettre, la refuse."
       ],
-      "mots_cles": ["notification", "article 202", "titre de perception", "créance du Trésor", "redevable", "lettre recommandée", "sommation", "avis de réception", "bureau de perception", "fondé de pouvoir", "domicile", "résidence", "siège", "droit commun"],
+      "mots_cles": [
+        "notification",
+        "article 202",
+        "titre de perception",
+        "créance du Trésor",
+        "redevable",
+        "lettre recommandée",
+        "sommation",
+        "avis de réception",
+        "bureau de perception",
+        "fondé de pouvoir",
+        "domicile",
+        "résidence",
+        "siège",
+        "droit commun",
+        "copie",
+        "extrait",
+        "administration des Postes",
+        "titre original",
+        "disparition",
+        "absence"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -105,7 +229,16 @@
       "texte": [
         "Pour les recouvrements confiés à la Direction de l'enregistrement en vertu du présent règlement, le Trésor aura un privilège sur tous les meubles et effets mobiliers des redevables. Ce privilège s'exercera immédiatement après celui de l'impôt sur le chiffre d'affaires."
       ],
-      "mots_cles": ["recouvrements", "Direction de l'enregistrement", "Trésor", "privilège", "meubles", "effets mobiliers", "redevables", "impôt sur le chiffre d'affaires"],
+      "mots_cles": [
+        "recouvrements",
+        "Direction de l'enregistrement",
+        "Trésor",
+        "privilège",
+        "meubles",
+        "effets mobiliers",
+        "redevables",
+        "impôt sur le chiffre d'affaires"
+      ],
       "statut": "en vigueur"
     }
   ]

@@ -51,13 +51,6 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L2C1-ST1",
-      "titre": "Débiteur des droits",
-      "texte": [],
-      "mots_cles": ["débiteur", "droits de timbre"],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 2",
       "titre": "Solidarité pour le paiement des droits de timbre",
       "texte": [
@@ -75,7 +68,8 @@
         "obligations",
         "officiers ministériels"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Débiteur des droits"
     },
     {
       "article": "Art. 3",
@@ -92,14 +86,8 @@
         "citoyens",
         "charge"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C1-ST2",
-      "titre": "Restrictions et prohibitions diverses",
-      "texte": [],
-      "mots_cles": ["restrictions", "prohibitions"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Débiteur des droits"
     },
     {
       "article": "Art. 4",
@@ -121,7 +109,8 @@
         "distributeurs auxiliaires",
         "décision ministérielle"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 5",
@@ -136,7 +125,8 @@
         "altération",
         "protection"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 6",
@@ -150,7 +140,8 @@
         "acte",
         "réutilisation interdite"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 7",
@@ -186,7 +177,8 @@
         "fermage",
         "loyer"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 8",
@@ -215,7 +207,8 @@
         "coter",
         "parapher"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 9",
@@ -235,7 +228,8 @@
         "droits",
         "Trésor"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 10",
@@ -267,7 +261,8 @@
         "1.000 FCFA",
         "contravention"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 11",
@@ -290,7 +285,8 @@
         "effets négociables",
         "bonne forme"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 12",
@@ -319,7 +315,8 @@
         "contrevenants",
         "droits de timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 13",
@@ -341,7 +338,8 @@
         "1.000 FCFA",
         "droit de timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 14",
@@ -361,14 +359,8 @@
         "autorité judiciaire",
         "autorité administrative"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C1-ST3",
-      "titre": "Poursuites et instances - Prescription",
-      "texte": [],
-      "mots_cles": ["poursuites", "instances", "prescription"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Restrictions et prohibitions"
     },
     {
       "article": "Art. 15",
@@ -390,7 +382,8 @@
         "amende",
         "droit de timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Poursuites et prescription"
     },
     {
       "article": "Art. 16",
@@ -412,7 +405,8 @@
         "attributions",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Poursuites et prescription"
     },
     {
       "article": "Art. 17",
@@ -435,7 +429,8 @@
         "taux 6 %",
         "somme exigible"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Poursuites et prescription"
     },
     {
       "article": "Art. 18",
@@ -456,7 +451,8 @@
         "acte",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Poursuites et prescription"
     },
     {
       "article": "Art. 19",
@@ -479,14 +475,8 @@
         "impôt sur le chiffre d'affaires",
         "taxes"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C1-ST4",
-      "titre": "Droit de communication",
-      "texte": [],
-      "mots_cles": ["droit de communication"],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Poursuites et prescription"
     },
     {
       "article": "Art. 20",
@@ -521,7 +511,8 @@
         "correspondances",
         "règlements sur le timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     },
     {
       "article": "Art. 21",
@@ -536,7 +527,8 @@
         "50.000 FCFA",
         "procès-verbal"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     },
     {
       "article": "Art. 22",
@@ -564,7 +556,8 @@
         "communication",
         "recouvrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     },
     {
       "article": "Art. 23",
@@ -584,7 +577,8 @@
         "droits de timbre",
         "tiers"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     },
     {
       "article": "Art. 24",
@@ -600,7 +594,8 @@
         "1.000.000 FCFA",
         "contrôle"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     },
     {
       "article": "Art. 25",
@@ -628,7 +623,8 @@
         "communication",
         "documents de service"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Droit de communication"
     }
   ]
 }

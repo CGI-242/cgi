@@ -29,16 +29,6 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L2C4-ST1",
-      "titre": "1) Actes soumis à un visa spécial sur l'acte tenant lieu du timbre en débet",
-      "texte": [],
-      "mots_cles": [
-        "visa spécial",
-        "timbre en débet"
-      ],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 52",
       "titre": "Actes soumis au visa spécial tenant lieu du timbre en débet",
       "texte": [
@@ -50,17 +40,8 @@
         "enregistrement en débit",
         "non exempts de timbre"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C4-ST2",
-      "titre": "2) Actes visés pour timbre en débet",
-      "texte": [],
-      "mots_cles": [
-        "visa pour timbre",
-        "débet"
-      ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Visa spécial tenant lieu du timbre"
     },
     {
       "article": "Art. 53",
@@ -73,16 +54,8 @@
         "enregistrement en débit",
         "non exempts de timbre"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L2C4-ST3",
-      "titre": "3) Actes exempts de timbre",
-      "texte": [],
-      "mots_cles": [
-        "exempts de timbre"
-      ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Timbre en débet"
     },
     {
       "article": "Art. 54",
@@ -98,7 +71,8 @@
         "droits de timbre",
         "dispense de formalité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 55",
@@ -114,7 +88,8 @@
         "expédition",
         "procès-verbal d'enquête"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 56",
@@ -144,7 +119,8 @@
         "registres",
         "établissements publics"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 57",
@@ -159,7 +135,8 @@
         "valeurs",
         "Trésor français"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 58",
@@ -180,7 +157,8 @@
         "registres perdus",
         "registres incendiés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 59",
@@ -202,7 +180,8 @@
         "condamnations pécuniaires",
         "Trésor"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 60",
@@ -217,7 +196,8 @@
         "conciliation",
         "arbitrage"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 61",
@@ -244,7 +224,8 @@
         "service de mer",
         "recrutement de l'armée"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 62",
@@ -262,7 +243,8 @@
         "familles nombreuses",
         "familles nécessiteuses"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 63",
@@ -275,7 +257,8 @@
         "assistance judiciaire",
         "papier libre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 64",
@@ -293,7 +276,8 @@
         "exploits",
         "significations"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 65",
@@ -318,7 +302,8 @@
         "titulaires décédés",
         "absents"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 65 bis",
@@ -333,7 +318,8 @@
         "caisses publiques de retraites",
         "pensions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 66",
@@ -349,7 +335,8 @@
         "accident du travail",
         "décès du travail"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 67",
@@ -369,7 +356,8 @@
         "expéditions",
         "actes de procédure"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 68",
@@ -383,7 +371,8 @@
         "casier judiciaire",
         "particuliers"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 69",
@@ -396,7 +385,8 @@
         "bonne vie",
         "mœurs"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 70",
@@ -409,7 +399,8 @@
         "ordres de virement",
         "banque"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 71",
@@ -420,7 +411,8 @@
       "mots_cles": [
         "chèques postaux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 72",
@@ -434,7 +426,8 @@
         "exportation",
         "autorités compétentes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 73",
@@ -455,7 +448,8 @@
         "contributions publiques",
         "préposés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 74",
@@ -469,7 +463,8 @@
         "Code civil",
         "conseil de famille"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 75",
@@ -488,7 +483,8 @@
         "notification",
         "parties en cause"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 76",
@@ -509,7 +505,8 @@
         "contraventions",
         "grande voirie"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 77",
@@ -522,7 +519,8 @@
         "contribuables",
         "matière fiscale"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 78",
@@ -536,7 +534,8 @@
         "réglementation",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 79",
@@ -550,7 +549,8 @@
         "réglementation",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 80",
@@ -569,7 +569,8 @@
         "propriété privée",
         "travaux publics"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 81",
@@ -589,7 +590,8 @@
         "papier libre",
         "destination spéciale"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 82",
@@ -604,7 +606,8 @@
         "enfant",
         "acte de naissance"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 83",
@@ -620,7 +623,8 @@
         "sans frais",
         "Avocat Défenseur"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 84",
@@ -640,7 +644,8 @@
         "pourvoi",
         "dispensé du timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 85",
@@ -655,7 +660,8 @@
         "mineurs",
         "armée"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 86",
@@ -670,7 +676,8 @@
         "chirurgiens-dentistes",
         "sages-femmes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 87",
@@ -687,7 +694,8 @@
         "expropriation",
         "utilité publique"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 88",
@@ -721,7 +729,8 @@
         "concordats",
         "atermoiements"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 89",
@@ -736,7 +745,8 @@
         "extraits de jugements",
         "lois sur l'enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 90",
@@ -772,7 +782,8 @@
         "amende",
         "1.000 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 91",
@@ -826,7 +837,8 @@
         "Procureur de la République",
         "parquet"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 92",
@@ -867,7 +879,8 @@
         "visas de passeports",
         "personnes indigentes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 93",
@@ -886,7 +899,8 @@
         "police militaire",
         "force publique"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 94",
@@ -897,7 +911,8 @@
       "mots_cles": [
         "livres de commerce"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 95",
@@ -912,7 +927,8 @@
         "marchandises",
         "douanes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 96",
@@ -928,7 +944,8 @@
         "article 1394",
         "Code civil"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 97",
@@ -942,7 +959,8 @@
         "Code civil",
         "mariage"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 98",
@@ -951,7 +969,8 @@
         "Abrogé"
       ],
       "mots_cles": [],
-      "statut": "abrogé"
+      "statut": "abrogé",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 99",
@@ -979,7 +998,8 @@
         "articles 45 à 47",
         "déclarations de successions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 100",
@@ -1003,7 +1023,8 @@
         "greffe",
         "destination"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 101",
@@ -1032,7 +1053,8 @@
         "construire",
         "engagement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 102",
@@ -1055,7 +1077,8 @@
         "réglementation forestière",
         "procès-verbaux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 103",
@@ -1078,7 +1101,8 @@
         "visa pour timbre en débit",
         "enregistrement en débit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 104",
@@ -1090,7 +1114,8 @@
         "actes",
         "pouvoir exécutif"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 105",
@@ -1106,7 +1131,8 @@
         "agents salariés",
         "administrations publiques"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 106",
@@ -1120,7 +1146,8 @@
         "décret du 13 janvier 1938",
         "protection obligatoire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 107",
@@ -1134,7 +1161,8 @@
         "protection",
         "pupilles de la nation"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 108",
@@ -1148,7 +1176,8 @@
         "quittances",
         "reçus"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 109",
@@ -1171,7 +1200,8 @@
         "Tribunal de Commerce",
         "sociétés commerciales étrangères"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 110",
@@ -1185,7 +1215,8 @@
         "tables annuelles",
         "tables décennales"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 111",
@@ -1200,7 +1231,8 @@
         "articles 604 et 612",
         "Code de commerce"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 112",
@@ -1217,7 +1249,8 @@
         "arrêts",
         "matière criminelle"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 113",
@@ -1242,7 +1275,8 @@
         "cantonnées",
         "indemnités de réquisition"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 114",
@@ -1271,7 +1305,8 @@
         "saisi",
         "tiers saisi"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 115",
@@ -1297,7 +1332,8 @@
         "Officiers généraux",
         "cadre de réserve"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 116",
@@ -1331,7 +1367,8 @@
         "entre vifs",
         "décès"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 117",
@@ -1348,7 +1385,8 @@
         "immunités de timbre",
         "sociétés de secours mutuels"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 118",
@@ -1364,7 +1402,8 @@
         "établissements commerciaux",
         "salariés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 119",
@@ -1381,7 +1420,8 @@
         "maître",
         "employeur"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 120",
@@ -1397,7 +1437,8 @@
         "objets mobiliers",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 121",
@@ -1413,7 +1454,8 @@
         "charge de l'État",
         "État"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 122",
@@ -1424,7 +1466,8 @@
       "mots_cles": [
         "livrets de travail"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 123",
@@ -1438,7 +1481,8 @@
         "État",
         "collectivités publiques"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 124",
@@ -1457,7 +1501,8 @@
         "destination",
         "usage"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 125",
@@ -1472,7 +1517,8 @@
         "dépenses publiques",
         "5.000 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 126",
@@ -1492,7 +1538,8 @@
         "règlement",
         "sommes mandatées"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 127",
@@ -1506,7 +1553,8 @@
         "administration des douanes",
         "douanes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 128",
@@ -1520,7 +1568,8 @@
         "droits de douane",
         "douane"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 129",
@@ -1534,7 +1583,8 @@
         "carnets de pêche",
         "réglementation du travail"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 130",
@@ -1552,7 +1602,8 @@
         "personnel",
         "services administratifs"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 131",
@@ -1566,7 +1617,8 @@
         "sociétés de prévoyance",
         "droits"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 132",
@@ -1587,7 +1639,8 @@
         "certificats négatifs",
         "certificats de radiations"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 133",
@@ -1596,7 +1649,8 @@
         "Abrogé"
       ],
       "mots_cles": [],
-      "statut": "abrogé"
+      "statut": "abrogé",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 134",
@@ -1616,7 +1670,8 @@
         "FISE",
         "organismes humanitaires"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 135",
@@ -1631,7 +1686,8 @@
         "capitaux",
         "marchandises"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 136",
@@ -1643,7 +1699,8 @@
         "affiches",
         "contrats de transport"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 137",
@@ -1659,7 +1716,8 @@
         "fonctionnement des comptes",
         "chèques"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     },
     {
       "article": "Art. 138",
@@ -1673,7 +1731,8 @@
         "soumissions",
         "transactions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes exempts de timbre"
     }
   ]
 }

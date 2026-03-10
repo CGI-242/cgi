@@ -1189,9 +1189,9 @@
     "pricingBasique": "Basic",
     "pricingPro": "Pro",
     "pricingTrialPeriod": "7-day trial",
-    "pricingPerYear": "XAF / year / organization",
-    "pricingBasiqueLaunch": "65,000 XAF/yr/user — launch price",
-    "pricingProLaunch": "100,000 XAF/yr/user — launch price",
+    "pricingPerYear": "€ / year",
+    "pricingBasiqueLaunch": "1 legal code of your choice",
+    "pricingProLaunch": "4 codes: Tax + Customs + Hydrocarbons + Labor",
     "pricingTryFree": "Try for free",
     "pricingStart": "Get started",
     "pricingFeat5q": "5 AI questions / month",
@@ -1204,6 +1204,12 @@
     "pricingFeat50members": "Up to 50 members",
     "pricingFeat30q": "30 AI questions / month / user",
     "pricingFeatUnlimitedHistory": "Unlimited history",
-    "pricingFeatPriority": "Priority support"
+    "pricingFeatPriority": "Priority support",
+    "pricingFeat1code": "1 legal code of your choice",
+    "pricingFeat4codes": "4 legal codes included",
+    "pricingFeatCodeSocial": "Labor Code",
+    "pricingFeatCodeHydro": "Hydrocarbons Code",
+    "pricingFeatCodeDouanier": "Customs Code",
+    "pricingFeatCodeCgi": "General Tax Code"
   }
 }

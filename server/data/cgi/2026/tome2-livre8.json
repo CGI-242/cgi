@@ -14,79 +14,93 @@
   },
   "articles": [
     {
-      "article": "Art. 1",
+      "article": "1)",
       "titre": "Droits, taxes, redevances et frais du secteur des postes et des communications électroniques",
       "texte": [
-        "voir la loi de finances pour 2011, modifiée par la loi de finances rectificative pour 2012 et les lois de finances pour 2013, 2014 et 2015, et voir la loi de finances pour 2019"
+        "Droits, taxes, redevances et frais du secteur des postes et des communications électroniques : voir la loi de finances pour 2011, modifiée par la loi de finances rectificative pour 2012 et les lois de finances pour 2013, 2014 et 2015, et voir la loi de finances pour 2019."
       ],
       "mots_cles": [
-        "Droits, taxes, redevances et frais du secteur des postes et des communications électroniques"
+        "postes",
+        "communications électroniques",
+        "loi de finances 2011"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 2",
-      "titre": "Redevance d'aviation civile",
+      "article": "2)",
+      "titre": "Redevance de l'aviation civile",
       "texte": [
-        "voir la loi de finances pour 2012"
+        "Redevance de l'aviation civile : voir la loi de finances pour 2012."
       ],
       "mots_cles": [
-        "Redevance d'aviation civile"
+        "redevance",
+        "aviation civile",
+        "loi de finances 2012"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 3",
+      "article": "3)",
       "titre": "Fiscalité domaniale",
       "texte": [
-        "voir la loi n°9-2004 du 26 novembre 2004 portant Code du domaine de l'État"
+        "Fiscalité domaniale : voir la loi n°9-2004 du 26 novembre 2004 portant Code du domaine de l'État."
       ],
       "mots_cles": [
-        "Fiscalité domaniale"
+        "fiscalité domaniale",
+        "loi n°9-2004",
+        "Code du domaine de l'État"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 4",
+      "article": "4)",
       "titre": "Fiscalité foncière",
       "texte": [
-        "voir la loi n°17-2000 du 30 décembre 2000 portant régime de la propriété foncière, modifiée par les lois de finances pour 2012 et 2015"
+        "Fiscalité foncière : voir la loi n°17-2000 du 30 décembre 2000 portant régime de la propriété foncière, modifiée par les lois de finances pour 2012 et 2015."
       ],
       "mots_cles": [
-        "Fiscalité foncière"
+        "fiscalité foncière",
+        "loi n°17-2000",
+        "propriété foncière"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 5",
+      "article": "5)",
       "titre": "Fiscalité minière",
       "texte": [
-        "voir la loi n°4-2005 du 11 avril 2005 portant Code minier"
+        "Fiscalité minière : voir la loi n°4-2005 du 11 avril 2005 portant Code minier."
       ],
       "mots_cles": [
-        "Fiscalité minière"
+        "fiscalité minière",
+        "loi n°4-2005",
+        "Code minier"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 6",
+      "article": "6)",
       "titre": "Fiscalité des hydrocarbures",
       "texte": [
-        "voir la loi n°24-94 du 23 août 1994 portant Code des hydrocarbures et la loi de finances pour 2019"
+        "Fiscalité des hydrocarbures : voir la loi n°24-94 du 23 août 1994 portant Code des hydrocarbures et la loi de finances pour 2019."
       ],
       "mots_cles": [
-        "Fiscalité des hydrocarbures"
+        "fiscalité des hydrocarbures",
+        "loi n°24-94",
+        "Code des hydrocarbures"
       ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 7",
+      "article": "7)",
       "titre": "Fiscalité forestière",
       "texte": [
-        "voir la loi n°16-2000 du 20 novembre 2000 portant Code forestier"
+        "Fiscalité forestière : voir la loi n°16-2000 du 20 novembre 2000 portant Code forestier."
       ],
       "mots_cles": [
-        "Fiscalité forestière"
+        "fiscalité forestière",
+        "loi n°16-2000",
+        "Code forestier"
       ],
       "statut": "en vigueur"
     }

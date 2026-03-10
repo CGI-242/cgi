@@ -31,7 +31,8 @@
         "certification",
         "documents"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     },
     {
       "article": "Art. 2",
@@ -69,7 +70,8 @@
         "amende fiscale",
         "10.000.000 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     },
     {
       "article": "Art. 3",
@@ -82,7 +84,8 @@
         "timbre électronique fiscal",
         "50 FCFA"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     },
     {
       "article": "Art. 4",
@@ -98,7 +101,8 @@
         "opérationnalisation",
         "système"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     },
     {
       "article": "Art. 5",
@@ -116,7 +120,8 @@
         "ARPCE",
         "40 %"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     },
     {
       "article": "Art. 6",
@@ -144,7 +149,8 @@
         "timbre électronique",
         "valeur minimale"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Sous-section 1 : Timbre électronique"
     }
   ]
 }
