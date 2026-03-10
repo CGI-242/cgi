@@ -103,20 +103,15 @@
       "article": "Art. 87",
       "titre": "Enregistrement des actes sous signatures privées et actes passés en pays étrangers",
       "texte": [
-        "Les actes sous signatures privées, autres que ceux visés à l'article 85 et les actes passés en pays étranger, pourront être enregistrés dans tous les bureaux indistinctement."
+        "Les actes sous signatures privées, autres que ceux visés à l'article 85 et les actes passés en pays étrangers, pourront être enregistrés dans tous les bureaux indistinctement."
       ],
       "mots_cles": [
         "actes sous signatures privées",
         "article 85",
-        "pays étranger",
-        "bureaux indistinctement"
+        "pays étrangers",
+        "bureaux indistinctement",
+        "enregistrement"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C4-ST1",
-      "titre": "Mutations par décès",
-      "texte": [],
       "statut": "en vigueur"
     },
     {
@@ -134,7 +129,8 @@
         "valeurs immobilières",
         "lieu du décès"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Mutations par décès"
     }
   ]
 }

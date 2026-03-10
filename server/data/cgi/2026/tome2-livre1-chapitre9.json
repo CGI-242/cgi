@@ -14,27 +14,30 @@
   },
   "articles": [
     {
-      "article": "T2L1C9-ST1",
-      "titre": "1) Dispositions générales",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 188",
       "titre": "Droits régulièrement perçus",
       "texte": [
         "Ne sont pas sujets à restitution les droits régulièrement perçus sur les actes ou contrats ultérieurement révoqués ou résolus par application des articles 954 à 958, 1183, 1184, 1654 et 1659 du Code civil.",
-        "En cas de rescision d'un contrat pour cause de lésion, ou d'annulation d'une vente pour cause de vices cachés ou à surprise, dans tous les cas où il y a lieu à annulation, les droits perçus sur l'acte annulé, résolu ou rescindé, ne sont restituables que si l'annulation, la résolution, ou la rescision a été prononcée par un jugement ou un arrêt passé en force de chose jugée.",
+        "En cas de rescision d'un contrat pour cause de lésion, ou d'annulation d'une vente pour cause de vices cachés et, au surplus, dans tous les cas où il y a lieu à annulation, les droits perçus sur l'acte annulé, résolu ou rescindé, ne sont restituables que si l'annulation, la résolution, ou la rescision a été prononcée par un jugement ou un arrêt passé en force de chose jugée.",
         "L'annulation, la révocation, la résolution ou la rescision prononcée, pour quelque cause que ce soit, par jugement ou arrêt, ne donne pas lieu à la perception du droit proportionnel de mutation."
       ],
-      "mots_cles": ["restitution", "droits perçus", "actes", "contrats", "révoqués", "résolus", "Code civil", "rescision", "lésion", "annulation", "vices cachés", "jugement", "arrêt"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST1a",
-      "titre": "2) Dispositions particulières",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "restitution",
+        "droits perçus",
+        "actes",
+        "contrats",
+        "révoqués",
+        "résolus",
+        "Code civil",
+        "rescision",
+        "lésion",
+        "annulation",
+        "vices cachés",
+        "jugement",
+        "arrêt"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
     },
     {
       "article": "Art. 189",
@@ -42,8 +45,17 @@
       "texte": [
         "En cas de retour de l'absent, les droits payés conformément à l'article 77 ci-dessus seront restitués sous la seule déduction de celui auquel aura donné lieu la jouissance des héritiers."
       ],
-      "mots_cles": ["retour", "absent", "droits payés", "article 77", "restitution", "jouissance", "héritiers"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "retour",
+        "absent",
+        "droits payés",
+        "article 77",
+        "restitution",
+        "jouissance",
+        "héritiers"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Dispositions particulières"
     },
     {
       "article": "Art. 190",
@@ -52,8 +64,20 @@
         "1) Toute dette au sujet de laquelle l'agent de l'administration aura jugé les justifications insuffisantes ne sera pas retranchée de l'actif pour la perception du droit sauf aux parties à se pourvoir en restitution, s'il y a lieu, dans les deux années à compter du jour de la déclaration.",
         "2) Les héritiers ou légataires seront admis dans le délai de deux ans, à compter du jour de la déclaration, à réclamer, sous les justifications prescrites à l'article 45, la déduction des dettes établies par les opérations de la faillite ou de la liquidation judiciaire ou par le règlement définitif de la distribution par contribution postérieure à la déclaration et à obtenir le remboursement des droits qui auraient payés en trop."
       ],
-      "mots_cles": ["dette", "justifications insuffisantes", "actif", "restitution", "deux ans", "héritiers", "légataires", "article 45", "faillite", "liquidation judiciaire"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "dette",
+        "justifications insuffisantes",
+        "actif",
+        "restitution",
+        "deux ans",
+        "héritiers",
+        "légataires",
+        "article 45",
+        "faillite",
+        "liquidation judiciaire"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Dispositions particulières"
     },
     {
       "article": "Art. 191",
@@ -61,8 +85,15 @@
       "texte": [
         "Dans le cas de l'usufruit successif, l'usufruit éventuel venant à s'ouvrir, le nu-propriétaire aura droit à la restitution d'une somme égale à ce qu'il aurait payé en moins si le droit acquitté par lui avait été calculé d'après l'âge de l'usufruitier éventuel."
       ],
-      "mots_cles": ["usufruit successif", "usufruit éventuel", "nu-propriétaire", "restitution", "usufruitier éventuel"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "usufruit successif",
+        "usufruit éventuel",
+        "nu-propriétaire",
+        "restitution",
+        "usufruitier éventuel"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Dispositions particulières"
     },
     {
       "article": "Art. 192",
@@ -71,20 +102,18 @@
         "A défaut des indications ou justifications prescrites par l'article 55, les droits les plus élevés seront perçus conformément au même article, sauf restitution du trop-perçu dans le délai de deux ans sur la représentation de l'acte de naissance, dans le cas où la naissance aurait eu lieu hors du Territoire.",
         "Dans le cas d'indication inexacte de la naissance de l'usufruitier, le droit le plus élevé deviendra exigible, comme il est dit à l'article 115, sauf restitution si la date de naissance est reconnue exacte."
       ],
-      "mots_cles": ["article 55", "droits les plus élevés", "restitution", "trop-perçu", "deux ans", "acte de naissance", "usufruitier", "article 115"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST2",
-      "titre": "3) Prescription, action de l'administration",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST2a",
-      "titre": "I. Droits",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "article 55",
+        "droits les plus élevés",
+        "restitution",
+        "trop-perçu",
+        "deux ans",
+        "acte de naissance",
+        "usufruitier",
+        "article 115"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 2 : Dispositions particulières"
     },
     {
       "article": "Art. 193",
@@ -98,14 +127,20 @@
         "La prescription ne courra que en ce qui concerne les droits dont l'exigibilité est révélée sur les biens, sommes ou valeurs expressément énoncés dans l'écrit ou la déclaration comme dépendant de l'hérédité.",
         "Les prescriptions seront interrompues par les demandes signifiées, par le versement d'un acompte ou par le dépôt d'une pétition en remise des pénalités."
       ],
-      "mots_cles": ["prescription", "dix ans", "trente ans", "enregistrement", "déclaration", "exigibilité", "succession", "décès", "article 196", "ayants droit"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST2b",
-      "titre": "II. Pénalités",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "prescription",
+        "dix ans",
+        "trente ans",
+        "enregistrement",
+        "déclaration",
+        "exigibilité",
+        "succession",
+        "décès",
+        "article 196",
+        "ayants droit"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 1 : Droits"
     },
     {
       "article": "Art. 194",
@@ -115,14 +150,18 @@
         "Elle courra du jour où les agents de l'enregistrement auront été mis à portée de constater les contraventions, ou vu de chaque acte soumis à l'enregistrement, ou du jour de la présentation des répertoires à leur visa.",
         "Dans tous les cas, la prescription pour le recouvrement des droits simples d'enregistrement qui auraient été dus indépendamment des amendes, restera réglée par les dispositions existantes."
       ],
-      "mots_cles": ["prescription", "cinq ans", "article 193", "amendes", "contravention", "ventes de meubles", "agents de l'enregistrement", "répertoires"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST2c",
-      "titre": "III. Dispositions diverses",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "prescription",
+        "cinq ans",
+        "article 193",
+        "amendes",
+        "contravention",
+        "ventes de meubles",
+        "agents de l'enregistrement",
+        "répertoires"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 2 : Pénalités"
     },
     {
       "article": "Art. 195",
@@ -130,8 +169,17 @@
       "texte": [
         "Les actes sous signature privée ne pourra être opposé au Trésor pour prescription des droits et peines encourues, à moins que ces actes n'aient acquis une date certaine par le décès de l'une des parties, ou autrement."
       ],
-      "mots_cles": ["actes sous signature privée", "Trésor", "prescription", "droits", "peines", "date certaine", "décès"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "actes sous signature privée",
+        "Trésor",
+        "prescription",
+        "droits",
+        "peines",
+        "date certaine",
+        "décès"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 3 : Dispositions diverses"
     },
     {
       "article": "Art. 196",
@@ -139,8 +187,21 @@
       "texte": [
         "Les droits de mutation par décès des inscriptions de rentes sur l'État, et les peines encourues en cas de retard ou d'omissions de ces valeurs dans la déclaration des héritiers, légataires ou donataires, ne seront soumis qu'à la prescription de trente ans, sauf ce qui est dit à l'avant-dernier alinéa de l'article 193."
       ],
-      "mots_cles": ["droits de mutation par décès", "rentes sur l'État", "peines", "retard", "omissions", "héritiers", "légataires", "donataires", "prescription", "trente ans", "article 193"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "droits de mutation par décès",
+        "rentes sur l'État",
+        "peines",
+        "retard",
+        "omissions",
+        "héritiers",
+        "légataires",
+        "donataires",
+        "prescription",
+        "trente ans",
+        "article 193"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 3 : Dispositions diverses"
     },
     {
       "article": "Art. 197",
@@ -148,8 +209,18 @@
       "texte": [
         "L'action en recouvrement des droits et amendes exigibles par suite de l'inexactitude d'une attestation ou déclaration de dettes se prescrit par 5 ans, à partir de la déclaration de succession."
       ],
-      "mots_cles": ["action en recouvrement", "droits", "amendes", "inexactitude", "attestation", "déclaration de dettes", "5 ans", "succession"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "action en recouvrement",
+        "droits",
+        "amendes",
+        "inexactitude",
+        "attestation",
+        "déclaration de dettes",
+        "5 ans",
+        "succession"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 3 : Dispositions diverses"
     },
     {
       "article": "Art. 198",
@@ -157,8 +228,16 @@
       "texte": [
         "L'action, pour prouver la simulation d'une dette dans les conditions de l'article 46, sera prescrite par cinq ans à compter du jour de la déclaration."
       ],
-      "mots_cles": ["simulation", "dette", "article 46", "prescription", "cinq ans", "déclaration"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "simulation",
+        "dette",
+        "article 46",
+        "prescription",
+        "cinq ans",
+        "déclaration"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 3 : Dispositions diverses"
     },
     {
       "article": "Art. 199",
@@ -166,14 +245,18 @@
       "texte": [
         "L'action en recouvrement des droits simples et en sus exigibles par suite de l'indication inexacte, dans un acte de donation entre vifs ou dans une déclaration de mutation par décès, du bien ou degré de parenté entre le donateur ou le défunt et les donataires, héritiers ou légataires s'exercera dans le délai de trente ans, à compter du jour de l'enregistrement ou de la déclaration."
       ],
-      "mots_cles": ["action en recouvrement", "droits simples", "droits en sus", "indication inexacte", "donation entre vifs", "mutation par décès", "degré de parenté", "trente ans"],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C9-ST3",
-      "titre": "4) Actions des parties",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "action en recouvrement",
+        "droits simples",
+        "droits en sus",
+        "indication inexacte",
+        "donation entre vifs",
+        "mutation par décès",
+        "degré de parenté",
+        "trente ans"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 3 : Prescriptions - Sous-section 3 : Dispositions diverses"
     },
     {
       "article": "Art. 200",
@@ -184,8 +267,21 @@
         "Les prescriptions seront interrompues par des demandes signifiées après ouverture du droit au remboursement.",
         "L'action en restitution ouverte au profit du nu-propriétaire, dans les conditions déterminées par l'article 54, se prescrit par deux ans, à compter du jour du décès du précédent usufruitier."
       ],
-      "mots_cles": ["restitution", "sommes indûment perçues", "erreur", "deux ans", "paiement", "remboursement", "cinq ans", "perception", "nu-propriétaire", "article 54", "usufruitier"],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "restitution",
+        "sommes indûment perçues",
+        "erreur",
+        "deux ans",
+        "paiement",
+        "remboursement",
+        "cinq ans",
+        "perception",
+        "nu-propriétaire",
+        "article 54",
+        "usufruitier"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 4 : Actions des parties"
     }
   ]
 }

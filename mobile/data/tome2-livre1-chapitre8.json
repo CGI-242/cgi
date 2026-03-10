@@ -92,13 +92,14 @@
       "article": "Art. 135",
       "titre": "Lettres de change et effets négociables",
       "texte": [
-        "Les lettres de change et tous autres effets négociables pourront n'être présentés à l'enregistrement qu'avec les protêts qui auraient été faits."
+        "Les lettres de change et tous autres effets négociables pourront n'être présentés à l'enregistrement qu'avec les protêts qui en auraient été faits."
       ],
       "mots_cles": [
         "lettres de change",
         "effets négociables",
         "enregistrement",
-        "protêts"
+        "protêts",
+        "présentation"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Actes en conséquence et actes produits en justice"
@@ -208,7 +209,7 @@
       "article": "Art. 141",
       "titre": "Interdiction aux juges et arbitres de rendre un jugement en faveur de particuliers sur des actes non enregistrés",
       "texte": [
-        "Il est défendu aux juges et arbitres de rendre aucun jugement et aux administrations publiques de prendre aucun arrêté, en faveur de particuliers, sur des actes non enregistrés, à peine d'être personnellement responsables des droits, sauf l'exception mentionnée à l'article 145."
+        "Il est défendu aux juges et arbitres de rendre aucun jugement et aux administrations publiques de prendre aucun arrêté, en faveur de particuliers, sur des actes non enregistrés, à peine d'être personnellement responsables des droits, sauf l'exception mentionnée en l'article 145."
       ],
       "mots_cles": [
         "juges",
@@ -275,8 +276,8 @@
       "article": "Art. 144",
       "titre": "Condamnation ou arrêté pris sur un acte enregistré",
       "texte": [
-        "Toutes les fois qu'une condamnation sera rendue ou qu'un arrêté sera pris sur un acte enregistré, le jugement, sentence arbitrale ou l'arrêt en fera mention et énoncera le montant du droit payé à la date de paiement et le nom du bureau où il aura été acquitté.",
-        "En cas d'omission, le Receveur exigera le droit, si l'acte n'a pas été enregistré dans son bureau, sauf restitution dans le délai prescrit, s'il est ensuite justifié de l'enregistrement de l'acte sur lequel le jugement aura été prononcé ou l'arrêt pris."
+        "Toutes les fois qu'une condamnation sera rendue ou qu'un arrêté sera pris sur un acte enregistré, le jugement, la sentence arbitrale ou l'arrêté en fera mention et énoncera le montant du droit payé, la date de paiement et le nom du bureau où il aura été acquitté.",
+        "En cas d'omission, le Receveur exigera le droit, si l'acte n'a pas été enregistré dans son bureau, sauf restitution dans le délai prescrit, s'il est ensuite justifié de l'enregistrement de l'acte sur lequel le jugement aura été prononcé ou l'arrêté pris."
       ],
       "mots_cles": [
         "condamnation",
@@ -284,7 +285,6 @@
         "acte enregistré",
         "jugement",
         "sentence arbitrale",
-        "arrêt",
         "mention",
         "droit payé",
         "date de paiement",
@@ -319,7 +319,7 @@
       "article": "Art. 146",
       "titre": "Dérogation pour la production des quittances en vue de la réhabilitation des faillis",
       "texte": [
-        "Par dérogation aux dispositions qui précèdent, la production des quittances et autres pièces en vue de la réhabilitation des faillis ne rendra pas par elle-même l'enregistrement obligatoire."
+        "Par dérogation aux dispositions qui précèdent, la production des quittances et autres pièces en vue de la réhabilitation des faillis n'en rendra pas par elle-même l'enregistrement obligatoire."
       ],
       "mots_cles": [
         "dérogation",
@@ -376,7 +376,7 @@
       "titre": "Affirmation de sincérité pour les déclarations de mutation par décès",
       "texte": [
         "Toute déclaration de mutation par décès souscrite par les héritiers, donataires et légataires, leurs maris, tuteurs, curateurs ou administrateurs légaux sera terminée par une mention ainsi conçue :",
-        "« Le déclarant affirme sincère et véritable la présente déclaration ; il affirme en outre, sous les peines prévues par la loi que cette déclaration comprend l'argent comptant, les créances et toutes autres valeurs mobilières françaises ou étrangères qui, à sa connaissance, appartenaient au défunt soit en totalité, soit en partie. »",
+        "« Le déclarant affirme sincère et véritable la présente déclaration ; il affirme en outre, sous les peines prévues par la loi que cette déclaration comprend l'argent comptant, les créances et toutes les autres valeurs mobilières françaises ou étrangères qui, à sa connaissance, appartenaient au défunt soit en totalité, soit en partie. »",
         "Lorsque le déclarant affirme ne savoir ou ne pouvoir signer, le Receveur lui donnera lecture de la mention prescrite au paragraphe qui précède et certifiera au pied de la déclaration que cette formalité a été accomplie et que le déclarant a affirmé l'exactitude complète de sa déclaration.",
         "Dans tout acte ou déclaration ayant pour objet, soit une vente d'immeubles, soit une cession de fonds de commerce, soit un échange ou un partage comprenant des immeubles ou un fonds de commerce, chacun des vendeurs, acquéreurs, échangistes, copartageants, leurs maris, tuteurs ou administrateurs légaux seront tenus de terminer l'acte ou la déclaration par une mention ainsi conçue :",
         "« La partie soussignée affirme, sous les peines prévues par la loi, que le présent acte (ou la présente déclaration) exprime l'intégralité du prix ou de la soulte convenue ».",
@@ -450,7 +450,7 @@
       "article": "Art. 151",
       "titre": "Application des articles 149 et 150 aux contrats de cession de bail",
       "texte": [
-        "Les dispositions des articles 149 et 150 sont applicables aux contrats de cession d'un droit au bail ou du bénéfice d'une promesse de bail portant sur tout ou partie d'un immeuble."
+        "Les dispositions des articles 149 et 150 sont applicables aux contrats de cession d'un droit au bail ou du bénéfice d'une promesse de bail sur tout ou partie d'un immeuble."
       ],
       "mots_cles": [
         "articles 149 et 150",
@@ -487,14 +487,14 @@
       "article": "Art. 153",
       "titre": "Droit de communication des registres et documents",
       "texte": [
-        "Les dépositaires des registres d'état civil, ceux des rôles des Contributions et tous autres chargés des archives et dépôts des titres publics seront tenus de les communiquer, sans déplacer, aux préposés de l'enregistrement à toute réquisition et de leur laisser prendre, sans frais, les renseignements, extraits et copies qui leur seront nécessaires pour les intérêts du Trésor, à peine de 1.000 FCFA d'amende pour refus constaté par procès-verbal du préposé, qui sera accompagné, ainsi qu'il est prescrit par l'article 163, chez les détenteurs et dépositaires qui auront fait refus.",
+        "Les dépositaires des registres de l'état civil, ceux des rôles des Contributions et tous autres chargés des archives et dépôts des titres publics seront tenus de les communiquer, sans déplacer, aux préposés de l'enregistrement à toute réquisition et de leur laisser prendre, sans frais, les renseignements, extraits et copies qui leur seront nécessaires pour les intérêts du Trésor, à peine de 1.000 FCFA d'amende pour refus constaté par procès-verbal du préposé, qui se fera accompagner, ainsi qu'il est prescrit par l'article 163, chez les détenteurs et dépositaires qui auront fait refus.",
         "Ces dispositions s'appliquent aussi aux notaires, huissiers, greffiers et secrétaires d'administration locale et municipale pour les actes dont ils sont dépositaires sauf les restrictions résultant de l'alinéa suivant et de l'article 154.",
         "Sont exceptés, les testaments et autres actes de libéralité à cause de mort du vivant des testateurs.",
         "Les communications ci-dessus ne pourront être exigées les jours de repos, et les séances dans chaque autre jour ne pourront durer plus de quatre heures, de la part des préposés, dans les dépôts où ils feront leurs recherches."
       ],
       "mots_cles": [
         "dépositaires",
-        "registres d'état civil",
+        "registres de l'état civil",
         "rôles des Contributions",
         "archives",
         "titres publics",
@@ -529,7 +529,9 @@
         "préposés",
         "communication",
         "administrations publiques",
-        "article 10"
+        "actes",
+        "article 10",
+        "droit de communication"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Droit de communication"
@@ -545,7 +547,9 @@
         "registres",
         "magasins généraux",
         "préposés de l'enregistrement",
-        "article 153"
+        "article 153",
+        "communication",
+        "peines"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Droit de communication"
@@ -638,7 +642,9 @@
         "officiers ministériels",
         "commerçant",
         "chiffre d'affaires",
-        "1.000.000 FCFA"
+        "1.000.000 FCFA",
+        "vérifications",
+        "article 156"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Droit de communication"
@@ -812,7 +818,7 @@
       "article": "Art. 166",
       "titre": "Répertoires tenus par les greffiers",
       "texte": [
-        "Indépendamment des obligations qui leur incombent en vertu des articles 160 et suivants, les greffiers tiendront, sur un registre non timbré, coté et paraphé par le Président du Tribunal Populaire de Village Centre ou de Quartier, des Répertoires à colonnes sur lesquels ils inscriront, jour par jour, sans blanc ni interligne et par ordre de numéros tous les actes, jugements et arrêts qui sont dispensés des formalités du timbre et de l'enregistrement.",
+        "Indépendamment des obligations qui leur incombent en vertu des articles 160 et suivants, les greffiers tiendront, sur registre non timbré, coté et paraphé par le Président du Tribunal Populaire de Village Centre ou de Quartier, des Répertoires à colonnes sur lesquels ils inscriront, jour par jour, sans blanc ni interligne et par ordre de numéros tous les actes, jugements et arrêts qui sont dispensés des formalités du timbre et de l'enregistrement.",
         "Chaque article du répertoire contiendra :",
         "1° son numéro ;",
         "2° la date de l'acte ;",
@@ -847,7 +853,7 @@
       "article": "Art. 167",
       "titre": "Présentation et visa des répertoires des greffiers",
       "texte": [
-        "Les greffiers présenteront, sous les sanctions prévues à l'article 160 ce répertoire au visa du Receveur de leur résidence, qui le visera et y énoncera dans son visa le numéro du dernier acte inscrit.",
+        "Les greffiers présenteront, sous les sanctions prévues à l'article 160 ce répertoire au visa du Receveur de leur résidence, qui le visera et qui énoncera dans son visa le numéro du dernier acte inscrit.",
         "Cette présentation aura lieu aux époques fixées par l'article 162. Si le jour fixé pour le visa est un jour férié, le visa sera apposé le lendemain.",
         "Les greffiers seront tenus, sous peine d'une amende de 5.000 FCFA pour chaque omission, d'inscrire au répertoire spécial prévu à l'article précédent les bulletins n°3 du casier judiciaire par eux délivrés."
       ],
@@ -903,7 +909,8 @@
         "Elle contiendra les noms, qualité et domicile de l'officier, ceux du requérant, ceux de la personne dont le mobilier sera mis en vente et celle du jour et de l'heure de son ouverture.",
         "Elle ne pourra servir que pour le mobilier de celui qui y sera dénommé.",
         "La déclaration sera déposée au bureau et enregistrée sans frais.",
-        "L'un des exemplaires rédigé sur papier timbré sera remis, revêtu de la mention de l'enregistrement, à l'officier public, qui devra l'annexer au procès-verbal de la vente."
+        "L'un des exemplaires rédigé sur papier timbré sera remis, revêtu de la mention de l'enregistrement, à l'officier public, qui devra l'annexer au procès-verbal de la vente.",
+        "L'autre exemplaire établi sur papier non timbré, sera conservé au bureau."
       ],
       "mots_cles": [
         "déclaration",
@@ -930,7 +937,7 @@
       "article": "Art. 170",
       "titre": "Procès-verbal de vente",
       "texte": [
-        "Chaque objet adjugé sera porté tout de suite au procès-verbal ; le prix y sera écrit en toutes lettres et très lisible en chiffres.",
+        "Chaque objet adjugé sera porté tout de suite au procès-verbal ; le prix y sera écrit en toutes lettres et tiré hors ligne en chiffres.",
         "Chaque séance sera close et signée par l'officier public.",
         "Lorsqu'une vente aura lieu par suite d'inventaire, il en sera fait mention au procès-verbal, avec indication de la date de l'inventaire, du nom du notaire qui y aura procédé, et de la quittance de l'enregistrement."
       ],
@@ -1009,7 +1016,7 @@
       "texte": [
         "Les agents de l'enregistrement sont autorisés à se transporter dans tous les lieux où se feront des ventes publiques par enchères, et à s'y faire représenter les copies des déclarations préalables.",
         "Ils dresseront des procès-verbaux des contraventions qu'ils auront reconnues et constatées, ils pourront même requérir l'assistance du Maire, du Chef de District ou de leur délégué.",
-        "Les poursuites et instances auront lieu ainsi et de la manière prescrite au chapitre 10 du présent règlement.",
+        "Les poursuites et instance auront lieu ainsi et de la manière prescrite au chapitre 10 du présent règlement.",
         "La preuve testimoniale pourra être admise sur les ventes faites en contravention aux dispositions qui précèdent."
       ],
       "mots_cles": [
@@ -1032,7 +1039,7 @@
       "article": "Art. 174",
       "titre": "Dispense de la déclaration pour les ventes de mobilier des administrations publiques",
       "texte": [
-        "Sont dispensés de la déclaration ordonnée par l'article 168, les fonctionnaires qui auront procédé aux ventes de mobilier des administrations publiques.",
+        "Sont dispensés de la déclaration ordonnée par l'article 168, les fonctionnaires qui auront à procéder aux ventes de mobilier des administrations publiques.",
         "En sont également dispensés, les agents chargés des ventes de biens dépendant des successions de fonctionnaires et des successions gérées par la curatelle d'office."
       ],
       "mots_cles": [
@@ -1053,7 +1060,7 @@
       "article": "Art. 175",
       "titre": "Déclaration des héritiers",
       "texte": [
-        "Les héritiers, légataires ou donataires, leurs tuteurs ou curateurs sauf les héritiers en ligne directe, descendante ou ascendante et le conjoint survivant, seront tenus de souscrire une déclaration détaillée et de la signer sur un formulaire imprimé fourni par l'administration.",
+        "Les héritiers, légataires ou donataires, leurs tuteurs ou curateurs sauf les héritiers en ligne directe, descendante ou ascendante et le conjoint survivant, seront tenus de souscrire une déclaration détaillée et de la signer sur une formule imprimée fournie par l'administration.",
         "Toutefois, en ce qui concerne les immeubles situés dans la circonscription de bureaux autres que celui où est passée la déclaration, le détail sera présenté non dans cette déclaration, mais distinctement pour chaque bureau de la situation des biens, sur une formule fournie par l'administration et signée par le déclarant.",
         "La déclaration doit mentionner la date et le lieu de naissance de chacun des héritiers, donataires ou légataires.",
         "Si la naissance est arrivée hors du Territoire, il est, en outre, justifié de cette date, avant l'enregistrement de la déclaration, à défaut de quoi il sera perçu les droits les plus élevés qui pourraient être dus au Trésor, sauf restitution du trop-perçu, comme il est dit à l'article 192.",
@@ -1088,7 +1095,7 @@
       "titre": "Demande de justification par les agents du service de l'enregistrement",
       "texte": [
         "Les agents du service de l'enregistrement peuvent demander aux héritiers et autres ayants droit des éclaircissements ainsi que toutes justifications au sujet des titres et valeurs mobilières non énoncées dans la déclaration et rentrant dans les prévisions de l'article 52.",
-        "Lorsque la demande de justification aura été formulée par lettre recommandée avec accusé de réception, il devra être satisfait dans le délai fixé par le service de l'enregistrement et qui ne pourra être inférieur à trente jours.",
+        "Lorsque la demande de justification aura été formulée par lettre recommandée avec accusé de réception, il devra y être satisfait dans le délai fixé par le service de l'enregistrement et qui ne pourra être inférieur à trente jours.",
         "À défaut de réponse dans le délai assigné ou si la réponse constitue un refus de répondre, la preuve contraire réservée par l'article 52 ne sera plus recevable, sous réserve des restitutions qui apparaîtraient ultérieurement justifiées."
       ],
       "mots_cles": [
@@ -1117,7 +1124,7 @@
         "Tout acquéreur de droits réels immobiliers situés au Congo et dépendant d'une succession ne pourra se libérer du prix d'acquisition si ce n'est sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement et constatant soit l'acquittement, soit la non exigibilité de l'impôt de mutation par décès, à moins qu'il ne préfère retenir pour la garantie du Trésor et conserver, jusqu'à la présentation du certificat du Receveur, une somme égale au montant de l'impôt calculé sur le prix.",
         "2) Quiconque aura contrevenu aux dispositions du paragraphe 1 ci-dessus sera personnellement tenu des droits et pénalités exigibles, sauf recours contre le redevable et passible, en outre, d'une amende de 25.000 FCFA.",
         "3) Le notaire qui aura reçu un acte constatant l'acquisition de droits réels immobiliers dépendant d'une succession sera solidairement responsable des droits, pénalités et amendes visés au paragraphe 2 ci-dessus.",
-        "4) La transcription au bureau de la Conservation de la Propriété Foncière d'actes ou écrits constatant la transmission par décès de droits réels immobiliers ou l'inscription aux livres fonciers de mutation par décès de ces mêmes droits ne pourra être effectuée que sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement constatant l'acquittement ou la non-exigibilité de l'impôt de mutation par décès.",
+        "4) La transcription au bureau de la Conservation de la Propriété Foncière d'actes ou écrits constatant la transmission par décès de droits réels immobiliers ou l'inscription aux livres fonciers de mutations par décès de ces mêmes droits ne pourra être effectuée que sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement constatant l'acquittement ou la non-exigibilité de l'impôt de mutation par décès.",
         "5) Le conservateur qui aura contrevenu aux dispositions du paragraphe 4 ci-dessus sera personnellement tenu des droits et pénalités exigibles, sauf recours contre le redevable et passible, en outre, d'une amende de 25.000 FCFA."
       ],
       "mots_cles": [
@@ -1204,7 +1211,7 @@
       "article": "Art. 180",
       "titre": "Mutation par déclaration des parties",
       "texte": [
-        "Lorsque le transfert, la mutation ou la conversion au porteur est effectué en vue ou à l'occasion de la négociation des titres, le certificat du receveur de l'enregistrement, visé à l'article précédent, pourra être remplacé par une déclaration des parties établie sur papier non timbré, désignant avec précision les titres auxquels elle s'applique et indiquant que l'aliénation est faite pour permettre d'acquitter les droits de mutation par décès et que le produit en sera versé directement au Receveur compétent pour recevoir la déclaration de succession par l'intermédiaire de la négociation.",
+        "Lorsque le transfert, la mutation ou la conversion au porteur est effectué en vue ou à l'occasion de la négociation des titres, le certificat du receveur de l'enregistrement, visé à l'article précédent, pourra être remplacé par une déclaration des parties établie sur papier non timbré, désignant avec précision les titres auxquels elle s'applique et indiquant que l'aliénation est faite pour permettre d'acquitter les droits de mutation par décès et que le produit en sera versé directement au Receveur compétent pour recevoir la déclaration de succession par l'intermédiaire chargé de la négociation.",
         "Tout intermédiaire qui n'effectue pas le versement prévu à l'alinéa précédent est passible personnellement d'une amende égale au montant des sommes dont il s'est irrégulièrement dessaisi."
       ],
       "mots_cles": [
@@ -1230,7 +1237,7 @@
       "article": "Art. 181",
       "titre": "Déclaration des contrats d'assurance incendie",
       "texte": [
-        "Dans toutes les déclarations de mutation par décès, les héritiers, donataires ou légataires devront faire connaître si les meubles transmis étaient l'objet d'un contrat d'assurances contre l'incendie en cours au jour du décès, et, au cas de l'affirmative, indiquer la date du contrat, le nom ou la raison sociale et le domicile de l'assureur, ainsi que le montant des risques.",
+        "Dans toutes les déclarations de mutation par décès, les héritiers, donataires ou légataires devront faire connaître si les meubles transmis étaient l'objet d'un contrat d'assurance contre l'incendie en cours au jour du décès, et, au cas de l'affirmative, indiquer la date du contrat, le nom ou la raison sociale et le domicile de l'assureur, ainsi que le montant des risques.",
         "Sera réputée non existante, en ce qui concerne lesdits meubles, toute déclaration de mutation par décès qui ne contiendra pas cette mention."
       ],
       "mots_cles": [
@@ -1253,7 +1260,7 @@
       "article": "Art. 182",
       "titre": "Obligations des sociétés et compagnies d'assurances",
       "texte": [
-        "Les sociétés, compagnies d'assurances et tous autres assureurs français et étrangers, qui auraient assuré contre l'incendie, en vertu d'un contrat ou d'une convention en cours à l'époque du décès, des biens mobiliers situés dans le Territoire et dépendant d'une succession qu'ils sauraient ouverte, ou appartenant au conjoint d'une personne qu'ils sauraient décédée, devront, dans la quinzaine du jour où ils en auront connaissance du décès, adresser au receveur de l'enregistrement de la résidence du de cujus une notice faisant connaître :",
+        "Les sociétés, compagnies d'assurances et tous autres assureurs français et étrangers, qui auraient assuré contre l'incendie, en vertu d'un contrat ou d'une convention en cours à l'époque du décès, des biens mobiliers situés dans le Territoire et dépendant d'une succession qu'ils sauraient ouverte, ou appartenant au conjoint d'une personne qu'ils sauraient décédée, devront, dans la quinzaine qui suivra le jour où ils en auront connaissance du décès, adresser au receveur de l'enregistrement de la résidence du de cujus une notice faisant connaître :",
         "• 1° le nom ou la raison sociale et le domicile de l'assureur ;",
         "• 2° les noms, prénoms et domicile de l'assuré, ainsi que la date de son décès ou du décès de son conjoint ;",
         "• 3° le numéro, la date, la durée de la police et la valeur des objets assurés. Il en sera donné récépissé.",
@@ -1285,7 +1292,7 @@
       "article": "Art. 183",
       "titre": "Obligations des dépositaires et débiteurs",
       "texte": [
-        "1) Les administrations publiques, les établissements ou organismes quelconques soumis au contrôle de l'autorité administrative, les sociétés, compagnies, agents de change, changeurs, banquiers, escompteurs, officiers publics ou ministériels ou agents d'affaires qui seraient dépositaires, détenteurs ou débiteurs de titres, sommes ou valeurs dépendant d'une succession qu'ils sauraient ouverte, devront adresser, soit avant le paiement, la remise ou le transfert, soit dans la quinzaine qui suivra ces opérations, au receveur de l'enregistrement de leur résidence, la liste des titres, sommes ou valeurs. Il en sera donné récépissé.",
+        "1) Les administrations publiques, les établissements ou organismes quelconques soumis au contrôle de l'autorité administrative, les sociétés, compagnies, agents de change, changeurs, banquiers, escompteurs, officiers publics ou ministériels ou agents d'affaires qui seraient dépositaires, détenteurs ou débiteurs de titres, sommes ou valeurs dépendant d'une succession qu'ils sauraient ouverte, devront adresser, soit avant le paiement, la remise ou le transfert, soit dans la quinzaine qui suivra ces opérations, au receveur de l'enregistrement de leur résidence, la liste de ces titres, sommes ou valeurs. Il en sera donné récépissé.",
         "2) Ces listes seront établies sur des formules imprimées, délivrées par l'administration de l'enregistrement.",
         "3) Les compagnies françaises d'assurances sur la vie et les succursales établies dans le Territoire de compagnies étrangères ne pourront se libérer des sommes, rentes ou émoluments quelconques dus par elles, à raison du décès de l'assuré, à tout bénéficiaire domicilié dans le Territoire si ce n'est sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement, dans la forme indiquée au premier alinéa de l'article 179, constatant, soit l'acquittement, soit la non exigibilité de l'impôt de mutation par décès, à moins qu'elles ne préfèrent retenir, pour la garantie du Trésor, et conserver, jusqu'à la présentation du certificat du Receveur, une somme égale au montant de l'impôt calculé sur les sommes, rentes ou émoluments par elle dus.",
         "4) Quiconque aura contrevenu aux dispositions du présent article sera personnellement tenu des droits et pénalités exigibles, sauf recours contre le redevable et passible, en outre, d'une amende de 5.000 F."
@@ -1328,7 +1335,7 @@
       "article": "Art. 184",
       "titre": "Interdictions et obligations des receveurs",
       "texte": [
-        "Les receveurs de l'enregistrement ne pourront sous aucun prétexte, lors même qu'il y aurait lieu à expertise, différer l'enregistrement des actes et mutations dont les droits auront été payés aux taux réglés par le présent règlement.",
+        "Les receveurs de l'enregistrement ne pourront sous aucun prétexte, lors même qu'il y aurait lieu à l'expertise, différer l'enregistrement des actes et mutations dont les droits auront été payés aux taux réglés par le présent règlement.",
         "Ils ne pourront non plus suspendre ou arrêter le cours des procédures en retenant des actes ou exploits ; cependant, si un acte, dont il n'y a pas de minute ou un exploit, contient des renseignements dont la trace puisse être utile pour la découverte des droits dus, le Receveur aura la faculté de tirer copie, et de faire certifier conforme à l'original par l'officier qui l'aura présentée.",
         "En cas de refus, il pourra réserver l'acte pendant vingt-quatre heures seulement, pour s'en procurer une collation en forme, à ses frais, sauf répétition, s'il y a lieu. Cette disposition est applicable aux actes sous signature privée qui seront présentés à l'enregistrement."
       ],
@@ -1380,10 +1387,10 @@
       "article": "Art. 186",
       "titre": "Extraits délivrés par les receveurs",
       "texte": [
-        "Les receveurs de l'enregistrement ne pourront délivrer d'extraits de leur registre que sur ordonnance du Tribunal Populaire de Village Centre ou de Quartier lorsque ces extraits ne sont pas demandés par quelqu'une des parties contractantes ou leurs ayants cause.",
+        "Les receveurs de l'enregistrement ne peuvent délivrer d'extraits de leur registre que sur une ordonnance du Tribunal Populaire de Village Centre ou de Quartier lorsque ces extraits ne sont pas demandés par quelqu'une des parties contractantes ou leurs ayants cause.",
         "Il leur sera payé :",
-        "• 1.100 FCFA pour recherche de chaque année indiquée jusqu'à la sixième exclusivement et 50 FCFA pour chacune des autres au-delà de la sixième sans que le montant aux droit de la rémunération puisse, de ce chef, excéder 1.000 FCFA ;",
-        "• 250 FCFA par rôle de moyen papier contenant quarante lignes à la page et vingt syllabes à la ligne, pour chaque extrait ou copie d'enregistrement ou d'acte déposé, outre le papier timbré ; Tout rôle est dû en entier. Ils ne peuvent rien exiger au-delà."
+        "• 1.100 FCFA pour recherche de chaque année indiquée jusqu'à la sixième exclusivement et 50 FCFA pour chacune des autres au-delà de la sixième sans qu'en aucun cas la rémunération puisse, de ce chef, excéder 1.000 FCFA ;",
+        "• 250 FCFA par rôle de moyen papier contenant quarante lignes à la page et vingt syllabes à la ligne, pour chaque extrait ou copie d'enregistrement ou d'acte déposé, outre le papier timbré ; tout rôle commencé est dû en entier. Ils ne peuvent rien exiger au-delà."
       ],
       "mots_cles": [
         "receveurs de l'enregistrement",

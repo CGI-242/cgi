@@ -33,12 +33,6 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L1C5-ST1",
-      "titre": "Obligation au paiement",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 90",
       "titre": "Droits des actes à enregistrer",
       "texte": [
@@ -51,36 +45,68 @@
         "5) Par les parties, pour les actes sous signature privée, et ceux passés hors du Territoire qu'elles auront à faire enregistrer ; pour les ordonnances sur requêtes ou mémoires, et les certificats qui leur sont immédiatement délivrés par les juges ; et pour les actes et décisions qu'elles obtiennent des arbitres si ceux-ci ne les ont pas fait enregistrer.",
         "6) Et par les héritiers, légataires et donataires, leurs tuteurs, curateurs, et les exécuteurs testamentaires, pour les testaments et autres actes de libéralité à cause de mort."
       ],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "obligation au paiement",
+        "notaires",
+        "agents d'exécution",
+        "greffiers",
+        "administrations publiques",
+        "marchés",
+        "enchères",
+        "signature privée",
+        "héritiers",
+        "légataires",
+        "donataires",
+        "testaments",
+        "article 103"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligation au paiement"
     },
     {
       "article": "Art. 91",
       "titre": "Acquittement des droits par les greffiers",
       "texte": [
-        "Les greffiers ne seront personnellement tenus de l'acquittement des droits que dans les cas prévus par l'article 101. Ils continueront de jouir de la faculté accordée par l'article 103 pour les jugements et arrêts énoncés."
+        "Les greffiers ne seront personnellement tenus de l'acquittement des droits que dans les cas prévus par l'article 101. Ils continueront de jouir de la faculté accordée par l'article 103 pour les jugements et actes y énoncés."
       ],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "greffiers",
+        "acquittement des droits",
+        "article 101",
+        "article 103",
+        "jugements"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligation au paiement"
     },
     {
       "article": "Art. 92",
       "titre": "Solidarité des parties pour le paiement des droits",
       "texte": [
-        "Les parties sont solidaires vis-à-vis du Trésor pour le paiement des droits simples et en sus exigibles sur les jugements ou arrêts. Toutefois, le demandeur seul débiteur de l'impôt si le jugement ou arrêt le déboute entièrement de sa demande.",
+        "Les parties sont solidaires vis-à-vis du Trésor pour le paiement des droits simples et en sus exigibles sur les jugements ou arrêts. Toutefois, le demandeur est seul débiteur de l'impôt si le jugement ou arrêt le déboute entièrement de sa demande.",
         "Sont également seules débitrices des droits, les parties condamnées aux dépens lorsque le jugement ou l'arrêt alloue une indemnité ou des dommages-intérêts en matière d'accidents, une pension ou une rente en toute autre matière."
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C5-ST2",
-      "titre": "Contribution au paiement",
-      "texte": [],
-      "statut": "en vigueur"
+      "mots_cles": [
+        "solidarité",
+        "Trésor",
+        "droits simples",
+        "jugements",
+        "arrêts",
+        "demandeur",
+        "dépens",
+        "dommages-intérêts",
+        "accidents",
+        "pension",
+        "rente"
+      ],
+      "statut": "en vigueur",
+      "section": "Section 1 : Obligation au paiement"
     },
     {
       "article": "Art. 93",
       "titre": "Contribution des officiers publics au paiement des droits",
       "texte": [
-        "Les officiers publics qui, aux termes des articles 90 et 91 ci-dessus, assurent fait, pour les parties, l'avance des droits d'enregistrement, pourront en poursuivre le paiement conformément aux dispositions légales relatives au recouvrement des frais dus aux notaires, avoués et huissiers."
+        "Les officiers publics qui, aux termes des articles 90 et 91 ci-dessus, auraient fait, pour les parties, l'avance des droits d'enregistrement, pourront en poursuivre le paiement conformément aux dispositions légales relatives au recouvrement des frais dus aux notaires, avoués et huissiers."
       ],
       "mots_cles": [
         "officiers publics",
@@ -92,7 +118,8 @@
         "avoués",
         "huissiers"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution au paiement"
     },
     {
       "article": "Art. 94",
@@ -114,7 +141,8 @@
         "débiteurs",
         "nouveaux possesseurs"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution au paiement"
     },
     {
       "article": "Art. 95",
@@ -131,7 +159,8 @@
         "cohéritiers",
         "solidarité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution au paiement"
     },
     {
       "article": "Art. 96",
@@ -150,13 +179,8 @@
         "signature",
         "dette"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C5-ST3",
-      "titre": "Fractionnement des droits",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contribution au paiement"
     },
     {
       "article": "Art. 97",
@@ -190,7 +214,8 @@
         "article 67",
         "1er janvier"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Fractionnement des droits"
     },
     {
       "article": "Art. 98",
@@ -205,7 +230,8 @@
         "marchés",
         "baux emphytéotiques"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Fractionnement des droits"
     }
   ]
 }

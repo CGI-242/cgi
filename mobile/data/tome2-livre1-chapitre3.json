@@ -117,6 +117,16 @@
       "texte": [
         "Le délai pour faire enregistrer les actes de ventes publiques mobilières dressés par des commissaires-priseurs ou autres officiers ministériels ou publics est fixé à quinze jours. Le délai est le même pour les procès-verbaux de ventes publiques de marchandises faites par les courtiers. Ce délai est porté à trente jours pour ceux de ces actes qui auront été dressés dans une localité autre que celle où le bureau de l'enregistrement est établi."
       ],
+      "mots_cles": [
+        "ventes publiques mobilières",
+        "commissaires-priseurs",
+        "officiers ministériels",
+        "quinze jours",
+        "trente jours",
+        "procès-verbaux",
+        "marchandises",
+        "courtiers"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Actes de ventes publiques mobilières"
     },
@@ -126,6 +136,17 @@
       "texte": [
         "Les testaments déposés chez les notaires ou par eux reçus seront enregistrés dans les trois mois du décès des testateurs, à la diligence des héritiers, donataires, légataires ou exécuteurs testamentaires."
       ],
+      "mots_cles": [
+        "testaments",
+        "notaires",
+        "trois mois",
+        "décès",
+        "testateurs",
+        "héritiers",
+        "donataires",
+        "légataires",
+        "exécuteurs testamentaires"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Testaments"
     },
@@ -134,7 +155,7 @@
       "titre": "Délai d'enregistrement des actes sous signature privée",
       "texte": [
         "Les actes faits sous signature privée qui porteront transmission de propriété ou d'usufruit de biens immeubles, les baux à ferme ou à loyer, sous-baux, cessions et subrogations de baux, et les engagements, aussi sous signature privée, de biens de même nature seront enregistrés dans les trois mois de leur date.",
-        "Il en est de même des conventions de sûretés, des actes constatant des privilèges et des conventions de prêts liés à l'investissement visés à l'article 226 du présent Code au tome 2.",
+        "Il en est de même des conventions de sûretés, des actes constatant des privilèges et des conventions de prêts liées à l'investissement visés à l'article 226 du présent Code au tome 2.",
         "Pour ceux des actes de ces espèces qui seront passés hors du Territoire et qui seront relatifs à des biens immeubles situés dans le Territoire, dans l'un des Territoires du Groupe, le délai sera de six mois."
       ],
       "mots_cles": [
@@ -245,7 +266,9 @@
         "centimes additionnels",
         "droits d'enregistrement",
         "bail",
-        "mutations à titre onéreux"
+        "mutations à titre onéreux",
+        "paiement",
+        "enregistrement"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Locations verbales"
@@ -259,8 +282,10 @@
       "mots_cles": [
         "exemption",
         "locations verbales",
+        "immeuble",
         "loyer",
-        "120.000 FCFA"
+        "120.000 FCFA",
+        "article 67"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Locations verbales"
@@ -311,8 +336,8 @@
       "article": "Art. 71",
       "titre": "Enregistrement des conventions synallagmatiques",
       "texte": [
-        "Doivent être enregistrés dans le délai de trois mois à compter de leur date tous les actes sous seing privé constatant des conventions synallagmatiques, y compris ceux prévus aux articles 236 et 237.",
-        "Doivent être enregistrés dans le même délai tous les actes ou écrits constatant la nature, la consistance ou la valeur des biens appartenant à chacun des époux lors de la célébration du mariage."
+        "Doivent être enregistrés dans le délai de trois mois à compter de leur date tous les actes sous seing privés constatant des conventions synallagmatiques, y compris ceux prévus aux articles 236 et 237.",
+        "Doivent être enregistrés dans le même délai tous actes ou écrits constatant la nature, la consistance ou la valeur des biens appartenant à chacun des époux lors de la célébration du mariage."
       ],
       "mots_cles": [
         "conventions synallagmatiques",
@@ -330,8 +355,8 @@
       "article": "Art. 72",
       "titre": "Enregistrement des actes sous-seing privé passés en pays étranger",
       "texte": [
-        "Les actes sous-seing privé et les actes passés en pays étranger ou dans les territoires où l'enregistrement n'est pas établi sont enregistrés à tout moment sans observer le délai fixé à l'article 71 ci-dessus.",
-        "Les titres portant créance sur l'État congolais, hormis les mandats de paiement et les actes constatant une cession de créance sur l'État congolais, doivent être enregistrés dans un délai de trois mois sous peine de nullité."
+        "Les actes sous-seing privé et les actes passés en pays étranger ou dans les territoires où l'enregistrement n'est pas établi sont enregistrés à tout moment sans observer le délai visé à l'article 71 ci-dessus.",
+        "Les titres portant créance sur l'État congolais, hormis les mandats de paiement et les actes constatant une cession de créances sur l'État congolais, doivent être enregistrés dans un délai de trois mois sous peine de nullité."
       ],
       "mots_cles": [
         "actes sous-seing privé",
@@ -351,7 +376,7 @@
       "article": "Art. 73",
       "titre": "Enregistrement des actes sous seing privés mentionnés dans les articles précédents",
       "texte": [
-        "Les actes sous seing privés autres que ceux mentionnés dans les articles précédents et, sous réserves des conventions internationales relatives aux doubles impositions, les actes passés à l'étranger portant sur les services, les biens meubles et immeubles sis au Congo ou utilisés au Congo, doivent, dans le délai d'un mois à compter de leur date, être soumis à la formalité d'enregistrement au bureau du siège de l'établissement de la société au Congo.",
+        "Les actes sous seing privés autres que ceux mentionnés dans les articles précédents et, sous réserve des conventions internationales relatives aux doubles impositions, les actes passés à l'étranger portant sur les services, les biens meubles et immeubles sis au Congo ou utilisés au Congo, doivent, dans le délai d'un mois à compter de leur date, être soumis à la formalité d'enregistrement au bureau du siège de l'établissement de la société au Congo.",
         "À défaut de cette formalité, ces actes ne peuvent faire l'objet d'aucun usage, soit par acte public, soit en justice ou devant toute autre autorité constituée.",
         "Ces actes sont soumis aux mêmes droits que les actes de même nature passés au Congo."
       ],
@@ -374,7 +399,7 @@
       "article": "Art. 74",
       "titre": "Délais pour l'enregistrement des déclarations des héritiers, donataires ou légataires",
       "texte": [
-        "Les délais pour l'enregistrement des déclarations que les héritiers, donataires ou légataires auront à passer des biens aux échus ou transmis par décès, courront à compter du jour du décès et seront, à savoir :",
+        "Les délais pour l'enregistrement des déclarations que les héritiers, donataires ou légataires auront à passer des biens à eux échus ou transmis par décès, courront à compter du jour du décès et seront, à savoir :",
         "1° de six mois, lorsque le décès sera arrivé dans le Territoire ;",
         "2° d'un an, lorsque le décès sera arrivé hors du Territoire."
       ],
