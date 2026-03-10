@@ -28,20 +28,21 @@
   {
     "numero": "Annexe 3",
     "titre": "Obligations des contribuables quittant le Congo",
-    "contenu": "[NB - Voir l'article 75]",
+    "contenu": "[NB - Voir les articles 185 bis et 459]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
       "contribuables quittant le Congo",
       "obligations",
-      "article 75"
+      "article 185 bis",
+      "article 459"
     ],
     "source": "tome1-annexes.json"
   },
   {
     "numero": "Annexe 3 bis",
     "titre": "Certificat de moralité fiscale",
-    "contenu": "[Articles A3bis-14 à A3bis-17]",
+    "contenu": "[NB - Loi n°41-79 du 18 décembre 1979 modifiée]\n[Articles A3bis-14 à A3bis-17]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -136,7 +137,7 @@
   {
     "numero": "Annexe 4",
     "titre": "Conventions fiscales",
-    "contenu": "[NB - Voir en TNC 1, les conventions fiscales CEMAC, avec la France, l'Italie et l'Île Maurice]",
+    "contenu": "[NB - Voir en TFNC 1, les conventions fiscales CEMAC, avec la France, l'Italie, l'Île Maurice, la Chine et le Rwanda]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -145,21 +146,24 @@
       "France",
       "Italie",
       "Île Maurice",
-      "TNC 1"
+      "Chine",
+      "Rwanda",
+      "TFNC 1"
     ],
     "source": "tome1-annexes.json"
   },
   {
     "numero": "Annexe 5",
     "titre": "Règles de procédure spéciale en matière d'impôts directs et taxes assimilées devant les tribunaux",
-    "contenu": "[Articles 8 à 22]",
+    "contenu": "[NB - Loi n°6-62 du 20 janvier 1962]\n[Articles 8 à 22]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
       "procédure spéciale",
       "impôts directs",
       "taxes assimilées",
-      "tribunaux"
+      "tribunaux",
+      "loi n°6-62"
     ],
     "source": "tome1-annexes.json"
   },
@@ -538,7 +542,7 @@
   {
     "numero": "Annexe 9",
     "titre": "Frais professionnels déductibles des recettes des contribuables exerçant une profession libérale et soumis au régime du forfait",
-    "contenu": "[Article 2]",
+    "contenu": "[NB - Arrêté n°620/MF/DI du 24 février 1968]\n[Article 2]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -551,7 +555,7 @@
   {
     "numero": "2",
     "titre": "Montant des frais professionnels admis en déduction",
-    "contenu": "Le montant des frais professionnels admis en déduction des recettes brutes et remboursements de frais perçus par les contribuables exerçant une profession libérale et soumis au régime du forfait, est fixé comme suit :\n• médecins : 40 % et 20 %\n• kinésithérapeutes : 20 %\n• dentistes : 45 %\n• vétérinaires : 20 %\n• comptables : 45 %\n• géomètres-métreurs : 55 %\n• architectes : 55 %\n• autres : 30 %",
+    "contenu": "Le montant des frais professionnels admis en déduction des recettes brutes et remboursements de frais perçus par les contribuables exerçant une profession libérale et soumis au régime du forfait, est fixé comme suit :\n• médecins : 40 % et 20 %\n• kinésithérapeutes : 20 %\n• dentistes : 45 %\n• vétérinaires : 20 %\n• comptables : 45 %\n• géomètres-métreurs : 55 %\n• architectes : 55 %\n• sage-femmes : 20 %\n• autres : 30 %",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -569,7 +573,7 @@
   {
     "numero": "Annexe 10",
     "titre": "Fiscalité des bons de caisse",
-    "contenu": "[NB - Voir 171 sexies CGI Tome 1 et sous article 18 CGI Tome 2 livre 3 (IRVM)]",
+    "contenu": "[NB - Voir les dispositions relatives à l'IRCM, art.103 s.]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -597,7 +601,7 @@
   {
     "numero": "Annexe 12",
     "titre": "Régime fiscal applicable en matière de réévaluation des éléments d'immobilisation",
-    "contenu": "[NB - La loi n°97-01 du 16 janvier 1997, visée par l'annexe 17, concernant les bilans clos au 31 décembre 1995, ses dispositions n'ont pas été reprises]",
+    "contenu": "[NB - L'annexe 17 vise la loi n°97-01 du 16 janvier 1997, applicable aux bilans clos au 31 décembre 1995 : ses dispositions n'ont pas été reprises]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
@@ -612,13 +616,14 @@
   {
     "numero": "Annexe 13",
     "titre": "Immunités et privilèges diplomatiques et consulaires",
-    "contenu": "[Articles 10 à 41]",
+    "contenu": "[NB - Ordonnance n°14/77 du 30 mai 1977]\n[Articles 10 à 41]",
     "tome": "ANNEXES-1",
     "chapitre": "None",
     "keywords": [
       "immunités diplomatiques",
       "privilèges consulaires",
-      "agents diplomatiques"
+      "agents diplomatiques",
+      "ordonnance n°14/77"
     ],
     "source": "tome1-annexes.json"
   },

@@ -56,7 +56,7 @@
       "article": "Art. 3",
       "titre": "Droit fixe - Champ d'application",
       "texte": [
-        "Le droit fixe s'applique aux actes qui ne constatent ni transmission de propriété, d'usufruit ou de jouissance de biens immeubles ou immeubles, ni condamnation de sommes et valeurs, ni apport en mariage, ni apport en société, ni partage de biens meubles ou immeubles, ni marché et d'une façon générale, à tous actes, même exempts de l'enregistrement, qui sont présentés volontairement à la formalité.",
+        "Le droit fixe s'applique aux actes qui ne constatent ni transmission de propriété, d'usufruit ou de jouissance de biens meubles ou immeubles, ni condamnation de sommes et valeurs, ni apport en mariage, ni apport en société, ni partage de biens meubles ou immeubles, ni marché et d'une façon générale, à tous actes, même exempts de l'enregistrement, qui sont présentés volontairement à la formalité.",
         "Il est perçu aux taux fixés par les articles 209, 210 et 211 du présent règlement."
       ],
       "mots_cles": [
@@ -103,12 +103,6 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L1C1-ST1",
-      "titre": "Dispositions dépendantes et indépendantes",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 5",
       "titre": "Dispositions dépendantes",
       "texte": [
@@ -122,7 +116,8 @@
         "contractants",
         "droit particulier"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions dépendantes et indépendantes"
     },
     {
       "article": "Art. 6",
@@ -141,7 +136,8 @@
         "intérêts distincts",
         "quotité des droits"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions dépendantes et indépendantes"
     },
     {
       "article": "Art. 7",
@@ -157,13 +153,8 @@
         "droit fixe",
         "minimum de perception"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C1-ST2",
-      "titre": "Enregistrement sur minutes, brevets ou originaux",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions dépendantes et indépendantes"
     },
     {
       "article": "Art. 8",
@@ -180,7 +171,8 @@
         "actes judiciaires",
         "actes extrajudiciaires"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 8 bis",
@@ -198,7 +190,8 @@
         "dispositif sécurisé",
         "certificat électronique"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 8 ter",
@@ -221,7 +214,8 @@
         "plateforme de vérification",
         "Décret n°2014-596"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 9",
@@ -238,7 +232,8 @@
         "dernier ressort",
         "juridiction"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 10",
@@ -257,7 +252,8 @@
         "adjudications au rabais",
         "marchés"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 11",
@@ -273,7 +269,8 @@
         "minutes",
         "originaux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 11 bis",
@@ -292,13 +289,8 @@
         "loi n°17-89",
         "notariat"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C1-ST3",
-      "titre": "Minimum de perception",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Enregistrement sur minutes, brevets ou originaux"
     },
     {
       "article": "Art. 12",
@@ -318,13 +310,8 @@
         "article 210",
         "article 211"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C1-ST4",
-      "titre": "Mutation simultanée de meubles et immeubles",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Minimum de perception"
     },
     {
       "article": "Art. 13",
@@ -343,7 +330,8 @@
         "prix particulier",
         "objets mobiliers"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Mutation simultanée de meubles et immeubles"
     },
     {
       "article": "Art. 14",
@@ -362,7 +350,8 @@
         "baux",
         "transactions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Mutation simultanée de meubles et immeubles"
     },
     {
       "article": "Art. 15",
@@ -380,7 +369,8 @@
         "rôle des contributions",
         "nouveau possesseur"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Mutation simultanée de meubles et immeubles"
     },
     {
       "article": "Art. 16",
@@ -400,7 +390,8 @@
         "détenteurs temporaires",
         "contributions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Mutation simultanée de meubles et immeubles"
     }
   ]
 }

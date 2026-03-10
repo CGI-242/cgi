@@ -17,7 +17,7 @@
       "article": "Art. 17",
       "titre": "Détermination de la valeur servant d'assiette",
       "texte": [
-        "La valeur de la propriété et de la jouissance des biens de toute nature ou les sommes servant d'assiette à l'impôt sont déterminées par la liquidation et le paiement du droit proportionnel ou du droit progressif, ainsi qu'il est dit aux articles ci-après.",
+        "La valeur de la propriété et de la jouissance des biens de toute nature ou les sommes servant d'assiette à l'impôt sont déterminées pour la liquidation et le payement du droit proportionnel ou du droit progressif, ainsi qu'il est dit aux articles ci-après.",
         "Les établissements de microfinance bénéficient d'une réduction de 50 % de la valeur des droits dus pour l'enregistrement des actes de création d'entreprise, d'augmentation de capital, de fusion des sociétés ou d'établissements sociétaires, de mutation d'actions et de parts sociales."
       ],
       "mots_cles": [
@@ -38,18 +38,12 @@
       "statut": "en vigueur"
     },
     {
-      "article": "T2L1C2-ST1",
-      "titre": "Baux et locations",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
       "article": "Art. 18",
       "titre": "Baux et locations - Assiette",
       "texte": [
         "1) Pour les baux, sous-baux et prorogation de baux de biens meubles, fonds de commerce et immeubles, la valeur servant d'assiette à l'impôt est déterminée par le prix annuel exprimé en y ajoutant les charges imposées au preneur qui incombent légalement au bailleur.",
         "2) Si le prix du bail ou de la location est stipulé payable en nature ou sur la base du cours de certains produits, le droit proportionnel est liquidé d'après la valeur des produits au jour du contrat, déterminée par une déclaration estimative des parties.",
-        "3) Si le montant du droit est fractionné, comme il est prévu à l'article 97 ci-après, cette estimation n'aura lieu que pour la première période. Pour chacune des périodes ultérieures, les parties seront tenues de souscrire, dans le délai fixé par le paragraphe 4 de l'article 97, une nouvelle déclaration estimative de la valeur des produits au jour du commencement de la période qui servira de base à la liquidation des droits.",
+        "3) Si le montant du droit est fractionné, comme il est prévu à l'article 97 ci-après, cette estimation ne vaudra que pour la première période. Pour chacune des périodes ultérieures, les parties seront tenues de souscrire, dans le délai fixé par le paragraphe 4 de l'article 97, une nouvelle déclaration estimative de la valeur des produits au jour du commencement de la période qui servira de base à la liquidation des droits.",
         "Les droits afférents aux périodes commencées après l'entrée en vigueur du présent arrêté seront liquidés d'après les règles qui précèdent, quelle que soit la date du bail auquel elles se rapportent.",
         "4) Les dispositions des paragraphes 2 et 3 ci-dessus sont applicables aux baux à portion de fruits, pour la part revenant au bailleur, dont la quotité sera préalablement déclarée."
       ],
@@ -70,7 +64,8 @@
         "droit fractionné",
         "baux à portion de fruits"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Baux et locations"
     },
     {
       "article": "Art. 18 bis",
@@ -85,7 +80,8 @@
         "rente",
         "durée du louage"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Baux et locations"
     },
     {
       "article": "Art. 18 ter",
@@ -100,7 +96,8 @@
         "mutations à titre onéreux",
         "collectivités locales"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Baux et locations"
     },
     {
       "article": "Art. 19",
@@ -120,7 +117,8 @@
         "deniers d'entrée",
         "objets en nature"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Baux et locations"
     },
     {
       "article": "Art. 20",
@@ -138,13 +136,8 @@
         "deniers d'entrée",
         "objets en nature"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST2",
-      "titre": "Contrats de mariage",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Baux et locations"
     },
     {
       "article": "Art. 21",
@@ -159,20 +152,15 @@
         "montant net",
         "liquidation du droit"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST3",
-      "titre": "Échanges d'immeubles",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Contrats de mariage"
     },
     {
       "article": "Art. 22",
       "titre": "Échanges d'immeubles - Assiette",
       "texte": [
         "Pour la liquidation et le paiement des droits sur les échanges, les immeubles, quelle que soit leur nature, sont estimés d'après leur valeur vénale réelle à la date de transmission, d'après la déclaration estimative des parties.",
-        "Néanmoins, si dans les deux années qui auront précédé ou suivi l'acte d'échange, les immeubles transmis font l'objet d'une adjudication, soit par autorité de justice, soit par voie volontaire, avec admission des étrangers, les droits exigibles ne pourront être calculés sur une somme inférieure au prix de l'adjudication, en y ajoutant toutes les charges en capital, à moins qu'il ne soit justifié que la construction de ces immeubles n'ait subi, dans l'intervalle, des transformations susceptibles d'en modifier la valeur."
+        "Néanmoins, si dans les deux années qui auront précédé ou suivi l'acte d'échange, les immeubles transmis font l'objet d'une adjudication, soit par autorité de justice, soit volontaire, avec admission des étrangers, les droits exigibles ne pourront être calculés sur une somme inférieure au prix de l'adjudication, en y ajoutant toutes les charges en capital, à moins qu'il ne soit justifié que la consistance des immeubles n'ait subi, dans l'intervalle, des transformations susceptibles d'en modifier la valeur."
       ],
       "mots_cles": [
         "échanges d'immeubles",
@@ -181,17 +169,15 @@
         "déclaration estimative",
         "adjudication",
         "autorité de justice",
-        "voie volontaire",
+        "volontaire",
         "charges en capital",
-        "deux années"
+        "deux années",
+        "consistance des immeubles",
+        "transformations",
+        "prix de l'adjudication"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST4",
-      "titre": "Jugements",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Échanges d'immeubles"
     },
     {
       "article": "Art. 23",
@@ -208,13 +194,8 @@
         "transmission",
         "montant en principal"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST5",
-      "titre": "Marchés",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Jugements"
     },
     {
       "article": "Art. 24",
@@ -229,19 +210,14 @@
         "évaluation",
         "objets"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST6",
-      "titre": "Partages",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 5 : Marchés"
     },
     {
       "article": "Art. 25",
       "titre": "Partages - Assiette",
       "texte": [
-        "Pour les partages des biens meubles et immeubles entre copropriétaires, cohéritiers et associés, à quelque titre que ce soit, le droit est liquidé sur le montant de l'actif net partagé."
+        "Pour les partages des biens meubles et immeubles entre copropriétaires, cohéritiers et coassociés, à quelque titre que ce soit, le droit est liquidé sur le montant de l'actif net partagé."
       ],
       "mots_cles": [
         "partages",
@@ -249,16 +225,11 @@
         "biens immeubles",
         "copropriétaires",
         "cohéritiers",
-        "associés",
+        "coassociés",
         "actif net partagé"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST7",
-      "titre": "Rentes",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 6 : Partages"
     },
     {
       "article": "Art. 26",
@@ -274,7 +245,8 @@
         "capital constitué",
         "capital aliéné"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Rentes"
     },
     {
       "article": "Art. 27",
@@ -291,14 +263,15 @@
         "rachat",
         "capital constitué"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Rentes"
     },
     {
       "article": "Art. 28",
       "titre": "Rentes sans expression de capital - Assiette",
       "texte": [
         "1) Pour les rentes et pensions créées sans expression de capital, leurs transports, rachats et amortissements, ladite valeur est déterminée, sauf si le prix est supérieur, à raison d'un capital formé de vingt fois la rente perpétuelle et de dix fois la rente viagère ou la pension, et quel que soit le prix stipulé pour le transport, le rachat, l'amortissement.",
-        "2) Toutefois, lorsque l'amortissement, le rachat ou le transport d'une rente ou pension constituée à titre gratuit est effectué moyennant l'abandon d'un capital de dix fois la rente viagère ou la pension, un plein droit de donation est exigible sur la différence entre ce capital et la valeur imposée lors de la constitution.",
+        "2) Toutefois, lorsque l'amortissement, le rachat ou le transport d'une rente ou pension constituée à titre gratuit est effectué moyennant l'abandon d'un capital de dix fois la rente viagère ou la pension, un supplément de droit de donation est exigible sur la différence entre ce capital et la valeur imposée lors de la constitution.",
         "3) Il ne sera fait aucune distinction entre les rentes viagères et pensions créées sur une tête et celles créées sur plusieurs têtes quant à l'évaluation.",
         "4) Les rentes et pensions stipulées payables en nature ou sur la base du cours de certains produits seront évaluées aux mêmes capitaux d'après une déclaration estimative de la valeur des produits à la date de l'acte."
       ],
@@ -313,24 +286,20 @@
         "rachats",
         "amortissements",
         "titre gratuit",
-        "droit de donation",
+        "supplément de droit de donation",
+        "abandon de capital",
         "plusieurs têtes",
         "paiement en nature",
         "déclaration estimative"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST8",
-      "titre": "Sociétés",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Rentes"
     },
     {
       "article": "Art. 29",
       "titre": "Actes de société - Assiette",
       "texte": [
-        "Pour les actes de formation, de prorogation et d'augmentation de capital de société qui ne contiennent ni transmission ni de biens meubles ou immeubles entre les associés ou autres personnes, le droit est liquidé sur le montant total des apports mobiliers et immobiliers, déduction faite du passif."
+        "Pour les actes de formation, de prorogation et d'augmentation de capital de société qui ne contiennent ni transmission de biens meubles ou immeubles entre les associés ou autres personnes, le droit est liquidé sur le montant total des apports mobiliers et immobiliers, déduction faite du passif."
       ],
       "mots_cles": [
         "sociétés",
@@ -342,13 +311,8 @@
         "passif",
         "associés"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST9",
-      "titre": "Transmission à titre onéreux et à titre gratuit",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Sociétés"
     },
     {
       "article": "Art. 30",
@@ -365,7 +329,8 @@
         "estimation des parties",
         "valeur réelle"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 31",
@@ -383,7 +348,8 @@
         "article 38",
         "articles 41 à 50"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 31 bis",
@@ -399,7 +365,8 @@
         "prix exprimé",
         "charges"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 31 ter",
@@ -417,7 +384,8 @@
         "articles 3 à 38",
         "articles 69 à 116"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 32",
@@ -440,7 +408,8 @@
         "indemnités",
         "estimation d'experts"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 33",
@@ -464,7 +433,8 @@
         "donation",
         "déclaration de succession"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 34",
@@ -480,7 +450,8 @@
         "valeur vénale",
         "déclaration estimative"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 35",
@@ -501,13 +472,14 @@
         "article 31",
         "article 122"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 36",
       "titre": "Valeurs mobilières étrangères - Mutation par décès",
       "texte": [
-        "Sont assujettis aux droits de mutation par décès, les fonds publics, actions, obligations, parts d'intérêts, créances et généralement, toutes les valeurs mobilières étrangères, de quelque nature qu'elles soient, dépendant de la succession d'un ressortissant français ou d'un étranger domicilié sur les Territoires."
+        "Sont assujettis aux droits de mutation par décès, les fonds publics, actions, obligations, parts d'intérêts, créances et généralement, toutes les valeurs mobilières étrangères, de quelque nature qu'elles soient, dépendant de la succession d'un ressortissant français ou d'un étranger domicilié dans le Territoire."
       ],
       "mots_cles": [
         "droits de mutation par décès",
@@ -519,9 +491,11 @@
         "valeurs mobilières étrangères",
         "succession",
         "ressortissant français",
-        "étranger domicilié"
+        "étranger domicilié",
+        "Territoire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 37",
@@ -542,19 +516,8 @@
         "incorporels",
         "droits de mutation"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST10",
-      "titre": "Mutations par décès",
-      "texte": [],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST10a",
-      "titre": "I. Règles générales",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit"
     },
     {
       "article": "Art. 38",
@@ -563,8 +526,8 @@
         "La valeur de la propriété des biens meubles est déterminée pour la liquidation et le paiement des droits de mutation par décès :",
         "1) Par le prix exprimé dans les actes de vente, lorsque cette vente a lieu publiquement et dans les deux années qui suivent le décès.",
         "2) À défaut d'acte de vente, en prenant pour base 60 % de l'évaluation faite dans les contrats ou conventions d'assurances en cours au jour du décès et conclus par le défunt, son conjoint ou ses auteurs moins de dix ans avant l'ouverture de la succession, sauf preuve contraire. Cette disposition ne s'applique pas aux polices d'assurances concernant les récoltes, les bestiaux et les marchandises.",
-        "3) À défaut d'actes de vente ou d'assurance, par l'estimation contenue dans les inventaires, s'ils sont dressés dans les formes prescrites par l'article 943 du Code de procédure civile et dans les trois années du décès pour les meubles meublants, et dans le même délai, pour les autres biens meubles.",
-        "L'estimation faite en vertu de la présente disposition est préférée à la valeur déterminée en exécution de l'alinéa précédent lorsqu'elle lui est supérieure ; elle ne peut servir à administrer la preuve contraire que lorsque celle de l'alinéa précédent est inférieure.",
+        "3) À défaut d'actes de vente ou d'assurance, par l'estimation contenue dans les inventaires, s'ils sont dressés dans les formes prescrites par l'article 943 du Code de procédure civile et dans les trois années du décès pour les meubles meublants, et par l'estimation contenue dans les inventaires et autres actes s'il en est passé dans le même délai, pour les autres biens meubles.",
+        "L'estimation faite en vertu de la présente disposition est préférée à la valeur déterminée en exécution de l'alinéa précédent lorsqu'elle lui est supérieure ; elle ne peut servir à administrer la preuve contraire réservée par ce dernier alinéa quand elle est inférieure.",
         "4) À défaut des bases d'évaluation établies aux trois paragraphes précédents, par la déclaration faite conformément à l'article 31 ci-dessus.",
         "Toutefois, pour les meubles meublants, et sans que l'administration ait à en justifier l'existence, la valeur imposable ne pourra être inférieure à 5 % de l'ensemble des autres valeurs mobilières et immobilières de la succession, sauf preuve contraire.",
         "Les dispositions qui précèdent ne sont applicables ni aux créances, ni aux rentes, actions, obligations, effets publics, dont la valeur est déterminée par des dispositions spéciales."
@@ -595,7 +558,8 @@
         "obligations",
         "effets publics"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 39",
@@ -616,7 +580,8 @@
         "conjoint",
         "dix ans"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 40",
@@ -641,7 +606,8 @@
         "pénalités de retard",
         "exigibilité de l'impôt"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 41",
@@ -657,13 +623,8 @@
         "succession",
         "imputation des droits"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST10b",
-      "titre": "II. Déduction des dettes et charges",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 1 : Règles générales"
     },
     {
       "article": "Art. 42",
@@ -693,7 +654,8 @@
         "usufruit",
         "article 54"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 43",
@@ -711,7 +673,8 @@
         "100.000 FCFA",
         "maximum"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 44",
@@ -730,7 +693,8 @@
         "actif successoral",
         "droits de mutation"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 45",
@@ -762,7 +726,8 @@
         "dispense de timbre",
         "dispense d'enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 46",
@@ -790,7 +755,8 @@
         "distribution par contribution",
         "remboursement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 47",
@@ -810,7 +776,8 @@
         "article 113",
         "fausse attestation"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 48",
@@ -843,7 +810,8 @@
         "jugements étrangers",
         "prescription"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 49",
@@ -860,7 +828,8 @@
         "droit commun",
         "serment"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 50",
@@ -878,20 +847,15 @@
         "proportion",
         "territoires français"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST10c",
-      "titre": "III. Dispositions spéciales",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 2 : Déduction des dettes et charges"
     },
     {
       "article": "Art. 51",
       "titre": "Assurances - Droits de mutation par décès",
       "texte": [
         "Toutes les sommes, rentes ou émoluments quelconques, dus par un assureur, à raison ou à l'occasion du décès de l'assuré, c'est-à-dire de la personne sur la tête de laquelle l'assurance a été contractée, donnent ouverture sous réserve, le cas échéant, des droits de communauté, aux droits de mutation par décès suivant le degré de parenté existant entre le bénéficiaire gratuit et l'assuré, alors même que ce dernier n'aurait pas, personnellement et directement, contracté l'assurance et n'aurait pas acquitté les primes.",
-        "Toutefois, l'impôt n'atteint pas la fraction des sommes versées par l'assureur correspondant aux primes que le bénéficiaire a personnellement acquittées et déduit du versement supportées ou la fraction des mêmes sommes que le bénéficiaire a acquise à titre onéreux de toute autre manière. Si la personne appelée à recueillir le bénéfice de l'assurance abandonne gratuitement, après le décès de l'assuré, tout ou partie de ses droits à un tiers, ce dernier est considéré, dans cette mesure, comme le bénéficiaire direct du contrat et est tenu au paiement des droits de mutation par décès dans les conditions sus indiquées.",
+        "Toutefois, l'impôt n'atteint pas la fraction des sommes versées par l'assureur correspondant aux primes que le bénéficiaire a personnellement acquittées et définitivement supportées ou la fraction des mêmes sommes que le bénéficiaire a acquise à titre onéreux de toute autre manière. Si la personne appelée à recueillir le bénéfice de l'assurance abandonne gratuitement, après le décès de l'assuré, tout ou partie de ses droits à un tiers, ce dernier est considéré, dans cette mesure, comme le bénéficiaire direct du contrat et est tenu au paiement des droits de mutation par décès dans les conditions sus indiquées.",
         "Les dispositions qui précèdent ne sont pas applicables lorsque l'assurance a été contractée à l'étranger et que l'assuré n'avait dans le Territoire, à l'époque de son décès, ni domicile de fait, ni domicile de droit."
       ],
       "mots_cles": [
@@ -911,7 +875,8 @@
         "domicile de fait",
         "domicile de droit"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 3 : Dispositions spéciales"
     },
     {
       "article": "Art. 52",
@@ -919,7 +884,7 @@
       "texte": [
         "Sont réputés au point de vue fiscal faire partie, jusqu'à preuve du contraire, de la succession de l'usufruitier, toute valeur mobilière, tout bien meuble ou immeuble appartenant pour l'usufruit au défunt et pour la nue-propriété, à l'un de ses présomptifs héritiers ou descendants d'eux, même exclus par testament, ou à ses donataires ou légataires institués, même par testament postérieur, ou à des personnes interposées, à moins qu'il y ait eu donation régulière.",
         "Sont réputées interposées, les personnes désignées dans les articles 911 alinéa 2, et 1100 du Code civil.",
-        "Toutefois, si la nue-propriété provient de l'héritier, au donataire, au légataire ou à la personne interposée d'une vente à lui consentie par le défunt, les droits de mutation à titre onéreux acquittés par le nu-propriétaire sont imputés sur l'impôt de transmission par décès exigible à raison de l'incorporation des biens dans la succession."
+        "Toutefois, si la nue-propriété provient à l'héritier, au donataire, au légataire ou à la personne interposée d'une vente à lui consentie par le défunt, les droits de mutation à titre onéreux acquittés par le nu-propriétaire et dont il est justifié, sont imputés sur l'impôt de transmission par décès exigible à raison de l'incorporation des biens dans la succession."
       ],
       "mots_cles": [
         "usufruit",
@@ -940,7 +905,8 @@
         "mutation à titre onéreux",
         "nu-propriétaire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 3 : Dispositions spéciales"
     },
     {
       "article": "Art. 53",
@@ -959,13 +925,8 @@
         "opérations",
         "un an"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C2-ST10d",
-      "titre": "IV. Nue-propriété et l'usufruit",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 3 : Dispositions spéciales"
     },
     {
       "article": "Art. 54",
@@ -1011,7 +972,8 @@
         "article 28",
         "réunion usufruit propriété"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 4 : Nue-propriété et usufruit"
     },
     {
       "article": "Art. 55",
@@ -1032,7 +994,8 @@
         "deux ans",
         "acte de naissance"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 4 : Nue-propriété et usufruit"
     },
     {
       "article": "Art. 56",
@@ -1050,7 +1013,8 @@
         "déclaration estimative",
         "enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 4 : Nue-propriété et usufruit"
     },
     {
       "article": "Art. 57",
@@ -1063,7 +1027,8 @@
         "déclaration estimative",
         "estimation détaillée"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Transmission à titre onéreux et à titre gratuit - Sous-section 4 : Nue-propriété et usufruit"
     }
   ]
 }

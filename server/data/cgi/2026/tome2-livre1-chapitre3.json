@@ -99,14 +99,16 @@
       "titre": "Délai pour enregistrer les actes des administrations publiques",
       "texte": [
         "Le délai pour faire enregistrer les actes des administrations publiques assujettis à la formalité est de 45 jours.",
-        "A l'égard de ceux de ces actes qui ne doivent avoir d'exécution qu'après avoir été approuvés par l'autorité supérieure, le délai ne courra que du jour où la notification de cette approbation sera arrivée à l'acte qui doit supporter les droits. Mention de la date de cette notification devra être faite sur l'acte par l'agent qualifié qui la fera. Cette mention sera signée."
+        "À l'égard de ceux de ces actes qui ne doivent avoir d'exécution qu'après avoir été approuvés par l'autorité supérieure, le délai ne courra que du jour où la notification de cette approbation sera parvenue à celui qui doit supporter les droits. Mention de la date de cette notification devra être faite sur l'acte par l'agent qualifié qui la fera. Cette mention sera signée."
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST1",
-      "titre": "Actes de ventes publiques mobilières",
-      "texte": [],
+      "mots_cles": [
+        "administrations publiques",
+        "délai",
+        "45 jours",
+        "autorité supérieure",
+        "approbation",
+        "notification"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -115,13 +117,8 @@
       "texte": [
         "Le délai pour faire enregistrer les actes de ventes publiques mobilières dressés par des commissaires-priseurs ou autres officiers ministériels ou publics est fixé à quinze jours. Le délai est le même pour les procès-verbaux de ventes publiques de marchandises faites par les courtiers. Ce délai est porté à trente jours pour ceux de ces actes qui auront été dressés dans une localité autre que celle où le bureau de l'enregistrement est établi."
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST2",
-      "titre": "Testaments",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 1 : Actes de ventes publiques mobilières"
     },
     {
       "article": "Art. 64",
@@ -129,13 +126,8 @@
       "texte": [
         "Les testaments déposés chez les notaires ou par eux reçus seront enregistrés dans les trois mois du décès des testateurs, à la diligence des héritiers, donataires, légataires ou exécuteurs testamentaires."
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST3",
-      "titre": "Actes sous-seing privé et mutations verbales",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 2 : Testaments"
     },
     {
       "article": "Art. 65",
@@ -163,7 +155,8 @@
         "six mois",
         "hors du Territoire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes sous-seing privé et mutations verbales"
     },
     {
       "article": "Art. 66",
@@ -183,7 +176,8 @@
         "trois mois",
         "entrée en possession"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes sous-seing privé et mutations verbales"
     },
     {
       "article": "Art. 66 bis",
@@ -198,13 +192,8 @@
         "article 31 bis",
         "trois mois"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST4",
-      "titre": "Locations verbales",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 3 : Actes sous-seing privé et mutations verbales"
     },
     {
       "article": "Art. 67",
@@ -243,7 +232,8 @@
         "charges",
         "solidarité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Locations verbales"
     },
     {
       "article": "Art. 67 bis",
@@ -257,7 +247,8 @@
         "bail",
         "mutations à titre onéreux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Locations verbales"
     },
     {
       "article": "Art. 68",
@@ -271,13 +262,8 @@
         "loyer",
         "120.000 FCFA"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST5",
-      "titre": "Droit au bail",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 4 : Locations verbales"
     },
     {
       "article": "Art. 69",
@@ -297,13 +283,8 @@
         "déclaration",
         "entrée en jouissance"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST6",
-      "titre": "Fonds de commerce et clientèle",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 5 : Droit au bail"
     },
     {
       "article": "Art. 70",
@@ -323,13 +304,8 @@
         "déclarations estimatives",
         "entrée en possession"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST7",
-      "titre": "Conventions synallagmatiques",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 6 : Fonds de commerce et clientèle"
     },
     {
       "article": "Art. 71",
@@ -347,7 +323,8 @@
         "mariage",
         "biens"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Conventions synallagmatiques"
     },
     {
       "article": "Art. 72",
@@ -367,7 +344,8 @@
         "trois mois",
         "nullité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Conventions synallagmatiques"
     },
     {
       "article": "Art. 73",
@@ -389,13 +367,8 @@
         "siège établissement",
         "usage"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST8",
-      "titre": "Mutations par décès",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 7 : Conventions synallagmatiques"
     },
     {
       "article": "Art. 74",
@@ -415,7 +388,8 @@
         "un an",
         "Territoire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Mutations par décès"
     },
     {
       "article": "Art. 75",
@@ -434,7 +408,8 @@
         "activité de service",
         "indivis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Mutations par décès"
     },
     {
       "article": "Art. 76",
@@ -450,7 +425,8 @@
         "prise de possession",
         "six mois"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Mutations par décès"
     },
     {
       "article": "Art. 77",
@@ -467,7 +443,8 @@
         "déclaration",
         "droits"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Mutations par décès"
     },
     {
       "article": "Art. 78",
@@ -487,13 +464,8 @@
         "autorisation",
         "deux années"
       ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "T2L1C3-ST9",
-      "titre": "Dispositions communes",
-      "texte": [],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 8 : Mutations par décès"
     },
     {
       "article": "Art. 79",
@@ -509,7 +481,8 @@
         "date de l'acte",
         "ouverture de la succession"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Dispositions communes"
     },
     {
       "article": "Art. 80",
@@ -533,7 +506,8 @@
         "article 81",
         "écritures comptables"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Dispositions communes"
     },
     {
       "article": "Art. 81",
@@ -552,7 +526,8 @@
         "domaines",
         "timbre"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Dispositions communes"
     },
     {
       "article": "Art. 82",
@@ -571,7 +546,8 @@
         "premier jour ouvrable",
         "article 80"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Section 9 : Dispositions communes"
     }
   ]
 }

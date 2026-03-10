@@ -99,7 +99,15 @@
       "titre": "Délai pour enregistrer les actes des administrations publiques",
       "texte": [
         "Le délai pour faire enregistrer les actes des administrations publiques assujettis à la formalité est de 45 jours.",
-        "A l'égard de ceux de ces actes qui ne doivent avoir d'exécution qu'après avoir été approuvés par l'autorité supérieure, le délai ne courra que du jour où la notification de cette approbation sera arrivée à l'acte qui doit supporter les droits. Mention de la date de cette notification devra être faite sur l'acte par l'agent qualifié qui la fera. Cette mention sera signée."
+        "À l'égard de ceux de ces actes qui ne doivent avoir d'exécution qu'après avoir été approuvés par l'autorité supérieure, le délai ne courra que du jour où la notification de cette approbation sera parvenue à celui qui doit supporter les droits. Mention de la date de cette notification devra être faite sur l'acte par l'agent qualifié qui la fera. Cette mention sera signée."
+      ],
+      "mots_cles": [
+        "administrations publiques",
+        "délai",
+        "45 jours",
+        "autorité supérieure",
+        "approbation",
+        "notification"
       ],
       "statut": "en vigueur"
     },
