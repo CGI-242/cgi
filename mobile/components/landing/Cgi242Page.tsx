@@ -28,7 +28,7 @@ export default function Cgi242Page() {
   const cols = isMobile ? 1 : isTablet ? 2 : 3;
 
   const stats = [
-    { value: "2 248", label: t("landing.statsArticles") },
+    { value: "2 263", label: t("landing.statsArticles") },
     { value: "14", label: t("landing.statsSimulators") },
     { value: "64", label: t("landing.statsTexts") },
     { value: "2026", label: t("landing.statsEdition") },
