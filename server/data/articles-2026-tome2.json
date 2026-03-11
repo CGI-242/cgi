@@ -1040,9 +1040,12 @@
       "notes d'honoraires",
       "factures",
       "mémoires",
+      "document en tenant lieu",
       "prestations de services",
       "État",
-      "fournitures de services"
+      "fournitures de services",
+      "auteurs",
+      "procédé"
     ],
     "source": "tome2-livre2-chapitre2.json"
   },
@@ -1703,7 +1706,7 @@
   {
     "numero": "50 quater",
     "titre": "Délai d'exigibilité des droits de timbre sur les titres de transport",
-    "contenu": "Le délai d'exigibilité des droits de timbre sur les titres de transport aérien est fixé au 15 du mois qui suit celui de la collecte ou l'émission d'un titre de transport.\nTout retard dans le reversement de la taxe est puni d'une pénalité de retard de 100 % des droits collectés.",
+    "contenu": "Le délai d'exigibilité des droits de timbre sur les titres de transport aérien est fixé au 15 du mois qui suit celui de la collecte ou de l'émission d'un titre de transport.\nTout retard dans le reversement de la taxe est puni d'une pénalité de retard de 100 % des droits collectés.",
     "tome": "2",
     "chapitre": "3",
     "keywords": [
@@ -1734,7 +1737,7 @@
   {
     "numero": "50 ter",
     "titre": "Collecte des droits de timbre sur les transports",
-    "contenu": "Sont tenus de collecter les droits de timbre prévus à l'article 50 bis ci-dessus :\n1° les transporteurs aériens de voyageurs à destination et au départ des aéroports du Congo ;\n2° les transporteurs aériens et maritimes de biens au départ des aéroports et des ports du Congo, sur le support de chaque LTA ou de chaque connaissement émis ;\n3° l'intermédiaire agréé d'assistance au sol des aéroports du Congo pour les biens à destination du Congo, sur le support de chaque LTA servis au destinataire des colis ;\n4° le commissionnaire agréé en douanes chargé de servir ou de libérer les marchandises au départ et à l'arrivée des biens dans les ports maritimes du Congo.\nLe défaut de collecte des droits de timbre auprès des expéditeurs ou des destinataires des colis met à la charge du collecteur visé à l'alinéa précédent les droits correspondants assortis d'une pénalité de 100 %.",
+    "contenu": "Sont tenus de collecter les droits de timbre prévus à l'article 50 bis ci-dessus :\n1° les transporteurs aériens de voyageurs à destination et au départ des aéroports du Congo ;\n2° les transporteurs aériens et maritimes de biens au départ des aéroports et des ports du Congo, sur le support de chaque LTA ou de chaque connaissement émis ;\n3° l'intermédiaire agréé d'assistance au sol des aéroports du Congo, pour les biens à destination du Congo, sur le support de chaque LTA servis au destinataire des colis ;\n4° le commissionnaire agréé en douanes chargé de servir ou de libérer les connaissements au départ et à l'arrivée des biens dans les ports maritimes du Congo.\nLe défaut de collecte des droits de timbre auprès des expéditeurs ou des destinataires des colis met à la charge du collecteur visé à l'alinéa précédent les droits correspondants assortis d'une pénalité de 100 %.",
     "tome": "2",
     "chapitre": "3",
     "keywords": [
@@ -2624,26 +2627,31 @@
       "fonctionnaire public",
       "formalité du timbre",
       "registres",
-      "établissements publics"
+      "établissements publics",
+      "dénommés",
+      "administration générale",
+      "destination"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
   {
     "numero": "58",
     "titre": "Actes de procédure à la requête du Ministère public en matière d'état civil",
-    "contenu": "Les actes de procédure à la requête du Ministre public ayant pour objet :\n1° de réparer les omissions et faire les rectifications sur les registres de l'état civil d'actes qui intéressent les individus notoirement indigents ;\n2° de remplacer les registres de l'état civil perdus ou incendiés et de suppléer aux registres qui n'auraient pas été tenus.",
+    "contenu": "Les actes de procédure à la requête du Ministère public ayant pour objet :\n1° de réparer les omissions et faire les rectifications sur les registres de l'état civil d'actes qui intéressent les individus notoirement indigents ;\n2° de remplacer les registres de l'état civil perdus ou incendiés et de suppléer aux registres qui n'auraient pas été tenus.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
       "actes de procédure",
       "requête",
-      "Ministre public",
+      "Ministère public",
       "omissions",
       "rectifications",
       "registres de l'état civil",
       "indigents",
       "registres perdus",
-      "registres incendiés"
+      "registres incendiés",
+      "suppléer",
+      "notoirement"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2658,7 +2666,9 @@
       "actes de notoriété",
       "quittances",
       "caisses publiques de retraites",
-      "pensions"
+      "pensions",
+      "lois",
+      "exécution"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2687,21 +2697,22 @@
   {
     "numero": "84",
     "titre": "Recours en matière électorale devant la Cour Suprême",
-    "contenu": "Les procès-verbaux de ventes publiques et par enchères de meubles, effets, marchandises, bois, fruits, récoltes et tous autres objets mobiliers, ne pourront être enregistrés qu'aux bureaux où les déclarations prescrites à l'article 168 auront été faites.",
+    "contenu": "En cas de recours à la Cour Suprême contre la décision des juridictions administratives statuant sur une réclamation formulée contre les opérations électorales municipales ou contre les élections du Maire ou des adjoints, le pourvoi est dispensé du timbre.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
-      "procès-verbaux",
-      "ventes publiques",
-      "enchères",
-      "meubles",
-      "effets",
-      "marchandises",
-      "bois",
-      "fruits",
-      "récoltes",
-      "objets mobiliers",
-      "article 168"
+      "recours",
+      "Cour Suprême",
+      "juridictions administratives",
+      "réclamation",
+      "opérations électorales municipales",
+      "élections",
+      "Maire",
+      "adjoints",
+      "pourvoi",
+      "dispensé du timbre",
+      "statuant",
+      "formulée"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2764,23 +2775,43 @@
   {
     "numero": "88",
     "titre": "Actes relatifs aux faillites et liquidations judiciaires",
-    "contenu": "Les mutations par décès seront enregistrées au bureau du domicile du décédé, quelle que soit la situation des valeurs mobilières ou immobilières à déclarer.\nÀ défaut de domicile dans le Territoire, la déclaration sera passée au bureau du lieu du décès.",
+    "contenu": "Les actes rédigés en exécution des lois relatives aux faillites et liquidations judiciaires et dont l'énumération suit :\nLes déclarations de cessation de paiement,\nles bilans, les dépôts de bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, procès-verbaux d'assemblées, de dires, d'observations et délibérations de créanciers, les états des créances produites, les requêtes adressées au juge-commissaire, les ordonnances et décisions de ce magistrat, les rapports et comptes des syndics, les états de répartition, les procès-verbaux de vérification et d'affirmation de créances, concordats et atermoiements.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
-      "mutations par décès",
-      "bureau",
-      "domicile du décédé",
-      "valeurs mobilières",
-      "valeurs immobilières",
-      "lieu du décès"
+      "faillites",
+      "liquidations judiciaires",
+      "cessation de paiement",
+      "bilans",
+      "dépôts de bilans",
+      "affiches",
+      "certificats d'insertion",
+      "convocations de créanciers",
+      "inventaires",
+      "transactions",
+      "procès-verbaux d'assemblées",
+      "délibérations de créanciers",
+      "créances produites",
+      "requêtes",
+      "juge-commissaire",
+      "ordonnances",
+      "syndics",
+      "états de répartition",
+      "vérification de créances",
+      "affirmation de créances",
+      "concordats",
+      "atermoiements",
+      "magistrat",
+      "rapports",
+      "dires",
+      "actes de produits"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
   {
     "numero": "91",
     "titre": "Actes relatifs au mariage des indigents et à la légitimation des enfants naturels",
-    "contenu": "Les extraits de registres de l'état civil, les actes de notoriété, de consentement, de publication, les délibérations de conseil de famille, la notification, s'il y a lieu, les certificats de libération du service militaire, les dispenses pour cause de parenté, d'alliance ou d'âge, les actes de reconnaissance des enfants naturels, les certificats constatant la célébration du mariage, les actes de procédure, les ordonnances, jugements et arrêts dont la production est nécessaire, ayant pour objet de faciliter le mariage des indigents, la légitimation de leurs enfants naturels et le retrait de ces enfants déposés dans les hospices.\nSont admises aux dispositions du présent article les personnes qui justifient d'un certificat d'indigence à elles délivré par le Commissaire de Police ou par le Maire dans les Communes où il n'existe pas de Commissaire de Police ou le vu d'un extrait du rôle des contributions constatant que les parties intéressées paient moins de 100 FCFA, ou d'un certificat du percepteur de leur Commune portant qu'elles ne sont pas imposées.\nLes actes, extraits, copies ou expéditions ainsi délivrés mentionnent expressément qu'ils sont destinés à servir à la célébration du mariage entre indigents, à la légitimation ou au retrait de leurs enfants naturels déposés dans les hospices.\nIls ne peuvent servir à d'autres fins sous peine de 15.000 FCFA d'amende, outre le paiement des droits contre ceux qui en ont fait usage ou qui les ont indûment délivrés ou reçus.\nLe recouvrement des droits et des amendes de contravention est poursuivi par voie de contrainte, comme en matière d'enregistrement.\nLe certificat prévu à l'alinéa 2 ci-dessus est délivré en plusieurs originaux lorsqu'il doit être produit à divers officiers de l'état civil.\nNéanmoins, les réquisitions du Procureur de la République, tiennent lieu des originaux ci-dessus prescrits pourvu qu'elles mentionnent le défaut de certificat d'indigence à leur parquette.\nL'extrait du rôle ou le certificat négatif du percepteur est annexé aux pièces déposées pour la célébration du mariage.",
+    "contenu": "Les extraits de registres de l'état civil, les actes de notoriété, de consentement, de publication, les délibérations de conseil de famille, la notification, s'il y a lieu, les certificats de libération du service militaire, les dispenses pour cause de parenté, d'alliance ou d'âge, les actes de reconnaissance des enfants naturels, les certificats constatant la célébration civile du mariage, les actes de procédure, les ordonnances, jugements et arrêts dont la production est nécessaire, ayant pour objet de faciliter le mariage des indigents, la légitimation de leurs enfants naturels et le retrait de ces enfants déposés dans les hospices.\nSont admises aux dispositions du présent article les personnes qui justifient d'un certificat d'indigence à elles délivré par le Commissaire de Police ou par le Maire dans les Communes où il n'existe pas de Commissaire de Police sur le vu d'un extrait du rôle des contributions constatant que les parties intéressées paient moins de 100 FCFA, ou d'un certificat du percepteur de leur Commune portant qu'elles ne sont pas imposées.\nLes actes, extraits, copies ou expéditions ainsi délivrés mentionnent expressément qu'ils sont destinés à servir à la célébration du mariage entre indigents, à la légitimation ou au retrait de leurs enfants naturels déposés dans les hospices.\nIls ne peuvent servir à d'autres fins sous peine de 15.000 FCFA d'amende, outre le paiement des droits contre ceux qui en ont fait usage ou qui les ont indûment délivrés ou reçus.\nLe recouvrement des droits et des amendes de contravention est poursuivi par voie de contrainte, comme en matière d'enregistrement.\nLe certificat prévu à l'alinéa 2 ci-dessus est délivré en plusieurs originaux lorsqu'il doit être produit à divers officiers de l'état civil.\nNéanmoins, les réquisitions du Procureur de la République, tiennent lieu des originaux ci-dessus prescrits pourvu qu'elles mentionnent le dépôt du certificat d'indigence à leur parquet.\nL'extrait du rôle ou le certificat négatif du percepteur est annexé aux pièces déposées pour la célébration du mariage.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
@@ -2820,7 +2851,10 @@
       "contrainte",
       "enregistrement",
       "Procureur de la République",
-      "parquet"
+      "parquet",
+      "civile",
+      "officiers de l'état civil",
+      "certificat négatif"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2857,7 +2891,10 @@
       "certificats d'indigence",
       "passeports",
       "visas de passeports",
-      "personnes indigentes"
+      "personnes indigentes",
+      "conformément",
+      "article précédent",
+      "assimilés"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2883,14 +2920,18 @@
       "inventaire des dettes",
       "attestation du créancier",
       "articles 45 à 47",
-      "déclarations de successions"
+      "déclarations de successions",
+      "acquittement",
+      "non exigibilité",
+      "susvisé",
+      "déduction des dettes"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
   {
     "numero": "101",
     "titre": "Pétitions et mémoires aux autorités constituées",
-    "contenu": "Les pétitions et mémoires présentés à toutes autorités constituées, administrations ainsi que les pétitions ayant pour objet des demandes de secours adressées aux autorités constituées, les demandes de renseignements ou correspondances courantes adressées aux administrations publiques.\nRestent toutefois soumises au droit de timbre, les demandes déposées dans le cadre de la réglementation déterminée en vue d'obtenir des concessions (terrains, forêts, mines, etc.), ou des permis (de chasse, de conduire, de construire, etc.) dès qu'elles comportent, même implicitement, engagement du demandeur de se conformer à ces réglementations.",
+    "contenu": "Les pétitions et mémoires présentés à toutes autorités constituées, aux administrations ainsi que les pétitions ayant pour objet des demandes de secours adressées aux autorités constituées, les demandes de renseignements ou correspondances courantes adressées aux administrations publiques.\nRestent toutefois soumises au droit de timbre, les demandes déposées dans le cadre de la réglementation déterminée en vue d'obtenir des concessions (terrains, forêts, mines, etc.), ou des permis (de chasse, de conduire, de construire, etc.) dès qu'elles comportent, même implicitement, engagement du demandeur de se conformer à ces réglementations.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
@@ -2911,7 +2952,10 @@
       "chasse",
       "conduire",
       "construire",
-      "engagement"
+      "engagement",
+      "réglementations",
+      "demandeur",
+      "implicitement"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
@@ -2932,21 +2976,23 @@
       "recouvrement",
       "transactions",
       "réglementation forestière",
-      "procès-verbaux"
+      "procès-verbaux",
+      "somme",
+      "même réglementation"
     ],
     "source": "tome2-livre2-chapitre4.json"
   },
   {
     "numero": "105",
     "titre": "Actes de prestation de serment",
-    "contenu": "Les actes de prestation de serment des magistrats, fonctionnaires ou autres agents salariés par les administrations publiques.",
+    "contenu": "Les actes de prestation de serment des magistrats, Fonctionnaires ou autres agents salariés par les administrations publiques.",
     "tome": "2",
     "chapitre": "4",
     "keywords": [
       "actes",
       "prestation de serment",
       "magistrats",
-      "fonctionnaires",
+      "Fonctionnaires",
       "agents salariés",
       "administrations publiques"
     ],
@@ -2964,6 +3010,8 @@
       "registre du commerce",
       "papier libre",
       "copies d'inscriptions",
+      "exécution de la loi",
+      "copies de pièces déposées",
       "greffe",
       "Tribunal Populaire de District",
       "Tribunal Populaire d'Arrondissement",
@@ -3234,7 +3282,7 @@
   {
     "numero": "139",
     "titre": "Effets de commerce assujettis au droit de timbre",
-    "contenu": "Sont assujettis au droit de timbre en raison des sommes et valeurs, les billets à ordre ou au porteur, tous les effets négociables ou de commerce, les lettres de changes, faits au Congo, même s'ils sont payables hors du Congo, les billets et obligations non négociables, les mandats à terme ou de place, les billets, les lettres de crédit quelle que soit leur forme ou leur dénomination.",
+    "contenu": "Sont assujettis au droit de timbre en raison des sommes et valeurs, les billets à ordre ou au porteur, tous les effets négociables ou de commerce, les lettres de changes, faits au Congo, même s'ils sont payables hors du Congo, les billets et obligations non négociables, les mandats à terme ou de place, les billets, les lettres de crédits quelle que soit leur forme ou leur dénomination.",
     "tome": "2",
     "chapitre": "5",
     "keywords": [
@@ -3245,13 +3293,15 @@
       "billets au porteur",
       "effets négociables",
       "effets de commerce",
-      "lettres de change",
+      "lettres de changes",
       "Congo",
       "billets",
       "obligations non négociables",
       "mandats à terme",
       "mandats de place",
-      "lettres de crédit"
+      "lettres de crédits",
+      "payables hors du Congo",
+      "dénomination"
     ],
     "source": "tome2-livre2-chapitre5.json"
   },
@@ -3602,6 +3652,7 @@
       "civil",
       "militaire",
       "réciprocité",
+      "propriétaires",
       "privilège diplomatique",
       "privilège consulaire"
     ],
@@ -5208,7 +5259,7 @@
   {
     "numero": "183",
     "titre": "Obligations des dépositaires et débiteurs",
-    "contenu": "1) Les administrations publiques, les établissements ou organismes quelconques soumis au contrôle de l'autorité administrative, les sociétés, compagnies, agents de change, changeurs, banquiers, escompteurs, officiers publics ou ministériels ou agents d'affaires qui seraient dépositaires, détenteurs ou débiteurs de titres, sommes ou valeurs dépendant d'une succession qu'ils sauraient ouverte, devront adresser, soit avant le paiement, la remise ou le transfert, soit dans la quinzaine qui suivra ces opérations, au receveur de l'enregistrement de leur résidence, la liste de ces titres, sommes ou valeurs. Il en sera donné récépissé.\n2) Ces listes seront établies sur des formules imprimées, délivrées par l'administration de l'enregistrement.\n3) Les compagnies françaises d'assurances sur la vie et les succursales établies dans le Territoire de compagnies étrangères ne pourront se libérer des sommes, rentes ou émoluments quelconques dus par elles, à raison du décès de l'assuré, à tout bénéficiaire domicilié dans le Territoire si ce n'est sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement, dans la forme indiquée au premier alinéa de l'article 179, constatant, soit l'acquittement, soit la non exigibilité de l'impôt de mutation par décès, à moins qu'elles ne préfèrent retenir, pour la garantie du Trésor, et conserver, jusqu'à la présentation du certificat du Receveur, une somme égale au montant de l'impôt calculé sur les sommes, rentes ou émoluments par elle dus.\n4) Quiconque aura contrevenu aux dispositions du présent article sera personnellement tenu des droits et pénalités exigibles, sauf recours contre le redevable et passible, en outre, d'une amende de 5.000 F.",
+    "contenu": "1) Les administrations publiques, les établissements ou organismes quelconques soumis au contrôle de l'autorité administrative, les sociétés, compagnies, agents de changes, changeurs, banquiers, escompteurs, officiers publics ou ministériels ou agents d'affaires qui seraient dépositaires, détenteurs ou débiteurs de titres, sommes ou valeurs dépendant d'une succession qu'ils sauraient ouverte, devront adresser, soit avant le paiement, la remise ou le transfert, soit dans la quinzaine qui suivra ces opérations, au receveur de l'enregistrement de leur résidence, la liste de ces titres, sommes ou valeurs. Il en sera donné récépissé.\n2) Ces listes seront établies sur des formules imprimées, délivrées par l'administration de l'enregistrement.\n3) Les compagnies françaises d'assurances sur la vie et les succursales établies dans le Territoire de compagnies étrangères ne pourront se libérer des sommes, rentes ou émoluments quelconques dus par elles, à raison du décès de l'assuré, à tout bénéficiaire domicilié dans le Territoire si ce n'est sur la présentation d'un certificat délivré sans frais par le receveur de l'enregistrement, dans la forme indiquée au premier alinéa de l'article 179, constatant, soit l'acquittement, soit la non exigibilité de l'impôt de mutation par décès, à moins qu'elles ne préfèrent retenir, pour la garantie du Trésor, et conserver, jusqu'à la présentation du certificat du Receveur, une somme égale au montant de l'impôt calculé sur les sommes, rentes ou émoluments par elle dus.\n4) Quiconque aura contrevenu aux dispositions du présent article sera personnellement tenu des droits et pénalités exigibles, sauf recours contre le redevable et passible, en outre, d'une amende de 5.000 F.",
     "tome": "2",
     "chapitre": "8",
     "keywords": [
@@ -7936,7 +7987,7 @@
   {
     "numero": "293",
     "titre": "Procès-verbaux des agents publics",
-    "contenu": "Les procès-verbaux et les affirmations de ceux-ci, dressés par les agents de la force publique, magistrats, fonctionnaires et agents salariés de l'État, du Groupe de Territoires, de l'AEF, du Territoire ou des communes, dressés dans l'exercice de leurs fonctions ou destinés à constater les infractions à la loi.",
+    "contenu": "Les procès-verbaux et les affirmations de ceux-ci, dressés par les agents de la force publique, magistrats, fonctionnaires et agents salariés de l'État, du Groupe de Territoires de l'AEF, du Territoire ou des communes, dressés dans l'exercice de leurs fonctions ou destinés à constater les infractions à la loi.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -7947,10 +7998,11 @@
       "fonctionnaires",
       "agents salariés",
       "État",
-      "AEF",
+      "Groupe de Territoires de l'AEF",
       "Territoire",
       "communes",
-      "infractions",
+      "exercice de leurs fonctions",
+      "infractions à la loi",
       "exemption"
     ],
     "source": "tome2-livre1-chapitre12.json"
@@ -7971,7 +8023,7 @@
   {
     "numero": "295",
     "titre": "Actes de poursuites pour recouvrement d'impôts",
-    "contenu": "Tous actes de poursuites (contraintes, sommations, commandements, saisies, etc.) ayant pour objet le recouvrement des impôts et taxes perçus au profit de l'État, du Groupe des Territoires, de l'AEF, du Territoire ou des Communes.\nSi ces actes sont dressés et signifiés par voie d'huissier, ils sont enregistrés gratis dans le même délai et sous les mêmes sanctions que les autres actes extrajudiciaires.\nLes articles 68, 86 et tous autres concernant les ventes publiques mobilières sont applicables aux ventes consécutives aux poursuites en recouvrement des impôts et taxes visés à l'alinéa 1.\nEn cas d'infraction à cette réglementation, les amendes et pénalités sont à la charge du fonctionnaire ou agent qui aura procédé à la vente.",
+    "contenu": "Tous actes de poursuites (contraintes, sommations, commandements, saisies etc.) ayant pour objet le recouvrement des impôts et taxes perçus au profit de l'État, du Groupe des Territoires de l'AEF, du Territoire ou des Communes.\nSi ces actes sont dressés et signifiés par voie d'huissier, ils sont enregistrés gratis dans le même délai et sous les mêmes sanctions que les autres actes extrajudiciaires.\nLes articles 68, 86 et tous autres concernant les ventes publiques mobilières sont applicables aux ventes consécutives aux poursuites en recouvrement des impôts et taxes visés à l'alinéa 1.\nEn cas d'infraction à cette réglementation, les amendes et pénalités sont à la charge du fonctionnaire ou agent qui aura procédé à la vente.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -8006,8 +8058,10 @@
     "chapitre": "12",
     "keywords": [
       "attestations",
+      "article 3",
       "décret n°55-584",
       "20 mai 1955",
+      "conditions de fonctionnement",
       "comptes",
       "chèques",
       "exemption"
@@ -8157,7 +8211,7 @@
   {
     "numero": "303",
     "titre": "Recours devant la Cour Suprême",
-    "contenu": "Le recours devant la Cour Suprême contre les arrêts de la juridiction administrative peut avoir lieu sans frais et sans l'intervention d'un Avocat lorsqu'il se rapporte :\n1° aux contributions directes ou taxes à ces contributions pour le recouvrement ;\n2° aux élections ;\n3° aux contraventions aux lois et règlements sur la grande voirie et autres contraventions dont la répression relève de la juridiction administrative.\nEn cas d'expertise ordonnée par la juridiction administrative, la prestation de serment du ou des experts et l'expédition du procès-verbal ne donnent lieu à aucun droit d'enregistrement.",
+    "contenu": "Le recours devant la Cour Suprême contre les arrêts de la juridiction administrative peut avoir lieu sans frais et sans l'intervention d'un Avocat lorsqu'il se rapporte :\n1° aux contributions directes ou de taxes à ces contributions pour le recouvrement ;\n2° aux élections ;\n3° aux contraventions aux lois et règlements sur la grande voirie et autres contraventions dont la répression relève de la juridiction administrative.\nEn cas d'expertise ordonnée par la juridiction administrative, la prestation de serment du ou des experts et l'expédition du procès-verbal ne donnent lieu à aucun droit d'enregistrement.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -8183,7 +8237,7 @@
   {
     "numero": "304",
     "titre": "Quittances des contributions et revenus publics",
-    "contenu": "Les quittances des contributions, droits, taxes et revenus payés aux administrations nationales du groupe, locales et municipales.\nLes ordonnances de décharge ou de réduction, remise ou modération d'imposition, les quittances y relatives et extraits d'iceux.\nLes récépissés délivrés aux collecteurs, aux Receveurs, de deniers publics et des contributions locales et les comptes des recettes ou gestions publiques.",
+    "contenu": "Les quittances des contributions, droits, taxes et revenus payés aux administrations nationales du groupe, locales et municipales.\nLes ordonnances de décharge ou de réduction, remise ou modération d'imposition, les quittances y relatives et extraits d'iceux.\nLes récépissés délivrés aux collecteurs, aux Receveurs, de deniers publics et de contributions locales et les comptes des recettes ou gestions publiques.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -8319,7 +8373,7 @@
   {
     "numero": "310",
     "titre": "Faillites et liquidations judiciaires",
-    "contenu": "Les actes rédigés en exécution des lois relatives aux faillites et liquidations judiciaires et dont l'énumération suit :\n• les déclarations de cessation de paiements, les bilans, les dépôts des bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, les procès-verbaux d'assemblées, dires, d'observations et délibérations de créanciers ;\n• les états des créances présumées ;\n• les actes de produits, les requêtes adressées au juge-commissaire, les ordonnances et décisions de ce magistrat ;\n• les rapports et comptes des syndics ;\n• les états de répartition ;\n• les procès-verbaux de vérification et d'affirmation de créances ;\n• les concordats ou atermoiements.\nToutefois, ces différents actes continueront à rester soumis à la formalité du répertoire.",
+    "contenu": "Les actes rédigés en exécution des lois relatives aux faillites et liquidations judiciaires et dont l'énumération suit :\n• les déclarations de cessation de paiements, les bilans, les dépôts des bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, les procès-verbaux d'assemblées, de dires, d'observations et délibérations de créanciers ;\n• les états des créances présumées ;\n• les actes de produits, les requêtes adressées au juge-commissaire, les ordonnances et décisions de ce magistrat ;\n• les rapports et comptes des syndics ;\n• les états de répartition ;\n• les procès-verbaux de vérification et d'affirmation de créances ;\n• les concordats ou atermoiements.\nToutefois, ces différents actes continueront à rester soumis à la formalité du répertoire.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -8456,7 +8510,7 @@
   {
     "numero": "316",
     "titre": "Bordereaux et états relatifs aux fonds de commerce",
-    "contenu": "Les bordereaux d'inscriptions, ainsi que les états ou certificats et copies d'actes de vente sous seing privé délivrés par les greffiers, en exécution des textes relatifs à la vente et au nantissement des fonds de commerce.",
+    "contenu": "Les bordereaux d'inscriptions, ainsi que les états ou certificats et copies d'actes de vente sous seing privé délivré par les greffiers, en exécution des textes relatifs à la vente et au nantissement des fonds de commerce.",
     "tome": "2",
     "chapitre": "12",
     "keywords": [
@@ -8630,10 +8684,12 @@
       "rentiers",
       "pensionnaires",
       "État",
-      "ex-AEF",
+      "Groupe des États de l'ex-AEF",
       "communes",
       "établissements publics",
       "utilité publique",
+      "administration",
+      "paiement",
       "indemnités",
       "charges de famille",
       "allocations familiales",
@@ -8653,11 +8709,11 @@
       "actes",
       "pièces de procédure",
       "conventions",
-      "transmission de propriété",
+      "transmissions de propriété",
       "usufruit",
       "jouissance",
       "biens immeubles",
-      "droits réels immobiliers",
+      "constitution de droits réels immobiliers",
       "exemption"
     ],
     "source": "tome2-livre1-chapitre12.json"
@@ -8796,10 +8852,9 @@
       "fonctionnement",
       "Croix-Rouge française",
       "Organisation Mondiale de la Santé",
-      "OMS",
       "Fonds International de Secours à l'Enfance",
-      "UNICEF",
-      "organismes humanitaires",
+      "droits supportés légalement",
+      "organismes",
       "exemption"
     ],
     "source": "tome2-livre1-chapitre12.json"
@@ -8807,7 +8862,7 @@
   {
     "numero": "332",
     "titre": "Principe de la taxe spéciale sur les assurances",
-    "contenu": "Toute convention d'assurance est soumise à une taxe spéciale annuelle.\nLa taxe spéciale sur les contrats d'assurances est perçue sur le total de la convention.\nToute police d'assurance est soumise obligatoirement à la formalité d'enregistrement gratis et dispensée du droit de timbre.",
+    "contenu": "Toute convention d'assurance est soumise à une taxe spéciale annuelle.\nLa taxe spéciale sur les contrats d'assurances est perçue sur le montant total de la convention.\nToute police d'assurance est soumise obligatoirement à la formalité d'enregistrement gratis et dispensée du droit de timbre.",
     "tome": "2",
     "chapitre": "13",
     "keywords": [
@@ -8816,9 +8871,9 @@
       "contrats d'assurances",
       "montant total",
       "police d'assurance",
-      "enregistrement gratuit",
+      "enregistrement gratis",
       "droit de timbre",
-      "dispense"
+      "dispensée"
     ],
     "source": "tome2-livre1-chapitre13.json"
   },
@@ -8831,7 +8886,7 @@
     "keywords": [
       "tarif",
       "taxe",
-      "taux 15 %"
+      "fixé à 15 %"
     ],
     "source": "tome2-livre1-chapitre13.json"
   },
@@ -8842,44 +8897,47 @@
     "tome": "2",
     "chapitre": "13",
     "keywords": [
-      "exonération",
+      "exonérées",
       "taxe",
       "réassurances",
       "article 335",
+      "assurances bénéficiant",
       "dispositions exceptionnelles",
       "droits de timbre",
       "enregistrement",
-      "crédits à l'exportation"
+      "assurances couvrant",
+      "crédits à réexportation"
     ],
     "source": "tome2-livre1-chapitre13.json"
   },
   {
     "numero": "335",
     "titre": "Dispense de la taxe sur les assurances",
-    "contenu": "Sont dispensés de la taxe :\n1° les contrats d'assurances sur la vie et de rentes viagères y compris les contrats de rente différée souscrits auprès des compagnies d'assurances installées au Congo ;\n2° tous autres contrats, si et dans la mesure où le risque se trouve situé hors du Territoire ou ne se rapporte pas à un établissement industriel, commercial ou agricole sis dans le Territoire, à défaut de situation matérielle certaine ou de rapport certain avec un établissement industriel, commercial ou agricole, les risques sont réputés situés au lieu du domicile ou du principal établissement du souscripteur.\nMais il ne peut être fait usage dans le Territoire de ces contrats, soit par acte public, soit en justice ou devant toute autre autorité constituée, s'ils n'ont pas été préalablement soumis à la formalité du visa pour timbre et de l'enregistrement.\nCette formalité est donnée moyennant le paiement de la taxe sur l'ensemble des sommes stipulées au profit de l'assureur afférentes aux années restant à courir.\nLes réassurances de risques visés aux numéros 1 et 2 sont soumises aux dispositions du présent article.\nToutefois, l'enregistrement des contrats préalablement à leur usage dans le Territoire, ne motive la perception que si et dans la mesure où il n'est pas justifié du paiement de la taxe sur les contrats d'assurances correspondants.",
+    "contenu": "Sont dispensés de la taxe :\n1° les contrats d'assurances sur la vie et de rentes viagères y compris les contrats de rente différée souscrits auprès des compagnies d'assurance installées au Congo ;\n2° tous autres contrats, si et dans la mesure où le risque se trouve situé hors du Territoire ou ne se rapporte pas à un établissement industriel, commercial ou agricole sis dans le Territoire, à défaut de situation matérielle certaine ou de rapport certain avec un établissement industriel, commercial ou agricole, les risques sont réputés situés au lieu du domicile ou du principal établissement du souscripteur.\nMais il ne peut être fait usage dans le Territoire de ces contrats, soit par acte public, soit en justice ou devant toute autre autorité constituée, s'ils n'ont pas été préalablement soumis à la formalité du visa pour timbre et de l'enregistrement.\nCette formalité est donnée moyennant le paiement de la taxe sur l'ensemble des sommes stipulées au profit de l'assureur afférentes aux années restant à courir.\nLes réassurances de risques visés aux numéros 1 et 2 sont soumises aux dispositions du présent article.\nToutefois, l'enregistrement des contrats préalablement à leur usage dans le Territoire, ne motive la perception que si et dans la mesure où il n'est pas justifié du paiement de la taxe sur les contrats d'assurances correspondants.",
     "tome": "2",
     "chapitre": "13",
     "keywords": [
-      "dispense",
+      "dispensés",
       "taxe",
-      "contrats d'assurances",
-      "vie",
+      "contrats d'assurances sur la vie",
       "rentes viagères",
       "rente différée",
-      "compagnies d'assurances",
+      "compagnies d'assurance",
       "Congo",
       "risque",
       "hors du Territoire",
       "établissement industriel",
-      "établissement commercial",
-      "établissement agricole",
+      "commercial ou agricole",
       "domicile",
+      "principal établissement",
       "souscripteur",
       "acte public",
-      "justice",
       "autorité constituée",
       "visa pour timbre",
       "enregistrement",
+      "sommes stipulées",
+      "assureur",
+      "années restant à courir",
       "réassurances"
     ],
     "source": "tome2-livre1-chapitre13.json"
@@ -8893,6 +8951,7 @@
     "keywords": [
       "taxe",
       "liquidation",
+      "résultat obtenu",
       "sommes stipulées",
       "assureur",
       "accessoires",
@@ -8902,10 +8961,7 @@
       "remboursés",
       "liquidation mensuelle",
       "état",
-      "administration",
-      "sociétés d'assurances",
-      "15 du mois",
-      "police"
+      "administration"
     ],
     "source": "tome2-livre1-chapitre13.json"
   },
@@ -8920,6 +8976,10 @@
       "compagnies d'assurances",
       "agences",
       "taxe",
+      "versée",
+      "15 du mois",
+      "souscription",
+      "police",
       "exigible",
       "bureau de l'enregistrement",
       "principal établissement"
@@ -8937,8 +8997,9 @@
       "échéance",
       "plus d'un an",
       "taxe",
-      "fractionnement",
+      "fractionnée",
       "année",
+      "parties",
       "déclaration spéciale"
     ],
     "source": "tome2-livre1-chapitre13.json"
@@ -9007,7 +9068,9 @@
       "préposés de l'enregistrement",
       "livres",
       "Code de commerce",
+      "législation",
       "contrôle des assurances",
+      "surveillance des assurances",
       "polices",
       "tacite reconduction",
       "expiration",
@@ -9019,8 +9082,13 @@
       "établissement",
       "agence",
       "succursale",
+      "fonctionnaires",
+      "communication",
+      "contrats",
+      "détruits",
       "refus de représentation",
       "procès-verbal",
+      "sanctions",
       "article 157"
     ],
     "source": "tome2-livre1-chapitre13.json"
@@ -9042,11 +9110,13 @@
       "préjudice",
       "Trésor",
       "droit en sus",
+      "taxe exigible",
       "10.000 FCFA",
       "article 341",
       "amende",
       "1.000.000 FCFA",
       "contravention",
+      "exécution",
       "100.000 FCFA",
       "article 343"
     ],
@@ -9064,13 +9134,15 @@
       "recouvrement",
       "taxe",
       "pénalités",
-      "prescription",
+      "prescrite",
       "cinq ans",
       "exigibilité",
       "trente ans",
+      "charge",
       "assureurs",
       "courtiers",
       "intermédiaires",
+      "souscrit",
       "déclaration",
       "article 341"
     ],
@@ -9088,7 +9160,7 @@
   {
     "numero": "347",
     "titre": "Restitution de la taxe et pénalités payées à tort",
-    "contenu": "La taxe et les pénalités payées à tort peuvent être restituées qu'en cas de résiliation, d'annulation ou de résolution judiciaire de la convention, à concurrence de la fraction afférente :\na) aux sommes stipulées au profit de l'assureur et à leurs accessoires dont le remboursement à l'assuré est ordonné par le jugement ou l'arrêt ;\nb) aux sommes stipulées au profit de l'assureur et à leurs accessoires qui, ayant donné lieu à paiement effectif de la taxe, bien que n'ayant pas encore été payées à l'assureur, ne peuvent plus, d'après les dispositions de la décision judiciaire, être exigées par lui de l'assuré.\nL'action en restitution prévue par le présent article se prescrit après une année à compter du jour où la décision judiciaire est devenue définitive et, en tout état de cause, cinq ans au plus tard après le paiement.\nLes dispositions du présent article ne font pas échec aux dispositions de l'article 336 relatives à la déduction des sommes stipulées au profit de l'assureur et de leurs accessoires ayant fait l'objet d'une annulation ou d'un remboursement.",
+    "contenu": "La taxe et les pénalités payées à tort ne peuvent être restituées qu'en cas de résiliation, d'annulation ou de résolution judiciaire de la convention, à concurrence de la fraction afférente :\na) aux sommes stipulées au profit de l'assureur et à leurs accessoires dont le remboursement à l'assuré est ordonné par le jugement ou l'arrêt ;\nb) aux sommes stipulées au profit de l'assureur et à leurs accessoires qui, ayant donné lieu à paiement effectif de la taxe, bien que n'ayant pas encore été payées à l'assureur, ne peuvent plus, d'après les dispositions de la décision judiciaire, être exigées par lui de l'assuré.\nL'action en restitution prévue par le présent article se prescrit après une année à compter du jour où la décision judiciaire est devenue définitive et, en tout état de cause, cinq ans au plus tard après le paiement.\nLes dispositions du présent article ne font pas échec aux dispositions de l'article 336 relatives à la déduction des sommes stipulées au profit de l'assureur et de leurs accessoires ayant fait l'objet d'une annulation ou d'un remboursement.",
     "tome": "2",
     "chapitre": "13",
     "keywords": [
@@ -9106,11 +9178,13 @@
       "assuré",
       "jugement",
       "arrêt",
+      "paiement effectif",
       "décision judiciaire",
       "action en restitution",
-      "prescription",
+      "définitive",
       "une année",
       "cinq ans",
+      "déduction",
       "article 336"
     ],
     "source": "tome2-livre1-chapitre13.json"
@@ -9127,6 +9201,8 @@
       "pénalités",
       "administration de l'enregistrement",
       "instances",
+      "introduites",
+      "jugées",
       "matière d'enregistrement"
     ],
     "source": "tome2-livre1-chapitre13.json"
@@ -9140,6 +9216,8 @@
     "keywords": [
       "dispositions",
       "chapitre",
+      "atteinte",
+      "en vigueur",
       "contrôle",
       "surveillance",
       "assurances"
@@ -9164,15 +9242,16 @@
       "droit au bail",
       "promesse de bail",
       "immeuble",
-      "enregistrement",
+      "obligatoirement enregistrés",
       "bureau du Territoire",
       "situation des biens",
       "sous seing privé",
       "acte public",
       "hors du Territoire",
       "mutation",
-      "déclaration",
+      "déclarée",
       "droits exigibles",
+      "acquittés",
       "trois mois"
     ],
     "source": "tome2-livre1-chapitre14.json"
@@ -9194,16 +9273,18 @@
       "sociétés",
       "siège social",
       "Territoire",
-      "enregistrement",
+      "enregistrés",
       "bureau du siège social",
-      "notaire",
+      "notaire résidant",
       "hors du Territoire",
       "expédition",
       "acte notarié",
       "déclaration",
+      "prescriptions",
       "déclarations notariées",
       "souscription",
       "versement",
+      "augmentations",
       "capital en numéraire"
     ],
     "source": "tome2-livre1-chapitre14.json"
@@ -9211,11 +9292,11 @@
   {
     "numero": "352",
     "titre": "Sommes acquises à la République",
-    "contenu": "Sont définitivement acquis à la République :\n1° le montant des coupons, intérêts ou dividendes, atteints par la prescription quinquennale ou conventionnelle et afférents à des actions, parts de fondateurs ou obligations négociables, émises par toute société commerciale ou civile ou par toute Collectivité soit privée, soit publique ;\n2° les actions, parts de fondateurs, obligations et autres valeurs mobilières des mêmes Collectivités, lorsqu'elles sont atteintes par la prescription trentenaire ou conventionnelle ;\n3° les dépôts de sommes d'argent d'une manière générale ou d'avoirs en espèces, dans les banques, les établissements de crédit et tous autres établissements qui reçoivent des fonds en dépôt ou en compte courant, lorsque ces dépôts ou avoirs n'ont fait l'objet de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;\n4° les dépôts de titres et, d'une manière générale, tout avoir en titres dans les banques et autres établissements qui reçoivent des titres en dépôts ou pour compte d'autrui, lorsque ces dépôts ou avoirs n'ont fait l'objet, de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;\nLes transferts de titres nominatifs acquis à la République dans les conditions prévues par le présent article sont effectués sur la production de ces titres et d'une attestation du Directeur de l'enregistrement, des domaines et du timbre certifiant le droit de la République.",
+    "contenu": "Sont définitivement acquis à la République :\n1° le montant des coupons, intérêts ou dividendes, atteints par la prescription quinquennale ou conventionnelle et afférents à des actions, parts de fondateurs ou obligations négociables, émises par toute société commerciale ou civile ou par toute Collectivité soit privée, soit publique ;\n2° les actions, parts de fondateurs, obligations et autres valeurs mobilières des mêmes Collectivités, lorsqu'elles sont atteintes par la prescription trentenaire ou conventionnelle ;\n3° les dépôts de sommes d'argent et d'une manière générale tous avoirs en espèces, dans les banques, les établissements de crédit et tous autres établissements qui reçoivent des fonds en dépôt ou en compte courant, lorsque ces dépôts ou avoirs n'ont fait l'objet de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;\n4° les dépôts de titres et, d'une manière générale, tout avoir en titres dans les banques et autres établissements qui reçoivent des titres en dépôts ou pour toute autre cause lorsque ces dépôts ou avoirs n'ont fait l'objet, de la part des ayants droit, d'aucune opération ou réclamation depuis trente années.\nLes transferts des titres nominatifs acquis à la République dans les conditions prévues par le présent article sont effectués sur la production de ces titres et d'une attestation du Directeur de l'enregistrement, des domaines et du timbre certifiant le droit de la République.",
     "tome": "2",
     "chapitre": "15",
     "keywords": [
-      "acquis",
+      "définitivement acquis",
       "République",
       "coupons",
       "intérêts",
@@ -9237,6 +9318,7 @@
       "établissements de crédit",
       "fonds en dépôt",
       "compte courant",
+      "toute autre cause",
       "trente années",
       "ayants droit",
       "opération",
@@ -9252,7 +9334,7 @@
   {
     "numero": "353",
     "titre": "Fusion des formalités d'enregistrement et de publicité foncière",
-    "contenu": "Les formalités d'enregistrement et de la publicité foncière sont fusionnées pour les actes publiés au fichier immobilier et pour l'enregistrement des actes résultant de leur publication.\nLa formalité unique ou formalité fusionnée s'applique à tous les actes qui sont soumis à la double obligation de l'enregistrement et de la publicité foncière.",
+    "contenu": "Les formalités d'enregistrement et de la publicité foncière sont fusionnées pour les actes publiés au fichier immobilier et l'enregistrement de ces actes résultant de leur publication.\nLa formalité unique ou formalité fusionnée s'applique à tous les actes qui sont soumis à la double obligation de l'enregistrement et de la publicité foncière.",
     "tome": "2",
     "chapitre": "16",
     "keywords": [
@@ -9260,6 +9342,7 @@
       "enregistrement",
       "publicité foncière",
       "fusionnées",
+      "actes publiés",
       "fichier immobilier",
       "publication",
       "formalité unique",
@@ -9271,14 +9354,14 @@
   {
     "numero": "354",
     "titre": "Conditions de soumission à la formalité unique",
-    "contenu": "Un acte est soumis à la formalité unique à trois conditions simultanées :\na) l'acte doit être soumis à l'enregistrement ;\nb) l'acte doit être soumis à la publicité foncière ;\nc) l'acte ne doit pas figurer parmi les actes exclus formellement de la formalité unique.",
+    "contenu": "Un acte est soumis à la formalité unique à trois conditions simultanées :\na) l'acte doit être soumis à l'enregistrement obligatoire ;\nb) l'acte doit être soumis à la publicité foncière ;\nc) l'acte ne doit pas figurer parmi les actes exclus formellement de la formalité unique.",
     "tome": "2",
     "chapitre": "16",
     "keywords": [
       "acte",
       "formalité unique",
-      "conditions",
-      "enregistrement",
+      "trois conditions simultanées",
+      "enregistrement obligatoire",
       "publicité foncière",
       "actes exclus"
     ],
@@ -9287,7 +9370,7 @@
   {
     "numero": "355",
     "titre": "Actes soumis à titre obligatoire à la formalité unique",
-    "contenu": "Sont soumis à titre obligatoire à la formalité unique :\n1° tous les actes portant ou constatant la transmission à titre onéreux des droits réels immobiliers ; Ces droits peuvent porter sur la propriété, la nue-propriété, l'usufruit, l'usage, l'emphytéose et l'antichrèse ou les servitudes (ventes, adjudications, échanges, apports en sociétés, retraits, cessions et rétrocessions) ;\n2° les baux à durée illimitée et baux à vie ayant pour objet des immeubles ou droits immobiliers ;\n3° actes entre vifs dressés pour constater des clauses d'inaliénabilité temporaire et toutes autres restrictions au droit de disposer ;\n4° attestations notariales établies en vue de constater la transmission ou la constitution par décès de droits réels immobiliers ;\n5° conventions d'indivision immobilière ;\n6° actes interruptifs de la prescription acquisitive (citation en justice, commandement) et actes de renonciation à la prescription acquisitive ;\n7° actes constitutifs de biens de famille insaisissables ;\n8° cessions amiables en matière d'expropriation pour cause d'utilité publique quel que soit le montant de l'indemnité ;\n9° procès-verbaux de réorganisation foncière et de remembrement, actes d'échange d'immeubles ruraux ;\n10° règlements de copropriété des immeubles ou ensembles immobiliers.",
+    "contenu": "Sont soumis à titre obligatoire à la formalité unique :\n1° tous les actes portant ou constatant la transmission à titre onéreux des droits réels immobiliers ; Ces droits peuvent porter sur la propriété, la nue-propriété, l'usufruit, l'usage, l'emphytéose et l'antichrèse ou les servitudes (ventes, adjudications, échanges, apports en sociétés, retraits, cessions et rétrocessions) ;\n2° les baux à durée illimitée et baux à vie ayant pour objet des immeubles ou droits immobiliers ;\n3° actes entre vifs dressés pour constater des clauses d'inaliénabilité temporaire et toutes autres restrictions au droit de disposer ;\n4° attestations notariées établies en vue de constater la transmission ou la constitution par décès de droits réels immobiliers ;\n5° conventions d'indivision immobilière ;\n6° actes interruptifs de la prescription acquisitive (citation en justice, commandement) et actes de renonciation à la prescription acquisitive ;\n7° actes constitutifs de biens de famille insaisissables ;\n8° cessions amiables en matière d'expropriation pour cause d'utilité publique quel que soit le montant de l'indemnité ;\n9° procès-verbaux de réorganisation foncière et de remembrement, actes d'échange d'immeubles ruraux ;\n10° règlements de copropriété des immeubles ou ensembles immobiliers.",
     "tome": "2",
     "chapitre": "16",
     "keywords": [
@@ -9316,16 +9399,19 @@
       "droits immobiliers",
       "clauses d'inaliénabilité",
       "restrictions",
-      "attestations notariales",
+      "attestations notariées",
       "décès",
       "conventions d'indivision",
       "prescription acquisitive",
       "biens de famille insaisissables",
       "expropriation",
       "utilité publique",
+      "indemnité",
       "réorganisation foncière",
       "remembrement",
-      "copropriété"
+      "immeubles ruraux",
+      "copropriété",
+      "ensembles immobiliers"
     ],
     "source": "tome2-livre1-chapitre16.json"
   },
@@ -9337,13 +9423,15 @@
     "chapitre": "16",
     "keywords": [
       "actes",
-      "facultatif",
+      "facultativement",
       "formalité fusionnée",
       "promesses unilatérales de vente",
       "promesses unilatérales de bail",
       "douze ans",
+      "conventions",
       "servitudes légales",
       "documents annexés",
+      "reproduits",
       "publicité foncière"
     ],
     "source": "tome2-livre1-chapitre16.json"
@@ -9361,11 +9449,14 @@
       "mutations à titre gratuit",
       "baux urbains",
       "douze ans",
+      "durée limitée",
       "baux ruraux",
       "actes mixtes",
       "meubles",
       "immeubles",
       "publicité",
+      "formalité unique",
+      "facultative",
       "mutations verbales",
       "donations d'immeubles"
     ],
@@ -9379,8 +9470,10 @@
     "chapitre": "16",
     "keywords": [
       "formalité unique",
+      "applicable",
       "Conservations des Hypothèques",
       "enregistrement",
+      "actes concernés",
       "publication",
       "services de l'enregistrement"
     ],
@@ -9396,7 +9489,7 @@
       "délais",
       "rigueur",
       "loi",
-      "prorogation",
+      "prorogés",
       "autorité"
     ],
     "source": "tome2-livre1-chapitre16.json"
@@ -9404,9 +9497,9 @@
   {
     "numero": "2",
     "titre": "Émission et obligations",
-    "contenu": "Le Timbre électronique est émis par le système d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.\nIl est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et du paiement minimal est de 1.950 FCFA.\nCes transactions sont certifiées par plateforme d'horodatage, de certification et d'archivage en vigueur par le biais du timbre électronique.\nLes personnes visées ci-dessus sont tenues de connecter leur système de facturation ou tout système en tenant lieu à celui d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.\nLa Direction Générale des Impôts et des Domaines et l'Agence de Régulation des Postes et des Communications Électroniques sont chargées de la mise en œuvre de la présente disposition.\nToute action de nature à empêcher l'action de l'ARPCE de se connecter au système de facturation est sanctionnée par le blocage des comptes bancaires du contribuable, assorti d'une amende fiscale de 10.000.000 FCFA.",
+    "contenu": "Le Timbre électronique est émis par le système d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.\nIl est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et dont la valeur minimale est de 1.950 FCFA.\nCes transactions sont certifiées par plateforme d'horodatage, de certification et d'archivage en vigueur par le biais du timbre électronique.\nLes personnes visées ci-dessus sont tenues de connecter leur système de facturation ou tout système en tenant lieu à celui d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.\nLa Direction Générale des Impôts et des Domaines et l'Agence de Régulation des Postes et des Communications Électroniques sont chargées de la mise en œuvre de la présente disposition.\nToute action de nature à empêcher l'action de l'ARPCE de se connecter au système de facturation est sanctionnée par le blocage des comptes bancaires du contribuable, assorti d'une amende fiscale de 10.000.000 FCFA.",
     "tome": "2",
-    "chapitre": "non-codifies",
+    "chapitre": "",
     "keywords": [
       "timbre électronique",
       "émission",
@@ -9424,7 +9517,7 @@
       "transactions",
       "voie électronique",
       "1.950 FCFA",
-      "paiement minimal",
+      "valeur minimale",
       "plateforme",
       "système de facturation",
       "Direction Générale des Impôts et des Domaines",
@@ -9476,5 +9569,2797 @@
       "État de la source"
     ],
     "source": "tome2-textes-non-codifies.json"
+  },
+  {
+    "numero": "1",
+    "titre": "Établissement de la contribution du timbre",
+    "contenu": "La contribution du timbre est établie sur tous les papiers destinés aux actes civils et judiciaires et aux écritures qui peuvent être produites en justice et y faire foi ; elle est perçue d'après les bases et suivant les règles fixées par la présente réglementation.\nIl n'y a d'autres exceptions que celles nommément exprimées dans le présent règlement.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "contribution du timbre",
+      "papiers",
+      "actes civils",
+      "actes judiciaires",
+      "écritures",
+      "justice",
+      "foi",
+      "réglementation",
+      "exceptions",
+      "règlement"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "2",
+    "titre": "Solidarité pour le paiement des droits de timbre",
+    "contenu": "Sans préjudice des dispositions particulières relatées dans le présent règlement, sont solidaires pour le paiement des droits de timbre et des amendes : tous les signataires, pour les actes synallagmatiques, les prêteurs et les emprunteurs, pour les obligations, les Officiers ministériels qui ont reçu ou rédigé des actes énonçant des actes ou livres non timbrés.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "dispositions particulières",
+      "solidaires",
+      "paiement",
+      "droits de timbre",
+      "amendes",
+      "signataires",
+      "actes synallagmatiques",
+      "prêteurs",
+      "emprunteurs",
+      "obligations",
+      "Officiers ministériels",
+      "énonçant",
+      "livres non timbrés"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "3",
+    "titre": "Charge du timbre des actes entre l'État et les citoyens",
+    "contenu": "Le timbre de tous les actes entre l'État français, le Groupe des Territoires, les Territoires et les citoyens est à la charge de ces derniers.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "timbre",
+      "actes",
+      "État français",
+      "Groupe des Territoires",
+      "Territoires",
+      "citoyens",
+      "charge"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "4",
+    "titre": "Interdiction de vente non autorisée de papier timbré",
+    "contenu": "Aucune personne ne peut vendre ou distribuer du papier timbré qu'en vertu d'une commission de l'administration Fiscale, à peine d'une amende fiscale de 1.000 FCFA, pour la première fois, et de 10.000 FCFA, en cas de récidive.\nLa création de distributeurs auxiliaires pourra faire l'objet d'un règlement spécial, par décision ministérielle.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "vente",
+      "distribution",
+      "papier timbré",
+      "commission",
+      "administration fiscale",
+      "amende fiscale",
+      "1.000 FCFA",
+      "10.000 FCFA",
+      "récidive",
+      "distributeurs auxiliaires",
+      "règlement spécial",
+      "décision ministérielle"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "5",
+    "titre": "Interdiction d'altérer l'empreinte du timbre",
+    "contenu": "L'empreinte du timbre ne peut être couverte d'écriture ni altérée.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "empreinte",
+      "timbre",
+      "couverte",
+      "écriture",
+      "altérée"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "6",
+    "titre": "Interdiction de réutilisation du papier timbré",
+    "contenu": "Le papier timbré qui a été employé à un acte quelconque ne peut servir pour un autre acte, quand même le premier n'aurait pas été achevé.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "papier timbré",
+      "employé",
+      "acte",
+      "servir",
+      "achevé"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "7",
+    "titre": "Interdiction de deux actes sur une même feuille",
+    "contenu": "Il ne peut être fait ni expédié deux actes à la suite l'un de l'autre sur la même feuille de papier timbré, nonobstant tout usage ou règlement contraire.\nSont exceptés : les ratifications des actes passés en l'absence des parties, les quittances des prix de ventes, et celles de remboursements de contrats de constitution ou d'obligation, les inventaires, procès-verbaux, et autres actes qui ne peuvent être consommés dans un même jour et dans la même vacation, les procès-verbaux de reconnaissance et levée de scellés qu'on peut faire à la suite du procès-verbal d'apposition, et les significations des huissiers qui peuvent également être écrites à la suite des jugements et autres pièces dont il est délivré copie.\nIl peut être donné plusieurs quittances authentiques ou délivrées par les comptables deniers publics, sur une même feuille de papier timbré pour acompte d'une seule et même créance ou d'un seul terme de fermage ou loyer.\nToutes autres quittances qui sont données sur une même feuille de papier timbré n'ont plus d'effet que si elles étaient sur papier non timbré.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "deux actes",
+      "même feuille",
+      "papier timbré",
+      "interdiction",
+      "exceptions",
+      "ratifications",
+      "quittances",
+      "prix de ventes",
+      "remboursements",
+      "contrats de constitution",
+      "obligation",
+      "inventaires",
+      "procès-verbaux",
+      "vacation",
+      "scellés",
+      "huissiers",
+      "jugements",
+      "copies",
+      "comptables deniers publics",
+      "apposition",
+      "significations",
+      "acompte",
+      "créance",
+      "fermage",
+      "loyer",
+      "papier non timbré"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "8",
+    "titre": "Défense d'utiliser des actes non timbrés",
+    "contenu": "Il est fait défense aux notaires, agents d'exécution, greffiers, arbitres et experts d'agir, aux juges de prononcer aucun jugement, et aux administrations publiques de rendre aucun arrêté sur un acte, registre ou effet de commerce non écrit sur papier timbré du timbre prescrit, ou non visé pour timbre.\nAucun juge ou officier public ne peut non plus coter et parapher un registre assujetti au timbre si les feuilles n'en sont pas timbrées.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "défense",
+      "notaires",
+      "agents d'exécution",
+      "greffiers",
+      "arbitres",
+      "experts",
+      "juges",
+      "jugement",
+      "administrations publiques",
+      "arrêté",
+      "acte",
+      "registre",
+      "effet de commerce",
+      "papier timbré",
+      "timbre prescrit",
+      "visé pour timbre",
+      "officier public",
+      "coter",
+      "parapher",
+      "assujetti"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "9",
+    "titre": "Obligations des officiers publics en matière de timbre",
+    "contenu": "Les états de frais dressés par les avocats défenseurs, agents d'exécution, greffiers, notaires, commis, doivent faire ressortir distinctement dans une colonne spéciale, et pour chaque débours le montant des droits payés au Trésor.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "états de frais",
+      "avocats défenseurs",
+      "agents d'exécution",
+      "greffiers",
+      "notaires",
+      "commis",
+      "ressortir distinctement",
+      "colonne spéciale",
+      "débours",
+      "montant",
+      "droits payés",
+      "Trésor"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "10",
+    "titre": "Mention du timbre sur les actes",
+    "contenu": "Lorsqu'un effet, certificat d'action, titre, livre, bordereau, police d'assurance, ou tout autre acte sujet au timbre et non enregistré est mentionné dans un acte public, judiciaire ou extrajudiciaire et ne doit pas être représenté au Receveur lors de l'enregistrement de cet acte, l'Officier public ou l'Officier ministériel est tenu de déclarer expressément dans l'acte si le titre est revêtu du timbre prescrit, et d'énoncer le montant du droit de timbre payé.\nEn cas d'omission, les notaires, avocats défenseurs, greffiers, agents d'exécution et autres officiers publics sont passibles d'une amende de 1.000 FCFA pour chaque contravention.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "effet",
+      "certificat d'action",
+      "titre",
+      "livre",
+      "bordereau",
+      "police d'assurance",
+      "acte sujet au timbre",
+      "acte public",
+      "judiciaire",
+      "extrajudiciaire",
+      "Receveur",
+      "enregistrement",
+      "Officier public",
+      "Officier ministériel",
+      "déclaration",
+      "timbre prescrit",
+      "droit de timbre",
+      "revêtu",
+      "énoncer",
+      "omission",
+      "avocats défenseurs",
+      "amende",
+      "1.000 FCFA",
+      "contravention"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "11",
+    "titre": "Défense d'enregistrer des actes non timbrés",
+    "contenu": "Il est également fait défense à tout receveur de l'enregistrement :\n1° d'enregistrer aucun acte qui ne serait pas sur papier timbré du timbre prescrit ou qui n'aurait pas été visé pour timbre ;\n2° d'admettre à la formalité de l'enregistrement des protêts d'effets négociables, sans faire représenter ces effets en bonne forme.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "défense",
+      "receveur de l'enregistrement",
+      "enregistrer",
+      "acte",
+      "papier timbré",
+      "timbre prescrit",
+      "visé pour timbre",
+      "formalité",
+      "admettre",
+      "protêts",
+      "effets négociables",
+      "représenter",
+      "bonne forme"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "12",
+    "titre": "Amendes pour contravention au timbre",
+    "contenu": "Il est prononcé une amende de 1.000 FCFA, à savoir :\n1° pour contravention, par les particuliers et les officiers et fonctionnaires publics, aux dispositions de l'article 5 ci-dessus ;\n2° pour chaque acte ou écrit sous signature privée en contravention aux articles 6 et 7 ci-dessus ;\n3° pour contravention aux articles 9 et 11 ;\n4° pour contravention aux articles 6 à 8 par les officiers et fonctionnaires publics.\nLes contrevenants, dans tous les cas ci-dessus, paieront en outre, les droits de timbre.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "amende",
+      "1.000 FCFA",
+      "contravention",
+      "particuliers",
+      "officiers publics",
+      "fonctionnaires publics",
+      "article 5",
+      "acte",
+      "écrit sous signature privée",
+      "articles 6 et 7",
+      "articles 9 et 11",
+      "articles 6 à 8",
+      "contrevenants",
+      "droits de timbre"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "13",
+    "titre": "Écritures privées sur papier non timbré",
+    "contenu": "Les écritures privées qui auraient été faites sur papier non timbré, sans contravention à la réglementation du timbre, quoique non comprises dans les exceptions, ne peuvent être produites en justice sans avoir été soumises au timbre extraordinaire, au visa pour timbre, ou revêtues de timbre mobile, sous peine d'une amende de 1.000 FCFA, outre le droit de timbre.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "écritures privées",
+      "papier non timbré",
+      "contravention",
+      "réglementation du timbre",
+      "exceptions",
+      "justice",
+      "timbre extraordinaire",
+      "visa pour timbre",
+      "timbre mobile",
+      "amende",
+      "1.000 FCFA",
+      "produites",
+      "droit de timbre"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "14",
+    "titre": "Actes passés en pays étranger ou dans les Territoires français d'Outre-mer",
+    "contenu": "Tout acte passé en pays étranger, ou dans les Territoires français d'Outre-mer où le timbre n'aurait pas encore été établi, est soumis au timbre avant qu'il puisse en être fait aucun usage dans le Territoire, soit dans un acte public, soit dans une déclaration quelconque, soit devant une autorité judiciaire ou administrative.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "acte",
+      "pays étranger",
+      "Territoires français d'Outre-mer",
+      "timbre",
+      "établi",
+      "soumis",
+      "usage",
+      "Territoire",
+      "acte public",
+      "déclaration",
+      "autorité judiciaire",
+      "autorité administrative"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "15",
+    "titre": "Pouvoirs des préposés de l'enregistrement en matière de timbre",
+    "contenu": "Les préposés de l'enregistrement sont autorisés à retenir les actes, registres, effets ou pièces quelconques en contravention, pour les joindre aux procès-verbaux qu'ils en rapportent, à moins que les contrevenants ne consentent à signer les dits procès-verbaux ou acquitter sur-le-champ l'amende encourue et le droit de timbre.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "préposés de l'enregistrement",
+      "retenir",
+      "actes",
+      "registres",
+      "effets",
+      "pièces",
+      "contravention",
+      "procès-verbaux",
+      "contrevenants",
+      "signer",
+      "acquitter",
+      "sur-le-champ",
+      "amende encourue",
+      "droit de timbre"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "16",
+    "titre": "Pouvoirs des préposés des Douanes et du Trésor",
+    "contenu": "Les préposés des Douanes, des Impôts et du Trésor, ont, pour constater les contraventions au timbre des actes ou écrits sous signature privée et pour saisir les pièces en contravention, les mêmes attributions que les préposés de l'enregistrement.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "préposés",
+      "Douanes",
+      "Impôts",
+      "Trésor",
+      "constater",
+      "contraventions",
+      "timbre",
+      "actes",
+      "écrits sous signature privée",
+      "saisir",
+      "pièces en contravention",
+      "attributions",
+      "enregistrement"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "17",
+    "titre": "Recouvrement des droits de timbre et amendes",
+    "contenu": "Le recouvrement des droits de timbre et des amendes de contraventions y relatives est poursuivi par voie de titre de perception et, en cas d'opposition, les instances sont instruites et jugées selon les formes prescrites par la réglementation de l'enregistrement.\nPour les droits de timbre perçus par le service de l'enregistrement qui ne sont pas majorés de pénalités de retard par les textes en vigueur, il est ajouté, à compter de la date du titre de perception, des intérêts moratoires calculés au taux de 6 % sur la somme reconnue exigible. Tout mois commencé est compté pour un mois entier.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "recouvrement",
+      "droits de timbre",
+      "amendes",
+      "contraventions",
+      "titre de perception",
+      "opposition",
+      "instances",
+      "réglementation de l'enregistrement",
+      "pénalités de retard",
+      "textes en vigueur",
+      "intérêts moratoires",
+      "taux de 6 %",
+      "somme reconnue exigible",
+      "mois commencé"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "18",
+    "titre": "Prescription des amendes pour contraventions au timbre",
+    "contenu": "La prescription de cinq ans établie par l'article 193 de la réglementation de l'enregistrement, s'applique aux amendes pour contraventions à la réglementation du timbre.\nCette prescription court du jour où les préposés ont été mis à portée de constater les contraventions au vu de chaque acte soumis à l'enregistrement.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "prescription",
+      "cinq ans",
+      "article 193",
+      "réglementation de l'enregistrement",
+      "amendes",
+      "contraventions",
+      "réglementation du timbre",
+      "préposés",
+      "portée",
+      "constater",
+      "acte",
+      "enregistrement"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "19",
+    "titre": "Privilège du Trésor sur les meubles et effets mobiliers",
+    "contenu": "Pour les recouvrements des droits de timbre autres que les droits en sus, amendes et pénalités, le Trésor aura un privilège sur tous les meubles et effets mobiliers des redevables.\nCe privilège s'exercera immédiatement après celui de l'impôt sur le chiffre d'affaires et des taxes instituées en remplacement de cet impôt.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "recouvrement",
+      "droits de timbre",
+      "droits en sus",
+      "amendes",
+      "pénalités",
+      "Trésor",
+      "privilège",
+      "meubles",
+      "effets mobiliers",
+      "redevables",
+      "impôt sur le chiffre d'affaires",
+      "taxes",
+      "instituées"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "20",
+    "titre": "Droit de communication et vérification des sociétés",
+    "contenu": "Toutes les sociétés françaises ou étrangères, de quelque nature qu'elles soient, toutes compagnies, tous entrepreneurs pour les entreprises de toute nature, toutes sociétés d'assurances ou assureurs français ou étrangers pour les opérations d'assurances de toute nature sont assujettis aux vérifications des agents de l'enregistrement et des inspecteurs vérificateurs et sont tenus de communiquer aux dits agents ayant au moins le grade d'inspecteur ou en tenant lieu tant au siège social que dans les succursales, leurs livres, registres, titres, polices, pièces de recettes, de dépenses et de comptabilité et tous autres documents tels que délibérations, comptes rendus d'assemblées, bordereaux de coupons, correspondances, etc., afin qu'ils s'assurent de l'exécution des règlements sur le timbre.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "sociétés françaises",
+      "sociétés étrangères",
+      "compagnies",
+      "entrepreneurs",
+      "entreprises",
+      "sociétés d'assurances",
+      "assureurs",
+      "vérifications",
+      "agents de l'enregistrement",
+      "inspecteurs vérificateurs",
+      "communication",
+      "siège social",
+      "succursales",
+      "livres",
+      "registres",
+      "titres",
+      "polices",
+      "pièces de recettes",
+      "pièces de dépenses",
+      "comptabilité",
+      "délibérations",
+      "assemblées",
+      "bordereaux de coupons",
+      "correspondances",
+      "assujettis",
+      "grade d'inspecteur",
+      "règlements sur le timbre"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "21",
+    "titre": "Amende pour refus de communication",
+    "contenu": "L'amende encourue pour refus de communication dans les conditions prévues par l'article qui précède est de 50.000 FCFA.\nTout refus de communication est constaté par procès-verbal.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "amende encourue",
+      "refus de communication",
+      "article qui précède",
+      "50.000 FCFA",
+      "constaté",
+      "procès-verbal"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "22",
+    "titre": "Astreinte en cas de refus de communication",
+    "contenu": "Indépendamment de l'amende édictée ci-dessus, les sociétés ou compagnies françaises ou étrangères et tous autres assujettis aux vérifications des agents de l'enregistrement et des inspecteurs vérificateurs doivent, en cas d'instance, être condamnés à représenter les pièces ou documents non communiqués, sous une astreinte de 500 FCFA au minimum par chaque jour de retard.\nCette astreinte commence à courir de la date de la signature par les parties ou de la notification du procès-verbal dressé pour constater le refus d'exécuter le jugement régulièrement signifié; elle ne cesse que du jour où il est constaté au moyen d'une mention inscrite par un agent de contrôle sur un des principaux livres de la société ou de l'établissement, que l'administration a été mise à même d'obtenir la communication ordonnée.\nLe recouvrement de l'astreinte est poursuivi comme en matière d'enregistrement.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "amende",
+      "sociétés",
+      "compagnies françaises",
+      "compagnies étrangères",
+      "vérifications",
+      "agents de l'enregistrement",
+      "inspecteurs vérificateurs",
+      "instance",
+      "condamnés",
+      "astreinte",
+      "500 FCFA",
+      "jour de retard",
+      "procès-verbal",
+      "jugement",
+      "notification",
+      "agent de contrôle",
+      "établissement",
+      "communication ordonnée",
+      "recouvrement"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "23",
+    "titre": "Droit de vérification étendu aux entreprises et commerces",
+    "contenu": "Les pouvoirs appartenant aux agents de l'enregistrement et des inspecteurs vérificateurs pour application de l'article 20 ci-dessus à l'égard des sociétés peuvent être exercés à l'égard de toutes personnes ou tous établissements exerçant le commerce de banque, en vue du contrôle du paiement des droits de timbre dus tant par ces derniers que par des tiers.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "pouvoirs",
+      "agents de l'enregistrement",
+      "inspecteurs vérificateurs",
+      "article 20",
+      "sociétés",
+      "établissements",
+      "personnes",
+      "commerce de banque",
+      "contrôle",
+      "paiement",
+      "droits de timbre",
+      "tiers"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "24",
+    "titre": "Vérification des officiers publics et commerçants",
+    "contenu": "Il en est de même à l'égard de tous les officiers publics et ministériels et de tout commerçant faisant un chiffre d'affaires supérieur à 1.000.000 FCFA par an.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "officiers publics",
+      "officiers ministériels",
+      "commerçant",
+      "chiffre d'affaires",
+      "1.000.000 FCFA",
+      "contrôle"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "25",
+    "titre": "Droit de communication des administrations et collectivités",
+    "contenu": "En aucun cas, les administrations de l'État, du Groupe des Territoires, des Territoires et des communes ainsi que les entreprises concédées ou contrôlées par l'État, les Territoires et les communes, de même que tous établissements ou organismes quelconques soumis au contrôle de l'autorité administrative, ne peuvent opposer le secret professionnel aux agents de l'administration des finances ayant au moins le grade d'inspecteur qui, pour établir les impôts institués par les textes existants, leur demandent communication des documents de service qu'elles détiennent.",
+    "tome": "2",
+    "chapitre": "1",
+    "keywords": [
+      "administrations",
+      "État",
+      "Groupe des Territoires",
+      "Territoires",
+      "communes",
+      "entreprises concédées",
+      "entreprises contrôlées",
+      "établissements",
+      "organismes",
+      "contrôle",
+      "autorité administrative",
+      "secret professionnel",
+      "agents",
+      "administration des finances",
+      "inspecteur",
+      "impôts",
+      "textes existants",
+      "communication",
+      "documents de service"
+    ],
+    "source": "tome2-livre2-chapitre1.json"
+  },
+  {
+    "numero": "26",
+    "titre": "Dimensions des papiers timbrés",
+    "contenu": "Les papiers destinés aux timbres débités par l'administration fiscale sont fabriqués dans les dimensions déterminées suivant le tableau ci-après :\nDésignation | Dimensions de la feuille déployée (supposée rognée)\nPapier registre | 0,42 m | 0,54 m\nPapier normal | 0,27 m | 0,42 m\nDemi-feuille papier normal | 0,27 m | 0,21 m\nIls portent un filigrane particulier, imprimé dans la pâte même de la fabrication.\nL'empreinte sur les papiers que fournit l'administration fiscale est appliquée en haut de la partie gauche de la feuille (non déployée) de la demi-feuille.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "papiers",
+      "timbres débités",
+      "administration fiscale",
+      "dimensions",
+      "papier registre",
+      "papier normal",
+      "demi-feuille",
+      "filigrane",
+      "fabrication",
+      "empreinte",
+      "partie gauche",
+      "déployée"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "27",
+    "titre": "Obligation de timbrage pour les papiers non fournis par l'administration",
+    "contenu": "Les citoyens qui veulent se servir de papiers autres que ceux de l'administration fiscale ou de parchemins sont admis à les faire timbrer avant d'en faire usage.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "citoyens",
+      "papiers",
+      "administration fiscale",
+      "parchemins",
+      "admis",
+      "timbrer",
+      "usage"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "28",
+    "titre": "Timbrage par apposition de timbres mobiles",
+    "contenu": "Les receveurs de l'enregistrement peuvent suppléer à la formalité du visa, pour toute espèce de timbre de dimension au moyen de l'apposition de timbres mobiles.\nPeuvent également être timbrés au moyen de timbres mobiles, les papiers ou parchemins destinés à la rédaction des actes de toute nature et des expéditions délivrées par les Officiers ministériels pourvu que ces papiers et parchemins soient revêtus du timbre avant tout usage.\nLe timbre mobile doit être apposé en haut de la partie gauche de la feuille (non déployée) ou de la demi-feuille.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "receveurs de l'enregistrement",
+      "formalité du visa",
+      "timbre de dimension",
+      "timbres mobiles",
+      "apposition",
+      "papiers",
+      "parchemins",
+      "actes",
+      "expéditions",
+      "Officiers ministériels",
+      "revêtus",
+      "avant tout usage",
+      "feuille",
+      "demi-feuille"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "29",
+    "titre": "Oblitération du timbre mobile",
+    "contenu": "Dans tous les cas où le présent règlement permet ou impose l'usage d'un timbre mobile, l'oblitération de ce timbre doit être faite par les Officiers ministériels ou fonctionnaires publics pour les actes publics et par les parties pour les actes privés.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "règlement",
+      "permet",
+      "impose",
+      "timbre mobile",
+      "oblitération",
+      "Officiers ministériels",
+      "fonctionnaires publics",
+      "actes publics",
+      "parties",
+      "actes privés"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "30",
+    "titre": "Modalités d'oblitération du timbre",
+    "contenu": "L'oblitération consiste dans l'inscription, à l'encre noire usuelle et en travers des vignettes, de la date et du lieu d'apposition du timbre et de la signature de la personne qualifiée qui a procédé.\nL'oblitération peut également être donnée avec une griffe apposée à l'encre grasse et faisant connaître la résidence, le nom ou la raison sociale de la partie, ainsi que la date d'oblitération.\nCelle-ci doit être faite de façon que le texte, la date et la signature ou le sceau débordent de chaque côté de ce timbre.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "oblitération",
+      "inscription",
+      "encre noire",
+      "vignettes",
+      "date",
+      "lieu d'apposition",
+      "signature",
+      "personne qualifiée",
+      "griffe",
+      "encre grasse",
+      "résidence",
+      "nom",
+      "raison sociale",
+      "date d'oblitération",
+      "sceau",
+      "débordent"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "31",
+    "titre": "Prix des papiers timbrés et droits de timbre",
+    "contenu": "Le prix des papiers timbrés fournis par l'administration fiscale et les droits de timbre des papiers que les redevables font timbrer sont fixés ainsi qu'il suit, en raison de la dimension du papier :\n• demi-feuille de papier normal : 1.000 FCFA\n• feuille de papier normal : 1.300 FCFA\n• feuille de papier registre : 1.500 FCFA",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "prix",
+      "papiers timbrés",
+      "administration fiscale",
+      "droits de timbre",
+      "redevables",
+      "timbrer",
+      "dimension",
+      "demi-feuille",
+      "papier normal",
+      "1.000 FCFA",
+      "feuille",
+      "1.300 FCFA",
+      "papier registre",
+      "1.500 FCFA"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "32",
+    "titre": "Droit de timbre pour papier de dimension non standard",
+    "contenu": "Il n'y a point de droit de timbre supérieur à 1.500 FCFA ni inférieur à 1.000 FCFA, quelle que soit la dimension du papier, soit au-dessus de grand registre, soit au-dessous de la demi-feuille de petit papier.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "droit de timbre",
+      "supérieur",
+      "1.500 FCFA",
+      "inférieur",
+      "1.000 FCFA",
+      "dimension",
+      "grand registre",
+      "demi-feuille",
+      "petit papier"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "33",
+    "titre": "Papier de dimension différente des formats de l'administration",
+    "contenu": "Si les papiers ou le parchemin soumis au timbrage par l'article 28 ci-dessus se trouvent être de dimensions différentes de celles des papiers de l'administration fiscale, le timbre quant au droit établi en raison de la dimension, est payé au prix du format supérieur.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "papiers",
+      "parchemin",
+      "timbrage",
+      "article 28",
+      "dimensions différentes",
+      "administration fiscale",
+      "timbre",
+      "droit établi",
+      "format supérieur",
+      "prix"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "34",
+    "titre": "Actes assujettis au droit de timbre de dimension",
+    "contenu": "Sont assujettis au droit de timbre établi en raison de la dimension, tous les papiers à employer pour les actes et écritures, soit publics, soit privés, à savoir :\n1° les actes de notaires et les extraits, copies et expéditions qui en sont délivrés ;\n2° ceux des agents d'exécution et les copies et expéditions qu'ils en délivrent ;\n3° les actes et jugements de la police ordinaire et des arbitres, les extraits, copies et expéditions qui en seront délivrés ;\n4° les actes particuliers des juges et de leurs greffiers et ceux reçus aux greffes ou par les greffiers ainsi que les extraits, copies et expéditions qui s'en délivrent ;\n5° les actes des Avocats et mandataires agréés près les Tribunaux et les copies ou expéditions qui en sont faites ou signifiées ;\n6° les actes des autorités constituées administratives qui sont assujettis à l'enregistrement ou qui se délivrent aux citoyens, et toutes les expéditions et extraits des actes, notamment les extraits d'actes de l'état civil, arrêtés et délibérations desdites autorités, qui sont délivrés aux citoyens ;\n7° les actes des autorités administratives et des établissements publics portant transmission de propriété, d'usufruit et de jouissance ;\n8° les actes entre particuliers sous signature privée et les doubles des comptes de recettes ou gestion particuliers ;\n9° les registres de l'autorité judiciaire où s'écrivent des actes sujets à l'enregistrement sur les minutes et les répertoires des Greffiers en matière civile et commerciale ;\n10° ceux des Notaires, Huissiers et autres Officiers publics et ministériels et leurs répertoires ;\n11° ceux des compagnies et sociétés d'actionnaires ;\n12° ceux des établissements particuliers et maisons particulières d'éducation ;\n13° ceux des agents d'affaires, Directeurs, régisseurs, syndics de créanciers et entrepreneurs des travaux et fournitures ;\n14° ceux des banquiers, négociants, armateurs, marchands, fabricants, commissionnaires, agents de changes, courtiers ;\n15° et généralement tous actes et écritures, extraits, copies et expéditions, soit publics, soit privés, devant ou pouvant faire titre ou être produits pour obligation, décharge, justification, demande ou défense ; tous livres, registres et minutes de lettres qui sont de nature à être produits en justice et dans le cas d'y faire foi, ainsi que les extraits, copies et expéditions qui sont délivrés desdits livres et registres.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "droit de timbre",
+      "dimension",
+      "papiers",
+      "actes",
+      "écritures",
+      "publics",
+      "privés",
+      "notaires",
+      "extraits",
+      "copies",
+      "expéditions",
+      "agents d'exécution",
+      "jugements",
+      "police ordinaire",
+      "arbitres",
+      "juges",
+      "greffiers",
+      "greffes",
+      "Avocats",
+      "mandataires agréés",
+      "Tribunaux",
+      "autorités administratives",
+      "enregistrement",
+      "état civil",
+      "arrêtés",
+      "délibérations",
+      "établissements publics",
+      "transmission de propriété",
+      "usufruit",
+      "jouissance",
+      "signature privée",
+      "comptes de recettes",
+      "gestion",
+      "registres",
+      "autorité judiciaire",
+      "répertoires",
+      "Huissiers",
+      "Officiers publics",
+      "Officiers ministériels",
+      "compagnies",
+      "sociétés d'actionnaires",
+      "établissements d'éducation",
+      "agents d'affaires",
+      "Directeurs",
+      "régisseurs",
+      "syndics de créanciers",
+      "entrepreneurs",
+      "travaux",
+      "fournitures",
+      "banquiers",
+      "négociants",
+      "armateurs",
+      "marchands",
+      "fabricants",
+      "commissionnaires",
+      "agents de changes",
+      "courtiers",
+      "obligation",
+      "décharge",
+      "justification",
+      "demande",
+      "défense",
+      "livres",
+      "minutes de lettres",
+      "justice",
+      "foi"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "35",
+    "titre": "Actes devant être répertoriés sur papier timbré",
+    "contenu": "Les seuls actes dont il doit être tenu répertoire sur papier timbré, dans les administrations locales et Mairies, sont ceux dénommés à l'article précédent n°8.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "répertoire",
+      "papier timbré",
+      "administrations locales",
+      "Mairies",
+      "article précédent",
+      "n°8",
+      "dénommés",
+      "actes"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "36",
+    "titre": "Actes soumis au timbre de dimension - Applications particulières",
+    "contenu": "Sont notamment soumis au timbre de dimension :\n1° les expéditions destinées aux parties, des ordonnances de nomination des Notaires, Avocats Défenseurs, Greffiers, Huissiers, Courtiers et Commissaires-priseurs ;\n2° l'un des deux exemplaires de la déclaration que tout officier public doit déposer au bureau de l'enregistrement avant de procéder à une vente publique et par enchères d'objets mobiliers ; l'exemplaire soumis au timbre est celui destiné à être annexé au procès-verbal de la vente ;\n3° les demandes adressées par les contribuables aux Greffiers du Tribunal Populaire de Commune ou de Région en matière de contributions directes et de taxes assimilées ;\n4° les mandats afférents aux réclamations introduites ou soutenues pour autrui en matière de contributions directes et de taxes assimilées ;\n5° le recours contre les décisions du Tribunal Populaire de Commune ou de Région rendues sur les réclamations en matière de contributions ;\n6° les récépissés prévus par la loi du 28 mai 1858 sur les négociations concernant les marchandises déposées dans les magasins généraux ;\n7° les mandements ou bordereaux de colocation délivrés aux créanciers par les Greffiers, en matière d'ordre et de contribution. Ces documents sont rédigés sur une demi-feuille de papier normal. Ils contiennent trente-cinq lignes à la page et de vingt à vingt-cinq syllabes à la ligne, compensation faite d'une feuille à l'autre ;\n8° les recours pour excès de pouvoirs ou violation de la loi, formés en matière de pension devant la Cour Suprême dans les conditions prévues par la loi du 29 décembre 1942 sur la révision des pensions abusives et par le décret du 8 août 1935 relatif à la Cour de cassation adjointe temporairement à la Chambre Administrative de la Cour Suprême ;\n9° les actes établis pour constater des conventions d'assurances ou de rentes viagères et tous avenants aux dites conventions, ainsi que les expéditions, copies ou extraits qui en sont délivrés, sous réserve toutefois de ce qui est dit au Chapitre 14 du Livre 1 sur l'enseignement.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "timbre de dimension",
+      "expéditions",
+      "ordonnances de nomination",
+      "Notaires",
+      "Avocats Défenseurs",
+      "Greffiers",
+      "Huissiers",
+      "Courtiers",
+      "Commissaires-priseurs",
+      "déclaration",
+      "officier public",
+      "bureau de l'enregistrement",
+      "vente publique",
+      "enchères",
+      "objets mobiliers",
+      "procès-verbal",
+      "contribuables",
+      "Tribunal Populaire de Commune",
+      "Tribunal Populaire de Région",
+      "contributions directes",
+      "taxes assimilées",
+      "mandats",
+      "réclamations",
+      "recours",
+      "récépissés",
+      "loi du 28 mai 1858",
+      "magasins généraux",
+      "mandements",
+      "bordereaux de colocation",
+      "créanciers",
+      "ordre",
+      "contribution",
+      "demi-feuille",
+      "papier normal",
+      "excès de pouvoirs",
+      "violation de la loi",
+      "pensions",
+      "Cour Suprême",
+      "loi du 29 décembre 1942",
+      "décret du 8 août 1935",
+      "Chambre Administrative",
+      "conventions d'assurances",
+      "rentes viagères",
+      "avenants"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "37",
+    "titre": "Droit de timbre des copies d'exploits et significations",
+    "contenu": "Le droit de timbre des copies des exploits et des significations de tous jugements, actes ou pièces, est acquitté au moyen de timbres mobiles lors de sa présentation à la formalité de l'enregistrement.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "droit de timbre",
+      "copies",
+      "exploits",
+      "significations",
+      "jugements",
+      "actes",
+      "pièces",
+      "timbres mobiles",
+      "formalité",
+      "enregistrement"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "38",
+    "titre": "Format du papier pour les copies d'exploits",
+    "contenu": "Le papier à employer pour la rédaction des copies d'exploits doit être des mêmes dimensions que la demi-feuille de papier normal.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "papier",
+      "copies d'exploits",
+      "dimensions",
+      "demi-feuille",
+      "papier normal"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "39",
+    "titre": "Mentions prescrites sur les copies d'exploits",
+    "contenu": "Indépendamment des mentions prescrites par le Code de procédure civile, les agents d'exécution sont tenus d'indiquer distinctement au bas de l'original et des copies de chaque exploit :\n1° le nombre de feuilles de papier employées tant pour les copies de l'original que pour les copies des pièces signifiées ;\n2° le montant des droits de timbre dus en raison de la dimension de ces feuilles.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "mentions",
+      "Code de procédure civile",
+      "agents d'exécution",
+      "original",
+      "copies",
+      "exploit",
+      "feuilles de papier",
+      "pièces signifiées",
+      "droits de timbre",
+      "dimension"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "40",
+    "titre": "Interdiction de remboursement des droits de timbre des copies",
+    "contenu": "Il ne peut être alloué en taxe, et les Officiers ministériels ne peuvent demander et se faire payer à titre de remboursement de droits de timbre des copies, aucune somme excédant la valeur des timbres mobiles apposés en exécution des dispositions qui précèdent.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "taxe",
+      "Officiers ministériels",
+      "remboursement",
+      "droits de timbre",
+      "copies",
+      "timbres mobiles",
+      "valeur"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "41",
+    "titre": "Obligation de lisibilité des copies d'exploits",
+    "contenu": "Les copies des exploits, celles des significations de tous jugements, actes ou pièces doivent être correctes, lisibles et sans abréviations.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "copies",
+      "exploits",
+      "significations",
+      "jugements",
+      "actes",
+      "pièces",
+      "correctes",
+      "lisibles",
+      "abréviations"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "42",
+    "titre": "Amende pour contravention aux règles sur les copies d'exploits",
+    "contenu": "Chaque contravention aux dispositions des articles 37 et 39 est punie d'une amende de 1.000 FCFA.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "contravention",
+      "articles 37 et 39",
+      "amende",
+      "1.000 FCFA"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "45",
+    "titre": "Double sur papier timbré des actes sous seing privé",
+    "contenu": "Les parties qui rédigent un acte sous seing privé, visé à l'article 147 de la réglementation de l'enregistrement, doivent en établir un double sur papier timbré, revêtu des mêmes signatures que l'acte lui-même et qui restera déposé au bureau de l'enregistrement lorsque la formalité est requise.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "acte sous seing privé",
+      "article 147",
+      "réglementation de l'enregistrement",
+      "double",
+      "papier timbré",
+      "signatures",
+      "bureau de l'enregistrement",
+      "formalité"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "46",
+    "titre": "Amende pour acte sur papier non timbré",
+    "contenu": "Il est prononcé une amende de 1.000 FCFA :\n1° pour chaque acte public ou expédition écrit sur papier non timbré ;\n2° pour chaque acte ou écrit sous signatures privées sujet au timbre de dimension et rédigé sur papier non timbré.\nLes contrevenants, dans les cas ci-dessus payent en outre les droits de timbre.",
+    "tome": "2",
+    "chapitre": "2",
+    "keywords": [
+      "amende",
+      "1.000 FCFA",
+      "acte public",
+      "expédition",
+      "papier non timbré",
+      "acte sous signatures privées",
+      "timbre de dimension",
+      "contrevenants",
+      "droits de timbre"
+    ],
+    "source": "tome2-livre2-chapitre2.json"
+  },
+  {
+    "numero": "47",
+    "titre": "Prix des passeports",
+    "contenu": "Le prix des passeports délivrés dans la République du Congo est fixé à 25.500 FCFA y compris les frais de papier, de timbre et tous frais d'expédition.\nCe prix est perçu au moyen de timbres fiscaux de 5.500 FCFA qui seront apposés par l'autorité administrative sur la formule de passeport en usage et des frais de 20.000 FCFA.\nLes autorités chargées de la délivrance des passeports auront la faculté d'en proroger de cinq ans la validité pendant une période maximum de dix ans.\nChaque prorogation sera constatée par l'apposition d'un timbre fiscal de 5.500 FCFA sur la formule dont le titulaire est déjà muni.\nCes timbres seront collés à côté de la mention de prorogation inscrite par l'autorité compétente et seront oblitérés dans les conditions prévues à l'article 30.",
+    "tome": "2",
+    "chapitre": "3",
+    "keywords": [
+      "passeports",
+      "République du Congo",
+      "25.500 FCFA",
+      "frais de papier",
+      "timbre",
+      "frais d'expédition",
+      "timbres fiscaux",
+      "5.500 FCFA",
+      "20.000 FCFA",
+      "autorité administrative",
+      "formule de passeport",
+      "prorogation",
+      "cinq ans",
+      "validité",
+      "dix ans",
+      "article 30",
+      "oblitérés",
+      "collés",
+      "mention de prorogation",
+      "titulaire",
+      "délivrance"
+    ],
+    "source": "tome2-livre2-chapitre3.json"
+  },
+  {
+    "numero": "48",
+    "titre": "Visa de passeport et visa de séjour",
+    "contenu": "Chaque visa de passeport auquel il est procédé donne lieu à la perception d'un droit de 20.000 FCFA et d'un timbre fiscal de 5.500 FCFA.\nL'octroi d'un visa de séjour dans le territoire donne lieu à la perception d'un droit fixé comme suit :\n• visa court séjour, validité 3 mois maximum : frais 20.000 FCFA, timbre 5.500 FCFA\n• visa court séjour, avec multiples entrées : frais 30.000 FCFA, timbre 5.500 FCFA\n• visa temporaire, validité 1 an maximum : frais 10.000 FCFA, timbre 3.000 FCFA\n• visa ordinaire, validité 3 ans maximum : frais 10.000 FCFA, timbre 5.500 FCFA\n• visa privilégié, validité 5 ans maximum : frais 20.000 FCFA, timbre 5.500 FCFA\nCes timbres seront apposés sur le passeport à côté de la mention du visa et sous la responsabilité de l'autorité administrative chargée de ce visa.\nIls sont oblitérés par l'apposition d'une griffe à l'encre grasse portant la date de l'oblitération ; celle-ci sera faite de telle manière que la partie de l'empreinte déborde de chaque côté du timbre mobile.\nLa délivrance des laissez-passer tenant lieu de passeports est soumise à un droit de 15.000 FCFA, y compris les frais de papier et timbre.\nEn outre, le paiement d'un droit de 2.000 FCFA sera exigé de toute personne désirant obtenir un laissez-passer permettant, à titre occasionnel et pour une durée limitée, de se rendre au Zaïre.\nCes timbres, apposés par l'autorité compétente sur la formule des laissez-passer, seront oblitérés dans les conditions prévues à l'article 30.",
+    "tome": "2",
+    "chapitre": "3",
+    "keywords": [
+      "visa de passeport",
+      "droit",
+      "20.000 FCFA",
+      "timbre fiscal",
+      "5.500 FCFA",
+      "visa de séjour",
+      "territoire",
+      "visa court séjour",
+      "validité",
+      "3 mois",
+      "multiples entrées",
+      "30.000 FCFA",
+      "visa temporaire",
+      "1 an",
+      "10.000 FCFA",
+      "3.000 FCFA",
+      "visa ordinaire",
+      "3 ans",
+      "visa privilégié",
+      "5 ans",
+      "autorité administrative",
+      "oblitération",
+      "griffe",
+      "encre grasse",
+      "timbre mobile",
+      "laissez-passer",
+      "15.000 FCFA",
+      "2.000 FCFA",
+      "Zaïre",
+      "article 30",
+      "perception",
+      "durée limitée",
+      "titre occasionnel",
+      "formule des laissez-passer",
+      "empreinte"
+    ],
+    "source": "tome2-livre2-chapitre3.json"
+  },
+  {
+    "numero": "49",
+    "titre": "Cartes d'identité",
+    "contenu": "Les cartes d'identité délivrées en application de la délibération n°22-52 du 19 novembre 1952 sont soumises à un droit de timbre de 1.000 FCFA.",
+    "tome": "2",
+    "chapitre": "3",
+    "keywords": [
+      "cartes d'identité",
+      "délibération n°22-52",
+      "19 novembre 1952",
+      "droit de timbre",
+      "1.000 FCFA",
+      "délivrées"
+    ],
+    "source": "tome2-livre2-chapitre3.json"
+  },
+  {
+    "numero": "50",
+    "titre": "Cartes de séjour des étrangers",
+    "contenu": "Les cartes de séjour des étrangers sont soumises au droit de timbre suivant :\n• carte de séjour temporaire, validité de 1 an maximum, frais 100.000 FCFA, timbre 5.500 FCFA\n• carte de résidence ordinaire, validité 3 ans maximum, frais 200.000 FCFA, timbre 5.500 FCFA\n• carte de résidence privilégiée, validité 5 ans maximum, frais 100.000 FCFA, timbre 20.500 FCFA\n• carte de séjour pour les personnels de Missions Diplomatiques, leurs épouses, leurs enfants mineurs et ascendants à charge : gratis\n• carte de Résidence accordée aux Ministres de Culte et apparentés, validité 3 ans renouvelable : gratis\nLes droits de timbre applicables aux cartes d'identité et aux carnets de séjour d'étrangers sont acquittés par apposition de timbres mobiles comme pour les passeports.",
+    "tome": "2",
+    "chapitre": "3",
+    "keywords": [
+      "cartes de séjour",
+      "étrangers",
+      "droit de timbre",
+      "carte de séjour temporaire",
+      "1 an",
+      "100.000 FCFA",
+      "5.500 FCFA",
+      "carte de résidence ordinaire",
+      "3 ans",
+      "200.000 FCFA",
+      "carte de résidence privilégiée",
+      "5 ans",
+      "20.500 FCFA",
+      "Missions Diplomatiques",
+      "épouses",
+      "enfants mineurs",
+      "ascendants à charge",
+      "gratis",
+      "Ministres de Culte",
+      "renouvelable",
+      "apparentés",
+      "timbres mobiles",
+      "acquittés",
+      "apposition",
+      "passeports"
+    ],
+    "source": "tome2-livre2-chapitre3.json"
+  },
+  {
+    "numero": "51",
+    "titre": "Actes soumis au visa spécial ou exempts de timbre",
+    "contenu": "En dehors de ceux qui pourraient l'être par des règlements spéciaux sont soumis à un visa spécial sur l'acte tenant lieu du timbre en débet, visés pour timbre en débet, ou exempts de timbre, les actes énumérés aux articles 52 et 53.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "règlements spéciaux",
+      "visa spécial",
+      "timbre en débet",
+      "exempts de timbre",
+      "articles 52 et 53"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "52",
+    "titre": "Actes soumis au visa spécial tenant lieu du timbre en débet",
+    "contenu": "Sont soumis à un visa spécial sur l'acte tenant lieu du timbre en débet, d'une façon générale, les actes qui sont soumis au visa spécial tenant lieu de l'enregistrement en débet et non exempts de timbre.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "visa spécial",
+      "timbre en débet",
+      "enregistrement en débet",
+      "non exempts de timbre"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "53",
+    "titre": "Visa pour timbre en débet",
+    "contenu": "Sont soumis au visa pour timbre en débet d'une façon générale les actes qui sont soumis à l'enregistrement en débet et non exempts de timbre.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "visa pour timbre en débet",
+      "enregistrement en débet",
+      "non exempts de timbre"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "54",
+    "titre": "Actes exempts de timbre",
+    "contenu": "En dehors de ceux qui pourraient l'être par des règlements spéciaux, sont exempts de timbre, les actes énumérés aux articles ci-après.\nDans tous les cas où le texte prévoit une exemption des droits de timbre cette exemption comporte également dispense de formalité.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "règlements spéciaux",
+      "exempts de timbre",
+      "exemption",
+      "droits de timbre",
+      "dispense de formalité",
+      "prévoit",
+      "articles ci-après"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "55",
+    "titre": "Actes en matière d'accidents du travail",
+    "contenu": "Les actes faits en vertu et pour exécution de la réglementation sur les accidents du travail.\nEst affranchie du timbre l'expédition du procès-verbal d'enquête que les parties peuvent se faire délivrer.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "accidents du travail",
+      "réglementation",
+      "affranchie du timbre",
+      "expédition",
+      "procès-verbal d'enquête",
+      "parties",
+      "délivrer"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "57",
+    "titre": "Avances sur titres de fonds d'État français",
+    "contenu": "Les actes d'avances sur titres de fonds d'État français ou valeurs émises par le Trésor français.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "avances",
+      "titres",
+      "fonds d'État français",
+      "valeurs",
+      "Trésor français",
+      "émises"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "59",
+    "titre": "Actes relatifs au recouvrement des impôts",
+    "contenu": "Les actes et pièces relatifs aux commandements, saisies et ventes ayant pour objet le recouvrement des impôts, droits, taxes, amendes et condamnations pécuniaires dont le recouvrement incombe au Trésor et à ses agents.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "pièces",
+      "commandements",
+      "saisies",
+      "ventes",
+      "recouvrement",
+      "impôts",
+      "droits",
+      "taxes",
+      "amendes",
+      "condamnations pécuniaires",
+      "Trésor",
+      "agents"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "60",
+    "titre": "Actes en matière de législation du travail",
+    "contenu": "Tous actes, faits en exécution de la législation du travail.\nIl en est de même de tous les actes nécessités par l'application des textes sur les procédures de conciliation et d'arbitrage.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "législation du travail",
+      "nécessités",
+      "textes",
+      "procédures",
+      "conciliation",
+      "arbitrage"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "61",
+    "titre": "Actes militaires et de recrutement",
+    "contenu": "Les engagements, enrôlements, congés, certificats, cartouches, passeports, billets d'étapes, de subsistance et de logements, quittances pour prêts et fournitures et autres pièces ou écritures concernant les gens de guerre, tant pour le service de terre, de l'air ou de mer.\nLes actes faits en exécution de la loi sur le recrutement de l'armée.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "engagements",
+      "enrôlements",
+      "congés",
+      "certificats",
+      "cartouches",
+      "passeports",
+      "billets d'étapes",
+      "subsistance",
+      "logements",
+      "quittances",
+      "prêts",
+      "fournitures",
+      "gens de guerre",
+      "service de terre",
+      "service de l'air",
+      "service de mer",
+      "recrutement de l'armée",
+      "pièces",
+      "écritures"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "62",
+    "titre": "Actes relatifs à l'assistance médicale gratuite",
+    "contenu": "Les certificats, significations, jugements, contrats, quittances et autres actes faits en vertu de la loi et ayant exclusivement pour objet le service de l'assistance aux familles nombreuses et nécessiteuses.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats",
+      "significations",
+      "jugements",
+      "contrats",
+      "quittances",
+      "assistance",
+      "familles nombreuses",
+      "familles nécessiteuses",
+      "exclusivement",
+      "loi"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "63",
+    "titre": "Demande d'assistance judiciaire",
+    "contenu": "La demande d'une personne qui sollicite l'assistance judiciaire est écrite sur papier libre.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "demande",
+      "assistance judiciaire",
+      "papier libre",
+      "personne",
+      "sollicite"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "64",
+    "titre": "Actes de procédure devant les Tribunaux Populaires",
+    "contenu": "Les actes de procédure d'Avocat Défenseur à Avocat Défenseur devant les Tribunaux Populaires de District ou d'Arrondissement et les Tribunaux Populaires de Commune ou de Région ainsi que les exploits et significations de ces mêmes actes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes de procédure",
+      "Avocat Défenseur",
+      "Tribunaux Populaires de District",
+      "Tribunaux Populaires d'Arrondissement",
+      "Tribunaux Populaires de Commune",
+      "Tribunaux Populaires de Région",
+      "exploits",
+      "significations"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "65",
+    "titre": "Actes pour le service des caisses d'épargne et chèques postaux",
+    "contenu": "Les imprimés, écrits, actes de toutes espèces nécessaires pour le service des caisses d'épargne et des chèques postaux.\nLes certificats de propriété et actes de notoriété exigés par les caisses d'épargne ou les centres de chèques postaux pour effectuer le remboursement, le transfert ou le renouvellement des livrets ou des comptes appartenant aux titulaires décédés ou déclarés absents.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "imprimés",
+      "écrits",
+      "actes",
+      "caisses d'épargne",
+      "chèques postaux",
+      "certificats de propriété",
+      "actes de notoriété",
+      "remboursement",
+      "transfert",
+      "renouvellement",
+      "livrets",
+      "comptes",
+      "titulaires décédés",
+      "déclarés absents",
+      "centres de chèques postaux"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "66",
+    "titre": "Actes relatifs aux accidents du travail et décès",
+    "contenu": "Les certificats, actes de notoriété et autres actes y compris les quittances relatifs à l'exécution des lois sur les caisses d'assurances en cas d'accident ou de décès du travail.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats",
+      "actes de notoriété",
+      "quittances",
+      "caisses d'assurances",
+      "accident du travail",
+      "décès du travail",
+      "lois",
+      "exécution"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "67",
+    "titre": "Actes relatifs aux allocations familiales",
+    "contenu": "Toutes pièces relatives à l'application de la réglementation sur les allocations familiales, ainsi que les jugements et arrêts, leurs extraits, copies, grosses ou expéditions et généralement, tous actes de procédure relatifs à cette même réglementation.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "pièces",
+      "réglementation",
+      "allocations familiales",
+      "jugements",
+      "arrêts",
+      "extraits",
+      "copies",
+      "grosses",
+      "expéditions",
+      "actes de procédure",
+      "application"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "68",
+    "titre": "Bulletin n°3 du casier judiciaire",
+    "contenu": "La demande du bulletin n°3 du casier judiciaire délivré aux particuliers.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "demande",
+      "bulletin n°3",
+      "casier judiciaire",
+      "particuliers",
+      "délivré"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "69",
+    "titre": "Certificats de bonne vie et mœurs",
+    "contenu": "Les certificats de bonne vie et mœurs.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats",
+      "bonne vie",
+      "mœurs"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "70",
+    "titre": "Chèques et ordres de virement",
+    "contenu": "Les chèques et ordres de virement en banque.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "chèques",
+      "ordres de virement",
+      "banque"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "71",
+    "titre": "Chèques postaux",
+    "contenu": "Les chèques postaux.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "chèques postaux"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "72",
+    "titre": "Certificats d'origine pour les produits congolais",
+    "contenu": "Les certificats d'origine pour les produits congolais destinés à l'exportation qui sont délivrés par les autorités compétentes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats d'origine",
+      "produits congolais",
+      "exportation",
+      "autorités compétentes",
+      "délivrés"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "73",
+    "titre": "Comptes rendus des comptables publics",
+    "contenu": "Les comptes rendus par des Comptables publics, les doubles, autres que celui du comptable, de chaque compte de recette ou gestion particulière et privée.\nLes registres des Receveurs des contributions publiques et autres préposés.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "comptes",
+      "Comptables publics",
+      "doubles",
+      "compte de recette",
+      "gestion particulière",
+      "gestion privée",
+      "registres",
+      "Receveurs",
+      "contributions publiques",
+      "préposés",
+      "rendus"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "74",
+    "titre": "Procuration pour conseil de famille",
+    "contenu": "La procuration visée par l'article 412 du Code civil (conseil de famille).",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "procuration",
+      "article 412",
+      "Code civil",
+      "conseil de famille"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "75",
+    "titre": "Copies conformes de requêtes devant la juridiction administrative",
+    "contenu": "Les copies certifiées conformes par le requérant, qui accompagnent les requêtes présentées, soit par les particuliers, soit par l'administration, sur la procédure à suivre devant la juridiction administrative et qui sont destinées à être notifiées aux parties en cause.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "copies certifiées conformes",
+      "requérant",
+      "requêtes",
+      "particuliers",
+      "administration",
+      "procédure",
+      "juridiction administrative",
+      "notifiées",
+      "parties en cause",
+      "destinées"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "76",
+    "titre": "Recours devant la Cour Suprême en matière administrative",
+    "contenu": "Le recours devant la Cour Suprême contre les décisions des juridictions administratives peut avoir lieu sans frais et sans l'intervention d'un avocat, en matière :\n1° d'élections ;\n2° de contraventions aux lois et règlements sur la grande voirie et autres contraventions dont la répression appartient aux juridictions administratives.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "recours",
+      "Cour Suprême",
+      "décisions",
+      "juridictions administratives",
+      "sans frais",
+      "intervention d'un avocat",
+      "élections",
+      "contraventions",
+      "lois et règlements",
+      "grande voirie",
+      "répression"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "77",
+    "titre": "Réclamations en matière fiscale",
+    "contenu": "Les réclamations de toute nature présentées par les contribuables en matière fiscale.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "réclamations",
+      "toute nature",
+      "présentées",
+      "contribuables",
+      "matière fiscale"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "78",
+    "titre": "Actes visés à l'article 282 de la réglementation sur l'enregistrement",
+    "contenu": "Les actes visés à l'article 282 de la réglementation sur l'enregistrement.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "article 282",
+      "réglementation",
+      "enregistrement"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "79",
+    "titre": "Actes visés à l'article 283 de la réglementation sur l'enregistrement",
+    "contenu": "Les actes visés à l'article 283 de la réglementation sur l'enregistrement.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "article 283",
+      "réglementation",
+      "enregistrement"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "80",
+    "titre": "Actes relatifs aux dommages causés par l'exécution des travaux publics",
+    "contenu": "Les plans, procès-verbaux, significations, jugements, contrats, quittances et autres actes, faits en vertu de la loi sur les dommages causés à la propriété privée par l'exécution des travaux publics.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "plans",
+      "procès-verbaux",
+      "significations",
+      "jugements",
+      "contrats",
+      "quittances",
+      "dommages",
+      "propriété privée",
+      "travaux publics",
+      "loi"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "81",
+    "titre": "Actes judiciaires en matière électorale",
+    "contenu": "Tous les actes judiciaires en matière électorale.\nLes extraits des actes de naissance nécessaires pour établir l'âge des électeurs sont délivrés gratuitement, sur papier libre, à tout réclamant.\nIls portent en tête de leur texte l'énonciation de leur destination spéciale et ne sont admis pour aucune autre.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes judiciaires",
+      "matière électorale",
+      "extraits",
+      "actes de naissance",
+      "âge des électeurs",
+      "gratuitement",
+      "papier libre",
+      "réclamant",
+      "énonciation",
+      "destination spéciale"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "82",
+    "titre": "Expédition de l'acte de reconnaissance antérieure à la naissance",
+    "contenu": "L'expédition de l'acte de reconnaissance, antérieure à la naissance de l'enfant, délivrée en vue de l'établissement de l'acte de naissance.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "expédition",
+      "acte de reconnaissance",
+      "naissance",
+      "enfant",
+      "acte de naissance",
+      "antérieure",
+      "délivrée",
+      "établissement"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "83",
+    "titre": "Récépissé de la déclaration d'appel en procédure civile",
+    "contenu": "Le récépissé de la déclaration d'appel visé à l'article 456 du Code de procédure civile est délivré sans frais à l'Avocat Défenseur déclarant.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "récépissé",
+      "déclaration d'appel",
+      "article 456",
+      "Code de procédure civile",
+      "sans frais",
+      "Avocat Défenseur",
+      "déclarant"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "85",
+    "titre": "Délibérations des conseils de famille relatives aux mineurs dans l'armée",
+    "contenu": "Les délibérations des conseils de famille exclusivement relatives à l'engagement des mineurs dans l'armée.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "délibérations",
+      "conseils de famille",
+      "exclusivement",
+      "relatives",
+      "engagement",
+      "mineurs",
+      "armée"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "86",
+    "titre": "Enregistrement des titres des professions médicales",
+    "contenu": "L'enregistrement des titres des docteurs en médecine, chirurgiens-dentistes et sage-femmes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "enregistrement",
+      "titres",
+      "docteurs en médecine",
+      "chirurgiens-dentistes",
+      "sage-femmes"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "87",
+    "titre": "Actes relatifs à l'expropriation pour cause d'utilité publique",
+    "contenu": "Les plans, procès-verbaux, certificats, significations, contrats et autres faits en vertu des textes sur l'expropriation pour cause d'utilité publique.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "plans",
+      "procès-verbaux",
+      "certificats",
+      "significations",
+      "contrats",
+      "expropriation",
+      "utilité publique",
+      "textes"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "89",
+    "titre": "Récépissés délivrés aux greffiers par les receveurs de l'enregistrement",
+    "contenu": "Les récépissés délivrés aux Greffiers par les Receveurs de l'enregistrement, des extraits de jugements que lesdits greffiers doivent fournir en exécution des lois sur l'enregistrement.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "récépissés",
+      "Greffiers",
+      "Receveurs de l'enregistrement",
+      "extraits de jugements",
+      "lois sur l'enregistrement",
+      "fournir",
+      "lesdits"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "90",
+    "titre": "Actes affranchis du timbre",
+    "contenu": "Sont affranchis du timbre :\n1° les registres de toute nature tenus dans les bureaux de la conservation foncière ;\n2° les bordereaux et certificats d'inscriptions ;\n3° les pièces produites par les requérants pour obtenir l'accomplissement des formalités hypothécaires et qui restent déposées au bureau de la Conservation Foncière ;\n4° les reconnaissances de dépôts remises aux requérants et les états, certificats, extraits et copies dressés par les Conservateurs ;\n5° les copies des actes destinés à être déposées au bureau de la conservation foncière.\nLes pièces visées aux numéros 3 et 5 ci-dessus mentionnent expressément qu'elles sont destinées à être déposées au bureau de la conservation foncière pour obtenir l'accomplissement d'une formalité qui doit être spécifiée.\nElles ne peuvent servir à aucune autre fin, sous peine de 1.000 FCFA d'amende, outre le paiement des droits, contre ceux qui en font usage.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "affranchis du timbre",
+      "registres",
+      "conservation foncière",
+      "bordereaux",
+      "certificats d'inscriptions",
+      "pièces",
+      "requérants",
+      "formalités hypothécaires",
+      "Conservation Foncière",
+      "reconnaissances de dépôts",
+      "états",
+      "certificats",
+      "extraits",
+      "copies",
+      "Conservateurs",
+      "copies des actes",
+      "formalité",
+      "amende",
+      "1.000 FCFA",
+      "spécifiée",
+      "paiement des droits",
+      "usage"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "93",
+    "titre": "Assignations et citations militaires",
+    "contenu": "Toutes assignations, citations et notifications aux témoins inculpés ou accusés visés par le Code de justice militaire faites par la police militaire ou par tous autres agents de la force publique.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "assignations",
+      "citations",
+      "notifications",
+      "témoins",
+      "inculpés",
+      "accusés",
+      "Code de justice militaire",
+      "police militaire",
+      "force publique"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "94",
+    "titre": "Livres de commerce",
+    "contenu": "Les livres de commerce.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "livres de commerce"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "95",
+    "titre": "Manifestes de navires et déclarations de marchandises",
+    "contenu": "Les manifestes de navires et les déclarations de marchandises qui doivent être fournies aux douanes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "manifestes",
+      "navires",
+      "déclarations",
+      "marchandises",
+      "douanes",
+      "fournies"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "96",
+    "titre": "Certificats de contrats de mariage remis par les notaires",
+    "contenu": "Les certificats de contrats de mariage remis aux parties par les notaires, en exécution de l'article 1394 alinéa 3 du Code civil.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats",
+      "contrats de mariage",
+      "parties",
+      "notaires",
+      "article 1394",
+      "alinéa 3",
+      "Code civil",
+      "exécution"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "97",
+    "titre": "Actes relatifs au Code civil du mariage",
+    "contenu": "Les actes énumérés aux articles 154 et 155 du Code civil relatifs au mariage.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "articles 154 et 155",
+      "Code civil",
+      "mariage",
+      "énumérés",
+      "relatifs"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "98",
+    "titre": "Abrogé",
+    "contenu": "Abrogé",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "100",
+    "titre": "Registre des inscriptions relatives aux fonds de commerce",
+    "contenu": "Le registre des inscriptions tenu par le Greffier en exécution de la loi relative à la vente et au nantissement des fonds de commerce, les bordereaux d'inscription, les reconnaissances de dépôts, états, les certificats, extraits et copies dressés en exécution de ladite loi, ainsi que les pièces produites pour obtenir l'accomplissement d'une formalité et qui restent déposées au greffe, les copies qui en sont délivrées, à la condition que ces pièces mentionnent expressément leur destination.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "registre des inscriptions",
+      "Greffier",
+      "vente",
+      "nantissement",
+      "fonds de commerce",
+      "bordereaux d'inscription",
+      "reconnaissances de dépôts",
+      "états",
+      "certificats",
+      "extraits",
+      "copies",
+      "formalité",
+      "greffe",
+      "destination",
+      "ladite loi",
+      "pièces",
+      "délivrées",
+      "expressément"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "103",
+    "titre": "Actes de police générale et de procédure criminelle",
+    "contenu": "Les actes de police générale et de vindicte publique et les copies de pièces de procédure criminelle qui doivent être délivrés sans frais.\nLes actes de police en matière criminelle, ceux concernant la police générale et de sûreté et la vindicte publique, les actes de la procédure d'assises, à l'exception des actes soumis au visa pour timbre en débet par suite de l'existence d'une partie civile et des actes d'huissiers visés pour timbre et enregistrement en débet.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes de police générale",
+      "vindicte publique",
+      "copies",
+      "pièces de procédure criminelle",
+      "délivrés sans frais",
+      "police en matière criminelle",
+      "police de sûreté",
+      "procédure d'assises",
+      "partie civile",
+      "actes d'huissiers",
+      "visa pour timbre en débet",
+      "enregistrement en débet"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "104",
+    "titre": "Actes du pouvoir exécutif",
+    "contenu": "Les actes du pouvoir exécutif.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "pouvoir exécutif"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "106",
+    "titre": "Pouvoirs relatifs à la protection des obligataires",
+    "contenu": "Les pouvoirs visés à l'avant-dernier alinéa de l'article 17 du décret du 13 janvier 1938, relatif à la protection des obligataires.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "pouvoirs",
+      "avant-dernier alinéa",
+      "article 17",
+      "décret du 13 janvier 1938",
+      "protection des obligataires"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "107",
+    "titre": "Actes relatifs à la protection des pupilles de la nation",
+    "contenu": "Tous les actes ou pièces ayant exclusivement pour objet la protection des pupilles de la nation.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "pièces",
+      "exclusivement",
+      "protection",
+      "pupilles de la nation"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "108",
+    "titre": "Quittances et reçus de toute nature",
+    "contenu": "Sont dispensés du droit de timbre les quittances et reçus de toute nature.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "dispensés",
+      "droit de timbre",
+      "quittances",
+      "reçus"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "110",
+    "titre": "Registres de l'état civil et tables annuelles et décennales",
+    "contenu": "Les registres de l'état civil et les tables annuelles et décennales de ces registres.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "registres",
+      "état civil",
+      "tables annuelles",
+      "tables décennales"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "111",
+    "titre": "Procédure de réhabilitation des faillis",
+    "contenu": "La procédure de réhabilitation des faillis prévue par les articles 604 et 612 du Code de commerce.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "procédure",
+      "réhabilitation",
+      "faillis",
+      "articles 604 et 612",
+      "Code de commerce"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "112",
+    "titre": "Répertoires des greffiers en matière pénale",
+    "contenu": "Les répertoires des greffiers sur lesquels sont inscrits les jugements de simple police, de police correctionnelle et les arrêts en matière criminelle.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "répertoires",
+      "greffiers",
+      "inscrits",
+      "jugements",
+      "simple police",
+      "police correctionnelle",
+      "arrêts",
+      "matière criminelle"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "113",
+    "titre": "Actes relatifs aux réquisitions militaires",
+    "contenu": "Les procès-verbaux, certificats, significations, contrats, quittances et autres actes faits en vertu des textes régissant les réquisitions militaires et exclusivement relatifs au règlement de l'indemnité.\nTous actes et procès-verbaux dressés en vertu de la réglementation relative aux dégâts et dommages commis aux propriétés par les troupes logées et cantonnées à l'habitant et au règlement des indemnités de réquisition.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "procès-verbaux",
+      "certificats",
+      "significations",
+      "contrats",
+      "quittances",
+      "réquisitions militaires",
+      "indemnité",
+      "réglementation",
+      "dégâts",
+      "dommages",
+      "propriétés",
+      "troupes",
+      "logées",
+      "cantonnées",
+      "habitant",
+      "indemnités de réquisition"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "114",
+    "titre": "Registre tenu au greffe en matière de saisie-arrêt",
+    "contenu": "Le registre tenu au greffe de chaque Tribunal Populaire de District ou d'Arrondissement sur lequel sont mentionnés tous les actes, d'une nature quelconque, décisions et formalités auxquels donne lieu l'exécution des dispositions du Code du travail relative à la saisie-arrêt et à la cession des salaires et appointements.\nTous les actes, décisions et formalités visés dans ce Code sont rédigés sur papier non timbré, ainsi que leurs copies, les lettres recommandées, les procurations du saisi et du tiers saisi.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "registre",
+      "greffe",
+      "Tribunal Populaire de District",
+      "Tribunal Populaire d'Arrondissement",
+      "actes",
+      "décisions",
+      "formalités",
+      "Code du travail",
+      "saisie-arrêt",
+      "cession",
+      "salaires",
+      "appointements",
+      "papier non timbré",
+      "copies",
+      "lettres recommandées",
+      "procurations",
+      "saisi",
+      "tiers saisi"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "115",
+    "titre": "Saisie-arrêt et cession des salaires et soldes",
+    "contenu": "Les dispositions de l'article précédent sont applicables en matière de saisie-arrêt et de cession :\na) des salaires, appointements et traitements des Fonctionnaires civils ;\nb) des soldes nettes des officiers et assimilés et des militaires à solde mensuelle en activité, en disponibilité, en non-activité, en réforme, et des Officiers généraux du cadre de réserve.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "article précédent",
+      "saisie-arrêt",
+      "cession",
+      "salaires",
+      "appointements",
+      "traitements",
+      "Fonctionnaires civils",
+      "soldes nettes",
+      "officiers",
+      "assimilés",
+      "militaires",
+      "solde mensuelle",
+      "activité",
+      "disponibilité",
+      "non-activité",
+      "réforme",
+      "Officiers généraux",
+      "cadre de réserve"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "117",
+    "titre": "Organisations professionnelles constituées légalement",
+    "contenu": "Les organisations professionnelles constituées légalement, qui ont prévu dans leurs statuts les secours mutuels entre leurs membres adhérents, bénéficient des immunités de timbre accordées aux sociétés de secours mutuels.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "organisations professionnelles",
+      "constituées légalement",
+      "statuts",
+      "secours mutuels",
+      "membres adhérents",
+      "immunités de timbre",
+      "sociétés de secours mutuels"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "118",
+    "titre": "Contrat de travail entre chefs d'établissements et ouvriers",
+    "contenu": "Le contrat de travail entre les chefs ou directeurs des établissements industriels ou commerciaux, des exploitations agricoles ou forestières et leurs ouvriers.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "contrat de travail",
+      "chefs",
+      "directeurs",
+      "établissements industriels",
+      "établissements commerciaux",
+      "exploitations agricoles",
+      "exploitations forestières",
+      "ouvriers"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "119",
+    "titre": "Certificats de travail délivrés aux ouvriers",
+    "contenu": "Les certificats de travail délivrés aux ouvriers, employés ou serviteurs, encore qu'ils contiennent d'autres mentions que celles prévues au Code du travail.\nLa formule « libre de tout engagement » et toute autre constatant l'expiration régulière du contrat de travail, les qualités professionnelles et les services rendus, sont comprises dans l'exemption.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats de travail",
+      "ouvriers",
+      "employés",
+      "serviteurs",
+      "mentions",
+      "Code du travail",
+      "libre de tout engagement",
+      "expiration régulière",
+      "contrat de travail",
+      "qualités professionnelles",
+      "services rendus",
+      "exemption"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "120",
+    "titre": "Second exemplaire des déclarations de ventes publiques mobilières",
+    "contenu": "Le second exemplaire conservé au bureau de l'enregistrement, de la déclaration relative aux ventes publiques et par enchères d'objets mobiliers.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "second exemplaire",
+      "bureau de l'enregistrement",
+      "déclaration",
+      "ventes publiques",
+      "enchères",
+      "objets mobiliers"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "121",
+    "titre": "Actes à la charge de l'État et des collectivités",
+    "contenu": "Les actes d'acquisition, d'échange ou de location et, en général, tous actes et écrits dont le prix et les frais sont à la charge de l'État, du Groupe des États de l'ex-AEF, ou des Communes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "acquisition",
+      "échange",
+      "location",
+      "écrits",
+      "prix",
+      "frais",
+      "charge de l'État",
+      "Groupe des États de l'ex-AEF",
+      "Communes"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "122",
+    "titre": "Livrets de travail",
+    "contenu": "Les livrets de travail.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "livrets de travail"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "123",
+    "titre": "Certificats de vie délivrés aux pensionnaires de l'État et des collectivités",
+    "contenu": "Les certificats de vie délivrés aux pensionnés de l'État, du Groupe des États de l'ex-AEF, des Communes, des établissements publics ou reconnus d'utilité publique, aux médaillés militaires et aux membres de la Légion d'honneur.\nLes certificats de vie délivrés par l'administration et devant servir au paiement d'indemnités de charges de famille ou d'allocations familiales.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "certificats de vie",
+      "pensionnés",
+      "État",
+      "Groupe des États de l'ex-AEF",
+      "Communes",
+      "établissements publics",
+      "utilité publique",
+      "médaillés militaires",
+      "Légion d'honneur",
+      "administration",
+      "paiement",
+      "indemnités de charges de famille",
+      "allocations familiales"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "124",
+    "titre": "Actes en matière de justice de droit coutumier",
+    "contenu": "Tous actes et jugements relatifs à l'exécution de la réglementation sur la justice de droit coutumier et, à l'exception de ceux comportant transmission de propriété, d'usufruit ou de jouissance de biens immeubles, les extraits, expéditions ou copies qui s'en délivrent aux parties.\nLes extraits d'actes de l'état civil délivrés aux citoyens de statuts particuliers qui demandent leur accession à la qualité de citoyen de droit commun.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "jugements",
+      "réglementation",
+      "justice de droit coutumier",
+      "transmission de propriété",
+      "usufruit",
+      "jouissance",
+      "biens immeubles",
+      "extraits",
+      "expéditions",
+      "copies",
+      "parties",
+      "état civil",
+      "statuts particuliers",
+      "citoyen de droit commun"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "125",
+    "titre": "Factures et mémoires pour dépenses publiques",
+    "contenu": "Les factures, états, mémoires produits à l'appui des dépenses publiques n'excédant pas 5.000 FCFA.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "factures",
+      "états",
+      "mémoires",
+      "appui",
+      "dépenses publiques",
+      "5.000 FCFA"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "126",
+    "titre": "Mémoires pour l'assistance médicale gratuite",
+    "contenu": "Les mémoires produits par les médecins et pharmaciens en vue du remboursement des soins donnés aux bénéficiaires de l'assistance médicale gratuite et les quittances données par les Médecins et les pharmaciens lors du règlement des sommes qui leur sont mandatées à ce titre.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "mémoires",
+      "médecins",
+      "pharmaciens",
+      "remboursement",
+      "soins",
+      "bénéficiaires",
+      "assistance médicale gratuite",
+      "quittances",
+      "Médecins",
+      "règlement",
+      "sommes mandatées"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "127",
+    "titre": "Acquits-à-caution et passavants des douanes",
+    "contenu": "Les acquits-à-caution et passavants délivrés par l'administration des douanes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "acquits-à-caution",
+      "passavants",
+      "délivrés",
+      "administration des douanes",
+      "douanes"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "128",
+    "titre": "Déclarations pour la liquidation des droits de douane",
+    "contenu": "Les déclarations pour la liquidation des droits de douane.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "déclarations",
+      "liquidation",
+      "droits de douane",
+      "douane"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "129",
+    "titre": "Remboursements des carnets de pécule",
+    "contenu": "Les pièces de toute nature relatives aux remboursements des carnets de pécules visés par les textes réglementant le travail.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "pièces",
+      "remboursements",
+      "carnets de pécules",
+      "textes réglementant le travail"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "130",
+    "titre": "Contrats pour le recrutement des services administratifs",
+    "contenu": "Tous contrats passés par l'État, le Groupe des États de l'ex-AEF, ou les Communes en vue du recrutement du personnel des services administratifs.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "contrats",
+      "État",
+      "Groupe des États",
+      "ex-AEF",
+      "Communes",
+      "recrutement",
+      "personnel",
+      "services administratifs"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "131",
+    "titre": "Actes relatifs aux sociétés de prévoyance",
+    "contenu": "Tous actes et transmissions passés par les sociétés de prévoyance et dont les droits seraient supportés par lesdites sociétés.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "transmissions",
+      "sociétés de prévoyance",
+      "droits",
+      "supportés",
+      "lesdites sociétés"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "132",
+    "titre": "Actes relatifs aux warrants agricoles",
+    "contenu": "Les lettres et accusés de réception, les renonciations, acceptations et consentements prévus par la réglementation sur les warrants agricoles, les registres sur lesquels les warrants agricoles sont inscrits, les copies des inscriptions d'emprunt, les certificats négatifs et les certificats de radiations mentionnés à cette réglementation.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "lettres",
+      "accusés de réception",
+      "renonciations",
+      "acceptations",
+      "consentements",
+      "réglementation",
+      "warrants agricoles",
+      "registres",
+      "inscrits",
+      "copies",
+      "inscriptions d'emprunt",
+      "certificats négatifs",
+      "certificats de radiations"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "133",
+    "titre": "Abrogé",
+    "contenu": "Abrogé",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "134",
+    "titre": "Actes relatifs aux organismes humanitaires internationaux",
+    "contenu": "Tous actes et pièces intéressant le fonctionnement, l'œuvre de l'entraide française pour la Libération, l'Association de la Croix-Rouge française, l'OMS, le Fonds International de Secours à l'Enfance, et dont les droits seraient supportés légalement par ces organismes.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "actes",
+      "pièces",
+      "fonctionnement",
+      "entraide française",
+      "Libération",
+      "Croix-Rouge française",
+      "OMS",
+      "Fonds International de Secours à l'Enfance",
+      "droits",
+      "supportés légalement",
+      "organismes"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "135",
+    "titre": "Demandes d'autorisation d'importation et d'exportation",
+    "contenu": "Les demandes d'autorisation d'importation et d'exportation de capitaux et marchandises.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "demandes d'autorisation",
+      "importation",
+      "exportation",
+      "capitaux",
+      "marchandises"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "136",
+    "titre": "Affiches des contrats de transport",
+    "contenu": "Les affiches et contrats de transport.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "affiches",
+      "contrats de transport"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "137",
+    "titre": "Attestations relatives aux comptes à chèques",
+    "contenu": "Les attestations prévues à l'article 3 du décret n°55-584 du 20 mai 1955 relatif aux conditions de fonctionnement des comptes sur lesquels il peut être disposé par chèques.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "attestations",
+      "article 3",
+      "décret n°55-584",
+      "20 mai 1955",
+      "conditions de fonctionnement",
+      "comptes",
+      "disposé",
+      "chèques"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "138",
+    "titre": "Procès-verbaux de douane et soumissions",
+    "contenu": "Les procès-verbaux de douane ainsi que les soumissions et les transactions en tenant lieu.",
+    "tome": "2",
+    "chapitre": "4",
+    "keywords": [
+      "procès-verbaux",
+      "douane",
+      "soumissions",
+      "transactions",
+      "tenant lieu"
+    ],
+    "source": "tome2-livre2-chapitre4.json"
+  },
+  {
+    "numero": "140",
+    "titre": "Effets venant de l'étranger et payables au Congo",
+    "contenu": "Les effets venant de l'étranger et payables au Congo sont soumis au timbre avant d'être négociés, acceptés ou acquittés.",
+    "tome": "2",
+    "chapitre": "5",
+    "keywords": [
+      "effets",
+      "étranger",
+      "payables au Congo",
+      "timbre",
+      "négociés",
+      "acceptés",
+      "acquittés"
+    ],
+    "source": "tome2-livre2-chapitre5.json"
+  },
+  {
+    "numero": "141",
+    "titre": "Effets tirés de l'étranger sur l'étranger",
+    "contenu": "Sont également soumis au timbre les effets tirés de l'étranger sur l'étranger et négociés, acceptés ou acquittés au Congo.",
+    "tome": "2",
+    "chapitre": "5",
+    "keywords": [
+      "effets",
+      "tirés de l'étranger",
+      "sur l'étranger",
+      "timbre",
+      "négociés",
+      "acceptés",
+      "acquittés",
+      "Congo"
+    ],
+    "source": "tome2-livre2-chapitre5.json"
+  },
+  {
+    "numero": "142",
+    "titre": "Tarif du droit de timbre des effets de commerce",
+    "contenu": "Le tarif du droit de timbre est de 500 FCFA par fraction de 100.000 FCFA avec un maximum de 5.000 FCFA par effet.",
+    "tome": "2",
+    "chapitre": "5",
+    "keywords": [
+      "tarif",
+      "droit de timbre",
+      "500 FCFA",
+      "fraction",
+      "100.000 FCFA",
+      "maximum",
+      "5.000 FCFA",
+      "effet"
+    ],
+    "source": "tome2-livre2-chapitre5.json"
+  },
+  {
+    "numero": "143",
+    "titre": "Paiement du droit de timbre des effets de commerce",
+    "contenu": "Le paiement du droit de timbre sur les effets de commerce est effectué par apposition de timbres mobiles qui seront oblitérés au moment de l'emploi.",
+    "tome": "2",
+    "chapitre": "5",
+    "keywords": [
+      "paiement",
+      "droit de timbre",
+      "effets de commerce",
+      "apposition",
+      "timbres mobiles",
+      "oblitérés",
+      "emploi"
+    ],
+    "source": "tome2-livre2-chapitre5.json"
+  },
+  {
+    "numero": "144",
+    "titre": "Contravention au timbre des effets de commerce",
+    "contenu": "Toute contravention aux dispositions ci-dessus est passible d'une amende de 5 % du montant de l'effet non timbré.\nLes contrevenants sont soumis solidairement au paiement du droit de timbre et des amendes.",
+    "tome": "2",
+    "chapitre": "5",
+    "keywords": [
+      "contravention",
+      "dispositions ci-dessus",
+      "amende",
+      "5 %",
+      "montant",
+      "effet non timbré",
+      "contrevenants",
+      "solidairement",
+      "paiement",
+      "droit de timbre"
+    ],
+    "source": "tome2-livre2-chapitre5.json"
+  },
+  {
+    "numero": "145",
+    "titre": "Institution du droit de timbre sur les véhicules automobiles",
+    "contenu": "Il est institué un droit de timbre sur les véhicules automobiles en circulation sur le territoire congolais.",
+    "tome": "2",
+    "chapitre": "6",
+    "keywords": [
+      "institué",
+      "droit de timbre",
+      "véhicules automobiles",
+      "circulation",
+      "territoire congolais"
+    ],
+    "source": "tome2-livre2-chapitre6.json"
+  },
+  {
+    "numero": "147",
+    "titre": "Annualité du droit de timbre des véhicules automobiles",
+    "contenu": "Le droit de timbre des véhicules automobiles est annuel.",
+    "tome": "2",
+    "chapitre": "6",
+    "keywords": [
+      "droit de timbre",
+      "véhicules automobiles",
+      "annuel"
+    ],
+    "source": "tome2-livre2-chapitre6.json"
+  },
+  {
+    "numero": "148",
+    "titre": "Tarif du droit de timbre des véhicules automobiles",
+    "contenu": "Le tarif du droit de timbre des véhicules automobiles est de 5.000 FCFA.",
+    "tome": "2",
+    "chapitre": "6",
+    "keywords": [
+      "tarif",
+      "droit de timbre",
+      "véhicules automobiles",
+      "5.000 FCFA"
+    ],
+    "source": "tome2-livre2-chapitre6.json"
+  },
+  {
+    "numero": "149",
+    "titre": "Collecte du droit de timbre par les compagnies d'assurance",
+    "contenu": "Le droit de timbre des véhicules automobiles est collecté par les compagnies d'assurance au moment de la souscription de la police d'assurance responsabilité civile.\nLes compagnies d'assurance prélèvent le droit de timbre des véhicules automobiles au tarif visé à l'article 148 ci-dessus dès le premier paiement de la prime d'assurance au cours de l'année, que ce paiement soit partiel ou total.\nLe droit de timbre collecté est reversé auprès du bureau de l'enregistrement des domaines et du timbre du siège de la compagnie d'assurances entre le 10 et le 20 du mois suivant celui du paiement par l'assuré.",
+    "tome": "2",
+    "chapitre": "6",
+    "keywords": [
+      "droit de timbre",
+      "véhicules automobiles",
+      "collecte",
+      "compagnies d'assurance",
+      "souscription",
+      "police d'assurance",
+      "responsabilité civile",
+      "prélèvement",
+      "article 148",
+      "prime d'assurance",
+      "paiement partiel",
+      "paiement total",
+      "reversement",
+      "bureau de l'enregistrement",
+      "domaines",
+      "timbre",
+      "siège",
+      "compagnies d'assurances",
+      "assuré"
+    ],
+    "source": "tome2-livre2-chapitre6.json"
+  },
+  {
+    "numero": "150",
+    "titre": "Véhicules immatriculés dans le domaine portuaire",
+    "contenu": "Les véhicules immatriculés dans le domaine portuaire sont soumis au droit de timbre des véhicules automobiles au tarif prévu à l'article 148 ci-dessus.\nCe droit est valable jusqu'à l'expiration de la durée de ladite immatriculation.",
+    "tome": "2",
+    "chapitre": "6",
+    "keywords": [
+      "véhicules",
+      "immatriculés",
+      "domaine portuaire",
+      "droit de timbre",
+      "véhicules automobiles",
+      "article 148",
+      "expiration",
+      "durée",
+      "immatriculation"
+    ],
+    "source": "tome2-livre2-chapitre6.json"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution du timbre électronique",
+    "contenu": "Il est institué une redevance dans le secteur de l'économie numérique dénommée « Timbre électronique » imposable aux opérateurs économiques, aux établissements commerciaux, aux particuliers et aux organismes publics, en vue de faciliter la dématérialisation et la certification des documents.",
+    "tome": "2",
+    "chapitre": "",
+    "keywords": [
+      "redevance",
+      "économie numérique",
+      "timbre électronique",
+      "opérateurs économiques",
+      "établissements commerciaux",
+      "particuliers",
+      "organismes publics",
+      "dématérialisation",
+      "certification",
+      "documents"
+    ],
+    "source": "tome2-livre2-non-codifies.json"
+  },
+  {
+    "numero": "3",
+    "titre": "Montant du timbre électronique",
+    "contenu": "Le montant du timbre électronique fiscal est de 50 FCFA.",
+    "tome": "2",
+    "chapitre": "",
+    "keywords": [
+      "montant",
+      "timbre électronique fiscal",
+      "50 FCFA"
+    ],
+    "source": "tome2-livre2-non-codifies.json"
+  },
+  {
+    "numero": "4",
+    "titre": "Certification et opérationnalisation",
+    "contenu": "L'Agence de Régulation des Postes et des Communications Électroniques est chargée de la certification des paiements électroniques et de l'opérationnalisation du système.",
+    "tome": "2",
+    "chapitre": "",
+    "keywords": [
+      "ARPCE",
+      "Agence de Régulation des Postes et des Communications Électroniques",
+      "certification",
+      "paiements électroniques",
+      "opérationnalisation",
+      "système"
+    ],
+    "source": "tome2-livre2-non-codifies.json"
+  },
+  {
+    "numero": "5",
+    "titre": "Clé de répartition",
+    "contenu": "La clé de répartition de ladite redevance est établie ainsi qu'il suit :\n• État : 60 %\n• ARPCE : 40 %",
+    "tome": "2",
+    "chapitre": "",
+    "keywords": [
+      "clé de répartition",
+      "redevance",
+      "État",
+      "60 %",
+      "ARPCE",
+      "40 %"
+    ],
+    "source": "tome2-livre2-non-codifies.json"
+  },
+  {
+    "numero": "6",
+    "titre": "Sanctions fiscales",
+    "contenu": "Les charges liées à une transaction non conforme à l'obligation prévue ci-dessus ne sont pas admises en déduction pour la détermination du bénéfice imposable.\nSi les charges présentées par le contribuable pour la détermination de son revenu imposable sont remises en cause, l'Administration fiscale est en droit de réclamer un droit d'enregistrement au taux de 1 % sur les actes juridiques qui sous-tendent ces charges.\nLa TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.\nLe timbre électronique s'applique à tout acte émis à un tiers d'une valeur minimale fixée ci-dessus.",
+    "tome": "2",
+    "chapitre": "",
+    "keywords": [
+      "charges",
+      "transaction non conforme",
+      "obligation",
+      "déduction",
+      "bénéfice imposable",
+      "contribuable",
+      "revenu imposable",
+      "Administration fiscale",
+      "droit d'enregistrement",
+      "1 %",
+      "actes juridiques",
+      "TVA",
+      "droit à déduction",
+      "timbre électronique",
+      "tiers",
+      "valeur minimale"
+    ],
+    "source": "tome2-livre2-non-codifies.json"
   }
 ]

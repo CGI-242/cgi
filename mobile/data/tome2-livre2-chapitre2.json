@@ -17,7 +17,7 @@
       "article": "Art. 26",
       "titre": "Dimensions des papiers timbrés",
       "texte": [
-        "Les papiers destinés aux timbres délivrés par l'administration fiscale sont fabriqués dans les dimensions déterminées suivant le tableau ci-après :",
+        "Les papiers destinés aux timbres débités par l'administration fiscale sont fabriqués dans les dimensions déterminées suivant le tableau ci-après :",
         "Désignation | Dimensions de la feuille déployée (supposée rognée)",
         "Papier registre | 0,42 m | 0,54 m",
         "Papier normal | 0,27 m | 0,42 m",
@@ -27,7 +27,7 @@
       ],
       "mots_cles": [
         "papiers",
-        "timbres",
+        "timbres débités",
         "administration fiscale",
         "dimensions",
         "papier registre",
@@ -35,7 +35,9 @@
         "demi-feuille",
         "filigrane",
         "fabrication",
-        "empreinte"
+        "empreinte",
+        "partie gauche",
+        "déployée"
       ],
       "statut": "en vigueur"
     },
@@ -50,6 +52,7 @@
         "papiers",
         "administration fiscale",
         "parchemins",
+        "admis",
         "timbrer",
         "usage"
       ],
@@ -74,6 +77,8 @@
         "actes",
         "expéditions",
         "Officiers ministériels",
+        "revêtus",
+        "avant tout usage",
         "feuille",
         "demi-feuille"
       ],
@@ -83,9 +88,12 @@
       "article": "Art. 29",
       "titre": "Oblitération du timbre mobile",
       "texte": [
-        "Dans tous les cas où le présent règlement permet ou impose l'usage du timbre mobile, l'oblitération de ce timbre doit être faite par les Officiers ministériels ou fonctionnaires publics pour les actes publics et par les parties pour les actes privés."
+        "Dans tous les cas où le présent règlement permet ou impose l'usage d'un timbre mobile, l'oblitération de ce timbre doit être faite par les Officiers ministériels ou fonctionnaires publics pour les actes publics et par les parties pour les actes privés."
       ],
       "mots_cles": [
+        "règlement",
+        "permet",
+        "impose",
         "timbre mobile",
         "oblitération",
         "Officiers ministériels",
@@ -118,7 +126,9 @@
         "résidence",
         "nom",
         "raison sociale",
-        "sceau"
+        "date d'oblitération",
+        "sceau",
+        "débordent"
       ],
       "statut": "en vigueur"
     },
@@ -126,7 +136,7 @@
       "article": "Art. 31",
       "titre": "Prix des papiers timbrés et droits de timbre",
       "texte": [
-        "Le prix des papiers timbrés fournis par les administrations fiscales et les droits de timbre des papiers que les redevables font timbrer sont fixés ainsi qu'il suit, en raison de la dimension du papier :",
+        "Le prix des papiers timbrés fournis par l'administration fiscale et les droits de timbre des papiers que les redevables font timbrer sont fixés ainsi qu'il suit, en raison de la dimension du papier :",
         "• demi-feuille de papier normal : 1.000 FCFA",
         "• feuille de papier normal : 1.300 FCFA",
         "• feuille de papier registre : 1.500 FCFA"
@@ -134,9 +144,10 @@
       "mots_cles": [
         "prix",
         "papiers timbrés",
-        "administrations fiscales",
+        "administration fiscale",
         "droits de timbre",
         "redevables",
+        "timbrer",
         "dimension",
         "demi-feuille",
         "papier normal",
@@ -152,16 +163,16 @@
       "article": "Art. 32",
       "titre": "Droit de timbre pour papier de dimension non standard",
       "texte": [
-        "Il n'y a point de droit de timbre supérieur à 1.500 FCFA ni inférieur à 1.000 FCFA, quelle que soit la dimension du papier, soit au-dessus de sa grandeur registre, soit au-dessous de la demi-feuille de petit papier."
+        "Il n'y a point de droit de timbre supérieur à 1.500 FCFA ni inférieur à 1.000 FCFA, quelle que soit la dimension du papier, soit au-dessus de grand registre, soit au-dessous de la demi-feuille de petit papier."
       ],
       "mots_cles": [
         "droit de timbre",
-        "limite supérieure",
+        "supérieur",
         "1.500 FCFA",
-        "limite inférieure",
+        "inférieur",
         "1.000 FCFA",
         "dimension",
-        "papier registre",
+        "grand registre",
         "demi-feuille",
         "petit papier"
       ],
@@ -171,7 +182,7 @@
       "article": "Art. 33",
       "titre": "Papier de dimension différente des formats de l'administration",
       "texte": [
-        "Si les papiers ou le parchemin soumis au timbrage par l'article 28 ci-dessus se trouvent être de dimensions différentes de celles des papiers de l'administration fiscale, le timbre qui aura été établi en raison de la dimension, est payé au prix du format supérieur."
+        "Si les papiers ou le parchemin soumis au timbrage par l'article 28 ci-dessus se trouvent être de dimensions différentes de celles des papiers de l'administration fiscale, le timbre quant au droit établi en raison de la dimension, est payé au prix du format supérieur."
       ],
       "mots_cles": [
         "papiers",
@@ -180,6 +191,8 @@
         "article 28",
         "dimensions différentes",
         "administration fiscale",
+        "timbre",
+        "droit établi",
         "format supérieur",
         "prix"
       ],
@@ -190,20 +203,20 @@
       "titre": "Actes assujettis au droit de timbre de dimension",
       "texte": [
         "Sont assujettis au droit de timbre établi en raison de la dimension, tous les papiers à employer pour les actes et écritures, soit publics, soit privés, à savoir :",
-        "1° les actes de notaires et les extraits, copies ou expéditions qui en sont délivrés ;",
+        "1° les actes de notaires et les extraits, copies et expéditions qui en sont délivrés ;",
         "2° ceux des agents d'exécution et les copies et expéditions qu'ils en délivrent ;",
         "3° les actes et jugements de la police ordinaire et des arbitres, les extraits, copies et expéditions qui en seront délivrés ;",
         "4° les actes particuliers des juges et de leurs greffiers et ceux reçus aux greffes ou par les greffiers ainsi que les extraits, copies et expéditions qui s'en délivrent ;",
         "5° les actes des Avocats et mandataires agréés près les Tribunaux et les copies ou expéditions qui en sont faites ou signifiées ;",
         "6° les actes des autorités constituées administratives qui sont assujettis à l'enregistrement ou qui se délivrent aux citoyens, et toutes les expéditions et extraits des actes, notamment les extraits d'actes de l'état civil, arrêtés et délibérations desdites autorités, qui sont délivrés aux citoyens ;",
         "7° les actes des autorités administratives et des établissements publics portant transmission de propriété, d'usufruit et de jouissance ;",
-        "8° les actes entre particuliers sous signature privée et les doubles des comptes de recettes ou gestion particulières ;",
+        "8° les actes entre particuliers sous signature privée et les doubles des comptes de recettes ou gestion particuliers ;",
         "9° les registres de l'autorité judiciaire où s'écrivent des actes sujets à l'enregistrement sur les minutes et les répertoires des Greffiers en matière civile et commerciale ;",
         "10° ceux des Notaires, Huissiers et autres Officiers publics et ministériels et leurs répertoires ;",
         "11° ceux des compagnies et sociétés d'actionnaires ;",
         "12° ceux des établissements particuliers et maisons particulières d'éducation ;",
         "13° ceux des agents d'affaires, Directeurs, régisseurs, syndics de créanciers et entrepreneurs des travaux et fournitures ;",
-        "14° ceux des banquiers, négociants, armateurs, marchands, fabricants, commissionnaires, agents de change, courtiers ;",
+        "14° ceux des banquiers, négociants, armateurs, marchands, fabricants, commissionnaires, agents de changes, courtiers ;",
         "15° et généralement tous actes et écritures, extraits, copies et expéditions, soit publics, soit privés, devant ou pouvant faire titre ou être produits pour obligation, décharge, justification, demande ou défense ; tous livres, registres et minutes de lettres qui sont de nature à être produits en justice et dans le cas d'y faire foi, ainsi que les extraits, copies et expéditions qui sont délivrés desdits livres et registres."
       ],
       "mots_cles": [
@@ -262,7 +275,7 @@
         "marchands",
         "fabricants",
         "commissionnaires",
-        "agents de change",
+        "agents de changes",
         "courtiers",
         "obligation",
         "décharge",
@@ -288,9 +301,12 @@
         "notes d'honoraires",
         "factures",
         "mémoires",
+        "document en tenant lieu",
         "prestations de services",
         "État",
-        "fournitures de services"
+        "fournitures de services",
+        "auteurs",
+        "procédé"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Actes soumis au timbre de dimension - Sous-section 1 : Règles générales"
@@ -299,7 +315,7 @@
       "article": "Art. 35",
       "titre": "Actes devant être répertoriés sur papier timbré",
       "texte": [
-        "Les seuls actes dont il doit être tenu un répertoire sur papier timbré, dans les administrations locales et Mairies, sont ceux dénommés à l'article précédent n°8."
+        "Les seuls actes dont il doit être tenu répertoire sur papier timbré, dans les administrations locales et Mairies, sont ceux dénommés à l'article précédent n°8."
       ],
       "mots_cles": [
         "répertoire",
@@ -307,6 +323,8 @@
         "administrations locales",
         "Mairies",
         "article précédent",
+        "n°8",
+        "dénommés",
         "actes"
       ],
       "statut": "en vigueur",
@@ -482,7 +500,7 @@
       ],
       "mots_cles": [
         "contravention",
-        "articles 37 à 39",
+        "articles 37 et 39",
         "amende",
         "1.000 FCFA"
       ],

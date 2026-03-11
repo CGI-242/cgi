@@ -18,7 +18,7 @@
       "titre": "Principe de la taxe spéciale sur les assurances",
       "texte": [
         "Toute convention d'assurance est soumise à une taxe spéciale annuelle.",
-        "La taxe spéciale sur les contrats d'assurances est perçue sur le total de la convention.",
+        "La taxe spéciale sur les contrats d'assurances est perçue sur le montant total de la convention.",
         "Toute police d'assurance est soumise obligatoirement à la formalité d'enregistrement gratis et dispensée du droit de timbre."
       ],
       "mots_cles": [
@@ -27,9 +27,9 @@
         "contrats d'assurances",
         "montant total",
         "police d'assurance",
-        "enregistrement gratuit",
+        "enregistrement gratis",
         "droit de timbre",
-        "dispense"
+        "dispensée"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Assiette de la taxe"
@@ -43,7 +43,7 @@
       "mots_cles": [
         "tarif",
         "taxe",
-        "taux 15 %"
+        "fixé à 15 %"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taux"
@@ -58,14 +58,16 @@
         "3° les assurances couvrant les crédits à réexportation."
       ],
       "mots_cles": [
-        "exonération",
+        "exonérées",
         "taxe",
         "réassurances",
         "article 335",
+        "assurances bénéficiant",
         "dispositions exceptionnelles",
         "droits de timbre",
         "enregistrement",
-        "crédits à l'exportation"
+        "assurances couvrant",
+        "crédits à réexportation"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Taux"
@@ -75,7 +77,7 @@
       "titre": "Dispense de la taxe sur les assurances",
       "texte": [
         "Sont dispensés de la taxe :",
-        "1° les contrats d'assurances sur la vie et de rentes viagères y compris les contrats de rente différée souscrits auprès des compagnies d'assurances installées au Congo ;",
+        "1° les contrats d'assurances sur la vie et de rentes viagères y compris les contrats de rente différée souscrits auprès des compagnies d'assurance installées au Congo ;",
         "2° tous autres contrats, si et dans la mesure où le risque se trouve situé hors du Territoire ou ne se rapporte pas à un établissement industriel, commercial ou agricole sis dans le Territoire, à défaut de situation matérielle certaine ou de rapport certain avec un établissement industriel, commercial ou agricole, les risques sont réputés situés au lieu du domicile ou du principal établissement du souscripteur.",
         "Mais il ne peut être fait usage dans le Territoire de ces contrats, soit par acte public, soit en justice ou devant toute autre autorité constituée, s'ils n'ont pas été préalablement soumis à la formalité du visa pour timbre et de l'enregistrement.",
         "Cette formalité est donnée moyennant le paiement de la taxe sur l'ensemble des sommes stipulées au profit de l'assureur afférentes aux années restant à courir.",
@@ -83,26 +85,27 @@
         "Toutefois, l'enregistrement des contrats préalablement à leur usage dans le Territoire, ne motive la perception que si et dans la mesure où il n'est pas justifié du paiement de la taxe sur les contrats d'assurances correspondants."
       ],
       "mots_cles": [
-        "dispense",
+        "dispensés",
         "taxe",
-        "contrats d'assurances",
-        "vie",
+        "contrats d'assurances sur la vie",
         "rentes viagères",
         "rente différée",
-        "compagnies d'assurances",
+        "compagnies d'assurance",
         "Congo",
         "risque",
         "hors du Territoire",
         "établissement industriel",
-        "établissement commercial",
-        "établissement agricole",
+        "commercial ou agricole",
         "domicile",
+        "principal établissement",
         "souscripteur",
         "acte public",
-        "justice",
         "autorité constituée",
         "visa pour timbre",
         "enregistrement",
+        "sommes stipulées",
+        "assureur",
+        "années restant à courir",
         "réassurances"
       ],
       "statut": "en vigueur",
@@ -118,6 +121,7 @@
       "mots_cles": [
         "taxe",
         "liquidation",
+        "résultat obtenu",
         "sommes stipulées",
         "assureur",
         "accessoires",
@@ -127,10 +131,7 @@
         "remboursés",
         "liquidation mensuelle",
         "état",
-        "administration",
-        "sociétés d'assurances",
-        "15 du mois",
-        "police"
+        "administration"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Liquidation et paiement"
@@ -147,6 +148,10 @@
         "compagnies d'assurances",
         "agences",
         "taxe",
+        "versée",
+        "15 du mois",
+        "souscription",
+        "police",
         "exigible",
         "bureau de l'enregistrement",
         "principal établissement"
@@ -165,8 +170,9 @@
         "échéance",
         "plus d'un an",
         "taxe",
-        "fractionnement",
+        "fractionnée",
         "année",
+        "parties",
         "déclaration spéciale"
       ],
       "statut": "en vigueur",
@@ -242,7 +248,9 @@
         "préposés de l'enregistrement",
         "livres",
         "Code de commerce",
+        "législation",
         "contrôle des assurances",
+        "surveillance des assurances",
         "polices",
         "tacite reconduction",
         "expiration",
@@ -254,8 +262,13 @@
         "établissement",
         "agence",
         "succursale",
+        "fonctionnaires",
+        "communication",
+        "contrats",
+        "détruits",
         "refus de représentation",
         "procès-verbal",
+        "sanctions",
         "article 157"
       ],
       "statut": "en vigueur",
@@ -280,11 +293,13 @@
         "préjudice",
         "Trésor",
         "droit en sus",
+        "taxe exigible",
         "10.000 FCFA",
         "article 341",
         "amende",
         "1.000.000 FCFA",
         "contravention",
+        "exécution",
         "100.000 FCFA",
         "article 343"
       ],
@@ -304,13 +319,15 @@
         "recouvrement",
         "taxe",
         "pénalités",
-        "prescription",
+        "prescrite",
         "cinq ans",
         "exigibilité",
         "trente ans",
+        "charge",
         "assureurs",
         "courtiers",
         "intermédiaires",
+        "souscrit",
         "déclaration",
         "article 341"
       ],
@@ -331,7 +348,7 @@
       "article": "Art. 347",
       "titre": "Restitution de la taxe et pénalités payées à tort",
       "texte": [
-        "La taxe et les pénalités payées à tort peuvent être restituées qu'en cas de résiliation, d'annulation ou de résolution judiciaire de la convention, à concurrence de la fraction afférente :",
+        "La taxe et les pénalités payées à tort ne peuvent être restituées qu'en cas de résiliation, d'annulation ou de résolution judiciaire de la convention, à concurrence de la fraction afférente :",
         "a) aux sommes stipulées au profit de l'assureur et à leurs accessoires dont le remboursement à l'assuré est ordonné par le jugement ou l'arrêt ;",
         "b) aux sommes stipulées au profit de l'assureur et à leurs accessoires qui, ayant donné lieu à paiement effectif de la taxe, bien que n'ayant pas encore été payées à l'assureur, ne peuvent plus, d'après les dispositions de la décision judiciaire, être exigées par lui de l'assuré.",
         "L'action en restitution prévue par le présent article se prescrit après une année à compter du jour où la décision judiciaire est devenue définitive et, en tout état de cause, cinq ans au plus tard après le paiement.",
@@ -352,11 +369,13 @@
         "assuré",
         "jugement",
         "arrêt",
+        "paiement effectif",
         "décision judiciaire",
         "action en restitution",
-        "prescription",
+        "définitive",
         "une année",
         "cinq ans",
+        "déduction",
         "article 336"
       ],
       "statut": "en vigueur",
@@ -374,6 +393,8 @@
         "pénalités",
         "administration de l'enregistrement",
         "instances",
+        "introduites",
+        "jugées",
         "matière d'enregistrement"
       ],
       "statut": "en vigueur",
@@ -388,6 +409,8 @@
       "mots_cles": [
         "dispositions",
         "chapitre",
+        "atteinte",
+        "en vigueur",
         "contrôle",
         "surveillance",
         "assurances"

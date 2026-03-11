@@ -9,7 +9,7 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
 
-const CONTACT_EMAIL = "mailto:contact@normx-ai.com?subject=Aide%20CGI242";
+const CONTACT_EMAIL = "mailto:support@normx-ai.com?subject=Aide%20CGI242";
 
 export default function LoginEmail() {
   const { t } = useTranslation();

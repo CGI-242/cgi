@@ -18,7 +18,7 @@
       "titre": "Prix des passeports",
       "texte": [
         "Le prix des passeports délivrés dans la République du Congo est fixé à 25.500 FCFA y compris les frais de papier, de timbre et tous frais d'expédition.",
-        "Ce prix est perçu au moyen de timbres fiscaux de 5.500 FCFA qui seront apposés par l'autorité administrative sur la formule de passeport en usage et de 20.000 FCFA.",
+        "Ce prix est perçu au moyen de timbres fiscaux de 5.500 FCFA qui seront apposés par l'autorité administrative sur la formule de passeport en usage et des frais de 20.000 FCFA.",
         "Les autorités chargées de la délivrance des passeports auront la faculté d'en proroger de cinq ans la validité pendant une période maximum de dix ans.",
         "Chaque prorogation sera constatée par l'apposition d'un timbre fiscal de 5.500 FCFA sur la formule dont le titulaire est déjà muni.",
         "Ces timbres seront collés à côté de la mention de prorogation inscrite par l'autorité compétente et seront oblitérés dans les conditions prévues à l'article 30."
@@ -40,7 +40,11 @@
         "validité",
         "dix ans",
         "article 30",
-        "oblitération"
+        "oblitérés",
+        "collés",
+        "mention de prorogation",
+        "titulaire",
+        "délivrance"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Passeports"
@@ -51,7 +55,7 @@
       "texte": [
         "Chaque visa de passeport auquel il est procédé donne lieu à la perception d'un droit de 20.000 FCFA et d'un timbre fiscal de 5.500 FCFA.",
         "L'octroi d'un visa de séjour dans le territoire donne lieu à la perception d'un droit fixé comme suit :",
-        "• visa court séjour, validité 3 mois maximum : 20.000 FCFA, timbre 5.500 FCFA",
+        "• visa court séjour, validité 3 mois maximum : frais 20.000 FCFA, timbre 5.500 FCFA",
         "• visa court séjour, avec multiples entrées : frais 30.000 FCFA, timbre 5.500 FCFA",
         "• visa temporaire, validité 1 an maximum : frais 10.000 FCFA, timbre 3.000 FCFA",
         "• visa ordinaire, validité 3 ans maximum : frais 10.000 FCFA, timbre 5.500 FCFA",
@@ -92,7 +96,12 @@
         "15.000 FCFA",
         "2.000 FCFA",
         "Zaïre",
-        "article 30"
+        "article 30",
+        "perception",
+        "durée limitée",
+        "titre occasionnel",
+        "formule des laissez-passer",
+        "empreinte"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Passeports"
@@ -108,7 +117,8 @@
         "délibération n°22-52",
         "19 novembre 1952",
         "droit de timbre",
-        "1.000 FCFA"
+        "1.000 FCFA",
+        "délivrées"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Cartes d'identité et de séjour"
@@ -123,7 +133,7 @@
         "• carte de résidence privilégiée, validité 5 ans maximum, frais 100.000 FCFA, timbre 20.500 FCFA",
         "• carte de séjour pour les personnels de Missions Diplomatiques, leurs épouses, leurs enfants mineurs et ascendants à charge : gratis",
         "• carte de Résidence accordée aux Ministres de Culte et apparentés, validité 3 ans renouvelable : gratis",
-        "Les droits de timbre applicables aux cartes d'identité et aux cartes de séjour d'étrangers sont acquittés par apposition de timbres mobiles comme pour les passeports."
+        "Les droits de timbre applicables aux cartes d'identité et aux carnets de séjour d'étrangers sont acquittés par apposition de timbres mobiles comme pour les passeports."
       ],
       "mots_cles": [
         "cartes de séjour",
@@ -145,7 +155,12 @@
         "ascendants à charge",
         "gratis",
         "Ministres de Culte",
-        "timbres mobiles"
+        "renouvelable",
+        "apparentés",
+        "timbres mobiles",
+        "acquittés",
+        "apposition",
+        "passeports"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Cartes d'identité et de séjour"
@@ -186,8 +201,8 @@
         "Sont tenus de collecter les droits de timbre prévus à l'article 50 bis ci-dessus :",
         "1° les transporteurs aériens de voyageurs à destination et au départ des aéroports du Congo ;",
         "2° les transporteurs aériens et maritimes de biens au départ des aéroports et des ports du Congo, sur le support de chaque LTA ou de chaque connaissement émis ;",
-        "3° l'intermédiaire agréé d'assistance au sol des aéroports du Congo pour les biens à destination du Congo, sur le support de chaque LTA servis au destinataire des colis ;",
-        "4° le commissionnaire agréé en douanes chargé de servir ou de libérer les marchandises au départ et à l'arrivée des biens dans les ports maritimes du Congo.",
+        "3° l'intermédiaire agréé d'assistance au sol des aéroports du Congo, pour les biens à destination du Congo, sur le support de chaque LTA servis au destinataire des colis ;",
+        "4° le commissionnaire agréé en douanes chargé de servir ou de libérer les connaissements au départ et à l'arrivée des biens dans les ports maritimes du Congo.",
         "Le défaut de collecte des droits de timbre auprès des expéditeurs ou des destinataires des colis met à la charge du collecteur visé à l'alinéa précédent les droits correspondants assortis d'une pénalité de 100 %."
       ],
       "mots_cles": [
@@ -221,7 +236,7 @@
       "article": "Art. 50 quater",
       "titre": "Délai d'exigibilité des droits de timbre sur les titres de transport",
       "texte": [
-        "Le délai d'exigibilité des droits de timbre sur les titres de transport aérien est fixé au 15 du mois qui suit celui de la collecte ou l'émission d'un titre de transport.",
+        "Le délai d'exigibilité des droits de timbre sur les titres de transport aérien est fixé au 15 du mois qui suit celui de la collecte ou de l'émission d'un titre de transport.",
         "Tout retard dans le reversement de la taxe est puni d'une pénalité de retard de 100 % des droits collectés."
       ],
       "mots_cles": [

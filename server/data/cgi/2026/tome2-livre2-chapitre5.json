@@ -17,7 +17,7 @@
       "article": "Art. 139",
       "titre": "Effets de commerce assujettis au droit de timbre",
       "texte": [
-        "Sont assujettis au droit de timbre en raison des sommes et valeurs, les billets à ordre ou au porteur, tous les effets négociables ou de commerce, les lettres de changes, faits au Congo, même s'ils sont payables hors du Congo, les billets et obligations non négociables, les mandats à terme ou de place, les billets, les lettres de crédit quelle que soit leur forme ou leur dénomination."
+        "Sont assujettis au droit de timbre en raison des sommes et valeurs, les billets à ordre ou au porteur, tous les effets négociables ou de commerce, les lettres de changes, faits au Congo, même s'ils sont payables hors du Congo, les billets et obligations non négociables, les mandats à terme ou de place, les billets, les lettres de crédits quelle que soit leur forme ou leur dénomination."
       ],
       "mots_cles": [
         "droit de timbre",
@@ -27,13 +27,15 @@
         "billets au porteur",
         "effets négociables",
         "effets de commerce",
-        "lettres de change",
+        "lettres de changes",
         "Congo",
+        "payables hors du Congo",
         "billets",
         "obligations non négociables",
         "mandats à terme",
         "mandats de place",
-        "lettres de crédit"
+        "lettres de crédits",
+        "dénomination"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Champ d'application et tarif"
@@ -104,8 +106,10 @@
         "paiement",
         "droit de timbre",
         "effets de commerce",
+        "apposition",
         "timbres mobiles",
-        "oblitération"
+        "oblitérés",
+        "emploi"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Paiement et contraventions"
@@ -119,8 +123,10 @@
       ],
       "mots_cles": [
         "contravention",
+        "dispositions ci-dessus",
         "amende",
         "5 %",
+        "montant",
         "effet non timbré",
         "contrevenants",
         "solidairement",

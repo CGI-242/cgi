@@ -84,7 +84,7 @@ export default function MentionsLegalesScreen() {
           <InfoRow label="Siège social" value="5 rue Benjamin Raspail, 60100 Creil" colors={colors} />
           <InfoRow label="Immatriculation" value="En cours d'immatriculation au RCS de Compiègne" colors={colors} />
           <InfoRow label="Téléphone" value="06 20 76 94 24" colors={colors} />
-          <InfoRow label="Email" value="contact@normx-ai.com" colors={colors} />
+          <InfoRow label="Email" value="info-contact@normx-ai.com" colors={colors} />
 
           {/* 2. Directeur de publication */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 28, marginBottom: 10 }}>
@@ -126,7 +126,7 @@ export default function MentionsLegalesScreen() {
             6. Données personnelles
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, paddingLeft: 8 }}>
-            Le traitement des données personnelles est détaillé dans notre Politique de confidentialité, accessible depuis le menu de l'application. Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez de droits sur vos données. Pour toute question, contactez : contact@normx-ai.com.{"\n\n"}
+            Le traitement des données personnelles est détaillé dans notre Politique de confidentialité, accessible depuis le menu de l'application. Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez de droits sur vos données. Pour toute question, contactez : info-contact@normx-ai.com.{"\n\n"}
             Vous pouvez également introduire une réclamation auprès de la Commission nationale de l'informatique et des libertés (CNIL) : www.cnil.fr
           </Text>
 
@@ -152,7 +152,7 @@ export default function MentionsLegalesScreen() {
           {/* Séparateur bas */}
           <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
           <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — contact@normx-ai.com
+            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — info-contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>

@@ -20,12 +20,12 @@
         "Sont définitivement acquis à la République :",
         "1° le montant des coupons, intérêts ou dividendes, atteints par la prescription quinquennale ou conventionnelle et afférents à des actions, parts de fondateurs ou obligations négociables, émises par toute société commerciale ou civile ou par toute Collectivité soit privée, soit publique ;",
         "2° les actions, parts de fondateurs, obligations et autres valeurs mobilières des mêmes Collectivités, lorsqu'elles sont atteintes par la prescription trentenaire ou conventionnelle ;",
-        "3° les dépôts de sommes d'argent d'une manière générale ou d'avoirs en espèces, dans les banques, les établissements de crédit et tous autres établissements qui reçoivent des fonds en dépôt ou en compte courant, lorsque ces dépôts ou avoirs n'ont fait l'objet de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;",
-        "4° les dépôts de titres et, d'une manière générale, tout avoir en titres dans les banques et autres établissements qui reçoivent des titres en dépôts ou pour compte d'autrui, lorsque ces dépôts ou avoirs n'ont fait l'objet, de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;",
-        "Les transferts de titres nominatifs acquis à la République dans les conditions prévues par le présent article sont effectués sur la production de ces titres et d'une attestation du Directeur de l'enregistrement, des domaines et du timbre certifiant le droit de la République."
+        "3° les dépôts de sommes d'argent et d'une manière générale tous avoirs en espèces, dans les banques, les établissements de crédit et tous autres établissements qui reçoivent des fonds en dépôt ou en compte courant, lorsque ces dépôts ou avoirs n'ont fait l'objet de la part des ayants droit, d'aucune opération ou réclamation depuis trente années ;",
+        "4° les dépôts de titres et, d'une manière générale, tout avoir en titres dans les banques et autres établissements qui reçoivent des titres en dépôts ou pour toute autre cause lorsque ces dépôts ou avoirs n'ont fait l'objet, de la part des ayants droit, d'aucune opération ou réclamation depuis trente années.",
+        "Les transferts des titres nominatifs acquis à la République dans les conditions prévues par le présent article sont effectués sur la production de ces titres et d'une attestation du Directeur de l'enregistrement, des domaines et du timbre certifiant le droit de la République."
       ],
       "mots_cles": [
-        "acquis",
+        "définitivement acquis",
         "République",
         "coupons",
         "intérêts",
@@ -47,6 +47,7 @@
         "établissements de crédit",
         "fonds en dépôt",
         "compte courant",
+        "toute autre cause",
         "trente années",
         "ayants droit",
         "opération",

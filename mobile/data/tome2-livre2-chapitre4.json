@@ -22,7 +22,7 @@
       "mots_cles": [
         "règlements spéciaux",
         "visa spécial",
-        "timbre en débit",
+        "timbre en débet",
         "exempts de timbre",
         "articles 52 et 53"
       ],
@@ -32,12 +32,12 @@
       "article": "Art. 52",
       "titre": "Actes soumis au visa spécial tenant lieu du timbre en débet",
       "texte": [
-        "Sont soumis à un visa spécial sur l'acte tenant lieu du timbre en débit, d'une façon générale, les actes qui sont soumis au visa spécial tenant lieu de l'enregistrement en débit et non exempts de timbre."
+        "Sont soumis à un visa spécial sur l'acte tenant lieu du timbre en débet, d'une façon générale, les actes qui sont soumis au visa spécial tenant lieu de l'enregistrement en débet et non exempts de timbre."
       ],
       "mots_cles": [
         "visa spécial",
-        "timbre en débit",
-        "enregistrement en débit",
+        "timbre en débet",
+        "enregistrement en débet",
         "non exempts de timbre"
       ],
       "statut": "en vigueur",
@@ -45,13 +45,13 @@
     },
     {
       "article": "Art. 53",
-      "titre": "Visa pour timbre en débit",
+      "titre": "Visa pour timbre en débet",
       "texte": [
-        "Sont soumis au visa pour timbre en débit d'une façon générale les actes qui sont soumis à l'enregistrement en débit et non exempts de timbre."
+        "Sont soumis au visa pour timbre en débet d'une façon générale les actes qui sont soumis à l'enregistrement en débet et non exempts de timbre."
       ],
       "mots_cles": [
-        "visa pour timbre en débit",
-        "enregistrement en débit",
+        "visa pour timbre en débet",
+        "enregistrement en débet",
         "non exempts de timbre"
       ],
       "statut": "en vigueur",
@@ -69,7 +69,9 @@
         "exempts de timbre",
         "exemption",
         "droits de timbre",
-        "dispense de formalité"
+        "dispense de formalité",
+        "prévoit",
+        "articles ci-après"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -86,7 +88,9 @@
         "réglementation",
         "affranchie du timbre",
         "expédition",
-        "procès-verbal d'enquête"
+        "procès-verbal d'enquête",
+        "parties",
+        "délivrer"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -117,7 +121,10 @@
         "fonctionnaire public",
         "formalité du timbre",
         "registres",
-        "établissements publics"
+        "établissements publics",
+        "dénommés",
+        "administration générale",
+        "destination"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -133,7 +140,8 @@
         "titres",
         "fonds d'État français",
         "valeurs",
-        "Trésor français"
+        "Trésor français",
+        "émises"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -142,20 +150,22 @@
       "article": "Art. 58",
       "titre": "Actes de procédure à la requête du Ministère public en matière d'état civil",
       "texte": [
-        "Les actes de procédure à la requête du Ministre public ayant pour objet :",
+        "Les actes de procédure à la requête du Ministère public ayant pour objet :",
         "1° de réparer les omissions et faire les rectifications sur les registres de l'état civil d'actes qui intéressent les individus notoirement indigents ;",
         "2° de remplacer les registres de l'état civil perdus ou incendiés et de suppléer aux registres qui n'auraient pas été tenus."
       ],
       "mots_cles": [
         "actes de procédure",
         "requête",
-        "Ministre public",
+        "Ministère public",
         "omissions",
         "rectifications",
         "registres de l'état civil",
         "indigents",
         "registres perdus",
-        "registres incendiés"
+        "registres incendiés",
+        "suppléer",
+        "notoirement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -178,7 +188,8 @@
         "taxes",
         "amendes",
         "condamnations pécuniaires",
-        "Trésor"
+        "Trésor",
+        "agents"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -188,11 +199,14 @@
       "titre": "Actes en matière de législation du travail",
       "texte": [
         "Tous actes, faits en exécution de la législation du travail.",
-        "Il en est de même de tous les actes nécessaires par l'application des textes sur les procédures de conciliation et d'arbitrage."
+        "Il en est de même de tous les actes nécessités par l'application des textes sur les procédures de conciliation et d'arbitrage."
       ],
       "mots_cles": [
         "actes",
         "législation du travail",
+        "nécessités",
+        "textes",
+        "procédures",
         "conciliation",
         "arbitrage"
       ],
@@ -211,6 +225,7 @@
         "enrôlements",
         "congés",
         "certificats",
+        "cartouches",
         "passeports",
         "billets d'étapes",
         "subsistance",
@@ -222,7 +237,9 @@
         "service de terre",
         "service de l'air",
         "service de mer",
-        "recrutement de l'armée"
+        "recrutement de l'armée",
+        "pièces",
+        "écritures"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -241,7 +258,9 @@
         "quittances",
         "assistance",
         "familles nombreuses",
-        "familles nécessiteuses"
+        "familles nécessiteuses",
+        "exclusivement",
+        "loi"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -255,7 +274,9 @@
       "mots_cles": [
         "demande",
         "assistance judiciaire",
-        "papier libre"
+        "papier libre",
+        "personne",
+        "sollicite"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -264,7 +285,7 @@
       "article": "Art. 64",
       "titre": "Actes de procédure devant les Tribunaux Populaires",
       "texte": [
-        "Les actes de procédure d'Avocat Défenseur à Avocat Défenseur devant les Tribunaux Populaires de District ou d'Arrondissement et les Tribunaux Populaires de Commune ou de Région ainsi que les exploits et significations des mêmes actes."
+        "Les actes de procédure d'Avocat Défenseur à Avocat Défenseur devant les Tribunaux Populaires de District ou d'Arrondissement et les Tribunaux Populaires de Commune ou de Région ainsi que les exploits et significations de ces mêmes actes."
       ],
       "mots_cles": [
         "actes de procédure",
@@ -300,7 +321,8 @@
         "livrets",
         "comptes",
         "titulaires décédés",
-        "absents"
+        "déclarés absents",
+        "centres de chèques postaux"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -316,7 +338,9 @@
         "actes de notoriété",
         "quittances",
         "caisses publiques de retraites",
-        "pensions"
+        "pensions",
+        "lois",
+        "exécution"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -333,7 +357,9 @@
         "quittances",
         "caisses d'assurances",
         "accident du travail",
-        "décès du travail"
+        "décès du travail",
+        "lois",
+        "exécution"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -354,7 +380,8 @@
         "copies",
         "grosses",
         "expéditions",
-        "actes de procédure"
+        "actes de procédure",
+        "application"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -369,7 +396,8 @@
         "demande",
         "bulletin n°3",
         "casier judiciaire",
-        "particuliers"
+        "particuliers",
+        "délivré"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -424,7 +452,8 @@
         "certificats d'origine",
         "produits congolais",
         "exportation",
-        "autorités compétentes"
+        "autorités compétentes",
+        "délivrés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -446,7 +475,8 @@
         "registres",
         "Receveurs",
         "contributions publiques",
-        "préposés"
+        "préposés",
+        "rendus"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -480,8 +510,9 @@
         "administration",
         "procédure",
         "juridiction administrative",
-        "notification",
-        "parties en cause"
+        "notifiées",
+        "parties en cause",
+        "destinées"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -500,10 +531,12 @@
         "décisions",
         "juridictions administratives",
         "sans frais",
-        "sans avocat",
+        "intervention d'un avocat",
         "élections",
         "contraventions",
-        "grande voirie"
+        "lois et règlements",
+        "grande voirie",
+        "répression"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -516,6 +549,8 @@
       ],
       "mots_cles": [
         "réclamations",
+        "toute nature",
+        "présentées",
         "contribuables",
         "matière fiscale"
       ],
@@ -567,7 +602,8 @@
         "quittances",
         "dommages",
         "propriété privée",
-        "travaux publics"
+        "travaux publics",
+        "loi"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -588,6 +624,8 @@
         "âge des électeurs",
         "gratuitement",
         "papier libre",
+        "réclamant",
+        "énonciation",
         "destination spéciale"
       ],
       "statut": "en vigueur",
@@ -604,7 +642,10 @@
         "acte de reconnaissance",
         "naissance",
         "enfant",
-        "acte de naissance"
+        "acte de naissance",
+        "antérieure",
+        "délivrée",
+        "établissement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -613,7 +654,7 @@
       "article": "Art. 83",
       "titre": "Récépissé de la déclaration d'appel en procédure civile",
       "texte": [
-        "Le récépissé de la déclaration d'appel visé à l'article 456 du Code de procédure civile est délivré sans frais à l'Avocat Défenseur."
+        "Le récépissé de la déclaration d'appel visé à l'article 456 du Code de procédure civile est délivré sans frais à l'Avocat Défenseur déclarant."
       ],
       "mots_cles": [
         "récépissé",
@@ -642,7 +683,9 @@
         "Maire",
         "adjoints",
         "pourvoi",
-        "dispensé du timbre"
+        "dispensé du timbre",
+        "statuant",
+        "formulée"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -651,11 +694,13 @@
       "article": "Art. 85",
       "titre": "Délibérations des conseils de famille relatives aux mineurs dans l'armée",
       "texte": [
-        "Les délibérations des conseils de famille exclusivement relatifs à l'engagement des mineurs dans l'armée."
+        "Les délibérations des conseils de famille exclusivement relatives à l'engagement des mineurs dans l'armée."
       ],
       "mots_cles": [
         "délibérations",
         "conseils de famille",
+        "exclusivement",
+        "relatives",
         "engagement",
         "mineurs",
         "armée"
@@ -667,14 +712,14 @@
       "article": "Art. 86",
       "titre": "Enregistrement des titres des professions médicales",
       "texte": [
-        "L'enregistrement des titres des docteurs en médecine, chirurgiens-dentistes et sages-femmes."
+        "L'enregistrement des titres des docteurs en médecine, chirurgiens-dentistes et sage-femmes."
       ],
       "mots_cles": [
         "enregistrement",
         "titres",
         "docteurs en médecine",
         "chirurgiens-dentistes",
-        "sages-femmes"
+        "sage-femmes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -692,7 +737,8 @@
         "significations",
         "contrats",
         "expropriation",
-        "utilité publique"
+        "utilité publique",
+        "textes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -727,7 +773,11 @@
         "vérification de créances",
         "affirmation de créances",
         "concordats",
-        "atermoiements"
+        "atermoiements",
+        "magistrat",
+        "rapports",
+        "dires",
+        "actes de produits"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -743,7 +793,9 @@
         "Greffiers",
         "Receveurs de l'enregistrement",
         "extraits de jugements",
-        "lois sur l'enregistrement"
+        "lois sur l'enregistrement",
+        "fournir",
+        "lesdits"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -780,7 +832,10 @@
         "copies des actes",
         "formalité",
         "amende",
-        "1.000 FCFA"
+        "1.000 FCFA",
+        "spécifiée",
+        "paiement des droits",
+        "usage"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -789,13 +844,13 @@
       "article": "Art. 91",
       "titre": "Actes relatifs au mariage des indigents et à la légitimation des enfants naturels",
       "texte": [
-        "Les extraits de registres de l'état civil, les actes de notoriété, de consentement, de publication, les délibérations de conseil de famille, la notification, s'il y a lieu, les certificats de libération du service militaire, les dispenses pour cause de parenté, d'alliance ou d'âge, les actes de reconnaissance des enfants naturels, les certificats constatant la célébration du mariage, les actes de procédure, les ordonnances, jugements et arrêts dont la production est nécessaire, ayant pour objet de faciliter le mariage des indigents, la légitimation de leurs enfants naturels et le retrait de ces enfants déposés dans les hospices.",
-        "Sont admises aux dispositions du présent article les personnes qui justifient d'un certificat d'indigence à elles délivré par le Commissaire de Police ou par le Maire dans les Communes où il n'existe pas de Commissaire de Police ou le vu d'un extrait du rôle des contributions constatant que les parties intéressées paient moins de 100 FCFA, ou d'un certificat du percepteur de leur Commune portant qu'elles ne sont pas imposées.",
+        "Les extraits de registres de l'état civil, les actes de notoriété, de consentement, de publication, les délibérations de conseil de famille, la notification, s'il y a lieu, les certificats de libération du service militaire, les dispenses pour cause de parenté, d'alliance ou d'âge, les actes de reconnaissance des enfants naturels, les certificats constatant la célébration civile du mariage, les actes de procédure, les ordonnances, jugements et arrêts dont la production est nécessaire, ayant pour objet de faciliter le mariage des indigents, la légitimation de leurs enfants naturels et le retrait de ces enfants déposés dans les hospices.",
+        "Sont admises aux dispositions du présent article les personnes qui justifient d'un certificat d'indigence à elles délivré par le Commissaire de Police ou par le Maire dans les Communes où il n'existe pas de Commissaire de Police sur le vu d'un extrait du rôle des contributions constatant que les parties intéressées paient moins de 100 FCFA, ou d'un certificat du percepteur de leur Commune portant qu'elles ne sont pas imposées.",
         "Les actes, extraits, copies ou expéditions ainsi délivrés mentionnent expressément qu'ils sont destinés à servir à la célébration du mariage entre indigents, à la légitimation ou au retrait de leurs enfants naturels déposés dans les hospices.",
         "Ils ne peuvent servir à d'autres fins sous peine de 15.000 FCFA d'amende, outre le paiement des droits contre ceux qui en ont fait usage ou qui les ont indûment délivrés ou reçus.",
         "Le recouvrement des droits et des amendes de contravention est poursuivi par voie de contrainte, comme en matière d'enregistrement.",
         "Le certificat prévu à l'alinéa 2 ci-dessus est délivré en plusieurs originaux lorsqu'il doit être produit à divers officiers de l'état civil.",
-        "Néanmoins, les réquisitions du Procureur de la République, tiennent lieu des originaux ci-dessus prescrits pourvu qu'elles mentionnent le défaut de certificat d'indigence à leur parquette.",
+        "Néanmoins, les réquisitions du Procureur de la République, tiennent lieu des originaux ci-dessus prescrits pourvu qu'elles mentionnent le dépôt du certificat d'indigence à leur parquet.",
         "L'extrait du rôle ou le certificat négatif du percepteur est annexé aux pièces déposées pour la célébration du mariage."
       ],
       "mots_cles": [
@@ -835,7 +890,10 @@
         "contrainte",
         "enregistrement",
         "Procureur de la République",
-        "parquet"
+        "parquet",
+        "civile",
+        "officiers de l'état civil",
+        "certificat négatif"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -877,7 +935,10 @@
         "certificats d'indigence",
         "passeports",
         "visas de passeports",
-        "personnes indigentes"
+        "personnes indigentes",
+        "conformément",
+        "article précédent",
+        "assimilés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -925,7 +986,8 @@
         "navires",
         "déclarations",
         "marchandises",
-        "douanes"
+        "douanes",
+        "fournies"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -942,7 +1004,9 @@
         "parties",
         "notaires",
         "article 1394",
-        "Code civil"
+        "alinéa 3",
+        "Code civil",
+        "exécution"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -957,7 +1021,9 @@
         "actes",
         "articles 154 et 155",
         "Code civil",
-        "mariage"
+        "mariage",
+        "énumérés",
+        "relatifs"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -996,7 +1062,11 @@
         "inventaire des dettes",
         "attestation du créancier",
         "articles 45 à 47",
-        "déclarations de successions"
+        "déclarations de successions",
+        "acquittement",
+        "non exigibilité",
+        "susvisé",
+        "déduction des dettes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1021,7 +1091,11 @@
         "copies",
         "formalité",
         "greffe",
-        "destination"
+        "destination",
+        "ladite loi",
+        "pièces",
+        "délivrées",
+        "expressément"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1030,7 +1104,7 @@
       "article": "Art. 101",
       "titre": "Pétitions et mémoires aux autorités constituées",
       "texte": [
-        "Les pétitions et mémoires présentés à toutes autorités constituées, administrations ainsi que les pétitions ayant pour objet des demandes de secours adressées aux autorités constituées, les demandes de renseignements ou correspondances courantes adressées aux administrations publiques.",
+        "Les pétitions et mémoires présentés à toutes autorités constituées, aux administrations ainsi que les pétitions ayant pour objet des demandes de secours adressées aux autorités constituées, les demandes de renseignements ou correspondances courantes adressées aux administrations publiques.",
         "Restent toutefois soumises au droit de timbre, les demandes déposées dans le cadre de la réglementation déterminée en vue d'obtenir des concessions (terrains, forêts, mines, etc.), ou des permis (de chasse, de conduire, de construire, etc.) dès qu'elles comportent, même implicitement, engagement du demandeur de se conformer à ces réglementations."
       ],
       "mots_cles": [
@@ -1051,7 +1125,10 @@
         "chasse",
         "conduire",
         "construire",
-        "engagement"
+        "engagement",
+        "réglementations",
+        "demandeur",
+        "implicitement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1075,7 +1152,9 @@
         "recouvrement",
         "transactions",
         "réglementation forestière",
-        "procès-verbaux"
+        "procès-verbaux",
+        "somme",
+        "même réglementation"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1085,21 +1164,21 @@
       "titre": "Actes de police générale et de procédure criminelle",
       "texte": [
         "Les actes de police générale et de vindicte publique et les copies de pièces de procédure criminelle qui doivent être délivrés sans frais.",
-        "Les actes de police en matière criminelle, ceux concernant la police générale et de sûreté et la vindicte publique, les actes de la procédure d'assises, à l'exception des actes soumis au visa pour timbre en débit par suite de l'existence d'une partie civile et des actes d'huissiers visés pour timbre et enregistrement en débit."
+        "Les actes de police en matière criminelle, ceux concernant la police générale et de sûreté et la vindicte publique, les actes de la procédure d'assises, à l'exception des actes soumis au visa pour timbre en débet par suite de l'existence d'une partie civile et des actes d'huissiers visés pour timbre et enregistrement en débet."
       ],
       "mots_cles": [
         "actes de police générale",
         "vindicte publique",
         "copies",
-        "procédure criminelle",
-        "sans frais",
+        "pièces de procédure criminelle",
+        "délivrés sans frais",
         "police en matière criminelle",
         "police de sûreté",
         "procédure d'assises",
         "partie civile",
         "actes d'huissiers",
-        "visa pour timbre en débit",
-        "enregistrement en débit"
+        "visa pour timbre en débet",
+        "enregistrement en débet"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1121,13 +1200,13 @@
       "article": "Art. 105",
       "titre": "Actes de prestation de serment",
       "texte": [
-        "Les actes de prestation de serment des magistrats, fonctionnaires ou autres agents salariés par les administrations publiques."
+        "Les actes de prestation de serment des magistrats, Fonctionnaires ou autres agents salariés par les administrations publiques."
       ],
       "mots_cles": [
         "actes",
         "prestation de serment",
         "magistrats",
-        "fonctionnaires",
+        "Fonctionnaires",
         "agents salariés",
         "administrations publiques"
       ],
@@ -1138,13 +1217,14 @@
       "article": "Art. 106",
       "titre": "Pouvoirs relatifs à la protection des obligataires",
       "texte": [
-        "Les pouvoirs visés à l'avant-dernier alinéa de l'article 17 du décret du 13 janvier 1938, relatif à la protection obligatoire."
+        "Les pouvoirs visés à l'avant-dernier alinéa de l'article 17 du décret du 13 janvier 1938, relatif à la protection des obligataires."
       ],
       "mots_cles": [
         "pouvoirs",
+        "avant-dernier alinéa",
         "article 17",
         "décret du 13 janvier 1938",
-        "protection obligatoire"
+        "protection des obligataires"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1158,6 +1238,7 @@
       "mots_cles": [
         "actes",
         "pièces",
+        "exclusivement",
         "protection",
         "pupilles de la nation"
       ],
@@ -1194,6 +1275,8 @@
         "registre du commerce",
         "papier libre",
         "copies d'inscriptions",
+        "exécution de la loi",
+        "copies de pièces déposées",
         "greffe",
         "Tribunal Populaire de District",
         "Tribunal Populaire d'Arrondissement",
@@ -1243,6 +1326,7 @@
       "mots_cles": [
         "répertoires",
         "greffiers",
+        "inscrits",
         "jugements",
         "simple police",
         "police correctionnelle",
@@ -1267,12 +1351,14 @@
         "quittances",
         "réquisitions militaires",
         "indemnité",
+        "réglementation",
         "dégâts",
         "dommages",
         "propriétés",
         "troupes",
         "logées",
         "cantonnées",
+        "habitant",
         "indemnités de réquisition"
       ],
       "statut": "en vigueur",
@@ -1282,7 +1368,7 @@
       "article": "Art. 114",
       "titre": "Registre tenu au greffe en matière de saisie-arrêt",
       "texte": [
-        "Le registre tenu au greffe de chaque Tribunal Populaire de District ou d'Arrondissement sur lequel sont mentionnés tous les actes, d'une nature quelconque, décisions et formalités auxquels donne lieu l'exécution des dispositions du Code du travail relatives à la saisie-arrêt et à la cession des salaires et appointements.",
+        "Le registre tenu au greffe de chaque Tribunal Populaire de District ou d'Arrondissement sur lequel sont mentionnés tous les actes, d'une nature quelconque, décisions et formalités auxquels donne lieu l'exécution des dispositions du Code du travail relative à la saisie-arrêt et à la cession des salaires et appointements.",
         "Tous les actes, décisions et formalités visés dans ce Code sont rédigés sur papier non timbré, ainsi que leurs copies, les lettres recommandées, les procurations du saisi et du tiers saisi."
       ],
       "mots_cles": [
@@ -1313,15 +1399,19 @@
       "titre": "Saisie-arrêt et cession des salaires et soldes",
       "texte": [
         "Les dispositions de l'article précédent sont applicables en matière de saisie-arrêt et de cession :",
-        "a) des salaires, appointements et traitements des Fonctionnaires civils et assimilés et des militaires à solde mensuelle en activité, en disponibilité, en non-activité, en réforme, et des Officiers généraux du cadre de réserve."
+        "a) des salaires, appointements et traitements des Fonctionnaires civils ;",
+        "b) des soldes nettes des officiers et assimilés et des militaires à solde mensuelle en activité, en disponibilité, en non-activité, en réforme, et des Officiers généraux du cadre de réserve."
       ],
       "mots_cles": [
+        "article précédent",
         "saisie-arrêt",
         "cession",
         "salaires",
         "appointements",
         "traitements",
         "Fonctionnaires civils",
+        "soldes nettes",
+        "officiers",
         "assimilés",
         "militaires",
         "solde mensuelle",
@@ -1392,15 +1482,17 @@
       "article": "Art. 118",
       "titre": "Contrat de travail entre chefs d'établissements et ouvriers",
       "texte": [
-        "Le contrat de travail entre les chefs ou directeurs d'établissements industriels ou commerciaux et les salariés de ces établissements."
+        "Le contrat de travail entre les chefs ou directeurs des établissements industriels ou commerciaux, des exploitations agricoles ou forestières et leurs ouvriers."
       ],
       "mots_cles": [
         "contrat de travail",
-        "chefs d'établissements",
+        "chefs",
         "directeurs",
         "établissements industriels",
         "établissements commerciaux",
-        "salariés"
+        "exploitations agricoles",
+        "exploitations forestières",
+        "ouvriers"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1409,16 +1501,22 @@
       "article": "Art. 119",
       "titre": "Certificats de travail délivrés aux ouvriers",
       "texte": [
-        "Les certificats de travail délivrés aux ouvriers, employés ou serviteurs par le chef d'industrie ou maître qui les employait."
+        "Les certificats de travail délivrés aux ouvriers, employés ou serviteurs, encore qu'ils contiennent d'autres mentions que celles prévues au Code du travail.",
+        "La formule « libre de tout engagement » et toute autre constatant l'expiration régulière du contrat de travail, les qualités professionnelles et les services rendus, sont comprises dans l'exemption."
       ],
       "mots_cles": [
         "certificats de travail",
         "ouvriers",
         "employés",
         "serviteurs",
-        "chef d'industrie",
-        "maître",
-        "employeur"
+        "mentions",
+        "Code du travail",
+        "libre de tout engagement",
+        "expiration régulière",
+        "contrat de travail",
+        "qualités professionnelles",
+        "services rendus",
+        "exemption"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1427,15 +1525,15 @@
       "article": "Art. 120",
       "titre": "Second exemplaire des déclarations de ventes publiques mobilières",
       "texte": [
-        "Le second exemplaire conservé au bureau de l'enregistrement des déclarations de ventes publiques d'objets mobiliers dans les cas où lesdites déclarations doivent être enregistrées."
+        "Le second exemplaire conservé au bureau de l'enregistrement, de la déclaration relative aux ventes publiques et par enchères d'objets mobiliers."
       ],
       "mots_cles": [
         "second exemplaire",
         "bureau de l'enregistrement",
-        "déclarations",
+        "déclaration",
         "ventes publiques",
-        "objets mobiliers",
-        "enregistrement"
+        "enchères",
+        "objets mobiliers"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1444,15 +1542,19 @@
       "article": "Art. 121",
       "titre": "Actes à la charge de l'État et des collectivités",
       "texte": [
-        "Les actes d'acquisition, d'échange ou de location à charge de l'État."
+        "Les actes d'acquisition, d'échange ou de location et, en général, tous actes et écrits dont le prix et les frais sont à la charge de l'État, du Groupe des États de l'ex-AEF, ou des Communes."
       ],
       "mots_cles": [
         "actes",
         "acquisition",
         "échange",
         "location",
+        "écrits",
+        "prix",
+        "frais",
         "charge de l'État",
-        "État"
+        "Groupe des États de l'ex-AEF",
+        "Communes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1461,7 +1563,7 @@
       "article": "Art. 122",
       "titre": "Livrets de travail",
       "texte": [
-        "Les Livrets de travail."
+        "Les livrets de travail."
       ],
       "mots_cles": [
         "livrets de travail"
@@ -1473,13 +1575,23 @@
       "article": "Art. 123",
       "titre": "Certificats de vie délivrés aux pensionnaires de l'État et des collectivités",
       "texte": [
-        "Les certificats de vie délivrés aux pensionnés de l'État ou d'autres collectivités publiques."
+        "Les certificats de vie délivrés aux pensionnés de l'État, du Groupe des États de l'ex-AEF, des Communes, des établissements publics ou reconnus d'utilité publique, aux médaillés militaires et aux membres de la Légion d'honneur.",
+        "Les certificats de vie délivrés par l'administration et devant servir au paiement d'indemnités de charges de famille ou d'allocations familiales."
       ],
       "mots_cles": [
         "certificats de vie",
         "pensionnés",
         "État",
-        "collectivités publiques"
+        "Groupe des États de l'ex-AEF",
+        "Communes",
+        "établissements publics",
+        "utilité publique",
+        "médaillés militaires",
+        "Légion d'honneur",
+        "administration",
+        "paiement",
+        "indemnités de charges de famille",
+        "allocations familiales"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1488,18 +1600,25 @@
       "article": "Art. 124",
       "titre": "Actes en matière de justice de droit coutumier",
       "texte": [
-        "Tous actes et jugements relatifs à l'exécution des textes relatifs à la justice de droit coutumier.",
-        "Ces extraits feront mention de leur destination et ne pourront servir à un autre usage."
+        "Tous actes et jugements relatifs à l'exécution de la réglementation sur la justice de droit coutumier et, à l'exception de ceux comportant transmission de propriété, d'usufruit ou de jouissance de biens immeubles, les extraits, expéditions ou copies qui s'en délivrent aux parties.",
+        "Les extraits d'actes de l'état civil délivrés aux citoyens de statuts particuliers qui demandent leur accession à la qualité de citoyen de droit commun."
       ],
       "mots_cles": [
         "actes",
         "jugements",
-        "exécution",
+        "réglementation",
         "justice de droit coutumier",
-        "droit coutumier",
+        "transmission de propriété",
+        "usufruit",
+        "jouissance",
+        "biens immeubles",
         "extraits",
-        "destination",
-        "usage"
+        "expéditions",
+        "copies",
+        "parties",
+        "état civil",
+        "statuts particuliers",
+        "citoyen de droit commun"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1514,6 +1633,7 @@
         "factures",
         "états",
         "mémoires",
+        "appui",
         "dépenses publiques",
         "5.000 FCFA"
       ],
@@ -1535,6 +1655,7 @@
         "bénéficiaires",
         "assistance médicale gratuite",
         "quittances",
+        "Médecins",
         "règlement",
         "sommes mandatées"
       ],
@@ -1550,6 +1671,7 @@
       "mots_cles": [
         "acquits-à-caution",
         "passavants",
+        "délivrés",
         "administration des douanes",
         "douanes"
       ],
@@ -1575,13 +1697,13 @@
       "article": "Art. 129",
       "titre": "Remboursements des carnets de pécule",
       "texte": [
-        "Les pièces de toute nature relatives aux remboursements des carnets de pécule visés par les textes réglementant le travail."
+        "Les pièces de toute nature relatives aux remboursements des carnets de pécules visés par les textes réglementant le travail."
       ],
       "mots_cles": [
         "pièces",
         "remboursements",
-        "carnets de pêche",
-        "réglementation du travail"
+        "carnets de pécules",
+        "textes réglementant le travail"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1615,7 +1737,9 @@
         "actes",
         "transmissions",
         "sociétés de prévoyance",
-        "droits"
+        "droits",
+        "supportés",
+        "lesdites sociétés"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1635,6 +1759,8 @@
         "réglementation",
         "warrants agricoles",
         "registres",
+        "inscrits",
+        "copies",
         "inscriptions d'emprunt",
         "certificats négatifs",
         "certificats de radiations"
@@ -1667,8 +1793,9 @@
         "Croix-Rouge française",
         "OMS",
         "Fonds International de Secours à l'Enfance",
-        "FISE",
-        "organismes humanitaires"
+        "droits",
+        "supportés légalement",
+        "organismes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"
@@ -1713,7 +1840,9 @@
         "article 3",
         "décret n°55-584",
         "20 mai 1955",
-        "fonctionnement des comptes",
+        "conditions de fonctionnement",
+        "comptes",
+        "disposé",
         "chèques"
       ],
       "statut": "en vigueur",
@@ -1729,7 +1858,8 @@
         "procès-verbaux",
         "douane",
         "soumissions",
-        "transactions"
+        "transactions",
+        "tenant lieu"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Actes exempts de timbre"

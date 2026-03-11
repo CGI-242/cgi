@@ -9,7 +9,7 @@ const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 const SMTP_FROM_ADDRESS = process.env.SMTP_FROM || 'no-reply@normx-ai.com';
 const SMTP_FROM = `CGI 242 - NormX AI <${SMTP_FROM_ADDRESS}>`;
-const SMTP_REPLY_TO = process.env.SMTP_REPLY_TO || 'contact@normx-ai.com';
+const SMTP_REPLY_TO = process.env.SMTP_REPLY_TO || 'support@normx-ai.com';
 
 const isSmtpConfigured = !!(SMTP_HOST && SMTP_USER && SMTP_PASS);
 
@@ -117,7 +117,7 @@ export class EmailService {
         <tr>
           <td style="padding: 16px 32px; text-align: center;">
             <p style="margin: 0; font-size: 11px; color: #9ca3af;">
-              © ${new Date().getFullYear()} CGI 242 — NormX AI · contact@normx-ai.com
+              © ${new Date().getFullYear()} CGI 242 — NormX AI · info-contact@normx-ai.com
             </p>
           </td>
         </tr>
@@ -368,7 +368,7 @@ export class EmailService {
       ${noteSection}
 
       <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
-        Pour toute question, contactez notre équipe à contact@normx-ai.com.
+        Pour toute question, contactez notre équipe à support@normx-ai.com.
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">

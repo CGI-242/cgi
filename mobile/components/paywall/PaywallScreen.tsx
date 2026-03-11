@@ -22,7 +22,7 @@ export default function PaywallScreen() {
   const logout = useAuthStore((s) => s.logout);
 
   const handleContact = () => {
-    Linking.openURL("mailto:contact@normx-ai.com?subject=Souscription%20CGI242");
+    Linking.openURL("mailto:facturation@normx-ai.com?subject=Souscription%20CGI242");
   };
 
   return (

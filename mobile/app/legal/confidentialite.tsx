@@ -96,7 +96,7 @@ export default function ConfidentialitePublicScreen() {
             Siège social : 5 rue Benjamin Raspail, 60100 Creil{"\n"}
             En cours d'immatriculation au RCS de Compiègne{"\n\n"}
             Référente protection des données : Christelle MABIKA{"\n"}
-            Email : contact@normx-ai.com{"\n"}
+            Email : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24
           </Text>
 
@@ -180,7 +180,7 @@ export default function ConfidentialitePublicScreen() {
           <BulletItem colors={colors}>Clauses contractuelles types (CCT) adoptées par la Commission européenne</BulletItem>
           <BulletItem colors={colors}>Évaluation de l'impact du transfert (Transfer Impact Assessment)</BulletItem>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
-            Vous pouvez obtenir une copie des garanties mises en place en contactant : contact@normx-ai.com.{"\n\n"}
+            Vous pouvez obtenir une copie des garanties mises en place en contactant : info-contact@normx-ai.com.{"\n\n"}
             L'hébergement principal des données est assuré par OVH SAS en France (Roubaix), certifié ISO 27001. Le monitoring d'erreurs (Sentry) utilise des serveurs européens (Francfort, Allemagne).
           </Text>
 
@@ -216,7 +216,7 @@ export default function ConfidentialitePublicScreen() {
           <BulletItem colors={colors}>Droit de retirer votre consentement à tout moment, sans affecter la licéité du traitement antérieur (art. 7.3)</BulletItem>
           <BulletItem colors={colors}>Droit de définir des directives relatives au sort de vos données après votre décès (loi Informatique et Libertés, art. 85)</BulletItem>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
-            Pour exercer ces droits, contactez-nous par email à contact@normx-ai.com ou par courrier à NORMX AI SAS, 5 rue Benjamin Raspail, 60100 Creil. Nous nous engageons à répondre dans un délai d'un mois, prolongeable de deux mois en cas de demande complexe (art. 12.3 du RGPD).
+            Pour exercer ces droits, contactez-nous par email à info-contact@normx-ai.com ou par courrier à NORMX AI SAS, 5 rue Benjamin Raspail, 60100 Creil. Nous nous engageons à répondre dans un délai d'un mois, prolongeable de deux mois en cas de demande complexe (art. 12.3 du RGPD).
           </Text>
 
           {/* 10. Réclamation CNIL */}
@@ -254,7 +254,7 @@ export default function ConfidentialitePublicScreen() {
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez NORMX AI :{"\n\n"}
-            Email : contact@normx-ai.com{"\n"}
+            Email : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24{"\n"}
             Courrier : NORMX AI SAS, 5 rue Benjamin Raspail, 60100 Creil
           </Text>
@@ -262,7 +262,7 @@ export default function ConfidentialitePublicScreen() {
           {/* Séparateur bas */}
           <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
           <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — contact@normx-ai.com
+            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — info-contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>

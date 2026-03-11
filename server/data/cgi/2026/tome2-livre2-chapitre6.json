@@ -20,6 +20,7 @@
         "Il est institué un droit de timbre sur les véhicules automobiles en circulation sur le territoire congolais."
       ],
       "mots_cles": [
+        "institué",
         "droit de timbre",
         "véhicules automobiles",
         "circulation",
@@ -48,6 +49,7 @@
         "civil",
         "militaire",
         "réciprocité",
+        "propriétaires",
         "privilège diplomatique",
         "privilège consulaire"
       ],
@@ -63,8 +65,7 @@
       "mots_cles": [
         "droit de timbre",
         "véhicules automobiles",
-        "annuel",
-        "périodicité"
+        "annuel"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions générales"
@@ -90,7 +91,7 @@
       "texte": [
         "Le droit de timbre des véhicules automobiles est collecté par les compagnies d'assurance au moment de la souscription de la police d'assurance responsabilité civile.",
         "Les compagnies d'assurance prélèvent le droit de timbre des véhicules automobiles au tarif visé à l'article 148 ci-dessus dès le premier paiement de la prime d'assurance au cours de l'année, que ce paiement soit partiel ou total.",
-        "Le droit de timbre collecté est reversé aux mains du bureau de l'enregistrement des domaines et du timbre du siège de la compagnie d'assurances entre le 10 et le 20 du mois suivant celui du paiement par l'assuré."
+        "Le droit de timbre collecté est reversé auprès du bureau de l'enregistrement des domaines et du timbre du siège de la compagnie d'assurances entre le 10 et le 20 du mois suivant celui du paiement par l'assuré."
       ],
       "mots_cles": [
         "droit de timbre",
@@ -108,7 +109,10 @@
         "reversement",
         "bureau de l'enregistrement",
         "domaines",
-        "timbre"
+        "timbre",
+        "siège",
+        "compagnies d'assurances",
+        "assuré"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Tarif et collecte"
@@ -117,17 +121,19 @@
       "article": "Art. 150",
       "titre": "Véhicules immatriculés dans le domaine portuaire",
       "texte": [
-        "Les véhicules immatriculés au domaine portuaire sont soumis au droit de timbre des véhicules automobiles au tarif prévu à l'article 148 ci-dessus.",
-        "Ce droit est valable jusqu'à l'expiration de ladite immatriculation."
+        "Les véhicules immatriculés dans le domaine portuaire sont soumis au droit de timbre des véhicules automobiles au tarif prévu à l'article 148 ci-dessus.",
+        "Ce droit est valable jusqu'à l'expiration de la durée de ladite immatriculation."
       ],
       "mots_cles": [
         "véhicules",
+        "immatriculés",
         "domaine portuaire",
-        "immatriculation",
         "droit de timbre",
         "véhicules automobiles",
         "article 148",
-        "expiration"
+        "expiration",
+        "durée",
+        "immatriculation"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Tarif et collecte"

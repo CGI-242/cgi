@@ -87,7 +87,7 @@ export default function CGUPublicScreen() {
             Article 2 — Accès au service
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            L'accès à l'application nécessite la création d'un compte utilisateur. L'utilisateur s'engage à fournir des informations exactes, complètes et à jour, et à maintenir la confidentialité de ses identifiants de connexion. Tout accès non autorisé doit être signalé immédiatement à contact@normx-ai.com.{"\n\n"}
+            L'accès à l'application nécessite la création d'un compte utilisateur. L'utilisateur s'engage à fournir des informations exactes, complètes et à jour, et à maintenir la confidentialité de ses identifiants de connexion. Tout accès non autorisé doit être signalé immédiatement à info-contact@normx-ai.com.{"\n\n"}
             L'application est accessible 24h/24, 7j/7, sous réserve des interruptions pour maintenance ou cas de force majeure.
           </Text>
 
@@ -125,7 +125,7 @@ export default function CGUPublicScreen() {
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Conformément à l'article L.221-18 du Code de la consommation, vous disposez d'un délai de 14 jours à compter de la souscription pour exercer votre droit de rétractation, sans avoir à justifier de motif ni à payer de pénalité.{"\n\n"}
-            Pour exercer ce droit, adressez votre demande par email à contact@normx-ai.com en indiquant vos nom, prénom et les détails de votre abonnement. Le remboursement sera effectué dans un délai de 14 jours suivant la réception de votre demande, via le même moyen de paiement utilisé lors de la souscription.{"\n\n"}
+            Pour exercer ce droit, adressez votre demande par email à info-contact@normx-ai.com en indiquant vos nom, prénom et les détails de votre abonnement. Le remboursement sera effectué dans un délai de 14 jours suivant la réception de votre demande, via le même moyen de paiement utilisé lors de la souscription.{"\n\n"}
             Toutefois, conformément à l'article L.221-28 du Code de la consommation, si vous avez expressément demandé le début de l'exécution du service avant la fin du délai de rétractation et reconnu perdre ainsi votre droit de rétractation, celui-ci ne pourra plus être exercé.
           </Text>
 
@@ -170,7 +170,7 @@ export default function CGUPublicScreen() {
             Article 10 — Médiation de la consommation
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Conformément aux articles L.612-1 et suivants du Code de la consommation, en cas de litige non résolu par notre service client (contact@normx-ai.com), l'utilisateur consommateur peut recourir gratuitement à un médiateur de la consommation.{"\n\n"}
+            Conformément aux articles L.612-1 et suivants du Code de la consommation, en cas de litige non résolu par notre service client (info-contact@normx-ai.com), l'utilisateur consommateur peut recourir gratuitement à un médiateur de la consommation.{"\n\n"}
             Médiateur désigné : en cours de désignation.{"\n\n"}
             L'utilisateur peut également utiliser la plateforme européenne de règlement en ligne des litiges (RLL) :{"\n"}
             https://ec.europa.eu/consumers/odr
@@ -197,7 +197,7 @@ export default function CGUPublicScreen() {
           {/* Séparateur bas */}
           <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
           <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — contact@normx-ai.com
+            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — info-contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>

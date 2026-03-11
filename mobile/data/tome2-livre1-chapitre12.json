@@ -611,7 +611,7 @@
       "article": "Art. 293",
       "titre": "Procès-verbaux des agents publics",
       "texte": [
-        "Les procès-verbaux et les affirmations de ceux-ci, dressés par les agents de la force publique, magistrats, fonctionnaires et agents salariés de l'État, du Groupe de Territoires, de l'AEF, du Territoire ou des communes, dressés dans l'exercice de leurs fonctions ou destinés à constater les infractions à la loi."
+        "Les procès-verbaux et les affirmations de ceux-ci, dressés par les agents de la force publique, magistrats, fonctionnaires et agents salariés de l'État, du Groupe de Territoires de l'AEF, du Territoire ou des communes, dressés dans l'exercice de leurs fonctions ou destinés à constater les infractions à la loi."
       ],
       "mots_cles": [
         "procès-verbaux",
@@ -621,10 +621,11 @@
         "fonctionnaires",
         "agents salariés",
         "État",
-        "AEF",
+        "Groupe de Territoires de l'AEF",
         "Territoire",
         "communes",
-        "infractions",
+        "exercice de leurs fonctions",
+        "infractions à la loi",
         "exemption"
       ],
       "statut": "en vigueur",
@@ -648,7 +649,7 @@
       "article": "Art. 295",
       "titre": "Actes de poursuites pour recouvrement d'impôts",
       "texte": [
-        "Tous actes de poursuites (contraintes, sommations, commandements, saisies, etc.) ayant pour objet le recouvrement des impôts et taxes perçus au profit de l'État, du Groupe des Territoires, de l'AEF, du Territoire ou des Communes.",
+        "Tous actes de poursuites (contraintes, sommations, commandements, saisies etc.) ayant pour objet le recouvrement des impôts et taxes perçus au profit de l'État, du Groupe des Territoires de l'AEF, du Territoire ou des Communes.",
         "Si ces actes sont dressés et signifiés par voie d'huissier, ils sont enregistrés gratis dans le même délai et sous les mêmes sanctions que les autres actes extrajudiciaires.",
         "Les articles 68, 86 et tous autres concernant les ventes publiques mobilières sont applicables aux ventes consécutives aux poursuites en recouvrement des impôts et taxes visés à l'alinéa 1.",
         "En cas d'infraction à cette réglementation, les amendes et pénalités sont à la charge du fonctionnaire ou agent qui aura procédé à la vente."
@@ -686,8 +687,10 @@
       ],
       "mots_cles": [
         "attestations",
+        "article 3",
         "décret n°55-584",
         "20 mai 1955",
+        "conditions de fonctionnement",
         "comptes",
         "chèques",
         "exemption"
@@ -852,7 +855,7 @@
       "titre": "Recours devant la Cour Suprême",
       "texte": [
         "Le recours devant la Cour Suprême contre les arrêts de la juridiction administrative peut avoir lieu sans frais et sans l'intervention d'un Avocat lorsqu'il se rapporte :",
-        "1° aux contributions directes ou taxes à ces contributions pour le recouvrement ;",
+        "1° aux contributions directes ou de taxes à ces contributions pour le recouvrement ;",
         "2° aux élections ;",
         "3° aux contraventions aux lois et règlements sur la grande voirie et autres contraventions dont la répression relève de la juridiction administrative.",
         "En cas d'expertise ordonnée par la juridiction administrative, la prestation de serment du ou des experts et l'expédition du procès-verbal ne donnent lieu à aucun droit d'enregistrement."
@@ -884,7 +887,7 @@
       "texte": [
         "Les quittances des contributions, droits, taxes et revenus payés aux administrations nationales du groupe, locales et municipales.",
         "Les ordonnances de décharge ou de réduction, remise ou modération d'imposition, les quittances y relatives et extraits d'iceux.",
-        "Les récépissés délivrés aux collecteurs, aux Receveurs, de deniers publics et des contributions locales et les comptes des recettes ou gestions publiques."
+        "Les récépissés délivrés aux collecteurs, aux Receveurs, de deniers publics et de contributions locales et les comptes des recettes ou gestions publiques."
       ],
       "mots_cles": [
         "quittances",
@@ -1029,7 +1032,7 @@
       "titre": "Faillites et liquidations judiciaires",
       "texte": [
         "Les actes rédigés en exécution des lois relatives aux faillites et liquidations judiciaires et dont l'énumération suit :",
-        "• les déclarations de cessation de paiements, les bilans, les dépôts des bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, les procès-verbaux d'assemblées, dires, d'observations et délibérations de créanciers ;",
+        "• les déclarations de cessation de paiements, les bilans, les dépôts des bilans, les affiches et certificats d'insertion relatifs à la déclaration de faillite ou aux convocations de créanciers, les actes de dépôts des inventaires, des transactions et autres actes, les procès-verbaux d'assemblées, de dires, d'observations et délibérations de créanciers ;",
         "• les états des créances présumées ;",
         "• les actes de produits, les requêtes adressées au juge-commissaire, les ordonnances et décisions de ce magistrat ;",
         "• les rapports et comptes des syndics ;",
@@ -1186,7 +1189,7 @@
       "article": "Art. 316",
       "titre": "Bordereaux et états relatifs aux fonds de commerce",
       "texte": [
-        "Les bordereaux d'inscriptions, ainsi que les états ou certificats et copies d'actes de vente sous seing privé délivrés par les greffiers, en exécution des textes relatifs à la vente et au nantissement des fonds de commerce."
+        "Les bordereaux d'inscriptions, ainsi que les états ou certificats et copies d'actes de vente sous seing privé délivré par les greffiers, en exécution des textes relatifs à la vente et au nantissement des fonds de commerce."
       ],
       "mots_cles": [
         "bordereaux d'inscriptions",
@@ -1378,10 +1381,12 @@
         "rentiers",
         "pensionnaires",
         "État",
-        "ex-AEF",
+        "Groupe des États de l'ex-AEF",
         "communes",
         "établissements publics",
         "utilité publique",
+        "administration",
+        "paiement",
         "indemnités",
         "charges de famille",
         "allocations familiales",
@@ -1402,11 +1407,11 @@
         "actes",
         "pièces de procédure",
         "conventions",
-        "transmission de propriété",
+        "transmissions de propriété",
         "usufruit",
         "jouissance",
         "biens immeubles",
-        "droits réels immobiliers",
+        "constitution de droits réels immobiliers",
         "exemption"
       ],
       "statut": "en vigueur",
@@ -1553,10 +1558,9 @@
         "fonctionnement",
         "Croix-Rouge française",
         "Organisation Mondiale de la Santé",
-        "OMS",
         "Fonds International de Secours à l'Enfance",
-        "UNICEF",
-        "organismes humanitaires",
+        "droits supportés légalement",
+        "organismes",
         "exemption"
       ],
       "statut": "en vigueur",

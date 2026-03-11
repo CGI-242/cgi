@@ -203,7 +203,7 @@ export default function AbonnementScreen() {
             {t("abonnement.subscribeDesc")}
           </Text>
           <TouchableOpacity
-            onPress={() => Linking.openURL("mailto:contact@cgi242.com")}
+            onPress={() => Linking.openURL("mailto:facturation@normx-ai.com")}
             accessibilityLabel={t("abonnement.contactSubscribe")}
             accessibilityRole="button"
             style={{
@@ -215,7 +215,7 @@ export default function AbonnementScreen() {
             }}
           >
             <Ionicons name="mail" size={18} color="#fff" style={{ marginRight: 8 }} />
-            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "700" }}>contact@cgi242.com</Text>
+            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "700" }}>facturation@normx-ai.com</Text>
           </TouchableOpacity>
         </View>
 

@@ -17,7 +17,7 @@
       "article": "Art. 353",
       "titre": "Fusion des formalités d'enregistrement et de publicité foncière",
       "texte": [
-        "Les formalités d'enregistrement et de la publicité foncière sont fusionnées pour les actes publiés au fichier immobilier et pour l'enregistrement des actes résultant de leur publication.",
+        "Les formalités d'enregistrement et de la publicité foncière sont fusionnées pour les actes publiés au fichier immobilier et l'enregistrement de ces actes résultant de leur publication.",
         "La formalité unique ou formalité fusionnée s'applique à tous les actes qui sont soumis à la double obligation de l'enregistrement et de la publicité foncière."
       ],
       "mots_cles": [
@@ -25,6 +25,7 @@
         "enregistrement",
         "publicité foncière",
         "fusionnées",
+        "actes publiés",
         "fichier immobilier",
         "publication",
         "formalité unique",
@@ -38,15 +39,15 @@
       "titre": "Conditions de soumission à la formalité unique",
       "texte": [
         "Un acte est soumis à la formalité unique à trois conditions simultanées :",
-        "a) l'acte doit être soumis à l'enregistrement ;",
+        "a) l'acte doit être soumis à l'enregistrement obligatoire ;",
         "b) l'acte doit être soumis à la publicité foncière ;",
         "c) l'acte ne doit pas figurer parmi les actes exclus formellement de la formalité unique."
       ],
       "mots_cles": [
         "acte",
         "formalité unique",
-        "conditions",
-        "enregistrement",
+        "trois conditions simultanées",
+        "enregistrement obligatoire",
         "publicité foncière",
         "actes exclus"
       ],
@@ -60,7 +61,7 @@
         "1° tous les actes portant ou constatant la transmission à titre onéreux des droits réels immobiliers ; Ces droits peuvent porter sur la propriété, la nue-propriété, l'usufruit, l'usage, l'emphytéose et l'antichrèse ou les servitudes (ventes, adjudications, échanges, apports en sociétés, retraits, cessions et rétrocessions) ;",
         "2° les baux à durée illimitée et baux à vie ayant pour objet des immeubles ou droits immobiliers ;",
         "3° actes entre vifs dressés pour constater des clauses d'inaliénabilité temporaire et toutes autres restrictions au droit de disposer ;",
-        "4° attestations notariales établies en vue de constater la transmission ou la constitution par décès de droits réels immobiliers ;",
+        "4° attestations notariées établies en vue de constater la transmission ou la constitution par décès de droits réels immobiliers ;",
         "5° conventions d'indivision immobilière ;",
         "6° actes interruptifs de la prescription acquisitive (citation en justice, commandement) et actes de renonciation à la prescription acquisitive ;",
         "7° actes constitutifs de biens de famille insaisissables ;",
@@ -94,16 +95,19 @@
         "droits immobiliers",
         "clauses d'inaliénabilité",
         "restrictions",
-        "attestations notariales",
+        "attestations notariées",
         "décès",
         "conventions d'indivision",
         "prescription acquisitive",
         "biens de famille insaisissables",
         "expropriation",
         "utilité publique",
+        "indemnité",
         "réorganisation foncière",
         "remembrement",
-        "copropriété"
+        "immeubles ruraux",
+        "copropriété",
+        "ensembles immobiliers"
       ],
       "statut": "en vigueur"
     },
@@ -118,13 +122,15 @@
       ],
       "mots_cles": [
         "actes",
-        "facultatif",
+        "facultativement",
         "formalité fusionnée",
         "promesses unilatérales de vente",
         "promesses unilatérales de bail",
         "douze ans",
+        "conventions",
         "servitudes légales",
         "documents annexés",
+        "reproduits",
         "publicité foncière"
       ],
       "statut": "en vigueur"
@@ -149,11 +155,14 @@
         "mutations à titre gratuit",
         "baux urbains",
         "douze ans",
+        "durée limitée",
         "baux ruraux",
         "actes mixtes",
         "meubles",
         "immeubles",
         "publicité",
+        "formalité unique",
+        "facultative",
         "mutations verbales",
         "donations d'immeubles"
       ],
@@ -168,8 +177,10 @@
       ],
       "mots_cles": [
         "formalité unique",
+        "applicable",
         "Conservations des Hypothèques",
         "enregistrement",
+        "actes concernés",
         "publication",
         "services de l'enregistrement"
       ],
@@ -185,7 +196,7 @@
         "délais",
         "rigueur",
         "loi",
-        "prorogation",
+        "prorogés",
         "autorité"
       ],
       "statut": "en vigueur"

@@ -39,7 +39,7 @@
       "titre": "Émission et obligations",
       "texte": [
         "Le Timbre électronique est émis par le système d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.",
-        "Il est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et du paiement minimal est de 1.950 FCFA.",
+        "Il est fait obligation à toute personne physique et morale, de droit public ou privé, ayant la qualité de commerçant ou non, de réaliser toutes les transactions liées à leurs activités par voie électronique, au moyen du timbre électronique et dont la valeur minimale est de 1.950 FCFA.",
         "Ces transactions sont certifiées par plateforme d'horodatage, de certification et d'archivage en vigueur par le biais du timbre électronique.",
         "Les personnes visées ci-dessus sont tenues de connecter leur système de facturation ou tout système en tenant lieu à celui d'horodatage, de certification électronique et d'archivage de l'Agence de Régulation des Postes et des Communications Électroniques.",
         "La Direction Générale des Impôts et des Domaines et l'Agence de Régulation des Postes et des Communications Électroniques sont chargées de la mise en œuvre de la présente disposition.",
@@ -62,7 +62,7 @@
         "transactions",
         "voie électronique",
         "1.950 FCFA",
-        "paiement minimal",
+        "valeur minimale",
         "plateforme",
         "système de facturation",
         "Direction Générale des Impôts et des Domaines",
@@ -130,7 +130,7 @@
         "Les charges liées à une transaction non conforme à l'obligation prévue ci-dessus ne sont pas admises en déduction pour la détermination du bénéfice imposable.",
         "Si les charges présentées par le contribuable pour la détermination de son revenu imposable sont remises en cause, l'Administration fiscale est en droit de réclamer un droit d'enregistrement au taux de 1 % sur les actes juridiques qui sous-tendent ces charges.",
         "La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction.",
-        "Le timbre électronique s'applique à tout acte émis d'une valeur minimale fixée ci-dessus."
+        "Le timbre électronique s'applique à tout acte émis à un tiers d'une valeur minimale fixée ci-dessus."
       ],
       "mots_cles": [
         "charges",
@@ -147,6 +147,7 @@
         "TVA",
         "droit à déduction",
         "timbre électronique",
+        "tiers",
         "valeur minimale"
       ],
       "statut": "en vigueur",
