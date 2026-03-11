@@ -53,6 +53,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/permissions": "settings.managementPermissions",
   "/admin": "settings.managementAdmin",
   "/securite": "settings.twoFactor",
+  "/factures": "factures.title",
 };
 
 const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
@@ -65,6 +66,7 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/audit": { path: "/plus", titleKey: "plus.title" },
   "/permissions": { path: "/plus", titleKey: "plus.title" },
   "/admin": { path: "/plus", titleKey: "plus.title" },
+  "/factures": { path: "/plus", titleKey: "plus.title" },
   "/simulateur/its": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/is": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/patente": { path: "/simulateur", titleKey: "simulateur.title" },
@@ -157,7 +159,7 @@ export default function AppLayout() {
     if (pathname.startsWith("/simulateur")) return "sim";
     if (pathname.startsWith("/calendrier")) return "cal";
     if (pathname.startsWith("/chat")) return "chat";
-    if (pathname.startsWith("/plus") || pathname.startsWith("/profil") || pathname.startsWith("/parametres") || pathname.startsWith("/securite") || pathname.startsWith("/abonnement")) return "plus";
+    if (pathname.startsWith("/plus") || pathname.startsWith("/profil") || pathname.startsWith("/parametres") || pathname.startsWith("/securite") || pathname.startsWith("/abonnement") || pathname.startsWith("/factures")) return "plus";
     return "home";
   };
 
@@ -209,6 +211,8 @@ export default function AppLayout() {
       <Stack.Screen name="analytics/index" />
       <Stack.Screen name="audit/index" />
       <Stack.Screen name="permissions/index" />
+      <Stack.Screen name="factures/index" />
+      <Stack.Screen name="factures/[id]" />
     </Stack>
   );
 

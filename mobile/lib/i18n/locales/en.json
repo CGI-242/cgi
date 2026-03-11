@@ -1104,7 +1104,8 @@
     "profileDesc": "Edit your information",
     "settingsDesc": "Theme, language, appearance",
     "securityDesc": "2FA and backup codes",
-    "subscriptionDesc": "Manage your subscription"
+    "subscriptionDesc": "Manage your subscription",
+    "facturesDesc": "View your invoices"
   },
   "articleDetail": {
     "backToArticles": "Back to articles",
@@ -1211,5 +1212,35 @@
     "pricingFeatCodeHydro": "Hydrocarbons Code",
     "pricingFeatCodeDouanier": "Customs Code",
     "pricingFeatCodeCgi": "General Tax Code"
+  },
+  "factures": {
+    "title": "My invoices",
+    "empty": "No invoices yet",
+    "loadError": "Error loading invoices",
+    "notFound": "Invoice not found",
+    "statusPaid": "Paid",
+    "statusSent": "Sent",
+    "statusGenerated": "Generated",
+    "statusDraft": "Draft",
+    "statusCancelled": "Cancelled",
+    "typeAuto": "Automatic",
+    "typeManual": "Manual",
+    "downloadPdf": "Download PDF",
+    "client": "Client",
+    "name": "Name",
+    "email": "Email",
+    "address": "Address",
+    "phone": "Phone",
+    "details": "Details",
+    "description": "Description",
+    "plan": "Plan",
+    "period": "Period",
+    "amounts": "Amounts",
+    "amountHT": "Amount excl. tax",
+    "amountTTC": "Total incl. tax",
+    "dates": "Dates",
+    "createdAt": "Created",
+    "paidAt": "Paid",
+    "sentAt": "Sent"
   }
 }

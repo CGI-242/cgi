@@ -1140,7 +1140,8 @@
     "profileDesc": "Modifier vos informations",
     "settingsDesc": "Thème, langue, apparence",
     "securityDesc": "2FA et codes de secours",
-    "subscriptionDesc": "Gérer votre abonnement"
+    "subscriptionDesc": "Gérer votre abonnement",
+    "facturesDesc": "Consulter vos factures"
   },
   "articleDetail": {
     "backToArticles": "Retour aux articles",
@@ -1247,5 +1248,35 @@
     "pricingFeatCodeHydro": "Code des Hydrocarbures",
     "pricingFeatCodeDouanier": "Code Douanier",
     "pricingFeatCodeCgi": "Code Général des Impôts"
+  },
+  "factures": {
+    "title": "Mes factures",
+    "empty": "Aucune facture pour le moment",
+    "loadError": "Erreur lors du chargement des factures",
+    "notFound": "Facture introuvable",
+    "statusPaid": "Payée",
+    "statusSent": "Envoyée",
+    "statusGenerated": "Générée",
+    "statusDraft": "Brouillon",
+    "statusCancelled": "Annulée",
+    "typeAuto": "Automatique",
+    "typeManual": "Manuelle",
+    "downloadPdf": "Télécharger PDF",
+    "client": "Client",
+    "name": "Nom",
+    "email": "Email",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "details": "Détails",
+    "description": "Description",
+    "plan": "Plan",
+    "period": "Période",
+    "amounts": "Montants",
+    "amountHT": "Montant HT",
+    "amountTTC": "Total TTC",
+    "dates": "Dates",
+    "createdAt": "Date de création",
+    "paidAt": "Date de paiement",
+    "sentAt": "Date d'envoi"
   }
 }

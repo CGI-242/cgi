@@ -24,6 +24,7 @@ const MENU_ITEMS: MenuItem[] = [
   { icon: "settings-outline", labelKey: "sidebar.settings", descKey: "plus.settingsDesc", route: "/(app)/parametres" },
   { icon: "shield-checkmark-outline", labelKey: "sidebar.security", descKey: "plus.securityDesc", route: "/(app)/securite" },
   { icon: "card-outline", labelKey: "sidebar.subscription", descKey: "plus.subscriptionDesc", route: "/(app)/abonnement" },
+  { icon: "receipt-outline", labelKey: "factures.title", descKey: "plus.facturesDesc", route: "/(app)/factures" },
   { icon: "document-text-outline", labelKey: "settings.terms", route: "/legal/cgu" },
   { icon: "lock-closed-outline", labelKey: "settings.privacy", route: "/legal/confidentialite" },
   { icon: "information-circle-outline", labelKey: "settings.legalNotices", route: "/legal/mentions" },

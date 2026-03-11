@@ -49,7 +49,13 @@ function htmlToPlainText(html: string): string {
     .trim();
 }
 
-async function sendMail(to: string, subject: string, html: string): Promise<void> {
+interface MailAttachment {
+  filename: string;
+  path: string;
+  contentType?: string;
+}
+
+async function sendMail(to: string, subject: string, html: string, attachments?: MailAttachment[]): Promise<void> {
   const text = htmlToPlainText(html);
 
   if (transporter) {
@@ -60,6 +66,7 @@ async function sendMail(to: string, subject: string, html: string): Promise<void
       subject,
       html,
       text,
+      attachments,
       headers: {
         'X-Mailer': 'CGI242-NormX',
       },
@@ -68,6 +75,7 @@ async function sendMail(to: string, subject: string, html: string): Promise<void
   } else {
     logger.info(`[EMAIL FALLBACK] À: ${to} | Sujet: ${subject}`);
     logger.info(`[EMAIL FALLBACK] Contenu:\n${text}`);
+    if (attachments?.length) logger.info(`[EMAIL FALLBACK] Pièces jointes: ${attachments.map(a => a.filename).join(', ')}`);
   }
 }
 
@@ -377,6 +385,43 @@ export class EmailService {
       </p>
     `);
     await sendMail(ownerEmail, subject, html);
+  }
+
+  static async sendInvoice(
+    email: string,
+    customerName: string,
+    invoiceNumber: string,
+    amountTTC: string,
+    currency: string,
+    pdfPath: string,
+  ): Promise<void> {
+    const amount = parseFloat(amountTTC).toLocaleString('fr-FR', { minimumFractionDigits: 0 });
+    const subject = `CGI-242 — Facture ${invoiceNumber}`;
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour ${customerName},</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Veuillez trouver ci-joint votre facture <strong>${invoiceNumber}</strong>.
+      </p>
+
+      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 13px; color: #6b7280;">Montant total TTC</span>
+        <br/>
+        <span style="font-size: 28px; font-weight: bold; color: #c8a03c;">${amount} ${currency}</span>
+      </div>
+
+      <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
+        Pour toute question relative à cette facture, contactez-nous à facturation@normx-ai.com.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Cordialement,<br/>
+        <strong>L'équipe NormX AI</strong>
+      </p>
+    `);
+    await sendMail(email, subject, html, [
+      { filename: `${invoiceNumber}.pdf`, path: pdfPath, contentType: 'application/pdf' },
+    ]);
   }
 
   static async sendMfaEnabled(email: string): Promise<void> {
