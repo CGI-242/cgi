@@ -37,6 +37,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/simulateur/solde-liquidation": "simulateur.solde.title",
   "/simulateur/ircm": "simulateur.ircm.title",
   "/simulateur/irf-loyers": "simulateur.irfLoyers.title",
+  "/simulateur/taxe-immobiliere": "simulateur.taxeImmo.title",
   "/simulateur/iba": "simulateur.iba.title",
   "/simulateur/tva": "simulateur.tva.title",
   "/simulateur/igf": "simulateur.igf.title",
@@ -73,6 +74,7 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
   "/simulateur/solde-liquidation": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/ircm": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/irf-loyers": { path: "/simulateur", titleKey: "simulateur.title" },
+  "/simulateur/taxe-immobiliere": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/iba": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/tva": { path: "/simulateur", titleKey: "simulateur.title" },
   "/simulateur/igf": { path: "/simulateur", titleKey: "simulateur.title" },
@@ -191,6 +193,7 @@ export default function AppLayout() {
       <Stack.Screen name="simulateur/solde-liquidation" />
       <Stack.Screen name="simulateur/ircm" />
       <Stack.Screen name="simulateur/irf-loyers" />
+      <Stack.Screen name="simulateur/taxe-immobiliere" />
       <Stack.Screen name="simulateur/iba" />
       <Stack.Screen name="simulateur/tva" />
       <Stack.Screen name="simulateur/igf" />

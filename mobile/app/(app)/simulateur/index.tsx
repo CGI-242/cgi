@@ -76,6 +76,14 @@ export default function SimulateurHub() {
       route: "/(app)/simulateur/irf-loyers",
     },
     {
+      id: "taxe-immobiliere",
+      title: t("simulateur.hubTaxeImmo"),
+      subtitle: t("simulateur.taxeImmo.subtitle"),
+      description: t("simulateur.taxeImmo.legalRef"),
+      icon: "business-outline" as const,
+      route: "/(app)/simulateur/taxe-immobiliere",
+    },
+    {
       id: "its",
       title: t("simulateur.hubIts"),
       subtitle: t("simulateur.its.subtitle"),

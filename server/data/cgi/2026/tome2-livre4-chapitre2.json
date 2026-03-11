@@ -21,7 +21,9 @@
         "Pour les baux ou renouvellement signés, la taxe est exigible dans les trois mois qui suivent la date d'entrée en jouissance, à raison des loyers à échoir le 31 décembre de ladite année."
       ],
       "mots_cles": [
+        "taxe immobilière",
         "taxe sur les loyers",
+        "paiement",
         "locataires",
         "propriétaires",
         "usufruitiers",
@@ -45,9 +47,9 @@
         "Les locataires déduisent la taxe en une seule fois à l'occasion de leur règlement des loyers aux propriétaires, intervenant entre le 1er janvier et le 10 avril de la même année."
       ],
       "mots_cles": [
+        "taxe immobilière",
         "locataires",
         "déduction",
-        "taxe",
         "règlement des loyers",
         "propriétaires",
         "1er janvier",
@@ -62,8 +64,8 @@
         "Le règlement de la taxe par les locataires ne peut entraîner d'augmentation de loyer."
       ],
       "mots_cles": [
+        "taxe immobilière",
         "règlement",
-        "taxe",
         "locataires",
         "augmentation de loyer",
         "interdiction"
@@ -80,16 +82,15 @@
         "Le troisième exemplaire sera adressé au Directeur des Contributions Directes et Indirectes."
       ],
       "mots_cles": [
+        "taxe immobilière",
         "versement",
-        "taxe",
         "bordereau",
         "trois exemplaires",
         "imprimés",
         "administration",
         "quittance",
         "partie versante",
-        "agent",
-        "recouvrement",
+        "agent de recouvrement",
         "Directeur des Contributions Directes et Indirectes"
       ],
       "statut": "en vigueur"
@@ -122,13 +123,13 @@
         "Le défaut de production des renseignements demandés conduit à une taxation d'office."
       ],
       "mots_cles": [
+        "taxe immobilière",
+        "obligation déclarative",
         "personne physique",
         "personne morale",
         "redevable",
-        "taxe",
         "31 janvier",
         "bureau de l'enregistrement",
-        "état",
         "noms",
         "prénoms",
         "domiciles",

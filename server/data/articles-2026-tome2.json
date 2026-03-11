@@ -1,21 +1,5 @@
 [
   {
-    "numero": "1",
-    "titre": "Revenus des capitaux mobiliers soumis à l'impôt",
-    "contenu": "Les droits d'enregistrement sont perçus d'après les bases et suivant les règles fixées par la présente réglementation.",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "droits d'enregistrement",
-      "bases",
-      "règles",
-      "perception",
-      "réglementation",
-      "fiscalité"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
     "numero": "1 bis",
     "titre": "Droit de timbre sur les titres de transports aériens",
     "contenu": "Il est institué un droit de timbre sur les titres des transports aériens des personnes physiques à l'exception des étrangers et nationaux bénéficiaires d'un passeport diplomatique.",
@@ -54,53 +38,6 @@
       "droit commun"
     ],
     "source": "tome2-livre1-chapitre1.json"
-  },
-  {
-    "numero": "3",
-    "titre": "Tarif de l'IRVM",
-    "contenu": "Le droit fixe s'applique aux actes qui ne constatent ni transmission de propriété, d'usufruit ou de jouissance de biens meubles ou immeubles, ni condamnation de sommes et valeurs, ni apport en mariage, ni apport en société, ni partage de biens meubles ou immeubles, ni marché et d'une façon générale, à tous actes, même exempts de l'enregistrement, qui sont présentés volontairement à la formalité.\nIl est perçu aux taux fixés par les articles 209, 210 et 211 du présent règlement.",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "droit fixe",
-      "transmission de propriété",
-      "usufruit",
-      "jouissance",
-      "biens meubles",
-      "biens immeubles",
-      "apport en mariage",
-      "apport en société",
-      "partage",
-      "marché",
-      "formalité volontaire",
-      "article 209",
-      "article 210",
-      "article 211"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "4",
-    "titre": "Détermination du revenu imposable",
-    "contenu": "Le droit proportionnel ou le droit progressif est établi pour les transmissions de propriété, d'usufruit ou de jouissance de biens meubles ou immeubles, soit entre vifs, soit par décès, les condamnations de sommes et valeurs ainsi que pour les actes constatant un apport en mariage, un apport en société, un partage de biens meubles ou immeubles, un marché.\nLes quotités du droit proportionnel et du droit progressif sont fixées par les articles 212 et suivants du présent règlement.\nLes droits sont assis sur les sommes et valeurs arrondies au millier de francs inférieur.",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "droit proportionnel",
-      "droit progressif",
-      "transmission de propriété",
-      "usufruit",
-      "jouissance",
-      "entre vifs",
-      "par décès",
-      "apport en mariage",
-      "apport en société",
-      "partage",
-      "marché",
-      "article 212",
-      "arrondi millier de francs"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
   },
   {
     "numero": "5",
@@ -216,46 +153,6 @@
       "juridiction"
     ],
     "source": "tome2-livre1-chapitre1.json"
-  },
-  {
-    "numero": "9 bis",
-    "titre": "Bénéfices affectés à la réserve libre soumis à l'IRVM",
-    "contenu": "Les bénéfices affectés à la réserve libre et pour lesquels la distribution n'est pas intervenue dans un délai de trois ans, sont considérés comme distribués et soumis à l'IRVM.",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "bénéfices",
-      "réserve libre",
-      "distribution",
-      "trois ans",
-      "distribués",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "9 ter",
-    "titre": "IRVM des succursales de sociétés étrangères",
-    "contenu": "L'IRVM dû sur les bénéfices des succursales de sociétés étrangères est payable annuellement au plus tard le 30 avril.\nEn ce qui concerne les succursales de sociétés étrangères et les sociétés étrangères soumises à l'impôt sur le bénéfice forfaitaire des sociétés (IS forfaitaire), l'impôt est payable chaque mois en même temps que l'impôt forfaitaire visé à l'article 126 quater A du Tome 1 du présent Code.\nL'IRVM forfaitaire acquitté par ces contribuables est libératoire de l'IRVM de droit commun.",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "IRVM",
-      "bénéfices",
-      "succursales",
-      "sociétés étrangères",
-      "payable",
-      "annuellement",
-      "30 avril",
-      "IS forfaitaire",
-      "impôt forfaitaire",
-      "article 126 quater A",
-      "Tome 1",
-      "IRVM forfaitaire",
-      "libératoire",
-      "droit commun"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
   },
   {
     "numero": "10",
@@ -453,197 +350,6 @@
       "droit de communication"
     ],
     "source": "tome2-livre2-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST1",
-    "titre": "I. Valeurs soumises à la taxe",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "valeurs",
-      "soumises à la taxe",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST2",
-    "titre": "II. Tarif de l'impôt",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "tarif",
-      "impôt",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3",
-    "titre": "III. Assiette et mode de perception de l'impôt",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "assiette",
-      "mode de perception",
-      "impôt",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3a",
-    "titre": "1) Détermination du revenu ou de la rémunération",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "détermination",
-      "revenu",
-      "rémunération"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3b",
-    "titre": "2) Mode d'évaluation du taux d'émission des emprunts",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "évaluation",
-      "taux d'émission",
-      "emprunts"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3c",
-    "titre": "3) Remboursements et amortissements dans les sociétés",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "remboursements",
-      "amortissements",
-      "sociétés"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3d",
-    "titre": "4) Lieu de paiement de l'impôt",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "lieu de paiement",
-      "impôt",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3e",
-    "titre": "5) Mode de paiement de l'impôt",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "mode de paiement",
-      "impôt",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "T2L3C1-ST3f",
-    "titre": "6) Pénalités",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "1",
-    "keywords": [
-      "pénalités",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre1.json"
-  },
-  {
-    "numero": "15",
-    "titre": "Prescription de l'action du Trésor en matière d'IRVM",
-    "contenu": "L'action du Trésor en recouvrement de l'IRVM est soumise à la prescription de 5 ans. Ce délai a pour point de départ la date de l'exigibilité des droits et amendes.\nToutefois, dans les sociétés dont l'existence n'a pas été portée à la connaissance des tiers par les publications légales, la prescription ne court contre l'administration que du jour où elle a pu constater l'exigibilité de l'impôt, au vu d'un acte soumis à l'enregistrement ou au moyen des documents régulièrement déposés au bureau compétent pour la perception de l'impôt.\nEn outre, la prescription est suspendue par un procès-verbal dressé pour constater les infractions, et suivie par suite du délai d'une année, à moins que l'administration ne succombe définitivement dans cette poursuite exercée en vertu de ce procès-verbal.\nElle ne recommence à courir en pareil cas, que du jour où il est constaté, au moyen d'une mention inscrite par un agent de contrôle sur des principaux livres de la société ou de l'établissement, que l'administration a repris le libre exercice de son droit de vérification.\nL'action des redevables contre le Trésor, en restitution des taxes indûment perçues, se prescrit également par cinq ans à compter de la date de l'indue perception.",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "action du Trésor",
-      "recouvrement",
-      "IRVM",
-      "prescription",
-      "5 ans",
-      "exigibilité",
-      "droits",
-      "amendes",
-      "sociétés",
-      "publications légales",
-      "administration",
-      "enregistrement",
-      "bureau compétent",
-      "procès-verbal",
-      "infractions",
-      "suspension",
-      "agent de contrôle",
-      "droit de vérification",
-      "redevables",
-      "restitution",
-      "taxes indûment perçues"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
-  },
-  {
-    "numero": "16",
-    "titre": "Actes interruptifs de la prescription",
-    "contenu": "Tout acte qui interrompt la prescription des intérêts, dans les conditions prévues par la loi du 16 juillet 1934, relative aux droits des porteurs d'obligations d'un même emprunt, interrompt également au profit du Trésor, la prescription des impôts et taxes qui peuvent lui être dus sur les intérêts visés au premier alinéa de l'article 1 de ladite loi.",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "interruption",
-      "prescription",
-      "intérêts",
-      "loi du 16 juillet 1934",
-      "porteurs d'obligations",
-      "emprunt",
-      "Trésor",
-      "impôts",
-      "taxes",
-      "article 1"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
-  },
-  {
-    "numero": "17",
-    "titre": "Droit de communication et de vérification",
-    "contenu": "La valeur de la propriété et de la jouissance des biens de toute nature ou les sommes servant d'assiette à l'impôt sont déterminées pour la liquidation et le payement du droit proportionnel ou du droit progressif, ainsi qu'il est dit aux articles ci-après.\nLes établissements de microfinance bénéficient d'une réduction de 50 % de la valeur des droits dus pour l'enregistrement des actes de création d'entreprise, d'augmentation de capital, de fusion des sociétés ou d'établissements sociétaires, de mutation d'actions et de parts sociales.",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "assiette",
-      "valeur",
-      "propriété",
-      "jouissance",
-      "droit proportionnel",
-      "droit progressif",
-      "microfinance",
-      "réduction 50%",
-      "création d'entreprise",
-      "augmentation de capital",
-      "fusion",
-      "mutation d'actions",
-      "parts sociales"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
   },
   {
     "numero": "18",
@@ -1629,57 +1335,6 @@
     "source": "tome2-livre2-chapitre2.json"
   },
   {
-    "numero": "T2L3C2-ST1",
-    "titre": "1) Procédure",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "procédure",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
-  },
-  {
-    "numero": "T2L3C2-ST2",
-    "titre": "2) Prescriptions",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "prescriptions",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
-  },
-  {
-    "numero": "T2L3C2-ST3",
-    "titre": "3) Droit de communication",
-    "contenu": "",
-    "tome": "2",
-    "chapitre": "2",
-    "keywords": [
-      "droit de communication",
-      "IRVM"
-    ],
-    "source": "tome2-livre3-chapitre2.json"
-  },
-  {
-    "numero": "7 (Ord. 17/87)",
-    "titre": "Exonération des bons de caisse",
-    "contenu": "Les revenus des bons de caisse sont exonérés de tous impôts frappant les valeurs mobilières.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "revenus",
-      "bons de caisse",
-      "exonérés",
-      "impôts",
-      "valeurs mobilières"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
     "numero": "50 bis",
     "titre": "Titres de transports aériens, fluviaux et connaissements",
     "contenu": "Les titres de transports aériens, fluviaux et les connaissements sont soumis aux droits de timbre suivants :\n• 4.000 FCFA pour un titre de transport aérien international ;\n• 1.000 FCFA pour un titre de transport aérien national ;\n• 5.000 FCFA le connaissement et la lettre de transport aérien ;\n• 1.000 FCFA pour un titre de transport fluvial et maritime international.",
@@ -2274,335 +1929,6 @@
       "article 80"
     ],
     "source": "tome2-livre1-chapitre3.json"
-  },
-  {
-    "numero": "18-1",
-    "titre": "Revenus des valeurs mobilières de l'État et des collectivités",
-    "contenu": "Les revenus des valeurs mobilières appartenant à l'État, au Groupe des États de l'ex-AEF, aux communes.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "revenus",
-      "valeurs mobilières",
-      "État",
-      "Groupe des États",
-      "ex-AEF",
-      "communes"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-2",
-    "titre": "Revenus des parts d'intérêts des caisses locales de crédit agricole",
-    "contenu": "Les revenus des parts d'intérêts ou des obligations des caisses locales de crédit agricole, associations agricoles et sociétés coopératives agricoles visées dans les textes portant organisation du crédit agricole mutuel en ex-AEF.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "revenus",
-      "parts d'intérêts",
-      "obligations",
-      "caisses locales",
-      "crédit agricole",
-      "associations agricoles",
-      "sociétés coopératives agricoles",
-      "crédit agricole mutuel",
-      "ex-AEF"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-3",
-    "titre": "Revenus des parts d'intérêts des sociétés coopératives",
-    "contenu": "Les revenus des parts d'intérêts ou actions, emprunts ou obligations des sociétés de toute nature dites de coopération, ainsi que des sociétés coopératives de production, de consommation ou de crédit et des sociétés de secours mutuels.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "revenus",
-      "parts d'intérêts",
-      "actions",
-      "emprunts",
-      "obligations",
-      "sociétés de coopération",
-      "sociétés coopératives",
-      "production",
-      "consommation",
-      "crédit",
-      "sociétés de secours mutuels"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-4",
-    "titre": "Intérêts et arrérages des emprunts représentés par des titres négociables",
-    "contenu": "Les intérêts, arrérages et tous autres produits des emprunts représentés par des titres négociables, émis directement dans le public par la Caisse des Dépôts et Consignations, le Crédit Foncier ou une société de crédit foncier agréée conformément au décret du 22 avril 1937, le Crédit National et les Caisses d'Épargne.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "intérêts",
-      "arrérages",
-      "produits",
-      "emprunts",
-      "titres négociables",
-      "Caisse des Dépôts et Consignations",
-      "Crédit Foncier",
-      "société de crédit foncier",
-      "décret du 22 avril 1937",
-      "Crédit National",
-      "Caisses d'Épargne"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-5",
-    "titre": "Exclusions d'application de l'article 1 n°2",
-    "contenu": "Les dispositions de l'article 1 n°2 ne sont pas applicables :\n• a) aux revenus des parts d'intérêts dans les sociétés commerciales en nom collectif ;\n• b) aux revenus des parts d'intérêts dans les sociétés civiles de personnes assujetties à l'impôt sur les bénéfices des professions non commerciales ou sur les traitements et salaires dont l'actif ne comprend que les biens mobiliers nécessaires à l'exercice de la profession des associés ;\n• c) aux parts d'intérêts dans les sociétés civiles des personnes assujetties à l'impôt sur les BICA constituées exclusivement entre agriculteurs participant personnellement à l'exploitation de l'entreprise sociale et dont l'actif ne comprend que les biens nécessaires à l'exercice de la profession des associés ;\n• d) aux parts d'intérêts dans les sociétés civiles assujetties à l'impôt foncier (ou exemptées temporairement par la réglementation) constituées entre copropriétaires, et ayant uniquement pour objet la gestion de leurs immeubles à l'exclusion de toutes opérations commerciales se rattachant à la profession d'intermédiaire.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "article 1 n°2",
-      "non applicable",
-      "revenus",
-      "parts d'intérêts",
-      "sociétés commerciales",
-      "nom collectif",
-      "sociétés civiles de personnes",
-      "bénéfices des professions non commerciales",
-      "traitements et salaires",
-      "biens mobiliers",
-      "BICA",
-      "agriculteurs",
-      "exploitation",
-      "entreprise sociale",
-      "impôt foncier",
-      "copropriétaires",
-      "gestion d'immeubles",
-      "intermédiaire"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-6",
-    "titre": "Sociétés en commandite dont le capital n'est pas divisé en actions",
-    "contenu": "Les dispositions de l'article 1 n°2 ne s'appliquent, dans les sociétés en commandite dont le capital n'est pas divisé en actions, qu'au montant de la commandite, à la double condition :\n• a) que le ou les associés responsables soient des personnes physiques ;\n• b) que l'ensemble de leurs parts n'excède pas le tiers du capital social.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "article 1 n°2",
-      "sociétés en commandite",
-      "capital",
-      "actions",
-      "commandite",
-      "conditions",
-      "associés responsables",
-      "personnes physiques",
-      "parts",
-      "tiers du capital social"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-7",
-    "titre": "Plus-values résultant de fusions de sociétés",
-    "contenu": "Les plus-values résultant de l'attribution gratuite d'actions, de parts bénéficiaires, de parts sociales ou d'obligations, à la suite de la fusion de sociétés anonymes, en commandite par actions ou à responsabilité limitée, réalisées à compter de l'entrée en vigueur du présent règlement, de l'impôt sur le revenu des capitaux mobiliers.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "plus-values",
-      "attribution gratuite",
-      "actions",
-      "parts bénéficiaires",
-      "parts sociales",
-      "obligations",
-      "fusion",
-      "sociétés anonymes",
-      "commandite par actions",
-      "responsabilité limitée",
-      "impôt sur le revenu des capitaux mobiliers"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-8",
-    "titre": "SARL à deux associés gérants",
-    "contenu": "Les dividendes, intérêts, arrérages et autres produits de toute nature des parts revenant dans les sociétés à responsabilité limitée à deux associés gérants seulement, et n'excédant pas 100.000 FCFA chacun.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "dividendes",
-      "intérêts",
-      "arrérages",
-      "produits",
-      "parts",
-      "sociétés à responsabilité limitée",
-      "SARL",
-      "deux associés gérants",
-      "100.000 FCFA"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-9",
-    "titre": "Administrateurs délégués et directeurs",
-    "contenu": "Tant que les sociétés anonymes ne se sont pas conformées aux prescriptions du décret n°1940 modifié par la loi du 16 novembre 1940 modifiée par celle du 4 mars 1943, les dispositions de l'article 1 n°4 ne s'appliquent pas aux produits revenant, soit aux administrateurs délégués, ou directeurs, en sus des sommes attribuées aux autres membres du Conseil d'administration, soit au Président Directeur Général, en tant qu'ils correspondent à leur travail de direction.\nToutefois, la disposition qui précède ne peut s'appliquer qu'à deux administrateurs nommément désignés.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "sociétés anonymes",
-      "décret n°1940",
-      "loi du 16 novembre 1940",
-      "loi du 4 mars 1943",
-      "article 1 n°4",
-      "produits",
-      "administrateurs délégués",
-      "directeurs",
-      "Conseil d'administration",
-      "Président Directeur Général",
-      "travail de direction",
-      "deux administrateurs"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-10",
-    "titre": "Distributions de réserves sous forme d'augmentation de capital",
-    "contenu": "Les distributions de réserves effectuées à compter de l'entrée en vigueur du présent règlement sous forme d'augmentation de capital sont exonérées de l'impôt sur le revenu des capitaux mobiliers.\nToutefois, lorsque ces distributions sont consécutives à une réduction de capital non motivée par des pertes sociales, ou à une opération quelconque impliquant le remboursement direct ou indirect du capital en franchise d'impôt sur le revenu des capitaux mobiliers, réalisée antérieurement à l'entrée en vigueur du présent règlement et depuis moins de dix ans elles ne peuvent bénéficier de l'exemption édictée par l'alinéa précédent que si l'augmentation de capital en résultant excède le montant de la réduction de capital ou du remboursement effectué.\nLes dispositions du premier alinéa du présent numéro sont applicables aux opérations visées par l'article 26 du Livre 1 du présent Code, lorsque ces opérations sont postérieures au 1er janvier 1961.\nToutefois, si antérieurement à l'entrée en vigueur du présent règlement et dans les dix ans précédant la fusion, le capital de la société absorbée ou des sociétés anciennes a fait l'objet d'une réduction non motivée par des pertes sociales, les plus-values ne peuvent bénéficier de l'exonération prévue à l'alinéa précédent qu'à concurrence de la fraction qui excède le montant de la réduction.\nSi dans les dix ans suivant la fusion, il est procédé à une réduction de capital non motivée par des pertes sociales, ou à un remboursement total ou partiel des obligations attribuées gratuitement, les plus-values sont déchues, à concurrence de la portion du capital remboursé aux actions, parts ou obligations attribuées gratuitement de l'exemption dont elles avaient bénéficié, et les droits exigibles doivent être acquittés par la société absorbante ou nouvelle dans les vingt premiers jours du trimestre qui suit celui au cours duquel a été fait le remboursement, à peine de sanctions édictées par l'article 12.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "distributions de réserves",
-      "augmentation de capital",
-      "exonérées",
-      "impôt sur le revenu des capitaux mobiliers",
-      "réduction de capital",
-      "pertes sociales",
-      "remboursement",
-      "franchise d'impôt",
-      "dix ans",
-      "article 26",
-      "Livre 1",
-      "1er janvier 1961",
-      "fusion",
-      "société absorbée",
-      "plus-values",
-      "exonération",
-      "obligations attribuées gratuitement",
-      "société absorbante",
-      "article 12"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-11",
-    "titre": "Réduction d'impôt pour les sociétés possédant des biens hors du Territoire",
-    "contenu": "Lorsqu'une société, compagnie ou entreprise, ayant son siège social dans le Territoire, possède dans un autre Territoire de l'Union Française des biens pour lesquels elle justifie avoir acquitté un impôt analogue à celui qui est institué par le présent règlement, l'impôt exigible dans le Territoire est réduit, pour le même exercice social, dans la mesure de la quote-part des biens ayant servi de base à l'assiette de l'impôt hors du Territoire.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "réduction d'impôt",
-      "sociétés",
-      "siège social",
-      "Territoire",
-      "Union Française",
-      "impôt analogue",
-      "exercice social",
-      "quote-part"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-12",
-    "titre": "Exonération des dividendes distribués par les sociétés mères",
-    "contenu": "1) Lorsqu'une société par actions ou à responsabilité limitée, ayant son siège dans le Territoire, possède, soit des actions nominatives d'une société française par actions, soit des parts d'intérêts d'une société française à responsabilité limitée, les dividendes distribués par la première société sont, pour chaque exercice, exonérés de l'impôt sur le revenu des capitaux mobiliers dans la mesure du montant net, déduction faite de l'IRVM des produits, des actions ou parts d'intérêts de la seconde société touchés par elle au cours de l'exercice, à condition :\na) que les actions ou parts d'intérêts possédées par la première société représentent au moins 20 % du capital de la seconde société ;\nb) qu'elles aient été souscrites ou attribuées à l'émission et soient toujours restées inscrites au nom de la société ou qu'elles soient détenues depuis deux années consécutives au moins sous la forme nominative.\nToutefois aucun pourcentage minimum ne sera exigé lorsque les actions ou parts d'intérêts possédées par la première société lui auront été remises en représentation d'apports faits dans le cadre et aux conditions prévues par l'article 261 de la codification de l'enregistrement.\n2) En cas de fusion, le bénéfice des dispositions qui précèdent est transporté de plein droit de la société absorbée à la société absorbante ou nouvelle ; les mêmes dispositions sont également applicables aux sociétés françaises qui ont une participation dans la société absorbée pour les actions nominatives ou les parts d'intérêts de la société absorbante ou nouvelle qu'elles ont reçues sans les avoir souscrites à l'émission, en remplacement des actions ou parts d'intérêts de la société absorbée, à charge de en justifier que les actions ou parts d'intérêts ont été effectivement attribuées à l'émission et soient toujours restées inscrites au moins à la distribution des dividendes et autres produits susceptibles d'être exonérés.\n3) La dispense prévue aux alinéas précédents est applicable, sous les conditions fixées aux mêmes alinéas, aux sociétés par actions ou à responsabilité limitée ayant leur siège au Congo, qui possèdent des actions nominatives ou des parts d'intérêts de sociétés de même forme ayant leur siège hors du Congo toutefois dans un autre Territoire de l'ex-Union Française.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "exonération",
-      "dividendes",
-      "sociétés mères",
-      "actions nominatives",
-      "parts d'intérêts",
-      "IRVM",
-      "20 %",
-      "capital",
-      "souscription",
-      "émission",
-      "fusion",
-      "société absorbée",
-      "société absorbante",
-      "Congo",
-      "ex-Union Française"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-13",
-    "titre": "Avances faites aux sociétés au moyen de warrants",
-    "contenu": "L'impôt sur le revenu des capitaux mobiliers n'est pas applicable aux avances faites aux sociétés, au moyen d'endossement de warrants.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "impôt sur le revenu des capitaux mobiliers",
-      "non applicable",
-      "avances",
-      "sociétés",
-      "endossement",
-      "warrants"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-14",
-    "titre": "Amortissements par réalisation d'actif",
-    "contenu": "1) La disposition de l'article 1 n°3 n'est pas applicable aux amortissements qui seraient faits par une réalisation d'actif au moyen de prélèvement sur les éléments autres que le compte « profits et pertes, les réserves ou provisions diverses du bilan.\nDe même elle ne s'applique pas :\na) aux sociétés dont les statuts ont prévu antérieurement à l'entrée en vigueur du présent règlement, l'amortissement obligatoire des actions ;\nb) aux sociétés concessionnaires de l'État, du Groupe des États de l'ex-AEF ou des communes qui établissent que l'amortissement par remboursement de toute partie de leur capital social, parts d'intérêts ou commandite, est justifié par la caducité de tout ou partie de leur actif social, notamment par déprécissement ou par obligation de remise en fin de concession à l'autorité concédante.\n2) Sont fixées à l'article 6 les conditions dans lesquelles est constatée, dans chaque cas, que l'opération a bien le caractère d'amortissement et que l'exonération est légitime.\n3) Lorsque les actions ont été remboursées par un des moyens prévus par le paragraphe 1 ci-dessus, à la liquidation de la société, la répartition de l'actif entre les porteurs d'actions de jouissance et jusqu'à concurrence du pair des actions originaires, est considérée comme remboursement de capital non imposable à l'impôt.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "article 1 n°3",
-      "non applicable",
-      "amortissements",
-      "réalisation d'actif",
-      "prélèvement",
-      "profits et pertes",
-      "réserves",
-      "provisions",
-      "bilan",
-      "statuts",
-      "amortissement obligatoire",
-      "actions",
-      "sociétés concessionnaires",
-      "État",
-      "ex-AEF",
-      "communes",
-      "capital social",
-      "parts d'intérêts",
-      "commandite",
-      "caducité",
-      "actif social",
-      "dépérissement",
-      "concession",
-      "autorité concédante",
-      "article 16",
-      "exonération",
-      "liquidation",
-      "actions de jouissance",
-      "remboursement de capital"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
-  },
-  {
-    "numero": "18-15",
-    "titre": "Distribution de la réserve de réévaluation",
-    "contenu": "La distribution de la réserve de réévaluation incorporée ou non au capital ayant donné lieu au paiement de la taxe forfaitaire de 10 %.",
-    "tome": "2",
-    "chapitre": "3",
-    "keywords": [
-      "distribution",
-      "réserve de réévaluation",
-      "capital",
-      "taxe forfaitaire",
-      "10 %"
-    ],
-    "source": "tome2-livre3-chapitre3.json"
   },
   {
     "numero": "56",
@@ -7424,6 +6750,258 @@
       "enregistrement"
     ],
     "source": "tome2-livre1-chapitre11.json"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la taxe immobilière sur les loyers",
+    "contenu": "Il est institué une taxe sur les loyers des propriétés bâties, égale à un douzième de loyers à échoir pendant l'année. La taxe sur les loyers s'applique également sur les propriétés non bâties à usage professionnel.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "1",
+    "keywords": [
+      "taxe immobilière",
+      "taxe sur les loyers",
+      "loyers",
+      "propriétés bâties",
+      "un douzième",
+      "propriétés non bâties",
+      "usage professionnel",
+      "institution",
+      "Livre 4"
+    ],
+    "source": "tome2-livre4-chapitre1.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "2",
+    "titre": "Débiteurs de la taxe immobilière",
+    "contenu": "La taxe est due par : • le propriétaire ou les usufruitiers ; • les locataires, en cas de sous-location, qu'il s'agisse des personnes physiques ou morales à l'exception des ambassades étrangères.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "1",
+    "keywords": [
+      "taxe immobilière",
+      "débiteurs",
+      "propriétaire",
+      "usufruitiers",
+      "locataires",
+      "sous-location",
+      "personnes physiques",
+      "personnes morales",
+      "ambassades étrangères"
+    ],
+    "source": "tome2-livre4-chapitre1.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "3",
+    "titre": "Liquidation et recouvrement de la taxe immobilière",
+    "contenu": "La liquidation, le recouvrement de la taxe et le contentieux sont assurés comme en matière de droit d'enregistrement.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "1",
+    "keywords": [
+      "taxe immobilière",
+      "liquidation",
+      "recouvrement",
+      "contentieux",
+      "droit d'enregistrement"
+    ],
+    "source": "tome2-livre4-chapitre1.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "4",
+    "titre": "Affectation du produit de la taxe immobilière",
+    "contenu": "La taxe immobilière sur les loyers est affectée à 50 % au budget de l'État et à 50 % au budget des collectivités locales pour le financement de l'enlèvement des ordures ménagères. La part des collectivités locales est directement payée auprès du receveur départemental ou municipal.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "1",
+    "keywords": [
+      "taxe immobilière",
+      "loyers",
+      "50 %",
+      "budget de l'État",
+      "collectivités locales",
+      "ordures ménagères",
+      "receveur départemental",
+      "receveur municipal"
+    ],
+    "source": "tome2-livre4-chapitre1.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "5",
+    "titre": "Paiement de la taxe par les locataires",
+    "contenu": "La taxe sur les loyers est payée par les locataires pour le compte des propriétaires ou usufruitiers et les sous-locataires pour le compte des locataires qu'il s'agisse des personnes physiques ou morales au plus tard le 20 février de chaque année pour les anciens contribuables. Pour les baux ou renouvellement signés, la taxe est exigible dans les trois mois qui suivent la date d'entrée en jouissance, à raison des loyers à échoir le 31 décembre de ladite année.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "taxe immobilière",
+      "taxe sur les loyers",
+      "paiement",
+      "locataires",
+      "propriétaires",
+      "usufruitiers",
+      "sous-locataires",
+      "personnes physiques",
+      "personnes morales",
+      "20 février",
+      "anciens contribuables",
+      "baux",
+      "renouvellements",
+      "trois mois",
+      "entrée en jouissance",
+      "31 décembre"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "6",
+    "titre": "Déduction de la taxe par les locataires",
+    "contenu": "Les locataires déduisent la taxe en une seule fois à l'occasion de leur règlement des loyers aux propriétaires, intervenant entre le 1er janvier et le 10 avril de la même année.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "taxe immobilière",
+      "locataires",
+      "déduction",
+      "règlement des loyers",
+      "propriétaires",
+      "1er janvier",
+      "10 avril"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "7",
+    "titre": "Interdiction d'augmentation de loyer liée à la taxe",
+    "contenu": "Le règlement de la taxe par les locataires ne peut entraîner d'augmentation de loyer.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "taxe immobilière",
+      "règlement",
+      "locataires",
+      "augmentation de loyer",
+      "interdiction"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "8",
+    "titre": "Bordereau de versement de la taxe",
+    "contenu": "Chaque versement de la taxe est accompagné d'un bordereau établi en trois exemplaires sur des imprimés fournis par l'administration. Un exemplaire du bordereau est rendu, accompagné d'une quittance à la partie versante, par l'agent chargé du recouvrement. Le deuxième exemplaire est conservé par le service. Le troisième exemplaire sera adressé au Directeur des Contributions Directes et Indirectes.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "taxe immobilière",
+      "versement",
+      "bordereau",
+      "trois exemplaires",
+      "imprimés",
+      "administration",
+      "quittance",
+      "partie versante",
+      "agent de recouvrement",
+      "Directeur des Contributions Directes et Indirectes"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "9",
+    "titre": "Pénalités pour retard de paiement de la taxe immobilière",
+    "contenu": "Tout retard dans le paiement de la taxe immobilière sur les loyers donne lieu à l'application d'une majoration de 50 % du montant des cotisations ou fractions de cotisations qui n'auraient pas été acquittées dans les délais prévus à l'article 5 ci-dessus.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "retard",
+      "paiement",
+      "taxe immobilière",
+      "loyers",
+      "majoration",
+      "50 %",
+      "cotisations",
+      "délais",
+      "article 5"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "10",
+    "titre": "Obligation déclarative des personnes physiques et morales",
+    "contenu": "Toute personne physique ou morale redevable de la taxe est tenue de remettre chaque année avant le 31 janvier, au bureau de l'enregistrement compétent, un état où figurent les noms, prénoms, domiciles de ses locataires, la période de location et le détail de la taxe versée sur la base des loyers (charges comprises) de l'année précédente. Cette obligation s'applique également aux sociétés pétrolières. Le défaut de production des renseignements demandés conduit à une taxation d'office.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "taxe immobilière",
+      "obligation déclarative",
+      "personne physique",
+      "personne morale",
+      "redevable",
+      "31 janvier",
+      "bureau de l'enregistrement",
+      "noms",
+      "prénoms",
+      "domiciles",
+      "locataires",
+      "période de location",
+      "taxe versée",
+      "loyers",
+      "charges comprises",
+      "sociétés pétrolières",
+      "taxation d'office"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
+  },
+  {
+    "numero": "11",
+    "titre": "Duplicata des quittances délivrées",
+    "contenu": "Un duplicata des quittances délivré par le receveur ou l'agent spécial ou le préposé du Trésor est obligatoirement annexé à la déclaration annuelle des revenus prévue aux articles 76 ou 126 du CGI Tome 1. La taxe immobilière constitue un acompte de l'IRPP. Dans le cas où les revenus fonciers sont inclus dans les bénéfices d'une entreprise industrielle, commerciale, artisanale ou agricole ou d'une profession non commerciale, la taxe est considérée comme charge déductible du bénéfice imposable. Lorsque l'immeuble productif des revenus locatifs est un bien indivis ou appartenant à une société civile immobilière, la taxe immobilière payée constitue une charge déductible pour la détermination du revenu net.",
+    "tome": "2",
+    "livre": "4",
+    "chapitre": "2",
+    "keywords": [
+      "duplicata",
+      "quittances",
+      "receveur",
+      "agent spécial",
+      "préposé du Trésor",
+      "déclaration annuelle",
+      "revenus",
+      "articles 76 ou 126",
+      "CGI Tome 1",
+      "taxe immobilière",
+      "acompte",
+      "IRPP",
+      "revenus fonciers",
+      "bénéfices",
+      "entreprise industrielle",
+      "entreprise commerciale",
+      "entreprise artisanale",
+      "entreprise agricole",
+      "profession non commerciale",
+      "charge déductible",
+      "bénéfice imposable",
+      "revenus locatifs",
+      "bien indivis",
+      "société civile immobilière",
+      "revenu net"
+    ],
+    "source": "tome2-livre4-chapitre2.json",
+    "statut": "en vigueur"
   },
   {
     "numero": "57",
@@ -12361,5 +11939,25 @@
       "valeur minimale"
     ],
     "source": "tome2-livre2-non-codifies.json"
+  },
+  {
+    "numero": "1 à 22",
+    "titre": "Impôt sur le revenu des valeurs mobilières — Abrogé",
+    "contenu": "Implicitement abrogés par la loi de finances pour 2026. NB - L'impôt sur le revenu des valeurs mobilières a été implicitement remplacé par l'impôt sur le revenu des capitaux mobiliers (IRCM) par la loi de finances pour 2026 : voir les articles 103 et suivants du CGI Tome 1.",
+    "tome": "2",
+    "livre": "3",
+    "chapitre": null,
+    "keywords": [
+      "abrogé",
+      "impôt sur le revenu des valeurs mobilières",
+      "IRVM",
+      "loi de finances 2026",
+      "IRCM",
+      "impôt sur le revenu des capitaux mobiliers",
+      "articles 103 et suivants",
+      "CGI Tome 1"
+    ],
+    "source": "tome2-livre3.json",
+    "statut": "abrogé"
   }
 ]

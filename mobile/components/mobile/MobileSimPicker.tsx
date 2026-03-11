@@ -20,6 +20,7 @@ const SIMULATEURS: {
   { id: "iba", titleKey: "simulateur.iba.title", subtitleKey: "simulateur.iba.subtitle", icon: "briefcase-outline", route: "/(app)/simulateur/iba" },
   { id: "ircm", titleKey: "simulateur.ircm.title", subtitleKey: "simulateur.ircm.subtitle", icon: "trending-up-outline", route: "/(app)/simulateur/ircm" },
   { id: "irf", titleKey: "simulateur.irfLoyers.title", subtitleKey: "simulateur.irfLoyers.subtitle", icon: "home-outline", route: "/(app)/simulateur/irf-loyers" },
+  { id: "taxeImmo", titleKey: "simulateur.taxeImmo.title", subtitleKey: "simulateur.taxeImmo.subtitle", icon: "business-outline", route: "/(app)/simulateur/taxe-immobiliere" },
   { id: "its", titleKey: "simulateur.its.title", subtitleKey: "simulateur.its.subtitle", icon: "people-outline", route: "/(app)/simulateur/its" },
   { id: "paie", titleKey: "simulateur.paie.title", subtitleKey: "simulateur.paie.subtitle", icon: "wallet-outline", route: "/(app)/simulateur/paie" },
   { id: "enreg", titleKey: "simulateur.enreg.title", subtitleKey: "simulateur.enreg.subtitle", icon: "document-text-outline", route: "/(app)/simulateur/enregistrement" },

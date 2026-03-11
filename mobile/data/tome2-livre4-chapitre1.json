@@ -20,12 +20,15 @@
         "Il est institué une taxe sur les loyers des propriétés bâties, égale à un douzième de loyers à échoir pendant l'année. La taxe sur les loyers s'applique également sur les propriétés non bâties à usage professionnel."
       ],
       "mots_cles": [
-        "taxe",
+        "taxe immobilière",
+        "taxe sur les loyers",
         "loyers",
         "propriétés bâties",
         "un douzième",
         "propriétés non bâties",
-        "usage professionnel"
+        "usage professionnel",
+        "institution",
+        "Livre 4"
       ],
       "statut": "en vigueur"
     },
@@ -34,11 +37,12 @@
       "titre": "Débiteurs de la taxe immobilière",
       "texte": [
         "La taxe est due par :",
-        "le propriétaire ou les usufruitiers ;",
-        "les locataires, en cas de sous-location, qu'il s'agisse des personnes physiques ou morales à l'exception des ambassades étrangères."
+        "• le propriétaire ou les usufruitiers ;",
+        "• les locataires, en cas de sous-location, qu'il s'agisse des personnes physiques ou morales à l'exception des ambassades étrangères."
       ],
       "mots_cles": [
-        "taxe",
+        "taxe immobilière",
+        "débiteurs",
         "propriétaire",
         "usufruitiers",
         "locataires",
@@ -56,9 +60,9 @@
         "La liquidation, le recouvrement de la taxe et le contentieux sont assurés comme en matière de droit d'enregistrement."
       ],
       "mots_cles": [
+        "taxe immobilière",
         "liquidation",
         "recouvrement",
-        "taxe",
         "contentieux",
         "droit d'enregistrement"
       ],
