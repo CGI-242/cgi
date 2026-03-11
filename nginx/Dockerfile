@@ -9,8 +9,9 @@ RUN addgroup -g 101 -S nginx 2>/dev/null || true && \
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY conf.d/ /etc/nginx/conf.d/
 COPY dist/ /var/www/cgi242/
+COPY normx-landing/ /var/www/normx-ai/
 
 # Permissions pour l'utilisateur nginx
-RUN chown -R nginx:nginx /var/www/cgi242
+RUN chown -R nginx:nginx /var/www/cgi242 /var/www/normx-ai
 
 USER nginx
