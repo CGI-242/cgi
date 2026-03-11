@@ -41,6 +41,9 @@ COPY prisma/ prisma/
 # Données statiques (articles CGI)
 COPY data/ data/
 
+# Dossier pour les factures PDF
+RUN mkdir -p /app/storage/invoices && chown -R node:node /app/storage
+
 # Sécurité : ne pas exécuter en root (H1)
 USER node
 
