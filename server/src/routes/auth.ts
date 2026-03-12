@@ -484,7 +484,7 @@ router.post("/verify-otp", validate({ body: verifyOtpBody }), async (req: Reques
  *         description: Erreur serveur
  */
 // POST /api/auth/send-otp-email
-router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBody }), verifyTurnstile, async (req: Request, res: Response) => {
+router.post("/send-otp-email", sensitiveLimiter, validate({ body: sendOtpEmailBody }), async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
 
