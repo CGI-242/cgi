@@ -23,7 +23,14 @@ const NODE_ICONS: { icon: keyof typeof Ionicons.glyphMap; color: string }[] = [
   { icon: "folder-open-outline", color: "#059669" },
 ];
 
-type CodeId = "cgi" | "social";
+type CodeId = "cgi" | "social" | "hydrocarbures" | "douanier";
+
+const CODE_LABELS: Record<CodeId, { label: string; icon: keyof typeof Ionicons.glyphMap }> = {
+  cgi: { label: "CGI 242", icon: "book-outline" },
+  social: { label: "Code Social", icon: "people-outline" },
+  hydrocarbures: { label: "Hydrocarbures", icon: "flame-outline" },
+  douanier: { label: "Code Douanier", icon: "shield-checkmark-outline" },
+};
 
 type Props = {
   sommaire: SommaireNode[];
@@ -598,46 +605,45 @@ export default function MobileCGIBrowser({ sommaire, activeCode = "cgi", onCodeC
       ) : (
         // Racine : sélecteur de code + liste des tomes
         <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
-          {/* Sélecteur de code */}
+          {/* Sélecteur de code — barre horizontale scrollable */}
           {onCodeChange && (
-            <View style={{ flexDirection: "row", marginBottom: 16, gap: 8 }}>
-              {(["cgi", "social"] as CodeId[]).map((code) => (
-                <TouchableOpacity
-                  key={code}
-                  onPress={() => { onCodeChange(code); setNavStack([]); setSelectedArticle(null); setSearch(""); }}
-                  style={{
-                    flex: 1,
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: activeCode === code ? colors.accent : colors.card,
-                    borderWidth: 1,
-                    borderColor: activeCode === code ? colors.accent : colors.border,
-                    borderRadius: 10,
-                    paddingVertical: 10,
-                    gap: 6,
-                  }}
-                >
-                  <Ionicons
-                    name={code === "cgi" ? "book-outline" : "people-outline"}
-                    size={16}
-                    color={activeCode === code ? "#fff" : colors.textMuted}
-                  />
-                  <Text style={{
-                    fontFamily: fonts.bold,
-                    fontWeight: fontWeights.bold,
-                    fontSize: 13,
-                    color: activeCode === code ? "#fff" : colors.text,
-                  }}>
-                    {t(`code.selector.${code}`)}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: 16 }} contentContainerStyle={{ gap: 8 }}>
+              {(Object.keys(CODE_LABELS) as CodeId[]).map((code) => {
+                const cfg = CODE_LABELS[code];
+                const isActive = activeCode === code;
+                return (
+                  <TouchableOpacity
+                    key={code}
+                    onPress={() => { onCodeChange(code); setNavStack([]); setSelectedArticle(null); setSearch(""); }}
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      backgroundColor: isActive ? colors.accent : colors.card,
+                      borderWidth: 1,
+                      borderColor: isActive ? colors.accent : colors.border,
+                      borderRadius: 10,
+                      paddingHorizontal: 14,
+                      paddingVertical: 10,
+                      gap: 6,
+                    }}
+                  >
+                    <Ionicons name={cfg.icon} size={16} color={isActive ? "#fff" : colors.textMuted} />
+                    <Text style={{
+                      fontFamily: fonts.bold,
+                      fontWeight: fontWeights.bold,
+                      fontSize: 13,
+                      color: isActive ? "#fff" : colors.text,
+                    }}>
+                      {cfg.label}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </ScrollView>
           )}
           {/* Titre */}
           <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 20, color: colors.text, marginBottom: 16 }}>
-            {activeCode === "cgi" ? t("code.fullTitle") : "Code du travail"}
+            {CODE_LABELS[activeCode || "cgi"]?.label || ""}
           </Text>
           {/* Liste des noeuds */}
           {sommaire.map((node, idx) => {
