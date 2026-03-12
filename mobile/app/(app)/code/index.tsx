@@ -67,7 +67,9 @@ export default function CodeCGI() {
     setSelectedArticle(null);
     setReaderNode(null);
     readerNodeRef.current = null;
-    setExpanded(code === "cgi" ? { tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true, tome2: true, tfnc: true } : {});
+    setExpanded(code === "cgi"
+      ? { tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true, tome2: true, tfnc: true }
+      : { "social-t1": true, "social-t2": true, "social-t3": true, "social-t4": true, "social-t5": true, "social-t6": true, "social-t7": true, "social-t8": true, "social-t9": true, "social-t10": true });
   }, []);
   const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
   const readerNodeRef = useRef<SommaireNode | null>(null);
@@ -143,7 +145,7 @@ export default function CodeCGI() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Barre de recherche */}
-      <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border, zIndex: 100 }}>
         {/* Sélecteur de code */}
         <TouchableOpacity
           onPress={() => setShowCodePicker(!showCodePicker)}
@@ -156,7 +158,7 @@ export default function CodeCGI() {
           <Ionicons name="chevron-down" size={16} color={colors.accent} style={{ marginLeft: 4 }} />
         </TouchableOpacity>
         {showCodePicker && (
-          <View style={{ position: "absolute", top: 48, left: 16, zIndex: 100, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 10, shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 8, elevation: 5 }}>
+          <View style={{ position: "absolute", top: 48, left: 16, zIndex: 9999, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 10, shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 8, elevation: 10, minWidth: 260 }}>
             {CODE_OPTIONS.map((opt) => (
               <TouchableOpacity
                 key={opt.id}
