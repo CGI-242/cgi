@@ -37,13 +37,14 @@ export default function LogoutScreen() {
           style={{
             width: 64,
             height: 64,
-            backgroundColor: colors.success,
+            borderRadius: 32,
+            backgroundColor: `${colors.primary}15`,
             alignItems: "center",
             justifyContent: "center",
             marginBottom: 20,
           }}
         >
-          <Ionicons name="checkmark" size={32} color={colors.sidebarText} />
+          <Ionicons name="log-out-outline" size={32} color={colors.primary} />
         </View>
 
         <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 8 }}>
