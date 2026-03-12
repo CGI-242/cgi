@@ -12,15 +12,7 @@ import ContentPanel from "@/components/code/ContentPanel";
 import ChapterReader from "@/components/code/ChapterReader";
 import MobileCGIBrowser from "@/components/code/MobileCGIBrowser";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-
-type CodeId = "cgi" | "social" | "hydrocarbures" | "douanier";
-
-const CODE_OPTIONS: { id: CodeId; icon: keyof typeof Ionicons.glyphMap; label: string; description: string }[] = [
-  { id: "cgi", icon: "book-outline", label: "Code Général des Impôts", description: "CGI 242 — Édition 2026" },
-  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale" },
-  { id: "hydrocarbures", icon: "flame-outline", label: "Code des Hydrocarbures", description: "Loi n°2024-28" },
-  { id: "douanier", icon: "shield-checkmark-outline", label: "Code Douanier", description: "CEMAC" },
-];
+import { useActiveCode } from "@/lib/context/ActiveCodeContext";
 
 const styles = StyleSheet.create({
   sommaire: { borderRightWidth: 1 },
@@ -40,9 +32,7 @@ export default function CodeCGI() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const { isMobile, isTablet } = useResponsive();
-
-  const [activeCode, setActiveCode] = useState<CodeId>("cgi");
-  const [showCodePicker, setShowCodePicker] = useState(false);
+  const { activeCode } = useActiveCode();
 
   const sommaire = useMemo(() => {
     if (activeCode === "social") return getSocialSommaire();
@@ -50,7 +40,6 @@ export default function CodeCGI() {
     return getSommaire();
   }, [activeCode]);
 
-  // Tous les hooks doivent être avant le return conditionnel
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("");
   const [selectedNode, setSelectedNode] = useState<SommaireNode | null>(null);
@@ -61,23 +50,6 @@ export default function CodeCGI() {
     tfnc: true,
   });
 
-  const handleCodeChange = useCallback((code: CodeId) => {
-    setActiveCode(code);
-    setShowCodePicker(false);
-    setSearch("");
-    setSelected("");
-    setSelectedNode(null);
-    setSelectedArticle(null);
-    setReaderNode(null);
-    readerNodeRef.current = null;
-    const defaultExpanded: Record<CodeId, Record<string, boolean>> = {
-      cgi: { tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true, tome2: true, tfnc: true },
-      social: { "social-t1": true, "social-t2": true, "social-t3": true, "social-t4": true, "social-t5": true },
-      hydrocarbures: {},
-      douanier: {},
-    };
-    setExpanded(defaultExpanded[code] || {});
-  }, []);
   const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
   const readerNodeRef = useRef<SommaireNode | null>(null);
   const [scrollToId, setScrollToId] = useState<string | undefined>();
@@ -85,18 +57,10 @@ export default function CodeCGI() {
   const debouncedSearch = useDebounce(search, 300);
   const searchResults = useMemo(() => searchArticles(debouncedSearch), [debouncedSearch]);
 
-  // Sur mobile : affichage plein écran avec navigation par cards
   if (isMobile) {
-    return (
-      <MobileCGIBrowser
-        sommaire={sommaire}
-        activeCode={activeCode}
-        onCodeChange={handleCodeChange}
-      />
-    );
+    return <MobileCGIBrowser sommaire={sommaire} />;
   }
 
-  // Desktop/Tablet : split sommaire/contenu (plus large sur desktop)
   const sommaireWidth = isTablet ? "38%" : "32%";
   const contentWidth = isTablet ? "62%" : "68%";
 
@@ -111,21 +75,18 @@ export default function CodeCGI() {
 
     const hasChildren = node.children && node.children.length > 0;
 
-    // Si on reclique sur le noeud déjà affiché → remonter en haut
     if (readerNodeRef.current && readerNodeRef.current.id === node.id) {
       setScrollToId("__top__");
       setScrollTrigger((n) => n + 1);
       return;
     }
 
-    // Si mode livre actif et le noeud cliqué est un descendant → scroll vers lui
     if (readerNodeRef.current && isDescendant(readerNodeRef.current, node.id)) {
       setScrollToId(node.id);
       setScrollTrigger((n) => n + 1);
       return;
     }
 
-    // Noeud avec enfants → mode livre
     if (hasChildren) {
       readerNodeRef.current = node;
       setReaderNode(node);
@@ -152,42 +113,7 @@ export default function CodeCGI() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Barre de recherche */}
-      <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border, zIndex: 100 }}>
-        {/* Sélecteur de code */}
-        <TouchableOpacity
-          onPress={() => setShowCodePicker(!showCodePicker)}
-          style={{ flexDirection: "row", alignItems: "center", marginRight: 16, backgroundColor: colors.input, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6 }}
-        >
-          <Ionicons name={CODE_OPTIONS.find(c => c.id === activeCode)?.icon || "book-outline"} size={18} color={colors.accent} />
-          <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 15, marginLeft: 6 }}>
-            {CODE_OPTIONS.find(c => c.id === activeCode)?.label || "CGI"}
-          </Text>
-          <Ionicons name="chevron-down" size={16} color={colors.accent} style={{ marginLeft: 4 }} />
-        </TouchableOpacity>
-        {showCodePicker && (
-          <View style={{ position: "absolute", top: 48, left: 16, zIndex: 9999, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 12, shadowColor: "#000", shadowOpacity: 0.2, shadowRadius: 12, elevation: 10, minWidth: 300, padding: 6 }}>
-            {CODE_OPTIONS.map((opt) => (
-              <TouchableOpacity
-                key={opt.id}
-                onPress={() => handleCodeChange(opt.id)}
-                style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 10, backgroundColor: opt.id === activeCode ? colors.input : "transparent", borderRadius: 10, marginBottom: 2 }}
-              >
-                <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: opt.id === activeCode ? colors.accent + "20" : colors.input, alignItems: "center", justifyContent: "center" }}>
-                  <Ionicons name={opt.icon} size={18} color={opt.id === activeCode ? colors.accent : colors.textMuted} />
-                </View>
-                <View style={{ marginLeft: 10, flex: 1 }}>
-                  <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: opt.id === activeCode ? colors.accent : colors.text }}>
-                    {opt.label}
-                  </Text>
-                  <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 1 }}>
-                    {opt.description}
-                  </Text>
-                </View>
-                {opt.id === activeCode && <Ionicons name="checkmark" size={16} color={colors.accent} />}
-              </TouchableOpacity>
-            ))}
-          </View>
-        )}
+      <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
         <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 6 }}>
           <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
@@ -215,10 +141,10 @@ export default function CodeCGI() {
           <View style={{ paddingVertical: 8 }}>
             <View style={{ paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4 }}>
               <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                {CODE_OPTIONS.find(c => c.id === activeCode)?.label || ""}
+                {activeCode === "cgi" ? t("code.edition") : activeCode === "social" ? "Code Social" : activeCode === "hydrocarbures" ? "Code des Hydrocarbures" : "Code Douanier"}
               </Text>
               <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
-                {CODE_OPTIONS.find(c => c.id === activeCode)?.description || ""}
+                {activeCode === "cgi" ? t("code.fullTitle") : activeCode === "social" ? "Travail & Sécurité sociale" : activeCode === "hydrocarbures" ? "Loi n°2024-28" : "CEMAC"}
               </Text>
             </View>
             <View style={[styles.separator, { backgroundColor: colors.border }]} />

@@ -19,6 +19,7 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 import NotificationBell from "@/components/mobile/NotificationBell";
+import { ActiveCodeProvider } from "@/lib/context/ActiveCodeContext";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -224,6 +225,7 @@ export default function AppLayout() {
   // ══════════════════════════════════════════════
   if (isMobile) {
     return (
+      <ActiveCodeProvider>
       <View style={{ flex: 1, backgroundColor: colors.background }}>
         <MobileHeader
           title={getMobileTitle()}
@@ -258,6 +260,7 @@ export default function AppLayout() {
         <MobileTabBar active={getActiveTab()} onTabPress={handleMobileTabPress} />
         <SessionExpiredModal />
       </View>
+      </ActiveCodeProvider>
     );
   }
 
@@ -265,6 +268,7 @@ export default function AppLayout() {
   // Sur desktop/tablet : Sidebar + Header + Stack
   // ══════════════════════════════════════════════
   return (
+    <ActiveCodeProvider>
     <View style={{ flex: 1, flexDirection: "row" }}>
       <Sidebar
         collapsed={sidebarCollapsed}
@@ -363,5 +367,6 @@ export default function AppLayout() {
       <FloatingCalculator />
       <SessionExpiredModal />
     </View>
+    </ActiveCodeProvider>
   );
 }

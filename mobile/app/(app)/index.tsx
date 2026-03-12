@@ -8,6 +8,15 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import HomeCards from "@/components/mobile/HomeCards";
 import { getEcheancesDuMois, getNomMois, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
+import { useActiveCode, type CodeId } from "@/lib/context/ActiveCodeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
+
+const CODE_CARDS: { id: CodeId; icon: keyof typeof Ionicons.glyphMap; label: string; description: string; color: string; available: boolean }[] = [
+  { id: "cgi", icon: "book-outline", label: "Code Général des Impôts", description: "CGI 242 — Édition 2026", color: "#00815d", available: true },
+  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale", color: "#4f46e5", available: true },
+  { id: "hydrocarbures", icon: "flame-outline", label: "Code des Hydrocarbures", description: "Loi n°2024-28", color: "#d97706", available: false },
+  { id: "douanier", icon: "shield-checkmark-outline", label: "Code Douanier", description: "CEMAC", color: "#9333ea", available: false },
+];
 
 function getGreeting(t: (key: string) => string) {
   const h = new Date().getHours();
@@ -29,6 +38,12 @@ export default function Dashboard() {
   const user = useAuthStore((s) => s.user);
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const { setActiveCode } = useActiveCode();
+
+  const handleCodeSelect = (code: CodeId) => {
+    setActiveCode(code);
+    router.push("/(app)/code" as Href);
+  };
 
   // Échéances du mois en cours — dynamique
   const now = new Date();
@@ -119,6 +134,45 @@ export default function Dashboard() {
                   <Text style={{ fontSize: 14, color: colors.textSecondary }}>{t(s.labelKey)}</Text>
                 </View>
               </View>
+            ))}
+          </View>
+        </View>
+
+        {/* Codes juridiques */}
+        <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
+          <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginBottom: 10 }}>
+            Codes & Législation
+          </Text>
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+            {CODE_CARDS.map((c) => (
+              <TouchableOpacity
+                key={c.id}
+                onPress={() => c.available && handleCodeSelect(c.id)}
+                disabled={!c.available}
+                style={{
+                  flex: 1,
+                  minWidth: "45%",
+                  backgroundColor: colors.card,
+                  borderWidth: 1,
+                  borderColor: colors.border,
+                  borderRadius: 14,
+                  padding: 14,
+                  opacity: c.available ? 1 : 0.5,
+                }}
+              >
+                <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${c.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 10 }}>
+                  <Ionicons name={c.icon} size={20} color={c.color} />
+                </View>
+                <Text style={{ fontSize: 14, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }} numberOfLines={2}>
+                  {c.label}
+                </Text>
+                <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>{c.description}</Text>
+                {!c.available && (
+                  <View style={{ backgroundColor: colors.background, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 8, alignSelf: "flex-start", marginTop: 6 }}>
+                    <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted }}>Bientôt</Text>
+                  </View>
+                )}
+              </TouchableOpacity>
             ))}
           </View>
         </View>
