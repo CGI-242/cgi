@@ -23,7 +23,7 @@
         "3) Les entreprises d'un État membre, dont le capital est en totalité ou en partie, directement ou indirectement, détenu ou contrôlé par un ou plusieurs résidents de l'un des autres États membres, ne sont soumises dans le premier État membre à une imposition ou obligation y relative, qui est autre ou plus lourde que celle à laquelle sont ou pourront être assujetties les autres entreprises de même nature de ce premier État.",
         "4) Les dispositions de la présente Convention ne doivent pas faire obstacle à l'application des dispositions fiscales plus favorables prévues par la législation de chacun des États membres en faveur des investissements."
       ],
-      "mots_cles": [],
+      "mots_cles": ["non-discrimination", "nationaux", "égalité de traitement", "établissement stable", "investissements", "abattements"],
       "statut": "en vigueur"
     },
     {
@@ -41,7 +41,7 @@
         "b) les autorités compétentes ne parviennent pas à un accord permettant de résoudre ce cas en vertu du paragraphe 3,",
         "les questions non résolues soulevées par ce cas doivent être soumises à la Commission de la CEMAC pour décision. Si le désaccord persiste, l'affaire est portée devant la Cour de Justice Communautaire."
       ],
-      "mots_cles": [],
+      "mots_cles": ["procédure amiable", "réclamation", "accord amiable", "double imposition", "commission mixte", "Cour de Justice Communautaire"],
       "statut": "en vigueur"
     },
     {
@@ -73,7 +73,7 @@
         "12) À la demande de l'autorité compétente de l'un des États membres, deux ou plusieurs autorités compétentes des États membres peuvent se concerter en vue de déterminer les cas et les procédures de contrôles fiscaux simultanés. Chaque autorité compétente concernée décide d'elle seule si elle souhaite ou non participer à un contrôle fiscal simultané.",
         "Celui-ci désigne un arrangement entre deux ou plusieurs États membres d'examiner simultanément, chacun sur son propre territoire, le dossier fiscal d'une ou de plusieurs personnes lorsqu'ils ont un intérêt commun ou complémentaire à le faire, en vue de l'échange de toute information pertinente qu'ils peuvent ainsi obtenir."
       ],
-      "mots_cles": [],
+      "mots_cles": ["échange de renseignements", "échange automatique", "échange spontané", "contrôle fiscal", "secret bancaire", "assistance administrative", "coopération fiscale"],
       "statut": "en vigueur"
     },
     {
@@ -98,7 +98,7 @@
         "c) de prêter assistance si l'autre État membre n'a pas pris toutes les mesures raisonnables de recouvrement ou de conservation, selon le cas, qui sont disponibles en vertu de sa législation ou de sa pratique administrative ;",
         "d) de prêter assistance dans les cas où la charge administrative qui en résulte pour cet État est nettement disproportionnée par rapport aux avantages qui peuvent en être tirés par l'autre État membre."
       ],
-      "mots_cles": [],
+      "mots_cles": ["assistance au recouvrement", "créance fiscale", "mesures conservatoires", "recouvrement", "pénalités", "coopération fiscale"],
       "statut": "en vigueur"
     },
     {
@@ -107,7 +107,7 @@
       "texte": [
         "Nonobstant toute disposition de la présente Convention, un avantage au titre de la Convention ne sera pas accordé au titre d'un élément de revenus s'il est raisonnable de conclure, compte tenu de l'ensemble des faits et circonstances propres à la situation, que l'octroi de cet avantage était l'un des objets principaux d'un montage ou d'une transaction ayant permis, directement ou indirectement, de l'obtenir, à moins qu'il soit établi que l'octroi de cet avantage dans ces circonstances, serait conforme à l'objet et au but des dispositions pertinentes de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": ["droit aux avantages", "abus de convention", "montage", "objet principal", "anti-abus", "treaty shopping"],
       "statut": "en vigueur"
     },
     {
@@ -116,7 +116,7 @@
       "texte": [
         "Les dispositions de la présente Convention ne portent pas atteinte aux privilèges fiscaux dont bénéficient les agents diplomatiques, consulaires et assimilés en vertu, soit des règles générales du droit international, soit des dispositions d'accords particuliers."
       ],
-      "mots_cles": [],
+      "mots_cles": ["agents diplomatiques", "consulaires", "privilèges fiscaux", "droit international", "immunités"],
       "statut": "en vigueur"
     }
   ]

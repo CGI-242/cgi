@@ -22,7 +22,16 @@
         "3) Les dispositions du paragraphe 1 du présent article s'appliquent aux revenus provenant de l'exploitation directe, de la location ou de l'affermage, ainsi que toute autre forme d'exploitation de biens immobiliers.",
         "4) Les dispositions des paragraphes 1 et 3 du présent article s'appliquent également aux revenus provenant des biens immobiliers d'une entreprise ainsi qu'aux revenus de biens immobiliers servant à l'exercice d'une profession indépendante."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "revenus immobiliers",
+        "biens immobiliers",
+        "propriété foncière",
+        "usufruit",
+        "location",
+        "affermage",
+        "exploitation agricole",
+        "ressources naturelles"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -39,7 +48,15 @@
         "5) Aux fins des paragraphes précédents du présent article, les bénéfices à imputer à l'établissement stable sont déterminés chaque année selon la même méthode, à moins qu'il n'existe des motifs valables et suffisants de procéder autrement.",
         "6) Lorsque les bénéfices comprennent des éléments de revenus traités séparément dans d'autres articles de la présente Convention, les dispositions desdits articles ne sont pas affectées par celles du présent article."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "bénéfices des entreprises",
+        "établissement stable",
+        "déduction",
+        "frais généraux",
+        "répartition des bénéfices",
+        "entreprise distincte",
+        "prix de transfert"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -49,7 +66,13 @@
         "1) Les bénéfices d'une entreprise d'un État membre provenant de l'exploitation, en trafic international, de navires ou d'aéronefs ne sont imposables que dans cet État membre.",
         "2) Les dispositions des paragraphes 1 et 2 du présent article s'appliquent aussi aux bénéfices provenant de la participation à une exploitation en commun ou un organisme international d'exploitation."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "trafic international",
+        "navires",
+        "aéronefs",
+        "transport",
+        "exploitation en commun"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -64,7 +87,16 @@
         "Pour déterminer cet ajustement, il est tenu compte des autres dispositions de la présente Convention et, si c'est nécessaire, les autorités compétentes des États membres se consultent.",
         "3) Les dispositions du paragraphe 2 ne s'appliquent pas lorsque des procédures judiciaires, administratives ou d'autres procédures légales ont abouti à une décision définitive et qu'à la suite d'actions donnant lieu à un ajustement des bénéfices en vertu du paragraphe 1, l'une des entreprises concernées est soumise à des pénalités pour fraude, faute lourde ou omission volontaire."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "entreprises associées",
+        "prix de transfert",
+        "pleine concurrence",
+        "ajustement",
+        "bénéfices",
+        "relations commerciales",
+        "fraude",
+        "pénalités"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -77,11 +109,23 @@
         "b) 10 % du montant brut des dividendes, dans tous les autres cas.",
         "Les autorités compétentes des États membres règlent d'un commun accord les modalités d'application de ces limitations.",
         "Le présent paragraphe n'affecte pas l'imposition de la société au titre des bénéfices qui servent au paiement des dividendes.",
-        "3) Le terme « dividendes » employé dans le présent article désigne les revenus provenant d'actions, actions ou bons de jouissance, parts de mine, parts de fondateur ou autres parts bénéficiaires à l'exception de créances, ainsi que les revenus soumis au même régime fiscal que les revenus d'actions par la législation fiscale de l'État dont la société distributrice est un résident.",
+        "3) Le terme « dividendes » employé dans le présent article désigne les revenus provenant d'actions, actions ou bons de jouissance, parts de mine, parts de fondateur ou autres parts bénéficiaires à l'exception des créances, ainsi que les revenus soumis au même régime fiscal que les revenus d'actions par la législation fiscale de l'État dont la société distributrice est un résident.",
         "4) Les dispositions des paragraphes 1 et 2 ne s'appliquent pas lorsque le bénéficiaire effectif des dividendes, résident d'un État membre, exerce, dans un autre État membre dont la société qui paie les dividendes est un résident, soit une activité industrielle ou commerciale par l'intermédiaire d'un établissement stable qui y est situé, soit une profession indépendante au moyen d'une base fixe qui y est située, et que la participation génératrice des dividendes s'y rattache effectivement. Dans ces cas, les dispositions de l'article 7 (Bénéfices des entreprises) et l'article 14 (Professions indépendantes), suivant le cas, sont applicables.",
         "5) Lorsqu'une société qui est résident d'un État membre tire des bénéfices ou des revenus d'un autre État membre, cet autre État ne peut percevoir aucun impôt sur les dividendes payés par la société, sauf dans la mesure où ces dividendes sont payés à un résident de cet autre État ou dans la mesure où la participation génératrice des dividendes se rattache effectivement à un établissement stable ou à une base fixe situés dans cet autre État, ni prélever aucun impôt, au titre de l'imposition des bénéfices non distribués, sur les bénéfices non distribués de la société, même si les dividendes payés ou les bénéfices non distribués consistent en tout ou en partie en bénéfices ou revenus provenant de cet autre État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "dividendes",
+        "actions",
+        "parts sociales",
+        "bénéficiaire effectif",
+        "retenue à la source",
+        "5 %",
+        "10 %",
+        "participation",
+        "bénéfices non distribués",
+        "établissement stable",
+        "base fixe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -91,14 +135,25 @@
         "1) Les intérêts provenant d'un État membre et payés à un résident d'un autre État membre ne sont imposables que dans cet autre État.",
         "2) Toutefois, ces intérêts sont aussi imposables dans l'État membre d'où ils proviennent et selon la législation de cet État, mais si le bénéficiaire effectif des intérêts est un résident de l'autre État membre, l'impôt ainsi établi ne peut excéder 10 % du montant brut des intérêts.",
         "Les autorités compétentes des États membres règlent d'un commun accord les modalités d'application de cette limitation.",
-        "3) Le terme « intérêts » employé dans le présent article désigne les revenus de créances de toute nature, assorties ou non de garanties hypothécaires ou d'une clause de participation aux bénéfices du débiteur, et notamment les revenus des fonds publics et des obligations d'emprunts, y compris les primes et lots attachés à ces titres. Les pénalisations pour paiement tardif ne sont pas considérées comme des intérêts au sens du présent article.",
+        "3) Le terme « intérêts » employé dans le présent article désigne les revenus des créances de toute nature, assorties ou non de garanties hypothécaires ou d'une clause de participation aux bénéfices du débiteur, et notamment les revenus des fonds publics et des obligations d'emprunts, y compris les primes et lots attachés à ces titres. Les pénalisations pour paiement tardif ne sont pas considérées comme des intérêts au sens du présent article.",
         "4) Les dispositions des paragraphes 1 et 2 ne s'appliquent pas lorsque le bénéficiaire effectif des intérêts, résident d'un État membre, exerce dans l'autre État membre d'où proviennent les intérêts, soit une activité d'entreprise par l'intermédiaire d'un établissement stable qui y est situé, soit une profession indépendante au moyen d'une base fixe qui y est située, et que la créance génératrice des intérêts se rattache effectivement à l'établissement stable ou à la base fixe en question. Dans ces cas, les dispositions de l'article 7 (Bénéfices des entreprises) ou de l'article 14 (Professions indépendantes), suivant le cas, sont applicables.",
         "5) Les intérêts sont considérés comme provenant d'un État membre lorsque le débiteur est un résident de cet État.",
         "Toutefois lorsque le débiteur des intérêts, qu'il soit ou non un résident d'un État membre, a, dans un autre État membre, un établissement stable ou une base fixe pour lequel ou laquelle la dette donnant lieu au paiement des intérêts a été contractée et qui supporte la charge de ces intérêts, ceux-ci sont considérés comme provenant de l'État où l'établissement stable, ou la base fixe, est situé(e).",
         "6) Lorsque, en raison de relations spéciales existant entre le débiteur et le bénéficiaire effectif ou que l'un et l'autre entretiennent avec de tierces personnes, le montant des intérêts, compte tenu de la créance pour laquelle ils sont payés, excède celui dont seraient convenus le débiteur et le bénéficiaire effectif en l'absence de pareilles relations, les dispositions du présent article ne s'appliquent qu'à ce dernier montant.",
         "Dans ce cas, la partie excédentaire des paiements reste imposable selon la législation de chaque État membre et compte tenu des autres dispositions de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "intérêts",
+        "créances",
+        "obligations",
+        "emprunts",
+        "garanties hypothécaires",
+        "bénéficiaire effectif",
+        "10 %",
+        "retenue à la source",
+        "établissement stable",
+        "base fixe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -117,11 +172,23 @@
         "4) Les dispositions du paragraphe 1 du présent article ne s'appliquent pas lorsque le bénéficiaire effectif des redevances, résident d'un État membre, exerce dans l'autre État membre d'où proviennent les redevances, soit une activité d'entreprise par l'intermédiaire d'un établissement stable qui y est situé, soit une profession indépendante au moyen d'une base fixe qui y est située, et que le bien ou le droit générateur des redevances s'y rattache effectivement.",
         "Dans ces cas, les dispositions de l'article 7 (Bénéfices des entreprises) de la présente Convention ou de l'article 14 (Professions indépendantes), selon le cas, sont applicables.",
         "5) Les redevances sont considérées comme provenant d'un État membre lorsque le débiteur est un résident de cet État.",
-        "Toutefois, lorsque le débiteur des redevances, qu'il soit ou non un résident d'un État membre, a, dans un État membre, un établissement stable ou une base fixe pour lequel ou laquelle la dette donnant lieu au paiement des redevances a été contractée et qui supporte la charge de ces redevances, celles-ci sont réputées provenir de l'État membre où est situé(e) l'établissement stable ou la base fixe.",
+        "Toutefois, lorsque le débiteur des redevances, qu'il soit ou non un résident d'un État membre, a, dans un État membre, un établissement stable ou une base fixe pour lequel ou laquelle le contrat donnant lieu au paiement des redevances a été conclu et qui supporte la charge de ces redevances, celles-ci sont réputées provenir de l'État membre où est situé(e) l'établissement stable ou la base fixe.",
         "6) Lorsque, en raison de relations spéciales existant entre le débiteur et le bénéficiaire effectif ou que l'un et l'autre entretiennent avec des tierces personnes, le montant des redevances, compte tenu de la prestation pour laquelle elles sont payées, excède celui dont seraient convenus le débiteur et le bénéficiaire effectif en l'absence de pareilles relations, les dispositions du présent article ne s'appliquent qu'à ce dernier montant.",
         "Dans ce cas, la partie excédentaire des paiements reste imposable selon la législation de chaque État membre et compte tenu des autres dispositions de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "redevances",
+        "droit d'auteur",
+        "brevet",
+        "marque",
+        "licence",
+        "procédé secret",
+        "prestations de services",
+        "propriété intellectuelle",
+        "10 %",
+        "bénéficiaire effectif",
+        "établissement stable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -138,7 +205,16 @@
         "6) Lorsque, en raison de relations spéciales existant entre le débiteur et le bénéficiaire effectif ou que l'un et l'autre entretiennent avec des tierces personnes, le montant des rémunérations pour services techniques excède, pour une raison quelconque, celui dont seraient convenus le débiteur et le bénéficiaire effectif en l'absence de pareilles relations, les dispositions du présent article ne s'appliquent qu'à ce dernier montant.",
         "Dans ce cas, la partie excédentaire des paiements reste imposable selon la législation de chaque État contractant et compte tenu des autres dispositions de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "services techniques",
+        "assistance technique",
+        "conseil",
+        "direction",
+        "10 %",
+        "retenue à la source",
+        "établissement stable",
+        "bénéficiaire effectif"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -152,7 +228,19 @@
         "5) Les gains réalisés par un résident d'un État membre provenant de l'aliénation d'actions ou de parts sociales autres que celles mentionnées au paragraphe 4 et représentant une participation de 5 % au moins dans une société résidente d'un autre État membre peuvent être imposés par cet autre État. L'impôt ainsi établi ne peut excéder 10 % du montant des gains.",
         "6) Les gains provenant de l'aliénation de tous biens autres que ceux visés aux paragraphes 1 à 5 du présent article ne sont imposables que dans l'État membre dont le cédant est un résident."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "gains en capital",
+        "plus-values",
+        "aliénation",
+        "biens immobiliers",
+        "biens mobiliers",
+        "actions",
+        "parts sociales",
+        "participation",
+        "50 %",
+        "10 %",
+        "établissement stable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -164,7 +252,17 @@
         "b) si son séjour dans l'autre État membre s'étend sur une période ou des périodes d'une durée totale égale ou supérieure à 183 jours commençant ou s'achevant pendant l'année fiscale considérée ; en ce cas, seule la fraction des revenus qui est tirée des activités exercées dans cet autre État est imposable dans cet autre État.",
         "2) L'expression « profession libérale » comprend notamment les activités indépendantes d'ordre scientifique, littéraire, artistique, éducatif ou pédagogique, notamment les activités indépendantes de médecin, avocat, notaire, ingénieur, architecte, dentiste, conseiller fiscal et comptable."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professions indépendantes",
+        "profession libérale",
+        "base fixe",
+        "183 jours",
+        "médecin",
+        "avocat",
+        "ingénieur",
+        "architecte",
+        "comptable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -178,7 +276,18 @@
         "c) la charge des rémunérations n'est pas supportée par un établissement stable ou une base fixe que l'employeur a dans cet autre État.",
         "3) Nonobstant les dispositions précédentes du présent article, les rémunérations reçues par un résident d'un État membre au titre d'un emploi salarié, en tant que membre régulier du personnel d'un navire ou aéronef, exercé à bord d'un navire ou d'un aéronef exploité en trafic international, autre qu'un navire ou aéronef exploité uniquement à l'intérieur d'un État membre, ne sont imposables que dans le premier État membre."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professions dépendantes",
+        "salaires",
+        "traitements",
+        "emploi salarié",
+        "183 jours",
+        "employeur",
+        "établissement stable",
+        "trafic international",
+        "équipage",
+        "base fixe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -188,7 +297,14 @@
         "1) Les indemnités de fonction et autres rétributions similaires qu'un résident d'un État membre reçoit en sa qualité de membre de conseil d'administration ou de surveillance ou d'un organe analogue d'une société qui est un résident d'un des autres États membres sont imposables dans cet autre État.",
         "2) Les traitements, salaires et autres rémunérations payés à un résident d'un État membre en sa qualité de dirigeant occupant un poste de direction de haut niveau dans une société résidente d'un autre État membre sont imposables dans cet autre État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "tantièmes",
+        "conseil d'administration",
+        "dirigeant",
+        "direction de haut niveau",
+        "rémunérations",
+        "indemnités de fonction"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -199,7 +315,17 @@
         "2) Lorsque les revenus d'activités qu'un artiste du spectacle ou un sportif exerce personnellement et en cette qualité sont attribués non pas à l'artiste ou au sportif lui-même mais à une autre personne, ces revenus sont imposables, nonobstant les articles 7 (Bénéfices des entreprises), 15 (Professions indépendantes) et 16 (Professions dépendantes) de la présente Convention, dans l'État membre où les activités de l'artiste ou du sportif sont exercées.",
         "3) Nonobstant les dispositions des paragraphes 1 et 2 du présent article, les revenus d'activités mentionnées au paragraphe 1 dans le cadre d'un programme d'échanges culturels ou sportifs approuvé et financé en totalité ou en partie par les gouvernements des États membres et qui ne sont pas exercées dans un but lucratif, sont exonérés d'impôts dans l'État membre où ces activités sont exercées."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "artistes",
+        "sportifs",
+        "spectacle",
+        "musicien",
+        "théâtre",
+        "cinéma",
+        "télévision",
+        "échanges culturels",
+        "exonération"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -211,7 +337,14 @@
         "3) Les pensions, rentes viagères et autres versements périodiques ou occasionnels effectués par un État membre, l'une de ses subdivisions politiques ou collectivités locales pour assurer les accidents personnels, ne sont imposables que dans cet État.",
         "4) Nonobstant les dispositions du paragraphe 1, les pensions et autres sommes payées en application de la législation sur la sécurité sociale d'un État membre ou de l'une de ses subdivisions politiques ou collectivités locales ne sont imposables que dans cet État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "pensions",
+        "rentes viagères",
+        "sécurité sociale",
+        "retraite",
+        "emploi antérieur",
+        "accidents personnels"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -226,7 +359,14 @@
         "4) Toutefois, ces pensions ne sont imposables dans l'autre État membre si la personne physique est un résident de cet autre État et en possède la nationalité.",
         "Les dispositions des articles 15 (Professions indépendantes), 16 (Professions dépendantes), 17 (Tantièmes et rémunérations du personnel de direction de haut niveau), 18 (Artistes et sportifs) et 19 (Pensions, rentes viagères et prestations de sécurité sociale) s'appliquent aux salaires, traitements et autres rémunérations similaires, ainsi qu'aux pensions, rentes viagères et autres rémunérations similaires, payés au titre de services rendus dans le cadre d'une activité industrielle ou commerciale exercée par un État membre ou l'une de ses subdivisions politiques ou collectivités locales."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "fonction publique",
+        "fonctionnaires",
+        "services rendus à l'État",
+        "subdivisions politiques",
+        "collectivités locales",
+        "pensions publiques"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -236,7 +376,16 @@
         "1) Les sommes qu'un étudiant, un stagiaire ou un apprenti qui est ou qui était immédiatement avant de venir séjourner dans un État membre, un résident d'un autre État membre et qui séjourne dans le premier État, à seule fin d'y poursuivre ses études ou sa formation, reçoit pour couvrir ses frais d'entretien, d'études ou de formation, ne sont pas imposables dans le premier État, à condition qu'elles proviennent de sources situées en dehors de cet État.",
         "2) En ce qui concerne les bourses et les rémunérations d'emploi salarié auxquelles ne s'applique pas le paragraphe 1, un étudiant, un stagiaire ou un apprenti aura en outre, pendant la durée de ses études ou de cette formation, le droit de bénéficier des mêmes exonérations, dégrèvements ou réductions d'impôts que les résidents de l'État dans lequel il séjourne."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "étudiants",
+        "stagiaires",
+        "apprentis",
+        "bourses",
+        "frais d'entretien",
+        "études",
+        "formation",
+        "exonération"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -246,7 +395,16 @@
         "1) Les dispositions des articles 15 (Professions indépendantes) et 16 (Professions dépendantes), toute personne physique qui se rend dans un État membre à l'invitation de cet État, d'une université, d'un établissement d'enseignement ou de toute autre institution culturelle sans but lucratif, ou dans le cadre d'un programme d'échanges culturels, pour une période n'excédant pas deux ans à seule fin d'enseigner, de donner des conférences ou de mener des travaux de recherche dans cette institution et qui est ou était un résident de l'autre État membre juste avant ce séjour, est exemptée de l'impôt dans le premier État membre sur la rémunération qu'elle reçoit pour cette activité, à condition que cette rémunération provienne de sources situées en dehors de cet État.",
         "2) Les dispositions du paragraphe 1 ne s'appliquent pas aux rémunérations reçues au titre de travaux de recherche entrepris non pas dans l'intérêt public, mais principalement en vue de la réalisation d'un avantage particulier bénéficiant à une ou à des personnes déterminées."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professeurs",
+        "chercheurs",
+        "enseignement",
+        "recherche",
+        "université",
+        "échanges culturels",
+        "deux ans",
+        "exonération"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -258,7 +416,13 @@
         "Dans ce cas, les dispositions de l'article 7 (Bénéfices des entreprises) ou de l'article 15 (Professions indépendantes) de la présente Convention, suivant le cas, sont applicables.",
         "3) Nonobstant les dispositions des paragraphes 1 et 2, les éléments du revenu d'un résident d'un État membre qui ne sont pas traités dans les articles précédents de la présente Convention et qui proviennent de l'autre État membre sont aussi imposables dans cet autre État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "autres revenus",
+        "revenus non traités",
+        "établissement stable",
+        "base fixe",
+        "clause balai"
+      ],
       "statut": "en vigueur"
     }
   ]

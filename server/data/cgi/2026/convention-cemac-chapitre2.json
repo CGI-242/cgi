@@ -30,7 +30,17 @@
         "j) le terme « commission » désigne la Commission de la CEMAC.",
         "2) Pour l'application de la présente Convention, à un moment donné par un État membre, un terme ou toute expression qui n'y est pas défini, sauf si le contexte exige une interprétation différente, le sens qui lui attribue, à ce moment, le droit de cet État concernant les impôts auxquels s'applique la présente convention, le sens attribué à ce terme ou à cette expression par le droit fiscal de cet État prévalant sur le sens que lui attribuent les autres branches du droit de cet État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "définitions",
+        "État membre",
+        "personne",
+        "société",
+        "entreprise",
+        "national",
+        "trafic international",
+        "autorité compétente",
+        "commission CEMAC"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -54,7 +64,16 @@
         "Les États membres informent la Commission des termes dudit accord et la Commission prend les mesures qu'elle juge nécessaires pour harmoniser les règles retenues pour de telles situations.",
         "En l'absence d'un tel accord entre les États membres, cette personne ne pourra prétendre au bénéfice des dispositions de la présente Convention, sauf dans la mesure et selon les modalités arrêtées par les autorités compétentes des États membres."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "résident",
+        "domicile",
+        "résidence",
+        "siège social",
+        "foyer d'habitation",
+        "centre des intérêts vitaux",
+        "nationalité",
+        "double résidence"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -87,7 +106,19 @@
         "Toutefois, lorsque les activités d'un tel intermédiaire sont exercées exclusivement ou presque exclusivement pour le compte de cette entreprise, et que sont convenues ou imposées entre cette entreprise et cet agent, dans leurs relations commerciales et financières, des conditions qui diffèrent de celles qui auraient été convenues entre entreprises indépendantes, il n'est pas considéré comme un agent indépendant au sens du présent paragraphe.",
         "8) Le fait qu'une société qui est un résident d'un État membre contrôle ou est contrôlée par une société qui est un résident d'un autre État membre ou qui exerce son activité, que ce soit par l'intermédiaire d'un établissement stable ou non, ne suffit pas en lui-même, à faire de l'une quelconque de ces sociétés un établissement stable de l'autre."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "établissement stable",
+        "installation fixe d'affaires",
+        "succursale",
+        "bureau",
+        "chantier de construction",
+        "agent indépendant",
+        "assurance",
+        "réassurance",
+        "activité préparatoire",
+        "activité auxiliaire",
+        "183 jours"
+      ],
       "statut": "en vigueur"
     }
   ]
