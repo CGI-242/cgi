@@ -19,7 +19,14 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 import NotificationBell from "@/components/mobile/NotificationBell";
-import { ActiveCodeProvider } from "@/lib/context/ActiveCodeContext";
+import { ActiveCodeProvider, useActiveCode, type CodeId } from "@/lib/context/ActiveCodeContext";
+
+const CODE_OPTIONS: { id: CodeId; icon: keyof typeof Ionicons.glyphMap; label: string }[] = [
+  { id: "cgi", icon: "book-outline", label: "Code Général des Impôts" },
+  { id: "social", icon: "people-outline", label: "Code Social" },
+  { id: "hydrocarbures", icon: "flame-outline", label: "Code des Hydrocarbures" },
+  { id: "douanier", icon: "shield-checkmark-outline", label: "Code Douanier" },
+];
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -87,6 +94,14 @@ const PAGE_PARENTS: Record<string, { path: string; titleKey: string }> = {
 };
 
 export default function AppLayout() {
+  return (
+    <ActiveCodeProvider>
+      <AppLayoutInner />
+    </ActiveCodeProvider>
+  );
+}
+
+function AppLayoutInner() {
   const { mode, toggleTheme, colors } = useTheme();
   const { t, i18n } = useTranslation();
   useOfflineSync();
@@ -101,6 +116,14 @@ export default function AppLayout() {
   const [searchVisible, setSearchVisible] = useState(false);
   const [subStatus, setSubStatus] = useState<string | null>(null);
   const [subLoading, setSubLoading] = useState(true);
+  const { activeCode, setActiveCode } = useActiveCode();
+  const [codeDropdownOpen, setCodeDropdownOpen] = useState(false);
+
+  const handleCodeChange = useCallback((code: CodeId) => {
+    setActiveCode(code);
+    setCodeDropdownOpen(false);
+    router.push("/(app)/code" as Href);
+  }, [setActiveCode]);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -225,7 +248,6 @@ export default function AppLayout() {
   // ══════════════════════════════════════════════
   if (isMobile) {
     return (
-      <ActiveCodeProvider>
       <View style={{ flex: 1, backgroundColor: colors.background }}>
         <MobileHeader
           title={getMobileTitle()}
@@ -260,7 +282,6 @@ export default function AppLayout() {
         <MobileTabBar active={getActiveTab()} onTabPress={handleMobileTabPress} />
         <SessionExpiredModal />
       </View>
-      </ActiveCodeProvider>
     );
   }
 
@@ -268,7 +289,6 @@ export default function AppLayout() {
   // Sur desktop/tablet : Sidebar + Header + Stack
   // ══════════════════════════════════════════════
   return (
-    <ActiveCodeProvider>
     <View style={{ flex: 1, flexDirection: "row" }}>
       <Sidebar
         collapsed={sidebarCollapsed}
@@ -277,14 +297,46 @@ export default function AppLayout() {
       />
       <View style={{ flex: 1 }}>
         {/* Header principal */}
-        <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10 }}>
+        <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10, zIndex: 100 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <TouchableOpacity onPress={() => router.push("/(app)")} accessibilityLabel={t("common.home")} accessibilityRole="link">
                 <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
-                  CGI 242
+                  NORMX Tax
                 </Text>
               </TouchableOpacity>
+              {/* Dropdown sélecteur de code */}
+              <View style={{ marginLeft: 12 }}>
+                <TouchableOpacity
+                  onPress={() => setCodeDropdownOpen(!codeDropdownOpen)}
+                  style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.input || colors.background, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 5 }}
+                >
+                  <Ionicons name={CODE_OPTIONS.find(c => c.id === activeCode)?.icon || "book-outline"} size={16} color={colors.accent} />
+                  <Text style={{ color: colors.accent, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, marginLeft: 6 }}>
+                    {CODE_OPTIONS.find(c => c.id === activeCode)?.label || "CGI"}
+                  </Text>
+                  <Ionicons name="chevron-down" size={14} color={colors.accent} style={{ marginLeft: 4 }} />
+                </TouchableOpacity>
+                {codeDropdownOpen && (
+                  <View style={{ position: "absolute", top: 36, left: 0, zIndex: 9999, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 12, shadowColor: "#000", shadowOpacity: 0.2, shadowRadius: 12, elevation: 10, minWidth: 280, padding: 6 }}>
+                    {CODE_OPTIONS.map((opt) => (
+                      <TouchableOpacity
+                        key={opt.id}
+                        onPress={() => handleCodeChange(opt.id)}
+                        style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 10, backgroundColor: opt.id === activeCode ? (colors.input || colors.background) : "transparent", borderRadius: 10, marginBottom: 2 }}
+                      >
+                        <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: opt.id === activeCode ? colors.accent + "20" : (colors.input || colors.background), alignItems: "center", justifyContent: "center" }}>
+                          <Ionicons name={opt.icon} size={16} color={opt.id === activeCode ? colors.accent : colors.textMuted} />
+                        </View>
+                        <Text style={{ marginLeft: 10, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: opt.id === activeCode ? colors.accent : colors.text, flex: 1 }}>
+                          {opt.label}
+                        </Text>
+                        {opt.id === activeCode && <Ionicons name="checkmark" size={16} color={colors.accent} />}
+                      </TouchableOpacity>
+                    ))}
+                  </View>
+                )}
+              </View>
               {!isHome && pageTitleKey && (
                 <>
                   {parent && (
@@ -367,6 +419,5 @@ export default function AppLayout() {
       <FloatingCalculator />
       <SessionExpiredModal />
     </View>
-    </ActiveCodeProvider>
   );
 }
