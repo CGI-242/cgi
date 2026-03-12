@@ -1,4 +1,5 @@
 import { ScrollView, View, Text, TouchableOpacity } from "react-native";
+import { useState } from "react";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -7,6 +8,13 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#c8a03c";
 const BG = "#08080d";
+
+const CODE_OPTIONS = [
+  { id: "cgi", icon: "book-outline" as const, label: "Code Général des Impôts", desc: "CGI 242 — Édition 2026", available: true },
+  { id: "social", icon: "people-outline" as const, label: "Code Social", desc: "Travail & Sécurité sociale", available: true },
+  { id: "hydrocarbures", icon: "flame-outline" as const, label: "Code des Hydrocarbures", desc: "Loi n°2024-28", available: false },
+  { id: "douanier", icon: "shield-checkmark-outline" as const, label: "Code Douanier", desc: "CEMAC", available: false },
+];
 
 const FEATURES: { icon: keyof typeof Ionicons.glyphMap; titleKey: string; descKey: string; color: string }[] = [
   { icon: "document-text-outline", titleKey: "landing.feat1Title", descKey: "landing.feat1Desc", color: "#00815d" },
@@ -24,12 +32,13 @@ const FEATURES: { icon: keyof typeof Ionicons.glyphMap; titleKey: string; descKe
 export default function Cgi242Page() {
   const { t } = useTranslation();
   const { isMobile, isTablet } = useResponsive();
+  const [codeDropdownOpen, setCodeDropdownOpen] = useState(false);
 
   const cols = isMobile ? 1 : isTablet ? 2 : 3;
 
   const stats = [
     { value: "2 263", label: t("landing.statsArticles") },
-    { value: "14", label: t("landing.statsSimulators") },
+    { value: "16", label: t("landing.statsSimulators") },
     { value: "64", label: t("landing.statsTexts") },
     { value: "2026", label: t("landing.statsEdition") },
   ];
@@ -46,17 +55,62 @@ export default function Cgi242Page() {
           paddingHorizontal: isMobile ? 16 : 32,
           borderBottomWidth: 1,
           borderBottomColor: "rgba(255,255,255,0.04)",
+          zIndex: 100,
         }}
       >
-        <TouchableOpacity onPress={() => router.replace("/")} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-          <Ionicons name="arrow-back" size={18} color="#6a6a75" />
-          <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: GOLD, alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 16, color: BG }}>N</Text>
-          </View>
-          <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
-            CGI <Text style={{ color: GOLD }}>242</Text>
-          </Text>
-        </TouchableOpacity>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+          <TouchableOpacity onPress={() => router.replace("/")} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <Ionicons name="arrow-back" size={18} color="#6a6a75" />
+            <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: GOLD, alignItems: "center", justifyContent: "center" }}>
+              <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 16, color: BG }}>N</Text>
+            </View>
+            <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
+              NORMX <Text style={{ color: GOLD }}>Tax</Text>
+            </Text>
+          </TouchableOpacity>
+
+          {/* Dropdown codes */}
+          {!isMobile && (
+            <View style={{ marginLeft: 16 }}>
+              <TouchableOpacity
+                onPress={() => setCodeDropdownOpen(!codeDropdownOpen)}
+                style={{ flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.06)", borderRadius: 8, paddingHorizontal: 12, paddingVertical: 6 }}
+              >
+                <Ionicons name="book-outline" size={15} color={GOLD} />
+                <Text style={{ color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, marginLeft: 6 }}>
+                  Codes
+                </Text>
+                <Ionicons name="chevron-down" size={14} color={GOLD} style={{ marginLeft: 4 }} />
+              </TouchableOpacity>
+              {codeDropdownOpen && (
+                <View style={{ position: "absolute", top: 38, left: 0, zIndex: 9999, backgroundColor: "#12121a", borderWidth: 1, borderColor: "rgba(255,255,255,0.1)", borderRadius: 12, minWidth: 300, padding: 6, shadowColor: "#000", shadowOpacity: 0.4, shadowRadius: 16, elevation: 10 }}>
+                  {CODE_OPTIONS.map((opt) => (
+                    <TouchableOpacity
+                      key={opt.id}
+                      onPress={() => { setCodeDropdownOpen(false); if (opt.available) router.push("/(auth)"); }}
+                      style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 10, borderRadius: 10, opacity: opt.available ? 1 : 0.5 }}
+                    >
+                      <View style={{ width: 34, height: 34, borderRadius: 9, backgroundColor: "rgba(200,160,60,0.1)", alignItems: "center", justifyContent: "center" }}>
+                        <Ionicons name={opt.icon} size={16} color={GOLD} />
+                      </View>
+                      <View style={{ marginLeft: 10, flex: 1 }}>
+                        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: "#e8e6e1" }}>
+                          {opt.label}
+                        </Text>
+                        <Text style={{ fontSize: 12, color: "#5a5a65", marginTop: 1 }}>{opt.desc}</Text>
+                      </View>
+                      {!opt.available && (
+                        <View style={{ backgroundColor: "rgba(255,255,255,0.06)", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 8 }}>
+                          <Text style={{ fontSize: 11, fontWeight: "700", color: "#5a5a65" }}>Bientôt</Text>
+                        </View>
+                      )}
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              )}
+            </View>
+          )}
+        </View>
 
         <View style={{ flexDirection: "row", gap: isMobile ? 8 : 16, alignItems: "center" }}>
           <TouchableOpacity onPress={() => router.push("/(auth)")} style={{ padding: 8 }}>
