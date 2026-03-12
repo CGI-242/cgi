@@ -254,4 +254,4 @@ Les erreurs de production sont envoyées à **Sentry** quand le DSN est configur
 
 ## Licence
 
-Propriétaire — **NormX AI** (normxai)
+Propriétaire — **NORMX AI** (normxai)

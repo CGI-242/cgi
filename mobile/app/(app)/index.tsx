@@ -236,7 +236,7 @@ export default function Dashboard() {
         {/* Footer */}
         <View style={{ paddingHorizontal: 16, paddingTop: 20, alignItems: "center" }}>
           <Text style={{ fontSize: 14, color: colors.textMuted }}>{t("dashboard.footer")}</Text>
-          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
+          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NORMX AI</Text>
         </View>
       </ScrollView>
     </View>

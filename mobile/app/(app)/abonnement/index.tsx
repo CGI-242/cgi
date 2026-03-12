@@ -221,7 +221,7 @@ export default function AbonnementScreen() {
 
         <View style={{ alignItems: "center", marginTop: 20 }}>
           <Text style={{ fontSize: 14, color: colors.textMuted }}>CGI242 v1.0.0 -- Edition 2026</Text>
-          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NormX AI</Text>
+          <Text style={{ fontSize: 13, color: colors.disabled, marginTop: 1 }}>NORMX AI</Text>
         </View>
       </ScrollView>
     </View>

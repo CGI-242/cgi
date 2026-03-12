@@ -8,7 +8,7 @@ const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587', 10);
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 const SMTP_FROM_ADDRESS = process.env.SMTP_FROM || 'no-reply@normx-ai.com';
-const SMTP_FROM = `CGI 242 - NormX AI <${SMTP_FROM_ADDRESS}>`;
+const SMTP_FROM = `CGI 242 - NORMX AI <${SMTP_FROM_ADDRESS}>`;
 const SMTP_REPLY_TO = process.env.SMTP_REPLY_TO || 'support@normx-ai.com';
 
 const isSmtpConfigured = !!(SMTP_HOST && SMTP_USER && SMTP_PASS);
@@ -68,7 +68,7 @@ async function sendMail(to: string, subject: string, html: string, attachments?:
       text,
       attachments,
       headers: {
-        'X-Mailer': 'CGI242-NormX',
+        'X-Mailer': 'CGI242-NORMX',
       },
     });
     logger.info(`Email envoyé à ${to} : ${subject}`);
@@ -125,7 +125,7 @@ export class EmailService {
         <tr>
           <td style="padding: 16px 32px; text-align: center;">
             <p style="margin: 0; font-size: 11px; color: #9ca3af;">
-              © ${new Date().getFullYear()} CGI 242 — NormX AI · info-contact@normx-ai.com
+              © ${new Date().getFullYear()} CGI 242 — NORMX AI · info-contact@normx-ai.com
             </p>
           </td>
         </tr>
@@ -164,7 +164,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(email, subject, html);
@@ -193,7 +193,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(email, subject, html);
@@ -229,7 +229,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(email, subject, html);
@@ -316,7 +316,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(adminEmail, subject, html);
@@ -348,7 +348,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(ownerEmail, subject, html);
@@ -381,7 +381,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         À bientôt sur CGI 242,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(ownerEmail, subject, html);
@@ -416,7 +416,7 @@ export class EmailService {
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
         Cordialement,<br/>
-        <strong>L'équipe NormX AI</strong>
+        <strong>L'équipe NORMX AI</strong>
       </p>
     `);
     await sendMail(email, subject, html, [

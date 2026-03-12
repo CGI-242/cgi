@@ -60,7 +60,7 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     // --- En-tête ---
     doc.rect(0, 0, 595.28, 80).fill(dark);
     doc.fontSize(22).fillColor(gold).text('CGI 242', 50, 25, { width: 495, align: 'left' });
-    doc.fontSize(9).fillColor('#e8e6e1').text('Code Général des Impôts du Congo — NormX AI', 50, 52, { width: 495 });
+    doc.fontSize(9).fillColor('#e8e6e1').text('Code Général des Impôts du Congo — NORMX AI', 50, 52, { width: 495 });
     doc.fontSize(9).fillColor('#e8e6e1').text('FACTURE', 50, 25, { width: 495, align: 'right' });
 
     // --- Infos facture ---
@@ -87,7 +87,7 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     doc.fontSize(9).font('Helvetica-Bold').fillColor(gold).text('ÉMETTEUR', colLeft, y);
     doc.font('Helvetica').fillColor(dark).fontSize(9);
     y += 16;
-    doc.text('NormX AI', colLeft, y);
+    doc.text('NORMX AI', colLeft, y);
     doc.text('Brazzaville, République du Congo', colLeft, y + 13);
     doc.text('info-contact@normx-ai.com', colLeft, y + 26);
 
@@ -146,7 +146,7 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     // --- Pied de page ---
     const footerY = 750;
     doc.fontSize(8).font('Helvetica').fillColor(gray);
-    doc.text('NormX AI — Brazzaville, République du Congo', 50, footerY, { width: 495, align: 'center' });
+    doc.text('NORMX AI — Brazzaville, République du Congo', 50, footerY, { width: 495, align: 'center' });
     doc.text('info-contact@normx-ai.com | facturation@normx-ai.com', 50, footerY + 12, { width: 495, align: 'center' });
 
     doc.end();
