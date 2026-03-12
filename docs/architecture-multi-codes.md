@@ -6,12 +6,12 @@ L'application CGI-242 passe d'un outil centré sur le **Code Général des Impô
 
 ### Codes prévus
 
-| Code | Abréviation | Statut |
-|------|-------------|--------|
-| Code Général des Impôts | `cgi` | Existant |
-| Code Douanier | `douanier` | À créer |
-| Code des Hydrocarbures | `hydrocarbures` | À créer |
-| Code Social (Travail + Sécurité sociale) | `social` | À créer |
+| Code                                       | Abréviation      | Statut    |
+| ------------------------------------------ | ----------------- | --------- |
+| Code Général des Impôts                 | `cgi`           | Existant  |
+| Code Douanier                              | `douanier`      | À créer |
+| Code des Hydrocarbures                     | `hydrocarbures` | À créer |
+| Code Social (Travail + Sécurité sociale) | `social`        | À créer |
 
 ---
 
@@ -95,6 +95,7 @@ L'application CGI-242 passe d'un outil centré sur le **Code Général des Impô
 ```
 
 **Règles de conversion chapitre → aplati :**
+
 - `numero` = numéro sans le préfixe "Art. " (ex: "268" pas "Art. 268")
 - `contenu` = `texte[]` joint par `\n`
 - `chapitre` = string (ex: `"12"` pas `12`)
@@ -102,13 +103,13 @@ L'application CGI-242 passe d'un outil centré sur le **Code Général des Impô
 
 ### 2.4 Fichiers aplatis existants
 
-| Fichier | Contenu | Tome |
-|---------|---------|------|
-| `articles-2026-tome1.json` | CGI Tome 1 | `"1"` |
-| `articles-2026-tome2.json` | CGI Tome 2 | `"2"` |
-| `articles-2026-tfnc.json` | Textes Fiscaux Non-Codifiés | `"TFNC*"` |
-| `articles-2026-conventions.json` | Conventions internationales | `"CONV-*"` |
-| `articles-2026-annexes.json` | Annexes | `"ANNEXES-1"` |
+| Fichier                            | Contenu                      | Tome            |
+| ---------------------------------- | ---------------------------- | --------------- |
+| `articles-2026-tome1.json`       | CGI Tome 1                   | `"1"`         |
+| `articles-2026-tome2.json`       | CGI Tome 2                   | `"2"`         |
+| `articles-2026-tfnc.json`        | Textes Fiscaux Non-Codifiés | `"TFNC*"`     |
+| `articles-2026-conventions.json` | Conventions internationales  | `"CONV-*"`    |
+| `articles-2026-annexes.json`     | Annexes                      | `"ANNEXES-1"` |
 
 ### 2.5 Fichiers data mobile existants (152 fichiers)
 
@@ -266,12 +267,12 @@ server/data/
 
 ### 3.3 Nommage des fichiers chapitres par code
 
-| Code | Pattern de nommage | Exemple |
-|------|-------------------|---------|
-| CGI | `tome{N}-{partie}-livre{N}-chapitre{N}.json` | `tome1-partie1-livre1-chapitre3.json` |
-| Douanier | `titre{N}-chapitre{N}.json` | `titre1-chapitre3.json` |
-| Hydrocarbures | `titre{N}-chapitre{N}.json` | `titre2-chapitre1.json` |
-| Social | `livre{N}-titre{N}-chapitre{N}.json` | `livre1-titre2-chapitre5.json` |
+| Code          | Pattern de nommage                             | Exemple                                 |
+| ------------- | ---------------------------------------------- | --------------------------------------- |
+| CGI           | `tome{N}-{partie}-livre{N}-chapitre{N}.json` | `tome1-partie1-livre1-chapitre3.json` |
+| Douanier      | `titre{N}-chapitre{N}.json`                  | `titre1-chapitre3.json`               |
+| Hydrocarbures | `titre{N}-chapitre{N}.json`                  | `titre2-chapitre1.json`               |
+| Social        | `livre{N}-titre{N}-chapitre{N}.json`         | `livre1-titre2-chapitre5.json`        |
 
 Le nommage s'adapte à la structure propre de chaque code juridique.
 
@@ -280,17 +281,21 @@ Le nommage s'adapte à la structure propre de chaque code juridique.
 ## 4. Process de création d'un nouveau code
 
 ### Étape 1 : Préparer les PDF sources
+
 - Scanner ou récupérer le PDF officiel du code
 - Numéroter les pages (1.pdf, 2.pdf, ...)
 
 ### Étape 2 : Créer la structure de dossiers
+
 ```bash
 mkdir -p mobile/data/douanier/
 mkdir -p server/data/douanier/2026/
 ```
 
 ### Étape 3 : Créer les JSON page par page
+
 Pour chaque page PDF :
+
 1. Lire le PDF
 2. Identifier les articles
 3. Créer le fichier chapitre JSON (format détaillé avec `meta` + `articles[]`)
@@ -299,12 +304,15 @@ Pour chaque page PDF :
 6. Ajouter les articles dans le fichier aplati `articles-<code>-2026.json`
 
 ### Étape 4 : Vérification PDF par PDF
+
 Même process que le CGI :
+
 1. Comparer texte JSON vs PDF — corriger les différences
 2. Enrichir les mots-clés (toujours extraits du texte)
 3. Synchroniser les 3 emplacements (mobile, server chapitre, aplati)
 
 ### Étape 5 : Ingestion Qdrant
+
 ```bash
 # Ingérer le fichier aplati dans Qdrant
 POST /api/ingestion { code: "douanier", file: "articles-douanier-2026.json" }
@@ -316,38 +324,39 @@ POST /api/ingestion { code: "douanier", file: "articles-douanier-2026.json" }
 
 ### 5.1 Grille tarifaire
 
-| Plan | Prix | Contenu |
-|------|------|---------|
-| **Free** | 0 € | 5 questions IA/mois, lecture CGI, simulateurs de base, 7 jours d'essai |
-| **Basique** | 65 €/an | 1 code juridique au choix, 15 questions IA/mois, 14 simulateurs, historique, 50 membres |
-| **Pro** | 256 €/an | 4 codes (CGI + Douanier + Hydrocarbures + Social), 30 questions IA/mois, historique illimité, support prioritaire, 50 membres |
+| Plan              | Prix      | Contenu                                                                                                                        |
+| ----------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Free**    | 0 €      | 5 questions IA/mois, lecture CGI, simulateurs de base, 7 jours d'essai                                                         |
+| **Basique** | 65 €/an  | 1 code juridique au choix, 15 questions IA/mois, 14 simulateurs, historique, 50 membres                                        |
+| **Pro**     | 256 €/an | 4 codes (CGI + Douanier + Hydrocarbures + Social), 30 questions IA/mois, historique illimité, support prioritaire, 50 membres |
 
 ### 5.2 Les 4 codes disponibles
 
-| Code | Abréviation |
-|------|-------------|
-| Code Général des Impôts | `cgi` |
-| Code Douanier | `douanier` |
-| Code des Hydrocarbures | `hydrocarbures` |
-| Code Social (Travail + Sécurité sociale) | `social` |
+| Code                                       | Abréviation      |
+| ------------------------------------------ | ----------------- |
+| Code Général des Impôts                 | `cgi`           |
+| Code Douanier                              | `douanier`      |
+| Code des Hydrocarbures                     | `hydrocarbures` |
+| Code Social (Travail + Sécurité sociale) | `social`        |
 
 > **Calcul Pro** : 65 € × 4 codes = 256 € (pas de réduction, prix transparent)
 
 ### 5.2 Stratégie Freemium (conversion)
 
-| Fonctionnalité | Gratuit (non acheté) | Acheté |
-|---|---|---|
-| **Recherche** | Résultats floutés + nombre d'articles trouvés | Texte complet |
-| **Chatbot IA** | Réponse partielle + "source : Code Douanier" | Réponse complète avec articles |
-| **Sommaire** | Titres des chapitres et articles visibles | Contenu complet |
-| **Favoris / Notes** | Non | Oui |
-| **Simulateurs** | CGI uniquement (gratuit) | Simulateurs étendus |
+| Fonctionnalité           | Gratuit (non acheté)                            | Acheté                          |
+| ------------------------- | ------------------------------------------------ | -------------------------------- |
+| **Recherche**       | Résultats floutés + nombre d'articles trouvés | Texte complet                    |
+| **Chatbot IA**      | Réponse partielle + "source : Code Douanier"    | Réponse complète avec articles |
+| **Sommaire**        | Titres des chapitres et articles visibles        | Contenu complet                  |
+| **Favoris / Notes** | Non                                              | Oui                              |
+| **Simulateurs**     | CGI uniquement (gratuit)                         | Simulateurs étendus             |
 
 **Principe : montrer la valeur, bloquer l'accès.** Chaque interaction gratuite est une occasion de conversion.
 
 ### 5.3 Le chatbot comme outil de vente
 
 Le chatbot IA répond sur **TOUS** les codes, même non achetés :
+
 - Réponse partielle avec source identifiée
 - Message : *"Cet article provient du Code Douanier. Débloquez-le pour voir le texte complet."*
 - L'utilisateur découvre naturellement qu'il a besoin d'autres codes
@@ -381,6 +390,7 @@ GET    /api/purchases                # Mes achats
 ### 6.3 Qdrant — Organisation
 
 Option retenue : **une collection par code**
+
 ```
 Collection: cgi-2026        → articles CGI
 Collection: douanier-2026   → articles Douanier
@@ -403,17 +413,17 @@ La recherche interroge toutes les collections mais filtre l'affichage selon les 
 
 ## 7. Palette de couleurs
 
-| Usage | Couleur | Hex |
-|-------|---------|-----|
+| Usage                 | Couleur      | Hex         |
+| --------------------- | ------------ | ----------- |
 | Fond principal (dark) | Noir profond | `#08080d` |
-| Fond secondaire | Noir bleuté | `#0c0c14` |
-| Accent / Primary | Doré | `#c8a03c` |
-| Cartes / Surfaces | Blanc | `#ffffff` |
-| Texte principal | Gris foncé | `#1f2937` |
-| Texte secondaire | Gris moyen | `#6b7280` |
-| Succès | Vert | `#10b981` |
-| Erreur | Rouge | `#ef4444` |
-| Cadenas (non acheté) | Gris | `#9ca3af` |
+| Fond secondaire       | Noir bleuté | `#0c0c14` |
+| Accent / Primary      | Doré        | `#c8a03c` |
+| Cartes / Surfaces     | Blanc        | `#ffffff` |
+| Texte principal       | Gris foncé  | `#1f2937` |
+| Texte secondaire      | Gris moyen   | `#6b7280` |
+| Succès               | Vert         | `#10b981` |
+| Erreur                | Rouge        | `#ef4444` |
+| Cadenas (non acheté) | Gris         | `#9ca3af` |
 
 ---
 
