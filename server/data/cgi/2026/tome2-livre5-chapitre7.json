@@ -20,17 +20,13 @@
         "L'associé ou les associés du défunt sont responsables au même titre que le Curateur qui a appréhendé la succession des parts et créances du défunt sur la société. L'inventaire des parts et créances doit être dressé conjointement et contradictoirement entre le Curateur et le ou les associés et annexé à l'inventaire principal de la succession."
       ],
       "mots_cles": [
-        "associé",
-        "défunt",
+        "curatelle",
+        "associés du défunt",
         "responsabilité",
         "Curateur",
-        "succession",
-        "parts",
-        "créances",
+        "parts et créances",
         "société",
-        "inventaire",
-        "conjointement",
-        "contradictoirement"
+        "inventaire conjoint et contradictoire"
       ],
       "statut": "en vigueur"
     },
@@ -41,12 +37,11 @@
         "Dans la mesure où les clauses de l'acte d'association n'y sont pas formellement contraires, et où il s'agit des parts mobilières, le Curateur en provoque la vente ou le partage."
       ],
       "mots_cles": [
-        "clauses",
+        "curatelle",
+        "Curateur",
         "acte d'association",
         "parts mobilières",
-        "Curateur",
-        "vente",
-        "partage"
+        "vente ou partage"
       ],
       "statut": "en vigueur"
     },
@@ -58,16 +53,12 @@
         "Lorsqu'il y a des enfants, le conjoint survivant étant le tuteur légal, le Curateur n'a pas à intervenir."
       ],
       "mots_cles": [
-        "conjoint",
-        "décéder",
-        "enfant",
-        "mariage",
+        "curatelle",
         "Curateur",
+        "conjoint décédé sans enfant",
         "héritiers collatéraux",
-        "ascendants",
-        "absents",
-        "non représentés",
-        "survivant",
+        "ascendants absents",
+        "conjoint survivant",
         "tuteur légal"
       ],
       "statut": "en vigueur"
@@ -79,10 +70,10 @@
         "De même le Curateur représente d'office tout légataire absent et non représenté vis-à-vis des héritiers naturels ou du conjoint survivant."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
         "représentation d'office",
         "légataire absent",
-        "non représenté",
         "héritiers naturels",
         "conjoint survivant"
       ],

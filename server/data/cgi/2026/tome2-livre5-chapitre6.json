@@ -17,21 +17,18 @@
       "article": "Art. 27",
       "titre": "Succession vacante d'un étranger",
       "texte": [
-        "Lorsque la succession d'un étranger décédé en République du Congo est vacante, c'est-à-dire lorsqu'il n'y a ni héritier, ni légataire universel, ni titre universel, elle est appréhendée par le Curateur à titre ou d'office et remise au Domaine après un délai d'au moins six mois, permettant aux héritiers éventuels de se révéler."
+        "Lorsque la succession d'un étranger décédé en République du Congo est vacante, c'est-à-dire lorsqu'il n'y a ni héritier, ni légataire universel, ou à titre universel, elle est appréhendée par le Curateur en titre ou d'office et remise au Domaine après un délai d'au moins six mois, permettant aux héritiers éventuels de se révéler."
       ],
       "mots_cles": [
-        "succession",
-        "étranger",
-        "décédé",
-        "République du Congo",
-        "vacante",
-        "héritier",
+        "curatelle",
+        "succession vacante d'un étranger",
+        "étranger décédé",
         "légataire universel",
         "titre universel",
-        "Curateur",
-        "Domaine",
-        "six mois",
-        "héritiers éventuels"
+        "Curateur en titre",
+        "Curateur d'office",
+        "remise au Domaine",
+        "délai de six mois"
       ],
       "statut": "en vigueur"
     },
@@ -39,21 +36,16 @@
       "article": "Art. 28",
       "titre": "Remise au consulat étranger",
       "texte": [
-        "Lorsqu'il y a des héritiers connus mais non présents, ni représentés, la succession peut être appréhendée par le Curateur et remise dès que possible au Consulat de la nation à laquelle appartient la personne décédée, ou même remise directement à ce consulat, à charge pour ce dernier d'en faire la déclaration au plus proche bureau de l'enregistrement et d'acquitter, sur le montant de la succession, les droits éventuels dus à la République du Congo."
+        "Lorsqu'il y a des héritiers connus mais non présents, ni représentés, la succession peut être appréhendée par le Curateur et remise dès que possible au Consul de la nation à laquelle appartient la personne décédée, ou même remise directement à ce Consul, à charge pour ce dernier d'en faire la déclaration au plus proche bureau de l'enregistrement et d'acquitter, sur le montant de la succession, les droits éventuels dus à la République du Congo."
       ],
       "mots_cles": [
-        "héritiers connus",
-        "non présents",
-        "non représentés",
-        "succession",
+        "curatelle",
+        "héritiers connus non présents",
         "Curateur",
-        "Consulat",
-        "nation",
-        "personne décédée",
-        "déclaration",
+        "remise au Consul",
+        "personne décédée étrangère",
         "bureau de l'enregistrement",
-        "droits",
-        "République du Congo"
+        "droits dus à la République du Congo"
       ],
       "statut": "en vigueur"
     }

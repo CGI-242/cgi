@@ -23,21 +23,17 @@
         "Le juge est désigné par ordonnance du Président du Tribunal Populaire de District ou d'Arrondissement ; le représentant de l'administration générale est nommé par le Commissaire Politique."
       ],
       "mots_cles": [
-        "circonscription judiciaire",
-        "bureau d'enregistrement",
+        "curatelle",
         "Conseil de Curatelle",
         "composition",
-        "Président",
+        "circonscription judiciaire",
+        "bureau d'enregistrement",
         "Procureur de la République",
-        "membres",
         "juge",
         "Tribunal Populaire de District",
-        "Tribunal Populaire d'Arrondissement",
-        "représentant",
         "administration Générale",
         "Administrateur",
         "Curateur",
-        "ordonnance",
         "Commissaire Politique"
       ],
       "statut": "en vigueur"
@@ -50,17 +46,15 @@
         "Les décisions sont motivées et rendues sous forme d'avis ; leur notification est faite au Curateur par le Président."
       ],
       "mots_cles": [
+        "curatelle",
         "Conseil de Curatelle",
         "attributions",
-        "questions",
         "actions en justice",
         "article 4",
         "Curateur",
-        "décisions",
-        "motivées",
+        "décisions motivées",
         "avis",
-        "notification",
-        "Président"
+        "notification"
       ],
       "statut": "en vigueur"
     },
@@ -72,14 +66,13 @@
         "Les procès-verbaux de ces séances sont consignés sur un registre spécial signé du Président. Les fonctions de secrétaire sont remplies par le Greffier ou un commis du Tribunal."
       ],
       "mots_cles": [
-        "Conseil de curatelle",
+        "curatelle",
+        "Conseil de Curatelle",
         "réunions",
         "convocation",
         "Président",
-        "demande",
         "Curateur",
         "procès-verbaux",
-        "séances",
         "registre spécial",
         "secrétaire",
         "Greffier",

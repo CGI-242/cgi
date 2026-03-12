@@ -19,22 +19,17 @@
       "texte": [
         "Le Curateur doit tenir les registres ci-après :",
         "1° un registre journal des recettes et dépenses ;",
-        "2° un sommaire ou grand-livre de compte ouvert.",
+        "2° un sommier ou grand-livre de compte ouvert.",
         "Ces registres sont cotés et paraphés par le procureur près le Tribunal Populaire de District ou d'Arrondissement dans le ressort duquel se trouve le bureau de l'enregistrement."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
-        "registres",
-        "registre journal",
-        "recettes",
-        "dépenses",
-        "sommaire",
-        "grand-livre de compte",
-        "cotés",
-        "paraphés",
+        "registre journal des recettes et dépenses",
+        "sommier ou grand-livre",
+        "cotés et paraphés",
         "procureur",
         "Tribunal Populaire de District",
-        "Tribunal Populaire d'Arrondissement",
         "bureau de l'enregistrement"
       ],
       "statut": "en vigueur"
@@ -46,14 +41,12 @@
         "À la fin de chaque mois, le Curateur fait dépôt à la caisse du receveur de l'enregistrement ou du Comptable public de son ressort territorial de compétence du montant intégral des recettes qu'il a effectuées dans le mois."
       ],
       "mots_cles": [
-        "fin de mois",
+        "curatelle",
         "Curateur",
-        "dépôt",
-        "caisse",
-        "receveur de l'enregistrement",
+        "dépôt mensuel",
+        "caisse du receveur",
         "Comptable public",
-        "ressort territorial",
-        "recettes"
+        "recettes du mois"
       ],
       "statut": "en vigueur"
     },
@@ -62,19 +55,16 @@
       "titre": "Paiements par le curateur",
       "texte": [
         "Les paiements à faire par le Curateur à la décharge des liquidations qu'il administre sont opérés savoir : s'il s'agit de dépenses courantes, sur états ou mémoires des parties prenantes certifiés par le Curateur.",
-        "Lorsqu'il y a lieu à distribution par ordre ou contribution, le Curateur ne paie que sur bordereau de colocation ou mandatement régulièrement délivrés."
+        "Lorsqu'il y a lieu à distribution par ordre ou contribution, le Curateur ne paie que sur bordereau de collocation ou mandatement régulièrement délivrés."
       ],
       "mots_cles": [
-        "paiements",
+        "curatelle",
         "Curateur",
-        "liquidations",
+        "paiements",
         "dépenses courantes",
-        "états",
-        "mémoires",
-        "parties prenantes",
-        "distribution par ordre",
-        "contribution",
-        "bordereau de colocation",
+        "états ou mémoires",
+        "distribution par ordre ou contribution",
+        "bordereau de collocation",
         "mandatement"
       ],
       "statut": "en vigueur"
@@ -86,15 +76,12 @@
         "Le Curateur dresse de toute succession un tableau général de créanciers connus dans l'ordre de leurs privilèges et hypothèques. Ledit tableau sera communiqué au Procureur de la République pour que le paiement desdits créanciers soit ordonné par le juge après qu'il a été statué contre les oppositions qui peuvent être formées contre lesdits créanciers."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
-        "succession",
-        "tableau général",
-        "créanciers",
-        "privilèges",
-        "hypothèques",
+        "tableau général des créanciers",
+        "privilèges et hypothèques",
         "Procureur de la République",
-        "paiement",
-        "juge",
+        "paiement ordonné par le juge",
         "oppositions"
       ],
       "statut": "en vigueur"
@@ -106,13 +93,12 @@
         "Les paiements sont faits sans délai par ledit Curateur à mesure que les fonds lui rentrent. Il est tenu personnellement responsable des intérêts que des retards volontaires peuvent occasionner."
       ],
       "mots_cles": [
-        "paiements",
-        "sans délai",
+        "curatelle",
         "Curateur",
-        "fonds",
+        "paiements sans délai",
         "responsabilité personnelle",
-        "intérêts",
-        "retards volontaires"
+        "retards volontaires",
+        "intérêts"
       ],
       "statut": "en vigueur"
     },
@@ -123,13 +109,10 @@
         "Les saisies faites sur le défunt ou entre les mains du Curateur en sa qualité demeurent converties en oppositions simples pour la conservation des droits des saisissants sans qu'il soit besoin de le faire prononcer."
       ],
       "mots_cles": [
-        "saisies",
-        "défunt",
+        "curatelle",
         "Curateur",
-        "conversion",
-        "oppositions simples",
-        "conservation",
-        "droits",
+        "saisies converties en oppositions simples",
+        "conservation des droits",
         "saisissants"
       ],
       "statut": "en vigueur"
@@ -142,12 +125,11 @@
         "Il est pourvu à celles de ces dépenses qui sont reconnues indispensables conformément aux dispositions du chapitre 4 du présent titre."
       ],
       "mots_cles": [
-        "interdiction",
+        "curatelle",
         "Curateur",
+        "interdiction d'avances",
         "responsabilité personnelle",
-        "liquidations",
-        "fonds réalisés",
-        "avances",
+        "liquidations sans fonds",
         "dépenses indispensables",
         "chapitre 4"
       ],
@@ -160,15 +142,12 @@
         "Aucune partie des fonds d'une succession ne peut être remise aux héritiers présents ou représentés avant qu'il ait repris la succession des mains du Curateur, sauf autorisation sur ordonnance du Président du Tribunal."
       ],
       "mots_cles": [
-        "fonds",
-        "succession",
-        "remise",
-        "héritiers présents",
-        "héritiers représentés",
+        "curatelle",
         "Curateur",
-        "autorisation",
-        "ordonnance",
-        "Président du Tribunal"
+        "remise de fonds",
+        "héritiers présents ou représentés",
+        "reprise de succession",
+        "ordonnance du Président du Tribunal"
       ],
       "statut": "en vigueur"
     }

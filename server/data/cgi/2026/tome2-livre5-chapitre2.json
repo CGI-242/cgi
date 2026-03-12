@@ -19,26 +19,22 @@
       "texte": [
         "Dans toute l'étendue du territoire de la République du Congo, les fonctions de Curateur d'office sont remplies par la DGID (Direction de l'enregistrement, des domaines et du timbre).",
         "Dans chaque Région, le Curateur d'office est le receveur de l'enregistrement du ressort territorial du lieu d'ouverture de la succession vacante ou en déshérence.",
-        "Toutefois, dans certains cas, pour faciliter la gestion des biens, le Directeur Général des Impôts peut désigner un autre agent, une personnalité ou un organisme spécialisé pour assurer ces fonctions. Cette nomination doit alors être homologuée par le Tribunal Populaire de District ou d'Arrondissement du lieu d'ouverture de la succession."
+        "Toutefois, dans certains cas, pour faciliter la gestion des biens, le Directeur Général des Impôts peut désigner un autre agent, une personnalité ou un organisme spécialisé pour assurer ces fonctions. Cette nomination doit alors être homologuée dans le délai de trois mois par le Tribunal Populaire de District ou d'Arrondissement du lieu d'ouverture de la succession."
       ],
       "mots_cles": [
-        "territoire",
-        "République du Congo",
+        "curatelle",
         "Curateur d'office",
         "DGID",
-        "Direction de l'enregistrement, des domaines et du timbre",
-        "Région",
+        "Direction de l'enregistrement des domaines et du timbre",
         "receveur de l'enregistrement",
         "ressort territorial",
         "succession vacante",
         "succession en déshérence",
         "Directeur Général des Impôts",
-        "agent",
-        "personnalité",
         "organisme spécialisé",
         "homologation",
-        "trois mois",
-        "Tribunal Populaire du District",
+        "délai de trois mois",
+        "Tribunal Populaire de District",
         "Tribunal Populaire d'Arrondissement"
       ],
       "statut": "en vigueur"
@@ -52,16 +48,13 @@
         "Ils exercent et poursuivent les droits des parties intéressées qu'ils représentent. Ils répondent aux demandes formulées contre elles, le tout à charge de rendre compte à qui de droit."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateurs",
         "attributions",
         "mandataire légal",
-        "administration",
-        "intérêts",
-        "biens",
-        "curatelle",
+        "administration des biens",
         "parties intéressées",
         "droits",
-        "demandes",
         "rendre compte"
       ],
       "statut": "en vigueur"
@@ -73,15 +66,12 @@
         "Leurs fonctions sont de gérer et d'administrer toutes les successions vacantes ou en déshérence dans le Territoire de la République du Congo, soit celles ouvertes ou non liquidées, soit celles qui s'ouvrent et se trouvent abandonnées par l'absence de présomptifs héritiers ou par leur renonciation, et tous autres biens vacants de quelque manière que ce soit."
       ],
       "mots_cles": [
-        "fonctions",
-        "gérer",
-        "administrer",
+        "curatelle",
+        "gestion",
+        "administration",
         "successions vacantes",
         "successions en déshérence",
-        "République du Congo",
-        "ouvertes",
-        "non liquidées",
-        "abandonnées",
+        "successions non liquidées",
         "présomptifs héritiers",
         "renonciation",
         "biens vacants"
@@ -92,18 +82,17 @@
       "article": "Art. 5",
       "titre": "Administration et gestion des biens vacants",
       "texte": [
-        "L'administration et la gestion des biens de ceux qui, n'ayant point d'héritiers ou de mandat regulier, en République du Congo, ont disparu ou sont déclarés absents, font partie de la curatelle générale aux biens vacants."
+        "L'administration et la gestion des biens de ceux qui, n'ayant point d'héritiers ou de mandat régulier, en République du Congo, ont disparu ou sont déclarés absents, font partie de la curatelle générale aux biens vacants."
       ],
       "mots_cles": [
-        "administration",
-        "gestion",
-        "biens",
-        "héritiers",
-        "mandat",
-        "République du Congo",
-        "disparu",
-        "absents",
+        "curatelle",
         "curatelle générale",
+        "administration des biens",
+        "gestion des biens",
+        "sans héritiers",
+        "mandat régulier",
+        "disparu",
+        "déclarés absents",
         "biens vacants"
       ],
       "statut": "en vigueur"
@@ -115,15 +104,13 @@
         "Si l'individu qui a disparu est mandataire d'une personne absente, le Curateur donne avis au mandant de la disposition et pourvoit en attendant, comme dans les successions vacantes, à ce que les circonstances exigent pour son intérêt."
       ],
       "mots_cles": [
+        "curatelle",
+        "Curateur",
         "individu disparu",
         "mandataire",
         "personne absente",
-        "Curateur",
-        "avis",
-        "mandant",
-        "successions vacantes",
-        "circonstances",
-        "intérêt"
+        "avis au mandant",
+        "successions vacantes"
       ],
       "statut": "en vigueur"
     },
@@ -134,12 +121,13 @@
         "Les Curateurs sont tenus personnellement des fautes lourdes qu'ils peuvent commettre lors de leur gestion tant que dure cette gestion et jusqu'au jugement d'apurement de comptes."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateurs",
         "responsabilité personnelle",
         "fautes lourdes",
         "gestion",
-        "jugement",
-        "apurement de comptes"
+        "apurement de comptes",
+        "jugement"
       ],
       "statut": "en vigueur"
     },
@@ -150,25 +138,19 @@
         "Il est expressément enjoint au Curateur de veiller sur les dépositaires, fermiers judiciaires et adjudicataires des biens vacants, de tenir la main à l'exécution entière des clauses des contrats, de faire conserver les bois, d'entretenir les terres, bâtiments, meubles, outils, de faire contre les détenteurs toutes les poursuites, contraintes et diligences nécessaires à peine d'en répondre en son propre et privé nom, d'encaisser toutes sommes et valeurs dépendant de la succession."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
-        "surveillance",
+        "conservation des biens",
         "dépositaires",
         "fermiers judiciaires",
         "adjudicataires",
         "biens vacants",
-        "contrats",
-        "bois",
-        "terres",
-        "bâtiments",
-        "meubles",
-        "outils",
+        "exécution des contrats",
+        "entretien des biens",
         "poursuites",
-        "contraintes",
-        "diligences",
+        "contraintes et diligences",
         "responsabilité personnelle",
         "encaissement",
-        "sommes",
-        "valeurs",
         "succession"
       ],
       "statut": "en vigueur"
@@ -180,12 +162,11 @@
         "Le Curateur ne peut faire des réparations aux immeubles lorsque le prix de ces réparations dépasse 500.000 FCFA sans y être expressément autorisé par le Tribunal, sur les conclusions écrites du Procureur de la République."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
-        "réparations",
-        "immeubles",
-        "500.000 FCFA",
-        "autorisation",
-        "Tribunal",
+        "réparations immeubles",
+        "seuil 500.000 FCFA",
+        "autorisation du Tribunal",
         "Procureur de la République"
       ],
       "statut": "en vigueur"
@@ -198,14 +179,11 @@
         "Avant d'engager toute action en justice, il doit se faire autoriser par le Conseil de Curatelle institué par la présente loi ; sinon, il est considéré comme ayant commis une faute lourde avec les conséquences que cela entraîne, conformément à l'article 7 ci-dessus."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
-        "recouvrement",
-        "créances",
+        "recouvrement des créances",
         "sommes dues",
-        "successions",
-        "insolvabilité",
-        "débiteurs",
-        "poursuites",
+        "insolvabilité des débiteurs",
         "action en justice",
         "autorisation",
         "Conseil de Curatelle",
@@ -224,25 +202,20 @@
         "Sur le montant des remises globales encaissées par les divers Curateurs à titre de remises, ces derniers doivent en réserver à la DGID, contrôleur de toutes les curatelles, une quotité fixée par arrêté du Ministre des finances."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
         "rémunération",
         "débours",
-        "droits",
         "vacations",
         "indemnités",
         "remises",
-        "taux",
-        "arrêté",
-        "Ministre des finances",
+        "arrêté du Ministre des finances",
         "comptable public",
-        "centralisation",
         "recettes de curatelle",
         "dette privilégiée",
-        "succession",
         "frais de justice",
         "procédure d'ordre",
         "DGID",
-        "contrôleur",
         "quotité"
       ],
       "statut": "en vigueur"
@@ -254,11 +227,10 @@
         "Dans toutes les opérations où sa présence est nécessaire, le Curateur peut se faire représenter par un agent dont il demeure responsable."
       ],
       "mots_cles": [
+        "curatelle",
         "Curateur",
         "présence",
-        "opérations",
-        "représentation",
-        "agent",
+        "représentation par agent",
         "responsabilité"
       ],
       "statut": "en vigueur"
@@ -270,9 +242,9 @@
         "Les Curateurs en titre ou d'office peuvent assister aux scellés et inventaires et s'occuper des procédures, soit par eux-mêmes, soit par procuration."
       ],
       "mots_cles": [
-        "Curateurs",
-        "en titre",
-        "d'office",
+        "curatelle",
+        "Curateurs en titre",
+        "Curateurs d'office",
         "scellés",
         "inventaires",
         "procédures",
@@ -287,13 +259,13 @@
         "Lorsqu'il se trouve en plusieurs juridictions des biens et effets dépendants d'une même succession, chacun desdits biens et effets est régi séparément par le Curateur de la juridiction dans laquelle il est situé, qui en fait remise au Curateur du lieu d'ouverture de la succession."
       ],
       "mots_cles": [
-        "juridictions",
-        "biens",
-        "effets",
-        "succession",
+        "curatelle",
         "Curateur",
-        "remise",
-        "lieu d'ouverture"
+        "plusieurs juridictions",
+        "biens et effets",
+        "succession",
+        "remise au Curateur",
+        "lieu d'ouverture de la succession"
       ],
       "statut": "en vigueur"
     },
@@ -308,18 +280,13 @@
         "4° par la remise au domaine de l'État lorsque les héritiers ou ayants droit ne se sont pas manifestés."
       ],
       "mots_cles": [
-        "gestion",
+        "curatelle",
         "Curateur",
-        "fin",
-        "remise",
-        "succession",
-        "héritiers",
-        "droits reconnus",
-        "mandataire",
-        "liquidation",
-        "biens de curatelle",
+        "fin de gestion",
+        "remise de succession",
+        "héritiers reconnus",
+        "liquidation des biens",
         "ayants droit",
-        "valeurs",
         "domaine de l'État"
       ],
       "statut": "en vigueur"

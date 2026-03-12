@@ -22,25 +22,17 @@
         "Toutefois, ce délai peut être prolongé jusqu'au plus proche compte de gestion annuel sanctionné par un jugement qui prononce par la même occasion l'envoi en possession au domaine de l'État ou sur autorisation spéciale du Président du Tribunal Populaire de District ou d'Arrondissement pour mener à bien certaines opérations (vente d'immeuble par exemple)."
       ],
       "mots_cles": [
-        "administration",
+        "curatelle",
+        "fin d'administration",
         "Curateurs en titre",
         "Curateurs d'office",
-        "jugement",
-        "remise",
-        "héritiers",
-        "représentant",
-        "apurement",
-        "comptes de gestion",
-        "réclamation",
-        "ayants droit",
-        "trois ans",
+        "jugement de remise",
+        "apurement des comptes",
+        "délai de trois ans",
         "Journal Officiel",
         "envoi en possession",
         "domaine de l'État",
-        "Président du Tribunal Populaire",
-        "District",
-        "Arrondissement",
-        "vente d'immeuble"
+        "Tribunal Populaire de District"
       ],
       "statut": "en vigueur"
     },
@@ -53,23 +45,15 @@
         "La publicité faite est réputée suffisante (envoi en possession prononcé d'office après deux insertions à un mois d'intervalle au Journal Officiel de la République du Congo)."
       ],
       "mots_cles": [
-        "troisième année",
-        "gestion",
+        "curatelle",
+        "troisième année de gestion",
         "Curateur",
-        "ayant droit",
         "administration des Domaines",
         "possession provisoire",
-        "successions",
-        "curatelle",
-        "liquidation",
         "excédent d'actif",
-        "formalités",
-        "envoi en possession",
-        "publicité",
-        "deux insertions",
-        "un mois d'intervalle",
-        "Journal Officiel",
-        "République du Congo"
+        "envoi en possession d'office",
+        "deux insertions au Journal Officiel",
+        "un mois d'intervalle"
       ],
       "statut": "en vigueur"
     },
@@ -80,12 +64,11 @@
         "Les successions liquidées d'une valeur inférieure à 500.000 FCFA sont, à la suite des jugements d'apurement, portées purement et simplement en recettes au Budget de l'État (Domaines)."
       ],
       "mots_cles": [
+        "curatelle",
         "successions liquidées",
-        "valeur inférieure",
-        "500.000 FCFA",
-        "jugements d'apurement",
-        "recettes",
-        "Budget de l'État",
+        "valeur inférieure à 500.000 FCFA",
+        "jugement d'apurement",
+        "recettes au Budget de l'État",
         "Domaines"
       ],
       "statut": "en vigueur"
@@ -97,18 +80,12 @@
         "L'État reste redevable envers les héritiers ou ayants droit éventuels des biens et valeurs qui ont été remis durant quatre ans à compter du jour de l'envoi en possession (un mois après la dernière publication au Journal Officiel de la République du Congo) au titre de la recette."
       ],
       "mots_cles": [
-        "État",
-        "redevable",
-        "héritiers",
-        "ayants droit",
-        "biens",
-        "valeurs",
-        "quatre ans",
+        "curatelle",
+        "État redevable",
+        "héritiers ou ayants droit",
+        "prescription de quatre ans",
         "envoi en possession",
-        "publication",
-        "Journal Officiel",
-        "République du Congo",
-        "recette"
+        "Journal Officiel"
       ],
       "statut": "en vigueur"
     }

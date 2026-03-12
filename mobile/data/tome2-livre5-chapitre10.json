@@ -20,16 +20,17 @@
         "Le Directeur de l'enregistrement des Domaines et du Timbre vérifie les comptes et la gestion des Curateurs à leur initiative ou sur demande du Procureur de la République. Un rapport est transmis audit Procureur qui a fait la demande ou au Procureur Général."
       ],
       "mots_cles": [
+        "curatelle",
         "Directeur de l'enregistrement",
-        "Domaines",
-        "Timbre",
+        "Domaines et Timbre",
         "vérification",
         "comptes",
         "gestion",
         "Curateurs",
         "Procureur de la République",
         "rapport",
-        "Procureur Général"
+        "Procureur Général",
+        "surveillance administrative"
       ],
       "statut": "en vigueur"
     },
@@ -37,13 +38,14 @@
       "article": "Art. 46",
       "titre": "Surveillance par le Ministère Public",
       "texte": [
-        "Le Procureur Général et le Procureur de la République sont spécialement chargés de la surveillance de la curatelle. À cet effet, ils peuvent se faire présenter sur récépissé, toute pièce et tout registre et transporter au besoin dans les bureaux du Curateur et s'y livrer à toutes les investigations."
+        "Le Procureur Général et le Procureur de la République sont spécialement chargés de la surveillance de la curatelle. À cet effet, ils peuvent se faire présenter sur récépissé, toute pièce et tout registre et se transporter au besoin dans les bureaux du Curateur et s'y livrer à toutes les investigations."
       ],
       "mots_cles": [
+        "curatelle",
         "Procureur Général",
         "Procureur de la République",
         "surveillance",
-        "curatelle",
+        "Ministère Public",
         "récépissé",
         "pièces",
         "registres",
@@ -58,28 +60,24 @@
       "texte": [
         "Dans les trois premiers mois de chaque année fiscale, le Curateur présente au Tribunal Populaire de District ou d'Arrondissement, son compte de gestion de l'année fiscale précédente.",
         "Ce compte est déposé au Greffe du Tribunal, accompagné d'un inventaire sommaire, en double expédition, des pièces produites et sur lesquelles le Greffier donne son reçu ; mention de cette remise est faite à sa date sur un registre d'ordre tenu au greffe à cet effet ou à défaut sur le répertoire des actes soumis au droit d'enregistrement.",
-        "En cas de négligence grave dans la mise au greffe des comptes d'une ou de plusieurs liquidations de Curateur, il est saisi, celui-ci peut être condamné à une amende de 500 à 5.000 FCFA."
+        "En cas de négligence grave dans la mise au greffe des comptes d'une ou de plusieurs liquidations dont le Curateur est saisi, celui-ci peut être condamné à une amende de 500 à 5.000 FCFA."
       ],
       "mots_cles": [
+        "curatelle",
         "trois premiers mois",
         "année fiscale",
         "Curateur",
         "Tribunal Populaire de District",
-        "Tribunal Populaire d'Arrondissement",
         "compte de gestion",
-        "Greffe",
+        "Greffe du Tribunal",
         "inventaire sommaire",
         "double expédition",
-        "pièces",
         "Greffier",
-        "reçu",
         "registre d'ordre",
-        "répertoire",
         "droit d'enregistrement",
         "négligence grave",
-        "amende",
-        "500 FCFA",
-        "5.000 FCFA"
+        "amende 500 à 5.000 FCFA",
+        "liquidations"
       ],
       "statut": "en vigueur"
     },
@@ -90,26 +88,25 @@
         "Le Tribunal statue sur ces comptes dans les deux mois du dépôt fait au greffe.",
         "Le jugement est rendu sur rapport d'un juge et sur conclusions du Ministère public.",
         "Le Curateur peut, dans les trois mois, se pourvoir par requête devant le Tribunal Populaire de Commune ou de Région qui se prononce dans la même forme et dans le même délai.",
-        "Les comptes du Curateur apurés par les tribunaux ne peuvent être attaqués par les ayants droit, ou toute personne ou collectivité que pour erreur de calcul, omission, faux ou double emploi."
+        "Les comptes du Curateur apurés par les tribunaux ne peuvent être attaqués par les ayants droit, ou toute personne ou collectivité que pour erreur de calcul, émission, faux ou double emploi."
       ],
       "mots_cles": [
+        "curatelle",
         "Tribunal",
-        "comptes",
-        "deux mois",
-        "dépôt",
-        "greffe",
+        "délai deux mois",
+        "dépôt au greffe",
         "jugement",
-        "rapport",
-        "juge",
+        "rapport du juge",
         "Ministère public",
         "Curateur",
-        "trois mois",
-        "requête",
+        "pourvoi par requête",
+        "délai trois mois",
         "Tribunal Populaire de Commune",
         "Tribunal Populaire de Région",
+        "comptes apurés",
         "ayants droit",
         "erreur de calcul",
-        "omission",
+        "émission",
         "faux",
         "double emploi"
       ],
@@ -122,12 +119,12 @@
         "Lorsqu'il est statué par un jugement collectif sur plusieurs comptes, le jugement fixe d'une manière distincte pour chacun d'eux le montant de la recette et de la dépense, et la situation du curateur vis-à-vis des ayants droit."
       ],
       "mots_cles": [
+        "curatelle",
         "jugement collectif",
         "plusieurs comptes",
         "montant",
         "recette",
         "dépense",
-        "situation",
         "curateur",
         "ayants droit"
       ],
@@ -138,27 +135,24 @@
       "titre": "Décisions annuelles et définitives",
       "texte": [
         "Les décisions annuelles qui statuent sur les comptes du Curateur en exercice se bornent à fixer la situation comptable à la fin de l'année et les remises éventuelles au domaine par simple recette (successions inférieures à 500.000 FCFA).",
-        "Celles qui interviennent lorsque la gestion a pris fin, soit comme il est dit à l'article 9, soit par cessation de fonctions (passation de service), prononcent sous la décharge définitive du Curateur.",
+        "Celles qui interviennent lorsque la gestion a pris fin, soit comme il est dit à l'article 9, soit par cessation de fonctions (passation de service), prononcent seules la décharge définitive du Curateur.",
         "Le jugement annuel statue, s'il y a lieu, sur les honoraires acquis au Curateur pour les affaires courantes et le jugement définitif pour celles terminées."
       ],
       "mots_cles": [
+        "curatelle",
         "décisions annuelles",
         "comptes",
         "Curateur en exercice",
         "situation comptable",
-        "remises",
-        "domaine",
-        "successions",
+        "remises au domaine",
         "500.000 FCFA",
-        "gestion",
-        "article 9",
         "cessation de fonctions",
         "passation de service",
         "décharge définitive",
         "jugement annuel",
         "honoraires",
-        "affaires courantes",
-        "jugement définitif"
+        "jugement définitif",
+        "article 9"
       ],
       "statut": "en vigueur"
     },
@@ -169,10 +163,9 @@
         "Toute décision qui rejette comme non justifiées des dépenses portées au compte du Curateur peut, si les justifications sont ultérieurement produites, être l'objet d'un jugement en révision de compte devant le Tribunal qui a rendu la décision de rejet."
       ],
       "mots_cles": [
-        "décision",
-        "rejet",
+        "curatelle",
+        "décision de rejet",
         "dépenses non justifiées",
-        "compte",
         "Curateur",
         "justifications",
         "jugement en révision",
@@ -187,8 +180,8 @@
         "Les prescriptions relatives à la présentation des comptes ne peuvent en aucun cas être opposées aux ayants droit ou à leur représentant. Le Curateur est tenu de leur rendre compte à la première réquisition."
       ],
       "mots_cles": [
+        "curatelle",
         "prescriptions",
-        "présentation des comptes",
         "inopposables",
         "ayants droit",
         "représentant",
