@@ -56,8 +56,8 @@ export default function InvoiceDetailScreen() {
   if (error || !invoice) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 20 }}>
-        <Ionicons name="alert-circle" size={48} color={colors.error} />
-        <Text style={{ color: colors.error, fontSize: 16, marginTop: 12 }}>{error || t("factures.notFound")}</Text>
+        <Ionicons name="alert-circle" size={48} color={"#ef4444"} />
+        <Text style={{ color: "#ef4444", fontSize: 16, marginTop: 12 }}>{error || t("factures.notFound")}</Text>
       </View>
     );
   }
@@ -105,7 +105,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Client */}
-      <View style={{ backgroundColor: colors.cardBg, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.client")}</Text>
         <Row label={t("factures.name")} value={invoice.customerName} />
         <Row label={t("factures.email")} value={invoice.customerEmail} />
@@ -114,7 +114,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Détails */}
-      <View style={{ backgroundColor: colors.cardBg, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.details")}</Text>
         <Row label={t("factures.description")} value={invoice.description} />
         <Row label={t("factures.plan")} value={invoice.plan} />
@@ -124,7 +124,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Montants */}
-      <View style={{ backgroundColor: colors.cardBg, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.amounts")}</Text>
         <Row label={t("factures.amountHT")} value={formatAmount(invoice.amountHT, invoice.currency)} />
         <Row label={`TVA (${invoice.tvaRate}%)`} value={formatAmount(invoice.tvaAmount, invoice.currency)} />
@@ -132,7 +132,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Dates */}
-      <View style={{ backgroundColor: colors.cardBg, borderRadius: 12, padding: 16, marginBottom: 24, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 24, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.dates")}</Text>
         <Row label={t("factures.createdAt")} value={formatDate(invoice.createdAt)} />
         {invoice.paidAt && <Row label={t("factures.paidAt")} value={formatDate(invoice.paidAt)} />}

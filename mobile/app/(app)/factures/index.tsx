@@ -71,8 +71,8 @@ export default function FacturesScreen() {
   if (error) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 20 }}>
-        <Ionicons name="alert-circle" size={48} color={colors.error} />
-        <Text style={{ color: colors.error, fontSize: 16, marginTop: 12, textAlign: "center" }}>{error}</Text>
+        <Ionicons name="alert-circle" size={48} color={"#ef4444"} />
+        <Text style={{ color: "#ef4444", fontSize: 16, marginTop: 12, textAlign: "center" }}>{error}</Text>
         <TouchableOpacity onPress={loadInvoices} style={{ marginTop: 16, backgroundColor: colors.primary, paddingHorizontal: 24, paddingVertical: 10, borderRadius: 8 }}>
           <Text style={{ color: "#fff", fontWeight: "700" }}>{t("common.retry")}</Text>
         </TouchableOpacity>
@@ -104,7 +104,7 @@ export default function FacturesScreen() {
                 key={inv.id}
                 onPress={() => router.push(`/(app)/factures/${inv.id}` as Href)}
                 style={{
-                  backgroundColor: colors.cardBg,
+                  backgroundColor: colors.card,
                   borderRadius: 12,
                   padding: 16,
                   marginBottom: 12,

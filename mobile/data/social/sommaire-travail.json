@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Code du travail",
+    "pays": "République du Congo",
+    "loi": "Loi n°45-75 du 15 mars 1975",
+    "mises_a_jour": ["Loi n°22-88 du 17 septembre 1988", "Loi n°6-96 du 6 mars 1996"],
+    "source": "code-du-travail2.pdf",
+    "total_pages": 53
+  },
+  "sommaire": [
+    {
+      "titre": 1,
+      "titre_nom": "Dispositions générales",
+      "chapitres": []
+    },
+    {
+      "titre": 2,
+      "titre_nom": "Du contrat de travail",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "Du contrat d'apprentissage",
+          "sections": [
+            { "section": 1, "section_nom": "De la nature et de la forme du contrat d'apprentissage" },
+            { "section": 2, "section_nom": "Des conditions du contrat d'apprentissage" },
+            { "section": 3, "section_nom": "Des devoirs du maître et de l'apprenti" },
+            { "section": 4, "section_nom": "De la résolution du contrat d'apprentissage" },
+            { "section": 5, "section_nom": "Des mesures de contrôle du contrat d'apprentissage" }
+          ]
+        },
+        {
+          "chapitre": 2,
+          "chapitre_nom": "Du contrat de travail individuel",
+          "sections": [
+            { "section": 1, "section_nom": "Dispositions d'ensemble" },
+            { "section": 2, "section_nom": "De la conclusion et de l'exécution du contrat" },
+            { "section": 3, "section_nom": "De la résiliation des contrats individuels de travail" },
+            { "section": 4, "section_nom": "De la suspension du contrat individuel de travail" },
+            { "section": 5, "section_nom": "Du chômage économique et technique" }
+          ]
+        },
+        {
+          "chapitre": 3,
+          "chapitre_nom": "De la convention collective et des accords collectifs",
+          "sections": [
+            { "section": 1, "section_nom": "De la nature et de la validité de la convention" },
+            { "section": 2, "section_nom": "Des conventions collectives susceptibles d'extension et de la procédure d'extension" },
+            { "section": 3, "section_nom": "Des accords collectifs d'établissement" },
+            { "section": 4, "section_nom": "Des conventions collectives dans les Services, Entreprises et Établissements" },
+            { "section": 5, "section_nom": "De l'exécution de la convention collective" }
+          ]
+        },
+        {
+          "chapitre": 4,
+          "chapitre_nom": "De la sous entreprise",
+          "sections": []
+        },
+        {
+          "chapitre": 5,
+          "chapitre_nom": "Du travail temporaire et du règlement intérieur",
+          "sections": []
+        },
+        {
+          "chapitre": 6,
+          "chapitre_nom": "Du cautionnement",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "titre": 3,
+      "titre_nom": "Du salaire",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "De la détermination du salaire",
+          "sections": []
+        },
+        {
+          "chapitre": 2,
+          "chapitre_nom": "Du paiement de salaire",
+          "sections": [
+            { "section": 1, "section_nom": "Du mode de paiement de salaire" },
+            { "section": 2, "section_nom": "Des privilèges et des garanties de la créance de salaire" },
+            { "section": 3, "section_nom": "De la prescription de l'action en paiement du salaire" }
+          ]
+        },
+        {
+          "chapitre": 3,
+          "chapitre_nom": "Des retenues sur salaire",
+          "sections": []
+        },
+        {
+          "chapitre": 4,
+          "chapitre_nom": "Des économats",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "titre": 4,
+      "titre_nom": "Des conditions du travail",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "De la durée du travail",
+          "sections": []
+        },
+        {
+          "chapitre": 2,
+          "chapitre_nom": "Du travail de nuit",
+          "sections": []
+        },
+        {
+          "chapitre": 3,
+          "chapitre_nom": "Du travail des femmes et des enfants",
+          "sections": []
+        },
+        {
+          "chapitre": 4,
+          "chapitre_nom": "Du repos hebdomadaire",
+          "sections": []
+        },
+        {
+          "chapitre": 5,
+          "chapitre_nom": "Du congé payé et des transports",
+          "sections": [
+            { "section": 1, "section_nom": "Du congé payé" },
+            { "section": 2, "section_nom": "Voyages et transports" }
+          ]
+        }
+      ]
+    },
+    {
+      "titre": 5,
+      "titre_nom": "De l'hygiène et de la sécurité du service médical",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "De l'hygiène et de la sécurité",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "titre": 6,
+      "titre_nom": "Des organismes et moyens d'exécution",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "De l'administration du travail",
+          "sections": [
+            { "section": 1, "section_nom": "Du corps de l'inspection du travail" },
+            { "section": 2, "section_nom": "Du placement et des bureaux de placement" }
+          ]
+        },
+        {
+          "chapitre": 2,
+          "chapitre_nom": "De la formation professionnelle",
+          "sections": []
+        },
+        {
+          "chapitre": 3,
+          "chapitre_nom": "De la commission nationale consultative du travail",
+          "sections": []
+        },
+        {
+          "chapitre": 4,
+          "chapitre_nom": "Des comités d'entreprise",
+          "sections": []
+        },
+        {
+          "chapitre": 5,
+          "chapitre_nom": "Des délégués du personnel",
+          "sections": []
+        },
+        {
+          "chapitre": 6,
+          "chapitre_nom": "Des moyens de contrôle",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "titre": 7,
+      "titre_nom": "Des syndicats professionnels",
+      "chapitres": [
+        {
+          "chapitre": 1,
+          "chapitre_nom": "De l'objet des syndicats professionnels et de leur constitution",
+          "sections": []
+        },
+        {
+          "chapitre": "1 bis",
+          "chapitre_nom": "De la représentativité des syndicats",
+          "sections": []
+        },
+        {
+          "chapitre": 2,
+          "chapitre_nom": "De la capacité civile des syndicats professionnels",
+          "sections": []
+        },
+        {
+          "chapitre": 3,
+          "chapitre_nom": "Des marques syndicales",
+          "sections": []
+        },
+        {
+          "chapitre": 4,
+          "chapitre_nom": "Des caisses spéciales de secours mutuels et de retraites",
+          "sections": []
+        },
+        {
+          "chapitre": 5,
+          "chapitre_nom": "Des unions syndicales",
+          "sections": []
+        },
+        {
+          "chapitre": 6,
+          "chapitre_nom": "Des associations professionnelles",
+          "sections": []
+        },
+        {
+          "chapitre": 7,
+          "chapitre_nom": "De la liberté syndicale",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "titre": 8,
+      "titre_nom": "Du règlement des différends du travail",
+      "chapitres": []
+    },
+    {
+      "titre": 9,
+      "titre_nom": "Pénalités",
+      "chapitres": []
+    },
+    {
+      "titre": 10,
+      "titre_nom": "Dispositions transitoires",
+      "chapitres": []
+    }
+  ]
+}

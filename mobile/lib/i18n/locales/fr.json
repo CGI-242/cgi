@@ -278,6 +278,10 @@
     "fullTitle": "Code Général des Impôts",
     "searchPlaceholder": "Rechercher un article, mot-clé...",
     "edition": "Édition 2026",
+    "selector": {
+      "cgi": "Code Général des Impôts",
+      "social": "Code Social (Travail)"
+    },
     "article": "Article",
     "chapter": "Chapitre",
     "section": "Section",

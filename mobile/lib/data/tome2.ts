@@ -26,11 +26,8 @@ import t2l2ch4Data from "@/data/tome2-livre2-chapitre4.json";
 import t2l2ch5Data from "@/data/tome2-livre2-chapitre5.json";
 import t2l2ch6Data from "@/data/tome2-livre2-chapitre6.json";
 import t2l2ncData from "@/data/tome2-livre2-non-codifies.json";
-// Tome 2 - Livre 3 : Impôt sur le revenu des valeurs mobilières
-import t2l3ch1Data from "@/data/tome2-livre3-chapitre1.json";
-import t2l3ch2Data from "@/data/tome2-livre3-chapitre2.json";
-import t2l3ch3Data from "@/data/tome2-livre3-chapitre3.json";
-import t2l3ch4Data from "@/data/tome2-livre3-chapitre4.json";
+// Tome 2 - Livre 3 : Impôt sur le revenu des valeurs mobilières (abrogé)
+import t2l3Data from "@/data/tome2-livre3.json";
 // Tome 2 - Livre 4 : Taxe foncière
 import t2l4ch1Data from "@/data/tome2-livre4-chapitre1.json";
 import t2l4ch2Data from "@/data/tome2-livre4-chapitre2.json";
@@ -82,10 +79,7 @@ const at2l2ch5 = parseArticles(t2l2ch5Data.articles);
 const at2l2ch6 = parseArticles(t2l2ch6Data.articles);
 const at2l2nc = parseArticles(t2l2ncData.articles);
 // Livre 3
-const at2l3ch1 = parseArticles(t2l3ch1Data.articles);
-const at2l3ch2 = parseArticles(t2l3ch2Data.articles);
-const at2l3ch3 = parseArticles(t2l3ch3Data.articles);
-const at2l3ch4 = parseArticles(t2l3ch4Data.articles);
+const at2l3 = parseArticles(t2l3Data.articles);
 // Livre 4
 const at2l4ch1 = parseArticles(t2l4ch1Data.articles);
 const at2l4ch2 = parseArticles(t2l4ch2Data.articles);
@@ -136,10 +130,7 @@ const t2l2ch5 = buildChapitreTree(at2l2ch5, `Chapitre 5 - ${t2l2ch5Data.meta.cha
 const t2l2ch6 = buildChapitreTree(at2l2ch6, `Chapitre 6 - ${t2l2ch6Data.meta.chapitre_titre}`, "t2l2ch6");
 const t2l2nc = buildChapitreTree(at2l2nc, "Droits de timbre non codifiés", "t2l2nc");
 // Livre 3
-const t2l3ch1 = buildChapitreTree(at2l3ch1, `Chapitre 1 - ${t2l3ch1Data.meta.chapitre_titre}`, "t2l3ch1");
-const t2l3ch2 = buildChapitreTree(at2l3ch2, `Chapitre 2 - ${t2l3ch2Data.meta.chapitre_titre}`, "t2l3ch2");
-const t2l3ch3 = buildChapitreTree(at2l3ch3, `Chapitre 3 - ${t2l3ch3Data.meta.chapitre_titre}`, "t2l3ch3");
-const t2l3ch4 = buildChapitreTree(at2l3ch4, `Chapitre 4 - ${t2l3ch4Data.meta.chapitre_titre}`, "t2l3ch4");
+const t2l3node: SommaireNode = { id: "t2l3", label: "Art. 1 à 22 — Abrogé", articles: at2l3 };
 // Livre 4
 const t2l4ch1 = buildChapitreTree(at2l4ch1, `Chapitre 1 - ${t2l4ch1Data.meta.chapitre_titre}`, "t2l4ch1");
 const t2l4ch2 = buildChapitreTree(at2l4ch2, `Chapitre 2 - ${t2l4ch2Data.meta.chapitre_titre}`, "t2l4ch2");
@@ -181,7 +172,7 @@ export const tome2Node: SommaireNode = {
     {
       id: "t2-l3",
       label: "Livre 3 - Impôt sur le revenu des valeurs mobilières (Abrogé)",
-      children: [t2l3ch1, t2l3ch2, t2l3ch3, t2l3ch4],
+      children: [t2l3node],
     },
     {
       id: "t2-l4",
@@ -204,7 +195,7 @@ export const tome2Articles: ArticleData[] = [
   ...at2l1ch1, ...at2l1ch2, ...at2l1ch3, ...at2l1ch4, ...at2l1ch5, ...at2l1ch6, ...at2l1ch7, ...at2l1ch8,
   ...at2l1ch9, ...at2l1ch10, ...at2l1ch11, ...at2l1ch12, ...at2l1ch13, ...at2l1ch14, ...at2l1ch15, ...at2l1ch16,
   ...at2l2ch1, ...at2l2ch2, ...at2l2ch3, ...at2l2ch4, ...at2l2ch5, ...at2l2ch6, ...at2l2nc,
-  ...at2l3ch1, ...at2l3ch2, ...at2l3ch3, ...at2l3ch4,
+  ...at2l3,
   ...at2l4ch1, ...at2l4ch2,
   ...at2l5ch1, ...at2l5ch2, ...at2l5ch3, ...at2l5ch4, ...at2l5ch5, ...at2l5ch6, ...at2l5ch7,
   ...at2l5ch8, ...at2l5ch9, ...at2l5ch10, ...at2l5ch11, ...at2l5ch12, ...at2l5ch13, ...at2l5ch14,

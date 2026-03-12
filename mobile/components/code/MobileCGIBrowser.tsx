@@ -23,8 +23,12 @@ const NODE_ICONS: { icon: keyof typeof Ionicons.glyphMap; color: string }[] = [
   { icon: "folder-open-outline", color: "#059669" },
 ];
 
+type CodeId = "cgi" | "social";
+
 type Props = {
   sommaire: SommaireNode[];
+  activeCode?: CodeId;
+  onCodeChange?: (code: CodeId) => void;
 };
 
 function countArticles(node: SommaireNode): number {
@@ -501,7 +505,7 @@ function SearchResultsView({ results, onSelect }: { results: SearchResult[]; onS
 }
 
 // ── Composant principal ──
-export default function MobileCGIBrowser({ sommaire }: Props) {
+export default function MobileCGIBrowser({ sommaire, activeCode = "cgi", onCodeChange }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
 
@@ -592,8 +596,76 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
       ) : currentNode ? (
         <ChapterReader chapter={currentNode} colors={colors} />
       ) : (
-        // Racine : liste des tomes
-        <NodeListView nodes={sommaire} onSelect={handleSelectNode} title={t("code.fullTitle")} />
+        // Racine : sélecteur de code + liste des tomes
+        <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 30 }}>
+          {/* Sélecteur de code */}
+          {onCodeChange && (
+            <View style={{ flexDirection: "row", marginBottom: 16, gap: 8 }}>
+              {(["cgi", "social"] as CodeId[]).map((code) => (
+                <TouchableOpacity
+                  key={code}
+                  onPress={() => { onCodeChange(code); setNavStack([]); setSelectedArticle(null); setSearch(""); }}
+                  style={{
+                    flex: 1,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: activeCode === code ? colors.accent : colors.card,
+                    borderWidth: 1,
+                    borderColor: activeCode === code ? colors.accent : colors.border,
+                    borderRadius: 10,
+                    paddingVertical: 10,
+                    gap: 6,
+                  }}
+                >
+                  <Ionicons
+                    name={code === "cgi" ? "book-outline" : "people-outline"}
+                    size={16}
+                    color={activeCode === code ? "#fff" : colors.textMuted}
+                  />
+                  <Text style={{
+                    fontFamily: fonts.bold,
+                    fontWeight: fontWeights.bold,
+                    fontSize: 13,
+                    color: activeCode === code ? "#fff" : colors.text,
+                  }}>
+                    {t(`code.selector.${code}`)}
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+          {/* Titre */}
+          <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 20, color: colors.text, marginBottom: 16 }}>
+            {activeCode === "cgi" ? t("code.fullTitle") : "Code du travail"}
+          </Text>
+          {/* Liste des noeuds */}
+          {sommaire.map((node, idx) => {
+            const artCount = countArticles(node);
+            const hasChildren = (node.children && node.children.length > 0) || (node.articles && node.articles.length > 0);
+            const ic = NODE_ICONS[idx % NODE_ICONS.length];
+            return (
+              <Card key={node.id} onPress={() => handleSelectNode(node)}>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+                  <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: ic.color + "18", alignItems: "center", justifyContent: "center" }}>
+                    <Ionicons name={ic.icon} size={20} color={ic.color} />
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text }} numberOfLines={2}>
+                      {node.label}
+                    </Text>
+                    {artCount > 0 && (
+                      <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+                        {artCount} article{artCount > 1 ? "s" : ""}
+                      </Text>
+                    )}
+                  </View>
+                  {hasChildren && <Ionicons name="chevron-forward" size={18} color={colors.textMuted} />}
+                </View>
+              </Card>
+            );
+          })}
+        </ScrollView>
       )}
     </View>
   );

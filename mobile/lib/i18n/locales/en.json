@@ -278,6 +278,10 @@
     "fullTitle": "General Tax Code",
     "searchPlaceholder": "Search for an article, keyword...",
     "edition": "2026 Edition",
+    "selector": {
+      "cgi": "General Tax Code",
+      "social": "Social Code (Labour)"
+    },
     "article": "Article",
     "chapter": "Chapter",
     "section": "Section",
