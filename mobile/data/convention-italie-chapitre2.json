@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Italie",
     "pays": "République du Congo / Italie",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-IT",
     "partie": null,
     "livre": null,
@@ -29,7 +29,20 @@
         "i) l'expression « autorité compétente » désigne : i) dans le cas du Congo : le Ministère des Finances ; ii) dans le cas de l'Italie : le Ministère des Finances.",
         "2) Pour l'application de la Convention par un État contractant, toute expression qui n'y est pas définie a le sens que lui attribue le droit de cet État contractant concernant les impôts auxquels s'applique la Convention, à moins que le contexte n'exige une interprétation différente."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "définitions générales",
+        "Congo",
+        "Italie",
+        "personne",
+        "société",
+        "entreprise",
+        "trafic international",
+        "nationaux",
+        "autorité compétente",
+        "mer territoriale",
+        "eaux surjacentes",
+        "fonds marins"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -44,7 +57,16 @@
         "d) si cette personne possède la nationalité des deux États ou si elle ne possède la nationalité d'aucun d'eux, les autorités compétentes des États contractants tranchent la question d'un commun accord.",
         "3) Lorsque, selon les dispositions du paragraphe 1, une personne autre qu'une personne physique est un résident des deux États contractants, elle est considérée comme un résident de l'État où son siège de direction effective est situé."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "résident",
+        "domicile",
+        "résidence",
+        "foyer d'habitation permanent",
+        "centre des intérêts vitaux",
+        "nationalité",
+        "siège de direction effective",
+        "double résidence"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -70,7 +92,20 @@
         "5) On ne considère pas qu'une entreprise d'un État contractant a un établissement stable dans l'autre État contractant du seul fait qu'elle y exerce son activité par l'entremise d'un courtier, d'un commissionnaire général ou de tout autre intermédiaire jouissant d'un statut indépendant à condition que ces personnes agissent dans le cadre ordinaire de leur activité.",
         "6) Le fait qu'une société qui est un résident d'un État contractant contrôle ou est contrôlée par une société qui est un résident de l'autre État contractant ou qui y exerce son activité (que ce soit par l'intermédiaire d'un établissement stable ou non) ne suffit pas en lui-même à faire de l'une quelconque de ces sociétés un établissement stable de l'autre."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "établissement stable",
+        "installation fixe d'affaires",
+        "succursale",
+        "bureau",
+        "usine",
+        "mine",
+        "chantier de construction",
+        "agent indépendant",
+        "six mois",
+        "caractère préparatoire ou auxiliaire",
+        "courtier",
+        "commissionnaire"
+      ],
       "statut": "en vigueur"
     }
   ]

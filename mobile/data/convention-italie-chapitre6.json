@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Italie",
     "pays": "République du Congo / Italie",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-IT",
     "partie": null,
     "livre": null,
@@ -22,7 +22,12 @@
         "a) aux impôts perçus par voie de retenue à la source, aux sommes réalisées à compter du 1er janvier de l'année suivant celle de l'échange des instruments de ratification ;",
         "b) en ce qui concerne les autres impôts sur le revenu, aux impôts applicables pour les périodes imposables commençant à compter du 1er janvier de l'année suivant celle de l'échange des instruments de ratification."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "entrée en vigueur",
+        "ratification",
+        "notification",
+        "date d'effet"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -33,7 +38,13 @@
         "a) aux impôts perçus par voie de retenue à la source, aux sommes réalisées à compter du 1er janvier de l'année civile suivant celle au cours de laquelle la dénonciation aura été notifiée ;",
         "b) aux autres impôts sur le revenu, aux revenus réalisés pendant l'année civile pour la fin de la dénonciation aura été notifiée ou afférente à l'exercice comptable clos au cours de cette année."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "dénonciation",
+        "préavis",
+        "cessation",
+        "voie diplomatique",
+        "six mois"
+      ],
       "statut": "en vigueur"
     }
   ]

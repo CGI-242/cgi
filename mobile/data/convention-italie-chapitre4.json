@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Italie",
     "pays": "République du Congo / Italie",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-IT",
     "partie": null,
     "livre": null,
@@ -26,7 +26,14 @@
         "Dans ce cas, l'Italie doit déduire des impôts ainsi établis l'impôt sur les revenus payé au Congo mais le montant de la déduction ne peut pas dépasser la quote-part d'impôt italien imputable auxdits éléments de revenu dans la proportion où ces éléments participent à la formation du revenu total.",
         "Toutefois, aucune déduction ne sera accordée dans le cas où l'élément de revenu serait assujetti en Italie à l'imposition par voie de retenue à titre d'impôt sur demande du bénéficiaire du revenu conformément à la législation italienne."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "double imposition",
+        "élimination",
+        "crédit d'impôt",
+        "déduction",
+        "exonération",
+        "méthode d'imputation"
+      ],
       "statut": "en vigueur"
     }
   ]

@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Italie",
     "pays": "République du Congo / Italie",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-IT",
     "partie": null,
     "livre": null,
@@ -22,7 +22,14 @@
         "3) Les dispositions du paragraphe 1 s'appliquent aux revenus provenant de l'exploitation directe, de la location ou de l'affermage, ainsi que de toute autre forme d'exploitation des biens immobiliers.",
         "4) Les dispositions des paragraphes 1 et 3 s'appliquent également aux revenus provenant des biens immobiliers d'une entreprise ainsi qu'aux revenus des biens immobiliers servant à l'exercice d'une profession indépendante."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "revenus immobiliers",
+        "biens immobiliers",
+        "exploitation agricole",
+        "exploitation forestière",
+        "usufruit",
+        "droit de jouissance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -37,7 +44,14 @@
         "6) Pour l'application des paragraphes précédents, les bénéfices à imputer à l'établissement stable sont déterminés chaque année selon la même méthode, à moins qu'il n'existe des motifs valables et suffisants de procéder autrement.",
         "7) Lorsque les bénéfices comprennent des éléments de revenus traités séparément dans d'autres articles de la présente Convention, les dispositions de ces articles ne sont pas affectées par les dispositions du présent article."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "bénéfices des entreprises",
+        "établissement stable",
+        "imputation des frais",
+        "déduction des dépenses",
+        "prix de pleine concurrence",
+        "pêche"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -45,10 +59,18 @@
       "titre": "Navigation maritime et aérienne",
       "texte": [
         "1) Les bénéfices provenant de l'exploitation, en trafic international, de navires ou d'aéronefs ne sont imposables que dans l'État contractant où le siège de direction effective de l'entreprise est situé.",
-        "2) Si le siège de direction effective d'une entreprise de navigation maritime est à bord d'un navire, ce siège est considéré comme situé dans l'État contractant où se trouve le port d'attache de ce navire ou, à défaut de port d'attache, dans l'État contractant dont l'exploitant du navire est un résident.",
+        "2) Si le siège de direction effective d'une entreprise de navigation maritime est à bord d'un navire, ce siège est considéré comme situé dans l'État contractant où se trouve le port d'attache de ce navire ou, à défaut de port d'attache, dans l'État contractant dont l'exploitation du navire est un résident.",
         "3) Les dispositions du paragraphe 1 s'appliquent aussi aux bénéfices provenant de la participation à un pool, une exploitation en commun ou un organisme international d'exploitation."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "navigation maritime",
+        "navigation aérienne",
+        "trafic international",
+        "siège de direction effective",
+        "transport",
+        "navires",
+        "aéronefs"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -60,7 +82,13 @@
         "b) les mêmes personnes participent directement ou indirectement à la direction, au contrôle ou au capital d'une entreprise d'un État contractant et d'une entreprise de l'autre État contractant,",
         "et que, dans l'un et l'autre cas, les deux entreprises sont, dans leurs relations commerciales ou financières, liées par des conditions convenues ou imposées, qui diffèrent de celles qui seraient convenues entre des entreprises indépendantes, les bénéfices qui, sans ces conditions, auraient été réalisés par l'une des entreprises mais n'ont pu l'être en fait à cause de ces conditions, peuvent être inclus dans les bénéfices de cette entreprise et imposés en conséquence."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "entreprises associées",
+        "prix de transfert",
+        "ajustement",
+        "pleine concurrence",
+        "liens de dépendance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -78,7 +106,17 @@
         "5) Lorsqu'une société qui est un résident d'un État contractant tire des bénéfices ou des revenus de l'autre État contractant, cet autre État ne peut percevoir aucun impôt sur les dividendes payés par la société, sauf dans la mesure où ces dividendes sont payés à un résident de cet autre État ou dans la mesure où la participation génératrice des dividendes se rattache effectivement à un établissement stable ou à une base fixe située dans cet autre État, ni prélever aucun impôt, au titre de l'imposition des bénéfices non distribués, sur les bénéfices non distribués de la société, même si les dividendes payés ou les bénéfices non distribués consistent en tout ou en partie en bénéfices ou revenus provenant de cet autre État.",
         "6) Nonobstant les dispositions du paragraphe 5, lorsqu'une société qui est un résident d'un État exerce dans l'autre État une activité industrielle ou commerciale par l'intermédiaire d'un établissement stable qui y est situé, les bénéfices de cet établissement stable peuvent, après avoir supporté l'impôt sur les bénéfices de cet établissement, être assujettis conformément à la législation de cet autre État à un impôt dont le taux ne peut excéder 10 %."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "dividendes",
+        "retenue à la source",
+        "participation",
+        "société mère",
+        "taux réduit",
+        "actions",
+        "parts sociales",
+        "15%",
+        "10%"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -90,7 +128,14 @@
         "3) Les dispositions du paragraphe 1 ne s'appliquent pas lorsque le bénéficiaire effectif des intérêts, résident d'un État contractant, exerce dans l'autre État contractant d'où proviennent les intérêts, soit une activité industrielle ou commerciale par l'intermédiaire d'un établissement stable qui y est situé, soit une profession indépendante au moyen d'une base fixe qui y est située et que la créance génératrice des intérêts s'y rattache effectivement. Dans ce cas, les intérêts sont imposables dans cet État contractant selon sa propre législation interne.",
         "4) Lorsque, en raison de relations spéciales existant entre le débiteur et le bénéficiaire effectif ou que l'un et l'autre entretiennent avec des tierces personnes, le montant des intérêts, compte tenu de la créance pour laquelle ils sont payés, excède celui dont seraient convenus le débiteur et le bénéficiaire effectif en l'absence de pareilles relations, les dispositions du présent article ne s'appliquent qu'à ce dernier montant. Dans ce cas, la partie excédentaire des paiements reste imposable selon la législation de chaque État contractant et compte tenu des autres dispositions de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "intérêts",
+        "retenue à la source",
+        "créances",
+        "prêts",
+        "obligations",
+        "État contractant"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -104,7 +149,18 @@
         "5) Les redevances sont considérées comme provenant d'un État contractant lorsque le débiteur est cet État lui-même, une subdivision politique ou administrative, une collectivité locale ou un résident de cet État. Toutefois, lorsque le débiteur des redevances, qu'il soit ou non un résident d'un État contractant, a, dans un État contractant, un établissement stable, ou une base fixe, pour lequel la dette donnant lieu au paiement des redevances a été contractée et qui supporte la charge de ces redevances, celles-ci sont considérées comme provenant de l'État où l'établissement stable, ou la base fixe, est situé.",
         "6) Lorsque en raison de relations spéciales existant entre le débiteur et le bénéficiaire effectif ou que l'un et l'autre entretiennent avec des tierces personnes, le montant des redevances, compte tenu de la prestation pour laquelle elles sont payées, excède celui dont seraient convenus le débiteur et le bénéficiaire effectif en l'absence de pareilles relations, les dispositions du présent article ne s'appliquent qu'à ce dernier montant. Dans ce cas, la partie excédentaire des paiements reste imposable selon la législation de chaque État contractant et compte tenu des autres dispositions de la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "redevances",
+        "droits d'auteur",
+        "brevets",
+        "marques",
+        "assistance technique",
+        "équipement industriel",
+        "retenue à la source",
+        "10%",
+        "secret",
+        "logiciel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -118,7 +174,17 @@
         "5) Les gains provenant de l'aliénation des actions autres que celles mentionnées au paragraphe 4 et qui représente une participation au moins de 25 % dans une société qui est résident d'un État contractant sont imposables dans cet État.",
         "6) Les gains provenant de l'aliénation de tous biens autres que ceux visés aux paragraphes précédents ne sont imposables que dans l'État contractant dont le cédant est un résident."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "gains en capital",
+        "plus-values",
+        "aliénation",
+        "biens immobiliers",
+        "établissement stable",
+        "navires",
+        "aéronefs",
+        "actions",
+        "participation substantielle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -128,7 +194,13 @@
         "1) Les revenus qu'un résident d'un État contractant tire d'une profession libérale ou d'autres activités de caractère indépendant ne sont imposables que dans cet État, à moins que ce résident ne dispose de façon habituelle dans l'autre État contractant d'une base fixe pour l'exercice de ses activités. S'il dispose d'une telle base fixe, les revenus sont imposables dans l'autre État contractant, mais uniquement dans la mesure où ils sont imputables à cette base fixe.",
         "2) L'expression « profession libérale » comprend notamment les activités indépendantes d'ordre scientifique, littéraire, artistique, éducatif ou pédagogique, ainsi que les activités indépendantes des médecins, avocats, ingénieurs, architectes, dentistes et comptables."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professions indépendantes",
+        "base fixe",
+        "profession libérale",
+        "activités indépendantes",
+        "183 jours"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -142,7 +214,15 @@
         "c) la charge des rémunérations n'est pas supportée par un établissement stable ou une base fixe que l'employeur a dans l'autre État.",
         "3) Nonobstant les dispositions précédentes du présent article, les rémunérations reçues au titre d'un emploi salarié exercé à bord d'un navire ou d'un aéronef exploité en trafic international, sont imposables dans l'État contractant où le siège de direction effective de l'entreprise est situé."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professions dépendantes",
+        "emploi salarié",
+        "salaires",
+        "traitements",
+        "183 jours",
+        "employeur",
+        "établissement stable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -151,7 +231,13 @@
       "texte": [
         "Les tantièmes, jetons de présence et autres rétributions similaires qu'un résident d'un État contractant reçoit en sa qualité de membre du conseil d'administration ou de surveillance d'une société qui est un résident de l'autre État contractant sont imposables dans cet autre État."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "administrateurs",
+        "tantièmes",
+        "conseil d'administration",
+        "conseil de surveillance",
+        "rémunérations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -163,7 +249,13 @@
         "3) Nonobstant les dispositions du paragraphe 1, les rémunérations ou bénéfices, et les traitements, salaires et autres revenus similaires qu'un artiste du spectacle ou un sportif, qui est un résident d'un État, tire de ses activités personnelles exercées dans l'autre État et en cette qualité, ne sont imposables que dans le premier État lorsque ces activités dans l'autre État sont financées par des fonds publics du premier État, ou de ses subdivisions politiques ou administratives ou collectivités locales.",
         "4) Nonobstant les dispositions du paragraphe 2, lorsque les revenus d'activités qu'un artiste du spectacle ou un sportif exerce personnellement et en cette qualité dans un État sont attribués non pas à l'artiste ou au sportif lui-même mais à une autre personne, ces revenus ne sont imposables, nonobstant les dispositions des articles 7, 14 et 15, que dans l'autre État lorsque cette autre personne est financée par des fonds publics de cet autre État ou de l'une de ses subdivisions politiques ou administratives ou collectivités locales."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "artistes",
+        "sportifs",
+        "spectacle",
+        "activités personnelles",
+        "échanges culturels"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -174,7 +266,12 @@
         "2) Nonobstant les dispositions du paragraphe 1, les pensions et autres sommes payées en application de la législation sur la sécurité sociale d'un État ne sont imposables que dans cet État, à condition qu'elles ne proviennent pas de cotisations.",
         "3) Si un résident d'un État contractant devient résident de l'autre État contractant, les paiements perçus par ledit résident par suite de la cessation d'une relation de travail dans le premier État – sous forme d'indemnités de liquidation ou bien de rémunération forfaitaire de nature équivalente, ne sont imposables que dans le premier État contractant. L'expression « indemnité de liquidation ou de cessation des fonctions » inclut tout paiement effectué par suite de la cessation des fonctions ou de la relation de travail d'une personne physique."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "pensions",
+        "rémunérations similaires",
+        "emploi antérieur",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -187,7 +284,15 @@
         "2-b) Toutefois, ces pensions ne sont imposables que dans l'autre État contractant si le bénéficiaire est un résident de cet État et s'il en possède la nationalité, sans avoir la nationalité de l'État d'où proviennent les pensions.",
         "3) Les dispositions des articles 15, 16 et 18 s'appliquent aux rémunérations et pensions payées au titre de services rendus dans le cadre d'une activité industrielle ou commerciale exercée par un État contractant ou l'une de ses subdivisions politiques ou administratives ou collectivités locales."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "fonctions publiques",
+        "services gouvernementaux",
+        "État",
+        "subdivision politique",
+        "collectivité locale",
+        "pensions publiques",
+        "nationalité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -196,7 +301,14 @@
       "texte": [
         "Les professeurs ou les enseignants qui séjournent temporairement dans un État contractant pendant une période n'excédant pas deux ans aux fins d'y enseigner ou de s'y livrer à des recherches dans une université, un collège, une école ou dans une autre institution d'enseignement et qui sont, ou qui étaient immédiatement avant ce séjour, des résidents de l'autre État contractant, ne sont pas imposables dans ledit premier État contractant pour les rémunérations provenant de l'activité d'enseignement ou de recherche."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "professeurs",
+        "enseignants",
+        "recherche",
+        "enseignement",
+        "exonération",
+        "deux ans"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -207,7 +319,13 @@
         "2) Nonobstant les dispositions des articles 14 et 15, les rémunérations qu'un étudiant ou un stagiaire qui est, ou qui était immédiatement avant de se rendre dans un État, un résident de l'autre État et qui séjourne dans le premier État à seule fin d'y poursuivre ses études ou sa formation, reçoit au titre de services rendus dans le premier État, ne sont pas imposables dans le premier État à condition que ces services soient en rapport avec ses études ou sa formation ou que la rémunération de ces services soit nécessaire pour compléter les ressources dont il dispose pour son entretien.",
         "3) Les avantages prévus par le présent article ne sont accordés que pour la période de temps raisonnablement ou normalement nécessaire pour terminer l'instruction ou la formation professionnelle. Toutefois, en aucun cas, une personne ne peut jouir desdits avantages prévus pendant plus de cinq ans consécutifs."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "étudiants",
+        "stagiaires",
+        "formation",
+        "entretien",
+        "exonération"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -217,7 +335,12 @@
         "1) Les éléments du revenu d'un résident d'un État contractant, d'où qu'ils proviennent, qui ne sont pas traités dans les articles précédents de la présente Convention ne sont imposables que dans cet État.",
         "2) Les dispositions du paragraphe 1 ne s'appliquent pas aux revenus autres que les revenus provenant de biens immobiliers tels qu'ils sont définis au paragraphe 2 de l'article 6, lorsque le bénéficiaire de tels revenus, résident d'un État contractant, exerce dans l'autre État contractant, soit une activité industrielle ou commerciale par l'intermédiaire d'un établissement stable qui y est situé, soit une profession indépendante au moyen d'une base fixe qui y est située, et que le droit ou le bien générateur des revenus s'y rattache effectivement. Dans ce cas, les éléments du revenu sont imposables dans ledit autre État contractant selon sa propre législation interne."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "autres revenus",
+        "revenus non mentionnés",
+        "établissement stable",
+        "base fixe"
+      ],
       "statut": "en vigueur"
     }
   ]

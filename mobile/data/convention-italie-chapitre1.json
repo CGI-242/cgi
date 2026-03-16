@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Italie",
     "pays": "République du Congo / Italie",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-IT",
     "partie": null,
     "livre": null,
@@ -20,7 +20,12 @@
         "NB - Convention entre le Congo et l'Italie en vue d'éviter les doubles impositions en matière d'impôts sur le revenu et de prévenir l'évasion fiscale, signée le 15 octobre 2003, la convention est entrée en vigueur le 1er janvier 2014.",
         "La présente Convention s'applique aux personnes qui sont des résidents d'un État contractant ou de chacun des deux États contractants."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "personnes visées",
+        "résidents",
+        "État contractant",
+        "champ d'application"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -45,7 +50,20 @@
         "(ci-dessous dénommés « impôts italiens »).",
         "4) La Convention s'applique aussi aux impôts de nature identique ou analogue qui seraient établis après la date de signature de la Convention et qui s'ajouteraient aux impôts actuels ou qui les remplaceraient. Les autorités compétentes des États contractants se communiquent les modifications importantes apportées à leurs législations fiscales respectives."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "impôts visés",
+        "impôt sur le revenu",
+        "plus-values",
+        "retenue à la source",
+        "impôts congolais",
+        "impôts italiens",
+        "bénéfices des sociétés",
+        "taxe forfaitaire sur les salaires",
+        "taxe spéciale sur les sociétés",
+        "taxe d'apprentissage",
+        "personnes physiques",
+        "personnes morales"
+      ],
       "statut": "en vigueur"
     }
   ]
