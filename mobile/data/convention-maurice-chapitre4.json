@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Maurice",
     "pays": "République du Congo / République de Maurice",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-MU",
     "partie": null,
     "livre": null,
@@ -23,7 +23,16 @@
         "c) le crédit imputable selon les dispositions des paragraphes (a) et (b), ne peut toutefois excéder l'impôt mauricien (calculé avant le crédit imputable) sur les bénéfices, revenus ou gains provenant du Congo.",
         "2) En ce qui concerne le Congo, la double imposition est évitée de la manière suivante : lorsqu'un résident du Congo reçoit des revenus qui, conformément aux dispositions de la présente convention, sont imposables à Maurice, le Congo accorde, nonobstant les dispositions de sa législation fiscale interne, une déduction sur l'impôt congolais qu'il perçoit sur les revenus de ce résident d'un montant égal à l'impôt payé à Maurice. Toutefois, cette déduction ne peut excéder la fraction de l'impôt, calculé avant déduction, sur les revenus imposables à Maurice."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "double imposition",
+        "élimination",
+        "crédit d'impôt",
+        "déduction",
+        "exonération",
+        "méthode d'imputation",
+        "impôt congolais",
+        "impôt mauricien"
+      ],
       "statut": "en vigueur"
     }
   ]

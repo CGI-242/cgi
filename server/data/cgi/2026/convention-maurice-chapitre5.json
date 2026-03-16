@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Maurice",
     "pays": "République du Congo / République de Maurice",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-MU",
     "partie": null,
     "livre": null,
@@ -23,7 +23,15 @@
         "4) Les entreprises d'un État contractant, dont le capital est en totalité ou en partie, directement ou indirectement, détenu ou contrôlé par un ou plusieurs résidents de l'autre État contractant, ne sont soumises dans le premier État à aucune imposition ou obligation y relative, qui est autre ou plus lourde que celles auxquelles sont ou pourront être assujetties les autres entreprises similaires du premier État.",
         "5) Le terme « imposition » désigne dans le présent article les impôts visés dans la présente Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "non-discrimination",
+        "nationalité",
+        "égalité de traitement",
+        "établissement stable",
+        "déductions",
+        "abattements",
+        "capital détenu"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -31,15 +39,27 @@
       "titre": "Procédure amiable",
       "texte": [
         "1) Lorsqu'une personne estime que les mesures prises par un État contractant ou par les deux États contractants entraînent ou entraîneront pour elle une imposition non conforme aux dispositions de la présente Convention, elle peut, indépendamment des recours prévus par le droit interne de ces États, soumettre son cas à l'autorité compétente de l'État contractant dont elle est un résident, ou si son cas relève de l'article 23, paragraphe 1, à celle de l'État contractant dont elle possède la nationalité. Le cas doit être soumis dans les trois ans qui suivent la première notification de la mesure qui entraîne une imposition non conforme aux dispositions de la Convention.",
-        "2) L'autorité compétente s'efforce, si la réclamation lui paraît fondée et si elle n'est pas elle-même en mesure d'y apporter une solution satisfaisante, de résoudre le cas par voie d'accord amiable avec l'autorité compétente de l'autre État contractant en vue d'éviter une imposition non conforme à la Convention. L'accord est appliqué quels que soient les délais prévus par le droit interne des États contractants.",
+        "2) L'autorité compétente s'efforce, si la requête lui paraît fondée et si elle n'est pas elle-même en mesure d'y apporter une solution satisfaisante, de résoudre le cas par voie d'accord amiable avec l'autorité compétente de l'autre État contractant en vue d'éviter une imposition non conforme à la Convention. L'accord est appliqué quels que soient les délais prévus par le droit interne des États contractants.",
         "3) Les autorités compétentes des États contractants s'efforcent, par voie d'accord amiable, de résoudre les difficultés ou de dissiper les doutes auxquels peuvent donner lieu l'interprétation ou l'application de la Convention.",
         "4) Les autorités compétentes des États contractants peuvent communiquer directement entre elles en vue de parvenir à un accord comme il est indiqué aux paragraphes précédents. Ces échanges de vue peuvent avoir lieu au sein d'une commission composée de représentants des autorités compétentes des États contractants.",
         "5) Lorsque :",
-        "a) en vertu du paragraphe 1, une personne a soumis un cas à l'autorité compétente d'un État contractant en se fondant sur le fait que les mesures prises par un État contractant ou par les deux États contractants entraînent pour cette personne une imposition non conforme aux dispositions de la Convention, et que",
+        "a) en vertu du paragraphe 1, une personne a soumis un cas à l'autorité compétente d'un État contractant en se fondant sur le fait que les mesures prises par un État contractant ou par les deux États contractants ont entraîné pour cette personne une imposition non conforme aux dispositions de cette Convention, et que",
         "b) les autorités compétentes ne parviennent pas à un accord permettant de résoudre ce cas en vertu du paragraphe 2 dans un délai de deux ans à compter de la présentation du cas à l'autorité compétente de l'autre État contractant,",
-        "les questions non résolues soulevées par ce cas doivent être soumises à arbitrage si la personne en fait la demande. Ces questions non résolues ne doivent toutefois pas être soumises à arbitrage si une décision sur ces questions a déjà été rendue par un tribunal judiciaire ou administratif de l'un des États à moins qu'une personne directement concernée par le cas n'accepte par l'accord amiable par lequel la décision d'arbitrage est applicable, cette décision lie les deux États contractants et doit être appliquée quels que soient les délais prévus par le droit interne de ces États. Les autorités compétentes des États contractants règlent par accord mutuel les modalités d'application de ce paragraphe."
+        "les questions non résolues soulevées par ce cas doivent être soumises à arbitrage si la personne en fait la demande. Ces questions non résolues ne doivent toutefois pas être soumises à arbitrage si une décision sur ces questions a déjà été rendue par un tribunal judiciaire ou administratif de l'un des États à moins qu'une personne directement concernée par le cas n'accepte pas l'accord amiable par lequel la décision d'arbitrage est appliquée, cette décision lie les deux États contractants et doit être appliquée quels que soient les délais prévus par le droit interne de ces États. Les autorités compétentes des États contractants règlent par accord mutuel les modalités d'application de ce paragraphe."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "procédure amiable",
+        "accord amiable",
+        "autorités compétentes",
+        "requête",
+        "imposition non conforme",
+        "trois ans",
+        "deux ans",
+        "arbitrage",
+        "tribunal judiciaire",
+        "interprétation",
+        "commission"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -55,7 +75,19 @@
         "4) Si des renseignements sont demandés par un État contractant conformément à cet article, l'autre État contractant utilise les pouvoirs dont il dispose pour obtenir les renseignements demandés, même s'il n'en a pas besoin à ses propres fins fiscales. L'obligation qui figure dans la phrase précédente est soumise aux limitations prévues au paragraphe 3 sauf si ces limitations sont susceptibles d'empêcher un État contractant de communiquer des renseignements uniquement parce que ceux-ci ne présentent pas d'intérêt pour lui dans le cadre national.",
         "5) En aucun cas les dispositions du paragraphe 3 ne peuvent être interprétées comme permettant à un État contractant de refuser de communiquer des renseignements uniquement parce que ceux-ci sont détenus par une banque, un autre établissement financier, un mandataire ou une personne agissant en tant qu'agent ou fiduciaire ou parce que ces renseignements se rattachent aux droits de propriété d'une personne."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "échange de renseignements",
+        "informations fiscales",
+        "secret",
+        "confidentialité",
+        "assistance administrative",
+        "ordre public",
+        "banque",
+        "établissement financier",
+        "fiduciaire",
+        "tribunaux",
+        "organes administratifs"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -78,7 +110,18 @@
         "c) de prêter assistance si l'autre État contractant n'a pas pris toutes les mesures raisonnables de recouvrement ou de conservation, selon le cas, qui sont disponibles en vertu de sa législation ou de sa pratique administrative ;",
         "d) de prêter assistance dans les cas où la charge administrative qui en résulte pour cet État est nettement disproportionnée par rapport aux avantages qui peuvent en être tirés par l'autre État contractant."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "assistance au recouvrement",
+        "créances fiscales",
+        "recouvrement",
+        "mesures conservatoires",
+        "pénalités administratives",
+        "délais de prescription",
+        "ordre public",
+        "subdivisions politiques",
+        "collectivités locales",
+        "tribunaux"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -87,7 +130,13 @@
       "texte": [
         "Les dispositions de la présente Convention ne portent pas atteinte aux privilèges fiscaux dont bénéficient les membres des missions diplomatiques ou des postes consulaires en vertu soit des règles générales du droit des gens, soit des dispositions d'accords particuliers."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "agents diplomatiques",
+        "fonctionnaires consulaires",
+        "privilèges fiscaux",
+        "immunités",
+        "droit des gens"
+      ],
       "statut": "en vigueur"
     }
   ]

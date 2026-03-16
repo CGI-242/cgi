@@ -2,7 +2,7 @@
   "meta": {
     "document": "Convention fiscale Congo-Maurice",
     "pays": "République du Congo / République de Maurice",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "CONV-MU",
     "partie": null,
     "livre": null,
@@ -22,7 +22,14 @@
         "a) à Maurice, sur le revenu des années fiscales commençant à partir du 1er janvier qui suit immédiatement la date de l'entrée en vigueur de la Convention ;",
         "b) au Congo, sur le revenu des années fiscales commençant à partir du 1er janvier et qui suit immédiatement la date de l'entrée en vigueur de la Convention."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "entrée en vigueur",
+        "notification",
+        "procédures requises",
+        "1er janvier",
+        "années fiscales",
+        "date d'effet"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -33,7 +40,15 @@
         "a) à Maurice, sur le revenu de l'année fiscale commençant à partir du 1er janvier qui suit immédiatement la notification de la dénonciation ;",
         "b) au Congo, sur le revenu de l'année fiscale commençant à partir du 1er janvier qui suit immédiatement la notification de la dénonciation."
       ],
-      "mots_cles": [],
+      "mots_cles": [
+        "dénonciation",
+        "30 juin",
+        "cinquième année",
+        "voie diplomatique",
+        "par écrit",
+        "1er janvier",
+        "cessation"
+      ],
       "statut": "en vigueur"
     }
   ]
