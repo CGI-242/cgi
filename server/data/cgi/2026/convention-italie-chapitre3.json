@@ -28,7 +28,11 @@
         "exploitation agricole",
         "exploitation forestière",
         "usufruit",
-        "droit de jouissance"
+        "cheptel",
+        "propriété foncière",
+        "gisements minéraux",
+        "location",
+        "affermage"
       ],
       "statut": "en vigueur"
     },
@@ -50,7 +54,11 @@
         "imputation des frais",
         "déduction des dépenses",
         "prix de pleine concurrence",
-        "pêche"
+        "pêche",
+        "quote-part",
+        "frais généraux",
+        "chiffre d'affaires",
+        "entreprise distincte"
       ],
       "statut": "en vigueur"
     },
@@ -67,9 +75,11 @@
         "navigation aérienne",
         "trafic international",
         "siège de direction effective",
-        "transport",
         "navires",
-        "aéronefs"
+        "aéronefs",
+        "port d'attache",
+        "pool",
+        "exploitation en commun"
       ],
       "statut": "en vigueur"
     },
@@ -87,7 +97,12 @@
         "prix de transfert",
         "ajustement",
         "pleine concurrence",
-        "liens de dépendance"
+        "liens de dépendance",
+        "direction",
+        "contrôle",
+        "capital",
+        "relations commerciales",
+        "relations financières"
       ],
       "statut": "en vigueur"
     },
@@ -111,11 +126,16 @@
         "retenue à la source",
         "participation",
         "société mère",
-        "taux réduit",
         "actions",
         "parts sociales",
+        "bénéficiaire effectif",
+        "8%",
         "15%",
-        "10%"
+        "10%",
+        "bons de jouissance",
+        "parts de mine",
+        "établissement stable",
+        "base fixe"
       ],
       "statut": "en vigueur"
     },
@@ -130,11 +150,16 @@
       ],
       "mots_cles": [
         "intérêts",
-        "retenue à la source",
+        "bénéficiaire effectif",
+        "fonds publics",
+        "obligations d'emprunts",
+        "garanties hypothécaires",
         "créances",
-        "prêts",
-        "obligations",
-        "État contractant"
+        "établissement stable",
+        "base fixe",
+        "relations spéciales",
+        "législation interne",
+        "débiteur"
       ],
       "statut": "en vigueur"
     },
@@ -154,12 +179,16 @@
         "droits d'auteur",
         "brevets",
         "marques",
-        "assistance technique",
+        "logiciels",
+        "films cinématographiques",
+        "procédé secrets",
         "équipement industriel",
-        "retenue à la source",
+        "bénéficiaire effectif",
         "10%",
-        "secret",
-        "logiciel"
+        "établissement stable",
+        "base fixe",
+        "relations spéciales",
+        "expérience industrielle"
       ],
       "statut": "en vigueur"
     },
@@ -183,7 +212,10 @@
         "navires",
         "aéronefs",
         "actions",
-        "participation substantielle"
+        "participation substantielle",
+        "25%",
+        "base fixe",
+        "siège de direction effective"
       ],
       "statut": "en vigueur"
     },
@@ -199,7 +231,15 @@
         "base fixe",
         "profession libérale",
         "activités indépendantes",
-        "183 jours"
+        "médecins",
+        "avocats",
+        "ingénieurs",
+        "architectes",
+        "dentistes",
+        "comptables",
+        "scientifique",
+        "littéraire",
+        "artistique"
       ],
       "statut": "en vigueur"
     },
@@ -221,7 +261,10 @@
         "traitements",
         "183 jours",
         "employeur",
-        "établissement stable"
+        "établissement stable",
+        "base fixe",
+        "trafic international",
+        "siège de direction effective"
       ],
       "statut": "en vigueur"
     },
@@ -234,6 +277,7 @@
       "mots_cles": [
         "administrateurs",
         "tantièmes",
+        "jetons de présence",
         "conseil d'administration",
         "conseil de surveillance",
         "rémunérations"
@@ -253,8 +297,15 @@
         "artistes",
         "sportifs",
         "spectacle",
+        "théâtre",
+        "cinéma",
+        "musique",
+        "radio",
+        "télévision",
         "activités personnelles",
-        "échanges culturels"
+        "fonds publics",
+        "subdivisions politiques",
+        "collectivités locales"
       ],
       "statut": "en vigueur"
     },
@@ -270,7 +321,11 @@
         "pensions",
         "rémunérations similaires",
         "emploi antérieur",
-        "sécurité sociale"
+        "sécurité sociale",
+        "cotisations",
+        "indemnité de liquidation",
+        "cessation des fonctions",
+        "rémunération forfaitaire"
       ],
       "statut": "en vigueur"
     },
@@ -291,7 +346,10 @@
         "subdivision politique",
         "collectivité locale",
         "pensions publiques",
-        "nationalité"
+        "nationalité",
+        "rémunérations publiques",
+        "activité industrielle",
+        "activité commerciale"
       ],
       "statut": "en vigueur"
     },
@@ -307,7 +365,10 @@
         "recherche",
         "enseignement",
         "exonération",
-        "deux ans"
+        "deux ans",
+        "université",
+        "collège",
+        "école"
       ],
       "statut": "en vigueur"
     },
@@ -324,7 +385,12 @@
         "stagiaires",
         "formation",
         "entretien",
-        "exonération"
+        "exonération",
+        "études",
+        "services",
+        "cinq ans",
+        "instruction",
+        "formation professionnelle"
       ],
       "statut": "en vigueur"
     },
@@ -339,7 +405,10 @@
         "autres revenus",
         "revenus non mentionnés",
         "établissement stable",
-        "base fixe"
+        "base fixe",
+        "biens immobiliers",
+        "législation interne",
+        "activité industrielle"
       ],
       "statut": "en vigueur"
     }

@@ -1713,7 +1713,8 @@
       "personnes visées",
       "résidents",
       "État contractant",
-      "champ d'application"
+      "champ d'application",
+      "convention fiscale"
     ],
     "source": "convention-italie.json"
   },
@@ -1775,7 +1776,10 @@
       "centre des intérêts vitaux",
       "nationalité",
       "siège de direction effective",
-      "double résidence"
+      "double résidence",
+      "séjour habituel",
+      "personne physique",
+      "personne morale"
     ],
     "source": "convention-italie.json"
   },
@@ -1813,7 +1817,11 @@
       "exploitation agricole",
       "exploitation forestière",
       "usufruit",
-      "droit de jouissance"
+      "cheptel",
+      "propriété foncière",
+      "gisements minéraux",
+      "location",
+      "affermage"
     ],
     "source": "convention-italie.json"
   },
@@ -1829,7 +1837,11 @@
       "imputation des frais",
       "déduction des dépenses",
       "prix de pleine concurrence",
-      "pêche"
+      "pêche",
+      "quote-part",
+      "frais généraux",
+      "chiffre d'affaires",
+      "entreprise distincte"
     ],
     "source": "convention-italie.json"
   },
@@ -1844,9 +1856,11 @@
       "navigation aérienne",
       "trafic international",
       "siège de direction effective",
-      "transport",
       "navires",
-      "aéronefs"
+      "aéronefs",
+      "port d'attache",
+      "pool",
+      "exploitation en commun"
     ],
     "source": "convention-italie.json"
   },
@@ -1861,7 +1875,12 @@
       "prix de transfert",
       "ajustement",
       "pleine concurrence",
-      "liens de dépendance"
+      "liens de dépendance",
+      "direction",
+      "contrôle",
+      "capital",
+      "relations commerciales",
+      "relations financières"
     ],
     "source": "convention-italie.json"
   },
@@ -1876,11 +1895,16 @@
       "retenue à la source",
       "participation",
       "société mère",
-      "taux réduit",
       "actions",
       "parts sociales",
+      "bénéficiaire effectif",
+      "8%",
       "15%",
-      "10%"
+      "10%",
+      "bons de jouissance",
+      "parts de mine",
+      "établissement stable",
+      "base fixe"
     ],
     "source": "convention-italie.json"
   },
@@ -1892,11 +1916,16 @@
     "chapitre": "1",
     "keywords": [
       "intérêts",
-      "retenue à la source",
+      "bénéficiaire effectif",
+      "fonds publics",
+      "obligations d'emprunts",
+      "garanties hypothécaires",
       "créances",
-      "prêts",
-      "obligations",
-      "État contractant"
+      "établissement stable",
+      "base fixe",
+      "relations spéciales",
+      "législation interne",
+      "débiteur"
     ],
     "source": "convention-italie.json"
   },
@@ -1911,12 +1940,16 @@
       "droits d'auteur",
       "brevets",
       "marques",
-      "assistance technique",
+      "logiciels",
+      "films cinématographiques",
+      "procédé secrets",
       "équipement industriel",
-      "retenue à la source",
+      "bénéficiaire effectif",
       "10%",
-      "secret",
-      "logiciel"
+      "établissement stable",
+      "base fixe",
+      "relations spéciales",
+      "expérience industrielle"
     ],
     "source": "convention-italie.json"
   },
@@ -1935,7 +1968,10 @@
       "navires",
       "aéronefs",
       "actions",
-      "participation substantielle"
+      "participation substantielle",
+      "25%",
+      "base fixe",
+      "siège de direction effective"
     ],
     "source": "convention-italie.json"
   },
@@ -1950,7 +1986,15 @@
       "base fixe",
       "profession libérale",
       "activités indépendantes",
-      "183 jours"
+      "médecins",
+      "avocats",
+      "ingénieurs",
+      "architectes",
+      "dentistes",
+      "comptables",
+      "scientifique",
+      "littéraire",
+      "artistique"
     ],
     "source": "convention-italie.json"
   },
@@ -1967,7 +2011,10 @@
       "traitements",
       "183 jours",
       "employeur",
-      "établissement stable"
+      "établissement stable",
+      "base fixe",
+      "trafic international",
+      "siège de direction effective"
     ],
     "source": "convention-italie.json"
   },
@@ -1980,6 +2027,7 @@
     "keywords": [
       "administrateurs",
       "tantièmes",
+      "jetons de présence",
       "conseil d'administration",
       "conseil de surveillance",
       "rémunérations"
@@ -1996,8 +2044,15 @@
       "artistes",
       "sportifs",
       "spectacle",
+      "théâtre",
+      "cinéma",
+      "musique",
+      "radio",
+      "télévision",
       "activités personnelles",
-      "échanges culturels"
+      "fonds publics",
+      "subdivisions politiques",
+      "collectivités locales"
     ],
     "source": "convention-italie.json"
   },
@@ -2011,7 +2066,11 @@
       "pensions",
       "rémunérations similaires",
       "emploi antérieur",
-      "sécurité sociale"
+      "sécurité sociale",
+      "cotisations",
+      "indemnité de liquidation",
+      "cessation des fonctions",
+      "rémunération forfaitaire"
     ],
     "source": "convention-italie.json"
   },
@@ -2028,7 +2087,10 @@
       "subdivision politique",
       "collectivité locale",
       "pensions publiques",
-      "nationalité"
+      "nationalité",
+      "rémunérations publiques",
+      "activité industrielle",
+      "activité commerciale"
     ],
     "source": "convention-italie.json"
   },
@@ -2044,7 +2106,10 @@
       "recherche",
       "enseignement",
       "exonération",
-      "deux ans"
+      "deux ans",
+      "université",
+      "collège",
+      "école"
     ],
     "source": "convention-italie.json"
   },
@@ -2059,7 +2124,12 @@
       "stagiaires",
       "formation",
       "entretien",
-      "exonération"
+      "exonération",
+      "études",
+      "services",
+      "cinq ans",
+      "instruction",
+      "formation professionnelle"
     ],
     "source": "convention-italie.json"
   },
@@ -2073,7 +2143,10 @@
       "autres revenus",
       "revenus non mentionnés",
       "établissement stable",
-      "base fixe"
+      "base fixe",
+      "biens immobiliers",
+      "législation interne",
+      "activité industrielle"
     ],
     "source": "convention-italie.json"
   },
@@ -2087,9 +2160,12 @@
       "double imposition",
       "élimination",
       "crédit d'impôt",
+      "impôt congolais",
+      "impôt italien",
       "déduction",
-      "exonération",
-      "méthode d'imputation"
+      "base imposable",
+      "retenue à la source",
+      "articles 10 et 12"
     ],
     "source": "convention-italie.json"
   },
@@ -2103,8 +2179,13 @@
       "non-discrimination",
       "nationalité",
       "égalité de traitement",
-      "déduction",
-      "établissement stable"
+      "établissement stable",
+      "déductions",
+      "abattements",
+      "réductions d'impôt",
+      "charges de famille",
+      "entreprises",
+      "capital détenu"
     ],
     "source": "convention-italie.json"
   },
@@ -2120,7 +2201,13 @@
       "autorités compétentes",
       "réclamation",
       "imposition non conforme",
-      "six mois"
+      "deux ans",
+      "Commission d'arbitrage",
+      "six mois",
+      "majorité simple",
+      "droit international",
+      "frais d'arbitrage",
+      "Tribunal national"
     ],
     "source": "convention-italie.json"
   },
@@ -2136,7 +2223,11 @@
       "secret",
       "confidentialité",
       "assistance administrative",
-      "recouvrement"
+      "recouvrement",
+      "évasions fiscales",
+      "tribunaux",
+      "organes administratifs",
+      "ordre public"
     ],
     "source": "convention-italie.json"
   },
@@ -2150,7 +2241,8 @@
       "agents diplomatiques",
       "fonctionnaires consulaires",
       "privilèges fiscaux",
-      "immunités"
+      "immunités",
+      "droit des gens"
     ],
     "source": "convention-italie.json"
   },
@@ -2162,9 +2254,11 @@
     "chapitre": "1",
     "keywords": [
       "remboursement",
-      "demande",
-      "impôts perçus",
-      "retenue à la source"
+      "retenue à la source",
+      "attestation officielle",
+      "exonérations",
+      "réductions",
+      "autorités compétentes"
     ],
     "source": "convention-italie.json"
   },
@@ -2178,7 +2272,12 @@
       "assistance au recouvrement",
       "créances fiscales",
       "recouvrement",
-      "entraide"
+      "entraide",
+      "intérêts",
+      "majorations d'impôts",
+      "titres exécutoires",
+      "juridiction compétente",
+      "contrainte"
     ],
     "source": "convention-italie.json"
   },
@@ -2191,8 +2290,9 @@
     "keywords": [
       "entrée en vigueur",
       "ratification",
-      "notification",
-      "date d'effet"
+      "instruments de ratification",
+      "retenue à la source",
+      "1er janvier"
     ],
     "source": "convention-italie.json"
   },
@@ -2205,9 +2305,10 @@
     "keywords": [
       "dénonciation",
       "préavis",
-      "cessation",
+      "six mois",
       "voie diplomatique",
-      "six mois"
+      "cinquième année",
+      "cessation"
     ],
     "source": "convention-italie.json"
   },
@@ -2219,11 +2320,21 @@
     "chapitre": "1",
     "keywords": [
       "protocole",
-      "interprétation",
-      "dispositions complémentaires",
-      "convention fiscale",
-      "Congo-Italie",
-      "rentes"
+      "subdivisions politiques",
+      "article 5",
+      "société pétrolière",
+      "OCDE",
+      "article 7",
+      "établissement stable",
+      "contrats d'étude",
+      "article 8",
+      "conteneurs",
+      "article 9",
+      "ajustement",
+      "article 18",
+      "cotisations",
+      "article 28",
+      "réductions d'impôts"
     ],
     "source": "convention-italie.json"
   },

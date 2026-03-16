@@ -65,7 +65,10 @@
         "centre des intérêts vitaux",
         "nationalité",
         "siège de direction effective",
-        "double résidence"
+        "double résidence",
+        "séjour habituel",
+        "personne physique",
+        "personne morale"
       ],
       "statut": "en vigueur"
     },

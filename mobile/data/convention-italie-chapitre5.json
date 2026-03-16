@@ -26,8 +26,13 @@
         "non-discrimination",
         "nationalité",
         "égalité de traitement",
-        "déduction",
-        "établissement stable"
+        "établissement stable",
+        "déductions",
+        "abattements",
+        "réductions d'impôt",
+        "charges de famille",
+        "entreprises",
+        "capital détenu"
       ],
       "statut": "en vigueur"
     },
@@ -54,7 +59,13 @@
         "autorités compétentes",
         "réclamation",
         "imposition non conforme",
-        "six mois"
+        "deux ans",
+        "Commission d'arbitrage",
+        "six mois",
+        "majorité simple",
+        "droit international",
+        "frais d'arbitrage",
+        "Tribunal national"
       ],
       "statut": "en vigueur"
     },
@@ -74,7 +85,11 @@
         "secret",
         "confidentialité",
         "assistance administrative",
-        "recouvrement"
+        "recouvrement",
+        "évasions fiscales",
+        "tribunaux",
+        "organes administratifs",
+        "ordre public"
       ],
       "statut": "en vigueur"
     },
@@ -88,7 +103,8 @@
         "agents diplomatiques",
         "fonctionnaires consulaires",
         "privilèges fiscaux",
-        "immunités"
+        "immunités",
+        "droit des gens"
       ],
       "statut": "en vigueur"
     },
@@ -102,9 +118,11 @@
       ],
       "mots_cles": [
         "remboursement",
-        "demande",
-        "impôts perçus",
-        "retenue à la source"
+        "retenue à la source",
+        "attestation officielle",
+        "exonérations",
+        "réductions",
+        "autorités compétentes"
       ],
       "statut": "en vigueur"
     },
@@ -121,7 +139,12 @@
         "assistance au recouvrement",
         "créances fiscales",
         "recouvrement",
-        "entraide"
+        "entraide",
+        "intérêts",
+        "majorations d'impôts",
+        "titres exécutoires",
+        "juridiction compétente",
+        "contrainte"
       ],
       "statut": "en vigueur"
     }
