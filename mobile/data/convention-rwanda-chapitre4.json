@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "document": "Convention fiscale Congo-Rwanda",
+    "pays": "République du Congo / République du Rwanda",
+    "edition": "2026",
+    "tome": "CONV-RW",
+    "partie": null,
+    "livre": null,
+    "chapitre": 4,
+    "chapitre_titre": "Chapitre 4 - Méthodes pour éliminer la double imposition",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 23",
+      "titre": "Méthodes pour éliminer la double imposition",
+      "texte": [
+        "1. La double imposition est éliminée comme suit :",
+        "a) Au Rwanda : Impôt payé par un résident du Rwanda au titre des revenus imposables au Congo conformément aux dispositions du présent Accord, sera déduit des impôts dus conformément à la loi fiscale Rwandaise (qui n'affectera pas le principe général des présentes dispositions). Toutefois, cette déduction ne peut excéder l'impôt à payer au Rwanda qui serait autrement payable sur le revenu imposable au Congo.",
+        "b) Au Congo, la double imposition est éliminée de la manière suivante :",
+        "i) lorsqu'un résident du Congo perçoit un revenu qui, conformément aux dispositions de la présente Convention, peut être imposé au Rwanda, le Congo admet en déduction de l'impôt dû au Congo, le montant égal à l'impôt sur le revenu payé au Rwanda ;",
+        "ii) toutefois, la somme déduite ne peut excéder la fraction de l'impôt sur le revenu calculé avant déduction, correspondant aux revenus imposables au Rwanda."
+      ],
+      "mots_cles": [
+        "double imposition",
+        "élimination",
+        "déduction",
+        "impôt Rwanda",
+        "impôt Congo",
+        "loi fiscale Rwandaise",
+        "revenu imposable",
+        "crédit d'impôt"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

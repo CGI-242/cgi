@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "document": "Convention fiscale Congo-Rwanda",
+    "pays": "République du Congo / République du Rwanda",
+    "edition": "2026",
+    "tome": "CONV-RW",
+    "partie": null,
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Chapitre 6 - Dispositions finales",
+    "section": null,
+    "section_titre": null,
+    "page_source": null
+  },
+  "articles": [
+    {
+      "article": "Art. 30",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "1. Chacun des États contractants notifiera à l'autre, par la voie diplomatique, l'accomplissement de procédures requises par sa législation pour la mise en vigueur de la présente Convention. La présente Convention entrera en vigueur à la date de réception de la dernière de ces notifications.",
+        "2. Les dispositions de la présente Convention s'appliquent :",
+        "a) en ce qui concerne les impôts retenus à la source, sur les sommes payées ou créditées à partir ou après le premier janvier de l'année suivant la date d'entrée en vigueur de la présente Convention ; et",
+        "b) en ce qui concerne les autres impôts, pour les années d'imposition commençant le ou après le premier janvier de l'année suivant la date d'entrée en vigueur de la présente convention."
+      ],
+      "mots_cles": [
+        "entrée en vigueur",
+        "notification",
+        "voie diplomatique",
+        "procédures requises",
+        "impôts retenus à la source",
+        "premier janvier",
+        "années d'imposition"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Dénonciation",
+      "texte": [
+        "1. La présente convention demeurera en vigueur pour une durée illimitée. Chaque État contractant peut dénoncer la convention par la voie diplomatique à travers un préavis écrit à l'autre État contractant avant le 30 juin de chaque année civile et après une période de cinq années à partir de la date de son entrée en vigueur.",
+        "2. Dans ce cas, la convention cessera d'être applicable :",
+        "a) aux impôts dus à la source, sur les sommes payées ou créditées au plus tard la fin de l'année civile qui suit celle à laquelle a été notifiée la dénonciation ;",
+        "b) aux autres impôts pour les années fiscales qui commencent après la fin de l'année civile au cours de laquelle a été notifiée la dénonciation.",
+        "En foi de quoi, les soussignés dûment autorisés par leurs Gouvernements respectifs ont signé la présente convention."
+      ],
+      "mots_cles": [
+        "dénonciation",
+        "durée illimitée",
+        "voie diplomatique",
+        "préavis écrit",
+        "30 juin",
+        "cinq années",
+        "impôts à la source",
+        "années fiscales",
+        "soussignés"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}
