@@ -23,7 +23,12 @@ import convMauriceCh3Data from "@/data/convention-maurice-chapitre3.json";
 import convMauriceCh4Data from "@/data/convention-maurice-chapitre4.json";
 import convMauriceCh5Data from "@/data/convention-maurice-chapitre5.json";
 import convMauriceCh6Data from "@/data/convention-maurice-chapitre6.json";
-import convRwandaData from "@/data/convention-rwanda.json";
+import convRwandaCh1Data from "@/data/convention-rwanda-chapitre1.json";
+import convRwandaCh2Data from "@/data/convention-rwanda-chapitre2.json";
+import convRwandaCh3Data from "@/data/convention-rwanda-chapitre3.json";
+import convRwandaCh4Data from "@/data/convention-rwanda-chapitre4.json";
+import convRwandaCh5Data from "@/data/convention-rwanda-chapitre5.json";
+import convRwandaCh6Data from "@/data/convention-rwanda-chapitre6.json";
 
 // CEMAC
 const aConvCemacCh1 = parseArticles(convCemacCh1Data.articles);
@@ -51,7 +56,12 @@ const aConvMauriceCh4 = parseArticles(convMauriceCh4Data.articles);
 const aConvMauriceCh5 = parseArticles(convMauriceCh5Data.articles);
 const aConvMauriceCh6 = parseArticles(convMauriceCh6Data.articles);
 // Rwanda
-const aConvRwanda = parseArticles(convRwandaData.articles);
+const aConvRwandaCh1 = parseArticles(convRwandaCh1Data.articles);
+const aConvRwandaCh2 = parseArticles(convRwandaCh2Data.articles);
+const aConvRwandaCh3 = parseArticles(convRwandaCh3Data.articles);
+const aConvRwandaCh4 = parseArticles(convRwandaCh4Data.articles);
+const aConvRwandaCh5 = parseArticles(convRwandaCh5Data.articles);
+const aConvRwandaCh6 = parseArticles(convRwandaCh6Data.articles);
 
 // Convention CEMAC
 const convCemacNode: SommaireNode = {
@@ -75,7 +85,10 @@ const convMauriceNode: SommaireNode = {
   articles: [...aConvMauriceCh1, ...aConvMauriceCh2, ...aConvMauriceCh3, ...aConvMauriceCh4, ...aConvMauriceCh5, ...aConvMauriceCh6],
 };
 
-const convRwandaNode: SommaireNode = { id: "conv-rwanda", label: "1.6. Convention fiscale avec le Rwanda", articles: aConvRwanda };
+const convRwandaNode: SommaireNode = {
+  id: "conv-rwanda", label: "1.6. Convention fiscale avec le Rwanda",
+  articles: [...aConvRwandaCh1, ...aConvRwandaCh2, ...aConvRwandaCh3, ...aConvRwandaCh4, ...aConvRwandaCh5, ...aConvRwandaCh6],
+};
 
 export const conventionsNode: SommaireNode = {
   id: "conventions", label: "1. Conventions fiscales",
@@ -94,5 +107,5 @@ export const conventionsArticles: ArticleData[] = [
   ...aConvChine, ...aConvFrance,
   ...aConvItalieCh1, ...aConvItalieCh2, ...aConvItalieCh3, ...aConvItalieCh4, ...aConvItalieCh5, ...aConvItalieCh6, ...aConvItalieProto,
   ...aConvMauriceCh1, ...aConvMauriceCh2, ...aConvMauriceCh3, ...aConvMauriceCh4, ...aConvMauriceCh5, ...aConvMauriceCh6,
-  ...aConvRwanda,
+  ...aConvRwandaCh1, ...aConvRwandaCh2, ...aConvRwandaCh3, ...aConvRwandaCh4, ...aConvRwandaCh5, ...aConvRwandaCh6,
 ];
