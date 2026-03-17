@@ -53,8 +53,8 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     const stream = fs.createWriteStream(filePath);
     doc.pipe(stream);
 
-    const gold = '#c8a03c';
-    const dark = '#08080d';
+    const gold = '#D4A843';
+    const dark = '#1A3A5C';
     const gray = '#6b7280';
 
     // --- En-tête ---

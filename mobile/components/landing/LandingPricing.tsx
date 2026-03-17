@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 interface Props {
   isMobile: boolean;

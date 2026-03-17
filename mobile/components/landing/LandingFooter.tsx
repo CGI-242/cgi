@@ -3,8 +3,8 @@ import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
-const BG = "#0a0a12";
+const GOLD = "#D4A843";
+const BG = "#0d1f36";
 const TITLE_COLOR = "#e8e6e1";
 const LINK_COLOR = "#5a5a65";
 

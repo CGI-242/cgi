@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import { router } from "expo-router";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 type Status = "available" | "published";
 
@@ -41,7 +41,7 @@ const entries: CodeEntry[] = [
 ];
 
 const regionColors: Record<string, { bg: string; border: string; text: string }> = {
-  CEMAC: { bg: "rgba(200,160,60,0.12)", border: "rgba(200,160,60,0.3)", text: "#c8a03c" },
+  CEMAC: { bg: "rgba(200,160,60,0.12)", border: "rgba(200,160,60,0.3)", text: "#D4A843" },
   UEMOA: { bg: "rgba(96,165,250,0.12)", border: "rgba(96,165,250,0.3)", text: "#60a5fa" },
   OHADA: { bg: "rgba(168,130,255,0.1)", border: "rgba(168,130,255,0.25)", text: "#a882ff" },
   Autre: { bg: "rgba(168,130,255,0.1)", border: "rgba(168,130,255,0.25)", text: "#a882ff" },

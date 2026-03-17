@@ -3,7 +3,7 @@ import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 interface Props {
   isMobile: boolean;
@@ -138,7 +138,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             backgroundColor: GOLD,
           }}
         >
-          <Text style={{ color: "#08080d", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          <Text style={{ color: "#1A3A5C", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
             {t("landing.heroCtaPrimary")}
           </Text>
         </TouchableOpacity>

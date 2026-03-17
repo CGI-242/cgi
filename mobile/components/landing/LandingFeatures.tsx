@@ -16,7 +16,7 @@ const FEATURE_ICONS = [
   { icon: "calendar-outline" as const, titleKey: "landing.feat6Title", descKey: "landing.feat6Desc", color: "#ef4444" },
   { icon: "cloud-offline-outline" as const, titleKey: "landing.feat9Title", descKey: "landing.feat9Desc", color: "#d97706" },
   { icon: "people-outline" as const, titleKey: "landing.feat7Title", descKey: "landing.feat7Desc", color: "#0891b2" },
-  { icon: "language-outline" as const, titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#c8a03c" },
+  { icon: "language-outline" as const, titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#D4A843" },
 ];
 
 export default function LandingFeatures({ isMobile, loaded }: Props) {

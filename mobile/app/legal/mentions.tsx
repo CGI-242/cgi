@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 function InfoRow({ label, value, colors }: { label: string; value: string; colors: any }) {
   return (

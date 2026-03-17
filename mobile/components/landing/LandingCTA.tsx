@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 export default function LandingCTA() {
   return (
@@ -41,7 +41,7 @@ export default function LandingCTA() {
       >
         <Text
           style={{
-            color: "#08080d",
+            color: "#1A3A5C",
             fontSize: 18,
             fontFamily: fonts.extraBold,
             fontWeight: fontWeights.extraBold,

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-const GOLD = "#c8a03c";
+const GOLD = "#D4A843";
 
 const CODE_OPTIONS = [
   { id: "cgi", icon: "book-outline" as const, label: "Code Général des Impôts", desc: "CGI 242 — Édition 2026", available: true },
@@ -53,7 +53,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
               fontFamily: fonts.black,
               fontWeight: fontWeights.black,
               fontSize: 19,
-              color: "#08080d",
+              color: "#1A3A5C",
             }}
           >
             N
@@ -194,9 +194,9 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           }}
         >
           {isMobile ? (
-            <Ionicons name="rocket-outline" size={20} color="#08080d" />
+            <Ionicons name="rocket-outline" size={20} color="#1A3A5C" />
           ) : (
-            <Text style={{ color: "#08080d", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15 }}>
+            <Text style={{ color: "#1A3A5C", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15 }}>
               Essai gratuit
             </Text>
           )}

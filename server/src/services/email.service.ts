@@ -95,8 +95,8 @@ export class EmailService {
 
         <!-- Header -->
         <tr>
-          <td style="background-color: #08080d; padding: 24px 32px; text-align: center;">
-            <span style="color: #c8a03c; font-size: 22px; font-weight: bold; letter-spacing: 1px;">CGI 242</span>
+          <td style="background-color: #1A3A5C; padding: 24px 32px; text-align: center;">
+            <span style="color: #D4A843; font-size: 22px; font-weight: bold; letter-spacing: 1px;">CGI 242</span>
             <br/>
             <span style="color: #e8e6e1cc; font-size: 12px;">Code Général des Impôts du Congo — Intelligence Fiscale</span>
           </td>
@@ -146,8 +146,8 @@ export class EmailService {
         Pour sécuriser votre connexion à votre espace CGI 242, voici votre code de vérification :
       </p>
 
-      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 24px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #c8a03c;">${otp}</span>
+      <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #D4A843;">${otp}</span>
       </div>
 
       <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
@@ -179,8 +179,8 @@ export class EmailService {
         Vous avez demandé une réinitialisation de mot de passe pour votre compte CGI 242. Voici votre code :
       </p>
 
-      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 24px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #c8a03c;">${code}</span>
+      <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 24px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 36px; font-weight: bold; letter-spacing: 10px; color: #D4A843;">${code}</span>
       </div>
 
       <p style="margin: 0 0 20px 0; font-size: 14px; color: #dc2626; font-weight: 600;">
@@ -211,7 +211,7 @@ export class EmailService {
       </p>
 
       <div style="text-align: center; margin: 0 0 24px 0;">
-        <a href="${inviteUrl}" style="display: inline-block; background-color: #c8a03c; color: #ffffff; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
+        <a href="${inviteUrl}" style="display: inline-block; background-color: #D4A843; color: #ffffff; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
           Rejoindre l'équipe
         </a>
       </div>
@@ -219,7 +219,7 @@ export class EmailService {
       <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
         Si le bouton ne fonctionne pas, copiez-collez ce lien dans votre navigateur :
       </p>
-      <p style="margin: 0 0 24px 0; font-size: 12px; color: #c8a03c; word-break: break-all;">
+      <p style="margin: 0 0 24px 0; font-size: 12px; color: #D4A843; word-break: break-all;">
         ${inviteUrl}
       </p>
 
@@ -301,12 +301,12 @@ export class EmailService {
         <strong>${requesterName}</strong> a demandé <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour l'organisation <strong>${orgName}</strong>.
       </p>
 
-      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; margin: 0 0 24px 0;">
+      <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 20px; margin: 0 0 24px 0;">
         <table style="width: 100%; font-size: 14px; color: #374151;">
           <tr><td style="padding: 4px 0;">Plan</td><td style="text-align: right; font-weight: bold;">${plan}</td></tr>
           <tr><td style="padding: 4px 0;">Sièges demandés</td><td style="text-align: right; font-weight: bold;">${additionalSeats}</td></tr>
           <tr><td style="padding: 4px 0;">Prix unitaire</td><td style="text-align: right; font-weight: bold;">${unitPrice.toLocaleString('fr-FR')} XAF</td></tr>
-          <tr><td style="padding: 4px 0; border-top: 1px solid #d1d5db;">Total à payer</td><td style="text-align: right; font-weight: bold; border-top: 1px solid #d1d5db; color: #c8a03c;">${totalPrice.toLocaleString('fr-FR')} XAF</td></tr>
+          <tr><td style="padding: 4px 0; border-top: 1px solid #d1d5db;">Total à payer</td><td style="text-align: right; font-weight: bold; border-top: 1px solid #d1d5db; color: #D4A843;">${totalPrice.toLocaleString('fr-FR')} XAF</td></tr>
         </table>
       </div>
 
@@ -333,11 +333,11 @@ export class EmailService {
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #c8a03c; font-weight: bold;">approuvée</span>.
+        Votre demande de <strong>${additionalSeats} siège(s) supplémentaire(s)</strong> pour <strong>${orgName}</strong> a été <span style="color: #D4A843; font-weight: bold;">approuvée</span>.
       </p>
 
-      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; text-align: center; margin: 0 0 24px 0;">
-        <span style="font-size: 24px; font-weight: bold; color: #c8a03c;">${newTotalSeats} sièges</span>
+      <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 24px; font-weight: bold; color: #D4A843;">${newTotalSeats} sièges</span>
         <br/>
         <span style="font-size: 13px; color: #6b7280;">disponibles dans votre organisation</span>
       </div>
@@ -404,10 +404,10 @@ export class EmailService {
         Veuillez trouver ci-joint votre facture <strong>${invoiceNumber}</strong>.
       </p>
 
-      <div style="background-color: #fef9ee; border: 2px solid #c8a03c; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+      <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 20px; text-align: center; margin: 0 0 24px 0;">
         <span style="font-size: 13px; color: #6b7280;">Montant total TTC</span>
         <br/>
-        <span style="font-size: 28px; font-weight: bold; color: #c8a03c;">${amount} ${currency}</span>
+        <span style="font-size: 28px; font-weight: bold; color: #D4A843;">${amount} ${currency}</span>
       </div>
 
       <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
