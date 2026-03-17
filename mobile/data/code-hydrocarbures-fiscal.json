@@ -2,7 +2,7 @@
   "meta": {
     "document": "Dispositions fiscales du Code des hydrocarbures",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC3-HYDRO",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,7 +17,8 @@
       "article": "Art. 120",
       "titre": "De la cession",
       "texte": [
-        "",
+        "[NB - Extraits de la loi n°2016-28 du 12 octobre 2016 portant Code des hydrocarbures]",
+        "De la cession",
         "Art.120.- Chaque membre du contracteur peut céder tout ou partie de ses intérêts participatifs dans un contrat pétrolier de même que ses droits et obligations découlant dudit contrat, sous réserve de l'approbation de la cession par le Ministre chargé des hydrocarbures.",
         "L'approbation de la cession par le Ministre chargé des hydrocarbures rend effective la cession des droits et obligations.",
         "La demande d'approbation doit comporter l'identité du cessionnaire proposé ainsi que la description de ses capacités techniques et financières, les conditions économiques de la cession envisagée, notamment le prix et les modalités de paiement ainsi que la documentation y relative.",
@@ -27,8 +28,11 @@
       "mots_cles": [
         "cession intérêts participatifs",
         "contrat pétrolier",
+        "droits obligations contracteur",
         "approbation Ministre hydrocarbures",
-        "capacités techniques financières"
+        "cessionnaire capacités techniques financières",
+        "phase exploration garantie",
+        "voie réglementaire"
       ],
       "statut": "en vigueur"
     },
@@ -41,10 +45,12 @@
         "Les actes ci-dessus sont soumis à un droit d'enregistrement fixé par le Code général des impôts."
       ],
       "mots_cles": [
-        "enregistrement cession",
-        "acte cession",
-        "droit enregistrement",
-        "contrat pétrolier"
+        "cession droits obligations",
+        "contrat pétrolier acte signé",
+        "cédant cessionnaire",
+        "enregistrement administration fiscale",
+        "droit enregistrement CGI",
+        "législation en vigueur"
       ],
       "statut": "en vigueur"
     },
@@ -56,10 +62,11 @@
         "L'information donnée au Ministre chargé des hydrocarbures est identique à celle requise pour la cession des intérêts participatifs."
       ],
       "mots_cles": [
-        "cession actions",
-        "parts sociales",
-        "information Ministre",
-        "contracteur"
+        "cession actions parts sociales",
+        "capital social membres contracteur",
+        "information Ministre hydrocarbures",
+        "intérêts participatifs",
+        "obligation information"
       ],
       "statut": "en vigueur"
     },
@@ -70,9 +77,11 @@
         "Art.123.- Tout acte passé en violation des dispositions des articles 120 à 122 ci-dessus est inopposable à l'État et est nul et de nul effet."
       ],
       "mots_cles": [
+        "violation dispositions articles 120 à 122",
+        "acte inopposable État",
         "nullité acte",
-        "inopposabilité",
-        "violation cession"
+        "nul effet",
+        "sanctions cession irrégulière"
       ],
       "statut": "en vigueur"
     },
@@ -131,9 +140,11 @@
       ],
       "mots_cles": [
         "contrats services",
-        "IRCM",
-        "régime douanes",
-        "change"
+        "article 148 inapplicable",
+        "impôts article 149",
+        "IRVM valeurs mobilières",
+        "articles 181 à 198 douanes change",
+        "régimes douanes change"
       ],
       "statut": "en vigueur"
     },
@@ -144,9 +155,11 @@
         "Art.151.- Les revenus des autres activités exercées par les sociétés pétrolières sur le territoire de la République du Congo qui ne sont pas des activités amont pétrolier sont imposables dans les conditions de droit commun."
       ],
       "mots_cles": [
-        "activités hors amont",
-        "droit commun",
-        "sociétés pétrolières"
+        "activités hors amont pétrolier",
+        "sociétés pétrolières",
+        "territoire République Congo",
+        "droit commun imposition",
+        "revenus autres activités"
       ],
       "statut": "en vigueur"
     },
@@ -158,10 +171,12 @@
         "La renégociation des termes du contrat pétrolier peut intervenir à la demande de l'une ou l'autre partie."
       ],
       "mots_cles": [
-        "stabilisation fiscale",
-        "équilibre économique",
-        "renégociation",
-        "contrat pétrolier"
+        "stabilisation régime fiscal",
+        "contrat pétrolier mécanisme",
+        "équilibre économique général",
+        "modification dispositions légales réglementaires",
+        "renégociation termes contrat",
+        "régime fiscal contracteur"
       ],
       "statut": "en vigueur"
     },
@@ -188,9 +203,11 @@
         "Art.154.- Le contracteur tient sa comptabilité en dollars des États-Unis d'Amérique et en langue française."
       ],
       "mots_cles": [
-        "comptabilité dollars",
+        "comptabilité dollars États-Unis Amérique",
         "langue française",
-        "USD"
+        "contracteur obligations comptables",
+        "devise référence",
+        "normes comptables pétrolières"
       ],
       "statut": "en vigueur"
     },
@@ -253,8 +270,10 @@
       ],
       "mots_cles": [
         "redevance minière proportionnelle",
-        "production nette",
-        "exploitation commerciale"
+        "production nette permis exploitation",
+        "début exploitation commerciale",
+        "assiette redevance",
+        "contracteur assujetti"
       ],
       "statut": "en vigueur"
     },
@@ -285,10 +304,12 @@
         "Lorsque la redevance minière proportionnelle est acquittée en nature, le contracteur est tenu de la mettre à la disposition de l'État au point d'enlèvement des hydrocarbures produits."
       ],
       "mots_cles": [
-        "déclaration redevance",
-        "paiement 20 du mois",
-        "paiement en nature",
-        "point enlèvement"
+        "déclaration redevance minière",
+        "acquittement vingt chaque mois",
+        "production mois précédent",
+        "paiement nature espèces",
+        "option État",
+        "point enlèvement hydrocarbures"
       ],
       "statut": "en vigueur"
     },
@@ -301,8 +322,10 @@
       ],
       "mots_cles": [
         "provision investissements diversifiés",
-        "1% production nette",
-        "prélèvement"
+        "prélèvement 1 % valeur production nette",
+        "hydrocarbures",
+        "modalités perception recouvrement",
+        "textes spécifiques affectation"
       ],
       "statut": "en vigueur"
     },
@@ -314,9 +337,11 @@
         "Elle est déductible de l'assiette imposable à l'impôt sur les sociétés."
       ],
       "mots_cles": [
-        "provision investissements",
-        "coût récupérable",
-        "déductible IS"
+        "provision investissements diversifiés",
+        "coût pétrolier récupérable",
+        "déductible assiette imposable IS",
+        "régime fiscal provision",
+        "impôt sur les sociétés"
       ],
       "statut": "en vigueur"
     },
@@ -330,10 +355,11 @@
         "Les modalités de détermination, de déclaration et de paiement du droit de cession ou de transfert sont fixées par décret en Conseil des ministres. Le cédant et le cessionnaire sont solidairement responsables du paiement de la taxe."
       ],
       "mots_cles": [
-        "plus-value cession",
-        "taxe 10%",
-        "contrat partage production",
-        "coûts récupérer"
+        "plus-values cession actifs pétroliers",
+        "droits obligations contrat partage production",
+        "taxe forfaitaire 10 %",
+        "prix cession cédant",
+        "coûts restant récupérer cessionnaire"
       ],
       "statut": "en vigueur"
     },
@@ -360,10 +386,11 @@
         "Les modalités d'application du présent article sont fixées par décret en Conseil des ministres."
       ],
       "mots_cles": [
-        "exonération TVA",
-        "activités pétrolières",
-        "chiffre affaires",
-        "droit commun"
+        "exonération TVA contracteur",
+        "taxe valeur ajoutée",
+        "chiffre affaires activités pétrolières",
+        "opérations non pétrolières droit commun",
+        "décret Conseil ministres"
       ],
       "statut": "en vigueur"
     },
@@ -375,10 +402,11 @@
         "Toutefois, dans le cadre d'un contrat de partage de production, les bénéfices provenant des opérations pétrolières sont régis par les dispositions des articles 166 à 174 de la présente loi."
       ],
       "mots_cles": [
-        "IS pétrolier",
-        "assujettissement individuel",
+        "assujettissement IS membres contracteur",
+        "impôt sociétés droit commun",
+        "opérations pétrolières",
         "contrat partage production",
-        "articles 166-174"
+        "articles 166 à 174"
       ],
       "statut": "en vigueur"
     },
@@ -390,9 +418,10 @@
       ],
       "mots_cles": [
         "bénéfice imposable",
-        "revenu brut",
-        "charges déductibles",
-        "législation fiscale"
+        "revenu brut membre contracteur",
+        "déduction charges",
+        "législation fiscale en vigueur",
+        "textes application"
       ],
       "statut": "en vigueur"
     },
@@ -455,7 +484,8 @@
         "IS pétrolier",
         "calcul par permis",
         "résultat imposable",
-        "déclaration fiscale"
+        "déclaration fiscale",
+        "addition impôts permis recherche exploitation"
       ],
       "statut": "en vigueur"
     },
@@ -503,7 +533,8 @@
         "quitus fiscal",
         "Ministre finances",
         "obligations fiscales",
-        "droit vérification reprise"
+        "droit vérification reprise",
+        "membre contracteur certification"
       ],
       "statut": "en vigueur"
     },
@@ -519,7 +550,8 @@
         "valorisation hydrocarbures",
         "prix fiscal",
         "partage production",
-        "prix marché exportation"
+        "prix marché exportation",
+        "décret Conseil ministres qualité hydrocarbure"
       ],
       "statut": "en vigueur"
     },
@@ -528,14 +560,15 @@
       "titre": "Du recouvrement",
       "texte": [
         "Art.176.- Les bonus, redevances, taxes et contributions auxquels est assujetti le contracteur en application des dispositions de la présente loi sont acquittés par l'opérateur pour le compte du contracteur.",
-        "En cas de défaillance de l'opérateur, les membres du contracteur assujettis sont individuellement responsables du paiement de ces bonus, redevances, taxes et contributions.",
-        "Les modalités et conditions de recouvrement des bonus, redevances, taxes, contributions et impôts prévus à l'article 148 de la présente loi sont fixés par décret en Conseil des ministres."
+        "En cas de défaillance de l'opérateur, les membres du contracteur y assujettis sont individuellement responsables du paiement de ces bonus, redevances, taxes et contributions.",
+        "Les modalités et conditions de recouvrement des bonus, redevances, taxes, contributions et impôts prévus à l'article 148 de la présente loi sont fixées par décret en Conseil des ministres."
       ],
       "mots_cles": [
         "recouvrement",
         "opérateur",
         "responsabilité individuelle",
-        "défaillance"
+        "défaillance",
+        "bonus redevances taxes contributions article 148"
       ],
       "statut": "en vigueur"
     },
@@ -582,7 +615,8 @@
         "délai vérification",
         "prescription 24 mois",
         "validation comptes",
-        "Ministre finances"
+        "Ministre finances",
+        "impôts taxes contributions article 149"
       ],
       "statut": "en vigueur"
     },
@@ -596,7 +630,8 @@
         "coordination contrôles",
         "administration hydrocarbures",
         "administration finances",
-        "contrôle unique"
+        "contrôle unique",
+        "articles 177 178 179 concertation"
       ],
       "statut": "en vigueur"
     }

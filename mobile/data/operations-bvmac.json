@@ -2,7 +2,7 @@
   "meta": {
     "document": "Opérations sur titres admis à la cote de la BVMAC",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC2-BVMAC",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,7 +17,7 @@
       "article": "Art. 1",
       "titre": "Définitions",
       "texte": [
-        "",
+        "[NB - Loi de finances pour 2009]",
         "Chapitre 1 - Dispositions générales",
         "Art.1.- Pour l'application des présentes dispositions, les définitions suivantes sont admises :",
         "- BVMAC : Bourse des Valeurs Mobilières de l'Afrique Centrale",
@@ -32,7 +32,7 @@
         "- FCP : Fonds Commun de Placement",
         "- FEE : Fonds d'Épargne d'Entreprise",
         "- IRPP : Impôt sur le Revenu des Personnes Physiques",
-        "- IRCM : Impôt sur le Revenu des Valeurs Mobilières",
+        "- IRVM : Impôt sur le Revenu des Valeurs Mobilières",
         "- IS : Impôt sur les Sociétés"
       ],
       "mots_cles": [
@@ -123,7 +123,7 @@
         "Sont exemptées du droit d'enregistrement et du timbre les cessions des valeurs mobilières admises à la cote de la BVMAC."
       ],
       "mots_cles": [
-        "exonérations IRCM",
+        "exonérations IRVM",
         "intérêts obligations États",
         "collectivités locales CEMAC",
         "plus-values cession",
@@ -155,15 +155,15 @@
     },
     {
       "article": "Art. 7",
-      "titre": "Retenue à la source IRCM",
+      "titre": "Retenue à la source IRVM",
       "texte": [
-        "Section 1 - Retenue à la source de l'IRCM",
+        "Section 1 - Retenue à la source de l'IRVM",
         "Art.7.- Le taux de la retenue à la source sur les dividendes, intérêts des obligations à moins de cinq ans de maturité et autres rémunérations provenant de valeurs mobilières privées admises à la cote de la BVMAC est fixé à 10 %.",
         "Cette retenue est opérée par le teneur de compte au profit du Trésor Public. Elle constitue un prélèvement libératoire de toute autre imposition.",
         "Ce taux est fixé à 5 % pour les rémunérations des obligations des sociétés privées ou publiques à échéance de cinq années ou plus."
       ],
       "mots_cles": [
-        "retenue source IRCM",
+        "retenue source IRVM",
         "10%",
         "5%",
         "prélèvement libératoire",
