@@ -1,13 +1,13 @@
 {
   "meta": {
-    "document": "Décret d'agrément à la Charte des Investissements",
+    "document": "Décret d'agrément des entreprises aux avantages de la Charte des investissements",
     "pays": "République du Congo",
     "edition": "2026",
     "tome": "TFNC2-AGREMENT",
     "partie": null,
     "livre": null,
     "chapitre": 2,
-    "chapitre_titre": "2.2. Décret d'agrément à la Charte des Investissements",
+    "chapitre_titre": "2.2. Modalités d'agrément des entreprises",
     "section": null,
     "section_titre": null,
     "page_source": null
@@ -22,9 +22,16 @@
       "mots_cles": [
         "agrément",
         "charte investissements",
-        "modalités"
+        "modalités",
+        "loi n°6-2003",
+        "18 janvier 2003",
+        "décret",
+        "avantages",
+        "entreprises",
+        "modalités d'agrément"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
     },
     {
       "article": "Art. 2",
@@ -41,9 +48,28 @@
         "exclusions",
         "activités éligibles",
         "exploitation forestière",
-        "rachat entreprise"
+        "rachat entreprise",
+        "république du congo",
+        "courtage",
+        "négoce",
+        "importation",
+        "fabrication armes",
+        "déchets toxiques",
+        "activités commerciales",
+        "collecte",
+        "entreposage",
+        "distribution",
+        "exportation",
+        "produits fabrication locale",
+        "boissons alcoolisées",
+        "tabacs",
+        "unité forestière d'aménagement",
+        "nouveau permis exploitation",
+        "entreprise agréée",
+        "nouvelle activité"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
     },
     {
       "article": "Art. 3",
@@ -54,9 +80,15 @@
       "mots_cles": [
         "modification",
         "activités éligibles",
-        "situation économique"
+        "situation économique",
+        "évolution",
+        "activités retenues",
+        "article 2",
+        "susceptibles de modification",
+        "évolution économique"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
     },
     {
       "article": "Art. 4",
@@ -68,32 +100,45 @@
         "« zone enclavée » : zone dont les infrastructures économiques de base telles les voies de communication, l'eau potable, l'électricité, les télécommunications, sont jugées moins développées ou inexistantes par la Commission Nationale des Investissements ;",
         "« Régime G » : régime de soutien aux grandes entreprises qui réalisent un investissement supérieur ou égal à 100.000.000 FCFA ;",
         "« Régime S » : régime de promotion pour les petites et moyennes entreprises qui réalisent un investissement au moins égal à 30.000.000 FCFA et inférieur à 100.000.000 FCFA ;",
-        "« période d'installation » : période qui court à compter de la date de notification officielle de l'agrément à l'entreprise, jusqu'à la date à laquelle s'effectue la première vente de sa production, ou le premier service sur le marché national ou à l'extérieur ;"
+        "« période d'installation » : période qui court à compter de la date de notification officielle de l'agrément à l'entreprise, jusqu'à la date à laquelle s'effectue la première vente de sa production, ou le premier service sur le marché national ou à l'extérieur ;",
+        "« période d'exploitation » : période qui court à compter du moment où l'entreprise réalise la première vente de sa production ou le premier service, soit sur le marché national, soit à l'extérieur."
       ],
       "mots_cles": [
         "définitions",
         "investissement",
-        "Régime G",
-        "Régime S",
+        "régime g",
+        "régime s",
         "zone enclavée",
         "période installation",
-        "100 millions FCFA",
-        "30 millions FCFA"
-      ],
-      "statut": "en vigueur"
-    },
-    {
-      "article": "CI-AGR-4-compl",
-      "titre": "Définition complémentaire – période d'exploitation",
-      "texte": [
-        "« période d'exploitation » : période qui court à compter du moment où l'entreprise réalise la première vente de sa production ou le premier service, soit sur le marché national, soit à l'extérieur."
-      ],
-      "mots_cles": [
-        "période exploitation",
+        "100 millions fcfa",
+        "30 millions fcfa",
+        "biens d'équipement",
+        "capacité de production",
+        "productivité",
+        "investissement social et culturel",
+        "éducation",
+        "santé",
+        "sport",
+        "culture",
+        "commission nationale des investissements",
+        "infrastructures économiques",
+        "voies de communication",
+        "eau potable",
+        "électricité",
+        "télécommunications",
+        "grandes entreprises",
+        "petites et moyennes entreprises",
+        "pme",
         "première vente",
-        "définitions"
+        "notification officielle",
+        "100.000.000 fcfa",
+        "30.000.000 fcfa",
+        "premier service",
+        "période d'exploitation",
+        "première vente production"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
     },
     {
       "article": "Art. 5",
@@ -114,11 +159,26 @@
         "registre commerce",
         "emplois permanents",
         "capital social 20%",
-        "CNSS",
+        "cnss",
         "matières premières locales",
-        "main-d'œuvre locale"
+        "main-d'œuvre locale",
+        "280 jours",
+        "caisse nationale de sécurité sociale",
+        "banque locale",
+        "établissement financier",
+        "épargne et crédit",
+        "1/5 investissements",
+        "20% capital social",
+        "produit fini",
+        "produit semi-fini",
+        "services entreprises locales",
+        "conditions d'éligibilité",
+        "compétences égales",
+        "main-d'œuvre étrangère",
+        "compte bancaire"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 2 : Conditions d'éligibilité"
     },
     {
       "article": "Art. 6",
@@ -129,9 +189,15 @@
       "mots_cles": [
         "nouvelle activité",
         "unité distincte",
-        "comptabilité séparée"
+        "comptabilité séparée",
+        "unité de production",
+        "entreprise mère",
+        "avantages charte investissements",
+        "production distincte",
+        "bénéfice avantages"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 2 : Conditions d'éligibilité"
     },
     {
       "article": "Art. 7",
@@ -150,9 +216,17 @@
         "rachat entreprise",
         "changement dénomination",
         "investissements nouveaux",
-        "maintien emplois"
+        "maintien emplois",
+        "nouveaux statuts",
+        "composition capital social",
+        "actifs rachetés",
+        "création emplois",
+        "régime acquis",
+        "entreprise agréée",
+        "conditions article 5"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 2 : Conditions d'éligibilité"
     },
     {
       "article": "Art. 8",
@@ -167,9 +241,16 @@
         "exploitation forestière",
         "nouveau permis",
         "unité forestière",
-        "comptabilité séparée"
+        "comptabilité séparée",
+        "nouveau permis exploitation",
+        "unité exploitation forestière",
+        "nouvelle usine",
+        "création emplois",
+        "investissements nouveaux",
+        "articles 5 et 6"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 2 : Conditions d'éligibilité"
     },
     {
       "article": "Art. 9",
@@ -185,9 +266,19 @@
         "produits locaux",
         "entrepôts",
         "80% produits locaux",
-        "collecte distribution"
+        "collecte distribution",
+        "entreposage",
+        "exportation",
+        "produits fabrication locale",
+        "construction entrepôts",
+        "moyens de transport neufs",
+        "boissons alcoolisées",
+        "tabacs",
+        "durée agrément",
+        "article 5"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 2 : Conditions d'éligibilité"
     },
     {
       "article": "Art. 10",
@@ -200,9 +291,15 @@
       "mots_cles": [
         "régimes privilégiés",
         "mesures incitation",
-        "types avantages"
+        "types avantages",
+        "charte investissements",
+        "deux types avantages",
+        "institution avantages",
+        "classification avantages",
+        "avantages investissements"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 11",
@@ -214,11 +311,17 @@
         "- le régime de la zone de développement préférentielle."
       ],
       "mots_cles": [
-        "régime G",
-        "régime S",
-        "zone développement préférentielle"
+        "régime g",
+        "régime s",
+        "zone développement préférentielle",
+        "régime général",
+        "régime spécial",
+        "régimes privilégiés",
+        "trois régimes",
+        "liste régimes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 12",
@@ -227,11 +330,17 @@
         "Art.12.- Le régime général G s'applique aux entreprises remplissant les critères prévus aux articles 5 et 6 du présent décret et qui réalisent un investissement supérieur ou égal à 100.000.000 FCFA."
       ],
       "mots_cles": [
-        "régime G",
-        "100 millions FCFA",
-        "champ application"
+        "régime g",
+        "100 millions fcfa",
+        "champ application",
+        "régime général",
+        "100.000.000 fcfa",
+        "articles 5 et 6",
+        "critères éligibilité",
+        "investissement minimum"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 13",
@@ -243,12 +352,28 @@
         "- de la réduction de 50 % des droits d'enregistrement pour la création d'entreprise, les augmentations de capital, les fusions des sociétés, les mutations des actions et des parts sociales."
       ],
       "mots_cles": [
-        "régime G",
+        "régime g",
         "perfectionnement actif",
         "admission temporaire",
-        "réduction 50% enregistrement"
+        "réduction 50% enregistrement",
+        "période d'installation",
+        "trois premiers exercices",
+        "code des douanes cemac",
+        "exportation",
+        "franchise",
+        "ressources naturelles",
+        "droits de douane",
+        "droits d'enregistrement",
+        "création d'entreprise",
+        "augmentations de capital",
+        "fusions sociétés",
+        "mutations actions",
+        "parts sociales",
+        "activités de recherche",
+        "entrée en franchise"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 14",
@@ -261,13 +386,26 @@
         "- l'application au taux zéro de la TVA sur les productions exportées."
       ],
       "mots_cles": [
-        "exonération IS",
-        "exonération IRPP",
+        "exonération is",
+        "exonération irpp",
         "amortissement dégressif",
         "report déficit",
-        "TVA 0% export"
+        "tva 0% export",
+        "régime g",
+        "trois premiers exercices",
+        "impôt sur les bénéfices des sociétés",
+        "revenu des personnes physiques",
+        "amortissement accéléré",
+        "report résultats négatifs",
+        "tva taux zéro",
+        "productions exportées",
+        "première vente",
+        "premier service",
+        "exonération totale",
+        "avantages fiscaux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 15",
@@ -276,12 +414,20 @@
         "Art.15.- Le régime spécial S s'applique à toute entreprise de droit congolais dont l'investissement est supérieur ou égal à 30.000.000 FCFA et inférieur à 100.000.000 FCFA et qui satisfait aux conditions prévues aux articles 5 et 6 du présent décret."
       ],
       "mots_cles": [
-        "régime S",
-        "30 millions FCFA",
-        "PME",
-        "droit congolais"
+        "régime s",
+        "30 millions fcfa",
+        "pme",
+        "droit congolais",
+        "régime spécial",
+        "30.000.000 fcfa",
+        "100.000.000 fcfa",
+        "entreprise droit congolais",
+        "articles 5 et 6",
+        "investissement minimum",
+        "investissement maximum"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 16",
@@ -290,11 +436,23 @@
         "Art.16.- En plus des avantages du régime G, les entreprises agréées au régime S bénéficient pendant la période d'installation et les trois premiers exercices d'exploitation, de la modération des droits d'enregistrement pour la création d'entreprise, les augmentations de capital, les fusions des sociétés, les mutations des actions et des parts sociales."
       ],
       "mots_cles": [
-        "régime S",
+        "régime s",
         "modération enregistrement",
-        "avantages cumulés"
+        "avantages cumulés",
+        "régime spécial",
+        "avantages régime g",
+        "période d'installation",
+        "trois premiers exercices",
+        "droits d'enregistrement",
+        "création d'entreprise",
+        "augmentations de capital",
+        "fusions sociétés",
+        "mutations actions",
+        "parts sociales",
+        "modération droits"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 17",
@@ -305,9 +463,15 @@
       "mots_cles": [
         "modération",
         "arrêté ministériel",
-        "Commission Nationale Investissements"
+        "commission nationale des investissements",
+        "ministre économie et finances",
+        "article 16",
+        "autorité d'octroi",
+        "décision commission",
+        "droits d'enregistrement"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 18",
@@ -318,9 +482,15 @@
       "mots_cles": [
         "zone développement préférentielle",
         "zones franches",
-        "entreprise exportatrice"
+        "entreprise exportatrice",
+        "charte investissements",
+        "article 5",
+        "éligibilité",
+        "entreprise agréée",
+        "exportation"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 19",
@@ -330,9 +500,16 @@
       ],
       "mots_cles": [
         "zone développement préférentielle",
-        "texte spécifique"
+        "texte spécifique",
+        "institution",
+        "organisation",
+        "fonctionnement",
+        "zones franches",
+        "réglementation zone franche",
+        "cadre juridique"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 20",
@@ -340,14 +517,166 @@
       "texte": [
         "Art.20.- Sont considérées au sens du présent décret comme mesures d'incitation :",
         "- l'incitation à l'exportation ;",
-        "- l'incitation au réinvestissement des bénéfices."
+        "- l'incitation au réinvestissement des bénéfices ;",
+        "- l'incitation à l'implantation dans les zones enclavées ;",
+        "- l'incitation à l'investissement à caractère social et culturel."
       ],
       "mots_cles": [
         "incitation exportation",
         "réinvestissement bénéfices",
-        "mesures incitation"
+        "mesures incitation",
+        "incitation à l'exportation",
+        "incitation au réinvestissement",
+        "types mesures incitation",
+        "définition mesures",
+        "bénéfices réinvestis",
+        "zones enclavées",
+        "investissement social et culturel",
+        "implantation zones enclavées"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Conditions d'accès aux mesures d'incitation",
+      "texte": [
+        "Art.21.- Ne peuvent bénéficier des mesures d'incitation, que les entreprises qui remplissent les conditions prévues aux articles 5 et 6 du présent décret."
+      ],
+      "mots_cles": [
+        "mesures incitation",
+        "conditions accès",
+        "articles 5 et 6",
+        "éligibilité",
+        "entreprises éligibles",
+        "critères d'éligibilité",
+        "avantages incitation"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Incitation à l'exportation",
+      "texte": [
+        "Art.22.- Toute entreprise qui exporte au moins 20 % de sa production bénéficie :",
+        "- des dispositions du Code des douanes de la CEMAC, relatives aux mécanismes du perfectionnement actif ;",
+        "- de l'exonération au cordon douanier, des droits et taxes de sortie à l'exportation des produits manufacturés, exceptées la redevance informatique et la taxe statistique ;",
+        "- de l'application du taux de la TVA égal à zéro sur les productions exportées.",
+        "Toutefois, les produits non transformés restent soumis au régime de droit commun à l'exportation."
+      ],
+      "mots_cles": [
+        "incitation exportation",
+        "20% production",
+        "perfectionnement actif",
+        "code des douanes cemac",
+        "exonération cordon douanier",
+        "droits et taxes de sortie",
+        "produits manufacturés",
+        "redevance informatique",
+        "taxe statistique",
+        "tva taux zéro",
+        "productions exportées",
+        "produits non transformés",
+        "droit commun exportation"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Incitation au réinvestissement des bénéfices",
+      "texte": [
+        "Art.23.- Toute entreprise qui réalise des investissements nouveaux d'au moins un tiers des immobilisations existantes, peut bénéficier de la réduction de 50 % de l'impôt sur les bénéfices des sociétés et sur le revenu des personnes physiques, au cours des 3 années qui suivent la réalisation des investissements, dans les conditions ci-après :",
+        "- l'entreprise déclare au secrétariat permanent de la Commission Nationale des Investissements (CNI), son plan d'investissement ainsi que l'état des immobilisations existantes ;",
+        "- la CNI, sur rapport des équipes de contrôle, vérifie si les nouveaux investissements correspondent au tiers des immobilisations précédentes ;",
+        "- les investissements sont entièrement réalisés sur un exercice fiscal ;",
+        "- les investissements génèrent des emplois permanents ;",
+        "- les investissements augmentent la capacité de production de 10 % au moins ;",
+        "- l'entreprise jouit d'une bonne moralité fiscale."
+      ],
+      "mots_cles": [
+        "réinvestissement bénéfices",
+        "réduction 50% impôt",
+        "immobilisations existantes",
+        "un tiers immobilisations",
+        "commission nationale des investissements",
+        "cni",
+        "plan d'investissement",
+        "équipes de contrôle",
+        "emplois permanents",
+        "capacité de production 10%",
+        "moralité fiscale",
+        "impôt bénéfices sociétés",
+        "revenu personnes physiques",
+        "3 années",
+        "exercice fiscal"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Incitation à l'implantation dans les zones enclavées",
+      "texte": [
+        "Art.24.- Toute entreprise nouvelle agréée au régime G ou S, qui s'installe dans une zone enclavée, bénéficie d'une réduction de 50 % de l'impôt sur les bénéfices des sociétés, ou sur le revenu des personnes physiques, au cours du quatrième et cinquième années d'exercice qui suivent les trois premiers exercices pour lesquels l'entreprise a bénéficié de l'exonération totale de l'impôt sur les bénéfices ou de l'impôt sur les personnes physiques.",
+        "L'entreprise est considérée appartenir à une zone enclavée à partir du moment où ses unités de production y sont implantées et 90 % des effectifs de ses unités de production y travaillent.",
+        "L'appréciation de l'enclavement d'une zone est de la compétence de la Commission Nationale des Investissements."
+      ],
+      "mots_cles": [
+        "zones enclavées",
+        "réduction 50% impôt",
+        "régime g",
+        "régime s",
+        "quatrième et cinquième années",
+        "exonération totale",
+        "impôt bénéfices sociétés",
+        "revenu personnes physiques",
+        "unités de production",
+        "90% effectifs",
+        "commission nationale des investissements",
+        "enclavement",
+        "entreprise nouvelle"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Incitation à l'investissement à caractère social et culturel",
+      "texte": [
+        "Art.25.- Toute entreprise agréée au régime G ou S de la Charte des investissements, qui réalise des investissements à caractère social et culturel tels que définis à l'article 4 ci-dessus, peut bénéficier d'un allègement fiscal défini par arrêté du Ministre en charge de l'Économie et des Finances, après décision de la Commission Nationale des Investissements."
+      ],
+      "mots_cles": [
+        "investissement social et culturel",
+        "régime g",
+        "régime s",
+        "allègement fiscal",
+        "arrêté ministériel",
+        "ministre économie et finances",
+        "commission nationale des investissements",
+        "article 4",
+        "charte investissements"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Non-cumul des avantages additionnels",
+      "texte": [
+        "Art.26.- Les avantages additionnels définis aux articles 24 et 25 du présent décret ne sont pas cumulatifs."
+      ],
+      "mots_cles": [
+        "non-cumul",
+        "avantages additionnels",
+        "articles 24 et 25",
+        "non cumulatifs",
+        "zones enclavées",
+        "investissement social culturel"
+      ],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Types d'avantages"
     },
     {
       "article": "Art. 27",
@@ -367,9 +696,25 @@
         "25 exemplaires",
         "étude faisabilité",
         "factures proforma",
-        "avis technique"
+        "avis technique",
+        "ministre économie et finances",
+        "secrétariat permanent",
+        "commission nationale des investissements",
+        "régimes privilégiés",
+        "mesures incitation",
+        "demande",
+        "projet de statuts",
+        "équipements",
+        "ministère concerné",
+        "frais de dépôts",
+        "vingt-cinq exemplaires",
+        "session commission",
+        "un mois",
+        "procédure d'agrément",
+        "dépôt dossier"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 28",
@@ -379,9 +724,16 @@
       ],
       "mots_cles": [
         "frais dépôt",
-        "arrêté ministériel"
+        "arrêté ministériel",
+        "ministre économie et finances",
+        "montant frais",
+        "arrêté",
+        "fixation montant",
+        "frais de dossier",
+        "dépôt agrément"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 29",
@@ -395,9 +747,18 @@
         "accusé réception",
         "15 jours",
         "complétude dossier",
-        "14 jours"
+        "14 jours",
+        "secrétariat permanent",
+        "quinze jours",
+        "quatorze jours",
+        "notification complément",
+        "dossier complet",
+        "copie dossier",
+        "membres commission",
+        "session"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 30",
@@ -408,9 +769,15 @@
       "mots_cles": [
         "avis membres",
         "7 jours",
-        "lettre confidentielle"
+        "lettre confidentielle",
+        "sept jours",
+        "secrétariat permanent",
+        "réception dossiers",
+        "membres commission",
+        "délai avis"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 31",
@@ -422,9 +789,15 @@
       "mots_cles": [
         "étude dossiers",
         "note synthèse",
-        "projet agrément"
+        "projet agrément",
+        "secrétariat permanent",
+        "avis membres commission",
+        "projet texte agrément",
+        "note de synthèse",
+        "instruction dossier"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 32",
@@ -441,9 +814,23 @@
         "décision favorable",
         "refus",
         "appel",
-        "8 jours"
+        "8 jours",
+        "rapport travaux",
+        "session",
+        "projet texte agrément",
+        "ministre économie et finances",
+        "secrétariat permanent",
+        "motif de rejet",
+        "sept jours",
+        "huit jours",
+        "notification décision défavorable",
+        "promoteur",
+        "éléments nouveaux",
+        "session suivante",
+        "réinsertion dossier"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 33",
@@ -455,10 +842,20 @@
       ],
       "mots_cles": [
         "convention établissement",
-        "décret Conseil Ministres",
-        "autorité agrément"
+        "décret conseil des ministres",
+        "autorité agrément",
+        "ministre économie et finances",
+        "commission nationale des investissements",
+        "régime général g",
+        "régime spécial s",
+        "mesures incitation",
+        "promoteur",
+        "rapport commission",
+        "proposition ministre",
+        "avis commission"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 34",
@@ -469,9 +866,15 @@
       "mots_cles": [
         "agrément provisoire",
         "3 mois",
-        "non renouvelable"
+        "non renouvelable",
+        "trois mois",
+        "convention établissement",
+        "attestation agrément provisoire",
+        "ministre économie et finances",
+        "signature convention"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 35",
@@ -488,9 +891,21 @@
         "convention établissement",
         "programme investissement",
         "programme emploi",
-        "engagements État"
+        "engagements état",
+        "raison sociale",
+        "objet du projet",
+        "localisation",
+        "engagements entreprise",
+        "régime privilégié",
+        "avantages consentis",
+        "date entrée en vigueur",
+        "période d'installation",
+        "période d'exploitation",
+        "contenu convention",
+        "entreprise agréée"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 4 : Procédure d'agrément"
     },
     {
       "article": "Art. 36",
@@ -503,9 +918,15 @@
         "attribution avantages",
         "contrôle entreprises",
         "équipes mixtes contrôle",
-        "Commission Nationale Investissements"
+        "commission nationale des investissements",
+        "services compétents",
+        "ministère économie et finances",
+        "respect engagements",
+        "entreprises agréées",
+        "bénéfice avantages"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 37",
@@ -516,10 +937,15 @@
       "mots_cles": [
         "dérogation",
         "droit commun",
-        "Code hydrocarbures",
-        "Ministre Économie Finances"
+        "code des hydrocarbures",
+        "ministre économie et finances",
+        "commission nationale des investissements",
+        "rapport commission",
+        "régime droit commun",
+        "sans préjudice"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 38",
@@ -545,9 +971,35 @@
         "formation professionnelle",
         "protection environnement",
         "admission temporaire",
-        "comptabilité"
+        "comptabilité",
+        "programme investissement",
+        "création d'emplois",
+        "commission nationale des investissements",
+        "administration fiscale",
+        "secrétariat permanent",
+        "droits et taxes",
+        "exonérés",
+        "comptabilité conforme",
+        "lois et règlements",
+        "année fiscale",
+        "phase installation",
+        "date entrée en production",
+        "législation du travail",
+        "convention collective",
+        "conditions générales du travail",
+        "normes de qualité",
+        "planning de formation",
+        "ministère du travail",
+        "promotion nationaux",
+        "matériel",
+        "machines",
+        "outillage",
+        "intrants",
+        "durée agrément",
+        "modification programmes"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 39",
@@ -560,9 +1012,16 @@
         "infractions",
         "procès-verbal",
         "équipes contrôle",
-        "notification"
+        "notification",
+        "inobservation",
+        "commission nationale des investissements",
+        "rapport contrôle",
+        "contrevenant",
+        "services compétents",
+        "constatation infractions"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 40",
@@ -579,9 +1038,25 @@
         "annulation convention",
         "retrait convention",
         "pénalités",
-        "Trésor Public"
+        "trésor public",
+        "commission nationale des investissements",
+        "non-respect engagements",
+        "convention établissement",
+        "annulation sans réparation",
+        "maintien convention",
+        "exonérations",
+        "déductions fiscales",
+        "déductions douanières",
+        "réductions fiscales",
+        "infraction mineure",
+        "infraction grave",
+        "paiement trésor public",
+        "retrait agrément",
+        "maintien agrément",
+        "annulation agrément"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 41",
@@ -592,9 +1067,15 @@
       "mots_cles": [
         "retrait convention",
         "annulation avantages",
-        "droit commun"
+        "droit commun",
+        "régime droit commun",
+        "assujettissement",
+        "entreprise sanctionnée",
+        "effets retrait",
+        "perte avantages"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 42",
@@ -607,9 +1088,16 @@
         "rétroactivité",
         "sanctions",
         "prescription",
-        "créances Trésor Public"
+        "créances trésor public",
+        "droit commun",
+        "effet rétroactif",
+        "exonérations",
+        "délais de prescription",
+        "entreprise sanctionnée",
+        "titre rétroactif"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 5 : Contrôle et sanctions"
     },
     {
       "article": "Art. 43",
@@ -620,9 +1108,15 @@
       "mots_cles": [
         "stabilité fiscale",
         "régime privilégié",
-        "garantie fiscale"
+        "garantie fiscale",
+        "durée régime privilégié",
+        "fiscalité locale",
+        "fiscalité d'état",
+        "respect textes en vigueur",
+        "stabilité fiscale locale"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 6 : Dispositions diverses et finales"
     },
     {
       "article": "Art. 44",
@@ -632,11 +1126,16 @@
       ],
       "mots_cles": [
         "non-renouvellement",
-        "régime G",
-        "régime S",
-        "une seule fois"
+        "régime g",
+        "régime s",
+        "une seule fois",
+        "régimes privilégiés",
+        "non renouvelable",
+        "accordé une fois",
+        "unicité agrément"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 6 : Dispositions diverses et finales"
     },
     {
       "article": "Art. 45",
@@ -650,9 +1149,16 @@
         "période installation",
         "avantages fiscaux",
         "phase exploitation",
-        "rapport contrôle"
+        "rapport contrôle",
+        "avantages douaniers",
+        "ministre économie et finances",
+        "commission nationale des investissements",
+        "décision ministre",
+        "fin période installation",
+        "adoption rapport"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 6 : Dispositions diverses et finales"
     },
     {
       "article": "Art. 46",
@@ -663,13 +1169,19 @@
       "mots_cles": [
         "dispositions finales",
         "abrogation",
-        "Journal officiel"
+        "journal officiel",
+        "enregistrement",
+        "publication",
+        "dispositions antérieures contraires",
+        "communication",
+        "entrée en vigueur"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Titre 6 : Dispositions diverses et finales"
     },
     {
-      "article": "Art. 2025",
-      "titre": "Dispositions LF 2025 – Conventions d'établissement",
+      "article": "Dispositions L.F. 2025",
+      "titre": "Dispositions applicables aux régimes fiscaux et douaniers au titre des conventions d'établissement",
       "texte": [
         "[NB - Dispositions applicables aux régimes fiscaux et douaniers au titre des conventions d'établissement (L.F.2025)]",
         "1) À compter du 1er janvier 2025, l'octroi de nouvelles conventions d'établissement ou d'avenants aux sociétés ayant déjà été agréées à la charte des investissements pour leur installation ou pour le développement de leurs investissements est interdit.",
@@ -690,9 +1202,23 @@
         "limitation activités",
         "articles 25-26 charte",
         "révision conventions",
-        "visa DG économie douanes impôts"
+        "visa DG économie douanes impôts",
+        "conventions d'établissement",
+        "avenants",
+        "charte investissements",
+        "comptabilité séparée",
+        "entreprise mère",
+        "contrôle administration",
+        "convention initiale",
+        "privilèges fiscaux et douaniers",
+        "décret n°2004-30",
+        "conseil des ministres",
+        "commission révision",
+        "cadre légal et réglementaire",
+        "directeurs généraux"
       ],
-      "statut": "en vigueur"
+      "statut": "en vigueur",
+      "section": "Dispositions L.F. 2025"
     }
   ]
 }
