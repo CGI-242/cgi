@@ -405,7 +405,24 @@
     "keywords": [
       "liberté entreprendre",
       "investissement",
-      "contreseing ministre finances"
+      "contreseing ministre finances",
+      "personne physique",
+      "personne morale",
+      "nationalité",
+      "activité agricole",
+      "activité minière",
+      "activité industrielle",
+      "activité forestière",
+      "activité artisanale",
+      "activité commerciale",
+      "service",
+      "loi n°42-2019",
+      "acte juridique",
+      "dispositions dérogatoires",
+      "réglementation fiscale",
+      "avantages fiscaux",
+      "direction générale des impôts et des domaines",
+      "république du congo"
     ],
     "source": "charte-investissements.json"
   },
@@ -418,7 +435,23 @@
     "keywords": [
       "garanties économiques",
       "import export",
-      "liberté commerciale"
+      "liberté commerciale",
+      "matières premières",
+      "consommables",
+      "produits semi-ouvrés",
+      "produits ouvrés",
+      "biens d'équipement",
+      "matériels",
+      "outillage",
+      "activités économiques",
+      "politique de production",
+      "embauche",
+      "commercialisation",
+      "clients",
+      "fournisseurs",
+      "fixation des prix",
+      "dispositions légales",
+      "république du congo"
     ],
     "source": "charte-investissements.json"
   },
@@ -431,7 +464,16 @@
     "keywords": [
       "rapatriement bénéfices",
       "investisseurs étrangers",
-      "liquidation"
+      "liquidation",
+      "salariés étrangers",
+      "nationalité étrangère",
+      "libre rapatriement",
+      "bénéfices d'exploitation",
+      "économies sur salaires",
+      "liquidation partielle",
+      "liquidation totale",
+      "transfert de fonds",
+      "république du congo"
     ],
     "source": "charte-investissements.json"
   },
@@ -444,7 +486,14 @@
     "keywords": [
       "devises étrangères",
       "équipements",
-      "intrants"
+      "intrants",
+      "acquisition",
+      "matières premières",
+      "emballages",
+      "services",
+      "investisseurs",
+      "accès devises",
+      "change"
     ],
     "source": "charte-investissements.json"
   },
@@ -458,7 +507,13 @@
       "propriété",
       "terrains",
       "immeubles",
-      "propriété intellectuelle"
+      "propriété intellectuelle",
+      "droits de propriété",
+      "matériels d'exploitation",
+      "biens mobiliers",
+      "valeurs mobilières",
+      "garantie de propriété",
+      "république du congo"
     ],
     "source": "charte-investissements.json"
   },
@@ -470,7 +525,13 @@
     "chapitre": "2",
     "keywords": [
       "égalité traitement",
-      "concurrence"
+      "concurrence",
+      "personnes physiques",
+      "personnes morales",
+      "droits et obligations",
+      "droit de la concurrence",
+      "non-discrimination",
+      "exercice d'activités"
     ],
     "source": "charte-investissements.json"
   },
@@ -482,7 +543,15 @@
     "chapitre": "2",
     "keywords": [
       "libertés syndicales",
-      "représentation professionnelle"
+      "représentation professionnelle",
+      "dirigeants",
+      "travailleurs",
+      "assemblées consulaires",
+      "intérêts professionnels",
+      "intérêts économiques",
+      "activités syndicales",
+      "droit syndical",
+      "organismes représentatifs"
     ],
     "source": "charte-investissements.json"
   },
@@ -496,7 +565,18 @@
       "politique économique",
       "cadre macro-économique",
       "UEAC",
-      "surveillance multilatérale"
+      "surveillance multilatérale",
+      "politique financière",
+      "politique monétaire",
+      "redressement économique",
+      "développement durable",
+      "conditions de vie",
+      "croissance",
+      "création d'emplois",
+      "lutte contre la pauvreté",
+      "discipline budgétaire",
+      "convention UEAC",
+      "stratégie de développement"
     ],
     "source": "charte-investissements.json"
   },
@@ -510,7 +590,26 @@
       "finances publiques",
       "CEMAC",
       "régimes dérogatoires",
-      "recettes fiscales"
+      "recettes fiscales",
+      "assainissement",
+      "réforme fiscalo-douanière",
+      "recettes douanières",
+      "recouvrement",
+      "allocation des ressources",
+      "dépenses de santé",
+      "éducation",
+      "formation professionnelle",
+      "entreprenariat",
+      "infrastructures",
+      "mines",
+      "énergie",
+      "hydraulique",
+      "transport",
+      "communication",
+      "développement urbain",
+      "développement rural",
+      "protection de l'environnement",
+      "justice"
     ],
     "source": "charte-investissements.json"
   },
@@ -523,7 +622,14 @@
     "keywords": [
       "statistiques",
       "information économique",
-      "données investisseurs"
+      "données investisseurs",
+      "qualité des données",
+      "performances économiques",
+      "développement social",
+      "outils statistiques",
+      "institutions spécialisées",
+      "transparence économique",
+      "renforcement des services"
     ],
     "source": "charte-investissements.json"
   },
@@ -538,7 +644,17 @@
       "OHADA",
       "CCJA",
       "OIT",
-      "État de droit"
+      "état de droit",
+      "sécurité judiciaire",
+      "accords internationaux",
+      "traité OHADA",
+      "organismes spécialisés",
+      "politique judiciaire",
+      "normes internationales du travail",
+      "tripartite",
+      "protection des investissements",
+      "arrêts",
+      "procédures"
     ],
     "source": "charte-investissements.json"
   },
@@ -552,7 +668,15 @@
       "tribunal de commerce",
       "arbitrage",
       "sentences arbitrales",
-      "justice commerciale"
+      "justice commerciale",
+      "formation des juges",
+      "affaires commerciales",
+      "juridictions spécialisées",
+      "chambres arbitrales",
+      "chambre économique et sociale",
+      "exécution des décisions de justice",
+      "procédure d'arbitrage",
+      "règlement des litiges"
     ],
     "source": "charte-investissements.json"
   },
@@ -566,7 +690,28 @@
       "secteur privé",
       "infrastructures",
       "régulation",
-      "développement économique"
+      "développement économique",
+      "système économique",
+      "besoins fondamentaux",
+      "économie nationale",
+      "espace concurrentiel",
+      "environnement institutionnel",
+      "environnement fiscal",
+      "environnement financier",
+      "environnement réglementaire",
+      "capacités institutionnelles",
+      "santé",
+      "éducation",
+      "mines",
+      "énergie",
+      "hydraulique",
+      "industrie",
+      "artisanat",
+      "urbanisme",
+      "transports",
+      "télécommunications",
+      "environnement",
+      "production de biens et services"
     ],
     "source": "charte-investissements.json"
   },
@@ -580,7 +725,18 @@
       "partenariat",
       "secteur privé",
       "chambres consulaires",
-      "concertation"
+      "concertation",
+      "organisations professionnelles",
+      "syndicats patronaux",
+      "syndicats ouvriers",
+      "associations de consommateurs",
+      "organisations non gouvernementales",
+      "société civile",
+      "cadre juridique",
+      "stratégies de développement",
+      "cadre multisectoriel",
+      "réunions périodiques",
+      "renforcement des capacités"
     ],
     "source": "charte-investissements.json"
   },
@@ -593,7 +749,18 @@
     "keywords": [
       "simplification administrative",
       "commission nationale investissements",
-      "agrément"
+      "agrément",
+      "pesanteurs administratives",
+      "formalités",
+      "information des investisseurs",
+      "conseil aux investisseurs",
+      "agrément des entreprises",
+      "texte réglementaire",
+      "procédures",
+      "obligations des parties",
+      "sanctions",
+      "pénalités",
+      "avantages charte"
     ],
     "source": "charte-investissements.json"
   },
@@ -606,7 +773,19 @@
     "keywords": [
       "concurrence",
       "propriété intellectuelle",
-      "protection consommateurs"
+      "protection consommateurs",
+      "environnement de l'entreprise",
+      "développement des entreprises",
+      "réglementation de la concurrence",
+      "libre concurrence",
+      "productivité",
+      "compétitivité",
+      "services d'appui",
+      "rapport qualité-prix",
+      "pratiques discriminatoires",
+      "réglementation communautaire",
+      "santé",
+      "protection de l'environnement"
     ],
     "source": "charte-investissements.json"
   },
@@ -619,7 +798,16 @@
     "keywords": [
       "transparence",
       "privatisation",
-      "marchés publics"
+      "marchés publics",
+      "concurrence",
+      "opérations économiques",
+      "entreprises publiques",
+      "attribution des marchés",
+      "publicité",
+      "système d'informations",
+      "consommateurs",
+      "usagers",
+      "opérateurs économiques"
     ],
     "source": "charte-investissements.json"
   },
@@ -634,7 +822,18 @@
       "brevets",
       "marques",
       "innovation",
-      "propriété intellectuelle"
+      "propriété intellectuelle",
+      "signes distinctifs",
+      "labels",
+      "noms commerciaux",
+      "indications géographiques",
+      "appellations d'origine",
+      "invention",
+      "maîtrise des technologies",
+      "diffusion de la connaissance",
+      "partenariat intérieur",
+      "partenariat extérieur",
+      "réglementation OAPI"
     ],
     "source": "charte-investissements.json"
   },
@@ -649,7 +848,15 @@
       "métrologie",
       "certification",
       "qualité",
-      "ISO"
+      "ISO",
+      "organisation internationale de la normalisation",
+      "système national de normalisation",
+      "gestion de la qualité",
+      "qualité totale",
+      "culture d'entreprise",
+      "formation des opérateurs économiques",
+      "organisation régionale africaine de normalisation",
+      "système international"
     ],
     "source": "charte-investissements.json"
   },
@@ -664,7 +871,19 @@
       "compétitivité",
       "régulation",
       "concessions",
-      "monopole"
+      "monopole",
+      "coûts de transactions",
+      "facteurs de production",
+      "professions de conseil",
+      "monopole naturel",
+      "organe de régulation",
+      "secteur privé",
+      "société civile",
+      "investisseurs privés",
+      "infrastructures économiques",
+      "infrastructures sociales",
+      "concessions de services publics",
+      "service public"
     ],
     "source": "charte-investissements.json"
   },
@@ -678,7 +897,17 @@
       "ressources humaines",
       "formation professionnelle",
       "marché du travail",
-      "éducation"
+      "éducation",
+      "éducation primaire",
+      "taux de scolarisation",
+      "formation technique",
+      "organisations professionnelles",
+      "qualification",
+      "réglementation du travail",
+      "normes internationales",
+      "flexibilité du travail",
+      "développement des compétences",
+      "investisseur"
     ],
     "source": "charte-investissements.json"
   },
@@ -692,7 +921,15 @@
       "blanchiment",
       "corruption",
       "fraude",
-      "moralisation économique"
+      "moralisation économique",
+      "blanchiment d'argent",
+      "commerce de la drogue",
+      "infractions économiques",
+      "organe autonome",
+      "institution communautaire",
+      "vie économique",
+      "lutte contre la corruption",
+      "développement économique"
     ],
     "source": "charte-investissements.json"
   },
@@ -706,7 +943,17 @@
       "fiscalité",
       "tarif extérieur commun",
       "pression fiscale",
-      "équité fiscale"
+      "équité fiscale",
+      "fiscalité nationale",
+      "simplicité",
+      "modération fiscale",
+      "régimes dérogatoires",
+      "distorsions",
+      "tarif préférentiel généralisé",
+      "produits d'origine communautaire",
+      "taux zéro",
+      "fraude fiscale",
+      "lutte contre la fraude"
     ],
     "source": "charte-investissements.json"
   },
@@ -720,7 +967,16 @@
       "modernisation fiscale",
       "douanes",
       "informatisation",
-      "dédouanement"
+      "dédouanement",
+      "administration douanière",
+      "administration fiscale",
+      "coopération douanière",
+      "coopération fiscale régionale",
+      "formation des cadres",
+      "formation des agents",
+      "sociétés de surveillance",
+      "délais de dédouanement",
+      "marchandises"
     ],
     "source": "charte-investissements.json"
   },
@@ -737,7 +993,38 @@
       "TVA",
       "exonération IS",
       "amortissement dégressif",
-      "stabilité fiscale"
+      "stabilité fiscale",
+      "code des douanes",
+      "code général des impôts",
+      "suspension des droits de douanes",
+      "entrée en franchise",
+      "ressources naturelles",
+      "perfectionnement actif",
+      "activités de transformation",
+      "fiscalité indirecte",
+      "taux zéro TVA",
+      "remboursement TVA",
+      "entreprises exportatrices",
+      "impôt sur les sociétés",
+      "entreprises naissantes",
+      "réduction de 50%",
+      "amortissements accélérés",
+      "report des résultats négatifs",
+      "cash-flow",
+      "réduction d'impôts",
+      "protection de l'environnement",
+      "recherche technologique",
+      "formation professionnelle",
+      "PME-PMI",
+      "jeunes diplômés",
+      "fiscalité locale",
+      "investissements sociaux",
+      "droits d'enregistrement",
+      "création d'entreprises",
+      "augmentation de capital",
+      "fusions de sociétés",
+      "mutations actions",
+      "parts sociales"
     ],
     "source": "charte-investissements.json"
   },
@@ -751,7 +1038,19 @@
       "exclusions",
       "armes",
       "déchets toxiques",
-      "activités commerciales"
+      "activités commerciales",
+      "courtage",
+      "négoce",
+      "importation",
+      "fabrication d'armes de guerre",
+      "collecte",
+      "stockage",
+      "entreposage",
+      "distribution",
+      "exportation",
+      "produits de fabrication locale",
+      "boissons",
+      "avantages fiscaux et douaniers"
     ],
     "source": "charte-investissements.json"
   },
@@ -800,7 +1099,11 @@
       "secteurs prioritaires",
       "fiscalité simplifiée",
       "micro-entreprises",
-      "secteur informel"
+      "secteur informel",
+      "dispositions fiscales",
+      "dispositions douanières",
+      "zones d'activité prioritaires",
+      "régimes fiscaux dérogatoires"
     ],
     "source": "charte-investissements.json"
   },
@@ -814,7 +1117,15 @@
       "développement territorial",
       "régions enclavées",
       "prime équipement",
-      "réduction impôts"
+      "réduction impôts",
+      "avantages spéciaux",
+      "régions arriérées",
+      "compensation services sociaux",
+      "développement harmonieux",
+      "voie réglementaire",
+      "distorsion concurrence",
+      "investissement territorial",
+      "missions de l'état"
     ],
     "source": "charte-investissements.json"
   },
@@ -826,7 +1137,12 @@
     "chapitre": "2",
     "keywords": [
       "zones franches",
-      "zones préférentielles"
+      "zones préférentielles",
+      "zones de développement",
+      "dispositions fiscales",
+      "dispositions douanières",
+      "régime préférentiel",
+      "aménagement du territoire"
     ],
     "source": "charte-investissements.json"
   },
@@ -841,7 +1157,14 @@
       "BEAC",
       "monnaie",
       "politique monétaire",
-      "surveillance multilatérale"
+      "surveillance multilatérale",
+      "monnaie commune",
+      "monnaie convertible",
+      "banque centrale",
+      "émission monétaire",
+      "stabilité de la monnaie",
+      "autonomie de la banque centrale",
+      "système financier"
     ],
     "source": "charte-investissements.json"
   },
@@ -854,7 +1177,14 @@
     "keywords": [
       "FMI",
       "mouvements capitaux",
-      "transfert fonds"
+      "transfert fonds",
+      "fonds monétaire international",
+      "article 8 statuts FMI",
+      "transactions courantes",
+      "liberté des capitaux",
+      "délais de transfert",
+      "acteurs économiques",
+      "change"
     ],
     "source": "charte-investissements.json"
   },
@@ -868,7 +1198,13 @@
       "COBAC",
       "système bancaire",
       "normes prudentielles",
-      "supervision"
+      "supervision",
+      "contrôle bancaire",
+      "viabilité bancaire",
+      "banques",
+      "régulation bancaire",
+      "exécution des décisions",
+      "système bancaire viable"
     ],
     "source": "charte-investissements.json"
   },
@@ -883,7 +1219,17 @@
       "CIMA",
       "assurances",
       "marché financier",
-      "sécurité sociale"
+      "sécurité sociale",
+      "mobilisation de l'épargne",
+      "financement des investissements",
+      "conférence internationale de prévoyance sociale",
+      "organismes régionaux",
+      "institutions de crédit",
+      "cadre juridique",
+      "épargnants",
+      "assainissement",
+      "prévoyance sociale",
+      "instruments financiers"
     ],
     "source": "charte-investissements.json"
   },
@@ -896,7 +1242,14 @@
     "keywords": [
       "financement développement",
       "BDEAC",
-      "CEMAC"
+      "CEMAC",
+      "épargne locale",
+      "ressources extérieures",
+      "projets de développement",
+      "institution sous-régionale",
+      "banque de développement des états de l'afrique centrale",
+      "traité CEMAC",
+      "financement sous-régional"
     ],
     "source": "charte-investissements.json"
   },
@@ -910,7 +1263,13 @@
       "PME",
       "PMI",
       "crédit",
-      "accès financement"
+      "accès financement",
+      "petites et moyennes entreprises",
+      "petites et moyennes industries",
+      "capacité de gestion",
+      "développement des PME",
+      "accès au crédit",
+      "promotion des PME-PMI"
     ],
     "source": "charte-investissements.json"
   },
@@ -923,7 +1282,14 @@
     "keywords": [
       "exportations",
       "assurance export",
-      "Afreximbank"
+      "Afreximbank",
+      "financement des exportations",
+      "risque exportation",
+      "institutions spécialisées",
+      "banque africaine d'import-export",
+      "institutions de financement",
+      "assurance risque",
+      "commerce extérieur"
     ],
     "source": "charte-investissements.json"
   },
@@ -937,7 +1303,16 @@
       "règlement différends",
       "arbitrage",
       "OHADA",
-      "CIRDI"
+      "CIRDI",
+      "juridictions congolaises",
+      "conciliation",
+      "cour de justice communautaire",
+      "traité du 17 octobre 1993",
+      "centre international de règlement des différends",
+      "investissements internationaux",
+      "interprétation de la charte",
+      "procédures d'arbitrage",
+      "sentences"
     ],
     "source": "charte-investissements.json"
   },
@@ -950,7 +1325,14 @@
     "keywords": [
       "régimes antérieurs",
       "renégociation",
-      "adaptation"
+      "adaptation",
+      "conventions antérieures",
+      "gouvernement",
+      "clauses fiscales",
+      "clauses douanières",
+      "dispositions de la charte",
+      "régimes en vigueur",
+      "initiative des entreprises"
     ],
     "source": "charte-investissements.json"
   },
@@ -963,7 +1345,12 @@
     "keywords": [
       "modalités application",
       "commission nationale investissements",
-      "réglementation"
+      "réglementation",
+      "voie réglementaire",
+      "organisation",
+      "fonctionnement",
+      "dispositions de la charte",
+      "décret d'application"
     ],
     "source": "charte-investissements.json"
   },
@@ -976,7 +1363,12 @@
     "keywords": [
       "codes spécifiques",
       "secteurs activité",
-      "complémentarité"
+      "complémentarité",
+      "charte nationale de l'investissement",
+      "conditions techniques",
+      "conditions financières",
+      "conditions d'exploitation",
+      "législation sectorielle"
     ],
     "source": "charte-investissements.json"
   },
@@ -988,7 +1380,15 @@
     "chapitre": "2",
     "keywords": [
       "abrogation",
-      "code investissements 1992"
+      "code investissements 1992",
+      "loi n°08-92",
+      "loi n°7-96",
+      "10 avril 1992",
+      "6 mars 1996",
+      "dispositions antérieures",
+      "dispositions contraires",
+      "code des investissements",
+      "abrogation législative"
     ],
     "source": "charte-investissements.json"
   },
@@ -1000,7 +1400,11 @@
     "chapitre": "2",
     "keywords": [
       "exécution",
-      "loi État"
+      "loi état",
+      "promulgation",
+      "entrée en vigueur",
+      "force exécutoire",
+      "loi de la république"
     ],
     "source": "charte-investissements.json"
   },
