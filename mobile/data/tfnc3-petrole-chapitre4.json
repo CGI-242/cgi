@@ -29,7 +29,24 @@
         "satisfaire les conditions de promotion et d'utilisation des biens et services locaux prévues par les articles 140 à 142 du Code des hydrocarbures ;",
         "ne pas avoir été qualifiée de non constitutive d'un coût pétrolier par une disposition spécifique."
       ],
-      "mots_cles": ["coûts pétroliers", "dépense déductible", "article 3", "article 75", "article 153", "provision remise en état", "amendes pénalités", "conditions récupération", "articles 140 à 142"],
+      "mots_cles": [
+        "coûts pétroliers",
+        "dépense déductible",
+        "article 3",
+        "article 75",
+        "article 153",
+        "Code hydrocarbures",
+        "CGI",
+        "provision remise en état",
+        "amendes pénalités",
+        "intérêts retard",
+        "conditions récupération",
+        "articles 140 à 142",
+        "contracteur",
+        "opérations pétrolières",
+        "assiette imposable",
+        "impôt sur les sociétés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -55,7 +72,27 @@
         "6° les droits d'auteurs et d'inventeurs ;",
         "7° les sous-conditions de temps à respecter pour les charges déductibles : les charges doivent être déduites des résultats de l'exercice au cours duquel elles ont été engagées."
       ],
-      "mots_cles": ["déductibilité fiscale", "sous-conditions de fond", "sous-conditions de forme", "sous-conditions de temps", "charges déductibles", "article 380", "rémunérations", "honoraires", "commissions", "article 179"],
+      "mots_cles": [
+        "déductibilité fiscale",
+        "sous-conditions fond",
+        "sous-conditions forme",
+        "sous-conditions temps",
+        "charges déductibles",
+        "article 380",
+        "CGI tome 1",
+        "rémunérations",
+        "honoraires",
+        "commissions",
+        "courtages",
+        "loyers",
+        "droits auteurs inventeurs",
+        "professionnels libéraux",
+        "pièces justificatives",
+        "immobilisations",
+        "remboursements emprunt",
+        "actif net",
+        "article 179"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -66,7 +103,16 @@
         "Art.71.- Sous-conditions de déductibilité selon la notion d'engagement (facturation et comptabilisation)",
         "Les charges doivent être déduites de l'exercice au cours duquel elles ont été engagées, c'est-à-dire dès qu'elles présentent une dette certaine dans leur principe et dans leur montant, même si elles restent à payer car la date de paiement ou d'exigibilité de celles-ci intervient lors de l'exercice suivant."
       ],
-      "mots_cles": ["engagement", "facturation", "comptabilisation", "dette certaine", "exercice"],
+      "mots_cles": [
+        "engagement",
+        "facturation",
+        "comptabilisation",
+        "dette certaine",
+        "exercice",
+        "charges déduites",
+        "paiement",
+        "exigibilité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -78,7 +124,17 @@
         "I. Les dépenses non encore payées ou non décaissées ne constituent pas des coûts pétroliers.",
         "II. Les dépenses payées en espèces au mépris de l'article 113 du tome 1 du CGI ne sont pas des coûts pétroliers. En effet, cet article dispose que les versements effectués en espèces pour un montant supérieur ou égal à 500.000 FCFA par bénéficiaire ne sont pas déductibles du bénéfice imposable."
       ],
-      "mots_cles": ["paiement", "dépenses non payées", "espèces", "article 113", "500.000 FCFA", "bénéfice fiscal"],
+      "mots_cles": [
+        "paiement",
+        "dépenses non payées",
+        "espèces",
+        "article 113",
+        "CGI tome 1",
+        "500.000 FCFA",
+        "bénéfice imposable",
+        "non décaissées",
+        "coûts pétroliers"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -92,7 +148,22 @@
         "1° les contracteurs ou leurs sous-traitants doivent donner la priorité à l'achat de biens et services auprès de sociétés nationales ou de sociétés privées nationales (telles que définies à l'article 3 du Code des hydrocarbures), dans la mesure où les offres techniques et commerciales de ces dernières sont équivalentes à celles des autres sociétés ou, au maximum, supérieures de 10 % à celles des autres sociétés ;",
         "2° les coûts d'origine congolaise de développement et d'exploitation du projet pétrolier ne doivent pas être inférieurs à un certain pourcentage. Ce dernier est déterminé dans le programme minimum des travaux en phase d'exploration et dans le plan de développement et d'exploitation pour les phases suivantes. Il ne peut être inférieur à 25 %."
       ],
-      "mots_cles": ["contenu local", "articles 140 à 142", "sociétés nationales", "priorité achat", "10 %", "coûts congolais", "25 %", "programme minimum"],
+      "mots_cles": [
+        "contenu local",
+        "articles 140 à 142",
+        "Code hydrocarbures",
+        "sociétés nationales",
+        "sociétés privées nationales",
+        "priorité achat",
+        "sous-traitants",
+        "10%",
+        "offres techniques commerciales",
+        "coûts congolais",
+        "25%",
+        "programme minimum",
+        "plan développement exploitation",
+        "exploration"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -120,7 +191,43 @@
         "14° des cotisations sociales conformément à l'article 58 du présent décret ;",
         "15° des droits d'enregistrement et de timbre conformément à l'article 60 du présent décret."
       ],
-      "mots_cles": ["non-qualification", "coûts pétroliers", "primes assurance", "article 146", "amendes pénalités", "article 153", "frais bancaires", "article 155", "bonus", "redevance minière", "emploi personnel étranger", "dépôts garantie BEAC", "provision abandon", "contribution foncière", "droits fonciers", "TOL", "TUS", "cotisations sociales", "droits enregistrement"],
+      "mots_cles": [
+        "non-qualification",
+        "coûts pétroliers",
+        "prélèvements fiscaux",
+        "Code hydrocarbures",
+        "primes assurance",
+        "article 146",
+        "amendes pénalités",
+        "article 153",
+        "frais bancaires",
+        "article 155",
+        "bonus",
+        "article 7",
+        "redevance minière",
+        "article 18",
+        "emploi personnel étranger",
+        "article 21",
+        "préférence nationale",
+        "dépôts garantie BEAC",
+        "article 25",
+        "provision abandon",
+        "article 26",
+        "contribution foncière bâtie",
+        "article 37",
+        "contribution foncière non-bâtie",
+        "article 42",
+        "droits fonciers",
+        "article 43",
+        "TOL",
+        "article 49",
+        "TUS",
+        "article 53",
+        "cotisations sociales",
+        "article 58",
+        "droits enregistrement timbre",
+        "article 60"
+      ],
       "statut": "en vigueur"
     }
   ]

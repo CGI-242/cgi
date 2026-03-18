@@ -40,7 +40,31 @@
         "e) la taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production.",
         "4) La provision pour abandon et réhabilitation des sites."
       ],
-      "mots_cles": ["typologie impôts", "bonus", "redevances", "contributions", "PID", "provision abandon", "articles 101 148", "société nationale"],
+      "mots_cles": [
+        "typologie impôts",
+        "bonus",
+        "redevances",
+        "contributions",
+        "PID",
+        "provision abandon",
+        "articles 101 et 148",
+        "société nationale",
+        "permis exploration",
+        "permis exploitation",
+        "bonus attribution",
+        "bonus signature",
+        "bonus production",
+        "bonus prorogation",
+        "redevance superficiaire",
+        "redevance minière proportionnelle",
+        "formation personnel congolais",
+        "vérification comptabilité",
+        "fonds environnement",
+        "cession intérêts participatifs",
+        "réhabilitation sites",
+        "contracteur",
+        "contrat partage production"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -52,7 +76,18 @@
         "- en régime de partage de production : la partie contractante avec l'État, composée d'une ou plusieurs personnes morales, y compris la société nationale, ainsi que toute personne morale bénéficiaire d'un transfert régulier d'un intérêt participatif dans un titre minier ;",
         "- en régime de contrat de services : une ou plusieurs personnes morales avec laquelle ou lesquelles l'État a signé un contrat de services."
       ],
-      "mots_cles": ["contracteur", "partage production", "contrat services", "société nationale", "intérêt participatif", "titre minier"],
+      "mots_cles": [
+        "contracteur",
+        "partage production",
+        "contrat services",
+        "société nationale",
+        "intérêt participatif",
+        "titre minier",
+        "article 3 Code hydrocarbures",
+        "partie contractante État",
+        "personnes morales",
+        "transfert régulier"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -66,7 +101,19 @@
         "2° la conclusion ou la modification d'un contrat pétrolier ;",
         "3° la prorogation d'un permis d'exploration ou d'exploitation."
       ],
-      "mots_cles": ["faits générateurs", "bonus", "attribution", "réattribution", "conclusion", "modification", "prorogation", "article 156"],
+      "mots_cles": [
+        "faits générateurs",
+        "bonus",
+        "attribution",
+        "réattribution",
+        "conclusion",
+        "modification",
+        "prorogation",
+        "article 156",
+        "permis exploration",
+        "permis exploitation",
+        "contrat pétrolier"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -81,7 +128,21 @@
         "IV. Dans le cas du permis d'exploration, les bonus sont fixés en fonction du périmètre de la surface d'exploration et du potentiel économique de la zone.",
         "V. Dans le cas du permis d'exploitation, les bonus sont fixés en fonction du périmètre de la surface d'exploitation, des réserves en place et des seuils de production, le cas échéant."
       ],
-      "mots_cles": ["redevable bonus", "opérateur", "montant négocié", "décret Conseil Ministres", "surface exploration", "réserves"],
+      "mots_cles": [
+        "redevable bonus",
+        "opérateur",
+        "montant négocié",
+        "décret Conseil Ministres",
+        "surface exploration",
+        "réserves",
+        "article 176",
+        "article 156",
+        "contracteur",
+        "ministères hydrocarbures finances",
+        "permis exploitation",
+        "potentiel économique",
+        "seuils production"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -92,7 +153,14 @@
         "Art.7.- Non-inclusion des bonus dans les coûts pétroliers",
         "Conformément à l'article 156 du Code des hydrocarbures, les bonus ne constituent pas un coût pétrolier récupérable bien qu'ils soient déductibles de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["bonus non récupérable", "déductible IS", "coût pétrolier", "article 156"],
+      "mots_cles": [
+        "bonus non récupérable",
+        "coût pétrolier",
+        "déductible IS",
+        "article 156",
+        "assiette imposable",
+        "impôt sur les sociétés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -108,7 +176,21 @@
         "3° des lieux de stockage aux points de livraison ou de transformation ou de raffinage.",
         "III. En revanche, la superficie couverte par des pipelines acheminant des produits raffinés de la raffinerie au point de livraison n'est pas soumise à la redevance superficiaire."
       ],
-      "mots_cles": ["redevance superficiaire", "champ application", "périmètres exploration exploitation", "pipelines", "article 157", "décret 2000-186"],
+      "mots_cles": [
+        "redevance superficiaire",
+        "champ application",
+        "périmètres exploration exploitation",
+        "pipelines",
+        "article 157",
+        "décret n°2000-186",
+        "12 août 2000",
+        "contrat pétrolier",
+        "champs mitoyens",
+        "lieux stockage",
+        "points livraison",
+        "transformation",
+        "raffinage"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -119,7 +201,12 @@
         "Art.9.- Redevable de la redevance superficiaire",
         "Conformément à l'article 157 du Code des hydrocarbures, une redevance superficiaire est due par le contracteur."
       ],
-      "mots_cles": ["redevable", "redevance superficiaire", "contracteur", "article 157"],
+      "mots_cles": [
+        "redevable",
+        "redevance superficiaire",
+        "contracteur",
+        "article 157"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -148,7 +235,29 @@
         "3° le « triplicata » (souche ou troisième copie) qui reste dans les archives de la direction générale des hydrocarbures.",
         "IX. Les avis de mise en recouvrement sont transmis au comptable principal des recettes du budget de l'État pour prise en charge comptable et diligence de recouvrement à effectuer."
       ],
-      "mots_cles": ["recouvrement", "AMR", "directeur hydrocarbures", "directeur mines", "30 octobre", "opérateur", "NIU", "primata", "duplicata", "triplicata", "15 décembre"],
+      "mots_cles": [
+        "recouvrement",
+        "AMR",
+        "article 157",
+        "directeur général hydrocarbures",
+        "directeur général domaines",
+        "ordonnateur délégué",
+        "ministre budget",
+        "30 octobre",
+        "opérateur",
+        "NIU",
+        "primata",
+        "duplicata",
+        "triplicata",
+        "15 décembre",
+        "assiette",
+        "taux",
+        "perception",
+        "résidence fiscale",
+        "comptable principal recettes",
+        "nom permis",
+        "superficie"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -160,7 +269,18 @@
         "I. Conformément à l'article 461 bis du tome 1 du Code général des impôts et à l'article 5 du décret n°2000-186 du 12 août 2000, le paiement de la redevance superficiaire est effectué spontanément, par virement, à l'ordre du Trésor public, au plus tard le 20 janvier de l'année civile qui suit celle au titre de laquelle la redevance superficiaire est due.",
         "II. Lorsque le permis est rendu à la République du Congo en cours d'année, le paiement est dû au plus tard le 20 du mois suivant l'émission de l'avis de mise en recouvrement."
       ],
-      "mots_cles": ["paiement", "20 janvier", "article 461 bis", "décret 2000-186", "virement Trésor public", "rendu permis"],
+      "mots_cles": [
+        "paiement",
+        "20 janvier",
+        "article 461 bis CGI",
+        "décret n°2000-186",
+        "paiement spontané",
+        "virement",
+        "Trésor public",
+        "année civile",
+        "permis rendu",
+        "20 du mois suivant AMR"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -175,7 +295,18 @@
         "2° pour les permis d'exploitation : 800 dollars des États-Unis d'Amérique USD/km² ;",
         "3° pour les Pipelines : 0,9 dollars USD/km."
       ],
-      "mots_cles": ["calcul", "base imposition", "superficie km²", "pipelines longueur", "3000 FCFA", "800 USD", "0,9 USD/km"],
+      "mots_cles": [
+        "calcul",
+        "base imposition",
+        "superficie km²",
+        "pipelines longueur",
+        "3000 FCFA/km²",
+        "800 USD/km²",
+        "0,9 USD/km",
+        "article 2 décret 2000-186",
+        "permis recherche",
+        "permis exploitation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -188,7 +319,13 @@
         "1° un tiers (1/3) au budget de l'État ;",
         "2° deux tiers (2/3) aux budgets des collectivités locales."
       ],
-      "mots_cles": ["répartition", "1/3 État", "2/3 collectivités locales", "article 4 décret 2000-186"],
+      "mots_cles": [
+        "répartition",
+        "1/3 État",
+        "2/3 collectivités locales",
+        "article 4 décret 2000-186",
+        "Trésor public"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -199,7 +336,14 @@
         "Art.14.- Inclusion de la redevance superficiaire dans les coûts pétroliers",
         "Conformément à l'article 157 du Code des hydrocarbures, la redevance superficiaire constitue un coût pétrolier. Elle est déductible de l'assiette imposable à l'impôt sur les sociétés."
       ],
-      "mots_cles": ["coût pétrolier", "déductible IS", "redevance superficiaire", "article 157"],
+      "mots_cles": [
+        "coût pétrolier",
+        "déductible IS",
+        "redevance superficiaire",
+        "article 157",
+        "assiette imposable",
+        "impôt sur les sociétés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -210,7 +354,16 @@
         "Art.15.- Champ d'application et fait générateur",
         "Conformément à l'article 158 du Code des hydrocarbures, le contracteur est assujetti à une redevance proportionnelle assise sur la production nette de chaque permis d'exploitation à compter du début de l'exploitation commerciale de ce dernier. Il en résulte que le fait générateur de la redevance minière proportionnelle est le début d'exploitation commerciale du permis d'exploitation."
       ],
-      "mots_cles": ["fait générateur", "redevance minière proportionnelle", "production nette", "exploitation commerciale", "article 158"],
+      "mots_cles": [
+        "fait générateur",
+        "redevance minière proportionnelle",
+        "production nette",
+        "exploitation commerciale",
+        "article 158",
+        "contracteur",
+        "permis exploitation",
+        "assiette"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -224,7 +377,24 @@
         "III. Conformément à l'article 159 du Code des hydrocarbures, les taux de la redevance minière proportionnelle sont fixés à 15 % en ce qui concerne les hydrocarbures liquides et à 5 % en ce qui concerne le gaz naturel et les hydrocarbures solides.",
         "IV. Toutefois, pour les opérations pétrolières conduites dans les zones difficiles telles que le bassin de la cuvette congolaise, l'anté-salifère en eau profonde au-delà de cinq cents mètres de profondeur d'eau, un taux de redevance réduit peut être négocié pour les hydrocarbures liquides, sans qu'il ne soit inférieur à 12 %. Dans ce cas, le taux de la redevance minière proportionnelle du permis d'exploitation est fixé dans le contrat pétrolier y afférent."
       ],
-      "mots_cles": ["base imposable", "taux", "production nette", "15% liquides", "5% gaz solides", "zones difficiles", "12% minimum", "articles 158 159"],
+      "mots_cles": [
+        "base imposable",
+        "taux",
+        "production nette",
+        "15% liquides",
+        "5% gaz solides",
+        "zones difficiles",
+        "12% minimum",
+        "articles 158 et 159",
+        "article 3 Code hydrocarbures",
+        "hydrocarbures liquides",
+        "gaz naturel",
+        "bassin cuvette congolaise",
+        "anté-salifère",
+        "eau profonde 500m",
+        "taux réduit négocié",
+        "contrat pétrolier"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -240,7 +410,20 @@
         "1° conformément à l'article 160 du Code des hydrocarbures, le contracteur est tenu de la mettre à disposition de l'État au point d'enlèvement des hydrocarbures ;",
         "2° la déclaration fiscale prévue au II. ne comporte que les quantités versées et non le montant du paiement en numéraire."
       ],
-      "mots_cles": ["déclaration", "paiement", "20 du mois", "virement bancaire", "paiement en nature", "point enlèvement", "article 160"],
+      "mots_cles": [
+        "déclaration",
+        "paiement",
+        "20 du mois",
+        "virement bancaire",
+        "paiement en nature",
+        "point enlèvement",
+        "article 160",
+        "production mois précédent",
+        "administration fiscale",
+        "acquittement en espèces",
+        "option État",
+        "mise à disposition"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -251,7 +434,15 @@
         "Art.18.- Non-inclusion de la redevance minière proportionnelle dans les coûts pétroliers",
         "La redevance minière proportionnelle n'est pas un coût pétrolier bien qu'elle soit déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés sur le fondement des articles 109 B et 112 B du tome 1 du Code général des impôts."
       ],
-      "mots_cles": ["non coût pétrolier", "déductible IS", "articles 109 B 112 B", "CGI tome 1"],
+      "mots_cles": [
+        "non coût pétrolier",
+        "déductible IS",
+        "articles 109 B et 112 B",
+        "CGI tome 1",
+        "redevance minière proportionnelle",
+        "assiette imposable",
+        "impôt sur les sociétés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -269,7 +460,20 @@
         "II. Conformément à l'article 3 de la loi organique n°36-2017 du 3 octobre 2017 relative aux lois de finances, les contributions sont des fonds publics qui doivent être remaniés dans le budget de l'État ; tant en recettes qu'en dépenses.",
         "III. Sauf dispositions contraires du Code des hydrocarbures, les montants annuels de ces contributions sont arrêtés au comité de gestion de chaque permis, conformément au contrat de partage de production."
       ],
-      "mots_cles": ["contributions", "article 148", "PID", "formation personnel", "vérification comptabilité", "fonds environnement", "plus-values", "loi organique 36-2017", "fonds publics"],
+      "mots_cles": [
+        "contributions",
+        "article 148",
+        "PID",
+        "formation personnel congolais",
+        "vérification comptabilité",
+        "fonds environnement",
+        "plus-values cession",
+        "loi organique n°36-2017",
+        "3 octobre 2017",
+        "fonds publics",
+        "comité de gestion",
+        "contrat partage production"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -282,7 +486,20 @@
         "II. La provision pour investissements diversifiés est déclarée spontanément auprès de l'administration fiscale et payable par virement au plus tard le vingt de chaque mois au titre de la production du mois précédent.",
         "III. Conformément à l'article 162 du Code des hydrocarbures, la provision pour investissements diversifiés est un coût pétrolier récupérable. Elle est déductible de l'assiette imposable à l'impôt sur les sociétés."
       ],
-      "mots_cles": ["PID", "1% production nette", "article 161", "déclaration spontanée", "virement", "20 du mois", "coût récupérable", "déductible IS"],
+      "mots_cles": [
+        "PID",
+        "1% production nette",
+        "article 161",
+        "article 162",
+        "déclaration spontanée",
+        "virement",
+        "20 du mois",
+        "coût pétrolier récupérable",
+        "déductible IS",
+        "assiette imposable",
+        "administration fiscale",
+        "production mois précédent"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -296,7 +513,24 @@
         "III. Il en ressort que, à qualification égale, du personnel de nationalité congolaise doit être employé en préférence à tous les niveaux en priorité dans les établissements et installations situés au Congo.",
         "IV. Les dépenses d'emploi du personnel étranger ou extérieur, ainsi que les cotisations sociales et la taxe unique sur les salaires afférentes, n'ayant pas respecté les conditions du paragraphe ci-dessus ne constituent pas des coûts pétroliers. Elles ne sont pas déductibles de l'assiette imposable à l'impôt sur les sociétés."
       ],
-      "mots_cles": ["formation personnel congolais", "article 139", "recrutement", "compagnonnage", "coûts pétroliers", "préférence nationale", "dépenses personnel étranger non déductibles"],
+      "mots_cles": [
+        "formation personnel congolais",
+        "article 139",
+        "recrutement",
+        "compagnonnage",
+        "coûts pétroliers",
+        "préférence nationale",
+        "dépenses personnel étranger non déductibles",
+        "contracteur",
+        "sous-traitants",
+        "prestataires services",
+        "priorité personnel congolais",
+        "promotion",
+        "structures permanentes formation",
+        "cotisations sociales",
+        "taxe unique salaires",
+        "budgets reportés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -308,7 +542,17 @@
         "I. L'article 148 du Code des hydrocarbures prévoit qu'une contribution à la vérification et au contrôle de comptabilité est versée par chaque contracteur. Le montant annuel de cette contribution est déterminé librement par le comité de gestion du contrat pétrolier.",
         "II. La contribution à la vérification et au contrôle de comptabilité constitue un coût pétrolier. Elle est déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["vérification comptabilité", "article 148", "comité de gestion", "coût pétrolier", "déductible IS"],
+      "mots_cles": [
+        "vérification comptabilité",
+        "article 148",
+        "comité de gestion",
+        "coût pétrolier",
+        "déductible IS",
+        "contracteur",
+        "montant annuel",
+        "contrat pétrolier",
+        "assiette imposable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -322,7 +566,23 @@
         "III. La contribution au fonds national de prévention des risques environnementaux est déclarée spontanément par le contracteur auprès de l'administration fiscale et payée au trésor public par virement au plus tard le vingt de chaque mois, au titre du mois précédent.",
         "IV. Conformément à l'article 98 du Code des hydrocarbures, la contribution au fonds national de prévention des risques environnementaux constitue un coût pétrolier. Elle est déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
-      "mots_cles": ["fonds environnement", "0,05%", "production nette", "prix fiscal", "article 98", "non producteurs", "coût pétrolier", "déductible IS"],
+      "mots_cles": [
+        "fonds environnement",
+        "0,05%",
+        "production nette",
+        "prix fiscal",
+        "article 98",
+        "non producteurs",
+        "coût pétrolier",
+        "déductible IS",
+        "contracteur redevable",
+        "formule compensation",
+        "prospection exploration développement",
+        "déclaration spontanée",
+        "Trésor public",
+        "virement",
+        "20 du mois"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -336,7 +596,21 @@
         "III. Le cédant et le cessionnaire sont solidairement responsables du paiement de la taxe.",
         "IV. La taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production est déclarée auprès de l'administration fiscale et payée au Trésor public dans les conditions de droit commun."
       ],
-      "mots_cles": ["taxe plus-values", "10%", "cession intérêts participatifs", "article 163", "cédant cessionnaire", "solidarité"],
+      "mots_cles": [
+        "taxe plus-values",
+        "10%",
+        "cession intérêts participatifs",
+        "article 163",
+        "cédant",
+        "cessionnaire",
+        "solidarité",
+        "contrat partage production",
+        "prix cession",
+        "coûts restant récupérer",
+        "société droit congolais",
+        "administration fiscale",
+        "Trésor public"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -353,7 +627,26 @@
         "VI. Conformément à l'article 13 de la loi n°4-98 du 28 août 1998, les dépôts de garantie ne sont pas déductibles de l'assiette imposable à l'impôt sur les sociétés. Ils ne constituent pas des coûts pétroliers.",
         "VII. Conformément à l'article 15 de la loi n°4-98 du 28 août 1998, lorsqu'une société pétrolière ne constitue pas de garantie ou constitue une garantie annuelle insuffisante, une quantité d'hydrocarbures d'un montant équivalent à cette garantie est retenue sur le « Profit Oil » revenant à cette société."
       ],
-      "mots_cles": ["compte séquestre", "caisse dépôts consignations", "BEAC", "loi 4-98", "démantèlement", "réhabilitation", "20% par an", "5 ans", "EONIA 1,5%", "Profit Oil"],
+      "mots_cles": [
+        "compte séquestre",
+        "caisse dépôts consignations",
+        "BEAC",
+        "loi n°4-98",
+        "28 août 1998",
+        "article 101 Code hydrocarbures",
+        "démantèlement",
+        "réhabilitation",
+        "20% par an",
+        "5 ans",
+        "EONIA 1,5%",
+        "Profit Oil",
+        "sociétés pétrolières",
+        "garantie",
+        "USD",
+        "articles 7 9 11 13 15 loi 4-98",
+        "assiette IS",
+        "retenue hydrocarbures"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -364,7 +657,14 @@
         "Art.26.- Inclusion dans les coûts pétroliers de la provision pour abandon et réhabilitation des sites",
         "En application des dispositions combinées articles 15, 75, 89, 99 et 102 du Code des hydrocarbures, les fonds collectés aux fins de constitution de la provision pour abandon et réhabilitation des sites ne constituent des coûts pétroliers récupérables qu'à condition que ces fonds soient effectivement versés dans un compte séquestre."
       ],
-      "mots_cles": ["provision abandon", "réhabilitation sites", "coûts pétroliers récupérables", "compte séquestre", "articles 15 75 89 99 102"],
+      "mots_cles": [
+        "provision abandon",
+        "réhabilitation sites",
+        "coûts pétroliers récupérables",
+        "compte séquestre",
+        "articles 15 75 89 99 et 102",
+        "fonds effectivement versés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -376,7 +676,20 @@
         "I. En application de l'article 21 du Code des hydrocarbures, Les membres du contracteur sont conjointement responsables vis-à-vis de l'État, à hauteur de leurs intérêts participatifs respectifs, de l'exécution des obligations du contracteur résultant de l'autorisation de prospection ou du titre minier et du contrat pétrolier.",
         "II. En application de l'article 176 du Code des hydrocarbures, les bonus, redevances, taxes et contributions spécifiques au secteur pétrolier amont auxquels est assujetti le contracteur sont acquittés par l'opérateur pour le compte du contracteur. En cas de défaillance de l'opérateur, les membres du contracteur sont individuellement responsables du paiement de ces bonus, redevances, taxes et contributions."
       ],
-      "mots_cles": ["responsabilité opérateur", "solidarité", "intérêts participatifs", "défaillance", "articles 21 176"],
+      "mots_cles": [
+        "responsabilité opérateur",
+        "solidarité",
+        "intérêts participatifs",
+        "défaillance",
+        "articles 21 et 176",
+        "membres contracteur",
+        "responsabilité conjointe",
+        "État",
+        "titre minier",
+        "contrat pétrolier",
+        "bonus redevances taxes contributions",
+        "secteur pétrolier amont"
+      ],
       "statut": "en vigueur"
     }
   ]

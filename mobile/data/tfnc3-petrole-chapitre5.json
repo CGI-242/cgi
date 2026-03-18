@@ -21,7 +21,15 @@
         "Chapitre 5 - Dispositions finales",
         "Art.75.- Le présent décret, abroge toutes dispositions antérieures contraires, notamment les articles 3 et 6 du décret n°2000-186 du 12 août 2000 fixant les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire."
       ],
-      "mots_cles": ["abrogation", "dispositions antérieures", "décret 2000-186", "redevance superficiaire"],
+      "mots_cles": [
+        "abrogation",
+        "dispositions antérieures",
+        "décret n°2000-186",
+        "12 août 2000",
+        "articles 3 et 6",
+        "redevance superficiaire",
+        "taux perception recouvrement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -31,7 +39,13 @@
       "texte": [
         "Art.76.- Le présent décret sera enregistré et publié au Journal officiel de la République du Congo."
       ],
-      "mots_cles": ["publication", "Journal officiel", "République du Congo"],
+      "mots_cles": [
+        "publication",
+        "Journal officiel",
+        "République du Congo",
+        "enregistrement",
+        "décret"
+      ],
       "statut": "en vigueur"
     }
   ]

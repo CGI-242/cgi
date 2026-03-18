@@ -12016,8 +12016,19 @@
       "Code hydrocarbures",
       "CGI",
       "Code douanes",
+      "Décret n°2022-1858",
+      "12 octobre 2022",
+      "article 3",
+      "article 11",
       "article 211",
-      "article 212"
+      "article 212",
+      "prospection",
+      "exploration",
+      "développement",
+      "exploitation",
+      "contrats pétroliers",
+      "avenants",
+      "dispositions fiscales intérieures"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12028,11 +12039,15 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "3.3. Application des dispositions fiscales au secteur pétrolier amont",
     "keywords": [
-      "cadre fiscal secteur pétrolier amont",
-      "dispositions spécifiques Code hydrocarbures",
-      "droit commun CGI",
+      "cadre fiscal",
+      "secteur pétrolier amont",
+      "dispositions spécifiques",
+      "Code hydrocarbures",
+      "droit commun",
+      "CGI",
       "article 149",
-      "impôts taxes"
+      "impôts",
+      "taxes"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12049,8 +12064,23 @@
       "contributions",
       "PID",
       "provision abandon",
-      "articles 101 148",
-      "société nationale"
+      "articles 101 et 148",
+      "société nationale",
+      "permis exploration",
+      "permis exploitation",
+      "bonus attribution",
+      "bonus signature",
+      "bonus production",
+      "bonus prorogation",
+      "redevance superficiaire",
+      "redevance minière proportionnelle",
+      "formation personnel congolais",
+      "vérification comptabilité",
+      "fonds environnement",
+      "cession intérêts participatifs",
+      "réhabilitation sites",
+      "contracteur",
+      "contrat partage production"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12066,7 +12096,11 @@
       "contrat services",
       "société nationale",
       "intérêt participatif",
-      "titre minier"
+      "titre minier",
+      "article 3 Code hydrocarbures",
+      "partie contractante État",
+      "personnes morales",
+      "transfert régulier"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12084,7 +12118,10 @@
       "conclusion",
       "modification",
       "prorogation",
-      "article 156"
+      "article 156",
+      "permis exploration",
+      "permis exploitation",
+      "contrat pétrolier"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12100,7 +12137,14 @@
       "montant négocié",
       "décret Conseil Ministres",
       "surface exploration",
-      "réserves"
+      "réserves",
+      "article 176",
+      "article 156",
+      "contracteur",
+      "ministères hydrocarbures finances",
+      "permis exploitation",
+      "potentiel économique",
+      "seuils production"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12112,9 +12156,11 @@
     "chapitre": "3.3. Application des dispositions fiscales au secteur pétrolier amont",
     "keywords": [
       "bonus non récupérable",
-      "déductible IS",
       "coût pétrolier",
-      "article 156"
+      "déductible IS",
+      "article 156",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12130,7 +12176,14 @@
       "périmètres exploration exploitation",
       "pipelines",
       "article 157",
-      "décret 2000-186"
+      "décret n°2000-186",
+      "12 août 2000",
+      "contrat pétrolier",
+      "champs mitoyens",
+      "lieux stockage",
+      "points livraison",
+      "transformation",
+      "raffinage"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12157,15 +12210,25 @@
     "keywords": [
       "recouvrement",
       "AMR",
-      "directeur hydrocarbures",
-      "directeur mines",
+      "article 157",
+      "directeur général hydrocarbures",
+      "directeur général domaines",
+      "ordonnateur délégué",
+      "ministre budget",
       "30 octobre",
       "opérateur",
       "NIU",
       "primata",
       "duplicata",
       "triplicata",
-      "15 décembre"
+      "15 décembre",
+      "assiette",
+      "taux",
+      "perception",
+      "résidence fiscale",
+      "comptable principal recettes",
+      "nom permis",
+      "superficie"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12178,10 +12241,14 @@
     "keywords": [
       "paiement",
       "20 janvier",
-      "article 461 bis",
-      "décret 2000-186",
-      "virement Trésor public",
-      "rendu permis"
+      "article 461 bis CGI",
+      "décret n°2000-186",
+      "paiement spontané",
+      "virement",
+      "Trésor public",
+      "année civile",
+      "permis rendu",
+      "20 du mois suivant AMR"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12196,9 +12263,12 @@
       "base imposition",
       "superficie km²",
       "pipelines longueur",
-      "3000 FCFA",
-      "800 USD",
-      "0,9 USD/km"
+      "3000 FCFA/km²",
+      "800 USD/km²",
+      "0,9 USD/km",
+      "article 2 décret 2000-186",
+      "permis recherche",
+      "permis exploitation"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12212,7 +12282,8 @@
       "répartition",
       "1/3 État",
       "2/3 collectivités locales",
-      "article 4 décret 2000-186"
+      "article 4 décret 2000-186",
+      "Trésor public"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12226,7 +12297,9 @@
       "coût pétrolier",
       "déductible IS",
       "redevance superficiaire",
-      "article 157"
+      "article 157",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12241,7 +12314,10 @@
       "redevance minière proportionnelle",
       "production nette",
       "exploitation commerciale",
-      "article 158"
+      "article 158",
+      "contracteur",
+      "permis exploitation",
+      "assiette"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12259,7 +12335,15 @@
       "5% gaz solides",
       "zones difficiles",
       "12% minimum",
-      "articles 158 159"
+      "articles 158 et 159",
+      "article 3 Code hydrocarbures",
+      "hydrocarbures liquides",
+      "gaz naturel",
+      "bassin cuvette congolaise",
+      "anté-salifère",
+      "eau profonde 500m",
+      "taux réduit négocié",
+      "contrat pétrolier"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12276,7 +12360,12 @@
       "virement bancaire",
       "paiement en nature",
       "point enlèvement",
-      "article 160"
+      "article 160",
+      "production mois précédent",
+      "administration fiscale",
+      "acquittement en espèces",
+      "option État",
+      "mise à disposition"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12289,8 +12378,11 @@
     "keywords": [
       "non coût pétrolier",
       "déductible IS",
-      "articles 109 B 112 B",
-      "CGI tome 1"
+      "articles 109 B et 112 B",
+      "CGI tome 1",
+      "redevance minière proportionnelle",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12304,12 +12396,15 @@
       "contributions",
       "article 148",
       "PID",
-      "formation personnel",
+      "formation personnel congolais",
       "vérification comptabilité",
       "fonds environnement",
-      "plus-values",
-      "loi organique 36-2017",
-      "fonds publics"
+      "plus-values cession",
+      "loi organique n°36-2017",
+      "3 octobre 2017",
+      "fonds publics",
+      "comité de gestion",
+      "contrat partage production"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12323,11 +12418,15 @@
       "PID",
       "1% production nette",
       "article 161",
+      "article 162",
       "déclaration spontanée",
       "virement",
       "20 du mois",
-      "coût récupérable",
-      "déductible IS"
+      "coût pétrolier récupérable",
+      "déductible IS",
+      "assiette imposable",
+      "administration fiscale",
+      "production mois précédent"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12344,7 +12443,16 @@
       "compagnonnage",
       "coûts pétroliers",
       "préférence nationale",
-      "dépenses personnel étranger non déductibles"
+      "dépenses personnel étranger non déductibles",
+      "contracteur",
+      "sous-traitants",
+      "prestataires services",
+      "priorité personnel congolais",
+      "promotion",
+      "structures permanentes formation",
+      "cotisations sociales",
+      "taxe unique salaires",
+      "budgets reportés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12359,7 +12467,11 @@
       "article 148",
       "comité de gestion",
       "coût pétrolier",
-      "déductible IS"
+      "déductible IS",
+      "contracteur",
+      "montant annuel",
+      "contrat pétrolier",
+      "assiette imposable"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12377,7 +12489,14 @@
       "article 98",
       "non producteurs",
       "coût pétrolier",
-      "déductible IS"
+      "déductible IS",
+      "contracteur redevable",
+      "formule compensation",
+      "prospection exploration développement",
+      "déclaration spontanée",
+      "Trésor public",
+      "virement",
+      "20 du mois"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12392,8 +12511,15 @@
       "10%",
       "cession intérêts participatifs",
       "article 163",
-      "cédant cessionnaire",
-      "solidarité"
+      "cédant",
+      "cessionnaire",
+      "solidarité",
+      "contrat partage production",
+      "prix cession",
+      "coûts restant récupérer",
+      "société droit congolais",
+      "administration fiscale",
+      "Trésor public"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12407,13 +12533,21 @@
       "compte séquestre",
       "caisse dépôts consignations",
       "BEAC",
-      "loi 4-98",
+      "loi n°4-98",
+      "28 août 1998",
+      "article 101 Code hydrocarbures",
       "démantèlement",
       "réhabilitation",
       "20% par an",
       "5 ans",
       "EONIA 1,5%",
-      "Profit Oil"
+      "Profit Oil",
+      "sociétés pétrolières",
+      "garantie",
+      "USD",
+      "articles 7 9 11 13 15 loi 4-98",
+      "assiette IS",
+      "retenue hydrocarbures"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12428,7 +12562,8 @@
       "réhabilitation sites",
       "coûts pétroliers récupérables",
       "compte séquestre",
-      "articles 15 75 89 99 102"
+      "articles 15 75 89 99 et 102",
+      "fonds effectivement versés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12443,7 +12578,14 @@
       "solidarité",
       "intérêts participatifs",
       "défaillance",
-      "articles 21 176"
+      "articles 21 et 176",
+      "membres contracteur",
+      "responsabilité conjointe",
+      "État",
+      "titre minier",
+      "contrat pétrolier",
+      "bonus redevances taxes contributions",
+      "secteur pétrolier amont"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022"
   },
@@ -12456,15 +12598,27 @@
     "keywords": [
       "droit commun",
       "article 149",
+      "article 148",
+      "article 165",
       "CGI",
+      "Code hydrocarbures",
       "obligations déclaratives",
       "obligations paiement",
       "retenues source",
       "redevable légal",
       "calendrier fiscal",
       "patentes",
+      "impôts fonciers",
+      "taxe occupation locaux",
+      "taxe unique salaires",
+      "cotisations sociales",
+      "impôt sur les sociétés",
+      "droits enregistrement timbre",
+      "taxe transferts fonds",
       "exonération TVA",
-      "liste limitative"
+      "assiette",
+      "fait générateur",
+      "taux"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12475,15 +12629,19 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "typologie impôts propre compte",
-      "patentes",
-      "impôts fonciers",
-      "taxe salaires",
-      "CNSS",
-      "CAMU",
-      "IS",
-      "enregistrement timbre",
-      "transferts fonds"
+      "typologie impôts",
+      "article 149",
+      "Code hydrocarbures",
+      "contribution patentes",
+      "contribution foncière bâtie",
+      "contribution foncière non-bâtie",
+      "droits fonciers exceptionnels",
+      "taxe occupation locaux",
+      "taxe unique salaires",
+      "cotisations sociales",
+      "impôt sur les sociétés",
+      "droits enregistrement timbre",
+      "taxe transferts fonds"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12494,15 +12652,16 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "patentes",
-      "impôt identification",
-      "articles 277-314 CGI",
-      "collectivités locales",
+      "contribution patentes",
+      "champ application",
       "fait générateur",
-      "RCCM",
-      "article 312",
-      "déclaration existence",
-      "quinze jours"
+      "article 149",
+      "Code hydrocarbures",
+      "CGI",
+      "activité professionnelle",
+      "exonération",
+      "opérations pétrolières",
+      "tome 2 livre 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12514,16 +12673,17 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "base imposable",
-      "chiffre affaires",
-      "article 278 CGI",
-      "quote-part production",
-      "répartition permis",
-      "article 282",
-      "conversion dollars FCFA",
-      "Banque de France",
-      "dépenses fonctionnement",
-      "25 %",
-      "permis exploration"
+      "contribution patentes",
+      "chiffre affaires HT",
+      "valeur locative",
+      "article 170",
+      "Code hydrocarbures",
+      "25%",
+      "assiette",
+      "taux",
+      "droit proportionnel",
+      "droit fixe",
+      "tome 2 livre 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12534,14 +12694,23 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "taux patentes",
-      "barème dégressif",
-      "article 314 CGI",
-      "cumulatif",
-      "tranches CA",
-      "FCFA",
-      "50 %",
-      "lois 65-2020 37-2021"
+      "taux",
+      "contribution patentes",
+      "droit proportionnel",
+      "droit fixe",
+      "0,045%",
+      "0,125%",
+      "0,135%",
+      "0,140%",
+      "0,150%",
+      "0,200%",
+      "0,450%",
+      "0,650%",
+      "0,750%",
+      "50%",
+      "chiffre affaires",
+      "valeur locative",
+      "tome 2 livre 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12552,18 +12721,20 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "contribution foncière",
-      "propriétés bâties",
-      "article 251 CGI",
-      "maçonnerie",
-      "immeubles par destination",
-      "barges",
-      "stockage",
-      "outillage",
-      "article 525 Code civil",
-      "perpétuelle demeure",
+      "contribution foncière bâtie",
+      "champ application",
       "fait générateur",
-      "présomption propriété"
+      "propriétaire",
+      "locataire",
+      "exploitant",
+      "article 252",
+      "CGI tome 1",
+      "exonération",
+      "constructions nouvelles",
+      "additions",
+      "5 ans",
+      "déclaration 90 jours",
+      "zones exploration exploitation"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12575,18 +12746,20 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "base imposable",
-      "contribution foncière",
-      "articles 257-258 ter CGI",
-      "valeur cadastrale",
-      "abattement 75 %",
-      "prix mètre carré",
-      "zones",
-      "250 FCFA",
-      "150 FCFA",
-      "25 FCFA",
-      "12,5 FCFA",
+      "contribution foncière bâtie",
       "valeur locative",
-      "bail authentique"
+      "75%",
+      "article 258",
+      "CGI tome 1",
+      "zone n°1 Brazzaville Pointe-Noire",
+      "zone n°2 chefs-lieux départements",
+      "zone n°3 chefs-lieux districts",
+      "zone n°4 reste territoire",
+      "FCFA/m²",
+      "50 FCFA",
+      "35 FCFA",
+      "25 FCFA",
+      "10 FCFA"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12598,11 +12771,14 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "taux",
-      "10 % 20 %",
-      "Pointe-Noire 15 %",
-      "Brazzaville 20 %",
-      "collectivités locales",
-      "autorité tutelle"
+      "contribution foncière bâtie",
+      "10%",
+      "15%",
+      "20%",
+      "valeur locative",
+      "habitations personnelles",
+      "immeubles rapport",
+      "locaux professionnels"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12614,12 +12790,13 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "redevable",
+      "contribution foncière bâtie",
+      "Code hydrocarbures",
       "propriétaire",
-      "1er janvier",
-      "article 149",
-      "biens en propre",
-      "communauté",
-      "opérateur"
+      "locataire",
+      "exploitant",
+      "contracteur",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12630,11 +12807,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "non-inclusion",
-      "coût pétrolier",
-      "non récupérable",
-      "déductible",
-      "assiette IS"
+      "non coût pétrolier",
+      "contribution foncière bâtie",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12645,13 +12823,16 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "propriétés non bâties",
-      "articles 263 264 CGI",
-      "propriétés urbaines",
-      "propriétés rurales",
-      "centres urbains",
-      "présomption propriété",
-      "actif bilan"
+      "contribution foncière non-bâtie",
+      "champ application",
+      "fait générateur",
+      "article 149",
+      "Code hydrocarbures",
+      "CGI tome 1",
+      "terrains",
+      "propriétaire",
+      "possesseur",
+      "occupant"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12663,15 +12844,16 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "base imposable",
-      "propriétés non bâties",
-      "articles 270 270 bis 272 CGI",
-      "propriétés urbaines",
-      "50 %",
-      "valeur cadastrale",
-      "125 FCFA",
-      "75 FCFA",
-      "propriétés rurales",
-      "forfaitaire hectare"
+      "contribution foncière non-bâtie",
+      "valeur locative",
+      "valeur vénale",
+      "50%",
+      "zone n°1",
+      "zone n°2",
+      "zone n°3",
+      "zone n°4",
+      "FCFA/m²",
+      "CGI tome 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12683,9 +12865,10 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "taux",
-      "40 %",
-      "collectivités locales",
-      "autorité tutelle"
+      "contribution foncière non-bâtie",
+      "40%",
+      "valeur locative",
+      "CGI tome 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12697,8 +12880,10 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "redevable",
-      "article 36",
-      "mutatis mutandis"
+      "contribution foncière non-bâtie",
+      "propriétaire",
+      "occupant",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12709,11 +12894,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "non-inclusion",
-      "coût pétrolier",
-      "non récupérable",
-      "déductible",
-      "assiette IS"
+      "non coût pétrolier",
+      "contribution foncière non-bâtie",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12725,10 +12911,12 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "droits fonciers exceptionnels",
-      "loi 40-2018",
-      "2019",
-      "non récupérable",
-      "non déductible"
+      "non coût pétrolier",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés",
+      "article 36 CGI",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12739,14 +12927,17 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "TOL",
       "taxe occupation locaux",
-      "loi 31-2013",
-      "2014",
-      "local occupé",
-      "matériaux durables",
+      "TOL",
+      "champ application",
       "fait générateur",
-      "occupation"
+      "article 149",
+      "Code hydrocarbures",
+      "article 9",
+      "article 11",
+      "CGI tome 2",
+      "occupant locaux",
+      "exonération"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12757,9 +12948,10 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
+      "TOL",
+      "taxe occupation locaux",
       "lieu imposition",
-      "département",
-      "commune"
+      "département situation locaux"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12770,13 +12962,14 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "personne imposable",
       "TOL",
-      "loi 34-2013",
+      "taxe occupation locaux",
+      "personne imposable",
       "occupant",
-      "propriétaire",
       "locataire",
-      "contracteur redevable"
+      "propriétaire",
+      "article 10 CGI tome 2",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12787,11 +12980,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "montant TOL",
-      "article 13",
-      "habitation 60.000 12.000",
-      "professionnel 500.000 120.000",
-      "entités secondaires"
+      "TOL",
+      "taxe occupation locaux",
+      "montant",
+      "CGI tome 2",
+      "habitation",
+      "bureaux locaux professionnels"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12802,14 +12996,15 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "recouvrement TOL",
-      "article 14",
-      "déclaration spontanée",
-      "20 avril",
-      "retenue source 1.000 FCFA",
-      "20 février",
-      "changement local",
-      "collectivité"
+      "TOL",
+      "taxe occupation locaux",
+      "recouvrement",
+      "retenue source",
+      "employeur",
+      "salarié",
+      "taux",
+      "15 du mois suivant",
+      "article 149"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12820,11 +13015,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "non-inclusion",
       "TOL",
-      "non récupérable",
-      "déductible",
-      "assiette IS"
+      "taxe occupation locaux",
+      "non coût pétrolier",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12837,11 +13033,14 @@
     "keywords": [
       "TUS",
       "taxe unique salaires",
-      "loi 36-2011",
-      "2012",
-      "personnes morales",
+      "champ application",
       "fait générateur",
-      "consommation salaire"
+      "article 149",
+      "Code hydrocarbures",
+      "redevable",
+      "employeur",
+      "taux réduit",
+      "CGI tome 2"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12852,13 +13051,15 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "base imposable TUS",
-      "salaire brut",
-      "primes indemnités",
-      "avantages nature",
-      "articles 37-39 CGI",
-      "taux 2,5 %",
-      "loi 66-2020"
+      "TUS",
+      "taxe unique salaires",
+      "base imposable",
+      "taux",
+      "2,5%",
+      "article 6 CGI tome 2",
+      "salaires traitements",
+      "impôt sur le revenu",
+      "Code hydrocarbures"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12869,12 +13070,14 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "déclaration TUS",
-      "paiement",
-      "loi 65-2020",
-      "DGID 60 %",
-      "CNSS 40 %",
-      "vingt du mois"
+      "TUS",
+      "taxe unique salaires",
+      "déclaration paiement",
+      "40%",
+      "60%",
+      "article 7 CGI tome 2",
+      "redevable",
+      "15 du mois suivant"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12885,11 +13088,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "non-inclusion",
       "TUS",
-      "non récupérable",
-      "déductible",
-      "assiette IS"
+      "taxe unique salaires",
+      "non coût pétrolier",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12903,10 +13107,11 @@
       "cotisations sociales",
       "CNSS",
       "CAMU",
+      "article 149",
+      "Code hydrocarbures",
       "part patronale",
       "part salariale",
-      "employeur",
-      "employé"
+      "retenue source"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12917,14 +13122,17 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "base imposable CNSS",
-      "décret 99-284",
-      "plafonds",
+      "cotisations sociales",
+      "base imposable",
+      "CNSS",
       "CAMU",
-      "loi 66-2020",
-      "500.000 FCFA",
-      "patentes",
-      "exonéré"
+      "article 3 Code hydrocarbures",
+      "assiette",
+      "salaires traitements",
+      "plafond",
+      "exonération",
+      "taxe unique salaires",
+      "redevable"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12935,14 +13143,21 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "taux CNSS",
-      "part patronale 20,28 %",
-      "pensions 12 %",
-      "prestations familiales 10,03 %",
-      "accidents 2,25 %",
-      "part salariale 4 %",
-      "CAMU 0,5 %",
-      "loi 37-2021"
+      "cotisations sociales",
+      "taux",
+      "CNSS",
+      "CAMU",
+      "part patronale",
+      "part salariale",
+      "10,03%",
+      "2,25%",
+      "12%",
+      "4%",
+      "0,5%",
+      "20,28%",
+      "prestations familiales",
+      "risques professionnels",
+      "pension retraite"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12953,13 +13168,14 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "paiement cotisations",
-      "article 461 bis CGI",
-      "instruction 010/2022",
-      "part patronale patente",
-      "part salariale retenue source",
-      "article 152",
-      "équilibre économique"
+      "cotisations sociales",
+      "paiement",
+      "CNSS",
+      "CAMU",
+      "Code hydrocarbures",
+      "retenue source",
+      "15 du mois suivant",
+      "déclaration"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12970,12 +13186,12 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "non-inclusion",
       "cotisations sociales",
-      "non récupérable",
-      "part patronale déductible",
-      "part salariale non déductible",
-      "assiette IS"
+      "non coût pétrolier",
+      "déductible IS",
+      "assiette imposable",
+      "impôt sur les sociétés",
+      "part patronale"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -12986,15 +13202,17 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
+      "impôt sur les sociétés",
       "IS",
-      "article 166",
-      "article 170",
-      "établissement fiscal distinct",
-      "comptabilité séparée",
-      "article 172",
-      "profit-oil",
-      "article 173",
-      "déclaration fiscale"
+      "Code hydrocarbures",
+      "articles 166 à 174",
+      "article 149",
+      "assiette",
+      "taux",
+      "détermination résultat",
+      "Cost Oil",
+      "Profit Oil",
+      "CGI tome 1"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13007,17 +13225,15 @@
     "keywords": [
       "droits enregistrement",
       "timbre",
+      "Code hydrocarbures",
       "article 149",
-      "cession intérêts participatifs",
-      "contrats baux",
-      "bons commande",
-      "1.000.000 FCFA",
-      "100.000 FCFA",
-      "25.000.000 FCFA",
-      "reconstitution capitaux",
-      "prorogation",
-      "non récupérable",
-      "déductible IS"
+      "CGI tome 1",
+      "assiette",
+      "taux",
+      "fait générateur",
+      "non coût pétrolier",
+      "déductible IS",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13029,12 +13245,14 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "taxe transferts fonds",
+      "Code hydrocarbures",
       "article 149",
-      "1 %",
-      "montant brut",
-      "versements",
-      "résidence fiscale",
-      "étranger"
+      "1%",
+      "taux",
+      "République du Congo",
+      "étranger",
+      "coût pétrolier récupérable",
+      "déductible IS"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13046,15 +13264,18 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "TVA",
-      "loi 12-97",
-      "article 151",
+      "taxe valeur ajoutée",
+      "Code hydrocarbures",
+      "article 149",
       "article 165",
+      "article 3",
+      "article 4",
       "exonération",
-      "prospection développement exploitation",
-      "décret 2003-32",
-      "opérations amont",
-      "droit déduction",
-      "décret 2001-522"
+      "activités pétrolières",
+      "opérations non pétrolières",
+      "droit commun",
+      "décret n°2001-522",
+      "19 octobre 2001"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13065,14 +13286,21 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "retenues à la source",
+      "retenues source",
+      "généralités",
       "article 149",
-      "redevable légal",
-      "redevable réel",
-      "IRCM",
+      "Code hydrocarbures",
+      "CGI",
+      "articles 172 et suivants",
+      "impôt sur le revenu",
+      "impôt sur les sociétés",
+      "IRVM",
       "taxe immobilière",
-      "contributions",
-      "rémunération"
+      "contributions redevances",
+      "rémunération services",
+      "employeurs",
+      "débirentiers",
+      "redevables légaux"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13083,7 +13311,7 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
-      "retenues à la source",
+      "retenues source",
       "IRPP",
       "taxes régionale",
       "BTP",
@@ -13095,6 +13323,9 @@
       "IRVM distributions",
       "taxe immobilière",
       "article 149",
+      "Code hydrocarbures",
+      "impôt sur le revenu",
+      "impôt sur les sociétés",
       "TOL",
       "CAMU",
       "CNSS",
@@ -13114,11 +13345,14 @@
     "tome": "TFNC3-PETROLE",
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
+      "contrepartie",
       "contributions",
       "redevances",
       "rémunération services",
       "article 149",
-      "services rendus"
+      "Code hydrocarbures",
+      "services rendus",
+      "opérations pétrolières"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13135,7 +13369,9 @@
       "péages routiers",
       "redevance aéroportuaire",
       "redevance portuaire",
-      "redevance audiovisuelle"
+      "redevance audiovisuelle",
+      "registre foncier",
+      "billet avion vol national"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13148,8 +13384,10 @@
     "keywords": [
       "exonération",
       "article 149",
+      "Code hydrocarbures",
       "fiscalité droit commun",
-      "sections 1 2 3"
+      "sections 1 2 et 3",
+      "impôts taxes contributions redevances"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13161,13 +13399,19 @@
     "chapitre": "Dispositions fiscales de droit commun applicables au secteur pétrolier amont",
     "keywords": [
       "exonération",
+      "article 149",
+      "article 165",
+      "article 62",
+      "Code hydrocarbures",
       "TSS",
+      "taxe spéciale sociétés",
       "taxe véhicules tourisme",
       "IRVM",
+      "revenus capitaux mobiliers",
       "taxe immobilière",
+      "loueur immeubles",
       "TVA",
-      "article 149",
-      "article 165"
+      "opérations pétrolières"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Dispositions fiscales de droit commun applicables au secteur pétrolier amont"
   },
@@ -13183,10 +13427,17 @@
       "article 3",
       "article 75",
       "article 153",
+      "Code hydrocarbures",
+      "CGI",
       "provision remise en état",
       "amendes pénalités",
+      "intérêts retard",
       "conditions récupération",
-      "articles 140 à 142"
+      "articles 140 à 142",
+      "contracteur",
+      "opérations pétrolières",
+      "assiette imposable",
+      "impôt sur les sociétés"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 69"
   },
@@ -13198,14 +13449,23 @@
     "chapitre": "Chapitre 4 : Les conditions de récupération des coûts pétroliers",
     "keywords": [
       "déductibilité fiscale",
-      "sous-conditions de fond",
-      "sous-conditions de forme",
-      "sous-conditions de temps",
+      "sous-conditions fond",
+      "sous-conditions forme",
+      "sous-conditions temps",
       "charges déductibles",
       "article 380",
+      "CGI tome 1",
       "rémunérations",
       "honoraires",
       "commissions",
+      "courtages",
+      "loyers",
+      "droits auteurs inventeurs",
+      "professionnels libéraux",
+      "pièces justificatives",
+      "immobilisations",
+      "remboursements emprunt",
+      "actif net",
       "article 179"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 70"
@@ -13221,7 +13481,10 @@
       "facturation",
       "comptabilisation",
       "dette certaine",
-      "exercice"
+      "exercice",
+      "charges déduites",
+      "paiement",
+      "exigibilité"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 71"
   },
@@ -13236,8 +13499,11 @@
       "dépenses non payées",
       "espèces",
       "article 113",
+      "CGI tome 1",
       "500.000 FCFA",
-      "bénéfice fiscal"
+      "bénéfice imposable",
+      "non décaissées",
+      "coûts pétroliers"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 72"
   },
@@ -13250,12 +13516,18 @@
     "keywords": [
       "contenu local",
       "articles 140 à 142",
+      "Code hydrocarbures",
       "sociétés nationales",
+      "sociétés privées nationales",
       "priorité achat",
-      "10 %",
+      "sous-traitants",
+      "10%",
+      "offres techniques commerciales",
       "coûts congolais",
-      "25 %",
-      "programme minimum"
+      "25%",
+      "programme minimum",
+      "plan développement exploitation",
+      "exploration"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 73"
   },
@@ -13268,6 +13540,8 @@
     "keywords": [
       "non-qualification",
       "coûts pétroliers",
+      "prélèvements fiscaux",
+      "Code hydrocarbures",
       "primes assurance",
       "article 146",
       "amendes pénalités",
@@ -13275,16 +13549,30 @@
       "frais bancaires",
       "article 155",
       "bonus",
+      "article 7",
       "redevance minière",
+      "article 18",
       "emploi personnel étranger",
+      "article 21",
+      "préférence nationale",
       "dépôts garantie BEAC",
+      "article 25",
       "provision abandon",
-      "contribution foncière",
+      "article 26",
+      "contribution foncière bâtie",
+      "article 37",
+      "contribution foncière non-bâtie",
+      "article 42",
       "droits fonciers",
+      "article 43",
       "TOL",
+      "article 49",
       "TUS",
+      "article 53",
       "cotisations sociales",
-      "droits enregistrement"
+      "article 58",
+      "droits enregistrement timbre",
+      "article 60"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 74"
   },
@@ -13297,8 +13585,11 @@
     "keywords": [
       "abrogation",
       "dispositions antérieures",
-      "décret 2000-186",
-      "redevance superficiaire"
+      "décret n°2000-186",
+      "12 août 2000",
+      "articles 3 et 6",
+      "redevance superficiaire",
+      "taux perception recouvrement"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 75"
   },
@@ -13311,7 +13602,9 @@
     "keywords": [
       "publication",
       "Journal officiel",
-      "République du Congo"
+      "République du Congo",
+      "enregistrement",
+      "décret"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 76"
   }
