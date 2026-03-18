@@ -4,9 +4,9 @@
     "pays": "République du Congo",
     "edition": "2026",
     "tome": "TFNC4-ACCIS2",
-    "partie": null,
+    "partie": "Textes fiscaux non codifiés",
     "livre": null,
-    "chapitre": 3,
+    "chapitre": "4. Impôts, taxes et retenues divers",
     "chapitre_titre": "4.3.1. Droits d'accises",
     "section": null,
     "section_titre": null,
@@ -16,10 +16,9 @@
     {
       "article": "Art. 1",
       "titre": "Champ d'application des droits d'accises",
+      "section": "Chapitre 1 : Champ d'application",
       "texte": [
-        "4.3. Droits d'accises et taxes assimilées",
-        "[NB - Loi de finances pour 2020]",
-        "4.3.1. Droits d'accises",
+        "[NB - Loi de finances pour 2020, modifiée]",
         "Chapitre 1 - Champ d'application",
         "Art.1.- Le droit d'accise frappe la consommation au Congo des produits établis à l'article 2 ci-dessous, sans aucune distinction fondée sur les critères de qualité, de présentation ou d'origine des produits."
       ],
@@ -31,23 +30,20 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 2 (L.F. 2026)",
+      "article": "Art. 2",
       "titre": "Produits soumis aux droits d'accises",
+      "section": "Chapitre 1 : Champ d'application",
       "texte": [
-        "Art.2.- (L.F.2026 - modifié)",
-        "Sont soumis aux droits d'accises :",
+        "Art.2.- (L.F.2026) Sont soumis aux droits d'accises :",
         "a) les boissons alcoolisées (chapitre 22 du tarif extérieur commun de la CEMAC), à l'exclusion des vinaigres (position 22.09) ;",
         "b) les cigares, cigarettes et autres tabacs (chapitre 24) ;",
-        "c) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 ;",
-        "(L.F. 2026 - nouveaux produits)",
+        "c) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 (positions tarifaires 870...) ;",
         "d) confiseries, glaces ;",
         "e) boissons énergisantes et soda ;",
         "f) perruques, mèches ;",
-        "g) les communications téléphoniques et internet ;",
-        "h) machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, et parties et accessoires de ces appareils ;",
-        "i) yachts, bateaux et embarcations de plaisance ;",
-        "j) métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières, bijoux de fantaisie.",
-        "(L.F. 2026) 2) Supprimé."
+        "g) machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, et parties et accessoires de ces appareils ;",
+        "h) yachts, bateaux et embarcations de plaisance ;",
+        "i) métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie."
       ],
       "mots_cles": [
         "produits accises",
@@ -56,27 +52,14 @@
         "cigares cigarettes",
         "chapitre 24",
         "véhicules tourisme 87.03",
-        "confiseries",
-        "glaces",
-        "boissons énergisantes",
-        "soda",
-        "perruques",
-        "mèches",
-        "communications téléphoniques",
-        "internet",
-        "appareils enregistrement son image",
-        "télévision",
-        "yachts",
-        "bateaux",
-        "embarcations plaisance",
-        "métaux précieux",
-        "bijoux de fantaisie"
+        "motocycles 250 cm3"
       ],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 3",
       "titre": "Exonérations des droits d'accises",
+      "section": "Chapitre 1 : Champ d'application",
       "texte": [
         "Art.3.-",
         "1) A l'exception des cas prévus au présent article, aucune exonération ne peut être accordée sur les produits soumis aux droits d'accises.",
@@ -96,6 +79,7 @@
     {
       "article": "Art. 4",
       "titre": "Redevable des droits d'accises",
+      "section": "Chapitre 1 : Champ d'application",
       "texte": [
         "Chapitre 2 - Fait générateur, exigibilité",
         "Art.4.- Est redevable du droit d'accises, l'importateur ou le producteur d'un bien ou d'un service soumis aux droits d'accises, quelle que soit sa qualité ou le lieu de consommation.",
@@ -112,6 +96,7 @@
     {
       "article": "Art. 5",
       "titre": "Fait générateur et exigibilité",
+      "section": "Chapitre 2 : Fait générateur, exigibilité",
       "texte": [
         "Art.5.- Le fait générateur et l'exigibilité du droit d'accise sont constitués :",
         "1° pour les biens produits localement : par la première cession à titre onéreux ou gratuit ou le prélèvement ;",
@@ -128,6 +113,7 @@
     {
       "article": "Art. 6",
       "titre": "Interdiction mesures préférentielles",
+      "section": "Chapitre 3 : Base d'imposition et taux",
       "texte": [
         "Chapitre 3 - Base d'imposition et taux",
         "Art.6.- Toute mesure préférentielle concernant les biens nationaux est interdite, notamment toute réduction partielle ou totale de base d'imposition ou de taux."
@@ -142,6 +128,7 @@
     {
       "article": "Art. 7",
       "titre": "Base d'imposition des droits d'accises",
+      "section": "Chapitre 3 : Base d'imposition et taux",
       "texte": [
         "Art.7.-",
         "1) La base d'imposition aux droits d'accise est établie :",
@@ -163,35 +150,28 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 8 (L.F. 2026)",
+      "article": "Art. 8",
       "titre": "Taux des droits d'accises",
+      "section": "Chapitre 3 : Base d'imposition et taux",
       "texte": [
-        "Art.8.- (L.F.2026 - modifié)",
+        "Art.8.-",
         "1) Les taux des droits d'accises sont fixés comme suit :",
-        "a) confiseries, glaces, communications téléphoniques et internet, machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, yachts, bateaux et embarcations de plaisance, métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières, bijoux de fantaisie : 5 % ;",
-        "b) boissons sucrées, mèches, perruques : 10 % ;",
-        "c) boissons alcoolisées, produits alimentaires de luxe, parfums et produits cosmétiques, armes et munitions, bijoux, appareils servant aux jeux de hasard et de divertissement, motocycles, véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3.000 cm3 : 25 % ;",
+        "a) confiseries, glaces, machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, yachts, bateaux et embarcations de plaisance, métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie : 5 % ;",
+        "b) boissons sucrées, boissons énergisantes, soda, mèches, perruques : 10 % ;",
+        "c) boissons alcoolisées, produits alimentaires de luxe, parfums et produits cosmétiques, armes et munitions, bijoux, appareils servant aux jeux de hasard et de divertissement, motocycles, véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 : 25 % ;",
         "d) autres produits soumis aux droits d'accises : 25 % ;",
         "e) tabac, pipe et accessoires : 30 % ;",
-        "f) champagne, hydroquinone et cosmétiques contenant de l'hydroquinone : 50 %."
+        "f) champagne, hydroquinone et cosmétiques contenant de l'hydroquinone : 50 %.",
+        "2) Supprimé."
       ],
       "mots_cles": [
         "taux accises",
-        "confiseries glaces 5%",
-        "communications téléphoniques internet 5%",
-        "appareils son image 5%",
-        "yachts bateaux 5%",
-        "métaux précieux bijoux fantaisie 5%",
-        "boissons sucrées 10%",
-        "mèches perruques 10%",
+        "tabacs 30%",
         "boissons alcoolisées 25%",
+        "boissons sucrées 12,5%",
         "produits luxe 25%",
-        "véhicules motocycles 25%",
-        "jeux hasard 25%",
-        "autres produits 25%",
-        "tabac pipe 30%",
-        "champagne 50%",
-        "hydroquinone 50%"
+        "véhicules 15%",
+        "jeux hasard 25%"
       ],
       "statut": "en vigueur"
     }

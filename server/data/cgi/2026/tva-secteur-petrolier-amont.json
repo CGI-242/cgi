@@ -16,6 +16,7 @@
     {
       "article": "Art. 1",
       "titre": "Objet du décret",
+      "section": "Chapitre 1 : Dispositions générales",
       "texte": [
         "Chapitre 1 - Dispositions générales",
         "Art.1.- De l'objet",
@@ -38,6 +39,7 @@
     {
       "article": "Art. 2",
       "titre": "Champ d'application de la TVA au secteur pétrolier amont",
+      "section": "Chapitre 1 : Dispositions générales",
       "texte": [
         "Art.2.- Du champ d'application de la TVA appliquée au « secteur pétrolier amont »",
         "Les activités du « secteur pétrolier amont » définies à l'article premier du présent décret entrent dans le champ d'application de la taxe sur la valeur ajoutée (TVA) conformément aux articles 2 et 3 de la loi n°12-97 du 12 mai 1997 portant institution de la TVA en République du Congo."
@@ -52,6 +54,7 @@
     {
       "article": "Art. 3",
       "titre": "Personnes imposables à la TVA",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Chapitre 2 - Application de la TVA aux opérations du secteur pétrolier amont",
         "Art.3.- Des personnes imposables à la TVA",
@@ -71,6 +74,7 @@
     {
       "article": "Art. 4",
       "titre": "Opérations imposables à la TVA",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.4.- Des opérations imposables à la TVA",
         "Conformément aux dispositions de l'article 2 de la loi n°12-97 du 12 mai 1997 portant institution de la TVA, sont imposables à la TVA :",
@@ -96,6 +100,7 @@
     {
       "article": "Art. 5",
       "titre": "Imposition des exportations au taux zéro",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.5.- De l'imposition des exportations au taux zéro",
         "Conformément aux dispositions de l'article 17 de la loi n°12-97 du 12 mai 1997 portant institution de la TVA et de l'article 165 de la loi n°28-2016 du 12 octobre 2016 portant Code des hydrocarbures, les exportations des produits pétroliers effectuées par les personnes visées à l'article 3 du présent décret sont imposées au taux zéro, c'est-à-dire exonérées avec droit à déduction."
@@ -112,6 +117,7 @@
     {
       "article": "Art. 6",
       "titre": "Droit à déduction TVA sur prestations transfrontalières",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.6.- Du droit à déduction de la TVA sur les prestations de services transfrontalières dont le lieu d'imposition n'est pas situé en République du Congo",
         "Les prestations de services dont le lieu d'imposition est situé hors de la République du Congo, effectuées par les personnes visées à l'article 3 du présent décret, ouvrent droit à déduction dans l'hypothèse où elles auraient ouvert droit à déduction si leur lieu d'imposition avait été en République du Congo."
@@ -127,6 +133,7 @@
     {
       "article": "Art. 7",
       "titre": "Exonération TVA sur importations par l'opérateur",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.7.- De l'exonération de la TVA sur les importations effectuées par l'opérateur",
         "I. Sont exonérées de la TVA, les importations effectuées par l'opérateur de biens mis à la consommation et nécessaires au « secteur pétrolier amont ».",
@@ -146,6 +153,7 @@
     {
       "article": "Art. 8",
       "titre": "TVA sur livraisons et prestations à l'opérateur et sous-traitants",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.8.- De l'application de la TVA aux livraisons de biens et prestations de services effectuées ou fournies à l'opérateur et à ses sous-traitants",
         "Sont imposables à la TVA, dans les conditions de droit commun telles que définies par la loi n°12-97 du 12 mai 1997 portant institution de la TVA, les livraisons de biens et prestations de services :",
@@ -164,6 +172,7 @@
     {
       "article": "Art. 9",
       "titre": "Opérations n'ouvrant pas droit à déduction",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.9.- Des opérations n'ouvrant pas droit à déduction",
         "N'ouvrent pas droit à déduction, les livraisons de biens ou prestations de services visées aux articles 20 et 21 de la loi n°12-97 du 12 mai 1997 portant institution de la TVA."
@@ -178,6 +187,7 @@
     {
       "article": "Art. 10",
       "titre": "Incidence TVA non déductible sur résultat imposable",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.10.- De l'incidence de la TVA n'ouvrant pas droit à déduction sur le résultat imposable des assujettis à l'impôt sur le revenu",
         "La TVA n'ouvrant pas droit à déduction est considérée comme entrant dans le prix du bien ou du service acheté, et peut être déduite du résultat imposable. Les achats de biens ou services ayant supporté la TVA n'ouvrant pas droit à déduction sont comptabilisés en compte de charge, et leur montant hors taxes est augmenté de la TVA non récupérable."
@@ -194,6 +204,7 @@
     {
       "article": "Art. 11",
       "titre": "Obligations déclaratives opérateur et sous-traitants",
+      "section": "Chapitre 2 : Application de la TVA aux opérations du secteur pétrolier amont",
       "texte": [
         "Art.11.- Des obligations déclaratives de l'opérateur et de ses sous-traitants",
         "I. Les personnes visées à l'article 3 sont soumises aux obligations déclaratives prévues notamment aux articles 27 et suivants de la loi n°12-97 du 12 mai 1997 portant institution de la TVA.",
@@ -224,6 +235,7 @@
     {
       "article": "Art. 12",
       "titre": "Calcul du crédit de TVA",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Chapitre 3 - Remboursement du crédit de TVA",
         "Art.12.- Du calcul du crédit de TVA",
@@ -242,6 +254,7 @@
     {
       "article": "Art. 13",
       "titre": "Assujetti éligible au remboursement crédit TVA",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.13.- De l'assujetti éligible au remboursement d'un crédit de TVA",
         "L'opérateur peut demander le remboursement du crédit de TVA régulièrement constaté selon les modalités prévues par le présent décret."
@@ -257,6 +270,7 @@
     {
       "article": "Art. 14",
       "titre": "Péremption du droit à remboursement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.14.- De la péremption du droit à remboursement",
         "I. Conformément au paragraphe 8 de l'article 36 de la loi n°12-97 du 12 mai 1997 portant institution de la TVA, est annulé de plein droit et ne peut en aucun cas donner lieu à imputation ou à restitution, tout crédit de TVA régulièrement constaté par l'opérateur pendant 24 mois consécutifs sur ses déclarations et dont ce dernier n'aurait pas demandé le remboursement.",
@@ -274,6 +288,7 @@
     {
       "article": "Art. 15",
       "titre": "Conditions du dépôt demande de remboursement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.15.- Des conditions du dépôt de la demande de remboursement",
         "I. Une demande de remboursement peut être déposée par tout assujetti visé à l'article 14 qui est en situation de crédit de TVA pendant trois mois consécutifs.",
@@ -292,6 +307,7 @@
     {
       "article": "Art. 16",
       "titre": "Non-imputation du crédit TVA demandé en remboursement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.16.- De la non-imputation du crédit de TVA dont le remboursement est demandé",
         "Le crédit de TVA dont le remboursement a été demandé ne peut donner lieu à imputation sur les prochaines déclarations TVA de l'assujetti. Ce crédit est automatiquement annulé lorsque le remboursement a été rejeté par l'administration fiscale."
@@ -306,6 +322,7 @@
     {
       "article": "Art. 17",
       "titre": "Documents justificatifs demande remboursement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.17.- Des documents justificatifs devant être fournis à l'appui de la demande",
         "I. Toute demande de remboursement doit être accompagnée des informations et des documents suivants :",
@@ -355,6 +372,7 @@
     {
       "article": "Art. 18",
       "titre": "Cautionnement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.18.- Du cautionnement",
         "I. L'assujetti qui demande le remboursement peut être tenu, à la demande de l'administration fiscale, de présenter une caution solvable lorsqu'il apparaît que la demande de remboursement est de nature à mettre en péril les intérêts du trésor.",
@@ -388,6 +406,7 @@
     {
       "article": "Art. 19",
       "titre": "Instruction des demandes de remboursement",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.19.- De l'instruction des demandes",
         "I. La demande de remboursement, envoyée par lettre recommandée avec accusé de réception ou par lettre remise contre décharge, doit être instruite par l'administration fiscale dans un délai de 60 jours francs à compter de la réception de la demande par l'administration fiscale.",
@@ -414,6 +433,7 @@
     {
       "article": "Art. 20",
       "titre": "Délai de remboursement des crédits de TVA",
+      "section": "Chapitre 3 : Remboursement du crédit de TVA",
       "texte": [
         "Art.20.- Du délai de remboursement des crédits de TVA",
         "I. Tout crédit de TVA n'est remboursé à l'assujetti qu'après régularisation par ce dernier de ses dettes fiscales existantes.",
@@ -434,6 +454,7 @@
     {
       "article": "Art. 21",
       "titre": "Centimes additionnels - Objet",
+      "section": "Chapitre 4 : Centimes additionnels",
       "texte": [
         "Chapitre 4 - Centimes additionnels",
         "Art.21.- De l'objet",
@@ -449,6 +470,7 @@
     {
       "article": "Art. 22",
       "titre": "Centimes additionnels - Base et taux",
+      "section": "Chapitre 4 : Centimes additionnels",
       "texte": [
         "Art.22.- De la base d'imposition et du taux",
         "La base d'imposition des centimes additionnels est le montant de la TVA collectée. Le taux applicable est de 5 %."
@@ -463,6 +485,7 @@
     {
       "article": "Art. 23",
       "titre": "Centimes additionnels - Budget destinataire",
+      "section": "Chapitre 4 : Centimes additionnels",
       "texte": [
         "Art.23.- Du budget destinataire",
         "Les centimes additionnels sont perçus par l'administration fiscale et leur montant est versé aux collectivités locales."
@@ -477,8 +500,9 @@
     {
       "article": "Art. 24",
       "titre": "Sanctions fiscales",
+      "section": "Chapitre 5 : Sanctions fiscales et douanières",
       "texte": [
-        "Chapitre 5 - Sanctions",
+        "Chapitre 5 - Sanctions fiscales et douanières",
         "Art.24.- Des sanctions fiscales",
         "Les infractions relatives aux retards, insuffisances et défauts de déclaration sont sanctionnées conformément aux dispositions du Code général des impôts."
       ],
@@ -494,6 +518,7 @@
     {
       "article": "Art. 25",
       "titre": "Sanctions douanières",
+      "section": "Chapitre 5 : Sanctions",
       "texte": [
         "Art.25.- Des sanctions douanières",
         "La TVA sur les importations mises à la consommation est perçue comme en matière de douane. Les infractions en matière de TVA concernant ces dernières sont recherchées, constatées, réprimées et poursuivies comme en matière de droit de douane."
@@ -509,6 +534,7 @@
     {
       "article": "Art. 26",
       "titre": "Disposition finale - Abrogation et publication",
+      "section": "Chapitre 6 : Disposition finale",
       "texte": [
         "Chapitre 6 - Disposition finale",
         "Art.26.- Le présent décret, qui abroge le décret n°2001-522 du 19 octobre 2001 fixant les modalités d'application de la TVA au secteur pétrolier ainsi que toutes dispositions antérieures contraires, sera enregistré et publié au Journal officiel de la République du Congo."

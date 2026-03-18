@@ -4235,7 +4235,7 @@
   {
     "numero": "1",
     "titre": "Objet - Droits sur les titres miniers",
-    "contenu": "3.5.2. Taux et règles de perception des droits sur les titres miniers\n[NB - Loi n°24-2010 du 30 décembre 2010 fixant les taux et les règles de perception des droits sur les titres miniers]\nArt.1.- La présente loi fixe les taux et les règles de perception des droits sur les titres miniers.",
+    "contenu": "[NB - Loi n°24-2010 du 30 décembre 2010 fixant les taux et les règles de perception des droits sur les titres miniers]\nArt.1.- La présente loi fixe les taux et les règles de perception des droits sur les titres miniers.",
     "tome": "TFNC3-MINES",
     "chapitre": "3. Fiscalité des mines et des hydrocarbures",
     "keywords": [
@@ -8210,7 +8210,7 @@
   {
     "numero": "1",
     "titre": "Institution de l'ASDI",
-    "contenu": "4.1. Acompte sur divers impôts (ASDI)\n[NB - Loi de finances pour 1995 modifiée]\nArt.1.- Il est institué en république du Congo, à titre d'acompte sur divers impôts, un prélèvement forfaitaire sur les achats locaux et les importations des marchandises effectués par les personnes physiques soumises à l'IRPP catégorie des BICA.\nCe prélèvement est également applicable aux personnes morales passibles de l'impôt sur le bénéfice des sociétés qui ne s'acquittent pas régulièrement de la Taxe Spéciale sur les Sociétés et des acomptes d'impôts sur les Sociétés.",
+    "contenu": "[NB - Loi de finances pour 1995 modifiée]\nArt.1.- Il est institué en république du Congo, à titre d'acompte sur divers impôts, un prélèvement forfaitaire sur les achats locaux et les importations des marchandises effectués par les personnes physiques soumises à l'IRPP catégorie des BICA.\nCe prélèvement est également applicable aux personnes morales passibles de l'impôt sur le bénéfice des sociétés qui ne s'acquittent pas régulièrement de la Taxe Spéciale sur les Sociétés et des acomptes d'impôts sur les Sociétés.",
     "tome": "TFNC4-ASDI",
     "chapitre": "1",
     "keywords": [
@@ -8389,7 +8389,7 @@
   {
     "numero": "1",
     "titre": "Institution de la contribution CAMU",
-    "contenu": "4.2. Contribution de solidarité pour la Couverture Assurance Maladie Universelle (CAMU)\n[NB - Loi de finances pour 2021]\nArt.1.- Il est institué en République du Congo, une contribution de solidarité pour la couverture assurance maladie universelle (CAMU).\nLes ressources de cette contribution sont affectées conformément à son objet.",
+    "contenu": "[NB - Loi de finances pour 2021]\nArt.1.- Il est institué en République du Congo, une contribution de solidarité pour la couverture assurance maladie universelle (CAMU).\nLes ressources de cette contribution sont affectées conformément à son objet.",
     "tome": "TFNC4-CAMU",
     "chapitre": "2",
     "keywords": [
@@ -8488,7 +8488,7 @@
   {
     "numero": "1",
     "titre": "Champ d'application des droits d'accises",
-    "contenu": "4.3. Droits d'accises et taxes assimilées\n[NB - Loi de finances pour 2020]\n4.3.1. Droits d'accises\nChapitre 1 - Champ d'application\nArt.1.- Le droit d'accise frappe la consommation au Congo des produits établis à l'article 2 ci-dessous, sans aucune distinction fondée sur les critères de qualité, de présentation ou d'origine des produits.",
+    "contenu": "[NB - Loi de finances pour 2020, modifiée]\nChapitre 1 - Champ d'application\nArt.1.- Le droit d'accise frappe la consommation au Congo des produits établis à l'article 2 ci-dessous, sans aucune distinction fondée sur les critères de qualité, de présentation ou d'origine des produits.",
     "tome": "TFNC4-ACCIS2",
     "chapitre": "3",
     "keywords": [
@@ -10492,7 +10492,7 @@
   {
     "numero": "24",
     "titre": "Sanctions fiscales",
-    "contenu": "Chapitre 5 - Sanctions\nArt.24.- Des sanctions fiscales\nLes infractions relatives aux retards, insuffisances et défauts de déclaration sont sanctionnées conformément aux dispositions du Code général des impôts.",
+    "contenu": "Chapitre 5 - Sanctions fiscales et douanières\nArt.24.- Des sanctions fiscales\nLes infractions relatives aux retards, insuffisances et défauts de déclaration sont sanctionnées conformément aux dispositions du Code général des impôts.",
     "tome": "TFNC3-TVA",
     "chapitre": "3. Fiscalité des mines et des hydrocarbures",
     "keywords": [
@@ -13607,5 +13607,39 @@
       "décret"
     ],
     "source": "Décret n°2022-1858 du 12 octobre 2022 - Art. 76"
+  },
+  {
+    "numero": "2",
+    "titre": "Produits soumis aux droits d'accises",
+    "contenu": "Art.2.- (L.F.2026) Sont soumis aux droits d'accises :\na) les boissons alcoolisées (chapitre 22 du tarif extérieur commun de la CEMAC), à l'exclusion des vinaigres (position 22.09) ;\nb) les cigares, cigarettes et autres tabacs (chapitre 24) ;\nc) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 (positions tarifaires 870...) ;\nd) confiseries, glaces ;\ne) boissons énergisantes et soda ;\nf) perruques, mèches ;\ng) machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, et parties et accessoires de ces appareils ;\nh) yachts, bateaux et embarcations de plaisance ;\ni) métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie.",
+    "tome": "TFNC4-ACCIS2",
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "keywords": [
+      "produits accises",
+      "boissons alcoolisées",
+      "chapitre 22 TEC CEMAC",
+      "cigares cigarettes",
+      "chapitre 24",
+      "véhicules tourisme 87.03",
+      "motocycles 250 cm3"
+    ],
+    "source": "Loi de finances pour 2020, modifiée"
+  },
+  {
+    "numero": "8",
+    "titre": "Taux des droits d'accises",
+    "contenu": "Art.8.-\n1) Les taux des droits d'accises sont fixés comme suit :\na) confiseries, glaces, machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, yachts, bateaux et embarcations de plaisance, métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie : 5 % ;\nb) boissons sucrées, boissons énergisantes, soda, mèches, perruques : 10 % ;\nc) boissons alcoolisées, produits alimentaires de luxe, parfums et produits cosmétiques, armes et munitions, bijoux, appareils servant aux jeux de hasard et de divertissement, motocycles, véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 : 25 % ;\nd) autres produits soumis aux droits d'accises : 25 % ;\ne) tabac, pipe et accessoires : 30 % ;\nf) champagne, hydroquinone et cosmétiques contenant de l'hydroquinone : 50 %.\n2) Supprimé.",
+    "tome": "TFNC4-ACCIS2",
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "keywords": [
+      "taux accises",
+      "tabacs 30%",
+      "boissons alcoolisées 25%",
+      "boissons sucrées 12,5%",
+      "produits luxe 25%",
+      "véhicules 15%",
+      "jeux hasard 25%"
+    ],
+    "source": "Loi de finances pour 2020, modifiée"
   }
 ]

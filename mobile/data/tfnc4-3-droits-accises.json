@@ -2,11 +2,11 @@
   "meta": {
     "document": "Droits d'accises",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-ACCIS2",
-    "partie": null,
+    "partie": "Textes fiscaux non codifiés",
     "livre": null,
-    "chapitre": 3,
+    "chapitre": "4. Impôts, taxes et retenues divers",
     "chapitre_titre": "4.3.1. Droits d'accises",
     "section": null,
     "section_titre": null,
@@ -18,8 +18,7 @@
       "titre": "Champ d'application des droits d'accises",
       "section": "Chapitre 1 : Champ d'application",
       "texte": [
-        "",
-        "4.3.1. Droits d'accises",
+        "[NB - Loi de finances pour 2020, modifiée]",
         "Chapitre 1 - Champ d'application",
         "Art.1.- Le droit d'accise frappe la consommation au Congo des produits établis à l'article 2 ci-dessous, sans aucune distinction fondée sur les critères de qualité, de présentation ou d'origine des produits."
       ],
@@ -35,18 +34,16 @@
       "titre": "Produits soumis aux droits d'accises",
       "section": "Chapitre 1 : Champ d'application",
       "texte": [
-        "Art.2.-",
-        "1) Sont soumis aux droits d'accises :",
+        "Art.2.- (L.F.2026) Sont soumis aux droits d'accises :",
         "a) les boissons alcoolisées (chapitre 22 du tarif extérieur commun de la CEMAC), à l'exclusion des vinaigres (position 22.09) ;",
         "b) les cigares, cigarettes et autres tabacs (chapitre 24) ;",
-        "c) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 ;",
+        "c) les véhicules automobiles de tourisme (position 87.03) à l'exclusion des véhicules neufs n'excédant pas 3000 cm3 (positions tarifaires 870...) ;",
         "d) confiseries, glaces ;",
         "e) boissons énergisantes et soda ;",
         "f) perruques, mèches ;",
         "g) machines, appareils et matériels d'enregistrement ou de reproduction du son, appareils d'enregistrement ou de reproduction des images et du son en télévision, et parties et accessoires de ces appareils ;",
         "h) yachts, bateaux et embarcations de plaisance ;",
-        "j) métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie.",
-        "2) Supprimé."
+        "i) métaux précieux plaqués ou doublés de métaux précieux et ouvrages en ces matières bijoux de fantaisie."
       ],
       "mots_cles": [
         "produits accises",

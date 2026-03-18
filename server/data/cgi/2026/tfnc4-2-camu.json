@@ -4,10 +4,10 @@
     "pays": "République du Congo",
     "edition": "2026",
     "tome": "TFNC4-CAMU",
-    "partie": null,
+    "partie": "Textes fiscaux non codifiés",
     "livre": null,
-    "chapitre": 2,
-    "chapitre_titre": "Contribution de solidarité pour la CAMU",
+    "chapitre": "4. Impôts, taxes et retenues divers",
+    "chapitre_titre": "4.2. Contribution de solidarité pour la Couverture Assurance Maladie Universelle (CAMU)",
     "section": null,
     "section_titre": null,
     "page_source": null
@@ -17,7 +17,6 @@
       "article": "Art. 1",
       "titre": "Institution de la contribution CAMU",
       "texte": [
-        "4.2. Contribution de solidarité pour la Couverture Assurance Maladie Universelle (CAMU)",
         "[NB - Loi de finances pour 2021]",
         "Art.1.- Il est institué en République du Congo, une contribution de solidarité pour la couverture assurance maladie universelle (CAMU).",
         "Les ressources de cette contribution sont affectées conformément à son objet."
