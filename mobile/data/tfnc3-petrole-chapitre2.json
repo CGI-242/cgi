@@ -2,7 +2,7 @@
   "meta": {
     "document": "Application des dispositions fiscales au secteur pétrolier amont",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC3-PETROLE",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -49,7 +49,7 @@
       "texte": [
         "Art.4.- Notion de contracteur",
         "Conformément à l'article 3 du Code des Hydrocarbures, le contracteur est :",
-        "- en régime de partage de production : la partie contractante avec l'État, composée d'une ou plusieurs personnes morales, y compris la société nationale, aussi que toute personne morale bénéficiant d'un transfert régulier d'un intérêt participatif dans un titre minier ;",
+        "- en régime de partage de production : la partie contractante avec l'État, composée d'une ou plusieurs personnes morales, y compris la société nationale, ainsi que toute personne morale bénéficiaire d'un transfert régulier d'un intérêt participatif dans un titre minier ;",
         "- en régime de contrat de services : une ou plusieurs personnes morales avec laquelle ou lesquelles l'État a signé un contrat de services."
       ],
       "mots_cles": ["contracteur", "partage production", "contrat services", "société nationale", "intérêt participatif", "titre minier"],
@@ -128,13 +128,13 @@
       "section": "Section 2 : La redevance superficiaire et la redevance minière proportionnelle - Sous-section 2.1 : La redevance superficiaire",
       "texte": [
         "Art.10.- Recouvrement de la redevance superficiaire",
-        "I. Conformément à l'article 157 du Code des hydrocarbures, l'assiette, les taux, les modalités de perception, de recouvrement et de gestion de la redevance superficiaire sont fixés par un présent décret.",
+        "I. Conformément à l'article 157 du Code des hydrocarbures, l'assiette, les taux, les modalités de perception, de recouvrement et de gestion de la redevance superficiaire sont fixées par ce présent décret.",
         "II. Le directeur général en charge des hydrocarbures est chargé de la constatation des redevances superficiaires. La liquidation et l'émission des titres de perception sont de la compétence du directeur général en charge des domaines en qualité d'ordonnateur délégué du Ministre chargé du budget en matière de recettes fiscales intérieures.",
-        "III. Le directeur général en charge des mines établit, sur la base des éléments de calcul produits par le directeur général en charge des hydrocarbures, les avis de mise en recouvrement (AMR) de la redevance superficiaire pour l'année en cours au plus tard le 30 octobre.",
+        "III. Le directeur général en charge des domaines établit, sur la base des éléments de calcul produits par le directeur général en charge des hydrocarbures, les avis de mise en recouvrement (AMR) de la redevance superficiaire pour l'année en cours au plus tard le 30 octobre.",
         "IV. Lorsque les permis sont attribués au cours des trois derniers mois de l'année civile en cours, l'avis de mise en recouvrement est établi immédiatement après la publication du décret d'attribution desdits permis.",
         "V. Lorsque les permis sont rendus à la République du Congo en cours d'année, la redevance superficiaire reste due. L'avis de mise en recouvrement est immédiatement établi au vu de l'acte définitif du rendu.",
-        "VI. Le paiement de la redevance superficiaire est effectué par le contracteur visé à l'article 9 du présent décret. Toutefois, le paiement est effectué par l'opérateur au nom et pour le compte du contracteur lorsque, conformément à l'article 20 du Code des hydrocarbures, le contracteur est composé de plusieurs personnes morales et que la conduite des opérations pétrolières est confiée à l'une d'entre elles, désignée contractuellement.",
-        "VII. L'avis de mise en recouvrement comporte, conformément à l'article 3 du décret n°2000-186 du 12 août 2000, les indications suivantes :",
+        "VI. Le paiement de la redevance superficiaire est effectué par le contracteur visé à l'article 9 du présent décret. Toutefois, le paiement est effectué par l'opérateur au nom et pour le compte du contracteur lorsque, conformément à l'article 20 du Code des hydrocarbures, le contracteur est composé de plusieurs personnes morales et que la conduite des opérations pétrolières est confiée à l'une d'entre elles, désignée comme opérateur.",
+        "VII. L'avis de mise en recouvrement comprend, conformément à l'article 3 du décret n°2000-186 du 12 août 2000, les indications suivantes :",
         "1° selon le cas, le nom du contracteur ou de l'opérateur, son NIU et son adresse ;",
         "2° le nom du permis ;",
         "3° la superficie du permis ;",
@@ -145,7 +145,7 @@
         "VIII. Les trois exemplaires de l'avis de recouvrement sont :",
         "1° le « primata » (original ou première copie) émis en vue de l'établissement de l'avis de mise en recouvrement de la redevance superficiaire ;",
         "2° le « duplicata » (deuxième copie) qui est adressé à la résidence fiscale du redevable, au plus tard le 15 décembre de l'année civile au titre de laquelle la redevance superficiaire est due ;",
-        "3° le « triplicata » (troisième ou troisième copie) qui reste dans les archives de la direction générale des hydrocarbures.",
+        "3° le « triplicata » (souche ou troisième copie) qui reste dans les archives de la direction générale des hydrocarbures.",
         "IX. Les avis de mise en recouvrement sont transmis au comptable principal des recettes du budget de l'État pour prise en charge comptable et diligence de recouvrement à effectuer."
       ],
       "mots_cles": ["recouvrement", "AMR", "directeur hydrocarbures", "directeur mines", "30 octobre", "opérateur", "NIU", "primata", "duplicata", "triplicata", "15 décembre"],
@@ -184,7 +184,7 @@
       "section": "Section 2 : La redevance superficiaire et la redevance minière proportionnelle - Sous-section 2.1 : La redevance superficiaire",
       "texte": [
         "Art.13.- Répartition de la redevance superficiaire",
-        "Conformément à l'article 4 du décret n°2000-186 du 12 août 2000, la redevance superficiaire perçue par le trésor public, la gestion, est répartie comme suit :",
+        "Conformément à l'article 4 du décret n°2000-186 du 12 août 2000, la redevance superficiaire perçue par le trésor public, qui en assure la gestion, est répartie comme suit :",
         "1° un tiers (1/3) au budget de l'État ;",
         "2° deux tiers (2/3) aux budgets des collectivités locales."
       ],
@@ -220,7 +220,7 @@
       "texte": [
         "Art.16.- Base imposable et taux d'imposition",
         "I. Conformément à l'article 158 du Code des hydrocarbures, la redevance minière proportionnelle est assise sur la production nette de chaque permis d'exploitation, à compter du début de l'exploitation commerciale.",
-        "II. Conformément à l'article 3 du Code des hydrocarbures, la production nette est la production totale d'hydrocarbures diminuée de toutes les eaux, de tous les sédiments produits et de toutes les quantités d'hydrocarbures réduites dans le gisement, utilisées, brûlées ou perdues au cours des opérations de production.",
+        "II. Conformément à l'article 3 du Code des hydrocarbures, la production nette est égale à la production totale d'hydrocarbures diminuée de toutes les eaux, de tous les sédiments produits et de toutes les quantités d'hydrocarbures réinjectées dans le gisement, utilisées, brûlées ou perdues au cours des opérations de production.",
         "III. Conformément à l'article 159 du Code des hydrocarbures, les taux de la redevance minière proportionnelle sont fixés à 15 % en ce qui concerne les hydrocarbures liquides et à 5 % en ce qui concerne le gaz naturel et les hydrocarbures solides.",
         "IV. Toutefois, pour les opérations pétrolières conduites dans les zones difficiles telles que le bassin de la cuvette congolaise, l'anté-salifère en eau profonde au-delà de cinq cents mètres de profondeur d'eau, un taux de redevance réduit peut être négocié pour les hydrocarbures liquides, sans qu'il ne soit inférieur à 12 %. Dans ce cas, le taux de la redevance minière proportionnelle du permis d'exploitation est fixé dans le contrat pétrolier y afférent."
       ],
@@ -260,14 +260,14 @@
       "section": "Section 3 : Des contributions",
       "texte": [
         "Art.19.- Généralités",
-        "I. Les « contributions » sont celles visées à l'article 148 du Code des hydrocarbures :",
+        "I. Les « contributions » sont celles visées à l'article 148 du Code des hydrocarbures, c'est-à-dire :",
         "1° la provision pour investissements diversifiés (PID) ;",
         "2° les contributions aux programmes de formation du personnel congolais ;",
         "3° la contribution à la vérification et au contrôle de comptabilité ;",
         "4° la contribution au fonds national de prévention des risques environnementaux ;",
         "5° la taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production.",
         "II. Conformément à l'article 3 de la loi organique n°36-2017 du 3 octobre 2017 relative aux lois de finances, les contributions sont des fonds publics qui doivent être remaniés dans le budget de l'État ; tant en recettes qu'en dépenses.",
-        "III. Sauf dispositions contraires du Code des hydrocarbures, les montants annuels de ces contributions sont arrêtés ou prévus en gestion de chaque permis, conformément au contrat de partage de production."
+        "III. Sauf dispositions contraires du Code des hydrocarbures, les montants annuels de ces contributions sont arrêtés au comité de gestion de chaque permis, conformément au contrat de partage de production."
       ],
       "mots_cles": ["contributions", "article 148", "PID", "formation personnel", "vérification comptabilité", "fonds environnement", "plus-values", "loi organique 36-2017", "fonds publics"],
       "statut": "en vigueur"
@@ -292,7 +292,7 @@
       "texte": [
         "Art.21.- Contribution aux programmes de formation du personnel congolais",
         "I. Conformément à l'article 139 du Code des hydrocarbures, le contracteur, ses sous-traitants, ses prestataires de services et fournisseurs doivent employer en priorité du personnel congolais. Conformément au même article, aux fins de remplir leurs obligations en matière d'emploi de personnel congolais, le contracteur, ses sous-traitants, ses prestataires de services et fournisseurs sont tenus de mettre en place et d'exécuter un programme de recrutement, de compagnonnage, de formation et de promotion du personnel congolais, dans tous les domaines de l'amont pétrolier afin de lui permettre d'acquérir le niveau de qualification requis et d'accéder à tous les niveaux de responsabilité. Le contracteur, ses sous-traitants, prestataires des services et fournisseurs contribuent également, pendant la période d'exploitation, aux programmes de formation et de promotion des congolais, dans les conditions fixées par la réglementation en vigueur. Ils participent à la mise en place de structures permanentes de formation et de perfectionnement. Un bilan et un programme de recrutement et de formation sont établis et remis aux administrations compétentes dans le cadre des programmes annuels de travaux.",
-        "II. Les budgets ou les budgets de formation non utilisés au cours d'une année civile donnée pour les programmes de formation du personnel congolais sont reportés à l'année civile suivante. Les dépenses correspondant aux actions de formation constituent des coûts pétroliers.",
+        "II. Les budgets ou les reliquats de budgets non utilisés au cours d'une année civile donnée pour les programmes de formation du personnel congolais sont reportés à l'année civile suivante. Les dépenses correspondant aux actions de formation constituent des coûts pétroliers.",
         "III. Il en ressort que, à qualification égale, du personnel de nationalité congolaise doit être employé en préférence à tous les niveaux en priorité dans les établissements et installations situés au Congo.",
         "IV. Les dépenses d'emploi du personnel étranger ou extérieur, ainsi que les cotisations sociales et la taxe unique sur les salaires afférentes, n'ayant pas respecté les conditions du paragraphe ci-dessus ne constituent pas des coûts pétroliers. Elles ne sont pas déductibles de l'assiette imposable à l'impôt sur les sociétés."
       ],
@@ -317,8 +317,8 @@
       "section": "Section 3 : Des contributions",
       "texte": [
         "Art.23.- Contribution au fonds national de prévention des risques environnementaux",
-        "I. Conformément à l'article 98 du Code des hydrocarbures, chaque contracteur est redevable d'une contribution au fonds national de prévention des risques environnementaux à 0,05 % de la production nette d'hydrocarbures valorisée au prix fiscal.",
-        "II. Le paragraphe 4 de l'article 98 du Code des hydrocarbures dispose que « toute forme de compensation doit être définie par les textes d'application pour définir la taxe applicable aux non producteurs. En application du présent décret, la contribution au fonds national de prévention des risques environnementaux des contracteurs non producteurs est égale à 0,05 % des dépenses des activités de prospection, d'exploration et de développement, à l'exclusion des provisions pour remise en état des sites.",
+        "I. Conformément à l'article 98 du Code des hydrocarbures, chaque contracteur est redevable d'une contribution au fonds national de prévention des risques environnementaux égale à 0,05 % de la production nette d'hydrocarbures valorisée au prix fiscal.",
+        "II. Le paragraphe 4 de l'article 98 du Code des hydrocarbures dispose qu'une formule de compensation doit être définie par les textes d'application pour définir la taxe applicable aux non producteurs. En application du présent décret, la contribution au fonds national de prévention des risques environnementaux des contracteurs non producteurs est égale à 0,05 % des dépenses des activités de prospection, d'exploration et de développement, à l'exclusion des provisions pour remise en état des sites.",
         "III. La contribution au fonds national de prévention des risques environnementaux est déclarée spontanément par le contracteur auprès de l'administration fiscale et payée au trésor public par virement au plus tard le vingt de chaque mois, au titre du mois précédent.",
         "IV. Conformément à l'article 98 du Code des hydrocarbures, la contribution au fonds national de prévention des risques environnementaux constitue un coût pétrolier. Elle est déductible de l'assiette imposable pour la détermination de l'impôt sur les sociétés."
       ],
@@ -332,9 +332,9 @@
       "texte": [
         "Art.24.- Taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production",
         "I. En application de l'article 163 du Code des hydrocarbures, tout membre du contracteur qui cède tout ou partie de ses droits et obligations découlant d'un contrat de partage de production est assujetti au paiement d'une taxe forfaitaire égale à 10 % en cas de plus-value réalisée sur la cession. La plus-value est la différence entre le prix de cession obtenu par le cédant et le montant total des coûts restant à récupérer par le membre du contracteur cessionnaire.",
-        "II. N'est pas soumise à la taxe, le transfert de droits ou obligations dans un contrat de partage de production d'une société membre du contracteur à une société de droit congolais dont ce membre détient la totalité du capital.",
+        "II. N'est pas soumis à la taxe, le transfert de droits ou obligations dans un contrat de partage de production d'une société membre du contracteur à une société de droit congolais dont ce membre détient la totalité du capital.",
         "III. Le cédant et le cessionnaire sont solidairement responsables du paiement de la taxe.",
-        "IV. La taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production est déclarée auprès de l'Administration fiscale et payée au Trésor public dans les conditions de droit commun."
+        "IV. La taxe sur les plus-values de cession des intérêts participatifs dans les contrats de partage de production est déclarée auprès de l'administration fiscale et payée au Trésor public dans les conditions de droit commun."
       ],
       "mots_cles": ["taxe plus-values", "10%", "cession intérêts participatifs", "article 163", "cédant cessionnaire", "solidarité"],
       "statut": "en vigueur"
@@ -346,9 +346,9 @@
       "texte": [
         "Art.25.- Modalités de gestion du compte séquestre de la provision pour abandon et réhabilitation des sites",
         "I. Conformément à l'article 101 du Code des hydrocarbures, les fonds collectés aux fins de constitution de la provision pour abandon et réhabilitation des sites sont versés dans un compte séquestre ouvert auprès de la caisse des dépôts et consignations. Toutefois, dans l'attente de la mise en place du compte séquestre auprès de la caisse des dépôts et consignations, ces fonds sont versés dans un compte séquestre ouvert à la BEAC.",
-        "II. Conformément à l'article 2 de la loi n°4-98 du 28 août 1998 fixant les obligations des sociétés pétrolières en matière de maintenance des installations de production des hydrocarbures et de réhabilitation des sites, les sociétés pétrolières doivent, pour chaque site de travaux d'exploration et gisement à mettre en production ou mis en production, consigner, dans les trois mois qui suivent la remise de leur plan de démantèlement et de réhabilitation, une somme en dollars des États-Unis d'Amérique représentant la totalité des coûts de démantèlement des installations de production des hydrocarbures ou de réhabilitation des sites, au titre de garantie.",
-        "III. Conformément à l'article 2 de la loi n°4-98 du 28 août 1998, 20 % de la garantie doit être versé dans un compte séquestre chaque année jusqu'à la constitution totale de la somme fixée (soit sur une période de cinq ans).",
-        "IV. En application des articles 11 et 1 de la loi n°4-98 du 28 août 1998, la caution de garantie constituée en totalité porte des intérêts au taux de l'EONIA plus 1,5 % au profit des sociétés pétrolières.",
+        "II. Conformément à l'article 7 de la loi n°4-98 du 28 août 1998 fixant les obligations des sociétés pétrolières en matière de démantèlement des installations de productions des hydrocarbures et de réhabilitation des sites, les sociétés pétrolières doivent, pour chaque site de travaux d'exploration et gisement à mettre en production ou mis en production, consigner, dans les trois mois qui suivent la remise de leur plan de démantèlement et de réhabilitation, une somme en dollars des États-Unis d'Amérique représentant la totalité des coûts de démantèlement des installations de production des hydrocarbures et de réhabilitation des sites, au titre de garantie.",
+        "III. Conformément à l'article 9 de la loi n°4-98 du 28 août 1998, 20 % de la garantie visée au I. doit être versé dans un compte séquestre chaque année jusqu'à la constitution totale de la somme fixée (soit sur une période de cinq ans).",
+        "IV. En application des articles 11 et 14 de la loi n°4-98 du 28 août 1998, la caution de garantie constituée en totalité porte des intérêts au taux de l'EONIA plus 1,5 % au profit des sociétés pétrolières.",
         "V. Les intérêts perçus sur les dépôts de garantie visés au IV sont inclus dans l'assiette de l'impôt sur les sociétés.",
         "VI. Conformément à l'article 13 de la loi n°4-98 du 28 août 1998, les dépôts de garantie ne sont pas déductibles de l'assiette imposable à l'impôt sur les sociétés. Ils ne constituent pas des coûts pétroliers.",
         "VII. Conformément à l'article 15 de la loi n°4-98 du 28 août 1998, lorsqu'une société pétrolière ne constitue pas de garantie ou constitue une garantie annuelle insuffisante, une quantité d'hydrocarbures d'un montant équivalent à cette garantie est retenue sur le « Profit Oil » revenant à cette société."
@@ -362,7 +362,7 @@
       "section": "Section 4 : La provision pour abandon et réhabilitation des sites",
       "texte": [
         "Art.26.- Inclusion dans les coûts pétroliers de la provision pour abandon et réhabilitation des sites",
-        "En application des dispositions combinées articles 15, 75, 89, 99 et 102 du Code des hydrocarbures, les fonds collectés aux fins de constitution de la provision pour abandon et de réhabilitation des sites ne constituent des coûts pétroliers récupérables qu'à condition que lesdits fonds effectivement versés dans un compte séquestre."
+        "En application des dispositions combinées articles 15, 75, 89, 99 et 102 du Code des hydrocarbures, les fonds collectés aux fins de constitution de la provision pour abandon et réhabilitation des sites ne constituent des coûts pétroliers récupérables qu'à condition que ces fonds soient effectivement versés dans un compte séquestre."
       ],
       "mots_cles": ["provision abandon", "réhabilitation sites", "coûts pétroliers récupérables", "compte séquestre", "articles 15 75 89 99 102"],
       "statut": "en vigueur"

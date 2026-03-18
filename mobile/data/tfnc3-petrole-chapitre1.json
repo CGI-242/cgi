@@ -2,12 +2,12 @@
   "meta": {
     "document": "Application des dispositions fiscales au secteur pétrolier amont",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC3-PETROLE",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
     "chapitre": "3. Fiscalité des mines et des hydrocarbures",
-    "chapitre_titre": "Dispositions générales",
+    "chapitre_titre": "3.3. Application des dispositions fiscales au secteur pétrolier amont",
     "section": null,
     "section_titre": null,
     "page_source": null
@@ -17,7 +17,7 @@
       "article": "Art. 1",
       "titre": "Cadre législatif et réglementaire du secteur pétrolier amont",
       "texte": [
-        "",
+        "[NB - Décret n°2022-1858 du 12 octobre 2022 fixant les modalités d'application des dispositions fiscales intérieures au secteur pétrolier amont]",
         "Art.1.- Cadre législatif et réglementaire du secteur pétrolier amont",
         "I. Les dispositions fiscales intérieures applicables au « secteur pétrolier amont » sont régies par le Code des hydrocarbures, le Code général des impôts, le Code des douanes et leurs textes d'application et, plus généralement, toute législation et réglementation nationales applicables au secteur pétrolier amont.",
         "II. Par « secteur pétrolier amont », on entend conformément à l'article 3 du Code des hydrocarbures : « les activités de prospection, d'exploration, de développement et d'exploitation des hydrocarbures ».",
@@ -45,10 +45,11 @@
         "2° les impôts et taxes relevant du droit commun (c'est-à-dire du Code général des impôts) listés par l'article 149 du Code des hydrocarbures."
       ],
       "mots_cles": [
-        "cadre fiscal",
-        "dispositions spécifiques",
-        "droit commun",
-        "article 149"
+        "cadre fiscal secteur pétrolier amont",
+        "dispositions spécifiques Code hydrocarbures",
+        "droit commun CGI",
+        "article 149",
+        "impôts taxes"
       ],
       "statut": "en vigueur"
     }

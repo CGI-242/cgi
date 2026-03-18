@@ -2,7 +2,7 @@
   "meta": {
     "document": "Redevance superficiaire",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC3-REDEV-SUPERF",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,7 +17,7 @@
       "article": "Art. 1",
       "titre": "Objet du décret",
       "texte": [
-        "",
+        "[NB - Décret n°2000-186 du 12 août 2000 fixant les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire]",
         "Art.1.- Le présent décret fixe les taux et les règles de perception, de recouvrement et de gestion de la redevance superficiaire prévue à l'article 54 du Code des hydrocarbures."
       ],
       "mots_cles": [
@@ -80,13 +80,14 @@
       "article": "Art. 5",
       "titre": "Paiement de la redevance superficiaire",
       "texte": [
-        "Art.5.- Le paiement de la redevance superficiaire est effectué au plus tard le 20 janvier de chaque année tel que spécifié à l'article 55 de la loi n°24-94 du 23 août 1994 sous peine d'amende égale au double du montant des droits à payer."
+        "Art.5.- Le paiement de la redevance superficiaire est effectué au plus tard le 20 janvier de chaque année tel que spécifié à l'article 55 de la loi n°24-94 du 23 août 1994 susvisée, à peine d'amende égale au double du montant des droits à payer."
       ],
       "mots_cles": [
-        "paiement",
-        "20 janvier",
-        "loi 24-94",
-        "amende double"
+        "paiement redevance superficiaire",
+        "20 janvier chaque année",
+        "loi 24-94 du 23 août 1994",
+        "amende double montant droits",
+        "article 55"
       ],
       "statut": "en vigueur"
     },
@@ -110,7 +111,9 @@
       "mots_cles": [
         "publication",
         "journal officiel",
-        "entrée en vigueur"
+        "entrée en vigueur",
+        "enregistrement décret",
+        "communication"
       ],
       "statut": "en vigueur"
     }
