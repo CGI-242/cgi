@@ -9,6 +9,7 @@ import LandingPricing from "./LandingPricing";
 import LandingContact from "./LandingContact";
 import LandingCTA from "./LandingCTA";
 import LandingFooter from "./LandingFooter";
+import AnimatedSection from "./AnimatedSection";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 
 export default function LandingPage() {
@@ -26,11 +27,9 @@ export default function LandingPage() {
     if (!sectionView) return;
 
     if (Platform.OS === "web") {
-      // Sur web, utiliser scrollIntoView natif (fiable)
       const node = sectionView as unknown as HTMLElement;
       node?.scrollIntoView?.({ behavior: "smooth", block: "start" });
     } else {
-      // Sur native, mesurer la position et scroller
       (sectionView as any).measureLayout?.(
         scrollRef.current,
         (_x: number, y: number) => {
@@ -44,26 +43,50 @@ export default function LandingPage() {
   return (
     <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#ffffff" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
-      <LandingHero isMobile={isMobile} loaded={loaded} />
+
+      <AnimatedSection delay={100}>
+        <LandingHero isMobile={isMobile} loaded={loaded} />
+      </AnimatedSection>
+
       <View ref={(r) => { sectionRefs.current.produits = r; }}>
-        <LandingProducts isMobile={isMobile} />
+        <AnimatedSection delay={0}>
+          <LandingProducts isMobile={isMobile} />
+        </AnimatedSection>
       </View>
+
       <View ref={(r) => { sectionRefs.current.features = r; }}>
-        <LandingFeatures isMobile={isMobile} loaded={loaded} />
+        <AnimatedSection delay={0}>
+          <LandingFeatures isMobile={isMobile} loaded={loaded} />
+        </AnimatedSection>
       </View>
+
       <View ref={(r) => { sectionRefs.current.simulateurs = r; }}>
-        <LandingCountries isMobile={isMobile} loaded={loaded} />
+        <AnimatedSection delay={0}>
+          <LandingCountries isMobile={isMobile} loaded={loaded} />
+        </AnimatedSection>
       </View>
+
       <View ref={(r) => { sectionRefs.current.tarifs = r; }}>
-        <LandingPricing isMobile={isMobile} />
+        <AnimatedSection delay={0}>
+          <LandingPricing isMobile={isMobile} />
+        </AnimatedSection>
       </View>
+
       <View ref={(r) => { sectionRefs.current.contact = r; }}>
-        <LandingContact isMobile={isMobile} />
+        <AnimatedSection delay={0}>
+          <LandingContact isMobile={isMobile} />
+        </AnimatedSection>
       </View>
+
       <View ref={(r) => { sectionRefs.current.assistant = r; }}>
-        <LandingCTA />
+        <AnimatedSection delay={0}>
+          <LandingCTA />
+        </AnimatedSection>
       </View>
-      <LandingFooter isMobile={isMobile} onScrollTo={handleScrollTo} />
+
+      <AnimatedSection delay={0}>
+        <LandingFooter isMobile={isMobile} onScrollTo={handleScrollTo} />
+      </AnimatedSection>
     </ScrollView>
   );
 }

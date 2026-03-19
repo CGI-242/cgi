@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import AnimatedSection from "./AnimatedSection";
 
 const GOLD = "#D4A843";
 
@@ -106,8 +107,8 @@ export default function LandingProducts({ isMobile }: Props) {
         {PRODUCTS.map((product, i) => {
           const Card = product.available ? TouchableOpacity : View;
           return (
+            <AnimatedSection key={i} delay={i * 120} slideUp={20}>
             <Card
-              key={i}
               {...(product.available ? { onPress: () => router.push("/cgi242"), activeOpacity: 0.7 } : {})}
               style={{
                 width: cols === 1 ? "100%" : cols === 2 ? "47%" : "23%",
@@ -205,6 +206,7 @@ export default function LandingProducts({ isMobile }: Props) {
                 </Text>
               )}
             </Card>
+            </AnimatedSection>
           );
         })}
       </View>
