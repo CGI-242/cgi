@@ -46,12 +46,12 @@ export default function LoginEmail() {
       style={{ flex: 1, backgroundColor: "#ffffff" }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: "#ffffff", padding: isMobile ? 24 : 40, borderWidth: 1, borderColor: "rgba(0,0,0,0.08)", borderRadius: 16 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: "#1A3A5C", padding: isMobile ? 24 : 40, borderRadius: 16 }}>
           <AuthLogo size="lg" />
 
           {/* Titre */}
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: BG, marginBottom: 6 }}>{t("auth.login")}</Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "#5a6a7a", marginBottom: 28 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: "#e8e6e1", marginBottom: 6 }}>{t("auth.login")}</Text>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "rgba(255,255,255,0.55)", marginBottom: 28 }}>
             {t("auth.enterEmail")}
           </Text>
 
@@ -63,13 +63,13 @@ export default function LoginEmail() {
           ) : null}
 
           {/* Email */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: BG, marginBottom: 10 }}>
-            Email <Text style={{ color: "#ef4444" }}>*</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: "#e8e6e1", marginBottom: 10 }}>
+            Email <Text style={{ color: "#f87171" }}>*</Text>
           </Text>
           <TextInput
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "#f8f9fa", padding: 14, fontSize: 18, color: BG, marginBottom: 24, borderWidth: 1, borderColor: "rgba(0,0,0,0.08)", borderRadius: 8 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "rgba(255,255,255,0.08)", padding: 14, fontSize: 18, color: "#e8e6e1", marginBottom: 24, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)", borderRadius: 8 }}
             placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor="#9ca3af"
+            placeholderTextColor="rgba(255,255,255,0.35)"
             value={email}
             onChangeText={(text) => {
               setEmailLocal(text);
@@ -85,16 +85,16 @@ export default function LoginEmail() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: BG, padding: 16, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 8, marginTop: 4, borderRadius: 10, opacity: navigating ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: GOLD, padding: 16, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 8, marginTop: 4, borderRadius: 10, opacity: navigating ? 0.7 : 1 }}
             onPress={handleContinue}
             activeOpacity={0.8}
             disabled={navigating}
             accessibilityLabel={t("auth.continue")}
             accessibilityRole="button"
           >
-            <Ionicons name="person" size={18} color="#ffffff" />
+            <Ionicons name="person" size={18} color={BG} />
             {!isMobile && (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: "#ffffff", fontSize: 18 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: BG, fontSize: 18 }}>
                 {t("auth.continue")}
               </Text>
             )}
@@ -102,9 +102,9 @@ export default function LoginEmail() {
 
           {/* Lien inscription */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 28 }}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "#5a6a7a" }}>{t("auth.noAccount")} </Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "rgba(255,255,255,0.55)" }}>{t("auth.noAccount")} </Text>
             <TouchableOpacity onPress={() => router.push("/(auth)/register")} accessibilityLabel={t("auth.createCompany")} accessibilityRole="link">
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: BG, textDecorationLine: "underline" }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: GOLD, textDecorationLine: "underline" }}>
                 {t("auth.createCompany")}
               </Text>
             </TouchableOpacity>
