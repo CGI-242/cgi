@@ -18,12 +18,10 @@ interface CodeEntry {
 }
 
 const entries: CodeEntry[] = [
-  // Congo-Brazzaville — codes disponibles et publiés
   { id: "CG-cgi", name: "Congo-Brazzaville", cc: "CG", status: "available", region: "CEMAC", codeLabel: "CGI 242", badge: "Disponible" },
   { id: "CG-social", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Code Social", badge: "2025" },
   { id: "CG-hydro", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Hydrocarbures", badge: "2025" },
   { id: "CG-douanes", name: "Congo-Brazzaville", cc: "CG", status: "published", region: "CEMAC", codeLabel: "Code Douanes", badge: "2025" },
-  // CGI 2026 — autres pays
   { id: "GA-cgi", name: "Gabon", cc: "GA", status: "published", region: "CEMAC", codeLabel: "CGI 241", badge: "CGI 2026" },
   { id: "CM-cgi", name: "Cameroun", cc: "CM", status: "published", region: "CEMAC", codeLabel: "CGI 237", badge: "CGI 2026" },
   { id: "TD-cgi", name: "Tchad", cc: "TD", status: "published", region: "CEMAC", codeLabel: "CGI 235", badge: "CGI 2026" },
@@ -41,10 +39,10 @@ const entries: CodeEntry[] = [
 ];
 
 const regionColors: Record<string, { bg: string; border: string; text: string }> = {
-  CEMAC: { bg: "rgba(200,160,60,0.12)", border: "rgba(200,160,60,0.3)", text: "#D4A843" },
-  UEMOA: { bg: "rgba(96,165,250,0.12)", border: "rgba(96,165,250,0.3)", text: "#60a5fa" },
-  OHADA: { bg: "rgba(168,130,255,0.1)", border: "rgba(168,130,255,0.25)", text: "#a882ff" },
-  Autre: { bg: "rgba(168,130,255,0.1)", border: "rgba(168,130,255,0.25)", text: "#a882ff" },
+  CEMAC: { bg: "rgba(200,160,60,0.12)", border: "rgba(200,160,60,0.3)", text: "#b8860b" },
+  UEMOA: { bg: "rgba(37,99,235,0.1)", border: "rgba(37,99,235,0.25)", text: "#2563eb" },
+  OHADA: { bg: "rgba(139,92,246,0.1)", border: "rgba(139,92,246,0.25)", text: "#7c3aed" },
+  Autre: { bg: "rgba(139,92,246,0.1)", border: "rgba(139,92,246,0.25)", text: "#7c3aed" },
 };
 
 function toFlag(cc: string): string {
@@ -80,7 +78,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -90,7 +88,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
       <Text
         style={{
           textAlign: "center",
-          color: "#5a5a65",
+          color: "#6b7280",
           fontSize: 16,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -124,14 +122,14 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 backgroundColor: active
                   ? rc
                     ? rc.bg
-                    : "rgba(255,255,255,0.08)"
+                    : "rgba(0,0,0,0.06)"
                   : "transparent",
                 borderWidth: 1,
                 borderColor: active
                   ? rc
                     ? rc.border
-                    : "rgba(255,255,255,0.15)"
-                  : "rgba(255,255,255,0.06)",
+                    : "rgba(0,0,0,0.12)"
+                  : "rgba(0,0,0,0.08)",
               }}
             >
               <Text
@@ -142,8 +140,8 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   color: active
                     ? rc
                       ? rc.text
-                      : "#e8e6e1"
-                    : "#6a6a75",
+                      : "#1A3A5C"
+                    : "#6b7280",
                 }}
               >
                 {r === "Autre" ? "Autres OHADA" : r}
@@ -157,7 +155,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
       <View style={{ alignItems: "center", marginBottom: 36 }}>
         <TextInput
           placeholder="Rechercher un pays ou indicatif..."
-          placeholderTextColor="#3a3a45"
+          placeholderTextColor="#9ca3af"
           value={query}
           onChangeText={setQuery}
           style={{
@@ -167,9 +165,9 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
             paddingHorizontal: 18,
             borderRadius: 12,
             borderWidth: 1,
-            borderColor: "rgba(255,255,255,0.06)",
-            backgroundColor: "rgba(255,255,255,0.025)",
-            color: "#e8e6e1",
+            borderColor: "rgba(0,0,0,0.1)",
+            backgroundColor: "#f9fafb",
+            color: "#1A3A5C",
             fontSize: 16,
             fontFamily: fonts.regular,
           }}
@@ -201,12 +199,12 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 padding: isMobile ? 16 : 22,
                 alignItems: "center",
                 backgroundColor: isAvailable
-                  ? "rgba(200,160,60,0.03)"
-                  : "rgba(255,255,255,0.015)",
+                  ? "rgba(200,160,60,0.05)"
+                  : "#f9fafb",
                 borderWidth: 1,
                 borderColor: isAvailable
-                  ? "rgba(200,160,60,0.15)"
-                  : "rgba(255,255,255,0.06)",
+                  ? "rgba(200,160,60,0.2)"
+                  : "rgba(0,0,0,0.06)",
                 opacity: loaded ? 1 : 0,
               }}
             >
@@ -224,7 +222,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   fontSize: isMobile ? 18 : 22,
                   fontFamily: fonts.extraBold,
                   fontWeight: fontWeights.extraBold,
-                  color: isAvailable ? GOLD : "#8ab4f8",
+                  color: isAvailable ? GOLD : "#2563eb",
                   marginBottom: 3,
                   textAlign: "center",
                 }}
@@ -239,7 +237,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
                   marginBottom: 8,
-                  color: isAvailable ? "#e8e6e1" : "#b0b0bb",
+                  color: isAvailable ? "#1A3A5C" : "#6b7280",
                   textAlign: "center",
                 }}
               >
@@ -251,11 +249,11 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   paddingHorizontal: 14,
                   borderRadius: 100,
                   backgroundColor: isAvailable
-                    ? "rgba(74,222,128,0.1)"
+                    ? "rgba(22,163,74,0.1)"
                     : "rgba(200,160,60,0.08)",
                   borderWidth: 1,
                   borderColor: isAvailable
-                    ? "rgba(74,222,128,0.2)"
+                    ? "rgba(22,163,74,0.2)"
                     : "rgba(200,160,60,0.2)",
                 }}
               >
@@ -266,7 +264,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                     fontWeight: fontWeights.bold,
                     textTransform: "uppercase",
                     letterSpacing: 0.8,
-                    color: isAvailable ? "#4ade80" : GOLD,
+                    color: isAvailable ? "#16a34a" : GOLD,
                   }}
                 >
                   {c.badge}
@@ -293,7 +291,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
           style={{
             textAlign: "center",
             padding: 40,
-            color: "#4a4a55",
+            color: "#9ca3af",
             fontFamily: fonts.regular,
           }}
         >

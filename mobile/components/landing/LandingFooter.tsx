@@ -4,9 +4,6 @@ import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#D4A843";
-const BG = "#0d1f36";
-const TITLE_COLOR = "#e8e6e1";
-const LINK_COLOR = "#5a5a65";
 
 interface Props {
   isMobile: boolean;
@@ -21,7 +18,7 @@ function FooterLink({ label, onPress }: { label: string; onPress: () => void }) 
           fontFamily: fonts.regular,
           fontWeight: fontWeights.regular,
           fontSize: 15,
-          color: LINK_COLOR,
+          color: "#6b7280",
           lineHeight: 20,
         }}
       >
@@ -38,7 +35,7 @@ function SectionTitle({ children }: { children: string }) {
         fontFamily: fonts.semiBold,
         fontWeight: fontWeights.semiBold,
         fontSize: 15,
-        color: TITLE_COLOR,
+        color: "#1A3A5C",
         marginBottom: 16,
         textTransform: "uppercase",
         letterSpacing: 1.2,
@@ -55,9 +52,9 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
   return (
     <View
       style={{
-        backgroundColor: BG,
+        backgroundColor: "#f9fafb",
         borderTopWidth: 1,
-        borderTopColor: "rgba(255,255,255,0.04)",
+        borderTopColor: "rgba(0,0,0,0.06)",
         paddingTop: 48,
         paddingBottom: 0,
       }}
@@ -102,7 +99,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
                 fontFamily: fonts.bold,
                 fontWeight: fontWeights.bold,
                 fontSize: 19,
-                color: TITLE_COLOR,
+                color: "#1A3A5C",
               }}
             >
               NORMX{" "}
@@ -114,7 +111,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               fontFamily: fonts.light,
               fontWeight: fontWeights.light,
               fontSize: 15,
-              color: LINK_COLOR,
+              color: "#6b7280",
               lineHeight: 20,
             }}
           >
@@ -168,7 +165,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 15,
-              color: LINK_COLOR,
+              color: "#6b7280",
               lineHeight: 20,
             }}
           >
@@ -186,7 +183,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
           paddingHorizontal: 24,
           marginTop: 40,
           borderTopWidth: 1,
-          borderTopColor: "rgba(255,255,255,0.06)",
+          borderTopColor: "rgba(0,0,0,0.06)",
           paddingVertical: 20,
           flexDirection: isMobile ? "column" : "row",
           justifyContent: "space-between",
@@ -199,7 +196,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             fontFamily: fonts.regular,
             fontWeight: fontWeights.regular,
             fontSize: 14,
-            color: "#2a2a35",
+            color: "#9ca3af",
           }}
         >
           {t("landing.copyright")}
@@ -209,7 +206,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             fontFamily: fonts.regular,
             fontWeight: fontWeights.regular,
             fontSize: 14,
-            color: "#3a3a45",
+            color: "#9ca3af",
           }}
         >
           {t("landing.trademark")}

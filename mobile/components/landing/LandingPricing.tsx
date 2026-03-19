@@ -70,7 +70,7 @@ export default function LandingPricing({ isMobile }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -80,7 +80,7 @@ export default function LandingPricing({ isMobile }: Props) {
       <Text
         style={{
           textAlign: "center",
-          color: "#5a5a65",
+          color: "#6b7280",
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -110,10 +110,10 @@ export default function LandingPricing({ isMobile }: Props) {
               borderWidth: plan.popular ? 2 : 1,
               borderColor: plan.popular
                 ? plan.color
-                : "rgba(255,255,255,0.06)",
+                : "rgba(0,0,0,0.08)",
               backgroundColor: plan.popular
                 ? "rgba(139,92,246,0.04)"
-                : "rgba(255,255,255,0.015)",
+                : "#f9fafb",
               padding: 28,
               position: "relative",
               overflow: "hidden",
@@ -166,7 +166,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   fontFamily: fonts.headingBlack,
                   fontWeight: fontWeights.headingBlack,
                   fontSize: 38,
-                  color: "#e8e6e1",
+                  color: "#1A3A5C",
                 }}
               >
                 {plan.price}
@@ -177,7 +177,7 @@ export default function LandingPricing({ isMobile }: Props) {
                 fontFamily: fonts.regular,
                 fontWeight: fontWeights.regular,
                 fontSize: 15,
-                color: "#5a5a65",
+                color: "#6b7280",
                 marginBottom: plan.priceDetailKey ? 4 : 20,
               }}
             >
@@ -218,7 +218,7 @@ export default function LandingPricing({ isMobile }: Props) {
                     fontFamily: fonts.regular,
                     fontWeight: fontWeights.regular,
                     fontSize: 15,
-                    color: "#b0b0b8",
+                    color: "#4b5563",
                     flex: 1,
                   }}
                 >
@@ -233,9 +233,9 @@ export default function LandingPricing({ isMobile }: Props) {
                 marginTop: 16,
                 paddingVertical: 12,
                 borderRadius: 10,
-                backgroundColor: plan.popular ? plan.color : "rgba(255,255,255,0.06)",
+                backgroundColor: plan.popular ? plan.color : "rgba(0,0,0,0.04)",
                 borderWidth: plan.popular ? 0 : 1,
-                borderColor: "rgba(255,255,255,0.08)",
+                borderColor: "rgba(0,0,0,0.08)",
                 alignItems: "center",
               }}
             >
@@ -244,7 +244,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   fontFamily: fonts.bold,
                   fontWeight: fontWeights.bold,
                   fontSize: 16,
-                  color: plan.popular ? "#fff" : "#e8e6e1",
+                  color: plan.popular ? "#fff" : "#1A3A5C",
                 }}
               >
                 {plan.tag === "FREE" ? t("landing.pricingTryFree") : t("landing.pricingStart")}

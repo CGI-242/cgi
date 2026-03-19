@@ -49,7 +49,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 32 : 56,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           lineHeight: isMobile ? 38 : 64,
           marginBottom: 20,
@@ -63,7 +63,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
       <Text
         style={{
           fontSize: isMobile ? 15 : 19,
-          color: "#7a7a85",
+          color: "#6b7280",
           maxWidth: 600,
           textAlign: "center",
           lineHeight: isMobile ? 24 : 31,
@@ -106,7 +106,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             <Text
               style={{
                 fontSize: 13,
-                color: "#5a5a65",
+                color: "#9ca3af",
                 textTransform: "uppercase",
                 letterSpacing: 1.5,
                 marginTop: 5,
@@ -131,7 +131,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             backgroundColor: GOLD,
           }}
         >
-          <Text style={{ color: "#1A3A5C", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          <Text style={{ color: "#fff", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
             {t("landing.heroCtaPrimary")}
           </Text>
         </TouchableOpacity>
@@ -143,10 +143,10 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             paddingHorizontal: 38,
             borderRadius: 12,
             borderWidth: 1,
-            borderColor: "rgba(255,255,255,0.12)",
+            borderColor: "rgba(0,0,0,0.12)",
           }}
         >
-          <Text style={{ color: "#e8e6e1", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+          <Text style={{ color: "#1A3A5C", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
             {t("landing.login")}
           </Text>
         </TouchableOpacity>

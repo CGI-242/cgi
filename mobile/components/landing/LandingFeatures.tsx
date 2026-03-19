@@ -42,7 +42,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 28 : 36,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -52,7 +52,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
       <Text
         style={{
           fontSize: isMobile ? 14 : 16,
-          color: "#5a5a65",
+          color: "#6b7280",
           textAlign: "center",
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -75,9 +75,9 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             style={{
               width: cols === 1 ? "100%" : cols === 2 ? "47%" : "30%",
               flexGrow: 1,
-              backgroundColor: "rgba(255,255,255,0.015)",
+              backgroundColor: "#f9fafb",
               borderWidth: 1,
-              borderColor: "rgba(255,255,255,0.05)",
+              borderColor: "rgba(0,0,0,0.06)",
               borderRadius: 16,
               padding: isMobile ? 22 : 28,
               opacity: loaded ? 1 : 0,
@@ -101,7 +101,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
                 fontSize: 17,
                 fontFamily: fonts.bold,
                 fontWeight: fontWeights.bold,
-                color: "#e8e6e1",
+                color: "#1A3A5C",
                 marginBottom: 6,
               }}
             >
@@ -110,7 +110,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             <Text
               style={{
                 fontSize: 15,
-                color: "#5a5a65",
+                color: "#6b7280",
                 lineHeight: 20,
                 fontFamily: fonts.light,
                 fontWeight: fontWeights.light,
