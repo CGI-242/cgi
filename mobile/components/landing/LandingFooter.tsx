@@ -13,7 +13,7 @@ interface Props {
 function FooterLink({ label, onPress }: { label: string; onPress: () => void }) {
   return (
     <TouchableOpacity onPress={onPress} style={{ marginBottom: 10 }}>
-      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "#5a5a65", lineHeight: 20 }}>
+      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 20 }}>
         {label}
       </Text>
     </TouchableOpacity>
@@ -44,7 +44,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               NORMX{" "}<Text style={{ color: GOLD }}>AI</Text>
             </Text>
           </View>
-          <Text style={{ fontFamily: fonts.light, fontWeight: fontWeights.light, fontSize: 15, color: "#5a5a65", lineHeight: 20 }}>
+          <Text style={{ fontFamily: fonts.light, fontWeight: fontWeights.light, fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 20 }}>
             {t("landing.footerDesc")}
           </Text>
         </View>
@@ -71,7 +71,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
           <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: GOLD, lineHeight: 20, marginBottom: 10 }}>
             info-contact@normx-ai.com
           </Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "#5a5a65", lineHeight: 20 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 20 }}>
             5 rue Benjamin Raspail, 60100 Creil
           </Text>
         </View>
@@ -79,10 +79,10 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
 
       {/* Barre du bas */}
       <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 24, marginTop: 40, borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.06)", paddingVertical: 20, flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: "center", gap: isMobile ? 8 : 0 }}>
-        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#2a2a35" }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "rgba(255,255,255,0.4)" }}>
           {t("landing.copyright")}
         </Text>
-        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#3a3a45" }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "rgba(255,255,255,0.4)" }}>
           {t("landing.trademark")}
         </Text>
       </View>
