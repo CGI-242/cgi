@@ -14,10 +14,10 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "2 263", label: t("landing.statsArticles") },
-    { value: "16", label: t("landing.statsSimulators") },
-    { value: "64", label: t("landing.statsTexts") },
-    { value: "2026", label: t("landing.statsEdition") },
+    { value: "1", label: "Pays couvert" },
+    { value: "2 263", label: "Articles de loi" },
+    { value: "16", label: "Simulateurs" },
+    { value: "IA", label: "Assistant intelligent" },
   ];
 
   return (
@@ -37,9 +37,8 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 28,
         }}
       >
-        <Text style={{ fontSize: 26 }}>🇨🇬</Text>
         <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
-          Congo-Brazzaville — Édition 2026
+          Plateforme IA pour les professionnels africains
         </Text>
       </View>
 
@@ -55,8 +54,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 20,
         }}
       >
-        {t("landing.heroTitle")}{"\n"}
-        <Text style={{ color: GOLD }}>{t("landing.heroTitleAccent")}</Text>
+        {"L'intelligence "}<Text style={{ color: GOLD }}>{"juridique & fiscale"}</Text>{"\n"}à portée de main
       </Text>
 
       {/* Subtitle */}
@@ -64,7 +62,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         style={{
           fontSize: isMobile ? 15 : 19,
           color: "#6b7280",
-          maxWidth: 600,
+          maxWidth: 640,
           textAlign: "center",
           lineHeight: isMobile ? 24 : 31,
           fontFamily: fonts.light,
@@ -72,7 +70,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 44,
         }}
       >
-        {t("landing.heroSubtitle")}
+        NORMX AI centralise le droit, la fiscalité, la comptabilité et la paie dans une plateforme unique propulsée par l'intelligence artificielle.
       </Text>
 
       {/* Stats */}
@@ -123,7 +121,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
       {/* CTA buttons */}
       <View style={{ flexDirection: isMobile ? "column" : "row", gap: 14, alignItems: "center" }}>
         <TouchableOpacity
-          onPress={() => router.push("/(auth)/register")}
+          onPress={() => router.push("/cgi242")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 38,
@@ -132,12 +130,12 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           }}
         >
           <Text style={{ color: "#fff", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
-            {t("landing.heroCtaPrimary")}
+            Découvrir NORMX Tax →
           </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => router.push("/(auth)")}
+          onPress={() => router.push("/(auth)/register")}
           style={{
             paddingVertical: 13,
             paddingHorizontal: 38,
@@ -147,7 +145,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           }}
         >
           <Text style={{ color: "#1A3A5C", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
-            {t("landing.login")}
+            Essai gratuit
           </Text>
         </TouchableOpacity>
       </View>

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { ScrollView, View, Platform } from "react-native";
 import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
+import LandingProducts from "./LandingProducts";
 import LandingFeatures from "./LandingFeatures";
 import LandingCountries from "./LandingCountries";
 import LandingPricing from "./LandingPricing";
@@ -44,6 +45,9 @@ export default function LandingPage() {
     <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#ffffff" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
       <LandingHero isMobile={isMobile} loaded={loaded} />
+      <View ref={(r) => { sectionRefs.current.produits = r; }}>
+        <LandingProducts isMobile={isMobile} />
+      </View>
       <View ref={(r) => { sectionRefs.current.features = r; }}>
         <LandingFeatures isMobile={isMobile} loaded={loaded} />
       </View>

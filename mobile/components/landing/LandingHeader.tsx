@@ -61,7 +61,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           </Text>
         </View>
         <Text style={{ fontSize: 22, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C" }}>
-          NORMX <Text style={{ color: GOLD }}>Tax</Text>
+          NORMX <Text style={{ color: GOLD }}>AI</Text>
         </Text>
 
         {/* Dropdown Codes */}
@@ -153,6 +153,18 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
       {/* Navigation centrale */}
       {!isMobile && (
         <View style={{ flexDirection: "row", gap: 32, alignItems: "center" }}>
+          <TouchableOpacity onPress={() => onScrollTo?.("produits")}>
+            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+              Produits
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={() => onScrollTo?.("features")}>
+            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+              Fonctionnalités
+            </Text>
+          </TouchableOpacity>
+
           <TouchableOpacity onPress={() => onScrollTo?.("tarifs")}>
             <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Tarifs

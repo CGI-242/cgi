@@ -103,7 +103,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
               }}
             >
               NORMX{" "}
-              <Text style={{ color: GOLD }}>Tax</Text>
+              <Text style={{ color: GOLD }}>AI</Text>
             </Text>
           </View>
           <Text
