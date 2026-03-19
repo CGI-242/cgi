@@ -3221,7 +3221,12 @@
     "keywords": [
       "terres coutumières",
       "impôt forfaitaire",
-      "50 000 F"
+      "50 000 FCFA",
+      "100 000 FCFA",
+      "150 000 FCFA",
+      "200 000 FCFA",
+      "250 000 FCFA",
+      "tranches hectares"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3239,7 +3244,9 @@
       "500 m²",
       "m² supplémentaire",
       "zone agricole",
-      "hectare"
+      "hectare",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3299,7 +3306,12 @@
       "propriétés non bâties",
       "domaine privé État",
       "loyer annuel",
-      "décret 2005-552"
+      "décret 2005-552",
+      "Brazzaville",
+      "Pointe-Noire",
+      "domaine public",
+      "collectivités locales",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3315,7 +3327,10 @@
       "domaine privé État",
       "loyer annuel",
       "collectivités locales",
-      "établissements publics"
+      "établissements publics",
+      "décret 2005-552",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3330,7 +3345,11 @@
       "baux emphytéotiques",
       "propriétés non bâties",
       "domaine privé État",
-      "article 32 décret 2005-552"
+      "article 32 décret 2005-552",
+      "Brazzaville",
+      "Pointe-Noire",
+      "collectivités locales",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3345,7 +3364,11 @@
       "baux emphytéotiques",
       "propriétés bâties",
       "domaine privé État",
-      "article 32 décret 2005-552"
+      "article 32 décret 2005-552",
+      "Brazzaville",
+      "Pointe-Noire",
+      "collectivités locales",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3360,7 +3383,9 @@
       "autorisations expresses",
       "propriétés non bâties",
       "domaine public État",
-      "décret 2021-671"
+      "décret 2021-671",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3375,7 +3400,9 @@
       "autorisations expresses",
       "propriétés bâties",
       "domaine public État",
-      "décret 2021-671"
+      "décret 2021-671",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3390,7 +3417,12 @@
       "garantie",
       "autorisations expresses",
       "deux ans redevance",
-      "décret 2021-671"
+      "décret 2021-671",
+      "Brazzaville",
+      "Pointe-Noire",
+      "domaine public",
+      "collectivités locales",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3405,7 +3437,9 @@
       "autorisations provisoires",
       "propriétés non bâties",
       "domaine public État",
-      "article 34 décret 2021-671"
+      "article 34 décret 2021-671",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3419,7 +3453,8 @@
       "redevance mensuelle",
       "autorisations provisoires",
       "propriétés bâties",
-      "domaine public État"
+      "domaine public État",
+      "décret 2021-671"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3434,7 +3469,9 @@
       "rôles trimestriels",
       "administration fiscale",
       "trésor public",
-      "contrôleur général État"
+      "contrôleur général État",
+      "domaine public",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3449,7 +3486,9 @@
       "restes à recouvrer",
       "trésor public",
       "28 février",
-      "mise en recouvrement"
+      "mise en recouvrement",
+      "domaine public",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3464,7 +3503,9 @@
       "six mois",
       "déguerpissement automatique",
       "recouvrement forcé",
-      "domaine public privé État"
+      "domaine public privé État",
+      "collectivités locales",
+      "établissements publics"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -3480,7 +3521,9 @@
       "prix m²",
       "localisation",
       "superficie",
-      "zones"
+      "zones",
+      "Brazzaville",
+      "Pointe-Noire"
     ],
     "source": "droits-fonciers-exceptionnels.json"
   },
@@ -4536,10 +4579,9 @@
     "tome": "TFNC4-IGF",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
-      "IGF",
-      "impôt global forfaitaire",
-      "personnes physiques",
-      "régime forfaitaire"
+      "régime fiscal entreprenant",
+      "déclaration spontanée",
+      "système simplifié"
     ],
     "source": "impot-global-forfaitaire.json"
   },
@@ -4566,11 +4608,9 @@
     "tome": "TFNC4-IGF",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
-      "effet libératoire",
-      "IRPP BICA BNC BA",
-      "TVA",
-      "centimes additionnels",
-      "TUS"
+      "non éligibles",
+      "personnes morales",
+      "régime fiscal existant"
     ],
     "source": "impot-global-forfaitaire.json"
   },
@@ -4625,14 +4665,8 @@
     "tome": "TFNC4-IGF",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
-      "base calcul IGF",
-      "chiffre affaires HT",
-      "marge globale",
-      "prix réglementé",
-      "OHADA",
-      "système minimal trésorerie",
-      "taux 5%",
-      "taux 8%"
+      "début activité",
+      "numéro déclaration"
     ],
     "source": "impot-global-forfaitaire.json"
   },
@@ -4643,12 +4677,8 @@
     "tome": "TFNC4-IGF",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
-      "pluralité établissements",
-      "imposition séparée",
-      "boutiques",
-      "magasins",
-      "ateliers",
-      "patente"
+      "unicité immatriculation",
+      "registre unique"
     ],
     "source": "impot-global-forfaitaire.json"
   },
@@ -4659,10 +4689,9 @@
     "tome": "TFNC4-IGF",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
-      "sanctions IGF",
-      "défaut paiement",
-      "obligations légales",
-      "patente"
+      "régime imposition",
+      "très petites entreprises",
+      "TPE"
     ],
     "source": "impot-global-forfaitaire.json"
   },
@@ -5395,7 +5424,7 @@
   {
     "numero": "1",
     "titre": "Institution de la redevance",
-    "contenu": "La redevance audiovisuelle et d'électrification rurale a remplacé la redevance audiovisuelle instituée par la loi de finances pour 2002.\nArt.1.- Il est institué une redevance audiovisuelle et d'électrification rurale perçue au profit des organes publics de presse radiotélévisée et de l'extension du réseau de l'électricité en milieu rural.",
+    "contenu": "[NB - Loi de finances pour 2025]\nArt.1.- Il est institué une redevance audiovisuelle et d'électrification rurale perçue au profit des organes publics de presse radiotélévisée et de l'extension du réseau de l'électricité en milieu rural.",
     "tome": "TFNC4-AUDIO",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -5637,7 +5666,7 @@
   {
     "numero": "1",
     "titre": "Institution de la retenue à la source",
-    "contenu": "Art.1.- Il est institué en république du Congo une retenue à la source sur tous les paiements effectués par le Trésor Public concernant les livraisons de biens et matériels, les prestations de services et travaux exécutés auprès de l'État, des collectivités locales et des Établissements publics.",
+    "contenu": "[NB - Loi de finances pour 2011]\nArt.1.- Il est institué en république du Congo une retenue à la source sur tous les paiements effectués par le Trésor Public concernant les livraisons de biens et matériels, les prestations de services et travaux exécutés auprès de l'État, des collectivités locales et des Établissements publics.",
     "tome": "TFNC4-TRESOR",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -5655,7 +5684,7 @@
   {
     "numero": "2",
     "titre": "Paiements exclus de la retenue à la source",
-    "contenu": "Art.2.- Sont exclus de la retenue à la source :\n- les paiements au profit des personnes morales assujetties à l'impôt sur les sociétés ;\n- les paiements au profit des compagnies pétrolières pour leurs livraisons de produits pétroliers ;\n- les paiements effectués directement à l'étranger pour l'acquisition des biens et matériels ainsi que les prestations de service.",
+    "contenu": "Art.2.- Sont exclus de la retenue à la source :\n- les paiements au profit des personnes morales assujetties à l'impôt sur les sociétés ;\n- les paiements au profit des compagnies pétrolières pour leurs livraisons de produits pétroliers ;\n- les paiements effectués directement à l'étranger pour l'acquisition de biens et matériels ainsi que les prestations de service.",
     "tome": "TFNC4-TRESOR",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -5739,7 +5768,7 @@
   {
     "numero": "1",
     "titre": "Institution de la taxe",
-    "contenu": "Art.1.- Il est institué en République du Congo une taxe sur les abonnements et réabonnements aux chaînes télévisuelles dénommée « taxe d'abonnement et réabonnement télévisuelle ».",
+    "contenu": "[NB - Loi de finances pour 2019]\nArt.1.- Il est institué en République du Congo une taxe sur les abonnements et réabonnements aux chaînes télévisuelles dénommée « taxe d'abonnement et réabonnement télévisuelle ».",
     "tome": "TFNC4-TV",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -5810,7 +5839,7 @@
   {
     "numero": "1",
     "titre": "Institution de la taxe",
-    "contenu": "Art.1.- Il est institué en République du Congo une taxe sur les billets d'avion en vols internationaux destinée à la contribution de solidarité pour le financement du développement notamment en matière de santé.",
+    "contenu": "[NB - Loi de finances pour 2007]\nArt.1.- Il est institué en République du Congo une taxe sur les billets d'avion en vols internationaux destinée à la contribution de solidarité pour le financement du développement notamment en matière de santé.",
     "tome": "TFNC4-AVION",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6016,7 +6045,7 @@
   {
     "numero": "1",
     "titre": "Institution de la taxe",
-    "contenu": "Art.1.- Il est institué une taxe spéciale sur les jeux de hasard et d'argent exclusive de la TVA.",
+    "contenu": "[NB - Loi de finances pour 2003, modifiée]\nArt.1.- Il est institué une taxe spéciale sur les jeux de hasard et d'argent exclusive de la TVA.",
     "tome": "TFNC4-JEU",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6029,7 +6058,7 @@
   {
     "numero": "2",
     "titre": "Champ d'application",
-    "contenu": "Art.2.- (L.F.2022, L.F.R.2022) Sont soumis à la taxe spéciale sur les jeux de hasard et d'argent, les activités d'organisation de courses hippiques, les casinos organisant les jeux de hasard et d'argent ainsi que les activités des paris sportifs.",
+    "contenu": "Art.2.- Sont soumis à la taxe spéciale sur les jeux de hasard et d'argent, les activités d'organisation de courses hippiques, les casinos organisant les jeux de hasard et d'argent ainsi que les activités des paris sportifs.",
     "tome": "TFNC4-JEU",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6124,7 +6153,7 @@
   {
     "numero": "7",
     "titre": "Exigibilité",
-    "contenu": "Art.7.- (L.F.2022, L.F.R.2022) La taxe est exigible, comme en matière de TVA, entre le 10 et le 20 du mois suivant celui au cours duquel les sommes engagées par les parieurs ou joueurs ont été encaissées.",
+    "contenu": "Art.7.- La taxe est exigible, comme en matière de TVA, entre le 10 et le 20 du mois suivant celui au cours duquel les sommes engagées par les parieurs ou joueurs ont été encaissées.",
     "tome": "TFNC4-JEU",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6137,7 +6166,7 @@
   {
     "numero": "8",
     "titre": "Sanctions",
-    "contenu": "Art.8.- Les sanctions applicables pour défaut de déclarations, retard dans le dépôt des déclarations, retard dans le versement ou non-paiement de la taxe sont les mêmes qu'en matière de TVA.",
+    "contenu": "Art.8.- Les sanctions applicables pour défaut de déclaration, retard dans le dépôt des déclarations, retard dans le versement ou non-paiement de la taxe sont les mêmes qu'en matière de TVA.",
     "tome": "TFNC4-JEU",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6192,7 +6221,7 @@
   {
     "numero": "7",
     "titre": "Champ d'application – Institution de la taxe",
-    "contenu": "A. Champ d'application\nArt.7.- Il est créé, en République du Congo, une taxe annuelle dénommée taxe d'occupation des locaux.",
+    "contenu": "[NB - Loi de finances pour 2014, modifiée]\nA. Champ d'application\nArt.7.- Il est créé, en République du Congo, une taxe annuelle dénommée taxe d'occupation des locaux.",
     "tome": "TFNC4-TOL",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6314,7 +6343,7 @@
   {
     "numero": "14",
     "titre": "Recouvrement de la taxe",
-    "contenu": "F. Recouvrement de la taxe\nArt.14.- La taxe d'occupation des locaux est recouvrée par déclaration et paiement spontanés des contribuables auprès du comptable public de leur résidence fiscale sans avertissement préalable.\nPour la taxe d'occupation des locaux à usage d'habitation, la taxe est exigible au plus tard le 20 avril de chaque année.\nToutefois, pour les personnes physiques salariées des secteurs public et privé, la taxe d'occupation des locaux à usage d'habitation est perçue à titre d'acompte par voie de retenue à la source auprès de l'employeur au taux de 1.000 FCFA par mois.\nÀ l'échéance du 20 avril, les personnes physiques salariées auront la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.\nToute retenue erronée dûment constatée par les services de l'administration fiscale au vu d'un dossier fourni par le contribuable donne droit à un crédit d'impôt à imputer sur les retenues futures.\nPour la taxe d'occupation des locaux à usage professionnel, la taxe est exigible au plus tard le 20 février de chaque année.\nPour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée en occupation du local.",
+    "contenu": "F. Recouvrement de la taxe\nArt.14.- La taxe d'occupation des locaux est recouvrée par déclaration et paiement spontanés des contribuables auprès du comptable public de leur résidence fiscale sans avertissement préalable.\nPour la taxe d'occupation des locaux à usage d'habitation, la taxe est exigible au plus tard le 20 avril de chaque année.\nToutefois, pour les personnes physiques salariées des secteurs public et privé, la taxe d'occupation des locaux à usage d'habitation est perçue à titre d'acompte par voie de retenue à la source auprès de l'employeur au taux de 1.000 FCFA par mois.\nÀ l'échéance du 20 avril, les personnes physiques salariées en font la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.\nToute retenue erronée dûment constatée par les services de l'administration fiscale au vu d'un dossier fourni par le contribuable donne droit à un crédit d'impôt à imputer sur les retenues futures.\nPour la taxe d'occupation des locaux à usage professionnel, la taxe est exigible au plus tard le 20 février de chaque année.\nPour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée ou d'occupation du local.",
     "tome": "TFNC4-TOL",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6372,7 +6401,7 @@
   {
     "numero": "10",
     "titre": "Institution de la taxe",
-    "contenu": "Art.10.-\n1) Il est institué en république du Congo un impôt dénommé taxe sur le trafic des communications électroniques.\n2) La taxe sur le trafic des communications électroniques est due par les consommateurs et collectée au profit du budget de l'État par les opérateurs des télécommunications (opérateurs de téléphonie et fournisseurs d'accès internet).\nCet impôt est déclaré mensuellement et reversé spontanément par les opérateurs de télécommunication conformément au Code général des impôts.",
+    "contenu": "[NB - Loi de finances pour 2015, modifiée]\nArt.10.-\n1) Il est institué en république du Congo un impôt dénommé taxe sur le trafic des communications électroniques.\n2) La taxe sur le trafic des communications électroniques est due par les consommateurs et collectée au profit du budget de l'État par les opérateurs des télécommunications (opérateurs de téléphonie et fournisseurs d'accès internet).\nCet impôt est déclaré mensuellement et reversé spontanément par les opérateurs de télécommunication conformément au Code général des impôts.",
     "tome": "TFNC4-TELECOM",
     "chapitre": "4. Impôts, taxes et retenues divers",
     "keywords": [
@@ -6433,275 +6462,6 @@
       "contentieux"
     ],
     "source": "taxe-trafic-communications-electroniques.json"
-  },
-  {
-    "numero": "1",
-    "titre": "Obligations documentaires",
-    "contenu": "Art.11 ter-1.- Tout redevable de la taxe est tenu :\n• de délivrer une facture ou tout document en tenant lieu qui mentionne expressément le montant de la taxe sur les transferts de fonds ;\n• d'exiger de ses fournisseurs une facture ou tout document en tenant lieu.\nLa facture ou le document visé à l'alinéa précédent doit comporter les mentions obligatoires prévues par l'article 29 de la loi relative à la TVA.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "obligations documentaires",
-      "facture",
-      "mentions obligatoires",
-      "article 29 TVA"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "2",
-    "titre": "Affectation du produit",
-    "contenu": "Art.2.- (L.F.2025) La taxe sur les transferts de fonds est perçue au profit du budget de l'État, de l'Agence de régulation des transferts de fonds, de l'Agence congolaise des systèmes d'information, du fonds pour l'opérationnalisation de la fonction bancaire du Trésor Public et de la plateforme de certification des transferts de fonds.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "affectation",
-      "budget État",
-      "Agence régulation",
-      "ACSI",
-      "fonction bancaire Trésor",
-      "plateforme certification"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "3",
-    "titre": "Champ d'application",
-    "contenu": "Chapitre 2 - Champ d'application\nArt.3.- La taxe sur les transferts des fonds frappe :\n• les opérations de transferts de fonds à l'étranger et de vente de devises à l'intérieur du pays, quel que soit l'opérateur qui procède auxdites opérations ;\n• les recettes d'exportation non rapatriées au Congo dans un délai de 30 jours, à compter de la date de paiement des factures, y compris les recettes d'exportations dont le non rapatriement serait justifié par une dispense conventionnelle, sans préjudice des sanctions prévues aux articles 105 et 106 de la Règlementation des changes harmonisées des États membres de la CEMAC ;\n• les paiements électroniques effectués par cartes de crédit au profit d'une personne résidant dans un pays hors zone CEMAC, sur des comptes bancaires ouverts au Congo ;\n• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger lorsque les prestations de services ou la livraison de biens y relatifs ont été rendues ou livrées au Congo ;\n• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger sur toute sorte de transaction dont la valeur est supérieure à 5.000.000 FCFA.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "champ application",
-      "transferts étranger",
-      "vente devises",
-      "recettes exportation",
-      "30 jours",
-      "paiements électroniques",
-      "cartes crédit",
-      "5 000 000 FCFA"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "4",
-    "titre": "Exonérations",
-    "contenu": "Art.4.- Sont exonérés de la taxe sur le transfert de fonds :\n• les transferts de fonds réalisés par les missions diplomatiques et les organisations internationales ;\n• les transferts de fonds relatifs aux traitements des diplomates congolais en poste à l'étranger ;\n• le transfert des bourses des étudiants et stagiaires congolais à l'étranger ;\n• les remboursements d'emprunts contractés par des personnes morales en vue de la réalisation d'un programme d'investissement ayant fait l'objet d'une convention d'établissement avec l'État ;\n• les transferts de fonds à destination des pays membres de la CEMAC ;\n• les remboursements d'emprunts contractés par l'État ;\n• les transferts de fonds ordonnés par le trésor public.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "exonérations",
-      "missions diplomatiques",
-      "organisations internationales",
-      "diplomates congolais",
-      "bourses étudiants",
-      "emprunts investissement",
-      "CEMAC",
-      "Trésor public"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "5",
-    "titre": "Limitation du droit à déduction",
-    "contenu": "Art.11 bis-5.- Le droit à déduction est limité à la taxe correspondant à la contre-valeur des devises achetées.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "limitation déduction",
-      "contre-valeur devises achetées"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "6",
-    "titre": "Taux de la taxe",
-    "contenu": "Art.6.- Le taux de la taxe est de 1,5 %.\nCe taux s'applique également aux opérations de transfert de fonds réalisées par les sociétés pétrolières.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "taux taxe",
-      "1,5%",
-      "sociétés pétrolières"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "7",
-    "titre": "Fait générateur",
-    "contenu": "Chapitre 4 - Fait générateur et exigibilité\nArt.7.- Le fait générateur de la taxe est constitué par :\n1° l'ordre de transfert matérialisé par le dépôt des sommes à transférer et le paiement de la commission de transfert à l'établissement chargé d'effectuer l'opération ;\n2° la vente de devises ou la mise à disposition de devises à soi-même ou aux tiers ;\n3° le non rapatriement des recettes d'exportation après le délai de 30 jours à compter de la date du paiement de la facture ;\n4° les sommes débitées en devises suite à des paiements effectués par carte bancaire ou tout autre moyen électronique à partir d'un compte bancaire ouvert au Congo.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "fait générateur",
-      "ordre transfert",
-      "vente devises",
-      "non rapatriement",
-      "carte bancaire",
-      "paiement électronique"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "8",
-    "titre": "Recouvrement de la taxe",
-    "contenu": "Art.8.- Les entreprises qui effectuent les opérations visées à l'article 3 ci-dessus sont chargées de recouvrer la taxe sur les transferts de fonds.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "recouvrement",
-      "entreprises",
-      "opérations transfert"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "9",
-    "titre": "Reversement",
-    "contenu": "Art.9.- Les prélèvements de la taxe sur les transferts de fonds ou la livraison des devises à soi-même effectués par les banques, les bureaux de change et les autres établissements financiers sont reversés tous les mois, au bureau des impôts dont dépend le siège de la direction ou le principal établissement de l'entreprise, dans le délai fixé par l'article 461 bis du CGI, tome 1.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "reversement mensuel",
-      "banques",
-      "bureaux change",
-      "établissements financiers",
-      "article 461 bis CGI"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "10",
-    "titre": "Sanctions pour non-reversement",
-    "contenu": "Art.10.- Le non-reversement des sommes encaissées au titre de la taxe sur les transferts de fonds dans les délais définis à l'article 9 ci-dessus est sanctionné par un intérêt de retard égal à 10 % par mois ou fraction de mois des sommes non payées, sans préjudice des dispositions prévues à l'article 13 ci-dessous.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "sanctions",
-      "non-reversement",
-      "intérêt retard 10%",
-      "par mois"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "11",
-    "titre": "Responsabilité du redevable",
-    "contenu": "Art.11.- Le non-prélèvement de la taxe sur les transferts de fonds sur une opération déterminée met à la charge du redevable légal qui n'y a pas procédé le paiement de la taxe non recouvrée.\nLe paiement est alors assorti d'une pénalité égale à 50 % de la taxe non prélevée.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "responsabilité redevable",
-      "non-prélèvement",
-      "pénalité 50%"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "11bis",
-    "titre": "Déduction de la taxe",
-    "contenu": "Chapitre 4 bis - Déduction\nArt.11 bis.- La taxe sur les transferts de fonds ayant frappé en amont :\n• le prix d'achat des devises effectué par les banques et les bureaux de change agréés ;\n• le montant des ordres de virement de fonds à destination de l'étranger ou au profit des non-résidents, exécutés par les banques,\nest déductible pour les assujettis agréés et soumis au régime du réel.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "déduction taxe",
-      "achat devises",
-      "banques",
-      "bureaux change agréés",
-      "régime réel"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "11ter",
-    "titre": "Obligations des redevables",
-    "contenu": "Chapitre 4 ter - Obligations des redevables\nArt.11 ter.- Tout redevable de la taxe est tenu de souscrire spontanément une déclaration selon le modèle prescrit par l'administration fiscale.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "obligations redevables",
-      "déclaration spontanée",
-      "modèle administration fiscale"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "12",
-    "titre": "Contrôle",
-    "contenu": "Chapitre 5 - Dispositions diverses\nArt.12.- La direction générale des impôts et des domaines et l'agence de régulation des transferts de fonds sont chargées chacune en ce qui la concerne du contrôle de la taxe sur les transferts de fonds.\nLes banques et les établissements financiers chargés de collecter l'impôt sont tenus de mettre à la disposition de la direction générale des impôts et des domaines et de l'agence de régulation des transferts de fonds, tous les documents comptables et autres permettant de contrôler l'assiette, la liquidation et le versement de la taxe.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "contrôle",
-      "DGID",
-      "ARTF",
-      "documents comptables",
-      "assiette",
-      "liquidation"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "12bis",
-    "titre": "Clé de répartition de la taxe",
-    "contenu": "Art.12 bis.- (L.F.2024, L.F.2025) La clé de répartition de la taxe sur les transferts de fonds est fixée ainsi qu'il suit :\n• État : 40 %\n• ARTF : 20 %\n• ACSI : 10 %\n• Fonction bancaire du Trésor : 15 %\n• Plate-forme de certification : 15 %\nLe pourcentage de 15 % affecté à la plate-forme de certification des transferts de fonds est destiné à couvrir les dépenses liées à l'implémentation de la plateforme et à la rémunération du prestataire.\nDans les 40 % de la part de l'État, 20 % sont affectés au ramassage et au traitement des ordures ménagères.\nLes 10 % de l'ACSI sont destinés à la mise en œuvre de la digitalisation des projets ci-après :\n• la plateforme des paiements dématérialisés des recettes de services et du portefeuille au profit du trésor public ;\n• la plateforme des paiements dématérialisés des recettes affectées aux collectivités locales ;\n• la plateforme des paiements dématérialisés des différentes taxes de la mairie ;\n• la plateforme d'uniformisation de la plaque d'immatriculation ou de la vignette électronique dans le secteur des transports terrestres ;\n• le système intégré des frais d'état civil.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "répartition taxe",
-      "État 40%",
-      "ARTF 20%",
-      "ACSI 10%",
-      "Trésor 15%",
-      "plateforme certification 15%",
-      "ordures ménagères",
-      "digitalisation"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "12ter",
-    "titre": "Plateforme de certification",
-    "contenu": "Art.12 ter.- (L.F.2024, L.F.2025) Il est mis en place une plateforme de certification des transferts de fonds en République du Congo.\nL'Agence de régulation des transferts de fonds, en sa qualité d'autorité de régulation de transferts de fonds est chargée de la mise en place de ce dispositif.\nTout agent exerçant dans le domaine de transfert de fonds est tenu de s'interconnecter à la plateforme opérée par l'Agence de régulation de transfert de fonds.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "plateforme certification",
-      "ARTF",
-      "interconnexion obligatoire"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "13",
-    "titre": "Obligations des agents économiques",
-    "contenu": "Art.13.- (L.F.2025) Tout agent économique exerçant l'activité de transferts de fonds est tenu de :\n• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transferts de fonds ;\n• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'Agence de régulation des transferts de fonds.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "obligations agents économiques",
-      "enregistrement ARTF",
-      "registre national",
-      "déclaration 10 du mois"
-    ],
-    "source": "taxe-transferts-fonds.json"
-  },
-  {
-    "numero": "13bis",
-    "titre": "Sanctions",
-    "contenu": "Art.13 bis.- (L.F.2025)\n1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;\n• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;\n• une amende de 40.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50.000.000 FCFA pour tout agent qui aura contrevenu ou aura tenté de contrevenir soit en ne respectant pas les procédures prescrites, ou les formalités exigées lors de l'enregistrement ;\n• tout dirigeant de nationalité congolaise ou étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• fermeture de la structure lieu du délit ainsi que poursuites pénales ;\n• saisie du montant objet de l'infraction.\n2) Les agents économiques enregistrés, opérateur formel contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• amende de 20.000.000 FCFA pour transmission d'informations inexactes lors de l'enregistrement ;\n• amende de 50 % des montants en cause assortie d'un avertissement pour non-déclaration ou informations frauduleuses ;\n• amende de 10.000.000 FCFA pour retard dans la transmission des déclarations ;\n• interdiction définitive d'exercer pour les dirigeants contrevenants ;\n• amende de 70.000.000 FCFA pour faux et usage de faux.\nUn arrêté du Ministre en charge des finances fixe la répartition des amendes.",
-    "tome": "TFNC4-TRANSF",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "sanctions",
-      "opérateurs clandestins",
-      "amende 20 000 000 F",
-      "amende 50 000 000 F",
-      "amende 40 000 000 F",
-      "interdiction exercer",
-      "fermeture",
-      "saisie"
-    ],
-    "source": "taxe-transferts-fonds.json"
   },
   {
     "numero": "1",
@@ -13652,8 +13412,356 @@
       "montant impôt",
       "1 000 000 FCFA",
       "par pylône",
-      "administration fiscale"
+      "administration fiscale",
+      "Brazzaville",
+      "Pointe-Noire",
+      "Dolisie Madingou Nkayi Oyo Owando Ouesso",
+      "500 000 FCFA zones rurales"
     ],
     "source": "Impôt forfaitaire sur les pylônes des sociétés de télécommunication"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la taxe",
+    "contenu": "[NB - Loi de finances pour 2004, modifiée]\nChapitre 1 - Généralités\nArt.1.- Il est institué une taxation sur les opérations d'envoi d'argent à l'étranger appelée taxe sur les transferts de fonds.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "taxe transferts fonds",
+      "envoi argent étranger",
+      "TTF"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "2",
+    "titre": "Affectation du produit",
+    "contenu": "Art.2.- (L.F.2025, L.F.2026) La taxe sur les transferts de fonds est perçue au profit du budget de l'État, de l'Agence de régulation des transferts de fonds, de l'Agence congolaise des systèmes d'information et de l'Agence nationale de sécurité des systèmes d'information.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "affectation",
+      "budget État",
+      "Agence régulation",
+      "ACSI",
+      "ANSSI"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "3",
+    "titre": "Champ d'application",
+    "contenu": "Chapitre 2 - Champ d'application\nArt.3.- La taxe sur les transferts des fonds frappe :\n• les opérations de transferts de fonds à l'étranger et de vente de devises à l'intérieur du pays, quel que soit l'opérateur qui procède auxdites opérations ;\n• les recettes d'exportation non rapatriées au Congo dans un délai de 30 jours, à compter de la date de paiement des factures, y compris les recettes d'exportations dont le non rapatriement serait justifié par une dispense conventionnelle, sans préjudice des sanctions prévues par la réglementation des changes harmonisées des États membres de la CEMAC ;\n• les paiements électroniques effectués par cartes de crédit au profit d'une personne résidant dans un pays hors zone CEMAC, sur des comptes bancaires ouverts au Congo ;\n• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger lorsque les prestations de services ou la livraison de biens y relatifs ont été rendues ou livrées au Congo ;\n• les paiements faits par des résidents assujettis sur des comptes bancaires en devise ouverts à l'étranger sur toute sorte de transaction dont la valeur est supérieure à 5.000.000 FCFA.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "champ application",
+      "transferts étranger",
+      "vente devises",
+      "recettes exportation",
+      "30 jours",
+      "paiements électroniques",
+      "cartes crédit",
+      "5 000 000 FCFA"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "4",
+    "titre": "Exonérations",
+    "contenu": "Art.4.- Sont exonérés de la taxe sur le transfert de fonds :\n• les transferts de fonds réalisés par les missions diplomatiques et les organisations internationales ;\n• les transferts de fonds relatifs aux traitements des diplomates congolais en poste à l'étranger ;\n• le transfert des bourses des étudiants et stagiaires congolais à l'étranger ;\n• les remboursements d'emprunts contractés par des personnes morales en vue de la réalisation d'un programme d'investissement ayant fait l'objet d'une convention d'établissement avec l'État ;\n• les transferts de fonds à destination des pays membres de la CEMAC ;\n• les remboursements d'emprunts contractés par l'État ;\n• les transferts de fonds ordonnés par le trésor public.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "exonérations",
+      "missions diplomatiques",
+      "organisations internationales",
+      "diplomates congolais",
+      "bourses étudiants",
+      "emprunts investissement",
+      "CEMAC",
+      "Trésor public"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "5",
+    "titre": "Base d'imposition",
+    "contenu": "Chapitre 3 - Base d'imposition et taux\nArt.5.- La taxe est calculée sur le montant brut du transfert.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "base imposition",
+      "montant brut transfert"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "6",
+    "titre": "Taux de la taxe",
+    "contenu": "Art.6.- Le taux de la taxe est de 1,5 %.\nCe taux s'applique également aux opérations de transfert de fonds réalisées par les sociétés pétrolières.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "taux taxe",
+      "1,5%",
+      "sociétés pétrolières"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "7",
+    "titre": "Fait générateur",
+    "contenu": "Chapitre 4 - Fait générateur et exigibilité\nArt.7.- Le fait générateur de la taxe est constitué par :\n1° l'ordre de transfert matérialisé par le dépôt des sommes à transférer et le paiement de la commission de transfert à l'établissement chargé d'effectuer l'opération ;\n2° la vente de devises ou la mise à disposition de devises à soi-même ou aux tiers ;\n3° le non rapatriement des recettes d'exportation après le délai de 30 jours à compter de la date du paiement de la facture ;\n4° les sommes débitées en devises suite à des paiements effectués par carte bancaire ou tout autre moyen électronique à partir d'un compte bancaire ouvert au Congo.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "fait générateur",
+      "ordre transfert",
+      "vente devises",
+      "non rapatriement",
+      "carte bancaire",
+      "paiement électronique"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "8",
+    "titre": "Recouvrement de la taxe",
+    "contenu": "Art.8.- Les entreprises qui effectuent les opérations visées à l'article 3 ci-dessus sont chargées de recouvrer la taxe sur les transferts de fonds.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "recouvrement",
+      "entreprises",
+      "opérations transfert"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "9",
+    "titre": "Reversement",
+    "contenu": "Art.9.- Les prélèvements de la taxe sur les transferts de fonds ou la livraison des devises à soi-même effectués par les banques, les bureaux de change et les autres établissements financiers sont reversés tous les mois, au bureau des impôts dont dépend le siège de la direction ou le principal établissement de l'entreprise, dans le délai fixé par l'article 461 bis du CGI, tome 1.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "reversement mensuel",
+      "banques",
+      "bureaux change",
+      "établissements financiers",
+      "article 461 bis CGI"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "10",
+    "titre": "Sanctions pour non-reversement",
+    "contenu": "Art.10.- Le non-reversement des sommes encaissées au titre de la taxe sur les transferts de fonds dans les délais définis à l'article 9 ci-dessus est sanctionné par un intérêt de retard égal à 10 % par mois ou fraction de mois des sommes non payées, sans préjudice des dispositions prévues à l'article 13 ci-dessous.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "sanctions",
+      "non-reversement",
+      "intérêt retard 10%",
+      "par mois"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11",
+    "titre": "Responsabilité du redevable",
+    "contenu": "Art.11.- Le non-prélèvement de la taxe sur les transferts de fonds sur une opération déterminée met à la charge du redevable légal qui n'y a pas procédé le paiement de la taxe non recouvrée.\nLe paiement est alors assorti d'une pénalité égale à 50 % de la taxe non prélevée.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "responsabilité redevable",
+      "non-prélèvement",
+      "pénalité 50%"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis",
+    "titre": "Déduction de la taxe",
+    "contenu": "Chapitre 4 bis - Déduction\nArt.11 bis.- La taxe sur les transferts de fonds ayant frappé en amont :\n• le prix d'achat des devises effectué par les banques et les bureaux de change agréés,\n• le montant des ordres de virement de fonds à destination de l'étranger ou au profit des non-résidents, exécutés par les banques,\nest déductible pour les assujettis agréés et soumis au régime du réel.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "déduction taxe",
+      "achat devises",
+      "banques",
+      "bureaux change agréés",
+      "régime réel"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis-1",
+    "titre": "Modalités de déduction",
+    "contenu": "Art.11 bis-1.- La taxe ci-dessus citée, supportée au cours d'un mois, est déductible au titre du mois suivant.\nPour les importations de devises, le droit à déduction prend naissance lors de la mise à la consommation.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "modalités déduction",
+      "mois suivant",
+      "importation devises",
+      "mise à consommation"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis-2",
+    "titre": "Délai d'exercice du droit à déduction",
+    "contenu": "Art.11 bis-2.- Le droit à déduction est exercé jusqu'à la fin du premier exercice fiscal qui suit celui au cours duquel la taxe est devenue exigible. Après ce délai, la taxe non déduite est acquise au Trésor Public.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "délai déduction",
+      "premier exercice fiscal",
+      "taxe acquise Trésor"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis-3",
+    "titre": "Conditions de déductibilité",
+    "contenu": "Art.11 bis-3.- Pour être déductible, la taxe doit :\n1) Figurer expressément sur un document délivré par la banque centrale ou une banque primaire assujettie à la taxe sur les transferts de fonds.\n2) Être appuyée par :\n• a) les factures d'achat de devises délivrées par les fournisseurs agréés ;\n• b) les ordres de virement de fonds au profit des fournisseurs de devises ;\n• c) les documents douaniers relatifs à l'importation de devises.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "conditions déductibilité",
+      "document banque centrale",
+      "factures achat devises",
+      "documents douaniers"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis-4",
+    "titre": "Exclusions du droit à déduction",
+    "contenu": "Art.11 bis-4.- N'ouvre pas droit à déduction, la taxe correspondant :\n• à la contre-valeur des devises livrées à soi-même ou aux tiers ;\n• au montant des transferts de fonds effectués pour ses propres besoins.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "exclusions déduction",
+      "livraison soi-même",
+      "propres besoins"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11bis-5",
+    "titre": "Limitation du droit à déduction",
+    "contenu": "Art.11 bis-5.- Le droit à déduction est limité à la taxe correspondant à la contre-valeur des devises achetées.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "limitation déduction",
+      "contre-valeur devises achetées"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11ter",
+    "titre": "Obligations des redevables",
+    "contenu": "Chapitre 4 ter - Obligations des redevables\nArt.11 ter.- Tout redevable de la taxe est tenu de souscrire spontanément une déclaration selon le modèle prescrit par l'administration fiscale.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "obligations redevables",
+      "déclaration spontanée",
+      "modèle administration fiscale"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "11ter-1",
+    "titre": "Obligations documentaires",
+    "contenu": "Art.11 ter-1.- Tout redevable de la taxe est tenu :\n• de délivrer une facture ou tout document en tenant lieu qui mentionne expressément le montant de la taxe sur les transferts de fonds ;\n• d'exiger de ses fournisseurs une facture ou tout document en tenant lieu.\nLa facture ou le document visé à l'alinéa précédent doit comporter les mentions obligatoires prévues par l'article 29 de la loi relative à la TVA.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "obligations documentaires",
+      "facture",
+      "mentions obligatoires",
+      "article 29 TVA"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "12",
+    "titre": "Contrôle",
+    "contenu": "Chapitre 5 - Dispositions diverses\nArt.12.- La direction générale des impôts et des domaines et l'agence de régulation des transferts de fonds sont chargées chacune en ce qui la concerne du contrôle de la taxe sur les transferts de fonds.\nLes banques et les établissements financiers chargés de collecter l'impôt sont tenus de mettre à la disposition de la direction générale des impôts et des domaines et de l'agence de régulation des transferts de fonds, tous les documents comptables et autres permettant de contrôler l'assiette, la liquidation et le versement de la taxe.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "contrôle",
+      "DGID",
+      "ARTF",
+      "documents comptables",
+      "assiette",
+      "liquidation"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "12bis",
+    "titre": "Clé de répartition de la taxe",
+    "contenu": "Art.12 bis.- (L.F.2024, L.F.2025, L.F.2026) La clé de répartition de la taxe sur les transferts de fonds est fixée ainsi qu'il suit :\n• État : 45 %\n• ARTF : 30 %\n• ACSI : 5 %\n• ANSSI : 20 %\nLa quote-part de 30 % affecté à l'agence de régulation des transferts de fonds finance également la finalisation de l'implémentation de la plateforme de certification des transferts de fonds ainsi que les opérations de maintenance corrective, préventive, adaptative et évolutive.\nLe pourcentage de 5 % affecté à l'agence congolaise des systèmes d'information est destiné à la finalisation des projets prévus par la loi n° 47-2024 du 30 décembre 2024 portant loi de finances pour l'année 2025.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "répartition taxe",
+      "État 45%",
+      "ARTF 30%",
+      "ACSI 5%",
+      "ANSSI 20%"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "12ter",
+    "titre": "Plateforme de certification",
+    "contenu": "Art.12 ter.- (L.F.2024, L.F.2025) Il est mis en place une plateforme de certification des transferts de fonds en République du Congo.\nL'Agence de régulation des transferts de fonds, en sa qualité d'autorité de régulation de transferts de fonds est chargée de la mise en place de ce dispositif.\nTout agent exerçant dans le domaine de transfert de fonds est tenu de s'interconnecter à la plateforme opérée par l'Agence de régulation de transfert de fonds.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "plateforme certification",
+      "ARTF",
+      "interconnexion obligatoire"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "13",
+    "titre": "Obligations des agents économiques",
+    "contenu": "Art.13.- (L.F.2025, L.F.2026) Tout agent économique exerçant l'activité de transferts de fonds est tenu de :\n• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transfert de fonds ;\n• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'agence de régulation des transferts de fonds ;\n• s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds au moyen des terminaux de paiement électronique (TPE) et autre équipement ou infrastructure de réseau dûment déployé ou agréé par l'agence de régulation des transferts de fonds.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "obligations agents économiques",
+      "enregistrement ARTF",
+      "registre national",
+      "déclaration 10 du mois"
+    ],
+    "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "13bis",
+    "titre": "Sanctions",
+    "contenu": "Art.13 bis.- (L.F.2025, L.F.2026)\n1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;\n• une amende de 20.000.000 FCFA pour tout agent économique qui refuse de s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds ;\n• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;\n• une amende de 40.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50.000.000 FCFA pour tout agent qui aura contrevenu ou aura tenté de contrevenir soit en ne respectant pas les procédures prescrites, ou les formalités exigées lors de l'enregistrement ;\n• tout dirigeant de nationalité congolaise exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• tout dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• outre les sanctions administratives et pécuniaires, les contrevenants s'exposent :\n- la fermeture de la structure lieu du délit ainsi que de poursuites pénales conformément à la réglementation en vigueur ;\n- la saisie du montant objet de l'infraction.\n2) Les agents économiques enregistrés, opérateur formel contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• amende de 20.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50 % des montants en cause assortie d'un avertissement pour tout agent exerçant l'activité de transfert de fonds qui ne déclare pas l'ensemble des transferts de fonds effectués mensuellement ou qui aura transmis des informations inexactes, erronées ou frauduleuses ;\n• une amende de 10.000.000 FCFA pour tout retard dans la transmission des déclarations de transferts de fonds ;\n• le dirigeant contrevenant de nationalité congolaise d'une structure exerçant l'activité de transfert de fonds sans autorisation va perdre le droit d'exercer l'activité de transfert de fonds de manière définitive ;\n• le dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• une amende de 70.000.000 FCFA pour tout recours à des actes susceptibles d'être qualifiés de faux et usage de faux, dans le cadre des obligations incombant aux agents économiques exerçant l'activité de transfert de fonds, au sens de la présente loi.\nUn arrêté du Ministre en charge des finances fixe la répartition des amendes.",
+    "tome": "TFNC4-TRANSF",
+    "chapitre": "4.14. Taxe sur les transferts de fonds",
+    "keywords": [
+      "sanctions",
+      "opérateurs clandestins",
+      "amende 20 000 000 F",
+      "amende 50 000 000 F",
+      "amende 40 000 000 F",
+      "interdiction exercer",
+      "fermeture",
+      "saisie"
+    ],
+    "source": "Taxe sur les transferts de fonds"
   }
 ]

@@ -16,7 +16,9 @@
     {
       "article": "Art. 7",
       "titre": "Champ d'application – Institution de la taxe",
+      "section": "A : Champ d'application",
       "texte": [
+        "[NB - Loi de finances pour 2014, modifiée]",
         "A. Champ d'application",
         "Art.7.- Il est créé, en République du Congo, une taxe annuelle dénommée taxe d'occupation des locaux."
       ],
@@ -30,6 +32,7 @@
     {
       "article": "Art. 8",
       "titre": "Affectation du produit de la taxe",
+      "section": "A : Champ d'application",
       "texte": [
         "Art.8.- La taxe d'occupation des locaux est perçue au profit des collectivités locales et son produit est réparti conformément aux dispositions de l'article 250 du CGI, tome 1."
       ],
@@ -44,6 +47,7 @@
     {
       "article": "Art. 9",
       "titre": "Locaux soumis à la taxe",
+      "section": "A : Champ d'application",
       "texte": [
         "Art.9.- Est soumise à la taxe d'occupation des locaux, toute construction en matériaux durables ou toute installation occupée par des personnes physiques ou morales à titre de domicile, de bureau, de commerce, d'industrie et tout autre local habité et ses dépendances.",
         "La taxe est due par local occupé, quelle que soit la durée d'occupation dans l'année d'imposition.",
@@ -63,6 +67,7 @@
     {
       "article": "Art. 9ter",
       "titre": "Taxation forfaitaire des sociétés pétrolières",
+      "section": "A : Champ d'application",
       "texte": [
         "Art.9 ter.- Le montant forfaitaire de la taxe d'occupation des locaux pour les sociétés pétrolières est fixé à 5.000.000 FCFA par permis."
       ],
@@ -77,6 +82,7 @@
     {
       "article": "Art. 10",
       "titre": "Personnes imposables",
+      "section": "B : Personnes imposables",
       "texte": [
         "B. Personnes imposables",
         "Art.10.- La taxe d'occupation des locaux est à la charge de l'occupant, propriétaire ou locataire, qu'il soit une personne physique ou une personne morale, qu'il s'agisse d'un établissement commercial, professionnel ou d'une installation industrielle."
@@ -94,6 +100,7 @@
     {
       "article": "Art. 11",
       "titre": "Exemptions",
+      "section": "C : Exemptions",
       "texte": [
         "C. Exemptions",
         "Art.11.- Sont exemptés de la taxe d'occupation des locaux :",
@@ -117,6 +124,7 @@
     {
       "article": "Art. 12",
       "titre": "Lieu d'imposition",
+      "section": "D : Lieu d'imposition",
       "texte": [
         "D. Lieu d'imposition",
         "Art.12.- La propriété est imposée dans le département ou la commune où elle est située."
@@ -132,6 +140,7 @@
     {
       "article": "Art. 13",
       "titre": "Taux de la taxe",
+      "section": "E : Taux de la taxe",
       "texte": [
         "E. Taux de la taxe",
         "Art.13.- Le montant de la taxe d'occupation des locaux est déterminé annuellement ainsi qu'il suit :",
@@ -160,15 +169,16 @@
     {
       "article": "Art. 14",
       "titre": "Recouvrement de la taxe",
+      "section": "F : Recouvrement de la taxe",
       "texte": [
         "F. Recouvrement de la taxe",
         "Art.14.- La taxe d'occupation des locaux est recouvrée par déclaration et paiement spontanés des contribuables auprès du comptable public de leur résidence fiscale sans avertissement préalable.",
         "Pour la taxe d'occupation des locaux à usage d'habitation, la taxe est exigible au plus tard le 20 avril de chaque année.",
         "Toutefois, pour les personnes physiques salariées des secteurs public et privé, la taxe d'occupation des locaux à usage d'habitation est perçue à titre d'acompte par voie de retenue à la source auprès de l'employeur au taux de 1.000 FCFA par mois.",
-        "À l'échéance du 20 avril, les personnes physiques salariées auront la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.",
+        "À l'échéance du 20 avril, les personnes physiques salariées en font la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.",
         "Toute retenue erronée dûment constatée par les services de l'administration fiscale au vu d'un dossier fourni par le contribuable donne droit à un crédit d'impôt à imputer sur les retenues futures.",
         "Pour la taxe d'occupation des locaux à usage professionnel, la taxe est exigible au plus tard le 20 février de chaque année.",
-        "Pour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée en occupation du local."
+        "Pour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée ou d'occupation du local."
       ],
       "mots_cles": [
         "recouvrement",
@@ -183,6 +193,7 @@
     {
       "article": "Art. 15",
       "titre": "Sanctions",
+      "section": "G : Sanctions",
       "texte": [
         "G. Sanctions",
         "Art.15.- Le défaut de déclaration et de paiement au-delà de la date d'échéance est sanctionné par une pénalité de 50 %."
@@ -197,6 +208,7 @@
     {
       "article": "Art. 16",
       "titre": "Contentieux de la taxe",
+      "section": "H : Contentieux de la taxe",
       "texte": [
         "H. Contentieux de la taxe",
         "Art.16.- Le contentieux relatif à l'assiette et au recouvrement de la taxe est régi par le CGI."
@@ -212,6 +224,7 @@
     {
       "article": "Art. 17",
       "titre": "Dispositions finales",
+      "section": "I : Dispositions finales",
       "texte": [
         "I. Dispositions finales",
         "Art.17.- La présente loi qui remplace la taxe d'habitation et la taxe sur la valeur locative des locaux professionnels abroge la loi n°90-21 du 12 septembre 1990 et toutes les dispositions antérieures contraires."

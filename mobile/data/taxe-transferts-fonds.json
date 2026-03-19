@@ -2,7 +2,7 @@
   "meta": {
     "document": "Taxe sur les transferts de fonds",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-TRANSF",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -18,6 +18,7 @@
       "titre": "Institution de la taxe",
       "section": "Chapitre 1 : Généralités",
       "texte": [
+        "[NB - Loi de finances pour 2004, modifiée]",
         "Chapitre 1 - Généralités",
         "Art.1.- Il est institué une taxation sur les opérations d'envoi d'argent à l'étranger appelée taxe sur les transferts de fonds."
       ],
@@ -213,7 +214,7 @@
       "texte": [
         "Chapitre 4 bis - Déduction",
         "Art.11 bis.- La taxe sur les transferts de fonds ayant frappé en amont :",
-        "• le prix d'achat des devises effectué par les banques et les bureaux de change agréés ;",
+        "• le prix d'achat des devises effectué par les banques et les bureaux de change agréés,",
         "• le montant des ordres de virement de fonds à destination de l'étranger ou au profit des non-résidents, exécutés par les banques,",
         "est déductible pour les assujettis agréés et soumis au régime du réel."
       ],
@@ -367,7 +368,7 @@
         "• ARTF : 30 %",
         "• ACSI : 5 %",
         "• ANSSI : 20 %",
-        "La quote part de 30 % affectée à l'agence de régulation des transferts de fonds finance également la finalisation de l'implémentation de la plateforme de certification des transferts de fonds ainsi que les opérations de maintenance corrective, préventive, adaptative et évolutive.",
+        "La quote-part de 30 % affecté à l'agence de régulation des transferts de fonds finance également la finalisation de l'implémentation de la plateforme de certification des transferts de fonds ainsi que les opérations de maintenance corrective, préventive, adaptative et évolutive.",
         "Le pourcentage de 5 % affecté à l'agence congolaise des systèmes d'information est destiné à la finalisation des projets prévus par la loi n° 47-2024 du 30 décembre 2024 portant loi de finances pour l'année 2025."
       ],
       "mots_cles": [
@@ -400,7 +401,7 @@
       "titre": "Obligations des agents économiques",
       "section": "Chapitre 5 : Dispositions diverses",
       "texte": [
-        "Art.13.- Tout agent économique exerçant l'activité de transfert de fonds est tenu de :",
+        "Art.13.- Tout agent économique exerçant l'activité de transferts de fonds est tenu de :",
         "• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transfert de fonds ;",
         "• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'agence de régulation des transferts de fonds ;",
         "• s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds au moyen des terminaux de paiement électronique (TPE) et autre équipement ou infrastructure de réseau dûment déployé ou agréé par l'agence de régulation des transferts de fonds."
@@ -419,7 +420,7 @@
       "section": "Chapitre 5 : Dispositions diverses",
       "texte": [
         "Art.13 bis.-",
-        "1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :",
+        "1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :",
         "• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;",
         "• une amende de 20.000.000 FCFA pour tout agent économique qui refuse de s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds ;",
         "• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;",

@@ -2,7 +2,7 @@
   "meta": {
     "document": "Taxe d'occupation des locaux",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-TOL",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -18,6 +18,7 @@
       "titre": "Champ d'application – Institution de la taxe",
       "section": "A : Champ d'application",
       "texte": [
+        "[NB - Loi de finances pour 2014, modifiée]",
         "A. Champ d'application",
         "Art.7.- Il est créé, en République du Congo, une taxe annuelle dénommée taxe d'occupation des locaux."
       ],
@@ -174,10 +175,10 @@
         "Art.14.- La taxe d'occupation des locaux est recouvrée par déclaration et paiement spontanés des contribuables auprès du comptable public de leur résidence fiscale sans avertissement préalable.",
         "Pour la taxe d'occupation des locaux à usage d'habitation, la taxe est exigible au plus tard le 20 avril de chaque année.",
         "Toutefois, pour les personnes physiques salariées des secteurs public et privé, la taxe d'occupation des locaux à usage d'habitation est perçue à titre d'acompte par voie de retenue à la source auprès de l'employeur au taux de 1.000 FCFA par mois.",
-        "À l'échéance du 20 avril, les personnes physiques salariées auront la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.",
+        "À l'échéance du 20 avril, les personnes physiques salariées en font la déclaration de régularisation auprès de leur résidence fiscale en ce qui concerne les salariés mariés occupant le même local d'habitation, les salariés sous logés, les salariés taxables au taux du centre-ville et les salariés occupant éventuellement des locaux exemptés de la taxe.",
         "Toute retenue erronée dûment constatée par les services de l'administration fiscale au vu d'un dossier fourni par le contribuable donne droit à un crédit d'impôt à imputer sur les retenues futures.",
         "Pour la taxe d'occupation des locaux à usage professionnel, la taxe est exigible au plus tard le 20 février de chaque année.",
-        "Pour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée en occupation du local."
+        "Pour les occupations en cours d'année, la taxe est exigible au plus tard trois mois après la date d'entrée ou d'occupation du local."
       ],
       "mots_cles": [
         "recouvrement",

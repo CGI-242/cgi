@@ -49,7 +49,7 @@
       "titre": "Intitulé et catégories des droits fonciers exceptionnels",
       "section": "4.4.1. Institution de droits fonciers exceptionnels",
       "texte": [
-        "Art.3.- (L.F.2023, L.F.2024, L.F.2025, L.F.2026) Les droits fonciers exceptionnels sont intitulés et établis comme suit :",
+        "Art.3.- Les droits fonciers exceptionnels sont intitulés et établis comme suit :",
         "A. Sur les parcelles de terrains des personnes privées"
       ],
       "mots_cles": [
@@ -132,7 +132,9 @@
         "500 m²",
         "m² supplémentaire",
         "zone agricole",
-        "hectare"
+        "hectare",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     },
@@ -208,7 +210,12 @@
         "propriétés non bâties",
         "domaine privé État",
         "loyer annuel",
-        "décret 2005-552"
+        "décret 2005-552",
+        "Brazzaville",
+        "Pointe-Noire",
+        "domaine public",
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -233,7 +240,10 @@
         "domaine privé État",
         "loyer annuel",
         "collectivités locales",
-        "établissements publics"
+        "établissements publics",
+        "décret 2005-552",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     },
@@ -257,7 +267,11 @@
         "baux emphytéotiques",
         "propriétés non bâties",
         "domaine privé État",
-        "article 32 décret 2005-552"
+        "article 32 décret 2005-552",
+        "Brazzaville",
+        "Pointe-Noire",
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -281,7 +295,11 @@
         "baux emphytéotiques",
         "propriétés bâties",
         "domaine privé État",
-        "article 32 décret 2005-552"
+        "article 32 décret 2005-552",
+        "Brazzaville",
+        "Pointe-Noire",
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -305,7 +323,9 @@
         "autorisations expresses",
         "propriétés non bâties",
         "domaine public État",
-        "décret 2021-671"
+        "décret 2021-671",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     },
@@ -329,7 +349,9 @@
         "autorisations expresses",
         "propriétés bâties",
         "domaine public État",
-        "décret 2021-671"
+        "décret 2021-671",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     },
@@ -353,7 +375,12 @@
         "garantie",
         "autorisations expresses",
         "deux ans redevance",
-        "décret 2021-671"
+        "décret 2021-671",
+        "Brazzaville",
+        "Pointe-Noire",
+        "domaine public",
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -377,7 +404,9 @@
         "autorisations provisoires",
         "propriétés non bâties",
         "domaine public État",
-        "article 34 décret 2021-671"
+        "article 34 décret 2021-671",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     },
@@ -392,7 +421,8 @@
         "redevance mensuelle",
         "autorisations provisoires",
         "propriétés bâties",
-        "domaine public État"
+        "domaine public État",
+        "décret 2021-671"
       ],
       "statut": "en vigueur"
     },
@@ -408,7 +438,9 @@
         "rôles trimestriels",
         "administration fiscale",
         "trésor public",
-        "contrôleur général État"
+        "contrôleur général État",
+        "domaine public",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -424,7 +456,9 @@
         "restes à recouvrer",
         "trésor public",
         "28 février",
-        "mise en recouvrement"
+        "mise en recouvrement",
+        "domaine public",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -440,7 +474,9 @@
         "six mois",
         "déguerpissement automatique",
         "recouvrement forcé",
-        "domaine public privé État"
+        "domaine public privé État",
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -471,7 +507,9 @@
         "prix m²",
         "localisation",
         "superficie",
-        "zones"
+        "zones",
+        "Brazzaville",
+        "Pointe-Noire"
       ],
       "statut": "en vigueur"
     }
