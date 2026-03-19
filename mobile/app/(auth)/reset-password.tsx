@@ -39,6 +39,7 @@ export default function ResetPassword() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
@@ -200,15 +201,29 @@ export default function ResetPassword() {
           <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: "#e8e6e1", marginBottom: 8 }}>
             {t("auth.confirmPassword")} <Text style={{ color: "#f87171" }}>*</Text>
           </Text>
-          <TextInput
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "rgba(255,255,255,0.08)", padding: 12, fontSize: 18, color: "#e8e6e1", marginBottom: 16, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)", borderRadius: 8 }}
-            placeholder={t("auth.confirmPassword")}
-            placeholderTextColor="rgba(255,255,255,0.35)"
-            value={confirmPassword}
-            onChangeText={(v) => { setConfirmPassword(v); setError(""); }}
-            secureTextEntry={!showPassword}
-            accessibilityLabel={t("auth.confirmPassword")}
-          />
+          <View style={{ marginBottom: 16 }}>
+            <TextInput
+              style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "rgba(255,255,255,0.08)", padding: 12, paddingRight: 48, fontSize: 18, color: "#e8e6e1", borderWidth: 1, borderColor: "rgba(255,255,255,0.12)", borderRadius: 8 }}
+              placeholder={t("auth.confirmPassword")}
+              placeholderTextColor="rgba(255,255,255,0.35)"
+              value={confirmPassword}
+              onChangeText={(v) => { setConfirmPassword(v); setError(""); }}
+              secureTextEntry={!showConfirm}
+              accessibilityLabel={t("auth.confirmPassword")}
+            />
+            <TouchableOpacity
+              style={{ position: "absolute", right: 12, top: 12 }}
+              onPress={() => setShowConfirm(!showConfirm)}
+              accessibilityLabel={t("auth.togglePassword")}
+              accessibilityRole="button"
+            >
+              <Ionicons
+                name={showConfirm ? "eye-off" : "eye"}
+                size={22}
+                color="rgba(255,255,255,0.5)"
+              />
+            </TouchableOpacity>
+          </View>
 
           {/* Bouton */}
           <TouchableOpacity
