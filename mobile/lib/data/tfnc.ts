@@ -17,8 +17,6 @@ import tfnc3PetCh2Data from "@/data/tfnc3-petrole-chapitre2.json";
 import tfnc3PetCh3Data from "@/data/tfnc3-petrole-chapitre3.json";
 import tfnc3PetCh4Data from "@/data/tfnc3-petrole-chapitre4.json";
 import tfnc3PetCh5Data from "@/data/tfnc3-petrole-chapitre5.json";
-import tfnc3PetCh6Data from "@/data/tfnc3-petrole-chapitre6.json";
-import tfnc3PetCh7Data from "@/data/tfnc3-petrole-chapitre7.json";
 import tvaPetrolierData from "@/data/tva-secteur-petrolier-amont.json";
 import fiscMiniereData from "@/data/fiscalite-miniere.json";
 // TFNC4 - Impôts, taxes et retenues divers
@@ -74,8 +72,6 @@ const aTfnc3PetCh2 = parseArticles(tfnc3PetCh2Data.articles);
 const aTfnc3PetCh3 = parseArticles(tfnc3PetCh3Data.articles);
 const aTfnc3PetCh4 = parseArticles(tfnc3PetCh4Data.articles);
 const aTfnc3PetCh5 = parseArticles(tfnc3PetCh5Data.articles);
-const aTfnc3PetCh6 = parseArticles(tfnc3PetCh6Data.articles);
-const aTfnc3PetCh7 = parseArticles(tfnc3PetCh7Data.articles);
 const aTvaPetrolier = parseArticles(tvaPetrolierData.articles);
 const aFiscMiniere = parseArticles(fiscMiniereData.articles);
 // TFNC4
@@ -135,8 +131,6 @@ const tfnc3PetCh2 = buildChapitreTree(aTfnc3PetCh2, `Chapitre 2 - ${tfnc3PetCh2D
 const tfnc3PetCh3 = buildChapitreTree(aTfnc3PetCh3, `Chapitre 3 - ${tfnc3PetCh3Data.meta.chapitre_titre}`, "tfnc3-pet-ch3");
 const tfnc3PetCh4 = buildChapitreTree(aTfnc3PetCh4, `Chapitre 4 - ${tfnc3PetCh4Data.meta.chapitre_titre}`, "tfnc3-pet-ch4");
 const tfnc3PetCh5 = buildChapitreTree(aTfnc3PetCh5, `Chapitre 5 - ${tfnc3PetCh5Data.meta.chapitre_titre}`, "tfnc3-pet-ch5");
-const tfnc3PetCh6 = buildChapitreTree(aTfnc3PetCh6, `Chapitre 6 - ${tfnc3PetCh6Data.meta.chapitre_titre}`, "tfnc3-pet-ch6");
-const tfnc3PetCh7 = buildChapitreTree(aTfnc3PetCh7, `Chapitre 7 - ${tfnc3PetCh7Data.meta.chapitre_titre}`, "tfnc3-pet-ch7");
 export const tfnc3Node: SommaireNode = {
   id: "tfnc3", label: "3. Fiscalité des mines et des hydrocarbures",
   children: [
@@ -144,7 +138,7 @@ export const tfnc3Node: SommaireNode = {
     { id: "tfnc3-redev", label: redevSuperfData.meta.chapitre_titre, articles: aRedevSuperf },
     {
       id: "tfnc3-petrole", label: "3.3. Application des dispositions fiscales au secteur pétrolier amont",
-      articles: [...aTfnc3PetCh1, ...aTfnc3PetCh2, ...aTfnc3PetCh3, ...aTfnc3PetCh4, ...aTfnc3PetCh5, ...aTfnc3PetCh6, ...aTfnc3PetCh7],
+      articles: [...aTfnc3PetCh1, ...aTfnc3PetCh2, ...aTfnc3PetCh3, ...aTfnc3PetCh4, ...aTfnc3PetCh5],
     },
     { id: "tfnc3-tva-pet", label: tvaPetrolierData.meta.chapitre_titre, articles: aTvaPetrolier },
     buildChapitreTree(aFiscMiniere, fiscMiniereData.meta.chapitre_titre, "tfnc3-mines"),
