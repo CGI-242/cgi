@@ -17,6 +17,7 @@
       "article": "Art. 1",
       "titre": "Institution de la taxe",
       "texte": [
+        "[NB - Loi de finances pour 2012, modifiée]",
         "Art.1.- Il est institué une taxe unique sur les salaires."
       ],
       "mots_cles": [
@@ -60,7 +61,7 @@
       "article": "Art. 4",
       "titre": "Personnes assujetties",
       "texte": [
-        "Art.4.- (L.F.2024) Sont assujettis à la taxe unique sur les salaires, les personnes morales, de droit public ou de droit privé, les exploitants individuels relevant du régime du réel employant un ou plusieurs travailleurs."
+        "Art.4.- Sont assujettis à la taxe unique sur les salaires, les personnes morales, de droit public ou de droit privé, les exploitants individuels relevant du régime du réel employant un ou plusieurs travailleurs."
       ],
       "mots_cles": [
         "personnes assujetties",
@@ -75,7 +76,7 @@
       "article": "Art. 5",
       "titre": "Exonérations",
       "texte": [
-        "Art.5.- (L.F.2024) Sont exonérés de la taxe unique sur les salaires :",
+        "Art.5.- Sont exonérés de la taxe unique sur les salaires :",
         "• l'État, les collectivités locales et les établissements publics à budget non autonome ;",
         "• les gouvernements étrangers avec lesquels l'État a passé des accords de coopération pour le personnel d'assistance technique civile ou militaire ;",
         "• les missions diplomatiques et consulaires.",
@@ -126,42 +127,34 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 8 (L.F. 2026)",
+      "article": "Art. 8",
       "titre": "Répartition du produit",
       "texte": [
-        "Art.8.- (L.F.2026 - modifié)",
-        "1) La taxe unique sur les salaires est répartie comme suit :",
-        "┌─────────────────────────────────────────────────────────────────┬───────┐",
-        "│ DESIGNATION                                                     │ TAUX  │",
-        "├─────────────────────────────────────────────────────────────────┼───────┤",
-        "│ ETAT                                                            │  15 % │",
-        "│ FIGA (Fonds d'impulsion, de garantie et d'accompagnement)       │  27 % │",
-        "│ FONEA (Fonds national d'appui à l'employabilité et apprentissage)│  23 % │",
-        "│ ACPE (Agence congolaise pour l'emploi)                          │  10 % │",
-        "│ FNH (Fonds national de l'habitat)                               │   5 % │",
-        "│ ADPME (Agence de développement des PME)                         │   5 % │",
-        "│ ACPCE (Agence congolaise pour la création des entreprises)      │   5 % │",
-        "│ Université Denis SASSOU NGUESSO                                 │   3 % │",
-        "│ Université Marien NGOUABI                                       │   2 % │",
-        "│ ANIRSJ (Agence Nationale d'Insertion et Réinsertion Sociales)   │   5 % │",
-        "├─────────────────────────────────────────────────────────────────┼───────┤",
-        "│ TOTAL                                                           │ 100 % │",
-        "└─────────────────────────────────────────────────────────────────┴───────┘",
-        "2) Les parts revenant au budget de l'État et au Fonds national de l'habitat sont recouvrées par l'administration fiscale.",
-        "3) Les parts affectées au FIGA, à l'ACPE, au FONEA, à l'ADPME, à l'ACPCE, aux Universités Denis SASSOU NGUESSO et Marien NGOUABI et à l'ANIRSJ sont recouvrées par la Caisse Nationale de Sécurité Sociale comme en matière de cotisations sociales."
+        "Art.8.-",
+        "1) La taxe unique sur les salaires est répartie comme suit par le trésor public :",
+        "• Budget de l'État : 27 %",
+        "• Fonds d'impulsion, de garantie et d'accompagnement (FIGA) : 10 %",
+        "• Fonds national d'appui à l'employabilité et à l'apprentissage (FONEA) : 23 %",
+        "• Agence congolaise pour l'emploi (ACPE) : 10 %",
+        "• Fonds national de l'habitat (FNH) : 5 %",
+        "• Agence de développement des petites et moyennes entreprises (ADPME) : 5 %",
+        "• Agence congolaise pour la création des entreprises (ACPCE) : 5 %",
+        "• Université Marien NGOUABI : 5 %",
+        "• Agence Nationale d'Insertion et de Réinsertion Sociales des Jeunes (ANIRSJ) : 10 %",
+        "2) La part revenant au budget de l'État est recouvrée par l'administration fiscale.",
+        "3) Les parts affectées au Fonds d'Impulsion, de Garantie et d'Accompagnement (FIGA), à l'Agence Congolaise pour l'Emploi (ACPE), au Fonds National d'Appui à l'Employabilité et à l'Apprentissage (FONEA), à l'Agence de Développement des Petites et Moyennes Entreprises (ADPME), à l'Agence Congolaise pour la Création des Entreprises (ACPCE), à l'Agence Nationale d'Insertion et de Réinsertion Sociales des Jeunes (ANIRSJ), à l'Université Marien NGOUABI et au Fonds National de l'Habitat (FNH) sont recouvrées par la Caisse Nationale de Sécurité Sociale (CNSS) comme en matière de cotisations sociales."
       ],
       "mots_cles": [
         "répartition",
-        "État 15%",
-        "FIGA 27%",
+        "État 27%",
+        "FIGA 10%",
         "FONEA 23%",
         "ACPE 10%",
         "FNH 5%",
         "ADPME 5%",
         "ACPCE 5%",
-        "Université DSN 3%",
-        "Université Marien NGOUABI 2%",
-        "ANIRSJ 5%",
+        "Université Marien NGOUABI 5%",
+        "ANIRSJ 10%",
         "CNSS"
       ],
       "statut": "en vigueur"

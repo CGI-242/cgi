@@ -2,7 +2,7 @@
   "meta": {
     "document": "Taxe sur les activités polluantes",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-POLL",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,6 +17,7 @@
       "article": "Art. 1",
       "titre": "Institution de la taxe",
       "texte": [
+        "[NB - Loi de finances pour 2026]",
         "Art.1.- Il est institué au profit du budget de l'État une taxe sur les activités polluantes."
       ],
       "mots_cles": [
@@ -29,7 +30,7 @@
       "article": "Art. 2",
       "titre": "Personnes assujetties",
       "texte": [
-        "Art.2.- Sont assujetties à la taxe sur les activités polluantes, les personnes physiques ou morales, publiques ou privées, qui exercent des activités polluantes, notamment :",
+        "Art.2.- Sont assujettis à la taxe sur les activités polluantes, les personnes physiques ou morales, publiques ou privées, qui exercent des activités polluantes, notamment :",
         "• le rejet de substances polluantes dans l'air, l'eau ou le sol ;",
         "• la production, l'importation, le stockage, le traitement ou l'élimination de déchets polluants ;",
         "• l'exploitation de ressources naturelles ou d'installation générant des nuisances ou des risques environnementaux."
@@ -62,8 +63,8 @@
       "texte": [
         "Art.4.- La taxe sur les activités polluantes est assise sur les quantités produites, importées, extraites ou éliminées.",
         "Les taux sont fixés comme suit :",
-        "• emballages plastiques : 500 FCFA/kg ;",
-        "• extraction de minerais : 5.000 FCFA/m³ ;",
+        "• emballages plastiques : 500 FCFA/KG",
+        "• extraction de minerais : 5.000 FCFA/m3",
         "• déchets industriels dangereux : 2.500 FCFA/tonne ;",
         "• lubrifiants, peintures, solvants, pesticides : 500 FCFA/litre."
       ],
@@ -81,7 +82,7 @@
       "article": "Art. 5",
       "titre": "Liquidation et recouvrement",
       "texte": [
-        "Art.5.- Les taxes sont liquidées, déclarées, contrôlées et recouvrées comme en matière des impôts et taxes prévus par le code général des impôts."
+        "Art.5.- Les taxes sont liquidées, déclarées, contrôlées et recouvrées comme en matière des impôts et taxes prévus par le Code général des impôts."
       ],
       "mots_cles": [
         "liquidation",

@@ -2,7 +2,7 @@
   "meta": {
     "document": "Taxe unique sur les salaires",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-TUS",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,6 +17,7 @@
       "article": "Art. 1",
       "titre": "Institution de la taxe",
       "texte": [
+        "[NB - Loi de finances pour 2012, modifiée]",
         "Art.1.- Il est institué une taxe unique sur les salaires."
       ],
       "mots_cles": [
@@ -130,13 +131,13 @@
       "titre": "Répartition du produit",
       "texte": [
         "Art.8.-",
-        "1) La taxe unique sur les salaires est répartie comme suit :",
+        "1) La taxe unique sur les salaires est répartie comme suit par le trésor public :",
         "• Budget de l'État : 27 %",
         "• Fonds d'impulsion, de garantie et d'accompagnement (FIGA) : 10 %",
         "• Fonds national d'appui à l'employabilité et à l'apprentissage (FONEA) : 23 %",
         "• Agence congolaise pour l'emploi (ACPE) : 10 %",
         "• Fonds national de l'habitat (FNH) : 5 %",
-        "• Agence de développement des petites et moyennes entreprises : 5 %",
+        "• Agence de développement des petites et moyennes entreprises (ADPME) : 5 %",
         "• Agence congolaise pour la création des entreprises (ACPCE) : 5 %",
         "• Université Marien NGOUABI : 5 %",
         "• Agence Nationale d'Insertion et de Réinsertion Sociales des Jeunes (ANIRSJ) : 10 %",

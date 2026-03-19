@@ -33,6 +33,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
         paddingHorizontal: isMobile ? 16 : 32,
         borderBottomWidth: 1,
         borderBottomColor: "rgba(255,255,255,0.04)",
+        backgroundColor: "#000",
         zIndex: 100,
       }}
     >

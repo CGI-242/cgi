@@ -14,10 +14,10 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "1", label: "Pays" },
-    { value: "2 263", label: "Articles" },
-    { value: "16", label: "Simulateurs" },
-    { value: "8", label: "Fonctionnalités" },
+    { value: "2 263", label: t("landing.statsArticles") },
+    { value: "16", label: t("landing.statsSimulators") },
+    { value: "64", label: t("landing.statsTexts") },
+    { value: "2026", label: t("landing.statsEdition") },
   ];
 
   return (
@@ -37,16 +37,9 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 28,
         }}
       >
-        <View
-          style={{
-            width: 7,
-            height: 7,
-            borderRadius: 4,
-            backgroundColor: "#4ade80",
-          }}
-        />
+        <Text style={{ fontSize: 26 }}>🇨🇬</Text>
         <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
-          CGI 242 Congo-Brazzaville disponible
+          Congo-Brazzaville — Édition 2026
         </Text>
       </View>
 
@@ -55,15 +48,15 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         style={{
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
-          fontSize: isMobile ? 38 : 68,
+          fontSize: isMobile ? 32 : 56,
           color: "#e8e6e1",
           textAlign: "center",
-          lineHeight: isMobile ? 42 : 72,
+          lineHeight: isMobile ? 38 : 64,
           marginBottom: 20,
         }}
       >
-        {"L'intelligence fiscale\n"}
-        <Text style={{ color: GOLD }}>africaine</Text>
+        {t("landing.heroTitle")}{"\n"}
+        <Text style={{ color: GOLD }}>{t("landing.heroTitleAccent")}</Text>
       </Text>
 
       {/* Subtitle */}
@@ -71,7 +64,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         style={{
           fontSize: isMobile ? 15 : 19,
           color: "#7a7a85",
-          maxWidth: 560,
+          maxWidth: 600,
           textAlign: "center",
           lineHeight: isMobile ? 24 : 31,
           fontFamily: fonts.light,
@@ -79,7 +72,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 44,
         }}
       >
-        22 Codes Généraux des Impôts dans votre poche. Recherche instantanée, simulateurs fiscaux, assistant IA et mode hors-ligne.
+        {t("landing.heroSubtitle")}
       </Text>
 
       {/* Stats */}
@@ -89,7 +82,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           justifyContent: "center",
           gap: isMobile ? 24 : 56,
           flexWrap: "wrap",
-          marginBottom: 60,
+          marginBottom: 50,
         }}
       >
         {stats.map((stat, i) => (

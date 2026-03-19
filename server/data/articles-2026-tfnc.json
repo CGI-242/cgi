@@ -326,78 +326,6 @@
   },
   {
     "numero": "1",
-    "titre": "Institution de l'attestation",
-    "contenu": "Art.1.- Il est institué une attestation de non-redevance fiscale valable un trimestre, délivrée à toutes les personnes physiques et morales domiciliées ou résidant habituellement en République du Congo.",
-    "tome": "TFNC5-ATTEST",
-    "chapitre": "5",
-    "keywords": [
-      "attestation non-redevance fiscale",
-      "validité trimestrielle",
-      "personnes physiques morales",
-      "domicile Congo"
-    ],
-    "source": "attestation-non-redevance-fiscale.json"
-  },
-  {
-    "numero": "2",
-    "titre": "Conditions de délivrance",
-    "contenu": "Art.2.- L'attestation de non-redevance fiscale est délivrée moyennant le paiement d'une somme de 3.000 FCFA, par le chef de résidence fiscale dans laquelle est situé le siège de l'entreprise, de son principal établissement ou du domicile du contribuable, pour les personnes physiques et morales exerçant une activité industrielle, commerciale, artisanale ou non commerciale, sur présentation :\n• du numéro d'identification unique (NIU) ;\n• des quittances justifiant le paiement des impôts, droits et taxes dus au titre du trimestre précédent ;\n• du certificat de moralité fiscale de l'année précédente.",
-    "tome": "TFNC5-ATTEST",
-    "chapitre": "5",
-    "keywords": [
-      "délivrance",
-      "3 000 FCFA",
-      "chef résidence fiscale",
-      "NIU",
-      "quittances impôts",
-      "certificat moralité fiscale"
-    ],
-    "source": "attestation-non-redevance-fiscale.json"
-  },
-  {
-    "numero": "3",
-    "titre": "Effets de l'attestation",
-    "contenu": "Art.3.- L'attestation de non-redevance fiscale confère, au cours de la période, à son titulaire le droit :\n• d'exercer une activité commerciale, industrielle, artisanale ou non commerciale ;\n• de soumissionner aux marchés et commandes de l'État ;\n• de bénéficier des crédits bancaires ;\n• d'obtenir la qualité d'importateur ou d'exportateur.",
-    "tome": "TFNC5-ATTEST",
-    "chapitre": "5",
-    "keywords": [
-      "effets attestation",
-      "droit exercer activité",
-      "marchés État",
-      "crédits bancaires",
-      "importateur exportateur"
-    ],
-    "source": "attestation-non-redevance-fiscale.json"
-  },
-  {
-    "numero": "4",
-    "titre": "Exigibilité lors des contrôles",
-    "contenu": "Art.4.- (Loi 2020-23) L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité.",
-    "tome": "TFNC5-ATTEST",
-    "chapitre": "5",
-    "keywords": [
-      "exigibilité",
-      "contrôle inopiné",
-      "vérification comptabilité"
-    ],
-    "source": "attestation-non-redevance-fiscale.json"
-  },
-  {
-    "numero": "5",
-    "titre": "Sanctions",
-    "contenu": "Art.5.- (Loi 2020-23) Toute infraction aux présentes dispositions entraîne pour les contribuables une amende de 100.000 FCFA par trimestre. L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité.",
-    "tome": "TFNC5-ATTEST",
-    "chapitre": "5",
-    "keywords": [
-      "sanctions",
-      "amende 100 000 FCFA",
-      "infraction",
-      "trimestre"
-    ],
-    "source": "attestation-non-redevance-fiscale.json"
-  },
-  {
-    "numero": "1",
     "titre": "Liberté d'entreprendre",
     "contenu": "Art.1.- (Loi n°42-2019) Toute personne physique ou morale, quelle que soit sa nationalité, est libre d'entreprendre, sur le territoire de la République du Congo, une activité agricole, minière, industrielle, forestière, artisanale, commerciale ou de service, dans le respect des lois et règlements de la République.\nTout acte juridique (réglementaire, conventionnel, etc.) ou, d'une manière générale, tout acte de quelque nature qu'il soit, contenant des dispositions dérogatoires à la réglementation fiscale, est revêtu du contreseing du Ministre en charge des finances.\nLes avantages fiscaux qui n'ont pas obéi à cette procédure doivent être attestés par le Ministre en charge des finances pour leur application par les services de la Direction Générale des Impôts et des Domaines.",
     "tome": "TFNC2-CHARTE",
@@ -5923,128 +5851,6 @@
   {
     "numero": "1",
     "titre": "Institution de la taxe",
-    "contenu": "Art.1.- Il est institué en République du Congo une taxe sur les emballages non récupérables.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "taxe emballages",
-      "emballages non récupérables",
-      "ENR"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "2",
-    "titre": "Définition des emballages non récupérables",
-    "contenu": "Art.2.- Sont considérés comme emballages non récupérables : les bouteilles, canettes, sachets, sacs, pochettes, pots, cornets et les autres emballages, produits localement ou importés au Congo, avec ou sans contenu.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "définition",
-      "bouteilles",
-      "canettes",
-      "sachets",
-      "sacs",
-      "pochettes",
-      "pots",
-      "cornets"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "3",
-    "titre": "Personnes assujetties",
-    "contenu": "Art.3.- Sont soumis à la taxe sur les emballages non récupérables les importateurs et les producteurs locaux des biens visés à l'article 2 ci-dessus.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "personnes assujetties",
-      "importateurs",
-      "producteurs locaux"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "4",
-    "titre": "Exemptions",
-    "contenu": "Art.4.- Sont exemptés de la taxe sur les emballages non récupérables, les emballages en papier et tout autre emballage non récupérable biodégradable.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "exemptions",
-      "emballages papier",
-      "biodégradable"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "5",
-    "titre": "Affectation du produit de la taxe",
-    "contenu": "Art.5.- La taxe sur les emballages non récupérables est perçue au profit des collectivités locales pour financer l'enlèvement des ordures ménagères.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "affectation",
-      "collectivités locales",
-      "ordures ménagères"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "6",
-    "titre": "Liquidation et paiement",
-    "contenu": "Art.6.- La taxe sur les emballages non récupérables est liquidée au cordon douanier pour les importateurs, par les services de l'administration fiscale pour les producteurs locaux, et payée conformément à la réglementation en vigueur.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "liquidation",
-      "paiement",
-      "cordon douanier",
-      "administration fiscale"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "7",
-    "titre": "Base imposable",
-    "contenu": "Art.7.- La base imposable de la taxe sur les emballages non récupérables est constituée par la valeur imposable en douane ou le prix sortie usine.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "base imposable",
-      "valeur douane",
-      "prix sortie usine"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "8",
-    "titre": "Taux de la taxe",
-    "contenu": "Art.8.- Le taux de la taxe sur les emballages non récupérables est fixé à 1 %.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "taux taxe",
-      "1%"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "9",
-    "titre": "Contrôle et sanctions",
-    "contenu": "Art.9.- Les modalités de contrôle et de sanctions applicables à la taxe sur les emballages non récupérables sont celles relatives à la TVA.",
-    "tome": "TFNC4-EMBALL",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "contrôle",
-      "sanctions",
-      "modalités TVA"
-    ],
-    "source": "taxe-emballages-non-recuperables.json"
-  },
-  {
-    "numero": "1",
-    "titre": "Institution de la taxe",
     "contenu": "[NB - Loi de finances pour 2003, modifiée]\nArt.1.- Il est institué une taxe spéciale sur les jeux de hasard et d'argent exclusive de la TVA.",
     "tome": "TFNC4-JEU",
     "chapitre": "4. Impôts, taxes et retenues divers",
@@ -6462,163 +6268,6 @@
       "contentieux"
     ],
     "source": "taxe-trafic-communications-electroniques.json"
-  },
-  {
-    "numero": "1",
-    "titre": "Institution de la taxe",
-    "contenu": "Art.1.- Il est institué une taxe unique sur les salaires.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "taxe unique salaires",
-      "TUS",
-      "institution"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "2",
-    "titre": "Recouvrement",
-    "contenu": "Art.2.- La taxe unique sur les salaires est recouvrée par le trésor public.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "recouvrement",
-      "trésor public"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "3",
-    "titre": "Base d'imposition",
-    "contenu": "Art.3.- La taxe unique sur les salaires frappe le salaire brut composé du salaire stricto sensu, des émoluments, des primes, des indemnités, des allocations, des gratifications et avantages en nature.\nSont comprises dans la base imposable de la taxe unique sur les salaires, toutes les sommes soumises à l'IRPP au nom des bénéficiaires en application des articles 37 à 39 du CGI, tome 1.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "base imposition",
-      "salaire brut",
-      "émoluments",
-      "primes",
-      "indemnités",
-      "avantages nature",
-      "articles 37-39 CGI"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "4",
-    "titre": "Personnes assujetties",
-    "contenu": "Art.4.- (L.F.2024) Sont assujettis à la taxe unique sur les salaires, les personnes morales, de droit public ou de droit privé, les exploitants individuels relevant du régime du réel employant un ou plusieurs travailleurs.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "personnes assujetties",
-      "personnes morales",
-      "exploitants individuels",
-      "régime réel",
-      "employeurs"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "5",
-    "titre": "Exonérations",
-    "contenu": "Art.5.- (L.F.2024) Sont exonérés de la taxe unique sur les salaires :\n• l'État, les collectivités locales et les établissements publics à budget non autonome ;\n• les gouvernements étrangers avec lesquels l'État a passé des accords de coopération pour le personnel d'assistance technique civile ou militaire ;\n• les missions diplomatiques et consulaires.\nLes exploitants individuels relevant du régime du forfait et les sociétés exerçant dans le secteur de l'agriculture, de l'élevage et de la pisciculture.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "exonérations",
-      "État",
-      "collectivités locales",
-      "missions diplomatiques",
-      "assistance technique",
-      "agriculture",
-      "élevage",
-      "pisciculture",
-      "régime forfait"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "6",
-    "titre": "Taux de la taxe",
-    "contenu": "Art.6.- Le taux de la taxe unique sur les salaires est fixé à 7,5 % du salaire brut.\nCe taux est de 2,5 % du salaire brut pour les sociétés pétrolières.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "taux taxe",
-      "7,5%",
-      "salaire brut",
-      "sociétés pétrolières 2,5%"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "7",
-    "titre": "Liquidation et paiement",
-    "contenu": "Art.7.- La taxe unique sur les salaires est liquidée par les services de l'administration fiscale et de la caisse nationale de sécurité sociale.\nElle est payée avant le 20 du mois suivant celui au cours duquel les appointements, les salaires et autres rémunérations ont été constatés.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "liquidation",
-      "paiement",
-      "administration fiscale",
-      "CNSS",
-      "20 du mois"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "8 (L.F. 2026)",
-    "titre": "Répartition du produit",
-    "contenu": "Art.8.- (L.F.2026 - modifié)\n1) La taxe unique sur les salaires est répartie comme suit :\n┌─────────────────────────────────────────────────────────────────┬───────┐\n│ DESIGNATION                                                     │ TAUX  │\n├─────────────────────────────────────────────────────────────────┼───────┤\n│ ETAT                                                            │  15 % │\n│ FIGA (Fonds d'impulsion, de garantie et d'accompagnement)       │  27 % │\n│ FONEA (Fonds national d'appui à l'employabilité et apprentissage)│  23 % │\n│ ACPE (Agence congolaise pour l'emploi)                          │  10 % │\n│ FNH (Fonds national de l'habitat)                               │   5 % │\n│ ADPME (Agence de développement des PME)                         │   5 % │\n│ ACPCE (Agence congolaise pour la création des entreprises)      │   5 % │\n│ Université Denis SASSOU NGUESSO                                 │   3 % │\n│ Université Marien NGOUABI                                       │   2 % │\n│ ANIRSJ (Agence Nationale d'Insertion et Réinsertion Sociales)   │   5 % │\n├─────────────────────────────────────────────────────────────────┼───────┤\n│ TOTAL                                                           │ 100 % │\n└─────────────────────────────────────────────────────────────────┴───────┘\n2) Les parts revenant au budget de l'État et au Fonds national de l'habitat sont recouvrées par l'administration fiscale.\n3) Les parts affectées au FIGA, à l'ACPE, au FONEA, à l'ADPME, à l'ACPCE, aux Universités Denis SASSOU NGUESSO et Marien NGOUABI et à l'ANIRSJ sont recouvrées par la Caisse Nationale de Sécurité Sociale comme en matière de cotisations sociales.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "répartition",
-      "État 15%",
-      "FIGA 27%",
-      "FONEA 23%",
-      "ACPE 10%",
-      "FNH 5%",
-      "ADPME 5%",
-      "ACPCE 5%",
-      "Université DSN 3%",
-      "Université Marien NGOUABI 2%",
-      "ANIRSJ 5%",
-      "CNSS"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "9",
-    "titre": "Sanctions",
-    "contenu": "Art.9.- Le défaut de déclaration et le défaut de paiement de la taxe unique sur les salaires sont sanctionnés, comme en matière d'impôt direct, conformément au CGI.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "sanctions",
-      "défaut déclaration",
-      "défaut paiement",
-      "impôt direct",
-      "CGI"
-    ],
-    "source": "taxe-unique-salaires.json"
-  },
-  {
-    "numero": "10",
-    "titre": "Dispositions abrogatoires",
-    "contenu": "Art.10.- Les dispositions antérieures contraires à la présente loi, notamment la taxe d'apprentissage (art.141 à 156 du CGI, tome 1), la taxe forfaitaire sur les salaires (art.171 bis à 171 quinquies du CGI, tome 1), la contribution des employeurs à l'ONEMO (loi n°01/86 du 22 février 1986), le fonds national de l'habitat (loi n°05/2008 du 15 février 2008 et ses textes subséquents), sont abrogées.",
-    "tome": "TFNC4-TUS",
-    "chapitre": "4. Impôts, taxes et retenues divers",
-    "keywords": [
-      "abrogation",
-      "taxe apprentissage",
-      "taxe forfaitaire salaires",
-      "ONEMO",
-      "FNH"
-    ],
-    "source": "taxe-unique-salaires.json"
   },
   {
     "numero": "1",
@@ -13436,7 +13085,7 @@
   {
     "numero": "2",
     "titre": "Affectation du produit",
-    "contenu": "Art.2.- (L.F.2025, L.F.2026) La taxe sur les transferts de fonds est perçue au profit du budget de l'État, de l'Agence de régulation des transferts de fonds, de l'Agence congolaise des systèmes d'information et de l'Agence nationale de sécurité des systèmes d'information.",
+    "contenu": "Art.2.- La taxe sur les transferts de fonds est perçue au profit du budget de l'État, de l'Agence de régulation des transferts de fonds, de l'Agence congolaise des systèmes d'information et de l'Agence nationale de sécurité des systèmes d'information.",
     "tome": "TFNC4-TRANSF",
     "chapitre": "4.14. Taxe sur les transferts de fonds",
     "keywords": [
@@ -13707,7 +13356,7 @@
   {
     "numero": "12bis",
     "titre": "Clé de répartition de la taxe",
-    "contenu": "Art.12 bis.- (L.F.2024, L.F.2025, L.F.2026) La clé de répartition de la taxe sur les transferts de fonds est fixée ainsi qu'il suit :\n• État : 45 %\n• ARTF : 30 %\n• ACSI : 5 %\n• ANSSI : 20 %\nLa quote-part de 30 % affecté à l'agence de régulation des transferts de fonds finance également la finalisation de l'implémentation de la plateforme de certification des transferts de fonds ainsi que les opérations de maintenance corrective, préventive, adaptative et évolutive.\nLe pourcentage de 5 % affecté à l'agence congolaise des systèmes d'information est destiné à la finalisation des projets prévus par la loi n° 47-2024 du 30 décembre 2024 portant loi de finances pour l'année 2025.",
+    "contenu": "Art.12 bis.- La clé de répartition de la taxe sur les transferts de fonds est fixée ainsi qu'il suit :\n• État : 45 %\n• ARTF : 30 %\n• ACSI : 5 %\n• ANSSI : 20 %\nLa quote-part de 30 % affecté à l'agence de régulation des transferts de fonds finance également la finalisation de l'implémentation de la plateforme de certification des transferts de fonds ainsi que les opérations de maintenance corrective, préventive, adaptative et évolutive.\nLe pourcentage de 5 % affecté à l'agence congolaise des systèmes d'information est destiné à la finalisation des projets prévus par la loi n° 47-2024 du 30 décembre 2024 portant loi de finances pour l'année 2025.",
     "tome": "TFNC4-TRANSF",
     "chapitre": "4.14. Taxe sur les transferts de fonds",
     "keywords": [
@@ -13722,7 +13371,7 @@
   {
     "numero": "12ter",
     "titre": "Plateforme de certification",
-    "contenu": "Art.12 ter.- (L.F.2024, L.F.2025) Il est mis en place une plateforme de certification des transferts de fonds en République du Congo.\nL'Agence de régulation des transferts de fonds, en sa qualité d'autorité de régulation de transferts de fonds est chargée de la mise en place de ce dispositif.\nTout agent exerçant dans le domaine de transfert de fonds est tenu de s'interconnecter à la plateforme opérée par l'Agence de régulation de transfert de fonds.",
+    "contenu": "Art.12 ter.- Il est mis en place une plateforme de certification des transferts de fonds en République du Congo.\nL'Agence de régulation des transferts de fonds, en sa qualité d'autorité de régulation de transferts de fonds est chargée de la mise en place de ce dispositif.\nTout agent exerçant dans le domaine de transfert de fonds est tenu de s'interconnecter à la plateforme opérée par l'Agence de régulation de transfert de fonds.",
     "tome": "TFNC4-TRANSF",
     "chapitre": "4.14. Taxe sur les transferts de fonds",
     "keywords": [
@@ -13735,7 +13384,7 @@
   {
     "numero": "13",
     "titre": "Obligations des agents économiques",
-    "contenu": "Art.13.- (L.F.2025, L.F.2026) Tout agent économique exerçant l'activité de transferts de fonds est tenu de :\n• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transfert de fonds ;\n• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'agence de régulation des transferts de fonds ;\n• s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds au moyen des terminaux de paiement électronique (TPE) et autre équipement ou infrastructure de réseau dûment déployé ou agréé par l'agence de régulation des transferts de fonds.",
+    "contenu": "Art.13.- Tout agent économique exerçant l'activité de transferts de fonds est tenu de :\n• s'enregistrer auprès de l'agence de régulation des transferts de fonds afin d'être identifié dans le registre national des acteurs exerçant l'activité de transfert de fonds ;\n• transmettre la déclaration de l'ensemble des transferts de fonds effectués au plus tard le 10 du mois suivant celui de la réalisation desdits transferts auprès de l'agence de régulation des transferts de fonds ;\n• s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds au moyen des terminaux de paiement électronique (TPE) et autre équipement ou infrastructure de réseau dûment déployé ou agréé par l'agence de régulation des transferts de fonds.",
     "tome": "TFNC4-TRANSF",
     "chapitre": "4.14. Taxe sur les transferts de fonds",
     "keywords": [
@@ -13749,7 +13398,7 @@
   {
     "numero": "13bis",
     "titre": "Sanctions",
-    "contenu": "Art.13 bis.- (L.F.2025, L.F.2026)\n1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;\n• une amende de 20.000.000 FCFA pour tout agent économique qui refuse de s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds ;\n• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;\n• une amende de 40.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50.000.000 FCFA pour tout agent qui aura contrevenu ou aura tenté de contrevenir soit en ne respectant pas les procédures prescrites, ou les formalités exigées lors de l'enregistrement ;\n• tout dirigeant de nationalité congolaise exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• tout dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• outre les sanctions administratives et pécuniaires, les contrevenants s'exposent :\n- la fermeture de la structure lieu du délit ainsi que de poursuites pénales conformément à la réglementation en vigueur ;\n- la saisie du montant objet de l'infraction.\n2) Les agents économiques enregistrés, opérateur formel contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• amende de 20.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50 % des montants en cause assortie d'un avertissement pour tout agent exerçant l'activité de transfert de fonds qui ne déclare pas l'ensemble des transferts de fonds effectués mensuellement ou qui aura transmis des informations inexactes, erronées ou frauduleuses ;\n• une amende de 10.000.000 FCFA pour tout retard dans la transmission des déclarations de transferts de fonds ;\n• le dirigeant contrevenant de nationalité congolaise d'une structure exerçant l'activité de transfert de fonds sans autorisation va perdre le droit d'exercer l'activité de transfert de fonds de manière définitive ;\n• le dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• une amende de 70.000.000 FCFA pour tout recours à des actes susceptibles d'être qualifiés de faux et usage de faux, dans le cadre des obligations incombant aux agents économiques exerçant l'activité de transfert de fonds, au sens de la présente loi.\nUn arrêté du Ministre en charge des finances fixe la répartition des amendes.",
+    "contenu": "Art.13 bis.-\n1) Les agents économiques non enregistrés et/ou opérateurs clandestins contrevenants aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• une amende de 20.000.000 FCFA pour tout agent non enregistré exerçant l'activité de transfert de fonds sans autorisation et remplissant toutes les conditions sans s'être fait enregistrer ;\n• une amende de 20.000.000 FCFA pour tout agent économique qui refuse de s'interconnecter à la plateforme opérée par l'agence de régulation des transferts de fonds ;\n• une amende de 50.000.000 FCFA pour tout agent exerçant l'activité de transfert de fonds en tant qu'opérateur clandestin ;\n• une amende de 40.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50.000.000 FCFA pour tout agent qui aura contrevenu ou aura tenté de contrevenir soit en ne respectant pas les procédures prescrites, ou les formalités exigées lors de l'enregistrement ;\n• tout dirigeant de nationalité congolaise d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• tout dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• outre ces sanctions administratives et pécuniaires, les contrevenants s'exposent :\n- la fermeture de la structure lieu du délit ainsi que de poursuites pénales conformément à la réglementation en vigueur ;\n- la saisie du montant objet de l'infraction.\n2) Les agents économiques enregistrés, opérateur formel contrevenant aux obligations énoncées à l'article 13 sont passibles des sanctions administratives et pécuniaires ci-après :\n• amende de 20.000.000 FCFA pour tout agent qui aura transmis des informations inexactes, erronées ou frauduleuses lors de l'enregistrement ;\n• une amende de 50 % des montants en cause assortie d'un avertissement pour tout agent exerçant l'activité de transfert de fonds qui ne déclare pas l'ensemble des transferts de fonds effectués mensuellement ou qui aura transmis des informations inexactes, erronées ou frauduleuses ;\n• une amende de 10.000.000 FCFA pour tout retard dans la transmission des déclarations de transfert de fonds ;\n• le dirigeant contrevenant de nationalité congolaise d'une structure exerçant l'activité de transfert de fonds sans autorisation va perdre le droit d'exercer l'activité de transfert de fonds de manière définitive ;\n• le dirigeant de nationalité étrangère d'une structure exerçant l'activité de transfert de fonds sans autorisation perd le droit d'exercer cette activité de manière définitive ;\n• une amende de 70.000.000 FCFA pour tout recours à des actes susceptibles d'être qualifiés de faux et usage de faux, dans le cadre des obligations incombant aux agents économiques exerçant l'activité de transfert de fonds, au sens de la présente loi.\nUn arrêté du Ministre en charge des finances fixe la répartition des amendes.",
     "tome": "TFNC4-TRANSF",
     "chapitre": "4.14. Taxe sur les transferts de fonds",
     "keywords": [
@@ -13763,5 +13412,762 @@
       "saisie"
     ],
     "source": "Taxe sur les transferts de fonds"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la taxe",
+    "contenu": "[NB - Loi de finances pour 2012, modifiée]\nArt.1.- Il est institué une taxe unique sur les salaires.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "taxe unique salaires",
+      "TUS",
+      "institution"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "2",
+    "titre": "Recouvrement",
+    "contenu": "Art.2.- La taxe unique sur les salaires est recouvrée par le trésor public.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "recouvrement",
+      "trésor public"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "3",
+    "titre": "Base d'imposition",
+    "contenu": "Art.3.- La taxe unique sur les salaires frappe le salaire brut composé du salaire stricto sensu, des émoluments, des primes, des indemnités, des allocations, des gratifications et avantages en nature.\nSont comprises dans la base imposable de la taxe unique sur les salaires, toutes les sommes soumises à l'IRPP au nom des bénéficiaires en application des articles 37 à 39 du CGI, tome 1.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "base imposition",
+      "salaire brut",
+      "émoluments",
+      "primes",
+      "indemnités",
+      "avantages nature",
+      "articles 37-39 CGI"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "4",
+    "titre": "Personnes assujetties",
+    "contenu": "Art.4.- Sont assujettis à la taxe unique sur les salaires, les personnes morales, de droit public ou de droit privé, les exploitants individuels relevant du régime du réel employant un ou plusieurs travailleurs.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "personnes assujetties",
+      "personnes morales",
+      "exploitants individuels",
+      "régime réel",
+      "employeurs"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "5",
+    "titre": "Exonérations",
+    "contenu": "Art.5.- Sont exonérés de la taxe unique sur les salaires :\n• l'État, les collectivités locales et les établissements publics à budget non autonome ;\n• les gouvernements étrangers avec lesquels l'État a passé des accords de coopération pour le personnel d'assistance technique civile ou militaire ;\n• les missions diplomatiques et consulaires.\nLes exploitants individuels relevant du régime du forfait et les sociétés exerçant dans le secteur de l'agriculture, de l'élevage et de la pisciculture.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "exonérations",
+      "État",
+      "collectivités locales",
+      "missions diplomatiques",
+      "assistance technique",
+      "agriculture",
+      "élevage",
+      "pisciculture",
+      "régime forfait"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "6",
+    "titre": "Taux de la taxe",
+    "contenu": "Art.6.- Le taux de la taxe unique sur les salaires est fixé à 7,5 % du salaire brut.\nCe taux est de 2,5 % du salaire brut pour les sociétés pétrolières.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "taux taxe",
+      "7,5%",
+      "salaire brut",
+      "sociétés pétrolières 2,5%"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "7",
+    "titre": "Liquidation et paiement",
+    "contenu": "Art.7.- La taxe unique sur les salaires est liquidée par les services de l'administration fiscale et de la caisse nationale de sécurité sociale.\nElle est payée avant le 20 du mois suivant celui au cours duquel les appointements, les salaires et autres rémunérations ont été constatés.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "liquidation",
+      "paiement",
+      "administration fiscale",
+      "CNSS",
+      "20 du mois"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "8",
+    "titre": "Répartition du produit",
+    "contenu": "Art.8.-\n1) La taxe unique sur les salaires est répartie comme suit par le trésor public :\n• Budget de l'État : 27 %\n• Fonds d'impulsion, de garantie et d'accompagnement (FIGA) : 10 %\n• Fonds national d'appui à l'employabilité et à l'apprentissage (FONEA) : 23 %\n• Agence congolaise pour l'emploi (ACPE) : 10 %\n• Fonds national de l'habitat (FNH) : 5 %\n• Agence de développement des petites et moyennes entreprises (ADPME) : 5 %\n• Agence congolaise pour la création des entreprises (ACPCE) : 5 %\n• Université Marien NGOUABI : 5 %\n• Agence Nationale d'Insertion et de Réinsertion Sociales des Jeunes (ANIRSJ) : 10 %\n2) La part revenant au budget de l'État est recouvrée par l'administration fiscale.\n3) Les parts affectées au Fonds d'Impulsion, de Garantie et d'Accompagnement (FIGA), à l'Agence Congolaise pour l'Emploi (ACPE), au Fonds National d'Appui à l'Employabilité et à l'Apprentissage (FONEA), à l'Agence de Développement des Petites et Moyennes Entreprises (ADPME), à l'Agence Congolaise pour la Création des Entreprises (ACPCE), à l'Agence Nationale d'Insertion et de Réinsertion Sociales des Jeunes (ANIRSJ), à l'Université Marien NGOUABI et au Fonds National de l'Habitat (FNH) sont recouvrées par la Caisse Nationale de Sécurité Sociale (CNSS) comme en matière de cotisations sociales.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "répartition",
+      "État 27%",
+      "FIGA 10%",
+      "FONEA 23%",
+      "ACPE 10%",
+      "FNH 5%",
+      "ADPME 5%",
+      "ACPCE 5%",
+      "Université Marien NGOUABI 5%",
+      "ANIRSJ 10%",
+      "CNSS"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "9",
+    "titre": "Sanctions",
+    "contenu": "Art.9.- Le défaut de déclaration et le défaut de paiement de la taxe unique sur les salaires sont sanctionnés, comme en matière d'impôt direct, conformément au CGI.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "sanctions",
+      "défaut déclaration",
+      "défaut paiement",
+      "impôt direct",
+      "CGI"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "10",
+    "titre": "Dispositions abrogatoires",
+    "contenu": "Art.10.- Les dispositions antérieures contraires à la présente loi, notamment la taxe d'apprentissage (art.141 à 156 du CGI, tome 1), la taxe forfaitaire sur les salaires (art.171 bis à 171 quinquies du CGI, tome 1), la contribution des employeurs à l'ONEMO (loi n°01/86 du 22 février 1986), le fonds national de l'habitat (loi n°05/2008 du 15 février 2008 et ses textes subséquents), sont abrogées.",
+    "tome": "TFNC4-TUS",
+    "chapitre": "4.15. Taxe unique sur les salaires",
+    "keywords": [
+      "abrogation",
+      "taxe apprentissage",
+      "taxe forfaitaire salaires",
+      "ONEMO",
+      "FNH"
+    ],
+    "source": "Taxe unique sur les salaires"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la taxe",
+    "contenu": "[NB - Loi de finances pour 2025]\nArt.1.- Il est institué en République du Congo une taxe sur les emballages non récupérables.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "taxe emballages",
+      "emballages non récupérables",
+      "ENR"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "2",
+    "titre": "Définition des emballages non récupérables",
+    "contenu": "Art.2.- Sont considérés comme emballages non récupérables : les bouteilles, canettes, sachets, sacs, pochettes, pots, cornets et les autres emballages, produits localement ou importés au Congo, avec ou sans contenu.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "définition",
+      "bouteilles",
+      "canettes",
+      "sachets",
+      "sacs",
+      "pochettes",
+      "pots",
+      "cornets"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "3",
+    "titre": "Personnes assujetties",
+    "contenu": "Art.3.- Sont soumis à la taxe sur les emballages non récupérables les importateurs et les producteurs locaux des biens visés à l'article 2 ci-dessus.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "personnes assujetties",
+      "importateurs",
+      "producteurs locaux"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "4",
+    "titre": "Exemptions",
+    "contenu": "Art.4.- Sont exemptés de la taxe sur les emballages non récupérables, les emballages en papier et tout autre emballage non récupérable biodégradable.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "exemptions",
+      "emballages papier",
+      "biodégradable"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "5",
+    "titre": "Affectation du produit de la taxe",
+    "contenu": "Art.5.- La taxe sur les emballages non récupérables est perçue au profit des collectivités locales pour financer l'enlèvement des ordures ménagères.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "affectation",
+      "collectivités locales",
+      "ordures ménagères"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "6",
+    "titre": "Liquidation et paiement",
+    "contenu": "Art.6.- La taxe sur les emballages non récupérables est liquidée au cordon douanier pour les importateurs, par les services de l'administration fiscale pour les producteurs locaux, et payée conformément à la réglementation en vigueur.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "liquidation",
+      "paiement",
+      "cordon douanier",
+      "administration fiscale"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "7",
+    "titre": "Base imposable",
+    "contenu": "Art.7.- La base imposable de la taxe sur les emballages non récupérables est constituée par la valeur imposable en douane ou le prix sortie usine.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "base imposable",
+      "valeur douane",
+      "prix sortie usine"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "8",
+    "titre": "Taux de la taxe",
+    "contenu": "Art.8.- Le taux de la taxe sur les emballages non récupérables est fixé à 1 %.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "taux taxe",
+      "1%"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "9",
+    "titre": "Contrôle et sanctions",
+    "contenu": "Art.9.- Les modalités de contrôle et de sanctions applicables à la taxe sur les emballages non récupérables sont celles relatives à la TVA.",
+    "tome": "TFNC4-EMBALL",
+    "chapitre": "4.16. Taxe sur les emballages non récupérables",
+    "keywords": [
+      "contrôle",
+      "sanctions",
+      "modalités TVA"
+    ],
+    "source": "Taxe sur les emballages non récupérables"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la redevance",
+    "contenu": "[NB - Loi de finances pour 2026]\nChapitre 1 - Dispositions générales\nArt.1.- Il est établi, en République du Congo, une redevance désignée sous le nom de redevance de crédits carbone (RCC). La redevance de crédits carbone est due par les promoteurs des projets de génération des crédits carbone développés au Congo.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "redevance crédits carbone",
+      "RCC",
+      "promoteurs",
+      "génération crédits carbone"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "2",
+    "titre": "Définition des promoteurs",
+    "contenu": "Art.2.- Les promoteurs des projets de génération de crédits carbone s'entendent de toutes les personnes physiques ou personnes morales de droit congolais ou étranger, qui investissent dans la réalisation desdits projets dans un objectif de spéculation ou de compensation.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "promoteurs",
+      "personnes physiques",
+      "personnes morales",
+      "spéculation",
+      "compensation"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "3",
+    "titre": "Personnes imposables",
+    "contenu": "Chapitre 2 - Champ d'application de la Redevance\nSection 1 - Personnes imposables\nArt.3.- Sont soumis au paiement de la redevance de crédit carbone :\n• les promoteurs des projets de crédits carbone spéculatifs autrement dit les crédits carbones destinés à la commercialisation ;\n• les promoteurs des projets de crédits carbone qui transfèrent les crédits carbones aux autres entités du groupe auquel ils appartiennent situées hors Congo.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "personnes imposables",
+      "crédits carbone spéculatifs",
+      "commercialisation",
+      "transfert hors Congo"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "4",
+    "titre": "Exonérations",
+    "contenu": "Section 2 - Exonérations\nArt.4.- Ne sont pas soumis au paiement de la redevance de crédits carbone au Congo :\n1° les promoteurs de projets de crédits carbone compensatoires ;\n2° les promoteurs des projets de crédits carbone spéculatifs pour la part correspondant au buffer de crédits carbone utilisée conformément à son objet ;\n3° l'État et ses démembrements, pour la part de crédits carbone dont ils peuvent être propriétaires en application des dispositions du Code forestier.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "exonérations",
+      "crédits carbone compensatoires",
+      "buffer crédits carbone",
+      "État",
+      "code forestier"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "5",
+    "titre": "Définitions",
+    "contenu": "Art.5.- Les crédits carbone compensatoires sont des crédits carbones générés par les personnes morales, à travers les projets dont l'objectif est la compensation de leurs propres émissions.\nLe buffer de crédits carbone correspond à la part de crédits carbone mise de côté ou en réserve pour permettre au promoteur de faire face aux incertitudes ou imprévus du projet et à garantir l'efficacité du projet en matière de réduction des émissions de gaz à effet de serre.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "crédits carbone compensatoires",
+      "buffer crédits carbone",
+      "émissions",
+      "gaz effet de serre"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "6",
+    "titre": "Territorialité",
+    "contenu": "Section 3 - Territorialité\nArt.6.- Un projet de génération de crédits carbone est réputé réalisé en République du Congo lorsque les activités nécessaires à sa mise en œuvre sont exercées sur le territoire national.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "territorialité",
+      "territoire national"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "7",
+    "titre": "Base de calcul des droits",
+    "contenu": "Chapitre 3 - Assiette et recouvrement de la redevance\nSection 4 - Base de calcul des droits\nArt.7.- Pour le calcul des droits dus au titre de la redevance de crédits carbone, il est tenu compte de la base constituée par le volume de crédits carbone effectivement délivrés au promoteur du projet par l'organisme de certification après déduction de la part correspondant au buffer de crédits carbone.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "base calcul",
+      "volume crédits carbone",
+      "organisme certification",
+      "buffer"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "8",
+    "titre": "Valorisation de la base",
+    "contenu": "Art.8.- Le volume de crédits carbone effectivement délivrés au promoteur après déduction de la part correspondant au buffer de crédits carbone, est valorisé au prix de cession d'un crédit carbone sur le marché, le jour de la délivrance effective desdits crédits carbone.\nEn cas de variation positive du prix du marché carbone, entre la date de la délivrance effective des crédits carbones au promoteur et la date de la déclaration de la redevance de crédit carbone auprès de l'administration fiscale par le promoteur, il sera fait application du prix le plus élevé du jour de la déclaration fiscale.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "valorisation",
+      "prix cession",
+      "marché carbone",
+      "variation positive",
+      "prix plus élevé"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "9",
+    "titre": "Montant des droits",
+    "contenu": "Art.9.- Le montant des droits à payer est déterminé par application du taux correspondant de la redevance, à la base valorisée du volume de crédits carbone effectivement délivrés au promoteur telle qu'indiquée à l'article 8 des présentes dispositions.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "montant droits",
+      "taux",
+      "base valorisée",
+      "article 8"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "10",
+    "titre": "Taux de la redevance",
+    "contenu": "Section 5 - Taux de la redevance\nArt.10.- Il est établi deux (2) taux de calcul de la redevance de crédits carbone (RCC) en fonction des classes de projets définies par le code forestier :\n• 20 % pour la redevance des crédits carbone issus des projets de classes 1 et 2 ;\n• 15 % pour la redevance des crédits carbone issus des projets de classes 3 et 4.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "taux redevance",
+      "20% classes 1 et 2",
+      "15% classes 3 et 4",
+      "code forestier"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "11",
+    "titre": "Fait générateur et exigibilité",
+    "contenu": "Section 6 - Fait générateur de la redevance et exigibilité des droits\nArt.11.- Le fait générateur de la redevance des crédits carbone est la délivrance effective des crédits carbone au promoteur par l'organisme d'émission et certification des crédits carbone.\nLa redevance de crédit carbone est exigible, auprès du promoteur du projet, dans les trois (3) mois qui suivent la délivrance effective des crédits carbone au promoteur.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "fait générateur",
+      "délivrance effective",
+      "organisme certification",
+      "exigibilité",
+      "3 mois"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "12",
+    "titre": "Non-exigibilité en cas de buffer",
+    "contenu": "Art.12.- Le fait générateur de la redevance est considéré comme n'étant pas réalisé et la redevance n'est pas exigible lorsque les crédits émis et certifiés au nom du promoteur sont entièrement affectés à la constitution du buffer de crédits carbone.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "non-exigibilité",
+      "buffer",
+      "affectation totale"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "13",
+    "titre": "Obligations de droit commun",
+    "contenu": "Section 7 - Obligations des redevables\nArt.13.- Les promoteurs de projets de génération de crédits carbone sont, sous réserve des dispositions contraires prévues par la loi, soumis aux obligations de droit commun en matière d'autres impôts droits et taxes prévus par le Code général des impôts.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "obligations droit commun",
+      "impôts taxes",
+      "CGI"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "14",
+    "titre": "Obligations au démarrage du projet",
+    "contenu": "Art.14.- Les promoteurs de projets sont tenus de faire parvenir à l'administration fiscale, dans le délai des six (6) mois qui suivent le démarrage du projet, nonobstant les obligations liées à l'immatriculation et à la déclaration d'existence des projets :\n• une copie du plan de projet certifié et validé par un organisme de vérification et de validation des projets (OVV) ;\n• une copie du contrat de prestation signé avec une entité de droit congolais, dans le cas où la réalisation du projet serait confiée, par le promoteur, à une entité tierce.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "obligations démarrage",
+      "6 mois",
+      "plan projet",
+      "OVV",
+      "contrat prestation",
+      "entité tierce"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "15",
+    "titre": "Obligations annuelles",
+    "contenu": "Art.15.- Les promoteurs de projets sont également tenus de faire parvenir à l'administration fiscale, dans le délai des six (6) mois qui suivent la fin de chaque exercice annuel :\n• une copie du rapport d'activités annuel de l'exercice clos, comprenant les informations relatives à l'avancement du projet, à la génération, la certification, l'émission, l'enregistrement et leur délivrance effective des crédits carbone ;\n• un état récapitulatif des sommes versées à l'entité tierce réalisant les projets pour leur compte ;\n• un état des dépenses engagées dans le cadre de la participation aux projets communautaires, à caractère obligatoire et volontaire.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "obligations annuelles",
+      "rapport activités",
+      "6 mois",
+      "état récapitulatif",
+      "projets communautaires"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "16",
+    "titre": "Sanctions pour inobservation",
+    "contenu": "Art.16.- L'inobservation des obligations fixées à l'article 14 ci-dessus expose le promoteur au paiement d'une amende de 50.000.000 FCFA par obligation.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "sanctions",
+      "amende 50 000 000 FCFA",
+      "par obligation"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "17",
+    "titre": "Obligations déclaratives et paiement spontané",
+    "contenu": "Art.17.- Les promoteurs de projets sont soumis aux obligations déclaratives et de paiement spontané de la redevance de crédit carbone (RCC) dans le délai des trois (3), qui suivent leur délivrance effective des crédits carbone par l'organisme de certification.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "obligations déclaratives",
+      "paiement spontané",
+      "3 mois",
+      "organisme certification"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "18",
+    "titre": "Défaut de déclaration et responsabilité solidaire",
+    "contenu": "Art.18.- Le défaut de déclaration et de paiement, dans le délai susmentionné, expose le promoteur au paiement d'une amende égale au montant des droits dus, sans préjudice de la régularisation des droits en cause.\nL'entité tierce qui réalise le projet pour le compte du promoteur est solidairement responsable du promoteur pour l'accomplissement des obligations déclaratives et de paiement visé aux articles 14, 15, 16 et 17 des présentes dispositions.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "défaut déclaration",
+      "amende",
+      "responsabilité solidaire",
+      "entité tierce"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "19",
+    "titre": "Droit de communication",
+    "contenu": "Section 8 - Dispositions relatives au contrôle\nArt.19.- Pour le contrôle de la redevance de crédits carbone, l'administration fiscale exerce le droit de communication auprès des agences et des entités publiques relevant des ministères en charge de l'économie forestière, de l'environnement, de l'administration du territoire et de toutes autres entités publiques tenant lieu.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "contrôle",
+      "droit de communication",
+      "économie forestière",
+      "environnement"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "20",
+    "titre": "Mécanismes de recoupement",
+    "contenu": "Art.20.- L'administration fiscale est tenue de mettre en place des mécanismes de recoupement d'informations auprès des organismes habilités chargés de :\n• la vérification et la validation des projets ;\n• la certification, l'émission, l'enregistrement et la délivrance effective des crédits carbone.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "recoupement informations",
+      "organismes habilités",
+      "vérification",
+      "certification"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "21",
+    "titre": "Collecte de renseignements à but fiscal",
+    "contenu": "Art.21.- Elle peut faire usage de tous les moyens d'information disponibles pour la collecte des renseignements à but fiscal, en ce qui concerne notamment :\n• les projets de génération de crédits carbone développés au Congo ;\n• l'utilisation des crédits carbone affectés au buffer de crédits carbone par projet ;\n• les prix de cession périodique des crédits carbone sur le marché.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "renseignements fiscaux",
+      "projets crédits carbone",
+      "buffer",
+      "prix cession marché"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "22",
+    "titre": "Recouvrement de la redevance",
+    "contenu": "Section 9 - Recouvrement et répartition du produit de la redevance\nArt.22.- Le recouvrement de la redevance est assuré par le comptable public assignataire au sein de la résidence fiscale du promoteur du projet, conformément aux dispositions du Code général des impôts.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "recouvrement",
+      "comptable public",
+      "résidence fiscale",
+      "CGI"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "23",
+    "titre": "Répartition du produit",
+    "contenu": "Art.23.- Le produit de la redevance de crédits carbone est réparti comme suit :\n• 70 % au Trésor public ;\n• 30 % aux collectivités locales du lieu de l'implantation des projets.\nLa part destinée aux collectivités locales est exclusivement destinée à la réalisation des projets sociaux de la collectivité.",
+    "tome": "TFNC4-RCC",
+    "chapitre": "4.17. Redevance de crédits carbone",
+    "keywords": [
+      "répartition",
+      "Trésor public 70%",
+      "collectivités locales 30%",
+      "projets sociaux"
+    ],
+    "source": "Redevance de crédits carbone (RCC)"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de la taxe",
+    "contenu": "[NB - Loi de finances pour 2026]\nArt.1.- Il est institué au profit du budget de l'État une taxe sur les activités polluantes.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "taxe activités polluantes",
+      "budget État"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "2",
+    "titre": "Personnes assujetties",
+    "contenu": "Art.2.- Sont assujettis à la taxe sur les activités polluantes, les personnes physiques ou morales, publiques ou privées, qui exercent des activités polluantes, notamment :\n• le rejet de substances polluantes dans l'air, l'eau ou le sol ;\n• la production, l'importation, le stockage, le traitement ou l'élimination de déchets polluants ;\n• l'exploitation de ressources naturelles ou d'installation générant des nuisances ou des risques environnementaux.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "personnes assujetties",
+      "rejet substances polluantes",
+      "déchets polluants",
+      "ressources naturelles",
+      "risques environnementaux"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "3",
+    "titre": "Fait générateur",
+    "contenu": "Art.3.- Le fait générateur de la taxe sur les activités polluantes est l'exercice effectif d'une activité polluante.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "fait générateur",
+      "exercice effectif",
+      "activité polluante"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "4",
+    "titre": "Assiette et taux",
+    "contenu": "Art.4.- La taxe sur les activités polluantes est assise sur les quantités produites, importées, extraites ou éliminées.\nLes taux sont fixés comme suit :\n• emballages plastiques : 500 FCFA/KG\n• extraction de minerais : 5.000 FCFA/m3\n• déchets industriels dangereux : 2.500 FCFA/tonne ;\n• lubrifiants, peintures, solvants, pesticides : 500 FCFA/litre.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "assiette",
+      "taux",
+      "emballages plastiques 500 FCFA/kg",
+      "minerais 5000 FCFA/m³",
+      "déchets industriels 2500 FCFA/tonne",
+      "lubrifiants 500 FCFA/litre"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "5",
+    "titre": "Liquidation et recouvrement",
+    "contenu": "Art.5.- Les taxes sont liquidées, déclarées, contrôlées et recouvrées comme en matière des impôts et taxes prévus par le Code général des impôts.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "liquidation",
+      "déclaration",
+      "contrôle",
+      "recouvrement",
+      "CGI"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "6",
+    "titre": "Affectation du produit",
+    "contenu": "Art.6.- Le produit de la taxe est reversé au Trésor public conformément à la réglementation en vigueur.",
+    "tome": "TFNC4-POLL",
+    "chapitre": "4.18. Taxe sur les activités polluantes",
+    "keywords": [
+      "produit taxe",
+      "Trésor public"
+    ],
+    "source": "Taxe sur les activités polluantes"
+  },
+  {
+    "numero": "1",
+    "titre": "Institution de l'attestation",
+    "contenu": "[NB - Loi de finances pour 2018]\nArt.1.- Il est institué une attestation de non-redevance fiscale valable un trimestre, délivré à toutes les personnes physiques et morales domiciliées ou résidant habituellement en République du Congo.",
+    "tome": "TFNC5-ATTEST",
+    "chapitre": "5.1. Attestation de non-redevance fiscale",
+    "keywords": [
+      "attestation non-redevance fiscale",
+      "validité trimestrielle",
+      "personnes physiques morales",
+      "domicile Congo"
+    ],
+    "source": "Attestation de non-redevance fiscale"
+  },
+  {
+    "numero": "2",
+    "titre": "Conditions de délivrance",
+    "contenu": "Art.2.- L'attestation de non-redevance fiscale est délivrée moyennant le paiement d'une somme de 3.000 FCFA, par le chef de la résidence fiscale dans laquelle est situé le siège de l'entreprise, de son principal établissement ou du domicile du contribuable, pour les personnes physiques et morales exerçant une activité industrielle, commerciale, artisanale ou non commerciale, sur présentation :\n• du numéro d'identification unique (NIU) ;\n• des quittances justifiant le paiement des impôts, droits et taxes dus au titre du trimestre précédent ;\n• du certificat de moralité fiscale de l'année précédente.",
+    "tome": "TFNC5-ATTEST",
+    "chapitre": "5.1. Attestation de non-redevance fiscale",
+    "keywords": [
+      "délivrance",
+      "3 000 FCFA",
+      "chef résidence fiscale",
+      "NIU",
+      "quittances impôts",
+      "certificat moralité fiscale"
+    ],
+    "source": "Attestation de non-redevance fiscale"
+  },
+  {
+    "numero": "3",
+    "titre": "Effets de l'attestation",
+    "contenu": "Art.3.- L'attestation de non-redevance fiscale confère, au cours de la période, à son titulaire le droit :\n• d'exercer une activité commerciale, industrielle, artisanale ou non commerciale ;\n• de soumissionner aux marchés et commandes de l'État ;\n• de bénéficier des crédits bancaires ;\n• d'obtenir la qualité d'importateur ou d'exportateur.",
+    "tome": "TFNC5-ATTEST",
+    "chapitre": "5.1. Attestation de non-redevance fiscale",
+    "keywords": [
+      "effets attestation",
+      "droit exercer activité",
+      "marchés État",
+      "crédits bancaires",
+      "importateur exportateur"
+    ],
+    "source": "Attestation de non-redevance fiscale"
+  },
+  {
+    "numero": "4",
+    "titre": "Exigibilité lors des contrôles",
+    "contenu": "Art.4.- (Loi 2020-23) L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité.",
+    "tome": "TFNC5-ATTEST",
+    "chapitre": "5.1. Attestation de non-redevance fiscale",
+    "keywords": [
+      "exigibilité",
+      "contrôle inopiné",
+      "vérification comptabilité"
+    ],
+    "source": "Attestation de non-redevance fiscale"
+  },
+  {
+    "numero": "5",
+    "titre": "Sanctions",
+    "contenu": "Art.5.- (Loi 2020-23) Toute infraction aux présentes dispositions entraîne pour les contribuables une amende de 100.000 FCFA par trimestre. L'attestation de non-redevance fiscale doit être exigible lors d'un contrôle inopiné ou d'une vérification de comptabilité.",
+    "tome": "TFNC5-ATTEST",
+    "chapitre": "5.1. Attestation de non-redevance fiscale",
+    "keywords": [
+      "sanctions",
+      "amende 100 000 FCFA",
+      "infraction",
+      "trimestre"
+    ],
+    "source": "Attestation de non-redevance fiscale"
   }
 ]

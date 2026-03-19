@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
@@ -8,19 +9,23 @@ interface Props {
   loaded: boolean;
 }
 
-const FEATURE_ICONS = [
-  { icon: "book-outline" as const, titleKey: "landing.feat1Title", descKey: "landing.feat1Desc", color: "#00815d" },
-  { icon: "chatbubbles-outline" as const, titleKey: "landing.feat2Title", descKey: "landing.feat2Desc", color: "#0284c7" },
-  { icon: "calculator-outline" as const, titleKey: "landing.feat4Title", descKey: "landing.feat4Desc", color: "#4f46e5" },
-  { icon: "mic-outline" as const, titleKey: "landing.feat3Title", descKey: "landing.feat3Desc", color: "#9333ea" },
-  { icon: "calendar-outline" as const, titleKey: "landing.feat6Title", descKey: "landing.feat6Desc", color: "#ef4444" },
-  { icon: "cloud-offline-outline" as const, titleKey: "landing.feat9Title", descKey: "landing.feat9Desc", color: "#d97706" },
-  { icon: "people-outline" as const, titleKey: "landing.feat7Title", descKey: "landing.feat7Desc", color: "#0891b2" },
-  { icon: "language-outline" as const, titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#D4A843" },
+const FEATURE_ICONS: { icon: keyof typeof Ionicons.glyphMap; titleKey: string; descKey: string; color: string }[] = [
+  { icon: "document-text-outline", titleKey: "landing.feat1Title", descKey: "landing.feat1Desc", color: "#00815d" },
+  { icon: "book-outline", titleKey: "landing.feat2Title", descKey: "landing.feat2Desc", color: "#2563eb" },
+  { icon: "mic-outline", titleKey: "landing.feat3Title", descKey: "landing.feat3Desc", color: "#9333ea" },
+  { icon: "calculator-outline", titleKey: "landing.feat4Title", descKey: "landing.feat4Desc", color: "#ea580c" },
+  { icon: "chatbubbles-outline", titleKey: "landing.feat5Title", descKey: "landing.feat5Desc", color: "#0891b2" },
+  { icon: "calendar-outline", titleKey: "landing.feat6Title", descKey: "landing.feat6Desc", color: "#dc2626" },
+  { icon: "people-outline", titleKey: "landing.feat7Title", descKey: "landing.feat7Desc", color: "#4f46e5" },
+  { icon: "moon-outline", titleKey: "landing.feat8Title", descKey: "landing.feat8Desc", color: "#7c3aed" },
+  { icon: "cloud-offline-outline", titleKey: "landing.feat9Title", descKey: "landing.feat9Desc", color: "#059669" },
+  { icon: "phone-portrait-outline", titleKey: "landing.feat10Title", descKey: "landing.feat10Desc", color: "#d97706" },
 ];
 
 export default function LandingFeatures({ isMobile, loaded }: Props) {
   const { t } = useTranslation();
+  const { isTablet } = useResponsive();
+  const cols = isMobile ? 1 : isTablet ? 2 : 3;
 
   return (
     <View
@@ -61,15 +66,15 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
           flexDirection: "row",
           flexWrap: "wrap",
           gap: 16,
+          justifyContent: "center",
         }}
       >
         {FEATURE_ICONS.map((feat, i) => (
           <View
             key={i}
             style={{
-              width: isMobile ? "100%" : "48%",
+              width: cols === 1 ? "100%" : cols === 2 ? "47%" : "30%",
               flexGrow: 1,
-              flexBasis: isMobile ? "100%" : 220,
               backgroundColor: "rgba(255,255,255,0.015)",
               borderWidth: 1,
               borderColor: "rgba(255,255,255,0.05)",
