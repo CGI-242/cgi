@@ -40,7 +40,7 @@ export default function LandingContact({ isMobile }: Props) {
         style={{
           flexDirection: isMobile ? "column" : "row",
           gap: 20,
-          maxWidth: 800,
+          maxWidth: 960,
           alignSelf: "center",
           width: "100%",
           justifyContent: "center",
@@ -52,11 +52,12 @@ export default function LandingContact({ isMobile }: Props) {
           activeOpacity={0.7}
           style={{
             flex: isMobile ? undefined : 1,
+            minWidth: isMobile ? undefined : 220,
             borderRadius: 16,
             borderWidth: 1,
             borderColor: "rgba(26,58,92,0.15)",
             backgroundColor: "rgba(26,58,92,0.03)",
-            padding: 28,
+            padding: isMobile ? 28 : 36,
             alignItems: "center",
           }}
         >
@@ -103,11 +104,12 @@ export default function LandingContact({ isMobile }: Props) {
         <View
           style={{
             flex: isMobile ? undefined : 1,
+            minWidth: isMobile ? undefined : 220,
             borderRadius: 16,
             borderWidth: 1,
             borderColor: "rgba(0,0,0,0.08)",
             backgroundColor: "#f8f9fa",
-            padding: 28,
+            padding: isMobile ? 28 : 36,
             alignItems: "center",
           }}
         >
@@ -152,11 +154,12 @@ export default function LandingContact({ isMobile }: Props) {
         <View
           style={{
             flex: isMobile ? undefined : 1,
+            minWidth: isMobile ? undefined : 220,
             borderRadius: 16,
             borderWidth: 1,
             borderColor: "rgba(0,0,0,0.08)",
             backgroundColor: "#f8f9fa",
-            padding: 28,
+            padding: isMobile ? 28 : 36,
             alignItems: "center",
           }}
         >
