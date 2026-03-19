@@ -2,7 +2,7 @@
   "meta": {
     "document": "Numéro d'identification unique (NIU) - Décret d'institution",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC5-NIU1",
     "partie": null,
     "livre": null,
@@ -30,7 +30,7 @@
       "article": "Art. 2",
       "titre": "Définition et champ d'application",
       "texte": [
-        "Art.2.- Le numéro d'identification unique est une immatriculation obligatoire du contribuable, attribuée par la direction générale des impôts, afin de constituer une banque de données utilisée par les administrations du ministère de l'Économie, des finances et du budget, et, le cas échéant, par toute autre administration publique.",
+        "Art.2.- Le numéro d'identification unique est une immatriculation obligatoire du contribuable, attribuée par la direction générale des impôts, afin de constituer une banque de données utilisées par les administrations du ministère de l'économie, des finances et budget et, le cas échéant, par toute autre administration publique.",
         "Il s'applique à toute personne physique ou morale sur le territoire national.",
         "Il est requis pour toutes les formalités et transactions à caractère économique auprès de toutes les administrations, entreprises publiques et de tout organisme public ou privé."
       ],
@@ -48,7 +48,7 @@
       "article": "Art. 3",
       "titre": "Systèmes d'information et interconnexion",
       "texte": [
-        "Art.3.- Tous les systèmes de traitements automatisés du ministère de l'Économie, des finances et du budget, et, le cas échéant, des autres administrations, doivent avoir pour clé de connexion le numéro d'identification unique, afin d'assurer un meilleur échange des informations sur les contribuables.",
+        "Art.3.- Tous les systèmes de traitements automatisés du ministère de l'économie, des finances et du budget et, le cas échéant, des autres administrations, doivent avoir pour clé de connexion le numéro d'identification unique, afin d'assurer un meilleur échange des informations sur les contribuables.",
         "Toutes les applications informatiques doivent être conçues ou modifiées de manière que le défaut du numéro d'identification unique ne permette pas la mise en œuvre du traitement sollicité."
       ],
       "mots_cles": [

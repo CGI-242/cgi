@@ -3,7 +3,6 @@ import { useState } from "react";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
-import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
@@ -11,9 +10,11 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
 import TurnstileWidget from "@/components/auth/TurnstileWidget";
 
+const BG = "#1A3A5C";
+const GOLD = "#D4A843";
+
 export default function ForgotPassword() {
   const { t } = useTranslation();
-  const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const [emailLocal, setEmailLocal] = useState("");
   const [error, setError] = useState("");
@@ -50,34 +51,34 @@ export default function ForgotPassword() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={{ flex: 1, backgroundColor: colors.background }}
+      style={{ flex: 1, backgroundColor: "#ffffff" }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 420, backgroundColor: colors.card, padding: isMobile ? 20 : 32 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: BG, padding: isMobile ? 20 : 32, borderRadius: 16 }}>
           <AuthLogo />
 
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: "#e8e6e1", marginBottom: 4 }}>
             {t("auth.forgotPassword")}
           </Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textMuted, marginBottom: 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "rgba(255,255,255,0.55)", marginBottom: 24 }}>
             {t("auth.enterEmailReset")}
           </Text>
 
           {/* Erreur */}
           {error ? (
-            <View style={{ backgroundColor: colors.danger + "15", padding: 12, marginBottom: 16 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: 16 }}>{error}</Text>
+            <View style={{ backgroundColor: "rgba(239,68,68,0.08)", padding: 12, marginBottom: 16, borderRadius: 8 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: "#ef4444", fontSize: 16 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Email */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 8 }}>
-            Email <Text style={{ color: colors.danger }}>*</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: "#e8e6e1", marginBottom: 8 }}>
+            Email <Text style={{ color: "#f87171" }}>*</Text>
           </Text>
           <TextInput
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 12, fontSize: 18, color: colors.text, marginBottom: 16 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "rgba(255,255,255,0.08)", padding: 12, fontSize: 18, color: "#e8e6e1", marginBottom: 16, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)", borderRadius: 8 }}
             placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor={colors.textMuted}
+            placeholderTextColor="rgba(255,255,255,0.35)"
             value={emailLocal}
             onChangeText={(text) => {
               setEmailLocal(text);
@@ -94,7 +95,7 @@ export default function ForgotPassword() {
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: 16, alignItems: "center", opacity: loading ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: GOLD, padding: 16, alignItems: "center", borderRadius: 10, opacity: loading ? 0.7 : 1 }}
             onPress={handleSendCode}
             activeOpacity={0.8}
             disabled={loading}
@@ -104,7 +105,7 @@ export default function ForgotPassword() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 18 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: BG, fontSize: 18 }}>
                 {t("auth.sendCode")}
               </Text>
             )}
@@ -112,7 +113,7 @@ export default function ForgotPassword() {
 
           {/* Retour */}
           <TouchableOpacity style={{ alignItems: "center", marginTop: 16 }} onPress={() => router.replace("/(auth)")} accessibilityLabel={t("auth.backToLogin")} accessibilityRole="link">
-            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 16, color: colors.primary, textDecorationLine: "underline" }}>
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 16, color: GOLD, textDecorationLine: "underline" }}>
               {t("auth.backToLogin")}
             </Text>
           </TouchableOpacity>

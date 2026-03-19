@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
-    "build:web": "EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api npx expo export --platform web",
+    "build:web": "EXPO_PUBLIC_API_URL=/api npx expo export --platform web",
     "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@${DEPLOY_VPS_HOST}:/var/www/cgi242/"
   },
   "dependencies": {

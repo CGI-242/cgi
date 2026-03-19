@@ -73,7 +73,7 @@ jobs:
 
             # --- Generer mobile/.env ---
             cat > mobile/.env << 'ENVEOF'
-            EXPO_PUBLIC_API_URL=https://cgi242.normx-ai.com/api
+            EXPO_PUBLIC_API_URL=/api
             EXPO_PUBLIC_SENTRY_DSN=${{ secrets.SENTRY_DSN }}
             EXPO_PUBLIC_TURNSTILE_SITE_KEY=${{ secrets.TURNSTILE_SITE_KEY }}
             ENVEOF

@@ -4,7 +4,6 @@ import { router, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
-import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { authApi } from "@/lib/api/auth";
 import axios from "axios";
@@ -13,6 +12,9 @@ import PasswordFields from "@/components/auth/PasswordFields";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import AuthLogo from "@/components/auth/AuthLogo";
 import TurnstileWidget from "@/components/auth/TurnstileWidget";
+
+const BG = "#1A3A5C";
+const GOLD = "#D4A843";
 
 const COUNTRIES = [
   { code: "242", name: "Congo-Brazzaville", flag: "\u{1F1E8}\u{1F1EC}", available: true },
@@ -38,9 +40,21 @@ const COUNTRIES = [
   { code: "250", name: "Rwanda", flag: "\u{1F1F7}\u{1F1FC}", available: false },
 ];
 
+const authColors = {
+  text: "#e8e6e1",
+  textMuted: "rgba(255,255,255,0.55)",
+  input: "rgba(255,255,255,0.08)",
+  primary: GOLD,
+  danger: "#ef4444",
+  border: "rgba(255,255,255,0.12)",
+  success: "#22c55e",
+  sidebarText: BG,
+  card: BG,
+  background: "#ffffff",
+};
+
 export default function Register() {
   const { t } = useTranslation();
-  const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const { invitation } = useLocalSearchParams<{ invitation?: string }>();
   const hasInvitation = !!invitation;
@@ -127,35 +141,37 @@ export default function Register() {
 
   const inputStyle = {
     width: "100%" as const,
-    backgroundColor: colors.input,
+    backgroundColor: "rgba(255,255,255,0.08)",
     padding: isMobile ? 10 : 12,
     fontSize: isMobile ? 15 : 16,
-    color: colors.text,
+    color: "#e8e6e1",
     borderRadius: 8,
     fontFamily: fonts.regular,
     fontWeight: fontWeights.regular,
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.12)",
   };
 
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={{ flex: 1, backgroundColor: colors.background }}
+      style={{ flex: 1, backgroundColor: "#ffffff" }}
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 12 : 24, paddingVertical: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 520, backgroundColor: colors.card, padding: isMobile ? 16 : 32, borderRadius: isMobile ? 12 : 16 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 520, backgroundColor: BG, padding: isMobile ? 16 : 32, borderRadius: isMobile ? 12 : 16 }}>
           <AuthLogo size={isMobile ? "sm" : "md"} />
 
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: isMobile ? 20 : 24, color: colors.text, marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: isMobile ? 20 : 24, color: "#e8e6e1", marginBottom: 4 }}>
             {hasInvitation ? t("auth.joinTeam") : t("auth.createCompany")}
           </Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 13 : 14, color: colors.textMuted, marginBottom: isMobile ? 16 : 24 }}>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 13 : 14, color: "rgba(255,255,255,0.55)", marginBottom: isMobile ? 16 : 24 }}>
             {hasInvitation ? t("auth.invitedDescription") : t("auth.companyAdmin")}
           </Text>
 
           {/* Bannière invitation */}
           {hasInvitation && (
-            <View style={{ backgroundColor: colors.primary + "15", borderLeftWidth: 4, borderLeftColor: colors.primary, padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.primary, fontSize: isMobile ? 13 : 14 }}>
+            <View style={{ backgroundColor: GOLD + "15", borderLeftWidth: 4, borderLeftColor: GOLD, padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD, fontSize: isMobile ? 13 : 14 }}>
                 {t("auth.invitedBanner")}
               </Text>
             </View>
@@ -163,21 +179,21 @@ export default function Register() {
 
           {/* Erreur */}
           {error ? (
-            <View style={{ backgroundColor: colors.danger + "15", padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.danger, fontSize: isMobile ? 13 : 14 }}>{error}</Text>
+            <View style={{ backgroundColor: "rgba(239,68,68,0.08)", padding: isMobile ? 10 : 12, marginBottom: isMobile ? 12 : 16, borderRadius: 8 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: "#ef4444", fontSize: isMobile ? 13 : 14 }}>{error}</Text>
             </View>
           ) : null}
 
           {/* Nom du cabinet (masqué si invitation) */}
           {!hasInvitation && (
             <>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
-                {t("auth.company")} <Text style={{ color: colors.danger }}>*</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: "#e8e6e1", marginBottom: isMobile ? 6 : 8 }}>
+                {t("auth.company")} <Text style={{ color: "#f87171" }}>*</Text>
               </Text>
               <TextInput
                 style={{ ...inputStyle, marginBottom: isMobile ? 12 : 16 }}
                 placeholder={t("auth.companyPlaceholder")}
-                placeholderTextColor={colors.textMuted}
+                placeholderTextColor="rgba(255,255,255,0.35)"
                 value={form.entrepriseNom}
                 onChangeText={(v) => updateField("entrepriseNom", v)}
                 accessibilityLabel={t("auth.company")}
@@ -186,8 +202,8 @@ export default function Register() {
           )}
 
           {/* Pays */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
-            {t("auth.country")} <Text style={{ color: colors.danger }}>*</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: "#e8e6e1", marginBottom: isMobile ? 6 : 8 }}>
+            {t("auth.country")} <Text style={{ color: "#f87171" }}>*</Text>
           </Text>
           <TouchableOpacity
             onPress={() => setShowCountryPicker(true)}
@@ -203,14 +219,14 @@ export default function Register() {
           >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
               <Text style={{ fontSize: 22 }}>{selectedCountry.flag}</Text>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 15 : 16, color: colors.text }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 15 : 16, color: "#e8e6e1" }}>
                 {selectedCountry.name}
               </Text>
               {!selectedCountry.available && (
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.textMuted, textTransform: "uppercase" }}>{t("common.comingSoon")}</Text>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: "rgba(255,255,255,0.55)", textTransform: "uppercase" }}>{t("common.comingSoon")}</Text>
               )}
             </View>
-            <Ionicons name="chevron-down" size={18} color={colors.textMuted} />
+            <Ionicons name="chevron-down" size={18} color="rgba(255,255,255,0.55)" />
           </TouchableOpacity>
 
           <Modal visible={showCountryPicker} transparent animationType="fade">
@@ -219,9 +235,9 @@ export default function Register() {
               onPress={() => setShowCountryPicker(false)}
               style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: "center", alignItems: "center", padding: 24 }}
             >
-              <View style={{ width: "100%", maxWidth: 400, maxHeight: "70%", backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }}>
-                <View style={{ padding: 16, borderBottomWidth: 1, borderBottomColor: colors.border }}>
-                  <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 18, color: colors.text }}>{t("auth.chooseCountry")}</Text>
+              <View style={{ width: "100%", maxWidth: 400, maxHeight: "70%", backgroundColor: BG, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)" }}>
+                <View style={{ padding: 16, borderBottomWidth: 1, borderBottomColor: "rgba(255,255,255,0.12)" }}>
+                  <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 18, color: "#e8e6e1" }}>{t("auth.chooseCountry")}</Text>
                 </View>
                 <FlatList
                   data={COUNTRIES}
@@ -240,21 +256,21 @@ export default function Register() {
                         padding: 14,
                         paddingHorizontal: 16,
                         borderBottomWidth: 1,
-                        borderBottomColor: colors.border,
-                        backgroundColor: item.code === form.pays ? colors.primary + "15" : "transparent",
+                        borderBottomColor: "rgba(255,255,255,0.12)",
+                        backgroundColor: item.code === form.pays ? GOLD + "15" : "transparent",
                         opacity: item.available ? 1 : 0.4,
                       }}
                     >
                       <Text style={{ fontSize: 24, marginRight: 12 }}>{item.flag}</Text>
-                      <Text style={{ fontFamily: item.code === form.pays ? fonts.bold : fonts.regular, fontWeight: item.code === form.pays ? fontWeights.bold : fontWeights.regular, flex: 1, fontSize: 17, color: colors.text }}>
+                      <Text style={{ fontFamily: item.code === form.pays ? fonts.bold : fonts.regular, fontWeight: item.code === form.pays ? fontWeights.bold : fontWeights.regular, flex: 1, fontSize: 17, color: "#e8e6e1" }}>
                         {item.name}
                       </Text>
-                      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>+{item.code}</Text>
+                      <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "rgba(255,255,255,0.55)" }}>+{item.code}</Text>
                       {!item.available && (
-                        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.textMuted, marginLeft: 8 }}>{t("common.comingSoon")}</Text>
+                        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: "rgba(255,255,255,0.55)", marginLeft: 8 }}>{t("common.comingSoon")}</Text>
                       )}
                       {item.code === form.pays && (
-                        <Ionicons name="checkmark" size={18} color={colors.primary} style={{ marginLeft: 8 }} />
+                        <Ionicons name="checkmark" size={18} color={GOLD} style={{ marginLeft: 8 }} />
                       )}
                     </TouchableOpacity>
                   )}
@@ -266,26 +282,26 @@ export default function Register() {
           {/* Nom + Prénom */}
           <View style={{ flexDirection: isMobile ? "column" : "row", gap: isMobile ? 10 : 16, marginBottom: isMobile ? 12 : 16 }}>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
-                {t("auth.lastName")} <Text style={{ color: colors.danger }}>*</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: "#e8e6e1", marginBottom: isMobile ? 6 : 8 }}>
+                {t("auth.lastName")} <Text style={{ color: "#f87171" }}>*</Text>
               </Text>
               <TextInput
                 style={inputStyle}
                 placeholder={t("auth.lastName")}
-                placeholderTextColor={colors.textMuted}
+                placeholderTextColor="rgba(255,255,255,0.35)"
                 value={form.nom}
                 onChangeText={(v) => updateField("nom", v)}
                 accessibilityLabel={t("auth.lastName")}
               />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
-                {t("auth.firstName")} <Text style={{ color: colors.danger }}>*</Text>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: "#e8e6e1", marginBottom: isMobile ? 6 : 8 }}>
+                {t("auth.firstName")} <Text style={{ color: "#f87171" }}>*</Text>
               </Text>
               <TextInput
                 style={inputStyle}
                 placeholder={t("auth.firstName")}
-                placeholderTextColor={colors.textMuted}
+                placeholderTextColor="rgba(255,255,255,0.35)"
                 value={form.prenom}
                 onChangeText={(v) => updateField("prenom", v)}
                 accessibilityLabel={t("auth.firstName")}
@@ -299,17 +315,17 @@ export default function Register() {
             emailError={emailError}
             emailChecking={false}
             onChangeEmail={(v) => updateField("email", v)}
-            colors={colors}
+            colors={authColors}
           />
 
           {/* Téléphone */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.text, marginBottom: isMobile ? 6 : 8 }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: "#e8e6e1", marginBottom: isMobile ? 6 : 8 }}>
             {t("auth.phone")}
           </Text>
           <TextInput
             style={{ ...inputStyle, marginBottom: isMobile ? 12 : 16 }}
             placeholder={t("auth.phonePlaceholder")}
-            placeholderTextColor={colors.textMuted}
+            placeholderTextColor="rgba(255,255,255,0.35)"
             value={form.telephone}
             onChangeText={(v) => updateField("telephone", v.replace(/[^\d\s+()-]/g, ""))}
             keyboardType="phone-pad"
@@ -324,14 +340,14 @@ export default function Register() {
             onChangePassword={(v) => updateField("password", v)}
             onChangeConfirmPassword={(v) => updateField("confirmPassword", v)}
             onToggleShowPassword={() => setShowPassword(!showPassword)}
-            colors={colors}
+            colors={authColors}
           />
 
           <TurnstileWidget onToken={setTurnstileToken} />
 
           {/* Bouton */}
           <TouchableOpacity
-            style={{ width: "100%", backgroundColor: colors.primary, padding: isMobile ? 14 : 16, alignItems: "center", marginTop: isMobile ? 4 : 8, borderRadius: 8, opacity: loading ? 0.7 : 1 }}
+            style={{ width: "100%", backgroundColor: GOLD, padding: isMobile ? 14 : 16, alignItems: "center", marginTop: isMobile ? 4 : 8, borderRadius: 10, opacity: loading ? 0.7 : 1 }}
             onPress={handleRegister}
             activeOpacity={0.8}
             disabled={loading}
@@ -341,7 +357,7 @@ export default function Register() {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: isMobile ? 15 : 16 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: BG, fontSize: isMobile ? 15 : 16 }}>
                 {t("auth.createAccount")}
               </Text>
             )}
@@ -349,9 +365,9 @@ export default function Register() {
 
           {/* Lien connexion */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: isMobile ? 16 : 24 }}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 13 : 14, color: colors.textMuted }}>{t("auth.alreadyHaveAccount")} </Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: isMobile ? 13 : 14, color: "rgba(255,255,255,0.55)" }}>{t("auth.alreadyHaveAccount")} </Text>
             <TouchableOpacity onPress={() => router.replace("/(auth)/")} accessibilityLabel={t("auth.signIn")} accessibilityRole="link">
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: colors.primary, textDecorationLine: "underline" }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: isMobile ? 13 : 14, color: GOLD, textDecorationLine: "underline" }}>
                 {t("auth.signIn")}
               </Text>
             </TouchableOpacity>
