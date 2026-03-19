@@ -16,7 +16,7 @@ export default function LandingContact({ isMobile }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#1A3A5C",
+          color: "#e8e6e1",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -26,7 +26,7 @@ export default function LandingContact({ isMobile }: Props) {
       <Text
         style={{
           textAlign: "center",
-          color: "#6b7280",
+          color: "#5a5a65",
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -78,7 +78,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#e8e6e1",
               marginBottom: 6,
             }}
           >
@@ -102,8 +102,8 @@ export default function LandingContact({ isMobile }: Props) {
             flex: isMobile ? undefined : 1,
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: "rgba(0,0,0,0.08)",
-            backgroundColor: "#f9fafb",
+            borderColor: "rgba(255,255,255,0.08)",
+            backgroundColor: "rgba(255,255,255,0.015)",
             padding: 28,
             alignItems: "center",
           }}
@@ -113,20 +113,20 @@ export default function LandingContact({ isMobile }: Props) {
               width: 48,
               height: 48,
               borderRadius: 12,
-              backgroundColor: "rgba(0,0,0,0.04)",
+              backgroundColor: "rgba(255,255,255,0.06)",
               alignItems: "center",
               justifyContent: "center",
               marginBottom: 16,
             }}
           >
-            <Ionicons name="location-outline" size={24} color="#6b7280" />
+            <Ionicons name="location-outline" size={24} color="#5a5a65" />
           </View>
           <Text
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#e8e6e1",
               marginBottom: 6,
             }}
           >
@@ -137,7 +137,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 16,
-              color: "#6b7280",
+              color: "#5a5a65",
               textAlign: "center",
             }}
           >
@@ -151,8 +151,8 @@ export default function LandingContact({ isMobile }: Props) {
             flex: isMobile ? undefined : 1,
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: "rgba(0,0,0,0.08)",
-            backgroundColor: "#f9fafb",
+            borderColor: "rgba(255,255,255,0.08)",
+            backgroundColor: "rgba(255,255,255,0.015)",
             padding: 28,
             alignItems: "center",
           }}
@@ -162,20 +162,20 @@ export default function LandingContact({ isMobile }: Props) {
               width: 48,
               height: 48,
               borderRadius: 12,
-              backgroundColor: "rgba(0,0,0,0.04)",
+              backgroundColor: "rgba(255,255,255,0.06)",
               alignItems: "center",
               justifyContent: "center",
               marginBottom: 16,
             }}
           >
-            <Ionicons name="time-outline" size={24} color="#6b7280" />
+            <Ionicons name="time-outline" size={24} color="#5a5a65" />
           </View>
           <Text
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#e8e6e1",
               marginBottom: 6,
             }}
           >
@@ -186,7 +186,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 16,
-              color: "#6b7280",
+              color: "#5a5a65",
               textAlign: "center",
             }}
           >

@@ -12,7 +12,7 @@ export default function LandingCTA() {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: 42,
-          color: "#1A3A5C",
+          color: "#e8e6e1",
           textAlign: "center",
           marginBottom: 12,
         }}
@@ -21,7 +21,7 @@ export default function LandingCTA() {
       </Text>
       <Text
         style={{
-          color: "#6b7280",
+          color: "#5a5a65",
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -41,7 +41,7 @@ export default function LandingCTA() {
       >
         <Text
           style={{
-            color: "#fff",
+            color: "#1A3A5C",
             fontSize: 18,
             fontFamily: fonts.extraBold,
             fontWeight: fontWeights.extraBold,
@@ -54,7 +54,7 @@ export default function LandingCTA() {
         style={{
           marginTop: 14,
           fontSize: 14,
-          color: "#9ca3af",
+          color: "#3a3a45",
           fontFamily: fonts.regular,
         }}
       >

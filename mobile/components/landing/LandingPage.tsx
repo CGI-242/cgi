@@ -4,7 +4,6 @@ import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 import LandingProducts from "./LandingProducts";
 import LandingFeatures from "./LandingFeatures";
-import LandingCountries from "./LandingCountries";
 import LandingPricing from "./LandingPricing";
 import LandingContact from "./LandingContact";
 import LandingCTA from "./LandingCTA";
@@ -41,7 +40,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#ffffff" }}>
+    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#1A3A5C" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
 
       <AnimatedSection delay={100}>
@@ -57,12 +56,6 @@ export default function LandingPage() {
       <View ref={(r) => { sectionRefs.current.features = r; }}>
         <AnimatedSection delay={0}>
           <LandingFeatures isMobile={isMobile} loaded={loaded} />
-        </AnimatedSection>
-      </View>
-
-      <View ref={(r) => { sectionRefs.current.simulateurs = r; }}>
-        <AnimatedSection delay={0}>
-          <LandingCountries isMobile={isMobile} loaded={loaded} />
         </AnimatedSection>
       </View>
 

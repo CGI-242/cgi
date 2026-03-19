@@ -78,7 +78,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#1A3A5C",
+          color: "#e8e6e1",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -88,7 +88,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
       <Text
         style={{
           textAlign: "center",
-          color: "#6b7280",
+          color: "#5a5a65",
           fontSize: 16,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -122,14 +122,14 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 backgroundColor: active
                   ? rc
                     ? rc.bg
-                    : "rgba(0,0,0,0.06)"
+                    : "rgba(255,255,255,0.06)"
                   : "transparent",
                 borderWidth: 1,
                 borderColor: active
                   ? rc
                     ? rc.border
-                    : "rgba(0,0,0,0.12)"
-                  : "rgba(0,0,0,0.08)",
+                    : "rgba(255,255,255,0.12)"
+                  : "rgba(255,255,255,0.08)",
               }}
             >
               <Text
@@ -140,8 +140,8 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   color: active
                     ? rc
                       ? rc.text
-                      : "#1A3A5C"
-                    : "#6b7280",
+                      : "#e8e6e1"
+                    : "#5a5a65",
                 }}
               >
                 {r === "Autre" ? "Autres OHADA" : r}
@@ -155,7 +155,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
       <View style={{ alignItems: "center", marginBottom: 36 }}>
         <TextInput
           placeholder="Rechercher un pays ou indicatif..."
-          placeholderTextColor="#9ca3af"
+          placeholderTextColor="#3a3a45"
           value={query}
           onChangeText={setQuery}
           style={{
@@ -165,9 +165,9 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
             paddingHorizontal: 18,
             borderRadius: 12,
             borderWidth: 1,
-            borderColor: "rgba(0,0,0,0.1)",
-            backgroundColor: "#f9fafb",
-            color: "#1A3A5C",
+            borderColor: "rgba(255,255,255,0.1)",
+            backgroundColor: "rgba(255,255,255,0.015)",
+            color: "#e8e6e1",
             fontSize: 16,
             fontFamily: fonts.regular,
           }}
@@ -200,11 +200,11 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                 alignItems: "center",
                 backgroundColor: isAvailable
                   ? "rgba(200,160,60,0.05)"
-                  : "#f9fafb",
+                  : "rgba(255,255,255,0.015)",
                 borderWidth: 1,
                 borderColor: isAvailable
                   ? "rgba(200,160,60,0.2)"
-                  : "rgba(0,0,0,0.06)",
+                  : "rgba(255,255,255,0.06)",
                 opacity: loaded ? 1 : 0,
               }}
             >
@@ -237,7 +237,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
                   fontFamily: fonts.semiBold,
                   fontWeight: fontWeights.semiBold,
                   marginBottom: 8,
-                  color: isAvailable ? "#1A3A5C" : "#6b7280",
+                  color: isAvailable ? "#e8e6e1" : "#5a5a65",
                   textAlign: "center",
                 }}
               >
@@ -291,7 +291,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
           style={{
             textAlign: "center",
             padding: 40,
-            color: "#9ca3af",
+            color: "#3a3a45",
             fontFamily: fonts.regular,
           }}
         >
