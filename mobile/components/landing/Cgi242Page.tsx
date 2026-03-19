@@ -44,8 +44,8 @@ export default function Cgi242Page() {
   ];
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: BG }}>
-      {/* Header */}
+    <ScrollView style={{ flex: 1, backgroundColor: "#ffffff" }}>
+      {/* Header — bleu */}
       <View
         style={{
           flexDirection: "row",
@@ -54,13 +54,14 @@ export default function Cgi242Page() {
           paddingVertical: 20,
           paddingHorizontal: isMobile ? 16 : 32,
           borderBottomWidth: 1,
-          borderBottomColor: "rgba(255,255,255,0.04)",
+          borderBottomColor: "rgba(255,255,255,0.08)",
+          backgroundColor: BG,
           zIndex: 100,
         }}
       >
         <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
           <TouchableOpacity onPress={() => router.replace("/")} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-            <Ionicons name="arrow-back" size={18} color="#6a6a75" />
+            <Ionicons name="arrow-back" size={18} color="rgba(255,255,255,0.5)" />
             <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: GOLD, alignItems: "center", justifyContent: "center" }}>
               <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 16, color: BG }}>N</Text>
             </View>
@@ -74,7 +75,7 @@ export default function Cgi242Page() {
             <View style={{ marginLeft: 16 }}>
               <TouchableOpacity
                 onPress={() => setCodeDropdownOpen(!codeDropdownOpen)}
-                style={{ flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.06)", borderRadius: 8, paddingHorizontal: 12, paddingVertical: 6 }}
+                style={{ flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.08)", borderRadius: 8, paddingHorizontal: 12, paddingVertical: 6 }}
               >
                 <Ionicons name="book-outline" size={15} color={GOLD} />
                 <Text style={{ color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, marginLeft: 6 }}>
@@ -97,11 +98,11 @@ export default function Cgi242Page() {
                         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: "#e8e6e1" }}>
                           {opt.label}
                         </Text>
-                        <Text style={{ fontSize: 12, color: "#5a5a65", marginTop: 1 }}>{opt.desc}</Text>
+                        <Text style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", marginTop: 1 }}>{opt.desc}</Text>
                       </View>
                       {!opt.available && (
                         <View style={{ backgroundColor: "rgba(255,255,255,0.06)", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 8 }}>
-                          <Text style={{ fontSize: 11, fontWeight: "700", color: "#5a5a65" }}>Bientôt</Text>
+                          <Text style={{ fontSize: 11, fontWeight: "700", color: "rgba(255,255,255,0.5)" }}>Bientôt</Text>
                         </View>
                       )}
                     </TouchableOpacity>
@@ -114,7 +115,7 @@ export default function Cgi242Page() {
 
         <View style={{ flexDirection: "row", gap: isMobile ? 8 : 16, alignItems: "center" }}>
           <TouchableOpacity onPress={() => router.push("/(auth)")} style={{ padding: 8 }}>
-            <Text style={{ fontSize: 15, color: "#6a6a75", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{t("landing.login")}</Text>
+            <Text style={{ fontSize: 15, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>{t("landing.login")}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => router.push("/(auth)/register")}
@@ -125,16 +126,16 @@ export default function Cgi242Page() {
         </View>
       </View>
 
-      {/* Hero */}
-      <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 90, paddingBottom: 50, paddingHorizontal: 24 }}>
+      {/* Hero — blanc */}
+      <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 90, paddingBottom: 50, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
         <View
           style={{
             flexDirection: "row",
             alignItems: "center",
             gap: 8,
-            backgroundColor: "rgba(200,160,60,0.08)",
+            backgroundColor: "rgba(26,58,92,0.06)",
             borderWidth: 1,
-            borderColor: "rgba(200,160,60,0.18)",
+            borderColor: "rgba(26,58,92,0.12)",
             borderRadius: 100,
             paddingVertical: 7,
             paddingHorizontal: 18,
@@ -142,7 +143,7 @@ export default function Cgi242Page() {
           }}
         >
           <Text style={{ fontSize: 26 }}>🇨🇬</Text>
-          <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: GOLD }}>
+          <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: BG }}>
             Congo-Brazzaville — Édition 2026
           </Text>
         </View>
@@ -152,7 +153,7 @@ export default function Cgi242Page() {
             fontFamily: fonts.headingBlack,
             fontWeight: fontWeights.headingBlack,
             fontSize: isMobile ? 32 : 56,
-            color: "#e8e6e1",
+            color: BG,
             textAlign: "center",
             lineHeight: isMobile ? 38 : 64,
             marginBottom: 20,
@@ -165,7 +166,7 @@ export default function Cgi242Page() {
         <Text
           style={{
             fontSize: isMobile ? 15 : 19,
-            color: "#7a7a85",
+            color: "#5a6a7a",
             maxWidth: 600,
             textAlign: "center",
             lineHeight: isMobile ? 24 : 31,
@@ -189,13 +190,13 @@ export default function Cgi242Page() {
         >
           {stats.map((stat, i) => (
             <View key={i} style={{ alignItems: "center" }}>
-              <Text style={{ fontSize: isMobile ? 28 : 40, fontFamily: fonts.black, fontWeight: fontWeights.black, color: GOLD }}>
+              <Text style={{ fontSize: isMobile ? 28 : 40, fontFamily: fonts.black, fontWeight: fontWeights.black, color: BG }}>
                 {stat.value}
               </Text>
               <Text
                 style={{
                   fontSize: 13,
-                  color: "#5a5a65",
+                  color: "#5a6a7a",
                   textTransform: "uppercase",
                   letterSpacing: 1.5,
                   marginTop: 5,
@@ -213,31 +214,31 @@ export default function Cgi242Page() {
         <View style={{ flexDirection: isMobile ? "column" : "row", gap: 14, alignItems: "center" }}>
           <TouchableOpacity
             onPress={() => router.push("/(auth)/register")}
-            style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: GOLD }}
+            style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: BG }}
           >
-            <Text style={{ color: BG, fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+            <Text style={{ color: "#ffffff", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
               {t("landing.heroCtaPrimary")}
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => router.push("/(auth)")}
-            style={{ paddingVertical: 13, paddingHorizontal: 38, borderRadius: 12, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)" }}
+            style={{ paddingVertical: 13, paddingHorizontal: 38, borderRadius: 12, borderWidth: 1, borderColor: "rgba(26,58,92,0.2)" }}
           >
-            <Text style={{ color: "#e8e6e1", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+            <Text style={{ color: BG, fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
               {t("landing.login")}
             </Text>
           </TouchableOpacity>
         </View>
       </View>
 
-      {/* Features */}
-      <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60 }}>
+      {/* Features — blanc */}
+      <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60, backgroundColor: "#ffffff" }}>
         <Text
           style={{
             fontFamily: fonts.headingBlack,
             fontWeight: fontWeights.headingBlack,
             fontSize: isMobile ? 28 : 36,
-            color: "#e8e6e1",
+            color: BG,
             textAlign: "center",
             marginBottom: 8,
           }}
@@ -247,7 +248,7 @@ export default function Cgi242Page() {
         <Text
           style={{
             fontSize: isMobile ? 14 : 16,
-            color: "#5a5a65",
+            color: "#5a6a7a",
             textAlign: "center",
             fontFamily: fonts.light,
             fontWeight: fontWeights.light,
@@ -264,9 +265,9 @@ export default function Cgi242Page() {
               style={{
                 width: cols === 1 ? "100%" : cols === 2 ? "47%" : "30%",
                 flexGrow: 1,
-                backgroundColor: "rgba(255,255,255,0.015)",
+                backgroundColor: "#f8f9fa",
                 borderWidth: 1,
-                borderColor: "rgba(255,255,255,0.05)",
+                borderColor: "rgba(0,0,0,0.06)",
                 borderRadius: 16,
                 padding: isMobile ? 22 : 28,
               }}
@@ -284,10 +285,10 @@ export default function Cgi242Page() {
               >
                 <Ionicons name={feat.icon} size={24} color={feat.color} />
               </View>
-              <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1", marginBottom: 6 }}>
+              <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: BG, marginBottom: 6 }}>
                 {t(feat.titleKey)}
               </Text>
-              <Text style={{ fontSize: 15, color: "#5a5a65", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
+              <Text style={{ fontSize: 15, color: "#5a6a7a", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
                 {t(feat.descKey)}
               </Text>
             </View>
@@ -295,39 +296,39 @@ export default function Cgi242Page() {
         </View>
       </View>
 
-      {/* CTA final */}
-      <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24 }}>
+      {/* CTA final — blanc */}
+      <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
         <Text
           style={{
             fontFamily: fonts.headingBlack,
             fontWeight: fontWeights.headingBlack,
             fontSize: 38,
-            color: "#e8e6e1",
+            color: BG,
             textAlign: "center",
             marginBottom: 12,
           }}
         >
           {t("landing.ctaTitle")}
         </Text>
-        <Text style={{ color: "#5a5a65", fontSize: 17, fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 28 }}>
+        <Text style={{ color: "#5a6a7a", fontSize: 17, fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 28 }}>
           7 jours gratuits — Aucune carte bancaire requise
         </Text>
         <TouchableOpacity
           onPress={() => router.push("/(auth)/register")}
-          style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: GOLD }}
+          style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: BG }}
         >
-          <Text style={{ color: BG, fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
+          <Text style={{ color: "#ffffff", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
             {t("landing.ctaButton")}
           </Text>
         </TouchableOpacity>
       </View>
 
-      {/* Footer */}
-      <View style={{ borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.03)", paddingVertical: 28, paddingHorizontal: 24, alignItems: "center" }}>
-        <Text style={{ fontSize: 14, color: "#2a2a35", fontFamily: fonts.regular }}>
+      {/* Footer — bleu */}
+      <View style={{ borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", backgroundColor: BG, paddingVertical: 28, paddingHorizontal: 24, alignItems: "center" }}>
+        <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.4)", fontFamily: fonts.regular }}>
           {t("landing.copyright")}
         </Text>
-        <Text style={{ fontSize: 13, color: "#3a3a45", marginTop: 6, fontFamily: fonts.regular }}>
+        <Text style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginTop: 6, fontFamily: fonts.regular }}>
           {"Propulsé par "}
           <Text style={{ color: GOLD, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>NORMX AI</Text>
           {" — Marque déposée INPI n°5146181"}
