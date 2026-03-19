@@ -2,7 +2,7 @@
   "meta": {
     "document": "Impôt global forfaitaire (IGF)",
     "pays": "République du Congo",
-    "edition": "2025",
+    "edition": "2026",
     "tome": "TFNC4-IGF",
     "partie": "Textes fiscaux non codifiés",
     "livre": null,
@@ -17,6 +17,8 @@
       "article": "Art. 1",
       "titre": "Institution de l'impôt global forfaitaire",
       "texte": [
+        "[NB - Loi de finances pour 1996, modifiée",
+        "Voir les articles 96 s. du CGI tome 1 relatifs au régime des petites et très petites entreprises]",
         "Art.1.- Il est institué en République du Congo un impôt global dû par les personnes physiques soumises au régime forfaitaire d'imposition. Cet impôt est désigné sous le nom d'impôt global forfaitaire (IGF)."
       ],
       "mots_cles": [
@@ -85,7 +87,7 @@
       "article": "Art. 4",
       "titre": "Exonérations",
       "texte": [
-        "Art.4.- Sont exonérées de l'IGF, les personnes physiques soumises au régime du réel ou ayant opté pour ce régime, ainsi que les personnes morales."
+        "Art.4.- Sont exonérés de l'IGF, les personnes physiques soumises au régime du réel ou ayant opté pour ce régime, ainsi que les personnes morales."
       ],
       "mots_cles": [
         "exonérations",
@@ -135,7 +137,7 @@
       "article": "Art. 6",
       "titre": "Pluralité d'établissements et imposition",
       "texte": [
-        "Art.5 suite.- Lorsqu'un contribuable dispose de plusieurs établissements (boutiques, magasins, ateliers, chantiers...), chacun d'entre eux est considéré comme une entreprise ou exploitation distincte faisant l'objet d'une imposition séparée à l'IGF, comme en matière de patente, dès lors que le chiffre d'affaires total réalisé au titre de l'ensemble des activités exercées ne place pas de plein droit ce contribuable sous le régime du réel."
+        "6) Lorsqu'un contribuable possède dans une même localité ou dans des localités différentes, plusieurs entités fiscales ou établissements (boutiques, magasins, ateliers, chantiers...), chacun d'entre eux est considéré comme une entreprise ou exploitation distincte faisant l'objet d'une imposition séparée à l'IGF, comme en matière de patente, dès lors que le chiffre d'affaires total réalisé au titre de l'ensemble des activités exercées ne place pas de plein droit ce contribuable sous le régime du réel."
       ],
       "mots_cles": [
         "pluralité établissements",

@@ -17,6 +17,7 @@
       "article": "Art. 1",
       "titre": "Institution de l'impôt forfaitaire sur les pylônes",
       "texte": [
+        "[NB - Loi de finances pour 2015, modifiée]",
         "Art.11.- Il est institué, en République du Congo, un impôt forfaitaire annuel sur les pylônes des sociétés de télécommunication."
       ],
       "mots_cles": [
@@ -30,6 +31,7 @@
     {
       "article": "Art. 2",
       "titre": "Champ d'application",
+      "section": "A : Champ d'application",
       "texte": [
         "A. Champ d'application",
         "1) L'impôt sur les pylônes des sociétés de télécommunication est perçu au profit des collectivités locales.",
@@ -46,6 +48,7 @@
     {
       "article": "Art. 3",
       "titre": "Personnes imposables",
+      "section": "B : Personnes imposables",
       "texte": [
         "B. Personnes imposables",
         "3) L'impôt sur les pylônes des sociétés de télécommunication est à la charge des entreprises de télécommunication."
@@ -59,6 +62,7 @@
     {
       "article": "Art. 4",
       "titre": "Exemptions",
+      "section": "C : Exemptions",
       "texte": [
         "C. Exemptions",
         "4) Sont exemptées de cet impôt, les petites antennes de télécommunication à usage domestique."
@@ -73,6 +77,7 @@
     {
       "article": "Art. 5",
       "titre": "Lieu d'imposition",
+      "section": "D : Lieu d'imposition",
       "texte": [
         "D. Lieu d'imposition",
         "5) Tout pylône de télécommunication est imposé dans la commune ou le département où il est situé."
@@ -86,31 +91,19 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 6 (L.F. 2026)",
+      "article": "Art. 6",
       "titre": "Montant de l'imposition",
+      "section": "E : Montant de l'imposition",
       "texte": [
         "E. Montant de l'imposition",
-        "(L.F. 2026 - modifié) 6) Le montant de l'impôt forfaitaire est fixé à :",
-        "• 1 000 000 FCFA par pylône implanté dans les grandes agglomérations de Pointe-Noire, Brazzaville, Dolisie, Madingou, Nkayi, Oyo, Owando, Ouesso ;",
-        "• 500 000 FCFA par pylône implanté dans les autres localités (zones rurales et secondaires).",
-        "Il est constaté, liquidé et émis par l'administration fiscale."
+        "6) (L.F.2026) Le montant de l'impôt forfaitaire est fixé à :",
+        "• 1.000.000 FCFA par pylône implanté dans les grandes agglomérations de Pointe-Noire, Brazzaville, Dolisie, Madingou, Nkayi, Oyo, Owando, Ouesso ;",
+        "• 500.000 FCFA par pylône implanté dans les autres localités (zones rurales et secondaires)."
       ],
       "mots_cles": [
         "montant impôt",
         "1 000 000 FCFA",
-        "500 000 FCFA",
         "par pylône",
-        "grandes agglomérations",
-        "Pointe-Noire",
-        "Brazzaville",
-        "Dolisie",
-        "Madingou",
-        "Nkayi",
-        "Oyo",
-        "Owando",
-        "Ouesso",
-        "zones rurales",
-        "zones secondaires",
         "administration fiscale"
       ],
       "statut": "en vigueur"
@@ -118,6 +111,7 @@
     {
       "article": "Art. 7",
       "titre": "Recouvrement de l'impôt",
+      "section": "F : Recouvrement de l'impôt",
       "texte": [
         "F. Recouvrement de l'impôt",
         "7) (L.F.2024) L'impôt forfaitaire sur les pylônes des sociétés de télécommunications est recouvré par déclaration et paiement spontanés des contribuables auprès du Receveur de la collectivité locale où le pylône est situé au plus tard le 31 mars de chaque année."
@@ -134,6 +128,7 @@
     {
       "article": "Art. 8",
       "titre": "Sanctions",
+      "section": "G : Sanctions",
       "texte": [
         "G. Sanctions",
         "8) Le défaut de déclaration ou le paiement tardif est sanctionné par une pénalité de 50 %."
@@ -149,6 +144,7 @@
     {
       "article": "Art. 9",
       "titre": "Contentieux de l'imposition",
+      "section": "H : Contentieux de l'imposition",
       "texte": [
         "H. Contentieux de l'imposition",
         "9) Le contentieux relatif à l'assiette et au recouvrement de l'impôt est régi par le CGI."
