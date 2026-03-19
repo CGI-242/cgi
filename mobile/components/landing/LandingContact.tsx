@@ -85,11 +85,14 @@ export default function LandingContact({ isMobile }: Props) {
             Email
           </Text>
           <Text
+            numberOfLines={1}
+            adjustsFontSizeToFit
             style={{
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              fontSize: 16,
+              fontSize: 14,
               color: "#1A3A5C",
+              textAlign: "center",
             }}
           >
             info-contact@normx-ai.com
