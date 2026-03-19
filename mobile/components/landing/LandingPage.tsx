@@ -40,7 +40,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#1A3A5C" }}>
+    <ScrollView ref={scrollRef} style={{ flex: 1, backgroundColor: "#ffffff" }}>
       <LandingHeader isMobile={isMobile} onScrollTo={handleScrollTo} />
 
       <AnimatedSection delay={100}>

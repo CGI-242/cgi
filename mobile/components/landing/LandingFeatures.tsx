@@ -28,11 +28,11 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
   const cols = isMobile ? 1 : isTablet ? 2 : 3;
 
   return (
-    <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60 }}>
-      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 28 : 36, color: "#e8e6e1", textAlign: "center", marginBottom: 8 }}>
+    <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60, backgroundColor: "#ffffff" }}>
+      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 28 : 36, color: "#1A3A5C", textAlign: "center", marginBottom: 8 }}>
         {t("landing.featuresTitle")}
       </Text>
-      <Text style={{ fontSize: isMobile ? 14 : 16, color: "#5a5a65", textAlign: "center", fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 36 }}>
+      <Text style={{ fontSize: isMobile ? 14 : 16, color: "#5a6a7a", textAlign: "center", fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 36 }}>
         {t("landing.featuresSubtitle")}
       </Text>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
@@ -42,9 +42,9 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             style={{
               width: cols === 1 ? "100%" : cols === 2 ? "47%" : "30%",
               flexGrow: 1,
-              backgroundColor: "rgba(255,255,255,0.015)",
+              backgroundColor: "#f8f9fa",
               borderWidth: 1,
-              borderColor: "rgba(255,255,255,0.05)",
+              borderColor: "rgba(0,0,0,0.06)",
               borderRadius: 16,
               padding: isMobile ? 22 : 28,
               opacity: loaded ? 1 : 0,
@@ -53,10 +53,10 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             <View style={{ width: 44, height: 44, borderRadius: 12, backgroundColor: `${feat.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
               <Ionicons name={feat.icon} size={22} color={feat.color} />
             </View>
-            <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1", marginBottom: 6 }}>
+            <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C", marginBottom: 6 }}>
               {t(feat.titleKey)}
             </Text>
-            <Text style={{ fontSize: 15, color: "#5a5a65", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
+            <Text style={{ fontSize: 15, color: "#5a6a7a", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
               {t(feat.descKey)}
             </Text>
           </View>

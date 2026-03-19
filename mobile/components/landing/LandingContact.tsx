@@ -10,13 +10,13 @@ interface Props {
 
 export default function LandingContact({ isMobile }: Props) {
   return (
-    <View style={{ paddingVertical: 60, paddingHorizontal: 24 }}>
+    <View style={{ paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
       <Text
         style={{
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -26,7 +26,7 @@ export default function LandingContact({ isMobile }: Props) {
       <Text
         style={{
           textAlign: "center",
-          color: "#5a5a65",
+          color: "#5a6a7a",
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -54,8 +54,8 @@ export default function LandingContact({ isMobile }: Props) {
             flex: isMobile ? undefined : 1,
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: "rgba(200,160,60,0.2)",
-            backgroundColor: "rgba(200,160,60,0.04)",
+            borderColor: "rgba(26,58,92,0.15)",
+            backgroundColor: "rgba(26,58,92,0.03)",
             padding: 28,
             alignItems: "center",
           }}
@@ -65,20 +65,20 @@ export default function LandingContact({ isMobile }: Props) {
               width: 48,
               height: 48,
               borderRadius: 12,
-              backgroundColor: "rgba(200,160,60,0.12)",
+              backgroundColor: "rgba(26,58,92,0.08)",
               alignItems: "center",
               justifyContent: "center",
               marginBottom: 16,
             }}
           >
-            <Ionicons name="mail-outline" size={24} color={GOLD} />
+            <Ionicons name="mail-outline" size={24} color="#1A3A5C" />
           </View>
           <Text
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#e8e6e1",
+              color: "#1A3A5C",
               marginBottom: 6,
             }}
           >
@@ -89,7 +89,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 16,
-              color: GOLD,
+              color: "#1A3A5C",
             }}
           >
             info-contact@normx-ai.com
@@ -102,8 +102,8 @@ export default function LandingContact({ isMobile }: Props) {
             flex: isMobile ? undefined : 1,
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: "rgba(255,255,255,0.08)",
-            backgroundColor: "rgba(255,255,255,0.015)",
+            borderColor: "rgba(0,0,0,0.08)",
+            backgroundColor: "#f8f9fa",
             padding: 28,
             alignItems: "center",
           }}
@@ -113,7 +113,7 @@ export default function LandingContact({ isMobile }: Props) {
               width: 48,
               height: 48,
               borderRadius: 12,
-              backgroundColor: "rgba(255,255,255,0.06)",
+              backgroundColor: "rgba(26,58,92,0.06)",
               alignItems: "center",
               justifyContent: "center",
               marginBottom: 16,
@@ -126,7 +126,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#e8e6e1",
+              color: "#1A3A5C",
               marginBottom: 6,
             }}
           >
@@ -137,7 +137,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 16,
-              color: "#5a5a65",
+              color: "#5a6a7a",
               textAlign: "center",
             }}
           >
@@ -151,8 +151,8 @@ export default function LandingContact({ isMobile }: Props) {
             flex: isMobile ? undefined : 1,
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: "rgba(255,255,255,0.08)",
-            backgroundColor: "rgba(255,255,255,0.015)",
+            borderColor: "rgba(0,0,0,0.08)",
+            backgroundColor: "#f8f9fa",
             padding: 28,
             alignItems: "center",
           }}
@@ -162,7 +162,7 @@ export default function LandingContact({ isMobile }: Props) {
               width: 48,
               height: 48,
               borderRadius: 12,
-              backgroundColor: "rgba(255,255,255,0.06)",
+              backgroundColor: "rgba(26,58,92,0.06)",
               alignItems: "center",
               justifyContent: "center",
               marginBottom: 16,
@@ -175,7 +175,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#e8e6e1",
+              color: "#1A3A5C",
               marginBottom: 6,
             }}
           >
@@ -186,7 +186,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 16,
-              color: "#5a5a65",
+              color: "#5a6a7a",
               textAlign: "center",
             }}
           >

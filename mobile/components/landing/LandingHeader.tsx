@@ -32,8 +32,8 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
         paddingVertical: 20,
         paddingHorizontal: isMobile ? 16 : 32,
         borderBottomWidth: 1,
-        borderBottomColor: "rgba(0,0,0,0.08)",
-        backgroundColor: "#ffffff",
+        borderBottomColor: "rgba(255,255,255,0.08)",
+        backgroundColor: "#1A3A5C",
         zIndex: 100,
       }}
     >
@@ -60,7 +60,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
             N
           </Text>
         </View>
-        <Text style={{ fontSize: 22, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C" }}>
+        <Text style={{ fontSize: 22, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#e8e6e1" }}>
           NORMX <Text style={{ color: GOLD }}>AI</Text>
         </Text>
 
@@ -154,25 +154,25 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
       {!isMobile && (
         <View style={{ flexDirection: "row", gap: 32, alignItems: "center" }}>
           <TouchableOpacity onPress={() => onScrollTo?.("produits")}>
-            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 16, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Produits
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={() => onScrollTo?.("features")}>
-            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 16, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Fonctionnalités
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={() => onScrollTo?.("tarifs")}>
-            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 16, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Tarifs
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={() => onScrollTo?.("contact")}>
-            <Text style={{ fontSize: 16, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 16, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               Contact
             </Text>
           </TouchableOpacity>
@@ -188,7 +188,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           {isMobile ? (
             <Ionicons name="person-circle-outline" size={28} color="#4a4a5a" />
           ) : (
-            <Text style={{ fontSize: 15, color: "#4a4a5a", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 15, color: "#b0b0b8", fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               {t("landing.login")}
             </Text>
           )}
@@ -209,7 +209,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           {isMobile ? (
             <Ionicons name="rocket-outline" size={20} color="#1A3A5C" />
           ) : (
-            <Text style={{ color: "#1A3A5C", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15 }}>
+            <Text style={{ color: "#1A3A5C", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15 /* CTA button on gold bg */ }}>
               Essai gratuit
             </Text>
           )}

@@ -6,13 +6,13 @@ const GOLD = "#D4A843";
 
 export default function LandingCTA() {
   return (
-    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24 }}>
+    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
       <Text
         style={{
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: 42,
-          color: "#e8e6e1",
+          color: "#1A3A5C",
           textAlign: "center",
           marginBottom: 12,
         }}
@@ -21,7 +21,7 @@ export default function LandingCTA() {
       </Text>
       <Text
         style={{
-          color: "#5a5a65",
+          color: "#5a6a7a",
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
@@ -36,12 +36,12 @@ export default function LandingCTA() {
           paddingVertical: 15,
           paddingHorizontal: 38,
           borderRadius: 12,
-          backgroundColor: GOLD,
+          backgroundColor: "#1A3A5C",
         }}
       >
         <Text
           style={{
-            color: "#1A3A5C",
+            color: "#ffffff",
             fontSize: 18,
             fontFamily: fonts.extraBold,
             fontWeight: fontWeights.extraBold,
@@ -54,7 +54,7 @@ export default function LandingCTA() {
         style={{
           marginTop: 14,
           fontSize: 14,
-          color: "#3a3a45",
+          color: "#8a8a95",
           fontFamily: fonts.regular,
         }}
       >
