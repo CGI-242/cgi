@@ -89,45 +89,44 @@ const chapitre3 = buildChapitreTree(articles3, "Chapitre 3 - Sans objet", "ch3")
 const chapitre4 = buildChapitreTree(articles4, "Chapitre 4 - Dispositions communes", "ch4");
 const chapitre5 = buildChapitreTree(articles5, "Chapitre 5 - Taxes diverses", "ch5");
 const chapitre6 = buildChapitreTree(articles6, "Chapitre 6 - Dispositions diverses", "ch6");
-const livre2: SommaireNode = {
-  id: "t1-p1-l2",
-  label: "Impôt sur le chiffre d'affaires intérieur",
-  articles: articlesL2,
-};
+const livre2 = buildChapitreTree(articlesL2, "Impôt sur le chiffre d'affaires intérieur", "t1-p1-l2");
 
 // Partie 2 - Titre 1
-const p2t1ch1: SommaireNode = { id: "p2t1ch1", label: "Chapitre 1 - Impôts et taxes obligatoires", articles: articlesP2C1 };
-const p2t1ch2: SommaireNode = { id: "p2t1ch2", label: "Chapitre 2 - Taxes facultatives", articles: articlesP2C2 };
-const p2t1ch3: SommaireNode = { id: "p2t1ch3", label: "Chapitre 3 - Centimes additionnels à certains impôts", articles: articlesP2C3 };
+const p2t1ch1 = buildChapitreTree(articlesP2C1, "Chapitre 1 - Impôts et taxes obligatoires", "p2t1ch1");
+const p2t1ch2 = buildChapitreTree(articlesP2C2, "Chapitre 2 - Taxes facultatives", "p2t1ch2");
+const p2t1ch3 = buildChapitreTree(articlesP2C3, "Chapitre 3 - Centimes additionnels à certains impôts", "p2t1ch3");
 
 // Partie 3 - Titre 1
-const p3t1ch1: SommaireNode = { id: "p3t1ch1", label: "Chapitre 1 - Défaut de déclaration, déclarations tardives ou inexactes", articles: articlesP3T1C1 };
-const p3t1ch2: SommaireNode = { id: "p3t1ch2", label: "Chapitre 2 - Prescriptions", articles: articlesP3T1C2 };
-const p3t1ch3: SommaireNode = { id: "p3t1ch3", label: "Chapitre 3 - Changement du lieu d'imposition", articles: articlesP3T1C3 };
-const p3t1ch4: SommaireNode = { id: "p3t1ch4", label: "Chapitre 4 - Conventions fiscales", articles: articlesP3T1C4 };
-const p3t1ch5: SommaireNode = { id: "p3t1ch5", label: "Chapitre 5 - Vérification des contribuables", articles: articlesP3T1C5 };
-const p3t1ch6: SommaireNode = { id: "p3t1ch6", label: "Chapitre 6 - Droit de communication", articles: articlesP3T1C6 };
-const p3t1ch7: SommaireNode = { id: "p3t1ch7", label: "Chapitre 7 - Commission des impôts", articles: articlesP3T1C7 };
-const p3t1ch8: SommaireNode = { id: "p3t1ch8", label: "Chapitre 8 - Secret professionnel", articles: articlesP3T1C8 };
-const p3t1ch9: SommaireNode = { id: "p3t1ch9", label: "Chapitre 9 - Marchés publics", articles: articlesP3T1C9 };
+const p3t1ch1 = buildChapitreTree(articlesP3T1C1, "Chapitre 1 - Défaut de déclaration, déclarations tardives ou inexactes", "p3t1ch1");
+const p3t1ch2 = buildChapitreTree(articlesP3T1C2, "Chapitre 2 - Prescriptions", "p3t1ch2");
+const p3t1ch3 = buildChapitreTree(articlesP3T1C3, "Chapitre 3 - Changement du lieu d'imposition", "p3t1ch3");
+const p3t1ch4 = buildChapitreTree(articlesP3T1C4, "Chapitre 4 - Conventions fiscales", "p3t1ch4");
+const p3t1ch5 = buildChapitreTree(articlesP3T1C5, "Chapitre 5 - Vérification des contribuables", "p3t1ch5");
+const p3t1ch6 = buildChapitreTree(articlesP3T1C6, "Chapitre 6 - Droit de communication", "p3t1ch6");
+const p3t1ch7 = buildChapitreTree(articlesP3T1C7, "Chapitre 7 - Commission des impôts", "p3t1ch7");
+const p3t1ch8 = buildChapitreTree(articlesP3T1C8, "Chapitre 8 - Secret professionnel", "p3t1ch8");
+const p3t1ch9 = buildChapitreTree(articlesP3T1C9, "Chapitre 9 - Marchés publics", "p3t1ch9");
 
 // Partie 3 - Titre 2
-const p3t2ch1: SommaireNode = { id: "p3t2ch1", label: "Chapitre 1 - Émission des rôles", articles: articlesP3T2C1 };
-const p3t2ch2: SommaireNode = { id: "p3t2ch2", label: "Chapitre 2 - Approbation des rôles", articles: articlesP3T2C2 };
-const p3t2ch3: SommaireNode = { id: "p3t2ch3", label: "Chapitre 3 - Mise en recouvrement", articles: articlesP3T2C3 };
+const p3t2ch1 = buildChapitreTree(articlesP3T2C1, "Chapitre 1 - Émission des rôles", "p3t2ch1");
+const p3t2ch2 = buildChapitreTree(articlesP3T2C2, "Chapitre 2 - Approbation des rôles", "p3t2ch2");
+const p3t2ch3 = buildChapitreTree(articlesP3T2C3, "Chapitre 3 - Mise en recouvrement", "p3t2ch3");
 
 // Partie 3 - Titre 3
-const p3t3ch1: SommaireNode = { id: "p3t3ch1", label: "Chapitre 1 - Domaines respectifs des juridictions contentieuse et gracieuse", articles: articlesP3T3C1 };
-const p3t3ch2: SommaireNode = { id: "p3t3ch2", label: "Chapitre 2 - Juridiction contentieuse", articles: articlesP3T3C2 };
-const p3t3ch3: SommaireNode = { id: "p3t3ch3", label: "Chapitre 3 - Juridiction gracieuse", articles: articlesP3T3C3 };
-const p3t3ch4: SommaireNode = { id: "p3t3ch4", label: "Chapitre 4 - Dispositions communes", articles: articlesP3T3C4 };
+const p3t3ch1 = buildChapitreTree(articlesP3T3C1, "Chapitre 1 - Domaines respectifs des juridictions contentieuse et gracieuse", "p3t3ch1");
+const p3t3ch2 = buildChapitreTree(articlesP3T3C2, "Chapitre 2 - Juridiction contentieuse", "p3t3ch2");
+const p3t3ch3 = buildChapitreTree(articlesP3T3C3, "Chapitre 3 - Juridiction gracieuse", "p3t3ch3");
+const p3t3ch4 = buildChapitreTree(articlesP3T3C4, "Chapitre 4 - Dispositions communes", "p3t3ch4");
 
 // Partie 3 - Titre 4
-const p3t4ch1: SommaireNode = { id: "p3t4ch1", label: "Chapitre 1 - Dispositions générales", articles: articlesP3T4C1 };
-const p3t4ch2: SommaireNode = { id: "p3t4ch2", label: "Chapitre 2 - Dispositions spéciales", articles: [...articlesP3T4C2, ...articlesP3T4C3] };
+const p3t4ch1 = buildChapitreTree(articlesP3T4C1, "Chapitre 1 - Dispositions générales", "p3t4ch1");
+const p3t4ch2 = buildChapitreTree([...articlesP3T4C2, ...articlesP3T4C3], "Chapitre 2 - Dispositions spéciales", "p3t4ch2");
+
+// Partie 4
+const p4Node = buildChapitreTree(articlesP4, "Sanctions pénales", "t1-p4");
 
 // Annexes
-const annexesNode: SommaireNode = { id: "t1-annexes", label: "Annexes au Tome 1", articles: articlesAnnexes };
+const annexesNode = buildChapitreTree(articlesAnnexes, "Annexes au Tome 1", "t1-annexes");
 
 export const tome1Node: SommaireNode = {
   id: "tome1",
@@ -178,7 +177,7 @@ export const tome1Node: SommaireNode = {
     {
       id: "t1-p4",
       label: "Partie 4 - Sanctions pénales",
-      articles: articlesP4,
+      children: [p4Node],
     },
     annexesNode,
   ],

@@ -130,7 +130,7 @@ const t2l2ch5 = buildChapitreTree(at2l2ch5, `Chapitre 5 - ${t2l2ch5Data.meta.cha
 const t2l2ch6 = buildChapitreTree(at2l2ch6, `Chapitre 6 - ${t2l2ch6Data.meta.chapitre_titre}`, "t2l2ch6");
 const t2l2nc = buildChapitreTree(at2l2nc, "Droits de timbre non codifiés", "t2l2nc");
 // Livre 3
-const t2l3node: SommaireNode = { id: "t2l3", label: "Art. 1 à 22 — Abrogé", articles: at2l3 };
+const t2l3node = buildChapitreTree(at2l3, "Art. 1 à 22 — Abrogé", "t2l3");
 // Livre 4
 const t2l4ch1 = buildChapitreTree(at2l4ch1, `Chapitre 1 - ${t2l4ch1Data.meta.chapitre_titre}`, "t2l4ch1");
 const t2l4ch2 = buildChapitreTree(at2l4ch2, `Chapitre 2 - ${t2l4ch2Data.meta.chapitre_titre}`, "t2l4ch2");
@@ -150,9 +150,10 @@ const t2l5ch12 = buildChapitreTree(at2l5ch12, `Chapitre 12 - ${t2l5ch12Data.meta
 const t2l5ch13 = buildChapitreTree(at2l5ch13, `Chapitre 13 - ${t2l5ch13Data.meta.chapitre_titre}`, "t2l5ch13");
 const t2l5ch14 = buildChapitreTree(at2l5ch14, `Chapitre 14 - ${t2l5ch14Data.meta.chapitre_titre}`, "t2l5ch14");
 // Livres 6, 7, 8
-const t2l6Node: SommaireNode = { id: "t2l6", label: `Livre 6 - ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"} (Abrogé)`, articles: at2l6 };
-const t2l7Node: SommaireNode = { id: "t2l7", label: "Livre 7 - Taxe sur les appareils automatiques", articles: at2l7 };
-const t2l8Node: SommaireNode = { id: "t2l8", label: `Livre 8 - ${t2l8Data.meta.chapitre_titre || "Droits relatifs aux domaines de l'État"}`, articles: at2l8 };
+const t2l6Node = buildChapitreTree(at2l6, `Livre 6 - ${t2l6Data.meta.chapitre_titre || "Taxe sur le kilowatt/heure"} (Abrogé)`, "t2l6");
+const t2l7Node = buildChapitreTree(at2l7, "Livre 7 - Taxe sur les appareils automatiques", "t2l7");
+const t2l8Node = buildChapitreTree(at2l8, `Livre 8 - ${t2l8Data.meta.chapitre_titre || "Droits relatifs aux domaines de l'État"}`, "t2l8");
+const t2tncNode = buildChapitreTree(at2tnc, "Textes non codifiés", "t2tnc");
 
 export const tome2Node: SommaireNode = {
   id: "tome2",
