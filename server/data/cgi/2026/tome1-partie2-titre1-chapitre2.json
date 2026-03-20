@@ -24,7 +24,7 @@
         "généralités"
       ],
       "statut": "abrogé",
-      "section": "Généralités",
+      "section": "Section 1 : Généralités",
       "section_numero": 1
     },
     {
@@ -38,12 +38,12 @@
         "valeur locative"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
       "section_numero": 2
     },
     {
       "article": "Art. 343",
-      "titre": null,
+      "titre": "Abrogé",
       "texte": [
         "Abrogé."
       ],
@@ -51,12 +51,12 @@
         "abrogation"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
       "section_numero": 2
     },
     {
       "article": "Art. 344",
-      "titre": null,
+      "titre": "Abrogé",
       "texte": [
         "Abrogé."
       ],
@@ -64,12 +64,12 @@
         "abrogation"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
       "section_numero": 2
     },
     {
       "article": "Art. 345",
-      "titre": null,
+      "titre": "Abrogé",
       "texte": [
         "Abrogé."
       ],
@@ -77,12 +77,12 @@
         "abrogation"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
       "section_numero": 2
     },
     {
       "article": "Art. 346",
-      "titre": null,
+      "titre": "Abrogé",
       "texte": [
         "Abrogé."
       ],
@@ -90,7 +90,7 @@
         "abrogation"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur la valeur locative des locaux professionnels",
+      "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
       "section_numero": 2
     },
     {
@@ -105,7 +105,7 @@
         "service public"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -124,7 +124,7 @@
         "distance"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -142,7 +142,7 @@
         "établissement commercial"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -157,7 +157,7 @@
         "recouvrement"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -173,7 +173,7 @@
         "trimestre civil"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -189,7 +189,7 @@
         "comptable municipal"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -206,7 +206,7 @@
         "ministre des finances"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -227,7 +227,7 @@
         "établissement industriel"
       ],
       "statut": "en vigueur",
-      "section": "Taxe d'enlèvement des ordures ménagères",
+      "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
       "section_numero": 3
     },
     {
@@ -244,7 +244,7 @@
         "périmètre commercial"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
@@ -266,7 +266,7 @@
         "bus"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
@@ -282,7 +282,7 @@
         "1er octobre"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
@@ -291,41 +291,41 @@
       "texte": [
         "Les taux annuels de la taxe de roulage et droit de stationnement dans le périmètre urbain sont fixés comme suit :",
         "- Cyclomoteurs :",
-        "  • Taxe de roulage : 1.500 FCFA",
-        "  • Droit de stationnement : /",
-        "  • Total à payer : 1.500 FCFA",
+        "• Taxe de roulage : 1.500 FCFA",
+        "• Droit de stationnement : /",
+        "• Total à payer : 1.500 FCFA",
         "- Scooters et motos toutes catégories :",
-        "  • Taxe de roulage : 3.000 FCFA",
-        "  • Droit de stationnement : /",
-        "  • Total à payer : 3.000 FCFA",
+        "• Taxe de roulage : 3.000 FCFA",
+        "• Droit de stationnement : /",
+        "• Total à payer : 3.000 FCFA",
         "- Véhicule d'une puissance allant de 0 à 5 CV :",
-        "  • Taxe de roulage : 7.000 FCFA",
-        "  • Droit de stationnement : 5.000 FCFA",
-        "  • Total à payer : 12.000 FCFA",
+        "• Taxe de roulage : 7.000 FCFA",
+        "• Droit de stationnement : 5.000 FCFA",
+        "• Total à payer : 12.000 FCFA",
         "- Véhicule d'une puissance allant de 6 à 11 CV :",
-        "  • Taxe de roulage : 10.000 FCFA",
-        "  • Droit de stationnement : 5.000 FCFA",
-        "  • Total à payer : 15.000 FCFA",
+        "• Taxe de roulage : 10.000 FCFA",
+        "• Droit de stationnement : 5.000 FCFA",
+        "• Total à payer : 15.000 FCFA",
         "- Véhicule d'une puissance allant de 12 à 15 CV :",
-        "  • Taxe de roulage : 13.000 FCFA",
-        "  • Droit de stationnement : 5.000 FCFA",
-        "  • Total à payer : 18.000 FCFA",
+        "• Taxe de roulage : 13.000 FCFA",
+        "• Droit de stationnement : 5.000 FCFA",
+        "• Total à payer : 18.000 FCFA",
         "- Véhicule d'une puissance allant de 16 à 20 CV :",
-        "  • Taxe de roulage : 25.000 FCFA",
-        "  • Droit de stationnement : 10.000 FCFA",
-        "  • Total à payer : 35.000 FCFA",
+        "• Taxe de roulage : 25.000 FCFA",
+        "• Droit de stationnement : 10.000 FCFA",
+        "• Total à payer : 35.000 FCFA",
         "- Véhicule d'une puissance allant de 21 à 25 CV :",
-        "  • Taxe de roulage : 30.000 FCFA",
-        "  • Droit de stationnement : 10.000 FCFA",
-        "  • Total à payer : 40.000 FCFA",
+        "• Taxe de roulage : 30.000 FCFA",
+        "• Droit de stationnement : 10.000 FCFA",
+        "• Total à payer : 40.000 FCFA",
         "- Véhicule d'une puissance allant de 26 à 30 CV :",
-        "  • Taxe de roulage : 60.000 FCFA",
-        "  • Droit de stationnement : 10.000 FCFA",
-        "  • Total à payer : 70.000 FCFA",
+        "• Taxe de roulage : 60.000 FCFA",
+        "• Droit de stationnement : 10.000 FCFA",
+        "• Total à payer : 70.000 FCFA",
         "- Véhicule d'une puissance allant de 31 CV et plus :",
-        "  • Taxe de roulage : 90.000 FCFA",
-        "  • Droit de stationnement : 10.000 FCFA",
-        "  • Total à payer : 100.000 FCFA"
+        "• Taxe de roulage : 90.000 FCFA",
+        "• Droit de stationnement : 10.000 FCFA",
+        "• Total à payer : 100.000 FCFA"
       ],
       "mots_cles": [
         "taxe de roulage",
@@ -337,7 +337,7 @@
         "puissance CV"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
@@ -362,11 +362,11 @@
         "10%"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
-      "article": "Art. 359 A",
+      "article": "Art. 359-A",
       "titre": "Mise en œuvre des dispositions relatives à la taxe sur les véhicules",
       "texte": [
         "La direction générale des collectivités locales et la direction générale des transports terrestres sont chargées de la mise en œuvre des dispositions relatives à cette taxe."
@@ -378,7 +378,7 @@
         "taxe véhicules"
       ],
       "statut": "en vigueur",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     },
     {
@@ -391,7 +391,7 @@
         "abrogation"
       ],
       "statut": "abrogé",
-      "section": "Taxe sur les véhicules à moteur",
+      "section": "Section 4 : Taxe sur les véhicules à moteur",
       "section_numero": 4
     }
   ]

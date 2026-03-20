@@ -16,6 +16,7 @@
     {
       "article": "Art. 1",
       "titre": "Institution de l'échange obligatoire de renseignements",
+      "section": "Chapitre 1 : Dispositions générales",
       "texte": [
         "Art.1.- Il est institué entre les entités publiques et privées, installées sur le territoire de la République du Congo, et les administrations fiscale et douanière un échange obligatoire des renseignements sur l'exercice des activités professionnelles.",
         "Les administrations fiscales et douanières, entre elles, sont également soumises à cet échange de renseignements."
@@ -31,6 +32,7 @@
     {
       "article": "Art. 2",
       "titre": "Finalité de l'échange de renseignements",
+      "section": "Chapitre 1 : Dispositions générales",
       "texte": [
         "Art.2.- L'échange obligatoire des renseignements sur l'exercice des activités des entités publiques et privées est le moyen d'offrir, périodiquement, aux autorités fiscales et douanières, des renseignements sur la grille des risques de non-conformité au sein de leurs administrations respectives, en vue de la prise en charge et de l'amélioration de leurs performances."
       ],
@@ -45,6 +47,7 @@
     {
       "article": "Art. 3",
       "titre": "Définitions",
+      "section": "Chapitre 1 : Dispositions générales",
       "texte": [
         "Art.3.- Au sens du présent décret, on entend par :",
         "• entité publique : toute personne morale de droit public dotée d'un comptable public ou tout organisme public remplissant une mission d'intérêt public ;",
@@ -66,6 +69,7 @@
     {
       "article": "Art. 4",
       "titre": "Objectifs de l'échange de renseignements",
+      "section": "Chapitre 2 : Objectifs de l'échange de renseignements",
       "texte": [
         "Art.4.- L'échange obligatoire des renseignements sur l'exercice des activités des entités publiques et privées vise, notamment, à :",
         "• promouvoir et encourager l'engagement volontaire des contribuables ;",
@@ -100,6 +104,7 @@
     {
       "article": "Art. 5",
       "titre": "Champ d'application général",
+      "section": "Chapitre 3 : Champ d'application de l'échange des renseignements",
       "texte": [
         "Art.5.- L'échange obligatoire des renseignements institué par le présent décret s'applique :",
         "• à toutes les personnes physiques ou morales ;",
@@ -117,6 +122,7 @@
     {
       "article": "Art. 6",
       "titre": "Entités spécifiquement soumises à l'échange",
+      "section": "Chapitre 3 : Champ d'application de l'échange des renseignements",
       "texte": [
         "Art.6.- Sont également soumis, de manière spécifique, à l'obligation d'échange des renseignements, les organismes ou entités ci-après :",
         "• la caisse nationale de la sécurité sociale ;",
@@ -171,6 +177,7 @@
     {
       "article": "Art. 7",
       "titre": "Fichiers douaniers à échanger avec l'administration fiscale",
+      "section": "Chapitre 4 : Types de fichiers et renseignements à échanger",
       "texte": [
         "Art.7.- Pour l'administration douanière, les renseignements à échanger obligatoirement avec l'administration fiscale concernent, sans être exhaustifs, les fichiers ci-après :",
         "• fichier des déclarations douanières à l'importation par régime ;",
@@ -209,6 +216,7 @@
     {
       "article": "Art. 8",
       "titre": "Fichiers fiscaux à échanger avec l'administration douanière",
+      "section": "Chapitre 4 : Types de fichiers et renseignements à échanger",
       "texte": [
         "Art.8.- Pour l'administration fiscale, les renseignements à échanger obligatoirement avec l'administration douanière concernent, sans être exhaustifs, les fichiers ci-après :",
         "• fichier des contribuables immatriculés au NIU, par résidence fiscale ;",
@@ -247,6 +255,7 @@
     {
       "article": "Art. 9",
       "titre": "Échange de toutes bases de données",
+      "section": "Chapitre 4 : Types de fichiers et renseignements à échanger",
       "texte": [
         "Art.9.- Les échanges des renseignements effectués doivent prendre en compte, sans être exhaustifs, tous les fichiers d'informations provenant des bases de données des deux administrations, y compris toutes celles provenant des autres entités publiques et privées pouvant être exploitées pour les besoins de service par l'une ou l'autre administration."
       ],
@@ -261,6 +270,7 @@
     {
       "article": "Art. 10",
       "titre": "Informations des entités publiques et privées",
+      "section": "Chapitre 4 : Types de fichiers et renseignements à échanger",
       "texte": [
         "Art.10.- Pour les autres entités publiques et privées, les informations à échanger obligatoirement avec les administrations fiscale et douanière concernent, sans être exhaustifs :",
         "• le numéro d'identification unique (NIU) de l'entité, personne morale ou physique renseignée ;",
@@ -288,6 +298,7 @@
     {
       "article": "Art. 11",
       "titre": "Instruments de l'échange de renseignements",
+      "section": "Chapitre 5 : Instruments et modalités de l'échange des renseignements",
       "texte": [
         "Art.11.- Les échanges des renseignements entre l'administration fiscale et l'administration des douanes s'effectuent à travers les instruments administratifs suivants :",
         "• les directives, circulaires ou instructions sur les relations et l'échange d'informations ;",
@@ -307,6 +318,7 @@
     {
       "article": "Art. 12",
       "titre": "Modalités d'échange des tiers vers les administrations",
+      "section": "Chapitre 5 : Instruments et modalités de l'échange des renseignements",
       "texte": [
         "Art.12.- Les échanges des renseignements des tiers vers les administrations fiscale et douanière s'effectuent selon les modalités ci-après :",
         "• échange sur demande : les informations sont fournies à la demande de l'administration ;",
@@ -327,6 +339,7 @@
     {
       "article": "Art. 13",
       "titre": "Processus de partage sécurisé",
+      "section": "Chapitre 5 : Instruments et modalités de l'échange des renseignements",
       "texte": [
         "Art.13.- L'échange des renseignements entre les entités publiques, privées et les administrations fiscale et douanière s'effectue selon un processus de partage structuré et sécurisé garantissant la confidentialité des données des contribuables et des opérateurs économiques."
       ],
@@ -342,6 +355,7 @@
     {
       "article": "Art. 14",
       "titre": "Absence d'obligation de justification des demandes",
+      "section": "Chapitre 5 : Instruments et modalités de l'échange des renseignements",
       "texte": [
         "Art.14.- Les administrations fiscale et douanière ne sont pas tenues à l'obligation de justifier ou de motiver les demandes de renseignements à caractère fiscal ou douanier qu'elles adressent aux entités publiques ou privées."
       ],
@@ -355,6 +369,7 @@
     {
       "article": "Art. 15",
       "titre": "Collecte et traitement électronique",
+      "section": "Chapitre 6 : Conditions technologiques de collecte, de stockage, de sécurisation et de traitement d'informations",
       "texte": [
         "Art.15.- Les informations reçues par les administrations fiscales et douanières sont collectées, traitées et sécurisées de manière électronique.",
         "Les administrations fiscale et douanière sont tenues de créer toutes les conditions d'interconnexion, d'interopérabilité de leurs systèmes d'information avec les systèmes des autres entités publiques ou privées."
@@ -370,6 +385,7 @@
     {
       "article": "Art. 16",
       "titre": "Système intégré de collecte et stockage",
+      "section": "Chapitre 6 : Conditions technologiques de collecte, de stockage, de sécurisation et de traitement d'informations",
       "texte": [
         "Art.16.- Les administrations fiscale et douanière, en partenariat avec les autres entités publiques et privées, peuvent mettre en place un système intégré de collecte et de stockage d'informations à caractère fiscal et douanier."
       ],
@@ -384,6 +400,7 @@
     {
       "article": "Art. 17",
       "titre": "Intégrité et confidentialité des informations",
+      "section": "Chapitre 6 : Conditions technologiques de collecte, de stockage, de sécurisation et de traitement d'informations",
       "texte": [
         "Art.17.- Les administrations fiscale et douanière sont tenues de respecter l'intégrité et la confidentialité des informations reçues, de prendre des mesures de sécurité propres à assurer la protection des informations collectées, utilisées, et de les conserver en tenant compte de leur sensibilité.",
         "Le traitement des renseignements communiqués se fait via un accès sécurisé, limité, contrôlé et exclusivement réservé au personnel habilité."
@@ -401,6 +418,7 @@
     {
       "article": "Art. 18",
       "titre": "Usage exclusif et sanctions",
+      "section": "Chapitre 6 : Conditions technologiques de collecte, de stockage, de sécurisation et de traitement d'informations",
       "texte": [
         "Art.18.- Les renseignements communiqués ne peuvent être utilisés qu'à des fins prévues par le présent décret.",
         "Toute utilisation non autorisée des informations ou leur divulgation à des parties non concernées est sanctionnée conformément à la réglementation en vigueur."
@@ -417,6 +435,7 @@
     {
       "article": "Art. 19",
       "titre": "Création du comité national d'échange des renseignements",
+      "section": "Chapitre 7 : Création d'un comité national d'échange des renseignements",
       "texte": [
         "Art.19.- Il est créé un comité national d'échange des renseignements entre les entités publiques, les entités privées et les administrations fiscale et douanière."
       ],
@@ -431,6 +450,7 @@
     {
       "article": "Art. 20",
       "titre": "Rôle du comité national",
+      "section": "Chapitre 7 : Création d'un comité national d'échange des renseignements",
       "texte": [
         "Art.20.- Le comité national d'échange des renseignements est l'organe de supervision et de coordination des activités d'implémentation du système d'échange obligatoire des renseignements entre les entités publiques, les entités privées et les administrations fiscale et douanière."
       ],
@@ -444,6 +464,7 @@
     {
       "article": "Art. 21",
       "titre": "Missions du comité national",
+      "section": "Chapitre 7 : Création d'un comité national d'échange des renseignements",
       "texte": [
         "Art.21.- Le comité national d'échange des renseignements offre un cadre permanent de travail et de coopération des administrations fiscale et douanière avec les autres entités publiques et privées.",
         "A ce titre, il est chargé, notamment, de :",
@@ -464,6 +485,7 @@
     {
       "article": "Art. 22",
       "titre": "Composition du comité national",
+      "section": "Chapitre 7 : Création d'un comité national d'échange des renseignements",
       "texte": [
         "Art.22.- Le comité national d'échange des renseignements est composé ainsi qu'il suit :",
         "• Supervision :",
@@ -508,6 +530,7 @@
     {
       "article": "Art. 23",
       "titre": "Disposition finale",
+      "section": "Chapitre 8 : Disposition finale",
       "texte": [
         "Art.23.- Le présent décret, qui abroge toutes dispositions antérieures contraires, sera enregistré et publié au Journal officiel de la République du Congo."
       ],

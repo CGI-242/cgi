@@ -206,7 +206,7 @@ export const tfncArticles: ArticleData[] = [
   ...aCharteInvest, ...aDecretAgrement, ...aZes, ...aZonesFranchesSante, ...aZoneValoInfra, ...aEntrepreneuriat, ...aOperationsBvmac,
   // TFNC3
   ...aCodeHydro, ...aRedevSuperf,
-  ...aTfnc3PetCh1, ...aTfnc3PetCh2, ...aTfnc3PetCh3, ...aTfnc3PetCh4, ...aTfnc3PetCh5, ...aTfnc3PetCh6, ...aTfnc3PetCh7,
+  ...aTfnc3PetCh1, ...aTfnc3PetCh2, ...aTfnc3PetCh3, ...aTfnc3PetCh4, ...aTfnc3PetCh5,
   ...aTvaPetrolier, ...aFiscMiniere,
   // TFNC4
   ...aTfnc4Asdi, ...aTfnc4Camu, ...aTfnc4Accises, ...aTfnc4Boissons,
