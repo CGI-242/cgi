@@ -169,7 +169,7 @@ Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
 - Document en langue etrangere : amende 2 000 000 FCFA par document (Art. 373 ter)
 - Absence de NIU sur facture : amende 10 000 FCFA par facture (Arrete 5327, Art. 9)
 - Omission ou inexactitude dans les mentions des factures (dans le cadre de la DAS II) : amende 10 000 FCFA par omission (Art. 380, renvoyant aux Art. 176-181)
-- Non-utilisation du SFEC : amende 50 000 000 FCFA (Art. 34 bis)
+- Non-utilisation du SFEC : amende 50 000 000 FCFA (Art. 34 bis). Detecter l'absence de SFEC par : pas de QR code, pas de NIM (Numero Identification Machine), pas de signature numerique DGID. Si aucun de ces elements n'est visible sur la facture, signaler le risque SFEC.
 - Facture non conforme : rejet de la deduction TVA pour le client assujetti (Art. 23 et 34 bis)
 - NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.`;
 
