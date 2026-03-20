@@ -37,7 +37,7 @@ REGLES A VERIFIER :
 
 2) MENTIONS OBLIGATOIRES (Art. 32 CGI) — 12 mentions :
    M1. Date de la facture
-   M2. Numero de facture dans une serie continue
+   M2. Numero de facture dans une serie continue (ex: FA-2026-0001)
    M3. Nom, adresse, NIU et RCCM de l'emetteur
    M4. Regime d'imposition de l'emetteur
    M5. Nom, adresse et NIU du client
@@ -46,8 +46,37 @@ REGLES A VERIFIER :
    M8. Taux de TVA applique
    M9. Montant de la TVA
    M10. Montant total TTC
-   M11. References bancaires
-   M12. Service des impots dont depend l'emetteur
+   M11. References bancaires (IBAN, numero de compte, banque)
+   M12. Service des impots dont depend l'emetteur (ex: "CIME de Brazzaville", "DGE")
+
+FORMATS SPECIFIQUES CONGO — IMPORTANT pour la reconnaissance :
+
+NIU (Numero d'Identification Unique) :
+- Format personnes morales : M suivi de 9 chiffres et 1 cle (ex: M 012345678 A, M012345678A)
+- Format personnes physiques : P suivi de 9 chiffres et 1 cle (ex: P 987654321 B)
+- Peut aussi apparaitre comme "NIU : MXXXXXXXXXA" ou "N.I.U." ou "Identification Unique"
+- ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
+
+RCCM (Registre du Commerce et du Credit Mobilier) :
+- Format : CG-[VILLE]-[NUMERO]-[LETTRE]-[ANNEE] (ex: CG-BZV-01-2345-B-2024)
+- Villes courantes : BZV (Brazzaville), PNR (Pointe-Noire), DLA (Dolisie), OWD (Owando)
+- Peut aussi apparaitre comme "RCCM :", "RC :", "Registre du Commerce"
+- Ancien format possible : RCCM/CG/BZV/...
+
+Regime d'imposition :
+- "Reel normal" ou "Regime du reel normal"
+- "Reel simplifie" ou "Regime simplifie d'imposition"
+- "Forfait" ou "Regime forfaitaire"
+- "IGF" (Impot Global Forfaitaire) pour les petits contribuables
+
+Services des impots (centres fiscaux) :
+- DGE (Direction des Grandes Entreprises)
+- CIME (Centre des Impots des Moyennes Entreprises) + ville
+- CSI (Centre Sectoriel des Impots) + secteur
+- CDPI (Centre Departemental des Patentes et Impots)
+
+Monnaie : FCFA (Franc CFA CEMAC). Les montants sont en FCFA.
+TVA : toujours exprimee en pourcentage (18%, 5%, 0%).
 
 3) TAUX DE TVA (Art. 22 CGI) :
    - Taux general : 18% (toutes operations taxables sauf exceptions)
