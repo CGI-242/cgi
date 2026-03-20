@@ -57,17 +57,18 @@ NIU (Numero d'Identification Unique) :
 - Peut aussi apparaitre comme "NIU : MXXXXXXXXXA" ou "N.I.U." ou "Identification Unique"
 - ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
 
-RCCM (Registre du Commerce et du Credit Mobilier) :
-- Format : CG-[VILLE]-[NUMERO]-[LETTRE]-[ANNEE] (ex: CG-BZV-01-2345-B-2024)
-- Villes courantes : BZV (Brazzaville), PNR (Pointe-Noire), DLA (Dolisie), OWD (Owando)
-- Peut aussi apparaitre comme "RCCM :", "RC :", "Registre du Commerce"
-- Ancien format possible : RCCM/CG/BZV/...
+RCCM (Registre du Commerce et du Credit Mobilier) — norme OHADA :
+- Format : CG/[VILLE]/[ANNEE]/[LETTRE-CLE]/[NUMERO 5 chiffres]
+- Exemples : "RCCM CG/BZV/2024/B/12345", "CG/PNR/2023/B/00456", "RCCM CG-BZV-2024-B-12345"
+- Codes villes Congo : BZV (Brazzaville), PNR (Pointe-Noire), DLS (Dolisie), OWD (Owando), OUE (Ouesso), NKY (Nkayi), MSD (Mossendjo)
+- Lettres-cles : B (immatriculation), M (modification), R (radiation)
+- Ancien format possible : "RCCM CO/BZV/1/B 6261" ou variantes avec tirets
+- Peut apparaitre comme "RCCM :", "RC :", "Registre du Commerce", "N° RCCM"
 
-Regime d'imposition :
-- "Reel normal" ou "Regime du reel normal"
-- "Reel simplifie" ou "Regime simplifie d'imposition"
-- "Forfait" ou "Regime forfaitaire"
-- "IGF" (Impot Global Forfaitaire) pour les petits contribuables
+Regime d'imposition (CGI 2026 — 2 regimes uniquement) :
+- "Reel" ou "Regime du reel" ou "Regime reel normal" (contribuables assujettis TVA, CA >= seuil)
+- "Forfait" ou "Regime du forfait" ou "IGF" (Impot Global Forfaitaire, contribuables CA < seuil TVA)
+- ATTENTION : le "regime simplifie" N'EXISTE PLUS dans le CGI 2026
 
 Services des impots (centres fiscaux) :
 - DGE (Direction des Grandes Entreprises)
