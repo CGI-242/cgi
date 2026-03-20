@@ -99,7 +99,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             paddingHorizontal: isCollapsed ? 0 : 16,
             paddingBottom: 12,
             borderBottomWidth: 1,
-            borderBottomColor: colors.border,
+            borderBottomColor: colors.sidebarBorder,
             marginBottom: 8,
           }}
         >
@@ -151,7 +151,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 justifyContent: isCollapsed ? "center" : "flex-start",
                 paddingVertical: 10,
                 paddingHorizontal: isCollapsed ? 0 : 16,
-                backgroundColor: active ? colors.input : "transparent",
+                backgroundColor: active ? colors.sidebarActive : "transparent",
                 borderLeftWidth: active ? 3 : 0,
                 borderLeftColor: active ? colors.accent : "transparent",
                 opacity: disabled ? 0.5 : 1,
@@ -177,7 +177,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                   {disabled && (
                     <View
                       style={{
-                        backgroundColor: colors.input,
+                        backgroundColor: colors.sidebarActive,
                         
                         paddingHorizontal: 5,
                         paddingVertical: 1,
@@ -198,11 +198,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
 
       {/* Section profil (bas) */}
       <View>
-        <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginBottom: 8 }} />
+        <View style={{ borderTopWidth: 1, borderTopColor: colors.sidebarBorder, marginBottom: 8 }} />
         {profileItems.map((item) => (
           <View key={item.label}>
             {item.separator && (
-              <View style={{ borderTopWidth: 1, borderTopColor: colors.border, marginHorizontal: isCollapsed ? 8 : 16, marginVertical: 4 }} />
+              <View style={{ borderTopWidth: 1, borderTopColor: colors.sidebarBorder, marginHorizontal: isCollapsed ? 8 : 16, marginVertical: 4 }} />
             )}
             <TouchableOpacity
               onPress={() => handleProfileAction(item.action)}

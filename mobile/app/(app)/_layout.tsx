@@ -243,7 +243,7 @@ function AppLayoutInner() {
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
               <NotificationBell />
               <TouchableOpacity onPress={toggleTheme} hitSlop={8}>
-                <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color={colors.textSecondary} />
+                <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color="#e8e6e1" />
               </TouchableOpacity>
             </View>
           }

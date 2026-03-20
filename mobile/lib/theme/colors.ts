@@ -9,6 +9,8 @@ export type ThemeColors = {
   accent: string;
   sidebar: string;
   sidebarText: string;
+  sidebarBorder: string;
+  sidebarActive: string;
   headerBg: string;
   input: string;
   danger: string;
@@ -34,6 +36,8 @@ export const lightColors: ThemeColors = {
   accent: "#c49a38",
   sidebar: "#1A3A5C",
   sidebarText: "#e8e6e1",
+  sidebarBorder: "rgba(255,255,255,0.12)",
+  sidebarActive: "rgba(255,255,255,0.08)",
   headerBg: "#1A3A5C",
   input: "#f3f4f6",
   danger: "#ef4444",
@@ -59,6 +63,8 @@ export const darkColors: ThemeColors = {
   accent: "#e0b84f",
   sidebar: "#1A3A5C",
   sidebarText: "#e8e6e1",
+  sidebarBorder: "rgba(255,255,255,0.12)",
+  sidebarActive: "rgba(255,255,255,0.08)",
   headerBg: "#1A3A5C",
   input: "rgba(255,255,255,0.08)",
   danger: "#f87171",
