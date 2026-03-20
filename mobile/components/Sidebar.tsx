@@ -100,23 +100,22 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             alignItems: "center",
             justifyContent: isCollapsed ? "center" : "space-between",
             paddingHorizontal: isCollapsed ? 0 : 16,
-            paddingBottom: 12,
-            borderBottomWidth: 1,
-            borderBottomColor: colors.sidebarBorder,
+            paddingVertical: 12,
+            backgroundColor: "#1A3A5C",
             marginBottom: 8,
           }}
         >
           {isCollapsed ? (
-            <Text style={{ color: "#1A3A5C", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
+            <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: "#1A3A5C", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
-              <Text style={{ color: "#1A3A5C", fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
+              <Text style={{ color: "#e8e6e1", fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!isCollapsed && (
             <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
-              <Ionicons name="chevron-back-outline" size={20} color={colors.sidebarText} />
+              <Ionicons name="chevron-back-outline" size={20} color="#e8e6e1" />
             </TouchableOpacity>
           )}
         </View>
@@ -128,7 +127,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             accessibilityLabel={t("sidebar.expand")}
             accessibilityRole="button"
           >
-            <Ionicons name="chevron-forward-outline" size={20} color={colors.sidebarText} />
+            <Ionicons name="chevron-forward-outline" size={20} color="#e8e6e1" />
           </TouchableOpacity>
         )}
 
