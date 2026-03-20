@@ -10,6 +10,7 @@ export interface AuditFactureResult {
   score: { found: number; total: number };
   langue: { conforme: boolean; details: string };
   tva: {
+    assujetti: boolean;
     conforme: boolean;
     tauxApplique: string | null;
     tauxAttendu: string | null;

@@ -15,6 +15,7 @@ export interface AuditFactureResult {
   score: { found: number; total: number };
   langue: { conforme: boolean; details: string };
   tva: {
+    assujetti: boolean;
     conforme: boolean;
     tauxApplique: string | null;
     tauxAttendu: string | null;
@@ -35,19 +36,43 @@ REGLES A VERIFIER :
 
 1) LANGUE (Art. 32 CGI) : la facture doit etre redigee en francais.
 
-2) MENTIONS OBLIGATOIRES (Art. 32 CGI) — 12 mentions :
+2) DETERMINATION DU STATUT TVA DE L'EMETTEUR — ETAPE PREALABLE OBLIGATOIRE :
+
+Avant de verifier les mentions, tu DOIS identifier si l'emetteur est assujetti ou non a la TVA :
+
+CAS A — EMETTEUR ASSUJETTI TVA (regime reel) :
+- Regime du reel (CA >= 100.000.000 FCFA pour personnes physiques, ou toute personne morale) — Art. 5 CGI
+- Les mentions TVA (taux, montant, HT/TTC) sont OBLIGATOIRES
+- Unites : UGE, UME
+
+CAS B — EMETTEUR NON ASSUJETTI TVA (regime forfait/IGF) :
+- Regime du forfait (CA < seuil TVA) — Art. 96 CGI
+- Les mentions TVA (M8, M9) ne sont PAS applicables et ne doivent PAS etre comptees comme manquantes
+- La facture DEVRAIT mentionner "TVA non applicable - Regime forfait" ou equivalent
+- Le montant est un montant net (pas de HT/TTC)
+- Unites : UPPTE
+- ATTENTION : si le client est au regime reel, il ne pourra PAS deduire de TVA sur cette facture (ce n'est pas une anomalie, c'est normal)
+
+MENTIONS OBLIGATOIRES (Art. 32 CGI) :
+
+Pour TOUS les emetteurs (assujettis ou non) :
    M1. Date de la facture
    M2. Numero de facture dans une serie continue (ex: FA-2026-0001)
    M3. Nom, adresse, NIU et RCCM de l'emetteur
    M4. Regime d'imposition de l'emetteur
    M5. Nom, adresse et NIU du client
    M6. Designation et quantite des biens ou prestations
-   M7. Prix unitaire hors taxe
+   M7. Prix unitaire hors taxe (ou montant net si forfait)
+   M10. Montant total
+   M11. References bancaires (IBAN, numero de compte, banque)
+   M12. Service des impots dont depend l'emetteur (UGE, UME, UPPTE + ville)
+
+Uniquement si ASSUJETTI TVA (regime reel) :
    M8. Taux de TVA applique
    M9. Montant de la TVA
-   M10. Montant total TTC
-   M11. References bancaires (IBAN, numero de compte, banque)
-   M12. Service des impots dont depend l'emetteur (ex: "CIME de Brazzaville", "DGE")
+   (et M10 devient "Montant total TTC")
+
+Le score total est sur 12 si assujetti TVA, sur 10 si non assujetti (forfait)
 
 FORMATS SPECIFIQUES CONGO — IMPORTANT pour la reconnaissance :
 
@@ -93,19 +118,22 @@ TVA : toujours exprimee en pourcentage (18%, 5%, 0%).
 
 INSTRUCTIONS :
 - Examine attentivement la facture fournie (image ou PDF)
-- Verifie chaque mention obligatoire
-- Verifie le taux de TVA par rapport aux produits/services factures
-- Verifie la langue
+- ETAPE 1 : Identifier le regime d'imposition de l'emetteur (reel ou forfait)
+- ETAPE 2 : Adapter les mentions a verifier selon le statut TVA
+- ETAPE 3 : Verifier chaque mention applicable
+- ETAPE 4 : Verifier le taux de TVA (uniquement si assujetti)
+- ETAPE 5 : Verifier la langue
 - Retourne UNIQUEMENT un JSON valide (pas de texte avant/apres) avec cette structure exacte :
 
 {
-  "score": { "found": <nombre de mentions presentes>, "total": 12 },
+  "score": { "found": <nombre de mentions presentes>, "total": 12 ou 10 selon regime },
   "langue": { "conforme": true/false, "details": "..." },
   "tva": {
+    "assujetti": true/false,
     "conforme": true/false,
     "tauxApplique": "18%" ou null,
     "tauxAttendu": "18%" ou null,
-    "details": "..."
+    "details": "ex: Emetteur au forfait, TVA non applicable" ou "TVA 18% conforme"
   },
   "mentions": [
     { "nom": "Date de facture", "present": true/false, "valeur": "..." },
@@ -116,19 +144,23 @@ INSTRUCTIONS :
     { "nom": "NIU client", "present": true/false, "valeur": "..." },
     { "nom": "Designation et quantite", "present": true/false, "valeur": "..." },
     { "nom": "Prix unitaire HT", "present": true/false, "valeur": "..." },
-    { "nom": "Taux TVA", "present": true/false, "valeur": "..." },
-    { "nom": "Montant TVA", "present": true/false, "valeur": "..." },
-    { "nom": "Total TTC", "present": true/false, "valeur": "..." },
+    { "nom": "Taux TVA", "present": true/false, "valeur": "..." (omettre si forfait) },
+    { "nom": "Montant TVA", "present": true/false, "valeur": "..." (omettre si forfait) },
+    { "nom": "Montant total", "present": true/false, "valeur": "..." },
     { "nom": "References bancaires", "present": true/false, "valeur": "..." },
     { "nom": "Service des impots", "present": true/false, "valeur": "..." }
   ],
   "risques": [
-    { "type": "amende", "description": "...", "montant": "10 000 FCFA par mention manquante" },
-    { "type": "deduction_tva", "description": "..." }
+    { "type": "amende", "description": "...", "montant": "10 000 FCFA par mention manquante" }
   ],
   "recommandations": ["...", "..."],
   "donneesExtraites": { "emetteur": "...", "client": "...", "montantHT": "...", "montantTVA": "...", "montantTTC": "..." }
-}`;
+}
+
+REGLES POUR LES RISQUES :
+- Risque "deduction_tva" : ne le mentionner QUE si le CLIENT est identifiable comme etant au regime reel (NIU commencant par M = personne morale = assujetti de plein droit). Si le client est au forfait/IGF ou non identifiable, NE PAS mentionner ce risque.
+- Risque "amende" : 10 000 FCFA par mention obligatoire manquante (applicable quel que soit le regime).
+- Si l'emetteur est au forfait et que la facture ne porte pas de TVA, c'est NORMAL — ne pas signaler comme risque.`;
 
 // --- Analyse ---
 
