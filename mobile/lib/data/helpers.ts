@@ -133,13 +133,23 @@ export function buildChapitreTree(articles: ArticleData[], titre: string, prefix
     pNode.articles.push(art);
   }
 
-  // Si une seule section "Général", mettre les articles directement sur le chapitre
+  // Si une seule section "Général", mettre les articles dans un enfant unique pour activer le mode livre
   if (sections.length === 1 && sections[0].label === "Général") {
+    const arts = sections[0].articles || [];
+    const kids = sections[0].children;
+    if (!kids || kids.length === 0) {
+      // Pas de sous-sections : créer un nœud enfant unique avec tous les articles
+      return {
+        id: prefix,
+        label: titre,
+        children: [{ id: `${prefix}-all`, label: titre, articles: arts }],
+      };
+    }
     return {
       id: prefix,
       label: titre,
-      articles: sections[0].articles,
-      children: sections[0].children,
+      articles: arts,
+      children: kids,
     };
   }
 
