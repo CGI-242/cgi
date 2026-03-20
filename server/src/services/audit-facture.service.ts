@@ -34,7 +34,7 @@ Tu analyses des factures pour verifier leur conformite reglementaire.
 
 REGLES A VERIFIER :
 
-1) LANGUE (Art. 32 CGI) : la facture doit etre redigee en francais.
+1) LANGUE (Art. 373 ter CGI) : les documents comptables et factures doivent etre rediges en francais. Sanction : amende de 2.000.000 FCFA par document en langue etrangere.
 
 2) DETERMINATION DU STATUT TVA DE L'EMETTEUR — ETAPE PREALABLE OBLIGATOIRE :
 
@@ -165,11 +165,12 @@ Risque "deduction_tva" — regles CGI 2026 :
 - Art. 96 : les professions reglementees (pharmacie, avocat, expert-comptable, etc.) sont EXCLUES du forfait meme si CA < seuil → elles sont toujours au reel
 - Si l'emetteur est au forfait et que la facture ne porte pas de TVA, c'est NORMAL — ne PAS signaler comme risque
 
-Risques "amende" selon le CGI 2026 :
+Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
+- Document en langue etrangere : amende 2 000 000 FCFA par document (Art. 373 ter)
 - Absence de NIU sur facture : amende 10 000 FCFA par facture (Arrete 5327, Art. 9)
-- Non-utilisation du SFEC : amende 50 000 000 FCFA (Art. 34 bis CGI)
+- Non-utilisation du SFEC : amende 50 000 000 FCFA (Art. 34 bis)
 - Facture non conforme : rejet de la deduction TVA pour le client assujetti (Art. 23 et 34 bis)
-- NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer uniquement les sanctions prevues par les textes.`;
+- NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.`;
 
 // --- Analyse ---
 
