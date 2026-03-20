@@ -82,25 +82,25 @@ export default function AuditFacturePage() {
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ maxWidth: 900, alignSelf: "center", width: "100%", padding: isMobile ? 16 : 32 }}>
+      <View style={{ maxWidth: 860, alignSelf: "center", width: "100%", padding: isMobile ? 14 : 24 }}>
         {/* Header */}
-        <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 24 : 32, color: colors.text, marginBottom: 8 }}>
+        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 20, color: colors.text, marginBottom: 4 }}>
           Audit Documents
         </Text>
-        <Text style={{ fontFamily: fonts.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 20 }}>
+        <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, marginBottom: 16 }}>
           Analysez la conformite de vos documents au CGI 2026
         </Text>
 
         {/* Selecteur type de document */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 14 }}>
           {DOC_TYPES.map((dt) => (
             <TouchableOpacity
               key={dt}
               onPress={() => { setDocType(dt); setResult(null); setError(null); }}
               style={{
-                paddingVertical: 8,
-                paddingHorizontal: 14,
-                borderRadius: 8,
+                paddingVertical: 6,
+                paddingHorizontal: 12,
+                borderRadius: 6,
                 backgroundColor: docType === dt ? "#1A3A5C" : colors.card,
                 borderWidth: 1,
                 borderColor: docType === dt ? "#1A3A5C" : colors.border,
@@ -109,7 +109,7 @@ export default function AuditFacturePage() {
               <Text style={{
                 fontFamily: fonts.medium,
                 fontWeight: fontWeights.medium,
-                fontSize: 13,
+                fontSize: 12,
                 color: docType === dt ? "#fff" : colors.text,
               }}>
                 {DOC_TYPE_LABELS[dt]}
@@ -125,25 +125,25 @@ export default function AuditFacturePage() {
             borderWidth: 2,
             borderStyle: "dashed",
             borderColor: file ? colors.success : colors.border,
-            borderRadius: 16,
-            padding: 32,
+            borderRadius: 12,
+            padding: 24,
             alignItems: "center",
             backgroundColor: file ? `${colors.success}08` : colors.card,
-            marginBottom: 16,
+            marginBottom: 12,
           }}
         >
-          <Ionicons name={file ? "document-text" : "cloud-upload-outline"} size={40} color={file ? colors.success : colors.textMuted} />
+          <Ionicons name={file ? "document-text" : "cloud-upload-outline"} size={32} color={file ? colors.success : colors.textMuted} />
           {file ? (
-            <View style={{ alignItems: "center", marginTop: 12 }}>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text }}>{file.name}</Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, marginTop: 4 }}>{(file.size / 1024).toFixed(0)} Ko</Text>
+            <View style={{ alignItems: "center", marginTop: 8 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>{file.name}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{(file.size / 1024).toFixed(0)} Ko</Text>
             </View>
           ) : (
-            <View style={{ alignItems: "center", marginTop: 12 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text }}>
-                Selectionnez une facture
+            <View style={{ alignItems: "center", marginTop: 8 }}>
+              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }}>
+                Selectionnez un document
               </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textMuted, marginTop: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
                 PDF, JPEG ou PNG — 10 Mo max
               </Text>
             </View>
@@ -166,80 +166,80 @@ export default function AuditFacturePage() {
           disabled={!file || loading}
           style={{
             backgroundColor: file && !loading ? "#1A3A5C" : colors.disabled,
-            borderRadius: 12,
-            paddingVertical: 14,
+            borderRadius: 8,
+            paddingVertical: 10,
             alignItems: "center",
-            marginBottom: 24,
+            marginBottom: 20,
           }}
         >
           {loading ? (
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
               <ActivityIndicator color="#fff" size="small" />
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: "#fff" }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
                 Analyse en cours...
               </Text>
             </View>
           ) : (
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: "#fff" }}>
-              Analyser la facture
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
+              Analyser le document
             </Text>
           )}
         </TouchableOpacity>
 
         {error && (
-          <View style={{ backgroundColor: `${colors.danger}15`, borderRadius: 12, padding: 16, marginBottom: 16 }}>
-            <Text style={{ fontFamily: fonts.regular, color: colors.danger }}>{error}</Text>
+          <View style={{ backgroundColor: `${colors.danger}15`, borderRadius: 8, padding: 12, marginBottom: 12 }}>
+            <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.danger }}>{error}</Text>
           </View>
         )}
 
         {/* Resultats */}
         {result && (
-          <View style={{ gap: 16 }}>
+          <View style={{ gap: 12 }}>
             {/* Score */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 24, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 48, color: scoreColor(result.score.found, result.score.total) }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
+              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 36, color: scoreColor(result.score.found, result.score.total) }}>
                 {result.score.found}/{result.score.total}
               </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 14, color: colors.textSecondary, marginTop: 4 }}>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
                 mentions obligatoires detectees
               </Text>
             </View>
 
             {/* Langue */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 20, borderWidth: 1, borderColor: colors.border }}>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 8 }}>
-                <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={22} color={result.langue.conforme ? colors.success : colors.danger} />
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text }}>Langue</Text>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
               </View>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 14, color: colors.textSecondary }}>{result.langue.details}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
             </View>
 
             {/* TVA */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 20, borderWidth: 1, borderColor: colors.border }}>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 8 }}>
-                <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={22} color={result.tva.conforme ? colors.success : colors.warning} />
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text }}>Taux TVA</Text>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={18} color={result.tva.conforme ? colors.success : colors.warning} />
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Taux TVA</Text>
               </View>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 14, color: colors.textSecondary }}>{result.tva.details}</Text>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.tva.details}</Text>
               {result.tva.tauxApplique && (
-                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text, marginTop: 6 }}>
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginTop: 4 }}>
                   Applique : {result.tva.tauxApplique} {result.tva.tauxAttendu ? `| Attendu : ${result.tva.tauxAttendu}` : ""}
                 </Text>
               )}
             </View>
 
             {/* Mentions */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 20, borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text, marginBottom: 12 }}>
+            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
                 Mentions obligatoires (Art. 32)
               </Text>
               {result.mentions.map((m, i) => (
-                <View key={i} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 8, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: colors.border }}>
-                  <Ionicons name={m.present ? "checkmark-circle" : "close-circle"} size={18} color={m.present ? colors.success : colors.danger} style={{ marginRight: 10 }} />
+                <View key={i} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: colors.border }}>
+                  <Ionicons name={m.present ? "checkmark-circle" : "close-circle"} size={16} color={m.present ? colors.success : colors.danger} style={{ marginRight: 8 }} />
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }}>{m.nom}</Text>
+                    <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }}>{m.nom}</Text>
                     {m.valeur && (
-                      <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }} numberOfLines={1}>{m.valeur}</Text>
+                      <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }} numberOfLines={1}>{m.valeur}</Text>
                     )}
                   </View>
                 </View>
@@ -248,16 +248,16 @@ export default function AuditFacturePage() {
 
             {/* Risques */}
             {result.risques.length > 0 && (
-              <View style={{ backgroundColor: `${colors.danger}08`, borderRadius: 16, padding: 20, borderWidth: 1, borderColor: `${colors.danger}30` }}>
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.danger, marginBottom: 12 }}>
+              <View style={{ backgroundColor: `${colors.danger}08`, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.danger, marginBottom: 10 }}>
                   Risques identifies
                 </Text>
                 {result.risques.map((r, i) => (
-                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 8 }}>
-                    <Ionicons name="warning" size={16} color={colors.danger} style={{ marginRight: 8, marginTop: 2 }} />
+                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
+                    <Ionicons name="warning" size={14} color={colors.danger} style={{ marginRight: 6, marginTop: 1 }} />
                     <View style={{ flex: 1 }}>
-                      <Text style={{ fontFamily: fonts.regular, fontSize: 14, color: colors.text }}>{r.description}</Text>
-                      {r.montant && <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.danger, marginTop: 2 }}>{r.montant}</Text>}
+                      <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.text }}>{r.description}</Text>
+                      {r.montant && <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.danger, marginTop: 1 }}>{r.montant}</Text>}
                     </View>
                   </View>
                 ))}
@@ -266,14 +266,14 @@ export default function AuditFacturePage() {
 
             {/* Recommandations */}
             {result.recommandations.length > 0 && (
-              <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 20, borderWidth: 1, borderColor: colors.border }}>
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 16, color: colors.text, marginBottom: 12 }}>
+              <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
                   Recommandations
                 </Text>
                 {result.recommandations.map((r, i) => (
-                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 8 }}>
-                    <Ionicons name="bulb-outline" size={16} color={colors.primary} style={{ marginRight: 8, marginTop: 2 }} />
-                    <Text style={{ fontFamily: fonts.regular, fontSize: 14, color: colors.textSecondary, flex: 1 }}>{r}</Text>
+                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
+                    <Ionicons name="bulb-outline" size={14} color={colors.primary} style={{ marginRight: 6, marginTop: 1 }} />
+                    <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, flex: 1 }}>{r}</Text>
                   </View>
                 ))}
               </View>
@@ -283,8 +283,8 @@ export default function AuditFacturePage() {
 
         {/* Historique */}
         {history.length > 0 && (
-          <View style={{ marginTop: 32 }}>
-            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.text, marginBottom: 12 }}>
+          <View style={{ marginTop: 24 }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 10 }}>
               Historique des audits
             </Text>
             {history.map((h) => (
@@ -300,28 +300,28 @@ export default function AuditFacturePage() {
                   flexDirection: "row",
                   alignItems: "center",
                   backgroundColor: colors.card,
-                  borderRadius: 10,
-                  padding: 14,
-                  marginBottom: 8,
+                  borderRadius: 8,
+                  padding: 12,
+                  marginBottom: 6,
                   borderWidth: 1,
                   borderColor: colors.border,
                 }}
               >
                 <Ionicons
                   name={h.conforme ? "checkmark-circle" : "alert-circle"}
-                  size={20}
+                  size={18}
                   color={h.conforme ? colors.success : colors.warning}
-                  style={{ marginRight: 12 }}
+                  style={{ marginRight: 10 }}
                 />
                 <View style={{ flex: 1 }}>
-                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }} numberOfLines={1}>
+                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }} numberOfLines={1}>
                     {h.fileName}
                   </Text>
-                  <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }}>
                     {DOC_TYPE_LABELS[h.docType] || h.docType} — {new Date(h.createdAt).toLocaleDateString("fr-FR")}
                   </Text>
                 </View>
-                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: h.conforme ? colors.success : colors.warning }}>
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: h.conforme ? colors.success : colors.warning }}>
                   {h.score}/{h.total}
                 </Text>
               </TouchableOpacity>
