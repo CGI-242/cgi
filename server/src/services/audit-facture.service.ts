@@ -57,7 +57,7 @@ NIU (Numero d'Identification Unique) — Arrete n5327 du 12 mars 2020, Art. 3 :
   2 caracteres derniers chiffres de l'annee de creation (ex: 24 pour 2024)
   12 chiffres sequence (precedes de zeros a gauche)
   1 caractere de controle alphanumerique (algorithme LUHN)
-- Exemples : "M24000000012345A", "P22000000098765B", "M 24 000000012345 A"
+- Exemples reels : "M220000002077447", "P24000000098765B", "M 22 000000207744 7"
 - Peut aussi apparaitre comme "NIU :", "N.I.U.", "Identification Unique", "NIF"
 - ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
 
