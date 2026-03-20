@@ -33,6 +33,26 @@ export interface AuditFactureResult {
   donneesExtraites: Record<string, string>;
 }
 
+export interface AuditHistoryItem {
+  id: string;
+  fileName: string;
+  docType: DocumentType;
+  score: number;
+  total: number;
+  conforme: boolean;
+  createdAt: string;
+}
+
+export async function getAuditHistory(): Promise<AuditHistoryItem[]> {
+  const { data } = await api.get<AuditHistoryItem[]>("/audit-facture/history");
+  return data;
+}
+
+export async function getAuditDetail(id: string): Promise<AuditFactureResult> {
+  const { data } = await api.get(`/audit-facture/${id}`);
+  return data.result;
+}
+
 export async function analyzeDocument(file: Blob, filename: string, type: DocumentType = "facture"): Promise<AuditFactureResult> {
   const formData = new FormData();
   formData.append("file", file, filename);

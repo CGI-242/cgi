@@ -1,11 +1,11 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import { analyzeDocument, DOC_TYPE_LABELS, type AuditFactureResult, type DocumentType } from "@/lib/api/audit-facture";
+import { analyzeDocument, getAuditHistory, getAuditDetail, DOC_TYPE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType } from "@/lib/api/audit-facture";
 
 type FileInfo = { name: string; size: number; blob: Blob };
 const DOC_TYPES: DocumentType[] = ["facture", "releve_bancaire", "bon_commande", "das2", "note_frais"];
@@ -19,7 +19,12 @@ export default function AuditFacturePage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<AuditFactureResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [history, setHistory] = useState<AuditHistoryItem[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    getAuditHistory().then(setHistory).catch(() => {});
+  }, [result]);
 
   const pickFile = async () => {
     if (Platform.OS === "web") {
@@ -273,6 +278,54 @@ export default function AuditFacturePage() {
                 ))}
               </View>
             )}
+          </View>
+        )}
+
+        {/* Historique */}
+        {history.length > 0 && (
+          <View style={{ marginTop: 32 }}>
+            <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 18, color: colors.text, marginBottom: 12 }}>
+              Historique des audits
+            </Text>
+            {history.map((h) => (
+              <TouchableOpacity
+                key={h.id}
+                onPress={async () => {
+                  try {
+                    const detail = await getAuditDetail(h.id);
+                    setResult(detail);
+                  } catch {}
+                }}
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  backgroundColor: colors.card,
+                  borderRadius: 10,
+                  padding: 14,
+                  marginBottom: 8,
+                  borderWidth: 1,
+                  borderColor: colors.border,
+                }}
+              >
+                <Ionicons
+                  name={h.conforme ? "checkmark-circle" : "alert-circle"}
+                  size={20}
+                  color={h.conforme ? colors.success : colors.warning}
+                  style={{ marginRight: 12 }}
+                />
+                <View style={{ flex: 1 }}>
+                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }} numberOfLines={1}>
+                    {h.fileName}
+                  </Text>
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+                    {DOC_TYPE_LABELS[h.docType] || h.docType} — {new Date(h.createdAt).toLocaleDateString("fr-FR")}
+                  </Text>
+                </View>
+                <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14, color: h.conforme ? colors.success : colors.warning }}>
+                  {h.score}/{h.total}
+                </Text>
+              </TouchableOpacity>
+            ))}
           </View>
         )}
       </View>
