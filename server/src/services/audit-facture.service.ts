@@ -51,10 +51,14 @@ REGLES A VERIFIER :
 
 FORMATS SPECIFIQUES CONGO — IMPORTANT pour la reconnaissance :
 
-NIU (Numero d'Identification Unique) :
-- Format personnes morales : M suivi de 9 chiffres et 1 cle (ex: M 012345678 A, M012345678A)
-- Format personnes physiques : P suivi de 9 chiffres et 1 cle (ex: P 987654321 B)
-- Peut aussi apparaitre comme "NIU : MXXXXXXXXXA" ou "N.I.U." ou "Identification Unique"
+NIU (Numero d'Identification Unique) — Arrete n5327 du 12 mars 2020, Art. 3 :
+- Format : 16 caracteres au total :
+  1 caractere type de personne (M = morale, P = physique)
+  2 caracteres derniers chiffres de l'annee de creation (ex: 24 pour 2024)
+  12 chiffres sequence (precedes de zeros a gauche)
+  1 caractere de controle alphanumerique (algorithme LUHN)
+- Exemples : "M24000000012345A", "P22000000098765B", "M 24 000000012345 A"
+- Peut aussi apparaitre comme "NIU :", "N.I.U.", "Identification Unique", "NIF"
 - ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
 
 RCCM (Registre du Commerce et du Credit Mobilier) — norme OHADA :
@@ -70,11 +74,12 @@ Regime d'imposition (CGI 2026 — 2 regimes uniquement) :
 - "Forfait" ou "Regime du forfait" ou "IGF" (Impot Global Forfaitaire, contribuables CA < seuil TVA)
 - ATTENTION : le "regime simplifie" N'EXISTE PLUS dans le CGI 2026
 
-Services des impots (centres fiscaux) :
-- DGE (Direction des Grandes Entreprises)
-- CIME (Centre des Impots des Moyennes Entreprises) + ville
-- CSI (Centre Sectoriel des Impots) + secteur
-- CDPI (Centre Departemental des Patentes et Impots)
+Services des impots / unites de gestion fiscale (CGI 2026) :
+- UGE (Unite de Gestion des Grandes Entreprises) — CA > 2 milliards FCFA
+- UME (Unite de Gestion des Moyennes Entreprises) — CA entre seuil TVA et 2 milliards
+- UPPTE (Unite de Gestion des Petites et Tres Petites Entreprises) — CA < seuil TVA
+- Peut aussi apparaitre comme "DGE", "CIME", "CSI", "Centre des impots de [ville]"
+- Le contribuable doit indiquer l'unite dont il depend sur sa facture
 
 Monnaie : FCFA (Franc CFA CEMAC). Les montants sont en FCFA.
 TVA : toujours exprimee en pourcentage (18%, 5%, 0%).
