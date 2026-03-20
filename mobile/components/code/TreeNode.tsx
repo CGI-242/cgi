@@ -16,7 +16,8 @@ type Props = {
 
 function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props) {
   const { colors } = useTheme();
-  const hasChildren = node.children && node.children.length > 0;
+  const isAbroge = !!node.abroge;
+  const hasChildren = !isAbroge && node.children && node.children.length > 0;
   const isExpanded = expanded[node.id];
   const isSelected = selected === node.id;
 
@@ -24,18 +25,21 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
     <View>
       <TouchableOpacity
         onPress={() => {
+          if (isAbroge) return;
           if (hasChildren) onToggle(node.id);
           onSelect(node);
         }}
+        disabled={isAbroge}
         style={{
           flexDirection: "row",
           alignItems: "center",
           paddingVertical: 8,
           paddingHorizontal: 8,
           paddingLeft: 8 + level * 16,
-          backgroundColor: isSelected ? colors.primary + "20" : "transparent",
+          backgroundColor: isSelected && !isAbroge ? colors.primary + "20" : "transparent",
+          opacity: isAbroge ? 0.45 : 1,
         }}
-        accessibilityLabel={`${node.label}${hasChildren ? ", dossier" : ""}`}
+        accessibilityLabel={`${node.label}${isAbroge ? ", abrogé" : hasChildren ? ", dossier" : ""}`}
         accessibilityRole="button"
         accessibilityState={{ expanded: hasChildren ? isExpanded : undefined, selected: isSelected }}
       >
@@ -51,11 +55,12 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
         )}
         <Text
           style={{
-            fontFamily: isSelected ? fonts.semiBold : fonts.regular,
-            fontWeight: isSelected ? fontWeights.semiBold : fontWeights.regular,
+            fontFamily: isSelected && !isAbroge ? fonts.semiBold : fonts.regular,
+            fontWeight: isSelected && !isAbroge ? fontWeights.semiBold : fontWeights.regular,
             fontSize: 16,
             flex: 1,
-            color: isSelected ? colors.primary : colors.text,
+            color: isAbroge ? colors.textMuted : isSelected ? colors.primary : colors.text,
+            fontStyle: isAbroge ? "italic" : "normal",
           }}
           numberOfLines={2}
         >
@@ -63,7 +68,7 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
         </Text>
       </TouchableOpacity>
 
-      {isExpanded &&
+      {isExpanded && !isAbroge &&
         node.children?.map((child) => (
           <TreeNode
             key={child.id}

@@ -86,6 +86,7 @@ if (chapitre2.children) {
   });
 }
 const chapitre3 = buildChapitreTree(articles3, "Chapitre 3 - Sans objet", "ch3");
+chapitre3.abroge = true;
 const chapitre4 = buildChapitreTree(articles4, "Chapitre 4 - Dispositions communes", "ch4");
 const chapitre5 = buildChapitreTree(articles5, "Chapitre 5 - Taxes diverses", "ch5");
 const chapitre6 = buildChapitreTree(articles6, "Chapitre 6 - Dispositions diverses", "ch6");

@@ -14,4 +14,5 @@ export type SommaireNode = {
   label: string;
   children?: SommaireNode[];
   articles?: ArticleData[];
+  abroge?: boolean;
 };
