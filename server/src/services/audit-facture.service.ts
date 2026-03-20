@@ -168,6 +168,7 @@ Risque "deduction_tva" — regles CGI 2026 :
 Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
 - Document en langue etrangere : amende 2 000 000 FCFA par document (Art. 373 ter)
 - Absence de NIU sur facture : amende 10 000 FCFA par facture (Arrete 5327, Art. 9)
+- Omission ou inexactitude dans les mentions des factures (dans le cadre de la DAS II) : amende 10 000 FCFA par omission (Art. 380, renvoyant aux Art. 176-181)
 - Non-utilisation du SFEC : amende 50 000 000 FCFA (Art. 34 bis)
 - Facture non conforme : rejet de la deduction TVA pour le client assujetti (Art. 23 et 34 bis)
 - NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.`;
