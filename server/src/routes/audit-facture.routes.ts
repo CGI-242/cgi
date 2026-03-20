@@ -106,7 +106,7 @@ router.get(
   async (req: AuthRequest, res) => {
     try {
       const audit = await prisma.documentAudit.findFirst({
-        where: { id: req.params.id, userId: req.userId! },
+        where: { id: String(req.params.id), userId: req.userId! },
       });
       if (!audit) return res.status(404).json({ error: "Audit introuvable" });
       return res.json(audit);
