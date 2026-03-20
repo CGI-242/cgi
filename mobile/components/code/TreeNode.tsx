@@ -62,7 +62,7 @@ function TreeNode({ node, level, selected, onSelect, expanded, onToggle }: Props
             color: isAbroge ? colors.textMuted : isSelected ? colors.primary : colors.text,
             fontStyle: isAbroge ? "italic" : "normal",
           }}
-          numberOfLines={2}
+          numberOfLines={1}
         >
           {node.label}
         </Text>

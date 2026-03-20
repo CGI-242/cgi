@@ -79,7 +79,7 @@ jobs:
             ENVEOF
 
             # --- Build frontend web ---
-            cd mobile && npm ci && npm run build:web && cd ..
+            cd mobile && rm -rf node_modules && npm install && npm run build:web && cd ..
 
             # --- Copier le build dans nginx ---
             sudo rm -rf nginx/dist
