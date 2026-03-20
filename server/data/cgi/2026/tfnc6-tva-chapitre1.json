@@ -17,7 +17,7 @@
       "article": "Art. 1",
       "titre": "Objet",
       "texte": [
-        "Art.1.- (L.F.2025) La présente loi s'inscrit dans le cadre de l'harmonisation des législations des États membres de la CEMAC en matière de taxe sur la valeur ajoutée (en abrégé TVA).",
+        "Art.1.- La présente loi s'inscrit dans le cadre de l'harmonisation des législations des États membres de la CEMAC en matière de taxe sur la valeur ajoutée (en abrégé TVA).",
         "Elle modifie et complète la loi n°12-97 du 12 mai 1997 instituant la Taxe sur la Valeur Ajoutée en République du Congo."
       ],
       "mots_cles": [
@@ -31,6 +31,7 @@
     {
       "article": "Art. 2",
       "titre": "Opérations imposables",
+      "section": "Section 1 : Opérations imposables",
       "texte": [
         "Art.2.- Sont soumises à la TVA, les opérations accomplies par des assujettis dans le cadre d'une activité économique effectuée à titre onéreux sur le territoire du Congo.",
         "Au sens de la présente loi, les activités économiques s'entendent comme toutes activités de livraison de biens, d'importation ou de prestations de services y compris les activités commerciales, agricoles, extractives, industrielles, forestières, artisanales et celles des professions libérales ou assimilées."
@@ -50,18 +51,19 @@
     {
       "article": "Art. 3",
       "titre": "Nature des opérations imposables",
+      "section": "Section 1 : Opérations imposables",
       "texte": [
         "Art.3.- Constituent notamment des opérations imposables :",
         "1) Les livraisons de biens à des tiers et les livraisons à soi-même.",
         "La livraison d'un bien consiste en un transfert du pouvoir de disposer de ce bien en qualité de propriétaire, même si ce transfert est opéré en vertu d'une réquisition de l'autorité publique. L'échange, l'apport en société, la vente à tempérament sont assimilés à des livraisons de biens.",
-        "Par livraison à soi-même de biens, il faut entendre les opérations que les assujettis réalisent, soit pour les besoins de leur entreprise, soit pour d'autres besoins dans le cadre de l'exploitation, à l'exclusion toutefois des prélèvements opérés pour les besoins normaux du chef d'une entreprise individuelle, et des livraisons à soi-même par tout particulier pour ses besoins propres, et par tout groupement pour les besoins personnels de ses membres, lorsque ces livraisons portent sur des locaux servant à l'habitation principale.",
+        "Par livraison à soi-même de biens, il faut entendre les opérations que les assujettis réalisent, soit pour les besoins de leur entreprise, soit pour d'autres besoins dans le cadre de l'exploitation, à l'exclusion toutefois des prélèvements opérés pour les besoins normaux du chef d'une entreprise individuelle, et des livraisons à soi-même par tout particulier pour ses besoins propres, et par tout groupement pour les besoins personnels de ses membres, lorsque ces livraisons portent sur des locaux qui servent à l'habitation principale.",
         "2) Les prestations de service à des tiers et les prestations de service à soi-même.",
         "La prestation de service s'entend de toute opération qui ne constitue pas une livraison de biens, notamment les opérations effectuées par l'entremise de plateformes de commerce électronique étrangères ou locales, ainsi que les commissions perçues par les opérateurs de ces plateformes, les louages d'industrie ou de contrat d'entreprise par lequel une personne s'oblige à exécuter un travail quelconque moyennant rémunération. Il s'agit des locations de biens meubles et immeubles, les opérations portant sur des biens meubles incorporels, les opérations leasing et crédit-bail avec ou sans option d'achat, le transport de personnes et marchandises, le transit et la manutention, la fourniture d'eau, d'électricité, de gaz, de télécommunications et d'énergie thermique, les opérations réalisées dans le cadre d'une activité libérale, des travaux d'études, de conseil, de recherche et d'expertise.",
         "Les ventes d'articles d'occasion faites par les professionnels, les cessions d'éléments d'actifs non compris dans la liste des biens exonérés visée à l'article 241 du Code des douanes modifié par les actes n°2192-UDEAC-556-CD-SE1 du 30 avril 1992 et n°2198-UDEAC-1508-CD-61 du 21 juillet 1998. Les locations de terrains non aménagés et de locaux nus effectuées par des professionnels de l'immobilier.",
         "Les prestations de service à soi-même s'entendent des services que les assujettis réalisent, soit pour les besoins de leur entreprise, soit pour d'autres besoins dans le cadre normal de leur activité.",
         "3) Les acquisitions intracommunautaires et les importations. Par importation, il faut entendre l'introduction de marchandises sur le territoire du Congo au sens de la réglementation douanière de la CEMAC, c'est le franchissement du cordon douanier du territoire de la République du Congo pour la mise à la consommation des marchandises provenant de l'extérieur et la mise à la consommation par suite d'un régime douanier suspensif.",
         "4) Les commandes publiques, qu'elles soient réalisées sur financement national ou extérieur.",
-        "5) Les aides aux entreprises, qu'elles proviennent d'une personne de droit public ou de droit privé, versées sous la forme de subventions, des remises de prêts et les abandons de créance, de don ou de toute autre forme assimilée :",
+        "5) Les aides aux entreprises, qu'elles proviennent d'une personne de droit public ou de droit privé, versées sous la forme de subvention, des remises de prêts et les abandons de créance, de don ou de toute autre forme assimilée :",
         "a) si les sommes versées constituent en fait la contrepartie directe d'une opération réalisée au profit de la partie versante ;",
         "b) ou si les sommes versées complètent le prix d'une opération imposable.",
         "6) Les ventes d'immeubles et les locations immobilières.",
@@ -90,6 +92,7 @@
     {
       "article": "Art. 4",
       "titre": "Assujettis",
+      "section": "Section 2 : Assujettis",
       "texte": [
         "Art.4.- 1) Sont assujettis à la TVA, les personnes physiques et morales qui réalisent à titre habituel ou occasionnel, et d'une manière indépendante, des opérations imposables entrant dans le champ d'application de la taxe et accomplies dans le cadre d'une activité économique réalisée à titre onéreux et quel que soit le secteur d'activité.",
         "Les personnes ci-dessus définies sont assujetties à la TVA quels que soient leur statut juridique et leur situation au regard des autres impôts, la forme ou la nature de leurs interventions.",
@@ -112,6 +115,7 @@
     {
       "article": "Art. 5",
       "titre": "Seuil d'assujettissement",
+      "section": "Section 2 : Assujettis",
       "texte": [
         "Art.5.- 1) Les personnes morales de droit privé sont, de plein droit, assujetties à la TVA, quel que soit leur chiffre d'affaires annuel.",
         "Les personnes physiques sont assujetties à la TVA lorsque leur chiffre d'affaires hors taxes est supérieur ou égal à 100.000.000 FCFA."
@@ -128,6 +132,7 @@
     {
       "article": "Art. 6",
       "titre": "Principe de non-exonération",
+      "section": "Section 3 : Exonérations",
       "texte": [
         "Art.6.- En dehors des biens ou services visés à l'article 7 ci-dessous, aucune exonération ou exemption n'est accordée en matière de TVA.",
         "En particulier, aucune exonération ou exemption n'est accordée dans le cadre de mesures d'incitation à la création d'entreprise et à l'investissement, dans le cadre de mesures ou dispositions visant des secteurs particuliers, ou dans le cadre de conventions particulières."
@@ -145,14 +150,15 @@
     {
       "article": "Art. 7",
       "titre": "Exonérations de TVA",
+      "section": "Section 3 : Exonérations",
       "texte": [
-        "Art.7.- (L.F.2025) Sont exonérés de la TVA :",
+        "Art.7.- Sont exonérés de la TVA :",
         "1) Les opérations suivantes dès lors qu'elles sont soumises à des taxations spécifiques exclusives de toute taxation sur le chiffre d'affaires :",
         "• les opérations bancaires et financières y compris les opérations d'intermédiation financière, et les prestations d'assurance et de réassurance ;",
         "• les ventes de produits des activités extractives ;",
         "• les opérations ayant pour objet la transmission d'immeubles par des personnes autres que les promoteurs immobiliers et passibles des droits d'enregistrement ;",
         "• les intérêts rémunérant les emprunts extérieurs ;",
-        "• les intérêts rémunérant les dépôts auprès des établissements de crédits ou des établissements financiers par des professionnels ;",
+        "• les intérêts rémunérant les dépôts auprès des établissements de crédits ou des établissements financiers par des non professionnels ;",
         "• les jeux de hasard et de divertissement ;",
         "• les mutations d'immeubles, de droits réels immobiliers et les mutations de fonds de commerce soumises aux droits de mutation ou à une imposition équivalente.",
         "2) Les ventes d'immeubles faites par des non assujettis.",
@@ -193,7 +199,7 @@
         "12) L'eau minérale produite au Congo et le gaz butane conditionné au Congo ainsi que tous les intrants et services concourant à son conditionnement.",
         "13) Les biens de première nécessité cités à l'annexe 3.",
         "14) Les ventes d'articles d'occasion faites par les non professionnels.",
-        "15) Les locations de terrains non aménagés et de locaux nus à usage d'habitation effectuées par les non professionnels de l'immobilier.",
+        "15) Les locations de terrains non aménagés et des locaux nus à usage d'habitation effectuées par les non professionnels de l'immobilier.",
         "16) Les petits matériels de pêche.",
         "17) Les engins, les matériels agricoles ainsi que les intrants agropastoraux et piscicoles.",
         "18) Les sommes versées par le Trésor à la Banque Centrale chargée du privilège de l'émission, ainsi que les produits des opérations de cette banque génératrice de l'émission des billets.",
@@ -243,6 +249,7 @@
     {
       "article": "Art. 8",
       "titre": "Missions diplomatiques et organismes internationaux",
+      "section": "Section 3 : Exonérations",
       "texte": [
         "Art.8.- En application des conventions internationales en vigueur, les missions diplomatiques et assimilés en poste en République du Congo sont assujetties à la TVA normalement incorporée dans le prix de marchandises ou des services et acquittée en rémunération des services particuliers rendus.",
         "Toutefois sous réserve de réciprocité et de quotas fixés par arrêté conjoint du Ministre en charge des Finances et de celui des affaires étrangères, les biens et services destinés à l'usage officiel des missions diplomatiques étrangères ainsi que des organisations internationales conformément aux accords de siège sont achetés hors taxes.",
@@ -266,6 +273,7 @@
     {
       "article": "Art. 9",
       "titre": "Champ territorial de la TVA",
+      "section": "Section 4 : Territorialité",
       "texte": [
         "Art.9.- Sont soumises à la TVA, toutes les affaires réalisées en République du Congo et non comprises dans la liste des exonérations, quand bien même le domicile, la résidence de la personne physique ou le siège social de la personne morale serait situé en dehors des limites territoriales du Congo définies conformément au droit international."
       ],
@@ -284,6 +292,7 @@
     {
       "article": "Art. 10",
       "titre": "Lieu de livraison des biens",
+      "section": "Section 4 : Territorialité",
       "texte": [
         "Art.10.- 1) Le lieu d'une livraison de bien est réputé situé au Congo dès lors que le bien s'y trouve :",
         "• au moment de la livraison ;",
@@ -305,22 +314,23 @@
     {
       "article": "Art. 11",
       "titre": "Territorialité des prestations de services",
+      "section": "Section 4 : Territorialité",
       "texte": [
         "Art.11.- Une prestation de services est réputée faite au Congo lorsque le service rendu, le droit cédé ou l'objet loué sont utilisés ou exploités au Congo dans l'état.",
         "En particulier :",
         "1) Les prestations de services matériellement localisables sont imposables dans le pays où elles sont exécutées.",
         "Sont notamment considérées comme prestations matériellement localisables :",
         "• les locations des moyens de transport ;",
-        "• les prestations de service rattachant à un immeuble ;",
+        "• les prestations de service se rattachant à un immeuble ;",
         "• les prestations culturelles, artistiques, sportives, scientifiques, éducatives ;",
-        "• les travaux experts portant sur les biens meubles corporels ;",
+        "• les travaux et expertises portant sur les biens meubles corporels ;",
         "• les prestations des intermédiaires qui agissent au nom et pour le compte d'autrui.",
         "2) Les prestations de services immatérielles sont imposables dans le pays d'établissement du preneur.",
         "Sont notamment considérées comme prestations immatérielles :",
         "• les cessions et concessions de droits d'auteurs, de brevets, de droits de licences, de marques de fabrique et de commerce et d'autres droits similaires ;",
         "• les locations de biens meubles corporels autres que des moyens de transport ;",
         "• les prestations de publicité ;",
-        "• les prestations des conseillers, ingénieurs, bureaux d'études dans tous les domaines y compris ceux de l'organisation de la recherche et développement ;",
+        "• les prestations des conseillers, ingénieurs, bureaux d'études dans tous les domaines y compris ceux de l'organisation de la recherche et du développement ;",
         "• les prestations des experts-comptables, des avocats et des conseils juridiques et fiscaux régulièrement inscrits ;",
         "• les prestations des autres professions libérales ;",
         "• le traitement de données et fournitures d'information ;",
@@ -393,6 +403,7 @@
     {
       "article": "Art. 12",
       "titre": "Représentant fiscal des non-résidents",
+      "section": "Section 4 : Territorialité",
       "texte": [
         "Art.12.- 1) Le redevable non-résident est tenu de désigner à l'administration fiscale un représentant solvable accrédité, résident sur le territoire congolais qui est solidairement responsable avec lui du paiement de l'impôt. Ce représentant doit être lui-même assujetti à la TVA.",
         "2) En cas de non-désignation d'un représentant, la TVA et, le cas échéant, les pénalités y afférentes doivent être payées par la personne cliente pour le compte de la personne n'ayant pas dans l'État un établissement stable.",
@@ -418,8 +429,9 @@
     {
       "article": "Art. 13",
       "titre": "Coordination CEMAC - Double imposition",
+      "section": "Section 4 : Territorialité",
       "texte": [
-        "Art.13.- L'administration fiscale prend contact avec la Commission de la CEMAC, pour toutes les dispositions pour éviter les cas de double imposition ou de non-imposition."
+        "Art.13.- L'administration fiscale prend de concert avec la Commission de la CEMAC, toutes les dispositions pour éviter les cas de double imposition ou de non-imposition."
       ],
       "mots_cles": [
         "Commission CEMAC",

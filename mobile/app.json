@@ -64,8 +64,8 @@
       "expo-localization"
     ],
     "extra": {
-      "privacyUrl": "https://cgi242.normx.ai/confidentialite",
-      "termsUrl": "https://cgi242.normx.ai/conditions",
+      "privacyUrl": "https://tax.normx-ai.com/legal/confidentialite",
+      "termsUrl": "https://tax.normx-ai.com/legal/cgu",
       "eas": {
         "projectId": "10683ceb-5899-41bd-a451-b48c96f123f1"
       },

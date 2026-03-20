@@ -648,6 +648,11 @@ router.post("/reset-password", sensitiveLimiter, validate({ body: resetPasswordB
       changes: null,
     });
 
+    // Email de confirmation
+    EmailService.sendPasswordChanged(email).catch((e) =>
+      logger.error("[reset-password] Échec envoi email de confirmation", e)
+    );
+
     res.json({ message: "Mot de passe modifié avec succès" });
   } catch (err) {
     logger.error("[reset-password]", err);
@@ -1055,6 +1060,11 @@ router.post("/change-password", requireAuth, sensitiveLimiter, validate({ body: 
       ipAddress: getClientIp(req),
       changes: null,
     });
+
+    // Email de confirmation
+    EmailService.sendPasswordChanged(user.email).catch((e) =>
+      logger.error("[change-password] Échec envoi email de confirmation", e)
+    );
 
     res.json({ message: "Mot de passe modifié avec succès" });
   } catch (err) {

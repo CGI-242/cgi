@@ -9,7 +9,7 @@ set -e
 
 APP_DIR="/opt/cgi242"
 REPO_URL="https://github.com/CGI-242/cgi.git"
-DOMAIN="api.cgi242.normx.ai"
+DOMAIN="tax.normx-ai.com"
 
 echo "=========================================="
 echo "  CGI-242 — Déploiement Production"

@@ -424,6 +424,44 @@ export class EmailService {
     ]);
   }
 
+  static async sendPasswordChanged(email: string): Promise<void> {
+    const subject = 'CGI 242 — Votre mot de passe a été modifié';
+    const now = new Date().toLocaleString('fr-FR', {
+      dateStyle: 'long',
+      timeStyle: 'short',
+      timeZone: 'Africa/Brazzaville',
+    });
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Votre mot de passe CGI 242 a été <strong>modifié avec succès</strong> le ${now}.
+      </p>
+
+      <div style="background-color: #f0fdf4; border: 2px solid #22c55e; padding: 20px; text-align: center; margin: 0 0 24px 0;">
+        <span style="font-size: 18px; font-weight: bold; color: #16a34a;">✓ Mot de passe mis à jour</span>
+      </div>
+
+      <p style="margin: 0 0 12px 0; font-size: 14px; color: #374151; line-height: 22px; font-weight: 600;">
+        Si vous n'êtes pas à l'origine de cette modification :
+      </p>
+      <ul style="margin: 0 0 24px 0; padding-left: 20px; font-size: 14px; color: #dc2626; line-height: 24px;">
+        <li>Réinitialisez immédiatement votre mot de passe depuis l'application</li>
+        <li>Contactez notre support à support@normx-ai.com</li>
+      </ul>
+
+      <p style="margin: 0 0 24px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
+        Par mesure de sécurité, toutes vos sessions actives ont été déconnectées. Vous devrez vous reconnecter avec votre nouveau mot de passe.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        À bientôt sur CGI 242,<br/>
+        <strong>L'équipe NORMX AI</strong>
+      </p>
+    `);
+    await sendMail(email, subject, html);
+  }
+
   static async sendMfaEnabled(email: string): Promise<void> {
     const subject = 'CGI-242 — Authentification à deux facteurs activée';
     const html = `
