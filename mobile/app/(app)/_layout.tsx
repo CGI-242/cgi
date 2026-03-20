@@ -30,6 +30,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/profil": "profil.title",
   "/parametres": "settings.title",
   "/chat": "chat.title",
+  "/audit-facture": "auditFacture.title",
   "/code": "code.title",
   "/simulateur": "simulateur.title",
   "/simulateur/its": "simulateur.its.title",
@@ -225,6 +226,7 @@ function AppLayoutInner() {
       <Stack.Screen name="permissions/index" />
       <Stack.Screen name="factures/index" />
       <Stack.Screen name="factures/[id]" />
+      <Stack.Screen name="audit-facture/index" />
     </Stack>
   );
 

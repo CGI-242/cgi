@@ -250,6 +250,8 @@
       "simulateDesc": "IS, ITS, TVA, Paie, Patente, IRCM et 9 autres",
       "chatAi": "Chat IA fiscal",
       "chatAiDesc": "Assistant fiscal intelligent",
+      "auditFacture": "Audit Facture",
+      "auditFactureDesc": "Verifier la conformite CGI 2026",
       "settings": "Paramètres",
       "settingsDesc": "Thème, profil, sécurité"
     },
@@ -1269,6 +1271,9 @@
     "pricingFeat30q": "30 questions IA / mois / user",
     "pricingFeatUnlimitedHistory": "Historique illimité",
     "pricingFeatPriority": "Support prioritaire"
+  },
+  "auditFacture": {
+    "title": "Audit Facture"
   },
   "factures": {
     "title": "Mes factures",

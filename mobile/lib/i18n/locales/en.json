@@ -250,6 +250,8 @@
       "simulateDesc": "IS, ITS, VAT, Payroll, License, IRCM and 9 more",
       "chatAi": "AI Tax Chat",
       "chatAiDesc": "Intelligent tax assistant",
+      "auditFacture": "Invoice Audit",
+      "auditFactureDesc": "Check CGI 2026 compliance",
       "settings": "Settings",
       "settingsDesc": "Theme, profile, security"
     },
@@ -1233,6 +1235,9 @@
     "pricingFeat30q": "30 AI questions / month / user",
     "pricingFeatUnlimitedHistory": "Unlimited history",
     "pricingFeatPriority": "Priority support"
+  },
+  "auditFacture": {
+    "title": "Invoice Audit"
   },
   "factures": {
     "title": "My invoices",

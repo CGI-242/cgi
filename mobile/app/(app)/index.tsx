@@ -77,6 +77,13 @@ export default function Dashboard() {
       color: "#0284c7",
       route: "/(app)/chat",
     },
+    {
+      label: t("dashboard.actions.auditFacture"),
+      desc: t("dashboard.actions.auditFactureDesc"),
+      icon: "scan-outline" as const,
+      color: "#dc2626",
+      route: "/(app)/audit-facture",
+    },
   ], [t]);
 
 
