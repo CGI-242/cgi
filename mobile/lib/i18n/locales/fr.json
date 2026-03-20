@@ -152,7 +152,8 @@
     "collapse": "Replier la sidebar",
     "expand": "Déployer la sidebar",
     "subtitle": "Code Général des Impôts",
-    "calendrier": "Calendrier"
+    "calendrier": "Calendrier",
+    "auditFacture": "Audit Facture"
   },
   "chat": {
     "placeholder": "Posez votre question fiscale...",

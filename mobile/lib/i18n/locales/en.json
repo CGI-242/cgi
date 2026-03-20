@@ -152,7 +152,8 @@
     "collapse": "Collapse sidebar",
     "expand": "Expand sidebar",
     "subtitle": "General Tax Code",
-    "calendrier": "Calendar"
+    "calendrier": "Calendar",
+    "auditFacture": "Invoice Audit"
   },
   "chat": {
     "placeholder": "Ask your tax question...",
