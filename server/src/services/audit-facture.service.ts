@@ -163,10 +163,22 @@ INSTRUCTIONS :
 REGLES POUR LES RISQUES :
 
 Risque "deduction_tva" — regles CGI 2026 :
-- NIU client commence par M (personne morale) : assujettie TVA de plein droit (Art. 5 al.1) → mentionner le risque directement
-- NIU client commence par P (personne physique) : assujettie TVA uniquement si CA >= 100.000.000 FCFA (Art. 5 al.2). Le CA n'est pas visible sur la facture → mentionner le risque de facon conditionnelle : "Si le client est assujetti TVA (CA >= 100M FCFA), il ne pourra pas deduire la TVA sur cette facture"
-- Art. 96 : les professions reglementees (pharmacie, avocat, expert-comptable, etc.) sont EXCLUES du forfait meme si CA < seuil → elles sont toujours au reel
-- Si l'emetteur est au forfait et que la facture ne porte pas de TVA, c'est NORMAL — ne PAS signaler comme risque
+IMPORTANT : L'audit verifie la conformite de L'EMETTEUR.
+
+CAS 1 — Emetteur au FORFAIT (pas de TVA facturee) :
+- Pas de TVA sur la facture = NORMAL et CONFORME.
+- NE PAS signaler de risque "perte de deduction TVA" car il n'y a pas de TVA a deduire.
+- NE PAS dire "le client ne pourra pas deduire de TVA" — c'est trompeur.
+- Simplement indiquer dans la section TVA : "Emetteur au forfait — TVA non applicable. Aucune TVA facturee."
+
+CAS 2 — Emetteur au REEL (TVA facturee) mais facture NON CONFORME :
+- La TVA est facturee MAIS la facture a des anomalies (mentions manquantes, SFEC absent, NIU absent)
+- UNIQUEMENT dans ce cas, signaler : "La non-conformite de cette facture peut entrainer le rejet de la deduction TVA pour le client (Art. 23 al.5, Art. 34 bis)"
+
+CAS 3 — Emetteur au REEL, facture CONFORME :
+- Aucun risque de deduction TVA. Ne rien signaler.
+
+- Art. 96 : les professions reglementees (pharmacie, avocat, expert-comptable, etc.) sont EXCLUES du forfait meme si CA < seuil → elles sont toujours au reel.
 
 Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
 - Document en langue etrangere : amende 2 000 000 FCFA par document (Art. 373 ter)
