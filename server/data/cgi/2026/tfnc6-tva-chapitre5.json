@@ -62,8 +62,10 @@
         "taxe déductible",
         "SFEC",
         "facturation électronique certifié",
+        "adresse facturation",
         "importations",
         "déclaration mise consommation",
+        "sortie entrepôt",
         "quittance douanes",
         "balance comptable OHADA",
         "réintégration déductions"
@@ -99,7 +101,9 @@
         "numéro facture série continue",
         "NIU",
         "RCCM",
+        "crédit mobilier",
         "registre métiers",
+        "désignation quantité",
         "taux TVA",
         "prix HT",
         "TTC",
@@ -122,7 +126,8 @@
         "• un livre d'inventaire ;",
         "• un grand livre des comptes ;",
         "• une balance des comptes.",
-        "2) La comptabilité doit être disponible au Congo, au siège social ou au principal établissement de l'entreprise. Le lieu de tenue de la comptabilité détermine la résidence fiscale à laquelle l'entreprise est rattachée."
+        "2) La comptabilité doit être disponible au Congo, au siège social ou au principal établissement de l'entreprise. Le lieu de tenue de la comptabilité détermine la résidence fiscale à laquelle l'entreprise est rattachée.",
+        "3) Les documents comptables ainsi que les pièces justificatives des opérations effectuées par le redevable, doivent être conservés pendant un délai de dix ans après l'année au cours de laquelle les opérations ont été constatées dans les écritures comptables, majorés éventuellement des exercices pour lesquels un crédit de TVA a été reporté et non imputé. Les pièces justificatives relatives à des opérations ouvrant droit à une déduction doivent être des documents originaux. Ces documents doivent être présentés à toute requête des agents de l'administration fiscale."
       ],
       "mots_cles": [
         "obligations comptables",
@@ -137,7 +142,49 @@
         "comptabilité au Congo",
         "siège social",
         "principal établissement",
-        "résidence fiscale"
+        "résidence fiscale",
+        "conservation dix ans",
+        "pièces justificatives",
+        "documents originaux",
+        "crédit TVA reporté"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "TVA mentionnée sur facture",
+      "texte": [
+        "Art.34.- Toute personne qui mentionne la TVA sur une facture ou sur tout autre document en tenant lieu, est redevable de la taxe du seul fait de sa facturation.",
+        "Lorsque la facture ou le document ne correspond pas à la livraison d'une marchandise ou à l'exécution d'une prestation de services, ou fait état d'un prix non acquitté effectivement par l'acheteur, la taxe est due par la personne qui l'a facturée."
+      ],
+      "mots_cles": [
+        "TVA mentionnée facture",
+        "redevable facturation",
+        "facture fictive",
+        "prix non acquitté",
+        "taxe due"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 34 bis",
+      "titre": "Facturation électronique certifiée - SFEC",
+      "texte": [
+        "Art.34 bis.- (L.F.2025) Les factures définies aux articles 23 (alinéa 5) et 30 de la loi sur la TVA sont établies par le fournisseur des biens et services conformément au système de facturation électronique certifiée, en abrégé « SFEC ».",
+        "Il fait obligation à tout assujetti d'utiliser le système de facturation électronique certifié pour justifier les transactions économiques réalisées avec les tiers.",
+        "Tout client, personne physique ou morale, assujetti, redevable ou non, est tenu d'exiger à son fournisseur la délivrance d'une facture certifiée délivrée au moyen du SFEC pour toutes ses acquisitions et biens et services.",
+        "Toutes les transactions économiques réalisées sur le territoire congolais sont certifiées par le SFEC, à l'exception de celles impliquant un fournisseur étranger.",
+        "Tout assujetti est tenu d'utiliser le SFEC. Toute action de nature à violer l'obligation d'utiliser le SFEC est sanctionnée d'une amende fiscale de 50.000.000 FCFA. La TVA supportée dans le cadre d'une transaction non conforme à cette obligation n'ouvre pas droit à déduction."
+      ],
+      "mots_cles": [
+        "SFEC",
+        "facturation électronique certifiée",
+        "articles 23 et 30",
+        "obligation assujetti",
+        "facture certifiée",
+        "fournisseur étranger exception",
+        "amende 50000000 FCFA",
+        "TVA non déductible non conforme"
       ],
       "statut": "en vigueur"
     },

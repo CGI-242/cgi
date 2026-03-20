@@ -24,7 +24,7 @@
         "• pour les prestations à soi-même, par les dépenses engagées pour l'exécution des services ;",
         "• pour les opérations de leasing ou de crédit-bail avec ou sans option d'achat, par le montant des loyers facturés par les sociétés de crédit-bail et en fin de contrat, par le prix de cession convenu au contrat lorsque l'option d'achat est levée par le preneur ou par le prix de cession en cas de vente à un tiers ;",
         "• pour les échanges, par la valeur des produits reçus en paiement du bien livré, augmentée éventuellement du montant de la soulte encaissée ;",
-        "• pour les travaux immobiliers et les travaux publics, par le montant des marchés, devis, mémoires ou factures ;",
+        "• pour les travaux immobiliers et les travaux publics, par le montant des marchés, mémoires ou factures ;",
         "• pour les aides aux entreprises visées au point 5 de l'article 3, par le montant de la contrepartie entraînant l'imposition à la TVA. Si ce montant n'est pas clairement stipulé par l'organisme versant, l'ensemble de l'aide est soumis à la TVA."
       ],
       "mots_cles": [
@@ -35,15 +35,17 @@
         "prix achat HT",
         "coût revient",
         "prestations services",
+        "prestations à soi-même",
         "biens consommables",
         "leasing crédit-bail",
         "loyers",
         "option achat",
+        "prix cession",
         "échanges",
         "soulte",
         "travaux immobiliers",
         "travaux publics",
-        "marchés devis",
+        "marchés mémoires factures",
         "aides entreprises"
       ],
       "statut": "en vigueur"
@@ -67,7 +69,8 @@
         "agences voyages",
         "circuits touristiques",
         "entremise",
-        "transport hôtellerie restauration"
+        "transport hôtellerie restauration",
+        "spectacles"
       ],
       "statut": "en vigueur"
     },
