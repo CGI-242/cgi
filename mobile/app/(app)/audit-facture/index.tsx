@@ -5,14 +5,16 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import { analyzeFacture, type AuditFactureResult } from "@/lib/api/audit-facture";
+import { analyzeDocument, DOC_TYPE_LABELS, type AuditFactureResult, type DocumentType } from "@/lib/api/audit-facture";
 
 type FileInfo = { name: string; size: number; blob: Blob };
+const DOC_TYPES: DocumentType[] = ["facture", "releve_bancaire", "bon_commande", "das2", "note_frais"];
 
 export default function AuditFacturePage() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const { t } = useTranslation();
+  const [docType, setDocType] = useState<DocumentType>("facture");
   const [file, setFile] = useState<FileInfo | null>(null);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<AuditFactureResult | null>(null);
@@ -57,7 +59,7 @@ export default function AuditFacturePage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await analyzeFacture(file.blob, file.name);
+      const res = await analyzeDocument(file.blob, file.name, docType);
       setResult(res);
     } catch (err: any) {
       setError(err?.response?.data?.error || "Erreur lors de l'analyse");
@@ -78,11 +80,38 @@ export default function AuditFacturePage() {
       <View style={{ maxWidth: 900, alignSelf: "center", width: "100%", padding: isMobile ? 16 : 32 }}>
         {/* Header */}
         <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 24 : 32, color: colors.text, marginBottom: 8 }}>
-          Audit Facture
+          Audit Documents
         </Text>
-        <Text style={{ fontFamily: fonts.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 24 }}>
-          Analysez la conformite de vos factures au CGI 2026 (Art. 32, Art. 22, Art. 7)
+        <Text style={{ fontFamily: fonts.regular, fontSize: 15, color: colors.textSecondary, marginBottom: 20 }}>
+          Analysez la conformite de vos documents au CGI 2026
         </Text>
+
+        {/* Selecteur type de document */}
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+          {DOC_TYPES.map((dt) => (
+            <TouchableOpacity
+              key={dt}
+              onPress={() => { setDocType(dt); setResult(null); setError(null); }}
+              style={{
+                paddingVertical: 8,
+                paddingHorizontal: 14,
+                borderRadius: 8,
+                backgroundColor: docType === dt ? "#1A3A5C" : colors.card,
+                borderWidth: 1,
+                borderColor: docType === dt ? "#1A3A5C" : colors.border,
+              }}
+            >
+              <Text style={{
+                fontFamily: fonts.medium,
+                fontWeight: fontWeights.medium,
+                fontSize: 13,
+                color: docType === dt ? "#fff" : colors.text,
+              }}>
+                {DOC_TYPE_LABELS[dt]}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </View>
 
         {/* Upload */}
         <TouchableOpacity

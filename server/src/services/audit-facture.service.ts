@@ -5,6 +5,8 @@ const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 
 // --- Types ---
 
+export type DocumentType = "facture" | "releve_bancaire" | "bon_commande" | "das2" | "note_frais";
+
 export interface MentionResult {
   nom: string;
   present: boolean;
@@ -12,6 +14,7 @@ export interface MentionResult {
 }
 
 export interface AuditFactureResult {
+  typeDocument: DocumentType;
   score: { found: number; total: number };
   langue: { conforme: boolean; details: string };
   tva: {
@@ -173,11 +176,38 @@ Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
 - Facture non conforme : rejet de la deduction TVA pour le client assujetti (Art. 23 et 34 bis)
 - NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.`;
 
+// --- Prompts specifiques par type de document ---
+
+const DOC_INSTRUCTIONS: Record<DocumentType, string> = {
+  facture: "Analyse cette FACTURE et retourne le JSON d'audit de conformite. Verifie toutes les mentions obligatoires Art. 32, le taux TVA, la langue et le SFEC.",
+  releve_bancaire: `Analyse ce RELEVE BANCAIRE et verifie :
+- Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
+- Identification : nom du titulaire, numero de compte, IBAN, banque, periode
+- Coherence : les montants sont-ils lisibles et en FCFA
+Pour les mentions, verifie : nom titulaire, numero compte, IBAN, nom banque, periode, solde debut, solde fin, devise (FCFA). Score sur 8. TVA non applicable.`,
+  bon_commande: `Analyse ce BON DE COMMANDE ou CONTRAT et verifie :
+- Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
+- Identification : nom et NIU des deux parties, RCCM, objet, montant, date
+- Si soumis a enregistrement : verifier la mention d'enregistrement
+Pour les mentions, verifie : date, numero, identite vendeur (NIU, RCCM), identite acheteur (NIU), objet/designation, montant HT, TVA si applicable, montant TTC, conditions paiement, signatures. Score sur 10.`,
+  das2: `Analyse cette DECLARATION ANNUELLE DES SALAIRES (DAS II) et verifie :
+- Langue : francais
+- Mentions Art. 176-181 : nom/prenom employes, adresse, montants remuneration, retenues, NIU employeur
+- Omission : chaque omission = 10 000 FCFA (Art. 380)
+Pour les mentions, verifie : NIU employeur, raison sociale, exercice fiscal, liste des employes (nom, prenom, emploi, adresse), montants bruts, retenues, avantages en nature. Score sur 10.`,
+  note_frais: `Analyse cette NOTE DE FRAIS ou PIECE JUSTIFICATIVE et verifie :
+- Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
+- Date, beneficiaire, motif/objet de la depense, montant
+- Si facture jointe : verifier les mentions Art. 32
+Pour les mentions, verifie : date, beneficiaire, objet depense, montant, signature, piece justificative jointe. Score sur 6.`,
+};
+
 // --- Analyse ---
 
 export async function analyzeInvoice(
   fileBuffer: Buffer,
-  mimeType: string
+  mimeType: string,
+  docType: DocumentType = "facture"
 ): Promise<AuditFactureResult> {
   const base64 = fileBuffer.toString("base64");
 
@@ -196,7 +226,7 @@ export async function analyzeInvoice(
             data: base64,
           },
         },
-    { type: "text" as const, text: "Analyse cette facture et retourne le JSON d'audit de conformite." },
+    { type: "text" as const, text: DOC_INSTRUCTIONS[docType] },
   ];
 
   const response = await anthropic.messages.create({
@@ -209,11 +239,12 @@ export async function analyzeInvoice(
   const text =
     response.content[0].type === "text" ? response.content[0].text : "";
 
-  // Extraire le JSON de la reponse
   const jsonMatch = text.match(/\{[\s\S]*\}/);
   if (!jsonMatch) {
     throw new Error("Impossible d'extraire le JSON de la reponse IA");
   }
 
-  return JSON.parse(jsonMatch[0]) as AuditFactureResult;
+  const result = JSON.parse(jsonMatch[0]) as AuditFactureResult;
+  result.typeDocument = docType;
+  return result;
 }

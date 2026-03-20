@@ -3,7 +3,9 @@ import multer from "multer";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkQuestionQuota } from "../middleware/subscription.middleware";
-import { analyzeInvoice } from "../services/audit-facture.service";
+import { analyzeInvoice, type DocumentType } from "../services/audit-facture.service";
+
+const VALID_DOC_TYPES: DocumentType[] = ["facture", "releve_bancaire", "bon_commande", "das2", "note_frais"];
 import { createLogger } from "../utils/logger";
 
 const logger = createLogger("AuditFacture");
@@ -34,9 +36,14 @@ router.post(
         return res.status(400).json({ error: "Aucun fichier fourni" });
       }
 
-      logger.info(`Audit facture demande par user ${req.userId}, fichier: ${req.file.originalname} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)`);
+      const docType = (req.body?.type as DocumentType) || "facture";
+      if (!VALID_DOC_TYPES.includes(docType)) {
+        return res.status(400).json({ error: "Type de document invalide" });
+      }
 
-      const result = await analyzeInvoice(req.file.buffer, req.file.mimetype);
+      logger.info(`Audit ${docType} demande par user ${req.userId}, fichier: ${req.file.originalname} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)`);
+
+      const result = await analyzeInvoice(req.file.buffer, req.file.mimetype, docType);
 
       return res.json(result);
     } catch (err: any) {
