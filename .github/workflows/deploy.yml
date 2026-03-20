@@ -82,7 +82,7 @@ jobs:
             cd mobile && npm ci && npm run build:web && cd ..
 
             # --- Copier le build dans nginx ---
-            rm -rf nginx/dist
+            sudo rm -rf nginx/dist
             cp -r mobile/dist nginx/dist
 
             # --- Rebuild et restart ---
