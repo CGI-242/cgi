@@ -12,8 +12,8 @@ type ThemeContextType = {
 };
 
 const ThemeContext = createContext<ThemeContextType>({
-  mode: "dark",
-  colors: darkColors,
+  mode: "light",
+  colors: lightColors,
   toggleTheme: () => {},
   setTheme: () => {},
 });
@@ -46,7 +46,7 @@ async function saveTheme(mode: ThemeMode): Promise<void> {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setModeState] = useState<ThemeMode>("dark");
+  const [mode, setModeState] = useState<ThemeMode>("light");
 
   useEffect(() => {
     loadTheme().then((saved) => {
