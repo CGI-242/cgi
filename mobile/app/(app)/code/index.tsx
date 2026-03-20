@@ -87,7 +87,8 @@ export default function CodeCGI() {
       return;
     }
 
-    if (hasChildren) {
+    const hasArticles = node.articles && node.articles.length > 0;
+    if (hasChildren || hasArticles) {
       readerNodeRef.current = node;
       setReaderNode(node);
       setScrollToId(undefined);
