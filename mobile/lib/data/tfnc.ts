@@ -37,7 +37,6 @@ import taxeJeuxData from "@/data/taxe-jeux-hasard.json";
 import taxeTransfertsData from "@/data/taxe-transferts-fonds.json";
 import taxeUniqueSalData from "@/data/taxe-unique-salaires.json";
 import taxeEmballagesData from "@/data/taxe-emballages-non-recuperables.json";
-import taxeRtnData from "@/data/taxe-terminaux-numeriques-sim.json";
 import redevCarboneData from "@/data/redevance-credits-carbone.json";
 import taxePolluantesData from "@/data/taxe-activites-polluantes.json";
 // TFNC5 - Administrations fiscales et procédures
@@ -92,7 +91,6 @@ const aTaxeJeux = parseArticles(taxeJeuxData.articles);
 const aTaxeTransferts = parseArticles(taxeTransfertsData.articles);
 const aTaxeUniqueSal = parseArticles(taxeUniqueSalData.articles);
 const aTaxeEmballages = parseArticles(taxeEmballagesData.articles);
-const aTaxeRtn = parseArticles(taxeRtnData.articles);
 const aRedevCarbone = parseArticles(redevCarboneData.articles);
 const aTaxePolluantes = parseArticles(taxePolluantesData.articles);
 // TFNC5
@@ -213,7 +211,7 @@ export const tfncArticles: ArticleData[] = [
   ...aDroitsFonciers, ...aImpotPylones, ...aImpotGlobalForf,
   ...aRedevAudio, ...aRetenueTresor, ...aTaxeAbonnTv, ...aTaxeOccupLocaux,
   ...aTaxeTraficCom, ...aTaxeBilletsAvion, ...aTaxeJeux, ...aTaxeTransferts, ...aTaxeUniqueSal, ...aTaxeEmballages,
-  ...aTaxeRtn, ...aRedevCarbone, ...aTaxePolluantes,
+  ...aRedevCarbone, ...aTaxePolluantes,
   // TFNC5
   ...aNiuDecret, ...aNiuArrete5327, ...aNiuArrete25604,
   ...aRecouvRecettes, ...aApprocheRisques, ...aEchangeRenseign, ...aAttestNonRedev,
