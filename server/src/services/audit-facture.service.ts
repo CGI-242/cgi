@@ -62,11 +62,11 @@ NIU (Numero d'Identification Unique) — Arrete n5327 du 12 mars 2020, Art. 3 :
 - ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
 
 RCCM (Registre du Commerce et du Credit Mobilier) — norme OHADA :
-- Format : CG/[VILLE]/[ANNEE]/[LETTRE-CLE]/[NUMERO 5 chiffres]
-- Exemples : "RCCM CG/BZV/2024/B/12345", "CG/PNR/2023/B/00456", "RCCM CG-BZV-2024-B-12345"
+- Format reel Congo : CG-[VILLE]-[GREFFE]-[ANNEE]-[CATEGORIE]-[NUMERO]
+- Exemples reels : "CG-PNR-01-2023-A10-01130", "CG-BZV-01-2024-A6-00456", "CG-DLS-01-2022-B2-00078"
 - Codes villes Congo : BZV (Brazzaville), PNR (Pointe-Noire), DLS (Dolisie), OWD (Owando), OUE (Ouesso), NKY (Nkayi), MSD (Mossendjo)
-- Lettres-cles : B (immatriculation), M (modification), R (radiation)
-- Ancien format possible : "RCCM CO/BZV/1/B 6261" ou variantes avec tirets
+- Categories : A = personnes morales (A6=SARL, A10=SA, etc.), B = personnes physiques
+- Ancien format possible : "RCCM CO/BZV/1/B 6261" ou variantes avec tirets/slashes
 - Peut apparaitre comme "RCCM :", "RC :", "Registre du Commerce", "N° RCCM"
 
 Regime d'imposition (CGI 2026 — 2 regimes uniquement) :
