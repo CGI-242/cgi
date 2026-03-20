@@ -51,14 +51,15 @@ REGLES A VERIFIER :
 
 FORMATS SPECIFIQUES CONGO — IMPORTANT pour la reconnaissance :
 
-NIU (Numero d'Identification Unique) — Arrete n5327 du 12 mars 2020, Art. 3 :
-- Format : 16 caracteres au total :
-  1 caractere type de personne (M = morale, P = physique)
-  2 caracteres derniers chiffres de l'annee de creation (ex: 24 pour 2024)
-  12 chiffres sequence (precedes de zeros a gauche)
-  1 caractere de controle alphanumerique (algorithme LUHN)
-- Exemples reels : "M220000002077447", "P24000000098765B", "M 22 000000207744 7"
-- Peut aussi apparaitre comme "NIU :", "N.I.U.", "Identification Unique", "NIF"
+NIU (Numero d'Identification Unique) :
+- Nouveau format (Arrete 5327/2020, Art. 3) : 16 caracteres
+  1 type (M=morale, P=physique) + 2 annee + 12 sequence + 1 controle LUHN
+  Exemple : "M220000002077447"
+- Ancien format (pre-2020) : 17 caracteres
+  Exemple : "M2005110000316080"
+- Les deux formats coexistent sur les factures
+- Peut apparaitre comme "NIU :", "N.I.U.", "Identification Unique", "NIF"
+- Commence TOUJOURS par M (morale) ou P (physique) suivi de chiffres
 - ATTENTION : ne pas confondre avec un numero de telephone ou un code postal
 
 RCCM (Registre du Commerce et du Credit Mobilier) — norme OHADA :
