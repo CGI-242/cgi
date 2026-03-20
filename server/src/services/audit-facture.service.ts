@@ -158,9 +158,14 @@ INSTRUCTIONS :
 }
 
 REGLES POUR LES RISQUES :
-- Risque "deduction_tva" : ne le mentionner QUE si le CLIENT est identifiable comme etant au regime reel (NIU commencant par M = personne morale = assujetti de plein droit). Si le client est au forfait/IGF ou non identifiable, NE PAS mentionner ce risque.
-- Risque "amende" : 10 000 FCFA par mention obligatoire manquante (applicable quel que soit le regime).
-- Si l'emetteur est au forfait et que la facture ne porte pas de TVA, c'est NORMAL — ne pas signaler comme risque.`;
+
+Risque "deduction_tva" — regles CGI 2026 :
+- NIU client commence par M (personne morale) : assujettie TVA de plein droit (Art. 5 al.1) → mentionner le risque directement
+- NIU client commence par P (personne physique) : assujettie TVA uniquement si CA >= 100.000.000 FCFA (Art. 5 al.2). Le CA n'est pas visible sur la facture → mentionner le risque de facon conditionnelle : "Si le client est assujetti TVA (CA >= 100M FCFA), il ne pourra pas deduire la TVA sur cette facture"
+- Art. 96 : les professions reglementees (pharmacie, avocat, expert-comptable, etc.) sont EXCLUES du forfait meme si CA < seuil → elles sont toujours au reel
+- Si l'emetteur est au forfait et que la facture ne porte pas de TVA, c'est NORMAL — ne PAS signaler comme risque
+
+Risque "amende" : 10 000 FCFA par mention obligatoire manquante (Art. 32 CGI, applicable quel que soit le regime).`;
 
 // --- Analyse ---
 
