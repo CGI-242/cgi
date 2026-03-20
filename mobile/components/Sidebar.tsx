@@ -107,11 +107,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           }}
         >
           {isCollapsed ? (
-            <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
+            <Text style={{ color: "#1A3A5C", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: colors.accent, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
-              <Text style={{ color: colors.textMuted, fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: "#1A3A5C", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
+              <Text style={{ color: "#1A3A5C", fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
           {!isCollapsed && (
