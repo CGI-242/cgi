@@ -283,78 +283,68 @@ function AppLayoutInner() {
         currentRoute={pathname}
       />
       <View style={{ flex: 1 }}>
-        {/* Header principal */}
-        <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10, zIndex: 100 }}>
-          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <TouchableOpacity onPress={() => router.push("/(app)")} accessibilityLabel={t("common.home")} accessibilityRole="link">
-                <Text style={{ color: isHome ? colors.accent : colors.textMuted, fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isHome ? 28 : 16, letterSpacing: 1 }}>
-                  CGI 242
+        {/* Header principal — style Normx */}
+        <View style={{ backgroundColor: "#1A3A5C", paddingHorizontal: 20, height: 54, flexDirection: "row", alignItems: "center", justifyContent: "space-between", zIndex: 100 }}>
+          {/* Gauche : logo + breadcrumb */}
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <TouchableOpacity onPress={() => router.push("/(app)")} style={{ flexDirection: "row", alignItems: "center" }}>
+              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24, color: "#D4A843", letterSpacing: -0.5 }}>
+                NORMX
+              </Text>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 24, color: "#e8e6e1", marginLeft: 4 }}>
+                Tax
+              </Text>
+            </TouchableOpacity>
+            {!isHome && pageTitleKey && (
+              <>
+                {parent && (
+                  <>
+                    <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
+                    <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as Href)}>
+                      <Text style={{ color: "rgba(255,255,255,0.6)", fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 15 }}>
+                        {t(parent.titleKey)}
+                      </Text>
+                    </TouchableOpacity>
+                  </>
+                )}
+                <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
+                <Text style={{ color: "#D4A843", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15 }}>
+                  {t(pageTitleKey)}
                 </Text>
-              </TouchableOpacity>
-              {!isHome && pageTitleKey && (
-                <>
-                  {parent && (
-                    <>
-                      <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
-                      <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as Href)}>
-                        <Text style={{ color: colors.textMuted, fontWeight: "600", fontSize: 18 }}>
-                          {t(parent.titleKey)}
-                        </Text>
-                      </TouchableOpacity>
-                    </>
-                  )}
-                  <Ionicons name="chevron-forward" size={14} color={colors.textMuted} style={{ marginHorizontal: 6 }} />
-                  <Text style={{ color: colors.accent, fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 18 }}>
-                    {t(pageTitleKey)}
-                  </Text>
-                </>
-              )}
-              {isHome && (
-                <Text style={{ color: colors.textMuted, fontSize: 14, marginLeft: 8 }}>{t("sidebar.subtitle")}</Text>
-              )}
-            </View>
+              </>
+            )}
+          </View>
 
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <NotificationBell />
+          {/* Droite : notif + langue + theme + user */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <NotificationBell />
 
-              <TouchableOpacity
-                onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
-                accessibilityLabel={t("settings.languageSelect")}
-                accessibilityRole="button"
-                style={{ padding: 6, marginRight: 4 }}
-              >
-                <Text style={{ color: colors.sidebarText, fontSize: 15, fontWeight: "700" }}>
-                  {i18n.language === "fr" ? "FR" : "EN"}
-                </Text>
-              </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
+              style={{ padding: 6 }}
+            >
+              <Text style={{ color: "#e8e6e1", fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
+                {i18n.language === "fr" ? "FR" : "EN"}
+              </Text>
+            </TouchableOpacity>
 
-              <TouchableOpacity
-                onPress={toggleTheme}
-                accessibilityLabel={t("settings.darkMode")}
-                accessibilityRole="button"
-                style={{ padding: 6, marginRight: 4 }}
-              >
-                <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={20} color={colors.sidebarText} />
-              </TouchableOpacity>
+            <TouchableOpacity onPress={toggleTheme} style={{ padding: 6 }}>
+              <Ionicons name={mode === "dark" ? "moon" : "sunny"} size={18} color="#e8e6e1" />
+            </TouchableOpacity>
 
-              <TouchableOpacity
-                onPress={() => router.push("/(app)/profil")}
-                accessibilityLabel={t("profil.title")}
-                accessibilityRole="button"
-                style={{
-                  width: 30,
-                  height: 30,
-                  backgroundColor: colors.primary,
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Text style={{ color: colors.sidebarText, fontWeight: "800", fontSize: 14 }}>
+            <TouchableOpacity
+              onPress={() => router.push("/(app)/profil")}
+              style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 6, paddingHorizontal: 10, borderRadius: 6 }}
+            >
+              <View style={{ width: 28, height: 28, borderRadius: 14, backgroundColor: "#D4A843", alignItems: "center", justifyContent: "center" }}>
+                <Text style={{ color: "#fff", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12 }}>
                   {getInitials(user?.prenom, user?.nom)}
                 </Text>
-              </TouchableOpacity>
-            </View>
+              </View>
+              <Text style={{ color: "#e8e6e1", fontFamily: fonts.regular, fontSize: 13 }}>
+                {user?.prenom || "Utilisateur"}
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
 
