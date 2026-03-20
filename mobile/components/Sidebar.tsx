@@ -85,6 +85,8 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
       style={{
         width: sidebarWidth,
         backgroundColor: colors.sidebar,
+        borderRightWidth: 1,
+        borderRightColor: colors.sidebarBorder,
         paddingTop: 16,
         paddingBottom: 16,
         justifyContent: "space-between",
@@ -151,10 +153,10 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 alignItems: "center",
                 justifyContent: isCollapsed ? "center" : "flex-start",
                 paddingVertical: 10,
-                paddingHorizontal: isCollapsed ? 0 : 16,
+                paddingHorizontal: isCollapsed ? 0 : 14,
+                marginHorizontal: isCollapsed ? 0 : 6,
+                borderRadius: 6,
                 backgroundColor: active ? colors.sidebarActive : "transparent",
-                borderLeftWidth: active ? 3 : 0,
-                borderLeftColor: active ? colors.accent : "transparent",
                 opacity: disabled ? 0.5 : 1,
               }}
             >
