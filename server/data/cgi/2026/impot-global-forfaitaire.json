@@ -25,7 +25,9 @@
         "IGF",
         "impôt global forfaitaire",
         "personnes physiques",
-        "régime forfaitaire"
+        "régime forfaitaire",
+        "petites entreprises",
+        "loi finances 1996"
       ],
       "statut": "en vigueur"
     },
@@ -55,7 +57,8 @@
         "IRPP BICA BNC BA",
         "TVA",
         "centimes additionnels",
-        "TUS"
+        "TUS",
+        "impôts couverts IGF"
       ],
       "statut": "en vigueur"
     },
@@ -79,7 +82,8 @@
         "20 juin",
         "20 septembre",
         "20 décembre",
-        "patente"
+        "patente",
+        "quatre versements"
       ],
       "statut": "en vigueur"
     },
@@ -92,7 +96,8 @@
       "mots_cles": [
         "exonérations",
         "régime réel",
-        "personnes morales"
+        "personnes morales",
+        "option régime réel"
       ],
       "statut": "en vigueur"
     },
@@ -129,7 +134,8 @@
         "OHADA",
         "système minimal trésorerie",
         "taux 5%",
-        "taux 8%"
+        "taux 8%",
+        "charges exploitation"
       ],
       "statut": "en vigueur"
     },
@@ -145,7 +151,8 @@
         "boutiques",
         "magasins",
         "ateliers",
-        "patente"
+        "patente",
+        "régime réel seuil"
       ],
       "statut": "en vigueur"
     },
@@ -159,7 +166,8 @@
         "sanctions IGF",
         "défaut paiement",
         "obligations légales",
-        "patente"
+        "patente",
+        "pénalités CGI"
       ],
       "statut": "en vigueur"
     },
@@ -174,7 +182,9 @@
       "mots_cles": [
         "régime fiscal entreprenant",
         "déclaration spontanée",
-        "système simplifié"
+        "système simplifié",
+        "micro-entreprise",
+        "secteur informel"
       ],
       "statut": "en vigueur"
     },
@@ -190,7 +200,8 @@
         "activité civile",
         "commerciale",
         "artisanale",
-        "agricole"
+        "agricole",
+        "déclaration simple"
       ],
       "statut": "en vigueur"
     },
@@ -203,7 +214,8 @@
       "mots_cles": [
         "non éligibles",
         "personnes morales",
-        "régime fiscal existant"
+        "régime fiscal existant",
+        "exclusion entreprenant"
       ],
       "statut": "en vigueur"
     },
@@ -224,7 +236,8 @@
         "RCCM",
         "greffe tribunal commerce",
         "déclaration activité",
-        "sans frais"
+        "sans frais",
+        "pièces à fournir"
       ],
       "statut": "en vigueur"
     },
@@ -236,7 +249,8 @@
       ],
       "mots_cles": [
         "début activité",
-        "numéro déclaration"
+        "numéro déclaration",
+        "autorisation exercer"
       ],
       "statut": "en vigueur"
     },
@@ -248,7 +262,8 @@
       ],
       "mots_cles": [
         "unicité immatriculation",
-        "registre unique"
+        "registre unique",
+        "interdiction double inscription"
       ],
       "statut": "en vigueur"
     },
@@ -261,7 +276,8 @@
       "mots_cles": [
         "régime imposition",
         "très petites entreprises",
-        "TPE"
+        "TPE",
+        "imposition entreprenant"
       ],
       "statut": "en vigueur"
     },
@@ -286,7 +302,8 @@
         "registre",
         "SMT",
         "OHADA",
-        "NIU"
+        "NIU",
+        "mentions obligatoires facture"
       ],
       "statut": "en vigueur"
     },
@@ -301,7 +318,8 @@
         "option irrévocable",
         "deux années",
         "perte statut",
-        "dépassement seuils"
+        "dépassement seuils",
+        "changement régime"
       ],
       "statut": "en vigueur"
     },
@@ -315,7 +333,8 @@
         "contrôle fiscal",
         "suivi trimestriel",
         "chiffre affaires",
-        "contrôle bureau"
+        "contrôle bureau",
+        "administration impôts"
       ],
       "statut": "en vigueur"
     },
@@ -330,7 +349,8 @@
         "déclaration",
         "recouvrement",
         "garanties Trésor",
-        "pénalités fiscales"
+        "pénalités fiscales",
+        "réclamation recours"
       ],
       "statut": "en vigueur"
     }

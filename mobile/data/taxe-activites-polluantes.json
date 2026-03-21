@@ -22,7 +22,11 @@
       ],
       "mots_cles": [
         "taxe activités polluantes",
-        "budget État"
+        "budget État",
+        "loi finances 2026",
+        "institution taxe",
+        "environnement",
+        "pollution"
       ],
       "statut": "en vigueur"
     },
@@ -40,7 +44,9 @@
         "rejet substances polluantes",
         "déchets polluants",
         "ressources naturelles",
-        "risques environnementaux"
+        "risques environnementaux",
+        "air eau sol",
+        "production importation stockage"
       ],
       "statut": "en vigueur"
     },
@@ -53,7 +59,8 @@
       "mots_cles": [
         "fait générateur",
         "exercice effectif",
-        "activité polluante"
+        "activité polluante",
+        "déclenchement taxe"
       ],
       "statut": "en vigueur"
     },
@@ -74,7 +81,9 @@
         "emballages plastiques 500 FCFA/kg",
         "minerais 5000 FCFA/m³",
         "déchets industriels 2500 FCFA/tonne",
-        "lubrifiants 500 FCFA/litre"
+        "lubrifiants 500 FCFA/litre",
+        "quantités produites importées",
+        "barème taxe polluantes"
       ],
       "statut": "en vigueur"
     },
@@ -89,7 +98,8 @@
         "déclaration",
         "contrôle",
         "recouvrement",
-        "CGI"
+        "CGI",
+        "modalités droit commun"
       ],
       "statut": "en vigueur"
     },
@@ -101,7 +111,9 @@
       ],
       "mots_cles": [
         "produit taxe",
-        "Trésor public"
+        "Trésor public",
+        "reversement",
+        "affectation recettes"
       ],
       "statut": "en vigueur"
     }

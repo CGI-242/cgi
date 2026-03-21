@@ -25,7 +25,9 @@
         "taux",
         "perception",
         "recouvrement",
-        "article 54 Code hydrocarbures"
+        "article 54 Code hydrocarbures",
+        "décret 2000-186",
+        "12 août 2000"
       ],
       "statut": "en vigueur"
     },
@@ -42,7 +44,9 @@
         "permis recherche",
         "3000 F/km²",
         "permis exploitation",
-        "800 USD/km²"
+        "800 USD/km²",
+        "titulaire permis",
+        "hydrocarbures"
       ],
       "statut": "en vigueur"
     },
@@ -53,7 +57,8 @@
         "Art.3.- (Décret n°2022-1858) Abrogé"
       ],
       "mots_cles": [
-        "abrogé"
+        "abrogé",
+        "décret 2022-1858"
       ],
       "statut": "abrogé"
     },
@@ -72,7 +77,8 @@
         "un tiers",
         "deux tiers",
         "collectivités publiques",
-        "arrêté Ministre finances"
+        "arrêté Ministre finances",
+        "clef répartition"
       ],
       "statut": "en vigueur"
     },
@@ -87,7 +93,8 @@
         "20 janvier chaque année",
         "loi 24-94 du 23 août 1994",
         "amende double montant droits",
-        "article 55"
+        "article 55",
+        "échéance annuelle"
       ],
       "statut": "en vigueur"
     },
@@ -98,7 +105,8 @@
         "Art.6.- (Décret n°2022-1858) Abrogé"
       ],
       "mots_cles": [
-        "abrogé"
+        "abrogé",
+        "décret 2022-1858"
       ],
       "statut": "abrogé"
     },
@@ -112,8 +120,7 @@
         "publication",
         "journal officiel",
         "entrée en vigueur",
-        "enregistrement décret",
-        "communication"
+        "enregistrement décret"
       ],
       "statut": "en vigueur"
     }

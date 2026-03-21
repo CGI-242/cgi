@@ -24,7 +24,9 @@
         "taxe spécifique",
         "boissons",
         "tabac",
-        "budget État"
+        "budget État",
+        "loi finances 2013",
+        "institution taxe"
       ],
       "statut": "en vigueur"
     },
@@ -39,7 +41,8 @@
         "redevable taxe spécifique",
         "consommateur final",
         "producteur local",
-        "importateur grossiste"
+        "importateur grossiste",
+        "redevable légal"
       ],
       "statut": "en vigueur"
     },
@@ -68,7 +71,8 @@
         "tabac 40F/paquet",
         "33cl",
         "50cl",
-        "65cl"
+        "65cl",
+        "barème contenances"
       ],
       "statut": "en vigueur"
     },
@@ -82,7 +86,8 @@
         "prix sortie usine",
         "prix vente TTC",
         "producteur local",
-        "importateur grossiste"
+        "importateur grossiste",
+        "intégration prix"
       ],
       "statut": "en vigueur"
     },
@@ -100,7 +105,8 @@
         "liquidation",
         "administration douanière",
         "administration fiscale",
-        "trésor public"
+        "trésor public",
+        "importation production locale"
       ],
       "statut": "en vigueur"
     },
@@ -113,7 +119,9 @@
       "mots_cles": [
         "affectation",
         "assurance maladie",
-        "activités sportives"
+        "activités sportives",
+        "recette affectée",
+        "dépenses santé sport"
       ],
       "statut": "en vigueur"
     },
@@ -128,7 +136,8 @@
         "paiement",
         "contrôle",
         "sanction",
-        "modalités TVA"
+        "modalités TVA",
+        "procédures droit commun"
       ],
       "statut": "en vigueur"
     }

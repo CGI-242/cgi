@@ -23,7 +23,10 @@
         "titre de perception",
         "impôts droits taxes",
         "responsable résidence fiscale",
-        "contribuable"
+        "contribuable",
+        "émission rôles",
+        "établissement titre",
+        "perception impôts"
       ],
       "statut": "en vigueur"
     },
@@ -36,7 +39,10 @@
       "mots_cles": [
         "instructions spéciales",
         "modalités rédaction des rôles",
-        "nombre d'exemplaires"
+        "nombre d'exemplaires",
+        "rôles impôts",
+        "procédure administrative",
+        "formalités fiscales"
       ],
       "statut": "en vigueur"
     },
@@ -50,7 +56,10 @@
         "exemplaires rôles",
         "inspecteurs divisionnaires contributions directes indirectes",
         "Directeur des Contributions Directes et Indirectes",
-        "avertissements redevables impositions nominatives"
+        "avertissements redevables impositions nominatives",
+        "transmission rôles",
+        "impositions nominatives",
+        "chaîne recouvrement"
       ],
       "statut": "en vigueur"
     }

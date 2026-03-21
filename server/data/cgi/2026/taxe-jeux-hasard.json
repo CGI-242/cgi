@@ -23,7 +23,10 @@
       "mots_cles": [
         "taxe jeux hasard",
         "jeux argent",
-        "exclusive TVA"
+        "exclusive TVA",
+        "taxe spéciale",
+        "loi finances 2003",
+        "institution taxe"
       ],
       "statut": "en vigueur"
     },
@@ -37,7 +40,9 @@
         "champ application",
         "courses hippiques",
         "casinos",
-        "paris sportifs"
+        "paris sportifs",
+        "activités organisation",
+        "jeux hasard argent"
       ],
       "statut": "en vigueur"
     },
@@ -62,7 +67,9 @@
         "assiette",
         "enjeux",
         "sommes misées",
-        "parieurs"
+        "parieurs",
+        "montant global",
+        "base imposition jeux"
       ],
       "statut": "en vigueur"
     },
@@ -80,7 +87,8 @@
         "jeux physiques 10%",
         "jeux en ligne 12%",
         "jeux virtuels 15%",
-        "catégories I II III IV"
+        "catégories I II III IV",
+        "barème taux jeux"
       ],
       "statut": "en vigueur"
     },
@@ -97,7 +105,9 @@
         "répartition produit",
         "budget État 60%",
         "autorité régulation 25%",
-        "fonds sport 15%"
+        "fonds sport 15%",
+        "fonds développement sportif",
+        "produit brut taxe"
       ],
       "statut": "en vigueur"
     },
@@ -110,7 +120,9 @@
       "mots_cles": [
         "condition perception",
         "autorité régulation",
-        "organes gouvernance"
+        "organes gouvernance",
+        "quote-part",
+        "mise en place organes"
       ],
       "statut": "en vigueur"
     },
@@ -124,7 +136,8 @@
         "fait générateur",
         "collecte paris",
         "mises",
-        "sommes versées"
+        "sommes versées",
+        "participation jeux"
       ],
       "statut": "en vigueur"
     },
@@ -137,7 +150,9 @@
       "mots_cles": [
         "exigibilité",
         "10 au 20 du mois",
-        "modalités TVA"
+        "modalités TVA",
+        "mois suivant encaissement",
+        "délai paiement"
       ],
       "statut": "en vigueur"
     },
@@ -151,7 +166,9 @@
         "sanctions",
         "défaut déclaration",
         "retard",
-        "sanctions TVA"
+        "sanctions TVA",
+        "non-paiement taxe",
+        "pénalités"
       ],
       "statut": "en vigueur"
     },
@@ -169,7 +186,9 @@
         "centimes additionnels",
         "taux 5%",
         "taxe collectée",
-        "collectivités locales"
+        "collectivités locales",
+        "base imposition",
+        "administration fiscale"
       ],
       "statut": "en vigueur"
     },
@@ -183,7 +202,9 @@
       "mots_cles": [
         "TVA non déductible",
         "acquisitions TTC",
-        "pas déduction TVA amont"
+        "pas déduction TVA amont",
+        "biens services exploitation",
+        "toutes taxes comprises"
       ],
       "statut": "en vigueur"
     },
@@ -197,7 +218,9 @@
         "DGID",
         "assiette",
         "contrôle",
-        "recouvrement"
+        "recouvrement",
+        "administration compétente",
+        "direction générale impôts"
       ],
       "statut": "en vigueur"
     }

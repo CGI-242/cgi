@@ -25,7 +25,9 @@
       "mots_cles": [
         "droits accises",
         "consommation Congo",
-        "sans distinction qualité origine"
+        "sans distinction qualité origine",
+        "loi finances 2020",
+        "taxe consommation"
       ],
       "statut": "en vigueur"
     },
@@ -52,7 +54,9 @@
         "cigares cigarettes",
         "chapitre 24",
         "véhicules tourisme 87.03",
-        "motocycles 250 cm3"
+        "confiseries glaces",
+        "boissons énergisantes",
+        "produits luxe"
       ],
       "statut": "en vigueur"
     },
@@ -72,7 +76,8 @@
         "exonération accises",
         "intrants",
         "production locale",
-        "attestation exonération"
+        "attestation exonération",
+        "processus production"
       ],
       "statut": "en vigueur"
     },
@@ -89,7 +94,8 @@
         "redevable accises",
         "importateur",
         "producteur",
-        "régime transit"
+        "régime transit",
+        "pas régime dérogatoire"
       ],
       "statut": "en vigueur"
     },
@@ -106,7 +112,8 @@
         "fait générateur accises",
         "exigibilité",
         "première cession",
-        "introduction territoire douanier"
+        "introduction territoire douanier",
+        "production locale importation"
       ],
       "statut": "en vigueur"
     },
@@ -121,7 +128,8 @@
       "mots_cles": [
         "mesures préférentielles interdites",
         "biens nationaux",
-        "réduction base taux"
+        "réduction base taux",
+        "non-discrimination"
       ],
       "statut": "en vigueur"
     },
@@ -145,7 +153,8 @@
         "valeur sortie-usine",
         "CEMAC",
         "arrondi millier",
-        "emballages récupérables"
+        "emballages récupérables",
+        "code douanes CEMAC"
       ],
       "statut": "en vigueur"
     },
@@ -164,12 +173,12 @@
       ],
       "mots_cles": [
         "taux accises",
-        "tabacs 30%",
+        "confiseries 5%",
+        "boissons sucrées 10%",
         "boissons alcoolisées 25%",
-        "boissons sucrées 12,5%",
-        "produits luxe 25%",
-        "véhicules 15%",
-        "jeux hasard 25%"
+        "tabac 30%",
+        "champagne hydroquinone 50%",
+        "barème droits accises"
       ],
       "statut": "en vigueur"
     }

@@ -24,7 +24,9 @@
         "redevance audiovisuelle",
         "électrification rurale",
         "presse radiotélévisée",
-        "extension réseau électricité"
+        "extension réseau électricité",
+        "loi finances 2025",
+        "milieu rural"
       ],
       "statut": "en vigueur"
     },
@@ -38,7 +40,9 @@
         "personnes redevables",
         "abonnés",
         "Société Energie Electrique Congo",
-        "E2C"
+        "E2C",
+        "année entière",
+        "abonnement électricité"
       ],
       "statut": "en vigueur"
     },
@@ -57,7 +61,8 @@
         "collectivités publiques",
         "enseignement public",
         "agents diplomatiques",
-        "réciprocité"
+        "réciprocité",
+        "consuls agents consulaires"
       ],
       "statut": "en vigueur"
     },
@@ -75,7 +80,8 @@
         "500 FCFA/mois",
         "répartition",
         "40% presse",
-        "60% électrification rurale"
+        "60% électrification rurale",
+        "montant forfaitaire"
       ],
       "statut": "en vigueur"
     },
@@ -87,7 +93,9 @@
       ],
       "mots_cles": [
         "perception",
-        "Société Energie Electrique Congo"
+        "Société Energie Electrique Congo",
+        "collecte redevance",
+        "E2C percepteur"
       ],
       "statut": "en vigueur"
     },
@@ -101,7 +109,9 @@
         "reversement",
         "Receveur principal impôts",
         "10 au 20 du mois",
-        "déclaration"
+        "déclaration",
+        "mois précédent",
+        "délai reversement"
       ],
       "statut": "en vigueur"
     },
@@ -116,7 +126,8 @@
         "contrôle",
         "recouvrement",
         "procédures TVA",
-        "sanctions TVA"
+        "sanctions TVA",
+        "modalités droit commun"
       ],
       "statut": "en vigueur"
     },
@@ -135,7 +146,8 @@
         "productions télévisées 40%",
         "productions radios 25%",
         "télédiffusion 20%",
-        "équipements 15%"
+        "équipements 15%",
+        "productions locales étrangères"
       ],
       "statut": "en vigueur"
     },
@@ -149,7 +161,8 @@
         "autorité régulation",
         "secteur électricité",
         "contrôle",
-        "extension réseau rural"
+        "extension réseau rural",
+        "suivi activités"
       ],
       "statut": "en vigueur"
     },
@@ -161,7 +174,8 @@
       ],
       "mots_cles": [
         "abrogation",
-        "redevance audiovisuelle ancienne"
+        "redevance audiovisuelle ancienne",
+        "remplacement dispositions"
       ],
       "statut": "en vigueur"
     }

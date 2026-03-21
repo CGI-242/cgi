@@ -24,7 +24,9 @@
         "impôt forfaitaire",
         "pylônes",
         "télécommunication",
-        "annuel"
+        "annuel",
+        "loi finances 2015",
+        "institution impôt"
       ],
       "statut": "en vigueur"
     },
@@ -41,7 +43,8 @@
         "champ application",
         "collectivités locales",
         "pylônes télécommunication",
-        "réseaux téléphoniques"
+        "réseaux téléphoniques",
+        "installations extension"
       ],
       "statut": "en vigueur"
     },
@@ -55,7 +58,8 @@
       ],
       "mots_cles": [
         "personnes imposables",
-        "entreprises télécommunication"
+        "entreprises télécommunication",
+        "opérateurs télécom"
       ],
       "statut": "en vigueur"
     },
@@ -70,7 +74,8 @@
       "mots_cles": [
         "exemptions",
         "petites antennes",
-        "usage domestique"
+        "usage domestique",
+        "antennes exclues"
       ],
       "statut": "en vigueur"
     },
@@ -86,7 +91,8 @@
         "lieu imposition",
         "commune",
         "département",
-        "localisation pylône"
+        "localisation pylône",
+        "territorialité"
       ],
       "statut": "en vigueur"
     },
@@ -108,7 +114,8 @@
         "Brazzaville",
         "Pointe-Noire",
         "Dolisie Madingou Nkayi Oyo Owando Ouesso",
-        "500 000 FCFA zones rurales"
+        "500 000 FCFA zones rurales",
+        "grandes agglomérations"
       ],
       "statut": "en vigueur"
     },
@@ -125,7 +132,8 @@
         "déclaration spontanée",
         "paiement spontané",
         "Receveur collectivité locale",
-        "31 mars"
+        "31 mars",
+        "échéance annuelle"
       ],
       "statut": "en vigueur"
     },
@@ -141,7 +149,8 @@
         "sanctions",
         "défaut déclaration",
         "paiement tardif",
-        "pénalité 50%"
+        "pénalité 50%",
+        "amende pylônes"
       ],
       "statut": "en vigueur"
     },
@@ -157,7 +166,8 @@
         "contentieux",
         "assiette",
         "recouvrement",
-        "CGI"
+        "CGI",
+        "réclamation fiscale"
       ],
       "statut": "en vigueur"
     }

@@ -25,7 +25,8 @@
         "critères risques",
         "non-conformité",
         "fraude",
-        "contrôles annuels périodiques"
+        "contrôles annuels périodiques",
+        "identification contribuables"
       ],
       "statut": "en vigueur"
     },
@@ -39,7 +40,8 @@
       "mots_cles": [
         "sélection dossiers",
         "contrôles fiscaux douaniers",
-        "normes règles"
+        "normes règles",
+        "méthodologie sélection"
       ],
       "statut": "en vigueur"
     },
@@ -55,7 +57,8 @@
         "recouvrement",
         "contentieux",
         "CGI",
-        "Code douanes CEMAC"
+        "Code douanes CEMAC",
+        "droits obligations contribuables"
       ],
       "statut": "en vigueur"
     },
@@ -76,7 +79,8 @@
         "dossier",
         "risque fiscal douanier",
         "service",
-        "juridiction fiscale non contraignante"
+        "juridiction fiscale non contraignante",
+        "perte recettes"
       ],
       "statut": "en vigueur"
     },
@@ -107,7 +111,8 @@
         "égalité traitement",
         "ressources",
         "fraude évasion",
-        "civisme fiscal"
+        "civisme fiscal",
+        "engagement volontaire"
       ],
       "statut": "en vigueur"
     },
@@ -121,7 +126,8 @@
       "mots_cles": [
         "absence obligation justification",
         "sélection contribuable",
-        "contrôle"
+        "contrôle",
+        "pouvoir discrétionnaire"
       ],
       "statut": "en vigueur"
     },
@@ -136,7 +142,8 @@
         "climat affaires",
         "gestion proactive risques",
         "priorité contrôles",
-        "risques élevés"
+        "risques élevés",
+        "amélioration environnement"
       ],
       "statut": "en vigueur"
     },
@@ -151,7 +158,8 @@
         "champ application",
         "tout contribuable",
         "contrôle fiscal douanier",
-        "impôts droits taxes"
+        "impôts droits taxes",
+        "application universelle"
       ],
       "statut": "en vigueur"
     },
@@ -166,7 +174,8 @@
         "mise en œuvre",
         "administrations fiscale douanière",
         "compétence",
-        "textes spécifiques"
+        "textes spécifiques",
+        "modalités application"
       ],
       "statut": "en vigueur"
     },
@@ -183,7 +192,8 @@
         "vérifications fiscales",
         "contrôle a posteriori",
         "contrôles douaniers",
-        "services dédiés"
+        "services dédiés",
+        "types opérations contrôle"
       ],
       "statut": "en vigueur"
     },
@@ -201,7 +211,8 @@
         "antécédents non-conformité",
         "industrie",
         "analyses données",
-        "comité art.21"
+        "comité art.21",
+        "évaluation risques recettes"
       ],
       "statut": "en vigueur"
     },
@@ -217,7 +228,8 @@
         "élaboration critères risque",
         "analyse profils risque",
         "sélection cas contrôle",
-        "impartialité"
+        "impartialité",
+        "séparation fonctions"
       ],
       "statut": "en vigueur"
     },
@@ -249,7 +261,7 @@
     {
       "article": "Art. 13",
       "titre": "Méthodes de notation et scoring",
-      "section": "Chapitre 5 : Des services compétents pour la mise en œuvre de l’approche de contrôle fondée sur les risques",
+      "section": "Chapitre 5 : Des services compétents pour la mise en œuvre de l'approche de contrôle fondée sur les risques",
       "texte": [
         "Art.13.- L'évaluation des risques requiert la définition préalablement des méthodes de notation, de calcul de scores et de classement des risques et de les faire valider par le comité mis en place à cet effet."
       ],
@@ -258,14 +270,15 @@
         "méthodes notation",
         "calcul scores",
         "classement risques",
-        "validation comité"
+        "validation comité",
+        "scoring fiscal"
       ],
       "statut": "en vigueur"
     },
     {
       "article": "Art. 14",
       "titre": "Profil de risque",
-      "section": "Chapitre 5 : Des services compétents pour la mise en œuvre de l’approche de contrôle fondée sur les risques",
+      "section": "Chapitre 5 : Des services compétents pour la mise en œuvre de l'approche de contrôle fondée sur les risques",
       "texte": [
         "Art.14.- Sur la base des informations collectées, les services établissent un profil de risque pour une catégorie de contribuables ou d'opérations.",
         "Le profil de risque est une valeur numérique qui indique le niveau de risque associé à chaque catégorie de contribuables ou d'opérations. Il permet de classer les contribuables en fonction de leur niveau de risque."
@@ -275,7 +288,8 @@
         "valeur numérique",
         "niveau risque",
         "catégorie contribuables",
-        "classement"
+        "classement",
+        "profilage fiscal"
       ],
       "statut": "en vigueur"
     },
@@ -291,7 +305,8 @@
         "sélection dossiers",
         "identification analyse évaluation",
         "profil score risque",
-        "catégorie contribuables"
+        "catégorie contribuables",
+        "processus sélection"
       ],
       "statut": "en vigueur"
     },
@@ -305,7 +320,8 @@
       "mots_cles": [
         "types contrôles",
         "structures contrôle",
-        "seuils risque"
+        "seuils risque",
+        "détermination contrôle"
       ],
       "statut": "en vigueur"
     },
@@ -342,7 +358,8 @@
         "plateformes collaboration",
         "échanges informations",
         "logiciel automatisé",
-        "stockage traitement"
+        "stockage traitement",
+        "outils numériques contrôle"
       ],
       "statut": "en vigueur"
     },
@@ -355,7 +372,8 @@
       ],
       "mots_cles": [
         "modalités contrôle",
-        "textes spécifiques"
+        "textes spécifiques",
+        "décret application"
       ],
       "statut": "en vigueur"
     },
@@ -375,7 +393,8 @@
         "mesures transitoires",
         "basculement graduel",
         "comité évaluation risques",
-        "documentation outils"
+        "documentation outils",
+        "ministre finances"
       ],
       "statut": "en vigueur"
     },
@@ -388,7 +407,8 @@
       ],
       "mots_cles": [
         "abrogation",
-        "publication JO"
+        "publication JO",
+        "entrée vigueur"
       ],
       "statut": "en vigueur"
     }

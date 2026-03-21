@@ -23,7 +23,10 @@
         "taxe",
         "kilowatt",
         "heure",
-        "abrogé"
+        "abrogé",
+        "taxe kilowatt heure",
+        "énergie électrique",
+        "livre 6 abrogé"
       ],
       "statut": "abrogé"
     }

@@ -29,7 +29,8 @@
         "importations",
         "IRPP BICA",
         "IS",
-        "TSS"
+        "TSS",
+        "loi finances 1995"
       ],
       "statut": "en vigueur"
     },
@@ -64,7 +65,8 @@
         "exonération ASDI",
         "personnes morales IS TSS",
         "gaz",
-        "produits pétroliers"
+        "produits pétroliers",
+        "exclusions ASDI"
       ],
       "statut": "en vigueur"
     },
@@ -76,7 +78,8 @@
       ],
       "mots_cles": [
         "taux ASDI",
-        "3%"
+        "3%",
+        "taux prélèvement forfaitaire"
       ],
       "statut": "en vigueur"
     },
@@ -94,7 +97,8 @@
         "valeur douanière",
         "facture HT",
         "marge brute",
-        "prix réglementés"
+        "prix réglementés",
+        "assiette ASDI"
       ],
       "statut": "en vigueur"
     },
@@ -110,7 +114,8 @@
         "transitaires",
         "reversement",
         "20 du mois",
-        "déclaration"
+        "déclaration",
+        "délai reversement"
       ],
       "statut": "en vigueur"
     },
@@ -125,7 +130,8 @@
         "déclaration ASDI importations",
         "dédouanement",
         "résidence fiscale",
-        "15 jours"
+        "15 jours",
+        "délai paiement importation"
       ],
       "statut": "en vigueur"
     },
@@ -141,7 +147,8 @@
         "retard versement",
         "amende 100 000 FCFA",
         "fermeture entreprise",
-        "récidive"
+        "récidive",
+        "pénalités ventes"
       ],
       "statut": "en vigueur"
     },
@@ -156,7 +163,8 @@
         "sanctions ASDI importations",
         "amende égale ASDI",
         "double ASDI",
-        "fermeture entreprise"
+        "fermeture entreprise",
+        "retard déclaration"
       ],
       "statut": "en vigueur"
     },
@@ -174,7 +182,8 @@
         "imputation impôts directs",
         "report reliquat",
         "remboursement",
-        "2e exercice"
+        "2e exercice",
+        "crédit impôt ASDI"
       ],
       "statut": "en vigueur"
     },
@@ -190,7 +199,8 @@
         "NIU",
         "mentions ASDI",
         "amende 10 000 FCFA",
-        "maximum 100 000 FCFA"
+        "maximum 100 000 FCFA",
+        "obligations facturation"
       ],
       "statut": "en vigueur"
     },
@@ -204,7 +214,8 @@
         "abrogation",
         "loi 14/94",
         "prélèvement achats locaux",
-        "prélèvement importation"
+        "prélèvement importation",
+        "17 juin 1994"
       ],
       "statut": "en vigueur"
     }

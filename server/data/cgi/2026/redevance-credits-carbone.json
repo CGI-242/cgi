@@ -26,7 +26,9 @@
         "redevance crédits carbone",
         "RCC",
         "promoteurs",
-        "génération crédits carbone"
+        "génération crédits carbone",
+        "loi finances 2026",
+        "projets carbone Congo"
       ],
       "statut": "en vigueur"
     },
@@ -42,7 +44,9 @@
         "personnes physiques",
         "personnes morales",
         "spéculation",
-        "compensation"
+        "compensation",
+        "droit congolais étranger",
+        "investissement carbone"
       ],
       "statut": "en vigueur"
     },
@@ -61,7 +65,9 @@
         "personnes imposables",
         "crédits carbone spéculatifs",
         "commercialisation",
-        "transfert hors Congo"
+        "transfert hors Congo",
+        "entités groupe",
+        "assujettis RCC"
       ],
       "statut": "en vigueur"
     },
@@ -81,7 +87,8 @@
         "crédits carbone compensatoires",
         "buffer crédits carbone",
         "État",
-        "code forestier"
+        "code forestier",
+        "démembrements État"
       ],
       "statut": "en vigueur"
     },
@@ -97,7 +104,9 @@
         "crédits carbone compensatoires",
         "buffer crédits carbone",
         "émissions",
-        "gaz effet de serre"
+        "gaz effet de serre",
+        "réduction émissions",
+        "réserve carbone"
       ],
       "statut": "en vigueur"
     },
@@ -111,7 +120,9 @@
       ],
       "mots_cles": [
         "territorialité",
-        "territoire national"
+        "territoire national",
+        "projet réalisé Congo",
+        "activités territoire"
       ],
       "statut": "en vigueur"
     },
@@ -128,7 +139,8 @@
         "base calcul",
         "volume crédits carbone",
         "organisme certification",
-        "buffer"
+        "buffer",
+        "déduction buffer"
       ],
       "statut": "en vigueur"
     },
@@ -145,7 +157,8 @@
         "prix cession",
         "marché carbone",
         "variation positive",
-        "prix plus élevé"
+        "prix plus élevé",
+        "jour délivrance"
       ],
       "statut": "en vigueur"
     },
@@ -160,7 +173,8 @@
         "montant droits",
         "taux",
         "base valorisée",
-        "article 8"
+        "article 8",
+        "calcul redevance RCC"
       ],
       "statut": "en vigueur"
     },
@@ -178,7 +192,8 @@
         "taux redevance",
         "20% classes 1 et 2",
         "15% classes 3 et 4",
-        "code forestier"
+        "code forestier",
+        "classes projets carbone"
       ],
       "statut": "en vigueur"
     },
@@ -196,7 +211,8 @@
         "délivrance effective",
         "organisme certification",
         "exigibilité",
-        "3 mois"
+        "3 mois",
+        "émission crédits carbone"
       ],
       "statut": "en vigueur"
     },
@@ -210,7 +226,8 @@
       "mots_cles": [
         "non-exigibilité",
         "buffer",
-        "affectation totale"
+        "affectation totale",
+        "crédits certifiés"
       ],
       "statut": "en vigueur"
     },
@@ -225,7 +242,8 @@
       "mots_cles": [
         "obligations droit commun",
         "impôts taxes",
-        "CGI"
+        "CGI",
+        "promoteurs projets"
       ],
       "statut": "en vigueur"
     },
@@ -244,7 +262,8 @@
         "plan projet",
         "OVV",
         "contrat prestation",
-        "entité tierce"
+        "entité tierce",
+        "administration fiscale"
       ],
       "statut": "en vigueur"
     },
@@ -263,7 +282,8 @@
         "rapport activités",
         "6 mois",
         "état récapitulatif",
-        "projets communautaires"
+        "projets communautaires",
+        "exercice annuel"
       ],
       "statut": "en vigueur"
     },
@@ -277,7 +297,8 @@
       "mots_cles": [
         "sanctions",
         "amende 50 000 000 FCFA",
-        "par obligation"
+        "par obligation",
+        "inobservation"
       ],
       "statut": "en vigueur"
     },
@@ -292,7 +313,8 @@
         "obligations déclaratives",
         "paiement spontané",
         "3 mois",
-        "organisme certification"
+        "organisme certification",
+        "délai déclaration RCC"
       ],
       "statut": "en vigueur"
     },
@@ -308,7 +330,8 @@
         "défaut déclaration",
         "amende",
         "responsabilité solidaire",
-        "entité tierce"
+        "entité tierce",
+        "régularisation droits"
       ],
       "statut": "en vigueur"
     },
@@ -324,7 +347,8 @@
         "contrôle",
         "droit de communication",
         "économie forestière",
-        "environnement"
+        "environnement",
+        "administration territoire"
       ],
       "statut": "en vigueur"
     },
@@ -341,7 +365,8 @@
         "recoupement informations",
         "organismes habilités",
         "vérification",
-        "certification"
+        "certification",
+        "validation projets"
       ],
       "statut": "en vigueur"
     },
@@ -359,7 +384,8 @@
         "renseignements fiscaux",
         "projets crédits carbone",
         "buffer",
-        "prix cession marché"
+        "prix cession marché",
+        "collecte informations"
       ],
       "statut": "en vigueur"
     },
@@ -375,7 +401,8 @@
         "recouvrement",
         "comptable public",
         "résidence fiscale",
-        "CGI"
+        "CGI",
+        "comptable assignataire"
       ],
       "statut": "en vigueur"
     },
@@ -393,7 +420,8 @@
         "répartition",
         "Trésor public 70%",
         "collectivités locales 30%",
-        "projets sociaux"
+        "projets sociaux",
+        "lieu implantation"
       ],
       "statut": "en vigueur"
     }

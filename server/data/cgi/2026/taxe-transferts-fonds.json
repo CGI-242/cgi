@@ -25,7 +25,8 @@
       "mots_cles": [
         "taxe transferts fonds",
         "envoi argent étranger",
-        "TTF"
+        "TTF",
+        "loi finances 2004"
       ],
       "statut": "en vigueur"
     },
@@ -41,7 +42,8 @@
         "budget État",
         "Agence régulation",
         "ACSI",
-        "ANSSI"
+        "ANSSI",
+        "ARTF"
       ],
       "statut": "en vigueur"
     },
@@ -66,7 +68,8 @@
         "30 jours",
         "paiements électroniques",
         "cartes crédit",
-        "5 000 000 FCFA"
+        "5 000 000 FCFA",
+        "CEMAC changes"
       ],
       "statut": "en vigueur"
     },
@@ -92,7 +95,8 @@
         "bourses étudiants",
         "emprunts investissement",
         "CEMAC",
-        "Trésor public"
+        "Trésor public",
+        "convention établissement"
       ],
       "statut": "en vigueur"
     },
@@ -106,7 +110,8 @@
       ],
       "mots_cles": [
         "base imposition",
-        "montant brut transfert"
+        "montant brut transfert",
+        "assiette TTF"
       ],
       "statut": "en vigueur"
     },
@@ -121,7 +126,8 @@
       "mots_cles": [
         "taux taxe",
         "1,5%",
-        "sociétés pétrolières"
+        "sociétés pétrolières",
+        "taux TTF"
       ],
       "statut": "en vigueur"
     },
@@ -143,7 +149,8 @@
         "vente devises",
         "non rapatriement",
         "carte bancaire",
-        "paiement électronique"
+        "paiement électronique",
+        "commission transfert"
       ],
       "statut": "en vigueur"
     },
@@ -157,7 +164,8 @@
       "mots_cles": [
         "recouvrement",
         "entreprises",
-        "opérations transfert"
+        "opérations transfert",
+        "collecte taxe"
       ],
       "statut": "en vigueur"
     },
@@ -173,7 +181,8 @@
         "banques",
         "bureaux change",
         "établissements financiers",
-        "article 461 bis CGI"
+        "article 461 bis CGI",
+        "délai mensuel"
       ],
       "statut": "en vigueur"
     },
@@ -188,7 +197,8 @@
         "sanctions",
         "non-reversement",
         "intérêt retard 10%",
-        "par mois"
+        "par mois",
+        "pénalités TTF"
       ],
       "statut": "en vigueur"
     },
@@ -203,7 +213,8 @@
       "mots_cles": [
         "responsabilité redevable",
         "non-prélèvement",
-        "pénalité 50%"
+        "pénalité 50%",
+        "redevable légal"
       ],
       "statut": "en vigueur"
     },
@@ -223,7 +234,8 @@
         "achat devises",
         "banques",
         "bureaux change agréés",
-        "régime réel"
+        "régime réel",
+        "virement étranger"
       ],
       "statut": "en vigueur"
     },
@@ -239,7 +251,8 @@
         "modalités déduction",
         "mois suivant",
         "importation devises",
-        "mise à consommation"
+        "mise à consommation",
+        "droit déduction"
       ],
       "statut": "en vigueur"
     },
@@ -253,7 +266,8 @@
       "mots_cles": [
         "délai déduction",
         "premier exercice fiscal",
-        "taxe acquise Trésor"
+        "taxe acquise Trésor",
+        "prescription déduction"
       ],
       "statut": "en vigueur"
     },
@@ -273,7 +287,8 @@
         "conditions déductibilité",
         "document banque centrale",
         "factures achat devises",
-        "documents douaniers"
+        "documents douaniers",
+        "justificatifs déduction"
       ],
       "statut": "en vigueur"
     },
@@ -289,7 +304,8 @@
       "mots_cles": [
         "exclusions déduction",
         "livraison soi-même",
-        "propres besoins"
+        "propres besoins",
+        "non déductible"
       ],
       "statut": "en vigueur"
     },
@@ -302,7 +318,8 @@
       ],
       "mots_cles": [
         "limitation déduction",
-        "contre-valeur devises achetées"
+        "contre-valeur devises achetées",
+        "plafond déduction"
       ],
       "statut": "en vigueur"
     },
@@ -317,7 +334,8 @@
       "mots_cles": [
         "obligations redevables",
         "déclaration spontanée",
-        "modèle administration fiscale"
+        "modèle administration fiscale",
+        "souscription obligatoire"
       ],
       "statut": "en vigueur"
     },
@@ -335,7 +353,8 @@
         "obligations documentaires",
         "facture",
         "mentions obligatoires",
-        "article 29 TVA"
+        "article 29 TVA",
+        "facturation TTF"
       ],
       "statut": "en vigueur"
     },
@@ -354,7 +373,8 @@
         "ARTF",
         "documents comptables",
         "assiette",
-        "liquidation"
+        "liquidation",
+        "vérification banques"
       ],
       "statut": "en vigueur"
     },
@@ -376,7 +396,8 @@
         "État 45%",
         "ARTF 30%",
         "ACSI 5%",
-        "ANSSI 20%"
+        "ANSSI 20%",
+        "plateforme certification"
       ],
       "statut": "en vigueur"
     },
@@ -392,7 +413,8 @@
       "mots_cles": [
         "plateforme certification",
         "ARTF",
-        "interconnexion obligatoire"
+        "interconnexion obligatoire",
+        "régulation transferts"
       ],
       "statut": "en vigueur"
     },
@@ -410,7 +432,8 @@
         "obligations agents économiques",
         "enregistrement ARTF",
         "registre national",
-        "déclaration 10 du mois"
+        "déclaration 10 du mois",
+        "TPE terminaux paiement"
       ],
       "statut": "en vigueur"
     },
@@ -448,7 +471,8 @@
         "amende 40 000 000 F",
         "interdiction exercer",
         "fermeture",
-        "saisie"
+        "saisie",
+        "amende 70 000 000 F"
       ],
       "statut": "en vigueur"
     }

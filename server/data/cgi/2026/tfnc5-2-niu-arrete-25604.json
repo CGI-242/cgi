@@ -24,7 +24,9 @@
         "arrêté 25604",
         "transactions économiques",
         "formalités administratives",
-        "obligation exiger NIU"
+        "obligation exiger NIU",
+        "29 octobre 2022",
+        "décret 2004-469"
       ],
       "statut": "en vigueur"
     },
@@ -50,7 +52,8 @@
         "compte bancaire",
         "transfert fonds",
         "abonnement eau électricité",
-        "télécom internet télévision"
+        "télécom internet télévision",
+        "marché public"
       ],
       "statut": "en vigueur"
     },
@@ -73,7 +76,8 @@
         "trésor public",
         "certificat nationalité",
         "casier judiciaire",
-        "sécurité sociale"
+        "sécurité sociale",
+        "prévoyance sociale"
       ],
       "statut": "en vigueur"
     },
@@ -87,7 +91,10 @@
       ],
       "mots_cles": [
         "entrée vigueur 30 juin 2023",
-        "délai régularisation 3 mois"
+        "délai régularisation 3 mois",
+        "arrêté 2023-439",
+        "suspension services",
+        "régularisation NIU"
       ],
       "statut": "en vigueur"
     },
@@ -101,7 +108,9 @@
       "mots_cles": [
         "sanction non-exigence NIU",
         "amende 10 000 FCFA opération",
-        "constatation infractions"
+        "constatation infractions",
+        "administration fiscale",
+        "pénalité par opération"
       ],
       "statut": "en vigueur"
     },
@@ -113,7 +122,9 @@
       ],
       "mots_cles": [
         "délai délivrance NIU",
-        "48 heures"
+        "48 heures",
+        "administration fiscale",
+        "dépôt demande"
       ],
       "statut": "en vigueur"
     },
@@ -125,7 +136,8 @@
       ],
       "mots_cles": [
         "abrogation",
-        "publication JO"
+        "publication JO",
+        "entrée vigueur"
       ],
       "statut": "en vigueur"
     }

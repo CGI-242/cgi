@@ -24,7 +24,9 @@
         "attestation non-redevance fiscale",
         "validité trimestrielle",
         "personnes physiques morales",
-        "domicile Congo"
+        "domicile Congo",
+        "loi finances 2018",
+        "conformité fiscale"
       ],
       "statut": "en vigueur"
     },
@@ -43,7 +45,8 @@
         "chef résidence fiscale",
         "NIU",
         "quittances impôts",
-        "certificat moralité fiscale"
+        "certificat moralité fiscale",
+        "pièces justificatives"
       ],
       "statut": "en vigueur"
     },
@@ -62,7 +65,8 @@
         "droit exercer activité",
         "marchés État",
         "crédits bancaires",
-        "importateur exportateur"
+        "importateur exportateur",
+        "soumission marchés publics"
       ],
       "statut": "en vigueur"
     },
@@ -75,7 +79,9 @@
       "mots_cles": [
         "exigibilité",
         "contrôle inopiné",
-        "vérification comptabilité"
+        "vérification comptabilité",
+        "loi 2020-23",
+        "obligation présentation"
       ],
       "statut": "en vigueur"
     },
@@ -89,7 +95,8 @@
         "sanctions",
         "amende 100 000 FCFA",
         "infraction",
-        "trimestre"
+        "trimestre",
+        "pénalité absence attestation"
       ],
       "statut": "en vigueur"
     }

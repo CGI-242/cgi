@@ -21,7 +21,8 @@
       ],
       "mots_cles": [
         "abrogation",
-        "généralités"
+        "généralités",
+        "taxes facultatives"
       ],
       "statut": "abrogé",
       "section": "Section 1 : Généralités",
@@ -35,7 +36,8 @@
       ],
       "mots_cles": [
         "abrogation",
-        "valeur locative"
+        "valeur locative",
+        "locaux professionnels"
       ],
       "statut": "abrogé",
       "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
@@ -48,7 +50,8 @@
         "Abrogé."
       ],
       "mots_cles": [
-        "abrogation"
+        "abrogation",
+        "valeur locative"
       ],
       "statut": "abrogé",
       "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
@@ -61,7 +64,8 @@
         "Abrogé."
       ],
       "mots_cles": [
-        "abrogation"
+        "abrogation",
+        "valeur locative"
       ],
       "statut": "abrogé",
       "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
@@ -74,7 +78,8 @@
         "Abrogé."
       ],
       "mots_cles": [
-        "abrogation"
+        "abrogation",
+        "valeur locative"
       ],
       "statut": "abrogé",
       "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
@@ -87,7 +92,8 @@
         "Abrogé."
       ],
       "mots_cles": [
-        "abrogation"
+        "abrogation",
+        "valeur locative"
       ],
       "statut": "abrogé",
       "section": "Section 2 : Taxe sur la valeur locative des locaux professionnels",
@@ -102,7 +108,10 @@
       "mots_cles": [
         "redevables",
         "ordures ménagères",
-        "service public"
+        "service public",
+        "personnes physiques morales",
+        "taxe enlèvement",
+        "bénéficiaires service"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -121,7 +130,10 @@
         "exemptions",
         "services publics",
         "enseignement",
-        "distance"
+        "distance",
+        "État communes",
+        "cent mètres",
+        "établissements scientifiques"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -139,7 +151,9 @@
         "habitation",
         "redevable",
         "exploitant",
-        "établissement commercial"
+        "établissement commercial",
+        "immeubles logements",
+        "établissement industriel"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -154,7 +168,10 @@
       "mots_cles": [
         "employeur",
         "logement",
-        "recouvrement"
+        "recouvrement",
+        "logement gratuit",
+        "personnel logé",
+        "agent recouvrement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -170,7 +187,9 @@
       "mots_cles": [
         "taxe trimestrielle",
         "occupant",
-        "trimestre civil"
+        "trimestre civil",
+        "périodicité paiement",
+        "trimestre commencé dû"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -186,7 +205,9 @@
         "rôle",
         "homologation",
         "recouvrement",
-        "comptable municipal"
+        "comptable municipal",
+        "conseil communal",
+        "contributions directes indirectes"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -203,7 +224,10 @@
         "taux",
         "délibération",
         "autorité de tutelle",
-        "ministre des finances"
+        "ministre des finances",
+        "conseil populaire commune",
+        "maxima",
+        "trimestre civil"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -224,7 +248,11 @@
         "maxima",
         "parcelle",
         "établissement commercial",
-        "établissement industriel"
+        "établissement industriel",
+        "6 000 FCFA parcelle",
+        "39 000 FCFA commercial",
+        "60 000 FCFA industriel",
+        "catégorie taux élevé"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Taxe d'enlèvement des ordures ménagères",
@@ -241,7 +269,9 @@
         "imposables",
         "transport",
         "tracteurs",
-        "périmètre commercial"
+        "périmètre commercial",
+        "personnes physiques morales",
+        "travaux agricoles exclus"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Taxe sur les véhicules à moteur",
@@ -263,7 +293,9 @@
         "immobilisation",
         "carte grise",
         "taxis",
-        "bus"
+        "bus",
+        "UDEAC",
+        "organismes internationaux"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Taxe sur les véhicules à moteur",
@@ -279,7 +311,9 @@
         "année entière",
         "propriétaire",
         "véhicule neuf",
-        "1er octobre"
+        "1er octobre",
+        "1er janvier",
+        "annualité taxe"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Taxe sur les véhicules à moteur",
@@ -334,7 +368,9 @@
         "cyclomoteurs",
         "motos",
         "véhicules",
-        "puissance CV"
+        "puissance CV",
+        "périmètre urbain",
+        "barème FCFA"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Taxe sur les véhicules à moteur",
@@ -375,7 +411,9 @@
         "mise en œuvre",
         "collectivités locales",
         "transports terrestres",
-        "taxe véhicules"
+        "taxe véhicules",
+        "direction générale",
+        "administration compétente"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Taxe sur les véhicules à moteur",
@@ -388,7 +426,8 @@
         "Abrogés."
       ],
       "mots_cles": [
-        "abrogation"
+        "abrogation",
+        "taxes facultatives abrogées"
       ],
       "statut": "abrogé",
       "section": "Section 4 : Taxe sur les véhicules à moteur",

@@ -25,7 +25,9 @@
         "CAMU",
         "contribution solidarité",
         "couverture assurance maladie universelle",
-        "affectation ressources"
+        "affectation ressources",
+        "loi finances 2021",
+        "santé publique"
       ],
       "statut": "en vigueur"
     },
@@ -43,7 +45,8 @@
         "personnes morales",
         "exploitants individuels",
         "hauts revenus",
-        "500 000 FCFA"
+        "500 000 FCFA",
+        "fraction revenu supérieure"
       ],
       "statut": "en vigueur"
     },
@@ -60,7 +63,9 @@
         "assiette CAMU",
         "patente",
         "fraction revenu",
-        "exonérés patente assujettis"
+        "exonérés patente assujettis",
+        "montant patente liquidée",
+        "base imposition CAMU"
       ],
       "statut": "en vigueur"
     },
@@ -72,7 +77,8 @@
       ],
       "mots_cles": [
         "taux CAMU",
-        "0,5%"
+        "0,5%",
+        "taux contribution solidarité"
       ],
       "statut": "en vigueur"
     },
@@ -89,7 +95,9 @@
         "déclaration spontanée",
         "comptable public",
         "retenue source",
-        "organe payeur"
+        "organe payeur",
+        "résidence fiscale",
+        "paiement spontané"
       ],
       "statut": "en vigueur"
     },
@@ -106,7 +114,8 @@
         "défaut déclaration",
         "paiement tardif",
         "sanctions patente",
-        "sanctions retenue source"
+        "sanctions retenue source",
+        "pénalités CAMU"
       ],
       "statut": "en vigueur"
     },
@@ -120,7 +129,8 @@
         "contentieux CAMU",
         "assiette",
         "recouvrement",
-        "CGI"
+        "CGI",
+        "réclamation fiscale"
       ],
       "statut": "en vigueur"
     }

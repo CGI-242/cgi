@@ -23,7 +23,10 @@
       "mots_cles": [
         "taxe emballages",
         "emballages non récupérables",
-        "ENR"
+        "ENR",
+        "loi finances 2025",
+        "institution taxe",
+        "environnement"
       ],
       "statut": "en vigueur"
     },
@@ -41,7 +44,8 @@
         "sacs",
         "pochettes",
         "pots",
-        "cornets"
+        "cornets",
+        "production locale importation"
       ],
       "statut": "en vigueur"
     },
@@ -54,7 +58,8 @@
       "mots_cles": [
         "personnes assujetties",
         "importateurs",
-        "producteurs locaux"
+        "producteurs locaux",
+        "redevables taxe emballages"
       ],
       "statut": "en vigueur"
     },
@@ -67,7 +72,8 @@
       "mots_cles": [
         "exemptions",
         "emballages papier",
-        "biodégradable"
+        "biodégradable",
+        "exonération emballages verts"
       ],
       "statut": "en vigueur"
     },
@@ -80,7 +86,9 @@
       "mots_cles": [
         "affectation",
         "collectivités locales",
-        "ordures ménagères"
+        "ordures ménagères",
+        "enlèvement déchets",
+        "financement local"
       ],
       "statut": "en vigueur"
     },
@@ -94,7 +102,9 @@
         "liquidation",
         "paiement",
         "cordon douanier",
-        "administration fiscale"
+        "administration fiscale",
+        "importateurs douane",
+        "producteurs fiscalité"
       ],
       "statut": "en vigueur"
     },
@@ -107,7 +117,8 @@
       "mots_cles": [
         "base imposable",
         "valeur douane",
-        "prix sortie usine"
+        "prix sortie usine",
+        "assiette taxe emballages"
       ],
       "statut": "en vigueur"
     },
@@ -119,7 +130,8 @@
       ],
       "mots_cles": [
         "taux taxe",
-        "1%"
+        "1%",
+        "taux emballages non récupérables"
       ],
       "statut": "en vigueur"
     },
@@ -132,7 +144,8 @@
       "mots_cles": [
         "contrôle",
         "sanctions",
-        "modalités TVA"
+        "modalités TVA",
+        "pénalités emballages"
       ],
       "statut": "en vigueur"
     }

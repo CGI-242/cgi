@@ -25,7 +25,8 @@
         "vols internationaux",
         "contribution solidarité",
         "financement développement",
-        "santé"
+        "santé",
+        "loi finances 2007"
       ],
       "statut": "en vigueur"
     },
@@ -39,7 +40,8 @@
         "champ application",
         "contribution solidarité",
         "billets avion",
-        "passagers"
+        "passagers",
+        "transport aérien international"
       ],
       "statut": "en vigueur"
     },
@@ -56,7 +58,8 @@
         "transporteur aérien",
         "embarquement Congo",
         "vol affrété",
-        "aéronef personnel"
+        "aéronef personnel",
+        "passager correspondance exclu"
       ],
       "statut": "en vigueur"
     },
@@ -71,7 +74,8 @@
       "mots_cles": [
         "taux taxe",
         "classe première affaires 6 000 F",
-        "classe économique 3 000 F"
+        "classe économique 3 000 F",
+        "barème billets avion"
       ],
       "statut": "en vigueur"
     },
@@ -86,7 +90,8 @@
         "droit timbre fiscal",
         "receveur enregistrement domaines",
         "compte contribution solidarité",
-        "Banque centrale"
+        "Banque centrale",
+        "reversement trésor"
       ],
       "statut": "en vigueur"
     },
@@ -98,7 +103,8 @@
       ],
       "mots_cles": [
         "modalités application",
-        "voie réglementaire"
+        "voie réglementaire",
+        "dispositions application"
       ],
       "statut": "en vigueur"
     }

@@ -22,7 +22,9 @@
       "mots_cles": [
         "NIU",
         "numéro identification unique",
-        "institution"
+        "institution",
+        "décret 2004-469",
+        "immatriculation fiscale"
       ],
       "statut": "en vigueur"
     },
@@ -40,7 +42,9 @@
         "DGI",
         "banque données",
         "personnes physiques morales",
-        "formalités économiques"
+        "formalités économiques",
+        "territoire national",
+        "transactions économiques"
       ],
       "statut": "en vigueur"
     },
@@ -56,7 +60,9 @@
         "clé connexion",
         "échange informations",
         "applications informatiques",
-        "interconnexion"
+        "interconnexion",
+        "ministère finances budget",
+        "traitement automatisé"
       ],
       "statut": "en vigueur"
     },
@@ -70,7 +76,8 @@
         "fichiers manuels",
         "archives",
         "actualisation",
-        "inscription NIU"
+        "inscription NIU",
+        "tenue registres"
       ],
       "statut": "en vigueur"
     },
@@ -82,7 +89,8 @@
       ],
       "mots_cles": [
         "modalités délivrance",
-        "arrêté ministre finances"
+        "arrêté ministre finances",
+        "procédure attribution NIU"
       ],
       "statut": "en vigueur"
     },
@@ -95,7 +103,8 @@
       "mots_cles": [
         "dispositions finales",
         "abrogation",
-        "publication JO"
+        "publication JO",
+        "entrée vigueur"
       ],
       "statut": "en vigueur"
     }

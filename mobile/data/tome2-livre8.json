@@ -22,7 +22,10 @@
       "mots_cles": [
         "postes",
         "communications électroniques",
-        "loi de finances 2011"
+        "loi de finances 2011",
+        "loi de finances 2019",
+        "droits taxes redevances",
+        "secteur télécom"
       ],
       "statut": "en vigueur"
     },
@@ -35,7 +38,9 @@
       "mots_cles": [
         "redevance",
         "aviation civile",
-        "loi de finances 2012"
+        "loi de finances 2012",
+        "transport aérien",
+        "droits domaines État"
       ],
       "statut": "en vigueur"
     },
@@ -48,7 +53,10 @@
       "mots_cles": [
         "fiscalité domaniale",
         "loi n°9-2004",
-        "Code du domaine de l'État"
+        "Code du domaine de l'État",
+        "26 novembre 2004",
+        "domaine public privé",
+        "biens immobiliers État"
       ],
       "statut": "en vigueur"
     },
@@ -62,7 +70,10 @@
         "fiscalité foncière",
         "loi n°26-2022",
         "propriété immobilière",
-        "immatriculation"
+        "immatriculation",
+        "25 mai 2022",
+        "droits fonciers",
+        "titre foncier"
       ],
       "statut": "en vigueur"
     },
@@ -75,7 +86,10 @@
       "mots_cles": [
         "fiscalité minière",
         "loi n°4-2005",
-        "Code minier"
+        "Code minier",
+        "11 avril 2005",
+        "exploitation mines",
+        "redevances minières"
       ],
       "statut": "en vigueur"
     },
@@ -88,7 +102,10 @@
       "mots_cles": [
         "fiscalité des hydrocarbures",
         "loi n°2016-28",
-        "Code des hydrocarbures"
+        "Code des hydrocarbures",
+        "12 octobre 2016",
+        "pétrole gaz",
+        "redevances pétrolières"
       ],
       "statut": "en vigueur"
     },
@@ -101,7 +118,10 @@
       "mots_cles": [
         "fiscalité forestière",
         "loi n°33-2020",
-        "Code forestier"
+        "Code forestier",
+        "8 juillet 2020",
+        "exploitation forestière",
+        "redevances forestières"
       ],
       "statut": "en vigueur"
     }

@@ -56,7 +56,10 @@
         "centimes additionnels",
         "patente",
         "collectivités locales",
-        "chambres de commerce"
+        "chambres de commerce",
+        "enlèvement ordures ménagères",
+        "financement fonctionnement",
+        "impôts locaux"
       ],
       "statut": "en vigueur"
     },
@@ -71,7 +74,11 @@
         "taux",
         "centimes additionnels",
         "7 %",
-        "ministre des finances"
+        "ministre des finances",
+        "patente licences",
+        "arrêté annuel",
+        "maxima taux",
+        "15 janvier"
       ],
       "statut": "en vigueur"
     },
@@ -89,7 +96,10 @@
         "centimes additionnels",
         "5 %",
         "chambres de commerce",
-        "collectivités locales"
+        "collectivités locales",
+        "20% chambres commerce",
+        "80% collectivités locales",
+        "montant principal patente"
       ],
       "statut": "en vigueur"
     },

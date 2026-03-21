@@ -28,7 +28,8 @@
         "prestations services",
         "travaux",
         "État",
-        "collectivités locales"
+        "collectivités locales",
+        "établissements publics"
       ],
       "statut": "en vigueur"
     },
@@ -45,7 +46,8 @@
         "exclusions",
         "personnes morales IS",
         "compagnies pétrolières",
-        "paiements étranger"
+        "paiements étranger",
+        "impôt sociétés exclu"
       ],
       "statut": "en vigueur"
     },
@@ -58,7 +60,8 @@
       "mots_cles": [
         "taux retenue",
         "10%",
-        "montant HT"
+        "montant HT",
+        "retenue 10% Trésor"
       ],
       "statut": "en vigueur"
     },
@@ -71,7 +74,8 @@
       "mots_cles": [
         "modalités perception",
         "quittance",
-        "bénéficiaire paiement"
+        "bénéficiaire paiement",
+        "justificatif retenue"
       ],
       "statut": "en vigueur"
     },
@@ -88,7 +92,8 @@
         "quittances",
         "excédent",
         "trois ans",
-        "report"
+        "report",
+        "crédit impôt"
       ],
       "statut": "en vigueur"
     },
@@ -107,7 +112,8 @@
         "20 du mois",
         "listing",
         "NIU",
-        "résidence fiscale"
+        "résidence fiscale",
+        "état mensuel retenues"
       ],
       "statut": "en vigueur"
     },
