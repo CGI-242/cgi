@@ -165,7 +165,7 @@ export default function SimulateurHub() {
               >
                 <Ionicons name={sim.icon} size={24} color={colors.primary} />
               </View>
-              <Text style={[styles.cardTitle, { color: colors.primary }]}>{sim.title}</Text>
+              <Text style={[styles.cardTitle, { color: "#1A3A5C" }]}>{sim.title}</Text>
               <View style={[styles.badge, { backgroundColor: `${colors.primary}20` }]}>
                 <Text style={[styles.badgeText, { color: colors.primary }]}>CGI 2026</Text>
               </View>
