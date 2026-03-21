@@ -4,6 +4,7 @@ import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { registerPushBody, unregisterPushBody } from "../schemas/notifications.schema";
 import { PushService } from "../services/push.service";
+import prisma from "../utils/prisma";
 
 const router = Router();
 
@@ -65,6 +66,55 @@ router.delete("/unregister", requireAuth, validate({ body: unregisterPushBody })
   const { token } = req.body;
   await PushService.unregisterToken(token);
   res.json({ message: "Token supprimé" });
+}));
+
+/**
+ * @swagger
+ * /notifications/devices:
+ *   get:
+ *     tags: [Notifications]
+ *     summary: Lister les appareils enregistrés pour les push
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Liste des appareils
+ */
+router.get("/devices", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const devices = await prisma.pushToken.findMany({
+    where: { userId: req.userId! },
+    select: {
+      id: true,
+      platform: true,
+      createdAt: true,
+      updatedAt: true,
+    },
+    orderBy: { updatedAt: "desc" },
+  });
+
+  res.json({ devices, count: devices.length });
+}));
+
+/**
+ * @swagger
+ * /notifications/test:
+ *   post:
+ *     tags: [Notifications]
+ *     summary: Envoyer une notification de test à ses propres appareils
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Notification de test envoyée
+ */
+router.post("/test", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  await PushService.sendToUser(
+    req.userId!,
+    "Test CGI 242",
+    "Les notifications push fonctionnent correctement !",
+    { type: "test" },
+  );
+  res.json({ message: "Notification de test envoyée" });
 }));
 
 export default router;

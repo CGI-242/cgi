@@ -51,7 +51,7 @@ export async function checkExpiringSubscriptions(): Promise<{ sent: number; erro
             include: {
               members: {
                 where: { role: { in: ['OWNER', 'ADMIN'] } },
-                include: { user: { select: { email: true } } },
+                include: { user: { select: { id: true, email: true } } },
               },
             },
           },
@@ -70,7 +70,7 @@ export async function checkExpiringSubscriptions(): Promise<{ sent: number; erro
             })
           : 'inconnue';
 
-        // Envoyer aux OWNER et ADMIN de l'org
+        // Envoyer aux OWNER et ADMIN de l'org (email + push)
         for (const member of sub.organization.members) {
           try {
             await EmailService.sendSubscriptionReminder(
@@ -80,6 +80,15 @@ export async function checkExpiringSubscriptions(): Promise<{ sent: number; erro
               expiryDate,
               threshold.days,
             );
+
+            // Push notification
+            await PushService.sendSubscriptionExpiringPush(
+              member.user.id,
+              orgName,
+              sub.plan,
+              threshold.days,
+            );
+
             result.sent++;
           } catch (err) {
             logger.error(`Erreur envoi rappel à ${member.user.email}:`, err);
@@ -318,6 +327,11 @@ async function runAllReminders(): Promise<void> {
   try {
     await checkExpiringSubscriptions();
     await checkFiscalDeadlines();
+
+    // Nettoyage tokens push obsolètes le dimanche
+    if (new Date().getDay() === 0) {
+      await PushService.cleanupStaleTokens();
+    }
   } catch (err) {
     logger.error('Erreur exécution rappels:', err);
   }

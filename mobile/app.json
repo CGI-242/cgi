@@ -58,7 +58,9 @@
         "expo-notifications",
         {
           "icon": "./assets/icon.png",
-          "color": "#1A3A5C"
+          "color": "#1A3A5C",
+          "defaultChannel": "general",
+          "sounds": []
         }
       ],
       "expo-localization"

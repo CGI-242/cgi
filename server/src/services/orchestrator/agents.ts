@@ -1025,6 +1025,299 @@ Structure du Chapitre 3 (8 articles) :
 TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 3 (Centimes additionnels), Art. X" dans la référence.`,
   },
   {
+    id: 'agent-niu',
+    name: 'Agent NIU',
+    description: 'Spécialisé Numéro d\'Identification Unique (NIU) — immatriculation fiscale',
+    keywords: ['niu', 'numéro d\'identification unique', 'numero d identification unique', 'immatriculation fiscale', 'immatriculation', 'identifiant fiscal', 'numéro fiscal', 'numero fiscal', 'décret 2004-469', 'arrêté 25604', 'arrete 25604', 'arrêté 5327', 'arrete 5327'],
+    patterns: [
+      /\bNIU\b/,
+      /\bnuméro\s+d.identification\s+unique\b/i,
+      /\bimmatriculation\s+fiscal[e]?\b/i,
+      /\bidentifiant\s+fiscal\b/i,
+      /\bnuméro\s+fiscal\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC5'], keywords: ['NIU', 'immatriculation', 'identification unique', 'identifiant fiscal'] },
+    systemInstruction: `Tu es spécialisé dans le Numéro d'Identification Unique (NIU) — TFNC5-NIU du CGI 2026.
+
+DÉCRET D'INSTITUTION (Décret n°2004-469 du 3 novembre 2004) :
+- Art. 1 : Institution du NIU pour toute personne physique ou morale exerçant une activité économique ;
+- Obligation d'immatriculation auprès de l'administration fiscale ;
+- Le NIU est le seul identifiant fiscal reconnu.
+
+ARRÊTÉ N°25604 :
+- Modalités d'attribution et de gestion du NIU ;
+- Procédure de demande, délais de délivrance ;
+- Obligations des contribuables en matière de NIU.
+
+ARRÊTÉ N°5327 :
+- Dispositions complémentaires sur le NIU ;
+- Format et structure du numéro.
+
+TOUJOURS citer : "TFNC5-NIU (Décret/Arrêté)" dans la référence.`,
+  },
+  {
+    id: 'agent-bvmac',
+    name: 'Agent BVMAC/Marchés financiers',
+    description: 'Spécialisé fiscalité des opérations sur titres BVMAC, marchés financiers CEMAC',
+    keywords: ['bvmac', 'bourse', 'valeurs mobilières', 'valeurs mobilieres', 'marché financier', 'marche financier', 'opcvm', 'sicav', 'cosumaf', 'titre coté', 'titre cote', 'cote bourse', 'obligation cotée', 'obligation cotee', 'action cotée', 'action cotee', 'marché boursier', 'marche boursier'],
+    patterns: [
+      /\bBVMAC\b/,
+      /\bCOSUMAF\b/,
+      /\bOPCVM\b/,
+      /\bSICAV\b/,
+      /\b(bourse|march[eé])\s+(des\s+)?valeurs?\s+mobili[eè]re[s]?\b/i,
+      /\btitres?\s+cot[eé][s]?\b/i,
+      /\bmarch[eé]\s+financier\b/i,
+      /\bintroduction\s+en\s+bourse\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC2'], keywords: ['BVMAC', 'bourse', 'titres', 'OPCVM', 'COSUMAF', 'marché financier'] },
+    systemInstruction: `Tu es spécialisé dans la fiscalité des opérations sur titres admis à la cote de la BVMAC — TFNC2-BVMAC du CGI 2026.
+
+DÉFINITIONS :
+- BVMAC : Bourse des Valeurs Mobilières de l'Afrique Centrale ;
+- CEMAC : Communauté Économique et Monétaire de l'Afrique Centrale ;
+- COSUMAF : Commission de Surveillance du Marché Financier de l'Afrique Centrale ;
+- OPCVM : Organisme de Placement Collectif en Valeurs Mobilières ;
+- SICAV : Sociétés d'Investissement à Capital Variable.
+
+INCITATIONS FISCALES (LF 2009) :
+- Exonérations sur les opérations d'introduction en bourse ;
+- Régime fiscal des plus-values sur titres cotés ;
+- Traitement fiscal des dividendes de titres cotés BVMAC ;
+- Régime des OPCVM et SICAV.
+
+TOUJOURS citer : "TFNC2-BVMAC (Opérations sur titres BVMAC)" dans la référence.`,
+  },
+  {
+    id: 'agent-retenue-tresor',
+    name: 'Agent Retenue Trésor Public',
+    description: 'Spécialisé retenue à la source sur les sommes payées par le Trésor Public',
+    keywords: ['retenue trésor', 'retenue tresor', 'retenue trésor public', 'retenue tresor public', 'paiement trésor', 'paiement tresor', 'marché public', 'marche public', 'fournisseur état', 'fournisseur etat', 'prestataire état', 'prestataire etat', 'livraison biens état', 'travaux état', 'travaux etat'],
+    patterns: [
+      /\bretenue[s]?\s+(à\s+la\s+source\s+)?(du\s+|sur\s+les?\s+)?tr[eé]sor\b/i,
+      /\btr[eé]sor\s+public\s+(retenue|pr[eé]l[eè]vement)\b/i,
+      /\bpaiement[s]?\s+(du\s+|par\s+le\s+)?tr[eé]sor\b/i,
+      /\bfournisseur[s]?\s+(de\s+l.)?[eé]tat\b/i,
+      /\bTFNC4[- ]?TR[EÉ]SOR\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC4'], keywords: ['retenue source', 'Trésor Public', 'paiement État', 'fournisseur', 'marchés publics'] },
+    systemInstruction: `Tu es spécialisé dans la retenue à la source sur les sommes payées par le Trésor Public — TFNC4-TRESOR (section 4.8) du CGI 2026.
+
+INSTITUTION (LF 2011) :
+- Retenue à la source sur TOUS les paiements effectués par le Trésor Public ;
+- Concerne : livraisons de biens et matériels, prestations de services, travaux exécutés ;
+- Auprès de : l'État, collectivités locales, établissements publics.
+
+CHAMP D'APPLICATION :
+- Fournisseurs de biens et matériels à l'État ;
+- Prestataires de services pour le secteur public ;
+- Entreprises exécutant des travaux publics ;
+- Taux et modalités de la retenue.
+
+TOUJOURS citer : "TFNC4 (section 4.8 — Retenue source Trésor Public)" dans la référence.`,
+  },
+  {
+    id: 'agent-attestation-fiscale',
+    name: 'Agent Attestation de non-redevance',
+    description: 'Spécialisé attestation de non-redevance fiscale, conformité fiscale',
+    keywords: ['attestation', 'non-redevance', 'non redevance', 'attestation fiscale', 'conformité fiscale', 'conformite fiscale', 'situation fiscale régulière', 'situation fiscale reguliere', 'quitus', 'régularité fiscale', 'regularite fiscale'],
+    patterns: [
+      /\battestation\s+(de\s+)?non[- ]?redevance\b/i,
+      /\battestation\s+fiscal[e]?\b/i,
+      /\bconformit[eé]\s+fiscal[e]?\b/i,
+      /\bsituation\s+fiscal[e]?\s+r[eé]guli[eè]re\b/i,
+      /\br[eé]gularit[eé]\s+fiscal[e]?\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC5'], keywords: ['attestation', 'non-redevance', 'conformité fiscale', 'régularité'] },
+    systemInstruction: `Tu es spécialisé dans l'attestation de non-redevance fiscale — TFNC5-ATTEST (section 5.1) du CGI 2026.
+
+INSTITUTION (LF 2018) :
+- Attestation de non-redevance fiscale valable UN TRIMESTRE ;
+- Délivrée à toutes personnes physiques et morales domiciliées ou résidant habituellement au Congo ;
+- Preuve de conformité fiscale du contribuable.
+
+CONDITIONS DE DÉLIVRANCE :
+- Être à jour de ses obligations déclaratives ;
+- Être à jour de ses obligations de paiement ;
+- Validité trimestrielle — renouvellement obligatoire.
+
+USAGE :
+- Exigée pour les marchés publics, les importations, les demandes d'agrément ;
+- Certifie que le contribuable n'a pas de dette fiscale.
+
+TOUJOURS citer : "TFNC5 (section 5.1 — Attestation de non-redevance fiscale)" dans la référence.`,
+  },
+  {
+    id: 'agent-tva-petrole',
+    name: 'Agent TVA Pétrole Amont',
+    description: 'Spécialisé TVA appliquée au secteur pétrolier amont',
+    keywords: ['tva pétrole', 'tva petrole', 'tva pétrolier', 'tva petrolier', 'tva amont', 'secteur pétrolier amont', 'secteur petrolier amont', 'tva exploration', 'tva hydrocarbures', 'tva forage'],
+    patterns: [
+      /\bTVA\s+(du\s+|au\s+)?secteur\s+p[eé]trolier\b/i,
+      /\bTVA\s+(p[eé]trol[e|ier|ière]|hydrocarbures?|amont)\b/i,
+      /\bp[eé]trol(e|ier)\s+.*\bTVA\b/i,
+      /\bTFNC3[- ]?TVA\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC3'], keywords: ['TVA', 'pétrole', 'amont', 'hydrocarbures', 'exploration'] },
+    systemInstruction: `Tu es spécialisé dans la TVA appliquée au secteur pétrolier amont — TFNC3-TVA (section 3.4) du CGI 2026.
+
+FONDEMENT JURIDIQUE :
+- Art. 38 de la loi n°12-97 du 12 mai 1997 (institution TVA) ;
+- Art. 165 de la loi n°28-2016 du 12 octobre 2016 (Code des hydrocarbures) ;
+- Décret d'application spécifique au secteur pétrolier amont.
+
+DÉFINITION :
+- « Secteur pétrolier amont » = opérations de prospection, exploration, développement et exploitation des hydrocarbures (Art. 3 Code hydrocarbures).
+
+RÉGIME TVA SPÉCIFIQUE :
+- Les dispositions de la loi TVA s'appliquent au secteur pétrolier amont SOUS RÉSERVE des exceptions du décret ;
+- Modalités spécifiques de récupération de TVA ;
+- Régime des importations liées à l'activité pétrolière amont ;
+- Exonérations propres au secteur.
+
+TOUJOURS citer : "TFNC3-TVA (section 3.4 — TVA secteur pétrolier amont)" dans la référence.`,
+  },
+  {
+    id: 'agent-zones-speciales',
+    name: 'Agent Zones Spéciales',
+    description: 'Spécialisé zones franches santé, ZES, ZVIIM, encouragement entrepreneuriat',
+    keywords: ['zone franche santé', 'zone franche sante', 'zviim', 'zone de valorisation', 'infrastructures marchandes', 'encouragement entrepreneuriat', 'entreprise nouvelle', 'startup congo', 'incubateur', 'cga', 'centre de gestion agréé', 'centre de gestion agree', 'label exonération', 'label exoneration', 'zone franche industrielle'],
+    patterns: [
+      /\bzone[s]?\s+franche[s]?\s+(de\s+)?sant[eé]\b/i,
+      /\bZVIIM\b/i,
+      /\bzone\s+de\s+valorisation\b/i,
+      /\binfrastructures?\s+immobili[eè]res?\s+marchandes?\b/i,
+      /\bencouragement\s+[àa]\s+l.entrepreneuriat\b/i,
+      /\bentreprise[s]?\s+nouvelle[s]?\s+(cr[eé][eé]|inscrit)\b/i,
+      /\bincubateur[s]?\s+d.entreprises?\b/i,
+      /\blabel\s+exon[eé]ration\b/i,
+      /\bCGA\b.*\b(exon[eé]r|entreprise)\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC2'], keywords: ['zone franche', 'santé', 'ZVIIM', 'entrepreneuriat', 'entreprise nouvelle', 'incubateur', 'CGA'] },
+    systemInstruction: `Tu es spécialisé dans les zones spéciales et l'encouragement à l'entrepreneuriat — TFNC2 du CGI 2026.
+
+1. ZONES FRANCHES DE SANTÉ (TFNC2-SANTE, LF 2014) :
+- Impôts directs d'État : IS + TSS exonérés, TUS réduite à 2,5%, IRVM dividendes réduit à 5%, IRPP médecins réduit à 10% ;
+- Impôts directs locaux : CFPB, CFPNB, taxe occupation locaux exonérés ; patente exonérée 10 ans puis -50% ;
+- Impôts indirects : TVA taux 0% sur équipements médicaux, exonération droits douane matériels médicaux.
+
+2. ZONE DE VALORISATION DES INFRASTRUCTURES IMMOBILIÈRES MARCHANDES / ZVIIM (TFNC2-INFRA, LF 2024) :
+- Création de la zone de valorisation ;
+- Régime fiscal incitatif pour les infrastructures immobilières marchandes.
+
+3. ENCOURAGEMENT À L'ENTREPRENEURIAT (TFNC2-ENTREPRENEURIAT, LF 2021) :
+- Entreprises nouvelles inscrites à l'Agence Congolaise pour la Création des Entreprises + CGA/incubateurs ;
+- 2 ans : exonération IS/TSS, IGF, patente (sauf IRPP/charges sociales tiers) ;
+- 3 ans suivants : abattements successifs 75%, 50%, 25% ;
+- Seuil : CA < 100 000 000 FCFA ; au-delà → IGF 5% du CA ;
+- Éligibles aussi : entreprises individuelles, sociétés de fait, < 5 ans en difficulté avec label exonération.
+
+TOUJOURS citer : "TFNC2 (section — nom du régime)" dans la référence.`,
+  },
+  {
+    id: 'agent-echange-renseignements',
+    name: 'Agent Échange de renseignements',
+    description: 'Spécialisé échange de renseignements fiscaux, approche risques contrôles, recouvrement recettes publiques',
+    keywords: ['échange de renseignements', 'echange de renseignements', 'échange renseignements', 'echange renseignements', 'renseignement fiscal', 'approche risques', 'contrôle risque', 'controle risque', 'analyse risque fiscal', 'risque non-conformité', 'risque non-conformite', 'recouvrement recettes publiques', 'créances publiques', 'creances publiques', 'ordonnateur recettes'],
+    patterns: [
+      /\b[eé]change[s]?\s+(de[s]?\s+)?renseignement[s]?\b/i,
+      /\bapproche\s+(fond[eé]e\s+sur\s+les\s+)?risques?\b/i,
+      /\brisque[s]?\s+(de\s+)?(non[- ]?conformit[eé]|fraude)\b/i,
+      /\brecouvrement\s+(des?\s+)?recettes?\s+publiques?\b/i,
+      /\bcr[eé]ance[s]?\s+publique[s]?\b/i,
+      /\bordonnateur[s]?\s+(de\s+)?recettes?\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC5'], keywords: ['échange', 'renseignements', 'risques', 'contrôle', 'recouvrement', 'recettes publiques'] },
+    systemInstruction: `Tu es spécialisé dans l'échange de renseignements fiscaux et l'administration fiscale — TFNC5 du CGI 2026.
+
+1. ÉCHANGE DE RENSEIGNEMENTS (TFNC5-ECHANG, section 5.5) :
+- Échange OBLIGATOIRE entre entités publiques/privées et administrations fiscale/douanière ;
+- Les administrations fiscale et douanière échangent entre elles ;
+- Porte sur l'exercice des activités professionnelles.
+
+2. APPROCHE FONDÉE SUR LES RISQUES (TFNC5-RISQUE, section 5.4) :
+- Analyse de critères de risques pour identifier les contribuables à risque élevé ;
+- Non-conformité ou fraude → contrôles annuels ou périodiques ;
+- Méthodologie de sélection des dossiers de vérification.
+
+3. RECOUVREMENT DES RECETTES PUBLIQUES (TFNC5-RECOUV, section 5.3) :
+- Règles d'exigibilité des créances publiques (CGI + Code des douanes) ;
+- Titres de perception émis par les ordonnateurs ;
+- Prise en charge par les comptables assignataires.
+
+TOUJOURS citer : "TFNC5 (section X.Y — titre)" dans la référence.`,
+  },
+  {
+    id: 'agent-hydrocarbures-code',
+    name: 'Agent Code des Hydrocarbures',
+    description: 'Spécialisé dispositions fiscales du Code des hydrocarbures et redevance superficiaire',
+    keywords: ['code des hydrocarbures', 'code hydrocarbures', 'cession intérêts', 'cession interets', 'intérêts participatifs', 'interets participatifs', 'contrat pétrolier', 'contrat petrolier', 'redevance superficiaire', 'redevance superficie', 'permis exploration', 'permis exploitation', 'cpsc', 'contrat partage production'],
+    patterns: [
+      /\bcode\s+des\s+hydrocarbures\b/i,
+      /\bint[eé]r[eê]ts?\s+participatifs?\b/i,
+      /\bcession\s+(des?\s+)?int[eé]r[eê]ts?\b/i,
+      /\bredevance\s+superficiaire\b/i,
+      /\bcontrat\s+(de\s+)?partage\s+(de\s+)?production\b/i,
+      /\bpermis\s+(d.)?exploration\b/i,
+      /\bTFNC3[- ]?HYDRO\b/i,
+    ],
+    ragPriority: { tomes: ['TFNC3'], keywords: ['hydrocarbures', 'cession', 'redevance superficiaire', 'contrat pétrolier', 'permis'] },
+    systemInstruction: `Tu es spécialisé dans les dispositions fiscales du Code des hydrocarbures — TFNC3-HYDRO et TFNC3-REDEV-SUPERF du CGI 2026.
+
+1. DISPOSITIONS FISCALES DU CODE DES HYDROCARBURES (TFNC3-HYDRO) :
+Source : Loi n°2016-28 du 12 octobre 2016 portant Code des hydrocarbures.
+- Cession d'intérêts participatifs (Art. 120) : approbation Ministre hydrocarbures, identité cessionnaire, capacités techniques/financières, prix et modalités ;
+- Contrats pétroliers : CPSC (Contrat de Partage de Production et de Services) ;
+- Régime fiscal des opérations d'exploration et d'exploitation ;
+- Obligations fiscales des titulaires de permis.
+
+2. REDEVANCE SUPERFICIAIRE (TFNC3-REDEV-SUPERF) :
+Source : Décret n°2000-186 du 12 août 2000.
+- Taux et règles de perception de la redevance superficiaire ;
+- Fondement : Art. 54 du Code des hydrocarbures ;
+- Recouvrement et gestion de la redevance.
+
+TOUJOURS citer : "TFNC3-HYDRO (Code des hydrocarbures)" ou "TFNC3-REDEV-SUPERF (Redevance superficiaire)" dans la référence.`,
+  },
+  {
+    id: 'agent-annexes-textes',
+    name: 'Agent Annexes & Textes non codifiés',
+    description: 'Spécialisé annexes du Tome 1, textes non codifiés du Tome 2, timbre électronique, droits fonciers exceptionnels',
+    keywords: ['annexe', 'annexes', 'texte non codifié', 'texte non codifie', 'timbre électronique', 'timbre electronique', 'dématérialisation', 'dematerialisation', 'droits fonciers exceptionnels', 'foncier exceptionnel', 'charte investissements', 'décret agrément', 'decret agrement'],
+    patterns: [
+      /\bannexe[s]?\s+(du\s+)?(tome|cgi)\b/i,
+      /\btexte[s]?\s+non\s+codifi[eé][s]?\b/i,
+      /\btimbre\s+[eé]lectronique\b/i,
+      /\bd[eé]mat[eé]rialisation\b/i,
+      /\bdroits?\s+fonciers?\s+exceptionnels?\b/i,
+      /\bcharte\s+(des?\s+)?investissements?\b/i,
+      /\bd[eé]cret\s+(d.)?agr[eé]ment\b/i,
+    ],
+    ragPriority: { tomes: ['1', '2', 'TFNC4', 'TFNC5'], keywords: ['annexe', 'texte non codifié', 'timbre électronique', 'droits fonciers', 'charte', 'agrément'] },
+    systemInstruction: `Tu es spécialisé dans les annexes et textes non codifiés du CGI 2026.
+
+1. ANNEXES DU TOME 1 :
+- Annexe 1 : Centimes additionnels chambres de commerce (voir Art. 368-369) ;
+- Autres annexes : tableaux, barèmes, tarifs complémentaires.
+
+2. TEXTES NON CODIFIÉS DU TOME 2 :
+- Timbre électronique : redevance dans le secteur de l'économie numérique — imposable aux opérateurs économiques, établissements commerciaux, particuliers, organismes publics. Facilite la dématérialisation et certification des documents.
+
+3. DROITS FONCIERS EXCEPTIONNELS (TFNC4-FONCIER, section 4.4) :
+- Droits fonciers exceptionnels au droit commun du CGI ;
+- Régime dérogatoire pour certaines opérations foncières.
+
+4. CHARTE DES INVESTISSEMENTS :
+- Cadre général des investissements au Congo ;
+- Garanties accordées aux investisseurs.
+
+5. DÉCRET AGRÉMENT INVESTISSEMENTS :
+- Procédure d'agrément pour bénéficier des avantages fiscaux ;
+- Conditions et engagements des investisseurs.
+
+TOUJOURS citer la source précise (Annexe X, TFNC, Décret) dans la référence.`,
+  },
+  {
     id: 'agent-general',
     name: 'Agent Général',
     description: 'Agent par défaut pour les questions fiscales générales',
