@@ -82,7 +82,7 @@ export default function AuditFacturePage() {
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.background }}>
-      <View style={{ maxWidth: 860, alignSelf: "center", width: "100%", padding: isMobile ? 14 : 24 }}>
+      <View style={{ flex: 1, padding: isMobile ? 14 : 20 }}>
         {/* Header */}
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 20, color: colors.text, marginBottom: 4 }}>
           Audit Documents
