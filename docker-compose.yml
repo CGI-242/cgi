@@ -70,7 +70,7 @@ services:
 
   # --- Qdrant (base vectorielle) ---
   qdrant:
-    image: qdrant/qdrant:v1.14.0
+    image: qdrant/qdrant:v1.17.0
     container_name: cgi242-qdrant
     restart: unless-stopped
     volumes:
