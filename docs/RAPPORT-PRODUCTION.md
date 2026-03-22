@@ -149,7 +149,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 - i18n : Francais + Anglais
 - Responsive : Desktop + Tablette + Mobile
 - Calculatrice flottante
-- **Nouveau logo NT** (Midjourney) : favicon, icon, splash, adaptive-icon
+- **Logo N dore** : favicon, icon, splash, adaptive-icon (NT Midjourney teste puis restaure au N)
 - Palette : Bleu nuit #1A3A5C + Or #D4A843
 
 ---
@@ -160,8 +160,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 
 | Fonctionnalite | Detail |
 |----------------|--------|
-| Paiement en ligne | Pas de provider connecte (Stripe, PayDunya). Paiement par Mobile Money manuel |
-| Reindexation Qdrant | Les donnees TVA corrigees ne sont pas reindexees. Le RAG utilise l'ancien index |
+| Paiement en ligne | Pas de provider connecte (Stripe, PayDunya). Formulaire contact integre au paywall |
 | SFEC validation avancee | Detection QR code/NIM basee sur l'absence visuelle, pas de decodage |
 
 ### 4.2 Priorite moyenne
@@ -169,10 +168,18 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | Fonctionnalite | Detail |
 |----------------|--------|
 | Export PDF audit | Generer un rapport PDF telechargeable du resultat d'audit |
-| Tableau de bord analytics | Page existe mais donnees limitees |
 | Code Social / Douanier / Hydrocarbures | Affiches comme "Bientot" — donnees non integrees |
 | App mobile native | Build Expo sur Google Play existe mais pas a jour — necessaire apres changements tarifs/plans |
 | Backup PostgreSQL automatique | Pas de cron backup en place |
+
+### 4.3 Fait (anciennement en attente)
+
+| Fonctionnalite | Fait le |
+|----------------|---------|
+| ~~Push notifications~~ | 21 mars — Expo Push complet, channels, rappels fiscaux + abo |
+| ~~Reindexation Qdrant~~ | 22 mars — 2371 points reindexes (Voyage AI), TVA corrigee |
+| ~~Tableau de bord analytics~~ | 22 mars — temps reponse IA, usage par feature, recherches populaires |
+| ~~Monitoring~~ | Sentry configure |
 
 ### 4.3 Priorite basse
 
