@@ -60,7 +60,7 @@ YouTube thumbnail, dark navy blue (#1A3A5C) background, gold (#D4A843) accent te
 
 **Contenu** :
 - Application mobile + web pour le Code Général des Impôts du Congo-Brazzaville, édition 2026
-- 2 235 articles fiscaux consultables (3 tomes + textes non codifiés)
+- 2 181 articles fiscaux consultables (3 tomes + textes non codifiés)
 - 16 simulateurs fiscaux interactifs
 - Assistant IA fiscal avec 36 agents spécialisés
 - Calendrier fiscal 2026 complet
@@ -70,7 +70,7 @@ YouTube thumbnail, dark navy blue (#1A3A5C) background, gold (#D4A843) accent te
 ---
 
 ### VIDEO 2 : Navigation dans le Code CGI
-**Titre suggéré** : "2 235 articles du CGI 2026 dans ta poche"
+**Titre suggéré** : "2 181 articles du CGI 2026 dans ta poche"
 
 **Contenu** :
 - **Tome 1** : Impôts directs d'État (IS, ITS, IBA, IRCM, IRF) + Impôts locaux (Patente, CFPB, CFPNB) + Sanctions + Contentieux + Recouvrement
@@ -112,7 +112,7 @@ Chaque simulateur : calcul en temps réel, référence articles CGI, export rés
 ---
 
 ### VIDEO 4 : L'assistant IA fiscal
-**Titre suggéré** : "Un expert fiscal IA qui connaît les 2 235 articles par coeur"
+**Titre suggéré** : "Un expert fiscal IA qui connaît les 2 181 articles par coeur"
 
 **Contenu** :
 - **36 agents spécialisés** qui se relaient selon la question :
