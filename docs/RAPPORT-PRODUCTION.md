@@ -170,7 +170,6 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | Export PDF audit | Generer un rapport PDF telechargeable du resultat d'audit |
 | Code Social / Douanier / Hydrocarbures | Affiches comme "Bientot" — donnees non integrees |
 | App mobile native | Build Expo sur Google Play existe mais pas a jour — necessaire apres changements tarifs/plans |
-| Backup PostgreSQL automatique | Pas de cron backup en place |
 
 ### 4.3 Fait (anciennement en attente)
 
@@ -180,6 +179,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | ~~Reindexation Qdrant~~ | 22 mars — 2371 points reindexes (Voyage AI), TVA corrigee |
 | ~~Tableau de bord analytics~~ | 22 mars — temps reponse IA, usage par feature, recherches populaires |
 | ~~Monitoring~~ | Sentry configure |
+| ~~Backup PostgreSQL~~ | 22 mars — cron quotidien 3h, retention 30 jours, compression gzip |
 
 ### 4.3 Priorite basse
 
