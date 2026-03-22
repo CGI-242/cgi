@@ -178,7 +178,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | ~~Push notifications~~ | 21 mars — Expo Push complet, channels, rappels fiscaux + abo |
 | ~~Reindexation Qdrant~~ | 22 mars — 2371 points reindexes (Voyage AI), TVA corrigee |
 | ~~Tableau de bord analytics~~ | 22 mars — temps reponse IA, usage par feature, recherches populaires |
-| ~~Monitoring~~ | Sentry configure |
+| ~~Monitoring~~ | Sentry + health-check cron 5min (API, Nginx, containers, disque, RAM) + auto-restart |
 | ~~Backup PostgreSQL~~ | 22 mars — cron quotidien 3h, retention 30 jours, compression gzip |
 
 ### 4.3 Priorite basse
