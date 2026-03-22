@@ -108,7 +108,7 @@ services:
       - cgi242-net
     # Healthcheck Nginx (B8)
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:80/"]
+      test: ["CMD", "curl", "-sf", "http://localhost:80/"]
       interval: 30s
       timeout: 5s
       retries: 3
