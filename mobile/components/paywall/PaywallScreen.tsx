@@ -1,8 +1,9 @@
-import { View, Text, TouchableOpacity, ScrollView, Linking, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, Linking, StyleSheet, Platform, Alert } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
+import { useToast } from "@/components/ui/ToastProvider";
 
 const PLANS = [
   { key: "free", questions: "5 total", audits: "3 total", price: "0", simulators: "16 (7j)" },
@@ -30,9 +31,37 @@ export default function PaywallScreen() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const logout = useAuthStore((s) => s.logout);
+  const { toast } = useToast();
 
-  const handleContact = () => {
-    Linking.openURL("mailto:facturation@normx-ai.com?subject=Souscription%20CGI242");
+  const PHONE = "+242053799959";
+  const EMAIL = "facturation@normx-ai.com";
+
+  const handleWhatsApp = async () => {
+    const url = `https://wa.me/${PHONE.replace(/\+/g, "")}?text=${encodeURIComponent("Bonjour, je souhaite souscrire à CGI242.")}`;
+    const canOpen = await Linking.canOpenURL(url);
+    if (canOpen) {
+      Linking.openURL(url);
+    } else {
+      // Fallback : ouvrir dans le navigateur
+      Linking.openURL(url).catch(() => {
+        toast(t("paywall.whatsappError"), "error");
+      });
+    }
+  };
+
+  const handleEmail = async () => {
+    const url = `mailto:${EMAIL}?subject=Souscription%20CGI242`;
+    try {
+      await Linking.openURL(url);
+    } catch {
+      // Sur le web sans client mail, copier l'email
+      if (Platform.OS === "web" && typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(EMAIL);
+        toast(`${EMAIL} ${t("paywall.emailCopied")}`, "success");
+      } else {
+        toast(EMAIL, "info");
+      }
+    }
   };
 
   return (
@@ -142,8 +171,17 @@ export default function PaywallScreen() {
         </Text>
 
         <TouchableOpacity
+          style={[styles.ctaButton, { backgroundColor: "#25D366" }]}
+          onPress={handleWhatsApp}
+          activeOpacity={0.8}
+        >
+          <Ionicons name="logo-whatsapp" size={20} color="#fff" style={{ marginRight: 8 }} />
+          <Text style={styles.ctaText}>WhatsApp</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
           style={[styles.ctaButton, { backgroundColor: colors.primary }]}
-          onPress={handleContact}
+          onPress={handleEmail}
           activeOpacity={0.8}
         >
           <Ionicons name="mail-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
