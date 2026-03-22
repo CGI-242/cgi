@@ -152,15 +152,22 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
             onPress={() => onActivate(org, "STARTER")}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 10, alignItems: "center" }}
           >
-            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Basique</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>75 000 /user/an</Text>
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Starter</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>69€/user/an</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => onActivate(org, "PRO")}
-            style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 10, alignItems: "center" }}
+            onPress={() => onActivate(org, "PROFESSIONAL")}
+            style={{ flex: 1, backgroundColor: "#1A3A5C", paddingVertical: 10, alignItems: "center" }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Pro</Text>
-            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>115 000 /user/an</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>149€/user/an</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => onActivate(org, "TEAM")}
+            style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 10, alignItems: "center" }}
+          >
+            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Team</Text>
+            <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>299€/user/an</Text>
           </TouchableOpacity>
           {(status === "ACTIVE" || status === "EXPIRED" || status === "TRIALING") && (
             <TouchableOpacity

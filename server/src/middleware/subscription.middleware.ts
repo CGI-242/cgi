@@ -167,6 +167,99 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
   }
 }
 
+/**
+ * Vérifie le quota d'audits documents par mois.
+ * Basé sur le comptage des DocumentAudit créés ce mois par l'org.
+ */
+export async function checkAuditQuota(req: AuthRequest, res: Response, next: NextFunction) {
+  if (!req.orgId) { next(); return; }
+  try {
+    const ctx = await getSubContext(req.orgId);
+    if (!ctx) { next(); return; }
+    if (ctx.status === 'EXPIRED') {
+      res.status(403).json({ error: 'Abonnement expiré. Veuillez renouveler.' });
+      return;
+    }
+
+    const { getPlanQuota } = require('../types/plans');
+    const quota = getPlanQuota(ctx.plan);
+
+    // FREE : quota total (pas mensuel)
+    if (ctx.plan === 'FREE') {
+      const totalAudits: [{ count: bigint }] = await prisma.$queryRaw`
+        SELECT COUNT(*)::bigint as count FROM document_audits WHERE "orgId" = ${req.orgId}
+      `;
+      const used = Number(totalAudits[0]?.count ?? 0);
+      if (quota.auditsTotal > 0 && used >= quota.auditsTotal) {
+        res.status(429).json({ error: 'Quota d\'audits atteint', quota: { used, limit: quota.auditsTotal, plan: ctx.plan } });
+        return;
+      }
+      next(); return;
+    }
+
+    // Plans payants : quota mensuel
+    if (isUnlimited(quota.auditsPerMonth)) { next(); return; }
+
+    const monthStart = new Date();
+    monthStart.setDate(1); monthStart.setHours(0, 0, 0, 0);
+    const monthAudits: [{ count: bigint }] = await prisma.$queryRaw`
+      SELECT COUNT(*)::bigint as count FROM document_audits
+      WHERE "orgId" = ${req.orgId} AND "createdAt" >= ${monthStart}
+    `;
+    const used = Number(monthAudits[0]?.count ?? 0);
+    if (used >= quota.auditsPerMonth) {
+      res.status(429).json({ error: 'Quota d\'audits mensuel atteint', quota: { used, limit: quota.auditsPerMonth, plan: ctx.plan } });
+      return;
+    }
+    next();
+  } catch (err) {
+    logger.error('Erreur vérification quota audit', err);
+    next();
+  }
+}
+
+/**
+ * Vérifie que le plan inclut les organisations (TEAM+).
+ */
+export async function requireOrganizationFeature(req: AuthRequest, res: Response, next: NextFunction) {
+  if (!req.orgId) { next(); return; }
+  try {
+    const ctx = await getSubContext(req.orgId);
+    if (!ctx) { next(); return; }
+    const { getPlanQuota } = require('../types/plans');
+    const quota = getPlanQuota(ctx.plan);
+    if (!quota.hasOrganization && ctx.plan !== 'FREE') {
+      res.status(403).json({ error: 'Fonctionnalité organisation non incluse dans votre plan. Passez au plan Team.' });
+      return;
+    }
+    next();
+  } catch (err) {
+    logger.error('Erreur vérification feature organisation', err);
+    next();
+  }
+}
+
+/**
+ * Vérifie que le plan inclut les analytics (TEAM+).
+ */
+export async function requireAnalyticsFeature(req: AuthRequest, res: Response, next: NextFunction) {
+  if (!req.orgId) { next(); return; }
+  try {
+    const ctx = await getSubContext(req.orgId);
+    if (!ctx) { next(); return; }
+    const { getPlanQuota } = require('../types/plans');
+    const quota = getPlanQuota(ctx.plan);
+    if (!quota.hasAnalytics) {
+      res.status(403).json({ error: 'Fonctionnalité analytics non incluse dans votre plan. Passez au plan Team.' });
+      return;
+    }
+    next();
+  } catch (err) {
+    logger.error('Erreur vérification feature analytics', err);
+    next();
+  }
+}
+
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {
   return requirePlan('STARTER')(req, res, next);
 }

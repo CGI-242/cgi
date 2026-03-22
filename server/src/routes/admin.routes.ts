@@ -273,4 +273,53 @@ router.post('/seat-requests/:requestId/reject', requireAuth, requireAdmin, valid
   }
 });
 
+// POST /api/admin/organizations/:id/credit-questions — Créditer des questions (pack add-on)
+router.post('/organizations/:id/credit-questions', requireAuth, requireAdmin, validate({ params: orgIdParam }), async (req: AuthRequest, res: Response) => {
+  try {
+    const orgId = String(req.params.id);
+    const qty = parseInt(req.body.amount, 10);
+    if (!qty || qty < 1) {
+      res.status(400).json({ error: 'Nombre de questions requis (amount)' });
+      return;
+    }
+
+    await prisma.subscription.update({
+      where: { organizationId: orgId },
+      data: { questionsPerMonth: { increment: qty } },
+    });
+
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail || '', action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: orgId, organizationId: orgId, ipAddress: getClientIp(req) as string, changes: { type: 'credit_questions', amount: qty } });
+
+    res.json({ message: `${qty} questions créditées` });
+  } catch (err) {
+    logger.error('Erreur crédit questions', err);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+// POST /api/admin/organizations/:id/credit-audits — Créditer des audits (pack add-on)
+router.post('/organizations/:id/credit-audits', requireAuth, requireAdmin, validate({ params: orgIdParam }), async (req: AuthRequest, res: Response) => {
+  try {
+    const orgId = String(req.params.id);
+    const qty = parseInt(req.body.amount, 10);
+    if (!qty || qty < 1) {
+      res.status(400).json({ error: 'Nombre d\'audits requis (amount)' });
+      return;
+    }
+
+    // Créditer en augmentant le questionsPerMonth (utilisé comme crédit général)
+    await prisma.subscription.update({
+      where: { organizationId: orgId },
+      data: { questionsPerMonth: { increment: qty } },
+    });
+
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail || '', action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: orgId, organizationId: orgId, ipAddress: getClientIp(req) as string, changes: { type: 'credit_audits', amount: qty } });
+
+    res.json({ message: `${qty} audits crédités` });
+  } catch (err) {
+    logger.error('Erreur crédit audits', err);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
 export default router;

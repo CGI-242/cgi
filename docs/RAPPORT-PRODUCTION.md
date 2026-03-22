@@ -118,11 +118,14 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 - Route `GET /auth/heartbeat` pour verification session
 
 ### 3.9 Abonnement et tarifs (MIS A JOUR — 22 mars)
-- 3 plans : FREE (essai 7 jours, 5 questions) / BASIQUE (75 000 XAF/an, 15q/mois) / PRO (115 000 XAF/an, 30q/mois)
-- Prix de lancement supprimes (offre expiree)
-- Packs de questions supplementaires : 6 000 / 15 000 / 30 000 XAF
-- Remises volume : -10% (3+ sieges), -15% (5+), -20% (10+)
-- Quota de questions IA par mois
+- 5 plans (prix par user/an) :
+  - FREE : 7 jours essai, 5 questions, 3 audits, 16 simulateurs
+  - STARTER : 69€/user/an, 15q/mois, 10 audits/mois, 5 simulateurs de base
+  - PROFESSIONAL : 149€/user/an, 30q/mois, 30 audits/mois, 16 simulateurs
+  - TEAM : 299€/user/an, 200q/mois, 100 audits/mois, organisation 5 membres, analytics
+  - ENTERPRISE : 500€+/user/an, sur devis, membres illimites, API
+- Packs add-on : Questions (9-69€ pour 10-150q) + Audits (9-69€ pour 10-150 docs)
+- Remises volume sieges : -10% (3+), -15% (5+), -20% (10+)
 - Paywall pour les utilisateurs expires
 - Rappels expiration par email + push
 
@@ -168,7 +171,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | Export PDF audit | Generer un rapport PDF telechargeable du resultat d'audit |
 | Tableau de bord analytics | Page existe mais donnees limitees |
 | Code Social / Douanier / Hydrocarbures | Affiches comme "Bientot" — donnees non integrees |
-| App mobile native | Build Expo sur Google Play existe mais pas a jour |
+| App mobile native | Build Expo sur Google Play existe mais pas a jour — necessaire apres changements tarifs/plans |
 | Backup PostgreSQL automatique | Pas de cron backup en place |
 
 ### 4.3 Priorite basse

@@ -2,7 +2,7 @@ import { Router } from "express";
 import multer from "multer";
 import { requireAuth, AuthRequest } from "../middleware/auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
-import { checkQuestionQuota } from "../middleware/subscription.middleware";
+import { checkAuditQuota } from "../middleware/subscription.middleware";
 import { analyzeInvoice, type DocumentType } from "../services/audit-facture.service";
 import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
@@ -29,7 +29,7 @@ router.post(
   "/",
   requireAuth,
   resolveTenant,
-  checkQuestionQuota,
+  checkAuditQuota,
   upload.single("file"),
   async (req: AuthRequest, res) => {
     try {

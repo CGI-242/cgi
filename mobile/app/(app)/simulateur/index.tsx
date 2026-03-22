@@ -4,13 +4,21 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import { useAuthStore } from "@/lib/store/auth";
+import { useToast } from "@/components/ui/ToastProvider";
 import MobileSimPicker from "@/components/mobile/MobileSimPicker";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+
+const BASIC_SIMULATORS = ["its", "tva", "is", "paie", "patente"];
 
 export default function SimulateurHub() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const user = useAuthStore((s) => s.user);
+  const { toast } = useToast();
+  const plan = (user as { plan?: string })?.plan || "FREE";
+  const isStarter = plan === "STARTER";
 
   // Sur mobile : affichage en liste avec design proposé
   if (isMobile) {
@@ -154,11 +162,19 @@ export default function SimulateurHub() {
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
         {/* Cards en grille */}
         <View style={styles.grid}>
-          {simulateurs.map((sim) => (
+          {simulateurs.map((sim) => {
+            const locked = isStarter && !BASIC_SIMULATORS.includes(sim.id);
+            return (
             <TouchableOpacity
               key={sim.id}
-              style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}
-              onPress={() => router.push(sim.route as Href)}
+              style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border, opacity: locked ? 0.5 : 1 }]}
+              onPress={() => {
+                if (locked) {
+                  toast(t("simulateur.upgradeRequired"), "error");
+                  return;
+                }
+                router.push(sim.route as Href);
+              }}
             >
               <View
                 style={[styles.iconBox, { backgroundColor: `${colors.primary}15` }]}
@@ -171,8 +187,14 @@ export default function SimulateurHub() {
               </View>
               <Text style={[styles.cardSubtitle, { color: colors.text }]}>{sim.subtitle}</Text>
               <Text style={[styles.cardDescription, { color: colors.textSecondary }]}>{sim.description}</Text>
+              {locked && (
+                <View style={{ position: "absolute", top: 10, right: 10 }}>
+                  <Ionicons name="lock-closed" size={16} color={colors.textMuted} />
+                </View>
+              )}
             </TouchableOpacity>
-          ))}
+            );
+          })}
 
         </View>
       </ScrollView>
