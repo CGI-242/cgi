@@ -535,7 +535,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
   }, []);
 
   const showBack = navStack.length > 0 || selectedArticle !== null;
-  const isSearching = debouncedSearch.length >= 2;
+  const isSearching = search.length >= 2 && debouncedSearch.length >= 2;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
