@@ -192,7 +192,7 @@ Chaque simulateur : calcul en temps réel, référence articles CGI, export rés
 - **Rôles** : OWNER (propriétaire), ADMIN (administrateur), MEMBER (membre)
 - **Invitations** : inviter des collaborateurs par email
 - **Sièges** : acheter des sièges supplémentaires
-  - Tarifs : 75 000 → 115 000 XAF/an/siège
+  - Tarifs : 69€ → 299€/user/an selon le plan
   - Remises volume : -10% (3+ sièges), -15% (5+), -20% (10+)
 - **Permissions** : contrôle fin des accès par membre
 - **Transfert de propriété** : changer le propriétaire de l'organisation
@@ -222,13 +222,14 @@ Chaque simulateur : calcul en temps réel, référence articles CGI, export rés
 **Titre suggéré** : "Les plans CGI 242 : du gratuit au sur-mesure"
 
 **Contenu** :
-- **FREE** : accès limité au code CGI
-- **STARTER** : simulateurs de base + navigation code
-- **PROFESSIONAL** : tous simulateurs + chat IA (quota mensuel)
-- **TEAM** : sièges multiples + analytics + audit
-- **ENTERPRISE** : quotas personnalisés + fonctionnalités avancées
+- **FREE** : 7 jours essai, 5 questions, 3 audits, 16 simulateurs
+- **STARTER** : 69€/user/an, 15q/mois, 10 audits, 5 simulateurs
+- **PROFESSIONAL** : 149€/user/an, 30q/mois, 30 audits, 16 simulateurs
+- **TEAM** : 299€/user/an, 200q/mois, 100 audits, 5 membres, analytics
+- **ENTERPRISE** : sur devis, illimité, API
+- Packs add-on : Questions (9-69€) + Audits (9-69€)
+- Formulaire de contact intégré au paywall
 - Suivi du quota questions/mois en temps réel
-- Factures PDF téléchargeables
 - Rappels d'expiration : J-30, J-7, J-1, Jour J (email + push)
 
 ---
