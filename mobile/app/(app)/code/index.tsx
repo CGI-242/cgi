@@ -88,6 +88,8 @@ export default function CodeCGI() {
     }
 
     const hasArticles = node.articles && node.articles.length > 0;
+    setSearch("");
+    setSelectedArticle(null);
     if (hasChildren || hasArticles) {
       readerNodeRef.current = node;
       setReaderNode(node);
