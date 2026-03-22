@@ -801,6 +801,12 @@ router.post("/check-email", sensitiveLimiter, validate({ body: checkEmailBody })
  *       500:
  *         description: Erreur serveur
  */
+// GET /api/auth/heartbeat — Vérification session active (anti multi-device)
+// Retourne 200 si le token est valide, 401 si révoqué
+router.get("/heartbeat", requireAuth, (_req: AuthRequest, res: Response) => {
+  res.json({ ok: true });
+});
+
 // POST /api/auth/clear-session — Nettoyage des cookies sans auth (HIGH-03)
 // Intentionnellement sans authentification : appelé quand la session est expirée/révoquée
 // et l'utilisateur ne peut plus s'authentifier. Seuls les cookies httpOnly sont supprimés.
