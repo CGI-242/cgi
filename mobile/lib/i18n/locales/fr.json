@@ -1049,7 +1049,16 @@
     "activeMembers": "Membres actifs",
     "thisMonth": "Ce mois",
     "activityDays": "ACTIVITÉ ({{days}} DERNIERS JOURS)",
-    "exportCsv": "Exporter en CSV"
+    "exportCsv": "Exporter en CSV",
+    "responseTimeTitle": "TEMPS DE RÉPONSE IA",
+    "avgTime": "Temps moyen",
+    "minTime": "Plus rapide",
+    "avgTokens": "Tokens/réponse",
+    "featureUsageTitle": "USAGE PAR FONCTIONNALITÉ",
+    "featureChat": "Chat IA",
+    "featureSearch": "Recherche",
+    "featureAudit": "Audit documents",
+    "popularSearches": "RECHERCHES POPULAIRES"
   },
   "admin": {
     "accessDenied": "Accès refusé — droits administrateur requis",

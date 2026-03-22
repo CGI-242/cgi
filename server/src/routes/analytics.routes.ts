@@ -103,4 +103,23 @@ router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, vali
   res.send(csv);
 }));
 
+// GET /api/analytics/popular-searches
+router.get('/popular-searches', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const limit = Number(req.query.limit) || 10;
+  const data = await analyticsService.getPopularSearches(req.orgId!, limit);
+  res.json(data);
+}));
+
+// GET /api/analytics/response-times
+router.get('/response-times', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const data = await analyticsService.getResponseTimeStats(req.orgId!);
+  res.json(data);
+}));
+
+// GET /api/analytics/feature-usage
+router.get('/feature-usage', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const data = await analyticsService.getFeatureUsage(req.orgId!);
+  res.json(data);
+}));
+
 export default router;

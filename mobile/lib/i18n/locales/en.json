@@ -1013,7 +1013,16 @@
     "activeMembers": "Active members",
     "thisMonth": "This month",
     "activityDays": "ACTIVITY (LAST {{days}} DAYS)",
-    "exportCsv": "Export to CSV"
+    "exportCsv": "Export to CSV",
+    "responseTimeTitle": "AI RESPONSE TIME",
+    "avgTime": "Avg time",
+    "minTime": "Fastest",
+    "avgTokens": "Tokens/response",
+    "featureUsageTitle": "FEATURE USAGE",
+    "featureChat": "AI Chat",
+    "featureSearch": "Search",
+    "featureAudit": "Document audit",
+    "popularSearches": "POPULAR SEARCHES"
   },
   "admin": {
     "accessDenied": "Access denied — admin rights required",
