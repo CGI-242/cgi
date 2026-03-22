@@ -1,6 +1,6 @@
 # NORMX Tax (CGI-242) — Rapport de mise en production
 
-**Date** : 20 mars 2026
+**Date** : 22 mars 2026
 **URL** : https://tax.normx-ai.com
 **Repo** : https://github.com/CGI-242/cgi
 
@@ -16,6 +16,7 @@
 | CI/CD GitHub Actions | Fonctionnel (deploy auto a chaque push) |
 | Nginx reverse proxy | Actif, headers securite, CSP |
 | VPS | OVH `51.83.75.203` (Ubuntu) |
+| Qdrant | v1.17.0 (mis a jour depuis v1.14.0 — match client SDK) |
 
 ---
 
@@ -23,13 +24,14 @@
 
 | Element | Statut |
 |---------|--------|
-| 152 fichiers JSON | Synchronises mobile / server / data |
-| Tome 1 (IS, IBA, IRCM, IRF, ITS, Dispositions communes) | Complet |
-| Tome 2 (Enregistrement, Timbre, Curatelle) | Complet |
-| TFNC 2-5 (Textes non codifies) | Complet |
-| TFNC 6 TVA (Chapitres 1-5 + Annexes) | Verifie page par page contre PDF |
-| Conventions fiscales (CEMAC, France, Italie, Rwanda, Maurice, Chine) | Complet |
-| Mots-cles | Enrichis sur TVA, a completer sur d'autres sections |
+| 154 fichiers JSON | Synchronises mobile / server / data |
+| 2 181 articles en vigueur | Comptage verifie (54 abroges exclus du comptage affiche) |
+| Tome 1 (IS, IBA, IRCM, IRF, ITS, Dispositions communes) | Complet — 691 articles |
+| Tome 2 (Enregistrement, Timbre, Mutations, Foncier, Successions) | Complet — 632 articles |
+| TFNC 2-5 (Textes non codifies) | Complet — 567 articles |
+| TFNC 6 TVA (Chapitres 1-5 + Annexes) | Verifie page par page contre PDF — 46 articles |
+| Conventions fiscales (CEMAC, France, Italie, Rwanda, Maurice, Chine) | Complet — 189 articles |
+| Mots-cles | Enrichis (moyenne 5-7 mc/article), articles abroges nettoyes |
 
 ---
 
@@ -38,21 +40,30 @@
 ### 3.1 Code numerique CGI
 - Sommaire arborescent (Tome 1, Tome 2, TFNC, Conventions)
 - Affichage mode livre (ChapterReader) pour tous les chapitres
-- Recherche globale par mots-cles
-- Elements abroges grises dans le sommaire (Livre 3, 6, Chapitre 3)
-- Titres tronques sur 1 ligne dans le sommaire
+- Recherche globale par mots-cles + recherche vocale
+- Elements abroges grises dans le sommaire
+- Noeuds doublons corriges (42 chapitres avec section unique)
+- Anti-copie : `selectable={false}` sur tous les articles (natif)
 
-### 3.2 Chat IA fiscal (RAG)
+### 3.2 Chat IA fiscal (RAG) — 36 agents specialises
 - Modele : Claude Sonnet (Anthropic SDK)
 - Recherche hybride : Qdrant (vectoriel) + mots-cles
 - Streaming SSE des reponses
 - Citations avec extraits des articles
 - Historique des conversations
 - Dictee vocale (Speech Recognition Chrome/Edge)
-- Format reponse : "L'article X du Tome N dispose que..." (reference detaillee en fin)
+- **36 agents specialises** couvrant 100% du CGI :
+  - Tome 1 : IS, ITS, IBA, IRCM/IRF, Prix de transfert, Entites etrangeres, Dispositions communes, Taxes diverses, Obligations diverses
+  - Tome 2 : Enregistrement/Timbre
+  - TFNC : TVA, Petrole/Mines, Code Hydrocarbures, TVA Petrole Amont, Taxes speciales, Douanes
+  - Procedures : Sanctions, Contentieux, Recouvrement, Emission des roles
+  - Impots locaux : Obligatoires, Facultatifs, Centimes additionnels
+  - Transversal : Calendrier fiscal, Incitations/Exonerations, Immobilier, Conventions
+  - Nouveaux (22 mars) : NIU, BVMAC, Retenue Tresor, Attestation fiscale, Zones speciales, Echange renseignements, Annexes/textes non codifies
+  - Fallback : Agent General
 
 ### 3.3 Simulateurs fiscaux (16)
-ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Contribution fonciere, Paie, Retenue a la source, Taxe immobiliere, Solde de liquidation
+ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Contribution fonciere, Paie, Retenue a la source, Taxe immobiliere, Solde de liquidation, IS Parapetrolier
 
 ### 3.4 Audit Documents
 - 5 types : Facture, Releve bancaire, Bon de commande/Contrat, DAS II, Note de frais
@@ -67,32 +78,66 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 - Historique des audits en base de donnees
 
 ### 3.5 Calendrier fiscal
-- Echeances mensuelles
-- Notifications (badge + panneau)
+- Echeances mensuelles + annuelles (Art. 461 bis LF 2026)
+- Notifications badge + panneau modal
 - Jours restants avant chaque echeance
+- Push notifications rappels (J-5, J-3, J-1, Jour J)
 
-### 3.6 Authentification et securite
+### 3.6 Push Notifications (NOUVEAU — 21 mars)
+- Expo Push Notifications (Android + iOS)
+- Canaux Android : "Echeances fiscales" (HIGH) + "General" (DEFAULT)
+- Rappels automatiques :
+  - Echeances fiscales : tous les 2 jours avant + jour J
+  - Abonnement expirant : J-30, J-7, J-1, Jour J (email + push)
+  - Demandes de sieges (admin)
+- Navigation directe depuis notification vers ecran concerne
+- Nettoyage auto tokens invalides (DeviceNotRegistered)
+- Verification receipts Expo (15 min apres envoi)
+- Nettoyage hebdomadaire tokens obsoletes (>90 jours)
+- Routes : POST /register, DELETE /unregister, GET /devices, POST /test
+- Migration Prisma `push_tokens` appliquee en prod
+- Unregister au logout
+
+### 3.7 Authentification et securite
 - Login email + mot de passe
 - OTP par email (verification)
 - JWT (access + refresh tokens)
-- MFA (authentification multi-facteurs)
+- MFA (authentification multi-facteurs TOTP + codes de secours)
 - Sessions securisees (cookies HttpOnly, SameSite strict)
-- Rate limiting (auth, chat, API)
+- Rate limiting (auth, chat, sensible, global)
 - CORS configure
 - Turnstile (CAPTCHA Cloudflare)
+- Protection anti-replay refresh token
+- Verrouillage compte apres 5 tentatives (15 min)
 
-### 3.7 Abonnement
-- 2 plans : Free (essai 7 jours) + Premium (65 euros/an)
+### 3.8 Securite anti-copie et anti multi-device (NOUVEAU — 22 mars)
+- **Anti-copie web** : clic droit bloque, Ctrl+C/A/S/P bloque, F12 bloque, DevTools bloque, selection texte impossible (CSS), drag bloque, impression bloquee (@media print)
+- **Anti-copie natif** : `selectable={false}` sur tous les `<Text>` des articles
+- **Session unique par email** : login revoque tous les tokens precedents
+- **Heartbeat session (60s)** : detection en temps reel si le token est revoque → deconnexion immediate avec modal "Connexion depuis un autre appareil"
+- Route `GET /auth/heartbeat` pour verification session
+
+### 3.9 Abonnement et tarifs (MIS A JOUR — 22 mars)
+- 3 plans : FREE (essai 7 jours, 5 questions) / BASIQUE (75 000 XAF/an, 15q/mois) / PRO (115 000 XAF/an, 30q/mois)
+- Prix de lancement supprimes (offre expiree)
+- Packs de questions supplementaires : 6 000 / 15 000 / 30 000 XAF
+- Remises volume : -10% (3+ sieges), -15% (5+), -20% (10+)
 - Quota de questions IA par mois
 - Paywall pour les utilisateurs expires
+- Rappels expiration par email + push
 
-### 3.8 Organisation / Multi-utilisateurs
+### 3.10 Organisation / Multi-utilisateurs
 - Invitations par email
-- Roles (Admin, Membre)
-- Permissions par module
+- Roles : OWNER, ADMIN, MEMBER
+- Permissions par module (fin)
 - Jusqu'a 50 membres par organisation
+- Demandes de sieges supplementaires + tarification
+- Transfert de propriete
+- Suppression douce (30j) + permanente
+- Audit trail complet (qui, quoi, quand, IP)
+- Analytics par membre + export CSV
 
-### 3.9 Interface
+### 3.11 Interface et branding (MIS A JOUR — 22 mars)
 - Theme : Light (defaut blanc) / Dark (bleu #1A3A5C)
 - Polices : Outfit (corps) + Playfair Display (titres) via Google Fonts
 - Header bleu #1A3A5C uniforme (style Normx)
@@ -101,6 +146,8 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 - i18n : Francais + Anglais
 - Responsive : Desktop + Tablette + Mobile
 - Calculatrice flottante
+- **Nouveau logo NT** (Midjourney) : favicon, icon, splash, adaptive-icon
+- Palette : Bleu nuit #1A3A5C + Or #D4A843
 
 ---
 
@@ -110,9 +157,8 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 
 | Fonctionnalite | Detail |
 |----------------|--------|
-| Paiement en ligne | Pas de provider connecte (Stripe, PayDunya). L'abonnement Premium existe mais pas de tunnel de paiement |
+| Paiement en ligne | Pas de provider connecte (Stripe, PayDunya). Paiement par Mobile Money manuel |
 | Reindexation Qdrant | Les donnees TVA corrigees ne sont pas reindexees. Le RAG utilise l'ancien index |
-| Push notifications | Le hook existe mais pas configure (Expo Push, FCM) |
 | SFEC validation avancee | Detection QR code/NIM basee sur l'absence visuelle, pas de decodage |
 
 ### 4.2 Priorite moyenne
@@ -132,29 +178,50 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | Annotations CGI | Permettre aux utilisateurs d'annoter les articles |
 | Comparaison LF 2025 vs 2026 | Mettre en evidence les articles modifies |
 | Mode examen/quiz | QCM sur le CGI pour la formation |
-| Monitoring/alerting | Pas de Sentry, pas de uptime monitoring |
-| Commentaires keyword-mappings | Encore marques "CGI 2025" (cosmetique) |
+| Monitoring/alerting | Sentry configure mais pas d'uptime monitoring |
 
 ---
 
 ## 5. Points d'attention
 
-- **20 articles texte vide** : articles abroges/sans objet — normal, pas un bug
-- **Bundle web 6.5 Mo** : taille elevee mais acceptable pour une SPA avec 152 JSON embarques
+- **Bundle web 6.5 Mo** : taille elevee mais acceptable pour une SPA avec 154 JSON embarques
 - **Certificat SSL** : permissions privkey corrigees (chmod 640), a surveiller au renouvellement
 - **Nginx systeme** : desactive, seul Docker nginx tourne
-- **Enum SubscriptionPlan** : anciennes valeurs (STARTER, PROFESSIONAL, TEAM, ENTERPRISE) nettoyees
+- **node_modules VPS** : souvent corrompu, necessie `sudo rm -rf node_modules && npm install` avant build
+- **Qdrant** : mis a jour v1.14 → v1.17 pour matcher le client SDK
 
 ---
 
-## 6. Stack technique
+## 6. Changelog 21-22 mars 2026
+
+| Date | Changement |
+|------|-----------|
+| 21 mars | Push notifications complet (Expo Push, channels Android, listeners, unregister, receipts) |
+| 21 mars | 9 agents specialises ajoutes (NIU, BVMAC, Retenue Tresor, Attestation, TVA Petrole, Zones speciales, Echange renseignements, Code Hydrocarbures, Annexes) — couverture CGI 100% |
+| 21 mars | Migration Prisma `push_tokens` appliquee en prod |
+| 21 mars | Upgrade Qdrant v1.14 → v1.17 |
+| 22 mars | Nouveau logo NT (Midjourney) : favicon, icon, splash, adaptive-icon |
+| 22 mars | Correction nombre articles : 2 263 → 2 181 (en vigueur uniquement) |
+| 22 mars | Correction LandingStats : 14 → 16 simulateurs |
+| 22 mars | Fix noeuds doublons arbre CGI (42 chapitres) |
+| 22 mars | Nettoyage tarifs : suppression prix lancement expires, correction 65€ → XAF |
+| 22 mars | 3 plans tarifs : FREE / BASIQUE 75 000 XAF / PRO 115 000 XAF |
+| 22 mars | Anti-copie web (clic droit, Ctrl+C, selection, impression, DevTools) |
+| 22 mars | Heartbeat session anti multi-device (detection 60s) |
+| 22 mars | README YouTube avec palette Midjourney et 12 scenarios videos |
+| 22 mars | Container Docker fantome nettoye (fix CI/CD) |
+
+---
+
+## 7. Stack technique
 
 | Couche | Technologie |
 |--------|------------|
 | Frontend | Expo (React Native) + expo-router |
 | Backend | Node.js / Express / TypeScript |
 | Base de donnees | PostgreSQL + Prisma ORM |
-| Base vectorielle | Qdrant (RAG) |
+| Base vectorielle | Qdrant v1.17.0 (RAG) |
+| Embeddings | Voyage AI (1024 dims) |
 | IA | Claude Sonnet (Anthropic SDK) |
 | Reverse proxy | Nginx (Docker) |
 | CI/CD | GitHub Actions |
@@ -162,3 +229,5 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 | DNS/CDN | Cloudflare |
 | Email | OVH SMTP (ssl0.ovh.net:465) |
 | CAPTCHA | Cloudflare Turnstile |
+| Push | Expo Push Notifications |
+| Monitoring | Sentry |
