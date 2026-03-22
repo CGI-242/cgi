@@ -15,7 +15,7 @@ const GOLD = "#D4A843";
 
 export default function LoginEmail() {
   const { t } = useTranslation();
-  const { mode, toggleTheme } = useTheme();
+  const { mode, toggleTheme, colors } = useTheme();
   const { isMobile } = useResponsive();
   const [email, setEmailLocal] = useState("");
   const [error, setError] = useState("");
@@ -43,15 +43,15 @@ export default function LoginEmail() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={{ flex: 1, backgroundColor: "#ffffff" }}
+      style={{ flex: 1, backgroundColor: colors.background }}
     >
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: isMobile ? 16 : 24 }}>
-        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: "#1A3A5C", padding: isMobile ? 24 : 40, borderRadius: 16 }}>
+        <View style={{ width: "100%", maxWidth: isMobile ? undefined : 440, backgroundColor: colors.card, padding: isMobile ? 24 : 40, borderRadius: 16, borderWidth: 1, borderColor: colors.border }}>
           <AuthLogo size="lg" />
 
           {/* Titre */}
-          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: "#e8e6e1", marginBottom: 6 }}>{t("auth.login")}</Text>
-          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "rgba(255,255,255,0.55)", marginBottom: 28 }}>
+          <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 26, color: colors.text, marginBottom: 6 }}>{t("auth.login")}</Text>
+          <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textSecondary, marginBottom: 28 }}>
             {t("auth.enterEmail")}
           </Text>
 
@@ -63,13 +63,13 @@ export default function LoginEmail() {
           ) : null}
 
           {/* Email */}
-          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: "#e8e6e1", marginBottom: 10 }}>
-            Email <Text style={{ color: "#f87171" }}>*</Text>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: colors.text, marginBottom: 10 }}>
+            Email <Text style={{ color: colors.danger }}>*</Text>
           </Text>
           <TextInput
-            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: "rgba(255,255,255,0.08)", padding: 14, fontSize: 18, color: "#e8e6e1", marginBottom: 24, borderWidth: 1, borderColor: "rgba(255,255,255,0.12)", borderRadius: 8 }}
+            style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, width: "100%", backgroundColor: colors.input, padding: 14, fontSize: 18, color: colors.text, marginBottom: 24, borderWidth: 1, borderColor: colors.border, borderRadius: 8 }}
             placeholder={t("auth.emailPlaceholder")}
-            placeholderTextColor="rgba(255,255,255,0.35)"
+            placeholderTextColor={colors.textMuted}
             value={email}
             onChangeText={(text) => {
               setEmailLocal(text);
@@ -102,7 +102,7 @@ export default function LoginEmail() {
 
           {/* Lien inscription */}
           <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 28 }}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: "rgba(255,255,255,0.55)" }}>{t("auth.noAccount")} </Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 16, color: colors.textSecondary }}>{t("auth.noAccount")} </Text>
             <TouchableOpacity onPress={() => router.push("/(auth)/register")} accessibilityLabel={t("auth.createCompany")} accessibilityRole="link">
               <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 16, color: GOLD, textDecorationLine: "underline" }}>
                 {t("auth.createCompany")}
@@ -117,16 +117,16 @@ export default function LoginEmail() {
             <Ionicons name={mode === "dark" ? "sunny-outline" : "moon-outline"} size={18} color="#5a6a7a" />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => Linking.openURL(CONTACT_EMAIL)}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#5a6a7a", textDecorationLine: "underline" }}>{t("auth.help")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.help")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => router.push("/legal/confidentialite" as Href)}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#5a6a7a", textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.privacy")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => router.push("/legal/cgu" as Href)}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#5a6a7a", textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textDecorationLine: "underline" }}>{t("auth.terms")}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => router.push("/legal/mentions" as Href)}>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "#5a6a7a", textDecorationLine: "underline" }}>{t("settings.legalNotices")}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, textDecorationLine: "underline" }}>{t("settings.legalNotices")}</Text>
           </TouchableOpacity>
         </View>
       </View>
