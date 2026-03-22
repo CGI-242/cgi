@@ -14,7 +14,7 @@ const PLANS = [
   {
     nameKey: "landing.pricingFree",
     tag: "FREE",
-    price: "0",
+    price: "0 XAF",
     periodKey: "landing.pricingTrialPeriod",
     color: "#6b7280",
     featureKeys: [
@@ -24,16 +24,30 @@ const PLANS = [
     ],
   },
   {
-    nameKey: "landing.pricingPremium",
-    tag: "PREMIUM",
-    price: "65€",
+    nameKey: "landing.pricingBasic",
+    tag: "BASIQUE",
+    price: "75 000 XAF",
+    periodKey: "landing.pricingPerYear",
+    color: "#1A3A5C",
+    featureKeys: [
+      "landing.pricingFeat15q",
+      "landing.pricingFeatCgiFull",
+      "landing.pricingFeatAllSim",
+      "landing.pricingFeatHistory",
+      "landing.pricingFeat50members",
+    ],
+  },
+  {
+    nameKey: "landing.pricingPro",
+    tag: "PRO",
+    price: "115 000 XAF",
     periodKey: "landing.pricingPerYear",
     color: "#8b5cf6",
     popular: true,
     featureKeys: [
-      "landing.pricingFeatCgiFull",
       "landing.pricingFeat30q",
-      "landing.pricingFeat14sim",
+      "landing.pricingFeatCgiFull",
+      "landing.pricingFeatAllSim",
       "landing.pricingFeatUnlimitedHistory",
       "landing.pricingFeatPriority",
       "landing.pricingFeat50members",
@@ -159,25 +173,11 @@ export default function LandingPricing({ isMobile }: Props) {
                 fontWeight: fontWeights.regular,
                 fontSize: 15,
                 color: "#5a6a7a",
-                marginBottom: plan.priceDetailKey ? 4 : 20,
+                marginBottom: 20,
               }}
             >
               {t(plan.periodKey)}
             </Text>
-            {plan.priceDetailKey && (
-              <Text
-                style={{
-                  fontFamily: fonts.medium,
-                  fontWeight: fontWeights.medium,
-                  fontSize: 13,
-                  color: GOLD,
-                  marginBottom: 20,
-                  fontStyle: "italic",
-                }}
-              >
-                {t(plan.priceDetailKey)}
-              </Text>
-            )}
 
             {plan.featureKeys.map((featKey, idx) => (
               <View

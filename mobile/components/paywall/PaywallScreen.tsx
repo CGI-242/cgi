@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PLANS = [
-  { key: "free", questions: "5 total", price: "0 XAF", launchPrice: null, expired: true },
-  { key: "basic", questions: "15/mois", price: "75 000 XAF", launchPrice: "65 000 XAF", expired: false },
-  { key: "pro", questions: "30/mois", price: "115 000 XAF", launchPrice: "100 000 XAF", expired: false },
+  { key: "free", questions: "5 total", price: "0 XAF" },
+  { key: "basic", questions: "15/mois", price: "75 000 XAF" },
+  { key: "pro", questions: "30/mois", price: "115 000 XAF" },
 ];
 
 const PACKS = [
@@ -54,10 +54,7 @@ export default function PaywallScreen() {
               {t("paywall.plan")}
             </Text>
             <Text style={[styles.cellHeader, styles.cellPrice, { color: colors.textSecondary }]}>
-              {t("paywall.launchPrice")}
-            </Text>
-            <Text style={[styles.cellHeader, styles.cellPrice, { color: colors.textSecondary }]}>
-              {t("paywall.normalPrice")}
+              {t("paywall.price")}
             </Text>
             <Text style={[styles.cellHeader, styles.cellQuestions, { color: colors.textSecondary }]}>
               {t("paywall.questions")}
@@ -71,23 +68,12 @@ export default function PaywallScreen() {
               style={[
                 styles.tableRow,
                 i < PLANS.length - 1 && { borderBottomWidth: 1, borderBottomColor: colors.border },
-                plan.expired && { opacity: 0.5 },
               ]}
             >
-              <View style={styles.cellPlan}>
-                <Text style={[styles.cellText, { color: colors.text, fontWeight: "700" }]}>
-                  {t(`paywall.${plan.key}`)}
-                </Text>
-                {plan.expired && (
-                  <Text style={[styles.expiredBadge, { color: colors.danger }]}>
-                    {t("paywall.expired")}
-                  </Text>
-                )}
-              </View>
-              <Text style={[styles.cellText, styles.cellPrice, { color: plan.launchPrice ? colors.primary : colors.text, fontWeight: plan.launchPrice ? "700" : "400" }]}>
-                {plan.launchPrice || "—"}
+              <Text style={[styles.cellText, styles.cellPlan, { color: colors.text, fontWeight: "700" }]}>
+                {t(`paywall.${plan.key}`)}
               </Text>
-              <Text style={[styles.cellText, styles.cellPrice, { color: colors.text }]}>
+              <Text style={[styles.cellText, styles.cellPrice, { color: colors.text, fontWeight: "700" }]}>
                 {plan.price}
               </Text>
               <Text style={[styles.cellText, styles.cellQuestions, { color: colors.text }]}>
@@ -95,14 +81,6 @@ export default function PaywallScreen() {
               </Text>
             </View>
           ))}
-        </View>
-
-        {/* Badge lancement */}
-        <View style={[styles.launchBadge, { backgroundColor: colors.primary + "15" }]}>
-          <Ionicons name="gift-outline" size={16} color={colors.primary} style={{ marginRight: 6 }} />
-          <Text style={[styles.launchText, { color: colors.primary }]}>
-            {t("paywall.launchOffer")}
-          </Text>
         </View>
 
         {/* Remises volume */}
@@ -247,24 +225,6 @@ const styles = StyleSheet.create({
   },
   cellText: {
     fontSize: 15,
-  },
-  expiredBadge: {
-    fontSize: 12,
-    fontWeight: "600",
-    marginTop: 2,
-  },
-  launchBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 8,
-    paddingHorizontal: 14,
-    width: "100%",
-    maxWidth: 520,
-    marginBottom: 4,
-  },
-  launchText: {
-    fontSize: 14,
-    fontWeight: "600",
   },
   contactDesc: {
     fontSize: 15,
