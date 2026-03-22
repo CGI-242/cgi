@@ -15,7 +15,8 @@ interface SeatRequestSectionProps {
 }
 
 function getUnitPriceLocal(plan: string, totalSeats: number): number {
-  const basePrice = plan === "PRO" ? 115000 : 75000;
+  const basePrices: Record<string, number> = { ENTERPRISE: 500, TEAM: 299, PROFESSIONAL: 149, STARTER: 69 };
+  const basePrice = basePrices[plan] || 299;
   let discount = 0;
   if (totalSeats >= 10) discount = 0.20;
   else if (totalSeats >= 5) discount = 0.15;

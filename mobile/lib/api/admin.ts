@@ -51,7 +51,7 @@ export const adminApi = {
     return data;
   },
 
-  activateSubscription: async (orgId: string, plan: "BASIQUE" | "PRO", paidSeats: number): Promise<ActivateResponse> => {
+  activateSubscription: async (orgId: string, plan: "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE", paidSeats: number): Promise<ActivateResponse> => {
     const { data } = await api.post<ActivateResponse>(`/admin/organizations/${orgId}/activate`, { plan, paidSeats });
     return data;
   },

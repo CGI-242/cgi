@@ -1,23 +1,85 @@
-export type PlanName = 'FREE' | 'BASIQUE' | 'PRO';
+export type PlanName = 'FREE' | 'STARTER' | 'PROFESSIONAL' | 'TEAM' | 'ENTERPRISE';
 
 export interface PlanQuota {
-  questionsPerMonth: number; // par user
-  maxMembers: number;
-  pricePerYear: number;       // XAF /user/an
+  questionsPerMonth: number;   // par user (-1 = illimité)
+  questionsTotal: number;      // pour FREE uniquement (5 total, pas /mois)
+  auditsPerMonth: number;      // documents audit/mois (-1 = illimité)
+  auditsTotal: number;         // pour FREE uniquement
+  maxMembers: number;          // -1 = illimité
+  simulators: 'basic' | 'all'; // 5 de base ou 16 complets
+  hasOrganization: boolean;
+  hasAnalytics: boolean;
+  pricePerYear: number;        // en euros
   trialDays: number;
 }
 
 export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
-  FREE:    { questionsPerMonth: 5,  maxMembers: 1,  pricePerYear: 0,      trialDays: 7 },
-  BASIQUE: { questionsPerMonth: 15, maxMembers: 50, pricePerYear: 75000,  trialDays: 0 },
-  PRO:     { questionsPerMonth: 30, maxMembers: 50, pricePerYear: 115000, trialDays: 0 },
+  FREE: {
+    questionsPerMonth: 0,
+    questionsTotal: 5,
+    auditsPerMonth: 0,
+    auditsTotal: 3,
+    maxMembers: 1,
+    simulators: 'all',
+    hasOrganization: false,
+    hasAnalytics: false,
+    pricePerYear: 0,
+    trialDays: 7,
+  },
+  STARTER: {
+    questionsPerMonth: 15,
+    questionsTotal: 0,
+    auditsPerMonth: 10,
+    auditsTotal: 0,
+    maxMembers: 1,
+    simulators: 'basic',
+    hasOrganization: false,
+    hasAnalytics: false,
+    pricePerYear: 69,
+    trialDays: 0,
+  },
+  PROFESSIONAL: {
+    questionsPerMonth: 30,
+    questionsTotal: 0,
+    auditsPerMonth: 30,
+    auditsTotal: 0,
+    maxMembers: 1,
+    simulators: 'all',
+    hasOrganization: false,
+    hasAnalytics: false,
+    pricePerYear: 149,
+    trialDays: 0,
+  },
+  TEAM: {
+    questionsPerMonth: 200,
+    questionsTotal: 0,
+    auditsPerMonth: 100,
+    auditsTotal: 0,
+    maxMembers: 5,
+    simulators: 'all',
+    hasOrganization: true,
+    hasAnalytics: true,
+    pricePerYear: 299,
+    trialDays: 0,
+  },
+  ENTERPRISE: {
+    questionsPerMonth: -1,
+    questionsTotal: 0,
+    auditsPerMonth: -1,
+    auditsTotal: 0,
+    maxMembers: -1,
+    simulators: 'all',
+    hasOrganization: true,
+    hasAnalytics: true,
+    pricePerYear: 500,
+    trialDays: 0,
+  },
 };
 
-// Hiérarchie : index plus élevé = plan supérieur
-const PLAN_ORDER: PlanName[] = ['FREE', 'BASIQUE', 'PRO'];
+const PLAN_ORDER: PlanName[] = ['FREE', 'STARTER', 'PROFESSIONAL', 'TEAM', 'ENTERPRISE'];
 
 export function getPlanQuota(plan: PlanName): PlanQuota {
-  return PLAN_QUOTAS[plan];
+  return PLAN_QUOTAS[plan] || PLAN_QUOTAS.FREE;
 }
 
 export function isUnlimited(value: number): boolean {
@@ -39,13 +101,15 @@ export function isPaidPlan(plan: PlanName): boolean {
 export function getPlanDisplayName(plan: PlanName): string {
   const names: Record<PlanName, string> = {
     FREE: 'Gratuit',
-    BASIQUE: 'Basique',
-    PRO: 'Pro',
+    STARTER: 'Starter',
+    PROFESSIONAL: 'Professional',
+    TEAM: 'Team',
+    ENTERPRISE: 'Enterprise',
   };
   return names[plan];
 }
 
-/** Remises volume : 3-4 users → -10%, 5-9 → -15%, 10+ → -20% */
+/** Remises volume sièges (TEAM/ENTERPRISE) : 3-4 → -10%, 5-9 → -15%, 10+ → -20% */
 function getVolumeDiscount(memberCount: number): number {
   if (memberCount >= 10) return 0.20;
   if (memberCount >= 5) return 0.15;
@@ -53,10 +117,6 @@ function getVolumeDiscount(memberCount: number): number {
   return 0;
 }
 
-/**
- * Calcule le prix total annuel pour une organisation.
- * Applique la remise volume dès 3 users.
- */
 export function calculateTotalPrice(plan: PlanName, memberCount: number): number {
   const quota = PLAN_QUOTAS[plan];
   if (memberCount <= 0) return 0;
@@ -64,11 +124,19 @@ export function calculateTotalPrice(plan: PlanName, memberCount: number): number
   return Math.round(memberCount * quota.pricePerYear * (1 - discount));
 }
 
-/**
- * Retourne le prix unitaire selon le nombre de membres (avec remise volume).
- */
 export function getUnitPrice(plan: PlanName, memberCount: number): number {
   const quota = PLAN_QUOTAS[plan];
   const discount = getVolumeDiscount(memberCount);
   return Math.round(quota.pricePerYear * (1 - discount));
 }
+
+/** Simulateurs de base (STARTER) */
+export const BASIC_SIMULATORS = ['its', 'tva', 'is', 'paie', 'patente'];
+
+/** Tous les simulateurs (PROFESSIONAL+) */
+export const ALL_SIMULATORS = [
+  'its', 'tva', 'is', 'paie', 'patente',
+  'solde-liquidation', 'retenue-source', 'is-parapetrolier',
+  'iba', 'ircm', 'irf-loyers', 'taxe-immobiliere',
+  'enregistrement', 'cession-parts', 'contribution-fonciere', 'igf',
+];

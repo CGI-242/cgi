@@ -2,12 +2,14 @@ import React from "react";
 import { View, Text, TouchableOpacity, TextInput, ActivityIndicator } from "react-native";
 import type { AdminOrganization } from "@/lib/api/admin";
 
-type PlanKey = "FREE" | "BASIQUE" | "PRO";
+type PlanKey = "FREE" | "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE";
 
 export const PLAN_COLORS: Record<PlanKey, string> = {
   FREE: "#6b7280",
-  BASIQUE: "#3b82f6",
-  PRO: "#8b5cf6",
+  STARTER: "#3b82f6",
+  PROFESSIONAL: "#1A3A5C",
+  TEAM: "#8b5cf6",
+  ENTERPRISE: "#d97706",
 };
 
 export const STATUS_COLORS: Record<string, string> = {
@@ -40,7 +42,7 @@ interface OrganisationCardProps {
   actionLoading: string | null;
   seatsValue: string;
   onSeatsChange: (value: string) => void;
-  onActivate: (org: AdminOrganization, plan: "BASIQUE" | "PRO") => void;
+  onActivate: (org: AdminOrganization, plan: "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE") => void;
   onRenew: (org: AdminOrganization) => void;
   colors: any;
 }
@@ -147,7 +149,7 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
       ) : (
         <View style={{ flexDirection: "row", gap: 8 }}>
           <TouchableOpacity
-            onPress={() => onActivate(org, "BASIQUE")}
+            onPress={() => onActivate(org, "STARTER")}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 10, alignItems: "center" }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Basique</Text>

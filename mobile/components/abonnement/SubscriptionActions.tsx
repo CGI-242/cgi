@@ -36,18 +36,25 @@ export default function SubscriptionActions({
       {(plan === "FREE" || status === "EXPIRED") && (
         <View style={{ flexDirection: "row", gap: 10, marginBottom: 10 }}>
           <TouchableOpacity
-            onPress={() => onActivate("BASIQUE")}
+            onPress={() => onActivate("STARTER")}
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#3b82f6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.activateBasic")}</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>Starter</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => onActivate("PRO")}
+            onPress={() => onActivate("PROFESSIONAL")}
+            disabled={actionLoading}
+            style={{ flex: 1, backgroundColor: "#1A3A5C", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
+          >
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>Professional</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => onActivate("TEAM")}
             disabled={actionLoading}
             style={{ flex: 1, backgroundColor: "#8b5cf6", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
-            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>{t("abonnement.activatePro")}</Text>
+            <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>Team</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -62,7 +69,7 @@ export default function SubscriptionActions({
         </TouchableOpacity>
       )}
 
-      {plan === "BASIQUE" && status === "ACTIVE" && (
+      {(plan === "STARTER" || plan === "PROFESSIONAL") && status === "ACTIVE" && (
         <TouchableOpacity
           onPress={onUpgrade}
           disabled={actionLoading}

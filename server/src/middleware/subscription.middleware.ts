@@ -168,11 +168,11 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
 }
 
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {
-  return requirePlan('BASIQUE')(req, res, next);
+  return requirePlan('STARTER')(req, res, next);
 }
 
 export function requireEnterprise(req: AuthRequest, res: Response, next: NextFunction) {
-  return requirePlan('PRO')(req, res, next);
+  return requirePlan('ENTERPRISE')(req, res, next);
 }
 
 export async function requirePaid(req: AuthRequest, res: Response, next: NextFunction) {

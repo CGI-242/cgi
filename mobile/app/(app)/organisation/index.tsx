@@ -298,7 +298,8 @@ export default function OrganisationScreen() {
     const seatsNum = parseInt(seatsToAdd, 10) || 0;
     if (!orgId || seatsNum < 1) return;
 
-    const basePrice = org?.plan === "PRO" ? 115000 : 75000;
+    const basePrices: Record<string, number> = { ENTERPRISE: 500, TEAM: 299, PROFESSIONAL: 149, STARTER: 69 };
+    const basePrice = basePrices[org?.plan || "TEAM"] || 299;
     const totalAfter = currentSeats + seatsNum;
     let discount = 0;
     if (totalAfter >= 10) discount = 0.20;
@@ -309,7 +310,7 @@ export default function OrganisationScreen() {
 
     const ok = await confirm({
       title: t("seatRequest.confirmTitle"),
-      message: `${seatsNum} ${t("admin.seats")} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF`,
+      message: `${seatsNum} ${t("admin.seats")} x ${unitPrice}€ = ${totalPrice}€`,
       confirmLabel: t("seatRequest.submit"),
       cancelLabel: t("common.cancel"),
     });

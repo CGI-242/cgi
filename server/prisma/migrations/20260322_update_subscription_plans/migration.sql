@@ -1,0 +1,7 @@
+-- Mise à jour enum SubscriptionPlan : BASIQUE/PRO → STARTER/PROFESSIONAL/TEAM/ENTERPRISE
+
+-- Ajouter les nouvelles valeurs
+ALTER TYPE "SubscriptionPlan" ADD VALUE IF NOT EXISTS 'STARTER';
+ALTER TYPE "SubscriptionPlan" ADD VALUE IF NOT EXISTS 'PROFESSIONAL';
+ALTER TYPE "SubscriptionPlan" ADD VALUE IF NOT EXISTS 'TEAM';
+ALTER TYPE "SubscriptionPlan" ADD VALUE IF NOT EXISTS 'ENTERPRISE';

@@ -47,7 +47,7 @@ export default function AdminScreen() {
 
   useEffect(() => { loadOrgs(); }, [loadOrgs]);
 
-  const handleActivate = async (org: AdminOrganization, plan: "BASIQUE" | "PRO") => {
+  const handleActivate = async (org: AdminOrganization, plan: "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE") => {
     const seats = parseInt(seatsInput[org.id] || "", 10);
     if (!seats || seats < 1) {
       toast(t("admin.enterSeats"), "error");
@@ -58,11 +58,12 @@ export default function AdminScreen() {
       return;
     }
     const n = seats;
-    const unitPrice = plan === "BASIQUE"
-      ? (n >= 10 ? 58500 : n >= 5 ? 63750 : n >= 3 ? 67500 : 75000)
-      : (n >= 10 ? 92000 : n >= 5 ? 97750 : n >= 3 ? 103500 : 115000);
+    const basePrices: Record<string, number> = { STARTER: 69, PROFESSIONAL: 149, TEAM: 299, ENTERPRISE: 500 };
+    const base = basePrices[plan] || 299;
+    const discount = n >= 10 ? 0.20 : n >= 5 ? 0.15 : n >= 3 ? 0.10 : 0;
+    const unitPrice = Math.round(base * (1 - discount));
     const totalPrice = unitPrice * n;
-    const confirmMsg = `${n} ${t("admin.seats")} x ${unitPrice.toLocaleString("fr-FR")} = ${totalPrice.toLocaleString("fr-FR")} XAF/an`;
+    const confirmMsg = `${n} ${t("admin.seats")} x ${unitPrice}€ = ${totalPrice}€/an`;
 
     const ok = await confirm({
       title: `${t("admin.confirmActivation")} ${plan} — "${org.name}" ?`,
@@ -74,7 +75,7 @@ export default function AdminScreen() {
     doActivate(org.id, plan, n);
   };
 
-  const doActivate = async (orgId: string, plan: "BASIQUE" | "PRO", paidSeats: number) => {
+  const doActivate = async (orgId: string, plan: "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE", paidSeats: number) => {
     setActionLoading(orgId);
     try {
       await adminApi.activateSubscription(orgId, plan, paidSeats);
