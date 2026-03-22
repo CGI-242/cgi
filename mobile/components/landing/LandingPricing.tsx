@@ -19,8 +19,23 @@ const PLANS = [
     color: "#6b7280",
     featureKeys: [
       "landing.pricingFeat5q",
+      "landing.pricingFeat3audit",
       "landing.pricingFeatCgiRead",
       "landing.pricingFeatAllSimTrial",
+    ],
+  },
+  {
+    nameKey: "landing.pricingStarter",
+    tag: "STARTER",
+    price: "69€",
+    periodKey: "landing.pricingPerYear",
+    color: "#3b82f6",
+    featureKeys: [
+      "landing.pricingFeat15q",
+      "landing.pricingFeat10audit",
+      "landing.pricingFeatCgiFull",
+      "landing.pricingFeat5sim",
+      "landing.pricingFeatHistory",
     ],
   },
   {
@@ -29,11 +44,12 @@ const PLANS = [
     price: "149€",
     periodKey: "landing.pricingPerYear",
     color: "#1A3A5C",
+    popular: true,
     featureKeys: [
       "landing.pricingFeat30q",
+      "landing.pricingFeat30audit",
       "landing.pricingFeatCgiFull",
       "landing.pricingFeatAllSim",
-      "landing.pricingFeat30audit",
       "landing.pricingFeatHistory",
     ],
   },
@@ -43,11 +59,10 @@ const PLANS = [
     price: "299€",
     periodKey: "landing.pricingPerYear",
     color: "#8b5cf6",
-    popular: true,
     featureKeys: [
       "landing.pricingFeat200q",
-      "landing.pricingFeatAllSim",
       "landing.pricingFeat100audit",
+      "landing.pricingFeatAllSim",
       "landing.pricingFeatOrg",
       "landing.pricingFeatAnalytics",
       "landing.pricingFeatPriority",
@@ -87,9 +102,10 @@ export default function LandingPricing({ isMobile }: Props) {
 
       <View
         style={{
-          flexDirection: isMobile ? "column" : "row",
+          flexDirection: "row",
+          flexWrap: "wrap",
           gap: 16,
-          maxWidth: 1060,
+          maxWidth: 1200,
           alignSelf: "center",
           width: "100%",
           justifyContent: "center",
@@ -99,8 +115,9 @@ export default function LandingPricing({ isMobile }: Props) {
           <View
             key={plan.tag}
             style={{
-              flex: isMobile ? undefined : 1,
-              maxWidth: isMobile ? undefined : 340,
+              width: isMobile ? "100%" : "48%",
+              maxWidth: isMobile ? undefined : 280,
+              flexGrow: isMobile ? undefined : 1,
               borderRadius: 16,
               borderWidth: plan.popular ? 2 : 1,
               borderColor: plan.popular
