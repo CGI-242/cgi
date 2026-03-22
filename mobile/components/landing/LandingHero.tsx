@@ -15,7 +15,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
 
   const stats = [
     { value: "1", label: "Pays couvert" },
-    { value: "2 263", label: "Articles de loi" },
+    { value: "2 235", label: "Articles de loi" },
     { value: "16", label: "Simulateurs" },
     { value: "IA", label: "Assistant intelligent" },
   ];

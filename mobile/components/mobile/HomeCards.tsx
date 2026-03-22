@@ -19,7 +19,7 @@ function getGreeting(t: (key: string) => string) {
 }
 
 const STATS = [
-  { labelKey: "dashboard.stats.articles", value: "2 263", icon: "document-text-outline" as const, color: "#00815d" },
+  { labelKey: "dashboard.stats.articles", value: "2 235", icon: "document-text-outline" as const, color: "#00815d" },
   { labelKey: "dashboard.stats.simulators", value: "16", icon: "calculator-outline" as const, color: "#4f46e5" },
   { labelKey: "dashboard.stats.tfnc", value: "64", icon: "library-outline" as const, color: "#d97706" },
   { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#9333ea" },
