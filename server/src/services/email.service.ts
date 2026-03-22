@@ -474,4 +474,8 @@ export class EmailService {
     `;
     await sendMail(email, subject, html);
   }
+
+  static async sendGeneric(to: string, subject: string, html: string): Promise<void> {
+    await sendMail(to, subject, html);
+  }
 }

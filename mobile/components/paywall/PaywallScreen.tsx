@@ -1,9 +1,12 @@
-import { View, Text, TouchableOpacity, ScrollView, Linking, StyleSheet, Platform, Alert } from "react-native";
+import { useState } from "react";
+import { View, Text, TouchableOpacity, ScrollView, TextInput, StyleSheet, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/lib/store/auth";
 import { useToast } from "@/components/ui/ToastProvider";
+import { api } from "@/lib/api/client";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLANS = [
   { key: "free", questions: "5 total", audits: "3 total", price: "0", simulators: "16 (7j)" },
@@ -33,34 +36,26 @@ export default function PaywallScreen() {
   const logout = useAuthStore((s) => s.logout);
   const { toast } = useToast();
 
-  const PHONE = "+242053799959";
-  const EMAIL = "facturation@normx-ai.com";
+  const [subject, setSubject] = useState("Souscription CGI242");
+  const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
-  const handleWhatsApp = async () => {
-    const url = `https://wa.me/${PHONE.replace(/\+/g, "")}?text=${encodeURIComponent("Bonjour, je souhaite souscrire à CGI242.")}`;
-    const canOpen = await Linking.canOpenURL(url);
-    if (canOpen) {
-      Linking.openURL(url);
-    } else {
-      // Fallback : ouvrir dans le navigateur
-      Linking.openURL(url).catch(() => {
-        toast(t("paywall.whatsappError"), "error");
-      });
+  const handleSend = async () => {
+    if (!subject.trim() || !message.trim()) {
+      toast(t("paywall.formRequired"), "error");
+      return;
     }
-  };
-
-  const handleEmail = async () => {
-    const url = `mailto:${EMAIL}?subject=Souscription%20CGI242`;
+    setSending(true);
     try {
-      await Linking.openURL(url);
+      await api.post("/auth/contact", { subject: subject.trim(), message: message.trim() });
+      setSent(true);
+      toast(t("paywall.messageSent"), "success");
+      setMessage("");
     } catch {
-      // Sur le web sans client mail, copier l'email
-      if (Platform.OS === "web" && typeof navigator !== "undefined" && navigator.clipboard) {
-        await navigator.clipboard.writeText(EMAIL);
-        toast(`${EMAIL} ${t("paywall.emailCopied")}`, "success");
-      } else {
-        toast(EMAIL, "info");
-      }
+      toast(t("paywall.messageError"), "error");
+    } finally {
+      setSending(false);
     }
   };
 
@@ -71,7 +66,7 @@ export default function PaywallScreen() {
           <Ionicons name="lock-closed" size={48} color={colors.primary} />
         </View>
 
-        <Text style={[styles.title, { color: colors.text }]}>
+        <Text style={[styles.title, { color: colors.text, fontFamily: fonts.heading, fontWeight: fontWeights.heading }]}>
           {t("paywall.title")}
         </Text>
 
@@ -166,28 +161,58 @@ export default function PaywallScreen() {
           ))}
         </View>
 
+        {/* Description paiement */}
         <Text style={[styles.contactDesc, { color: colors.textSecondary }]}>
           {t("paywall.contactDesc")}
         </Text>
 
-        <TouchableOpacity
-          style={[styles.ctaButton, { backgroundColor: "#25D366" }]}
-          onPress={handleWhatsApp}
-          activeOpacity={0.8}
-        >
-          <Ionicons name="logo-whatsapp" size={20} color="#fff" style={{ marginRight: 8 }} />
-          <Text style={styles.ctaText}>WhatsApp</Text>
-        </TouchableOpacity>
+        {/* Formulaire de contact */}
+        <View style={[styles.formCard, { backgroundColor: colors.card, borderColor: colors.border }]}>
+          <Text style={[styles.formTitle, { color: colors.text, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
+            {t("paywall.formTitle")}
+          </Text>
 
-        <TouchableOpacity
-          style={[styles.ctaButton, { backgroundColor: colors.primary }]}
-          onPress={handleEmail}
-          activeOpacity={0.8}
-        >
-          <Ionicons name="mail-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
-          <Text style={styles.ctaText}>{t("paywall.contactCta")}</Text>
-        </TouchableOpacity>
+          <Text style={[styles.formLabel, { color: colors.textSecondary }]}>{t("paywall.formSubject")}</Text>
+          <TextInput
+            style={[styles.formInput, { backgroundColor: colors.input, color: colors.text, borderColor: colors.border, fontFamily: fonts.regular }]}
+            value={subject}
+            onChangeText={setSubject}
+            placeholder={t("paywall.formSubjectPlaceholder")}
+            placeholderTextColor={colors.textMuted}
+          />
 
+          <Text style={[styles.formLabel, { color: colors.textSecondary }]}>{t("paywall.formMessage")}</Text>
+          <TextInput
+            style={[styles.formInput, styles.formTextarea, { backgroundColor: colors.input, color: colors.text, borderColor: colors.border, fontFamily: fonts.regular }]}
+            value={message}
+            onChangeText={setMessage}
+            placeholder={t("paywall.formMessagePlaceholder")}
+            placeholderTextColor={colors.textMuted}
+            multiline
+            numberOfLines={4}
+            textAlignVertical="top"
+          />
+
+          <TouchableOpacity
+            style={[styles.formButton, { backgroundColor: sent ? "#059669" : colors.primary, opacity: sending ? 0.6 : 1 }]}
+            onPress={handleSend}
+            disabled={sending || sent}
+            activeOpacity={0.8}
+          >
+            {sending ? (
+              <ActivityIndicator size="small" color="#fff" />
+            ) : (
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Ionicons name={sent ? "checkmark-circle" : "send"} size={18} color="#fff" style={{ marginRight: 8 }} />
+                <Text style={[styles.formButtonText, { fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
+                  {sent ? t("paywall.messageSent") : t("paywall.formSend")}
+                </Text>
+              </View>
+            )}
+          </TouchableOpacity>
+        </View>
+
+        {/* Déconnexion */}
         <TouchableOpacity
           style={styles.logoutButton}
           onPress={logout}
@@ -216,8 +241,13 @@ const styles = StyleSheet.create({
   cellHeader: { fontSize: 11, fontWeight: "700", textTransform: "uppercase", letterSpacing: 0.5 },
   cellText: { fontSize: 14 },
   contactDesc: { fontSize: 15, textAlign: "center", lineHeight: 20, marginTop: 20, marginBottom: 20, maxWidth: 400 },
-  ctaButton: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingVertical: 14, paddingHorizontal: 28, width: "100%", maxWidth: 340, marginBottom: 16 },
-  ctaText: { color: "#fff", fontSize: 18, fontWeight: "700" },
-  logoutButton: { flexDirection: "row", alignItems: "center", paddingVertical: 10 },
+  formCard: { width: "100%", maxWidth: 560, borderWidth: 1, padding: 20, marginBottom: 20 },
+  formTitle: { fontSize: 18, fontWeight: "700", marginBottom: 16, textAlign: "center" },
+  formLabel: { fontSize: 14, fontWeight: "600", marginBottom: 6 },
+  formInput: { borderWidth: 1, paddingHorizontal: 12, paddingVertical: 10, fontSize: 16, marginBottom: 14 },
+  formTextarea: { minHeight: 100 },
+  formButton: { paddingVertical: 14, alignItems: "center", marginTop: 4 },
+  formButtonText: { color: "#fff", fontSize: 16, fontWeight: "700" },
+  logoutButton: { flexDirection: "row", alignItems: "center", paddingVertical: 10, marginTop: 10 },
   logoutText: { fontSize: 16, fontWeight: "600" },
 });

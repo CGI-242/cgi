@@ -1079,4 +1079,36 @@ router.post("/change-password", requireAuth, sensitiveLimiter, validate({ body: 
   }
 });
 
+// POST /api/auth/contact — Formulaire de contact (accessible même avec abo expiré)
+router.post("/contact", requireAuth, async (req: AuthRequest, res: Response) => {
+  try {
+    const { subject, message } = req.body;
+    if (!subject || !message) {
+      res.status(400).json({ error: "Objet et message requis" });
+      return;
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: req.userId! },
+      select: { email: true, firstName: true, lastName: true },
+    });
+
+    const { EmailService } = require("../services/email.service");
+    const html = `
+      <h2>Message de contact — CGI 242</h2>
+      <p><strong>De :</strong> ${user?.firstName || ""} ${user?.lastName || ""} (${user?.email || req.userEmail})</p>
+      <p><strong>Objet :</strong> ${subject}</p>
+      <hr/>
+      <p>${message.replace(/\n/g, "<br/>")}</p>
+    `;
+
+    await EmailService.sendGeneric("facturation@normx-ai.com", `[CGI242] ${subject}`, html);
+
+    res.json({ message: "Message envoyé" });
+  } catch (err) {
+    logger.error("Erreur envoi contact", err);
+    res.status(500).json({ error: "Erreur envoi du message" });
+  }
+});
+
 export default router;
