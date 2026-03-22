@@ -515,6 +515,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
   const currentNode = navStack.length > 0 ? navStack[navStack.length - 1] : null;
 
   const goBack = useCallback(() => {
+    setSearch("");
     if (selectedArticle) {
       setSelectedArticle(null);
     } else if (navStack.length > 0) {
@@ -524,6 +525,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
 
   const handleSelectNode = useCallback((node: SommaireNode) => {
     setSelectedArticle(null);
+    setSearch("");
     setNavStack((prev) => [...prev, node]);
   }, []);
 
