@@ -187,7 +187,7 @@ ITS, IS, TVA, Patente, IRCM, IRF, IBA, IGF, Enregistrement, Cession de parts, Co
 
 ## 5. Points d'attention
 
-- **Bundle web 6.5 Mo** : taille elevee mais acceptable pour une SPA avec 154 JSON embarques
+- **Bundle web 6.3 Mo** : compresse a ~1 Mo via gzip niveau 6 (nginx). 154 JSON embarques, ratio compression ~85%
 - **Certificat SSL** : permissions privkey corrigees (chmod 640), a surveiller au renouvellement
 - **Nginx systeme** : desactive, seul Docker nginx tourne
 - **node_modules VPS** : souvent corrompu, necessie `sudo rm -rf node_modules && npm install` avant build
