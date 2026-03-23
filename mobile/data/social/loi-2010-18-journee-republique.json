@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°2010-18 du 27 novembre 2010 portant institution de la journée de la République",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "1.3",
+    "chapitre_titre": "Autres textes non codifiés de droit du travail",
+    "section": "1.3.4",
+    "section_titre": "Institution de la journée de la République",
+    "page_source": 153
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du 28 novembre",
+      "texte": [
+        "Le 28 novembre de chaque année est institué journée de la République, en commémoration de la proclamation de la République du Congo."
+      ],
+      "mots_cles": ["28 novembre", "journée de la République", "commémoration"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Jour férié, chômé et payé",
+      "texte": [
+        "La journée du 28 novembre est fériée, chômée, payée et fêtée sur toute l'étendue du territoire national.",
+        "Le régime des rétributions, rémunérations, salaires et indemnités de tous genres ne subira aucune modification de ce fait."
+      ],
+      "mots_cles": ["férié", "chômé", "payé", "rémunération"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Abrogation",
+      "texte": [
+        "Est abrogée la loi n°42-59 du 2 octobre 1959 fixant la date de la fête nationale de la République du Congo au 28 novembre de chaque année."
+      ],
+      "mots_cles": ["abrogation"],
+      "statut": "en vigueur"
+    }
+  ]
+}

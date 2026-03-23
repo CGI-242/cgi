@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°2011-31 du 15 juillet 2011 instituant le système de sécurité sociale",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "2.2",
+    "chapitre_titre": "Textes non codifiés de sécurité sociale",
+    "section": "2.2.2",
+    "section_titre": "Loi instituant le système de sécurité sociale",
+    "page_source": 210,
+    "note": "Modifiée par la loi n°14-2023 du 27 mai 2023"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du système de sécurité sociale",
+      "texte": [
+        "Il est institué un système de sécurité sociale visant à protéger les travailleurs et leur famille, ainsi que les autres catégories de la population, contre les risques et les aléas inhérents au travail et à la vie."
+      ],
+      "mots_cles": ["système", "sécurité sociale", "protection", "risques"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Dispositions générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Missions de la sécurité sociale",
+      "texte": [
+        "Les missions de la sécurité sociale consistent, notamment, à :",
+        "- mener des actions d'investigation, d'information, de conseil et de prévention en matière de risques sociaux ;",
+        "- assister et soutenir les bénéficiaires dans les divers actes de la vie ;",
+        "- contribuer à l'épanouissement et à l'insertion des bénéficiaires dans la société ;",
+        "- fournir directement aux bénéficiaires les diverses prestations pécuniaires ;",
+        "- assurer la couverture totale ou partielle des charges, notamment, celles de la maladie et de la famille ;",
+        "- assurer les soins et garantir aux bénéficiaires des mesures d'accompagnement adaptées aux besoins de la personne ;",
+        "- garantir les revenus des travailleurs contre les risques susceptibles de les amoindrir ou de les supprimer."
+      ],
+      "mots_cles": ["missions", "prévention", "prestations", "couverture maladie", "accompagnement"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Dispositions générales"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Régimes obligatoires et non obligatoires",
+      "texte": [
+        "Le système de sécurité sociale comprend les régimes obligatoires et les régimes non obligatoires.",
+        "Un régime est obligatoire lorsque la seule appartenance à une catégorie de population déterminée par la loi suffit à conférer la qualité d'affilié au régime.",
+        "Les régimes obligatoires sont fondés sur les principes de la répartition et de la solidarité nationale.",
+        "Les régimes non obligatoires sont fondés sur les principes de la capitalisation et du libre arbitre individuel."
+      ],
+      "mots_cles": ["régimes obligatoires", "régimes non obligatoires", "répartition", "capitalisation"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Dispositions générales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Personnes assujetties",
+      "texte": [
+        "(Loi n°2023-14) Sont assujettis à un ou plusieurs régimes de sécurité sociale obligatoires :",
+        "- les Congolais résidant au Congo, remplissant les conditions d'affiliation ;",
+        "- les travailleurs, salariés ou indépendants, exerçant leur activité au Congo sans distinction de nationalité ;",
+        "- les agents de l'État, civils et militaires, assimilés et autres, évoluant dans la fonction publique, dans les institutions et établissements publics.",
+        "La loi peut étendre le champ d'application à des catégories nouvelles de bénéficiaires."
+      ],
+      "mots_cles": ["assujettis", "Congolais", "salariés", "indépendants", "fonctionnaires"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Dispositions générales"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Garanties aux affiliés",
+      "texte": [
+        "Le système de sécurité sociale ainsi que toutes les institutions de sécurité sociale sont tenus de garantir à l'affilié :",
+        "- les prestations du régime auquel il appartient ;",
+        "- le respect de sa dignité et de son intégrité ;",
+        "- le respect de son consentement lorsqu'il est apte à l'exprimer ou, à défaut, le consentement de son représentant légal ;",
+        "- la confidentialité des informations le concernant, sauf dispositions législatives contraires ;",
+        "- l'information complète sur ses devoirs et ses droits."
+      ],
+      "mots_cles": ["garanties", "dignité", "consentement", "confidentialité", "information"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Dispositions générales"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Organismes de sécurité sociale",
+      "texte": [
+        "(Loi n°2023-14) Le système de sécurité sociale se fonde sur les organismes de droit public ou de droit privé.",
+        "Les organismes de droit public ou de droit privé concourent à la vie et à l'animation des régimes de sécurité sociale. Ils ont la dénomination de caisse ou de mutuelle. Ils peuvent aussi adopter toute autre dénomination.",
+        "Leur objet explicité dans les statuts doit être conforme aux missions de la sécurité sociale définies à l'article 2 de la loi n°31-2011 du 15 juillet 2011 instituant le système de sécurité sociale.",
+        "Ils peuvent être installés sur l'ensemble du territoire national."
+      ],
+      "mots_cles": ["organismes", "droit public", "droit privé", "caisse", "mutuelle"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 1 / Section 1 - Organismes de sécurité sociale"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Organismes de droit public",
+      "texte": [
+        "(Loi n°2023-14) Les organismes de prévoyance sociale de droit public gèrent les régimes obligatoires.",
+        "Ils peuvent aussi gérer, conformément aux prescriptions légales ou réglementaires, les régimes non obligatoires."
+      ],
+      "mots_cles": ["droit public", "régimes obligatoires"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 1 / Section 1"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Organismes de droit privé",
+      "texte": [
+        "(Loi n°2023-14) Les organismes de prévoyance sociale de droit privé doivent être agréées par arrêté du Ministre en charge de la sécurité sociale, sans préjudice des autres dispositions légales et réglementaires en matière de création des sociétés de droit privé.",
+        "Les conditions et les modalités d'obtention dudit agrément sont fixées par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["droit privé", "agrément", "arrêté", "Ministre"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 1 / Section 1"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Gestion des régimes non obligatoires par le privé",
+      "texte": [
+        "(Loi n°2023-14) Les organismes de prévoyance sociale de droit privé gèrent les régimes non obligatoires.",
+        "Ils peuvent proposer aux affiliés des régimes obligatoires des compléments d'actions et des prestations sociales dans les conditions définies par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["droit privé", "régimes non obligatoires", "compléments"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 1 / Section 1"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Organe de participation sociale",
+      "texte": [
+        "Il est institué, pour chaque organisme de sécurité sociale, un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de l'organisme.",
+        "Un décret en Conseil des Ministres fixe les attributions, la composition et le fonctionnement de l'organe de participation sociale."
+      ],
+      "mots_cles": ["participation sociale", "bénéficiaires", "avis"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 1 / Section 2 - Organe de participation sociale"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Tutelle du ministère",
+      "texte": [
+        "Tous les organismes de droit public et de droit privé ainsi que les autres intervenants de sécurité sociale sont placés sous la tutelle du ministère en charge de la sécurité sociale."
+      ],
+      "mots_cles": ["tutelle", "ministère", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 2 - Organisation administrative"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Autorité de tutelle",
+      "texte": [
+        "(Loi n°2023-14) L'autorité de tutelle est chargée, notamment, de :",
+        "- élaborer la politique nationale de la prévoyance sociale ;",
+        "- s'assurer de l'application de ladite politique par les différentes parties prenantes ;",
+        "- contrôler la réalisation effective des objectifs et l'application de la réglementation en vigueur.",
+        "Le pouvoir de tutelle s'exerce en matière de :",
+        "- nomination et de révocation du directeur général ;",
+        "- suspension et proposition de dissolution du conseil d'administration ;",
+        "- contrôle de l'application effective de la politique nationale de la prévoyance sociale ;",
+        "- évaluation de la gestion de l'organisme sur la base des indicateurs de gestion, notamment les ratios prudentiels et les normes de performance, adoptés par le Conseil des Ministres de tutelle de la conférence interafricaine de la prévoyance sociale (CIPRES) ;",
+        "- évaluation périodique des conventions d'objectifs conclues avec le conseil d'administration des organismes ;",
+        "- approbation des actes du conseil d'administration."
+      ],
+      "mots_cles": ["autorité tutelle", "politique nationale", "CIPRES", "ratios prudentiels", "contrôle"],
+      "statut": "en vigueur",
+      "section": "Titre 2 - Organisation du système / Chapitre 2"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Financement de la sécurité sociale",
+      "texte": [
+        "Les différents régimes de sécurité sociale sont financés par :",
+        "- les cotisations sociales ;",
+        "- les prélèvements sociaux ;",
+        "- les subventions de l'État ;",
+        "- les dons et legs ;",
+        "- les produits des placements et autres revenus générés par les organismes."
+      ],
+      "mots_cles": ["financement", "cotisations", "prélèvements", "subventions"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Du financement de la sécurité sociale"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Assiette des cotisations",
+      "texte": [
+        "Les traitements, indemnités, gratifications, salaires, émoluments et avantages de toute nature concourant à la formation du revenu global des personnes entrent dans la base de calcul des cotisations sociales.",
+        "La contre-valeur des avantages en nature est évaluée conformément aux dispositions de l'article 39 du Code général des impôts."
+      ],
+      "mots_cles": ["assiette", "cotisations", "avantages en nature", "CGI Art. 39"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Du financement de la sécurité sociale"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Taux de cotisations des régimes obligatoires",
+      "texte": [
+        "Pour les régimes obligatoires de sécurité sociale, les taux de cotisations sociales sont fixés par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["taux cotisations", "décret", "régimes obligatoires"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Du financement de la sécurité sociale"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Taux régimes non obligatoires",
+      "texte": [
+        "Pour les régimes non obligatoires, le taux maximal des cotisations sociales et le niveau minimum des prestations sont fixés par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["taux maximal", "régimes non obligatoires", "prestations minimales"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Du financement de la sécurité sociale"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Comité national de financement",
+      "texte": [
+        "(Loi n°2023-14) Il est institué un comité national de financement de la sécurité sociale, qui a pour missions de :",
+        "- déterminer les conditions générales de l'équilibre financier des régimes obligatoires de sécurité sociale ;",
+        "- proposer le niveau d'intervention de l'État dans le financement de chaque régime obligatoire de sécurité sociale ;",
+        "- proposer les types et les niveaux de prélèvements sociaux à opérer pour le financement de la sécurité sociale.",
+        "Un décret en Conseil des Ministres fixe la composition et le fonctionnement du comité national de financement de la sécurité sociale."
+      ],
+      "mots_cles": ["comité financement", "équilibre financier", "prélèvements sociaux"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Du financement de la sécurité sociale"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Gestion financière et comptable",
+      "texte": [
+        "(Loi n°2023-14) La gestion financière et comptable des organismes exerçant dans le domaine de la sécurité sociale obéit aux règles et principes :",
+        "- du plan comptable de référence de la conférence interafricaine de la prévoyance sociale, pour les organismes affiliés ;",
+        "- du plan comptable de l'OHADA, pour les organismes privés ;",
+        "- du plan comptable de la conférence interafricaine des marchés d'assurances (CIMA), pour les sociétés d'assurances."
+      ],
+      "mots_cles": ["gestion comptable", "CIPRES", "OHADA", "CIMA", "plan comptable"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Interdiction de dons",
+      "texte": [
+        "Il est interdit à tout organisme de sécurité sociale de faire des dons à un établissement, à une œuvre, à une association, à une institution ou aux personnes physiques non affiliées."
+      ],
+      "mots_cles": ["interdiction", "dons", "non affiliés"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Régime fiscal privilégié",
+      "texte": [
+        "(Loi n°2023-14) Les organismes de prévoyance sociale bénéficient d'un régime fiscal privilégié.",
+        "Ils sont exonérés de tous impôts, taxes et droits de douanes sur leurs activités sociales.",
+        "Ils sont exemptés de droits de timbre et d'enregistrement pour les pièces et les actes relatifs à l'application de la législation de prévoyance sociale.",
+        "Les privilèges édictés aux alinéas ci-dessus ne s'étendent pas aux activités à but lucratif réalisées par ces organismes."
+      ],
+      "mots_cles": ["exonération", "impôts", "taxes", "droits de douane", "timbres"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Déductibilité des cotisations",
+      "texte": [
+        "Les montants versés aux organismes de sécurité sociale de droit public au titre des cotisations sociales sont déduits des sommes imposables.",
+        "Ceux versés aux organismes de sécurité sociale de droit privé sont déductibles dans les limites fixées par arrêté conjoint du Ministre chargé des finances et du Ministre chargé de la sécurité sociale."
+      ],
+      "mots_cles": ["déductibilité", "cotisations", "imposable"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Régime fiscal des prestations",
+      "texte": [
+        "Les prestations sociales servies par les organismes de sécurité sociale sont, selon les cas, imposables ou affranchies de l'impôt.",
+        "Le régime fiscal est établi conformément aux dispositions des articles 37 et 38 du Code général des impôts portant respectivement sur les pensions et rentes viagères imposables et sur les exonérations applicables aux prestations sociales.",
+        "Pour les prestations non prises en compte par le Code général des impôts un arrêté conjoint du Ministre chargé des finances et du Ministre chargé de la sécurité sociale détermine leur régime fiscal."
+      ],
+      "mots_cles": ["prestations", "imposables", "exonérations", "CGI Art. 37-38"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Contrôles",
+      "texte": [
+        "(Loi n°2023-14) Les organismes de prévoyance sociale, outre les organes de contrôle interne, sont soumis aux contrôles de l'État et de la Conférence interafricaine de la prévoyance sociale.",
+        "Tout travailleur passant du régime des pensions des agents de l'État à celui des risques professionnels et des pensions des travailleurs relevant du Code du travail et vice-versa, conserve l'intégralité des droits acquis qui seront entièrement validés par le régime d'accueil.",
+        "En aucune manière, il ne lui sera proposé un rachat, même partiel, des droits précités.",
+        "Une convention entre les deux organismes de prévoyance sociale doit être conclue afin de garantir le droit à pension de tout assuré ayant été assujetti durant sa carrière aux deux régimes."
+      ],
+      "mots_cles": ["contrôles", "État", "CIPRES", "droits acquis", "transfert régimes", "convention"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Contentieux",
+      "texte": [
+        "Le contentieux de la sécurité sociale relève de la compétence du tribunal du travail sauf dispositions législatives contraires attribuant ladite compétence à une autre juridiction."
+      ],
+      "mots_cles": ["contentieux", "tribunal du travail", "compétence"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Publication",
+      "texte": [
+        "La présente loi sera enregistrée, publiée au journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["publication"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Dispositions diverses et finales"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 137 : Arrêté n°9030 du 10 décembre 1986 instituant les comités d'hygiène et de sécurité dans les entreprises",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 94
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution des comités d'hygiène et de sécurité",
+      "texte": [
+        "[NB - Arrêté n°9030/MTERFPPS-DGT du 10 décembre 1986 instituant les comités d'hygiène et de sécurité dans les entreprises",
+        "Modifié par l'arrêté n°6800 du 17 décembre 1990]",
+        "Conformément aux dispositions de l'article 137 du Code du travail, il est institué auprès des établissements et entreprises industriels ou non, assujettis aux dispositions relatives à l'hygiène et à la sécurité au travail, des comités d'hygiène et sécurité ayant pour mission de définit et de mettre en œuvre la politique interne de prévention de tout risque professionnel."
+      ],
+      "mots_cles": ["comités d'hygiène", "sécurité", "institution", "article 137", "prévention"],
+      "statut": "en vigueur",
+      "section": "Comités d'hygiène et de sécurité"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Composition du comité",
+      "texte": [
+        "(Arrêté n°1990-6800) Le comité d'hygiène et sécurité est ainsi composé :",
+        "- président : le chef d'établissement ou d'entreprise ou son représentant ;",
+        "- membres :",
+        "  - le chef de service technique ;",
+        "  - le chef de service de sécurité ou l'agent chargé de questions de sécurités ;",
+        "  - 2 délégués de personnel pour les entreprises de 21 à 50 travailleurs ;",
+        "  - 3 délégués de personnel pour les entreprises de 51 à 100 travailleurs ;",
+        "  - 4 délégués de personnel pour les entreprises de 101 à 200 travailleurs ;",
+        "  - 5 délégués de personnel pour les entreprises de 201 à 250 travailleurs ;",
+        "  - 6 délégués de personnel pour les entreprises de 251 à 500 travailleurs ;",
+        "  - 7 délégués de personnel pour les entreprises de 501 à 1.000 travailleurs."
+      ],
+      "mots_cles": ["composition", "président", "chef d'établissement", "délégués", "effectif"],
+      "statut": "en vigueur",
+      "section": "Comités d'hygiène et de sécurité"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Désignation et mandat des membres",
+      "texte": [
+        "Les membres du comité d'hygiène et sécurité sont désignés en tenant compte de leurs connaissances techniques ou des aptitudes nécessaires en matière d'hygiène et sécurité au travail, leur mandat est d'un an renouvelable."
+      ],
+      "mots_cles": ["désignation", "mandat", "1 an", "renouvelable", "connaissances techniques"],
+      "statut": "en vigueur",
+      "section": "Comités d'hygiène et de sécurité"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Recours à des experts",
+      "texte": [
+        "Pour permettre aux membres du comité de se prononcer sur un sujet qui s'avère délicat, il peut être fait recours à la collaboration de toute personne qualifiée, ou à des organismes spécialisés. Ces personnes et organismes ont voix consultative et leurs conclusions n'engagent nullement le comité."
+      ],
+      "mots_cles": ["experts", "voix consultative", "organismes spécialisés"],
+      "statut": "en vigueur",
+      "section": "Attributions"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Missions du comité",
+      "texte": [
+        "(Arrêté n°1990-6800) Le comité d'hygiène et de sécurité est chargé :",
+        "- de définir la politique de prévention du risque professionnel dans l'entreprise et l'amélioration du milieu de travail ;",
+        "- d'aider à l'observation des prescriptions sur l'hygiène et sécurité du travail ;",
+        "- d'appliquer la réglementation et les consignes internes relatives à la prévention des risques professionnels ;",
+        "- de procéder aux enquêtes à l'occasion des cas d'accidents de travail et des maladies professionnelles révélées même si les conséquences ont dû être évitées ;",
+        "- de s'assurer du bon fonctionnement et du bon entretien des dispositifs de protection, de développer par tous moyens efficaces, l'intérêt d'observer strictement les règles de sécurité ;",
+        "- de procéder à l'inspection de l'établissement en vue de s'assurer de l'application des prescriptions législatives et réglementaires concernant la prévention des risques professionnels ;",
+        "- de se prononcer sur toutes mesures liées à l'amélioration sur le lieu de travail ;",
+        "- de procéder à l'identification et à l'évaluation des risques potentiels dans l'entreprise ;",
+        "- de faire le point à la fin de chaque année sur la situation de l'entreprise en matière de prévention des risques professionnels."
+      ],
+      "mots_cles": ["missions", "prévention", "risques professionnels", "enquêtes", "accidents", "inspection"],
+      "statut": "en vigueur",
+      "section": "Attributions"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Inspection de l'entreprise",
+      "texte": [
+        "Le comité d'hygiène et de sécurité procède à l'inspection de l'entreprise soit collectivement soit en commettant un ou plusieurs de ses membres."
+      ],
+      "mots_cles": ["inspection", "collectivement", "membres"],
+      "statut": "en vigueur",
+      "section": "Attributions"
+    },
+    {
+      "article": "Art. 6 bis",
+      "titre": "Délégation de certaines attributions",
+      "texte": [
+        "(Arrêté n°1990-6800) Le comité d'hygiène et de sécurité doit pour l'exécution de certaines de ses attributions, commettre certains de ses membres et certains travailleurs de l'entreprise s'occupant des questions de sécurité qui lui en font rapport."
+      ],
+      "mots_cles": ["délégation", "attributions", "rapport"],
+      "statut": "en vigueur",
+      "section": "Attributions"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Réunion trimestrielle",
+      "texte": [
+        "Le comité d'hygiène et sécurité se réunit une fois par trimestre sur la convocation du chef d'établissement ou d'entreprise. Toutefois, il est tenu de se réunir à la suite de tout accident qui a entraîné ou aurait pu entraîner des conséquences graves."
+      ],
+      "mots_cles": ["réunion", "trimestrielle", "accident", "convocation"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Réunions pendant les heures de travail",
+      "texte": [
+        "Les réunions doivent avoir lieu aux heures de travail, dans l'établissement. Le temps consacré aux réunions du comité est rémunéré comme temps de travail."
+      ],
+      "mots_cles": ["heures de travail", "rémunéré", "établissement"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Procès-verbaux des réunions",
+      "texte": [
+        "(Arrêté n°1990-6800) Les réunions doivent être sanctionnées par des procès-verbaux, les enquêtes des accidents du travail et maladies professionnelles ou du contrôle d'établissement par des rapports.",
+        "Les conclusions des réunions du comité d'hygiène et sécurité sont portées sur un registre. Les ampliations des procès-verbaux de réunions et des rapports d'enquête des accidents du travail et maladies professionnelles et du contrôle de l'entreprise ou l'établissement sont transmises à l'inspection régionale du travail et à tout membre du comité d'hygiène et sécurité."
+      ],
+      "mots_cles": ["procès-verbaux", "rapports", "registre", "inspection régionale"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 9 bis",
+      "titre": "Examen des rapports d'enquête",
+      "texte": [
+        "(Arrêté n°1990-6800) Le comité d'hygiène et sécurité examine ses rapports d'enquête des accidents du travail et des maladies professionnelles, les rapports de contrôle de l'entreprise aux fins de dégager les conclusions pour l'amélioration prévention risques professionnels et suit l'application des conclusions de ses réunions."
+      ],
+      "mots_cles": ["rapports", "enquête", "accidents", "conclusions", "amélioration"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Registre à disposition de l'inspecteur",
+      "texte": [
+        "Le registre doit être tenu à la disposition de l'inspecteur régional du travail et de tout agent chargé du contrôle et de tout membre du comité d'hygiène et sécurité."
+      ],
+      "mots_cles": ["registre", "inspecteur", "contrôle"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Organe consultatif",
+      "texte": [
+        "Le comité d'hygiène et sécurité est un organe consultatif, il fonctionne comme une commission technique spécialisée dépendante. La direction de l'établissement ou du comité d'entreprise dans les établissements où il en existe. Son instruction n'efface nullement la pleine et entière responsabilité tant pénale que pécuniaire du chef d'établissement."
+      ],
+      "mots_cles": ["organe consultatif", "commission technique", "responsabilité", "chef d'établissement"],
+      "statut": "en vigueur",
+      "section": "Fonctionnement"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Protection des membres du comité",
+      "texte": [
+        "(Arrêté n°1990-6800) Les membres travailleurs du comité d'hygiène et sécurité ainsi que les autres travailleurs chargés des questions de sécurité dans l'entreprise bénéficient de la protection en matière de licenciement prévue pour les délégués syndicaux."
+      ],
+      "mots_cles": ["protection", "licenciement", "délégués syndicaux"],
+      "statut": "en vigueur",
+      "section": "Dispositions transitoires et finales"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Entreprises de moins de 20 salariés",
+      "texte": [
+        "Dans les entreprises occupant moins de vingt salariés, où sont exécutés des travaux de nature à présenter une insécurité particulière pour le personnel, l'inspecteur régional du travail peut en imposer la création."
+      ],
+      "mots_cles": ["moins de 20 salariés", "insécurité", "inspecteur régional"],
+      "statut": "en vigueur",
+      "section": "Dispositions transitoires et finales"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "Le présent arrêté qui prend effet à compter de sa date de signature sera enregistré, publié au Journal Officiel et communiqué partout où besoin sera. Le directeur général du travail est outre chargé de son entière exécution."
+      ],
+      "mots_cles": ["entrée en vigueur", "Journal Officiel", "directeur général"],
+      "statut": "en vigueur",
+      "section": "Dispositions transitoires et finales"
+    }
+  ]
+}

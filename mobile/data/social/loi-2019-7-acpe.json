@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°7-2019 du 9 avril 2019 portant création de l'ACPE",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "1.3",
+    "chapitre_titre": "Autres textes non codifiés de droit du travail",
+    "section": "1.3.2",
+    "section_titre": "Agence Congolaise pour l'Emploi - ACPE",
+    "page_source": 145
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Création de l'ACPE",
+      "texte": [
+        "Il est créé un établissement public à caractère administratif, doté de la personnalité morale et de l'autonomie de gestion, dénommé : « Agence congolaise pour l'emploi », en sigle ACPE.",
+        "Le siège de l'agence congolaise pour l'emploi est fixé à Brazzaville.",
+        "Toutefois, il peut, en cas de besoin, être transféré en tout autre lieu du territoire national par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["ACPE", "création", "établissement public", "Brazzaville"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Tutelle",
+      "texte": [
+        "L'agence congolaise pour l'emploi est placée sous la tutelle du Ministre chargé de l'emploi."
+      ],
+      "mots_cles": ["tutelle", "Ministre de l'emploi"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Missions de l'ACPE",
+      "texte": [
+        "L'agence congolaise pour l'emploi a pour missions de :",
+        "- contrôler l'application des textes législatifs et réglementaires régissant le secteur de l'emploi ;",
+        "- assurer l'accueil, l'information et l'enregistrement des demandeurs d'emploi et l'accompagnement des employeurs dans l'identification de leurs besoins en recrutement ;",
+        "- créer et mettre à jour une base de données nationale sur l'emploi en termes d'offre et de demande et produire les statistiques y relatives ;",
+        "- prospecter les postes d'emploi en vue du placement des demandeurs d'emploi ;",
+        "- suivre et appuyer la recherche de l'emploi jusqu'au placement ;",
+        "- proposer des services d'orientation professionnels aux demandeurs d'emploi ;",
+        "- assurer en priorité l'accès des nationaux aux emplois et promouvoir leur évolution aux postes organiques dans les sociétés privées ;",
+        "- contrôler l'emploi des nationaux et des expatriés par la validation des contrats de travail et la délivrance des cartes de travail ;",
+        "- mettre en relation les offres et les demandes d'emploi ;",
+        "- contrôler les sociétés privées de placement des demandeurs d'emploi, intermédiaires du marché du travail."
+      ],
+      "mots_cles": ["missions", "emploi", "placement", "statistiques", "cartes de travail"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Ressources de l'ACPE",
+      "texte": [
+        "Les ressources de l'agence congolaise pour l'emploi sont constituées par :",
+        "- la subvention de l'État ;",
+        "- la quote-part du produit de la taxe unique sur les salaires au titre de la cotisation patronale affectée à son fonctionnement ;",
+        "- les droits de délivrance des autorisations d'emploi et des cartes de travail ;",
+        "- les produits des pénalités et des amendes ;",
+        "- les dons et legs ;",
+        "- toutes contributions se rapportant à ses missions."
+      ],
+      "mots_cles": ["ressources", "financement", "taxe sur salaires", "subvention"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Recouvrement par la sécurité sociale",
+      "texte": [
+        "La structure en charge de la sécurité sociale recouvre, pour le compte de l'agence congolaise pour l'emploi, la quote-part du produit de la taxe unique sur les salaires, au titre de la cotisation patronale, affectée à son fonctionnement."
+      ],
+      "mots_cles": ["recouvrement", "sécurité sociale", "taxe sur salaires"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Administration et direction",
+      "texte": [
+        "L'agence congolaise pour l'emploi est administrée par un comité de direction et gérée par une direction générale.",
+        "La direction générale de l'agence congolaise pour l'emploi est dirigée et animée par un directeur général, nommé par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["administration", "comité de direction", "direction générale"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Statuts",
+      "texte": [
+        "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion de l'agence congolaise pour l'emploi sont fixés par des statuts approuvés par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["statuts", "décret"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment celles de la loi n°022-88 du 17 septembre 1988, sera publiée au Journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "ONEMO", "publication"],
+      "statut": "en vigueur"
+    }
+  ]
+}

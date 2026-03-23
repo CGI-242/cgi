@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°2010-19 du 27 novembre 2010 adoptant un jour de fête nationale",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "1.3",
+    "chapitre_titre": "Autres textes non codifiés de droit du travail",
+    "section": "1.3.5",
+    "section_titre": "Jour de fête nationale - 15 août",
+    "page_source": 154
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du 15 août",
+      "texte": [
+        "Le 15 août de chaque année est adopté comme jour de fête nationale, en commémoration de la proclamation de l'Indépendance de la République du Congo."
+      ],
+      "mots_cles": ["15 août", "fête nationale", "Indépendance"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Jour férié, chômé et payé",
+      "texte": [
+        "La journée du 15 août est fériée, chômée, payée et fêtée sur toute l'étendue du territoire national.",
+        "Le régime des rétributions, rémunérations, salaires et indemnités de tous genres ne subira aucune modification de ce fait."
+      ],
+      "mots_cles": ["férié", "chômé", "payé"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge toutes dispositions antérieures contraires, sera enregistrée, publiée au journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "publication"],
+      "statut": "en vigueur"
+    }
+  ]
+}

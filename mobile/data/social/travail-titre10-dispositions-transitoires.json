@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Dispositions transitoires",
+    "section": "Titre 10",
+    "section_titre": "Dispositions transitoires",
+    "page_source": 72
+  },
+  "articles": [
+    {
+      "article": "Art. 262",
+      "titre": "Mise en conformité des syndicats",
+      "texte": [
+        "(Loi n°06-96) Les syndicats et les associations professionnelles existant à la date d'entrée en vigueur de la présente loi doivent, dans les six mois qui suivent sa promulgation, s'y conformer."
+      ],
+      "mots_cles": ["syndicats", "associations professionnelles", "conformité", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 262-2",
+      "titre": "Déclaration des entrepreneurs de travail temporaire",
+      "texte": [
+        "(Loi n°06-96) Les entrepreneurs de travail temporaire exerçant leur activité à la date d'entrée en vigueur de la présente loi sont tenus aux déclarations prévues à l'article 73-2."
+      ],
+      "mots_cles": ["travail temporaire", "déclaration", "entrepreneurs"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 263",
+      "titre": "Application aux contrats en cours",
+      "texte": [
+        "(Loi n°06-96) Les dispositions de la présente loi sont de plein droit applicables aux contrats individuels en cours.",
+        "Elles ne peuvent constituer une cause de rupture de ces contrats.",
+        "Toute clause d'un contrat en cours qui ne serait pas conforme aux dispositions de la présente loi, d'un décret ou arrêté pris pour son application sera modifié dans un délai de six mois à compter de la publication de la présente loi, du décret ou arrêté en cause. En cas de refus de l'une des parties, la juridiction compétente pourra ordonner, sous peine d'astreinte, de procéder aux modifications qui seront jugées nécessaires."
+      ],
+      "mots_cles": ["contrats en cours", "application", "6 mois", "astreinte", "modification"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 263-2",
+      "titre": "Maintien de la réglementation existante",
+      "texte": [
+        "(Loi n°06-96) Pour les dispositions qui ne sont pas contraires à la présente loi, la réglementation existante prise en application des lois du 15 décembre 1952, n°10/64 du 25 juin 1964 et n°45/75 du 15 mars 1975 demeurera en vigueur jusqu'à la mise en place des textes prévus par le présent Code."
+      ],
+      "mots_cles": ["réglementation existante", "maintien", "loi 1952", "loi 1964", "loi 1975"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 264",
+      "titre": "Abrogation d'articles de la loi de 1975",
+      "texte": [
+        "(Loi n°06-96) Les articles 55 alinéas 5, 6, 7 et 172 de la loi n°45/75 du 15 mars 1975 sont abrogés."
+      ],
+      "mots_cles": ["abrogation", "loi 45/75", "1975", "articles 55", "article 172"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 265",
+      "titre": "Exécution comme loi de l'État",
+      "texte": [
+        "La présente loi sera exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["exécution", "loi de l'État"],
+      "statut": "en vigueur",
+      "section": "Titre 10 : Dispositions transitoires"
+    }
+  ]
+}

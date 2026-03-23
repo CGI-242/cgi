@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Des syndicats professionnels",
+    "section": "Titre 7",
+    "section_titre": "Des syndicats professionnels",
+    "page_source": 55
+  },
+  "articles": [
+    {
+      "article": "Art. 184",
+      "titre": "Objet des syndicats professionnels",
+      "texte": [
+        "(Loi n°06-96) Les syndicats professionnels ont exclusivement pour objet l'étude et la défense des droits et des intérêts matériels et moraux tant collectifs qu'individuels de leurs membres."
+      ],
+      "mots_cles": ["syndicat professionnel", "objet", "défense des droits", "intérêts"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 185",
+      "titre": "Liberté de constitution des syndicats",
+      "texte": [
+        "Les personnes exerçant la même profession, les métiers similaires ou des professions connexes concourent à l'établissement de produits déterminés, ou la même profession libérale, peuvent constituer librement un syndicat professionnel. Tout travailleur ou employeur peut adhérer librement à un syndicat de son choix dans le cadre de la profession."
+      ],
+      "mots_cles": ["liberté syndicale", "constitution", "adhésion", "profession"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 186",
+      "titre": "Dépôt des statuts",
+      "texte": [
+        "(Loi n°06-96) Les fondateurs de tout syndicat professionnel doivent déposer les statuts et la liste des personnes qui, à un titre quelconque, sont chargées de son administration ou de sa direction.",
+        "Le dépôt a lieu, contre simple accusé de réception, à l'inspection du travail du ressort.",
+        "Les statuts de tout syndicat doivent notamment indiquer ou prévoir les informations suivantes :",
+        "- la dénomination du syndicat et l'adresse de son siège ;",
+        "- l'objet en vue duquel le syndicat est créé ;",
+        "- le mode selon lequel les statuts seront établis et modifiés ;",
+        "- le mode de désignation et de destitution des membres dirigeants.",
+        "Dans le délai de quinze jours suivant ce dépôt, un rapport d'enquête de l'inspecteur du travail précisant les circonstances et conditions de constitution du syndicat, notamment la date, le lieu du congrès constitutif et les origines professionnelles des membres, est transmis par voie hiérarchique au ministère du Travail.",
+        "Au vu du rapport de l'inspecteur du travail et dans un délai de trente jours, le Ministre du Travail délivre ou non le récépissé valant reconnaissance de l'existence du syndicat.",
+        "Notification en est faite aux intéressés et au Ministre de l'Intérieur.",
+        "Si le Ministre du Travail refuse de délivrer le récépissé de reconnaissance du syndicat, il doit en aviser les demandeurs dans les vingt jours suivants par écrit, en motivant son refus.",
+        "La décision de refus du Ministre du Travail est susceptible de recours, conformément à la procédure du Code de procédure civile, administrative et financière.",
+        "Les modifications apportées aux statuts et les changements survenus dans la composition de la direction ou de l'administration du syndicat doivent être portés dans les mêmes conditions à la connaissance des mêmes autorités et vérifiés dans les mêmes conditions.",
+        "Dans le premier trimestre suivant la fin de chaque exercice, les dirigeants statutairement compétents de tout syndicat doivent communiquer au Ministre du Travail un rapport annuel faisant apparaître notamment les statistiques de ses effectifs et le montant des cotisations encaissées."
+      ],
+      "mots_cles": ["dépôt statuts", "inspection du travail", "15 jours", "30 jours", "récépissé", "reconnaissance", "rapport annuel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 187",
+      "titre": "Conditions pour diriger un syndicat",
+      "texte": [
+        "Les membres chargés de l'administration ou de la direction d'un syndicat doivent être citoyens congolais, ou s'ils sont étrangers avoir séjourné au Congo au moins pendant 5 ans, jouir de leurs droits civils, ne pas avoir encouru de condamnations comportant la perte des droits civiques ni de condamnation à une peine correctionnelle, à l'exception toutefois :",
+        "- 1° des condamnations pour délits d'imprudence hors le cas de délit de fuite concomitant ;",
+        "- 2° des condamnations prononcées pour infractions (autres que les infractions qualifiées délits) à la législation sur les sociétés mais dont cependant la répression n'est pas subordonnée à la preuve de la mauvaise foi de leurs auteurs et qui ne sont passibles que d'une amende."
+      ],
+      "mots_cles": ["dirigeants syndicaux", "conditions", "citoyenneté", "5 ans", "droits civils", "condamnation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 188",
+      "titre": "Adhésion des femmes mariées",
+      "texte": [
+        "Les femmes mariées exerçant une profession ou un métier peuvent, sans l'autorisation de leur mari, adhérer aux syndicats professionnels et participer à leur administration ou à leur direction dans les conditions fixées à l'article précédent."
+      ],
+      "mots_cles": ["femmes mariées", "adhésion syndicale", "sans autorisation mari"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 189",
+      "titre": "Adhésion des mineurs",
+      "texte": [
+        "Les mineurs âgés de plus de 16 ans peuvent adhérer aux syndicats."
+      ],
+      "mots_cles": ["mineurs", "16 ans", "adhésion syndicale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 190",
+      "titre": "Maintien de l'adhésion après cessation d'activité",
+      "texte": [
+        "(Loi n°06-96) Peuvent continuer à faire partie d'un syndicat professionnel les personnes qui ont quitté l'exercice de leur fonction ou de leur profession, sous réserve :",
+        "- a) d'avoir exercé celle-ci pendant au moins un an ;",
+        "- b) de se consacrer à des fonctions syndicales.",
+        "Cependant, tout travailleur en chômage qui n'aurait pas adhéré à un syndicat avant sa perte d'emploi ne pourra être admis à se syndiquer que lorsqu'il aura retrouvé un emploi."
+      ],
+      "mots_cles": ["cessation activité", "maintien adhésion", "1 an", "fonctions syndicales", "chômage"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 191",
+      "titre": "Retrait d'un syndicat",
+      "texte": [
+        "Tout membre d'un syndicat professionnel peut s'en retirer à tout instant nonobstant toute clause contraire sans préjudice du droit, pour le syndicat, de réclamer la cotisation afférente aux 6 mois qui suivent le retrait d'adhésion."
+      ],
+      "mots_cles": ["retrait", "syndicat", "6 mois cotisation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 192",
+      "titre": "Dissolution du syndicat",
+      "texte": [
+        "En cas de dissolution volontaire, statutaire ou prononcée par la justice, les biens du syndicat sont dévolus conformément aux statuts ou, à défaut de dispositions statutaires, suivant les règles déterminées par l'assemblée générale. En aucun cas, ils ne peuvent être répartis entre les membres adhérents."
+      ],
+      "mots_cles": ["dissolution", "biens", "dévolution", "statuts", "assemblée générale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
+    },
+    {
+      "article": "Art. 192 bis",
+      "titre": "Représentativité des syndicats",
+      "texte": [
+        "(Loi n°06-96) Le caractère représentatif d'un syndicat ou d'un groupement professionnel est déterminé par le Ministre du Travail, qui réunira tous les éléments d'appréciation et prendra l'avis de l'inspecteur du travail et des lois sociales.",
+        "Les éléments d'appréciation comprendront notamment :",
+        "- le résultat des élections des délégués du personnel ;",
+        "- l'indépendance ;",
+        "- les effectifs ;",
+        "- les cotisations ;",
+        "- l'expérience du syndicat, l'étendue et la nature de son activité.",
+        "La décision du Ministre du Travail est susceptible de recours, dans un délai de trente jours, devant la juridiction administrative.",
+        "Les dispositions qui précèdent ne pourront être interprétées comme autorisant l'administration à prendre connaissance des registres d'inscription des adhérents et des livres de trésorerie du syndicat."
+      ],
+      "mots_cles": ["représentativité", "Ministre du Travail", "élections", "effectifs", "cotisations", "recours", "30 jours"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 bis : De la représentativité des syndicats"
+    },
+    {
+      "article": "Art. 193",
+      "titre": "Personnalité civile des syndicats",
+      "texte": [
+        "Les syndicats professionnels jouissent de la personnalité civile. Ils ont le droit d'ester en justice et d'acquérir, sans autorisation, à titre gratuit ou à titre onéreux, des biens, meubles et immeubles."
+      ],
+      "mots_cles": ["personnalité civile", "ester en justice", "acquérir", "biens"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 194",
+      "titre": "Droits de la partie civile",
+      "texte": [
+        "Ils peuvent, devant toutes les juridictions, exercer tous les droits réservés à la partie civile, relativement aux faits portant un préjudice direct ou indirect à l'intérêt collectif de la profession qu'ils représentent."
+      ],
+      "mots_cles": ["partie civile", "juridictions", "préjudice", "intérêt collectif"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 195",
+      "titre": "Création de logements et terrains",
+      "texte": [
+        "Ils peuvent affecter une partie de leurs ressources à la création de logements de travailleurs, à l'acquisition de terrains de culture ou de terrains d'éducation physique à l'usage de leurs membres."
+      ],
+      "mots_cles": ["logements", "terrains", "éducation physique", "ressources"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 196",
+      "titre": "Œuvres professionnelles",
+      "texte": [
+        "Ils peuvent créer, administrer ou subventionner des œuvres professionnelles telles que : institutions de prévoyance, caisses de solidarité, laboratoires, champs d'expérience, œuvres d'éducation scientifique, agricoles ou sociales, cours et publications intéressant la profession.",
+        "Les immeubles et objets mobiliers nécessaires à leurs réunions ; à leurs bibliothèques et à leurs cours d'instruction professionnels sont insaisissables."
+      ],
+      "mots_cles": ["œuvres professionnelles", "prévoyance", "solidarité", "éducation", "insaisissables"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 197",
+      "titre": "Subvention de coopératives",
+      "texte": [
+        "Ils peuvent subventionner des sociétés coopératives de production ou de consommation."
+      ],
+      "mots_cles": ["subvention", "coopératives", "production", "consommation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 198",
+      "titre": "Contrats et conventions",
+      "texte": [
+        "Ils peuvent passer des contrats ou conventions avec tous autres syndicats, sociétés, entreprises ou personnes.",
+        "Les conventions collectives du travail sont passées dans les conditions déterminées par le chapitre III du Titre II."
+      ],
+      "mots_cles": ["contrats", "conventions", "conventions collectives"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 199",
+      "titre": "Activités commerciales des syndicats",
+      "texte": [
+        "S'ils y sont autorisés par leurs statuts, et à condition de ne pas distribuer de bénéfices, même sous forme de ristournes, à leurs membres, les syndicats peuvent :",
+        "- 1° acheter pour le louer, prêter ou répartir entre leurs membres tout ce qui est nécessaire à l'exercice de leur profession, notamment matières premières, outils, instruments, machines, engrais, semences, plantes, animaux et matières alimentaires pour le bétail ;",
+        "- 2° prêter leur entremise gratuite pour la vente des produits provenant exclusivement du travail personnel ou des exploitations des syndiqués ; faciliter cette vente par exposition, annonces, publications, groupements de commandes et d'expéditions, sans pouvoir l'opérer sous leur nom, et sous leur responsabilité."
+      ],
+      "mots_cles": ["activités commerciales", "achats groupés", "vente", "pas de bénéfices", "ristournes"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 200",
+      "titre": "Consultation des syndicats",
+      "texte": [
+        "Ils peuvent être consultés sur tous les différends et toutes les questions se rattachant à leur spécialité. Dans les affaires contentieuses, les avis du syndicat sont tenus à la disposition des parties qui peuvent en prendre communication et copie."
+      ],
+      "mots_cles": ["consultation", "différends", "avis", "spécialité"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
+    },
+    {
+      "article": "Art. 201",
+      "titre": "Marques syndicales",
+      "texte": [
+        "Les syndicats peuvent déposer, dans les conditions déterminées par arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis de la Commission Nationale Consultative du Travail, leurs marques ou labels. Ils peuvent, dès lors, en revendiquer la propriété exclusive dans les conditions dudit arrêté. Ces marques ou labels peuvent être apposés sur tout produit ou objet de commerce pour en certifier l'origine et les conditions de fabrication. Ils peuvent être utilisés par tous les individus ou entreprises mettant en vente ces produits.",
+        "Est nulle et de nul effet toute clause de contrat collectif, accord ou entente aux termes de laquelle l'usage de la marque syndicale par un employeur sera subordonné à l'obligation pour ledit employeur de ne conserver ou de ne prendre à son service que les adhérents du syndicat propriétaire de la marque."
+      ],
+      "mots_cles": ["marques syndicales", "labels", "propriété", "nullité clause"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Des marques syndicales"
+    },
+    {
+      "article": "Art. 202",
+      "titre": "Caisses de secours mutuels",
+      "texte": [
+        "Les syndicats peuvent, en se conformant, aux dispositions des lois en vigueur, constituer entre leurs membres des caisses spéciales de secours mutuels et de retraites."
+      ],
+      "mots_cles": ["caisses", "secours mutuels", "retraites"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
+    },
+    {
+      "article": "Art. 203",
+      "titre": "Insaisissabilité des fonds",
+      "texte": [
+        "Les fonds de ces caisses spéciales sont insaisissables dans les limites déterminées par la loi."
+      ],
+      "mots_cles": ["insaisissabilité", "fonds", "caisses spéciales"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
+    },
+    {
+      "article": "Art. 204",
+      "titre": "Maintien du droit après retrait du syndicat",
+      "texte": [
+        "Toute personne qui se retire d'un syndicat conserve le droit d'être membre de sociétés de secours mutuels et de retraites pour la vieillesse à l'actif desquels elle a contribué par des cotisations ou versements de fonds."
+      ],
+      "mots_cles": ["retrait", "droit maintenu", "secours mutuels", "retraites"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
+    },
+    {
+      "article": "Art. 205",
+      "titre": "Unions syndicales",
+      "texte": [
+        "Les syndicats professionnels régulièrement constitués d'après les prescriptions de la présente loi peuvent librement se concerter pour l'étude et la défense de leurs intérêts économiques, industriels, commerciaux et agricoles.",
+        "Ils peuvent se constituer en union sous quelque forme que ce soit."
+      ],
+      "mots_cles": ["unions syndicales", "concertation", "intérêts économiques"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des unions syndicales"
+    },
+    {
+      "article": "Art. 206",
+      "titre": "Règles applicables aux unions",
+      "texte": [
+        "Les dispositions des articles 184, 186, 187, 188 et 189 sont applicables aux unions de syndicats qui doivent, d'autre part, faire connaître dans les conditions prévues à l'article 186, le nom et le siège social des syndicats qui les composent.",
+        "Leurs statuts doivent déterminer les règles selon lesquelles les syndicats adhérents à l'union sont représentés dans le conseil d'administration et dans les assemblées générales."
+      ],
+      "mots_cles": ["unions", "règles", "siège social", "conseil d'administration", "assemblées générales"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des unions syndicales"
+    },
+    {
+      "article": "Art. 207",
+      "titre": "Droits des unions",
+      "texte": [
+        "Ces unions jouissent de tous les droits conférés aux syndicats professionnels par les chapitres II, III et IV du présent titre."
+      ],
+      "mots_cles": ["droits", "unions", "syndicats professionnels"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des unions syndicales"
+    },
+    {
+      "article": "Art. 208",
+      "titre": "Locaux pour les unions",
+      "texte": [
+        "Des locaux pourront être mis à la disposition des unions de syndicats pour l'exercice de leur activité sur leur demande."
+      ],
+      "mots_cles": ["locaux", "unions", "activité syndicale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des unions syndicales"
+    },
+    {
+      "article": "Art. 209",
+      "titre": "Associations professionnelles",
+      "texte": [
+        "Les associations professionnelles reconnues par arrêté du Ministre du Travail et de la Prévoyance Sociale sont assimilées aux syndicats professionnels en ce qui concerne l'application des articles 194, 197, 198, 201, 202. Elles peuvent :",
+        "- 1° acheter pour le louer, prêter ou répartir entre leurs membres tout ce qui est nécessaire à l'exercice de leur profession, notamment matières premières, outils, instruments, machines, engrais semences, plantes, animaux et matières alimentaires pour le bétail ;",
+        "- 2° prêter leur entremise gratuite pour la vente des produits provenant exclusivement du travail personnel ou les exploitations des membres de l'association ; faciliter cette vente par exposition, annonces, publications, groupements de commandes et d'expéditions, sans pouvoir l'opérer sous leur nom, et sous leur responsabilité."
+      ],
+      "mots_cles": ["associations professionnelles", "assimilées", "syndicats", "achats", "vente"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Des associations professionnelles"
+    },
+    {
+      "article": "Art. 210",
+      "titre": "Interdiction de la discrimination syndicale",
+      "texte": [
+        "Il est interdit à tout employeur de prendre en considération l'appartenance à un syndicat ou l'exercice d'une activité syndicale pour arrêter ses décisions en ce qui concerne notamment l'embauchage, la conduite et la répartition du travail ; la formation professionnelle, l'avancement, la rémunération et l'octroi d'avantages sociaux, les mesures de discipline et de congédiement.",
+        "Le chef d'une entreprise ou ses représentants ne devra employer aucun moyen de pression en faveur ou à l'encontre d'une organisation syndicale quelconque.",
+        "Toute mesure prise par l'employeur, contrairement aux dispositions des alinéas précédents, sera considérée comme abusive et donnera lieu à des dommages-intérêts."
+      ],
+      "mots_cles": ["discrimination syndicale", "interdiction", "embauchage", "rémunération", "licenciement", "pression", "dommages-intérêts"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-2",
+      "titre": "Libre exercice du droit syndical",
+      "texte": [
+        "(Loi n°06-96) Dans toutes les entreprises installées au Congo, le libre exercice du droit syndical est reconnu aux salariés, dans le respect des droits et libertés garantis par la Constitution.",
+        "De même, les syndicats professionnels ont le droit de s'organiser librement au sein desdites entreprises."
+      ],
+      "mots_cles": ["droit syndical", "libre exercice", "Constitution", "entreprises"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-3",
+      "titre": "Sections syndicales d'entreprise",
+      "texte": [
+        "(Loi n°06-96) Dans les entreprises d'au moins 30 travailleurs, chacun des syndicats représentatifs ayant au moins un délégué du personnel en fonction peut constituer des sections syndicales chargées d'assurer la représentation des intérêts professionnels de leurs adhérents auprès de l'employeur."
+      ],
+      "mots_cles": ["sections syndicales", "30 travailleurs", "représentation", "délégué du personnel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-4",
+      "titre": "Missions de la section syndicale",
+      "texte": [
+        "(Loi n°06-96) La section syndicale a pour missions essentielles :",
+        "- l'affichage des communications syndicales ;",
+        "- la publication et la diffusion des documents d'informations syndicales ou professionnelles auprès des travailleurs ;",
+        "- la collecte des cotisations syndicales à l'intérieur de l'entreprise ;",
+        "- la tenue des réunions périodiques avec ses adhérents dans l'enceinte de l'entreprise ;",
+        "- la négociation des accords d'établissement d'entreprise."
+      ],
+      "mots_cles": ["section syndicale", "missions", "affichage", "cotisations", "réunions", "négociation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-5",
+      "titre": "Local syndical",
+      "texte": [
+        "(Loi n°06-96) Dans les entreprises où sont occupés au moins 50 salariés, les sections syndicales doivent disposer d'un local commun mis à leur disposition par l'employeur pour l'exercice de leurs missions. Les conditions d'utilisation de ce local sont déterminées d'accord parties avec le chef d'entreprise."
+      ],
+      "mots_cles": ["local syndical", "50 salariés", "mise à disposition"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-6",
+      "titre": "Protection des membres du bureau syndical",
+      "texte": [
+        "(Loi n°06-96) Les membres du bureau de la section syndicale bénéficient de la même protection que les délégués du personnel en matière de licenciement."
+      ],
+      "mots_cles": ["protection", "bureau syndical", "licenciement", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    },
+    {
+      "article": "Art. 210-7",
+      "titre": "Conditions d'exercice de l'activité syndicale",
+      "texte": [
+        "(Loi n°06-96) Un arrêté du Ministre du Travail, pris après avis de la Commission nationale consultative du travail, détermine les conditions d'exercice de l'activité syndicale au sein des entreprises et fixe notamment :",
+        "- la répartition du nombre des membres du bureau de la section syndicale en fonction de l'effectif de l'entreprise ;",
+        "- le mode de désignation des membres du bureau de la section syndicale et les conditions que ceux-ci doivent remplir pour être choisis.",
+        "[NB - Voir l'arrêté n°1109/MTFPSS-DCT du 24 juin 1996 relatif aux représentants syndicaux et à l'exercice de l'activité syndicale dans les entreprises, page 136]"
+      ],
+      "mots_cles": ["conditions exercice", "activité syndicale", "arrêté", "bureau syndical", "effectif"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : De la liberté syndicale"
+    }
+  ]
+}

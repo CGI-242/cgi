@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective du Personnel Domestique de Maison",
+    "pays": "République du Congo",
+    "edition": "1991",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective du Personnel Domestique",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Employeurs / Travailleurs domestiques",
+    "date_signature": "1991"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente convention règle les rapports de travail entre les employeurs et les travailleurs domestiques exerçant leur activité sur le territoire de la République du Congo.",
+        "Sont considérés comme travailleurs domestiques : les cuisiniers, les boys, les gardiens, les jardiniers, les lingères, les nounous et autres employés de maison.",
+        "La présente convention s'applique aux travailleurs domestiques employés par des personnes physiques pour des travaux de la maison."
+      ],
+      "mots_cles": ["personnel domestique", "employés de maison", "cuisiniers", "boys", "gardiens", "jardiniers", "nounous", "lingères"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Contrat de travail",
+      "texte": [
+        "Le contrat de travail du personnel domestique est constaté par écrit. Il doit mentionner la nature de l'emploi, la rémunération convenue, la durée de la période d'essai et le lieu d'exécution du contrat."
+      ],
+      "mots_cles": ["contrat de travail", "écrit", "rémunération", "période d'essai"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du contrat de travail"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Période d'essai",
+      "texte": [
+        "La période d'essai du personnel domestique est fixée à quinze (15) jours.",
+        "Elle peut être renouvelée une fois.",
+        "Pendant cette période, chacune des parties peut rompre le contrat sans préavis ni indemnité."
+      ],
+      "mots_cles": ["période d'essai", "15 jours", "renouvellement"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du contrat de travail"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Préavis",
+      "texte": [
+        "Le préavis de rupture du contrat de travail du personnel domestique est fixé à quinze (15) jours.",
+        "En cas de faute lourde, le contrat peut être rompu sans préavis."
+      ],
+      "mots_cles": ["préavis", "15 jours", "faute lourde"],
+      "statut": "en vigueur",
+      "section": "Titre III : Résiliation du contrat"
+    },
+    {
+      "article": "Grille salariale",
+      "titre": "Grille des salaires du personnel domestique",
+      "texte": [
+        "Les salaires minima du personnel domestique sont fixés par arrêté.",
+        "Le SMIG (70 400 FCFA depuis le 1er janvier 2025) s'applique aux travailleurs domestiques.",
+        "Les employeurs sont tenus de déclarer leurs employés domestiques à la Caisse Nationale de Sécurité Sociale."
+      ],
+      "mots_cles": ["salaire", "SMIG", "70 400 FCFA", "CNSS", "déclaration"],
+      "statut": "en vigueur",
+      "section": "Annexe : Grille salariale"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective des Entreprises Forestières",
+    "pays": "République du Congo",
+    "edition": "2014",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective des Entreprises Forestières",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Fédération agri-forêt UNICONGO (employeurs) / CSTC, CSC, COSYLAC (travailleurs)",
+    "date_signature": "Juin 2014"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet",
+      "texte": [
+        "La présente convention et ses annexes règlent les rapports de travail entre les employeurs et les travailleurs des entreprises forestières."
+      ],
+      "mots_cles": ["objet", "entreprises forestières"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Champ d'application",
+      "texte": [
+        "La présente convention s'applique aux entreprises forestières définies comme suit :",
+        "- toutes exploitations où sont effectués les travaux de : sylviculture, génie forestier, abattage, ébranchage, tronçonnage, débardage, transports routiers et fluviaux de bois, travaux de débit, façonnage, sciage, empilage, écorçage, désaubiérage, équarrissage, carbonisation et les ateliers annexés à l'exploitation nécessaires à la réparation et à l'entretien du matériel ;",
+        "- toutes unités de transformation industrielle de bois (scierie, parqueterie, déroulage, tranchage, moulurage, menuiserie, construction des maisons en bois, transformation en copeaux...), entreprises d'inventaires et/ou d'aménagement forestiers, entreprises effectuant son propre transit de bois, unités sylvicoles faisant partie ou non de la même entreprise que de l'exploitation forestière dont elles sont le complément et les aires protégées (réserves, sanctuaires, parcs nationaux...)."
+      ],
+      "mots_cles": ["champ d'application", "forestière", "sylviculture", "abattage", "scierie", "déroulage", "menuiserie", "parcs nationaux"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Abrogation",
+      "texte": [
+        "La présente convention abroge et remplace la convention collective des entreprises agricoles et forestières signée à Brazzaville le 7 mars 1992."
+      ],
+      "mots_cles": ["abrogation", "convention 1992"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Période d'essai",
+      "texte": [
+        "Une période d'essai, stipulée obligatoirement par écrit, doit être prévue à l'engagement d'un travailleur. Sa durée est de :",
+        "Pour les ouvriers :",
+        "- 1 mois pour les catégories 1 à 4 ;",
+        "- 1,5 mois pour les catégories 5 et 6.",
+        "Pour les employés:",
+        "- 1 mois pour les catégories 1 à 4 ;",
+        "- 1,5 mois pour les catégories 5 et 6 ;",
+        "- 2 mois pour la catégorie 7 ;",
+        "- 2,5 mois pour la catégorie 8 ;",
+        "- 3 mois pour les catégories 9 à 12.",
+        "L'engagement à l'essai ne pourra être renouvelé qu'une seule fois. Toutefois, en application des dispositions de l'article 35 du Code du Travail, il ne pourra porter, renouvellement compris, que sur une période maximum de six (6) mois.",
+        "Pendant toute la durée de la période d'essai, le travailleur sera rémunéré sur la base du salaire minimum conventionnel correspondant au poste d'emploi à pourvoir.",
+        "Pendant la période d'essai, les parties ont la faculté réciproque de rompre le contrat sans indemnité, ni préavis.",
+        "La période d'essai ne peut être confondue avec le stage qu'auraient pu accomplir certains travailleurs avant le commencement de leurs services."
+      ],
+      "mots_cles": ["période d'essai", "1 mois", "1,5 mois", "2 mois", "2,5 mois", "3 mois", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : Formation et exécution du contrat de travail - Chapitre I"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Maladies et accidents non professionnels",
+      "texte": [
+        "En cas de maladie ou accident non professionnel dûment constaté par un médecin agréée et notifié à l'employeur dans les quarante-huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à six (6) mois. Ce délai est prorogé jusqu'au remplacement du travailleur.",
+        "Si pendant le délai de suspension le remplacement du travailleur s'impose, le remplaçant devra être informé en présence des délégués du personnel de l'entreprise du caractère provisoire de son emploi.",
+        "Pendant la période de suspension du contrat de travail pour cause de maladie ou d'accident non professionnel, le travailleur percevra, pendant six (6) mois, l'indemnité ci- après :",
+        "- avant douze (12) mois de service, une indemnité mensuelle équivalente à la moitié du salaire de base, des indemnités de logement et de transport ;",
+        "- après douze (12) mois de service, une indemnité mensuelle équivalente à un mois de salaire de base augmenté des indemnités de transport et de logement."
+      ],
+      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "moitié salaire", "1 mois salaire"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre III : Suspension du contrat de travail"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "En cas de licenciement par l'employeur, hors le cas de faute lourde, le travailleur ayant accompli dans l'entreprise une durée de service continu au moins égale à deux ans, a droit à une indemnité de licenciement distincte du préavis.",
+        "Cette indemnité est attribuée de la manière suivante :",
+        "- 34% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence et pour les cinq (5) premières années de présence chez le même employeur ;",
+        "- 39% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence pour la période comprise entre la sixième et la dixième année incluse de présence consécutive chez le même employeur ;",
+        "- 45% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence à partir de la onzième année.",
+        "Pour le calcul de la durée des services, les fractions d'années au moins égales à trente (30) jours seront prises en considération.",
+        "On entend par salaire global toutes les prestations constituant une contrepartie du travail, à l'exclusion de celle présentant le caractère d'un remboursement de frais.",
+        "Lorsque le licenciement résulte du seul cas de compression de personnel, le travailleur a droit après un an de présence, à une indemnité de licenciement égale à 24% de la moyenne mensuelle du salaire global des douze (12) derniers mois."
+      ],
+      "mots_cles": ["indemnité de licenciement", "2 ans", "34%", "39%", "45%", "compression 24%"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre IV : Résiliation du contrat de travail"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Heures supplémentaires",
+      "texte": [
+        "Les heures effectuées dans la semaine, avec l'accord du chef d'établissement au-delà de la durée légale ou dans certains cas, au-delà de la durée considérée comme équivalente, sont des heures supplémentaires et à ce titre, rémunérées au taux de l'heure normale augmenté d'un pourcentage.",
+        "Conformément aux dispositions du décret n°78/361 du 12 mai 1978, fixant pour les entreprises agricoles et assimilées la réglementation des heures supplémentaires et les modalités de leur rémunération, les heures susvisées donneront lieu aux majorations suivantes :",
+        "- 10% du salaire horaire pour les six (6) premières heures du jour au-delà de la durée légale ou de la durée considérée comme équivalente ;",
+        "- 25% du salaire horaire pour les heures suivantes de jour ;",
+        "- 50% du salaire horaire pour les heures supplémentaires effectuées la nuit ou pendant le repos hebdomadaire ou les jours fériés ;",
+        "- 100% du salaire horaire pour les heures de nuit effectuées le jour du repos hebdomadaire ou les jours fériés.",
+        "Sauf cas d'urgence, le personnel désigné pour faire des heures supplémentaires sera prévenu vingt-quatre (24) heures à l'avance."
+      ],
+      "mots_cles": ["heures supplémentaires", "10%", "25%", "50%", "100%", "6 premières heures", "24 heures"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Conditions du travail - Chapitre I"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Des permissions exceptionnelles à l'occasion d'événements familiaux touchant directement son propre foyer, pourront être accordées au travailleur dans une limite de (10) jours par année civile, sans retenue de salaire et sans déduction de la durée de congé acquis, sur présentation de pièces d'Etat civil ou justification probante, dans les conditions suivantes :",
+        "- mariage du travailleur : quatre (4) jours",
+        "- mariage d'un de ses enfants : deux (2) jours",
+        "- décès d'un conjoint légitime : six (6) jours",
+        "- décès d'un descendant ou d'un ascendant (enfants, père et mère) : quatre (4) jours",
+        "- retrait de deuil : deux (2) jours",
+        "- accouchement de l'épouse du travailleur : trois (3) jours",
+        "Si l'événement se produit hors du lieu d'emploi et nécessite le déplacement du travailleur, les délais ci-dessus pourront être prolongés d'accord parties. Cette prolongation ne donnera pas lieu à rémunération."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage 4 jours", "décès 6 jours", "accouchement 3 jours"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Conditions du travail - Chapitre II"
+    },
+    {
+      "article": "Art. 76",
+      "titre": "Prime d'ancienneté",
+      "texte": [
+        "Une prime d'ancienneté, consistant en une majoration du salaire de base du travailleur, lui sera allouée dans les conditions suivantes :",
+        "- 3%, à partir de la 3ème année de présence ;",
+        "- puis 1% de plus par année de présence supplémentaire."
+      ],
+      "mots_cles": ["prime d'ancienneté", "3%", "1%/an"],
+      "statut": "en vigueur",
+      "section": "Titre V : Rémunération - Chapitre III"
+    },
+    {
+      "article": "Art. 77",
+      "titre": "Prime de caisse",
+      "texte": [
+        "Une prime mensuelle de 20.000 Frs CFA est allouée pour la responsabilité journalière d'une caisse principale. Elle est de 12.000 frs CFA pour la responsabilité d'une caisse secondaire. Les travailleurs qui participent au billetage percevront une prime individuelle mensuelle de 3.000 Frs CFA."
+      ],
+      "mots_cles": ["prime de caisse", "20 000 FCFA", "12 000 FCFA", "3 000 FCFA", "billetage"],
+      "statut": "en vigueur",
+      "section": "Titre V : Rémunération - Chapitre III"
+    },
+    {
+      "article": "Art. 79",
+      "titre": "Prime de diplôme",
+      "texte": [
+        "Des primes mensuelles pour diplômes déclarés à l'embauche, seront attribuées conformément à l'énumération ci-dessous, pour les travailleurs qui en sont titulaires, à condition que ces diplômes aient un rapport avec l'exercice normal des fonctions occupées.",
+        "1) Diplômes d'études élémentaires : 5.000 Frs CFA",
+        "- diplômes d'enseignement général et technique (B.E.P.C, B.E.T, B.E.P) ;",
+        "2) Diplômes d'études secondaires et spéciaux : 7.000 Frs CFA",
+        "- Baccalauréat toutes séries ;",
+        "3) Diplômes d'enseignement supérieur : 11.000 Frs CFA"
+      ],
+      "mots_cles": ["prime diplôme", "BEPC 5 000 FCFA", "BAC 7 000 FCFA", "supérieur 11 000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre V : Rémunération - Chapitre III"
+    },
+    {
+      "article": "Art. 81",
+      "titre": "Prime de fin d'année",
+      "texte": [
+        "La prime de fin d'année est égale à 100% du salaire de base. Tout travailleur ayant fait en cours d'année l'objet d'une ou plusieurs sanctions (blâmes, au minimum), confirmées par l'Inspecteur du travail ou son représentant légal pourra voir sa prime réduite ou supprimée.",
+        "L'absence de réponse de l'Inspecteur du travail dans un délai d'un (1) mois vaut confirmation de la sanction."
+      ],
+      "mots_cles": ["prime de fin d'année", "100%", "salaire de base", "1 mois"],
+      "statut": "en vigueur",
+      "section": "Titre V : Rémunération - Chapitre III"
+    },
+    {
+      "article": "Art. 84",
+      "titre": "Indemnité de transport",
+      "texte": [
+        "Le travailleur exerçant à Brazzaville et Pointe-Noire percevra une indemnité de transport de 1.200 Frs CFA par jour de travail effectif.",
+        "Les tarifs des autres localités feront l'objet d'accords internes.",
+        "Cette indemnité de transport n'est pas due lorsque l'employeur met un moyen de transport à la disposition du travailleur d'une part et dans les sociétés possédant des bases vie, d'autre part."
+      ],
+      "mots_cles": ["indemnité de transport", "1 200 FCFA/jour", "Brazzaville", "Pointe-Noire"],
+      "statut": "en vigueur",
+      "section": "Titre V : Rémunération - Chapitre III"
+    }
+  ]
+}

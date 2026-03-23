@@ -21,7 +21,7 @@ const TARGET_COLLECTION = 'cgi_2026';
 const EMBED_BATCH_SIZE = 128;
 const DELAY_BETWEEN_BATCHES_MS = 2_000; // 2s entre batches
 const MAX_RETRIES = 5;
-const RESUME_FROM = 0; // 0 = réindexation complète
+const RESUME_FROM = 256; // Reprendre après les 256 premiers articles
 
 interface Article {
   numero: string;

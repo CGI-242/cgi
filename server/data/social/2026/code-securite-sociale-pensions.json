@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Code de la sécurité sociale - Titre 4 Chapitre 3 : Pensions (vieillesse, invalidité, décès)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "2",
+    "chapitre_titre": "Droit de la sécurité sociale",
+    "section": "2.1",
+    "section_titre": "Code de la sécurité sociale (Loi n°004-86)",
+    "page_source": 200
+  },
+  "articles": [
+    {
+      "article": "Art. 144",
+      "titre": "Composition des prestations de la branche pensions",
+      "texte": [
+        "Les prestations de la branche d'assurance-vieillesse, décès, invalidité comprennent :",
+        "- la pension de vieillesse ;",
+        "- la pension anticipée ;",
+        "- la pension proportionnelle ;",
+        "- la pension de survivant ;",
+        "- la pension d'invalidité ;",
+        "- et l'allocation de vieillesse et de survivant."
+      ],
+      "mots_cles": ["pensions", "vieillesse", "invalidité", "décès", "survivant", "anticipée", "proportionnelle"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 145",
+      "titre": "Pension de vieillesse - Conditions",
+      "texte": [
+        "L'assuré qui atteint l'âge de 55 ans a droit à une pension de vieillesse s'il remplit les conditions suivantes :",
+        "a) avoir été immatriculé à la Caisse depuis 20 ans au moins ;",
+        "b) avoir accompli au moins 60 mois d'assurance au cours des dix dernières années précédant la date d'admissibilité à pension ou compter au maximum 240 mois d'assurance ;",
+        "c) avoir cessé définitivement toute activité salariée.",
+        "Toutefois, l'âge d'admission à la pension de vieillesse pourra être relevé par décret pris en Conseil des Ministres sur proposition du Ministre du travail et après avis du Conseil d'Administration de la Caisse.",
+        "L'assuré ayant atteint l'âge de 50 ans, et accusant une usure prématurée de ses facultés physiques ou mentales le rendant inapte à exercer une activité salariée et qui remplit les conditions prescrites au paragraphe précédent, peut demander une pension anticipée. Les modalités de la constatation et du contrôle de cette usure prématurée de l'organisme seront fixées par décret pris sur proposition du Ministre chargé de la sécurité sociale.",
+        "L'assuré remplissant les conditions d'âge prévues au présent article et ayant cessé toute activité salariée alors qu'il ne satisfait pas aux autres conditions ouvrant à une pension de vieillesse, une pension anticipée proportionnelle.",
+        "La pension de vieillesse, la pension anticipée, ainsi que la pension proportionnelle prennent effet le premier jour du mois civil suivant la date à laquelle les conditions requises ont été accomplies, à la condition que la demande de pension ait été adressée à la Caisse dans le délai de six mois qui suit ladite date.",
+        "Le droit aux pensions et allocations de vieillesse, de survivant est prescrit par cinq ans."
+      ],
+      "mots_cles": ["55 ans", "20 ans immatriculation", "60 mois", "240 mois", "pension anticipée", "50 ans", "proportionnelle", "prescription 5 ans"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 145bis",
+      "titre": "Transfert vers régime de retraite des fonctionnaires",
+      "texte": [
+        "Si l'assuré vient à relever du régime des retraites des fonctionnaires, les cotisations versées pour son compte à la Caisse Nationale de Sécurité Sociale peuvent, sans conditions d'un nombre minimum d'années d'activité salariée, être transférées au nouveau régime de retraite qui lui est applicable, dans la mesure où la validation de ses services antérieurs à son entrée dans la fonction publique est prévue par son nouveau régime."
+      ],
+      "mots_cles": ["transfert", "fonctionnaires", "cotisations", "validation services"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 146",
+      "titre": "Pension d'invalidité - Conditions",
+      "texte": [
+        "1) L'assuré qui devient invalide avant d'avoir atteint l'âge de 55 ans a droit à une pension d'invalidité s'il remplit les conditions suivantes :",
+        "a) avoir été immatriculé à la Caisse depuis au moins cinq ans ;",
+        "b) avoir accompli six mois d'assurance au cours des douze derniers mois civils précédant le début de l'incapacité conduisant à l'invalidité.",
+        "2) Nonobstant les dispositions du précédent paragraphe au cas où l'invalidité est due à un accident, l'assuré a droit à une pension d'invalidité à condition qu'il ait occupé un emploi assujetti à l'assurance à la date de l'accident et qu'il ait été immatriculé à la Caisse avant cette date.",
+        "3) Est considéré comme invalide l'assuré qui, par suite de maladie ou d'accident d'origine non professionnelle, a subi une diminution permanente de ses capacités physiques ou mentales, médicalement constatée, le rendant incapable de gagner plus d'un tiers de la rémunération qu'un travailleur ayant la même formation peut se procurer par son travail."
+      ],
+      "mots_cles": ["invalidité", "55 ans", "5 ans immatriculation", "6 mois assurance", "un tiers rémunération"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 147",
+      "titre": "Date d'effet de la pension d'invalidité",
+      "texte": [
+        "La pension d'invalidité prend effet soit à la date de la consolidation de la lésion, soit à la date de la constatation médicale de l'invalidité."
+      ],
+      "mots_cles": ["date d'effet", "consolidation", "constatation médicale"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    }
+  ]
+}

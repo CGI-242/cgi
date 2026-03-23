@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Dispositions générales",
+    "section": "Titre 1",
+    "section_titre": "Dispositions générales",
+    "page_source": 11
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Institution du Code du travail",
+      "texte": [
+        "La présente loi institue un Code du travail de la République Populaire du Congo."
+      ],
+      "mots_cles": ["code du travail", "institution", "loi 45-75"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définition du travailleur",
+      "texte": [
+        "(Loi n°06-96) Est considéré comme travailleur au sens du présent Code, quels que soient son sexe et sa nationalité, toute personne qui s'est engagée à mettre son activité professionnelle, moyennant rémunération, sous la direction et l'autorité d'une autre personne, physique ou morale, publique ou privée. Pour la détermination de la qualité de travailleur, il ne sera tenu compte ni du statut juridique de l'employeur ni de celui de l'employé.",
+        "Les personnes nommées dans un emploi permanent d'une administration publique ne sont pas soumises au présent Code.",
+        "Toutefois, les agents contractuels de la fonction publique seront soumis, en ce qui concerne l'exercice du droit de grève, aux dispositions législatives spécifiques applicables à l'Administration publique.",
+        "Les travailleurs continuent à bénéficier des avantages qui leur ont été consentis lorsque ceux-ci sont supérieurs à ceux que leur reconnaît le présent Code dont les dispositions ne s'opposent pas, par ailleurs, aux dispositions plus favorables qui peuvent être consenties par des conventions ou accords collectifs ou par des contrats particuliers."
+      ],
+      "mots_cles": ["travailleur", "définition", "salarié", "employeur", "rémunération", "fonction publique", "grève", "conventions collectives"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Définition de l'entreprise",
+      "texte": [
+        "Toute personne, physique ou morale, publique ou privée, employant un ou plusieurs travailleurs au sens de l'article 2 est considérée comme constituant une entreprise et est soumise aux dispositions du présent code visant les employeurs."
+      ],
+      "mots_cles": ["entreprise", "employeur", "définition"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Interdiction du travail forcé",
+      "texte": [
+        "(Loi n°06-96) Le travail forcé ou obligatoire est interdit de façon absolue.",
+        "Le terme « travail forcé ou obligatoire » désigne tout travail ou service exigé d'un individu sous la menace d'une peine quelconque ou pour lequel ledit individu ne s'est pas offert de plein gré.",
+        "Le terme « travail forcé » ne s'applique pas au travail ou service exigé en cas de guerre, de sinistre, de menace de sinistre, de désastre naturel ou d'épidémie, de façon générale, dans toutes circonstances susceptibles de mettre en danger la vie d'autrui ou les conditions normales d'existence de l'ensemble ou d'une partie de la population.",
+        "Le terme « travail obligatoire » ne s'applique pas à tout travail décidé et exécuté de plein gré par une collectivité et visant à des tâches d'intérêt direct pour cette collectivité telles que l'établissement ou l'entretien des voies de communication, l'assainissement et la propreté des lieux d'habitation, le ravitaillement en eau, l'aménagement du sol, les constructions à des fins sociales, culturelles ou économiques."
+      ],
+      "mots_cles": ["travail forcé", "travail obligatoire", "interdiction", "guerre", "sinistre", "épidémie"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales"
+    }
+  ]
+}

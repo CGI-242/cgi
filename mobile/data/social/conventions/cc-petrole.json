@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective des Entreprises de Recherche et de Production d'Hydrocarbures",
+    "pays": "République du Congo",
+    "edition": "2009",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective Pétrole",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Entreprises de recherche et de production d'hydrocarbures (employeurs) / Organisations syndicales des salariés (travailleurs)",
+    "date_signature": "8 avril 2009, Pointe-Noire"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente convention collective règle, conformément au code de travail, les rapports de travail entre employeurs et salariés des entreprises de recherche et de production d'hydrocarbures exerçant leur activité sur le territoire de la République du Congo.",
+        "Des annexes à la présente convention déterminent: la grille salariale (annexe 1), la définition des emplois-types (annexe 2) et les filières professionnelles (annexe 3)."
+      ],
+      "mots_cles": ["objet", "champ d'application", "hydrocarbures", "pétrole", "recherche", "production"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des clauses générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "De la convention antérieure",
+      "texte": [
+        "La présente convention collective se substitue à la convention collective des entreprises de recherche et de production d'hydrocarbures du 9 août 1995 et ses annexes."
+      ],
+      "mots_cles": ["convention antérieure", "1995", "substitution"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des clauses générales"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Période d'essai d'embauche",
+      "texte": [
+        "Une période d'essai d'embauche est stipulée au contrat. Sa durée varie selon le collège auquel appartient le salarié. Cette période d'essai est de :",
+        "- Un (1) mois pour les salariés du collège Exécution",
+        "- Deux (2) mois pour les salariés du collège Maîtrise ;",
+        "- Trois (3) mois pour les salariés du collège Cadre.",
+        "La période d'embauche peut être renouvelée ; toutefois, en application des dispositions du code de travail, elle ne peut porter, renouvellement compris, que sur une période maximum de six (06) mois.",
+        "Pendant la période d'essai d'embauche, le salarié doit percevoir au moins le salaire minimum de la catégorie dont relève le poste à pourvoir, ainsi que les avantages contractuels auxquels il a droit.",
+        "Les parties ont la faculté réciproque de rompre le contrat pendant cette période sans indemnité ni préavis.",
+        "La prolongation des services après expiration de la période d'essai d'embauche équivaut à la confirmation du contrat établi prenant effet à la date d'établissement dudit contrat.",
+        "Pendant cette période d'essai d'embauche, l'employeur ne peut exiger du salarié l'exécution d'un travail non prévu par les parties."
+      ],
+      "mots_cles": ["période d'essai", "1 mois", "2 mois", "3 mois", "6 mois", "Exécution", "Maîtrise", "Cadre"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Formation du contrat"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Mutation",
+      "texte": [
+        "La mutation est le passage d'un poste de travail à un autre pouvant entraîner un changement de lieu de travail, et éventuellement de résidence.",
+        "La mutation fait l'objet d'un changement d'affectation signifiée préalablement au salarié par écrit avec indication du poste à occuper.",
+        "La mutation peut avoir lieu :",
+        "- sur initiative de l'employeur, pour raison de service ;",
+        "- sur demande du salarié, pour convenance personnelle.",
+        "1) Mutation sur initiative de l'employeur :",
+        "Pour raison de service ou d'inaptitude professionnelle constatée par le médecin de l'entreprise, tout salarié peut être muté à l'intérieur de l'entreprise en un même lieu ou en n'importe quel point du Congo.",
+        "Si la mutation entraîne un changement de résidence, l'employeur prend en charge les frais de déménagement et de voyage du salarié et de sa famille légitime (épouse(s) et enfants mineurs). Le salarié perçoit également une indemnité forfaitaire d'installation égale :",
+        "- au salaire de base minimum de la catégorie 4 pour les salariés du collège Exécution ;",
+        "- au salaire de base minimum de la catégorie 5 pour les salariés du collège Maîtrise ;",
+        "- au salaire de base minimum de la catégorie 6 pour les salariés du collège Cadre.",
+        "2) Mutation sur demande du salarié :",
+        "Pour convenance personnelle, tout salarié peut également demander sa mutation. Dans le cas où l'employeur accepte la demande de mutation, le salarié muté ne peut prétendre aux frais de déménagement ni à l'indemnité forfaitaire d'installation prévus ci-dessus s'il change de résidence."
+      ],
+      "mots_cles": ["mutation", "changement de résidence", "indemnité d'installation", "catégorie 4", "catégorie 5", "catégorie 6"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : Exécution et développement RH"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Maladies et accidents non professionnels",
+      "texte": [
+        "En cas de maladies ou d'accidents non professionnels dûment constatés par un médecin agréé par l'entreprise et notifiés à l'employeur dans les quarante-huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à six (6) mois ; ce délai est prorogé jusqu'au remplacement du salarié.",
+        "Pendant la période de suspension du contrat de travail pour cause de maladie ou d'accident non professionnels, le salarié perçoit les indemnités maxima ci-après :",
+        "- pour une ancienneté inférieure à douze (12) mois : indemnité égale à l'indemnité de préavis conformément aux dispositions du code de travail ;",
+        "- pour une ancienneté comprise entre un (1) an et cinq (5) ans : indemnité égale à trois (3) mois de salaire de base ;",
+        "- pour une ancienneté comprise entre cinq (5) et dix (10) ans : indemnité égale à quatre (4) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une ancienneté comprise entre dix (10) et quinze (15) ans : indemnité égale à six (6) mois de salaire de base ;",
+        "- pour une ancienneté comprise entre quinze (15) et vingt (20) ans : indemnité égale à sept (7) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une ancienneté comprise entre vingt (20) et vingt-cinq (25) ans : indemnité égale à neuf (9) mois de salaire de base ;",
+        "- pour une ancienneté comprise entre vingt-cinq (25) et trente (30) ans : indemnité égale à dix (10) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une ancienneté comprise entre trente (30) ans et trente-cinq (35) ans : indemnité égale à douze (12) mois de salaire de base ;",
+        "- Pour une ancienneté supérieure à trente-cinq (35) ans : indemnité égale à treize (13) mois de salaire et un (1) mois de demi-salaire de base.",
+        "Une fois calculée dans sa totalité selon les modalités ci-dessus indiquées, le montant global de cette indemnité est divisé par six (6) tranches égales, dont chacune sera versée au terme de chaque mois au salarié en remplacement de sa rémunération jusqu'au jour de sa reprise de travail, dans la limite de la période de six (6) mois."
+      ],
+      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "indemnités progressives", "3 mois", "13 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Préavis",
+      "texte": [
+        "En cas de rupture de contrat, et sauf cas de faute lourde, la partie qui prend l'initiative de la rupture doit respecter le préavis dont la durée est fixée comme suit :",
+        "- Deux (2) mois pour les collèges Exécution et Maîtrise ;",
+        "- Trois (3) mois pour le collège Cadre.",
+        "L'inobservation du délai de préavis crée l'obligation pour la partie responsable de verser à l'autre partie une indemnité égale à la rémunération et aux avantages de toute nature dont le salarié aurait bénéficié le délai du préavis qui n'aura pas été effectivement respecté.",
+        "Toutefois, le salarié congédié qui trouve un autre emploi durant la période de préavis, peut quitter son dernier employeur sans lui être redevable d'une indemnité, sous la seule réserve de le prévenir de son départ définitif deux (2) jours francs auparavant. Dans ce cas, le salarié conserve le droit à l'indemnité de licenciement, mais seuls les jours de préavis effectivement travaillés sont payés.",
+        "Pendant la période de préavis, qu'il s'agisse d'un licenciement ou d'une démission, le salarié est autorisé à s'absenter deux (2) heures par jour pour chercher un nouvel emploi, ces heures étant prises à son choix globalement ou heure par heure, et payées à plein salaire. Le salarié doit informer l'employeur de ses absences en temps utile."
+      ],
+      "mots_cles": ["préavis", "2 mois", "3 mois", "Exécution", "Maîtrise", "Cadre", "2 heures par jour"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "En cas de licenciement par l'employeur, hors le cas de faute lourde, le salarié ayant accompli dans l'entreprise une durée de service égale à deux (2) années a droit à une indemnité de licenciement distincte du préavis.",
+        "Cette indemnité est représentée, pour chaque année de présence accomplie dans l'entreprise par un pourcentage déterminé du salaire global mensuel moyen, établi à partir de la moyenne mensuelle de la rémunération des douze (12) mois d'activité qui ont précédé la date de licenciement.",
+        "On entend par salaire global, toutes les prestations constituant une contrepartie du travail (heures supplémentaires, primes diverses, commissions, etc.) à l'exclusion de celles présentant le caractère d'un remboursement de frais."
+      ],
+      "mots_cles": ["indemnité de licenciement", "2 ans", "salaire global", "12 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+    },
+    {
+      "article": "Art. 34 (barème)",
+      "titre": "Barème de l'indemnité de licenciement",
+      "texte": [
+        "Ce pourcentage est fixé comme suit :",
+        "- Trente (30) % par an pour les cinq (5) premières années ;",
+        "- Trente sept (37) % par an pour la période allant de la 6ème à la 10ème année incluse ;",
+        "- Cinquante cinq (55) % par an pour la période allant de la 11ème à la 15ème année incluse ;",
+        "- Soixante dix (70) % par an pour la période allant de la 16ème à la 20ème année incluse ;",
+        "- Quatre vingt (80) % par an pour la période allant de la 21ème à la 25ème année incluse ;",
+        "- Quatre vingt dix (90) % par an pour la période allant de la 26ème à la 30ème année incluse ;",
+        "- Quatre vingt quinze (95) % par an pour la période allant de la 31ème à la 35ème année incluse ;",
+        "- Cent (100) % par an au-delà de la 35ème année ;",
+        "Dans le décompte effectué sur les bases indiquées ci-dessus, il doit être tenu compte des fractions d'années."
+      ],
+      "mots_cles": ["barème licenciement", "30%", "37%", "55%", "70%", "80%", "90%", "95%", "100%"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Décès du salarié",
+      "texte": [
+        "Le décès d'un salarié en service ouvre aux ayants droit, outre les éléments constitutifs du solde de tout compte, le bénéfice d'une allocation de décès dont le montant est égal à sa rémunération mensuelle brute.",
+        "Si le salarié comptait, au jour du décès, une (1) année d'ancienneté dans l'entreprise, il est versé, en plus, une indemnité d'un montant équivalent à celui de l'indemnité de licenciement qui serait revenue au salarié en cas de rupture du contrat.",
+        "Ne peuvent prétendre aux dispositions des alinéas 1 et 2 du présent article que les ayants droits du salarié porteurs d'un acte notarié ou d'un jugement d'héritier du de cujus.",
+        "Lors des obsèques, l'entreprise est tenue d'assurer à ses frais, le transport du corps du salarié décédé au lieu d'inhumation en République du Congo, sur demande expresse de la famille.",
+        "Pour couvrir l'ensemble des frais liés aux obsèques (location des cars, achat de cercueil et accessoires, caveau, etc.) une allocation de secours dont le montant est fixé d'accord parties entre la direction de l'entreprise et les instances syndicales, est allouée aux ayants droits.",
+        "L'employeur verse une allocation fixée dans les mêmes conditions que ci-dessus en cas de décès du conjoint ou de l'enfant du salarié."
+      ],
+      "mots_cles": ["décès", "allocation", "rémunération brute", "1 an ancienneté", "obsèques", "transport corps", "ayants droit"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Mise à la retraite",
+      "texte": [
+        "Lorsque le salarié remplit les conditions requises pour faire valoir ses droits à la retraite, l'employeur est tenu d'assurer la transmission du dossier constitué par le salarié à la Caisse nationale de sécurité sociale (C.N.S.S.).",
+        "Conformément aux dispositions en vigueur à la C.N.S.S., la mise à la retraite des salariés nés vers peut intervenir à partir du 1er janvier de l'année de leur 60e anniversaire, en tenant compte de la réglementation en vigueur.",
+        "La notification de mise à la retraite sera faite dans le délai normal et conventionnel de préavis.",
+        "Le salarié partant à la retraite bénéficie d'une indemnité de départ calculée ainsi :",
+        "- Trois et demi (3,5) mois de salaire brut pour les salariés ayant de un (1) à cinq (5) années de présence dans l'entreprise ;",
+        "- Cinq (5) mois de salaire brut pour les salariés ayant de six (6) à dix (10) années de présence dans l'entreprise ;",
+        "- Six et demi (6,5) mois de salaire brut pour les salariés ayant de onze (11) à quinze (15) années de présence dans l'entreprise ;",
+        "- Huit (8) mois de salaire brut pour les salariés ayant de seize (16) à vingt (20) années de présence dans l'entreprise ;",
+        "- Neuf et demi (9,5) mois de salaire brut pour les salariés ayant de vingt un (21) à vingt cinq (25) années de présence dans l'entreprise ;",
+        "- Onze (11) mois de salaire brut pour les salariés ayant de vingt six (26) à trente (30) années de présence dans l'entreprise ;",
+        "- Douze et demi (12,5) mois de salaire brut pour les salariés ayant de trente un (31) à trente cinq (35) années de présence dans l'entreprise ;",
+        "- Quatorze (14) mois de salaire brut pour les salariés ayant trente six (36) années ou plus de présence dans l'entreprise.",
+        "En outre, le salarié partant à la retraite bénéficie, d'une indemnité forfaitaire de transport dont le montant est égal aux frais de voyage congés prévus à l'article 53 ci-dessous."
+      ],
+      "mots_cles": ["retraite", "60 ans", "CNSS", "3,5 mois", "5 mois", "6,5 mois", "8 mois", "9,5 mois", "11 mois", "12,5 mois", "14 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Heures supplémentaires",
+      "texte": [
+        "Les heures effectuées dans la semaine, avec l'accord de la direction, au-delà de la durée légale ou, dans certains cas, au-delà de la durée considérée comme équivalente à la durée légale, sont des heures supplémentaires et, à ce titre, rémunérées au taux de l'heure normale majoré d'un certain pourcentage.",
+        "Conformément à la réglementation en vigueur, les heures susvisées donnent lieu au paiement de majorations qui sont fixées comme suit :",
+        "- 15 % du salaire horaire pour les cinq premières heures au-delà de la durée légale ou de la durée considérée comme équivalente ;",
+        "- 30% du salaire horaire pour les heures suivantes de jour ;",
+        "- 60 % du salaire horaire pour les heures supplémentaires effectuées de nuit les jours ouvrables, ou pendant le repos hebdomadaire ou les jours fériés ;",
+        "- 110 % du salaire horaire pour les heures effectuées de nuit, le jour de repos hebdomadaire ou les jours fériés.",
+        "Sauf cas d'urgence, le personnel désigné pour faire des heures supplémentaires sera prévenu vingt quatre (24) heures à l'avance.",
+        "Hormis les cas d'astreinte décidée par la direction de l'entreprise, les heures supplémentaires effectuées individuellement et librement par un agent d'encadrement en dehors de l'horaire normal du service auquel il appartient, ne sont pas rémunérées."
+      ],
+      "mots_cles": ["heures supplémentaires", "15%", "30%", "60%", "110%", "24 heures", "astreinte"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 51",
+      "titre": "Congés payés",
+      "texte": [
+        "Au terme d'une durée de service effectif de douze (12) mois, le salarié acquiert, conformément aux dispositions du code de travail, un droit à congé égal au minimum à vingt six (26) jours ouvrables.",
+        "De plus, pour les salariés soumis au régime légal des congés payés, la durée des congés, tels que définis ci-dessus, est augmentée comme suit en considération de leur ancienneté dans l'entreprise :",
+        "- 2 jours supplémentaires ouvrables après cinq (5) ans de service effectif ;",
+        "- 4 jours supplémentaires ouvrables après dix (10) ans de service effectif ;",
+        "- 9 jours supplémentaires ouvrables après quinze (15) ans de service effectif ;",
+        "- 11 jours supplémentaires ouvrables après vingt (20) ans de service effectif ;",
+        "- 13 jours supplémentaires ouvrables après vingt cinq (25) ans de service effectif ;",
+        "- 15 jours supplémentaires ouvrables après trente (30) ans de service effectif ;",
+        "- 17 jours supplémentaires ouvrables au-delà de trente cinq (35) ans de service effectif."
+      ],
+      "mots_cles": ["congés payés", "26 jours", "12 mois", "2 jours", "4 jours", "9 jours", "11 jours", "13 jours", "15 jours", "17 jours"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Congés payés"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Des permissions exceptionnelles, à l'occasion d'événements familiaux touchant directement le salarié, peuvent lui être accordées dans une limite de dix-huit (18) jours par année civile, sans retenue de salaire et sans déduction de la durée du congé acquis, sur présentation des pièces d'état civil ou justification probante, dans les conditions suivantes :",
+        "- mariage du salarié à l'état civil, trois (3) jours ouvrables ;",
+        "- mariage à l'état civil d'un de ses enfants, d'un frère ou d'une sœur, en ligne directe, deux (2) jours ouvrables ;",
+        "- décès du conjoint légitime, huit (8) jours ouvrables ;",
+        "- décès d'un descendant ou d'un ascendant en ligne directe, ainsi que d'un frère ou d'une sœur, cinq (5) jours ouvrables ;",
+        "- accouchement de l'épouse légitime du salarié, trois (3) jours ouvrables ;",
+        "- retrait de deuil du conjoint, d'un descendant, ascendant ou collatéral direct, deux (2) jours ouvrables."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "18 jours", "mariage 3 jours", "décès conjoint 8 jours", "décès 5 jours", "accouchement 3 jours"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Congés payés"
+    },
+    {
+      "article": "Art. 61",
+      "titre": "Majoration pour ancienneté",
+      "texte": [
+        "Dans le cadre de la présente convention, on entend par ancienneté le temps pendant lequel le salarié a été occupé d'une façon continue dans les différents établissements d'une même entreprise, quelles que puissent être les modifications survenues dans la nature juridique de celle-ci.",
+        "Une prime d'ancienneté, consistant en une majoration du salaire de base, est allouée au salarié dans les conditions suivantes :",
+        "- Deux (2) % du salaire conventionnel après deux (2) ans de présence ;",
+        "- Un (1) % du salaire conventionnel en sus par année de service effectif au-delà de la 2ème année avec un maximum de trente deux (32) %."
+      ],
+      "mots_cles": ["prime d'ancienneté", "2%", "1%", "32% maximum"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la rémunération - Chapitre 3 : Éléments permanents"
+    },
+    {
+      "article": "Art. 62",
+      "titre": "Prime de fin d'année",
+      "texte": [
+        "Une prime de fin d'année, équivalente à un (1) mois de salaire de base augmenté de la prime d'ancienneté, est versée par l'entreprise à tout salarié effectivement présent pendant toute la période du 1er janvier au 31 décembre.",
+        "Toutefois, cette prime est attribuée au prorata des mois de service de l'année considérée à tout salarié ayant au moins une (1) année d'ancienneté dans l'entreprise, congédié en cours d'année par suite d'une diminution d'activité de l'entreprise ou d'une réorganisation interne.",
+        "Tout salarié ayant fait, en cours d'année, l'objet d'une ou plusieurs sanctions (blâme au minimum), peut voir sa prime réduite (ou même supprimée en cas de faute lourde), sauf avis contraire de la direction départementale du travail saisie par le salarié concerné qui peut se faire assister par un délégué du personnel."
+      ],
+      "mots_cles": ["prime de fin d'année", "1 mois", "salaire de base", "ancienneté", "prorata"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la rémunération - Chapitre 3 : Éléments permanents"
+    },
+    {
+      "article": "Art. 67",
+      "titre": "Primes liées au travail off shore / on shore",
+      "texte": [
+        "a) PRIME OFF SHORE / ON SHORE",
+        "Cette prime rémunère les conditions particulières de travail ou de vie sur chantiers on shore / off shore. Elle est due pour chaque jour passé sur chantiers on shore / off shore.",
+        "b) PRIME DE SEPARATION OFF SHORE / ON SHORE",
+        "Cette prime est due pour chaque journée passée sur chantiers off shore / on shore sans retour au domicile après un séjour minimum de deux (2) jours consécutifs.",
+        "Ces deux primes, si elles sont dues au salarié, peuvent être fusionnées selon les entreprises."
+      ],
+      "mots_cles": ["prime off shore", "on shore", "prime de séparation", "2 jours", "chantiers"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la rémunération - Chapitre 4 : Éléments liés à l'activité"
+    },
+    {
+      "article": "Art. 77",
+      "titre": "Organisation médicale et sanitaire",
+      "texte": [
+        "Les salariés régis par la présente convention ont droit, pour eux-mêmes, leurs épouses et enfants légitimement à leur charge, aux soins médicaux et à l'hospitalisation dans les conditions ci-après :",
+        "- les visites médicales sont effectuées auprès du médecin d'entreprise, ou éventuellement d'un médecin agréé ;",
+        "- les soins médicaux sont donnés dans les dispensaires, centres médicaux des entreprises ou dans les hôpitaux publics ou privés agréés ;",
+        "- l'hospitalisation, y compris la nourriture du malade, est assurée dans les centres médicaux des entreprises ou dans les hôpitaux publics ou privés agréés ;",
+        "- les médicaments prescrits par les médecins d'entreprise ou les médecins agréés sont fournis dans les dispensaires, centres médicaux des entreprises et éventuellement par les pharmacies agréées de la place ;",
+        "- les visites médicales annuelles, les soins médicaux et les médicaments prescrits par les médecins d'entreprise ou les médecins agréés sont pris en charge totalement par les entreprises."
+      ],
+      "mots_cles": ["organisation médicale", "soins médicaux", "hospitalisation", "médicaments", "prise en charge totale", "épouses", "enfants"],
+      "statut": "en vigueur",
+      "section": "Titre VI : De l'hygiène et de la sécurité - Du service médical - Du service social"
+    },
+    {
+      "article": "Art. 80",
+      "titre": "Durée - Date d'application - Dénonciation - Révision",
+      "texte": [
+        "a) DUREE",
+        "La présente convention collective est conclue pour une durée indéterminée.",
+        "b) DATE D'APPLICATION",
+        "La présente convention collective est applicable à partir du jour qui suit son dépôt au greffe du tribunal du travail de Pointe-Noire par la partie la plus diligente.",
+        "c) DENONCIATION",
+        "La présente convention collective peut être dénoncée au plus tôt deux (2) ans après sa signature, sous réserve d'un préavis de trois (3) mois donné par lettre recommandée avec accusé de réception par celle des parties qui le désire.",
+        "d) REVISION",
+        "La présente convention collective, de même que tout avenant qui pourrait être pris ultérieurement, sont susceptibles de révision au plus tôt un (1) an après leur signature.",
+        "La demande de révision doit être faite, sous réserve d'un préavis de deux (2) mois, par lettre recommandée, adressée par la partie qui en prend l'initiative à toutes les autres parties contractantes.",
+        "e) DISPOSITIONS COMMUNES",
+        "Les parties s'interdisent d'avoir recours au lock-out ou à la grève pendant le préavis de dénonciation, le préavis de révision, ainsi que pendant les pourparlers qui y sont consécutifs pour des motifs touchant à l'objet même de la dénonciation ou de la révision.",
+        "f) CAS DE FORCE MAJEURE",
+        "Dans le cas où un événement dûment constaté par le ministre du travail empêche l'une des parties d'observer les délais de préavis prévus à l'article 80-c, le délai de un (1) an est suspendu dans ses effets jusqu'à la date de convocation des travaux."
+      ],
+      "mots_cles": ["durée indéterminée", "dénonciation 2 ans", "3 mois préavis", "révision 1 an", "2 mois préavis", "force majeure"],
+      "statut": "en vigueur",
+      "section": "Titre VIII : Des dispositions finales"
+    },
+    {
+      "article": "Annexe I (2019)",
+      "titre": "Grille salariale applicable à compter du 1er janvier 2019 (en milliers de Francs CFA)",
+      "texte": [
+        "GRILLE SALARIALE PÉTROLE — Applicable au 1er janvier 2019",
+        "Protocole d'accord du 22 juillet 2019 — Augmentation générale de 1,2%",
+        "",
+        "COLLÈGE EXÉCUTION :",
+        "Catégorie 1 : échelon 1 = 225, échelon 2 = 249, échelon 3 = 273, échelon 4 = 298, échelon 5 = 288, échelon 6 = 306, indice ouverture 1,52",
+        "Catégorie 2 : échelon 1 = 273, échelon 2 = 296, échelon 3 = 323, échelon 4 = 342, échelon 5 = 374, échelon 6 = 397, indice 1,52",
+        "Catégorie 3 : échelon 1 = 308, échelon 2 = 337, échelon 3 = 367, échelon 4 = 395, échelon 5 = 439, échelon 6 = 444, indice 1,52",
+        "Catégorie 4 : échelon 1 = 371, échelon 2 = 405, échelon 3 = 438, échelon 4 = 464, échelon 5 = 503, échelon 6 = 533, indice 1,52",
+        "Catégorie 5 : échelon 1 = 434, échelon 2 = 469, échelon 3 = 503, échelon 4 = 538, échelon 5 = 611, indice 1,48",
+        "Catégorie 6 : échelon 1 = 540, échelon 2 = 581, échelon 3 = 620, échelon 4 = 656, échelon 5 = 692, échelon 6 = 713, échelon 7 = 744, indice 1,45",
+        "Catégorie 7 : échelon 1 = 619, échelon 2 = 655, échelon 3 = 692, échelon 4 = 722, échelon 5 = 752, échelon 6 = 788, échelon 7 = 821, indice 1,40",
+        "Catégorie 8 : échelon 1 = 691, échelon 2 = 744, échelon 3 = 793, échelon 4 = 839, échelon 5 = 848, échelon 6 = 902, échelon 7 = 939, échelon 8 = 959, indice 1,47",
+        "Catégorie 9 : échelon 1 = 730, échelon 2 = 788, échelon 3 = 844, échelon 4 = 895, échelon 5 = 992, échelon 6 = 982, échelon 7 = 1037, indice 1,49",
+        "",
+        "COLLÈGE MAÎTRISE :",
+        "Catégorie 10 : échelon 1 = 722, échelon 2 = 700, échelon 3 = 887, échelon 4 = 957, échelon 5 = 975, échelon 6 = 997, échelon 7 = 1007, indice 1,47",
+        "Catégorie 11 : échelon 1 = 817, échelon 2 = 887, échelon 3 = 952, échelon 4 = 1024, échelon 5 = 1145, échelon 6 = 1175, échelon 7 = 1189, indice 1,54",
+        "Catégorie 12 : échelon 1 = 1024, échelon 2 = 1095, échelon 3 = 1155, échelon 4 = 1209, échelon 5 = 1329, échelon 6 = 1364, indice 1,40",
+        "Catégorie 13 : échelon 1 = 1177, échelon 2 = 1262, échelon 3 = 1344, échelon 4 = 1420, échelon 5 = 1544, échelon 6 = 1605, indice 1,43",
+        "Catégorie 14 : échelon 1 = 1355, échelon 2 = 1463, échelon 3 = 1556, échelon 4 = 1564, échelon 5 = 1825, échelon 6 = 1900, indice 1,46",
+        "",
+        "COLLÈGE CADRE :",
+        "Catégorie 15 : échelon 1 = 1262, échelon 2 = 1364, échelon 3 = 1463, échelon 4 = 1547, échelon 5 = 1693, échelon 6 = 1770, indice 1,48",
+        "Catégorie 16J : échelon 1 = 1262, échelon 2 = 1317, échelon 3 = 1364, échelon 4 = 1416, échelon 5 = 1507, échelon 6 = 1547, échelon 7 = 1584, indice 1,32",
+        "Catégorie 16 : échelon 1 = 1494, échelon 2 = 1595, échelon 3 = 1698, échelon 4 = 1793, échelon 5 = 1951, échelon 6 = 2031, échelon 7 = 2076, indice 1,48",
+        "Catégorie 17 : échelon 1 = 1863, échelon 2 = 1991, échelon 3 = 2107, échelon 4 = 2216, échelon 5 = 2414, échelon 6 = 2505, indice 1,41",
+        "Catégorie 18 : échelon 1 = 2208, échelon 2 = 2408, échelon 3 = 2605, échelon 4 = 2751, échelon 5 = 2876, échelon 6 = 2919, échelon 7 = 3024, échelon 8 = 3091, indice 1,48",
+        "Catégorie 19 : échelon 1 = 2556, échelon 2 = 2737, échelon 3 = 2915, échelon 4 = 3059, échelon 5 = 3186, échelon 6 = 3451, indice 1,42",
+        "Catégorie 20 : échelon 1 = 2984, échelon 2 = 3197, échelon 3 = 3383, échelon 4 = 3571, échelon 5 = 3740, échelon 6 = 3941, échelon 7 = 4028, indice 1,42",
+        "",
+        "NB :",
+        "- La catégorie 16J est celle des Ingénieurs débutants. Ils y séjournent 5 ans maximum, à raison d'un avancement automatique par an.",
+        "- Les Directions des Entreprises et les Instances Syndicales se réunissent chaque année, dans un délai maximum de deux mois qui suit la date anniversaire du dépôt de la convention collective, pour examiner la question relative à la révision des salaires.",
+        "- La grille salariale de la Convention Collective ne peut être modifiée qu'en Commission Mixte Paritaire. En aucun cas un accord d'établissement ne peut prévaloir sur celle-ci.",
+        "",
+        "Historique des augmentations :",
+        "- 2014 : +5% (protocole du 2 juillet 2014)",
+        "- 2015 : +1% (protocole du 10 novembre 2015)",
+        "- 2016 : +2% (protocole du 17 février 2017)",
+        "- 2017 : +3% (protocole du 3 octobre 2017)",
+        "- 2018 : +1% (protocole du 2 octobre 2018)",
+        "- 2019 : +1,2% (protocole du 22 juillet 2019)"
+      ],
+      "mots_cles": ["grille salariale", "pétrole", "2019", "catégories 1-20", "échelons", "FCFA", "milliers", "Exécution", "Maîtrise", "Cadre", "augmentations"],
+      "statut": "en vigueur",
+      "section": "Annexe I : Grille salariale"
+    }
+  ]
+}

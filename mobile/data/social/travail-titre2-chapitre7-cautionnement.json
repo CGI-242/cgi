@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 7,
+    "chapitre_titre": "Du cautionnement",
+    "section": "Titre 2",
+    "section_titre": "Du contrat de travail",
+    "page_source": 32
+  },
+  "articles": [
+    {
+      "article": "Art. 77",
+      "titre": "Dépôt du cautionnement",
+      "texte": [
+        "Tout chef d'entreprise qui se fera remettre par un travailleur, à titre de cautionnement, des sommes d'argent ou des titres, devra en délivrer récépissé, les mentionner en détail sur le registre d'employeur prévu à l'article 182 et les mettre en dépôt dans le délai d'un mois à dater de leur réception.",
+        "Mention du dépôt sera également portée au registre d'employeur et justifiée par un certificat de dépôt à la disposition de l'inspection du travail.",
+        "Le Ministre du travail et de la prévoyance sociale fixe, par arrêté, après consultation du Ministre des finances et du Ministre de l'économie nationale, les modalités de ce dépôt, ainsi que la liste des caisses publiques et des banques habilitées à le recevoir. Les caisses d'épargne doivent accepter ce dépôt et délivrer un livret spécial, distinct de celui que le travailleur pourrait posséder déjà ou acquérir ultérieurement."
+      ],
+      "mots_cles": ["cautionnement", "dépôt", "récépissé", "registre d'employeur", "1 mois", "caisses publiques", "banques"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Du cautionnement"
+    },
+    {
+      "article": "Art. 78",
+      "titre": "Retrait du cautionnement",
+      "texte": [
+        "Le retrait de tout ou partie du dépôt ne pourra être effectué que sous le double consentement de l'employeur et du travailleur, ou sous celui de l'un d'eux habilité à cet effet par une décision de la juridiction compétente."
+      ],
+      "mots_cles": ["retrait", "consentement", "employeur", "travailleur", "juridiction"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Du cautionnement"
+    },
+    {
+      "article": "Art. 79",
+      "titre": "Privilège sur les sommes déposées",
+      "texte": [
+        "L'affectation du livret ou du dépôt au cautionnement de l'intéressé entraîne privilège sur les sommes déposées au profit de l'employeur et à l'égard des tiers qui formeraient des saisies-arrêts aux mains de ce dernier. Toute saisie-arrêt formée entre les mains de l'administration de la caisse publique ou de la banque est nulle de plein droit."
+      ],
+      "mots_cles": ["privilège", "dépôt", "saisie-arrêt", "nullité"],
+      "statut": "en vigueur",
+      "section": "Chapitre 7 : Du cautionnement"
+    }
+  ]
+}

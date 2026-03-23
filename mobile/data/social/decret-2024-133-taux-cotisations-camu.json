@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Décret n°2024-133 du 27 mars 2024 fixant les taux et montants de cotisation pour chaque catégorie d'assurés sociaux à la caisse d'assurance maladie universelle",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": "2.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Décret n°2024-133 - Taux cotisations CAMU",
+    "section": null,
+    "section_titre": "Textes non codifiés de sécurité sociale",
+    "page_source": 239,
+    "signataires": null,
+    "date_signature": "27 mars 2024"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet",
+      "texte": [
+        "Le présent décret fixe, en application des dispositions de l'article 16 de la loi n°19-2023 du 27 mai 2023 susvisée, les taux et montants de cotisation pour chaque catégorie d'assurés sociaux au régime d'assurance maladie universelle."
+      ],
+      "mots_cles": ["objet", "taux", "montants", "article 16"],
+      "statut": "en vigueur",
+      "section": "Taux de cotisation CAMU"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Taux de cotisation",
+      "texte": [
+        "Les différents taux et montants de cotisation des assurés à la caisse d'assurance maladie universelle sont fixés comme suit :",
+        "- employeurs publics et privés : 4,55 % de la masse salariale brute ;",
+        "- employés publics et privés : 2,27 % du salaire brut ;",
+        "- titulaires de pension : 2,27 % des pensions vieillesse et/ou d'invalidité ;",
+        "- travailleurs indépendants et des professions libérales : 3,79 % de l'assiette de cotisation définie par arrêté du Ministre chargé de la sécurité sociale ;",
+        "- étudiant : forfait annuel équivalant à la somme de 11 764 FCFA ;",
+        "- personnes vulnérables : forfait annuel équivalant à un montant de 3 529 FCFA, subventionné par l'État."
+      ],
+      "mots_cles": ["4,55 %", "2,27 %", "3,79 %", "11 764 FCFA", "3 529 FCFA", "employeurs", "salariés", "étudiants"],
+      "statut": "en vigueur",
+      "section": "Taux de cotisation CAMU"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Publication",
+      "texte": [
+        "Le présent décret sera enregistré et publié au Journal officiel de la République du Congo."
+      ],
+      "mots_cles": ["publication", "Journal officiel"],
+      "statut": "en vigueur",
+      "section": "Taux de cotisation CAMU"
+    }
+  ]
+}

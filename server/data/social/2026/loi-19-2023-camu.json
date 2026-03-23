@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°19-2023 du 27 mai 2023 portant création de la Caisse d'Assurance Maladie Universelle",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": "2.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Loi n°19-2023 - Caisse d'Assurance Maladie Universelle (CAMU)",
+    "section": null,
+    "section_titre": "Textes non codifiés de sécurité sociale",
+    "page_source": 234,
+    "signataires": null,
+    "date_signature": "27 mai 2023"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Création de la CAMU",
+      "texte": [
+        "Il est créé un établissement public à caractère spécial, doté de la personnalité morale, d'un statut spécifique, de l'autonomie financière et administrative, dénommé « caisse d'assurance maladie universelle », en sigle CAMU."
+      ],
+      "mots_cles": ["CAMU", "création", "établissement public", "assurance maladie"],
+      "statut": "en vigueur",
+      "section": "Création"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Siège",
+      "texte": [
+        "Le siège de la caisse d'assurance maladie universelle est fixé à Brazzaville. Il peut être transféré, en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil de Ministres."
+      ],
+      "mots_cles": ["siège", "Brazzaville"],
+      "statut": "en vigueur",
+      "section": "Création"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Tutelle",
+      "texte": [
+        "La caisse d'assurance maladie universelle est placée sous la tutelle du Ministre en charge de la sécurité sociale."
+      ],
+      "mots_cles": ["tutelle", "Ministre", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Création"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Mission",
+      "texte": [
+        "La caisse d'assurance maladie universelle a pour mission de gérer le régime d'assurance maladie universelle.",
+        "À ce titre, elle est chargée, notamment, de :",
+        "- assurer aux affiliés une prise en charge des soins de santé ;",
+        "- accomplir toutes autres missions dévolues par la loi en rapport avec le régime d'assurance maladie universelle."
+      ],
+      "mots_cles": ["mission", "assurance maladie", "soins de santé"],
+      "statut": "en vigueur",
+      "section": "Missions"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Prérogatives de puissance publique",
+      "texte": [
+        "La caisse d'assurance maladie universelle est investie des prérogatives de puissance publique et de privilèges en matière de recouvrement de ses créances.",
+        "Les créances de cotisations sociales bénéficient d'un privilège qui prend rang immédiatement après celui des salaires.",
+        "En cas de procédures collectives d'apurement du passif, à savoir la conciliation, le règlement préventif, le redressement judiciaire ou la liquidation des biens, les cotisations attachées au super privilège des salaires bénéficient du même rang que ces derniers."
+      ],
+      "mots_cles": ["puissance publique", "privilège", "créances", "cotisations"],
+      "statut": "en vigueur",
+      "section": "Missions"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Insaisissabilité",
+      "texte": [
+        "Les biens et deniers de la caisse d'assurance maladie universelle sont insaisissables.",
+        "Aucune opposition ne peut être pratiquée sur les sommes dues à la caisse d'assurance maladie universelle."
+      ],
+      "mots_cles": ["insaisissabilité", "biens", "opposition"],
+      "statut": "en vigueur",
+      "section": "Missions"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Convention d'objectifs",
+      "texte": [
+        "La gestion de la caisse d'assurance maladie universelle repose sur une convention d'objectifs entre la tutelle et le conseil d'administration, et un contrat de performance entre ce dernier et le directeur général."
+      ],
+      "mots_cles": ["convention d'objectifs", "contrat de performance"],
+      "statut": "en vigueur",
+      "section": "Gestion"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Gestion financière et comptable",
+      "texte": [
+        "La gestion financière et comptable de la caisse d'assurance maladie universelle est effectuée conformément aux règles et principes du plan comptable de la conférence interafricaine de prévoyance sociale et assurée par une direction financière et comptable."
+      ],
+      "mots_cles": ["gestion financière", "plan comptable", "CIPRES"],
+      "statut": "en vigueur",
+      "section": "Gestion"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Procédure d'acquisition",
+      "texte": [
+        "La caisse d'assurance maladie universelle bénéficie d'une procédure d'acquisition des biens, équipements et services, dérogatoire des procédures de la commande publique et effectuée sous la supervision du conseil d'administration."
+      ],
+      "mots_cles": ["acquisition", "procédure dérogatoire", "commande publique"],
+      "statut": "en vigueur",
+      "section": "Gestion"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Organe de participation sociale",
+      "texte": [
+        "La caisse d'assurance maladie universelle comprend, en son sein, un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de la caisse d'assurance maladie universelle.",
+        "Les attributions, l'organisation, la composition et le fonctionnement de l'organe de participation sociale sont fixés par décret en Conseil de Ministres."
+      ],
+      "mots_cles": ["participation sociale", "organe", "bénéficiaires"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Conseil d'administration",
+      "texte": [
+        "La caisse d'assurance maladie universelle est administrée par un conseil d'administration composé de manière paritaire, de personnes physiques désignées en nombre égal par les organisations professionnelles d'employeurs et de travailleurs les plus représentatifs.",
+        "Le nombre des membres du conseil d'administration ne peut être supérieur à quatorze.",
+        "La durée du mandat des administrateurs est de trois ans renouvelables une fois.",
+        "L'État siège au conseil d'administration à double titre : un représentant en tant qu'employeur, avec voix délibérative, et un autre en tant que puissance publique, sans voix délibérative.",
+        "Sont également membres du conseil d'administration, avec voix délibérative, les représentants du ministère de la santé, du ministère des finances ainsi que les organisations professionnelles intervenant dans le domaine de la santé.",
+        "Le nombre total des représentants de l'État employeur et des organisations patronales ne doit pas excéder le nombre des administrateurs représentant les travailleurs."
+      ],
+      "mots_cles": ["conseil d'administration", "paritaire", "14 membres", "3 ans"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Directeur général",
+      "texte": [
+        "La caisse d'assurance maladie universelle est dirigée par un directeur général.",
+        "Le directeur général de la caisse d'assurance maladie universelle est nommé par décret en Conseil des Ministres, après appel à candidatures du conseil d'administration.",
+        "Le conseil d'administration transmet au Ministre en charge de la sécurité sociale, le nom du meilleur candidat accompagné des procès-verbaux de délibération."
+      ],
+      "mots_cles": ["directeur général", "nomination", "Conseil des Ministres"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Ressources",
+      "texte": [
+        "Les ressources de la caisse d'assurance maladie universelle sont constituées par :",
+        "- les cotisations de l'État employeur et des organismes assimilés ;",
+        "- les cotisations des agents de l'État assimilés ;",
+        "- les cotisations des employeurs et des travailleurs relevant du Code du travail, des travailleurs indépendants et professions libérales et des étudiants ;",
+        "- les cotisations des personnes vulnérables garanties par l'État ;",
+        "- les cotisations des titulaires des pensions ;",
+        "- les taxes sur le tabac et les boissons, hormis l'eau ;",
+        "- la contribution de solidarité à la couverture de l'assurance maladie universelle ;",
+        "- les subventions de l'État ;",
+        "- le produit des amendes prévues par la loi instituant le régime d'assurance maladie universelle ;",
+        "- le produit des majorations de retard ;",
+        "- le produit de placement de fonds ;",
+        "- les dons et legs ;",
+        "- toute autre ressource attribuée à la caisse par un texte législatif ou réglementaire."
+      ],
+      "mots_cles": ["ressources", "cotisations", "taxes tabac", "contribution solidarité"],
+      "statut": "en vigueur",
+      "section": "Ressources"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Comptes cotisants et assurés",
+      "texte": [
+        "La caisse d'assurance maladie universelle tient dans ses livres un compte cotisant pour tout employeur et un compte individuel pour tout assuré.",
+        "Ces comptes sont alimentés par les déclarations des employeurs."
+      ],
+      "mots_cles": ["compte cotisant", "compte individuel", "déclarations"],
+      "statut": "en vigueur",
+      "section": "Ressources"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Modalités de reversement",
+      "texte": [
+        "Les modalités de reversement des cotisations sociales à la caisse d'assurance maladie universelle sont définies par voie réglementaire.",
+        "[NB - Voir le décret n°2024-131 du 27 mars 2024 ci-dessous.]"
+      ],
+      "mots_cles": ["reversement", "cotisations", "décret 2024-131"],
+      "statut": "en vigueur",
+      "section": "Ressources"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Taux et montants de cotisation",
+      "texte": [
+        "Les taux et montants de cotisation sont déterminés de manière à ce que les recettes totales permettent de couvrir les dépenses de prestations en espèces et en nature, ainsi que les frais de fonctionnement.",
+        "Ils sont fixés par voie réglementaire.",
+        "[NB - Voir le décret n°2024-133 du 27 mars 2024 ci-dessous.]"
+      ],
+      "mots_cles": ["taux", "montants", "cotisation", "décret 2024-133"],
+      "statut": "en vigueur",
+      "section": "Cotisations"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Étude actuarielle",
+      "texte": [
+        "La caisse d'assurance maladie universelle effectue, au moins une fois tous les cinq ans, une étude actuarielle.",
+        "Si l'étude révèle un risque de déséquilibre financier, il est procédé au réajustement des paramètres techniques conformément à la réglementation en vigueur."
+      ],
+      "mots_cles": ["étude actuarielle", "5 ans", "déséquilibre financier"],
+      "statut": "en vigueur",
+      "section": "Cotisations"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Statuts",
+      "texte": [
+        "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion de la caisse d'assurance maladie universelle sont fixés par des statuts approuvés par décret en Conseil des Ministres.",
+        "[NB - Voir le décret n°2023-1761 du 30 novembre 2023 ci-dessous.]"
+      ],
+      "mots_cles": ["statuts", "décret 2023-1761"],
+      "statut": "en vigueur",
+      "section": "Dispositions finales"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge la loi n°12-2015 du 31 août 2015 portant création de la caisse d'assurance maladie universelle, sera publiée au Journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "loi 12-2015", "Journal officiel"],
+      "statut": "en vigueur",
+      "section": "Dispositions finales"
+    }
+  ]
+}

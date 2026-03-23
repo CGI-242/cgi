@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Arrêté n°31253 du 30 décembre 2024 fixant l'assiette de cotisations pour chaque catégorie des travailleurs indépendants et des professions libérales au régime d'assurance maladie universelle",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": "2.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Arrêté n°31253 - Assiette cotisations TIPL",
+    "section": null,
+    "section_titre": "Textes non codifiés de sécurité sociale",
+    "page_source": 239,
+    "signataires": null,
+    "date_signature": "30 décembre 2024"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet",
+      "texte": [
+        "Le présent arrêté fixe, en application de l'article 2 du décret n°2024-133 du 27 mars 2024 fixant les taux et montants de cotisations à la caisse d'assurance maladie universelle, l'assiette de cotisations des travailleurs indépendants et des professions libérales."
+      ],
+      "mots_cles": ["objet", "assiette", "travailleurs indépendants", "professions libérales"],
+      "statut": "en vigueur",
+      "section": "Assiette cotisations TIPL"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définition de l'assiette",
+      "texte": [
+        "Au sens du présent arrêté, l'assiette de cotisation est la base sur laquelle est calculée le taux de cotisation de 3,79 % applicable aux travailleurs indépendants et des professions libérales."
+      ],
+      "mots_cles": ["assiette", "3,79 %", "base de calcul"],
+      "statut": "en vigueur",
+      "section": "Assiette cotisations TIPL"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Tableau des assiettes et cotisations mensuelles",
+      "texte": [
+        "L'assiette et les montants des cotisations mensuelles des travailleurs indépendants et des professions libérales sont fixés selon le tableau ci-après :",
+        "1. Vendeurs de marché, Petits restaurants : Assiette 190.000 FCFA, Cotisation 7.201 FCFA ;",
+        "2. Éleveurs, Maraîchers : Assiette 200.000 FCFA, Cotisation 7.580 FCFA ;",
+        "3. Kiosques, Multi-services : Assiette 210.000 FCFA, Cotisation 7.959 FCFA ;",
+        "4. Ferronniers, Frigoristes, Vanniers : Assiette 220.000 FCFA, Cotisation 8.338 FCFA ;",
+        "5. Stations lavage, Parkings, Vulcanisateurs : Assiette 225.000 FCFA, Cotisation 8.528 FCFA ;",
+        "6. Bouchers, Poissonniers : Assiette 240.000 FCFA, Cotisation 9.096 FCFA ;",
+        "7. Dépôts de ciment, gaz, boissons : Assiette 255.000 FCFA, Cotisation 9.665 FCFA ;",
+        "8. Conducteurs taxi, Bus, Routiers : Assiette 260.000 FCFA, Cotisation 9.854 FCFA ;",
+        "9. Peintres, Sérigraphes, Sculpteurs : Assiette 280.000 FCFA, Cotisation 10.612 FCFA ;",
+        "10. Coiffeurs, Couturiers : Assiette 300.000 FCFA, Cotisation 11.370 FCFA ;",
+        "11. Alimentations, Quincailleries : Assiette 325.000 FCFA, Cotisation 12.318 FCFA ;",
+        "12. Mécaniciens, Vitriers, Menuisiers : Assiette 350.000 FCFA, Cotisation 13.265 FCFA ;",
+        "13. Bijouteries, Pressings : Assiette 400.000 FCFA, Cotisation 15.160 FCFA ;",
+        "14. Architectes, Vétérinaires, Armateurs : Assiette 500.000 FCFA, Cotisation 18.950 FCFA ;",
+        "15. Huissiers, Notaires, Avocats, Conseils : Assiette 600.000 FCFA, Cotisation 22.740 FCFA."
+      ],
+      "mots_cles": ["tableau", "15 catégories", "assiette", "cotisations mensuelles", "190 000 à 600 000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Assiette cotisations TIPL"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Publication",
+      "texte": [
+        "Le présent arrêté sera enregistré et publié au Journal officiel de la République du Congo."
+      ],
+      "mots_cles": ["publication", "Journal officiel"],
+      "statut": "en vigueur",
+      "section": "Assiette cotisations TIPL"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective fixant les Conditions d'Emploi des Marins du Secteur de la Pêche Maritime Industrielle",
+    "pays": "République du Congo",
+    "edition": "2009",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective de la Pêche Maritime Industrielle",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Armateurs de pêche industrielle (employeurs) / Syndicats des marins pêcheurs (travailleurs)",
+    "date_signature": "14 décembre 2009"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente convention collective fixe les conditions d'emploi des marins du secteur de la pêche maritime industrielle en République du Congo.",
+        "Elle règle les rapports de travail entre les armateurs de pêche industrielle et les marins pêcheurs."
+      ],
+      "mots_cles": ["pêche maritime", "industrielle", "marins pêcheurs", "armateurs"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Définitions",
+      "texte": [
+        "Au sens de la présente convention, on entend par :",
+        "- Armateur : toute personne physique ou morale propriétaire ou exploitant d'un ou de plusieurs navires de pêche ;",
+        "- Marin pêcheur : toute personne inscrite au registre maritime et engagée par un armateur pour exercer à bord d'un navire de pêche une activité professionnelle liée à la pêche maritime industrielle."
+      ],
+      "mots_cles": ["armateur", "marin pêcheur", "navire de pêche", "registre maritime"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Période d'essai",
+      "texte": [
+        "Le marin pêcheur est soumis à une période d'essai dont la durée est fixée par l'accord d'engagement.",
+        "La durée de la période d'essai varie selon la catégorie du marin.",
+        "Elle ne peut excéder six (6) mois, renouvellement compris."
+      ],
+      "mots_cles": ["période d'essai", "marin pêcheur", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "En cas de licenciement par l'armateur, hors le cas de faute lourde, le marin pêcheur ayant accompli dans l'entreprise une durée de service continue au moins égale à deux (2) ans, a droit à une indemnité de licenciement distincte du préavis.",
+        "Cette indemnité est calculée conformément aux dispositions de la convention collective applicable au secteur."
+      ],
+      "mots_cles": ["indemnité de licenciement", "marin pêcheur", "2 ans", "armateur"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement - Résiliation"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Des permissions exceptionnelles sont accordées au marin pêcheur à l'occasion d'événements familiaux, conformément aux dispositions légales et réglementaires en vigueur."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "marin pêcheur"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Couchage, hygiène, santé et logement de l'équipage",
+      "texte": [
+        "L'armateur est tenu de fournir à bord du navire des conditions de couchage, d'hygiène et de santé conformes aux normes en vigueur.",
+        "Le logement de l'équipage à bord doit répondre aux exigences de salubrité et de sécurité."
+      ],
+      "mots_cles": ["couchage", "hygiène", "santé", "logement", "équipage", "navire"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    }
+  ]
+}

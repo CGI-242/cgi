@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Du règlement intérieur",
+    "section": "Titre 2",
+    "section_titre": "Du contrat de travail",
+    "page_source": 31
+  },
+  "articles": [
+    {
+      "article": "Art. 74",
+      "titre": "Obligation de règlement intérieur",
+      "texte": [
+        "Un règlement intérieur est tenu dans les établissements de toute nature, qu'ils dépendent d'une entreprise privée ou de la puissance publique."
+      ],
+      "mots_cles": ["règlement intérieur", "obligation", "établissements"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Du règlement intérieur"
+    },
+    {
+      "article": "Art. 75",
+      "titre": "Contenu et procédure du règlement intérieur",
+      "texte": [
+        "Le projet de règlement intérieur est établi par l'employeur, son contenu est exclusivement limité aux règles relatives à l'organisation technique du travail, à la discipline et aux prescriptions concernant l'hygiène et la sécurité nécessaires à la bonne marche de l'entreprise.",
+        "Toutes les autres clauses qui viendraient à y figurer, notamment celles relatives à la rémunération, seront considérées comme nulles de plein droit, à l'exception toutefois de celles concernant le retrait du salaire par les travailleurs absents le jour de la paie.",
+        "Avant de le mettre en vigueur, le chef d'entreprise doit communiquer le règlement intérieur au bureau syndical s'il en existe, pour étude et discussion, et à l'inspecteur du travail qui peut exiger le retrait ou la modification des dispositions contraires aux lois et règlements en vigueur.",
+        "Un arrêté du Ministre du travail et de la prévoyance sociale pris après avis de la commission nationale consultative du travail, déterminera les modalités de communication de dépôt et d'affichage du règlement intérieur, ainsi que le nombre de travailleurs de l'entreprise au-dessus duquel l'existence de ce règlement est obligatoire."
+      ],
+      "mots_cles": ["contenu", "organisation technique", "discipline", "hygiène", "sécurité", "nullité", "rémunération", "inspecteur du travail", "bureau syndical"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Du règlement intérieur"
+    },
+    {
+      "article": "Art. 76",
+      "titre": "Interdiction d'infliger des amendes",
+      "texte": [
+        "Il est interdit à l'employeur d'infliger des amendes."
+      ],
+      "mots_cles": ["amendes", "interdiction", "employeur"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Du règlement intérieur"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 4,
+    "chapitre_titre": "De la sous-entreprise",
+    "section": "Titre 2",
+    "section_titre": "Du contrat de travail",
+    "page_source": 26
+  },
+  "articles": [
+    {
+      "article": "Art. 69",
+      "titre": "Définition de la sous-entreprise",
+      "texte": [
+        "La sous-entreprise est la convention par laquelle un entrepreneur traite avec un autre entrepreneur pour l'exécution de la totalité ou d'une partie d'un travail donné ou pour la fourniture de certains services moyennant un prix forfaitaire.",
+        "Le sous-entrepreneur recrute lui-même la main-d'œuvre nécessaire."
+      ],
+      "mots_cles": ["sous-entreprise", "entrepreneur", "sous-traitance", "prix forfaitaire", "main-d'œuvre"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : De la sous-entreprise"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Responsabilité de l'entrepreneur en cas d'insolvabilité du sous-entrepreneur",
+      "texte": [
+        "Quand les travaux sont exécutés dans les ateliers, magasins ou chantiers de l'entrepreneur ce dernier est, en cas d'insolvabilité du sous-entrepreneur, substitué à celui-ci en ce qui concerne ses obligations à l'égard des travailleurs et de la caisse nationale de prévoyance sociale.",
+        "Quand les travaux sont exécutés dans un lieu autre que les ateliers, magasins ou chantiers de l'entrepreneur, ce dernier est en cas d'insolvabilité du sous-entrepreneur, responsable du paiement des salaires dus aux travailleurs et du versement des cotisations à la caisse nationale de prévoyance sociale.",
+        "Le travailleur lésé et la caisse nationale de prévoyance sociale, auront, dans ces cas, une action directe contre l'entrepreneur qui, lui, dispose d'une action récursoire contre le sous-entrepreneur."
+      ],
+      "mots_cles": ["responsabilité", "insolvabilité", "sous-entrepreneur", "salaires", "prévoyance sociale", "action directe", "action récursoire"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : De la sous-entreprise"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Obligations d'affichage du sous-entrepreneur",
+      "texte": [
+        "Dans le cas où un sous-entrepreneur inscrit ou non au registre de commerce, exécute ou fait exécuter des travaux dans les ateliers, magasins et chantiers, autres que ceux de l'entrepreneur principal qui les lui a confiés, il doit apposer dans chacun de ces ateliers, magasins ou chantiers, une pancarte indiquant en caractères durables et lisibles de la voie publique :",
+        "- ses nom et adresse ;",
+        "- sa qualité de sous-entrepreneur ;",
+        "- le nom et l'adresse de la personne de qui il tient les travaux.",
+        "Ces indications sont communiquées à l'inspecteur du travail en précisant la nature, la durée probable et l'emplacement des travaux.",
+        "Même lorsqu'il applique les règlements, barèmes, salaires, etc. de l'entrepreneur principal, le sous-entrepreneur est tenu d'effectuer pour son propre compte des affichages réglementaires."
+      ],
+      "mots_cles": ["affichage", "sous-entrepreneur", "pancarte", "inspecteur du travail", "règlements"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : De la sous-entreprise"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Liste des sous-entrepreneurs",
+      "texte": [
+        "L'entrepreneur doit tenir à jour la liste des sous-entrepreneurs avec lesquels il a passé contrat."
+      ],
+      "mots_cles": ["liste", "sous-entrepreneurs", "entrepreneur", "contrat"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : De la sous-entreprise"
+    }
+  ]
+}

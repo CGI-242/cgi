@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective des Auxiliaires de Transports, Terminaux à Conteneurs et Assimilés",
+    "pays": "République du Congo",
+    "edition": "2016",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective Auxiliaires de Transport",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Syndicat acconiers/manutentionnaires, Syndicat compagnies maritimes, Syndicat transitaires (employeurs) / CSC, FESYDOCK (travailleurs)",
+    "date_signature": "2016"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente convention et ses annexes règlent les rapports de travail entre les entreprises relevant des branches d'activités ci-dessus et les travailleurs tels qu'ils sont définis à l'article 2 du Code du travail, quel que soit leur sexe et leur nationalité, employés dans les entreprises relevant des branches d'activités précitées et qui s'engagent à mettre leurs activités professionnelles moyennant rémunération, sous la direction de ces entreprises.",
+        "Des annexes à la présente convention déterminent la classification professionnelle de ces travailleurs et les salaires auxquels ils peuvent prétendre."
+      ],
+      "mots_cles": ["auxiliaires de transport", "terminaux à conteneurs", "acconiers", "manutention", "consignataires", "transitaires"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des dispositions générales"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Période d'essai",
+      "texte": [
+        "Tout salarié peut être soumis à une période d'essai au cours de laquelle chacune des parties peut rompre le contrat de travail sans préavis ni indemnité.",
+        "La durée de la période d'essai varie selon que le salarié ait conclu un contrat à durée déterminée ou indéterminée.",
+        "Pour un contrat à durée déterminée, et quelle que soit la catégorie professionnelle, la période d'essai est de :",
+        "- Quinze (15) jours maximum pour les contrats dont la durée est inférieure ou égale à six (6) mois ;",
+        "- Un (1) mois pour les autres cas.",
+        "Pour un contrat à durée indéterminée, la durée de la période d'essai varie en fonction du collège auquel appartient le salarié. Cette période d'essai est de :",
+        "- Un (1) mois pour les salariés du collège Exécution ;",
+        "- Deux (2) mois pour les salariés du collège Maitrise ;",
+        "- Trois (03) mois pour les salariés du collège des Cadres.",
+        "La période d'essai peut être renouvelée une seule fois.",
+        "Le renouvellement de la période d'essai doit être notifié au salarié par écrit au plus tard avant le terme de la période initiale.",
+        "Pendant la période d'essai, le salarié doit percevoir au moins le salaire minimum de la catégorie dont relève le poste à pourvoir, ainsi que les avantages contractuels auxquels il a droit.",
+        "La prolongation des services après expiration de la période d'essai, équivaut à la confirmation du contrat établit, prenant effet à sa date d'établissement.",
+        "Pendant la période d'essai, en cas de maladie dûment constatée par un médecin agréé par l'entreprise ou d'hospitalisation pour une durée égale ou supérieure à quinze (15) jours ouvrables, la durée de la période d'essai en sera prolongée d'autant sauf si l'état médical de l'employé le rend inapte à sa fonction. Dans ce cas, le contrat de travail sera automatiquement résilié."
+      ],
+      "mots_cles": ["période d'essai", "15 jours CDD", "1 mois", "2 mois", "3 mois", "Exécution", "Maîtrise", "Cadre"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 2"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Maladies et accidents non professionnels",
+      "texte": [
+        "En cas de maladie ou d'accidents non professionnels dûment constatés par un médecin agréé par l'entreprise et notifiés à l'employeur dans les quarante-huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à six (6) mois. Cette suspension ne peut intervenir qu'après un délai raisonnable d'un (01) mois ; ce délai de six (6) mois est prorogé jusqu'au remplacement du salarié.",
+        "Si, pendant le délai de suspension, le remplacement du salarié s'impose, le remplaçant doit être informé par écrit du caractère provisoire de son emploi.",
+        "Pendant la période de suspension du travail pour cause de maladie ou accident non professionnel, le travailleur percevra les indemnités ci-après calculées sur le salaire de base dans la limite de douze (12) mois sous réserves de la non prise en charge par la C.N.S.S.",
+        "1- Avant 12 mois de service : indemnités égale à l'indemnité de préavis",
+        "2- Après 12 mois de service et jusqu'à 5 ans : indemnité égale à 5 mois de salaire de base",
+        "3- Après cinq (5) ans de service et jusqu'à dix (10) ans : indemnité égale à 8 mois de salaire de base",
+        "4- Après dix (10) ans de service : indemnité égale à 12 mois de salaire de base.",
+        "Une fois calculé dans sa totalité selon les modalités ci-dessus, le montant global de cette indemnité est divisé par 6 tranches égales, dont chacune sera versée au terme de chaque mois au salarié en remplacement de sa rémunération jusqu'au jour de sa reprise de travail dans la limite de la période de six mois pendant la période de la suspension. Toutes les dettes contractées par le salarié en interne sont suspendues"
+      ],
+      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "5 mois salaire", "8 mois", "12 mois", "CNSS"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 4 : Suspension du contrat de travail"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "En cas de licenciement par l'employeur, hors le cas de faute lourde, le salarié ayant accompli dans l'entreprise une durée de service continue au moins égale à deux (2) ans, a droit à une indemnité de licenciement distincte du préavis.",
+        "Cette indemnité est représentée, pour chaque année de présence accomplie dans l'entreprise, par un pourcentage déterminé du salaire global mensuel moyen des douze (12) mois d'activité qui ont précédé la date du licenciement.",
+        "Ce pourcentage est fixé comme suit :",
+        "- 30% du salaire moyen par an de présence pour les 5 premières années ;",
+        "- 35% par an pour la période allant de la 6ème à la 10ème année ;",
+        "- 40% par an pour la période allant de la 11ème à la 15ème année ;",
+        "- 45% par an pour la période allant de la 16ème à la 20ème année ;",
+        "- 50% par an pour la période allant de la 21ème à la 25ème année ;",
+        "- 55% par an au-delà de la 25ème année.",
+        "Dans le décompte effectué sur les bases indiquées ci-dessus, il doit être tenu compte des fractions d'années au moins égales à trente (30) jours."
+      ],
+      "mots_cles": ["indemnité de licenciement", "2 ans", "30%", "35%", "40%", "45%", "50%", "55%"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 5 : Résiliation du contrat de travail"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Heures supplémentaires",
+      "texte": [
+        "Les heures effectuées dans la semaine, avec l'accord de la direction, au-delà de la durée légale ou dans certains cas, au-delà de la durée considérée comme équivalente à la durée légale, sont des heures supplémentaires et, à ce titre, rémunérées au taux de l'heure normale majoré d'un certain pourcentage.",
+        "Les heures supplémentaires donneront lieu au paiement de majorations qui sont fixées comme suit :",
+        "- 15% du salaire horaire pour les cinq (5) premières heures au-delà de la durée légale ou de la durée considérée comme équivalente ;",
+        "- 30% du salaire horaire pour les heures suivantes de jour ;",
+        "- 60% du salaire horaire pour les heures supplémentaires effectuées de nuit les jours ouvrables, ou pendant le repos hebdomadaire ou les jours fériés ;",
+        "- 110% du salaire horaire pour les heures effectuées de nuit le jour du repos hebdomadaire ou les jours fériés.",
+        "Sauf cas d'urgence, le personnel désigné pour effectuer des heures supplémentaires sera prévenu vingt-quatre (24) heures à l'avance."
+      ],
+      "mots_cles": ["heures supplémentaires", "15%", "30%", "60%", "110%", "24 heures"],
+      "statut": "en vigueur",
+      "section": "Titre IV - Chapitre 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Prime d'ancienneté",
+      "texte": [
+        "On entend par ancienneté le temps pendant lequel le salarié a été occupé d'une façon continue dans les différents établissements d'une même entreprise, quelles que puissent être les modifications survenues dans la nature juridique de celle-ci.",
+        "Une prime d'ancienneté, consistant en une majoration du salaire de base, est allouée au salarié dans les conditions suivantes :",
+        "- 2% du salaire conventionnel après deux (2) ans de présence ;",
+        "- 1% du salaire conventionnel en sus par année de service effectif au-delà de la 2ème année avec un maximum de trente (30) %."
+      ],
+      "mots_cles": ["prime d'ancienneté", "2%", "1%", "30% maximum"],
+      "statut": "en vigueur",
+      "section": "Titre V - Chapitre 3 : Éléments permanents"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Treizième mois",
+      "texte": [
+        "Un treizième mois de salaire, équivalent au salaire de base augmenté de la prime d'ancienneté, est versé par l'entreprise à tout salarié effectivement présent pendant toute la période du 1er Janvier au 31 décembre. Il est payable au plus tard le 15 janvier de l'année suivante.",
+        "Toutefois, ce treizième mois est attribué au prorata des mois de service de l'année considérée à tout salarié ayant au moins une (1) année d'ancienneté dans l'entreprise, congédié en cours d'année par suite d'une diminution d'activité de l'entreprise ou d'une réorganisation interne."
+      ],
+      "mots_cles": ["treizième mois", "salaire de base", "ancienneté", "15 janvier", "prorata"],
+      "statut": "en vigueur",
+      "section": "Titre V - Chapitre 3 : Éléments permanents"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Des permissions exceptionnelles, à l'occasion d'événements familiaux touchant directement le salarié, peuvent lui être accordées dans une limite de dix-huit (18) jours par année civile, sans retenue de salaire et sans déduction de la durée du congé acquis, sur présentation des pièces d'état civil ou justification probante, dans les conditions suivantes :",
+        "- Mariage du salarié à l'état civil : 4 jours ouvrables ;",
+        "- Mariage de l'enfant, du frère ou de la sœur : 2 jours ouvrables ;",
+        "- Décès du conjoint légitime : 8 jours ouvrables ;",
+        "- Décès de l'enfant, du père ou de la mère : 5 jours ouvrables ;",
+        "- Décès d'un frère, d'une sœur : 3 jours ouvrables ;",
+        "- Accouchement de l'épouse légitime : 3 jours ouvrables ;",
+        "- Retrait de deuil : 2 jours ouvrables ;",
+        "- Baptême d'un enfant : 1 jour ouvrable ;",
+        "- Décès d'un ascendant ou descendant en ligne directe : 2 jours ouvrables.",
+        "Ces permissions ne sont pas dues si l'événement se produit pendant la période normale de congé du salarié."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "18 jours", "mariage 4 jours", "décès conjoint 8 jours", "accouchement 3 jours"],
+      "statut": "en vigueur",
+      "section": "Titre IV - Chapitre 2 : Congés payés et autres absences"
+    }
+  ]
+}

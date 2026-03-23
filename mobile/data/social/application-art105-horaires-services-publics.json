@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 105 : Décret n°1984-1093 du 29 décembre 1984 fixant les horaires de travail dans les services publics et dans les entreprises",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 90
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet du décret",
+      "texte": [
+        "[NB - Décret n°1984-1093 du 29 décembre 1984 fixant les horaires de travail dans les services publics, dans les entreprises publiques et para-publiques et entreprises privées]",
+        "Le présent décret détermine les horaires de travail dans les services publics et dans les entreprises publiques, para-publiques et dans les entreprises privées."
+      ],
+      "mots_cles": ["horaires", "services publics", "entreprises publiques", "entreprises privées"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Durée hebdomadaire — 40 heures sur 6 jours",
+      "texte": [
+        "La durée hebdomadaire de 40 heures de travail est étalée sur six jours dans la semaine du Lundi au Samedi."
+      ],
+      "mots_cles": ["40 heures", "6 jours", "lundi", "samedi"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Pause journalière de 30 minutes",
+      "texte": [
+        "Pour les Entreprises soumises au système de la journée continue une pause journalière de 30 minutes est prévue de 10h00 à 10h30 pour les Services et Entreprises fonctionnant de 6h20 à 13h et 12h à 12h30 pour ceux fonctionnant de 7h à 14h.",
+        "Toutefois pour éviter l'arrêt complet de la production, la pause pourra être organisée par roulement."
+      ],
+      "mots_cles": ["pause", "30 minutes", "journée continue", "roulement"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Pause sur les lieux de travail",
+      "texte": [
+        "La pause doit être prise sur les lieux de travail."
+      ],
+      "mots_cles": ["pause", "lieux de travail"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Horaires par nature d'activité",
+      "texte": [
+        "En conséquence, les horaires de travail dans les services publics et dans certaines entreprises publiques et para-publiques et Entreprises Privées sont fixées comme suit :",
+        "- Trésor, CNPS, banques, ARC, BNDC, Entreprises de BTP et assimilés : Lundi au samedi 6h20-13h, Pause de 10h à 10h30 ;",
+        "- Administrations centrales et collectivités locales, Garage administratif : Lundi au vendredi 7h-14h, Samedi 7h-12h, Pause de 12h à 12h30. La pompe à essence du garage administratif reste ouverte jusqu'à 18h ;",
+        "- Parcs et musées : Lundi au vendredi matin 7h30-12h, Après-midi 15h-17h30, Samedi 7h-12h30. Avec une permanence le samedi après-midi et le dimanche toute la journée ;",
+        "- Entreprises commerciales : Horaire à deux temps à la libre organisation de l'entreprise."
+      ],
+      "mots_cles": ["horaires", "Trésor", "CNPS", "banques", "BTP", "administrations", "parcs", "entreprises commerciales"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Entreprises non soumises à la journée continue",
+      "texte": [
+        "Le système de la journée continue ne s'applique pas aux entreprises et services ci-après qui restent soumis au régime de travail à deux temps par roulement ou à un horaire correspondant à la nature de l'activité :",
+        "- les entreprises de transport terrestre, ferroviaire, aérien, fluvial et maritime ainsi que les services ou entreprises exerçant des activités connexes,",
+        "- le Service de la Voirie,",
+        "- les services des douanes et des docks, les entreprises de pêches maritime et fluviale,",
+        "- la radio, la télévision et la presse écrite,",
+        "- les entreprises de production, transport et distribution d'énergie électrique ainsi que les entreprises de distribution, d'épuration et d'élévation des eaux,",
+        "- les entreprises publiques de prospection minière,",
+        "- les fermes, plantations et activités assimilées,",
+        "- les administrations des établissements scolaires et universitaires,",
+        "- les administrations des établissements socio-sanitaires,",
+        "- les hôpitaux, les dispensaires, les infirmeries, les cliniques et les pharmacies,",
+        "- les entreprises industrielles et commerciales,",
+        "- les formations d'enseignement,",
+        "- les hôtels, bars et restaurants,",
+        "- les boulangeries."
+      ],
+      "mots_cles": ["journée continue", "exceptions", "transport", "douanes", "radio", "énergie", "hôpitaux", "hôtels"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Horaires des entreprises exclues",
+      "texte": [
+        "Les horaires à fixer conformément à l'article 6 ci-dessus devront faire l'objet d'un arrêté du Ministre du travail, sur proposition des services et entreprises intéressés."
+      ],
+      "mots_cles": ["horaires", "arrêté", "Ministre du travail"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "ONPT",
+      "texte": [
+        "L'Office National des Postes et Télécommunications (ONPT) reste soumis aux dispositions de l'arrêté n°2900/MTPS-DGTFP-DTPS du 13 avril 1964."
+      ],
+      "mots_cles": ["ONPT", "Postes", "Télécommunications", "arrêté 2900"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Dérogations possibles",
+      "texte": [
+        "Toutefois, le Ministre du travail pourra, après avis du Conseil des Ministres, accorder certaines dérogations lorsque celles-ci ne mettent pas en cause fondamentalement les systèmes de la journée de travail."
+      ],
+      "mots_cles": ["dérogations", "Conseil des Ministres"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Abrogation",
+      "texte": [
+        "Le décret n°82/834 du 13 septembre 1982 modifiant les horaires de travail dans les services publics et entreprises publiques et parapubliques, est abrogé."
+      ],
+      "mots_cles": ["abrogation", "décret 82/834"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "Le présent décret qui prendra effet à compter du 2 janvier 1985 sera enregistré, publié au JORPC et communiqué partout où besoin sera."
+      ],
+      "mots_cles": ["entrée en vigueur", "2 janvier 1985", "JORPC"],
+      "statut": "en vigueur",
+      "section": "Décret horaires"
+    }
+  ]
+}

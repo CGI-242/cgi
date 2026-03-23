@@ -6,3 +6,5 @@ dist/
 *.png
 !mobile/assets/*.png
 .DS_Store
+*.pdf
+Conventions_collectives/

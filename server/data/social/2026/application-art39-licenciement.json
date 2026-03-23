@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 39 : Arrêté n°1108 du 24 juin 1996 fixant la procédure de licenciement individuel ou collectif pour cause économique ou structurelle et de rupture du contrat par mutuel consentement",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 73
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet de l'arrêté",
+      "texte": [
+        "[NB - Arrêté n°1108/MTFPSS-DGT du 24 juin 1996 fixant la procédure de licenciement individuel ou collectif pour cause économique ou structurelle et de rupture du contrat par mutuel consentement]",
+        "Le présent arrêté fixe la procédure de licenciement individuel ou collectif pour cause économique ou structurelle et de rupture du contrat par mutuel consentement."
+      ],
+      "mots_cles": ["arrêté 1108", "licenciement", "économique", "structurel", "mutuel consentement", "procédure"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Licenciement individuel ou collectif"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Dossier de demande de licenciement",
+      "texte": [
+        "Tout dossier de demande de licenciement individuel ou collectif pour cause économique ou structurelle doit être établi par l'employeur en double exemplaire et transmis au Directeur Régional du Travail du ressort territorial de l'entreprise concernée."
+      ],
+      "mots_cles": ["dossier", "demande", "licenciement", "Directeur Régional", "double exemplaire"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Licenciement individuel ou collectif"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Contenu obligatoire du dossier",
+      "texte": [
+        "Le dossier de demande de licenciement individuel ou collectif pour cause économique au structurelle doit obligatoirement comprendre :",
+        "- les éléments financiers et comptables de l'entreprise pouvant faciliter l'appréciation de sa situation réelle ;",
+        "- le plan détaillé de relance des activités ou de réorganisation ;",
+        "- les emplois ou les postes touchés par la mesure ;",
+        "- l'avis des délégués du personnel de l'entreprise."
+      ],
+      "mots_cles": ["contenu dossier", "éléments financiers", "plan de relance", "emplois", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Licenciement individuel ou collectif"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Enquête de la Commission des litiges",
+      "texte": [
+        "Le Directeur Régional du travail, Président de la Commission des litiges engage par la Commission, une enquête sur les éléments financiers et comptables contenus dans le dossier de demande de licenciement.",
+        "Dans un délai maximum de 15 jours à compter de la date de réception dudit dossier, il convoque la commission des litiges qui statue sur la demande. L'avis de la Commission peut être favorable ou défavorable à la demande."
+      ],
+      "mots_cles": ["enquête", "commission des litiges", "15 jours", "avis", "favorable", "défavorable"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Licenciement individuel ou collectif"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Recherche de solutions alternatives",
+      "texte": [
+        "Pour sauvegarder les emplois, les partenaires sociaux au sein de l'entreprise doivent rechercher si des solutions telles que le travail à temps partiel, la suppression des heures supplémentaires, la réduction des salaires, la suppression ou la réduction des charges somptuaires... ne peuvent être trouvés à la mesure de licenciement."
+      ],
+      "mots_cles": ["solutions alternatives", "temps partiel", "heures supplémentaires", "réduction salaires"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Licenciement individuel ou collectif"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Définition du départ par consentement mutuel",
+      "texte": [
+        "Le départ par consentement mutuel est un mode de rupture du contrat fondé sur l'autonomie de la volonté des parties contractantes."
+      ],
+      "mots_cles": ["consentement mutuel", "départ", "rupture", "autonomie", "volonté"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Départ par consentement mutuel"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Appréciation de l'inspecteur du travail",
+      "texte": [
+        "Tout départ par consentement mutuel ne prend effet que sous réserve de l'appréciation de l'inspecteur du travail saisi par l'employeur sur les circonstances du départ négocié."
+      ],
+      "mots_cles": ["inspecteur du travail", "appréciation", "départ négocié"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Départ par consentement mutuel"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Vérification du consentement",
+      "texte": [
+        "Sans faire entrave à la volonté des parties, l'inspecteur du travail vérifie les circonstances du consentement du salarié et relève les risques par lui encourus.",
+        "La décision définitive du salarié doit être exprimée par écrit."
+      ],
+      "mots_cles": ["vérification", "consentement", "écrit", "risques"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Départ par consentement mutuel"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Consentement vicié",
+      "texte": [
+        "Lorsque le consentement du salarié est vicié par dol, trafic d'influences ou pressions de toutes sortes, l'inspecteur du Travail en informe les parties ainsi que les délégués du personnel de l'entreprise."
+      ],
+      "mots_cles": ["consentement vicié", "dol", "pressions", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Départ par consentement mutuel"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Droit de recours du salarié",
+      "texte": [
+        "Le consentement du salarié porte exclusivement sur le principe de son départ de l'entreprise. Il dispose ainsi du droit de recours devant l'inspecteur du travail ou la juridiction compétente en contestation notamment des indemnités de rupture de contrat qui auront été consenties par l'employeur."
+      ],
+      "mots_cles": ["recours", "indemnités", "contestation", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Départ par consentement mutuel"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Délai de consultation des délégués",
+      "texte": [
+        "L'avis ou les suggestions des délégués du personnel notamment en cas de licenciement pour cause économique ou structurelle est requis dans un délai maximum de huit jours à partir de la date où l'employeur les saisit. Au terme de ce délai, les avis ou suggestions sont réputés favorables."
+      ],
+      "mots_cles": ["délégués du personnel", "avis", "8 jours", "réputés favorables"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Dispositions finales"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Responsabilité de l'employeur",
+      "texte": [
+        "L'employeur qui prend l'initiative du licenciement individuel ou collectif pour motif économique ou structurel en assume la responsabilité."
+      ],
+      "mots_cles": ["responsabilité", "employeur", "licenciement"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Dispositions finales"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Nullité des mesures non conformes",
+      "texte": [
+        "Toutes mesures de licenciement individuel ou collectif et de départ par consentement mutuel qui ne respectent pas les prescriptions du présent arrêté sont nulles et de nul effet.",
+        "Les dispositions du présent arrêté ne s'appliquent pas aux contrats conclus pour la durée d'un chantier ou d'un ouvrage."
+      ],
+      "mots_cles": ["nullité", "non-conformité", "chantier", "ouvrage"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Dispositions finales"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Abrogation",
+      "texte": [
+        "Sont abrogées les dispositions de la circulaire n°254 du 8 décembre 1987 ainsi que toute pratique contraire au présent arrêté, qui sera enregistré, publié au journal officiel de la République du Congo et communiqué partout où besoin sera."
+      ],
+      "mots_cles": ["abrogation", "circulaire 254", "Journal Officiel"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Dispositions finales"
+    }
+  ]
+}

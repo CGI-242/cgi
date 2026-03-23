@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective des Travailleurs des Banques, Assurances et Assureur-Conseils",
+    "pays": "République du Congo",
+    "edition": "2011",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective BAM (Banques, Assurances, Microfinance)",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "APEC, APSACO, AAC (employeurs) / CSTC, CSC, COSYLAC, FESYTRABAC (travailleurs)",
+    "date_signature": "Juin 2011"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet",
+      "texte": [
+        "La présente Convention a pour objet de fixer les conditions d'emplois et de travail ainsi que les garanties sociales des travailleurs des banques, assurances et assureur-conseils."
+      ],
+      "mots_cles": ["objet", "banques", "assurances", "assureur-conseils"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Période d'essai",
+      "texte": [
+        "Tout travailleur est soumis par l'employeur à une période d'essai au cours de laquelle chacune des parties peut rompre le contrat sans préavis ni indemnité.",
+        "La durée de la période d'essai est fixée à :",
+        "- Un (1) mois pour le personnel de service et employé ;",
+        "- Deux (2) mois pour les gradés de la classe 1 à la classe 5 ;",
+        "- Trois (3) mois pour les cadres de la classe 6 à la classe 10.",
+        "Chacune de ces périodes peut être renouvelées conformément à la réglementation en vigueur. Elle ne peut porter renouvellement compris que sur une période maximale de 6 mois."
+      ],
+      "mots_cles": ["période d'essai", "1 mois", "2 mois", "3 mois", "6 mois", "gradés", "cadres"],
+      "statut": "en vigueur",
+      "section": "Titre III : Contrat de travail"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "Hormis le cas de faute lourde, en cas de licenciement, le travailleur a droit à une indemnité de licenciement distincte de celle du préavis lorsqu'il accompli une durée de service égale à un (1) an.",
+        "Cette indemnité est calculée de la manière suivante :",
+        "- 1,5 mois de salaire brut moyen des douze dernier mois avant le licenciement par année de présence pour les trois premières années ;",
+        "- 2,5 mois de salaire brut moyen des douze dernier mois avant le licenciement par année de présence de 4 à 10 ans ;",
+        "- 3,5 mois de salaire brut moyen des douze dernier mois avant le licenciement de 11 à 15 ans par année de présence ;",
+        "- 4,5 mois de salaire brut moyen des douze dernier mois avant le licenciement par année de présence au delà de 15 ans.",
+        "L'indemnité de licenciement ainsi calculée ne peut dépasser 40 mois de salaire brut moyen."
+      ],
+      "mots_cles": ["indemnité de licenciement", "1 an", "1,5 mois/an", "2,5 mois/an", "3,5 mois/an", "4,5 mois/an", "40 mois plafond"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre III : Rupture du contrat"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Indemnité de fin de carrière (retraite)",
+      "texte": [
+        "Au moment de son départ à la retraite, le travailleur bénéficie d'une indemnité de fin de carrière égale à trois (3) mois de salaire brut par cinq (5) ans de présence dans l'établissement sous déduction des avances, acomptes et prêts de toute nature.",
+        "Deux (2) ans avant son départ à la retraite, le travailleur bénéficie d'une bonification de trois (3) échelons."
+      ],
+      "mots_cles": ["retraite", "3 mois/5 ans", "bonification 3 échelons"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre III : Rupture du contrat"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Les permissions exceptionnelles sont accordées au personnel par l'employeur à l'occasion d'événements familiaux énumérés ci après :",
+        "- mariage du travailleur : 07 jours ;",
+        "- mariage d'un de ses enfants : 03 jours ;",
+        "- mariage d'un frère : 01 jour ;",
+        "- décès d'un conjoint ou de l'enfant : 10 jours ;",
+        "- accouchement de l'épouse : 04 jours ;",
+        "- baptême d'un enfant : 02 jours ;",
+        "- première communion : 01 jour ;",
+        "- déménagement : 03 jours ;",
+        "- décès du père ou de la mère : 08 jours.",
+        "- décès d'un membre de famille (frère, sœur, beau-frère, beau-père, belle-mère, belle-sœur, tante et oncle directs) : 03 jours.",
+        "Ces permissions dont le total ne peut dépasser 20 jours ouvrables par an ne donnent lieu à aucune retenue sur la rémunération et ne peuvent pas être imputées sur les congés annuels."
+      ],
+      "mots_cles": ["permissions", "20 jours/an", "mariage 7 jours", "décès 10 jours", "accouchement 4 jours", "décès père/mère 8 jours"],
+      "statut": "en vigueur",
+      "section": "Titre V : Conditions de travail"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Frais médicaux et pharmaceutiques",
+      "texte": [
+        "A/- L'employeur prend en charge à 100 % soit directement, soit dans le cadre d'un contrat d'assurance, les honoraires et les frais pharmaceutiques des travailleurs sur présentation de l'ordonnance du médecin agréé et de la facture du pharmacien.",
+        "B/- Les soins médicaux du conjoint du travailleur et des enfants à charge seront assurés par le centre médico-social auquel l'employeur aura adhéré.",
+        "C/- Les soins et ordonnances du conjoint et enfants à charge occasionnés par des cas urgents seront aussi pris en charge à hauteur de 90 % par l'employeur sur la base des tarifs pratiqués par les formations hospitalières publiques et celles agréées par l'employeur."
+      ],
+      "mots_cles": ["frais médicaux", "100%", "pharmaceutiques", "conjoint 90%", "enfants"],
+      "statut": "en vigueur",
+      "section": "Titre V - Chapitre III : Prise en charge"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Hospitalisation",
+      "texte": [
+        "L'employeur prendra en charge 100% des frais d'hospitalisation dans la limite de la période de congé de maladie du travailleur :",
+        "- dans la 2ème catégorie des hôpitaux de l'assistance publique pour les employés ;",
+        "- dans la 1ère catégorie des hôpitaux de l'assistance publique pour les gradés et les cadres.",
+        "Les frais d'hospitalisation du conjoint et des enfants à charge du travailleur en activité sont pris en charge à concurrence de 100% et selon les tarifs de la même catégorie que celle applicable au travailleur lui-même sous réserve que cette hospitalisation ait lieu dans une formation hospitalière publique et celles agréées par l'employeur."
+      ],
+      "mots_cles": ["hospitalisation", "100%", "conjoint 100%", "enfants 100%"],
+      "statut": "en vigueur",
+      "section": "Titre V - Chapitre III : Prise en charge"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Prime d'ancienneté",
+      "texte": [
+        "Une majoration pour ancienneté est attribuée dans les conditions suivantes :",
+        "- 7% du salaire de base minimum de la catégorie ou classe du travailleur après deux (2) années de présence ;",
+        "- 1% du salaire de base minimum par année de présence en sus jusqu'à 15 années de présence ;",
+        "- 2% du salaire de base à partir de la 16ème année de présence.",
+        "L'ensemble de la majoration pour ancienneté ne pouvant dépasser 40%."
+      ],
+      "mots_cles": ["prime d'ancienneté", "7%", "1%/an", "2%/an après 16 ans", "40% maximum"],
+      "statut": "en vigueur",
+      "section": "Titre VI - Chapitre II : Primes"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Prime de diplôme",
+      "texte": [
+        "Une prime de diplôme est allouée au personnel de la manière suivante :",
+        "Catégorie A (Diplômes d'Etudes Moyennes) : 8500 FCFA",
+        "Catégorie B (Diplômes d'Etudes Secondaires) : 12500 FCFA",
+        "Catégorie C (Diplômes d'Enseignement Supérieur) : 22500FCFA",
+        "Le cumul des diplômes étant exclu, seul le diplôme le plus élevé sera pris en considération."
+      ],
+      "mots_cles": ["prime diplôme", "8 500 FCFA", "12 500 FCFA", "22 500 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre VI - Chapitre II : Primes"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Prime de logement",
+      "texte": [
+        "Il est alloué à tout travailleur non logé par l'Etablissement, une prime de logement de 20% du salaire de base avec un minimum de 40000F CFA."
+      ],
+      "mots_cles": ["prime de logement", "20%", "minimum 40 000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre VI - Chapitre III : Indemnité"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Indemnité de transport",
+      "texte": [
+        "Une indemnité de transport minimum de 35000 F CFA est allouée mensuellement au travailleur.",
+        "Les travailleurs que leurs fonctions amènent à utiliser leur véhicule personnel pour les besoins de service percevront une indemnité mensuelle :",
+        "- voiture : 60000 F CFA ;",
+        "- engin à moteur à deux (2) roues : 15000 F CFA."
+      ],
+      "mots_cles": ["indemnité de transport", "35 000 FCFA", "voiture 60 000 FCFA", "moto 15 000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre VI - Chapitre III : Indemnité"
+    }
+  ]
+}

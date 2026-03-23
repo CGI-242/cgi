@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Code Social de la République du Congo",
+    "pays": "République du Congo",
+    "edition": "2026"
+  },
+  "livres": [
+    {
+      "livre": 1,
+      "livre_nom": "Droit du travail",
+      "parties": [
+        {
+          "partie": "1.1",
+          "partie_nom": "Code du travail",
+          "source": "sommaire-travail.json",
+          "description": "Loi n°45-75 du 15 mars 1975 modifiée"
+        },
+        {
+          "partie": "1.2",
+          "partie_nom": "Textes d'application du Code du travail",
+          "chapitres": [
+            { "chapitre": "Art. 39", "chapitre_nom": "Licenciement", "fichier": "application-art39-licenciement.json" },
+            { "chapitre": "Art. 39bis", "chapitre_nom": "Commission des litiges", "fichier": "application-art39-commission-litiges.json" },
+            { "chapitre": "Art. 83", "chapitre_nom": "SMIG", "fichier": "application-art83-smig.json" },
+            { "chapitre": "Art. 105a", "chapitre_nom": "Durée du travail et heures supplémentaires", "fichier": "application-art105-duree-travail-heures-sup.json" },
+            { "chapitre": "Art. 105b", "chapitre_nom": "Dérogations à la durée du travail", "fichier": "application-art105-derogations-duree-travail.json" },
+            { "chapitre": "Art. 105c", "chapitre_nom": "Horaires des services publics", "fichier": "application-art105-horaires-services-publics.json" },
+            { "chapitre": "Art. 135", "chapitre_nom": "Machines dangereuses", "fichier": "application-art135-machines-dangereuses.json" },
+            { "chapitre": "Art. 137a", "chapitre_nom": "Comités d'hygiène et de sécurité", "fichier": "application-art137-comites-hygiene-securite.json" },
+            { "chapitre": "Art. 137b", "chapitre_nom": "Mesures d'hygiène et de sécurité", "fichier": "application-art137-mesures-hygiene-securite.json" }
+          ]
+        },
+        {
+          "partie": "1.3",
+          "partie_nom": "Autres textes non codifiés de droit du travail",
+          "chapitres": [
+            { "chapitre": "1.3.1", "chapitre_nom": "Loi ONEMO (1988-22)", "fichier": "loi-1988-22-onemo.json" },
+            { "chapitre": "1.3.2", "chapitre_nom": "ACPE - Agence Congolaise pour l'Emploi (Loi 2019-7)", "fichier": "loi-2019-7-acpe.json" },
+            { "chapitre": "1.3.3", "chapitre_nom": "Jours fériés, chômés et payés (Loi 1994-02)", "fichier": "loi-1994-02-jours-feries.json" },
+            { "chapitre": "1.3.4", "chapitre_nom": "Journée de la République - 28 novembre (Loi 2010-18)", "fichier": "loi-2010-18-journee-republique.json" },
+            { "chapitre": "1.3.5", "chapitre_nom": "Fête nationale - 15 août (Loi 2010-19)", "fichier": "loi-2010-19-fete-nationale.json" },
+            { "chapitre": "1.3.6", "chapitre_nom": "FONEA - Fonds employabilité et apprentissage (Loi 2019-8)", "fichier": "loi-2019-8-fonea.json" },
+            { "chapitre": "1.3.7", "chapitre_nom": "INTS - Institut National du Travail Social (Loi 2015-06)", "fichier": "loi-2015-06-ints.json" },
+            { "chapitre": "1.3.8", "chapitre_nom": "Saisie-arrêt des traitements et salaires (Décret 1984-209)", "fichier": "decret-1984-209-saisie-arret-salaires.json" },
+            { "chapitre": "1.3.9", "chapitre_nom": "Conditions d'emploi du personnel domestique (Arrêté 1868)", "fichier": "arrete-1868-personnel-domestique.json" }
+          ]
+        },
+        {
+          "partie": "1.4",
+          "partie_nom": "Conventions de l'OIT applicables au Congo",
+          "chapitres": [
+            { "chapitre": "OIT", "chapitre_nom": "Liste des conventions ratifiées", "fichier": "textes-non-codifies-conventions-oit.json" }
+          ]
+        }
+      ]
+    },
+    {
+      "livre": 2,
+      "livre_nom": "Droit de la sécurité sociale",
+      "parties": [
+        {
+          "partie": "2.1",
+          "partie_nom": "Code de la sécurité sociale (Loi n°004-86)",
+          "chapitres": [
+            { "chapitre": "T1-T3", "chapitre_nom": "Dispositions générales, Organisation et Ressources (Art. 1-34)", "fichier": "code-securite-sociale-loi-004-86.json" },
+            { "chapitre": "T4-Ch1", "chapitre_nom": "Prestations familiales et de maternité (Art. 38-58)", "fichier": "code-securite-sociale-prestations-familiales.json" },
+            { "chapitre": "T4-Ch2a", "chapitre_nom": "Risques professionnels - Prévention et prestations (Art. 59-108)", "fichier": "code-securite-sociale-risques-professionnels.json" },
+            { "chapitre": "T4-Ch2b", "chapitre_nom": "Risques professionnels - Contrôle, révision, rachat (Art. 123-143)", "fichier": "code-securite-sociale-risques-pro-suite.json" },
+            { "chapitre": "T4-Ch3a", "chapitre_nom": "Pensions - Vieillesse, invalidité (Art. 144-147)", "fichier": "code-securite-sociale-pensions.json" },
+            { "chapitre": "T4-Ch3b", "chapitre_nom": "Pensions suite et Dispositions communes (Art. 148-168)", "fichier": "code-securite-sociale-pensions-suite.json" },
+            { "chapitre": "T6-T7", "chapitre_nom": "Contrôle contentieux, Pénalités, Dispositions finales (Art. 169-198)", "fichier": "code-securite-sociale-contentieux-penalites.json" }
+          ]
+        },
+        {
+          "partie": "2.2",
+          "partie_nom": "Textes non codifiés de sécurité sociale",
+          "chapitres": [
+            { "chapitre": "2.2.1", "chapitre_nom": "Âge d'admission à la retraite (Loi 48-2024)", "fichier": "loi-2024-48-age-retraite.json" },
+            { "chapitre": "2.2.2", "chapitre_nom": "Système de sécurité sociale (Loi 2011-31)", "fichier": "loi-2011-31-systeme-securite-sociale.json" },
+            { "chapitre": "2.2.3a", "chapitre_nom": "Risques professionnels et pensions - Art. 1-46 (Loi 2012-18)", "fichier": "loi-2012-18-risques-pro-partie1.json" },
+            { "chapitre": "2.2.3b", "chapitre_nom": "Risques professionnels et pensions - Art. 47+ (Loi 2012-18)", "fichier": "loi-2012-18-risques-professionnels.json" },
+            { "chapitre": "2.2.4", "chapitre_nom": "Dissolution de la CNSS (Loi 10-2014)", "fichier": "loi-10-2014-dissolution-cnss.json" },
+            { "chapitre": "2.2.5", "chapitre_nom": "Caisse des risques professionnels (Loi 11-2014)", "fichier": "loi-11-2014-caisse-risques-professionnels.json" },
+            { "chapitre": "2.2.6", "chapitre_nom": "Caisse famille et enfance (Loi 12-2014)", "fichier": "loi-12-2014-caisse-famille-enfance.json" },
+            { "chapitre": "2.2.7", "chapitre_nom": "CAMU - Couverture maladie universelle (Loi 19-2023)", "fichier": "loi-19-2023-camu.json" },
+            { "chapitre": "2.2.8", "chapitre_nom": "Statuts CAMU (Décret 2023-1761)", "fichier": "decret-2023-1761-statuts-camu.json" },
+            { "chapitre": "2.2.9", "chapitre_nom": "Cotisations CAMU (Décret 2024-131)", "fichier": "decret-2024-131-cotisations-camu.json" },
+            { "chapitre": "2.2.10", "chapitre_nom": "Taux cotisations CAMU (Décret 2024-133)", "fichier": "decret-2024-133-taux-cotisations-camu.json" },
+            { "chapitre": "2.2.11", "chapitre_nom": "Assiette cotisations TIPL (Arrêté 31253)", "fichier": "arrete-31253-assiette-cotisations-tipl.json" },
+            { "chapitre": "2.2.12", "chapitre_nom": "Risques professionnels (Loi 2012-18)", "fichier": "loi-2012-18-risques-professionnels.json" }
+          ]
+        },
+        {
+          "partie": "2.3",
+          "partie_nom": "Conventions de sécurité sociale",
+          "chapitres": [
+            { "chapitre": "2.3.1", "chapitre_nom": "Convention France-Congo", "fichier": "convention-securite-sociale-france.json" },
+            { "chapitre": "2.3.2", "chapitre_nom": "Convention CIPRES", "fichier": "convention-securite-sociale-cipres.json" }
+          ]
+        }
+      ]
+    },
+    {
+      "livre": 3,
+      "livre_nom": "Conventions collectives",
+      "parties": [
+        {
+          "partie": "3.1",
+          "partie_nom": "Conventions collectives sectorielles",
+          "chapitres": [
+            { "chapitre": "CC1", "chapitre_nom": "Agriculture et Forêt", "fichier": "conventions/cc-agri-foret.json" },
+            { "chapitre": "CC2", "chapitre_nom": "Aérien", "fichier": "conventions/cc-aerien.json" },
+            { "chapitre": "CC3", "chapitre_nom": "Auxiliaires de transport", "fichier": "conventions/cc-auxiliaires-transport.json" },
+            { "chapitre": "CC4", "chapitre_nom": "Banques et assurances (BAM)", "fichier": "conventions/cc-bam.json" },
+            { "chapitre": "CC5", "chapitre_nom": "Bâtiment et travaux publics (BTP)", "fichier": "conventions/cc-btp.json" },
+            { "chapitre": "CC6", "chapitre_nom": "Commerce", "fichier": "conventions/cc-commerce.json" },
+            { "chapitre": "CC7", "chapitre_nom": "Exploitation minière", "fichier": "conventions/cc-exploitation-miniere.json" },
+            { "chapitre": "CC8", "chapitre_nom": "Forestière", "fichier": "conventions/cc-forestiere.json" },
+            { "chapitre": "CC9", "chapitre_nom": "Hôtellerie et restauration", "fichier": "conventions/cc-hotellerie-catering.json" },
+            { "chapitre": "CC10", "chapitre_nom": "Industrie", "fichier": "conventions/cc-industrie.json" },
+            { "chapitre": "CC11", "chapitre_nom": "Information et communication", "fichier": "conventions/cc-information-communication.json" },
+            { "chapitre": "CC12", "chapitre_nom": "NTIC", "fichier": "conventions/cc-ntic.json" },
+            { "chapitre": "CC13", "chapitre_nom": "Para-pétrole", "fichier": "conventions/cc-para-petrole.json" },
+            { "chapitre": "CC14", "chapitre_nom": "Pêche maritime", "fichier": "conventions/cc-peche-maritime.json" },
+            { "chapitre": "CC15", "chapitre_nom": "Personnel domestique", "fichier": "conventions/cc-personnel-domestique.json" },
+            { "chapitre": "CC16", "chapitre_nom": "Pétrole", "fichier": "conventions/cc-petrole.json" }
+          ]
+        }
+      ]
+    }
+  ]
+}

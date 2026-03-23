@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "De l'administration du travail",
+    "section": "Titre 6",
+    "section_titre": "Des organismes et moyens d'exécution",
+    "page_source": 45
+  },
+  "articles": [
+    {
+      "article": "Art. 149",
+      "titre": "Mission de l'administration du travail",
+      "texte": [
+        "L'administration du Travail est chargée, sous l'autorité du Ministre du Travail et de la Prévoyance Sociale, d'assurer dans le domaine du travail, de l'emploi, de la promotion et de la Prévoyance Sociale un rôle de conception et de conseil, de coordination et de contrôle.",
+        "Elle a notamment pour mission :",
+        "- a) d'élaborer tous les projets de lois ou de règlements intéressant la condition des travailleurs, les rapports professionnels, l'emploi et le placement des travailleurs, la formation et le perfectionnement professionnel, la prévoyance sociale ;",
+        "- b) de veiller à l'application de ces lois et règlements ;",
+        "- c) d'éclairer de ses conseils et de ses recommandations les employeurs et les travailleurs ;",
+        "- d) de conseiller, de coordonner et de contrôler les services et organismes concourant à l'application de la législation du travail et de la Prévoyance sociale ;",
+        "- e) de réaliser, en collaboration avec les autorités et organismes intéressés, la meilleure organisation possible du marché de l'emploi comme partie intégrante du programme national tendant à assurer et à maintenir le plein emploi, ainsi qu'à développer et à utiliser pleinement les ressources productives ;",
+        "- f) de réunir et tenir à jour les données statistiques relatives aux conditions d'emploi et de travail et aux opérations de prévoyance sociale ;",
+        "- g) de suivre les relations avec les autres États et les organisations internationales en ce qui concerne les questions du travail, de l'emploi, de la promotion et de la prévoyance sociale.",
+        "L'Administration du Travail comporte :",
+        "- 1° auprès du Ministre, une Direction Générale du Travail et de la Prévoyance Sociale à laquelle fait partie intégrante la Direction Centrale de la Main-d'œuvre et de la Formation Professionnelle ;",
+        "- 2° des Inspections du Travail et des Lois Sociales auxquelles sont rattachés des Contrôles du Travail ;",
+        "- 3° des Bureaux de Placement.",
+        "L'organisation et le fonctionnement de la Direction Générale du Travail et de la Prévoyance Sociale et des Services subordonnés sont fixés par décret.",
+        "Un arrêté du Ministre du Travail et de la Prévoyance Sociale fixe le ressort territorial des Inspections du Travail, des Contrôles du Travail et des Bureaux de Placement."
+      ],
+      "mots_cles": ["administration du travail", "Ministre du Travail", "Direction Générale", "inspection du travail", "Bureaux de Placement", "emploi", "prévoyance sociale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail"
+    },
+    {
+      "article": "Art. 150",
+      "titre": "Attributions de la Direction Générale et des services",
+      "texte": [
+        "Outre les autres attributions que leur confère la présente loi, la Direction Générale du Travail et de la Prévoyance Sociale assume les attributions prévues aux alinéas a), b), d), e), f), et g) de l'article précédent, les Inspections du Travail et des Lois Sociales celles prévues aux alinéas b) et c), les Bureaux de Placement, celles prévues aux alinéas e) et f). Les Inspections du Travail et des Lois Sociales, les Bureaux de Placement relèvent de la Direction Générale du Travail et de la Prévoyance Sociale avec laquelle ils correspondent directement."
+      ],
+      "mots_cles": ["attributions", "Direction Générale", "inspections", "Bureaux de Placement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 151",
+      "titre": "Composition du corps de l'inspection",
+      "texte": [
+        "Le corps de l'Inspection du Travail et des Lois Sociales comprend des Administrateurs, des Inspecteurs, des Contrôleurs Principaux et des Contrôleurs du Travail."
+      ],
+      "mots_cles": ["inspection du travail", "administrateurs", "inspecteurs", "contrôleurs"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 152",
+      "titre": "Serment des fonctionnaires de l'inspection",
+      "texte": [
+        "Les fonctionnaires du Corps de l'inspection du Travail et des Lois Sociales prêtent serment de bien et fidèlement remplir leur charge et de ne pas révéler, même après avoir quitté leur service, les secrets de fabrication et, en général, les procédés d'exploitation dont ils pourraient prendre connaissance dans l'exercice de leurs fonctions.",
+        "Ce serment est prêté par écrit devant la cour d'appel en ce qui concerne les Administrateurs et des Inspecteurs du Travail, devant le Tribunal de Grande Instance en ce qui concerne les Contrôleurs Principaux et contrôleurs du Travail.",
+        "Toute violation de ce serment est punie conformément aux dispositions du Code pénal prévues en la matière.",
+        "Ils doivent tenir pour confidentielle toute plainte leur signalant un défaut dans l'installation des dispositifs d'hygiène et de sécurité ou une infraction aux dispositions légales et réglementaires."
+      ],
+      "mots_cles": ["serment", "secret professionnel", "fabrication", "cour d'appel", "tribunal", "Code pénal", "confidentiel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 153",
+      "titre": "Intérêt dans les entreprises contrôlées — interdit",
+      "texte": [
+        "Les fonctionnaires du corps de l'Inspection du Travail et des Lois Sociales ne sauraient avoir un intérêt quelconque direct ou indirect, dans les entreprises placées sous leur contrôle."
+      ],
+      "mots_cles": ["intérêt", "interdit", "entreprises", "contrôle", "conflit d'intérêts"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154",
+      "titre": "Constat des infractions par procès-verbal",
+      "texte": [
+        "Les Inspecteurs du Travail et des Lois Sociales ainsi que les fonctionnaires responsables d'un bureau de contrôle du travail peuvent constater, par procès-verbal faisant foi jusqu'à preuve du contraire, les infractions aux dispositions de la législation et de la réglementation du travail. Ils sont habilités à saisir directement les autorités judiciaires compétentes.",
+        "Tout procès-verbal devra être notifié par la remise d'une copie certifiée conforme à la partie intéressée ou à son représentant. À peine de nullité des poursuites à intervenir, cette remise doit être effectuée dans les 15 jours de la constatation de l'infraction soit par lettre-recommandée avec accusé de réception, soit directement de la main à la main contre récépissé daté et signé par l'employeur ou son représentant.",
+        "Un exemplaire du procès-verbal est déposé au Parquet, un second envoyé au Directeur Général du Travail et de la Prévoyance Sociale, un troisième est classé aux archives de l'inspection.",
+        "Les autorités habilitées par le présent article à dresser procès-verbaux, sont tenues d'être informées par le Parquet de la suite réservée à ces procès-verbaux."
+      ],
+      "mots_cles": ["procès-verbal", "infractions", "15 jours", "Parquet", "lettre recommandée", "preuve"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-1",
+      "titre": "Constat des infractions et mise en demeure",
+      "texte": [
+        "(Loi n°06-96) Les inspecteurs du travail et des lois sociales ainsi que les fonctionnaires responsables d'un bureau de contrôle du travail peuvent constater par procès-verbal faisant foi jusqu'à preuve du contraire et ce, après mise en demeure, les infractions à la législation et à la réglementation du travail et transmettre ledit procès-verbal aux autorités judiciaires pour application des peines prévues au titre IX relatif aux pénalités."
+      ],
+      "mots_cles": ["infractions", "mise en demeure", "procès-verbal", "titre IX", "pénalités"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-2",
+      "titre": "Notification de l'infraction à l'employeur",
+      "texte": [
+        "(Loi n°06-96) L'inspecteur du travail qui constate l'infraction dans l'entreprise doit sur le champ en aviser l'employeur ou son représentant. Inscription en est faite dans un registre spécial.",
+        "L'employeur est, dans tous les cas, mis en demeure de se conformer aux prescriptions légales et réglementaires. Si l'infraction persiste à l'expiration de la mise en demeure, l'inspecteur du travail rédige un rapport circonstancié à l'attention du Directeur régional du travail qui dresse procès-verbal.",
+        "Un arrêté du Ministre du Travail déterminera la forme et le contenu de la mise en demeure et du procès-verbal de constatation d'infraction.",
+        "Tout procès-verbal doit être notifié par la remise d'une copie à la partie intéressée ou à son représentant. Cette remise doit être effectuée dans les quinze jours suivant la constatation de l'infraction soit par lettre recommandée avec accusé de réception, soit directement de la main à la main contre récépissé daté et signé par l'employeur ou son représentant.",
+        "Un exemplaire du procès-verbal est déposé au Parquet, un second envoyé au Directeur Général du Travail et de la Prévoyance Sociale, un troisième est classé aux archives de l'inspection."
+      ],
+      "mots_cles": ["notification", "infraction", "registre", "mise en demeure", "15 jours", "Parquet"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-3",
+      "titre": "Double récidive — procédure",
+      "texte": [
+        "(Loi n°06-96) En cas de double récidive, le Directeur régional du travail relève dans le procès-verbal les antécédents et produit toutes pièces utiles. Il s'agit notamment des récépissés.",
+        "Les sanctions privatives de liberté sont prononcées en cas de double récidive. Le Parquet doit informer le Ministre du Travail de la décision prise dans un délai de trente jours à compter de la date du jugement."
+      ],
+      "mots_cles": ["double récidive", "antécédents", "sanctions privatives", "Parquet", "30 jours"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-4",
+      "titre": "Réclamation contre la mise en demeure",
+      "texte": [
+        "(Loi n°06-96) Lorsque l'employeur est mis en demeure par l'inspecteur du travail et des lois sociales, il dispose de huit jours pour adresser une réclamation auprès du Directeur général du travail. Cette réclamation est suspensive. Notification de la décision du Directeur général du travail est faite à la partie intéressée dans un délai de dix jours à compter de la réception de la réclamation. Passé ce délai, le silence du Directeur général du travail vaut confirmation de la mise en demeure."
+      ],
+      "mots_cles": ["réclamation", "mise en demeure", "8 jours", "suspensive", "10 jours", "silence"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-5",
+      "titre": "Recours contre les décisions",
+      "texte": [
+        "(Loi n°06-96) Les décisions du Directeur régional du travail et du Directeur général du travail sont susceptibles d'annulation pour excès ou abus de pouvoir conformément aux principes ordinaires du contentieux administratif."
+      ],
+      "mots_cles": ["recours", "annulation", "excès de pouvoir", "contentieux administratif"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    },
+    {
+      "article": "Art. 154-6",
+      "titre": "Voies de recours pour sanctions privatives de liberté",
+      "texte": [
+        "(Loi n°06-96) En ce qui concerne les sanctions privatives de liberté, l'employeur dispose de toutes les voies de recours prévues par le Code de procédure pénale."
+      ],
+      "mots_cles": ["voies de recours", "sanctions privatives", "Code de procédure pénale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
+    }
+  ]
+}

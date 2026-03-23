@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 135 : Arrêté n°9029 du 10 décembre 1986 relatif aux dispositifs de protection pour les machines dangereuses",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 92
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet de l'arrêté",
+      "texte": [
+        "[NB - Arrêté n°9029/MTERFPPS-DGT du 10 décembre 1986 relatif aux machines dangereuses et aux dispositifs de protection pour les machines dangereuses]",
+        "Le présent arrêté est pris en application de l'article 135 du Code du travail.",
+        "Il fixe la liste des machines et éléments de machines considérés comme dangereux et les dispositifs de protection dont ils doivent être munis."
+      ],
+      "mots_cles": ["machines dangereuses", "dispositifs de protection", "article 135"],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Interdiction de vente sans protection",
+      "texte": [
+        "Il est interdit d'exposer, de mettre en vente ou de louer, de céder à quelque titre que ce soit ou d'utiliser des appareils, machines ou éléments de machines dangereuses qui ne soient pas montés, disposés, ou protégés dans des conditions homologuées ou reconnues comme telles, et assurent la sécurité et l'hygiène des travailleurs."
+      ],
+      "mots_cles": ["interdiction", "vente", "location", "machines dangereuses", "homologation"],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Résolution de la vente",
+      "texte": [
+        "L'acheteur auquel un appareil, une machine ou un élément de machine dangereuse, un appareil ou un dispositif de protection a été livré dans des conditions contraires aux dispositions du présent arrêté peut, nonobstant toute clause contraire, demander la résolution de la vente.",
+        "Le tribunal prononce cette résolution et peut, en outre, accorder des dommages-intérêts à l'acheteur."
+      ],
+      "mots_cles": ["résolution vente", "tribunal", "dommages-intérêts"],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Protection contre le contact involontaire",
+      "texte": [
+        "Tout appareil, machines ou éléments de machines reconnus dangereux doivent être disposés ou protégés de manière à empêcher le personnel d'entrer involontairement en contact avec ces éléments."
+      ],
+      "mots_cles": ["protection", "contact involontaire", "machines"],
+      "statut": "en vigueur",
+      "section": "Section 1 : Dispositions générales"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Liste des machines et éléments dangereux",
+      "texte": [
+        "Sont considérés comme dangereux sans que la présente liste soit limitative, les machines ou éléments de machines ci-après quels que soient les établissements où ils sont utilisés :",
+        "- 1° les éléments de machines comportant des organes de commande et de transmission tels que bielles, volants, roues, arbres, engrenages, cônes ou cylindres de friction, chaînes, cannes, coulisseaux, existant en propre sur les machines de toute nature mues mécaniquement ;",
+        "- 2° les éléments de machines destinés à l'accouplement avec une autre machine ou à la réception de l'énergie mécanique, les courroies ou câbles de transmission ;",
+        "- 3° les éléments de machines comportant des pièces accessibles faisant saillis sur les parties en mouvement de ces machines, telles que vis d'arrêts, boulons, bossages, nervures, clavettes ;",
+        "- 4° les autres éléments de machines utilisés dans les industries ci-après : industries de l'alimentation, industries chimiques et du caoutchouc, industries du papier carton, industries polygraphiques, industries textiles, industries du vêtement, industries des cuirs et peaux, industries du bois, industries des métaux, industries du bâtiment et des travaux publics, industries de pierres et terres à feux, industries des matériaux de construction, du verre et de la céramique ;",
+        "- 5° tout autres éléments susceptibles d'occasionner un accident au personnel, tels que machine à battre, broyer, calandrer, couper et découper, écraser, hacher, laminer, malaxer, mélanger, meuler, pétrir, presser, triturer, scier ;",
+        "- 6° les dispositifs de protection amovibles pour machines visées au paragraphe 4."
+      ],
+      "mots_cles": ["liste", "machines dangereuses", "transmission", "courroies", "industries"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Liste des machines et éléments de machines dangereux"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Salles des machines — accès restreint",
+      "texte": [
+        "Les salles des machines génératrices et des machines motrices ne sont accessibles qu'aux personnels affectés à la conduite et à l'entretien de ces machines. Dans le cas où celles-ci ne sont pas disposées dans un local distinct, elles doivent être isolées par des cloisons ou barrières de protection rigides d'une hauteur minimum 90 centimètres.",
+        "Les passages entre les machines, mécanismes, outils mus mécaniquement doivent avoir une largeur d'au moins 80 centimètres. Le sol des intervalles doit être plat, il ne doit pas être glissant."
+      ],
+      "mots_cles": ["salles machines", "accès restreint", "cloisons", "90 cm", "80 cm"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Machines-outils tranchantes",
+      "texte": [
+        "Pour les machines-outils à instruments tranchants tournant à grande vitesse, telles que machines à scier, fraiser, raboter, découper, hacher, les cisailles, coupe-chiffons et autres engins semblables, la partie non travaillante des instruments tranchants doit être protégée.",
+        "Les machines visées à l'alinéa précédent doivent, en outre, être disposées, protégées ou utilisées de telle façon que les ouvriers ne puissent, de leur poste de travail, toucher, même involontairement, la partie travaillante des instruments tranchants."
+      ],
+      "mots_cles": ["machines-outils", "tranchants", "protection", "scier", "fraiser"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Machines à travailler le bois",
+      "texte": [
+        "Les machines à travailler le bois dites dégauchissage doivent être pourvues d'un arbre porte-lames à section circulaire. Les scies à tronçonner doivent être munies d'un dispositif évitant la rotation et le rejet de la pièce en cours de sciage.",
+        "Les scies circulaires à table doivent être munies d'un couteau diviseur réglable fixé immédiatement en arrière de la scie et dans le plan de celle-ci."
+      ],
+      "mots_cles": ["bois", "dégauchissage", "scies circulaires", "couteau diviseur"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Engins tournant à grande vitesse",
+      "texte": [
+        "Tout engin tournant à grande vitesse doit être monté ou enveloppé de telle sorte qu'en cas de rupture, ses fragments soient retenus, soit par les organes de montage, soit par l'enveloppe.",
+        "Une inscription très apparente, placée autour des volants de meules, et de tout autre engin posant et tournant à grande vitesse indique le nombre de tours par minute qui ne doit pas être dépassé."
+      ],
+      "mots_cles": ["engins", "grande vitesse", "rupture", "inscription", "tours par minute"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Presses à mouvement alternatif",
+      "texte": [
+        "Les presses à mouvement alternatif de tous systèmes, mus mécaniquement et utilisées à des travaux automatiques, doivent être déposées, protégées, commandées, ou utilisées de façon telle que les opérateurs ne puissent de leur poste de travail, tendre même involontairement les organes en mouvement.",
+        "En cas de réparation d'un organe mécanique quelconque, de la presse ou du dispositif de protection, de commande ou d'utilisation, l'arrêt de la machine doit être assuré dans tous les cas par la suppression de la liaison entre cette dernière et la fiche qui l'anime et, chaque fois que la nature du travail ne s'y oppose, par le blocage de l'embrayage ou du volant ainsi que du coulisseau s'il y a lieu."
+      ],
+      "mots_cles": ["presses", "mouvement alternatif", "protection", "réparation", "arrêt machine"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Arrêt collectif de machines — signal",
+      "texte": [
+        "La mise en train de l'arrêt collectif de machines actionnées par une même commande doit toujours être précédée d'un signal convenu."
+      ],
+      "mots_cles": ["arrêt collectif", "signal", "commande"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Appareil d'arrêt — hors zone dangereuse",
+      "texte": [
+        "L'appareil d'arrêt des machines motrices doit toujours être placé en dehors de la zone dangereuse et de telle façon que les conducteurs qui dirigent ces machines puissent l'actionner facilement et immédiatement.",
+        "Les conducteurs de machines-outils, métiers, etc., contremaîtres ou chefs d'ateliers doivent avoir à leur portée un moyen de provoquer ou de demander l'arrêt du moteur.",
+        "Chaque machine-outil, métier, etc. doit, en outre, être installé et entretenu de manière à pouvoir être isolé par son conducteur de la commande qui l'actionne par un système approprié."
+      ],
+      "mots_cles": ["appareil d'arrêt", "zone dangereuse", "conducteurs", "isolation"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Nettoyage et graissage en marche interdit",
+      "texte": [
+        "Il est interdit de procéder au nettoyage et au graissage des transmissions et mécanismes en marche.",
+        "Toutefois, lorsqu'il est absolument indispensable d'y procéder, les dispositifs de sécurité nécessaires doivent être installés à cet effet.",
+        "En cas de réparation d'un organe mécanique quelconque, son arrêt doit être assuré par le calage de l'embrayage ou du volant.",
+        "Il en est de même pour les opérations de nettoyage des organes mécaniques à l'arrêt."
+      ],
+      "mots_cles": ["nettoyage", "graissage", "interdit", "marche", "réparation", "calage"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Vêtements ajustés obligatoires",
+      "texte": [
+        "Il est interdit d'admettre des ouvriers ou ouvrières à se tenir près des machines s'ils ne portent pas des vêtements ajustés et non flottants."
+      ],
+      "mots_cles": ["vêtements", "ajustés", "non flottants", "machines"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Contrôle trimestriel des machines défectueuses",
+      "texte": [
+        "Toute machine dont une défectuosité est susceptible d'occasionner un accident doit faire la visite d'un contrôle au moins une fois par trimestres.",
+        "Toutefois, l'inspecteur du travail peut imposer des visites plus fréquentes, par voie de mise en demeure, sans que le nombre de ces visites puisse être supérieur à une fois par mois.",
+        "Ces visites sont effectuées par un agent compétent désigné à cet effet par le chef d'établissement et sous la responsabilité de celui-ci.",
+        "Le résultat des visites est consigné sur un registre dit « registre de sécurité » ouvert par le chef d'établissement et tenu constamment à la disposition de l'inspecteur du travail."
+      ],
+      "mots_cles": ["contrôle trimestriel", "machines", "registre de sécurité", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Efficacité des dispositifs de protection",
+      "texte": [
+        "L'efficacité des appareils et dispositifs de protection contre les dangers présentés par les machines doit être officiellement reconnue."
+      ],
+      "mots_cles": ["efficacité", "dispositifs de protection", "reconnaissance officielle"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Protection contre les machines dangereuses"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Dispositifs en service — maintien",
+      "texte": [
+        "Les dispositifs de sécurité en service à la date de publication du présent arrêté continueront à être utilisés sous réserve de la reconnaissance de leur efficacité par l'inspecteur du travail du ressort."
+      ],
+      "mots_cles": ["dispositifs en service", "maintien", "efficacité"],
+      "statut": "en vigueur",
+      "section": "Section 4 : Dispositions transitoires"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Interdiction d'installer des machines sans protection",
+      "texte": [
+        "À compter de la date de mise en application du présent arrêté, il est interdit aux employeurs d'installer des appareils, machines ou éléments de machines dangereux, pour lesquels il existe des dispositifs de protection d'une efficacité reconnue, sans que ces machines soient munies de tels dispositifs.",
+        "Il est également interdit d'installer des dispositifs de protection d'une efficacité non reconnue lorsqu'il existe des dispositifs de protection homologués, sauf autorisation particulière de l'inspecteur du travail en vue de permettre l'expérimentation d'un dispositif nouveau."
+      ],
+      "mots_cles": ["interdiction", "installation", "protection obligatoire", "homologation"],
+      "statut": "en vigueur",
+      "section": "Section 5 : Dispositions finales"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Sanctions",
+      "texte": [
+        "Les infractions au présent arrêté sont passibles des amendes et peines prévues par le titre 9 du Code du travail."
+      ],
+      "mots_cles": ["sanctions", "amendes", "peines", "titre 9"],
+      "statut": "en vigueur",
+      "section": "Section 5 : Dispositions finales"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Exécution",
+      "texte": [
+        "Le directeur général du travail et les inspecteurs du travail sont chargés de l'application du présent arrêté qui sera enregistré, publié au Journal Officiel et communiqué partout où besoin sera. Le directeur général du travail est outre chargé de son entière exécution."
+      ],
+      "mots_cles": ["exécution", "Journal Officiel", "directeur général"],
+      "statut": "en vigueur",
+      "section": "Section 5 : Dispositions finales"
+    }
+  ]
+}

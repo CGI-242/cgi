@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 6,
+    "chapitre_titre": "Des moyens de contrôle",
+    "section": "Titre 6",
+    "section_titre": "Des organismes et moyens d'exécution",
+    "page_source": 55
+  },
+  "articles": [
+    {
+      "article": "Art. 181",
+      "titre": "Déclaration d'ouverture d'entreprise",
+      "texte": [
+        "Toute personne qui se propose d'ouvrir une entreprise de quelque nature que ce soit doit au préalable en faire la déclaration à l'Inspection du Travail et des Lois sociales ou au Bureau de Contrôle du Travail du ressort.",
+        "Doivent être déclarées dans les mêmes conditions :",
+        "- les entreprises existantes qui n'ont pas encore été déclarées ;",
+        "- la fermeture, le transfert, la mutation, la réouverture et plus généralement toute modification affectant l'entreprise.",
+        "Les chefs d'entreprise ou d'établissement doivent produire tous les semestres, au Bureau de Placement, des renseignements sur la situation de la main-d'œuvre qu'ils emploient.",
+        "Un arrêté du Ministre du Travail et de la Prévoyance Sociale détermine les modalités de la déclaration prévue aux alinéas 1 et 2 du présent article."
+      ],
+      "mots_cles": ["déclaration", "ouverture entreprise", "inspection du travail", "fermeture", "transfert", "semestriel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Des moyens de contrôle"
+    },
+    {
+      "article": "Art. 182",
+      "titre": "Registre d'employeur",
+      "texte": [
+        "L'employeur doit tenir constamment à jour, au lieu d'exploitation un registre dit « registre d'employeur » dont le modèle est fixé par un arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis de la Commission Nationale Consultative du Travail.",
+        "Ce registre comprend 3 parties :",
+        "- la première comprend, les renseignements concernant les personnes et les contrats de tous les travailleurs occupés dans l'entreprise ;",
+        "- la deuxième, toutes les indications concernant le travail effectué, le salaire et les congés ;",
+        "- la troisième est réservée aux visas, mises en demeure les observations apposées par l'Inspecteur du Travail et des Lois Sociales ou son délégué.",
+        "Le registre d'employeur doit être tenu sans déplacement à la disposition de l'Inspection du Travail et des Lois Sociales et conservé pendant les 5 ans suivant la dernière mention qui y a été portée.",
+        "Certaines entreprises ou catégories d'entreprises peuvent être exemptées de l'obligation de tenir ce registre en raison de leur situation, de leur faible importance ou de la nature de leur activité, par arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis de la Commission Nationale Consultative du Travail."
+      ],
+      "mots_cles": ["registre d'employeur", "3 parties", "5 ans", "conservation", "inspection du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Des moyens de contrôle"
+    },
+    {
+      "article": "Art. 183",
+      "titre": "Conservation des dossiers au Bureau de Placement",
+      "texte": [
+        "Les dossiers des travailleurs, prévus à l'article 162, sont conservés par le Bureau de Placement de l'emploi."
+      ],
+      "mots_cles": ["dossiers", "travailleurs", "Bureau de Placement", "conservation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 6 : Des moyens de contrôle"
+    }
+  ]
+}

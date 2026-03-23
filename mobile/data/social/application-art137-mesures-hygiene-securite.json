@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 137 : Arrêté n°9036 du 10 décembre 1986 relatif aux mesures générales d'hygiène et de sécurité applicables dans les entreprises",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 96
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Champ d'application",
+      "texte": [
+        "[NB - Arrêté n°9036/MTERFPPS-DGT du 10 décembre 1986 relatif aux mesures générales d'hygiène et de sécurité applicables dans les entreprises industrielles, commerciales, agricoles et forestières ainsi que dans les établissements administratifs similaires]",
+        "Conformément à l'article 137 du Code du travail, le présent arrêté détermine les mesures générales d'hygiène et de sécurité applicables à tous les établissements appartenant à des entreprises agricoles, forestières, industrielles, commerciales ou de manutention et plus particulièrement les manufactures, fabriques, usines, chantiers, ateliers, laboratoires, cuisines, caves, magasins, boutiques, bureaux, les établissements de spectacle même si ils ont un caractère d'enseignement professionnel ou de bien aisance.",
+        "Sont également soumis aux dispositions du présent arrêté les établissements similaires ressortissant aux administrations civiles publiques et militaires terrestres, maritimes et aériennes, offices publics et parapublics ou associations de quelque nature que ce soit."
+      ],
+      "mots_cles": ["champ d'application", "hygiène", "sécurité", "entreprises", "administrations"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Propreté des lieux de travail",
+      "texte": [
+        "Les emplacements affectés au travail dans tous les établissements ainsi que leur dépendance de quelque nature que ce soit doivent être tenus en état constant de propreté.",
+        "Le sol doit être nettoyé complètement au moins une fois par jour avant l'ouverture ou après la clôture, mais jamais pendant les heures de travail.",
+        "Le nettoyage doit se faire soit par aspiration, soit par tous autres procédés ne soulevant pas de poussières. Le nettoyage à sec est formellement interdit."
+      ],
+      "mots_cles": ["propreté", "nettoyage", "quotidien", "aspiration", "poussières"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Murs et plafonds",
+      "texte": [
+        "Les murs et les plafonds doivent être fréquemment nettoyés, les enduits refaits toutes les fois qu'il est nécessaire."
+      ],
+      "mots_cles": ["murs", "plafonds", "nettoyage", "enduits"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Locaux avec matières altérables",
+      "texte": [
+        "Dans les locaux où sont traitées les matières organiques altérables, ainsi que ceux où l'on manipule, et où l'on trie des chiffons, le sol doit être rendu imperméable et bien nivelé, les murs recouverts d'un enduit lavable.",
+        "Les murs et le sol doivent être nettoyés aussi souvent qu'il est nécessaire avec une solution désinfectante. Ce nettoyage pourra s'effectuer à l'aide d'appareils d'aspiration mécanique dans les locaux où sont manipulés et triés des chiffons.",
+        "Un lessivage à fond avec la même solution devra être fait au moins une fois par an.",
+        "Les résidus putrescibles ne doivent jamais séjourner dans les locaux affectés au travail et doivent être enlevés au fur et à mesure, à moins qu'ils ne soient déposés dans des récipients métalliques hermétiquement clos, vidés, lavés au moins une fois par jour."
+      ],
+      "mots_cles": ["matières altérables", "imperméable", "désinfection", "résidus putrescibles"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Atmosphère des ateliers",
+      "texte": [
+        "L'atmosphère des ateliers et de tous les autres locaux affectés au travail doit être tenue constamment à l'abri de toute émanation provenant d'égout, fosses, puisards, fosses d'aisance ou de toute autre source d'infection.",
+        "Dans les établissements qui déversent les eaux résiduaires ou de lavage dans un égout public ou privé, toute communication entre l'égout et l'établissement doit être munie d'un intercepteur hydraulique."
+      ],
+      "mots_cles": ["atmosphère", "émanation", "égout", "fosses", "intercepteur hydraulique"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Éviers imperméables",
+      "texte": [
+        "Les éviers doivent être formés de matériaux imperméables et bien joints. Ils présenteront une pente suffisante dans la direction du tuyau d'écoulement et doivent être aménagés de façon à être inodores.",
+        "Ils doivent être soigneusement nettoyés ainsi que leur canalisation au moins deux fois par semaine, au moyen d'une solution désinfectante."
+      ],
+      "mots_cles": ["éviers", "imperméables", "inodores", "désinfection", "2 fois par semaine"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Évacuation des poussières et gaz",
+      "texte": [
+        "Les poussières ainsi que les gaz incommodes, insalubres ou toxiques doivent être évacués directement hors des locaux de travail au fur et à mesure de leur production.",
+        "Pour les buées, vapeurs, gaz, poussières légères, il doit être installé des hottes avec cheminées d'appel ou tout appareil d'élimination efficace.",
+        "Il doit être installé autour des appareils, des tambours en communication avec une ventilation aspirante énergique, pour les poussières déterminées par les moules, les batteurs, les broyeurs et tout autre appareil mécanique.",
+        "Pour les gaz lourds, tels que les vapeurs de mercure, de sulfure de carbone, la ventilation aura lieu par descensum, les tables et appareils de travail doivent être mis en communication directe avec le ventilateur.",
+        "La pulvérisation des matières irritante et toxiques ou autres opérations telles que le tamisage et l'emballage de ces matières doivent se faire mécaniquement en appareils clos.",
+        "L'air des ateliers doit être renouvelé de façon à rester dans l'état de pureté nécessaire à la santé des ouvriers."
+      ],
+      "mots_cles": ["poussières", "gaz", "ventilation", "hottes", "mercure", "toxiques"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Travaux dans les puits et locaux à aération insuffisante",
+      "texte": [
+        "Les travaux dans les puits, conduites de gaz, canaux de fumée, cuves, réservoirs, citernes, fosses, galeries et en tous lieux autres que les locaux destinés au travail où l'aération est insuffisante, ne doivent être entrepris qu'après assainissement de l'atmosphère par une ventilation efficace et, le cas échéant, après vidange du contenu.",
+        "Pendant l'exécution de ces travaux, l'assainissement de l'atmosphère doit être maintenu soit par la ventilation naturelle, soit par l'introduction d'air neuf à raison de 30 mètres cubes au moins par heure et par personne occupée. Le volume d'air introduit par heure ne doit en aucun cas être inférieur au double du volume de l'atmosphère du lieu de travail."
+      ],
+      "mots_cles": ["puits", "aération insuffisante", "ventilation", "30 mètres cubes", "assainissement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Protection individuelle",
+      "texte": [
+        "Dans le cas où est reconnu impossible l'exécution des mesures de protection collective prévues ci-dessus, après accord de l'inspecteur du travail du ressort, des appareils de protection individuels appropriés doivent être mis à la disposition des travailleurs.",
+        "Ces dispositifs doivent être maintenus en bon état de fonctionnement et désinfectés avant d'être attribués à un nouveau titulaire."
+      ],
+      "mots_cles": ["protection individuelle", "appareils", "inspecteur du travail", "désinfection"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Volume d'air par personne — 7 m³",
+      "texte": [
+        "Dans les locaux fermés affectés au travail, le volume d'air par personne doit être égal ou supérieur à 7 mètres cubes.",
+        "Le cube d'air doit être de 10 mètres cubes au moins par personne employée dans les laboratoires cuisines, sauf dérogations expresse accordée par le Ministre du travail, il en sera de même dans les magasins, boutiques et bureaux ouverts au public.",
+        "Un avis affiché dans chaque local de travail indique ses capacités en mètres cubes.",
+        "Les locaux fermés affectés au travail doivent être largement aérés et munis de fenêtres ou autres ouvertures à châssis mobiles donnant directement sur le dehors. L'aération doit être suffisante pour empêcher une élévation exagérée de température."
+      ],
+      "mots_cles": ["volume d'air", "7 m³", "10 m³", "aération", "fenêtres", "température"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Locaux en sous-sol — 30 m³/heure",
+      "texte": [
+        "Dans les locaux situés en sous-sol, des mesures doivent être prises pour introduire de l'air pur et neuf à raison de 30 mètres cubes au moins par heure et par personne occupée et pour que le volume d'air ainsi introduit ne soit en aucun cas inférieur par heure, à 2 fois le volume du local.",
+        "L'air introduit doit être si besoin est, préalablement épuré par filtration par tout moyen efficace.",
+        "Pour l'application de ces dispositions, est considéré comme local situé en sous-sol, tout local dont le plancher est situé à un niveau inférieur à celui du sol environnant, lorsqu'il n'est pas muni de fenêtres ou autres ouvertures à châssis mobiles ouvrant directement sur le dehors et permettant de renouveler l'air en quantité suffisante et de le maintenir dans l'état de pureté nécessaire pour assurer la santé du personnel.",
+        "Les locaux fermés affectés au travail et notamment les passages et les escaliers doivent être éclairés.",
+        "L'éclairage doit être suffisant pour assurer la sécurité du travail et de la circulation.",
+        "Les gardiens de chantiers doivent disposer d'un abri."
+      ],
+      "mots_cles": ["sous-sol", "30 m³/heure", "air pur", "filtration", "éclairage", "gardiens"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Siège à disposition des travailleurs",
+      "texte": [
+        "Dans tous les établissements, un siège approprié doit être mis à la disposition de chaque ouvrier ou ouvrière ou employée à son poste dans tous les cas où la nature du travail sera compatible avec la station assise, continue ou intermittente.",
+        "Tous les établissements doivent disposer de sièges et bancs en nombre correspondant aux postes de travail occupés par des ouvrières ou employées. Un règlement intérieur fixera les heures et les conditions de leur utilisation."
+      ],
+      "mots_cles": ["siège", "poste de travail", "station assise", "ouvrières"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Bruit — 85 décibels",
+      "texte": [
+        "Dans les établissements bruyants, des mesures doivent être prises pour protéger les travailleurs contre l'effet du bruit et des vibrations.",
+        "L'intensité sonore au voisinage d'un poste de travail ne doit pas dépasser la valeur de 85 Décibels (Db)."
+      ],
+      "mots_cles": ["bruit", "85 décibels", "vibrations", "protection"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Engins motorisés — bruit",
+      "texte": [
+        "Les engins ou matériels motorisés, ne doivent pas émettre de bruits susceptibles de causer une gêne excessive par le fait de nuisance sonore. À cet effet, ils doivent être munis de dispositifs particuliers en bon état de fonctionnement, afin que le bruit émis par lesdits appareils n'excède pas le niveau admissible."
+      ],
+      "mots_cles": ["engins motorisés", "bruit", "nuisance sonore", "niveau admissible"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Équipement de protection individuelle",
+      "texte": [
+        "En plus des dispositifs de protection collective tant sur l'aménagement des postes de travail et de bâtiments, il est alloué en cas de besoin aux travailleurs un équipement de protection individuel reconnu efficace."
+      ],
+      "mots_cles": ["équipement de protection", "individuel", "efficace"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Machines bruyantes — locaux éloignés",
+      "texte": [
+        "Les machines développant un bruit et des vibrations au-dessus des normes acceptables sont dans toute la mesure du possible, placé dans les locaux éloignés des autres postes de travail."
+      ],
+      "mots_cles": ["machines bruyantes", "locaux éloignés", "vibrations"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Examen audiométrique",
+      "texte": [
+        "Les travailleurs exposés à une ambiance sonore nocive doivent obligatoirement faire l'objet d'un examen audiométrique périodique au moins deux fois par an."
+      ],
+      "mots_cles": ["examen audiométrique", "2 fois par an", "ambiance sonore nocive"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Repas interdits dans les locaux de travail",
+      "texte": [
+        "Il est interdit de laisser les salariés prendre leur repas dans les locaux affectés au travail.",
+        "Dans certains établissements, à la demande du bureau syndical d'entreprise, l'inspecteur régional du travail pourra, compte tenu de l'effectif du personnel salarié, prescrire à l'employeur l'obligation de mettre une cantine à la disposition du personnel.",
+        "Elle doit répondre aux conditions générales d'hygiène prévues par les articles ci-dessus. Elle doit être aménagée de façon à ce que chaque usager dispose d'une place assise.",
+        "Dans les établissements non visés à l'alinéa 2 ci-dessus, l'autorisation de prendre les repas dans les locaux affectés au travail pourra être accordée, après enquête et avis du comité d'hygiène et de sécurité d'entreprise par le directeur général du travail, sous réserve que l'employeur justifie que les opérations effectuées ne comportent pas l'emploi de substance toxiques, qu'elles ne donnent lieu à aucun dégagement de poussières ou de gaz incommodes, insalubres ou toxiques, que les autres conditions d'hygiène sont satisfaisantes.",
+        "Les chefs d'établissements doivent mettre à la disposition du personnel de l'eau potable et fraîche."
+      ],
+      "mots_cles": ["repas", "locaux de travail", "interdit", "cantine", "eau potable"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 5) Repas et boissons"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Cabinets d'aisance — 1 pour 40 personnes",
+      "texte": [
+        "Les cabinets d'aisance doivent être complètement nettoyés et sauf lorsqu'ils comportent des fosses septiques, désinfectés à l'aide d'un désinfectant puissant (chlorure de chaux, crésyl, ...).",
+        "Il doit y avoir au moins un cabinet pour 40 personnes.",
+        "Ils ne doivent pas communiquer directement avec les locaux fermés où le personnel est appelé à séjourner, ils doivent être aménagés de manière à ne pas dégager d'odeur.",
+        "Le sol et les parois doivent être en matériaux imperméables."
+      ],
+      "mots_cles": ["cabinets d'aisance", "1 pour 40", "désinfection", "imperméable"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Séparation des installations sanitaires par sexe",
+      "texte": [
+        "Les cabinets d'aisance, les urinoirs, ainsi que les vestiaires et les lavabos nettement séparés doivent être prévus pour le personnel masculin et le personnel féminin, ils doivent être tenus en état constant de propreté et nettoyés au moins une fois par jour. Ils doivent être bien aérés et convenablement éclairés."
+      ],
+      "mots_cles": ["séparation", "masculin", "féminin", "vestiaires", "lavabos", "propreté"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Lutte contre les moustiques et mouches",
+      "texte": [
+        "Toutes dispositions utiles doivent être prises pour éviter, aux alentours des lieux de travail le pullulement des larves, notamment celles de moustiques.",
+        "Des dispositions analogues doivent être prises pour éviter le pullulement des mouches dans les industries et commerces d'alimentation."
+      ],
+      "mots_cles": ["moustiques", "mouches", "larves", "alimentation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
+    }
+  ]
+}

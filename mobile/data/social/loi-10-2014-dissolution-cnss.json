@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°10-2014 du 13 juin 2014 portant dissolution de la Caisse Nationale de Sécurité Sociale",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": "2.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Loi n°10-2014 - Dissolution de la CNSS",
+    "section": null,
+    "section_titre": "Textes non codifiés de sécurité sociale",
+    "page_source": 230,
+    "signataires": null,
+    "date_signature": "13 juin 2014"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Dissolution de la CNSS",
+      "texte": [
+        "La caisse nationale de sécurité sociale, établissement public à caractère social, créée par la loi n°004-86 du 25 février 1986 instituant le Code de sécurité sociale, est dissoute."
+      ],
+      "mots_cles": ["CNSS", "dissolution", "loi 004-86"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Transfert prestations de famille",
+      "texte": [
+        "Les prestations de famille ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté."
+      ],
+      "mots_cles": ["prestations de famille", "transfert", "famille et enfance"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Transfert prestations de santé",
+      "texte": [
+        "Les prestations de santé ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime de l'assurance maladie universelle."
+      ],
+      "mots_cles": ["prestations de santé", "transfert", "assurance maladie universelle"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Transfert risques professionnels et pensions",
+      "texte": [
+        "Les prestations inhérentes aux risques professionnels et aux pensions des travailleurs du secteur privé ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime des risques professionnels et des pensions des travailleurs du secteur privé."
+      ],
+      "mots_cles": ["risques professionnels", "pensions", "transfert", "secteur privé"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Transfert prestations agents contractuels",
+      "texte": [
+        "Les prestations inhérentes aux agents contractuels de l'État, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées respectivement à l'organisme de sécurité sociale en charge de la gestion du régime des pensions des agents de l'État, en ce qui concerne les pensions et à la caisse de la famille et de l'enfance en difficulté, en ce qui concerne les prestations familiales."
+      ],
+      "mots_cles": ["agents contractuels", "État", "transfert", "pensions"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Transfert actif et passif",
+      "texte": [
+        "L'actif et le passif de la caisse nationale de sécurité sociale ainsi que les droits, obligations et sujétions qui sont attachés aux prestations de famille, aux prestations de santé ainsi qu'aux prestations relatives aux risques professionnels et aux pensions des travailleurs du secteur privé sont transférés, de plein droit, respectivement aux organismes de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté, du régime de l'assurance maladie universelle et du régime des risques professionnels et des pensions des travailleurs du secteur privé."
+      ],
+      "mots_cles": ["actif", "passif", "transfert", "de plein droit"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Personnel affecté prestations familiales",
+      "texte": [
+        "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de l'action sociale, affecté aux prestations de famille, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté."
+      ],
+      "mots_cles": ["personnel", "action sociale", "famille", "reversement"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Personnel affecté santé",
+      "texte": [
+        "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la santé, affecté aux prestations de santé, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime de l'assurance maladie universelle."
+      ],
+      "mots_cles": ["personnel", "santé", "assurance maladie", "reversement"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Personnel affecté risques professionnels",
+      "texte": [
+        "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la sécurité sociale, affecté aux prestations relatives aux risques professionnels et aux pensions des travailleurs du secteur privé, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime des risques professionnels et des pensions des travailleurs du secteur privé."
+      ],
+      "mots_cles": ["personnel", "sécurité sociale", "risques professionnels", "reversement"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Modalités d'affectation",
+      "texte": [
+        "Les modalités d'affectation du personnel et de transfert de l'actif et du passif de la caisse nationale de sécurité sociale sont déterminées par décret."
+      ],
+      "mots_cles": ["modalités", "décret", "affectation", "transfert"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge toutes dispositions antérieures contraires, sera enregistrée, publiée au Journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "Journal officiel"],
+      "statut": "en vigueur",
+      "section": "Dissolution de la CNSS"
+    }
+  ]
+}

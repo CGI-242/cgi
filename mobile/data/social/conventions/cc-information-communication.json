@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective applicable aux Personnels de l'Information et de la Communication",
+    "pays": "République du Congo",
+    "edition": "2009",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective Information et Communication",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "Éditeurs et Patrons des Entreprises Privées de Presse (employeurs) / Organisations Syndicales des Travailleurs (travailleurs)",
+    "date_signature": "7 janvier 2009"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente Convention Collective et ses annexes règlent les rapports de travail entre les entreprises Privées de Presse et l'ensemble des personnels desdites entreprises, tels qu'ils sont définis à l'article 2 du Code de Travail et aux articles 6, 7, 8, 87, 88 et 89 de la Loi No 8-2001 DU 12 Novembre 2001 sur la Liberté de l'Information et de la Communication, sans distinction de sexe, de religion et de statut, sur l'étendue du territoire de la République du Congo. Elle régit les relations de travail dans les entreprises privées de presse (journaux, radios, télévisions, agences d'information, médias en ligne, entreprises d'édition et d'imprimeries, agences d'images et de son).",
+        "Les annexes à la présente Convention Collective déterminent la classification des emplois et le barème des salaires."
+      ],
+      "mots_cles": ["information", "communication", "presse", "journaux", "radios", "télévisions", "médias en ligne", "agences"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Déontologie",
+      "texte": [
+        "L'employeur reconnait au journaliste ou tout autre employé des medias prives, la liberté d'agir, d'écrire et de s'exprimer conformément à sa conscience, dans le respect de la déontologie professionnelle, sans être intimidé par une sanction disciplinaire ou une menace quelconque.",
+        "L'employeur reconnait aux Rédacteurs en chef, au Directeur de l'Information ou leurs Délégués la liberté d'accepter ou de rejeter toute contribution rédactionnelle, dans le respect de la ligne éditoriale."
+      ],
+      "mots_cles": ["déontologie", "liberté", "journaliste", "conscience", "ligne éditoriale"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Clause de conscience — travail incompatible",
+      "texte": [
+        "L'employeur s'engage à respecter la clause de conscience, à ne pas confier au journaliste un travail incompatible avec sa dignité et la déontologie. Le journaliste ou tout autre agent de l'information et communication sociale ne peut être contraint d'accepter un acte professionnel consistant à diffuser des informations qui seraient contraires à la réalité, à exprimer une opinion qui serait contraire à son intime conviction professionnelle."
+      ],
+      "mots_cles": ["clause de conscience", "dignité", "déontologie", "conviction professionnelle"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Changement d'orientation éditoriale — clause de conscience",
+      "texte": [
+        "Lorsque l'établissement ou l'entreprise de presse change manifestement d'orientation éditoriale, le journaliste ou tout autre salarié de l'information et de la communication sociale qui se trouverait en désaccord de fond avec la nouvelle orientation, pourra constater la rupture du contrat de travail du fait de l'employeur en invoquant la clause de conscience. Dans ce cas, il percevra une indemnité équivalente à celle à laquelle il aurait pu prétendre en cas de licenciement."
+      ],
+      "mots_cles": ["orientation éditoriale", "clause de conscience", "rupture", "indemnité licenciement"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Protection des sources",
+      "texte": [
+        "Le journaliste ou tout autre agent de l'information et de la communication ne peut être contraint de révéler ses sources. Les Responsables de l'organe de presse ont le devoir de protéger le secret des sources du journaliste."
+      ],
+      "mots_cles": ["protection des sources", "secret des sources", "journaliste"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Séparation rédactionnel / publicitaire",
+      "texte": [
+        "Les activités rédactionnelles sont clairement distinctes des activités commerciales ou publicitaires des médias.",
+        "L'employeur ne peut exiger d'un journaliste ou technicien un travail de publicité rédactionnelle. Le refus par un journaliste ou technicien d'exécuter un travail de publicité ne peut en aucun cas être retenu comme une faute professionnelle."
+      ],
+      "mots_cles": ["rédactionnel", "publicitaire", "séparation", "publicité rédactionnelle"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    }
+  ]
+}

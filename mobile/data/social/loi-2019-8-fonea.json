@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°8-2019 du 9 avril 2019 portant création du FONEA",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "1.3",
+    "chapitre_titre": "Autres textes non codifiés de droit du travail",
+    "section": "1.3.6",
+    "section_titre": "Fonds National d'appui à l'Employabilité et à l'Apprentissage (FONEA)",
+    "page_source": 154
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Création du FONEA",
+      "texte": [
+        "Il est créé un établissement public à caractère administratif, doté de la personnalité morale et de l'autonomie de gestion, dénommé « Fonds national d'appui à l'employabilité et à l'apprentissage », en sigle FONEA.",
+        "Le siège du fonds national d'appui à l'employabilité et à l'apprentissage est fixé à Brazzaville."
+      ],
+      "mots_cles": ["FONEA", "création", "établissement public", "employabilité", "apprentissage"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Tutelle",
+      "texte": [
+        "Le fonds national d'appui à l'employabilité et à l'apprentissage est placé sous la tutelle du Ministre chargé de la formation professionnelle."
+      ],
+      "mots_cles": ["tutelle", "formation professionnelle"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Missions du FONEA",
+      "texte": [
+        "Le fonds national d'appui à l'employabilité et à l'apprentissage a pour missions la promotion de l'employabilité et de l'apprentissage par des formations qualifiantes et l'auto-entrepreneuriat.",
+        "À ce titre, il est chargé de :",
+        "- contribuer à l'identification des besoins en matière de formation professionnelle et d'apprentissage ;",
+        "- financer l'employabilité des demandeurs d'emploi, notamment à travers des formations qualifiantes, des programmes d'adaptation professionnelle, la formation, l'insertion et la réinsertion des demandeurs d'emploi ;",
+        "- financer la création et la mise à niveau des centres des métiers et des qualifications professionnelles ;",
+        "- contribuer à la promotion de l'apprentissage des métiers dans tous les secteurs d'activités ;",
+        "- appuyer les opérateurs de formation professionnelle, par le financement du perfectionnement de leurs formateurs, l'élaboration de stratégies novatrices et d'ingénieries pédagogiques appropriées, ainsi que par l'amélioration de leurs outils et instruments didactiques de formation ;",
+        "- rechercher les financements destinés à promouvoir l'employabilité et en assurer la gestion ;",
+        "- financer les formations de reconversion et de réinsertion ;",
+        "- participer à la rénovation de l'apprentissage en le faisant évoluer vers une formation par alternance de type dual ;",
+        "- financer le renforcement des capacités des maîtres artisans ;",
+        "- participer à la mise en œuvre de toute action visant une amélioration de l'adéquation formation-emploi."
+      ],
+      "mots_cles": ["missions", "formation", "employabilité", "apprentissage", "financement", "reconversion"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Ressources du FONEA",
+      "texte": [
+        "Les ressources du fonds national d'appui à l'employabilité et à l'apprentissage sont constituées par :",
+        "- la taxe d'apprentissage ;",
+        "- les produits générés par son activité ou par la gestion des programmes délégués ;",
+        "- la subvention de l'État ;",
+        "- les dons et legs ;",
+        "- toutes contributions se rapportant à ses missions."
+      ],
+      "mots_cles": ["ressources", "taxe d'apprentissage", "subvention", "financement"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Recouvrement de la taxe d'apprentissage",
+      "texte": [
+        "La structure en charge de la sécurité sociale recouvre pour le compte du fonds national d'appui à l'employabilité et à l'apprentissage la taxe d'apprentissage."
+      ],
+      "mots_cles": ["recouvrement", "taxe d'apprentissage", "sécurité sociale"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Organes de gestion",
+      "texte": [
+        "Le fonds national d'appui à l'employabilité et à l'apprentissage est administré par un comité de direction et géré par une direction générale.",
+        "La direction générale du fonds national d'appui à l'employabilité et à l'apprentissage est dirigée et animée par un directeur général nommé par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["comité de direction", "direction générale", "directeur général"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Statuts",
+      "texte": [
+        "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion du fonds national d'appui à l'employabilité et à l'apprentissage sont fixés par des statuts approuvés par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["statuts", "organisation", "décret"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment celles de la loi n°022-88 du 17 septembre 1988, sera publiée au Journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "publication"],
+      "statut": "en vigueur"
+    }
+  ]
+}

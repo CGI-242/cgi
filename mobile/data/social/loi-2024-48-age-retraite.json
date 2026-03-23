@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°48-2024 du 30 décembre 2024 fixant l'âge d'admission à la retraite des travailleurs relevant du Code du travail",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "2.2",
+    "chapitre_titre": "Textes non codifiés de sécurité sociale",
+    "section": "2.2.1",
+    "section_titre": "Âge d'admission à la retraite",
+    "page_source": 210
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Âge de retraite par catégorie",
+      "texte": [
+        "L'âge d'admission à la retraite des travailleurs relevant du Code du travail est fixé, selon les catégories des travailleurs, ainsi qu'il suit :",
+        "- 60 ans, pour les manœuvres, les ouvriers et les autres travailleurs assimilés ;",
+        "- 63 ans, pour les agents de maîtrise ;",
+        "- 65 ans, pour les cadres ;",
+        "- 70 ans, pour les cadres hors catégorie.",
+        "Toutefois, le travailleur, qui a cotisé effectivement pendant la durée d'assurance requise pour bénéficier de la pension de vieillesse normale, peut faire valoir ses droits à la retraite sans attendre l'âge légal. Dans ce cas, le départ à la retraite est ramené à :",
+        "- 57 ans, pour les manœuvres, les ouvriers et les autres travailleurs assimilés ;",
+        "- 60 ans, pour les agents de maîtrise ;",
+        "- 63 ans, pour les cadres ;",
+        "- 65 ans, pour les cadres hors catégorie.",
+        "La durée d'assurance requise pour bénéficier d'une pension de vieillesse normale selon les catégories est fixée par voie réglementaire."
+      ],
+      "mots_cles": ["âge retraite", "60 ans", "63 ans", "65 ans", "70 ans", "manœuvres", "agents de maîtrise", "cadres", "retraite anticipée"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Report de l'admission à la retraite",
+      "texte": [
+        "À la demande de l'employeur et, avec le consentement du travailleur, l'admission à la retraite peut être reportée pour une durée n'excédant pas deux ans."
+      ],
+      "mots_cles": ["report", "2 ans", "consentement"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Autorisation de prolongation",
+      "texte": [
+        "L'autorisation de prolongation d'activité est accordée par le Ministre chargé du travail, dans un délai de trois mois, à compter de la date de réception du procès-verbal cosigné par l'employeur et le travailleur. Passé ce délai, l'autorisation entre en vigueur de plein droit."
+      ],
+      "mots_cles": ["prolongation", "3 mois", "Ministre du travail"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Abrogation et publication",
+      "texte": [
+        "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment la loi n°22-2010 du 30 décembre 2010 fixant l'âge d'admission à la retraite des travailleurs relevant du Code du travail, sera publiée au journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["abrogation", "loi 22-2010"],
+      "statut": "en vigueur"
+    }
+  ]
+}

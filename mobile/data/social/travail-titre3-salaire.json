@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Du salaire",
+    "section": "Titre 3",
+    "section_titre": "Du salaire",
+    "page_source": 32
+  },
+  "articles": [
+    {
+      "article": "Art. 80",
+      "titre": "Égalité de salaire",
+      "texte": [
+        "À conditions égales de travail, de qualification professionnelle et de rendement le salaire est égal pour tous les travailleurs quels que soient leur origine, leur sexe, leur âge et leur statut.",
+        "Dans tous les cas où les conditions de travail et d'exploitation le permettront, les salaires seront fixés au mois.",
+        "Les dispositions nécessaires seront prévues par les conventions collectives ou accords d'établissements."
+      ],
+      "mots_cles": ["égalité", "salaire", "qualification", "rendement", "origine", "sexe", "âge"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 81",
+      "titre": "Indemnité de déplacement",
+      "texte": [
+        "Dans le cas où le travailleur est déplacé de son lieu de recrutement par l'employeur, celui-ci est tenu de le loger ou de lui verser une indemnité compensatrice.",
+        "Dans le cas où le travailleur ne peut, par ses propres moyens, obtenir, pour lui et sa famille, un ravitaillement régulier en denrées alimentaires de première nécessité l'employeur est tenu de lui assurer dans les conditions prévues à l'article 83 ou d'ouvrir un économat dans les conditions de l'article 103."
+      ],
+      "mots_cles": ["déplacement", "logement", "indemnité compensatrice", "ravitaillement", "économat"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 82",
+      "titre": "Primes d'éloignement et de dépaysement",
+      "texte": [
+        "Les conditions d'attribution de primes d'éloignement ou de dépaysement aux travailleurs recrutés hors du lieu d'emploi relèvent du domaine de la convention collective ou du contrat individuel de travail.",
+        "Une indemnité sera allouée au travailleur s'il est astreint par des obligations professionnelles à un déplacement occasionnel et temporaire hors de son lieu habituel d'emploi. Le taux de cette indemnité dite « indemnité de déplacement » est fixé par convention collective ou par le contrat individuel, ou à défaut par voie réglementaire."
+      ],
+      "mots_cles": ["primes d'éloignement", "dépaysement", "indemnité de déplacement", "convention collective"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 83",
+      "titre": "SMIG et salaires minima",
+      "texte": [
+        "Des décrets pris, après avis de la commission nationale consultative du travail, fixent :",
+        "- les salaires minima interprofessionnels garantis (SMIG) et, à défaut de conventions collectives ou dans leur silence, les salaires minima par catégories professionnelles, ainsi que les taux minima des heures supplémentaires et du travail de nuit ou des jours non ouvrables et, éventuellement, les primes d'ancienneté et d'assiduité ;",
+        "- la valeur maxima de remboursement du logement et les conditions auxquelles il doit répondre notamment au regard de l'hygiène et pour assurer la protection des femmes et jeunes filles ne vivant pas en famille ;",
+        "- les régions et les catégories de travailleurs pour lesquelles est obligatoire la fourniture d'une ration journalière de vivres, la valeur maxima de remboursement de celle-ci, le détail en nature et en poids des denrées alimentaires de première nécessité la composant, les conditions de sa fourniture.",
+        "[NB - Voir le décret n°2024-2762 du 20 novembre 2024 fixant le montant du salaire minimum interprofessionnel garanti (SMIG), page 78]",
+        "Toutefois, la période sur laquelle s'effectue ce calcul n'excédera pas les douze mois de service ayant précédé la cessation du travail."
+      ],
+      "mots_cles": ["SMIG", "salaires minima", "catégories professionnelles", "heures supplémentaires", "logement", "ration journalière"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 84",
+      "titre": "Travail à la tâche ou aux pièces",
+      "texte": [
+        "La rémunération d'un travail à la tâche ou aux pièces doit être calculée de telle sorte qu'elle procure au travailleur de capacité moyenne, et travaillant normalement, un salaire au moins égal à celui du travailleur rémunéré au temps effectuant un travail analogue.",
+        "Aucun salaire n'est dû en cas d'absence, en dehors des cas prévus par la réglementation et sauf accord entre les parties intéressées."
+      ],
+      "mots_cles": ["tâche", "pièces", "rémunération", "capacité moyenne", "absence"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 85",
+      "titre": "Affichage des taux minima",
+      "texte": [
+        "Les taux minima de salaire, ainsi que les conditions de rémunération du travail à la tâche ou aux pièces sont affichés aux bureaux des employeurs et sur les lieux de paye du personnel après accord de l'inspecteur du travail et des lois sociales qui y appose son visa."
+      ],
+      "mots_cles": ["affichage", "taux minima", "lieux de paye", "visa", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 86",
+      "titre": "Commissions et primes dans le calcul de la rémunération",
+      "texte": [
+        "Lorsque la rémunération des services est constituée, en totalité ou en partie, par des commissions ou des primes et prestations dans la mesure où celles-ci ne constituent pas un remboursement de frais, il en est tenu compte pour le calcul de la rémunération pendant la durée du congé payé, des indemnités de préavis et de licenciement, des dommages-intérêts.",
+        "Le montant à prendre en considération à ce titre est la moyenne mensuelle des éléments visés au paragraphe précédent."
+      ],
+      "mots_cles": ["commissions", "primes", "congé payé", "préavis", "licenciement", "dommages-intérêts"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la détermination du salaire"
+    },
+    {
+      "article": "Art. 87",
+      "titre": "Paiement en monnaie légale",
+      "texte": [
+        "Le salaire doit être payé en monnaie ayant cours légal, nonobstant toute stipulation contraire.",
+        "Le paiement de tout ou partie du salaire en alcool ou en boissons alcoolisées est formellement interdit. Le paiement de tout ou partie du salaire en nature est également interdit sous réserve des dispositions du chapitre 1 du présent titre.",
+        "La paie est faite, sauf cas de force majeure, sur le lieu du travail ou au bureau de l'employeur lorsqu'il est voisin du lieu de travail. En aucun cas, elle ne peut être faite, ni dans un débit de boissons ou dans un magasin de vente, sauf pour les travailleurs qui y sont normalement occupés, ni le jour où le travailleur a droit au repos.",
+        "Le paiement des salaires a lieu durant les heures de travail lorsque celles-ci concordent avec les heures d'ouverture normale de la caisse."
+      ],
+      "mots_cles": ["monnaie légale", "alcool interdit", "nature interdit", "lieu de travail", "débit de boissons"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 1 : Du mode de paiement du salaire"
+    },
+    {
+      "article": "Art. 88",
+      "titre": "Périodicité du paiement",
+      "texte": [
+        "À l'exception des professions pour lesquelles les usages établis prévoient une périodicité de paiement différente, et qui seront déterminées par arrêté du Ministre du travail et de la prévoyance sociale après avis de la commission nationale consultative du travail, le salaire doit être payé à intervalles réguliers ne pouvant excéder quinze jours pour les travailleurs engagés à la journée ou à la semaine, et un mois pour les travailleurs engagés à la quinzaine ou au mois. Toutefois le travailleur journalier, engagé à l'heure ou à la journée, pour une occupation de courte durée, est payé chaque jour après la fin du travail.",
+        "Les paiements mensuels doivent être effectués au plus tard huit jours après la fin du mois de travail qui donne droit au salaire, les paiements à la quinzaine ou à la semaine 4 jours après la quinzaine ou la semaine qui donne droit au salaire.",
+        "Pour tout travail aux pièces ou au rendement dont l'exécution doit durer plus d'une quinzaine, les dates de paiements peuvent être fixées de gré à gré, mais le travailleur doit recevoir chaque quinzaine les acomptes correspondant au moins à 90 % du salaire minimum et être intégralement payé dans la quinzaine qui suit la livraison de l'ouvrage.",
+        "Les commissions acquises au cours d'un trimestre doivent être payées dans les trois mois suivant la fin de ce trimestre.",
+        "Les participations aux bénéfices réalisés durant un exercice doivent être payées dans les neuf mois qui suivent l'exercice.",
+        "En cas de résiliation ou de rupture de contrat, le salaire et les indemnités doivent être payés dès la cessation de service. Toutefois, en cas de litige, l'employeur peut obtenir du président du tribunal du travail l'immobilisation provisoire entre ses mains de tout ou partie de la fraction saisissable des sommes dues.",
+        "Les travailleurs absents le jour de la paie peuvent ensuite retirer leur salaire aux heures normales d'ouverture de la caisse et conformément au règlement intérieur de l'établissement."
+      ],
+      "mots_cles": ["périodicité", "15 jours", "1 mois", "8 jours", "acompte", "90%", "commissions", "3 mois", "participations", "9 mois"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 1 : Du mode de paiement du salaire"
+    },
+    {
+      "article": "Art. 89",
+      "titre": "Paiement mensuel pour entreprises de plus de 50 travailleurs",
+      "texte": [
+        "Par dérogation aux dispositions du premier alinéa de l'article précédent, les entreprises occupant plus de 50 travailleurs seront autorisées à payer mensuellement les ouvriers dont le salaire est calculé sur une base horaire ou journalière, à condition qu'un acompte représentant au moins le tiers du salaire du mois précédent soit versé chaque quinzaine.",
+        "Les travailleurs employés par les services et établissements publics seront payés une fois par mois."
+      ],
+      "mots_cles": ["50 travailleurs", "paiement mensuel", "acompte", "tiers", "quinzaine", "services publics"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 1 : Du mode de paiement du salaire"
+    },
+    {
+      "article": "Art. 90",
+      "titre": "Bulletin individuel de paie",
+      "texte": [
+        "Le paiement du salaire doit être constaté par une pièce certifiée par l'employeur ou son représentant et émargée par chaque intéressé ou par deux témoins s'il est illettré. Ces pièces sont conservées par l'employeur dans les mêmes conditions que les pièces comptables et doivent être présentées à toute réquisition de l'inspection du travail.",
+        "Sauf dérogation autorisée par l'inspecteur du travail, les employeurs seront tenus de délivrer au travailleur, au moment du paiement, un bulletin individuel de paie. Mention sera faite par l'employeur du paiement du salaire sur un registre tenu à cette fin dit « livre de paie ».",
+        "La contexture du « bulletin individuel de paie » et du « livre de paie » sera fixée par arrêté du Ministre du travail et de la prévoyance sociale après avis de la commission nationale consultative du travail.",
+        "Ne sera pas opposable au travailleur la mention « pour solde de tout compte » ou toute mention équivalente souscrite par lui, soit au cours de l'exécution, soit après la résiliation de son contrat de travail et par laquelle le travailleur renonce à tout ou partie des droits qu'il tient de son contrat de travail.",
+        "L'acceptation sans protestation ni réserve, par le travailleur d'un bulletin individuel de paie ne peut valoir renonciation de sa part au paiement de tout ou partie du salaire, des primes et des indemnités de toute nature qui lui sont dues en vertu des dispositions législatives, réglementaires ou contractuelles. Elles ne peuvent valoir non plus compte arrêté et réglé au sens du Code civil et du Code de procédure civile.",
+        "En cas de contestation sur le paiement du salaire, des primes et indemnités de toute nature, le non-paiement sera présumé de manière irréfragable, sauf cas de force majeure, si l'employeur n'est pas en mesure de produire le livre de paie dûment émargé par le travailleur ou des témoins sous les mentions contestées ou le double émargé dans les mêmes conditions du bulletin de paie afférent au paiement du salaire contesté."
+      ],
+      "mots_cles": ["bulletin de paie", "livre de paie", "solde de tout compte", "irréfragable", "émargement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 1 : Du mode de paiement du salaire"
+    },
+    {
+      "article": "Art. 91",
+      "titre": "Définition du salaire",
+      "texte": [
+        "(Loi n°06-96) Au sens des dispositions du présent titre, le salaire s'entend du salaire de base, de l'allocation de congé, des primes, des indemnités de toute nature, à l'exception de l'indemnité de licenciement."
+      ],
+      "mots_cles": ["définition", "salaire", "salaire de base", "congé", "primes", "indemnités"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 92",
+      "titre": "Privilège de la créance de salaire",
+      "texte": [
+        "(Loi n°06-96) A concurrence de la fraction insaisissable du salaire, telle qu'elle résulte des dispositions de l'article 101 du Code du travail, les créances de salaire du travailleur ainsi que les indemnités de licenciement et les dommages-intérêts pour rupture abusive du contrat de travail bénéficient d'un privilège préférable à tous les autres privilèges généraux ou spéciaux, lequel s'exerce sur les biens meubles et immeubles de l'employeur débiteur."
+      ],
+      "mots_cles": ["privilège", "créance de salaire", "insaisissable", "indemnité de licenciement", "biens meubles", "immeubles"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 93",
+      "titre": "Faillite et liquidation judiciaire",
+      "texte": [
+        "En cas de liquidation judiciaire ou de faillite les sommes précomptées par le trésor, postérieurement à la date de cessation des paiements, sur les mandats dus à l'employeur sont rapportées à la masse."
+      ],
+      "mots_cles": ["faillite", "liquidation", "trésor", "cessation paiements"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 94",
+      "titre": "Paiement des créances en cas de faillite",
+      "texte": [
+        "Au plus tard dans les 10 jours qui suivent le jugement déclaratif de faillite ou de liquidation judiciaire, et sur simple ordonnance du juge commissaire, le syndic ou le liquidateur paie les créances des travailleurs.",
+        "Au cas où il n'aurait pas de fonds nécessaires ces créances doivent être acquittées sur les premières rentrées de fonds avant toute créance, comme indiqué à l'article 92 ci-dessus."
+      ],
+      "mots_cles": ["10 jours", "faillite", "syndic", "liquidateur", "créances", "priorité"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 95",
+      "titre": "Subrogation du prêteur",
+      "texte": [
+        "Au cas où lesdites créances sont payées, grâce à une avance faite par le syndic ou le liquidateur ou toute autre personne, le prêteur est, par cela même, subrogé dans les droits du travailleur et doit être remboursé dès la rentrée des fonds nécessaires, sans qu'aucun créancier puisse y faire opposition."
+      ],
+      "mots_cles": ["subrogation", "prêteur", "avance", "syndic", "remboursement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 96",
+      "titre": "Logement du travailleur en cas de faillite",
+      "texte": [
+        "Le travailleur logé par l'employeur avant la liquidation ou la faillite continue à être logé jusqu'à la date de paiement de sa dernière créance ou, éventuellement, jusqu'à la date du départ du moyen de transport mis à sa disposition pour regagner son lieu de recrutement."
+      ],
+      "mots_cles": ["logement", "faillite", "liquidation", "transport"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 97",
+      "titre": "Droit de rétention du travailleur",
+      "texte": [
+        "Le travailleur détenteur de l'objet par lui ouvré peut exercer le droit de rétention dans les conditions prévues par la législation en vigueur.",
+        "Les objets mobiliers confiés à un ouvrier pour être travaillés, façonnés, réparés ou nettoyés et qui n'auront pas été retirés dans le délai d'un an pourront être vendus dans les conditions et formes déterminées par la législation en vigueur."
+      ],
+      "mots_cles": ["droit de rétention", "objets mobiliers", "1 an", "vente"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 98",
+      "titre": "Travaux publics — insaisissabilité",
+      "texte": [
+        "Les sommes dues aux entrepreneurs de tous les travaux ayant le caractère de travaux publics ne peuvent être frappées de saisie-arrêt, ni d'opposition au préjudice des ouvriers auxquels les salaires sont dus.",
+        "Les sommes dues aux ouvriers pour salaires sont payées de préférence à celles dues aux fournisseurs."
+      ],
+      "mots_cles": ["travaux publics", "insaisissabilité", "saisie-arrêt", "préférence", "fournisseurs"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 2 : Des privilèges et garanties de la créance de salaire"
+    },
+    {
+      "article": "Art. 99",
+      "titre": "Prescription de l'action en paiement du salaire",
+      "texte": [
+        "L'action en paiement des salaires, indemnités, primes, commissions et prestations diverses ou indemnités représentatives de ces prestations, se prescrit par un an.",
+        "La prescription court à compter de la date à partir de laquelle le salaire ou les accessoires de salaires sont exigibles. Elle est interrompue soit par la réclamation verbale ou écrite formulée par le travailleur en matière de paiement de salaire devant les services de l'inspection du travail, soit lorsqu'il y a compte arrêté, cédule, obligation ou citation en justice non périmés."
+      ],
+      "mots_cles": ["prescription", "1 an", "salaires", "indemnités", "réclamation", "interruption"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du paiement du salaire - Section 3 : De la prescription de l'action en paiement du salaire"
+    },
+    {
+      "article": "Art. 100",
+      "titre": "Retenues sur le salaire",
+      "texte": [
+        "Les prélèvements obligatoires et les consignations qui peuvent être prévues par les conventions collectives et les contrats individuels de travail, peuvent faire l'objet de retenues sur le salaire.",
+        "Le remboursement d'avances d'argent consenties par l'employeur au travailleur ne peut faire l'objet de retenues sur les appointements ou salaires que par saisie-arrêt ou cession volontaire souscrite devant le magistrat du lieu de la résidence ou devant l'inspecteur du travail.",
+        "Toutefois, lorsque le magistrat ou l'inspecteur du travail habite à plus de 50 kilomètres, il pourra y avoir consentement réciproque et écrit devant le chef de l'unité administrative la plus proche.",
+        "Le plafond des prêts ou avances sur salaires consentis directement par l'employeur à son salarié ne peut excéder deux mois de salaire, sauf convention contraire conclue dans les conditions des paragraphes 2 et 3 ci-dessus.",
+        "Les acomptes sur un travail en cours ne sont pas considérés comme avances.",
+        "Sauf décision judiciaire, aucune compensation ne s'opère au profit des employeurs entre le montant des appointements ou salaires dus par eux à leurs travailleurs et les sommes qui leur seraient dues à eux-mêmes."
+      ],
+      "mots_cles": ["retenues", "salaire", "avances", "saisie-arrêt", "cession volontaire", "2 mois", "compensation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Des retenues sur salaire"
+    },
+    {
+      "article": "Art. 101",
+      "titre": "Portions saisissables",
+      "texte": [
+        "Des décrets pris, après avis de la commission nationale consultative du travail, fixent les portions de salaires soumises à prélèvements progressifs et les taux y afférents. La retenue visée à l'article précédent ne peut pour chaque paie, excéder les taux fixés par décret.",
+        "Il doit être tenu compte, pour le calcul de la retenue, non seulement du salaire proprement dit, mais de tous les accessoires du salaire à l'exception toutefois des indemnités déclarées insaisissables par la réglementation en vigueur des sommes allouées à titre de remboursement de frais exposés par le travailleur et des allocations ou indemnités pour charge de famille."
+      ],
+      "mots_cles": ["portions saisissables", "prélèvements progressifs", "décret", "indemnités insaisissables"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Des retenues sur salaire"
+    },
+    {
+      "article": "Art. 102",
+      "titre": "Nullité des prélèvements non autorisés",
+      "texte": [
+        "Les dispositions d'une convention ou d'un contrat autorisant tous autres prélèvements sont nulles de plein droit.",
+        "Les sommes retenues au travailleur en contravention des dispositions ci-dessus portent intérêts à son profit aux taux légal depuis la date où elles auraient dû être payées et peuvent être réclamées par lui jusqu'à prescription, le cours en étant suspendu pendant la durée du contrat."
+      ],
+      "mots_cles": ["nullité", "prélèvements", "intérêts", "taux légal", "prescription"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Des retenues sur salaire"
+    },
+    {
+      "article": "Art. 103",
+      "titre": "Définition de l'économat",
+      "texte": [
+        "Est considérée comme économat, toute organisation où l'employeur pratique, directement ou indirectement, la vente ou la cession de marchandises aux travailleurs de l'entreprise pour leurs besoins personnels et normaux.",
+        "Les économats sont admis sous la triple condition :",
+        "- a) que les travailleurs ne soient pas obligés de s'y fournir ;",
+        "- b) que la vente des marchandises y soit faite exclusivement au comptant et sans bénéfice ;",
+        "- c) que la comptabilité du ou des économats de l'entreprise soit entièrement autonome. Le prix des marchandises mises en vente doit être affiché lisiblement.",
+        "Tout commerce installé à l'intérieur de l'entreprise est soumis aux dispositions qui précèdent à l'exception des coopératives ouvrières.",
+        "La vente des alcools et spiritueux est interdite dans les économats, ainsi que sur le lieu d'emploi du travailleur."
+      ],
+      "mots_cles": ["économat", "vente", "comptant", "sans bénéfice", "autonome", "alcools interdits"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Des économats"
+    },
+    {
+      "article": "Art. 104",
+      "titre": "Autorisation d'ouverture d'un économat",
+      "texte": [
+        "L'ouverture d'un économat, dans les conditions prévues à l'article précédent, est subordonnée à l'autorisation du Ministre du travail et de la prévoyance sociale délivrée après avis de l'inspecteur du travail du ressort et consultation du Ministre de l'économie nationale.",
+        "Elle peut être prescrite dans toute entreprise par le Ministre du travail et de la prévoyance sociale sur proposition de l'inspecteur du travail et après consultation du Ministre de l'économie nationale.",
+        "Le fonctionnement et la comptabilité des économats sont contrôlés par l'inspecteur du travail qui, en cas d'abus constaté peut prescrire la fermeture provisoire pour une durée maximum d'un mois.",
+        "Le Ministre du travail et de la prévoyance sociale peut ordonner la fermeture définitive du ou des économats de l'entreprise, sur rapport de l'inspecteur du travail et après consultation du Ministre de l'économie nationale."
+      ],
+      "mots_cles": ["autorisation", "Ministre du travail", "inspecteur du travail", "fermeture", "1 mois", "économat"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Des économats"
+    }
+  ]
+}

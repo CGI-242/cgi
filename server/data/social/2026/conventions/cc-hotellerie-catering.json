@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Convention Collective de l'Hôtellerie et Assimilés",
+    "pays": "République du Congo",
+    "edition": "2010",
+    "tome": null,
+    "partie": "Conventions collectives",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Convention Collective Hôtellerie et Catering",
+    "section": null,
+    "section_titre": null,
+    "page_source": 1,
+    "signataires": "UNICONGO Fédération Hôtellerie (employeurs) / FESYTRHAT/CSC, FESYTRAAC/CSTC (travailleurs)",
+    "date_signature": "Mars 2010"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Objet et champ d'application",
+      "texte": [
+        "La présente convention et ses annexes règlent les rapports de travail entre les employeurs et les travailleurs tels qu'ils sont définis à l'article 2 du code du travail, quel que soient leur sexe et leur origine, employés dans les entreprises hôtelières, de restauration collective en mer, exerçant leur activité dans le territoire de la République du Congo (Hôtels, Restaurants, Bars, Cafés, Salons de thé, Pâtisseries, Pressings, Glaciers, Night Clubs, Catering Pétrolier)."
+      ],
+      "mots_cles": ["hôtellerie", "restauration", "bars", "cafés", "catering pétrolier", "night clubs"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Période d'essai",
+      "texte": [
+        "Pour le contrat de travail à durée indéterminée, sa durée est de :",
+        "- un (1) mois pour les ouvriers et employés payés au mois",
+        "- deux (2) mois pour les agents de maîtrise",
+        "- trois (3) mois pour les cadres",
+        "Pour les CDD : 15 jours max (contrats < 6 mois), 1 mois (autres cas). Renouvellement max 6 mois."
+      ],
+      "mots_cles": ["période d'essai", "1 mois", "2 mois", "3 mois", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 1"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Maladies et accidents non professionnels",
+      "texte": [
+        "En cas de maladie ou accident non professionnel dûment constaté par un médecin ou tradipraticien agréé par l'entreprise et notifié à l'employeur dans les quarante huit (48) heures sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à huit (8) mois.",
+        "Indemnités : après 12 mois et jusqu'à 5 ans = 3 mois de salaire ; après 5-10 ans = 3 mois + 1,5 demi-salaire ; après 10 ans+ = 4 mois + 1,5 demi-salaire."
+      ],
+      "mots_cles": ["maladie", "8 mois suspension", "48 heures", "3 mois", "4 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 2 : Suspension"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "50% par an pour les 5 premières années ; 60% par an de la 6e à la 10e année ; 70% par an au-delà de la 10e année.",
+        "Compression : 55% par an après 1 an de présence."
+      ],
+      "mots_cles": ["indemnité de licenciement", "2 ans", "50%", "60%", "70%", "compression 55%"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 3 : Résiliation"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Mise à la retraite",
+      "texte": [
+        "Indemnité de cessation d'activités : 4 mois (5-10 ans), 6 mois (10-15 ans), 8 mois (15-20 ans), +1 mois/2 ans au-delà de 20 ans.",
+        "Reclassement catégorie supérieure 3 ans avant la retraite."
+      ],
+      "mots_cles": ["retraite", "4 mois", "6 mois", "8 mois", "reclassement 3 ans"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 3 : Résiliation"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Décès du travailleur",
+      "texte": [
+        "Frais d'inhumation à la charge de l'employeur : 1 cercueil + frais conservation, 4 draps, 1 couverture, 1 costume ou 1 robe, 1 véhicule transport corps, 1 couronne, 1 véhicule transport personnel."
+      ],
+      "mots_cles": ["décès", "cercueil", "4 draps", "couronne", "véhicule"],
+      "statut": "en vigueur",
+      "section": "Titre III - Chapitre 3 : Résiliation"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Loi n°11-2014 du 13 juin 2014 portant création de la Caisse des risques professionnels et des pensions des travailleurs du secteur privé",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 2,
+    "partie": "2.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Loi n°11-2014 - Caisse des risques professionnels et pensions",
+    "section": null,
+    "section_titre": "Textes non codifiés de sécurité sociale",
+    "page_source": 231,
+    "signataires": null,
+    "date_signature": "13 juin 2014"
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Création de la Caisse",
+      "texte": [
+        "Il est créé un établissement public à caractère administratif, doté de la personnalité morale et de l'autonomie financière, dénommé caisse des risques professionnels et des pensions des travailleurs du secteur privé.",
+        "Le siège de la caisse des risques professionnels et des pensions des travailleurs du secteur privé est fixé à Brazzaville. Il peut être transféré en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil de Ministres."
+      ],
+      "mots_cles": ["création", "établissement public", "Brazzaville", "siège"],
+      "statut": "en vigueur",
+      "section": "Création et missions"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Tutelle",
+      "texte": [
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est placée sous la tutelle du Ministre chargé de la sécurité sociale."
+      ],
+      "mots_cles": ["tutelle", "Ministre", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Création et missions"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Missions",
+      "texte": [
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé a pour missions de gérer le régime des risques professionnels et des pensions des travailleurs du secteur privé et d'assurer les prestations sociales relatives :",
+        "- aux risques professionnels en cas d'accident du travail ou de maladie professionnelle ;",
+        "- aux pensions de retraite, d'invalidité et de réversion ;",
+        "- à d'autres branches qui seront créées par la loi et en rapport avec le régime des risques professionnels et des pensions des travailleurs du secteur privé."
+      ],
+      "mots_cles": ["missions", "risques professionnels", "pensions", "retraite", "invalidité", "réversion"],
+      "statut": "en vigueur",
+      "section": "Création et missions"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Ressources",
+      "texte": [
+        "Les ressources de la caisse des risques professionnels et des pensions des travailleurs du secteur privé sont constituées par :",
+        "- les cotisations des employeurs ;",
+        "- les cotisations des travailleurs ;",
+        "- les revenus du placement de fonds ;",
+        "- les revenus des valeurs mobilières et immobilières ;",
+        "- les intérêts moratoires ;",
+        "- les subventions ;",
+        "- les pénalités liées à la non-production ou à la production des déclarations nominatives des salaires ;",
+        "- les majorations encourues pour cause de retard dans le paiement des cotisations ;",
+        "- les dons et legs ;",
+        "- toute autre ressource attribuée à la caisse."
+      ],
+      "mots_cles": ["ressources", "cotisations", "employeurs", "travailleurs"],
+      "statut": "en vigueur",
+      "section": "Création et missions"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Reprise actif et passif",
+      "texte": [
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé reprend l'actif et le passif de la caisse nationale de sécurité sociale et la caisse de retraite des fonctionnaires ainsi que les droits, obligations et sujétions inhérents aux branches des rentes et des pensions."
+      ],
+      "mots_cles": ["actif", "passif", "reprise", "CNSS", "caisse de retraite"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Reversement du personnel",
+      "texte": [
+        "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la sécurité sociale, affecté aux prestations familiales des travailleurs du secteur privé, des agents de la force publique et des agents civils de l'État relevant du statut général de la fonction publique et des statuts particuliers, est reversé, de plein droit, à la caisse des risques professionnels et des pensions des travailleurs du secteur privé.",
+        "Le personnel visé à l'alinéa précédent conserve ses droits acquis tant en ce qui concerne le traitement que l'ancienneté."
+      ],
+      "mots_cles": ["personnel", "reversement", "droits acquis", "ancienneté"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Modalités d'affectation",
+      "texte": [
+        "Les modalités d'affectation du personnel et de transfert de l'actif et du passif de la caisse nationale de sécurité sociale et de la caisse de retraite des fonctionnaires à la caisse des risques professionnels et des pensions des travailleurs du secteur privé sont déterminées par décret."
+      ],
+      "mots_cles": ["modalités", "transfert", "décret"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Organe de participation sociale",
+      "texte": [
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé dispose, en son sein, d'un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de la caisse.",
+        "Un décret en Conseil de Ministres fixe les attributions, la composition et le fonctionnement de l'organe de participation sociale."
+      ],
+      "mots_cles": ["participation sociale", "bénéficiaires", "organe"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Administration et gestion",
+      "texte": [
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est administrée et gérée par un conseil d'administration et une direction générale.",
+        "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est dirigée par un directeur général nommé par décret en Conseil de Ministres, sur proposition du Ministre chargé de la sécurité sociale."
+      ],
+      "mots_cles": ["administration", "conseil d'administration", "direction générale", "directeur général"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Statuts",
+      "texte": [
+        "Les attributions, l'organisation et le fonctionnement des organes de gestion et d'administration de la caisse des risques professionnels et des pensions des travailleurs du secteur privé sont fixés par des statuts approuvés par décret en Conseil des Ministres."
+      ],
+      "mots_cles": ["statuts", "décret", "Conseil des Ministres"],
+      "statut": "en vigueur",
+      "section": "Organisation"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Disposition transitoire",
+      "texte": [
+        "En attendant la mise en place effective des organes d'administration et de gestion de la caisse des risques professionnels et des pensions des travailleurs du secteur privé, la caisse nationale de sécurité sociale assure, à titre transitoire, l'application des dispositions de la présente loi."
+      ],
+      "mots_cles": ["transitoire", "CNSS", "mise en place"],
+      "statut": "en vigueur",
+      "section": "Dispositions transitoires"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Publication",
+      "texte": [
+        "La présente loi sera publiée au Journal officiel et exécutée comme loi de l'État."
+      ],
+      "mots_cles": ["publication", "Journal officiel"],
+      "statut": "en vigueur",
+      "section": "Dispositions transitoires"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "code": "social",
+    "document": "Code de la sécurité sociale - Chapitre 3 Pensions suite (Art. 148-157) + Titre 5 Dispositions communes (Art. 158-168)",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "partie": "2",
+    "chapitre_titre": "Droit de la sécurité sociale",
+    "section": "2.1",
+    "section_titre": "Code de la sécurité sociale (Loi n°004-86)",
+    "page_source": 201
+  },
+  "articles": [
+    {
+      "article": "Art. 148",
+      "titre": "Caractère temporaire de la pension d'invalidité",
+      "texte": [
+        "La pension d'invalidité est toujours concédée à titre temporaire. Elle peut être révisée à la suite de toute modification de l'état de l'assuré soit par aggravation, soit par atténuation de l'invalidité. En vue de déceler cette modification, la Caisse est admise à prescrire de nouveaux examens à l'assuré et l'invalide peut également faire constater toute modification de son état. Les modalités et la périodicité de ces examens sont fixées par arrêté du Ministre chargé de la sécurité sociale."
+      ],
+      "mots_cles": ["pension invalidité", "temporaire", "révision", "examens"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 149",
+      "titre": "Transformation en pension de vieillesse",
+      "texte": [
+        "La pension d'invalidité est remplacée par une pension de vieillesse de même montant lorsque le bénéficiaire atteint l'âge de la retraite."
+      ],
+      "mots_cles": ["invalidité", "vieillesse", "transformation", "retraite"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 150",
+      "titre": "Calcul du montant des pensions",
+      "texte": [
+        "Le montant de la pension de vieillesse, d'invalidité de la pension anticipée, proportionnelle ou de l'allocation de vieillesse est fixé en fonction de la moyenne mensuelle des rémunérations des 36 ou 60 meilleurs mois contenus dans les 10 dernières années précédant la date d'admissibilité à la pension.",
+        "Pour le calcul du montant de la pension d'invalidité, les années comprises entre l'âge de cinquante-cinq ans de l'âge effectif de l'assuré à la date où la pension d'invalidité prend effet, sont assimilées à des périodes d'assurance à raison de six mois par année.",
+        "Le montant mensuel de la pension de vieillesse ou d'invalidité ou de la pension anticipée est égal à 40 pour cent de la rémunération mensuelle moyenne. Si le total des mois d'assurance et des mois assimilés dépasse deux cent quarante mois, le pourcentage est majoré de 2 % pour chaque période d'assurance ou assimilée de douze mois au-delà de deux cent quarante mois.",
+        "Le montant mensuel de la pension de vieillesse ou d'invalidité et la pension anticipée ne peut être inférieur à 60 % du salaire minimum interprofessionnel garanti le plus élevé du territoire national correspondant à une durée de travail hebdomadaire de quarante heures.",
+        "Ce montant minimum ne peut cependant pas être supérieur à 80 pour cent de la rémunération moyenne de l'assuré, calculée conformément au paragraphe 1 du présent article.",
+        "Le montant de la pension proportionnelle est calculé sur la base des salaires définis à l'article 1 à raison de 2 % par année de période d'assurance effective.",
+        "Si le montant de la pension proportionnelle est inférieur à 60 % du salaire interprofessionnel garanti, l'assuré reçoit une allocation de vieillesse.",
+        "Le montant de l'allocation de vieillesse est égal à autant de fois la rémunération mensuelle moyenne de l'assuré que celui-ci compte de la période de douze mois d'assurance.",
+        "Le service des allocations familiales est maintenu de plein droit aux bénéficiaires de pension de vieillesse, de pension anticipée ou proportionnelle et de pension d'invalidité."
+      ],
+      "mots_cles": ["calcul pension", "40%", "2%", "240 mois", "60% SMIG", "80% maximum", "allocation vieillesse"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 151",
+      "titre": "Pension de survivant",
+      "texte": [
+        "1) En cas de décès du titulaire d'une pension de vieillesse ou d'invalidité, d'une pension proportionnelle ou anticipée, ainsi qu'en cas de décès d'un assuré qui à la date de son décès, remplissant les conditions requises pour bénéficier d'une pension de vieillesse, proportionnelle, anticipée pension d'invalidité qui justifiait d'au moins deux cent quarante mois d'assurance, les survivants ont droit à une pension de survivant.",
+        "2) Sont considérés comme survivants : a) le veuf ou la veuve, non remarié de l'assuré, à condition que le mariage ait été contracté un an au moins avant le décès ; b) les enfants à charge de l'assuré, tels qu'ils sont définis au titre des allocations familiales ; c) les ascendants ou autres catégories des successibles énumérés à l'article 462 du Code de la famille.",
+        "3) Les pensions de survivants sont calculées en pourcentage de la pension de vieillesse ou d'invalidité, de la pension proportionnelle ou anticipée à laquelle l'assuré avait ou aurait eu droit à la date de son décès à raison de : a) 30 % pour le veuf ou la veuve, en cas de pluralité de veuves, le montant est réparti entre elles en parties égales, cette répartition étant définitive ; b) 50 % aux enfants et descendants. En aucun cas, le montant de la pension d'orphelin ne peut être inférieur à celui des allocations familiales ; c) 20 % aux ascendants ou autres catégories de successibles.",
+        "4) Le montant total des pensions de survivants, ne peut excéder à 80 % de la pension à laquelle l'assuré avait ou aurait eu droit.",
+        "5) Le droit à la pension du conjoint survivant s'éteint en cas de remariage. Il lui est alors, versé une allocation de remariage égale à six mensualités de la pension."
+      ],
+      "mots_cles": ["pension survivant", "30% veuf/veuve", "50% enfants", "20% ascendants", "80% plafond", "allocation remariage"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 152",
+      "titre": "Allocation de survivant",
+      "texte": [
+        "Si l'assuré ne pouvait prétendre à une pension d'invalidité et comptait moins de deux cent quarante mois d'assurance à la date de son décès, les survivants bénéficient d'une allocation de survivant, versée en une seule fois, d'un montant égal à autant de mensualités de la pension de vieillesse à laquelle l'assuré aurait pu prétendre au terme de deux cent quarante mois d'assurance qu'il avait accompli de période de six mois d'assurance à la date de son décès. En outre, le bénéfice des allocations familiales est maintenu en faveur des enfants survivants."
+      ],
+      "mots_cles": ["allocation survivant", "240 mois", "versement unique"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 153",
+      "titre": "Conservation des droits acquis",
+      "texte": [
+        "Tout travailleur Congolais passant du régime des pensions civiles de l'État à celui de la Caisse vice versa, conserve l'intégralité des droits acquis qui seront entièrement validés par le régime d'accueil. En aucune manière, il ne lui sera proposé un rachat, même partiel des droits précités."
+      ],
+      "mots_cles": ["droits acquis", "transfert", "régime pensions civiles", "validation"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 154",
+      "titre": "Allocation de décès",
+      "texte": [
+        "Une allocation est accordée aux ayants droit en cas de décès d'un titulaire de pension de vieillesse, d'invalidité ou de pension proportionnelle.",
+        "Cette allocation est égale à trois mensualités de la pension."
+      ],
+      "mots_cles": ["allocation décès", "3 mensualités"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 155",
+      "titre": "Bénéficiaires de l'allocation de décès",
+      "texte": [
+        "L'allocation de décès est versée aux personnes qui, au jour du décès étaient effectivement à la charge de l'assuré."
+      ],
+      "mots_cles": ["allocation décès", "personnes à charge"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 156",
+      "titre": "Allocation à défaut d'ayants droit",
+      "texte": [
+        "À défaut d'ayants droit visés à l'article 151 de la présente loi, l'allocation de décès est versée à la personne qui justifie avoir supporté la charge des frais funéraires jusqu'à concurrence des frais exposés et ce, dans la limite de l'allocation de décès prévue à l'article 155 de la présente loi.",
+        "Le versement de l'allocation de décès n'interdit pas le paiement de la pension de survivant à la veuve ou au veuf comme prévu par le Code de la famille."
+      ],
+      "mots_cles": ["frais funéraires", "défaut ayants droit"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 157",
+      "titre": "Revalorisation des pensions",
+      "texte": [
+        "1) Les montants des paiements périodiques en cours attribués au titre des rentes ou des pensions peuvent être révisés par décret pris en Conseil des Ministres sur proposition du Ministre chargé de la sécurité sociale après avis du Conseil d'Administration à la suite de variation du niveau général des salaires résultant des variations sensibles du coût de la vie. Il est tenu compte des possibilités financières du régime de l'évolution du SMIG.",
+        "2) Dans les mêmes conditions, il peut être procédé, lors de la liquidation des pensions de vieillesse et d'invalidité, la revalorisation des salaires pris en compte pour la détermination de la rémunération mensuelle moyenne servant de base au calcul de ces prestations."
+      ],
+      "mots_cles": ["revalorisation", "pensions", "rentes", "SMIG", "coût de la vie"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
+    },
+    {
+      "article": "Art. 158",
+      "titre": "Modalités d'affiliation et d'immatriculation",
+      "texte": [
+        "Les modalités d'affiliation des employeurs, d'immatriculation des travailleurs, de perception des cotisations, de liquidation et du service des prestations ainsi que les obligations incombant aux employeurs et aux travailleurs dans le fonctionnement du régime de Sécurité Sociale seront déterminées par arrêté du Ministre chargé de la sécurité sociale après avis du Conseil d'Administration."
+      ],
+      "mots_cles": ["affiliation", "immatriculation", "cotisations", "arrêté"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 159",
+      "titre": "Accords avec formations sanitaires",
+      "texte": [
+        "Un arrêté du Ministre chargé de la sécurité sociale pris après avis du Conseil d'Administration, fixe les conditions et les modalités suivant lesquelles la Caisse peut conclure des accords avec les formations sanitaires publiques ou privées agréées par le Ministre de la Santé en vue d'assurer les soins et procéder aux visites et examens médicaux prévus par le Code du travail ou les textes législatifs et réglementaires régissant la Sécurité Sociale."
+      ],
+      "mots_cles": ["accords", "formations sanitaires", "soins médicaux"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 160",
+      "titre": "Fonds d'action sanitaire et sociale",
+      "texte": [
+        "Un fonds d'action Sanitaire et Sociale est créé auprès de la Caisse. Ce fonds est alimenté par le produit des majorations de retard dans le versement des cotisations perçues à l'encontre des employeurs et par les prélèvements sur les recettes des différentes branches du régime.",
+        "Les ressources du fonds d'action Sanitaire et Sociale peuvent être utilisées par la Caisse :",
+        "a) à toute action de prévention générale, de prévention des accidents du travail et des Maladies Professionnelles et de réadaptation des invalides ;",
+        "b) à la création des Centres d'Action Sanitaire et Sociale ;",
+        "c) à la création et au fonctionnement de mission de repos pour les vieux travailleurs ;",
+        "d) au service des prestations en nature prévues à l'article 38 ;",
+        "e) à l'aide financière ou la participation à des institutions publiques ou privées agissant dans les domaines sanitaires et social."
+      ],
+      "mots_cles": ["fonds action sanitaire", "majorations", "prévention", "centres sociaux"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 161",
+      "titre": "Périodes assimilables",
+      "texte": [
+        "Pour l'ouverture du droit aux prestations, sont assimilables à une période d'assurance toute période pendant laquelle l'assuré a perçu des indemnités journalières au titre des risques professionnels ou de la maternité les périodes d'incapacité de travail, dans la limite de six mois, en cas de maladie dûment constatée par un Médecin agréé, le temps passé sous les drapeaux au titre du service militaire légal et les absences pour congé régulier y compris les délais de route dans les limites fixées par les dispositions du Code du travail.",
+        "L'expression « mois d'assurance », désigne tout mois au cours duquel l'assuré a occupé, pendant vingt jours au moins, un emploi assujetti à l'assurance."
+      ],
+      "mots_cles": ["périodes assimilables", "mois d'assurance", "20 jours", "service militaire"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 162",
+      "titre": "Liquidation des rentes et pensions",
+      "texte": [
+        "Les rentes et les pensions sont liquidées en montants mensuels ; le droit à une mensualité est déterminé d'après la situation du bénéficiaire au premier jour du mois civil correspondant. Chaque montant mensuel est arrondi à la centaine de francs supérieur.",
+        "Le versement des rentes et des pensions s'effectue trimestriellement. Toutefois, le Conseil d'Administration de la Caisse peut déterminer dans quelles régions et sous quelles conditions les prestations sont versées mensuellement."
+      ],
+      "mots_cles": ["liquidation", "mensuel", "trimestriel", "arrondi"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 163",
+      "titre": "Prescriptions",
+      "texte": [
+        "Le droit aux prestations familiales, aux allocations funéraires et aux indemnités journalières d'accident du travail et de maternité se prescrit par un an.",
+        "Le droit aux arrérages des pensions de vieillesse, de rente d'accident de travail se prescrit par 2 ans."
+      ],
+      "mots_cles": ["prescription", "1 an", "2 ans", "prestations familiales", "pensions"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 164",
+      "titre": "Supplément pour tierce personne",
+      "texte": [
+        "Le titulaire d'une pension d'invalidité, qui a besoin de façon constante de l'aide et des soins qu'une tierce personne pour accomplir les actes de la vie courante, a droit à un supplément égal à 50 pour cent du montant de la rente ou du montant de sa pension."
+      ],
+      "mots_cles": ["tierce personne", "50%", "supplément"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 165",
+      "titre": "Cumul rente et pension de survivant",
+      "texte": [
+        "1) Si à la suite du décès d'un travailleur résultant d'accident du travail ou d'une maladie professionnelle, les survivants, ont droit simultanément à une rente et à une pension de survivant, le versement de la pension de survivant est suspendu jusqu'à concurrence du montant de la rente de survivant.",
+        "2) En cas de cumul d'une pension et d'une ou plusieurs rentes allouées, le titulaire a droit à la totalité de la pension ou la rente dont le montant est le plus élevé et à la moitié de l'autre ou des autres avantages.",
+        "3) Si à la suite d'un accident du travail, la victime a droit simultanément à une rente d'incapacité permanente et à une pension d'invalidité, le versement de la pension d'invalidité est suspendu jusqu'à concurrence du montant de la rente d'incapacité permanente."
+      ],
+      "mots_cles": ["cumul", "rente", "pension", "survivant", "suspension"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 166",
+      "titre": "Exclusions et suspensions",
+      "texte": [
+        "1) Les prestations ne sont pas dues lorsque l'incapacité de travail ou le décès sont la conséquence d'un crime ou d'un délit commis par le bénéficiaire ou d'une faute intentionnelle de sa part.",
+        "2) Les prestations sont suspendues :",
+        "a) lorsque le titulaire ne réside pas sur le territoire national sauf dans les cas couverts par les accords de réciprocité ou les conventions internationales ;",
+        "b) lorsqu'il néglige d'utiliser les services médicaux mis à sa disposition ou n'observe pas les règles prescrites pour la vérification de l'existence de son incapacité de travail ;",
+        "c) lorsque l'assuré bénéficiaire d'une pension de vieillesse, d'une pension anticipée ou proportionnelle reprend une activité salariée."
+      ],
+      "mots_cles": ["exclusions", "suspensions", "crime", "résidence", "reprise activité"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 167",
+      "titre": "Faute d'un tiers - Subrogation",
+      "texte": [
+        "Lorsque l'événement ouvrant droit à prestation est dû à la faute d'un tiers, la Caisse doit verser les prestations à l'assuré ou à ses ayants droit ; ceux-ci conservent contre les tiers responsables le droit de réclamer, conformément aux règles de droit commun, la réparation du préjudice causé. Cependant la Caisse leur est subrogée de plein droit dans leur action contre les tiers responsables pour le montant des prestations octroyées ou des capitaux constitutifs correspondants."
+      ],
+      "mots_cles": ["tiers responsable", "subrogation", "droit commun"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    },
+    {
+      "article": "Art. 168",
+      "titre": "Incessibilité des prestations",
+      "texte": [
+        "Les prestations prévues par la présente loi sont incessibles et insaisissables dans les mêmes conditions et limites que pour les salaires, conformément aux dispositions du Code du travail.",
+        "Toutefois, la Caisse peut prélever sur les prestations venant à échéance et dans la limite maximale du quart de ces prestations, les sommes indûment payées jusqu'à récupération totale de celles-ci."
+      ],
+      "mots_cles": ["incessibilité", "insaisissabilité", "récupération indus"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Dispositions communes"
+    }
+  ]
+}

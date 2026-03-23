@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.2",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Article 105 : Décret n°1978-360 du 12 mai 1978 fixant la durée du travail, la réglementation des heures supplémentaires et les modalités de leur rémunération",
+    "section": null,
+    "section_titre": "Textes d'application du Code du travail",
+    "page_source": 83
+  },
+  "articles": [
+    {
+      "article": "Art. 1",
+      "titre": "Principes généraux de la durée du travail",
+      "texte": [
+        "[NB - Décret n°1978-360/MJT-SGFPT-DTPS-ST du 12 mai 1978 fixant pour les établissements ne relevant pas du régime agricole, la durée du travail, la réglementation des heures supplémentaires et les modalités de leur rémunération]",
+        "Les dispositions du présent Titre ont pour objet de déterminer les principes généraux d'application de la durée du travail.",
+        "Elles seront précisées pour certaines branches d'activité, par des décrets pris après avis de la Commission Nationale Consultative du Travail."
+      ],
+      "mots_cles": ["durée du travail", "principes généraux", "décrets"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "40 heures par semaine",
+      "texte": [
+        "Dans les Établissements publics ou privés de toute nature autre que ceux relevant du régime agricole, la durée du travail ne peut excéder quarante heures par semaine."
+      ],
+      "mots_cles": ["40 heures", "semaine", "établissements", "non agricoles"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Modes de répartition",
+      "texte": [
+        "Dans cette limite, les chefs d'Établissements devront choisir un des modes de répartition ci-après :",
+        "- 1° répartition égale de la durée du travail sur six jours ouvrables ;",
+        "- 2° répartition égale de la durée du travail sur cinq jours ouvrables avec chômage le Lundi ou le Samedi ;",
+        "- 3° répartition inégale de la durée du travail sur les jours ouvrables avec maximum de huit heures par jour, afin de permettre le repos (une demi-journée par semaine en plus du repos hebdomadaire)."
+      ],
+      "mots_cles": ["répartition", "6 jours", "5 jours", "8 heures", "repos hebdomadaire"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Régime dérogatoire de répartition",
+      "texte": [
+        "À la demande d'organisations patronales ou ouvrières d'une profession, d'une localité ou d'une région, l'Inspecteur du Travail et des Lois Sociales pourra, après consultation des organisations intéressées et se référé là où il en existe, aux accords intervenus entre elles, autoriser à titre provisoire, par dérogation aux régimes susvisés, un régime équivalent répartissant la durée du travail sur une autre période de temps sous conditions :",
+        "- que l'amplitude de la durée journalière du travail n'excède pas douze heures ;",
+        "- que la durée du travail n'excède pas neuf heures par journée de travail considérée isolément ;",
+        "- que la moyenne hebdomadaire de travail pour la période considérée n'excède pas quarante heures."
+      ],
+      "mots_cles": ["dérogation", "régime équivalent", "12 heures amplitude", "9 heures", "40 heures moyenne"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Convention collective et répartition obligatoire",
+      "texte": [
+        "Si des conventions collectives conclues entre les organisations patronales et de travailleurs d'une branche d'activité dans une localité ou une région, ont décidé l'adoption générale d'un des modes de répartition du travail visés ci-dessus, cette répartition pourra être rendue obligatoire pour tous les établissements de la branche d'activité située dans la localité ou la région, par Arrêté du Ministre du travail."
+      ],
+      "mots_cles": ["convention collective", "répartition obligatoire", "arrêté"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Régime uniforme par arrêté",
+      "texte": [
+        "Si des organisations patronales ou de travailleurs d'une ou plusieurs branches d'activité dans une localité ou une région demandent qu'il fixe un régime uniforme de répartition du travail pour tous les établissements de la ou des branches d'activité, dans la localité ou la région, il sera statué sur la demande par arrêté après consultation de toutes les organisations intéressées et en se référant aux accords intervenus entre elles s'il en existe."
+      ],
+      "mots_cles": ["régime uniforme", "arrêté", "consultation"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Interdiction du travail par relais",
+      "texte": [
+        "L'organisation du travail par relais ou par roulement est interdite. Toutefois elle pourra être autorisée par Arrêté du Ministre du travail après consultation des organisations patronales et de travailleurs dans les Établissements où cette organisation sera justifiée par des raisons techniques."
+      ],
+      "mots_cles": ["relais", "roulement", "interdiction", "autorisation", "arrêté"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Travail par équipes successives",
+      "texte": [
+        "En cas d'organisation du travail par équipes successives, le travail de chaque équipe sera continu sauf interruption pour le repos."
+      ],
+      "mots_cles": ["équipes successives", "continu", "repos"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Gardiennage et surveillance — 60 heures",
+      "texte": [
+        "La durée du travail effectif peut être prolongée dans les conditions fixées à l'article 8 du Décret n°78/359 du 12 Mai 1578.",
+        "Pour le personnel occupé à des opérations de gardiennage ou de surveillance, la durée hebdomadaire du travail est fixée à soixante heures équivalent à quarante heures effectif, cette durée étant portée à soixante-douze heures pour les gardiens de nuit dits « sentinelles »."
+      ],
+      "mots_cles": ["gardiennage", "surveillance", "60 heures", "72 heures", "sentinelles"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 1 : Répartition de la durée du travail"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Horaire affiché — mesures de contrôle",
+      "texte": [
+        "Dans chaque établissement ou partie d'établissement les travailleurs ne pourront être occupés que conformément aux indications d'un horaire précis pour chaque journée, la répartition des heures de travail.",
+        "Cet horaire établi suivant l'heure légale fixera pour l'ensemble du personnel les heures auxquelles commencera et finira le repos qui sera donné collectivement. Aucun travailleur ne pourra être occupé avant l'heure du commencement ni après la fin de la journée de travail ainsi fixée, ni pendant les heures de repos.",
+        "Des heures différentes de travail et de repos pourront être fixées pour certaines catégories de travailleurs notamment celles auxquelles s'appliquent les dérogations de relais ou de roulement prévues au paragraphe 4 de l'article 2.",
+        "Toute modification de la répartition des heures de travail devra donner lieu à une rectification de l'horaire ainsi établi et être portée à la connaissance des travailleurs intéressés avant la fin du travail de la journée précédant sa mise en service."
+      ],
+      "mots_cles": ["horaire", "affichage", "contrôle", "heures de travail", "repos"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Durée du travail - Chapitre 3 : Mesures de contrôle"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Heures supplémentaires — 20 heures par semaine",
+      "texte": [
+        "Des heures supplémentaires en vue de maintenir ou d'accroître la production ou de faire face à des travaux urgents exceptionnels ou justifiées par un surcroît extraordinaire de travail, pourront être effectuées dans toutes les branches professionnelles du territoire de la République.",
+        "Elles seront autorisées, dans la limite d'un maximum de vingt heures par semaine, selon les modalités ci-après :"
+      ],
+      "mots_cles": ["heures supplémentaires", "20 heures", "production", "travaux urgents"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Réglementation des heures supplémentaires"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Demande d'autorisation des heures supplémentaires",
+      "texte": [
+        "Les Chefs d'Établissements qui désireront effectuer des heures supplémentaires devront adresser une demande motivée à l'Inspecteur du Travail et des Lois Sociales du ressort.",
+        "La délivrance de cette autorisation par l'Inspecteur du Travail et des Lois Sociales est subordonnée à la consultation des organisations syndicales de travailleurs et d'employeurs les plus représentatives du ressort dans la branche professionnelle intéressée.",
+        "Les organisations consultées devront donner leur avis dans les huit jours de la transmission de la demande ; si elles n'ont pas répondu dans ce délai, elles seront censées être favorables.",
+        "En cas d'avis défavorable, qui devra toujours être motivé, le dossier de la demande sera transmis sans délai au Ministre du travail qui statuera. Dans tous les cas, à l'autorisation ne sera accordée que pour une période maximum de six mois. Son renouvellement qui devra être demandé deux mois avant la date d'expiration de l'autorisation, sera soumis aux mêmes dispositions."
+      ],
+      "mots_cles": ["autorisation", "demande", "Inspecteur du Travail", "8 jours", "6 mois", "renouvellement"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Réglementation des heures supplémentaires"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Interdiction de débaucher après heures supplémentaires",
+      "texte": [
+        "Le Chef d'établissement ne pourra débaucher pour manque de travail, dans le délai d'un mois succédant à une période d'heures supplémentaires, le personnel qui aura exécuté ces heures supplémentaires pendant la période considérée. Cette disposition ne s'appliquera pas aux travailleurs embauchés pour une durée ou un travail déterminé.",
+        "Le Ministre du travail peut retirer le bénéfice de l'utilisation des heures supplémentaires au Chef d'Entreprise qui n'aurait pas observé les dispositions prévues à l'alinéa précédent ; la durée du retrait ne pourra excéder un an.",
+        "Le Ministre du travail pourra autoriser par arrêté certains établissements à déroger aux règles fixées par le présent article."
+      ],
+      "mots_cles": ["interdiction débaucher", "1 mois", "retrait", "1 an"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Réglementation des heures supplémentaires"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Suspension en cas de chômage extraordinaire",
+      "texte": [
+        "En cas de chômage extraordinaire et prolongé dans une profession, le Ministre du travail, à la demande d'une des organisations patronales ou de travailleurs intéressées et après consultation de toutes les organisations les plus représentatives intéressées, pourra suspendre par arrêté, en totalité ou en partie, l'utilisation des heures supplémentaires prévues au présent titre pour une ou plusieurs catégories professionnelles ou tout le personnel d'une profession déterminée, pour l'ensemble du territoire ou pour une ou plusieurs régions déterminées, si l'embauche de personnel en chômage peut permettre de maintenir la production, compte tenu en particulier du matériel existant."
+      ],
+      "mots_cles": ["chômage extraordinaire", "suspension", "heures supplémentaires", "arrêté"],
+      "statut": "en vigueur",
+      "section": "Titre 3 : Réglementation des heures supplémentaires"
+    }
+  ]
+}

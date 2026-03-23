@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": null,
+    "chapitre_titre": "Des conditions du travail",
+    "section": "Titre 4",
+    "section_titre": "Des conditions du travail",
+    "page_source": 37
+  },
+  "articles": [
+    {
+      "article": "Art. 105",
+      "titre": "Durée légale du travail — 40 heures",
+      "texte": [
+        "Dans tous les établissements publics ou privés non agricoles, y compris ceux d'enseignement et de bienfaisance, la durée légale du travail des employés ou ouvriers de l'un ou l'autre sexe, de tout âge, travaillant à temps, à la tâche ou aux pièces ne peut excéder quarante heures par semaine.",
+        "Dans toutes les entreprises agricoles, les heures de travail sont basées sur 2400 heures pour l'année. Dans cette limite la durée hebdomadaire du travail selon les saisons et les régions sera fixée par décret pris après avis de la commission nationale consultative du travail.",
+        "Des dérogations à la durée légale du travail pourront toutefois être admises dans les conditions qui seront fixées par décret pris après avis de la commission nationale consultative du travail.",
+        "Des décrets pris dans les mêmes conditions détermineront par branche d'activité et par catégorie professionnelle, s'il y a lieu, les modalités d'application de la durée du travail et des dérogations, ainsi que la durée maximum des heures supplémentaires qui peuvent être effectuées.",
+        "Les heures effectuées au-delà de la durée légale de travail donneront lieu à une majoration de salaire.",
+        "[NB - Voir :",
+        "- le décret n°1978-359/MJT-SGFPT-DTPS-ST du 12 mai 1978 décidant des dérogations prévues à l'article 105 du Code du travail, page 79",
+        "- le décret n°1978-360/MJT-SGFPT-DTPS-ST du 12 mai 1978 fixant pour les établissements ne relevant pas du régime agricole, la durée du travail, la réglementation des heures supplémentaires et les modalités de leur rémunération, page 83",
+        "- le décret n°1978-361/MJT.SGFPT. DTPS du 12 mai 1978 fixant pour les entreprises agricoles et assimilées la réglementation des heures supplémentaires et les modalités de leur rémunération, page 86",
+        "- le décret n°1984-1093 du 29 décembre 1984 fixant les horaires de travail dans les services publics, dans les entreprises publiques et parapubliques et entreprises privées, page 90]"
+      ],
+      "mots_cles": ["durée légale", "40 heures", "semaine", "2400 heures", "agricole", "dérogations", "heures supplémentaires", "majoration"],
+      "statut": "en vigueur",
+      "section": "Chapitre 1 : De la durée du travail"
+    },
+    {
+      "article": "Art. 106",
+      "titre": "Travail de nuit — définition",
+      "texte": [
+        "Le travail effectué entre 20 heures et 5 heures est considéré comme travail de nuit."
+      ],
+      "mots_cles": ["travail de nuit", "20 heures", "5 heures"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 107",
+      "titre": "Durée maximale du travail de nuit",
+      "texte": [
+        "La durée du travail de nuit ne peut excéder huit heures consécutives."
+      ],
+      "mots_cles": ["durée", "nuit", "8 heures", "consécutives"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 108",
+      "titre": "Interdiction du travail de nuit des femmes",
+      "texte": [
+        "Dans les usines, manufactures, mines, minières, chantiers, ateliers et leurs dépendances, les femmes ne peuvent être employées à un travail de nuit.",
+        "Lorsque, en raison de conditions économiques exceptionnelles et particulièrement valables, l'intérêt général l'exigera, l'interdiction du travail de nuit des femmes pourra être suspendue sur proposition du Ministre du travail et de la prévoyance sociale, par décret pris après consultation des organisations les plus représentatives d'employeurs et de travailleurs intéressés."
+      ],
+      "mots_cles": ["interdiction", "travail de nuit", "femmes", "usines", "manufactures", "suspension"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 109",
+      "titre": "Repos des femmes — 11 heures",
+      "texte": [
+        "Le repos des femmes doit avoir une durée de onze heures consécutives au minimum. Il doit comprendre la période nocturne définie à l'article 106."
+      ],
+      "mots_cles": ["repos", "femmes", "11 heures", "consécutives", "période nocturne"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 110",
+      "titre": "Dérogation pour matières altérables",
+      "texte": [
+        "Dans les industries dans lesquelles le travail s'applique à des matières qui seraient susceptibles d'altération très rapide, et sur simple préavis, aux dispositions du premier alinéa de l'article 108, en ce qui concerne les femmes majeures.",
+        "Les chefs d'établissements devront toutefois prévenir l'inspecteur du travail et des lois sociales de leur ressort avant de faire usage de cette dérogation."
+      ],
+      "mots_cles": ["dérogation", "matières altérables", "femmes majeures", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 111",
+      "titre": "Dérogations pour femmes dans l'hygiène et le bien-être",
+      "texte": [
+        "Des dérogations permanentes aux dispositions prévues aux articles 107, 108 et 109 pourront être admises par décret pris après avis de la commission nationale représentative du travail, pour les femmes occupées dans les sites de l'hygiène et du bien-être et qui n'effectueront pas normalement un travail manuel."
+      ],
+      "mots_cles": ["dérogations permanentes", "hygiène", "bien-être", "travail manuel"],
+      "statut": "en vigueur",
+      "section": "Chapitre 2 : Du travail de nuit"
+    },
+    {
+      "article": "Art. 112",
+      "titre": "Travaux interdits aux femmes enceintes",
+      "texte": [
+        "Des décrets pris après avis de la commission nationale consultative du travail, fixent la nature des travaux interdits aux femmes et aux femmes enceintes."
+      ],
+      "mots_cles": ["travaux interdits", "femmes", "femmes enceintes", "décrets"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 113",
+      "titre": "Congé de maternité — 15 semaines",
+      "texte": [
+        "Toute femme enceinte dont l'état a été médicalement constaté peut quitter le travail sans préavis sans avoir de ce fait à payer une indemnité de rupture de contrat.",
+        "À l'occasion de son accouchement, et sans que cette interruption de service puisse être considérée comme cause de rupture du contrat, toute femme a le droit de suspendre son travail pendant quinze semaines consécutives, dont neuf postérieures à la délivrance ; cette suspension peut être prolongée de trois semaines en cas de maladie dûment constatée et résultant de la grossesse ou des couches. Pendant cette période, l'employeur ne peut lui donner congé ; elle a droit d'une part, à la charge de l'employeur à la moitié de son salaire et d'autre part, à la charge de la caisse nationale de prévoyance sociale, aux soins gratuits et à l'autre moitié du salaire qu'elle percevait au moment de la suspension du travail.",
+        "Elle conserve le droit aux prestations en nature.",
+        "L'inspecteur du Travail peut décider sur la base de certificat médical, d'interdire de travailler à toute femme enceinte, avant une période d'interruption du travail, pour une ou plusieurs périodes dont la durée sera déterminée par l'Inspecteur du Travail, dans les cas suivants :",
+        "- a) s'il existe des complications graves de la grossesse ou un état morbide préexistant qui peut être aggravé par la grossesse ;",
+        "- b) quand les conditions de travail ou d'environnement sont considérées comme préjudiciables à la santé de la mère et de l'enfant.",
+        "Pendant cette période la femme garde le bénéfice de tous les droits tels qu'ils sont prévus au paragraphe 2 du présent article.",
+        "Toute convention contraire est nulle de plein droit."
+      ],
+      "mots_cles": ["maternité", "15 semaines", "congé", "accouchement", "salaire", "prévoyance sociale", "soins gratuits", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 114",
+      "titre": "Interdiction d'emploi pendant le congé de maternité",
+      "texte": [
+        "Il est interdit d'employer une femme pendant les 15 semaines de congé de maternité prévu à l'article précédent."
+      ],
+      "mots_cles": ["interdiction", "emploi", "congé de maternité", "15 semaines"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 115",
+      "titre": "Repos pour allaitement — 15 mois",
+      "texte": [
+        "Pendant une période de 15 mois à compter de la naissance de l'enfant, la mère a droit à des repos pour allaitement.",
+        "La durée de ces repos ne peut dépasser une heure par journée de travail, cette heure pouvant être fractionnée en deux demi-heures à la demande de la mère.",
+        "Celle-ci peut, pendant cette période, quitter son travail sans préavis, et sans avoir de ce fait à payer une indemnité de rupture."
+      ],
+      "mots_cles": ["allaitement", "15 mois", "1 heure", "repos", "sans préavis"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 116",
+      "titre": "Âge minimum de travail des enfants — 16 ans",
+      "texte": [
+        "Les enfants ne peuvent être employés dans aucune entreprise même comme apprentis, avant l'âge de 16 ans sauf dérogation accordée par le Ministre de l'Éducation Nationale après avis de l'Inspecteur du Travail du lieu de l'emploi ou de son suppléant légal. Un décret pris après avis de la Commission Nationale Consultative du Travail fixera la nature des travaux et les catégories d'entreprises interdites aux jeunes et l'âge limite auquel s'applique l'interdiction."
+      ],
+      "mots_cles": ["enfants", "16 ans", "âge minimum", "apprentis", "dérogation", "travaux interdits"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 117",
+      "titre": "Examen médical des femmes et enfants",
+      "texte": [
+        "L'Inspecteur du Travail et des Lois Sociales peut requérir l'examen des femmes et des enfants par un médecin agréé, en vue de vérifier si le travail dont ils sont chargés n'excède pas leurs forces. Cette réquisition est de droit à la demande des intéressés.",
+        "La femme ou l'enfant ne peut être maintenu dans un emploi ainsi reconnu au-dessus de ses forces et doit être affecté à un emploi convenable.",
+        "Si cela n'est pas possible, le contrat doit être résolu avec paiement de l'indemnité de préavis et, éventuellement, de l'indemnité de licenciement."
+      ],
+      "mots_cles": ["examen médical", "femmes", "enfants", "médecin agréé", "forces", "résolution contrat"],
+      "statut": "en vigueur",
+      "section": "Chapitre 3 : Du travail des femmes et des enfants"
+    },
+    {
+      "article": "Art. 118",
+      "titre": "Repos hebdomadaire — 24 heures",
+      "texte": [
+        "Le repos hebdomadaire est obligatoire. Il est au minimum de 24 heures consécutives par semaine. Il a lieu en principe le dimanche.",
+        "Un décret pris après avis de la Commission Nationale Consultative du Travail, détermine les modalités d'application du paragraphe précédent, notamment les professions pour lesquelles et les conditions dans lesquelles le repos pourra exceptionnellement et pour des motifs nettement établis, soit être donné par roulement ou collectivement d'autres jours que le dimanche, soit être suspendu par compensation des fêtes rituelles ou locales, soit réparti sur une période plus longue que la semaine."
+      ],
+      "mots_cles": ["repos hebdomadaire", "24 heures", "dimanche", "dérogations", "roulement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 4 : Du repos hebdomadaire"
+    },
+    {
+      "article": "Art. 119",
+      "titre": "Congé payé — 26 jours ouvrables par an",
+      "texte": [
+        "Sauf dispositions plus favorables des conventions collectives ou des contrats individuels de travail, le travailleur acquiert droit au congé payé à la charge de l'employeur à raison d'un minimum de 26 jours ouvrables par année de service effectif.",
+        "Sont assimilées à un mois de service effectif les périodes équivalentes à 26 jours de travail.",
+        "La durée du congé est augmentée en considération de l'ancienneté des travailleurs dans l'entreprise suivant les règlements en vigueur ou dispositions des conventions collectives.",
+        "Pour le calcul de la durée du congé acquis ne sont pas déduites les absences pour accidents du travail ou maladies professionnelles, les périodes de repos des femmes en couches prévues à l'article 113, ni dans une limite de 6 mois, les absences pour maladies dûment constatées par un médecin agréé.",
+        "Seront également décomptés, sur les bases indiquées ci-dessus, les services effectués sans congé correspondant pour le compte du même employeur, quel que soit le lieu de l'emploi.",
+        "Dans une limite de 10 jours, ne peuvent être déduites de la durée du congé acquis les permissions exceptionnelles qui auraient été accordées au travailleur à l'occasion d'événements familiaux touchant directement son propre foyer. Ces permissions exceptionnelles sont payées. Par contre les congés spéciaux accordés en sus des jours fériés pourront être déduits s'ils n'ont fait l'objet d'aucune compensation ou récupération des journées ainsi accordées.",
+        "Pour le travailleur prenant son congé hors du lieu de l'emploi, au lieu de son recrutement, la durée du congé est augmentée des délais de route correspondant à la durée de voyage aller-retour effectué par la voie et le moyen de transports choisis par l'employeur.",
+        "Un congé pour affaires personnelles ou une mise en disponibilité peut être accordé à tout travailleur pendant 1 an renouvelable une fois après une période d'ancienneté de 2 ans sur autorisation de l'employeur.",
+        "Au terme de cette disponibilité ou congé, le travailleur réintègre automatiquement son emploi. Toutefois les conventions collectives ou accords d'établissements, détermineront les conditions d'application."
+      ],
+      "mots_cles": ["congé payé", "26 jours", "ancienneté", "accidents du travail", "maternité", "maladie", "disponibilité", "1 an"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
+    },
+    {
+      "article": "Art. 120",
+      "titre": "Jouissance du congé — 12 mois de service",
+      "texte": [
+        "Le droit de jouissance au congé est acquis après une durée de service effectif égale à 12 mois. Ce droit se prescrit par 3 ans.",
+        "Les conventions collectives ou les contrats individuels de travail pourront prévoir une durée plus longue de service effectif ouvrant droit de jouissance au congé, sans que cette durée puisse être supérieure à 24 mois.",
+        "En cas de rupture ou d'expiration du contrat avant que le travailleur ait acquis droit au congé, une indemnité calculée sur les bases des droits acquis d'après l'article précédent doit être accordée en place de congé.",
+        "En dehors de ce cas, est nulle et de nul effet toute convention prévoyant l'octroi d'une indemnité compensatrice aux lieux et place du congé."
+      ],
+      "mots_cles": ["jouissance", "12 mois", "prescription", "3 ans", "24 mois", "indemnité compensatrice"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
+    },
+    {
+      "article": "Art. 121",
+      "titre": "Liberté de choix du lieu de congé",
+      "texte": [
+        "Le travailleur est libre de prendre son congé dans le pays de son choix, sous réserve des dispositions du présent chapitre."
+      ],
+      "mots_cles": ["liberté", "lieu de congé", "choix"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
+    },
+    {
+      "article": "Art. 122",
+      "titre": "Allocation de congé",
+      "texte": [
+        "L'employeur doit verser au travailleur, pendant toute la durée du congé, une allocation qui sera au moins égale aux rémunérations et aux différents éléments de rémunération définis à l'article 86 dont le travailleur bénéficiait au cours des 12 mois ayant précédé la date de départ en congé, à l'exclusion, s'il y a lieu, de l'indemnité de dépaysement.",
+        "Le montant de l'allocation de congé devra être versé en totalité au travailleur au jour de son départ en congé."
+      ],
+      "mots_cles": ["allocation de congé", "rémunération", "12 mois", "versement", "départ"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
+    },
+    {
+      "article": "Art. 123",
+      "titre": "Frais de voyage à la charge de l'employeur",
+      "texte": [
+        "Lorsque l'exécution du contrat de travail entraîne ou a entraîné le déplacement du travailleur du lieu de son recrutement, les frais de voyage du travailleur de son (ses) épouse(s) légitime(s) et de ses enfants mineurs vivant habituellement avec lui, ainsi que les frais de transports de leurs bagages sont à la charge de l'employeur.",
+        "- 1° du lieu de recrutement au lieu de l'emploi ;",
+        "- 2° du lieu de l'emploi au lieu du recrutement :",
+        "  - en cas d'expiration du contrat à durée déterminée ;",
+        "  - en cas de résiliation du contrat lorsque le travailleur a acquis droit au congé dans les conditions prévues à l'article 120 ;",
+        "  - en cas de rupture du contrat du fait de l'employeur ou à la suite d'une faute lourde de celui-ci ;",
+        "  - en cas de rupture du contrat due à un cas de force majeure ;",
+        "- 3° du lieu de l'emploi au lieu de recrutement et vice-versa :",
+        "  - en cas de congé normal. Le retour sur le lieu d'emploi n'est dû que si le contrat n'est pas venu à expiration avant la date de fin de congé et si le travailleur à cette date est en état de reprendre son service."
+      ],
+      "mots_cles": ["frais de voyage", "employeur", "recrutement", "emploi", "épouse", "enfants", "bagages"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 124",
+      "titre": "Frais de transport en cas de résiliation",
+      "texte": [
+        "Sous réserve des dispositions des articles 33 et 35, lorsqu'un contrat est résilié pour des causes autres que celles visées à l'article précédent ou par la faute lourde du travailleur, le montant des frais de transport, aller-retour, incombe à l'entreprise."
+      ],
+      "mots_cles": ["frais de transport", "résiliation", "faute lourde", "entreprise"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 125",
+      "titre": "Classe de transport et bagages",
+      "texte": [
+        "Le moyen de transport, la classe de passager et le poids des bagages sont déterminés par la situation occupée par le travailleur dans l'entreprise, suivant la stipulation de la convention collective ou du contrat individuel de travail ou, à défaut, suivant les règles adoptées par l'employeur à l'égard de son personnel ou suivant les usages locaux.",
+        "Il sera tenu compte, dans tous les cas, des charges de la famille pour le calcul du poids des bagages. Toutefois, l'employeur est tenu de remettre au travailleur et à sa famille les titres de transport."
+      ],
+      "mots_cles": ["classe", "transport", "bagages", "famille", "titres de transport"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 126",
+      "titre": "Choix de la voie de transport",
+      "texte": [
+        "Sauf stipulation contraire, les voyages et transports sont effectués par une voie et des moyens des transports normaux au choix de l'employeur. Le travailleur qui use d'une voie ou de moyens de transports plus coûteux que ceux régulièrement choisis ou agréés par l'employeur n'est défrayé par l'entreprise qu'à concurrence des frais occasionnés par la voie ou les moyens régulièrement choisis.",
+        "S'il use d'une voie ou de moyens de transport plus économiques il ne peut prétendre qu'au remboursement des frais engagés.",
+        "Les délais de transport ne sont pas compris dans la durée maxima du contrat telle qu'elle est prévue à l'article 32."
+      ],
+      "mots_cles": ["voie de transport", "choix employeur", "remboursement", "délais"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 127",
+      "titre": "Transport moins rapide",
+      "texte": [
+        "À défaut de convention contraire, le travailleur qui use d'une voie ou de moyens de transport moins rapides que ceux régulièrement choisis par l'employeur ne peut prétendre de ce fait à des délais de route plus longs que ceux prévus par la voie et les moyens normaux.",
+        "S'il use d'une voie ou de moyens plus rapides, il continue à bénéficier, en plus de la durée du congé proprement dit, des délais qui auraient été nécessaires avec l'usage de la voie et des moyens choisis par l'employeur."
+      ],
+      "mots_cles": ["transport", "délais de route", "voie rapide", "voie lente"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 128",
+      "titre": "Titres de transport après cessation de service",
+      "texte": [
+        "Le travailleur qui a cessé son service peut exiger de son ancien employeur, la mise à sa disposition des titres de transport auxquels il a droit, dans un délai de 2 ans à compter de la cessation du travail chez ledit employeur.",
+        "Ce délai sera majoré, le cas échéant, du temps écoulé entre la citation en justice motivée par la réclamation de ce droit et le jugement définitif."
+      ],
+      "mots_cles": ["titres de transport", "2 ans", "cessation", "réclamation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 129",
+      "titre": "Indemnité d'attente",
+      "texte": [
+        "Le travailleur qui a cessé son service et qui est dans l'attente du moyen de transport désigné par son employeur pour regagner son lieu de recrutement conserve le bénéfice des avantages en nature et reçoit de l'employeur une indemnité égale à la rémunération qu'il aurait perçue s'il avait continué à travailler.",
+        "L'indemnité prévue à l'alinéa précédent est due également lorsque le travailleur a été empêché d'utiliser le moyen de transport désigné à la date prévue, à charge pour lui de prévenir son employeur par les voies les plus rapides et de rendre compte et prouver que l'attente ne lui est pas imputable."
+      ],
+      "mots_cles": ["indemnité d'attente", "transport", "avantages en nature", "rémunération"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    },
+    {
+      "article": "Art. 130",
+      "titre": "Conditions d'admission et de séjour des étrangers",
+      "texte": [
+        "Les dispositions de la présente section ne peuvent être un obstacle à l'application de la réglementation sur les conditions d'admission et de séjour des étrangers."
+      ],
+      "mots_cles": ["étrangers", "admission", "séjour", "réglementation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
+    }
+  ]
+}

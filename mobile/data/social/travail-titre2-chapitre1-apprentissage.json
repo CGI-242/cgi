@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 1,
+    "chapitre_titre": "Du contrat d'apprentissage",
+    "section": "Titre 2",
+    "section_titre": "Du contrat de travail",
+    "page_source": 11
+  },
+  "articles": [
+    {
+      "article": "Art. 5",
+      "titre": "Définition du contrat d'apprentissage",
+      "texte": [
+        "Le contrat d'apprentissage est celui par lequel un chef d'établissement industriel, commercial ou agricole, un artisan ou un façonnier s'oblige à donner ou à faire donner une formation professionnelle méthodique et complète à une autre personne et par lequel celle-ci s'oblige en retour, à se conformer aux instructions qu'elle recevra et à exécuter les ouvrages qui seront confiés en vue de son apprentissage."
+      ],
+      "mots_cles": ["contrat d'apprentissage", "formation professionnelle", "artisan", "établissement"],
+      "statut": "en vigueur",
+      "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Contenu du contrat d'apprentissage",
+      "texte": [
+        "Le contrat d'apprentissage est établi en tenant compte des usages et coutumes de la profession. Il contient en particulier :",
+        "- les noms, prénoms, âge, profession, domicile du maître ou la raison sociale ;",
+        "- les noms, prénoms, âge, domicile de l'apprenti ;",
+        "- si l'apprenti est mineur, les noms, prénoms, profession et domicile de ses père et mère, de son tuteur ou de la personne autorisée par les parents ou à leur défaut par le juge d'instance ;",
+        "- la date et la durée du contrat, celle-ci fixée conformément aux usages de la profession ne pourra excéder 4 ans ;",
+        "- les conditions de rémunération, de nourriture et de logement de l'apprenti ;",
+        "- l'indication de la profession qui sera enseignée à l'apprenti, éventuellement l'indication des cours professionnels que le chef d'établissement s'engage à faire suivre à l'apprenti soit dans l'établissement soit au dehors."
+      ],
+      "mots_cles": ["contenu contrat", "apprenti", "durée", "rémunération", "formation"],
+      "statut": "en vigueur",
+      "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Forme écrite et visa du contrat d'apprentissage",
+      "texte": [
+        "Le contrat d'apprentissage doit être constaté par écrit à peine de nullité ; il est signé par le maître et les parents ou le tuteur de l'apprenti si ce dernier est mineur, par l'apprenti lui-même s'il est majeur.",
+        "Le contrat d'apprentissage est exempt de tous droits de timbre et d'enregistrement. Il est soumis au visa de l'inspecteur du travail ou de son représentant qui doit notamment :",
+        "- exiger la production par le maître d'un certificat médical datant de moins de trois mois déclarant le futur apprenti apte aux travaux de la profession choisie ;",
+        "- constater l'identité de l'apprenti et la conformité du contrat aux dispositions applicables en la matière ;",
+        "- vérifier que l'apprenti est libre de tout engagement antérieur ;",
+        "- avoir donné aux parties lecture et éventuellement traduction du contrat.",
+        "La demande de visa incombe au maître.",
+        "Si le visa est refusé, le contrat d'apprentissage est nul de plein droit.",
+        "Si l'omission du visa est due au fait du maître, l'apprenti aura droit de faire constater la nullité du contrat et pourra se réclamer de toutes les mesures législatives ou réglementaires applicables aux salariés titulaires d'un contrat de travail de droit commun."
+      ],
+      "mots_cles": ["écrit", "nullité", "visa", "inspecteur du travail", "certificat médical", "timbre"],
+      "statut": "en vigueur",
+      "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Âge minimum du maître d'apprentissage",
+      "texte": [
+        "Nul ne peut recevoir des apprentis mineurs s'il n'est âgé de 21 ans au moins."
+      ],
+      "mots_cles": ["âge", "maître", "apprenti mineur", "21 ans"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Interdiction d'hébergement des apprenties mineures",
+      "texte": [
+        "Aucun maître s'il ne vit en famille ou en communauté, ne peut loger en son domicile personnel ou dans son atelier, comme apprenties, des jeunes filles mineures."
+      ],
+      "mots_cles": ["apprentie", "mineure", "hébergement", "domicile"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Interdiction pour les condamnés",
+      "texte": [
+        "Ne peuvent recevoir des apprentis les individus qui ont été condamnés soit pour crime, soit pour délit contre les mœurs, soit pour quelque délit que ce soit, à une peine d'au moins 3 mois de prison sans sursis."
+      ],
+      "mots_cles": ["condamnation", "interdiction", "crime", "délit", "prison"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Âge minimum de l'apprenti",
+      "texte": [
+        "L'apprenti doit être âgé de 16 ans au minimum. Il bénéficie des dispositions relatives au travail des enfants et de la réglementation concernant le repos hebdomadaire, la protection des travailleurs, la durée du travail, l'hygiène et la sécurité, la réparation des accidents du travail."
+      ],
+      "mots_cles": ["âge minimum", "16 ans", "apprenti", "protection", "repos hebdomadaire", "accidents du travail"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Rémunération de l'apprenti",
+      "texte": [
+        "Dans le cas où l'apprenti est employé aux seuls travaux qu'exige sa formation et seulement pendant le temps nécessaire à cette formation, il ne peut prétendre à une rémunération.",
+        "Dans le cas où pour certaines techniques ou professions, l'apprentissage représente pour le maître une perte d'argent, compte tenu notamment de la valeur des matières premières employées ou de l'usure particulière de l'outillage résultant de l'initiation aux méthodes de travail, il peut être prévu au contrat que l'apprenti versera une redevance au maître. Cette redevance doit être précisée dans le contrat ; elle ne pourra excéder la moitié du SMIG.",
+        "Dès l'instant où l'apprenti commence à faire des travaux dont le maître tire profit, il y a lieu à rémunération de l'apprenti.",
+        "Cette rémunération qui tient compte, d'une part des avantages que l'apprenti tire de l'enseignement du métier et d'autre part des soins et sujétions que cet enseignement représente pour le maître, peut être inférieure au SMIG. Elle est progressive avec les années d'apprentissage pour devenir au moins égale au SMIG au cours de la dernière année d'apprentissage.",
+        "Les inspecteurs du travail disposent du pouvoir de recommandation le plus large en matière de fixation de la rémunération de l'apprenti.",
+        "Il peut être prévu que l'apprenti s'engage après l'achèvement de l'apprentissage à exercer pendant une durée déterminée qui ne peut excéder 2 ans une activité professionnelle salariée pour le compte de son ancien maître, faute de quoi l'apprenti sera tenu de verser, à titre de clause pénale, une somme qui sera fixée en considération du préjudice qui pourra en résulter pour le maître."
+      ],
+      "mots_cles": ["rémunération", "apprenti", "SMIG", "redevance", "clause pénale"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Repos annuel de l'apprenti",
+      "texte": [
+        "Toute période égale à onze mois d'apprentissage, ouvre droit, pour l'apprenti, à un mois de repos effectif."
+      ],
+      "mots_cles": ["repos", "congé", "11 mois", "apprenti"],
+      "statut": "en vigueur",
+      "section": "Section 2 : Des conditions du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Obligations du maître envers les parents",
+      "texte": [
+        "Le maître doit prévenir sans retard les parents de l'apprenti ou leurs représentants en cas de maladie, d'absence ou de tout fait de nature à motiver leur intervention.",
+        "Il n'emploiera l'apprenti, dans la mesure de ses forces, qu'aux travaux et services qui se rattachent à l'exercice de la profession."
+      ],
+      "mots_cles": ["maître", "obligations", "parents", "maladie", "absence"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Obligation de traitement de l'apprenti",
+      "texte": [
+        "Le maître doit traiter l'apprenti en bon père de famille, lui assurer les soins médicaux et les meilleures conditions de logement et de nourriture.",
+        "Si l'apprenti ne sait pas lire, écrire et compter, le maître est tenu de lui accorder le temps et la liberté nécessaires pour son instruction. Ce temps sera dévolu à l'apprenti selon un accord réalisé entre les parties, mais ne pourra excéder une durée calculée sur la base de 2 heures par jour de travail."
+      ],
+      "mots_cles": ["traitement", "soins médicaux", "logement", "nourriture", "instruction", "alphabétisation"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Obligation d'enseignement",
+      "texte": [
+        "Le maître doit enseigner à l'apprenti, progressivement et complètement, l'art, le métier ou la profession spéciale qui fait l'objet du contrat.",
+        "Il lui délivrera, à la fin de l'apprentissage, un congé d'acquit ou certificat constatant l'exécution du contrat."
+      ],
+      "mots_cles": ["enseignement", "profession", "certificat", "congé d'acquit"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Devoirs de l'apprenti",
+      "texte": [
+        "L'apprenti doit à son maître, dans le cadre de l'apprentissage, obéissance et respect. Il doit l'aider par son travail dans la mesure de ses aptitudes et de ses forces.",
+        "L'apprenti dont le temps d'apprentissage est terminé passe un examen devant un jury professionnel désigné par le directeur du service central de la main-d'œuvre ou à défaut par l'inspecteur du travail et composé de deux membres employeurs et de deux employés de la profession, sous la présidence d'un professeur de l'enseignement technique ou d'un technicien de la profession.",
+        "Un certificat constatant la qualification professionnelle de l'apprenti lui est remis en cas de succès à l'examen de fin d'apprentissage. Il est signé par les autorités compétentes."
+      ],
+      "mots_cles": ["apprenti", "obéissance", "examen", "jury professionnel", "certificat", "qualification"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Remplacement du temps perdu",
+      "texte": [
+        "L'apprenti est tenu de remplacer à la fin de l'apprentissage le temps qu'il n'a pu employer par suite de maladie ou d'absence ayant duré plus de quinze jours."
+      ],
+      "mots_cles": ["remplacement", "maladie", "absence", "15 jours"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Interdiction d'embauchage des apprentis",
+      "texte": [
+        "L'embauchage, comme ouvrier ou employé, de jeunes gens liés par contrat d'apprentissage, élèves ou stagiaires dans les écoles ou centres de formation professionnelle, est passible d'une indemnité au profit du chef d'établissement abandonné.",
+        "Tout nouveau contrat d'apprentissage conclu sans que les obligations du précédent contrat aient été remplies complètement ou sans qu'il ait été résolu légalement, est nul de plein droit."
+      ],
+      "mots_cles": ["embauchage", "indemnité", "élèves", "stagiaires", "formation professionnelle", "nullité"],
+      "statut": "en vigueur",
+      "section": "Section 3 : Des devoirs du maître et de l'apprenti"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Période d'essai de l'apprentissage",
+      "texte": [
+        "Les deux premiers mois de l'apprentissage sont considérés comme un temps d'essai pendant lequel le contrat peut être annulé par la seule volonté d'une des parties."
+      ],
+      "mots_cles": ["période d'essai", "2 mois", "annulation", "apprentissage"],
+      "statut": "en vigueur",
+      "section": "Section 4 : De la résolution du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Résolution de plein droit",
+      "texte": [
+        "La résolution du contrat d'apprentissage intervient de plein droit dans les cas suivants :",
+        "- mort du maître ou de l'apprenti ;",
+        "- service militaire du maître ou de l'apprenti ;",
+        "- condamnation du maître à l'une des peines prévues à l'article 10 ;",
+        "- divorces du maître, décès de sa femme ou de toute autre femme de la famille qui dirigeait la maison à l'époque de la conclusion du contrat, si les apprenties sont des filles mineures."
+      ],
+      "mots_cles": ["résolution", "plein droit", "décès", "service militaire", "condamnation"],
+      "statut": "en vigueur",
+      "section": "Section 4 : De la résolution du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Résolution à la demande des parties",
+      "texte": [
+        "Le contrat est résolu à la demande de l'une ou de l'autre des parties :",
+        "- pour manquement aux stipulations du contrat ou infraction grave et habituelle aux prescriptions du présent chapitre et des autres lois et règlements relatifs aux conditions de travail des apprentis ;",
+        "- en cas de changement de résidence du maître ;",
+        "- en cas de vente du fonds ou de cessation de l'exploitation du maître.",
+        "La résolution peut également être demandée par le maître pour révélation par l'apprenti de secrets de fabrication, de liste de clientèle ou pour vol.",
+        "Une maladie entraînant l'impossibilité de poursuivre l'apprentissage dans la profession choisie ou la suspension de l'apprentissage pour une durée supérieure à 6 mois est aussi un motif de demande de résiliation."
+      ],
+      "mots_cles": ["résolution", "manquement", "changement résidence", "cession", "maladie", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Section 4 : De la résolution du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Rupture abusive",
+      "texte": [
+        "La rupture abusive du contrat d'apprentissage ouvre droit à des dommages-intérêts.",
+        "Les actions en résolution du contrat d'apprentissage sont portées devant les tribunaux du travail qui règlent éventuellement les indemnités ou restitutions qui pourraient être dues à l'une ou à l'autre des parties."
+      ],
+      "mots_cles": ["rupture abusive", "dommages-intérêts", "tribunal du travail"],
+      "statut": "en vigueur",
+      "section": "Section 4 : De la résolution du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Carnet d'apprentissage",
+      "texte": [
+        "Un carnet d'apprentissage est ouvert par le maître pour chaque apprenti. Il doit mentionner les progressions de l'apprenti au cours de l'enseignement. Il doit être tenu à jour et présenté à l'inspecteur du travail sur sa demande.",
+        "Mention y est portée de la date de signature du contrat et de la date de fin de l'apprentissage. À l'expiration du contrat le carnet est obligatoirement remis à l'apprenti."
+      ],
+      "mots_cles": ["carnet d'apprentissage", "progressions", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Section 5 : Des mesures de contrôle du contrat d'apprentissage"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Contrôle par l'inspecteur du travail",
+      "texte": [
+        "L'inspecteur du travail, ou son représentant, est chargé du contrôle de l'exécution du contrat d'apprentissage ; il peut se faire assister d'un technicien pour le contrôle de l'enseignement donné à l'apprenti.",
+        "Toute cessation du contrat d'apprentissage doit être portée à sa connaissance.",
+        "Des arrêtés du Ministre du travail et de la prévoyance sociale pris après avis de la commission nationale consultative du travail détermineront les catégories d'entreprises dans lesquelles est imposé un pourcentage d'apprentis par rapport au nombre total de travailleurs.",
+        "Des arrêtés du Ministre du travail et de la prévoyance sociale peuvent limiter l'effectif des apprentis dans les entreprises ou suspendre le droit de former des apprentis dans les entreprises dans lesquelles il aura été constaté une formation professionnelle manifestement insuffisante."
+      ],
+      "mots_cles": ["inspecteur du travail", "contrôle", "cessation", "pourcentage apprentis", "formation insuffisante"],
+      "statut": "en vigueur",
+      "section": "Section 5 : Des mesures de contrôle du contrat d'apprentissage"
+    }
+  ]
+}

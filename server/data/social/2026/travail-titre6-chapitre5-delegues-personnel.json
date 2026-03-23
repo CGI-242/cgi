@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "document": "Code social",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "tome": 1,
+    "partie": "1.1",
+    "livre": null,
+    "chapitre": 5,
+    "chapitre_titre": "Des délégués du personnel",
+    "section": "Titre 6",
+    "section_titre": "Des organismes et moyens d'exécution",
+    "page_source": 51
+  },
+  "articles": [
+    {
+      "article": "Art. 173",
+      "titre": "Obligation d'élire des délégués du personnel",
+      "texte": [
+        "(Loi n°06-96) Des délégués du personnel sont obligatoirement élus dans les entreprises ou établissements installés en République du Congo où sont groupés au moins sept travailleurs reconnus comme tels au sens de l'article 2 du Code du travail.",
+        "La représentation des travailleurs au sein de l'entreprise ou de l'établissement est assurée par des délégués du personnel.",
+        "Un arrêté du Ministre du Travail pris après avis de la Commission nationale consultative du travail fixe :",
+        "- 1° le nombre de délégués à élire et leur répartition en collèges ;",
+        "- 2° la durée considérée comme temps de travail dont disposent les délégués du personnel pour l'accomplissement de leurs fonctions, ainsi que les moyens mis à leur disposition ;",
+        "- 3° les conditions dans lesquelles ils seront reçus par l'employeur ou son représentant ;",
+        "- 4° les conditions de révocation du délégué par le collège des travailleurs qui l'a élu.",
+        "[NB - Voir Arrêté n°1110/MTFPSS/DGT du 24 juin 1996 relatif à l'institution des délégués du personnel, page 132]"
+      ],
+      "mots_cles": ["délégués du personnel", "élection", "7 travailleurs", "collèges", "représentation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-2",
+      "titre": "Collèges électoraux",
+      "texte": [
+        "(Loi n°06-96) Les délégués sont élus au sein de chaque établissement sur les listes établies par les organisations syndicales, s'il en existe, ou à défaut par les membres du personnel eux-mêmes.",
+        "Il existe au moins deux collèges électoraux au sein de l'établissement, l'un groupant les ouvriers et employés, l'autre groupant les ingénieurs, les chefs de service, les techniciens, les agents de maîtrise et assimilés.",
+        "Lorsque l'importance de l'établissement le justifie, le nombre des collèges peut être augmenté afin de permettre séparément la représentation des ouvriers, des employés, des agents de maîtrise ou assimilés ainsi que des ingénieurs et des chefs de service.",
+        "Le nombre de collèges électoraux et la répartition des sièges entre les différentes catégories font l'objet d'un accord entre le chef d'établissement et les organisations syndicales intéressées.",
+        "Dans le cas où cet accord est reconnu impossible, l'inspecteur du travail ou son représentant légal décide du nombre de collèges et la répartition des sièges entre les différentes catégories."
+      ],
+      "mots_cles": ["collèges électoraux", "ouvriers", "employés", "ingénieurs", "maîtrise", "accord", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-3",
+      "titre": "Dérogations aux conditions d'ancienneté",
+      "texte": [
+        "(Loi n°06-96) L'inspecteur du travail et des lois sociales peut, à la demande du chef d'établissement ou des organisations syndicales, ou à défaut des membres du personnel, autoriser des dérogations aux conditions d'ancienneté dans l'établissement, prévues à l'article 174 nouveau, dans le cas où leur application aurait pour effet de réduire à moins du quart de l'effectif le nombre des salariés remplissant ces conditions dans chaque collège."
+      ],
+      "mots_cles": ["dérogation", "ancienneté", "quart effectif", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-4",
+      "titre": "Élections annuelles",
+      "texte": [
+        "(Loi n°06-96) L'élection des délégués du personnel a lieu chaque année au mois de décembre pour le mandat de l'année suivante."
+      ],
+      "mots_cles": ["élection", "annuelle", "décembre", "mandat"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-5",
+      "titre": "Organisation du scrutin",
+      "texte": [
+        "(Loi n°06-96) Le vote a lieu dans l'établissement. Le jour, le lieu, les heures d'ouverture ou de fermeture du scrutin sont fixés par le chef de l'établissement ou son représentant en accord avec les organisations syndicales.",
+        "Ces indications sont annoncées quinze jours au moins avant la date du scrutin par un avis affiché par les soins du chef d'établissement ou de son représentant aux emplacements habituellement réservés pour les avis donnés au personnel.",
+        "En cas de carence constatée du chef d'entreprise, l'inspecteur du travail organise les élections en fixant le lieu, le jour, les heures d'ouverture et de fermeture du scrutin.",
+        "Les listes des candidats établies par les organisations syndicales de l'établissement sont affichées par les soins du chef d'établissement ou de son représentant dix jours au moins avant la date du scrutin aux mêmes emplacements que l'avis de scrutin. Ces listes doivent faire connaître les noms, prénoms, âges et durée des services des candidats ainsi que les syndicats qui les représentent et, éventuellement, les dérogations accordées par l'inspecteur du travail en application de l'article 173-3 ci-dessus."
+      ],
+      "mots_cles": ["scrutin", "vote", "15 jours", "affichage", "listes candidats", "10 jours"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-6",
+      "titre": "Autorisation de candidats non syndicaux",
+      "texte": [
+        "(Loi n°06-96) Toutefois, l'inspecteur du travail ou son représentant légal peut autoriser le vote de candidats non présentés par les organisations syndicales."
+      ],
+      "mots_cles": ["candidats non syndicaux", "autorisation", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-7",
+      "titre": "Vote par procuration",
+      "texte": [
+        "(Loi n°06-96) Les travailleurs dont l'occupation hors de l'établissement empêche de prendre part au scrutin, ceux en congé et ceux dont le contrat de travail est suspendu pour l'une des causes énumérées à l'article 47 nouveau du Code du travail peuvent voter par procuration."
+      ],
+      "mots_cles": ["vote par procuration", "absence", "congé", "suspension"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-8",
+      "titre": "Scrutin secret - Représentation proportionnelle",
+      "texte": [
+        "(Loi n°06-96) L'élection a lieu au scrutin secret et sous enveloppe. Il est procédé aux votes des membres titulaires et suppléants en même temps qu'à la représentation proportionnelle."
+      ],
+      "mots_cles": ["scrutin secret", "enveloppe", "titulaires", "suppléants", "représentation proportionnelle"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-9",
+      "titre": "Établissement des listes électorales",
+      "texte": [
+        "(Loi n°06-96) Chaque liste est établie par les organisations syndicales les plus représentatives, séparément ou en commun.",
+        "Les listes électorales ne peuvent comprendre un nombre de candidats supérieur à celui des sièges.",
+        "Le panachage est interdit. Seuls sont valables les votes allant à l'une des listes en présence.",
+        "Il n'est pas tenu compte des bulletins blancs ou nuls."
+      ],
+      "mots_cles": ["listes électorales", "candidats", "panachage interdit", "bulletins nuls"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-10",
+      "titre": "Second tour de scrutin",
+      "texte": [
+        "(Loi n°06-96) Si le nombre de votants, déduction faite des bulletins blancs ou nuls, est inférieur à la moitié des électeurs inscrits, il est procédé dans un délai de deux semaines à un autre scrutin pour lequel les électeurs peuvent voter pour des listes autres que celles présentées par les organisations syndicales."
+      ],
+      "mots_cles": ["second tour", "quorum", "moitié", "2 semaines"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-11",
+      "titre": "Attribution des sièges - Quotient électoral",
+      "texte": [
+        "(Loi n°06-96) Il est attribué à chaque liste autant de sièges que le nombre de voix recueilli par elle. Elle contient autant de fois le quotient électoral, celui-ci étant égal au nombre total des suffrages valablement exprimés par les électeurs du collège divisé par le nombre de sièges à pourvoir."
+      ],
+      "mots_cles": ["attribution sièges", "quotient électoral", "suffrages", "collège"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-12",
+      "titre": "Sièges restants - Plus forte moyenne",
+      "texte": [
+        "(Loi n°06-96) Au cas où il n'aurait pu être pourvu à aucun siège ou s'il reste des sièges à pourvoir, les sièges restants sont attribués sur la base de la plus forte moyenne.",
+        "À cet effet, le nombre de voix obtenu pour chaque liste est divisé par le nombre, augmenté d'une unité des sièges attribués à la liste des moyennes ainsi obtenues.",
+        "Le premier siège non pourvu est attribué à la liste ayant la plus forte moyenne. Il est procédé successivement à la même opération pour chacun des sièges non pourvus, jusqu'au dernier.",
+        "Dans le cas où deux listes ont la même moyenne ou s'il ne reste qu'un siège à pourvoir, ledit siège est attribué à la liste qui a le plus grand nombre de voix.",
+        "Si deux listes ont également recueilli le même nombre de voix, le siège est attribué au plus âgé des deux candidats susceptibles d'être élus."
+      ],
+      "mots_cles": ["plus forte moyenne", "sièges restants", "répartition", "égalité", "âge"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-13",
+      "titre": "Organisation des élections par l'employeur",
+      "texte": [
+        "(Loi n°06-96) Le chef d'établissement ou son représentant est chargé de l'organisation et du déroulement des élections, notamment de la constitution du bureau de vote, de la rédaction du procès-verbal du vote secret sous enveloppe.",
+        "Il préside le bureau de vote là où il est assisté d'un représentant non-candidat de chacune des listes en présence. Ces représentants des listes prennent place au bureau, assistent au vote et au dépouillement du scrutin et signent le procès-verbal avec le représentant de l'employeur.",
+        "Le chef d'établissement ou son représentant est tenu d'établir en plusieurs exemplaires le procès-verbal des élections des délégués du personnel, procès-verbal dont le premier exemplaire est adressé à l'inspecteur du travail du ressort sous quatre jours (par lettre recommandée avec accusé de réception), le second est affiché, le troisième est conservé dans les archives de l'établissement et les autres destinés aux différents syndicats."
+      ],
+      "mots_cles": ["organisation élections", "bureau de vote", "procès-verbal", "inspecteur du travail", "4 jours"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 173-14",
+      "titre": "Délégation de l'organisation des élections",
+      "texte": [
+        "(Loi n°06-96) La mission incombant au chef d'établissement en matière d'organisation des élections des délégués du personnel peut, sur sa demande et en cas d'empêchement, être confiée à une autre autorité par l'inspecteur du travail."
+      ],
+      "mots_cles": ["délégation", "organisation élections", "empêchement"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 174",
+      "titre": "Conditions d'électorat",
+      "texte": [
+        "(Loi n°06-96) Sont électeurs les travailleurs des deux sexes ayant au moins six mois d'ancienneté dans l'entreprise et n'ayant jamais été déchus de leurs droits civiques par décision de justice.",
+        "Sont éligibles les travailleurs n'ayant jamais fait l'objet d'une condamnation pénale et qui ont travaillé dans l'entreprise sans interruption depuis douze mois au moins.",
+        "Ne sont éligibles pour une catégorie de personnel que les travailleurs inscrits comme électeurs dans cette même catégorie.",
+        "Les contestations relatives à l'électorat, à l'éligibilité des délégués du personnel ainsi qu'à la régularité des opérations électorales sont de la compétence du tribunal d'instance.",
+        "Pour être recevable, la contestation doit être introduite dans les trois jours qui suivent la publication de la liste électorale, si elle porte sur l'électorat ou l'éligibilité ; dans les quinze jours qui suivent la proclamation des résultats, si elle porte sur la régularité des opérations électorales.",
+        "Le tribunal d'instance se prononce dans les trente jours qui suivent sa saisine."
+      ],
+      "mots_cles": ["électeurs", "6 mois ancienneté", "éligibles", "12 mois", "contestation", "3 jours", "15 jours", "tribunal d'instance"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 175",
+      "titre": "Suppléants des délégués",
+      "texte": [
+        "(Loi n°06-96) Chaque délégué a un suppléant élu dans les mêmes conditions, qui le remplace en cas d'absence motivée, de décès, de démission, de révocation, de changement de catégorie professionnelle entraînant un changement de collège, résiliation du contrat de travail ou perte des conditions requises pour l'éligibilité."
+      ],
+      "mots_cles": ["suppléant", "remplacement", "décès", "démission", "révocation"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 176",
+      "titre": "Protection contre le licenciement des délégués",
+      "texte": [
+        "(Loi n°06-96) Tout licenciement d'un délégué du personnel envisagé par l'employeur ou son représentant doit être soumis à l'autorisation de la commission des litiges prévue à l'article 39 (nouveau).",
+        "Toutefois, en cas de faute présumée lourde par l'employeur, celui-ci peut prononcer immédiatement la mise à pied conservatoire du délégué du personnel en attendant la décision définitive de la commission des litiges. Cette mise à pied n'entraîne pas suspension du paiement du salaire de base.",
+        "Tout délégué du personnel s'estimant abusivement licencié peut saisir immédiatement le tribunal du travail qui cite sans délai les parties à comparaître.",
+        "Pendant la procédure judiciaire devant le tribunal, le délégué du personnel conserve son salaire de base jusqu'au prononcé du jugement sauf s'il a été licencié après autorisation de la commission des litiges.",
+        "En cas de licenciement reconnu abusif, le juge de fond ordonne à compter du prononcé de jugement soit la réintégration du délégué du personnel dans ses fonctions au sein de l'entreprise, soit le versement de dommages-intérêts dont le montant ne saurait être inférieur à douze mois de salaire de base, versement pouvant se faire à échéance mensuelle, sauf si l'intéressé exerce une activité lucrative pendant la même période.",
+        "En cas de licenciement irrégulier, le tribunal décide soit la reprise de la procédure, soit le paiement des dommages et intérêts correspondant au préjudice subi.",
+        "Toutes les garanties ci-dessus sont applicables :",
+        "- aux anciens délégués du personnel pendant une durée de six mois à partir de l'expiration du mandat ;",
+        "- aux candidats aux fonctions de délégués du personnel pendant la durée comprise entre la date de remise des listes de candidature au chef d'entreprise ou d'établissement et celle du scrutin ;",
+        "- aux candidats non déclarés élus pendant les trois mois qui suivent la date du scrutin.",
+        "Les formes de contestation des décisions de la commission des litiges sont celles énumérées à l'article 39, alinéa 8, du présent Code."
+      ],
+      "mots_cles": ["licenciement", "délégué du personnel", "protection", "commission des litiges", "mise à pied", "réintégration", "12 mois salaire", "6 mois", "3 mois"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 177",
+      "titre": "Missions des délégués du personnel",
+      "texte": [
+        "(Loi n°06-96) Les délégués du personnel ont pour mission :",
+        "- de présenter aux employeurs toutes les réclamations individuelles ou collectives qui n'auraient pas été directement satisfaites concernant les conditions de travail et la protection des travailleurs, l'application des conventions collectives, des classifications professionnelles et des salaires ;",
+        "- de donner leur préalable avis pour tout licenciement collectif ou individuel motivé par une diminution d'activité de l'établissement ou par une réorganisation intérieure, et selon la procédure fixée par l'article 39 du présent Code ;",
+        "- de saisir l'inspection du travail et des lois sociales de toute plainte ou réclamation concernant l'application des prescriptions légales ou réglementaires dont elle est chargée d'assurer le contrôle ;",
+        "- de veiller à l'application des prescriptions relatives à l'hygiène et à la santé des travailleurs et à la sécurité sociale, et de proposer toutes mesures utiles à ce sujet ;",
+        "- de communiquer à l'employeur toutes suggestions utiles tendant à l'amélioration de l'organisation et du rendement de l'entreprise."
+      ],
+      "mots_cles": ["missions", "réclamations", "licenciement", "inspection du travail", "hygiène", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 178",
+      "titre": "Faculté de réclamation directe des travailleurs",
+      "texte": [
+        "Nonobstant les dispositions ci-dessus, les travailleurs ont la faculté de présenter eux-mêmes leurs réclamations et suggestions à l'employeur."
+      ],
+      "mots_cles": ["réclamation directe", "travailleurs", "employeur"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 179",
+      "titre": "Heures de délégation et congé d'éducation ouvrière",
+      "texte": [
+        "(Loi n°06-96) Pour l'accomplissement de leur mission, les délégués du personnel disposent de vingt heures par mois considérées et rémunérées comme temps de travail.",
+        "En outre, les délégués du personnel tant titulaires que suppléants bénéficient chaque année d'un congé payé d'éducation ouvrière de dix jours ouvrables.",
+        "Un arrêté du Ministre du Travail, pris après avis de la Commission nationale consultative du travail afin qu'il fixe les conditions d'attribution du congé d'éducation ouvrière, pourra limiter le nombre de délégués de personnel pouvant bénéficier des dispositions ci-dessus dans les entreprises à faibles effectifs."
+      ],
+      "mots_cles": ["20 heures", "heures de délégation", "congé éducation ouvrière", "10 jours"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    },
+    {
+      "article": "Art. 180",
+      "titre": "Extension aux délégués syndicaux",
+      "texte": [
+        "(Loi n°06-96) Hormis les dispositions de l'article 176, alinéa 4, sur la conservation du salaire du délégué du personnel pendant la procédure judiciaire, toutes les autres dispositions concernant la protection du délégué du personnel et celles concernant le congé d'éducation ouvrière s'appliquent également aux délégués syndicaux."
+      ],
+      "mots_cles": ["délégués syndicaux", "protection", "congé éducation ouvrière", "extension"],
+      "statut": "en vigueur",
+      "section": "Chapitre 5 : Des délégués du personnel"
+    }
+  ]
+}
