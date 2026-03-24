@@ -45,9 +45,22 @@ export default function CodeCGI() {
   const [selectedNode, setSelectedNode] = useState<SommaireNode | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<ArticleData | null>(null);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
+    // CGI
     tome1: true, "t1-p1": true, "t1-p2": true, "t1-p3": true,
     tome2: true,
     tfnc: true,
+    // Code Social
+    "social-livre1": true,
+    "social-code-travail": true,
+    "social-app": true,
+    "social-tnc": true,
+    "social-oit": true,
+    "social-livre2": true,
+    "social-css": true,
+    "social-tnc-secu": true,
+    "social-conv-secu": true,
+    "social-livre3": true,
+    "social-cc": true,
   });
 
   const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
