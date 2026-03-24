@@ -158,26 +158,79 @@ function loadArticles(key: string): ArticleData[] {
 
 // --- Construction du sommaire en mode Livre ---
 
+// Mapping titre du Code du travail → clé(s) FILE_MAP
+const TRAVAIL_TITRE_MAP: Record<number, string[]> = {
+  1: ["travail-titre1"],
+  2: ["travail-titre2-ch1", "travail-titre2-ch2", "travail-titre2-ch3", "travail-titre2-ch4", "travail-titre2-ch5", "travail-titre2-ch5b", "travail-titre2-ch6", "travail-titre2-ch7"],
+  3: ["travail-titre3"],
+  4: ["travail-titre4"],
+  5: ["travail-titre5"],
+  6: ["travail-titre6-ch1", "travail-titre6-ch4", "travail-titre6-ch5", "travail-titre6-ch6"],
+  7: ["travail-titre7"],
+  8: ["travail-titre8-ch1", "travail-titre8-ch2"],
+  9: ["travail-titre9"],
+  10: ["travail-titre10"],
+};
+
+// Mapping chapitre spécifique → clé FILE_MAP
+const TRAVAIL_CHAPITRE_MAP: Record<string, string> = {
+  "2-1": "travail-titre2-ch1",
+  "2-2": "travail-titre2-ch2",
+  "2-3": "travail-titre2-ch3",
+  "2-4": "travail-titre2-ch4",
+  "2-5": "travail-titre2-ch5",
+  "2-6": "travail-titre2-ch6",
+  "2-7": "travail-titre2-ch7",
+  "6-1": "travail-titre6-ch1",
+  "6-4": "travail-titre6-ch4",
+  "6-5": "travail-titre6-ch5",
+  "6-6": "travail-titre6-ch6",
+  "8-1": "travail-titre8-ch1",
+  "8-2": "travail-titre8-ch2",
+};
+
 function buildCodeTravailNode(): SommaireNode {
   const travailData: SommaireJSON = require("@/data/social/sommaire-travail.json");
   const children: SommaireNode[] = travailData.sommaire.map((titre) => {
     const titreId = `social-t${titre.titre}`;
-    const chChildren: SommaireNode[] = titre.chapitres.map((ch) => {
-      const chId = `${titreId}-ch${ch.chapitre}`;
-      const sChildren: SommaireNode[] | undefined =
-        ch.sections && ch.sections.length > 0
-          ? ch.sections.map((s) => ({
-              id: `${chId}-s${s.section}`,
-              label: `Section ${s.section} : ${s.section_nom}`,
-            }))
-          : undefined;
-      return { id: chId, label: `Chapitre ${ch.chapitre} : ${ch.chapitre_nom}`, children: sChildren };
-    });
-    return {
-      id: titreId,
-      label: `Titre ${titre.titre} — ${titre.titre_nom}`,
-      children: chChildren.length > 0 ? chChildren : undefined,
-    };
+
+    if (titre.chapitres.length > 0) {
+      // Titre avec chapitres : attacher les articles à chaque chapitre
+      const chChildren: SommaireNode[] = titre.chapitres.map((ch) => {
+        const chId = `${titreId}-ch${ch.chapitre}`;
+        const chKey = `${titre.titre}-${ch.chapitre}`;
+        const fileKey = TRAVAIL_CHAPITRE_MAP[chKey];
+        const articles = fileKey ? loadArticles(fileKey) : [];
+
+        const sChildren: SommaireNode[] | undefined =
+          ch.sections && ch.sections.length > 0
+            ? ch.sections.map((s) => ({
+                id: `${chId}-s${s.section}`,
+                label: `Section ${s.section} : ${s.section_nom}`,
+              }))
+            : undefined;
+        return {
+          id: chId,
+          label: `Chapitre ${ch.chapitre} : ${ch.chapitre_nom}`,
+          children: sChildren,
+          articles: articles.length > 0 ? articles : undefined,
+        };
+      });
+      return {
+        id: titreId,
+        label: `Titre ${titre.titre} — ${titre.titre_nom}`,
+        children: chChildren,
+      };
+    } else {
+      // Titre sans chapitres : attacher les articles directement
+      const keys = TRAVAIL_TITRE_MAP[titre.titre] || [];
+      const articles = keys.flatMap((k) => loadArticles(k));
+      return {
+        id: titreId,
+        label: `Titre ${titre.titre} — ${titre.titre_nom}`,
+        articles: articles.length > 0 ? articles : undefined,
+      };
+    }
   });
   return { id: "social-code-travail", label: "1.1 Code du travail", children };
 }

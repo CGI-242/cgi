@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useActiveCode, type CodeId } from "@/lib/context/ActiveCodeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useTranslation } from "react-i18next";
 
@@ -29,9 +30,14 @@ interface SidebarProps {
   currentRoute: string;
 }
 
-const NAV_ITEMS: NavItem[] = [
+interface NavItemExt extends NavItem {
+  codeId?: CodeId;
+}
+
+const NAV_ITEMS: NavItemExt[] = [
   { label: "sidebar.dashboard", icon: "home-outline", route: "/(app)" },
-  { label: "sidebar.code", icon: "book-outline", route: "/(app)/code" },
+  { label: "sidebar.code", icon: "book-outline", route: "/(app)/code", codeId: "cgi" },
+  { label: "Code Social", icon: "people-outline", route: "/(app)/code", codeId: "social" },
   { label: "sidebar.simulators", icon: "calculator-outline", route: "/(app)/simulateur" },
   { label: "sidebar.calendrier", icon: "calendar-outline", route: "/(app)/calendrier" },
   { label: "sidebar.chat", icon: "chatbubbles-outline", route: "/(app)/chat" },
@@ -48,6 +54,7 @@ function isRouteActive(currentRoute: string, itemRoute: string): boolean {
 export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarProps) {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const { activeCode, setActiveCode } = useActiveCode();
 
   const profileItems: ProfileItem[] = [
     {
@@ -72,7 +79,10 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
   const isCollapsed = collapsed;
   const sidebarWidth = isCollapsed ? 60 : 220;
 
-  const handleNavPress = (route: string) => {
+  const handleNavPress = (route: string, codeId?: CodeId) => {
+    if (codeId) {
+      setActiveCode(codeId);
+    }
     router.push(route as any);
   };
 
@@ -133,7 +143,9 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
 
         {/* Navigation modules */}
         {NAV_ITEMS.map((item) => {
-          const active = !item.disabled && item.route ? isRouteActive(currentRoute, item.route) : false;
+          const routeActive = !item.disabled && item.route ? isRouteActive(currentRoute, item.route) : false;
+          // Pour les items Code : actif seulement si le bon codeId est sélectionné
+          const active = item.codeId ? (routeActive && activeCode === item.codeId) : routeActive;
           const disabled = !!item.disabled;
 
           return (
@@ -141,7 +153,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
               key={item.label}
               onPress={() => {
                 if (!disabled && item.route) {
-                  handleNavPress(item.route);
+                  handleNavPress(item.route, item.codeId);
                 }
               }}
               disabled={disabled}
