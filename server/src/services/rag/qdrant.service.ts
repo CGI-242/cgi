@@ -9,6 +9,7 @@ import { VECTOR_SIZE } from './embeddings.service';
 const logger = createLogger('QdrantService');
 
 const COLLECTION_NAME = 'cgi_2026';
+export const SOCIAL_COLLECTION_NAME = 'social_2026';
 
 let client: QdrantClient | null = null;
 
@@ -37,29 +38,37 @@ export interface ArticleVector {
 }
 
 /**
- * Initialise la collection Qdrant
+ * Initialise une collection Qdrant (CGI ou Social)
  */
-export async function initializeCollection(): Promise<void> {
+export async function initializeCollection(collectionName: string = COLLECTION_NAME): Promise<void> {
   const qdrant = getQdrantClient();
 
   try {
     const collections = await qdrant.getCollections();
-    const exists = collections.collections.some(c => c.name === COLLECTION_NAME);
+    const exists = collections.collections.some(c => c.name === collectionName);
 
     if (!exists) {
-      await qdrant.createCollection(COLLECTION_NAME, {
+      await qdrant.createCollection(collectionName, {
         vectors: {
           size: VECTOR_SIZE,
           distance: 'Cosine',
         },
       });
-      logger.info(`Collection ${COLLECTION_NAME} créée (${VECTOR_SIZE} dims)`);
+      logger.info(`Collection ${collectionName} créée (${VECTOR_SIZE} dims)`);
     } else {
-      logger.info(`Collection ${COLLECTION_NAME} existe déjà`);
+      logger.info(`Collection ${collectionName} existe déjà`);
     }
   } catch (error) {
     logger.warn(`Qdrant non disponible au démarrage: ${error}`);
   }
+}
+
+/**
+ * Initialise les deux collections (CGI + Social)
+ */
+export async function initializeAllCollections(): Promise<void> {
+  await initializeCollection(COLLECTION_NAME);
+  await initializeCollection(SOCIAL_COLLECTION_NAME);
 }
 
 /**
@@ -80,16 +89,16 @@ export async function upsertArticleVector(article: ArticleVector): Promise<void>
 }
 
 /**
- * Insère plusieurs vecteurs d'articles
+ * Insère plusieurs vecteurs d'articles dans une collection
  */
-export async function upsertArticleVectors(articles: ArticleVector[]): Promise<void> {
+export async function upsertArticleVectors(articles: ArticleVector[], collectionName: string = COLLECTION_NAME): Promise<void> {
   const qdrant = getQdrantClient();
   const BATCH_SIZE = 100;
 
   for (let i = 0; i < articles.length; i += BATCH_SIZE) {
     const batch = articles.slice(i, i + BATCH_SIZE);
 
-    await qdrant.upsert(COLLECTION_NAME, {
+    await qdrant.upsert(collectionName, {
       points: batch.map(article => ({
         id: article.id,
         vector: article.vector,
@@ -130,7 +139,8 @@ export async function searchSimilarArticles(
   const qdrant = getQdrantClient();
   const startTime = Date.now();
 
-  const results = await qdrant.search(COLLECTION_NAME, {
+  const collectionToSearch = version === 'social' ? SOCIAL_COLLECTION_NAME : COLLECTION_NAME;
+  const results = await qdrant.search(collectionToSearch, {
     vector: queryVector,
     limit,
     with_payload: true,

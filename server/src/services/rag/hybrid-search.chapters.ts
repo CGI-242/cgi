@@ -172,8 +172,13 @@ export interface MetadataResult {
 /**
  * Récupère les métadonnées d'un article selon la version
  */
-export function getMetadataForArticle(numero: string, version: '2025' | '2026' | 'current'): MetadataResult {
+export function getMetadataForArticle(numero: string, version: '2025' | '2026' | 'current' | 'social'): MetadataResult {
   const numWithPrefix = numero.startsWith('Art.') ? numero : `Art. ${numero}`;
+
+  // Pour le Code Social, retourner des métadonnées par défaut (pas de mapping détaillé pour l'instant)
+  if (version === 'social') {
+    return { priority: 1, articleType: 'social' };
+  }
 
   if (version === '2026' || version === 'current') {
     const metadataIS = getArticleMetadata2026(numWithPrefix) || getArticleMetadata2026(numero);
@@ -212,7 +217,7 @@ export function getMetadataForArticle(numero: string, version: '2025' | '2026' |
 /**
  * Extrait les articles correspondants via keyword matching
  */
-export function extractKeywordMatches(query: string, version: '2025' | '2026' | 'current'): string[] {
+export function extractKeywordMatches(query: string, version: '2025' | '2026' | 'current' | 'social'): string[] {
   const seen = new Set<string>();
   const articles: string[] = [];
 
@@ -224,6 +229,11 @@ export function extractKeywordMatches(query: string, version: '2025' | '2026' | 
       }
     }
   };
+
+  // Pour le Code Social, pas de keyword matching détaillé pour l'instant — la recherche vectorielle suffit
+  if (version === 'social') {
+    return [];
+  }
 
   if (version === '2026' || version === 'current') {
     addUnique(findArticlesForQuery2026(query));

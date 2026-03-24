@@ -2,8 +2,8 @@
 // Service chat IA fiscal - RAG hybride + Claude API + gestion conversations Prisma
 
 import Anthropic from "@anthropic-ai/sdk";
-import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt } from "./chat.prompts";
-import { hybridSearch, SearchResult } from "./rag/hybrid-search.service";
+import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt, buildSocialContextPrompt, buildSocialFallbackPrompt } from "./chat.prompts";
+import { hybridSearch, isSocialQuery, SearchResult } from "./rag/hybrid-search.service";
 import { isFiscalQuery, buildContext, extractArticlesFromResponse, Citation } from "./rag/chat.utils";
 import { createLogger } from "../utils/logger";
 import prisma from "../utils/prisma";
@@ -130,17 +130,20 @@ export async function sendMessage(
   const searchResults = await performRAGSearch(content);
 
   // 5. Choisir le prompt systeme + orchestration multi-agent
+  const socialQuery = isSocialQuery(content);
   let systemPrompt: string;
   if (isSimpleGreeting(content)) {
     systemPrompt = buildSimplePrompt();
   } else if (searchResults && searchResults.length > 0) {
     const context = buildContext(searchResults);
-    const basePrompt = buildContextPrompt(context);
+    // Utiliser le bon prompt selon le type de question
+    const basePrompt = socialQuery ? buildSocialContextPrompt(context) : buildContextPrompt(context);
     const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
     systemPrompt = enhancedSystemPrompt;
-    logger.info(`Agent sélectionné: ${agent.name}`);
+    logger.info(`Agent sélectionné: ${agent.name} (social: ${socialQuery})`);
   } else {
-    const basePrompt = buildFiscalPrompt();
+    // Fallback sans RAG
+    const basePrompt = socialQuery ? buildSocialFallbackPrompt() : buildFiscalPrompt();
     const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
     systemPrompt = enhancedSystemPrompt;
   }
@@ -248,17 +251,18 @@ export async function* sendMessageStream(
   const searchResults = await performRAGSearch(content);
 
   // 5. Choisir le prompt systeme + orchestration multi-agent
+  const socialQueryStream = isSocialQuery(content);
   let systemPrompt: string;
   if (isSimpleGreeting(content)) {
     systemPrompt = buildSimplePrompt();
   } else if (searchResults && searchResults.length > 0) {
     const context = buildContext(searchResults);
-    const basePrompt = buildContextPrompt(context);
+    const basePrompt = socialQueryStream ? buildSocialContextPrompt(context) : buildContextPrompt(context);
     const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
     systemPrompt = enhancedSystemPrompt;
-    logger.info(`Agent sélectionné (stream): ${agent.name}`);
+    logger.info(`Agent sélectionné (stream): ${agent.name} (social: ${socialQueryStream})`);
   } else {
-    const basePrompt = buildFiscalPrompt();
+    const basePrompt = socialQueryStream ? buildSocialFallbackPrompt() : buildFiscalPrompt();
     const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
     systemPrompt = enhancedSystemPrompt;
   }

@@ -14,16 +14,55 @@ const client = new QdrantClient({
   url: process.env.QDRANT_URL || 'http://localhost:6333',
 });
 
-// Collection CGI unique (version en vigueur)
+// Collections CGI + Social
 export const CGI_COLLECTION = 'cgi_2026';
+export const SOCIAL_COLLECTION = 'social_2026';
 
 export const CGI_COLLECTIONS = {
   '2025': 'cgi_2025',
   '2026': 'cgi_2026',
   'current': 'cgi_2026',
+  'social': 'social_2026',
 } as const;
 
 export type CGIVersion = keyof typeof CGI_COLLECTIONS;
+
+// Mots-clés pour détecter les questions sociales
+const SOCIAL_KEYWORDS = [
+  'code du travail', 'code social', 'droit du travail', 'droit social',
+  'licenciement', 'préavis', 'preavis', 'congé', 'conge', 'congés payés',
+  'contrat de travail', 'cdd', 'cdi', 'période d\'essai', 'periode d\'essai',
+  'convention collective', 'salaire minimum', 'smig', 'smic',
+  'heures supplémentaires', 'heures supplementaires', 'durée du travail',
+  'syndicat', 'grève', 'greve', 'délégué du personnel', 'comité d\'entreprise',
+  'inspection du travail', 'inspecteur du travail',
+  'sécurité sociale', 'securite sociale', 'cnss', 'caisse nationale',
+  'cotisation sociale', 'cotisations sociales', 'cotisation cnss',
+  'prestations familiales', 'allocation familiale', 'allocations familiales',
+  'accident du travail', 'maladie professionnelle', 'risques professionnels',
+  'pension de vieillesse', 'pension d\'invalidité', 'pension invalidite',
+  'retraite', 'âge de retraite', 'age de retraite', 'pension de retraite',
+  'indemnité journalière', 'indemnite journaliere',
+  'maternité', 'maternite', 'congé maternité', 'conge maternite',
+  'camu', 'couverture maladie', 'assurance maladie',
+  'onemo', 'acpe', 'fonea', 'ints',
+  'jours fériés', 'jours feries', 'jour férié',
+  'personnel domestique', 'employé de maison',
+  'cipres', 'ohada',
+  'rente', 'survivant', 'ayants droit',
+  'saisie-arrêt', 'saisie arret', 'saisie sur salaire',
+  'apprentissage', 'apprenti', 'formation professionnelle',
+  'hygiène', 'hygiene', 'sécurité au travail',
+  'différend collectif', 'differend', 'tribunal du travail',
+];
+
+/**
+ * Détecte si la question concerne le Code Social
+ */
+export function isSocialQuery(query: string): boolean {
+  const queryLower = query.toLowerCase();
+  return SOCIAL_KEYWORDS.some(kw => queryLower.includes(kw));
+}
 
 export interface ArticlePayload {
   numero: string;
@@ -345,8 +384,11 @@ export async function hybridSearch(
   limit = 8,
   version: CGIVersion = '2026'
 ): Promise<SearchResult[]> {
-  const collectionName = CGI_COLLECTIONS[version];
-  logger.info(`[HybridSearch] Query: "${query.substring(0, 50)}..." (collection: ${collectionName})`);
+  // Auto-détection : si la question est sociale, chercher dans social_2026
+  const isSocial = version === 'social' || isSocialQuery(query);
+  const effectiveVersion = isSocial ? 'social' : version;
+  const collectionName = CGI_COLLECTIONS[effectiveVersion] || CGI_COLLECTIONS['2026'];
+  logger.info(`[HybridSearch] Query: "${query.substring(0, 50)}..." (collection: ${collectionName}, social: ${isSocial})`);
 
   // ÉTAPE 0: ROUTAGE DIRECT
   let forcedArticle: string | null = null;
