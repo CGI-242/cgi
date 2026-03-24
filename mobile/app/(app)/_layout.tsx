@@ -9,6 +9,7 @@ import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
 import { useSessionHeartbeat } from "@/lib/hooks/useSessionHeartbeat";
 import { useAntiCopy } from "@/lib/hooks/useAntiCopy";
 import Sidebar from "@/components/Sidebar";
+import { useActiveCode } from "@/lib/context/ActiveCodeContext";
 import SessionExpiredModal from "@/components/SessionExpiredModal";
 import PaywallScreen from "@/components/paywall/PaywallScreen";
 import MobileHeader from "@/components/mobile/MobileHeader";
@@ -191,8 +192,17 @@ function AppLayoutInner() {
   }
 
   const isHome = pathname === "/" || pathname === "/(app)";
+  const { activeCode } = useActiveCode();
   const pageTitleKey = !isHome ? PAGE_TITLES[pathname] : null;
   const parent = !isHome ? PAGE_PARENTS[pathname] : null;
+
+  // Titre dynamique pour le breadcrumb de la page Code
+  const getPageTitle = (): string => {
+    if (pageTitleKey && pathname === "/code") {
+      return activeCode === "social" ? "Code Social" : "Code des Impôts";
+    }
+    return pageTitleKey ? t(pageTitleKey) : "";
+  };
 
   // ── Mapping route → onglet actif pour MobileTabBar ──
   const getActiveTab = (): TabKey => {
@@ -207,7 +217,7 @@ function AppLayoutInner() {
   // Titre dynamique pour le header mobile
   const getMobileTitle = (): string => {
     if (isHome) return "NORMX Tax";
-    if (pageTitleKey) return t(pageTitleKey);
+    if (pageTitleKey) return getPageTitle();
     return "NORMX Tax";
   };
 
@@ -338,7 +348,7 @@ function AppLayoutInner() {
                 )}
                 <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
                 <Text style={{ color: "#D4A843", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15 }}>
-                  {t(pageTitleKey)}
+                  {getPageTitle()}
                 </Text>
               </>
             )}
