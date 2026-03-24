@@ -157,10 +157,10 @@ export default function CodeCGI() {
           <View style={{ paddingVertical: 8 }}>
             <View style={{ paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4 }}>
               <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                {activeCode === "cgi" ? t("code.edition") : activeCode === "social" ? "Code Social" : activeCode === "hydrocarbures" ? "Code des Hydrocarbures" : "Code Douanier"}
+                {activeCode === "cgi" ? "Code des Impôts" : activeCode === "social" ? "Code Social" : activeCode === "hydrocarbures" ? "Code des Hydrocarbures" : "Code Douanier"}
               </Text>
               <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
-                {activeCode === "cgi" ? t("code.fullTitle") : activeCode === "social" ? "Travail & Sécurité sociale" : activeCode === "hydrocarbures" ? "Loi n°2024-28" : "CEMAC"}
+                {activeCode === "cgi" ? "CGI 2026 — République du Congo" : activeCode === "social" ? "Travail & Sécurité sociale — Édition 2026" : activeCode === "hydrocarbures" ? "Loi n°2024-28" : "CEMAC"}
               </Text>
             </View>
             <View style={[styles.separator, { backgroundColor: colors.border }]} />

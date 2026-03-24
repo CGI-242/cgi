@@ -206,9 +206,9 @@ function AppLayoutInner() {
 
   // Titre dynamique pour le header mobile
   const getMobileTitle = (): string => {
-    if (isHome) return "CGI 242";
+    if (isHome) return "NORMX Tax";
     if (pageTitleKey) return t(pageTitleKey);
-    return "CGI 242";
+    return "NORMX Tax";
   };
 
   // Bouton retour : visible si on n'est pas sur un écran principal

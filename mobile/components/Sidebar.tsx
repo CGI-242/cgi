@@ -119,7 +119,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>CGI 242</Text>
+              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>NORMX Tax</Text>
               <Text style={{ color: "#e8e6e1", fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
             </View>
           )}
