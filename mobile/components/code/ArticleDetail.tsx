@@ -111,8 +111,11 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
   const speakChunk = (chunks: string[], index: number) => {
     if (stoppedRef.current || index >= chunks.length) {
-      setSpeechState("idle");
-      chunkIndexRef.current = 0;
+      // Ne reset que si on est vraiment arrêté (pas en pause)
+      if (index >= chunks.length) {
+        setSpeechState("idle");
+        chunkIndexRef.current = 0;
+      }
       return;
     }
 
@@ -120,8 +123,17 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     Speech.speak(chunks[index], {
       language: "fr-FR",
       rate: 0.9,
-      onDone: () => speakChunk(chunks, index + 1),
-      onStopped: () => {},
+      onDone: () => {
+        // Passer au chunk suivant seulement si pas stoppé (pause)
+        if (!stoppedRef.current) {
+          chunkIndexRef.current = index + 1;
+          speakChunk(chunks, index + 1);
+        }
+      },
+      onStopped: () => {
+        // En pause : on garde l'index courant pour reprendre
+        // Ne rien faire ici, l'état est géré dans handlePlay
+      },
       onError: () => { setSpeechState("idle"); chunkIndexRef.current = 0; },
     });
   };
@@ -132,6 +144,9 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       if (Platform.OS === "web") {
         window.speechSynthesis?.pause();
       } else {
+        // expo-speech n'a pas de pause native : on stop et on garde l'index
+        // pour reprendre au chunk suivant (le chunk en cours est perdu)
+        stoppedRef.current = true;
         await Speech.stop();
       }
       setSpeechState("paused");
@@ -145,8 +160,10 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
         window.speechSynthesis?.resume();
         setSpeechState("playing");
       } else {
+        // Reprendre au chunk suivant (le chunk en cours a été interrompu)
+        const resumeIndex = chunkIndexRef.current;
         setSpeechState("playing");
-        speakChunk(chunksRef.current, chunkIndexRef.current);
+        speakChunk(chunksRef.current, resumeIndex);
       }
       return;
     }
